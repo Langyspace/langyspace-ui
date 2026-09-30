@@ -25,6 +25,30 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'AvailabilityCalendar',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/AvailabilityCalendar/index.tsx',
+    runtimeMarker: 'lsui-sc-availability-calendar',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/AvailabilityCalendar/AvailabilityCalendar.stories.tsx',
+      title: 'Molecules/Scheduling/AvailabilityCalendar',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/AvailabilityCalendar/AvailabilityCalendar.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/AvailabilityCalendar/types.ts',
+      documentation: { path: 'README.md', anchor: 'availabilitycalendar' },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ActionLink',
     interactive: true,
     layer: 'atom',
@@ -429,6 +453,44 @@ export const publicComponentContracts = [
     test: {
       ...complete,
       path: 'src/molecules/MessageComposer/MessageComposer.test.tsx',
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'MessageThread',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/MessageThread/index.tsx',
+    runtimeMarker: 'lsui-sc-message-thread',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/MessageThread/MessageThread.stories.tsx',
+      title: 'Molecules/Messaging/MessageThread',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/MessageThread/MessageThread.test.tsx',
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'MessageThreadHeader',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/MessageThreadHeader/index.tsx',
+    runtimeMarker: 'lsui-sc-message-thread-header',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/MessageThreadHeader/MessageThreadHeader.stories.tsx',
+      title: 'Molecules/Messaging/MessageThreadHeader',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/MessageThreadHeader/MessageThreadHeader.test.tsx',
     },
     visual: true,
   },

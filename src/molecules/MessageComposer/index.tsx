@@ -1,4 +1,11 @@
-import { forwardRef, useId, type FormEvent } from 'react'
+import {
+  forwardRef,
+  useId,
+  useLayoutEffect,
+  useRef,
+  type FormEvent,
+  type KeyboardEvent,
+} from 'react'
 import { IconButton } from '../../atoms/IconButton'
 import * as Styled from './styles'
 import type { MessageComposerProps } from './types'
@@ -21,7 +28,7 @@ export const MessageComposer = forwardRef<
     onSubmit,
     onValueChange,
     placeholder,
-    rows = 2,
+    rows = 1,
     submitIcon,
     submitLabel,
     textareaLabel,
@@ -30,13 +37,13 @@ export const MessageComposer = forwardRef<
   },
   ref,
 ) {
+  const inputRef = useRef<HTMLTextAreaElement>(null)
   const supportId = useId()
   const errorId = `${supportId}-error`
   const helperId = `${supportId}-helper`
   const counterId = `${supportId}-counter`
   const overLimit = value.length > maxLength
-  const blocked =
-    disabled || isSubmitting || overLimit || value.trim().length === 0
+  const isEmpty = value.trim().length === 0
   const describedBy = [
     error ? errorId : null,
     helperText ? helperId : null,
@@ -45,9 +52,35 @@ export const MessageComposer = forwardRef<
     .filter(Boolean)
     .join(' ')
 
+  useLayoutEffect(() => {
+    const input = inputRef.current
+    if (!input) return
+
+    input.style.height = '0px'
+    input.style.height = `${input.scrollHeight}px`
+  }, [value])
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    if (!blocked) onSubmit()
+    if (disabled) return
+    if (isEmpty || overLimit) {
+      inputRef.current?.focus()
+      return
+    }
+
+    onSubmit()
+  }
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLTextAreaElement>) => {
+    if (
+      event.key !== 'Enter' ||
+      event.shiftKey ||
+      event.nativeEvent.isComposing
+    )
+      return
+
+    event.preventDefault()
+    event.currentTarget.form?.requestSubmit()
   }
 
   return (
@@ -60,23 +93,24 @@ export const MessageComposer = forwardRef<
     >
       <Styled.InputRow>
         <Styled.Input
+          ref={inputRef}
           aria-describedby={describedBy}
           aria-invalid={Boolean(error) || overLimit || undefined}
           aria-label={textareaLabel}
           autoComplete={autoComplete}
           autoFocus={autoFocus}
-          disabled={disabled || isSubmitting}
+          disabled={disabled}
           maxLength={maxLength}
           name={name}
           onChange={(event) => onValueChange(event.target.value)}
+          onKeyDown={handleKeyDown}
           placeholder={placeholder}
           rows={rows}
           value={value}
         />
         <IconButton
           aria-label={submitLabel}
-          disabled={blocked}
-          isLoading={isSubmitting}
+          disabled={disabled}
           shape="rounded"
           size="lg"
           type="submit"

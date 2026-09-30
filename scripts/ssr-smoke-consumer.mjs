@@ -12,6 +12,7 @@ const {
   AuthTokenDigits,
   ActionLink,
   ActionMenu,
+  AvailabilityCalendar,
   Avatar,
   Button,
   CompoundControl,
@@ -25,6 +26,8 @@ const {
   LoadingState,
   MessageBubble,
   MessageComposer,
+  MessageThread,
+  MessageThreadHeader,
   OperationalList,
   Pressable,
   SearchInput,
@@ -71,6 +74,19 @@ try {
         createElement(EmptyState, { title: 'Empty' }),
         createElement(LoadingState, { title: 'Loading' }),
         createElement(StatePanel, { state: 'error', title: 'Error' }),
+        createElement(AvailabilityCalendar, {
+          label: 'Calendar SSR',
+          days: [
+            {
+              id: 'monday',
+              label: 'Monday',
+              dateLabel: '14/09/2026',
+              slots: [{ id: '09', label: '09:00', available: true }],
+            },
+          ],
+          selectedSlotIds: ['09'],
+          onToggleSlot: () => undefined,
+        }),
         createElement(
           MessageBubble,
           {
@@ -89,6 +105,19 @@ try {
           textareaLabel: 'Message',
           value: 'Composer SSR',
         }),
+        createElement(
+          MessageThread,
+          {
+            'aria-label': 'SSR conversation',
+            footer: createElement('span', null, 'Footer SSR'),
+            header: createElement(MessageThreadHeader, {
+              initials: 'LS',
+              title: 'Participant SSR',
+            }),
+            viewportLabel: 'Message history SSR',
+          },
+          createElement('span', null, 'Thread SSR'),
+        ),
         createElement(
           FieldRoot,
           { label: 'Name' },
@@ -233,11 +262,14 @@ for (const componentId of [
   'lsui-sc-action-menu',
   'lsui-sc-auth-notice',
   'lsui-sc-auth-token-digits',
+  'lsui-sc-availability-calendar',
   'lsui-sc-avatar',
   'lsui-sc-field-root',
   'lsui-sc-filter-pills',
   'lsui-sc-message-bubble',
   'lsui-sc-message-composer',
+  'lsui-sc-message-thread',
+  'lsui-sc-message-thread-header',
   'lsui-sc-operational-list',
   'lsui-sc-compound-control',
   'lsui-sc-search-input',

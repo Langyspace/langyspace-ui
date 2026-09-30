@@ -76,7 +76,10 @@ export type {
 export { EmptyState } from './molecules/EmptyState'
 export type { EmptyStateProps } from './molecules/EmptyState/types'
 export { FieldRoot } from './molecules/FieldRoot'
-export type { FieldRootProps } from './molecules/FieldRoot/types'
+export type {
+  FieldLabelVariant,
+  FieldRootProps,
+} from './molecules/FieldRoot/types'
 export { FilterPills } from './molecules/FilterPills'
 export type {
   FilterPillsOverflow,
@@ -93,6 +96,10 @@ export type {
 } from './molecules/MessageBubble/types'
 export { MessageComposer } from './molecules/MessageComposer'
 export type { MessageComposerProps } from './molecules/MessageComposer/types'
+export { MessageThread } from './molecules/MessageThread'
+export type { MessageThreadProps } from './molecules/MessageThread/types'
+export { MessageThreadHeader } from './molecules/MessageThreadHeader'
+export type { MessageThreadHeaderProps } from './molecules/MessageThreadHeader/types'
 export { OperationalList } from './molecules/OperationalList'
 export type {
   OperationalListAlign,
@@ -138,3 +145,10 @@ export { Pressable } from './primitives/Pressable'
 export type { PressableProps } from './primitives/Pressable/types'
 export { Spinner } from './primitives/Spinner'
 export type { SpinnerProps, SpinnerSize } from './primitives/Spinner/types'
+export { AvailabilityCalendar } from './molecules/AvailabilityCalendar'
+export type {
+  AvailabilityCalendarDay,
+  AvailabilityCalendarProps,
+  AvailabilityCalendarSlot,
+  AvailabilityCalendarStatus,
+} from './molecules/AvailabilityCalendar'

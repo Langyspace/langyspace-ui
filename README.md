@@ -13,7 +13,7 @@ dos produtos.
 Instale styled-components e fixe sempre um artefato imutável de release:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v1.5.0/langyspace-ui-1.5.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v1.6.0/langyspace-ui-1.6.0.tgz'
 ```
 
 Não existe import de CSS. O Button injeta seus estilos com styled-components e funciona sem
@@ -177,6 +177,35 @@ locale. O produto formata o horário e fornece a copy de status:
 O composer usa limite default de 1.000 caracteres, expõe contador e bloqueia submit vazio,
 acima do limite, disabled ou loading. Enter continua criando linha na textarea; Tab leva ao botão
 de envio, preservando a semântica nativa do formulário.
+
+`MessageThread` compartilha a estrutura vertical da conversa sem assumir mensagens, backend ou
+regras do produto. O consumer continua responsável por posição, paginação, realtime e envio:
+
+```tsx
+const viewportRef = useRef<HTMLDivElement>(null)
+
+<MessageThread
+  aria-label="Conversa com a professora"
+  footer={<MessageComposer {...composerProps} />}
+  header={
+    <MessageThreadHeader
+      imageUrl={teacherPhotoUrl}
+      initials="MF"
+      subtitle="Mensagens ficam registradas na Langy.space."
+      title="Maria Fernanda"
+    />
+  }
+  onViewportScroll={handleScroll}
+  viewportLabel="Histórico da conversa com a professora"
+  viewportRef={viewportRef}
+>
+  <MessageList />
+</MessageThread>
+```
+
+O viewport mantém `overflow-y: auto`, aceita ref e evento de scroll e esconde apenas o desenho da
+scrollbar. `leadingAction` e `trailingAction` do `MessageThreadHeader` recebem controles compostos
+pelo produto. Full-bleed, safe area, navegação, `scrollTop` e lifecycle permanecem no consumer.
 
 ## Dialog e Drawer
 
@@ -445,7 +474,9 @@ container expõe `role="status"`, `aria-live="polite"` e `aria-busy="true"`.
 
 Inputs são native-first e não conhecem `react-hook-form`. `FieldRoot` conecta label, hint e error ao
 control por `id`, `aria-invalid` e `aria-describedby`. Para produtos que já usam
-`react-hook-form`, `ControlledField` é o adapter opcional de `FieldRoot` + `TextInput`.
+`react-hook-form`, `ControlledField` é o adapter opcional de `FieldRoot` + `TextInput`. Ambos aceitam
+`labelVariant="eyebrow"` quando o formulário pede um label pequeno, espaçado e em caixa alta; sem a
+prop, o recipe default permanece inalterado.
 
 ```tsx
 <FieldRoot label="Nome" hint="Use o nome completo" error={errors.name?.message}>
@@ -455,6 +486,7 @@ control por `id`, `aria-invalid` e `aria-describedby`. Para produtos que já usa
 <FormProvider {...form}>
   <ControlledField
     label="E-mail"
+    labelVariant="eyebrow"
     name="email"
     rules={{ required: 'Informe seu e-mail' }}
     type="email"
@@ -597,6 +629,44 @@ existem. O slot de ícone é o helper interno `IconSlot`: envolve um nó opciona
 é compartilhado por Button e ActionLink, mas não é exportado enquanto não houver uso direto real
 nos produtos. Tokens são públicos para composições locais que precisem respeitar as mesmas
 foundations; recipes e estilos continuam privados.
+
+## AvailabilityCalendar
+
+Calendário controlado de horários datados: colunas por dia em containers amplos e
+listas diárias em containers estreitos. O consumidor fornece dias, rótulos,
+disponibilidade, motivo de indisponibilidade e a seleção. Regras de compatibilidade,
+limites de seleção, navegação entre semanas e confirmação ficam no aplicativo.
+
+```tsx
+<AvailabilityCalendar
+  label="Escolha os horários"
+  days={[
+    {
+      id: '2026-09-14',
+      label: 'Segunda',
+      dateLabel: '14/09/2026',
+      slots: [
+        { id: 'slot-09', label: '09:00', available: true },
+        {
+          id: 'slot-10',
+          label: '10:00',
+          available: false,
+          unavailableReason: 'Sem disponibilidade compatível',
+        },
+      ],
+    },
+  ]}
+  selectedSlotIds={selectedIds}
+  onToggleSlot={toggleSlot}
+  selectionLabel={`${selectedIds.length} horários selecionados`}
+/>
+```
+
+IDs de dias e horários devem ser únicos e estáveis. Botões usam Tab, Enter e Espaço
+nativos e `aria-pressed`. Horários indisponíveis não selecionados são desabilitados
+com motivo visível e acessível; horários selecionados continuam removíveis quando
+a disponibilidade muda. `status="loading" | "empty" | "error"` substitui a seleção
+por StatePanel; `statusMessage` e `statusAction` permitem compor mensagem e retry.
 
 ## Pressable
 

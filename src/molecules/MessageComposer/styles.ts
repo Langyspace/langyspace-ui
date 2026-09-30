@@ -21,11 +21,22 @@ export const InputRow = styled.div`
 `
 
 export const Input = styled(TextareaInput)`
+  box-sizing: border-box;
+  height: ${tokens.control.height.lg};
   min-width: 0;
-  min-height: ${tokens.field.height.lg};
+  min-height: ${tokens.control.height.lg};
   max-height: 9rem;
   flex: 1 1 auto;
-  resize: vertical;
+  overflow-y: auto;
+  resize: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
 `
 
 export const Support = styled.div`

@@ -15,12 +15,34 @@
 - Classify rendered impact before acting: `direct` changes UI/copy/layout/interaction; `indirect`
   changes component contracts or behavior that can alter rendering; `none` has no plausible
   rendered effect.
-- Direct/indirect work identifies component variants, states, content extremes, and widths, adds
-  story/audit coverage, runs `pnpm run validate:ui`, and includes screenshot inspection.
-- Every final handoff contains exactly one verdict: `Visual gate review: passed` with evidence,
-  `not applicable` with a concrete reason, or `blocked` with the failing surface.
+- Direct/indirect work identifies component variants, states, content extremes, and widths and adds
+  focused story/test coverage. Run the smallest local check that adds evidence; CI owns
+  `pnpm run validate:ui`, broad Storybook/layout audits, and full suites. The product owner performs
+  visual review.
+- Every final handoff contains exactly one verdict: `Visual gate review: pending human` for rendered
+  changes, `accepted by human`, `not applicable` with a concrete reason, or `blocked` with the
+  failing surface.
 - Medium/large work uses reviewed, resumable `docs/epics/<name>/` documents and one small task at a
   time. Tiny isolated changes still require inspection, focused validation, and diff review.
+- Internal subtasks do not require individual pushes. Finish the smallest coherent user delivery,
+  run at most two focused local checks (three only for high-risk changes), create a scoped commit,
+  and push once to `main`. Reuse successful evidence while relevant inputs are unchanged; after a
+  failure, rerun only the failed check. After pushing, do not poll, watch, or inspect CI/release logs
+  unless the user explicitly asks or a failure is reported. Report the commit and that delivery was
+  initiated without claiming publication completion.
+- After a push, make at most one non-blocking lookup filtered by the exact commit SHA to capture
+  workflow URLs. The final handoff must link the commit, test CI, and deploy CI/CD; reuse one URL
+  when a workflow covers both. If a run is not visible on that first lookup, link the workflow or
+  commit checks page and mark the run unavailable. Do not wait, poll, inspect
+  status/conclusion/logs, or retry. For work without a push, state that CI and deploy were not
+  triggered.
+- Use one agent by default. For explicitly parallel work, give each subagent a bounded,
+  self-contained brief with minimal history; subagents do not run full gates or monitor CI. Collect
+  each result once instead of polling.
+- After the push, update the canonical local checkout: finish with
+  `HEAD == main == origin/main` and a clean worktree. If it contains unrelated work, first
+  preserve that exact state in a named recovery branch and persistent worktree, verify the snapshot,
+  then align the local main. Never leave a completed delivery with a silently stale local main.
 
 ## Library contracts
 
@@ -49,5 +71,5 @@ load it for simple read-only answers or isolated documentation.
 
 - Focused checks: `pnpm run typecheck`, `pnpm run test:unit`, `pnpm run test:storybook`
 - API/package: `pnpm run check:api`, `pnpm run test:bundle`, `pnpm run test:package`
-- Mandatory direct/indirect UI gate: `pnpm run validate:ui`
+- CI-owned direct/indirect UI gate: `pnpm run validate:ui`
 - Storybook: `pnpm run storybook`, `pnpm run build:storybook`
