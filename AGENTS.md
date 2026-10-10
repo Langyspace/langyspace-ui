@@ -19,6 +19,16 @@
   focused story/test coverage. Run the smallest local check that adds evidence; CI owns
   `pnpm run validate:ui`, broad Storybook/layout audits, and full suites. The product owner performs
   visual review.
+- Every direct/indirect change uses a feature branch and a PR targeting `main`, never a direct
+  push to the target branch. Prepare shared components here before opening adoption PRs in the
+  products. Keep product routing, services, and domain behavior in their consumer repositories.
+- Visual PR bodies use `.github/pull_request_template.md`: only `# Evidências`, `## Antes`, and
+  `## Depois`, with matching before/after images of affected stories/states/widths. Product PRs
+  additionally require every affected screen and relevant mobile/desktop state. Keep technical
+  notes and validation in the work documents/CI. See [visual PR review](docs/visual-pr-review.md).
+- Each visual PR requires explicit product-owner approval of its current revision before merge.
+  Do not enable auto-merge or substitute CI for human review. Further visual edits require updated
+  images and another review. Incomplete evidence keeps the PR in draft and the gate blocked.
 - Every final handoff contains exactly one verdict: `Visual gate review: pending human` for rendered
   changes, `accepted by human`, `not applicable` with a concrete reason, or `blocked` with the
   failing surface.
@@ -26,8 +36,9 @@
   time. Tiny isolated changes still require inspection, focused validation, and diff review.
 - Internal subtasks do not require individual pushes. Finish the smallest coherent user delivery,
   run at most two focused local checks (three only for high-risk changes), create a scoped commit,
-  and push once to `main`. Reuse successful evidence while relevant inputs are unchanged; after a
-  failure, rerun only the failed check. After pushing, do not poll, watch, or inspect CI/release logs
+  and push once to the feature branch for a visual PR, or to `main` for `none` impact. Reuse
+  successful evidence while relevant inputs are unchanged; after a failure, rerun only the failed
+  check. After pushing, do not poll, watch, or inspect CI/release logs
   unless the user explicitly asks or a failure is reported. Report the commit and that delivery was
   initiated without claiming publication completion.
 - After a push, make at most one non-blocking lookup filtered by the exact commit SHA to capture
@@ -39,10 +50,12 @@
 - Use one agent by default. For explicitly parallel work, give each subagent a bounded,
   self-contained brief with minimal history; subagents do not run full gates or monitor CI. Collect
   each result once instead of polling.
-- After the push, update the canonical local checkout: finish with
-  `HEAD == main == origin/main` and a clean worktree. If it contains unrelated work, first
+- After an approved PR merge or a direct nonvisual delivery, update the canonical local checkout:
+  finish with `HEAD == main == origin/main` and a clean worktree. If it contains unrelated work, first
   preserve that exact state in a named recovery branch and persistent worktree, verify the snapshot,
   then align the local main. Never leave a completed delivery with a silently stale local main.
+- While a visual PR awaits review, preserve its feature branch/worktree. Do not merge it merely
+  to align the canonical checkout; a branch push is not a completed merge or release.
 
 ## Library contracts
 

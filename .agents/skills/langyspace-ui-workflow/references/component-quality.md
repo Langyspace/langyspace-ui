@@ -17,8 +17,18 @@
   `validate:ui`, coverage, build, bundle, package, and screenshot layout checks.
 - The product owner owns screenshot judgment. Never weaken an audit or budget merely to make a
   change pass; document and review intentional exceptions.
+- Capture comparable before/after images for affected stories, states, and widths using the same
+  sanitized fixture, viewport, and theme. Keep baseline/current SHAs in the work documents. Shared
+  changes are prepared here before adoption PRs; those PRs require images of all affected product
+  screens, including relevant mobile/desktop states, even when the intended layout stays the same.
+- Every visual change uses a feature-branch PR to `main`. Its body contains only `# Evidências`,
+  `## Antes`, and `## Depois`, with matching images and short labels. Each PR requires explicit
+  product-owner approval of its current revision before merge. Do not enable auto-merge. Later
+  visual edits require refreshed images and another review; missing evidence keeps the PR in draft.
+  Follow `docs/visual-pr-review.md`; CI success does not replace human approval.
 
 Successful local evidence remains valid while its relevant source, dependencies, fixtures, and
 contracts are unchanged. After a failure, rerun only the failed check. Internal subtasks do not
-generate individual pushes. Push once per coherent user delivery, then stop without monitoring CI
-or release; report them as initiated and unverified unless a failure is later reported.
+generate individual pushes. Push once per coherent user delivery to the visual PR's feature branch
+or the nonvisual target in `AGENTS.md`, then stop without monitoring CI or release. A feature-branch
+push does not prove a merge or release; keep the human review pending.

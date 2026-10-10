@@ -8,6 +8,9 @@ const ConsumerSurface = styled.div`
 `
 
 const {
+  AuthAccent,
+  AuthDescription,
+  AuthTitle,
   AuthNotice,
   AuthTokenDigits,
   ActionLink,
@@ -174,6 +177,13 @@ try {
           length: 4,
           onTokenChange: () => undefined,
         }),
+        createElement(
+          AuthTitle,
+          null,
+          'Auth ',
+          createElement(AuthAccent, null, 'title'),
+        ),
+        createElement(AuthDescription, null, 'Auth description'),
         createElement(AuthNotice, { tone: 'info' }, 'Code sent'),
         createElement(
           Dialog,
@@ -260,6 +270,9 @@ if (!markup.includes('lsui-sc-state-panel')) {
 for (const componentId of [
   'lsui-sc-action-link',
   'lsui-sc-action-menu',
+  'lsui-sc-auth-accent',
+  'lsui-sc-auth-description',
+  'lsui-sc-auth-title',
   'lsui-sc-auth-notice',
   'lsui-sc-auth-token-digits',
   'lsui-sc-availability-calendar',

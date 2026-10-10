@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, CompoundControl, ControlledField, Dialog, Drawer, EmptyState, FieldRoot, FilterPills, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, CompoundControl, ControlledField, Dialog, Drawer, EmptyState, FieldRoot, FilterPills, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -125,6 +125,8 @@ createRoot(document.getElementById('root')!).render(
     <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onChange={() => undefined} />
     <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
     <AuthTokenDigits aria-label="Code" autoFocus={false} digitLabel="Digit" idPrefix="code" length={4} onTokenChange={() => undefined} />
+    <AuthTitle>Package auth <AuthAccent>title passed</AuthAccent></AuthTitle>
+    <AuthDescription>Package auth description passed</AuthDescription>
     <AuthNotice tone="info">Package auth notice passed</AuthNotice>
     <Dialog closeLabel="Close dialog" onClose={() => undefined} open={false} title="Package dialog passed">Dialog</Dialog>
     <Drawer closeLabel="Close drawer" onClose={() => undefined} open={false} title="Package drawer passed">Drawer</Drawer>
@@ -314,6 +316,9 @@ try {
 
   for (const componentId of [
     'lsui-sc-action-menu',
+    'lsui-sc-auth-accent',
+    'lsui-sc-auth-description',
+    'lsui-sc-auth-title',
     'lsui-sc-auth-notice',
     'lsui-sc-auth-token-digits',
     'lsui-sc-availability-calendar',

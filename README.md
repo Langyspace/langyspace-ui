@@ -776,7 +776,8 @@ O maturity gate, regras de componentização e política de depreciação estão
 ## Release
 
 1. Atualize a versão em `package.json` usando SemVer.
-2. Faça merge em `main` somente após CI verde.
+2. Faça merge em `main` somente após CI verde e, para alterações visuais, aprovação humana do PR
+   conforme o [padrão de evidências](docs/visual-pr-review.md).
 3. Crie e envie a tag idêntica, por exemplo `v0.5.0`.
 4. O workflow valida, empacota, calcula SHA-256 e cria o GitHub Release automaticamente.
 5. Atualize consumidores explicitamente para o novo URL e lockfile.
@@ -786,3 +787,24 @@ O workflow falha se a tag e `package.json#version` divergirem.
 ## License
 
 UNLICENSED. See `LICENSE`.
+
+## Auth presentation
+
+`AuthTitle`, `AuthDescription` e `AuthAccent` compartilham a apresentação da autenticação entre
+Student e Teacher. São h2, p e span com children e atributos HTML nativos; não possuem variantes,
+flags de produto, serviço, rota, timer ou estado de OTP. Herdam a família da fonte do consumidor e
+usam tokens da UI sem exigir ThemeProvider ou stylesheet global.
+
+```tsx
+<AuthTitle>
+  Bom te ver de <AuthAccent>volta.</AuthAccent>
+</AuthTitle>
+<AuthDescription>
+  Coloca seu celular e vamos te enviar um código por SMS ou WhatsApp.
+</AuthDescription>
+```
+
+O título usa 1.75rem abaixo de 768px e 2.375rem a partir dessa largura. A descrição mantém max-width
+25rem e margem fluida por altura de viewport. Copy, composição e regras de negócio ficam no
+produto. O primeiro piloto adota somente PhoneStep/TokenStep de Login; os demais callsites seguem
+uma migração própria, com evidências e revisão humana. A API é aditiva em 1.8.0.
