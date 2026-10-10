@@ -38,6 +38,14 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
 
+export const FocusByIcon: Story = {
+  tags: ['visual-review'],
+  play: async ({ canvas, canvasElement, userEvent }) => {
+    await userEvent.click(canvasElement.querySelector('svg')!)
+    await expect(canvas.getByRole('searchbox')).toHaveFocus()
+  },
+}
+
 export const InteractiveClear: Story = {
   render: () => <SearchExample />,
   play: async ({ canvas, userEvent }) => {

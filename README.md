@@ -496,7 +496,8 @@ prop, o recipe default permanece inalterado.
 
 `TextInput`, `SelectInput` e `TextareaInput` aceitam props e refs nativas. `CompoundControl` é o
 único owner de border/background/focus quando ícone, input e ação formam uma surface. `SearchInput`
-compõe esse contrato e, quando `onClear` existe, devolve o foco ao input depois de limpar.
+compõe esse contrato: clicar no ícone ou na superfície foca o input, mantendo controles
+disabled inertes. Quando `onClear` existe, devolve o foco ao input depois de limpar.
 
 ```tsx
 <SearchInput

@@ -69,6 +69,16 @@ export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
       <CompoundControl
         className={className}
         disabled={disabled}
+        onClick={(event) => {
+          if (
+            disabled ||
+            event.defaultPrevented ||
+            (event.target instanceof Element &&
+              event.target.closest('input, button'))
+          )
+            return
+          inputRef.current?.focus({ preventScroll: true })
+        }}
         leading={<SearchIcon size={iconSizes[size]} />}
         size={size}
         surface={surface}

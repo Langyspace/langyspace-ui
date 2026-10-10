@@ -5,6 +5,24 @@ import { SearchInput } from '.'
 import type { SearchInputClearAction, SearchInputProps } from './types'
 
 describe('SearchInput', () => {
+  it('focuses the input when its decorative icon or surface is clicked', async () => {
+    const user = userEvent.setup()
+    const { container } = render(<SearchInput aria-label="Busca" />)
+    const input = screen.getByRole('searchbox', { name: 'Busca' })
+    await user.click(container.querySelector('svg')!)
+    expect(input).toHaveFocus()
+    input.blur()
+    await user.click(container.querySelector('[data-ui-compound-control]')!)
+    expect(input).toHaveFocus()
+  })
+
+  it('does not focus a disabled search when its surface is clicked', async () => {
+    const user = userEvent.setup()
+    const { container } = render(<SearchInput aria-label="Busca" disabled />)
+    await user.click(container.querySelector('svg')!)
+    expect(screen.getByRole('searchbox')).not.toHaveFocus()
+  })
+
   it('clears the value through the consumer callback and restores focus', async () => {
     const onClear = vi.fn()
     const user = userEvent.setup()

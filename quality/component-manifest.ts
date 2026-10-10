@@ -700,6 +700,10 @@ export const publicComponentContracts = [
       documentation: { path: 'README.md', anchor: 'fields-e-busca' },
       consumers: [
         {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/SearchField/index.tsx',
+        },
+        {
           repository: 'langyspace-admin',
           path: 'src/pages/AdminPortal/LeadCohortPage/index.tsx',
         },
