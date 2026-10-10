@@ -808,3 +808,19 @@ O título usa 1.75rem abaixo de 768px e 2.375rem a partir dessa largura. A descr
 25rem e margem fluida por altura de viewport. Copy, composição e regras de negócio ficam no
 produto. O primeiro piloto adota somente PhoneStep/TokenStep de Login; os demais callsites seguem
 uma migração própria, com evidências e revisão humana. A API é aditiva em 1.8.0.
+
+### DocumentLayout
+
+Grade responsiva de leitura com `title`, `eyebrow`, `meta`, `summary`, `intro` e `sections`
+(`title`/`body`). Um h1 para o documento e h2 por seção. Resumo opcional, aside sticky a
+partir de 1024px e largura de leitura limitada; sem variantes de layout ou ThemeProvider.
+O produto mantém header, conteúdo, versão, SEO, navegação e retorno. Texto é renderizado
+como texto, sem HTML arbitrário. Atributos nativos e ref são encaminhados ao div raiz.
+
+### NoticeBanner
+
+Aviso de ícone, título, conteúdo (`children`) e ações opcionais. Grade responsiva única;
+ações à direita no mobile e com quebra em containers estreitos. `icon` deve fornecer
+semântica própria (ícones decorativos usam `aria-hidden`). Atributos nativos e ref do aside
+permitem composição. Margem, sticky, aria-live, PWA, priorização e callbacks pertencem
+ao produto. Sem tons arbitrários, flags de produto, reload, dismiss ou store interno.

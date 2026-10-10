@@ -25,6 +25,73 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'NoticeBanner',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/NoticeBanner/index.tsx',
+    runtimeMarker: 'lsui-sc-notice-banner',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/NoticeBanner/NoticeBanner.stories.tsx',
+      title: 'Molecules/Feedback/NoticeBanner',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/NoticeBanner/NoticeBanner.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/NoticeBanner/types.ts',
+      documentation: { path: 'README.md', anchor: 'noticebanner' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/ShellNotice/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/ShellNotice/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'DocumentLayout',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/DocumentLayout/index.tsx',
+    runtimeMarker: 'lsui-sc-document-layout',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/DocumentLayout/DocumentLayout.stories.tsx',
+      title: 'Molecules/Layout/DocumentLayout',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/DocumentLayout/DocumentLayout.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/DocumentLayout/types.ts',
+      documentation: { path: 'README.md', anchor: 'documentlayout' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/LegalPage/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/LegalPage/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'AuthAccent',
     interactive: false,
     layer: 'atom',

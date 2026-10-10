@@ -158,3 +158,11 @@ export type {
   AvailabilityCalendarSlot,
   AvailabilityCalendarStatus,
 } from './molecules/AvailabilityCalendar'
+
+export { DocumentLayout } from './molecules/DocumentLayout'
+export type {
+  DocumentLayoutProps,
+  DocumentSection,
+} from './molecules/DocumentLayout'
+export { NoticeBanner } from './molecules/NoticeBanner'
+export type { NoticeBannerProps } from './molecules/NoticeBanner'

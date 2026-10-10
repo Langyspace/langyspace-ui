@@ -1,0 +1,66 @@
+{
+  "screens": 42,
+  "allowedMobileAlignment": [
+    {
+      "route": "/",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/calendario",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/materiais",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/materiais/material-fixture",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/alunos",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/alunos/student-fixture/vocabulario",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/mensagens",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/repasses",
+      "state": "atualizacao",
+      "width": 390
+    },
+    {
+      "route": "/",
+      "state": "instalar",
+      "width": 390
+    },
+    {
+      "route": "/",
+      "state": "instalar-ios",
+      "width": 390
+    },
+    {
+      "route": "/",
+      "state": "atualizacao",
+      "width": 768
+    }
+  ],
+  "unexpected": []
+}

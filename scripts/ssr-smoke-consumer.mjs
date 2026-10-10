@@ -21,6 +21,8 @@ const {
   CompoundControl,
   ControlledField,
   Dialog,
+  DocumentLayout,
+  NoticeBanner,
   Drawer,
   EmptyState,
   FieldRoot,
@@ -183,6 +185,18 @@ try {
           'Auth ',
           createElement(AuthAccent, null, 'title'),
         ),
+        createElement(DocumentLayout, {
+          title: 'SSR document',
+          sections: [{ title: 'Section', body: ['Text'] }],
+        }),
+        createElement(
+          NoticeBanner,
+          {
+            title: 'SSR notice',
+            icon: createElement('span', { 'aria-hidden': true }, '!'),
+          },
+          'Notice text',
+        ),
         createElement(AuthDescription, null, 'Auth description'),
         createElement(AuthNotice, { tone: 'info' }, 'Code sent'),
         createElement(
@@ -268,6 +282,8 @@ if (!markup.includes('lsui-sc-state-panel')) {
 }
 
 for (const componentId of [
+  'lsui-sc-document-layout',
+  'lsui-sc-notice-banner',
   'lsui-sc-action-link',
   'lsui-sc-action-menu',
   'lsui-sc-auth-accent',
