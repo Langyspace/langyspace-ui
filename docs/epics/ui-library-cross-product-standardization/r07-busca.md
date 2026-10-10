@@ -37,3 +37,10 @@ Antes/depois do foco no ícone em 390/1440 capturados na story real do UI.
 Concessões são intencionais e aguardam review humana. O clear do browser foi substituído pela
 acao existente da biblioteca com callback de produto; filtros e retorno pela URL permanecem.
 Próxima tarefa: candidato cumulativo, instalação frozen/typecheck e draft com todas as imagens.
+
+## Estado final desta rodada
+
+Preparado e publicado para review. Instalação congelada e typecheck passaram nos produtos
+afetados. Todos os drafts usam o candidato cumulativo b37873be72013e22e7d2fd7b624752b8bb468a52;
+as medições e candidatos intermediários acima são históricos. Consultar [handoff-continuo.md](handoff-continuo.md)
+para PRs, commits, validação e limites atuais. Aprovação humana antes de merge permanece pendente.

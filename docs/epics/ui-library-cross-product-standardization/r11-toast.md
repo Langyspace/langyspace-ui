@@ -39,3 +39,10 @@ raw agregado 101.000 -> 104.000 para dois contratos novos com dois consumidores;
 
 Candidato 1.8.0: 67508 bytes; SHA256 18f80c3a95dfe2c20ee2fdea1a23655b3a88b8bf9890057c0342efcf9568517c.
 Próxima tarefa: publicar candidato, frozen install/typecheck e abrir drafts com imagens.
+
+## Estado final desta rodada
+
+Preparado e publicado para review. Instalação congelada e typecheck passaram nos produtos
+afetados. Todos os drafts usam o candidato cumulativo b37873be72013e22e7d2fd7b624752b8bb468a52;
+as medições e candidatos intermediários acima são históricos. Consultar [handoff-continuo.md](handoff-continuo.md)
+para PRs, commits, validação e limites atuais. Aprovação humana antes de merge permanece pendente.

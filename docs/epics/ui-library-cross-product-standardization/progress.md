@@ -1,32 +1,22 @@
-# Execução contínua — estado atual
+# Progresso — execução contínua
 
-Autorização ampliada: continuar preparando lotes sem aguardar reviews anteriores, mantendo
-aprovação humana por PR antes de merge. R01 permanece preparado; R03 e R02 implementados
-no UI, com adoções em worktrees independentes dos produtos. Nove testes UI e API/bundle
-passaram. Evidências: 28 pares legais + 110 pares de avisos + 14 stories novas.
-Próxima tarefa única: publicar candidato e finalizar os novos drafts de adoção e seus locks.
-Depois: avaliar R04/R05 Cupom com prova do custo visual, sem forçar adoção.
+Atualizado em 2026-10-10. R01, R02, R03, R07 e R11 implementados e publicados para review:
+sete componentes novos no UI, SearchInput existente adotado no Teacher e sete drafts visuais
+Student/Teacher. Site/Admin/Cupom têm três PRs do padrão permanente. Total: 11 PRs.
 
-Detalhes: execucao-continua.md e r02-r03.md. Não houve merge/release/deploy nem review aceita.
-O registro abaixo é histórico do R01, não um bloqueio à preparação dos demais lotes.
+Todos os corpos visuais foram conferidos com somente Evidências / Antes / Depois;
+270 pares de telas nos produtos, em viewports reais. Typechecks, instalações congeladas,
+contratos focados, API e bundle passaram nos escopos registrados. CI ampla não foi monitorada.
+Nenhum merge, tag, release oficial ou deploy. Cada PR continua sujeito à aprovação humana.
 
-# Progresso — execução R01
+[Handoff atual](handoff-continuo.md): PRs, SHAs, links CI/CD, candidato único, concessões,
+limites e próxima unidade R06. Os documentos r02-r03.md, r07-busca.md, r11-toast.md e
+handoff-r01.md registram os lotes e suas medições históricas; o candidato cumulativo atual é
+b37873be72013e22e7d2fd7b624752b8bb468a52, SHA256
+18f80c3a95dfe2c20ee2fdea1a23655b3a88b8bf9890057c0342efcf9568517c.
 
-Execução autorizada em 2026-10-10. T01–T05 concluídas: contrato preparado no UI, candidato
-materializado, adoção isolada em Login PhoneStep/TokenStep de Student e Teacher, checks focados e
-capturas reais de Antes/Depois. Próxima tarefa única: T06, publicar branches de trabalho e abrir
-PR do UI / drafts de adoção. Nenhum merge automático, tag ou deploy direto.
+A autorização de execução contínua permite preparar os próximos pilotos enquanto as reviews
+estão pendentes. R04/R05 foram mantidos separados/condicionais pelo custo visual; R06 exige
+baseline da barra de views salvas. R08–R10/R12–R24 seguem como propostas, não entregas concluídas.
 
-Componentes: AuthTitle, AuthDescription e AuthAccent. API sem variantes e sem props de produto;
-layout pretendido V0. Trinta pares de telas e dezoito capturas de stories, com viewports reais
-conferidos. Resultado: zero diferença na geometria e CSS dos três componentes. A aprovação humana
-é independente para cada PR e ainda está pendente.
-
-Consultar evidencias-r01.md para comandos, limites, hashes e decisões de bundle. Candidato imutável
-nos drafts não substitui release oficial. A finalização da adoção depende de UI aprovada, artefato
-oficial e aprovação humana da revisão final de cada produto.
-
-R02–R24 continuam no backlog de unidades do planejamento. A cópia local dos três componentes nas
-outras rotas permanece até expansão própria; este piloto não declara a migração completa da família.
-
-Sem CI/release/deploy acionados neste ponto. Visual gate review: pending human.
+Visual gate review: pending human.
