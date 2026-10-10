@@ -825,3 +825,17 @@ ações à direita no mobile e com quebra em containers estreitos. `icon` deve f
 semântica própria (ícones decorativos usam `aria-hidden`). Atributos nativos e ref do aside
 permitem composição. Margem, sticky, aria-live, PWA, priorização e callbacks pertencem
 ao produto. Sem tons arbitrários, flags de produto, reload, dismiss ou store interno.
+
+### ToastItem
+
+Item clicável com `message`, `title`/`actionLabel` opcionais, `icon` e cinco tons semânticos
+(neutral, success, danger, warning, brand). Props/ref nativos de button; ícones decorativos
+recebem aria-hidden no caller. A ação é o clique do item inteiro, sem botão aninhado. Strings
+são texto. O produto fornece accessible name, callback de remover/navegar e dados. Sem timers,
+store, rota, anúncio automático ou flags de produto. Respeita prefers-reduced-motion.
+
+### ToastViewport
+
+Stack children-first no topo direito, com largura limitada e posicionamento mobile comum
+até 640px. Atributos/ref de div; aria-live e conteúdo pertencem ao caller. Sem gerenciamento
+de mensagens, duração, limites ou dados privados. ToastItem restaura pointer-events nos itens.

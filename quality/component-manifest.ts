@@ -25,6 +25,69 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'ToastItem',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ToastItem/index.tsx',
+    runtimeMarker: 'lsui-sc-toast-item',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/ToastItem/ToastItem.stories.tsx',
+      title: 'Molecules/Feedback/ToastItem',
+    },
+    test: { ...complete, path: 'src/molecules/ToastItem/ToastItem.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/ToastItem/types.ts',
+      documentation: { path: 'README.md', anchor: 'toastitem' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'ToastViewport',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ToastViewport/index.tsx',
+    runtimeMarker: 'lsui-sc-toast-viewport',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/ToastViewport/ToastViewport.stories.tsx',
+      title: 'Molecules/Feedback/ToastViewport',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/ToastViewport/ToastViewport.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/ToastViewport/types.ts',
+      documentation: { path: 'README.md', anchor: 'toastviewport' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'NoticeBanner',
     interactive: true,
     layer: 'molecule',

@@ -44,6 +44,8 @@ const {
   StatusChip,
   TextareaInput,
   TextInput,
+  ToastItem,
+  ToastViewport,
 } = await import('@langyspace/ui')
 
 function ControlledFieldSsr() {
@@ -185,6 +187,11 @@ try {
           'Auth ',
           createElement(AuthAccent, null, 'title'),
         ),
+        createElement(
+          ToastViewport,
+          null,
+          createElement(ToastItem, { message: 'SSR toast', tone: 'success' }),
+        ),
         createElement(DocumentLayout, {
           title: 'SSR document',
           sections: [{ title: 'Section', body: ['Text'] }],
@@ -282,6 +289,8 @@ if (!markup.includes('lsui-sc-state-panel')) {
 }
 
 for (const componentId of [
+  'lsui-sc-toast-item',
+  'lsui-sc-toast-viewport',
   'lsui-sc-document-layout',
   'lsui-sc-notice-banner',
   'lsui-sc-action-link',

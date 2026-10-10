@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -126,6 +126,7 @@ createRoot(document.getElementById('root')!).render(
     <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
     <AuthTokenDigits aria-label="Code" autoFocus={false} digitLabel="Digit" idPrefix="code" length={4} onTokenChange={() => undefined} />
     <AuthTitle>Package auth <AuthAccent>title passed</AuthAccent></AuthTitle>
+    <ToastViewport><ToastItem message="Package toast passed" /></ToastViewport>
     <DocumentLayout title="Package document passed" sections={[{title:"Section",body:["Text"]}]} />
     <NoticeBanner title="Package notice passed" icon={<span aria-hidden="true">!</span>}>Notice text</NoticeBanner>
     <AuthDescription>Package auth description passed</AuthDescription>
@@ -317,6 +318,8 @@ try {
   }
 
   for (const componentId of [
+    'lsui-sc-toast-item',
+    'lsui-sc-toast-viewport',
     'lsui-sc-document-layout',
     'lsui-sc-notice-banner',
     'lsui-sc-action-menu',

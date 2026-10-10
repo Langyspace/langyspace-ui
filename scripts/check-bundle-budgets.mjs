@@ -25,7 +25,15 @@ function measure(code) {
 
 measurements.library = measure(await readFile(resolve(root, 'dist/index.js')))
 
-for (const entry of ['actions', 'auth', 'fields', 'identity', 'molecules', 'portal']) {
+for (const entry of [
+  'actions',
+  'auth',
+  'fields',
+  'identity',
+  'molecules',
+  'portal',
+  'toasts',
+]) {
   const result = await build({
     build: {
       lib: {
