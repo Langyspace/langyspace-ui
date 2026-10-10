@@ -1,6 +1,6 @@
 # Mapeamento detalhado e custo-benefício da UI Library
 
-Data: 2026-10-10. Estado: mapeamento de referência; R01/R02/R03/R07/R11 preparados para review humana.
+Data: 2026-10-10. Estado: mapeamento de referência; R01/R02/R03/R06/R07/R11 preparados para review humana.
 
 Este documento aprofunda os 38 grupos do [inventário inicial](discovery.md). O
 [plano de migração](plano-de-migracao.md) usa as decisões abaixo. As prioridades novas substituem as
@@ -292,3 +292,8 @@ Continuar preparando unidades está autorizado; merge e release exigem aprovaç�
 revisão atual de cada PR. Os sete drafts de produto convergem para o mesmo candidato imutável,
 a substituir pelo artefato oficial aprovado antes de integrar. Não mesclar locks/guias
 sobrepostos sem conferir a base atual e atualizar imagens quando a superfície mudar.
+
+R06 preparado: ActionMenu existente na barra de views salvas Admin; 70 pares em 12 superfícies,
+foco/teclado/fechamento e callbacks locais verificados. Sem props novas, sem troca de dependência;
+UI 1.7.0 já contém o contrato. Popup passa a escapar do recorte do container horizontal. Os
+outros menus continuam locais; a concessão exige revisão humana própria.

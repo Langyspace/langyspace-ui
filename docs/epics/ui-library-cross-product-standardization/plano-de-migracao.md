@@ -1,6 +1,6 @@
 # Plano de migração da UI Library entre os cinco produtos
 
-Data: 2026-10-10. Estado: R01/R02/R03/R07/R11 preparados para review; demais unidades permanecem propostas.
+Data: 2026-10-10. Estado: R01/R02/R03/R06/R07/R11 preparados para review; demais unidades permanecem propostas.
 
 Este plano depende do [mapeamento detalhado e custo-benefício](mapeamento-detalhado.md), que cobre
 os 38 grupos, suas variações, concessões e riscos. O [inventário](discovery.md) registra fontes,
@@ -264,3 +264,8 @@ Continuar preparando unidades está autorizado; merge e release exigem aprovaç�
 revisão atual de cada PR. Os sete drafts de produto convergem para o mesmo candidato imutável,
 a substituir pelo artefato oficial aprovado antes de integrar. Não mesclar locks/guias
 sobrepostos sem conferir a base atual e atualizar imagens quando a superfície mudar.
+
+R06 preparado: ActionMenu existente na barra de views salvas Admin; 70 pares em 12 superfícies,
+foco/teclado/fechamento e callbacks locais verificados. Sem props novas, sem troca de dependência;
+UI 1.7.0 já contém o contrato. Popup passa a escapar do recorte do container horizontal. Os
+outros menus continuam locais; a concessão exige revisão humana própria.
