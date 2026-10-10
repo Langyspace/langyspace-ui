@@ -1,26 +1,24 @@
 # Progresso — execução contínua
 
-Atualizado em 2026-10-10. R01, R02, R03, R06, R07 e R11 implementados e publicados para review:
-sete componentes novos no UI, SearchInput existente adotado no Teacher e sete drafts visuais
-Student/Teacher. Site/Admin/Cupom têm três PRs do padrão permanente. Total: 12 PRs, com oito drafts visuais de produto.
+Atualizado em 2026-10-10. R01/R02/R03/R06/R07/R11 preparados: sete componentes novos no UI,
+reuso de SearchInput Teacher e de ActionMenu Admin. Total de 12 PRs: UI #8, oito drafts
+visuais de produto e três PRs do padrão permanente em Site/Admin/Cupom.
 
-Todos os corpos visuais foram conferidos com somente Evidências / Antes / Depois;
-340 pares de telas nos produtos, em viewports reais. Typechecks, instalações congeladas,
-contratos focados, API e bundle passaram nos escopos registrados. CI ampla não foi monitorada.
-Nenhum merge, tag, release oficial ou deploy. Cada PR continua sujeito à aprovação humana.
+Os nove corpos visuais foram conferidos com somente Evidências / Antes / Depois, com 340
+pares de telas nos produtos e 874 imagens nos corpos incluindo UI. Typechecks, instalações
+congeladas, contratos focados, API/bundle e callbacks dos pilotos passaram nos escopos
+registrados. CI ampla não foi monitorada; nenhuma execução foi visível na consulta única
+de cada SHA atual. Nenhum merge, tag, release oficial ou deploy.
 
-[Handoff atual](handoff-continuo.md): PRs, SHAs, links CI/CD, candidato único, concessões,
-limites e próxima unidade R08. Os documentos r02-r03.md, r07-busca.md, r11-toast.md e
-handoff-r01.md registram os lotes e suas medições históricas; o candidato cumulativo atual é
-b37873be72013e22e7d2fd7b624752b8bb468a52, SHA256
-18f80c3a95dfe2c20ee2fdea1a23655b3a88b8bf9890057c0342efcf9568517c.
+[Handoff atual](handoff-continuo.md): 12 PRs, commits, CI/CD, candidato, concessões e limites.
+Student/Teacher usam o mesmo candidato UI 1.8.0 por commit b37873be; Admin conserva a versão
+oficial 1.7.0 e seus locks porque ActionMenu já existe. Source desta rodada remove 675 linhas
+dos produtos e acrescenta 501 à UI, redução líquida de 174 no recorte de runtime afetado;
+isso exclui R01, testes/stories/documentação/configuração e não prova redução de bundle.
 
-A autorização de execução contínua permite preparar os próximos pilotos enquanto as reviews
-estão pendentes. R04/R05 foram mantidos separados/condicionais pelo custo visual; R06 está preparado na barra de views salvas com UI 1.7.0, sem troca de lock. R08–R10/R12–R24 seguem como propostas, não entregas concluídas.
+R04/R05 permanecem separados/condicionais pelo custo visual. Próxima unidade: R08 FilterPills
+Teacher, com filtro compatível e baseline próprios. A preparação continua autorizada enquanto
+as reviews estão pendentes; integração exige aprovação humana da revisão atual de cada PR.
+R09/R10/R12–R24 seguem propostas, sem declarar o épico completo.
 
 Visual gate review: pending human.
-
-R06 preparado: ActionMenu existente na barra de views salvas Admin; 70 pares em 12 superfícies,
-foco/teclado/fechamento e callbacks locais verificados. Sem props novas, sem troca de dependência;
-UI 1.7.0 já contém o contrato. Popup passa a escapar do recorte do container horizontal. Os
-outros menus continuam locais; a concessão exige revisão humana própria.

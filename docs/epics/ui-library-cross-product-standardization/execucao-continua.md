@@ -1,7 +1,7 @@
 # Execução contínua — índice atual
 
 R01, R02, R03, R06, R07 e R11 estão preparados; [handoff-continuo.md](handoff-continuo.md) é a fonte
-de retomada, com os 11 PRs, commits e evidências. Cada contrato foi preparado no UI antes de sua
+de retomada, com os 12 PRs, commits e evidências. Cada contrato foi preparado no UI antes de sua
 adoção. Nenhum merge/release/deploy. Revisão humana independente por PR continua obrigatória.
 
 A execução dos próximos pilotos continua autorizada, sem inferir aprovação dos layouts atuais.
