@@ -45,3 +45,6 @@ Visual gate review: pending human.
 As imagens deste lote são armazenadas no repositório público UI para permanecerem visíveis no PR
 privado do Teacher. São fixtures sanitizadas, com a rede externa bloqueada e versões idênticas
 do pacote oficial 1.6.2 nos dois lados. Nenhum componente da biblioteca foi alterado para R08.
+
+PR draft: [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28); commit `ad1ae363ceb0e6a92fc8a115dbd2b3b90e8be63c`. CI/deploy não monitorados;
+nenhum merge deste lote foi realizado.

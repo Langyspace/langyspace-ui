@@ -9,6 +9,10 @@ O [registro de aprovação e integração](integracao-aprovada.md) define o esta
 de evidências abaixo mantém os commits que produziram as imagens; commits técnicos de integração
 não representam uma nova concessão visual.
 
+R08 também está preparado em [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28) (draft), com 40 pares de evidências
+e 40 linhas locais removidas. Esse lote novo requer sua própria review; as 12 revisões anteriores
+foram aprovadas explicitamente. O estado de integração atual está em integracao-aprovada.md.
+
 ## Resultado e concessões
 
 | Lote | Contrato compartilhado e adoção                                                         | Concessão medida / limite                                                                                                                      |
@@ -152,4 +156,4 @@ O trabalho paralelo no checkout Teacher preservou o planejamento anterior em
 foi restaurada no caminho original da IDE e atualizada sem alterar código/políticas desse trabalho.
 Os checkouts canônicos não foram mesclados com features pendentes para forçar alinhamento.
 
-Visual gate review: accepted by human.
+Visual gate review: pending human.

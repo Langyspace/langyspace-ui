@@ -44,6 +44,8 @@ foi iniciada; CI/deploy permanecem assíncronos, sem afirmação de conclusão e
 - UI: readiness do audit agora aguarda o host anexado e o componente filho visível. Um host sem
   altura pode conter ToastViewport fixo e visível; exigir caixa visível no host causava timeout.
   O filho continua exigido como visível e todas as regras de overflow/layout permanecem.
+  Aguardar o fim das animações finitas antes de medir evita acusar o deslocamento temporário
+  de entrada como overflow; animações infinitas não são aguardadas nem desativadas.
 - Teacher: os quatro PRs receberam o staging atual, preservando as correções recentes de domínio.
   A exclusão exata de UI 1.8.0 no pnpm-workspace fazia o fingerprint do inventário ficar desatualizado.
   O snapshot foi regenerado e comparado: somente o fingerprint muda, todos os dados do grafo,
@@ -53,7 +55,8 @@ foi iniciada; CI/deploy permanecem assíncronos, sem afirmação de conclusão e
 
 UI: audit de arquitetura, fixtures do audit, sete testes de referência, build, API, budgets e smoke
 do tarball com importação Node, SSR e consumidor browser passaram. API: 39 valores, 99 tipos,
-132 declarações. Bundle: 103.498 bytes raw / 21.938 gzip, dentro dos budgets aprovados.
+132 declarações. O audit focado passou em 30 cenários de ToastViewport e Spinner,
+com movimento normal/reduzido; o caso de animação infinita permanece exercitado. Bundle: 103.498 bytes raw / 21.938 gzip, dentro dos budgets aprovados.
 Teacher: typecheck passou nos quatro PRs; o check de arquitetura é compartilhado porque source,
 workspace e inventário de Functions são idênticos entre essas branches.
 
@@ -69,3 +72,6 @@ sobreposições de locks/guias e integrar os PRs aprovados pela via de staging. 
 a próxima unidade de preparação; uma mudança visual desse lote requer nova review própria.
 
 Visual gate review: accepted by human.
+
+R08 já tem PR próprio [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28), ainda sem review humana.
+Esse lote não altera a aprovação das 12 revisões enumeradas acima.

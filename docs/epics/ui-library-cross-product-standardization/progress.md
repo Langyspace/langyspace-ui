@@ -27,8 +27,12 @@ unidade de preparação, com filtro compatível e baseline próprios. A prepara�
 as reviews estão pendentes; integração exige aprovação humana da revisão atual de cada PR.
 R09/R10/R12–R24 seguem propostas, sem declarar o épico completo.
 
-Visual gate review: accepted by human.
+Visual gate review: pending human.
 
 R08 preparado em branch isolada do Teacher, usando a API oficial já existente em UI 1.6.2,
 sem nova prop/variante. Dois filtros de nível, 40 pares, 40 linhas locais removidas. O novo lote
 exige review própria; a aprovação anterior continua registrada para as demais revisões.
+
+PR novo de R08: [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28); o aceite anterior vale somente para os PRs
+listados em integracao-aprovada.md. Há quatro merges concluídos e oito PRs antigos ainda
+abertos, além do novo draft R08. Não declarar release ou produção concluída.
