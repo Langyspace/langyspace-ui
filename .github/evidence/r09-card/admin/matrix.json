@@ -1,0 +1,695 @@
+{
+  "repository": "langyspace-admin",
+  "route": "/",
+  "baseline": "314c1a303f437069054112b1ebbb45c02c6d177b",
+  "candidateSha256": "6a8547248151315189b98c03e6acfd52c11c92c659fd1e96b815515a89747c80",
+  "widths": [
+    390,
+    768,
+    900,
+    901,
+    920,
+    921,
+    1280,
+    1281,
+    1440,
+    1536,
+    1551,
+    1552,
+    2048
+  ],
+  "states": [
+    "dados",
+    "vazio",
+    "texto-longo"
+  ],
+  "comparison": {
+    "pairs": [
+      {
+        "state": "dados",
+        "width": 390,
+        "file": "inicio-dados-390.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -22.12,
+          -24.28
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 390,
+        "file": "inicio-vazio-390.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -24.28
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 390,
+        "file": "inicio-texto-longo-390.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -22.12,
+          -24.28
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 768,
+        "file": "inicio-dados-768.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 768,
+        "file": "inicio-vazio-768.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 768,
+        "file": "inicio-texto-longo-768.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 900,
+        "file": "inicio-dados-900.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 900,
+        "file": "inicio-vazio-900.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 900,
+        "file": "inicio-texto-longo-900.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 901,
+        "file": "inicio-dados-901.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 901,
+        "file": "inicio-vazio-901.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 901,
+        "file": "inicio-texto-longo-901.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 920,
+        "file": "inicio-dados-920.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 920,
+        "file": "inicio-vazio-920.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 920,
+        "file": "inicio-texto-longo-920.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 921,
+        "file": "inicio-dados-921.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 921,
+        "file": "inicio-vazio-921.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 921,
+        "file": "inicio-texto-longo-921.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -24.25,
+          -4.0
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1280,
+        "file": "inicio-dados-1280.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1280,
+        "file": "inicio-vazio-1280.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1280,
+        "file": "inicio-texto-longo-1280.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1281,
+        "file": "inicio-dados-1281.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1281,
+        "file": "inicio-vazio-1281.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1281,
+        "file": "inicio-texto-longo-1281.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4.0
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1440,
+        "file": "inicio-dados-1440.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1440,
+        "file": "inicio-vazio-1440.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1440,
+        "file": "inicio-texto-longo-1440.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1536,
+        "file": "inicio-dados-1536.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1536,
+        "file": "inicio-vazio-1536.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1536,
+        "file": "inicio-texto-longo-1536.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1551,
+        "file": "inicio-dados-1551.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1551,
+        "file": "inicio-vazio-1551.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1551,
+        "file": "inicio-texto-longo-1551.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 1552,
+        "file": "inicio-dados-1552.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 1552,
+        "file": "inicio-vazio-1552.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 1552,
+        "file": "inicio-texto-longo-1552.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "dados",
+        "width": 2048,
+        "file": "inicio-dados-2048.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "vazio",
+        "width": 2048,
+        "file": "inicio-vazio-2048.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      },
+      {
+        "state": "texto-longo",
+        "width": 2048,
+        "file": "inicio-texto-longo-2048.png",
+        "paddingBefore": [
+          "18px",
+          "18px"
+        ],
+        "paddingAfter": [
+          "16px",
+          "16px"
+        ],
+        "heightDelta": [
+          -4.0,
+          -4
+        ]
+      }
+    ],
+    "callbacksIdentical": true,
+    "overflow": false
+  }
+}
