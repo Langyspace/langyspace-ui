@@ -1,0 +1,2917 @@
+{
+  "baseline": "ae43890fa4cc45145583fac4c4eeb8080954e519",
+  "branch": "feat/ui-filter-pills-r08",
+  "package": "https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v1.6.2/langyspace-ui-1.6.2.tgz",
+  "routes": ["/materiais", "/alunos"],
+  "widths": [390, 900, 901, 1440],
+  "before": [
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 390,
+      "filename": "materiais-todos-390.png",
+      "phase": "before",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 390,
+      "filename": "materiais-a1-390.png",
+      "phase": "before",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 390,
+      "filename": "materiais-a2-390.png",
+      "phase": "before",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 390,
+      "filename": "materiais-b1-390.png",
+      "phase": "before",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 390,
+      "filename": "materiais-b2-390.png",
+      "phase": "before",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 390,
+      "filename": "materiais-focus-390.png",
+      "phase": "before"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 390,
+      "filename": "alunos-todos-390.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 390,
+      "filename": "alunos-a1-390.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 390,
+      "filename": "alunos-b1-390.png",
+      "phase": "before",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 83.515625,
+          "height": 32,
+          "top": 132,
+          "right": 103.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 390,
+      "filename": "alunos-focus-390.png",
+      "phase": "before"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 900,
+      "filename": "materiais-todos-900.png",
+      "phase": "before",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 900,
+      "filename": "materiais-a1-900.png",
+      "phase": "before",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 900,
+      "filename": "materiais-a2-900.png",
+      "phase": "before",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 900,
+      "filename": "materiais-b1-900.png",
+      "phase": "before",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 900,
+      "filename": "materiais-b2-900.png",
+      "phase": "before",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 900,
+      "filename": "materiais-focus-900.png",
+      "phase": "before"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 900,
+      "filename": "alunos-todos-900.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 900,
+      "filename": "alunos-a1-900.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 900,
+      "filename": "alunos-b1-900.png",
+      "phase": "before",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 185.515625,
+          "height": 32,
+          "top": 132,
+          "right": 205.515625,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 900,
+      "filename": "alunos-focus-900.png",
+      "phase": "before"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 901,
+      "filename": "materiais-todos-901.png",
+      "phase": "before",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 901,
+      "filename": "materiais-a1-901.png",
+      "phase": "before",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 901,
+      "filename": "materiais-a2-901.png",
+      "phase": "before",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 901,
+      "filename": "materiais-b1-901.png",
+      "phase": "before",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 901,
+      "filename": "materiais-b2-901.png",
+      "phase": "before",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 901,
+      "filename": "materiais-focus-901.png",
+      "phase": "before"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 901,
+      "filename": "alunos-todos-901.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 901,
+      "filename": "alunos-a1-901.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 901,
+      "filename": "alunos-b1-901.png",
+      "phase": "before",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 264.640625,
+          "height": 23,
+          "top": 116,
+          "right": 576.640625,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 605.640625,
+          "y": 111.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 111.5,
+          "right": 673.4375,
+          "bottom": 143.5,
+          "left": 605.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 901,
+      "filename": "alunos-focus-901.png",
+      "phase": "before"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 1440,
+      "filename": "materiais-todos-1440.png",
+      "phase": "before",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 1440,
+      "filename": "materiais-a1-1440.png",
+      "phase": "before",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 1440,
+      "filename": "materiais-a2-1440.png",
+      "phase": "before",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 1440,
+      "filename": "materiais-b1-1440.png",
+      "phase": "before",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 1440,
+      "filename": "materiais-b2-1440.png",
+      "phase": "before",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 1440,
+      "filename": "materiais-focus-1440.png",
+      "phase": "before"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 1440,
+      "filename": "alunos-todos-1440.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 1440,
+      "filename": "alunos-a1-1440.png",
+      "phase": "before",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 1440,
+      "filename": "alunos-b1-1440.png",
+      "phase": "before",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 271.359375,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 771.640625,
+          "height": 23,
+          "top": 124,
+          "right": 1099.640625,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1128.640625,
+          "y": 119.5,
+          "width": 67.796875,
+          "height": 32,
+          "top": 119.5,
+          "right": 1196.4375,
+          "bottom": 151.5,
+          "left": 1128.640625
+        },
+        "fontSize": "14px",
+        "overflow": false
+      },
+      "pressed": null
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 1440,
+      "filename": "alunos-focus-1440.png",
+      "phase": "before"
+    }
+  ],
+  "after": [
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 390,
+      "filename": "materiais-todos-390.png",
+      "phase": "after",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 390,
+      "filename": "materiais-a1-390.png",
+      "phase": "after",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 390,
+      "filename": "materiais-a2-390.png",
+      "phase": "after",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 390,
+      "filename": "materiais-b1-390.png",
+      "phase": "after",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 390,
+      "filename": "materiais-b2-390.png",
+      "phase": "after",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 390,
+      "filename": "materiais-focus-390.png",
+      "phase": "after"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 390,
+      "filename": "alunos-todos-390.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 390,
+      "filename": "alunos-a1-390.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 390,
+      "filename": "alunos-b1-390.png",
+      "phase": "after",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 350,
+          "height": 32,
+          "top": 132,
+          "right": 370,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 293,
+          "height": 23,
+          "top": 92,
+          "right": 353,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 390,
+      "filename": "alunos-focus-390.png",
+      "phase": "after"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 900,
+      "filename": "materiais-todos-900.png",
+      "phase": "after",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 900,
+      "filename": "materiais-a1-900.png",
+      "phase": "after",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 900,
+      "filename": "materiais-a2-900.png",
+      "phase": "after",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 900,
+      "filename": "materiais-b1-900.png",
+      "phase": "after",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 900,
+      "filename": "materiais-b2-900.png",
+      "phase": "after",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 900,
+      "filename": "materiais-focus-900.png",
+      "phase": "after"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 900,
+      "filename": "alunos-todos-900.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 900,
+      "filename": "alunos-a1-900.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 900,
+      "filename": "alunos-b1-900.png",
+      "phase": "after",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 20,
+          "y": 132,
+          "width": 860,
+          "height": 32,
+          "top": 132,
+          "right": 880,
+          "bottom": 164,
+          "left": 20
+        },
+        "search": {
+          "x": 60,
+          "y": 92,
+          "width": 803,
+          "height": 23,
+          "top": 92,
+          "right": 863,
+          "bottom": 115,
+          "left": 60
+        },
+        "pill": {
+          "x": 20,
+          "y": 132,
+          "width": 61.828125,
+          "height": 32,
+          "top": 132,
+          "right": 81.828125,
+          "bottom": 164,
+          "left": 20
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 900,
+      "filename": "alunos-focus-900.png",
+      "phase": "after"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 901,
+      "filename": "materiais-todos-901.png",
+      "phase": "after",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 901,
+      "filename": "materiais-a1-901.png",
+      "phase": "after",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 901,
+      "filename": "materiais-a2-901.png",
+      "phase": "after",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 901,
+      "filename": "materiais-b1-901.png",
+      "phase": "after",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 901,
+      "filename": "materiais-b2-901.png",
+      "phase": "after",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 901,
+      "filename": "materiais-focus-901.png",
+      "phase": "after"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 901,
+      "filename": "alunos-todos-901.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 901,
+      "filename": "alunos-a1-901.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 901,
+      "filename": "alunos-b1-901.png",
+      "phase": "after",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 111.5,
+          "right": 877,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "search": {
+          "x": 312,
+          "y": 116,
+          "width": 280.234375,
+          "height": 23,
+          "top": 116,
+          "right": 592.234375,
+          "bottom": 139,
+          "left": 312
+        },
+        "pill": {
+          "x": 621.234375,
+          "y": 111.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 111.5,
+          "right": 683.0625,
+          "bottom": 143.5,
+          "left": 621.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 901,
+      "filename": "alunos-focus-901.png",
+      "phase": "after"
+    },
+    {
+      "route": "/materiais",
+      "state": "Todos",
+      "width": 1440,
+      "filename": "materiais-todos-1440.png",
+      "phase": "after",
+      "expected": [
+        "City stories",
+        "Travel basics",
+        "Airport conversations",
+        "Work meetings"
+      ],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A1",
+      "width": 1440,
+      "filename": "materiais-a1-1440.png",
+      "phase": "after",
+      "expected": ["Travel basics", "Airport conversations"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "A2",
+      "width": 1440,
+      "filename": "materiais-a2-1440.png",
+      "phase": "after",
+      "expected": ["Work meetings"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B1",
+      "width": 1440,
+      "filename": "materiais-b1-1440.png",
+      "phase": "after",
+      "expected": ["City stories"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "B2",
+      "width": 1440,
+      "filename": "materiais-b2-1440.png",
+      "phase": "after",
+      "expected": [],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/materiais",
+      "state": "Foco e reset por teclado",
+      "width": 1440,
+      "filename": "materiais-focus-1440.png",
+      "phase": "after"
+    },
+    {
+      "route": "/alunos",
+      "state": "Todos",
+      "width": 1440,
+      "filename": "alunos-todos-1440.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa", "Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "A1",
+      "width": 1440,
+      "filename": "alunos-a1-1440.png",
+      "phase": "after",
+      "expected": ["Maria Almeida", "Bruno Costa"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "B1",
+      "width": 1440,
+      "filename": "alunos-b1-1440.png",
+      "phase": "after",
+      "expected": ["Carla Nogueira"],
+      "geometry": {
+        "group": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 255.765625,
+          "height": 32,
+          "top": 119.5,
+          "right": 1400,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "search": {
+          "x": 328,
+          "y": 124,
+          "width": 787.234375,
+          "height": 23,
+          "top": 124,
+          "right": 1115.234375,
+          "bottom": 147,
+          "left": 328
+        },
+        "pill": {
+          "x": 1144.234375,
+          "y": 119.5,
+          "width": 61.828125,
+          "height": 32,
+          "top": 119.5,
+          "right": 1206.0625,
+          "bottom": 151.5,
+          "left": 1144.234375
+        },
+        "fontSize": "12px",
+        "overflow": false
+      },
+      "pressed": "true"
+    },
+    {
+      "route": "/alunos",
+      "state": "Foco e reset por teclado",
+      "width": 1440,
+      "filename": "alunos-focus-1440.png",
+      "phase": "after"
+    }
+  ],
+  "externalNetwork": "blocked",
+  "fixtures": "existing sanitized search-input fixture; no production reads/writes"
+}

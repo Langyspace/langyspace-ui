@@ -25,6 +25,235 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'ToastItem',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ToastItem/index.tsx',
+    runtimeMarker: 'lsui-sc-toast-item',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/ToastItem/ToastItem.stories.tsx',
+      title: 'Molecules/Feedback/ToastItem',
+    },
+    test: { ...complete, path: 'src/molecules/ToastItem/ToastItem.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/ToastItem/types.ts',
+      documentation: { path: 'README.md', anchor: 'toastitem' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'ToastViewport',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ToastViewport/index.tsx',
+    runtimeMarker: 'lsui-sc-toast-viewport',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/ToastViewport/ToastViewport.stories.tsx',
+      title: 'Molecules/Feedback/ToastViewport',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/ToastViewport/ToastViewport.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/ToastViewport/types.ts',
+      documentation: { path: 'README.md', anchor: 'toastviewport' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/ToastViewport/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'NoticeBanner',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/NoticeBanner/index.tsx',
+    runtimeMarker: 'lsui-sc-notice-banner',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/NoticeBanner/NoticeBanner.stories.tsx',
+      title: 'Molecules/Feedback/NoticeBanner',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/NoticeBanner/NoticeBanner.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/NoticeBanner/types.ts',
+      documentation: { path: 'README.md', anchor: 'noticebanner' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/ShellNotice/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/ShellNotice/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'DocumentLayout',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/DocumentLayout/index.tsx',
+    runtimeMarker: 'lsui-sc-document-layout',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/DocumentLayout/DocumentLayout.stories.tsx',
+      title: 'Molecules/Layout/DocumentLayout',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/DocumentLayout/DocumentLayout.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/DocumentLayout/types.ts',
+      documentation: { path: 'README.md', anchor: 'documentlayout' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/LegalPage/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/LegalPage/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
+    exportName: 'AuthAccent',
+    interactive: false,
+    layer: 'atom',
+    ownerPath: 'src/atoms/AuthAccent/index.tsx',
+    runtimeMarker: 'lsui-sc-auth-accent',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/atoms/AuthAccent/AuthAccent.stories.tsx',
+      title: 'Atoms/Auth/AuthAccent',
+    },
+    test: {
+      ...complete,
+      path: 'src/atoms/AuthAccent/AuthAccent.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/atoms/AuthAccent/types.ts',
+      documentation: { path: 'README.md', anchor: 'auth-presentation' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'AuthDescription',
+    interactive: false,
+    layer: 'atom',
+    ownerPath: 'src/atoms/AuthDescription/index.tsx',
+    runtimeMarker: 'lsui-sc-auth-description',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/atoms/AuthDescription/AuthDescription.stories.tsx',
+      title: 'Atoms/Auth/AuthDescription',
+    },
+    test: {
+      ...complete,
+      path: 'src/atoms/AuthDescription/AuthDescription.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/atoms/AuthDescription/types.ts',
+      documentation: { path: 'README.md', anchor: 'auth-presentation' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'AuthTitle',
+    interactive: false,
+    layer: 'atom',
+    ownerPath: 'src/atoms/AuthTitle/index.tsx',
+    runtimeMarker: 'lsui-sc-auth-title',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/atoms/AuthTitle/AuthTitle.stories.tsx',
+      title: 'Atoms/Auth/AuthTitle',
+    },
+    test: {
+      ...complete,
+      path: 'src/atoms/AuthTitle/AuthTitle.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/atoms/AuthTitle/types.ts',
+      documentation: { path: 'README.md', anchor: 'auth-presentation' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'AvailabilityCalendar',
     interactive: true,
     layer: 'molecule',
@@ -533,6 +762,10 @@ export const publicComponentContracts = [
       propsPath: 'src/molecules/SearchInput/types.ts',
       documentation: { path: 'README.md', anchor: 'fields-e-busca' },
       consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/SearchField/index.tsx',
+        },
         {
           repository: 'langyspace-admin',
           path: 'src/pages/AdminPortal/LeadCohortPage/index.tsx',

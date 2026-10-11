@@ -5,6 +5,12 @@ export type {
 } from './atoms/ActionLink/types'
 export { AuthNotice } from './atoms/AuthNotice'
 export type { AuthNoticeProps, AuthNoticeTone } from './atoms/AuthNotice/types'
+export { AuthAccent } from './atoms/AuthAccent'
+export type { AuthAccentProps } from './atoms/AuthAccent/types'
+export { AuthDescription } from './atoms/AuthDescription'
+export type { AuthDescriptionProps } from './atoms/AuthDescription/types'
+export { AuthTitle } from './atoms/AuthTitle'
+export type { AuthTitleProps } from './atoms/AuthTitle/types'
 export { Avatar } from './atoms/Avatar'
 export type { AvatarProps, AvatarSize, AvatarTone } from './atoms/Avatar/types'
 export { Button } from './atoms/Button'
@@ -152,3 +158,15 @@ export type {
   AvailabilityCalendarSlot,
   AvailabilityCalendarStatus,
 } from './molecules/AvailabilityCalendar'
+
+export { DocumentLayout } from './molecules/DocumentLayout'
+export type {
+  DocumentLayoutProps,
+  DocumentSection,
+} from './molecules/DocumentLayout'
+export { NoticeBanner } from './molecules/NoticeBanner'
+export type { NoticeBannerProps } from './molecules/NoticeBanner'
+export { ToastItem } from './molecules/ToastItem'
+export type { ToastItemProps, ToastTone } from './molecules/ToastItem'
+export { ToastViewport } from './molecules/ToastViewport'
+export type { ToastViewportProps } from './molecules/ToastViewport'

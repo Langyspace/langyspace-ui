@@ -496,7 +496,8 @@ prop, o recipe default permanece inalterado.
 
 `TextInput`, `SelectInput` e `TextareaInput` aceitam props e refs nativas. `CompoundControl` é o
 único owner de border/background/focus quando ícone, input e ação formam uma surface. `SearchInput`
-compõe esse contrato e, quando `onClear` existe, devolve o foco ao input depois de limpar.
+compõe esse contrato: clicar no ícone ou na superfície foca o input, mantendo controles
+disabled inertes. Quando `onClear` existe, devolve o foco ao input depois de limpar.
 
 ```tsx
 <SearchInput
@@ -776,7 +777,8 @@ O maturity gate, regras de componentização e política de depreciação estão
 ## Release
 
 1. Atualize a versão em `package.json` usando SemVer.
-2. Faça merge em `main` somente após CI verde.
+2. Faça merge em `main` somente após CI verde e, para alterações visuais, aprovação humana do PR
+   conforme o [padrão de evidências](docs/visual-pr-review.md).
 3. Crie e envie a tag idêntica, por exemplo `v0.5.0`.
 4. O workflow valida, empacota, calcula SHA-256 e cria o GitHub Release automaticamente.
 5. Atualize consumidores explicitamente para o novo URL e lockfile.
@@ -786,3 +788,54 @@ O workflow falha se a tag e `package.json#version` divergirem.
 ## License
 
 UNLICENSED. See `LICENSE`.
+
+## Auth presentation
+
+`AuthTitle`, `AuthDescription` e `AuthAccent` compartilham a apresentação da autenticação entre
+Student e Teacher. São h2, p e span com children e atributos HTML nativos; não possuem variantes,
+flags de produto, serviço, rota, timer ou estado de OTP. Herdam a família da fonte do consumidor e
+usam tokens da UI sem exigir ThemeProvider ou stylesheet global.
+
+```tsx
+<AuthTitle>
+  Bom te ver de <AuthAccent>volta.</AuthAccent>
+</AuthTitle>
+<AuthDescription>
+  Coloca seu celular e vamos te enviar um código por SMS ou WhatsApp.
+</AuthDescription>
+```
+
+O título usa 1.75rem abaixo de 768px e 2.375rem a partir dessa largura. A descrição mantém max-width
+25rem e margem fluida por altura de viewport. Copy, composição e regras de negócio ficam no
+produto. O primeiro piloto adota somente PhoneStep/TokenStep de Login; os demais callsites seguem
+uma migração própria, com evidências e revisão humana. A API é aditiva em 1.8.0.
+
+### DocumentLayout
+
+Grade responsiva de leitura com `title`, `eyebrow`, `meta`, `summary`, `intro` e `sections`
+(`title`/`body`). Um h1 para o documento e h2 por seção. Resumo opcional, aside sticky a
+partir de 1024px e largura de leitura limitada; sem variantes de layout ou ThemeProvider.
+O produto mantém header, conteúdo, versão, SEO, navegação e retorno. Texto é renderizado
+como texto, sem HTML arbitrário. Atributos nativos e ref são encaminhados ao div raiz.
+
+### NoticeBanner
+
+Aviso de ícone, título, conteúdo (`children`) e ações opcionais. Grade responsiva única;
+ações à direita no mobile e com quebra em containers estreitos. `icon` deve fornecer
+semântica própria (ícones decorativos usam `aria-hidden`). Atributos nativos e ref do aside
+permitem composição. Margem, sticky, aria-live, PWA, priorização e callbacks pertencem
+ao produto. Sem tons arbitrários, flags de produto, reload, dismiss ou store interno.
+
+### ToastItem
+
+Item clicável com `message`, `title`/`actionLabel` opcionais, `icon` e cinco tons semânticos
+(neutral, success, danger, warning, brand). Props/ref nativos de button; ícones decorativos
+recebem aria-hidden no caller. A ação é o clique do item inteiro, sem botão aninhado. Strings
+são texto. O produto fornece accessible name, callback de remover/navegar e dados. Sem timers,
+store, rota, anúncio automático ou flags de produto. Respeita prefers-reduced-motion.
+
+### ToastViewport
+
+Stack children-first no topo direito, com largura limitada e posicionamento mobile comum
+até 640px. Atributos/ref de div; aria-live e conteúdo pertencem ao caller. Sem gerenciamento
+de mensagens, duração, limites ou dados privados. ToastItem restaura pointer-events nos itens.

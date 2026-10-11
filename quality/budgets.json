@@ -6,17 +6,23 @@
     "statements": 90
   },
   "gzipBytes": {
+    "auth": 1800,
     "actions": 3500,
     "fields": 5600,
     "identity": 1900,
-    "library": 20000,
-    "molecules": 18000
+    "library": 22000,
+    "molecules": 18000,
+    "portal": 3000,
+    "toasts": 2600
   },
   "rawBytes": {
+    "auth": 5000,
     "actions": 15000,
     "fields": 25000,
     "identity": 5100,
-    "library": 94000,
-    "molecules": 80000
+    "library": 104000,
+    "molecules": 80000,
+    "portal": 10000,
+    "toasts": 8000
   }
 }

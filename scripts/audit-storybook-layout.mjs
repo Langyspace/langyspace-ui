@@ -72,12 +72,29 @@ try {
             },
           )
           const storyRoot = page.locator('#storybook-root')
-          await storyRoot.waitFor({ timeout: auditConfig.timeoutMs })
+          // Fixed-position stories can render a visible child while their host has zero height.
+          await storyRoot.waitFor({
+            state: 'attached',
+            timeout: auditConfig.timeoutMs,
+          })
           await storyRoot
             .locator(':scope > *')
             .first()
             .waitFor({ state: 'visible', timeout: auditConfig.timeoutMs })
           await page.evaluate(() => document.fonts.ready)
+          await page.evaluate(async () => {
+            const entrances = document.getAnimations().filter((animation) => {
+              const endTime = animation.effect?.getComputedTiming().endTime
+              return (
+                animation.playState === 'running' && Number.isFinite(endTime)
+              )
+            })
+            await Promise.all(
+              entrances.map((animation) =>
+                animation.finished.catch(() => undefined),
+              ),
+            )
+          })
 
           const inspection = await inspectStory(
             page,

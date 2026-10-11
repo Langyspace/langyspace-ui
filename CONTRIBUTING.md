@@ -1,5 +1,17 @@
 # Contributing to Langyspace UI
 
+## Visual PRs and human review
+
+Prepare shared components here before opening adoption PRs in the products. Every direct/indirect
+change uses a feature-branch PR to `main`. Use `.github/pull_request_template.md`: only
+`# Evidências` and a table with `Antes` and `Depois` columns, with comparable images of affected stories, states,
+and widths. Consumer PRs require all affected product screens, including relevant mobile/desktop
+states. Keep technical decisions and validation in work documents and CI.
+
+Each visual PR requires explicit product-owner approval of its current revision before merge;
+CI is additional evidence. Do not enable auto-merge. Refresh images and request another review after
+later visual edits. Follow [the visual PR policy](docs/visual-pr-review.md) for capture and delivery.
+
 ## Decide ownership before writing code
 
 1. Keep route-level pages, screens, views and containers in the product. The product owns routing,

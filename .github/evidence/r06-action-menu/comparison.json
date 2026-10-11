@@ -1,0 +1,18 @@
+{
+  "pairs": 70,
+  "surfaces": 12,
+  "geometry": "bar/chip/trigger exact in 70 pairs",
+  "menuWidth": {
+    "before": 196,
+    "after": 208
+  },
+  "menuHeight": {
+    "before": 142.75,
+    "after": 143
+  },
+  "keyboardAndDismissalScenarios": 35,
+  "callbacks": "rename/duplicate/delete/undo verified on local view",
+  "font": "Montserrat loaded on both sides",
+  "externalNetwork": "blocked",
+  "baseline": "79096cd61939845dcd9639df9ace1f9afafcdc47"
+}

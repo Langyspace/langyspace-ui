@@ -8,6 +8,9 @@ const ConsumerSurface = styled.div`
 `
 
 const {
+  AuthAccent,
+  AuthDescription,
+  AuthTitle,
   AuthNotice,
   AuthTokenDigits,
   ActionLink,
@@ -18,6 +21,8 @@ const {
   CompoundControl,
   ControlledField,
   Dialog,
+  DocumentLayout,
+  NoticeBanner,
   Drawer,
   EmptyState,
   FieldRoot,
@@ -39,6 +44,8 @@ const {
   StatusChip,
   TextareaInput,
   TextInput,
+  ToastItem,
+  ToastViewport,
 } = await import('@langyspace/ui')
 
 function ControlledFieldSsr() {
@@ -174,6 +181,30 @@ try {
           length: 4,
           onTokenChange: () => undefined,
         }),
+        createElement(
+          AuthTitle,
+          null,
+          'Auth ',
+          createElement(AuthAccent, null, 'title'),
+        ),
+        createElement(
+          ToastViewport,
+          null,
+          createElement(ToastItem, { message: 'SSR toast', tone: 'success' }),
+        ),
+        createElement(DocumentLayout, {
+          title: 'SSR document',
+          sections: [{ title: 'Section', body: ['Text'] }],
+        }),
+        createElement(
+          NoticeBanner,
+          {
+            title: 'SSR notice',
+            icon: createElement('span', { 'aria-hidden': true }, '!'),
+          },
+          'Notice text',
+        ),
+        createElement(AuthDescription, null, 'Auth description'),
         createElement(AuthNotice, { tone: 'info' }, 'Code sent'),
         createElement(
           Dialog,
@@ -258,8 +289,15 @@ if (!markup.includes('lsui-sc-state-panel')) {
 }
 
 for (const componentId of [
+  'lsui-sc-toast-item',
+  'lsui-sc-toast-viewport',
+  'lsui-sc-document-layout',
+  'lsui-sc-notice-banner',
   'lsui-sc-action-link',
   'lsui-sc-action-menu',
+  'lsui-sc-auth-accent',
+  'lsui-sc-auth-description',
+  'lsui-sc-auth-title',
   'lsui-sc-auth-notice',
   'lsui-sc-auth-token-digits',
   'lsui-sc-availability-calendar',
