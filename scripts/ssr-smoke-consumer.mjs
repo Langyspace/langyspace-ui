@@ -18,6 +18,7 @@ const {
   AvailabilityCalendar,
   Avatar,
   Button,
+  Card,
   CompoundControl,
   ControlledField,
   Dialog,
@@ -67,6 +68,7 @@ try {
       createElement(
         ConsumerSurface,
         null,
+        createElement(Card, null, 'Card SSR'),
         createElement(Button, { size: 'lg', variant: 'brand' }, 'SSR'),
         createElement(ActionLink, { href: '/next' }, 'Action SSR'),
         createElement(
@@ -266,6 +268,10 @@ const buttonClasses = (markup.match(/<button[^>]*\sclass="([^"]*)"/)?.[1] ?? '')
 
 if (!buttonClasses.includes('lsui-sc-button')) {
   throw new Error('shared_button_component_id_is_not_explicit')
+}
+
+if (!markup.includes('lsui-sc-card') || !markup.includes('Card SSR')) {
+  throw new Error('shared_card_ssr_contract_missing')
 }
 
 if (!markup.includes('lsui-sc-pressable')) {

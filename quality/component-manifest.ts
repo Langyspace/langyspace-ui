@@ -25,6 +25,27 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'Card',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/Card/index.tsx',
+    runtimeMarker: 'lsui-sc-card',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/Card/Card.stories.tsx',
+      title: 'Molecules/Layout/Card',
+    },
+    test: { ...complete, path: 'src/molecules/Card/Card.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/Card/types.ts',
+      documentation: { path: 'README.md', anchor: 'card' },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ToastItem',
     interactive: true,
     layer: 'molecule',

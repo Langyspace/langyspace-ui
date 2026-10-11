@@ -58,6 +58,8 @@ export type {
   AuthTokenDigitsProps,
   AuthTokenLength,
 } from './molecules/AuthTokenDigits/types'
+export { Card } from './molecules/Card'
+export type { CardProps } from './molecules/Card/types'
 export { ControlledField } from './molecules/ControlledField'
 export type { ControlledFieldProps } from './molecules/ControlledField/types'
 export { CompoundControl } from './molecules/CompoundControl'

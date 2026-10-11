@@ -75,3 +75,11 @@ Visual gate review: accepted by human.
 
 R08 já tem PR próprio [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28), ainda sem review humana.
 Esse lote não altera a aprovação das 12 revisões enumeradas acima.
+
+## Autorização de promoção em 2026-10-11
+
+A product owner autorizou nesta conversa: “esses pode passar direto de stagingpra prod e ir pro próximo”. O aceite inclui R08 #28 na revisão ad1ae363ceb0e6a92fc8a115dbd2b3b90e8be63c. As entregas seguem staging → staging-verified → main → produção, sem bypass e sem push direto a main dos produtos.
+
+UI #8 integrado no merge d7066591b096d64fc8dc0d37d11db967a16decc0, após os cinco jobs verdes; tag v1.8.0 criada nesse merge para o workflow normal de release. R08 integrado no merge d809b21984d34dd91becbf0157144d30cc8aa823 e passou staging/E2E/emuladores/promoção e deploy produtivo. Bundle produtivo mudou e contém o marker de FilterPills compartilhado ausente no anterior.
+
+ActionMenu Admin: staging, promoção e deploy produtivo concluídos; o entry JS servido corresponde byte a byte ao artefato do commit 314c1a303f437069054112b1ebbb45c02c6d177b. R09 possui review própria e não está incluído neste aceite.

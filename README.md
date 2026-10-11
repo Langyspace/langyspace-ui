@@ -839,3 +839,14 @@ store, rota, anúncio automático ou flags de produto. Respeita prefers-reduced-
 Stack children-first no topo direito, com largura limitada e posicionamento mobile comum
 até 640px. Atributos/ref de div; aria-live e conteúdo pertencem ao caller. Sem gerenciamento
 de mensagens, duração, limites ou dados privados. ToastItem restaura pointer-events nos itens.
+
+### Card
+
+`Card` é uma superfície neutra com children, padding 16px, borda fina, radius de card e sombra discreta. Aceita props HTML e ref de div; conteúdo, headings, ações, estado e layout externo pertencem ao consumidor. Não possui variantes de aparência ou espaçamento. Cards de tabela, status e destaque mantêm seus próprios contratos.
+
+```tsx
+<Card role="group" aria-labelledby="summary-title">
+  <h2 id="summary-title">Resumo</h2>
+  <p>Informações fornecidas pelo produto.</p>
+</Card>
+```
