@@ -1,5 +1,7 @@
 # Mapeamento detalhado e custo-benefício da UI Library
 
+As tabelas registram o discovery original de 2026-10-10. O estado atual das migrações e os trade-offs dos pilotos estão em [handoff-atual.md](handoff-atual.md); Card R09 está em drafts e ainda não faz parte da release oficial.
+
 Data: 2026-10-10. Estado: mapeamento de referência; R01/R02/R03/R06/R07/R11 preparados para review humana.
 
 Este documento aprofunda os 38 grupos do [inventário inicial](discovery.md). O

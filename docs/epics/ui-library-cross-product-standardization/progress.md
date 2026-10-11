@@ -1,38 +1,9 @@
-# Progresso — execução contínua
+# Progresso — integração concluída e R09 em review
 
-Atualizado em 2026-10-11. R01/R02/R03/R06/R07/R11 preparados: sete componentes novos no UI,
-reuso de SearchInput Teacher e de ActionMenu Admin. Total de 12 PRs aprovados na revisão registrada: UI #8, oito drafts
-visuais de produto e três PRs do padrão permanente em Site/Admin/Cupom.
+13 PRs aprovados integrados. UI 1.8.0 oficial publicada e checksum verificado; Admin, Student e Teacher promovidos pelos pipelines e verificados em produção. [Handoff atual](handoff-atual.md) contém commits, testes, deploy e read-back.
 
-Os nove corpos visuais usam somente `# Evidências` e tabela com `Antes` à esquerda e `Depois`
-à direita: 340 pares de telas nos produtos, 74 pares no UI e 46 stories novas identificadas
-sem versão anterior. As 874 imagens e seus arquivos originais foram preservados. Typechecks, instalações
-congeladas, contratos focados, API/bundle e callbacks dos pilotos passaram nos escopos
-registrados. CI ampla não foi monitorada; nenhuma execução foi visível na consulta única
-de cada SHA atual. Quatro PRs integrados; tag e release oficial ainda pendentes. Pipelines de entrega iniciados e não monitorados.
+R09 preparado primeiro na UI e depois nos dois produtos, com três drafts: UI #9, Admin #12 e Teacher #29. 55 pares de telas nos produtos, 16 imagens de stories novas, 126 imagens no total. As concessões e o benefício modesto do primeiro piloto estão no plano R09; não há variante por produto.
 
-[Aprovação e integração atuais](integracao-aprovada.md).
+Única próxima tarefa: review humana dos três drafts R09. Nenhum auto-merge; somente depois do aceite haverá release oficial 1.9.0 e integração pela staging. R10/R12–R24 continuam propostas, e R04/R05 seguem separados pelo custo visual.
 
-[Formato atualizado e validação](evidencias-em-tabela.md).
-
-[Handoff atual](handoff-continuo.md): 12 PRs, commits, CI/CD, candidato, concessões e limites.
-Student/Teacher usam o mesmo candidato UI 1.8.0 por commit b37873be; Admin conserva a versão
-oficial 1.7.0 e seus locks porque ActionMenu já existe. Source desta rodada remove 675 linhas
-dos produtos e acrescenta 501 à UI, redução líquida de 174 no recorte de runtime afetado;
-isso exclui R01, testes/stories/documentação/configuração e não prova redução de bundle.
-
-R04/R05 permanecem separados/condicionais pelo custo visual. Próxima dependência: CI da UI #8
-e artefato oficial 1.8.0 para integrar as adoções aprovadas. R08 FilterPills Teacher será a próxima
-unidade de preparação, com filtro compatível e baseline próprios. A preparação continua autorizada enquanto
-as reviews estão pendentes; integração exige aprovação humana da revisão atual de cada PR.
-R09/R10/R12–R24 seguem propostas, sem declarar o épico completo.
-
-Visual gate review: pending human.
-
-R08 preparado em branch isolada do Teacher, usando a API oficial já existente em UI 1.6.2,
-sem nova prop/variante. Dois filtros de nível, 40 pares, 40 linhas locais removidas. O novo lote
-exige review própria; a aprovação anterior continua registrada para as demais revisões.
-
-PR novo de R08: [https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/28); o aceite anterior vale somente para os PRs
-listados em integracao-aprovada.md. Há quatro merges concluídos e oito PRs antigos ainda
-abertos, além do novo draft R08. Não declarar release ou produção concluída.
+Visual gate review: pending human — R09.

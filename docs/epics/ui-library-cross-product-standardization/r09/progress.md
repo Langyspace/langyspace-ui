@@ -1,9 +1,9 @@
 # Progresso R09
 
-D01/D02/D03 preparadas: Card no UI com uma única receita e apenas props HTML/ref de div; nenhuma prop de aparência ou espaçamento. Source, export, manifest, documentação, API, stories e smokes de pacote foram atualizados. Nenhuma adoção nos produtos foi iniciada.
+D01–D05 concluídas: Card foi preparado primeiro na UI, com uma receita e props HTML/ref, e as adoções isoladas usam o staging integrado dos lotes anteriores. UI #9, Admin #12 e Teacher #29 estão em drafts para review própria.
 
-Contrato de acessibilidade/ref/teclado, build/API e budgets passaram. 16 imagens de stories novas foram capturadas em 390/900/901/1440. As capturas não são aceite humano nem a matriz ampla de CI.
+55 pares Antes/Depois nos produtos, 16 capturas de stories novas e 126 imagens no total. URLs públicos por SHA, formato em tabela e bytes das amostras foram conferidos. Concessões de padding/borda/sombra e custo-benefício estão no plano técnico. Checks focados de contrato, API, pacote/budgets, tipos/arquitetura e composição passaram; CI possui os gates amplos.
 
-A entrega inclui PR da biblioteca com as stories novas identificadas na coluna Antes. Próxima tarefa: D04 — preparar as duas adoções após a integração dos lotes aprovados. As adoções usam o staging integrado dos lotes aprovados como baseline. Seu próprio aceite humano será necessário.
+Próxima tarefa: D06 — avaliação humana dos três PRs atuais. Depois do aceite, release oficial e substituição do candidato 1.9.0 antes da integração. Não aproveitar o aceite dos lotes anteriores nem habilitar auto-merge.
 
 Visual gate review: pending human.
