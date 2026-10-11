@@ -50,13 +50,14 @@ O corpo de todo PR visual usa somente este modelo, preenchido com imagens:
 ```markdown
 # Evidências
 
-## Antes
-
-## Depois
+| Antes                                                                             | Depois                                                                              |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Tela / rota · estado · 390px**<br><img src="URL_ANTES" alt="Antes" width="400"> | **Tela / rota · estado · 390px**<br><img src="URL_DEPOIS" alt="Depois" width="400"> |
 ```
 
-Em ambas as seções, apresentar as mesmas telas na mesma ordem, com rótulos curtos de rota, estado e
-largura. Usar dados sanitizados, viewport, zoom e tema iguais. Cobrir mobile e desktop quando a tela
+Em cada linha, apresentar o par da mesma tela/rota, estado e largura, com Antes à esquerda e
+Depois à direita. Usar imagens com a mesma largura de exibição (`width="400"`) e altura proporcional;
+preservar o arquivo original e identificar a comparação com um rótulo curto. Usar dados sanitizados, viewport, zoom e tema iguais. Cobrir mobile e desktop quando a tela
 for responsiva, os breakpoints atingidos e os estados afetados, incluindo overlays. Storybook serve
 como evidência do UI; não substitui screenshots das telas nos PRs dos produtos. Mesmo um piloto V0
 exige a comparação das telas afetadas.

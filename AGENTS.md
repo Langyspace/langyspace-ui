@@ -22,8 +22,7 @@
 - Every direct/indirect change uses a feature branch and a PR targeting `main`, never a direct
   push to the target branch. Prepare shared components here before opening adoption PRs in the
   products. Keep product routing, services, and domain behavior in their consumer repositories.
-- Visual PR bodies use `.github/pull_request_template.md`: only `# Evidências`, `## Antes`, and
-  `## Depois`, with matching before/after images of affected stories/states/widths. Product PRs
+- Visual PR bodies use `.github/pull_request_template.md`: only `# Evidências` and a table with `Antes` and `Depois` columns, with matching before/after images of affected stories/states/widths. Product PRs
   additionally require every affected screen and relevant mobile/desktop state. Keep technical
   notes and validation in the work documents/CI. See [visual PR review](docs/visual-pr-review.md).
 - Each visual PR requires explicit product-owner approval of its current revision before merge.

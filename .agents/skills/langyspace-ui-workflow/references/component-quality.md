@@ -21,8 +21,7 @@
   sanitized fixture, viewport, and theme. Keep baseline/current SHAs in the work documents. Shared
   changes are prepared here before adoption PRs; those PRs require images of all affected product
   screens, including relevant mobile/desktop states, even when the intended layout stays the same.
-- Every visual change uses a feature-branch PR to `main`. Its body contains only `# Evidências`,
-  `## Antes`, and `## Depois`, with matching images and short labels. Each PR requires explicit
+- Every visual change uses a feature-branch PR to `main`. Its body contains only `# Evidências` and a table with `Antes` and `Depois` columns, with matching images side by side per screen/state/width and short labels. Each PR requires explicit
   product-owner approval of its current revision before merge. Do not enable auto-merge. Later
   visual edits require refreshed images and another review; missing evidence keeps the PR in draft.
   Follow `docs/visual-pr-review.md`; CI success does not replace human approval.

@@ -4,7 +4,7 @@
 
 Prepare shared components here before opening adoption PRs in the products. Every direct/indirect
 change uses a feature-branch PR to `main`. Use `.github/pull_request_template.md`: only
-`# Evidências`, `## Antes`, and `## Depois`, with comparable images of affected stories, states,
+`# Evidências` and a table with `Antes` and `Depois` columns, with comparable images of affected stories, states,
 and widths. Consumer PRs require all affected product screens, including relevant mobile/desktop
 states. Keep technical decisions and validation in work documents and CI.
 

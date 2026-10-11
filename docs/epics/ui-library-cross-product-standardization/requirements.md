@@ -9,7 +9,7 @@
   clamp(0.5rem, 1.5svh, 0.75rem); destaque #ff1f5c. Sem alteração de fonte/foco/grid/scroll.
 - Título/descrição independem de ThemeProvider do produto; nenhum novo stylesheet global.
 - Provar duas composições reais, Student e Teacher, além de texto longo, em stories e coverage.
-- PRs visuais contêm somente Evidências / Antes / Depois com imagens acessíveis.
+- PRs visuais contêm somente Evidências e tabela Antes | Depois com imagens acessíveis.
 - Capturar /login em telefone, telefone inválido e OTP, em 390, 768, 900, 901 e 1440px, altura 1100px.
   Mesmos fixtures sintéticos, fonte local, tema, relógio e viewport nas duas revisões.
 - Não usar produção para capturar, não enviar OTP nem autenticar pessoa real.

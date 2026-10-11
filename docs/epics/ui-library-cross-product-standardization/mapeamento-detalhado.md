@@ -8,8 +8,7 @@ recomendações preliminares do inventário: preservar os layouts e o comportame
 aumentar o catálogo ou maximizar linhas removidas.
 
 Execução definida pela product owner: preparar toda apresentação/interação compartilhada no UI,
-depois abrir PRs de adoção nos produtos. Cada PR visual terá somente `# Evidências`, `## Antes` e
-`## Depois`, com imagens de todas as telas afetadas e revisão humana própria antes do merge. O
+depois abrir PRs de adoção nos produtos. Cada PR visual terá somente `# Evidências` e uma tabela com as colunas `Antes` e `Depois`, com pares lado a lado de todas as telas, estados e larguras afetados e revisão humana própria antes do merge. O
 [plano](plano-de-migracao.md#fluxo-de-execução-e-prs-definido-pela-product-owner) detalha esse
 fluxo; aprovar um contrato na biblioteca não aprova automaticamente os layouts de seus consumidores.
 

@@ -17,7 +17,7 @@ mesma baseline, relógio, fontes e dados mock reais do produto. Rede externa blo
    verificados.
 4. Executar o teste existente de salvar/renomear/duplicar/excluir/desfazer e typecheck focados.
 5. Conservar dependência/lock 1.7.0; preparar ambiente próprio com frozen install e abrir draft só
-   com Evidências/Antes/Depois.
+   com Evidências e tabela Antes | Depois.
 
 A geometria do trigger é 32px nos dois recipes. Popup UI min-width 208px versus local 196px, item
 com alvo mínimo 40px versus densidade anterior; medir e documentar a concessão. Não introduzir

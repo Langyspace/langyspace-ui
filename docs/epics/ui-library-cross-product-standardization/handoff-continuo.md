@@ -1,6 +1,6 @@
 # Handoff — execução contínua da UI Library
 
-Atualizado em 2026-10-10. R01, R02, R03, R06, R07 e R11 estão implementados e preparados para
+Atualizado em 2026-10-11. R01, R02, R03, R06, R07 e R11 estão implementados e preparados para
 avaliação; nenhuma adoção foi mesclada. A autorização para execução contínua permite preparar
 outros lotes enquanto os anteriores aguardam review. Cada PR visual exige aprovação humana
 própria da revisão atual antes do merge. Nenhum auto-merge, tag, release oficial ou deploy foi feito.
@@ -26,8 +26,10 @@ não são obrigatórias quando falta um correspondente elegível ou a mudança d
 
 ## PRs, commits e CI/CD
 
-Os nove PRs visuais foram lidos de volta: somente `# Evidências`, `## Antes`, `## Depois`, com
-874 imagens nos corpos (incluindo as imagens do UI). Os oito PRs de produto permanecem em draft.
+Os nove PRs visuais foram lidos de volta: somente `# Evidências` e tabela com colunas `Antes`
+e `Depois`, com 874 imagens preservadas. Cada linha coloca a mesma tela/estado/largura lado a lado.
+O UI contém 74 pares e 46 stories novas com ausência anterior identificada, sem imagem fictícia.
+O [registro da atualização de formato](evidencias-em-tabela.md) cobre modelos e guias dos seis repositórios. Os oito PRs de produto permanecem em draft.
 O UI está aberto para review. As 340 comparações de telas dos produtos têm pares em larguras reais:
 30 auth, 28 documentos, 110 avisos, 40 busca, 62 toasts e 70 menus Admin.
 

@@ -1,6 +1,6 @@
 # PRs visuais e revisão humana
 
-Padrão definido pela product owner em 2026-10-10. Aplica-se a toda alteração com impacto renderizado
+Padrão definido pela product owner em 2026-10-10; formato atualizado em 2026-10-11. Aplica-se a toda alteração com impacto renderizado
 direto ou indireto, na UI Library e nos cinco produtos, incluindo migrações que pretendem preservar
 a aparência atual.
 
@@ -38,17 +38,20 @@ autorizado; este padrão não inicia releases ou migrações por conta própria.
 
 ## Corpo padrão do PR
 
-Usar o [template](../.github/pull_request_template.md), somente com estes títulos:
+Usar o [template](../.github/pull_request_template.md), somente com `# Evidências` e uma tabela de comparação:
 
 ```markdown
 # Evidências
 
-## Antes
-
-## Depois
+| Antes                                                                             | Depois                                                                              |
+| --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| **Tela / rota · estado · 390px**<br><img src="URL_ANTES" alt="Antes" width="400"> | **Tela / rota · estado · 390px**<br><img src="URL_DEPOIS" alt="Depois" width="400"> |
 ```
 
-Inserir as imagens de todas as telas afetadas nas duas seções, na mesma ordem. Identificar cada
+Cada linha contém uma comparação: Antes à esquerda e Depois à direita, para a mesma tela,
+estado e viewport. Inserir todas as telas afetadas; não separar as imagens em seções distantes.
+Usar duas colunas, com imagens da mesma largura de exibição (`width="400"`) e altura proporcional.
+Preservar resolução, proporção e arquivos originais; a largura controla apenas a exibição no PR. Identificar cada
 imagem com um rótulo curto de tela/rota, estado e largura, sem acrescentar outras seções, resumos,
 checklists ou planos de teste ao corpo. O título do PR descreve a mudança; decisões técnicas e
 validação ficam nos documentos do trabalho e nos checks de CI.
@@ -70,7 +73,10 @@ Na biblioteca, capturar as stories e os estados afetados. Em cada PR de produto,
 telas reais; as imagens do Storybook não substituem essas evidências. Alterações de tokens ou
 primitivos exigem mapear todos os consumidores afetados, mesmo sem troca de imports. Adicionar
 componente sem estado anterior comparável exige registrar a ausência real na baseline, sem
-inventar uma implementação antiga.
+inventar uma implementação antiga. Para uma story realmente nova, escrever “Story nova — sem
+versão anterior” na célula Antes e colocar a captura na célula Depois. A comparação da extração
+continua exigindo os pares reais dos produtos; essa indicação não substitui capturas de telas
+existentes, nem permite omitir um Antes que deveria existir.
 
 Para uma extração nova, o componente existente nos produtos pode servir como Antes do PR do UI,
 com origem identificada e uma story equivalente no Depois. Os PRs de adoção continuam exigindo

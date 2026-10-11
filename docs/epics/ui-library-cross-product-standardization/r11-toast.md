@@ -14,7 +14,7 @@ warning canônico mais escuro, texto de ação #cc0f45 para contraste. Sem mudan
 2. Componentes UI + stories/testes/API/manifest/SSR/browser smoke antes de adoção.
 3. Substituir estilos e markup locais; remoção, navegação, live region e store permanecem.
 4. Comparar geometria/cores e callback de remover; candidato, frozen install e typecheck.
-5. Abrir drafts só com Antes/Depois; aprovação humana antes de merge/artefato oficial.
+5. Abrir drafts só com Evidências e tabela Antes | Depois; aprovação humana antes de merge/artefato oficial.
 
 Próxima tarefa: baseline. Não executar ações de notificação/produção ou publicar release.
 
