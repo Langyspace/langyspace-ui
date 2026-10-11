@@ -18,16 +18,18 @@ function createWorkspace(
 ) {
   const workspace = mkdtempSync(join(tmpdir(), 'ui-reference-'))
   workspaces.push(workspace)
-  const { repository, path } = queryComponent('SearchInput').consumers[0]
-  const repositoryRoot = join(workspace, repository)
-  const sourcePath = join(repositoryRoot, path)
-  mkdirSync(dirname(sourcePath), { recursive: true })
-  writeFileSync(sourcePath, source)
-  const packagePath = join(repositoryRoot, 'package.json')
-  writeFileSync(
-    packagePath,
-    JSON.stringify({ dependencies: { '@langyspace/ui': dependency } }),
-  )
+  const consumers = queryComponent('SearchInput').consumers
+  for (const { repository, path } of consumers) {
+    const repositoryRoot = join(workspace, repository)
+    const sourcePath = join(repositoryRoot, path)
+    mkdirSync(dirname(sourcePath), { recursive: true })
+    writeFileSync(sourcePath, source)
+    writeFileSync(
+      join(repositoryRoot, 'package.json'),
+      JSON.stringify({ dependencies: { '@langyspace/ui': dependency } }),
+    )
+  }
+  const packagePath = join(workspace, consumers[0].repository, 'package.json')
   return { workspace, packagePath }
 }
 
@@ -75,7 +77,13 @@ describe('component reference query', () => {
     const { workspace, packagePath } = createWorkspace(
       "import { SearchInput as Search } from '@langyspace/ui'; export const page = <Search />",
     )
-    const first = queryComponent('SearchInput', workspace).consumers[0]
+    const verified = queryComponent('SearchInput', workspace).consumers
+    expect(
+      verified.every(
+        ({ verification }) => verification === 'import_and_jsx_verified',
+      ),
+    ).toBe(true)
+    const first = verified[0]
     expect(first.verification).toBe('import_and_jsx_verified')
     expect(first.declaredVersion).toBe('9.8.7')
     writeFileSync(

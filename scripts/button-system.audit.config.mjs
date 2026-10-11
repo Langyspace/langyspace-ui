@@ -22,6 +22,13 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Feedback',
+      path: 'src/molecules/ToastItem/styles.ts',
+      reason:
+        'finite toast entrance with reduced-motion override, preserving product feedback',
+      expiresAt: '2027-01-11',
+    },
+    {
       owner: 'Operational lists',
       path: 'src/molecules/ActionMenu/styles.ts',
       reason: 'non-modal popover entrance with reduced-motion override',

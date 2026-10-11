@@ -9,3 +9,14 @@
 - [ ] T07 Review humana, release/artefato aprovado e finalização dos PRs de adoção.
 
 T07 depende de aprovação humana por PR; nenhuma task habilita auto-merge.
+
+## T07 — aprovação e integração (2026-10-11)
+
+- [x] Aceite humano explícito das 12 revisões registradas em integracao-aprovada.md.
+- [x] Padrões Site/Admin/Cupom e ActionMenu Admin integrados.
+- [x] Falhas reportadas de UI/Teacher diagnosticadas e corrigidas sem alteração de layout.
+- [ ] Gates amplos da UI, merge e artefato oficial 1.8.0.
+- [ ] Dependências oficiais e integração dos sete PRs Student/Teacher pela via de staging.
+- [ ] R08 em PR próprio com nova review se houver alteração visual.
+
+Próxima dependência: checks da UI #8 e artefato oficial aprovado; sem auto-merge.

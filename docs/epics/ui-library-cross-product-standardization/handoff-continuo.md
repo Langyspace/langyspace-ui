@@ -1,9 +1,13 @@
 # Handoff — execução contínua da UI Library
 
 Atualizado em 2026-10-11. R01, R02, R03, R06, R07 e R11 estão implementados e preparados para
-avaliação; nenhuma adoção foi mesclada. A autorização para execução contínua permite preparar
+avaliação e aprovados pela product owner; ActionMenu Admin e os padrões Site/Admin/Cupom já foram mesclados. A autorização para execução contínua permite preparar
 outros lotes enquanto os anteriores aguardam review. Cada PR visual exige aprovação humana
-própria da revisão atual antes do merge. Nenhum auto-merge, tag, release oficial ou deploy foi feito.
+própria da revisão atual antes do merge. Nenhum auto-merge, tag ou release oficial foi feito. As integrações em staging iniciam o pipeline normal, sem monitoramento de deploy.
+
+O [registro de aprovação e integração](integracao-aprovada.md) define o estado atual. A tabela
+de evidências abaixo mantém os commits que produziram as imagens; commits técnicos de integração
+não representam uma nova concessão visual.
 
 ## Resultado e concessões
 
@@ -148,4 +152,4 @@ O trabalho paralelo no checkout Teacher preservou o planejamento anterior em
 foi restaurada no caminho original da IDE e atualizada sem alterar código/políticas desse trabalho.
 Os checkouts canônicos não foram mesclados com features pendentes para forçar alinhamento.
 
-Visual gate review: pending human.
+Visual gate review: accepted by human.

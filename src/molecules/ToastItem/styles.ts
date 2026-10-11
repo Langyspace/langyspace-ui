@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import { keyframes, styled } from 'styled-components'
 import { tokens } from '../../foundations/tokens'
 import { Pressable } from '../../primitives/Pressable'
 import type { ToastTone } from './types'

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 import { tokens } from '../../foundations/tokens'
 
 export const Viewport = styled.div.withConfig({
