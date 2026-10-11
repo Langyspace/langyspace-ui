@@ -72,7 +72,11 @@ try {
             },
           )
           const storyRoot = page.locator('#storybook-root')
-          await storyRoot.waitFor({ timeout: auditConfig.timeoutMs })
+          // Fixed-position stories can render a visible child while their host has zero height.
+          await storyRoot.waitFor({
+            state: 'attached',
+            timeout: auditConfig.timeoutMs,
+          })
           await storyRoot
             .locator(':scope > *')
             .first()

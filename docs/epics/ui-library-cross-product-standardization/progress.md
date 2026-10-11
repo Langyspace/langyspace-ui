@@ -28,3 +28,7 @@ as reviews estão pendentes; integração exige aprovação humana da revisão a
 R09/R10/R12–R24 seguem propostas, sem declarar o épico completo.
 
 Visual gate review: accepted by human.
+
+R08 preparado em branch isolada do Teacher, usando a API oficial já existente em UI 1.6.2,
+sem nova prop/variante. Dois filtros de nível, 40 pares, 40 linhas locais removidas. O novo lote
+exige review própria; a aprovação anterior continua registrada para as demais revisões.

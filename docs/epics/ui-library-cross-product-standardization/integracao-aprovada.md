@@ -41,6 +41,9 @@ foi iniciada; CI/deploy permanecem assíncronos, sem afirmação de conclusão e
   2027-01-11; o reduced-motion existente permanece. Nenhuma regra geral do audit foi relaxada.
 - UI: fixtures de referência agora criam todos os consumidores de SearchInput; antes somente o
   primeiro existia, causando ENOENT quando a consulta verificava os demais exemplos registrados.
+- UI: readiness do audit agora aguarda o host anexado e o componente filho visível. Um host sem
+  altura pode conter ToastViewport fixo e visível; exigir caixa visível no host causava timeout.
+  O filho continua exigido como visível e todas as regras de overflow/layout permanecem.
 - Teacher: os quatro PRs receberam o staging atual, preservando as correções recentes de domínio.
   A exclusão exata de UI 1.8.0 no pnpm-workspace fazia o fingerprint do inventário ficar desatualizado.
   O snapshot foi regenerado e comparado: somente o fingerprint muda, todos os dados do grafo,
