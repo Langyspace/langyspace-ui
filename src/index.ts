@@ -60,6 +60,8 @@ export type {
 } from './molecules/AuthTokenDigits/types'
 export { Card } from './molecules/Card'
 export type { CardProps } from './molecules/Card/types'
+export { FilterToolbar } from './molecules/FilterToolbar'
+export type { FilterToolbarProps } from './molecules/FilterToolbar/types'
 export { ControlledField } from './molecules/ControlledField'
 export type { ControlledFieldProps } from './molecules/ControlledField/types'
 export { CompoundControl } from './molecules/CompoundControl'

@@ -6,7 +6,9 @@
 - [x] D04 Preparar adoções isoladas após integrar os lotes aprovados.
 - [x] D05 Capturar todos os estados afetados e abrir PRs com tabela Antes/Depois.
 - [x] C01 Corrigir formatação das matrizes e versionar os bytes existentes do candidato.
-- [ ] D06 Review humana própria; release oficial e integração pelos pipelines.
+- [x] D06 Review humana própria; release oficial e merges pela staging.
+
+Pipelines de promoção/deploy permanecem assíncronos; merges não declaram produção verificada.
 
 Nenhum aceite anterior cobre automaticamente R09.
 

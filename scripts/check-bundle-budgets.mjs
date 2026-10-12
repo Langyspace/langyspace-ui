@@ -30,6 +30,7 @@ for (const entry of [
   'auth',
   'fields',
   'identity',
+  'layout',
   'molecules',
   'portal',
   'toasts',

@@ -1,17 +1,15 @@
-# Progresso R09
+# Progresso R09 — integrada
 
-D01–D05 concluídas: Card foi preparado primeiro na UI, com uma receita e props HTML/ref, e as adoções isoladas usam o staging integrado dos lotes anteriores. UI #9, Admin #12 e Teacher #29 estão em drafts para review própria.
+Review humana explícita recebida em 2026-10-12 para UI #9, Admin #12 e Teacher #29. UI #9
+integrou db4cfe8d. Release 1.9.0 publicada pelo workflow normal retomado após timeout; checksum
+oficial 01475176421ba1e1605ea8aca0508def769729effbd42f1f82c9ab91905f7edb e 277 arquivos
+idênticos ao candidato. Finalização técnica de URL/integrity preservou src, estilos e imagens.
 
-55 pares Antes/Depois nos produtos, 16 capturas de stories novas e 126 imagens no total. URLs públicos por SHA, formato em tabela e bytes das amostras foram conferidos. Concessões de padding/borda/sombra e custo-benefício estão no plano técnico. Checks focados de contrato, API, pacote/budgets, tipos/arquitetura e composição passaram; CI possui os gates amplos.
+Admin #12 integrada em deea39cd; Teacher #29 em 32073319. Pipelines staging iniciados em
+38269184341/38269218823, com promoção e deploy produtivo condicionados aos gates. Não declarar
+produção concluída: execução assíncrona, sem monitoramento após a entrega. Checkouts canônicos
+alinhados e limpos; manutenção Calendar existente foi preservada.
 
-Correção UI de CI preparada em 2026-10-12: matrizes JSON formatadas com valores idênticos, check
-de formatação completo aprovado e candidato existente incluído no Git com exceção de caminho
-exata. SHA-256 e 277 membros do pacote conferidos. Os consumidores precisam apontar ao commit que
-contém o `.tgz`, em vez do commit antigo com somente checksum; essa entrega é registrada nos
-documentos de cada produto e no handoff local. Diagnóstico em [ci-correction.md](ci-correction.md).
+Próxima tarefa: review humana própria dos três novos drafts R10.
 
-Próxima tarefa da UI: D06 — avaliação humana dos três PRs atuais, após a correção dos consumidores.
-Depois do aceite, release oficial e substituição do candidato 1.9.0 antes da integração. Não
-aproveitar o aceite dos lotes anteriores nem habilitar auto-merge.
-
-Visual gate review: pending human.
+Visual gate review: accepted by human.

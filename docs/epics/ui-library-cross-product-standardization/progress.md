@@ -1,9 +1,15 @@
-# Progresso — integração concluída e R09 em review
+# Progresso — R09 integrada e R10 em review
 
-13 PRs aprovados integrados. UI 1.8.0 oficial publicada e checksum verificado; Admin, Student e Teacher promovidos pelos pipelines e verificados em produção. [Handoff atual](handoff-atual.md) contém commits, testes, deploy e read-back.
+16 PRs aprovados integrados: 13 anteriores + UI/Admin/Teacher R09. UI 1.9.0 oficial publicada e
+277 arquivos conferidos contra o candidato. Pipelines staging dos dois produtos iniciados;
+promoção/deploy assíncronos, sem declaração antecipada de produção concluída.
 
-R09 preparado primeiro na UI e depois nos dois produtos, com três drafts: UI #9, Admin #12 e Teacher #29. 55 pares de telas nos produtos, 16 imagens de stories novas, 126 imagens no total. As concessões e o benefício modesto do primeiro piloto estão no plano R09; não há variante por produto.
+R10 entregue primeiro na UI #10; drafts Admin #13 e Teacher #31. 26 imagens de stories novas e
+161 pares de telas, total 348 imagens. Sem mudanças de conteúdo, controles ou geometria; só
+sombra sutil Admin. API simples e custo-benefício/bundle documentados. Bases dos produtos
+conciliadas com R09 integrada, mantendo evidências e pacote candidato idênticos.
 
-Única próxima tarefa: review humana dos três drafts R09. Nenhum auto-merge; somente depois do aceite haverá release oficial 1.9.0 e integração pela staging. R10/R12–R24 continuam propostas, e R04/R05 seguem separados pelo custo visual.
+Próxima tarefa: review humana própria dos três PRs R10; sem auto-merge ou aceite herdado.
+O épico completo continua aberto; R12–R24 permanecem propostas.
 
-Visual gate review: pending human — R09.
+Visual gate review: pending human — R10.

@@ -25,6 +25,30 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'FilterToolbar',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/FilterToolbar/index.tsx',
+    runtimeMarker: 'lsui-sc-filter-toolbar',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/FilterToolbar/FilterToolbar.stories.tsx',
+      title: 'Molecules/Layout/FilterToolbar',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/FilterToolbar/FilterToolbar.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/FilterToolbar/types.ts',
+      documentation: { path: 'README.md', anchor: 'filtertoolbar' },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'Card',
     interactive: false,
     layer: 'molecule',

@@ -1,0 +1,28 @@
+{
+  "baselineCommit": "db4cfe8d63b862270185b2d916003ca218a9fe8b",
+  "baselineLibrary": {
+    "rawBytes": 103997,
+    "gzipBytes": 21993
+  },
+  "candidateLibrary": {
+    "rawBytes": 104515,
+    "gzipBytes": 22072
+  },
+  "baselineCardOnly": {
+    "rawBytes": 3312,
+    "gzipBytes": 1315
+  },
+  "candidateLayout": {
+    "rawBytes": 3826,
+    "gzipBytes": 1457
+  },
+  "existingFamilyBudgetsChanged": false,
+  "newLayoutBudget": {
+    "rawBytes": 4000,
+    "gzipBytes": 1600
+  },
+  "proposedAggregateBudget": {
+    "rawBytes": 105000,
+    "gzipBytes": 22200
+  }
+}
