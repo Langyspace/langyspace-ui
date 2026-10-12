@@ -1,8 +1,8 @@
 # Handoff — R12 aprovada em publicação; R14 em review
 
-2026-10-12. Owner: “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em a542b87. Publicação 1.11.0 falhou por shimmer sem classificação LSUI002; corrigida em 4c239c0 e tag normal v1.11.1 enviada. Fontes/API/imagens R12 aprovadas idênticas; nenhuma tag reescrita. [Correção](r12/ci-correction.md).
+2026-10-12. Owner: “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em a542b87. Publicação 1.11.0 falhou por shimmer sem classificação LSUI002; corrigida em 4c239c0 e tag normal v1.11.2 enviada. Fontes/API/imagens R12 aprovadas idênticas; nenhuma tag reescrita. [Correção](r12/ci-correction.md).
 
-Próxima dependência R12: obter oficial 1.11.1 e comparar todos os arquivos ao candidato revisado, permitindo apenas version de package.json; trocar metadata e conciliar/merge Student #8 e Teacher #33 aprovadas, via staging. Não integrar candidatos. CI/release assíncronas; não declarar produção concluída.
+Próxima dependência R12: obter oficial 1.11.2 e comparar todos os arquivos ao candidato revisado, permitindo apenas version de package.json; trocar metadata e conciliar/merge Student #8 e Teacher #33 aprovadas, via staging. Não integrar candidatos. CI/release assíncronas; não declarar produção concluída.
 
 R13 adiado após discovery dos cinco projetos; diferenças Admin/Teacher/Cupom não compensam API com variantes. Student não tem o perfil somente de leitura inicialmente suposto. [Discovery](r13/discovery.md).
 

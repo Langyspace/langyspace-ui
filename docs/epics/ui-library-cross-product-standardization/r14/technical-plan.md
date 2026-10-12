@@ -4,7 +4,7 @@
 
 UI primeiro: preparar `PracticeProgressBar`, tipos, export raiz, manifest, ref/contratos, stories e API aditiva. Aproveitar tokens neutral[100], accent.default e raio pill que correspondem às cores verificadas nos produtos; não mudar tokens globais para adequar uma família. Produto passa apenas `value={progress}` e mantém cálculos, estado, cards, textos e handlers.
 
-R12 precisa estar integrado e UI 1.11.1 oficial nos produtos antes de integrar adoções R14 em staging. R13 adiado não é dependência. R20 poderá compor a barra pronta; não antecipar seus controllers.
+R12 precisa estar integrado e UI 1.11.2 oficial nos produtos antes de integrar adoções R14 em staging. R13 adiado não é dependência. R20 poderá compor a barra pronta; não antecipar seus controllers.
 
 Arquivos de adoção: Student `src/components/features/portal/index.tsx` somente DeckPracticeCard, QuizPracticeCard e ShadowingLessonCard; Teacher `src/pages/StudentLearningPreview/components/StudentPracticeActivityCards/index.tsx` somente três branches. Os ProgressTrack/Fill dos arquivos de estilos continuam sendo usados por home/sessões/vocabulário; não removê-los nesta rodada. Mapear todos os demais callsites como adiados.
 
