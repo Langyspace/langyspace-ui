@@ -1,19 +1,9 @@
-# Progresso — R09 integrada e R10 em review
+# Progresso — UI Library entre produtos
 
-16 PRs aprovados integrados: 13 anteriores + UI/Admin/Teacher R09. UI 1.9.0 oficial publicada e
-277 arquivos conferidos contra o candidato. Pipelines staging dos dois produtos iniciados;
-promoção/deploy assíncronos, sem declaração antecipada de produção concluída.
+2026-10-12: R12 concluída em UI/Student/Teacher após aprovação humana. UI 1.11.2 oficial verificada por checksum e 289 arquivos, código aprovado preservado na apresentação; ajustes de CI documentados em r12/ci-correction.md. Produtos integrados em staging; promoção/produção assíncronas e não verificadas.
 
-R10 entregue primeiro na UI #10; drafts Admin #13 e Teacher #31. 26 imagens de stories novas e
-161 pares de telas, total 348 imagens. Sem mudanças de conteúdo, controles ou geometria; só
-sombra sutil Admin. API simples e custo-benefício/bundle documentados. Bases dos produtos
-conciliadas com R09 integrada, mantendo evidências e pacote candidato idênticos.
+R13 adiada por custo-benefício. R14 preparada em três drafts próprios UI #12, Student #10, Teacher #34, com tabelas Antes/Depois e 360 PNGs originais. Mesmo layout/texto/controles; Teacher normal recebe transição 520ms. UI +199 gzip e -5 linhas runtime por produto, mantendo barras de outras anatomias e domínio locais. Fontes R14 permanecem nos features, não no main da UI ou staging dos produtos.
 
-Próxima tarefa: review humana própria dos três PRs R10; sem auto-merge ou aceite herdado.
-O épico completo continua aberto; R12–R24 permanecem propostas.
+Próxima subtarefa: review humana R14. Consultar handoff-atual.md e registros persistentes para heads, CI/deploy e preservação dos commits locais de analytics. Sem auto-merge ou aceite herdado R12.
 
-Visual gate review: pending human — R10.
-
-2026-10-12: R10 aprovada/integrada (UI #10, Admin #13, Teacher #31), total 19 PRs integrados.
-Release oficial 1.10.0 verificada, deploys dos produtos assíncronos. R12 preparado: corpo fixo de
-card de lição, Student/Teacher, 184 imagens; próxima tarefa review humana própria R12.
+Visual gate review: pending human — R14.

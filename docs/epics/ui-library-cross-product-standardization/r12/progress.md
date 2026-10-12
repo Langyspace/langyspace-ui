@@ -22,4 +22,6 @@ Candidato 1.11.0 é exclusivo dos drafts, com checksum registrado. Próxima tare
 humana própria dos três PRs; após aceite, release oficial e integração por staging. R10 já foi
 aprovado e integrado; nenhum aceite R10 é herdado por R12.
 
-Visual gate review: pending human.
+Owner aprovou as três revisões R12; UI #11, Student #8 e Teacher #33 integrados. Release oficial 1.11.2 verificada por checksum e todos os 289 arquivos do pacote otimizado, com renderização idêntica demonstrada em 24 PNGs. Fontes dos adotadores/imagens/PR bodies iguais na troca de metadata; staging preserva analytics paralelo. Produção não verificada; pipeline assíncrona iniciada. Próxima rodada: R14 própria, ainda em review.
+
+Visual gate review: accepted by human — R12.
