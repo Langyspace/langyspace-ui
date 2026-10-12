@@ -1,6 +1,6 @@
 # Handoff atual — produção aprovada e R09 em review
 
-Atualizado em 2026-10-11. Os 13 PRs aprovados (12 anteriores + R08) foram integrados. UI 1.8.0 foi publicada pelo workflow normal, com checksum e tipos conferidos. Admin, Student e Teacher passaram staging, promoção e deploy produtivo; seus bundles foram conferidos. Não houve bypass, push direto a main de produto, mutação de dados/providers ou auto-merge.
+Atualizado em 2026-10-12. Os 13 PRs aprovados (12 anteriores + R08) foram integrados. UI 1.8.0 foi publicada pelo workflow normal, com checksum e tipos conferidos. Admin, Student e Teacher passaram staging, promoção e deploy produtivo; seus bundles foram conferidos. Não houve bypass, push direto a main de produto, mutação de dados/providers ou auto-merge.
 
 ## Produção verificada
 
@@ -32,6 +32,15 @@ Custo-benefício: 15 linhas líquidas removidas dos produtos e 27 adicionadas à
 
 Checks focados: contrato de grupo/ref/teclado, build/API e budgets UI; typecheck e lock congelado Admin; typecheck/arquitetura Teacher e comparação semântica de inventário (somente fingerprint derivado, sem ratchet ampliado). Preparação de imagens/ações e composição cobriu os pilotos. CI ampla dos drafts não foi monitorada e não foi declarada concluída.
 
-Única próxima tarefa: review humana própria dos três drafts R09. Após o aceite, release oficial 1.9.0 e substituição do candidato nos produtos antes de integrar pela staging. As demais unidades R10/R12–R24 continuam propostas; o épico completo não foi declarado concluído.
+Correção solicitada de CI em 2026-10-12: duas matrizes JSON foram formatadas, com valores
+preservados, e o candidato foi incluído explicitamente no Git. O commit antigo `7e1292a6`
+continha só o checksum e sua URL retorna 404; os produtos devem apontar ao commit com o arquivo.
+O check de formatação completo passou, sem mudanças em runtime ou imagens. Diagnóstico e
+validação em [ci-correction.md](r09/ci-correction.md); as entregas dos consumidores ficam em seus
+documentos `ui-library-card-r09` e no handoff local da execução contínua.
+
+Após essa correção, a próxima tarefa é review humana própria dos três drafts R09. Após o aceite,
+release oficial 1.9.0 e substituição do candidato nos produtos antes de integrar pela staging. As
+demais unidades R10/R12–R24 continuam propostas; o épico completo não foi declarado concluído.
 
 Visual gate review: pending human — apenas os três novos PRs R09.

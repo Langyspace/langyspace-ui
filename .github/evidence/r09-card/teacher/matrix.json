@@ -3,18 +3,8 @@
   "route": "/",
   "baseline": "d587b1578c2fff4e37afb0c4025f8dfeee423152",
   "candidateSha256": "6a8547248151315189b98c03e6acfd52c11c92c659fd1e96b815515a89747c80",
-  "widths": [
-    390,
-    900,
-    901,
-    1440
-  ],
-  "states": [
-    "dados",
-    "vazio",
-    "today-loading",
-    "today-error"
-  ],
+  "widths": [390, 900, 901, 1440],
+  "states": ["dados", "vazio", "today-loading", "today-error"],
   "comparison": {
     "pairs": [
       {

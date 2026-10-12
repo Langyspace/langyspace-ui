@@ -5,6 +5,7 @@ coverage/
 .local/
 release/
 *.tgz
+!.github/evidence/r09-card/candidate/langyspace-ui-1.9.0.tgz
 *.tsbuildinfo
 
 # Local agent retrieval indexes
