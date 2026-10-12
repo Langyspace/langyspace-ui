@@ -27,7 +27,6 @@ export const Body = styled.div.withConfig({
 `
 
 export const Line = styled.span`
-  min-width: 0;
   border-radius: ${tokens.radius.pill};
   background: linear-gradient(
     90deg,
