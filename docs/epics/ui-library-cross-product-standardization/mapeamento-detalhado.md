@@ -302,8 +302,10 @@ outros menus continuam locais; a concessão exige revisão humana própria.
 Atualização de execução 2026-10-12: R09/R10/R11 integradas; R12 limitado ao corpo equivalente
 PracticeCardSkeletonBody, com 80 pares de telas e concessão Teacher de 1px. Ver
 [r12/discovery.md](r12/discovery.md) para custo-benefício e [r12/progress.md](r12/progress.md) para
-checks. Os demais placeholders N17 continuam locais, conforme sua anatomia. R13–R24 não implementados.
+checks. Os demais placeholders N17 continuam locais, conforme sua anatomia. R13 adiado e R14 preparado em drafts; R15–R24 não implementados.
 
 ## Reavaliação R13/R14 em 2026-10-12
 
 R13 adiado por diferenças de anatomia que excedem pequenas concessões; não publicar wrapper genérico nem transformar formulários Student em pares somente de leitura. R14 preparado primeiro na UI com receita decorativa dos cards de prática, API pequena e custo aditivo medido. Adoções ainda dependem do R12 oficial e têm review própria; não antecipar compartilhamento das sessões. Detalhes nos documentos R13/R14.
+
+R14 em 2026-10-12: seis branches de cards em drafts, -5 linhas runtime por produto, UI +199 gzip. 80 pares Student/76 Teacher com scroll e 48 stories. Geometria, textos, controles e cores iguais; transição Teacher 520ms é a concessão proposta. Review própria pendente; R12 oficial 1.11.1 é dependência do merge, após correção técnica do registro de motion.

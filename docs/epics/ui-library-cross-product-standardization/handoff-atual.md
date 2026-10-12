@@ -1,13 +1,13 @@
-# Handoff — R12 aprovada; preparação UI R14
+# Handoff — R12 aprovada em publicação; R14 em review
 
-Atualizado em 2026-10-12. A owner aprovou as revisões R12 UI #11, Student #8 e Teacher #33 com “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em `a542b87a7a799492eff29c0b596d7b11c8c119ec` e tag normal v1.11.0 enviada. A integração dos produtos depende da disponibilidade e comparação do pacote oficial com o candidato revisado; preservar as evidências e conciliar staging atual. Não interpretar esta aprovação como aceite R14.
+2026-10-12. Owner: “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em a542b87. Publicação 1.11.0 falhou por shimmer sem classificação LSUI002; corrigida em 4c239c0 e tag normal v1.11.1 enviada. Fontes/API/imagens R12 aprovadas idênticas; nenhuma tag reescrita. [Correção](r12/ci-correction.md).
 
-R13: migração de pares label/value adiada por custo-benefício, após auditar os cinco projetos. Student não tem o equivalente somente de leitura inicialmente suposto; Admin, Teacher e Cupom têm receitas distintas. [Discovery](r13/discovery.md).
+Próxima dependência R12: obter oficial 1.11.1 e comparar todos os arquivos ao candidato revisado, permitindo apenas version de package.json; trocar metadata e conciliar/merge Student #8 e Teacher #33 aprovadas, via staging. Não integrar candidatos. CI/release assíncronas; não declarar produção concluída.
 
-R14: PracticeProgressBar preparada primeiro na UI; valor 0–1, ref/atributos, 6px e decoração forçada. Nove testes focados e typecheck passam; API aditiva com hashes anteriores preservados salvo barrel. Bundle +857 raw/+199 gzip, famílias anteriores inalteradas. 48 PNGs originais de stories; o pacote 1.12.0 é candidato exclusivo de preview.
+R13 adiado após discovery dos cinco projetos; diferenças Admin/Teacher/Cupom não compensam API com variantes. Student não tem o perfil somente de leitura inicialmente suposto. [Discovery](r13/discovery.md).
 
-Próxima subtarefa: concluir R12 oficial/adoções aprovadas; depois capturar Before R14 dos dois produtos e adotar somente os cards das cinco abas. D03/D04/D05 de produtos ainda não concluídas; não declarar telas migradas. Sessões/home/vocabulário e demais layouts permanecem fora do piloto. [Plano R14](r14/technical-plan.md).
+R14 preparada primeiro na UI #12; PracticeProgressBar value 0–1 e decoração/ref/atributos. Adoções limitadas aos cards Student/Teacher. 360 PNGs: 48 stories, 80 pares Student/76 Teacher com scroll. Geometria/conteúdo/controles iguais; Teacher normal ganha 520ms e reduced sem transição. -5 linhas runtime por produto, UI +199 gzip. Domínio e styled ainda consumidos preservados. Checks focados passam. [Progresso](r14/progress.md).
 
-CI/CD assíncrona: nenhum monitoramento de logs/status após push. Conferir a disponibilidade do artefato somente quando necessária à integração; staging é a via dos produtos, sem push para main. Continuar pelo handoff persistente em `.local/langyspace-ui-library-continuous/integration-20261012` e registrar ali URLs e SHAs atuais.
+Próxima subtarefa R14: review humana própria dos três drafts; conciliar R12 oficial antes de merge e publicar R14 oficial comparada ao candidato. Aceite R12 não se estende à R14. Heads/URLs/registros em `.local/langyspace-ui-library-continuous/integration-20261012`; handoff persistente atual supersede anteriores.
 
-Visual gate review: pending human — R14 UI.
+Visual gate review: pending human — R14.
