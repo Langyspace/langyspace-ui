@@ -1,13 +1,15 @@
-# Handoff — R12 aprovada em publicação; R14 em review
+# Handoff — R12 integrada; R14 em review
 
-2026-10-12. Owner: “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em a542b87. Publicação 1.11.0 falhou por shimmer sem classificação LSUI002; corrigida em 4c239c0 e tag normal v1.11.2 enviada. Fontes/API/imagens R12 aprovadas idênticas; nenhuma tag reescrita. [Correção](r12/ci-correction.md).
+Atualizado em 2026-10-12. Owner aprovou UI #11, Student #8 e Teacher #33. Os três PRs R12 foram integrados; total histórico 22 PRs aprovados integrados. UI **1.11.2 oficial**, checksum/289 arquivos verificados; publicação normal preservou tags anteriores. Registro de motion e remoção de declaração redundante resolveram as falhas de CI. 24 PNGs do skeleton idênticos aos aprovados, caixas/motion e declarações públicas iguais. [Correção](r12/ci-correction.md).
 
-Próxima dependência R12: obter oficial 1.11.2 e comparar todos os arquivos ao candidato revisado, permitindo apenas version de package.json; trocar metadata e conciliar/merge Student #8 e Teacher #33 aprovadas, via staging. Não integrar candidatos. CI/release assíncronas; não declarar produção concluída.
+Student staging 9b189c0 e Teacher staging 7a34da4 adotam o pacote oficial. CI/deploy iniciadas pelos workflows de staging; promoção/produção permanecem assíncronas e não foram verificadas. Não declarar produção concluída. Fontes/evidências/PR bodies aprovados preservados.
 
-R13 adiado após discovery dos cinco projetos; diferenças Admin/Teacher/Cupom não compensam API com variantes. Student não tem o perfil somente de leitura inicialmente suposto. [Discovery](r13/discovery.md).
+R13: migração adiada após discovery dos cinco projetos. Diferentes layouts Admin/Teacher/Cupom não compensam nova API com variantes; Student não tem readonly equivalente confirmado. [Discovery](r13/discovery.md).
 
-R14 preparada primeiro na UI #12; PracticeProgressBar value 0–1 e decoração/ref/atributos. Adoções limitadas aos cards Student/Teacher. 360 PNGs: 48 stories, 80 pares Student/76 Teacher com scroll. Geometria/conteúdo/controles iguais; Teacher normal ganha 520ms e reduced sem transição. -5 linhas runtime por produto, UI +199 gzip. Domínio e styled ainda consumidos preservados. Checks focados passam. [Progresso](r14/progress.md).
+R14: preparado primeiro na UI, drafts [UI #12](https://github.com/MarcosLaboriosi/langyspace-ui/pull/12), [Student #10](https://github.com/MarcosLaboriosi/langyspace-student/pull/10), [Teacher #34](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/34). PracticeProgressBar com value 0–1, decoração e ref/atributos, sem props visuais. -5 linhas runtime por consumidor, +199 gzip na UI. 48 stories e 80 pares Student/76 Teacher com scroll = 360 PNGs originais. Geometria/textos/controles/cores/raios iguais; Teacher normal ganha 520ms e reduced sem transição. Domínio e demais barras locais. Candidato **1.12.0 exclusivo dos previews**, não oficial.
 
-Próxima subtarefa R14: review humana própria dos três drafts; conciliar R12 oficial antes de merge e publicar R14 oficial comparada ao candidato. Aceite R12 não se estende à R14. Heads/URLs/registros em `.local/langyspace-ui-library-continuous/integration-20261012`; handoff persistente atual supersede anteriores.
+Próxima subtarefa única: review humana própria das três revisões R14; após aceite, release oficial comparada ao candidato e adoção por staging. R12 não concede aceite R14. Human gate mantém os drafts separados; nenhuma implementação R14 está no main da UI nem em staging dos produtos.
+
+Canonicals limpos/alinhados aos remotos da entrega. Commits locais concorrentes de analytics preservados antes da conciliação em branches e worktrees `recovery/ui-r12-{student,teacher}-canonical-20261012`, incluindo drafts ignorados Teacher com hashes iguais. Preservar esses snapshots; não integrar analytics local a esta entrega. Registros e heads completos no handoff persistente `.local/langyspace-ui-library-continuous/integration-20261012`.
 
 Visual gate review: pending human — R14.

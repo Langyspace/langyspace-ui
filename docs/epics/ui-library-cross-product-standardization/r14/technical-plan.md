@@ -32,7 +32,13 @@ Produto: preserva layout e jornada; cinco abas têm superfícies identificadas. 
 
 ## Preparação local e review paralela
 
-Before foi capturado do staging real Student 979c08e/Teacher b3bf81c, com os pacotes oficiais então declarados (1.8.0/1.10.0). Após preparar a UI, a preparação local e abertura dos drafts avançam enquanto R12 publica, sem candidatos em staging. A integração depende de R12 oficial em staging e aceite próprio R14. Conciliação futura deve provar que alterações R12 em skeleton/metadata não afetam o recorte carregado, ou recapturar. Esta revisão substitui a espera para D03/D05.
+A preparação inicial usou staging Student 979c08e/Teacher b3bf81c, antes da publicação R12.
+Após integração R12, todas as evidências de produto foram recapturadas: Before Student 9b189c0 e
+Teacher 7a34da4, ambos com UI oficial 1.11.2; After usa o candidato 1.12.0 imutável em bfd3616.
+A ferramenta aguarda 1400ms para streams de mensagens e count-up do shell, além de fontes e clock
+iguais. Apenas a ferramenta ignorada recebe essa espera; runtime e imagens não são editados.
+A integração depende agora somente do aceite próprio R14 e artefato oficial R14 comparado ao
+candidato. Adoções candidatas não entram em staging.
 
 40 cenas por produto; 80 pares Student e 76 Teacher incluem scrolls que mostram todos os cards. Fixture sintética 0/4/8 de 8 em cada tipo; personalizada inclui várias seções e Palavras salvas Student, também consumidor de DeckPracticeCard. /vocabulario e SavedVocabularyPreviewCard Teacher continuam locais. Disabled sem itens é testado no card; não inventar estado de página que o filtro exclui. Driver único Playwright 1.61.1 antes/depois; driver Teacher antigo não completava inicialização e foi substituído somente na ferramenta de captura.
 
