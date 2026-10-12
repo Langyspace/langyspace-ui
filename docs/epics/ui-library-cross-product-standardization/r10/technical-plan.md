@@ -62,3 +62,8 @@ Custo em src dos produtos: Teacher +6/-21, líquido -15 linhas; Admin +37/-28, l
 linhas; Admin mantém a recipe FilterBar para outro consumidor row e filtros column. As 161
 comparações conservaram todos os bounding boxes, labels/valores e texto. A superfície Admin
 conserva padding 16px, altura/largura/posição, acrescentando só sombra sutil.
+
+Revisão pós-entrega: smoke gerado continha um button HTML nativo, incompatível com LSUI003 do
+consumidor. Foi substituído pelo Button já importado. A auditoria do snippet completo reproduziu
+a falha anterior e passou com a correção, sem adicionar exceção. Scripts não entram no pacote;
+o candidato e todas as imagens permanecem idênticos.

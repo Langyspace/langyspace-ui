@@ -122,7 +122,7 @@ createRoot(document.getElementById('root')!).render(
     <CompoundControl leading={<span>$</span>}><TextInput aria-label="Amount" defaultValue="48" /></CompoundControl>
     <SearchInput aria-label="Search" defaultValue="Maria" />
     <Card>Package card passed</Card>
-    <FilterToolbar aria-label="Package filters"><button>Filter toolbar passed</button></FilterToolbar>
+    <FilterToolbar aria-label="Package filters"><Button>Filter toolbar passed</Button></FilterToolbar>
     <SectionHeader meta="4 items" title="Package section header passed" />
     <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onChange={() => undefined} />
     <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
