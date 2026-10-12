@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PracticeCardSkeletonBody, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -122,6 +122,7 @@ createRoot(document.getElementById('root')!).render(
     <CompoundControl leading={<span>$</span>}><TextInput aria-label="Amount" defaultValue="48" /></CompoundControl>
     <SearchInput aria-label="Search" defaultValue="Maria" />
     <PracticeCardSkeletonBody data-testid="package-practice-skeleton" />
+    <PracticeProgressBar value={0.375} />
     <Card>Package card passed</Card>
     <FilterToolbar aria-label="Package filters"><Button>Filter toolbar passed</Button></FilterToolbar>
     <SectionHeader meta="4 items" title="Package section header passed" />
@@ -290,6 +291,12 @@ try {
 
   if (cssFiles.length > 0) {
     throw new Error('unexpected_css_asset_in_styled_components_consumer')
+  }
+
+  if (!javascript.includes('lsui-sc-practice-progress-bar')) {
+    throw new Error(
+      'shared_practice_progress_runtime_missing_from_consumer_build',
+    )
   }
 
   if (!javascript.includes('lsui-sc-button')) {

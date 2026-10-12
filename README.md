@@ -889,3 +889,16 @@ reduced motion is static. Larger skeleton compositions stay in each product.
   <PracticeCardSkeletonBody />
 </div>
 ```
+
+## PracticeProgressBar
+
+Indicador decorativo de progresso nos cards de prática. Uma receita de 6px, trilha neutra e preenchimento accent. `value` usa escala 0–1; números fora da faixa são limitados e não finitos renderizam zero. O produto mantém contagens, cálculo, estados, texto e ações.
+
+```tsx
+<button onClick={openLesson}>
+  Daily words · 3/8 cards · 38%
+  <PracticeProgressBar value={3 / 8} />
+</button>
+```
+
+O texto do card transmite o estado acessível; a barra força `aria-hidden=true` e não acrescenta foco ou progressbar ao botão. Atributos/ref de div são encaminhados, sem children/role/tabIndex. A largura transita por 520ms e fica estática com reduced motion. Sessões, CEFR, segmentos, lotes financeiros e barras sem texto equivalente exigem avaliação própria.

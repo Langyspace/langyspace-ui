@@ -177,3 +177,6 @@ export type { ToastViewportProps } from './molecules/ToastViewport'
 
 export { PracticeCardSkeletonBody } from './molecules/PracticeCardSkeletonBody'
 export type { PracticeCardSkeletonBodyProps } from './molecules/PracticeCardSkeletonBody/types'
+
+export { PracticeProgressBar } from './atoms/PracticeProgressBar'
+export type { PracticeProgressBarProps } from './atoms/PracticeProgressBar/types'

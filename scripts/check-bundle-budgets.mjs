@@ -34,6 +34,7 @@ for (const entry of [
   'molecules',
   'portal',
   'skeletons',
+  'progress',
   'toasts',
 ]) {
   const result = await build({

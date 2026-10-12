@@ -1,20 +1,13 @@
-# Handoff — R10 integrada; R12 preparado para review
+# Handoff — R12 aprovada; preparação UI R14
 
-Atualizado em 2026-10-12. 19 PRs aprovados integrados (incluindo UI #10, Admin #13, Teacher #31).
-Release UI 1.10.0 oficial verificada por checksum e 283 arquivos byte a byte idênticos ao candidato.
-Fontes/evidências R10 preservadas na troca de metadata; teste de mensagem OAuth corrigido, sem
-mudar guard/runtime. Analytics paralelo Teacher/Student preservado.
+Atualizado em 2026-10-12. A owner aprovou as revisões R12 UI #11, Student #8 e Teacher #33 com “Aprovo as três revisões R12; pode integrar”. UI #11 integrada em `a542b87a7a799492eff29c0b596d7b11c8c119ec` e tag normal v1.11.0 enviada. A integração dos produtos depende da disponibilidade e comparação do pacote oficial com o candidato revisado; preservar as evidências e conciliar staging atual. Não interpretar esta aprovação como aceite R14.
 
-R12: PracticeCardSkeletonBody, um corpo equivalente e fixo de card de lição, primeiro na UI,
-adoções Student /licoes e Teacher /alunos/:studentId/licoes. Cinco abas, normal/reduced,
-390/900/901/1440, 40 pares por produto + 24 stories = 184 PNG. Cards/body/conteúdo/controles
-preservados; Teacher segunda meta +1px e reduced motion estático são as concessões documentadas.
-Candidato UI 1.11.0 não é release oficial e não entra em staging antes de novo aceite.
+R13: migração de pares label/value adiada por custo-benefício, após auditar os cinco projetos. Student não tem o equivalente somente de leitura inicialmente suposto; Admin, Teacher e Cupom têm receitas distintas. [Discovery](r13/discovery.md).
 
-Próxima tarefa: review humana própria dos três drafts R12. Em seguida, release oficial idêntica,
-substituição do candidato, merges por staging. R13–R24 ainda propostos; R04/R05 continuam locais.
-CI/CD assíncrona; canonical dos três produtos da entrega R10 alinhados e features R12 preservadas.
+R14: PracticeProgressBar preparada primeiro na UI; valor 0–1, ref/atributos, 6px e decoração forçada. Nove testes focados e typecheck passam; API aditiva com hashes anteriores preservados salvo barrel. Bundle +857 raw/+199 gzip, famílias anteriores inalteradas. 48 PNGs originais de stories; o pacote 1.12.0 é candidato exclusivo de preview.
 
-Detalhes: r10/progress.md, r12/{epic,requirements,technical-plan,tasks,progress,discovery}.md.
+Próxima subtarefa: concluir R12 oficial/adoções aprovadas; depois capturar Before R14 dos dois produtos e adotar somente os cards das cinco abas. D03/D04/D05 de produtos ainda não concluídas; não declarar telas migradas. Sessões/home/vocabulário e demais layouts permanecem fora do piloto. [Plano R14](r14/technical-plan.md).
 
-Visual gate review: pending human — R12.
+CI/CD assíncrona: nenhum monitoramento de logs/status após push. Conferir a disponibilidade do artefato somente quando necessária à integração; staging é a via dos produtos, sem push para main. Continuar pelo handoff persistente em `.local/langyspace-ui-library-continuous/integration-20261012` e registrar ali URLs e SHAs atuais.
+
+Visual gate review: pending human — R14 UI.
