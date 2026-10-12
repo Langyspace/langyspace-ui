@@ -13,3 +13,7 @@ Próxima tarefa: review humana própria dos três PRs R10; sem auto-merge ou ace
 O épico completo continua aberto; R12–R24 permanecem propostas.
 
 Visual gate review: pending human — R10.
+
+2026-10-12: R10 aprovada/integrada (UI #10, Admin #13, Teacher #31), total 19 PRs integrados.
+Release oficial 1.10.0 verificada, deploys dos produtos assíncronos. R12 preparado: corpo fixo de
+card de lição, Student/Teacher, 184 imagens; próxima tarefa review humana própria R12.

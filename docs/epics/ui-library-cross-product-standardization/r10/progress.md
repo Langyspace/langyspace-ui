@@ -1,24 +1,16 @@
 # Progresso R10
 
-D01–D05 concluídas. FilterToolbar preparado com nome acessível obrigatório, div/ref nativos e
-uma recipe flex-wrap; margem/superfície fora da API. Unit de nome/ref/edição/foco passou; API
-aditiva: 41 valores, 101 tipos, 138 declarações. Storybook e 26 capturas novas concluídas, com
-gap responsivo, busca com foco, seleção e composição Card/grid.
+2026-10-12: três PRs aprovados pelo owner em “aprova tudo e continua pro próximo”. UI #10
+integrada em 557669b; release 1.10.0 oficial HTTP200, checksum verificado e 283 arquivos idênticos
+ao candidato revisado. Admin #13 integrado em a9ed093; Teacher #31 em aa263e23. UI 1.10.0
+oficial substituiu o candidato nos manifests/locks, sem editar fonte visual ou PNGs aprovados.
 
-Bundle passou: +518 raw/+79 gzip no agregado. Capacidade proposta e correção da estimativa de
-foundations do entry layout estão no plano técnico; limites das famílias publicadas não mudam.
-Candidato 1.10.0 materializado e checksum conferido; ainda não é release oficial.
+O teste Calendar de staging esperava mensagem antiga; corrigida apenas a asserção, mantendo
+bloqueio status 1/stdout vazio, três casos passando. Teacher preserva os commits paralelos de
+analytics 0aa52b14 e 5ae4f4ac; inventário da base atual, somente fingerprint por metadata.
+Canonical UI/main, Admin/staging e Teacher/staging limpos/alinhados após integrações.
 
-Preparação concluída: 26 imagens UI e 322 imagens dos produtos anexadas; 56 pares Teacher e
-105 Admin, sem alterações de conteúdo/controles/geometria. Sombra Admin é a única concessão.
-Candidato 1.10.0 incluído explicitamente no Git, sem repetir o 404 do lote anterior. Typechecks
-dos produtos e quatro testes Messaging passaram. D04 preparada, com capturas e adoções isoladas.
+CI/CD dos produtos iniciada e assíncrona; não afirmar produção concluída por merge. Próxima
+família R12 preparada em branch própria, com review humana própria pendente.
 
-Drafts abertos: UI #10, Admin #13 e Teacher #31. Depois da integração R09, os consumidores
-incorporaram staging atual e resolveram metadata sem editar o piloto ou imagens. Candidato público
-1.10.0 permanece o mesmo.
-
-Próxima tarefa: D06 — review humana própria dos três PRs R10. O lote R10 exige
-review própria; o aceite R09 não autoriza seus merges.
-
-Visual gate review: pending human.
+Visual gate review: accepted by human.

@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PracticeCardSkeletonBody, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -121,6 +121,7 @@ createRoot(document.getElementById('root')!).render(
     <FieldRoot label="Notes"><TextareaInput defaultValue="Package textarea passed" /></FieldRoot>
     <CompoundControl leading={<span>$</span>}><TextInput aria-label="Amount" defaultValue="48" /></CompoundControl>
     <SearchInput aria-label="Search" defaultValue="Maria" />
+    <PracticeCardSkeletonBody data-testid="package-practice-skeleton" />
     <Card>Package card passed</Card>
     <FilterToolbar aria-label="Package filters"><Button>Filter toolbar passed</Button></FilterToolbar>
     <SectionHeader meta="4 items" title="Package section header passed" />
@@ -320,6 +321,7 @@ try {
   }
 
   for (const componentId of [
+    'lsui-sc-practice-card-skeleton-body',
     'lsui-sc-toast-item',
     'lsui-sc-toast-viewport',
     'lsui-sc-document-layout',
