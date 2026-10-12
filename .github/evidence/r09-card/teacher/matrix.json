@@ -1,0 +1,159 @@
+{
+  "repository": "langyspace-teacher",
+  "route": "/",
+  "baseline": "d587b1578c2fff4e37afb0c4025f8dfeee423152",
+  "candidateSha256": "6a8547248151315189b98c03e6acfd52c11c92c659fd1e96b815515a89747c80",
+  "widths": [390, 900, 901, 1440],
+  "states": ["dados", "vazio", "today-loading", "today-error"],
+  "comparison": {
+    "pairs": [
+      {
+        "state": "dados",
+        "width": 390,
+        "file": "hoje-dados-390.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "vazio",
+        "width": 390,
+        "file": "hoje-vazio-390.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-loading",
+        "width": 390,
+        "file": "hoje-today-loading-390.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-error",
+        "width": 390,
+        "file": "hoje-today-error-390.png",
+        "paddingBefore": null,
+        "paddingAfter": null,
+        "heightDelta": 0,
+        "contentsIdentical": true
+      },
+      {
+        "state": "dados",
+        "width": 900,
+        "file": "hoje-dados-900.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "vazio",
+        "width": 900,
+        "file": "hoje-vazio-900.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-loading",
+        "width": 900,
+        "file": "hoje-today-loading-900.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-error",
+        "width": 900,
+        "file": "hoje-today-error-900.png",
+        "paddingBefore": null,
+        "paddingAfter": null,
+        "heightDelta": 0,
+        "contentsIdentical": true
+      },
+      {
+        "state": "dados",
+        "width": 901,
+        "file": "hoje-dados-901.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "vazio",
+        "width": 901,
+        "file": "hoje-vazio-901.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-loading",
+        "width": 901,
+        "file": "hoje-today-loading-901.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-error",
+        "width": 901,
+        "file": "hoje-today-error-901.png",
+        "paddingBefore": null,
+        "paddingAfter": null,
+        "heightDelta": 0,
+        "contentsIdentical": true
+      },
+      {
+        "state": "dados",
+        "width": 1440,
+        "file": "hoje-dados-1440.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "vazio",
+        "width": 1440,
+        "file": "hoje-vazio-1440.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-loading",
+        "width": 1440,
+        "file": "hoje-today-loading-1440.png",
+        "paddingBefore": "20px",
+        "paddingAfter": "16px",
+        "heightDelta": -8,
+        "contentsIdentical": true
+      },
+      {
+        "state": "today-error",
+        "width": 1440,
+        "file": "hoje-today-error-1440.png",
+        "paddingBefore": null,
+        "paddingAfter": null,
+        "heightDelta": 0,
+        "contentsIdentical": true
+      }
+    ],
+    "contentsIdentical": true,
+    "overflow": false,
+    "errorScreensByteIdentical": true
+  }
+}
