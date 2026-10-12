@@ -1,14 +1,15 @@
-# Progresso — R09 aceita e R10 em review
+# Progresso — R09 integrada e R10 em review
 
-13 PRs anteriores integrados. Aceite explícito R09 recebido em 2026-10-12 para três revisões
-atuais. UI #9 integrada; publicação 1.9.0 retomada após timeout, sem bypass. Admin #12/Teacher #29
-aguardam artefato oficial antes de integrar. Detalhes em handoff-atual.md e r09/release-recovery.md.
+16 PRs aprovados integrados: 13 anteriores + UI/Admin/Teacher R09. UI 1.9.0 oficial publicada e
+277 arquivos conferidos contra o candidato. Pipelines staging dos dois produtos iniciados;
+promoção/deploy assíncronos, sem declaração antecipada de produção concluída.
 
-R10 preparada primeiro na UI: uma receita FilterToolbar, 26 capturas de stories novas e 161 pares
-nos dois produtos, sem alteração de conteúdo, controles ou geometria. Somente a sombra prevista
-Admin muda. Total 348 imagens. Custo de bundle e benefício modesto estão documentados.
+R10 entregue primeiro na UI #10; drafts Admin #13 e Teacher #31. 26 imagens de stories novas e
+161 pares de telas, total 348 imagens. Sem mudanças de conteúdo, controles ou geometria; só
+sombra sutil Admin. API simples e custo-benefício/bundle documentados. Bases dos produtos
+conciliadas com R09 integrada, mantendo evidências e pacote candidato idênticos.
 
-Próxima tarefa: review humana própria R10, enquanto a dependência de artefato R09 permanece
-pendente. Nenhum auto-merge ou aprovação herdada. O épico completo não está concluído.
+Próxima tarefa: review humana própria dos três PRs R10; sem auto-merge ou aceite herdado.
+O épico completo continua aberto; R12–R24 permanecem propostas.
 
 Visual gate review: pending human — R10.
