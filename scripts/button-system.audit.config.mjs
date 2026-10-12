@@ -22,6 +22,13 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Practice loading',
+      path: 'src/molecules/PracticeCardSkeletonBody/styles.ts',
+      reason:
+        'decorative practice-card shimmer with reduced-motion override; busy state stays in the product',
+      expiresAt: '2027-04-12',
+    },
+    {
       owner: 'Feedback',
       path: 'src/molecules/ToastItem/styles.ts',
       reason:
