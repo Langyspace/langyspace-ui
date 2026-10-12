@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -122,6 +122,7 @@ createRoot(document.getElementById('root')!).render(
     <CompoundControl leading={<span>$</span>}><TextInput aria-label="Amount" defaultValue="48" /></CompoundControl>
     <SearchInput aria-label="Search" defaultValue="Maria" />
     <Card>Package card passed</Card>
+    <FilterToolbar aria-label="Package filters"><button>Filter toolbar passed</button></FilterToolbar>
     <SectionHeader meta="4 items" title="Package section header passed" />
     <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onChange={() => undefined} />
     <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
@@ -332,6 +333,7 @@ try {
     'lsui-sc-availability-calendar',
     'lsui-sc-field-root',
     'lsui-sc-filter-pills',
+    'lsui-sc-filter-toolbar',
     'lsui-sc-compound-control',
     'lsui-sc-modal-panel',
     'lsui-sc-message-bubble',

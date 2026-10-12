@@ -850,3 +850,29 @@ de mensagens, duração, limites ou dados privados. ToastItem restaura pointer-e
   <p>Informações fornecidas pelo produto.</p>
 </Card>
 ```
+
+### FilterToolbar
+
+Linha de filtros nomeada com children e props/ref nativos de div. Informe `aria-label` ou
+`aria-labelledby`; o role group é fixo. Flex-wrap e alinhamento comuns, gap 12px e gap 8px/stretch
+até 900px. Sem variantes, padding, margens ou superfície. O produto controla busca, seleção,
+resultados e rede; os filhos mantêm seus handlers, larguras e ordem de foco.
+
+```tsx
+<FilterToolbar aria-label="Filtros de materiais">
+  <SearchInput
+    aria-label="Buscar material"
+    value={query}
+    onChange={onQueryChange}
+  />
+  <FilterPills
+    aria-label="Nível"
+    options={levels}
+    value={level}
+    onChange={setLevel}
+  />
+</FilterToolbar>
+```
+
+Componha Card externamente quando a seção precisar de superfície; margens da página continuam
+locais. Filtros em coluna ou grids com regras de domínio não são variantes desta linha.

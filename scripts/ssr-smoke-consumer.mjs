@@ -19,6 +19,7 @@ const {
   Avatar,
   Button,
   Card,
+  FilterToolbar,
   CompoundControl,
   ControlledField,
   Dialog,
@@ -69,6 +70,11 @@ try {
         ConsumerSurface,
         null,
         createElement(Card, null, 'Card SSR'),
+        createElement(
+          FilterToolbar,
+          { 'aria-label': 'SSR filters' },
+          'Toolbar SSR',
+        ),
         createElement(Button, { size: 'lg', variant: 'brand' }, 'SSR'),
         createElement(ActionLink, { href: '/next' }, 'Action SSR'),
         createElement(
@@ -272,6 +278,13 @@ if (!buttonClasses.includes('lsui-sc-button')) {
 
 if (!markup.includes('lsui-sc-card') || !markup.includes('Card SSR')) {
   throw new Error('shared_card_ssr_contract_missing')
+}
+
+if (
+  !markup.includes('lsui-sc-filter-toolbar') ||
+  !markup.includes('Toolbar SSR')
+) {
+  throw new Error('shared_filter_toolbar_ssr_contract_missing')
 }
 
 if (!markup.includes('lsui-sc-pressable')) {
