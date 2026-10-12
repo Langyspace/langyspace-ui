@@ -270,3 +270,8 @@ R06 preparado: ActionMenu existente na barra de views salvas Admin; 70 pares em 
 foco/teclado/fechamento e callbacks locais verificados. Sem props novas, sem troca de dependência;
 UI 1.7.0 já contém o contrato. Popup passa a escapar do recorte do container horizontal. Os
 outros menus continuam locais; a concessão exige revisão humana própria.
+
+Atualização de execução 2026-10-12: R09/R10/R11 integradas; R12 limitado ao corpo equivalente
+PracticeCardSkeletonBody, com 80 pares de telas e concessão Teacher de 1px. Ver
+[r12/discovery.md](r12/discovery.md) para custo-benefício e [r12/progress.md](r12/progress.md) para
+checks. Os demais placeholders N17 continuam locais, conforme sua anatomia. R13–R24 não implementados.

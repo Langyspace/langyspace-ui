@@ -174,3 +174,6 @@ export { ToastItem } from './molecules/ToastItem'
 export type { ToastItemProps, ToastTone } from './molecules/ToastItem'
 export { ToastViewport } from './molecules/ToastViewport'
 export type { ToastViewportProps } from './molecules/ToastViewport'
+
+export { PracticeCardSkeletonBody } from './molecules/PracticeCardSkeletonBody'
+export type { PracticeCardSkeletonBodyProps } from './molecules/PracticeCardSkeletonBody/types'

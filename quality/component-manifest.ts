@@ -25,6 +25,39 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'PracticeCardSkeletonBody',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/PracticeCardSkeletonBody/index.tsx',
+    runtimeMarker: 'lsui-sc-practice-card-skeleton-body',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/PracticeCardSkeletonBody/PracticeCardSkeletonBody.stories.tsx',
+      title: 'Molecules/Loading/PracticeCardSkeletonBody',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/PracticeCardSkeletonBody/PracticeCardSkeletonBody.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/PracticeCardSkeletonBody/types.ts',
+      documentation: { path: 'README.md', anchor: 'practicecardskeletonbody' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/PracticePreviewCardSkeleton/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'FilterToolbar',
     interactive: false,
     layer: 'molecule',

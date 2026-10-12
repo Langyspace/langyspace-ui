@@ -37,6 +37,7 @@ const {
   MessageThreadHeader,
   OperationalList,
   Pressable,
+  PracticeCardSkeletonBody,
   SearchInput,
   SectionHeader,
   SegmentedControl,
@@ -69,6 +70,9 @@ try {
       createElement(
         ConsumerSurface,
         null,
+        createElement(PracticeCardSkeletonBody, {
+          'data-testid': 'ssr-practice-skeleton',
+        }),
         createElement(Card, null, 'Card SSR'),
         createElement(
           FilterToolbar,
@@ -308,6 +312,7 @@ if (!markup.includes('lsui-sc-state-panel')) {
 }
 
 for (const componentId of [
+  'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',
   'lsui-sc-toast-viewport',
   'lsui-sc-document-layout',

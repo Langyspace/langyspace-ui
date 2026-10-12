@@ -876,3 +876,16 @@ resultados e rede; os filhos mantêm seus handlers, larguras e ordem de foco.
 
 Componha Card externamente quando a seção precisar de superfície; margens da página continuam
 locais. Filtros em coluna ou grids com regras de domínio não são variantes desta linha.
+
+## PracticeCardSkeletonBody
+
+Fixed title, two metadata bars and progress placeholder for matching practice cards.
+Native div attributes/ref only; no children or geometry/variant props. The parent owns the
+cover, grid, busy state and announcement. Normal shimmer preserves existing dimensions;
+reduced motion is static. Larger skeleton compositions stay in each product.
+
+```tsx
+<div aria-busy="true" aria-label="Loading lessons">
+  <PracticeCardSkeletonBody />
+</div>
+```
