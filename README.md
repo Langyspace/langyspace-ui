@@ -930,3 +930,10 @@ AuthFrame shares the responsive brand/form panels, card and action positions. Su
 composed by the product. Auth, logos, text, legal links, toast state and forms remain in products.
 The named form panel owns scroll and exposes `data-auth-scroll-panel` for native focus/scroll.
 No provider, router or theme provider is required.
+
+### CalendarControls
+
+Controlled previous/next/today navigation with `label`, `previousLabel`, `nextLabel`,
+`onPrevious`, `onNext`, `onToday` and optional `children` for the product legend. The product owns
+calendar state, dates, labels, data and grid. Controls wrap to fit their container, use explicit
+button semantics and standard UI actions. No product/date-view variants or provider dependencies.

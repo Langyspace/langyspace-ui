@@ -37,6 +37,7 @@ for (const entry of [
   'skeletons',
   'progress',
   'phone',
+  'calendarControls',
   'toasts',
 ]) {
   const result = await build({

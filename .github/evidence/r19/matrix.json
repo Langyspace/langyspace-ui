@@ -1,0 +1,3030 @@
+{
+  "before": "Story nova — sem versão anterior.",
+  "originals": true,
+  "records": [
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 390,
+      "file": "001.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 358,
+          "height": 40,
+          "top": 374,
+          "right": 374,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 390,
+      "file": "002.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 362.5,
+          "width": 358,
+          "height": 63,
+          "top": 362.5,
+          "right": 374,
+          "bottom": 425.5,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 362.5,
+              "width": 40,
+              "height": 40,
+              "top": 362.5,
+              "right": 56,
+              "bottom": 402.5,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 362.5,
+              "width": 40,
+              "height": 40,
+              "top": 362.5,
+              "right": 104,
+              "bottom": 402.5,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 366.5,
+              "width": 56.8125,
+              "height": 32,
+              "top": 366.5,
+              "right": 168.8125,
+              "bottom": 398.5,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 390,
+      "file": "003.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 352,
+          "width": 358,
+          "height": 84,
+          "top": 352,
+          "right": 374,
+          "bottom": 436,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 352,
+              "width": 40,
+              "height": 40,
+              "top": 352,
+              "right": 56,
+              "bottom": 392,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 352,
+              "width": 40,
+              "height": 40,
+              "top": 352,
+              "right": 104,
+              "bottom": 392,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 356,
+              "width": 56.8125,
+              "height": 32,
+              "top": 356,
+              "right": 168.8125,
+              "bottom": 388,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 390,
+      "file": "004.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 900,
+      "file": "005.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 900,
+      "file": "006.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 900,
+      "file": "007.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 900,
+      "file": "008.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 901,
+      "file": "009.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 901,
+      "file": "010.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 901,
+      "file": "011.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 901,
+      "file": "012.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 920,
+      "file": "013.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 920,
+      "file": "014.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 920,
+      "file": "015.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 920,
+      "file": "016.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 921,
+      "file": "017.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 921,
+      "file": "018.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 921,
+      "file": "019.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 921,
+      "file": "020.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 1440,
+      "file": "021.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "normal",
+      "width": 1440,
+      "file": "022.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "normal",
+      "width": 1440,
+      "file": "023.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "normal",
+      "width": 1440,
+      "file": "024.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 390,
+      "file": "025.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 358,
+          "height": 40,
+          "top": 374,
+          "right": 374,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 390,
+      "file": "026.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 362.5,
+          "width": 358,
+          "height": 63,
+          "top": 362.5,
+          "right": 374,
+          "bottom": 425.5,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 362.5,
+              "width": 40,
+              "height": 40,
+              "top": 362.5,
+              "right": 56,
+              "bottom": 402.5,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 362.5,
+              "width": 40,
+              "height": 40,
+              "top": 362.5,
+              "right": 104,
+              "bottom": 402.5,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 366.5,
+              "width": 56.8125,
+              "height": 32,
+              "top": 366.5,
+              "right": 168.8125,
+              "bottom": 398.5,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 390,
+      "file": "027.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 352,
+          "width": 358,
+          "height": 84,
+          "top": 352,
+          "right": 374,
+          "bottom": 436,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 352,
+              "width": 40,
+              "height": 40,
+              "top": 352,
+              "right": 56,
+              "bottom": 392,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 352,
+              "width": 40,
+              "height": 40,
+              "top": 352,
+              "right": 104,
+              "bottom": 392,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 356,
+              "width": 56.8125,
+              "height": 32,
+              "top": 356,
+              "right": 168.8125,
+              "bottom": 388,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 390,
+      "file": "028.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 900,
+      "file": "029.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 900,
+      "file": "030.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 900,
+      "file": "031.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 868,
+          "height": 40,
+          "top": 374,
+          "right": 884,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 900,
+      "file": "032.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 901,
+      "file": "033.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 901,
+      "file": "034.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 901,
+      "file": "035.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 869,
+          "height": 40,
+          "top": 374,
+          "right": 885,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 901,
+      "file": "036.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 920,
+      "file": "037.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 920,
+      "file": "038.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 920,
+      "file": "039.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 888,
+          "height": 40,
+          "top": 374,
+          "right": 904,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 920,
+      "file": "040.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 921,
+      "file": "041.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 921,
+      "file": "042.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 921,
+      "file": "043.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 889,
+          "height": 40,
+          "top": 374,
+          "right": 905,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 921,
+      "file": "044.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 1440,
+      "file": "045.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "with-legend",
+      "motion": "reduced",
+      "width": 1440,
+      "file": "046.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "long-label",
+      "motion": "reduced",
+      "width": 1440,
+      "file": "047.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 1408,
+          "height": 40,
+          "top": 374,
+          "right": 1424,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    },
+    {
+      "story": "narrow-container",
+      "motion": "reduced",
+      "width": 1440,
+      "file": "048.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 374,
+          "width": 320,
+          "height": 40,
+          "top": 374,
+          "right": 336,
+          "bottom": 414,
+          "left": 16
+        },
+        "buttons": [
+          {
+            "name": "Mês anterior",
+            "rect": {
+              "x": 16,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 56,
+              "bottom": 414,
+              "left": 16
+            },
+            "type": "button"
+          },
+          {
+            "name": "Próximo mês",
+            "rect": {
+              "x": 64,
+              "y": 374,
+              "width": 40,
+              "height": 40,
+              "top": 374,
+              "right": 104,
+              "bottom": 414,
+              "left": 64
+            },
+            "type": "button"
+          },
+          {
+            "name": "Hoje",
+            "rect": {
+              "x": 112,
+              "y": 378,
+              "width": 56.8125,
+              "height": 32,
+              "top": 378,
+              "right": 168.8125,
+              "bottom": 410,
+              "left": 112
+            },
+            "type": "button"
+          }
+        ],
+        "overflow": false
+      }
+    }
+  ]
+}
