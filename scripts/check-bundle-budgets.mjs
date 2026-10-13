@@ -28,6 +28,7 @@ measurements.library = measure(await readFile(resolve(root, 'dist/index.js')))
 for (const entry of [
   'actions',
   'auth',
+  'authFrame',
   'fields',
   'identity',
   'layout',

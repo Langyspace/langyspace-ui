@@ -922,3 +922,11 @@ Search and Escape/keyboard selection are shared.
   ref={phoneRef}
 />
 ```
+
+### AuthFrame
+
+AuthFrame shares the responsive brand/form panels, card and action positions. Supply `brand`,
+`brandLabel`, `mobileLogo`, `formAriaLabel`, `topAction` and `children`; an optional `footer` is
+composed by the product. Auth, logos, text, legal links, toast state and forms remain in products.
+The named form panel owns scroll and exposes `data-auth-scroll-panel` for native focus/scroll.
+No provider, router or theme provider is required.
