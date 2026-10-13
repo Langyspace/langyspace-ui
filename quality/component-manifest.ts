@@ -25,6 +25,36 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'AuthFrame',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/AuthFrame/index.tsx',
+    runtimeMarker: 'lsui-sc-auth-frame',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/AuthFrame/AuthFrame.stories.tsx',
+      title: 'Molecules/Auth/AuthFrame',
+    },
+    test: { ...complete, path: 'src/molecules/AuthFrame/AuthFrame.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/AuthFrame/types.ts',
+      documentation: { path: 'README.md', anchor: 'authframe' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'PhoneField',
     interactive: true,
     layer: 'molecule',

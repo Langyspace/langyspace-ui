@@ -186,3 +186,6 @@ export type {
   PhoneFieldProps,
   PhoneCountryOption,
 } from './molecules/PhoneField'
+
+export { AuthFrame } from './molecules/AuthFrame'
+export type { AuthFrameProps } from './molecules/AuthFrame'

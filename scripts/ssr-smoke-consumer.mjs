@@ -8,6 +8,7 @@ const ConsumerSurface = styled.div`
 `
 
 const {
+  AuthFrame,
   AuthAccent,
   AuthDescription,
   AuthTitle,
@@ -72,6 +73,17 @@ try {
       createElement(
         ConsumerSurface,
         null,
+        createElement(
+          AuthFrame,
+          {
+            brand: 'Brand SSR',
+            brandLabel: 'Brand',
+            mobileLogo: 'Logo',
+            formAriaLabel: 'Auth',
+            topAction: null,
+          },
+          'Auth frame SSR',
+        ),
         createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PhoneField, {
           countries: [],
