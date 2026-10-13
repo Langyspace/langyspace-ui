@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
-import styled from 'styled-components'
+import { styled } from 'styled-components'
 import { PhoneField } from '.'
 
 const countries = [
