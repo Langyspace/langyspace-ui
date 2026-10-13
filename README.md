@@ -937,3 +937,9 @@ Controlled previous/next/today navigation with `label`, `previousLabel`, `nextLa
 `onPrevious`, `onNext`, `onToday` and optional `children` for the product legend. The product owns
 calendar state, dates, labels, data and grid. Controls wrap to fit their container, use explicit
 button semantics and standard UI actions. No product/date-view variants or provider dependencies.
+
+### PracticeCardBody
+
+Use `title`, `leadingMeta`, `trailingMeta`, `value` (0–1) e `completed` opcional.
+Corpo comum com título h3, metadata e barra decorativa. Capas, botão, dados, labels,
+status calculado e ações permanecem no consumidor. Receita única; sem variações por produto.

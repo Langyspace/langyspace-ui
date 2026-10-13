@@ -42,6 +42,7 @@ const {
   PhoneField,
   PracticeCardSkeletonBody,
   PracticeProgressBar,
+  PracticeCardBody,
   SearchInput,
   SectionHeader,
   SegmentedControl,
@@ -92,6 +93,13 @@ try {
           onPrevious: () => {},
           onNext: () => {},
           onToday: () => {},
+        }),
+        createElement(PracticeCardBody, {
+          title: 'Practice SSR',
+          leadingMeta: '4/8',
+          trailingMeta: '50%',
+          value: 0.5,
+          completed: true,
         }),
         createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PhoneField, {
@@ -357,6 +365,7 @@ if (!markup.includes('lsui-sc-state-panel')) {
 
 for (const componentId of [
   'lsui-sc-calendar-controls',
+  'lsui-sc-practice-card-body',
   'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',
   'lsui-sc-toast-viewport',

@@ -192,3 +192,6 @@ export type { AuthFrameProps } from './molecules/AuthFrame'
 
 export { CalendarControls } from './molecules/CalendarControls'
 export type { CalendarControlsProps } from './molecules/CalendarControls'
+
+export { PracticeCardBody } from './molecules/PracticeCardBody'
+export type { PracticeCardBodyProps } from './molecules/PracticeCardBody'
