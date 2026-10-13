@@ -943,3 +943,9 @@ button semantics and standard UI actions. No product/date-view variants or provi
 Use `title`, `leadingMeta`, `trailingMeta`, `value` (0–1) e `completed` opcional.
 Corpo comum com título h3, metadata e barra decorativa. Capas, botão, dados, labels,
 status calculado e ações permanecem no consumidor. Receita única; sem variações por produto.
+
+### QuizOption e QuizFeedback
+
+`QuizOption` recebe props nativas de button, `letter`, children e `state` opcional
+(default/correct/wrong/dim). `QuizFeedback` recebe props nativas de div, `tone` correct/wrong
+e children. O consumidor calcula resposta/reveal/disabled e mantém áudio, avanço e persistência.

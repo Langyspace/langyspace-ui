@@ -195,3 +195,8 @@ export type { CalendarControlsProps } from './molecules/CalendarControls'
 
 export { PracticeCardBody } from './molecules/PracticeCardBody'
 export type { PracticeCardBodyProps } from './molecules/PracticeCardBody'
+
+export { QuizOption } from './molecules/QuizOption'
+export type { QuizOptionProps, QuizOptionState } from './molecules/QuizOption'
+export { QuizFeedback } from './molecules/QuizFeedback'
+export type { QuizFeedbackProps } from './molecules/QuizFeedback'
