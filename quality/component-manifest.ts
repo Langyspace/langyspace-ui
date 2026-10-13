@@ -25,6 +25,39 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'CalendarControls',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/CalendarControls/index.tsx',
+    runtimeMarker: 'lsui-sc-calendar-controls',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/CalendarControls/CalendarControls.stories.tsx',
+      title: 'Molecules/CalendarControls',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/CalendarControls/CalendarControls.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/CalendarControls/types.ts',
+      documentation: { path: 'README.md', anchor: 'calendarcontrols' },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/CalendarControls/index.tsx',
+        },
+        {
+          repository: 'langyspace-admin',
+          path: 'src/pages/AdminPortal/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'AuthFrame',
     interactive: false,
     layer: 'molecule',

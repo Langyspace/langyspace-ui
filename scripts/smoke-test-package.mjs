@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ActionLink, ActionMenu, AuthFrame, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ActionLink, ActionMenu, CalendarControls, AuthFrame, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -123,6 +123,7 @@ createRoot(document.getElementById('root')!).render(
     <SearchInput aria-label="Search" defaultValue="Maria" />
     <PracticeCardSkeletonBody data-testid="package-practice-skeleton" />
     <PracticeProgressBar value={0.375} />
+    <CalendarControls label="Period" previousLabel="Previous" nextLabel="Next" onPrevious={() => {}} onNext={() => {}} onToday={() => {}} />
     <AuthFrame brand={<span>Package brand</span>} brandLabel="Brand" mobileLogo={<span>Logo</span>} formAriaLabel="Auth" topAction={null}><span>Package auth frame passed</span></AuthFrame>
     <PhoneField countries={[{code:"BR",name:"Brasil",dialCode:"+55",flag:"BR",placeholder:"00 00000 0000"}]} country={{code:"BR",name:"Brasil",dialCode:"+55",flag:"BR",placeholder:"00 00000 0000"}} label="Celular" onCountryChange={() => {}} />
     <Card>Package card passed</Card>
@@ -330,6 +331,7 @@ try {
   }
 
   for (const componentId of [
+    'lsui-sc-calendar-controls',
     'lsui-sc-practice-card-skeleton-body',
     'lsui-sc-toast-item',
     'lsui-sc-toast-viewport',

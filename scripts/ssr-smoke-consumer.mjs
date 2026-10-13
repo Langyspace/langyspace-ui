@@ -8,6 +8,7 @@ const ConsumerSurface = styled.div`
 `
 
 const {
+  CalendarControls,
   AuthFrame,
   AuthAccent,
   AuthDescription,
@@ -84,6 +85,14 @@ try {
           },
           'Auth frame SSR',
         ),
+        createElement(CalendarControls, {
+          label: 'Period',
+          previousLabel: 'Previous',
+          nextLabel: 'Next',
+          onPrevious: () => {},
+          onNext: () => {},
+          onToday: () => {},
+        }),
         createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PhoneField, {
           countries: [],
@@ -347,6 +356,7 @@ if (!markup.includes('lsui-sc-state-panel')) {
 }
 
 for (const componentId of [
+  'lsui-sc-calendar-controls',
   'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',
   'lsui-sc-toast-viewport',
