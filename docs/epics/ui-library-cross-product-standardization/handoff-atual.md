@@ -1,15 +1,27 @@
-# Handoff — R12 integrada; R14 em review
+# Handoff — execução contínua, R16
 
-Atualizado em 2026-10-12. Owner aprovou UI #11, Student #8 e Teacher #33. Os três PRs R12 foram integrados; total histórico 22 PRs aprovados integrados. UI **1.11.2 oficial**, checksum/289 arquivos verificados; publicação normal preservou tags anteriores. Registro de motion e remoção de declaração redundante resolveram as falhas de CI. 24 PNGs do skeleton idênticos aos aprovados, caixas/motion e declarações públicas iguais. [Correção](r12/ci-correction.md).
+Atualizado em 2026-10-13. R14 integrada: UI #12 7f52499, Student #10 3e7af8f, Teacher #34 929240c.
+UI 1.12.0 oficial comparada ao candidato: 295 arquivos idênticos e checksum confirmado. Produtos
+via staging; pipelines iniciados, produção não verificada. 25 PRs históricos integrados.
 
-Student staging 9b189c0 e Teacher staging 7a34da4 adotam o pacote oficial. CI/deploy iniciadas pelos workflows de staging; promoção/produção permanecem assíncronas e não foram verificadas. Não declarar produção concluída. Fontes/evidências/PR bodies aprovados preservados.
+Autorização atual da owner: criar PRs, integrar e avançar até terminar este épico. A dispensa de
+nova pausa por rodada se limita a este lote; UI primeiro, tabelas Antes/Depois, API simples,
+custo-benefício e staging permanecem. Ver autorizacao-execucao-continua.md; sem review fictício.
 
-R13: migração adiada após discovery dos cinco projetos. Diferentes layouts Admin/Teacher/Cupom não compensam nova API com variantes; Student não tem readonly equivalente confirmado. [Discovery](r13/discovery.md).
+R13 label/value e R15 CopyAction adiados por custo-benefício. R16 PhoneField preparada na UI #13,
+56 PNGs originais e oito testes focados, build/API/bundle. Candidato 1.13.0 exclusivo dos previews.
+Máscara/E.164/countries/caret/paste/validação continuam nos produtos. Concessões pequenas de
+contraste e foco/teclado documentadas em r16/technical-plan.md, sem alterar dimensões.
 
-R14: preparado primeiro na UI, drafts [UI #12](https://github.com/MarcosLaboriosi/langyspace-ui/pull/12), [Student #10](https://github.com/MarcosLaboriosi/langyspace-student/pull/10), [Teacher #34](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/34). PracticeProgressBar com value 0–1, decoração e ref/atributos, sem props visuais. -5 linhas runtime por consumidor, +199 gzip na UI. 48 stories e 80 pares Student/76 Teacher com scroll = 360 PNGs originais. Geometria/textos/controles/cores/raios iguais; Teacher normal ganha 520ms e reduced sem transição. Domínio e demais barras locais. Candidato **1.12.0 exclusivo dos previews**, não oficial.
+Próxima subtarefa única: R16 D03 — capturar Before das quatro telas Student e duas Teacher com
+staging oficial, preparar adapters e After; não abrir adoção com evidência incompleta. Biblioteca
+é preparada primeiro; a autorização já permite integrar #13 e iniciar release enquanto as
+adoções são concretizadas. Não promover candidatos em staging.
 
-Próxima subtarefa única: review humana própria das três revisões R14; após aceite, release oficial comparada ao candidato e adoção por staging. R12 não concede aceite R14. Human gate mantém os drafts separados; nenhuma implementação R14 está no main da UI nem em staging dos produtos.
+Preservar analytics local em snapshots recovery/ui-r14-{student,teacher}-canonical-20261013 e
+worktrees persistentes. Student canônico limpo e alinhado; Teacher contém docs de event-archive
+criadas em paralelo e foi mantido intacto, com cópia verificada. Não mover trabalho ativo de outro
+lote. Registros completos em .local/langyspace-ui-library-continuous/integration-20261013.
 
-Canonicals limpos/alinhados aos remotos da entrega. Commits locais concorrentes de analytics preservados antes da conciliação em branches e worktrees `recovery/ui-r12-{student,teacher}-canonical-20261012`, incluindo drafts ignorados Teacher com hashes iguais. Preservar esses snapshots; não integrar analytics local a esta entrega. Registros e heads completos no handoff persistente `.local/langyspace-ui-library-continuous/integration-20261012`.
-
-Visual gate review: pending human — R14.
+Visual gate review: accepted by human — integração contínua expressamente autorizada pela owner;
+sem alegar revisão manual das imagens futuras.

@@ -25,6 +25,37 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'PhoneField',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/PhoneField/index.tsx',
+    runtimeMarker: 'lsui-sc-phone-field',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/PhoneField/PhoneField.stories.tsx',
+      title: 'Molecules/Fields/PhoneField',
+    },
+    test: { ...complete, path: 'src/molecules/PhoneField/PhoneField.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/PhoneField/types.ts',
+      documentation: { path: 'README.md', anchor: 'phonefield' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/base/PhoneField/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/base/PhoneField/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'PracticeProgressBar',
     interactive: false,
     layer: 'atom',

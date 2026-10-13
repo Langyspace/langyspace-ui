@@ -1,9 +1,17 @@
 # Progresso — UI Library entre produtos
 
-2026-10-12: R12 concluída em UI/Student/Teacher após aprovação humana. UI 1.11.2 oficial verificada por checksum e 289 arquivos, código aprovado preservado na apresentação; ajustes de CI documentados em r12/ci-correction.md. Produtos integrados em staging; promoção/produção assíncronas e não verificadas.
+2026-10-13: R14 integrada em UI #12 (7f52499), Student #10 (3e7af8f), Teacher #34 (929240c).
+UI 1.12.0 oficial: checksum e 295 arquivos idênticos ao candidato aprovado. Produtos adotam
+somente o oficial; pipelines staging iniciados, sem declaração de produção verificada.
 
-R13 adiada por custo-benefício. R14 preparada em três drafts próprios UI #12, Student #10, Teacher #34, com tabelas Antes/Depois e 360 PNGs originais. Mesmo layout/texto/controles; Teacher normal recebe transição 520ms. UI +199 gzip e -5 linhas runtime por produto, mantendo barras de outras anatomias e domínio locais. Fontes R14 permanecem nos features, não no main da UI ou staging dos produtos.
+R13 e R15 adiados por custo-benefício documentado. R16 PhoneField preparada primeiro na UI,
+PR #13, oito casos focados, API compatível e 56 PNGs originais. Estilos comuns; máscaras,
+normalizadores, countries, caret e paste locais. Library +1458 gzip; famílias antigas preservadas.
 
-Próxima subtarefa: review humana R14. Consultar handoff-atual.md e registros persistentes para heads, CI/deploy e preservação dos commits locais de analytics. Sem auto-merge ou aceite herdado R12.
+Owner autorizou execução contínua deste lote, incluindo integração dos próximos PRs preparados.
+Consultar autorizacao-execucao-continua.md. Manter PRs/evidências e staging; não criar review
+GitHub fictício nem modificar o padrão global de revisão humana.
 
-Visual gate review: pending human — R14.
+Próxima subtarefa: R16 D03 — Before de quatro telas Student e duas Teacher, depois adapters/After.
+Analytics concorrente preservado; Teacher mantém documentação event-archive em elaboração, sem
+mover sua localização. Operar em worktrees isolados; alinhar canônico após preservar estado atual.

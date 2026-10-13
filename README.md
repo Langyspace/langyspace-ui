@@ -902,3 +902,23 @@ Indicador decorativo de progresso nos cards de prática. Uma receita de 6px, tri
 ```
 
 O texto do card transmite o estado acessível; a barra força `aria-hidden=true` e não acrescenta foco ou progressbar ao botão. Atributos/ref de div são encaminhados, sem children/role/tabIndex. A largura transita por 520ms e fica estática com reduced motion. Sessões, CEFR, segmentos, lotes financeiros e barras sem texto equivalente exigem avaliação própria.
+
+## PhoneField
+
+Controlled phone presentation with country search/selection and a native input ref. Supply
+`countries`, `country`, `label`, and `onCountryChange`, plus native input props. `value` is already
+formatted: masking, normalization, country policy, E.164, caret and paste remain in the product.
+`errorMessage` associates input and validation text. Fixed layout; no tone, mask or size variants.
+Search and Escape/keyboard selection are shared.
+
+```tsx
+<PhoneField
+  countries={countryOptions}
+  country={country}
+  label="Celular"
+  value={displayValue}
+  onChange={onPhoneChange}
+  onCountryChange={onCountryChange}
+  ref={phoneRef}
+/>
+```
