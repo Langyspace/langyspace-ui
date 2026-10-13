@@ -28,3 +28,11 @@ Matriz cobre auth/OTP/erro/success/handoff/acesso/footer/toast e viewport curto/
 
 Visual gate review: accepted by human — integração autorizada no lote contínuo 2026-10-13,
 sem alegar revisão manual dos screenshots futuros; tabelas de todas as superfícies obrigatórias.
+
+Antes/Depois definitivos renovados sobre staging atual (Student d7adf0c, Teacher04e7a58), ambos
+com UI1.14.1 oficial verificada. Base contém atualizações concorrentes já integradas de analytics
+(e feedback Pix Student), sem alterações nessa lógica neste PR. Driver captura a renderização
+real e neutraliza apenas sync de analytics/calls externas.113+65 pares novamente com todas as
+medidas/textos/foco/scroll/footer idênticos. Source diff dos produtos só7files (AuthShell+5docs).
+Student typecheck repetido no novoBase passou; outros checks reutilizados com inputs pertinentes
+iguais. Canônicos R16 alinhados clean e suporte financeiro intocado em caminhos originais.
