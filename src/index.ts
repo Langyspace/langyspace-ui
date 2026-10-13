@@ -201,5 +201,11 @@ export type { QuizOptionProps, QuizOptionState } from './molecules/QuizOption'
 export { QuizFeedback } from './molecules/QuizFeedback'
 export type { QuizFeedbackProps } from './molecules/QuizFeedback'
 
+export { FlashcardRatingButton } from './molecules/FlashcardRatingButton'
+export type {
+  FlashcardGrade,
+  FlashcardRatingButtonProps,
+} from './molecules/FlashcardRatingButton'
+
 export { PracticePlaybackControls } from './molecules/PracticePlaybackControls'
 export type { PracticePlaybackControlsProps } from './molecules/PracticePlaybackControls'

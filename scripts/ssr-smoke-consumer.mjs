@@ -45,6 +45,7 @@ const {
   PracticeCardBody,
   QuizOption,
   PracticePlaybackControls,
+  FlashcardRatingButton,
   QuizFeedback,
   SearchInput,
   SectionHeader,
@@ -110,6 +111,11 @@ try {
           'Yes',
         ),
         createElement(QuizFeedback, { tone: 'wrong' }, 'Review'),
+        createElement(
+          FlashcardRatingButton,
+          { grade: 'good', interval: '4 days', selected: true },
+          'Good',
+        ),
         createElement(PracticePlaybackControls, {
           playing: false,
           playLabel: 'Play',
@@ -387,6 +393,7 @@ for (const componentId of [
   'lsui-sc-practice-card-body',
   'lsui-sc-quiz-option',
   'lsui-sc-practice-playback-controls',
+  'lsui-sc-flashcard-rating-button',
   'lsui-sc-quiz-feedback',
   'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',

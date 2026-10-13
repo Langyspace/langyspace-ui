@@ -40,6 +40,7 @@ for (const entry of [
   'calendarControls',
   'practiceCardBody',
   'quiz',
+  'rating',
   'playback',
   'toasts',
 ]) {

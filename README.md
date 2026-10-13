@@ -950,6 +950,12 @@ status calculado e ações permanecem no consumidor. Receita única; sem variaç
 (default/correct/wrong/dim). `QuizFeedback` recebe props nativas de div, `tone` correct/wrong
 e children. O consumidor calcula resposta/reveal/disabled e mantém áudio, avanço e persistência.
 
+### FlashcardRatingButton
+
+Props nativas de button, grade again/hard/good/easy, interval e selected opcional; children dá o label.
+O produto calcula intervalos, controla disabled e mantém scheduler/persistência/feedback/timing.
+Receita responsive comum; nenhuma configuração por portal.
+
 ### PracticePlaybackControls
 
 View controlada: playing/playLabel/onPlay, skipAction opcional, speed/speedOptions/onSpeedChange,

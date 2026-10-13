@@ -22,6 +22,13 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Practice rating',
+      path: 'src/molecules/FlashcardRatingButton/styles.ts',
+      reason:
+        'finite 300ms rating-choice entrance and 20/60/100/140ms stagger from both products, disabled with reduced motion; card transitions remain in the product',
+      expiresAt: '2027-04-13',
+    },
+    {
       owner: 'Practice loading',
       path: 'src/molecules/PracticeCardSkeletonBody/styles.ts',
       reason:
