@@ -1,20 +1,24 @@
-# Progresso R19
+# Progresso R19 — teacher
 
-C01/C02 concluídas na UI: CalendarControls com sete props de apresentação/navegação. Label e
-callbacks locais; legend/grid/data não migram. Ícones nativos equivalentes, botão Hoje sempre
-typebutton, grupo nomeado. Teste de callbacks independentes e nenhum submit do form passou.
-Typecheck/build/API/bundle e smokeSSR completo no tarball isolado passaram.46 values/107types/
-153declarations; todos os d.ts antigos estáveis exceto barrel aditivo. Library120692/25226 e entry
-15201/3541raw/gzip dentro das capacidades planejadas. Famílias antigas medidas/caps preservados.
+CalendarControls UI#17 preparado antes da adoção. Oficial1.15.0:313 arquivos exatamente iguais
+à candidata, checksum publicado conferido.28 pares originais teacher, semana/mês, normal/reduced,
+390/900/901/920/921/1440; datas anterior/próxima/Hoje no desktop; mobile preserva agenda compacta.
+Baseline Teacher cb9e2e5 com oficial1.14.1; Admin a9ed093 com oficial1.10.0 (corrigido pacote
+local instalado antigo1.7 para capturar a versão do manifest). Nenhum dado real/ação de slot.
+Teacher fixture readonly usa builders reais; Admin designMock nativo; rede externa bloqueada.
 
-48 PNGs originais de default/legend/label longo/container estreito, larguras390/900/901/920/921/1440,
-normal/reduced. Sem overflow, três buttons e typebutton; wrappers e source reais das stories.
-SSR smoke agora verifica explicitamente markerCalendarControls e miraButton de referência,
-independente de quantos controles aparecem antes dele. Não alterar verificações para passar.
+Teacher toolbar/grid/dados/scroll iguais (probe específico dos dois grids). Admin ícones32→40,
+Hoje32 preservado. Toolbar desktop+8px; grid desloca+8px mantendo dimensões, dados e scroll.
+Container estreito agora quebra label/legend sem comprimir data em quatro linhas. Sem overflow.
+Legend3Teacher/5Admin permanece local; cursor/fuso/rules/grid/callbacks não alterados.
+Único mount Admin: /agenda. Detalhe /professoras/:id contém resumo/link, sem CalendarControls.
 
-R16 oficial1.14.1 integrada; R17 adapters e evidências atualizadas para staging atual, ainda semPR.
-Próxima tarefa: C03 — Before Admin/Teacher, medir concessões dos controles e adaptar wrappers,
-somente depois de R17 integrado. Não alterar grids/callbacks/timezone/legend/regras/providers.
+Frontend TypeScript passou; frozen lock sob políticas de supply-chain passou. Teacher inventory
+somente source.fingerprint mudou por metadata, nenhum contrato backend alterado. API da UI aditiva.
+Integração via PR staging sob autorização contínua do lote. Produção não verificada.
 
-Visual gate review: accepted by human — integração contínua deste lote autorizada em2026-10-13,
-sem alegar revisão manual das imagens futuras; manter todos os pares dos produtos no PR.
+Visual gate review: accepted by human — autorização contínua expressa para este lote.
+
+UI testCI https://github.com/MarcosLaboriosi/langyspace-ui/actions/runs/38387943885
+Release https://github.com/MarcosLaboriosi/langyspace-ui/actions/workflows/release.yml
+Run indisponível no lookup inicial; publicação provada pelo artefato oficial.

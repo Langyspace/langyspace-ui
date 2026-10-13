@@ -1,0 +1,1912 @@
+{
+  "product": "teacher",
+  "phase": "after",
+  "baseline": "cb9e2e5c4b6acc2e0b603a5fef3869ca05cb5771",
+  "fixture": "Actual calendar views/controllers; Teacher readonly synthetic hook uses actual calendar builders, Admin existing designMock disables queries. No slot/mutation action clicked; external network blocked.",
+  "records": [
+    {
+      "route": "/calendario",
+      "width": 390,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "001.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 390,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "002.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 390,
+      "motion": "reduced",
+      "view": "week",
+      "state": "today",
+      "image": "003.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 390,
+      "motion": "reduced",
+      "view": "month",
+      "state": "today",
+      "image": "004.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 900,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "005.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 900,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "006.png",
+      "metrics": {
+        "toolbar": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0,
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "visible": false,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 901,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "007.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 605,
+          "height": 40,
+          "top": 124,
+          "right": 877,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 901,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "008.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 605,
+          "height": 40,
+          "top": 124,
+          "right": 877,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 920,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "009.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 624,
+          "height": 40,
+          "top": 124,
+          "right": 896,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 920,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "010.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 624,
+          "height": 40,
+          "top": 124,
+          "right": 896,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 921,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "011.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 625,
+          "height": 40,
+          "top": 124,
+          "right": 897,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 921,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "012.png",
+      "metrics": {
+        "toolbar": {
+          "x": 272,
+          "y": 124,
+          "width": 625,
+          "height": 40,
+          "top": 124,
+          "right": 897,
+          "bottom": 164,
+          "left": 272
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 272,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 312,
+              "bottom": 164,
+              "left": 272
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 320,
+              "y": 124,
+              "width": 40,
+              "height": 40,
+              "top": 124,
+              "right": 360,
+              "bottom": 164,
+              "left": 320
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 368,
+              "y": 128,
+              "width": 59.125,
+              "height": 32,
+              "top": 128,
+              "right": 427.125,
+              "bottom": 160,
+              "left": 368
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "week",
+      "state": "today",
+      "image": "013.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "week",
+      "state": "previous",
+      "image": "014.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 131.0052032470703,
+              "width": 40,
+              "height": 40.00001525878906,
+              "top": 131.0052032470703,
+              "right": 328,
+              "bottom": 171.00521850585938,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje04 - 10 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "week",
+      "state": "next",
+      "image": "015.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 131,
+              "width": 40,
+              "height": 40,
+              "top": 131,
+              "right": 376,
+              "bottom": 171,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje18 - 24 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "week",
+      "state": "today-restored",
+      "image": "016.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 131.9955596923828,
+              "width": 40,
+              "height": 40.00001525878906,
+              "top": 131.9955596923828,
+              "right": 376,
+              "bottom": 171.99557495117188,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 135.0044403076172,
+              "width": 59.125,
+              "height": 31.999984741210938,
+              "top": 135.0044403076172,
+              "right": 443.125,
+              "bottom": 167.00442504882812,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "month",
+      "state": "today",
+      "image": "017.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "month",
+      "state": "previous",
+      "image": "018.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 131.00442504882812,
+              "width": 40,
+              "height": 40,
+              "top": 131.00442504882812,
+              "right": 328,
+              "bottom": 171.00442504882812,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeSetembro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "month",
+      "state": "next",
+      "image": "019.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 131,
+              "width": 40,
+              "height": 40,
+              "top": 131,
+              "right": 376,
+              "bottom": 171,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeNovembro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "normal",
+      "view": "month",
+      "state": "today-restored",
+      "image": "020.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 131.98098754882812,
+              "width": 40,
+              "height": 40,
+              "top": 131.98098754882812,
+              "right": 376,
+              "bottom": 171.98098754882812,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 135.01901245117188,
+              "width": 59.125,
+              "height": 32,
+              "top": 135.01901245117188,
+              "right": 443.125,
+              "bottom": 167.01901245117188,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "week",
+      "state": "today",
+      "image": "021.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "week",
+      "state": "previous",
+      "image": "022.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje04 - 10 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "week",
+      "state": "next",
+      "image": "023.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje18 - 24 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "week",
+      "state": "today-restored",
+      "image": "024.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Semana anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próxima semana",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "Hoje11 - 17 Outubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "month",
+      "state": "today",
+      "image": "025.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "month",
+      "state": "previous",
+      "image": "026.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeSetembro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "month",
+      "state": "next",
+      "image": "027.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeNovembro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    },
+    {
+      "route": "/calendario",
+      "width": 1440,
+      "motion": "reduced",
+      "view": "month",
+      "state": "today-restored",
+      "image": "028.png",
+      "metrics": {
+        "toolbar": {
+          "x": 288,
+          "y": 132,
+          "width": 1112,
+          "height": 40,
+          "top": 132,
+          "right": 1400,
+          "bottom": 172,
+          "left": 288
+        },
+        "visible": true,
+        "buttons": [
+          {
+            "label": "Mês anterior",
+            "type": "button",
+            "rect": {
+              "x": 288,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 328,
+              "bottom": 172,
+              "left": 288
+            }
+          },
+          {
+            "label": "Próximo mês",
+            "type": "button",
+            "rect": {
+              "x": 336,
+              "y": 132,
+              "width": 40,
+              "height": 40,
+              "top": 132,
+              "right": 376,
+              "bottom": 172,
+              "left": 336
+            }
+          },
+          {
+            "label": "Hoje",
+            "type": "button",
+            "rect": {
+              "x": 384,
+              "y": 136,
+              "width": 59.125,
+              "height": 32,
+              "top": 136,
+              "right": 443.125,
+              "bottom": 168,
+              "left": 384
+            }
+          }
+        ],
+        "text": "HojeOutubro 2026AgendadaAula dadaFalta",
+        "overflow": false,
+        "grid": []
+      }
+    }
+  ]
+}
