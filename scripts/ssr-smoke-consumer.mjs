@@ -38,6 +38,7 @@ const {
   OperationalList,
   Pressable,
   PracticeCardSkeletonBody,
+  PracticeProgressBar,
   SearchInput,
   SectionHeader,
   SegmentedControl,
@@ -70,6 +71,7 @@ try {
       createElement(
         ConsumerSurface,
         null,
+        createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PracticeCardSkeletonBody, {
           'data-testid': 'ssr-practice-skeleton',
         }),
@@ -370,6 +372,13 @@ if (
 
 if (!collectedCss.includes('border-radius:999px')) {
   throw new Error('shared_button_declarations_missing_from_collected_ssr_css')
+}
+
+if (
+  !markup.includes('lsui-sc-practice-progress-bar') ||
+  !markup.includes('width:37.5%')
+) {
+  throw new Error('ssr_practice_progress_contract_missing')
 }
 
 console.log(

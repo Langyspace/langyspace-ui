@@ -25,6 +25,39 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'PracticeProgressBar',
+    interactive: false,
+    layer: 'atom',
+    ownerPath: 'src/atoms/PracticeProgressBar/index.tsx',
+    runtimeMarker: 'lsui-sc-practice-progress-bar',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/atoms/PracticeProgressBar/PracticeProgressBar.stories.tsx',
+      title: 'Atoms/PracticeProgressBar',
+    },
+    test: {
+      ...complete,
+      path: 'src/atoms/PracticeProgressBar/PracticeProgressBar.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/atoms/PracticeProgressBar/types.ts',
+      documentation: { path: 'README.md', anchor: 'practiceprogressbar' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentPracticeActivityCards/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'PracticeCardSkeletonBody',
     interactive: false,
     layer: 'molecule',
