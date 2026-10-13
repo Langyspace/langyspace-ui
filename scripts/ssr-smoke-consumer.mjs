@@ -106,7 +106,11 @@ try {
           { 'aria-label': 'SSR filters' },
           'Toolbar SSR',
         ),
-        createElement(Button, { size: 'lg', variant: 'brand' }, 'SSR'),
+        createElement(
+          Button,
+          { size: 'lg', variant: 'brand', 'data-testid': 'ssr-primary-button' },
+          'SSR',
+        ),
         createElement(ActionLink, { href: '/next' }, 'Action SSR'),
         createElement(
           IconButton,
@@ -299,7 +303,11 @@ try {
   sheet.seal()
 }
 
-const buttonClasses = (markup.match(/<button[^>]*\sclass="([^"]*)"/)?.[1] ?? '')
+const primaryButton = markup.match(
+  /<button\b[^>]*data-testid="ssr-primary-button"[^>]*>/,
+)?.[0]
+if (!primaryButton) throw new Error('shared_primary_button_missing')
+const buttonClasses = (primaryButton.match(/\sclass="([^"]*)"/)?.[1] ?? '')
   .split(' ')
   .filter(Boolean)
 

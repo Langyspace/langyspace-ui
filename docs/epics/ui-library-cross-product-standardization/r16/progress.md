@@ -48,3 +48,17 @@ artefato oficial 1.13.0 antes da integração por staging. Pipelines seguem ass�
 
 Visual gate review: accepted by human — integração autorizada no lote contínuo em 2026-10-13;
 sem alegar revisão manual dos screenshots futuros. Antes/Depois continua obrigatório.
+
+## Diagnóstico complementar de publicação
+
+Smoke SSR reproduziu erro de referência: primeiro button agora é seletor de país, não Button
+brand. Corrigir alvo com data-testid estável e preservar todos os checks de IDs/classes/CSS.
+Nenhum style/callback/API runtime alterado. Verificação inicial local isolava node_modules mas
+não package.json: resolução própria do pacote podia apontar para o build local. Consumers
+agora possuem package.json próprio; import.meta.resolve comprova uso do tarball extraído.
+PhoneField e AuthFrame SSR passaram no pacote isolado; smoke completo corrigido também.
+
+Patch 1.14.1 contém PhoneField e AuthFrame já preparados. R16 pode adotar esta versão oficial
+compatível (AuthFrame sem caller no R16); recapturar After com ela e preservar Before1.12.
+R17 terá somente adaptação do shell, reutilizando dependência oficial já integrada no R16.
+Tags1.13/1.13.1/1.14 não são movidas; este patch de tooling não tem impacto renderizado.
