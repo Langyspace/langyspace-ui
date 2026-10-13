@@ -12,7 +12,7 @@ export function PracticeCardBody({
   return (
     <Styled.Body data-ui-practice-card-body="true">
       <Styled.Title $completed={completed}>{title}</Styled.Title>
-      <Styled.Meta $completed={completed}>
+      <Styled.Meta>
         <span>{leadingMeta}</span>
         <span>{trailingMeta}</span>
       </Styled.Meta>

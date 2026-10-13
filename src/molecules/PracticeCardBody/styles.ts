@@ -19,11 +19,11 @@ export const Title = styled.h3<{ $completed: boolean }>`
   line-height: ${tokens.typography.lineHeight.snug};
 `
 
-export const Meta = styled.div<{ $completed: boolean }>`
+export const Meta = styled.div`
   display: flex;
   justify-content: space-between;
   gap: ${tokens.spacing[2]};
-  color: ${({ $completed }) => ($completed ? tokens.color.content.placeholder : tokens.color.content.muted)};
+  color: ${tokens.color.content.muted};
   font-size: ${tokens.typography.fontSize.xs};
   font-weight: ${tokens.typography.fontWeight.semibold};
   line-height: ${tokens.typography.lineHeight.snug};
