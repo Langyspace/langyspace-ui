@@ -29,6 +29,19 @@ passaram: cursor no meio do número, identidade/máscara/DDD do país, colagem i
 seleção, cancelamento de paste pelo owner e ref nativa. Fixtures corrigidas para considerar o
 prefixo nacional irlandês; cleanup explícito por caso para ambiente Vitest sem globals.
 
+Release v1.13.0 falhou no smoke do pacote instalado: TypeError em styled.div.withConfig na
+importação Node/SSR. Lint, format, typecheck, stories e coverage passaram antes do smoke.
+Causa: import default de styled-components no PhoneField, incompatível com consumo ESM/CJS Node.
+Correção usa import nomeado já adotado no restante da UI. Não altera contrato/CSS/handlers.
+Tag v1.13.0 preservada; patch 1.13.1 será publicado, sem sobrescrever tag/artefato.
+R17 foi iniciada independentemente, mas adoptions aguardam solução deste impedimento.
+
+Patch local: API intacta (44 values/105 types/147 d.ts); pacote empacotado e instalado em
+consumer isolado importa no Node e renderiza PhoneField com CSS SSR. Medidas raw/gzip
+113828/24054 library e 10414/3397 phone, dentro dos limites planejados; famílias antigas intactas.
+56 pares UI recapturados; 53/56 PNGs byte idênticos ao anterior e medidas/estados idênticos.
+Produtos recapturam After com o patch para verificar reutilização dos originais publicados.
+
 Próxima subtarefa única: D05/D06 — publicar imagens originais, abrir os PRs de adoção; verificar
 artefato oficial 1.13.0 antes da integração por staging. Pipelines seguem assíncronos, sem polling.
 
