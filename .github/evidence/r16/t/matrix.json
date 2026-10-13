@@ -1,0 +1,6898 @@
+{
+  "before": {
+    "product": "teacher",
+    "phase": "before",
+    "routes": ["/login", "/cadastro"],
+    "fixture": "Original apps with capture-only auth/data/settings fixtures; synthetic profile, network blocked, no provider/write/OTP. Country interactions only.",
+    "records": [
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-default-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/001.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-country-open-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 315,
+            "top": 377,
+            "right": 336,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/002.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-search-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 107,
+            "top": 377,
+            "right": 336,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/003.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-invalid-phone-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/004.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-default-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/005.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-country-open-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 315,
+            "top": 543,
+            "right": 336,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/006.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-search-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 107,
+            "top": 543,
+            "right": 336,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/007.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-invalid-phone-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 543,
+            "width": 163.640625,
+            "height": 29,
+            "top": 543,
+            "right": 318,
+            "bottom": 572,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 312,
+            "height": 56,
+            "top": 529.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 312,
+            "height": 86,
+            "top": 499.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/008.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-default-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/009.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-country-open-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 315,
+            "top": 377,
+            "right": 337,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/010.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-search-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 107,
+            "top": 377,
+            "right": 337,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/011.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-invalid-phone-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/012.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-default-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/013.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-country-open-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 315,
+            "top": 543,
+            "right": 337,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/014.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-search-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 107,
+            "top": 543,
+            "right": 337,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/015.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-invalid-phone-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 144.640625,
+            "height": 29,
+            "top": 543,
+            "right": 315,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 313,
+            "height": 56,
+            "top": 529.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 313,
+            "height": 86,
+            "top": 499.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/016.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-default-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/017.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-country-open-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 315,
+            "top": 377,
+            "right": 344,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/018.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-search-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 107,
+            "top": 377,
+            "right": 344,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/019.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-invalid-phone-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/020.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-default-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/021.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-country-open-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 315,
+            "top": 543,
+            "right": 344,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/022.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-search-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 107,
+            "top": 543,
+            "right": 344,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/023.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-invalid-phone-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 173.640625,
+            "height": 29,
+            "top": 543,
+            "right": 344,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 342,
+            "height": 56,
+            "top": 529.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 342,
+            "height": 86,
+            "top": 499.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/024.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-default-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/025.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-country-open-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 315,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 940.78125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/026.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-search-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 107,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 732.78125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/027.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-invalid-phone-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 552.78125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 552.78125,
+            "right": 1278,
+            "bottom": 581.78125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 539.28125,
+            "width": 440,
+            "height": 56,
+            "top": 539.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 509.28125,
+            "width": 440,
+            "height": 86,
+            "top": 509.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/028.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-default-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/029.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-country-open-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 315,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 1042.078125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/030.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-search-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 107,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 834.078125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/031.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-invalid-phone-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 675.328125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 675.328125,
+            "right": 1278,
+            "bottom": 704.328125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 661.828125,
+            "width": 440,
+            "height": 56,
+            "top": 661.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 631.828125,
+            "width": 440,
+            "height": 86,
+            "top": 631.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/032.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-default-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/033.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-country-open-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 315,
+            "top": 377,
+            "right": 336,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/034.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-search-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 107,
+            "top": 377,
+            "right": 336,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/035.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-invalid-phone-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/036.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-default-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/037.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-country-open-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 315,
+            "top": 543,
+            "right": 336,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/038.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-search-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 107,
+            "top": 543,
+            "right": 336,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/039.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-invalid-phone-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 543,
+            "width": 163.640625,
+            "height": 29,
+            "top": 543,
+            "right": 318,
+            "bottom": 572,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 312,
+            "height": 56,
+            "top": 529.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 312,
+            "height": 86,
+            "top": 499.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/040.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-default-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/041.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-country-open-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 315,
+            "top": 377,
+            "right": 337,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/042.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-search-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 107,
+            "top": 377,
+            "right": 337,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/043.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-invalid-phone-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/044.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-default-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/045.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-country-open-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 315,
+            "top": 543,
+            "right": 337,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/046.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-search-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 107,
+            "top": 543,
+            "right": 337,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/047.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-invalid-phone-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 144.640625,
+            "height": 29,
+            "top": 543,
+            "right": 315,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 313,
+            "height": 56,
+            "top": 529.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 313,
+            "height": 86,
+            "top": 499.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/048.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-default-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/049.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-country-open-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 315,
+            "top": 377,
+            "right": 344,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/050.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-search-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 107,
+            "top": 377,
+            "right": 344,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/051.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-invalid-phone-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/052.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-default-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/053.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-country-open-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 315,
+            "top": 543,
+            "right": 344,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/054.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-search-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 107,
+            "top": 543,
+            "right": 344,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/055.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-invalid-phone-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 173.640625,
+            "height": 29,
+            "top": 543,
+            "right": 344,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 342,
+            "height": 56,
+            "top": 529.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 342,
+            "height": 86,
+            "top": 499.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/056.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-default-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/057.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-country-open-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 315,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 940.78125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/058.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-search-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 107,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 732.78125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/059.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-invalid-phone-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 552.78125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 552.78125,
+            "right": 1278,
+            "bottom": 581.78125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 539.28125,
+            "width": 440,
+            "height": 56,
+            "top": 539.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 509.28125,
+            "width": 440,
+            "height": 86,
+            "top": 509.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/060.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-default-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/061.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-country-open-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 315,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 1042.078125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/062.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-search-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 107,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 834.078125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/063.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-invalid-phone-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 675.328125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 675.328125,
+            "right": 1278,
+            "bottom": 704.328125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 661.828125,
+            "width": 440,
+            "height": 56,
+            "top": 661.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 631.828125,
+            "width": 440,
+            "height": 86,
+            "top": 631.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(154, 154, 154)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/b/064.png"
+      }
+    ]
+  },
+  "after": {
+    "product": "teacher",
+    "phase": "after",
+    "routes": ["/login", "/cadastro"],
+    "fixture": "Original apps with capture-only auth/data/settings fixtures; synthetic profile, network blocked, no provider/write/OTP. Country interactions only.",
+    "records": [
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-default-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/001.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-country-open-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 315,
+            "top": 377,
+            "right": 336,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/002.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-search-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 107,
+            "top": 377,
+            "right": 336,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/003.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 360,
+        "image": "login-invalid-phone-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/004.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-default-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/005.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-country-open-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 315,
+            "top": 543,
+            "right": 336,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/006.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-search-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 107,
+            "top": 543,
+            "right": 336,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/007.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 360,
+        "image": "cadastro-invalid-phone-normal-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 543,
+            "width": 163.640625,
+            "height": 29,
+            "top": 543,
+            "right": 318,
+            "bottom": 572,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 312,
+            "height": 56,
+            "top": 529.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 312,
+            "height": 86,
+            "top": 499.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/008.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-default-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/009.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-country-open-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 315,
+            "top": 377,
+            "right": 337,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/010.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-search-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 107,
+            "top": 377,
+            "right": 337,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/011.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 361,
+        "image": "login-invalid-phone-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/012.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-default-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/013.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-country-open-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 315,
+            "top": 543,
+            "right": 337,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/014.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-search-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 107,
+            "top": 543,
+            "right": 337,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/015.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 361,
+        "image": "cadastro-invalid-phone-normal-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 144.640625,
+            "height": 29,
+            "top": 543,
+            "right": 315,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 313,
+            "height": 56,
+            "top": 529.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 313,
+            "height": 86,
+            "top": 499.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/016.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-default-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/017.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-country-open-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 315,
+            "top": 377,
+            "right": 344,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/018.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-search-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 107,
+            "top": 377,
+            "right": 344,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/019.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 390,
+        "image": "login-invalid-phone-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/020.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-default-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/021.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-country-open-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 315,
+            "top": 543,
+            "right": 344,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/022.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-search-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 107,
+            "top": 543,
+            "right": 344,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/023.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 390,
+        "image": "cadastro-invalid-phone-normal-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 173.640625,
+            "height": 29,
+            "top": 543,
+            "right": 344,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 342,
+            "height": 56,
+            "top": 529.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 342,
+            "height": 86,
+            "top": 499.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/024.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-default-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/025.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-country-open-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 315,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 940.78125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/026.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-search-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 107,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 732.78125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/027.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 1440,
+        "image": "login-invalid-phone-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 552.78125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 552.78125,
+            "right": 1278,
+            "bottom": 581.78125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 539.28125,
+            "width": 440,
+            "height": 56,
+            "top": 539.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 509.28125,
+            "width": 440,
+            "height": 86,
+            "top": 509.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/028.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-default-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/029.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-country-open-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 315,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 1042.078125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/030.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-search-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 107,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 834.078125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/031.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "normal",
+        "width": 1440,
+        "image": "cadastro-invalid-phone-normal-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 675.328125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 675.328125,
+            "right": 1278,
+            "bottom": 704.328125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 661.828125,
+            "width": 440,
+            "height": 56,
+            "top": 661.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 631.828125,
+            "width": 440,
+            "height": 86,
+            "top": 631.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/032.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-default-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/033.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-country-open-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 315,
+            "top": 377,
+            "right": 336,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/034.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-search-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 312,
+            "height": 107,
+            "top": 377,
+            "right": 336,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/035.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 360,
+        "image": "login-invalid-phone-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 326.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 318,
+            "bottom": 355.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 312,
+            "height": 56,
+            "top": 313,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 312,
+            "height": 86,
+            "top": 283,
+            "right": 336,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/036.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-default-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/037.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-country-open-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 315,
+            "top": 543,
+            "right": 336,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/038.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-search-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 492.5,
+            "width": 163.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 318,
+            "bottom": 521.5,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 312,
+            "height": 56,
+            "top": 479,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 312,
+            "height": 86,
+            "top": 449,
+            "right": 336,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 312,
+            "height": 107,
+            "top": 543,
+            "right": 336,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/039.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 360,
+        "image": "cadastro-invalid-phone-reduced-360.png",
+        "metrics": {
+          "input": {
+            "x": 154.359375,
+            "y": 543,
+            "width": 163.640625,
+            "height": 29,
+            "top": 543,
+            "right": 318,
+            "bottom": 572,
+            "left": 154.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 312,
+            "height": 56,
+            "top": 529.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 312,
+            "height": 86,
+            "top": 499.5,
+            "right": 336,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/040.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-default-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/041.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-country-open-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 315,
+            "top": 377,
+            "right": 337,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/042.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-search-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 313,
+            "height": 107,
+            "top": 377,
+            "right": 337,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/043.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 361,
+        "image": "login-invalid-phone-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 315,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 313,
+            "height": 56,
+            "top": 313,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 313,
+            "height": 86,
+            "top": 283,
+            "right": 337,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/044.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-default-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/045.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-country-open-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 315,
+            "top": 543,
+            "right": 337,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/046.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-search-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 144.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 315,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 313,
+            "height": 56,
+            "top": 479,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 313,
+            "height": 86,
+            "top": 449,
+            "right": 337,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 313,
+            "height": 107,
+            "top": 543,
+            "right": 337,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/047.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 361,
+        "image": "cadastro-invalid-phone-reduced-361.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 144.640625,
+            "height": 29,
+            "top": 543,
+            "right": 315,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 313,
+            "height": 56,
+            "top": 529.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 313,
+            "height": 86,
+            "top": 499.5,
+            "right": 337,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/048.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-default-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/049.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-country-open-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 315,
+            "top": 377,
+            "right": 344,
+            "bottom": 692,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/050.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-search-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 377,
+            "width": 320,
+            "height": 107,
+            "top": 377,
+            "right": 344,
+            "bottom": 484,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/051.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 390,
+        "image": "login-invalid-phone-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 326.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 326.5,
+            "right": 344,
+            "bottom": 355.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 313,
+            "width": 342,
+            "height": 56,
+            "top": 313,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 283,
+            "width": 342,
+            "height": 86,
+            "top": 283,
+            "right": 366,
+            "bottom": 369,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/052.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-default-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/053.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-country-open-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 315,
+            "top": 543,
+            "right": 344,
+            "bottom": 858,
+            "left": 24
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/054.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-search-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 492.5,
+            "width": 173.640625,
+            "height": 29,
+            "top": 492.5,
+            "right": 344,
+            "bottom": 521.5,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 479,
+            "width": 342,
+            "height": 56,
+            "top": 479,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 449,
+            "width": 342,
+            "height": 86,
+            "top": 449,
+            "right": 366,
+            "bottom": 535,
+            "left": 24
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 24,
+            "y": 543,
+            "width": 320,
+            "height": 107,
+            "top": 543,
+            "right": 344,
+            "bottom": 650,
+            "left": 24
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/055.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 390,
+        "image": "cadastro-invalid-phone-reduced-390.png",
+        "metrics": {
+          "input": {
+            "x": 170.359375,
+            "y": 543,
+            "width": 173.640625,
+            "height": 29,
+            "top": 543,
+            "right": 344,
+            "bottom": 572,
+            "left": 170.359375
+          },
+          "group": {
+            "x": 24,
+            "y": 529.5,
+            "width": 342,
+            "height": 56,
+            "top": 529.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "field": {
+            "x": 24,
+            "y": 499.5,
+            "width": 342,
+            "height": 86,
+            "top": 499.5,
+            "right": 366,
+            "bottom": 585.5,
+            "left": 24
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/056.png"
+      },
+      {
+        "route": "/login",
+        "state": "default",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-default-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/057.png"
+      },
+      {
+        "route": "/login",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-country-open-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 315,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 940.78125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/058.png"
+      },
+      {
+        "route": "/login",
+        "state": "search",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-search-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 575.28125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 575.28125,
+            "right": 1278,
+            "bottom": 604.28125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 561.78125,
+            "width": 440,
+            "height": 56,
+            "top": 561.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 531.78125,
+            "width": 440,
+            "height": 86,
+            "top": 531.78125,
+            "right": 1300,
+            "bottom": 617.78125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 625.78125,
+            "width": 320,
+            "height": 107,
+            "top": 625.78125,
+            "right": 1180,
+            "bottom": 732.78125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/059.png"
+      },
+      {
+        "route": "/login",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "login-invalid-phone-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 552.78125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 552.78125,
+            "right": 1278,
+            "bottom": 581.78125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 539.28125,
+            "width": 440,
+            "height": 56,
+            "top": 539.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 509.28125,
+            "width": 440,
+            "height": 86,
+            "top": 509.28125,
+            "right": 1300,
+            "bottom": 595.28125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/060.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "default",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-default-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/061.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "country-open",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-country-open-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 315,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 1042.078125,
+            "left": 860
+          },
+          "optionText": [
+            "BRBrasil+55",
+            "USEstados Unidos+1",
+            "IEIrlanda+353",
+            "PTPortugal+351",
+            "MXMexico+52",
+            "ARArgentina+54",
+            "CLChile+56",
+            "COColombia+57"
+          ],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/062.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "search",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-search-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 676.578125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 676.578125,
+            "right": 1278,
+            "bottom": 705.578125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 663.078125,
+            "width": 440,
+            "height": 56,
+            "top": 663.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 633.078125,
+            "width": 440,
+            "height": 86,
+            "top": 633.078125,
+            "right": 1300,
+            "bottom": 719.078125,
+            "left": 860
+          },
+          "value": "",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": {
+            "x": 860,
+            "y": 727.078125,
+            "width": 320,
+            "height": 107,
+            "top": 727.078125,
+            "right": 1180,
+            "bottom": 834.078125,
+            "left": 860
+          },
+          "optionText": ["IEIrlanda+353"],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/063.png"
+      },
+      {
+        "route": "/cadastro",
+        "state": "invalid-phone",
+        "motion": "reduced",
+        "width": 1440,
+        "image": "cadastro-invalid-phone-reduced-1440.png",
+        "metrics": {
+          "input": {
+            "x": 1006.359375,
+            "y": 675.328125,
+            "width": 271.640625,
+            "height": 29,
+            "top": 675.328125,
+            "right": 1278,
+            "bottom": 704.328125,
+            "left": 1006.359375
+          },
+          "group": {
+            "x": 860,
+            "y": 661.828125,
+            "width": 440,
+            "height": 56,
+            "top": 661.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "field": {
+            "x": 860,
+            "y": 631.828125,
+            "width": 440,
+            "height": 86,
+            "top": 631.828125,
+            "right": 1300,
+            "bottom": 717.828125,
+            "left": 860
+          },
+          "value": "1",
+          "invalid": null,
+          "errorText": [],
+          "placeholder": "rgb(115, 115, 115)",
+          "popover": null,
+          "optionText": [],
+          "overflow": false
+        },
+        "publishedImage": ".github/evidence/r16/t/a/064.png"
+      }
+    ]
+  }
+}

@@ -12,6 +12,7 @@ Owner autorizou execução contínua deste lote, incluindo integração dos pró
 Consultar autorizacao-execucao-continua.md. Manter PRs/evidências e staging; não criar review
 GitHub fictício nem modificar o padrão global de revisão humana.
 
-Próxima subtarefa: R16 D03 — Before de quatro telas Student e duas Teacher, depois adapters/After.
+R16 D03/D04: seis telas, 192 pares originais; medidas, valores e erros preservados.
+Próxima subtarefa: R16 D05/D06 — PRs de adoção e integração com artefato oficial verificado.
 Analytics concorrente preservado; Teacher mantém documentação event-archive em elaboração, sem
 mover sua localização. Operar em worktrees isolados; alinhar canônico após preservar estado atual.
