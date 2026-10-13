@@ -949,3 +949,9 @@ status calculado e ações permanecem no consumidor. Receita única; sem variaç
 `QuizOption` recebe props nativas de button, `letter`, children e `state` opcional
 (default/correct/wrong/dim). `QuizFeedback` recebe props nativas de div, `tone` correct/wrong
 e children. O consumidor calcula resposta/reveal/disabled e mantém áudio, avanço e persistência.
+
+### PracticePlaybackControls
+
+View controlada: playing/playLabel/onPlay, skipAction opcional, speed/speedOptions/onSpeedChange,
+translationVisible/onTranslationToggle. A UI não toca áudio nem calcula progresso/repetições.
+O consumidor fornece labels e mantém engine, cleanup, reader e persistência.

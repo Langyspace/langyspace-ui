@@ -200,3 +200,6 @@ export { QuizOption } from './molecules/QuizOption'
 export type { QuizOptionProps, QuizOptionState } from './molecules/QuizOption'
 export { QuizFeedback } from './molecules/QuizFeedback'
 export type { QuizFeedbackProps } from './molecules/QuizFeedback'
+
+export { PracticePlaybackControls } from './molecules/PracticePlaybackControls'
+export type { PracticePlaybackControlsProps } from './molecules/PracticePlaybackControls'
