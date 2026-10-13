@@ -180,3 +180,9 @@ export type { PracticeCardSkeletonBodyProps } from './molecules/PracticeCardSkel
 
 export { PracticeProgressBar } from './atoms/PracticeProgressBar'
 export type { PracticeProgressBarProps } from './atoms/PracticeProgressBar/types'
+
+export { PhoneField } from './molecules/PhoneField'
+export type {
+  PhoneFieldProps,
+  PhoneCountryOption,
+} from './molecules/PhoneField'

@@ -37,6 +37,7 @@ const {
   MessageThreadHeader,
   OperationalList,
   Pressable,
+  PhoneField,
   PracticeCardSkeletonBody,
   PracticeProgressBar,
   SearchInput,
@@ -72,6 +73,18 @@ try {
         ConsumerSurface,
         null,
         createElement(PracticeProgressBar, { value: 0.375 }),
+        createElement(PhoneField, {
+          countries: [],
+          country: {
+            code: 'BR',
+            name: 'Brasil',
+            dialCode: '+55',
+            flag: 'BR',
+            placeholder: '00 00000 0000',
+          },
+          label: 'Celular',
+          onCountryChange: () => {},
+        }),
         createElement(PracticeCardSkeletonBody, {
           'data-testid': 'ssr-practice-skeleton',
         }),
