@@ -206,3 +206,6 @@ export type {
   FlashcardGrade,
   FlashcardRatingButtonProps,
 } from './molecules/FlashcardRatingButton'
+
+export { PracticePlaybackControls } from './molecules/PracticePlaybackControls'
+export type { PracticePlaybackControlsProps } from './molecules/PracticePlaybackControls'

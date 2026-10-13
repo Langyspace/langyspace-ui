@@ -955,3 +955,9 @@ e children. O consumidor calcula resposta/reveal/disabled e mantém áudio, avan
 Props nativas de button, grade again/hard/good/easy, interval e selected opcional; children dá o label.
 O produto calcula intervalos, controla disabled e mantém scheduler/persistência/feedback/timing.
 Receita responsive comum; nenhuma configuração por portal.
+
+### PracticePlaybackControls
+
+View controlada: playing/playLabel/onPlay, skipAction opcional, speed/speedOptions/onSpeedChange,
+translationVisible/onTranslationToggle. A UI não toca áudio nem calcula progresso/repetições.
+O consumidor fornece labels e mantém engine, cleanup, reader e persistência.

@@ -41,6 +41,7 @@ for (const entry of [
   'practiceCardBody',
   'quiz',
   'rating',
+  'playback',
   'toasts',
 ]) {
   const result = await build({
