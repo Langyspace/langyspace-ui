@@ -25,6 +25,168 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'PracticeCardBody',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/PracticeCardBody/index.tsx',
+    runtimeMarker: 'lsui-sc-practice-card-body',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/PracticeCardBody/PracticeCardBody.stories.tsx',
+      title: 'Molecules/PracticeCardBody',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/PracticeCardBody/PracticeCardBody.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/PracticeCardBody/types.ts',
+      documentation: { path: 'README.md', anchor: 'practicecardbody' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentPracticeActivityCards/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'QuizOption',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/QuizOption/index.tsx',
+    runtimeMarker: 'lsui-sc-quiz-option',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/QuizOption/QuizOption.stories.tsx',
+      title: 'Molecules/QuizOption',
+    },
+    test: { ...complete, path: 'src/molecules/QuizOption/QuizOption.test.tsx' },
+    reference: {
+      propsPath: 'src/molecules/QuizOption/types.ts',
+      documentation: { path: 'README.md', anchor: 'quizoption-e-quizfeedback' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'QuizFeedback',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/QuizFeedback/index.tsx',
+    runtimeMarker: 'lsui-sc-quiz-feedback',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/QuizFeedback/QuizFeedback.stories.tsx',
+      title: 'Molecules/QuizFeedback',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/QuizFeedback/QuizFeedback.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/QuizFeedback/types.ts',
+      documentation: { path: 'README.md', anchor: 'quizoption-e-quizfeedback' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'FlashcardRatingButton',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/FlashcardRatingButton/index.tsx',
+    runtimeMarker: 'lsui-sc-flashcard-rating-button',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/FlashcardRatingButton/FlashcardRatingButton.stories.tsx',
+      title: 'Molecules/FlashcardRatingButton',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/FlashcardRatingButton/FlashcardRatingButton.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/FlashcardRatingButton/types.ts',
+      documentation: { path: 'README.md', anchor: 'flashcardratingbutton' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/FlashcardsV2.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'PracticePlaybackControls',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/PracticePlaybackControls/index.tsx',
+    runtimeMarker: 'lsui-sc-practice-playback-controls',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/PracticePlaybackControls/PracticePlaybackControls.stories.tsx',
+      title: 'Molecules/PracticePlaybackControls',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/PracticePlaybackControls/PracticePlaybackControls.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/PracticePlaybackControls/types.ts',
+      documentation: { path: 'README.md', anchor: 'practiceplaybackcontrols' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'CalendarControls',
     interactive: true,
     layer: 'molecule',
