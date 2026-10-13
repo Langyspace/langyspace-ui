@@ -40,7 +40,8 @@ Patch local: API intacta (44 values/105 types/147 d.ts); pacote empacotado e ins
 consumer isolado importa no Node e renderiza PhoneField com CSS SSR. Medidas raw/gzip
 113828/24054 library e 10414/3397 phone, dentro dos limites planejados; famílias antigas intactas.
 56 pares UI recapturados; 53/56 PNGs byte idênticos ao anterior e medidas/estados idênticos.
-Produtos recapturam After com o patch para verificar reutilização dos originais publicados.
+Produtos recapturados com o patch: todos os 192 pares preservam exatamente medidas/valores/erros.
+Todos os After originais renovados neste commit; Antes oficial 1.12.0 preservado.
 
 Próxima subtarefa única: D05/D06 — publicar imagens originais, abrir os PRs de adoção; verificar
 artefato oficial 1.13.0 antes da integração por staging. Pipelines seguem assíncronos, sem polling.
