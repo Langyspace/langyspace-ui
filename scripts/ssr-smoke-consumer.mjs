@@ -43,6 +43,8 @@ const {
   PracticeCardSkeletonBody,
   PracticeProgressBar,
   PracticeCardBody,
+  QuizOption,
+  QuizFeedback,
   SearchInput,
   SectionHeader,
   SegmentedControl,
@@ -101,6 +103,12 @@ try {
           value: 0.5,
           completed: true,
         }),
+        createElement(
+          QuizOption,
+          { letter: 'A', state: 'correct', disabled: true },
+          'Yes',
+        ),
+        createElement(QuizFeedback, { tone: 'wrong' }, 'Review'),
         createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PhoneField, {
           countries: [],
@@ -366,6 +374,8 @@ if (!markup.includes('lsui-sc-state-panel')) {
 for (const componentId of [
   'lsui-sc-calendar-controls',
   'lsui-sc-practice-card-body',
+  'lsui-sc-quiz-option',
+  'lsui-sc-quiz-feedback',
   'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',
   'lsui-sc-toast-viewport',

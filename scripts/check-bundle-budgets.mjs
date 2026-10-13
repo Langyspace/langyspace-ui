@@ -39,6 +39,7 @@ for (const entry of [
   'phone',
   'calendarControls',
   'practiceCardBody',
+  'quiz',
   'toasts',
 ]) {
   const result = await build({
