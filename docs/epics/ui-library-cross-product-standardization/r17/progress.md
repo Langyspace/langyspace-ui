@@ -12,6 +12,16 @@ patch dedicado UI #14 muda para named import, sem alterar contrato visual. AuthF
 usa named import. Base atualizada no patch e pacote empacotado. Import/SSR do AuthFrame no consumer instalado
 aprovado. 96 imagens definitivas recapturadas com essa fonte e package preparado.
 
+A03/A04: Student 113 pares, Teacher 65 pares. Todos os retângulos, textos, campos, scroll, foco
+e footer idênticos. Quatro rotas Student (login/registration/acesso/comecar), duas Teacher
+(login/cadastro); inclui phone/OTP/erro/success, acesso ausente/ready/switch/error/pending,
+handoff error/verification/pending, toast, larguras 390/639/640/1023/1024/1440 e alturas568/1100.
+Fixtures somente no driver ignorado: estado inicial/controlado, auth/settings sintéticos e rede
+bloqueada. Controllers intactos; nenhum submit válido, OTP, callable ou provider. Antes sourceR16
+congelada; verificar sua equivalência a staging após R16. Typechecks de ambos adapters aprovados.
+187 linhas CSS removidas por produto. UI1.14.1 é patch de tooling; todos os arquivos de runtime e
+API são byte idênticos ao candidato1.14.0 fotografado, somente package.json.version difere.
+
 Próxima subtarefa: A03 — capturas Before/After dos adapters. Sources baseline congeladas dos
 shells R16; fixtures de estado somente no driver de captura, sem alterações em controllers.
 Matriz cobre auth/OTP/erro/success/handoff/acesso/footer/toast e viewport curto/breakpoints.

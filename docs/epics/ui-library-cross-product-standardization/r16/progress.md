@@ -62,3 +62,7 @@ Patch 1.14.1 contém PhoneField e AuthFrame já preparados. R16 pode adotar esta
 compatível (AuthFrame sem caller no R16); recapturar After com ela e preservar Before1.12.
 R17 terá somente adaptação do shell, reutilizando dependência oficial já integrada no R16.
 Tags1.13/1.13.1/1.14 não são movidas; este patch de tooling não tem impacto renderizado.
+
+Última evidência R16: After recapturado com candidato final1.14.1. Todos os 192 pares preservam
+medidas, valores e erros em relação ao patch. Antes1.12 oficial permanece intacto. Dependência
+final compartilhada R16/R17 será oficial1.14.1 somente após checksum e comparação completa.

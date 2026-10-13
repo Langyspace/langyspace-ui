@@ -1,18 +1,19 @@
 # Progresso — UI Library entre produtos
 
-2026-10-13: R14 integrada em UI #12 (7f52499), Student #10 (3e7af8f), Teacher #34 (929240c).
-UI 1.12.0 oficial: checksum e 295 arquivos idênticos ao candidato aprovado. Produtos adotam
-somente o oficial; pipelines staging iniciados, sem declaração de produção verificada.
+R14 integrada UI#12/Student#10/Teacher#34; UI1.12 oficial verificada, staging iniciado. Sem prova
+nova de produção. R13/R15/R18 adiados por custo-benefício explicitado nos respectivos documentos.
 
-R13 e R15 adiados por custo-benefício documentado. R16 PhoneField preparada primeiro na UI,
-PR #13, oito casos focados, API compatível e 56 PNGs originais. Estilos comuns; máscaras,
-normalizadores, countries, caret e paste locais. Library +1458 gzip; famílias antigas preservadas.
+R16 PhoneField UI#13, correções SSR UI#14/#16 integradas. Named import corrige runtime Node;
+smoke passou a localizar Button específico, mantendo todos os checks. API/CSS do patch de tooling
+intactos. Candidate final1.14.1 empacotado; importar/renderizar no consumer isolado comprovado.
+Student#12 e Teacher#35 em draft até oficial disponível. 192 pares originais atualizados.
 
-Owner autorizou execução contínua deste lote, incluindo integração dos próximos PRs preparados.
-Consultar autorizacao-execucao-continua.md. Manter PRs/evidências e staging; não criar review
-GitHub fictício nem modificar o padrão global de revisão humana.
+R17 AuthFrame UI#15 integrada. 7 slots semânticos, sem auth/store/router; remove187 linhas CSS
+por consumer. 178 pares de telas reais preservam medidas/textos/foco/scroll/footer. Typechecks
+aprovados; imagens prontas. Pacote1.14.1 reutilizado por R16/R17; tooling não muda runtime1.14.
 
-R16 D03/D04: seis telas, 192 pares originais; medidas, valores e erros preservados.
-Próxima subtarefa: R16 D05/D06 — PRs de adoção e integração com artefato oficial verificado.
-Analytics concorrente preservado; Teacher mantém documentação event-archive em elaboração, sem
-mover sua localização. Operar em worktrees isolados; alinhar canônico após preservar estado atual.
+Owner autorizou execução contínua neste lote: integrar PRs preparados sem novo pedido por rodada.
+Manter staging, imagens completas e padrão global de PRs; não fabricar reviews GitHub.
+Próxima subtarefa: comparar artefato oficial1.14.1 e integrar R16; abrir/integrar adaptersR17,
+alinhar canônicos preservando trabalho concorrente e avançar discovery R19/implementações R20–R24.
+Teacher canônico event-archive e analytics intocados em localização original e recovery persistente.
