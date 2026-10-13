@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { Pressable } from '../../primitives/Pressable'
-import { quizRecipe } from './recipe'
+import { quizRecipe } from '../../foundations/quizRecipe'
 export const Option = styled(Pressable).withConfig({
   componentId: 'lsui-sc-quiz-option',
 })<{ $state: 'default' | 'correct' | 'wrong' | 'dim' }>`
@@ -118,24 +118,5 @@ export const Letter = styled.span`
   @media (max-width: ${() => quizRecipe.breakpoints.sm}) {
     width: 1.75rem;
     height: 1.75rem;
-  }
-`
-
-export const Mark = styled.span`
-  width: 1.375rem;
-  height: 1.375rem;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: ${() => quizRecipe.radius.circle};
-  color: ${() => quizRecipe.colors.text.inverse};
-
-  &.correct {
-    background: #16a34a;
-  }
-
-  &.wrong {
-    background: #dc2626;
   }
 `

@@ -1,4 +1,4 @@
-import { tokens } from '../../foundations/tokens'
+import { tokens } from './tokens'
 
 // Geometry mirrors the existing quiz recipe; keep legacy radii/focus local when foundations differ.
 export const quizRecipe = {

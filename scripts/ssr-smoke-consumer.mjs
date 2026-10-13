@@ -44,6 +44,7 @@ const {
   PracticeProgressBar,
   PracticeCardBody,
   QuizOption,
+  FlashcardRatingButton,
   QuizFeedback,
   SearchInput,
   SectionHeader,
@@ -109,6 +110,11 @@ try {
           'Yes',
         ),
         createElement(QuizFeedback, { tone: 'wrong' }, 'Review'),
+        createElement(
+          FlashcardRatingButton,
+          { grade: 'good', interval: '4 days', selected: true },
+          'Good',
+        ),
         createElement(PracticeProgressBar, { value: 0.375 }),
         createElement(PhoneField, {
           countries: [],
@@ -375,6 +381,7 @@ for (const componentId of [
   'lsui-sc-calendar-controls',
   'lsui-sc-practice-card-body',
   'lsui-sc-quiz-option',
+  'lsui-sc-flashcard-rating-button',
   'lsui-sc-quiz-feedback',
   'lsui-sc-practice-card-skeleton-body',
   'lsui-sc-toast-item',

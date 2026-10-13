@@ -1,0 +1,1 @@
+export { FlashcardRatingButton } from '../../src'
