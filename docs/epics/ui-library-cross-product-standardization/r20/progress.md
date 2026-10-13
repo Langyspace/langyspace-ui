@@ -14,3 +14,5 @@ aponta pacote instalado e smokeSSR completo passou incluindo markerPracticeCardB
 sem overflow ou perda de título/meta. Produto ainda precisa pares reais antes de integrar.
 
 Visual gate review: accepted by human — autorização contínua expressa para este lote.
+
+Adoções concluídas: [Student #14](https://github.com/MarcosLaboriosi/langyspace-student/pull/14) / [Teacher #38](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/38), 166 pares originais. Oficial1.19.1 conferido por checksum/351 arquivos; frozen locks aprovados. Checkouts canônicos limpos em staging, com dependência física oficial. Detalhes e CI em [execução do lote](../execucao-20261013.md). Produção não verificada.

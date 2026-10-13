@@ -15,3 +15,5 @@ dim/long/focus/hover, quatro widths e dois motions. Textos, feedback e controls 
 
 Visual gate review: accepted by human — autorização contínua expressa para este lote.
 Produtos precisam de baseline/pares antes da integração. Produção não verificada.
+
+Adoções concluídas: [Student #16](https://github.com/MarcosLaboriosi/langyspace-student/pull/16) / [Teacher #39](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/39), 180 pares originais. Oficial1.19.1 conferido por checksum/351 arquivos; frozen locks aprovados. Checkouts canônicos limpos em staging, com dependência física oficial. Detalhes e CI em [execução do lote](../execucao-20261013.md). Produção não verificada.

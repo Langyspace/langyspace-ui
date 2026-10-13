@@ -22,3 +22,5 @@ Visual gate review: accepted by human — autorização contínua expressa para 
 UI testCI https://github.com/MarcosLaboriosi/langyspace-ui/actions/runs/38387943885
 Release https://github.com/MarcosLaboriosi/langyspace-ui/actions/workflows/release.yml
 Run indisponível no lookup inicial; publicação provada pelo artefato oficial.
+
+R19 concluída Teacher #37 / Admin #14 com oficial1.15.0, checksum/313 arquivos e56 pares. Canônicos limpos e dependência física oficial. CI/deploy iniciados; produção não verificada.

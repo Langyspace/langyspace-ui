@@ -10,3 +10,5 @@ Speed/translation passam a expor aria-pressed, refletindo o estado já existente
 
 Visual gate review: accepted by human — autorização contínua expressa deste lote.
 Produtos ainda precisam de baseline/pares e pacote oficial antes de integração. Produção não verificada.
+
+Adoções concluídas: [Student #18](https://github.com/MarcosLaboriosi/langyspace-student/pull/18) / [Teacher #41](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/41), 300 pares originais. Oficial1.19.1 conferido por checksum/351 arquivos; frozen locks aprovados. Checkouts canônicos limpos em staging, com dependência física oficial. Detalhes e CI em [execução do lote](../execucao-20261013.md). Produção não verificada.

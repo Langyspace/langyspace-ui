@@ -2,6 +2,7 @@
 
 - Inspect the existing component, stories, tests, root exports, tokens, audit configuration, API
   snapshot, bundle budgets, and representative downstream composition before implementation.
+- Register each new public component export in `quality/component-manifest.ts` with its owner, props, documentation, consumers and real test/story/browser/SSR coverage. Run the focused `quality/ComponentManifest.test.ts` when that catalog changes.
 - Design semantic, composable APIs. Keep domain labels, routes, billing states, and application data
   ownership outside the library.
 - Cover meaningful variants and interaction states in Storybook: default, hover/focus where

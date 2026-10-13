@@ -15,3 +15,5 @@ Visual gate review: accepted by human — autorização contínua deste lote.
 Produtos ainda precisam de pares próprios/official antes de integrar. Produção não verificada.
 
 Quiz internal owner corrigido conforme patch1.17.2; architecture passou, motion registrada com path/expiry.
+
+Adoções concluídas: [Student #17](https://github.com/MarcosLaboriosi/langyspace-student/pull/17) / [Teacher #40](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/40), 308 pares originais. Oficial1.19.1 conferido por checksum/351 arquivos; frozen locks aprovados. Checkouts canônicos limpos em staging, com dependência física oficial. Detalhes e CI em [execução do lote](../execucao-20261013.md). Produção não verificada.
