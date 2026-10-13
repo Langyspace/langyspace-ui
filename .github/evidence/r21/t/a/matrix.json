@@ -1,0 +1,3358 @@
+{
+  "phase": "after",
+  "product": "teacher",
+  "baseline": "38f1e878f4b2c06d9896dd8246ce2e4b18727e35",
+  "fixture": "Synthetic two-question activities, real controllers, fixture-only completion success/pending/error; external network blocked.",
+  "records": [
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "question",
+      "image": "001.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "hover",
+      "image": "002.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 386,
+              "width": 284,
+              "height": 122,
+              "top": 386,
+              "right": 337,
+              "bottom": 508,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "focus",
+      "image": "003.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "correct",
+      "image": "004.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "005.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "006.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "summary",
+      "image": "007.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "008.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "question",
+      "image": "009.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "hover",
+      "image": "010.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 386,
+              "width": 284,
+              "height": 122,
+              "top": 386,
+              "right": 337,
+              "bottom": 508,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "focus",
+      "image": "011.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "correct",
+      "image": "012.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "013.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "014.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "summary",
+      "image": "015.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "016.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "question",
+      "image": "017.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "018.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 386,
+              "width": 284,
+              "height": 122,
+              "top": 386,
+              "right": 337,
+              "bottom": 508,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "019.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "020.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "021.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "022.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "023.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "024.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "question",
+      "image": "025.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "026.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 386,
+              "width": 284,
+              "height": 122,
+              "top": 386,
+              "right": 337,
+              "bottom": 508,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "027.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "028.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "029.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "030.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 146,
+              "top": 387,
+              "right": 337,
+              "bottom": 533,
+              "left": 53
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 543,
+              "width": 284,
+              "height": 56,
+              "top": 543,
+              "right": 337,
+              "bottom": 599,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "031.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "032.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 387,
+              "width": 284,
+              "height": 122,
+              "top": 387,
+              "right": 337,
+              "bottom": 509,
+              "left": 53
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 53,
+              "y": 519,
+              "width": 284,
+              "height": 56,
+              "top": 519,
+              "right": 337,
+              "bottom": 575,
+              "left": 53
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "question",
+      "image": "033.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "hover",
+      "image": "034.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 383,
+              "width": 446,
+              "height": 98,
+              "top": 383,
+              "right": 543,
+              "bottom": 481,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "focus",
+      "image": "035.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "correct",
+      "image": "036.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "037.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "038.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "summary",
+      "image": "039.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "040.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "question",
+      "image": "041.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "hover",
+      "image": "042.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 383,
+              "width": 446,
+              "height": 98,
+              "top": 383,
+              "right": 543,
+              "bottom": 481,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "focus",
+      "image": "043.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "correct",
+      "image": "044.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "045.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "046.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "summary",
+      "image": "047.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "048.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 384,
+              "width": 446,
+              "height": 98,
+              "top": 384,
+              "right": 543,
+              "bottom": 482,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 492,
+              "width": 446,
+              "height": 56,
+              "top": 492,
+              "right": 543,
+              "bottom": 548,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "question",
+      "image": "049.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "hover",
+      "image": "050.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 332.1875,
+              "width": 438,
+              "height": 98,
+              "top": 332.1875,
+              "right": 1063,
+              "bottom": 430.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "focus",
+      "image": "051.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "correct",
+      "image": "052.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "053.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "054.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "summary",
+      "image": "055.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "056.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "question",
+      "image": "057.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "hover",
+      "image": "058.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 332.1875,
+              "width": 438,
+              "height": 98,
+              "top": 332.1875,
+              "right": 1063,
+              "bottom": 430.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "focus",
+      "image": "059.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "correct",
+      "image": "060.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "061.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "062.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "summary",
+      "image": "063.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "064.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "question",
+      "image": "065.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "066.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 332.1875,
+              "width": 438,
+              "height": 98,
+              "top": 332.1875,
+              "right": 1063,
+              "bottom": 430.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "067.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "068.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "069.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "070.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "071.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "072.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "question",
+      "image": "073.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "074.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 332.1875,
+              "width": 438,
+              "height": 98,
+              "top": 332.1875,
+              "right": 1063,
+              "bottom": 430.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "075.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "076.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "077.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "078.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "079.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "080.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Modo pr\u00e9via, n\u00e3o altera o progresso do alunoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2grammar \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 333.1875,
+              "width": 438,
+              "height": 98,
+              "top": 333.1875,
+              "right": 1063,
+              "bottom": 431.1875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 441.1875,
+              "width": 438,
+              "height": 62,
+              "top": 441.1875,
+              "right": 1063,
+              "bottom": 503.1875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    }
+  ]
+}

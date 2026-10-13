@@ -1,0 +1,3618 @@
+{
+  "phase": "before",
+  "product": "student",
+  "baseline": "170a632b73bbe695f9d98eb1babc14a2309d5f6c",
+  "fixture": "Synthetic two-question activities, real controllers, fixture-only completion success/pending/error; external network blocked.",
+  "records": [
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "question",
+      "image": "001.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "hover",
+      "image": "002.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 299,
+              "width": 324,
+              "height": 122,
+              "top": 299,
+              "right": 357,
+              "bottom": 421,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "focus",
+      "image": "003.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "correct",
+      "image": "004.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "005.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "006.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "summary",
+      "image": "007.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "008.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "009.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "010.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "question",
+      "image": "011.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "hover",
+      "image": "012.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 299,
+              "width": 324,
+              "height": 122,
+              "top": 299,
+              "right": 357,
+              "bottom": 421,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "focus",
+      "image": "013.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "correct",
+      "image": "014.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "015.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "016.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "summary",
+      "image": "017.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "018.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "019.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "020.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "question",
+      "image": "021.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "022.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 299,
+              "width": 324,
+              "height": 122,
+              "top": 299,
+              "right": 357,
+              "bottom": 421,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "023.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "024.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "025.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "026.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "027.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "028.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "completion-pending",
+      "image": "029.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "completion-error",
+      "image": "030.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "question",
+      "image": "031.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "032.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 299,
+              "width": 324,
+              "height": 122,
+              "top": 299,
+              "right": 357,
+              "bottom": 421,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "033.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "034.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "035.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "036.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "037.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "038.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 300,
+              "width": 324,
+              "height": 122,
+              "top": 300,
+              "right": 357,
+              "bottom": 422,
+              "left": 33
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 33,
+              "y": 432,
+              "width": 324,
+              "height": 56,
+              "top": 432,
+              "right": 357,
+              "bottom": 488,
+              "left": 33
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "completion-pending",
+      "image": "039.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "completion-error",
+      "image": "040.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "question",
+      "image": "041.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "hover",
+      "image": "042.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 299,
+              "width": 446,
+              "height": 98,
+              "top": 299,
+              "right": 543,
+              "bottom": 397,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "focus",
+      "image": "043.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "correct",
+      "image": "044.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "045.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "046.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "summary",
+      "image": "047.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "048.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "049.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "050.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "question",
+      "image": "051.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "hover",
+      "image": "052.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 299,
+              "width": 446,
+              "height": 98,
+              "top": 299,
+              "right": 543,
+              "bottom": 397,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "focus",
+      "image": "053.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "correct",
+      "image": "054.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "055.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "056.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "summary",
+      "image": "057.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "058.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 300,
+              "width": 446,
+              "height": 98,
+              "top": 300,
+              "right": 543,
+              "bottom": 398,
+              "left": 97
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 97,
+              "y": 408,
+              "width": 446,
+              "height": 56,
+              "top": 408,
+              "right": 543,
+              "bottom": 464,
+              "left": 97
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "059.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "060.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "question",
+      "image": "061.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "hover",
+      "image": "062.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 360.6875,
+              "width": 438,
+              "height": 98,
+              "top": 360.6875,
+              "right": 1063,
+              "bottom": 458.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "focus",
+      "image": "063.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "correct",
+      "image": "064.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "065.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "066.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "summary",
+      "image": "067.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "068.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "069.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "070.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "question",
+      "image": "071.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "hover",
+      "image": "072.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 360.6875,
+              "width": 438,
+              "height": 98,
+              "top": 360.6875,
+              "right": 1063,
+              "bottom": 458.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "focus",
+      "image": "073.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "correct",
+      "image": "074.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "next-question",
+      "image": "075.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-reveal",
+      "image": "076.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "summary",
+      "image": "077.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "wrong-without-reveal",
+      "image": "078.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "completion-pending",
+      "image": "079.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "completion-error",
+      "image": "080.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "question",
+      "image": "081.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "082.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 360.6875,
+              "width": 438,
+              "height": 98,
+              "top": 360.6875,
+              "right": 1063,
+              "bottom": 458.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "083.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "084.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "085.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "086.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "087.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "088.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "completion-pending",
+      "image": "089.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "completion-error",
+      "image": "090.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "question",
+      "image": "091.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "hover",
+      "image": "092.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 360.6875,
+              "width": 438,
+              "height": 98,
+              "top": 360.6875,
+              "right": 1063,
+              "bottom": 458.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "focus",
+      "image": "093.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "correct",
+      "image": "094.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoCorreto Boa.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "next-question",
+      "image": "095.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoToque em 1 a 2 para escolher uma alternativa.",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": false,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-reveal",
+      "image": "096.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2 de 2A1Pergunta 2 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Ver resumo",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(22, 101, 52)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "summary",
+      "image": "097.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1/2ResultadoVoc\u00ea acertou 1 de 2 quest\u00f5es.1Acertos1Erros50%AproveitamentoRefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "wrong-without-reveal",
+      "image": "098.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada1 de 2A1Pergunta 1 de 2Gram\u00e1tica \u00b7 6 minChoose yes.AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.BnoRevise Tente novamente.Pr\u00f3xima",
+        "options": [
+          {
+            "text": "AYes \u2014 alternativa com texto longo para conferir leitura e quebra de linha em telas pequenas.",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 361.6875,
+              "width": 438,
+              "height": 98,
+              "top": 361.6875,
+              "right": 1063,
+              "bottom": 459.6875,
+              "left": 625
+            },
+            "color": "rgb(10, 10, 10)",
+            "role": null
+          },
+          {
+            "text": "Bno",
+            "disabled": true,
+            "rect": {
+              "x": 625,
+              "y": 469.6875,
+              "width": 438,
+              "height": 62,
+              "top": 469.6875,
+              "right": 1063,
+              "bottom": 531.6875,
+              "left": 625
+            },
+            "color": "rgb(185, 28, 28)",
+            "role": null
+          }
+        ]
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "completion-pending",
+      "image": "099.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoAtualizando progresso...RefazerVoltar para lista",
+        "options": []
+      }
+    },
+    {
+      "route": "/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "completion-error",
+      "image": "100.png",
+      "metrics": {
+        "overflow": false,
+        "text": "Atualize seu pagamentoH\u00e1 uma pend\u00eancia no pagamento do seu plano. Atualize os dados para continuar.Atualizar pagamentoquiz \u00b7 N\u00e3o iniciada2/2ResultadoVoc\u00ea acertou 2 de 2 quest\u00f5es.2Acertos0Erros100%AproveitamentoN\u00e3o foi poss\u00edvel atualizar seu progresso agora.RefazerVoltar para lista",
+        "options": []
+      }
+    }
+  ]
+}
