@@ -1,3 +1,4 @@
+import * as Styled from './styles'
 export function QuizMark({ correct }: { correct: boolean }) {
   return (
     <svg
@@ -20,5 +21,19 @@ export function QuizMark({ correct }: { correct: boolean }) {
         </>
       )}
     </svg>
+  )
+}
+
+export function QuizResponseMark({
+  className = '',
+  tone,
+}: {
+  className?: string
+  tone: 'correct' | 'wrong'
+}) {
+  return (
+    <Styled.Mark className={`${className} ${tone}`} aria-hidden="true">
+      <QuizMark correct={tone === 'correct'} />
+    </Styled.Mark>
   )
 }

@@ -1,5 +1,4 @@
-import { QuizMark } from '../QuizOption/mark'
-import { Mark } from '../QuizOption/styles'
+import { QuizResponseMark } from '../../primitives/QuizResponseMark'
 import * as Styled from './styles'
 import type { QuizFeedbackProps } from './types'
 export function QuizFeedback({ children, tone, ...props }: QuizFeedbackProps) {
@@ -9,9 +8,7 @@ export function QuizFeedback({ children, tone, ...props }: QuizFeedbackProps) {
       $correct={tone === 'correct'}
       data-ui-quiz-feedback="true"
     >
-      <Mark className={tone} aria-hidden="true">
-        <QuizMark correct={tone === 'correct'} />
-      </Mark>
+      <QuizResponseMark tone={tone} />
       {children}
     </Styled.Feedback>
   )
