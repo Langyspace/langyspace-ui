@@ -43,6 +43,7 @@ const {
   PracticeCardSkeletonBody,
   PracticeProgressBar,
   PracticeCardBody,
+  QuizSessionHeader,
   QuizOption,
   PracticePlaybackControls,
   FlashcardRatingButton,
@@ -110,6 +111,13 @@ try {
           { letter: 'A', state: 'correct', disabled: true },
           'Yes',
         ),
+        createElement(QuizSessionHeader, {
+          name: 'SSR quiz',
+          counter: '1 de 8',
+          progress: 0.125,
+          backLabel: 'Back',
+          onBack: () => undefined,
+        }),
         createElement(QuizFeedback, { tone: 'wrong' }, 'Review'),
         createElement(
           FlashcardRatingButton,
@@ -391,6 +399,7 @@ if (!markup.includes('lsui-sc-state-panel')) {
 for (const componentId of [
   'lsui-sc-calendar-controls',
   'lsui-sc-practice-card-body',
+  'lsui-sc-quiz-session-header',
   'lsui-sc-quiz-option',
   'lsui-sc-practice-playback-controls',
   'lsui-sc-flashcard-rating-button',

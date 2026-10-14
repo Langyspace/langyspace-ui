@@ -25,6 +25,40 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'QuizSessionHeader',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/QuizSessionHeader/index.tsx',
+    runtimeMarker: 'lsui-sc-quiz-session-header',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/QuizSessionHeader/QuizSessionHeader.stories.tsx',
+      title: 'Molecules/QuizSessionHeader',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/QuizSessionHeader/QuizSessionHeader.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/QuizSessionHeader/types.ts',
+      documentation: { path: 'README.md', anchor: 'quizsessionheader' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'PracticeCardBody',
     interactive: false,
     layer: 'molecule',
