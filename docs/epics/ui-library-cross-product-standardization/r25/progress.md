@@ -16,5 +16,7 @@ Os produtos são privados: URLs raw de seus repositórios não servem como anexo
 
 Próxima tarefa única: S04 revisão humana dos três PRs; release oficial da UI, checksum/filemap e integração dos produtos via staging. Nenhum auto-merge.
 
-Visual gate review: pending human
+Visual gate review: accepted by human — pedido explícito de publicação manual em 2026-10-14.
 CI iniciada pelos PRs; sem monitoramento após push. Nenhum release oficial ou deploy de produto disparado por estes PRs de feature. Produção não verificada.
+
+Publicação manual autorizada pela product owner por bloqueio de cobrança em Student/Teacher. UI architecture tinha um erro real: hook em render anônimo da story Updating. Corrigido nomeando UpdatingHeader, sem alterar renderização/runtime; arquitetura, lint, formatação e typecheck locais passaram; cinco stories focadas passaram. Tests/package da CI passaram no payload inalterado e são reutilizados. Próxima etapa: merge UI, release manual com checksum e comparação integral do candidato; depois fixar pacote oficial e publicar Hosting staging/produção dos produtos com validação local real. Registros fora do repositório em manual-publication-20261014.

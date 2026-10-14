@@ -44,7 +44,7 @@ export const Focused: Story = {
   },
 }
 export const Updating: Story = {
-  render: (args) => {
+  render: function UpdatingHeader(args) {
     const [step, setStep] = useState(1)
     return (
       <>
