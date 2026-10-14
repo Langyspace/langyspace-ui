@@ -10,7 +10,11 @@ Concessões: contador muted para AA; track da barra compartilhada; transição d
 
 Uma colisão local de pasta de evidências foi corrigida antes de publicação:13 arquivos históricos restaurados byte a byte; canônico UI limpo. Novas capturas ficam em .github/evidence/r25-quiz-header, com cópias independentes. Nada histórico entra no diff.
 
-Próxima tarefa única: S03 finalizar evidências/pacote candidato/PRs draft nos produtos. O release oficial e os merges pertencem à S04, após revisão humana de cada revisão corrente.
+S03 concluída. [Student #19](https://github.com/MarcosLaboriosi/langyspace-student/pull/19) e [Teacher #42](https://github.com/MarcosLaboriosi/langyspace-teacher/pull/42) em draft.154 pares por produto, incluindo28 pares de loading Teacher. TypeScript e frozen locks passaram; candidato imutável conferido por SHA256. Métricas de header/back/options/texto/disabled/roles iguais nas sessões; loading/foco/back também preservados. Fonte dos PNGs e SHAs em .github/evidence/q25s e q25t/provenance.json.
+
+Os produtos são privados: URLs raw de seus repositórios não servem como anexo público. Cópias PNG originais de fixtures ficam no repositório público UI e seus PRs apontam para este SHA imutável. Código de produto, logs e dados reais não foram copiados.
+
+Próxima tarefa única: S04 revisão humana dos três PRs; release oficial da UI, checksum/filemap e integração dos produtos via staging. Nenhum auto-merge.
 
 Visual gate review: pending human
-CI/deploy ainda não disparados. Nenhuma publicação oficial ou produção afirmada.
+CI iniciada pelos PRs; sem monitoramento após push. Nenhum release oficial ou deploy de produto disparado por estes PRs de feature. Produção não verificada.

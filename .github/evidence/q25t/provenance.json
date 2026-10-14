@@ -1,0 +1,20 @@
+{
+  "repository": "langyspace-teacher",
+  "beforeSource": "719a154ceb87fad4d4c1d1adcc4f7fea2cfb885c",
+  "afterSource": "b8a270b46f7289836dfa5a60ebc89b3c061b1163",
+  "candidate": {
+    "version": "1.20.0",
+    "sha256": "0568136d75f51c0830ef2644affc04cfd49dfd649c69d98c788efeb0b95c9367",
+    "integrity": "sha512-7W7eOK0hNQSuHkKFHk9azZIAmqh5AK6jLW4g/RtKkFAxSDEo11XGKg+/3SeIetjUOHd8d/uvTxNCbStMazV+AA==",
+    "bytes": 84146,
+    "head": "afa9b5193607fa1fcdc26e41dbf0c2e9c13d15e6",
+    "url": "https://raw.githubusercontent.com/MarcosLaboriosi/langyspace-ui/afa9b5193607fa1fcdc26e41dbf0c2e9c13d15e6/.github/evidence/r25-quiz-header/candidate/langyspace-ui-1.20.0.tgz"
+  },
+  "fixtures": "Synthetic activities; real route/shell/controllers; services isolated only by temporary Vite capture plugin; external network blocked.",
+  "originalPngs": true,
+  "renderingChanges": [
+    "counter contrast",
+    "progress track",
+    "progress transition in Teacher"
+  ]
+}
