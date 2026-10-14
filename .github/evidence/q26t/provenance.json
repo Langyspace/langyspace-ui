@@ -1,0 +1,2494 @@
+{
+  "round": "R26",
+  "product": "teacher",
+  "beforeCommit": "9d42f00a6bbdf045ff7f4610e0e6d217ba034573",
+  "afterOwnedSourceSha256": {
+    "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx": "81943be4d0b292efcf4f636e255a31ec9930bcb22867afcbc6b65bbe49bb2155",
+    "src/pages/StudentLearningPreview/styles.ts": "0af958f7c9db272cf325f1ab8ab6b0736dd4e6f0046e11c6764c30deb6d8e198"
+  },
+  "package": "e7c48db5c48dd60187c94450c32059ef5b0dbc8e15e699df9aa2ede92a4d52cc",
+  "uiRuntimeSha256": "68c07c3f68a78179efb9a50d6961a0115464fabbcece4c9bedb378bb0fd477f0",
+  "fixture": "Synthetic two-question activities; external network blocked; original full-route PNGs; no image edits. Product controllers unchanged.",
+  "matrices": {
+    "before": {
+      "records": [
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "001.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "002.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "003.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "004.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "005.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "006.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "007.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "008.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "009.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "010.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "011.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "012.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "013.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "014.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "015.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "016.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "017.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "018.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "019.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "020.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "021.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "022.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "023.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "024.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "025.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "026.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "027.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "028.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "029.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "030.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "031.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "032.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "033.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "034.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "035.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "036.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "037.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "038.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "039.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "040.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "041.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "042.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "043.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "044.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "045.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "046.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "047.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "048.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "049.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "050.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "051.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "052.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "053.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "054.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "055.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "056.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "057.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "058.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "059.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "060.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "061.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "062.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "063.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "064.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "065.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "066.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "067.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "068.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "069.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "070.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "071.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "072.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "073.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "074.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "075.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "076.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "077.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "078.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "079.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "080.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "081.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "082.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "083.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "084.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "085.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "086.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "087.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "088.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "089.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "090.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "091.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "092.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "093.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "094.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "095.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "096.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "097.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "098.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "099.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "100.png"
+        }
+      ]
+    },
+    "after": {
+      "records": [
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "001.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "002.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "003.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "004.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "005.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "006.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "007.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "008.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "009.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "010.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "011.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "012.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "013.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "014.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "015.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "016.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "017.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "018.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "019.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "020.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "021.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "022.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "023.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "024.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "025.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "026.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "027.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "028.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "029.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "030.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "031.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "032.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "033.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "034.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "035.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "036.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "037.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "038.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "039.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "040.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "041.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "042.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "043.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "044.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "045.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "046.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "047.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "048.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "049.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "050.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "051.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "052.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "053.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "054.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "055.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "056.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "057.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "058.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "059.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "060.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "061.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "062.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "063.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "064.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "065.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "066.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "067.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "068.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "069.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "070.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "071.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "072.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "073.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "074.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "075.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "076.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "077.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "078.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "079.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "080.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "081.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "082.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "083.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "084.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "085.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "086.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "087.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "088.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "089.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "090.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "091.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "092.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "093.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "094.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "095.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "096.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "097.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "098.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "099.png"
+        },
+        {
+          "route": "/alunos/student-fixture/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "100.png"
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "pairs": 100,
+    "geometryAndTextIdentical": true,
+    "pngPixelDifferences": [
+      {
+        "image": "001.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 282, 233, 295]
+      },
+      {
+        "image": "002.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 282, 233, 295]
+      },
+      {
+        "image": "003.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 282, 233, 295]
+      },
+      {
+        "image": "004.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 273, 233, 286]
+      },
+      {
+        "image": "005.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 273, 233, 286]
+      },
+      {
+        "image": "006.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 184, 233, 197]
+      },
+      {
+        "image": "007.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 184, 233, 197]
+      },
+      {
+        "image": "008.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 184, 233, 197]
+      },
+      {
+        "image": "009.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 184, 233, 197]
+      },
+      {
+        "image": "010.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 46,
+        "box": [156, 184, 233, 197]
+      },
+      {
+        "image": "021.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "022.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "023.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "024.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 23,
+        "box": [48, 369, 341, 684]
+      },
+      {
+        "image": "025.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "026.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "027.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "028.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "029.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 70,
+        "box": [36, 369, 353, 684]
+      },
+      {
+        "image": "030.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [153, 369, 153, 370]
+      },
+      {
+        "image": "034.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 21,
+        "box": [48, 682, 341, 684]
+      },
+      {
+        "image": "039.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 21,
+        "box": [48, 682, 341, 684]
+      },
+      {
+        "image": "041.png",
+        "state": "result-0",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "042.png",
+        "state": "result-1",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "043.png",
+        "state": "result-2",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "044.png",
+        "state": "retry-focus",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 23,
+        "box": [92, 366, 547, 681]
+      },
+      {
+        "image": "045.png",
+        "state": "return-focus",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "046.png",
+        "state": "result-0",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "047.png",
+        "state": "result-1",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "048.png",
+        "state": "result-2",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "049.png",
+        "state": "retry-focus",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 70,
+        "box": [80, 366, 559, 681]
+      },
+      {
+        "image": "050.png",
+        "state": "return-focus",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [278, 366, 278, 367]
+      },
+      {
+        "image": "051.png",
+        "state": "result-0",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "052.png",
+        "state": "result-1",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "053.png",
+        "state": "result-2",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "054.png",
+        "state": "retry-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 28,
+        "box": [279, 366, 560, 669]
+      },
+      {
+        "image": "055.png",
+        "state": "return-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "056.png",
+        "state": "result-0",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "057.png",
+        "state": "result-1",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "058.png",
+        "state": "result-2",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "059.png",
+        "state": "retry-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 28,
+        "box": [279, 366, 560, 669]
+      },
+      {
+        "image": "060.png",
+        "state": "return-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [279, 366, 362, 378]
+      },
+      {
+        "image": "061.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 37,
+        "box": [802, 250, 885, 265]
+      },
+      {
+        "image": "062.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 66,
+        "box": [209, 24, 885, 265]
+      },
+      {
+        "image": "063.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 66,
+        "box": [209, 24, 885, 265]
+      },
+      {
+        "image": "064.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 66,
+        "box": [209, 24, 885, 256]
+      },
+      {
+        "image": "065.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 66,
+        "box": [209, 24, 885, 256]
+      },
+      {
+        "image": "066.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 50,
+        "box": [16, 130, 885, 481]
+      },
+      {
+        "image": "067.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 116,
+        "box": [16, 24, 885, 481]
+      },
+      {
+        "image": "068.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 50,
+        "box": [16, 130, 885, 481]
+      },
+      {
+        "image": "069.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 97,
+        "box": [16, 130, 1083, 481]
+      },
+      {
+        "image": "070.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 50,
+        "box": [16, 130, 885, 481]
+      },
+      {
+        "image": "071.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "072.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "073.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "074.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "075.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "078.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "079.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "080.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 13,
+        "box": [16, 477, 230, 481]
+      },
+      {
+        "image": "081.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 48,
+        "box": [209, 24, 802, 1044]
+      },
+      {
+        "image": "082.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "083.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "084.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "085.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "086.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "087.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "088.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "089.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "090.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 2,
+        "box": [802, 335, 802, 336]
+      },
+      {
+        "image": "092.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 46,
+        "box": [209, 24, 230, 1044]
+      },
+      {
+        "image": "093.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 92,
+        "box": [192, 24, 230, 1054]
+      },
+      {
+        "image": "094.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 113,
+        "box": [192, 24, 1071, 1054]
+      },
+      {
+        "image": "095.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 92,
+        "box": [192, 24, 230, 1054]
+      }
+    ]
+  }
+}

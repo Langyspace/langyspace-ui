@@ -1,0 +1,3126 @@
+{
+  "before": "Story nova — sem versão anterior.",
+  "originals": true,
+  "records": [
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 390,
+      "height": 568,
+      "file": "001.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 332.5,
+              "width": 358,
+              "height": 40,
+              "top": 332.5,
+              "right": 374,
+              "bottom": 372.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 380.5,
+              "width": 358,
+              "height": 40,
+              "top": 380.5,
+              "right": 374,
+              "bottom": 420.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 390,
+      "height": 568,
+      "file": "002.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 378,
+              "width": 358,
+              "height": 40,
+              "top": 378,
+              "right": 374,
+              "bottom": 418,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 426,
+              "width": 358,
+              "height": 40,
+              "top": 426,
+              "right": 374,
+              "bottom": 466,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 390,
+      "height": 568,
+      "file": "003.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 351,
+              "width": 358,
+              "height": 40,
+              "top": 351,
+              "right": 374,
+              "bottom": 391,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 399,
+              "width": 358,
+              "height": 40,
+              "top": 399,
+              "right": 374,
+              "bottom": 439,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 390,
+      "height": 568,
+      "file": "004.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 351,
+              "width": 358,
+              "height": 40,
+              "top": 351,
+              "right": 374,
+              "bottom": 391,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 399,
+              "width": 358,
+              "height": 40,
+              "top": 399,
+              "right": 374,
+              "bottom": 439,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 390,
+      "height": 568,
+      "file": "005.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 332.5,
+              "width": 358,
+              "height": 40,
+              "top": 332.5,
+              "right": 374,
+              "bottom": 372.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 380.5,
+              "width": 358,
+              "height": 40,
+              "top": 380.5,
+              "right": 374,
+              "bottom": 420.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 390,
+      "height": 1100,
+      "file": "006.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 598.5,
+              "width": 358,
+              "height": 40,
+              "top": 598.5,
+              "right": 374,
+              "bottom": 638.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 646.5,
+              "width": 358,
+              "height": 40,
+              "top": 646.5,
+              "right": 374,
+              "bottom": 686.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 390,
+      "height": 1100,
+      "file": "007.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 644,
+              "width": 358,
+              "height": 40,
+              "top": 644,
+              "right": 374,
+              "bottom": 684,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 692,
+              "width": 358,
+              "height": 40,
+              "top": 692,
+              "right": 374,
+              "bottom": 732,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 390,
+      "height": 1100,
+      "file": "008.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 617,
+              "width": 358,
+              "height": 40,
+              "top": 617,
+              "right": 374,
+              "bottom": 657,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 665,
+              "width": 358,
+              "height": 40,
+              "top": 665,
+              "right": 374,
+              "bottom": 705,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 390,
+      "height": 1100,
+      "file": "009.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 617,
+              "width": 358,
+              "height": 40,
+              "top": 617,
+              "right": 374,
+              "bottom": 657,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 665,
+              "width": 358,
+              "height": 40,
+              "top": 665,
+              "right": 374,
+              "bottom": 705,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 390,
+      "height": 1100,
+      "file": "010.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 598.5,
+              "width": 358,
+              "height": 40,
+              "top": 598.5,
+              "right": 374,
+              "bottom": 638.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 646.5,
+              "width": 358,
+              "height": 40,
+              "top": 646.5,
+              "right": 374,
+              "bottom": 686.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 640,
+      "height": 1100,
+      "file": "011.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560,
+              "bottom": 638.5,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560,
+              "bottom": 686.5,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 640,
+      "height": 1100,
+      "file": "012.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 560,
+              "bottom": 684,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 560,
+              "bottom": 732,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 640,
+      "height": 1100,
+      "file": "013.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560,
+              "bottom": 657,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560,
+              "bottom": 705,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 640,
+      "height": 1100,
+      "file": "014.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560,
+              "bottom": 657,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560,
+              "bottom": 705,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 640,
+      "height": 1100,
+      "file": "015.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560,
+              "bottom": 638.5,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560,
+              "bottom": 686.5,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 641,
+      "height": 1100,
+      "file": "016.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560.5,
+              "bottom": 638.5,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560.5,
+              "bottom": 686.5,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 641,
+      "height": 1100,
+      "file": "017.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 560.5,
+              "bottom": 684,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 560.5,
+              "bottom": 732,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 641,
+      "height": 1100,
+      "file": "018.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560.5,
+              "bottom": 657,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560.5,
+              "bottom": 705,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 641,
+      "height": 1100,
+      "file": "019.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560.5,
+              "bottom": 657,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560.5,
+              "bottom": 705,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 641,
+      "height": 1100,
+      "file": "020.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560.5,
+              "bottom": 638.5,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560.5,
+              "bottom": 686.5,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 1440,
+      "height": 568,
+      "file": "021.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 332.5,
+              "width": 480,
+              "height": 40,
+              "top": 332.5,
+              "right": 960,
+              "bottom": 372.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 380.5,
+              "width": 480,
+              "height": 40,
+              "top": 380.5,
+              "right": 960,
+              "bottom": 420.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 1440,
+      "height": 568,
+      "file": "022.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 378,
+              "width": 480,
+              "height": 40,
+              "top": 378,
+              "right": 960,
+              "bottom": 418,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 426,
+              "width": 480,
+              "height": 40,
+              "top": 426,
+              "right": 960,
+              "bottom": 466,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 1440,
+      "height": 568,
+      "file": "023.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 351,
+              "width": 480,
+              "height": 40,
+              "top": 351,
+              "right": 960,
+              "bottom": 391,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 399,
+              "width": 480,
+              "height": 40,
+              "top": 399,
+              "right": 960,
+              "bottom": 439,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 1440,
+      "height": 568,
+      "file": "024.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 351,
+              "width": 480,
+              "height": 40,
+              "top": 351,
+              "right": 960,
+              "bottom": 391,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 399,
+              "width": 480,
+              "height": 40,
+              "top": 399,
+              "right": 960,
+              "bottom": 439,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 1440,
+      "height": 568,
+      "file": "025.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 332.5,
+              "width": 480,
+              "height": 40,
+              "top": 332.5,
+              "right": 960,
+              "bottom": 372.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 380.5,
+              "width": 480,
+              "height": 40,
+              "top": 380.5,
+              "right": 960,
+              "bottom": 420.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "normal",
+      "width": 1440,
+      "height": 1100,
+      "file": "026.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 960,
+              "bottom": 638.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 960,
+              "bottom": 686.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "normal",
+      "width": 1440,
+      "height": 1100,
+      "file": "027.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 960,
+              "bottom": 684,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 960,
+              "bottom": 732,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "normal",
+      "width": 1440,
+      "height": 1100,
+      "file": "028.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 960,
+              "bottom": 657,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 960,
+              "bottom": 705,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "normal",
+      "width": 1440,
+      "height": 1100,
+      "file": "029.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 960,
+              "bottom": 657,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 960,
+              "bottom": 705,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "normal",
+      "width": 1440,
+      "height": 1100,
+      "file": "030.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "jLYWhG",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 960,
+              "bottom": 638.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 960,
+              "bottom": 686.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 390,
+      "height": 568,
+      "file": "031.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 332.5,
+              "width": 358,
+              "height": 40,
+              "top": 332.5,
+              "right": 374,
+              "bottom": 372.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 380.5,
+              "width": 358,
+              "height": 40,
+              "top": 380.5,
+              "right": 374,
+              "bottom": 420.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 390,
+      "height": 568,
+      "file": "032.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 378,
+              "width": 358,
+              "height": 40,
+              "top": 378,
+              "right": 374,
+              "bottom": 418,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 426,
+              "width": 358,
+              "height": 40,
+              "top": 426,
+              "right": 374,
+              "bottom": 466,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 390,
+      "height": 568,
+      "file": "033.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 351,
+              "width": 358,
+              "height": 40,
+              "top": 351,
+              "right": 374,
+              "bottom": 391,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 399,
+              "width": 358,
+              "height": 40,
+              "top": 399,
+              "right": 374,
+              "bottom": 439,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 390,
+      "height": 568,
+      "file": "034.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 351,
+              "width": 358,
+              "height": 40,
+              "top": 351,
+              "right": 374,
+              "bottom": 391,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 399,
+              "width": 358,
+              "height": 40,
+              "top": 399,
+              "right": 374,
+              "bottom": 439,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 390,
+      "height": 568,
+      "file": "035.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 85.203125,
+          "width": 358,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 374,
+          "bottom": 482.796875,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 332.5,
+              "width": 358,
+              "height": 40,
+              "top": 332.5,
+              "right": 374,
+              "bottom": 372.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 380.5,
+              "width": 358,
+              "height": 40,
+              "top": 380.5,
+              "right": 374,
+              "bottom": 420.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 390,
+      "height": 1100,
+      "file": "036.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 598.5,
+              "width": 358,
+              "height": 40,
+              "top": 598.5,
+              "right": 374,
+              "bottom": 638.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 646.5,
+              "width": 358,
+              "height": 40,
+              "top": 646.5,
+              "right": 374,
+              "bottom": 686.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 390,
+      "height": 1100,
+      "file": "037.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 644,
+              "width": 358,
+              "height": 40,
+              "top": 644,
+              "right": 374,
+              "bottom": 684,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 692,
+              "width": 358,
+              "height": 40,
+              "top": 692,
+              "right": 374,
+              "bottom": 732,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 390,
+      "height": 1100,
+      "file": "038.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 617,
+              "width": 358,
+              "height": 40,
+              "top": 617,
+              "right": 374,
+              "bottom": 657,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 665,
+              "width": 358,
+              "height": 40,
+              "top": 665,
+              "right": 374,
+              "bottom": 705,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 390,
+      "height": 1100,
+      "file": "039.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 617,
+              "width": 358,
+              "height": 40,
+              "top": 617,
+              "right": 374,
+              "bottom": 657,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 665,
+              "width": 358,
+              "height": 40,
+              "top": 665,
+              "right": 374,
+              "bottom": 705,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 390,
+      "height": 1100,
+      "file": "040.png",
+      "metrics": {
+        "root": {
+          "x": 16,
+          "y": 278,
+          "width": 358,
+          "height": 544,
+          "top": 278,
+          "right": 374,
+          "bottom": 822,
+          "left": 16
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 598.5,
+              "width": 358,
+              "height": 40,
+              "top": 598.5,
+              "right": 374,
+              "bottom": 638.5,
+              "left": 16
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 16,
+              "y": 646.5,
+              "width": 358,
+              "height": 40,
+              "top": 646.5,
+              "right": 374,
+              "bottom": 686.5,
+              "left": 16
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 640,
+      "height": 1100,
+      "file": "041.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560,
+              "bottom": 638.5,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560,
+              "bottom": 686.5,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 640,
+      "height": 1100,
+      "file": "042.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 560,
+              "bottom": 684,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 560,
+              "bottom": 732,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 640,
+      "height": 1100,
+      "file": "043.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560,
+              "bottom": 657,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560,
+              "bottom": 705,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 640,
+      "height": 1100,
+      "file": "044.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560,
+              "bottom": 657,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560,
+              "bottom": 705,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 640,
+      "height": 1100,
+      "file": "045.png",
+      "metrics": {
+        "root": {
+          "x": 80,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560,
+          "bottom": 822,
+          "left": 80
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560,
+              "bottom": 638.5,
+              "left": 80
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560,
+              "bottom": 686.5,
+              "left": 80
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 641,
+      "height": 1100,
+      "file": "046.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560.5,
+              "bottom": 638.5,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560.5,
+              "bottom": 686.5,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 641,
+      "height": 1100,
+      "file": "047.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 560.5,
+              "bottom": 684,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 560.5,
+              "bottom": 732,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 641,
+      "height": 1100,
+      "file": "048.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560.5,
+              "bottom": 657,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560.5,
+              "bottom": 705,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 641,
+      "height": 1100,
+      "file": "049.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 560.5,
+              "bottom": 657,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 560.5,
+              "bottom": 705,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 641,
+      "height": 1100,
+      "file": "050.png",
+      "metrics": {
+        "root": {
+          "x": 80.5,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 560.5,
+          "bottom": 822,
+          "left": 80.5
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 560.5,
+              "bottom": 638.5,
+              "left": 80.5
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 80.5,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 560.5,
+              "bottom": 686.5,
+              "left": 80.5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 568,
+      "file": "051.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 332.5,
+              "width": 480,
+              "height": 40,
+              "top": 332.5,
+              "right": 960,
+              "bottom": 372.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 380.5,
+              "width": 480,
+              "height": 40,
+              "top": 380.5,
+              "right": 960,
+              "bottom": 420.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 568,
+      "file": "052.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 378,
+              "width": 480,
+              "height": 40,
+              "top": 378,
+              "right": 960,
+              "bottom": 418,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 426,
+              "width": 480,
+              "height": 40,
+              "top": 426,
+              "right": 960,
+              "bottom": 466,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 568,
+      "file": "053.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 351,
+              "width": 480,
+              "height": 40,
+              "top": 351,
+              "right": 960,
+              "bottom": 391,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 399,
+              "width": 480,
+              "height": 40,
+              "top": 399,
+              "right": 960,
+              "bottom": 439,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 568,
+      "file": "054.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 351,
+              "width": 480,
+              "height": 40,
+              "top": 351,
+              "right": 960,
+              "bottom": 391,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 399,
+              "width": 480,
+              "height": 40,
+              "top": 399,
+              "right": 960,
+              "bottom": 439,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 568,
+      "file": "055.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 85.203125,
+          "width": 480,
+          "height": 397.59375,
+          "top": 85.203125,
+          "right": 960,
+          "bottom": 482.796875,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 332.5,
+              "width": 480,
+              "height": 40,
+              "top": 332.5,
+              "right": 960,
+              "bottom": 372.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 380.5,
+              "width": 480,
+              "height": 40,
+              "top": 380.5,
+              "right": 960,
+              "bottom": 420.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "default",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 1100,
+      "file": "056.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 960,
+              "bottom": 638.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 960,
+              "bottom": 686.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "long-content",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 1100,
+      "file": "057.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "Resultado da sua sessão de prática e revisãoResumo com conteúdo mais longo para conferir leitura, quebra de linha e espaço das ações em telas pequenas, sem calcular ou persistir dados na biblioteca.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 644,
+              "width": 480,
+              "height": 40,
+              "top": 644,
+              "right": 960,
+              "bottom": 684,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 692,
+              "width": 480,
+              "height": 40,
+              "top": 692,
+              "right": 960,
+              "bottom": 732,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "saving",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 1100,
+      "file": "058.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Atualizando progresso...RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 960,
+              "bottom": 657,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 960,
+              "bottom": 705,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "save-error",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 1100,
+      "file": "059.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.Não foi possível atualizar seu progresso agora.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 617,
+              "width": 480,
+              "height": 40,
+              "top": 617,
+              "right": 960,
+              "bottom": 657,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 665,
+              "width": 480,
+              "height": 40,
+              "top": 665,
+              "right": 960,
+              "bottom": 705,
+              "left": 480
+            }
+          }
+        ]
+      }
+    },
+    {
+      "story": "focused",
+      "motion": "reduced",
+      "width": 1440,
+      "height": 1100,
+      "file": "060.png",
+      "metrics": {
+        "root": {
+          "x": 480,
+          "y": 278,
+          "width": 480,
+          "height": 544,
+          "top": 278,
+          "right": 960,
+          "bottom": 822,
+          "left": 480
+        },
+        "text": "ResultadoVocê acertou 1 de 2 questões.RefazerVoltar para lista",
+        "overflow": false,
+        "animation": "none",
+        "buttons": [
+          {
+            "text": "Refazer",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 598.5,
+              "width": 480,
+              "height": 40,
+              "top": 598.5,
+              "right": 960,
+              "bottom": 638.5,
+              "left": 480
+            }
+          },
+          {
+            "text": "Voltar para lista",
+            "type": "button",
+            "rect": {
+              "x": 480,
+              "y": 646.5,
+              "width": 480,
+              "height": 40,
+              "top": 646.5,
+              "right": 960,
+              "bottom": 686.5,
+              "left": 480
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

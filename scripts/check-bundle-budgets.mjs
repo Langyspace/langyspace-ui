@@ -42,6 +42,7 @@ for (const entry of [
   'quiz',
   'rating',
   'playback',
+  'resultPanel',
   'toasts',
 ]) {
   const result = await build({

@@ -25,6 +25,40 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'PracticeResultPanel',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/PracticeResultPanel/index.tsx',
+    runtimeMarker: 'lsui-sc-practice-result-panel',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'src/molecules/PracticeResultPanel/PracticeResultPanel.stories.tsx',
+      title: 'Molecules/PracticeResultPanel',
+    },
+    test: {
+      ...complete,
+      path: 'src/molecules/PracticeResultPanel/PracticeResultPanel.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/PracticeResultPanel/types.ts',
+      documentation: { path: 'README.md', anchor: 'practiceresultpanel' },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'QuizSessionHeader',
     interactive: true,
     layer: 'molecule',

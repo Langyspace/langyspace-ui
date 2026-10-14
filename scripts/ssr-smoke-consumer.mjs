@@ -43,6 +43,7 @@ const {
   PracticeCardSkeletonBody,
   PracticeProgressBar,
   PracticeCardBody,
+  PracticeResultPanel,
   QuizSessionHeader,
   QuizOption,
   PracticePlaybackControls,
@@ -110,6 +111,15 @@ try {
           QuizOption,
           { letter: 'A', state: 'correct', disabled: true },
           'Yes',
+        ),
+        createElement(
+          PracticeResultPanel,
+          {
+            title: 'SSR result',
+            description: 'Done',
+            actions: createElement(Button, { type: 'button' }, 'Return'),
+          },
+          createElement('p', null, 'Consumer metrics'),
         ),
         createElement(QuizSessionHeader, {
           name: 'SSR quiz',
@@ -399,6 +409,7 @@ if (!markup.includes('lsui-sc-state-panel')) {
 for (const componentId of [
   'lsui-sc-calendar-controls',
   'lsui-sc-practice-card-body',
+  'lsui-sc-practice-result-panel',
   'lsui-sc-quiz-session-header',
   'lsui-sc-quiz-option',
   'lsui-sc-practice-playback-controls',

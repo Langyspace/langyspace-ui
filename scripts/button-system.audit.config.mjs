@@ -22,6 +22,13 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Practice completion',
+      path: 'src/molecules/PracticeResultPanel/styles.ts',
+      reason:
+        'finite 320ms completion-mark entrance from Student, shared with Teacher, explicitly disabled with reduced motion; actions and metrics stay still',
+      expiresAt: '2027-04-14',
+    },
+    {
       owner: 'Practice rating',
       path: 'src/molecules/FlashcardRatingButton/styles.ts',
       reason:

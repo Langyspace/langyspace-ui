@@ -1,27 +1,15 @@
-# Handoff — execução contínua, R16
+# Handoff atual — R26 para revisão
 
-Atualizado em 2026-10-13. R14 integrada: UI #12 7f52499, Student #10 3e7af8f, Teacher #34 929240c.
-UI 1.12.0 oficial comparada ao candidato: 295 arquivos idênticos e checksum confirmado. Produtos
-via staging; pipelines iniciados, produção não verificada. 25 PRs históricos integrados.
+R25 encerrou com publicação manual da UI1.20.0 e dos dois portais. O pedido “Aprovado, segue para o próximo” autoriza a preparação deste recorte; não constitui aceite visual de R26.
 
-Autorização atual da owner: criar PRs, integrar e avançar até terminar este épico. A dispensa de
-nova pausa por rodada se limita a este lote; UI primeiro, tabelas Antes/Depois, API simples,
-custo-benefício e staging permanecem. Ver autorizacao-execucao-continua.md; sem review fictício.
+Novo owner: PracticeResultPanel, proposta1.21.0. Quatro props de composição; métricas, controles, áudio, fluxo e persistência ficam em Student/Teacher. Admin/Site/Cupom não têm equivalente ativo. Discovery, concessões e plano estão em [r26](r26/epic.md); recibo/mapa do pacote e [validação](r26/validation.md) acompanham a revisão.
 
-R13 label/value e R15 CopyAction adiados por custo-benefício. R16 PhoneField preparada na UI #13,
-56 PNGs originais e oito testes focados, build/API/bundle. Candidato 1.13.0 exclusivo dos previews.
-Máscara/E.164/countries/caret/paste/validação continuam nos produtos. Concessões pequenas de
-contraste e foco/teclado documentadas em r16/technical-plan.md, sem alterar dimensões.
+S01/S02 concluídas. Implementações e evidências S03 preparadas:60 PNGs de stories,140 pares Student e100 Teacher. A geometria/conteúdo/estados coincidem; rasterização pequena e movimento documentados. Cópias públicas sanitizadas ficam em q26s/q26t, com proveniência. A UI prepara o componente e candidato antes dos PRs de adoção; produtos usam drafts até o artefato oficial aprovado.
 
-Próxima subtarefa única: R16 D03 — capturar Before das quatro telas Student e duas Teacher com
-staging oficial, preparar adapters e After; não abrir adoção com evidência incompleta. Biblioteca
-é preparada primeiro; a autorização já permite integrar #13 e iniciar release enquanto as
-adoções são concretizadas. Não promover candidatos em staging.
+Limitações explícitas: lint preexistente Student em shadowing, reproduzido no baseline no trecho inalterado; ações parcialmente cobertas pela bottom nav Teacher em390×568 já antes da mudança. Não tratar essas superfícies como corrigidas por este painel.
 
-Preservar analytics local em snapshots recovery/ui-r14-{student,teacher}-canonical-20261013 e
-worktrees persistentes. Student canônico limpo e alinhado; Teacher contém docs de event-archive
-criadas em paralelo e foi mantido intacto, com cópia verificada. Não mover trabalho ativo de outro
-lote. Registros completos em .local/langyspace-ui-library-continuous/integration-20261013.
+Próxima tarefa única: revisão humana das três revisões concretas; somente depois concluir UI oficial e adoções com publicação manual, staging validada, fast-forward main e leitura dos assets em produção. GitHub permanece em modo manual por cobrança; commits [skip ci], sem modificar workflows/proteções e sem fabricar checks. Nenhum merge/release oficial/deploy R26 nesta preparação.
 
-Visual gate review: accepted by human — integração contínua expressamente autorizada pela owner;
-sem alegar revisão manual das imagens futuras.
+Branch feat/ui-r26-practice-result-panel. Links e SHAs finais dos PRs serão registrados no handoff local de retomada após a publicação das branches. Worktrees anteriores e trabalho paralelo preservados.
+
+Visual gate review: pending human

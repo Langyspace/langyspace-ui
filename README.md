@@ -980,3 +980,38 @@ questões, áudio, navegação, resultado e persistência. Não depende de Theme
 
 O contador usa o token de texto muted para contraste. A barra existente limita progresso a 0–1,
 trata valores não finitos como zero e suprime transição quando prefers-reduced-motion é reduce.
+
+## PracticeResultPanel
+
+Painel de conclusão de prática: title (h2), description (conteúdo do parágrafo), children
+(métricas e parágrafos de status locais) e actions (controles do consumidor na ordem desejada).
+O check é decorativo e indica conclusão; não informa acerto. Nenhum cálculo de pontuação,
+persistência, rota ou callback de negócio pertence ao componente.
+
+```tsx
+<PracticeResultPanel
+  title="Resultado"
+  description={
+    <>
+      Você acertou <strong>{correct}</strong> questões.
+    </>
+  }
+  actions={
+    <>
+      <Button type="button" onClick={retry}>
+        Refazer
+      </Button>
+      <Button type="button" variant="secondary" onClick={close}>
+        Voltar para lista
+      </Button>
+    </>
+  }
+>
+  <ProductMetrics />
+  {saving && <p>Atualizando progresso...</p>}
+</PracticeResultPanel>
+```
+
+O painel mantém a largura e o frame do produto, com min-height min(70svh,34rem). Parágrafos
+diretos de children recebem a mesma tipografia da descrição. O ícone entra em320ms, e
+prefers-reduced-motion reduce suprime a animação; sem prop de animação ou skin.

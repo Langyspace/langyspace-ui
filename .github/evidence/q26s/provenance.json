@@ -1,0 +1,3214 @@
+{
+  "round": "R26",
+  "product": "student",
+  "beforeCommit": "e252a7a0e5e4d3f1c4437a89546de5ea8a148d5e",
+  "afterOwnedSourceSha256": {
+    "src/components/features/portal/index.tsx": "13463cbb9012c72aac76e81411f9bbb11a71e17404cceff7bf3e585f01b7a8fd",
+    "src/components/features/portal/styles.ts": "5f27de2dd3e91403856c9f48587a0fe3e1f207a1d9e1640452be4c57d0d2fa55"
+  },
+  "package": "e7c48db5c48dd60187c94450c32059ef5b0dbc8e15e699df9aa2ede92a4d52cc",
+  "uiRuntimeSha256": "68c07c3f68a78179efb9a50d6961a0115464fabbcece4c9bedb378bb0fd477f0",
+  "fixture": "Synthetic two-question activities; external network blocked; original full-route PNGs; no image edits. Product controllers unchanged.",
+  "matrices": {
+    "before": {
+      "records": [
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "001.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "002.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "003.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "004.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "005.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "006.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "007.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "008.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "009.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "010.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "011.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "012.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "013.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "014.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "015.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "016.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "017.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "018.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "019.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "020.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "021.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "022.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "023.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "024.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "025.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "026.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "027.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "028.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "029.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "030.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "031.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "032.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "033.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "034.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "035.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "036.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "037.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "038.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "039.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "040.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "041.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "042.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "043.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "044.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "045.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "046.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "047.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "048.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "049.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "050.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "051.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "052.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "053.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "054.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "055.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "056.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "057.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "058.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "059.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "060.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "061.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "062.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "063.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "064.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "065.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "066.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "067.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "068.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "069.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "070.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "071.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "072.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "073.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "074.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "075.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "076.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "077.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "078.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "079.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "080.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "081.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "082.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "083.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "084.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "085.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "086.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "087.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "088.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "089.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "090.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "091.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "092.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "093.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "094.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "095.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "096.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "097.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "098.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "099.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "100.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "101.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "102.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "103.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "104.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "105.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "106.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "107.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "108.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "109.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "110.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "111.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "112.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "113.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "114.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "115.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "116.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "117.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "118.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "119.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "120.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "121.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "122.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "123.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "124.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "125.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "126.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "127.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "128.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "129.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "130.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "131.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "132.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "133.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "134.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "135.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "136.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "137.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "138.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "139.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "140.png"
+        }
+      ]
+    },
+    "after": {
+      "records": [
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "001.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "002.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "003.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "004.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "005.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "006.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "007.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "008.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "009.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "010.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "011.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "012.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "013.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "014.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "015.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "016.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "017.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "018.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "019.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "020.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "021.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "022.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "023.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "024.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "025.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "026.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "027.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "028.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "029.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "030.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "031.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "032.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "033.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "034.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "035.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "036.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "037.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "038.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "039.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "040.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "041.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "042.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "043.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "044.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "045.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "046.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "047.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "048.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "049.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "050.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "051.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "052.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "053.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "054.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "055.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 390,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "056.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "057.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "058.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "059.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "060.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "061.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "062.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "063.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "064.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "065.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "066.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "067.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "068.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "069.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 640,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "070.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "071.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "072.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "073.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "074.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "075.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "076.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "077.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "078.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "079.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "080.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "081.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "082.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "083.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 641,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "084.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "085.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "086.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "087.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "088.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "089.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "090.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "091.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "092.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "093.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "094.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "095.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "096.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "097.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "098.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "099.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "100.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "101.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "102.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "103.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "104.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "105.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "106.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "107.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "108.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "109.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "110.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "111.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 568,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "112.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "113.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "114.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "115.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "116.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "117.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "118.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "119.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-0",
+          "image": "120.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-1",
+          "image": "121.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "result-2",
+          "image": "122.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "retry-focus",
+          "image": "123.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "return-focus",
+          "image": "124.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-pending",
+          "image": "125.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "normal",
+          "state": "completion-error",
+          "image": "126.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "127.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "128.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "129.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "130.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "131.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "132.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "quiz",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "133.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-0",
+          "image": "134.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-1",
+          "image": "135.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "result-2",
+          "image": "136.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "retry-focus",
+          "image": "137.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "return-focus",
+          "image": "138.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-pending",
+          "image": "139.png"
+        },
+        {
+          "route": "/licoes",
+          "tab": "personalized",
+          "width": 1440,
+          "height": 1100,
+          "motion": "reduced",
+          "state": "completion-error",
+          "image": "140.png"
+        }
+      ]
+    }
+  },
+  "comparison": {
+    "pairs": 140,
+    "geometryAndTextIdentical": true,
+    "pngPixelDifferences": [
+      {
+        "image": "004.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 30,
+        "box": [16, 477, 373, 488]
+      },
+      {
+        "image": "015.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "016.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "017.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "018.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 190, 236, 259]
+      },
+      {
+        "image": "019.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 190, 236, 259]
+      },
+      {
+        "image": "020.png",
+        "state": "completion-pending",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 174, 236, 243]
+      },
+      {
+        "image": "021.png",
+        "state": "completion-error",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 174, 236, 243]
+      },
+      {
+        "image": "022.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "023.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "024.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 89,
+        "box": [153, 193, 236, 262]
+      },
+      {
+        "image": "025.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 190, 236, 259]
+      },
+      {
+        "image": "026.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 190, 236, 259]
+      },
+      {
+        "image": "027.png",
+        "state": "completion-pending",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 174, 236, 243]
+      },
+      {
+        "image": "028.png",
+        "state": "completion-error",
+        "width": 390,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 174, 236, 243]
+      },
+      {
+        "image": "029.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 44,
+        "box": [16, 557, 373, 578]
+      },
+      {
+        "image": "031.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 44,
+        "box": [16, 557, 373, 578]
+      },
+      {
+        "image": "034.png",
+        "state": "completion-pending",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 64,
+        "box": [16, 535, 373, 586]
+      },
+      {
+        "image": "039.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 44,
+        "box": [16, 557, 373, 578]
+      },
+      {
+        "image": "043.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "044.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "045.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "046.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 81,
+        "box": [26, 270, 363, 578]
+      },
+      {
+        "image": "047.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "048.png",
+        "state": "completion-pending",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 96,
+        "box": [153, 248, 236, 321]
+      },
+      {
+        "image": "049.png",
+        "state": "completion-error",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 96,
+        "box": [153, 248, 236, 321]
+      },
+      {
+        "image": "050.png",
+        "state": "result-0",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "051.png",
+        "state": "result-1",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "052.png",
+        "state": "result-2",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "053.png",
+        "state": "retry-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "054.png",
+        "state": "return-focus",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 67,
+        "box": [153, 270, 236, 339]
+      },
+      {
+        "image": "055.png",
+        "state": "completion-pending",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 96,
+        "box": [153, 248, 236, 321]
+      },
+      {
+        "image": "056.png",
+        "state": "completion-error",
+        "width": 390,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 96,
+        "box": [153, 248, 236, 321]
+      },
+      {
+        "image": "062.png",
+        "state": "completion-pending",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 64,
+        "box": [80, 535, 559, 586]
+      },
+      {
+        "image": "063.png",
+        "state": "completion-error",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 44,
+        "box": [80, 565, 559, 586]
+      },
+      {
+        "image": "069.png",
+        "state": "completion-pending",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 64,
+        "box": [80, 535, 559, 586]
+      },
+      {
+        "image": "070.png",
+        "state": "completion-error",
+        "width": 640,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 44,
+        "box": [80, 565, 559, 586]
+      },
+      {
+        "image": "074.png",
+        "state": "retry-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 14,
+        "box": [91, 590, 550, 592]
+      },
+      {
+        "image": "080.png",
+        "state": "result-2",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 7,
+        "box": [91, 590, 96, 592]
+      },
+      {
+        "image": "081.png",
+        "state": "retry-focus",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 15,
+        "box": [558, 571, 560, 582]
+      },
+      {
+        "image": "083.png",
+        "state": "completion-pending",
+        "width": 641,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 32,
+        "box": [558, 549, 560, 600]
+      },
+      {
+        "image": "085.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 11,
+        "box": [81, 74, 139, 351]
+      },
+      {
+        "image": "087.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [81, 349, 90, 351]
+      },
+      {
+        "image": "088.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 30,
+        "box": [81, 349, 1083, 557]
+      },
+      {
+        "image": "089.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "normal",
+        "changedPixels": 3,
+        "box": [81, 349, 90, 351]
+      },
+      {
+        "image": "099.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 262, 802, 263]
+      },
+      {
+        "image": "100.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 262, 802, 263]
+      },
+      {
+        "image": "101.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 262, 802, 263]
+      },
+      {
+        "image": "102.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 262, 802, 263]
+      },
+      {
+        "image": "103.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 262, 802, 263]
+      },
+      {
+        "image": "104.png",
+        "state": "completion-pending",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 28,
+        "box": [807, 219, 881, 230]
+      },
+      {
+        "image": "105.png",
+        "state": "completion-error",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 36,
+        "box": [108, 74, 881, 230]
+      },
+      {
+        "image": "106.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 147, 802, 148]
+      },
+      {
+        "image": "107.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 147, 802, 148]
+      },
+      {
+        "image": "108.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 147, 802, 148]
+      },
+      {
+        "image": "109.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 147, 802, 148]
+      },
+      {
+        "image": "110.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 2,
+        "box": [802, 147, 802, 148]
+      },
+      {
+        "image": "111.png",
+        "state": "completion-pending",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 3,
+        "box": [807, 113, 881, 115]
+      },
+      {
+        "image": "112.png",
+        "state": "completion-error",
+        "width": 1440,
+        "height": 568,
+        "motion": "reduced",
+        "changedPixels": 3,
+        "box": [807, 113, 881, 115]
+      },
+      {
+        "image": "116.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "normal",
+        "changedPixels": 27,
+        "box": [604, 652, 1083, 663]
+      },
+      {
+        "image": "127.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "128.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "129.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "130.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "131.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "132.png",
+        "state": "completion-pending",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 59,
+        "box": [802, 56, 1311, 351]
+      },
+      {
+        "image": "133.png",
+        "state": "completion-error",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 59,
+        "box": [802, 56, 1311, 351]
+      },
+      {
+        "image": "134.png",
+        "state": "result-0",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "135.png",
+        "state": "result-1",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "136.png",
+        "state": "result-2",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "137.png",
+        "state": "retry-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "138.png",
+        "state": "return-focus",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 60,
+        "box": [802, 56, 1311, 381]
+      },
+      {
+        "image": "139.png",
+        "state": "completion-pending",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 66,
+        "box": [614, 56, 1311, 692]
+      },
+      {
+        "image": "140.png",
+        "state": "completion-error",
+        "width": 1440,
+        "height": 1100,
+        "motion": "reduced",
+        "changedPixels": 59,
+        "box": [802, 56, 1311, 351]
+      }
+    ]
+  }
+}
