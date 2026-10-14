@@ -961,3 +961,22 @@ Receita responsive comum; nenhuma configuração por portal.
 View controlada: playing/playLabel/onPlay, skipAction opcional, speed/speedOptions/onSpeedChange,
 translationVisible/onTranslationToggle. A UI não toca áudio nem calcula progresso/repetições.
 O consumidor fornece labels e mantém engine, cleanup, reader e persistência.
+
+## QuizSessionHeader
+
+Cabeçalho compartilhado de quiz com retorno nativo, nome truncado, contador e PracticeProgressBar.
+Cinco props controladas: name, counter, progress, backLabel e onBack. O produto mantém shell,
+questões, áudio, navegação, resultado e persistência. Não depende de ThemeProvider ou CSS vars locais.
+
+```tsx
+<QuizSessionHeader
+  name="Gramática — rotina"
+  counter="2 de 8"
+  progress={0.25}
+  backLabel="Voltar"
+  onBack={closeSession}
+/>
+```
+
+O contador usa o token de texto muted para contraste. A barra existente limita progresso a 0–1,
+trata valores não finitos como zero e suprime transição quando prefers-reduced-motion é reduce.

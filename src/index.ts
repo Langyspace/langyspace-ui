@@ -209,3 +209,6 @@ export type {
 
 export { PracticePlaybackControls } from './molecules/PracticePlaybackControls'
 export type { PracticePlaybackControlsProps } from './molecules/PracticePlaybackControls'
+
+export { QuizSessionHeader } from './molecules/QuizSessionHeader'
+export type { QuizSessionHeaderProps } from './molecules/QuizSessionHeader'

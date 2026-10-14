@@ -1,0 +1,932 @@
+{
+  "phase": "after",
+  "product": "teacher",
+  "baseline": "719a154ceb87fad4d4c1d1adcc4f7fea2cfb885c",
+  "fixture": "Synthetic two-question activities, real controllers, fixture-only completion success/pending/error; external network blocked.",
+  "records": [
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "loading",
+      "image": "001.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "002.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "loading",
+      "image": "003.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "004.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "005.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 390,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "006.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "007.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 390,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "008.png",
+      "metrics": {
+        "header": {
+          "x": 36,
+          "y": 162,
+          "width": 318,
+          "height": 62,
+          "top": 162,
+          "right": 354,
+          "bottom": 224,
+          "left": 36
+        },
+        "back": {
+          "x": 44,
+          "y": 178,
+          "width": 38,
+          "height": 38,
+          "top": 178,
+          "right": 82,
+          "bottom": 216,
+          "left": 44
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "loading",
+      "image": "009.png",
+      "metrics": {
+        "header": {
+          "x": 80,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560,
+          "bottom": 221,
+          "left": 80
+        },
+        "back": {
+          "x": 88,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 126,
+          "bottom": 213,
+          "left": 88
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 640,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "010.png",
+      "metrics": {
+        "header": {
+          "x": 80,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560,
+          "bottom": 221,
+          "left": 80
+        },
+        "back": {
+          "x": 88,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 126,
+          "bottom": 213,
+          "left": 88
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "loading",
+      "image": "011.png",
+      "metrics": {
+        "header": {
+          "x": 80,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560,
+          "bottom": 221,
+          "left": 80
+        },
+        "back": {
+          "x": 88,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 126,
+          "bottom": 213,
+          "left": 88
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 640,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "012.png",
+      "metrics": {
+        "header": {
+          "x": 80,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560,
+          "bottom": 221,
+          "left": 80
+        },
+        "back": {
+          "x": 88,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 126,
+          "bottom": 213,
+          "left": 88
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 641,
+      "motion": "normal",
+      "state": "loading",
+      "image": "013.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 641,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "014.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 641,
+      "motion": "normal",
+      "state": "loading",
+      "image": "015.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 641,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "016.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 641,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "017.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 641,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "018.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 641,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "019.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 641,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "020.png",
+      "metrics": {
+        "header": {
+          "x": 80.5,
+          "y": 159,
+          "width": 480,
+          "height": 62,
+          "top": 159,
+          "right": 560.5,
+          "bottom": 221,
+          "left": 80.5
+        },
+        "back": {
+          "x": 96.5,
+          "y": 175,
+          "width": 38,
+          "height": 38,
+          "top": 175,
+          "right": 134.5,
+          "bottom": 213,
+          "left": 96.5
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "loading",
+      "image": "021.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "022.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "loading",
+      "image": "023.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "normal",
+      "state": "loading-back-focus",
+      "image": "024.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "025.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "quiz",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "026.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "loading",
+      "image": "027.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    },
+    {
+      "route": "/alunos/student-fixture/licoes",
+      "tab": "personalized",
+      "width": 1440,
+      "motion": "reduced",
+      "state": "loading-back-focus",
+      "image": "028.png",
+      "metrics": {
+        "header": {
+          "x": 604,
+          "y": 128,
+          "width": 480,
+          "height": 62,
+          "top": 128,
+          "right": 1084,
+          "bottom": 190,
+          "left": 604
+        },
+        "back": {
+          "x": 620,
+          "y": 144,
+          "width": 38,
+          "height": 38,
+          "top": 144,
+          "right": 658,
+          "bottom": 182,
+          "left": 620
+        },
+        "overflow": false,
+        "text": "Modo prévia, não altera o progresso do alunoGramática — rotina e situações de trabalho com conteúdo longo para revisarCarregando",
+        "options": []
+      }
+    }
+  ]
+}
