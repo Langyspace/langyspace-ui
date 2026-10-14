@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { PracticeResultMark, PracticeResultTitle, PracticeResultDescription, PracticeResultActions, BrandLogo, AuthBrandTitle, AuthBrandAccent, AuthBrandDescription, AuthFeatureList, AuthBrandFooter, AuthMobileFooter, AuthFooterLink, AuthFeature, DocumentHeader, DocumentHeaderContent, DocumentNavigation, BrandLink, DocumentNavigationLink, FormStack, FieldLabelRow, FieldCounter, FormError, FormActions, FilterSelect, FileInput, InlineNotice, StatCard, StatValue, StatLabel, StatAction, DefinitionItem, DetailRow, TextButton, MetricSummary, MetricValue, MetricLabel, SidebarFrame, SidebarNavigation, NavigationLink, NavigationButton, NotificationItem, ConversationRow, BottomNavigation, BottomNavigationLink, CalendarScroller, CalendarMonthGrid, CalendarWeekGrid, CalendarDay, CalendarDayNumber, CalendarEvent, TimelineEvent, FlashcardFrame, FlashcardStage, FlashcardDeck, FlashcardFront, FlashcardImagePanel, FlashcardWord, FlashcardBack, FlashcardFlipHint, FlashcardFace, FlashcardGhost, FlashcardFlip, FlashcardSwiper, FlashcardFeedback, KeyValueList, GroupedBarChart, WeeklyCountChart, Checkbox, RadioButton, ToggleButton, ChoiceCard, Skeleton, ShadowingReader, ShadowingPhraseStack, ShadowingContextPhrase, ShadowingActivePhrase, ShadowingTranslation, ShadowingControlDock, ShadowingControlCluster, ShadowingContext, ShadowingRepetitions, AuthChannelHint, AuthChannelIcon, AuthTokenLabel, AuthLegalText, PageTitle, PageDescription, SessionProgress, CalendarTimeSlot, ScheduleRow, PracticeCard, PracticeCardCover, PracticeLevelBadge, PracticeCoverValue, PracticeCoverLabel, QuizQuestion, QuizBlank, FlashcardProgressTrack, FlashcardCounter, QuizPromptHeader, QuizMetadata, QuizBadge, ConnectionNotice, FlashcardProgressSegment, CardLink, ShadowingWord, AuthEyebrow, AuthTopLinkHighlight, AuthForm, AuthBackButton, AuthResendAction, AuthResendButton, AuthSuccessIcon, AuthProgress, AuthSubmitButton, AuthTopLink, AuthSuccessState, PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -125,7 +125,29 @@ createRoot(document.getElementById('root')!).render(
     <PracticeProgressBar value={0.375} />
     <FlashcardRatingButton grade="good" interval="4 days" selected>Good</FlashcardRatingButton>
     <PracticePlaybackControls playing={false} playLabel="Play" onPlay={()=>{}} speed="1x" speedOptions={["1x"]} onSpeedChange={()=>{}} translationVisible={false} onTranslationToggle={()=>{}} />
-    <PracticeResultPanel title="Package result" description="Done" actions={<Button type="button">Return</Button>}><p>Consumer metrics</p></PracticeResultPanel>
+    <BrandLogo width={144}/><AuthBrandTitle>Package AuthBrandTitle</AuthBrandTitle><AuthBrandAccent>Package AuthBrandAccent</AuthBrandAccent><AuthBrandDescription>Package AuthBrandDescription</AuthBrandDescription><AuthFeatureList><li>Package feature</li></AuthFeatureList><AuthBrandFooter>Package AuthBrandFooter</AuthBrandFooter><AuthMobileFooter>Package AuthMobileFooter</AuthMobileFooter><AuthFooterLink>Package AuthFooterLink</AuthFooterLink><ul><AuthFeature>Package AuthFeature</AuthFeature></ul><DocumentHeader>Package DocumentHeader</DocumentHeader><DocumentHeaderContent>Package DocumentHeaderContent</DocumentHeaderContent><DocumentNavigation>Package DocumentNavigation</DocumentNavigation><BrandLink href="/termos">Termos</BrandLink><DocumentNavigationLink href="/termos">Termos</DocumentNavigationLink>
+    <FormStack>Package FormStack</FormStack><FieldLabelRow>Package FieldLabelRow</FieldLabelRow><FieldCounter>Package FieldCounter</FieldCounter><FormError>Package FormError</FormError><FormActions>Package FormActions</FormActions>
+    <FilterSelect aria-label="Package filter"><option>Todos</option></FilterSelect><FileInput aria-label="Package file"/>
+    <InlineNotice>Package InlineNotice</InlineNotice>
+    <StatCard>Package StatCard</StatCard><StatValue>Package StatValue</StatValue><StatLabel>Package StatLabel</StatLabel><StatAction>Package StatAction</StatAction><DefinitionItem label="Identificador" value="Valor completo"/><DetailRow label="Contato" value="Valor"/><TextButton>Package TextButton</TextButton>
+    <MetricSummary>Package MetricSummary</MetricSummary><MetricValue>Package MetricValue</MetricValue><MetricLabel>Package MetricLabel</MetricLabel>
+    <SidebarFrame>Package SidebarFrame</SidebarFrame><SidebarNavigation>Package SidebarNavigation</SidebarNavigation><NavigationLink href="#nav">Navegação</NavigationLink><NavigationButton>Package NavigationButton</NavigationButton><NotificationItem avatar="LS" title="Aviso" description="Texto" meta="Agora"/><ConversationRow avatar="LS" title="Conversa" preview="Mensagem"/>
+    <BottomNavigation>Package BottomNavigation</BottomNavigation><BottomNavigationLink href="#home">Início</BottomNavigationLink>
+    <CalendarScroller>Package CalendarScroller</CalendarScroller><CalendarMonthGrid>Package CalendarMonthGrid</CalendarMonthGrid><CalendarWeekGrid>Package CalendarWeekGrid</CalendarWeekGrid><CalendarDay>Package CalendarDay</CalendarDay><CalendarDayNumber>Package CalendarDayNumber</CalendarDayNumber><CalendarEvent>Package CalendarEvent</CalendarEvent><TimelineEvent>Package TimelineEvent</TimelineEvent>
+    <FlashcardFrame>Package FlashcardFrame</FlashcardFrame><FlashcardStage>Package FlashcardStage</FlashcardStage><FlashcardDeck>Package FlashcardDeck</FlashcardDeck><FlashcardFront>Package FlashcardFront</FlashcardFront><FlashcardImagePanel>Package FlashcardImagePanel</FlashcardImagePanel><FlashcardWord>Package FlashcardWord</FlashcardWord><FlashcardBack>Package FlashcardBack</FlashcardBack><FlashcardFlipHint>Package FlashcardFlipHint</FlashcardFlipHint><FlashcardFace>Package FlashcardFace</FlashcardFace><FlashcardGhost layer={1}/><FlashcardFlip>Package FlashcardFlip</FlashcardFlip><FlashcardSwiper>Package FlashcardSwiper</FlashcardSwiper><FlashcardFeedback>Package FlashcardFeedback</FlashcardFeedback>
+    <KeyValueList items={[{id:"a",label:"Origem",value:"123"}]}/><GroupedBarChart aria-label="Evolução" items={[{id:"a",label:"Seg",description:"12 cliques",values:[12,2]}]}/><WeeklyCountChart items={[{id:"a",label:"S",value:2}]}/>
+    <Checkbox aria-label="Selecionar checkbox"/><RadioButton aria-label="Selecionar radio"/><ToggleButton>Package ToggleButton</ToggleButton><ChoiceCard>Package ChoiceCard</ChoiceCard><Skeleton style={{width:120,height:16}}/>
+    <ShadowingReader>Package ShadowingReader</ShadowingReader><ShadowingPhraseStack>Package ShadowingPhraseStack</ShadowingPhraseStack><ShadowingContextPhrase>Package ShadowingContextPhrase</ShadowingContextPhrase><ShadowingActivePhrase>Package ShadowingActivePhrase</ShadowingActivePhrase><ShadowingTranslation>Package ShadowingTranslation</ShadowingTranslation><ShadowingControlDock>Package ShadowingControlDock</ShadowingControlDock><ShadowingControlCluster>Package ShadowingControlCluster</ShadowingControlCluster><ShadowingContext>Package ShadowingContext</ShadowingContext><ShadowingRepetitions total={3} value={1}>1/3 escutas</ShadowingRepetitions>
+    <AuthChannelHint>Package AuthChannelHint</AuthChannelHint><AuthChannelIcon>Package AuthChannelIcon</AuthChannelIcon><AuthTokenLabel>Package AuthTokenLabel</AuthTokenLabel><AuthLegalText>Package AuthLegalText</AuthLegalText><PageTitle>Package PageTitle</PageTitle><PageDescription>Package PageDescription</PageDescription><SessionProgress name="Atividade" counter="1/3" value={.3}/>
+    <CalendarTimeSlot aria-label="Horário"/>
+    <ScheduleRow time="10:00" participant="Pessoa"/>
+    <PracticeCard>Package PracticeCard</PracticeCard><PracticeCardCover>Package PracticeCardCover</PracticeCardCover><PracticeLevelBadge>Package PracticeLevelBadge</PracticeLevelBadge><PracticeCoverValue>Package PracticeCoverValue</PracticeCoverValue><PracticeCoverLabel>Package PracticeCoverLabel</PracticeCoverLabel>
+    <QuizQuestion>Package QuizQuestion</QuizQuestion><QuizBlank/>
+    <FlashcardProgressTrack>Package FlashcardProgressTrack</FlashcardProgressTrack><FlashcardCounter>Package FlashcardCounter</FlashcardCounter><QuizPromptHeader>Package QuizPromptHeader</QuizPromptHeader><QuizMetadata>Package QuizMetadata</QuizMetadata><QuizBadge>Package QuizBadge</QuizBadge><ConnectionNotice>Package ConnectionNotice</ConnectionNotice><FlashcardProgressSegment state="done"/>
+    <CardLink href="/details">Detalhes</CardLink>
+    <ShadowingWord state="current">practice</ShadowingWord>
+    <AuthEyebrow>Área de acesso</AuthEyebrow><AuthTopLink href="/cadastro">Cadastro <AuthTopLinkHighlight>Entrar</AuthTopLinkHighlight></AuthTopLink><AuthForm aria-label="Package auth form"><AuthBackButton>Voltar</AuthBackButton><AuthSubmitButton>Continuar</AuthSubmitButton></AuthForm><AuthResendAction><AuthResendButton>Reenviar</AuthResendButton></AuthResendAction><AuthSuccessState><AuthSuccessIcon/><AuthProgress/></AuthSuccessState>
+    <PracticeResultPanel><PracticeResultMark/><PracticeResultTitle>Package result</PracticeResultTitle><PracticeResultDescription>Done</PracticeResultDescription><p>Consumer metrics</p><PracticeResultActions><Button type="button">Return</Button></PracticeResultActions></PracticeResultPanel>
     <QuizSessionHeader name="Package quiz" counter="1 de 8" progress={0.125} backLabel="Back to list" onBack={() => undefined} />
     <QuizOption letter="A" state="correct" disabled>Yes</QuizOption>
     <QuizFeedback tone="wrong">Review</QuizFeedback>
@@ -339,6 +361,123 @@ try {
 
   for (const componentId of [
     'lsui-sc-practice-result-panel',
+    'lsui-sc-shadowing-word',
+    'lsui-sc-card-link',
+    'lsui-sc-flashcard-progress-segment',
+    'lsui-sc-connection-notice',
+    'lsui-sc-quiz-badge',
+    'lsui-sc-quiz-metadata',
+    'lsui-sc-quiz-prompt-header',
+    'lsui-sc-flashcard-counter',
+    'lsui-sc-flashcard-progress-track',
+    'lsui-sc-quiz-blank',
+    'lsui-sc-quiz-question',
+    'lsui-sc-practice-cover-label',
+    'lsui-sc-practice-cover-value',
+    'lsui-sc-practice-level-badge',
+    'lsui-sc-practice-card-cover',
+    'lsui-sc-practice-card',
+    'lsui-sc-schedule-row',
+    'lsui-sc-calendar-time-slot',
+    'lsui-sc-session-progress',
+    'lsui-sc-page-description',
+    'lsui-sc-page-title',
+    'lsui-sc-auth-legal-text',
+    'lsui-sc-auth-token-label',
+    'lsui-sc-auth-channel-icon',
+    'lsui-sc-auth-channel-hint',
+    'lsui-sc-shadowing-repetitions',
+    'lsui-sc-shadowing-context',
+    'lsui-sc-shadowing-control-cluster',
+    'lsui-sc-shadowing-control-dock',
+    'lsui-sc-shadowing-translation',
+    'lsui-sc-shadowing-active-phrase',
+    'lsui-sc-shadowing-context-phrase',
+    'lsui-sc-shadowing-phrase-stack',
+    'lsui-sc-shadowing-reader',
+    'lsui-sc-skeleton',
+    'lsui-sc-choice-card',
+    'lsui-sc-toggle-button',
+    'lsui-sc-radio-button',
+    'lsui-sc-checkbox',
+    'lsui-sc-weekly-count-chart',
+    'lsui-sc-grouped-bar-chart',
+    'lsui-sc-key-value-list',
+    'lsui-sc-flashcard-feedback',
+    'lsui-sc-flashcard-swiper',
+    'lsui-sc-flashcard-flip',
+    'lsui-sc-flashcard-ghost',
+    'lsui-sc-flashcard-face',
+    'lsui-sc-flashcard-flip-hint',
+    'lsui-sc-flashcard-back',
+    'lsui-sc-flashcard-word',
+    'lsui-sc-flashcard-image-panel',
+    'lsui-sc-flashcard-front',
+    'lsui-sc-flashcard-deck',
+    'lsui-sc-flashcard-stage',
+    'lsui-sc-flashcard-frame',
+    'lsui-sc-timeline-event',
+    'lsui-sc-calendar-event',
+    'lsui-sc-calendar-day-number',
+    'lsui-sc-calendar-day',
+    'lsui-sc-calendar-week-grid',
+    'lsui-sc-calendar-month-grid',
+    'lsui-sc-calendar-scroller',
+    'lsui-sc-bottom-navigation-link',
+    'lsui-sc-bottom-navigation',
+    'lsui-sc-conversation-row',
+    'lsui-sc-notification-item',
+    'lsui-sc-navigation-button',
+    'lsui-sc-navigation-link',
+    'lsui-sc-sidebar-navigation',
+    'lsui-sc-sidebar-frame',
+    'lsui-sc-metric-label',
+    'lsui-sc-metric-value',
+    'lsui-sc-metric-summary',
+    'lsui-sc-text-button',
+    'lsui-sc-detail-row',
+    'lsui-sc-definition-item',
+    'lsui-sc-stat-action',
+    'lsui-sc-stat-label',
+    'lsui-sc-stat-value',
+    'lsui-sc-stat-card',
+    'lsui-sc-inline-notice',
+    'lsui-sc-file-input',
+    'lsui-sc-filter-select',
+    'lsui-sc-form-actions',
+    'lsui-sc-form-error',
+    'lsui-sc-field-counter',
+    'lsui-sc-field-label-row',
+    'lsui-sc-form-stack',
+    'lsui-sc-document-navigation-link',
+    'lsui-sc-brand-link',
+    'lsui-sc-document-navigation',
+    'lsui-sc-document-header-content',
+    'lsui-sc-document-header',
+    'lsui-sc-auth-feature',
+    'lsui-sc-auth-footer-link',
+    'lsui-sc-auth-mobile-footer',
+    'lsui-sc-auth-brand-footer',
+    'lsui-sc-auth-feature-list',
+    'lsui-sc-auth-brand-description',
+    'lsui-sc-auth-brand-accent',
+    'lsui-sc-auth-brand-title',
+    'lsui-sc-brand-logo',
+    'lsui-sc-practice-result-actions',
+    'lsui-sc-practice-result-description',
+    'lsui-sc-practice-result-title',
+    'lsui-sc-practice-result-mark',
+    'lsui-sc-auth-success-state',
+    'lsui-sc-auth-top-link',
+    'lsui-sc-auth-submit-button',
+    'lsui-sc-auth-progress',
+    'lsui-sc-auth-success-icon',
+    'lsui-sc-auth-resend-button',
+    'lsui-sc-auth-resend-action',
+    'lsui-sc-auth-back-button',
+    'lsui-sc-auth-form',
+    'lsui-sc-auth-top-link-highlight',
+    'lsui-sc-auth-eyebrow',
     'lsui-sc-quiz-session-header',
     'lsui-sc-calendar-controls',
     'lsui-sc-practice-card-skeleton-body',

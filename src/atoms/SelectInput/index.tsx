@@ -24,6 +24,7 @@ export const SelectInput = forwardRef<HTMLSelectElement, SelectInputProps>(
         ref={ref}
         $invalid={invalid}
         $size={compoundControl?.size ?? size}
+        data-ui-field="true"
       />
     )
   },

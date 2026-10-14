@@ -43,7 +43,21 @@ for (const entry of [
   'rating',
   'playback',
   'resultPanel',
+  'authPresentation',
+  'authComplete',
+  'brand',
+  'documentHeader',
+  'navigationPresentation',
+  'messagingPresentation',
+  'calendarPresentation',
+  'flashcardPresentation',
+  'chartsPresentation',
+  'residualPresentation',
+  'shadowPresentation',
+  'practiceCardPresentation',
   'toasts',
+  'formPresentation',
+  'dataPresentation',
 ]) {
   const result = await build({
     build: {

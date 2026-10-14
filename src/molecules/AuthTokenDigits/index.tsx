@@ -127,6 +127,7 @@ export function AuthTokenDigits({
             }
           }}
           onPaste={handlePaste}
+          data-ui-field="true"
         />
       ))}
     </Styled.Row>

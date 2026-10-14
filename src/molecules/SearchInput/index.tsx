@@ -110,6 +110,7 @@ export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
           type="search"
           value={value}
           $size={size}
+          data-ui-field="true"
         />
       </CompoundControl>
     )

@@ -129,3 +129,12 @@ describe('Avatar', () => {
     expect(true).toBe(true)
   })
 })
+
+it('renders supplied fallback content when initials are empty', () => {
+  const { getByText } = render(
+    <Avatar initials="">
+      <span>Fallback</span>
+    </Avatar>,
+  )
+  expect(getByText('Fallback')).toBeInTheDocument()
+})

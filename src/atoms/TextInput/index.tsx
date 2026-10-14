@@ -24,6 +24,7 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
         ref={ref}
         $invalid={invalid}
         $size={compoundControl?.size ?? size}
+        data-ui-field="true"
       />
     )
   },
