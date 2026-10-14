@@ -6,6 +6,10 @@ UI170 valores,236 tipos,531 declarações; candidato1.21.0, oficial1.20.0. Bundl
 
 Evidências completas dos produtos: student:139, teacher:141, admin:129, site:24, cupom:12. Mais4 pares UI standalone (Avatar/Card e composição de resultado equivalente):449 pares/898 PNGs originais. Sem imagens editadas ou compostas. Identificadores/contatos/nomes Admin são fixtures fictícias; não houve leitura de contas/dados de produção.
 
-Task11: pacote/contratos/tipos/builds preparados; locks/peer Cupom vão usar o SHA imutável do commit UI antes dos PRs. Task12: capturas completas, corpos exclusivamente tabelas Antes/Depois, seis PRs sendo finalizados. Nenhum merge/tag/release oficial/deploy desta expansão. UI27/Student20/Teacher43 serão atualizados para este escopo; não usar aprovação antiga R26.
+Task11 concluída: os cinco manifests e locks usam o mesmo tarball imutável do commit UI2099008102484757abbb6b25cbedb9f1fe33c344, com integridade SHA512 conferida. Cupom declara react-hook-form7.73.1. O pacote remoto respondeu HTTP200 e seus bytes correspondem ao pacote instalado nas verificações.
+
+Task12 concluída: os seis PRs estão abertos e prontos para revisão, com corpos exclusivamente Antes/Depois em tabela. A leitura remota confirmou os heads, os corpos exatos, o estado pronto e a ausência de auto-merge. UI27/Student20/Teacher43 agora contêm a expansão completa; Site5/Admin16/Cupom2 foram criados. Não usar a aprovação antiga R26.
+
+Nenhum merge, tag, release oficial ou deploy desta expansão. Entrega manual com [skip ci]; nenhuma execução de workflow disponível na consulta única por commit. Implementação, evidências e worktrees preservados para a revisão atual. Consulte entrega.md.
 
 Artefato: sha256 66a81c62de7e41d9fa66b06642d21936fbe98fe5ebc21247d474ce688a548d10;148701bytes; mesma revisão de dist em todos os consumidores. Teacher integrou pré-requisitos já existentes em origin/staging; diff de functions versus origem ficou vazio, snapshot da origem preservado.

@@ -10,9 +10,9 @@
 - [x] 08 Flashcards, quiz e shadowing
 - [x] 09 Completar Site e Cupom
 - [x] 10 Varredura residual de duplicação e dívida Student
-- [ ] 11 Pacote cumulativo e verificações dos cinco consumidores
-- [ ] 12 Evidências completas e todos os PRs para review final
+- [x] 11 Pacote cumulativo e verificações dos cinco consumidores
+- [x] 12 Evidências completas e todos os PRs para review final
 
 A execução prossegue entre tarefas sem parada por componente. Review humana bloqueia integração, não a preparação das famílias seguintes.
 
-01–10: implementação e decisão do inventário preparadas.11/12 continuam abertas para locks/evidências/PRs completos; marcar fonte preparada não afirma merge, aceite ou publicação.
+01–12 concluídas no escopo de preparação: fontes, pacote, adoções, verificações, evidências e seis PRs. A integração e a publicação dependem da revisão humana das revisões atuais; não estão incluídas nessa conclusão. Consulte entrega.md para os commits, PRs e próximos passos.
