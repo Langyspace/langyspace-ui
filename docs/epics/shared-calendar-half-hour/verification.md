@@ -88,3 +88,5 @@ Reprodução: `node scripts/capture-shared-calendar-ux.mjs after teacher`, `node
 PRs draft existentes: UI #28, Teacher #48, Admin #17. Atualizar revisão e imagens, sem merge/deploy; julgamento visual do produto permanece pendente. A limitação global de tipos das Functions descrita acima não foi alterada nesta revisão de UX.
 
 Visual gate review: pending human.
+
+Integração final: CI completo 38775221089 aprovado no runtime 70e23a7; merge adcbc31. Aprovação humana registrada no coordenador. Adoções finais #50 Teacher e #19 Admin usam o tarball 083c5f62f05afea131ca00c0364e13294f57e812a8b4d9e2dd4dbcd4104fab6c. Esta atualização é apenas documental, sem alteração no código/configuração de runtime validado.
