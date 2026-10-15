@@ -309,3 +309,7 @@ checks. Os demais placeholders N17 continuam locais, conforme sua anatomia. R13 
 R13 adiado por diferenças de anatomia que excedem pequenas concessões; não publicar wrapper genérico nem transformar formulários Student em pares somente de leitura. R14 preparado primeiro na UI com receita decorativa dos cards de prática, API pequena e custo aditivo medido. Adoções ainda dependem do R12 oficial e têm review própria; não antecipar compartilhamento das sessões. Detalhes nos documentos R13/R14.
 
 R14 em 2026-10-12: seis branches de cards em drafts, -5 linhas runtime por produto, UI +199 gzip. 80 pares Student/76 Teacher com scroll e 48 stories. Geometria, textos, controles e cores iguais; transição Teacher 520ms é a concessão proposta. Review própria pendente; R12 oficial 1.11.2 é dependência do merge, após correção técnica do registro de motion.
+
+## R26 — painel de resultado do quiz
+
+R25 foi publicado manualmente com UI1.20.0; o aceite anterior fecha essa entrega. O próximo recorte prepara PracticeResultPanel para Student e Teacher, sem mover métricas, domínio ou persistência. [Mapeamento e concessões R26](r26/mapeamento.md), [plano](r26/technical-plan.md) e [validação](r26/validation.md) registram o custo-benefício e as limitações. A UI prepara o contrato antes das adoções; novas revisões precisam de review humana. Sem merge, release oficial ou deploy R26 nesta etapa.

@@ -63,6 +63,14 @@ baseline do PR. Se a baseline avançar e mudar uma dessas telas, atualizar as ca
 Capturar o Depois na revisão atual da branch com os mesmos dados de teste, rota, estado, viewport,
 zoom e tema. Registrar SHAs e matriz de evidências nos documentos do trabalho.
 
+Com modal ou drawer modal aberto, capturar a janela visível do navegador, sem `fullPage`.
+O backdrop fixo cobre o viewport; uma imagem de página inteira inclui conteúdo fora dele e pode
+dar a impressão de que a sombra foi cortada. Usar `scripts/capture-visual-evidence.mjs` para
+selecionar automaticamente viewport quando houver `aria-modal="true"` visível e página inteira
+nos demais casos. Não aumentar o backdrop, redimensionar a janela ou editar a imagem para acomodar
+o conteúdo fora da tela. Se o modal tiver rolagem interna, registrar o início e o fim em capturas
+separadas, mantendo o mesmo viewport no Antes e no Depois.
+
 Para cada tela afetada, incluir os estados e as larguras em que a mudança pode aparecer. Cobrir
 mobile e desktop em telas responsivas, além dos breakpoints relevantes para o componente. Incluir
 modais, drawers, loading, vazio, erro, conteúdo longo e estados de interação quando afetados. Usar

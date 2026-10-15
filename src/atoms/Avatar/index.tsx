@@ -4,6 +4,7 @@ import type { AvatarProps } from './types'
 
 export function Avatar({
   'aria-hidden': ariaHidden = true,
+  children,
   imageUrl,
   initials,
   size = 'md',
@@ -22,7 +23,7 @@ export function Avatar({
       data-size={size}
       data-tone={tone}
     >
-      {initials}
+      {initials || children}
       {shouldShowImage ? (
         <Styled.Image
           alt=""

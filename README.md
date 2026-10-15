@@ -980,3 +980,519 @@ questões, áudio, navegação, resultado e persistência. Não depende de Theme
 
 O contador usa o token de texto muted para contraste. A barra existente limita progresso a 0–1,
 trata valores não finitos como zero e suprime transição quando prefers-reduced-motion é reduce.
+
+## PracticeResultPanel
+
+Composição explícita de resultado, sem interpretar pontuação ou persistir progresso. O produto fornece a ordem e conteúdo no JSX; cada parte tem sua própria responsabilidade semântica. API do candidato R26 revisada antes do primeiro release oficial.
+
+```tsx
+<PracticeResultPanel>
+  <PracticeResultMark />
+  <PracticeResultTitle>Resultado</PracticeResultTitle>
+  <PracticeResultDescription>
+    Você acertou <strong>{correct}</strong> de {total} questões.
+  </PracticeResultDescription>
+  <LocalMetrics correct={correct} total={total} />
+  <PracticeResultActions>
+    <Button type="button" onClick={reset}>
+      Refazer
+    </Button>
+    <Button type="button" variant="secondary" onClick={close}>
+      Voltar para lista
+    </Button>
+  </PracticeResultActions>
+</PracticeResultPanel>
+```
+
+## AuthEyebrow
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `span` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthTopLinkHighlight
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `span` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthForm
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `form` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthBackButton
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `button` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthResendAction
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `div` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthResendButton
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `button` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthSuccessIcon
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `div` e children (ícone/barra decorativos não recebem conteúdo). Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthProgress
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `div` e children (ícone/barra decorativos não recebem conteúdo). Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthSubmitButton
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `button` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthTopLink
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `a` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## AuthSuccessState
+
+Componente de autenticação com composição explícita. Mantém conteúdo, navegação, envio e estados do fluxo no consumidor. Aceita atributos nativos de `div` e children. Sem props de produto/layout; estilos independem do ThemeProvider do produto.
+
+## PracticeResultMark
+
+Parte semântica de PracticeResultPanel. Composição explícita via children e atributos nativos de div; sem score, persistência ou props de layout. Ícone decorativo de conclusão, com reduced motion; não recebe children.
+
+## PracticeResultTitle
+
+Parte semântica de PracticeResultPanel. Composição explícita via children e atributos nativos de h2; sem score, persistência ou props de layout.
+
+## PracticeResultDescription
+
+Parte semântica de PracticeResultPanel. Composição explícita via children e atributos nativos de p; sem score, persistência ou props de layout.
+
+## PracticeResultActions
+
+Parte semântica de PracticeResultPanel. Composição explícita via children e atributos nativos de div; sem score, persistência ou props de layout.
+
+## BrandLogo
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `img` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthBrandTitle
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `h1` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthBrandAccent
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthBrandDescription
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthFeatureList
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `ul` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthBrandFooter
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthMobileFooter
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthFooterLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthFeature
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `li` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DocumentHeader
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `header` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DocumentHeaderContent
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DocumentNavigation
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `nav` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## BrandLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DocumentNavigationLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FormStack
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FieldLabelRow
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FieldCounter
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FormError
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FormActions
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FilterSelect
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `select` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FileInput
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `input` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+Um único controle de arquivo de48px, com `accept`, `multiple`, `disabled`, eventos e ref nativos. Sem `size`, `value` ou `defaultValue`; o consumidor controla upload/validação e pode limpar o campo por ref/key.
+
+## InlineNotice
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## StatCard
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## StatValue
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## StatLabel
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## StatAction
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DefinitionItem
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## DetailRow
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## TextButton
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## MetricSummary
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## MetricValue
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## MetricLabel
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## SidebarFrame
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `aside` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## SidebarNavigation
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `nav` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## NavigationLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## NavigationButton
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## NotificationItem
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ConversationRow
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## BottomNavigation
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `nav` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## BottomNavigationLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarScroller
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarMonthGrid
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarWeekGrid
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarDay
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarDayNumber
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarEvent
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## TimelineEvent
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFrame
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `section` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardStage
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardDeck
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFront
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardImagePanel
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardWord
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardBack
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFlipHint
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFace
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardGhost
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFlip
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardSwiper
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardFeedback
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingReader
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingPhraseStack
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingContextPhrase
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingActivePhrase
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingTranslation
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingControlDock
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingControlCluster
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingContext
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## KeyValueList
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## GroupedBarChart
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## WeeklyCountChart
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## Checkbox
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `input` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## RadioButton
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `input` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ToggleButton
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ChoiceCard
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## Skeleton
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingRepetitions
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthChannelHint
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthChannelIcon
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthTokenLabel
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `label` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## AuthLegalText
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PageTitle
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `h1` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PageDescription
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `p` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## SessionProgress
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CalendarTimeSlot
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ScheduleRow
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PracticeCard
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `button` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PracticeCardCover
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PracticeLevelBadge
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PracticeCoverValue
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## PracticeCoverLabel
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## QuizQuestion
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## QuizBlank
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardProgressTrack
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardCounter
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## FlashcardProgressSegment
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## QuizPromptHeader
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## QuizMetadata
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## QuizBadge
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ConnectionNotice
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `div` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## CardLink
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `a` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+## ShadowingWord
+
+Componente semântico com conteúdo e ações mantidos no produto. Atributos nativos de `span` e composição explícita; sem flags de produto ou dependência do tema privado.
+
+`state` aceita `pending`, `current` ou `spoken`; índice, timers e áudio pertencem ao consumidor. Não é preciso fornecer classes `on`/`said` ao reader.
+
+## Composição React explícita
+
+```tsx
+<PracticeResultPanel>
+  <PracticeResultMark />
+  <PracticeResultTitle>Resultado</PracticeResultTitle>
+  <PracticeResultDescription>{description}</PracticeResultDescription>
+  {metrics}
+  <PracticeResultActions>
+    <Button type="button" onClick={retry}>
+      Refazer
+    </Button>
+    <Button type="button" variant="secondary" onClick={close}>
+      Voltar para lista
+    </Button>
+  </PracticeResultActions>
+</PracticeResultPanel>
+```
+
+As partes oferecem apresentação; callbacks, resultados e persistência ficam no produto. `CardLink` fornece âncora nativa; bridges Router ficam no consumidor. `FormStack` é um div para organizar campos dentro de um form, sem alterar a semântica de submit. Os controles e recipes não dependem de um tema privado do portal.

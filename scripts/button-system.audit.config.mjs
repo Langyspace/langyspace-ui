@@ -22,6 +22,63 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Shadowing presentation',
+      path: 'src/molecules/ShadowingPhraseStack/styles.ts',
+      reason:
+        'Existing phrase entrance or decorative repeat pulse with explicit reduced motion; audio timing remains local',
+      expiresAt: '2027-04-14',
+    },
+    {
+      owner: 'Shadowing presentation',
+      path: 'src/molecules/ShadowingRepetitions/styles.ts',
+      reason:
+        'Existing phrase entrance or decorative repeat pulse with explicit reduced motion; audio timing remains local',
+      expiresAt: '2027-04-14',
+    },
+
+    {
+      owner: 'Loading presentation',
+      path: 'src/primitives/Skeleton/styles.ts',
+      reason: 'Decorative placeholder shimmer, disabled for reduced motion',
+      expiresAt: '2027-04-14',
+    },
+    {
+      owner: 'Flashcard presentation',
+      path: 'src/molecules/FlashcardSwiper/styles.ts',
+      reason:
+        'Existing finite card/feedback transition with explicit reduced motion; scheduling and timers remain local',
+      expiresAt: '2027-04-14',
+    },
+    {
+      owner: 'Flashcard presentation',
+      path: 'src/molecules/FlashcardFeedback/styles.ts',
+      reason:
+        'Existing finite card/feedback transition with explicit reduced motion; scheduling and timers remain local',
+      expiresAt: '2027-04-14',
+    },
+
+    {
+      owner: 'Auth presentation',
+      path: 'src/atoms/AuthSuccessIcon/styles.ts',
+      reason:
+        'Existing finite auth success entrance, with explicit reduced motion',
+      expiresAt: '2027-04-14',
+    },
+    {
+      owner: 'Auth presentation',
+      path: 'src/atoms/AuthProgress/styles.ts',
+      reason:
+        'Existing decorative auth completion progress; no navigation timer; explicit reduced motion',
+      expiresAt: '2027-04-14',
+    },
+    {
+      owner: 'Practice completion',
+      path: 'src/atoms/PracticeResultMark/styles.ts',
+      reason:
+        'finite 320ms completion-mark entrance from Student, shared with Teacher, explicitly disabled with reduced motion; actions and metrics stay still',
+      expiresAt: '2027-04-14',
+    },
+    {
       owner: 'Practice rating',
       path: 'src/molecules/FlashcardRatingButton/styles.ts',
       reason:

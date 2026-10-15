@@ -82,6 +82,7 @@ export const PhoneField = forwardRef<HTMLInputElement, PhoneFieldProps>(
                   .join(' ') || undefined
               }
               aria-invalid={errorMessage ? true : inputProps['aria-invalid']}
+              data-ui-field="true"
             />
           </Styled.InputWrap>
           {open && !inputProps.disabled && (
@@ -94,6 +95,7 @@ export const PhoneField = forwardRef<HTMLInputElement, PhoneFieldProps>(
                 onKeyDown={(event) => {
                   if (event.key === 'Enter') event.preventDefault()
                 }}
+                data-ui-field="true"
               />
               <Styled.CountryList
                 role="listbox"

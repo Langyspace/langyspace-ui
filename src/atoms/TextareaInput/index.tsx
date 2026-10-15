@@ -26,6 +26,7 @@ export const TextareaInput = forwardRef<
       ref={ref}
       $invalid={invalid}
       $size={compoundControl?.size ?? size}
+      data-ui-field="true"
     />
   )
 })
