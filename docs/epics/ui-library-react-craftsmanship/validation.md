@@ -1,3 +1,10 @@
+# Validação final
+
+O estado final é 172 componentes públicos e 173 registros. CI integral da UI, pacote oficial e cinco publicações foram verificados. [Evidências e escopo](release-delivery.md) · [recibo estruturado](delivery-summary.json). Os registros abaixo preservam a sequência de evidência local anterior à entrega.
+
+<details>
+<summary>Histórico das validações locais</summary>
+
 # Validação da revisão preparada
 
 O catálogo contém 171 componentes públicos: 169 contratos anteriores revisados, um retirado por ausência de uso e três componentes novos. Há 172 registros de revisão, incluindo a retirada. Esta revisão técnica foi feita pelo mesmo agente; o aceite visual pertence à product owner.
@@ -65,3 +72,5 @@ O bundle novo difere do anterior apenas por min-height:0; dentro da coluna do gr
 As outras imagens reutilizam a evidência anterior porque não contêm o owner do gráfico e seus inputs relevantes permanecem idênticos. Os hashes de runtime e os refs efetivamente capturados foram preservados por par; os campos validatedProductBaseline e validatedCandidateUiRuntimeSha256 distinguem a validação atual dessa captura anterior. Não se afirma que todos os PNGs foram recapturados contra o novo bundle. A captura inicial de Depois dos12casos foi refeita após o congelamento definitivo; o guard de timestamp impede incorporar a tentativa anterior.
 
 Gates amplos e aceite da revisão atual continuam pendentes. A integração de UIadcbc31/Teacher32109d35/Admin6f6c08b nesta feature preserva a entrega paralela já aprovada; este registro não afirma nova publicação da major.
+
+</details>

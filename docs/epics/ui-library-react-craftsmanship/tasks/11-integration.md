@@ -1,5 +1,7 @@
 # 11 — Integração e encerramento autorizado
 
+> Concluída. O resultado atual está em [release-delivery.md](../release-delivery.md); o texto de preparação abaixo preserva o histórico.
+
 O produto aprovou explicitamente as seis revisões em 15/10/2026. O recibo local `11-human-approval.json` preserva os seis SHAs. Esse aceite continua válido para aqueles pixels, sem autorizar alterações visuais posteriores automaticamente.
 
 ## Gate técnico e reconciliação
@@ -18,10 +20,14 @@ A biblioteca contém agora172 componentes públicos e173 registros de revisão, 
 - [x] Reconciliar o calendário paralelo e corrigir contraste/fixtures preservando contratos React.
 - [x] Conferir tipos da UI,27 testes de calendário/referências e60 cenários de layout focado.
 - [x] Preparar candidato imutável, imagens e adoções da revisão corrigida.
-- [ ] Executar gates finais e obter aceite dos pixels posteriores ao aceite original.
-- [ ] Integrar UI e publicar o artefato major exato.
-- [ ] Integrar as cinco adoções nos targets próprios; publicar staging e verificar fonte/comportamento.
-- [ ] Promover pelo pipeline ou exceção temporária comprovada por recusa de billing no alvo; publicar a mesma fonte e verificar produção.
-- [ ] Alinhar canônicos e refs locais/remotos, preservando drafts, e encerrar com recibos exatos.
+- [x] Executar gates finais e obter aceite dos pixels posteriores ao aceite original.
+- [x] Integrar UI e publicar o artefato major exato.
+- [x] Integrar as cinco adoções nos targets próprios; publicar staging e verificar fonte/comportamento.
+- [x] Promover pelo pipeline ou exceção temporária comprovada por recusa de billing no alvo; publicar a mesma fonte e verificar produção.
+- [x] Alinhar canônicos e refs locais/remotos, preservando drafts, e encerrar com recibos exatos.
 
 A recusa de billing foi confirmada no check Student116548337725 do SHA original: o job não iniciou. Isso não prova recusa nos novos SHAs nem permite contornar falhas reais da UI. Nenhum merge, tag, release ou deploy desta revisão major ocorreu nesta etapa.
+
+## Encerramento
+
+Concluído com evidência atual em [release-delivery.md](../release-delivery.md) e delivery-summary.json. Os estados pendentes no texto histórico acima descrevem a preparação anterior ao aceite e à publicação.

@@ -1,3 +1,10 @@
+# Progresso atual — concluído
+
+As tarefas 01–11 foram concluídas com aceite humano atual, UI 2.0.0 publicada e cinco adoções verificadas em staging/produção. 172 públicos, 173 fichas C1–C10, 355 exemplos e 215 pares únicos. [Entrega e limites da validação](release-delivery.md) · [recibo](delivery-summary.json).
+
+<details>
+<summary>Histórico de preparação e correções</summary>
+
 # Progresso atual
 
 Estado: execucao continua; 01-09 concluidas na preparacao. 169/169 contratos baseline revisados,1 retirado sem uso e3 owners novos:171 componentes publicos atuais. Nenhuma declaracao de conclusao do objetivo: indexacao, pacote/API, capturas, PRs e aceite humano atual continuam pendentes.
@@ -42,3 +49,5 @@ Main UIadcbc31 integrou WeeklyCountChart70e23a7: min-height:0 na coluna evita ex
 Prova de runtime: o bundle2.0.0 compilado difere do candidato anterior apenas pela inserção literal de13 caracteres min-height:0; dentro desse styled component. No pacote, apenas dist/index.js e o mapa de declarações de WeeklyCountChart/styles.ts mudaram; todas as declarações efetivas permanecem idênticas e o check de API passou. Build e33 budgets passaram; layout focado do gráfico passou em seis cenários. A evidência existente é reutilizada nas superfícies que não contêm o gráfico, conservando os hashes e baselines efetivamente capturados e registrando separadamente a validação contra o novo candidato. Os12 pares Today/drawers/foco do Teacher são renovados; há dois pares adicionais do gráfico isolado. Nenhuma imagem é editada.
 
 O pedido anterior de reviewfb2dd1e foi superado por essa atualização do target antes do aceite. Os novos heads e215 pares precisam ser preparados e conferidos antes do pedido atual; não aplicar eventual resposta ao head antigo a pixels posteriores. Nenhum merge/publicação desta major ocorreu.
+
+</details>

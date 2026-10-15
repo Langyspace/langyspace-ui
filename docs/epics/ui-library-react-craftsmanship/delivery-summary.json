@@ -1,0 +1,172 @@
+{
+  "closedAt": "2026-10-15T19:31:43.779657+00:00",
+  "version": "2.0.0",
+  "publicComponents": 172,
+  "reviewedRecords": 173,
+  "sourceExamples": 355,
+  "uniqueBeforeAfterPairs": 215,
+  "library": {
+    "verifiedAt": "2026-10-15T18:43:50.670Z",
+    "tag": "v2.0.0",
+    "url": "https://github.com/MarcosLaboriosi/langyspace-ui/releases/tag/v2.0.0",
+    "publishedAt": "2026-10-15T18:43:03Z",
+    "sha256": "c56ed123fc88d7024205e049f4d33c0c4aef95c1745f1c70a21ce75241f244ac",
+    "membersVerified": 1126,
+    "allApprovedMembersByteIdentical": true,
+    "runtimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+    "consumerArtifact": "https://raw.githubusercontent.com/MarcosLaboriosi/langyspace-ui/745e1a31a0daf1d7a28f24e651ffa551fb46925b/.github/artifacts/langyspace-ui-2.0.0-1b1f4351b9e02ea3.tgz",
+    "remoteTagCommit": "207b5c831e2bb8f34c585317fb2b937c20041528",
+    "annotatedTagObject": "495dfa1e920d93d4fb7d0b4d392c17727038cdc1"
+  },
+  "catalog": {
+    "url": "https://marcoslaboriosi.github.io/langyspace-ui/",
+    "indexHttp": 200,
+    "entries": 386,
+    "newPublicOwners": {
+      "flashcardflipbutton": ["molecules-flashcardflipbutton--default"],
+      "flashcardaudiobutton": [
+        "molecules-flashcardaudiobutton--default",
+        "molecules-flashcardaudiobutton--term",
+        "molecules-flashcardaudiobutton--playing",
+        "molecules-flashcardaudiobutton--disabled"
+      ],
+      "flashcardwordskeleton": ["molecules-flashcardwordskeleton--default"]
+    },
+    "retiredShadowingContextAbsent": true,
+    "latestDeployment": {
+      "created_at": "2026-10-15T18:16:56Z",
+      "environment": "github-pages",
+      "sha": "207b5c831e2bb8f34c585317fb2b937c20041528"
+    },
+    "scope": "Direct served catalog entries and deployment source metadata; not a new CI status lookup"
+  },
+  "approval": {
+    "answer": "Aprovo as seis revisões corrigidas",
+    "acceptedAt": "2026-10-15T18:04:56.263509+00:00",
+    "questionRevisions": {
+      "ui": {
+        "head": "fb2dd1e5674be5b04571d82af1ed86f995cee58d",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-ui/pull/29"
+      },
+      "teacher": {
+        "head": "a075f2bc25c6dbf50a35ea79954683bc8ca3cef3",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-teacher/pull/49"
+      },
+      "student": {
+        "head": "f27fe3f84380569b80e3f3211af95a2fc1866e22",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-student/pull/22"
+      },
+      "admin": {
+        "head": "ceb82ddc655e5132de22e93e3e5f6fac5af2f143",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-admin/pull/18"
+      },
+      "site": {
+        "head": "2f2f61ed196078b0ca5434d07d06f7367119025a",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace/pull/6"
+      },
+      "cupom": {
+        "head": "401df4a19d202cedceec3d0887dfc8109a53882e",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-cupom/pull/3"
+      }
+    },
+    "preparedRevisions": {
+      "ui": {
+        "head": "745e1a31a0daf1d7a28f24e651ffa551fb46925b",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-ui/pull/29"
+      },
+      "teacher": {
+        "head": "181d35fb0400817405343c5ba33930f67b5a686e",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-teacher/pull/49"
+      },
+      "student": {
+        "head": "5f5e1c3f9c63aeb534379363ff10d5fb172a5a8a",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-student/pull/22"
+      },
+      "admin": {
+        "head": "bb1696e979283d6b4e5ee6181e4890779cd3a87c",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-admin/pull/18"
+      },
+      "site": {
+        "head": "12534bf6d9f21202212ad7d16ff7f5114328e6c4",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace/pull/6"
+      },
+      "cupom": {
+        "head": "17efd11575897b363826c390fdb4eba2b74d57d7",
+        "pr": "https://github.com/MarcosLaboriosi/langyspace-cupom/pull/3"
+      }
+    },
+    "context": "Owner replied after the 215-pair update and current linked PR bodies were published. The intervening reconciliation preserves WeeklyCountChart min-height:0 already present in main adcbc31; compiled runtime delta is the exact scoped insertion from the target. Corrected contrast/calendar proposals are unchanged. Approval recorded for those corrected proposals; no subsequent new visual edits authorized by inference."
+  },
+  "products": {
+    "teacher": {
+      "commit": "28cca327960aa39d88a51609b38dc5dd8c8c4b87",
+      "pr": "https://github.com/MarcosLaboriosi/langyspace-teacher/pull/49",
+      "production": "https://teacher.langy.space",
+      "filesVerified": 16,
+      "testCI": "https://github.com/MarcosLaboriosi/langyspace-teacher/actions/runs/38788679453",
+      "deployCI": "https://github.com/MarcosLaboriosi/langyspace-teacher/actions/runs/38789715062",
+      "deliveryMethod": "Manual billing exception; real staging and production proofs, no CI status fabricated"
+    },
+    "student": {
+      "commit": "c3a5472b97f7644f6c85e12d70b471cfc7231ddc",
+      "pr": "https://github.com/MarcosLaboriosi/langyspace-student/pull/22",
+      "production": "https://student.langy.space",
+      "filesVerified": 56,
+      "testCI": "https://github.com/MarcosLaboriosi/langyspace-student/actions/runs/38788705345",
+      "deployCI": "https://github.com/MarcosLaboriosi/langyspace-student/actions/runs/38790157323",
+      "deliveryMethod": "Manual billing exception; real staging and production proofs, no CI status fabricated"
+    },
+    "site": {
+      "commit": "a20fa5285d59e501c187f9602d28f3057f253eed",
+      "pr": "https://github.com/MarcosLaboriosi/langyspace/pull/6",
+      "production": "https://langy.space",
+      "filesVerified": 7,
+      "testCI": "https://github.com/MarcosLaboriosi/langyspace/actions/runs/38788725588",
+      "deployCI": "https://github.com/MarcosLaboriosi/langyspace/actions/runs/38788725588",
+      "deliveryMethod": "Manual billing exception; real staging and production proofs, no CI status fabricated"
+    },
+    "cupom": {
+      "commit": "a884d5829f877224ee174a80b107079f45e367d1",
+      "pr": "https://github.com/MarcosLaboriosi/langyspace-cupom/pull/3",
+      "production": "https://cupom.langy.space",
+      "filesVerified": 4,
+      "testCI": "https://github.com/MarcosLaboriosi/langyspace-cupom/actions/runs/38788745678",
+      "deployCI": "https://github.com/MarcosLaboriosi/langyspace-cupom/actions/runs/38788745678",
+      "deliveryMethod": "Manual billing exception; real staging and production proofs, no CI status fabricated"
+    },
+    "admin": {
+      "commit": "7f71897a5df423c37d4bf4e9bf1708a84dc9205b",
+      "pr": "https://github.com/MarcosLaboriosi/langyspace-admin/pull/18",
+      "production": "https://admin.langy.space",
+      "filesVerified": 3,
+      "testCI": "https://github.com/MarcosLaboriosi/langyspace-admin/actions/runs/38793305768",
+      "deployCI": "https://github.com/MarcosLaboriosi/langyspace-admin/actions/runs/38794212393",
+      "deliveryMethod": "Manual billing exception; real staging and production proofs, no CI status fabricated"
+    }
+  },
+  "adminNativeLayout": {
+    "widths": [
+      390, 768, 920, 921, 1024, 1200, 1280, 1281, 1440, 1536, 1551, 1552, 2048
+    ],
+    "casesPerWidth": {
+      "768": 135,
+      "390": 135,
+      "920": 135,
+      "921": 135,
+      "1024": 135,
+      "1200": 135,
+      "1280": 135,
+      "1281": 135,
+      "1440": 135,
+      "1536": 135,
+      "1551": 135,
+      "1552": 135,
+      "2048": 135
+    },
+    "totalCases": 1755,
+    "totalScenarios": 3510,
+    "issues": 0,
+    "executor": "Individual widths, every native case and assertion retained, original1,200,000ms safety timeout"
+  },
+  "scope": "Hosting only; Functions/rules/providers unchanged; production checks use isolated profiles or block external requests"
+}
