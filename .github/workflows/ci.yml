@@ -103,8 +103,13 @@ jobs:
           pnpm run test:package
 
   visual:
+    name: visual (${{ matrix.shard }})
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
 
     steps:
       - name: Checkout
@@ -127,11 +132,38 @@ jobs:
       - name: Install Chromium
         run: pnpm exec playwright install --with-deps chromium
 
+      - name: Build catalog
+        run: pnpm run build:storybook
+
+      - name: Select a disjoint catalog partition
+        env:
+          LAYOUT_SHARD: ${{ matrix.shard }}
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict'
+          import { appendFileSync, readFileSync } from 'node:fs'
+          const index = JSON.parse(readFileSync('storybook-static/index.json', 'utf8'))
+          const ids = Object.values(index.entries)
+            .filter((entry) => entry.type === 'story')
+            .map((entry) => entry.id)
+            .sort()
+          const groups = Array.from({ length: 4 }, (_, shard) =>
+            ids.filter((_, position) => position % 4 === shard),
+          )
+          assert.equal(new Set(groups.flat()).size, ids.length)
+          assert.equal(groups.flat().length, ids.length)
+          assert(groups.every((group) => group.length > 0))
+          const selected = groups[Number(process.env.LAYOUT_SHARD)]
+          assert(selected?.length)
+          appendFileSync(process.env.GITHUB_ENV, `LAYOUT_AUDIT_STORIES=${selected.join(',')}\n`)
+          console.log(`Partition ${process.env.LAYOUT_SHARD}: ${selected.length}/${ids.length} stories`)
+          NODE
+
       - name: Validate catalog layouts
-        run: LAYOUT_AUDIT_SCREENSHOTS=1 pnpm run test:layout
+        run: LAYOUT_AUDIT_SCREENSHOTS=1 node scripts/audit-storybook-layout.mjs
 
       - name: Upload static catalog
-        if: always()
+        if: always() && matrix.shard == 0
         uses: actions/upload-artifact@v5
         with:
           name: ui-catalog-${{ github.sha }}
@@ -143,7 +175,7 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v5
         with:
-          name: ui-library-layout-audit-${{ github.sha }}
+          name: ui-library-layout-audit-${{ github.sha }}-${{ matrix.shard }}
           path: .local/layout-audit
           if-no-files-found: ignore
           retention-days: 7
