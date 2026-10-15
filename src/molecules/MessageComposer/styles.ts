@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { TextareaInput } from '../../atoms/TextareaInput'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Form = styled.form.withConfig({
   componentId: 'lsui-sc-message-composer',
@@ -9,7 +9,7 @@ export const Form = styled.form.withConfig({
   width: 100%;
   min-width: 0;
   flex-direction: column;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
 `
 
 export const InputRow = styled.div`
@@ -17,14 +17,14 @@ export const InputRow = styled.div`
   width: 100%;
   min-width: 0;
   align-items: flex-end;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
 `
 
 export const Input = styled(TextareaInput)`
   box-sizing: border-box;
-  height: ${tokens.control.height.lg};
+  height: ${token.controlHeightLg};
   min-width: 0;
-  min-height: ${tokens.control.height.lg};
+  min-height: ${token.controlHeightLg};
   max-height: 9rem;
   flex: 1 1 auto;
   overflow-y: auto;
@@ -45,10 +45,10 @@ export const Support = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: ${tokens.spacing[1]} ${tokens.spacing[3]};
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  line-height: ${tokens.typography.lineHeight.normal};
+  gap: ${token.spacing1} ${token.spacing3};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  line-height: ${token.typographyLineHeightNormal};
 `
 
 export const Helper = styled.span`
@@ -60,18 +60,18 @@ export const Helper = styled.span`
 export const Counter = styled.span<{ $invalid: boolean }>`
   margin-left: auto;
   color: ${({ $invalid }) =>
-    $invalid ? tokens.color.feedback.dangerStrong : 'inherit'};
+    $invalid ? token.colorFeedbackDangerStrong : 'inherit'};
   font-weight: ${({ $invalid }) =>
     $invalid
-      ? tokens.typography.fontWeight.semibold
-      : tokens.typography.fontWeight.medium};
+      ? token.typographyFontWeightSemibold
+      : token.typographyFontWeightMedium};
   white-space: nowrap;
 `
 
 export const Error = styled.p`
   margin: 0;
-  color: ${tokens.color.feedback.dangerStrong};
-  font-size: ${tokens.typography.fontSize.sm};
-  line-height: ${tokens.typography.lineHeight.normal};
+  color: ${token.colorFeedbackDangerStrong};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
   overflow-wrap: anywhere;
 `

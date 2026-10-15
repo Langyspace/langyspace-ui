@@ -17,14 +17,20 @@ export const Row = styled.div`
     padding-bottom: 0;
     border: 0;
   }
-  span {
-    min-width: 0;
-    color: rgba(17, 17, 17, 0.62);
-    font-size: 14px;
-    overflow-wrap: anywhere;
-  }
-  strong {
-    flex-shrink: 0;
-    font-size: 20px;
-  }
+`
+
+export const Label = styled.span.withConfig({
+  componentId: 'lsui-sc-key-value-label',
+})`
+  min-width: 0;
+  color: rgba(17, 17, 17, 0.62);
+  font-size: 14px;
+  overflow-wrap: anywhere;
+`
+
+export const Value = styled.strong.withConfig({
+  componentId: 'lsui-sc-key-value-value',
+})`
+  flex-shrink: 0;
+  font-size: 20px;
 `

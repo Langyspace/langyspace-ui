@@ -1,10 +1,10 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Title = styled.h2.withConfig({
   componentId: 'lsui-sc-practice-result-title',
 })`
   margin: 0;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize['2xl']};
-  font-weight: ${tokens.typography.fontWeight.bold};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSize2xl};
+  font-weight: ${token.typographyFontWeightBold};
 `

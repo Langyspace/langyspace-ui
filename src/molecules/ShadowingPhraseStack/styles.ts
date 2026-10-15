@@ -1,4 +1,5 @@
 import { styled, keyframes } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 const shadowRise = keyframes`
   from {
     opacity: 0;
@@ -16,13 +17,13 @@ export const Root = styled.div.withConfig({
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: ${token.spacing3};
   text-align: center;
   animation: ${({ $rising }) => ($rising ? shadowRise : 'none')} 0.45s
     cubic-bezier(0.2, 0.8, 0.2, 1);
 
   @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
-    gap: 1rem;
+    gap: ${token.spacing4};
   }
 
   @media (prefers-reduced-motion: reduce) {

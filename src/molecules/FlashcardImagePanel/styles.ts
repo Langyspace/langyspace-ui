@@ -26,12 +26,14 @@ export const Root = styled.div.withConfig({
     opacity: 0.28;
     pointer-events: none;
   }
+`
 
-  .emoji {
-    position: relative;
-    z-index: 1;
-    font-size: 4.75rem;
-    filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08));
-    line-height: 1;
-  }
+export const Emoji = styled.div.withConfig({
+  componentId: 'lsui-sc-flashcardimagepanel-emoji',
+})`
+  position: relative;
+  z-index: 1;
+  font-size: 4.75rem;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.08));
+  line-height: 1;
 `

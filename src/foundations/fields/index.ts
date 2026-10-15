@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { tokens } from '../tokens'
+import * as token from '../tokenValues'
 
 export type FieldControlSize = 'sm' | 'md' | 'lg'
 
@@ -9,9 +9,9 @@ export interface FieldControlStyleProps {
 }
 
 const heights = {
-  lg: tokens.field.height.lg,
-  md: tokens.field.height.md,
-  sm: tokens.field.height.sm,
+  lg: token.fieldHeightLg,
+  md: token.fieldHeightMd,
+  sm: token.fieldHeightSm,
 } satisfies Record<FieldControlSize, string>
 
 export const fieldControlStyles = css<FieldControlStyleProps>`
@@ -20,50 +20,45 @@ export const fieldControlStyles = css<FieldControlStyleProps>`
   min-height: ${({ $size }) => heights[$size]};
   border: 1px solid
     ${({ $invalid }) =>
-      $invalid
-        ? tokens.color.feedback.danger
-        : tokens.color.surfaceBorder.default};
-  border-radius: ${tokens.radius.control};
+      $invalid ? token.colorFeedbackDanger : token.colorSurfaceBorderDefault};
+  border-radius: ${token.radiusControl};
   outline: none;
-  background: ${tokens.color.neutral[0]};
-  color: ${tokens.color.content.default};
+  background: ${token.colorNeutral0};
+  color: ${token.colorContentDefault};
   font: inherit;
-  font-size: ${tokens.typography.fontSize.sm};
-  padding-right: ${tokens.spacing[3]};
-  padding-left: ${tokens.spacing[3]};
+  font-size: ${token.typographyFontSizeSm};
+  padding-right: ${token.spacing3};
+  padding-left: ${token.spacing3};
   transition:
-    color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    background-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    border-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    box-shadow ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive};
+    color ${token.motionDurationInteractive} ${token.motionEasingInteractive},
+    background-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    border-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    box-shadow ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive};
 
   &:hover:not(:disabled):not([aria-invalid='true']) {
-    border-color: ${tokens.color.surfaceBorder.strong};
+    border-color: ${token.colorSurfaceBorderStrong};
   }
 
   &:focus-visible {
     border-color: ${({ $invalid }) =>
-      $invalid
-        ? tokens.color.feedback.danger
-        : tokens.color.surfaceBorder.strong};
-    box-shadow: ${tokens.shadow.focus};
+      $invalid ? token.colorFeedbackDanger : token.colorSurfaceBorderStrong};
+    box-shadow: ${token.shadowFocus};
   }
 
   &:disabled {
-    background: ${tokens.color.surface.muted};
-    color: ${tokens.color.content.muted};
+    background: ${token.colorSurfaceMuted};
+    color: ${token.colorContentMuted};
     cursor: default;
   }
 
   &:read-only:not(:disabled) {
-    background: ${tokens.color.surface.subtle};
+    background: ${token.colorSurfaceSubtle};
   }
 
   &::placeholder {
-    color: ${tokens.color.content.placeholder};
+    color: ${token.colorContentPlaceholder};
   }
 `

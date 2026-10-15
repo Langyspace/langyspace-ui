@@ -1,20 +1,21 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-flashcard-frame',
 })`
-  --fc-ink: #0a0a0a;
-  --fc-ink-2: #2a2a2a;
-  --fc-muted: #6b6b6b;
-  --fc-muted-2: #9a9a9a;
-  --fc-line: #ececea;
-  --fc-line-strong: #d9d9d6;
-  --fc-pink: #ff1f5c;
-  --fc-pink-soft: #ffe1ec;
-  --fc-pink-tint: #fff4f7;
-  --fc-bg-soft: #fafaf9;
+  --fc-ink: ${token.colorContentDefault};
+  --fc-ink-2: ${token.colorContentSecondary};
+  --fc-muted: ${token.colorContentMuted};
+  --fc-muted-2: ${token.colorContentMuted};
+  --fc-line: ${token.colorSurfaceBorderSubtle};
+  --fc-line-strong: ${token.colorNeutral300};
+  --fc-pink: ${token.colorAccentDefault};
+  --fc-pink-soft: ${token.colorStatusBrandBackground};
+  --fc-pink-tint: ${token.colorAccentTint};
+  --fc-bg-soft: ${token.colorNeutral50};
   --fc-paper: #fffdfb;
-  --fc-green: #16a34a;
-  --fc-green-soft: #dcfce7;
+  --fc-green: ${token.colorStatusSuccessIndicator};
+  --fc-green-soft: ${token.colorStatusSuccessBackground};
   --fc-amber: #d97706;
   --fc-amber-soft: #fff3e0;
   --fc-red: #e11d48;
@@ -37,7 +38,8 @@ export const Root = styled.section.withConfig({
   --fc-stage-padding-block: 0.25rem 0.375rem;
   --fc-stage-padding-inline: 1.375rem;
   --fc-footer-min-height: 9.5rem;
-  --fc-footer-padding-block: 0.75rem calc(var(--safe-area-inset-bottom) + 1rem);
+  --fc-footer-padding-block: 0.75rem
+    calc(var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)) + 1rem);
   --fc-footer-padding-inline: 1.125rem;
   --fc-rate-row-gap: 0.5625rem;
   --fc-rate-question-margin: 0.75rem;

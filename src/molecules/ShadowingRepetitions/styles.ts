@@ -1,4 +1,5 @@
 import { styled, keyframes } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 const shadowPulse = keyframes`
   0%,
   100% {
@@ -14,7 +15,7 @@ export const Root = styled.div.withConfig({
 })`
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: ${token.spacing2};
 
   .dot {
     width: 0.5625rem;
@@ -37,12 +38,12 @@ export const Root = styled.div.withConfig({
   }
 
   .label {
-    margin-left: 0.25rem;
-    color: #6b6b6b;
+    margin-left: ${token.spacing1};
+    color: ${token.colorContentMuted};
     font-family:
       'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-size: ${token.typographyFontSizeXs};
+    font-weight: ${token.typographyFontWeightBold};
   }
 
   @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
@@ -52,7 +53,7 @@ export const Root = styled.div.withConfig({
     }
 
     .label {
-      font-size: 0.875rem;
+      font-size: ${token.typographyFontSizeSm};
     }
   }
 

@@ -1,14 +1,22 @@
-import { cleanup, render, screen } from '@testing-library/react'
-import { afterEach, it, expect } from 'vitest'
+import { render, screen } from '@testing-library/react'
+import { expect, it } from 'vitest'
 import { FlashcardFeedback } from '.'
-afterEach(cleanup)
-it('preserves native attributes and structured caller content without a private theme', () => {
+
+it('owns grade presentation and announces the next step once', () => {
   render(
-    <FlashcardFeedback data-testid="content">
-      <strong>Conteúdo fornecido</strong>
+    <FlashcardFeedback grade="good" mark="✓" next="volta amanhã">
+      Very good!
     </FlashcardFeedback>,
   )
-  expect(
-    screen.getByTestId('content').querySelector('strong')?.textContent,
-  ).toBe('Conteúdo fornecido')
+  expect(screen.getByText('✓')).toHaveAttribute('aria-hidden', 'true')
+  expect(screen.getByText('✓')).toHaveStyle({
+    background: 'var(--fc-green)',
+  })
+  expect(screen.getByText('Very good!')).toHaveStyle({
+    color: 'var(--fc-green)',
+  })
+  expect(screen.getByText('volta amanhã')).toHaveAttribute(
+    'aria-live',
+    'polite',
+  )
 })

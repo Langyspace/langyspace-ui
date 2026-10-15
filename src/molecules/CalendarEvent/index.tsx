@@ -5,6 +5,13 @@ export function CalendarEvent({
   type = 'button',
   ...props
 }: CalendarEventProps) {
-  return <Styled.Root {...props} type={type} data-tone={tone} />
+  return (
+    <Styled.Root
+      {...props}
+      type={type}
+      data-tone={tone}
+      data-ui-calendar-event="true"
+    />
+  )
 }
 export type { CalendarEventProps } from './types'

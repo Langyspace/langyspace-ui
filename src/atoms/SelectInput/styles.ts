@@ -3,11 +3,11 @@ import {
   fieldControlStyles,
   type FieldControlStyleProps,
 } from '../../foundations/fields'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Select = styled.select.withConfig({
   componentId: 'lsui-sc-select-input',
 })<FieldControlStyleProps>`
   ${fieldControlStyles}
-  padding-right: ${tokens.spacing[8]};
+  padding-right: ${token.spacing8};
 `

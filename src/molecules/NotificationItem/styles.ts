@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-notification-item',
@@ -7,15 +8,15 @@ export const Root = styled(Pressable).withConfig({
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   width: 100%;
-  gap: 0.75rem;
-  padding-top: 0.75rem;
-  padding-right: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 0.75rem;
-  border: 1px solid #ececea;
-  border-radius: 0.75rem;
-  color: #0a0a0a;
-  background: #ffffff;
+  gap: ${token.spacing3};
+  padding-top: ${token.spacing3};
+  padding-right: ${token.spacing3};
+  padding-bottom: ${token.spacing3};
+  padding-left: ${token.spacing3};
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusRounded};
+  color: ${token.colorContentDefault};
+  background: ${token.colorNeutral0};
   text-align: left;
   transition:
     color 150ms cubic-bezier(0.2, 0, 0, 1),
@@ -25,8 +26,8 @@ export const Root = styled(Pressable).withConfig({
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
   &:hover {
-    border-color: #0a0a0a;
-    background: #fafaf9;
+    border-color: ${token.colorSurfaceBorderStrong};
+    background: ${token.colorNeutral50};
   }
 
   &:focus-visible {
@@ -47,28 +48,28 @@ export const ItemTitle = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemtitle',
 })`
   display: block;
-  color: #0a0a0a;
-  font-size: 0.875rem;
-  font-weight: 600;
-  line-height: 1.25;
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
 `
 export const ItemBody = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itembody',
 })`
   display: block;
-  margin-top: 0.25rem;
-  color: #6b6b6b;
-  font-size: 0.875rem;
-  line-height: 1.5;
+  margin-top: ${token.spacing1};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
 `
 export const ItemMeta = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemmeta',
 })`
   display: block;
-  margin-top: 0.25rem;
-  color: #6b6b6b;
-  font-size: 0.75rem;
-  line-height: 1.25;
+  margin-top: ${token.spacing1};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  line-height: ${token.typographyLineHeightSnug};
 `
 export const ItemAction = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemaction',
@@ -76,10 +77,10 @@ export const ItemAction = styled.span.withConfig({
   display: inline-flex;
   flex-shrink: 0;
   align-items: center;
-  gap: 0.25rem;
-  color: #6b6b6b;
-  font-size: 0.75rem;
-  font-weight: 600;
+  gap: ${token.spacing1};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightSemibold};
   white-space: nowrap;
 
   @media (max-width: 900px) {

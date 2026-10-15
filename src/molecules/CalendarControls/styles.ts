@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Container = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-controls',
 })`
@@ -8,13 +8,13 @@ export const Container = styled.div.withConfig({
   flex-shrink: 0;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${tokens.spacing[2]};
-  margin-bottom: ${tokens.spacing[3]};
+  gap: ${token.spacing2};
+  margin-bottom: ${token.spacing3};
 `
 export const Label = styled.div`
   min-width: 0;
-  margin-left: ${tokens.spacing[1]};
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.md};
-  font-weight: ${tokens.typography.fontWeight.bold};
+  margin-left: ${token.spacing1};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeMd};
+  font-weight: ${token.typographyFontWeightBold};
 `

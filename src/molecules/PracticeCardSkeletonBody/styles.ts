@@ -1,5 +1,5 @@
 import { keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 const shimmer = keyframes`
   0% { background-position: 100% 0; }
@@ -12,8 +12,8 @@ export const Body = styled.div.withConfig({
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: ${tokens.spacing[2]};
-  padding: ${tokens.spacing[4]};
+  gap: ${token.spacing2};
+  padding: ${token.spacing4};
 
   > span:first-child {
     width: 72%;
@@ -27,12 +27,12 @@ export const Body = styled.div.withConfig({
 `
 
 export const Line = styled.span`
-  border-radius: ${tokens.radius.pill};
+  border-radius: ${token.radiusPill};
   background: linear-gradient(
     90deg,
-    ${tokens.color.neutral[50]} 0%,
-    ${tokens.color.neutral[100]} 48%,
-    ${tokens.color.neutral[50]} 100%
+    ${token.colorNeutral50} 0%,
+    ${token.colorNeutral100} 48%,
+    ${token.colorNeutral50} 100%
   );
   background-size: 200% 100%;
   animation: ${shimmer} 1.35s ease-in-out infinite;
@@ -47,7 +47,7 @@ export const Meta = styled.div`
   min-height: 0.875rem;
   align-items: center;
   justify-content: space-between;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
 
   > span {
     height: 0.75rem;

@@ -14,11 +14,11 @@ export const Root = styled.div.withConfig({
     transform 0.55s cubic-bezier(0.2, 0.8, 0.2, 1);
   will-change: transform;
 
-  .front {
+  [data-ui-flashcard-face='front'] {
     pointer-events: ${({ $flipped }) => ($flipped ? 'none' : 'auto')};
   }
 
-  .back {
+  [data-ui-flashcard-face='back'] {
     pointer-events: ${({ $flipped }) => ($flipped ? 'auto' : 'none')};
   }
 

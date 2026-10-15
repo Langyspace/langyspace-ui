@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-form-actions',
 })`
@@ -7,7 +7,7 @@ export const Root = styled.div.withConfig({
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-end;
-  gap: ${tokens.spacing[3]};
+  gap: ${token.spacing3};
   @media (max-width: 900px) {
     flex-direction: column;
     > button {

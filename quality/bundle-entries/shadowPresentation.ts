@@ -6,7 +6,6 @@ export {
   ShadowingTranslation,
   ShadowingControlDock,
   ShadowingControlCluster,
-  ShadowingContext,
   ShadowingRepetitions,
 } from '../../src'
 

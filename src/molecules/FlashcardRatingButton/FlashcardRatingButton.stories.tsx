@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardRatingButton } from '.'
+import { FlashcardCanvas } from '../../../.storybook/flashcard-fixtures'
 const meta = {
   title: 'Molecules/FlashcardRatingButton',
   component: FlashcardRatingButton,
@@ -7,9 +8,11 @@ const meta = {
   args: { grade: 'good', children: 'Bom', interval: '4 dias' },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: '8rem' }}>
-        <Story />
-      </div>
+      <FlashcardCanvas>
+        <div style={{ maxWidth: '8rem' }}>
+          <Story />
+        </div>
+      </FlashcardCanvas>
     ),
   ],
 } satisfies Meta<typeof FlashcardRatingButton>

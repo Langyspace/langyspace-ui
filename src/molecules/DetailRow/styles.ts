@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-detail-row',
 })`
@@ -7,7 +7,7 @@ export const Root = styled.div.withConfig({
   min-width: 0;
   align-items: center;
   gap: 12px;
-  border: 1px solid ${tokens.color.surfaceBorder.default};
+  border: 1px solid ${token.colorSurfaceBorderDefault};
   border-radius: 12px;
   padding: 11px 12px;
 `
@@ -19,21 +19,21 @@ export const Icon = styled.span`
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  background: ${tokens.color.neutral[50]};
-  color: ${tokens.color.content.muted};
+  background: ${token.colorNeutral50};
+  color: ${token.colorContentMuted};
 `
 export const Content = styled.div`
   flex: 1;
   min-width: 0;
 `
 export const Label = styled.div`
-  color: ${tokens.color.content.muted};
+  color: ${token.colorContentMuted};
   font-size: 11px;
-  font-weight: 600;
+  font-weight: ${token.typographyFontWeightSemibold};
 `
 export const Value = styled.div`
   margin-top: 1px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: ${token.typographyFontWeightMedium};
   overflow-wrap: anywhere;
 `

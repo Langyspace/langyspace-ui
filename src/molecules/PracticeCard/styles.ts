@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-practice-card',
@@ -9,16 +10,16 @@ export const Root = styled(Pressable).withConfig({
   flex-direction: column;
   overflow: hidden;
   padding: 0;
-  border: 1px solid #ececea;
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
   border-radius: 14px;
-  color: #0a0a0a;
-  background: #fff;
+  color: ${token.colorContentDefault};
+  background: ${token.colorNeutral0};
   text-align: left;
   transition:
     border-color 0.15s ease,
     transform 0.15s ease;
   &:hover:not(:disabled) {
-    border-color: #0a0a0a;
+    border-color: ${token.colorSurfaceBorderStrong};
     transform: translateY(-1px);
   }
   &:disabled {
@@ -30,15 +31,15 @@ export const Root = styled(Pressable).withConfig({
     outline-offset: 2px;
   }
   &[data-completed='true'] {
-    border-color: #d9d9d6;
-    background: #fafaf9;
+    border-color: ${token.colorNeutral300};
+    background: ${token.colorNeutral50};
     box-shadow: none;
     [data-ui-practice-card-cover] {
       opacity: 0.72;
       filter: grayscale(0.38);
     }
     &:hover:not(:disabled) {
-      background: #f1f1ef;
+      background: ${token.colorNeutral100};
     }
   }
   @media (prefers-reduced-motion: reduce) {

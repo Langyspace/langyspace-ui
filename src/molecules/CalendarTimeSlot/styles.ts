@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-calendar-time-slot',
@@ -8,22 +9,22 @@ export const Root = styled(Pressable).withConfig({
   height: 56px;
   padding: 4px;
   border: 0;
-  border-bottom: 1px solid #ececea;
-  color: #6b6b6b;
+  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
+  color: ${token.colorContentMuted};
   text-align: left;
-  background: #fff;
+  background: ${token.colorNeutral0};
   cursor: pointer;
   &[aria-disabled='true'] {
     cursor: default;
   }
   &[data-tone='muted'] {
-    background: #fafaf9;
+    background: ${token.colorNeutral50};
   }
   &:not([aria-disabled='true']):hover {
-    background: #fafaf9;
+    background: ${token.colorNeutral50};
   }
   &[data-selected='true'] {
-    color: #0a0a0a;
+    color: ${token.colorContentDefault};
     background: #e8fffe;
   }
   &:focus-visible {

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { CalendarDay } from '../CalendarDay'
 import { CalendarDayNumber } from '../CalendarDayNumber'
 import { CalendarMonthGrid } from '../CalendarMonthGrid'
 import * as Styled from './styles'
@@ -34,27 +35,28 @@ export function ScheduleCalendarMonth({
               )
           const available = daySlots.some((slot) => slot.state === 'available')
           return (
-            <Styled.MonthDay
+            <CalendarDay
               key={day.id}
               muted={Boolean(
                 day.outsideMonth ||
                 day.past ||
                 (!available && !dayEvents.length),
               )}
-              data-interactive={Boolean(actionable)}
-            >
-              {actionable && onSlotClick && (
-                <Styled.DayAction
-                  aria-label={`${day.label} · Opções dos horários`}
-                  onClick={() => onSlotClick(actionable.id)}
-                />
-              )}
-              <Styled.MonthEvents>
+              day={
                 <CalendarDayNumber
                   aria-current={day.today ? 'date' : undefined}
                 >
                   {day.dayNumber}
                 </CalendarDayNumber>
+              }
+              {...(actionable && onSlotClick
+                ? {
+                    openLabel: `${day.label} · Opções dos horários`,
+                    onOpen: () => onSlotClick(actionable.id),
+                  }
+                : { onOpen: undefined, openLabel: undefined })}
+            >
+              <Styled.MonthEvents>
                 {(expanded[day.id] ? dayEvents : dayEvents.slice(0, 3)).map(
                   (event) => (
                     <Styled.MonthEvent
@@ -89,7 +91,7 @@ export function ScheduleCalendarMonth({
                   </Styled.More>
                 )}
               </Styled.MonthEvents>
-            </Styled.MonthDay>
+            </CalendarDay>
           )
         })}
       </CalendarMonthGrid>

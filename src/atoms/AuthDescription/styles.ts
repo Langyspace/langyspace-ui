@@ -1,9 +1,9 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 const authDescriptionWidth = '25rem'
 const authDescriptionLineHeight = 1.55
-const authDescriptionSpacing = `clamp(${tokens.spacing[2]}, 1.5svh, ${tokens.spacing[3]})`
+const authDescriptionSpacing = `clamp(${token.spacing2}, 1.5svh, ${token.spacing3})`
 
 export const Description = styled.p.withConfig({
   componentId: 'lsui-sc-auth-description',
@@ -11,7 +11,7 @@ export const Description = styled.p.withConfig({
   max-width: ${authDescriptionWidth};
   margin: 0;
   margin-top: ${authDescriptionSpacing};
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
   line-height: ${authDescriptionLineHeight};
 `

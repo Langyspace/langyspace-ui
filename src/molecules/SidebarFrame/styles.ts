@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.aside.withConfig({
   componentId: 'lsui-sc-sidebar-frame',
 })`
@@ -10,6 +10,6 @@ export const Root = styled.aside.withConfig({
   min-height: 0;
   flex-shrink: 0;
   height: 100svh;
-  background: #fff;
-  border-right: 1px solid ${tokens.color.surfaceBorder.subtle};
+  background: ${token.colorNeutral0};
+  border-right: 1px solid ${token.colorSurfaceBorderSubtle};
 `

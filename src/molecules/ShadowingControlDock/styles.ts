@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-control-dock',
 })`
@@ -6,18 +7,18 @@ export const Root = styled.div.withConfig({
   flex-shrink: 0;
   flex-direction: column;
   align-items: center;
-  gap: 0.75rem;
+  gap: ${token.spacing3};
   padding: 0.75rem 1.25rem 1rem;
-  border-top: 1px solid #ececea;
-  background: #ffffff;
+  border-top: 1px solid ${token.colorSurfaceBorderSubtle};
+  background: ${token.colorNeutral0};
 
   @media (max-width: 900px) {
-    padding-bottom: 1rem;
+    padding-bottom: ${token.spacing4};
   }
 
   @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
-    gap: 1rem;
-    padding-top: 1rem;
-    padding-bottom: 1.25rem;
+    gap: ${token.spacing4};
+    padding-top: ${token.spacing4};
+    padding-bottom: ${token.spacing5};
   }
 `

@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-auth-channel-icon',
 })<{ $channel: 'sms' | 'whatsapp' }>`
@@ -11,7 +12,7 @@ export const Root = styled.span.withConfig({
   border-radius: 50%;
   background-color: ${({ $channel }) =>
     $channel === 'sms' ? '#000000' : '#16A34A'};
-  color: #ffffff;
+  color: ${token.colorNeutral0};
 
   & + & {
     margin-left: -0.625rem;

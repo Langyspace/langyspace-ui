@@ -1,9 +1,10 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.p.withConfig({
   componentId: 'lsui-sc-page-description',
 })`
   margin: 4px 0 0;
-  color: #6b6b6b;
+  color: ${token.colorContentMuted};
   font-size: 14px;
-  line-height: 1.5;
+  line-height: ${token.typographyLineHeightNormal};
 `

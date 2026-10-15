@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { StatePanelDensity, StatePanelSurface } from './types'
 
 const compactDescriptionFontSize = '0.8125rem'
@@ -21,17 +21,17 @@ export const Container = styled.div.withConfig({
   min-height: ${({ $fill }) => ($fill ? filledPanelMinHeight : 'auto')};
   align-content: center;
   justify-items: center;
-  gap: ${({ $density }) => ($density === 'compact' ? compactPanelGap : tokens.spacing[2])};
-  padding: ${({ $density }) => ($density === 'compact' ? compactPanelPadding : `${tokens.spacing[16]} ${tokens.spacing[5]}`)};
+  gap: ${({ $density }) => ($density === 'compact' ? compactPanelGap : token.spacing2)};
+  padding: ${({ $density }) => ($density === 'compact' ? compactPanelPadding : `${token.spacing16} ${token.spacing5}`)};
   border-width: 1px;
   border-style: ${({ $surface }) => ($surface === 'dashed' ? 'dashed' : 'solid')};
   border-color: ${({ $surface }) =>
     $surface === 'dashed'
-      ? tokens.color.surfaceBorder.default
-      : tokens.color.surfaceBorder.subtle};
-  border-radius: ${tokens.radius.card};
-  color: ${tokens.color.neutral[600]};
-  background: ${tokens.color.neutral[0]};
+      ? token.colorSurfaceBorderDefault
+      : token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusCard};
+  color: ${token.colorNeutral600};
+  background: ${token.colorNeutral0};
   text-align: center;
 `
 export const Icon = styled.span`
@@ -43,18 +43,18 @@ export const Content = styled.div`
 `
 export const Title = styled.strong`
   display: block;
-  color: ${tokens.color.neutral[950]};
-  font-size: ${tokens.typography.fontSize.md};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorNeutral950};
+  font-size: ${token.typographyFontSizeMd};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
 `
 export const Description = styled.div<{ $density: StatePanelDensity }>`
-  margin-top: ${({ $density }) => ($density === 'compact' ? compactDescriptionOffset : tokens.spacing[1])};
-  font-size: ${({ $density }) => ($density === 'compact' ? compactDescriptionFontSize : tokens.typography.fontSize.sm)};
-  line-height: ${tokens.typography.lineHeight.normal};
+  margin-top: ${({ $density }) => ($density === 'compact' ? compactDescriptionOffset : token.spacing1)};
+  font-size: ${({ $density }) => ($density === 'compact' ? compactDescriptionFontSize : token.typographyFontSizeSm)};
+  line-height: ${token.typographyLineHeightNormal};
 `
 export const Action = styled.div<{ $density: StatePanelDensity }>`
   display: inline-flex;
   justify-content: center;
-  margin-top: ${({ $density }) => ($density === 'compact' ? 0 : tokens.spacing[1])};
+  margin-top: ${({ $density }) => ($density === 'compact' ? 0 : token.spacing1)};
 `

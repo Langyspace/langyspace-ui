@@ -1,5 +1,5 @@
 import { css, keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 const shake = keyframes`
   0%, 100% { transform: translateX(0); }
@@ -13,8 +13,8 @@ export const Row = styled.div.withConfig({
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: ${tokens.spacing[2]};
-  margin: ${tokens.spacing[4]} 0 ${tokens.spacing[6]};
+  gap: ${token.spacing2};
+  margin: ${token.spacing4} 0 ${token.spacing6};
 `
 
 export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
@@ -26,29 +26,29 @@ export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
   border: 2px solid
     ${({ $hasError, $isFilled }) =>
       $hasError
-        ? tokens.color.accent.default
+        ? token.colorAccentDefault
         : $isFilled
-          ? tokens.color.neutral[950]
-          : tokens.color.neutral[300]};
-  border-radius: ${tokens.radius.card};
+          ? token.colorNeutral950
+          : token.colorNeutral300};
+  border-radius: ${token.radiusCard};
   outline: 0;
   background-color: ${({ $hasError, $isFilled }) =>
     $hasError
-      ? tokens.color.accent.tint
+      ? token.colorAccentTint
       : $isFilled
-        ? tokens.color.neutral[50]
-        : tokens.color.neutral[0]};
-  color: ${tokens.color.neutral[950]};
-  font-size: ${tokens.typography.fontSize['2xl']};
-  font-weight: ${tokens.typography.fontWeight.bold};
+        ? token.colorNeutral50
+        : token.colorNeutral0};
+  color: ${token.colorNeutral950};
+  font-size: ${token.typographyFontSize2xl};
+  font-weight: ${token.typographyFontWeightBold};
   text-align: center;
   transition:
-    background-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    border-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    transform ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive};
+    background-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    border-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    transform ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive};
 
   ${({ $hasError }) =>
     $hasError &&
@@ -57,7 +57,7 @@ export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
     `}
 
   &:focus {
-    border-color: ${tokens.color.neutral[950]};
+    border-color: ${token.colorNeutral950};
     transform: translateY(-1px);
   }
 
@@ -73,6 +73,6 @@ export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
 
   @media (min-width: 768px) {
     max-width: 3.75rem;
-    font-size: ${tokens.typography.fontSize['3xl']};
+    font-size: ${token.typographyFontSize3xl};
   }
 `

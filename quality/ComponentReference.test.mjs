@@ -51,7 +51,13 @@ describe('component reference query', () => {
     const contract = publicComponentContracts.find(
       ({ exportName }) => exportName === 'SearchInput',
     )
-    expect(queryComponent('Button').consumerStatus).toBe('not_inventoried')
+    const button = publicComponentContracts.find(
+      ({ exportName }) => exportName === 'Button',
+    )
+    expect(queryComponent('Button').consumerStatus).toBe('examples_recorded')
+    expect(
+      describeComponent({ ...button, reference: undefined }).consumerStatus,
+    ).toBe('not_inventoried')
     expect(
       describeComponent({
         ...contract,
@@ -99,10 +105,36 @@ describe('component reference query', () => {
     "import type { SearchInput } from '@langyspace/ui'; export const page = <SearchInput />",
     "import { SearchInput } from '@langyspace/ui'; export const page = <div />",
     "import { SearchInput } from './local'; export const page = <SearchInput />",
+    "import { SearchInput } from '@langyspace/ui'; export function Page({ SearchInput }) { return <SearchInput /> }",
   ])('rejects an example without runtime import and JSX use: %s', (source) => {
     const { workspace } = createWorkspace(source)
     expect(() => queryComponent('SearchInput', workspace)).toThrow(
       'Missing runtime import and JSX use',
     )
+  })
+
+  it('traces real JSX through local reexports and styled composition', () => {
+    const { workspace } = createWorkspace(
+      "import * as Styled from './ui-reference-styles'; export const page = <Styled.Search />",
+    )
+    for (const consumer of queryComponent('SearchInput').consumers) {
+      const folder = dirname(
+        join(workspace, consumer.repository, consumer.path),
+      )
+      writeFileSync(
+        join(folder, 'ui-reference-controls.ts'),
+        "export { SearchInput as SearchControl } from '@langyspace/ui'",
+      )
+      writeFileSync(
+        join(folder, 'ui-reference-styles.ts'),
+        "import styled from 'styled-components'; import { SearchControl } from './ui-reference-controls'; export const Search = styled(SearchControl)``",
+      )
+    }
+    const result = queryComponent('SearchInput', workspace)
+    for (const consumer of result.consumers) {
+      expect(consumer.verification).toBe('composition_and_jsx_verified')
+      expect(consumer.composition).toHaveLength(3)
+      expect(consumer.composition[0]).toBe(consumer.path)
+    }
   })
 })

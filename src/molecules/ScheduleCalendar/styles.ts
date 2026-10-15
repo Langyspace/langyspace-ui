@@ -2,7 +2,6 @@ import { styled } from 'styled-components'
 import { tokens } from '../../foundations/tokens'
 import { CalendarTimeSlot } from '../CalendarTimeSlot'
 import { TimelineEvent } from '../TimelineEvent'
-import { CalendarDay } from '../CalendarDay'
 import { CalendarEvent } from '../CalendarEvent'
 import { Pressable } from '../../primitives/Pressable'
 
@@ -157,24 +156,8 @@ export const MonthWeekday = styled.div`
   font-weight: ${tokens.typography.fontWeight.semibold};
 `
 
-export const MonthDay = styled(CalendarDay)`
-  position: relative;
-`
-
-export const DayAction = styled(Pressable)`
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
-  &:focus-visible {
-    outline: 3px solid ${tokens.color.brand.default};
-    outline-offset: -3px;
-  }
-`
-
 export const MonthEvents = styled.div`
+  z-index: 1;
   display: flex;
   flex-direction: column;
   min-width: 0;

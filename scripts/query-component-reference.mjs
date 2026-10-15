@@ -1,50 +1,8 @@
 import { fileURLToPath } from 'node:url'
 import { resolve } from 'node:path'
 import { readFileSync } from 'node:fs'
-import ts from 'typescript'
+import { createComponentUsageResolver } from './component-usage.mjs'
 import { publicComponentContracts } from '../quality/component-manifest.ts'
-
-function usesComponent(source, exportName) {
-  const localNames = new Set()
-  const namespaces = new Set()
-  for (const statement of source.statements) {
-    if (
-      !ts.isImportDeclaration(statement) ||
-      !ts.isStringLiteral(statement.moduleSpecifier) ||
-      statement.moduleSpecifier.text !== '@langyspace/ui' ||
-      statement.importClause?.isTypeOnly
-    )
-      continue
-    const bindings = statement.importClause?.namedBindings
-    if (bindings && ts.isNamespaceImport(bindings)) {
-      namespaces.add(bindings.name.text)
-    } else if (bindings && ts.isNamedImports(bindings)) {
-      for (const element of bindings.elements) {
-        if (
-          !element.isTypeOnly &&
-          (element.propertyName ?? element.name).text === exportName
-        ) {
-          localNames.add(element.name.text)
-        }
-      }
-    }
-  }
-  function visit(node) {
-    if (ts.isJsxOpeningElement(node) || ts.isJsxSelfClosingElement(node)) {
-      const tag = node.tagName
-      if (ts.isIdentifier(tag) && localNames.has(tag.text)) return true
-      if (
-        ts.isPropertyAccessExpression(tag) &&
-        ts.isIdentifier(tag.expression) &&
-        namespaces.has(tag.expression.text) &&
-        tag.name.text === exportName
-      )
-        return true
-    }
-    return ts.forEachChild(node, visit)
-  }
-  return Boolean(visit(source))
-}
 
 function verifyConsumer(consumer, exportName, workspace) {
   const repositoryRoot = resolve(workspace, consumer.repository)
@@ -58,21 +16,22 @@ function verifyConsumer(consumer, exportName, workspace) {
     )
   }
   const sourcePath = resolve(repositoryRoot, consumer.path)
-  const source = ts.createSourceFile(
-    sourcePath,
-    readFileSync(sourcePath, 'utf8'),
-    ts.ScriptTarget.Latest,
-    true,
-    ts.ScriptKind.TSX,
-  )
-  if (!usesComponent(source, exportName)) {
+  const resolver = createComponentUsageResolver(repositoryRoot, [sourcePath])
+  const usage = resolver
+    .uses(sourcePath)
+    .find((item) => item.exportName === exportName)
+  if (!usage) {
     throw new Error(
       `Missing runtime import and JSX use of ${exportName}: ${consumer.repository}/${consumer.path}`,
     )
   }
   return {
     ...consumer,
-    verification: 'import_and_jsx_verified',
+    verification:
+      usage.path.length === 1
+        ? 'import_and_jsx_verified'
+        : 'composition_and_jsx_verified',
+    composition: usage.path,
     declaredDependency,
     declaredVersion:
       declaredDependency.match(/\/releases\/download\/v([^/]+)\//)?.[1] ?? null,

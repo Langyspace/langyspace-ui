@@ -5,6 +5,23 @@ import { SearchInput } from '.'
 import type { SearchInputClearAction, SearchInputProps } from './types'
 
 describe('SearchInput', () => {
+  it('keeps a stable callback ref attached and runs its React cleanup on unmount', () => {
+    const cleanup = vi.fn()
+    const ref = vi.fn(() => cleanup)
+    const { rerender, unmount } = render(
+      <SearchInput aria-label="Busca" ref={ref} value="A" readOnly />,
+    )
+    const input = screen.getByRole('searchbox')
+
+    rerender(<SearchInput aria-label="Busca" ref={ref} value="AB" readOnly />)
+
+    expect(ref).toHaveBeenCalledExactlyOnceWith(input)
+    expect(cleanup).not.toHaveBeenCalled()
+    unmount()
+    expect(cleanup).toHaveBeenCalledTimes(1)
+    expect(ref).toHaveBeenCalledTimes(1)
+  })
+
   it('focuses the input when its decorative icon or surface is clicked', async () => {
     const user = userEvent.setup()
     const { container } = render(<SearchInput aria-label="Busca" />)

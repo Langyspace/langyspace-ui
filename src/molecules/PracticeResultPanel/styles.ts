@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Panel = styled.div.withConfig({
   componentId: 'lsui-sc-practice-result-panel',
@@ -9,6 +9,6 @@ export const Panel = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${tokens.spacing[4]};
+  gap: ${token.spacing4};
   text-align: center;
 `

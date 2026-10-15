@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-quiz-question',
 })`
@@ -8,7 +9,7 @@ export const Root = styled.div.withConfig({
   min-width: 0;
   color: var(--quiz-ink, #0a0a0a);
   font-size: 23px;
-  font-weight: 700;
+  font-weight: ${token.typographyFontWeightBold};
   line-height: 1.4;
   text-wrap: pretty;
   [data-ui-skeleton] + [data-ui-skeleton] {

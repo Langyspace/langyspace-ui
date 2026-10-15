@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Body = styled.div.withConfig({
   componentId: 'lsui-sc-practice-card-body',
@@ -7,26 +7,26 @@ export const Body = styled.div.withConfig({
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: ${tokens.spacing[2]};
-  padding: ${tokens.spacing[4]};
+  gap: ${token.spacing2};
+  padding: ${token.spacing4};
 `
 
 export const Title = styled.h3<{ $completed: boolean }>`
   margin: 0;
-  color: ${({ $completed }) => ($completed ? tokens.color.content.secondary : tokens.color.content.default)};
-  font-size: ${tokens.typography.fontSize.md};
-  font-weight: ${tokens.typography.fontWeight.bold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${({ $completed }) => ($completed ? token.colorContentSecondary : token.colorContentDefault)};
+  font-size: ${token.typographyFontSizeMd};
+  font-weight: ${token.typographyFontWeightBold};
+  line-height: ${token.typographyLineHeightSnug};
 `
 
 export const Meta = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: ${tokens.spacing[2]};
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  gap: ${token.spacing2};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
 
   > span {
     min-width: 0;

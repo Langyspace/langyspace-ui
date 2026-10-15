@@ -1,12 +1,12 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-stat-label',
 })`
   margin-top: 7px;
-  color: ${tokens.color.content.muted};
+  color: ${token.colorContentMuted};
   font-size: 10px;
-  font-weight: 700;
+  font-weight: ${token.typographyFontWeightBold};
   letter-spacing: 0.06em;
   text-transform: uppercase;
   [data-tone='brand'] & {

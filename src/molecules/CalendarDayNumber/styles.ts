@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-calendar-day-number',
 })`
@@ -9,13 +10,13 @@ export const Root = styled.span.withConfig({
   min-width: 24px;
   height: 24px;
   padding: 0 8px;
-  border-radius: 999px;
+  border-radius: ${token.radiusPill};
   color: inherit;
   background: transparent;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: ${token.typographyFontWeightSemibold};
   &[aria-current='date'] {
-    color: #fff;
-    background: #0a0a0a;
+    color: ${token.colorNeutral0};
+    background: ${token.colorNeutral950};
   }
 `

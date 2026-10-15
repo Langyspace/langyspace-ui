@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({ componentId: 'lsui-sc-stat-card' })`
   position: relative;
   display: flex;
@@ -8,7 +9,7 @@ export const Root = styled.div.withConfig({ componentId: 'lsui-sc-stat-card' })`
   justify-content: space-between;
   border: 1px solid #e4e1da;
   border-radius: 14px;
-  background: #fff;
+  background: ${token.colorNeutral0};
   box-shadow: 0 1px 0 rgba(10, 10, 10, 0.03);
   padding: 12px 14px;
   &::before {

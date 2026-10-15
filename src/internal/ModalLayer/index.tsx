@@ -117,7 +117,7 @@ export function ModalLayer({
       getTabbableElements(panelRef.current)[0] ??
       panelRef.current
     focusTarget.focus({ preventScroll: true })
-  }, [deactivate, initialFocusRef, open])
+  }, [canUseDOM, deactivate, initialFocusRef, open])
 
   useEffect(() => deactivate, [deactivate])
 
@@ -127,6 +127,7 @@ export function ModalLayer({
     const handleEscape = (event: KeyboardEvent) => {
       const layer = layerRef.current
       if (
+        event.defaultPrevented ||
         event.key !== 'Escape' ||
         !layer ||
         !isTopModalLayer(layer.id) ||
@@ -140,15 +141,16 @@ export function ModalLayer({
       onClose()
     }
 
-    document.addEventListener('keydown', handleEscape, true)
-    return () => document.removeEventListener('keydown', handleEscape, true)
+    document.addEventListener('keydown', handleEscape)
+    return () => document.removeEventListener('keydown', handleEscape)
   }, [dismissal, onClose, open])
 
   const portalTarget = canUseDOM ? getPortalTarget() : null
   if (!open || !portalTarget) return null
 
   const handlePanelKeyDown = (event: ReactKeyboardEvent<HTMLDivElement>) => {
-    if (event.key !== 'Tab' || !panelRef.current) return
+    if (event.defaultPrevented || event.key !== 'Tab' || !panelRef.current)
+      return
 
     const layer = layerRef.current
     if (!layer || !isTopModalLayer(layer.id)) return

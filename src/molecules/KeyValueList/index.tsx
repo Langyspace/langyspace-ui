@@ -5,8 +5,8 @@ export function KeyValueList({ items, ...props }: KeyValueListProps) {
     <Styled.Root {...props}>
       {items.map((item) => (
         <Styled.Row key={item.id}>
-          <span>{item.label}</span>
-          <strong>{item.value}</strong>
+          <Styled.Label>{item.label}</Styled.Label>
+          <Styled.Value>{item.value}</Styled.Value>
         </Styled.Row>
       ))}
     </Styled.Root>

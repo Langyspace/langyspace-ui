@@ -1,13 +1,13 @@
 import { css, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { StatusChipSize, StatusChipTone } from './types'
 
 const sizeStyles = {
   md: css`
-    font-size: ${tokens.typography.fontSize.xs};
+    font-size: ${token.typographyFontSizeXs};
   `,
   sm: css`
-    font-size: ${tokens.typography.fontSize['2xs']};
+    font-size: ${token.typographyFontSize2xs};
   `,
 } satisfies Record<StatusChipSize, ReturnType<typeof css>>
 
@@ -22,12 +22,12 @@ export const Chip = styled.span.withConfig({
   width: fit-content;
   max-width: 100%;
   gap: 0.375rem;
-  padding: ${tokens.spacing[1]} 0.625rem;
-  border-radius: ${tokens.radius.pill};
-  color: ${({ $tone }) => tokens.color.status[$tone].foreground};
-  background: ${({ $tone }) => tokens.color.status[$tone].background};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  padding: ${token.spacing1} 0.625rem;
+  border-radius: ${token.radiusPill};
+  color: ${({ $tone }) => token.colorStatus[$tone].foreground};
+  background: ${({ $tone }) => token.colorStatus[$tone].background};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   white-space: nowrap;
 
   ${({ $size }) => sizeStyles[$size]}
@@ -52,6 +52,6 @@ export const Indicator = styled.span<{ $tone: StatusChipTone }>`
   width: 0.375rem;
   height: 0.375rem;
   flex-shrink: 0;
-  border-radius: ${tokens.radius.pill};
-  background: ${({ $tone }) => tokens.color.status[$tone].indicator};
+  border-radius: ${token.radiusPill};
+  background: ${({ $tone }) => token.colorStatus[$tone].indicator};
 `

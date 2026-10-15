@@ -1,5 +1,5 @@
 import { css, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import type {
   OperationalListCellStyleProps,
@@ -26,23 +26,23 @@ const densityPadding = css`
 
 const interactiveTitle = css`
   min-width: 0;
-  color: ${tokens.color.content.default};
+  color: ${token.colorContentDefault};
   font: inherit;
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   text-align: left;
   text-decoration: none;
   overflow-wrap: anywhere;
 
   &:hover {
-    color: ${tokens.color.brand.default};
+    color: ${token.colorBrandDefault};
     text-decoration: underline;
     text-underline-offset: 0.18em;
   }
 
   &:focus-visible {
-    border-radius: ${tokens.radius.control};
-    outline: 3px solid ${tokens.color.focus};
+    border-radius: ${token.radiusControl};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 2px;
   }
 `
@@ -50,21 +50,21 @@ const interactiveTitle = css`
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-operational-list',
 })`
-  --lsui-operational-list-cell-x: ${tokens.spacing[4]};
-  --lsui-operational-list-cell-y: ${tokens.spacing[4]};
-  --lsui-operational-list-action-gap: ${tokens.spacing[2]};
+  --lsui-operational-list-cell-x: ${token.spacing4};
+  --lsui-operational-list-cell-y: ${token.spacing4};
+  --lsui-operational-list-action-gap: ${token.spacing2};
 
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  color: ${tokens.color.content.default};
+  color: ${token.colorContentDefault};
   container-type: inline-size;
 
   &[data-density='compact'] {
-    --lsui-operational-list-cell-x: ${tokens.spacing[3]};
-    --lsui-operational-list-cell-y: ${tokens.spacing[3]};
+    --lsui-operational-list-cell-x: ${token.spacing3};
+    --lsui-operational-list-cell-y: ${token.spacing3};
     --lsui-operational-list-action-gap: calc(
-      ${tokens.spacing[1]} + ${tokens.spacing[1]} / 2
+      ${token.spacing1} + ${token.spacing1} / 2
     );
   }
 `
@@ -73,9 +73,9 @@ export const Surface = styled.div`
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  border: 1px solid ${tokens.color.surfaceBorder.subtle};
-  border-radius: ${tokens.radius.card};
-  background: ${tokens.color.neutral[0]};
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusCard};
+  background: ${token.colorNeutral0};
   overflow: hidden;
 
   @container (max-width: 71.99rem) {
@@ -92,7 +92,7 @@ export const Table = styled.table`
   border-spacing: 0;
   table-layout: auto;
   color: inherit;
-  font-size: ${tokens.typography.fontSize.sm};
+  font-size: ${token.typographyFontSizeSm};
 
   @container (max-width: 71.99rem) {
     display: block;
@@ -100,44 +100,44 @@ export const Table = styled.table`
     > tbody {
       display: grid;
       min-width: 0;
-      gap: ${tokens.spacing[3]};
+      gap: ${token.spacing3};
     }
   }
 `
 
 export const TableHead = styled.thead<OperationalListHeadStyleProps>`
-  background: ${tokens.color.surface.muted};
+  background: ${token.colorSurfaceMuted};
 
   @container (max-width: 71.99rem) {
     ${({ $hasSorting }) => !$hasSorting && visuallyHidden}
 
     display: block;
-    margin-bottom: ${tokens.spacing[3]};
-    border: 1px solid ${tokens.color.surfaceBorder.subtle};
-    border-radius: ${tokens.radius.rounded};
-    background: ${tokens.color.neutral[0]};
+    margin-bottom: ${token.spacing3};
+    border: 1px solid ${token.colorSurfaceBorderSubtle};
+    border-radius: ${token.radiusRounded};
+    background: ${token.colorNeutral0};
   }
 `
 
 export const HeaderRow = styled.tr`
-  border-bottom: 1px solid ${tokens.color.surfaceBorder.subtle};
+  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
 
   @container (max-width: 71.99rem) {
     display: flex;
     min-width: 0;
     flex-wrap: wrap;
-    gap: ${tokens.spacing[1]};
-    padding: ${tokens.spacing[2]};
+    gap: ${token.spacing1};
+    padding: ${token.spacing2};
     border: 0;
   }
 `
 
 export const ColumnHeader = styled.th<OperationalListHeaderStyleProps>`
   ${densityPadding}
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   text-align: ${({ $align }) => ($align === 'end' ? 'right' : 'left')};
   white-space: nowrap;
 
@@ -150,10 +150,10 @@ export const ColumnHeader = styled.th<OperationalListHeaderStyleProps>`
 export const ActionsHeader = styled.th`
   ${densityPadding}
   width: 1%;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   text-align: right;
   white-space: nowrap;
 
@@ -168,18 +168,18 @@ export const SortButton = styled(Pressable)`
   min-height: 2rem;
   align-items: center;
   justify-content: inherit;
-  gap: ${tokens.spacing[1]};
-  padding: ${tokens.spacing[1]} ${tokens.spacing[2]};
+  gap: ${token.spacing1};
+  padding: ${token.spacing1} ${token.spacing2};
   border: 0;
-  border-radius: ${tokens.radius.control};
+  border-radius: ${token.radiusControl};
   background: transparent;
   color: inherit;
   font: inherit;
   font-weight: inherit;
 
   &:hover {
-    color: ${tokens.color.content.default};
-    background: ${tokens.color.neutral[100]};
+    color: ${token.colorContentDefault};
+    background: ${token.colorNeutral100};
   }
 `
 
@@ -190,12 +190,12 @@ export const SortGlyph = styled.span`
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  font-size: ${tokens.typography.fontSize.xs};
+  font-size: ${token.typographyFontSizeXs};
   line-height: 1;
 `
 
 export const Row = styled.tr`
-  border-bottom: 1px solid ${tokens.color.surfaceBorder.subtle};
+  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
 
   &:last-child {
     border-bottom: 0;
@@ -203,7 +203,7 @@ export const Row = styled.tr`
 
   &:hover,
   &:focus-within {
-    background: ${tokens.color.surface.subtle};
+    background: ${token.colorSurfaceSubtle};
   }
 
   @container (max-width: 71.99rem) {
@@ -211,10 +211,10 @@ export const Row = styled.tr`
     display: grid;
     min-width: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    border: 1px solid ${tokens.color.surfaceBorder.subtle};
-    border-radius: ${tokens.radius.card};
-    background: ${tokens.color.neutral[0]};
-    box-shadow: ${tokens.shadow.subtle};
+    border: 1px solid ${token.colorSurfaceBorderSubtle};
+    border-radius: ${token.radiusCard};
+    background: ${token.colorNeutral0};
+    box-shadow: ${token.shadowSubtle};
     overflow: visible;
   }
 
@@ -241,7 +241,7 @@ export const PrimaryCell = styled.th`
     display: block;
     min-width: 0;
     grid-column: 1 / -1;
-    border-bottom: 1px solid ${tokens.color.surfaceBorder.subtle};
+    border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
   }
 `
 
@@ -249,7 +249,7 @@ export const PrimaryLayout = styled.div`
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: ${tokens.spacing[3]};
+  gap: ${token.spacing3};
 `
 
 export const Leading = styled.span`
@@ -264,14 +264,14 @@ export const PrimaryBody = styled.span`
   min-width: 0;
   flex: 1 1 auto;
   flex-direction: column;
-  gap: ${tokens.spacing[1]};
+  gap: ${token.spacing1};
 `
 
 export const PrimaryTitle = styled.span`
   min-width: 0;
-  color: ${tokens.color.content.default};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   overflow-wrap: anywhere;
 `
 
@@ -288,27 +288,27 @@ export const PrimaryButton = styled(Pressable)`
 
 export const PrimaryDescription = styled.span`
   min-width: 0;
-  color: ${tokens.color.content.secondary};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.medium};
-  line-height: ${tokens.typography.lineHeight.normal};
+  color: ${token.colorContentSecondary};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightMedium};
+  line-height: ${token.typographyLineHeightNormal};
   overflow-wrap: anywhere;
 `
 
 export const PrimaryMeta = styled.span`
   min-width: 0;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.medium};
-  line-height: ${tokens.typography.lineHeight.normal};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightMedium};
+  line-height: ${token.typographyLineHeightNormal};
   overflow-wrap: anywhere;
 `
 
 export const NavigationHint = styled.span`
   display: none;
   flex: 0 0 auto;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.lg};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeLg};
   line-height: 1;
 
   @container (max-width: 71.99rem) {
@@ -319,8 +319,8 @@ export const NavigationHint = styled.span`
 export const DataCell = styled.td<OperationalListCellStyleProps>`
   ${densityPadding}
   min-width: 0;
-  color: ${tokens.color.content.secondary};
-  line-height: ${tokens.typography.lineHeight.normal};
+  color: ${token.colorContentSecondary};
+  line-height: ${token.typographyLineHeightNormal};
   text-align: ${({ $align }) => ($align === 'end' ? 'right' : 'left')};
   vertical-align: middle;
   overflow-wrap: anywhere;
@@ -345,11 +345,11 @@ export const DataCell = styled.td<OperationalListCellStyleProps>`
 
 export const CompactLabel = styled.span`
   display: none;
-  margin-bottom: ${tokens.spacing[1]};
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize['2xs']};
-  font-weight: ${tokens.typography.fontWeight.bold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  margin-bottom: ${token.spacing1};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSize2xs};
+  font-weight: ${token.typographyFontWeightBold};
+  line-height: ${token.typographyLineHeightSnug};
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -373,7 +373,7 @@ export const ActionsCell = styled.td`
     width: auto;
     min-width: 0;
     grid-column: 1 / -1;
-    border-top: 1px solid ${tokens.color.surfaceBorder.subtle};
+    border-top: 1px solid ${token.colorSurfaceBorderSubtle};
   }
 `
 
@@ -419,17 +419,17 @@ export const QuickActions = styled.div`
 `
 
 export const EmptyCell = styled.td`
-  padding: ${tokens.spacing[8]} ${tokens.spacing[4]};
-  color: ${tokens.color.content.muted};
+  padding: ${token.spacing8} ${token.spacing4};
+  color: ${token.colorContentMuted};
   text-align: center;
 
   @container (max-width: 71.99rem) {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border: 1px solid ${tokens.color.surfaceBorder.subtle};
-    border-radius: ${tokens.radius.card};
-    background: ${tokens.color.neutral[0]};
+    border: 1px solid ${token.colorSurfaceBorderSubtle};
+    border-radius: ${token.radiusCard};
+    background: ${token.colorNeutral0};
   }
 `
 
@@ -437,5 +437,5 @@ export const Footer = styled.div`
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  margin-top: ${tokens.spacing[3]};
+  margin-top: ${token.spacing3};
 `

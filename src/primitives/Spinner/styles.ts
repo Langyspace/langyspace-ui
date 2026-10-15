@@ -1,5 +1,5 @@
 import { keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { SpinnerSize, SpinnerStyleProps } from './types'
 
 const sizes = {
@@ -26,7 +26,7 @@ export const Spinner = styled.span.withConfig({
   border: 2px solid currentcolor;
   border-right-color: transparent;
   border-radius: 50%;
-  animation: ${spin} ${tokens.motion.duration.spinner} linear infinite;
+  animation: ${spin} ${token.motionDurationSpinner} linear infinite;
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 const authTitleSize = { mobile: '1.75rem', desktop: '2.375rem' } as const
 const authTitleBreakpoint = '768px'
@@ -9,9 +9,9 @@ export const Title = styled.h2.withConfig({
   componentId: 'lsui-sc-auth-title',
 })`
   margin: 0;
-  color: ${tokens.color.content.default};
+  color: ${token.colorContentDefault};
   font-size: ${authTitleSize.mobile};
-  font-weight: ${tokens.typography.fontWeight.bold};
+  font-weight: ${token.typographyFontWeightBold};
   letter-spacing: 0;
   line-height: ${authTitleLineHeight};
 

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Notice = styled.aside.withConfig({
   componentId: 'lsui-sc-notice-banner',
@@ -7,11 +7,11 @@ export const Notice = styled.aside.withConfig({
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  column-gap: ${tokens.spacing[3]};
-  padding: ${tokens.spacing[3]} ${tokens.spacing[4]};
-  border: 1px solid ${tokens.color.surfaceBorder.subtle};
-  border-radius: ${tokens.radius.lg};
-  background: ${tokens.color.neutral[50]};
+  column-gap: ${token.spacing3};
+  padding: ${token.spacing3} ${token.spacing4};
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusLg};
+  background: ${token.colorNeutral50};
   box-shadow:
     0 1px 0 rgba(10, 10, 10, 0.04),
     0 1px 2px rgba(10, 10, 10, 0.04);
@@ -29,9 +29,9 @@ export const Icon = styled.span.withConfig({
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: ${tokens.radius.pill};
-  background: ${tokens.color.neutral[100]};
-  color: ${tokens.color.content.secondary};
+  border-radius: ${token.radiusPill};
+  background: ${token.colorNeutral100};
+  color: ${token.colorContentSecondary};
 `
 export const Copy = styled.div.withConfig({
   componentId: 'lsui-sc-notice-copy',
@@ -44,28 +44,28 @@ export const Actions = styled.div.withConfig({
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
   @media (max-width: 768px) {
     grid-column: 1 / -1;
     justify-self: end;
-    margin-top: ${tokens.spacing[3]};
+    margin-top: ${token.spacing3};
   }
 `
 export const Title = styled.strong.withConfig({
   componentId: 'lsui-sc-notice-title',
 })`
   display: block;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.sm};
-  font-weight: ${tokens.typography.fontWeight.bold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightBold};
+  line-height: ${token.typographyLineHeightSnug};
 `
 export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-notice-text',
 })`
   display: block;
-  margin-top: ${tokens.spacing[1]};
-  color: ${tokens.color.content.secondary};
-  font-size: ${tokens.typography.fontSize.sm};
-  line-height: ${tokens.typography.lineHeight.normal};
+  margin-top: ${token.spacing1};
+  color: ${token.colorContentSecondary};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
 `

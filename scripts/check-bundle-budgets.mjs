@@ -2,6 +2,7 @@ import { gzipSync } from 'node:zlib'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { build } from 'vite'
+import { styledComponentsBuild } from './styled-components-build.mjs'
 
 const root = resolve(import.meta.dirname, '..')
 const budgets = JSON.parse(
@@ -60,6 +61,7 @@ for (const entry of [
   'dataPresentation',
 ]) {
   const result = await build({
+    plugins: [styledComponentsBuild()],
     build: {
       lib: {
         entry: resolve(root, `quality/bundle-entries/${entry}.ts`),

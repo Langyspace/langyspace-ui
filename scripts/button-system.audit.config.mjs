@@ -22,6 +22,13 @@ export default defineAuditConfig({
   ],
   allowedDomainMotion: [
     {
+      owner: 'Flashcard pronunciation presentation',
+      path: 'src/molecules/FlashcardAudioButton/styles.ts',
+      reason:
+        'Existing finite 600ms pronunciation pulse shared from Student/Teacher; audio ownership stays local and reduced motion disables the pulse',
+      expiresAt: '2027-04-15',
+    },
+    {
       owner: 'Shadowing presentation',
       path: 'src/molecules/ShadowingPhraseStack/styles.ts',
       reason:

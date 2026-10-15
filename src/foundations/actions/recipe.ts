@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { tokens } from '../tokens'
+import * as token from '../tokenValues'
 import type {
   ActionRecipeStyleProps,
   ActionShape,
@@ -8,181 +8,181 @@ import type {
 } from './types'
 
 const shapeRadii = {
-  pill: tokens.radius.pill,
-  rounded: tokens.radius.rounded,
+  pill: token.radiusPill,
+  rounded: token.radiusRounded,
 } satisfies Record<ActionShape, string>
 
 export const actionSizeHeights = {
-  sm: tokens.control.height.sm,
-  md: tokens.control.height.md,
-  lg: tokens.control.height.lg,
+  sm: token.controlHeightSm,
+  md: token.controlHeightMd,
+  lg: token.controlHeightLg,
 } satisfies Record<ActionSize, string>
 
 const sizeStyles = {
   sm: css`
     min-height: ${actionSizeHeights.sm};
-    gap: ${tokens.spacing[2]};
-    padding-right: ${tokens.spacing[3]};
-    padding-left: ${tokens.spacing[3]};
-    font-size: ${tokens.typography.fontSize.sm};
+    gap: ${token.spacing2};
+    padding-right: ${token.spacing3};
+    padding-left: ${token.spacing3};
+    font-size: ${token.typographyFontSizeSm};
   `,
   md: css`
     min-height: ${actionSizeHeights.md};
-    gap: ${tokens.spacing[2]};
-    padding-right: ${tokens.spacing[5]};
-    padding-left: ${tokens.spacing[5]};
-    font-size: ${tokens.typography.fontSize.md};
+    gap: ${token.spacing2};
+    padding-right: ${token.spacing5};
+    padding-left: ${token.spacing5};
+    font-size: ${token.typographyFontSizeMd};
   `,
   lg: css`
     min-height: ${actionSizeHeights.lg};
-    gap: ${tokens.spacing[3]};
-    padding-right: ${tokens.spacing[6]};
-    padding-left: ${tokens.spacing[6]};
-    font-size: ${tokens.typography.fontSize.md};
+    gap: ${token.spacing3};
+    padding-right: ${token.spacing6};
+    padding-left: ${token.spacing6};
+    font-size: ${token.typographyFontSizeMd};
   `,
 } satisfies Record<ActionSize, ReturnType<typeof css>>
 
 const compactSizeStyles = {
   sm: css``,
   md: css`
-    padding-right: ${tokens.spacing[4]};
-    padding-left: ${tokens.spacing[4]};
-    font-size: ${tokens.typography.fontSize.sm};
+    padding-right: ${token.spacing4};
+    padding-left: ${token.spacing4};
+    font-size: ${token.typographyFontSizeSm};
   `,
   lg: css`
-    padding-right: ${tokens.spacing[5]};
-    padding-left: ${tokens.spacing[5]};
+    padding-right: ${token.spacing5};
+    padding-left: ${token.spacing5};
   `,
 } satisfies Record<ActionSize, ReturnType<typeof css>>
 
 const variantStyles = {
   primary: css`
-    border-color: ${tokens.color.neutral[950]};
-    color: ${tokens.color.neutral[0]};
-    background-color: ${tokens.color.neutral[950]};
+    border-color: ${token.colorNeutral950};
+    color: ${token.colorNeutral0};
+    background-color: ${token.colorNeutral950};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.neutral[900]};
-      background-color: ${tokens.color.neutral[900]};
-      box-shadow: ${tokens.shadow.raised};
+      border-color: ${token.colorNeutral900};
+      background-color: ${token.colorNeutral900};
+      box-shadow: ${token.shadowRaised};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.neutral[950]};
-      background-color: ${tokens.color.neutral[950]};
+      border-color: ${token.colorNeutral950};
+      background-color: ${token.colorNeutral950};
       transform: translateY(0);
     }
   `,
   secondary: css`
-    border-color: ${tokens.color.neutral[300]};
-    color: ${tokens.color.neutral[950]};
-    background-color: ${tokens.color.neutral[0]};
+    border-color: ${token.colorNeutral300};
+    color: ${token.colorNeutral950};
+    background-color: ${token.colorNeutral0};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.neutral[500]};
-      background-color: ${tokens.color.neutral[50]};
-      box-shadow: ${tokens.shadow.subtle};
+      border-color: ${token.colorNeutral500};
+      background-color: ${token.colorNeutral50};
+      box-shadow: ${token.shadowSubtle};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${tokens.color.neutral[100]};
+      background-color: ${token.colorNeutral100};
       transform: translateY(0);
     }
   `,
   tertiary: css`
     border-color: transparent;
-    color: ${tokens.color.neutral[950]};
+    color: ${token.colorNeutral950};
     background-color: transparent;
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${tokens.color.neutral[50]};
+      background-color: ${token.colorNeutral50};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${tokens.color.neutral[100]};
+      background-color: ${token.colorNeutral100};
       transform: translateY(0);
     }
   `,
   brand: css`
-    border-color: ${tokens.color.brand.default};
-    color: ${tokens.color.neutral[0]};
-    background-color: ${tokens.color.brand.default};
+    border-color: ${token.colorBrandDefault};
+    color: ${token.colorNeutral0};
+    background-color: ${token.colorBrandDefault};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.brand.hover};
-      background-color: ${tokens.color.brand.hover};
-      box-shadow: ${tokens.shadow.raised};
+      border-color: ${token.colorBrandHover};
+      background-color: ${token.colorBrandHover};
+      box-shadow: ${token.shadowRaised};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.brand.hover};
-      background-color: ${tokens.color.brand.hover};
+      border-color: ${token.colorBrandHover};
+      background-color: ${token.colorBrandHover};
       transform: translateY(0);
     }
   `,
   danger: css`
-    border-color: ${tokens.color.feedback.danger};
-    color: ${tokens.color.neutral[0]};
-    background-color: ${tokens.color.feedback.danger};
+    border-color: ${token.colorFeedbackDanger};
+    color: ${token.colorNeutral0};
+    background-color: ${token.colorFeedbackDanger};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.feedback.dangerStrong};
-      background-color: ${tokens.color.feedback.dangerStrong};
-      box-shadow: ${tokens.shadow.raised};
+      border-color: ${token.colorFeedbackDangerStrong};
+      background-color: ${token.colorFeedbackDangerStrong};
+      box-shadow: ${token.shadowRaised};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.feedback.dangerStrong};
-      background-color: ${tokens.color.feedback.dangerStrong};
+      border-color: ${token.colorFeedbackDangerStrong};
+      background-color: ${token.colorFeedbackDangerStrong};
       transform: translateY(0);
     }
   `,
   success: css`
-    border-color: ${tokens.color.feedback.success};
-    color: ${tokens.color.neutral[0]};
-    background-color: ${tokens.color.feedback.success};
+    border-color: ${token.colorFeedbackSuccess};
+    color: ${token.colorNeutral0};
+    background-color: ${token.colorFeedbackSuccess};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.feedback.successStrong};
-      background-color: ${tokens.color.feedback.successStrong};
-      box-shadow: ${tokens.shadow.raised};
+      border-color: ${token.colorFeedbackSuccessStrong};
+      background-color: ${token.colorFeedbackSuccessStrong};
+      box-shadow: ${token.shadowRaised};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.feedback.successStrong};
-      background-color: ${tokens.color.feedback.successStrong};
+      border-color: ${token.colorFeedbackSuccessStrong};
+      background-color: ${token.colorFeedbackSuccessStrong};
       transform: translateY(0);
     }
   `,
   inverse: css`
     border-color: transparent;
-    color: ${tokens.color.neutral[0]};
+    color: ${token.colorNeutral0};
     background-color: transparent;
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.neutral[0]};
-      color: ${tokens.color.neutral[950]};
-      background-color: ${tokens.color.neutral[0]};
+      border-color: ${token.colorNeutral0};
+      color: ${token.colorNeutral950};
+      background-color: ${token.colorNeutral0};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${tokens.color.neutral[100]};
-      color: ${tokens.color.neutral[950]};
-      background-color: ${tokens.color.neutral[100]};
+      border-color: ${token.colorNeutral100};
+      color: ${token.colorNeutral950};
+      background-color: ${token.colorNeutral100};
       transform: translateY(0);
     }
   `,
@@ -203,24 +203,23 @@ export const actionRecipe = css<ActionRecipeStyleProps>`
   border-radius: ${({ $shape }) => shapeRadii[$shape]};
   appearance: none;
   font: inherit;
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   overflow-wrap: anywhere;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition:
-    background-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    border-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    box-shadow ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    transform ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive};
+    background-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    border-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    box-shadow ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    color ${token.motionDurationInteractive} ${token.motionEasingInteractive},
+    transform ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive};
 
   ${({ $fullWidth }) =>
     $fullWidth &&
@@ -233,7 +232,7 @@ export const actionRecipe = css<ActionRecipeStyleProps>`
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${tokens.shadow.focus};
+    box-shadow: ${token.shadowFocus};
   }
 
   @media (prefers-reduced-motion: reduce) {

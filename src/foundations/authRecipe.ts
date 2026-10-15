@@ -1,48 +1,48 @@
-import { tokens } from './tokens'
+import * as token from './tokenValues'
 
 // Established auth rhythm, shared across the two portals without a consumer ThemeProvider.
 export const authRecipe = {
   spacing: {
-    ...tokens.spacing,
+    ...token.spacing,
     12: '3rem',
     responsive: {
       block: {
-        '2xl': `clamp(${tokens.spacing[6]}, 4svh, 2.5rem)`,
+        '2xl': `clamp(${token.spacing6}, 4svh, 2.5rem)`,
         '4xl': `clamp(3rem, 8svh, 5rem)`,
-        sm: `clamp(${tokens.spacing[4]}, 2.5svh, ${tokens.spacing[5]})`,
-        lg: `clamp(${tokens.spacing[4]}, 3svh, ${tokens.spacing[6]})`,
-        xl: `clamp(${tokens.spacing[6]}, 4svh, ${tokens.spacing[8]})`,
+        sm: `clamp(${token.spacing4}, 2.5svh, ${token.spacing5})`,
+        lg: `clamp(${token.spacing4}, 3svh, ${token.spacing6})`,
+        xl: `clamp(${token.spacing6}, 4svh, ${token.spacing8})`,
       },
       compactBlock: {
-        sm: `clamp(${tokens.spacing[3]}, 2svh, ${tokens.spacing[4]})`,
-        md: `clamp(${tokens.spacing[3]}, 2.5svh, ${tokens.spacing[5]})`,
-        xl: `clamp(${tokens.spacing[4]}, 3.5svh, ${tokens.spacing[8]})`,
+        sm: `clamp(${token.spacing3}, 2svh, ${token.spacing4})`,
+        md: `clamp(${token.spacing3}, 2.5svh, ${token.spacing5})`,
+        xl: `clamp(${token.spacing4}, 3.5svh, ${token.spacing8})`,
       },
     },
   },
   typography: {
-    ...tokens.typography,
-    fontSize: { ...tokens.typography.fontSize, '4xl': '2.5rem' },
-    lineHeight: { ...tokens.typography.lineHeight, tight: 1.1 },
+    ...token.typography,
+    fontSize: { ...token.typographyFontSize, '4xl': '2.5rem' },
+    lineHeight: { ...token.typographyLineHeight, tight: 1.1 },
     letterSpacing: { normal: '0', wide: '0.01em' },
-    fontWeight: { ...tokens.typography.fontWeight, regular: 400 },
+    fontWeight: { ...token.typographyFontWeight, regular: 400 },
   },
   colors: {
     surface: {
-      raised: tokens.color.neutral[0],
-      muted: tokens.color.neutral[50],
-      subtle: tokens.color.neutral[100],
+      raised: token.colorNeutral0,
+      muted: token.colorNeutral50,
+      subtle: token.colorNeutral100,
     },
     text: {
-      primary: tokens.color.content.default,
-      muted: tokens.color.content.muted,
-      subtle: tokens.color.neutral[500],
-      inverse: tokens.color.neutral[0],
+      primary: token.colorContentDefault,
+      muted: token.colorContentMuted,
+      subtle: token.colorNeutral500,
+      inverse: token.colorNeutral0,
     },
-    brand: { accent: tokens.color.accent.default },
+    brand: { accent: token.colorAccentDefault },
   },
-  borders: { default: `1px solid ${tokens.color.neutral[300]}` },
-  radius: { pill: tokens.radius.pill, circle: '50%' },
+  borders: { default: `1px solid ${token.colorNeutral300}` },
+  radius: { pill: token.radiusPill, circle: '50%' },
   breakpoints: {
     sm: '640px',
     xs: '360px',

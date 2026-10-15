@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-flashcard-progress-segment',
   shouldForwardProp: (prop) => prop !== 'state',
@@ -7,7 +8,7 @@ export const Root = styled.span.withConfig({
   height: 0.3125rem;
   flex: 1;
   overflow: hidden;
-  border-radius: 999px;
+  border-radius: ${token.radiusPill};
   background: #eeece8;
 
   &::after {

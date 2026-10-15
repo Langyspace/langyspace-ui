@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "status": "immutable main-reconciled candidate; not official release",
+  "baseline": "8cdd415562db7f9aa060218ff00727aec7289dcb",
+  "supersedes": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
+  "calendarSource": "4edf3a4d8d6359c7b19e152c077eff77bd17b119",
+  "runtimeSourceDigest": "9658785484f8953a801f62cf92a0b795a67892da32418bd070ee8bc682d6bf81",
+  "artifactPath": ".github/artifacts/langyspace-ui-2.0.0-1b1f4351b9e02ea3.tgz",
+  "sha256": "1b1f4351b9e02ea39dcb9e55199dd128676b98e8a55b2e8aeebba21d36a21a0a",
+  "integrity": "sha512-ws9zpr7fczghBCf+hB6hoO8TgyE46CSl8hGp/iZ4cdYw+L1vS410tNCmxsCQiOGEmw6IQ4shC8/TsqcIxtn8PQ==",
+  "tarballBytes": 181962,
+  "distSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+  "mainReconciliation": {
+    "ui": "adcbc31",
+    "teacher": "32109d35",
+    "admin": "6f6c08b",
+    "changedPackagedFiles": [
+      "dist/index.js",
+      "dist/molecules/WeeklyCountChart/styles.d.ts.map"
+    ],
+    "declarationsByteIdentical": true,
+    "runtimeChange": "one min-height:0; insertion inside WeeklyCountChart Day; declaration map reflects the added source line"
+  }
+}

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Header = styled.header.withConfig({
   componentId: 'lsui-sc-message-thread-header',
@@ -8,7 +8,7 @@ export const Header = styled.header.withConfig({
   width: 100%;
   min-width: 0;
   align-items: center;
-  gap: ${tokens.spacing[3]};
+  gap: ${token.spacing3};
 `
 
 export const Action = styled.div`
@@ -23,7 +23,7 @@ export const Identity = styled.div`
   min-width: 0;
   flex: 1 1 auto;
   align-items: center;
-  gap: ${tokens.spacing[3]};
+  gap: ${token.spacing3};
 `
 
 export const Text = styled.div`
@@ -34,20 +34,20 @@ export const Text = styled.div`
 export const Title = styled.h2`
   overflow: hidden;
   margin: 0;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.md};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeMd};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   text-overflow: ellipsis;
   white-space: nowrap;
 `
 
 export const Subtitle = styled.p`
   overflow: hidden;
-  margin: ${tokens.spacing[1]} 0 0;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
-  line-height: ${tokens.typography.lineHeight.snug};
+  margin: ${token.spacing1} 0 0;
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
+  line-height: ${token.typographyLineHeightSnug};
   text-overflow: ellipsis;
   white-space: nowrap;
 `

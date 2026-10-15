@@ -1,4 +1,7 @@
 export {
+  FlashcardAudioButton,
+  FlashcardFlipButton,
+  FlashcardWordSkeleton,
   FlashcardFrame,
   FlashcardStage,
   FlashcardDeck,
