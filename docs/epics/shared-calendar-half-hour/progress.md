@@ -10,7 +10,7 @@ Candidato preparado para revisão, com SHA-256 ao lado do tarball. Ambos os cons
 
 Dependência aberta do rollout: tipos das Functions do Teacher têm erros em arquivos da base fora do calendário. O detalhe e o plano coordenador estão em `langyspace-teacher/docs/epics/shared-calendar-half-hour/verification.md`. Revisar UI, backend/Teacher e depois Admin; resolver gates globais antes de promoção.
 
-Próxima ação: revisão humana do PR de `feat/shared-calendar-half-hour` para main e dos PRs de adoção para staging. Preservar esta feature/worktree enquanto aguarda.
+Integração aprovada e concluída no PR #28; veja o registro final ao fim deste documento e o coordenador Teacher para a publicação dos produtos.
 
 Revisão mínima de UX de 2026-10-15 concluída: quatro correções centralizadas na UI (mês mobile, expansão de aulas, clique após arraste e prioridade/contador da agenda). Layout preservado, sem nova API; acessibilidade fora do escopo por pedido do produto. 13 testes únicos de componente, build/API e browser sintético Chromium 390/1440 nos dois produtos + WebKit 390 Teacher passaram. Novo candidato e evidências descritos em verification.md. Consumidores adotam o mesmo tarball imutável; nenhum backend alterado nesta revisão. Atualização dos mesmos PRs draft, sem merge, release ou deploy.
 
@@ -29,3 +29,11 @@ A matriz completa de 370 stories foi particionada em quatro grupos disjuntos (93
 A execução 38770987431 confirmou testes, arquitetura, pacote e duas partições visuais. As outras encontraram três fixtures antigas sem o contexto de composição exigido: CalendarMonthGrid/CalendarWeekGrid agora são demonstrados dentro de CalendarScroller; FlashcardProgressSegment recebe o host flex usado pelo produto. Nenhum componente de runtime, export ou tarball mudou. Três casos Storybook e 18 cenários visuais passaram; evidência pareada 390/1440px em ci-repairs. O pacote imutável 9055369 continua intacto.
 
 O catálogo completo de 4edf3a4 passou 369 stories; somente WeeklyCountChart teve overflow vertical de 8px. A correção de runtime se limita a min-height: 0 no item da grade, permitindo que a barra respeite os 120px já definidos. Seis cenários focados passaram, sem mudança da API, altura do gráfico ou layout da página. Evidências 390/1440px em ci-repairs. O novo pacote substitui o candidato anterior nos consumidores; SHA-256 tarball 083c5f62f05afea131ca00c0364e13294f57e812a8b4d9e2dd4dbcd4104fab6c, bundle bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525. Builds/backend previamente aprovados continuam válidos; os frontends serão reconstruídos e relidos em staging.
+
+## Integração concluída — 2026-10-15
+
+PR #28 integrado em main no commit adcbc31ffa8860075730cdd8bf1fdeada6ecf0b3, após aprovação do produto e CI completo do runtime 70e23a7916084e81d8d01feaa8b26cc89f8c17e2: arquitetura, pacote, testes/coverage e as quatro partições visuais passaram. Os 370 stories foram preservados na matriz; gate agregado também passou. Run: https://github.com/MarcosLaboriosi/langyspace-ui/actions/runs/38775221089.
+
+Teacher #48/#50 e Admin #17/#19 adotaram o mesmo candidato final 1.22.0, tarball 083c5f62f05afea131ca00c0364e13294f57e812a8b4d9e2dd4dbcd4104fab6c e bundle bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525. A fonte de runtime do merge é idêntica à revisão testada. Não houve release/tag oficial do pacote.
+
+Staging dos dois produtos foi publicado e relido em ambos os domínios de cada portal, incluindo login noop Teacher, abertura de 14:30, consulta da agenda Admin e persistência/cleanup de 30 minutos em fixture isolada. A publicação de produção e a sincronização final dos produtos são coordenadas no Teacher, em docs/epics/shared-calendar-half-hour/tasks/08-delivery.md e no recibo manual do mesmo epic. Não ficam tarefas de componente pendentes nesta biblioteca.
