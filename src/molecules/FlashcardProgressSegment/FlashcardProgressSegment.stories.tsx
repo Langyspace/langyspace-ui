@@ -4,7 +4,12 @@ const meta = {
   title: 'Molecules/FlashcardProgressSegment',
   component: FlashcardProgressSegment,
   tags: ['visual-review'],
-  args: { state: 'current', style: { width: 180, flex: 'none' } },
+  render: (args) => (
+    <div style={{ display: 'flex', width: 180 }}>
+      <FlashcardProgressSegment {...args} />
+    </div>
+  ),
+  args: { state: 'current' },
 } satisfies Meta<typeof FlashcardProgressSegment>
 export default meta
 type Story = StoryObj<typeof meta>
