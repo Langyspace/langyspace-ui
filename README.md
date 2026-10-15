@@ -1496,3 +1496,9 @@ Componente semântico com conteúdo e ações mantidos no produto. Atributos nat
 ```
 
 As partes oferecem apresentação; callbacks, resultados e persistência ficam no produto. `CardLink` fornece âncora nativa; bridges Router ficam no consumidor. `FormStack` é um div para organizar campos dentro de um form, sem alterar a semântica de submit. Os controles e recipes não dependem de um tema privado do portal.
+
+## ScheduleCalendar
+
+Agenda semanal e mensal baseada na apresentação do Teacher, com interação por meia hora e eventos de duração proporcional. Recebe dias, intervalos e eventos já normalizados para o fuso de exibição pelo consumidor. `navigation` compõe CalendarControls; `onOpenEvent`, `onSlotClick` e `onSlotSelection` retornam apenas IDs. Regras, permissões, horários ocupados, consultas e gravações pertencem aos produtos.
+
+O consumidor fornece nomes completos em `label`, títulos compactos e a interatividade de cada intervalo. Arraste seleciona retângulos de intervalos elegíveis; com teclado, Shift+setas estende e Enter confirma, Escape cancela. Toque preserva rolagem nativa e ação simples. Month mantém navegação e abertura de eventos com botões acessíveis. Não exige ThemeProvider ou estilos globais privados.

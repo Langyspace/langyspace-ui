@@ -1,0 +1,82 @@
+{
+  "stage": "after",
+  "product": "teacher",
+  "mode": "interactions",
+  "simulatedBoundaries": [
+    "data",
+    "mutations"
+  ],
+  "results": [
+    {
+      "product": "teacher",
+      "view": "week",
+      "width": 390,
+      "path": "week-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "view": "month",
+      "width": 390,
+      "path": "month-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "width": 390,
+      "path": "half-hour-390.png",
+      "interactions": [
+        "half-hour",
+        "success",
+        "failure-keeps-drawer",
+        "trial-event"
+      ],
+      "request": {
+        "slots": [
+          {
+            "endsAt": "2026-10-15T18:00:00.000Z",
+            "startsAt": "2026-10-15T17:30:00.000Z",
+            "timezone": "America/Sao_Paulo"
+          }
+        ],
+        "type": "blocked"
+      }
+    },
+    {
+      "product": "teacher",
+      "view": "week",
+      "width": 1440,
+      "path": "week-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "view": "month",
+      "width": 1440,
+      "path": "month-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "width": 1440,
+      "path": "half-hour-1440.png",
+      "interactions": [
+        "half-hour",
+        "success",
+        "failure-keeps-drawer",
+        "trial-event",
+        "keyboard-selection"
+      ],
+      "request": {
+        "slots": [
+          {
+            "endsAt": "2026-10-15T18:00:00.000Z",
+            "startsAt": "2026-10-15T17:30:00.000Z",
+            "timezone": "America/Sao_Paulo"
+          }
+        ],
+        "type": "blocked"
+      }
+    }
+  ]
+}

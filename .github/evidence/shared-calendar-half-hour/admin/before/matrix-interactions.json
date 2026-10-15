@@ -1,0 +1,39 @@
+{
+  "stage": "before",
+  "product": "admin",
+  "mode": "interactions",
+  "simulatedBoundaries": [
+    "data",
+    "mutations"
+  ],
+  "results": [
+    {
+      "product": "admin",
+      "view": "week",
+      "width": 390,
+      "path": "week-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "view": "month",
+      "width": 390,
+      "path": "month-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "view": "week",
+      "width": 1440,
+      "path": "week-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "view": "month",
+      "width": 1440,
+      "path": "month-1440.png",
+      "horizontalOverflow": false
+    }
+  ]
+}

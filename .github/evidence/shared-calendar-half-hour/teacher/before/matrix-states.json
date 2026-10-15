@@ -1,0 +1,35 @@
+{
+  "stage": "before",
+  "product": "teacher",
+  "mode": "states",
+  "simulatedBoundaries": [
+    "data",
+    "mutations"
+  ],
+  "results": [
+    {
+      "product": "teacher",
+      "state": "empty",
+      "width": 390,
+      "path": "empty-390.png"
+    },
+    {
+      "product": "teacher",
+      "state": "loading",
+      "width": 390,
+      "path": "loading-390.png"
+    },
+    {
+      "product": "teacher",
+      "state": "empty",
+      "width": 1440,
+      "path": "empty-1440.png"
+    },
+    {
+      "product": "teacher",
+      "state": "loading",
+      "width": 1440,
+      "path": "loading-1440.png"
+    }
+  ]
+}
