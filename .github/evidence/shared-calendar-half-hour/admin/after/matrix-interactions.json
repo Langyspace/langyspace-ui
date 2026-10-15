@@ -2,10 +2,7 @@
   "stage": "after",
   "product": "admin",
   "mode": "interactions",
-  "simulatedBoundaries": [
-    "data",
-    "mutations"
-  ],
+  "simulatedBoundaries": ["data", "mutations"],
   "results": [
     {
       "product": "admin",
@@ -25,11 +22,7 @@
       "product": "admin",
       "width": 390,
       "path": "half-hour-390.png",
-      "interactions": [
-        "half-hour",
-        "success",
-        "failure-keeps-drawer"
-      ],
+      "interactions": ["half-hour", "success", "failure-keeps-drawer"],
       "request": {
         "slots": [
           {
@@ -60,11 +53,7 @@
       "product": "admin",
       "width": 1440,
       "path": "half-hour-1440.png",
-      "interactions": [
-        "half-hour",
-        "success",
-        "failure-keeps-drawer"
-      ],
+      "interactions": ["half-hour", "success", "failure-keeps-drawer"],
       "request": {
         "slots": [
           {

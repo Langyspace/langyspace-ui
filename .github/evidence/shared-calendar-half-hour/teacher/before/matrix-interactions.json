@@ -2,10 +2,7 @@
   "stage": "before",
   "product": "teacher",
   "mode": "interactions",
-  "simulatedBoundaries": [
-    "data",
-    "mutations"
-  ],
+  "simulatedBoundaries": ["data", "mutations"],
   "results": [
     {
       "product": "teacher",

@@ -3,7 +3,13 @@ import { AuthMobileFooter } from '.'
 const meta = {
   title: 'Atoms/AuthMobileFooter',
   component: AuthMobileFooter,
-  tags: ['visual-review'],
+  tags: ['visual-review', 'layout-boundary'],
+  render: (args) => (
+    <div>
+      <p>Autenticação</p>
+      <AuthMobileFooter {...args} />
+    </div>
+  ),
   args: { children: 'Conteúdo fornecido pelo produto' },
 } satisfies Meta<typeof AuthMobileFooter>
 export default meta

@@ -1,13 +1,13 @@
 import { useMemo, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
-import { CalendarWeekGrid } from '../../CalendarWeekGrid'
+import { CalendarWeekGrid } from '../CalendarWeekGrid'
 import {
   formatScheduleMinute,
   getScheduleSelection,
   isSelectableScheduleSlot,
-} from '../selection'
-import * as Styled from '../styles'
-import type { ScheduleCalendarBodyProps, ScheduleCalendarSlot } from '../types'
+} from './selection'
+import * as Styled from './styles'
+import type { ScheduleCalendarBodyProps, ScheduleCalendarSlot } from './types'
 
 export function ScheduleCalendarWeek({
   days,

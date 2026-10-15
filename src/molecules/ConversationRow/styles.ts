@@ -56,7 +56,7 @@ export const Meta = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-meta',
 })`
   flex: 0 0 auto;
-  color: #9a9a9a;
+  color: #6b6b6b;
   font-size: 0.75rem;
   white-space: nowrap;
 `

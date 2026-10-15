@@ -66,7 +66,7 @@ export const ItemMeta = styled.span.withConfig({
 })`
   display: block;
   margin-top: 0.25rem;
-  color: #9a9a9a;
+  color: #6b6b6b;
   font-size: 0.75rem;
   line-height: 1.25;
 `
@@ -77,7 +77,7 @@ export const ItemAction = styled.span.withConfig({
   flex-shrink: 0;
   align-items: center;
   gap: 0.25rem;
-  color: #9a9a9a;
+  color: #6b6b6b;
   font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;

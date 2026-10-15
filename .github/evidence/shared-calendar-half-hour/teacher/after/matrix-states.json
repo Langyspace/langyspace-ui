@@ -2,10 +2,7 @@
   "stage": "after",
   "product": "teacher",
   "mode": "states",
-  "simulatedBoundaries": [
-    "data",
-    "mutations"
-  ],
+  "simulatedBoundaries": ["data", "mutations"],
   "results": [
     {
       "product": "teacher",

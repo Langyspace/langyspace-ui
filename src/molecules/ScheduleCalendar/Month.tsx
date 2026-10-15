@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { CalendarDayNumber } from '../../CalendarDayNumber'
-import { CalendarMonthGrid } from '../../CalendarMonthGrid'
-import * as Styled from '../styles'
-import type { ScheduleCalendarBodyProps } from '../types'
+import { CalendarDayNumber } from '../CalendarDayNumber'
+import { CalendarMonthGrid } from '../CalendarMonthGrid'
+import * as Styled from './styles'
+import type { ScheduleCalendarBodyProps } from './types'
 
 export function ScheduleCalendarMonth({
   days,

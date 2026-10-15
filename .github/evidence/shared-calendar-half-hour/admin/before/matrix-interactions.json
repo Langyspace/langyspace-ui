@@ -2,10 +2,7 @@
   "stage": "before",
   "product": "admin",
   "mode": "interactions",
-  "simulatedBoundaries": [
-    "data",
-    "mutations"
-  ],
+  "simulatedBoundaries": ["data", "mutations"],
   "results": [
     {
       "product": "admin",
