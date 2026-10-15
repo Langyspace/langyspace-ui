@@ -17,7 +17,7 @@ A biblioteca contém agora172 componentes públicos e173 registros de revisão, 
 - [x] Registrar aceite humano original e identificar os gates reais.
 - [x] Reconciliar o calendário paralelo e corrigir contraste/fixtures preservando contratos React.
 - [x] Conferir tipos da UI,27 testes de calendário/referências e60 cenários de layout focado.
-- [ ] Preparar candidato imutável, imagens e adoções da revisão corrigida.
+- [x] Preparar candidato imutável, imagens e adoções da revisão corrigida.
 - [ ] Executar gates finais e obter aceite dos pixels posteriores ao aceite original.
 - [ ] Integrar UI e publicar o artefato major exato.
 - [ ] Integrar as cinco adoções nos targets próprios; publicar staging e verificar fonte/comportamento.

@@ -25,6 +25,9 @@ export function createComponentUsageResolver(repositoryRoot, entrypoints) {
           jsx: ts.JsxEmit.ReactJSX,
           module: ts.ModuleKind.ESNext,
           moduleResolution: ts.ModuleResolutionKind.Bundler,
+          // Config-less source inspection needs symbol binding, not ambient type checking.
+          noLib: true,
+          types: [],
         },
         fileNames: ts.sys.readDirectory(resolve(root, 'src'), ['.ts', '.tsx']),
       }

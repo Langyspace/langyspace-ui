@@ -26,3 +26,11 @@ Continuar10->11. O gate visual atual sera solicitado somente com os PRs concreto
 ## 11 — Aceite original recebido; reparos reais antes da integração
 
 Os seis heads foram aprovados pelo produto. A leitura dos gates revelou contraste insuficiente e fixture responsiva oculta na UI; corrigidos sem dispensar as regras. A entrega paralela de calendário já entrou nos stagings Teacher/Admin e foi reconciliada nesta feature.172 públicos/173 registros, com referências reais para a composição interna do calendário. Tipos UI e27 testes de calendário/referências passaram;60 cenários de layout focado passaram. Pacote, evidências e revisão dos pixels alterados estão em preparação. A aprovação original é preservada, sem atribuí-la à revisão ainda alterada. Publicação major permanece pendente.
+
+### Candidato e consumidores corrigidos preparados
+
+Candidato2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932 publicado como artefato imutável de revisão no commit9b8199d; não é release oficial. As cinco instalações frozen passaram:1.126 arquivos conferidos por consumidor, peers únicos, locks sem alterações fora da UI. Tipos e arquitetura passaram nos cinco projetos; ClassRow e calendário têm três testes de interação aprovados. A fixture antiga de calendário foi ajustada aos nomes acessíveis da agenda já integrada, mantendo os asserts de teclado, independência de ações e callbacks.
+
+213 pares preparados:142 produtos,34 catálogo,12 composições e25 do delta desde o aceite original. Os cinco PRs de adoção receberam novos heads e tabelas completas. A aprovação dos heads antigos é preservada, sem atribuí-la aos pixels corrigidos.
+
+CI38776364996 passou arquitetura e pacote e completou os stories; um teste de referência excedeu5s ao recriar ambientes TypeScript sem configuração. A correção limita a análise sem tsconfig a binding de símbolos sem tipos globais; projetos reais com tsconfig mantêm suas opções. Os nove testes de referências passaram, incluindo alias, shadowing, reexports e styled; o caso antes lento concluiu em39ms localmente. Nenhum timeout global foi ampliado e o pacote/rendering não mudou. Nova execução ampla permanece a cargo da CI.
