@@ -22,3 +22,7 @@ Build/declarations frescos e snapshot major revisado; tarball de revisão ainda 
 Operacao: LOCAL_EXECUTION_ROOT/active-state.json e workspaces.json. UI em ui/, feature refactor/ui-react-craftsmanship, baseline8cdd415562db7f9aa060218ff00727aec7289dcb. A antiga symlink de dependências UI foi preservada em receipt e removida apenas no worktree próprio; UI agora usa instalação isolada/frozen e3dependências dev de compilação. Nenhum alvo compartilhado foi alterado. Todos os canonicos/drafts preservados. Nenhum commit/push/PR/CI/deploy desta etapa. Disco inicial530MiB, ultima leitura54GiB livre por mudanca externa.
 
 Continuar10->11. O gate visual atual sera solicitado somente com os PRs concretos e suas evidencias completos; nenhuma aprovacao historica vale para revisoes futuras.
+
+## 11 — Aceite original recebido; reparos reais antes da integração
+
+Os seis heads foram aprovados pelo produto. A leitura dos gates revelou contraste insuficiente e fixture responsiva oculta na UI; corrigidos sem dispensar as regras. A entrega paralela de calendário já entrou nos stagings Teacher/Admin e foi reconciliada nesta feature.172 públicos/173 registros, com referências reais para a composição interna do calendário. Tipos UI e27 testes de calendário/referências passaram;60 cenários de layout focado passaram. Pacote, evidências e revisão dos pixels alterados estão em preparação. A aprovação original é preservada, sem atribuí-la à revisão ainda alterada. Publicação major permanece pendente.

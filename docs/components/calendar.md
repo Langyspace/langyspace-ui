@@ -118,3 +118,11 @@ Comando de evento posicionado na linha do tempo.
 Contrato: children, tone e atributos/ref/style de button.
 
 Cuidados: Produto fornece top/height a partir de horários/duração; UI fornece aparência. Validar eventos curtos/longos, sobreposição, nome completo e fuso.
+
+## ScheduleCalendar
+
+Calendário composto com semana, mês e agenda compacta para telas estreitas. A navegação e os corpos são componentes React privados explícitos.
+
+Contrato: view, days, events, slots, navigation e onOpenEvent; onSlotClick/onSlotSelection e timeRange quando há seleção de horários. Datas e IDs já vêm preparados pelo produto.
+
+Cuidados: o produto mantém fuso, disponibilidade, regras de duração, consultas e persistência. A UI mantém expansão, foco e seleção por ponteiro/teclado. A agenda compacta usa os mesmos dados. Preserve eventos sobre o comando do dia, datas fora do mês, slot indisponível e seleção em intervalos de meia hora. O novo contrato entrou da entrega paralela de calendário já adotada no staging do Teacher; não substituir por cópias antigas ao atualizar a dependência.

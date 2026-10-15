@@ -4,6 +4,12 @@ const meta = {
   title: 'Molecules/BottomNavigation',
   component: BottomNavigation,
   tags: ['visual-review'],
+  render: (args) => (
+    <div>
+      <p>Conteúdo da página</p>
+      <BottomNavigation {...args} />
+    </div>
+  ),
   args: { children: 'Conteúdo fornecido pelo produto' },
 } satisfies Meta<typeof BottomNavigation>
 export default meta

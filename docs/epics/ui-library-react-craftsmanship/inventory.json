@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "baseline": "8cdd415562db7f9aa060218ff00727aec7289dcb",
-  "note": "Observed imports/reexports are source facts, not proof of runtime reachability or quality approval. Facts dos owners existentes sao o retrato baseline, nao uma medicao atual apos refatoracao. Tres novos owners foram adicionados explicitamente;169 baseline,172 owners atuais, antes da decisao de retirada de exports sem uso. Imports nao provam uso JSX ativo.",
+  "note": "Observed imports/reexports are source facts, not proof of runtime reachability or quality approval. Facts dos owners existentes sao o retrato baseline, nao uma medicao atual apos refatoracao. Tres novos owners foram adicionados explicitamente;169 baseline,172 owners atuais, antes da decisao de retirada de exports sem uso. Imports nao provam uso JSX ativo. Reconciliado ScheduleCalendar da entrega paralela:173 registros,172 públicos; histórico baseline preservado.",
   "components": [
     {
       "name": "ActionLink",
@@ -133,7 +133,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -324,7 +324,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -506,7 +506,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -637,7 +637,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -742,7 +742,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -898,7 +898,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1056,7 +1056,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1189,7 +1189,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1421,7 +1421,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1576,7 +1576,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1720,7 +1720,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -1873,7 +1873,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -2006,7 +2006,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -2182,7 +2182,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -2370,7 +2370,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -2744,7 +2744,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -2923,7 +2923,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -3071,7 +3071,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -3312,7 +3312,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -3531,7 +3531,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -3710,7 +3710,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4012,7 +4012,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4199,7 +4199,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4338,7 +4338,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4492,7 +4492,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4619,7 +4619,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4773,7 +4773,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -4927,7 +4927,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5081,7 +5081,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5235,7 +5235,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5395,7 +5395,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5579,7 +5579,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5733,7 +5733,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -5893,7 +5893,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6047,7 +6047,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6201,7 +6201,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6355,7 +6355,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6515,7 +6515,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6669,7 +6669,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -6786,7 +6786,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7005,7 +7005,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7130,7 +7130,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7257,7 +7257,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7384,7 +7384,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7511,7 +7511,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7671,7 +7671,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7810,7 +7810,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -7957,7 +7957,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8123,7 +8123,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8256,7 +8256,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8383,7 +8383,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8537,7 +8537,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8785,7 +8785,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -8969,7 +8969,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9222,7 +9222,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9427,7 +9427,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9567,7 +9567,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9697,7 +9697,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9828,7 +9828,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -9968,7 +9968,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10151,7 +10151,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10324,7 +10324,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10445,7 +10445,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10567,7 +10567,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10780,7 +10780,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -10932,7 +10932,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11051,7 +11051,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11156,7 +11156,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11373,7 +11373,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11552,7 +11552,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11675,7 +11675,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11808,7 +11808,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -11931,7 +11931,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12076,7 +12076,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12221,7 +12221,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12396,7 +12396,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12560,7 +12560,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12731,7 +12731,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -12927,7 +12927,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -13150,7 +13150,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -13311,7 +13311,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -13413,7 +13413,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -13682,7 +13682,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -13845,7 +13845,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14096,7 +14096,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14257,7 +14257,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14392,7 +14392,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14521,7 +14521,8 @@
           },
           "C6": {
             "status": "reviewed",
-            "evidence": "src/molecules/ConnectionNotice/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
+            "evidence": "Reparo de contraste com token existente; geometrias, unidades e breakpoints preservados. Delta visual documentado nos pares gate-repairs; novo aceite obrigatório.",
+            "priorAcceptedEvidence": "src/molecules/ConnectionNotice/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
           },
           "C7": {
             "status": "reviewed",
@@ -14545,7 +14546,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14646,7 +14647,8 @@
           },
           "C6": {
             "status": "reviewed",
-            "evidence": "src/molecules/ConversationRow/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
+            "evidence": "Reparo de contraste com token existente; geometrias, unidades e breakpoints preservados. Delta visual documentado nos pares gate-repairs; novo aceite obrigatório.",
+            "priorAcceptedEvidence": "src/molecules/ConversationRow/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
           },
           "C7": {
             "status": "reviewed",
@@ -14670,7 +14672,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14811,7 +14813,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -14976,7 +14978,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15132,7 +15134,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15292,7 +15294,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15422,7 +15424,8 @@
           },
           "C6": {
             "status": "reviewed",
-            "evidence": "src/molecules/NotificationItem/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
+            "evidence": "Reparo de contraste com token existente; geometrias, unidades e breakpoints preservados. Delta visual documentado nos pares gate-repairs; novo aceite obrigatório.",
+            "priorAcceptedEvidence": "src/molecules/NotificationItem/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
           },
           "C7": {
             "status": "reviewed",
@@ -15446,7 +15449,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15558,7 +15561,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15716,7 +15719,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -15901,7 +15904,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16069,7 +16072,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16234,7 +16237,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16402,7 +16405,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16579,7 +16582,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16753,7 +16756,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -16925,7 +16928,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -17112,7 +17115,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -17287,7 +17290,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -17474,7 +17477,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -17714,7 +17717,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -17887,7 +17890,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -18008,7 +18011,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -18160,7 +18163,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -18194,12 +18197,8 @@
       "test": "src/molecules/CalendarControls/CalendarControls.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx"
-        },
-        {
-          "repository": "langyspace-admin",
-          "path": "src/pages/AdminPortal/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/index.tsx"
         }
       ],
       "observedImports": [
@@ -18274,17 +18273,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/MonthCalendar/index.tsx"
-            },
-            {
-              "product": "admin",
-              "path": "src/pages/AdminPortal/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/index.tsx"
             }
           ],
           "runtimeCaptureCount": 6,
@@ -18335,17 +18330,9 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx",
-          "composition": [
-            "src/components/layout/MonthCalendar/index.tsx",
-            "src/components/layout/CalendarControls/index.tsx"
-          ]
-        },
-        {
-          "product": "admin",
-          "path": "src/pages/AdminPortal/index.tsx",
-          "composition": ["src/pages/AdminPortal/index.tsx"]
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/index.tsx",
+          "composition": ["src/molecules/ScheduleCalendar/index.tsx"]
         }
       ]
     },
@@ -18359,8 +18346,8 @@
       "test": "src/molecules/CalendarDay/CalendarDay.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx"
         }
       ],
       "observedImports": [
@@ -18436,13 +18423,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/MonthCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Month.tsx"
             }
           ],
           "runtimeCaptureCount": 4,
@@ -18485,12 +18472,9 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx",
-          "composition": [
-            "src/components/layout/MonthCalendar/index.tsx",
-            "src/components/layout/MonthCalendar/styles.ts"
-          ]
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx",
+          "composition": ["src/molecules/ScheduleCalendar/Month.tsx"]
         }
       ]
     },
@@ -18504,8 +18488,8 @@
       "test": "src/molecules/CalendarDayNumber/CalendarDayNumber.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx"
         }
       ],
       "observedImports": [
@@ -18574,13 +18558,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/MonthCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Month.tsx"
             }
           ],
           "runtimeCaptureCount": 4,
@@ -18623,12 +18607,9 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx",
-          "composition": [
-            "src/components/layout/MonthCalendar/index.tsx",
-            "src/components/layout/MonthCalendar/styles.ts"
-          ]
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx",
+          "composition": ["src/molecules/ScheduleCalendar/Month.tsx"]
         }
       ]
     },
@@ -18642,8 +18623,8 @@
       "test": "src/molecules/CalendarEvent/CalendarEvent.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx"
         }
       ],
       "observedImports": [
@@ -18719,13 +18700,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/MonthCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Month.tsx"
             }
           ],
           "runtimeCaptureCount": 4,
@@ -18768,11 +18749,11 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx",
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx",
           "composition": [
-            "src/components/layout/MonthCalendar/index.tsx",
-            "src/components/layout/MonthCalendar/styles.ts"
+            "src/molecules/ScheduleCalendar/Month.tsx",
+            "src/molecules/ScheduleCalendar/styles.ts"
           ]
         }
       ]
@@ -18787,8 +18768,8 @@
       "test": "src/molecules/CalendarMonthGrid/CalendarMonthGrid.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx"
         }
       ],
       "observedImports": [
@@ -18857,13 +18838,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/MonthCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Month.tsx"
             }
           ],
           "runtimeCaptureCount": 4,
@@ -18906,12 +18887,9 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/MonthCalendar/index.tsx",
-          "composition": [
-            "src/components/layout/MonthCalendar/index.tsx",
-            "src/components/layout/MonthCalendar/styles.ts"
-          ]
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Month.tsx",
+          "composition": ["src/molecules/ScheduleCalendar/Month.tsx"]
         }
       ]
     },
@@ -18995,7 +18973,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -19068,8 +19046,8 @@
       "test": "src/molecules/CalendarTimeSlot/CalendarTimeSlot.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx"
         }
       ],
       "observedImports": [
@@ -19145,13 +19123,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/WeekCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Week.tsx"
             }
           ],
           "runtimeCaptureCount": 2,
@@ -19178,11 +19156,11 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx",
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx",
           "composition": [
-            "src/components/layout/WeekCalendar/index.tsx",
-            "src/components/layout/WeekCalendar/styles.ts"
+            "src/molecules/ScheduleCalendar/Week.tsx",
+            "src/molecules/ScheduleCalendar/styles.ts"
           ]
         }
       ]
@@ -19197,8 +19175,8 @@
       "test": "src/molecules/CalendarWeekGrid/CalendarWeekGrid.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx"
         }
       ],
       "observedImports": [
@@ -19267,13 +19245,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/WeekCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Week.tsx"
             }
           ],
           "runtimeCaptureCount": 2,
@@ -19300,12 +19278,9 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx",
-          "composition": [
-            "src/components/layout/WeekCalendar/index.tsx",
-            "src/components/layout/WeekCalendar/styles.ts"
-          ]
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx",
+          "composition": ["src/molecules/ScheduleCalendar/Week.tsx"]
         }
       ]
     },
@@ -19319,8 +19294,8 @@
       "test": "src/molecules/TimelineEvent/TimelineEvent.test.tsx",
       "manifestConsumers": [
         {
-          "repository": "langyspace-teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx"
+          "repository": "langyspace-ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx"
         }
       ],
       "observedImports": [
@@ -19397,13 +19372,13 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
             {
-              "product": "teacher",
-              "path": "src/components/layout/WeekCalendar/index.tsx"
+              "product": "ui",
+              "path": "src/molecules/ScheduleCalendar/Week.tsx"
             }
           ],
           "runtimeCaptureCount": 2,
@@ -19430,11 +19405,11 @@
       },
       "currentSourceExamples": [
         {
-          "product": "teacher",
-          "path": "src/components/layout/WeekCalendar/index.tsx",
+          "product": "ui",
+          "path": "src/molecules/ScheduleCalendar/Week.tsx",
           "composition": [
-            "src/components/layout/WeekCalendar/index.tsx",
-            "src/components/layout/WeekCalendar/styles.ts"
+            "src/molecules/ScheduleCalendar/Week.tsx",
+            "src/molecules/ScheduleCalendar/styles.ts"
           ]
         }
       ]
@@ -19536,7 +19511,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -19704,7 +19679,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -19876,7 +19851,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20066,7 +20041,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20246,7 +20221,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20414,7 +20389,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20594,7 +20569,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20797,7 +20772,8 @@
           },
           "C6": {
             "status": "reviewed",
-            "evidence": "src/molecules/FlashcardFrame/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
+            "evidence": "Reparo de contraste com token existente; geometrias, unidades e breakpoints preservados. Delta visual documentado nos pares gate-repairs; novo aceite obrigatório.",
+            "priorAcceptedEvidence": "src/molecules/FlashcardFrame/styles.ts; substituicoes locais de tokens por igualdade de cor/valor/unidade em10.2, sem px->rem nem aproximacoes. Receipt10-token-normalization-receipt.json; tipos passaram. Geometria contextual preservada."
           },
           "C7": {
             "status": "reviewed",
@@ -20821,7 +20797,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -20989,7 +20965,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -21167,7 +21143,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -21358,7 +21334,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -21526,7 +21502,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -21694,7 +21670,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -21878,7 +21854,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22045,7 +22021,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22225,7 +22201,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22408,7 +22384,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22583,7 +22559,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22749,7 +22725,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -22905,7 +22881,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23065,7 +23041,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23200,7 +23176,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23368,7 +23344,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23536,7 +23512,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23692,7 +23668,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23838,7 +23814,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -23991,7 +23967,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24114,7 +24090,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24237,7 +24213,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24360,7 +24336,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24483,7 +24459,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24606,7 +24582,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24733,7 +24709,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -24866,7 +24842,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25001,7 +24977,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25149,7 +25125,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25325,7 +25301,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25452,7 +25428,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25585,7 +25561,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25714,7 +25690,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -25880,7 +25856,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -26152,7 +26128,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -26332,7 +26308,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -26469,7 +26445,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -26659,7 +26635,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -26849,7 +26825,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27035,7 +27011,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27191,7 +27167,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27361,7 +27337,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27529,7 +27505,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27693,7 +27669,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27859,7 +27835,7 @@
         "deliveryEvidence": {
           "status": "local-evidence-prepared; CI and human gates pending",
           "candidateVersion": "2.0.0",
-          "artifactSha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
           "apiSnapshot": "quality/public-api.json",
           "validation": "validation.md",
           "sourceExamples": [
@@ -27930,6 +27906,145 @@
           "product": "student",
           "path": "src/components/features/portal/FlashcardsV2.tsx",
           "composition": ["src/components/features/portal/FlashcardsV2.tsx"]
+        }
+      ]
+    },
+    {
+      "name": "ScheduleCalendar",
+      "family": "08-calendar",
+      "owner": "src/molecules/ScheduleCalendar/index.tsx",
+      "types": "src/molecules/ScheduleCalendar/types.ts",
+      "styles": "src/molecules/ScheduleCalendar/styles.ts",
+      "story": "src/molecules/ScheduleCalendar/ScheduleCalendar.stories.tsx",
+      "test": "src/molecules/ScheduleCalendar/ScheduleCalendar.test.tsx",
+      "public": true,
+      "origin": "Parallel approved shared-calendar-half-hour delivery, reconciled at 4edf3a4",
+      "review": {
+        "status": "code-and-local-evidence-reviewed; CI-human-pending",
+        "criteria": {
+          "C1": {
+            "status": "reviewed",
+            "evidence": "Calendário composto explícito em React; controle, semana, mês e agenda compacta têm responsabilidades legíveis."
+          },
+          "C2": {
+            "status": "reviewed",
+            "evidence": "Um contrato para Teacher MonthCalendar/WeekCalendar; dados de datas, eventos e slots vêm do produto."
+          },
+          "C3": {
+            "status": "reviewed",
+            "evidence": "view, days, events, slots, navigation, onOpenEvent; callbacks opcionais de seleção e timeRange; sem flags de produto."
+          },
+          "C4": {
+            "status": "reviewed",
+            "evidence": "CalendarControls e CalendarScroller compõem corpos privados; CalendarDay 2.0 passa day e par onOpen/openLabel, sem duplicar DayAction."
+          },
+          "C5": {
+            "status": "reviewed",
+            "evidence": "Expansão e seleção são interação local; fuso, regras, fetching, aulas e escrita permanecem no Teacher."
+          },
+          "C6": {
+            "status": "reviewed",
+            "evidence": "Tokens existentes, grades e agenda compacta preservados da revisão de calendário; novo foco do comando do dia registrado para revisão."
+          },
+          "C7": {
+            "status": "reviewed",
+            "evidence": "Eventos e comando do dia são irmãos; expansão nativa; arraste e seleção testados sem handlers no container."
+          },
+          "C8": {
+            "status": "pending-current-human-review",
+            "evidence": "Revisão atualizada exigida para composição com CalendarDay 2.0 e reparos de contraste; nenhuma publicação autorizada presumida para pixels novos."
+          },
+          "C9": {
+            "status": "reviewed",
+            "evidence": "docs/components/calendar.md#schedulecalendar; complete guide and catalog reference; JSX composition traced in consumer-usage.json. Source evidence is not route/production proof."
+          },
+          "C10": {
+            "status": "validation-in-progress",
+            "evidence": "16 stories focadas passaram antes da adaptação do Month; tipos/layout e gates atualizados permanecem em execução, sem inferir sucesso."
+          }
+        },
+        "deliveryEvidence": {
+          "status": "local-evidence-prepared; CI and human gates pending",
+          "candidateVersion": "2.0.0",
+          "artifactSha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
+          "apiSnapshot": "quality/public-api.json",
+          "validation": "validation.md",
+          "sourceExamples": [
+            {
+              "product": "teacher",
+              "path": "src/components/layout/MonthCalendar/index.tsx"
+            },
+            {
+              "product": "admin",
+              "path": "src/pages/AdminPortal/index.tsx"
+            }
+          ],
+          "runtimeCaptureCount": 6,
+          "representativeCaptures": [
+            {
+              "product": "teacher",
+              "id": "calendar-week",
+              "width": 390,
+              "height": 844,
+              "before": ".github/evidence/ui-react-craftsmanship/teacher/before/calendar-week-390-844.png",
+              "after": ".github/evidence/ui-react-craftsmanship/teacher/after/calendar-week-390-844.png"
+            },
+            {
+              "product": "teacher",
+              "id": "calendar-week",
+              "width": 1440,
+              "height": 844,
+              "before": ".github/evidence/ui-react-craftsmanship/teacher/before/calendar-week-1440-844.png",
+              "after": ".github/evidence/ui-react-craftsmanship/teacher/after/calendar-week-1440-844.png"
+            },
+            {
+              "product": "teacher",
+              "id": "calendar-month",
+              "width": 390,
+              "height": 844,
+              "before": ".github/evidence/ui-react-craftsmanship/teacher/before/calendar-month-390-844.png",
+              "after": ".github/evidence/ui-react-craftsmanship/teacher/after/calendar-month-390-844.png"
+            },
+            {
+              "product": "teacher",
+              "id": "calendar-month",
+              "width": 1440,
+              "height": 844,
+              "before": ".github/evidence/ui-react-craftsmanship/teacher/before/calendar-month-1440-844.png",
+              "after": ".github/evidence/ui-react-craftsmanship/teacher/after/calendar-month-1440-844.png"
+            },
+            {
+              "product": "teacher",
+              "id": "calendar-month-focus",
+              "width": 390,
+              "height": 844,
+              "before": ".github/evidence/ui-react-craftsmanship/teacher/before/calendar-month-focus-390-844.png",
+              "after": ".github/evidence/ui-react-craftsmanship/teacher/after/calendar-month-focus-390-844.png"
+            }
+          ],
+          "note": "Runtime marker observed in these captured sandbox routes; not production proof."
+        }
+      },
+      "manifestConsumers": [
+        {
+          "repository": "langyspace-teacher",
+          "path": "src/components/layout/MonthCalendar/index.tsx"
+        },
+        {
+          "repository": "langyspace-admin",
+          "path": "src/pages/AdminPortal/index.tsx"
+        }
+      ],
+      "currentSourceExamples": [
+        {
+          "product": "teacher",
+          "path": "src/components/layout/MonthCalendar/index.tsx",
+          "composition": ["src/components/layout/MonthCalendar/index.tsx"]
+        },
+        {
+          "product": "admin",
+          "path": "src/pages/AdminPortal/index.tsx",
+          "composition": ["src/pages/AdminPortal/index.tsx"]
         }
       ]
     }

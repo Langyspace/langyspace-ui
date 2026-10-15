@@ -43,3 +43,15 @@ As 17 stories antigas de flashcard agora mostram anatomia e contexto reais. Seus
 - `validate:ui`, cobertura completa, acessibilidade de todas as stories e E2E amplo continuam sob responsabilidade da CI. Não há alegação de execução local desses gates.
 - Os PRs precisam do aceite explícito da product owner sobre suas revisões atuais. Esta revisão técnica não substitui esse aceite.
 - Merge, release oficial, publicação e alinhamento dos checkouts canônicos pertencem à tarefa 11, após os gates aplicáveis. Nenhuma publicação de produção ocorreu neste épico.
+
+## Revisão corrigida após o aceite original — tarefa11
+
+Falhas reais da CI UI38772091564: oito stories por contraste e timeout do catálogo na fixture AuthMobileFooter oculta. Arquitetura e pacote haviam passado; não se aplicou fallback de billing a falhas de aplicação.
+
+Reparos e reconciliação com ScheduleCalendar4edf3a4: tipos UI passaram;16 testes em9 stories focadas passaram;27 testes de calendário/manifest/referências passaram;60 cenários de8 stories de layout passaram. API major foi revista e o snapshot atualizado. Build,33 medições de bundle e smoke externo do pacote passaram, sem alterar limites. Pacote final 2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932; runtime f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129. Uma correção posterior somente em docs/components/practice.md foi comparada membro a membro: todos os demais arquivos do tarball são idênticos ao pacote que passou no smoke.
+
+A biblioteca tem172 contratos públicos/173 registros e355 exemplos curados verificados na fonte. Oito componentes de calendário têm referências de composição interna na UI após a adoção de ScheduleCalendar no Teacher. São provas de fonte, sem alegar navegação ou produção.
+
+Evidência:213 pares nativos —142 de produtos,34 do catálogo,12 de composições e25 do delta desde a revisão UI aprovada. Os baselines Teacher/Admin agora correspondem aos stagings57011690/c42dcf13 e ao pacote1.22.0 com hash conferido. Os demais baselines foram preservados. As142 capturas de produto e34 de catálogo foram renovadas contra o runtime final. As12 composições Dialog/Menu/KeyValue reutilizam a evidência anterior: seus owners, dependências de interação e tokens relevantes não mudaram nesta correção; nenhuma captura antiga recebe alegação de nova execução.
+
+O novo contraste de texto auxiliar/warning e o foco do calendário exigem aceite visual da revisão atual. Aprovação original preservada no recibo local; não transferida para novos pixels. CI ampla da nova revisão, integração e publicação seguem pendentes.

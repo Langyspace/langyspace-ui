@@ -67,7 +67,7 @@ export const ItemMeta = styled.span.withConfig({
 })`
   display: block;
   margin-top: ${token.spacing1};
-  color: ${token.colorNeutral500};
+  color: ${token.colorContentMuted};
   font-size: ${token.typographyFontSizeXs};
   line-height: ${token.typographyLineHeightSnug};
 `
@@ -78,7 +78,7 @@ export const ItemAction = styled.span.withConfig({
   flex-shrink: 0;
   align-items: center;
   gap: ${token.spacing1};
-  color: ${token.colorNeutral500};
+  color: ${token.colorContentMuted};
   font-size: ${token.typographyFontSizeXs};
   font-weight: ${token.typographyFontWeightSemibold};
   white-space: nowrap;

@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Esta revisão prepara o contrato **2.0.0**, ainda candidato. A última release oficial é **1.21.1**. Os guias deste checkout descrevem sua própria revisão; consulte a [migração para 2.0](docs/components/migration-v2.md) antes de adotar os novos contratos.
+Este checkout implementa o contrato **2.0.0**. A publicação está sujeita aos gates e ao aceite da revisão atual; consulte GitHub Releases para o artefato oficial. Os guias deste checkout descrevem sua própria revisão; consulte a [migração para 2.0](docs/components/migration-v2.md) antes de adotar os novos contratos.
 
 ## Instalação
 
 Para a versão oficial atual:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v1.21.1/langyspace-ui-1.21.1.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v2.0.0/langyspace-ui-2.0.0.tgz'
 ```
 
 O candidato deve ser instalado pelo artefato imutável identificado na entrega, com sua integridade registrada. Não usar uma branch móvel ou um link local na dependência entregue.

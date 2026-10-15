@@ -1,11 +1,19 @@
 {
   "version": "2.0.0",
-  "status": "immutable review candidate; not official release",
+  "status": "immutable gate-repaired review candidate; not official release",
   "baseline": "8cdd415562db7f9aa060218ff00727aec7289dcb",
-  "runtimeSourceDigest": "a8cb3684c93795fffa14def04452ed6e464e8cb0916374c866c1e16d9a1734d9",
-  "artifactPath": ".github/artifacts/langyspace-ui-2.0.0-2c7d82a8ce2053a0.tgz",
-  "sha256": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
-  "integrity": "sha512-pNlEC1YkhecXrksvFt2VFmlxbRaap/qQ5iVUTZm+Hv573kD8mx8opvMPOihkoDADW7ikM1St7Yw3Gpm6kiw+9g==",
-  "tarballBytes": 175276,
-  "distSha256": "d2ea4d6a26d609099c0eb9aea9e83351904bb2c87719e885f3fe9bd8d0fa220d"
+  "supersedes": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+  "calendarSource": "4edf3a4d8d6359c7b19e152c077eff77bd17b119",
+  "runtimeSourceDigest": "3f8f0f9cac79ad077fa26b18d1723e2303954bdc28e0c094603e6637e9d91340",
+  "artifactPath": ".github/artifacts/langyspace-ui-2.0.0-2bd56b8057155560.tgz",
+  "sha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
+  "integrity": "sha512-pRfeVJLVht5zeuhxADhsBkKEvvqLAMv8ZduWDI0PyciFuRiiROvxwvB7X2+elwg1aguHQ1VvK/LmHMaeOnmF7Q==",
+  "tarballBytes": 181964,
+  "distSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+  "packageDocCorrection": {
+    "previous": "9095b4025a6f477de000a6c26d0d132cf5969e021aac7c027c90df567ba85a5b",
+    "changedFiles": ["docs/components/practice.md"],
+    "runtimeByteIdentical": true,
+    "packageSmokeReused": "11-ui-package-smoke.log; all other packaged members byte equal"
+  }
 }

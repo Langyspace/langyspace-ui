@@ -6,7 +6,7 @@ export const Root = styled.section.withConfig({
   --fc-ink: ${token.colorContentDefault};
   --fc-ink-2: ${token.colorContentSecondary};
   --fc-muted: ${token.colorContentMuted};
-  --fc-muted-2: ${token.colorNeutral500};
+  --fc-muted-2: ${token.colorContentMuted};
   --fc-line: ${token.colorSurfaceBorderSubtle};
   --fc-line-strong: ${token.colorNeutral300};
   --fc-pink: ${token.colorAccentDefault};

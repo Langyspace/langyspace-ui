@@ -197,7 +197,7 @@ Os defaults abaixo pertencem a FlashcardFrame e são herdados pelos filhos. Stud
 | `--fc-ink`                   | `#0a0a0a`                                                                              | Token de cor existente        |
 | `--fc-ink-2`                 | `#2a2a2a`                                                                              | Token de cor existente        |
 | `--fc-muted`                 | `#6b6b6b`                                                                              | Token de cor existente        |
-| `--fc-muted-2`               | `#9a9a9a`                                                                              | Token de cor existente        |
+| `--fc-muted-2`               | `#6b6b6b`                                                                              | Token de cor existente        |
 | `--fc-line`                  | `#ececea`                                                                              | Token de cor existente        |
 | `--fc-line-strong`           | `#d9d9d6`                                                                              | Token de cor existente        |
 | `--fc-pink`                  | `#ff1f5c`                                                                              | Token de cor existente        |

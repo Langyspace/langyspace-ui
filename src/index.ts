@@ -395,6 +395,13 @@ export { CalendarMonthGrid } from './molecules/CalendarMonthGrid'
 export type { CalendarMonthGridProps } from './molecules/CalendarMonthGrid/types'
 
 export { CalendarWeekGrid } from './molecules/CalendarWeekGrid'
+export { ScheduleCalendar } from './molecules/ScheduleCalendar'
+export type {
+  ScheduleCalendarProps,
+  ScheduleCalendarDay,
+  ScheduleCalendarSlot,
+  ScheduleCalendarEvent,
+} from './molecules/ScheduleCalendar'
 export type { CalendarWeekGridProps } from './molecules/CalendarWeekGrid/types'
 
 export { CalendarDay } from './molecules/CalendarDay'

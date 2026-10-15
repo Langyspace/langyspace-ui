@@ -2,31 +2,31 @@
   "scope": "Current source JSX/composition examples; does not prove route exercise or production state",
   "baselines": {
     "teacher": {
-      "path": "../langyspace-teacher",
-      "head": "c60567839ea5c7230044c92e52465023b38aad74",
+      "path": "/Users/margaridamartins/langyspace-teacher",
+      "head": "57011690ff3d32895a25d13626642c818a562119",
       "target": "staging",
       "originalBaseline": "c60567839ea5c7230044c92e52465023b38aad74"
     },
     "student": {
-      "path": "../langyspace-student",
+      "path": "/Users/margaridamartins/langyspace-student",
       "head": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
       "target": "staging",
       "originalBaseline": "e531045fa8e180a165b14801ebedf459a3a1caf2"
     },
     "admin": {
-      "path": "../langyspace-admin",
-      "head": "00693113c2a5c8bce5df2246a0b8a95eefaa676d",
+      "path": "/Users/margaridamartins/langyspace-admin",
+      "head": "c42dcf134d77f8b8242fa52182fee8a2c3981aec",
       "target": "staging",
       "originalBaseline": "00693113c2a5c8bce5df2246a0b8a95eefaa676d"
     },
     "site": {
-      "path": "../langyspace",
+      "path": "/Users/margaridamartins/langyspace",
       "head": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
       "target": "main",
       "originalBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619"
     },
     "cupom": {
-      "path": "../langyspace-cupom",
+      "path": "/Users/margaridamartins/langyspace-cupom",
       "head": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
       "target": "main",
       "originalBaseline": "9179830cc400fcf67f3055fe3a7d1ab0921e2b79"
@@ -99,7 +99,7 @@
       "component": "Checkbox",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -334,7 +334,7 @@
       "component": "RadioButton",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -1199,7 +1199,7 @@
       "component": "DetailRow",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -1456,14 +1456,14 @@
       "component": "StatAction",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "admin",
       "component": "StatCard",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -1493,7 +1493,7 @@
       "component": "StatLabel",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -1521,7 +1521,7 @@
       "component": "StatValue",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "teacher",
@@ -1833,7 +1833,7 @@
       "component": "ActionMenu",
       "path": "src/pages/AdminPortal/index.tsx",
       "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
+      "lines": 21530
     },
     {
       "product": "student",
@@ -1908,61 +1908,47 @@
       "lines": 1141
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarControls",
-      "path": "src/components/layout/MonthCalendar/index.tsx",
-      "composition": [
-        "src/components/layout/MonthCalendar/index.tsx",
-        "src/components/layout/CalendarControls/index.tsx"
-      ],
-      "lines": 162
+      "path": "src/molecules/ScheduleCalendar/index.tsx",
+      "composition": ["src/molecules/ScheduleCalendar/index.tsx"],
+      "lines": 37,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "admin",
-      "component": "CalendarControls",
-      "path": "src/pages/AdminPortal/index.tsx",
-      "composition": ["src/pages/AdminPortal/index.tsx"],
-      "lines": 21938
-    },
-    {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarDay",
-      "path": "src/components/layout/MonthCalendar/index.tsx",
-      "composition": [
-        "src/components/layout/MonthCalendar/index.tsx",
-        "src/components/layout/MonthCalendar/styles.ts"
-      ],
-      "lines": 162
+      "path": "src/molecules/ScheduleCalendar/Month.tsx",
+      "composition": ["src/molecules/ScheduleCalendar/Month.tsx"],
+      "lines": 101,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarDayNumber",
-      "path": "src/components/layout/MonthCalendar/index.tsx",
-      "composition": [
-        "src/components/layout/MonthCalendar/index.tsx",
-        "src/components/layout/MonthCalendar/styles.ts"
-      ],
-      "lines": 162
+      "path": "src/molecules/ScheduleCalendar/Month.tsx",
+      "composition": ["src/molecules/ScheduleCalendar/Month.tsx"],
+      "lines": 101,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarEvent",
-      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "path": "src/molecules/ScheduleCalendar/Month.tsx",
       "composition": [
-        "src/components/layout/MonthCalendar/index.tsx",
-        "src/components/layout/MonthCalendar/styles.ts"
+        "src/molecules/ScheduleCalendar/Month.tsx",
+        "src/molecules/ScheduleCalendar/styles.ts"
       ],
-      "lines": 162
+      "lines": 101,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarMonthGrid",
-      "path": "src/components/layout/MonthCalendar/index.tsx",
-      "composition": [
-        "src/components/layout/MonthCalendar/index.tsx",
-        "src/components/layout/MonthCalendar/styles.ts"
-      ],
-      "lines": 162
+      "path": "src/molecules/ScheduleCalendar/Month.tsx",
+      "composition": ["src/molecules/ScheduleCalendar/Month.tsx"],
+      "lines": 101,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
       "product": "teacher",
@@ -1972,34 +1958,34 @@
       "lines": 9
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarTimeSlot",
-      "path": "src/components/layout/WeekCalendar/index.tsx",
+      "path": "src/molecules/ScheduleCalendar/Week.tsx",
       "composition": [
-        "src/components/layout/WeekCalendar/index.tsx",
-        "src/components/layout/WeekCalendar/styles.ts"
+        "src/molecules/ScheduleCalendar/Week.tsx",
+        "src/molecules/ScheduleCalendar/styles.ts"
       ],
-      "lines": 270
+      "lines": 192,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "CalendarWeekGrid",
-      "path": "src/components/layout/WeekCalendar/index.tsx",
-      "composition": [
-        "src/components/layout/WeekCalendar/index.tsx",
-        "src/components/layout/WeekCalendar/styles.ts"
-      ],
-      "lines": 270
+      "path": "src/molecules/ScheduleCalendar/Week.tsx",
+      "composition": ["src/molecules/ScheduleCalendar/Week.tsx"],
+      "lines": 192,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
-      "product": "teacher",
+      "product": "ui",
       "component": "TimelineEvent",
-      "path": "src/components/layout/WeekCalendar/index.tsx",
+      "path": "src/molecules/ScheduleCalendar/Week.tsx",
       "composition": [
-        "src/components/layout/WeekCalendar/index.tsx",
-        "src/components/layout/WeekCalendar/styles.ts"
+        "src/molecules/ScheduleCalendar/Week.tsx",
+        "src/molecules/ScheduleCalendar/styles.ts"
       ],
-      "lines": 270
+      "lines": 192,
+      "kind": "direct or styled internal React composition; not a product-route claim"
     },
     {
       "product": "teacher",
@@ -3051,6 +3037,20 @@
       "path": "src/components/features/portal/FlashcardsV2.tsx",
       "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
       "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "ScheduleCalendar",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": ["src/components/layout/MonthCalendar/index.tsx"],
+      "lines": 50
+    },
+    {
+      "product": "admin",
+      "component": "ScheduleCalendar",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21530
     }
   ]
 }
