@@ -1,0 +1,70 @@
+{
+  "stage": "after",
+  "product": "admin",
+  "mode": "interactions",
+  "simulatedBoundaries": ["data", "mutations"],
+  "results": [
+    {
+      "product": "admin",
+      "view": "week",
+      "width": 390,
+      "path": "week-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "view": "month",
+      "width": 390,
+      "path": "month-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "width": 390,
+      "path": "half-hour-390.png",
+      "interactions": ["half-hour", "success", "failure-keeps-drawer"],
+      "request": {
+        "slots": [
+          {
+            "endsAt": "2026-10-11T18:00:00.000Z",
+            "startsAt": "2026-10-11T17:30:00.000Z",
+            "timezone": "America/Sao_Paulo"
+          }
+        ],
+        "teacherId": "p1",
+        "type": "available"
+      }
+    },
+    {
+      "product": "admin",
+      "view": "week",
+      "width": 1440,
+      "path": "week-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "view": "month",
+      "width": 1440,
+      "path": "month-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "admin",
+      "width": 1440,
+      "path": "half-hour-1440.png",
+      "interactions": ["half-hour", "success", "failure-keeps-drawer"],
+      "request": {
+        "slots": [
+          {
+            "endsAt": "2026-10-11T18:00:00.000Z",
+            "startsAt": "2026-10-11T17:30:00.000Z",
+            "timezone": "America/Sao_Paulo"
+          }
+        ],
+        "teacherId": "p1",
+        "type": "available"
+      }
+    }
+  ]
+}

@@ -25,6 +25,39 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'ScheduleCalendar',
+    interactive: true,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ScheduleCalendar/index.tsx',
+    runtimeMarker: 'lsui-sc-schedule-calendar',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'src/molecules/ScheduleCalendar/ScheduleCalendar.stories.tsx',
+      title: 'Molecules/ScheduleCalendar',
+    },
+    test: {
+      status: 'complete',
+      path: 'src/molecules/ScheduleCalendar/ScheduleCalendar.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/ScheduleCalendar/types.ts',
+      documentation: { path: 'README.md', anchor: 'schedulecalendar' },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/WeekCalendar/index.tsx',
+        },
+        {
+          repository: 'langyspace-admin',
+          path: 'src/pages/AdminPortal/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ShadowingWord',
     interactive: false,
     layer: 'molecule',

@@ -1,0 +1,36 @@
+{
+  "stage": "before",
+  "product": "teacher",
+  "mode": "interactions",
+  "simulatedBoundaries": ["data", "mutations"],
+  "results": [
+    {
+      "product": "teacher",
+      "view": "week",
+      "width": 390,
+      "path": "week-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "view": "month",
+      "width": 390,
+      "path": "month-390.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "view": "week",
+      "width": 1440,
+      "path": "week-1440.png",
+      "horizontalOverflow": false
+    },
+    {
+      "product": "teacher",
+      "view": "month",
+      "width": 1440,
+      "path": "month-1440.png",
+      "horizontalOverflow": false
+    }
+  ]
+}

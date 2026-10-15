@@ -4,7 +4,7 @@ import { NavigationLink } from '.'
 afterEach(cleanup)
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
-    <NavigationLink data-testid="content">
+    <NavigationLink href="/alunos" data-testid="content">
       <strong>Conteúdo fornecido</strong>
     </NavigationLink>,
   )
