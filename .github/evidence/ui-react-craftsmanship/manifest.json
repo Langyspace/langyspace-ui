@@ -1,22 +1,27 @@
 {
-  "scope": "Original sandbox PNGs, current baselines and exact immutable candidate; human review pending; no CI or production claim.",
+  "scope": "Native original PNGs. Current candidate validation is separate from actual captured runtime/baseline. Single scoped CSS insertion and unchanged owners justify explicitly marked image reuse. Human review pending; no publication claim.",
   "candidate": {
     "version": "2.0.0",
-    "status": "immutable gate-repaired review candidate; not official release",
+    "status": "immutable main-reconciled candidate; not official release",
     "baseline": "8cdd415562db7f9aa060218ff00727aec7289dcb",
-    "supersedes": "2c7d82a8ce2053a047ed6d5557773aac4bd96956ee79c2c7a867b94583e9db7a",
+    "supersedes": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
     "calendarSource": "4edf3a4d8d6359c7b19e152c077eff77bd17b119",
-    "runtimeSourceDigest": "3f8f0f9cac79ad077fa26b18d1723e2303954bdc28e0c094603e6637e9d91340",
-    "artifactPath": ".github/artifacts/langyspace-ui-2.0.0-2bd56b8057155560.tgz",
-    "sha256": "2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932",
-    "integrity": "sha512-pRfeVJLVht5zeuhxADhsBkKEvvqLAMv8ZduWDI0PyciFuRiiROvxwvB7X2+elwg1aguHQ1VvK/LmHMaeOnmF7Q==",
-    "tarballBytes": 181964,
-    "distSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
-    "packageDocCorrection": {
-      "previous": "9095b4025a6f477de000a6c26d0d132cf5969e021aac7c027c90df567ba85a5b",
-      "changedFiles": ["docs/components/practice.md"],
-      "runtimeByteIdentical": true,
-      "packageSmokeReused": "11-ui-package-smoke.log; all other packaged members byte equal"
+    "runtimeSourceDigest": "9658785484f8953a801f62cf92a0b795a67892da32418bd070ee8bc682d6bf81",
+    "artifactPath": ".github/artifacts/langyspace-ui-2.0.0-1b1f4351b9e02ea3.tgz",
+    "sha256": "1b1f4351b9e02ea39dcb9e55199dd128676b98e8a55b2e8aeebba21d36a21a0a",
+    "integrity": "sha512-ws9zpr7fczghBCf+hB6hoO8TgyE46CSl8hGp/iZ4cdYw+L1vS410tNCmxsCQiOGEmw6IQ4shC8/TsqcIxtn8PQ==",
+    "tarballBytes": 181962,
+    "distSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+    "mainReconciliation": {
+      "ui": "adcbc31",
+      "teacher": "32109d35",
+      "admin": "6f6c08b",
+      "changedPackagedFiles": [
+        "dist/index.js",
+        "dist/molecules/WeeklyCountChart/styles.d.ts.map"
+      ],
+      "declarationsByteIdentical": true,
+      "runtimeChange": "one min-height:0; insertion inside WeeklyCountChart Day; declaration map reflects the added source line"
     }
   },
   "pairs": [
@@ -75,7 +80,13 @@
         "lsui-sc-auth-submit-button",
         "lsui-sc-icon",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -132,7 +143,13 @@
         "lsui-sc-auth-submit-button",
         "lsui-sc-icon",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -181,7 +198,13 @@
         "lsui-sc-state-panel",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -230,7 +253,13 @@
         "lsui-sc-state-panel",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -279,7 +308,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -328,7 +363,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -382,7 +423,13 @@
         "lsui-sc-practice-card-body",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -436,7 +483,13 @@
         "lsui-sc-practice-card-body",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -501,7 +554,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -566,7 +625,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -617,7 +682,13 @@
         "lsui-sc-textarea-input",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -668,7 +739,13 @@
         "lsui-sc-textarea-input",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -723,7 +800,13 @@
         "lsui-sc-form-actions",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -778,7 +861,13 @@
         "lsui-sc-form-actions",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -827,7 +916,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -876,7 +971,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -908,7 +1009,13 @@
       "productBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
       "beforeUiRuntimeSha256": "41769437fef20c43413c389d748088cfe831fbe7dcaa76f9fd5862c2b20857a5",
       "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
-      "runtimeMarkers": ["lsui-sc-pressable", "lsui-sc-button", "lsui-sc-icon"]
+      "runtimeMarkers": ["lsui-sc-pressable", "lsui-sc-button", "lsui-sc-icon"],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -940,7 +1047,13 @@
       "productBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
       "beforeUiRuntimeSha256": "41769437fef20c43413c389d748088cfe831fbe7dcaa76f9fd5862c2b20857a5",
       "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
-      "runtimeMarkers": ["lsui-sc-pressable", "lsui-sc-button", "lsui-sc-icon"]
+      "runtimeMarkers": ["lsui-sc-pressable", "lsui-sc-button", "lsui-sc-icon"],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -980,7 +1093,13 @@
         "lsui-sc-modal-panel",
         "lsui-sc-icon-button",
         "lsui-sc-text-input"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1020,7 +1139,13 @@
         "lsui-sc-modal-panel",
         "lsui-sc-icon-button",
         "lsui-sc-text-input"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1086,7 +1211,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1152,7 +1283,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1224,7 +1361,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1296,7 +1439,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1352,7 +1501,13 @@
         "lsui-sc-practice-playback-controls",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1408,7 +1563,13 @@
         "lsui-sc-practice-playback-controls",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1467,7 +1628,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1526,7 +1693,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1602,7 +1775,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1678,7 +1857,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1754,7 +1939,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1830,7 +2021,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1906,7 +2103,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -1982,7 +2185,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2058,7 +2267,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2134,7 +2349,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2200,7 +2421,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2266,7 +2493,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2332,7 +2565,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2398,7 +2637,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2448,7 +2693,13 @@
         "lsui-sc-flashcard-counter",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2498,7 +2749,13 @@
         "lsui-sc-flashcard-counter",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2564,7 +2821,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2630,7 +2893,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2696,7 +2965,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2768,7 +3043,13 @@
         "lsui-sc-flashcard-rating-button",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "student",
@@ -2827,7 +3108,13 @@
         "lsui-sc-flashcard-flip-hint",
         "lsui-sc-bottom-navigation",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -2884,7 +3171,13 @@
         "lsui-sc-auth-submit-button",
         "lsui-sc-icon",
         "lsui-sc-auth-mobile-footer"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -2941,7 +3234,13 @@
         "lsui-sc-auth-submit-button",
         "lsui-sc-icon",
         "lsui-sc-auth-mobile-footer"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -2970,9 +3269,9 @@
       "beforeSha256": "ea540ead50cb97949bea849ae376a61b0c18a6b1511fcde316a1111e68fc0cee",
       "afterSha256": "ea540ead50cb97949bea849ae376a61b0c18a6b1511fcde316a1111e68fc0cee",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3002,7 +3301,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3031,9 +3332,9 @@
       "beforeSha256": "be451d36b7bd5d0ce0c771865e5949917c06ebdb480cd881250b60ce904a1401",
       "afterSha256": "be451d36b7bd5d0ce0c771865e5949917c06ebdb480cd881250b60ce904a1401",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3063,7 +3364,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3092,9 +3395,9 @@
       "beforeSha256": "2346b02a337d57a8f7fc4d523c0129c6012111c64ffe21075ded63af3ade73e0",
       "afterSha256": "2346b02a337d57a8f7fc4d523c0129c6012111c64ffe21075ded63af3ade73e0",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3127,7 +3430,9 @@
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel",
         "lsui-sc-action-link"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3156,9 +3461,9 @@
       "beforeSha256": "702fd9fab1bd69104aaa917c5fa7d081287c22bfca9c34b909674db845034781",
       "afterSha256": "702fd9fab1bd69104aaa917c5fa7d081287c22bfca9c34b909674db845034781",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3191,7 +3496,9 @@
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel",
         "lsui-sc-action-link"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3220,9 +3527,9 @@
       "beforeSha256": "53dd26f80013d2f6555277216400f68c9d730128e996d79547336af4ee40829a",
       "afterSha256": "53dd26f80013d2f6555277216400f68c9d730128e996d79547336af4ee40829a",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3254,7 +3561,9 @@
         "lsui-sc-toast-viewport",
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3283,9 +3592,9 @@
       "beforeSha256": "7204f3cda310f52640bfc265bc8cd58a17b763aaa1643c59600e2346eecc2b58",
       "afterSha256": "7204f3cda310f52640bfc265bc8cd58a17b763aaa1643c59600e2346eecc2b58",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -3317,7 +3626,9 @@
         "lsui-sc-toast-viewport",
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -3370,7 +3681,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3423,7 +3740,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3478,7 +3801,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3533,7 +3862,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3587,7 +3922,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3641,7 +3982,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3694,7 +4041,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3747,7 +4100,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3799,7 +4158,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3851,7 +4216,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3911,7 +4282,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -3971,7 +4348,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4000,9 +4383,9 @@
       "beforeSha256": "e56487981173b3c162242c21c7755edc1ae776e8e4a5d0bd963b308adb78eafb",
       "afterSha256": "e56487981173b3c162242c21c7755edc1ae776e8e4a5d0bd963b308adb78eafb",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -4035,7 +4418,9 @@
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel",
         "lsui-sc-spinner"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -4064,9 +4449,9 @@
       "beforeSha256": "2cf47cc88807948960e7469373dba57977a99cd355ad014df184d1dab9ffec4b",
       "afterSha256": "2cf47cc88807948960e7469373dba57977a99cd355ad014df184d1dab9ffec4b",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -4099,7 +4484,9 @@
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel",
         "lsui-sc-spinner"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -4151,7 +4538,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4203,7 +4596,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4250,7 +4649,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4297,7 +4702,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4362,7 +4773,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4427,7 +4844,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4498,7 +4921,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4569,7 +4998,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4625,7 +5060,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4681,7 +5122,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4739,7 +5186,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4797,7 +5250,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4872,7 +5331,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -4947,7 +5412,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5022,7 +5493,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5097,7 +5574,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5172,7 +5655,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5247,7 +5736,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5322,7 +5817,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5397,7 +5898,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5462,7 +5969,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5527,7 +6040,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5592,7 +6111,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5657,7 +6182,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5706,7 +6237,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5755,7 +6292,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5820,7 +6363,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5885,7 +6434,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -5914,9 +6469,9 @@
       "beforeSha256": "40b8d169b9b65f43fea857ccc19ee3dae9c3d7f9d7ca47bca87e3c47f5da1606",
       "afterSha256": "9a43d5a530120867abd44d27beaa61527736048afc31149c63b73ce830aa745b",
       "byteIdentical": false,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -5946,7 +6501,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -5975,9 +6532,9 @@
       "beforeSha256": "539ba26db2e12382dfd44501ce9312c52ff6e553f1e50a11c6a9b9be27efdfe3",
       "afterSha256": "3c68beb474b479f6ab8d82f3c6687b7df106425de31640a6011d1d2338a26351",
       "byteIdentical": false,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -6007,7 +6564,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -6036,9 +6595,9 @@
       "beforeSha256": "1dac1751cb118242432f356d31f21c29e4cb4580696200135d0b20a62f193ba4",
       "afterSha256": "1dac1751cb118242432f356d31f21c29e4cb4580696200135d0b20a62f193ba4",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -6068,7 +6627,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -6097,9 +6658,9 @@
       "beforeSha256": "c9a79fa74d2d9edc40e6da67bdf383f7f050ec6c25a7e4a9fb70a6a68339bcdb",
       "afterSha256": "c9a79fa74d2d9edc40e6da67bdf383f7f050ec6c25a7e4a9fb70a6a68339bcdb",
       "byteIdentical": true,
-      "productBaseline": "57011690ff3d32895a25d13626642c818a562119",
-      "beforeUiRuntimeSha256": "04dcf68941d841c4f61ae8df1703166ef74775ef3c45314a203909f941475848",
-      "afterUiRuntimeSha256": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+      "productBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "beforeUiRuntimeSha256": "bc77e4a8cd8986c613b7fcf119badbdca9cc4e5787daff36c3d68a2f87d07525",
+      "afterUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
       "runtimeMarkers": [
         "lsui-sc-sidebar-frame",
         "lsui-sc-brand-logo",
@@ -6129,7 +6690,9 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e"
     },
     {
       "group": "teacher",
@@ -6184,7 +6747,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -6239,7 +6808,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -6304,7 +6879,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -6375,7 +6956,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "teacher",
@@ -6433,7 +7020,13 @@
         "lsui-sc-bottom-navigation",
         "lsui-sc-bottom-navigation-link",
         "lsui-sc-toast-viewport"
-      ]
+      ],
+      "validatedProductBaseline": "32109d355e80c3ec3dd5781eadebadcd85d30b8c",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6480,7 +7073,13 @@
         "lsui-sc-stat-value",
         "lsui-sc-stat-label",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6527,7 +7126,13 @@
         "lsui-sc-stat-value",
         "lsui-sc-stat-label",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6574,7 +7179,13 @@
         "lsui-sc-operational-list",
         "lsui-sc-status-chip",
         "lsui-sc-action-menu"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6621,7 +7232,13 @@
         "lsui-sc-operational-list",
         "lsui-sc-status-chip",
         "lsui-sc-action-menu"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6668,7 +7285,13 @@
         "lsui-sc-text-input",
         "lsui-sc-checkbox",
         "lsui-sc-select-input"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6715,7 +7338,13 @@
         "lsui-sc-text-input",
         "lsui-sc-checkbox",
         "lsui-sc-select-input"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6766,7 +7395,13 @@
         "lsui-sc-operational-list",
         "lsui-sc-status-chip",
         "lsui-sc-action-menu"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6817,7 +7452,13 @@
         "lsui-sc-operational-list",
         "lsui-sc-status-chip",
         "lsui-sc-action-menu"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6863,7 +7504,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-card",
         "lsui-sc-detail-row"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6909,7 +7556,13 @@
         "lsui-sc-status-chip",
         "lsui-sc-card",
         "lsui-sc-detail-row"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6954,7 +7607,13 @@
         "lsui-sc-text-button",
         "lsui-sc-status-chip",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -6999,7 +7658,13 @@
         "lsui-sc-text-button",
         "lsui-sc-status-chip",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7045,7 +7710,13 @@
         "lsui-sc-section-header",
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7091,7 +7762,13 @@
         "lsui-sc-section-header",
         "lsui-sc-modal-backdrop",
         "lsui-sc-modal-panel"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7147,7 +7824,13 @@
         "lsui-sc-modal-panel",
         "lsui-sc-card",
         "lsui-sc-definition-item"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7203,7 +7886,13 @@
         "lsui-sc-modal-panel",
         "lsui-sc-card",
         "lsui-sc-definition-item"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7255,7 +7944,13 @@
         "lsui-sc-text-input",
         "lsui-sc-select-input",
         "lsui-sc-textarea-input"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "admin",
@@ -7307,7 +8002,13 @@
         "lsui-sc-text-input",
         "lsui-sc-select-input",
         "lsui-sc-textarea-input"
-      ]
+      ],
+      "validatedProductBaseline": "6f6c08bf5346f79f8c226c6d1082a69df6fd2ea6",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7358,7 +8059,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7409,7 +8116,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7460,7 +8173,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7511,7 +8230,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7562,7 +8287,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7613,7 +8344,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7664,7 +8401,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7715,7 +8458,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7766,7 +8515,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7817,7 +8572,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7868,7 +8629,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "site",
@@ -7919,7 +8686,13 @@
         "lsui-sc-shadowing-control-dock",
         "lsui-sc-quiz-option",
         "lsui-sc-icon-button"
-      ]
+      ],
+      "validatedProductBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -7960,7 +8733,13 @@
         "lsui-sc-key-value-list",
         "lsui-sc-key-value-label",
         "lsui-sc-key-value-value"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -8001,7 +8780,13 @@
         "lsui-sc-key-value-list",
         "lsui-sc-key-value-label",
         "lsui-sc-key-value-value"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -8039,7 +8824,13 @@
         "lsui-sc-pressable",
         "lsui-sc-card",
         "lsui-sc-skeleton"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -8077,7 +8868,13 @@
         "lsui-sc-pressable",
         "lsui-sc-card",
         "lsui-sc-skeleton"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -8114,7 +8911,13 @@
         "lsui-sc-segmented-control",
         "lsui-sc-pressable",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "cupom",
@@ -8151,7 +8954,13 @@
         "lsui-sc-segmented-control",
         "lsui-sc-pressable",
         "lsui-sc-card"
-      ]
+      ],
+      "validatedProductBaseline": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "validatedCandidateUiRuntimeSha256": "3326f9d46c89550592f74643ed46f586760a340c0808cb16ebbdd24af4f0700e",
+      "reusedImageEvidence": {
+        "fromCandidate": "f190b2104cb819b24a716fa2b5f7bdf3cbe56c0c5a9de4ce1ff5ada437330129",
+        "reason": "Compiled runtime differs only by min-height:0 inside WeeklyCountChart Day; this route/state has no WeeklyCountChart marker. Product rendering source is unchanged. Prior actual capture runtime/baseline retained; current validation references recorded separately."
+      }
     },
     {
       "group": "ui-catalog",
@@ -10139,6 +10948,62 @@
       },
       "beforeSha256": "d0c5c7fdb15ab6c9628958a0c520963b809673147954dd98af7beb14cc81b226",
       "afterSha256": "3aac9c49723925d967d2d7759dae14c34f520a35df11d466deb46048fc3ef08e",
+      "byteIdentical": false
+    },
+    {
+      "group": "chart-delta",
+      "id": "molecules-weeklycountchart--default",
+      "width": 390,
+      "height": 844,
+      "route": null,
+      "before": ".github/evidence/ui-react-craftsmanship/chart-delta/before/molecules-weeklycountchart--default-390-844.png",
+      "after": ".github/evidence/ui-react-craftsmanship/chart-delta/after/molecules-weeklycountchart--default-390-844.png",
+      "captureBefore": {
+        "mode": "full-page",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "modalCount": 0
+      },
+      "captureAfter": {
+        "mode": "full-page",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "modalCount": 0
+      },
+      "beforeSha256": "074a916449a2c2867512c8ff4b64fafc0e33877a7a286fcde44e932ac375fd2a",
+      "afterSha256": "72c136a78accb53e7940d4c78d367d1338d3fff84a21d068f9f7d4c0f3d10dc8",
+      "byteIdentical": false
+    },
+    {
+      "group": "chart-delta",
+      "id": "molecules-weeklycountchart--default",
+      "width": 1440,
+      "height": 844,
+      "route": null,
+      "before": ".github/evidence/ui-react-craftsmanship/chart-delta/before/molecules-weeklycountchart--default-1440-844.png",
+      "after": ".github/evidence/ui-react-craftsmanship/chart-delta/after/molecules-weeklycountchart--default-1440-844.png",
+      "captureBefore": {
+        "mode": "full-page",
+        "viewport": {
+          "width": 1440,
+          "height": 844
+        },
+        "modalCount": 0
+      },
+      "captureAfter": {
+        "mode": "full-page",
+        "viewport": {
+          "width": 1440,
+          "height": 844
+        },
+        "modalCount": 0
+      },
+      "beforeSha256": "4c15a493b599004196feed45e9d7f586058b745050f0710b9641c0cbc3ee8430",
+      "afterSha256": "a18679ccbab6ddc82dd85d1b04deea9f42f4633f12b5a4331b58a5812dd1b541",
       "byteIdentical": false
     }
   ]

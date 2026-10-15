@@ -55,3 +55,13 @@ A biblioteca tem172 contratos públicos/173 registros e355 exemplos curados veri
 Evidência:213 pares nativos —142 de produtos,34 do catálogo,12 de composições e25 do delta desde a revisão UI aprovada. Os baselines Teacher/Admin agora correspondem aos stagings57011690/c42dcf13 e ao pacote1.22.0 com hash conferido. Os demais baselines foram preservados. As142 capturas de produto e34 de catálogo foram renovadas contra o runtime final. As12 composições Dialog/Menu/KeyValue reutilizam a evidência anterior: seus owners, dependências de interação e tokens relevantes não mudaram nesta correção; nenhuma captura antiga recebe alegação de nova execução.
 
 O novo contraste de texto auxiliar/warning e o foco do calendário exigem aceite visual da revisão atual. Aprovação original preservada no recibo local; não transferida para novos pixels. CI ampla da nova revisão, integração e publicação seguem pendentes.
+
+## Reconciliação com a correção do gráfico no main
+
+215 pares nativos: os213 anteriores e dois deltas de WeeklyCountChart. Os12 pares do Teacher que contêm esse owner foram renovados contra o novo baseline32109d35/UI1.22.0-70e23a7 e o candidato major1b1f4351b9e02ea39dcb9e55199dd128676b98e8a55b2e8aeebba21d36a21a0a. O pacote de baseline foi baixado e confrontado com SHA-512 do lock; SHA-256083c5f62f05afea131ca00c0364e13294f57e812a8b4d9e2dd4dbcd4104fab6c. Admin foi reconciliado com6f6c08b, sem delta de fonte renderizada.
+
+O bundle novo difere do anterior apenas por min-height:0; dentro da coluna do gráfico. A comparação dos1.126 membros do pacote detectou somente dist/index.js e seu mapa de declarações relativo ao arquivo de estilos; todas as declarações efetivas, peers, exports e demais membros são idênticos. Public API173values/242types/555declarations passou; build e33 budgets passaram, sem alterar limites. Os seis cenários focados do gráfico passaram.
+
+As outras imagens reutilizam a evidência anterior porque não contêm o owner do gráfico e seus inputs relevantes permanecem idênticos. Os hashes de runtime e os refs efetivamente capturados foram preservados por par; os campos validatedProductBaseline e validatedCandidateUiRuntimeSha256 distinguem a validação atual dessa captura anterior. Não se afirma que todos os PNGs foram recapturados contra o novo bundle. A captura inicial de Depois dos12casos foi refeita após o congelamento definitivo; o guard de timestamp impede incorporar a tentativa anterior.
+
+Gates amplos e aceite da revisão atual continuam pendentes. A integração de UIadcbc31/Teacher32109d35/Admin6f6c08b nesta feature preserva a entrega paralela já aprovada; este registro não afirma nova publicação da major.

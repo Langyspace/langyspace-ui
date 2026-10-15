@@ -17,6 +17,7 @@ export const Day = styled.div.withConfig({
   align-items: center;
   justify-content: flex-end;
   height: 100%;
+  min-height: 0;
   gap: ${token.spacing2};
 `
 export const Count = styled.div.withConfig({

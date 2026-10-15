@@ -34,3 +34,11 @@ Candidato2bd56b8057155560c5c8814e19ee03525091d75d5d7d4fb03ffbf1b516532932 public
 213 pares preparados:142 produtos,34 catálogo,12 composições e25 do delta desde o aceite original. Os cinco PRs de adoção receberam novos heads e tabelas completas. A aprovação dos heads antigos é preservada, sem atribuí-la aos pixels corrigidos.
 
 CI38776364996 passou arquitetura e pacote e completou os stories; um teste de referência excedeu5s ao recriar ambientes TypeScript sem configuração. A correção limita a análise sem tsconfig a binding de símbolos sem tipos globais; projetos reais com tsconfig mantêm suas opções. Os nove testes de referências passaram, incluindo alias, shadowing, reexports e styled; o caso antes lento concluiu em39ms localmente. Nenhum timeout global foi ampliado e o pacote/rendering não mudou. Nova execução ampla permanece a cargo da CI.
+
+### Reconciliação final com main e stagings atualizados
+
+Main UIadcbc31 integrou WeeklyCountChart70e23a7: min-height:0 na coluna evita exceder a altura da grade. Teacher32109d35 e Admin6f6c08b adotaram seu pacote final1.22.0; esta feature preserva essas ancestrais. Os conflitos eram somente o CSS tokenizado do gráfico e pins de pacote, sem alteração adicional de domínio.
+
+Prova de runtime: o bundle2.0.0 compilado difere do candidato anterior apenas pela inserção literal de13 caracteres min-height:0; dentro desse styled component. No pacote, apenas dist/index.js e o mapa de declarações de WeeklyCountChart/styles.ts mudaram; todas as declarações efetivas permanecem idênticas e o check de API passou. Build e33 budgets passaram; layout focado do gráfico passou em seis cenários. A evidência existente é reutilizada nas superfícies que não contêm o gráfico, conservando os hashes e baselines efetivamente capturados e registrando separadamente a validação contra o novo candidato. Os12 pares Today/drawers/foco do Teacher são renovados; há dois pares adicionais do gráfico isolado. Nenhuma imagem é editada.
+
+O pedido anterior de reviewfb2dd1e foi superado por essa atualização do target antes do aceite. Os novos heads e215 pares precisam ser preparados e conferidos antes do pedido atual; não aplicar eventual resposta ao head antigo a pixels posteriores. Nenhum merge/publicação desta major ocorreu.
