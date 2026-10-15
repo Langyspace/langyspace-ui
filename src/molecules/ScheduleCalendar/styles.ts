@@ -205,8 +205,12 @@ export const Badge = styled.span`
   font-weight: ${tokens.typography.fontWeight.semibold};
 `
 
-export const More = styled.div`
+export const More = styled(Pressable)`
+  align-self: flex-start;
   margin-top: ${tokens.spacing[1]};
+  padding: 0;
+  border: 0;
+  background: transparent;
   color: ${tokens.color.content.muted};
   font-size: ${tokens.typography.fontSize.xs};
 `

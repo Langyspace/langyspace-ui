@@ -12,4 +12,6 @@ Dependência aberta do rollout: tipos das Functions do Teacher têm erros em arq
 
 Próxima ação: revisão humana do PR de `feat/shared-calendar-half-hour` para main e dos PRs de adoção para staging. Preservar esta feature/worktree enquanto aguarda.
 
+Revisão mínima de UX de 2026-10-15 concluída: quatro correções centralizadas na UI (mês mobile, expansão de aulas, clique após arraste e prioridade/contador da agenda). Layout preservado, sem nova API; acessibilidade fora do escopo por pedido do produto. 13 testes únicos de componente, build/API e browser sintético Chromium 390/1440 nos dois produtos + WebKit 390 Teacher passaram. Novo candidato e evidências descritos em verification.md. Consumidores adotam o mesmo tarball imutável; nenhum backend alterado nesta revisão. Atualização dos mesmos PRs draft, sem merge, release ou deploy.
+
 Visual gate review: pending human.

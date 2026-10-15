@@ -3,9 +3,137 @@ import { renderToString } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
 import { ScheduleCalendar } from '.'
 import { ScheduleCalendarAgenda } from './Agenda'
+import { ScheduleCalendarMonth } from './Month'
 import { scheduleCalendarFixture as fixture } from './fixtures'
 
 describe('ScheduleCalendar', () => {
+  it('keeps adjacent-month days out of the compact month agenda', () => {
+    render(
+      <ScheduleCalendarAgenda
+        {...fixture}
+        view="month"
+        days={[{ ...fixture.days[4], outsideMonth: true }, fixture.days[5]]}
+      />,
+    )
+    expect(
+      screen.queryByRole('heading', { name: /Qui, 15/, hidden: true }),
+    ).toBeNull()
+    expect(
+      screen.getByRole('heading', { name: 'Sex, 16', hidden: true }),
+    ).toBeInTheDocument()
+  })
+
+  it('previews available slots and counts lessons, keeping other actions behind expansion', () => {
+    const onSlotClick = vi.fn()
+    const daySlots = fixture.slots
+      .filter((slot) => slot.dateKey === fixture.days[5].dateKey)
+      .map((slot) =>
+        slot.startMinute < 840
+          ? { ...slot, state: 'unavailable' as const }
+          : slot,
+      )
+    render(
+      <ScheduleCalendarAgenda
+        {...fixture}
+        days={[fixture.days[5]]}
+        slots={daySlots}
+        onSlotClick={onSlotClick}
+      />,
+    )
+    expect(screen.getByText('3 aulas')).toBeInTheDocument()
+    expect(screen.queryByText(/itens/)).toBeNull()
+    expect(screen.queryByLabelText(daySlots[0].label)).toBeNull()
+    expect(screen.getByLabelText(daySlots[16].label)).toBeInTheDocument()
+    fireEvent.click(
+      screen.getByRole('button', {
+        name: 'Ver mais 21 horários',
+        hidden: true,
+      }),
+    )
+    fireEvent.click(screen.getByLabelText(daySlots[0].label))
+    expect(onSlotClick).toHaveBeenCalledExactlyOnceWith(daySlots[0].id)
+  })
+
+  it('keeps unavailable actions reachable when there are no available slots', () => {
+    const daySlots = fixture.slots
+      .filter((slot) => slot.dateKey === fixture.days[4].dateKey)
+      .slice(0, 2)
+      .map((slot) => ({ ...slot, state: 'unavailable' as const }))
+    render(
+      <ScheduleCalendarAgenda
+        {...fixture}
+        days={[fixture.days[4]]}
+        slots={daySlots}
+        events={[]}
+      />,
+    )
+    expect(screen.getByText('sem aulas')).toBeInTheDocument()
+    expect(screen.queryByLabelText(daySlots[0].label)).toBeNull()
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Ver 2 horários', hidden: true }),
+    )
+    expect(screen.getByLabelText(daySlots[0].label)).toBeInTheDocument()
+  })
+
+  it('expands hidden month lessons without opening a slot action', () => {
+    const onSlotClick = vi.fn(),
+      onOpenEvent = vi.fn()
+    const extraEvents = [960, 1020].map((startMinute) => ({
+      ...fixture.events[0],
+      id: `extra-${startMinute}`,
+      startMinute,
+      timeLabel: `${startMinute / 60}:00`,
+      title: `Aula ${startMinute / 60}`,
+      label: `Aula ${startMinute / 60}:00`,
+    }))
+    render(
+      <ScheduleCalendarMonth
+        {...fixture}
+        events={[...fixture.events, ...extraEvents]}
+        onSlotClick={onSlotClick}
+        onOpenEvent={onOpenEvent}
+      />,
+    )
+    expect(screen.queryByRole('button', { name: 'Aula 17:00' })).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: '+2 mais' }))
+    expect(onSlotClick).not.toHaveBeenCalled()
+    fireEvent.click(screen.getByRole('button', { name: 'Aula 17:00' }))
+    expect(onOpenEvent).toHaveBeenCalledExactlyOnceWith('extra-1020')
+    fireEvent.click(screen.getByRole('button', { name: 'Mostrar menos' }))
+    expect(screen.queryByRole('button', { name: 'Aula 17:00' })).toBeNull()
+  })
+
+  it.each([false, true])(
+    'keeps the next pointer click after dragging (drag click consumed: %s)',
+    (consumeDragClick) => {
+      const onSlotClick = vi.fn(),
+        onSlotSelection = vi.fn()
+      render(
+        <ScheduleCalendar
+          {...fixture}
+          onSlotClick={onSlotClick}
+          onSlotSelection={onSlotSelection}
+        />,
+      )
+      const start = screen.getByRole('button', {
+        name: '2026-10-15, 14:00 · Disponível',
+      })
+      const end = screen.getByRole('button', {
+        name: '2026-10-15, 14:30 · Disponível',
+      })
+      fireEvent.pointerDown(start, { button: 0, pointerType: 'mouse' })
+      fireEvent.pointerEnter(end)
+      fireEvent.pointerUp(end)
+      expect(onSlotSelection).toHaveBeenCalledOnce()
+      if (consumeDragClick) fireEvent.click(end)
+      expect(onSlotClick).not.toHaveBeenCalled()
+      fireEvent.pointerDown(start, { button: 0, pointerType: 'mouse' })
+      fireEvent.pointerUp(start)
+      fireEvent.click(start)
+      expect(onSlotClick).toHaveBeenCalledExactlyOnceWith('2026-10-15-840')
+    },
+  )
+
   it('lets the compact agenda expand later half-hour actions', () => {
     const onSlotClick = vi.fn()
     render(

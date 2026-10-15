@@ -48,6 +48,7 @@ export function ScheduleCalendarWeek({
     event: KeyboardEvent<HTMLButtonElement>,
     slot?: ScheduleCalendarSlot,
   ) => {
+    suppressClick.current = false
     if (!slot) return
     if (event.key === 'Escape') {
       reset()
@@ -131,6 +132,7 @@ export function ScheduleCalendarWeek({
                 data-calendar-start-minute={minute}
                 onKeyDown={(event) => keyDown(event, slot)}
                 onPointerDown={(event) => {
+                  suppressClick.current = false
                   if (
                     event.button === 0 &&
                     event.pointerType !== 'touch' &&

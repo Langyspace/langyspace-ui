@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { CalendarDayNumber } from '../../CalendarDayNumber'
 import { CalendarMonthGrid } from '../../CalendarMonthGrid'
 import * as Styled from '../styles'
@@ -10,6 +11,7 @@ export function ScheduleCalendarMonth({
   onOpenEvent,
   onSlotClick,
 }: ScheduleCalendarBodyProps) {
+  const [expanded, setExpanded] = useState<Record<string, boolean>>({})
   return (
     <div>
       <Styled.MonthWeekdays>
@@ -53,22 +55,38 @@ export function ScheduleCalendarMonth({
                 >
                   {day.dayNumber}
                 </CalendarDayNumber>
-                {dayEvents.slice(0, 3).map((event) => (
-                  <Styled.MonthEvent
-                    key={event.id}
-                    tone={event.tone ?? 'neutral'}
-                    aria-label={event.label}
-                    title={event.label}
-                    data-calendar-class-id={event.id}
-                    onClick={() => onOpenEvent(event.id)}
-                  >
-                    <Styled.EventTime>{event.timeLabel}</Styled.EventTime>
-                    {event.badge && <Styled.Badge>{event.badge}</Styled.Badge>}
-                    <Styled.EventName>{event.title}</Styled.EventName>
-                  </Styled.MonthEvent>
-                ))}
+                {(expanded[day.id] ? dayEvents : dayEvents.slice(0, 3)).map(
+                  (event) => (
+                    <Styled.MonthEvent
+                      key={event.id}
+                      tone={event.tone ?? 'neutral'}
+                      aria-label={event.label}
+                      title={event.label}
+                      data-calendar-class-id={event.id}
+                      onClick={() => onOpenEvent(event.id)}
+                    >
+                      <Styled.EventTime>{event.timeLabel}</Styled.EventTime>
+                      {event.badge && (
+                        <Styled.Badge>{event.badge}</Styled.Badge>
+                      )}
+                      <Styled.EventName>{event.title}</Styled.EventName>
+                    </Styled.MonthEvent>
+                  ),
+                )}
                 {dayEvents.length > 3 && (
-                  <Styled.More>+{dayEvents.length - 3} mais</Styled.More>
+                  <Styled.More
+                    aria-expanded={Boolean(expanded[day.id])}
+                    onClick={() =>
+                      setExpanded((current) => ({
+                        ...current,
+                        [day.id]: !current[day.id],
+                      }))
+                    }
+                  >
+                    {expanded[day.id]
+                      ? 'Mostrar menos'
+                      : `+${dayEvents.length - 3} mais`}
+                  </Styled.More>
                 )}
               </Styled.MonthEvents>
             </Styled.MonthDay>

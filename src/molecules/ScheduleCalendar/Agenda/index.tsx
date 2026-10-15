@@ -14,6 +14,7 @@ export function ScheduleCalendarAgenda({
   return (
     <Styled.Root aria-label="Agenda compacta" data-calendar-scroller="true">
       {days.map((day) => {
+        if (view === 'month' && day.outsideMonth) return null
         const dayEvents = events
           .filter((event) => event.dateKey === day.dateKey)
           .sort((a, b) => a.startMinute - b.startMinute)
@@ -27,7 +28,11 @@ export function ScheduleCalendarAgenda({
           .sort((a, b) => a.startMinute - b.startMinute)
         const count = dayEvents.length + daySlots.length
         if (view === 'month' && !count && !day.today) return null
-        const visibleSlots = expanded[day.id] ? daySlots : daySlots.slice(0, 3)
+        const previewSlots = daySlots
+          .filter((slot) => slot.state === 'available')
+          .slice(0, 3)
+        const visibleSlots = expanded[day.id] ? daySlots : previewSlots
+        const remainingSlots = daySlots.length - previewSlots.length
         return (
           <Styled.Card key={day.id}>
             <Styled.Header>
@@ -36,8 +41,8 @@ export function ScheduleCalendarAgenda({
                 {day.today ? ' · Hoje' : ''}
               </h2>
               <span>
-                {count
-                  ? `${count} ${count === 1 ? 'item' : 'itens'}`
+                {dayEvents.length
+                  ? `${dayEvents.length} ${dayEvents.length === 1 ? 'aula' : 'aulas'}`
                   : 'sem aulas'}
               </span>
             </Styled.Header>
@@ -76,7 +81,7 @@ export function ScheduleCalendarAgenda({
                     {slot.timeLabel && <span>{slot.timeLabel}</span>}
                   </Styled.Slot>
                 ))}
-                {daySlots.length > 3 && (
+                {remainingSlots > 0 && (
                   <Styled.More
                     aria-expanded={Boolean(expanded[day.id])}
                     onClick={() =>
@@ -88,7 +93,7 @@ export function ScheduleCalendarAgenda({
                   >
                     {expanded[day.id]
                       ? 'Mostrar menos horários'
-                      : `Ver mais ${daySlots.length - 3} horários`}
+                      : `Ver ${previewSlots.length ? 'mais ' : ''}${remainingSlots} horários`}
                   </Styled.More>
                 )}
               </Styled.Stack>
