@@ -1,0 +1,880 @@
+{
+  "date": "2026-10-15",
+  "fixture": "Synthetic local repository design mocks; external network blocked; original PNGs; no image editing; canonical neutral IconButton states. Teacher history alignment preserves identical runtime/config trees.",
+  "records": [
+    {
+      "id": "home",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/home-1440-844.png",
+          "sha256": "94bb3026840708b088954d195c1522fbceef96672d32bf10cfa8ce57783987af",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/home-1440-844.png",
+          "sha256": "af0553a12135a26636aa5d79682c490f9185e11c3c4e388d6f83fe8b8f46f68c",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "classes",
+      "width": 1440,
+      "height": 844,
+      "route": "/aulas",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/classes-1440-844.png",
+          "sha256": "a9029e16a3c71340fae184231ea38ef01df51e321f02f53ff11c62430dfc6ca8",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/classes-1440-844.png",
+          "sha256": "3f49d348351fffffceaa2f50a48886ac4af687ec36d720cb9d96ebbe75f9c092",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-1440-844.png",
+          "sha256": "f7f890e867f5f135f0af4d2c903f8ff80a1301653fe434f8a8583f0450963631",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-1440-844.png",
+          "sha256": "336d65769a25ac57953d2bcd077a0f818a655a842d609a1181b06606d11f1e6a",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "vocabulary",
+      "width": 1440,
+      "height": 844,
+      "route": "/vocabulario",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/vocabulary-1440-844.png",
+          "sha256": "39b35642ede254d60a664b00b2f0bce6bce8ce3052081eb868713245ed95df74",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/vocabulary-1440-844.png",
+          "sha256": "b695554c78d387ac05a37cdbc23e5ac5cd6fc4710ed3133dc5b6ae8fb92e0c4b",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "messages",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/messages-1440-844.png",
+          "sha256": "88682b34c612ed1cf10daac28666867e5c549888f928576a9fa60c28062f4553",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/messages-1440-844.png",
+          "sha256": "ada48fdc913f027cab0c564b7c9a6ff77ed7ff5a0d9a357c1b4ec1d39a020efc",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "profile",
+      "width": 1440,
+      "height": 844,
+      "route": "/perfil",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/profile-1440-844.png",
+          "sha256": "5410164c42bac8c0e824f6d7a969529270e4493e1065c2afae089c4c1c45cdc6",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/profile-1440-844.png",
+          "sha256": "845bb1648e54f0b368c879e9e2418dffdebad7e3e8dc1c74f158bb118221f7dc",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "profile-edit",
+      "width": 1440,
+      "height": 844,
+      "route": "/perfil/editar",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/profile-edit-1440-844.png",
+          "sha256": "7e52dfd47ea0ca5763365fb59b25a12ed9186ea0d9a38c1cac40e5ef91da128f",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/profile-edit-1440-844.png",
+          "sha256": "fdc598b367c3584191a6de8dd638188eb5395a4ce75afe5a0aba0e418cdbff9a",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "payment",
+      "width": 1440,
+      "height": 844,
+      "route": "/pagamento",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/payment-1440-844.png",
+          "sha256": "957c5ef16b8251d3ca089e20182e802d23673e39c2ff93b11a33035f35012de6",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/payment-1440-844.png",
+          "sha256": "6ffa0c4c4debd828d49d453fabe73fe5ab9d3e3f9c9a7d1c0211867ddc798753",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "home-loading",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/home-loading-1440-844.png",
+          "sha256": "db9334b0fbea5283d12856a364d5eeeaa4174f780532ac27f5883da2360dd689",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/home-loading-1440-844.png",
+          "sha256": "db9334b0fbea5283d12856a364d5eeeaa4174f780532ac27f5883da2360dd689",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "messages-offline",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/messages-offline-1440-844.png",
+          "sha256": "fe1785076e33da40efbb018235c477f6d3ab69436b779d182e298dfcbdc054c9",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/messages-offline-1440-844.png",
+          "sha256": "ba79c9f0a453dd6c88a3371146f60ae64c19e1294f3433ca6a456eaf05190a57",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "messages-empty",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/messages-empty-1440-844.png",
+          "sha256": "315824176a92fdbbaa66d26482bcadfa94f6152e2348d2eb242bbbd96e7c7148",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/messages-empty-1440-844.png",
+          "sha256": "ac6e05df5a6488884b0a78c4b59a335da41169f4308638703db54c788c56377d",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons-flashcards",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-flashcards-1440-844.png",
+          "sha256": "b6fd80e294e0439ce39759c2e02f9bcd3323e4dba5b9128db486644832aecc37",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-flashcards-1440-844.png",
+          "sha256": "3bee7c8ee31e4f0af4e5d18537c4b0b160b27b6b5aa40899d8a2ef042d7915ab",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons-shadowing",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-shadowing-1440-844.png",
+          "sha256": "dfd27b93c1f935112acb67c870a120933cbe489a28c507179501cc46c75715a8",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-shadowing-1440-844.png",
+          "sha256": "05b1a940a34cbd52e34681563aac50f176ee63a003e8ef890098f70aba3b52e5",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons-music",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-music-1440-844.png",
+          "sha256": "9a88bb5aa31995157688a6a846dfb7cdb419ed5d016d736067341a6c6dccea8d",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-music-1440-844.png",
+          "sha256": "a0c52990e96e9b2bd3b88cd19bf980bd72d0cbc97bb84d49b491322f3160ff58",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons-quiz",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-quiz-1440-844.png",
+          "sha256": "41a70c4d4b6f9db8275367f35660ee23902581cb22a0d402a0270519cb8b3786",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-quiz-1440-844.png",
+          "sha256": "025b65ad16195ab89e4c367c8abafaed40e8edcb1c194173411606b9e24497bf",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "lessons-personal",
+      "width": 1440,
+      "height": 844,
+      "route": "/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/lessons-personal-1440-844.png",
+          "sha256": "f7f890e867f5f135f0af4d2c903f8ff80a1301653fe434f8a8583f0450963631",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/lessons-personal-1440-844.png",
+          "sha256": "336d65769a25ac57953d2bcd077a0f818a655a842d609a1181b06606d11f1e6a",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-compact",
+      "width": 901,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-compact-901-844.png",
+          "sha256": "02cae5aba71295436978d54f4aa797009470efd54b79a8a657e1f9aff2a50470",
+          "width": 901,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-compact-901-844.png",
+          "sha256": "824443695df217d869b4ab8aee45ae17bb83e97b2cc46e073ed7045aee3c4213",
+          "width": 901,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-mobile-hidden",
+      "width": 390,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-mobile-hidden-390-844.png",
+          "sha256": "738fa539799c092264dcd2f60c3c7313f39b3ac2fdabf15e888f66e5da9173e4",
+          "width": 390,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-mobile-hidden-390-844.png",
+          "sha256": "738fa539799c092264dcd2f60c3c7313f39b3ac2fdabf15e888f66e5da9173e4",
+          "width": 390,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-hover",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-hover-1440-844.png",
+          "sha256": "cd5846ae7f25c6529ca645104f9efc740442daab790ec64e4286cfa41d53461a",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-hover-1440-844.png",
+          "sha256": "fe955ccbfd5fcc655d2ccf8c40edce875019a64bbeb32db97cc2394c9058419f",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-focus",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-focus-1440-844.png",
+          "sha256": "2da62d2868d938cb8a1a38e537b59b48a33ac8012951944d357f99a4282f231f",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-focus-1440-844.png",
+          "sha256": "a5e61801016cc9c8ec816b5fd467774ed6fa11231052d0c882c4145daa9461b4",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-active",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-active-1440-844.png",
+          "sha256": "c8104afc15b0bdfa84315fae1dab691fca13ebb754f38ebc7ebbc3032d5af49d",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-active-1440-844.png",
+          "sha256": "31046643c361fc2e5a1c6d30731eeb210fc96dd4238d4da8ff2f351e29cbc8f5",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "sidebar-contact-hover",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/before/sidebar-contact-hover-1440-844.png",
+          "sha256": "98ccc01503b77076c8571dfcafdb4d128922e4bac0dc834238bc5e698e6f6e47",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/student/after/sidebar-contact-hover-1440-844.png",
+          "sha256": "842d8974993bf706d8babd841484a967ca419814be1248ae2e9190251862dd3f",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "student",
+      "baseline": "ca7c2caf99909c9e866e2af56d2003ad2c9d2a7c",
+      "revision": "0f4410b541d5476c608cb258a4ea88842546dab0"
+    },
+    {
+      "id": "today",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/today-1440-844.png",
+          "sha256": "d777fc5067e62074717d58c2d9d815fa5d55c906afcdbe61ab2fa85b7c220103",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/today-1440-844.png",
+          "sha256": "be451d36b7bd5d0ce0c771865e5949917c06ebdb480cd881250b60ce904a1401",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "today-loading",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/today-loading-1440-844.png",
+          "sha256": "63808895440df4b189d28a246f434799d33eee5fa734836ffbfbe11c185921b1",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/today-loading-1440-844.png",
+          "sha256": "4dd8cea9b4eab2ecfd44a2923d9079b786dea26420bfb5aa05be4d14c2798b6a",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "calendar-week",
+      "width": 1440,
+      "height": 844,
+      "route": "/calendario",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/calendar-week-1440-844.png",
+          "sha256": "fb3be4784d386c47a4cc2cc7fe56378474766e78ce367e96abea3b16da8ab02e",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/calendar-week-1440-844.png",
+          "sha256": "15778597572c21b0b9ad36ddb2627a7e995f3705399a81d8fb783fe2180634d0",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "materials",
+      "width": 1440,
+      "height": 844,
+      "route": "/materiais",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/materials-1440-844.png",
+          "sha256": "58a7400c3db98dacd711330db04d4934462ed36803b812cec878f4d992c127b7",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/materials-1440-844.png",
+          "sha256": "12e4c1ec87688a7c7570bda55b05e7453485a39d1a7d48af80fec9074ca69ac8",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "students",
+      "width": 1440,
+      "height": 844,
+      "route": "/alunos",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/students-1440-844.png",
+          "sha256": "2153424e563a52a69e15a3536f7e54d09bfca456fca9ec0555939ed598dc638b",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/students-1440-844.png",
+          "sha256": "e77ceae82bfc7e13f5bceca7ba1234803df32605d4e0aee1dbe801e2685dad56",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "payouts",
+      "width": 1440,
+      "height": 844,
+      "route": "/repasses",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/payouts-1440-844.png",
+          "sha256": "e56187e709766b5c29ee33cd37edc5e0961330eac1f2fa582e9c4b9be99e1d67",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/payouts-1440-844.png",
+          "sha256": "5466de53a2e37f3bdb9e597e89808793c6fc9b3c7d9add6358aaa898c1ba8f0d",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "messages",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/messages-1440-844.png",
+          "sha256": "7cb5f92a3c1b975ec66a8c647e7be955fc51c11ef4a8a56b53580adc0d47798a",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/messages-1440-844.png",
+          "sha256": "dba249c81bf3105898eebad43a5770fa0fd9ffa4ab03283fa0a9f655e031930e",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "messages-dense",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/messages-dense-1440-844.png",
+          "sha256": "e719c573a274703282f559161da72a5387f4fd4e6ce8981d05e098ccc59c85a3",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/messages-dense-1440-844.png",
+          "sha256": "73f948ea0e1fb4981cc1fd99132bd118ca2c6c23b361c6be1ca5ed9350f15652",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "messages-offline",
+      "width": 1440,
+      "height": 844,
+      "route": "/mensagens",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/messages-offline-1440-844.png",
+          "sha256": "e4f0bf9e972b37c0abcc65349c89a123bb695fbc6af3cd2239347d2ef21316dd",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/messages-offline-1440-844.png",
+          "sha256": "5960c5a94ec29b951bf07954bc484db09807081f3415c32fabdc453c69a354fb",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "preview-lessons",
+      "width": 1440,
+      "height": 844,
+      "route": "/alunos/:id/licoes",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/preview-lessons-1440-844.png",
+          "sha256": "80e3d12cb4869c52d6d676128c74a4d84038ca442d0aa08da4f32744f4783929",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/preview-lessons-1440-844.png",
+          "sha256": "c0496a0b0472db7a0264daa7766eac495fb4df724fba93f7cdecc84758116d1c",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "preview-vocabulary",
+      "width": 1440,
+      "height": 844,
+      "route": "/alunos/:id/vocabulario",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/preview-vocabulary-1440-844.png",
+          "sha256": "28c52c34ef826fcb08e04d362cc6b393945615eef6bf5578b80f7acb6c33d098",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/preview-vocabulary-1440-844.png",
+          "sha256": "86f8c4fb81ca79e4dec7a095427e58dfe7d2c53a52f185e04f427461f101866e",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "sidebar-compact",
+      "width": 901,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/sidebar-compact-901-844.png",
+          "sha256": "40674ee1abec4133c41bd048b00aa5da14fe50d8339c770c0b1a0c44439c7ce6",
+          "width": 901,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/sidebar-compact-901-844.png",
+          "sha256": "75568e91fcaa93fe51d3589222863b768bcbb67f031aa5e0d9ff87db77f72ca8",
+          "width": 901,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "sidebar-mobile-hidden",
+      "width": 390,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/sidebar-mobile-hidden-390-844.png",
+          "sha256": "ea540ead50cb97949bea849ae376a61b0c18a6b1511fcde316a1111e68fc0cee",
+          "width": 390,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/sidebar-mobile-hidden-390-844.png",
+          "sha256": "ea540ead50cb97949bea849ae376a61b0c18a6b1511fcde316a1111e68fc0cee",
+          "width": 390,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "sidebar-hover",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/sidebar-hover-1440-844.png",
+          "sha256": "1d3ba0308f35549e91c0f8149917627e9a16960a17b282795426b5b1122abdac",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/sidebar-hover-1440-844.png",
+          "sha256": "570b2fd1b59bef6c56683333cae2f7e426541b77881347ea460ee583be57b9f5",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "sidebar-focus",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/sidebar-focus-1440-844.png",
+          "sha256": "39db26126753af522f2edefd058ac7c564d639ef677ed34911bec945a0e8493a",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/sidebar-focus-1440-844.png",
+          "sha256": "ed68b2f5b1cbe4adadedd5129ee79cf891f8d77557cb3ff36d87e9f2b24434d7",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    },
+    {
+      "id": "sidebar-active",
+      "width": 1440,
+      "height": 844,
+      "route": "/",
+      "images": {
+        "before": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/before/sidebar-active-1440-844.png",
+          "sha256": "e9768f63482dcd5a215cf24e8477123b5a6f44eb04ccd3c77f9a0d3a86e4a773",
+          "width": 1440,
+          "height": 844
+        },
+        "after": {
+          "path": ".github/evidence/sidebar-canonical-actions/teacher/after/sidebar-active-1440-844.png",
+          "sha256": "85c3542080564820071d26ad8741f782f7a316aa78c0f0f1234df7246c1c57ee",
+          "width": 1440,
+          "height": 844
+        }
+      },
+      "product": "teacher",
+      "baseline": "17ca359e30e4bd0527cb5b8ecee1cfc78710d0ea",
+      "revision": "c2c5c6776293bc1ed5c4590b381355cfc9e52887"
+    }
+  ]
+}
