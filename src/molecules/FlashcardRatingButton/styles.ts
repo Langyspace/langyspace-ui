@@ -1,6 +1,6 @@
 import { keyframes, styled } from 'styled-components'
 import { Pressable } from '../../primitives/Pressable'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { FlashcardGrade } from './types'
 const rise = keyframes`
  from {opacity:0;transform:translateY(.625rem);}
@@ -31,7 +31,7 @@ const tones = {
   easy: {
     fill: '#fff4f7',
     border: '#ff1f5c',
-    text: tokens.color.brand.default,
+    text: token.colorBrandDefault,
     glow: 'rgba(255,31,92,.12)',
     hover: 'rgba(255,31,92,.5)',
   },
@@ -49,7 +49,7 @@ export const Button = styled(Pressable).withConfig({
   border: 1.5px solid
     ${({ $selected, $grade }) => ($selected ? tones[$grade].border : '#eceae6')};
   border-radius: 1.0625rem;
-  color: ${tokens.color.content.default};
+  color: ${token.colorContentDefault};
   background: ${({ $selected, $grade }) => ($selected ? tones[$grade].fill : '#f6f6f3')};
   box-shadow: ${({ $selected, $grade }) => ($selected ? `0 0 0 3px ${tones[$grade].glow}` : 'none')};
   transition:
@@ -73,15 +73,15 @@ export const Button = styled(Pressable).withConfig({
   .label {
     color: ${({ $selected, $grade }) => ($selected ? tones[$grade].text : '#5b5b58')};
     font-size: 0.96875rem;
-    font-weight: ${tokens.typography.fontWeight.bold};
+    font-weight: ${token.typographyFontWeightBold};
     letter-spacing: 0;
   }
   .interval {
-    color: ${tokens.color.content.muted};
+    color: ${token.colorContentMuted};
     font-family:
       'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
     font-size: 0.65625rem;
-    font-weight: ${tokens.typography.fontWeight.medium};
+    font-weight: ${token.typographyFontWeightMedium};
   }
   &:active {
     transform: scale(0.96);
@@ -89,7 +89,7 @@ export const Button = styled(Pressable).withConfig({
   @media (hover: hover) {
     &:hover {
       border-color: ${({ $grade }) => tones[$grade].hover};
-      background: #fff;
+      background: ${token.colorNeutral0};
     }
     &:hover .label {
       color: ${({ $grade }) => tones[$grade].text};
@@ -103,7 +103,7 @@ export const Button = styled(Pressable).withConfig({
     min-height: 3.25rem;
     padding: 0.5rem 0.25rem;
     .label {
-      font-size: 0.875rem;
+      font-size: ${token.typographyFontSizeSm};
     }
     .interval {
       font-size: 0.625rem;

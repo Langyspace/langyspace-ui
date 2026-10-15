@@ -1,17 +1,18 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
+import { authRecipe } from '../../foundations/authRecipe'
 
 // Shared auth recipe preserves the established panel rhythm and product breakpoints.
 const recipe = {
-  breakpoints: { sm: '640px', md: '768px', lg: '1024px' },
-  blockXl: `clamp(${tokens.spacing[6]}, 4svh, ${tokens.spacing[8]})`,
-  block2Xl: `clamp(${tokens.spacing[6]}, 4svh, 2.5rem)`,
-  block3Xl: `clamp(${tokens.spacing[8]}, 5svh, 2.5rem)`,
-  compactSm: `clamp(${tokens.spacing[3]}, 2svh, ${tokens.spacing[4]})`,
-  compactMd: `clamp(${tokens.spacing[3]}, 2.5svh, ${tokens.spacing[5]})`,
-  compactXl: `clamp(${tokens.spacing[4]}, 3.5svh, ${tokens.spacing[8]})`,
-  compact2Xl: `clamp(${tokens.spacing[5]}, 4svh, 2.5rem)`,
-  compact3Xl: `clamp(${tokens.spacing[6]}, 5svh, 3rem)`,
+  breakpoints: authRecipe.breakpoints,
+  blockXl: authRecipe.spacing.responsive.block.xl,
+  block2Xl: authRecipe.spacing.responsive.block['2xl'],
+  block3Xl: `clamp(${token.spacing8}, 5svh, 2.5rem)`,
+  compactSm: authRecipe.spacing.responsive.compactBlock.sm,
+  compactMd: authRecipe.spacing.responsive.compactBlock.md,
+  compactXl: authRecipe.spacing.responsive.compactBlock.xl,
+  compact2Xl: `clamp(${token.spacing5}, 4svh, 2.5rem)`,
+  compact3Xl: `clamp(${token.spacing6}, 5svh, 3rem)`,
 } as const
 
 export const Page = styled.main.withConfig({
@@ -21,7 +22,7 @@ export const Page = styled.main.withConfig({
   height: 100svh;
   min-height: 100svh;
   overflow: hidden;
-  background-color: ${tokens.color.neutral[0]};
+  background-color: ${token.colorNeutral0};
 
   @supports (height: 100dvh) {
     height: 100dvh;
@@ -40,7 +41,7 @@ export const BrandPanel = styled.section`
   overscroll-behavior: none;
   overflow: hidden;
   background-color: #000000;
-  color: ${tokens.color.neutral[0]};
+  color: ${token.colorNeutral0};
 
   &::before {
     position: absolute;
@@ -51,7 +52,7 @@ export const BrandPanel = styled.section`
     border-radius: 50%;
     background-image: radial-gradient(
       circle at 30% 30%,
-      ${tokens.color.accent.default} 0%,
+      ${token.colorAccentDefault} 0%,
       transparent 60%
     );
     opacity: 0.45;
@@ -94,17 +95,17 @@ export const BrandInner = styled.div`
   width: 100%;
   max-width: 34rem;
   padding-top: ${recipe.blockXl};
-  padding-right: ${tokens.spacing[6]};
+  padding-right: ${token.spacing6};
   padding-bottom: ${recipe.blockXl};
-  padding-left: ${tokens.spacing[6]};
+  padding-left: ${token.spacing6};
 
   @media (min-width: ${recipe.breakpoints.md}) {
     padding: ${recipe.block3Xl};
   }
 
   @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${tokens.spacing[8]};
-    padding-bottom: ${tokens.spacing[8]};
+    padding-top: ${token.spacing8};
+    padding-bottom: ${token.spacing8};
   }
 `
 
@@ -117,7 +118,7 @@ export const FormPanel = styled.section`
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  background-color: ${tokens.color.neutral[0]};
+  background-color: ${token.colorNeutral0};
   -webkit-overflow-scrolling: touch;
 
   @media (min-width: ${recipe.breakpoints.lg}) {
@@ -128,8 +129,8 @@ export const FormPanel = styled.section`
   }
 
   @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${tokens.spacing[6]};
-    padding-bottom: ${tokens.spacing[6]};
+    padding-top: ${token.spacing6};
+    padding-bottom: ${token.spacing6};
   }
 `
 
@@ -137,8 +138,8 @@ export const MobileHeader = styled.div`
   display: grid;
   gap: ${recipe.compactSm};
   padding-top: ${recipe.compact2Xl};
-  padding-right: ${tokens.spacing[6]};
-  padding-left: ${tokens.spacing[6]};
+  padding-right: ${token.spacing6};
+  padding-left: ${token.spacing6};
 
   @media (min-width: ${recipe.breakpoints.sm}) {
     align-items: center;
@@ -154,8 +155,8 @@ export const MobileCardAction = styled.div`
   min-width: 0;
   justify-content: center;
   margin-top: ${recipe.compactMd};
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
   text-align: center;
 
   @media (min-width: ${recipe.breakpoints.lg}) {
@@ -166,8 +167,8 @@ export const MobileCardAction = styled.div`
 export const TopBar = styled.div`
   display: none;
   justify-content: flex-end;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
 
   @media (min-width: ${recipe.breakpoints.lg}) {
     display: flex;
@@ -180,9 +181,9 @@ export const Content = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding-top: ${recipe.compact3Xl};
-  padding-right: ${tokens.spacing[6]};
+  padding-right: ${token.spacing6};
   padding-bottom: ${recipe.compactXl};
-  padding-left: ${tokens.spacing[6]};
+  padding-left: ${token.spacing6};
 
   @media (min-width: ${recipe.breakpoints.lg}) {
     align-items: center;
@@ -193,8 +194,8 @@ export const Content = styled.div`
   }
 
   @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${tokens.spacing[6]};
-    padding-bottom: ${tokens.spacing[6]};
+    padding-top: ${token.spacing6};
+    padding-bottom: ${token.spacing6};
   }
 `
 

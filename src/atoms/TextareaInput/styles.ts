@@ -3,15 +3,15 @@ import {
   fieldControlStyles,
   type FieldControlStyleProps,
 } from '../../foundations/fields'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Textarea = styled.textarea.withConfig({
   componentId: 'lsui-sc-textarea-input',
 })<FieldControlStyleProps>`
   ${fieldControlStyles}
   min-height: 6rem;
-  padding-top: ${tokens.spacing[3]};
-  padding-bottom: ${tokens.spacing[3]};
-  line-height: ${tokens.typography.lineHeight.normal};
+  padding-top: ${token.spacing3};
+  padding-bottom: ${token.spacing3};
+  line-height: ${token.typographyLineHeightNormal};
   resize: vertical;
 `

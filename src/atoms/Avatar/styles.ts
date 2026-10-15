@@ -1,50 +1,50 @@
 import { css, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { AvatarSize, AvatarTone } from './types'
 
 const sizeStyles = {
   xs: css`
     width: 1.5rem;
     height: 1.5rem;
-    font-size: ${tokens.typography.fontSize['2xs']};
+    font-size: ${token.typographyFontSize2xs};
   `,
   sm: css`
     width: 2rem;
     height: 2rem;
-    font-size: ${tokens.typography.fontSize.xs};
+    font-size: ${token.typographyFontSizeXs};
   `,
   md: css`
     width: 2.5rem;
     height: 2.5rem;
-    font-size: ${tokens.typography.fontSize.sm};
+    font-size: ${token.typographyFontSizeSm};
   `,
   lg: css`
     width: 3.5rem;
     height: 3.5rem;
-    font-size: ${tokens.typography.fontSize.lg};
+    font-size: ${token.typographyFontSizeLg};
   `,
   xl: css`
     width: 4rem;
     height: 4rem;
-    font-size: ${tokens.typography.fontSize.xl};
+    font-size: ${token.typographyFontSizeXl};
   `,
 } satisfies Record<AvatarSize, ReturnType<typeof css>>
 
 const toneStyles = {
   neutral: css`
-    border-color: ${tokens.color.surfaceBorder.default};
-    color: ${tokens.color.content.default};
-    background: ${tokens.color.surface.muted};
+    border-color: ${token.colorSurfaceBorderDefault};
+    color: ${token.colorContentDefault};
+    background: ${token.colorSurfaceMuted};
   `,
   brand: css`
     border-color: transparent;
-    color: ${tokens.color.status.brand.foreground};
-    background: ${tokens.color.status.brand.background};
+    color: ${token.colorStatusBrandForeground};
+    background: ${token.colorStatusBrandBackground};
   `,
   inverse: css`
     border-color: transparent;
-    color: ${tokens.color.neutral[0]};
-    background: ${tokens.color.neutral[950]};
+    color: ${token.colorNeutral0};
+    background: ${token.colorNeutral950};
   `,
 } satisfies Record<AvatarTone, ReturnType<typeof css>>
 
@@ -63,8 +63,8 @@ export const Avatar = styled.span.withConfig({
   overflow: hidden;
   border-width: 1px;
   border-style: solid;
-  border-radius: ${tokens.radius.pill};
-  font-weight: ${tokens.typography.fontWeight.bold};
+  border-radius: ${token.radiusPill};
+  font-weight: ${token.typographyFontWeightBold};
   line-height: 1;
   white-space: nowrap;
 

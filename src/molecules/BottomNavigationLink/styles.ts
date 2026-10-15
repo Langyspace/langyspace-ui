@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.a.withConfig({
   componentId: 'lsui-sc-bottom-navigation-link',
 })`
@@ -13,11 +14,11 @@ export const Root = styled.a.withConfig({
   border: 0;
   border-radius: 14px;
   background: transparent;
-  color: #6b6b6b;
+  color: ${token.colorContentMuted};
   font: inherit;
   font-size: 11px;
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -27,6 +28,6 @@ export const Root = styled.a.withConfig({
   }
   &[aria-current]:not([aria-current='false']),
   &.active {
-    color: #0a0a0a;
+    color: ${token.colorContentDefault};
   }
 `

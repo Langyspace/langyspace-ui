@@ -5,12 +5,16 @@ export function ScheduleRow({
   participant,
   actions,
   muted = false,
+  onOpen,
+  openLabel,
   ...props
 }: ScheduleRowProps) {
   return (
     <Styled.Root {...props} data-muted={muted}>
-      <Styled.Time>{time}</Styled.Time>
-      <Styled.Participant>{participant}</Styled.Participant>
+      <Styled.OpenButton aria-label={openLabel} onClick={onOpen} type="button">
+        <Styled.Time>{time}</Styled.Time>
+        <Styled.Participant>{participant}</Styled.Participant>
+      </Styled.OpenButton>
       {actions && (
         <Styled.Actions onClick={(event) => event.stopPropagation()}>
           {actions}

@@ -1,5 +1,6 @@
 import { forwardRef, useRef, type SVGProps } from 'react'
 import { IconButton } from '../../atoms/IconButton'
+import { useMergedRef } from '../../internal/useMergedRef'
 import { CompoundControl } from '../CompoundControl'
 import * as Styled from './styles'
 import type { SearchInputProps } from './types'
@@ -61,6 +62,7 @@ export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
     forwardedRef,
   ) {
     const inputRef = useRef<HTMLInputElement | null>(null)
+    const setInputRef = useMergedRef(inputRef, forwardedRef)
     const hasValue = Array.isArray(value)
       ? value.length > 0
       : String(value ?? '').length > 0
@@ -101,11 +103,7 @@ export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
       >
         <Styled.Input
           {...inputProps}
-          ref={(node) => {
-            inputRef.current = node
-            if (typeof forwardedRef === 'function') forwardedRef(node)
-            else if (forwardedRef) forwardedRef.current = node
-          }}
+          ref={setInputRef}
           disabled={disabled}
           type="search"
           value={value}

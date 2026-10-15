@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Glyph = styled.span`
   position: relative;
@@ -14,7 +14,7 @@ export const Glyph = styled.span`
     left: 50%;
     width: 0.75rem;
     height: 1.5px;
-    border-radius: ${tokens.radius.pill};
+    border-radius: ${token.radiusPill};
     background: currentColor;
     content: '';
   }

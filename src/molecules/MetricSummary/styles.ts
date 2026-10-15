@@ -1,32 +1,33 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-metric-summary',
 })`
-  padding: 0.75rem;
-  border-radius: 0.875rem;
-  background: #fafaf9;
+  padding: ${token.spacing3};
+  border-radius: ${token.radiusCard};
+  background: ${token.colorNeutral50};
   text-align: center;
 
   [data-ui-metric-value] {
-    color: #0a0a0a;
-    font-size: 1.25rem;
-    font-weight: 700;
+    color: ${token.colorContentDefault};
+    font-size: ${token.typographyFontSizeXl};
+    font-weight: ${token.typographyFontWeightBold};
   }
 
   [data-ui-metric-label] {
     margin-top: 0.125rem;
-    color: #6b6b6b;
-    font-size: 0.6875rem;
-    font-weight: 600;
+    color: ${token.colorContentMuted};
+    font-size: ${token.typographyFontSize2xs};
+    font-weight: ${token.typographyFontWeightSemibold};
     text-transform: uppercase;
   }
 
   @media (max-width: 640px) {
     min-width: 0;
-    padding: 0.5rem 0.25rem;
+    padding: ${token.spacing2} ${token.spacing1};
 
     [data-ui-metric-value] {
-      font-size: 1rem;
+      font-size: ${token.typographyFontSizeMd};
       line-height: 1.1;
     }
 

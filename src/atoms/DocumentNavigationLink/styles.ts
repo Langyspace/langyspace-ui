@@ -1,23 +1,23 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.a.withConfig({
   componentId: 'lsui-sc-document-navigation-link',
 })`
-  border-radius: ${tokens.radius.pill};
-  padding: ${tokens.spacing[2]} ${tokens.spacing[3]};
-  color: ${tokens.color.content.secondary};
-  font-size: ${tokens.typography.fontSize.sm};
-  font-weight: ${tokens.typography.fontWeight.semibold};
+  border-radius: ${token.radiusPill};
+  padding: ${token.spacing2} ${token.spacing3};
+  color: ${token.colorContentSecondary};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightSemibold};
   text-decoration: none;
   transition:
     background-color 180ms ease,
     color 180ms ease;
   &:hover {
-    background: ${tokens.color.neutral[50]};
-    color: ${tokens.color.content.default};
+    background: ${token.colorNeutral50};
+    color: ${token.colorContentDefault};
   }
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 2px;
   }
   @media (prefers-reduced-motion: reduce) {

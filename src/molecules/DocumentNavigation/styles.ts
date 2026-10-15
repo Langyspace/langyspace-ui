@@ -1,9 +1,9 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.nav.withConfig({
   componentId: 'lsui-sc-document-navigation',
 })`
   display: flex;
   align-items: center;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
 `

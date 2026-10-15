@@ -1,6 +1,6 @@
 import * as Styled from './styles'
 import type { FlashcardFlipHintProps } from './types'
-export function FlashcardFlipHint({ ...props }: FlashcardFlipHintProps) {
+export function FlashcardFlipHint(props: FlashcardFlipHintProps) {
   return <Styled.Root {...props} />
 }
 export type { FlashcardFlipHintProps } from './types'

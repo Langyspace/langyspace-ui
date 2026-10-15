@@ -48,6 +48,7 @@ export default tseslint.config(
     files: [
       'scripts/audit-storybook-layout.mjs',
       'scripts/layout-audit/**/*.mjs',
+      'scripts/check-react-composition.mjs',
     ],
     languageOptions: {
       globals: {

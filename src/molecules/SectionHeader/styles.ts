@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { SectionHeaderSpacing } from './types'
 
 const titleFlexBasis = '16rem'
@@ -13,19 +13,19 @@ export const Header = styled.div.withConfig({
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: ${tokens.spacing[3]};
-  margin-top: ${({ $spacing }) => ($spacing === 'flush' ? 0 : tokens.spacing[8])};
-  margin-bottom: ${tokens.spacing[4]};
+  gap: ${token.spacing3};
+  margin-top: ${({ $spacing }) => ($spacing === 'flush' ? 0 : token.spacing8)};
+  margin-bottom: ${token.spacing4};
 `
 
 export const Title = styled.h2`
   min-width: 0;
   flex: 1 1 ${titleFlexBasis};
   margin: 0;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.xl};
-  font-weight: ${tokens.typography.fontWeight.bold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeXl};
+  font-weight: ${token.typographyFontWeightBold};
+  line-height: ${token.typographyLineHeightSnug};
   overflow-wrap: anywhere;
 `
 
@@ -35,11 +35,11 @@ export const Aside = styled.div`
   max-width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
   margin-left: auto;
 `
 
 export const Meta = styled.span`
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
 `

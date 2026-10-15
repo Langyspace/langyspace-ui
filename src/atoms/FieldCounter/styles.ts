@@ -1,11 +1,11 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-field-counter',
 })`
   flex-shrink: 0;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.xs};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
   font-weight: 400;
-  line-height: ${tokens.typography.lineHeight.snug};
+  line-height: ${token.typographyLineHeightSnug};
 `

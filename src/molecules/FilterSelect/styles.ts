@@ -1,11 +1,11 @@
 import { styled } from 'styled-components'
 import { SelectInput } from '../../atoms/SelectInput'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { FieldControlSize } from '../../foundations/fields'
 const fontSizes = {
-  sm: tokens.typography.fontSize.xs,
-  md: tokens.typography.fontSize.xs,
-  lg: tokens.typography.fontSize.sm,
+  sm: token.typographyFontSizeXs,
+  md: token.typographyFontSizeXs,
+  lg: token.typographyFontSizeSm,
 } as const
 export const Root = styled(SelectInput).withConfig({
   componentId: 'lsui-sc-filter-select',
@@ -15,8 +15,8 @@ export const Root = styled(SelectInput).withConfig({
   min-height: 0;
   appearance: none;
   padding: 0;
-  color: ${tokens.color.content.secondary};
-  font-weight: ${tokens.typography.fontWeight.semibold};
+  color: ${token.colorContentSecondary};
+  font-weight: ${token.typographyFontWeightSemibold};
   font-size: ${({ $controlSize }) => fontSizes[$controlSize]};
   cursor: pointer;
 `

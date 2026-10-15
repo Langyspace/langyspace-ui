@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Panel = styled.section.withConfig({
   componentId: 'lsui-sc-message-thread',
@@ -13,16 +13,16 @@ export const Panel = styled.section.withConfig({
   flex: 1 1 auto;
   flex-direction: column;
   overflow: hidden;
-  border: 1px solid ${tokens.color.surfaceBorder.subtle};
-  border-radius: ${tokens.radius.card};
-  background: ${tokens.color.neutral[0]};
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusCard};
+  background: ${token.colorNeutral0};
 `
 
 export const Header = styled.div`
   min-width: 0;
   flex: 0 0 auto;
-  padding: ${tokens.spacing[3]} ${tokens.spacing[4]};
-  border-bottom: 1px solid ${tokens.color.surfaceBorder.subtle};
+  padding: ${token.spacing3} ${token.spacing4};
+  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
 `
 
 export const Viewport = styled.div`
@@ -31,7 +31,7 @@ export const Viewport = styled.div`
   flex: 1 1 auto;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: ${tokens.spacing[5]};
+  padding: ${token.spacing5};
   overscroll-behavior-y: contain;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -47,7 +47,7 @@ export const Viewport = styled.div`
 export const Footer = styled.footer`
   min-width: 0;
   flex: 0 0 auto;
-  padding: ${tokens.spacing[4]} ${tokens.spacing[5]};
-  border-top: 1px solid ${tokens.color.surfaceBorder.subtle};
-  background: ${tokens.color.surface.subtle};
+  padding: ${token.spacing4} ${token.spacing5};
+  border-top: 1px solid ${token.colorSurfaceBorderSubtle};
+  background: ${token.colorSurfaceSubtle};
 `

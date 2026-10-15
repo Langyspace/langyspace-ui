@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-navigation-button',
@@ -11,26 +11,26 @@ export const Root = styled(Pressable).withConfig({
   padding: 0 12px;
   border: 0;
   border-radius: 10px;
-  color: ${tokens.color.content.secondary};
+  color: ${token.colorContentSecondary};
   font: inherit;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: ${token.typographyFontWeightMedium};
   white-space: nowrap;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
   background: transparent;
   &:hover {
-    background: ${tokens.color.neutral[50]};
+    background: ${token.colorNeutral50};
   }
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 2px;
   }
   &[aria-current]:not([aria-current='false']),
   &.active {
-    color: #fff;
-    background: ${tokens.color.content.default};
+    color: ${token.colorNeutral0};
+    background: ${token.colorContentDefault};
   }
   svg {
     flex-shrink: 0;

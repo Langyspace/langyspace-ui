@@ -469,9 +469,6 @@ export type { ShadowingControlDockProps } from './molecules/ShadowingControlDock
 export { ShadowingControlCluster } from './molecules/ShadowingControlCluster'
 export type { ShadowingControlClusterProps } from './molecules/ShadowingControlCluster/types'
 
-export { ShadowingContext } from './molecules/ShadowingContext'
-export type { ShadowingContextProps } from './molecules/ShadowingContext/types'
-
 export { KeyValueList } from './molecules/KeyValueList'
 export type { KeyValueListProps } from './molecules/KeyValueList/types'
 
@@ -573,3 +570,12 @@ export type { CardLinkProps } from './molecules/CardLink/types'
 
 export { ShadowingWord } from './molecules/ShadowingWord'
 export type { ShadowingWordProps } from './molecules/ShadowingWord/types'
+
+export { FlashcardFlipButton } from './molecules/FlashcardFlipButton'
+export type { FlashcardFlipButtonProps } from './molecules/FlashcardFlipButton/types'
+
+export { FlashcardAudioButton } from './molecules/FlashcardAudioButton'
+export type { FlashcardAudioButtonProps } from './molecules/FlashcardAudioButton/types'
+
+export { FlashcardWordSkeleton } from './molecules/FlashcardWordSkeleton'
+export type { FlashcardWordSkeletonProps } from './molecules/FlashcardWordSkeleton/types'

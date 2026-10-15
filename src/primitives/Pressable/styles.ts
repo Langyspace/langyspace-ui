@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Pressable = styled.button.withConfig({
   componentId: 'lsui-sc-pressable',
@@ -12,7 +12,7 @@ export const Pressable = styled.button.withConfig({
   -webkit-tap-highlight-color: transparent;
 
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 2px;
   }
 

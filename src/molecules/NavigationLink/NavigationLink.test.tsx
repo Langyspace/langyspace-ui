@@ -4,11 +4,12 @@ import { NavigationLink } from '.'
 afterEach(cleanup)
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
-    <NavigationLink data-testid="content">
+    <NavigationLink data-testid="content" href="/materiais">
       <strong>Conteúdo fornecido</strong>
     </NavigationLink>,
   )
   expect(
     screen.getByTestId('content').querySelector('strong')?.textContent,
   ).toBe('Conteúdo fornecido')
+  expect(screen.getByRole('link')).toHaveAttribute('href', '/materiais')
 })

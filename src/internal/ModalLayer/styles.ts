@@ -1,5 +1,5 @@
 import { css, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import type { OverlayKind, OverlaySize } from './types'
 
 const dialogWidths = {
@@ -23,8 +23,8 @@ export const Backdrop = styled.div.withConfig({
   display: grid;
   align-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'stretch')};
   justify-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'end')};
-  padding: ${({ $kind }) => ($kind === 'dialog' ? tokens.spacing[5] : '0')};
-  background: ${tokens.color.overlay.default};
+  padding: ${({ $kind }) => ($kind === 'dialog' ? token.spacing5 : '0')};
+  background: ${token.colorOverlayDefault};
   backdrop-filter: blur(2px);
 
   @media (max-width: 640px) {
@@ -37,6 +37,7 @@ export const Backdrop = styled.div.withConfig({
 export const Panel = styled.div.withConfig({
   componentId: 'lsui-sc-modal-panel',
 })<{ $kind: OverlayKind; $size: OverlaySize }>`
+  box-sizing: border-box;
   position: relative;
   display: grid;
   width: min(
@@ -46,23 +47,23 @@ export const Panel = styled.div.withConfig({
   min-width: 0;
   max-height: ${({ $kind }) => ($kind === 'dialog' ? 'calc(100dvh - 2.5rem)' : '100dvh')};
   grid-template-rows: auto minmax(0, 1fr) auto;
-  border: 1px solid ${tokens.color.surfaceBorder.default};
-  background: ${tokens.color.neutral[0]};
-  box-shadow: ${({ $kind }) => ($kind === 'dialog' ? tokens.shadow.popover : tokens.shadow.drawer)};
+  border: 1px solid ${token.colorSurfaceBorderDefault};
+  background: ${token.colorNeutral0};
+  box-shadow: ${({ $kind }) => ($kind === 'dialog' ? token.shadowPopover : token.shadowDrawer)};
   outline: none;
 
   ${({ $kind }) =>
     $kind === 'dialog'
       ? css`
-          border-radius: ${tokens.radius.card};
+          border-radius: ${token.radiusCard};
         `
       : css`
           height: 100dvh;
-          border-radius: ${tokens.radius.card} 0 0 ${tokens.radius.card};
+          border-radius: ${token.radiusCard} 0 0 ${token.radiusCard};
         `}
 
   &:focus-visible {
-    box-shadow: ${tokens.shadow.focus};
+    box-shadow: ${token.shadowFocus};
   }
 
   @media (max-width: 640px) {
@@ -78,8 +79,8 @@ export const Panel = styled.div.withConfig({
             border-radius: 0;
           `
         : css`
-            max-height: calc(100dvh - ${tokens.spacing[4]});
-            border-radius: ${tokens.radius.card} ${tokens.radius.card} 0 0;
+            max-height: calc(100dvh - ${token.spacing4});
+            border-radius: ${token.radiusCard} ${token.radiusCard} 0 0;
           `}
   }
 `
@@ -89,12 +90,12 @@ export const Header = styled.header`
   min-width: 0;
   align-items: flex-start;
   justify-content: space-between;
-  gap: ${tokens.spacing[4]};
-  border-bottom: 1px solid ${tokens.color.surfaceBorder.subtle};
-  padding: ${tokens.spacing[5]};
+  gap: ${token.spacing4};
+  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
+  padding: ${token.spacing5};
 
   @media (max-width: 640px) {
-    padding-top: calc(${tokens.spacing[5]} + env(safe-area-inset-top));
+    padding-top: calc(${token.spacing5} + env(safe-area-inset-top));
   }
 `
 
@@ -104,18 +105,18 @@ export const Heading = styled.div`
 
 export const Title = styled.h2`
   margin: 0;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.xl};
-  font-weight: ${tokens.typography.fontWeight.bold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeXl};
+  font-weight: ${token.typographyFontWeightBold};
+  line-height: ${token.typographyLineHeightSnug};
   overflow-wrap: anywhere;
 `
 
 export const Description = styled.p`
-  margin: ${tokens.spacing[1]} 0 0;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
-  line-height: ${tokens.typography.lineHeight.normal};
+  margin: ${token.spacing1} 0 0;
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
   overflow-wrap: anywhere;
 `
 
@@ -123,7 +124,7 @@ export const Body = styled.div`
   min-width: 0;
   min-height: 0;
   overflow-y: auto;
-  padding: ${tokens.spacing[5]};
+  padding: ${token.spacing5};
   overscroll-behavior: contain;
 `
 
@@ -133,14 +134,14 @@ export const Footer = styled.footer`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  gap: ${tokens.spacing[2]};
-  border-top: 1px solid ${tokens.color.surfaceBorder.subtle};
-  padding: ${tokens.spacing[4]} ${tokens.spacing[5]};
+  gap: ${token.spacing2};
+  border-top: 1px solid ${token.colorSurfaceBorderSubtle};
+  padding: ${token.spacing4} ${token.spacing5};
 
   @media (max-width: 640px) {
     align-items: stretch;
     flex-direction: column;
-    padding-bottom: calc(${tokens.spacing[4]} + env(safe-area-inset-bottom));
+    padding-bottom: calc(${token.spacing4} + env(safe-area-inset-bottom));
 
     > * {
       width: 100%;

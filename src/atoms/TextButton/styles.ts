@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { Pressable } from '../../primitives/Pressable'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-text-button',
 })`
@@ -17,23 +17,23 @@ export const Root = styled(Pressable).withConfig({
   font: inherit;
   text-align: left;
   cursor: pointer;
-  color: ${tokens.color.content.default};
-  font-weight: 600;
+  color: ${token.colorContentDefault};
+  font-weight: ${token.typographyFontWeightSemibold};
   text-decoration: underline;
   text-underline-offset: 2px;
   &[data-variant='subtle'] {
-    color: ${tokens.color.content.muted};
-    font-weight: 500;
+    color: ${token.colorContentMuted};
+    font-weight: ${token.typographyFontWeightMedium};
     text-decoration: none;
   }
   &[data-variant='danger'] {
-    color: ${tokens.color.feedback.danger};
+    color: ${token.colorFeedbackDanger};
   }
   &:hover:not(:disabled) {
-    color: ${tokens.color.brand.default};
+    color: ${token.colorBrandDefault};
   }
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 3px;
   }
   &:disabled {

@@ -7,8 +7,8 @@ export const Mark = styled.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: ${() => quizRecipe.radius.circle};
-  color: ${() => quizRecipe.colors.text.inverse};
+  border-radius: ${quizRecipe.radius.circle};
+  color: ${quizRecipe.colors.text.inverse};
 
   &.correct {
     background: #16a34a;

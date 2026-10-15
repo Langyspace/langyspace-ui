@@ -1,5 +1,5 @@
 import { css, keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import type {
   ActionMenuItemStyleProps,
@@ -20,20 +20,20 @@ const enter = keyframes`
 
 const toneStyles = {
   danger: css`
-    color: ${tokens.color.feedback.dangerStrong};
+    color: ${token.colorFeedbackDangerStrong};
 
     &:hover:not(:disabled),
     &:focus-visible {
-      color: ${tokens.color.feedback.dangerStrong};
-      background: ${tokens.color.feedback.dangerSoft};
+      color: ${token.colorFeedbackDangerStrong};
+      background: ${token.colorFeedbackDangerSoft};
     }
   `,
   neutral: css`
-    color: ${tokens.color.content.default};
+    color: ${token.colorContentDefault};
 
     &:hover:not(:disabled),
     &:focus-visible {
-      background: ${tokens.color.neutral[100]};
+      background: ${token.colorNeutral100};
     }
   `,
 } satisfies Record<ActionMenuItemStyleProps['$tone'], ReturnType<typeof css>>
@@ -50,7 +50,7 @@ export const Root = styled.div.withConfig({
 
 export const Menu = styled.div<ActionMenuMenuStyleProps>`
   --lsui-action-menu-enter-y: ${({ $placement }) =>
-    $placement === 'top' ? tokens.spacing[1] : `-${tokens.spacing[1]}`};
+    $placement === 'top' ? token.spacing1 : `-${token.spacing1}`};
 
   box-sizing: border-box;
   position: fixed;
@@ -58,18 +58,18 @@ export const Menu = styled.div<ActionMenuMenuStyleProps>`
   display: flex;
   width: max-content;
   min-width: 13rem;
-  max-width: calc(100vw - ${tokens.spacing[4]});
+  max-width: calc(100vw - ${token.spacing4});
   flex-direction: column;
-  padding: calc(${tokens.spacing[1]} + ${tokens.spacing[1]} / 2);
-  border: 1px solid ${tokens.color.surfaceBorder.subtle};
-  border-radius: ${tokens.radius.rounded};
-  background: ${tokens.color.neutral[0]};
-  box-shadow: ${tokens.shadow.popover};
+  padding: calc(${token.spacing1} + ${token.spacing1} / 2);
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusRounded};
+  background: ${token.colorNeutral0};
+  box-shadow: ${token.shadowPopover};
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
-  animation: ${enter} ${tokens.motion.duration.interactive}
-    ${tokens.motion.easing.interactive};
+  animation: ${enter} ${token.motionDurationInteractive}
+    ${token.motionEasingInteractive};
   transform-origin: ${({ $align, $placement }) =>
     `${$align === 'start' ? 'left' : 'right'} ${$placement === 'top' ? 'bottom' : 'top'}`};
 
@@ -84,23 +84,23 @@ export const MenuItem = styled(Pressable)<ActionMenuItemStyleProps>`
   width: 100%;
   min-width: 0;
   min-height: ${({ $size }) =>
-    $size === 'sm' ? tokens.control.height.md : tokens.field.height.md};
+    $size === 'sm' ? token.controlHeightMd : token.fieldHeightMd};
   align-items: center;
-  gap: ${tokens.spacing[2]};
-  padding: ${tokens.spacing[2]} ${tokens.spacing[3]};
+  gap: ${token.spacing2};
+  padding: ${token.spacing2} ${token.spacing3};
   border: 0;
-  border-radius: ${tokens.radius.control};
+  border-radius: ${token.radiusControl};
   background: transparent;
-  font-size: ${tokens.typography.fontSize.sm};
-  font-weight: ${tokens.typography.fontWeight.medium};
-  line-height: ${tokens.typography.lineHeight.snug};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightMedium};
+  line-height: ${token.typographyLineHeightSnug};
   text-align: left;
   overflow-wrap: anywhere;
 
   ${({ $tone }) => toneStyles[$tone]}
 
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: -3px;
   }
 
@@ -122,6 +122,6 @@ export const ItemLabel = styled.span`
 export const Separator = styled.div`
   height: 1px;
   flex: 0 0 auto;
-  margin: ${tokens.spacing[1]} ${tokens.spacing[2]};
-  background: ${tokens.color.surfaceBorder.subtle};
+  margin: ${token.spacing1} ${token.spacing2};
+  background: ${token.colorSurfaceBorderSubtle};
 `

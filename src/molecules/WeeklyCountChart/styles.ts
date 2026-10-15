@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-weekly-count-chart',
 })`
@@ -6,7 +7,7 @@ export const Root = styled.div.withConfig({
   grid-template-columns: repeat(7, 1fr);
   align-items: end;
   height: 7.5rem;
-  gap: 0.5rem;
+  gap: ${token.spacing2};
 `
 export const Day = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-day',
@@ -16,15 +17,15 @@ export const Day = styled.div.withConfig({
   align-items: center;
   justify-content: flex-end;
   height: 100%;
-  gap: 0.5rem;
+  gap: ${token.spacing2};
 `
 export const Count = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-count',
 })`
   min-height: 0.75rem;
-  color: #6b6b6b;
+  color: ${token.colorContentMuted};
   font-size: 0.625rem;
-  font-weight: 600;
+  font-weight: ${token.typographyFontWeightSemibold};
 `
 export const Bar = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-bar',
@@ -41,7 +42,7 @@ export const Label = styled.div.withConfig({
   color: ${({ $active }) => ($active ? '#CC0F45' : '#6B6B6B')};
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 0.625rem;
-  font-weight: 600;
+  font-weight: ${token.typographyFontWeightSemibold};
   line-height: 1;
   text-transform: uppercase;
 `

@@ -40,6 +40,56 @@ const createItems = (
 ]
 
 describe('ActionMenu', () => {
+  it('keeps the focused item across equivalent item updates and uses the latest action', async () => {
+    const user = userEvent.setup()
+    const previousAction = vi.fn()
+    const currentAction = vi.fn()
+    const initialItems = createItems(previousAction)
+    const { rerender } = render(
+      <ActionMenu items={initialItems} triggerLabel="Ações" />,
+    )
+    const trigger = screen.getByRole('button', { name: 'Ações' })
+    trigger.focus()
+    await user.keyboard('{ArrowUp}')
+    const archive = screen.getByRole('menuitem', { name: 'Arquivar registro' })
+    expect(archive).toHaveFocus()
+
+    rerender(
+      <ActionMenu items={createItems(currentAction)} triggerLabel="Ações" />,
+    )
+
+    expect(archive).toHaveFocus()
+    await user.keyboard('{Enter}')
+    expect(currentAction).toHaveBeenCalledExactlyOnceWith('archive')
+    expect(previousAction).not.toHaveBeenCalled()
+  })
+
+  it('runs a callback ref cleanup on replacement and unmount without detaching on rerender', () => {
+    const cleanup = vi.fn()
+    const ref = vi.fn(() => cleanup)
+    const replacementCleanup = vi.fn()
+    const replacement = vi.fn(() => replacementCleanup)
+    const items = createItems()
+    const { rerender, unmount } = render(
+      <ActionMenu items={items} ref={ref} triggerLabel="Mais ações" />,
+    )
+    const root = screen.getByRole('button').parentElement
+
+    rerender(<ActionMenu items={items} ref={ref} triggerLabel="Opções" />)
+    expect(ref).toHaveBeenCalledExactlyOnceWith(root)
+    expect(cleanup).not.toHaveBeenCalled()
+
+    rerender(
+      <ActionMenu items={items} ref={replacement} triggerLabel="Opções" />,
+    )
+    expect(cleanup).toHaveBeenCalledTimes(1)
+    expect(ref).toHaveBeenCalledTimes(1)
+    expect(replacement).toHaveBeenCalledExactlyOnceWith(root)
+    unmount()
+    expect(replacementCleanup).toHaveBeenCalledTimes(1)
+    expect(replacement).toHaveBeenCalledTimes(1)
+  })
+
   it('opens uncontrolled, groups danger last and selects once before returning focus', async () => {
     const sequence: string[] = []
     const user = userEvent.setup()

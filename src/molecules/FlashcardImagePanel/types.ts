@@ -1,2 +1,5 @@
-import type { ComponentPropsWithRef } from 'react'
-export type FlashcardImagePanelProps = ComponentPropsWithRef<'div'>
+import type { ComponentPropsWithRef, ReactNode } from 'react'
+
+export interface FlashcardImagePanelProps extends ComponentPropsWithRef<'div'> {
+  emoji?: ReactNode
+}

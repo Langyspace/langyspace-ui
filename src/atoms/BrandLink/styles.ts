@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.a.withConfig({ componentId: 'lsui-sc-brand-link' })`
   display: inline-flex;
   flex: 0 1 auto;
@@ -7,7 +7,7 @@ export const Root = styled.a.withConfig({ componentId: 'lsui-sc-brand-link' })`
   align-items: center;
   text-decoration: none;
   &:focus-visible {
-    outline: 3px solid ${tokens.color.focus};
+    outline: 3px solid ${token.colorFocus};
     outline-offset: 2px;
   }
 `

@@ -1,13 +1,13 @@
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Button as SharedButton } from '../../atoms/Button'
 import { styled } from 'styled-components'
 
 export const Button = styled(SharedButton).withConfig({
   componentId: 'lsui-sc-auth-submit-button',
 })`
-  margin-top: clamp(${tokens.spacing[4]}, 3svh, ${tokens.spacing[6]});
+  margin-top: clamp(${token.spacing4}, 3svh, ${token.spacing6});
 
   @media (max-width: 900px) {
-    margin-top: clamp(${tokens.spacing[3]}, 2.5svh, ${tokens.spacing[5]});
+    margin-top: clamp(${token.spacing3}, 2.5svh, ${token.spacing5});
   }
 `

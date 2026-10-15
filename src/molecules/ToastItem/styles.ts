@@ -1,28 +1,28 @@
 import { keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import type { ToastTone } from './types'
 
 const tones = {
   neutral: {
-    border: tokens.color.surfaceBorder.subtle,
-    icon: tokens.color.content.default,
+    border: token.colorSurfaceBorderSubtle,
+    icon: token.colorContentDefault,
   },
   success: {
-    border: tokens.color.status.success.indicator,
-    icon: tokens.color.status.success.indicator,
+    border: token.colorStatusSuccessIndicator,
+    icon: token.colorStatusSuccessIndicator,
   },
   danger: {
-    border: tokens.color.feedback.danger,
-    icon: tokens.color.feedback.danger,
+    border: token.colorFeedbackDanger,
+    icon: token.colorFeedbackDanger,
   },
   warning: {
-    border: tokens.color.status.warning.indicator,
-    icon: tokens.color.status.warning.indicator,
+    border: token.colorStatusWarningIndicator,
+    icon: token.colorStatusWarningIndicator,
   },
   brand: {
-    border: tokens.color.accent.default,
-    icon: tokens.color.accent.default,
+    border: token.colorAccentDefault,
+    icon: token.colorAccentDefault,
   },
 } as const satisfies Record<ToastTone, { border: string; icon: string }>
 const appear = keyframes`
@@ -35,31 +35,31 @@ export const Item = styled(Pressable).withConfig({
 })<{ $tone: ToastTone }>`
   display: inline-flex;
   align-items: flex-start;
-  gap: ${tokens.spacing[2]};
+  gap: ${token.spacing2};
   min-height: 3rem;
-  padding: ${tokens.spacing[3]} ${tokens.spacing[4]};
+  padding: ${token.spacing3} ${token.spacing4};
   border: 1px solid ${({ $tone }) => tones[$tone].border};
-  border-radius: ${tokens.radius.card};
-  color: ${tokens.color.content.default};
-  background: ${tokens.color.neutral[0]};
+  border-radius: ${token.radiusCard};
+  color: ${token.colorContentDefault};
+  background: ${token.colorNeutral0};
   box-shadow:
     0 10px 30px rgba(10, 10, 10, 0.1),
     0 2px 6px rgba(10, 10, 10, 0.06);
-  font-size: ${tokens.typography.fontSize.sm};
-  font-weight: ${tokens.typography.fontWeight.medium};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightMedium};
   pointer-events: auto;
   text-align: left;
-  animation: ${appear} 250ms ${tokens.motion.easing.interactive};
+  animation: ${appear} 250ms ${token.motionEasingInteractive};
   transition:
-    transform ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    border-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    box-shadow ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive};
+    transform ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    border-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive},
+    box-shadow ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive};
   &:hover {
     transform: translateY(-1px);
-    border-color: ${tokens.color.content.default};
+    border-color: ${token.colorContentDefault};
   }
   &:focus-visible {
     outline: none;
@@ -88,26 +88,26 @@ export const Title = styled.span.withConfig({
   componentId: 'lsui-sc-toast-title',
 })`
   display: block;
-  color: ${tokens.color.content.default};
-  font-size: ${tokens.typography.fontSize.sm};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  color: ${token.colorContentDefault};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
 `
 export const Message = styled.span.withConfig({
   componentId: 'lsui-sc-toast-message',
 })`
   display: block;
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
-  line-height: ${tokens.typography.lineHeight.normal};
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
 `
 export const Action = styled.span.withConfig({
   componentId: 'lsui-sc-toast-action',
 })`
   display: block;
-  margin-top: ${tokens.spacing[1]};
-  color: ${tokens.color.brand.default};
-  font-size: ${tokens.typography.fontSize.xs};
-  font-weight: ${tokens.typography.fontWeight.semibold};
-  line-height: ${tokens.typography.lineHeight.snug};
+  margin-top: ${token.spacing1};
+  color: ${token.colorBrandDefault};
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightSemibold};
+  line-height: ${token.typographyLineHeightSnug};
 `

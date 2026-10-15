@@ -1,5 +1,5 @@
 import { css, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import type { SegmentedControlShape, SegmentedControlSurface } from './types'
 
@@ -10,12 +10,12 @@ const itemMinHeight = '2.25rem'
 
 const groupSurfaces = {
   inverse: css`
-    border: 1px solid ${tokens.color.inverse.borderSubtle};
+    border: 1px solid ${token.colorInverseBorderSubtle};
     background: transparent;
   `,
   light: css`
     border: 0;
-    background: ${tokens.color.surface.muted};
+    background: ${token.colorSurfaceMuted};
   `,
 } satisfies Record<SegmentedControlSurface, ReturnType<typeof css>>
 
@@ -26,10 +26,10 @@ export const Group = styled.div.withConfig({
   width: fit-content;
   max-width: 100%;
   flex-wrap: nowrap;
-  gap: ${({ $surface }) => ($surface === 'inverse' ? tokens.spacing[2] : compactTrackInset)};
+  gap: ${({ $surface }) => ($surface === 'inverse' ? token.spacing2 : compactTrackInset)};
   border-radius: ${({ $shape }) =>
-    $shape === 'pill' ? tokens.radius.pill : tokens.radius.control};
-  padding: ${({ $surface }) => ($surface === 'inverse' ? tokens.spacing[1] : compactTrackInset)};
+    $shape === 'pill' ? token.radiusPill : token.radiusControl};
+  padding: ${({ $surface }) => ($surface === 'inverse' ? token.spacing1 : compactTrackInset)};
   overflow-x: auto;
   scrollbar-width: none;
 
@@ -49,37 +49,34 @@ export const Item = styled(Pressable)<{
   min-height: ${itemMinHeight};
   flex: 1 0 auto;
   border: 0;
-  border-radius: ${({ $shape }) => ($shape === 'pill' ? tokens.radius.pill : tokens.radius.lg)};
+  border-radius: ${({ $shape }) => ($shape === 'pill' ? token.radiusPill : token.radiusLg)};
   color: ${({ $active, $surface }) => {
     if ($surface === 'inverse')
-      return $active
-        ? tokens.color.neutral[950]
-        : tokens.color.inverse.contentMuted
-    return $active ? tokens.color.content.default : tokens.color.content.muted
+      return $active ? token.colorNeutral950 : token.colorInverseContentMuted
+    return $active ? token.colorContentDefault : token.colorContentMuted
   }};
   background: ${({ $active }) => {
     if (!$active) return 'transparent'
-    return tokens.color.neutral[0]
+    return token.colorNeutral0
   }};
   box-shadow: ${({ $active, $surface }) =>
-    $active && $surface === 'light' ? tokens.shadow.subtle : 'none'};
-  font-size: ${tokens.typography.fontSize.sm};
+    $active && $surface === 'light' ? token.shadowSubtle : 'none'};
+  font-size: ${token.typographyFontSizeSm};
   font-weight: ${({ $active, $surface }) =>
     $surface === 'inverse' || $active
-      ? tokens.typography.fontWeight.bold
-      : tokens.typography.fontWeight.medium};
-  padding-right: ${({ $surface }) => ($surface === 'inverse' ? inverseItemInlinePadding : tokens.spacing[4])};
-  padding-left: ${({ $surface }) => ($surface === 'inverse' ? inverseItemInlinePadding : tokens.spacing[4])};
+      ? token.typographyFontWeightBold
+      : token.typographyFontWeightMedium};
+  padding-right: ${({ $surface }) => ($surface === 'inverse' ? inverseItemInlinePadding : token.spacing4)};
+  padding-left: ${({ $surface }) => ($surface === 'inverse' ? inverseItemInlinePadding : token.spacing4)};
   white-space: nowrap;
   transition:
-    color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive},
-    background-color ${tokens.motion.duration.interactive}
-      ${tokens.motion.easing.interactive};
+    color ${token.motionDurationInteractive} ${token.motionEasingInteractive},
+    background-color ${token.motionDurationInteractive}
+      ${token.motionEasingInteractive};
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${tokens.shadow.focus};
+    box-shadow: ${token.shadowFocus};
   }
 
   &:disabled {

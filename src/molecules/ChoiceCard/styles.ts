@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-choice-card',
@@ -7,15 +8,15 @@ export const Root = styled(Pressable).withConfig({
   align-items: center;
   min-width: 0;
   min-height: 2.875rem;
-  gap: 0.75rem;
-  padding-top: 0.75rem;
-  padding-right: 1rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  border: 1px solid #ececea;
-  border-radius: 0.5rem;
-  color: #0a0a0a;
-  background-color: #ffffff;
+  gap: ${token.spacing3};
+  padding-top: ${token.spacing3};
+  padding-right: ${token.spacing4};
+  padding-bottom: ${token.spacing3};
+  padding-left: ${token.spacing4};
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusLg};
+  color: ${token.colorContentDefault};
+  background-color: ${token.colorNeutral0};
   text-align: left;
   transition:
     color 150ms cubic-bezier(0.2, 0, 0, 1),
@@ -25,7 +26,7 @@ export const Root = styled(Pressable).withConfig({
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
   &:hover:not(:disabled) {
-    border-color: #0a0a0a;
+    border-color: ${token.colorSurfaceBorderStrong};
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
@@ -35,8 +36,8 @@ export const Root = styled(Pressable).withConfig({
   }
 
   &[aria-pressed='true'] {
-    border-color: #0a0a0a;
-    color: #ffffff;
+    border-color: ${token.colorSurfaceBorderStrong};
+    color: ${token.colorNeutral0};
     background-color: #000000;
   }
 
@@ -49,8 +50,8 @@ export const Root = styled(Pressable).withConfig({
   }
 
   @media (max-width: 360px) {
-    gap: 0.5rem;
-    padding-right: 0.75rem;
-    padding-left: 0.75rem;
+    gap: ${token.spacing2};
+    padding-right: ${token.spacing3};
+    padding-left: ${token.spacing3};
   }
 `

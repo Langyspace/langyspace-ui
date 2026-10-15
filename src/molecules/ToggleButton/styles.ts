@@ -1,16 +1,17 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-toggle-button',
 })`
   min-width: 0;
   min-height: 2.25rem;
-  border: 1px solid #ececea;
-  border-radius: 999px;
-  background-color: #ffffff;
-  color: #2a2a2a;
-  font-size: 0.875rem;
-  font-weight: 600;
+  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-radius: ${token.radiusPill};
+  background-color: ${token.colorNeutral0};
+  color: ${token.colorContentSecondary};
+  font-size: ${token.typographyFontSizeSm};
+  font-weight: ${token.typographyFontWeightSemibold};
   transition:
     color 150ms cubic-bezier(0.2, 0, 0, 1),
     background-color 150ms cubic-bezier(0.2, 0, 0, 1),
@@ -19,8 +20,8 @@ export const Root = styled(Pressable).withConfig({
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
   &:hover:not(:disabled) {
-    border-color: #0a0a0a;
-    color: #0a0a0a;
+    border-color: ${token.colorSurfaceBorderStrong};
+    color: ${token.colorContentDefault};
   }
 
   &:focus-visible {
@@ -29,9 +30,9 @@ export const Root = styled(Pressable).withConfig({
   }
 
   &[aria-pressed='true'] {
-    border-color: #0a0a0a;
+    border-color: ${token.colorSurfaceBorderStrong};
     background-color: #000000;
-    color: #ffffff;
+    color: ${token.colorNeutral0};
   }
 
   &:disabled {

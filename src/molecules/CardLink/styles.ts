@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { cardRecipe } from '../../foundations/surfaces/cardRecipe'
 export const Root = styled.a.withConfig({ componentId: 'lsui-sc-card-link' })`
   ${cardRecipe};
@@ -9,7 +10,7 @@ export const Root = styled.a.withConfig({ componentId: 'lsui-sc-card-link' })`
     border-color 0.18s ease,
     box-shadow 0.18s ease;
   &:hover {
-    border-color: #0a0a0a;
+    border-color: ${token.colorSurfaceBorderStrong};
   }
   &:focus-visible {
     outline: 3px solid #f10f4d;

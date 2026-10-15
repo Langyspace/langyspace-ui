@@ -1,0 +1,3056 @@
+{
+  "scope": "Current source JSX/composition examples; does not prove route exercise or production state",
+  "baselines": {
+    "teacher": {
+      "path": "../langyspace-teacher",
+      "head": "c60567839ea5c7230044c92e52465023b38aad74",
+      "target": "staging",
+      "originalBaseline": "c60567839ea5c7230044c92e52465023b38aad74"
+    },
+    "student": {
+      "path": "../langyspace-student",
+      "head": "61d43dc3aae2d4a4ba0f4c99ad2c2f22388b6b4d",
+      "target": "staging",
+      "originalBaseline": "e531045fa8e180a165b14801ebedf459a3a1caf2"
+    },
+    "admin": {
+      "path": "../langyspace-admin",
+      "head": "00693113c2a5c8bce5df2246a0b8a95eefaa676d",
+      "target": "staging",
+      "originalBaseline": "00693113c2a5c8bce5df2246a0b8a95eefaa676d"
+    },
+    "site": {
+      "path": "../langyspace",
+      "head": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619",
+      "target": "main",
+      "originalBaseline": "e8d781e310feba6a9112b7ac5fe89e5c5c8a8619"
+    },
+    "cupom": {
+      "path": "../langyspace-cupom",
+      "head": "0d9f9b2d92cc22c1fed4f7f3e053d6177a662dae",
+      "target": "main",
+      "originalBaseline": "9179830cc400fcf67f3055fe3a7d1ab0921e2b79"
+    }
+  },
+  "components": [
+    {
+      "product": "teacher",
+      "component": "ActionLink",
+      "path": "src/components/base/PillButton/index.tsx",
+      "composition": ["src/components/base/PillButton/index.tsx"],
+      "lines": 17
+    },
+    {
+      "product": "student",
+      "component": "ActionLink",
+      "path": "src/pages/StudentHandoff/index.tsx",
+      "composition": ["src/pages/StudentHandoff/index.tsx"],
+      "lines": 162
+    },
+    {
+      "product": "site",
+      "component": "ActionLink",
+      "path": "src/pages/NotFoundPage/index.tsx",
+      "composition": ["src/pages/NotFoundPage/index.tsx"],
+      "lines": 30
+    },
+    {
+      "product": "teacher",
+      "component": "Button",
+      "path": "src/components/base/PillButton/index.tsx",
+      "composition": [
+        "src/components/base/PillButton/index.tsx",
+        "src/components/base/Button/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "student",
+      "component": "Button",
+      "path": "src/components/layout/InstallAppInvite/index.tsx",
+      "composition": [
+        "src/components/layout/InstallAppInvite/index.tsx",
+        "src/components/base/Button/index.tsx"
+      ],
+      "lines": 50
+    },
+    {
+      "product": "admin",
+      "component": "Button",
+      "path": "src/components/auth/RequireAuth/index.tsx",
+      "composition": [
+        "src/components/auth/RequireAuth/index.tsx",
+        "src/components/base/Button/index.tsx"
+      ],
+      "lines": 54
+    },
+    {
+      "product": "site",
+      "component": "Button",
+      "path": "src/components/layout/Hero/index.tsx",
+      "composition": [
+        "src/components/layout/Hero/index.tsx",
+        "src/components/base/Button/index.tsx"
+      ],
+      "lines": 80
+    },
+    {
+      "product": "admin",
+      "component": "Checkbox",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "ChoiceCard",
+      "path": "src/components/base/AvailabilityPeriodSelector/index.tsx",
+      "composition": [
+        "src/components/base/AvailabilityPeriodSelector/index.tsx",
+        "src/components/base/AvailabilityPeriodSelector/styles.ts"
+      ],
+      "lines": 38
+    },
+    {
+      "product": "admin",
+      "component": "CompoundControl",
+      "path": "src/pages/Login/index.tsx",
+      "composition": ["src/pages/Login/index.tsx", "src/pages/Login/styles.ts"],
+      "lines": 194
+    },
+    {
+      "product": "teacher",
+      "component": "ControlledField",
+      "path": "src/pages/RegisterTeacher/sections/DetailsStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/DetailsStep/index.tsx"
+      ],
+      "lines": 105
+    },
+    {
+      "product": "student",
+      "component": "ControlledField",
+      "path": "src/pages/RegisterStudent/sections/DetailsStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/DetailsStep/index.tsx"
+      ],
+      "lines": 313
+    },
+    {
+      "product": "teacher",
+      "component": "FieldCounter",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FieldCounter",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "teacher",
+      "component": "FieldLabelRow",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FieldLabelRow",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "teacher",
+      "component": "FieldRoot",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FieldRoot",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "admin",
+      "component": "FieldRoot",
+      "path": "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx",
+      "composition": [
+        "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx"
+      ],
+      "lines": 61
+    },
+    {
+      "product": "teacher",
+      "component": "FileInput",
+      "path": "src/pages/Payouts/index.tsx",
+      "composition": [
+        "src/pages/Payouts/index.tsx",
+        "src/pages/Payouts/styles.ts"
+      ],
+      "lines": 383
+    },
+    {
+      "product": "teacher",
+      "component": "FormActions",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": [
+        "src/components/layout/ProblemReportDrawer/index.tsx",
+        "src/components/layout/ProblemReportDrawer/styles.ts"
+      ],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FormActions",
+      "path": "src/pages/StudentProfile/Edit.tsx",
+      "composition": ["src/pages/StudentProfile/Edit.tsx"],
+      "lines": 273
+    },
+    {
+      "product": "teacher",
+      "component": "FormError",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FormError",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "teacher",
+      "component": "FormStack",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "FormStack",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "teacher",
+      "component": "IconButton",
+      "path": "src/pages/PartnerCounters/sections/CounterCard/index.tsx",
+      "composition": [
+        "src/pages/PartnerCounters/sections/CounterCard/index.tsx",
+        "src/components/base/IconButton/index.tsx"
+      ],
+      "lines": 40
+    },
+    {
+      "product": "student",
+      "component": "IconButton",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 360
+    },
+    {
+      "product": "admin",
+      "component": "IconButton",
+      "path": "src/pages/AdminPortal/FinanceClassificationEditor/index.tsx",
+      "composition": [
+        "src/pages/AdminPortal/FinanceClassificationEditor/index.tsx"
+      ],
+      "lines": 318
+    },
+    {
+      "product": "site",
+      "component": "IconButton",
+      "path": "src/components/layout/Footer/index.tsx",
+      "composition": ["src/components/layout/Footer/index.tsx"],
+      "lines": 120
+    },
+    {
+      "product": "teacher",
+      "component": "PhoneField",
+      "path": "src/components/base/PhoneField/index.tsx",
+      "composition": ["src/components/base/PhoneField/index.tsx"],
+      "lines": 73
+    },
+    {
+      "product": "student",
+      "component": "PhoneField",
+      "path": "src/components/base/PhoneField/index.tsx",
+      "composition": ["src/components/base/PhoneField/index.tsx"],
+      "lines": 100
+    },
+    {
+      "product": "teacher",
+      "component": "Pressable",
+      "path": "src/pages/StudentLearningPreview/components/LessonPreviewTabs/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/LessonPreviewTabs/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 22
+    },
+    {
+      "product": "student",
+      "component": "Pressable",
+      "path": "src/pages/ChoosePlan/sections/BrandBar/index.tsx",
+      "composition": [
+        "src/pages/ChoosePlan/sections/BrandBar/index.tsx",
+        "src/pages/ChoosePlan/sections/BrandBar/styles.ts"
+      ],
+      "lines": 28
+    },
+    {
+      "product": "admin",
+      "component": "Pressable",
+      "path": "src/pages/AdminPortal/PortalAction.tsx",
+      "composition": ["src/pages/AdminPortal/PortalAction.tsx"],
+      "lines": 162
+    },
+    {
+      "product": "site",
+      "component": "Pressable",
+      "path": "src/components/layout/LessonShowcaseBottomNav/index.tsx",
+      "composition": [
+        "src/components/layout/LessonShowcaseBottomNav/index.tsx",
+        "src/components/layout/LessonShowcaseBottomNav/styles.ts"
+      ],
+      "lines": 67
+    },
+    {
+      "product": "admin",
+      "component": "RadioButton",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "SearchInput",
+      "path": "src/components/base/SearchField/index.tsx",
+      "composition": [
+        "src/components/base/SearchField/index.tsx",
+        "src/components/base/SearchField/styles.ts"
+      ],
+      "lines": 22
+    },
+    {
+      "product": "admin",
+      "component": "SearchInput",
+      "path": "src/pages/AdminPortal/AdminGlobalSearch/index.tsx",
+      "composition": ["src/pages/AdminPortal/AdminGlobalSearch/index.tsx"],
+      "lines": 224
+    },
+    {
+      "product": "teacher",
+      "component": "SelectInput",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": ["src/components/layout/ProblemReportDrawer/index.tsx"],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "SelectInput",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": ["src/pages/StudentProfile/ProblemReportDrawer.tsx"],
+      "lines": 168
+    },
+    {
+      "product": "admin",
+      "component": "SelectInput",
+      "path": "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx",
+      "composition": [
+        "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx"
+      ],
+      "lines": 61
+    },
+    {
+      "product": "teacher",
+      "component": "TextareaInput",
+      "path": "src/components/layout/ProblemReportDrawer/index.tsx",
+      "composition": [
+        "src/components/layout/ProblemReportDrawer/index.tsx",
+        "src/components/layout/ProblemReportDrawer/styles.ts"
+      ],
+      "lines": 159
+    },
+    {
+      "product": "student",
+      "component": "TextareaInput",
+      "path": "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+      "composition": [
+        "src/pages/StudentProfile/ProblemReportDrawer.tsx",
+        "src/pages/StudentProfile/ProblemReportDrawer.styles.ts"
+      ],
+      "lines": 168
+    },
+    {
+      "product": "admin",
+      "component": "TextareaInput",
+      "path": "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx",
+      "composition": [
+        "src/pages/AdminPortal/EnrollmentSchedulePage/DispatchReconciliation.tsx"
+      ],
+      "lines": 61
+    },
+    {
+      "product": "student",
+      "component": "TextButton",
+      "path": "src/pages/StudentPayment/index.tsx",
+      "composition": [
+        "src/pages/StudentPayment/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 1847
+    },
+    {
+      "product": "admin",
+      "component": "TextButton",
+      "path": "src/pages/AdminPortal/PortalAction.tsx",
+      "composition": [
+        "src/pages/AdminPortal/PortalAction.tsx",
+        "src/components/base/TextButton/index.tsx"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "teacher",
+      "component": "TextInput",
+      "path": "src/pages/Calendar/components/SlotActionDrawer/index.tsx",
+      "composition": [
+        "src/pages/Calendar/components/SlotActionDrawer/index.tsx",
+        "src/pages/Calendar/components/SlotActionDrawer/styles.ts"
+      ],
+      "lines": 312
+    },
+    {
+      "product": "student",
+      "component": "TextInput",
+      "path": "src/pages/RegisterStudent/sections/DetailsStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/DetailsStep/index.tsx"
+      ],
+      "lines": 313
+    },
+    {
+      "product": "admin",
+      "component": "TextInput",
+      "path": "src/pages/AdminPortal/StudentPaymentAccessActions/index.tsx",
+      "composition": [
+        "src/pages/AdminPortal/StudentPaymentAccessActions/index.tsx"
+      ],
+      "lines": 131
+    },
+    {
+      "product": "site",
+      "component": "TextInput",
+      "path": "src/components/layout/TrialLessonForm/index.tsx",
+      "composition": [
+        "src/components/layout/TrialLessonForm/index.tsx",
+        "src/components/layout/TrialLessonForm/styles.ts"
+      ],
+      "lines": 433
+    },
+    {
+      "product": "teacher",
+      "component": "ToggleButton",
+      "path": "src/components/base/AvailabilityDaySelector/index.tsx",
+      "composition": [
+        "src/components/base/AvailabilityDaySelector/index.tsx",
+        "src/components/base/AvailabilityDaySelector/styles.ts"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "teacher",
+      "component": "AuthAccent",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthAccent",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "AuthBackButton",
+      "path": "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+        "src/components/layout/AuthBackButton/index.tsx"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "AuthBackButton",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/components/layout/AuthBackButton/index.tsx"
+      ],
+      "lines": 118
+    },
+    {
+      "product": "teacher",
+      "component": "AuthBrandAccent",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthBrandAccent",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthBrandDescription",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthBrandDescription",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthBrandFooter",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthBrandFooter",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthBrandTitle",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthBrandTitle",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthChannelHint",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/PhoneStep/index.tsx",
+        "src/pages/Login/sections/PhoneStep/styles.ts"
+      ],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthChannelHint",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/PhoneStep/index.tsx",
+        "src/pages/Login/sections/PhoneStep/styles.ts"
+      ],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "AuthChannelIcon",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/PhoneStep/index.tsx",
+        "src/pages/Login/sections/PhoneStep/styles.ts"
+      ],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthChannelIcon",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/PhoneStep/index.tsx",
+        "src/pages/Login/sections/PhoneStep/styles.ts"
+      ],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "AuthDescription",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthDescription",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "AuthEyebrow",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/PhoneStep/index.tsx",
+        "src/components/layout/AuthEyebrow/index.tsx"
+      ],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthEyebrow",
+      "path": "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+        "src/components/layout/AuthEyebrow/index.tsx"
+      ],
+      "lines": 42
+    },
+    {
+      "product": "teacher",
+      "component": "AuthFeature",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthFeature",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthFeatureList",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthFeatureList",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthFooterLink",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthFooterLink",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthForm",
+      "path": "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+        "src/components/layout/AuthForm/index.tsx"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "AuthForm",
+      "path": "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+        "src/components/layout/AuthForm/index.tsx"
+      ],
+      "lines": 42
+    },
+    {
+      "product": "teacher",
+      "component": "AuthFrame",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "student",
+      "component": "AuthFrame",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 70
+    },
+    {
+      "product": "teacher",
+      "component": "AuthLegalText",
+      "path": "src/pages/RegisterTeacher/sections/DetailsStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/DetailsStep/index.tsx",
+        "src/pages/RegisterTeacher/sections/DetailsStep/styles.ts"
+      ],
+      "lines": 105
+    },
+    {
+      "product": "student",
+      "component": "AuthLegalText",
+      "path": "src/pages/RegisterStudent/sections/DetailsStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/DetailsStep/index.tsx",
+        "src/pages/RegisterStudent/sections/DetailsStep/styles.ts"
+      ],
+      "lines": 313
+    },
+    {
+      "product": "teacher",
+      "component": "AuthMobileFooter",
+      "path": "src/components/layout/AuthShell/index.tsx",
+      "composition": ["src/components/layout/AuthShell/index.tsx"],
+      "lines": 64
+    },
+    {
+      "product": "teacher",
+      "component": "AuthNotice",
+      "path": "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "AuthNotice",
+      "path": "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+      "composition": ["src/pages/RegisterStudent/sections/ClaimStep/index.tsx"],
+      "lines": 42
+    },
+    {
+      "product": "teacher",
+      "component": "AuthProgress",
+      "path": "src/pages/Login/sections/SuccessStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/SuccessStep/index.tsx",
+        "src/components/layout/AuthProgress/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "student",
+      "component": "AuthProgress",
+      "path": "src/pages/RegisterStudent/sections/SuccessStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/SuccessStep/index.tsx",
+        "src/components/layout/AuthProgress/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "teacher",
+      "component": "AuthResendAction",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/components/layout/AuthResendAction/index.tsx"
+      ],
+      "lines": 119
+    },
+    {
+      "product": "student",
+      "component": "AuthResendAction",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/components/layout/AuthResendAction/index.tsx"
+      ],
+      "lines": 118
+    },
+    {
+      "product": "teacher",
+      "component": "AuthResendButton",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/components/layout/AuthResendAction/index.tsx"
+      ],
+      "lines": 119
+    },
+    {
+      "product": "student",
+      "component": "AuthResendButton",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/components/layout/AuthResendAction/index.tsx"
+      ],
+      "lines": 118
+    },
+    {
+      "product": "teacher",
+      "component": "AuthSubmitButton",
+      "path": "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx",
+        "src/components/layout/AuthSubmitButton/index.tsx"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "AuthSubmitButton",
+      "path": "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/ClaimStep/index.tsx",
+        "src/components/layout/AuthSubmitButton/index.tsx"
+      ],
+      "lines": 42
+    },
+    {
+      "product": "teacher",
+      "component": "AuthSuccessIcon",
+      "path": "src/pages/Login/sections/SuccessStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/SuccessStep/index.tsx",
+        "src/components/layout/AuthSuccessIcon/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "student",
+      "component": "AuthSuccessIcon",
+      "path": "src/pages/RegisterStudent/sections/SuccessStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/SuccessStep/index.tsx",
+        "src/components/layout/AuthSuccessIcon/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "teacher",
+      "component": "AuthSuccessState",
+      "path": "src/pages/Login/sections/SuccessStep/index.tsx",
+      "composition": ["src/pages/Login/sections/SuccessStep/index.tsx"],
+      "lines": 17
+    },
+    {
+      "product": "student",
+      "component": "AuthSuccessState",
+      "path": "src/pages/RegisterStudent/sections/SuccessStep/index.tsx",
+      "composition": [
+        "src/pages/RegisterStudent/sections/SuccessStep/index.tsx"
+      ],
+      "lines": 17
+    },
+    {
+      "product": "teacher",
+      "component": "AuthTitle",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 91
+    },
+    {
+      "product": "student",
+      "component": "AuthTitle",
+      "path": "src/pages/Login/sections/PhoneStep/index.tsx",
+      "composition": ["src/pages/Login/sections/PhoneStep/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "AuthTokenDigits",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": ["src/pages/Login/sections/TokenStep/index.tsx"],
+      "lines": 119
+    },
+    {
+      "product": "student",
+      "component": "AuthTokenDigits",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": ["src/pages/Login/sections/TokenStep/index.tsx"],
+      "lines": 118
+    },
+    {
+      "product": "teacher",
+      "component": "AuthTokenLabel",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/pages/Login/sections/TokenStep/styles.ts"
+      ],
+      "lines": 119
+    },
+    {
+      "product": "student",
+      "component": "AuthTokenLabel",
+      "path": "src/pages/Login/sections/TokenStep/index.tsx",
+      "composition": [
+        "src/pages/Login/sections/TokenStep/index.tsx",
+        "src/pages/Login/sections/TokenStep/styles.ts"
+      ],
+      "lines": 118
+    },
+    {
+      "product": "teacher",
+      "component": "AuthTopLink",
+      "path": "src/components/layout/AuthTopLink/index.tsx",
+      "composition": ["src/components/layout/AuthTopLink/index.tsx"],
+      "lines": 15
+    },
+    {
+      "product": "student",
+      "component": "AuthTopLink",
+      "path": "src/components/layout/AuthTopLink/index.tsx",
+      "composition": ["src/components/layout/AuthTopLink/index.tsx"],
+      "lines": 15
+    },
+    {
+      "product": "teacher",
+      "component": "AuthTopLinkHighlight",
+      "path": "src/pages/Login/index.tsx",
+      "composition": [
+        "src/pages/Login/index.tsx",
+        "src/components/layout/AuthTopLinkHighlight/index.tsx"
+      ],
+      "lines": 278
+    },
+    {
+      "product": "student",
+      "component": "AuthTopLinkHighlight",
+      "path": "src/pages/Login/index.tsx",
+      "composition": [
+        "src/pages/Login/index.tsx",
+        "src/components/layout/AuthTopLinkHighlight/index.tsx"
+      ],
+      "lines": 334
+    },
+    {
+      "product": "teacher",
+      "component": "Avatar",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "student",
+      "component": "Avatar",
+      "path": "src/pages/StudentHome/index.tsx",
+      "composition": [
+        "src/pages/StudentHome/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 357
+    },
+    {
+      "product": "admin",
+      "component": "Avatar",
+      "path": "src/pages/AdminPortal/AdminPageChrome.tsx",
+      "composition": ["src/pages/AdminPortal/AdminPageChrome.tsx"],
+      "lines": 202
+    },
+    {
+      "product": "teacher",
+      "component": "BrandLink",
+      "path": "src/pages/LegalPage/links/BrandAnchor/index.tsx",
+      "composition": ["src/pages/LegalPage/links/BrandAnchor/index.tsx"],
+      "lines": 21
+    },
+    {
+      "product": "student",
+      "component": "BrandLink",
+      "path": "src/pages/LegalPage/links/BrandAnchor/index.tsx",
+      "composition": ["src/pages/LegalPage/links/BrandAnchor/index.tsx"],
+      "lines": 21
+    },
+    {
+      "product": "site",
+      "component": "BrandLink",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": [
+        "src/pages/LegalPage/index.tsx",
+        "src/pages/LegalPage/styles.ts"
+      ],
+      "lines": 94
+    },
+    {
+      "product": "teacher",
+      "component": "BrandLogo",
+      "path": "src/components/base/Logo/index.tsx",
+      "composition": ["src/components/base/Logo/index.tsx"],
+      "lines": 7
+    },
+    {
+      "product": "student",
+      "component": "BrandLogo",
+      "path": "src/components/base/Logo/index.tsx",
+      "composition": ["src/components/base/Logo/index.tsx"],
+      "lines": 7
+    },
+    {
+      "product": "admin",
+      "component": "BrandLogo",
+      "path": "src/components/base/BrandLogo/index.tsx",
+      "composition": [
+        "src/components/base/BrandLogo/index.tsx",
+        "src/components/base/BrandLogo/styles.ts"
+      ],
+      "lines": 9
+    },
+    {
+      "product": "site",
+      "component": "BrandLogo",
+      "path": "src/components/base/VerticalLogo/index.tsx",
+      "composition": [
+        "src/components/base/VerticalLogo/index.tsx",
+        "src/components/base/VerticalLogo/styles.ts"
+      ],
+      "lines": 9
+    },
+    {
+      "product": "cupom",
+      "component": "BrandLogo",
+      "path": "src/pages/CouponRedirectPage/index.tsx",
+      "composition": ["src/pages/CouponRedirectPage/index.tsx"],
+      "lines": 87
+    },
+    {
+      "product": "teacher",
+      "component": "DocumentHeader",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "DocumentHeader",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "site",
+      "component": "DocumentHeader",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 94
+    },
+    {
+      "product": "teacher",
+      "component": "DocumentHeaderContent",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "DocumentHeaderContent",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "site",
+      "component": "DocumentHeaderContent",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 94
+    },
+    {
+      "product": "teacher",
+      "component": "DocumentLayout",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "DocumentLayout",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "teacher",
+      "component": "DocumentNavigation",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "DocumentNavigation",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 57
+    },
+    {
+      "product": "site",
+      "component": "DocumentNavigation",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": ["src/pages/LegalPage/index.tsx"],
+      "lines": 94
+    },
+    {
+      "product": "teacher",
+      "component": "DocumentNavigationLink",
+      "path": "src/pages/LegalPage/links/DocumentAnchor/index.tsx",
+      "composition": ["src/pages/LegalPage/links/DocumentAnchor/index.tsx"],
+      "lines": 28
+    },
+    {
+      "product": "student",
+      "component": "DocumentNavigationLink",
+      "path": "src/pages/LegalPage/links/DocumentAnchor/index.tsx",
+      "composition": ["src/pages/LegalPage/links/DocumentAnchor/index.tsx"],
+      "lines": 28
+    },
+    {
+      "product": "site",
+      "component": "DocumentNavigationLink",
+      "path": "src/pages/LegalPage/index.tsx",
+      "composition": [
+        "src/pages/LegalPage/index.tsx",
+        "src/pages/LegalPage/styles.ts"
+      ],
+      "lines": 94
+    },
+    {
+      "product": "teacher",
+      "component": "Card",
+      "path": "src/pages/Today/index.tsx",
+      "composition": ["src/pages/Today/index.tsx"],
+      "lines": 289
+    },
+    {
+      "product": "student",
+      "component": "Card",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "admin",
+      "component": "Card",
+      "path": "src/pages/AdminPortal/FinanceOverview/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceOverview/index.tsx"],
+      "lines": 195
+    },
+    {
+      "product": "cupom",
+      "component": "Card",
+      "path": "src/pages/CouponMetricsPage/index.tsx",
+      "composition": ["src/pages/CouponMetricsPage/index.tsx"],
+      "lines": 484
+    },
+    {
+      "product": "teacher",
+      "component": "CardLink",
+      "path": "src/components/layout/MaterialCard/MaterialLink/index.tsx",
+      "composition": [
+        "src/components/layout/MaterialCard/MaterialLink/index.tsx"
+      ],
+      "lines": 19
+    },
+    {
+      "product": "admin",
+      "component": "DefinitionItem",
+      "path": "src/pages/AdminPortal/StudentCommunicationDrawer/index.tsx",
+      "composition": [
+        "src/pages/AdminPortal/StudentCommunicationDrawer/index.tsx",
+        "src/components/base/DefinitionItem/index.tsx"
+      ],
+      "lines": 230
+    },
+    {
+      "product": "admin",
+      "component": "DetailRow",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "EmptyState",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "student",
+      "component": "EmptyState",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 31
+    },
+    {
+      "product": "cupom",
+      "component": "GroupedBarChart",
+      "path": "src/pages/CouponMetricsPage/index.tsx",
+      "composition": ["src/pages/CouponMetricsPage/index.tsx"],
+      "lines": 484
+    },
+    {
+      "product": "student",
+      "component": "InlineNotice",
+      "path": "src/pages/StudentClasses/index.tsx",
+      "composition": [
+        "src/pages/StudentClasses/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 218
+    },
+    {
+      "product": "cupom",
+      "component": "KeyValueList",
+      "path": "src/pages/CouponMetricsPage/index.tsx",
+      "composition": ["src/pages/CouponMetricsPage/index.tsx"],
+      "lines": 484
+    },
+    {
+      "product": "teacher",
+      "component": "LoadingState",
+      "path": "src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx"
+      ],
+      "lines": 88
+    },
+    {
+      "product": "student",
+      "component": "LoadingState",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": ["src/pages/StudentMessages/index.tsx"],
+      "lines": 377
+    },
+    {
+      "product": "admin",
+      "component": "LoadingState",
+      "path": "src/pages/AdminPortal/MessagingPage/index.tsx",
+      "composition": ["src/pages/AdminPortal/MessagingPage/index.tsx"],
+      "lines": 337
+    },
+    {
+      "product": "teacher",
+      "component": "MetricLabel",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "MetricLabel",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "MetricSummary",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "MetricSummary",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "MetricValue",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "MetricValue",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "NoticeBanner",
+      "path": "src/components/layout/ShellNotice/index.tsx",
+      "composition": [
+        "src/components/layout/ShellNotice/index.tsx",
+        "src/components/layout/ShellNotice/styles.ts"
+      ],
+      "lines": 13
+    },
+    {
+      "product": "student",
+      "component": "NoticeBanner",
+      "path": "src/components/layout/ShellNotice/index.tsx",
+      "composition": [
+        "src/components/layout/ShellNotice/index.tsx",
+        "src/components/layout/ShellNotice/styles.ts"
+      ],
+      "lines": 19
+    },
+    {
+      "product": "admin",
+      "component": "OperationalList",
+      "path": "src/pages/AdminPortal/FinanceImportDialog/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceImportDialog/index.tsx"],
+      "lines": 176
+    },
+    {
+      "product": "teacher",
+      "component": "PageDescription",
+      "path": "src/components/layout/Topbar/index.tsx",
+      "composition": [
+        "src/components/layout/Topbar/index.tsx",
+        "src/components/layout/Topbar/styles.ts"
+      ],
+      "lines": 24
+    },
+    {
+      "product": "student",
+      "component": "PageDescription",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PageTitle",
+      "path": "src/components/layout/Topbar/index.tsx",
+      "composition": [
+        "src/components/layout/Topbar/index.tsx",
+        "src/components/layout/Topbar/styles.ts"
+      ],
+      "lines": 24
+    },
+    {
+      "product": "student",
+      "component": "PageTitle",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "admin",
+      "component": "PageTitle",
+      "path": "src/pages/AdminPortal/AdminPageChrome.tsx",
+      "composition": ["src/pages/AdminPortal/AdminPageChrome.tsx"],
+      "lines": 202
+    },
+    {
+      "product": "teacher",
+      "component": "ScheduleRow",
+      "path": "src/components/layout/ClassRow/index.tsx",
+      "composition": ["src/components/layout/ClassRow/index.tsx"],
+      "lines": 101
+    },
+    {
+      "product": "teacher",
+      "component": "SectionHeader",
+      "path": "src/pages/Today/index.tsx",
+      "composition": ["src/pages/Today/index.tsx"],
+      "lines": 289
+    },
+    {
+      "product": "admin",
+      "component": "SectionHeader",
+      "path": "src/pages/AdminPortal/FinanceOverview/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceOverview/index.tsx"],
+      "lines": 195
+    },
+    {
+      "product": "teacher",
+      "component": "Skeleton",
+      "path": "src/pages/StudentLearningPreview/components/PracticePreviewCardSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/PracticePreviewCardSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 22
+    },
+    {
+      "product": "student",
+      "component": "Skeleton",
+      "path": "src/pages/StudentClasses/index.tsx",
+      "composition": [
+        "src/pages/StudentClasses/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 218
+    },
+    {
+      "product": "cupom",
+      "component": "Skeleton",
+      "path": "src/pages/CouponMetricsPage/index.tsx",
+      "composition": ["src/pages/CouponMetricsPage/index.tsx"],
+      "lines": 484
+    },
+    {
+      "product": "teacher",
+      "component": "Spinner",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "student",
+      "component": "Spinner",
+      "path": "src/pages/StudentLive/LiveChat.tsx",
+      "composition": ["src/pages/StudentLive/LiveChat.tsx"],
+      "lines": 181
+    },
+    {
+      "product": "admin",
+      "component": "Spinner",
+      "path": "src/pages/AdminPortal/AdminGlobalSearch/index.tsx",
+      "composition": ["src/pages/AdminPortal/AdminGlobalSearch/index.tsx"],
+      "lines": 224
+    },
+    {
+      "product": "admin",
+      "component": "StatAction",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "admin",
+      "component": "StatCard",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "StatePanel",
+      "path": "src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx"
+      ],
+      "lines": 88
+    },
+    {
+      "product": "student",
+      "component": "StatePanel",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": ["src/pages/StudentMessages/index.tsx"],
+      "lines": 377
+    },
+    {
+      "product": "admin",
+      "component": "StatePanel",
+      "path": "src/pages/AdminPortal/FinanceImportDialog/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceImportDialog/index.tsx"],
+      "lines": 176
+    },
+    {
+      "product": "admin",
+      "component": "StatLabel",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "StatusChip",
+      "path": "src/components/layout/ClassRow/index.tsx",
+      "composition": ["src/components/layout/ClassRow/index.tsx"],
+      "lines": 101
+    },
+    {
+      "product": "student",
+      "component": "StatusChip",
+      "path": "src/pages/StudentClasses/index.tsx",
+      "composition": ["src/pages/StudentClasses/index.tsx"],
+      "lines": 218
+    },
+    {
+      "product": "admin",
+      "component": "StatusChip",
+      "path": "src/pages/AdminPortal/FinanceImportDialog/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceImportDialog/index.tsx"],
+      "lines": 176
+    },
+    {
+      "product": "admin",
+      "component": "StatValue",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "WeeklyCountChart",
+      "path": "src/components/layout/WeeklyBarChart/index.tsx",
+      "composition": ["src/components/layout/WeeklyBarChart/index.tsx"],
+      "lines": 45
+    },
+    {
+      "product": "teacher",
+      "component": "ConnectionNotice",
+      "path": "src/pages/Messages/components/ConversationThread/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationThread/index.tsx",
+        "src/pages/Messages/components/ConversationThread/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "student",
+      "component": "ConnectionNotice",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": [
+        "src/pages/StudentMessages/index.tsx",
+        "src/pages/StudentMessages/styles.ts"
+      ],
+      "lines": 377
+    },
+    {
+      "product": "teacher",
+      "component": "ConversationRow",
+      "path": "src/pages/Messages/components/ConversationList/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationList/index.tsx"
+      ],
+      "lines": 161
+    },
+    {
+      "product": "teacher",
+      "component": "MessageBubble",
+      "path": "src/pages/Messages/components/ConversationThread/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationThread/index.tsx"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "student",
+      "component": "MessageBubble",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": ["src/pages/StudentMessages/index.tsx"],
+      "lines": 377
+    },
+    {
+      "product": "admin",
+      "component": "MessageBubble",
+      "path": "src/pages/AdminPortal/MessagingPage/index.tsx",
+      "composition": ["src/pages/AdminPortal/MessagingPage/index.tsx"],
+      "lines": 337
+    },
+    {
+      "product": "teacher",
+      "component": "MessageComposer",
+      "path": "src/pages/Messages/components/ConversationThread/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationThread/index.tsx"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "student",
+      "component": "MessageComposer",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": ["src/pages/StudentMessages/index.tsx"],
+      "lines": 377
+    },
+    {
+      "product": "teacher",
+      "component": "MessageThread",
+      "path": "src/pages/Messages/components/ConversationThread/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationThread/index.tsx",
+        "src/pages/Messages/components/ConversationThread/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "student",
+      "component": "MessageThread",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": [
+        "src/pages/StudentMessages/index.tsx",
+        "src/pages/StudentMessages/styles.ts"
+      ],
+      "lines": 377
+    },
+    {
+      "product": "teacher",
+      "component": "MessageThreadHeader",
+      "path": "src/pages/Messages/components/ConversationThread/index.tsx",
+      "composition": [
+        "src/pages/Messages/components/ConversationThread/index.tsx"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "student",
+      "component": "MessageThreadHeader",
+      "path": "src/pages/StudentMessages/index.tsx",
+      "composition": ["src/pages/StudentMessages/index.tsx"],
+      "lines": 377
+    },
+    {
+      "product": "teacher",
+      "component": "NotificationItem",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "teacher",
+      "component": "BottomNavigation",
+      "path": "src/components/layout/TeacherBottomNavigation/index.tsx",
+      "composition": [
+        "src/components/layout/TeacherBottomNavigation/index.tsx",
+        "src/components/layout/TeacherBottomNavigation/styles.ts"
+      ],
+      "lines": 28
+    },
+    {
+      "product": "student",
+      "component": "BottomNavigation",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "BottomNavigationLink",
+      "path": "src/components/layout/TeacherBottomNavigation/BottomAnchor.tsx",
+      "composition": [
+        "src/components/layout/TeacherBottomNavigation/BottomAnchor.tsx"
+      ],
+      "lines": 45
+    },
+    {
+      "product": "teacher",
+      "component": "FilterPills",
+      "path": "src/components/base/FilterPills/index.tsx",
+      "composition": ["src/components/base/FilterPills/index.tsx"],
+      "lines": 21
+    },
+    {
+      "product": "admin",
+      "component": "FilterPills",
+      "path": "src/pages/AdminPage/index.tsx",
+      "composition": ["src/pages/AdminPage/index.tsx"],
+      "lines": 277
+    },
+    {
+      "product": "teacher",
+      "component": "FilterSelect",
+      "path": "src/pages/Materials/index.tsx",
+      "composition": [
+        "src/pages/Materials/index.tsx",
+        "src/pages/Materials/styles.ts"
+      ],
+      "lines": 111
+    },
+    {
+      "product": "admin",
+      "component": "FilterSelect",
+      "path": "src/components/base/FilterSelect/index.tsx",
+      "composition": ["src/components/base/FilterSelect/index.tsx"],
+      "lines": 41
+    },
+    {
+      "product": "teacher",
+      "component": "FilterToolbar",
+      "path": "src/pages/Materials/index.tsx",
+      "composition": [
+        "src/pages/Materials/index.tsx",
+        "src/components/base/FilterToolbar/index.tsx",
+        "src/components/base/FilterToolbar/styles.ts"
+      ],
+      "lines": 111
+    },
+    {
+      "product": "admin",
+      "component": "FilterToolbar",
+      "path": "src/pages/AdminPortal/MessagingPage/index.tsx",
+      "composition": ["src/pages/AdminPortal/MessagingPage/index.tsx"],
+      "lines": 337
+    },
+    {
+      "product": "teacher",
+      "component": "NavigationButton",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 110
+    },
+    {
+      "product": "student",
+      "component": "NavigationButton",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 360
+    },
+    {
+      "product": "admin",
+      "component": "NavigationButton",
+      "path": "src/pages/AdminPortal/AdminPageChrome.tsx",
+      "composition": ["src/pages/AdminPortal/AdminPageChrome.tsx"],
+      "lines": 202
+    },
+    {
+      "product": "teacher",
+      "component": "NavigationLink",
+      "path": "src/components/layout/Sidebar/NavigationAnchor.tsx",
+      "composition": ["src/components/layout/Sidebar/NavigationAnchor.tsx"],
+      "lines": 45
+    },
+    {
+      "product": "student",
+      "component": "NavigationLink",
+      "path": "src/components/layout/Sidebar/NavigationAnchor.tsx",
+      "composition": ["src/components/layout/Sidebar/NavigationAnchor.tsx"],
+      "lines": 45
+    },
+    {
+      "product": "admin",
+      "component": "SegmentedControl",
+      "path": "src/testing/DesignSystemAudit/index.tsx",
+      "composition": ["src/testing/DesignSystemAudit/index.tsx"],
+      "lines": 334
+    },
+    {
+      "product": "cupom",
+      "component": "SegmentedControl",
+      "path": "src/pages/CouponMetricsPage/index.tsx",
+      "composition": ["src/pages/CouponMetricsPage/index.tsx"],
+      "lines": 484
+    },
+    {
+      "product": "teacher",
+      "component": "SidebarFrame",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 110
+    },
+    {
+      "product": "student",
+      "component": "SidebarFrame",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 360
+    },
+    {
+      "product": "admin",
+      "component": "SidebarFrame",
+      "path": "src/pages/AdminPortal/AdminPageChrome.tsx",
+      "composition": ["src/pages/AdminPortal/AdminPageChrome.tsx"],
+      "lines": 202
+    },
+    {
+      "product": "teacher",
+      "component": "SidebarNavigation",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 110
+    },
+    {
+      "product": "student",
+      "component": "SidebarNavigation",
+      "path": "src/components/layout/Sidebar/index.tsx",
+      "composition": [
+        "src/components/layout/Sidebar/index.tsx",
+        "src/components/layout/Sidebar/styles.ts"
+      ],
+      "lines": 360
+    },
+    {
+      "product": "admin",
+      "component": "SidebarNavigation",
+      "path": "src/pages/AdminPortal/AdminPageChrome.tsx",
+      "composition": ["src/pages/AdminPortal/AdminPageChrome.tsx"],
+      "lines": 202
+    },
+    {
+      "product": "admin",
+      "component": "ActionMenu",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "student",
+      "component": "Dialog",
+      "path": "src/pages/ChoosePlan/sections/CheckoutDialog/index.tsx",
+      "composition": ["src/pages/ChoosePlan/sections/CheckoutDialog/index.tsx"],
+      "lines": 237
+    },
+    {
+      "product": "admin",
+      "component": "Dialog",
+      "path": "src/pages/AdminPortal/FinanceImportDialog/index.tsx",
+      "composition": ["src/pages/AdminPortal/FinanceImportDialog/index.tsx"],
+      "lines": 176
+    },
+    {
+      "product": "teacher",
+      "component": "Drawer",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 93
+    },
+    {
+      "product": "student",
+      "component": "Drawer",
+      "path": "src/components/layout/NotificationDrawer/index.tsx",
+      "composition": ["src/components/layout/NotificationDrawer/index.tsx"],
+      "lines": 31
+    },
+    {
+      "product": "admin",
+      "component": "Drawer",
+      "path": "src/pages/AdminPortal/StudentCommunicationDrawer/index.tsx",
+      "composition": [
+        "src/pages/AdminPortal/StudentCommunicationDrawer/index.tsx"
+      ],
+      "lines": 230
+    },
+    {
+      "product": "teacher",
+      "component": "ToastItem",
+      "path": "src/components/base/ToastViewport/index.tsx",
+      "composition": ["src/components/base/ToastViewport/index.tsx"],
+      "lines": 49
+    },
+    {
+      "product": "student",
+      "component": "ToastItem",
+      "path": "src/components/base/ToastViewport/index.tsx",
+      "composition": ["src/components/base/ToastViewport/index.tsx"],
+      "lines": 28
+    },
+    {
+      "product": "teacher",
+      "component": "ToastViewport",
+      "path": "src/components/base/ToastViewport/index.tsx",
+      "composition": ["src/components/base/ToastViewport/index.tsx"],
+      "lines": 49
+    },
+    {
+      "product": "student",
+      "component": "ToastViewport",
+      "path": "src/components/base/ToastViewport/index.tsx",
+      "composition": ["src/components/base/ToastViewport/index.tsx"],
+      "lines": 28
+    },
+    {
+      "product": "admin",
+      "component": "AvailabilityCalendar",
+      "path": "src/pages/AdminPortal/EnrollmentSchedulePage/index.tsx",
+      "composition": ["src/pages/AdminPortal/EnrollmentSchedulePage/index.tsx"],
+      "lines": 1141
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarControls",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/MonthCalendar/index.tsx",
+        "src/components/layout/CalendarControls/index.tsx"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "admin",
+      "component": "CalendarControls",
+      "path": "src/pages/AdminPortal/index.tsx",
+      "composition": ["src/pages/AdminPortal/index.tsx"],
+      "lines": 21938
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarDay",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/MonthCalendar/index.tsx",
+        "src/components/layout/MonthCalendar/styles.ts"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarDayNumber",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/MonthCalendar/index.tsx",
+        "src/components/layout/MonthCalendar/styles.ts"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarEvent",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/MonthCalendar/index.tsx",
+        "src/components/layout/MonthCalendar/styles.ts"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarMonthGrid",
+      "path": "src/components/layout/MonthCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/MonthCalendar/index.tsx",
+        "src/components/layout/MonthCalendar/styles.ts"
+      ],
+      "lines": 162
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarScroller",
+      "path": "src/components/layout/CalendarScroller/index.tsx",
+      "composition": ["src/components/layout/CalendarScroller/index.tsx"],
+      "lines": 9
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarTimeSlot",
+      "path": "src/components/layout/WeekCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/WeekCalendar/index.tsx",
+        "src/components/layout/WeekCalendar/styles.ts"
+      ],
+      "lines": 270
+    },
+    {
+      "product": "teacher",
+      "component": "CalendarWeekGrid",
+      "path": "src/components/layout/WeekCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/WeekCalendar/index.tsx",
+        "src/components/layout/WeekCalendar/styles.ts"
+      ],
+      "lines": 270
+    },
+    {
+      "product": "teacher",
+      "component": "TimelineEvent",
+      "path": "src/components/layout/WeekCalendar/index.tsx",
+      "composition": [
+        "src/components/layout/WeekCalendar/index.tsx",
+        "src/components/layout/WeekCalendar/styles.ts"
+      ],
+      "lines": 270
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardBack",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardBack",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardCounter",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardCounter",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardDeck",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardDeck",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFace",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFace",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "site",
+      "component": "FlashcardFace",
+      "path": "src/components/layout/FlashcardBirdShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/FlashcardBirdShowcase/index.tsx",
+        "src/components/layout/FlashcardBirdShowcase/styles.ts"
+      ],
+      "lines": 196
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFeedback",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFeedback",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFlip",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFlip",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "site",
+      "component": "FlashcardFlip",
+      "path": "src/components/layout/FlashcardBirdShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/FlashcardBirdShowcase/index.tsx",
+        "src/components/layout/FlashcardBirdShowcase/styles.ts"
+      ],
+      "lines": 196
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFlipHint",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFlipHint",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFrame",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFrame",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFront",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFront",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardGhost",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardGhost",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "site",
+      "component": "FlashcardGhost",
+      "path": "src/components/layout/FlashcardBirdShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/FlashcardBirdShowcase/index.tsx",
+        "src/components/layout/FlashcardBirdShowcase/styles.ts"
+      ],
+      "lines": 196
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardImagePanel",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardImagePanel",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardProgressSegment",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardProgressSegment",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardProgressTrack",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardProgressTrack",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardRatingButton",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardRatingButton",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardStage",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardStage",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardSwiper",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardSwiper",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardWord",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardWord",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": [
+        "src/components/features/portal/FlashcardsV2.tsx",
+        "src/components/features/portal/FlashcardsV2.styles.ts"
+      ],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCard",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeCard",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCardBody",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeCardBody",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCardCover",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeCardCover",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCardSkeletonBody",
+      "path": "src/pages/StudentLearningPreview/components/PracticePreviewCardSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/PracticePreviewCardSkeleton/index.tsx"
+      ],
+      "lines": 22
+    },
+    {
+      "product": "student",
+      "component": "PracticeCardSkeletonBody",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCoverLabel",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeCoverLabel",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeCoverValue",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeCoverValue",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeLevelBadge",
+      "path": "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx"
+      ],
+      "lines": 29
+    },
+    {
+      "product": "student",
+      "component": "PracticeLevelBadge",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticePlaybackControls",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx"
+      ],
+      "lines": 456
+    },
+    {
+      "product": "student",
+      "component": "PracticePlaybackControls",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "student",
+      "component": "PracticeProgressBar",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeResultActions",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "PracticeResultActions",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeResultDescription",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "PracticeResultDescription",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeResultMark",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "PracticeResultMark",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeResultPanel",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "PracticeResultPanel",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "PracticeResultTitle",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "PracticeResultTitle",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizBadge",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "QuizBadge",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizBlank",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/utils.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/utils.tsx"
+      ],
+      "lines": 20
+    },
+    {
+      "product": "student",
+      "component": "QuizBlank",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizFeedback",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "QuizFeedback",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "QuizFeedback",
+      "path": "src/components/layout/QuizVerbToBeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/QuizVerbToBeShowcase/index.tsx",
+        "src/components/layout/QuizVerbToBeShowcase/styles.ts"
+      ],
+      "lines": 195
+    },
+    {
+      "product": "teacher",
+      "component": "QuizMetadata",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 46
+    },
+    {
+      "product": "student",
+      "component": "QuizMetadata",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizOption",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx"
+      ],
+      "lines": 345
+    },
+    {
+      "product": "student",
+      "component": "QuizOption",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "QuizOption",
+      "path": "src/components/layout/QuizVerbToBeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/QuizVerbToBeShowcase/index.tsx",
+        "src/components/layout/QuizVerbToBeShowcase/styles.ts"
+      ],
+      "lines": 195
+    },
+    {
+      "product": "teacher",
+      "component": "QuizPromptHeader",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 46
+    },
+    {
+      "product": "student",
+      "component": "QuizPromptHeader",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizQuestion",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 46
+    },
+    {
+      "product": "student",
+      "component": "QuizQuestion",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "QuizSessionHeader",
+      "path": "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/QuizPreviewSessionSkeleton/index.tsx"
+      ],
+      "lines": 46
+    },
+    {
+      "product": "student",
+      "component": "QuizSessionHeader",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "SessionProgress",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "SessionProgress",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingActivePhrase",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingActivePhrase",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingActivePhrase",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+        "src/components/layout/ShadowingCoffeeShowcase/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingContextPhrase",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 456
+    },
+    {
+      "product": "student",
+      "component": "ShadowingContextPhrase",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingContextPhrase",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+        "src/components/layout/ShadowingCoffeeShowcase/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingControlCluster",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingControlCluster",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingControlDock",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingControlDock",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingControlDock",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+        "src/components/layout/ShadowingCoffeeShowcase/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingPhraseStack",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingPhraseStack",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingPhraseStack",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+        "src/components/layout/ShadowingCoffeeShowcase/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingReader",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingReader",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingReader",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+        "src/components/layout/ShadowingCoffeeShowcase/styles.ts"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingRepetitions",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingRepetitions",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingTranslation",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSessionSkeleton/index.tsx",
+        "src/pages/StudentLearningPreview/styles.ts"
+      ],
+      "lines": 57
+    },
+    {
+      "product": "student",
+      "component": "ShadowingTranslation",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": [
+        "src/components/features/portal/index.tsx",
+        "src/components/features/portal/styles.ts"
+      ],
+      "lines": 2879
+    },
+    {
+      "product": "teacher",
+      "component": "ShadowingWord",
+      "path": "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx"
+      ],
+      "lines": 456
+    },
+    {
+      "product": "student",
+      "component": "ShadowingWord",
+      "path": "src/components/features/portal/index.tsx",
+      "composition": ["src/components/features/portal/index.tsx"],
+      "lines": 2879
+    },
+    {
+      "product": "site",
+      "component": "ShadowingWord",
+      "path": "src/components/layout/ShadowingCoffeeShowcase/index.tsx",
+      "composition": [
+        "src/components/layout/ShadowingCoffeeShowcase/index.tsx"
+      ],
+      "lines": 261
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardFlipButton",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardFlipButton",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
+      "lines": 1063
+    },
+    {
+      "product": "site",
+      "component": "FlashcardFlipButton",
+      "path": "src/components/layout/FlashcardBirdShowcase/index.tsx",
+      "composition": ["src/components/layout/FlashcardBirdShowcase/index.tsx"],
+      "lines": 196
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardAudioButton",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx"
+      ],
+      "lines": 684
+    },
+    {
+      "product": "student",
+      "component": "FlashcardAudioButton",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
+      "lines": 1063
+    },
+    {
+      "product": "teacher",
+      "component": "FlashcardWordSkeleton",
+      "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+      "composition": [
+        "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx"
+      ],
+      "lines": 72
+    },
+    {
+      "product": "student",
+      "component": "FlashcardWordSkeleton",
+      "path": "src/components/features/portal/FlashcardsV2.tsx",
+      "composition": ["src/components/features/portal/FlashcardsV2.tsx"],
+      "lines": 1063
+    }
+  ]
+}

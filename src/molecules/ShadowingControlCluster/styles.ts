@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-control-cluster',
 })`
@@ -7,11 +8,11 @@ export const Root = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: ${token.spacing4};
 
   @media (max-width: 640px) {
     width: 100%;
-    gap: 1rem;
+    gap: ${token.spacing4};
   }
 
   @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {

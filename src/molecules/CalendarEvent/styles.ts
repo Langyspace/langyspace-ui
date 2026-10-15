@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-calendar-event',
@@ -11,17 +12,17 @@ export const Root = styled(Pressable).withConfig({
   border: 0;
   border-radius: 6px;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: ${token.typographyFontWeightSemibold};
   text-align: left;
-  color: #fff;
-  background: #0a0a0a;
+  color: ${token.colorNeutral0};
+  background: ${token.colorNeutral950};
   &[data-tone='success'] {
-    color: #166534;
-    background: #dcfce7;
+    color: ${token.colorStatusSuccessForeground};
+    background: ${token.colorStatusSuccessBackground};
   }
   &[data-tone='muted'] {
-    color: #6b6b6b;
-    background: #f1f1ef;
+    color: ${token.colorContentMuted};
+    background: ${token.colorNeutral100};
     text-decoration: line-through;
   }
 `

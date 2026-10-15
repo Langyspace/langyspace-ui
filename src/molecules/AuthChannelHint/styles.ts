@@ -1,19 +1,20 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-auth-channel-hint',
 })`
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  margin-top: 1rem;
-  border-radius: 0.75rem;
-  background-color: #fafaf9;
+  gap: ${token.spacing3};
+  margin-top: ${token.spacing4};
+  border-radius: ${token.radiusRounded};
+  background-color: ${token.colorNeutral50};
   padding: 0.75rem 1rem;
-  color: #6b6b6b;
-  font-size: 0.75rem;
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeXs};
   line-height: 1.45;
 
   @media (min-width: 768px) {
-    font-size: 0.875rem;
+    font-size: ${token.typographyFontSizeSm};
   }
 `

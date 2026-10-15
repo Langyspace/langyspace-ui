@@ -1,19 +1,19 @@
-import { tokens } from './tokens'
+import * as token from './tokenValues'
 
 // Geometry mirrors the existing quiz recipe; keep legacy radii/focus local when foundations differ.
 export const quizRecipe = {
-  typography: tokens.typography,
-  spacing: tokens.spacing,
+  typography: token.typography,
+  spacing: token.spacing,
   radius: {
-    xl: tokens.radius.rounded,
+    xl: token.radiusRounded,
     md: '0.375rem',
-    lg: tokens.radius.lg,
+    lg: token.radiusLg,
     circle: '50%',
   },
   colors: {
-    surface: { canvas: tokens.color.neutral[0] },
-    text: { inverse: tokens.color.neutral[0] },
-    feedback: { success: '#16a34a', danger: tokens.color.feedback.danger },
+    surface: { canvas: token.colorNeutral0 },
+    text: { inverse: token.colorNeutral0 },
+    feedback: { success: '#16a34a', danger: token.colorFeedbackDanger },
   },
   shadows: { focus: '0 0 0 3px #00F2EA52' },
   breakpoints: { sm: '640px' },

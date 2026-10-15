@@ -1,8 +1,8 @@
 import { styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 
 export const Accent = styled.span.withConfig({
   componentId: 'lsui-sc-auth-accent',
 })`
-  color: ${tokens.color.accent.default};
+  color: ${token.colorAccentDefault};
 `

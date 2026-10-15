@@ -3,7 +3,7 @@ import {
   actionRecipe,
   actionSizeHeights,
 } from '../../foundations/actions/recipe'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import type { IconButtonStyleProps } from './types'
 
@@ -13,19 +13,19 @@ const intentStyles = {
     &,
     &:active:not(:disabled) {
       border-color: transparent;
-      color: ${tokens.color.feedback.danger};
+      color: ${token.colorFeedbackDanger};
       background-color: transparent;
     }
 
     &:hover:not(:disabled) {
       border-color: transparent;
-      color: ${tokens.color.feedback.dangerStrong};
-      background-color: ${tokens.color.neutral[100]};
+      color: ${token.colorFeedbackDangerStrong};
+      background-color: ${token.colorNeutral100};
     }
   `,
   inverse: css`
     & {
-      border-color: ${tokens.color.inverse.borderSubtle};
+      border-color: ${token.colorInverseBorderSubtle};
     }
   `,
   neutral: css``,

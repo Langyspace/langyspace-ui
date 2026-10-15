@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-flip-hint',
 })`
@@ -8,8 +9,8 @@ export const Root = styled.div.withConfig({
   gap: 0.4375rem;
   padding-top: 0.375rem;
   color: var(--fc-muted-2);
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: ${token.typographyFontSizeXs};
+  font-weight: ${token.typographyFontWeightMedium};
 
   svg {
     opacity: 0.7;

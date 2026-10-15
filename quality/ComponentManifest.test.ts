@@ -75,7 +75,7 @@ describe('public component manifest', () => {
   it('keeps inventoried props and documentation references valid', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      if (!contract.reference) continue
+      expect(contract.reference).toBeDefined()
 
       const { propsPath, documentation, consumers } = contract.reference
       await expect(access(resolve(root, propsPath))).resolves.toBeUndefined()

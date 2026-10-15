@@ -1,5 +1,5 @@
 import { keyframes, styled } from 'styled-components'
-import { tokens } from '../../foundations/tokens'
+import * as token from '../../foundations/tokenValues'
 import { quizRecipe } from '../../foundations/quizRecipe'
 const rise = keyframes`
   from { opacity: 0; transform: translateY(1.875rem); }
@@ -15,8 +15,8 @@ export const CompletionMark = styled.div.withConfig({
   width: 5.25rem;
   height: 5.25rem;
   border-radius: ${quizRecipe.radius.circle};
-  color: ${tokens.color.neutral[0]};
-  background: ${tokens.color.accent.default};
+  color: ${token.colorNeutral0};
+  background: ${token.colorAccentDefault};
   animation: ${rise} 0.32s ease both;
 
   @media (prefers-reduced-motion: reduce) {
