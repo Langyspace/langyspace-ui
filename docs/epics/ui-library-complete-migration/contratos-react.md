@@ -36,7 +36,7 @@ O exemplo ocorre dentro de AuthFrame, cuja estrutura brand/mobileLogo/topAction/
 </PracticeResultPanel>
 ```
 
-O resultado não recebe uma árvore de configuração com title/actions/metrics. É uma composição explícita. Cálculo, persistência e tentativas continuam no controlador do produto. A alteração é feita na versão candidata ainda não publicada; a API oficial1.20.0 não tinha PracticeResultPanel.
+O resultado não recebe uma árvore de configuração com title/actions/metrics. É uma composição explícita. Cálculo, persistência e tentativas continuam no controlador do produto. A composição foi preparada no candidato 1.21.0 e publicada oficialmente em 1.21.1; a API 1.20.0 não tinha PracticeResultPanel.
 
 ```tsx
 <PracticeCard completed={completed} onClick={openSession}>

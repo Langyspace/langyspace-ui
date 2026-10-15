@@ -1,17 +1,15 @@
 # Progresso cumulativo
 
-Famílias01–10 preparadas nos cinco produtos. Decisões dos38 grupos em mapeamento.md, plano-de-migracao.md e residuos.md; exemplos em contratos-react.md. Geometrias verificadas e corrigidas; páginas/controllers/rotas/negócio preservados nos produtos.
+2026-10-15: migração do inventário atual concluída e publicada nos cinco produtos. UI primeiro, oito PRs integrados após aprovação humana das revisões atuais (seis originais e os dois ajustes de Sidebar). [Entrega e evidências de publicação](entrega.md).
 
-UI170 valores,236 tipos,531 declarações; candidato1.21.0, oficial1.20.0. Bundle278416bytes brutos/57981gzip, budgets legados/globais preservados; arquitetura701 fontes, lint, API, Storybook e pacote exato (Node ESM/SSR/bundle consumidor) passaram. Cinco produtos passaram tipos e bundles; Site SSR/prerender passou. Lint Teacher tem2 falhas anteriores nas páginas públicas; nenhuma regra desligada nem falso verde. Música:3 testes focados passaram, mantendo seek/áudio/tempos.
+Os 38 grupos foram classificados como migrados, já compartilhados ou locais por responsabilidade/experiência concreta. Os 49 grupos residuais de CSS têm justificativa em residuos.md; não há candidato elegível pendente nesse inventário. Composição React explícita, sem páginas/controllers na UI nem flags por produto.
 
-Evidências completas dos produtos: student:139, teacher:141, admin:129, site:24, cupom:12. Mais4 pares UI standalone (Avatar/Card e composição de resultado equivalente):449 pares/898 PNGs originais. Sem imagens editadas ou compostas. Identificadores/contatos/nomes Admin são fixtures fictícias; não houve leitura de contas/dados de produção.
+Oficial `@langyspace/ui@1.21.1`, fixada por URL imutável e SHA512 nos cinco consumidores. O runtime é idêntico ao 1.21.0 aprovado; o patch corrige o parser do auditor. Instalações frozen, guards e builds por ambiente passaram. As receitas de botões laterais usam `neutral` existente, com concessão visual aprovada em Student #21/Teacher #47.
 
-Task11 concluída: os cinco manifests e locks usam o mesmo tarball imutável do commit UI2099008102484757abbb6b25cbedb9f1fe33c344, com integridade SHA512 conferida. Cupom declara react-hook-form7.73.1. O pacote remoto respondeu HTTP200 e seus bytes correspondem ao pacote instalado nas verificações.
+449 pares originais mais 38 dos ajustes: 487 pares/974 PNGs. A recaptura de modais usa o viewport real (6 pares, 10 PNGs alterados no conjunto original); não exigiu mudança no backdrop ou runtime.
 
-Task12 concluída: os seis PRs estão abertos e prontos para revisão, com corpos exclusivamente Antes/Depois em tabela. A leitura remota confirmou os heads, os corpos exatos, o estado pronto e a ausência de auto-merge. UI27/Student20/Teacher43 agora contêm a expansão completa; Site5/Admin16/Cupom2 foram criados. Não usar a aprovação antiga R26.
+Staging e produção dos cinco produtos têm recibos e comparação dos bytes servidos. Student passou 3 testes nativos em staging e 2 em produção; Teacher 3 por ambiente. Admin validou 4 rotas, 13 callables e aula sintética em dupla com limpeza; Site/Cupom validaram 390/1440. A promoção dos portais foi protegida pelo SHA anterior exato; branches locais/remotas alinhadas. Modo manual por cobrança, sem execução CI disponível ou status fabricado.
 
-Nenhum merge, tag, release oficial ou deploy desta expansão. Entrega manual com [skip ci]; nenhuma execução de workflow disponível na consulta única por commit. Implementação, evidências e worktrees preservados para a revisão atual. Consulte entrega.md.
+As evidências de preparação de API, tipos, pacote, Storybook, budgets e testes focados continuam válidas para os inputs preservados; limites e dívidas anteriores em validation.md. Todos os worktrees históricos e drafts alheios foram mantidos.
 
-Artefato: sha256 66a81c62de7e41d9fa66b06642d21936fbe98fe5ebc21247d474ce688a548d10;148701bytes; mesma revisão de dist em todos os consumidores. Teacher integrou pré-requisitos já existentes em origin/staging; diff de functions versus origem ficou vazio, snapshot da origem preservado.
-
-2026-10-15: corrigido o modo de captura dos modais após relato da product owner. O backdrop já cobre o viewport; fullPage acrescentava conteúdo fora da janela. Helper compartilhado pelo audit Storybook e harness de evidências usa viewport com aria-modal visível.6 pares recapturados,10 PNGs alterados,443 pares idênticos. Evidências UI/Student/Admin atualizadas; nenhum código de produto, API ou artefato mudou. Revisão humana atual continua pendente. Detalhes em evidence-capture-fix.md.
+Próximo trabalho: apenas nova demanda ou candidato identificado após este inventário; não repetir a migração nem publicar novamente o que já foi conferido.

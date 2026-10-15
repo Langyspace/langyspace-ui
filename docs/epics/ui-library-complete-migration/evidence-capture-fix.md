@@ -24,4 +24,4 @@ São6 pares verificados,10 PNGs substituídos e443 pares restantes inalterados. 
 
 Uma verificação focada no navegador confirmou posição, cobertura nos quatro cantos e dimensões das capturas nos dois produtos e nas duas fontes. O caso sem modal escolher plano1440 preservou fullPage1440×1173. A sintaxe dos scripts foi conferida; nenhum gate amplo ou CI foi monitorado.
 
-Impacto none no runtime: nenhuma mudança em src, contratos, estilos, estado, pagamentos, dependências ou pacote. O candidato imutável20990081 e os cinco locks permanecem válidos. Não houve merge/release/deploy. A migração visual continua aguardando revisão humana de cada PR atual.
+Impacto none no runtime: nenhuma mudança em src, contratos, estilos, estado, pagamentos, dependências ou pacote. O candidato imutável20990081 e os cinco locks permanecem válidos. A revisão dessas capturas foi aprovada pela product owner; a integração e a publicação subsequentes estão registradas em [entrega.md](entrega.md). A correção de captura não alterou o runtime.

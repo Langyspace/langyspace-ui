@@ -1,5 +1,7 @@
 # Plano técnico
 
+Estado atual em 2026-10-15: plano executado, revisões aprovadas, versão oficial 1.21.1 adotada e cinco produtos publicados. Consulte [entrega.md](entrega.md). O texto de preparação abaixo registra a sequência e as condições anteriores.
+
 Baselines e workspaces: workspaces.json local, com todos os SHAs. UI/Student/Teacher continuam nos worktrees R26, sem perder commits/evidência. Site/Admin/Cupom têm feature worktrees sparse próprios a partir das refs remotas atuais. Canônicos e trabalho paralelo não são editados.
 
 Fase1 atualiza inventário AST de imports/exports/dynamic imports, alcançabilidade conservadora desde main e componentes/famílias de estilo. A análise manual confirma os callsites e separa código morto. Os38 grupos históricos recebem decisão atual. Fase2 elimina wrappers locais duplicados usando APIs já disponíveis; fases seguintes extraem famílias completas antes de adotar.

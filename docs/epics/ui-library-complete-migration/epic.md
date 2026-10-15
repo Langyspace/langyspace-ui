@@ -11,3 +11,5 @@ A jornada final mantém conteúdo, navegação, estado, responsividade e ações
 O pedido atual autoriza implementação contínua e preparação de todos os PRs. Não é aprovação visual de revisões ainda inexistentes: preparar tudo antes da parada final para review, preservando a revisão humana por PR e as tabelas Antes/Depois. Modo manual por cobrança permanece. Sem autoaprovação, merge ou deploy durante a preparação.
 
 Concluído quando não há candidato elegível pendente, as adoções de todos os produtos foram verificadas, os contratos são legíveis, a evidência cobre a revisão completa e os PRs estão preparados para revisão final. Preparar PRs não equivale a publicação em produção.
+
+Estado final em 2026-10-15: inventário elegível concluído, revisões atuais aprovadas, UI 1.21.1 oficial e cinco produtos integrados/publicados, com staging e produção conferidos. [Entrega e limites da validação](entrega.md).

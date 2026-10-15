@@ -12,7 +12,10 @@
 - [x] 10 Varredura residual de duplicação e dívida Student
 - [x] 11 Pacote cumulativo e verificações dos cinco consumidores
 - [x] 12 Evidências completas e todos os PRs para review final
+- [x] 13 Aprovações humanas atuais e integração dos oito PRs
+- [x] 14 Release oficial 1.21.1 e pins frozen dos cinco produtos
+- [x] 15 Staging, produção manual, read-back e sincronização dos checkouts
 
 A execução prossegue entre tarefas sem parada por componente. Review humana bloqueia integração, não a preparação das famílias seguintes.
 
-01–12 concluídas no escopo de preparação: fontes, pacote, adoções, verificações, evidências e seis PRs. A integração e a publicação dependem da revisão humana das revisões atuais; não estão incluídas nessa conclusão. Consulte entrega.md para os commits, PRs e próximos passos.
+01–15 concluídas. A revisão humana foi recebida para todas as revisões integradas; os cinco produtos foram publicados e conferidos. Consulte [entrega.md](entrega.md) para commits, aprovações, testes e recibos.
