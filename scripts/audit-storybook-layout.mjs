@@ -1,6 +1,7 @@
 import { mkdir, rm, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { chromium } from 'playwright'
+import { captureVisualEvidence } from './capture-visual-evidence.mjs'
 import {
   auditConfig,
   heightsForStory,
@@ -120,8 +121,7 @@ try {
           if (shouldCapture) {
             const heightSuffix =
               height === auditConfig.height ? '' : `-h${height}`
-            await page.screenshot({
-              fullPage: true,
+            await captureVisualEvidence(page, {
               path: resolve(
                 artifacts,
                 `${story.id}-${motion}-${width}${heightSuffix}.png`,

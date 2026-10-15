@@ -1,6 +1,6 @@
 # Verificação cumulativa
 
-Impacto direto. As telas/estados/widths estão associados às fontes baselines.json e ao manifest de evidências. Fixtures sintéticas, rede externa bloqueada, pt-BR/São Paulo, data fixa2026-10-14, DPR1, reduced motion e PNG original fullPage; estados bottom mostram os trechos roláveis que o fullPage da janela não inclui. Nenhum dado de produção consultado ou publicado. Admin nomes/contatos/IDs/links substituídos na fonte de fixture e revisão de conteúdo, mantendo relações.
+Impacto direto da migração. As telas/estados/widths estão associados às fontes baselines.json e ao manifest de evidências. Fixtures sintéticas, rede externa bloqueada, pt-BR/São Paulo, data fixa2026-10-14, DPR1, reduced motion e PNG original: viewport com modal visível e fullPage nos demais casos. Estados bottom mostram os trechos roláveis internos em capturas separadas. Nenhum dado de produção consultado ou publicado. Admin nomes/contatos/IDs/links substituídos na fonte de fixture e revisão de conteúdo, mantendo relações.
 
 | Checagem           | Evidência e limite                                                                                                                                                                                                  |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -21,3 +21,5 @@ Interações são verificadas localmente com mocks/fixtures: seletores/callbacks
 Dívidas anteriores não bloqueiam descrição honesta: lint Teacher das páginas públicas; quiz Teacher em390x568 tem baseline própria para distinguir limitação antiga de regressão. CI/coverage/full E2E permanecem em seus workflows, sem execução ou monitoramento nesta entrega manual[skip ci]. Regras, provider, OTP backend, billing e Calendar/Meet não foram alterados.
 
 Review humana da revisão atual é necessária por PR. A aprovação de ciclos anteriores não foi transferida para esta expansão. Não há auto-merge, tag, release oficial ou produção dessa migração.
+
+Correção das capturas em2026-10-15: impacto none no produto, somente tooling/evidências/documentação. Recaptura real antes/depois de6 pares, verificação do backdrop fixo nos quatro cantos e de PNGs com altura844px; controle não modal preservou fullPage1440×1173. Sintaxe dos dois scripts conferida. Nenhuma repetição dos builds/testes da migração, pois fontes, API, pacote e dependências permanecem iguais. Consulte evidence-capture-fix.md.

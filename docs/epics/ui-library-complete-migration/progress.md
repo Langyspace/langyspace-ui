@@ -13,3 +13,5 @@ Task12 concluída: os seis PRs estão abertos e prontos para revisão, com corpo
 Nenhum merge, tag, release oficial ou deploy desta expansão. Entrega manual com [skip ci]; nenhuma execução de workflow disponível na consulta única por commit. Implementação, evidências e worktrees preservados para a revisão atual. Consulte entrega.md.
 
 Artefato: sha256 66a81c62de7e41d9fa66b06642d21936fbe98fe5ebc21247d474ce688a548d10;148701bytes; mesma revisão de dist em todos os consumidores. Teacher integrou pré-requisitos já existentes em origin/staging; diff de functions versus origem ficou vazio, snapshot da origem preservado.
+
+2026-10-15: corrigido o modo de captura dos modais após relato da product owner. O backdrop já cobre o viewport; fullPage acrescentava conteúdo fora da janela. Helper compartilhado pelo audit Storybook e harness de evidências usa viewport com aria-modal visível.6 pares recapturados,10 PNGs alterados,443 pares idênticos. Evidências UI/Student/Admin atualizadas; nenhum código de produto, API ou artefato mudou. Revisão humana atual continua pendente. Detalhes em evidence-capture-fix.md.
