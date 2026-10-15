@@ -271,7 +271,7 @@ export async function auditArchitecture(config) {
     }
 
     const packageImports = source.matchAll(
-      /(?:import|export)\s+(?:type\s+)?(?:\{([\s\S]*?)\}|[^'"]+)\s+from\s+['"]@langyspace\/ui['"]/g,
+      /(?:import|export)\s+(?:type\s+)?(?:\{([^{}]*?)\}|[^'"{};]+)\s+from\s+['"]@langyspace\/ui['"]/g,
     )
     for (const match of packageImports) {
       if (

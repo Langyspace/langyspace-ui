@@ -54,6 +54,16 @@ export type CosmeticProps = { color?: string }
     "import { Higher } from '../molecules/Higher'\nexport const brokenInternal = Higher\n",
   )
 
+  await writeFile(
+    join(root, 'src', 'molecules', 'LocalButton.ts'),
+    `import { Button as LocalButton } from '@/components/base/Button'
+import styled from 'styled-components'
+const Surface = styled.div\`display: grid;\`
+import { Card } from '@langyspace/ui'
+export const composition = [LocalButton, Surface, Card]
+`,
+  )
+
   const result = await auditArchitecture(
     defineAuditConfig({
       root,
@@ -80,6 +90,7 @@ export type CosmeticProps = { color?: string }
     }),
   )
   const output = result.failures.join('\n')
+  assert.doesNotMatch(output, /\[LSUI005\] src\/molecules\/LocalButton\.ts:/)
 
   for (const expected of [
     'local wait spinner',
