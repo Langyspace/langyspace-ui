@@ -13,6 +13,11 @@ import {
   FlashcardStage,
   FlashcardWord,
   PracticePlaybackControls,
+  PracticeResultPanel,
+  PracticeResultMark,
+  PracticeResultTitle,
+  PracticeResultDescription,
+  PracticeResultActions,
   ShadowingActivePhrase,
   ShadowingControlDock,
   ShadowingPanel,
@@ -163,6 +168,48 @@ export function BoundedShadowingExample({
           onTranslationToggle={() => setTranslation(!translation)}
         />
       </ShadowingControlDock>
+    </ShadowingPanel>
+  )
+}
+
+export function BoundedCompletionExample() {
+  return (
+    <FlashcardFrame style={{ height: 'calc(100svh - 9rem)' }}>
+      <header>
+        <Button>Voltar</Button>
+      </header>
+      <PracticeResultPanel>
+        <PracticeResultMark />
+        <PracticeResultTitle>Sessão concluída!</PracticeResultTitle>
+        <PracticeResultDescription>
+          Você revisou todos os cartões desta sessão.
+        </PracticeResultDescription>
+        <PracticeResultActions>
+          <Button>Refazer sessão</Button>
+          <Button variant="secondary">Voltar para lições</Button>
+        </PracticeResultActions>
+      </PracticeResultPanel>
+    </FlashcardFrame>
+  )
+}
+
+export function ShadowingCompletionExample() {
+  return (
+    <ShadowingPanel style={{ height: 'calc(100svh - 9rem)' }}>
+      <header>
+        <Button>Voltar</Button>
+      </header>
+      <PracticeResultPanel>
+        <PracticeResultMark />
+        <PracticeResultTitle>Sessão concluída!</PracticeResultTitle>
+        <PracticeResultDescription>
+          Você revisou todos os cartões desta sessão.
+        </PracticeResultDescription>
+        <PracticeResultActions>
+          <Button>Refazer sessão</Button>
+          <Button variant="secondary">Voltar para lições</Button>
+        </PracticeResultActions>
+      </PracticeResultPanel>
     </ShadowingPanel>
   )
 }

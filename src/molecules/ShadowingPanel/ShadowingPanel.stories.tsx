@@ -1,6 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ShadowingPanel } from '.'
-import { BoundedShadowingExample } from '../../../.storybook/compact-practice-fixtures'
+import {
+  BoundedShadowingExample,
+  ShadowingCompletionExample,
+} from '../../../.storybook/compact-practice-fixtures'
 const meta = {
   title: 'Molecules/ShadowingPanel',
   component: ShadowingPanel,
@@ -12,4 +15,8 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {}
 export const LongContent: Story = {
   render: () => <BoundedShadowingExample longContent />,
+}
+
+export const Completed: Story = {
+  render: () => <ShadowingCompletionExample />,
 }

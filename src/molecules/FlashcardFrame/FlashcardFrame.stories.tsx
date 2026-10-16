@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import { BoundedFlashcardExample } from '../../../.storybook/compact-practice-fixtures'
+import {
+  BoundedFlashcardExample,
+  BoundedCompletionExample,
+} from '../../../.storybook/compact-practice-fixtures'
 import { FlashcardFrame } from '.'
 import { FlashcardSessionExample } from '../../../.storybook/flashcard-fixtures'
 const meta = {
@@ -20,4 +23,8 @@ export const LimitedHeight: Story = {
 }
 export const LongContent: Story = {
   render: () => <BoundedFlashcardExample longContent />,
+}
+
+export const Completed: Story = {
+  render: () => <BoundedCompletionExample />,
 }

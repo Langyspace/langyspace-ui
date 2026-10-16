@@ -21,6 +21,8 @@
 
 ## Comparabilidade e cobertura
 
+A revisão reúne 222 pares Antes/Depois e 42 imagens de stories novas: 486 PNGs originais. Teacher possui 80 pares, Student 72, Admin 10 e UI 60 pares mais 42 imagens novas.
+
 `evidence-manifest.json` registra PNGs originais, viewport, rota, baseline, SHA256 dos arquivos e candidato. As imagens de leitura longa incluem a mesma tentativa de rolagem na baseline; quando ela não consegue deslocar o conteúdo antigo, a imagem registra esse resultado real. Stories novas são identificadas sem inventar um Antes.
 
 Capturas usam Chromium, tema atual, dados sintéticos estáveis e viewport igual nas duas fases. Modais usam screenshot do viewport. Não foram usados dados, contas ou mutações de produção. Site/Cupom continuam pinados em sua versão anterior, sem adoção neste lote.
@@ -29,6 +31,6 @@ As imagens não certificam Safari, hardware móvel, teclado virtual ou leitores 
 
 Visual gate review: pending human
 
-## Reuso focal da revisão final
+## Revisão do candidato atual
 
-A última diferença compilada é apenas `align-self: start` em FlashcardImagePanel sob `(min-width: 640px) and (max-width: 900px) and (max-height: 500px)`. Todas as imagens 844×390 foram refeitas. As imagens em 390/768/1440 px preservam sua proveniência anterior e têm CSS efetivo inalterado por essa regra. `runtime-delta-proof.json` contém os dois hashes e a inserção exata; o manifesto diferencia o runtime capturado do candidato validado. As imagens da UI usam o código-fonte das stories correspondente ao mesmo runtime.
+Todas as capturas Depois da UI, Teacher e Student foram refeitas com o candidato atual, incluindo as conclusões de flashcards, shadowing e música. O manifesto vincula cada imagem ao hash do runtime. As conclusões mantêm uma coluna e permitem alcançar as ações por rolagem em telas baixas; apenas as sessões com Stage/Reader usam a grade compacta. Stories novas de conclusão têm identificação explícita de ausência de versão anterior; os produtos possuem comparação real.

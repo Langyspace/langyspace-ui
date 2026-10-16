@@ -41,13 +41,16 @@ const stories = [
   'molecules-togglebutton--disabled',
   'molecules-flashcardframe--limited-height',
   'molecules-flashcardframe--long-content',
+  'molecules-flashcardframe--completed',
   'molecules-shadowingpanel--default',
   'molecules-shadowingpanel--long-content',
+  'molecules-shadowingpanel--completed',
 ]
 try {
   for (const id of stories) {
     if (!index.entries[id] || (requested.size && !requested.has(id))) continue
-    const composed = /limited-height|long-content|shadowingpanel/.test(id)
+    const composed =
+      /limited-height|long-content|shadowingpanel|completed/.test(id)
     const sizes = composed
       ? [
           [390, 568],
@@ -103,7 +106,11 @@ try {
           record.images.push(file)
         }
         await capture('')
-        if (composed && id.includes('flashcardframe')) {
+        if (
+          composed &&
+          id.includes('flashcardframe') &&
+          !id.endsWith('--completed')
+        ) {
           const front = page.locator('.lsui-sc-flashcard-front')
           record.frontScroll = await front.evaluate((e) => ({
             height: e.clientHeight,
@@ -133,6 +140,25 @@ try {
             })
           }
         }
+        if (id.endsWith('--completed')) {
+          const frame = page.locator(
+            '.lsui-sc-flashcard-frame, .lsui-sc-shadowing-panel',
+          )
+          assert.equal(
+            await frame.evaluate((e) => getComputedStyle(e).display),
+            'flex',
+          )
+          await frame.hover()
+          await page.mouse.wheel(0, 1200)
+          await page.waitForTimeout(150)
+          await page
+            .getByRole('button', { name: 'Refazer sessão', exact: true })
+            .click({ trial: true })
+          await page
+            .getByRole('button', { name: 'Voltar para lições', exact: true })
+            .click({ trial: true })
+          await capture('-completion-end')
+        }
         if (id.includes('togglebutton')) {
           const button = page.getByRole('button')
           record.rest = await button.evaluate((e) => ({
@@ -155,7 +181,11 @@ try {
             await capture('-focus')
           }
         }
-        if (composed && id.includes('flashcardframe')) {
+        if (
+          composed &&
+          id.includes('flashcardframe') &&
+          !id.endsWith('--completed')
+        ) {
           await page
             .getByRole('button', { name: 'Virar cartão', exact: true })
             .click()
@@ -187,7 +217,11 @@ try {
             .getByRole('button', { name: 'Virar cartão', exact: true })
             .waitFor()
         }
-        if (composed && id.includes('shadowingpanel')) {
+        if (
+          composed &&
+          id.includes('shadowingpanel') &&
+          !id.endsWith('--completed')
+        ) {
           for (const name of ['Tocar frase', 'Tradução', '0.5x'])
             await page
               .getByRole('button', { name, exact: true })
