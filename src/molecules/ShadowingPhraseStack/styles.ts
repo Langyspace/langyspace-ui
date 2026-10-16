@@ -15,6 +15,7 @@ export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-phrase-stack',
 })<{ $rising?: boolean }>`
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   align-items: center;
   gap: ${token.spacing3};

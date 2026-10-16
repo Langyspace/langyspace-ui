@@ -13,3 +13,9 @@ export const Default: Story = {}
 export const Unselected: Story = { args: { 'aria-pressed': false } }
 
 export const Disabled: Story = { args: { disabled: true } }
+
+export const Focused: Story = {
+  play: ({ canvasElement }) => {
+    canvasElement.querySelector('button')?.focus()
+  },
+}

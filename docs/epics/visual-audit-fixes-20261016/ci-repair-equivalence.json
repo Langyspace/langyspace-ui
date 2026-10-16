@@ -1,0 +1,40 @@
+{
+  "scope": "Recompiled selectors and distribution output only; current portal captures compared to authorized PNGs.",
+  "source": {
+    "runtimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+    "sourceDigest": "68069b45604c93c1792a3e6e61f45c3118aab4435c32edce16c2fc209fae0742",
+    "policy": "All affected UI, Teacher and Student after images refreshed for the current candidate, including completed sessions."
+  },
+  "compared": 254,
+  "allByteIdentical": false,
+  "changes": [
+    {
+      "group": "student",
+      "image": ".github/evidence/visual-fixes-20261016/student/after/flash-front-1440.png"
+    },
+    {
+      "group": "student",
+      "image": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-1440.png"
+    }
+  ],
+  "pixelAnalysis": [
+    {
+      "stem": "flash-front-1440",
+      "width": 1440,
+      "height": 1000,
+      "count": 27,
+      "bbox": [344, 56, 1264, 107],
+      "maxDelta": 2
+    },
+    {
+      "stem": "shadow-hidden-1440",
+      "width": 1440,
+      "height": 1000,
+      "count": 27,
+      "bbox": [344, 56, 1264, 107],
+      "maxDelta": 2
+    }
+  ],
+  "sameRenderedComposition": true,
+  "explanation": "252 PNGs byte-identical. Two Student desktop captures differ by 27 pixels each, at most 2/255 per channel, only in the unchanged payment-banner edge (y56-107). Study components and layout are pixel-identical. Compiler region comments and DOM composition markers do not introduce visual edits."
+}

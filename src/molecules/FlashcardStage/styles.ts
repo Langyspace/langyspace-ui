@@ -15,4 +15,10 @@ export const Root = styled.div.withConfig({
   @media (max-width: 900px) {
     flex: 1 1 auto;
   }
+
+  @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 0;
+  }
 `

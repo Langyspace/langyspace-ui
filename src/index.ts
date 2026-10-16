@@ -586,3 +586,6 @@ export type { FlashcardAudioButtonProps } from './molecules/FlashcardAudioButton
 
 export { FlashcardWordSkeleton } from './molecules/FlashcardWordSkeleton'
 export type { FlashcardWordSkeletonProps } from './molecules/FlashcardWordSkeleton/types'
+
+export { ShadowingPanel } from './molecules/ShadowingPanel'
+export type { ShadowingPanelProps } from './molecules/ShadowingPanel/types'

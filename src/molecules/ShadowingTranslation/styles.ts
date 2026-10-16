@@ -4,6 +4,7 @@ export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-translation',
 })`
   display: flex;
+  flex-shrink: 0;
   width: 100%;
   min-height: 1.75rem;
   align-items: center;
