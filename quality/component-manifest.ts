@@ -1602,6 +1602,42 @@ export const publicComponentContracts = [
   },
   {
     browserSmoke: complete,
+    exportName: 'ShadowingPanel',
+    interactive: false,
+    layer: 'molecule',
+    ownerPath: 'src/molecules/ShadowingPanel/index.tsx',
+    runtimeMarker: 'lsui-sc-shadowing-panel',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'src/molecules/ShadowingPanel/ShadowingPanel.stories.tsx',
+      title: 'Molecules/ShadowingPanel',
+    },
+    test: {
+      status: 'complete',
+      path: 'src/molecules/ShadowingPanel/ShadowingPanel.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/molecules/ShadowingPanel/types.ts',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'shadowingpanel',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ShadowingReader',
     interactive: false,
     layer: 'molecule',

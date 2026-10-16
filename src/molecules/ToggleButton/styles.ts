@@ -19,7 +19,7 @@ export const Root = styled(Pressable).withConfig({
     box-shadow 200ms cubic-bezier(0.2, 0, 0, 1),
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
-  &:hover:not(:disabled) {
+  &:hover:not(:disabled):not([aria-pressed='true']) {
     border-color: ${token.colorSurfaceBorderStrong};
     color: ${token.colorContentDefault};
   }

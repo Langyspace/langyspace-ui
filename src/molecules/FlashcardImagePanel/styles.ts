@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import * as token from '../../foundations/tokenValues'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-image-panel',
 })`
@@ -7,7 +8,8 @@ export const Root = styled.div.withConfig({
   width: var(--fc-image-panel-width);
   max-width: 100%;
   height: var(--fc-image-panel-height);
-  flex-shrink: 0;
+  min-height: calc(2.75rem + ${token.spacing6});
+  flex-shrink: 1;
   align-items: center;
   align-self: center;
   justify-content: center;
@@ -15,6 +17,10 @@ export const Root = styled.div.withConfig({
   border: 1px solid var(--fc-line);
   border-radius: 1rem;
   background: linear-gradient(135deg, var(--fc-pink-tint) 0%, #ffffff 100%);
+
+  @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
+    align-self: start;
+  }
 
   &::after {
     position: absolute;

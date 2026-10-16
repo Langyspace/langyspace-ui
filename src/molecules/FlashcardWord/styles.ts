@@ -10,6 +10,8 @@ export const Root = styled.div.withConfig({
 export const Word = styled.div.withConfig({
   componentId: 'lsui-sc-flashcardword-word',
 })`
+  max-width: 100%;
+  overflow-wrap: anywhere;
   color: var(--fc-ink);
   font-size: var(--fc-word-font-size);
   font-weight: ${token.typographyFontWeightBold};

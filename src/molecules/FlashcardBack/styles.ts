@@ -7,12 +7,15 @@ export const Root = styled.div.withConfig({
   z-index: 2;
   display: flex;
   height: 100%;
+  min-height: 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: safe center;
   gap: ${token.spacing3};
   padding: var(--fc-back-padding);
   text-align: center;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
 `
 
 export const Term = styled.div.withConfig({

@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
 import * as token from '../../foundations/tokenValues'
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-flashcard-frame',
@@ -55,4 +56,22 @@ export const Root = styled.section.withConfig({
   --fc-word-zone-offset-y: 0;
   --fc-word-font-size: 2.125rem;
   --fc-back-translation-size: 1.6875rem;
+
+  ${compactPracticeLayout}
+
+  @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
+    width: min(100%, 44rem);
+    --fc-footer-min-height: 0;
+    --fc-front-padding: ${token.spacing3};
+    --fc-back-padding: ${token.spacing3};
+    --fc-image-panel-height: clamp(4rem, 20svh, 7rem);
+    --fc-word-font-size: ${token.typographyFontSize2xl};
+
+    > footer {
+      min-height: 0;
+      grid-column: 2;
+      grid-row: 2;
+      justify-content: center;
+    }
+  }
 `

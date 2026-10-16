@@ -587,3 +587,17 @@ Placeholder da anatomia de palavra/fonetica nos dois produtos.
 Contrato: atributos/ref de div; sem children, role ou tabIndex. aria-hidden interno.
 
 Cuidados: inserir no Front durante pre-carregamento. O produto mantem status/saida/erros; UI compartilha apenas o layout privado de Word e o Skeleton existente. Dimensoes preservadas, cinza do Student padronizado conforme tasks/09-2-word-skeleton.md.
+
+## ShadowingPanel
+
+Painel de prática de fala/música, composto com um `header`, `ShadowingReader` e `ShadowingControlDock` como filhos diretos. Recebe somente atributos nativos de `div`; o produto controla dados, reprodução, tradução e progresso. O container fornece a altura disponível no shell mobile. Em viewport largo e baixo (640–900 px e até 500 px de altura), mantém cabeçalho acima, leitor à esquerda e controles à direita. O leitor rola conteúdo longo sem deslocar as ações. Em retrato e desktop mantém composição vertical.
+
+```tsx
+<ShadowingPanel>
+  <header>{sessionNavigation}</header>
+  <ShadowingReader>{phrasesAndTranslation}</ShadowingReader>
+  <ShadowingControlDock>{playbackControls}</ShadowingControlDock>
+</ShadowingPanel>
+```
+
+FlashcardFrame segue a mesma distribuição compacta com `header`, `FlashcardStage` e `footer` diretos. A altura do frame deve vir do espaço disponível; FlashcardDeck limita o cartão a esse espaço. Frente/verso preservam rolagem de conteúdo quando necessário.

@@ -137,15 +137,17 @@ export function FlashcardSessionExample({
           </FlashcardFlip>
         </FlashcardDeck>
       </FlashcardStage>
-      {flipped ? (
-        <Button ref={rating} onClick={() => setFlipped(false)}>
-          Próximo cartão
-        </Button>
-      ) : (
-        <FlashcardFlipHint>
-          Toque no cartão para ver a tradução
-        </FlashcardFlipHint>
-      )}
+      <footer style={{ display: 'flex', flexDirection: 'column' }}>
+        {flipped ? (
+          <Button ref={rating} onClick={() => setFlipped(false)}>
+            Próximo cartão
+          </Button>
+        ) : (
+          <FlashcardFlipHint>
+            Toque no cartão para ver a tradução
+          </FlashcardFlipHint>
+        )}
+      </footer>
     </>
   )
 }

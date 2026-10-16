@@ -20,6 +20,10 @@ export const ControlCluster = styled.div.withConfig({
   @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
     width: min(28rem, 100%);
   }
+
+  @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
+    gap: ${playbackRecipe.spacing[2]};
+  }
 `
 
 export const PlaybackControls = styled.div<{ $withSkip?: boolean }>`

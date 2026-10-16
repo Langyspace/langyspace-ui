@@ -115,6 +115,7 @@ const {
   ChoiceCard,
   Skeleton,
   ShadowingReader,
+  ShadowingPanel,
   ShadowingPhraseStack,
   ShadowingContextPhrase,
   ShadowingActivePhrase,
@@ -333,6 +334,7 @@ try {
         createElement(ChoiceCard, null, 'ChoiceCard SSR'),
         createElement(Skeleton, { style: { width: 120, height: 16 } }),
         createElement(ShadowingReader, null, 'ShadowingReader SSR'),
+        createElement(ShadowingPanel, null, 'ShadowingPanel SSR'),
         createElement(ShadowingPhraseStack, null, 'ShadowingPhraseStack SSR'),
         createElement(
           ShadowingContextPhrase,
@@ -787,6 +789,7 @@ for (const componentId of [
   'lsui-sc-shadowing-context-phrase',
   'lsui-sc-shadowing-phrase-stack',
   'lsui-sc-shadowing-reader',
+  'lsui-sc-shadowing-panel',
   'lsui-sc-skeleton',
   'lsui-sc-choice-card',
   'lsui-sc-toggle-button',
