@@ -89,7 +89,7 @@ try {
           .locator('#storybook-root > *')
           .first()
           .waitFor({ timeout: 30000 })
-        await page.evaluate(() => document.fonts.ready)
+        await page.evaluate(() => globalThis.document.fonts.ready)
         await page.waitForTimeout(200)
         assert.equal(
           await page.locator('#error-message:visible').count(),
@@ -128,7 +128,7 @@ try {
                 return {
                   rect: r.toJSON(),
                   hit: e.contains(
-                    document.elementFromPoint(
+                    globalThis.document.elementFromPoint(
                       r.x + r.width / 2,
                       r.y + r.height / 2,
                     ),
@@ -145,7 +145,7 @@ try {
             '.lsui-sc-flashcard-frame, .lsui-sc-shadowing-panel',
           )
           assert.equal(
-            await frame.evaluate((e) => getComputedStyle(e).display),
+            await frame.evaluate((e) => globalThis.getComputedStyle(e).display),
             'flex',
           )
           await frame.hover()
@@ -162,15 +162,15 @@ try {
         if (id.includes('togglebutton')) {
           const button = page.getByRole('button')
           record.rest = await button.evaluate((e) => ({
-            color: getComputedStyle(e).color,
-            background: getComputedStyle(e).backgroundColor,
+            color: globalThis.getComputedStyle(e).color,
+            background: globalThis.getComputedStyle(e).backgroundColor,
           }))
           await button.hover({ force: true })
           await page.waitForTimeout(170)
           record.hover = await button.evaluate((e) => ({
             pressed: e.getAttribute('aria-pressed'),
-            color: getComputedStyle(e).color,
-            background: getComputedStyle(e).backgroundColor,
+            color: globalThis.getComputedStyle(e).color,
+            background: globalThis.getComputedStyle(e).backgroundColor,
           }))
           if (phase === 'after' && id.endsWith('--default'))
             assert.equal(record.hover.color, record.rest.color)
@@ -198,7 +198,7 @@ try {
                 label: e.getAttribute('aria-label'),
                 rect: r.toJSON(),
                 hit: e.contains(
-                  document.elementFromPoint(
+                  globalThis.document.elementFromPoint(
                     r.x + r.width / 2,
                     r.y + r.height / 2,
                   ),

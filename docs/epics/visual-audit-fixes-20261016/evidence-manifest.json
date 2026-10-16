@@ -4,12 +4,12 @@
     "version": "2.1.0",
     "status": "immutable review candidate; not official release",
     "baseline": "2529fa969568d64861be44925a0b33a48fece82f",
-    "artifactPath": ".github/artifacts/langyspace-ui-2.1.0-9766f448af49a71c.tgz",
-    "sha256": "9766f448af49a71cfa6081974fc068f8ba5e0d7bee0ebee09be9cb3a60adb134",
-    "integrity": "sha512-lffh+q1jWd3nho1z/BWVvWcVngmPW8BksNISmKYlH3+x49STPovPfdRhH4vVcKCQb0SXFRyL7+x0n5B4VPtRQQ==",
-    "distSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-    "runtimeSourceDigest": "e8f8e13d0422319fb02d73d172a5e8eccf8cf6bbf13b7e28879ef06a4d29aa1e",
-    "bytes": 182819
+    "artifactPath": ".github/artifacts/langyspace-ui-2.1.0-c714e52b0712f54e.tgz",
+    "sha256": "c714e52b0712f54ee0b181e78e71f2eb8a8dd629b3f9e6074442026c8fd31066",
+    "integrity": "sha512-r08ltUtM+UREziJShEg/lBTf8aDWy/NpsnUNYkkhxGpejYLt0p1nTePXHA+s1/yBLBwK6nbsSJnaX5Tscyf6rw==",
+    "distSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+    "runtimeSourceDigest": "68069b45604c93c1792a3e6e61f45c3118aab4435c32edce16c2fc209fae0742",
+    "bytes": 180331
   },
   "baselines": {
     "ui": {
@@ -41,8 +41,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--default-390-844.png",
       "beforeSha256": "022f6c6390ee5d0233414fac12ac6f3b7736f4b0734b1f7cee4ad64c4e4e52c6",
       "afterSha256": "afc5f86c9d2a70c37946c0fe7c0f19eeddbffb9870b66eee2bb1d43814b150a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -55,8 +55,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--default-844-390.png",
       "beforeSha256": "cc9c51aacfa13f2a1dac44eb7a7fd8d4b6be1ff2f688ca563bda50921c7e3b28",
       "afterSha256": "c7339dbdc8adbb13f12d76edad3ba7d19388aa8467561f37384123ab287cf632",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -69,8 +69,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--default-1440-1000.png",
       "beforeSha256": "b594dd87938ebe7c419c088aaecd3bcd03bee0415e042f0854065bcfa626f6a4",
       "afterSha256": "de3cba4e49bb07817e71ee4c27dd5a2beca7caf335b4fe4f6c52fc0f55fc85c8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -83,8 +83,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardstage--default-390-844.png",
       "beforeSha256": "c46034b4c1817faad52c63389c721cbb782706c8dcd2b8f9ba26d1d33b0735e8",
       "afterSha256": "08911b9988b3332a8c5b11ede8bb010d814b0d9c9ffb6f15b06e0b2f069cdae5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -97,8 +97,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardstage--default-844-390.png",
       "beforeSha256": "64424162b26d6bb9baa6fb55e8a517bcaf2ebfea0233d80175636d6f4ce3cd03",
       "afterSha256": "136439dcadd48b38051eea789e3540a167bfd7adb0a82867d1c33abcd1fb39db",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -111,8 +111,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardstage--default-1440-1000.png",
       "beforeSha256": "e368e81afda217f19679ea38eddf5864fe19b021d56bdea1f0e6e124101324e7",
       "afterSha256": "09b2211f748af5ac147a829b886bd1acaef46404649b3461a707854442b63629",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -125,8 +125,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcarddeck--default-390-844.png",
       "beforeSha256": "10f4389c2f417e86437f08557e76c885e69ff0f6882c2e92d3f184b6e0638b86",
       "afterSha256": "239864376a5fe8479d0be9c305b7e83753b7bdf978adccc84af869168062956e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -139,8 +139,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcarddeck--default-844-390.png",
       "beforeSha256": "4a937134b5d5c32cce9ee5016543feffe73775d1f69fe98c72a71f23584dd293",
       "afterSha256": "d24a9cffaa503fd61ab32c6e68c7c9c2fd9a49aa751b9f00c6c8401936a3068a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -153,8 +153,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcarddeck--default-1440-1000.png",
       "beforeSha256": "bad64930d8adbb7805075efd5be5e93940e8d921c05162ed38717c44ee4ad846",
       "afterSha256": "06435a8be2d2cf02015f063e07d5827c854564a3530b353e8c8ffa27949abe80",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -167,8 +167,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardfront--default-390-844.png",
       "beforeSha256": "f1f2c3247a81946909eb2f5ce93f3855e069d3b521385c676e9e806ef5fa41e0",
       "afterSha256": "74fbc5b36aa0d655c8a97f4f7620020eb59ca4ec2b387c5149be82cfc82ed668",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -181,8 +181,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardfront--default-844-390.png",
       "beforeSha256": "8b87adbacc9a2801b5eecd978944909fbeb8be136141cd0e0411d3277e431f4e",
       "afterSha256": "ed425314ed0111cf4e41b3f83899122fe9d7e529124fe33f559f478210938e8e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -195,8 +195,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardfront--default-1440-1000.png",
       "beforeSha256": "a5ddca2bc5af564ba71a3b78656233e8c4aa603e488e49e7177e86dd39b720a9",
       "afterSha256": "e97cfa2d4b261d77131d3626713419f16f3355001ac33dfe5cc77034074a6cbb",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -209,8 +209,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardback--default-390-844.png",
       "beforeSha256": "da144c876f29d2f008adfb75bab125d4970ccc1a9a5aac568ed024f3a9b25d6e",
       "afterSha256": "95b24246e107f4f89b420566daf9727c680bb6d3688173bec371b7038833c790",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -223,8 +223,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardback--default-844-390.png",
       "beforeSha256": "6e8df4f8f169a229b70d7d4b60e4401f2b0438532aa825c21e376fc5998dd990",
       "afterSha256": "7b2d72500f91fa7a1a3744a380f5eec5bfcf6eb20489d19c3dede50aedef283d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -237,8 +237,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardback--default-1440-1000.png",
       "beforeSha256": "e295ce2de1b3c278f2b8acd1088e59107218ad57f6b76ebb69d78824e3186cb1",
       "afterSha256": "5f32b10a668c0e8813d142311721efe5f50f8df3aed057c14c43ec7fd635dff1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -251,8 +251,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardword--default-390-844.png",
       "beforeSha256": "6fe03b94bf1427f320c9577285e3f0ce59a35d7b8e9dec85daf12381272e21f9",
       "afterSha256": "9ec380f799d05c0de264b419bc50236cbff0d9292fb73b41bc9a56c0ebc4ac0c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -265,8 +265,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardword--default-844-390.png",
       "beforeSha256": "6d2d87e949f40104a39b981af586b535e8ed4fc95644a8e5d83a397a2526805e",
       "afterSha256": "9e18e653e142019ecbb6ba4b1d3a2a56e8b4617aff895c3049454b5a810639fa",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -279,8 +279,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardword--default-1440-1000.png",
       "beforeSha256": "62c4c7343b5059252690483a35cc630a1496360c5407d787d20176f3ee7f6dc1",
       "afterSha256": "47a573da084c367931e7233661be81457c75d9f1ee4076931263e2fe36283197",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -293,8 +293,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingreader--default-390-844.png",
       "beforeSha256": "a85eab80f56ee608feb7b750b6fad41d89f70efd943620f5dd25399d01489cd6",
       "afterSha256": "3a06716bcd86b027eeca8d21d9a2c94fc101ed374c703cd40405d3da9f7985ca",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -307,8 +307,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingreader--default-844-390.png",
       "beforeSha256": "0ae5c4a219d01dd6c44e68c7f27578c6bd11e85bb5c2ce9dc30452a5d9a87f16",
       "afterSha256": "4b0250a549a0a9c39bad2125fc2f7c743e473360fa6f377d4f9abb2574b6b80c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -321,8 +321,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingreader--default-1440-1000.png",
       "beforeSha256": "b8de354c8d9f61844961836ad0ae680378c8aeb982e86a0cb5de60e00b993ffc",
       "afterSha256": "a1f6a59823cfd30ad22bf337f81aaecb7be89e73b94a24d816c17208e52f227f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -335,8 +335,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingphrasestack--default-390-844.png",
       "beforeSha256": "20ac3968c9714db3104f9944dd588886910e4aef4dde3b870ad7771a225253c0",
       "afterSha256": "20ac3968c9714db3104f9944dd588886910e4aef4dde3b870ad7771a225253c0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -349,8 +349,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingphrasestack--default-844-390.png",
       "beforeSha256": "714fccb417dca602a848cf0734ba8053ab10c8195dcb81c7f9351dd85df83749",
       "afterSha256": "714fccb417dca602a848cf0734ba8053ab10c8195dcb81c7f9351dd85df83749",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -363,8 +363,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingphrasestack--default-1440-1000.png",
       "beforeSha256": "86001314a0f2e91de304e3b98753285da36ed2f6876d9a3e09214ea6bcbeeed9",
       "afterSha256": "86001314a0f2e91de304e3b98753285da36ed2f6876d9a3e09214ea6bcbeeed9",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -377,8 +377,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingtranslation--default-390-844.png",
       "beforeSha256": "3028f89ac7d9082547b583f4a4348b0f19814c740577930660b69ac8bb83cc9a",
       "afterSha256": "3028f89ac7d9082547b583f4a4348b0f19814c740577930660b69ac8bb83cc9a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -391,8 +391,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingtranslation--default-844-390.png",
       "beforeSha256": "0ccf555553b603f8b1022cf90c50cf1ef90e6362186f4f3bd37c9922a545f91e",
       "afterSha256": "0ccf555553b603f8b1022cf90c50cf1ef90e6362186f4f3bd37c9922a545f91e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -405,8 +405,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingtranslation--default-1440-1000.png",
       "beforeSha256": "53faa4d969735a1f2e8f457f075d0e21a28df946277c901dc82c9602d4a9621b",
       "afterSha256": "53faa4d969735a1f2e8f457f075d0e21a28df946277c901dc82c9602d4a9621b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -419,8 +419,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingcontroldock--default-390-844.png",
       "beforeSha256": "84d3e936045bd334b99f6e4d1c4b7cac28b7799426eb4ab586d981f0b69732e2",
       "afterSha256": "84d3e936045bd334b99f6e4d1c4b7cac28b7799426eb4ab586d981f0b69732e2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -433,8 +433,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingcontroldock--default-844-390.png",
       "beforeSha256": "c7ff7015016f9dbf571d761d4e15900bb80875320b78a0c12428b78dad965974",
       "afterSha256": "5f17caf6886dcc19bb252aa62e4a799b858195a85baf8c0be1379852878a9430",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -447,8 +447,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingcontroldock--default-1440-1000.png",
       "beforeSha256": "247cd66483c2d8d905730e548879cf8da4d6b9acbe1a7f66ebf5b740db6e6548",
       "afterSha256": "247cd66483c2d8d905730e548879cf8da4d6b9acbe1a7f66ebf5b740db6e6548",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -461,8 +461,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--flipped-390-844.png",
       "beforeSha256": "faccf03d6cf83ba23d1d0f39d77d260d27db9fc101f2e3823fd0979c4ffb47af",
       "afterSha256": "d57791f3aec4d04e6dae9116cd1c4f5f90441aa9afeb9e99e5647d21874c1bbd",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -475,8 +475,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--flipped-844-390.png",
       "beforeSha256": "7531cfc768dc32c212b12d8087c000f877dc9f202956663ace655c03b64c4080",
       "afterSha256": "36f141da2738d9c6dfca701f176af9ff043ebf183d6ac5812fee3a077c8fd684",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -489,8 +489,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--flipped-1440-1000.png",
       "beforeSha256": "118979bc548bf2e05b7f20486914530219ac8b6bf8e6f2b25d2e683987be5eae",
       "afterSha256": "be77c452fdade117f527c452eb51e590268058bc0abab0facfd22a03b0764707",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -503,8 +503,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-390-844.png",
       "beforeSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
       "afterSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -517,8 +517,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-390-844-hover.png",
       "beforeSha256": "a613d9bfc4b0d94bdae6d5bdf70d7b05df9e53112001cb1128ff2b63644d2618",
       "afterSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -531,8 +531,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-390-844-focus.png",
       "beforeSha256": "82265779c7e2249fc820d332c50cda8a1a6fc4571738d573091cfedd4e8e32d2",
       "afterSha256": "e7a6585b7af7c53872905c95e7c7b81c4aef6b3ead150b1a9b3df377858f330a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -545,8 +545,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-844-390.png",
       "beforeSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
       "afterSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -559,8 +559,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-844-390-hover.png",
       "beforeSha256": "47d8010211e39f76b1551cd16f84bbc15862b6d6100aaeb3ce443c97a37c5b58",
       "afterSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -573,8 +573,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-844-390-focus.png",
       "beforeSha256": "92bebd2d4b75f310d131a3833ea99a236ffe51e668b8e2f8ffee10d888ddcd88",
       "afterSha256": "2555e58dd9c4544fda41ded8a413e1a14f0514cea29680224a3a0e7860f4de44",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -587,8 +587,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-1440-1000.png",
       "beforeSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
       "afterSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -601,8 +601,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-1440-1000-hover.png",
       "beforeSha256": "66b159d649416197928e4bea3b8edfcc5eb158a92212f039ef5c8a56904c1dcc",
       "afterSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -615,8 +615,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--default-1440-1000-focus.png",
       "beforeSha256": "d1d09e901ad95518f2f3d9bc38928fc93d0e6cc0ae00959fe777f9d076d7dd51",
       "afterSha256": "02ff0b5cd09e1eed2bcc4252d4264c61dcde20e84df9044caeb4f355cc280717",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -629,8 +629,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-390-844.png",
       "beforeSha256": "bac8aea980de3ae50c722adcf044a5fbf5e2f33819c992e2313a09588fc2e775",
       "afterSha256": "bac8aea980de3ae50c722adcf044a5fbf5e2f33819c992e2313a09588fc2e775",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -643,8 +643,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-390-844-hover.png",
       "beforeSha256": "18ad9bde958c432dfd7566a26d030c446786de7fa9815eddd5ecfec5091fceea",
       "afterSha256": "18ad9bde958c432dfd7566a26d030c446786de7fa9815eddd5ecfec5091fceea",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -657,8 +657,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-390-844-focus.png",
       "beforeSha256": "19a4f6277dc06852341eb3f37785f46bfc80252f7ec047523127203bb50ef77b",
       "afterSha256": "19a4f6277dc06852341eb3f37785f46bfc80252f7ec047523127203bb50ef77b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -671,8 +671,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-844-390.png",
       "beforeSha256": "dd8417a4a2a51a014c1b7c1082e57c98f5d8a37ba6c08eb3119456dc704edd57",
       "afterSha256": "dd8417a4a2a51a014c1b7c1082e57c98f5d8a37ba6c08eb3119456dc704edd57",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -685,8 +685,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-844-390-hover.png",
       "beforeSha256": "296b088f9c305f3db07a10a6860bde9793edd3694ba9029078786a3b1b58353a",
       "afterSha256": "296b088f9c305f3db07a10a6860bde9793edd3694ba9029078786a3b1b58353a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -699,8 +699,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-844-390-focus.png",
       "beforeSha256": "66179d60840cac141916ef22ecb32290165607b468230c43bff9a55b3f2bdb8b",
       "afterSha256": "66179d60840cac141916ef22ecb32290165607b468230c43bff9a55b3f2bdb8b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -713,8 +713,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-1440-1000.png",
       "beforeSha256": "88ce7f540e4d5e2210069e127478d411cad8c8e9719b5f187e692d68400422d2",
       "afterSha256": "88ce7f540e4d5e2210069e127478d411cad8c8e9719b5f187e692d68400422d2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -727,8 +727,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-1440-1000-hover.png",
       "beforeSha256": "6e75121c8c5f0e9bb5049bdb499d9cc751e35133885b395aa6f012aceb10a7e0",
       "afterSha256": "6e75121c8c5f0e9bb5049bdb499d9cc751e35133885b395aa6f012aceb10a7e0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -741,8 +741,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--unselected-1440-1000-focus.png",
       "beforeSha256": "41a707aa2dc59896cd6da38a7964cbb47c799bbbec98b0bf04ac690921d014dd",
       "afterSha256": "41a707aa2dc59896cd6da38a7964cbb47c799bbbec98b0bf04ac690921d014dd",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -755,8 +755,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-390-844.png",
       "beforeSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
       "afterSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -769,8 +769,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-390-844-hover.png",
       "beforeSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
       "afterSha256": "442cef3aa66b0ceae086e62063356744d17b0dc1c23e1715b6bd90f78f23f0b1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -783,8 +783,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-844-390.png",
       "beforeSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
       "afterSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -797,8 +797,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-844-390-hover.png",
       "beforeSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
       "afterSha256": "5b749426ea5a62118c1256a9477cc110fc32234e0d54057963b275b0103906a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -811,8 +811,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-1440-1000.png",
       "beforeSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
       "afterSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -825,8 +825,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-togglebutton--disabled-1440-1000-hover.png",
       "beforeSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
       "afterSha256": "d7fd19d242f730e22e2b1521fd3bd798670b9a0f4d9d456414abd0fa835f345e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -838,8 +838,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-390-568.png",
       "afterSha256": "c758513d9e6dd5b6b5941fc7cc4269559295b04276695e70c1bec929033ff40f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -851,8 +851,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-390-568-back.png",
       "afterSha256": "15198e43c1a9f344b7e34bd34cc7b288db0426bc4f4d076e21690ec23e308e4b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -864,8 +864,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-844-390.png",
       "afterSha256": "5ab78f15ae9f278eee29db9f6e6844f87cfbfe7131540e2765bacdc8d5b19874",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -877,8 +877,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-844-390-back.png",
       "afterSha256": "27b7bd0e2b22a1d8776591a74d050f06e3d1c517e3925e1027a3d719bcd022f0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -890,8 +890,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-1440-1000.png",
       "afterSha256": "b8ee7e4a636d0f54f33e5544ead00c44ec11867fa6f97dd3f0daad40c11b611c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -903,8 +903,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--limited-height-1440-1000-back.png",
       "afterSha256": "b087fb5ac4b0c8faedb01efd5ae4f3aceed24e5a383eeb6f8baa1e655baf2e9c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -916,8 +916,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-390-568.png",
       "afterSha256": "ff123032b4939fd444f84371f6c86b135612b7552c2fc82225b6042e04ef8545",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -929,8 +929,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-390-568-back.png",
       "afterSha256": "db187c2ca0b1f0ab6fd3c00dc9636ddbb6028e16580355358e4a4cdec53bc26c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -942,8 +942,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-844-390.png",
       "afterSha256": "0e5d68497267e67355f2aace26af39f00a745f193e3b07cbeb5336690683a9e7",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -955,8 +955,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-844-390-back.png",
       "afterSha256": "7944b59e927d0fc3a0a5d83dd03605f1d07a4c6182c639bdc21a6b9e401dd54e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -968,8 +968,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-1440-1000.png",
       "afterSha256": "cf30f4a3e04a67902aa8dc308aca248d0714f88b305486b9a6c94cdeaedf0a11",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -981,8 +981,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--long-content-1440-1000-back.png",
       "afterSha256": "e8751e074a92669f426bbc3e61358c3aeea8d4e68cd07117c0dae4639bd522f3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -994,8 +994,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-390-568.png",
       "afterSha256": "2378e6a68f00d9adacd8b9aba29b482aba4c22856d432895efa7fd05d0cd2b79",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1007,8 +1007,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-390-568-playing.png",
       "afterSha256": "aac35b30fc4710dfc2ed96374bda36099aed754351f53f5bc588fa70c4331059",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1020,8 +1020,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-390-568-translation-hidden.png",
       "afterSha256": "d53c50059c8b6e40cad21c58d3b1fef2c88604e5005c92ef1c54dbee1505f02e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1033,8 +1033,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-844-390.png",
       "afterSha256": "1d9d8f941e3427cefa8c25c00b4a3e8212c38122a460c5a9200ed4bb840e9ad5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1046,8 +1046,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-844-390-playing.png",
       "afterSha256": "d1436ee96d9e9ed0fc17efb5787ac9f653fe244fb56e13293ba41d574e77042e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1059,8 +1059,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-844-390-translation-hidden.png",
       "afterSha256": "8d514488c3165bbfa53d431378643033468d1f7396b3ba99f50c36e2f60c5ccc",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1072,8 +1072,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-1440-1000.png",
       "afterSha256": "4c280ea9e48daeb7c006bde923a31ecd82c99c3cc70a04ffe99e5a60b0d96347",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1085,8 +1085,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-1440-1000-playing.png",
       "afterSha256": "c1618a5cb4330394a7c8d4343ad4e9ee63e31afceff7027049cac2b3f70e2f3c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1098,8 +1098,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--default-1440-1000-translation-hidden.png",
       "afterSha256": "c77d89b9cf0fc474967dd91dcd46a2232c398b9d6238a8a3fa939297b9d195e8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1111,8 +1111,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-390-568.png",
       "afterSha256": "f0598ff6908240d8a71e851c28e12790fc99db57f5d3e468512fe343fa8a700c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1124,8 +1124,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-390-568-playing.png",
       "afterSha256": "3599502ce5d74619501d0f2ce75a75ca3f720f8e8f386f49624720a1c91fa41f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1137,8 +1137,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-390-568-translation-hidden.png",
       "afterSha256": "8c51aec9086bd65831ddec72de7f55c2d1cb4206b41a63f59dd106b0cf196462",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1150,8 +1150,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-844-390.png",
       "afterSha256": "fcfcce52bfd8ceae226a28960c966f97d9b9acf2e1bda0a41858287583f59408",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1163,8 +1163,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-844-390-playing.png",
       "afterSha256": "56306f4a2b49b11cc335d7592698401c4c437aa529de8675cde560275e9af68a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1176,8 +1176,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-844-390-translation-hidden.png",
       "afterSha256": "cb764f632da07774fec5072d312026865a35fe5dfe7e59bceb259f3af8c71789",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1189,8 +1189,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-1440-1000.png",
       "afterSha256": "33cb9eb940b1b4e56a26ca09d73640e2d0905ffd925e1df3f9767d9fb78f5dc1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1202,8 +1202,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-1440-1000-playing.png",
       "afterSha256": "98db5ee405e4dc006964471259335a6aa57d9689ba1c6b219f081f844bd1ac86",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1215,8 +1215,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--long-content-1440-1000-translation-hidden.png",
       "afterSha256": "5c6f5a7cb0f3724c53361d80801142fc5bb9f277fb3461ab7f24f1bc5f4af730",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1229,8 +1229,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardimagepanel--default-390-844.png",
       "beforeSha256": "4eddafaeb571ade75222997a1771c4048d733515509d537f87312c8f0936f664",
       "afterSha256": "ba904fa4e9ac28d41ffec82941827816e73ed55260ab2c592e1f3fed077b9081",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1243,8 +1243,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardimagepanel--default-844-390.png",
       "beforeSha256": "d04e48844d6c00a4a6a2a202fc2e97334ba98d9ea5dda785649f0168270ab48d",
       "afterSha256": "707ea663e18126e4270c23af5fa36630f562573000bd9beb03a973d3210a6dd4",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1257,8 +1257,8 @@
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardimagepanel--default-1440-1000.png",
       "beforeSha256": "c0e5fa6069e8bb6012751d2c038994ce94ff57b2a56a90343c3608ae0a277f84",
       "afterSha256": "6e9eaa261c4c93adb56640da83a2085aafe591a8abd54d6f0b9a294a5384ee42",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1270,8 +1270,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-390-568.png",
       "afterSha256": "acbef8d4fb1bd59c11961545e7f83452681a805c501b4952d279e865533c682d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1283,8 +1283,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-390-568-completion-end.png",
       "afterSha256": "8aac2f6b49e3d9e06dc63b7a3873415a4567f29c13ddbff648db7827d471b08a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1296,8 +1296,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-844-390.png",
       "afterSha256": "08758fec3e6343d68d51cb549f575fe64a5325316f19e2a7dc14f17c9b5b108c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1309,8 +1309,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-844-390-completion-end.png",
       "afterSha256": "23f146bc32472640ecc8946b3b009eabdeb9a99286c84c99e07e298f876a3db5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1322,8 +1322,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-1440-1000.png",
       "afterSha256": "2c65fb353b1b757ab576203bb7d6a8d01297dcb5db5cff9b9c6a91be4f185172",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1335,8 +1335,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-flashcardframe--completed-1440-1000-completion-end.png",
       "afterSha256": "0d90e4163d6e428f949504ffb4dc716e6fbf443773b61406fbbd68d5d4852a81",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1348,8 +1348,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-390-568.png",
       "afterSha256": "acbef8d4fb1bd59c11961545e7f83452681a805c501b4952d279e865533c682d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1361,8 +1361,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-390-568-completion-end.png",
       "afterSha256": "8aac2f6b49e3d9e06dc63b7a3873415a4567f29c13ddbff648db7827d471b08a",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1374,8 +1374,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-844-390.png",
       "afterSha256": "73c2a0c542f3f76ab822ee8dbf66ab0586f02e6787355a660a181f6dcc757fa0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1387,8 +1387,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-844-390-completion-end.png",
       "afterSha256": "0fb69a8a30129e2a0e5442c9f730c901e1686bf486f2fcb878585cd0944852b5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1400,8 +1400,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-1440-1000.png",
       "afterSha256": "15e2ed85d73a75610b3c024bf1e3c1da051692c2e5bd700cbbbc65870e69de92",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "ui",
@@ -1413,8 +1413,8 @@
       "before": null,
       "after": ".github/evidence/visual-fixes-20261016/ui/after/molecules-shadowingpanel--completed-1440-1000-completion-end.png",
       "afterSha256": "581bc9467604bf61e8a1b37668d0e25ba30199da56ceaae3ded1ccfbc8d54679",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1427,8 +1427,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-front-short-390.png",
       "beforeSha256": "ebdabb330f9c84d99da26f2613155171a16cfc7d4cc48ef4e5c81b7c7a437219",
       "afterSha256": "286f840dc72f25f406440fe06cf45f6ff07efaf7922a4134471c952b0362d676",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1441,8 +1441,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-front-390.png",
       "beforeSha256": "6aee9da558364f16b88228e15231c58924d79ea1af2f9da9302f88e6fc75cf81",
       "afterSha256": "af0fc64f9e0335bb271100180ddb43cfc04d7b2ecd6046042084925b064728ba",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1455,8 +1455,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-front-768.png",
       "beforeSha256": "e9ff31ace6a85b7cbfe75c9670d2da86095f369db2505fb438c6e647e64cd5e8",
       "afterSha256": "9adba5809dd70dfebe3d7c5fcaeeab80fbc64a2599c8b68243911f1b4068ec07",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1469,8 +1469,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-front-844.png",
       "beforeSha256": "51a003644130d58523926e5fe99e97bd086514d5013d294fa4afda860617bd43",
       "afterSha256": "888c7b74964758780fd946e387ec759efa9952aabf512ab8fa2cb91e2c69243c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1483,8 +1483,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-front-1440.png",
       "beforeSha256": "35ffc0c5c6814da6345d2ec510b4a0fea5455f886aff12c25f40f19fd5706815",
       "afterSha256": "ff5bac4ff46d9ed0386c004baba1c95afaad249ee7c3d95f7062565abf8df0b2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1497,8 +1497,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-back-short-390.png",
       "beforeSha256": "57d35a2b117fe95864b9ec31cb8d00b8b01ca56d09a2de999c6ead932b4ef7db",
       "afterSha256": "6f7d9c26f90ca2b8e3b557479b537fc61028718d6247e53f88dc5e3fd9495d7c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1511,8 +1511,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-back-390.png",
       "beforeSha256": "44c84c2b5632e79eea493d62280a0b710ec34b2a1afb1e2c583fc8f41a8240c1",
       "afterSha256": "eac4eabdfaa6aa7a7b495cf0b143cdf868b1676590bdeb56250a4f83e8c5d1a3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1525,8 +1525,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-back-768.png",
       "beforeSha256": "65055e412721d419e1a4019413354cd764772c5cc6536f3794814a4c263d8ecb",
       "afterSha256": "447a41b5efc223c9fc91a4b705a88eabfec903c7f34db6a348d98a5ab85c6d99",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1539,8 +1539,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-back-844.png",
       "beforeSha256": "66b2ae680f3f16ca60816482ae7bfc98a5f20f0e6d95dcb152f4ad2af3805c35",
       "afterSha256": "93f2475bf59b08d86b1e41c20051f972fd0d2ac214559288e8a9fa1b426651c3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1553,8 +1553,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-back-1440.png",
       "beforeSha256": "5018b1c2a2b8847857c923c5486e2df3c4a2bc684c4105448a2f0d47730d9215",
       "afterSha256": "61efedff3f4dfe854f313fff90cbeb3462fcf62138d5b68fd1a9ed681a589d34",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1567,8 +1567,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-visible-short-390.png",
       "beforeSha256": "c0ce15f25ae97d6756d7ff4eddc2da3238448f6d485160bca0d818cd11c0ee00",
       "afterSha256": "c0ce15f25ae97d6756d7ff4eddc2da3238448f6d485160bca0d818cd11c0ee00",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1581,8 +1581,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-visible-390.png",
       "beforeSha256": "3a57024ab51b9e98c460af5515353412c3be95ee96edb5fd7db16c16784400d2",
       "afterSha256": "3a57024ab51b9e98c460af5515353412c3be95ee96edb5fd7db16c16784400d2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1595,8 +1595,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-visible-768.png",
       "beforeSha256": "e96519e78933ad68e1d4bd85f93cf9c4f900e178c36a073646ce3b04bbe57550",
       "afterSha256": "9d4b4d92e7045f759f5b656f318e184c50abb58ef96d16cbeee92e45a8a96f45",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1609,8 +1609,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-visible-844.png",
       "beforeSha256": "6bcad4e84b212d90f2734d82188a56f9ed2ed9cdd01841f09f21be440a77099d",
       "afterSha256": "40b2739d5e858f8b7c5047aff0700dffbd0681606555d662c103af581eb3c61f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1623,8 +1623,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-visible-1440.png",
       "beforeSha256": "d45300a08220d4667b451cb8c53f0c83353dc6d6f0af8290de70158e28a9ce75",
       "afterSha256": "d45300a08220d4667b451cb8c53f0c83353dc6d6f0af8290de70158e28a9ce75",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1637,8 +1637,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-hidden-short-390.png",
       "beforeSha256": "f7de01a1c32a014e963688e034a19730e7875a48332a4591ebcd17d9ca132912",
       "afterSha256": "f7de01a1c32a014e963688e034a19730e7875a48332a4591ebcd17d9ca132912",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1651,8 +1651,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-hidden-390.png",
       "beforeSha256": "4abc7fac5d047b55eb863a72e3374ed2f43bc7eb15aecda366fa9f48fb64c4c7",
       "afterSha256": "4abc7fac5d047b55eb863a72e3374ed2f43bc7eb15aecda366fa9f48fb64c4c7",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1665,8 +1665,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-hidden-768.png",
       "beforeSha256": "a9e90078fc948e553a4a4d42410062acc611891718dd14667ef11dfcc7c28b05",
       "afterSha256": "a9e90078fc948e553a4a4d42410062acc611891718dd14667ef11dfcc7c28b05",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1679,8 +1679,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-hidden-844.png",
       "beforeSha256": "baad45922c49e6a7b7a0e39d66b73a646e278913702ba87ff70cbdf60b476158",
       "afterSha256": "ba08e6f0e073f0d8389fefa14d375419434fe5d052aeb9eaff7d698070e72a4d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1693,8 +1693,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadow-hidden-1440.png",
       "beforeSha256": "0f2e6e415f90f280b2cf644a1462e6cc417f48ca734e1c9bc113ddedbd79465e",
       "afterSha256": "0f2e6e415f90f280b2cf644a1462e6cc417f48ca734e1c9bc113ddedbd79465e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1707,8 +1707,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-visible-short-390.png",
       "beforeSha256": "73e5ba0fb12dcb013b57ae2e0fd50b0459048b4c28a2c900c6764cc1b10925a6",
       "afterSha256": "73e5ba0fb12dcb013b57ae2e0fd50b0459048b4c28a2c900c6764cc1b10925a6",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1721,8 +1721,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-visible-390.png",
       "beforeSha256": "2745f625365d8a1c2afe564c7cb9daad87e47b2bec8e4ad66205389c83e6d0c8",
       "afterSha256": "2745f625365d8a1c2afe564c7cb9daad87e47b2bec8e4ad66205389c83e6d0c8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1735,8 +1735,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-visible-768.png",
       "beforeSha256": "e220d2d8fd88aa86297cf2984c69239f77a605293f80eda7c7dcf266125ebbf0",
       "afterSha256": "bb8f6ded8d9764e9db2a116377ad28bb563e9d8dd69c315f22d880c06af15af1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1749,8 +1749,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-visible-844.png",
       "beforeSha256": "6c577acdc96b6f75ee420a8024a0a9f0568dfdb87707266daa79f04ad307921c",
       "afterSha256": "15750cd4f020fa182a6a7a38df6623ea07ba10b2cb8ec56102a1a5fb152e0ac8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1763,8 +1763,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-visible-1440.png",
       "beforeSha256": "2c26b90a278081a3afead24e0c7fa5dd3a31175b38585a4fd50779738ea0f066",
       "afterSha256": "2c26b90a278081a3afead24e0c7fa5dd3a31175b38585a4fd50779738ea0f066",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1777,8 +1777,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-front-390.png",
       "beforeSha256": "bba79a977bb7fbd6919c14826a70c54df416b1c797aa29e2cfb4e9696710aa97",
       "afterSha256": "2aa1d8d4bf46ebade44eedfcfbc81e8e2644c087395d0f1fbf0d50fbe85cd431",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1791,8 +1791,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-front-390-content-end.png",
       "beforeSha256": "bba79a977bb7fbd6919c14826a70c54df416b1c797aa29e2cfb4e9696710aa97",
       "afterSha256": "e11208c14522cfe2e888be8d233dc147d9cb6348ba9dce9cc6557a3ac4213d2c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1805,8 +1805,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-front-844.png",
       "beforeSha256": "244c7d7b2d52bbe14b9ad4354c0ebefdc78ec1330ad04d972a0bd8bafb685a40",
       "afterSha256": "4801a7c207e68c5d61d1ad31765e4d11ecfe614729e70fdcdce191fc5bfd8892",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1819,8 +1819,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-front-844-content-end.png",
       "beforeSha256": "244c7d7b2d52bbe14b9ad4354c0ebefdc78ec1330ad04d972a0bd8bafb685a40",
       "afterSha256": "e1077b8334d34ef23fd95d64c0e558ef661a677f0db90ff126c7b9fd3fa78788",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1833,8 +1833,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-front-1440.png",
       "beforeSha256": "4b2266d36c4f9652a35a5a53977646d3af80f01c0464535945810a826aa5123d",
       "afterSha256": "65ea9934225230bcac0bc7b3732724b292efdea13fee96e899e0c440f1f368f1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1847,8 +1847,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-back-390.png",
       "beforeSha256": "406c03ee3a6cc42487ff4a4851bcf3412810332d31f0734452a171d9fda37d59",
       "afterSha256": "80c043338ba34d9605269571b2dad90e1ca999471341cafdb130e526d2a04b53",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1861,8 +1861,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-back-390-content-end.png",
       "beforeSha256": "406c03ee3a6cc42487ff4a4851bcf3412810332d31f0734452a171d9fda37d59",
       "afterSha256": "084ab5219a430b8159f727e8077cfd5be445f6d99704ae27e92341a321c9f40b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1875,8 +1875,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-back-844.png",
       "beforeSha256": "249452df74a6c6f1a73d3c8856b7b02806395878c1a0db9c64e280ffb7137231",
       "afterSha256": "9a9c1813b809aaab359ae0fb177a38d5b3cf09b4fb2a4f45f11418615b86cec7",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1889,8 +1889,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-back-844-content-end.png",
       "beforeSha256": "249452df74a6c6f1a73d3c8856b7b02806395878c1a0db9c64e280ffb7137231",
       "afterSha256": "5ab1fa07dedf2db32df3ee60515416235ac77408f93f9e900036e2153d6818e2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1903,8 +1903,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-long-back-1440.png",
       "beforeSha256": "4e4954bc1b18a811e5f6d8fa946a8afa34b014ec2a934762fc2b3227c4ae6868",
       "afterSha256": "9809899202aad69aaa7b87e1d026abea1014a0af8682f360889f168353794715",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1917,8 +1917,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-long-visible-390.png",
       "beforeSha256": "7725c5566c3dbc1351949e88915d7a1f564d128e2303b9f6e61b6ef72eaa0c9a",
       "afterSha256": "57d19a63852c69a5fd7ef69d4653d1e7b361f15a1d75dc5e5c2d18a144ffcd5f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1931,8 +1931,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-long-visible-390-content-end.png",
       "beforeSha256": "cf17c45c0fc6b164f04ebf9f0373b7df211e0f556bc6fade0a8d403f6fcd1e17",
       "afterSha256": "e7e98decf7ce4b5f692ec51e78ccf41b2a414f6c15cce0ec6adb5e5e89ce9503",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1945,8 +1945,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-long-visible-844.png",
       "beforeSha256": "458d004e09dc21cc3e5101dd454366c6f4f8c09b761aa6acabe642edd34c1435",
       "afterSha256": "54ca9e9378f2ad7cad4821e8295ad056aea8cd97c0342c6995e369f97f6e3e59",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1959,8 +1959,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-long-visible-844-content-end.png",
       "beforeSha256": "f6baa57a21febb053be57c5458ffe6ed0b2ca4632e95dec7b7dfd1447f86d606",
       "afterSha256": "54836421a5c2fd3a2e1a8d13850077552954b7eb78ba4d57b52e9047bf26fab6",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1973,8 +1973,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-long-visible-1440.png",
       "beforeSha256": "0ef0ad855ddfd56500d7311f4d7abb3d2ec789dfa66b6502e07cd2db3b71dec9",
       "afterSha256": "0a05715240c42c1bc3a3f14a10121b5c59aef53b3adaad4960ee84185ab79d89",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -1987,8 +1987,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/practice-flashcards-loading-390.png",
       "beforeSha256": "3b7681cb8448deb68ef77f0b3f2752649ebadc7cade944fce3f47c85018787a9",
       "afterSha256": "b1dd2b1ddb106f91c80c04ec4393feabc5a17b0bf0c42597389bd21fe2a2b90e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2001,8 +2001,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/practice-flashcards-loading-1440.png",
       "beforeSha256": "1c7f0c8aeb5074d30ad3b2812f2159992673169f01dac5ec7146e946735b0da2",
       "afterSha256": "9bc2ab607883c95eb6b658b604a1a3ab0b66b0617c4224347d0a8b1ba30679f5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2015,8 +2015,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/selected-day-hover-390.png",
       "beforeSha256": "c2d0798e2ffae0c26cb493d370892dab580fe558a8497fc09233c5812d6fff00",
       "afterSha256": "6d283a08e5fbf903e459c70acde1469ba73ef3b2beb32cb2f5bd18480d898189",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2029,8 +2029,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/selected-day-hover-390-hover.png",
       "beforeSha256": "c1f4318ab69457002eb7bdcc1a163740c934dcd8caae6e47a97eb803bdbc2cc6",
       "afterSha256": "6d283a08e5fbf903e459c70acde1469ba73ef3b2beb32cb2f5bd18480d898189",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2043,8 +2043,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/selected-day-hover-1440.png",
       "beforeSha256": "1db76491ecba079614eda27ff60a7dc292563d558888002bd7b1503999554349",
       "afterSha256": "1db76491ecba079614eda27ff60a7dc292563d558888002bd7b1503999554349",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2057,8 +2057,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/selected-day-hover-1440-hover.png",
       "beforeSha256": "51e3d7d90c90f5e42fbaa441f3f3634ea81c09acb88f2f622bb81fd9dd9be02a",
       "afterSha256": "1db76491ecba079614eda27ff60a7dc292563d558888002bd7b1503999554349",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2071,8 +2071,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/register-availability-390.png",
       "beforeSha256": "5aaa4e96c1e8f7723d950ef7e09a94e7b31170ee2207b0412f0c64efc352ec73",
       "afterSha256": "5aaa4e96c1e8f7723d950ef7e09a94e7b31170ee2207b0412f0c64efc352ec73",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2085,8 +2085,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/register-availability-1440.png",
       "beforeSha256": "039df9730a65a9819461bb287ecd8078dbd097a1d79ffacc6b5be47b925c08ad",
       "afterSha256": "039df9730a65a9819461bb287ecd8078dbd097a1d79ffacc6b5be47b925c08ad",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2099,8 +2099,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flashcards-safe-landscape-844.png",
       "beforeSha256": "85b795ff4c9d383120449ffa31b63ca00add6867a22c3c5d399f372407f64825",
       "afterSha256": "6a93f07ffb054339db3ef0ddc46c7b026359a83adf61a6f3dc8659769cd4bac5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2113,8 +2113,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-safe-landscape-844.png",
       "beforeSha256": "6bcad4e84b212d90f2734d82188a56f9ed2ed9cdd01841f09f21be440a77099d",
       "afterSha256": "40b2739d5e858f8b7c5047aff0700dffbd0681606555d662c103af581eb3c61f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2127,8 +2127,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-safe-landscape-844.png",
       "beforeSha256": "6c577acdc96b6f75ee420a8024a0a9f0568dfdb87707266daa79f04ad307921c",
       "afterSha256": "15750cd4f020fa182a6a7a38df6623ea07ba10b2cb8ec56102a1a5fb152e0ac8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2141,8 +2141,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-front-short-390.png",
       "beforeSha256": "76f01ce55d8e1d5b67c8bab4e3a96153684f9e485afb65af741106457d6dde43",
       "afterSha256": "5aecb228dc9d4444d6adbc12b27d498ff197f79d404844538cf6fbff55f2615b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2155,8 +2155,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-front-390.png",
       "beforeSha256": "c54aab34e12759f026a567c29aef95c41caf33cc16790c869e9cdcf581e961cc",
       "afterSha256": "14e493a6957e03e0a4293604dbc485232add1789e78437dc5cb632a2c4d71027",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2169,8 +2169,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-front-844.png",
       "beforeSha256": "982d2a77d7d2dca46c2f8faf8273d9ff57255688f988dbc8650b0f93fb49fb6a",
       "afterSha256": "351c5cbdaa465e3684ae2dac834b862749f651c4bef53c104ae2fce800eb2fb7",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2183,8 +2183,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-front-1440.png",
       "beforeSha256": "eb34af7842249145dd52828bb110c6e80ed1c337cf9a0c77d5312157084de82c",
       "afterSha256": "8e20fb6c948f4d2b03f8b2ae85a9bd9679f02d41d4258002a671af42e30d8326",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2197,8 +2197,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-back-short-390.png",
       "beforeSha256": "a46390025da4d795a0d51092514232c942d4f80139503df1b1696780318f6d96",
       "afterSha256": "066592bf3b1b5c0d18f4079b12440ad7cd3422350b644affabc6cfebb1dea537",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2211,8 +2211,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-back-390.png",
       "beforeSha256": "3e59ddf6083828606e8e3633dc5915429365e1f9819444c792f3622f2fda5501",
       "afterSha256": "7e21d35db55d9060b01abc841b04a18f6201b6bdaae782c5d6d62bda1fbdf8db",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2225,8 +2225,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-back-844.png",
       "beforeSha256": "dd9192d3016ceb7de70ee433cf056d7066a79a9cb45fbd70001a9608b179b2e1",
       "afterSha256": "ac348266ad58f1509eda5dacd6a9646ad8ed82482e107ba7dccb9a9394107dc6",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2239,8 +2239,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/vocabulary-back-1440.png",
       "beforeSha256": "bae377a71643f6d3c61f48af1f6da16e55bdb14255ecbc2d89f8d75ca9a968f8",
       "afterSha256": "d703bcad5fa260bcd5e9d1b846a44438818e1203480131e51abdbc399ab4bdd9",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2253,8 +2253,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-short-390.png",
       "beforeSha256": "c4cccd8f16dcecdbabef6ea3a8c6abe13136a9e80b4785484341f6abb1dc1e3b",
       "afterSha256": "09689886c68bf145cdbed978604601bbacf6d6a3c62b6599dbbcb878df8ff208",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2267,8 +2267,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-short-390-completion-end.png",
       "beforeSha256": "9d16fa60ca8202e1319750938d4a00c32c613a7c3bf4f87dae357e8910e114f3",
       "afterSha256": "72af7470556d319f22d9a16d37797f7799c8468a06dbb0d2d481464ca12460d9",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2281,8 +2281,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-390.png",
       "beforeSha256": "33915ae053bcd78999726da6b0ec88a50593f3982bcab5e6b4c29034706dada0",
       "afterSha256": "4b5ab9eb8b8e24246a812debd087e3706ad9c45e4286a308a64c03f4e921e281",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2295,8 +2295,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-768.png",
       "beforeSha256": "9b71c3eb5f0016d8e284fcc145786f394f2e803cfc7110ac529d4dfb6e0ef824",
       "afterSha256": "b0d71cbc6cb9fe7994f5c907e96a01c031008a4fb33be34260f828a204b88d1e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2309,8 +2309,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-844.png",
       "beforeSha256": "b395449d977ab3d391ca61cbdac48ea899b0869d6cd955b3e5b68568d4969d80",
       "afterSha256": "3f0a82e17dd3fc932358b119905db97163bac57e293b42804bfb3636b8ebbbea",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2323,8 +2323,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-844-completion-end.png",
       "beforeSha256": "53b7d1f45dd3c5f72a2680d3bdf976f1bdb7780cc2ff91a2dca30395e205ab63",
       "afterSha256": "3e9209899aea157eac4fb71e855675c5a344b417241690bcab9f7db4e16e10fd",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2337,8 +2337,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/flash-completed-1440.png",
       "beforeSha256": "5e47f1b7cc94f44576e05fbc776426cdd900fd6898923956c746a2a7aef6833e",
       "afterSha256": "5e47f1b7cc94f44576e05fbc776426cdd900fd6898923956c746a2a7aef6833e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2351,8 +2351,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-short-390.png",
       "beforeSha256": "df532cf26eba91ff9c21a386bb703328f51f98137b519e45f634f66630cee755",
       "afterSha256": "df532cf26eba91ff9c21a386bb703328f51f98137b519e45f634f66630cee755",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2365,8 +2365,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-short-390-completion-end.png",
       "beforeSha256": "0b5bf3bed3b2efa319fe7cf985e9e699a0deab974a15d8f64fca0128b9a165aa",
       "afterSha256": "0b5bf3bed3b2efa319fe7cf985e9e699a0deab974a15d8f64fca0128b9a165aa",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2379,8 +2379,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-390.png",
       "beforeSha256": "c5ac2260f4265bdf5bbf112956e4c09c4bcb89f45cb52fcd8dfad1e709bed5f9",
       "afterSha256": "32fa16a93119860120f3b0736dd5f23b1caf9ac28c4c84be7c1d2d1d48391eb5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2393,8 +2393,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-768.png",
       "beforeSha256": "d0e6ab4e6ffa49b5cd231c8123b5a44eaab2c5b902b40760bda5251edb3d5e60",
       "afterSha256": "d0e6ab4e6ffa49b5cd231c8123b5a44eaab2c5b902b40760bda5251edb3d5e60",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2407,8 +2407,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-844.png",
       "beforeSha256": "5a718f9de8c7c056600ace351424db5edd25449938455075414f3658142f17fe",
       "afterSha256": "e344f91f1f8263320c4c826b24465a15c532563c6aa6d850632f33119167618c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2421,8 +2421,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-844-completion-end.png",
       "beforeSha256": "c6a221c32b8b56f30c22443d230cc5f12a21e79f6dd23a20da786b47597ebbfd",
       "afterSha256": "0b7ac4f84acba53f4e1d30713f43e35a92261108acfc67fb0679baf1917d00d2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2435,8 +2435,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/shadowing-completed-1440.png",
       "beforeSha256": "cb4dfd5782a9438b83f21f831ef5c0d2ac80a9f67657121a54107a961ee07081",
       "afterSha256": "cb4dfd5782a9438b83f21f831ef5c0d2ac80a9f67657121a54107a961ee07081",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2449,8 +2449,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-short-390.png",
       "beforeSha256": "58101533a65ade882a0757c9794e9ea02ccbb4618853848a13dae76cb5ccd2f0",
       "afterSha256": "58101533a65ade882a0757c9794e9ea02ccbb4618853848a13dae76cb5ccd2f0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2463,8 +2463,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-short-390-completion-end.png",
       "beforeSha256": "58101533a65ade882a0757c9794e9ea02ccbb4618853848a13dae76cb5ccd2f0",
       "afterSha256": "58101533a65ade882a0757c9794e9ea02ccbb4618853848a13dae76cb5ccd2f0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2477,8 +2477,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-390.png",
       "beforeSha256": "fafd1961257cfd16b85de16a2bd867fe642279da24c0e250f813638fd1465f31",
       "afterSha256": "fafd1961257cfd16b85de16a2bd867fe642279da24c0e250f813638fd1465f31",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2491,8 +2491,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-768.png",
       "beforeSha256": "5a2d65a3d7751291ee7d6adfb6be39939caf787e402298e3f57a4d99af013e02",
       "afterSha256": "5a2d65a3d7751291ee7d6adfb6be39939caf787e402298e3f57a4d99af013e02",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2505,8 +2505,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-844.png",
       "beforeSha256": "7909a761adfe161c98a672fb9806245ecefb701661b05d8fa55d78dbdea2bd19",
       "afterSha256": "5a9062b93bde216a2a337eedcfcde19a192931e73176a9684da057ab88ae9b2c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2519,8 +2519,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-844-completion-end.png",
       "beforeSha256": "b74aa4669206a05764852d9e3c8f3d08999915e18cc9dbdc8c51d0ee6a5f4f6b",
       "afterSha256": "51c13610199d6b98fa9dcad1e288243f563cf0d9e3f43ee7800e122a04f3ada6",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "teacher",
@@ -2533,8 +2533,8 @@
       "after": ".github/evidence/visual-fixes-20261016/teacher/after/music-completed-1440.png",
       "beforeSha256": "02838e2269204d7fb8304acee02c1dde576231e6addef1a23443071f79fa9130",
       "afterSha256": "02838e2269204d7fb8304acee02c1dde576231e6addef1a23443071f79fa9130",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2547,8 +2547,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-front-short-390.png",
       "beforeSha256": "6b7b9c534e99959d68739b0b0e076b2595823a9bec98aca6854cd9968e3b95ee",
       "afterSha256": "59a32f02390051e3a350c5c00590c8d347e5cdebdf00302ab188fe648d809ecb",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2561,8 +2561,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-front-390.png",
       "beforeSha256": "045e2cfe92ecfd85c6001f63cf1fa6e3ad0961fe1bdfefc1efcbfde03cdbc19c",
       "afterSha256": "25e68080a9f7dc281960c0d3ab9b80166b73cee0028afdfb9bc848b8c31a2f6b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2575,8 +2575,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-front-768.png",
       "beforeSha256": "253681d3ba4ebee7528d70b75ada6cb6e934b39d058d4f84b464ab206f8fc050",
       "afterSha256": "a802052e3538dc157b6508e9ae483a35d89b1ca1bc97894bf98245462fb1de93",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2589,8 +2589,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-front-844.png",
       "beforeSha256": "8eacc63e0a041a4d491d034f8d0130a4a91708693deb1cc15cf5d14a60274a44",
       "afterSha256": "825b203600a9340b23f4f9fb932be73b456c9039465a4d807d18ff37d435c842",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2602,9 +2602,9 @@
       "before": ".github/evidence/visual-fixes-20261016/student/before/flash-front-1440.png",
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-front-1440.png",
       "beforeSha256": "b80bc43ce8c7716beb5b85a0720e4cac03e0c45d3345edbdfd17fa6fc6d5fa9f",
-      "afterSha256": "4f73fae7e8bbac857f3cacd721836652268793b21ca81a52b80c0f11ccfbd1c4",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterSha256": "9b227123051f11c3471e04a0f57aae19f4c62eebefba75c1634789f8cb3f930d",
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2617,8 +2617,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-back-short-390.png",
       "beforeSha256": "3e9a87bbec132cf31ec155fe1add3e5336d3d0f9f2c31f8e1360e6fd13aa9993",
       "afterSha256": "449219d171730747211e1024ca8f8ce8c61efa63030d926509f58095bf13dae0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2631,8 +2631,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-back-390.png",
       "beforeSha256": "91d48baed9157617b7658dbab6a834530b5cf941e5002e045a2950b71f1c7b93",
       "afterSha256": "2ab6a8a9d919fba73071268b9b845d86de38812bace4af43c029caa6ca399b3e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2645,8 +2645,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-back-768.png",
       "beforeSha256": "5859eed023db828a91384d1c479fc2cab178f961c616916690a0059b82af042b",
       "afterSha256": "5a7839752552f1cf9b95365bd5031ab650e027fd8d6575f32f795f29227e8ba2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2659,8 +2659,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-back-844.png",
       "beforeSha256": "b03fff620738557843072653953beac66d3bd3d2e8b4597d7f0413b15d4f0d52",
       "afterSha256": "2cdcd873f6db19ef8e19e7dafcd5ad2726d7ab5866353fcfbb18abbc75417330",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2673,8 +2673,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-back-1440.png",
       "beforeSha256": "5a0ee8a7e8a2fa23327e591b94f58f89d96380c082fe894cfbcee80ea0129635",
       "afterSha256": "e1b386edd82371cd3c1f9f535670c4ab209227aa221533c41f1142fdabc2fa26",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2687,8 +2687,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-visible-short-390.png",
       "beforeSha256": "ff394fc156133ffe2a069e9d1385f26f3a69cfff5f60da4ac0c87ae05387a8a7",
       "afterSha256": "0ff6bc71fe03368bafca78fb370bd6109c2ee71e9bf3b4ad691dbb75c94c7c67",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2701,8 +2701,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-visible-390.png",
       "beforeSha256": "7fc14a0297c8ab16a3f9778dd47712b5979db1bba1d0cb2d19eae8b24791a2c0",
       "afterSha256": "7fc14a0297c8ab16a3f9778dd47712b5979db1bba1d0cb2d19eae8b24791a2c0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2715,8 +2715,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-visible-768.png",
       "beforeSha256": "83b39ee6447d562cd82590fa2210b3e75ba41859fadb400fdd8c17c50187b673",
       "afterSha256": "ff92e980fd0aeebb06967611ead603cadfc15d8913d032bf66189185863d88dd",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2729,8 +2729,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-visible-844.png",
       "beforeSha256": "0bed18a793257417efac25de74331eecc3053efad51269834fc34b58a64e4ff7",
       "afterSha256": "b402ffd029138f2f3b90a48e76db0bc0c5f23f744a01212d41d0ee095edc2e67",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2743,8 +2743,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-visible-1440.png",
       "beforeSha256": "23a9d44c7788948944b28440343594c0ce0d2c45da587cb64ca1a2f62c7264ff",
       "afterSha256": "30c7e76636195b68d5afa0824ea69fd1860d5058004e5424ab25fde0c4914814",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2757,8 +2757,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-short-390.png",
       "beforeSha256": "6088a1c0c4e350c444b2afe75ea9056945ceff33e9f85efaf624a50ae6cf48e4",
       "afterSha256": "b2febf019401f33e44ca0773313b28cdb4aeb3e4e70e665eb7ffe28bd1de2b2c",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2771,8 +2771,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-390.png",
       "beforeSha256": "a90ffa36ecef7b443b53740d6ac491f2c85ce418637e7443765b4a081be226e5",
       "afterSha256": "a90ffa36ecef7b443b53740d6ac491f2c85ce418637e7443765b4a081be226e5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2785,8 +2785,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-768.png",
       "beforeSha256": "7172dbee05aa63d324db10a0463a88cd54c73e39c93b30dee3ffce2e649c2749",
       "afterSha256": "7172dbee05aa63d324db10a0463a88cd54c73e39c93b30dee3ffce2e649c2749",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2799,8 +2799,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-844.png",
       "beforeSha256": "c11b25b7b2c14d6f65e3f0adcc92c7d6f9231a177ae7a4a3583bd099a8f6203f",
       "afterSha256": "a243f6bf4d81af566dca4e4efe4194b04e274f845221d74f541b288eec398368",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2812,9 +2812,9 @@
       "before": ".github/evidence/visual-fixes-20261016/student/before/shadow-hidden-1440.png",
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadow-hidden-1440.png",
       "beforeSha256": "4821d8a74ed7c858dee959bfc1dfa127234d9e183db6c76854ba45814d16f596",
-      "afterSha256": "fee8bccc87ee6a5be6021aa23b587211f89f760fdb01e6ae97fb68e930f6f68e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterSha256": "c77cafef033239da70c0ab93b752512c828924cf97d9f334efaca7655862a103",
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2827,8 +2827,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-visible-short-390.png",
       "beforeSha256": "d2b4fdde1450aecb2650ef26943c58e9d4e754e161bb0ae43f2c6ab6808a49ee",
       "afterSha256": "a8941f5bb737006c1715f834f81aab321f62d75402e12b91c58dd46aa61663e4",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2841,8 +2841,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-visible-390.png",
       "beforeSha256": "a087dd304a8f6e4e083aa68b0d6e1286e3e43f074a959dafc563c8388dd97bbe",
       "afterSha256": "a087dd304a8f6e4e083aa68b0d6e1286e3e43f074a959dafc563c8388dd97bbe",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2855,8 +2855,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-visible-768.png",
       "beforeSha256": "2a62b1da03420613878c9435c68bf29e2cb8ce092b55c0314acae7349f4a20b1",
       "afterSha256": "571130bcccebbea399f58c109956620228d6f3a7e05611d9cceba7a4c01b94db",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2869,8 +2869,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-visible-844.png",
       "beforeSha256": "83fe3ab6ede861eb631014354929a118b06c5d1b58a88c1b6981be440bcc16be",
       "afterSha256": "f4c341f5a631dc16b748ea07319d4bf44e65a3ce6030cf77a8b61b6d6d152ddc",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2883,8 +2883,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-visible-1440.png",
       "beforeSha256": "dd5059233932e9b5fa8e4fca0f5dfa95df751364e6cbef00971aa058845642f8",
       "afterSha256": "d5fa8d54bf7576cf3850409a69a66b8885b9c3a2a252db9094d7906db7166f93",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2897,8 +2897,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-front-390.png",
       "beforeSha256": "0d90be25617b5f976d1fb298a9aa0aa4d7fb5c1cbb87b2d64420effe15188e33",
       "afterSha256": "a84d2fd342da7214a19d4d99dfe21ced8072aa3a5137e9c443095693688a1d81",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2911,8 +2911,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-front-844.png",
       "beforeSha256": "da226988e755d63d2024f4692a3f4c2666fde08945198fccaeb184f8395ec244",
       "afterSha256": "aebbe999b84bfcbecb0ca261553c6430c0f2b182a994e6976a9ba916f4bf66dc",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2925,8 +2925,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-front-844-content-end.png",
       "beforeSha256": "da226988e755d63d2024f4692a3f4c2666fde08945198fccaeb184f8395ec244",
       "afterSha256": "f93cde27c13ecce33666767098e24ffdc37226aa28248be2e97291df83008dda",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2939,8 +2939,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-front-1440.png",
       "beforeSha256": "97d2857edc9d6c82eb7e3e91981b90bb083d63548088f6abea34837fa828b60f",
       "afterSha256": "828c0cdeacc7f7136c389edec5853bcaa364c862861585e2f7f621f4ac0be3c2",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2953,8 +2953,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-back-390.png",
       "beforeSha256": "8e062197a50c7f80a5aff9c2ab1a1134f46fd851dc1900eed50c6a79e798f6c5",
       "afterSha256": "65081531ec55927c6b0154784fe15ac4e5ac2b3cdfc49baf1798abc68ab5cfc6",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2967,8 +2967,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-back-844.png",
       "beforeSha256": "2031c605e6201d631e2878ed5421dc0d4a3ac2d5f06ff1758a36aa07679a410f",
       "afterSha256": "2322bdbfd7f6c59ff1a80e14f9fa3f570a51c7a8b2029f623ff314d07ceaccfa",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2981,8 +2981,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-back-844-content-end.png",
       "beforeSha256": "2031c605e6201d631e2878ed5421dc0d4a3ac2d5f06ff1758a36aa07679a410f",
       "afterSha256": "2a9c1e99f27529bb0a6bc9609a3b9ecaebbd00c26c7d235456b50f3eba7046e1",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -2995,8 +2995,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-long-back-1440.png",
       "beforeSha256": "609422bcdba4f552f926a6a5fd1174367667e65ae49c2a0d9ff021e6d528a3b0",
       "afterSha256": "b9ec26a55bbe88eea12e802d200baa44b05e487aedc2806fbf468de7f638f1e0",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3009,8 +3009,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-long-visible-390.png",
       "beforeSha256": "23677d7e7f43a958b767184114e8fed0f0f97d3106253b096ed3d5ad788ad1dc",
       "afterSha256": "a42e2c4fd641ff4cbf5a8da4ddbbed30131d4d8bfd20cee049d19b7735aeacf5",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3023,8 +3023,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-long-visible-390-content-end.png",
       "beforeSha256": "18d77cbdd86bf7aa92dd0d96935e26391ba852ac2eb058594ddc2d29560ca80c",
       "afterSha256": "229963553d76af77963b938dfab2d960d7ca530b364f696e2701e843fa89ed55",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3037,8 +3037,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-long-visible-844.png",
       "beforeSha256": "02e90345224131bbb8dc96b199570f5fe750284baab5e4595e75c9aa50c3834d",
       "afterSha256": "ba20eda53f74fe784191b4cd2abd06e363e0eab48f8488c405048b05279a7a3d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3051,8 +3051,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-long-visible-844-content-end.png",
       "beforeSha256": "77f28e6e36845481785284e638eaf5051020f508a124bb734acc04659142c338",
       "afterSha256": "ee67dea147662b574e3e82b7cac19b5049f4b79ff4659791732be23f2d8c3e25",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3065,8 +3065,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-long-visible-1440.png",
       "beforeSha256": "b39c96a34ecd033622c5699a73ed8595da1b2d1ca4a59d54fa21eabbc53fbb9f",
       "afterSha256": "137a93f007d87a684ff00a4e69f2e4ee5bc4361a1a6d350b5288f107c7aead8f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3079,8 +3079,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/practice-flashcards-loading-390.png",
       "beforeSha256": "581f69dc38c476421a5077813eae98ebe4fa4f0c5f695fb6db4a170aa20ea973",
       "afterSha256": "e010c552fa5f488c0cf8d625278694319c41a3abd2083e9b48cadabbe72a4398",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3093,8 +3093,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/practice-flashcards-loading-1440.png",
       "beforeSha256": "8427c81eab4cf53dd6e867a767c474a6618837d6a883e2c58e1d2ee3229508a1",
       "afterSha256": "9dad0e25030693a552e3bf94625274a8ec4ac08b46944fc02c46cfd2d0c4568d",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3107,8 +3107,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flashcards-safe-landscape-844.png",
       "beforeSha256": "77f189647958b941a2905a14077fe63c2bc516fd928b654459862a85cf3e49a5",
       "afterSha256": "a474f1f573ad924fc14dccd84e19eacb6aab057d750baf33fc804783c50e53be",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3121,8 +3121,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-safe-landscape-844.png",
       "beforeSha256": "10ec24e8b0786ee2641c9c5a70f9f973160cf3d30df1749f1b5284e7e32fc5cb",
       "afterSha256": "8aa38163e270e7612dbd3109a0ca52c0f932fd42a39f9498b1466bae88bd8dc8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3135,8 +3135,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-safe-landscape-844.png",
       "beforeSha256": "e6041e8a3eba909b717d432c9e0245d2c90a64685383458fdb8e5654220f57a3",
       "afterSha256": "564e92c71caff7e777d080a5cd8ac2515e8921de5bf11341c3ccf8ee6341d3ed",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3149,8 +3149,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-front-short-390.png",
       "beforeSha256": "aa9a448c71f688365ffb2c3e6a009c73e1c823e69eaf94ff2f423fbf2b56c4dd",
       "afterSha256": "074d267a370b62920714f305f8f5abfa1f5eae7224aeef2ce9074e9f09b5ed86",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3163,8 +3163,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-front-390.png",
       "beforeSha256": "22f2ad20bf91e4f7e3712cd4c161aa9f01d0b01aae20499edd3306c04018f505",
       "afterSha256": "92dc338dd2e72bf08613535d6c99d179f4267a72f139c3d6b983eb2abb06c295",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3177,8 +3177,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-front-844.png",
       "beforeSha256": "480fad9d1f5708aca8a776299abcbd66d15a6ae654eaa8f75e4289dbb67fa86e",
       "afterSha256": "4038ff76e6799647484bd1e508e99657b690533b5035ad5b7fcb41beb482ebed",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3191,8 +3191,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-front-1440.png",
       "beforeSha256": "aafc176f7ba664bee446193f2e0bcecafa1960f01aacfce933bf7b134391dffa",
       "afterSha256": "68e04c7bb38d06e0310c6ed3e735eb7bf26018486d3feddf5a834a7084df3471",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3205,8 +3205,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-back-short-390.png",
       "beforeSha256": "4f9cb9bf0f5aaa53570212529299526c035c20d64edf93ce5e94d4ff9c2c5d4a",
       "afterSha256": "98df61e72a717444259a044f4f6704eb4c261fa8380773e5cdf5ea1f5db541ca",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3219,8 +3219,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-back-390.png",
       "beforeSha256": "759587b73b518efcc823bb9130fd3f19a6fe1d1aa3be6c06c5db6e2da72f663c",
       "afterSha256": "f43cbfb83c3c4409be1fe290f2850cb564aa2aab222b9787437804c8e9c5d592",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3233,8 +3233,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-back-844.png",
       "beforeSha256": "d9c5257e1f03238330b1dd126489714ca64af8c044b980eabdc122633b09212f",
       "afterSha256": "5ba7f56e5bc373919b667e93eb326f4356a1016acfa39f5218a35870f4d392b3",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3247,8 +3247,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/vocabulary-back-1440.png",
       "beforeSha256": "d2ac47943447ddaa17e58923466056450a7839efe179251a7cac7a9fd1def867",
       "afterSha256": "60fb226cf53568c10bfc7008ec132b868883a1aa3c69f1aebb7cecb04236d044",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3261,8 +3261,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-short-390.png",
       "beforeSha256": "9e57fbea376126b47f9b8617a826a02ca0fa204484de0a5b12dd1bcae4ee462c",
       "afterSha256": "6965cb0d23f591747bd6428a51b97fba505dd245d3c8fcb7afca600353c7bad8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3275,8 +3275,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-short-390-completion-end.png",
       "beforeSha256": "9e57fbea376126b47f9b8617a826a02ca0fa204484de0a5b12dd1bcae4ee462c",
       "afterSha256": "6965cb0d23f591747bd6428a51b97fba505dd245d3c8fcb7afca600353c7bad8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3289,8 +3289,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-390.png",
       "beforeSha256": "fa97a101dcbf8d3d7da8bf846ee7fa75056c4e598a22b92d8c92759b21554129",
       "afterSha256": "fa97a101dcbf8d3d7da8bf846ee7fa75056c4e598a22b92d8c92759b21554129",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3303,8 +3303,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-768.png",
       "beforeSha256": "63938c9e5f2dde3712bfb6f226dc5108038b79667cefa9c186b1e11dc67e96a8",
       "afterSha256": "63938c9e5f2dde3712bfb6f226dc5108038b79667cefa9c186b1e11dc67e96a8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3317,8 +3317,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-844.png",
       "beforeSha256": "46ff4614b3e641f14b999f78c5eb405cebf604d7d54080f15632c6f915a9c279",
       "afterSha256": "2eec99eb6af78e9a887681aea7a3958f4ac8a3fde9f6bac64da5c70497890384",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3331,8 +3331,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-844-completion-end.png",
       "beforeSha256": "46ff4614b3e641f14b999f78c5eb405cebf604d7d54080f15632c6f915a9c279",
       "afterSha256": "a8f9b9e2c9db4e4c0320524ac57769deb753d02880ec9bcbf81bd0bd2a289673",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3345,8 +3345,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/flash-completed-1440.png",
       "beforeSha256": "16c3894d5eef760c323ef94ebcd5a10e6214f11fe6840740ac6514c12fd1d945",
       "afterSha256": "16c3894d5eef760c323ef94ebcd5a10e6214f11fe6840740ac6514c12fd1d945",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3359,8 +3359,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-short-390.png",
       "beforeSha256": "9deb72bed4778ebed03b8ebba6e07f21ea1d8f2e47ba9604db6b1282550bec2f",
       "afterSha256": "9deb72bed4778ebed03b8ebba6e07f21ea1d8f2e47ba9604db6b1282550bec2f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3373,8 +3373,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-short-390-completion-end.png",
       "beforeSha256": "9deb72bed4778ebed03b8ebba6e07f21ea1d8f2e47ba9604db6b1282550bec2f",
       "afterSha256": "9deb72bed4778ebed03b8ebba6e07f21ea1d8f2e47ba9604db6b1282550bec2f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3387,8 +3387,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-390.png",
       "beforeSha256": "b61f6ec3776953773f1b092c68a6f82eddd3f9588f02bcc141b64803f7564d8e",
       "afterSha256": "b61f6ec3776953773f1b092c68a6f82eddd3f9588f02bcc141b64803f7564d8e",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3401,8 +3401,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-768.png",
       "beforeSha256": "e5399f8e27afab919492d84c584bdf6f017fa100ee39f0e0001cdae27f0a1861",
       "afterSha256": "e5399f8e27afab919492d84c584bdf6f017fa100ee39f0e0001cdae27f0a1861",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3415,8 +3415,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-844.png",
       "beforeSha256": "47705e7534cd4c549d4b7ac144abdde4d3e957458469dc671d587e648eca068a",
       "afterSha256": "60cc91ecc9631646580e1331b9184a84072171c690d9531c644a788b05fecb94",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3429,8 +3429,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-844-completion-end.png",
       "beforeSha256": "47705e7534cd4c549d4b7ac144abdde4d3e957458469dc671d587e648eca068a",
       "afterSha256": "46ffeb85c9f033f0157705ce72de9ffa75964e25130d26fe0e72bf026a2c72df",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3443,8 +3443,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/shadowing-completed-1440.png",
       "beforeSha256": "0bcb57eb824dcdd3412db02aa8214a8177249ab21c8e97c56475b1e9175e7af8",
       "afterSha256": "0bcb57eb824dcdd3412db02aa8214a8177249ab21c8e97c56475b1e9175e7af8",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3457,8 +3457,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-short-390.png",
       "beforeSha256": "4ea68fe2311b2ca3197319c2c2e3fff195a0d3dd5f991ad629642be84b84da01",
       "afterSha256": "4ea68fe2311b2ca3197319c2c2e3fff195a0d3dd5f991ad629642be84b84da01",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3471,8 +3471,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-short-390-completion-end.png",
       "beforeSha256": "4ea68fe2311b2ca3197319c2c2e3fff195a0d3dd5f991ad629642be84b84da01",
       "afterSha256": "4ea68fe2311b2ca3197319c2c2e3fff195a0d3dd5f991ad629642be84b84da01",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3485,8 +3485,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-390.png",
       "beforeSha256": "575fd62e1ffed2cef7a4916b3855171639c98411020faf74b7caca285e2c551b",
       "afterSha256": "575fd62e1ffed2cef7a4916b3855171639c98411020faf74b7caca285e2c551b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3499,8 +3499,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-768.png",
       "beforeSha256": "d0fc5b29841b132cb4432552387181d75a425cde674af1c775c1d938b3bbb25b",
       "afterSha256": "d0fc5b29841b132cb4432552387181d75a425cde674af1c775c1d938b3bbb25b",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3513,8 +3513,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-844.png",
       "beforeSha256": "78d8b97783ee6c11554744c5e6731ea53b3fd6e10ac643e2cc195b705e66e181",
       "afterSha256": "9123b2cd7afa18923c505c2c52d2a2d4d50f4204d68efecd93b8aa674ed2e9e7",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3527,8 +3527,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-844-completion-end.png",
       "beforeSha256": "78d8b97783ee6c11554744c5e6731ea53b3fd6e10ac643e2cc195b705e66e181",
       "afterSha256": "8913eac14af9b9df8697cc2e99ced82662e554b716a160484233d014aa264135",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "student",
@@ -3541,8 +3541,8 @@
       "after": ".github/evidence/visual-fixes-20261016/student/after/music-completed-1440.png",
       "beforeSha256": "712dfe1e54fa8bf7c539fd3beeaca74a331e823e06da910725c0b8e03881040f",
       "afterSha256": "712dfe1e54fa8bf7c539fd3beeaca74a331e823e06da910725c0b8e03881040f",
-      "afterCapturedRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-      "validatedCandidateRuntimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150"
+      "afterCapturedRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+      "validatedCandidateRuntimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220"
     },
     {
       "group": "admin",
@@ -3666,8 +3666,8 @@
     }
   ],
   "captureRevision": {
-    "runtimeSha256": "a581b7f764edb9ccc1b1b0bcff5a78ad7990559cdb3e4d2b2ef8e86a2dd02150",
-    "sourceDigest": "e8f8e13d0422319fb02d73d172a5e8eccf8cf6bbf13b7e28879ef06a4d29aa1e",
+    "runtimeSha256": "697c1521ec7448e831cc0afe3e76c7cb7573d1a2499fbab47b588f3a1e708220",
+    "sourceDigest": "68069b45604c93c1792a3e6e61f45c3118aab4435c32edce16c2fc209fae0742",
     "policy": "All affected UI, Teacher and Student after images refreshed for the current candidate, including completed sessions."
   }
 }

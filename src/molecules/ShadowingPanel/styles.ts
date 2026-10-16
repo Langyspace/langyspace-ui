@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Root as Reader } from '../ShadowingReader/styles'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-panel',
@@ -23,12 +22,12 @@ export const Root = styled.div.withConfig({
     max-height: none;
   }
 
-  &:has(> ${Reader}) {
+  &:has(> [data-ui-shadowing-reader]) {
     ${compactPracticeLayout}
   }
 
   @media (max-width: 900px) {
-    &:has(> header):not(:has(> ${Reader})) {
+    &:has(> header):not(:has(> [data-ui-shadowing-reader])) {
       overflow: auto;
 
       > :not(header) {

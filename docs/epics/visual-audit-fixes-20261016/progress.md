@@ -1,11 +1,9 @@
 # Progresso
 
-Preparação da UI concluída: F01/F02/F04 e contrato que permite corrigir F05, com ShadowingPanel sem props específicas por produto. F03 permanece no Admin, que controla a seleção pela URL.
+Correções dos cinco achados implementadas. O product owner autorizou a integração/publicação em 16/10/2026 pelo pedido de garantir todas as alterações em produção e alinhar branches. As imagens atuais preservam a composição autorizada: 252/254 capturas idênticas; duas têm apenas 27 pixels de antialiasing no banner de pagamento inalterado. Estudo e layouts idênticos; prova em ci-repair-equivalence.json.
 
-Candidato 2.1.0 imutável e tipado, API aditiva, checks focais e evidências registrados. Todas as capturas Depois de UI/Teacher/Student foram refeitas com o candidato atual, incluindo conclusões em retrato e landscape. O manifesto registra o runtime e os hashes dos PNGs. Pins e checks de adoção são acompanhados nos documentos de cada produto.
+CI reparada: marcadores sem novas props eliminam imports privados; distribuição remove comentários de região do compilador, preservando licenças e pure annotations. Orçamento original mantido; flashcards 20.467/22.000 bytes e gzip 5.440/6.000. Arquitetura, lint, formatação, API, pacote e browser focais passaram.
 
-Próxima etapa: **revisão humana da UI e dos PRs consumidores deste lote**. Depois do aceite, os gates técnicos e o artefato oficial continuam obrigatórios para integrar.
+Próxima etapa: concluir os gates desta revisão no Actions e publicar o pacote oficial 2.1.0; depois adotar nos dois portais e verificar staging/produção. Recibos e roteiro de retomada em ~/.local/langyspace-ui-visual-fixes-20261016/production-20261016/ e delivery.md. Não presumir deploy a partir do merge.
 
-Não houve merge, tag, release oficial ou deploy. Worktrees de revisão preservados em branches isoladas; fontes canônicas mantidas.
-
-Visual gate review: pending human
+Visual gate review: accepted by human

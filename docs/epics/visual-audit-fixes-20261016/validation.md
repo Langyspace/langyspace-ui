@@ -29,8 +29,12 @@ Capturas usam Chromium, tema atual, dados sintéticos estáveis e viewport igual
 
 As imagens não certificam Safari, hardware móvel, teclado virtual ou leitores de tela. A composição compacta reserva controles e prioriza texto sobre ilustração; frases longas continuam roláveis. O produto mantém estado, dados, rotas e decisões de estudo.
 
-Visual gate review: pending human
+Visual gate review: accepted by human
 
 ## Revisão do candidato atual
 
 Todas as capturas Depois da UI, Teacher e Student foram refeitas com o candidato atual, incluindo as conclusões de flashcards, shadowing e música. O manifesto vincula cada imagem ao hash do runtime. As conclusões mantêm uma coluna e permitem alcançar as ações por rolagem em telas baixas; apenas as sessões com Stage/Reader usam a grade compacta. Stories novas de conclusão têm identificação explícita de ausência de versão anterior; os produtos possuem comparação real.
+
+## Reparos técnicos para publicar
+
+Arquitetura, lint, formatação, API e smoke do candidato atual passaram; marcadores DOM mantêm composição sem imports privados. O pacote distribuído omite apenas comentários de região gerados pelo compilador, mantendo licenças e pure annotations. Flashcards: 20.467 bytes raw e 5.440 gzip, abaixo dos limites existentes de 22.000/6.000. Não houve aumento de orçamento. Recaptura completa e comparação em ci-repair-equivalence.json; não são novas alterações visuais.

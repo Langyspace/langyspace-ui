@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Root as FlipHint } from '../FlashcardFlipHint/styles'
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-front',
 })`
@@ -21,7 +20,7 @@ export const Root = styled.div.withConfig({
     align-content: safe center;
     gap: var(--fc-word-zone-gap);
 
-    > ${FlipHint} {
+    > [data-ui-flashcard-flip-hint] {
       grid-column: 1 / -1;
     }
   }

@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Root as Stage } from '../FlashcardStage/styles'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
 import * as token from '../../foundations/tokenValues'
 export const Root = styled.section.withConfig({
@@ -58,8 +57,8 @@ export const Root = styled.section.withConfig({
   --fc-word-font-size: 2.125rem;
   --fc-back-translation-size: 1.6875rem;
 
-  &:has(> header):has(> ${Stage}),
-  &:has(> footer):has(> ${Stage}) {
+  &:has(> header):has(> [data-ui-flashcard-stage]),
+  &:has(> footer):has(> [data-ui-flashcard-stage]) {
     ${compactPracticeLayout}
 
     @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
@@ -80,7 +79,7 @@ export const Root = styled.section.withConfig({
   }
 
   @media (max-width: 900px) {
-    &:has(> header):not(:has(> ${Stage})) {
+    &:has(> header):not(:has(> [data-ui-flashcard-stage])) {
       overflow: auto;
 
       > :not(header) {
