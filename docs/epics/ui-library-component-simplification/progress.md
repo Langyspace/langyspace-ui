@@ -1,6 +1,7 @@
 # Progresso
 
-O primeiro lote está preparado na branch `refactor/consolidate-button-variants`.
+O primeiro lote foi integrado pelo PR #32 em 2026-10-17, após aceite humano e
+todos os gates de arquitetura, pacote, testes e quatro partições de layout.
 A revisão geral continua organizada pelas famílias do plano; as famílias restantes
 não estão declaradas como migradas.
 
@@ -14,8 +15,8 @@ não estão declaradas como migradas.
 - Os exports públicos antigos continuam disponíveis. O manifesto distingue uma
   implementação canônica de um nome mantido por compatibilidade, com os mesmos
   requisitos de teste, story, documentação e smoke.
-- A próxima minor está preparada como 2.2.0. Nenhum pacote ou tag foi publicado,
-  nenhum produto foi atualizado e nenhum deploy de produto foi iniciado.
+- A minor 2.2.0 está em preparação de release. Nenhum deploy de produto foi
+  concluído nesta etapa; a adoção do Admin está em sua feature branch.
 - AGENTS.md e a referência nativa de qualidade agora explicitam o uso de props
   para variações e a exigência de propósito claro para extrair componentes.
 
@@ -63,3 +64,12 @@ e spinner direto de ação com caixa. As fixtures e a auditoria focada das 11 st
 (66 cenários) passam. As 42 comparações visuais foram renovadas após o marcador: PNGs, geometria e
 37 propriedades computadas continuam idênticos à baseline aprovada. Nenhuma exigência de altura dos botões
 com caixa foi reduzida.
+
+## Publicação autorizada
+
+PR #32 integrado em 66f674c8615113e7deba2bad78ca4d5d80b5f24d.
+CI da revisão: https://github.com/MarcosLaboriosi/langyspace-ui/actions/runs/39072937561
+Todos os oito jobs concluídos com sucesso. O README aponta agora para a versão
+correspondente do contrato; essa atualização documental não altera renderização.
+A próxima tarefa é conferir o asset oficial 2.2.0 após a execução de release e
+liberar a adoção no Admin, preservando o gate de revisão desse PR de produto.

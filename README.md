@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Este checkout prepara o contrato **2.2.0**, ainda em revisão. A versão estável anterior é **2.1.0**; a publicação da próxima minor depende dos gates e do aceite da revisão atual. Os guias descrevem o código deste checkout. Os novos variants text/text-subtle/text-danger de Button ainda não fazem parte do artefato estável 2.1.0. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+Este checkout contém o contrato **2.2.0**, com ações de texto consolidadas em Button. Os guias descrevem essa versão; a instalação usa o artefato oficial correspondente. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
 Para a versão oficial atual:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v2.1.0/langyspace-ui-2.1.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v2.2.0/langyspace-ui-2.2.0.tgz'
 ```
 
 O candidato deve ser instalado pelo artefato imutável identificado na entrega, com sua integridade registrada. Não usar uma branch móvel ou um link local na dependência entregue.
