@@ -24,14 +24,30 @@ describe('public component manifest', () => {
     expect(new Set(manifestExports).size).toBe(manifestExports.length)
   })
 
-  it('points every component at an owner in its declared layer', async () => {
+  it('points every component or compatibility export at its implementation owner', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      expect(contract.ownerPath).toMatch(
-        new RegExp(
-          `^src/${contract.layer}s/${contract.exportName}/index\\.tsx$`,
-        ),
+      const owner = contract.compatibilityFor ?? contract.exportName
+      const folder = `src/${contract.layer}s/${owner}`
+
+      expect(contract.ownerPath).toBe(
+        `${folder}/${contract.compatibilityFor ? 'compatibility.tsx' : 'index.tsx'}`,
       )
+
+      if (contract.compatibilityFor) {
+        const canonical: ComponentContract | undefined =
+          publicComponentContracts.find(
+            (candidate) => candidate.exportName === owner,
+          )
+
+        expect(canonical).toBeDefined()
+        expect(canonical?.compatibilityFor).toBeUndefined()
+        expect(canonical?.layer).toBe(contract.layer)
+        expect(canonical?.exportName).not.toBe(contract.exportName)
+        expect(
+          readFileSync(resolve(root, contract.ownerPath), 'utf8'),
+        ).toContain(`export function ${contract.exportName}`)
+      }
       await expect(
         access(resolve(root, contract.ownerPath)),
       ).resolves.toBeUndefined()
@@ -42,11 +58,12 @@ describe('public component manifest', () => {
   it('keeps every public component completely covered', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
+      const owner = contract.compatibilityFor ?? contract.exportName
       expect(contract.test.path).toBe(
-        `src/${contract.layer}s/${contract.exportName}/${contract.exportName}.test.tsx`,
+        `src/${contract.layer}s/${owner}/${contract.exportName}.test.tsx`,
       )
       expect(contract.story.path).toBe(
-        `src/${contract.layer}s/${contract.exportName}/${contract.exportName}.stories.tsx`,
+        `src/${contract.layer}s/${owner}/${contract.exportName}.stories.tsx`,
       )
 
       for (const coverage of [

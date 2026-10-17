@@ -70,11 +70,25 @@ Cuidados: Usar Button para comandos; não interceptar navegação sem preservar 
 
 ## Button
 
-Comando rotulado, com receita comum de ação e type button seguro por padrão.
+Comando rotulado, com variantes de ação e texto e type button seguro por padrão.
 
 Contrato: variant, size, density, fullWidth, iconStart/iconEnd, isLoading e children.
 
 Cuidados: Durante loading mantém o rótulo e bloqueia cliques. Submit exige type="submit"; glyph isolado usa IconButton.
+
+Escolha a aparência com props do mesmo componente:
+
+```tsx
+<Button variant="primary">Continuar</Button>
+<Button variant="secondary">Cancelar</Button>
+<Button variant="text">Editar detalhes</Button>
+<Button variant="text-subtle">Limpar filtros</Button>
+<Button variant="text-danger">Remover item</Button>
+```
+
+Os variants de texto mantêm altura intrínseca e herdam a tipografia do contexto;
+size e density dimensionam os variants de ação com caixa. fullWidth continua
+disponível. Não adicionar um componente público para uma nova cor ou hierarquia.
 
 ## Checkbox
 
@@ -214,11 +228,14 @@ Cuidados: Não mover enums, carregamento ou regras para o componente. CompoundCo
 
 ## TextButton
 
-Ação textual de baixa ênfase com semântica de button e foco próprio.
+Adaptador de compatibilidade para Button; não possui uma segunda receita visual.
 
 Contrato: variant emphasized/subtle/danger, iconStart/iconEnd, children e atributos/ref nativos.
 
-Cuidados: Navegação usa ActionLink ou âncora semântica. O consumidor fornece texto e callbacks, sem reconstruir underline/hover por CSS.
+Novos usos preferem Button: emphasized corresponde a text, subtle a text-subtle
+e danger a text-danger. O adaptador mantém atributos, ref, ícones diretos,
+data-variant e composição styled(TextButton) existentes. Navegação usa ActionLink
+ou âncora semântica.
 
 ## TextInput
 

@@ -1,5 +1,9 @@
 # Shared component quality
 
+- Check an existing component's props before extracting another component. Use variants for
+  appearance changes within the same structure/interaction; do not split every visual detail
+  into a public React component. Keep markup inline when extraction adds navigation without a
+  clear responsibility or useful reuse. Group compatibility adapters with their real owner.
 - Inspect the existing component, stories, tests, root exports, tokens, audit configuration, API
   snapshot, bundle budgets, and representative downstream composition before implementation.
 - Register each new public component export in `quality/component-manifest.ts` with its owner, props, documentation, consumers and real test/story/browser/SSR coverage. Run the focused `quality/ComponentManifest.test.ts` when that catalog changes.

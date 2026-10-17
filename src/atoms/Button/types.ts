@@ -3,10 +3,21 @@ import type {
   ActionDensity,
   ActionRecipeStyleProps,
   ActionSize,
-  ActionVariant,
 } from '../../foundations/actions/types'
 
-export type ButtonVariant = ActionVariant
+export type ButtonTextVariant = 'text' | 'text-subtle' | 'text-danger'
+
+export type ButtonVariant =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'brand'
+  | 'danger'
+  | 'success'
+  | 'inverse'
+  | 'text'
+  | 'text-subtle'
+  | 'text-danger'
 
 export type ButtonSize = ActionSize
 
@@ -28,4 +39,6 @@ export interface ButtonProps extends NativeButtonProps {
   variant?: ButtonVariant
 }
 
-export type ButtonStyleProps = ActionRecipeStyleProps
+export interface ButtonStyleProps extends ActionRecipeStyleProps {
+  $textVariant?: ButtonTextVariant
+}

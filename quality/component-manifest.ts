@@ -3,6 +3,7 @@ export type ComponentLayer = 'atom' | 'molecule' | 'primitive'
 type Coverage = { status: 'complete' }
 
 export interface ComponentContract {
+  compatibilityFor?: string
   browserSmoke: Coverage
   exportName: string
   interactive: boolean
@@ -2779,22 +2780,23 @@ export const publicComponentContracts = [
   {
     browserSmoke: complete,
     exportName: 'TextButton',
+    compatibilityFor: 'Button',
     interactive: true,
     layer: 'atom',
-    ownerPath: 'src/atoms/TextButton/index.tsx',
+    ownerPath: 'src/atoms/Button/compatibility.tsx',
     runtimeMarker: 'lsui-sc-text-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/TextButton/TextButton.stories.tsx',
+      path: 'src/atoms/Button/TextButton.stories.tsx',
       title: 'Atoms/TextButton',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/TextButton/TextButton.test.tsx',
+      path: 'src/atoms/Button/TextButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/TextButton/types.ts',
+      propsPath: 'src/atoms/Button/compatibility.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'textbutton',

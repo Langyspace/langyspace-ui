@@ -58,6 +58,12 @@
 
 ## Library contracts
 
+- Use props for visual variations of the same structure and interaction, such as
+  `Button variant="primary"`, `"secondary"` or `"text"`. Do not create another public
+  component just for a color, size, spacing or product-specific name. Extract components only
+  for a clear responsibility, meaningful reuse or an independent interaction contract.
+- Keep compatibility adapters beside their canonical owner while consumers migrate. They should
+  delegate presentation and behavior instead of keeping another recipe or component directory.
 - Product route-level pages, screens, views, and containers stay in their consumer repositories.
   Public components may be small or large: accept them when they express a stable visual or
   interaction contract reusable across products, including compound units such as `Chat` or

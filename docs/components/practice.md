@@ -92,7 +92,7 @@ export function VocabularyExample({ onPlay, onRate }: VocabularyExampleProps) {
 }
 ```
 
-O exemplo usa o candidato major2.0.0 ainda não publicado. O produto decide transições, saída, retorno de foco e persistência. A face inativa fica inert/aria-hidden; os comandos de virar e ouvir são irmãos. FlashcardFrame define o contexto CSS da família; não é necessário um ThemeProvider externo. Imagens e áudio reais têm tratamento de falhas no produto.
+O exemplo usa a composição atual de vocabulário. O produto decide transições, saída, retorno de foco e persistência. A face inativa fica inert/aria-hidden; os comandos de virar e ouvir são irmãos. FlashcardFrame define o contexto CSS da família; não é necessário um ThemeProvider externo. Imagens e áudio reais têm tratamento de falhas no produto.
 
 FlashcardWord/Back/Feedback possuem sua anatomia: os consumidores não escrevem classes word/en/translation/message. São poucos slots estáveis de conteúdo; não há flags por projeto, componente fabricado por schema nem export público para cada linha tipográfica. FlashcardAudioButton substitui a mesma apresentação de pronúncia nos dois produtos.
 
