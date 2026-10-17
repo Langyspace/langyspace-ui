@@ -49,3 +49,17 @@ cópias em consumidores. Uma fixture de consumidor com o mesmo caminho relativo
 continua falhando. Os 12 contratos do auditor e os 731 arquivos de produção passam.
 Não houve alteração dos quatro arquivos de renderização; a evidência visual permanece
 válida. Publicação e adoções continuam pendentes dos gates remotos.
+
+## Contratos da auditoria de layout
+
+A execução 39072212345 aplicou a altura mínima de botões com caixa aos variants
+de texto e exigiu seu wrapper de spinner. Button agora expõe somente um marcador
+DOM interno de aparência; não muda CSS, árvore de filhos, props ou interação.
+A auditoria distingue a altura de linha dos textos dos mínimos 32/40/48 px das
+ações com caixa e aceita spinner direto somente na aparência de texto.
+
+Fixtures negativas continuam rejeitando ação com caixa de 19 px, texto cortado
+e spinner direto de ação com caixa. As fixtures e a auditoria focada das 11 stories
+(66 cenários) passam. As 42 comparações visuais foram renovadas após o marcador: PNGs, geometria e
+37 propriedades computadas continuam idênticos à baseline aprovada. Nenhuma exigência de altura dos botões
+com caixa foi reduzida.

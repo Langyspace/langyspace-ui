@@ -30,6 +30,7 @@ export function Button({
       $size={size}
       $variant={isText ? 'primary' : variant}
       $textVariant={isText ? variant : undefined}
+      data-action-appearance={isText ? 'text' : 'button'}
       data-loading={isLoading ? 'true' : undefined}
       data-density={density}
       data-size={size}
