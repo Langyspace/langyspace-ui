@@ -1,0 +1,2851 @@
+{
+  "baseline": "21828ca2c914e2ae59ba47007b7a25c0a4339644",
+  "beforeUi": "2.0.0",
+  "afterUi": "2.2.0",
+  "renderedUiSource": "627ab29024e7ef1c632257954ac69ab1575533b2",
+  "releaseUiSource": "914164b30767de42b5e32c11dfdbbcc4c2e176bd",
+  "runtimeByteIdenticalToReleaseCandidate": true,
+  "fixture": "Repository design mocks and synthetic isolated callable responses. External network blocked; no production records or provider actions.",
+  "states": 107,
+  "pairs": 189,
+  "pngByteIdentical": 186,
+  "rows": [
+    {
+      "number": 1,
+      "case": "access-denied-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/001.png",
+          "sha256": "20b38e06f5a72ede665fa9b6f2cd041006269c3029c7debef7b5d3dbef357b18"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/001.png",
+          "sha256": "20b38e06f5a72ede665fa9b6f2cd041006269c3029c7debef7b5d3dbef357b18"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 2,
+      "case": "access-denied-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/002.png",
+          "sha256": "7d2fd8bd6f232feb48333fb5b8d376aac72b3270ab68a97d9d565d97eb443e7c"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/002.png",
+          "sha256": "7d2fd8bd6f232feb48333fb5b8d376aac72b3270ab68a97d9d565d97eb443e7c"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 3,
+      "case": "agenda-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/003.png",
+          "sha256": "0ef5027ee21f003a57c9ba71600159e7cd3a1c7b0abf4017673e81957c7ffa30"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/003.png",
+          "sha256": "0ef5027ee21f003a57c9ba71600159e7cd3a1c7b0abf4017673e81957c7ffa30"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 4,
+      "case": "agenda-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/004.png",
+          "sha256": "67330ef74335979d6ba4cd28468be8eae4722bb5fb72cdaf6c328acb6f729f11"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/004.png",
+          "sha256": "67330ef74335979d6ba4cd28468be8eae4722bb5fb72cdaf6c328acb6f729f11"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 5,
+      "case": "agenda-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/005.png",
+          "sha256": "0cc66ad6624efbb834edc42c2e51e19050933a7e537af0f82910a8fd348b07e7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/005.png",
+          "sha256": "0cc66ad6624efbb834edc42c2e51e19050933a7e537af0f82910a8fd348b07e7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 6,
+      "case": "agenda-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/006.png",
+          "sha256": "2e88a3152fdeecb31b0d3df0a804f85584f594d2c3cde6744f7dc5515719170b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/006.png",
+          "sha256": "2e88a3152fdeecb31b0d3df0a804f85584f594d2c3cde6744f7dc5515719170b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 7,
+      "case": "billing-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/007.png",
+          "sha256": "4d45066b5c23176424c20539a6e3cbf12ebed69a330f471ae645d8bfb55dbf13"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/007.png",
+          "sha256": "4d45066b5c23176424c20539a6e3cbf12ebed69a330f471ae645d8bfb55dbf13"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 8,
+      "case": "billing-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/008.png",
+          "sha256": "042339eeda399e0dc8f7b4bce8d21d7a49bd75cba0dec493538fb39067fb9187"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/008.png",
+          "sha256": "042339eeda399e0dc8f7b4bce8d21d7a49bd75cba0dec493538fb39067fb9187"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 9,
+      "case": "billing-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/009.png",
+          "sha256": "c4ddc9131844752d9cf7a48677ff57aaf6b32c9d5a7bcbc0bd6169e9107c5dde"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/009.png",
+          "sha256": "c4ddc9131844752d9cf7a48677ff57aaf6b32c9d5a7bcbc0bd6169e9107c5dde"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 10,
+      "case": "billing-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/010.png",
+          "sha256": "9be6b5f9a7b46a4e74da37ebf4744dbcdaa573df64d5e7baa660a966180af5b3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/010.png",
+          "sha256": "9be6b5f9a7b46a4e74da37ebf4744dbcdaa573df64d5e7baa660a966180af5b3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 11,
+      "case": "billing-drawer-1440-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/011.png",
+          "sha256": "4a4a61fba670c250e6a33218f7cc5af9d415cbf0a8f4823b7913273470b9c2b9"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/011.png",
+          "sha256": "4a4a61fba670c250e6a33218f7cc5af9d415cbf0a8f4823b7913273470b9c2b9"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 12,
+      "case": "billing-drawer-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/012.png",
+          "sha256": "11791d66d0aa880ca92e56cdf0dc905e36686a5e3a1ce5f14d67c029831ab2bb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/012.png",
+          "sha256": "11791d66d0aa880ca92e56cdf0dc905e36686a5e3a1ce5f14d67c029831ab2bb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 13,
+      "case": "billing-drawer-390-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/013.png",
+          "sha256": "26ab56db682f9c14a074f8d6003b895e7d41d89475935ec020184db741120ae0"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/013.png",
+          "sha256": "26ab56db682f9c14a074f8d6003b895e7d41d89475935ec020184db741120ae0"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 14,
+      "case": "billing-drawer-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/014.png",
+          "sha256": "7157f3655914b3b7e5df5c19ad6d4a7674573d5c324ae327fd96c8056f7df0aa"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/014.png",
+          "sha256": "7157f3655914b3b7e5df5c19ad6d4a7674573d5c324ae327fd96c8056f7df0aa"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 15,
+      "case": "class-drawer-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/015.png",
+          "sha256": "cb095cae2eeca8524db686acc14d9ccc07342c4ca64093b1aa02ca84fb5cb56b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/015.png",
+          "sha256": "cb095cae2eeca8524db686acc14d9ccc07342c4ca64093b1aa02ca84fb5cb56b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 16,
+      "case": "class-drawer-390-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/016.png",
+          "sha256": "45d06d1779e9ed09c231d95e4aa06fa549ddacf3b570d2840040102b6533e262"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/016.png",
+          "sha256": "45d06d1779e9ed09c231d95e4aa06fa549ddacf3b570d2840040102b6533e262"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 17,
+      "case": "class-drawer-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/017.png",
+          "sha256": "67c3121c68701605b06aefa8ba37653418e374638d5b8591da19d51b00d430e9"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/017.png",
+          "sha256": "67c3121c68701605b06aefa8ba37653418e374638d5b8591da19d51b00d430e9"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 18,
+      "case": "closing-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/018.png",
+          "sha256": "291baf0b1759b676ca5f3cfb8edd8d2418c7648fb7d10cc07460f29ef9651776"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/018.png",
+          "sha256": "291baf0b1759b676ca5f3cfb8edd8d2418c7648fb7d10cc07460f29ef9651776"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 19,
+      "case": "closing-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/019.png",
+          "sha256": "c42d304d7715f4f206bc701c5e2a459902c684e99f1822a9b161af5dd92bb7cf"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/019.png",
+          "sha256": "c42d304d7715f4f206bc701c5e2a459902c684e99f1822a9b161af5dd92bb7cf"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 20,
+      "case": "closing-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/020.png",
+          "sha256": "47c5fa5515b1d1344cfb775c59a7534976308b6a1834d683eb2ab5ef9c1cf45d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/020.png",
+          "sha256": "47c5fa5515b1d1344cfb775c59a7534976308b6a1834d683eb2ab5ef9c1cf45d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 21,
+      "case": "closing-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/021.png",
+          "sha256": "51d944d9da950e0fded9ae623a861ad5b31ffda023c90cdc2edf5d2447823575"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/021.png",
+          "sha256": "51d944d9da950e0fded9ae623a861ad5b31ffda023c90cdc2edf5d2447823575"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 22,
+      "case": "communication-1440-after-escape",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/022.png",
+          "sha256": "68723bc58f48c674e938cbdf1173a7766611c33eb5a14920c6d406aaa004cca2"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/022.png",
+          "sha256": "68723bc58f48c674e938cbdf1173a7766611c33eb5a14920c6d406aaa004cca2"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 23,
+      "case": "communication-1440-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/023.png",
+          "sha256": "18209e94d7a1159eb71f2ddbb8702fc3d96a725a39129b6261cc9c719dc1f926"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/023.png",
+          "sha256": "18209e94d7a1159eb71f2ddbb8702fc3d96a725a39129b6261cc9c719dc1f926"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 24,
+      "case": "communication-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/024.png",
+          "sha256": "18209e94d7a1159eb71f2ddbb8702fc3d96a725a39129b6261cc9c719dc1f926"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/024.png",
+          "sha256": "18209e94d7a1159eb71f2ddbb8702fc3d96a725a39129b6261cc9c719dc1f926"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 25,
+      "case": "communication-390-after-escape",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/025.png",
+          "sha256": "710e5e870ca06dc76f1e9dc3a25e12c082487a375d22ecb073c935e2f4b45c47"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/025.png",
+          "sha256": "710e5e870ca06dc76f1e9dc3a25e12c082487a375d22ecb073c935e2f4b45c47"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 26,
+      "case": "communication-390-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/026.png",
+          "sha256": "baf9f0579f853d9de58c83446a26edce67fde9dbf32a2866696c57c2ea5fdd73"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/026.png",
+          "sha256": "baf9f0579f853d9de58c83446a26edce67fde9dbf32a2866696c57c2ea5fdd73"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 27,
+      "case": "communication-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/027.png",
+          "sha256": "dc1578e8dd87cbdbd453bea546167a8bea88573a227c8c4e4f05c83ecd3da1c8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/027.png",
+          "sha256": "dc1578e8dd87cbdbd453bea546167a8bea88573a227c8c4e4f05c83ecd3da1c8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 28,
+      "case": "enrollment-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/028.png",
+          "sha256": "14396727622da5bddc62e3ee7bf9929c786c18cbd2cdb67869a985936689ecb4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/028.png",
+          "sha256": "14396727622da5bddc62e3ee7bf9929c786c18cbd2cdb67869a985936689ecb4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 29,
+      "case": "enrollment-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/029.png",
+          "sha256": "fcec5dde34a6130b68aa959316fe51298d8a0ebde9dc15768a85b8521f5a5393"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/029.png",
+          "sha256": "fcec5dde34a6130b68aa959316fe51298d8a0ebde9dc15768a85b8521f5a5393"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 30,
+      "case": "enrollment-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/030.png",
+          "sha256": "81a52c2a75cb7d0e10f7052e793ff95d9500956ec1b919e1d717e6988a8bd891"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/030.png",
+          "sha256": "81a52c2a75cb7d0e10f7052e793ff95d9500956ec1b919e1d717e6988a8bd891"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 31,
+      "case": "enrollment-awaiting_teacher-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/031.png",
+          "sha256": "8dc22319805d4685463f9098b2cd29421bd0e73f8bf5234e41b879181066771e"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/031.png",
+          "sha256": "8dc22319805d4685463f9098b2cd29421bd0e73f8bf5234e41b879181066771e"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 32,
+      "case": "enrollment-awaiting_teacher-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/032.png",
+          "sha256": "e33d67cf55ec221d6ea4218dcfd6012410be877116636530302664610a8d3582"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/032.png",
+          "sha256": "e33d67cf55ec221d6ea4218dcfd6012410be877116636530302664610a8d3582"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 33,
+      "case": "enrollment-awaiting_teacher-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/033.png",
+          "sha256": "d2eda306e8baf827c8b93c7a0c9ecf14248292b4b172df8d527721b3d79cf497"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/033.png",
+          "sha256": "d2eda306e8baf827c8b93c7a0c9ecf14248292b4b172df8d527721b3d79cf497"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 34,
+      "case": "enrollment-awaiting_teacher-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/034.png",
+          "sha256": "0f0ff25a464232466591c138ad5aae19bbd032fd5d936516a904d885be39ace7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/034.png",
+          "sha256": "0f0ff25a464232466591c138ad5aae19bbd032fd5d936516a904d885be39ace7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 35,
+      "case": "enrollment-calendar-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/035.png",
+          "sha256": "4a47402a3458153c494d0a9a354750b476999bec46141258d46046956d2029c4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/035.png",
+          "sha256": "4a47402a3458153c494d0a9a354750b476999bec46141258d46046956d2029c4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 36,
+      "case": "enrollment-calendar-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/036.png",
+          "sha256": "3ec9fbbb6a64514326b4e0cb34dc4971ee354cdb784a62435d65df081d3f990b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/036.png",
+          "sha256": "3ec9fbbb6a64514326b4e0cb34dc4971ee354cdb784a62435d65df081d3f990b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 37,
+      "case": "enrollment-calendar-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/037.png",
+          "sha256": "a97b79f9b5f693eb62569b55d522b11acfece3cab0f8e8d61b8bd77ea143c036"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/037.png",
+          "sha256": "a97b79f9b5f693eb62569b55d522b11acfece3cab0f8e8d61b8bd77ea143c036"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 38,
+      "case": "enrollment-calendar-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/038.png",
+          "sha256": "4c6e94419af8080b1758ec3772a7fb4c1c04a9fe8e4bf5f0a3ebadf3946d6cc5"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/038.png",
+          "sha256": "4c6e94419af8080b1758ec3772a7fb4c1c04a9fe8e4bf5f0a3ebadf3946d6cc5"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 39,
+      "case": "enrollment-dispatch_attention-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/039.png",
+          "sha256": "a7ac2a9a605136342f37d67d8fec6a442ad6ab1ad276341673e1b859384c7a0d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/039.png",
+          "sha256": "1c5d8bfc5b21c57e35d2ef8a453b96e5b75dec75e431a6b8afdf614185c43399"
+        }
+      },
+      "pngByteIdentical": false
+    },
+    {
+      "number": 40,
+      "case": "enrollment-dispatch_attention-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/040.png",
+          "sha256": "8093154d9cc550ec9c5e43b0d7ce350a429a2efdf6bdc17eb2f0c1b7738ff7b3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/040.png",
+          "sha256": "8093154d9cc550ec9c5e43b0d7ce350a429a2efdf6bdc17eb2f0c1b7738ff7b3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 41,
+      "case": "enrollment-dispatch_attention-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/041.png",
+          "sha256": "d12492210615888b7e1803767890eb25d6f72d4499f08e93f8603a79492bca89"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/041.png",
+          "sha256": "d12492210615888b7e1803767890eb25d6f72d4499f08e93f8603a79492bca89"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 42,
+      "case": "enrollment-empty-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/042.png",
+          "sha256": "a4219fd1611c71bacc038fc30defe4d62b1d26b9723291a75eb2b3b08364aba0"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/042.png",
+          "sha256": "a4219fd1611c71bacc038fc30defe4d62b1d26b9723291a75eb2b3b08364aba0"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 43,
+      "case": "enrollment-empty-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/043.png",
+          "sha256": "0e2eb88b682f795a968465c424fb32415139968e5ffa495314435118529ebdbf"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/043.png",
+          "sha256": "0e2eb88b682f795a968465c424fb32415139968e5ffa495314435118529ebdbf"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 44,
+      "case": "enrollment-empty-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/044.png",
+          "sha256": "d1581a08fdb57971c314924bf6ebcf0f56f4a3ea741dec15ccd25fb896d9cbf8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/044.png",
+          "sha256": "d1581a08fdb57971c314924bf6ebcf0f56f4a3ea741dec15ccd25fb896d9cbf8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 45,
+      "case": "enrollment-empty-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/045.png",
+          "sha256": "4c6e94419af8080b1758ec3772a7fb4c1c04a9fe8e4bf5f0a3ebadf3946d6cc5"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/045.png",
+          "sha256": "4c6e94419af8080b1758ec3772a7fb4c1c04a9fe8e4bf5f0a3ebadf3946d6cc5"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 46,
+      "case": "enrollment-exhausted-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/046.png",
+          "sha256": "ffe31787655e7eeb8150906a1cdb20cb7ab5ecfcfe8446fde62d044240b82aa4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/046.png",
+          "sha256": "ffe31787655e7eeb8150906a1cdb20cb7ab5ecfcfe8446fde62d044240b82aa4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 47,
+      "case": "enrollment-exhausted-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/047.png",
+          "sha256": "33d34d17242c4131cdfc12928599ecd1757313fb9ff5a0fbbd5080e6683d202b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/047.png",
+          "sha256": "33d34d17242c4131cdfc12928599ecd1757313fb9ff5a0fbbd5080e6683d202b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 48,
+      "case": "enrollment-exhausted-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/048.png",
+          "sha256": "45f7a5e8c803ea97e155cc6484bf4a49a3d566858c95c4d4b740f824bd90d086"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/048.png",
+          "sha256": "45f7a5e8c803ea97e155cc6484bf4a49a3d566858c95c4d4b740f824bd90d086"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 49,
+      "case": "enrollment-fulfilled-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/049.png",
+          "sha256": "6b984504f9046f76b1e392000ded37939eb46835f01b691f1f681b3cb3d02e60"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/049.png",
+          "sha256": "6b984504f9046f76b1e392000ded37939eb46835f01b691f1f681b3cb3d02e60"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 50,
+      "case": "enrollment-fulfilled-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/050.png",
+          "sha256": "d345590e485a9644ccf0ff8a675cc1be828e455ba717c7188c386b8688d26f5a"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/050.png",
+          "sha256": "d345590e485a9644ccf0ff8a675cc1be828e455ba717c7188c386b8688d26f5a"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 51,
+      "case": "enrollment-fulfilled-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/051.png",
+          "sha256": "33ea690a5921e0e9e4a29be8072c0af946a9d7fd981e08e49fc0fa4c21587ab1"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/051.png",
+          "sha256": "33ea690a5921e0e9e4a29be8072c0af946a9d7fd981e08e49fc0fa4c21587ab1"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 52,
+      "case": "enrollment-fulfilling-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/052.png",
+          "sha256": "120ff875278b3f0d558335308a1c822913a6f63fc8274d8cf72b5b53ff6b4bb6"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/052.png",
+          "sha256": "120ff875278b3f0d558335308a1c822913a6f63fc8274d8cf72b5b53ff6b4bb6"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 53,
+      "case": "enrollment-fulfilling-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/053.png",
+          "sha256": "5659dbe6a09dd3133ce6f8e1d4b3f74bea669348fe3a14a2bc5bb153ce00439d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/053.png",
+          "sha256": "5659dbe6a09dd3133ce6f8e1d4b3f74bea669348fe3a14a2bc5bb153ce00439d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 54,
+      "case": "enrollment-fulfilling-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/054.png",
+          "sha256": "f54917e7320e0e32e31f051d8e5e18eaaee413c5e9981e9a2fbc42170a7185ee"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/054.png",
+          "sha256": "f54917e7320e0e32e31f051d8e5e18eaaee413c5e9981e9a2fbc42170a7185ee"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 55,
+      "case": "enrollment-fulfillment_attention-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/055.png",
+          "sha256": "708f7c27b1adcf69ce198f3c5eb838b23c5e677b112f8f0bd0a2c7eb5d0101fe"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/055.png",
+          "sha256": "708f7c27b1adcf69ce198f3c5eb838b23c5e677b112f8f0bd0a2c7eb5d0101fe"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 56,
+      "case": "enrollment-fulfillment_attention-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/056.png",
+          "sha256": "cda99d289bd15533b2782894c0714d17c3f69086ce374b4d3e98df922d8cc9c8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/056.png",
+          "sha256": "cda99d289bd15533b2782894c0714d17c3f69086ce374b4d3e98df922d8cc9c8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 57,
+      "case": "enrollment-fulfillment_attention-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/057.png",
+          "sha256": "0671c8034fcf50931c4b809c001604060c78f0625a7f2c038b2d9bda0bcf19a3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/057.png",
+          "sha256": "0671c8034fcf50931c4b809c001604060c78f0625a7f2c038b2d9bda0bcf19a3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 58,
+      "case": "enrollment-schedule_attention-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/058.png",
+          "sha256": "ffc20df905030b27588b16b3e227a403843119eecf589ae75d4df3b8e8423fb3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/058.png",
+          "sha256": "ffc20df905030b27588b16b3e227a403843119eecf589ae75d4df3b8e8423fb3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 59,
+      "case": "enrollment-schedule_attention-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/059.png",
+          "sha256": "5fc2ee0ebb6534e59b50016866f0733a2bf695a253980e0e413d45ebada74a32"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/059.png",
+          "sha256": "5fc2ee0ebb6534e59b50016866f0733a2bf695a253980e0e413d45ebada74a32"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 60,
+      "case": "enrollment-schedule_attention-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/060.png",
+          "sha256": "392fccb46cfd5416d1bdc0de76d1e8a7e069a3da89643e96f972f4ea472f05aa"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/060.png",
+          "sha256": "392fccb46cfd5416d1bdc0de76d1e8a7e069a3da89643e96f972f4ea472f05aa"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 61,
+      "case": "expense-landscape-844-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/061.png",
+          "sha256": "59df346aca92c745d3fa18fe453e4ba88cb6ed44dd498dd06b733132f1f3eb55"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/061.png",
+          "sha256": "59df346aca92c745d3fa18fe453e4ba88cb6ed44dd498dd06b733132f1f3eb55"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 62,
+      "case": "expense-landscape-844",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/062.png",
+          "sha256": "ca3fc3042e9a7a299063bb1958ca60ecc849453e1035d537f9cccce977119aa1"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/062.png",
+          "sha256": "ca3fc3042e9a7a299063bb1958ca60ecc849453e1035d537f9cccce977119aa1"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 63,
+      "case": "expenses-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/063.png",
+          "sha256": "5623eb8fb8ef8e757d1bcbbbfb0a3e1bd3f0b64649ec135d80a84a713f7ba051"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/063.png",
+          "sha256": "5623eb8fb8ef8e757d1bcbbbfb0a3e1bd3f0b64649ec135d80a84a713f7ba051"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 64,
+      "case": "expenses-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/064.png",
+          "sha256": "c37f27addd769a875aa97b71a14037366ff503dd9ffa8968bc2fd09dc87dae90"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/064.png",
+          "sha256": "c37f27addd769a875aa97b71a14037366ff503dd9ffa8968bc2fd09dc87dae90"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 65,
+      "case": "expenses-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/065.png",
+          "sha256": "25eb92bbf530d73dad39fb44b380f05da83efdf4b23bb44bc221472b7a1a4bb3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/065.png",
+          "sha256": "25eb92bbf530d73dad39fb44b380f05da83efdf4b23bb44bc221472b7a1a4bb3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 66,
+      "case": "expenses-new-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/066.png",
+          "sha256": "9ec39d7f55bce4478588839537b1f3880cd3ff94402f00011b653e9a132b80e1"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/066.png",
+          "sha256": "9ec39d7f55bce4478588839537b1f3880cd3ff94402f00011b653e9a132b80e1"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 67,
+      "case": "expenses-new-390-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/067.png",
+          "sha256": "252cd770fe872cda323e0a141920389e5b237169fab61a0a7e1055b423b055f5"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/067.png",
+          "sha256": "252cd770fe872cda323e0a141920389e5b237169fab61a0a7e1055b423b055f5"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 68,
+      "case": "expenses-new-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/068.png",
+          "sha256": "6f5b5444ab3c9873fe63717b710acb2a9205c3ae29217175b003539907ea30cb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/068.png",
+          "sha256": "6f5b5444ab3c9873fe63717b710acb2a9205c3ae29217175b003539907ea30cb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 69,
+      "case": "finance-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/069.png",
+          "sha256": "6ce695b02e1ac5bb71702ecbd342dedb6a6fbe93a6c5f3f7bfe1b0e221be8282"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/069.png",
+          "sha256": "6ce695b02e1ac5bb71702ecbd342dedb6a6fbe93a6c5f3f7bfe1b0e221be8282"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 70,
+      "case": "finance-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/070.png",
+          "sha256": "600346219baff7a484a183509aa468e274bcc4c4c88fd1ceca623bf4b3ee2e7b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/070.png",
+          "sha256": "600346219baff7a484a183509aa468e274bcc4c4c88fd1ceca623bf4b3ee2e7b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 71,
+      "case": "finance-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/071.png",
+          "sha256": "7c5c469c11e3cfea2f91d61aea1bdae4859fd46d1871efe99d3ed2bdd438cfc3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/071.png",
+          "sha256": "7c5c469c11e3cfea2f91d61aea1bdae4859fd46d1871efe99d3ed2bdd438cfc3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 72,
+      "case": "finance-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/072.png",
+          "sha256": "e131f1893c258a33bc8150b6bebe9f534618e9d3b506ad1e4cf584b24f473381"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/072.png",
+          "sha256": "e131f1893c258a33bc8150b6bebe9f534618e9d3b506ad1e4cf584b24f473381"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 73,
+      "case": "global-search-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/073.png",
+          "sha256": "25f0114310f289ff17c374e496e1d884228c7fda683ea7e2da1d384560785eed"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/073.png",
+          "sha256": "25f0114310f289ff17c374e496e1d884228c7fda683ea7e2da1d384560785eed"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 74,
+      "case": "global-search-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/074.png",
+          "sha256": "93d374a583208e270513ab02a63a3a54fbebd83ec9285d298de55e8f5862f298"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/074.png",
+          "sha256": "93d374a583208e270513ab02a63a3a54fbebd83ec9285d298de55e8f5862f298"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 75,
+      "case": "home-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/075.png",
+          "sha256": "774afe0b131941c0166843584738142f028d31c7d63ce757f68a4f1dd90db7ac"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/075.png",
+          "sha256": "774afe0b131941c0166843584738142f028d31c7d63ce757f68a4f1dd90db7ac"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 76,
+      "case": "home-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/076.png",
+          "sha256": "b7c155247387f7dcad9e06dbed3e055652582978f3b2dd6898cf0eabf5033451"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/076.png",
+          "sha256": "b7c155247387f7dcad9e06dbed3e055652582978f3b2dd6898cf0eabf5033451"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 77,
+      "case": "home-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/077.png",
+          "sha256": "9ae65582561c52d0ccaab8dfd439b9b29247cf2f3d0322d916d6981814378c62"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/077.png",
+          "sha256": "9ae65582561c52d0ccaab8dfd439b9b29247cf2f3d0322d916d6981814378c62"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 78,
+      "case": "home-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/078.png",
+          "sha256": "0d6c723c5c3a01aefd27779c54af8a472c42c7af40d6b1a465fe278de90e51db"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/078.png",
+          "sha256": "0d6c723c5c3a01aefd27779c54af8a472c42c7af40d6b1a465fe278de90e51db"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 79,
+      "case": "home-tablet-1024-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/079.png",
+          "sha256": "efa3a8813e2a40016758796c5f072f0280db90e0b6fc891cd87dfda1c1fefe21"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/079.png",
+          "sha256": "efa3a8813e2a40016758796c5f072f0280db90e0b6fc891cd87dfda1c1fefe21"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 80,
+      "case": "home-tablet-1024",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/080.png",
+          "sha256": "d5773d34393c5a5f7ca0fb6b1235a565d5cc82e2e84d14b8c0f69a3b4e28b416"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/080.png",
+          "sha256": "d5773d34393c5a5f7ca0fb6b1235a565d5cc82e2e84d14b8c0f69a3b4e28b416"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 81,
+      "case": "home-tablet-768-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/081.png",
+          "sha256": "74fec38fce9c7c67923681cd1829f48fc8798064e4c8023ee1af740c4bc25fa4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/081.png",
+          "sha256": "74fec38fce9c7c67923681cd1829f48fc8798064e4c8023ee1af740c4bc25fa4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 82,
+      "case": "home-tablet-768",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/082.png",
+          "sha256": "3523ff8391f993fcb80d93be41e9b940cbf33b5693d40270c3a38d2be22fe383"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/082.png",
+          "sha256": "3523ff8391f993fcb80d93be41e9b940cbf33b5693d40270c3a38d2be22fe383"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 83,
+      "case": "influencers-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/083.png",
+          "sha256": "20dabfb77cbea89f6d13815987cc1596ab0e0cfc619abd5736b7a65fdea34674"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/083.png",
+          "sha256": "20dabfb77cbea89f6d13815987cc1596ab0e0cfc619abd5736b7a65fdea34674"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 84,
+      "case": "influencers-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/084.png",
+          "sha256": "155414ea5a871a93a2a10c52c9c698232ac3b2e88e52c576a453f427bbb30beb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/084.png",
+          "sha256": "155414ea5a871a93a2a10c52c9c698232ac3b2e88e52c576a453f427bbb30beb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 85,
+      "case": "influencers-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/085.png",
+          "sha256": "aebb21e862a20b34ea458f9d2d70237efda12b6063ba55fa74f342644c294698"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/085.png",
+          "sha256": "aebb21e862a20b34ea458f9d2d70237efda12b6063ba55fa74f342644c294698"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 86,
+      "case": "lead-details-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/086.png",
+          "sha256": "2bcd882a6bd86dfe7d80ec63b0182a9e7ca0bca121f2489f3e2e72b0db4b65e2"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/086.png",
+          "sha256": "2bcd882a6bd86dfe7d80ec63b0182a9e7ca0bca121f2489f3e2e72b0db4b65e2"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 87,
+      "case": "lead-details-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/087.png",
+          "sha256": "951f1315425d5c5aaaf5889796a9a21c1831b1a50e6908575addba4df102b7c9"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/087.png",
+          "sha256": "951f1315425d5c5aaaf5889796a9a21c1831b1a50e6908575addba4df102b7c9"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 88,
+      "case": "lead-details-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/088.png",
+          "sha256": "3aaafb83d074ad59804df22a74a1c60c149a48f121d68fa014d213d183c64947"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/088.png",
+          "sha256": "3aaafb83d074ad59804df22a74a1c60c149a48f121d68fa014d213d183c64947"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 89,
+      "case": "lead-details-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/089.png",
+          "sha256": "6616ed724339a771a2efb314e53da857e1481ed9fec65e535243619bb28ea16e"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/089.png",
+          "sha256": "6616ed724339a771a2efb314e53da857e1481ed9fec65e535243619bb28ea16e"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 90,
+      "case": "leads-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/090.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/090.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 91,
+      "case": "leads-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/091.png",
+          "sha256": "4684ad4f0bceaa6b5ed2292d632cee6a36de32b49b82536438bc25784bdc7031"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/091.png",
+          "sha256": "4684ad4f0bceaa6b5ed2292d632cee6a36de32b49b82536438bc25784bdc7031"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 92,
+      "case": "leads-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/092.png",
+          "sha256": "a7099dbc704977ff735958464360ad27adefc660ffbd9b96ec69c8c4590a91f2"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/092.png",
+          "sha256": "a7099dbc704977ff735958464360ad27adefc660ffbd9b96ec69c8c4590a91f2"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 93,
+      "case": "leads-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/093.png",
+          "sha256": "479860975892c42592c29981c0fae7c0fc6c62741be35855e9e7b5cc85ce164a"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/093.png",
+          "sha256": "479860975892c42592c29981c0fae7c0fc6c62741be35855e9e7b5cc85ce164a"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 94,
+      "case": "leads-extreme-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/094.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/094.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 95,
+      "case": "leads-extreme-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/095.png",
+          "sha256": "27e1f2975bebcaa4e023a02c8d2af93227dc7aa33e32a75ffcc3144c2315a7cb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/095.png",
+          "sha256": "27e1f2975bebcaa4e023a02c8d2af93227dc7aa33e32a75ffcc3144c2315a7cb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 96,
+      "case": "leads-extreme-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/096.png",
+          "sha256": "9f47339f392e2799f27e0ec35eada140750ab559dd430fa752ccf7ecc047877d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/096.png",
+          "sha256": "9f47339f392e2799f27e0ec35eada140750ab559dd430fa752ccf7ecc047877d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 97,
+      "case": "leads-extreme-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/097.png",
+          "sha256": "479860975892c42592c29981c0fae7c0fc6c62741be35855e9e7b5cc85ce164a"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/097.png",
+          "sha256": "479860975892c42592c29981c0fae7c0fc6c62741be35855e9e7b5cc85ce164a"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 98,
+      "case": "leads-menu-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/098.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/098.png",
+          "sha256": "0ae18f6162761e70f6d43479af837c5fd31b251c8d7bd7cd82bddb9f761043c3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 99,
+      "case": "leads-menu-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/099.png",
+          "sha256": "ce9a0f9a74805c995bae15f3b273af1f3a711453a1c6aefa643ea37eb93e6010"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/099.png",
+          "sha256": "ce9a0f9a74805c995bae15f3b273af1f3a711453a1c6aefa643ea37eb93e6010"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 100,
+      "case": "leads-menu-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/100.png",
+          "sha256": "3c8882514dfa3240b5c840208ebc12d3a3d8118e955f1bbdc4eb9152631ea327"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/100.png",
+          "sha256": "3c8882514dfa3240b5c840208ebc12d3a3d8118e955f1bbdc4eb9152631ea327"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 101,
+      "case": "leads-menu-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/101.png",
+          "sha256": "3b56bf4f5794aa56340e1780bd59b2f7a1ce81fd2e8f2e8c25b47d13825edaef"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/101.png",
+          "sha256": "3b56bf4f5794aa56340e1780bd59b2f7a1ce81fd2e8f2e8c25b47d13825edaef"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 102,
+      "case": "login-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/102.png",
+          "sha256": "a57a3facef24815beefdc13847c958e07ceaedd3bba3afb3630ae469106f3dcd"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/102.png",
+          "sha256": "a57a3facef24815beefdc13847c958e07ceaedd3bba3afb3630ae469106f3dcd"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 103,
+      "case": "login-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/103.png",
+          "sha256": "cdb54fde9ce02645e86c129b9a047a83170fb8a93e869a0b5838882d232523b7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/103.png",
+          "sha256": "cdb54fde9ce02645e86c129b9a047a83170fb8a93e869a0b5838882d232523b7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 104,
+      "case": "marketing-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/104.png",
+          "sha256": "85505cf7021aa2f3b243719c6560588f6293dd4045167e31738428d9a0cf182b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/104.png",
+          "sha256": "85505cf7021aa2f3b243719c6560588f6293dd4045167e31738428d9a0cf182b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 105,
+      "case": "marketing-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/105.png",
+          "sha256": "aafa5d64d090275a2dfe62d02eae864e1f5768a9c410c3192d1b4b62e896081c"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/105.png",
+          "sha256": "aafa5d64d090275a2dfe62d02eae864e1f5768a9c410c3192d1b4b62e896081c"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 106,
+      "case": "marketing-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/106.png",
+          "sha256": "bb41761bc6394af0f36a2bb393c7e98fa2e900afa9ce959ffd1cad0ac2d34b89"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/106.png",
+          "sha256": "bb41761bc6394af0f36a2bb393c7e98fa2e900afa9ce959ffd1cad0ac2d34b89"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 107,
+      "case": "marketing-detail-1440-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/107.png",
+          "sha256": "8a9a14bc36184e1eec6e745e50f11676bdad1248ab5d0cd423583ba9b32888b5"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/107.png",
+          "sha256": "8a9a14bc36184e1eec6e745e50f11676bdad1248ab5d0cd423583ba9b32888b5"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 108,
+      "case": "marketing-detail-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/108.png",
+          "sha256": "b635de1c6d1209bfbfa4b2bd5dde12913f273c37e5b41e63fcffa376bfaa1684"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/108.png",
+          "sha256": "b635de1c6d1209bfbfa4b2bd5dde12913f273c37e5b41e63fcffa376bfaa1684"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 109,
+      "case": "marketing-detail-390-dialog-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/109.png",
+          "sha256": "5e5f56448ddc4888646fd68a0e14dd79fa126ccf2026e9c033d2bc3636b2a325"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/109.png",
+          "sha256": "5e5f56448ddc4888646fd68a0e14dd79fa126ccf2026e9c033d2bc3636b2a325"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 110,
+      "case": "marketing-detail-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/110.png",
+          "sha256": "48d2289e3c9bd25a50191b6c546fc8e37e47817bd48d3de08bce1747e7dfbefc"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/110.png",
+          "sha256": "48d2289e3c9bd25a50191b6c546fc8e37e47817bd48d3de08bce1747e7dfbefc"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 111,
+      "case": "marketing-link-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/111.png",
+          "sha256": "b00b111f1ba2beeacaa74f89eeb59a96c1061c443fd06705afa0dbeccdd7ae23"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/111.png",
+          "sha256": "b00b111f1ba2beeacaa74f89eeb59a96c1061c443fd06705afa0dbeccdd7ae23"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 112,
+      "case": "marketing-link-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/112.png",
+          "sha256": "75b4a2efe3559c226d8a2fd01517987917e810d1d82fb91d3a3615cb6cb54e00"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/112.png",
+          "sha256": "75b4a2efe3559c226d8a2fd01517987917e810d1d82fb91d3a3615cb6cb54e00"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 113,
+      "case": "messages-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/113.png",
+          "sha256": "36c2c443f8bb13fb3866695702140b41e0a618c98c14617ed4bda2312d0ad7e7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/113.png",
+          "sha256": "36c2c443f8bb13fb3866695702140b41e0a618c98c14617ed4bda2312d0ad7e7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 114,
+      "case": "messages-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/114.png",
+          "sha256": "7dcdc55409873749cac7560a38240cb30333a0abd2fabf17c2df4df397b3d4f8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/114.png",
+          "sha256": "7dcdc55409873749cac7560a38240cb30333a0abd2fabf17c2df4df397b3d4f8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 115,
+      "case": "messages-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/115.png",
+          "sha256": "6123cc518bfd61496b1f66b60c5ef1b2fd25b6d53df4a5511f439ec7c35d3bb7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/115.png",
+          "sha256": "6123cc518bfd61496b1f66b60c5ef1b2fd25b6d53df4a5511f439ec7c35d3bb7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 116,
+      "case": "messages-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/116.png",
+          "sha256": "5c10b21482f8d383b8168c73f5b3bf45cf1840b83a814450fd396ebff1bf7dfe"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/116.png",
+          "sha256": "5c10b21482f8d383b8168c73f5b3bf45cf1840b83a814450fd396ebff1bf7dfe"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 117,
+      "case": "messages-dense-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/117.png",
+          "sha256": "94ff31897ee64a6a6c93e818212b2684f2f92f770dd5cca944f5ff0fa105ed7b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/117.png",
+          "sha256": "94ff31897ee64a6a6c93e818212b2684f2f92f770dd5cca944f5ff0fa105ed7b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 118,
+      "case": "messages-dense-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/118.png",
+          "sha256": "1678dc4c368a3b179350ef9b2dd7c447b4b809daf83d9b552204757e97a3c8a4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/118.png",
+          "sha256": "1678dc4c368a3b179350ef9b2dd7c447b4b809daf83d9b552204757e97a3c8a4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 119,
+      "case": "messages-dense-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/119.png",
+          "sha256": "be68b946a2c873caf564e77e90ba61aec398b7a6608d6f616098f51f7a458491"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/119.png",
+          "sha256": "be68b946a2c873caf564e77e90ba61aec398b7a6608d6f616098f51f7a458491"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 120,
+      "case": "messages-dense-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/120.png",
+          "sha256": "d3980d3b8e3dd9ded8953f240d66e8b216649a2dc38a728d9ed78dbf0ebe7cc3"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/120.png",
+          "sha256": "d3980d3b8e3dd9ded8953f240d66e8b216649a2dc38a728d9ed78dbf0ebe7cc3"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 121,
+      "case": "messages-empty-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/121.png",
+          "sha256": "84302531e931fc39439dc058c17ffc2b4f0715d460029c0b5862c79dcd155e65"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/121.png",
+          "sha256": "84302531e931fc39439dc058c17ffc2b4f0715d460029c0b5862c79dcd155e65"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 122,
+      "case": "messages-empty-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/122.png",
+          "sha256": "d4573c1d2c6ff863ed099fa940a14d130115cc36cfcec7a655ca14d76ac13ffb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/122.png",
+          "sha256": "d4573c1d2c6ff863ed099fa940a14d130115cc36cfcec7a655ca14d76ac13ffb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 123,
+      "case": "messages-empty-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/123.png",
+          "sha256": "361e49ff7fb554990906164655ac3d8f1a351f5ac8588a007a76d153a7a3b4bf"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/123.png",
+          "sha256": "361e49ff7fb554990906164655ac3d8f1a351f5ac8588a007a76d153a7a3b4bf"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 124,
+      "case": "messages-error-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/124.png",
+          "sha256": "7f762413214f845fc3a9685bd5060436c2bc2258a61c58aa4fe2d4a3a6b05b63"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/124.png",
+          "sha256": "7f762413214f845fc3a9685bd5060436c2bc2258a61c58aa4fe2d4a3a6b05b63"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 125,
+      "case": "messages-error-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/125.png",
+          "sha256": "ab8493ae4354cd33218f11ab9f6a9b0b740060ee0c2cef8075bfd74e0c98dc65"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/125.png",
+          "sha256": "ab8493ae4354cd33218f11ab9f6a9b0b740060ee0c2cef8075bfd74e0c98dc65"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 126,
+      "case": "messages-error-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/126.png",
+          "sha256": "2363bc447142fb0eebea115c91a3b61f5ccaeb1ef224de1764426e3ad1e475c8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/126.png",
+          "sha256": "2363bc447142fb0eebea115c91a3b61f5ccaeb1ef224de1764426e3ad1e475c8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 127,
+      "case": "payouts-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/127.png",
+          "sha256": "1bce11f7e9d2b4ea265b3a6526709c59f3e8dc6b0c9395c67753e0735f906ae2"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/127.png",
+          "sha256": "1bce11f7e9d2b4ea265b3a6526709c59f3e8dc6b0c9395c67753e0735f906ae2"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 128,
+      "case": "payouts-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/128.png",
+          "sha256": "ef56669a50b142f58b5e97a04e9baee9e565fa3ea3aa578951810f807919fd72"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/128.png",
+          "sha256": "ef56669a50b142f58b5e97a04e9baee9e565fa3ea3aa578951810f807919fd72"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 129,
+      "case": "payouts-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/129.png",
+          "sha256": "cd1cecf39db5b1030644775b6adbea0d03ce048bb08f297790b67853e79e6cdc"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/129.png",
+          "sha256": "cd1cecf39db5b1030644775b6adbea0d03ce048bb08f297790b67853e79e6cdc"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 130,
+      "case": "payouts-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/130.png",
+          "sha256": "02f28563dfca8cca6f1c9ded5feffdb289ec4395cbb3298dde0fc690b109c598"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/130.png",
+          "sha256": "02f28563dfca8cca6f1c9ded5feffdb289ec4395cbb3298dde0fc690b109c598"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 131,
+      "case": "plans-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/131.png",
+          "sha256": "4d44428e0d20d5ac6701af22bf33d1d0b0b8317eb23040c26b911602861c5b17"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/131.png",
+          "sha256": "4d44428e0d20d5ac6701af22bf33d1d0b0b8317eb23040c26b911602861c5b17"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 132,
+      "case": "plans-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/132.png",
+          "sha256": "7ad1a5d2679c087a226b5065bb80ea526c918ce3c0c28ae984ac252793573e35"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/132.png",
+          "sha256": "7ad1a5d2679c087a226b5065bb80ea526c918ce3c0c28ae984ac252793573e35"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 133,
+      "case": "plans-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/133.png",
+          "sha256": "bda13f31152649fc2c3f2bdf04722a8de4b0e744a864af8eb455258313b31718"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/133.png",
+          "sha256": "bda13f31152649fc2c3f2bdf04722a8de4b0e744a864af8eb455258313b31718"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 134,
+      "case": "plans-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/134.png",
+          "sha256": "e8dbf82038d2678462dd55c17d64911f616768945e2016e24d7c25eb13411f22"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/134.png",
+          "sha256": "e8dbf82038d2678462dd55c17d64911f616768945e2016e24d7c25eb13411f22"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 135,
+      "case": "settings-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/135.png",
+          "sha256": "6d8db62e4076c75604a204bc374d2788fd263940c0de268393185fc11cfff4db"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/135.png",
+          "sha256": "6d8db62e4076c75604a204bc374d2788fd263940c0de268393185fc11cfff4db"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 136,
+      "case": "settings-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/136.png",
+          "sha256": "13f6f3c31a8773161d1f359c9105beecced07bc6bdebcaf32daaf309245b2f88"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/136.png",
+          "sha256": "13f6f3c31a8773161d1f359c9105beecced07bc6bdebcaf32daaf309245b2f88"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 137,
+      "case": "settings-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/137.png",
+          "sha256": "e6d23dea6e3133de84bff718d6ba4cd3267d622eb4039174e37ab90e0b8e227c"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/137.png",
+          "sha256": "e6d23dea6e3133de84bff718d6ba4cd3267d622eb4039174e37ab90e0b8e227c"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 138,
+      "case": "settings-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/138.png",
+          "sha256": "011bf571bd2a8b000a9995333d41d65dfb0bae43a06c701daee581d482397930"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/138.png",
+          "sha256": "011bf571bd2a8b000a9995333d41d65dfb0bae43a06c701daee581d482397930"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 139,
+      "case": "student-data-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/139.png",
+          "sha256": "3bfa9c58322e6b002d31ed1dbbfb87a651d727f207c0e909b915f00f08d65ebd"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/139.png",
+          "sha256": "3bfa9c58322e6b002d31ed1dbbfb87a651d727f207c0e909b915f00f08d65ebd"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 140,
+      "case": "student-data-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/140.png",
+          "sha256": "e856fe454cec09e623fe136f58eec28547992cd24060e65054849af5d8e70cca"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/140.png",
+          "sha256": "e856fe454cec09e623fe136f58eec28547992cd24060e65054849af5d8e70cca"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 141,
+      "case": "student-data-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/141.png",
+          "sha256": "74e7f8506098b1ba6bcf29d19b4498338accec84df908ea0f40c1ac987a0dba7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/141.png",
+          "sha256": "74e7f8506098b1ba6bcf29d19b4498338accec84df908ea0f40c1ac987a0dba7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 142,
+      "case": "student-data-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/142.png",
+          "sha256": "d3d3d7487e921dc8dd348228c5df14abdaa6afa78ebc454193b9a43d4f566451"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/142.png",
+          "sha256": "d3d3d7487e921dc8dd348228c5df14abdaa6afa78ebc454193b9a43d4f566451"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 143,
+      "case": "student-details-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/143.png",
+          "sha256": "e88c56d45012c4ddd675e159dd8321d566999390e53602b67ffac7a98e72008c"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/143.png",
+          "sha256": "e88c56d45012c4ddd675e159dd8321d566999390e53602b67ffac7a98e72008c"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 144,
+      "case": "student-details-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/144.png",
+          "sha256": "bfddfec8a50eee2ff0f1b04f30bc9741abeceaeec0411418a168906b1e66d06f"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/144.png",
+          "sha256": "bfddfec8a50eee2ff0f1b04f30bc9741abeceaeec0411418a168906b1e66d06f"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 145,
+      "case": "student-details-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/145.png",
+          "sha256": "dcd6b459419d43b6d6bbe8648be854389d2ec228b0a93ce7fa28f055d6cd1a72"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/145.png",
+          "sha256": "dcd6b459419d43b6d6bbe8648be854389d2ec228b0a93ce7fa28f055d6cd1a72"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 146,
+      "case": "student-details-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/146.png",
+          "sha256": "d1b093e67e7ccaf022b373fbe455d73fd6f8d687aca51ebf7f1fef865d79debd"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/146.png",
+          "sha256": "d1b093e67e7ccaf022b373fbe455d73fd6f8d687aca51ebf7f1fef865d79debd"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 147,
+      "case": "student-finance-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/147.png",
+          "sha256": "2ac8e987b618dad6d9b545dc183e63cc41b33656f4b1cf9f353f5e35ac510cd6"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/147.png",
+          "sha256": "2ac8e987b618dad6d9b545dc183e63cc41b33656f4b1cf9f353f5e35ac510cd6"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 148,
+      "case": "student-finance-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/148.png",
+          "sha256": "1d20471eb3f1b503a5ecf8cf136448b2e0b170f345737c25bfd27f7f127c4f00"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/148.png",
+          "sha256": "1d20471eb3f1b503a5ecf8cf136448b2e0b170f345737c25bfd27f7f127c4f00"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 149,
+      "case": "student-finance-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/149.png",
+          "sha256": "d94c9fecff53953ecf6409a09ab2f08abe950c72419e5075dc46696f4a1e6389"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/149.png",
+          "sha256": "d94c9fecff53953ecf6409a09ab2f08abe950c72419e5075dc46696f4a1e6389"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 150,
+      "case": "student-lessons-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/150.png",
+          "sha256": "ed4197bebdf4b68e20ae03ccdc3c24134884292507a6c38575c8fa9a6253053c"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/150.png",
+          "sha256": "ed4197bebdf4b68e20ae03ccdc3c24134884292507a6c38575c8fa9a6253053c"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 151,
+      "case": "student-lessons-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/151.png",
+          "sha256": "5c327d778bd97af62f138a4f97ae36a5776c1f8cba3de7358711a9d4e2c09c3b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/151.png",
+          "sha256": "5c327d778bd97af62f138a4f97ae36a5776c1f8cba3de7358711a9d4e2c09c3b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 152,
+      "case": "student-lessons-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/152.png",
+          "sha256": "904e031203f1a4ed927b6bbc8985a7a4c17bbe46fa1f2f841ec190d908170230"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/152.png",
+          "sha256": "904e031203f1a4ed927b6bbc8985a7a4c17bbe46fa1f2f841ec190d908170230"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 153,
+      "case": "student-lessons-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/153.png",
+          "sha256": "a36f9d90acc9bc95b7c92894c8c046f7098a9c2a95beee4676f3a4453c53d8f4"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/153.png",
+          "sha256": "a36f9d90acc9bc95b7c92894c8c046f7098a9c2a95beee4676f3a4453c53d8f4"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 154,
+      "case": "students-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/154.png",
+          "sha256": "1b12867c269b6134e9ee49b8218b6cc99111a202d12250eef696c161932198fe"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/154.png",
+          "sha256": "1b12867c269b6134e9ee49b8218b6cc99111a202d12250eef696c161932198fe"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 155,
+      "case": "students-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/155.png",
+          "sha256": "89503d0a6bab8a6d612fb328d7f235818681ec46a57d83c005d41e93ca5d07cc"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/155.png",
+          "sha256": "89503d0a6bab8a6d612fb328d7f235818681ec46a57d83c005d41e93ca5d07cc"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 156,
+      "case": "students-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/156.png",
+          "sha256": "7ae846ba6f9355ada3de28552d3106aa4c9bc7c071810ed067b3cc46bc7b3ddd"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/156.png",
+          "sha256": "7ae846ba6f9355ada3de28552d3106aa4c9bc7c071810ed067b3cc46bc7b3ddd"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 157,
+      "case": "students-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/157.png",
+          "sha256": "f4338c6bfebbf05b3f8ba0e3c68c7d66ed090b6e0d10bd13c570f4acdacef28d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/157.png",
+          "sha256": "92984f36d28bd3d6f74b810e6059ef550bc5fc07cce6f98725db23ae9d8b1050"
+        }
+      },
+      "pngByteIdentical": false
+    },
+    {
+      "number": 158,
+      "case": "students-empty-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/158.png",
+          "sha256": "07977324e2a8d01ce48db1708bcb6e938f3fe7a870118ab6d06678a3033db03f"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/158.png",
+          "sha256": "07977324e2a8d01ce48db1708bcb6e938f3fe7a870118ab6d06678a3033db03f"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 159,
+      "case": "students-empty-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/159.png",
+          "sha256": "b3213b885700cca5b8e330cfa2c041c07f2f9ccc0b4e1d2b107a0c81e4562efa"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/159.png",
+          "sha256": "b3213b885700cca5b8e330cfa2c041c07f2f9ccc0b4e1d2b107a0c81e4562efa"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 160,
+      "case": "students-empty-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/160.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/160.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 161,
+      "case": "students-error-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/161.png",
+          "sha256": "279ea00caad7b0c72c85c6186caad4e1d7e999c17ee50e08ef298970072f0fdf"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/161.png",
+          "sha256": "279ea00caad7b0c72c85c6186caad4e1d7e999c17ee50e08ef298970072f0fdf"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 162,
+      "case": "students-error-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/162.png",
+          "sha256": "1d47394a49593be695036dd7e18628615a00a6b588dd2960ae0521ffc907c4bd"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/162.png",
+          "sha256": "1d47394a49593be695036dd7e18628615a00a6b588dd2960ae0521ffc907c4bd"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 163,
+      "case": "students-error-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/163.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/163.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 164,
+      "case": "students-extreme-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/164.png",
+          "sha256": "94658561d43a28b4b5262cf26cbed64993bc5cbec744e1e420242f44dd34f19d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/164.png",
+          "sha256": "94658561d43a28b4b5262cf26cbed64993bc5cbec744e1e420242f44dd34f19d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 165,
+      "case": "students-extreme-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/165.png",
+          "sha256": "e2a2ed941e3f2760703a340f2f26a7d95e54d80a23484ca5adda62d327b12820"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/165.png",
+          "sha256": "e2a2ed941e3f2760703a340f2f26a7d95e54d80a23484ca5adda62d327b12820"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 166,
+      "case": "students-extreme-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/166.png",
+          "sha256": "58d9ce5897ccfbeb7a4776a481982c0267b9268a8877b642ed3711544d687f46"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/166.png",
+          "sha256": "58d9ce5897ccfbeb7a4776a481982c0267b9268a8877b642ed3711544d687f46"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 167,
+      "case": "students-extreme-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/167.png",
+          "sha256": "4ce7037900f1230b93091b38b9c6d9575a2e67ea772c8b456ac31d9484ea0170"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/167.png",
+          "sha256": "ac9ca7413111fcd4d9e2ec6d27be505c847c74545dbf36fc4ed617025cf3fcdb"
+        }
+      },
+      "pngByteIdentical": false
+    },
+    {
+      "number": 168,
+      "case": "students-loading-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/168.png",
+          "sha256": "0584030f06d01d6ef956a5d2b3d066cc5012c22554cf7eed81c43a22b6475231"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/168.png",
+          "sha256": "0584030f06d01d6ef956a5d2b3d066cc5012c22554cf7eed81c43a22b6475231"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 169,
+      "case": "students-loading-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/169.png",
+          "sha256": "e39dcc3f996d00cfd334007ca48f9756343cf367660075a502fda05a6648e474"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/169.png",
+          "sha256": "e39dcc3f996d00cfd334007ca48f9756343cf367660075a502fda05a6648e474"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 170,
+      "case": "students-loading-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/170.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/170.png",
+          "sha256": "27bc0b3d82e40efffd1384d4ee0f1218022c5b7b0c7cfca6242a40a8de6c02c7"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 171,
+      "case": "students-narrow-320-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/171.png",
+          "sha256": "f94f4e26fcae7338741243ad25f906f648db966fc15ff6525e3310d7d30d40f8"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/171.png",
+          "sha256": "f94f4e26fcae7338741243ad25f906f648db966fc15ff6525e3310d7d30d40f8"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 172,
+      "case": "students-narrow-320",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/172.png",
+          "sha256": "a8e5a73e286e2f19e05f68bdb2ec91e08c5f405a81258365fc2a230350afc954"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/172.png",
+          "sha256": "a8e5a73e286e2f19e05f68bdb2ec91e08c5f405a81258365fc2a230350afc954"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 173,
+      "case": "students-narrow-360-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/173.png",
+          "sha256": "d842dcbff9cd9115f51e53d8a64eac09fe50d00bf0f142cd9b338d193c6515be"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/173.png",
+          "sha256": "d842dcbff9cd9115f51e53d8a64eac09fe50d00bf0f142cd9b338d193c6515be"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 174,
+      "case": "students-narrow-360",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/174.png",
+          "sha256": "fa3566a3876ccffef4d8e230b6deda3ad70317d890142f8e620a76ea47b43acb"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/174.png",
+          "sha256": "fa3566a3876ccffef4d8e230b6deda3ad70317d890142f8e620a76ea47b43acb"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 175,
+      "case": "subscriptions-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/175.png",
+          "sha256": "3e6dbf6b4b4c467b10caf1ff5bf0b36f66fd4210e8aa664f6f107e7a4e9000b1"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/175.png",
+          "sha256": "3e6dbf6b4b4c467b10caf1ff5bf0b36f66fd4210e8aa664f6f107e7a4e9000b1"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 176,
+      "case": "subscriptions-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/176.png",
+          "sha256": "bbec3229c59186f7fd2dba173720f37973abd315136d2f2c5595530f7eab9e6d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/176.png",
+          "sha256": "bbec3229c59186f7fd2dba173720f37973abd315136d2f2c5595530f7eab9e6d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 177,
+      "case": "subscriptions-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/177.png",
+          "sha256": "3f69776a871572beb848cf4e876fcbdf184d18f8937817aa1e355cef42aa5414"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/177.png",
+          "sha256": "3f69776a871572beb848cf4e876fcbdf184d18f8937817aa1e355cef42aa5414"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 178,
+      "case": "subscriptions-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/178.png",
+          "sha256": "76cffd3fb0df55579bb587a193d4e2dd912200b0a840ae48eef7314173469b66"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/178.png",
+          "sha256": "76cffd3fb0df55579bb587a193d4e2dd912200b0a840ae48eef7314173469b66"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 179,
+      "case": "teacher-agenda-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/179.png",
+          "sha256": "97b7250c03bdbbd4441c5040de4cd5adf42cba8f30b21a599a0bc7f369671752"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/179.png",
+          "sha256": "97b7250c03bdbbd4441c5040de4cd5adf42cba8f30b21a599a0bc7f369671752"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 180,
+      "case": "teacher-agenda-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/180.png",
+          "sha256": "c6451e12e57b5b75e21b8e4d87b9e2e90e2359d3215641a7bf2a18e884300a9d"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/180.png",
+          "sha256": "c6451e12e57b5b75e21b8e4d87b9e2e90e2359d3215641a7bf2a18e884300a9d"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 181,
+      "case": "teacher-agenda-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/181.png",
+          "sha256": "c6db80f91c9d2d16c895df4d4978c5485133dfc4cfa3781a1b57a528682bd665"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/181.png",
+          "sha256": "c6db80f91c9d2d16c895df4d4978c5485133dfc4cfa3781a1b57a528682bd665"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 182,
+      "case": "teacher-agenda-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/182.png",
+          "sha256": "5d49875736b9a3ac5bc1498ad3e574cc1387d6b6b7312fc45cd7969c48eba283"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/182.png",
+          "sha256": "5d49875736b9a3ac5bc1498ad3e574cc1387d6b6b7312fc45cd7969c48eba283"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 183,
+      "case": "teacher-details-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/183.png",
+          "sha256": "0bc08eb000b742bd85b13f37f16ff5715b7a152c7f28023721beb56b9ee953d1"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/183.png",
+          "sha256": "0bc08eb000b742bd85b13f37f16ff5715b7a152c7f28023721beb56b9ee953d1"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 184,
+      "case": "teacher-details-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/184.png",
+          "sha256": "bb4d9f531c0b3cc1f1ae87c11b4fea44ab63a4206f851828094922c25c3597ff"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/184.png",
+          "sha256": "bb4d9f531c0b3cc1f1ae87c11b4fea44ab63a4206f851828094922c25c3597ff"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 185,
+      "case": "teacher-details-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/185.png",
+          "sha256": "d2711a48024315480c58bcce6dbc7935c9b18f43406578fa74364947947ad34b"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/185.png",
+          "sha256": "d2711a48024315480c58bcce6dbc7935c9b18f43406578fa74364947947ad34b"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 186,
+      "case": "teachers-1440-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/186.png",
+          "sha256": "5fa123baab4749838e98a0e0b4f3c2a098338a140aafa4783bf8e0b421a08f00"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/186.png",
+          "sha256": "5fa123baab4749838e98a0e0b4f3c2a098338a140aafa4783bf8e0b421a08f00"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 187,
+      "case": "teachers-1440",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/187.png",
+          "sha256": "abbde18761fb8dea7d50a09132e3c153338a9c04f7bac5fd679d49a8aa3476c5"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/187.png",
+          "sha256": "abbde18761fb8dea7d50a09132e3c153338a9c04f7bac5fd679d49a8aa3476c5"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 188,
+      "case": "teachers-390-end",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/188.png",
+          "sha256": "e6577e05a2594a1fc3d152adf410c92d7e0b87b494c658e504d80849be248583"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/188.png",
+          "sha256": "e6577e05a2594a1fc3d152adf410c92d7e0b87b494c658e504d80849be248583"
+        }
+      },
+      "pngByteIdentical": true
+    },
+    {
+      "number": 189,
+      "case": "teachers-390",
+      "images": {
+        "before": {
+          "path": ".github/evidence/b22/b/189.png",
+          "sha256": "8793380dac5f98c0bbf9678445d33a96def0a8d5152bdbcc35ef28fc552dd9ae"
+        },
+        "after": {
+          "path": ".github/evidence/b22/a/189.png",
+          "sha256": "8793380dac5f98c0bbf9678445d33a96def0a8d5152bdbcc35ef28fc552dd9ae"
+        }
+      },
+      "pngByteIdentical": true
+    }
+  ],
+  "consumerCommit": "f4cdebb5f294dd29fee7e93606e27c5cf4b0ee16",
+  "purpose": "Synthetic Admin Before/After evidence for its adoption PR; no product source or production data"
+}
