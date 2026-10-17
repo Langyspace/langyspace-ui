@@ -113,6 +113,77 @@ describe('Button', () => {
     expect(true).toBe(true)
   })
 
+  it.each([
+    ['text', 'rgb(10, 10, 10)', '600', 'underline'],
+    ['text-subtle', 'rgb(107, 107, 107)', '500', 'none'],
+    ['text-danger', 'rgb(198, 40, 40)', '600', 'underline'],
+  ] as const)(
+    'offers %s as a native inline action without boxed-button spacing',
+    (variant, color, fontWeight, textDecoration) => {
+      render(<Button variant={variant}>Editar detalhes</Button>)
+
+      const styles = getComputedStyle(
+        screen.getByRole('button', { name: 'Editar detalhes' }),
+      )
+
+      expect({
+        color: styles.color,
+        fontWeight: styles.fontWeight,
+        textDecoration: styles.textDecoration,
+        padding: styles.padding,
+        borderWidth: styles.borderWidth,
+        borderRadius: styles.borderRadius,
+        backgroundColor: styles.backgroundColor,
+      }).toEqual({
+        color,
+        fontWeight,
+        textDecoration,
+        padding: '0px',
+        borderWidth: '0px',
+        borderRadius: '4px',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+      })
+    },
+  )
+
+  it('preserves direct inline icons, keyboard activation, ref and loading for text actions', async () => {
+    const onClick = vi.fn()
+    const ref = createRef<HTMLButtonElement>()
+    const user = userEvent.setup()
+    const { rerender } = render(
+      <Button
+        iconStart={<svg data-testid="inline-icon" />}
+        onClick={onClick}
+        ref={ref}
+        variant="text"
+      >
+        Editar detalhes
+      </Button>,
+    )
+    const button = screen.getByRole('button', { name: 'Editar detalhes' })
+
+    expect(button.firstElementChild).toBe(screen.getByTestId('inline-icon'))
+    expect(ref.current).toBe(button)
+
+    await user.tab()
+    await user.keyboard('{Enter} ')
+
+    expect(onClick).toHaveBeenCalledTimes(2)
+
+    rerender(
+      <Button isLoading onClick={onClick} variant="text">
+        Editar detalhes
+      </Button>,
+    )
+    await user.click(button)
+
+    expect(button).toBeDisabled()
+    expect(button).toHaveAttribute('aria-busy', 'true')
+    expect(button).toHaveTextContent('Editar detalhes')
+    expect(button.querySelector('.lsui-sc-spinner')).toBeInTheDocument()
+    expect(onClick).toHaveBeenCalledTimes(2)
+  })
+
   it('accepts one icon on each edge and renders neither by default', () => {
     const { rerender } = render(<Button>Guardar</Button>)
 
@@ -243,7 +314,7 @@ describe('Button', () => {
     expect(fullWidthButton).toHaveStyle({ width: '100%' })
   })
 
-  it('keeps the canonical pill shape for every labeled action', () => {
+  it('keeps the canonical pill shape for boxed actions', () => {
     render(<Button>Continuar</Button>)
 
     expect(screen.getByRole('button', { name: 'Continuar' })).toHaveStyle({

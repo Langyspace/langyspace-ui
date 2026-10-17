@@ -1,6 +1,6 @@
 {
   "name": "@langyspace/ui",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Semantic React components and interaction contracts shared by Langy.space products.",
   "type": "module",
   "license": "UNLICENSED",
@@ -47,7 +47,7 @@
     "test:coverage": "vitest run --project unit --coverage",
     "test:button-system": "node audit/cli.mjs scripts/button-system.audit.config.mjs && node scripts/test-architecture-audit.mjs",
     "test:bundle": "node scripts/check-bundle-budgets.mjs",
-    "test:layout": "pnpm run build:storybook && node scripts/audit-storybook-layout.mjs",
+    "test:layout": "pnpm run build:storybook && node scripts/test-layout-action-contracts.mjs && node scripts/audit-storybook-layout.mjs",
     "test:package": "node scripts/smoke-test-package.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.json",
     "validate:ui": "pnpm run test:button-system && pnpm run lint && pnpm run format:check && pnpm run typecheck && pnpm run test:storybook && pnpm run test:coverage && pnpm run build && pnpm run check:api && pnpm run test:bundle && pnpm run test:package && LAYOUT_AUDIT_SCREENSHOTS=1 pnpm run test:layout",

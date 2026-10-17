@@ -8,10 +8,15 @@ const root = await mkdtemp(join(tmpdir(), 'langyspace-ui-audit-'))
 
 try {
   await mkdir(join(root, 'src', 'atoms', 'Broken'), { recursive: true })
+  await mkdir(join(root, 'src', 'atoms', 'Button'), { recursive: true })
   await mkdir(join(root, 'src', 'foundations'), { recursive: true })
   await mkdir(join(root, 'src', 'internal'), { recursive: true })
   await mkdir(join(root, 'src', 'molecules'), { recursive: true })
   await mkdir(join(root, 'src', 'primitives'), { recursive: true })
+  await writeFile(
+    join(root, 'src', 'atoms', 'Button', 'types.ts'),
+    "export type ButtonVariant = 'primary' | 'secondary'\n",
+  )
   await writeFile(
     join(root, 'src', 'atoms', 'Broken', 'index.tsx'),
     `import { Button as BaseButton } from '@langyspace/ui'
@@ -90,6 +95,11 @@ export const composition = [LocalButton, Surface, Card]
     }),
   )
   const output = result.failures.join('\n')
+  assert.match(
+    output,
+    /\[LSUI007\] src\/atoms\/Button\/types\.ts:/,
+    'A consumer with the same relative path must still reject copied types',
+  )
   assert.doesNotMatch(output, /\[LSUI005\] src\/molecules\/LocalButton\.ts:/)
 
   for (const expected of [

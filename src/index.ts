@@ -391,10 +391,10 @@ export type { DefinitionItemProps } from './molecules/DefinitionItem/types'
 export { DetailRow } from './molecules/DetailRow'
 export type { DetailRowProps } from './molecules/DetailRow/types'
 
-export { TextButton } from './atoms/TextButton'
-export type { TextButtonProps } from './atoms/TextButton/types'
+export { TextButton } from './atoms/Button/compatibility'
+export type { TextButtonProps } from './atoms/Button/compatibility'
 
-export type { TextButtonVariant } from './atoms/TextButton/types'
+export type { TextButtonVariant } from './atoms/Button/compatibility'
 
 export { MetricSummary } from './molecules/MetricSummary'
 export type { MetricSummaryProps } from './molecules/MetricSummary/types'

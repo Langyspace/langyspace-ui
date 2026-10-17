@@ -3,6 +3,19 @@ import { expect } from 'storybook/test'
 import { ArrowIcon } from '../../../.storybook/fixtures'
 import { Button } from '.'
 
+const variants = [
+  'primary',
+  'secondary',
+  'tertiary',
+  'brand',
+  'danger',
+  'success',
+  'inverse',
+  'text',
+  'text-subtle',
+  'text-danger',
+]
+
 const meta = {
   args: {
     children: 'Continuar',
@@ -13,21 +26,15 @@ const meta = {
     variant: 'primary',
   },
   argTypes: {
+    children: { control: 'text', type: 'string' },
     density: { control: 'inline-radio', options: ['regular', 'compact'] },
     iconEnd: { control: false },
     iconStart: { control: false },
     size: { control: 'inline-radio', options: ['sm', 'md', 'lg'] },
     variant: {
       control: 'select',
-      options: [
-        'primary',
-        'secondary',
-        'tertiary',
-        'brand',
-        'danger',
-        'success',
-        'inverse',
-      ],
+      options: variants,
+      type: { name: 'enum', value: variants },
     },
   },
   component: Button,
@@ -50,6 +57,26 @@ export const Default: Story = {}
 
 export const WithIcons: Story = {
   args: { iconEnd: ArrowIcon, iconStart: ArrowIcon },
+}
+
+export const Text: Story = {
+  args: { children: 'Editar detalhes', variant: 'text' },
+}
+
+export const TextSubtle: Story = {
+  args: { children: 'Limpar filtros', variant: 'text-subtle' },
+}
+
+export const TextDanger: Story = {
+  args: { children: 'Remover item', variant: 'text-danger' },
+}
+
+export const TextWithIcons: Story = {
+  args: { iconStart: ArrowIcon, iconEnd: ArrowIcon, variant: 'text' },
+}
+
+export const TextLoading: Story = {
+  args: { isLoading: true, variant: 'text' },
 }
 
 export const Loading: Story = {

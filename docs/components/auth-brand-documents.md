@@ -70,6 +70,10 @@ Cuidados: Usar dentro de texto existente; não criar outro heading só para o tr
 
 Ação de voltar com tamanho/variante e ritmo vertical de autenticação já definidos.
 
+É um preset de compatibilidade. Para uma nova composição, usar
+`Button size="sm" variant="secondary"` e manter a margem no layout do formulário.
+Não criar outro componente só para esse espaçamento.
+
 Contrato: Props de Button, exceto size/variant/fullWidth.
 
 Cuidados: O produto fornece rótulo e callback; o componente não conhece histórico ou rotas.
@@ -229,6 +233,11 @@ Cuidados: O produto decide quando habilitar e qual callback executar; não dispa
 ## AuthSubmitButton
 
 Confirmação Auth com receita primary/lg/fullWidth e type submit padrão.
+
+É um preset de compatibilidade. Novas composições usam
+`Button type="submit" fullWidth size="lg" variant="primary"`; o layout do
+formulário define a separação vertical. A adoção deve preservar o espaçamento
+responsivo atual antes de retirar o wrapper existente.
 
 Contrato: Props de Button exceto size/variant/fullWidth.
 

@@ -77,7 +77,7 @@ export function LessonRow({
 }
 ```
 
-O exemplo corresponde ao candidato 2.0.0 ainda não publicado. O comando principal e a ação têm semântica/foco de buttons nativos; Enter/Espaço não dependem de um handler genérico no container. O produto preserva suas regras e fornece as ações.
+O exemplo corresponde ao contrato atual. O comando principal e a ação têm semântica/foco de buttons nativos; Enter/Espaço não dependem de um handler genérico no container. O produto preserva suas regras e fornece as ações.
 
 ## Dados repetidos e composição
 

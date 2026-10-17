@@ -1,5 +1,10 @@
 import { readdir, readFile } from 'node:fs/promises'
 import { dirname, extname, relative, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const canonicalButtonTypes = fileURLToPath(
+  new URL('../src/atoms/Button/types.ts', import.meta.url),
+)
 
 const sourceExtensions = new Set(['.js', '.jsx', '.ts', '.tsx'])
 const ignoredSource = /(?:^|\/)[^/]+\.(?:test|spec)\.[cm]?[jt]sx?$|\.d\.ts$/
@@ -312,7 +317,7 @@ export async function auditArchitecture(config) {
       /type\s+\w*Button\w*\s*=\s*(?!Extract\b|Exclude\b|Pick\b|Omit\b)(?=[^;]*['"]primary['"])(?=[^;]*['"]secondary['"])[^;]+/.exec(
         source,
       )
-    if (copiedUnionMatch) {
+    if (copiedUnionMatch && file !== canonicalButtonTypes) {
       report({
         index: copiedUnionMatch.index,
         message: 'copied Button union',

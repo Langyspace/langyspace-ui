@@ -263,7 +263,14 @@ export async function inspectStory(page, scenario, tolerance) {
         const rect = element.getBoundingClientRect()
         const style = window.getComputedStyle(element)
         const size = element.getAttribute('data-size') ?? 'md'
-        const expectedHeight = size === 'sm' ? 32 : size === 'lg' ? 48 : 40
+        const isText = element.getAttribute('data-action-appearance') === 'text'
+        const expectedHeight = isText
+          ? parseFloat(style.lineHeight) || parseFloat(style.fontSize)
+          : size === 'sm'
+            ? 32
+            : size === 'lg'
+              ? 48
+              : 40
 
         if (rect.height + acceptedTolerance < expectedHeight) {
           issues.push({
@@ -275,6 +282,7 @@ export async function inspectStory(page, scenario, tolerance) {
         }
 
         if (
+          !isText &&
           element.getAttribute('data-density') === 'compact' &&
           size === 'md' &&
           (style.fontSize !== '14px' ||
@@ -308,8 +316,11 @@ export async function inspectStory(page, scenario, tolerance) {
         if (
           spinners.length !== 1 ||
           !spinner ||
-          element.lastElementChild?.querySelector('.lsui-sc-spinner') !==
-            spinner
+          !(
+            (isText && element.lastElementChild === spinner) ||
+            element.lastElementChild?.querySelector('.lsui-sc-spinner') ===
+              spinner
+          )
         ) {
           issues.push({
             actual: spinners.length,

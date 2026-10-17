@@ -160,7 +160,9 @@ jobs:
           NODE
 
       - name: Validate catalog layouts
-        run: LAYOUT_AUDIT_SCREENSHOTS=1 node scripts/audit-storybook-layout.mjs
+        run: |
+          node scripts/test-layout-action-contracts.mjs
+          LAYOUT_AUDIT_SCREENSHOTS=1 node scripts/audit-storybook-layout.mjs
 
       - name: Upload static catalog
         if: always() && matrix.shard == 0

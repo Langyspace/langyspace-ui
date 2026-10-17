@@ -15,6 +15,10 @@ export function Button({
   variant = 'primary',
   ...props
 }: ButtonProps) {
+  const isText =
+    variant === 'text' || variant === 'text-subtle' || variant === 'text-danger'
+  const endIcon = isLoading ? <Spinner /> : iconEnd
+
   return (
     <Styled.Button
       {...props}
@@ -24,14 +28,16 @@ export function Button({
       $fullWidth={fullWidth}
       $shape="pill"
       $size={size}
-      $variant={variant}
+      $variant={isText ? 'primary' : variant}
+      $textVariant={isText ? variant : undefined}
+      data-action-appearance={isText ? 'text' : 'button'}
       data-loading={isLoading ? 'true' : undefined}
       data-density={density}
       data-size={size}
     >
-      <IconSlot icon={iconStart} />
+      {isText ? iconStart : <IconSlot icon={iconStart} />}
       {children}
-      <IconSlot icon={isLoading ? <Spinner /> : iconEnd} />
+      {isText ? endIcon : <IconSlot icon={endIcon} />}
     </Styled.Button>
   )
 }
