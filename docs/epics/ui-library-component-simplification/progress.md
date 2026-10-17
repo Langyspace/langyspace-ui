@@ -28,8 +28,9 @@ registrados em validation.md. A CI ampla permanece a cargo do PR.
 
 ## Próxima tarefa única
 
-Revisar o PR atual antes de integrar ou publicar esta minor. Depois do aceite e
-dos gates, preparar a adoção no Admin: trocar TextButton por Button e mapear
+O usuário autorizou seguir até produção em 2026-10-17 após a apresentação do PR #32
+(cc54191). O aceite cobre a revisão apresentada. A correção posterior do auditor
+não altera componentes, CSS nem imagens. Depois dos gates, preparar a adoção no Admin: trocar TextButton por Button e mapear
 emphasized/subtle/danger para text/text-subtle/text-danger, incluindo MenuAction.
 Esse PR de produto deve mostrar suas telas reais em tabelas Antes/Depois.
 
@@ -38,4 +39,13 @@ formulários Teacher/Student. Retirar as margens contextuais da API de botões e
 preservar o espaçamento responsivo de login/cadastro/acesso a pagamentos, sem
 acrescentar variantes auth ao Button.
 
-Visual gate review: pending human
+Visual gate review: accepted by human
+
+## Retomada para publicação
+
+A CI detectou LSUI007 na própria definição canônica de ButtonVariant. O auditor
+agora distingue seu arquivo fonte real, resolvido a partir do módulo do pacote, de
+cópias em consumidores. Uma fixture de consumidor com o mesmo caminho relativo
+continua falhando. Os 12 contratos do auditor e os 731 arquivos de produção passam.
+Não houve alteração dos quatro arquivos de renderização; a evidência visual permanece
+válida. Publicação e adoções continuam pendentes dos gates remotos.

@@ -48,3 +48,12 @@ preservam todos os pixels da baseline.
 
 Não foram executados os gates amplos locais. CI, merge, publicação do pacote e
 adoções nos produtos não são apresentados como concluídos por estes checks.
+
+## Correção de CI sem impacto renderizado
+
+A execução 39071735865 rejeitou a definição canônica de Button como uma cópia.
+A exclusão é restrita ao arquivo absoluto pertencente ao módulo do auditor; não
+aceita diretórios de consumidores por nome. O teste negativo usa exatamente
+src/atoms/Button/types.ts em outro projeto e exige LSUI007. test:button-system
+aprovado após a correção, incluindo os 12 IDs de regra. Componentes e capturas
+permanecem iguais à revisão aprovada.
