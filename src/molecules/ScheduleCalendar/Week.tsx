@@ -52,11 +52,13 @@ export function ScheduleCalendarWeek({
     if (!slot) return
     if (event.key === 'Escape') {
       reset()
+
       return
     }
     if (anchor && event.key === 'Enter') {
       event.preventDefault()
       finish(slot)
+
       return
     }
     if (!event.shiftKey || !onSlotSelection || !event.key.startsWith('Arrow'))
@@ -107,6 +109,7 @@ export function ScheduleCalendarWeek({
             const interactive = Boolean(
               slot?.interactive && slot.state !== 'occupied',
             )
+
             return (
               <Styled.Slot
                 key={minute}
@@ -150,6 +153,7 @@ export function ScheduleCalendarWeek({
                 onClick={() => {
                   if (suppressClick.current) {
                     suppressClick.current = false
+
                     return
                   }
                   if (interactive && slot) onSlotClick?.(slot.id)
@@ -161,6 +165,7 @@ export function ScheduleCalendarWeek({
             .filter((event) => event.dateKey === day.dateKey)
             .map((event) => {
               const height = (event.durationMinutes / 60) * 56 - 2
+
               return (
                 <Styled.Event
                   key={event.id}

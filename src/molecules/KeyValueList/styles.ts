@@ -1,10 +1,12 @@
 import { styled } from 'styled-components'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-key-value-list',
 })`
   display: grid;
   gap: 12px;
 `
+
 export const Row = styled.div`
   display: flex;
   align-items: center;

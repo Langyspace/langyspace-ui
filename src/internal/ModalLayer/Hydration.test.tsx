@@ -25,6 +25,7 @@ describe.each([
       await act(async () => {
         root = hydrateRoot(appRoot, content)
       })
+
       expect(screen.getByRole('dialog', { name: 'Ajuda' })).toBeVisible()
       expect(appRoot.inert).toBe(true)
       expect(document.body.style.overflow).toBe('hidden')
@@ -35,6 +36,7 @@ describe.each([
       })
       appRoot.remove()
     }
+
     expect(document.body.style.overflow).not.toBe('hidden')
   })
 })

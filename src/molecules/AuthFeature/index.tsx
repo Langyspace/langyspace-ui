@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { AuthFeatureProps } from './types'
+
 export function AuthFeature({ children, ...props }: AuthFeatureProps) {
   return (
     <Styled.Root {...props}>
@@ -8,4 +9,5 @@ export function AuthFeature({ children, ...props }: AuthFeatureProps) {
     </Styled.Root>
   )
 }
+
 export type { AuthFeatureProps } from './types'

@@ -1,7 +1,9 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 export type ActionMenuAlign = 'start' | 'end'
+
 export type ActionMenuSize = 'sm' | 'md'
+
 export type ActionMenuTone = 'neutral' | 'danger'
 
 export interface ActionMenuItem {

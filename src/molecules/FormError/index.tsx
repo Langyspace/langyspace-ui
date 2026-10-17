@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { FormErrorProps } from './types'
+
 export function FormError({ children, ...props }: FormErrorProps) {
   return (
     <Styled.Root {...props} role="alert">
@@ -7,4 +8,5 @@ export function FormError({ children, ...props }: FormErrorProps) {
     </Styled.Root>
   )
 }
+
 export type { FormErrorProps } from './types'

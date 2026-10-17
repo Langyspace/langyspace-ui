@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { ScheduleRowProps } from './types'
+
 export function ScheduleRow({
   time,
   participant,
@@ -23,4 +24,5 @@ export function ScheduleRow({
     </Styled.Root>
   )
 }
+
 export type { ScheduleRowProps } from './types'

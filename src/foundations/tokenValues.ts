@@ -66,8 +66,10 @@ export const radiusLg = '0.5rem' as const
 export const radiusPill = '999px' as const
 export const radiusRounded = '0.75rem' as const
 export const shadowDrawer = '-16px 0 40px rgba(10, 10, 10, 0.1)' as const
+
 export const shadowFocus =
   '0 0 0 2px #ffffff, 0 0 0 5px rgba(0, 242, 234, 0.72)' as const
+
 export const shadowPopover = '0 20px 60px rgba(10, 10, 10, 0.18)' as const
 export const shadowRaised = '0 4px 12px rgba(0, 0, 0, 0.07)' as const
 export const shadowSubtle = '0 1px 2px rgba(0, 0, 0, 0.05)' as const

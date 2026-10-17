@@ -25,6 +25,7 @@ const tones = {
     icon: token.colorAccentDefault,
   },
 } as const satisfies Record<ToastTone, { border: string; icon: string }>
+
 const appear = keyframes`
   from { opacity: 0; transform: translateY(0.5rem); }
   to { opacity: 1; transform: translateY(0); }
@@ -70,6 +71,7 @@ export const Item = styled(Pressable).withConfig({
     transition: none;
   }
 `
+
 export const Icon = styled.span.withConfig({
   componentId: 'lsui-sc-toast-icon',
 })<{ $tone: ToastTone }>`
@@ -78,12 +80,14 @@ export const Icon = styled.span.withConfig({
   margin-top: 0.125rem;
   color: ${({ $tone }) => tones[$tone].icon};
 `
+
 export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-toast-text',
 })`
   min-width: 0;
   overflow-wrap: anywhere;
 `
+
 export const Title = styled.span.withConfig({
   componentId: 'lsui-sc-toast-title',
 })`
@@ -93,6 +97,7 @@ export const Title = styled.span.withConfig({
   font-weight: ${token.typographyFontWeightSemibold};
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const Message = styled.span.withConfig({
   componentId: 'lsui-sc-toast-message',
 })`
@@ -101,6 +106,7 @@ export const Message = styled.span.withConfig({
   font-size: ${token.typographyFontSizeSm};
   line-height: ${token.typographyLineHeightNormal};
 `
+
 export const Action = styled.span.withConfig({
   componentId: 'lsui-sc-toast-action',
 })`

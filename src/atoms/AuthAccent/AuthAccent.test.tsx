@@ -6,6 +6,7 @@ import { AuthAccent } from '.'
 describe('AuthAccent', () => {
   it('keeps the parent accessible name and supports an inline native ref', () => {
     const ref = createRef<HTMLSpanElement>()
+
     render(
       <h2>
         Confira seu <AuthAccent ref={ref}>celular.</AuthAccent>

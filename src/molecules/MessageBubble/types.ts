@@ -1,6 +1,7 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 export type MessageBubbleSide = 'incoming' | 'outgoing'
+
 export type MessageBubbleStatus = 'failed' | 'sending' | 'sent'
 
 type MessageBubbleDelivery =

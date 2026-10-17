@@ -76,6 +76,7 @@ describe('Avatar', () => {
 
     expect(image).toHaveAttribute('alt', '')
     expect(image).toHaveAttribute('src', 'https://example.invalid/avatar.png')
+
     fireEvent.error(image!)
 
     expect(document.querySelector('img')).toBeNull()
@@ -136,5 +137,6 @@ it('renders supplied fallback content when initials are empty', () => {
       <span>Fallback</span>
     </Avatar>,
   )
+
   expect(getByText('Fallback')).toBeInTheDocument()
 })

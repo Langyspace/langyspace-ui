@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
 import { quizRecipe } from '../../foundations/quizRecipe'
+
 export const Option = styled(Pressable).withConfig({
   componentId: 'lsui-sc-quiz-option',
 })<{ $state: 'default' | 'correct' | 'wrong' | 'dim' }>`

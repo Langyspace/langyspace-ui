@@ -6,6 +6,7 @@ import { AuthDescription } from '.'
 describe('AuthDescription', () => {
   it('preserves linked copy, label association, and a native ref without a product theme', () => {
     const ref = createRef<HTMLParagraphElement>()
+
     render(
       <>
         <input aria-label="Celular" aria-describedby="phone-hint" />

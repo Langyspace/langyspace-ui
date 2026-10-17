@@ -60,6 +60,7 @@ describe('StatusChip', () => {
     render(<StatusChip title="Status completo">Confirmado</StatusChip>)
 
     const label = screen.getByText('Confirmado')
+
     expect(label.closest('.lsui-sc-status-chip')).toHaveAttribute(
       'title',
       'Status completo',

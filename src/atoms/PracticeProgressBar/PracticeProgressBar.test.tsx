@@ -16,9 +16,11 @@ describe('PracticeProgressBar', () => {
     [-Infinity, '0%'],
   ])('keeps value %s within a finite visual range', (value, width) => {
     const ref = createRef<HTMLDivElement>()
+
     render(
       <PracticeProgressBar data-testid="progress" ref={ref} value={value} />,
     )
+
     expect(ref.current).toBe(screen.getByTestId('progress'))
     expect(ref.current?.firstElementChild).toHaveStyle({ width })
   })
@@ -35,15 +37,22 @@ describe('PracticeProgressBar', () => {
     const button = screen.getByRole('button', {
       name: 'Daily words · 3/4 cards · 75%',
     })
+
     expect(
       button.querySelector('[data-ui-practice-progress-bar]'),
     ).toHaveAttribute('aria-hidden', 'true')
     expect(screen.queryByRole('progressbar')).not.toBeInTheDocument()
+
     await userEvent.setup().tab()
+
     expect(button).toHaveFocus()
+
     await userEvent.setup().keyboard('{Enter}')
+
     expect(open).toHaveBeenCalledTimes(1)
+
     view.rerender(card(0.75))
+
     expect(
       screen.getByRole('button', { name: 'Daily words · 3/4 cards · 75%' }),
     ).toBe(button)

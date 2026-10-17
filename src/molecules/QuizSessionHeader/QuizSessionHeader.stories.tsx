@@ -23,9 +23,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof QuizSessionHeader>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const LongName: Story = {
   args: {
     name: 'Atividade de gramática para conversar sobre viagens e situações de trabalho',
@@ -33,19 +37,27 @@ export const LongName: Story = {
     progress: 0.09375,
   },
 }
+
 export const Completed: Story = { args: { counter: '7/8', progress: 1 } }
+
 export const Focused: Story = {
   play: async ({ canvasElement, args }) => {
     const button = within(canvasElement).getByRole('button', { name: 'Voltar' })
+
     await userEvent.tab()
+
     await expect(button).toHaveFocus()
+
     await userEvent.keyboard('{Enter}')
+
     await expect(args.onBack).toHaveBeenCalledOnce()
   },
 }
+
 export const Updating: Story = {
   render: function UpdatingHeader(args) {
     const [step, setStep] = useState(1)
+
     return (
       <>
         <QuizSessionHeader

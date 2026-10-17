@@ -1,10 +1,12 @@
 import * as Styled from './styles'
 import type { WeeklyCountChartProps } from './types'
+
 export function WeeklyCountChart({ items, ...props }: WeeklyCountChartProps) {
   const max = Math.max(
     1,
     ...items.map((item) => (Number.isFinite(item.value) ? item.value : 0)),
   )
+
   return (
     <Styled.Root {...props}>
       {items.map((item) => (
@@ -29,4 +31,5 @@ export function WeeklyCountChart({ items, ...props }: WeeklyCountChartProps) {
     </Styled.Root>
   )
 }
+
 export type { WeeklyCountChartProps } from './types'

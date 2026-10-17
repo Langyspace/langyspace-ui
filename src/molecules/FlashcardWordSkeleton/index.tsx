@@ -10,4 +10,5 @@ export function FlashcardWordSkeleton(props: FlashcardWordSkeletonProps) {
     </Styled.Root>
   )
 }
+
 export type { FlashcardWordSkeletonProps } from './types'

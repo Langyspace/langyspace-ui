@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-weekly-count-chart',
 })`
@@ -9,6 +10,7 @@ export const Root = styled.div.withConfig({
   height: 7.5rem;
   gap: ${token.spacing2};
 `
+
 export const Day = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-day',
 })`
@@ -20,6 +22,7 @@ export const Day = styled.div.withConfig({
   min-height: 0;
   gap: ${token.spacing2};
 `
+
 export const Count = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-count',
 })`
@@ -28,6 +31,7 @@ export const Count = styled.div.withConfig({
   font-size: 0.625rem;
   font-weight: ${token.typographyFontWeightSemibold};
 `
+
 export const Bar = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-bar',
 })<{ $active: boolean; $height: number }>`
@@ -37,6 +41,7 @@ export const Bar = styled.div.withConfig({
   border-radius: 0.25rem;
   background: ${({ $active }) => ($active ? '#CC0F45' : '#0A0A0A')};
 `
+
 export const Label = styled.div.withConfig({
   componentId: 'lsui-sc-count-chart-label',
 })<{ $active: boolean }>`

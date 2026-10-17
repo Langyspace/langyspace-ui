@@ -13,9 +13,13 @@ const meta = {
       'O conteúdo já carregado continua disponível enquanto a conexão é restabelecida.',
   },
 } satisfies Meta<typeof NoticeBanner>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const WithActions: Story = {
   args: {
     title: 'Atualização disponível',
@@ -29,6 +33,7 @@ export const WithActions: Story = {
     ),
   },
 }
+
 export const Applying: Story = {
   args: {
     title: 'Atualização disponível',
@@ -44,6 +49,7 @@ export const Applying: Story = {
     ),
   },
 }
+
 export const NarrowStress: Story = {
   tags: ['layout-boundary'],
   decorators: [

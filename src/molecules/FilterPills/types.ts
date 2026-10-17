@@ -3,6 +3,7 @@ import type { CompatibleAccessibleName } from '../../foundations/accessibility'
 import type { ChoiceOption, ChoiceValue } from '../../foundations/selection'
 
 export type FilterPillsOverflow = 'scroll' | 'wrap'
+
 export type FilterPillsSize = 'sm' | 'md'
 
 export type FilterPillsProps<Value extends ChoiceValue = string> = Omit<

@@ -38,9 +38,11 @@ describe('ControlledField', () => {
   it('connects react-hook-form state to the shared text field', async () => {
     const onSubmit = vi.fn()
     const user = userEvent.setup()
+
     render(<TestForm onSubmit={onSubmit} />)
 
     const input = screen.getByRole('textbox', { name: 'E-mail' })
+
     expect(input).toHaveAttribute('id', 'email')
     expect(input.getAttribute('aria-describedby')).toMatch(/email-hint/)
 
@@ -58,6 +60,7 @@ describe('ControlledField', () => {
     const { rerender } = render(<TestForm />)
 
     await user.click(screen.getByRole('button', { name: 'Salvar' }))
+
     expect(await screen.findByRole('alert')).toHaveTextContent(
       'Informe seu e-mail',
     )
@@ -67,6 +70,7 @@ describe('ControlledField', () => {
     )
 
     rerender(<TestForm error="E-mail já cadastrado" />)
+
     expect(screen.getByRole('alert')).toHaveTextContent('E-mail já cadastrado')
   })
 })

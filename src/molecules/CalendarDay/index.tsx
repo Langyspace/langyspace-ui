@@ -30,4 +30,5 @@ export function CalendarDay({
     </Styled.Root>
   )
 }
+
 export type { CalendarDayProps } from './types'

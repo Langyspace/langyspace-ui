@@ -7,6 +7,7 @@ import { PracticeCardSkeletonBody } from '.'
 describe('PracticeCardSkeletonBody', () => {
   it('keeps loading announcements and keyboard actions in the owner while forwarding native ref', async () => {
     const ref = createRef<HTMLDivElement>()
+
     render(
       <>
         <section aria-busy="true" aria-label="Carregando lições">
@@ -15,6 +16,7 @@ describe('PracticeCardSkeletonBody', () => {
         <button>Voltar para lições</button>
       </>,
     )
+
     expect(ref.current).toBe(screen.getByTestId('placeholder'))
     expect(ref.current).toHaveAttribute('aria-hidden', 'true')
     expect(
@@ -22,7 +24,9 @@ describe('PracticeCardSkeletonBody', () => {
     ).toHaveAttribute('aria-busy', 'true')
     expect(screen.queryByRole('status')).not.toBeInTheDocument()
     expect(screen.queryByRole('progressbar')).not.toBeInTheDocument()
+
     await userEvent.setup().tab()
+
     expect(
       screen.getByRole('button', { name: 'Voltar para lições' }),
     ).toHaveFocus()

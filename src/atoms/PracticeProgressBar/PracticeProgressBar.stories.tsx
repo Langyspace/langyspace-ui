@@ -10,17 +10,22 @@ const Frame = styled.div`
   width: 100%;
   max-width: 20rem;
 `
+
 const NarrowFrame = styled(Frame)`
   max-width: 8rem;
 `
+
 const meta = {
   title: 'Atoms/PracticeProgressBar',
   component: PracticeProgressBar,
   tags: ['visual-review'],
   args: { value: 0.375 },
 } satisfies Meta<typeof PracticeProgressBar>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {
   render: (args) => (
     <Frame>
@@ -29,6 +34,7 @@ export const Default: Story = {
     </Frame>
   ),
 }
+
 export const Zero: Story = {
   args: { value: 0 },
   render: (args) => (
@@ -38,6 +44,7 @@ export const Zero: Story = {
     </Frame>
   ),
 }
+
 export const Complete: Story = {
   args: { value: 1 },
   render: (args) => (
@@ -47,6 +54,7 @@ export const Complete: Story = {
     </Frame>
   ),
 }
+
 export const Narrow: Story = {
   render: (args) => (
     <NarrowFrame>
@@ -55,8 +63,10 @@ export const Narrow: Story = {
     </NarrowFrame>
   ),
 }
+
 function ChangingProgress() {
   const [value, setValue] = useState(0)
+
   return (
     <Frame>
       <span>{Math.round(value * 100)}% concluído</span>
@@ -67,4 +77,5 @@ function ChangingProgress() {
     </Frame>
   )
 }
+
 export const ChangingValue: Story = { render: () => <ChangingProgress /> }

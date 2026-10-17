@@ -36,9 +36,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof PracticeResultPanel>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const LongContent: Story = {
   args: {
     children: (
@@ -62,6 +66,7 @@ export const LongContent: Story = {
     ),
   },
 }
+
 export const Saving: Story = {
   args: {
     children: (
@@ -84,6 +89,7 @@ export const Saving: Story = {
     ),
   },
 }
+
 export const SaveError: Story = {
   args: {
     children: (
@@ -103,12 +109,17 @@ export const SaveError: Story = {
     ),
   },
 }
+
 export const Focused: Story = {
   play: async ({ canvasElement }) => {
     const buttons = within(canvasElement).getAllByRole('button')
+
     await userEvent.tab()
+
     await expect(buttons[0]).toHaveFocus()
+
     await userEvent.tab()
+
     await expect(buttons[1]).toHaveFocus()
   },
 }

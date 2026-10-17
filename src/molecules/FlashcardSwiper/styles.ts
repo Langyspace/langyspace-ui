@@ -1,4 +1,5 @@
 import { styled, keyframes } from 'styled-components'
+
 const cardIn = keyframes`
   from {
     opacity: 0;
@@ -10,12 +11,14 @@ const cardIn = keyframes`
     transform: translateY(0) scale(1);
   }
 `
+
 const cardThrow = keyframes`
   to {
     opacity: 0;
     transform: translate(var(--tx, 0), var(--ty, -2.5rem)) rotate(var(--tr, 0)) scale(0.92);
   }
 `
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-swiper',
 })<{ $exiting?: boolean }>`

@@ -4,6 +4,7 @@ export type OverlayDismissal =
   'blocked' | 'escape-and-backdrop' | 'escape-only' | 'explicit-only'
 
 export type OverlayKind = 'dialog' | 'drawer'
+
 export type OverlaySize = 'lg' | 'md' | 'sm'
 
 export type OverlayPanelProps = Omit<

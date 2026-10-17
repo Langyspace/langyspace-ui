@@ -1,7 +1,9 @@
 import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 import { afterEach, expect, it, vi } from 'vitest'
 import { FlashcardRatingButton } from '.'
+
 afterEach(cleanup)
+
 it('keeps every grade as a native command and lets the consumer block repeated decisions', () => {
   const select = vi.fn(),
     submit = vi.fn()
@@ -12,9 +14,12 @@ it('keeps every grade as a native command and lets the consumer block repeated d
       </FlashcardRatingButton>
     </form>,
   )
+
   fireEvent.click(screen.getByRole('button', { name: 'Bom 4 dias' }))
+
   expect(select).toHaveBeenCalledTimes(1)
   expect(submit).not.toHaveBeenCalled()
+
   for (const grade of ['again', 'hard', 'good', 'easy'] as const)
     for (const selected of [false, true]) {
       rerender(
@@ -29,6 +34,7 @@ it('keeps every grade as a native command and lets the consumer block repeated d
         </FlashcardRatingButton>,
       )
       fireEvent.click(screen.getByRole('button'))
+
       expect(select).toHaveBeenCalledTimes(1)
     }
 })

@@ -28,6 +28,7 @@ describe('IconSlot', () => {
     )
 
     expect(publishedIds.length).toBeGreaterThan(0)
+
     publishedIds.forEach((id) => expect(id).toMatch(/^lsui-sc-/))
   })
 })

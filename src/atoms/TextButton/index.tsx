@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { TextButtonProps } from './types'
+
 export function TextButton({
   children,
   iconStart,
@@ -16,4 +17,5 @@ export function TextButton({
     </Styled.Root>
   )
 }
+
 export type { TextButtonProps } from './types'

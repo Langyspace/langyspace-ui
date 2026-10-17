@@ -16,6 +16,7 @@ const meta = {
 } satisfies Meta<typeof TextareaInput>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}

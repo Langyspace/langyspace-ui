@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { NotificationItemProps } from './types'
+
 export function NotificationItem({
   avatar,
   title,
@@ -21,4 +22,5 @@ export function NotificationItem({
     </Styled.Root>
   )
 }
+
 export type { NotificationItemProps } from './types'

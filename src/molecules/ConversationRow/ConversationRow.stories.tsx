@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ConversationRow } from '.'
+
 const meta = {
   title: 'Molecules/ConversationRow',
   component: ConversationRow,
@@ -12,8 +13,11 @@ const meta = {
     unread: true,
   },
 } satisfies Meta<typeof ConversationRow>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Selected: Story = { args: { 'aria-current': 'true' } }

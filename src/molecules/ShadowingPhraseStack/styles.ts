@@ -1,5 +1,6 @@
 import { styled, keyframes } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 const shadowRise = keyframes`
   from {
     opacity: 0;
@@ -11,6 +12,7 @@ const shadowRise = keyframes`
     transform: translateY(0);
   }
 `
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-phrase-stack',
 })<{ $rising?: boolean }>`

@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-day',
 })`

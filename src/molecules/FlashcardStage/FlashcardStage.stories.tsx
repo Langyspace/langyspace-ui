@@ -6,6 +6,7 @@ import {
 } from '../../../.storybook/flashcard-fixtures'
 import { FlashcardDeck } from '../FlashcardDeck'
 import { FlashcardFace } from '../FlashcardFace'
+
 const meta = {
   title: 'Molecules/FlashcardStage',
   component: FlashcardStage,
@@ -27,6 +28,9 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof FlashcardStage>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

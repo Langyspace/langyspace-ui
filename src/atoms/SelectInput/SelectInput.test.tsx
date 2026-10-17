@@ -6,6 +6,7 @@ import { SelectInput } from '.'
 describe('SelectInput', () => {
   it('forwards native props and its ref', () => {
     const ref = createRef<HTMLSelectElement>()
+
     render(
       <SelectInput aria-label="Nível" defaultValue="b1" ref={ref}>
         <option value="b1">B1</option>

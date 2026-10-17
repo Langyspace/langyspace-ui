@@ -24,4 +24,5 @@ export const TextareaInput = forwardRef<
 })
 
 export type { TextareaInputProps } from './types'
+
 export type { FieldControlSize as TextareaInputSize } from '../../foundations/fields'

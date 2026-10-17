@@ -1,13 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { CalendarTimeSlot } from '.'
+
 const meta = {
   title: 'Molecules/CalendarTimeSlot',
   component: CalendarTimeSlot,
   tags: ['visual-review'],
   args: { 'aria-label': 'Segunda, 10 horas', selected: true },
 } satisfies Meta<typeof CalendarTimeSlot>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Unavailable: Story = {

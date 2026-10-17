@@ -1,6 +1,7 @@
 import * as Styled from './styles'
 import { QuizResponseMark } from '../../primitives/QuizResponseMark'
 import type { QuizOptionProps } from './types'
+
 export function QuizOption({
   children,
   letter,
@@ -23,4 +24,5 @@ export function QuizOption({
     </Styled.Option>
   )
 }
+
 export type { QuizOptionProps, QuizOptionState } from './types'

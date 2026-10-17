@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-panel',
 })`

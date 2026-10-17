@@ -15,8 +15,11 @@ it('owns the word anatomy and accepts optional rich phonetic/example slots', () 
       bird
     </FlashcardWord>,
   )
+
   expect(screen.getByText('/bɜːrd/')).toHaveStyle({ fontSize: '0.875rem' })
   expect(screen.getByText('bird', { selector: 'b' })).toBeVisible()
+
   rerender(<FlashcardWord>bird</FlashcardWord>)
+
   expect(screen.queryByText('/bɜːrd/')).not.toBeInTheDocument()
 })

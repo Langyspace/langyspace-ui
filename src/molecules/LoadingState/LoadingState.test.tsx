@@ -7,6 +7,7 @@ describe('LoadingState', () => {
     render(<LoadingState title="Carregando alunos" />)
 
     const panel = screen.getByRole('status')
+
     expect(panel).toHaveAttribute('data-ui-loading-state', 'true')
     expect(panel).toHaveAttribute('aria-busy', 'true')
     expect(panel.querySelector('.lsui-sc-spinner')).toHaveAttribute(

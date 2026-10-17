@@ -34,9 +34,11 @@ describe('Drawer', () => {
       '[data-ui-modal-backdrop="true"]',
     )
     await waitFor(() => expect(backdrops[0].inert).toBe(true))
+
     expect(backdrops[1].inert).toBe(false)
 
     await user.keyboard('{Escape}')
+
     expect(closeDialog).toHaveBeenCalledTimes(1)
     expect(closeDrawer).not.toHaveBeenCalled()
 
@@ -57,9 +59,11 @@ describe('Drawer', () => {
           ?.inert,
       ).toBe(false)
     })
+
     expect(document.body.style.overflow).toBe('hidden')
 
     await user.keyboard('{Escape}')
+
     expect(closeDrawer).toHaveBeenCalledTimes(1)
   })
 
@@ -78,6 +82,7 @@ describe('Drawer', () => {
     )
 
     const drawer = screen.getByRole('dialog', { name: 'Painel' })
+
     expect(drawer).toHaveAttribute('data-ui-modal-layer', 'drawer')
     expect(drawer).toHaveAttribute('data-size', 'lg')
     expect(drawer).toHaveAttribute('data-work-item-id', 'charge-1')

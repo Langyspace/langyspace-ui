@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled.p.withConfig({ componentId: 'lsui-sc-form-error' })`
   margin: 0;
   padding: ${token.spacing3} ${token.spacing4};

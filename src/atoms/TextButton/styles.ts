@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { Pressable } from '../../primitives/Pressable'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-text-button',
 })`

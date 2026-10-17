@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-grouped-bar-chart',
 })`
@@ -15,6 +16,7 @@ export const Root = styled.div.withConfig({
     outline-offset: 2px;
   }
 `
+
 export const Day = styled.div`
   display: grid;
   align-items: end;
@@ -27,6 +29,7 @@ export const Day = styled.div`
     text-align: center;
   }
 `
+
 export const Bars = styled.div`
   display: grid;
   grid-auto-flow: column;

@@ -17,9 +17,13 @@ const meta = {
     ),
   },
 } satisfies Meta<typeof Card>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const WithAction: Story = {
   args: {
     children: (
@@ -31,6 +35,7 @@ export const WithAction: Story = {
     ),
   },
 }
+
 export const LongContent: Story = {
   tags: ['layout-boundary'],
   args: {

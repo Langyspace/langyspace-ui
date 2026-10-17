@@ -53,10 +53,12 @@ export const Item = styled(Pressable)<{
   color: ${({ $active, $surface }) => {
     if ($surface === 'inverse')
       return $active ? token.colorNeutral950 : token.colorInverseContentMuted
+
     return $active ? token.colorContentDefault : token.colorContentMuted
   }};
   background: ${({ $active }) => {
     if (!$active) return 'transparent'
+
     return token.colorNeutral0
   }};
   box-shadow: ${({ $active, $surface }) =>

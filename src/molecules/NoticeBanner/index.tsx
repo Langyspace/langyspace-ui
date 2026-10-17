@@ -16,4 +16,5 @@ export const NoticeBanner = forwardRef<HTMLElement, NoticeBannerProps>(
     )
   },
 )
+
 export type { NoticeBannerProps } from './types'

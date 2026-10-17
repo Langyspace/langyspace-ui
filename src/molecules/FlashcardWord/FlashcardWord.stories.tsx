@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardWord } from '.'
 import { FlashcardFaceCanvas } from '../../../.storybook/flashcard-fixtures'
+
 const meta = {
   title: 'Molecules/FlashcardWord',
   component: FlashcardWord,
@@ -22,8 +23,11 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof FlashcardWord>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 export const WithoutPhonetic: Story = { args: { phonetic: undefined } }
 export const LongWord: Story = { args: { children: 'misunderstanding' } }

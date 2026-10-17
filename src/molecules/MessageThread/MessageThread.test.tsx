@@ -59,6 +59,7 @@ describe('MessageThread', () => {
     )
 
     const viewport = screen.getByRole('region', { name: 'Histórico' })
+
     expect(viewportRef.current).toBe(viewport)
     expect(viewport).toHaveAttribute('tabindex', '0')
 

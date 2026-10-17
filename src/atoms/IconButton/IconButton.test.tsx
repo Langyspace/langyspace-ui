@@ -24,6 +24,7 @@ describe('IconButton', () => {
     )
 
     const button = screen.getByRole('button', { name: 'Fechar' })
+
     await user.click(button)
 
     expect(button).toHaveAttribute('type', 'button')
@@ -103,6 +104,7 @@ describe('IconButton', () => {
     )
 
     const button = screen.getByRole('button', { name: 'Guardar' })
+
     await user.click(button)
 
     expect(button).toBeDisabled()

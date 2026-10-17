@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { PracticeResultPanelProps } from './types'
+
 export function PracticeResultPanel({
   children,
   ...props
@@ -10,4 +11,5 @@ export function PracticeResultPanel({
     </Styled.Panel>
   )
 }
+
 export type { PracticeResultPanelProps } from './types'

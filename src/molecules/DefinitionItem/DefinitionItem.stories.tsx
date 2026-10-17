@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { DefinitionItem } from '.'
+
 const meta = {
   title: 'Molecules/DefinitionItem',
   component: DefinitionItem,
@@ -10,6 +11,9 @@ const meta = {
       'Um valor muito longo que precisa continuar legível em uma tela estreita',
   },
 } satisfies Meta<typeof DefinitionItem>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

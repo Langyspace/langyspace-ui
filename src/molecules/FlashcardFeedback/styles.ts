@@ -1,6 +1,7 @@
 import type { FlashcardGrade } from '../FlashcardRatingButton/types'
 import { styled, keyframes } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 const rise = keyframes`
   from {
     opacity: 0;
@@ -12,6 +13,7 @@ const rise = keyframes`
     transform: translateY(0);
   }
 `
+
 const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -21,6 +23,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
+
 const pop = keyframes`
   from {
     opacity: 0;
@@ -32,6 +35,7 @@ const pop = keyframes`
     transform: scale(1);
   }
 `
+
 const feedbackTones = {
   again: { color: 'var(--fc-red)', glow: 'rgba(225, 29, 72, 0.30)' },
   hard: { color: 'var(--fc-amber)', glow: 'rgba(217, 119, 6, 0.30)' },

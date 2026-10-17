@@ -6,6 +6,7 @@ import { MessageBubble } from '.'
 describe('MessageBubble', () => {
   it('renders semantic message content, time, delivery state and native props', () => {
     const ref = createRef<HTMLElement>()
+
     render(
       <MessageBubble
         className="consumer-message"

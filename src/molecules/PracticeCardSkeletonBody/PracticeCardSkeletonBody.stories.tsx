@@ -10,19 +10,25 @@ const Frame = styled.div`
   border: 1px solid #ececea;
   border-radius: 0.875rem;
 `
+
 const NarrowFrame = styled(Frame)`
   max-width: 8rem;
 `
+
 const TallFrame = styled(Frame)`
   height: 12rem;
 `
+
 const meta = {
   title: 'Molecules/Loading/PracticeCardSkeletonBody',
   component: PracticeCardSkeletonBody,
   tags: ['visual-review'],
 } satisfies Meta<typeof PracticeCardSkeletonBody>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {
   render: () => (
     <Frame>
@@ -30,6 +36,7 @@ export const Default: Story = {
     </Frame>
   ),
 }
+
 export const Narrow: Story = {
   render: () => (
     <NarrowFrame>
@@ -37,6 +44,7 @@ export const Narrow: Story = {
     </NarrowFrame>
   ),
 }
+
 export const ReservedSpace: Story = {
   render: () => (
     <TallFrame>

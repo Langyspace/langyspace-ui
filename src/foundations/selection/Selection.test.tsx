@@ -21,12 +21,14 @@ describe('selection foundations', () => {
       label: <span>18</span>,
       value: '18',
     }
+
     expect(inaccessible.value).toBe('18')
 
     const compatibilityOption: ChoiceOption = {
       label: <span>Legado</span>,
       value: 'legacy',
     }
+
     expect(compatibilityOption.value).toBe('legacy')
   })
 })

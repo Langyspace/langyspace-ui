@@ -1,7 +1,9 @@
 import * as Styled from './styles'
 import type { QuizBlankProps } from './types'
+
 export function QuizBlank(props: QuizBlankProps) {
   const named = Boolean(props['aria-label'])
+
   return (
     <Styled.Root
       {...props}
@@ -10,4 +12,5 @@ export function QuizBlank(props: QuizBlankProps) {
     />
   )
 }
+
 export type { QuizBlankProps } from './types'

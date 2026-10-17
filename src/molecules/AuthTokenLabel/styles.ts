@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled.label.withConfig({
   componentId: 'lsui-sc-auth-token-label',
 })`

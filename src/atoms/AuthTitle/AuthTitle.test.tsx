@@ -7,6 +7,7 @@ import { AuthTitle } from '.'
 describe('AuthTitle', () => {
   it('preserves a rich accessible heading and its native ref without a product theme', () => {
     const ref = createRef<HTMLHeadingElement>()
+
     render(
       <AuthTitle id="login-title" ref={ref}>
         Bom te ver de <AuthAccent>volta.</AuthAccent>
@@ -17,6 +18,7 @@ describe('AuthTitle', () => {
       level: 2,
       name: 'Bom te ver de volta.',
     })
+
     expect(ref.current).toBe(heading)
     expect(heading).toHaveAttribute('id', 'login-title')
     expect(heading).toHaveClass('lsui-sc-auth-title')

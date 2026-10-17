@@ -1,5 +1,6 @@
 import { styled, keyframes } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 const shadowPulse = keyframes`
   0%,
   100% {
@@ -10,6 +11,7 @@ const shadowPulse = keyframes`
     box-shadow: 0 0 0 5px rgba(255, 31, 92, 0);
   }
 `
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-repetitions',
 })`

@@ -22,6 +22,7 @@ describe('FieldRoot', () => {
     )
 
     const name = screen.getByRole('textbox', { name: 'Nome' })
+
     expect(name).toHaveAttribute('aria-invalid', 'true')
     expect(name.getAttribute('aria-describedby')).toMatch(/-hint .*?-error/)
     expect(screen.getByRole('alert')).toHaveTextContent('Obrigatório')

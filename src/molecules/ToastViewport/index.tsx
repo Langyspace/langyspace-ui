@@ -7,4 +7,5 @@ export const ToastViewport = forwardRef<HTMLDivElement, ToastViewportProps>(
     return <Viewport {...props} ref={ref} />
   },
 )
+
 export type { ToastViewportProps } from './types'

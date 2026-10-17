@@ -30,6 +30,7 @@ export function AuthTokenDigits({
       () => inputRefs.current[0]?.focus(),
       80,
     )
+
     return () => window.clearTimeout(focusTimeoutId)
   }, [autoFocus, disabled])
 
@@ -59,6 +60,7 @@ export function AuthTokenDigits({
       })
       updateDigits(nextDigits)
       inputRefs.current[Math.min(index + inserted.length, length) - 1]?.focus()
+
       return
     }
 

@@ -1,6 +1,7 @@
 import { Button } from '../../atoms/Button'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FormActions } from '.'
+
 const meta = {
   title: 'Molecules/FormActions',
   component: FormActions,
@@ -14,6 +15,9 @@ const meta = {
     ),
   },
 } satisfies Meta<typeof FormActions>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

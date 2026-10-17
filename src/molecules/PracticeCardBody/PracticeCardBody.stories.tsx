@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PracticeCardBody } from '.'
+
 const meta = {
   title: 'Molecules/PracticeCardBody',
   component: PracticeCardBody,
@@ -25,9 +26,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof PracticeCardBody>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const Completed: Story = {
   args: {
     completed: true,
@@ -36,6 +41,7 @@ export const Completed: Story = {
     value: 1,
   },
 }
+
 export const LongContent: Story = {
   args: {
     title: 'Vocabulário para conversar sobre viagens e situações de trabalho',

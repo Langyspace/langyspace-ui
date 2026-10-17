@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardFeedback } from '.'
 import { FlashcardDeckCanvas } from '../../../.storybook/flashcard-fixtures'
+
 const meta = {
   title: 'Molecules/FlashcardFeedback',
   component: FlashcardFeedback,
@@ -19,9 +20,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof FlashcardFeedback>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const Again: Story = {
   args: {
     grade: 'again',
@@ -30,6 +35,7 @@ export const Again: Story = {
     next: 'volta em 1 minuto',
   },
 }
+
 export const Hard: Story = {
   args: {
     grade: 'hard',
@@ -38,6 +44,7 @@ export const Hard: Story = {
     next: 'volta em 10 minutos',
   },
 }
+
 export const Easy: Story = {
   args: {
     grade: 'easy',

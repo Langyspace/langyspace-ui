@@ -6,6 +6,7 @@ import { TextareaInput } from '.'
 describe('TextareaInput', () => {
   it('forwards native props and its ref', () => {
     const ref = createRef<HTMLTextAreaElement>()
+
     render(
       <TextareaInput
         aria-label="Notas"

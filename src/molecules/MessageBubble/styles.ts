@@ -26,6 +26,7 @@ export const Bubble = styled.div<MessageBubbleStyleProps>`
     ${({ $side, $status }) => {
       if ($status === 'failed') return token.colorFeedbackDanger
       if ($side === 'outgoing') return token.colorBrandDefault
+
       return token.colorSurfaceBorderSubtle
     }};
   border-radius: ${({ $side }) =>
@@ -35,11 +36,13 @@ export const Bubble = styled.div<MessageBubbleStyleProps>`
   color: ${({ $side, $status }) => {
     if ($status === 'failed') return token.colorFeedbackDangerStrong
     if ($side === 'outgoing') return token.colorNeutral0
+
     return token.colorContentDefault
   }};
   background: ${({ $side, $status }) => {
     if ($status === 'failed') return token.colorFeedbackDangerSoft
     if ($side === 'outgoing') return token.colorBrandDefault
+
     return token.colorSurfaceMuted
   }};
   box-shadow: ${token.shadowSubtle};
@@ -63,6 +66,7 @@ export const Meta = styled.footer<MessageBubbleStyleProps>`
   color: ${({ $side, $status }) => {
     if ($status === 'failed') return token.colorFeedbackDangerStrong
     if ($side === 'outgoing') return token.colorNeutral0
+
     return token.colorContentMuted
   }};
   font-size: ${token.typographyFontSize2xs};

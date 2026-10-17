@@ -5,7 +5,9 @@ type PrimaryAction = Extract<
   OperationalListItemAction,
   { placement: 'primary' }
 >
+
 type QuickAction = Extract<OperationalListItemAction, { placement: 'quick' }>
+
 type OverflowAction = Exclude<
   OperationalListItemAction,
   PrimaryAction | QuickAction

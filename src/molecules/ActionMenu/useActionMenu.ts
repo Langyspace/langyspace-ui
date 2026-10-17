@@ -34,6 +34,7 @@ const isTabbable = (element: HTMLElement) => {
   }
 
   const style = window.getComputedStyle(element)
+
   return style.display !== 'none' && style.visibility !== 'hidden'
 }
 
@@ -101,6 +102,7 @@ export function useActionMenu({
 
     setActiveItemId(item.id)
     node.focus({ preventScroll: true })
+
     return true
   }, [])
 
@@ -122,6 +124,7 @@ export function useActionMenu({
   useLayoutEffect(() => {
     if (!isMenuOpen || !menuRef.current || !triggerRef.current) {
       setPosition(null)
+
       return
     }
 
@@ -190,6 +193,7 @@ export function useActionMenu({
     document.addEventListener('pointerdown', handlePointerDown, true)
     document.addEventListener('scroll', handleViewportChange, true)
     window.addEventListener('resize', handleViewportChange)
+
     return () => {
       document.removeEventListener('pointerdown', handlePointerDown, true)
       document.removeEventListener('scroll', handleViewportChange, true)
@@ -202,6 +206,7 @@ export function useActionMenu({
     if (isOpen) {
       const target = intent === 'last' ? enabledItems.at(-1) : enabledItems[0]
       if (!focusItem(target)) menuRef.current?.focus({ preventScroll: true })
+
       return
     }
 
@@ -223,6 +228,7 @@ export function useActionMenu({
       event.stopPropagation()
       requestOpen(false)
       focusTrigger()
+
       return
     }
 
@@ -230,6 +236,7 @@ export function useActionMenu({
       event.preventDefault()
       requestOpen(false)
       focusRelativeToTrigger(event.shiftKey)
+
       return
     }
 

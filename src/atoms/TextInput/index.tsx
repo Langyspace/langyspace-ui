@@ -23,4 +23,5 @@ export const TextInput = forwardRef<HTMLInputElement, TextInputProps>(
 )
 
 export type { TextInputProps } from './types'
+
 export type { FieldControlSize as TextInputSize } from '../../foundations/fields'

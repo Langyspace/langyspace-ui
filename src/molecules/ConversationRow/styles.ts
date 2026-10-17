@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
+
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-conversation-row',
 })<{ $selected: boolean }>`
@@ -25,6 +26,7 @@ export const Root = styled(Pressable).withConfig({
     outline-offset: -2px;
   }
 `
+
 export const Body = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-body',
 })`
@@ -34,6 +36,7 @@ export const Body = styled.span.withConfig({
   flex-direction: column;
   gap: ${token.spacing1};
 `
+
 export const Top = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-top',
 })`
@@ -43,6 +46,7 @@ export const Top = styled.span.withConfig({
   justify-content: space-between;
   gap: ${token.spacing2};
 `
+
 export const Title = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-title',
 })`
@@ -53,6 +57,7 @@ export const Title = styled.span.withConfig({
   text-overflow: ellipsis;
   white-space: nowrap;
 `
+
 export const Meta = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-meta',
 })`
@@ -61,6 +66,7 @@ export const Meta = styled.span.withConfig({
   font-size: ${token.typographyFontSizeXs};
   white-space: nowrap;
 `
+
 export const Bottom = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-bottom',
 })`
@@ -69,6 +75,7 @@ export const Bottom = styled.span.withConfig({
   align-items: center;
   gap: ${token.spacing2};
 `
+
 export const Preview = styled.span.withConfig({
   componentId: 'lsui-sc-conversation-preview',
 })<{ $unread: boolean }>`

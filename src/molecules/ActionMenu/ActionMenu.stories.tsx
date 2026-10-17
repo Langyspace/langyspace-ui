@@ -59,6 +59,7 @@ const meta = {
 } satisfies Meta<typeof ActionMenu>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 const centered = {
@@ -109,10 +110,15 @@ export const InteractiveKeyboard: Story = {
     const last = body.getByRole('menuitem', { name: 'Arquivar registro' })
     await waitFor(() => expect(first).toHaveFocus())
     await userEvent.keyboard('{ArrowDown}')
+
     await expect(second).toHaveFocus()
+
     await userEvent.keyboard('{End}')
+
     await expect(last).toHaveFocus()
+
     await userEvent.keyboard('{Escape}')
+
     await expect(trigger).toHaveFocus()
     await expect(body.queryByRole('menu')).not.toBeInTheDocument()
   },

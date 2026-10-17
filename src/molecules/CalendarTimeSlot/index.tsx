@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { CalendarTimeSlotProps } from './types'
+
 export function CalendarTimeSlot({
   tone = 'neutral',
   selected = false,
@@ -15,4 +16,5 @@ export function CalendarTimeSlot({
     />
   )
 }
+
 export type { CalendarTimeSlotProps } from './types'

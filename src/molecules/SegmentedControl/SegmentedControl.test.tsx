@@ -35,6 +35,7 @@ describe('SegmentedControl', () => {
     ).toHaveLength(1)
 
     await user.click(screen.getByRole('button', { name: 'Todos' }))
+
     expect(onChange).toHaveBeenCalledWith('all')
   })
 

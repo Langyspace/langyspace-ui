@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { ConversationRowProps } from './types'
+
 export function ConversationRow({
   avatar,
   title,
@@ -13,6 +14,7 @@ export function ConversationRow({
   const selected = Boolean(
     props['aria-current'] && props['aria-current'] !== 'false',
   )
+
   return (
     <Styled.Root {...props} type={type} $selected={selected}>
       {avatar}
@@ -31,4 +33,5 @@ export function ConversationRow({
     </Styled.Root>
   )
 }
+
 export type { ConversationRowProps } from './types'

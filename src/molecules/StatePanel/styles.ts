@@ -34,13 +34,16 @@ export const Container = styled.div.withConfig({
   background: ${token.colorNeutral0};
   text-align: center;
 `
+
 export const Icon = styled.span`
   display: inline-flex;
   flex-shrink: 0;
 `
+
 export const Content = styled.div`
   max-width: ${contentMaxWidth};
 `
+
 export const Title = styled.strong`
   display: block;
   color: ${token.colorNeutral950};
@@ -48,11 +51,13 @@ export const Title = styled.strong`
   font-weight: ${token.typographyFontWeightSemibold};
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const Description = styled.div<{ $density: StatePanelDensity }>`
   margin-top: ${({ $density }) => ($density === 'compact' ? compactDescriptionOffset : token.spacing1)};
   font-size: ${({ $density }) => ($density === 'compact' ? compactDescriptionFontSize : token.typographyFontSizeSm)};
   line-height: ${token.typographyLineHeightNormal};
 `
+
 export const Action = styled.div<{ $density: StatePanelDensity }>`
   display: inline-flex;
   justify-content: center;

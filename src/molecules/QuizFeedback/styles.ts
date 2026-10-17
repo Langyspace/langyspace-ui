@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { quizRecipe } from '../../foundations/quizRecipe'
+
 export const Feedback = styled.div.withConfig({
   componentId: 'lsui-sc-quiz-feedback',
 })<{ $correct: boolean }>`

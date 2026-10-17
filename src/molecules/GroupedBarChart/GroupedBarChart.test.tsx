@@ -1,7 +1,9 @@
 import { cleanup, render, screen, fireEvent } from '@testing-library/react'
 import { afterEach, it, expect } from 'vitest'
 import { GroupedBarChart } from '.'
+
 afterEach(cleanup)
+
 it('keeps descriptions and keyboard endpoints', () => {
   render(
     <GroupedBarChart
@@ -16,11 +18,15 @@ it('keeps descriptions and keyboard endpoints', () => {
       ]}
     />,
   )
+
   const region = screen.getByRole('region')
   Object.defineProperty(region, 'scrollWidth', { value: 1000 })
   fireEvent.keyDown(region, { key: 'End' })
+
   expect(region.scrollLeft).toBe(1000)
+
   fireEvent.keyDown(region, { key: 'Home' })
+
   expect(region.scrollLeft).toBe(0)
   expect(screen.getByRole('img').getAttribute('aria-label')).toContain(
     '12 cliques',

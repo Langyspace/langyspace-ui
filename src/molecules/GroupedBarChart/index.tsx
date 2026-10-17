@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { GroupedBarChartProps } from './types'
+
 export function GroupedBarChart({
   items,
   onKeyDown,
@@ -11,6 +12,7 @@ export function GroupedBarChart({
       item.values.map((v) => (Number.isFinite(v) ? v : 0)),
     ),
   )
+
   return (
     <Styled.Root
       {...props}
@@ -43,4 +45,5 @@ export function GroupedBarChart({
     </Styled.Root>
   )
 }
+
 export type { GroupedBarChartProps } from './types'

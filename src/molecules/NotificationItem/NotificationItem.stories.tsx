@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { NotificationItem } from '.'
+
 const meta = {
   title: 'Molecules/NotificationItem',
   component: NotificationItem,
@@ -12,6 +13,9 @@ const meta = {
     action: 'Abrir',
   },
 } satisfies Meta<typeof NotificationItem>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

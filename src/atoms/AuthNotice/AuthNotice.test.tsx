@@ -22,6 +22,7 @@ describe('AuthNotice', () => {
     )
 
     const notice = screen.getByTestId('info')
+
     expect(notice).toHaveStyle({ margin: '0' })
     expect(getComputedStyle(notice).fontFamily).not.toContain('Consolas')
     expect(notice.querySelector('code')).toHaveStyle({

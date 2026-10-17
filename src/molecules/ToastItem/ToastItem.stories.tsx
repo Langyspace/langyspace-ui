@@ -8,9 +8,13 @@ const meta = {
   tags: ['visual-review'],
   args: { message: 'As informações foram atualizadas.' },
 } satisfies Meta<typeof ToastItem>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const Tones: Story = {
   render: () => (
     <StoryStack>
@@ -22,6 +26,7 @@ export const Tones: Story = {
     </StoryStack>
   ),
 }
+
 export const WithAction: Story = {
   args: {
     tone: 'brand',
@@ -32,7 +37,9 @@ export const WithAction: Story = {
     icon: <span aria-hidden="true">!</span>,
   },
 }
+
 export const Disabled: Story = { args: { disabled: true } }
+
 export const LongContent: Story = {
   tags: ['layout-boundary'],
   decorators: [

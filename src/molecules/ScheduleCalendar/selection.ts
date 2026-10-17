@@ -22,6 +22,7 @@ export const getScheduleSelection = (
   )
   const start = Math.min(anchor.startMinute, target.startMinute)
   const end = Math.max(anchor.startMinute, target.startMinute)
+
   return slots.filter(
     (slot) =>
       dates.has(slot.dateKey) &&

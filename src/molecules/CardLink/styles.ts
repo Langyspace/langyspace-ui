@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { cardRecipe } from '../../foundations/surfaces/cardRecipe'
+
 export const Root = styled.a.withConfig({ componentId: 'lsui-sc-card-link' })`
   ${cardRecipe};
   display: block;

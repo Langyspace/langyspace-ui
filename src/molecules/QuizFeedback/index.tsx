@@ -1,6 +1,7 @@
 import { QuizResponseMark } from '../../primitives/QuizResponseMark'
 import * as Styled from './styles'
 import type { QuizFeedbackProps } from './types'
+
 export function QuizFeedback({ children, tone, ...props }: QuizFeedbackProps) {
   return (
     <Styled.Feedback
@@ -13,4 +14,5 @@ export function QuizFeedback({ children, tone, ...props }: QuizFeedbackProps) {
     </Styled.Feedback>
   )
 }
+
 export type { QuizFeedbackProps } from './types'

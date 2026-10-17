@@ -54,6 +54,7 @@ const meta = {
 } satisfies Meta<typeof SegmentedControl>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
@@ -65,11 +66,14 @@ export const Interactive: Story = {
     const thirtyDays = canvas.getByRole('button', { name: '30 dias' })
 
     await expect(thirtyDays).toHaveAttribute('aria-pressed', 'true')
+
     await userEvent.click(sevenDays)
+
     await expect(sevenDays).toHaveAttribute('aria-pressed', 'true')
     await expect(thirtyDays).toHaveAttribute('aria-pressed', 'false')
 
     await userEvent.keyboard('{Tab}{Enter}')
+
     await expect(thirtyDays).toHaveAttribute('aria-pressed', 'true')
   },
 }

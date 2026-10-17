@@ -20,6 +20,7 @@ export const Notice = styled.aside.withConfig({
     align-items: flex-start;
   }
 `
+
 export const Icon = styled.span.withConfig({
   componentId: 'lsui-sc-notice-icon',
 })`
@@ -33,11 +34,13 @@ export const Icon = styled.span.withConfig({
   background: ${token.colorNeutral100};
   color: ${token.colorContentSecondary};
 `
+
 export const Copy = styled.div.withConfig({
   componentId: 'lsui-sc-notice-copy',
 })`
   min-width: 0;
 `
+
 export const Actions = styled.div.withConfig({
   componentId: 'lsui-sc-notice-actions',
 })`
@@ -51,6 +54,7 @@ export const Actions = styled.div.withConfig({
     margin-top: ${token.spacing3};
   }
 `
+
 export const Title = styled.strong.withConfig({
   componentId: 'lsui-sc-notice-title',
 })`
@@ -60,6 +64,7 @@ export const Title = styled.strong.withConfig({
   font-weight: ${token.typographyFontWeightBold};
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-notice-text',
 })`

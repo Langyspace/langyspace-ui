@@ -5,7 +5,9 @@ import { StatValue } from '../../atoms/StatValue'
 import { StatLabel } from '../../atoms/StatLabel'
 import { Button } from '../../atoms/Button'
 import { StatAction } from '../StatAction'
+
 afterEach(cleanup)
+
 it('reserves room for the optional action before the public value and label', () => {
   render(
     <StatCard>
@@ -28,6 +30,7 @@ it('preserves native attributes and structured caller content without a private 
       <strong>Conteúdo fornecido</strong>
     </StatCard>,
   )
+
   expect(
     screen.getByTestId('content').querySelector('strong')?.textContent,
   ).toBe('Conteúdo fornecido')

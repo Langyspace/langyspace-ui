@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+
 export interface ScheduleRowProps extends Omit<
   ComponentPropsWithRef<'div'>,
   'children' | 'onClick' | 'onKeyDown' | 'role' | 'tabIndex'

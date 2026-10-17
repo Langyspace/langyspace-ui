@@ -9,6 +9,7 @@ describe('Card', () => {
   it('preserves an accessible named group, ref and composed keyboard action', async () => {
     const ref = createRef<HTMLDivElement>()
     const onOpen = vi.fn()
+
     render(
       <Card
         ref={ref}
@@ -20,13 +21,20 @@ describe('Card', () => {
         <Button onClick={onOpen}>Ver detalhes</Button>
       </Card>,
     )
+
     const group = screen.getByRole('group', { name: 'Resumo' })
+
     expect(ref.current).toBe(group)
     expect(group).toHaveAttribute('data-context', 'summary')
+
     const user = userEvent.setup()
+
     await user.tab()
+
     expect(screen.getByRole('button', { name: 'Ver detalhes' })).toHaveFocus()
+
     await user.keyboard('{Enter}')
+
     expect(onOpen).toHaveBeenCalledOnce()
   })
 })

@@ -43,14 +43,17 @@ describe('Dialog', () => {
   it('names the layer, traps focus and restores the trigger after Escape', async () => {
     const onClose = vi.fn()
     const user = userEvent.setup()
+
     render(<DialogHarness onClose={onClose} />)
 
     const trigger = screen.getByRole('button', { name: 'Abrir decisão' })
+
     await user.click(trigger)
 
     const dialog = screen.getByRole('dialog', { name: 'Confirmar decisão' })
     const initial = screen.getByRole('button', { name: 'Cancelar' })
     await waitFor(() => expect(initial).toHaveFocus())
+
     expect(dialog).toHaveAccessibleDescription(
       'Revise os dados antes de continuar.',
     )
@@ -58,16 +61,21 @@ describe('Dialog', () => {
 
     screen.getByRole('button', { name: 'Confirmar' }).focus()
     await user.tab()
+
     expect(screen.getByRole('button', { name: 'Fechar decisão' })).toHaveFocus()
 
     await user.keyboard('{Escape}')
+
     expect(onClose).toHaveBeenCalledTimes(1)
+
     await waitFor(() => expect(trigger).toHaveFocus())
+
     expect(document.body.style.overflow).toBe('')
   })
 
   it('closes only from a complete backdrop gesture', async () => {
     const onClose = vi.fn()
+
     render(
       <Dialog closeLabel="Fechar" onClose={onClose} open title="Editar lead">
         Conteúdo
@@ -81,16 +89,19 @@ describe('Dialog', () => {
 
     fireEvent.pointerDown(dialog)
     fireEvent.pointerUp(backdrop)
+
     expect(onClose).not.toHaveBeenCalled()
 
     fireEvent.pointerDown(backdrop)
     fireEvent.pointerUp(backdrop)
+
     expect(onClose).toHaveBeenCalledTimes(1)
   })
 
   it('keeps blocked layers focused and non-dismissible', async () => {
     const onClose = vi.fn()
     const user = userEvent.setup()
+
     render(
       <Dialog
         closeLabel="Fechar processamento"
@@ -105,16 +116,20 @@ describe('Dialog', () => {
 
     const dialog = screen.getByRole('dialog', { name: 'Processando' })
     await waitFor(() => expect(dialog).toHaveFocus())
+
     expect(
       screen.getByRole('button', { name: 'Fechar processamento' }),
     ).toBeDisabled()
 
     await user.keyboard('{Escape}')
+
     const backdrop = document.querySelector<HTMLElement>(
       '[data-ui-modal-backdrop="true"]',
     )!
+
     fireEvent.pointerDown(backdrop)
     fireEvent.pointerUp(backdrop)
+
     expect(onClose).not.toHaveBeenCalled()
   })
 

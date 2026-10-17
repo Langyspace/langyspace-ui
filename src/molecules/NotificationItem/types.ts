@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+
 export interface NotificationItemProps extends Omit<
   ComponentPropsWithRef<'button'>,
   'children' | 'title'

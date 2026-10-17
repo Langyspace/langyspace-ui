@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { AuthBrandTitle } from '.'
+
 const meta = {
   title: 'Atoms/AuthBrandTitle',
   component: AuthBrandTitle,
@@ -13,6 +14,9 @@ const meta = {
   ],
   args: { children: 'Conteúdo fornecido pelo produto' },
 } satisfies Meta<typeof AuthBrandTitle>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

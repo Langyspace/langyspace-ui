@@ -129,12 +129,16 @@ describe('OperationalList', () => {
     )
 
     const link = screen.getByRole('link', { name: 'Visitar Ana Lima' })
+
     expect(link).toHaveAttribute('href', '/pessoas/ana-1')
+
     await user.click(link)
+
     expect(onLinkNavigate).toHaveBeenCalledOnce()
     expect(onLinkNavigate.mock.calls[0]?.[0]).toHaveProperty('button', 0)
 
     await user.click(screen.getByRole('button', { name: 'Editar Bia Souza' }))
+
     expect(onCommandNavigate).toHaveBeenCalledOnce()
   })
 
@@ -168,6 +172,7 @@ describe('OperationalList', () => {
 
     const personHeader = screen.getByRole('columnheader', { name: 'Pessoa' })
     const statusHeader = screen.getByRole('columnheader', { name: 'Status' })
+
     expect(personHeader).toHaveAttribute('aria-sort', 'ascending')
     expect(statusHeader).toHaveAttribute('aria-sort', 'none')
     expect(
@@ -176,6 +181,7 @@ describe('OperationalList', () => {
 
     await user.click(within(personHeader).getByRole('button'))
     await user.click(within(statusHeader).getByRole('button'))
+
     expect(onPrimarySort).toHaveBeenCalledOnce()
     expect(onStatusSort).toHaveBeenCalledOnce()
   })
@@ -224,7 +230,9 @@ describe('OperationalList', () => {
     expect(screen.queryByRole('button', { name: 'quick-extra' })).toBeNull()
 
     await user.click(screen.getByRole('button', { name: 'Mais ações' }))
+
     const menuItems = screen.getAllByRole('menuitem')
+
     expect(menuItems.map((item) => item.textContent)).toEqual([
       'neutral-explicit',
       'primary-extra',
@@ -234,6 +242,7 @@ describe('OperationalList', () => {
     expect(screen.getAllByRole('separator')).toHaveLength(1)
 
     await user.click(menuItems[1])
+
     expect(selected).toEqual(['primary-extra'])
   })
 
@@ -259,10 +268,12 @@ describe('OperationalList', () => {
     )
 
     const triggers = screen.getAllByRole('button', { name: 'Mais ações' })
+
     await user.click(triggers[0])
     await waitFor(() => expect(screen.getAllByRole('menu')).toHaveLength(1))
     await user.click(triggers[1])
     await waitFor(() => expect(screen.getAllByRole('menu')).toHaveLength(1))
+
     expect(triggers[0]).toHaveAttribute('aria-expanded', 'false')
     expect(triggers[1]).toHaveAttribute('aria-expanded', 'true')
 
@@ -357,6 +368,7 @@ describe('OperationalList', () => {
         ref={callbackRef}
       />,
     )
+
     expect(
       screen.getByRole('table', { name: 'Composed list' }).parentElement
         ?.parentElement,

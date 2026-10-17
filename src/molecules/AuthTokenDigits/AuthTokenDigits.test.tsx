@@ -21,12 +21,14 @@ describe('AuthTokenDigits', () => {
     )
 
     const digits = screen.getAllByRole('textbox')
+
     await user.type(digits[0], 'a1')
 
     expect(onTokenChange).toHaveBeenLastCalledWith('1')
     expect(digits[1]).toHaveFocus()
 
     await user.keyboard('{Backspace}')
+
     expect(digits[0]).toHaveFocus()
   })
 
@@ -45,11 +47,13 @@ describe('AuthTokenDigits', () => {
     )
 
     let digits = screen.getAllByRole('textbox') as HTMLInputElement[]
+
     expect(digits.map((input) => input.value)).toEqual(['1', '2', '', ''])
 
     fireEvent.paste(digits[2], {
       clipboardData: { getData: () => '9a876' },
     })
+
     expect(onTokenChange).toHaveBeenLastCalledWith('9876')
 
     rerender(
@@ -65,6 +69,7 @@ describe('AuthTokenDigits', () => {
       />,
     )
     digits = screen.getAllByRole('textbox') as HTMLInputElement[]
+
     expect(digits.map((input) => input.value)).toEqual(['9', '8', '7', '6'])
     expect(digits[0]).toHaveAttribute('aria-invalid', 'true')
   })
@@ -93,6 +98,7 @@ describe('AuthTokenDigits', () => {
     }
 
     render(<ControlledToken />)
+
     await user.type(screen.getByLabelText('Dígito 1'), '123456')
 
     expect(onTokenChange).toHaveBeenLastCalledWith('123456')
@@ -113,14 +119,22 @@ describe('AuthTokenDigits', () => {
     )
 
     const digits = screen.getAllByRole('textbox')
+
     await user.click(digits[1])
     await user.keyboard('{ArrowLeft}')
+
     expect(digits[0]).toHaveFocus()
+
     await user.keyboard('{ArrowRight}')
+
     expect(digits[1]).toHaveFocus()
+
     await user.keyboard('{End}')
+
     expect(digits[3]).toHaveFocus()
+
     await user.keyboard('{Home}')
+
     expect(digits[0]).toHaveFocus()
   })
 
@@ -137,9 +151,11 @@ describe('AuthTokenDigits', () => {
 
     await user.type(screen.getByLabelText('Dígito 1'), '123456')
     rerender(<AuthTokenDigits {...props} length={4} />)
+
     expect(screen.getAllByRole('textbox')).toHaveLength(4)
 
     rerender(<AuthTokenDigits {...props} length={6} />)
+
     expect(
       screen
         .getAllByRole('textbox')
@@ -163,10 +179,12 @@ describe('AuthTokenDigits', () => {
       )
 
       act(() => vi.advanceTimersByTime(80))
+
       expect(screen.getByLabelText('Dígito 1')).not.toHaveFocus()
 
       rerender(<AuthTokenDigits {...props} autoFocus />)
       act(() => vi.advanceTimersByTime(80))
+
       expect(screen.getByLabelText('Dígito 1')).toHaveFocus()
     } finally {
       vi.useRealTimers()

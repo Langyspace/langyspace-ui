@@ -27,14 +27,18 @@ describe('FilterPills', () => {
     expect(screen.getByRole('group', { name: 'Filtrar alunos' })).toHaveClass(
       'lsui-sc-filter-pills',
     )
+
     const selectedFilter = screen.getByRole('button', { name: 'Todos: 175' })
+
     expect(selectedFilter).toHaveAttribute('aria-pressed', 'true')
     expect(selectedFilter).toHaveStyle({
       alignItems: 'center',
       display: 'inline-flex',
       gap: '0.5rem',
     })
+
     await user.click(screen.getByRole('button', { name: 'Ativos: 4' }))
+
     expect(onChange).toHaveBeenCalledWith('active')
   })
 

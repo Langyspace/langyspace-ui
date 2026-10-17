@@ -8,6 +8,7 @@ import { NoticeBanner } from '.'
 describe('NoticeBanner', () => {
   it('leaves announcement semantics to its caller and forwards native attributes and ref', () => {
     const ref = createRef<HTMLElement>()
+
     render(
       <NoticeBanner
         ref={ref}
@@ -18,11 +19,13 @@ describe('NoticeBanner', () => {
         Conteúdo disponível
       </NoticeBanner>,
     )
+
     expect(screen.getByRole('complementary')).toBe(ref.current)
     expect(ref.current).toHaveAttribute('data-shell-notice', 'offline')
     expect(ref.current).not.toHaveAttribute('aria-live')
     expect(screen.queryByRole('button')).not.toBeInTheDocument()
   })
+
   it('preserves action focus, callbacks and disabled state without taking lifecycle ownership', async () => {
     const onUpdate = vi.fn()
     const user = userEvent.setup()
@@ -35,11 +38,16 @@ describe('NoticeBanner', () => {
         Atualize quando puder.
       </NoticeBanner>,
     )
+
     await user.tab()
+
     expect(screen.getByRole('button', { name: 'Atualizar' })).toHaveFocus()
     expect(onUpdate).not.toHaveBeenCalled()
+
     await user.keyboard('{Enter}')
+
     expect(onUpdate).toHaveBeenCalledOnce()
+
     rerender(
       <NoticeBanner
         icon={<span />}
@@ -54,6 +62,7 @@ describe('NoticeBanner', () => {
       </NoticeBanner>,
     )
     await user.click(screen.getByRole('button', { name: 'Atualizando' }))
+
     expect(onUpdate).toHaveBeenCalledOnce()
   })
 })

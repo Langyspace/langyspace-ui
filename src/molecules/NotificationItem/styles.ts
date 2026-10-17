@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
+
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-notification-item',
 })`
@@ -39,11 +40,13 @@ export const Root = styled(Pressable).withConfig({
     grid-template-columns: auto minmax(0, 1fr);
   }
 `
+
 export const Content = styled.span.withConfig({
   componentId: 'lsui-sc-notification-content',
 })`
   min-width: 0;
 `
+
 export const ItemTitle = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemtitle',
 })`
@@ -53,6 +56,7 @@ export const ItemTitle = styled.span.withConfig({
   font-weight: ${token.typographyFontWeightSemibold};
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const ItemBody = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itembody',
 })`
@@ -62,6 +66,7 @@ export const ItemBody = styled.span.withConfig({
   font-size: ${token.typographyFontSizeSm};
   line-height: ${token.typographyLineHeightNormal};
 `
+
 export const ItemMeta = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemmeta',
 })`
@@ -71,6 +76,7 @@ export const ItemMeta = styled.span.withConfig({
   font-size: ${token.typographyFontSizeXs};
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const ItemAction = styled.span.withConfig({
   componentId: 'lsui-sc-notification-itemaction',
 })`

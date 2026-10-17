@@ -23,6 +23,7 @@ const meta = {
 } satisfies Meta<typeof SelectInput>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}

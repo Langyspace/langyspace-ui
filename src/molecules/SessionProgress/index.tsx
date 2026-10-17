@@ -1,6 +1,7 @@
 import { PracticeProgressBar } from '../../atoms/PracticeProgressBar'
 import * as Styled from './styles'
 import type { SessionProgressProps } from './types'
+
 export function SessionProgress({
   name,
   counter,
@@ -17,4 +18,5 @@ export function SessionProgress({
     </Styled.Root>
   )
 }
+
 export type { SessionProgressProps } from './types'

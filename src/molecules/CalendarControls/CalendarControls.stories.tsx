@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { CalendarControls } from '.'
 import { styled } from 'styled-components'
+
 const Legend = styled.span`
   display: flex;
   flex-wrap: wrap;
@@ -8,6 +9,7 @@ const Legend = styled.span`
   margin-left: auto;
   font-size: 0.75rem;
 `
+
 const meta = {
   title: 'Molecules/CalendarControls',
   component: CalendarControls,
@@ -21,9 +23,13 @@ const meta = {
     onToday: () => {},
   },
 } satisfies Meta<typeof CalendarControls>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const WithLegend: Story = {
   args: {
     children: (
@@ -35,11 +41,13 @@ export const WithLegend: Story = {
     ),
   },
 }
+
 export const LongLabel: Story = {
   args: {
     label: 'Período com nome longo para verificar a quebra do cabeçalho',
   },
 }
+
 export const NarrowContainer: Story = {
   render: (args) => (
     <div style={{ maxWidth: '20rem' }}>

@@ -6,6 +6,7 @@ import { TextInput } from '.'
 describe('TextInput', () => {
   it('forwards native props and its ref', () => {
     const ref = createRef<HTMLInputElement>()
+
     render(<TextInput aria-label="Nome" defaultValue="Maria" ref={ref} />)
 
     expect(screen.getByRole('textbox', { name: 'Nome' })).toBe(ref.current)

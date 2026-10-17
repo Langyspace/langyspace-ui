@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { DetailRowProps } from './types'
+
 export function DetailRow({
   icon,
   label,
@@ -18,4 +19,5 @@ export function DetailRow({
     </Styled.Root>
   )
 }
+
 export type { DetailRowProps } from './types'

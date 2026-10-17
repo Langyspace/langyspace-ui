@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { AuthChannelIcon } from '.'
+
 const meta = {
   title: 'Molecules/AuthChannelIcon',
   component: AuthChannelIcon,
@@ -21,8 +22,11 @@ const meta = {
     ),
   },
 } satisfies Meta<typeof AuthChannelIcon>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Whatsapp: Story = { args: { channel: 'whatsapp' } }

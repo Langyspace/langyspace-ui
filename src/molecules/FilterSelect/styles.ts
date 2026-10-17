@@ -2,11 +2,13 @@ import { styled } from 'styled-components'
 import { SelectInput } from '../../atoms/SelectInput'
 import * as token from '../../foundations/tokenValues'
 import type { FieldControlSize } from '../../foundations/fields'
+
 const fontSizes = {
   sm: token.typographyFontSizeXs,
   md: token.typographyFontSizeXs,
   lg: token.typographyFontSizeSm,
 } as const
+
 export const Root = styled(SelectInput).withConfig({
   componentId: 'lsui-sc-filter-select',
 })<{ $controlSize: FieldControlSize }>`

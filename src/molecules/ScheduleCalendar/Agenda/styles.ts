@@ -13,6 +13,7 @@ export const Root = styled.div`
     overscroll-behavior-y: contain;
   }
 `
+
 export const Card = styled.section`
   display: grid;
   gap: ${tokens.spacing[3]};
@@ -21,6 +22,7 @@ export const Card = styled.section`
   border-radius: ${tokens.radius.card};
   background: ${tokens.color.neutral[0]};
 `
+
 export const Header = styled.header`
   display: flex;
   align-items: baseline;
@@ -37,10 +39,12 @@ export const Header = styled.header`
     font-size: ${tokens.typography.fontSize.xs};
   }
 `
+
 export const Stack = styled.div`
   display: grid;
   gap: ${tokens.spacing[2]};
 `
+
 export const Event = styled(Pressable)`
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
@@ -79,6 +83,7 @@ export const Event = styled(Pressable)`
     font-size: ${tokens.typography.fontSize.xs};
   }
 `
+
 export const Slot = styled(Pressable)`
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +111,7 @@ export const Slot = styled(Pressable)`
     background: ${tokens.color.neutral[50]};
   }
 `
+
 export const More = styled(Pressable)`
   justify-self: start;
   min-height: 2.75rem;

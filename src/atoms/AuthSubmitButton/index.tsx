@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { AuthSubmitButtonProps } from './types'
+
 export function AuthSubmitButton({
   type = 'submit',
   ...props
@@ -14,4 +15,5 @@ export function AuthSubmitButton({
     />
   )
 }
+
 export type { AuthSubmitButtonProps } from './types'

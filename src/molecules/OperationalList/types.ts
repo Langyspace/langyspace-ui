@@ -7,8 +7,11 @@ import type {
 import type { AccessibleName } from '../../foundations/accessibility'
 
 export type OperationalListAlign = 'start' | 'end'
+
 export type OperationalListDensity = 'regular' | 'compact'
+
 export type OperationalListImportance = 'secondary' | 'tertiary'
+
 export type OperationalListSortDirection = 'ascending' | 'descending' | 'none'
 
 export interface OperationalListSort {

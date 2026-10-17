@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-flashcard-progress-segment',
   shouldForwardProp: (prop) => prop !== 'state',

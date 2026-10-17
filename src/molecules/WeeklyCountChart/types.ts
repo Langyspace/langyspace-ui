@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef } from 'react'
+
 export interface WeeklyCountChartProps extends Omit<
   ComponentPropsWithRef<'div'>,
   'children'

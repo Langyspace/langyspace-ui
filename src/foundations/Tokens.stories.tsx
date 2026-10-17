@@ -139,6 +139,7 @@ const meta = {
 } satisfies Meta<typeof ColorTokens>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Colors: Story = {

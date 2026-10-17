@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, within } from 'storybook/test'
 import { ScheduleRow } from '.'
 import { Button } from '../../atoms/Button'
+
 const meta = {
   title: 'Molecules/ScheduleRow',
   component: ScheduleRow,
@@ -14,8 +15,11 @@ const meta = {
     actions: <Button size="sm">Abrir</Button>,
   },
 } satisfies Meta<typeof ScheduleRow>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Focused: Story = {
@@ -24,6 +28,7 @@ export const Focused: Story = {
       name: 'Abrir aula de Participante',
     })
     primary.focus()
+
     await expect(primary).toHaveFocus()
   },
 }
@@ -34,6 +39,7 @@ export const ActionFocused: Story = {
       name: 'Abrir',
     })
     action.focus()
+
     await expect(action).toHaveFocus()
   },
 }

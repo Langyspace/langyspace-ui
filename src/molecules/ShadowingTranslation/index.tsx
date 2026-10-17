@@ -6,6 +6,7 @@ export function ShadowingTranslation({
   ...props
 }: ShadowingTranslationProps) {
   const hasContent = children != null && children !== false
+
   return (
     <Styled.Root {...props}>
       {hasContent && (
@@ -14,4 +15,5 @@ export function ShadowingTranslation({
     </Styled.Root>
   )
 }
+
 export type { ShadowingTranslationProps } from './types'

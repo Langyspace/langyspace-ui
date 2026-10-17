@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { GroupedBarChart } from '.'
+
 const meta = {
   title: 'Molecules/GroupedBarChart',
   component: GroupedBarChart,
@@ -16,6 +17,9 @@ const meta = {
     ],
   },
 } satisfies Meta<typeof GroupedBarChart>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

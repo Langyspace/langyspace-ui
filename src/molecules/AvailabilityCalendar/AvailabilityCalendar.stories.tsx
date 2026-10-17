@@ -35,6 +35,7 @@ const days: AvailabilityCalendarDay[] = [
 
 function ControlledCalendar(props: AvailabilityCalendarProps) {
   const [selected, setSelected] = useState(props.selectedSlotIds)
+
   return (
     <AvailabilityCalendar
       {...props}
@@ -63,7 +64,9 @@ const meta = {
   component: AvailabilityCalendar,
   title: 'Molecules/Scheduling/AvailabilityCalendar',
 } satisfies Meta<typeof AvailabilityCalendar>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
@@ -74,20 +77,31 @@ export const Default: Story = {
     const first = canvas.getByRole('button', {
       name: 'Segunda, 14/09/2026, 09:00',
     })
+
     await userEvent.tab()
+
     await expect(first).toHaveFocus()
+
     await userEvent.keyboard(' ')
+
     await expect(first).toHaveAttribute('aria-pressed', 'true')
+
     await userEvent.tab()
+
     await expect(
       canvas.getByRole('button', { name: 'Segunda, 14/09/2026, 11:00' }),
     ).toHaveFocus()
+
     await userEvent.keyboard('{Enter}')
+
     await expect(canvas.getByText('2 horários selecionados')).toBeVisible()
+
     await userEvent.click(first)
+
     await expect(first).toHaveAttribute('aria-pressed', 'false')
   },
 }
+
 export const Selected: Story = {
   tags: ['visual-review'],
   args: {
@@ -95,6 +109,7 @@ export const Selected: Story = {
     selectionLabel: '2 horários selecionados',
   },
 }
+
 export const Narrow: Story = {
   tags: ['layout-boundary', 'visual-review'],
   render: (args) => (
@@ -103,6 +118,7 @@ export const Narrow: Story = {
     </NarrowSurface>
   ),
 }
+
 export const Stress: Story = {
   tags: ['layout-boundary', 'visual-review'],
   args: {
@@ -137,6 +153,7 @@ export const Stress: Story = {
     selectedSlotIds: ['long-selected'],
   },
 }
+
 export const States: Story = {
   tags: ['visual-review'],
   render: (args) => (

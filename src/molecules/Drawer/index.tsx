@@ -19,6 +19,7 @@ export function Drawer(props: DrawerProps) {
 }
 
 export type { DrawerProps } from './types'
+
 export type {
   OverlayDismissal as DrawerDismissal,
   OverlayPanelProps as DrawerPanelProps,

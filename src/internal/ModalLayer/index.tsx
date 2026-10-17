@@ -35,6 +35,7 @@ const isTabbable = (element: HTMLElement) => {
   }
 
   const style = window.getComputedStyle(element)
+
   return style.display !== 'none' && style.visibility !== 'hidden'
 }
 
@@ -102,6 +103,7 @@ export function ModalLayer({
   useEffect(() => {
     if (!open) {
       deactivate()
+
       return
     }
     if (layerRef.current || !backdropRef.current || !panelRef.current) return
@@ -142,6 +144,7 @@ export function ModalLayer({
     }
 
     document.addEventListener('keydown', handleEscape)
+
     return () => document.removeEventListener('keydown', handleEscape)
   }, [dismissal, onClose, open])
 
@@ -159,6 +162,7 @@ export function ModalLayer({
     if (tabbable.length === 0) {
       event.preventDefault()
       panelRef.current.focus()
+
       return
     }
 

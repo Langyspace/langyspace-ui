@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { quizRecipe } from '../../foundations/quizRecipe'
+
 export const Mark = styled.span`
   width: 1.375rem;
   height: 1.375rem;

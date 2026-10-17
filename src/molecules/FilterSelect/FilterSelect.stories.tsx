@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FilterSelect } from '.'
+
 const meta = {
   title: 'Molecules/FilterSelect',
   component: FilterSelect,
@@ -15,11 +16,15 @@ const meta = {
     ),
   },
 } satisfies Meta<typeof FilterSelect>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Disabled: Story = { args: { disabled: true } }
+
 export const LongOptions: Story = {
   args: {
     children: (

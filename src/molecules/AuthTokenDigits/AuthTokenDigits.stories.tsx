@@ -43,6 +43,7 @@ const meta = {
 } satisfies Meta<typeof AuthTokenDigits>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
@@ -51,6 +52,7 @@ export const Default: Story = {
 
     await userEvent.click(inputs[0])
     await userEvent.paste('12a34')
+
     await expect(inputs[0]).toHaveValue('1')
     await expect(inputs[1]).toHaveValue('2')
     await expect(inputs[2]).toHaveValue('3')
@@ -58,14 +60,20 @@ export const Default: Story = {
     await expect(inputs[3]).toHaveFocus()
 
     await userEvent.keyboard('{Backspace}{Backspace}')
+
     await expect(inputs[3]).toHaveValue('')
     await expect(inputs[2]).toHaveFocus()
 
     await userEvent.keyboard('{ArrowLeft}')
+
     await expect(inputs[1]).toHaveFocus()
+
     await userEvent.keyboard('{End}')
+
     await expect(inputs[3]).toHaveFocus()
+
     await userEvent.keyboard('{Home}')
+
     await expect(inputs[0]).toHaveFocus()
   },
 }

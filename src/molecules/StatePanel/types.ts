@@ -1,7 +1,9 @@
 import type { ComponentPropsWithoutRef, ReactNode } from 'react'
 
 export type StatePanelDensity = 'compact' | 'regular'
+
 export type StatePanelState = 'empty' | 'error' | 'loading' | 'partial'
+
 export type StatePanelSurface = 'dashed' | 'outlined'
 
 export interface StatePanelProps extends Omit<

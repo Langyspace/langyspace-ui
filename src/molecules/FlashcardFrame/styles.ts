@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
 import * as token from '../../foundations/tokenValues'
+
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-flashcard-frame',
 })`

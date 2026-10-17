@@ -18,6 +18,9 @@ const meta = {
     </FlashcardFrame>
   ),
 } satisfies Meta<typeof FlashcardFlipButton>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

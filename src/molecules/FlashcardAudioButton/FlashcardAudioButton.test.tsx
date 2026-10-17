@@ -18,12 +18,16 @@ it('delegates pronunciation once through the native command and preserves ref/di
     />,
   )
   const button = screen.getByRole('button', { name: 'Ouvir bird' })
+
   expect(ref.current).toBe(button)
   expect(button).toHaveAttribute('aria-busy', 'true')
   expect(button).toHaveStyle({ position: 'static', width: '1.875rem' })
+
   await user.tab()
   await user.keyboard('{Enter}')
+
   expect(onClick).toHaveBeenCalledTimes(1)
+
   rerender(
     <FlashcardAudioButton
       label="Ouvir bird"
@@ -32,7 +36,10 @@ it('delegates pronunciation once through the native command and preserves ref/di
       ref={ref}
     />,
   )
+
   expect(button).toBeDisabled()
+
   await user.click(button)
+
   expect(onClick).toHaveBeenCalledTimes(1)
 })

@@ -1,7 +1,9 @@
 import { cleanup, render, screen } from '@testing-library/react'
 import { afterEach, it, expect } from 'vitest'
 import { AuthFeatureList } from '.'
+
 afterEach(cleanup)
+
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
     <AuthFeatureList data-testid="content">
@@ -10,6 +12,7 @@ it('preserves native attributes and structured caller content without a private 
       </li>
     </AuthFeatureList>,
   )
+
   expect(
     screen.getByTestId('content').querySelector('strong')?.textContent,
   ).toBe('Conteúdo fornecido')

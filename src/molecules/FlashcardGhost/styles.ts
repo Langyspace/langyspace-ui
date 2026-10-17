@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-ghost',
 })<{ $layer: 1 | 2; $obscured?: boolean }>`

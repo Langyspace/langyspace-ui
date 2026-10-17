@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef } from 'react'
+
 export interface GroupedBarChartProps extends Omit<
   ComponentPropsWithRef<'div'>,
   'children'

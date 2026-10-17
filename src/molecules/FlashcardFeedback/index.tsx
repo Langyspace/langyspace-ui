@@ -18,4 +18,5 @@ export function FlashcardFeedback({
     </Styled.Root>
   )
 }
+
 export type { FlashcardFeedbackProps } from './types'

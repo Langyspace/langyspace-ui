@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { CalendarEventProps } from './types'
+
 export function CalendarEvent({
   tone = 'neutral',
   type = 'button',
@@ -14,4 +15,5 @@ export function CalendarEvent({
     />
   )
 }
+
 export type { CalendarEventProps } from './types'

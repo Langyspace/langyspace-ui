@@ -9,11 +9,15 @@ const meta = {
   parameters: { layout: 'fullscreen' },
   args: { 'aria-live': 'polite' },
 } satisfies Meta<typeof ToastViewport>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {
   args: { children: <ToastItem message="Informações atualizadas." /> },
 }
+
 export const Stack: Story = {
   tags: ['layout-boundary'],
   args: {

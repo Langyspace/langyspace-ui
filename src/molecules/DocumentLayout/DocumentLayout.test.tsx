@@ -6,6 +6,7 @@ import { DocumentLayout } from '.'
 describe('DocumentLayout', () => {
   it('preserves document hierarchy, repeated paragraphs and native ref without a theme', () => {
     const ref = createRef<HTMLDivElement>()
+
     render(
       <DocumentLayout
         ref={ref}
@@ -21,6 +22,7 @@ describe('DocumentLayout', () => {
         ]}
       />,
     )
+
     expect(
       screen.getByRole('heading', { level: 1, name: 'Guia' }),
     ).toBeInTheDocument()
@@ -31,6 +33,7 @@ describe('DocumentLayout', () => {
     expect(ref.current).toHaveAttribute('data-document', 'example')
     expect(ref.current).toHaveClass('lsui-sc-document-layout')
   })
+
   it('omits optional content without adding empty grid rows', () => {
     render(
       <DocumentLayout
@@ -38,6 +41,7 @@ describe('DocumentLayout', () => {
         sections={[{ title: 'Conteúdo', body: ['Texto'] }]}
       />,
     )
+
     expect(screen.queryByRole('list')).not.toBeInTheDocument()
     expect(screen.getByRole('article').children).toHaveLength(1)
     expect(screen.getByRole('complementary').children).toHaveLength(1)

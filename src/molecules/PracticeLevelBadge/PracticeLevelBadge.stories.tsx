@@ -1,6 +1,7 @@
 import { PracticeCardCover } from '../PracticeCardCover'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PracticeLevelBadge } from '.'
+
 const meta = {
   title: 'Molecules/PracticeLevelBadge',
   component: PracticeLevelBadge,
@@ -14,6 +15,9 @@ const meta = {
   ],
   args: { children: 'A1' },
 } satisfies Meta<typeof PracticeLevelBadge>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

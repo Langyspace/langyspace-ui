@@ -65,6 +65,7 @@ export const MessageComposer = forwardRef<
     if (disabled) return
     if (isEmpty || overLimit) {
       inputRef.current?.focus()
+
       return
     }
 

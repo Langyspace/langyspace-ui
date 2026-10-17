@@ -52,12 +52,15 @@ const meta = {
 } satisfies Meta<typeof ControlledFieldExample>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   play: async ({ canvas, userEvent }) => {
     const input = canvas.getByRole('textbox', { name: 'E-mail' })
+
     await userEvent.type(input, 'maria@example.com')
+
     await expect(input).toHaveValue('maria@example.com')
   },
 }
@@ -66,6 +69,7 @@ export const EyebrowLabel: Story = {
   args: { labelVariant: 'eyebrow' },
   play: async ({ canvas }) => {
     const label = canvas.getByText('E-mail')
+
     await expect(window.getComputedStyle(label).textTransform).toBe('uppercase')
     await expect(
       canvas.getByRole('textbox', { name: 'E-mail' }),

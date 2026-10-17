@@ -69,6 +69,7 @@ const meta = {
 } satisfies Meta<typeof Dialog>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
@@ -80,14 +81,17 @@ export const InteractiveDismissal: Story = {
   render: () => <ControlledDialog />,
   play: async ({ canvasElement, userEvent }) => {
     const body = within(canvasElement.ownerDocument.body)
+
     await expect(
       body.getByRole('dialog', { name: 'Confirmar decisão' }),
     ).toBeVisible()
+
     await userEvent.keyboard('{Escape}')
     await waitFor(() =>
       expect(body.queryByRole('dialog')).not.toBeInTheDocument(),
     )
     await userEvent.click(body.getByRole('button', { name: 'Abrir diálogo' }))
+
     await expect(
       body.getByRole('dialog', { name: 'Confirmar decisão' }),
     ).toBeVisible()

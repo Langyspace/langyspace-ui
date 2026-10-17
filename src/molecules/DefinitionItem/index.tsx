@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { DefinitionItemProps } from './types'
+
 export function DefinitionItem({
   label,
   value,
@@ -13,4 +14,5 @@ export function DefinitionItem({
     </Styled.Root>
   )
 }
+
 export type { DefinitionItemProps } from './types'

@@ -3,6 +3,7 @@ import type { CompatibleAccessibleName } from '../../foundations/accessibility'
 import type { ChoiceOption, ChoiceValue } from '../../foundations/selection'
 
 export type SegmentedControlShape = 'pill' | 'rounded'
+
 export type SegmentedControlSurface = 'inverse' | 'light'
 
 export type SegmentedControlProps<Value extends ChoiceValue = string> = Omit<

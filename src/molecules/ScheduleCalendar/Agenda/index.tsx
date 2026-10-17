@@ -11,6 +11,7 @@ export function ScheduleCalendarAgenda({
   onSlotClick,
 }: Omit<ScheduleCalendarProps, 'navigation'>) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+
   return (
     <Styled.Root aria-label="Agenda compacta" data-calendar-scroller="true">
       {days.map((day) => {
@@ -33,6 +34,7 @@ export function ScheduleCalendarAgenda({
           .slice(0, 3)
         const visibleSlots = expanded[day.id] ? daySlots : previewSlots
         const remainingSlots = daySlots.length - previewSlots.length
+
         return (
           <Styled.Card key={day.id}>
             <Styled.Header>

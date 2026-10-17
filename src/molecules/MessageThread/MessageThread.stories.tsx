@@ -108,6 +108,7 @@ const meta = {
 } satisfies Meta<typeof MessageThread>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Empty: Story = {
@@ -172,9 +173,12 @@ export const DenseWithPhoto: Story = {
 
     expect(style.overflowY).toBe('auto')
     expect(style.scrollbarWidth).toBe('none')
+
     viewport.scrollTop = 64
     viewport.dispatchEvent(new Event('scroll', { bubbles: true }))
+
     expect(viewport.scrollTop).toBe(64)
+
     viewport.scrollTop = 0
   },
 }

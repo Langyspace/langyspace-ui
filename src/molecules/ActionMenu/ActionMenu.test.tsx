@@ -51,7 +51,9 @@ describe('ActionMenu', () => {
     const trigger = screen.getByRole('button', { name: 'Ações' })
     trigger.focus()
     await user.keyboard('{ArrowUp}')
+
     const archive = screen.getByRole('menuitem', { name: 'Arquivar registro' })
+
     expect(archive).toHaveFocus()
 
     rerender(
@@ -59,7 +61,9 @@ describe('ActionMenu', () => {
     )
 
     expect(archive).toHaveFocus()
+
     await user.keyboard('{Enter}')
+
     expect(currentAction).toHaveBeenCalledExactlyOnceWith('archive')
     expect(previousAction).not.toHaveBeenCalled()
   })
@@ -76,16 +80,20 @@ describe('ActionMenu', () => {
     const root = screen.getByRole('button').parentElement
 
     rerender(<ActionMenu items={items} ref={ref} triggerLabel="Opções" />)
+
     expect(ref).toHaveBeenCalledExactlyOnceWith(root)
     expect(cleanup).not.toHaveBeenCalled()
 
     rerender(
       <ActionMenu items={items} ref={replacement} triggerLabel="Opções" />,
     )
+
     expect(cleanup).toHaveBeenCalledTimes(1)
     expect(ref).toHaveBeenCalledTimes(1)
     expect(replacement).toHaveBeenCalledExactlyOnceWith(root)
+
     unmount()
+
     expect(replacementCleanup).toHaveBeenCalledTimes(1)
     expect(replacement).toHaveBeenCalledTimes(1)
   })
@@ -93,6 +101,7 @@ describe('ActionMenu', () => {
   it('opens uncontrolled, groups danger last and selects once before returning focus', async () => {
     const sequence: string[] = []
     const user = userEvent.setup()
+
     render(
       <ActionMenu
         items={createItems((id) => sequence.push(`select:${id}`))}
@@ -102,11 +111,13 @@ describe('ActionMenu', () => {
     )
 
     const trigger = screen.getByRole('button', { name: 'Mais ações' })
+
     await user.click(trigger)
 
     const menu = screen.getByRole('menu', { name: 'Mais ações' })
     const items = screen.getAllByRole('menuitem')
     await waitFor(() => expect(items[0]).toHaveFocus())
+
     expect(trigger).toHaveAttribute('aria-controls', menu.id)
     expect(trigger).toHaveAttribute('aria-expanded', 'true')
     expect(items.map((item) => item.textContent)).toEqual([
@@ -129,6 +140,7 @@ describe('ActionMenu', () => {
 
   it('opens from arrows and roves through enabled items with wrapping, Home and End', async () => {
     const user = userEvent.setup()
+
     render(<ActionMenu items={createItems()} triggerLabel="Ações do aluno" />)
 
     const trigger = screen.getByRole('button', {
@@ -144,15 +156,23 @@ describe('ActionMenu', () => {
     await waitFor(() => expect(archiveItem).toHaveFocus())
 
     await user.keyboard('{ArrowDown}')
+
     expect(openItem).toHaveFocus()
+
     await user.keyboard('{ArrowUp}')
+
     expect(archiveItem).toHaveFocus()
+
     await user.keyboard('{Home}')
+
     expect(openItem).toHaveFocus()
+
     await user.keyboard('{End}')
+
     expect(archiveItem).toHaveFocus()
 
     await user.keyboard('{Escape}')
+
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
     expect(trigger).toHaveFocus()
 
@@ -190,8 +210,10 @@ describe('ActionMenu', () => {
     )
 
     await user.click(screen.getByRole('button', { name: 'Mais opções' }))
+
     const menu = screen.getByRole('menu', { name: 'Mais opções' })
     await waitFor(() => expect(menu).toHaveFocus())
+
     expect(screen.getAllByRole('menuitem')).toHaveLength(2)
     expect(menu.querySelectorAll('.lsui-sc-spinner')).toHaveLength(1)
     expect(ref.current).toHaveAttribute('data-context', 'queue')
@@ -204,6 +226,7 @@ describe('ActionMenu', () => {
         triggerLabel="Mais opções"
       />,
     )
+
     expect(screen.queryByRole('button')).not.toBeInTheDocument()
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
     expect(ref.current).toHaveClass('lsui-sc-action-menu')
@@ -211,6 +234,7 @@ describe('ActionMenu', () => {
 
   it('moves Tab relative to the trigger and preserves an outside pointer target', async () => {
     const user = userEvent.setup()
+
     render(
       <>
         <button type="button">Anterior</button>
@@ -233,6 +257,7 @@ describe('ActionMenu', () => {
       ).toHaveFocus(),
     )
     await user.tab()
+
     expect(next).toHaveFocus()
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
 
@@ -243,20 +268,24 @@ describe('ActionMenu', () => {
       ).toHaveFocus(),
     )
     await user.tab({ shift: true })
+
     expect(previous).toHaveFocus()
 
     await user.click(trigger)
     await waitFor(() => expect(screen.getByRole('menu')).toBeVisible())
     await user.click(next)
+
     expect(next).toHaveFocus()
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
   it('blurs the trigger when Tab has no adjacent target', async () => {
     const user = userEvent.setup()
+
     render(<ActionMenu items={createItems()} triggerLabel="Menu isolado" />)
 
     const trigger = screen.getByRole('button', { name: 'Menu isolado' })
+
     await user.click(trigger)
     await waitFor(() =>
       expect(
@@ -271,10 +300,13 @@ describe('ActionMenu', () => {
 
   it('keeps internal scroll open and closes on viewport change with conditional focus restore', async () => {
     const user = userEvent.setup()
+
     render(<ActionMenu items={createItems()} triggerLabel="Menu da viewport" />)
 
     const trigger = screen.getByRole('button', { name: 'Menu da viewport' })
+
     await user.click(trigger)
+
     const menu = screen.getByRole('menu')
     await waitFor(() =>
       expect(
@@ -283,9 +315,11 @@ describe('ActionMenu', () => {
     )
 
     fireEvent.scroll(menu)
+
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
     fireEvent.resize(window)
+
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
     expect(trigger).toHaveFocus()
   })
@@ -306,10 +340,13 @@ describe('ActionMenu', () => {
     await waitFor(() => expect(screen.getByRole('menu')).toBeVisible())
     trigger.focus()
     await user.keyboard('{ArrowUp}')
+
     expect(
       screen.getByRole('menuitem', { name: 'Arquivar registro' }),
     ).toHaveFocus()
+
     await user.click(trigger)
+
     expect(onOpenChange).toHaveBeenLastCalledWith(false)
     expect(screen.getByRole('menu')).toBeInTheDocument()
 
@@ -321,6 +358,7 @@ describe('ActionMenu', () => {
         triggerLabel="Menu controlado"
       />,
     )
+
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
   })
 
@@ -343,6 +381,7 @@ describe('ActionMenu', () => {
     render(
       <StyledActionMenu items={createItems()} triggerLabel="Menu composto" />,
     )
+
     expect(
       screen.getByRole('button', { name: 'Menu composto' }).parentElement,
     ).toHaveStyle({
@@ -396,6 +435,7 @@ describe('ActionMenu', () => {
 
     const menu = await screen.findByRole('menu')
     await waitFor(() => expect(menu).toHaveAttribute('data-placement', 'top'))
+
     expect(
       screen.getByRole('menuitem', { name: 'Abrir cadastro' }),
     ).toHaveStyle({ minHeight: '2.5rem' })
@@ -417,6 +457,7 @@ describe('ActionMenu', () => {
     )
 
     await screen.findByRole('menu')
+
     expect(addListener).toHaveBeenCalledWith(
       'pointerdown',
       expect.any(Function),
@@ -429,6 +470,7 @@ describe('ActionMenu', () => {
     )
 
     unmount()
+
     expect(removeListener).toHaveBeenCalledWith(
       'pointerdown',
       expect.any(Function),

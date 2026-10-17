@@ -16,15 +16,18 @@ describe('StatePanel', () => {
 
     rerender(<StatePanel state="error" title="Falha ao carregar" />)
     panel = screen.getByRole('alert')
+
     expect(panel).toHaveTextContent('Falha ao carregar')
 
     rerender(<StatePanel state="loading" title="Carregando" />)
     panel = screen.getByRole('status')
+
     expect(panel).toHaveAttribute('aria-busy', 'true')
     expect(panel).toHaveAttribute('aria-live', 'polite')
 
     rerender(<StatePanel state="partial" title="Resultado parcial" />)
     panel = screen.getByRole('status')
+
     expect(panel).not.toHaveAttribute('aria-busy')
     expect(panel).toHaveAttribute('aria-live', 'polite')
   })

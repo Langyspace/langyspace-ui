@@ -7,10 +7,12 @@ import { PracticeResultDescription } from '../../atoms/PracticeResultDescription
 import { PracticeResultActions } from '../PracticeResultActions'
 
 afterEach(cleanup)
+
 it('keeps the result readable in JSX and leaves metrics, status and actions to the caller', () => {
   const reset = vi.fn(),
     close = vi.fn(),
     submit = vi.fn()
+
   render(
     <form onSubmit={submit}>
       <PracticeResultPanel>
@@ -34,6 +36,7 @@ it('keeps the result readable in JSX and leaves metrics, status and actions to t
       </PracticeResultPanel>
     </form>,
   )
+
   expect(screen.getByRole('heading', { level: 2 }).textContent).toBe(
     'Resultado',
   )
@@ -45,8 +48,10 @@ it('keeps the result readable in JSX and leaves metrics, status and actions to t
     'Refazer',
     'Voltar para lista',
   ])
+
   fireEvent.click(screen.getByRole('button', { name: 'Refazer' }))
   fireEvent.click(screen.getByRole('button', { name: 'Voltar para lista' }))
+
   expect(reset).toHaveBeenCalledOnce()
   expect(close).toHaveBeenCalledOnce()
   expect(submit).not.toHaveBeenCalled()

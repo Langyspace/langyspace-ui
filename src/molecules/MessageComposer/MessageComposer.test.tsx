@@ -27,18 +27,23 @@ describe('MessageComposer', () => {
   it('keeps the controlled value and submits once through keyboard navigation', async () => {
     const user = userEvent.setup()
     const onSubmit = vi.fn()
+
     render(<ControlledComposer onSubmit={onSubmit} />)
 
     const input = screen.getByRole('textbox', { name: 'Mensagem' })
     const submit = screen.getByRole('button', { name: 'Enviar mensagem' })
 
     expect(submit).toBeEnabled()
+
     await user.type(input, 'Posso mandar uma dúvida?')
+
     expect(input).toHaveValue('Posso mandar uma dúvida?')
     expect(screen.getByText('24/1000')).toBeInTheDocument()
 
     await user.tab()
+
     expect(submit).toHaveFocus()
+
     await user.keyboard('{Enter}')
 
     expect(onSubmit).toHaveBeenCalledTimes(1)
@@ -47,6 +52,7 @@ describe('MessageComposer', () => {
   it('focuses the textarea instead of submitting an empty message', async () => {
     const user = userEvent.setup()
     const onSubmit = vi.fn()
+
     render(
       <MessageComposer
         onSubmit={onSubmit}
@@ -62,6 +68,7 @@ describe('MessageComposer', () => {
     const submit = screen.getByRole('button', { name: 'Enviar mensagem' })
 
     expect(submit).toBeEnabled()
+
     await user.click(submit)
 
     expect(input).toHaveFocus()
@@ -71,15 +78,18 @@ describe('MessageComposer', () => {
   it('submits with Enter and keeps Shift+Enter for a new line', async () => {
     const user = userEvent.setup()
     const onSubmit = vi.fn()
+
     render(<ControlledComposer onSubmit={onSubmit} />)
 
     const input = screen.getByRole('textbox', { name: 'Mensagem' })
 
     await user.type(input, 'Primeira linha{Enter}')
+
     expect(onSubmit).toHaveBeenCalledTimes(1)
     expect(input).toHaveValue('Primeira linha')
 
     await user.keyboard('{Shift>}{Enter}{/Shift}Segunda linha')
+
     expect(onSubmit).toHaveBeenCalledTimes(1)
     expect(input).toHaveValue('Primeira linha\nSegunda linha')
   })
@@ -94,6 +104,7 @@ describe('MessageComposer', () => {
       submitLabel: 'Enviar mensagem',
       textareaLabel: 'Mensagem',
     }
+
     render(<MessageComposer {...baseProps} maxLength={1} value="AB" />)
 
     const input = screen.getByRole('textbox', { name: 'Mensagem' })
@@ -102,6 +113,7 @@ describe('MessageComposer', () => {
     expect(submit).toBeEnabled()
     expect(input).toHaveAttribute('aria-invalid', 'true')
     expect(screen.getByText('2/1')).toBeVisible()
+
     await user.click(submit)
 
     expect(input).toHaveFocus()
@@ -125,6 +137,7 @@ describe('MessageComposer', () => {
     expect(screen.getByRole('textbox', { name: 'Mensagem' })).toBeDisabled()
 
     rerender(<MessageComposer {...baseProps} isSubmitting value="A" />)
+
     const input = screen.getByRole('textbox', { name: 'Mensagem' })
     const submit = screen.getByRole('button', { name: 'Enviar mensagem' })
 
@@ -136,6 +149,7 @@ describe('MessageComposer', () => {
     expect(submit.closest('form')).toHaveAttribute('aria-busy', 'true')
 
     await user.click(submit)
+
     expect(onSubmit).toHaveBeenCalledTimes(1)
   })
 
@@ -153,7 +167,9 @@ describe('MessageComposer', () => {
     const input = screen.getByRole('textbox', {
       name: 'Mensagem',
     }) as HTMLTextAreaElement
+
     expect(getComputedStyle(input).scrollbarWidth).toBe('none')
+
     let scrollHeight = 96
 
     Object.defineProperty(input, 'scrollHeight', {
@@ -164,15 +180,18 @@ describe('MessageComposer', () => {
     rerender(
       <MessageComposer {...baseProps} value={'Linha 1\nLinha 2\nLinha 3'} />,
     )
+
     expect(input.style.height).toBe('96px')
 
     scrollHeight = 48
     rerender(<MessageComposer {...baseProps} value="Uma linha novamente" />)
+
     expect(input.style.height).toBe('48px')
   })
 
   it('associates error, helper and counter while preserving form props and ref', () => {
     const ref = createRef<HTMLFormElement>()
+
     render(
       <MessageComposer
         className="consumer-composer"
@@ -205,6 +224,7 @@ describe('MessageComposer', () => {
     )
     expect(input).toHaveAttribute('aria-invalid', 'true')
     expect(describedBy).toHaveLength(3)
+
     for (const id of describedBy ?? []) {
       expect(document.getElementById(id)).toBeInTheDocument()
     }

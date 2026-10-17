@@ -1,13 +1,17 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { RadioButton } from '.'
+
 const meta = {
   title: 'Atoms/RadioButton',
   component: RadioButton,
   tags: ['visual-review'],
   args: { 'aria-label': 'Selecionar item', defaultChecked: true },
 } satisfies Meta<typeof RadioButton>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
 
 export const Unchecked: Story = { args: { defaultChecked: false } }

@@ -1,6 +1,8 @@
 import { styled, keyframes } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 const shimmer = keyframes`from{background-position:100% 0;}to{background-position:-100% 0;}`
+
 export const Root = styled.span.withConfig({ componentId: 'lsui-sc-skeleton' })`
   display: block;
   max-width: 100%;

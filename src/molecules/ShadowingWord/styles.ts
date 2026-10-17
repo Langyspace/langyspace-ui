@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+
 export const Root = styled.span.withConfig({
   componentId: 'lsui-sc-shadowing-word',
 })<{ $state: 'pending' | 'current' | 'spoken' }>`

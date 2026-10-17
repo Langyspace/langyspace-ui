@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { AuthBrandFooter } from '.'
+
 const meta = {
   title: 'Atoms/AuthBrandFooter',
   component: AuthBrandFooter,
@@ -13,6 +14,9 @@ const meta = {
   ],
   args: { children: 'Conteúdo fornecido pelo produto' },
 } satisfies Meta<typeof AuthBrandFooter>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

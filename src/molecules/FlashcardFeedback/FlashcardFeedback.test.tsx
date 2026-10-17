@@ -8,6 +8,7 @@ it('owns grade presentation and announces the next step once', () => {
       Very good!
     </FlashcardFeedback>,
   )
+
   expect(screen.getByText('✓')).toHaveAttribute('aria-hidden', 'true')
   expect(screen.getByText('✓')).toHaveStyle({
     background: 'var(--fc-green)',

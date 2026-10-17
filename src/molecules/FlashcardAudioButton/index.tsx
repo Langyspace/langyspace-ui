@@ -9,6 +9,7 @@ export function FlashcardAudioButton({
   ...props
 }: FlashcardAudioButtonProps) {
   const iconSize = placement === 'term' ? 14 : 17
+
   return (
     <Styled.Button
       {...props}
@@ -36,4 +37,5 @@ export function FlashcardAudioButton({
     </Styled.Button>
   )
 }
+
 export type { FlashcardAudioButtonProps } from './types'

@@ -19,6 +19,7 @@ export function Dialog(props: DialogProps) {
 }
 
 export type { DialogProps } from './types'
+
 export type {
   OverlayDismissal as DialogDismissal,
   OverlayPanelProps as DialogPanelProps,

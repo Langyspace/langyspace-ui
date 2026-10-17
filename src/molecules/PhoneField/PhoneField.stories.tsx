@@ -26,10 +26,12 @@ const countries = [
     placeholder: '000 000 0000',
   },
 ]
+
 const Frame = styled.div`
   width: 100%;
   max-width: 24rem;
 `
+
 const meta = {
   title: 'Molecules/Fields/PhoneField',
   component: PhoneField,
@@ -41,11 +43,15 @@ const meta = {
     onCountryChange: () => {},
   },
 } satisfies Meta<typeof PhoneField>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 function EditableField(args: React.ComponentProps<typeof PhoneField>) {
   const [country, setCountry] = useState(args.country)
   const [value, setValue] = useState('')
+
   return (
     <Frame>
       <PhoneField
@@ -58,11 +64,14 @@ function EditableField(args: React.ComponentProps<typeof PhoneField>) {
     </Frame>
   )
 }
+
 export const Default: Story = { render: (args) => <EditableField {...args} /> }
+
 export const Invalid: Story = {
   args: { errorMessage: 'Confira o celular para continuar.' },
   render: (args) => <EditableField {...args} />,
 }
+
 export const Disabled: Story = {
   args: { disabled: true, value: '00 00000 0000' },
   render: (args) => (
@@ -71,6 +80,7 @@ export const Disabled: Story = {
     </Frame>
   ),
 }
+
 export const International: Story = {
   args: { country: countries[1], value: '00 000 0000' },
   render: (args) => (

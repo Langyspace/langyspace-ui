@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { authRecipe } from '../../foundations/authRecipe'
+
 export const Root = styled.h1.withConfig({
   componentId: 'lsui-sc-auth-brand-title',
 })`

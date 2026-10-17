@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { PracticeResultMarkProps } from './types'
+
 export function PracticeResultMark(props: PracticeResultMarkProps) {
   return (
     <Styled.CompletionMark {...props} aria-hidden="true">
@@ -18,4 +19,5 @@ export function PracticeResultMark(props: PracticeResultMarkProps) {
     </Styled.CompletionMark>
   )
 }
+
 export type { PracticeResultMarkProps } from './types'

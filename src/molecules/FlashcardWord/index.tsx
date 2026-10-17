@@ -16,4 +16,5 @@ export function FlashcardWord({
     </Styled.Root>
   )
 }
+
 export type { FlashcardWordProps } from './types'

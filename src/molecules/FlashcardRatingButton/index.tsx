@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { FlashcardRatingButtonProps } from './types'
+
 export function FlashcardRatingButton({
   children,
   grade,
@@ -21,4 +22,5 @@ export function FlashcardRatingButton({
     </Styled.Button>
   )
 }
+
 export type { FlashcardGrade, FlashcardRatingButtonProps } from './types'

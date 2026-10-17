@@ -17,10 +17,13 @@ it('preserves the named regions, native form and scroll panel with composed bran
       </form>
     </AuthFrame>,
   )
+
   expect(screen.getByLabelText('Marca')).toContainElement(
     screen.getByRole('heading', { name: 'Marca de exemplo', hidden: true }),
   )
+
   const form = screen.getByRole('region', { name: 'Entrar' })
+
   expect(form).toHaveAttribute('data-auth-scroll-panel', '')
   expect(form).toContainElement(screen.getByRole('form', { name: 'Telefone' }))
   expect(form).toContainElement(screen.getByText('Termos do produto'))

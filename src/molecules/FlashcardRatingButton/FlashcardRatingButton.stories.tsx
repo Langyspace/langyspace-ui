@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardRatingButton } from '.'
 import { FlashcardCanvas } from '../../../.storybook/flashcard-fixtures'
+
 const meta = {
   title: 'Molecules/FlashcardRatingButton',
   component: FlashcardRatingButton,
@@ -16,9 +17,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof FlashcardRatingButton>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const Again: Story = {
   args: {
     grade: 'again',
@@ -27,6 +32,7 @@ export const Again: Story = {
     interval: '1 min',
   },
 }
+
 export const Hard: Story = {
   args: {
     grade: 'hard',
@@ -35,7 +41,9 @@ export const Hard: Story = {
     interval: '10 min',
   },
 }
+
 export const Good: Story = { args: { selected: true } }
+
 export const Easy: Story = {
   args: {
     grade: 'easy',
@@ -44,7 +52,9 @@ export const Easy: Story = {
     interval: '15 dias',
   },
 }
+
 export const Disabled: Story = { args: { disabled: true } }
+
 export const Focused: Story = {
   play: ({ canvasElement }) => {
     canvasElement.querySelector('button')?.focus()

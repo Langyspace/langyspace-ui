@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { QuizOption } from '.'
 import { QuizFeedback } from '../QuizFeedback'
+
 const meta = {
   title: 'Molecules/QuizOption',
   component: QuizOption,
@@ -14,9 +15,13 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof QuizOption>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const Correct: Story = {
   args: { state: 'correct', disabled: true },
   render: (args) => (
@@ -26,6 +31,7 @@ export const Correct: Story = {
     </div>
   ),
 }
+
 export const Wrong: Story = {
   args: { state: 'wrong', disabled: true },
   render: (args) => (
@@ -35,7 +41,9 @@ export const Wrong: Story = {
     </div>
   ),
 }
+
 export const Dim: Story = { args: { state: 'dim', disabled: true } }
+
 export const LongContent: Story = {
   args: {
     children:
@@ -48,4 +56,5 @@ export const Focused: Story = {
     canvasElement.querySelector('button')?.focus()
   },
 }
+
 export const Hovered: Story = {}

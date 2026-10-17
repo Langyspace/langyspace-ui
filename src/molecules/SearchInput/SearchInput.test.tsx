@@ -17,7 +17,9 @@ describe('SearchInput', () => {
 
     expect(ref).toHaveBeenCalledExactlyOnceWith(input)
     expect(cleanup).not.toHaveBeenCalled()
+
     unmount()
+
     expect(cleanup).toHaveBeenCalledTimes(1)
     expect(ref).toHaveBeenCalledTimes(1)
   })
@@ -26,17 +28,23 @@ describe('SearchInput', () => {
     const user = userEvent.setup()
     const { container } = render(<SearchInput aria-label="Busca" />)
     const input = screen.getByRole('searchbox', { name: 'Busca' })
+
     await user.click(container.querySelector('svg')!)
+
     expect(input).toHaveFocus()
+
     input.blur()
     await user.click(container.querySelector('[data-ui-compound-control]')!)
+
     expect(input).toHaveFocus()
   })
 
   it('does not focus a disabled search when its surface is clicked', async () => {
     const user = userEvent.setup()
     const { container } = render(<SearchInput aria-label="Busca" disabled />)
+
     await user.click(container.querySelector('svg')!)
+
     expect(screen.getByRole('searchbox')).not.toHaveFocus()
   })
 
@@ -55,6 +63,7 @@ describe('SearchInput', () => {
     )
 
     const input = screen.getByRole('searchbox', { name: 'Buscar aluno' })
+
     await user.click(screen.getByRole('button', { name: 'Limpar busca' }))
 
     expect(onClear).toHaveBeenCalledTimes(1)
@@ -81,6 +90,7 @@ describe('SearchInput', () => {
       'aria-label': 'Buscar',
       onClear: () => undefined,
     }
+
     expect(legacyCompatibleProps.onClear).toBeTypeOf('function')
   })
 })

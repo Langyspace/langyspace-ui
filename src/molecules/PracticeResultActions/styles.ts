@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
+
 export const Actions = styled.div.withConfig({
   componentId: 'lsui-sc-practice-result-actions',
 })`

@@ -2,6 +2,7 @@ import { CompoundControl } from '../CompoundControl'
 import { useFieldControlAttributes } from '../../internal/FieldControlContext'
 import * as Styled from './styles'
 import type { FilterSelectProps } from './types'
+
 export function FilterSelect({
   className,
   children,
@@ -12,6 +13,7 @@ export function FilterSelect({
   const field = useFieldControlAttributes(props)
   const invalid =
     field['aria-invalid'] === true || field['aria-invalid'] === 'true'
+
   return (
     <CompoundControl
       className={className}
@@ -45,4 +47,5 @@ export function FilterSelect({
     </CompoundControl>
   )
 }
+
 export type { FilterSelectProps } from './types'

@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../../primitives/Pressable'
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-schedule-row',
 })`
@@ -83,6 +84,7 @@ export const Time = styled.span.withConfig({
     grid-area: time;
   }
 `
+
 export const Participant = styled.span.withConfig({
   componentId: 'lsui-sc-schedule-participant',
 })`
@@ -99,6 +101,7 @@ export const Participant = styled.span.withConfig({
     grid-area: student;
   }
 `
+
 export const Actions = styled.div.withConfig({
   componentId: 'lsui-sc-schedule-actions',
 })`

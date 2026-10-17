@@ -34,6 +34,7 @@ export const Container = styled.section.withConfig({
     color: ${token.colorContentSecondary};
   }
 `
+
 export const Days = styled.div<{ $dayCount: number }>`
   display: grid;
   min-width: 0;
@@ -46,6 +47,7 @@ export const Days = styled.div<{ $dayCount: number }>`
     );
   }
 `
+
 export const Day = styled.section`
   min-width: 0;
   padding: ${token.spacing3};
@@ -66,6 +68,7 @@ export const Day = styled.section`
     font-weight: ${token.typographyFontWeightMedium};
   }
 `
+
 export const Slots = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
@@ -75,6 +78,7 @@ export const Slots = styled.div`
     grid-template-columns: minmax(0, 1fr);
   }
 `
+
 export const Slot = styled(Pressable)<{ $selected: boolean }>`
   display: flex;
   min-width: 0;

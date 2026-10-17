@@ -26,12 +26,17 @@ const meta = {
     ],
   },
 } satisfies Meta<typeof DocumentLayout>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}
+
 export const WithoutSummary: Story = {
   args: { summary: [], intro: [], eyebrow: undefined, meta: undefined },
 }
+
 export const LongContent: Story = {
   tags: ['layout-boundary'],
   args: {

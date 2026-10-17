@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { SkeletonProps } from './types'
+
 export function Skeleton({ shape = 'line', ...props }: SkeletonProps) {
   return (
     <Styled.Root
@@ -10,4 +11,5 @@ export function Skeleton({ shape = 'line', ...props }: SkeletonProps) {
     />
   )
 }
+
 export type { SkeletonProps } from './types'

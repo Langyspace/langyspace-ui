@@ -50,6 +50,7 @@ const meta = {
 } satisfies Meta<typeof FilterPills>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
@@ -72,11 +73,14 @@ export const Interactive: Story = {
     const archived = canvas.getByRole('button', { name: 'Arquivados' })
 
     await expect(all).toHaveAttribute('aria-pressed', 'true')
+
     await userEvent.click(active)
+
     await expect(active).toHaveAttribute('aria-pressed', 'true')
     await expect(all).toHaveAttribute('aria-pressed', 'false')
 
     await userEvent.keyboard('{Tab}{Enter}')
+
     await expect(
       canvas.getByRole('button', { name: 'Pendentes: 4' }),
     ).toHaveAttribute('aria-pressed', 'true')

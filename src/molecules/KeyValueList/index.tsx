@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { KeyValueListProps } from './types'
+
 export function KeyValueList({ items, ...props }: KeyValueListProps) {
   return (
     <Styled.Root {...props}>
@@ -12,4 +13,5 @@ export function KeyValueList({ items, ...props }: KeyValueListProps) {
     </Styled.Root>
   )
 }
+
 export type { KeyValueListProps } from './types'

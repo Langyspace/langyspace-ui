@@ -1,6 +1,7 @@
 import { keyframes, styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { quizRecipe } from '../../foundations/quizRecipe'
+
 const rise = keyframes`
   from { opacity: 0; transform: translateY(1.875rem); }
   to { opacity: 1; transform: translateY(0); }

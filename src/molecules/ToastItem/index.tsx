@@ -19,4 +19,5 @@ export const ToastItem = forwardRef<HTMLButtonElement, ToastItemProps>(
     )
   },
 )
+
 export type { ToastItemProps, ToastTone } from './types'

@@ -1,5 +1,6 @@
 import * as Styled from './styles'
 import type { PracticePlaybackControlsProps } from './types'
+
 export function PracticePlaybackControls<Speed extends string>({
   playing,
   playLabel,
@@ -91,4 +92,5 @@ export function PracticePlaybackControls<Speed extends string>({
     </Styled.ControlCluster>
   )
 }
+
 export type { PracticePlaybackControlsProps } from './types'

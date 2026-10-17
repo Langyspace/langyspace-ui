@@ -2,10 +2,12 @@ import { keyframes, styled } from 'styled-components'
 import { Pressable } from '../../primitives/Pressable'
 import * as token from '../../foundations/tokenValues'
 import type { FlashcardGrade } from './types'
+
 const rise = keyframes`
  from {opacity:0;transform:translateY(.625rem);}
  to {opacity:1;transform:translateY(0);}
 `
+
 const tones = {
   again: {
     fill: '#fef0f2',
@@ -36,6 +38,7 @@ const tones = {
     hover: 'rgba(255,31,92,.5)',
   },
 }
+
 export const Button = styled(Pressable).withConfig({
   componentId: 'lsui-sc-flashcard-rating-button',
 })<{ $grade: FlashcardGrade; $selected: boolean }>`

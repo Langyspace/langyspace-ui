@@ -20,7 +20,9 @@ it('delegates back without submitting a form or owning question navigation', () 
     </form>,
   )
   const button = screen.getByRole('button', { name: 'Voltar' })
+
   fireEvent.click(button)
+
   expect(button.getAttribute('type')).toBe('button')
   expect(onBack).toHaveBeenCalledTimes(1)
   expect(onSubmit).not.toHaveBeenCalled()
@@ -33,9 +35,13 @@ it('delegates back without submitting a form or owning question navigation', () 
   expect(container.querySelector('svg')?.getAttribute('aria-hidden')).toBe(
     'true',
   )
+
   rerender(<QuizSessionHeader {...props} counter="2/3" progress={1} />)
+
   expect(screen.getByText('2/3')).toBeTruthy()
   expect(screen.queryByText('1 de 3')).toBeNull()
+
   fireEvent.keyDown(screen.getByRole('button'), { key: '1' })
+
   expect(onBack).toHaveBeenCalledTimes(1)
 })

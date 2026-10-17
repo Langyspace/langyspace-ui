@@ -12,10 +12,13 @@ describe('ToastViewport', () => {
         <ToastItem message="Pronto" />
       </ToastViewport>,
     )
+
     expect(ref.current).toBe(screen.getByTestId('viewport'))
     expect(ref.current).toHaveAttribute('aria-live', 'polite')
     expect(screen.getByRole('button')).toHaveTextContent('Pronto')
+
     rerender(<ToastViewport data-testid="viewport" />)
+
     expect(screen.getByTestId('viewport')).not.toHaveAttribute('aria-live')
     expect(screen.queryByRole('button')).not.toBeInTheDocument()
   })

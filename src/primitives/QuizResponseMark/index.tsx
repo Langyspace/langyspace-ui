@@ -1,4 +1,5 @@
 import * as Styled from './styles'
+
 export function QuizMark({ correct }: { correct: boolean }) {
   return (
     <svg

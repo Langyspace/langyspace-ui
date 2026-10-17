@@ -23,6 +23,7 @@ export const scheduleCalendarFixture: ScheduleCalendarProps = {
   slots: ['2026-10-15', '2026-10-16'].flatMap((dateKey) =>
     Array.from({ length: 28 }, (_, index) => {
       const startMinute = 480 + index * 30
+
       return {
         id: `${dateKey}-${startMinute}`,
         dateKey,

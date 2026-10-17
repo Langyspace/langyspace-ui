@@ -20,6 +20,7 @@ export const Layout = styled.div.withConfig({
     gap: 3rem;
   }
 `
+
 export const Aside = styled.aside.withConfig({
   componentId: 'lsui-sc-document-aside',
 })`
@@ -30,6 +31,7 @@ export const Aside = styled.aside.withConfig({
     top: ${token.spacing6};
   }
 `
+
 export const Eyebrow = styled.p.withConfig({
   componentId: 'lsui-sc-document-eyebrow',
 })`
@@ -39,6 +41,7 @@ export const Eyebrow = styled.p.withConfig({
   font-weight: ${token.typographyFontWeightBold};
   text-transform: uppercase;
 `
+
 export const Title = styled.h1.withConfig({
   componentId: 'lsui-sc-document-title',
 })`
@@ -51,6 +54,7 @@ export const Title = styled.h1.withConfig({
     font-size: clamp(${token.typographyFontSize3xl}, 3vw, 2.5rem);
   }
 `
+
 export const Meta = styled.p.withConfig({
   componentId: 'lsui-sc-document-meta',
 })`
@@ -59,6 +63,7 @@ export const Meta = styled.p.withConfig({
   font-size: ${token.typographyFontSizeSm};
   line-height: ${token.typographyLineHeightNormal};
 `
+
 export const Summary = styled.ul.withConfig({
   componentId: 'lsui-sc-document-summary',
 })`
@@ -68,6 +73,7 @@ export const Summary = styled.ul.withConfig({
   padding: 0;
   list-style: none;
 `
+
 export const SummaryItem = styled.li.withConfig({
   componentId: 'lsui-sc-document-summary-item',
 })`
@@ -77,6 +83,7 @@ export const SummaryItem = styled.li.withConfig({
   line-height: ${token.typographyLineHeightNormal};
   padding-left: ${token.spacing3};
 `
+
 export const Article = styled.article.withConfig({
   componentId: 'lsui-sc-document-article',
 })`
@@ -84,12 +91,14 @@ export const Article = styled.article.withConfig({
   gap: ${token.spacing8};
   max-width: 48rem;
 `
+
 export const Intro = styled.div.withConfig({
   componentId: 'lsui-sc-document-intro',
 })`
   display: grid;
   gap: ${token.spacing4};
 `
+
 export const Paragraph = styled.p.withConfig({
   componentId: 'lsui-sc-document-paragraph',
 })`
@@ -98,6 +107,7 @@ export const Paragraph = styled.p.withConfig({
   font-size: ${token.typographyFontSizeMd};
   line-height: 1.7;
 `
+
 export const Section = styled.section.withConfig({
   componentId: 'lsui-sc-document-section',
 })`
@@ -106,6 +116,7 @@ export const Section = styled.section.withConfig({
   border-top: 1px solid ${token.colorSurfaceBorderSubtle};
   padding-top: ${token.spacing6};
 `
+
 export const SectionTitle = styled.h2.withConfig({
   componentId: 'lsui-sc-document-section-title',
 })`
@@ -114,6 +125,7 @@ export const SectionTitle = styled.h2.withConfig({
   letter-spacing: 0;
   line-height: ${token.typographyLineHeightSnug};
 `
+
 export const SectionBody = styled.div.withConfig({
   componentId: 'lsui-sc-document-section-body',
 })`

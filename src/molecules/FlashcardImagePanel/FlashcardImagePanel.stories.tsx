@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardImagePanel } from '.'
 import { FlashcardFaceCanvas } from '../../../.storybook/flashcard-fixtures'
+
 const meta = {
   title: 'Molecules/FlashcardImagePanel',
   component: FlashcardImagePanel,
@@ -14,6 +15,9 @@ const meta = {
     ),
   ],
 } satisfies Meta<typeof FlashcardImagePanel>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {}

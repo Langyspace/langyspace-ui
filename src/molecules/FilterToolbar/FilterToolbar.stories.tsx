@@ -11,9 +11,11 @@ const Search = styled(SearchInput)`
   flex: 1 1 17.5rem;
   min-width: min(100%, 17.5rem);
 `
+
 const Pills = styled.div`
   min-width: 0;
 `
+
 const Grid = styled.div`
   display: grid;
   grid-template-columns: minmax(12rem, 0.35fr) minmax(13rem, 0.35fr) 1fr;
@@ -27,6 +29,7 @@ const Grid = styled.div`
 function SearchFilters({ long = false, disabled = false }) {
   const [query, setQuery] = useState('')
   const [level, setLevel] = useState('all')
+
   return (
     <FilterToolbar aria-label="Filtros de materiais">
       <Search
@@ -65,16 +68,22 @@ const meta = {
   tags: ['visual-review'],
   args: { 'aria-label': 'Filtros' },
 } satisfies Meta<typeof FilterToolbar>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = { render: () => <SearchFilters /> }
+
 export const LongContent: Story = {
   tags: ['layout-boundary'],
   render: () => <SearchFilters long />,
 }
+
 export const DisabledSearch: Story = {
   render: () => <SearchFilters disabled />,
 }
+
 export const WithSurface: Story = {
   render: () => (
     <Card>

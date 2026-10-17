@@ -36,4 +36,5 @@ export type {
   SegmentedControlShape,
   SegmentedControlSurface,
 } from './types'
+
 export type { ChoiceOption, ChoiceValue } from '../../foundations/selection'

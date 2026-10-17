@@ -6,14 +6,18 @@ import {
   FlashcardBackExample,
 } from '../../../.storybook/flashcard-fixtures'
 import { FlashcardFlip } from '../FlashcardFlip'
+
 const meta = {
   title: 'Molecules/FlashcardFace',
   component: FlashcardFace,
   tags: ['visual-review'],
   args: { children: <FlashcardFrontExample /> },
 } satisfies Meta<typeof FlashcardFace>
+
 export default meta
+
 type Story = StoryObj<typeof meta>
+
 export const Default: Story = {
   render: (args) => (
     <FlashcardDeckCanvas>
@@ -21,6 +25,7 @@ export const Default: Story = {
     </FlashcardDeckCanvas>
   ),
 }
+
 export const Back: Story = {
   args: { side: 'back', children: <FlashcardBackExample /> },
   render: (args) => (

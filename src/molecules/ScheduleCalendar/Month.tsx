@@ -13,6 +13,7 @@ export function ScheduleCalendarMonth({
   onSlotClick,
 }: ScheduleCalendarBodyProps) {
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
+
   return (
     <div>
       <Styled.MonthWeekdays>
@@ -34,6 +35,7 @@ export function ScheduleCalendarMonth({
                 (slot) => slot.interactive && slot.state !== 'occupied',
               )
           const available = daySlots.some((slot) => slot.state === 'available')
+
           return (
             <CalendarDay
               key={day.id}

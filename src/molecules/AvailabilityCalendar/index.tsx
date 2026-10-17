@@ -56,6 +56,7 @@ export function AvailabilityCalendar({
               <Styled.Slots>
                 {day.slots.map((slot) => {
                   const isSelected = selected.has(slot.id)
+
                   return (
                     <Styled.Slot
                       key={slot.id}

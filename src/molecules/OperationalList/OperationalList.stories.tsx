@@ -243,6 +243,7 @@ const meta = {
 } satisfies Meta<typeof QueueOperationalList>
 
 export default meta
+
 type Story = StoryObj<typeof meta>
 
 function ListFixture({
@@ -287,9 +288,11 @@ export const DefaultLeads: Story = {
   render: () => <ListFixture />,
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement)
+
     await userEvent.click(
       canvas.getByRole('button', { name: 'Abrir cadastro de Ana Lima' }),
     )
+
     await expect(
       canvas.getByRole('table', { name: 'Fila operacional de pessoas' }),
     ).toBeInTheDocument()
@@ -339,8 +342,11 @@ export const Sortable: Story = {
   play: async ({ canvasElement, userEvent }) => {
     const canvas = within(canvasElement)
     const header = canvas.getByRole('columnheader', { name: 'Pessoa' })
+
     await expect(header).toHaveAttribute('aria-sort', 'ascending')
+
     await userEvent.click(within(header).getByRole('button'))
+
     await expect(header).toHaveAttribute('aria-sort', 'descending')
   },
 }
@@ -350,12 +356,14 @@ export const ActionHierarchy: Story = {
   render: () => <ListFixture items={queueItems.slice(0, 1)} />,
   play: async ({ canvasElement, userEvent }) => {
     const body = within(canvasElement.ownerDocument.body)
+
     await expect(
       body.getByRole('button', { name: 'Converter em aluna' }),
     ).toBeVisible()
     await expect(
       body.getByRole('button', { name: 'Falar com Ana Lima' }),
     ).toBeVisible()
+
     await userEvent.click(body.getByRole('button', { name: 'Mais ações' }))
     await waitFor(() => expect(body.getByRole('menu')).toBeVisible())
   },
@@ -376,6 +384,7 @@ export const DangerOverflow: Story = {
         }),
       ).toHaveFocus(),
     )
+
     await expect(body.getAllByRole('separator')).toHaveLength(1)
   },
 }
@@ -414,10 +423,13 @@ export const DisabledAndLoading: Story = {
   ),
   play: async ({ canvasElement, userEvent }) => {
     const body = within(canvasElement.ownerDocument.body)
+
     await expect(
       body.getByRole('button', { name: 'Convertendo em aluna' }),
     ).toBeDisabled()
+
     await userEvent.click(body.getByRole('button', { name: 'Mais ações' }))
+
     await expect(
       body.getByRole('menuitem', { name: 'Arquivar cadastro de Ana Lima' }),
     ).toHaveAttribute('aria-disabled', 'true')
@@ -491,6 +503,7 @@ export const NoActions: Story = {
   render: () => <ListFixture getActions={() => []} />,
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
+
     await expect(
       canvas.queryByRole('columnheader', { name: 'Ações' }),
     ).not.toBeInTheDocument()
@@ -499,6 +512,7 @@ export const NoActions: Story = {
 
 const fiftyRows = Array.from({ length: 50 }, (_, index): QueueItem => {
   const base = queueItems[index % queueItems.length]
+
   return {
     ...base,
     email: `pessoa.${index + 1}@example.com`,
@@ -528,6 +542,7 @@ export const FiftyRows: Story = {
   play: async ({ canvasElement, userEvent }) => {
     const body = within(canvasElement.ownerDocument.body)
     const triggers = body.getAllByRole('button', { name: 'Mais ações' })
+
     await userEvent.click(triggers[0])
     await userEvent.click(triggers[1])
     await waitFor(() => expect(body.getAllByRole('menu')).toHaveLength(1))

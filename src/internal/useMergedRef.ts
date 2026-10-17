@@ -6,11 +6,13 @@ function attachRef<Element>(
 ) {
   if (typeof ref === 'function') {
     const cleanup = ref(node)
+
     return typeof cleanup === 'function' ? cleanup : () => ref(null)
   }
 
   if (ref) {
     ref.current = node
+
     return () => {
       ref.current = null
     }

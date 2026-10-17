@@ -13,4 +13,5 @@ export function FlashcardImagePanel({
     </Styled.Root>
   )
 }
+
 export type { FlashcardImagePanelProps } from './types'

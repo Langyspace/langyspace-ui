@@ -2,6 +2,7 @@ import { Button } from '../../atoms/Button'
 import { IconButton } from '../../atoms/IconButton'
 import * as Styled from './styles'
 import type { CalendarControlsProps } from './types'
+
 export function CalendarControls({
   children,
   label,
@@ -57,4 +58,5 @@ export function CalendarControls({
     </Styled.Container>
   )
 }
+
 export type { CalendarControlsProps } from './types'

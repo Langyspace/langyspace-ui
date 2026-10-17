@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { FlashcardFlipContext } from '../../internal/FlashcardFlipContext'
 import * as Styled from './styles'
 import type { FlashcardFaceProps } from './types'
+
 export function FlashcardFace({
   side = 'front',
   ...props
@@ -9,6 +10,7 @@ export function FlashcardFace({
   const flipped = useContext(FlashcardFlipContext)
   const hidden =
     flipped !== undefined && (side === 'front' ? flipped : !flipped)
+
   return (
     <Styled.Root
       {...props}
@@ -19,4 +21,5 @@ export function FlashcardFace({
     />
   )
 }
+
 export type { FlashcardFaceProps } from './types'

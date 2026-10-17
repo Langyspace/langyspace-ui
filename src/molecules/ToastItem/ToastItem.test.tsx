@@ -9,6 +9,7 @@ describe('ToastItem', () => {
     const onClick = vi.fn()
     const ref = createRef<HTMLButtonElement>()
     const user = userEvent.setup()
+
     render(
       <ToastItem
         ref={ref}
@@ -21,8 +22,10 @@ describe('ToastItem', () => {
         onClick={onClick}
       />,
     )
+
     await user.tab()
     await user.keyboard('{Enter}')
+
     expect(onClick).toHaveBeenCalledOnce()
     expect(ref.current).toBe(
       screen.getByRole('button', { name: 'Abrir detalhes' }),
@@ -31,12 +34,16 @@ describe('ToastItem', () => {
     expect(ref.current).not.toHaveAttribute('aria-live')
     expect(screen.getByText('Ver detalhes')).toBeInTheDocument()
   })
+
   it('does not activate a disabled item or invent optional title/action content', async () => {
     const onClick = vi.fn()
+
     render(
       <ToastItem disabled message="Operação concluída" onClick={onClick} />,
     )
+
     await userEvent.click(screen.getByRole('button'))
+
     expect(onClick).not.toHaveBeenCalled()
     expect(screen.getByRole('button')).toHaveTextContent(/^Operação concluída$/)
   })

@@ -37,6 +37,7 @@ describe('CompoundControl', () => {
       )
 
       const control = screen.getByLabelText('Pessoa')
+
       expect(forwardedControl).toBe(control)
       expect(control).toBeDisabled()
       expect(control).toHaveAttribute('aria-invalid', 'true')
@@ -68,6 +69,7 @@ describe('CompoundControl', () => {
     )
 
     const compound = screen.getByRole('textbox', { name: 'Peso' }).parentElement
+
     expect(compound).toHaveClass('lsui-sc-compound-control')
     expect(compound).toHaveAttribute('data-invalid', 'true')
     expect(compound?.querySelectorAll('svg')).toHaveLength(1)
@@ -91,6 +93,7 @@ describe('CompoundControl', () => {
     )
 
     const name = screen.getByRole('textbox', { name: 'Nome' })
+
     expect(name.parentElement).toHaveStyle({
       borderRadius: '0.625rem',
       minHeight: '3.5rem',
