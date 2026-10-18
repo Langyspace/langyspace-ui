@@ -1,5 +1,24 @@
 # Progresso
 
+## Revisão atual de granularidade — 2026-10-18
+
+A [nova análise](granularity-review.md) identifica 173 componentes exportados,
+incluindo aliases, e 20 nomes candidatos à consolidação inicial. Ela separa
+implementações canônicas, compatibilidade pública e arquivos de reexport.
+O inventário abrange os cinco produtos; imports estáticos não foram tratados
+como prova automática de uso em rota montada.
+
+Esta entrega é somente documental. Nenhuma família adicional foi implementada,
+nenhum export foi removido e não houve push, CI, release ou deploy.
+
+A próxima implementação sugerida passa a ser internalizar as sete peças de
+calendário junto de ScheduleCalendar, mantendo compatibilidade e comportamento.
+Depois vêm métricas, resultado e composição de autenticação, conforme a nova
+ordem de benefício/risco. Os registros abaixo descrevem o primeiro lote na época
+de sua preparação; não substituem o handoff final daquele lote.
+
+## Histórico do lote Button
+
 O primeiro lote foi integrado pelo PR #32 em 2026-10-17, após aceite humano e
 todos os gates de arquitetura, pacote, testes e quatro partições de layout.
 A revisão geral continua organizada pelas famílias do plano; as famílias restantes
