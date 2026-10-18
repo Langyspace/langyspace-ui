@@ -7,7 +7,7 @@ export default defineAuditConfig({
   nativeButtonOwners: [
     {
       owner: 'UI foundations',
-      path: 'src/components/Button/Pressable.styles.ts',
+      path: 'src/components/Pressable.tsx',
       reason: 'Pressable owns the native styled button',
       expiresAt: '2027-08-25',
     },
@@ -121,9 +121,17 @@ export default defineAuditConfig({
   ],
   canonicalComponents: ['ActionLink', 'Button', 'IconButton'],
   auditPrivateStyles: true,
+  componentOwners: {
+    'src/compatibility/MetricSummary.tsx':
+      'src/components/MetricSummary/MetricSummary.tsx',
+    'src/compatibility/StatCard.tsx': 'src/components/StatCard/StatCard.tsx',
+    'src/compatibility/PracticeResultPanel.tsx':
+      'src/components/PracticeResultPanel/PracticeResultPanel.tsx',
+  },
   requireExceptionExpiry: true,
   layerDependencies: {
     components: ['components', 'foundations', 'internal'],
+    compatibility: ['components', 'foundations', 'internal'],
     foundations: ['foundations'],
     internal: ['foundations', 'internal'],
   },

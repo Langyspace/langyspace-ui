@@ -101,14 +101,18 @@ src/
     PracticeResultPanel/PracticeResultPanel.tsx
   foundations/    tokens e receitas
   internal/       hooks, contextos e infraestrutura privada
+  compatibility/  adaptadores transitórios por owner
   index.ts        API pública
+stories/          exemplos e estados do catálogo
+test/             comportamento, contratos de tipos e setup
 ```
 
 Tipos curtos e estilos simples ficam no arquivo do componente. Estilos ou tipos
-maiores ficam em arquivos nomeados, como Button.styles.ts e Button.types.ts.
-Testes e stories ficam próximos. Não há classificação por atoms/molecules nem
-uma pasta para cada detalhe de apresentação. Compatibilidade fica ao lado do
-owner em arquivos nomeados; novos usos preferem os componentes completos.
+maiores ficam em arquivos próprios quando ajudam a leitura, como Button.styles.ts.
+Exemplos ficam em stories e testes em test, separados da implementação.
+Componentes simples podem usar um único arquivo. Não há classificação atomic nem
+uma pasta para cada detalhe. Adaptadores transitórios ficam em src/compatibility,
+agrupados pelo owner; novos usos preferem os componentes completos.
 
 ```tsx
 <MetricSummary value={correctAnswers} label="Acertos" />

@@ -1,6 +1,6 @@
 import { css, styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import type {
   OperationalListCellStyleProps,
   OperationalListHeadStyleProps,

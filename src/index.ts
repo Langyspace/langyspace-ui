@@ -32,7 +32,7 @@ export type {
   ButtonDensity,
   ButtonSize,
   ButtonVariant,
-} from './components/Button/Button.types'
+} from './components/Button/Button'
 
 export { IconButton } from './components/IconButton/IconButton'
 export type {
@@ -115,8 +115,8 @@ export type {
   DrawerSize,
 } from './components/Drawer/Drawer'
 
-export { EmptyState } from './components/StatePanel/StatePanel.compatibility'
-export type { EmptyStateProps } from './components/StatePanel/StatePanel.compatibility'
+export { EmptyState } from './compatibility/StatePanel'
+export type { EmptyStateProps } from './compatibility/StatePanel'
 
 export { FieldRoot } from './components/Form/FieldRoot'
 export type {
@@ -131,8 +131,8 @@ export type {
   FilterPillsSize,
 } from './components/Filter/FilterPills.types'
 
-export { LoadingState } from './components/StatePanel/StatePanel.compatibility'
-export type { LoadingStateProps } from './components/StatePanel/StatePanel.compatibility'
+export { LoadingState } from './compatibility/StatePanel'
+export type { LoadingStateProps } from './compatibility/StatePanel'
 
 export { MessageBubble } from './components/Message/MessageBubble'
 export type {
@@ -196,8 +196,8 @@ export type {
   StatePanelSurface,
 } from './components/StatePanel/StatePanel.types'
 
-export { Pressable } from './components/Button/Pressable'
-export type { PressableProps } from './components/Button/Pressable'
+export { Pressable } from './components/Pressable'
+export type { PressableProps } from './components/Pressable'
 
 export { Spinner } from './components/Spinner/Spinner'
 export type { SpinnerProps, SpinnerSize } from './components/Spinner/Spinner'
@@ -279,8 +279,8 @@ export type { AuthTopLinkHighlightProps } from './components/Auth/AuthTopLinkHig
 export { AuthForm } from './components/Auth/AuthForm'
 export type { AuthFormProps } from './components/Auth/AuthForm'
 
-export { AuthBackButton } from './components/Button/Button.compatibility'
-export type { AuthBackButtonProps } from './components/Button/Button.compatibility'
+export { AuthBackButton } from './compatibility/Button'
+export type { AuthBackButtonProps } from './compatibility/Button'
 
 export { AuthResendAction } from './components/Auth/AuthResendAction'
 export type { AuthResendActionProps } from './components/Auth/AuthResendAction'
@@ -294,8 +294,8 @@ export type { AuthSuccessIconProps } from './components/Auth/AuthSuccessIcon'
 export { AuthProgress } from './components/Auth/AuthProgress'
 export type { AuthProgressProps } from './components/Auth/AuthProgress'
 
-export { AuthSubmitButton } from './components/Button/Button.compatibility'
-export type { AuthSubmitButtonProps } from './components/Button/Button.compatibility'
+export { AuthSubmitButton } from './compatibility/Button'
+export type { AuthSubmitButtonProps } from './compatibility/Button'
 
 export { AuthTopLink } from './components/Auth/AuthTopLink'
 export type { AuthTopLinkProps } from './components/Auth/AuthTopLink'
@@ -303,17 +303,17 @@ export type { AuthTopLinkProps } from './components/Auth/AuthTopLink'
 export { AuthSuccessState } from './components/Auth/AuthSuccessState'
 export type { AuthSuccessStateProps } from './components/Auth/AuthSuccessState'
 
-export { PracticeResultMark } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
-export type { PracticeResultMarkProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export { PracticeResultMark } from './compatibility/PracticeResultPanel'
+export type { PracticeResultMarkProps } from './compatibility/PracticeResultPanel'
 
-export { PracticeResultTitle } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
-export type { PracticeResultTitleProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export { PracticeResultTitle } from './compatibility/PracticeResultPanel'
+export type { PracticeResultTitleProps } from './compatibility/PracticeResultPanel'
 
-export { PracticeResultDescription } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
-export type { PracticeResultDescriptionProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export { PracticeResultDescription } from './compatibility/PracticeResultPanel'
+export type { PracticeResultDescriptionProps } from './compatibility/PracticeResultPanel'
 
-export { PracticeResultActions } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
-export type { PracticeResultActionsProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export { PracticeResultActions } from './compatibility/PracticeResultPanel'
+export type { PracticeResultActionsProps } from './compatibility/PracticeResultPanel'
 
 export { BrandLogo } from './components/Brand/BrandLogo'
 export type { BrandLogoProps } from './components/Brand/BrandLogo'
@@ -389,14 +389,14 @@ export type { InlineNoticeProps } from './components/Notice/InlineNotice'
 export { StatCard } from './components/StatCard/StatCard'
 export type { StatCardProps } from './components/StatCard/StatCard'
 
-export { StatValue } from './components/StatCard/StatCard.compatibility'
-export type { StatValueProps } from './components/StatCard/StatCard.compatibility'
+export { StatValue } from './compatibility/StatCard'
+export type { StatValueProps } from './compatibility/StatCard'
 
-export { StatLabel } from './components/StatCard/StatCard.compatibility'
-export type { StatLabelProps } from './components/StatCard/StatCard.compatibility'
+export { StatLabel } from './compatibility/StatCard'
+export type { StatLabelProps } from './compatibility/StatCard'
 
-export { StatAction } from './components/StatCard/StatCard.compatibility'
-export type { StatActionProps } from './components/StatCard/StatCard.compatibility'
+export { StatAction } from './compatibility/StatCard'
+export type { StatActionProps } from './compatibility/StatCard'
 
 export { DefinitionItem } from './components/Details/DefinitionItem'
 export type { DefinitionItemProps } from './components/Details/DefinitionItem'
@@ -404,19 +404,19 @@ export type { DefinitionItemProps } from './components/Details/DefinitionItem'
 export { DetailRow } from './components/Details/DetailRow'
 export type { DetailRowProps } from './components/Details/DetailRow'
 
-export { TextButton } from './components/Button/Button.compatibility'
-export type { TextButtonProps } from './components/Button/Button.compatibility'
+export { TextButton } from './compatibility/Button'
+export type { TextButtonProps } from './compatibility/Button'
 
-export type { TextButtonVariant } from './components/Button/Button.compatibility'
+export type { TextButtonVariant } from './compatibility/Button'
 
 export { MetricSummary } from './components/MetricSummary/MetricSummary'
 export type { MetricSummaryProps } from './components/MetricSummary/MetricSummary'
 
-export { MetricValue } from './components/MetricSummary/MetricSummary.compatibility'
-export type { MetricValueProps } from './components/MetricSummary/MetricSummary.compatibility'
+export { MetricValue } from './compatibility/MetricSummary'
+export type { MetricValueProps } from './compatibility/MetricSummary'
 
-export { MetricLabel } from './components/MetricSummary/MetricSummary.compatibility'
-export type { MetricLabelProps } from './components/MetricSummary/MetricSummary.compatibility'
+export { MetricLabel } from './compatibility/MetricSummary'
+export type { MetricLabelProps } from './compatibility/MetricSummary'
 
 export { SidebarFrame } from './components/Navigation/SidebarFrame'
 export type { SidebarFrameProps } from './components/Navigation/SidebarFrame'

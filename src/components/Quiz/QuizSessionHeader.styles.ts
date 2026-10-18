@@ -1,7 +1,7 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 import { quizRecipe } from '../../foundations/quizRecipe'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 export const Header = styled.header.withConfig({
   componentId: 'lsui-sc-quiz-session-header',

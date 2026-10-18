@@ -2,7 +2,7 @@ import * as token from '../../foundations/tokenValues'
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 import { styled } from 'styled-components'
 import * as CalendarDayStyles from './CalendarDay.styles'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 const CalendarMonthGridRoot = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-month-grid',

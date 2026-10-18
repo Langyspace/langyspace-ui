@@ -1,7 +1,7 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 import { authRecipe } from '../../foundations/authRecipe'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import { styled } from 'styled-components'
 
 const ResendButton = styled(Pressable).withConfig({

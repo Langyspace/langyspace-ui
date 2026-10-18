@@ -1,5 +1,12 @@
 # Progresso
 
+## Entrega atual: limpeza de leitura — 2026-10-18
+
+O pedido atual autoriza o [plano de leitura](readability-plan.md). A entrega começa
+pela separação de suporte e simplificação de Button, agora implementadas. Verificações, revisão atual
+e próximos lotes estão em [readability-validation.md](readability-validation.md).
+A revisão abaixo é a baseline deste lote e não um aceite de mudanças posteriores.
+
 ## Entrega atual: estrutura React e composições — 2026-10-18
 
 Implementada na branch `refactor/react-component-structure`, a partir de `914164b`

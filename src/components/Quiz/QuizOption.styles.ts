@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import { quizRecipe } from '../../foundations/quizRecipe'
 
 export const Option = styled(Pressable).withConfig({

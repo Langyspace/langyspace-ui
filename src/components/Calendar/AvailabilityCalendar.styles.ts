@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 export const Container = styled.section.withConfig({
   componentId: 'lsui-sc-availability-calendar',

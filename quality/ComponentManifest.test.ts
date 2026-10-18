@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { access } from 'node:fs/promises'
-import { resolve } from 'node:path'
+import { dirname, resolve } from 'node:path'
+import ts from 'typescript'
 import { describe, expect, it } from 'vitest'
 import {
   publicComponentContracts,
@@ -9,7 +10,42 @@ import {
 
 const root = resolve(import.meta.dirname, '..')
 
+// Multiple contracts may point to the same real test or story file. File names
+// do not prove coverage: the recorded export must be imported at runtime.
+function runtimeImports(source: string) {
+  const file = ts.createSourceFile(
+    'coverage.tsx',
+    source,
+    ts.ScriptTarget.Latest,
+    true,
+  )
+  return file.statements.flatMap((statement) => {
+    if (
+      !ts.isImportDeclaration(statement) ||
+      statement.importClause?.isTypeOnly
+    )
+      return []
+    const bindings = statement.importClause?.namedBindings
+    if (!bindings || !ts.isNamedImports(bindings)) return []
+    return bindings.elements
+      .filter((entry) => !entry.isTypeOnly)
+      .map((entry) => (entry.propertyName ?? entry.name).text)
+  })
+}
+
 describe('public component manifest', () => {
+  it('distinguishes runtime coverage imports from type-only imports and aliases', () => {
+    expect(
+      runtimeImports(
+        "import { AuthBackButton, AuthSubmitButton as Submit, type ButtonProps } from '../src'",
+      ),
+    ).toEqual(['AuthBackButton', 'AuthSubmitButton'])
+    expect(runtimeImports("import type { Button } from '../src'")).toEqual([])
+    expect(runtimeImports("import { Avatar } from '../src'")).not.toContain(
+      'Button',
+    )
+  })
+
   it('matches every public component value export', () => {
     const entrypoint = readFileSync(resolve(root, 'src/index.ts'), 'utf8')
     const componentExports = Array.from(
@@ -28,7 +64,9 @@ describe('public component manifest', () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
       const owner = contract.compatibilityFor ?? contract.exportName
-      expect(contract.ownerPath).toMatch(/^src\/components\/[^/]+\/[^/]+\.tsx$/)
+      expect(contract.ownerPath).toMatch(
+        /^src\/(?:components|compatibility)\/(?:[^/]+\/)*[^/]+\.tsx$/,
+      )
       expect(contract.ownerPath).not.toMatch(/\/index\.tsx$/)
 
       if (contract.compatibilityFor) {
@@ -39,9 +77,10 @@ describe('public component manifest', () => {
 
         expect(canonical).toBeDefined()
         expect(canonical?.compatibilityFor).toBeUndefined()
-        expect(canonical?.ownerPath.split('/')[2]).toBe(
-          contract.ownerPath.split('/')[2],
-        )
+        expect(
+          contract.ownerPath === `src/compatibility/${owner}.tsx` ||
+            dirname(contract.ownerPath) === dirname(canonical!.ownerPath),
+        ).toBe(true)
         expect(canonical?.exportName).not.toBe(contract.exportName)
         expect(
           readFileSync(resolve(root, contract.ownerPath), 'utf8'),
@@ -57,16 +96,21 @@ describe('public component manifest', () => {
   it('keeps every public component completely covered', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      const folder = contract.ownerPath.slice(
-        0,
-        contract.ownerPath.lastIndexOf('/'),
+      expect(contract.test.path).toMatch(/^test\/.+\.test\.tsx$/)
+      expect(contract.story.path).toMatch(/^stories\/.+\.stories\.tsx$/)
+
+      const testSource = readFileSync(resolve(root, contract.test.path), 'utf8')
+      const storySource = readFileSync(
+        resolve(root, contract.story.path),
+        'utf8',
       )
-      expect(contract.test.path).toBe(
-        `${folder}/${contract.exportName}.test.tsx`,
+      expect(runtimeImports(testSource), contract.test.path).toContain(
+        contract.exportName,
       )
-      expect(contract.story.path).toBe(
-        `${folder}/${contract.exportName}.stories.tsx`,
+      expect(runtimeImports(storySource), contract.story.path).toContain(
+        contract.exportName,
       )
+      expect(storySource).toContain(`title: '${contract.story.title}'`)
 
       for (const coverage of [
         contract.test,

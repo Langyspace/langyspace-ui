@@ -3,7 +3,7 @@ import { dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const canonicalButtonTypes = fileURLToPath(
-  new URL('../src/components/Button/Button.types.ts', import.meta.url),
+  new URL('../src/components/Button/Button.tsx', import.meta.url),
 )
 
 const sourceExtensions = new Set(['.js', '.jsx', '.ts', '.tsx'])
@@ -390,7 +390,14 @@ export async function auditArchitecture(config) {
         /from\s+['"]([^'"]+(?:\/styles|\.styles))['"]/g,
       )) {
         const importedStyles = resolve(dirname(file), match[1])
-        if (dirname(importedStyles) !== dirname(file)) {
+        const ownerPath = config.componentOwners?.[sourcePath]
+        const ownerStyles = ownerPath
+          ? resolve(root, ownerPath).replace(/\.[jt]sx?$/, '.styles')
+          : undefined
+        if (
+          dirname(importedStyles) !== dirname(file) &&
+          importedStyles !== ownerStyles
+        ) {
           report({
             index: match.index,
             message: "component imports another component's private styles",

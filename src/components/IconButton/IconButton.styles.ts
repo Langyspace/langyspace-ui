@@ -4,7 +4,7 @@ import {
   actionSizeHeights,
 } from '../../foundations/actions/recipe'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import type { IconButtonStyleProps } from './IconButton.types'
 
 const intentStyles = {

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import { tokens } from '../../foundations/tokens'
 
 export const Root = styled.div`

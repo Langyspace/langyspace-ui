@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 import * as Styled from './ToastItem.styles'
 
 import type { ReactNode } from 'react'
-import type { PressableProps } from '../Button/Pressable'
+import type { PressableProps } from '../Pressable'
 
 export type ToastTone = 'neutral' | 'success' | 'danger' | 'warning' | 'brand'
 

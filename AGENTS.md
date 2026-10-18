@@ -64,13 +64,16 @@
   implementations in repeated `index.tsx` files. Colocate short props/simple
   styles; separate substantial styles/types when it improves reading. Keep
   tokens/recipes in `foundations` and private infrastructure in `internal`.
+  Stories belong in `stories` and tests in `test`, outside production source.
+  Simple components may use a single named file without a dedicated folder.
 
 - Use props for visual variations of the same structure and interaction, such as
   `Button variant="primary"`, `"secondary"` or `"text"`. Do not create another public
   component just for a color, size, spacing or product-specific name. Extract components only
   for a clear responsibility, meaningful reuse or an independent interaction contract.
-- Keep compatibility adapters beside their canonical owner while consumers migrate. They should
-  delegate presentation and behavior instead of keeping another recipe or component directory.
+- Keep transitional adapters in `src/compatibility`, grouped by canonical owner while consumers
+  migrate. Canonical components must not depend on that layer. Adapters delegate presentation and
+  behavior instead of keeping another recipe; record their consumers and removal condition.
 - Product route-level pages, screens, views, and containers stay in their consumer repositories.
   Public components may be small or large: accept them when they express a stable visual or
   interaction contract reusable across products, including compound units such as `Chat` or

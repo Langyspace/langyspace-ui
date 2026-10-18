@@ -3,7 +3,7 @@ import { tokens } from '../../foundations/tokens'
 import { CalendarTimeSlot } from './CalendarParts'
 import { TimelineEvent } from './CalendarParts'
 import { CalendarEvent } from './CalendarParts'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-schedule-calendar',

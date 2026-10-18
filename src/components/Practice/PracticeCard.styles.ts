@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-practice-card',

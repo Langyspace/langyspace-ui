@@ -21,7 +21,9 @@ Usar `Button.tsx`, `Button.styles.ts` e tipos junto da implementação quando cu
 Evitar `index.tsx` como nome de implementação, pastas para cada span ou nova
 hierarquia de rótulos abstratos. Partes da mesma composição podem compartilhar
 arquivo quando isso facilitar a leitura. Interações independentes continuam em
-arquivos próprios. Testes e stories ficam perto do código que cobrem.
+arquivos próprios. O [lote de leitura](readability-plan.md) separa stories e
+testes em diretórios próprios e mantém adaptadores transitórios em
+src/compatibility, agrupados pelo owner.
 
 ## Composições
 
@@ -34,7 +36,7 @@ arquivos próprios. Testes e stories ficam perto do código que cobrem.
 4. PracticeResultPanel recebe título, descrição e ações; children continua sendo
    conteúdo intermediário. A lógica de exercício e áudio continua nos produtos.
 5. Aliases LoadingState/EmptyState ficam junto de StatePanel, com seu spinner e
-   anúncios atuais. Presets Auth ficam como compatibilidade junto de Button, com as mesmas margens;
+   anúncios atuais. Presets Auth ficam em src/compatibility/Button.tsx, com as mesmas margens;
    trocar o uso nas telas sem composição contextual seria uma alteração adicional.
 
 ## Tarefas em ordem

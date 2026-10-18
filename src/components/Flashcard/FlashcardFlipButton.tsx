@@ -1,7 +1,7 @@
 import type { ComponentPropsWithRef } from 'react'
 
 import { styled } from 'styled-components'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 
 const Button = styled(Pressable).withConfig({
   componentId: 'lsui-sc-flashcard-flip-button',

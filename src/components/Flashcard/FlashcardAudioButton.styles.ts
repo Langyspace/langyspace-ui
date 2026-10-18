@@ -1,5 +1,5 @@
 import { keyframes, styled } from 'styled-components'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import * as token from '../../foundations/tokenValues'
 import type { FlashcardAudioButtonProps } from './FlashcardAudioButton'
 

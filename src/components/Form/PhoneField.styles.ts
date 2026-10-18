@@ -1,4 +1,4 @@
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import { styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
 

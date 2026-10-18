@@ -1,6 +1,6 @@
 import { keyframes, styled } from 'styled-components'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from '../Button/Pressable'
+import { Pressable } from '../Pressable'
 import type { ToastTone } from './ToastItem'
 
 const tones = {

@@ -1,8 +1,13 @@
 import { css, styled } from 'styled-components'
 import { actionRecipe } from '../../foundations/actions/recipe'
 import * as token from '../../foundations/tokenValues'
-import { Pressable } from './Pressable'
-import type { ButtonStyleProps } from './Button.types'
+import { Pressable } from '../Pressable'
+import type { ActionRecipeStyleProps } from '../../foundations/actions/types'
+import type { ButtonTextVariant } from './Button'
+
+interface ButtonStyleProps extends ActionRecipeStyleProps {
+  $textVariant?: ButtonTextVariant
+}
 
 const textColors = {
   text: token.colorContentDefault,
