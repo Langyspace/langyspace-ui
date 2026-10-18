@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
-import { IconSlot } from '.'
+import { IconSlot } from './index'
 import * as Styled from './styles'
 
 describe('IconSlot', () => {

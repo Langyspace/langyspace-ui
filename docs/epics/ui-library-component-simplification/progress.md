@@ -1,5 +1,28 @@
 # Progresso
 
+## Entrega atual: estrutura React e composições — 2026-10-18
+
+Implementada na branch `refactor/react-component-structure`, a partir de `914164b`
+mais o diagnóstico `0d0a635`. O [plano de estrutura](structure-plan.md) e a
+[validação atual](structure-validation.md) substituem o discovery como próximo
+passo: a mudança está preparada para PR e revisão humana.
+
+- Atomic design foi retirado de src e do catálogo. Há 40 famílias em components,
+  com nomes de arquivo de componentes; foundations/internal mantêm seus papéis.
+- Arquivos em src passam de 915 para 634. Tipos curtos/estilos simples foram
+  colocados perto da implementação, sem concentrar tudo num arquivo gigante.
+- MetricSummary, StatCard e PracticeResultPanel têm composição por props de
+  conteúdo. Vinte nomes foram agrupados como compatibilidade; nenhum export
+  anterior foi removido. Os presets de autenticação preservam suas margens junto de Button.
+- Arquitetura, 33 testes focados, build e API passaram. Há 822 pares de evidência
+  em 187 folhas, incluindo novas APIs e navegação do catálogo. As duas variações
+  residuais de pixels têm medidas no documento de validação.
+
+Próxima tarefa única: revisar o PR atual e seus gates. Depois do aceite desta
+revisão, preparar publicação da UI e adoções dos produtos; não usar aprovações
+históricas como aceite da revisão atual. As demais famílias do diagnóstico
+continuam explicitamente pendentes.
+
 ## Revisão atual de granularidade — 2026-10-18
 
 A [nova análise](granularity-review.md) identifica 173 componentes exportados,

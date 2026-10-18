@@ -28,11 +28,8 @@ describe('public component manifest', () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
       const owner = contract.compatibilityFor ?? contract.exportName
-      const folder = `src/${contract.layer}s/${owner}`
-
-      expect(contract.ownerPath).toBe(
-        `${folder}/${contract.compatibilityFor ? 'compatibility.tsx' : 'index.tsx'}`,
-      )
+      expect(contract.ownerPath).toMatch(/^src\/components\/[^/]+\/[^/]+\.tsx$/)
+      expect(contract.ownerPath).not.toMatch(/\/index\.tsx$/)
 
       if (contract.compatibilityFor) {
         const canonical: ComponentContract | undefined =
@@ -42,7 +39,9 @@ describe('public component manifest', () => {
 
         expect(canonical).toBeDefined()
         expect(canonical?.compatibilityFor).toBeUndefined()
-        expect(canonical?.layer).toBe(contract.layer)
+        expect(canonical?.ownerPath.split('/')[2]).toBe(
+          contract.ownerPath.split('/')[2],
+        )
         expect(canonical?.exportName).not.toBe(contract.exportName)
         expect(
           readFileSync(resolve(root, contract.ownerPath), 'utf8'),
@@ -58,12 +57,15 @@ describe('public component manifest', () => {
   it('keeps every public component completely covered', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      const owner = contract.compatibilityFor ?? contract.exportName
+      const folder = contract.ownerPath.slice(
+        0,
+        contract.ownerPath.lastIndexOf('/'),
+      )
       expect(contract.test.path).toBe(
-        `src/${contract.layer}s/${owner}/${contract.exportName}.test.tsx`,
+        `${folder}/${contract.exportName}.test.tsx`,
       )
       expect(contract.story.path).toBe(
-        `src/${contract.layer}s/${owner}/${contract.exportName}.stories.tsx`,
+        `${folder}/${contract.exportName}.stories.tsx`,
       )
 
       for (const coverage of [

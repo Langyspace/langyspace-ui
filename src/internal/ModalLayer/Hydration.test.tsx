@@ -2,8 +2,8 @@ import { act, screen } from '@testing-library/react'
 import { hydrateRoot, type Root } from 'react-dom/client'
 import { renderToString } from 'react-dom/server'
 import { describe, expect, it } from 'vitest'
-import { Dialog } from '../../molecules/Dialog'
-import { Drawer } from '../../molecules/Drawer'
+import { Dialog } from '../../components/Dialog/Dialog'
+import { Drawer } from '../../components/Drawer/Drawer'
 
 describe.each([
   ['dialog', Dialog],

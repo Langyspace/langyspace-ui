@@ -1,8 +1,8 @@
 import { cleanup, render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { afterEach, expect, it, vi } from 'vitest'
-import { ActionMenu } from '../../molecules/ActionMenu'
-import { Dialog } from '../../molecules/Dialog'
+import { ActionMenu } from '../../components/ActionMenu/ActionMenu'
+import { Dialog } from '../../components/Dialog/Dialog'
 
 afterEach(cleanup)
 

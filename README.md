@@ -2,7 +2,7 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Este checkout contém o contrato **2.2.0**, com ações de texto consolidadas em Button. Os guias descrevem essa versão; a instalação usa o artefato oficial correspondente. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+Este checkout prepara a **2.3.0**, com organização por responsabilidade e composições de métricas, estatísticas e resultados. A instalação abaixo continua apontando para a versão oficial 2.2.0 até a publicação do candidato. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
@@ -85,6 +85,42 @@ export default defineConfig({
 Mantenha versões únicas dos peers no consumidor. A modalidade de Dialog/Drawer também é ativada quando uma camada inicialmente aberta é hidratada; abrir o portal não basta para provar foco, inércia e bloqueio de rolagem.
 
 ## Encontrar um componente no checkout
+
+O código usa nomes de componentes React e famílias de responsabilidade:
+
+```text
+src/
+  components/
+    Button/Button.tsx
+    Calendar/ScheduleCalendar.tsx
+    Calendar/MonthView.tsx
+    Auth/AuthFrame.tsx
+    Form/TextInput.tsx
+    MetricSummary/MetricSummary.tsx
+    StatCard/StatCard.tsx
+    PracticeResultPanel/PracticeResultPanel.tsx
+  foundations/    tokens e receitas
+  internal/       hooks, contextos e infraestrutura privada
+  index.ts        API pública
+```
+
+Tipos curtos e estilos simples ficam no arquivo do componente. Estilos ou tipos
+maiores ficam em arquivos nomeados, como Button.styles.ts e Button.types.ts.
+Testes e stories ficam próximos. Não há classificação por atoms/molecules nem
+uma pasta para cada detalhe de apresentação. Compatibilidade fica ao lado do
+owner em arquivos nomeados; novos usos preferem os componentes completos.
+
+```tsx
+<MetricSummary value={correctAnswers} label="Acertos" />
+<StatCard value={activeStudents} label="Alunos ativos" tone="brand" />
+<PracticeResultPanel heading="Resultado" description={summary} actions={actions}>
+  {metrics}
+</PracticeResultPanel>
+```
+
+Os exports e a composição com children das versões anteriores continuam
+disponíveis. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
+registra o escopo e os limites desta reorganização.
 
 O manifest em quality/component-manifest.ts liga export, owner, props, guia, story, teste e exemplos de consumidores. O comando é uma ferramenta do repositório:
 

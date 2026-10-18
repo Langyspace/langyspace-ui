@@ -58,6 +58,13 @@
 
 ## Library contracts
 
+- Organize public React components under `src/components` by named responsibility
+  or cohesive family. Use component filenames such as `Button.tsx` and
+  `Calendar/MonthView.tsx`; do not restore atomic-design directories or hide
+  implementations in repeated `index.tsx` files. Colocate short props/simple
+  styles; separate substantial styles/types when it improves reading. Keep
+  tokens/recipes in `foundations` and private infrastructure in `internal`.
+
 - Use props for visual variations of the same structure and interaction, such as
   `Button variant="primary"`, `"secondary"` or `"text"`. Do not create another public
   component just for a color, size, spacing or product-specific name. Extract components only

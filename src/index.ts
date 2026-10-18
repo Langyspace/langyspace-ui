@@ -1,146 +1,156 @@
-export { ActionLink } from './atoms/ActionLink'
+export { ActionLink } from './components/ActionLink/ActionLink'
 export type {
   ActionLinkProps,
   ActionLinkVariant,
-} from './atoms/ActionLink/types'
+} from './components/ActionLink/ActionLink.types'
 
-export { AuthNotice } from './atoms/AuthNotice'
-export type { AuthNoticeProps, AuthNoticeTone } from './atoms/AuthNotice/types'
+export { AuthNotice } from './components/Auth/AuthNotice'
+export type {
+  AuthNoticeProps,
+  AuthNoticeTone,
+} from './components/Auth/AuthNotice'
 
-export { AuthAccent } from './atoms/AuthAccent'
-export type { AuthAccentProps } from './atoms/AuthAccent/types'
+export { AuthAccent } from './components/Auth/AuthAccent'
+export type { AuthAccentProps } from './components/Auth/AuthAccent'
 
-export { AuthDescription } from './atoms/AuthDescription'
-export type { AuthDescriptionProps } from './atoms/AuthDescription/types'
+export { AuthDescription } from './components/Auth/AuthDescription'
+export type { AuthDescriptionProps } from './components/Auth/AuthDescription'
 
-export { AuthTitle } from './atoms/AuthTitle'
-export type { AuthTitleProps } from './atoms/AuthTitle/types'
+export { AuthTitle } from './components/Auth/AuthTitle'
+export type { AuthTitleProps } from './components/Auth/AuthTitle'
 
-export { Avatar } from './atoms/Avatar'
-export type { AvatarProps, AvatarSize, AvatarTone } from './atoms/Avatar/types'
+export { Avatar } from './components/Avatar/Avatar'
+export type {
+  AvatarProps,
+  AvatarSize,
+  AvatarTone,
+} from './components/Avatar/Avatar'
 
-export { Button } from './atoms/Button'
+export { Button } from './components/Button/Button'
 export type {
   ButtonProps,
   ButtonDensity,
   ButtonSize,
   ButtonVariant,
-} from './atoms/Button/types'
+} from './components/Button/Button.types'
 
-export { IconButton } from './atoms/IconButton'
+export { IconButton } from './components/IconButton/IconButton'
 export type {
   IconButtonProps,
   IconButtonShape,
   IconButtonSize,
   IconButtonVariant,
-} from './atoms/IconButton/types'
+} from './components/IconButton/IconButton.types'
 
-export { SelectInput } from './atoms/SelectInput'
-export type { SelectInputProps, SelectInputSize } from './atoms/SelectInput'
+export { SelectInput } from './components/Form/SelectInput'
+export type {
+  SelectInputProps,
+  SelectInputSize,
+} from './components/Form/SelectInput'
 
-export { StatusChip } from './atoms/StatusChip'
+export { StatusChip } from './components/StatusChip/StatusChip'
 export type {
   StatusChipProps,
   StatusChipSize,
   StatusChipTone,
-} from './atoms/StatusChip/types'
+} from './components/StatusChip/StatusChip'
 
-export { TextareaInput } from './atoms/TextareaInput'
+export { TextareaInput } from './components/Form/TextareaInput'
 export type {
   TextareaInputProps,
   TextareaInputSize,
-} from './atoms/TextareaInput'
+} from './components/Form/TextareaInput'
 
-export { TextInput } from './atoms/TextInput'
-export type { TextInputProps, TextInputSize } from './atoms/TextInput'
+export { TextInput } from './components/Form/TextInput'
+export type { TextInputProps, TextInputSize } from './components/Form/TextInput'
 
 export { tokens } from './foundations/tokens'
 export type { DesignTokens } from './foundations/tokens'
 
 export type { FieldControlSize } from './foundations/fields'
 
-export { ActionMenu } from './molecules/ActionMenu'
+export { ActionMenu } from './components/ActionMenu/ActionMenu'
 export type {
   ActionMenuAlign,
   ActionMenuItem,
   ActionMenuProps,
   ActionMenuSize,
   ActionMenuTone,
-} from './molecules/ActionMenu/types'
+} from './components/ActionMenu/ActionMenu.types'
 
-export { AuthTokenDigits } from './molecules/AuthTokenDigits'
+export { AuthTokenDigits } from './components/Auth/AuthTokenDigits'
 export type {
   AuthTokenDigitsProps,
   AuthTokenLength,
-} from './molecules/AuthTokenDigits/types'
+} from './components/Auth/AuthTokenDigits'
 
-export { Card } from './molecules/Card'
-export type { CardProps } from './molecules/Card/types'
+export { Card } from './components/Card/Card'
+export type { CardProps } from './components/Card/Card'
 
-export { FilterToolbar } from './molecules/FilterToolbar'
-export type { FilterToolbarProps } from './molecules/FilterToolbar/types'
+export { FilterToolbar } from './components/Filter/FilterToolbar'
+export type { FilterToolbarProps } from './components/Filter/FilterToolbar'
 
-export { ControlledField } from './molecules/ControlledField'
-export type { ControlledFieldProps } from './molecules/ControlledField/types'
+export { ControlledField } from './components/Form/ControlledField'
+export type { ControlledFieldProps } from './components/Form/ControlledField.types'
 
-export { CompoundControl } from './molecules/CompoundControl'
+export { CompoundControl } from './components/Form/CompoundControl'
 export type {
   CompoundControlProps,
   CompoundControlSurface,
-} from './molecules/CompoundControl/types'
+} from './components/Form/CompoundControl'
 
-export { Dialog } from './molecules/Dialog'
+export { Dialog } from './components/Dialog/Dialog'
 export type {
   DialogDismissal,
   DialogPanelProps,
   DialogProps,
   DialogSize,
-} from './molecules/Dialog'
+} from './components/Dialog/Dialog'
 
-export { Drawer } from './molecules/Drawer'
+export { Drawer } from './components/Drawer/Drawer'
 export type {
   DrawerDismissal,
   DrawerPanelProps,
   DrawerProps,
   DrawerSize,
-} from './molecules/Drawer'
+} from './components/Drawer/Drawer'
 
-export { EmptyState } from './molecules/EmptyState'
-export type { EmptyStateProps } from './molecules/EmptyState/types'
+export { EmptyState } from './components/StatePanel/StatePanel.compatibility'
+export type { EmptyStateProps } from './components/StatePanel/StatePanel.compatibility'
 
-export { FieldRoot } from './molecules/FieldRoot'
+export { FieldRoot } from './components/Form/FieldRoot'
 export type {
   FieldLabelVariant,
   FieldRootProps,
-} from './molecules/FieldRoot/types'
+} from './components/Form/FieldRoot'
 
-export { FilterPills } from './molecules/FilterPills'
+export { FilterPills } from './components/Filter/FilterPills'
 export type {
   FilterPillsOverflow,
   FilterPillsProps,
   FilterPillsSize,
-} from './molecules/FilterPills/types'
+} from './components/Filter/FilterPills.types'
 
-export { LoadingState } from './molecules/LoadingState'
-export type { LoadingStateProps } from './molecules/LoadingState/types'
+export { LoadingState } from './components/StatePanel/StatePanel.compatibility'
+export type { LoadingStateProps } from './components/StatePanel/StatePanel.compatibility'
 
-export { MessageBubble } from './molecules/MessageBubble'
+export { MessageBubble } from './components/Message/MessageBubble'
 export type {
   MessageBubbleProps,
   MessageBubbleSide,
   MessageBubbleStatus,
-} from './molecules/MessageBubble/types'
+} from './components/Message/MessageBubble.types'
 
-export { MessageComposer } from './molecules/MessageComposer'
-export type { MessageComposerProps } from './molecules/MessageComposer/types'
+export { MessageComposer } from './components/Message/MessageComposer'
+export type { MessageComposerProps } from './components/Message/MessageComposer.types'
 
-export { MessageThread } from './molecules/MessageThread'
-export type { MessageThreadProps } from './molecules/MessageThread/types'
+export { MessageThread } from './components/Message/MessageThread'
+export type { MessageThreadProps } from './components/Message/MessageThread'
 
-export { MessageThreadHeader } from './molecules/MessageThreadHeader'
-export type { MessageThreadHeaderProps } from './molecules/MessageThreadHeader/types'
+export { MessageThreadHeader } from './components/Message/MessageThreadHeader'
+export type { MessageThreadHeaderProps } from './components/Message/MessageThreadHeader'
 
-export { OperationalList } from './molecules/OperationalList'
+export { OperationalList } from './components/OperationalList/OperationalList'
 export type {
   OperationalListAlign,
   OperationalListColumn,
@@ -153,482 +163,485 @@ export type {
   OperationalListProps,
   OperationalListSort,
   OperationalListSortDirection,
-} from './molecules/OperationalList/types'
+} from './components/OperationalList/OperationalList.types'
 
-export { SearchInput } from './molecules/SearchInput'
+export { SearchInput } from './components/Form/SearchInput'
 export type {
   SearchInputClearAction,
   SearchInputProps,
   SearchInputSize,
-} from './molecules/SearchInput'
+} from './components/Form/SearchInput'
 
-export { SectionHeader } from './molecules/SectionHeader'
+export { SectionHeader } from './components/SectionHeader/SectionHeader'
 export type {
   SectionHeaderLevel,
   SectionHeaderProps,
   SectionHeaderSpacing,
-} from './molecules/SectionHeader'
+} from './components/SectionHeader/SectionHeader'
 
-export { SegmentedControl } from './molecules/SegmentedControl'
+export { SegmentedControl } from './components/SegmentedControl/SegmentedControl'
 export type {
   ChoiceOption,
   ChoiceValue,
   SegmentedControlProps,
   SegmentedControlShape,
   SegmentedControlSurface,
-} from './molecules/SegmentedControl'
+} from './components/SegmentedControl/SegmentedControl'
 
-export { StatePanel } from './molecules/StatePanel'
+export { StatePanel } from './components/StatePanel/StatePanel'
 export type {
   StatePanelDensity,
   StatePanelProps,
   StatePanelState,
   StatePanelSurface,
-} from './molecules/StatePanel/types'
+} from './components/StatePanel/StatePanel.types'
 
-export { Pressable } from './primitives/Pressable'
-export type { PressableProps } from './primitives/Pressable/types'
+export { Pressable } from './components/Button/Pressable'
+export type { PressableProps } from './components/Button/Pressable'
 
-export { Spinner } from './primitives/Spinner'
-export type { SpinnerProps, SpinnerSize } from './primitives/Spinner/types'
+export { Spinner } from './components/Spinner/Spinner'
+export type { SpinnerProps, SpinnerSize } from './components/Spinner/Spinner'
 
-export { AvailabilityCalendar } from './molecules/AvailabilityCalendar'
+export { AvailabilityCalendar } from './components/Calendar/AvailabilityCalendar'
 export type {
   AvailabilityCalendarDay,
   AvailabilityCalendarProps,
   AvailabilityCalendarSlot,
   AvailabilityCalendarStatus,
-} from './molecules/AvailabilityCalendar'
+} from './components/Calendar/AvailabilityCalendar'
 
-export { DocumentLayout } from './molecules/DocumentLayout'
+export { DocumentLayout } from './components/Document/DocumentLayout'
 export type {
   DocumentLayoutProps,
   DocumentSection,
-} from './molecules/DocumentLayout'
+} from './components/Document/DocumentLayout'
 
-export { NoticeBanner } from './molecules/NoticeBanner'
-export type { NoticeBannerProps } from './molecules/NoticeBanner'
+export { NoticeBanner } from './components/Notice/NoticeBanner'
+export type { NoticeBannerProps } from './components/Notice/NoticeBanner'
 
-export { ToastItem } from './molecules/ToastItem'
-export type { ToastItemProps, ToastTone } from './molecules/ToastItem'
+export { ToastItem } from './components/Toast/ToastItem'
+export type { ToastItemProps, ToastTone } from './components/Toast/ToastItem'
 
-export { ToastViewport } from './molecules/ToastViewport'
-export type { ToastViewportProps } from './molecules/ToastViewport'
+export { ToastViewport } from './components/Toast/ToastViewport'
+export type { ToastViewportProps } from './components/Toast/ToastViewport'
 
-export { PracticeCardSkeletonBody } from './molecules/PracticeCardSkeletonBody'
-export type { PracticeCardSkeletonBodyProps } from './molecules/PracticeCardSkeletonBody/types'
+export { PracticeCardSkeletonBody } from './components/Practice/PracticeCardSkeletonBody'
+export type { PracticeCardSkeletonBodyProps } from './components/Practice/PracticeCardSkeletonBody'
 
-export { PracticeProgressBar } from './atoms/PracticeProgressBar'
-export type { PracticeProgressBarProps } from './atoms/PracticeProgressBar/types'
+export { PracticeProgressBar } from './components/Practice/PracticeProgressBar'
+export type { PracticeProgressBarProps } from './components/Practice/PracticeProgressBar'
 
-export { PhoneField } from './molecules/PhoneField'
+export { PhoneField } from './components/Form/PhoneField'
 export type {
   PhoneFieldProps,
   PhoneCountryOption,
-} from './molecules/PhoneField'
+} from './components/Form/PhoneField'
 
-export { AuthFrame } from './molecules/AuthFrame'
-export type { AuthFrameProps } from './molecules/AuthFrame'
+export { AuthFrame } from './components/Auth/AuthFrame'
+export type { AuthFrameProps } from './components/Auth/AuthFrame'
 
-export { CalendarControls } from './molecules/CalendarControls'
-export type { CalendarControlsProps } from './molecules/CalendarControls'
+export { CalendarControls } from './components/Calendar/CalendarControls'
+export type { CalendarControlsProps } from './components/Calendar/CalendarControls'
 
-export { PracticeCardBody } from './molecules/PracticeCardBody'
-export type { PracticeCardBodyProps } from './molecules/PracticeCardBody'
+export { PracticeCardBody } from './components/Practice/PracticeCardBody'
+export type { PracticeCardBodyProps } from './components/Practice/PracticeCardBody'
 
-export { QuizOption } from './molecules/QuizOption'
-export type { QuizOptionProps, QuizOptionState } from './molecules/QuizOption'
+export { QuizOption } from './components/Quiz/QuizOption'
+export type {
+  QuizOptionProps,
+  QuizOptionState,
+} from './components/Quiz/QuizOption'
 
-export { QuizFeedback } from './molecules/QuizFeedback'
-export type { QuizFeedbackProps } from './molecules/QuizFeedback'
+export { QuizFeedback } from './components/Quiz/QuizFeedback'
+export type { QuizFeedbackProps } from './components/Quiz/QuizFeedback'
 
-export { FlashcardRatingButton } from './molecules/FlashcardRatingButton'
+export { FlashcardRatingButton } from './components/Flashcard/FlashcardRatingButton'
 export type {
   FlashcardGrade,
   FlashcardRatingButtonProps,
-} from './molecules/FlashcardRatingButton'
+} from './components/Flashcard/FlashcardRatingButton'
 
-export { PracticePlaybackControls } from './molecules/PracticePlaybackControls'
-export type { PracticePlaybackControlsProps } from './molecules/PracticePlaybackControls'
+export { PracticePlaybackControls } from './components/Practice/PracticePlaybackControls'
+export type { PracticePlaybackControlsProps } from './components/Practice/PracticePlaybackControls'
 
-export { QuizSessionHeader } from './molecules/QuizSessionHeader'
-export type { QuizSessionHeaderProps } from './molecules/QuizSessionHeader'
+export { QuizSessionHeader } from './components/Quiz/QuizSessionHeader'
+export type { QuizSessionHeaderProps } from './components/Quiz/QuizSessionHeader'
 
-export { PracticeResultPanel } from './molecules/PracticeResultPanel'
-export type { PracticeResultPanelProps } from './molecules/PracticeResultPanel'
+export { PracticeResultPanel } from './components/PracticeResultPanel/PracticeResultPanel'
+export type { PracticeResultPanelProps } from './components/PracticeResultPanel/PracticeResultPanel'
 
-export { AuthEyebrow } from './atoms/AuthEyebrow'
-export type { AuthEyebrowProps } from './atoms/AuthEyebrow/types'
+export { AuthEyebrow } from './components/Auth/AuthEyebrow'
+export type { AuthEyebrowProps } from './components/Auth/AuthEyebrow'
 
-export { AuthTopLinkHighlight } from './atoms/AuthTopLinkHighlight'
-export type { AuthTopLinkHighlightProps } from './atoms/AuthTopLinkHighlight/types'
+export { AuthTopLinkHighlight } from './components/Auth/AuthTopLinkHighlight'
+export type { AuthTopLinkHighlightProps } from './components/Auth/AuthTopLinkHighlight'
 
-export { AuthForm } from './molecules/AuthForm'
-export type { AuthFormProps } from './molecules/AuthForm/types'
+export { AuthForm } from './components/Auth/AuthForm'
+export type { AuthFormProps } from './components/Auth/AuthForm'
 
-export { AuthBackButton } from './atoms/AuthBackButton'
-export type { AuthBackButtonProps } from './atoms/AuthBackButton/types'
+export { AuthBackButton } from './components/Button/Button.compatibility'
+export type { AuthBackButtonProps } from './components/Button/Button.compatibility'
 
-export { AuthResendAction } from './molecules/AuthResendAction'
-export type { AuthResendActionProps } from './molecules/AuthResendAction/types'
+export { AuthResendAction } from './components/Auth/AuthResendAction'
+export type { AuthResendActionProps } from './components/Auth/AuthResendAction'
 
-export { AuthResendButton } from './atoms/AuthResendButton'
-export type { AuthResendButtonProps } from './atoms/AuthResendButton/types'
+export { AuthResendButton } from './components/Auth/AuthResendButton'
+export type { AuthResendButtonProps } from './components/Auth/AuthResendButton'
 
-export { AuthSuccessIcon } from './atoms/AuthSuccessIcon'
-export type { AuthSuccessIconProps } from './atoms/AuthSuccessIcon/types'
+export { AuthSuccessIcon } from './components/Auth/AuthSuccessIcon'
+export type { AuthSuccessIconProps } from './components/Auth/AuthSuccessIcon'
 
-export { AuthProgress } from './atoms/AuthProgress'
-export type { AuthProgressProps } from './atoms/AuthProgress/types'
+export { AuthProgress } from './components/Auth/AuthProgress'
+export type { AuthProgressProps } from './components/Auth/AuthProgress'
 
-export { AuthSubmitButton } from './atoms/AuthSubmitButton'
-export type { AuthSubmitButtonProps } from './atoms/AuthSubmitButton/types'
+export { AuthSubmitButton } from './components/Button/Button.compatibility'
+export type { AuthSubmitButtonProps } from './components/Button/Button.compatibility'
 
-export { AuthTopLink } from './atoms/AuthTopLink'
-export type { AuthTopLinkProps } from './atoms/AuthTopLink/types'
+export { AuthTopLink } from './components/Auth/AuthTopLink'
+export type { AuthTopLinkProps } from './components/Auth/AuthTopLink'
 
-export { AuthSuccessState } from './molecules/AuthSuccessState'
-export type { AuthSuccessStateProps } from './molecules/AuthSuccessState/types'
+export { AuthSuccessState } from './components/Auth/AuthSuccessState'
+export type { AuthSuccessStateProps } from './components/Auth/AuthSuccessState'
 
-export { PracticeResultMark } from './atoms/PracticeResultMark'
-export type { PracticeResultMarkProps } from './atoms/PracticeResultMark/types'
+export { PracticeResultMark } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export type { PracticeResultMarkProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
 
-export { PracticeResultTitle } from './atoms/PracticeResultTitle'
-export type { PracticeResultTitleProps } from './atoms/PracticeResultTitle/types'
+export { PracticeResultTitle } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export type { PracticeResultTitleProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
 
-export { PracticeResultDescription } from './atoms/PracticeResultDescription'
-export type { PracticeResultDescriptionProps } from './atoms/PracticeResultDescription/types'
+export { PracticeResultDescription } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export type { PracticeResultDescriptionProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
 
-export { PracticeResultActions } from './molecules/PracticeResultActions'
-export type { PracticeResultActionsProps } from './molecules/PracticeResultActions/types'
+export { PracticeResultActions } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
+export type { PracticeResultActionsProps } from './components/PracticeResultPanel/PracticeResultPanel.compatibility'
 
-export { BrandLogo } from './atoms/BrandLogo'
-export type { BrandLogoProps } from './atoms/BrandLogo/types'
+export { BrandLogo } from './components/Brand/BrandLogo'
+export type { BrandLogoProps } from './components/Brand/BrandLogo'
 
-export { AuthBrandTitle } from './atoms/AuthBrandTitle'
-export type { AuthBrandTitleProps } from './atoms/AuthBrandTitle/types'
+export { AuthBrandTitle } from './components/Auth/AuthBrandTitle'
+export type { AuthBrandTitleProps } from './components/Auth/AuthBrandTitle'
 
-export { AuthBrandAccent } from './atoms/AuthBrandAccent'
-export type { AuthBrandAccentProps } from './atoms/AuthBrandAccent/types'
+export { AuthBrandAccent } from './components/Auth/AuthBrandAccent'
+export type { AuthBrandAccentProps } from './components/Auth/AuthBrandAccent'
 
-export { AuthBrandDescription } from './atoms/AuthBrandDescription'
-export type { AuthBrandDescriptionProps } from './atoms/AuthBrandDescription/types'
+export { AuthBrandDescription } from './components/Auth/AuthBrandDescription'
+export type { AuthBrandDescriptionProps } from './components/Auth/AuthBrandDescription'
 
-export { AuthFeatureList } from './molecules/AuthFeatureList'
-export type { AuthFeatureListProps } from './molecules/AuthFeatureList/types'
+export { AuthFeatureList } from './components/Auth/AuthFeatureList'
+export type { AuthFeatureListProps } from './components/Auth/AuthFeatureList'
 
-export { AuthBrandFooter } from './atoms/AuthBrandFooter'
-export type { AuthBrandFooterProps } from './atoms/AuthBrandFooter/types'
+export { AuthBrandFooter } from './components/Auth/AuthBrandFooter'
+export type { AuthBrandFooterProps } from './components/Auth/AuthBrandFooter'
 
-export { AuthMobileFooter } from './atoms/AuthMobileFooter'
-export type { AuthMobileFooterProps } from './atoms/AuthMobileFooter/types'
+export { AuthMobileFooter } from './components/Auth/AuthMobileFooter'
+export type { AuthMobileFooterProps } from './components/Auth/AuthMobileFooter'
 
-export { AuthFooterLink } from './atoms/AuthFooterLink'
-export type { AuthFooterLinkProps } from './atoms/AuthFooterLink/types'
+export { AuthFooterLink } from './components/Auth/AuthFooterLink'
+export type { AuthFooterLinkProps } from './components/Auth/AuthFooterLink'
 
-export { AuthFeature } from './molecules/AuthFeature'
-export type { AuthFeatureProps } from './molecules/AuthFeature/types'
+export { AuthFeature } from './components/Auth/AuthFeature'
+export type { AuthFeatureProps } from './components/Auth/AuthFeature'
 
-export { DocumentHeader } from './molecules/DocumentHeader'
-export type { DocumentHeaderProps } from './molecules/DocumentHeader/types'
+export { DocumentHeader } from './components/Document/DocumentHeader'
+export type { DocumentHeaderProps } from './components/Document/DocumentHeader'
 
-export { DocumentHeaderContent } from './molecules/DocumentHeaderContent'
-export type { DocumentHeaderContentProps } from './molecules/DocumentHeaderContent/types'
+export { DocumentHeaderContent } from './components/Document/DocumentHeaderContent'
+export type { DocumentHeaderContentProps } from './components/Document/DocumentHeaderContent'
 
-export { DocumentNavigation } from './molecules/DocumentNavigation'
-export type { DocumentNavigationProps } from './molecules/DocumentNavigation/types'
+export { DocumentNavigation } from './components/Document/DocumentNavigation'
+export type { DocumentNavigationProps } from './components/Document/DocumentNavigation'
 
-export { BrandLink } from './atoms/BrandLink'
-export type { BrandLinkProps } from './atoms/BrandLink/types'
+export { BrandLink } from './components/Brand/BrandLink'
+export type { BrandLinkProps } from './components/Brand/BrandLink'
 
-export { DocumentNavigationLink } from './atoms/DocumentNavigationLink'
-export type { DocumentNavigationLinkProps } from './atoms/DocumentNavigationLink/types'
+export { DocumentNavigationLink } from './components/Document/DocumentNavigationLink'
+export type { DocumentNavigationLinkProps } from './components/Document/DocumentNavigationLink'
 
 export type {
   BrandLogoAppearance,
   BrandLogoOrientation,
-} from './atoms/BrandLogo/types'
+} from './components/Brand/BrandLogo'
 
-export { FormStack } from './molecules/FormStack'
-export type { FormStackProps } from './molecules/FormStack/types'
+export { FormStack } from './components/Form/FormStack'
+export type { FormStackProps } from './components/Form/FormStack'
 
-export { FieldLabelRow } from './atoms/FieldLabelRow'
-export type { FieldLabelRowProps } from './atoms/FieldLabelRow/types'
+export { FieldLabelRow } from './components/Form/FieldLabelRow'
+export type { FieldLabelRowProps } from './components/Form/FieldLabelRow'
 
-export { FieldCounter } from './atoms/FieldCounter'
-export type { FieldCounterProps } from './atoms/FieldCounter/types'
+export { FieldCounter } from './components/Form/FieldCounter'
+export type { FieldCounterProps } from './components/Form/FieldCounter'
 
-export { FormError } from './molecules/FormError'
-export type { FormErrorProps } from './molecules/FormError/types'
+export { FormError } from './components/Form/FormError'
+export type { FormErrorProps } from './components/Form/FormError'
 
-export { FormActions } from './molecules/FormActions'
-export type { FormActionsProps } from './molecules/FormActions/types'
+export { FormActions } from './components/Form/FormActions'
+export type { FormActionsProps } from './components/Form/FormActions'
 
-export { FilterSelect } from './molecules/FilterSelect'
-export type { FilterSelectProps } from './molecules/FilterSelect/types'
+export { FilterSelect } from './components/Filter/FilterSelect'
+export type { FilterSelectProps } from './components/Filter/FilterSelect'
 
-export { FileInput } from './atoms/FileInput'
-export type { FileInputProps } from './atoms/FileInput/types'
+export { FileInput } from './components/Form/FileInput'
+export type { FileInputProps } from './components/Form/FileInput'
 
-export { InlineNotice } from './molecules/InlineNotice'
-export type { InlineNoticeProps } from './molecules/InlineNotice/types'
+export { InlineNotice } from './components/Notice/InlineNotice'
+export type { InlineNoticeProps } from './components/Notice/InlineNotice'
 
-export { StatCard } from './molecules/StatCard'
-export type { StatCardProps } from './molecules/StatCard/types'
+export { StatCard } from './components/StatCard/StatCard'
+export type { StatCardProps } from './components/StatCard/StatCard'
 
-export { StatValue } from './atoms/StatValue'
-export type { StatValueProps } from './atoms/StatValue/types'
+export { StatValue } from './components/StatCard/StatCard.compatibility'
+export type { StatValueProps } from './components/StatCard/StatCard.compatibility'
 
-export { StatLabel } from './atoms/StatLabel'
-export type { StatLabelProps } from './atoms/StatLabel/types'
+export { StatLabel } from './components/StatCard/StatCard.compatibility'
+export type { StatLabelProps } from './components/StatCard/StatCard.compatibility'
 
-export { StatAction } from './molecules/StatAction'
-export type { StatActionProps } from './molecules/StatAction/types'
+export { StatAction } from './components/StatCard/StatCard.compatibility'
+export type { StatActionProps } from './components/StatCard/StatCard.compatibility'
 
-export { DefinitionItem } from './molecules/DefinitionItem'
-export type { DefinitionItemProps } from './molecules/DefinitionItem/types'
+export { DefinitionItem } from './components/Details/DefinitionItem'
+export type { DefinitionItemProps } from './components/Details/DefinitionItem'
 
-export { DetailRow } from './molecules/DetailRow'
-export type { DetailRowProps } from './molecules/DetailRow/types'
+export { DetailRow } from './components/Details/DetailRow'
+export type { DetailRowProps } from './components/Details/DetailRow'
 
-export { TextButton } from './atoms/Button/compatibility'
-export type { TextButtonProps } from './atoms/Button/compatibility'
+export { TextButton } from './components/Button/Button.compatibility'
+export type { TextButtonProps } from './components/Button/Button.compatibility'
 
-export type { TextButtonVariant } from './atoms/Button/compatibility'
+export type { TextButtonVariant } from './components/Button/Button.compatibility'
 
-export { MetricSummary } from './molecules/MetricSummary'
-export type { MetricSummaryProps } from './molecules/MetricSummary/types'
+export { MetricSummary } from './components/MetricSummary/MetricSummary'
+export type { MetricSummaryProps } from './components/MetricSummary/MetricSummary'
 
-export { MetricValue } from './atoms/MetricValue'
-export type { MetricValueProps } from './atoms/MetricValue/types'
+export { MetricValue } from './components/MetricSummary/MetricSummary.compatibility'
+export type { MetricValueProps } from './components/MetricSummary/MetricSummary.compatibility'
 
-export { MetricLabel } from './atoms/MetricLabel'
-export type { MetricLabelProps } from './atoms/MetricLabel/types'
+export { MetricLabel } from './components/MetricSummary/MetricSummary.compatibility'
+export type { MetricLabelProps } from './components/MetricSummary/MetricSummary.compatibility'
 
-export { SidebarFrame } from './molecules/SidebarFrame'
-export type { SidebarFrameProps } from './molecules/SidebarFrame/types'
+export { SidebarFrame } from './components/Navigation/SidebarFrame'
+export type { SidebarFrameProps } from './components/Navigation/SidebarFrame'
 
-export { SidebarNavigation } from './molecules/SidebarNavigation'
-export type { SidebarNavigationProps } from './molecules/SidebarNavigation/types'
+export { SidebarNavigation } from './components/Navigation/SidebarNavigation'
+export type { SidebarNavigationProps } from './components/Navigation/SidebarNavigation'
 
-export { NavigationLink } from './molecules/NavigationLink'
-export type { NavigationLinkProps } from './molecules/NavigationLink/types'
+export { NavigationLink } from './components/Navigation/NavigationLink'
+export type { NavigationLinkProps } from './components/Navigation/NavigationLink'
 
-export { NavigationButton } from './molecules/NavigationButton'
-export type { NavigationButtonProps } from './molecules/NavigationButton/types'
+export { NavigationButton } from './components/Navigation/NavigationButton'
+export type { NavigationButtonProps } from './components/Navigation/NavigationButton'
 
-export { NotificationItem } from './molecules/NotificationItem'
-export type { NotificationItemProps } from './molecules/NotificationItem/types'
+export { NotificationItem } from './components/NotificationItem/NotificationItem'
+export type { NotificationItemProps } from './components/NotificationItem/NotificationItem'
 
-export { ConversationRow } from './molecules/ConversationRow'
-export type { ConversationRowProps } from './molecules/ConversationRow/types'
+export { ConversationRow } from './components/Message/ConversationRow'
+export type { ConversationRowProps } from './components/Message/ConversationRow'
 
-export { BottomNavigation } from './molecules/BottomNavigation'
-export type { BottomNavigationProps } from './molecules/BottomNavigation/types'
+export { BottomNavigation } from './components/Navigation/BottomNavigation'
+export type { BottomNavigationProps } from './components/Navigation/BottomNavigation'
 
-export { BottomNavigationLink } from './molecules/BottomNavigationLink'
-export type { BottomNavigationLinkProps } from './molecules/BottomNavigationLink/types'
+export { BottomNavigationLink } from './components/Navigation/BottomNavigationLink'
+export type { BottomNavigationLinkProps } from './components/Navigation/BottomNavigationLink'
 
-export { CalendarScroller } from './molecules/CalendarScroller'
-export type { CalendarScrollerProps } from './molecules/CalendarScroller/types'
+export { CalendarScroller } from './components/Calendar/CalendarScroller'
+export type { CalendarScrollerProps } from './components/Calendar/CalendarScroller'
 
-export { CalendarMonthGrid } from './molecules/CalendarMonthGrid'
-export type { CalendarMonthGridProps } from './molecules/CalendarMonthGrid/types'
+export { CalendarMonthGrid } from './components/Calendar/CalendarParts'
+export type { CalendarMonthGridProps } from './components/Calendar/CalendarParts'
 
-export { CalendarWeekGrid } from './molecules/CalendarWeekGrid'
+export { CalendarWeekGrid } from './components/Calendar/CalendarParts'
 
-export { ScheduleCalendar } from './molecules/ScheduleCalendar'
+export { ScheduleCalendar } from './components/Calendar/ScheduleCalendar'
 export type {
   ScheduleCalendarProps,
   ScheduleCalendarDay,
   ScheduleCalendarSlot,
   ScheduleCalendarEvent,
-} from './molecules/ScheduleCalendar'
+} from './components/Calendar/ScheduleCalendar'
 
-export type { CalendarWeekGridProps } from './molecules/CalendarWeekGrid/types'
+export type { CalendarWeekGridProps } from './components/Calendar/CalendarParts'
 
-export { CalendarDay } from './molecules/CalendarDay'
-export type { CalendarDayProps } from './molecules/CalendarDay/types'
+export { CalendarDay } from './components/Calendar/CalendarParts'
+export type { CalendarDayProps } from './components/Calendar/CalendarParts'
 
-export { CalendarDayNumber } from './molecules/CalendarDayNumber'
-export type { CalendarDayNumberProps } from './molecules/CalendarDayNumber/types'
+export { CalendarDayNumber } from './components/Calendar/CalendarParts'
+export type { CalendarDayNumberProps } from './components/Calendar/CalendarParts'
 
-export { CalendarEvent } from './molecules/CalendarEvent'
-export type { CalendarEventProps } from './molecules/CalendarEvent/types'
+export { CalendarEvent } from './components/Calendar/CalendarParts'
+export type { CalendarEventProps } from './components/Calendar/CalendarParts'
 
-export { TimelineEvent } from './molecules/TimelineEvent'
-export type { TimelineEventProps } from './molecules/TimelineEvent/types'
+export { TimelineEvent } from './components/Calendar/CalendarParts'
+export type { TimelineEventProps } from './components/Calendar/CalendarParts'
 
-export { FlashcardFrame } from './molecules/FlashcardFrame'
-export type { FlashcardFrameProps } from './molecules/FlashcardFrame/types'
+export { FlashcardFrame } from './components/Flashcard/FlashcardFrame'
+export type { FlashcardFrameProps } from './components/Flashcard/FlashcardFrame'
 
-export { FlashcardStage } from './molecules/FlashcardStage'
-export type { FlashcardStageProps } from './molecules/FlashcardStage/types'
+export { FlashcardStage } from './components/Flashcard/FlashcardStage'
+export type { FlashcardStageProps } from './components/Flashcard/FlashcardStage'
 
-export { FlashcardDeck } from './molecules/FlashcardDeck'
-export type { FlashcardDeckProps } from './molecules/FlashcardDeck/types'
+export { FlashcardDeck } from './components/Flashcard/FlashcardDeck'
+export type { FlashcardDeckProps } from './components/Flashcard/FlashcardDeck'
 
-export { FlashcardFront } from './molecules/FlashcardFront'
-export type { FlashcardFrontProps } from './molecules/FlashcardFront/types'
+export { FlashcardFront } from './components/Flashcard/FlashcardFront'
+export type { FlashcardFrontProps } from './components/Flashcard/FlashcardFront'
 
-export { FlashcardImagePanel } from './molecules/FlashcardImagePanel'
-export type { FlashcardImagePanelProps } from './molecules/FlashcardImagePanel/types'
+export { FlashcardImagePanel } from './components/Flashcard/FlashcardImagePanel'
+export type { FlashcardImagePanelProps } from './components/Flashcard/FlashcardImagePanel'
 
-export { FlashcardWord } from './molecules/FlashcardWord'
-export type { FlashcardWordProps } from './molecules/FlashcardWord/types'
+export { FlashcardWord } from './components/Flashcard/FlashcardWord'
+export type { FlashcardWordProps } from './components/Flashcard/FlashcardWord'
 
-export { FlashcardBack } from './molecules/FlashcardBack'
-export type { FlashcardBackProps } from './molecules/FlashcardBack/types'
+export { FlashcardBack } from './components/Flashcard/FlashcardBack'
+export type { FlashcardBackProps } from './components/Flashcard/FlashcardBack'
 
-export { FlashcardFlipHint } from './molecules/FlashcardFlipHint'
-export type { FlashcardFlipHintProps } from './molecules/FlashcardFlipHint/types'
+export { FlashcardFlipHint } from './components/Flashcard/FlashcardFlipHint'
+export type { FlashcardFlipHintProps } from './components/Flashcard/FlashcardFlipHint'
 
-export { FlashcardFace } from './molecules/FlashcardFace'
-export type { FlashcardFaceProps } from './molecules/FlashcardFace/types'
+export { FlashcardFace } from './components/Flashcard/FlashcardFace'
+export type { FlashcardFaceProps } from './components/Flashcard/FlashcardFace'
 
-export { FlashcardGhost } from './molecules/FlashcardGhost'
-export type { FlashcardGhostProps } from './molecules/FlashcardGhost/types'
+export { FlashcardGhost } from './components/Flashcard/FlashcardGhost'
+export type { FlashcardGhostProps } from './components/Flashcard/FlashcardGhost'
 
-export { FlashcardFlip } from './molecules/FlashcardFlip'
-export type { FlashcardFlipProps } from './molecules/FlashcardFlip/types'
+export { FlashcardFlip } from './components/Flashcard/FlashcardFlip'
+export type { FlashcardFlipProps } from './components/Flashcard/FlashcardFlip'
 
-export { FlashcardSwiper } from './molecules/FlashcardSwiper'
-export type { FlashcardSwiperProps } from './molecules/FlashcardSwiper/types'
+export { FlashcardSwiper } from './components/Flashcard/FlashcardSwiper'
+export type { FlashcardSwiperProps } from './components/Flashcard/FlashcardSwiper'
 
-export { FlashcardFeedback } from './molecules/FlashcardFeedback'
-export type { FlashcardFeedbackProps } from './molecules/FlashcardFeedback/types'
+export { FlashcardFeedback } from './components/Flashcard/FlashcardFeedback'
+export type { FlashcardFeedbackProps } from './components/Flashcard/FlashcardFeedback'
 
-export { ShadowingReader } from './molecules/ShadowingReader'
-export type { ShadowingReaderProps } from './molecules/ShadowingReader/types'
+export { ShadowingReader } from './components/Shadowing/ShadowingReader'
+export type { ShadowingReaderProps } from './components/Shadowing/ShadowingReader'
 
-export { ShadowingPhraseStack } from './molecules/ShadowingPhraseStack'
-export type { ShadowingPhraseStackProps } from './molecules/ShadowingPhraseStack/types'
+export { ShadowingPhraseStack } from './components/Shadowing/ShadowingPhraseStack'
+export type { ShadowingPhraseStackProps } from './components/Shadowing/ShadowingPhraseStack'
 
-export { ShadowingContextPhrase } from './molecules/ShadowingContextPhrase'
-export type { ShadowingContextPhraseProps } from './molecules/ShadowingContextPhrase/types'
+export { ShadowingContextPhrase } from './components/Shadowing/ShadowingContextPhrase'
+export type { ShadowingContextPhraseProps } from './components/Shadowing/ShadowingContextPhrase'
 
-export { ShadowingActivePhrase } from './molecules/ShadowingActivePhrase'
-export type { ShadowingActivePhraseProps } from './molecules/ShadowingActivePhrase/types'
+export { ShadowingActivePhrase } from './components/Shadowing/ShadowingActivePhrase'
+export type { ShadowingActivePhraseProps } from './components/Shadowing/ShadowingActivePhrase'
 
-export { ShadowingTranslation } from './molecules/ShadowingTranslation'
-export type { ShadowingTranslationProps } from './molecules/ShadowingTranslation/types'
+export { ShadowingTranslation } from './components/Shadowing/ShadowingTranslation'
+export type { ShadowingTranslationProps } from './components/Shadowing/ShadowingTranslation'
 
-export { ShadowingControlDock } from './molecules/ShadowingControlDock'
-export type { ShadowingControlDockProps } from './molecules/ShadowingControlDock/types'
+export { ShadowingControlDock } from './components/Shadowing/ShadowingControlDock'
+export type { ShadowingControlDockProps } from './components/Shadowing/ShadowingControlDock'
 
-export { ShadowingControlCluster } from './molecules/ShadowingControlCluster'
-export type { ShadowingControlClusterProps } from './molecules/ShadowingControlCluster/types'
+export { ShadowingControlCluster } from './components/Shadowing/ShadowingControlCluster'
+export type { ShadowingControlClusterProps } from './components/Shadowing/ShadowingControlCluster'
 
-export { KeyValueList } from './molecules/KeyValueList'
-export type { KeyValueListProps } from './molecules/KeyValueList/types'
+export { KeyValueList } from './components/Details/KeyValueList'
+export type { KeyValueListProps } from './components/Details/KeyValueList'
 
-export { GroupedBarChart } from './molecules/GroupedBarChart'
-export type { GroupedBarChartProps } from './molecules/GroupedBarChart/types'
+export { GroupedBarChart } from './components/Charts/GroupedBarChart'
+export type { GroupedBarChartProps } from './components/Charts/GroupedBarChart'
 
-export { WeeklyCountChart } from './molecules/WeeklyCountChart'
-export type { WeeklyCountChartProps } from './molecules/WeeklyCountChart/types'
+export { WeeklyCountChart } from './components/Charts/WeeklyCountChart'
+export type { WeeklyCountChartProps } from './components/Charts/WeeklyCountChart'
 
-export { Checkbox } from './atoms/Checkbox'
-export type { CheckboxProps } from './atoms/Checkbox/types'
+export { Checkbox } from './components/Checkbox/Checkbox'
+export type { CheckboxProps } from './components/Checkbox/Checkbox'
 
-export { RadioButton } from './atoms/RadioButton'
-export type { RadioButtonProps } from './atoms/RadioButton/types'
+export { RadioButton } from './components/RadioButton/RadioButton'
+export type { RadioButtonProps } from './components/RadioButton/RadioButton'
 
-export { ToggleButton } from './molecules/ToggleButton'
-export type { ToggleButtonProps } from './molecules/ToggleButton/types'
+export { ToggleButton } from './components/ToggleButton/ToggleButton'
+export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton'
 
-export { ChoiceCard } from './molecules/ChoiceCard'
-export type { ChoiceCardProps } from './molecules/ChoiceCard/types'
+export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
+export type { ChoiceCardProps } from './components/ChoiceCard/ChoiceCard'
 
-export { Skeleton } from './primitives/Skeleton'
-export type { SkeletonProps } from './primitives/Skeleton/types'
+export { Skeleton } from './components/Skeleton/Skeleton'
+export type { SkeletonProps } from './components/Skeleton/Skeleton'
 
-export { ShadowingRepetitions } from './molecules/ShadowingRepetitions'
-export type { ShadowingRepetitionsProps } from './molecules/ShadowingRepetitions/types'
+export { ShadowingRepetitions } from './components/Shadowing/ShadowingRepetitions'
+export type { ShadowingRepetitionsProps } from './components/Shadowing/ShadowingRepetitions'
 
-export { AuthChannelHint } from './molecules/AuthChannelHint'
-export type { AuthChannelHintProps } from './molecules/AuthChannelHint/types'
+export { AuthChannelHint } from './components/Auth/AuthChannelHint'
+export type { AuthChannelHintProps } from './components/Auth/AuthChannelHint'
 
-export { AuthChannelIcon } from './molecules/AuthChannelIcon'
-export type { AuthChannelIconProps } from './molecules/AuthChannelIcon/types'
+export { AuthChannelIcon } from './components/Auth/AuthChannelIcon'
+export type { AuthChannelIconProps } from './components/Auth/AuthChannelIcon'
 
-export { AuthTokenLabel } from './molecules/AuthTokenLabel'
-export type { AuthTokenLabelProps } from './molecules/AuthTokenLabel/types'
+export { AuthTokenLabel } from './components/Auth/AuthTokenLabel'
+export type { AuthTokenLabelProps } from './components/Auth/AuthTokenLabel'
 
-export { AuthLegalText } from './molecules/AuthLegalText'
-export type { AuthLegalTextProps } from './molecules/AuthLegalText/types'
+export { AuthLegalText } from './components/Auth/AuthLegalText'
+export type { AuthLegalTextProps } from './components/Auth/AuthLegalText'
 
-export { PageTitle } from './molecules/PageTitle'
-export type { PageTitleProps } from './molecules/PageTitle/types'
+export { PageTitle } from './components/SectionHeader/PageTitle'
+export type { PageTitleProps } from './components/SectionHeader/PageTitle'
 
-export { PageDescription } from './molecules/PageDescription'
-export type { PageDescriptionProps } from './molecules/PageDescription/types'
+export { PageDescription } from './components/SectionHeader/PageDescription'
+export type { PageDescriptionProps } from './components/SectionHeader/PageDescription'
 
-export { SessionProgress } from './molecules/SessionProgress'
-export type { SessionProgressProps } from './molecules/SessionProgress/types'
+export { SessionProgress } from './components/SessionProgress/SessionProgress'
+export type { SessionProgressProps } from './components/SessionProgress/SessionProgress'
 
-export { CalendarTimeSlot } from './molecules/CalendarTimeSlot'
-export type { CalendarTimeSlotProps } from './molecules/CalendarTimeSlot/types'
+export { CalendarTimeSlot } from './components/Calendar/CalendarParts'
+export type { CalendarTimeSlotProps } from './components/Calendar/CalendarParts'
 
-export { ScheduleRow } from './molecules/ScheduleRow'
-export type { ScheduleRowProps } from './molecules/ScheduleRow/types'
+export { ScheduleRow } from './components/Calendar/ScheduleRow'
+export type { ScheduleRowProps } from './components/Calendar/ScheduleRow'
 
-export { PracticeCard } from './molecules/PracticeCard'
-export type { PracticeCardProps } from './molecules/PracticeCard/types'
+export { PracticeCard } from './components/Practice/PracticeCard'
+export type { PracticeCardProps } from './components/Practice/PracticeCard'
 
-export { PracticeCardCover } from './molecules/PracticeCardCover'
-export type { PracticeCardCoverProps } from './molecules/PracticeCardCover/types'
+export { PracticeCardCover } from './components/Practice/PracticeCardCover'
+export type { PracticeCardCoverProps } from './components/Practice/PracticeCardCover'
 
-export { PracticeLevelBadge } from './molecules/PracticeLevelBadge'
-export type { PracticeLevelBadgeProps } from './molecules/PracticeLevelBadge/types'
+export { PracticeLevelBadge } from './components/Practice/PracticeLevelBadge'
+export type { PracticeLevelBadgeProps } from './components/Practice/PracticeLevelBadge'
 
-export { PracticeCoverValue } from './molecules/PracticeCoverValue'
-export type { PracticeCoverValueProps } from './molecules/PracticeCoverValue/types'
+export { PracticeCoverValue } from './components/Practice/PracticeCoverValue'
+export type { PracticeCoverValueProps } from './components/Practice/PracticeCoverValue'
 
-export { PracticeCoverLabel } from './molecules/PracticeCoverLabel'
-export type { PracticeCoverLabelProps } from './molecules/PracticeCoverLabel/types'
+export { PracticeCoverLabel } from './components/Practice/PracticeCoverLabel'
+export type { PracticeCoverLabelProps } from './components/Practice/PracticeCoverLabel'
 
-export { QuizQuestion } from './molecules/QuizQuestion'
-export type { QuizQuestionProps } from './molecules/QuizQuestion/types'
+export { QuizQuestion } from './components/Quiz/QuizQuestion'
+export type { QuizQuestionProps } from './components/Quiz/QuizQuestion'
 
-export { QuizBlank } from './atoms/QuizBlank'
-export type { QuizBlankProps } from './atoms/QuizBlank/types'
+export { QuizBlank } from './components/Quiz/QuizBlank'
+export type { QuizBlankProps } from './components/Quiz/QuizBlank'
 
-export { FlashcardProgressTrack } from './molecules/FlashcardProgressTrack'
-export type { FlashcardProgressTrackProps } from './molecules/FlashcardProgressTrack/types'
+export { FlashcardProgressTrack } from './components/Flashcard/FlashcardProgressTrack'
+export type { FlashcardProgressTrackProps } from './components/Flashcard/FlashcardProgressTrack'
 
-export { FlashcardCounter } from './molecules/FlashcardCounter'
-export type { FlashcardCounterProps } from './molecules/FlashcardCounter/types'
+export { FlashcardCounter } from './components/Flashcard/FlashcardCounter'
+export type { FlashcardCounterProps } from './components/Flashcard/FlashcardCounter'
 
-export { FlashcardProgressSegment } from './molecules/FlashcardProgressSegment'
-export type { FlashcardProgressSegmentProps } from './molecules/FlashcardProgressSegment/types'
+export { FlashcardProgressSegment } from './components/Flashcard/FlashcardProgressSegment'
+export type { FlashcardProgressSegmentProps } from './components/Flashcard/FlashcardProgressSegment'
 
-export { QuizPromptHeader } from './molecules/QuizPromptHeader'
-export type { QuizPromptHeaderProps } from './molecules/QuizPromptHeader/types'
+export { QuizPromptHeader } from './components/Quiz/QuizPromptHeader'
+export type { QuizPromptHeaderProps } from './components/Quiz/QuizPromptHeader'
 
-export { QuizMetadata } from './molecules/QuizMetadata'
-export type { QuizMetadataProps } from './molecules/QuizMetadata/types'
+export { QuizMetadata } from './components/Quiz/QuizMetadata'
+export type { QuizMetadataProps } from './components/Quiz/QuizMetadata'
 
-export { QuizBadge } from './molecules/QuizBadge'
-export type { QuizBadgeProps } from './molecules/QuizBadge/types'
+export { QuizBadge } from './components/Quiz/QuizBadge'
+export type { QuizBadgeProps } from './components/Quiz/QuizBadge'
 
-export { ConnectionNotice } from './molecules/ConnectionNotice'
-export type { ConnectionNoticeProps } from './molecules/ConnectionNotice/types'
+export { ConnectionNotice } from './components/Notice/ConnectionNotice'
+export type { ConnectionNoticeProps } from './components/Notice/ConnectionNotice'
 
-export { CardLink } from './molecules/CardLink'
-export type { CardLinkProps } from './molecules/CardLink/types'
+export { CardLink } from './components/Card/CardLink'
+export type { CardLinkProps } from './components/Card/CardLink'
 
-export { ShadowingWord } from './molecules/ShadowingWord'
-export type { ShadowingWordProps } from './molecules/ShadowingWord/types'
+export { ShadowingWord } from './components/Shadowing/ShadowingWord'
+export type { ShadowingWordProps } from './components/Shadowing/ShadowingWord'
 
-export { FlashcardFlipButton } from './molecules/FlashcardFlipButton'
-export type { FlashcardFlipButtonProps } from './molecules/FlashcardFlipButton/types'
+export { FlashcardFlipButton } from './components/Flashcard/FlashcardFlipButton'
+export type { FlashcardFlipButtonProps } from './components/Flashcard/FlashcardFlipButton'
 
-export { FlashcardAudioButton } from './molecules/FlashcardAudioButton'
-export type { FlashcardAudioButtonProps } from './molecules/FlashcardAudioButton/types'
+export { FlashcardAudioButton } from './components/Flashcard/FlashcardAudioButton'
+export type { FlashcardAudioButtonProps } from './components/Flashcard/FlashcardAudioButton'
 
-export { FlashcardWordSkeleton } from './molecules/FlashcardWordSkeleton'
-export type { FlashcardWordSkeletonProps } from './molecules/FlashcardWordSkeleton/types'
+export { FlashcardWordSkeleton } from './components/Flashcard/FlashcardWordSkeleton'
+export type { FlashcardWordSkeletonProps } from './components/Flashcard/FlashcardWordSkeleton'
 
-export { ShadowingPanel } from './molecules/ShadowingPanel'
-export type { ShadowingPanelProps } from './molecules/ShadowingPanel/types'
+export { ShadowingPanel } from './components/Shadowing/ShadowingPanel'
+export type { ShadowingPanelProps } from './components/Shadowing/ShadowingPanel'

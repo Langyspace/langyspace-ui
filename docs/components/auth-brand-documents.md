@@ -68,6 +68,8 @@ Cuidados: Usar dentro de texto existente; não criar outro heading só para o tr
 
 ## AuthBackButton
 
+Compatibilidade de Button: preserva margens e defaults das telas existentes. Novos usos preferem Button com composição contextual, sem variantes auth.
+
 Ação de voltar com tamanho/variante e ritmo vertical de autenticação já definidos.
 
 É um preset de compatibilidade. Para uma nova composição, usar
@@ -231,6 +233,8 @@ Contrato: children e atributos/ref de button; type padrão button.
 Cuidados: O produto decide quando habilitar e qual callback executar; não disparar envio como efeito de render.
 
 ## AuthSubmitButton
+
+Compatibilidade de Button: preserva margens e defaults das telas existentes. Novos usos preferem Button com composição contextual, sem variantes auth.
 
 Confirmação Auth com receita primary/lg/fullWidth e type submit padrão.
 

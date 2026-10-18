@@ -1,0 +1,17 @@
+import { cleanup, render, screen } from '@testing-library/react'
+import { afterEach, it, expect } from 'vitest'
+import { FlashcardImagePanel } from './FlashcardImagePanel'
+
+afterEach(cleanup)
+
+it('preserves native attributes and structured caller content without a private theme', () => {
+  render(
+    <FlashcardImagePanel data-testid="content">
+      <strong>Conteúdo fornecido</strong>
+    </FlashcardImagePanel>,
+  )
+
+  expect(
+    screen.getByTestId('content').querySelector('strong')?.textContent,
+  ).toBe('Conteúdo fornecido')
+})

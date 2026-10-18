@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import type { AccessibleChoiceOption, ChoiceOption } from '.'
+import type { AccessibleChoiceOption, ChoiceOption } from './index'
 
 describe('selection foundations', () => {
   it('requires an accessible label for custom visual labels', () => {

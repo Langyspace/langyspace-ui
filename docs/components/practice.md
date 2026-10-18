@@ -99,27 +99,15 @@ FlashcardWord/Back/Feedback possuem sua anatomia: os consumidores não escrevem 
 ## Resultado com JSX aberto
 
 ```tsx
-import {
-  Button,
-  PracticeResultActions,
-  PracticeResultDescription,
-  PracticeResultMark,
-  PracticeResultPanel,
-  PracticeResultTitle,
-} from '@langyspace/ui'
+import { Button, PracticeResultPanel } from '@langyspace/ui'
 
 export function CompletedPractice({ onExit }: { onExit: () => void }) {
   return (
-    <PracticeResultPanel>
-      <PracticeResultMark />
-      <PracticeResultTitle>Prática concluída</PracticeResultTitle>
-      <PracticeResultDescription>
-        Seu progresso foi registrado.
-      </PracticeResultDescription>
-      <PracticeResultActions>
-        <Button onClick={onExit}>Voltar</Button>
-      </PracticeResultActions>
-    </PracticeResultPanel>
+    <PracticeResultPanel
+      heading="Prática concluída"
+      description="Seu progresso foi registrado."
+      actions={<Button onClick={onExit}>Voltar</Button>}
+    />
   )
 }
 ```
@@ -408,9 +396,9 @@ Cuidados: Sempre decorativo; título/descrição expressam conclusão. Não dupl
 
 Layout da conclusão da sessão.
 
-Contrato: children e atributos/ref de div.
+Contrato: heading, description, actions, icon opcional, children para conteúdo intermediário e atributos/ref de div. O atributo HTML title continua sendo tooltip; não é convertido em heading.
 
-Cuidados: Compor Mark/Title/Description/métricas/Actions. Produto fornece resultado e navegação; sem dezenas de props para cada combinação de métricas.
+Cuidados: Produto fornece resultado e navegação. icon null omite a marca padrão. Children sozinho preserva a composição anterior sem injetar elementos. Os nomes Mark/Title/Description/Actions continuam disponíveis por compatibilidade, junto do owner.
 
 ## PracticeResultTitle
 

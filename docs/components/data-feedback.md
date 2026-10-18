@@ -5,16 +5,7 @@ Escolha pela responsabilidade: Card contém, CardLink navega; InlineNotice infor
 ## Composição de métricas
 
 ```tsx
-import {
-  Button,
-  MetricLabel,
-  MetricSummary,
-  MetricValue,
-  StatAction,
-  StatCard,
-  StatLabel,
-  StatValue,
-} from '@langyspace/ui'
+import { Button, MetricSummary, StatCard } from '@langyspace/ui'
 
 interface SummaryProps {
   correctAnswers: number
@@ -29,23 +20,18 @@ export function Summary({
 }: SummaryProps) {
   return (
     <>
-      <MetricSummary>
-        <MetricValue>{correctAnswers}</MetricValue>
-        <MetricLabel>Acertos</MetricLabel>
-      </MetricSummary>
-      <StatCard>
-        <StatAction>
-          <Button onClick={onRefresh}>Atualizar</Button>
-        </StatAction>
-        <StatValue>{revenueLabel}</StatValue>
-        <StatLabel>Receita</StatLabel>
-      </StatCard>
+      <MetricSummary value={correctAnswers} label="Acertos" />
+      <StatCard
+        value={revenueLabel}
+        label="Receita"
+        action={<Button onClick={onRefresh}>Atualizar</Button>}
+      />
     </>
   )
 }
 ```
 
-MetricSummary define o ritmo dos filhos públicos por marcadores internos; não é necessário escrever classes value/label. StatAction é opcional e aparece imediatamente antes de StatValue para reservar espaço. São contratos de composição explícitos, cobertos por testes de uso conjunto. A grade externa e os cálculos/formatos continuam no produto.
+MetricSummary e StatCard possuem sua própria anatomia; o consumidor fornece conteúdo e ações. Valor zero é conteúdo válido. A grade externa e os cálculos/formatos continuam no produto. Children e os nomes antigos Value/Label/Action permanecem compatíveis. Props de conteúdo selecionam a composição completa e têm precedência sobre children.
 
 ## Comando e ações de uma aula
 
@@ -165,11 +151,11 @@ Cuidados: Usar em MetricSummary, que determina tipografia/ritmo da família. Nã
 
 ## MetricSummary
 
-Unidade compacta de métrica com MetricValue e MetricLabel compostos como JSX.
+Unidade compacta de métrica com valor e legenda.
 
-Contrato: children e atributos/ref de div.
+Contrato: value, label e atributos/ref de div; children legado quando as props de conteúdo não são fornecidas.
 
-Cuidados: A família define estilo por marcadores internos dos componentes públicos; usar Value/Label, sem fabricar esses data attributes. A grade entre métricas permanece no produto.
+Cuidados: Fornecer valor calculado/formatado e legenda. A grade entre métricas permanece no produto; não fabricar marcadores internos.
 
 ## MetricValue
 
@@ -255,9 +241,9 @@ Cuidados: Compor antes de StatValue dentro de StatCard para reservar o espaço d
 
 Card de estatística operacional/financeira com faixa e tom neutral/brand.
 
-Contrato: tone e atributos/ref/children de div.
+Contrato: value, label, action opcional, tone e atributos/ref de div. Children legado permanece quando as props de conteúdo não são fornecidas.
 
-Cuidados: Compor Action opcional, Value e Label. Não unificar com MetricSummary por flags: as hierarquias/tipografias são diferentes e já aprovadas.
+Cuidados: O owner reserva espaço para action. StatValue/Label/Action ficam por compatibilidade para customizações anteriores, inclusive a tipografia small do Admin; não exigir mudança visual para adotar o pacote.
 
 ## StatLabel
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { mergeIdRefs, type AccessibleName } from '.'
+import { mergeIdRefs, type AccessibleName } from './index'
 
 describe('accessibility foundations', () => {
   it('combines, normalizes and deduplicates IDREF lists', () => {

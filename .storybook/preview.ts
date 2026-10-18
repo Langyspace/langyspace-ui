@@ -15,7 +15,15 @@ const preview: Preview = {
     layout: 'centered',
     options: {
       storySort: {
-        order: ['Foundations', 'Primitives', 'Atoms', 'Molecules'],
+        order: [
+          'Foundations',
+          'Button',
+          'Form',
+          'Auth',
+          'Calendar',
+          '*',
+          'Compatibility',
+        ],
       },
     },
   },

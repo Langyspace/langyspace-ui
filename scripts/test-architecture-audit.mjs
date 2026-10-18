@@ -192,6 +192,53 @@ export const composition = [LocalButton, Surface, Card]
   assert.deepEqual(positive.diagnostics, [])
   assert.deepEqual(positive.failures, [])
 
+  const reactRoot = join(root, 'react-components')
+  for (const directory of [
+    'components/Button',
+    'components/Other',
+    'foundations',
+    'internal',
+  ]) {
+    await mkdir(join(reactRoot, 'src', directory), { recursive: true })
+  }
+  await writeFile(
+    join(reactRoot, 'src/components/Button/Button.types.ts'),
+    "export type ButtonVariant = 'primary' | 'secondary'\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/components/Button/Private.ts'),
+    "import { Root } from '../Other/Other.styles'\nexport const privateRecipe = Root\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/foundations/Broken.ts'),
+    "import { Button } from '../components/Button/Button'\nexport const broken = Button\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/internal/Broken.ts'),
+    "import { Button } from '../components/Button/Button'\nexport const broken = Button\n",
+  )
+  const reactResult = await auditArchitecture({
+    root: reactRoot,
+    auditPrivateStyles: true,
+    layerDependencies: {
+      components: ['components', 'foundations', 'internal'],
+      foundations: ['foundations'],
+      internal: ['foundations', 'internal'],
+    },
+  })
+  assert(
+    reactResult.diagnostics.some(
+      (d) =>
+        d.ruleId === 'LSUI007' &&
+        d.path === 'src/components/Button/Button.types.ts',
+    ),
+  )
+  assert(reactResult.diagnostics.some((d) => d.ruleId === 'LSUI010'))
+  assert.equal(
+    reactResult.diagnostics.filter((d) => d.ruleId === 'LSUI011').length,
+    2,
+  )
+
   await assert.rejects(
     () =>
       auditArchitecture({

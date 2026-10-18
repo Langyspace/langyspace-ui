@@ -172,22 +172,22 @@ tabelas Antes/Depois das telas/estados afetados, com aceite humano de cada revis
 ## Fontes para retomar
 
 - [Exports](../../../src/index.ts).
-- [ScheduleCalendar/Month](../../../src/molecules/ScheduleCalendar/Month.tsx),
-  [Week](../../../src/molecules/ScheduleCalendar/Week.tsx) e
-  [estilos](../../../src/molecules/ScheduleCalendar/styles.ts).
-- [MetricSummary](../../../src/molecules/MetricSummary/styles.ts),
-  [MetricValue](../../../src/atoms/MetricValue/index.tsx) e
-  [MetricLabel](../../../src/atoms/MetricLabel/index.tsx).
-- [StatCard](../../../src/molecules/StatCard/index.tsx),
-  [StatValue](../../../src/atoms/StatValue/styles.ts) e
-  [StatAction](../../../src/molecules/StatAction/styles.ts).
-- [PracticeResultPanel](../../../src/molecules/PracticeResultPanel/index.tsx).
-- [AuthSubmitButton](../../../src/atoms/AuthSubmitButton/styles.ts),
-  [AuthBackButton](../../../src/atoms/AuthBackButton/styles.ts) e
-  [AuthFrame](../../../src/molecules/AuthFrame/index.tsx).
-- [StatePanel](../../../src/molecules/StatePanel/index.tsx),
-  [LoadingState](../../../src/molecules/LoadingState/index.tsx) e
-  [EmptyState](../../../src/molecules/EmptyState/index.tsx).
+- [ScheduleCalendar/Month](../../../src/components/Calendar/MonthView.tsx),
+  [Week](../../../src/components/Calendar/WeekView.tsx) e
+  [estilos](../../../src/components/Calendar/ScheduleCalendar.styles.ts).
+- [MetricSummary](../../../src/components/MetricSummary/MetricSummary.styles.ts),
+  [MetricValue](../../../src/components/MetricSummary/MetricSummary.compatibility.tsx) e
+  [MetricLabel](../../../src/components/MetricSummary/MetricSummary.compatibility.tsx).
+- [StatCard](../../../src/components/StatCard/StatCard.tsx),
+  [StatValue](../../../src/components/StatCard/StatCard.compatibility.tsx) e
+  [StatAction](../../../src/components/StatCard/StatCard.compatibility.tsx).
+- [PracticeResultPanel](../../../src/components/PracticeResultPanel/PracticeResultPanel.tsx).
+- [AuthSubmitButton](../../../src/components/Button/Button.compatibility.tsx),
+  [AuthBackButton](../../../src/components/Button/Button.compatibility.tsx) e
+  [AuthFrame](../../../src/components/Auth/AuthFrame.tsx).
+- [StatePanel](../../../src/components/StatePanel/StatePanel.tsx),
+  [LoadingState](../../../src/components/StatePanel/StatePanel.compatibility.tsx) e
+  [EmptyState](../../../src/components/StatePanel/StatePanel.compatibility.tsx).
 - Teacher: `src/components/layout/AuthShell/index.tsx`,
   `src/pages/StudentLearningPreview/styles.ts`,
   `src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx` e

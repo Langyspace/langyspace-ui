@@ -34,17 +34,20 @@ const stories = [
     'shadowingphrasestack',
     'shadowingtranslation',
     'shadowingcontroldock',
-  ].map((name) => `molecules-${name}--default`),
-  'molecules-flashcardframe--flipped',
-  'molecules-togglebutton--default',
-  'molecules-togglebutton--unselected',
-  'molecules-togglebutton--disabled',
-  'molecules-flashcardframe--limited-height',
-  'molecules-flashcardframe--long-content',
-  'molecules-flashcardframe--completed',
-  'molecules-shadowingpanel--default',
-  'molecules-shadowingpanel--long-content',
-  'molecules-shadowingpanel--completed',
+  ].map(
+    (name) =>
+      `${name.startsWith('shadowing') ? 'shadowing' : 'flashcard'}-${name}--default`,
+  ),
+  'flashcard-flashcardframe--flipped',
+  'togglebutton--default',
+  'togglebutton--unselected',
+  'togglebutton--disabled',
+  'flashcard-flashcardframe--limited-height',
+  'flashcard-flashcardframe--long-content',
+  'flashcard-flashcardframe--completed',
+  'shadowing-shadowingpanel--default',
+  'shadowing-shadowingpanel--long-content',
+  'shadowing-shadowingpanel--completed',
 ]
 try {
   for (const id of stories) {
