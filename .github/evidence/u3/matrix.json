@@ -2149,5 +2149,61 @@
         "bytes": 124239
       }
     }
+  ],
+  "contextStoryRepair": [
+    {
+      "number": 130,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 390,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b130.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a130.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    },
+    {
+      "number": 131,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 1281,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b131.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a131.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    },
+    {
+      "number": 132,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 2048,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b132.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a132.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    }
   ]
 }

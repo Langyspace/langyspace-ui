@@ -203,7 +203,7 @@ const fixture = {
     },
   ],
 }
-const query = () => new URLSearchParams(location.search)
+const query = () => new URLSearchParams(globalThis.location.search)
 async function state(name) {
   const value = query().get(name)
   if (value === 'loading') return await new Promise(() => {})
@@ -227,9 +227,13 @@ export const callGetTeacherStudentLearningPreviewIndex = async ({
   const result = data(studentId)
   return {
     ...result,
-    activities: result.activities.map(
-      ({ flashcards, quiz, shadowing, ...item }) => item,
-    ),
+    activities: result.activities.map((activity) => {
+      const item = { ...activity }
+      delete item.flashcards
+      delete item.quiz
+      delete item.shadowing
+      return item
+    }),
   }
 }
 export const callGetTeacherStudentLearningPreviewActivity = async ({
