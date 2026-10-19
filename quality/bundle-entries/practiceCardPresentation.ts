@@ -1,7 +1,1 @@
-export {
-  PracticeCard,
-  PracticeCardCover,
-  PracticeLevelBadge,
-  PracticeCoverValue,
-  PracticeCoverLabel,
-} from '../../src'
+export { PracticeCard, PracticeCardCover, PracticeLevelBadge } from '../../src'

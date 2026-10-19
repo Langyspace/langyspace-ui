@@ -5,16 +5,7 @@ Escolha pela responsabilidade: Card contém, CardLink navega; InlineNotice infor
 ## Composição de métricas
 
 ```tsx
-import {
-  Button,
-  MetricLabel,
-  MetricSummary,
-  MetricValue,
-  StatAction,
-  StatCard,
-  StatLabel,
-  StatValue,
-} from '@langyspace/ui'
+import { Button, MetricSummary, StatCard } from '@langyspace/ui'
 
 interface SummaryProps {
   correctAnswers: number
@@ -29,23 +20,18 @@ export function Summary({
 }: SummaryProps) {
   return (
     <>
-      <MetricSummary>
-        <MetricValue>{correctAnswers}</MetricValue>
-        <MetricLabel>Acertos</MetricLabel>
-      </MetricSummary>
-      <StatCard>
-        <StatAction>
-          <Button onClick={onRefresh}>Atualizar</Button>
-        </StatAction>
-        <StatValue>{revenueLabel}</StatValue>
-        <StatLabel>Receita</StatLabel>
-      </StatCard>
+      <MetricSummary value={correctAnswers} label="Acertos" />
+      <StatCard
+        value={revenueLabel}
+        label="Receita"
+        action={<Button onClick={onRefresh}>Atualizar</Button>}
+      />
     </>
   )
 }
 ```
 
-MetricSummary define o ritmo dos filhos públicos por marcadores internos; não é necessário escrever classes value/label. StatAction é opcional e aparece imediatamente antes de StatValue para reservar espaço. São contratos de composição explícitos, cobertos por testes de uso conjunto. A grade externa e os cálculos/formatos continuam no produto.
+MetricSummary e StatCard possuem sua própria anatomia; o consumidor fornece conteúdo e ações. Valor zero é conteúdo válido. A grade externa e os cálculos/formatos continuam no produto. Value e label são obrigatórios; action é um slot opcional no StatCard. A UI possui a anatomia e não aceita outra montagem de valor/rótulo via children.
 
 ## Comando e ações de uma aula
 
@@ -115,14 +101,6 @@ Contrato: label, value, icon, action e atributos/ref de div.
 
 Cuidados: Ícone é decorativo; botões/links em action têm seus próprios nomes e callbacks. O container não deve se tornar outro comando envolvendo a ação.
 
-## EmptyState
-
-Estado vazio como preset semântico de StatePanel.
-
-Contrato: Props de StatePanel exceto state.
-
-Cuidados: Conteúdo/ação vêm do produto. Não duplicar a receita de StatePanel nem confundir vazio com carregamento.
-
 ## GroupedBarChart
 
 Grupos de barras por item, com descrição acessível e navegação Home/End na região rolável.
@@ -147,37 +125,13 @@ Contrato: items com id, label/value ReactNode e atributos/ref de div.
 
 Cuidados: Os estilos pertencem aos wrappers de label/value; conteúdo rico mantém sua própria apresentação. Não importar sorting/permissões de uma tabela operacional para essa lista.
 
-## LoadingState
-
-Estado de espera com Spinner decorativo e semântica de status/busy fornecida por StatePanel.
-
-Contrato: Props de StatePanel exceto icon/state.
-
-Cuidados: Não anunciar o Spinner separadamente nem fornecer porcentagem fictícia; o produto determina quando a espera termina.
-
-## MetricLabel
-
-Identificação de uma métrica compacta de prática.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Usar em MetricSummary, que determina tipografia/ritmo da família. Não depende de uma classe value/label escrita manualmente pelo produto.
-
 ## MetricSummary
 
-Unidade compacta de métrica com MetricValue e MetricLabel compostos como JSX.
+Unidade compacta de métrica com valor e legenda.
 
-Contrato: children e atributos/ref de div.
+Contrato: value e label obrigatórios; atributos/ref de div.
 
-Cuidados: A família define estilo por marcadores internos dos componentes públicos; usar Value/Label, sem fabricar esses data attributes. A grade entre métricas permanece no produto.
-
-## MetricValue
-
-Conteúdo principal de uma métrica compacta de prática.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Valor já calculado/formatado é fornecido pelo produto; o estilo de contexto vem de MetricSummary. Não mover cálculo de score ou progresso para a UI.
+Cuidados: Fornecer valor calculado/formatado e legenda. A grade entre métricas permanece no produto; não fabricar marcadores internos.
 
 ## NoticeBanner
 
@@ -243,37 +197,13 @@ Contrato: size inherit/sm/md/lg e attrs/ref de span sem papel/nome/children aces
 
 Cuidados: O label e o estado busy pertencem ao comando ou ao status externo. Não criar múltiplos anúncios da mesma espera.
 
-## StatAction
-
-Posição da ação opcional no card estatístico.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Compor antes de StatValue dentro de StatCard para reservar o espaço do valor; o container não executa a ação por si.
-
 ## StatCard
 
 Card de estatística operacional/financeira com faixa e tom neutral/brand.
 
-Contrato: tone e atributos/ref/children de div.
+Contrato: value, label, action opcional, tone e atributos/ref de div. Children legado permanece quando as props de conteúdo não são fornecidas.
 
-Cuidados: Compor Action opcional, Value e Label. Não unificar com MetricSummary por flags: as hierarquias/tipografias são diferentes e já aprovadas.
-
-## StatLabel
-
-Identificação em caixa alta da estatística operacional.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: A cor acompanha o tom do StatCard ancestral. Não usar como rótulo genérico fora dessa composição.
-
-## StatValue
-
-Valor principal da estatística operacional, com hierarquia tipográfica maior.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: O produto formata números/currency. Se houver StatAction, colocá-lo imediatamente antes de Value para preservar a reserva de espaço prevista na anatomia.
+Cuidados: O owner reserva espaço para action. StatValue/Label/Action ficam por compatibilidade para customizações anteriores, inclusive a tipografia small do Admin; não exigir mudança visual para adotar o pacote.
 
 ## StatePanel
 

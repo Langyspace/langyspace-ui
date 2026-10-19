@@ -14,10 +14,6 @@ import {
   FlashcardWord,
   PracticePlaybackControls,
   PracticeResultPanel,
-  PracticeResultMark,
-  PracticeResultTitle,
-  PracticeResultDescription,
-  PracticeResultActions,
   ShadowingActivePhrase,
   ShadowingControlDock,
   ShadowingPanel,
@@ -178,17 +174,16 @@ export function BoundedCompletionExample() {
       <header>
         <Button>Voltar</Button>
       </header>
-      <PracticeResultPanel>
-        <PracticeResultMark />
-        <PracticeResultTitle>Sessão concluída!</PracticeResultTitle>
-        <PracticeResultDescription>
-          Você revisou todos os cartões desta sessão.
-        </PracticeResultDescription>
-        <PracticeResultActions>
-          <Button>Refazer sessão</Button>
-          <Button variant="secondary">Voltar para lições</Button>
-        </PracticeResultActions>
-      </PracticeResultPanel>
+      <PracticeResultPanel
+        heading="Sessão concluída!"
+        description="Você revisou todos os cartões desta sessão."
+        actions={
+          <>
+            <Button>Refazer sessão</Button>
+            <Button variant="secondary">Voltar para lições</Button>
+          </>
+        }
+      />
     </FlashcardFrame>
   )
 }
@@ -199,17 +194,16 @@ export function ShadowingCompletionExample() {
       <header>
         <Button>Voltar</Button>
       </header>
-      <PracticeResultPanel>
-        <PracticeResultMark />
-        <PracticeResultTitle>Sessão concluída!</PracticeResultTitle>
-        <PracticeResultDescription>
-          Você revisou todos os cartões desta sessão.
-        </PracticeResultDescription>
-        <PracticeResultActions>
-          <Button>Refazer sessão</Button>
-          <Button variant="secondary">Voltar para lições</Button>
-        </PracticeResultActions>
-      </PracticeResultPanel>
+      <PracticeResultPanel
+        heading="Sessão concluída!"
+        description="Você revisou todos os cartões desta sessão."
+        actions={
+          <>
+            <Button>Refazer sessão</Button>
+            <Button variant="secondary">Voltar para lições</Button>
+          </>
+        }
+      />
     </ShadowingPanel>
   )
 }

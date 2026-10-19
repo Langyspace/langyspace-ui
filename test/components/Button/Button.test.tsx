@@ -1,0 +1,336 @@
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { createRef } from 'react'
+import { describe, expect, it, vi } from 'vitest'
+import styled from 'styled-components'
+import { Button } from '../../../src/index'
+import * as ButtonStyles from '../../../src/components/Button/Button.styles'
+
+describe('Button', () => {
+  it('defaults to a native non-submitting primary command and forwards its ref', async () => {
+    const onClick = vi.fn()
+    const ref = createRef<HTMLButtonElement>()
+    const user = userEvent.setup()
+
+    render(
+      <Button
+        ref={ref}
+        className="consumer-button"
+        data-context="checkout"
+        onClick={onClick}
+      >
+        Continuar
+      </Button>,
+    )
+
+    const button = screen.getByRole('button', { name: 'Continuar' })
+
+    await user.click(button)
+
+    expect(button).toHaveAttribute('type', 'button')
+    expect(button).toHaveAttribute('data-context', 'checkout')
+    expect(button).toHaveAttribute('data-density', 'regular')
+    expect(button).toHaveClass('lsui-sc-button', 'consumer-button')
+    expect(button).toHaveStyle({ backgroundColor: '#0a0a0a' })
+    expect(ref.current).toBe(button)
+    expect(onClick).toHaveBeenCalledTimes(1)
+  })
+
+  it('offers a compact density without changing the canonical height', () => {
+    render(
+      <Button density="compact" size="md" variant="secondary">
+        Remarcar aula
+      </Button>,
+    )
+
+    expect(
+      screen.getByRole('button', { name: 'Remarcar aula' }),
+    ).toHaveAttribute('data-density', 'compact')
+  })
+
+  it('renders each approved variant and size with its own appearance', () => {
+    render(
+      <>
+        <Button size="sm" variant="primary">
+          Principal
+        </Button>
+        <Button size="md" variant="secondary">
+          Secundário
+        </Button>
+        <Button size="lg" variant="tertiary">
+          Terciário
+        </Button>
+        <Button variant="danger">Destrutivo</Button>
+        <Button variant="success">Conclusão positiva</Button>
+        <Button variant="brand">Institucional</Button>
+        <Button variant="inverse">Superfície escura</Button>
+      </>,
+    )
+
+    expect(screen.getByRole('button', { name: 'Principal' })).toHaveStyle({
+      backgroundColor: '#0a0a0a',
+      minHeight: '2rem',
+    })
+    expect(screen.getByRole('button', { name: 'Secundário' })).toHaveStyle({
+      backgroundColor: '#ffffff',
+      minHeight: '2.5rem',
+    })
+    expect(screen.getByRole('button', { name: 'Terciário' })).toHaveStyle({
+      backgroundColor: 'rgba(0, 0, 0, 0)',
+      minHeight: '3rem',
+    })
+    expect(screen.getByRole('button', { name: 'Destrutivo' })).toHaveStyle({
+      backgroundColor: '#c62828',
+    })
+    expect(
+      screen.getByRole('button', { name: 'Conclusão positiva' }),
+    ).toHaveStyle({ backgroundColor: '#166534' })
+    expect(screen.getByRole('button', { name: 'Institucional' })).toHaveStyle({
+      backgroundColor: '#cc0f45',
+    })
+    expect(
+      screen.getByRole('button', { name: 'Superfície escura' }),
+    ).toHaveStyle({
+      backgroundColor: 'rgba(0, 0, 0, 0)',
+      color: '#ffffff',
+    })
+  })
+
+  it.each([
+    ['text', 'rgb(10, 10, 10)', '600', 'underline'],
+    ['text-subtle', 'rgb(107, 107, 107)', '500', 'none'],
+    ['text-danger', 'rgb(198, 40, 40)', '600', 'underline'],
+  ] as const)(
+    'offers %s as a native inline action without boxed-button spacing',
+    (variant, color, fontWeight, textDecoration) => {
+      render(<Button variant={variant}>Editar detalhes</Button>)
+
+      const styles = getComputedStyle(
+        screen.getByRole('button', { name: 'Editar detalhes' }),
+      )
+
+      expect({
+        color: styles.color,
+        fontWeight: styles.fontWeight,
+        textDecoration: styles.textDecoration,
+        padding: styles.padding,
+        borderWidth: styles.borderWidth,
+        borderRadius: styles.borderRadius,
+        backgroundColor: styles.backgroundColor,
+      }).toEqual({
+        color,
+        fontWeight,
+        textDecoration,
+        padding: '0px',
+        borderWidth: '0px',
+        borderRadius: '4px',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+      })
+    },
+  )
+
+  it('preserves direct inline icons, keyboard activation, ref and loading for text actions', async () => {
+    const onClick = vi.fn()
+    const ref = createRef<HTMLButtonElement>()
+    const user = userEvent.setup()
+    const { rerender } = render(
+      <Button
+        iconStart={<svg data-testid="inline-icon" />}
+        onClick={onClick}
+        ref={ref}
+        variant="text"
+      >
+        Editar detalhes
+      </Button>,
+    )
+    const button = screen.getByRole('button', { name: 'Editar detalhes' })
+
+    expect(button.firstElementChild).toBe(screen.getByTestId('inline-icon'))
+    expect(ref.current).toBe(button)
+
+    await user.tab()
+    await user.keyboard('{Enter} ')
+
+    expect(onClick).toHaveBeenCalledTimes(2)
+
+    rerender(
+      <Button isLoading onClick={onClick} variant="text">
+        Editar detalhes
+      </Button>,
+    )
+    await user.click(button)
+
+    expect(button).toBeDisabled()
+    expect(button).toHaveAttribute('aria-busy', 'true')
+    expect(button).toHaveTextContent('Editar detalhes')
+    expect(button.querySelector('.lsui-sc-spinner')).toBeInTheDocument()
+    expect(onClick).toHaveBeenCalledTimes(2)
+  })
+
+  it('accepts one icon on each edge and renders neither by default', () => {
+    const { rerender } = render(<Button>Guardar</Button>)
+
+    expect(
+      screen.getByRole('button', { name: 'Guardar' }).querySelector('span'),
+    ).toBeNull()
+
+    rerender(
+      <Button
+        iconEnd={<svg data-testid="end" />}
+        iconStart={<svg data-testid="start" />}
+      >
+        Guardar
+      </Button>,
+    )
+
+    const button = screen.getByRole('button', { name: 'Guardar' })
+
+    expect(button.firstElementChild).toContainElement(
+      screen.getByTestId('start'),
+    )
+    expect(button.lastElementChild).toContainElement(screen.getByTestId('end'))
+  })
+
+  it('keeps its label and start icon while loading blocks interaction', async () => {
+    const onClick = vi.fn()
+    const user = userEvent.setup()
+
+    render(
+      <Button
+        iconStart={<span data-testid="consumer-icon" />}
+        isLoading
+        onClick={onClick}
+      >
+        Salvar alterações
+      </Button>,
+    )
+
+    const button = screen.getByRole('button', { name: 'Salvar alterações' })
+
+    await user.click(button)
+
+    expect(button).toBeDisabled()
+    expect(button).toHaveAttribute('aria-busy', 'true')
+    expect(button).toHaveAttribute('data-loading', 'true')
+    expect(button).toHaveTextContent('Salvar alterações')
+    expect(button.querySelector('.lsui-sc-spinner')).toHaveAttribute(
+      'aria-hidden',
+      'true',
+    )
+    expect(screen.getByTestId('consumer-icon')).toBeInTheDocument()
+    expect(button.lastElementChild).toContainElement(
+      button.querySelector('.lsui-sc-spinner'),
+    )
+    expect(onClick).not.toHaveBeenCalled()
+  })
+
+  it('always replaces or creates the ending slot with one spinner', () => {
+    const { rerender } = render(
+      <Button iconEnd={<svg data-testid="end" />} isLoading>
+        <span data-testid="label">Salvar</span>
+      </Button>,
+    )
+
+    let button = screen.getByRole('button', { name: 'Salvar' })
+    const spinner = () => button.querySelector<HTMLElement>('.lsui-sc-spinner')
+
+    expect(button.firstElementChild).toBe(screen.getByTestId('label'))
+    expect(button.lastElementChild).toContainElement(spinner())
+    expect(screen.queryByTestId('end')).not.toBeInTheDocument()
+
+    rerender(
+      <Button
+        iconEnd={<svg data-testid="end" />}
+        iconStart={<svg data-testid="start" />}
+        isLoading
+      >
+        <span data-testid="label">Salvar</span>
+      </Button>,
+    )
+
+    button = screen.getByRole('button', { name: 'Salvar' })
+
+    expect(button.querySelectorAll('.lsui-sc-spinner')).toHaveLength(1)
+    expect(button.firstElementChild).toContainElement(
+      screen.getByTestId('start'),
+    )
+    expect(button.lastElementChild).toContainElement(spinner())
+    expect(screen.queryByTestId('end')).not.toBeInTheDocument()
+  })
+
+  it('lets loading override the busy and disabled values the consumer sent', () => {
+    const { rerender } = render(
+      <Button aria-busy="false" disabled={false} type="submit">
+        Enviar
+      </Button>,
+    )
+
+    let button = screen.getByRole('button', { name: 'Enviar' })
+
+    expect(button).toHaveAttribute('type', 'submit')
+    expect(button).toHaveAttribute('aria-busy', 'false')
+    expect(button).not.toBeDisabled()
+
+    rerender(
+      <Button aria-busy="false" disabled={false} isLoading type="submit">
+        Enviar
+      </Button>,
+    )
+
+    button = screen.getByRole('button', { name: 'Enviar' })
+
+    expect(button).toHaveAttribute('aria-busy', 'true')
+    expect(button).toBeDisabled()
+  })
+
+  it('fills its container only when fullWidth is explicit', () => {
+    const { rerender } = render(<Button>Continuar</Button>)
+
+    expect(screen.getByRole('button', { name: 'Continuar' })).not.toHaveStyle({
+      width: '100%',
+    })
+
+    rerender(<Button fullWidth>Continuar</Button>)
+
+    const fullWidthButton = screen.getByRole('button', { name: 'Continuar' })
+
+    expect(fullWidthButton).toHaveStyle({ width: '100%' })
+  })
+
+  it('keeps the canonical pill shape for boxed actions', () => {
+    render(<Button>Continuar</Button>)
+
+    expect(screen.getByRole('button', { name: 'Continuar' })).toHaveStyle({
+      borderRadius: '999px',
+    })
+  })
+
+  it('keeps explicit component ids so server and browser renders agree', () => {
+    render(<Button size="lg">Publicar</Button>)
+
+    expect(screen.getByRole('button', { name: 'Publicar' })).toHaveClass(
+      'lsui-sc-button',
+    )
+
+    const publishedIds = Object.values(ButtonStyles).map(
+      (component) => component.styledComponentId,
+    )
+
+    expect(publishedIds.length).toBeGreaterThan(0)
+
+    publishedIds.forEach((id) => expect(id).toMatch(/^lsui-sc-/))
+  })
+
+  it('supports local styled(Button) composition through forwarded className', () => {
+    const CheckoutButton = styled(Button)`
+      width: 12rem;
+      margin-top: 1rem;
+    `
+
+    render(<CheckoutButton>Finalizar compra</CheckoutButton>)
+
+    expect(
+      screen.getByRole('button', { name: 'Finalizar compra' }),
+    ).toHaveStyle({ marginTop: '1rem', width: '12rem' })
+  })
+})

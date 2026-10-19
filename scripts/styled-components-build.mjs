@@ -5,7 +5,7 @@ import babel from '@rolldown/plugin-babel'
 export function styledComponentsBuild() {
   return [
     babel({
-      include: /[/\\]src[/\\].*\.[jt]sx?$/,
+      include: /[/\\](?:src|stories)[/\\].*\.[jt]sx?$/,
       plugins: [
         [
           'babel-plugin-styled-components',

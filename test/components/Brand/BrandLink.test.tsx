@@ -1,0 +1,15 @@
+import { render, screen } from '@testing-library/react'
+import { it, expect } from 'vitest'
+import { BrandLink } from '../../../src/components/Brand/BrandLink'
+
+it('preserves native attributes and structured caller content without a private theme', () => {
+  render(
+    <BrandLink data-testid="content">
+      <strong>Conteúdo fornecido</strong>
+    </BrandLink>,
+  )
+
+  expect(
+    screen.getByTestId('content').querySelector('strong')?.textContent,
+  ).toBe('Conteúdo fornecido')
+})

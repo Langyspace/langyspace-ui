@@ -1,3 +1,1 @@
-export { NotificationItem, ConversationRow } from '../../src'
-
-export { ConnectionNotice } from '../../src'
+export { NotificationItem, ConversationRow, ConnectionNotice } from '../../src'

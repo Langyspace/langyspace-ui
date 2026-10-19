@@ -1,7 +1,1 @@
-export {
-  PracticeResultPanel,
-  PracticeResultMark,
-  PracticeResultTitle,
-  PracticeResultDescription,
-  PracticeResultActions,
-} from '../../src'
+export { PracticeResultPanel } from '../../src'

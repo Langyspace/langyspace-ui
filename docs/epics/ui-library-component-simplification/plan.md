@@ -29,6 +29,13 @@ complexidade: [Thinking in React](https://react.dev/learn/thinking-in-react) e
 
 ## Revisão das famílias
 
+A [revisão de granularidade de 2026-10-18](granularity-review.md) complementa esta
+triagem com os usos dos cinco produtos e 20 nomes candidatos à consolidação de
+ownership/estrutura. Ela prioriza as peças internas do calendário, métricas e
+resultado antes de autenticação, cujo espaçamento contextual exige mais cuidado.
+Os nomes publicados permanecem compatíveis até a adoção e uma retirada deliberada
+em versão major; menos pastas não será apresentado como menos exports públicos.
+
 | Família                                                     | Decisão                                                                                                                                                                      | Ordem e risco                                                                     |
 | ----------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | Button / TextButton                                         | Um Button com variantes de ação e texto; TextButton fica como adaptação compatível, sem CSS próprio.                                                                         | Primeiro lote; aparência/DOM/foco e estilos do consumidor precisam de comparação. |

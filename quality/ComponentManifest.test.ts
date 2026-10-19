@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs'
 import { access } from 'node:fs/promises'
 import { resolve } from 'node:path'
+import ts from 'typescript'
 import { describe, expect, it } from 'vitest'
 import {
   publicComponentContracts,
@@ -9,7 +10,42 @@ import {
 
 const root = resolve(import.meta.dirname, '..')
 
+// Multiple contracts may point to the same real test or story file. File names
+// do not prove coverage: the recorded export must be imported at runtime.
+function runtimeImports(source: string) {
+  const file = ts.createSourceFile(
+    'coverage.tsx',
+    source,
+    ts.ScriptTarget.Latest,
+    true,
+  )
+  return file.statements.flatMap((statement) => {
+    if (
+      !ts.isImportDeclaration(statement) ||
+      statement.importClause?.isTypeOnly
+    )
+      return []
+    const bindings = statement.importClause?.namedBindings
+    if (!bindings || !ts.isNamedImports(bindings)) return []
+    return bindings.elements
+      .filter((entry) => !entry.isTypeOnly)
+      .map((entry) => (entry.propertyName ?? entry.name).text)
+  })
+}
+
 describe('public component manifest', () => {
+  it('distinguishes runtime coverage imports from type-only imports and aliases', () => {
+    expect(
+      runtimeImports(
+        "import { Button, IconButton as Icon, type ButtonProps } from '../src'",
+      ),
+    ).toEqual(['Button', 'IconButton'])
+    expect(runtimeImports("import type { Button } from '../src'")).toEqual([])
+    expect(runtimeImports("import { Avatar } from '../src'")).not.toContain(
+      'Button',
+    )
+  })
+
   it('matches every public component value export', () => {
     const entrypoint = readFileSync(resolve(root, 'src/index.ts'), 'utf8')
     const componentExports = Array.from(
@@ -24,30 +60,14 @@ describe('public component manifest', () => {
     expect(new Set(manifestExports).size).toBe(manifestExports.length)
   })
 
-  it('points every component or compatibility export at its implementation owner', async () => {
+  it('points every public component at its implementation owner', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      const owner = contract.compatibilityFor ?? contract.exportName
-      const folder = `src/${contract.layer}s/${owner}`
-
-      expect(contract.ownerPath).toBe(
-        `${folder}/${contract.compatibilityFor ? 'compatibility.tsx' : 'index.tsx'}`,
+      expect(contract.ownerPath).toMatch(
+        /^src\/components\/(?:[^/]+\/)*[^/]+\.tsx$/,
       )
+      expect(contract.ownerPath).not.toMatch(/\/index\.tsx$/)
 
-      if (contract.compatibilityFor) {
-        const canonical: ComponentContract | undefined =
-          publicComponentContracts.find(
-            (candidate) => candidate.exportName === owner,
-          )
-
-        expect(canonical).toBeDefined()
-        expect(canonical?.compatibilityFor).toBeUndefined()
-        expect(canonical?.layer).toBe(contract.layer)
-        expect(canonical?.exportName).not.toBe(contract.exportName)
-        expect(
-          readFileSync(resolve(root, contract.ownerPath), 'utf8'),
-        ).toContain(`export function ${contract.exportName}`)
-      }
       await expect(
         access(resolve(root, contract.ownerPath)),
       ).resolves.toBeUndefined()
@@ -58,13 +78,21 @@ describe('public component manifest', () => {
   it('keeps every public component completely covered', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      const owner = contract.compatibilityFor ?? contract.exportName
-      expect(contract.test.path).toBe(
-        `src/${contract.layer}s/${owner}/${contract.exportName}.test.tsx`,
+      expect(contract.test.path).toMatch(/^test\/.+\.test\.tsx$/)
+      expect(contract.story.path).toMatch(/^stories\/.+\.stories\.tsx$/)
+
+      const testSource = readFileSync(resolve(root, contract.test.path), 'utf8')
+      const storySource = readFileSync(
+        resolve(root, contract.story.path),
+        'utf8',
       )
-      expect(contract.story.path).toBe(
-        `src/${contract.layer}s/${owner}/${contract.exportName}.stories.tsx`,
+      expect(runtimeImports(testSource), contract.test.path).toContain(
+        contract.exportName,
       )
+      expect(runtimeImports(storySource), contract.story.path).toContain(
+        contract.exportName,
+      )
+      expect(storySource).toContain(`title: '${contract.story.title}'`)
 
       for (const coverage of [
         contract.test,

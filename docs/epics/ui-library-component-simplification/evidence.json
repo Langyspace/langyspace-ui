@@ -1,0 +1,3695 @@
+{
+  "date": "2026-10-19",
+  "sourceHead": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+  "sourceFingerprint": {
+    "algorithm": "SHA-256 over sorted relative path and file digest",
+    "sha256": "74bb39599533dde9316d8f1a2cae515365b62af9e32f841721925cc8e67598dd",
+    "files": [
+      {
+        "path": "src/assets/brand/horizontal-inverse.svg",
+        "sha256": "6f2b045ad2e383dd9d71a828b7004c3bbdbcf5c676979fab4c732a329f5c51e1"
+      },
+      {
+        "path": "src/assets/brand/horizontal.svg",
+        "sha256": "734c7199e4f8eb42ea5fba8b20fed58c22fabbbbd4682900d31ff856094d0e63"
+      },
+      {
+        "path": "src/assets/brand/stacked-inverse.svg",
+        "sha256": "9b21a00729a6f83e3a4eef40920c20993e92882e1eaa02c5637fb6b3b42ce4b0"
+      },
+      {
+        "path": "src/assets/brand/stacked.svg",
+        "sha256": "f270f5ee9d7c46eab9842fd279d51649ee83fe210ac29ec1f64e0b84d3b5121e"
+      },
+      {
+        "path": "src/assets/brand/star.svg",
+        "sha256": "6f2bc50030f8fbd8ffde6ec8489792ce64621b58726c1b11cf94d2523f7783cb"
+      },
+      {
+        "path": "src/assets.d.ts",
+        "sha256": "697098230ab00d585d703e454c7118bbf1ec74ced29cf9ae940787c93e35abd8"
+      },
+      {
+        "path": "src/components/ActionLink/ActionLink.styles.ts",
+        "sha256": "71459ba28bbf75b1b0f2113609518a9e3c34922b8f3f1a55b252961535c47069"
+      },
+      {
+        "path": "src/components/ActionLink/ActionLink.tsx",
+        "sha256": "ca98b0506c5dce59ad15d7cb2f36cce785ff9467b16dcd0a261ec3a509a4b686"
+      },
+      {
+        "path": "src/components/ActionLink/ActionLink.types.ts",
+        "sha256": "e7de000946810661198e8f274620014555a927df536368b1378a8541795dbd6d"
+      },
+      {
+        "path": "src/components/ActionMenu/ActionMenu.styles.ts",
+        "sha256": "a0549126a79296ba7dd42de19ee6aff68c71fa48eae18c44b6c46d74881ab889"
+      },
+      {
+        "path": "src/components/ActionMenu/ActionMenu.tsx",
+        "sha256": "02e776801880af7556199344ceef58c5bbe3501af9f92d1a0af51b8f6170a6de"
+      },
+      {
+        "path": "src/components/ActionMenu/ActionMenu.types.ts",
+        "sha256": "3123c8891664d2409bda5ac5079e089472f3dd73c8aaf7ade262a921f7a0b940"
+      },
+      {
+        "path": "src/components/ActionMenu/position.ts",
+        "sha256": "c0e76aa7310fb0c0e2cff551456e3b946c41b61632df041cf2f68658d0a3a2d4"
+      },
+      {
+        "path": "src/components/ActionMenu/useActionMenu.ts",
+        "sha256": "e21b5dc9ebeb69d97b1a3ac1f809dab4226819ff2c462d70b8f65e59d4416943"
+      },
+      {
+        "path": "src/components/Auth/AuthActions.tsx",
+        "sha256": "c9f11b9da201ffa1578d44dde23165748af3fb5e5c864bff92eea141e0568152"
+      },
+      {
+        "path": "src/components/Auth/AuthBrandContent.styles.ts",
+        "sha256": "bbb9a30295faec80be4f5037e4009ca94c03b35f5e9b2465959749d34d7473ba"
+      },
+      {
+        "path": "src/components/Auth/AuthBrandContent.tsx",
+        "sha256": "744df99bb32f769c210e21b8f0b2bae6539d18a1c83c782b9a92967daf240901"
+      },
+      {
+        "path": "src/components/Auth/AuthChannelHint.tsx",
+        "sha256": "e0ec9a18f8aba2308645e0a2053c1657ecbc9a752d9fb10ee21ef6cc908788bd"
+      },
+      {
+        "path": "src/components/Auth/AuthChannelIcon.tsx",
+        "sha256": "11df8120bbe83aee7ca5457bb7cccaf5b8d189ecb20a6f7d8657ed20ea7bb225"
+      },
+      {
+        "path": "src/components/Auth/AuthEyebrow.tsx",
+        "sha256": "c082332aa76c21a2e8f96b85b2e55aa6e7a54ac9bebdec71639c6301fe9b4d80"
+      },
+      {
+        "path": "src/components/Auth/AuthFooter.styles.ts",
+        "sha256": "cae4ee462c3f765ce4347eae0e661f76ebfdf4efba0189775f9842532c174130"
+      },
+      {
+        "path": "src/components/Auth/AuthFooter.tsx",
+        "sha256": "814d7e9202ff24f2cad4cd0311c6aff2a6d56db1609bcd37992cda847c1b4ce3"
+      },
+      {
+        "path": "src/components/Auth/AuthForm.tsx",
+        "sha256": "4af9f37ae03286e21254f800b2498e0127b4bb0ddfc8362cc0518337767e9b40"
+      },
+      {
+        "path": "src/components/Auth/AuthFrame.styles.ts",
+        "sha256": "fb131f7c0f8422922e4c4797ea32689373a9b05217e7d7e99dcb2b8f461c1326"
+      },
+      {
+        "path": "src/components/Auth/AuthFrame.tsx",
+        "sha256": "04ecd9e9dcc80d8b3c503270bf00795873b34209aeead151a56b2e024dc01bf3"
+      },
+      {
+        "path": "src/components/Auth/AuthHeader.styles.ts",
+        "sha256": "99262923d23b9f206d2fb84365232dbf21adf4da04738025115918f50b04df51"
+      },
+      {
+        "path": "src/components/Auth/AuthHeader.tsx",
+        "sha256": "60b51b2cf63cdc14c0d4f6ae3199ee3b70586490e4804b60e9bdc85cbefa8e1d"
+      },
+      {
+        "path": "src/components/Auth/AuthLegalText.tsx",
+        "sha256": "51607f7edc501fa0f9b46bff4cd1ead41c96d60a6064961e20a53a38e32a37eb"
+      },
+      {
+        "path": "src/components/Auth/AuthNotice.styles.ts",
+        "sha256": "5dc5558aae0e538be125746b0b9f99944ce4be6be472ba8155ff25c939db28a6"
+      },
+      {
+        "path": "src/components/Auth/AuthNotice.tsx",
+        "sha256": "f41e89cc3fc3f1f9891fbca5552b2c7582e17597aacae28277b5a09756a2f7f4"
+      },
+      {
+        "path": "src/components/Auth/AuthProgress.tsx",
+        "sha256": "6642f9c218e74c8ce8b3eb73d13742056190ba87be3ea2f8f458df089aaf8758"
+      },
+      {
+        "path": "src/components/Auth/AuthResendAction.styles.ts",
+        "sha256": "45b073178a25be4eaff4156e7b8628ef63978af48142feddbfdf54aa67198f13"
+      },
+      {
+        "path": "src/components/Auth/AuthResendAction.tsx",
+        "sha256": "d18885d4b9bb2a80857c7e55007f58e689316b72586c51d8ae1bc587776a757b"
+      },
+      {
+        "path": "src/components/Auth/AuthSuccessState.tsx",
+        "sha256": "34ad7ac23eba538bec95b3c7b53454b626b8e42e02e238c73cf839bfeda6fbe9"
+      },
+      {
+        "path": "src/components/Auth/AuthTokenDigits.styles.ts",
+        "sha256": "310713be1d967ae508ef388fb573dc9acc850cc97c404d8403cab73439947f1f"
+      },
+      {
+        "path": "src/components/Auth/AuthTokenDigits.tsx",
+        "sha256": "48e9510e3ccb6b9ee044689b7be5ad2ec9a9fcbbcaeb43f098122fa1bc1dd1a9"
+      },
+      {
+        "path": "src/components/Auth/AuthTokenLabel.tsx",
+        "sha256": "9ff201fd45a481aa394d0f2f92fb325e494b9bc033337aeefdca6568294810cb"
+      },
+      {
+        "path": "src/components/Auth/AuthTopLink.tsx",
+        "sha256": "95aa790037220bd0835103f11fad4dcf72f984b01a70785dc199afd2617d65bf"
+      },
+      {
+        "path": "src/components/Auth/utils.ts",
+        "sha256": "6c2bee0ab43401dc6ac14c3c67d2d36f54e3f459e8d4431c7350785727351150"
+      },
+      {
+        "path": "src/components/Avatar/Avatar.styles.ts",
+        "sha256": "5df66901a7ee2f26885799fb633f1e5f1b29a40276eab024545bf311479bb498"
+      },
+      {
+        "path": "src/components/Avatar/Avatar.tsx",
+        "sha256": "39e0aeca13b5da99220328161c8914000cb261a729e3f556f7d2bee99559bd6e"
+      },
+      {
+        "path": "src/components/Brand/BrandLink.tsx",
+        "sha256": "06f37bfc4d6570451bd16579a9f3c91e05d5cf4df9b94ed35a7d28239651a79f"
+      },
+      {
+        "path": "src/components/Brand/BrandLogo.tsx",
+        "sha256": "922ac815ca5210c07082222cc7989cb4e7de03b5f693200e35badcfd85519507"
+      },
+      {
+        "path": "src/components/Button/Button.styles.ts",
+        "sha256": "94acae969318a3b84a4914aa868d94c4575eaf880f42edc0015a2d84281aeeb1"
+      },
+      {
+        "path": "src/components/Button/Button.tsx",
+        "sha256": "81abc31965f6485c0eb68ca92ca2096d585e4f30e39653c3268ff99feab7ba0b"
+      },
+      {
+        "path": "src/components/Calendar/AgendaView.styles.ts",
+        "sha256": "1eb7221bde1aeb48e800d20832d972b15949aecc8eff995bef09697fa2feedff"
+      },
+      {
+        "path": "src/components/Calendar/AgendaView.tsx",
+        "sha256": "ad4479a1c9ffcc670f257b632764a921f55dfbf31371c231b1abdc9fe10134c9"
+      },
+      {
+        "path": "src/components/Calendar/AvailabilityCalendar.styles.ts",
+        "sha256": "3aad0bd22508c4ee8851ee911ccc366f500bdcd176e105cc42d3a069ec52503f"
+      },
+      {
+        "path": "src/components/Calendar/AvailabilityCalendar.tsx",
+        "sha256": "519ecad69627aedc5f418c2d6da7db2eeb9e8c4990597bb4b2fb8d135ad3b903"
+      },
+      {
+        "path": "src/components/Calendar/AvailabilityCalendar.types.ts",
+        "sha256": "7e0804361b73f03ceda7d2a70720d1827aeda7bcbca0b1c0cf09fa2443b79b71"
+      },
+      {
+        "path": "src/components/Calendar/CalendarControls.styles.ts",
+        "sha256": "9c0d90e300934286ada23ddb1a1c06df0c979668f92be7b8770d97bfc236948c"
+      },
+      {
+        "path": "src/components/Calendar/CalendarControls.tsx",
+        "sha256": "16acbd83ac15a87a31e528897b78234008e214591b72a6245064bd45058bed3e"
+      },
+      {
+        "path": "src/components/Calendar/CalendarDay.styles.ts",
+        "sha256": "40153ddeedcbe56fcaca77bf40a5a3db98da782017066fb2fad7d0a37e424c22"
+      },
+      {
+        "path": "src/components/Calendar/CalendarElements.tsx",
+        "sha256": "c91ab2f8d37e897ed4ecc4f4663a28b3da7225f2af7ca744dc7b67e3ac3e8a83"
+      },
+      {
+        "path": "src/components/Calendar/CalendarScroller.tsx",
+        "sha256": "56f7350e46f4f20d6fec00105219b3d73fd9552ea1f5c04c5b07dd5aec4a6b8e"
+      },
+      {
+        "path": "src/components/Calendar/MonthView.tsx",
+        "sha256": "96699d5408b404e5b604f46ac066f02291805339ae7b181d7808991e99612080"
+      },
+      {
+        "path": "src/components/Calendar/ScheduleCalendar.styles.ts",
+        "sha256": "615eef03e08207b268627ef56cfafff59e81d497cda31e2468df1211cc6629c2"
+      },
+      {
+        "path": "src/components/Calendar/ScheduleCalendar.tsx",
+        "sha256": "55edd624378ececc1b27878e5859c3c237c3dbb2e644e94b19d71daf9fdd536c"
+      },
+      {
+        "path": "src/components/Calendar/ScheduleCalendar.types.ts",
+        "sha256": "52620e8c09d8b52e032b59a8bde22fdba13d1d63c87a0fc6dddd0829391bb683"
+      },
+      {
+        "path": "src/components/Calendar/ScheduleRow.styles.ts",
+        "sha256": "6469a67fde012b276baca8d8a5d63b8ddc4bcce5903e0b1baeaf3ad53fb5513c"
+      },
+      {
+        "path": "src/components/Calendar/ScheduleRow.tsx",
+        "sha256": "ab030054f88a2e76d596dd04342cd8b79b8e2af38ae5c0c51bc21383ae175eff"
+      },
+      {
+        "path": "src/components/Calendar/WeekView.tsx",
+        "sha256": "080ab7cbc0706d8452cbea0ac76a229a0469e50381a9f03c78dd46457a560181"
+      },
+      {
+        "path": "src/components/Calendar/calendarFixtures.ts",
+        "sha256": "2315f36a7930b339b32e53b593bcab1a3634bd71ddeadc355747f91bd357893b"
+      },
+      {
+        "path": "src/components/Calendar/selection.ts",
+        "sha256": "d96b4c60c9a5ed34811457e67a9217d0694c27ed6b43d89c4534f314cd27443d"
+      },
+      {
+        "path": "src/components/Card/Card.tsx",
+        "sha256": "339fa57f54c074ec98b53a6d68de4be8c760a91eb3e5e75481a514ac315e9cac"
+      },
+      {
+        "path": "src/components/Card/CardLink.tsx",
+        "sha256": "b977ffe8e4b3e54119a343c9d7307ee9d1c91acc5160ece5f6a1e454c013a218"
+      },
+      {
+        "path": "src/components/Charts/GroupedBarChart.styles.ts",
+        "sha256": "805f2be7be357a4a27c0e2f85677a4eb7194d23ff6a026e42b46bef4df679ac7"
+      },
+      {
+        "path": "src/components/Charts/GroupedBarChart.tsx",
+        "sha256": "1141ec719f8ff60d6091b6cc90e19fec165eb3ba6361c7243c6dcc2ead449d7f"
+      },
+      {
+        "path": "src/components/Charts/WeeklyCountChart.styles.ts",
+        "sha256": "e3b2730051d52e7d530698f90feb3cb502bc0043dba2c49d168c450a94daf5f2"
+      },
+      {
+        "path": "src/components/Charts/WeeklyCountChart.tsx",
+        "sha256": "0a37eae851ce69741b28e4ce7845cd2db38d21d044ce5595931c86550f00b0f8"
+      },
+      {
+        "path": "src/components/Checkbox/Checkbox.tsx",
+        "sha256": "56f88bb9b34ce0d280b411a512eba4ce204eca22e79d6dcd2615b506edad1ebe"
+      },
+      {
+        "path": "src/components/ChoiceCard/ChoiceCard.styles.ts",
+        "sha256": "c2af125c8ff61f2c27763bf53fd1c93e9f2d082d2868c6059d4db6a36208d769"
+      },
+      {
+        "path": "src/components/ChoiceCard/ChoiceCard.tsx",
+        "sha256": "0818d567b57ff1fcdcb94363c6c651f4da87e0283687123c6e316e3eebd7a3b3"
+      },
+      {
+        "path": "src/components/Details/DefinitionItem.tsx",
+        "sha256": "5f9853b90c8d72999ba4c2e68dff88e643a06e2b8654687282158eeda1316c48"
+      },
+      {
+        "path": "src/components/Details/DetailRow.styles.ts",
+        "sha256": "00754295b474ad1e1efda60e7c9e75ddf7224ea8223f4b04acef2ea939b8fa82"
+      },
+      {
+        "path": "src/components/Details/DetailRow.tsx",
+        "sha256": "d0ffd2304d3840dd394160a00c7b2bc7876e11b7d149e284a586f1d5dd7282de"
+      },
+      {
+        "path": "src/components/Details/KeyValueList.tsx",
+        "sha256": "12a1157f5095f67e59031f7f4b1489900f3582e757828ef11852bceb18b54218"
+      },
+      {
+        "path": "src/components/Dialog/Dialog.tsx",
+        "sha256": "79f01e0ab6e5e630a4a211b4231af8536fcda5d8e99a8c5dae39f4a6ebe4ba71"
+      },
+      {
+        "path": "src/components/Document/DocumentHeader.tsx",
+        "sha256": "f56668534fdd2b604ec133c0104af058943f6e67a2bcbdc1c7f9755586be6557"
+      },
+      {
+        "path": "src/components/Document/DocumentHeaderContent.tsx",
+        "sha256": "5d4d9c904f1eb78c7bd056d4e02fcbbbdfea76bbe99516f2a436a805bf30968f"
+      },
+      {
+        "path": "src/components/Document/DocumentLayout.styles.ts",
+        "sha256": "ee6cc79ce5206704eb6969a780356f4f0fa7bd98d52721773a7f904d085f5a44"
+      },
+      {
+        "path": "src/components/Document/DocumentLayout.tsx",
+        "sha256": "ff610251bea6b48b5856ae59065633eabd45c3e052f20e2d65c0e0b8e79ab7a8"
+      },
+      {
+        "path": "src/components/Document/DocumentNavigation.tsx",
+        "sha256": "1ee21b0c8d62ddc0567ff6ae7be10a2ff3dccd09abf6a4761a0c4b814c30934a"
+      },
+      {
+        "path": "src/components/Document/DocumentNavigationLink.tsx",
+        "sha256": "b41903ae5df3538fa8815c18140299f9417ce4433639b7f71045d3e470c93ea8"
+      },
+      {
+        "path": "src/components/Drawer/Drawer.tsx",
+        "sha256": "dd2ecb8824a6ac3121b029d93b7fd867b9434c9fc2214cfc811de31f0bc460b8"
+      },
+      {
+        "path": "src/components/Filter/FilterPills.styles.ts",
+        "sha256": "e480273547d5b6dd4dac8b54a9de4503db403ff09d326bdb4f22e703ffa888f4"
+      },
+      {
+        "path": "src/components/Filter/FilterPills.tsx",
+        "sha256": "27ff733dba3a9185f8d99b0150a81a148792bade15f136cc0b2f869ee477754e"
+      },
+      {
+        "path": "src/components/Filter/FilterPills.types.ts",
+        "sha256": "49e8ccaed366c1f6cec9d701e3d1329fccb887ad5231c23322cc16486abc2a35"
+      },
+      {
+        "path": "src/components/Filter/FilterSelect.styles.ts",
+        "sha256": "73ba16bdce94b1893fd3bf34540fa5a9789379f04c44debdab4a7dd870752e35"
+      },
+      {
+        "path": "src/components/Filter/FilterSelect.tsx",
+        "sha256": "580c258e0728c4ea7b420a57bbe173ab528f5f8bf34d2ec1cc44c1cc2b7be09f"
+      },
+      {
+        "path": "src/components/Filter/FilterToolbar.tsx",
+        "sha256": "0f3f4d332dc55466eb5ff03f38a13a80513cf48991051bcb9536d4575c16fda1"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardAudioButton.styles.ts",
+        "sha256": "1c31ab5e0f832806707a768a580ad8899d5c17baa01f32478353029aedfd96aa"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardAudioButton.tsx",
+        "sha256": "5ec08d59407b7a630c362369b3a3b69edc20675002ef0790ac9a274e4bf8abcb"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardBack.styles.ts",
+        "sha256": "4c1406582efe93104af0a7644f4a1238050440179372256adcbce317b3ca3b4d"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardBack.tsx",
+        "sha256": "31a9444031ac89b810f56ffdad467c62c470e633509fe5dfbcb91720c3dd16af"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardDeck.tsx",
+        "sha256": "8df8f829703d8838b50e46ed193617f8c3271c7dc0e3557f214b3c2a7ddf4b92"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFace.styles.ts",
+        "sha256": "84c2f4ef67b86fc3041f330895cb9f00e2a47c85fc39ad08fcee8e6b41e2d61b"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFace.tsx",
+        "sha256": "0c57e163ee292868557e135afcecc3d9f92aed4effa0b3740cca610ad4a4cd05"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFeedback.styles.ts",
+        "sha256": "9a9ca4ee287e092cc4139599910026b5b22cc5ff2b4dd93a64d11978826ab70c"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFeedback.tsx",
+        "sha256": "d5a8541fe174f46e28badac892473edf8ca895b5dc514cbfe488e5cc715ff6dd"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFlip.tsx",
+        "sha256": "509acc9b48659a38535246e6daf27542d5dfd3466f8aa7bad53be6cc1307e1e3"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFlipButton.tsx",
+        "sha256": "d762e0e52a3f8f57be59ec90d7fb7af248f28d1c27b11007d2eeb39014c37b9c"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFlipHint.tsx",
+        "sha256": "f6f05d1d50d731f2af8c6914856f71885bcc9156449543f075314bb10567fb23"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFrame.styles.ts",
+        "sha256": "a6dd4c2abb4d13e80867685b635b8232d9272e0ff3bad514a390559db33dfe69"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFrame.tsx",
+        "sha256": "e160d7cacbe8bab2ad2e1419bd5fec915ce4d0f493a0d124abd9c74126f6af69"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardFront.tsx",
+        "sha256": "38cf605c6de2dd9f5f828f231821fc5113974f228c13c9151fe8340ea45ccae0"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardGhost.tsx",
+        "sha256": "bdd33ff74c7640351d262f5fdbe1a5820030ddf5d01b9a4748181ae6f6052bd1"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardImagePanel.styles.ts",
+        "sha256": "8e6fac5810cbcce3f11dc65a8c25cb60f7e53f66b08a8b4dbe0772df5c87b74e"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardImagePanel.tsx",
+        "sha256": "50c7ab74fdb5852dfa89df0269a9a2ed909c6526581ac7a582a7e94ba673596c"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardProgress.styles.ts",
+        "sha256": "6c1486805a290b7953a278e2604b19134e86bcac6d82b6e9681dfeb3faa94b35"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardProgress.tsx",
+        "sha256": "c73d990ad976676dbe631b078d95e75ac799a0a5c811e311627bb5d82f8cc81f"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardRatingButton.styles.ts",
+        "sha256": "ccf4536b15e89562afd5e814bb566d58069c1df2a2b461c9a997238613816c11"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardRatingButton.tsx",
+        "sha256": "399308ac71d4f604acd979e3939b2641e438c0f45aaf91c44d5c0954932da969"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardStage.tsx",
+        "sha256": "d6eb81cf77928a8487c703ce05f107c7f0bc35073d1d702dc24c543387d0a7e9"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardSwiper.styles.ts",
+        "sha256": "2aeb3136022e3380de9bd85869813c52c571401f1eda2591482a6f553e39db65"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardSwiper.tsx",
+        "sha256": "eb02e4fd82b66064628fcc39ba5cd8bb90c35c38734b55163e2b238e94873305"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardWord.styles.ts",
+        "sha256": "05dfb134080121ee7042a6c8cd181997d8702b1d7c90048bd5d3161ef4b4b71f"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardWord.tsx",
+        "sha256": "b8111e1bee64a66a092efcaeec1977bc5f5653ea6041a6fc5ec0d28d236b0639"
+      },
+      {
+        "path": "src/components/Flashcard/FlashcardWordSkeleton.tsx",
+        "sha256": "d8e43a142229fb97afc0cc7ab748604f821f7188c3d6bc56e437fb7b2a822440"
+      },
+      {
+        "path": "src/components/Form/CompoundControl.styles.ts",
+        "sha256": "bffee1a0d18e948ad20589765c99c53892c5cd5d3d502ff1e1decf24825eff4b"
+      },
+      {
+        "path": "src/components/Form/CompoundControl.tsx",
+        "sha256": "631ef5baa228a697eaf1c0c0cdc5221171e40ee81310568fdfde200aec2e9c4b"
+      },
+      {
+        "path": "src/components/Form/ControlledField.tsx",
+        "sha256": "b03e4d8afba2c15e6c2c02aed56fff7957c9887bccf7e396de667b29f568343a"
+      },
+      {
+        "path": "src/components/Form/ControlledField.types.ts",
+        "sha256": "a10ccff8c8cb35b94410711568faa7fc18b64c803390031aa264bfdc9651b14e"
+      },
+      {
+        "path": "src/components/Form/FieldCounter.tsx",
+        "sha256": "ceabceee5f7bcae92b7148554adc338589330b2139de2c4bcbc376a54a0c1442"
+      },
+      {
+        "path": "src/components/Form/FieldLabelRow.tsx",
+        "sha256": "4b45b632c42e076126338c1618bbb79c130cec41a558a37e56053ff23b779d0d"
+      },
+      {
+        "path": "src/components/Form/FieldRoot.styles.ts",
+        "sha256": "47d36f16e761d97d8fe8dc2dfca3f4628fe0a06ae641f64365eeeedd4ce861b9"
+      },
+      {
+        "path": "src/components/Form/FieldRoot.tsx",
+        "sha256": "48d5f74b6cabfac2d0c470a1c60acebf3ca149f27a859ab1f3d3ed9c1ef870ac"
+      },
+      {
+        "path": "src/components/Form/FileInput.tsx",
+        "sha256": "523c4f4339a1bd472646c098aa0de90bf8b0d80198f36b2116dcd1192512045f"
+      },
+      {
+        "path": "src/components/Form/FormActions.tsx",
+        "sha256": "9a8d5f536a0ad6c4a67093fa70558ae7a546f275d8822632b2456501c482bca3"
+      },
+      {
+        "path": "src/components/Form/FormError.tsx",
+        "sha256": "a3646a45e915832ed0f4061c421d14e1f8d8d3a247bf82d8987da5c185f7c704"
+      },
+      {
+        "path": "src/components/Form/FormStack.tsx",
+        "sha256": "f3bc647ce42b42d8b0386a5a846d9a933af25e06262c01ab24ef9dd4d450eb64"
+      },
+      {
+        "path": "src/components/Form/PhoneField.styles.ts",
+        "sha256": "dae78d0e6185c4dd61072cc1420e763a1db7c266e9b5a415121cf8d567989701"
+      },
+      {
+        "path": "src/components/Form/PhoneField.tsx",
+        "sha256": "580f972104a0a1fa962b1e2b4c3f81b24a51c27c4c8b13bc342541f8ef34460c"
+      },
+      {
+        "path": "src/components/Form/SearchInput.styles.ts",
+        "sha256": "45e5d5146f08809981886b5312dd3c42a3c48e53029c147658ac4b903ed45c72"
+      },
+      {
+        "path": "src/components/Form/SearchInput.tsx",
+        "sha256": "607ce9328dedfb33b7f9c2f147ed667161f62b4558fe2277ffd3481ea7256f8d"
+      },
+      {
+        "path": "src/components/Form/SearchInput.types.ts",
+        "sha256": "41a037f6e4aa728653a067e713552b94596069edb6d4c7417946ff4059082fcb"
+      },
+      {
+        "path": "src/components/Form/SelectInput.tsx",
+        "sha256": "b91e5b9cc5523bfdee72d83a6edab173de7473723809bb3aab185ef249b1ba54"
+      },
+      {
+        "path": "src/components/Form/TextInput.tsx",
+        "sha256": "81e805194c4bc6fb64df4a2127782fca0f1fa5bfe3d4bcbeab366f4a3a93db8e"
+      },
+      {
+        "path": "src/components/Form/TextareaInput.tsx",
+        "sha256": "a689e5068150013472b6eaad011b8faf543ab691113c5bba5326a95e5397a11a"
+      },
+      {
+        "path": "src/components/IconButton/IconButton.styles.ts",
+        "sha256": "a80c00380ba84b2c4e58ddd504ddbf94d3de8652cc023bef79fd4e3af65b1ecc"
+      },
+      {
+        "path": "src/components/IconButton/IconButton.tsx",
+        "sha256": "5f1815777498e3749c45fbcc91b9a3e9182228835275543a8b59ddaeef1fcc8d"
+      },
+      {
+        "path": "src/components/IconButton/IconButton.types.ts",
+        "sha256": "b283d384d1e6969340a5eeb00bde4f491b4543f9305bb401592963bac706bb76"
+      },
+      {
+        "path": "src/components/IconButton/OverlayCloseButton.tsx",
+        "sha256": "3056cc17e0bd68b3da513286e89f9b0254ff56e5d430e8724cfe32b117bcdc34"
+      },
+      {
+        "path": "src/components/Message/ConversationRow.styles.ts",
+        "sha256": "23e360a0602a4cb2a0294de08f338bdf3633984db6aaeba1cae9fadf2d14c7fc"
+      },
+      {
+        "path": "src/components/Message/ConversationRow.tsx",
+        "sha256": "0324d4581b7211a6a37c3e589c4a79fba0c9f7aa1dce904159318e413fc33967"
+      },
+      {
+        "path": "src/components/Message/MessageBubble.styles.ts",
+        "sha256": "15b30f4c8edbf767f6e3b448b4f71b9fd34360ed3cfa80bcdfb2ec5065b1b088"
+      },
+      {
+        "path": "src/components/Message/MessageBubble.tsx",
+        "sha256": "d34cf3cf549995e69748ddbaa7493460c1223077e3e2938eba735f29f2dc2c8f"
+      },
+      {
+        "path": "src/components/Message/MessageBubble.types.ts",
+        "sha256": "2a28f57e401d3b9360bc0abe73821a7fd3a5b6dbe2627979be1c5afe36562f48"
+      },
+      {
+        "path": "src/components/Message/MessageComposer.styles.ts",
+        "sha256": "9de69edd8e00025d70f6518084154b955d26390958f02571e592a11b4d403c99"
+      },
+      {
+        "path": "src/components/Message/MessageComposer.tsx",
+        "sha256": "d570843f6b569436881d8c2004786d3f236b0dee1cc7a12e16510cc21ffdcdea"
+      },
+      {
+        "path": "src/components/Message/MessageComposer.types.ts",
+        "sha256": "ccea2cc7d61d4052dd143fadf276e0213bf49a28049c5eabb784431807bdfea8"
+      },
+      {
+        "path": "src/components/Message/MessageThread.styles.ts",
+        "sha256": "27c36bbc340632b001b35e66a9f5ba107161c3574dda60ba70e3d5c186c68c60"
+      },
+      {
+        "path": "src/components/Message/MessageThread.tsx",
+        "sha256": "be0862355357a00608e1a5329bfabcd4b9aa22fd95a91163bd19da4489dcba7c"
+      },
+      {
+        "path": "src/components/Message/MessageThreadHeader.styles.ts",
+        "sha256": "8afddf61615134d2527627c4267f0065b26521f1a6c3019076958d845b2ad733"
+      },
+      {
+        "path": "src/components/Message/MessageThreadHeader.tsx",
+        "sha256": "7bea0cc7e1b7ac730cbbb4de474d8326be58a2c419b9237853e125e7f6eabeb3"
+      },
+      {
+        "path": "src/components/MetricSummary/MetricSummary.styles.ts",
+        "sha256": "f7893cfbfc3d9383470c85c5018793ab228e7fd5e881a6640a1fc464f2d115a7"
+      },
+      {
+        "path": "src/components/MetricSummary/MetricSummary.tsx",
+        "sha256": "e8006034db9ab9866a38458643331dfafa5a84b6b7598197f4ed071535fd558e"
+      },
+      {
+        "path": "src/components/Navigation/BottomNavigation.tsx",
+        "sha256": "c50d30346341ed3db77e47a4f9a1d14daef1c50dc30c5921b65f76a193f045e9"
+      },
+      {
+        "path": "src/components/Navigation/BottomNavigationLink.tsx",
+        "sha256": "677839c5b5610d551f0377ca8e36c161564a072852ac73afa09f5935d2560b5e"
+      },
+      {
+        "path": "src/components/Navigation/NavigationButton.styles.ts",
+        "sha256": "b7f6c9aaa49953932191eefc1cc1c6a8f9d76056ca0e151f96151ff10eae52c5"
+      },
+      {
+        "path": "src/components/Navigation/NavigationButton.tsx",
+        "sha256": "f352d038a80cabee1fe6b23ca5e6c192d3862c61d1b50284439a2569c83f8b62"
+      },
+      {
+        "path": "src/components/Navigation/NavigationLink.tsx",
+        "sha256": "b288acd8270ab8d2a2112b907338a2f6f92c3ff81e692d2d3607e6ee7f2ef9f8"
+      },
+      {
+        "path": "src/components/Navigation/SidebarFrame.tsx",
+        "sha256": "fb4887b5aa89ce62b4562198c527e7457f785aca56cc1321fdbdf9f1616c28d3"
+      },
+      {
+        "path": "src/components/Navigation/SidebarNavigation.tsx",
+        "sha256": "5d8534f5812be203ba77e546539f67443f3f973d79e89195e38b4df0e8b1cf61"
+      },
+      {
+        "path": "src/components/Notice/ConnectionNotice.tsx",
+        "sha256": "c904b0c3c7a44b3e20f785527f3a93872f9f80c87437e07bb9ff524ef24ed81f"
+      },
+      {
+        "path": "src/components/Notice/InlineNotice.tsx",
+        "sha256": "4800cce2d1f03e33b31eaee92fa6da262a843204de5f948b2e4ebce24f89d0bd"
+      },
+      {
+        "path": "src/components/Notice/NoticeBanner.styles.ts",
+        "sha256": "7b1e30f44f5b8a2323a57d52036915001f33df98a493b1427dc37fabe311b49c"
+      },
+      {
+        "path": "src/components/Notice/NoticeBanner.tsx",
+        "sha256": "2c9f6fb461c1efa017d7fb103026c81d8c62c35bf6322083a56ff7b7f758b032"
+      },
+      {
+        "path": "src/components/NotificationItem/NotificationItem.styles.ts",
+        "sha256": "e1d91638540d8a5f452b63f203fbb407d0a0ba6ff44f739f855e0666ad3cd9d8"
+      },
+      {
+        "path": "src/components/NotificationItem/NotificationItem.tsx",
+        "sha256": "2c8f0897b8d48eac0fb01d22b337d78c158120f8b6fc7bc87b634033ff4bf3b7"
+      },
+      {
+        "path": "src/components/OperationalList/ListHeader.tsx",
+        "sha256": "de705c4e0623f65e8c83921686b602a5bf6b03276be39acd56a22f1f8ec31835"
+      },
+      {
+        "path": "src/components/OperationalList/ListRow.tsx",
+        "sha256": "b39bcf972ab6e70b8e9e54b201dfc086eaa3b06634ed2538477b453850ad5382"
+      },
+      {
+        "path": "src/components/OperationalList/OperationalList.styles.ts",
+        "sha256": "5bf57a319ae40238c50cce04f0ab76c8e223825627858cd68015c818fd38eeb4"
+      },
+      {
+        "path": "src/components/OperationalList/OperationalList.tsx",
+        "sha256": "4cf91606a817650fbe4965550b54bd651385eaed4c1576cacc602d01b51896b5"
+      },
+      {
+        "path": "src/components/OperationalList/OperationalList.types.ts",
+        "sha256": "c93228d78c0bd4cec1e6afc1fcc3c0730e2723b901586232aad95c2d4a254649"
+      },
+      {
+        "path": "src/components/OperationalList/RowActions.tsx",
+        "sha256": "cc7b1d08bc83a625f04517ea6c44a1b6fc128b4631a2ec19cb4a0b238a8e9c0a"
+      },
+      {
+        "path": "src/components/OperationalList/normalizeActions.ts",
+        "sha256": "baee16fa2d0678131556316b84b37188f67221418c481b4e2b90a2dee68b962c"
+      },
+      {
+        "path": "src/components/Practice/PracticeCard.styles.ts",
+        "sha256": "db93c219873e314a5c17cfe83313be9cc5fc4cad72c852ee4d3ed5bf11f2b900"
+      },
+      {
+        "path": "src/components/Practice/PracticeCard.tsx",
+        "sha256": "098a4ef09cd946dc66d4151b0aad60a3f714a59e3b7f1407b8ef40eeea7f7704"
+      },
+      {
+        "path": "src/components/Practice/PracticeCardBody.tsx",
+        "sha256": "d9154c8b914b250289d49479c68b800261608a2d621a9de533b1f8b897de0711"
+      },
+      {
+        "path": "src/components/Practice/PracticeCardCover.styles.ts",
+        "sha256": "eb26bd1aa0fde2ec2eadb314816e6d8a046065a41b75aad61dbf3cc221abad65"
+      },
+      {
+        "path": "src/components/Practice/PracticeCardCover.tsx",
+        "sha256": "8a6a3773a273eec4371a80538462fae0a6bc08bdf78a8f6c022b515f6076e238"
+      },
+      {
+        "path": "src/components/Practice/PracticeCardSkeletonBody.styles.ts",
+        "sha256": "8999c92c859b807ba94bbe7b4c3ec2e0b1c7c7a22d9c5f7cbd1774609484eff2"
+      },
+      {
+        "path": "src/components/Practice/PracticeCardSkeletonBody.tsx",
+        "sha256": "a739cbe0dedd298af7176771b0a867ba1fa4e62d36939aa34132703f49a747d4"
+      },
+      {
+        "path": "src/components/Practice/PracticeLevelBadge.tsx",
+        "sha256": "142adbed8e33f3789d975933f13c43b9a99612954070956970e662a97375796a"
+      },
+      {
+        "path": "src/components/Practice/PracticePlaybackControls.styles.ts",
+        "sha256": "0cc5e91f45ac61fac513ba60f2a6928d3dcf7156e7a7fd2e4c5fc194ca27d9fc"
+      },
+      {
+        "path": "src/components/Practice/PracticePlaybackControls.tsx",
+        "sha256": "c733183100cd6b712c16b46f020c9bbf2be7f097da8eaa3788f3845eaf7a483b"
+      },
+      {
+        "path": "src/components/Practice/PracticeProgressBar.tsx",
+        "sha256": "1325153db6cf056c6b9321676809950028206a2943459cbb05fdbcba648001e8"
+      },
+      {
+        "path": "src/components/Practice/recipe.ts",
+        "sha256": "736584462d23825b205ea7dafd91de3f95a6e2019b0cd4eb97f626bb4292b334"
+      },
+      {
+        "path": "src/components/PracticeResultPanel/PracticeResultPanel.styles.ts",
+        "sha256": "43a6079e02f4e5d706247bf1b15b3b11568d3b9bcabe532c94d180447ba888c2"
+      },
+      {
+        "path": "src/components/PracticeResultPanel/PracticeResultPanel.tsx",
+        "sha256": "20bfa2d273e6a7c32dfc1ae67a11c0c3846d91f8ce436438ae098ad5f442022e"
+      },
+      {
+        "path": "src/components/Pressable.tsx",
+        "sha256": "a2d46a03b9b144f372c16ed68bf1f674bef0d7d17b64aae344173847fb407332"
+      },
+      {
+        "path": "src/components/Quiz/QuizBadge.tsx",
+        "sha256": "052cba26a28be69c78e44d8acd3b244ed5826d8f07bd5fc661adbb310ce83075"
+      },
+      {
+        "path": "src/components/Quiz/QuizBlank.tsx",
+        "sha256": "6a878e55f32974e093fde48c79c27e0af0db7e1d2ce7beb88ed1cf9656ec657d"
+      },
+      {
+        "path": "src/components/Quiz/QuizFeedback.tsx",
+        "sha256": "5803dba08b19a5ee990591f21bf26d73fc6dd2d938012c820616dea3dfff7937"
+      },
+      {
+        "path": "src/components/Quiz/QuizMetadata.tsx",
+        "sha256": "c8bc9ae2432edcf37c25772393aa3a99836364dd46641e34526738f90f1dea75"
+      },
+      {
+        "path": "src/components/Quiz/QuizOption.styles.ts",
+        "sha256": "0bd686821450a0b33da9a6c2057e871c5f9a3a1410d34f19d8580ea5e3adfc13"
+      },
+      {
+        "path": "src/components/Quiz/QuizOption.tsx",
+        "sha256": "238c51b64ad71a79f5359c7ead25b89ea868b91082d53a23a82672f3b22cc9ab"
+      },
+      {
+        "path": "src/components/Quiz/QuizPromptHeader.tsx",
+        "sha256": "15e79c74e79a3caf233761213b289ce9f65c78715680d616dd24dbbf68462b2f"
+      },
+      {
+        "path": "src/components/Quiz/QuizQuestion.tsx",
+        "sha256": "c1f8da4c3f5c0c78c26c586d6976c14c90b77658c7ab2824f9c0f806224af3fd"
+      },
+      {
+        "path": "src/components/Quiz/QuizSessionHeader.styles.ts",
+        "sha256": "40f04193d4be775f382d48850e9f268aa8e4af54dca72d5f177cb14be1f6084e"
+      },
+      {
+        "path": "src/components/Quiz/QuizSessionHeader.tsx",
+        "sha256": "a41ece39849c6568449b9cd8583680c365a092a5cd94a156b7dae3ab74206918"
+      },
+      {
+        "path": "src/components/RadioButton/RadioButton.tsx",
+        "sha256": "fe6b228c6598f8e81472d08897e4612ffdf64a983cd27c9f5a4164e2b9b71c6a"
+      },
+      {
+        "path": "src/components/SectionHeader/PageDescription.tsx",
+        "sha256": "cfa68975fdedfcb9fc16d9aa54ae17d2887e1fc6f028037d414f0992960fc57d"
+      },
+      {
+        "path": "src/components/SectionHeader/PageTitle.tsx",
+        "sha256": "559771c649ab973cb7c7743856ecf910e7ef05ce9a3690bfa816af7637031df4"
+      },
+      {
+        "path": "src/components/SectionHeader/SectionHeader.styles.ts",
+        "sha256": "6425e439048104d1fd89bac64d3059c0fc8e4e3ccb12c7511fa48aaff21e1ee5"
+      },
+      {
+        "path": "src/components/SectionHeader/SectionHeader.tsx",
+        "sha256": "3e178bdc0710259dfab98947802ac1c4ae450ae743d6a89918f66ba00dd037e8"
+      },
+      {
+        "path": "src/components/SegmentedControl/SegmentedControl.styles.ts",
+        "sha256": "6b431137f27df845ac60eda8ad414955723ff7d754a38d561f962a97d2acfc5a"
+      },
+      {
+        "path": "src/components/SegmentedControl/SegmentedControl.tsx",
+        "sha256": "850cf408152ea25eeb6aa2a63ec7aee8dfa3e365485725963f42371fa0967ddb"
+      },
+      {
+        "path": "src/components/SegmentedControl/SegmentedControl.types.ts",
+        "sha256": "e24f345cc5083f3f0d2dc683930cfdced5abec304bfe8c9f1a1bc35e3f4d23e5"
+      },
+      {
+        "path": "src/components/SessionProgress/SessionProgress.tsx",
+        "sha256": "3fca2017588ec690ea6b0e506d3f692330643fff33b73c9f036d08d93f4d502c"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingActivePhrase.tsx",
+        "sha256": "9d48e72dd9ad0afeb8e4115e56327340227ad6370151370e5cd396f08adf4bc3"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingContextPhrase.tsx",
+        "sha256": "e1906b3ed8a98c351564bd20a9f69e40505e266f10570ce24f33754fb71281e0"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingControlCluster.tsx",
+        "sha256": "77eeb9d047963587d4c59a1c1a7385100f0f9f41b034bfdf6bdfd562c7de539a"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingControlDock.tsx",
+        "sha256": "8ec69dcc358c249cd1c60db11b7c59b4d668814185e4b5dab1b0e66ea6b413c7"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingPanel.styles.ts",
+        "sha256": "cc587962cc8a49bc72aca1266dbfed5766901eb1995d74dd4d2dd3dbe80cb322"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingPanel.tsx",
+        "sha256": "cdcae4aefffafc443c755e62d24b8ef546cafbb1ce7dc53efb7787d964945abd"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingPhraseStack.tsx",
+        "sha256": "e6762584cfcf2ba77ffa7154d4211b4a3641f4576587e1526478d335765229bc"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingReader.tsx",
+        "sha256": "7f72db19af80955d3f565ac7e763334999738078f0e0dbab8670c5107085a45f"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingRepetitions.styles.ts",
+        "sha256": "5e9d5e0776ab04ed714350384f54d7805f63ebcadfc7998df9fe9992f8f5ec75"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingRepetitions.tsx",
+        "sha256": "f8239445db269b22ab94f880cfd0c4443b9cd58685cbf65a2147698cbf383c9f"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingTranslation.styles.ts",
+        "sha256": "086a1b242132dba8862b4886c99ea725fb04007e3815eeb1b7017f1a598f0adc"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingTranslation.tsx",
+        "sha256": "600ed7c3eca9f5e875ba79aad744a45afde740fbee9ea0b1ad83ccb43fc74283"
+      },
+      {
+        "path": "src/components/Shadowing/ShadowingWord.tsx",
+        "sha256": "44beef7fe47824cad6e6e7e046380937b0c3cc0d98c3a0f4d73dcd5d656ce886"
+      },
+      {
+        "path": "src/components/Skeleton/Skeleton.tsx",
+        "sha256": "8778d92e83e0bc59e683debc376f85d10cb123482f401f270e17ed5309e0aa62"
+      },
+      {
+        "path": "src/components/Spinner/Spinner.styles.ts",
+        "sha256": "d6a1fcc41ba0c0df5850f3a0144bbc25c69c0c1e4c2efd3d0453a8cc078eef05"
+      },
+      {
+        "path": "src/components/Spinner/Spinner.tsx",
+        "sha256": "1c292dc4bc8aa45e7964327e6259f5c1198a61ce4b9fad21be8dc1ee4e885108"
+      },
+      {
+        "path": "src/components/StatCard/StatCard.styles.ts",
+        "sha256": "5b6af69ccd60fe2cec01963b11d5e146fa6127815d3a03f6ea8e7d679ce1e6f4"
+      },
+      {
+        "path": "src/components/StatCard/StatCard.tsx",
+        "sha256": "94c65123a0a77d36278a5944a54c014bfd97eb4d27b051842a04d5d5b7b190e5"
+      },
+      {
+        "path": "src/components/StatePanel/StatePanel.styles.ts",
+        "sha256": "8fa6efbd39552a7356c3a96bdf814bac427cea108fd2cd0958088ba71a91681a"
+      },
+      {
+        "path": "src/components/StatePanel/StatePanel.tsx",
+        "sha256": "cd91cac3f661ad05bac71a3a0d507350ce4cb5ea9020c504244071f7e9be5ef1"
+      },
+      {
+        "path": "src/components/StatePanel/StatePanel.types.ts",
+        "sha256": "3a24dc6189b5526546bc1019a7afbb56bd9867cacd5bc5c3ee5898f7bf9cd636"
+      },
+      {
+        "path": "src/components/StatusChip/StatusChip.styles.ts",
+        "sha256": "16f801f4745a949b1e52c4b208212eb05799ae2322bc90a2c8512553755166be"
+      },
+      {
+        "path": "src/components/StatusChip/StatusChip.tsx",
+        "sha256": "22d08088983769fbda476dc54e5280e201c7afb4ea922f0b91050e5657596c34"
+      },
+      {
+        "path": "src/components/Toast/ToastItem.styles.ts",
+        "sha256": "0fef99338c0e82d6e9faf0c59de1290a72616c4fe598a45aadab50862a10c691"
+      },
+      {
+        "path": "src/components/Toast/ToastItem.tsx",
+        "sha256": "d2ec8565795a2e79ed99379bf8e457d233139e8e57f422e13b6f0932678480a9"
+      },
+      {
+        "path": "src/components/Toast/ToastViewport.styles.ts",
+        "sha256": "dd5479925cf0a270eeb9f418b7a1a318cd0e5b347368656769b8beb5b53918f5"
+      },
+      {
+        "path": "src/components/Toast/ToastViewport.tsx",
+        "sha256": "ab44caabb38bcadfd5013cec4922033a3d19dc35c0cc56d52b0c6018b2027c15"
+      },
+      {
+        "path": "src/components/ToggleButton/ToggleButton.styles.ts",
+        "sha256": "095a630b8894c6e33acee1df2e79f9b6626efb3829b25d35e2b4d4f018e38550"
+      },
+      {
+        "path": "src/components/ToggleButton/ToggleButton.tsx",
+        "sha256": "ecb64e62a1f223a2e480e2c1e084bc588b382063ef692b1d6c3fa824483803a5"
+      },
+      {
+        "path": "src/foundations/accessibility/index.ts",
+        "sha256": "ddfe84c985f0573e93724bf5cfd63b985533e08be9bc1be0de955ead9f543e30"
+      },
+      {
+        "path": "src/foundations/actions/recipe.ts",
+        "sha256": "c32a643d976cf8000b20f522b5f0ea581041a33ca507189a0083042c3ae2070b"
+      },
+      {
+        "path": "src/foundations/actions/types.ts",
+        "sha256": "71e407a6b4dcebeb07f916436158fef6c3eaf150f08709b6b84a4f886e5a95ff"
+      },
+      {
+        "path": "src/foundations/authRecipe.ts",
+        "sha256": "9a8396fb6dd36c8ea534fc4dc96eef4e823bb64b2a1a250b3ffb40ea8f1274b4"
+      },
+      {
+        "path": "src/foundations/fields/index.ts",
+        "sha256": "a4df00f233d0c59cfc3c386f0a76e24e82f01aee44eb8780c0f50de4c9d8f3c1"
+      },
+      {
+        "path": "src/foundations/quizRecipe.ts",
+        "sha256": "afe1140db323d7182e03dca5b633f5f746bf0df33996a3d9f119ab5abb142061"
+      },
+      {
+        "path": "src/foundations/selection/index.ts",
+        "sha256": "cc35d7057de4f740d09288d8b05c0d9257826144d39da8d5917b10e89e463bcb"
+      },
+      {
+        "path": "src/foundations/surfaces/cardRecipe.ts",
+        "sha256": "9724bdbdbeda40e1b45a929b8fcbdc0d26132bd78eadcd7fbbac0060cb82d51e"
+      },
+      {
+        "path": "src/foundations/tokenValues.ts",
+        "sha256": "189a16896cecff80eec753c5ad2468f26e9ebad099d3b27f51e19da54e80d035"
+      },
+      {
+        "path": "src/foundations/tokens.ts",
+        "sha256": "3616cb7e2d8186ddd1df5c9cf93420e396535903177476bc8619249bc72a3c6f"
+      },
+      {
+        "path": "src/index.ts",
+        "sha256": "b94b29d77e010630ff568c597b5ece45a539a0cb788238e4e8235a7a1a445be2"
+      },
+      {
+        "path": "src/internal/CompoundControlContext/index.ts",
+        "sha256": "a6520d5ca1722f504bed17e91e5c5222356e821b6f7b03bc893504f40c5fb2ff"
+      },
+      {
+        "path": "src/internal/FieldControlContext/index.ts",
+        "sha256": "e85183627c8374323b6513f7055dd5e8816ccb924d622616389ab97fd39d0d8c"
+      },
+      {
+        "path": "src/internal/FieldControlContext/types.ts",
+        "sha256": "abfdde4fc9b17eb0d7525a0faaaff62567345793d3f7a108d440b1dd1750b9e3"
+      },
+      {
+        "path": "src/internal/FlashcardFlipContext.ts",
+        "sha256": "5aa4fc1f51ae41ef9e7e174b012d1f583f4dd73f8f79a82bdf143c621b86ab92"
+      },
+      {
+        "path": "src/internal/IconSlot/index.tsx",
+        "sha256": "5946defddd4ea4fda8032eb029f2c5373c71153d0c3f4667f37580492c23f491"
+      },
+      {
+        "path": "src/internal/IconSlot/styles.ts",
+        "sha256": "e1e8d9c38c2e00056323593fc94be33458a46877636243502e78d32884c956ba"
+      },
+      {
+        "path": "src/internal/IconSlot/types.ts",
+        "sha256": "1e2dd2cd6cf2473a7579f8b9e16d15b08b8f94fac2ae6fee62095cf6d8f102ea"
+      },
+      {
+        "path": "src/internal/ModalLayer/index.tsx",
+        "sha256": "1b5426dc8495807e6ef97cc379b584dbe8df71be1a2804c246cd007602de11af"
+      },
+      {
+        "path": "src/internal/ModalLayer/stack.ts",
+        "sha256": "67061aeddf94fc2194f35f128e921dd69a7ce274e3a9ea7ce9b8615b6074becc"
+      },
+      {
+        "path": "src/internal/ModalLayer/styles.ts",
+        "sha256": "6dab88bcec0b1d71bb8ab74f09d35fc0bbea144573ebe1a62e7499bed1a22d9f"
+      },
+      {
+        "path": "src/internal/ModalLayer/types.ts",
+        "sha256": "e6601d5a7058f6911985a88fac9bd13ae3b78131bf638dd980076b0043bdbadb"
+      },
+      {
+        "path": "src/internal/QuizResponseMark/QuizResponseMark.tsx",
+        "sha256": "a430a8814a66dd5fa2ebcd065e114ee8a163b5a76ab0b6c616cb4160090d60a7"
+      },
+      {
+        "path": "src/internal/compactPracticeLayout.ts",
+        "sha256": "6885cfccfaefb6675892bbb4564dde10517b08d3fd29d686c3c12d5e6324366b"
+      },
+      {
+        "path": "src/internal/flashcardWordLayout.ts",
+        "sha256": "90883ec37bea600353ff82cd2cb86e9617ef73d3dbf8500fcb6027d1868e5bbe"
+      },
+      {
+        "path": "src/internal/useFieldControl.ts",
+        "sha256": "7ce931cf0b70faf2f77a8e82890b9276da1288f585adf9d958fe61f2a2720ff1"
+      },
+      {
+        "path": "src/internal/useMergedRef.ts",
+        "sha256": "0f612697b5e9c93a1937167b81da1e2739616aa24b1177e1767c2a21b6743788"
+      }
+    ]
+  },
+  "candidate": {
+    "path": "/Users/margaridamartins/.local/langyspace-ui-complete-20261019/candidate/langyspace-ui-3.0.0.tgz",
+    "sha256": "f0304151b4b518ddfb64146fbbeb19d8d337634299004a8e726450362afba306",
+    "version": "3.0.0 unpublished local candidate",
+    "source": "working tree based on d4bfece; UI3 deliberate major, visual review pending",
+    "usage": "Local validation only; no registry/GitHub release, no committed file dependency",
+    "declarationEquivalence": [
+      {
+        "project": "teacher",
+        "identicalDeclarations": true,
+        "changedDeclarations": [],
+        "declarations": 261
+      },
+      {
+        "project": "student",
+        "identicalDeclarations": true,
+        "changedDeclarations": [],
+        "declarations": 261
+      },
+      {
+        "project": "admin",
+        "identicalDeclarations": true,
+        "changedDeclarations": [],
+        "declarations": 261
+      },
+      {
+        "project": "site",
+        "identicalDeclarations": true,
+        "changedDeclarations": [],
+        "declarations": 261
+      },
+      {
+        "project": "cupom",
+        "identicalDeclarations": true,
+        "changedDeclarations": [],
+        "declarations": 261
+      }
+    ],
+    "renderedRuntime": "All capture runtime bundle hashes match this candidate; documentation-only repack did not change dist or declarations."
+  },
+  "capture": {
+    "widths": [390, 768, 1440],
+    "dpr": 1,
+    "locale": "pt-BR",
+    "timezone": "Europe/Dublin",
+    "clock": "2026-10-19T12:00:00Z; enrollment fixture: 2026-09-14",
+    "viewportOnly": true,
+    "externalNetwork": "blocked",
+    "data": "sanitized deterministic fixtures, no production writes"
+  },
+  "sources": [
+    {
+      "suite": "ui",
+      "sources": {
+        "before": "914164b30767de42b5e32c11dfdbbcc4c2e176bd",
+        "after": "working source, fingerprint below"
+      }
+    }
+  ],
+  "pairs": 114,
+  "pixelIdentical": 97,
+  "entries": [
+    {
+      "number": 1,
+      "suite": "ui",
+      "id": "tokens-neutral",
+      "width": 390,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 8695,
+        "ratio": 0.022294871794871794,
+        "maxDelta": 237,
+        "bounds": [49, 317, 202, 539]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b1.png",
+        "sha256": "f210a571dd6a18401ee3dfe1ecc1c7bfcf9df5a6d7837e317cc5f031a5efc086",
+        "bytes": 25093
+      },
+      "after": {
+        "path": ".github/evidence/u3/a1.png",
+        "sha256": "0443b5293b6235de50504f64e5bee00dddbd74f8f0e9a5b360b4f7525008aca1",
+        "bytes": 22613
+      }
+    },
+    {
+      "number": 2,
+      "suite": "ui",
+      "id": "tokens-neutral",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 8695,
+        "ratio": 0.011321614583333334,
+        "maxDelta": 237,
+        "bounds": [238, 317, 391, 539]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b2.png",
+        "sha256": "2a42956c02cfa41a9e054966ad9a09ce0eef527925497e49ff64cff112037133",
+        "bytes": 27245
+      },
+      "after": {
+        "path": ".github/evidence/u3/a2.png",
+        "sha256": "3678d9dc46e3e305205ccb3889797e19301c7b2ac97173768f0cef16f40a2fef",
+        "bytes": 24687
+      }
+    },
+    {
+      "number": 3,
+      "suite": "ui",
+      "id": "tokens-neutral",
+      "width": 1440,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 8695,
+        "ratio": 0.006038194444444444,
+        "maxDelta": 237,
+        "bounds": [574, 317, 727, 539]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b3.png",
+        "sha256": "38c6ccf486cd02a707332aed520ccbf83386a6ba8ae6c4e738379d8f18fa2fdc",
+        "bytes": 29997
+      },
+      "after": {
+        "path": ".github/evidence/u3/a3.png",
+        "sha256": "2b9add61b35d662e95f699e03aaccd2f3dbfc73df1c3dcb00dd8d19a7b8e6890",
+        "bytes": 27268
+      }
+    },
+    {
+      "number": 4,
+      "suite": "ui",
+      "id": "auth-login",
+      "width": 390,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 40,
+        "ratio": 0.00010256410256410256,
+        "maxDelta": 2,
+        "bounds": [24, 242, 26, 331]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b4.png",
+        "sha256": "9f01863cc5e6131a3e45f06f118b660fe9ed3e846cd018892b9e8402ee69d87e",
+        "bytes": 21385
+      },
+      "after": {
+        "path": ".github/evidence/u3/a4.png",
+        "sha256": "ee9f929a952c18cf67a4ef852d5d4f725641874bba57aa09c1fc95b0b949a2bb",
+        "bytes": 21403
+      }
+    },
+    {
+      "number": 5,
+      "suite": "ui",
+      "id": "auth-login",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 74,
+        "ratio": 9.635416666666667e-5,
+        "maxDelta": 43,
+        "bounds": [164, 255, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b5.png",
+        "sha256": "502104fc8d703237c35927cd0408d44bc57412456500701159a10bedda41ea79",
+        "bytes": 27996
+      },
+      "after": {
+        "path": ".github/evidence/u3/a5.png",
+        "sha256": "ebfc5fe25d7deabda938e8b697167048f5319bb689e23dd39a7b2eca8a6d7548",
+        "bytes": 28010
+      }
+    },
+    {
+      "number": 6,
+      "suite": "ui",
+      "id": "auth-login",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b6.png",
+        "sha256": "afa1a13a082f76d84cdbac4bfa30c8ed7454da5a8f7049e375b7965410a845e7",
+        "bytes": 120097
+      },
+      "after": {
+        "path": ".github/evidence/u3/a6.png",
+        "sha256": "afa1a13a082f76d84cdbac4bfa30c8ed7454da5a8f7049e375b7965410a845e7",
+        "bytes": 120097
+      }
+    },
+    {
+      "number": 7,
+      "suite": "ui",
+      "id": "auth-token",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b7.png",
+        "sha256": "bfe4c792a07b7ece9c5a803087ac2ce16edc86a4978a79513c4f17ca346c6497",
+        "bytes": 28014
+      },
+      "after": {
+        "path": ".github/evidence/u3/a7.png",
+        "sha256": "bfe4c792a07b7ece9c5a803087ac2ce16edc86a4978a79513c4f17ca346c6497",
+        "bytes": 28014
+      }
+    },
+    {
+      "number": 8,
+      "suite": "ui",
+      "id": "auth-token",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 37,
+        "ratio": 4.817708333333333e-5,
+        "maxDelta": 43,
+        "bounds": [389, 958, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b8.png",
+        "sha256": "c429e2b8f649d3fb4c84eb5a37d6e31256f886916d73046d5abebb8185e42738",
+        "bytes": 35438
+      },
+      "after": {
+        "path": ".github/evidence/u3/a8.png",
+        "sha256": "042e037011e42ddb5d2039fb0d92abd6a67937d750cf7ecf2406784a5152e3fa",
+        "bytes": 35437
+      }
+    },
+    {
+      "number": 9,
+      "suite": "ui",
+      "id": "auth-token",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b9.png",
+        "sha256": "2df379fd375e47b84f910e692e28c5891764e565ab04272fc4581cb8115e87c3",
+        "bytes": 127909
+      },
+      "after": {
+        "path": ".github/evidence/u3/a9.png",
+        "sha256": "2df379fd375e47b84f910e692e28c5891764e565ab04272fc4581cb8115e87c3",
+        "bytes": 127909
+      }
+    },
+    {
+      "number": 10,
+      "suite": "ui",
+      "id": "auth-token-error",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b10.png",
+        "sha256": "756139434afce40d05ec7b7a07c9b208d88c3ad7cac361687f24e7d6eb622cc7",
+        "bytes": 31692
+      },
+      "after": {
+        "path": ".github/evidence/u3/a10.png",
+        "sha256": "756139434afce40d05ec7b7a07c9b208d88c3ad7cac361687f24e7d6eb622cc7",
+        "bytes": 31692
+      }
+    },
+    {
+      "number": 11,
+      "suite": "ui",
+      "id": "auth-token-error",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 91,
+        "ratio": 0.00011848958333333333,
+        "maxDelta": 43,
+        "bounds": [164, 477, 603, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b11.png",
+        "sha256": "23295c56be8f879844e3d11cbb71c3225734de515d128f58e525cd06b329d117",
+        "bytes": 39439
+      },
+      "after": {
+        "path": ".github/evidence/u3/a11.png",
+        "sha256": "cdecdbe6730c2a68e59fa160262d7451672f128243cfcb29526458513574bd95",
+        "bytes": 39470
+      }
+    },
+    {
+      "number": 12,
+      "suite": "ui",
+      "id": "auth-token-error",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b12.png",
+        "sha256": "ba38d3995a329f12d1bf6a0d4b34f542d2ae01f88bbd010e8305acbc086d5156",
+        "bytes": 131891
+      },
+      "after": {
+        "path": ".github/evidence/u3/a12.png",
+        "sha256": "ba38d3995a329f12d1bf6a0d4b34f542d2ae01f88bbd010e8305acbc086d5156",
+        "bytes": 131891
+      }
+    },
+    {
+      "number": 13,
+      "suite": "ui",
+      "id": "auth-resend-ready",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b13.png",
+        "sha256": "ab20d47ae928d5584bc6c4e329c77b0b8100a7c737afbf909ff41d54f3e199d0",
+        "bytes": 26842
+      },
+      "after": {
+        "path": ".github/evidence/u3/a13.png",
+        "sha256": "ab20d47ae928d5584bc6c4e329c77b0b8100a7c737afbf909ff41d54f3e199d0",
+        "bytes": 26842
+      }
+    },
+    {
+      "number": 14,
+      "suite": "ui",
+      "id": "auth-resend-ready",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 37,
+        "ratio": 4.817708333333333e-5,
+        "maxDelta": 43,
+        "bounds": [389, 958, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b14.png",
+        "sha256": "6ab13ed57b04cac920c001e3ee09ee8e0bc30328dc7a52f332cf648bec8fcc8b",
+        "bytes": 34204
+      },
+      "after": {
+        "path": ".github/evidence/u3/a14.png",
+        "sha256": "64734e6e444b29f99409ee9a8c3b1c6f1a28449e70b4be988fc6303dde82d80c",
+        "bytes": 34204
+      }
+    },
+    {
+      "number": 15,
+      "suite": "ui",
+      "id": "auth-resend-ready",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b15.png",
+        "sha256": "799f7e8e28751b476e45feb34b08615a892477de7e9827960860dfd74fb86c22",
+        "bytes": 126551
+      },
+      "after": {
+        "path": ".github/evidence/u3/a15.png",
+        "sha256": "799f7e8e28751b476e45feb34b08615a892477de7e9827960860dfd74fb86c22",
+        "bytes": 126551
+      }
+    },
+    {
+      "number": 16,
+      "suite": "ui",
+      "id": "auth-loading",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b16.png",
+        "sha256": "aa4bc9b908ef11252ae52ae5751b046a038b85421d08ab2e2ce6a1f7bcfd7da5",
+        "bytes": 21657
+      },
+      "after": {
+        "path": ".github/evidence/u3/a16.png",
+        "sha256": "aa4bc9b908ef11252ae52ae5751b046a038b85421d08ab2e2ce6a1f7bcfd7da5",
+        "bytes": 21657
+      }
+    },
+    {
+      "number": 17,
+      "suite": "ui",
+      "id": "auth-loading",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 37,
+        "ratio": 4.817708333333333e-5,
+        "maxDelta": 43,
+        "bounds": [389, 958, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b17.png",
+        "sha256": "277df4a64cbb2226174f12e6926d8abbed240363ae3d1c56601bbd2f805f88f0",
+        "bytes": 28307
+      },
+      "after": {
+        "path": ".github/evidence/u3/a17.png",
+        "sha256": "d5c310c6b63e1a0804319a3f053ecfd4f855100253775a70dce615b55af282f4",
+        "bytes": 28308
+      }
+    },
+    {
+      "number": 18,
+      "suite": "ui",
+      "id": "auth-loading",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b18.png",
+        "sha256": "6820ec8847ff71b59b08ef5d82d923d19fafd3905a691ede03568616dacab350",
+        "bytes": 120415
+      },
+      "after": {
+        "path": ".github/evidence/u3/a18.png",
+        "sha256": "6820ec8847ff71b59b08ef5d82d923d19fafd3905a691ede03568616dacab350",
+        "bytes": 120415
+      }
+    },
+    {
+      "number": 19,
+      "suite": "ui",
+      "id": "auth-disabled",
+      "width": 390,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 12,
+        "ratio": 3.076923076923077e-5,
+        "maxDelta": 1,
+        "bounds": [24, 242, 25, 273]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b19.png",
+        "sha256": "949df84bdfba8b0634e1b040415849f996566a36ff533d1d4c933f627ee5db02",
+        "bytes": 21317
+      },
+      "after": {
+        "path": ".github/evidence/u3/a19.png",
+        "sha256": "540516bce03b16f935bbd96bc9bed1979b741f643052987fe35be10b7970312f",
+        "bytes": 21320
+      }
+    },
+    {
+      "number": 20,
+      "suite": "ui",
+      "id": "auth-disabled",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 46,
+        "ratio": 5.989583333333333e-5,
+        "maxDelta": 43,
+        "bounds": [164, 255, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b20.png",
+        "sha256": "9bc331800d716af9663c53a11c2c22a67ec153b8c875a672c7abf3cf9d4ab46d",
+        "bytes": 27888
+      },
+      "after": {
+        "path": ".github/evidence/u3/a20.png",
+        "sha256": "b9ef01f8d916c63ee28cce7d2959f2ec610faf6c962901867c4514a9a5cd6484",
+        "bytes": 27891
+      }
+    },
+    {
+      "number": 21,
+      "suite": "ui",
+      "id": "auth-disabled",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b21.png",
+        "sha256": "6dfee2b1522b3a0ad553cd6f8d958c4719340f240c48a0e9d92c66d02b7e8f84",
+        "bytes": 119974
+      },
+      "after": {
+        "path": ".github/evidence/u3/a21.png",
+        "sha256": "6dfee2b1522b3a0ad553cd6f8d958c4719340f240c48a0e9d92c66d02b7e8f84",
+        "bytes": 119974
+      }
+    },
+    {
+      "number": 22,
+      "suite": "ui",
+      "id": "auth-success",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b22.png",
+        "sha256": "c69a7bc2462d5875c64f99e85a930bc292fd168156c66e965b37fab489e63c45",
+        "bytes": 15731
+      },
+      "after": {
+        "path": ".github/evidence/u3/a22.png",
+        "sha256": "c69a7bc2462d5875c64f99e85a930bc292fd168156c66e965b37fab489e63c45",
+        "bytes": 15731
+      }
+    },
+    {
+      "number": 23,
+      "suite": "ui",
+      "id": "auth-success",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 37,
+        "ratio": 4.817708333333333e-5,
+        "maxDelta": 43,
+        "bounds": [389, 958, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b23.png",
+        "sha256": "ab980501085f94a9b36b86a278ba89d9ec9a946ed46b217a0da004bdd763abc8",
+        "bytes": 21697
+      },
+      "after": {
+        "path": ".github/evidence/u3/a23.png",
+        "sha256": "e1a9bbaded2de5613b3056a7abf0770dbc69f9f0ce46d5d0cd6e98fc1ad96f01",
+        "bytes": 21696
+      }
+    },
+    {
+      "number": 24,
+      "suite": "ui",
+      "id": "auth-success",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b24.png",
+        "sha256": "f7fc0d9cf7108dd7039ad8d66bb111f8fa6255fc7362458a74fba92eb7b12c9c",
+        "bytes": 113723
+      },
+      "after": {
+        "path": ".github/evidence/u3/a24.png",
+        "sha256": "f7fc0d9cf7108dd7039ad8d66bb111f8fa6255fc7362458a74fba92eb7b12c9c",
+        "bytes": 113723
+      }
+    },
+    {
+      "number": 25,
+      "suite": "ui",
+      "id": "auth-long",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b25.png",
+        "sha256": "3423d718223cb34a7fdfcf05b1d05f29b4e83d4a8b8abd943df59139deb2c1f7",
+        "bytes": 32504
+      },
+      "after": {
+        "path": ".github/evidence/u3/a25.png",
+        "sha256": "3423d718223cb34a7fdfcf05b1d05f29b4e83d4a8b8abd943df59139deb2c1f7",
+        "bytes": 32504
+      }
+    },
+    {
+      "number": 26,
+      "suite": "ui",
+      "id": "auth-long",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 77,
+        "ratio": 0.00010026041666666667,
+        "maxDelta": 43,
+        "bounds": [164, 392, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b26.png",
+        "sha256": "f1fd82996618f8b40a4bdacfe4219ee7e128ad02c4454f9dc1a31e493cacd7db",
+        "bytes": 42755
+      },
+      "after": {
+        "path": ".github/evidence/u3/a26.png",
+        "sha256": "2a199350a1762bcee3f15267618aaff93516528831caca715a090f0df5a80d60",
+        "bytes": 42748
+      }
+    },
+    {
+      "number": 27,
+      "suite": "ui",
+      "id": "auth-long",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b27.png",
+        "sha256": "427c6ebe44e931a1c4026241b9cfee7e69b8cf0e7ef8918db92220a48885a4bb",
+        "bytes": 134860
+      },
+      "after": {
+        "path": ".github/evidence/u3/a27.png",
+        "sha256": "427c6ebe44e931a1c4026241b9cfee7e69b8cf0e7ef8918db92220a48885a4bb",
+        "bytes": 134860
+      }
+    },
+    {
+      "number": 28,
+      "suite": "ui",
+      "id": "metric-zero",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b28.png",
+        "sha256": "0f96122cbbf621157822a8e4c47e2b7c9c02578be03f6a2a0b0a986303db56e3",
+        "bytes": 5124
+      },
+      "after": {
+        "path": ".github/evidence/u3/a28.png",
+        "sha256": "0f96122cbbf621157822a8e4c47e2b7c9c02578be03f6a2a0b0a986303db56e3",
+        "bytes": 5124
+      }
+    },
+    {
+      "number": 29,
+      "suite": "ui",
+      "id": "metric-zero",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b29.png",
+        "sha256": "a2bfddc5fc0028ad8df3d6375dc8f759bcc43bc207748b9ae79333c3fbf0683f",
+        "bytes": 6615
+      },
+      "after": {
+        "path": ".github/evidence/u3/a29.png",
+        "sha256": "a2bfddc5fc0028ad8df3d6375dc8f759bcc43bc207748b9ae79333c3fbf0683f",
+        "bytes": 6615
+      }
+    },
+    {
+      "number": 30,
+      "suite": "ui",
+      "id": "metric-zero",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b30.png",
+        "sha256": "cc25810dc6bbaa232d1cc09e390bb33b78be928d5a4e7268d65cdc2278bbdb35",
+        "bytes": 8769
+      },
+      "after": {
+        "path": ".github/evidence/u3/a30.png",
+        "sha256": "cc25810dc6bbaa232d1cc09e390bb33b78be928d5a4e7268d65cdc2278bbdb35",
+        "bytes": 8769
+      }
+    },
+    {
+      "number": 31,
+      "suite": "ui",
+      "id": "metric-long",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b31.png",
+        "sha256": "68b9adf2e06e165bc94f6275e6268b590034881eeec839e0437194b8758cd946",
+        "bytes": 7078
+      },
+      "after": {
+        "path": ".github/evidence/u3/a31.png",
+        "sha256": "68b9adf2e06e165bc94f6275e6268b590034881eeec839e0437194b8758cd946",
+        "bytes": 7078
+      }
+    },
+    {
+      "number": 32,
+      "suite": "ui",
+      "id": "metric-long",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b32.png",
+        "sha256": "909815952f2d47993928f3c332f6d5cdf709ea5f1268dfe07a8202355557ccdb",
+        "bytes": 9330
+      },
+      "after": {
+        "path": ".github/evidence/u3/a32.png",
+        "sha256": "909815952f2d47993928f3c332f6d5cdf709ea5f1268dfe07a8202355557ccdb",
+        "bytes": 9330
+      }
+    },
+    {
+      "number": 33,
+      "suite": "ui",
+      "id": "metric-long",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b33.png",
+        "sha256": "3dad0f4b0232f62705f2e00828722ea4d19f978b98cd91c2203f5b335776bb75",
+        "bytes": 11598
+      },
+      "after": {
+        "path": ".github/evidence/u3/a33.png",
+        "sha256": "3dad0f4b0232f62705f2e00828722ea4d19f978b98cd91c2203f5b335776bb75",
+        "bytes": 11598
+      }
+    },
+    {
+      "number": 34,
+      "suite": "ui",
+      "id": "stat-neutral",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b34.png",
+        "sha256": "03104da0e1e58e91e1971da24c37ef97f18e524330fa4704eff4040b00fdfb49",
+        "bytes": 6158
+      },
+      "after": {
+        "path": ".github/evidence/u3/a34.png",
+        "sha256": "03104da0e1e58e91e1971da24c37ef97f18e524330fa4704eff4040b00fdfb49",
+        "bytes": 6158
+      }
+    },
+    {
+      "number": 35,
+      "suite": "ui",
+      "id": "stat-neutral",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b35.png",
+        "sha256": "279d226da0796ab5d683ddf4ae2c3fe0926363080d930ed16c904bf03e908cd2",
+        "bytes": 7354
+      },
+      "after": {
+        "path": ".github/evidence/u3/a35.png",
+        "sha256": "279d226da0796ab5d683ddf4ae2c3fe0926363080d930ed16c904bf03e908cd2",
+        "bytes": 7354
+      }
+    },
+    {
+      "number": 36,
+      "suite": "ui",
+      "id": "stat-neutral",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b36.png",
+        "sha256": "fc6d6d86dd88a8546fefea903889118e0410c9f6cde9b46791e9cd4b67b0cf6f",
+        "bytes": 9570
+      },
+      "after": {
+        "path": ".github/evidence/u3/a36.png",
+        "sha256": "fc6d6d86dd88a8546fefea903889118e0410c9f6cde9b46791e9cd4b67b0cf6f",
+        "bytes": 9570
+      }
+    },
+    {
+      "number": 37,
+      "suite": "ui",
+      "id": "stat-brand",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b37.png",
+        "sha256": "c7d6c8048378f64bf505803d936de7881f6ba8299b0c8d6155b8c9a4128f66f0",
+        "bytes": 6501
+      },
+      "after": {
+        "path": ".github/evidence/u3/a37.png",
+        "sha256": "c7d6c8048378f64bf505803d936de7881f6ba8299b0c8d6155b8c9a4128f66f0",
+        "bytes": 6501
+      }
+    },
+    {
+      "number": 38,
+      "suite": "ui",
+      "id": "stat-brand",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b38.png",
+        "sha256": "7fa331ef560adaa2168bce933da12a944f2623ba39b65e08daa5d77339f12eec",
+        "bytes": 7640
+      },
+      "after": {
+        "path": ".github/evidence/u3/a38.png",
+        "sha256": "7fa331ef560adaa2168bce933da12a944f2623ba39b65e08daa5d77339f12eec",
+        "bytes": 7640
+      }
+    },
+    {
+      "number": 39,
+      "suite": "ui",
+      "id": "stat-brand",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b39.png",
+        "sha256": "a61cecd783d15806c1af9591695e66d2b844561dd6f6c183312a40f8ee1b8985",
+        "bytes": 9817
+      },
+      "after": {
+        "path": ".github/evidence/u3/a39.png",
+        "sha256": "a61cecd783d15806c1af9591695e66d2b844561dd6f6c183312a40f8ee1b8985",
+        "bytes": 9817
+      }
+    },
+    {
+      "number": 40,
+      "suite": "ui",
+      "id": "stat-action",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b40.png",
+        "sha256": "61e12669e4b727d80c86d67478773648cc73f6446111c3a75185a3d3f00f2a4c",
+        "bytes": 7809
+      },
+      "after": {
+        "path": ".github/evidence/u3/a40.png",
+        "sha256": "61e12669e4b727d80c86d67478773648cc73f6446111c3a75185a3d3f00f2a4c",
+        "bytes": 7809
+      }
+    },
+    {
+      "number": 41,
+      "suite": "ui",
+      "id": "stat-action",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b41.png",
+        "sha256": "1f378579c9009b225d26df82ac86c646675cef36ca2e7c11a9e63f7d6ea8b533",
+        "bytes": 9001
+      },
+      "after": {
+        "path": ".github/evidence/u3/a41.png",
+        "sha256": "1f378579c9009b225d26df82ac86c646675cef36ca2e7c11a9e63f7d6ea8b533",
+        "bytes": 9001
+      }
+    },
+    {
+      "number": 42,
+      "suite": "ui",
+      "id": "stat-action",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b42.png",
+        "sha256": "01a0b35de2dde60d42f588e6937d90c985c171ce8d9459f8f49438ea093b58ba",
+        "bytes": 11184
+      },
+      "after": {
+        "path": ".github/evidence/u3/a42.png",
+        "sha256": "01a0b35de2dde60d42f588e6937d90c985c171ce8d9459f8f49438ea093b58ba",
+        "bytes": 11184
+      }
+    },
+    {
+      "number": 43,
+      "suite": "ui",
+      "id": "stat-long",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b43.png",
+        "sha256": "3a1959dc6aece142c584c490d471b4e964a1cbd88151111f3163a9d3939766f9",
+        "bytes": 11062
+      },
+      "after": {
+        "path": ".github/evidence/u3/a43.png",
+        "sha256": "3a1959dc6aece142c584c490d471b4e964a1cbd88151111f3163a9d3939766f9",
+        "bytes": 11062
+      }
+    },
+    {
+      "number": 44,
+      "suite": "ui",
+      "id": "stat-long",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b44.png",
+        "sha256": "dce5611a24575956ce2bddb28bbcc52f3ec73bf17cde96c4d3d532fd1ca9b144",
+        "bytes": 12658
+      },
+      "after": {
+        "path": ".github/evidence/u3/a44.png",
+        "sha256": "dce5611a24575956ce2bddb28bbcc52f3ec73bf17cde96c4d3d532fd1ca9b144",
+        "bytes": 12658
+      }
+    },
+    {
+      "number": 45,
+      "suite": "ui",
+      "id": "stat-long",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b45.png",
+        "sha256": "a6e78e79980c14e327f915718807f088dc24829a984426e95486d44c5470ebfb",
+        "bytes": 15456
+      },
+      "after": {
+        "path": ".github/evidence/u3/a45.png",
+        "sha256": "a6e78e79980c14e327f915718807f088dc24829a984426e95486d44c5470ebfb",
+        "bytes": 15456
+      }
+    },
+    {
+      "number": 46,
+      "suite": "ui",
+      "id": "result-normal",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b46.png",
+        "sha256": "e69a3765a3d4f969d7bb81a70818956d09d2104a49b3c7f7724e88381bdff78b",
+        "bytes": 20459
+      },
+      "after": {
+        "path": ".github/evidence/u3/a46.png",
+        "sha256": "e69a3765a3d4f969d7bb81a70818956d09d2104a49b3c7f7724e88381bdff78b",
+        "bytes": 20459
+      }
+    },
+    {
+      "number": 47,
+      "suite": "ui",
+      "id": "result-normal",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b47.png",
+        "sha256": "e386fbe6a47aff977e3d5a00222d5f8c0c7a5baec32ac1b97775eacc168367f8",
+        "bytes": 23179
+      },
+      "after": {
+        "path": ".github/evidence/u3/a47.png",
+        "sha256": "e386fbe6a47aff977e3d5a00222d5f8c0c7a5baec32ac1b97775eacc168367f8",
+        "bytes": 23179
+      }
+    },
+    {
+      "number": 48,
+      "suite": "ui",
+      "id": "result-normal",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b48.png",
+        "sha256": "593368bda5a7ce16000d0075df904d796be81dce208f1a72a7032f64742ce3a5",
+        "bytes": 25787
+      },
+      "after": {
+        "path": ".github/evidence/u3/a48.png",
+        "sha256": "593368bda5a7ce16000d0075df904d796be81dce208f1a72a7032f64742ce3a5",
+        "bytes": 25787
+      }
+    },
+    {
+      "number": 49,
+      "suite": "ui",
+      "id": "result-saving",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b49.png",
+        "sha256": "41162290022391d5b8525e757e45a3a8de1b8587ef3f25c16281af18cd9beddf",
+        "bytes": 22942
+      },
+      "after": {
+        "path": ".github/evidence/u3/a49.png",
+        "sha256": "41162290022391d5b8525e757e45a3a8de1b8587ef3f25c16281af18cd9beddf",
+        "bytes": 22942
+      }
+    },
+    {
+      "number": 50,
+      "suite": "ui",
+      "id": "result-saving",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b50.png",
+        "sha256": "85d91884a6e7f884822c8df5e025f8c13229028dd07f540e190e23afd2f4804d",
+        "bytes": 25740
+      },
+      "after": {
+        "path": ".github/evidence/u3/a50.png",
+        "sha256": "85d91884a6e7f884822c8df5e025f8c13229028dd07f540e190e23afd2f4804d",
+        "bytes": 25740
+      }
+    },
+    {
+      "number": 51,
+      "suite": "ui",
+      "id": "result-saving",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b51.png",
+        "sha256": "564cd55930fda7e26d297e223d5189ab2b222ea5cd8d03a971e7c978527e49c2",
+        "bytes": 28509
+      },
+      "after": {
+        "path": ".github/evidence/u3/a51.png",
+        "sha256": "564cd55930fda7e26d297e223d5189ab2b222ea5cd8d03a971e7c978527e49c2",
+        "bytes": 28509
+      }
+    },
+    {
+      "number": 52,
+      "suite": "ui",
+      "id": "result-error",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b52.png",
+        "sha256": "d44b976de906f54ee30f41a12260b08b591ee88307f1adce09efdea127e5ebf5",
+        "bytes": 24362
+      },
+      "after": {
+        "path": ".github/evidence/u3/a52.png",
+        "sha256": "d44b976de906f54ee30f41a12260b08b591ee88307f1adce09efdea127e5ebf5",
+        "bytes": 24362
+      }
+    },
+    {
+      "number": 53,
+      "suite": "ui",
+      "id": "result-error",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b53.png",
+        "sha256": "cc8ba0db5181536ee7a4cb8d477bd419be2eaacb41dd4d0fea66f86eff818d37",
+        "bytes": 27225
+      },
+      "after": {
+        "path": ".github/evidence/u3/a53.png",
+        "sha256": "cc8ba0db5181536ee7a4cb8d477bd419be2eaacb41dd4d0fea66f86eff818d37",
+        "bytes": 27225
+      }
+    },
+    {
+      "number": 54,
+      "suite": "ui",
+      "id": "result-error",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b54.png",
+        "sha256": "ee3a22c9fa2c20070f21ef0250a925a10c15eab2750f96c2d2f8084e8736febf",
+        "bytes": 30103
+      },
+      "after": {
+        "path": ".github/evidence/u3/a54.png",
+        "sha256": "ee3a22c9fa2c20070f21ef0250a925a10c15eab2750f96c2d2f8084e8736febf",
+        "bytes": 30103
+      }
+    },
+    {
+      "number": 55,
+      "suite": "ui",
+      "id": "cover-zero",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b55.png",
+        "sha256": "651121c30c241d269cfc33c9ab7774d323d52aa9141b4ee41bcb37f902e0ec4d",
+        "bytes": 10568
+      },
+      "after": {
+        "path": ".github/evidence/u3/a55.png",
+        "sha256": "651121c30c241d269cfc33c9ab7774d323d52aa9141b4ee41bcb37f902e0ec4d",
+        "bytes": 10568
+      }
+    },
+    {
+      "number": 56,
+      "suite": "ui",
+      "id": "cover-zero",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b56.png",
+        "sha256": "bc5417e5b692147d4d3983a4bd69633a156ac358c7898495323aa9a4bf5898f2",
+        "bytes": 11983
+      },
+      "after": {
+        "path": ".github/evidence/u3/a56.png",
+        "sha256": "bc5417e5b692147d4d3983a4bd69633a156ac358c7898495323aa9a4bf5898f2",
+        "bytes": 11983
+      }
+    },
+    {
+      "number": 57,
+      "suite": "ui",
+      "id": "cover-zero",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b57.png",
+        "sha256": "8d7ce12b150aaf232c9e72594072d28a2c95e0baf65ff4c079441868e02782e3",
+        "bytes": 14349
+      },
+      "after": {
+        "path": ".github/evidence/u3/a57.png",
+        "sha256": "8d7ce12b150aaf232c9e72594072d28a2c95e0baf65ff4c079441868e02782e3",
+        "bytes": 14349
+      }
+    },
+    {
+      "number": 58,
+      "suite": "ui",
+      "id": "cover-complete",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b58.png",
+        "sha256": "55b590c8d59b75ff0315951d4ded6c387378bcfa1fde9c71bf2184bb7cc80608",
+        "bytes": 10233
+      },
+      "after": {
+        "path": ".github/evidence/u3/a58.png",
+        "sha256": "55b590c8d59b75ff0315951d4ded6c387378bcfa1fde9c71bf2184bb7cc80608",
+        "bytes": 10233
+      }
+    },
+    {
+      "number": 59,
+      "suite": "ui",
+      "id": "cover-complete",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b59.png",
+        "sha256": "fae51798ba4c5ca7ce8cdc286bed50661e3f818aaeac76bcd6a6ca33fbebeb93",
+        "bytes": 11647
+      },
+      "after": {
+        "path": ".github/evidence/u3/a59.png",
+        "sha256": "fae51798ba4c5ca7ce8cdc286bed50661e3f818aaeac76bcd6a6ca33fbebeb93",
+        "bytes": 11647
+      }
+    },
+    {
+      "number": 60,
+      "suite": "ui",
+      "id": "cover-complete",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b60.png",
+        "sha256": "0858e3b032b02931095188735720f2653b3765f31abd54a1db71e52d47476e9e",
+        "bytes": 14019
+      },
+      "after": {
+        "path": ".github/evidence/u3/a60.png",
+        "sha256": "0858e3b032b02931095188735720f2653b3765f31abd54a1db71e52d47476e9e",
+        "bytes": 14019
+      }
+    },
+    {
+      "number": 61,
+      "suite": "ui",
+      "id": "cover-long",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b61.png",
+        "sha256": "c6761bc297a0e9b7c91df4d93740f08afaa99d4b983926743f036197e86bfaf4",
+        "bytes": 11727
+      },
+      "after": {
+        "path": ".github/evidence/u3/a61.png",
+        "sha256": "c6761bc297a0e9b7c91df4d93740f08afaa99d4b983926743f036197e86bfaf4",
+        "bytes": 11727
+      }
+    },
+    {
+      "number": 62,
+      "suite": "ui",
+      "id": "cover-long",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b62.png",
+        "sha256": "c3d49c9b139dedf2593c6e92ae15347c6742b92f36707727e5304040fafee5fc",
+        "bytes": 13212
+      },
+      "after": {
+        "path": ".github/evidence/u3/a62.png",
+        "sha256": "c3d49c9b139dedf2593c6e92ae15347c6742b92f36707727e5304040fafee5fc",
+        "bytes": 13212
+      }
+    },
+    {
+      "number": 63,
+      "suite": "ui",
+      "id": "cover-long",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b63.png",
+        "sha256": "3c90ae2370c8c8cbd93514f04b747363dd7424bc5d68941a6185f679127bd5d4",
+        "bytes": 15617
+      },
+      "after": {
+        "path": ".github/evidence/u3/a63.png",
+        "sha256": "3c90ae2370c8c8cbd93514f04b747363dd7424bc5d68941a6185f679127bd5d4",
+        "bytes": 15617
+      }
+    },
+    {
+      "number": 64,
+      "suite": "ui",
+      "id": "progress-default",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b64.png",
+        "sha256": "a5f0612a46e7716043def73c8b8b48c0a029566762182007428a3a5dd7513e8e",
+        "bytes": 5296
+      },
+      "after": {
+        "path": ".github/evidence/u3/a64.png",
+        "sha256": "a5f0612a46e7716043def73c8b8b48c0a029566762182007428a3a5dd7513e8e",
+        "bytes": 5296
+      }
+    },
+    {
+      "number": 65,
+      "suite": "ui",
+      "id": "progress-default",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b65.png",
+        "sha256": "b31dea195867b55da95b88b83ab596dafdcf7a6d33391195cf24fa12326f10b3",
+        "bytes": 6434
+      },
+      "after": {
+        "path": ".github/evidence/u3/a65.png",
+        "sha256": "b31dea195867b55da95b88b83ab596dafdcf7a6d33391195cf24fa12326f10b3",
+        "bytes": 6434
+      }
+    },
+    {
+      "number": 66,
+      "suite": "ui",
+      "id": "progress-default",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b66.png",
+        "sha256": "3ae380bd372ade39d66741277219bccb8e698aad183dcd819d561443a6789eb2",
+        "bytes": 8623
+      },
+      "after": {
+        "path": ".github/evidence/u3/a66.png",
+        "sha256": "3ae380bd372ade39d66741277219bccb8e698aad183dcd819d561443a6789eb2",
+        "bytes": 8623
+      }
+    },
+    {
+      "number": 67,
+      "suite": "ui",
+      "id": "progress-revealed",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b67.png",
+        "sha256": "3a703c2f94419795cbf60f793e49dc025adb8c7831b5b042796b767ef5c7aa8e",
+        "bytes": 5207
+      },
+      "after": {
+        "path": ".github/evidence/u3/a67.png",
+        "sha256": "3a703c2f94419795cbf60f793e49dc025adb8c7831b5b042796b767ef5c7aa8e",
+        "bytes": 5207
+      }
+    },
+    {
+      "number": 68,
+      "suite": "ui",
+      "id": "progress-revealed",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b68.png",
+        "sha256": "4d47b01aa81b08cd33066d4231fbf1bcc7720ea7bb31a61b03bbaefb26a8a839",
+        "bytes": 6351
+      },
+      "after": {
+        "path": ".github/evidence/u3/a68.png",
+        "sha256": "4d47b01aa81b08cd33066d4231fbf1bcc7720ea7bb31a61b03bbaefb26a8a839",
+        "bytes": 6351
+      }
+    },
+    {
+      "number": 69,
+      "suite": "ui",
+      "id": "progress-revealed",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b69.png",
+        "sha256": "1d56d0731b3b66cd8fc318e32da4cc7022e86b5fa84209b58ba0f743653d2e98",
+        "bytes": 8534
+      },
+      "after": {
+        "path": ".github/evidence/u3/a69.png",
+        "sha256": "1d56d0731b3b66cd8fc318e32da4cc7022e86b5fa84209b58ba0f743653d2e98",
+        "bytes": 8534
+      }
+    },
+    {
+      "number": 70,
+      "suite": "ui",
+      "id": "progress-complete",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b70.png",
+        "sha256": "2c5647ed0de657bbe80e5bccc4307d466059ab3e0873d42904912b5ee9c10dc6",
+        "bytes": 5099
+      },
+      "after": {
+        "path": ".github/evidence/u3/a70.png",
+        "sha256": "2c5647ed0de657bbe80e5bccc4307d466059ab3e0873d42904912b5ee9c10dc6",
+        "bytes": 5099
+      }
+    },
+    {
+      "number": 71,
+      "suite": "ui",
+      "id": "progress-complete",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b71.png",
+        "sha256": "e1a11c3d73fba69bc15fdb67015054612c0e3bb749cbccdcd4d8c78bf535fff2",
+        "bytes": 6258
+      },
+      "after": {
+        "path": ".github/evidence/u3/a71.png",
+        "sha256": "e1a11c3d73fba69bc15fdb67015054612c0e3bb749cbccdcd4d8c78bf535fff2",
+        "bytes": 6258
+      }
+    },
+    {
+      "number": 72,
+      "suite": "ui",
+      "id": "progress-complete",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b72.png",
+        "sha256": "958989a43353b4d6d1ebec7f5147456eba6f77b62e79f1c6553be74cfdc233ed",
+        "bytes": 8430
+      },
+      "after": {
+        "path": ".github/evidence/u3/a72.png",
+        "sha256": "958989a43353b4d6d1ebec7f5147456eba6f77b62e79f1c6553be74cfdc233ed",
+        "bytes": 8430
+      }
+    },
+    {
+      "number": 73,
+      "suite": "ui",
+      "id": "progress-large",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b73.png",
+        "sha256": "5025c4f90cd6dbe9387f1c70c4a3796d2788f2a3284916614bf80b98807d0688",
+        "bytes": 5738
+      },
+      "after": {
+        "path": ".github/evidence/u3/a73.png",
+        "sha256": "5025c4f90cd6dbe9387f1c70c4a3796d2788f2a3284916614bf80b98807d0688",
+        "bytes": 5738
+      }
+    },
+    {
+      "number": 74,
+      "suite": "ui",
+      "id": "progress-large",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b74.png",
+        "sha256": "6f66e1d4cb0be40617092de23322516db92bc13267167ca7c83e539ac9bab444",
+        "bytes": 6898
+      },
+      "after": {
+        "path": ".github/evidence/u3/a74.png",
+        "sha256": "6f66e1d4cb0be40617092de23322516db92bc13267167ca7c83e539ac9bab444",
+        "bytes": 6898
+      }
+    },
+    {
+      "number": 75,
+      "suite": "ui",
+      "id": "progress-large",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b75.png",
+        "sha256": "b67729c2991d35f765ff9aaca9de15412d56be095161f10e0b4ffccbca85dc4c",
+        "bytes": 9136
+      },
+      "after": {
+        "path": ".github/evidence/u3/a75.png",
+        "sha256": "b67729c2991d35f765ff9aaca9de15412d56be095161f10e0b4ffccbca85dc4c",
+        "bytes": 9136
+      }
+    },
+    {
+      "number": 76,
+      "suite": "ui",
+      "id": "progress-empty",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b76.png",
+        "sha256": "b23adbbec14f7056b68f14ff66e12f1573b40f12d28567fd713a64ef9c3b8234",
+        "bytes": 5050
+      },
+      "after": {
+        "path": ".github/evidence/u3/a76.png",
+        "sha256": "b23adbbec14f7056b68f14ff66e12f1573b40f12d28567fd713a64ef9c3b8234",
+        "bytes": 5050
+      }
+    },
+    {
+      "number": 77,
+      "suite": "ui",
+      "id": "progress-empty",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b77.png",
+        "sha256": "75c5d53763b921708425931901a3124d2d9b608c72aa26f7adef31c78c9e5b00",
+        "bytes": 6190
+      },
+      "after": {
+        "path": ".github/evidence/u3/a77.png",
+        "sha256": "75c5d53763b921708425931901a3124d2d9b608c72aa26f7adef31c78c9e5b00",
+        "bytes": 6190
+      }
+    },
+    {
+      "number": 78,
+      "suite": "ui",
+      "id": "progress-empty",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b78.png",
+        "sha256": "452bfdc896acb2f2568e77bb590daacb621846cdc827019196d53af9db4d31a2",
+        "bytes": 8362
+      },
+      "after": {
+        "path": ".github/evidence/u3/a78.png",
+        "sha256": "452bfdc896acb2f2568e77bb590daacb621846cdc827019196d53af9db4d31a2",
+        "bytes": 8362
+      }
+    },
+    {
+      "number": 79,
+      "suite": "ui",
+      "id": "progress-loading",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b79.png",
+        "sha256": "9a01c503ffba9108e71025ac2c3bcf012a44209601107adc51211cdf6df462b3",
+        "bytes": 5492
+      },
+      "after": {
+        "path": ".github/evidence/u3/a79.png",
+        "sha256": "9a01c503ffba9108e71025ac2c3bcf012a44209601107adc51211cdf6df462b3",
+        "bytes": 5492
+      }
+    },
+    {
+      "number": 80,
+      "suite": "ui",
+      "id": "progress-loading",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b80.png",
+        "sha256": "8b38906e65d37b3aa56b47048fa0bdf87bfb47b2eb8f537714669354531398ea",
+        "bytes": 6837
+      },
+      "after": {
+        "path": ".github/evidence/u3/a80.png",
+        "sha256": "8b38906e65d37b3aa56b47048fa0bdf87bfb47b2eb8f537714669354531398ea",
+        "bytes": 6837
+      }
+    },
+    {
+      "number": 81,
+      "suite": "ui",
+      "id": "progress-loading",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b81.png",
+        "sha256": "16ddaea972b0ae9e915847978a33556e5c965a86098bec272b2a174dcd1fd81c",
+        "bytes": 8994
+      },
+      "after": {
+        "path": ".github/evidence/u3/a81.png",
+        "sha256": "16ddaea972b0ae9e915847978a33556e5c965a86098bec272b2a174dcd1fd81c",
+        "bytes": 8994
+      }
+    },
+    {
+      "number": 82,
+      "suite": "ui",
+      "id": "calendar-month",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b82.png",
+        "sha256": "130d8008020472bbcd53a60f87da7a6dc9683ca9c3101cefc77729750b392b4f",
+        "bytes": 44445
+      },
+      "after": {
+        "path": ".github/evidence/u3/a82.png",
+        "sha256": "130d8008020472bbcd53a60f87da7a6dc9683ca9c3101cefc77729750b392b4f",
+        "bytes": 44445
+      }
+    },
+    {
+      "number": 83,
+      "suite": "ui",
+      "id": "calendar-month",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b83.png",
+        "sha256": "1b680f9f4c32d750de466003009e592945271d28f667a4d570af98802d0e2657",
+        "bytes": 48176
+      },
+      "after": {
+        "path": ".github/evidence/u3/a83.png",
+        "sha256": "1b680f9f4c32d750de466003009e592945271d28f667a4d570af98802d0e2657",
+        "bytes": 48176
+      }
+    },
+    {
+      "number": 84,
+      "suite": "ui",
+      "id": "calendar-month",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b84.png",
+        "sha256": "27fef4b4f143559629693d9fd7e91078166fa90bced272323776c42690a013af",
+        "bytes": 21003
+      },
+      "after": {
+        "path": ".github/evidence/u3/a84.png",
+        "sha256": "27fef4b4f143559629693d9fd7e91078166fa90bced272323776c42690a013af",
+        "bytes": 21003
+      }
+    },
+    {
+      "number": 85,
+      "suite": "ui",
+      "id": "calendar-week",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b85.png",
+        "sha256": "130d8008020472bbcd53a60f87da7a6dc9683ca9c3101cefc77729750b392b4f",
+        "bytes": 44445
+      },
+      "after": {
+        "path": ".github/evidence/u3/a85.png",
+        "sha256": "130d8008020472bbcd53a60f87da7a6dc9683ca9c3101cefc77729750b392b4f",
+        "bytes": 44445
+      }
+    },
+    {
+      "number": 86,
+      "suite": "ui",
+      "id": "calendar-week",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b86.png",
+        "sha256": "1b680f9f4c32d750de466003009e592945271d28f667a4d570af98802d0e2657",
+        "bytes": 48176
+      },
+      "after": {
+        "path": ".github/evidence/u3/a86.png",
+        "sha256": "1b680f9f4c32d750de466003009e592945271d28f667a4d570af98802d0e2657",
+        "bytes": 48176
+      }
+    },
+    {
+      "number": 87,
+      "suite": "ui",
+      "id": "calendar-week",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b87.png",
+        "sha256": "4b08cea9fe751414a0c9f781dc3608a822fef6bf7e34a520ce57e34e7a08dbaa",
+        "bytes": 28241
+      },
+      "after": {
+        "path": ".github/evidence/u3/a87.png",
+        "sha256": "4b08cea9fe751414a0c9f781dc3608a822fef6bf7e34a520ce57e34e7a08dbaa",
+        "bytes": 28241
+      }
+    },
+    {
+      "number": 88,
+      "suite": "ui",
+      "id": "state-empty",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b88.png",
+        "sha256": "0428db067e8b595b7d900874b41a08ffa25695c1eb3600c1802d6841bc4f9dd0",
+        "bytes": 9699
+      },
+      "after": {
+        "path": ".github/evidence/u3/a88.png",
+        "sha256": "0428db067e8b595b7d900874b41a08ffa25695c1eb3600c1802d6841bc4f9dd0",
+        "bytes": 9699
+      }
+    },
+    {
+      "number": 89,
+      "suite": "ui",
+      "id": "state-empty",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b89.png",
+        "sha256": "45e562f8e07a5ccdc7a8039643fceb46a91b553eaa99743d699e241467b158ed",
+        "bytes": 11183
+      },
+      "after": {
+        "path": ".github/evidence/u3/a89.png",
+        "sha256": "45e562f8e07a5ccdc7a8039643fceb46a91b553eaa99743d699e241467b158ed",
+        "bytes": 11183
+      }
+    },
+    {
+      "number": 90,
+      "suite": "ui",
+      "id": "state-empty",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b90.png",
+        "sha256": "4e5a15ab7efa9427fc2a2008b13f5e74ec795c730506b2f173bd0f7ee68abe79",
+        "bytes": 13649
+      },
+      "after": {
+        "path": ".github/evidence/u3/a90.png",
+        "sha256": "4e5a15ab7efa9427fc2a2008b13f5e74ec795c730506b2f173bd0f7ee68abe79",
+        "bytes": 13649
+      }
+    },
+    {
+      "number": 91,
+      "suite": "ui",
+      "id": "state-loading",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b91.png",
+        "sha256": "009c7a63fd0f008de859320bbd90dbfe650c5c78cc64ce27156cef1e2baa0879",
+        "bytes": 10186
+      },
+      "after": {
+        "path": ".github/evidence/u3/a91.png",
+        "sha256": "009c7a63fd0f008de859320bbd90dbfe650c5c78cc64ce27156cef1e2baa0879",
+        "bytes": 10186
+      }
+    },
+    {
+      "number": 92,
+      "suite": "ui",
+      "id": "state-loading",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b92.png",
+        "sha256": "1b840cbb1d488a25e0911f596727c8aad71af9648696f5775565b716022b3f6b",
+        "bytes": 11738
+      },
+      "after": {
+        "path": ".github/evidence/u3/a92.png",
+        "sha256": "1b840cbb1d488a25e0911f596727c8aad71af9648696f5775565b716022b3f6b",
+        "bytes": 11738
+      }
+    },
+    {
+      "number": 93,
+      "suite": "ui",
+      "id": "state-loading",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b93.png",
+        "sha256": "a4edaf1d9e73f739768d0186929e71339499a12e69084fab161914a5c8fd3690",
+        "bytes": 14251
+      },
+      "after": {
+        "path": ".github/evidence/u3/a93.png",
+        "sha256": "a4edaf1d9e73f739768d0186929e71339499a12e69084fab161914a5c8fd3690",
+        "bytes": 14251
+      }
+    },
+    {
+      "number": 94,
+      "suite": "ui",
+      "id": "state-canonical-loading",
+      "width": 390,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 15487,
+        "ratio": 0.03971025641025641,
+        "maxDelta": 245,
+        "bounds": [41, 97, 348, 238]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b94.png",
+        "sha256": "d9ad8b1df7851ec63d1482f82cdfbf9167bb9d4467248d1d612185fabfd7292c",
+        "bytes": 9587
+      },
+      "after": {
+        "path": ".github/evidence/u3/a94.png",
+        "sha256": "009c7a63fd0f008de859320bbd90dbfe650c5c78cc64ce27156cef1e2baa0879",
+        "bytes": 10186
+      }
+    },
+    {
+      "number": 95,
+      "suite": "ui",
+      "id": "state-canonical-loading",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 15487,
+        "ratio": 0.020165364583333335,
+        "maxDelta": 245,
+        "bounds": [230, 97, 537, 238]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b95.png",
+        "sha256": "597d5ce1279c4bb5ab3db8b5a36c7918e5623525d482021340ad1b3b491a0676",
+        "bytes": 11076
+      },
+      "after": {
+        "path": ".github/evidence/u3/a95.png",
+        "sha256": "1b840cbb1d488a25e0911f596727c8aad71af9648696f5775565b716022b3f6b",
+        "bytes": 11738
+      }
+    },
+    {
+      "number": 96,
+      "suite": "ui",
+      "id": "state-canonical-loading",
+      "width": 1440,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 15487,
+        "ratio": 0.010754861111111111,
+        "maxDelta": 245,
+        "bounds": [566, 97, 873, 238]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b96.png",
+        "sha256": "f8c209f45f626e1ecbd97a202c9d7f8f5aba179658c73187c6b7a3a906658942",
+        "bytes": 13590
+      },
+      "after": {
+        "path": ".github/evidence/u3/a96.png",
+        "sha256": "a4edaf1d9e73f739768d0186929e71339499a12e69084fab161914a5c8fd3690",
+        "bytes": 14251
+      }
+    },
+    {
+      "number": 97,
+      "suite": "ui",
+      "id": "state-error",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b97.png",
+        "sha256": "e46c772f0789ac02362977dde0f92a28630db20d9ba9972648e9ac87d447f109",
+        "bytes": 12960
+      },
+      "after": {
+        "path": ".github/evidence/u3/a97.png",
+        "sha256": "e46c772f0789ac02362977dde0f92a28630db20d9ba9972648e9ac87d447f109",
+        "bytes": 12960
+      }
+    },
+    {
+      "number": 98,
+      "suite": "ui",
+      "id": "state-error",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b98.png",
+        "sha256": "f705da886d3f8db7746f0a848a54ae4c8f4088acd2a3eb59bc01a5f9f37aeed2",
+        "bytes": 14715
+      },
+      "after": {
+        "path": ".github/evidence/u3/a98.png",
+        "sha256": "f705da886d3f8db7746f0a848a54ae4c8f4088acd2a3eb59bc01a5f9f37aeed2",
+        "bytes": 14715
+      }
+    },
+    {
+      "number": 99,
+      "suite": "ui",
+      "id": "state-error",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b99.png",
+        "sha256": "daa4bcfa4c6d8e68d644f2cceb2d167b789d979734bdb088169211c7727d5efe",
+        "bytes": 17463
+      },
+      "after": {
+        "path": ".github/evidence/u3/a99.png",
+        "sha256": "daa4bcfa4c6d8e68d644f2cceb2d167b789d979734bdb088169211c7727d5efe",
+        "bytes": 17463
+      }
+    },
+    {
+      "number": 100,
+      "suite": "ui",
+      "id": "text-subtle",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b100.png",
+        "sha256": "bb093790275f46149558045a8f9d5d8bda4e85fe170580bd434dbd751b68cf38",
+        "bytes": 5476
+      },
+      "after": {
+        "path": ".github/evidence/u3/a100.png",
+        "sha256": "bb093790275f46149558045a8f9d5d8bda4e85fe170580bd434dbd751b68cf38",
+        "bytes": 5476
+      }
+    },
+    {
+      "number": 101,
+      "suite": "ui",
+      "id": "text-subtle",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b101.png",
+        "sha256": "22b9a7081714bf45154c24c64dd90eb7f12049c6687e2889f1f5eefcbc991289",
+        "bytes": 6645
+      },
+      "after": {
+        "path": ".github/evidence/u3/a101.png",
+        "sha256": "22b9a7081714bf45154c24c64dd90eb7f12049c6687e2889f1f5eefcbc991289",
+        "bytes": 6645
+      }
+    },
+    {
+      "number": 102,
+      "suite": "ui",
+      "id": "text-subtle",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b102.png",
+        "sha256": "74d0178064986751db80da658eb16a9552636101dd1b38d1f36de45998d721e2",
+        "bytes": 8841
+      },
+      "after": {
+        "path": ".github/evidence/u3/a102.png",
+        "sha256": "74d0178064986751db80da658eb16a9552636101dd1b38d1f36de45998d721e2",
+        "bytes": 8841
+      }
+    },
+    {
+      "number": 103,
+      "suite": "ui",
+      "id": "text-danger",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b103.png",
+        "sha256": "9aced9faa9066788cc79ba18d608a2e9abf079d23e0dcbbc16259716ce4572e7",
+        "bytes": 5391
+      },
+      "after": {
+        "path": ".github/evidence/u3/a103.png",
+        "sha256": "9aced9faa9066788cc79ba18d608a2e9abf079d23e0dcbbc16259716ce4572e7",
+        "bytes": 5391
+      }
+    },
+    {
+      "number": 104,
+      "suite": "ui",
+      "id": "text-danger",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b104.png",
+        "sha256": "1ba7fb7d3f08c2ec177cf9ca6c47d5d00f5f5aa63e3f36213446abe9f7135e21",
+        "bytes": 6547
+      },
+      "after": {
+        "path": ".github/evidence/u3/a104.png",
+        "sha256": "1ba7fb7d3f08c2ec177cf9ca6c47d5d00f5f5aa63e3f36213446abe9f7135e21",
+        "bytes": 6547
+      }
+    },
+    {
+      "number": 105,
+      "suite": "ui",
+      "id": "text-danger",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b105.png",
+        "sha256": "4b4a3321eb2012f6fe209e98910a0a04102450eab36f4a7acd3631871703c39a",
+        "bytes": 8711
+      },
+      "after": {
+        "path": ".github/evidence/u3/a105.png",
+        "sha256": "4b4a3321eb2012f6fe209e98910a0a04102450eab36f4a7acd3631871703c39a",
+        "bytes": 8711
+      }
+    },
+    {
+      "number": 106,
+      "suite": "ui",
+      "id": "text-focus",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b106.png",
+        "sha256": "1017dfaafeafa3fb8ca6cfeb6fbbcd30c34765ebdf5fb1d4e90339d9f60d19d3",
+        "bytes": 6163
+      },
+      "after": {
+        "path": ".github/evidence/u3/a106.png",
+        "sha256": "1017dfaafeafa3fb8ca6cfeb6fbbcd30c34765ebdf5fb1d4e90339d9f60d19d3",
+        "bytes": 6163
+      }
+    },
+    {
+      "number": 107,
+      "suite": "ui",
+      "id": "text-focus",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b107.png",
+        "sha256": "96bde778e6e04795b6881c87303ff6b40d0b0e4e5dd20dfdc189cf6a68822825",
+        "bytes": 7343
+      },
+      "after": {
+        "path": ".github/evidence/u3/a107.png",
+        "sha256": "96bde778e6e04795b6881c87303ff6b40d0b0e4e5dd20dfdc189cf6a68822825",
+        "bytes": 7343
+      }
+    },
+    {
+      "number": 108,
+      "suite": "ui",
+      "id": "text-focus",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b108.png",
+        "sha256": "8014e1722848aa6dfc43d9c31f13e24e2c529af2195127c53b1fef17085248a9",
+        "bytes": 9523
+      },
+      "after": {
+        "path": ".github/evidence/u3/a108.png",
+        "sha256": "8014e1722848aa6dfc43d9c31f13e24e2c529af2195127c53b1fef17085248a9",
+        "bytes": 9523
+      }
+    },
+    {
+      "number": 109,
+      "suite": "ui",
+      "id": "text-hover",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b109.png",
+        "sha256": "8722e43e549e130e71a3c0bcf7fff031d39d5fa0689a82eb89dcd4439b497495",
+        "bytes": 5529
+      },
+      "after": {
+        "path": ".github/evidence/u3/a109.png",
+        "sha256": "8722e43e549e130e71a3c0bcf7fff031d39d5fa0689a82eb89dcd4439b497495",
+        "bytes": 5529
+      }
+    },
+    {
+      "number": 110,
+      "suite": "ui",
+      "id": "text-hover",
+      "width": 768,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b110.png",
+        "sha256": "af597795902aa1c1fc0cb053cdb169267b3ff5f52adc0c3ba5556f4955d88991",
+        "bytes": 6686
+      },
+      "after": {
+        "path": ".github/evidence/u3/a110.png",
+        "sha256": "af597795902aa1c1fc0cb053cdb169267b3ff5f52adc0c3ba5556f4955d88991",
+        "bytes": 6686
+      }
+    },
+    {
+      "number": 111,
+      "suite": "ui",
+      "id": "text-hover",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b111.png",
+        "sha256": "d968031b0efc09ea208a17dabdd11fa9d0fe5e5406947d70bfa91f833fad8fd8",
+        "bytes": 8871
+      },
+      "after": {
+        "path": ".github/evidence/u3/a111.png",
+        "sha256": "d968031b0efc09ea208a17dabdd11fa9d0fe5e5406947d70bfa91f833fad8fd8",
+        "bytes": 8871
+      }
+    },
+    {
+      "number": 112,
+      "suite": "ui",
+      "id": "auth-legal",
+      "width": 390,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b112.png",
+        "sha256": "9ea0862adb721f82d2c4c6253492d14c0afa48ce72c09d4c57522a971279bda4",
+        "bytes": 25386
+      },
+      "after": {
+        "path": ".github/evidence/u3/a112.png",
+        "sha256": "9ea0862adb721f82d2c4c6253492d14c0afa48ce72c09d4c57522a971279bda4",
+        "bytes": 25386
+      }
+    },
+    {
+      "number": 113,
+      "suite": "ui",
+      "id": "auth-legal",
+      "width": 768,
+      "pixelIdentical": false,
+      "pixelDifference": {
+        "count": 37,
+        "ratio": 4.817708333333333e-5,
+        "maxDelta": 43,
+        "bounds": [389, 958, 509, 967]
+      },
+      "before": {
+        "path": ".github/evidence/u3/b113.png",
+        "sha256": "b53a2a28b2a46588c617d69b6f8dccd9352a71b2b931215edfd6fd388ed90777",
+        "bytes": 31908
+      },
+      "after": {
+        "path": ".github/evidence/u3/a113.png",
+        "sha256": "1ec6a2635c724a9b2495bf31fd223f59d91361065a91b9b2f613330444073b56",
+        "bytes": 31907
+      }
+    },
+    {
+      "number": 114,
+      "suite": "ui",
+      "id": "auth-legal",
+      "width": 1440,
+      "pixelIdentical": true,
+      "pixelDifference": null,
+      "before": {
+        "path": ".github/evidence/u3/b114.png",
+        "sha256": "3aa353a59a62d7bb9b373685c97c1add27a4d84c766c152b77d52bdf0bd8fefd",
+        "bytes": 124239
+      },
+      "after": {
+        "path": ".github/evidence/u3/a114.png",
+        "sha256": "3aa353a59a62d7bb9b373685c97c1add27a4d84c766c152b77d52bdf0bd8fefd",
+        "bytes": 124239
+      }
+    }
+  ],
+  "humanReview": "pending current revision",
+  "supplemental": [
+    {
+      "number": 115,
+      "suite": "button-readability",
+      "id": "Button e Pressable 1",
+      "cases": [
+        "Button/Button/Default/390",
+        "Button/Button/Default/1440",
+        "Button/Button/With Icons/390",
+        "Button/Button/With Icons/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b115.png",
+        "sha256": "fd8b995aa7679955849de57e85b2fefe72bf31cfaffd20516b04ee707a0ab6f8",
+        "bytes": 21208
+      },
+      "after": {
+        "path": ".github/evidence/u3/a115.png",
+        "sha256": "fd8b995aa7679955849de57e85b2fefe72bf31cfaffd20516b04ee707a0ab6f8",
+        "bytes": 21208
+      }
+    },
+    {
+      "number": 116,
+      "suite": "button-readability",
+      "id": "Button e Pressable 2",
+      "cases": [
+        "Button/Button/Text/390",
+        "Button/Button/Text/1440",
+        "Button/Button/Text Subtle/390",
+        "Button/Button/Text Subtle/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b116.png",
+        "sha256": "b909276a501090aefee91e11a67d5e4c8c9c188c471f50c6cb92bdc4ef51ec4d",
+        "bytes": 18465
+      },
+      "after": {
+        "path": ".github/evidence/u3/a116.png",
+        "sha256": "b909276a501090aefee91e11a67d5e4c8c9c188c471f50c6cb92bdc4ef51ec4d",
+        "bytes": 18465
+      }
+    },
+    {
+      "number": 117,
+      "suite": "button-readability",
+      "id": "Button e Pressable 3",
+      "cases": [
+        "Button/Button/Text Danger/390",
+        "Button/Button/Text Danger/1440",
+        "Button/Button/Text With Icons/390",
+        "Button/Button/Text With Icons/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b117.png",
+        "sha256": "5425857baa4c17c2a2a1177f1edcff0682fdf8c95ac03954fd24447de77232b7",
+        "bytes": 19382
+      },
+      "after": {
+        "path": ".github/evidence/u3/a117.png",
+        "sha256": "5425857baa4c17c2a2a1177f1edcff0682fdf8c95ac03954fd24447de77232b7",
+        "bytes": 19382
+      }
+    },
+    {
+      "number": 118,
+      "suite": "button-readability",
+      "id": "Button e Pressable 4",
+      "cases": [
+        "Button/Button/Text Loading/390",
+        "Button/Button/Text Loading/1440",
+        "Button/Button/Loading/390",
+        "Button/Button/Loading/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b118.png",
+        "sha256": "170af5f3c3e8fc6aff9a2dbc9535d26bf6d9e316cebfe0a19afd3dc4cdbc5e67",
+        "bytes": 20577
+      },
+      "after": {
+        "path": ".github/evidence/u3/a118.png",
+        "sha256": "170af5f3c3e8fc6aff9a2dbc9535d26bf6d9e316cebfe0a19afd3dc4cdbc5e67",
+        "bytes": 20577
+      }
+    },
+    {
+      "number": 119,
+      "suite": "button-readability",
+      "id": "Button e Pressable 5",
+      "cases": [
+        "Button/Button/Stress/390",
+        "Button/Button/Stress/1440",
+        "Button/Pressable/Default/390",
+        "Button/Pressable/Default/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b119.png",
+        "sha256": "46d8656373a114c3216a283b62821acddf83c432793e1d0297f3d8a8658e7d39",
+        "bytes": 40594
+      },
+      "after": {
+        "path": ".github/evidence/u3/a119.png",
+        "sha256": "46d8656373a114c3216a283b62821acddf83c432793e1d0297f3d8a8658e7d39",
+        "bytes": 40594
+      }
+    },
+    {
+      "number": 120,
+      "suite": "button-readability",
+      "id": "Button e Pressable 6",
+      "cases": [
+        "Button/Pressable/Pressed/390",
+        "Button/Pressable/Pressed/1440",
+        "Button/Pressable/Disabled/390",
+        "Button/Pressable/Disabled/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b120.png",
+        "sha256": "4004b150ffeec7c692f5bafc81699c159c7ae28e2ad743acd697e5bd4cc3f80a",
+        "bytes": 21207
+      },
+      "after": {
+        "path": ".github/evidence/u3/a120.png",
+        "sha256": "4004b150ffeec7c692f5bafc81699c159c7ae28e2ad743acd697e5bd4cc3f80a",
+        "bytes": 21207
+      }
+    },
+    {
+      "number": 121,
+      "suite": "button-readability",
+      "id": "Button e Pressable 11",
+      "cases": [
+        "primary/sm/390",
+        "primary/sm/1440",
+        "primary/lg/390",
+        "primary/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b121.png",
+        "sha256": "6229742a23acf8202a17e1bf3d74c8687f3576c239092baddc2927fa69feb418",
+        "bytes": 18303
+      },
+      "after": {
+        "path": ".github/evidence/u3/a121.png",
+        "sha256": "6229742a23acf8202a17e1bf3d74c8687f3576c239092baddc2927fa69feb418",
+        "bytes": 18303
+      }
+    },
+    {
+      "number": 122,
+      "suite": "button-readability",
+      "id": "Button e Pressable 12",
+      "cases": [
+        "secondary/sm/390",
+        "secondary/sm/1440",
+        "secondary/lg/390",
+        "secondary/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b122.png",
+        "sha256": "cbb3448d064b501fa4ccb4a60f034f7b505cf06424614ec739a50feb53bf4fc8",
+        "bytes": 21580
+      },
+      "after": {
+        "path": ".github/evidence/u3/a122.png",
+        "sha256": "cbb3448d064b501fa4ccb4a60f034f7b505cf06424614ec739a50feb53bf4fc8",
+        "bytes": 21580
+      }
+    },
+    {
+      "number": 123,
+      "suite": "button-readability",
+      "id": "Button e Pressable 13",
+      "cases": [
+        "tertiary/sm/390",
+        "tertiary/sm/1440",
+        "tertiary/lg/390",
+        "tertiary/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b123.png",
+        "sha256": "aa5ea905d809b2091dfaa8600f9f68e1fd134733d0d166a24feb5e1be1f2b9b6",
+        "bytes": 15890
+      },
+      "after": {
+        "path": ".github/evidence/u3/a123.png",
+        "sha256": "aa5ea905d809b2091dfaa8600f9f68e1fd134733d0d166a24feb5e1be1f2b9b6",
+        "bytes": 15890
+      }
+    },
+    {
+      "number": 124,
+      "suite": "button-readability",
+      "id": "Button e Pressable 14",
+      "cases": [
+        "brand/sm/390",
+        "brand/sm/1440",
+        "brand/lg/390",
+        "brand/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b124.png",
+        "sha256": "3c86213a05f85deb69d49cbf55abc4497f445e2a7570fbdddeb826005d4a963c",
+        "bytes": 18709
+      },
+      "after": {
+        "path": ".github/evidence/u3/a124.png",
+        "sha256": "3c86213a05f85deb69d49cbf55abc4497f445e2a7570fbdddeb826005d4a963c",
+        "bytes": 18709
+      }
+    },
+    {
+      "number": 125,
+      "suite": "button-readability",
+      "id": "Button e Pressable 15",
+      "cases": [
+        "danger/sm/390",
+        "danger/sm/1440",
+        "danger/lg/390",
+        "danger/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b125.png",
+        "sha256": "366f49398e8f6bd851177ba74ec6b696f79a2e27a722f1f3023217fa0afa8ade",
+        "bytes": 19379
+      },
+      "after": {
+        "path": ".github/evidence/u3/a125.png",
+        "sha256": "366f49398e8f6bd851177ba74ec6b696f79a2e27a722f1f3023217fa0afa8ade",
+        "bytes": 19379
+      }
+    },
+    {
+      "number": 126,
+      "suite": "button-readability",
+      "id": "Button e Pressable 16",
+      "cases": [
+        "success/sm/390",
+        "success/sm/1440",
+        "success/lg/390",
+        "success/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b126.png",
+        "sha256": "47011a68ab6b00eb2bb919c501cb7499060756b3955afeeabc9fd4354fcaa8bb",
+        "bytes": 18632
+      },
+      "after": {
+        "path": ".github/evidence/u3/a126.png",
+        "sha256": "47011a68ab6b00eb2bb919c501cb7499060756b3955afeeabc9fd4354fcaa8bb",
+        "bytes": 18632
+      }
+    },
+    {
+      "number": 127,
+      "suite": "button-readability",
+      "id": "Button e Pressable 17",
+      "cases": [
+        "inverse/sm/390",
+        "inverse/sm/1440",
+        "inverse/lg/390",
+        "inverse/lg/1440"
+      ],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b127.png",
+        "sha256": "592b2f715c9526964fb6ced58015b41a9388fe2d4b6d94daa724d48e98d7e70c",
+        "bytes": 13199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a127.png",
+        "sha256": "592b2f715c9526964fb6ced58015b41a9388fe2d4b6d94daa724d48e98d7e70c",
+        "bytes": 13199
+      }
+    },
+    {
+      "number": 128,
+      "suite": "button-readability",
+      "id": "Button e Pressable 18",
+      "cases": ["disabled/390", "disabled/1440", "compact/390", "compact/1440"],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b128.png",
+        "sha256": "171aab66311777db848adee27a1407b6ffb9bdb48a8e4c5bc2aa0cc46d51a882",
+        "bytes": 18163
+      },
+      "after": {
+        "path": ".github/evidence/u3/a128.png",
+        "sha256": "171aab66311777db848adee27a1407b6ffb9bdb48a8e4c5bc2aa0cc46d51a882",
+        "bytes": 18163
+      }
+    },
+    {
+      "number": 129,
+      "suite": "button-readability",
+      "id": "Button e Pressable 19",
+      "cases": ["focus/390", "focus/1440", "hover/390", "hover/1440"],
+      "sourceRevision": "d4bfecec4b3ecf00a064827b1fcdec029b1806d8",
+      "reuse": "Button/Pressable source unchanged since exact 76-pair equivalence proof; retired adapter sheets omitted",
+      "before": {
+        "path": ".github/evidence/u3/b129.png",
+        "sha256": "ef29816529b24b4badd4b81612379cd73eca1390691ffe6b69730a44aa4c17f9",
+        "bytes": 21614
+      },
+      "after": {
+        "path": ".github/evidence/u3/a129.png",
+        "sha256": "ef29816529b24b4badd4b81612379cd73eca1390691ffe6b69730a44aa4c17f9",
+        "bytes": 21614
+      }
+    }
+  ],
+  "supplementalPairs": 60,
+  "checks": {
+    "api": {
+      "values": 139,
+      "types": 207,
+      "declarations": 261
+    },
+    "focusedUniqueTests": 68,
+    "focusedFiles": 20,
+    "progressAccessibilityRecheck": 3,
+    "architectureRules": 12,
+    "package": "SSR and consumer build passed against f0304151b4b518ddfb64146fbbeb19d8d337634299004a8e726450362afba306",
+    "bundle": "existing budgets passed; new ScheduleCalendar entry 28773 raw / 7500 gzip within 40000 / 8000; 91 token references exactly equal",
+    "legalSpacingRegression": "passed; AuthLegalText followed by AuthActions keeps native submit margin",
+    "manifest": "6 passed after actual consumer references registered",
+    "storybook": "final build passed, including legal-copy story"
+  },
+  "contextStoryRepair": [
+    {
+      "number": 130,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 390,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b130.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a130.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    },
+    {
+      "number": 131,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 1281,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b131.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a131.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    },
+    {
+      "number": 132,
+      "suite": "auth-brand-story-context",
+      "id": "AuthBrandContent · contexto real",
+      "width": 2048,
+      "beforeRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+      "productionRuntimeChanged": false,
+      "before": {
+        "path": ".github/evidence/u3/b132.png",
+        "sha256": "becf7a0840a9d64568d3a5319b16fa747fbd4cd5439d74480ee101351a214389",
+        "bytes": 30199
+      },
+      "after": {
+        "path": ".github/evidence/u3/a132.png",
+        "sha256": "384934a7a0984dd8f197e099c94a6be6a39a8dc066ab93d72f9ffc246bd681f8",
+        "bytes": 93396
+      }
+    }
+  ],
+  "approval": {
+    "acceptedProductionRevision": "c02723c295d2d27b2cd9251ad536535dd05e3b21",
+    "source": "explicit product-owner reply",
+    "productionSourceChangedSinceApproval": false,
+    "storyContextReview": "pending current revision, three additional pairs"
+  }
+}

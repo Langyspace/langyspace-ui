@@ -131,14 +131,19 @@ try {
       )
       await visit('calendar')
       await page
-        .getByRole('button', { name: '09:00 · Aula', exact: true })
+        .getByRole('button', { name: 'Abrir aula', exact: true })
         .click()
       assert.deepEqual(await page.evaluate(() => window.reviewEvents), {
         open: 0,
         action: 1,
         audio: 0,
       })
-      await page.getByTestId('day').click({ position: { x: 180, y: 110 } })
+      await page
+        .getByRole('button', {
+          name: 'Dia 15 · Opções dos horários',
+          exact: true,
+        })
+        .click()
       assert.equal(await page.evaluate(() => window.reviewEvents.open), 1)
       await visit('dialog')
       await page

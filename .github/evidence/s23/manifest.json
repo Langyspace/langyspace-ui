@@ -1,0 +1,3188 @@
+{
+  "baseline": "914164b30767de42b5e32c11dfdbbcc4c2e176bd",
+  "source": "refactor/react-component-structure",
+  "catalogPairs": 796,
+  "composedPairs": 24,
+  "managerPairs": 2,
+  "entries": [
+    {
+      "label": "Catálogo",
+      "number": 1,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b001.png",
+          "sha256": "4ef09f86454d5768eb6526a19d59a3a06d92f5a09a6af304353760d87f46858b",
+          "bytes": 135732
+        },
+        "after": {
+          "path": ".github/evidence/s23/a001.png",
+          "sha256": "36b2b726ff1b0e0b944ac18213e4bf4818c89a26a367a057c3b693b0b6ebd42f",
+          "bytes": 137959
+        }
+      }
+    },
+    {
+      "label": "ActionLink",
+      "number": 2,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b002.png",
+          "sha256": "0f304a0f436c52036d7339b777b7c7fe5fadd680bc3e5d4fe5a009c7f36138a8",
+          "bytes": 214721
+        },
+        "after": {
+          "path": ".github/evidence/s23/a002.png",
+          "sha256": "0f304a0f436c52036d7339b777b7c7fe5fadd680bc3e5d4fe5a009c7f36138a8",
+          "bytes": 214721
+        }
+      }
+    },
+    {
+      "label": "Button",
+      "number": 3,
+      "pairs": 18,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b003.png",
+          "sha256": "4372287932c057671219882e2a447b13ec5fdf9458acad466fc526ce631dbc81",
+          "bytes": 424737
+        },
+        "after": {
+          "path": ".github/evidence/s23/a003.png",
+          "sha256": "4372287932c057671219882e2a447b13ec5fdf9458acad466fc526ce631dbc81",
+          "bytes": 424737
+        }
+      }
+    },
+    {
+      "label": "IconButton",
+      "number": 4,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b004.png",
+          "sha256": "4030f4fe6baa84b20f7cfb95d631280f95e03c045f23ff37301b0926da073438",
+          "bytes": 180589
+        },
+        "after": {
+          "path": ".github/evidence/s23/a004.png",
+          "sha256": "4030f4fe6baa84b20f7cfb95d631280f95e03c045f23ff37301b0926da073438",
+          "bytes": 180589
+        }
+      }
+    },
+    {
+      "label": "AuthAccent",
+      "number": 5,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b005.png",
+          "sha256": "76f64496fc8185ffcc5c85b978212efb3056a27f5c45a764c8f84dcbea1f9c24",
+          "bytes": 102267
+        },
+        "after": {
+          "path": ".github/evidence/s23/a005.png",
+          "sha256": "76f64496fc8185ffcc5c85b978212efb3056a27f5c45a764c8f84dcbea1f9c24",
+          "bytes": 102267
+        }
+      }
+    },
+    {
+      "label": "AuthDescription",
+      "number": 6,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b006.png",
+          "sha256": "1c8a86c49b64921c918494db7f3a1093e0e6287dafbddc70b8aa2478df676678",
+          "bytes": 175616
+        },
+        "after": {
+          "path": ".github/evidence/s23/a006.png",
+          "sha256": "1c8a86c49b64921c918494db7f3a1093e0e6287dafbddc70b8aa2478df676678",
+          "bytes": 175616
+        }
+      }
+    },
+    {
+      "label": "AuthTitle",
+      "number": 7,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b007.png",
+          "sha256": "160524c87fb8afa5e2b764a6554ada5c94a657c63584a7f4f2209dd2e7a966ee",
+          "bytes": 311749
+        },
+        "after": {
+          "path": ".github/evidence/s23/a007.png",
+          "sha256": "160524c87fb8afa5e2b764a6554ada5c94a657c63584a7f4f2209dd2e7a966ee",
+          "bytes": 311749
+        }
+      }
+    },
+    {
+      "label": "AuthBackButton",
+      "number": 8,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b008.png",
+          "sha256": "9d16c48468dc96c978651344f7364a9f6623e74cc27ee8b9bde47ac515bf39c8",
+          "bytes": 90054
+        },
+        "after": {
+          "path": ".github/evidence/s23/a008.png",
+          "sha256": "9d16c48468dc96c978651344f7364a9f6623e74cc27ee8b9bde47ac515bf39c8",
+          "bytes": 90054
+        }
+      }
+    },
+    {
+      "label": "AuthBrandAccent",
+      "number": 9,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b009.png",
+          "sha256": "952254f2abe2644ff2f27cc965504d4c527f8884b07da522f18b188727949583",
+          "bytes": 47120
+        },
+        "after": {
+          "path": ".github/evidence/s23/a009.png",
+          "sha256": "952254f2abe2644ff2f27cc965504d4c527f8884b07da522f18b188727949583",
+          "bytes": 47120
+        }
+      }
+    },
+    {
+      "label": "AuthBrandDescription",
+      "number": 10,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b010.png",
+          "sha256": "94009af234459e4a89d8f2991c5eb1855ffd541595a12095800d4ec8d86ad68b",
+          "bytes": 46948
+        },
+        "after": {
+          "path": ".github/evidence/s23/a010.png",
+          "sha256": "94009af234459e4a89d8f2991c5eb1855ffd541595a12095800d4ec8d86ad68b",
+          "bytes": 46948
+        }
+      }
+    },
+    {
+      "label": "AuthBrandFooter",
+      "number": 11,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b011.png",
+          "sha256": "2ddb15144414a22c6e0ad906a5fc4a356c252e6f6094e174fef7273d7f739f8e",
+          "bytes": 45227
+        },
+        "after": {
+          "path": ".github/evidence/s23/a011.png",
+          "sha256": "2ddb15144414a22c6e0ad906a5fc4a356c252e6f6094e174fef7273d7f739f8e",
+          "bytes": 45227
+        }
+      }
+    },
+    {
+      "label": "AuthBrandTitle",
+      "number": 12,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b012.png",
+          "sha256": "9237fd1094f51c1b2625a72543f4583de597c9f88f4a9c01a1c1f6ccd17c5f40",
+          "bytes": 73904
+        },
+        "after": {
+          "path": ".github/evidence/s23/a012.png",
+          "sha256": "9237fd1094f51c1b2625a72543f4583de597c9f88f4a9c01a1c1f6ccd17c5f40",
+          "bytes": 73904
+        }
+      }
+    },
+    {
+      "label": "AuthEyebrow",
+      "number": 13,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b013.png",
+          "sha256": "cdf65b7c4c1899180b57227e768ee656ef4ab04516149f25d16279aaf26d79ac",
+          "bytes": 44548
+        },
+        "after": {
+          "path": ".github/evidence/s23/a013.png",
+          "sha256": "cdf65b7c4c1899180b57227e768ee656ef4ab04516149f25d16279aaf26d79ac",
+          "bytes": 44548
+        }
+      }
+    },
+    {
+      "label": "AuthFooterLink",
+      "number": 14,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b014.png",
+          "sha256": "5109f30570ab2ca124001466cd6da6a5711941985c3184c88a3049b3574f9d4a",
+          "bytes": 47143
+        },
+        "after": {
+          "path": ".github/evidence/s23/a014.png",
+          "sha256": "5109f30570ab2ca124001466cd6da6a5711941985c3184c88a3049b3574f9d4a",
+          "bytes": 47143
+        }
+      }
+    },
+    {
+      "label": "AuthMobileFooter",
+      "number": 15,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b015.png",
+          "sha256": "3a2b2d80db061d03e5747d5e7fbb4d8ac75bec1fe49f010bdbe6256ff9ae96de",
+          "bytes": 44624
+        },
+        "after": {
+          "path": ".github/evidence/s23/a015.png",
+          "sha256": "3a2b2d80db061d03e5747d5e7fbb4d8ac75bec1fe49f010bdbe6256ff9ae96de",
+          "bytes": 44624
+        }
+      }
+    },
+    {
+      "label": "AuthProgress",
+      "number": 16,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b016.png",
+          "sha256": "0c5424d76f03e4043a113aeb6300ab84801214d4f7c667a9efb142d1d4cd7a81",
+          "bytes": 41704
+        },
+        "after": {
+          "path": ".github/evidence/s23/a016.png",
+          "sha256": "0c5424d76f03e4043a113aeb6300ab84801214d4f7c667a9efb142d1d4cd7a81",
+          "bytes": 41704
+        }
+      }
+    },
+    {
+      "label": "AuthResendButton",
+      "number": 17,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b017.png",
+          "sha256": "8cd6210b367766c2a7d9513a2cc425d9a8d99a99165bfaf06e0abe6916783ff4",
+          "bytes": 87966
+        },
+        "after": {
+          "path": ".github/evidence/s23/a017.png",
+          "sha256": "8cd6210b367766c2a7d9513a2cc425d9a8d99a99165bfaf06e0abe6916783ff4",
+          "bytes": 87966
+        }
+      }
+    },
+    {
+      "label": "AuthSubmitButton",
+      "number": 18,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b018.png",
+          "sha256": "6ac26ec40e00fa0ef8ad88f309eea34a43b6757cd697ccd4614983722c22f7a7",
+          "bytes": 92114
+        },
+        "after": {
+          "path": ".github/evidence/s23/a018.png",
+          "sha256": "6ac26ec40e00fa0ef8ad88f309eea34a43b6757cd697ccd4614983722c22f7a7",
+          "bytes": 92114
+        }
+      }
+    },
+    {
+      "label": "AuthSuccessIcon",
+      "number": 19,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b019.png",
+          "sha256": "55d4b15f3a7dc7079c3e44bc839b19a6b5f3728865e1828b5b3f40496556786f",
+          "bytes": 45306
+        },
+        "after": {
+          "path": ".github/evidence/s23/a019.png",
+          "sha256": "55d4b15f3a7dc7079c3e44bc839b19a6b5f3728865e1828b5b3f40496556786f",
+          "bytes": 45306
+        }
+      }
+    },
+    {
+      "label": "AuthTopLink",
+      "number": 20,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b020.png",
+          "sha256": "d9b962a28b9cb3c5dd11c8e039d14435f9fe0a18ec170a9eacaffd92b8f7853b",
+          "bytes": 45804
+        },
+        "after": {
+          "path": ".github/evidence/s23/a020.png",
+          "sha256": "d9b962a28b9cb3c5dd11c8e039d14435f9fe0a18ec170a9eacaffd92b8f7853b",
+          "bytes": 45804
+        }
+      }
+    },
+    {
+      "label": "AuthTopLinkHighlight",
+      "number": 21,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b021.png",
+          "sha256": "0c86ddae9ee8e58738c2343bef579ae5b372ce98c11c785fb7c54398508ab9b1",
+          "bytes": 43647
+        },
+        "after": {
+          "path": ".github/evidence/s23/a021.png",
+          "sha256": "0c86ddae9ee8e58738c2343bef579ae5b372ce98c11c785fb7c54398508ab9b1",
+          "bytes": 43647
+        }
+      }
+    },
+    {
+      "label": "BrandLink",
+      "number": 22,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b022.png",
+          "sha256": "dbc443078e18644fe1e3d1b99d15727b13cb7bf70efb4390dd992f19c132d02a",
+          "bytes": 42888
+        },
+        "after": {
+          "path": ".github/evidence/s23/a022.png",
+          "sha256": "dbc443078e18644fe1e3d1b99d15727b13cb7bf70efb4390dd992f19c132d02a",
+          "bytes": 42888
+        }
+      }
+    },
+    {
+      "label": "BrandLogo",
+      "number": 23,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b023.png",
+          "sha256": "a6ce7b8a45e4daa5eab392df5c218a3c111ae923d994d45d062bee8fd2304c69",
+          "bytes": 45564
+        },
+        "after": {
+          "path": ".github/evidence/s23/a023.png",
+          "sha256": "a6ce7b8a45e4daa5eab392df5c218a3c111ae923d994d45d062bee8fd2304c69",
+          "bytes": 45564
+        }
+      }
+    },
+    {
+      "label": "Checkbox",
+      "number": 24,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b024.png",
+          "sha256": "79c77d48130e49bd459569c578ecdc312a9af3790ed5113673f1acefa454d74d",
+          "bytes": 127610
+        },
+        "after": {
+          "path": ".github/evidence/s23/a024.png",
+          "sha256": "79c77d48130e49bd459569c578ecdc312a9af3790ed5113673f1acefa454d74d",
+          "bytes": 127610
+        }
+      }
+    },
+    {
+      "label": "DocumentNavigationLink",
+      "number": 25,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b025.png",
+          "sha256": "e60fdddc8450fbeab5e5daf71564207a573c40af8936ff1cd6ff2b26f3cd847c",
+          "bytes": 42869
+        },
+        "after": {
+          "path": ".github/evidence/s23/a025.png",
+          "sha256": "e60fdddc8450fbeab5e5daf71564207a573c40af8936ff1cd6ff2b26f3cd847c",
+          "bytes": 42869
+        }
+      }
+    },
+    {
+      "label": "AuthNotice",
+      "number": 26,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b026.png",
+          "sha256": "d84fc994ddae1047331c1cfe108df706d399e109c758bbc6641a2cd6b39d76ed",
+          "bytes": 155900
+        },
+        "after": {
+          "path": ".github/evidence/s23/a026.png",
+          "sha256": "d84fc994ddae1047331c1cfe108df706d399e109c758bbc6641a2cd6b39d76ed",
+          "bytes": 155900
+        }
+      }
+    },
+    {
+      "label": "StatusChip",
+      "number": 27,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b027.png",
+          "sha256": "8b78e5134a698b992e3a4aa5d4f4a947a5ba1a366f61030a1e22b1da982321ba",
+          "bytes": 152405
+        },
+        "after": {
+          "path": ".github/evidence/s23/a027.png",
+          "sha256": "8b78e5134a698b992e3a4aa5d4f4a947a5ba1a366f61030a1e22b1da982321ba",
+          "bytes": 152405
+        }
+      }
+    },
+    {
+      "label": "FieldCounter",
+      "number": 28,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b028.png",
+          "sha256": "e78eecfd8f3f2b23a73e26f8750da548837c1a7b10a53ecf3c674f86fd2f7c50",
+          "bytes": 45479
+        },
+        "after": {
+          "path": ".github/evidence/s23/a028.png",
+          "sha256": "e78eecfd8f3f2b23a73e26f8750da548837c1a7b10a53ecf3c674f86fd2f7c50",
+          "bytes": 45479
+        }
+      }
+    },
+    {
+      "label": "FieldLabelRow",
+      "number": 29,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b029.png",
+          "sha256": "2fee4544f4b16199c97038fc6f478f1b57d1bba6ddb7b5e7970d2cecd1022b59",
+          "bytes": 46355
+        },
+        "after": {
+          "path": ".github/evidence/s23/a029.png",
+          "sha256": "2fee4544f4b16199c97038fc6f478f1b57d1bba6ddb7b5e7970d2cecd1022b59",
+          "bytes": 46355
+        }
+      }
+    },
+    {
+      "label": "SelectInput",
+      "number": 30,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b030.png",
+          "sha256": "cca774ca6f9796d16ad8cd9e5f70a0bfe3ddc362764e2c8882550d54d48e67b4",
+          "bytes": 94083
+        },
+        "after": {
+          "path": ".github/evidence/s23/a030.png",
+          "sha256": "cca774ca6f9796d16ad8cd9e5f70a0bfe3ddc362764e2c8882550d54d48e67b4",
+          "bytes": 94083
+        }
+      }
+    },
+    {
+      "label": "TextareaInput",
+      "number": 31,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b031.png",
+          "sha256": "796e7ba97e39c175fd727a89fadf34f9564d6492b6da9be9c9c81d049cdc39ec",
+          "bytes": 96797
+        },
+        "after": {
+          "path": ".github/evidence/s23/a031.png",
+          "sha256": "796e7ba97e39c175fd727a89fadf34f9564d6492b6da9be9c9c81d049cdc39ec",
+          "bytes": 96797
+        }
+      }
+    },
+    {
+      "label": "TextInput",
+      "number": 32,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b032.png",
+          "sha256": "43aed7f0803fbdc133c43d156784d388063e4fcb76a0d655a5f1962018065018",
+          "bytes": 142173
+        },
+        "after": {
+          "path": ".github/evidence/s23/a032.png",
+          "sha256": "43aed7f0803fbdc133c43d156784d388063e4fcb76a0d655a5f1962018065018",
+          "bytes": 142173
+        }
+      }
+    },
+    {
+      "label": "FileInput",
+      "number": 33,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b033.png",
+          "sha256": "8f87d7a8a9b8748255a1d82725a7012f495d008338abd34d9ca7af635bbfd087",
+          "bytes": 93866
+        },
+        "after": {
+          "path": ".github/evidence/s23/a033.png",
+          "sha256": "8f87d7a8a9b8748255a1d82725a7012f495d008338abd34d9ca7af635bbfd087",
+          "bytes": 93866
+        }
+      }
+    },
+    {
+      "label": "Avatar",
+      "number": 34,
+      "pairs": 12,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b034.png",
+          "sha256": "55f2630f63199a37015690ae056fb58856a2cdcaf4bfca315317cfef80bb6ba0",
+          "bytes": 295832
+        },
+        "after": {
+          "path": ".github/evidence/s23/a034.png",
+          "sha256": "55f2630f63199a37015690ae056fb58856a2cdcaf4bfca315317cfef80bb6ba0",
+          "bytes": 295832
+        }
+      }
+    },
+    {
+      "label": "MetricLabel",
+      "number": 35,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b035.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a035.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "MetricValue",
+      "number": 36,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b036.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a036.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "PracticeProgressBar",
+      "number": 37,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b037.png",
+          "sha256": "aea96f9bfacd45b3c9fd4bc64e00070fd6776bf88b51ee616948f4a93b2ddb4a",
+          "bytes": 238592
+        },
+        "after": {
+          "path": ".github/evidence/s23/a037.png",
+          "sha256": "aea96f9bfacd45b3c9fd4bc64e00070fd6776bf88b51ee616948f4a93b2ddb4a",
+          "bytes": 238592
+        }
+      }
+    },
+    {
+      "label": "PracticeResultDescription",
+      "number": 38,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b038.png",
+          "sha256": "f6e45947e4f10ace79e56e593bace046958bd2534e674f4336b95ff7e9bc9d8e",
+          "bytes": 44949
+        },
+        "after": {
+          "path": ".github/evidence/s23/a038.png",
+          "sha256": "f6e45947e4f10ace79e56e593bace046958bd2534e674f4336b95ff7e9bc9d8e",
+          "bytes": 44949
+        }
+      }
+    },
+    {
+      "label": "PracticeResultMark",
+      "number": 39,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b039.png",
+          "sha256": "f44b0554bde73187e06da6e2015794ed9f81e6539a3b40f90e71e9e281822f23",
+          "bytes": 44647
+        },
+        "after": {
+          "path": ".github/evidence/s23/a039.png",
+          "sha256": "f44b0554bde73187e06da6e2015794ed9f81e6539a3b40f90e71e9e281822f23",
+          "bytes": 44647
+        }
+      }
+    },
+    {
+      "label": "PracticeResultTitle",
+      "number": 40,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b040.png",
+          "sha256": "61c9de17e79ebba4997df08934d1d978caf3d009a3f769e8f0d1cb32c0347263",
+          "bytes": 47928
+        },
+        "after": {
+          "path": ".github/evidence/s23/a040.png",
+          "sha256": "61c9de17e79ebba4997df08934d1d978caf3d009a3f769e8f0d1cb32c0347263",
+          "bytes": 47928
+        }
+      }
+    },
+    {
+      "label": "QuizBlank",
+      "number": 41,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b041.png",
+          "sha256": "87fb3368f4f1236e968f8bef32f9fe6d460d9fcee3ccfe52e0eebef71bbc0790",
+          "bytes": 41699
+        },
+        "after": {
+          "path": ".github/evidence/s23/a041.png",
+          "sha256": "87fb3368f4f1236e968f8bef32f9fe6d460d9fcee3ccfe52e0eebef71bbc0790",
+          "bytes": 41699
+        }
+      }
+    },
+    {
+      "label": "RadioButton",
+      "number": 42,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b042.png",
+          "sha256": "54f326553a43d6422647b6b800348e8c32cc67ecf1c2b710b7a6e0a1ba08e95c",
+          "bytes": 128576
+        },
+        "after": {
+          "path": ".github/evidence/s23/a042.png",
+          "sha256": "54f326553a43d6422647b6b800348e8c32cc67ecf1c2b710b7a6e0a1ba08e95c",
+          "bytes": 128576
+        }
+      }
+    },
+    {
+      "label": "StatLabel",
+      "number": 43,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b043.png",
+          "sha256": "b00a25215fed3c68bbedeae6c8934af8fbee3ad477bc48ea6a2a946f6b537b2b",
+          "bytes": 45203
+        },
+        "after": {
+          "path": ".github/evidence/s23/a043.png",
+          "sha256": "b00a25215fed3c68bbedeae6c8934af8fbee3ad477bc48ea6a2a946f6b537b2b",
+          "bytes": 45203
+        }
+      }
+    },
+    {
+      "label": "StatValue",
+      "number": 44,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b044.png",
+          "sha256": "30011cd5d263226f6e1157cf93fbbded06d89cbdc6eacb71b9855523c34f85c9",
+          "bytes": 48642
+        },
+        "after": {
+          "path": ".github/evidence/s23/a044.png",
+          "sha256": "30011cd5d263226f6e1157cf93fbbded06d89cbdc6eacb71b9855523c34f85c9",
+          "bytes": 48642
+        }
+      }
+    },
+    {
+      "label": "TextButton",
+      "number": 45,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b045.png",
+          "sha256": "b1e82a262e6363d4dec8200298b77553fd33f1dea9021726d33eed81d1eea5dc",
+          "bytes": 190266
+        },
+        "after": {
+          "path": ".github/evidence/s23/a045.png",
+          "sha256": "b1e82a262e6363d4dec8200298b77553fd33f1dea9021726d33eed81d1eea5dc",
+          "bytes": 190266
+        }
+      }
+    },
+    {
+      "label": "Tokens",
+      "number": 46,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b046.png",
+          "sha256": "fdd0a9a5ed7d484e6f7b6efee7d2e74a6d814853f7797a5362fe47d6d4bc19c6",
+          "bytes": 239751
+        },
+        "after": {
+          "path": ".github/evidence/s23/a046.png",
+          "sha256": "fdd0a9a5ed7d484e6f7b6efee7d2e74a6d814853f7797a5362fe47d6d4bc19c6",
+          "bytes": 239751
+        }
+      }
+    },
+    {
+      "label": "ActionMenu",
+      "number": 47,
+      "pairs": 12,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b047.png",
+          "sha256": "ed2126760dae1fdfbeeedae6a99bd6bc02b7f24a6d76d6e242ed5ddb45535b03",
+          "bytes": 471274
+        },
+        "after": {
+          "path": ".github/evidence/s23/a047.png",
+          "sha256": "ed2126760dae1fdfbeeedae6a99bd6bc02b7f24a6d76d6e242ed5ddb45535b03",
+          "bytes": 471274
+        }
+      }
+    },
+    {
+      "label": "AuthFrame",
+      "number": 48,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b048.png",
+          "sha256": "cae9dc12de9b1fbef093b4bacd1b34f31c7c04f4caf434b1f12844d98d583f60",
+          "bytes": 806070
+        },
+        "after": {
+          "path": ".github/evidence/s23/a048.png",
+          "sha256": "cae9dc12de9b1fbef093b4bacd1b34f31c7c04f4caf434b1f12844d98d583f60",
+          "bytes": 806070
+        }
+      }
+    },
+    {
+      "label": "AuthTokenDigits",
+      "number": 49,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b049.png",
+          "sha256": "8788689b92228f0f72a542bc348180fe0ca50bede9f0579e95555303fcb979df",
+          "bytes": 199328
+        },
+        "after": {
+          "path": ".github/evidence/s23/a049.png",
+          "sha256": "8788689b92228f0f72a542bc348180fe0ca50bede9f0579e95555303fcb979df",
+          "bytes": 199328
+        }
+      }
+    },
+    {
+      "label": "AuthChannelHint",
+      "number": 50,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b050.png",
+          "sha256": "0df0303d0f27731dec66bbd78821ec04037c05ed862a67145bddad3c7a2c1e02",
+          "bytes": 49642
+        },
+        "after": {
+          "path": ".github/evidence/s23/a050.png",
+          "sha256": "0df0303d0f27731dec66bbd78821ec04037c05ed862a67145bddad3c7a2c1e02",
+          "bytes": 49642
+        }
+      }
+    },
+    {
+      "label": "AuthChannelIcon",
+      "number": 51,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b051.png",
+          "sha256": "cf762f3cc4d9fc046606df4b654150a7f0e0a099fd6a875fb0792c1cee7987ed",
+          "bytes": 86989
+        },
+        "after": {
+          "path": ".github/evidence/s23/a051.png",
+          "sha256": "cf762f3cc4d9fc046606df4b654150a7f0e0a099fd6a875fb0792c1cee7987ed",
+          "bytes": 86989
+        }
+      }
+    },
+    {
+      "label": "AuthFeature",
+      "number": 52,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b052.png",
+          "sha256": "dae6e775a7d378c3eda30366adb1b48124a51c871d25f747f79108d84dfce072",
+          "bytes": 46900
+        },
+        "after": {
+          "path": ".github/evidence/s23/a052.png",
+          "sha256": "dae6e775a7d378c3eda30366adb1b48124a51c871d25f747f79108d84dfce072",
+          "bytes": 46900
+        }
+      }
+    },
+    {
+      "label": "AuthFeatureList",
+      "number": 53,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b053.png",
+          "sha256": "d3d8583dcb10e7d84b1390fbb4d599ff203e72af3412ada7f4b8dadb056fe7ee",
+          "bytes": 45113
+        },
+        "after": {
+          "path": ".github/evidence/s23/a053.png",
+          "sha256": "d3d8583dcb10e7d84b1390fbb4d599ff203e72af3412ada7f4b8dadb056fe7ee",
+          "bytes": 45113
+        }
+      }
+    },
+    {
+      "label": "AuthForm",
+      "number": 54,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b054.png",
+          "sha256": "f3f44e8885ecffec43fce6e2a2125a8df7b204df843337dbac97de5d7190ef1e",
+          "bytes": 46710
+        },
+        "after": {
+          "path": ".github/evidence/s23/a054.png",
+          "sha256": "f3f44e8885ecffec43fce6e2a2125a8df7b204df843337dbac97de5d7190ef1e",
+          "bytes": 46710
+        }
+      }
+    },
+    {
+      "label": "AuthLegalText",
+      "number": 55,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b055.png",
+          "sha256": "449e0e598f342e1ea9fb6729d8b5a02b981150fecac4bda6f7e2bf2609f3d4b7",
+          "bytes": 45419
+        },
+        "after": {
+          "path": ".github/evidence/s23/a055.png",
+          "sha256": "449e0e598f342e1ea9fb6729d8b5a02b981150fecac4bda6f7e2bf2609f3d4b7",
+          "bytes": 45419
+        }
+      }
+    },
+    {
+      "label": "AuthResendAction",
+      "number": 56,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b056.png",
+          "sha256": "3792afe8da3a06538f87c14c986bbf7a2e16d875bc3fb756e2f2487753bab7be",
+          "bytes": 43209
+        },
+        "after": {
+          "path": ".github/evidence/s23/a056.png",
+          "sha256": "3792afe8da3a06538f87c14c986bbf7a2e16d875bc3fb756e2f2487753bab7be",
+          "bytes": 43209
+        }
+      }
+    },
+    {
+      "label": "AuthSuccessState",
+      "number": 57,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b057.png",
+          "sha256": "768fdb08046f224204656e378d3e9f49c3a2571431d29dd723a8cb0dc737128f",
+          "bytes": 43485
+        },
+        "after": {
+          "path": ".github/evidence/s23/a057.png",
+          "sha256": "768fdb08046f224204656e378d3e9f49c3a2571431d29dd723a8cb0dc737128f",
+          "bytes": 43485
+        }
+      }
+    },
+    {
+      "label": "AuthTokenLabel",
+      "number": 58,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b058.png",
+          "sha256": "d26d4da1962a05e1ccb3973d24793205b50a14072994de1f00c9b9c87d0239d8",
+          "bytes": 44669
+        },
+        "after": {
+          "path": ".github/evidence/s23/a058.png",
+          "sha256": "d26d4da1962a05e1ccb3973d24793205b50a14072994de1f00c9b9c87d0239d8",
+          "bytes": 44669
+        }
+      }
+    },
+    {
+      "label": "BottomNavigation",
+      "number": 59,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b059.png",
+          "sha256": "f16a36026781adc114c9b5b629aa4d370da3768731d0e3aa01affb7ae05638cb",
+          "bytes": 50896
+        },
+        "after": {
+          "path": ".github/evidence/s23/a059.png",
+          "sha256": "f16a36026781adc114c9b5b629aa4d370da3768731d0e3aa01affb7ae05638cb",
+          "bytes": 50896
+        }
+      }
+    },
+    {
+      "label": "BottomNavigationLink",
+      "number": 60,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b060.png",
+          "sha256": "6d86c9e8024bd15a51f5876202db689471efab64a041577af3f18d513457b988",
+          "bytes": 42362
+        },
+        "after": {
+          "path": ".github/evidence/s23/a060.png",
+          "sha256": "6d86c9e8024bd15a51f5876202db689471efab64a041577af3f18d513457b988",
+          "bytes": 42362
+        }
+      }
+    },
+    {
+      "label": "CalendarControls",
+      "number": 61,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b061.png",
+          "sha256": "46a9c5fdc9873e097eb260801334f6bd6871ddcc459ae284c9f76bb40d44a6f9",
+          "bytes": 227018
+        },
+        "after": {
+          "path": ".github/evidence/s23/a061.png",
+          "sha256": "46a9c5fdc9873e097eb260801334f6bd6871ddcc459ae284c9f76bb40d44a6f9",
+          "bytes": 227018
+        }
+      }
+    },
+    {
+      "label": "CalendarDay",
+      "number": 62,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b062.png",
+          "sha256": "7d87c9aa7f28385b6dfe079b71bccc3a9645b2bf5b18ac2fbc7a4e00e3c433e9",
+          "bytes": 44680
+        },
+        "after": {
+          "path": ".github/evidence/s23/a062.png",
+          "sha256": "7d87c9aa7f28385b6dfe079b71bccc3a9645b2bf5b18ac2fbc7a4e00e3c433e9",
+          "bytes": 44680
+        }
+      }
+    },
+    {
+      "label": "CalendarDayNumber",
+      "number": 63,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b063.png",
+          "sha256": "7a607f798a21101adb113019047af732a3e017fc91ba0063b083157e35320682",
+          "bytes": 45810
+        },
+        "after": {
+          "path": ".github/evidence/s23/a063.png",
+          "sha256": "7a607f798a21101adb113019047af732a3e017fc91ba0063b083157e35320682",
+          "bytes": 45810
+        }
+      }
+    },
+    {
+      "label": "CalendarEvent",
+      "number": 64,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b064.png",
+          "sha256": "e15995e44ebe3e3bc2ef7ea66b1b4ac674eeca2870111d1a64d0c1120a879937",
+          "bytes": 132251
+        },
+        "after": {
+          "path": ".github/evidence/s23/a064.png",
+          "sha256": "e15995e44ebe3e3bc2ef7ea66b1b4ac674eeca2870111d1a64d0c1120a879937",
+          "bytes": 132251
+        }
+      }
+    },
+    {
+      "label": "CalendarMonthGrid",
+      "number": 65,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b065.png",
+          "sha256": "66886bd691704c1906b1e19759e3aeeeb410c30cecdcc463a036e3d9881e88c9",
+          "bytes": 52864
+        },
+        "after": {
+          "path": ".github/evidence/s23/a065.png",
+          "sha256": "66886bd691704c1906b1e19759e3aeeeb410c30cecdcc463a036e3d9881e88c9",
+          "bytes": 52864
+        }
+      }
+    },
+    {
+      "label": "CalendarScroller",
+      "number": 66,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b066.png",
+          "sha256": "695477a325488b7a8a327a3a719e9c86a37403f78891d306972c275907a8618b",
+          "bytes": 47229
+        },
+        "after": {
+          "path": ".github/evidence/s23/a066.png",
+          "sha256": "695477a325488b7a8a327a3a719e9c86a37403f78891d306972c275907a8618b",
+          "bytes": 47229
+        }
+      }
+    },
+    {
+      "label": "CalendarTimeSlot",
+      "number": 67,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b067.png",
+          "sha256": "e1510facf5c09a9252e5202f0cb49604d02473e2149e58628ae403a37b4f9d2e",
+          "bytes": 84193
+        },
+        "after": {
+          "path": ".github/evidence/s23/a067.png",
+          "sha256": "e1510facf5c09a9252e5202f0cb49604d02473e2149e58628ae403a37b4f9d2e",
+          "bytes": 84193
+        }
+      }
+    },
+    {
+      "label": "CalendarWeekGrid",
+      "number": 68,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b068.png",
+          "sha256": "228e54eb1d688c273dceca7c1d205416e1bf8a4fd2dea0fb53c9f5bd2bc16390",
+          "bytes": 49078
+        },
+        "after": {
+          "path": ".github/evidence/s23/a068.png",
+          "sha256": "228e54eb1d688c273dceca7c1d205416e1bf8a4fd2dea0fb53c9f5bd2bc16390",
+          "bytes": 49078
+        }
+      }
+    },
+    {
+      "label": "CardLink",
+      "number": 69,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b069.png",
+          "sha256": "a08a321218e9858359954cdf9b1f3710228fa77460361ad35cdc8c5aa70de65c",
+          "bytes": 45777
+        },
+        "after": {
+          "path": ".github/evidence/s23/a069.png",
+          "sha256": "a08a321218e9858359954cdf9b1f3710228fa77460361ad35cdc8c5aa70de65c",
+          "bytes": 45777
+        }
+      }
+    },
+    {
+      "label": "ChoiceCard",
+      "number": 70,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b070.png",
+          "sha256": "1314c91e2632c97695c2ffaf0e848285ce28628ce6dce63df8e26ee16f6d1736",
+          "bytes": 137065
+        },
+        "after": {
+          "path": ".github/evidence/s23/a070.png",
+          "sha256": "1314c91e2632c97695c2ffaf0e848285ce28628ce6dce63df8e26ee16f6d1736",
+          "bytes": 137065
+        }
+      }
+    },
+    {
+      "label": "ConnectionNotice",
+      "number": 71,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b071.png",
+          "sha256": "c5d5a2194a8aad0bf0024d01d65855a70031e1ec5db33272884ccc2518b2275e",
+          "bytes": 46405
+        },
+        "after": {
+          "path": ".github/evidence/s23/a071.png",
+          "sha256": "c5d5a2194a8aad0bf0024d01d65855a70031e1ec5db33272884ccc2518b2275e",
+          "bytes": 46405
+        }
+      }
+    },
+    {
+      "label": "ConversationRow",
+      "number": 72,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b072.png",
+          "sha256": "e35b9804933048f14bbf30f946f68b6ea8a8e450ac661b6ed83e6be5f1c36420",
+          "bytes": 145273
+        },
+        "after": {
+          "path": ".github/evidence/s23/a072.png",
+          "sha256": "e35b9804933048f14bbf30f946f68b6ea8a8e450ac661b6ed83e6be5f1c36420",
+          "bytes": 145273
+        }
+      }
+    },
+    {
+      "label": "OperationalList",
+      "number": 73,
+      "pairs": 22,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b073.png",
+          "sha256": "e99af7f9b3da5258ee0376bb66afae107a52085054c376cd4af246b723879026",
+          "bytes": 1963621
+        },
+        "after": {
+          "path": ".github/evidence/s23/a073.png",
+          "sha256": "e99af7f9b3da5258ee0376bb66afae107a52085054c376cd4af246b723879026",
+          "bytes": 1963621
+        }
+      }
+    },
+    {
+      "label": "DefinitionItem",
+      "number": 74,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b074.png",
+          "sha256": "3cb98673ba799ac724db3747bf8befb32a2bcef940e66fe8764d026f51bb91eb",
+          "bytes": 63436
+        },
+        "after": {
+          "path": ".github/evidence/s23/a074.png",
+          "sha256": "3cb98673ba799ac724db3747bf8befb32a2bcef940e66fe8764d026f51bb91eb",
+          "bytes": 63436
+        }
+      }
+    },
+    {
+      "label": "DetailRow",
+      "number": 75,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b075.png",
+          "sha256": "df70d48f5ad3c17e7e4e0454a647459ba604c1e78c28dcfa1d48284b1a205dc7",
+          "bytes": 47872
+        },
+        "after": {
+          "path": ".github/evidence/s23/a075.png",
+          "sha256": "df70d48f5ad3c17e7e4e0454a647459ba604c1e78c28dcfa1d48284b1a205dc7",
+          "bytes": 47872
+        }
+      }
+    },
+    {
+      "label": "DocumentHeader",
+      "number": 76,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b076.png",
+          "sha256": "fda968e8687ea1d1d86d0fa09314b3c416cf2680b804b3112b8e5d6333dfb7ca",
+          "bytes": 46730
+        },
+        "after": {
+          "path": ".github/evidence/s23/a076.png",
+          "sha256": "fda968e8687ea1d1d86d0fa09314b3c416cf2680b804b3112b8e5d6333dfb7ca",
+          "bytes": 46730
+        }
+      }
+    },
+    {
+      "label": "DocumentHeaderContent",
+      "number": 77,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b077.png",
+          "sha256": "c5ff479622242b16d8dcb2f9cefe46f64ddf80c754b4ca7634ecdc9ac48d8fbf",
+          "bytes": 47083
+        },
+        "after": {
+          "path": ".github/evidence/s23/a077.png",
+          "sha256": "c5ff479622242b16d8dcb2f9cefe46f64ddf80c754b4ca7634ecdc9ac48d8fbf",
+          "bytes": 47083
+        }
+      }
+    },
+    {
+      "label": "DocumentNavigation",
+      "number": 78,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b078.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a078.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "NoticeBanner",
+      "number": 79,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b079.png",
+          "sha256": "d0591368ed2564d4a116ec0068da2880ba165e91f0642eae1bba01b06844fdc9",
+          "bytes": 331190
+        },
+        "after": {
+          "path": ".github/evidence/s23/a079.png",
+          "sha256": "d0591368ed2564d4a116ec0068da2880ba165e91f0642eae1bba01b06844fdc9",
+          "bytes": 331190
+        }
+      }
+    },
+    {
+      "label": "ToastItem",
+      "number": 80,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b080.png",
+          "sha256": "c69b89916ef3bc9bd10d614d8c6f73e5358e116a6dbdeaaa5a5198a38c497de4",
+          "bytes": 342251
+        },
+        "after": {
+          "path": ".github/evidence/s23/a080.png",
+          "sha256": "c69b89916ef3bc9bd10d614d8c6f73e5358e116a6dbdeaaa5a5198a38c497de4",
+          "bytes": 342251
+        }
+      }
+    },
+    {
+      "label": "ToastViewport",
+      "number": 81,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b081.png",
+          "sha256": "d8cd8933854770bd2e1b5cd804b97a1350410b7d5de3b600ff30a9a9f8655e59",
+          "bytes": 135818
+        },
+        "after": {
+          "path": ".github/evidence/s23/a081.png",
+          "sha256": "d8cd8933854770bd2e1b5cd804b97a1350410b7d5de3b600ff30a9a9f8655e59",
+          "bytes": 135818
+        }
+      }
+    },
+    {
+      "label": "CompoundControl",
+      "number": 82,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b082.png",
+          "sha256": "688f11544d524855275d85a8d806949d8e4d6841a19ab24542bde6464caf09a7",
+          "bytes": 148113
+        },
+        "after": {
+          "path": ".github/evidence/s23/a082.png",
+          "sha256": "688f11544d524855275d85a8d806949d8e4d6841a19ab24542bde6464caf09a7",
+          "bytes": 148113
+        }
+      }
+    },
+    {
+      "label": "ControlledField",
+      "number": 83,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b083.png",
+          "sha256": "c03730ebc78993580770439a526e436f9eb56abea1867b22aaef1afab51d08a6",
+          "bytes": 218444
+        },
+        "after": {
+          "path": ".github/evidence/s23/a083.png",
+          "sha256": "c03730ebc78993580770439a526e436f9eb56abea1867b22aaef1afab51d08a6",
+          "bytes": 218444
+        }
+      }
+    },
+    {
+      "label": "FieldRoot",
+      "number": 84,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b084.png",
+          "sha256": "181db0730361a41fa764f5c92aa885d40daf949955f75fea039e958ba3aee4bd",
+          "bytes": 266741
+        },
+        "after": {
+          "path": ".github/evidence/s23/a084.png",
+          "sha256": "181db0730361a41fa764f5c92aa885d40daf949955f75fea039e958ba3aee4bd",
+          "bytes": 266741
+        }
+      }
+    },
+    {
+      "label": "PhoneField",
+      "number": 85,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b085.png",
+          "sha256": "59c13c10277e796c83a4031aa5d323eea5fb07e56eacb37e68600f6ce73db981",
+          "bytes": 202681
+        },
+        "after": {
+          "path": ".github/evidence/s23/a085.png",
+          "sha256": "59c13c10277e796c83a4031aa5d323eea5fb07e56eacb37e68600f6ce73db981",
+          "bytes": 202681
+        }
+      }
+    },
+    {
+      "label": "SearchInput",
+      "number": 86,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b086.png",
+          "sha256": "7f914a2a7d34ddaea305dd300465402251b85c6c72bd89b06fd3108cda5321a1",
+          "bytes": 233880
+        },
+        "after": {
+          "path": ".github/evidence/s23/a086.png",
+          "sha256": "7f914a2a7d34ddaea305dd300465402251b85c6c72bd89b06fd3108cda5321a1",
+          "bytes": 233880
+        }
+      }
+    },
+    {
+      "label": "FilterSelect",
+      "number": 87,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b087.png",
+          "sha256": "1d3a0e85521fe696706ff1959987b70ba5c648343b3b7065e6c1293caca4538c",
+          "bytes": 137531
+        },
+        "after": {
+          "path": ".github/evidence/s23/a087.png",
+          "sha256": "1d3a0e85521fe696706ff1959987b70ba5c648343b3b7065e6c1293caca4538c",
+          "bytes": 137531
+        }
+      }
+    },
+    {
+      "label": "FlashcardAudioButton",
+      "number": 88,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b088.png",
+          "sha256": "7f47fb3cd6f25afd1c53efe01c6518b25302b0e7522ab214213375cc51ea7992",
+          "bytes": 186689
+        },
+        "after": {
+          "path": ".github/evidence/s23/a088.png",
+          "sha256": "7f47fb3cd6f25afd1c53efe01c6518b25302b0e7522ab214213375cc51ea7992",
+          "bytes": 186689
+        }
+      }
+    },
+    {
+      "label": "FlashcardBack",
+      "number": 89,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b089.png",
+          "sha256": "10215886671a85bab465a4055d82c555f11cf08ea3a5b71388a4556dc21cb1bc",
+          "bytes": 255130
+        },
+        "after": {
+          "path": ".github/evidence/s23/a089.png",
+          "sha256": "10215886671a85bab465a4055d82c555f11cf08ea3a5b71388a4556dc21cb1bc",
+          "bytes": 255130
+        }
+      }
+    },
+    {
+      "label": "FlashcardCounter",
+      "number": 90,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b090.png",
+          "sha256": "10e26a3bb6ef30bb4c6d36c86c12a2026f7f332d26bc7328d0ac7cb5850070a5",
+          "bytes": 42489
+        },
+        "after": {
+          "path": ".github/evidence/s23/a090.png",
+          "sha256": "10e26a3bb6ef30bb4c6d36c86c12a2026f7f332d26bc7328d0ac7cb5850070a5",
+          "bytes": 42489
+        }
+      }
+    },
+    {
+      "label": "FlashcardDeck",
+      "number": 91,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b091.png",
+          "sha256": "3b8a89635a90a7bd4e5c3aa2d09f6e54645f6d11117390a21d06e8cdb2ad4833",
+          "bytes": 158240
+        },
+        "after": {
+          "path": ".github/evidence/s23/a091.png",
+          "sha256": "3b8a89635a90a7bd4e5c3aa2d09f6e54645f6d11117390a21d06e8cdb2ad4833",
+          "bytes": 158240
+        }
+      }
+    },
+    {
+      "label": "FlashcardFace",
+      "number": 92,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b092.png",
+          "sha256": "fe5eda125df029bc243d04da062abba719dc4507c732dc027a5bb4ef941ea8e1",
+          "bytes": 423146
+        },
+        "after": {
+          "path": ".github/evidence/s23/a092.png",
+          "sha256": "fe5eda125df029bc243d04da062abba719dc4507c732dc027a5bb4ef941ea8e1",
+          "bytes": 423146
+        }
+      }
+    },
+    {
+      "label": "FlashcardFeedback",
+      "number": 93,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b093.png",
+          "sha256": "15c8b5c1f024eefd69acf8121d6656b6e232ce16a9cf136d3113514cd6a5e404",
+          "bytes": 293546
+        },
+        "after": {
+          "path": ".github/evidence/s23/a093.png",
+          "sha256": "15c8b5c1f024eefd69acf8121d6656b6e232ce16a9cf136d3113514cd6a5e404",
+          "bytes": 293546
+        }
+      }
+    },
+    {
+      "label": "FlashcardFlip",
+      "number": 94,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b094.png",
+          "sha256": "009797e5510a874a1077555731d5aa2aa6911c17027a6c6d405a13e0006b5010",
+          "bytes": 423269
+        },
+        "after": {
+          "path": ".github/evidence/s23/a094.png",
+          "sha256": "009797e5510a874a1077555731d5aa2aa6911c17027a6c6d405a13e0006b5010",
+          "bytes": 423269
+        }
+      }
+    },
+    {
+      "label": "FlashcardFlipButton",
+      "number": 95,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b095.png",
+          "sha256": "9993a75b0b86f0ffd22cecf732bf11ba65e41175f59d3441d8c477ca1b6b755f",
+          "bytes": 45060
+        },
+        "after": {
+          "path": ".github/evidence/s23/a095.png",
+          "sha256": "9993a75b0b86f0ffd22cecf732bf11ba65e41175f59d3441d8c477ca1b6b755f",
+          "bytes": 45060
+        }
+      }
+    },
+    {
+      "label": "FlashcardFlipHint",
+      "number": 96,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b096.png",
+          "sha256": "67613db5e7dcd919a0458a0c956acad99f5bc4e599befb3825c2a9797a4df322",
+          "bytes": 45804
+        },
+        "after": {
+          "path": ".github/evidence/s23/a096.png",
+          "sha256": "67613db5e7dcd919a0458a0c956acad99f5bc4e599befb3825c2a9797a4df322",
+          "bytes": 45804
+        }
+      }
+    },
+    {
+      "label": "FlashcardFrame",
+      "number": 97,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b097.png",
+          "sha256": "39c005d9fd30c7a46496db7d441ad5066c696b6935cee5f8adde4ca71b7103d9",
+          "bytes": 935490
+        },
+        "after": {
+          "path": ".github/evidence/s23/a097.png",
+          "sha256": "39c005d9fd30c7a46496db7d441ad5066c696b6935cee5f8adde4ca71b7103d9",
+          "bytes": 935490
+        }
+      }
+    },
+    {
+      "label": "FlashcardFront",
+      "number": 98,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b098.png",
+          "sha256": "c420103567f1ab3ba42889a985565cca7de03e8b8a44e98904c5767a13effece",
+          "bytes": 166144
+        },
+        "after": {
+          "path": ".github/evidence/s23/a098.png",
+          "sha256": "c420103567f1ab3ba42889a985565cca7de03e8b8a44e98904c5767a13effece",
+          "bytes": 166144
+        }
+      }
+    },
+    {
+      "label": "FlashcardGhost",
+      "number": 99,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b099.png",
+          "sha256": "ecb29809ae8f74093e7e4e2d9b201b6fccdb68fe50cf02b911b8bbaaa1e61342",
+          "bytes": 90530
+        },
+        "after": {
+          "path": ".github/evidence/s23/a099.png",
+          "sha256": "ecb29809ae8f74093e7e4e2d9b201b6fccdb68fe50cf02b911b8bbaaa1e61342",
+          "bytes": 90530
+        }
+      }
+    },
+    {
+      "label": "FlashcardImagePanel",
+      "number": 100,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b100.png",
+          "sha256": "a116d7e4a0a24f807987d4eb199641ce60f356c1411b7e02f7558a0236498186",
+          "bytes": 162216
+        },
+        "after": {
+          "path": ".github/evidence/s23/a100.png",
+          "sha256": "a116d7e4a0a24f807987d4eb199641ce60f356c1411b7e02f7558a0236498186",
+          "bytes": 162216
+        }
+      }
+    },
+    {
+      "label": "FlashcardProgressSegment",
+      "number": 101,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b101.png",
+          "sha256": "1c20a996644e4c7442b1ff35fcea1eb1cd917f210e174cfdf228047f97643299",
+          "bytes": 125652
+        },
+        "after": {
+          "path": ".github/evidence/s23/a101.png",
+          "sha256": "1c20a996644e4c7442b1ff35fcea1eb1cd917f210e174cfdf228047f97643299",
+          "bytes": 125652
+        }
+      }
+    },
+    {
+      "label": "FlashcardProgressTrack",
+      "number": 102,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b102.png",
+          "sha256": "33b05ce492320d2e7e7582f560342a8025ca27e8fb78861c0a831abba2418cbf",
+          "bytes": 42321
+        },
+        "after": {
+          "path": ".github/evidence/s23/a102.png",
+          "sha256": "33b05ce492320d2e7e7582f560342a8025ca27e8fb78861c0a831abba2418cbf",
+          "bytes": 42321
+        }
+      }
+    },
+    {
+      "label": "FlashcardRatingButton",
+      "number": 103,
+      "pairs": 14,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b103.png",
+          "sha256": "046c5754e75219e76321500f099e6bb79c3464b9e7930a35fd422fd128602ffc",
+          "bytes": 323707
+        },
+        "after": {
+          "path": ".github/evidence/s23/a103.png",
+          "sha256": "046c5754e75219e76321500f099e6bb79c3464b9e7930a35fd422fd128602ffc",
+          "bytes": 323707
+        }
+      }
+    },
+    {
+      "label": "FlashcardStage",
+      "number": 104,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b104.png",
+          "sha256": "f9a8fc3a3475edee50609f87872a72fac71b1ca75bef0f49f5282719a3d0d4b5",
+          "bytes": 168393
+        },
+        "after": {
+          "path": ".github/evidence/s23/a104.png",
+          "sha256": "f9a8fc3a3475edee50609f87872a72fac71b1ca75bef0f49f5282719a3d0d4b5",
+          "bytes": 168393
+        }
+      }
+    },
+    {
+      "label": "FlashcardSwiper",
+      "number": 105,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b105.png",
+          "sha256": "b1781e390e6194fff38248659bf5cea0ab14f95b6c31c2110afd0f02d0632ba6",
+          "bytes": 337359
+        },
+        "after": {
+          "path": ".github/evidence/s23/a105.png",
+          "sha256": "b1781e390e6194fff38248659bf5cea0ab14f95b6c31c2110afd0f02d0632ba6",
+          "bytes": 337359
+        }
+      }
+    },
+    {
+      "label": "FlashcardWord",
+      "number": 106,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b106.png",
+          "sha256": "91dc990e7c6424e8f4672b078eede78a477ea0ed7e41d6026df8a07ee80f3ce5",
+          "bytes": 245428
+        },
+        "after": {
+          "path": ".github/evidence/s23/a106.png",
+          "sha256": "91dc990e7c6424e8f4672b078eede78a477ea0ed7e41d6026df8a07ee80f3ce5",
+          "bytes": 245428
+        }
+      }
+    },
+    {
+      "label": "FlashcardWordSkeleton",
+      "number": 107,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b107.png",
+          "sha256": "bb8e10a7ec22c59d9fc2b3d534bf053c234ffeee9f57d3ad01a64312aa180b60",
+          "bytes": 69741
+        },
+        "after": {
+          "path": ".github/evidence/s23/a107.png",
+          "sha256": "bb8e10a7ec22c59d9fc2b3d534bf053c234ffeee9f57d3ad01a64312aa180b60",
+          "bytes": 69741
+        }
+      }
+    },
+    {
+      "label": "FormActions",
+      "number": 108,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b108.png",
+          "sha256": "732da0d8e01ddf83a451cf1661ed6c7e21670387d4c741f2e088b9a30caf9cad",
+          "bytes": 50976
+        },
+        "after": {
+          "path": ".github/evidence/s23/a108.png",
+          "sha256": "732da0d8e01ddf83a451cf1661ed6c7e21670387d4c741f2e088b9a30caf9cad",
+          "bytes": 50976
+        }
+      }
+    },
+    {
+      "label": "FormError",
+      "number": 109,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b109.png",
+          "sha256": "d31df7ad8ac2f2377f7845b43ebb5b62618db49a94763a653e28e0e053510254",
+          "bytes": 47094
+        },
+        "after": {
+          "path": ".github/evidence/s23/a109.png",
+          "sha256": "d31df7ad8ac2f2377f7845b43ebb5b62618db49a94763a653e28e0e053510254",
+          "bytes": 47094
+        }
+      }
+    },
+    {
+      "label": "FormStack",
+      "number": 110,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b110.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a110.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "GroupedBarChart",
+      "number": 111,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b111.png",
+          "sha256": "b76bbe6acefb837dcfda1495a9ea81b0601d7b59d794b31a0d571822d7761cfe",
+          "bytes": 42906
+        },
+        "after": {
+          "path": ".github/evidence/s23/a111.png",
+          "sha256": "b76bbe6acefb837dcfda1495a9ea81b0601d7b59d794b31a0d571822d7761cfe",
+          "bytes": 42906
+        }
+      }
+    },
+    {
+      "label": "InlineNotice",
+      "number": 112,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b112.png",
+          "sha256": "dd91796f4d7446e6f7620796b0b56b78229dddc1f808910b96531c49c7aa71dc",
+          "bytes": 48351
+        },
+        "after": {
+          "path": ".github/evidence/s23/a112.png",
+          "sha256": "dd91796f4d7446e6f7620796b0b56b78229dddc1f808910b96531c49c7aa71dc",
+          "bytes": 48351
+        }
+      }
+    },
+    {
+      "label": "KeyValueList",
+      "number": 113,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b113.png",
+          "sha256": "afa2c948a447174f6f831f74a64943860763785c4e4ecb017947a073e696fbd0",
+          "bytes": 44178
+        },
+        "after": {
+          "path": ".github/evidence/s23/a113.png",
+          "sha256": "afa2c948a447174f6f831f74a64943860763785c4e4ecb017947a073e696fbd0",
+          "bytes": 44178
+        }
+      }
+    },
+    {
+      "label": "Card",
+      "number": 114,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b114.png",
+          "sha256": "acbf79e87f36af83f996caf03b8249eee1b692b3362ff315f894d5a5b11d3b03",
+          "bytes": 244258
+        },
+        "after": {
+          "path": ".github/evidence/s23/a114.png",
+          "sha256": "acbf79e87f36af83f996caf03b8249eee1b692b3362ff315f894d5a5b11d3b03",
+          "bytes": 244258
+        }
+      }
+    },
+    {
+      "label": "DocumentLayout",
+      "number": 115,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b115.png",
+          "sha256": "35ba2684c77f9535fe60bbda606e2a3aaec91319421d1c96823dd5f06e4f3f51",
+          "bytes": 1725127
+        },
+        "after": {
+          "path": ".github/evidence/s23/a115.png",
+          "sha256": "35ba2684c77f9535fe60bbda606e2a3aaec91319421d1c96823dd5f06e4f3f51",
+          "bytes": 1725127
+        }
+      }
+    },
+    {
+      "label": "FilterToolbar",
+      "number": 116,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b116.png",
+          "sha256": "ca575988cc912cc495062a0b11b2b1da2fb13c3be402aa4f1966429e939a0bbd",
+          "bytes": 254346
+        },
+        "after": {
+          "path": ".github/evidence/s23/a116.png",
+          "sha256": "ca575988cc912cc495062a0b11b2b1da2fb13c3be402aa4f1966429e939a0bbd",
+          "bytes": 254346
+        }
+      }
+    },
+    {
+      "label": "SectionHeader",
+      "number": 117,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b117.png",
+          "sha256": "56fb018aeb6bf3697cf3b8fd7a7f9ccc85e5ec41288f564e00d5f815c86469c1",
+          "bytes": 220934
+        },
+        "after": {
+          "path": ".github/evidence/s23/a117.png",
+          "sha256": "56fb018aeb6bf3697cf3b8fd7a7f9ccc85e5ec41288f564e00d5f815c86469c1",
+          "bytes": 220934
+        }
+      }
+    },
+    {
+      "label": "PracticeCardSkeletonBody",
+      "number": 118,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b118.png",
+          "sha256": "5b76af3c8f661a4e8e9af58ace06c4a12d9e92e85af5ebcf5f006dee21678f4d",
+          "bytes": 169224
+        },
+        "after": {
+          "path": ".github/evidence/s23/a118.png",
+          "sha256": "5b76af3c8f661a4e8e9af58ace06c4a12d9e92e85af5ebcf5f006dee21678f4d",
+          "bytes": 169224
+        }
+      }
+    },
+    {
+      "label": "MessageBubble",
+      "number": 119,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b119.png",
+          "sha256": "15fa7ed5fe7477bf62ea75bc927d64ca5113f642e65c01bea6b9768dbc421dac",
+          "bytes": 357974
+        },
+        "after": {
+          "path": ".github/evidence/s23/a119.png",
+          "sha256": "15fa7ed5fe7477bf62ea75bc927d64ca5113f642e65c01bea6b9768dbc421dac",
+          "bytes": 357974
+        }
+      }
+    },
+    {
+      "label": "MessageComposer",
+      "number": 120,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b120.png",
+          "sha256": "b677af876e1360b3d0998a41db8c309c9b42d3b201591dfe64694e0cc04eec36",
+          "bytes": 309901
+        },
+        "after": {
+          "path": ".github/evidence/s23/a120.png",
+          "sha256": "b677af876e1360b3d0998a41db8c309c9b42d3b201591dfe64694e0cc04eec36",
+          "bytes": 309901
+        }
+      }
+    },
+    {
+      "label": "MessageThread",
+      "number": 121,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b121.png",
+          "sha256": "75a3931b9f88f5b47e4e2138385e8c2d47135c3666afec52b26be372caa1e0c0",
+          "bytes": 503793
+        },
+        "after": {
+          "path": ".github/evidence/s23/a121.png",
+          "sha256": "75a3931b9f88f5b47e4e2138385e8c2d47135c3666afec52b26be372caa1e0c0",
+          "bytes": 503793
+        }
+      }
+    },
+    {
+      "label": "MessageThreadHeader",
+      "number": 122,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b122.png",
+          "sha256": "3d6af584142f278b2e5ca22aaaf2b74c77b42f0b3829ff590483ec1996483b29",
+          "bytes": 215954
+        },
+        "after": {
+          "path": ".github/evidence/s23/a122.png",
+          "sha256": "e95b6c2f5d241db579c9d42aa174b8c85a8e88d5d94a979511f67ddfc3ae08ce",
+          "bytes": 215390
+        }
+      }
+    },
+    {
+      "label": "MetricSummary",
+      "number": 123,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b123.png",
+          "sha256": "5e32b394dfee97940f66a1ef72036e79be8f4c8855575011bda48f1ff4846a7a",
+          "bytes": 48165
+        },
+        "after": {
+          "path": ".github/evidence/s23/a123.png",
+          "sha256": "5e32b394dfee97940f66a1ef72036e79be8f4c8855575011bda48f1ff4846a7a",
+          "bytes": 48165
+        }
+      }
+    },
+    {
+      "label": "NavigationButton",
+      "number": 124,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b124.png",
+          "sha256": "38f848278e500a2a2aaa00ef3842ea7c74de9c9c4b1627916d1e4ad42315eb69",
+          "bytes": 140760
+        },
+        "after": {
+          "path": ".github/evidence/s23/a124.png",
+          "sha256": "38f848278e500a2a2aaa00ef3842ea7c74de9c9c4b1627916d1e4ad42315eb69",
+          "bytes": 140760
+        }
+      }
+    },
+    {
+      "label": "NavigationLink",
+      "number": 125,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b125.png",
+          "sha256": "1785600cd3cd7ee959734006c4e25615b3e9a5cdf624ec284dbd543a8e18b1a8",
+          "bytes": 89367
+        },
+        "after": {
+          "path": ".github/evidence/s23/a125.png",
+          "sha256": "1785600cd3cd7ee959734006c4e25615b3e9a5cdf624ec284dbd543a8e18b1a8",
+          "bytes": 89367
+        }
+      }
+    },
+    {
+      "label": "NotificationItem",
+      "number": 126,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b126.png",
+          "sha256": "a165d8167a57f748d7f2de7fff64c6dc9a36965c61a82fb6d1c5981caab09a0b",
+          "bytes": 52219
+        },
+        "after": {
+          "path": ".github/evidence/s23/a126.png",
+          "sha256": "a165d8167a57f748d7f2de7fff64c6dc9a36965c61a82fb6d1c5981caab09a0b",
+          "bytes": 52219
+        }
+      }
+    },
+    {
+      "label": "Dialog",
+      "number": 127,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b127.png",
+          "sha256": "0e6dd6ec97f309e5875da0d11d4e240977a139e7549f8887e096f41da6cbda25",
+          "bytes": 525762
+        },
+        "after": {
+          "path": ".github/evidence/s23/a127.png",
+          "sha256": "0e6dd6ec97f309e5875da0d11d4e240977a139e7549f8887e096f41da6cbda25",
+          "bytes": 525762
+        }
+      }
+    },
+    {
+      "label": "Drawer",
+      "number": 128,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b128.png",
+          "sha256": "6ff593d39e4433a566eefcdfc6e8bbfb1256e96207114f5807a4c581d7fb108b",
+          "bytes": 794469
+        },
+        "after": {
+          "path": ".github/evidence/s23/a128.png",
+          "sha256": "6ff593d39e4433a566eefcdfc6e8bbfb1256e96207114f5807a4c581d7fb108b",
+          "bytes": 794469
+        }
+      }
+    },
+    {
+      "label": "PageDescription",
+      "number": 129,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b129.png",
+          "sha256": "33b674a79401b3d417d9fe92c0a8b7ab72aa61c69f00071094c093502ecffb1e",
+          "bytes": 46072
+        },
+        "after": {
+          "path": ".github/evidence/s23/a129.png",
+          "sha256": "33b674a79401b3d417d9fe92c0a8b7ab72aa61c69f00071094c093502ecffb1e",
+          "bytes": 46072
+        }
+      }
+    },
+    {
+      "label": "PageTitle",
+      "number": 130,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b130.png",
+          "sha256": "2111b1edd9c48160b3607b268b55cb6c760b51cfa8509120bfb812fa151142fe",
+          "bytes": 63848
+        },
+        "after": {
+          "path": ".github/evidence/s23/a130.png",
+          "sha256": "2111b1edd9c48160b3607b268b55cb6c760b51cfa8509120bfb812fa151142fe",
+          "bytes": 63848
+        }
+      }
+    },
+    {
+      "label": "PracticeCard",
+      "number": 131,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b131.png",
+          "sha256": "b38b73bf579abf657ff1b379bdfaba3e2e98bfe6334ee1b1899db02a6b0ab99d",
+          "bytes": 43974
+        },
+        "after": {
+          "path": ".github/evidence/s23/a131.png",
+          "sha256": "b38b73bf579abf657ff1b379bdfaba3e2e98bfe6334ee1b1899db02a6b0ab99d",
+          "bytes": 43974
+        }
+      }
+    },
+    {
+      "label": "PracticeCardBody",
+      "number": 132,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b132.png",
+          "sha256": "fd4becfa663797dc6da4878bc9b71b9748580c1b31e5c426a393cdd96decb746",
+          "bytes": 167467
+        },
+        "after": {
+          "path": ".github/evidence/s23/a132.png",
+          "sha256": "fd4becfa663797dc6da4878bc9b71b9748580c1b31e5c426a393cdd96decb746",
+          "bytes": 167467
+        }
+      }
+    },
+    {
+      "label": "PracticeCardCover",
+      "number": 133,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b133.png",
+          "sha256": "cf46c0f693a2f20aacf6b4fbe541775b38febde3dd35b006cd19090a32d1683d",
+          "bytes": 50711
+        },
+        "after": {
+          "path": ".github/evidence/s23/a133.png",
+          "sha256": "cf46c0f693a2f20aacf6b4fbe541775b38febde3dd35b006cd19090a32d1683d",
+          "bytes": 50711
+        }
+      }
+    },
+    {
+      "label": "PracticeCoverLabel",
+      "number": 134,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b134.png",
+          "sha256": "e93d72e94095457993a8197483c99db68055513808aed30f0e682b4d2965befa",
+          "bytes": 46150
+        },
+        "after": {
+          "path": ".github/evidence/s23/a134.png",
+          "sha256": "e93d72e94095457993a8197483c99db68055513808aed30f0e682b4d2965befa",
+          "bytes": 46150
+        }
+      }
+    },
+    {
+      "label": "PracticeCoverValue",
+      "number": 135,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b135.png",
+          "sha256": "45a0db5c860b35cd0d0a75f99e712fa27241009ff025afddeb714bbff24cf7ac",
+          "bytes": 42575
+        },
+        "after": {
+          "path": ".github/evidence/s23/a135.png",
+          "sha256": "45a0db5c860b35cd0d0a75f99e712fa27241009ff025afddeb714bbff24cf7ac",
+          "bytes": 42575
+        }
+      }
+    },
+    {
+      "label": "PracticeLevelBadge",
+      "number": 136,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b136.png",
+          "sha256": "538e401070d9d032965e4dc0308985db8f57728f6f918bb8a6c3b0412077b696",
+          "bytes": 43148
+        },
+        "after": {
+          "path": ".github/evidence/s23/a136.png",
+          "sha256": "538e401070d9d032965e4dc0308985db8f57728f6f918bb8a6c3b0412077b696",
+          "bytes": 43148
+        }
+      }
+    },
+    {
+      "label": "PracticePlaybackControls",
+      "number": 137,
+      "pairs": 12,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b137.png",
+          "sha256": "2e90dfae3b6d68fc3e1983d77dffd59670e7dd6ae1b6593819a9e07ac09a1473",
+          "bytes": 414678
+        },
+        "after": {
+          "path": ".github/evidence/s23/a137.png",
+          "sha256": "2e90dfae3b6d68fc3e1983d77dffd59670e7dd6ae1b6593819a9e07ac09a1473",
+          "bytes": 414678
+        }
+      }
+    },
+    {
+      "label": "PracticeResultActions",
+      "number": 138,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b138.png",
+          "sha256": "783be484fe0b8d2610088205a870c108a79d846b9a005a88535e48b9c7263403",
+          "bytes": 45917
+        },
+        "after": {
+          "path": ".github/evidence/s23/a138.png",
+          "sha256": "783be484fe0b8d2610088205a870c108a79d846b9a005a88535e48b9c7263403",
+          "bytes": 45917
+        }
+      }
+    },
+    {
+      "label": "PracticeResultPanel",
+      "number": 139,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b139.png",
+          "sha256": "a64b926ea222e52c4fd678ddf0498a62f35a9d075bb91c5686cbbab8f5a1c701",
+          "bytes": 340437
+        },
+        "after": {
+          "path": ".github/evidence/s23/a139.png",
+          "sha256": "a64b926ea222e52c4fd678ddf0498a62f35a9d075bb91c5686cbbab8f5a1c701",
+          "bytes": 340437
+        }
+      }
+    },
+    {
+      "label": "QuizBadge",
+      "number": 140,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b140.png",
+          "sha256": "8b72fbf78580e464f2e549f54d6f5d6d14e1207f6be90954f3bc4b01c08c3eac",
+          "bytes": 46185
+        },
+        "after": {
+          "path": ".github/evidence/s23/a140.png",
+          "sha256": "8b72fbf78580e464f2e549f54d6f5d6d14e1207f6be90954f3bc4b01c08c3eac",
+          "bytes": 46185
+        }
+      }
+    },
+    {
+      "label": "QuizFeedback",
+      "number": 141,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b141.png",
+          "sha256": "a0cea42d75052c7c234e69d8222b4bcce3c6b474629b1400ccddfde877a7627a",
+          "bytes": 161151
+        },
+        "after": {
+          "path": ".github/evidence/s23/a141.png",
+          "sha256": "a0cea42d75052c7c234e69d8222b4bcce3c6b474629b1400ccddfde877a7627a",
+          "bytes": 161151
+        }
+      }
+    },
+    {
+      "label": "QuizMetadata",
+      "number": 142,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b142.png",
+          "sha256": "b855279d076ac189624ab63249c3df5f2494935d6f57a984ae8c714780257a2a",
+          "bytes": 45443
+        },
+        "after": {
+          "path": ".github/evidence/s23/a142.png",
+          "sha256": "b855279d076ac189624ab63249c3df5f2494935d6f57a984ae8c714780257a2a",
+          "bytes": 45443
+        }
+      }
+    },
+    {
+      "label": "QuizOption",
+      "number": 143,
+      "pairs": 14,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b143.png",
+          "sha256": "0de1065f2f9a4ebe94047c5b0f31167ebea9ab7e23c8bd755e2b47d8fc584292",
+          "bytes": 362906
+        },
+        "after": {
+          "path": ".github/evidence/s23/a143.png",
+          "sha256": "0de1065f2f9a4ebe94047c5b0f31167ebea9ab7e23c8bd755e2b47d8fc584292",
+          "bytes": 362906
+        }
+      }
+    },
+    {
+      "label": "QuizPromptHeader",
+      "number": 144,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b144.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a144.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "QuizQuestion",
+      "number": 145,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b145.png",
+          "sha256": "11593317e708f95cc2a199881e554be0eadfbf7e8895b5738d9a576352960497",
+          "bytes": 67052
+        },
+        "after": {
+          "path": ".github/evidence/s23/a145.png",
+          "sha256": "11593317e708f95cc2a199881e554be0eadfbf7e8895b5738d9a576352960497",
+          "bytes": 67052
+        }
+      }
+    },
+    {
+      "label": "QuizSessionHeader",
+      "number": 146,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b146.png",
+          "sha256": "051d027e7a74a6de61731929a473a267554ded10b43f901838d799e3e66086c6",
+          "bytes": 257079
+        },
+        "after": {
+          "path": ".github/evidence/s23/a146.png",
+          "sha256": "051d027e7a74a6de61731929a473a267554ded10b43f901838d799e3e66086c6",
+          "bytes": 257079
+        }
+      }
+    },
+    {
+      "label": "ScheduleCalendar",
+      "number": 147,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b147.png",
+          "sha256": "f4f253e7a6c4619eb153362e7ff8fb7d7744a919ec2cc873797cb2637d14fda6",
+          "bytes": 692370
+        },
+        "after": {
+          "path": ".github/evidence/s23/a147.png",
+          "sha256": "f4f253e7a6c4619eb153362e7ff8fb7d7744a919ec2cc873797cb2637d14fda6",
+          "bytes": 692370
+        }
+      }
+    },
+    {
+      "label": "ScheduleRow",
+      "number": 148,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b148.png",
+          "sha256": "6325df88b2c4a185a8981b12659ac2462069dd8cc83b5b5796cb22121d6e9abe",
+          "bytes": 154219
+        },
+        "after": {
+          "path": ".github/evidence/s23/a148.png",
+          "sha256": "6325df88b2c4a185a8981b12659ac2462069dd8cc83b5b5796cb22121d6e9abe",
+          "bytes": 154219
+        }
+      }
+    },
+    {
+      "label": "AvailabilityCalendar",
+      "number": 149,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b149.png",
+          "sha256": "f6342eaf7c746d8cf1a3605ce8db29b84ae5a79c7e6117fb9ca2ea2a74234f7c",
+          "bytes": 895813
+        },
+        "after": {
+          "path": ".github/evidence/s23/a149.png",
+          "sha256": "72a5d0379bdc3c597003eaa2f1fdfc2fd912cb992a5ee2b66b6a5dec0e0dd3b5",
+          "bytes": 895728
+        }
+      }
+    },
+    {
+      "label": "FilterPills",
+      "number": 150,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b150.png",
+          "sha256": "d80b50fa90f9db9672d4b3e2d1d0da929762f7a594ef63d3c11a056841ea515b",
+          "bytes": 296161
+        },
+        "after": {
+          "path": ".github/evidence/s23/a150.png",
+          "sha256": "d80b50fa90f9db9672d4b3e2d1d0da929762f7a594ef63d3c11a056841ea515b",
+          "bytes": 296161
+        }
+      }
+    },
+    {
+      "label": "SegmentedControl",
+      "number": 151,
+      "pairs": 10,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b151.png",
+          "sha256": "741f5c5bd72104d6713fcb443d560d713e00b4b5225fdaf1a1ae039144e5eed7",
+          "bytes": 248799
+        },
+        "after": {
+          "path": ".github/evidence/s23/a151.png",
+          "sha256": "741f5c5bd72104d6713fcb443d560d713e00b4b5225fdaf1a1ae039144e5eed7",
+          "bytes": 248799
+        }
+      }
+    },
+    {
+      "label": "SessionProgress",
+      "number": 152,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b152.png",
+          "sha256": "9628554c525b03cef289fea2fc2d8b087a60f85f33c4e02021536208ce4faa72",
+          "bytes": 45387
+        },
+        "after": {
+          "path": ".github/evidence/s23/a152.png",
+          "sha256": "9628554c525b03cef289fea2fc2d8b087a60f85f33c4e02021536208ce4faa72",
+          "bytes": 45387
+        }
+      }
+    },
+    {
+      "label": "ShadowingActivePhrase",
+      "number": 153,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b153.png",
+          "sha256": "492e5cff2431e255c17fcbbf3706c2a5053a2dc9153b1949419d0b45e2b56208",
+          "bytes": 50985
+        },
+        "after": {
+          "path": ".github/evidence/s23/a153.png",
+          "sha256": "492e5cff2431e255c17fcbbf3706c2a5053a2dc9153b1949419d0b45e2b56208",
+          "bytes": 50985
+        }
+      }
+    },
+    {
+      "label": "ShadowingContextPhrase",
+      "number": 154,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b154.png",
+          "sha256": "93ef8b2b5172c381ae90401f6026b0edb6451bca7029bd7c9f107b70f94f9b9d",
+          "bytes": 46189
+        },
+        "after": {
+          "path": ".github/evidence/s23/a154.png",
+          "sha256": "93ef8b2b5172c381ae90401f6026b0edb6451bca7029bd7c9f107b70f94f9b9d",
+          "bytes": 46189
+        }
+      }
+    },
+    {
+      "label": "ShadowingControlCluster",
+      "number": 155,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b155.png",
+          "sha256": "53cfd88b5cff4e3dc47d62d3758a449e6a4eb570872aca2eba247cdb726d4127",
+          "bytes": 47227
+        },
+        "after": {
+          "path": ".github/evidence/s23/a155.png",
+          "sha256": "53cfd88b5cff4e3dc47d62d3758a449e6a4eb570872aca2eba247cdb726d4127",
+          "bytes": 47227
+        }
+      }
+    },
+    {
+      "label": "ShadowingControlDock",
+      "number": 156,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b156.png",
+          "sha256": "e72badcf6eb8fb085a077a270facc4eff6479a21972fb39fb890ea8ca2977411",
+          "bytes": 46799
+        },
+        "after": {
+          "path": ".github/evidence/s23/a156.png",
+          "sha256": "e72badcf6eb8fb085a077a270facc4eff6479a21972fb39fb890ea8ca2977411",
+          "bytes": 46799
+        }
+      }
+    },
+    {
+      "label": "ShadowingPanel",
+      "number": 157,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b157.png",
+          "sha256": "d369ccfe99cd5589d63a424d01cb5bd02e45ef518c2a572102728f46fbdb4040",
+          "bytes": 362755
+        },
+        "after": {
+          "path": ".github/evidence/s23/a157.png",
+          "sha256": "d369ccfe99cd5589d63a424d01cb5bd02e45ef518c2a572102728f46fbdb4040",
+          "bytes": 362755
+        }
+      }
+    },
+    {
+      "label": "ShadowingPhraseStack",
+      "number": 158,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b158.png",
+          "sha256": "39ffe053f4fe642006bf7f07bb675619864d2bc6133a26749dcac6e602cc170a",
+          "bytes": 47277
+        },
+        "after": {
+          "path": ".github/evidence/s23/a158.png",
+          "sha256": "39ffe053f4fe642006bf7f07bb675619864d2bc6133a26749dcac6e602cc170a",
+          "bytes": 47277
+        }
+      }
+    },
+    {
+      "label": "ShadowingReader",
+      "number": 159,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b159.png",
+          "sha256": "7f3b0320d5afc80bd7a95c4e2bb12c4f45c8f8ffd1b8d084592fb85bcf42d997",
+          "bytes": 46996
+        },
+        "after": {
+          "path": ".github/evidence/s23/a159.png",
+          "sha256": "7f3b0320d5afc80bd7a95c4e2bb12c4f45c8f8ffd1b8d084592fb85bcf42d997",
+          "bytes": 46996
+        }
+      }
+    },
+    {
+      "label": "ShadowingRepetitions",
+      "number": 160,
+      "pairs": 4,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b160.png",
+          "sha256": "9572d41122d7ed77aef8f976b198504157296298b1a05848a4b6270acc8df38d",
+          "bytes": 89036
+        },
+        "after": {
+          "path": ".github/evidence/s23/a160.png",
+          "sha256": "9572d41122d7ed77aef8f976b198504157296298b1a05848a4b6270acc8df38d",
+          "bytes": 89036
+        }
+      }
+    },
+    {
+      "label": "ShadowingTranslation",
+      "number": 161,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b161.png",
+          "sha256": "0617881347f4cee236506785833e6759852551e4986471a396bfe1ffea9f4afa",
+          "bytes": 46474
+        },
+        "after": {
+          "path": ".github/evidence/s23/a161.png",
+          "sha256": "0617881347f4cee236506785833e6759852551e4986471a396bfe1ffea9f4afa",
+          "bytes": 46474
+        }
+      }
+    },
+    {
+      "label": "ShadowingWord",
+      "number": 162,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b162.png",
+          "sha256": "7379729c57c79a3ba54d2555155bb87337bcb494ed981ef789be05ac884db4af",
+          "bytes": 131802
+        },
+        "after": {
+          "path": ".github/evidence/s23/a162.png",
+          "sha256": "7379729c57c79a3ba54d2555155bb87337bcb494ed981ef789be05ac884db4af",
+          "bytes": 131802
+        }
+      }
+    },
+    {
+      "label": "SidebarFrame",
+      "number": 163,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b163.png",
+          "sha256": "e8adcf9cb4d71757bbc330869faa4b0e94e662e381988fdec24fd6c66943fc41",
+          "bytes": 47944
+        },
+        "after": {
+          "path": ".github/evidence/s23/a163.png",
+          "sha256": "e8adcf9cb4d71757bbc330869faa4b0e94e662e381988fdec24fd6c66943fc41",
+          "bytes": 47944
+        }
+      }
+    },
+    {
+      "label": "SidebarNavigation",
+      "number": 164,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b164.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        },
+        "after": {
+          "path": ".github/evidence/s23/a164.png",
+          "sha256": "513e35807161bb3ca75c707b8be6b03ae8e24054adbbe2d7f541afaad0596220",
+          "bytes": 47087
+        }
+      }
+    },
+    {
+      "label": "StatAction",
+      "number": 165,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b165.png",
+          "sha256": "8eb53c0569d1e05aa50f7482243b7654a801688313fe4e287cd085f2eff3e990",
+          "bytes": 46875
+        },
+        "after": {
+          "path": ".github/evidence/s23/a165.png",
+          "sha256": "8eb53c0569d1e05aa50f7482243b7654a801688313fe4e287cd085f2eff3e990",
+          "bytes": 46875
+        }
+      }
+    },
+    {
+      "label": "StatCard",
+      "number": 166,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b166.png",
+          "sha256": "68cca041d992485cdd0fc1cb8977918d72e2a1db113ba0ec3faebe64f71d2a12",
+          "bytes": 47903
+        },
+        "after": {
+          "path": ".github/evidence/s23/a166.png",
+          "sha256": "68cca041d992485cdd0fc1cb8977918d72e2a1db113ba0ec3faebe64f71d2a12",
+          "bytes": 47903
+        }
+      }
+    },
+    {
+      "label": "EmptyState",
+      "number": 167,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b167.png",
+          "sha256": "ed993180dbdb7aa7acd87e49cd2b1532269516cafac2d1cd6bddda8572f242a0",
+          "bytes": 182752
+        },
+        "after": {
+          "path": ".github/evidence/s23/a167.png",
+          "sha256": "ed993180dbdb7aa7acd87e49cd2b1532269516cafac2d1cd6bddda8572f242a0",
+          "bytes": 182752
+        }
+      }
+    },
+    {
+      "label": "LoadingState",
+      "number": 168,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b168.png",
+          "sha256": "19d7dfbecb1ddae411989851be3021d47601159e3f75f2c9ed702df14f46902c",
+          "bytes": 153129
+        },
+        "after": {
+          "path": ".github/evidence/s23/a168.png",
+          "sha256": "19d7dfbecb1ddae411989851be3021d47601159e3f75f2c9ed702df14f46902c",
+          "bytes": 153129
+        }
+      }
+    },
+    {
+      "label": "StatePanel",
+      "number": 169,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b169.png",
+          "sha256": "19cb202ea588a58aa1030c1bc758ce5a31a9523ea01f1c0ceb12b233cd8832dc",
+          "bytes": 250152
+        },
+        "after": {
+          "path": ".github/evidence/s23/a169.png",
+          "sha256": "19cb202ea588a58aa1030c1bc758ce5a31a9523ea01f1c0ceb12b233cd8832dc",
+          "bytes": 250152
+        }
+      }
+    },
+    {
+      "label": "TimelineEvent",
+      "number": 170,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b170.png",
+          "sha256": "9cee7267eb68dd3d12b6970fa16b2cc8eb4dd3e80db4106ab8da77c0f5b3d6cf",
+          "bytes": 133443
+        },
+        "after": {
+          "path": ".github/evidence/s23/a170.png",
+          "sha256": "9cee7267eb68dd3d12b6970fa16b2cc8eb4dd3e80db4106ab8da77c0f5b3d6cf",
+          "bytes": 133443
+        }
+      }
+    },
+    {
+      "label": "ToggleButton",
+      "number": 171,
+      "pairs": 8,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b171.png",
+          "sha256": "e48a978ba7302d7f6d67e545c4a84515cc73ea460ea38be41eb95d2c3e68db22",
+          "bytes": 191582
+        },
+        "after": {
+          "path": ".github/evidence/s23/a171.png",
+          "sha256": "e48a978ba7302d7f6d67e545c4a84515cc73ea460ea38be41eb95d2c3e68db22",
+          "bytes": 191582
+        }
+      }
+    },
+    {
+      "label": "WeeklyCountChart",
+      "number": 172,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b172.png",
+          "sha256": "f6893a6b292990626a4de3408b276ebbd28145ae6f8e0f20bb8e0dadb33449c5",
+          "bytes": 43090
+        },
+        "after": {
+          "path": ".github/evidence/s23/a172.png",
+          "sha256": "f6893a6b292990626a4de3408b276ebbd28145ae6f8e0f20bb8e0dadb33449c5",
+          "bytes": 43090
+        }
+      }
+    },
+    {
+      "label": "Pressable",
+      "number": 173,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b173.png",
+          "sha256": "da013fd23216787cd0b2312a475ddb2ef301c4f7b452156cfb82253f9a9e8f10",
+          "bytes": 137579
+        },
+        "after": {
+          "path": ".github/evidence/s23/a173.png",
+          "sha256": "da013fd23216787cd0b2312a475ddb2ef301c4f7b452156cfb82253f9a9e8f10",
+          "bytes": 137579
+        }
+      }
+    },
+    {
+      "label": "Skeleton",
+      "number": 174,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b174.png",
+          "sha256": "a1d128627440eaaab87dd563cf14c5a620860538b60f9e11454cb7ea1fafd1e1",
+          "bytes": 48518
+        },
+        "after": {
+          "path": ".github/evidence/s23/a174.png",
+          "sha256": "a1d128627440eaaab87dd563cf14c5a620860538b60f9e11454cb7ea1fafd1e1",
+          "bytes": 48518
+        }
+      }
+    },
+    {
+      "label": "Spinner",
+      "number": 175,
+      "pairs": 6,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b175.png",
+          "sha256": "ca3fa11b5448c5aab63748338ffc61693a7c76ede756aadfb060fcd37b2b93ee",
+          "bytes": 135167
+        },
+        "after": {
+          "path": ".github/evidence/s23/a175.png",
+          "sha256": "ca3fa11b5448c5aab63748338ffc61693a7c76ede756aadfb060fcd37b2b93ee",
+          "bytes": 135167
+        }
+      }
+    },
+    {
+      "label": "metric-zero",
+      "number": 176,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b176.png",
+          "sha256": "f796c961e5149fbd815fc33ae6373d022e27351624d87b81937b3654df938aa1",
+          "bytes": 46665
+        },
+        "after": {
+          "path": ".github/evidence/s23/a176.png",
+          "sha256": "f796c961e5149fbd815fc33ae6373d022e27351624d87b81937b3654df938aa1",
+          "bytes": 46665
+        }
+      }
+    },
+    {
+      "label": "metric-content",
+      "number": 177,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b177.png",
+          "sha256": "b370ce20a9c890389c4a3400edf81f73c91c4aa02ee54254ab35095a719bb25d",
+          "bytes": 47378
+        },
+        "after": {
+          "path": ".github/evidence/s23/a177.png",
+          "sha256": "b370ce20a9c890389c4a3400edf81f73c91c4aa02ee54254ab35095a719bb25d",
+          "bytes": 47378
+        }
+      }
+    },
+    {
+      "label": "metric-long",
+      "number": 178,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b178.png",
+          "sha256": "3b99a7437badcee48e1f5742f03c002c6f81cb6823b7a45d5e1a5615a1c546a1",
+          "bytes": 52418
+        },
+        "after": {
+          "path": ".github/evidence/s23/a178.png",
+          "sha256": "3b99a7437badcee48e1f5742f03c002c6f81cb6823b7a45d5e1a5615a1c546a1",
+          "bytes": 52418
+        }
+      }
+    },
+    {
+      "label": "metric-teacher",
+      "number": 179,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b179.png",
+          "sha256": "7696f2273b71aa31deb69b1fc3233f020156a7a6b72869da104c55ccc53b8039",
+          "bytes": 46919
+        },
+        "after": {
+          "path": ".github/evidence/s23/a179.png",
+          "sha256": "7696f2273b71aa31deb69b1fc3233f020156a7a6b72869da104c55ccc53b8039",
+          "bytes": 46919
+        }
+      }
+    },
+    {
+      "label": "stat-zero",
+      "number": 180,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b180.png",
+          "sha256": "8d043459c3954c10e6bcebea8510964480d33ac3f279fb75d0f61b60716f3d88",
+          "bytes": 46128
+        },
+        "after": {
+          "path": ".github/evidence/s23/a180.png",
+          "sha256": "8d043459c3954c10e6bcebea8510964480d33ac3f279fb75d0f61b60716f3d88",
+          "bytes": 46128
+        }
+      }
+    },
+    {
+      "label": "stat-content",
+      "number": 181,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b181.png",
+          "sha256": "b99538d206d54b7aca878cca02cb31054b9f5fed2ba43481ecb3575af79e70b4",
+          "bytes": 47009
+        },
+        "after": {
+          "path": ".github/evidence/s23/a181.png",
+          "sha256": "b99538d206d54b7aca878cca02cb31054b9f5fed2ba43481ecb3575af79e70b4",
+          "bytes": 47009
+        }
+      }
+    },
+    {
+      "label": "stat-action",
+      "number": 182,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b182.png",
+          "sha256": "07609073826d880821d972d33203f22122e718fbb911ec6b6a1b19f66471c284",
+          "bytes": 49053
+        },
+        "after": {
+          "path": ".github/evidence/s23/a182.png",
+          "sha256": "07609073826d880821d972d33203f22122e718fbb911ec6b6a1b19f66471c284",
+          "bytes": 49053
+        }
+      }
+    },
+    {
+      "label": "stat-long",
+      "number": 183,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b183.png",
+          "sha256": "b949bc03582323c6d062a48a438eb148b4a75672ff30775df53feb95bbe680c1",
+          "bytes": 50663
+        },
+        "after": {
+          "path": ".github/evidence/s23/a183.png",
+          "sha256": "b949bc03582323c6d062a48a438eb148b4a75672ff30775df53feb95bbe680c1",
+          "bytes": 50663
+        }
+      }
+    },
+    {
+      "label": "result-content",
+      "number": 184,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b184.png",
+          "sha256": "4e6a3fb351aeafe4948a9f9c5f865675f14779fc3c54832aa56f96fee3aa74d1",
+          "bytes": 85110
+        },
+        "after": {
+          "path": ".github/evidence/s23/a184.png",
+          "sha256": "4e6a3fb351aeafe4948a9f9c5f865675f14779fc3c54832aa56f96fee3aa74d1",
+          "bytes": 85110
+        }
+      }
+    },
+    {
+      "label": "result-long",
+      "number": 185,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b185.png",
+          "sha256": "aa1c37795f3c2b55bd4bcf7f56cd427b4e8061851880ff5a5bf691c0d368ce5a",
+          "bytes": 106946
+        },
+        "after": {
+          "path": ".github/evidence/s23/a185.png",
+          "sha256": "aa1c37795f3c2b55bd4bcf7f56cd427b4e8061851880ff5a5bf691c0d368ce5a",
+          "bytes": 106946
+        }
+      }
+    },
+    {
+      "label": "result-custom-icon",
+      "number": 186,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b186.png",
+          "sha256": "19f2eb879e3ff8d298cc52285e04bcf362f586475c7629e6e2bb772bcaabaa3d",
+          "bytes": 82724
+        },
+        "after": {
+          "path": ".github/evidence/s23/a186.png",
+          "sha256": "19f2eb879e3ff8d298cc52285e04bcf362f586475c7629e6e2bb772bcaabaa3d",
+          "bytes": 82724
+        }
+      }
+    },
+    {
+      "label": "result-no-icon",
+      "number": 187,
+      "pairs": 2,
+      "files": {
+        "before": {
+          "path": ".github/evidence/s23/b187.png",
+          "sha256": "cde4668e5e4e9ed7b852dd8c06ad19534d7a47ef0dc3f70e4a47a3c4e7944019",
+          "bytes": 80545
+        },
+        "after": {
+          "path": ".github/evidence/s23/a187.png",
+          "sha256": "cde4668e5e4e9ed7b852dd8c06ad19534d7a47ef0dc3f70e4a47a3c4e7944019",
+          "bytes": 80545
+        }
+      }
+    }
+  ]
+}

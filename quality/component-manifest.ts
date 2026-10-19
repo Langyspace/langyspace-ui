@@ -1,13 +1,9 @@
-export type ComponentLayer = 'atom' | 'molecule' | 'primitive'
-
 type Coverage = { status: 'complete' }
 
 export interface ComponentContract {
-  compatibilityFor?: string
   browserSmoke: Coverage
   exportName: string
   interactive: boolean
-  layer: ComponentLayer
   ownerPath: string
   reference: {
     propsPath: string
@@ -28,21 +24,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ScheduleCalendar',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ScheduleCalendar/index.tsx',
+    ownerPath: 'src/components/Calendar/ScheduleCalendar.tsx',
     runtimeMarker: 'lsui-sc-schedule-calendar',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/ScheduleCalendar/ScheduleCalendar.stories.tsx',
-      title: 'Molecules/ScheduleCalendar',
+      path: 'stories/components/Calendar/ScheduleCalendar.stories.tsx',
+      title: 'Calendar/ScheduleCalendar',
     },
     test: {
       ...complete,
-      path: 'src/molecules/ScheduleCalendar/ScheduleCalendar.test.tsx',
+      path: 'test/components/Calendar/ScheduleCalendar.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ScheduleCalendar/types.ts',
+      propsPath: 'src/components/Calendar/ScheduleCalendar.types.ts',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'schedulecalendar',
@@ -65,21 +60,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFlipButton',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFlipButton/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFlipButton.tsx',
     runtimeMarker: 'lsui-sc-flashcard-flip-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlipButton/FlashcardFlipButton.stories.tsx',
-      title: 'Molecules/FlashcardFlipButton',
+      path: 'stories/components/Flashcard/FlashcardFlipButton.stories.tsx',
+      title: 'Flashcard/FlashcardFlipButton',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlipButton/FlashcardFlipButton.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFlipButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFlipButton/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFlipButton.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardflipbutton',
@@ -105,21 +99,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardAudioButton',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardAudioButton/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardAudioButton.tsx',
     runtimeMarker: 'lsui-sc-flashcard-audio-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardAudioButton/FlashcardAudioButton.stories.tsx',
-      title: 'Molecules/FlashcardAudioButton',
+      path: 'stories/components/Flashcard/FlashcardAudioButton.stories.tsx',
+      title: 'Flashcard/FlashcardAudioButton',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardAudioButton/FlashcardAudioButton.test.tsx',
+      path: 'test/components/Flashcard/FlashcardAudioButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardAudioButton/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardAudioButton.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardaudiobutton',
@@ -141,21 +134,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardWordSkeleton',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardWordSkeleton/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardWordSkeleton.tsx',
     runtimeMarker: 'lsui-sc-flashcard-word-skeleton',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardWordSkeleton/FlashcardWordSkeleton.stories.tsx',
-      title: 'Molecules/FlashcardWordSkeleton',
+      path: 'stories/components/Flashcard/FlashcardWordSkeleton.stories.tsx',
+      title: 'Flashcard/FlashcardWordSkeleton',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardWordSkeleton/FlashcardWordSkeleton.test.tsx',
+      path: 'test/components/Flashcard/FlashcardWordSkeleton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardWordSkeleton/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardWordSkeleton.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardwordskeleton',
@@ -177,21 +169,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingWord',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingWord/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingWord.tsx',
     runtimeMarker: 'lsui-sc-shadowing-word',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingWord/ShadowingWord.stories.tsx',
-      title: 'Molecules/ShadowingWord',
+      path: 'stories/components/Shadowing/ShadowingWord.stories.tsx',
+      title: 'Shadowing/ShadowingWord',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingWord/ShadowingWord.test.tsx',
+      path: 'test/components/Shadowing/ShadowingWord.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingWord/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingWord.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingword',
@@ -217,21 +208,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'CardLink',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CardLink/index.tsx',
+    ownerPath: 'src/components/Card/CardLink.tsx',
     runtimeMarker: 'lsui-sc-card-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/CardLink/CardLink.stories.tsx',
-      title: 'Molecules/CardLink',
+      path: 'stories/components/Card/CardLink.stories.tsx',
+      title: 'Card/CardLink',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/CardLink/CardLink.test.tsx',
+      path: 'test/components/Card/CardLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/CardLink/types.ts',
+      propsPath: 'src/components/Card/CardLink.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'cardlink',
@@ -249,21 +239,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ConnectionNotice',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ConnectionNotice/index.tsx',
+    ownerPath: 'src/components/Notice/ConnectionNotice.tsx',
     runtimeMarker: 'lsui-sc-connection-notice',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ConnectionNotice/ConnectionNotice.stories.tsx',
-      title: 'Molecules/ConnectionNotice',
+      path: 'stories/components/Notice/ConnectionNotice.stories.tsx',
+      title: 'Notice/ConnectionNotice',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ConnectionNotice/ConnectionNotice.test.tsx',
+      path: 'test/components/Notice/ConnectionNotice.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ConnectionNotice/types.ts',
+      propsPath: 'src/components/Notice/ConnectionNotice.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'connectionnotice',
@@ -285,21 +274,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizBadge',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizBadge/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizBadge.tsx',
     runtimeMarker: 'lsui-sc-quiz-badge',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/QuizBadge/QuizBadge.stories.tsx',
-      title: 'Molecules/QuizBadge',
+      path: 'stories/components/Quiz/QuizBadge.stories.tsx',
+      title: 'Quiz/QuizBadge',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/QuizBadge/QuizBadge.test.tsx',
+      path: 'test/components/Quiz/QuizBadge.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizBadge/types.ts',
+      propsPath: 'src/components/Quiz/QuizBadge.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizbadge',
@@ -321,21 +309,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizMetadata',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizMetadata/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizMetadata.tsx',
     runtimeMarker: 'lsui-sc-quiz-metadata',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/QuizMetadata/QuizMetadata.stories.tsx',
-      title: 'Molecules/QuizMetadata',
+      path: 'stories/components/Quiz/QuizMetadata.stories.tsx',
+      title: 'Quiz/QuizMetadata',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/QuizMetadata/QuizMetadata.test.tsx',
+      path: 'test/components/Quiz/QuizMetadata.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizMetadata/types.ts',
+      propsPath: 'src/components/Quiz/QuizMetadata.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizmetadata',
@@ -357,21 +344,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizPromptHeader',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizPromptHeader/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizPromptHeader.tsx',
     runtimeMarker: 'lsui-sc-quiz-prompt-header',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/QuizPromptHeader/QuizPromptHeader.stories.tsx',
-      title: 'Molecules/QuizPromptHeader',
+      path: 'stories/components/Quiz/QuizPromptHeader.stories.tsx',
+      title: 'Quiz/QuizPromptHeader',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/QuizPromptHeader/QuizPromptHeader.test.tsx',
+      path: 'test/components/Quiz/QuizPromptHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizPromptHeader/types.ts',
+      propsPath: 'src/components/Quiz/QuizPromptHeader.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizpromptheader',
@@ -389,133 +375,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardProgressSegment',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardProgressSegment/index.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-progress-segment',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardProgressSegment/FlashcardProgressSegment.stories.tsx',
-      title: 'Molecules/FlashcardProgressSegment',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardProgressSegment/FlashcardProgressSegment.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/FlashcardProgressSegment/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardprogresssegment',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardCounter',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardCounter/index.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-counter',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardCounter/FlashcardCounter.stories.tsx',
-      title: 'Molecules/FlashcardCounter',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardCounter/FlashcardCounter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/FlashcardCounter/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardcounter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardProgressTrack',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardProgressTrack/index.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-progress-track',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardProgressTrack/FlashcardProgressTrack.stories.tsx',
-      title: 'Molecules/FlashcardProgressTrack',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/FlashcardProgressTrack/FlashcardProgressTrack.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/FlashcardProgressTrack/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardprogresstrack',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'QuizBlank',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/QuizBlank/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizBlank.tsx',
     runtimeMarker: 'lsui-sc-quiz-blank',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/QuizBlank/QuizBlank.stories.tsx',
-      title: 'Atoms/QuizBlank',
+      path: 'stories/components/Quiz/QuizBlank.stories.tsx',
+      title: 'Quiz/QuizBlank',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/QuizBlank/QuizBlank.test.tsx',
+      path: 'test/components/Quiz/QuizBlank.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/QuizBlank/types.ts',
+      propsPath: 'src/components/Quiz/QuizBlank.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizblank',
@@ -537,21 +415,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizQuestion',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizQuestion/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizQuestion.tsx',
     runtimeMarker: 'lsui-sc-quiz-question',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/QuizQuestion/QuizQuestion.stories.tsx',
-      title: 'Molecules/QuizQuestion',
+      path: 'stories/components/Quiz/QuizQuestion.stories.tsx',
+      title: 'Quiz/QuizQuestion',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/QuizQuestion/QuizQuestion.test.tsx',
+      path: 'test/components/Quiz/QuizQuestion.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizQuestion/types.ts',
+      propsPath: 'src/components/Quiz/QuizQuestion.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizquestion',
@@ -569,97 +446,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeCoverLabel',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCoverLabel/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-cover-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/PracticeCoverLabel/PracticeCoverLabel.stories.tsx',
-      title: 'Molecules/PracticeCoverLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/PracticeCoverLabel/PracticeCoverLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/PracticeCoverLabel/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practicecoverlabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeCoverValue',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCoverValue/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-cover-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/PracticeCoverValue/PracticeCoverValue.stories.tsx',
-      title: 'Molecules/PracticeCoverValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/PracticeCoverValue/PracticeCoverValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/PracticeCoverValue/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practicecovervalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'PracticeLevelBadge',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeLevelBadge/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeLevelBadge.tsx',
     runtimeMarker: 'lsui-sc-practice-level-badge',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/PracticeLevelBadge/PracticeLevelBadge.stories.tsx',
-      title: 'Molecules/PracticeLevelBadge',
+      path: 'stories/components/Practice/PracticeLevelBadge.stories.tsx',
+      title: 'Practice/PracticeLevelBadge',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/PracticeLevelBadge/PracticeLevelBadge.test.tsx',
+      path: 'test/components/Practice/PracticeLevelBadge.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeLevelBadge/types.ts',
+      propsPath: 'src/components/Practice/PracticeLevelBadge.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicelevelbadge',
@@ -681,21 +486,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeCardCover',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCardCover/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeCardCover.tsx',
     runtimeMarker: 'lsui-sc-practice-card-cover',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/PracticeCardCover/PracticeCardCover.stories.tsx',
-      title: 'Molecules/PracticeCardCover',
+      path: 'stories/components/Practice/PracticeCardCover.stories.tsx',
+      title: 'Practice/PracticeCardCover',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/PracticeCardCover/PracticeCardCover.test.tsx',
+      path: 'test/components/Practice/PracticeCardCover.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeCardCover/types.ts',
+      propsPath: 'src/components/Practice/PracticeCardCover.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardcover',
@@ -717,21 +521,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeCard',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCard/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeCard.tsx',
     runtimeMarker: 'lsui-sc-practice-card',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/PracticeCard/PracticeCard.stories.tsx',
-      title: 'Molecules/PracticeCard',
+      path: 'stories/components/Practice/PracticeCard.stories.tsx',
+      title: 'Practice/PracticeCard',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/PracticeCard/PracticeCard.test.tsx',
+      path: 'test/components/Practice/PracticeCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeCard/types.ts',
+      propsPath: 'src/components/Practice/PracticeCard.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecard',
@@ -753,21 +556,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ScheduleRow',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ScheduleRow/index.tsx',
+    ownerPath: 'src/components/Calendar/ScheduleRow.tsx',
     runtimeMarker: 'lsui-sc-schedule-row',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ScheduleRow/ScheduleRow.stories.tsx',
-      title: 'Molecules/ScheduleRow',
+      path: 'stories/components/Calendar/ScheduleRow.stories.tsx',
+      title: 'Calendar/ScheduleRow',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ScheduleRow/ScheduleRow.test.tsx',
+      path: 'test/components/Calendar/ScheduleRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ScheduleRow/types.ts',
+      propsPath: 'src/components/Calendar/ScheduleRow.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'schedulerow',
@@ -781,57 +583,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarTimeSlot',
-    interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarTimeSlot/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-time-slot',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarTimeSlot/CalendarTimeSlot.stories.tsx',
-      title: 'Molecules/CalendarTimeSlot',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarTimeSlot/CalendarTimeSlot.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarTimeSlot/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendartimeslot',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Week.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'SessionProgress',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SessionProgress/index.tsx',
+    ownerPath: 'src/components/SessionProgress/SessionProgress.tsx',
     runtimeMarker: 'lsui-sc-session-progress',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/SessionProgress/SessionProgress.stories.tsx',
-      title: 'Molecules/SessionProgress',
+      path: 'stories/components/SessionProgress/SessionProgress.stories.tsx',
+      title: 'SessionProgress',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/SessionProgress/SessionProgress.test.tsx',
+      path: 'test/components/SessionProgress/SessionProgress.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/SessionProgress/types.ts',
+      propsPath: 'src/components/SessionProgress/SessionProgress.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'sessionprogress',
@@ -853,21 +623,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PageDescription',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PageDescription/index.tsx',
+    ownerPath: 'src/components/SectionHeader/PageDescription.tsx',
     runtimeMarker: 'lsui-sc-page-description',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/PageDescription/PageDescription.stories.tsx',
-      title: 'Molecules/PageDescription',
+      path: 'stories/components/SectionHeader/PageDescription.stories.tsx',
+      title: 'SectionHeader/PageDescription',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/PageDescription/PageDescription.test.tsx',
+      path: 'test/components/SectionHeader/PageDescription.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PageDescription/types.ts',
+      propsPath: 'src/components/SectionHeader/PageDescription.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'pagedescription',
@@ -889,21 +658,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PageTitle',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PageTitle/index.tsx',
+    ownerPath: 'src/components/SectionHeader/PageTitle.tsx',
     runtimeMarker: 'lsui-sc-page-title',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/PageTitle/PageTitle.stories.tsx',
-      title: 'Molecules/PageTitle',
+      path: 'stories/components/SectionHeader/PageTitle.stories.tsx',
+      title: 'SectionHeader/PageTitle',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/PageTitle/PageTitle.test.tsx',
+      path: 'test/components/SectionHeader/PageTitle.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PageTitle/types.ts',
+      propsPath: 'src/components/SectionHeader/PageTitle.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'pagetitle',
@@ -929,21 +697,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthLegalText',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthLegalText/index.tsx',
+    ownerPath: 'src/components/Auth/AuthLegalText.tsx',
     runtimeMarker: 'lsui-sc-auth-legal-text',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthLegalText/AuthLegalText.stories.tsx',
-      title: 'Molecules/AuthLegalText',
+      path: 'stories/components/Auth/AuthLegalText.stories.tsx',
+      title: 'Auth/AuthLegalText',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthLegalText/AuthLegalText.test.tsx',
+      path: 'test/components/Auth/AuthLegalText.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthLegalText/types.ts',
+      propsPath: 'src/components/Auth/AuthLegalText.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authlegaltext',
@@ -965,21 +732,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthTokenLabel',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthTokenLabel/index.tsx',
+    ownerPath: 'src/components/Auth/AuthTokenLabel.tsx',
     runtimeMarker: 'lsui-sc-auth-token-label',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthTokenLabel/AuthTokenLabel.stories.tsx',
-      title: 'Molecules/AuthTokenLabel',
+      path: 'stories/components/Auth/AuthTokenLabel.stories.tsx',
+      title: 'Auth/AuthTokenLabel',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthTokenLabel/AuthTokenLabel.test.tsx',
+      path: 'test/components/Auth/AuthTokenLabel.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthTokenLabel/types.ts',
+      propsPath: 'src/components/Auth/AuthTokenLabel.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtokenlabel',
@@ -1001,21 +767,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthChannelIcon',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthChannelIcon/index.tsx',
+    ownerPath: 'src/components/Auth/AuthChannelIcon.tsx',
     runtimeMarker: 'lsui-sc-auth-channel-icon',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthChannelIcon/AuthChannelIcon.stories.tsx',
-      title: 'Molecules/AuthChannelIcon',
+      path: 'stories/components/Auth/AuthChannelIcon.stories.tsx',
+      title: 'Auth/AuthChannelIcon',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthChannelIcon/AuthChannelIcon.test.tsx',
+      path: 'test/components/Auth/AuthChannelIcon.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthChannelIcon/types.ts',
+      propsPath: 'src/components/Auth/AuthChannelIcon.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authchannelicon',
@@ -1037,21 +802,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthChannelHint',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthChannelHint/index.tsx',
+    ownerPath: 'src/components/Auth/AuthChannelHint.tsx',
     runtimeMarker: 'lsui-sc-auth-channel-hint',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthChannelHint/AuthChannelHint.stories.tsx',
-      title: 'Molecules/AuthChannelHint',
+      path: 'stories/components/Auth/AuthChannelHint.stories.tsx',
+      title: 'Auth/AuthChannelHint',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthChannelHint/AuthChannelHint.test.tsx',
+      path: 'test/components/Auth/AuthChannelHint.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthChannelHint/types.ts',
+      propsPath: 'src/components/Auth/AuthChannelHint.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authchannelhint',
@@ -1073,21 +837,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingRepetitions',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingRepetitions/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingRepetitions.tsx',
     runtimeMarker: 'lsui-sc-shadowing-repetitions',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingRepetitions/ShadowingRepetitions.stories.tsx',
-      title: 'Molecules/ShadowingRepetitions',
+      path: 'stories/components/Shadowing/ShadowingRepetitions.stories.tsx',
+      title: 'Shadowing/ShadowingRepetitions',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingRepetitions/ShadowingRepetitions.test.tsx',
+      path: 'test/components/Shadowing/ShadowingRepetitions.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingRepetitions/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingRepetitions.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingrepetitions',
@@ -1109,21 +872,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Skeleton',
     interactive: false,
-    layer: 'primitive',
-    ownerPath: 'src/primitives/Skeleton/index.tsx',
+    ownerPath: 'src/components/Skeleton/Skeleton.tsx',
     runtimeMarker: 'lsui-sc-skeleton',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/primitives/Skeleton/Skeleton.stories.tsx',
-      title: 'Primitives/Skeleton',
+      path: 'stories/components/Skeleton/Skeleton.stories.tsx',
+      title: 'Skeleton',
     },
     test: {
       status: 'complete',
-      path: 'src/primitives/Skeleton/Skeleton.test.tsx',
+      path: 'test/components/Skeleton/Skeleton.test.tsx',
     },
     reference: {
-      propsPath: 'src/primitives/Skeleton/types.ts',
+      propsPath: 'src/components/Skeleton/Skeleton.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'skeleton',
@@ -1149,21 +911,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ChoiceCard',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ChoiceCard/index.tsx',
+    ownerPath: 'src/components/ChoiceCard/ChoiceCard.tsx',
     runtimeMarker: 'lsui-sc-choice-card',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ChoiceCard/ChoiceCard.stories.tsx',
-      title: 'Molecules/ChoiceCard',
+      path: 'stories/components/ChoiceCard/ChoiceCard.stories.tsx',
+      title: 'ChoiceCard',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ChoiceCard/ChoiceCard.test.tsx',
+      path: 'test/components/ChoiceCard/ChoiceCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ChoiceCard/types.ts',
+      propsPath: 'src/components/ChoiceCard/ChoiceCard.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'choicecard',
@@ -1181,21 +942,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ToggleButton',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ToggleButton/index.tsx',
+    ownerPath: 'src/components/ToggleButton/ToggleButton.tsx',
     runtimeMarker: 'lsui-sc-toggle-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ToggleButton/ToggleButton.stories.tsx',
-      title: 'Molecules/ToggleButton',
+      path: 'stories/components/ToggleButton/ToggleButton.stories.tsx',
+      title: 'ToggleButton',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ToggleButton/ToggleButton.test.tsx',
+      path: 'test/components/ToggleButton/ToggleButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ToggleButton/types.ts',
+      propsPath: 'src/components/ToggleButton/ToggleButton.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'togglebutton',
@@ -1213,21 +973,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'RadioButton',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/RadioButton/index.tsx',
+    ownerPath: 'src/components/RadioButton/RadioButton.tsx',
     runtimeMarker: 'lsui-sc-radio-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/RadioButton/RadioButton.stories.tsx',
-      title: 'Atoms/RadioButton',
+      path: 'stories/components/RadioButton/RadioButton.stories.tsx',
+      title: 'RadioButton',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/RadioButton/RadioButton.test.tsx',
+      path: 'test/components/RadioButton/RadioButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/RadioButton/types.ts',
+      propsPath: 'src/components/RadioButton/RadioButton.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'radiobutton',
@@ -1245,21 +1004,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Checkbox',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/Checkbox/index.tsx',
+    ownerPath: 'src/components/Checkbox/Checkbox.tsx',
     runtimeMarker: 'lsui-sc-checkbox',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/Checkbox/Checkbox.stories.tsx',
-      title: 'Atoms/Checkbox',
+      path: 'stories/components/Checkbox/Checkbox.stories.tsx',
+      title: 'Checkbox',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/Checkbox/Checkbox.test.tsx',
+      path: 'test/components/Checkbox/Checkbox.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/Checkbox/types.ts',
+      propsPath: 'src/components/Checkbox/Checkbox.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'checkbox',
@@ -1277,21 +1035,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'WeeklyCountChart',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/WeeklyCountChart/index.tsx',
+    ownerPath: 'src/components/Charts/WeeklyCountChart.tsx',
     runtimeMarker: 'lsui-sc-weekly-count-chart',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/WeeklyCountChart/WeeklyCountChart.stories.tsx',
-      title: 'Molecules/WeeklyCountChart',
+      path: 'stories/components/Charts/WeeklyCountChart.stories.tsx',
+      title: 'Charts/WeeklyCountChart',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/WeeklyCountChart/WeeklyCountChart.test.tsx',
+      path: 'test/components/Charts/WeeklyCountChart.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/WeeklyCountChart/types.ts',
+      propsPath: 'src/components/Charts/WeeklyCountChart.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'weeklycountchart',
@@ -1309,21 +1066,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'GroupedBarChart',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/GroupedBarChart/index.tsx',
+    ownerPath: 'src/components/Charts/GroupedBarChart.tsx',
     runtimeMarker: 'lsui-sc-grouped-bar-chart',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/GroupedBarChart/GroupedBarChart.stories.tsx',
-      title: 'Molecules/GroupedBarChart',
+      path: 'stories/components/Charts/GroupedBarChart.stories.tsx',
+      title: 'Charts/GroupedBarChart',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/GroupedBarChart/GroupedBarChart.test.tsx',
+      path: 'test/components/Charts/GroupedBarChart.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/GroupedBarChart/types.ts',
+      propsPath: 'src/components/Charts/GroupedBarChart.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'groupedbarchart',
@@ -1341,21 +1097,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'KeyValueList',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/KeyValueList/index.tsx',
+    ownerPath: 'src/components/Details/KeyValueList.tsx',
     runtimeMarker: 'lsui-sc-key-value-list',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/KeyValueList/KeyValueList.stories.tsx',
-      title: 'Molecules/KeyValueList',
+      path: 'stories/components/Details/KeyValueList.stories.tsx',
+      title: 'Details/KeyValueList',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/KeyValueList/KeyValueList.test.tsx',
+      path: 'test/components/Details/KeyValueList.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/KeyValueList/types.ts',
+      propsPath: 'src/components/Details/KeyValueList.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'keyvaluelist',
@@ -1373,21 +1128,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingControlCluster',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingControlCluster/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingControlCluster.tsx',
     runtimeMarker: 'lsui-sc-shadowing-control-cluster',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingControlCluster/ShadowingControlCluster.stories.tsx',
-      title: 'Molecules/ShadowingControlCluster',
+      path: 'stories/components/Shadowing/ShadowingControlCluster.stories.tsx',
+      title: 'Shadowing/ShadowingControlCluster',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingControlCluster/ShadowingControlCluster.test.tsx',
+      path: 'test/components/Shadowing/ShadowingControlCluster.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingControlCluster/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingControlCluster.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontrolcluster',
@@ -1409,21 +1163,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingControlDock',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingControlDock/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingControlDock.tsx',
     runtimeMarker: 'lsui-sc-shadowing-control-dock',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingControlDock/ShadowingControlDock.stories.tsx',
-      title: 'Molecules/ShadowingControlDock',
+      path: 'stories/components/Shadowing/ShadowingControlDock.stories.tsx',
+      title: 'Shadowing/ShadowingControlDock',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingControlDock/ShadowingControlDock.test.tsx',
+      path: 'test/components/Shadowing/ShadowingControlDock.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingControlDock/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingControlDock.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontroldock',
@@ -1449,21 +1202,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingTranslation',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingTranslation/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingTranslation.tsx',
     runtimeMarker: 'lsui-sc-shadowing-translation',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingTranslation/ShadowingTranslation.stories.tsx',
-      title: 'Molecules/ShadowingTranslation',
+      path: 'stories/components/Shadowing/ShadowingTranslation.stories.tsx',
+      title: 'Shadowing/ShadowingTranslation',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingTranslation/ShadowingTranslation.test.tsx',
+      path: 'test/components/Shadowing/ShadowingTranslation.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingTranslation/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingTranslation.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingtranslation',
@@ -1485,21 +1237,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingActivePhrase',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingActivePhrase/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingActivePhrase.tsx',
     runtimeMarker: 'lsui-sc-shadowing-active-phrase',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingActivePhrase/ShadowingActivePhrase.stories.tsx',
-      title: 'Molecules/ShadowingActivePhrase',
+      path: 'stories/components/Shadowing/ShadowingActivePhrase.stories.tsx',
+      title: 'Shadowing/ShadowingActivePhrase',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingActivePhrase/ShadowingActivePhrase.test.tsx',
+      path: 'test/components/Shadowing/ShadowingActivePhrase.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingActivePhrase/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingActivePhrase.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingactivephrase',
@@ -1525,21 +1276,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingContextPhrase',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingContextPhrase/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingContextPhrase.tsx',
     runtimeMarker: 'lsui-sc-shadowing-context-phrase',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingContextPhrase/ShadowingContextPhrase.stories.tsx',
-      title: 'Molecules/ShadowingContextPhrase',
+      path: 'stories/components/Shadowing/ShadowingContextPhrase.stories.tsx',
+      title: 'Shadowing/ShadowingContextPhrase',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingContextPhrase/ShadowingContextPhrase.test.tsx',
+      path: 'test/components/Shadowing/ShadowingContextPhrase.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingContextPhrase/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingContextPhrase.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontextphrase',
@@ -1565,21 +1315,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingPhraseStack',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingPhraseStack/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingPhraseStack.tsx',
     runtimeMarker: 'lsui-sc-shadowing-phrase-stack',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingPhraseStack/ShadowingPhraseStack.stories.tsx',
-      title: 'Molecules/ShadowingPhraseStack',
+      path: 'stories/components/Shadowing/ShadowingPhraseStack.stories.tsx',
+      title: 'Shadowing/ShadowingPhraseStack',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingPhraseStack/ShadowingPhraseStack.test.tsx',
+      path: 'test/components/Shadowing/ShadowingPhraseStack.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingPhraseStack/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingPhraseStack.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingphrasestack',
@@ -1605,21 +1354,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingPanel',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingPanel/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingPanel.tsx',
     runtimeMarker: 'lsui-sc-shadowing-panel',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingPanel/ShadowingPanel.stories.tsx',
-      title: 'Molecules/ShadowingPanel',
+      path: 'stories/components/Shadowing/ShadowingPanel.stories.tsx',
+      title: 'Shadowing/ShadowingPanel',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingPanel/ShadowingPanel.test.tsx',
+      path: 'test/components/Shadowing/ShadowingPanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingPanel/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingPanel.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingpanel',
@@ -1641,21 +1389,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ShadowingReader',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ShadowingReader/index.tsx',
+    ownerPath: 'src/components/Shadowing/ShadowingReader.tsx',
     runtimeMarker: 'lsui-sc-shadowing-reader',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ShadowingReader/ShadowingReader.stories.tsx',
-      title: 'Molecules/ShadowingReader',
+      path: 'stories/components/Shadowing/ShadowingReader.stories.tsx',
+      title: 'Shadowing/ShadowingReader',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ShadowingReader/ShadowingReader.test.tsx',
+      path: 'test/components/Shadowing/ShadowingReader.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ShadowingReader/types.ts',
+      propsPath: 'src/components/Shadowing/ShadowingReader.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingreader',
@@ -1681,21 +1428,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFeedback',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFeedback/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFeedback.tsx',
     runtimeMarker: 'lsui-sc-flashcard-feedback',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFeedback/FlashcardFeedback.stories.tsx',
-      title: 'Molecules/FlashcardFeedback',
+      path: 'stories/components/Flashcard/FlashcardFeedback.stories.tsx',
+      title: 'Flashcard/FlashcardFeedback',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFeedback/FlashcardFeedback.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFeedback.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFeedback/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFeedback.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfeedback',
@@ -1717,21 +1463,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardSwiper',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardSwiper/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardSwiper.tsx',
     runtimeMarker: 'lsui-sc-flashcard-swiper',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardSwiper/FlashcardSwiper.stories.tsx',
-      title: 'Molecules/FlashcardSwiper',
+      path: 'stories/components/Flashcard/FlashcardSwiper.stories.tsx',
+      title: 'Flashcard/FlashcardSwiper',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardSwiper/FlashcardSwiper.test.tsx',
+      path: 'test/components/Flashcard/FlashcardSwiper.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardSwiper/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardSwiper.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardswiper',
@@ -1753,21 +1498,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFlip',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFlip/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFlip.tsx',
     runtimeMarker: 'lsui-sc-flashcard-flip',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlip/FlashcardFlip.stories.tsx',
-      title: 'Molecules/FlashcardFlip',
+      path: 'stories/components/Flashcard/FlashcardFlip.stories.tsx',
+      title: 'Flashcard/FlashcardFlip',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlip/FlashcardFlip.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFlip.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFlip/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFlip.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardflip',
@@ -1793,21 +1537,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardGhost',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardGhost/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardGhost.tsx',
     runtimeMarker: 'lsui-sc-flashcard-ghost',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardGhost/FlashcardGhost.stories.tsx',
-      title: 'Molecules/FlashcardGhost',
+      path: 'stories/components/Flashcard/FlashcardGhost.stories.tsx',
+      title: 'Flashcard/FlashcardGhost',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardGhost/FlashcardGhost.test.tsx',
+      path: 'test/components/Flashcard/FlashcardGhost.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardGhost/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardGhost.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardghost',
@@ -1833,21 +1576,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFace',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFace/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFace.tsx',
     runtimeMarker: 'lsui-sc-flashcard-face',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFace/FlashcardFace.stories.tsx',
-      title: 'Molecules/FlashcardFace',
+      path: 'stories/components/Flashcard/FlashcardFace.stories.tsx',
+      title: 'Flashcard/FlashcardFace',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFace/FlashcardFace.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFace.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFace/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFace.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardface',
@@ -1873,21 +1615,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFlipHint',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFlipHint/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFlipHint.tsx',
     runtimeMarker: 'lsui-sc-flashcard-flip-hint',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlipHint/FlashcardFlipHint.stories.tsx',
-      title: 'Molecules/FlashcardFlipHint',
+      path: 'stories/components/Flashcard/FlashcardFlipHint.stories.tsx',
+      title: 'Flashcard/FlashcardFlipHint',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFlipHint/FlashcardFlipHint.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFlipHint.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFlipHint/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFlipHint.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfliphint',
@@ -1909,21 +1650,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardBack',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardBack/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardBack.tsx',
     runtimeMarker: 'lsui-sc-flashcard-back',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardBack/FlashcardBack.stories.tsx',
-      title: 'Molecules/FlashcardBack',
+      path: 'stories/components/Flashcard/FlashcardBack.stories.tsx',
+      title: 'Flashcard/FlashcardBack',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardBack/FlashcardBack.test.tsx',
+      path: 'test/components/Flashcard/FlashcardBack.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardBack/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardBack.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardback',
@@ -1945,21 +1685,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardWord',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardWord/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardWord.tsx',
     runtimeMarker: 'lsui-sc-flashcard-word',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardWord/FlashcardWord.stories.tsx',
-      title: 'Molecules/FlashcardWord',
+      path: 'stories/components/Flashcard/FlashcardWord.stories.tsx',
+      title: 'Flashcard/FlashcardWord',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardWord/FlashcardWord.test.tsx',
+      path: 'test/components/Flashcard/FlashcardWord.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardWord/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardWord.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardword',
@@ -1981,21 +1720,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardImagePanel',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardImagePanel/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardImagePanel.tsx',
     runtimeMarker: 'lsui-sc-flashcard-image-panel',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardImagePanel/FlashcardImagePanel.stories.tsx',
-      title: 'Molecules/FlashcardImagePanel',
+      path: 'stories/components/Flashcard/FlashcardImagePanel.stories.tsx',
+      title: 'Flashcard/FlashcardImagePanel',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardImagePanel/FlashcardImagePanel.test.tsx',
+      path: 'test/components/Flashcard/FlashcardImagePanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardImagePanel/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardImagePanel.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardimagepanel',
@@ -2017,21 +1755,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFront',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFront/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFront.tsx',
     runtimeMarker: 'lsui-sc-flashcard-front',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFront/FlashcardFront.stories.tsx',
-      title: 'Molecules/FlashcardFront',
+      path: 'stories/components/Flashcard/FlashcardFront.stories.tsx',
+      title: 'Flashcard/FlashcardFront',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFront/FlashcardFront.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFront.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFront/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFront.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfront',
@@ -2053,21 +1790,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardDeck',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardDeck/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardDeck.tsx',
     runtimeMarker: 'lsui-sc-flashcard-deck',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardDeck/FlashcardDeck.stories.tsx',
-      title: 'Molecules/FlashcardDeck',
+      path: 'stories/components/Flashcard/FlashcardDeck.stories.tsx',
+      title: 'Flashcard/FlashcardDeck',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardDeck/FlashcardDeck.test.tsx',
+      path: 'test/components/Flashcard/FlashcardDeck.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardDeck/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardDeck.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcarddeck',
@@ -2089,21 +1825,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardStage',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardStage/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardStage.tsx',
     runtimeMarker: 'lsui-sc-flashcard-stage',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardStage/FlashcardStage.stories.tsx',
-      title: 'Molecules/FlashcardStage',
+      path: 'stories/components/Flashcard/FlashcardStage.stories.tsx',
+      title: 'Flashcard/FlashcardStage',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardStage/FlashcardStage.test.tsx',
+      path: 'test/components/Flashcard/FlashcardStage.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardStage/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardStage.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardstage',
@@ -2125,21 +1860,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardFrame',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardFrame/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardFrame.tsx',
     runtimeMarker: 'lsui-sc-flashcard-frame',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFrame/FlashcardFrame.stories.tsx',
-      title: 'Molecules/FlashcardFrame',
+      path: 'stories/components/Flashcard/FlashcardFrame.stories.tsx',
+      title: 'Flashcard/FlashcardFrame',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FlashcardFrame/FlashcardFrame.test.tsx',
+      path: 'test/components/Flashcard/FlashcardFrame.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardFrame/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardFrame.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardframe',
@@ -2157,217 +1891,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'TimelineEvent',
-    interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/TimelineEvent/index.tsx',
-    runtimeMarker: 'lsui-sc-timeline-event',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/TimelineEvent/TimelineEvent.stories.tsx',
-      title: 'Molecules/TimelineEvent',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/TimelineEvent/TimelineEvent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/TimelineEvent/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'timelineevent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Week.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarEvent',
-    interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarEvent/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-event',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarEvent/CalendarEvent.stories.tsx',
-      title: 'Molecules/CalendarEvent',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarEvent/CalendarEvent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarEvent/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarevent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Month.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarDayNumber',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarDayNumber/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-day-number',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarDayNumber/CalendarDayNumber.stories.tsx',
-      title: 'Molecules/CalendarDayNumber',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarDayNumber/CalendarDayNumber.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarDayNumber/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendardaynumber',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Month.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarDay',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarDay/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-day',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarDay/CalendarDay.stories.tsx',
-      title: 'Molecules/CalendarDay',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarDay/CalendarDay.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarDay/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarday',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Month.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarWeekGrid',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarWeekGrid/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-week-grid',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarWeekGrid/CalendarWeekGrid.stories.tsx',
-      title: 'Molecules/CalendarWeekGrid',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarWeekGrid/CalendarWeekGrid.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarWeekGrid/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarweekgrid',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Week.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarMonthGrid',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarMonthGrid/index.tsx',
-    runtimeMarker: 'lsui-sc-calendar-month-grid',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/CalendarMonthGrid/CalendarMonthGrid.stories.tsx',
-      title: 'Molecules/CalendarMonthGrid',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/CalendarMonthGrid/CalendarMonthGrid.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/CalendarMonthGrid/types.ts',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarmonthgrid',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/Month.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'CalendarScroller',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarScroller/index.tsx',
+    ownerPath: 'src/components/Calendar/CalendarScroller.tsx',
     runtimeMarker: 'lsui-sc-calendar-scroller',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/CalendarScroller/CalendarScroller.stories.tsx',
-      title: 'Molecules/CalendarScroller',
+      path: 'stories/components/Calendar/CalendarScroller.stories.tsx',
+      title: 'Calendar/CalendarScroller',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/CalendarScroller/CalendarScroller.test.tsx',
+      path: 'test/components/Calendar/CalendarScroller.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/CalendarScroller/types.ts',
+      propsPath: 'src/components/Calendar/CalendarScroller.tsx',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'calendarscroller',
@@ -2385,21 +1927,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'BottomNavigationLink',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/BottomNavigationLink/index.tsx',
+    ownerPath: 'src/components/Navigation/BottomNavigationLink.tsx',
     runtimeMarker: 'lsui-sc-bottom-navigation-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/BottomNavigationLink/BottomNavigationLink.stories.tsx',
-      title: 'Molecules/BottomNavigationLink',
+      path: 'stories/components/Navigation/BottomNavigationLink.stories.tsx',
+      title: 'Navigation/BottomNavigationLink',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/BottomNavigationLink/BottomNavigationLink.test.tsx',
+      path: 'test/components/Navigation/BottomNavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/BottomNavigationLink/types.ts',
+      propsPath: 'src/components/Navigation/BottomNavigationLink.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'bottomnavigationlink',
@@ -2417,21 +1958,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'BottomNavigation',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/BottomNavigation/index.tsx',
+    ownerPath: 'src/components/Navigation/BottomNavigation.tsx',
     runtimeMarker: 'lsui-sc-bottom-navigation',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/BottomNavigation/BottomNavigation.stories.tsx',
-      title: 'Molecules/BottomNavigation',
+      path: 'stories/components/Navigation/BottomNavigation.stories.tsx',
+      title: 'Navigation/BottomNavigation',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/BottomNavigation/BottomNavigation.test.tsx',
+      path: 'test/components/Navigation/BottomNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/BottomNavigation/types.ts',
+      propsPath: 'src/components/Navigation/BottomNavigation.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'bottomnavigation',
@@ -2453,21 +1993,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ConversationRow',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ConversationRow/index.tsx',
+    ownerPath: 'src/components/Message/ConversationRow.tsx',
     runtimeMarker: 'lsui-sc-conversation-row',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/ConversationRow/ConversationRow.stories.tsx',
-      title: 'Molecules/ConversationRow',
+      path: 'stories/components/Message/ConversationRow.stories.tsx',
+      title: 'Message/ConversationRow',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/ConversationRow/ConversationRow.test.tsx',
+      path: 'test/components/Message/ConversationRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ConversationRow/types.ts',
+      propsPath: 'src/components/Message/ConversationRow.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'conversationrow',
@@ -2485,21 +2024,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'NotificationItem',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/NotificationItem/index.tsx',
+    ownerPath: 'src/components/NotificationItem/NotificationItem.tsx',
     runtimeMarker: 'lsui-sc-notification-item',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/NotificationItem/NotificationItem.stories.tsx',
-      title: 'Molecules/NotificationItem',
+      path: 'stories/components/NotificationItem/NotificationItem.stories.tsx',
+      title: 'NotificationItem',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/NotificationItem/NotificationItem.test.tsx',
+      path: 'test/components/NotificationItem/NotificationItem.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/NotificationItem/types.ts',
+      propsPath: 'src/components/NotificationItem/NotificationItem.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'notificationitem',
@@ -2517,21 +2055,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'NavigationButton',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/NavigationButton/index.tsx',
+    ownerPath: 'src/components/Navigation/NavigationButton.tsx',
     runtimeMarker: 'lsui-sc-navigation-button',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/NavigationButton/NavigationButton.stories.tsx',
-      title: 'Molecules/NavigationButton',
+      path: 'stories/components/Navigation/NavigationButton.stories.tsx',
+      title: 'Navigation/NavigationButton',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/NavigationButton/NavigationButton.test.tsx',
+      path: 'test/components/Navigation/NavigationButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/NavigationButton/types.ts',
+      propsPath: 'src/components/Navigation/NavigationButton.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'navigationbutton',
@@ -2557,21 +2094,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'NavigationLink',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/NavigationLink/index.tsx',
+    ownerPath: 'src/components/Navigation/NavigationLink.tsx',
     runtimeMarker: 'lsui-sc-navigation-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/NavigationLink/NavigationLink.stories.tsx',
-      title: 'Molecules/NavigationLink',
+      path: 'stories/components/Navigation/NavigationLink.stories.tsx',
+      title: 'Navigation/NavigationLink',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/NavigationLink/NavigationLink.test.tsx',
+      path: 'test/components/Navigation/NavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/NavigationLink/types.ts',
+      propsPath: 'src/components/Navigation/NavigationLink.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'navigationlink',
@@ -2593,21 +2129,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SidebarNavigation',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SidebarNavigation/index.tsx',
+    ownerPath: 'src/components/Navigation/SidebarNavigation.tsx',
     runtimeMarker: 'lsui-sc-sidebar-navigation',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/SidebarNavigation/SidebarNavigation.stories.tsx',
-      title: 'Molecules/SidebarNavigation',
+      path: 'stories/components/Navigation/SidebarNavigation.stories.tsx',
+      title: 'Navigation/SidebarNavigation',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/SidebarNavigation/SidebarNavigation.test.tsx',
+      path: 'test/components/Navigation/SidebarNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/SidebarNavigation/types.ts',
+      propsPath: 'src/components/Navigation/SidebarNavigation.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'sidebarnavigation',
@@ -2633,21 +2168,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SidebarFrame',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SidebarFrame/index.tsx',
+    ownerPath: 'src/components/Navigation/SidebarFrame.tsx',
     runtimeMarker: 'lsui-sc-sidebar-frame',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/SidebarFrame/SidebarFrame.stories.tsx',
-      title: 'Molecules/SidebarFrame',
+      path: 'stories/components/Navigation/SidebarFrame.stories.tsx',
+      title: 'Navigation/SidebarFrame',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/SidebarFrame/SidebarFrame.test.tsx',
+      path: 'test/components/Navigation/SidebarFrame.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/SidebarFrame/types.ts',
+      propsPath: 'src/components/Navigation/SidebarFrame.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'sidebarframe',
@@ -2669,97 +2203,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'MetricLabel',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/MetricLabel/index.tsx',
-    runtimeMarker: 'lsui-sc-metric-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/MetricLabel/MetricLabel.stories.tsx',
-      title: 'Atoms/MetricLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/MetricLabel/MetricLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/MetricLabel/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'metriclabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'MetricValue',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/MetricValue/index.tsx',
-    runtimeMarker: 'lsui-sc-metric-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/MetricValue/MetricValue.stories.tsx',
-      title: 'Atoms/MetricValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/MetricValue/MetricValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/MetricValue/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'metricvalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'MetricSummary',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/MetricSummary/index.tsx',
+    ownerPath: 'src/components/MetricSummary/MetricSummary.tsx',
     runtimeMarker: 'lsui-sc-metric-summary',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/MetricSummary/MetricSummary.stories.tsx',
-      title: 'Molecules/MetricSummary',
+      path: 'stories/components/MetricSummary/MetricSummary.stories.tsx',
+      title: 'MetricSummary',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/MetricSummary/MetricSummary.test.tsx',
+      path: 'test/components/MetricSummary/MetricSummary.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/MetricSummary/types.ts',
+      propsPath: 'src/components/MetricSummary/MetricSummary.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'metricsummary',
@@ -2777,62 +2239,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'TextButton',
-    compatibilityFor: 'Button',
-    interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/Button/compatibility.tsx',
-    runtimeMarker: 'lsui-sc-text-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/Button/TextButton.stories.tsx',
-      title: 'Atoms/TextButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/Button/TextButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/Button/compatibility.tsx',
-      documentation: {
-        path: 'docs/components/controls.md',
-        anchor: 'textbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/StudentPayment/index.tsx',
-        },
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/PortalAction.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'DetailRow',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DetailRow/index.tsx',
+    ownerPath: 'src/components/Details/DetailRow.tsx',
     runtimeMarker: 'lsui-sc-detail-row',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/DetailRow/DetailRow.stories.tsx',
-      title: 'Molecules/DetailRow',
+      path: 'stories/components/Details/DetailRow.stories.tsx',
+      title: 'Details/DetailRow',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/DetailRow/DetailRow.test.tsx',
+      path: 'test/components/Details/DetailRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DetailRow/types.ts',
+      propsPath: 'src/components/Details/DetailRow.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'detailrow',
@@ -2850,21 +2275,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DefinitionItem',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DefinitionItem/index.tsx',
+    ownerPath: 'src/components/Details/DefinitionItem.tsx',
     runtimeMarker: 'lsui-sc-definition-item',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/DefinitionItem/DefinitionItem.stories.tsx',
-      title: 'Molecules/DefinitionItem',
+      path: 'stories/components/Details/DefinitionItem.stories.tsx',
+      title: 'Details/DefinitionItem',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/DefinitionItem/DefinitionItem.test.tsx',
+      path: 'test/components/Details/DefinitionItem.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DefinitionItem/types.ts',
+      propsPath: 'src/components/Details/DefinitionItem.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'definitionitem',
@@ -2878,121 +2302,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'StatAction',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/StatAction/index.tsx',
-    runtimeMarker: 'lsui-sc-stat-action',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/StatAction/StatAction.stories.tsx',
-      title: 'Molecules/StatAction',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/StatAction/StatAction.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/StatAction/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'stataction',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'StatLabel',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/StatLabel/index.tsx',
-    runtimeMarker: 'lsui-sc-stat-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/StatLabel/StatLabel.stories.tsx',
-      title: 'Atoms/StatLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/StatLabel/StatLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/StatLabel/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'statlabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'StatValue',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/StatValue/index.tsx',
-    runtimeMarker: 'lsui-sc-stat-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/StatValue/StatValue.stories.tsx',
-      title: 'Atoms/StatValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/StatValue/StatValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/StatValue/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'statvalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'StatCard',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/StatCard/index.tsx',
+    ownerPath: 'src/components/StatCard/StatCard.tsx',
     runtimeMarker: 'lsui-sc-stat-card',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/StatCard/StatCard.stories.tsx',
-      title: 'Molecules/StatCard',
+      path: 'stories/components/StatCard/StatCard.stories.tsx',
+      title: 'StatCard',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/StatCard/StatCard.test.tsx',
+      path: 'test/components/StatCard/StatCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/StatCard/types.ts',
+      propsPath: 'src/components/StatCard/StatCard.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'statcard',
@@ -3010,21 +2338,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'InlineNotice',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/InlineNotice/index.tsx',
+    ownerPath: 'src/components/Notice/InlineNotice.tsx',
     runtimeMarker: 'lsui-sc-inline-notice',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/InlineNotice/InlineNotice.stories.tsx',
-      title: 'Molecules/InlineNotice',
+      path: 'stories/components/Notice/InlineNotice.stories.tsx',
+      title: 'Notice/InlineNotice',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/InlineNotice/InlineNotice.test.tsx',
+      path: 'test/components/Notice/InlineNotice.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/InlineNotice/types.ts',
+      propsPath: 'src/components/Notice/InlineNotice.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'inlinenotice',
@@ -3042,21 +2369,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FileInput',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/FileInput/index.tsx',
+    ownerPath: 'src/components/Form/FileInput.tsx',
     runtimeMarker: 'lsui-sc-file-input',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/FileInput/FileInput.stories.tsx',
-      title: 'Atoms/FileInput',
+      path: 'stories/components/Form/FileInput.stories.tsx',
+      title: 'Form/FileInput',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/FileInput/FileInput.test.tsx',
+      path: 'test/components/Form/FileInput.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/FileInput/types.ts',
+      propsPath: 'src/components/Form/FileInput.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fileinput',
@@ -3074,21 +2400,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FilterSelect',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FilterSelect/index.tsx',
+    ownerPath: 'src/components/Filter/FilterSelect.tsx',
     runtimeMarker: 'lsui-sc-filter-select',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FilterSelect/FilterSelect.stories.tsx',
-      title: 'Molecules/FilterSelect',
+      path: 'stories/components/Filter/FilterSelect.stories.tsx',
+      title: 'Filter/FilterSelect',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FilterSelect/FilterSelect.test.tsx',
+      path: 'test/components/Filter/FilterSelect.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FilterSelect/types.ts',
+      propsPath: 'src/components/Filter/FilterSelect.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'filterselect',
@@ -3110,21 +2435,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FormActions',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FormActions/index.tsx',
+    ownerPath: 'src/components/Form/FormActions.tsx',
     runtimeMarker: 'lsui-sc-form-actions',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FormActions/FormActions.stories.tsx',
-      title: 'Molecules/FormActions',
+      path: 'stories/components/Form/FormActions.stories.tsx',
+      title: 'Form/FormActions',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FormActions/FormActions.test.tsx',
+      path: 'test/components/Form/FormActions.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FormActions/types.ts',
+      propsPath: 'src/components/Form/FormActions.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formactions',
@@ -3146,21 +2470,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FormError',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FormError/index.tsx',
+    ownerPath: 'src/components/Form/FormError.tsx',
     runtimeMarker: 'lsui-sc-form-error',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FormError/FormError.stories.tsx',
-      title: 'Molecules/FormError',
+      path: 'stories/components/Form/FormError.stories.tsx',
+      title: 'Form/FormError',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FormError/FormError.test.tsx',
+      path: 'test/components/Form/FormError.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FormError/types.ts',
+      propsPath: 'src/components/Form/FormError.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formerror',
@@ -3182,21 +2505,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FieldCounter',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/FieldCounter/index.tsx',
+    ownerPath: 'src/components/Form/FieldCounter.tsx',
     runtimeMarker: 'lsui-sc-field-counter',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/FieldCounter/FieldCounter.stories.tsx',
-      title: 'Atoms/FieldCounter',
+      path: 'stories/components/Form/FieldCounter.stories.tsx',
+      title: 'Form/FieldCounter',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/FieldCounter/FieldCounter.test.tsx',
+      path: 'test/components/Form/FieldCounter.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/FieldCounter/types.ts',
+      propsPath: 'src/components/Form/FieldCounter.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldcounter',
@@ -3218,21 +2540,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FieldLabelRow',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/FieldLabelRow/index.tsx',
+    ownerPath: 'src/components/Form/FieldLabelRow.tsx',
     runtimeMarker: 'lsui-sc-field-label-row',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/FieldLabelRow/FieldLabelRow.stories.tsx',
-      title: 'Atoms/FieldLabelRow',
+      path: 'stories/components/Form/FieldLabelRow.stories.tsx',
+      title: 'Form/FieldLabelRow',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/FieldLabelRow/FieldLabelRow.test.tsx',
+      path: 'test/components/Form/FieldLabelRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/FieldLabelRow/types.ts',
+      propsPath: 'src/components/Form/FieldLabelRow.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldlabelrow',
@@ -3254,21 +2575,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FormStack',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FormStack/index.tsx',
+    ownerPath: 'src/components/Form/FormStack.tsx',
     runtimeMarker: 'lsui-sc-form-stack',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/FormStack/FormStack.stories.tsx',
-      title: 'Molecules/FormStack',
+      path: 'stories/components/Form/FormStack.stories.tsx',
+      title: 'Form/FormStack',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/FormStack/FormStack.test.tsx',
+      path: 'test/components/Form/FormStack.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FormStack/types.ts',
+      propsPath: 'src/components/Form/FormStack.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formstack',
@@ -3290,21 +2610,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DocumentNavigationLink',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/DocumentNavigationLink/index.tsx',
+    ownerPath: 'src/components/Document/DocumentNavigationLink.tsx',
     runtimeMarker: 'lsui-sc-document-navigation-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/DocumentNavigationLink/DocumentNavigationLink.stories.tsx',
-      title: 'Atoms/DocumentNavigationLink',
+      path: 'stories/components/Document/DocumentNavigationLink.stories.tsx',
+      title: 'Document/DocumentNavigationLink',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/DocumentNavigationLink/DocumentNavigationLink.test.tsx',
+      path: 'test/components/Document/DocumentNavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/DocumentNavigationLink/types.ts',
+      propsPath: 'src/components/Document/DocumentNavigationLink.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentnavigationlink',
@@ -3330,21 +2649,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'BrandLink',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/BrandLink/index.tsx',
+    ownerPath: 'src/components/Brand/BrandLink.tsx',
     runtimeMarker: 'lsui-sc-brand-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/BrandLink/BrandLink.stories.tsx',
-      title: 'Atoms/BrandLink',
+      path: 'stories/components/Brand/BrandLink.stories.tsx',
+      title: 'Brand/BrandLink',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/BrandLink/BrandLink.test.tsx',
+      path: 'test/components/Brand/BrandLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/BrandLink/types.ts',
+      propsPath: 'src/components/Brand/BrandLink.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'brandlink',
@@ -3370,21 +2688,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DocumentNavigation',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DocumentNavigation/index.tsx',
+    ownerPath: 'src/components/Document/DocumentNavigation.tsx',
     runtimeMarker: 'lsui-sc-document-navigation',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/DocumentNavigation/DocumentNavigation.stories.tsx',
-      title: 'Molecules/DocumentNavigation',
+      path: 'stories/components/Document/DocumentNavigation.stories.tsx',
+      title: 'Document/DocumentNavigation',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/DocumentNavigation/DocumentNavigation.test.tsx',
+      path: 'test/components/Document/DocumentNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DocumentNavigation/types.ts',
+      propsPath: 'src/components/Document/DocumentNavigation.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentnavigation',
@@ -3410,21 +2727,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DocumentHeaderContent',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DocumentHeaderContent/index.tsx',
+    ownerPath: 'src/components/Document/DocumentHeaderContent.tsx',
     runtimeMarker: 'lsui-sc-document-header-content',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/DocumentHeaderContent/DocumentHeaderContent.stories.tsx',
-      title: 'Molecules/DocumentHeaderContent',
+      path: 'stories/components/Document/DocumentHeaderContent.stories.tsx',
+      title: 'Document/DocumentHeaderContent',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/DocumentHeaderContent/DocumentHeaderContent.test.tsx',
+      path: 'test/components/Document/DocumentHeaderContent.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DocumentHeaderContent/types.ts',
+      propsPath: 'src/components/Document/DocumentHeaderContent.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentheadercontent',
@@ -3450,21 +2766,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DocumentHeader',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DocumentHeader/index.tsx',
+    ownerPath: 'src/components/Document/DocumentHeader.tsx',
     runtimeMarker: 'lsui-sc-document-header',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/DocumentHeader/DocumentHeader.stories.tsx',
-      title: 'Molecules/DocumentHeader',
+      path: 'stories/components/Document/DocumentHeader.stories.tsx',
+      title: 'Document/DocumentHeader',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/DocumentHeader/DocumentHeader.test.tsx',
+      path: 'test/components/Document/DocumentHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DocumentHeader/types.ts',
+      propsPath: 'src/components/Document/DocumentHeader.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentheader',
@@ -3486,309 +2801,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFeature',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthFeature/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-feature',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/AuthFeature/AuthFeature.stories.tsx',
-      title: 'Molecules/AuthFeature',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/AuthFeature/AuthFeature.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/AuthFeature/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfeature',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFooterLink',
-    interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthFooterLink/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-footer-link',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthFooterLink/AuthFooterLink.stories.tsx',
-      title: 'Atoms/AuthFooterLink',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthFooterLink/AuthFooterLink.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthFooterLink/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfooterlink',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthMobileFooter',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthMobileFooter/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-mobile-footer',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthMobileFooter/AuthMobileFooter.stories.tsx',
-      title: 'Atoms/AuthMobileFooter',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthMobileFooter/AuthMobileFooter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthMobileFooter/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authmobilefooter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandFooter',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthBrandFooter/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-footer',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandFooter/AuthBrandFooter.stories.tsx',
-      title: 'Atoms/AuthBrandFooter',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandFooter/AuthBrandFooter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthBrandFooter/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandfooter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFeatureList',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthFeatureList/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-feature-list',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/AuthFeatureList/AuthFeatureList.stories.tsx',
-      title: 'Molecules/AuthFeatureList',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/AuthFeatureList/AuthFeatureList.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/AuthFeatureList/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfeaturelist',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandDescription',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthBrandDescription/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-description',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandDescription/AuthBrandDescription.stories.tsx',
-      title: 'Atoms/AuthBrandDescription',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandDescription/AuthBrandDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthBrandDescription/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbranddescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandAccent',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthBrandAccent/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-accent',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandAccent/AuthBrandAccent.stories.tsx',
-      title: 'Atoms/AuthBrandAccent',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandAccent/AuthBrandAccent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthBrandAccent/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandaccent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandTitle',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthBrandTitle/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-title',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandTitle/AuthBrandTitle.stories.tsx',
-      title: 'Atoms/AuthBrandTitle',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthBrandTitle/AuthBrandTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthBrandTitle/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandtitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'BrandLogo',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/BrandLogo/index.tsx',
+    ownerPath: 'src/components/Brand/BrandLogo.tsx',
     runtimeMarker: 'lsui-sc-brand-logo',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/BrandLogo/BrandLogo.stories.tsx',
-      title: 'Atoms/BrandLogo',
+      path: 'stories/components/Brand/BrandLogo.stories.tsx',
+      title: 'Brand/BrandLogo',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/BrandLogo/BrandLogo.test.tsx',
+      path: 'test/components/Brand/BrandLogo.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/BrandLogo/types.ts',
+      propsPath: 'src/components/Brand/BrandLogo.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'brandlogo',
@@ -3818,169 +2849,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultActions',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeResultActions/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-actions',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/molecules/PracticeResultActions/PracticeResultActions.stories.tsx',
-      title: 'Molecules/PracticeResultActions',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/molecules/PracticeResultActions/PracticeResultActions.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/molecules/PracticeResultActions/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultactions',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultDescription',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/PracticeResultDescription/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-description',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultDescription/PracticeResultDescription.stories.tsx',
-      title: 'Atoms/PracticeResultDescription',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultDescription/PracticeResultDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/PracticeResultDescription/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultdescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultTitle',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/PracticeResultTitle/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-title',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultTitle/PracticeResultTitle.stories.tsx',
-      title: 'Atoms/PracticeResultTitle',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultTitle/PracticeResultTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/PracticeResultTitle/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresulttitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultMark',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/PracticeResultMark/index.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-mark',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultMark/PracticeResultMark.stories.tsx',
-      title: 'Atoms/PracticeResultMark',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/PracticeResultMark/PracticeResultMark.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/PracticeResultMark/types.ts',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultmark',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthSuccessState',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthSuccessState/index.tsx',
+    ownerPath: 'src/components/Auth/AuthSuccessState.tsx',
     runtimeMarker: 'lsui-sc-auth-success-state',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthSuccessState/AuthSuccessState.stories.tsx',
-      title: 'Molecules/AuthSuccessState',
+      path: 'stories/components/Auth/AuthSuccessState.stories.tsx',
+      title: 'Auth/AuthSuccessState',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthSuccessState/AuthSuccessState.test.tsx',
+      path: 'test/components/Auth/AuthSuccessState.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthSuccessState/types.ts',
+      propsPath: 'src/components/Auth/AuthSuccessState.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authsuccessstate',
@@ -4002,21 +2889,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthTopLink',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthTopLink/index.tsx',
+    ownerPath: 'src/components/Auth/AuthTopLink.tsx',
     runtimeMarker: 'lsui-sc-auth-top-link',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/AuthTopLink/AuthTopLink.stories.tsx',
-      title: 'Atoms/AuthTopLink',
+      path: 'stories/components/Auth/AuthTopLink.stories.tsx',
+      title: 'Auth/AuthTopLink',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/AuthTopLink/AuthTopLink.test.tsx',
+      path: 'test/components/Auth/AuthTopLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/AuthTopLink/types.ts',
+      propsPath: 'src/components/Auth/AuthTopLink.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtoplink',
@@ -4034,61 +2920,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthSubmitButton',
-    interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthSubmitButton/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-submit-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthSubmitButton/AuthSubmitButton.stories.tsx',
-      title: 'Atoms/AuthSubmitButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthSubmitButton/AuthSubmitButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthSubmitButton/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authsubmitbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/RegisterStudent/sections/ClaimStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthProgress',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthProgress/index.tsx',
+    ownerPath: 'src/components/Auth/AuthProgress.tsx',
     runtimeMarker: 'lsui-sc-auth-progress',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/AuthProgress/AuthProgress.stories.tsx',
-      title: 'Atoms/AuthProgress',
+      path: 'stories/components/Auth/AuthProgress.stories.tsx',
+      title: 'Auth/AuthProgress',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/AuthProgress/AuthProgress.test.tsx',
+      path: 'test/components/Auth/AuthProgress.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/AuthProgress/types.ts',
+      propsPath: 'src/components/Auth/AuthProgress.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authprogress',
@@ -4106,97 +2956,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthSuccessIcon',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthSuccessIcon/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-success-icon',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthSuccessIcon/AuthSuccessIcon.stories.tsx',
-      title: 'Atoms/AuthSuccessIcon',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthSuccessIcon/AuthSuccessIcon.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthSuccessIcon/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authsuccessicon',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/SuccessStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/RegisterStudent/sections/SuccessStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthResendButton',
-    interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthResendButton/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-resend-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthResendButton/AuthResendButton.stories.tsx',
-      title: 'Atoms/AuthResendButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthResendButton/AuthResendButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthResendButton/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authresendbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthResendAction',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthResendAction/index.tsx',
+    ownerPath: 'src/components/Auth/AuthResendAction.tsx',
     runtimeMarker: 'lsui-sc-auth-resend-action',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthResendAction/AuthResendAction.stories.tsx',
-      title: 'Molecules/AuthResendAction',
+      path: 'stories/components/Auth/AuthResendAction.stories.tsx',
+      title: 'Auth/AuthResendAction',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthResendAction/AuthResendAction.test.tsx',
+      path: 'test/components/Auth/AuthResendAction.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthResendAction/types.ts',
+      propsPath: 'src/components/Auth/AuthResendAction.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authresendaction',
@@ -4214,61 +2992,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBackButton',
-    interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthBackButton/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-back-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthBackButton/AuthBackButton.stories.tsx',
-      title: 'Atoms/AuthBackButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthBackButton/AuthBackButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthBackButton/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbackbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthForm',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthForm/index.tsx',
+    ownerPath: 'src/components/Auth/AuthForm.tsx',
     runtimeMarker: 'lsui-sc-auth-form',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/molecules/AuthForm/AuthForm.stories.tsx',
-      title: 'Molecules/AuthForm',
+      path: 'stories/components/Auth/AuthForm.stories.tsx',
+      title: 'Auth/AuthForm',
     },
     test: {
       status: 'complete',
-      path: 'src/molecules/AuthForm/AuthForm.test.tsx',
+      path: 'test/components/Auth/AuthForm.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AuthForm/types.ts',
+      propsPath: 'src/components/Auth/AuthForm.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authform',
@@ -4286,61 +3028,25 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthTopLinkHighlight',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthTopLinkHighlight/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-top-link-highlight',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'src/atoms/AuthTopLinkHighlight/AuthTopLinkHighlight.stories.tsx',
-      title: 'Atoms/AuthTopLinkHighlight',
-    },
-    test: {
-      status: 'complete',
-      path: 'src/atoms/AuthTopLinkHighlight/AuthTopLinkHighlight.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthTopLinkHighlight/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authtoplinkhighlight',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthEyebrow',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthEyebrow/index.tsx',
+    ownerPath: 'src/components/Auth/AuthEyebrow.tsx',
     runtimeMarker: 'lsui-sc-auth-eyebrow',
     ssrSmoke: complete,
     story: {
       status: 'complete',
-      path: 'src/atoms/AuthEyebrow/AuthEyebrow.stories.tsx',
-      title: 'Atoms/AuthEyebrow',
+      path: 'stories/components/Auth/AuthEyebrow.stories.tsx',
+      title: 'Auth/AuthEyebrow',
     },
     test: {
       status: 'complete',
-      path: 'src/atoms/AuthEyebrow/AuthEyebrow.test.tsx',
+      path: 'test/components/Auth/AuthEyebrow.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/AuthEyebrow/types.ts',
+      propsPath: 'src/components/Auth/AuthEyebrow.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'autheyebrow',
@@ -4362,21 +3068,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeResultPanel',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeResultPanel/index.tsx',
+    ownerPath: 'src/components/PracticeResultPanel/PracticeResultPanel.tsx',
     runtimeMarker: 'lsui-sc-practice-result-panel',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/PracticeResultPanel/PracticeResultPanel.stories.tsx',
-      title: 'Molecules/PracticeResultPanel',
+      path: 'stories/components/PracticeResultPanel/PracticeResultPanel.stories.tsx',
+      title: 'PracticeResultPanel',
     },
     test: {
       ...complete,
-      path: 'src/molecules/PracticeResultPanel/PracticeResultPanel.test.tsx',
+      path: 'test/components/PracticeResultPanel/PracticeResultPanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeResultPanel/types.ts',
+      propsPath: 'src/components/PracticeResultPanel/PracticeResultPanel.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceresultpanel',
@@ -4399,21 +3104,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizSessionHeader',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizSessionHeader/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizSessionHeader.tsx',
     runtimeMarker: 'lsui-sc-quiz-session-header',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/QuizSessionHeader/QuizSessionHeader.stories.tsx',
-      title: 'Molecules/QuizSessionHeader',
+      path: 'stories/components/Quiz/QuizSessionHeader.stories.tsx',
+      title: 'Quiz/QuizSessionHeader',
     },
     test: {
       ...complete,
-      path: 'src/molecules/QuizSessionHeader/QuizSessionHeader.test.tsx',
+      path: 'test/components/Quiz/QuizSessionHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizSessionHeader/types.ts',
+      propsPath: 'src/components/Quiz/QuizSessionHeader.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizsessionheader',
@@ -4436,21 +3140,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeCardBody',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCardBody/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeCardBody.tsx',
     runtimeMarker: 'lsui-sc-practice-card-body',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/PracticeCardBody/PracticeCardBody.stories.tsx',
-      title: 'Molecules/PracticeCardBody',
+      path: 'stories/components/Practice/PracticeCardBody.stories.tsx',
+      title: 'Practice/PracticeCardBody',
     },
     test: {
       ...complete,
-      path: 'src/molecules/PracticeCardBody/PracticeCardBody.test.tsx',
+      path: 'test/components/Practice/PracticeCardBody.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeCardBody/types.ts',
+      propsPath: 'src/components/Practice/PracticeCardBody.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardbody',
@@ -4472,18 +3175,17 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizOption',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizOption/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizOption.tsx',
     runtimeMarker: 'lsui-sc-quiz-option',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/QuizOption/QuizOption.stories.tsx',
-      title: 'Molecules/QuizOption',
+      path: 'stories/components/Quiz/QuizOption.stories.tsx',
+      title: 'Quiz/QuizOption',
     },
-    test: { ...complete, path: 'src/molecules/QuizOption/QuizOption.test.tsx' },
+    test: { ...complete, path: 'test/components/Quiz/QuizOption.test.tsx' },
     reference: {
-      propsPath: 'src/molecules/QuizOption/types.ts',
+      propsPath: 'src/components/Quiz/QuizOption.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizoption',
@@ -4509,21 +3211,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'QuizFeedback',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/QuizFeedback/index.tsx',
+    ownerPath: 'src/components/Quiz/QuizFeedback.tsx',
     runtimeMarker: 'lsui-sc-quiz-feedback',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/QuizFeedback/QuizFeedback.stories.tsx',
-      title: 'Molecules/QuizFeedback',
+      path: 'stories/components/Quiz/QuizFeedback.stories.tsx',
+      title: 'Quiz/QuizFeedback',
     },
     test: {
       ...complete,
-      path: 'src/molecules/QuizFeedback/QuizFeedback.test.tsx',
+      path: 'test/components/Quiz/QuizFeedback.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/QuizFeedback/types.ts',
+      propsPath: 'src/components/Quiz/QuizFeedback.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizfeedback',
@@ -4549,21 +3250,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FlashcardRatingButton',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FlashcardRatingButton/index.tsx',
+    ownerPath: 'src/components/Flashcard/FlashcardRatingButton.tsx',
     runtimeMarker: 'lsui-sc-flashcard-rating-button',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/FlashcardRatingButton/FlashcardRatingButton.stories.tsx',
-      title: 'Molecules/FlashcardRatingButton',
+      path: 'stories/components/Flashcard/FlashcardRatingButton.stories.tsx',
+      title: 'Flashcard/FlashcardRatingButton',
     },
     test: {
       ...complete,
-      path: 'src/molecules/FlashcardRatingButton/FlashcardRatingButton.test.tsx',
+      path: 'test/components/Flashcard/FlashcardRatingButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FlashcardRatingButton/types.ts',
+      propsPath: 'src/components/Flashcard/FlashcardRatingButton.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardratingbutton',
@@ -4585,21 +3285,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticePlaybackControls',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticePlaybackControls/index.tsx',
+    ownerPath: 'src/components/Practice/PracticePlaybackControls.tsx',
     runtimeMarker: 'lsui-sc-practice-playback-controls',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/PracticePlaybackControls/PracticePlaybackControls.stories.tsx',
-      title: 'Molecules/PracticePlaybackControls',
+      path: 'stories/components/Practice/PracticePlaybackControls.stories.tsx',
+      title: 'Practice/PracticePlaybackControls',
     },
     test: {
       ...complete,
-      path: 'src/molecules/PracticePlaybackControls/PracticePlaybackControls.test.tsx',
+      path: 'test/components/Practice/PracticePlaybackControls.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticePlaybackControls/types.ts',
+      propsPath: 'src/components/Practice/PracticePlaybackControls.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceplaybackcontrols',
@@ -4621,21 +3320,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'CalendarControls',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CalendarControls/index.tsx',
+    ownerPath: 'src/components/Calendar/CalendarControls.tsx',
     runtimeMarker: 'lsui-sc-calendar-controls',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/CalendarControls/CalendarControls.stories.tsx',
-      title: 'Molecules/CalendarControls',
+      path: 'stories/components/Calendar/CalendarControls.stories.tsx',
+      title: 'Calendar/CalendarControls',
     },
     test: {
       ...complete,
-      path: 'src/molecules/CalendarControls/CalendarControls.test.tsx',
+      path: 'test/components/Calendar/CalendarControls.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/CalendarControls/types.ts',
+      propsPath: 'src/components/Calendar/CalendarControls.tsx',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'calendarcontrols',
@@ -4643,7 +3341,7 @@ export const publicComponentContracts = [
       consumers: [
         {
           repository: 'langyspace-ui',
-          path: 'src/molecules/ScheduleCalendar/index.tsx',
+          path: 'src/components/Calendar/ScheduleCalendar.tsx',
         },
       ],
     },
@@ -4653,18 +3351,17 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthFrame',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthFrame/index.tsx',
+    ownerPath: 'src/components/Auth/AuthFrame.tsx',
     runtimeMarker: 'lsui-sc-auth-frame',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/AuthFrame/AuthFrame.stories.tsx',
-      title: 'Molecules/Auth/AuthFrame',
+      path: 'stories/components/Auth/AuthFrame.stories.tsx',
+      title: 'Auth/AuthFrame',
     },
-    test: { ...complete, path: 'src/molecules/AuthFrame/AuthFrame.test.tsx' },
+    test: { ...complete, path: 'test/components/Auth/AuthFrame.test.tsx' },
     reference: {
-      propsPath: 'src/molecules/AuthFrame/types.ts',
+      propsPath: 'src/components/Auth/AuthFrame.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authframe',
@@ -4686,18 +3383,17 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PhoneField',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PhoneField/index.tsx',
+    ownerPath: 'src/components/Form/PhoneField.tsx',
     runtimeMarker: 'lsui-sc-phone-field',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/PhoneField/PhoneField.stories.tsx',
-      title: 'Molecules/Fields/PhoneField',
+      path: 'stories/components/Form/PhoneField.stories.tsx',
+      title: 'Form/PhoneField',
     },
-    test: { ...complete, path: 'src/molecules/PhoneField/PhoneField.test.tsx' },
+    test: { ...complete, path: 'test/components/Form/PhoneField.test.tsx' },
     reference: {
-      propsPath: 'src/molecules/PhoneField/types.ts',
+      propsPath: 'src/components/Form/PhoneField.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'phonefield',
@@ -4720,21 +3416,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeProgressBar',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/PracticeProgressBar/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeProgressBar.tsx',
     runtimeMarker: 'lsui-sc-practice-progress-bar',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/PracticeProgressBar/PracticeProgressBar.stories.tsx',
-      title: 'Atoms/PracticeProgressBar',
+      path: 'stories/components/Practice/PracticeProgressBar.stories.tsx',
+      title: 'Practice/PracticeProgressBar',
     },
     test: {
       ...complete,
-      path: 'src/atoms/PracticeProgressBar/PracticeProgressBar.test.tsx',
+      path: 'test/components/Practice/PracticeProgressBar.test.tsx',
     },
     reference: {
-      propsPath: 'src/atoms/PracticeProgressBar/types.ts',
+      propsPath: 'src/components/Practice/PracticeProgressBar.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceprogressbar',
@@ -4752,21 +3447,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'PracticeCardSkeletonBody',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/PracticeCardSkeletonBody/index.tsx',
+    ownerPath: 'src/components/Practice/PracticeCardSkeletonBody.tsx',
     runtimeMarker: 'lsui-sc-practice-card-skeleton-body',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/PracticeCardSkeletonBody/PracticeCardSkeletonBody.stories.tsx',
-      title: 'Molecules/Loading/PracticeCardSkeletonBody',
+      path: 'stories/components/Practice/PracticeCardSkeletonBody.stories.tsx',
+      title: 'Practice/PracticeCardSkeletonBody',
     },
     test: {
       ...complete,
-      path: 'src/molecules/PracticeCardSkeletonBody/PracticeCardSkeletonBody.test.tsx',
+      path: 'test/components/Practice/PracticeCardSkeletonBody.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/PracticeCardSkeletonBody/types.ts',
+      propsPath: 'src/components/Practice/PracticeCardSkeletonBody.tsx',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardskeletonbody',
@@ -4788,21 +3482,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FilterToolbar',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FilterToolbar/index.tsx',
+    ownerPath: 'src/components/Filter/FilterToolbar.tsx',
     runtimeMarker: 'lsui-sc-filter-toolbar',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/FilterToolbar/FilterToolbar.stories.tsx',
-      title: 'Molecules/Layout/FilterToolbar',
+      path: 'stories/components/Filter/FilterToolbar.stories.tsx',
+      title: 'Filter/FilterToolbar',
     },
     test: {
       ...complete,
-      path: 'src/molecules/FilterToolbar/FilterToolbar.test.tsx',
+      path: 'test/components/Filter/FilterToolbar.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/FilterToolbar/types.ts',
+      propsPath: 'src/components/Filter/FilterToolbar.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'filtertoolbar',
@@ -4824,18 +3517,17 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Card',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/Card/index.tsx',
+    ownerPath: 'src/components/Card/Card.tsx',
     runtimeMarker: 'lsui-sc-card',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/Card/Card.stories.tsx',
-      title: 'Molecules/Layout/Card',
+      path: 'stories/components/Card/Card.stories.tsx',
+      title: 'Card',
     },
-    test: { ...complete, path: 'src/molecules/Card/Card.test.tsx' },
+    test: { ...complete, path: 'test/components/Card/Card.test.tsx' },
     reference: {
-      propsPath: 'src/molecules/Card/types.ts',
+      propsPath: 'src/components/Card/Card.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'card',
@@ -4865,18 +3557,17 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ToastItem',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ToastItem/index.tsx',
+    ownerPath: 'src/components/Toast/ToastItem.tsx',
     runtimeMarker: 'lsui-sc-toast-item',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/ToastItem/ToastItem.stories.tsx',
-      title: 'Molecules/Feedback/ToastItem',
+      path: 'stories/components/Toast/ToastItem.stories.tsx',
+      title: 'Toast/ToastItem',
     },
-    test: { ...complete, path: 'src/molecules/ToastItem/ToastItem.test.tsx' },
+    test: { ...complete, path: 'test/components/Toast/ToastItem.test.tsx' },
     reference: {
-      propsPath: 'src/molecules/ToastItem/types.ts',
+      propsPath: 'src/components/Toast/ToastItem.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'toastitem',
@@ -4898,21 +3589,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ToastViewport',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ToastViewport/index.tsx',
+    ownerPath: 'src/components/Toast/ToastViewport.tsx',
     runtimeMarker: 'lsui-sc-toast-viewport',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/ToastViewport/ToastViewport.stories.tsx',
-      title: 'Molecules/Feedback/ToastViewport',
+      path: 'stories/components/Toast/ToastViewport.stories.tsx',
+      title: 'Toast/ToastViewport',
     },
     test: {
       ...complete,
-      path: 'src/molecules/ToastViewport/ToastViewport.test.tsx',
+      path: 'test/components/Toast/ToastViewport.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/ToastViewport/types.ts',
+      propsPath: 'src/components/Toast/ToastViewport.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'toastviewport',
@@ -4934,21 +3624,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'NoticeBanner',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/NoticeBanner/index.tsx',
+    ownerPath: 'src/components/Notice/NoticeBanner.tsx',
     runtimeMarker: 'lsui-sc-notice-banner',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/NoticeBanner/NoticeBanner.stories.tsx',
-      title: 'Molecules/Feedback/NoticeBanner',
+      path: 'stories/components/Notice/NoticeBanner.stories.tsx',
+      title: 'Notice/NoticeBanner',
     },
     test: {
       ...complete,
-      path: 'src/molecules/NoticeBanner/NoticeBanner.test.tsx',
+      path: 'test/components/Notice/NoticeBanner.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/NoticeBanner/types.ts',
+      propsPath: 'src/components/Notice/NoticeBanner.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'noticebanner',
@@ -4970,21 +3659,20 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'DocumentLayout',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/DocumentLayout/index.tsx',
+    ownerPath: 'src/components/Document/DocumentLayout.tsx',
     runtimeMarker: 'lsui-sc-document-layout',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/DocumentLayout/DocumentLayout.stories.tsx',
-      title: 'Molecules/Layout/DocumentLayout',
+      path: 'stories/components/Document/DocumentLayout.stories.tsx',
+      title: 'Document/DocumentLayout',
     },
     test: {
       ...complete,
-      path: 'src/molecules/DocumentLayout/DocumentLayout.test.tsx',
+      path: 'test/components/Document/DocumentLayout.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/DocumentLayout/types.ts',
+      propsPath: 'src/components/Document/DocumentLayout.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentlayout',
@@ -5005,131 +3693,22 @@ export const publicComponentContracts = [
 
   {
     browserSmoke: complete,
-    exportName: 'AuthAccent',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthAccent/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-accent',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'src/atoms/AuthAccent/AuthAccent.stories.tsx',
-      title: 'Atoms/Auth/AuthAccent',
-    },
-    test: {
-      ...complete,
-      path: 'src/atoms/AuthAccent/AuthAccent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthAccent/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authaccent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthDescription',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthDescription/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-description',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'src/atoms/AuthDescription/AuthDescription.stories.tsx',
-      title: 'Atoms/Auth/AuthDescription',
-    },
-    test: {
-      ...complete,
-      path: 'src/atoms/AuthDescription/AuthDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthDescription/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authdescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthTitle',
-    interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthTitle/index.tsx',
-    runtimeMarker: 'lsui-sc-auth-title',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'src/atoms/AuthTitle/AuthTitle.stories.tsx',
-      title: 'Atoms/Auth/AuthTitle',
-    },
-    test: {
-      ...complete,
-      path: 'src/atoms/AuthTitle/AuthTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/atoms/AuthTitle/types.ts',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authtitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
     exportName: 'AvailabilityCalendar',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AvailabilityCalendar/index.tsx',
+    ownerPath: 'src/components/Calendar/AvailabilityCalendar.tsx',
     runtimeMarker: 'lsui-sc-availability-calendar',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/AvailabilityCalendar/AvailabilityCalendar.stories.tsx',
-      title: 'Molecules/Scheduling/AvailabilityCalendar',
+      path: 'stories/components/Calendar/AvailabilityCalendar.stories.tsx',
+      title: 'Calendar/AvailabilityCalendar',
     },
     test: {
       ...complete,
-      path: 'src/molecules/AvailabilityCalendar/AvailabilityCalendar.test.tsx',
+      path: 'test/components/Calendar/AvailabilityCalendar.test.tsx',
     },
     reference: {
-      propsPath: 'src/molecules/AvailabilityCalendar/types.ts',
+      propsPath: 'src/components/Calendar/AvailabilityCalendar.types.ts',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'availabilitycalendar',
@@ -5147,22 +3726,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ActionLink',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/ActionLink/index.tsx',
+    ownerPath: 'src/components/ActionLink/ActionLink.tsx',
     runtimeMarker: 'lsui-sc-action-link',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/ActionLink/ActionLink.stories.tsx',
-      title: 'Atoms/Actions/ActionLink',
+      path: 'stories/components/ActionLink/ActionLink.stories.tsx',
+      title: 'ActionLink',
     },
     test: {
       ...complete,
-      path: 'src/atoms/ActionLink/ActionLink.test.tsx',
+      path: 'test/components/ActionLink/ActionLink.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/ActionLink/types.ts',
+      propsPath: 'src/components/ActionLink/ActionLink.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'actionlink',
@@ -5187,22 +3765,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthNotice',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/AuthNotice/index.tsx',
+    ownerPath: 'src/components/Auth/AuthNotice.tsx',
     runtimeMarker: 'lsui-sc-auth-notice',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/AuthNotice/AuthNotice.stories.tsx',
-      title: 'Atoms/Feedback/AuthNotice',
+      path: 'stories/components/Auth/AuthNotice.stories.tsx',
+      title: 'Auth/AuthNotice',
     },
     test: {
       ...complete,
-      path: 'src/atoms/AuthNotice/AuthNotice.test.tsx',
+      path: 'test/components/Auth/AuthNotice.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/AuthNotice/types.ts',
+      propsPath: 'src/components/Auth/AuthNotice.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authnotice',
@@ -5223,22 +3800,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Avatar',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/Avatar/index.tsx',
+    ownerPath: 'src/components/Avatar/Avatar.tsx',
     runtimeMarker: 'lsui-sc-avatar',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/Avatar/Avatar.stories.tsx',
-      title: 'Atoms/Identity/Avatar',
+      path: 'stories/components/Avatar/Avatar.stories.tsx',
+      title: 'Avatar',
     },
     test: {
       ...complete,
-      path: 'src/atoms/Avatar/Avatar.test.tsx',
+      path: 'test/components/Avatar/Avatar.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/Avatar/types.ts',
+      propsPath: 'src/components/Avatar/Avatar.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'avatar',
@@ -5263,22 +3839,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Button',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/Button/index.tsx',
+    ownerPath: 'src/components/Button/Button.tsx',
     runtimeMarker: 'lsui-sc-button',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/Button/Button.stories.tsx',
-      title: 'Atoms/Actions/Button',
+      path: 'stories/components/Button/Button.stories.tsx',
+      title: 'Button/Button',
     },
     test: {
       ...complete,
-      path: 'src/atoms/Button/Button.test.tsx',
+      path: 'test/components/Button/Button.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/Button/types.ts',
+      propsPath: 'src/components/Button/Button.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'button',
@@ -5307,22 +3882,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'IconButton',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/IconButton/index.tsx',
+    ownerPath: 'src/components/IconButton/IconButton.tsx',
     runtimeMarker: 'lsui-sc-icon-button',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/IconButton/IconButton.stories.tsx',
-      title: 'Atoms/Actions/IconButton',
+      path: 'stories/components/IconButton/IconButton.stories.tsx',
+      title: 'IconButton',
     },
     test: {
       ...complete,
-      path: 'src/atoms/IconButton/IconButton.test.tsx',
+      path: 'test/components/IconButton/IconButton.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/IconButton/types.ts',
+      propsPath: 'src/components/IconButton/IconButton.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'iconbutton',
@@ -5351,22 +3925,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SelectInput',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/SelectInput/index.tsx',
+    ownerPath: 'src/components/Form/SelectInput.tsx',
     runtimeMarker: 'lsui-sc-select-input',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/SelectInput/SelectInput.stories.tsx',
-      title: 'Atoms/Fields/SelectInput',
+      path: 'stories/components/Form/SelectInput.stories.tsx',
+      title: 'Form/SelectInput',
     },
     test: {
       ...complete,
-      path: 'src/atoms/SelectInput/SelectInput.test.tsx',
+      path: 'test/components/Form/SelectInput.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/SelectInput/types.ts',
+      propsPath: 'src/components/Form/SelectInput.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'selectinput',
@@ -5391,22 +3964,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'StatusChip',
     interactive: false,
-    layer: 'atom',
-    ownerPath: 'src/atoms/StatusChip/index.tsx',
+    ownerPath: 'src/components/StatusChip/StatusChip.tsx',
     runtimeMarker: 'lsui-sc-status-chip',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/StatusChip/StatusChip.stories.tsx',
-      title: 'Atoms/Feedback/StatusChip',
+      path: 'stories/components/StatusChip/StatusChip.stories.tsx',
+      title: 'StatusChip',
     },
     test: {
       ...complete,
-      path: 'src/atoms/StatusChip/StatusChip.test.tsx',
+      path: 'test/components/StatusChip/StatusChip.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/StatusChip/types.ts',
+      propsPath: 'src/components/StatusChip/StatusChip.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'statuschip',
@@ -5431,22 +4003,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'TextareaInput',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/TextareaInput/index.tsx',
+    ownerPath: 'src/components/Form/TextareaInput.tsx',
     runtimeMarker: 'lsui-sc-textarea-input',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/TextareaInput/TextareaInput.stories.tsx',
-      title: 'Atoms/Fields/TextareaInput',
+      path: 'stories/components/Form/TextareaInput.stories.tsx',
+      title: 'Form/TextareaInput',
     },
     test: {
       ...complete,
-      path: 'src/atoms/TextareaInput/TextareaInput.test.tsx',
+      path: 'test/components/Form/TextareaInput.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/TextareaInput/types.ts',
+      propsPath: 'src/components/Form/TextareaInput.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'textareainput',
@@ -5471,22 +4042,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'TextInput',
     interactive: true,
-    layer: 'atom',
-    ownerPath: 'src/atoms/TextInput/index.tsx',
+    ownerPath: 'src/components/Form/TextInput.tsx',
     runtimeMarker: 'lsui-sc-text-input',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/atoms/TextInput/TextInput.stories.tsx',
-      title: 'Atoms/Fields/TextInput',
+      path: 'stories/components/Form/TextInput.stories.tsx',
+      title: 'Form/TextInput',
     },
     test: {
       ...complete,
-      path: 'src/atoms/TextInput/TextInput.test.tsx',
+      path: 'test/components/Form/TextInput.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/atoms/TextInput/types.ts',
+      propsPath: 'src/components/Form/TextInput.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'textinput',
@@ -5515,22 +4085,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ActionMenu',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ActionMenu/index.tsx',
+    ownerPath: 'src/components/ActionMenu/ActionMenu.tsx',
     runtimeMarker: 'lsui-sc-action-menu',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/ActionMenu/ActionMenu.stories.tsx',
-      title: 'Molecules/Actions/ActionMenu',
+      path: 'stories/components/ActionMenu/ActionMenu.stories.tsx',
+      title: 'ActionMenu',
     },
     test: {
       ...complete,
-      path: 'src/molecules/ActionMenu/ActionMenu.test.tsx',
+      path: 'test/components/ActionMenu/ActionMenu.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/ActionMenu/types.ts',
+      propsPath: 'src/components/ActionMenu/ActionMenu.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'actionmenu',
@@ -5547,22 +4116,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AuthTokenDigits',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/AuthTokenDigits/index.tsx',
+    ownerPath: 'src/components/Auth/AuthTokenDigits.tsx',
     runtimeMarker: 'lsui-sc-auth-token-digits',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/AuthTokenDigits/AuthTokenDigits.stories.tsx',
-      title: 'Molecules/Auth/AuthTokenDigits',
+      path: 'stories/components/Auth/AuthTokenDigits.stories.tsx',
+      title: 'Auth/AuthTokenDigits',
     },
     test: {
       ...complete,
-      path: 'src/molecules/AuthTokenDigits/AuthTokenDigits.test.tsx',
+      path: 'test/components/Auth/AuthTokenDigits.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/AuthTokenDigits/types.ts',
+      propsPath: 'src/components/Auth/AuthTokenDigits.tsx',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtokendigits',
@@ -5583,22 +4151,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'CompoundControl',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/CompoundControl/index.tsx',
+    ownerPath: 'src/components/Form/CompoundControl.tsx',
     runtimeMarker: 'lsui-sc-compound-control',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/CompoundControl/CompoundControl.stories.tsx',
-      title: 'Molecules/Fields/CompoundControl',
+      path: 'stories/components/Form/CompoundControl.stories.tsx',
+      title: 'Form/CompoundControl',
     },
     test: {
       ...complete,
-      path: 'src/molecules/CompoundControl/CompoundControl.test.tsx',
+      path: 'test/components/Form/CompoundControl.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/CompoundControl/types.ts',
+      propsPath: 'src/components/Form/CompoundControl.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'compoundcontrol',
@@ -5615,10 +4182,9 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'ControlledField',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/ControlledField/index.tsx',
+    ownerPath: 'src/components/Form/ControlledField.tsx',
     reference: {
-      propsPath: 'src/molecules/ControlledField/types.ts',
+      propsPath: 'src/components/Form/ControlledField.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'controlledfield',
@@ -5638,12 +4204,12 @@ export const publicComponentContracts = [
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/ControlledField/ControlledField.stories.tsx',
-      title: 'Molecules/Fields/ControlledField',
+      path: 'stories/components/Form/ControlledField.stories.tsx',
+      title: 'Form/ControlledField',
     },
     test: {
       ...complete,
-      path: 'src/molecules/ControlledField/ControlledField.test.tsx',
+      path: 'test/components/Form/ControlledField.test.tsx',
     },
     visual: true,
   },
@@ -5651,22 +4217,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Dialog',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/Dialog/index.tsx',
+    ownerPath: 'src/components/Dialog/Dialog.tsx',
     runtimeMarker: 'lsui-sc-modal-panel',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/Dialog/Dialog.stories.tsx',
-      title: 'Molecules/Overlays/Dialog',
+      path: 'stories/components/Dialog/Dialog.stories.tsx',
+      title: 'Dialog',
     },
     test: {
       ...complete,
-      path: 'src/molecules/Dialog/Dialog.test.tsx',
+      path: 'test/components/Dialog/Dialog.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/Dialog/types.ts',
+      propsPath: 'src/components/Dialog/Dialog.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'dialog',
@@ -5687,22 +4252,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Drawer',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/Drawer/index.tsx',
+    ownerPath: 'src/components/Drawer/Drawer.tsx',
     runtimeMarker: 'lsui-sc-modal-panel',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/Drawer/Drawer.stories.tsx',
-      title: 'Molecules/Overlays/Drawer',
+      path: 'stories/components/Drawer/Drawer.stories.tsx',
+      title: 'Drawer',
     },
     test: {
       ...complete,
-      path: 'src/molecules/Drawer/Drawer.test.tsx',
+      path: 'test/components/Drawer/Drawer.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/Drawer/types.ts',
+      propsPath: 'src/components/Drawer/Drawer.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'drawer',
@@ -5723,62 +4287,26 @@ export const publicComponentContracts = [
       ],
     },
   },
-  {
-    browserSmoke: complete,
-    exportName: 'EmptyState',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/EmptyState/index.tsx',
-    runtimeMarker: 'lsui-sc-state-panel',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'src/molecules/EmptyState/EmptyState.stories.tsx',
-      title: 'Molecules/State/EmptyState',
-    },
-    test: {
-      ...complete,
-      path: 'src/molecules/EmptyState/EmptyState.test.tsx',
-    },
-    visual: true,
-    reference: {
-      propsPath: 'src/molecules/EmptyState/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'emptystate',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/NotificationDrawer/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/NotificationDrawer/index.tsx',
-        },
-      ],
-    },
-  },
+
   {
     browserSmoke: complete,
     exportName: 'FieldRoot',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FieldRoot/index.tsx',
+    ownerPath: 'src/components/Form/FieldRoot.tsx',
     runtimeMarker: 'lsui-sc-field-root',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/FieldRoot/FieldRoot.stories.tsx',
-      title: 'Molecules/Fields/FieldRoot',
+      path: 'stories/components/Form/FieldRoot.stories.tsx',
+      title: 'Form/FieldRoot',
     },
     test: {
       ...complete,
-      path: 'src/molecules/FieldRoot/FieldRoot.test.tsx',
+      path: 'test/components/Form/FieldRoot.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/FieldRoot/types.ts',
+      propsPath: 'src/components/Form/FieldRoot.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldroot',
@@ -5803,22 +4331,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FilterPills',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/FilterPills/index.tsx',
+    ownerPath: 'src/components/Filter/FilterPills.tsx',
     runtimeMarker: 'lsui-sc-filter-pills',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/FilterPills/FilterPills.stories.tsx',
-      title: 'Molecules/Selection/FilterPills',
+      path: 'stories/components/Filter/FilterPills.stories.tsx',
+      title: 'Filter/FilterPills',
     },
     test: {
       ...complete,
-      path: 'src/molecules/FilterPills/FilterPills.test.tsx',
+      path: 'test/components/Filter/FilterPills.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/FilterPills/types.ts',
+      propsPath: 'src/components/Filter/FilterPills.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'filterpills',
@@ -5835,66 +4362,26 @@ export const publicComponentContracts = [
       ],
     },
   },
-  {
-    browserSmoke: complete,
-    exportName: 'LoadingState',
-    interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/LoadingState/index.tsx',
-    runtimeMarker: 'lsui-sc-state-panel',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'src/molecules/LoadingState/LoadingState.stories.tsx',
-      title: 'Molecules/State/LoadingState',
-    },
-    test: {
-      ...complete,
-      path: 'src/molecules/LoadingState/LoadingState.test.tsx',
-    },
-    visual: true,
-    reference: {
-      propsPath: 'src/molecules/LoadingState/types.ts',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'loadingstate',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/StudentMessages/index.tsx',
-        },
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/MessagingPage/index.tsx',
-        },
-      ],
-    },
-  },
+
   {
     browserSmoke: complete,
     exportName: 'MessageBubble',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/MessageBubble/index.tsx',
+    ownerPath: 'src/components/Message/MessageBubble.tsx',
     runtimeMarker: 'lsui-sc-message-bubble',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/MessageBubble/MessageBubble.stories.tsx',
-      title: 'Molecules/Messaging/MessageBubble',
+      path: 'stories/components/Message/MessageBubble.stories.tsx',
+      title: 'Message/MessageBubble',
     },
     test: {
       ...complete,
-      path: 'src/molecules/MessageBubble/MessageBubble.test.tsx',
+      path: 'test/components/Message/MessageBubble.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/MessageBubble/types.ts',
+      propsPath: 'src/components/Message/MessageBubble.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagebubble',
@@ -5919,22 +4406,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'MessageComposer',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/MessageComposer/index.tsx',
+    ownerPath: 'src/components/Message/MessageComposer.tsx',
     runtimeMarker: 'lsui-sc-message-composer',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/MessageComposer/MessageComposer.stories.tsx',
-      title: 'Molecules/Messaging/MessageComposer',
+      path: 'stories/components/Message/MessageComposer.stories.tsx',
+      title: 'Message/MessageComposer',
     },
     test: {
       ...complete,
-      path: 'src/molecules/MessageComposer/MessageComposer.test.tsx',
+      path: 'test/components/Message/MessageComposer.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/MessageComposer/types.ts',
+      propsPath: 'src/components/Message/MessageComposer.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagecomposer',
@@ -5955,22 +4441,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'MessageThread',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/MessageThread/index.tsx',
+    ownerPath: 'src/components/Message/MessageThread.tsx',
     runtimeMarker: 'lsui-sc-message-thread',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/MessageThread/MessageThread.stories.tsx',
-      title: 'Molecules/Messaging/MessageThread',
+      path: 'stories/components/Message/MessageThread.stories.tsx',
+      title: 'Message/MessageThread',
     },
     test: {
       ...complete,
-      path: 'src/molecules/MessageThread/MessageThread.test.tsx',
+      path: 'test/components/Message/MessageThread.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/MessageThread/types.ts',
+      propsPath: 'src/components/Message/MessageThread.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagethread',
@@ -5991,22 +4476,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'MessageThreadHeader',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/MessageThreadHeader/index.tsx',
+    ownerPath: 'src/components/Message/MessageThreadHeader.tsx',
     runtimeMarker: 'lsui-sc-message-thread-header',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/MessageThreadHeader/MessageThreadHeader.stories.tsx',
-      title: 'Molecules/Messaging/MessageThreadHeader',
+      path: 'stories/components/Message/MessageThreadHeader.stories.tsx',
+      title: 'Message/MessageThreadHeader',
     },
     test: {
       ...complete,
-      path: 'src/molecules/MessageThreadHeader/MessageThreadHeader.test.tsx',
+      path: 'test/components/Message/MessageThreadHeader.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/MessageThreadHeader/types.ts',
+      propsPath: 'src/components/Message/MessageThreadHeader.tsx',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagethreadheader',
@@ -6027,10 +4511,9 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'OperationalList',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/OperationalList/index.tsx',
+    ownerPath: 'src/components/OperationalList/OperationalList.tsx',
     reference: {
-      propsPath: 'src/molecules/OperationalList/types.ts',
+      propsPath: 'src/components/OperationalList/OperationalList.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'operationallist',
@@ -6046,12 +4529,12 @@ export const publicComponentContracts = [
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/OperationalList/OperationalList.stories.tsx',
-      title: 'Molecules/Data/OperationalList',
+      path: 'stories/components/OperationalList/OperationalList.stories.tsx',
+      title: 'OperationalList',
     },
     test: {
       ...complete,
-      path: 'src/molecules/OperationalList/OperationalList.test.tsx',
+      path: 'test/components/OperationalList/OperationalList.test.tsx',
     },
     visual: true,
   },
@@ -6059,10 +4542,9 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SearchInput',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SearchInput/index.tsx',
+    ownerPath: 'src/components/Form/SearchInput.tsx',
     reference: {
-      propsPath: 'src/molecules/SearchInput/types.ts',
+      propsPath: 'src/components/Form/SearchInput.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'searchinput',
@@ -6082,12 +4564,12 @@ export const publicComponentContracts = [
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/SearchInput/SearchInput.stories.tsx',
-      title: 'Molecules/Fields/SearchInput',
+      path: 'stories/components/Form/SearchInput.stories.tsx',
+      title: 'Form/SearchInput',
     },
     test: {
       ...complete,
-      path: 'src/molecules/SearchInput/SearchInput.test.tsx',
+      path: 'test/components/Form/SearchInput.test.tsx',
     },
     visual: true,
   },
@@ -6095,22 +4577,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SectionHeader',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SectionHeader/index.tsx',
+    ownerPath: 'src/components/SectionHeader/SectionHeader.tsx',
     runtimeMarker: 'lsui-sc-section-header',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/SectionHeader/SectionHeader.stories.tsx',
-      title: 'Molecules/Layout/SectionHeader',
+      path: 'stories/components/SectionHeader/SectionHeader.stories.tsx',
+      title: 'SectionHeader',
     },
     test: {
       ...complete,
-      path: 'src/molecules/SectionHeader/SectionHeader.test.tsx',
+      path: 'test/components/SectionHeader/SectionHeader.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/SectionHeader/types.ts',
+      propsPath: 'src/components/SectionHeader/SectionHeader.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'sectionheader',
@@ -6131,22 +4612,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SegmentedControl',
     interactive: true,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/SegmentedControl/index.tsx',
+    ownerPath: 'src/components/SegmentedControl/SegmentedControl.tsx',
     runtimeMarker: 'lsui-sc-segmented-control',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/SegmentedControl/SegmentedControl.stories.tsx',
-      title: 'Molecules/Selection/SegmentedControl',
+      path: 'stories/components/SegmentedControl/SegmentedControl.stories.tsx',
+      title: 'SegmentedControl',
     },
     test: {
       ...complete,
-      path: 'src/molecules/SegmentedControl/SegmentedControl.test.tsx',
+      path: 'test/components/SegmentedControl/SegmentedControl.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/SegmentedControl/types.ts',
+      propsPath: 'src/components/SegmentedControl/SegmentedControl.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'segmentedcontrol',
@@ -6167,22 +4647,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'StatePanel',
     interactive: false,
-    layer: 'molecule',
-    ownerPath: 'src/molecules/StatePanel/index.tsx',
+    ownerPath: 'src/components/StatePanel/StatePanel.tsx',
     runtimeMarker: 'lsui-sc-state-panel',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/molecules/StatePanel/StatePanel.stories.tsx',
-      title: 'Molecules/State/StatePanel',
+      path: 'stories/components/StatePanel/StatePanel.stories.tsx',
+      title: 'StatePanel',
     },
     test: {
       ...complete,
-      path: 'src/molecules/StatePanel/StatePanel.test.tsx',
+      path: 'test/components/StatePanel/StatePanel.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/molecules/StatePanel/types.ts',
+      propsPath: 'src/components/StatePanel/StatePanel.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'statepanel',
@@ -6207,22 +4686,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Pressable',
     interactive: true,
-    layer: 'primitive',
-    ownerPath: 'src/primitives/Pressable/index.tsx',
+    ownerPath: 'src/components/Pressable.tsx',
     runtimeMarker: 'lsui-sc-pressable',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/primitives/Pressable/Pressable.stories.tsx',
-      title: 'Primitives/Pressable',
+      path: 'stories/components/Button/Pressable.stories.tsx',
+      title: 'Button/Pressable',
     },
     test: {
       ...complete,
-      path: 'src/primitives/Pressable/Pressable.test.tsx',
+      path: 'test/components/Button/Pressable.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/primitives/Pressable/types.ts',
+      propsPath: 'src/components/Pressable.tsx',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'pressable',
@@ -6251,22 +4729,21 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'Spinner',
     interactive: false,
-    layer: 'primitive',
-    ownerPath: 'src/primitives/Spinner/index.tsx',
+    ownerPath: 'src/components/Spinner/Spinner.tsx',
     runtimeMarker: 'lsui-sc-spinner',
     ssrSmoke: complete,
     story: {
       ...complete,
-      path: 'src/primitives/Spinner/Spinner.stories.tsx',
-      title: 'Primitives/Spinner',
+      path: 'stories/components/Spinner/Spinner.stories.tsx',
+      title: 'Spinner',
     },
     test: {
       ...complete,
-      path: 'src/primitives/Spinner/Spinner.test.tsx',
+      path: 'test/components/Spinner/Spinner.test.tsx',
     },
     visual: true,
     reference: {
-      propsPath: 'src/primitives/Spinner/types.ts',
+      propsPath: 'src/components/Spinner/Spinner.tsx',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'spinner',
@@ -6283,6 +4760,181 @@ export const publicComponentContracts = [
         {
           repository: 'langyspace-admin',
           path: 'src/pages/AdminPortal/AdminGlobalSearch/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthBrandContent',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthBrandContent.tsx',
+    runtimeMarker: 'lsui-sc-auth-brand-title',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthBrandContent.stories.tsx',
+      title: 'Auth/AuthBrandContent',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthBrandContent.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authbrandcontent',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthFooter',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthFooter.tsx',
+    runtimeMarker: 'lsui-sc-auth-brand-footer',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthFooter.stories.tsx',
+      title: 'Auth/AuthFooter',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthFooter.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authfooter',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthHeader',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthHeader.tsx',
+    runtimeMarker: 'lsui-sc-auth-title',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthHeader.stories.tsx',
+      title: 'Auth/AuthHeader',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthHeader.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authheader',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthActions',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthActions.tsx',
+    runtimeMarker: 'lsui-sc-auth-actions',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthActions.stories.tsx',
+      title: 'Auth/AuthActions',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthActions.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authactions',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'FlashcardProgress',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Flashcard/FlashcardProgress.tsx',
+    runtimeMarker: 'lsui-sc-flashcard-progress-track',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Flashcard/FlashcardProgress.stories.tsx',
+      title: 'Flashcard/FlashcardProgress',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Flashcard/FlashcardProgress.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Flashcard/FlashcardProgress.tsx',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'flashcardprogress',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/FlashcardsV2.tsx',
         },
       ],
     },

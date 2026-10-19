@@ -2,17 +2,17 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Este checkout contém o contrato **2.2.0**, com ações de texto consolidadas em Button. Os guias descrevem essa versão; a instalação usa o artefato oficial correspondente. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+Esta revisão define a **3.0.0**, com organização por responsabilidade, composições coesas e retirada deliberada de 40 APIs substituídas. Consulte a [migração para 3.0](docs/components/migration-v3.md). Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Para a versão oficial atual:
+Após a publicação da release 3.0.0, instale seu artefato imutável:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v2.2.0/langyspace-ui-2.2.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v3.0.0/langyspace-ui-3.0.0.tgz'
 ```
 
-O candidato deve ser instalado pelo artefato imutável identificado na entrega, com sua integridade registrada. Não usar uma branch móvel ou um link local na dependência entregue.
+Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
 
 React/React DOM19, styled-components6 e react-hook-form7 são peers. Não há import obrigatório de CSS nem ThemeProvider externo. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
 
@@ -85,6 +85,43 @@ export default defineConfig({
 Mantenha versões únicas dos peers no consumidor. A modalidade de Dialog/Drawer também é ativada quando uma camada inicialmente aberta é hidratada; abrir o portal não basta para provar foco, inércia e bloqueio de rolagem.
 
 ## Encontrar um componente no checkout
+
+O código usa nomes de componentes React e famílias de responsabilidade:
+
+```text
+src/
+  components/
+    Button/Button.tsx
+    Calendar/ScheduleCalendar.tsx
+    Calendar/MonthView.tsx
+    Auth/AuthFrame.tsx
+    Form/TextInput.tsx
+    MetricSummary/MetricSummary.tsx
+    StatCard/StatCard.tsx
+    PracticeResultPanel/PracticeResultPanel.tsx
+  foundations/    tokens e receitas
+  internal/       hooks, contextos e infraestrutura privada
+  index.ts        API pública
+stories/          exemplos e estados do catálogo
+test/             comportamento, contratos de tipos e setup
+```
+
+Tipos curtos e estilos simples ficam no arquivo do componente. Estilos ou tipos
+maiores ficam em arquivos próprios quando ajudam a leitura, como Button.styles.ts.
+Exemplos ficam em stories e testes em test, separados da implementação.
+Componentes simples podem usar um único arquivo. Não há classificação atomic nem
+uma pasta para cada detalhe. A major retira adaptadores já substituídos; os componentes completos possuem sua anatomia privada.
+
+```tsx
+<MetricSummary value={correctAnswers} label="Acertos" />
+<StatCard value={activeStudents} label="Alunos ativos" tone="brand" />
+<PracticeResultPanel heading="Resultado" description={summary} actions={actions}>
+  {metrics}
+</PracticeResultPanel>
+```
+
+As remoções incompatíveis estão documentadas no guia da major 3; a versão 2 continua publicada para consumidores ainda não migrados. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
+registra o escopo e os limites desta reorganização.
 
 O manifest em quality/component-manifest.ts liga export, owner, props, guia, story, teste e exemplos de consumidores. O comando é uma ferramenta do repositório:
 

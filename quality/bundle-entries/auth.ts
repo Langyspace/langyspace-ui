@@ -1,1 +1,1 @@
-export { AuthAccent, AuthDescription, AuthTitle } from '../../src'
+export {} from '../../src'

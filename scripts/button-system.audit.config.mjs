@@ -7,7 +7,7 @@ export default defineAuditConfig({
   nativeButtonOwners: [
     {
       owner: 'UI foundations',
-      path: 'src/primitives/Pressable/styles.ts',
+      path: 'src/components/Pressable.tsx',
       reason: 'Pressable owns the native styled button',
       expiresAt: '2027-08-25',
     },
@@ -15,7 +15,7 @@ export default defineAuditConfig({
   spinnerOwners: [
     {
       owner: 'UI foundations',
-      path: 'src/primitives/Spinner/styles.ts',
+      path: 'src/components/Spinner/Spinner.styles.ts',
       reason: 'Spinner owns wait rotation',
       expiresAt: '2027-08-25',
     },
@@ -23,21 +23,21 @@ export default defineAuditConfig({
   allowedDomainMotion: [
     {
       owner: 'Flashcard pronunciation presentation',
-      path: 'src/molecules/FlashcardAudioButton/styles.ts',
+      path: 'src/components/Flashcard/FlashcardAudioButton.styles.ts',
       reason:
         'Existing finite 600ms pronunciation pulse shared from Student/Teacher; audio ownership stays local and reduced motion disables the pulse',
       expiresAt: '2027-04-15',
     },
     {
       owner: 'Shadowing presentation',
-      path: 'src/molecules/ShadowingPhraseStack/styles.ts',
+      path: 'src/components/Shadowing/ShadowingPhraseStack.tsx',
       reason:
         'Existing phrase entrance or decorative repeat pulse with explicit reduced motion; audio timing remains local',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Shadowing presentation',
-      path: 'src/molecules/ShadowingRepetitions/styles.ts',
+      path: 'src/components/Shadowing/ShadowingRepetitions.styles.ts',
       reason:
         'Existing phrase entrance or decorative repeat pulse with explicit reduced motion; audio timing remains local',
       expiresAt: '2027-04-14',
@@ -45,20 +45,20 @@ export default defineAuditConfig({
 
     {
       owner: 'Loading presentation',
-      path: 'src/primitives/Skeleton/styles.ts',
+      path: 'src/components/Skeleton/Skeleton.tsx',
       reason: 'Decorative placeholder shimmer, disabled for reduced motion',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Flashcard presentation',
-      path: 'src/molecules/FlashcardSwiper/styles.ts',
+      path: 'src/components/Flashcard/FlashcardSwiper.styles.ts',
       reason:
         'Existing finite card/feedback transition with explicit reduced motion; scheduling and timers remain local',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Flashcard presentation',
-      path: 'src/molecules/FlashcardFeedback/styles.ts',
+      path: 'src/components/Flashcard/FlashcardFeedback.styles.ts',
       reason:
         'Existing finite card/feedback transition with explicit reduced motion; scheduling and timers remain local',
       expiresAt: '2027-04-14',
@@ -66,55 +66,55 @@ export default defineAuditConfig({
 
     {
       owner: 'Auth presentation',
-      path: 'src/atoms/AuthSuccessIcon/styles.ts',
+      path: 'src/components/Auth/AuthSuccessState.tsx',
       reason:
         'Existing finite auth success entrance, with explicit reduced motion',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Auth presentation',
-      path: 'src/atoms/AuthProgress/styles.ts',
+      path: 'src/components/Auth/AuthProgress.tsx',
       reason:
         'Existing decorative auth completion progress; no navigation timer; explicit reduced motion',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Practice completion',
-      path: 'src/atoms/PracticeResultMark/styles.ts',
+      path: 'src/components/PracticeResultPanel/PracticeResultPanel.styles.ts',
       reason:
         'finite 320ms completion-mark entrance from Student, shared with Teacher, explicitly disabled with reduced motion; actions and metrics stay still',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Practice rating',
-      path: 'src/molecules/FlashcardRatingButton/styles.ts',
+      path: 'src/components/Flashcard/FlashcardRatingButton.styles.ts',
       reason:
         'finite 300ms rating-choice entrance and 20/60/100/140ms stagger from both products, disabled with reduced motion; card transitions remain in the product',
       expiresAt: '2027-04-13',
     },
     {
       owner: 'Practice loading',
-      path: 'src/molecules/PracticeCardSkeletonBody/styles.ts',
+      path: 'src/components/Practice/PracticeCardSkeletonBody.styles.ts',
       reason:
         'decorative practice-card shimmer with reduced-motion override; busy state stays in the product',
       expiresAt: '2027-04-12',
     },
     {
       owner: 'Feedback',
-      path: 'src/molecules/ToastItem/styles.ts',
+      path: 'src/components/Toast/ToastItem.styles.ts',
       reason:
         'finite toast entrance with reduced-motion override, preserving product feedback',
       expiresAt: '2027-01-11',
     },
     {
       owner: 'Operational lists',
-      path: 'src/molecules/ActionMenu/styles.ts',
+      path: 'src/components/ActionMenu/ActionMenu.styles.ts',
       reason: 'non-modal popover entrance with reduced-motion override',
       expiresAt: '2027-08-28',
     },
     {
       owner: 'Identity',
-      path: 'src/molecules/AuthTokenDigits/styles.ts',
+      path: 'src/components/Auth/AuthTokenDigits.styles.ts',
       reason: 'invalid token feedback',
       expiresAt: '2027-08-25',
     },
@@ -123,11 +123,10 @@ export default defineAuditConfig({
   auditPrivateStyles: true,
   requireExceptionExpiry: true,
   layerDependencies: {
-    atoms: ['atoms', 'foundations', 'internal', 'primitives'],
+    components: ['components', 'foundations', 'internal'],
+    compatibility: ['components', 'foundations', 'internal'],
     foundations: ['foundations'],
-    internal: ['foundations', 'internal', 'primitives'],
-    molecules: ['atoms', 'foundations', 'internal', 'molecules', 'primitives'],
-    primitives: ['foundations', 'primitives'],
+    internal: ['foundations', 'internal'],
   },
   additionalRules: [
     {

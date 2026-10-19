@@ -192,6 +192,82 @@ export const composition = [LocalButton, Surface, Card]
   assert.deepEqual(positive.diagnostics, [])
   assert.deepEqual(positive.failures, [])
 
+  const reactRoot = join(root, 'react-components')
+  for (const directory of [
+    'components/Button',
+    'components/Other',
+    'compatibility',
+    'foundations',
+    'internal',
+  ]) {
+    await mkdir(join(reactRoot, 'src', directory), { recursive: true })
+  }
+  await writeFile(
+    join(reactRoot, 'src/components/Button/Button.tsx'),
+    "export type ButtonVariant = 'primary' | 'secondary'\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/components/Button/Private.ts'),
+    "import { Root } from '../Other/Other.styles'\nexport const privateRecipe = Root\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/foundations/Broken.ts'),
+    "import { Button } from '../components/Button/Button'\nexport const broken = Button\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/internal/Broken.ts'),
+    "import { Button } from '../components/Button/Button'\nexport const broken = Button\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/components/Other/AdapterDependency.ts'),
+    "import { TextButton } from '../../compatibility/Button'\nexport const broken = TextButton\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/compatibility/Button.tsx'),
+    "import { Button } from '../components/Button/Button'\nimport { Root } from '../components/Button/Button.styles'\nexport const TextButton = Button\nexport const ownStyles = Root\n",
+  )
+  await writeFile(
+    join(reactRoot, 'src/compatibility/ForeignStyles.tsx'),
+    "import { Root } from '../components/Other/Other.styles'\nexport const broken = Root\n",
+  )
+  const reactResult = await auditArchitecture({
+    root: reactRoot,
+    auditPrivateStyles: true,
+    componentOwners: {
+      'src/compatibility/Button.tsx': 'src/components/Button/Button.tsx',
+      'src/compatibility/ForeignStyles.tsx': 'src/components/Button/Button.tsx',
+    },
+    layerDependencies: {
+      components: ['components', 'foundations', 'internal'],
+      compatibility: ['components', 'foundations', 'internal'],
+      foundations: ['foundations'],
+      internal: ['foundations', 'internal'],
+    },
+  })
+  assert(
+    reactResult.diagnostics.some(
+      (d) =>
+        d.ruleId === 'LSUI007' && d.path === 'src/components/Button/Button.tsx',
+    ),
+  )
+  assert(reactResult.diagnostics.some((d) => d.ruleId === 'LSUI010'))
+  assert(
+    reactResult.diagnostics.some(
+      (d) =>
+        d.ruleId === 'LSUI010' &&
+        d.path === 'src/compatibility/ForeignStyles.tsx',
+    ),
+  )
+  assert(
+    !reactResult.diagnostics.some(
+      (d) => d.path === 'src/compatibility/Button.tsx',
+    ),
+  )
+  assert.equal(
+    reactResult.diagnostics.filter((d) => d.ruleId === 'LSUI011').length,
+    3,
+  )
+
   await assert.rejects(
     () =>
       auditArchitecture({

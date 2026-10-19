@@ -115,18 +115,50 @@ export function Review() {
         />
       )}
       {surface === 'calendar' && (
-        <div style={{ width: 250 }}>
-          <UI.CalendarDay
-            day={<UI.CalendarDayNumber>15</UI.CalendarDayNumber>}
-            openLabel="Abrir dia 15"
-            onOpen={() => record('open')}
-            data-testid="day"
-          >
-            <UI.CalendarEvent onClick={() => record('action')}>
-              09:00 · Aula
-            </UI.CalendarEvent>
-          </UI.CalendarDay>
-        </div>
+        <UI.ScheduleCalendar
+          view="month"
+          days={[
+            {
+              id: 'day-15',
+              dateKey: '2026-10-15',
+              label: 'Dia 15',
+              shortLabel: 'Qui',
+              dayNumber: 15,
+            },
+          ]}
+          events={[
+            {
+              id: 'event-1',
+              dateKey: '2026-10-15',
+              startMinute: 540,
+              durationMinutes: 60,
+              timeLabel: '09:00',
+              title: 'Aula',
+              label: 'Abrir aula',
+            },
+          ]}
+          slots={[
+            {
+              id: 'slot-1',
+              dateKey: '2026-10-15',
+              startMinute: 600,
+              endMinute: 630,
+              label: 'Abrir dia 15',
+              state: 'available',
+              interactive: true,
+            },
+          ]}
+          navigation={{
+            label: 'Outubro',
+            previousLabel: 'Anterior',
+            nextLabel: 'Próximo',
+            onPrevious: () => {},
+            onNext: () => {},
+            onToday: () => {},
+          }}
+          onOpenEvent={() => record('action')}
+          onSlotClick={() => record('open')}
+        />
       )}
       {surface === 'dialog' && (
         <>

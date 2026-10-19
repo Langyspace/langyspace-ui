@@ -1,0 +1,59 @@
+import { CompoundControl } from '../Form/CompoundControl'
+import { useFieldControlAttributes } from '../../internal/FieldControlContext'
+import * as Styled from './FilterSelect.styles'
+
+import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { FieldControlSize } from '../../foundations/fields'
+
+export interface FilterSelectProps extends Omit<
+  ComponentPropsWithRef<'select'>,
+  'size' | 'multiple'
+> {
+  children: ReactNode
+  size?: FieldControlSize
+}
+
+export function FilterSelect({
+  className,
+  children,
+  disabled = false,
+  size = 'md',
+  ...props
+}: FilterSelectProps) {
+  const field = useFieldControlAttributes(props)
+  const invalid =
+    field['aria-invalid'] === true || field['aria-invalid'] === 'true'
+
+  return (
+    <CompoundControl
+      className={className}
+      disabled={disabled}
+      size={size}
+      invalid={invalid}
+      trailing={
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      }
+    >
+      <Styled.Root
+        {...props}
+        {...field}
+        disabled={disabled}
+        $controlSize={size}
+      >
+        {children}
+      </Styled.Root>
+    </CompoundControl>
+  )
+}

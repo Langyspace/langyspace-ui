@@ -78,7 +78,7 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { PracticeResultMark, PracticeResultTitle, PracticeResultDescription, PracticeResultActions, BrandLogo, AuthBrandTitle, AuthBrandAccent, AuthBrandDescription, AuthFeatureList, AuthBrandFooter, AuthMobileFooter, AuthFooterLink, AuthFeature, DocumentHeader, DocumentHeaderContent, DocumentNavigation, BrandLink, DocumentNavigationLink, FormStack, FieldLabelRow, FieldCounter, FormError, FormActions, FilterSelect, FileInput, InlineNotice, StatCard, StatValue, StatLabel, StatAction, DefinitionItem, DetailRow, TextButton, MetricSummary, MetricValue, MetricLabel, SidebarFrame, SidebarNavigation, NavigationLink, NavigationButton, NotificationItem, ConversationRow, BottomNavigation, BottomNavigationLink, CalendarScroller, CalendarMonthGrid, CalendarWeekGrid, CalendarDay, CalendarDayNumber, CalendarEvent, TimelineEvent, FlashcardAudioButton, FlashcardFlipButton, FlashcardWordSkeleton, FlashcardFrame, FlashcardStage, FlashcardDeck, FlashcardFront, FlashcardImagePanel, FlashcardWord, FlashcardBack, FlashcardFlipHint, FlashcardFace, FlashcardGhost, FlashcardFlip, FlashcardSwiper, FlashcardFeedback, KeyValueList, GroupedBarChart, WeeklyCountChart, Checkbox, RadioButton, ToggleButton, ChoiceCard, Skeleton, ShadowingPanel, ShadowingReader, ShadowingPhraseStack, ShadowingContextPhrase, ShadowingActivePhrase, ShadowingTranslation, ShadowingControlDock, ShadowingControlCluster, ShadowingRepetitions, AuthChannelHint, AuthChannelIcon, AuthTokenLabel, AuthLegalText, PageTitle, PageDescription, SessionProgress, CalendarTimeSlot, ScheduleRow, PracticeCard, PracticeCardCover, PracticeLevelBadge, PracticeCoverValue, PracticeCoverLabel, QuizQuestion, QuizBlank, FlashcardProgressTrack, FlashcardCounter, QuizPromptHeader, QuizMetadata, QuizBadge, ConnectionNotice, FlashcardProgressSegment, CardLink, ShadowingWord, AuthEyebrow, AuthTopLinkHighlight, AuthForm, AuthBackButton, AuthResendAction, AuthResendButton, AuthSuccessIcon, AuthProgress, AuthSubmitButton, AuthTopLink, AuthSuccessState, PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthAccent, AuthDescription, AuthTitle, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, EmptyState, FieldRoot, FilterPills, FilterToolbar, IconButton, LoadingState, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ScheduleCalendar, AuthBrandContent, AuthFooter, AuthHeader, AuthActions, FlashcardProgress, BrandLogo, DocumentHeader, DocumentHeaderContent, DocumentNavigation, BrandLink, DocumentNavigationLink, FormStack, FieldLabelRow, FieldCounter, FormError, FormActions, FilterSelect, FileInput, InlineNotice, StatCard, DefinitionItem, DetailRow, MetricSummary, SidebarFrame, SidebarNavigation, NavigationLink, NavigationButton, NotificationItem, ConversationRow, BottomNavigation, BottomNavigationLink, CalendarScroller, FlashcardAudioButton, FlashcardFlipButton, FlashcardWordSkeleton, FlashcardFrame, FlashcardStage, FlashcardDeck, FlashcardFront, FlashcardImagePanel, FlashcardWord, FlashcardBack, FlashcardFlipHint, FlashcardFace, FlashcardGhost, FlashcardFlip, FlashcardSwiper, FlashcardFeedback, KeyValueList, GroupedBarChart, WeeklyCountChart, Checkbox, RadioButton, ToggleButton, ChoiceCard, Skeleton, ShadowingPanel, ShadowingReader, ShadowingPhraseStack, ShadowingContextPhrase, ShadowingActivePhrase, ShadowingTranslation, ShadowingControlDock, ShadowingControlCluster, ShadowingRepetitions, AuthChannelHint, AuthChannelIcon, AuthTokenLabel, AuthLegalText, PageTitle, PageDescription, SessionProgress, ScheduleRow, PracticeCard, PracticeCardCover, PracticeLevelBadge, QuizQuestion, QuizBlank, QuizPromptHeader, QuizMetadata, QuizBadge, ConnectionNotice, CardLink, ShadowingWord, AuthEyebrow, AuthForm, AuthResendAction, AuthProgress, AuthTopLink, AuthSuccessState, PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, FieldRoot, FilterPills, FilterToolbar, IconButton, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, ToastItem, ToastViewport } from '@langyspace/ui'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -91,10 +91,27 @@ function PackageForm() {
   return <FormProvider {...form}><ControlledField label="Email" name="email" /></FormProvider>
 }
 
+const packageCalendar = {
+  days: [{ id: 'day-15', dateKey: '2026-10-15', label: 'Quinta, 15 de outubro', shortLabel: 'Qui', dayNumber: 15 }],
+  events: [{ id: 'class-1', dateKey: '2026-10-15', startMinute: 540, durationMinutes: 60, timeLabel: '09:00', title: 'Aula', label: 'Abrir aula' }],
+  slots: [{ id: 'slot-1', dateKey: '2026-10-15', startMinute: 600, endMinute: 630, label: 'Quinta 10:00', state: 'available' as const, interactive: true }],
+  navigation: { label: 'Outubro', previousLabel: 'Anterior', nextLabel: 'Próximo', onPrevious: () => {}, onNext: () => {}, onToday: () => {} },
+  timeRange: { startMinute: 540, endMinute: 660 },
+  onOpenEvent: () => {},
+  onSlotClick: () => {},
+}
+
 const queueItems = [{ id: 'person-1', name: 'Maria', status: 'Ativa' }]
 
 createRoot(document.getElementById('root')!).render(
   <>
+    <AuthBrandContent logo={<span>Brand</span>} title="Package " highlight="auth" description="Package composition" features={['Feature']} />
+    <AuthFooter placement="mobile" links={[]}>Mobile legal</AuthFooter>
+    <AuthFooter links={[{ href: '/terms', label: 'Terms' }]}>Copyright</AuthFooter>
+    <AuthHeader title="Header " highlight="highlight" paragraphs={['Description']} />
+    <AuthActions><Button>Continue</Button></AuthActions>
+    <ScheduleCalendar view="week" {...packageCalendar} /><ScheduleCalendar view="month" {...packageCalendar} />
+    <FlashcardProgress current={1} total={4} label="Progress" />
     <Button iconEnd={<span aria-hidden="true">→</span>} variant="brand">
       Package smoke passed
     </Button>
@@ -108,8 +125,8 @@ createRoot(document.getElementById('root')!).render(
     <Spinner size="md" />
     <Avatar initials="LS" tone="brand" />
     <StatusChip indicator tone="success">Package status passed</StatusChip>
-    <EmptyState title="Package empty state passed" />
-    <LoadingState title="Package loading state passed" />
+    <StatePanel state="empty" title="Package empty state passed" />
+    <StatePanel state="loading" title="Package loading state passed" />
     <StatePanel state="error" title="Package error state passed" />
     <AvailabilityCalendar label="Package calendar passed" days={[{ id: 'monday', label: 'Monday', dateLabel: '14/09/2026', slots: [{ id: '09', label: '09:00', available: true }] }]} selectedSlotIds={['09']} onToggleSlot={() => undefined} />
     <MessageBubble side="outgoing" status="sent" statusLabel="Sent" timestamp="10:30">Package message passed</MessageBubble>
@@ -125,29 +142,29 @@ createRoot(document.getElementById('root')!).render(
     <PracticeProgressBar value={0.375} />
     <FlashcardRatingButton grade="good" interval="4 days" selected>Good</FlashcardRatingButton>
     <PracticePlaybackControls playing={false} playLabel="Play" onPlay={()=>{}} speed="1x" speedOptions={["1x"]} onSpeedChange={()=>{}} translationVisible={false} onTranslationToggle={()=>{}} />
-    <BrandLogo width={144}/><AuthBrandTitle>Package AuthBrandTitle</AuthBrandTitle><AuthBrandAccent>Package AuthBrandAccent</AuthBrandAccent><AuthBrandDescription>Package AuthBrandDescription</AuthBrandDescription><AuthFeatureList><li>Package feature</li></AuthFeatureList><AuthBrandFooter>Package AuthBrandFooter</AuthBrandFooter><AuthMobileFooter>Package AuthMobileFooter</AuthMobileFooter><AuthFooterLink>Package AuthFooterLink</AuthFooterLink><ul><AuthFeature>Package AuthFeature</AuthFeature></ul><DocumentHeader>Package DocumentHeader</DocumentHeader><DocumentHeaderContent>Package DocumentHeaderContent</DocumentHeaderContent><DocumentNavigation>Package DocumentNavigation</DocumentNavigation><BrandLink href="/termos">Termos</BrandLink><DocumentNavigationLink href="/termos">Termos</DocumentNavigationLink>
+    <BrandLogo width={144}/><ul></ul><DocumentHeader>Package DocumentHeader</DocumentHeader><DocumentHeaderContent>Package DocumentHeaderContent</DocumentHeaderContent><DocumentNavigation>Package DocumentNavigation</DocumentNavigation><BrandLink href="/termos">Termos</BrandLink><DocumentNavigationLink href="/termos">Termos</DocumentNavigationLink>
     <FormStack>Package FormStack</FormStack><FieldLabelRow>Package FieldLabelRow</FieldLabelRow><FieldCounter>Package FieldCounter</FieldCounter><FormError>Package FormError</FormError><FormActions>Package FormActions</FormActions>
     <FilterSelect aria-label="Package filter"><option>Todos</option></FilterSelect><FileInput aria-label="Package file"/>
     <InlineNotice>Package InlineNotice</InlineNotice>
-    <StatCard>Package StatCard</StatCard><StatValue>Package StatValue</StatValue><StatLabel>Package StatLabel</StatLabel><StatAction>Package StatAction</StatAction><DefinitionItem label="Identificador" value="Valor completo"/><DetailRow label="Contato" value="Valor"/><TextButton>Package TextButton</TextButton>
-    <MetricSummary>Package MetricSummary</MetricSummary><MetricValue>Package MetricValue</MetricValue><MetricLabel>Package MetricLabel</MetricLabel>
+    <StatCard value={0} label="Package StatCard" action={<Button>Update</Button>} /><DefinitionItem label="Identificador" value="Valor completo"/><DetailRow label="Contato" value="Valor"/>
+    <MetricSummary value={0} label="Package MetricSummary" />
     <SidebarFrame>Package SidebarFrame</SidebarFrame><SidebarNavigation>Package SidebarNavigation</SidebarNavigation><NavigationLink href="#nav">Navegação</NavigationLink><NavigationButton>Package NavigationButton</NavigationButton><NotificationItem avatar="LS" title="Aviso" description="Texto" meta="Agora"/><ConversationRow avatar="LS" title="Conversa" preview="Mensagem"/>
     <BottomNavigation>Package BottomNavigation</BottomNavigation><BottomNavigationLink href="#home">Início</BottomNavigationLink>
-    <CalendarScroller>Package CalendarScroller</CalendarScroller><CalendarMonthGrid>Package CalendarMonthGrid</CalendarMonthGrid><CalendarWeekGrid>Package CalendarWeekGrid</CalendarWeekGrid><CalendarDay day="15">Package CalendarDay</CalendarDay><CalendarDayNumber>Package CalendarDayNumber</CalendarDayNumber><CalendarEvent>Package CalendarEvent</CalendarEvent><TimelineEvent>Package TimelineEvent</TimelineEvent>
+    <CalendarScroller>Package CalendarScroller</CalendarScroller>
     <FlashcardFrame>Package FlashcardFrame<FlashcardFront style={{ height: '24rem' }}><FlashcardFlipButton label="Package flip"/><FlashcardAudioButton label="Package pronunciation"/><FlashcardWordSkeleton/></FlashcardFront></FlashcardFrame><FlashcardStage>Package FlashcardStage</FlashcardStage><FlashcardDeck>Package FlashcardDeck</FlashcardDeck><FlashcardFront>Package FlashcardFront</FlashcardFront><FlashcardImagePanel>Package FlashcardImagePanel</FlashcardImagePanel><FlashcardWord>Package FlashcardWord</FlashcardWord><FlashcardBack term="bird" translation="passaro"/><FlashcardFlipHint>Package FlashcardFlipHint</FlashcardFlipHint><FlashcardFace>Package FlashcardFace</FlashcardFace><FlashcardGhost layer={1}/><FlashcardFlip>Package FlashcardFlip</FlashcardFlip><FlashcardSwiper>Package FlashcardSwiper</FlashcardSwiper><FlashcardFeedback grade="good" mark="OK">Package FlashcardFeedback</FlashcardFeedback>
     <KeyValueList items={[{id:"a",label:"Origem",value:"123"}]}/><GroupedBarChart aria-label="Evolução" items={[{id:"a",label:"Seg",description:"12 cliques",values:[12,2]}]}/><WeeklyCountChart items={[{id:"a",label:"S",value:2}]}/>
     <Checkbox aria-label="Selecionar checkbox"/><RadioButton aria-label="Selecionar radio"/><ToggleButton>Package ToggleButton</ToggleButton><ChoiceCard>Package ChoiceCard</ChoiceCard><Skeleton style={{width:120,height:16}}/>
     <ShadowingPanel>Package ShadowingPanel</ShadowingPanel><ShadowingReader>Package ShadowingReader</ShadowingReader><ShadowingPhraseStack>Package ShadowingPhraseStack</ShadowingPhraseStack><ShadowingContextPhrase>Package ShadowingContextPhrase</ShadowingContextPhrase><ShadowingActivePhrase>Package ShadowingActivePhrase</ShadowingActivePhrase><ShadowingTranslation>Package ShadowingTranslation</ShadowingTranslation><ShadowingControlDock>Package ShadowingControlDock</ShadowingControlDock><ShadowingControlCluster>Package ShadowingControlCluster</ShadowingControlCluster><ShadowingRepetitions total={3} value={1}>1/3 escutas</ShadowingRepetitions>
     <AuthChannelHint>Package AuthChannelHint</AuthChannelHint><AuthChannelIcon>Package AuthChannelIcon</AuthChannelIcon><AuthTokenLabel>Package AuthTokenLabel</AuthTokenLabel><AuthLegalText>Package AuthLegalText</AuthLegalText><PageTitle>Package PageTitle</PageTitle><PageDescription>Package PageDescription</PageDescription><SessionProgress name="Atividade" counter="1/3" value={.3}/>
-    <CalendarTimeSlot aria-label="Horário"/>
+
     <ScheduleRow time="10:00" participant="Pessoa" onOpen={() => undefined} openLabel="Abrir aula de Pessoa"/>
-    <PracticeCard>Package PracticeCard</PracticeCard><PracticeCardCover>Package PracticeCardCover</PracticeCardCover><PracticeLevelBadge>Package PracticeLevelBadge</PracticeLevelBadge><PracticeCoverValue>Package PracticeCoverValue</PracticeCoverValue><PracticeCoverLabel>Package PracticeCoverLabel</PracticeCoverLabel>
+    <PracticeCard>Package PracticeCard</PracticeCard><PracticeCardCover value={0} label="cards">Package PracticeCardCover</PracticeCardCover><PracticeLevelBadge>Package PracticeLevelBadge</PracticeLevelBadge>
     <QuizQuestion>Package QuizQuestion</QuizQuestion><QuizBlank/>
-    <FlashcardProgressTrack>Package FlashcardProgressTrack</FlashcardProgressTrack><FlashcardCounter>Package FlashcardCounter</FlashcardCounter><QuizPromptHeader>Package QuizPromptHeader</QuizPromptHeader><QuizMetadata>Package QuizMetadata</QuizMetadata><QuizBadge>Package QuizBadge</QuizBadge><ConnectionNotice>Package ConnectionNotice</ConnectionNotice><FlashcardProgressSegment state="done"/>
+    <QuizPromptHeader>Package QuizPromptHeader</QuizPromptHeader><QuizMetadata>Package QuizMetadata</QuizMetadata><QuizBadge>Package QuizBadge</QuizBadge><ConnectionNotice>Package ConnectionNotice</ConnectionNotice>
     <CardLink href="/details">Detalhes</CardLink>
     <ShadowingWord state="current">practice</ShadowingWord>
-    <AuthEyebrow>Área de acesso</AuthEyebrow><AuthTopLink href="/cadastro">Cadastro <AuthTopLinkHighlight>Entrar</AuthTopLinkHighlight></AuthTopLink><AuthForm aria-label="Package auth form"><AuthBackButton>Voltar</AuthBackButton><AuthSubmitButton>Continuar</AuthSubmitButton></AuthForm><AuthResendAction><AuthResendButton>Reenviar</AuthResendButton></AuthResendAction><AuthSuccessState><AuthSuccessIcon/><AuthProgress/></AuthSuccessState>
-    <PracticeResultPanel><PracticeResultMark/><PracticeResultTitle>Package result</PracticeResultTitle><PracticeResultDescription>Done</PracticeResultDescription><p>Consumer metrics</p><PracticeResultActions><Button type="button">Return</Button></PracticeResultActions></PracticeResultPanel>
+    <AuthEyebrow>Área de acesso</AuthEyebrow><AuthTopLink href="/cadastro" highlight="Entrar">Cadastro </AuthTopLink><AuthForm aria-label="Package auth form"><AuthActions><Button type="submit">Continuar</Button></AuthActions></AuthForm><AuthResendAction onResend={() => {}} resendLabel="Resend">Não recebeu o código?</AuthResendAction><AuthSuccessState><AuthProgress/></AuthSuccessState>
+    <PracticeResultPanel heading="Package result" description="Done" actions={<Button type="button">Return</Button>}><p>Consumer metrics</p></PracticeResultPanel>
     <QuizSessionHeader name="Package quiz" counter="1 de 8" progress={0.125} backLabel="Back to list" onBack={() => undefined} />
     <QuizOption letter="A" state="correct" disabled>Yes</QuizOption>
     <QuizFeedback tone="wrong">Review</QuizFeedback>
@@ -161,11 +178,11 @@ createRoot(document.getElementById('root')!).render(
     <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onChange={() => undefined} />
     <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
     <AuthTokenDigits aria-label="Code" autoFocus={false} digitLabel="Digit" idPrefix="code" length={4} onTokenChange={() => undefined} />
-    <AuthTitle>Package auth <AuthAccent>title passed</AuthAccent></AuthTitle>
+
     <ToastViewport><ToastItem message="Package toast passed" /></ToastViewport>
     <DocumentLayout title="Package document passed" sections={[{title:"Section",body:["Text"]}]} />
     <NoticeBanner title="Package notice passed" icon={<span aria-hidden="true">!</span>}>Notice text</NoticeBanner>
-    <AuthDescription>Package auth description passed</AuthDescription>
+
     <AuthNotice tone="info">Package auth notice passed</AuthNotice>
     <Dialog closeLabel="Close dialog" onClose={() => undefined} open={false} title="Package dialog passed">Dialog</Dialog>
     <Drawer closeLabel="Close drawer" onClose={() => undefined} open={false} title="Package drawer passed">Drawer</Drawer>
@@ -444,7 +461,6 @@ try {
     'lsui-sc-metric-label',
     'lsui-sc-metric-value',
     'lsui-sc-metric-summary',
-    'lsui-sc-text-button',
     'lsui-sc-detail-row',
     'lsui-sc-definition-item',
     'lsui-sc-stat-action',
@@ -479,16 +495,16 @@ try {
     'lsui-sc-practice-result-mark',
     'lsui-sc-auth-success-state',
     'lsui-sc-auth-top-link',
-    'lsui-sc-auth-submit-button',
     'lsui-sc-auth-progress',
     'lsui-sc-auth-success-icon',
     'lsui-sc-auth-resend-button',
     'lsui-sc-auth-resend-action',
-    'lsui-sc-auth-back-button',
     'lsui-sc-auth-form',
     'lsui-sc-auth-top-link-highlight',
     'lsui-sc-auth-eyebrow',
     'lsui-sc-quiz-session-header',
+    'lsui-sc-schedule-calendar',
+    'lsui-sc-auth-actions',
     'lsui-sc-calendar-controls',
     'lsui-sc-practice-card-skeleton-body',
     'lsui-sc-toast-item',

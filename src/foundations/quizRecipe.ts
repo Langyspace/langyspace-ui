@@ -1,6 +1,6 @@
 import * as token from './tokenValues'
 
-// Geometry mirrors the existing quiz recipe; keep legacy radii/focus local when foundations differ.
+// Preserve the approved quiz geometry where it differs from general foundation values.
 export const quizRecipe = {
   typography: token.typography,
   spacing: token.spacing,

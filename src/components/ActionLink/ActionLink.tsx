@@ -1,0 +1,31 @@
+import { IconSlot } from '../../internal/IconSlot'
+import * as Styled from './ActionLink.styles'
+import type { ActionLinkProps } from './ActionLink.types'
+
+export function ActionLink({
+  children,
+  density = 'regular',
+  fullWidth = false,
+  iconEnd,
+  iconStart,
+  size = 'md',
+  variant = 'primary',
+  ...props
+}: ActionLinkProps) {
+  return (
+    <Styled.ActionLink
+      {...props}
+      $density={density}
+      $fullWidth={fullWidth}
+      $shape="pill"
+      $size={size}
+      $variant={variant}
+      data-density={density}
+      data-size={size}
+    >
+      <IconSlot icon={iconStart} />
+      {children}
+      <IconSlot icon={iconEnd} />
+    </Styled.ActionLink>
+  )
+}

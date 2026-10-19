@@ -3,6 +3,6 @@ export {
   SidebarNavigation,
   NavigationLink,
   NavigationButton,
+  BottomNavigation,
+  BottomNavigationLink,
 } from '../../src'
-
-export { BottomNavigation, BottomNavigationLink } from '../../src'

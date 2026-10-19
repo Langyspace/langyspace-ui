@@ -26,6 +26,8 @@ export interface AuditConfig {
   auditDescendantActions?: boolean
   auditPrivateStyles?: boolean
   canonicalComponents?: string[]
+  /** Exact implementation owner for a separated adapter; grants only that owner's .styles module. */
+  componentOwners?: Record<string, string>
   layerDependencies?: Record<string, string[]>
   nativeButtonOwners?: AuditException[]
   requireExceptionExpiry?: boolean

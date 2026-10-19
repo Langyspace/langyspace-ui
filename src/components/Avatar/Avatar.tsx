@@ -1,0 +1,51 @@
+import { useState } from 'react'
+import * as Styled from './Avatar.styles'
+
+import type { ComponentPropsWithRef } from 'react'
+
+export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+
+export type AvatarTone = 'neutral' | 'brand' | 'inverse'
+
+export interface AvatarProps extends Omit<
+  ComponentPropsWithRef<'span'>,
+  'color'
+> {
+  imageUrl?: string
+  initials: string
+  size?: AvatarSize
+  tone?: AvatarTone
+}
+
+export function Avatar({
+  'aria-hidden': ariaHidden = true,
+  children,
+  imageUrl,
+  initials,
+  size = 'md',
+  tone = 'neutral',
+  ...props
+}: AvatarProps) {
+  const [failedImageUrl, setFailedImageUrl] = useState<string | null>(null)
+  const shouldShowImage = Boolean(imageUrl && imageUrl !== failedImageUrl)
+
+  return (
+    <Styled.Avatar
+      {...props}
+      $size={size}
+      $tone={tone}
+      aria-hidden={ariaHidden}
+      data-size={size}
+      data-tone={tone}
+    >
+      {initials || children}
+      {shouldShowImage ? (
+        <Styled.Image
+          alt=""
+          src={imageUrl}
+          onError={() => setFailedImageUrl(imageUrl ?? null)}
+        />
+      ) : null}
+    </Styled.Avatar>
+  )
+}
