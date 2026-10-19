@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { expect, it, vi } from 'vitest'
-import { CalendarDay } from '../../../src/components/Calendar/CalendarParts'
-import { CalendarDayNumber } from '../../../src/components/Calendar/CalendarParts'
-import { CalendarEvent } from '../../../src/components/Calendar/CalendarParts'
+import { CalendarDay } from '../../../src/components/Calendar/CalendarElements'
+import { CalendarDayNumber } from '../../../src/components/Calendar/CalendarElements'
+import { CalendarEvent } from '../../../src/components/Calendar/CalendarElements'
 
 it('opens the day and its event through independent native keyboard commands', async () => {
   const user = userEvent.setup()

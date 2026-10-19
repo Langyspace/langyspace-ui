@@ -4,7 +4,11 @@ import { AuthResendAction } from '../../../src/components/Auth/AuthResendAction'
 
 it('preserves structured caller content and native attributes without a theme provider', () => {
   render(
-    <AuthResendAction data-testid="auth-content">
+    <AuthResendAction
+      data-testid="auth-content"
+      onResend={() => {}}
+      resendLabel="Reenviar código"
+    >
       <strong>Conteúdo da etapa</strong>
     </AuthResendAction>,
   )

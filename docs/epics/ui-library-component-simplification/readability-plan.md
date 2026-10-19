@@ -1,5 +1,27 @@
 # Leitura e manutenção da UI Library
 
+## Execução contínua — 2026-10-19
+
+O usuário solicitou manter a execução ativa até concluir todo o plano. A entrega
+não termina nas etapas 1 e 2. A UI e os cinco consumidores serão preparados em
+sequência; nomes substituídos serão retirados numa major deliberada depois da
+adoção dos consumidores conhecidos. O aceite da revisão final continua necessário
+para integrar. O PR UI #33 fica em draft durante a preparação do conjunto.
+
+A coordenação retomável está em
+`/Users/margaridamartins/.local/langyspace-ui-complete-20261019/handoff.md`;
+cada produto tem `docs/epics/ui-library-v3/` e uma feature isolada.
+
+- [x] Separar suporte e simplificar Button.
+- [x] Preparar marca/rodapé Auth, ações de formulário e progresso Flashcard.
+- [x] Preparar adoção de Button, métricas, resultados e StatePanel nos consumidores reais.
+- [x] Rever as 40 famílias e Pressable; registrar decisões por responsabilidade.
+- [x] Preparar retirada de 40 contratos substituídos na UI 3, sem adaptadores permanentes.
+- [ ] Validar pacote candidato e cinco produtos, preparar evidências completas.
+- [ ] Concluir revisão humana atual e gates antes de integrar/publicar.
+
+A preparação das etapas não significa validação, revisão humana, publicação ou deploy concluídos. Detalhes da major em [family-review-v3.md](family-review-v3.md).
+
 ## Objetivo e baseline
 
 Pedido aprovado em 2026-10-18: continuar o plano de limpeza depois do discovery,
@@ -49,7 +71,7 @@ exports antigos. Esses números identificam oportunidades, não metas de remoç�
 7. Após migração dos consumidores conhecidos, retirar APIs substituídas numa major
    deliberada. Compatibilidade tem uma condição de saída, não é a estrutura final.
 
-## Entrega atual
+## Entrega organizacional anterior — d4bfece
 
 Etapas 1 e 2 formam um lote organizacional. Impacto `indirect`: caminhos de tipos,
 pacote e compilação de stories podem afetar contratos mesmo sem mudanças de CSS.
@@ -65,7 +87,7 @@ comparando com a baseline exata. Preservar título/ID de cada story movida e
 conteúdo dos fixtures. Registrar os limites da evidência; não afirmar nova revisão
 visual dos cinco produtos. O PR permanece pendente de revisão humana atual.
 
-## Critérios de aceite
+## Critérios de aceite do lote organizacional anterior
 
 - Button abre em duas unidades claras: implementação/props e estilos.
 - Components não mistura exemplos/testes com código de pacote.

@@ -5,7 +5,7 @@ const meta = {
   title: 'MetricSummary',
   component: MetricSummary,
   tags: ['visual-review'],
-  args: { children: 'Conteúdo fornecido pelo produto' },
+  args: { value: 42, label: 'Acertos' },
 } satisfies Meta<typeof MetricSummary>
 
 export default meta

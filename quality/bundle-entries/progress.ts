@@ -1,3 +1,1 @@
-export { PracticeProgressBar } from '../../src'
-
-export { SessionProgress } from '../../src'
+export { PracticeProgressBar, SessionProgress } from '../../src'

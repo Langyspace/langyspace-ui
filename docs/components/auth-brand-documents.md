@@ -7,16 +7,15 @@ A apresentação Auth mantém a composição React já revisada. O produto decid
 ```tsx
 import type { FormEventHandler, ReactNode } from 'react'
 import {
-  AuthAccent,
-  AuthBrandTitle,
-  AuthDescription,
+  AuthActions,
+  AuthBrandContent,
   AuthEyebrow,
   AuthForm,
   AuthFrame,
-  AuthSubmitButton,
-  AuthTitle,
+  AuthHeader,
   AuthTopLink,
   BrandLogo,
+  Button,
 } from '@langyspace/ui'
 
 interface AccessFormProps {
@@ -33,84 +32,43 @@ export function AccessForm({
   return (
     <AuthFrame
       brandLabel="Langy.space"
-      brand={<AuthBrandTitle>Inglês para sua rotina.</AuthBrandTitle>}
+      brand={
+        <AuthBrandContent
+          logo={<BrandLogo width={160} />}
+          title="Inglês para "
+          highlight="sua rotina."
+          description="Entre para continuar seus estudos."
+          features={['Aulas e materiais']}
+        />
+      }
       mobileLogo={<BrandLogo width={160} />}
       formAriaLabel="Acesso"
       topAction={<AuthTopLink href="/cadastro">Criar conta</AuthTopLink>}
     >
       <AuthEyebrow>Área de acesso</AuthEyebrow>
-      <AuthTitle>
-        Entre na <AuthAccent>Langy.space</AuthAccent>
-      </AuthTitle>
-      <AuthDescription>Use seu celular para continuar.</AuthDescription>
+      <AuthHeader
+        title="Entre na "
+        highlight="Langy.space"
+        paragraphs={['Use seu celular para continuar.']}
+      />
       <AuthForm onSubmit={onSubmit}>
         {children}
-        <AuthSubmitButton isLoading={submitting}>Continuar</AuthSubmitButton>
+        <AuthActions>
+          <Button type="submit" fullWidth size="lg" isLoading={submitting}>
+            Continuar
+          </Button>
+        </AuthActions>
       </AuthForm>
     </AuthFrame>
   )
 }
 ```
 
-AuthFrame posiciona regiões estáveis; AuthTitle e AuthBrandTitle têm contextos e hierarquias distintos. Uma variante não deve transformar um em qualquer heading ou substituir a composição por um objeto de configuração de tela.
+AuthFrame posiciona as regiões; AuthBrandContent compõe a marca, AuthHeader mantém o título e os parágrafos da etapa, e AuthActions fornece o ritmo vertical dos comandos nativos. O produto controla o fluxo.
 
 ## Conteúdo textual de documentos
 
 DocumentLayout recebe arrays de parágrafos e seções que já são dados de conteúdo legal nos produtos. Essa anatomia fixa continua adequada ao uso atual; a revisão não a converte em um interpretador genérico nem publica dezenas de elementos de texto para reconstruir o mesmo documento. Para conteúdo interativo ou outra hierarquia, avaliar uma composição específica quando houver o caso real.
-
-## AuthAccent
-
-Destaca uma parte do título do formulário pela cor de acento.
-
-Contrato: children e atributos/ref de span.
-
-Cuidados: Usar dentro de texto existente; não criar outro heading só para o trecho destacado.
-
-## AuthBackButton
-
-Compatibilidade de Button: preserva margens e defaults das telas existentes. Novos usos preferem Button com composição contextual, sem variantes auth.
-
-Ação de voltar com tamanho/variante e ritmo vertical de autenticação já definidos.
-
-É um preset de compatibilidade. Para uma nova composição, usar
-`Button size="sm" variant="secondary"` e manter a margem no layout do formulário.
-Não criar outro componente só para esse espaçamento.
-
-Contrato: Props de Button, exceto size/variant/fullWidth.
-
-Cuidados: O produto fornece rótulo e callback; o componente não conhece histórico ou rotas.
-
-## AuthBrandAccent
-
-Marca um trecho da mensagem institucional com sublinhado de marca.
-
-Contrato: children e atributos/ref de span.
-
-Cuidados: A anatomia é distinta do acento colorido de AuthAccent; não unificar por uma flag decorativa.
-
-## AuthBrandDescription
-
-Parágrafo de apoio do painel institucional escuro.
-
-Contrato: children e atributos/ref de p.
-
-Cuidados: A cor translúcida e largura são próprias desse contexto; não usar como descrição do formulário claro.
-
-## AuthBrandFooter
-
-Rodapé institucional que ocupa o fim do painel de marca.
-
-Contrato: children e atributos/ref de p.
-
-Cuidados: A cópia é fornecida pelo produto; não armazenar ano, links ou políticas de negócio no componente.
-
-## AuthBrandTitle
-
-Heading principal da mensagem institucional, com escalas responsivas próprias.
-
-Contrato: children e atributos/ref de h1.
-
-Cuidados: Preservar a hierarquia da composição; não parametrizar fontes e breakpoints para cada portal.
 
 ## AuthChannelHint
 
@@ -128,14 +86,6 @@ Contrato: channel e atributos/ref/children nativos de span.
 
 Cuidados: Não usar a cor como única identificação; a mensagem adjacente explica o canal e a disponibilidade.
 
-## AuthDescription
-
-Descrição do passo atual de entrada/cadastro, com largura e ritmo de leitura constantes.
-
-Contrato: children e atributos/ref de p.
-
-Cuidados: O produto decide o texto do passo. Não adicionar props para cada jornada de autenticação.
-
 ## AuthEyebrow
 
 Identificação curta do contexto de acesso, anterior ao título.
@@ -143,30 +93,6 @@ Identificação curta do contexto de acesso, anterior ao título.
 Contrato: children e atributos/ref de span.
 
 Cuidados: Não usar para substituir o título ou comunicar um erro.
-
-## AuthFeature
-
-Item da lista institucional com marcador de marca decorativo.
-
-Contrato: children e atributos/ref de li.
-
-Cuidados: Usar em AuthFeatureList/ul. O marcador não duplica o nome acessível do conteúdo.
-
-## AuthFeatureList
-
-Lista de benefícios do painel institucional, com visibilidade e ritmo próprios.
-
-Contrato: children e atributos/ref de ul.
-
-Cuidados: Manter itens li; não absorver em um array de configuração que limite o conteúdo React de cada item.
-
-## AuthFooterLink
-
-Link inline no texto de rodapé de autenticação.
-
-Contrato: children e atributos/ref de a.
-
-Cuidados: Fornecer href e conteúdo compreensível; navegação/Router e políticas legais ficam no produto.
 
 ## AuthForm
 
@@ -192,14 +118,6 @@ Contrato: children e atributos/ref de p.
 
 Cuidados: Links/cópia são externos. Quando seguido diretamente por button, fornece o espaçamento específico previsto nessa composição.
 
-## AuthMobileFooter
-
-Rodapé alternativo da estrutura Auth, visível no intervalo de 640 a 1023px.
-
-Contrato: children e atributos/ref de p.
-
-Cuidados: A visibilidade é contextual; não assumir que apareça em todo viewport de celular nem adicionar uma flag por produto.
-
 ## AuthNotice
 
 Mensagem de retorno do fluxo Auth com intenção error ou info.
@@ -218,58 +136,11 @@ Cuidados: Não representa percentagem real e permanece aria-hidden. Descrever o 
 
 ## AuthResendAction
 
-Agrupamento visual de reenviar e informação do tempo de espera.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Timer, bloqueio e envio ficam no produto. Não criar um serviço de OTP dentro da apresentação.
-
-## AuthResendButton
-
-Ação nativa de reenvio com ênfase textual e estado disabled.
-
-Contrato: children e atributos/ref de button; type padrão button.
-
-Cuidados: O produto decide quando habilitar e qual callback executar; não disparar envio como efeito de render.
-
-## AuthSubmitButton
-
-Compatibilidade de Button: preserva margens e defaults das telas existentes. Novos usos preferem Button com composição contextual, sem variantes auth.
-
-Confirmação Auth com receita primary/lg/fullWidth e type submit padrão.
-
-É um preset de compatibilidade. Novas composições usam
-`Button type="submit" fullWidth size="lg" variant="primary"`; o layout do
-formulário define a separação vertical. A adoção deve preservar o espaçamento
-responsivo atual antes de retirar o wrapper existente.
-
-Contrato: Props de Button exceto size/variant/fullWidth.
-
-Cuidados: O rótulo é conteúdo. isLoading bloqueia envio repetido; o formulário continua dono da operação.
-
-## AuthSuccessIcon
-
-Marca decorativa de sucesso, com animação de entrada e reduced motion.
-
-Contrato: Atributos/ref de div, sem children/aria-hidden configuráveis.
-
-Cuidados: Texto adjacente comunica o sucesso; não tratar o svg como outro nome acessível da mesma mensagem.
+Children contém ajuda/countdown; onResend e resendLabel são obrigatórios e disabled é controlado pelo produto. A UI possui o botão type="button"; não envia OTP nem calcula timers.
 
 ## AuthSuccessState
 
-Composição centralizada do estado de sucesso com conteúdo React aberto.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: A transição seguinte e seu tempo pertencem ao controlador. Não transformar o container em uma configuração de tela.
-
-## AuthTitle
-
-Título do passo do formulário em h2 com escala responsiva própria.
-
-Contrato: children e atributos/ref de h2.
-
-Cuidados: Compor trechos com AuthAccent; hierarquia e mensagem completa ficam visíveis no JSX.
+Container de conclusão com marca decorativa própria e children para o conteúdo. A marca é aria-hidden e respeita reduced motion. AuthProgress permanece independente porque também aparece em transição de rota e handoff.
 
 ## AuthTokenDigits
 
@@ -289,19 +160,7 @@ Cuidados: htmlFor deve apontar ao id do primeiro dígito, formado por idPrefix-0
 
 ## AuthTopLink
 
-Navegação complementar de acesso/cadastro com texto composto e quebra em telas estreitas.
-
-Contrato: children e atributos/ref de a.
-
-Cuidados: Usar AuthTopLinkHighlight no trecho de ação; não colocar um segundo link dentro da âncora.
-
-## AuthTopLinkHighlight
-
-Destaque textual dentro do link complementar Auth.
-
-Contrato: children e atributos/ref de span.
-
-Cuidados: Não é uma segunda ação; mantém a semântica única da âncora externa.
+Âncora nativa com children e highlight opcional na mesma ação. href/onClick/ref são encaminhados; a adaptação de Router fica no produto. Não exige um componente separado para sublinhar o destaque.
 
 ## Avatar
 
@@ -366,3 +225,19 @@ Link de documento com aparência de navegação e estados de hover/foco.
 Contrato: children e atributos/ref de a.
 
 Cuidados: Preservar href, teclado e navegação SPA no bridge do consumidor, mantendo a receita visual da UI.
+
+## AuthBrandContent
+
+Logo, título h1 com highlight opcional, descrição, features e footer. O produto fornece conteúdo React; a UI mantém ritmo e responsividade. Não contém rotas, timers ou flags por portal.
+
+## AuthFooter
+
+Children contém a identificação legal; links recebe pares href/label. placement="brand" ou "mobile" é a variação responsiva existente da mesma anatomia. Atributos/ref permanecem no parágrafo.
+
+## AuthHeader
+
+Title e highlight compõem um h2; paragraphs recebe conteúdo React por parágrafo; backAction é o comando nativo opcional de voltar. Atributos/ref do heading são preservados, sem gerar uma tela por configuração.
+
+## AuthActions
+
+Container sem caixa de layout (display: contents) que posiciona os Buttons diretos com o ritmo de autenticação. Button continua nativo, type="submit" explícito, com loading/disabled controlados pelo produto.

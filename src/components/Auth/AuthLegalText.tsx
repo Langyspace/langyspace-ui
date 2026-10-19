@@ -11,7 +11,8 @@ const Root = styled.p.withConfig({
   font-size: ${token.typographyFontSizeXs};
   line-height: ${token.typographyLineHeightNormal};
 
-  & + button {
+  & + button,
+  & + div > button {
     margin-top: ${token.spacing4};
   }
 `

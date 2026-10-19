@@ -13,3 +13,17 @@ it('preserves structured caller content and native attributes without a theme pr
     screen.getByTestId('auth-content').querySelector('strong')?.textContent,
   ).toBe('Conteúdo da etapa')
 })
+
+it('owns the decorative completion mark without hiding the supplied heading', () => {
+  const { container } = render(
+    <AuthSuccessState>
+      <h2>Bem-vinda</h2>
+    </AuthSuccessState>,
+  )
+  expect(screen.getByRole('heading', { name: 'Bem-vinda' })).toBeVisible()
+  expect(container.querySelector('.lsui-sc-auth-success-icon')).toHaveAttribute(
+    'aria-hidden',
+    'true',
+  )
+  expect(container.querySelectorAll('svg')).toHaveLength(1)
+})

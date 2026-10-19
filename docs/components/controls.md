@@ -226,17 +226,6 @@ Contrato: size e atributos/ref de select; opções são children nativos.
 
 Cuidados: Não mover enums, carregamento ou regras para o componente. CompoundControl determina o size quando presente.
 
-## TextButton
-
-Adaptador de compatibilidade para Button; não possui uma segunda receita visual.
-
-Contrato: variant emphasized/subtle/danger, iconStart/iconEnd, children e atributos/ref nativos.
-
-Novos usos preferem Button: emphasized corresponde a text, subtle a text-subtle
-e danger a text-danger. O adaptador mantém atributos, ref, ícones diretos,
-data-variant e composição styled(TextButton) existentes. Navegação usa ActionLink
-ou âncora semântica.
-
 ## TextInput
 
 Input nativo com receita de campo e integração aos contextos de identificação e superfície.

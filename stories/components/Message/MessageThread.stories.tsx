@@ -2,7 +2,6 @@ import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import { styled } from 'styled-components'
-import { EmptyState } from '../../../src/compatibility/StatePanel'
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
 import { MessageComposer } from '../../../src/components/Message/MessageComposer'
 import { StatePanel } from '../../../src/components/StatePanel/StatePanel'
@@ -120,7 +119,8 @@ export const Empty: Story = {
         header={<ParticipantHeader />}
         viewportLabel="Histórico da conversa com Maria Fernanda"
       >
-        <EmptyState
+        <StatePanel
+          state="empty"
           description="Escreva uma mensagem para iniciar a conversa por aqui."
           fill
           title="Comece a conversa"

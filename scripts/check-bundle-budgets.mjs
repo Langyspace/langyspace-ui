@@ -39,6 +39,7 @@ for (const entry of [
   'progress',
   'phone',
   'calendarControls',
+  'scheduleCalendar',
   'practiceCardBody',
   'quiz',
   'rating',

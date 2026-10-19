@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs'
 import { access } from 'node:fs/promises'
-import { dirname, resolve } from 'node:path'
+import { resolve } from 'node:path'
 import ts from 'typescript'
 import { describe, expect, it } from 'vitest'
 import {
@@ -37,9 +37,9 @@ describe('public component manifest', () => {
   it('distinguishes runtime coverage imports from type-only imports and aliases', () => {
     expect(
       runtimeImports(
-        "import { AuthBackButton, AuthSubmitButton as Submit, type ButtonProps } from '../src'",
+        "import { Button, IconButton as Icon, type ButtonProps } from '../src'",
       ),
-    ).toEqual(['AuthBackButton', 'AuthSubmitButton'])
+    ).toEqual(['Button', 'IconButton'])
     expect(runtimeImports("import type { Button } from '../src'")).toEqual([])
     expect(runtimeImports("import { Avatar } from '../src'")).not.toContain(
       'Button',
@@ -60,32 +60,14 @@ describe('public component manifest', () => {
     expect(new Set(manifestExports).size).toBe(manifestExports.length)
   })
 
-  it('points every component or compatibility export at its implementation owner', async () => {
+  it('points every public component at its implementation owner', async () => {
     for (const contractValue of publicComponentContracts) {
       const contract: ComponentContract = contractValue
-      const owner = contract.compatibilityFor ?? contract.exportName
       expect(contract.ownerPath).toMatch(
-        /^src\/(?:components|compatibility)\/(?:[^/]+\/)*[^/]+\.tsx$/,
+        /^src\/components\/(?:[^/]+\/)*[^/]+\.tsx$/,
       )
       expect(contract.ownerPath).not.toMatch(/\/index\.tsx$/)
 
-      if (contract.compatibilityFor) {
-        const canonical: ComponentContract | undefined =
-          publicComponentContracts.find(
-            (candidate) => candidate.exportName === owner,
-          )
-
-        expect(canonical).toBeDefined()
-        expect(canonical?.compatibilityFor).toBeUndefined()
-        expect(
-          contract.ownerPath === `src/compatibility/${owner}.tsx` ||
-            dirname(contract.ownerPath) === dirname(canonical!.ownerPath),
-        ).toBe(true)
-        expect(canonical?.exportName).not.toBe(contract.exportName)
-        expect(
-          readFileSync(resolve(root, contract.ownerPath), 'utf8'),
-        ).toContain(`export function ${contract.exportName}`)
-      }
       await expect(
         access(resolve(root, contract.ownerPath)),
       ).resolves.toBeUndefined()

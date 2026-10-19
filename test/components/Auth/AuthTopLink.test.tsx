@@ -20,3 +20,16 @@ it('keeps navigation and modifier handling with the caller', () => {
 
   expect(click).toHaveBeenCalledOnce()
 })
+
+it('composes a highlighted label inside the same native link', () => {
+  render(
+    <AuthTopLink href="/login" highlight={<strong>Entrar</strong>}>
+      Já tem cadastro?
+    </AuthTopLink>,
+  )
+  const link = screen.getByRole('link', { name: 'Já tem cadastro? Entrar' })
+  expect(link).toHaveAttribute('href', '/login')
+  expect(
+    link.querySelector('.lsui-sc-auth-top-link-highlight strong'),
+  ).toHaveTextContent('Entrar')
+})

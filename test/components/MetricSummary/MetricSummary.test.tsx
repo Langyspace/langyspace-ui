@@ -2,35 +2,25 @@ import { render, screen } from '@testing-library/react'
 import { createRef } from 'react'
 import { it, expect } from 'vitest'
 import { MetricSummary } from '../../../src/components/MetricSummary/MetricSummary'
-import { MetricLabel } from '../../../src/compatibility/MetricSummary'
-import { MetricValue } from '../../../src/compatibility/MetricSummary'
 
-it('renders a zero value and structured label with the same markup as the legacy composition', () => {
-  const label = <span>Acertos</span>
-  const legacy = render(
-    <MetricSummary>
-      <MetricValue>{0}</MetricValue>
-      <MetricLabel>{label}</MetricLabel>
-    </MetricSummary>,
-  )
-  const original = legacy.container.innerHTML
-  legacy.unmount()
+it('preserves zero, structured labels, native attributes and the container ref', () => {
   const ref = createRef<HTMLDivElement>()
-  const current = render(<MetricSummary ref={ref} value={0} label={label} />)
-
-  expect(current.container.innerHTML).toBe(original)
-  expect(ref.current).toBe(current.container.firstElementChild)
+  render(
+    <MetricSummary
+      ref={ref}
+      data-testid="summary"
+      value={0}
+      label={<span>Acertos</span>}
+    />,
+  )
+  expect(ref.current).toBe(screen.getByTestId('summary'))
   expect(screen.getByText('0')).toBeVisible()
+  expect(screen.getByText('Acertos').tagName).toBe('SPAN')
+  expect(ref.current?.children).toHaveLength(2)
 })
 
-it('styles the public value and label together without a theme or private markup', () => {
-  render(
-    <MetricSummary>
-      <MetricValue>42</MetricValue>
-      <MetricLabel>Acertos</MetricLabel>
-    </MetricSummary>,
-  )
-
+it('styles value and label together without a product theme', () => {
+  render(<MetricSummary value={42} label="Acertos" />)
   expect(screen.getByText('42')).toHaveStyle({
     fontSize: '1.25rem',
     fontWeight: '700',
@@ -39,16 +29,4 @@ it('styles the public value and label together without a theme or private markup
     textTransform: 'uppercase',
     fontWeight: '600',
   })
-})
-
-it('preserves native attributes and structured caller content without a private theme', () => {
-  render(
-    <MetricSummary data-testid="content">
-      <strong>Conteúdo fornecido</strong>
-    </MetricSummary>,
-  )
-
-  expect(
-    screen.getByTestId('content').querySelector('strong')?.textContent,
-  ).toBe('Conteúdo fornecido')
 })

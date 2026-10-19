@@ -6,7 +6,7 @@ const meta = {
   title: 'StatCard',
   component: StatCard,
   tags: ['visual-review'],
-  args: { children: 'Conteúdo fornecido pelo produto' },
+  args: { value: 42, label: 'Alunos ativos' },
 } satisfies Meta<typeof StatCard>
 
 export default meta

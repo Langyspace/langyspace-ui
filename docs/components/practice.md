@@ -122,14 +122,6 @@ Contrato: term e translation; phonetic/example opcionais; atributos/ref de div.
 
 Cuidados: O produto entrega texto rico e áudio no slot term. Não montar classes en/divider/translation/example; são elementos privados. Não buscar tradução ou áudio aqui.
 
-## FlashcardCounter
-
-Contagem textual da sessão.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Compor em FlashcardFrame ou aceitar seus fallbacks de cor; b destaca o número corrente. Produto calcula contagem e decide anúncios para não repetir cada atualização.
-
 ## FlashcardDeck
 
 Pilha e altura responsiva do cartão.
@@ -248,22 +240,6 @@ Contrato: emoji opcional, children e atributos/ref de div.
 
 Cuidados: Emoji tem apresentação e ocultação acessível internas. Produto escolhe imagem/fallback e trata falha de mídia; imagem meramente ilustrativa usa alt vazio.
 
-## FlashcardProgressSegment
-
-Um segmento visual do avanço da sessão.
-
-Contrato: state pending/current/done e atributos/ref de span.
-
-Cuidados: Progresso é calculado pelo produto; manter estado fora do DOM por filtro de prop. Compor no Track e disponibilizar contagem textual acessível.
-
-## FlashcardProgressTrack
-
-Agrupa segmentos de progresso.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Não recebe total/índice para fabricar domínio. Produto compõe segmentos com keys estáveis e fornece o resumo acessível.
-
 ## FlashcardRatingButton
 
 Comando de avaliação com intervalo estimado.
@@ -328,22 +304,6 @@ Contrato: Atributos/ref de div; sem children/role/tabIndex.
 
 Cuidados: Decorativo aria-hidden. O dono anuncia carregamento uma vez na região, sem transformar cada linha animada em status. Reduced motion desativa shimmer.
 
-## PracticeCoverLabel
-
-Identificação curta na capa.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Depende da superfície escura da Cover. Produto fornece copy; não duplicar CSS de caixa alta no consumidor.
-
-## PracticeCoverValue
-
-Valor ou símbolo dominante da capa.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Conteúdo visual de leitura, sem comando próprio. O nome do card deve continuar compreensível quando o valor for apenas um ícone.
-
 ## PracticeLevelBadge
 
 Nível de dificuldade na capa.
@@ -368,45 +328,11 @@ Contrato: value e atributos/ref de div.
 
 Cuidados: Clamp e valores não finitos protegem CSS, sem inferir progresso de negócio. aria-hidden exige texto/contador acessível no dono; não duplicar progressbar anunciado.
 
-## PracticeResultActions
-
-Agrupa ações finais de uma sessão.
-
-Contrato: children e atributos/ref de div.
-
-Cuidados: Produto fornece Buttons e suas ações; biblioteca define ritmo/largura. Não criar array genérico de ações para gerar esta composição simples.
-
-## PracticeResultDescription
-
-Descrição do resultado.
-
-Contrato: children e atributos/ref de p.
-
-Cuidados: Conteúdo deve ser phrasing; composição maior fica no painel. Produto interpreta resultado e fornece a mensagem.
-
-## PracticeResultMark
-
-Marca decorativa de conclusão.
-
-Contrato: Atributos/ref de div; sem children/aria-hidden.
-
-Cuidados: Sempre decorativo; título/descrição expressam conclusão. Não duplicar uma live region para o ícone.
-
 ## PracticeResultPanel
 
-Layout da conclusão da sessão.
+Resultado de uma sessão: heading, description, icon e actions são regiões estáveis; children recebe métricas e feedback do produto. title continua o atributo HTML nativo. null em icon suprime a marca padrão.
 
-Contrato: heading, description, actions, icon opcional, children para conteúdo intermediário e atributos/ref de div. O atributo HTML title continua sendo tooltip; não é convertido em heading.
-
-Cuidados: Produto fornece resultado e navegação. icon null omite a marca padrão. Children sozinho preserva a composição anterior sem injetar elementos. Os nomes Mark/Title/Description/Actions continuam disponíveis por compatibilidade, junto do owner.
-
-## PracticeResultTitle
-
-Título semântico da conclusão.
-
-Contrato: children e atributos/ref de h2.
-
-Cuidados: Cabe ao produto inserir o painel na hierarquia da página e mover foco/anunciar quando necessário. Não usar apenas um div maior para simular título.
+Parágrafos nativos diretamente em children recebem a tipografia de descrição. O produto pode usar `<p role="status">` ou `<p role="alert">` e controla persistência, copy e condições. A biblioteca não interpreta estados de conclusão do domínio.
 
 ## QuizBadge
 
@@ -589,3 +515,9 @@ Painel de prática de fala/música, composto com um `header`, `ShadowingReader` 
 ```
 
 FlashcardFrame segue a mesma distribuição compacta com `header`, `FlashcardStage` e `footer` diretos. A altura do frame deve vir do espaço disponível; FlashcardDeck limita o cartão a esse espaço. Frente/verso preservam rolagem de conteúdo quando necessário.
+
+## FlashcardProgress
+
+Progresso segmentado e contador são uma unidade com label obrigatório. Current/total vêm do produto; revealed/complete definem a apresentação do passo atual/conclusão. loading usa quatro segmentos skeleton e um contador oculto.
+
+O progresso é exposto como progressbar com limites finitos; loading é indeterminado e busy. Zero/valores não finitos são limitados sem inventar dados da sessão. A UI limita a apresentação a 20 segmentos e não agenda revisões nem persiste progresso.

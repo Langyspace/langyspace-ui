@@ -68,8 +68,6 @@ export const tokens = {
       50: token.colorNeutral50,
       100: token.colorNeutral100,
       300: token.colorNeutral300,
-      /** @deprecated Compatibility alias. Prefer neutral[300] for borders. */
-      400: token.colorNeutral400,
       500: token.colorNeutral500,
       600: token.colorNeutral600,
       900: token.colorNeutral900,

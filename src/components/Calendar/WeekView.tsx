@@ -1,6 +1,6 @@
 import { useMemo, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
-import { CalendarWeekGrid } from './CalendarParts'
+import { CalendarWeekGrid } from './CalendarElements'
 import {
   formatScheduleMinute,
   getScheduleSelection,

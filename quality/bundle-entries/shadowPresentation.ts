@@ -7,6 +7,5 @@ export {
   ShadowingControlDock,
   ShadowingControlCluster,
   ShadowingRepetitions,
+  ShadowingWord,
 } from '../../src'
-
-export { ShadowingWord } from '../../src'

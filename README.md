@@ -2,7 +2,7 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Este checkout prepara a **2.3.0**, com organização por responsabilidade e composições de métricas, estatísticas e resultados. A instalação abaixo continua apontando para a versão oficial 2.2.0 até a publicação do candidato. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+Este checkout prepara a **3.0.0**, com organização por responsabilidade, composições coesas e retirada deliberada de 40 APIs substituídas. Consulte a [migração para 3.0](docs/components/migration-v3.md). A instalação abaixo continua apontando para a versão oficial 2.2.0 até a publicação do candidato. Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
@@ -101,7 +101,6 @@ src/
     PracticeResultPanel/PracticeResultPanel.tsx
   foundations/    tokens e receitas
   internal/       hooks, contextos e infraestrutura privada
-  compatibility/  adaptadores transitórios por owner
   index.ts        API pública
 stories/          exemplos e estados do catálogo
 test/             comportamento, contratos de tipos e setup
@@ -111,8 +110,7 @@ Tipos curtos e estilos simples ficam no arquivo do componente. Estilos ou tipos
 maiores ficam em arquivos próprios quando ajudam a leitura, como Button.styles.ts.
 Exemplos ficam em stories e testes em test, separados da implementação.
 Componentes simples podem usar um único arquivo. Não há classificação atomic nem
-uma pasta para cada detalhe. Adaptadores transitórios ficam em src/compatibility,
-agrupados pelo owner; novos usos preferem os componentes completos.
+uma pasta para cada detalhe. A major retira adaptadores já substituídos; os componentes completos possuem sua anatomia privada.
 
 ```tsx
 <MetricSummary value={correctAnswers} label="Acertos" />
@@ -122,8 +120,7 @@ agrupados pelo owner; novos usos preferem os componentes completos.
 </PracticeResultPanel>
 ```
 
-Os exports e a composição com children das versões anteriores continuam
-disponíveis. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
+As remoções incompatíveis estão documentadas no guia da major 3; a versão 2 continua publicada para consumidores ainda não migrados. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
 registra o escopo e os limites desta reorganização.
 
 O manifest em quality/component-manifest.ts liga export, owner, props, guia, story, teste e exemplos de consumidores. O comando é uma ferramenta do repositório:

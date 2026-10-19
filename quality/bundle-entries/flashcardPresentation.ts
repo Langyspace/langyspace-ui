@@ -15,10 +15,5 @@ export {
   FlashcardFlip,
   FlashcardSwiper,
   FlashcardFeedback,
-} from '../../src'
-
-export {
-  FlashcardProgressTrack,
-  FlashcardProgressSegment,
-  FlashcardCounter,
+  FlashcardProgress,
 } from '../../src'

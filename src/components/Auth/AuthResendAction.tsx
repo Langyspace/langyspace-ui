@@ -1,27 +1,26 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-import { authRecipe } from '../../foundations/authRecipe'
-import { styled } from 'styled-components'
-
-const Container = styled.div.withConfig({
-  componentId: 'lsui-sc-auth-resend-action',
-})`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: ${authRecipe.spacing[2]};
-  margin-top: ${authRecipe.spacing[5]};
-  color: ${authRecipe.colors.text.muted};
-  font-size: ${authRecipe.typography.fontSize.sm};
-`
+import type { ComponentPropsWithRef, ReactNode, MouseEventHandler } from 'react'
+import { Container, ResendButton } from './AuthResendAction.styles'
 
 export interface AuthResendActionProps extends ComponentPropsWithRef<'div'> {
   children: ReactNode
+  onResend: MouseEventHandler<HTMLButtonElement>
+  resendLabel: ReactNode
+  disabled?: boolean
 }
 
 export function AuthResendAction({
   children,
+  onResend,
+  resendLabel,
+  disabled = false,
   ...props
 }: AuthResendActionProps) {
-  return <Container {...props}>{children}</Container>
+  return (
+    <Container {...props}>
+      {children}
+      <ResendButton type="button" disabled={disabled} onClick={onResend}>
+        {resendLabel}
+      </ResendButton>
+    </Container>
+  )
 }

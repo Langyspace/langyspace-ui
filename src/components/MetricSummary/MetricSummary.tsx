@@ -1,32 +1,19 @@
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 import * as Styled from './MetricSummary.styles'
 
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface MetricSummaryProps extends ComponentPropsWithRef<'div'> {
-  /** Free composition retained for existing consumers. Content props take precedence. */
-  children?: ReactNode
-  value?: ReactNode
-  label?: ReactNode
+export interface MetricSummaryProps extends Omit<
+  ComponentPropsWithRef<'div'>,
+  'children'
+> {
+  value: ReactNode
+  label: ReactNode
 }
 
-export function MetricSummary({
-  value,
-  label,
-  children,
-  ...props
-}: MetricSummaryProps) {
-  const hasContent = value !== undefined || label !== undefined
-
+export function MetricSummary({ value, label, ...props }: MetricSummaryProps) {
   return (
     <Styled.Root {...props}>
-      {hasContent ? (
-        <>
-          <Styled.Value data-ui-metric-value>{value}</Styled.Value>
-          <Styled.Label data-ui-metric-label>{label}</Styled.Label>
-        </>
-      ) : (
-        children
-      )}
+      <Styled.Value data-ui-metric-value>{value}</Styled.Value>
+      <Styled.Label data-ui-metric-label>{label}</Styled.Label>
     </Styled.Root>
   )
 }

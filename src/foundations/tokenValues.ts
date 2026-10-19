@@ -40,7 +40,6 @@ export const colorNeutral0 = '#ffffff' as const
 export const colorNeutral50 = '#fafaf9' as const
 export const colorNeutral100 = '#f1f1ef' as const
 export const colorNeutral300 = '#d9d9d6' as const
-export const colorNeutral400 = '#d9d9d6' as const
 export const colorNeutral500 = '#9a9a9a' as const
 export const colorNeutral600 = '#6b6b6b' as const
 export const colorNeutral900 = '#1a1a1a' as const

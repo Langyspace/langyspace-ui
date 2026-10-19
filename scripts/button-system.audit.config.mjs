@@ -66,7 +66,7 @@ export default defineAuditConfig({
 
     {
       owner: 'Auth presentation',
-      path: 'src/components/Auth/AuthSuccessIcon.tsx',
+      path: 'src/components/Auth/AuthSuccessState.tsx',
       reason:
         'Existing finite auth success entrance, with explicit reduced motion',
       expiresAt: '2027-04-14',
@@ -121,13 +121,6 @@ export default defineAuditConfig({
   ],
   canonicalComponents: ['ActionLink', 'Button', 'IconButton'],
   auditPrivateStyles: true,
-  componentOwners: {
-    'src/compatibility/MetricSummary.tsx':
-      'src/components/MetricSummary/MetricSummary.tsx',
-    'src/compatibility/StatCard.tsx': 'src/components/StatCard/StatCard.tsx',
-    'src/compatibility/PracticeResultPanel.tsx':
-      'src/components/PracticeResultPanel/PracticeResultPanel.tsx',
-  },
   requireExceptionExpiry: true,
   layerDependencies: {
     components: ['components', 'foundations', 'internal'],

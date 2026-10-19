@@ -1,5 +1,17 @@
 # Progresso
 
+Handoff ativo: [completion-v3.md](completion-v3.md). A execução atual abrange a UI 3 e os cinco produtos; os registros anteriores abaixo são históricos.
+
+## 2026-10-19 — implementação integral preparada; evidências em andamento
+
+Retirados 40 nomes redundantes e o alias duplicado neutral[400] numa major 3 deliberada; 138 componentes, 139 valores, 207 tipos e 261 declarações. Sem camada de compatibilidade na fonte de produção. Composições Auth, progresso Flashcard, métricas, estatísticas, resultados e capas já adotadas nas features dos produtos.
+
+Os cinco consumidores passaram em typecheck e arquitetura. UI: 67 testes focados únicos resolvidos, incluindo 13 de ScheduleCalendar; o progresso teve rechecagem de três testes ao receber progressbar acessível. Teacher: 4 testes; Student: 3; Admin: 4. Pacote final passou SSR e build de consumidor. Os budgets anteriores passaram; uma entrada dedicada de ScheduleCalendar ficou em 28.773 bytes brutos/7.500 gzip, abaixo dos tetos novos de 40.000/8.000, após verificar igualdade de 91 referências de tokens. Nenhum limite anterior foi ampliado.
+
+Candidato não publicado `langyspace-ui-3.0.0.tgz`, SHA-256: `8534451095b313dccd3d33066f7a5fbeec7ab300e67d115a1f5de531fcbd5111`. As 261 declarações permaneceram idênticas na última otimização; os produtos validam o mesmo artefato em dependências isoladas. Teacher/Student ainda simplificaram 99 fragmentos JSX desnecessários sem trocar o conteúdo. CI/release/deploy não foram acionados nesta execução.
+
+Próxima tarefa única: concluir capturas comparáveis da UI e dos cinco produtos contra baselines fixas. UI #33 segue em draft; novas evidências e aceite humano da revisão final são necessários antes de integrar. Dependências oficiais de produtos serão adotadas depois da publicação válida da UI, sem lockfile fictício.
+
 ## Entrega atual: limpeza de leitura — 2026-10-18
 
 O pedido atual autoriza o [plano de leitura](readability-plan.md). A entrega começa
@@ -122,3 +134,36 @@ Todos os oito jobs concluídos com sucesso. O README aponta agora para a versão
 correspondente do contrato; essa atualização documental não altera renderização.
 A próxima tarefa é conferir o asset oficial 2.2.0 após a execução de release e
 liberar a adoção no Admin, preservando o gate de revisão desse PR de produto.
+
+## Execução contínua da UI 3 — 2026-10-19
+
+Esta é a entrega ativa. O escopo inclui todas as famílias e os cinco consumidores;
+os lotes anteriores acima são históricos. Foram retirados 40 nomes públicos e
+seus tipos; restam 138 componentes com responsabilidades documentadas em
+[family-review-v3.md](family-review-v3.md). Não há pasta compatibility na fonte,
+nem stories/testes dentro de Button ou das demais implementações.
+
+Fonte preparada na UI, adoções completas em features de Teacher/Student/Admin,
+e compatibilidade de Site/Cupom conferida contra o mesmo candidato 3.0.0 não
+publicado. Os manifests dos novos owners apontam consumidores reais. Nenhum
+produto depende de URL inexistente ou file: versionado.
+
+Validação local focada: 68 testes únicos da UI, incluindo o caso de margem após
+AuthLegalText, API 139 valores/207 tipos/261 declarações, arquitetura e pacote
+SSR/build consumidor. Manifesto conferido novamente após registrar consumidores.
+ScheduleCalendar mede 28.773 bytes raw / 7.500 gzip, abaixo do teto dedicado
+40.000/8.000; nenhum budget anterior foi ampliado. Os 91 valores de tokens usados
+na troca de imports do calendário são equivalentes. Suítes amplas pertencem à CI.
+
+Evidências atuais: UI 114 pares; Teacher 63 de rotas, 60 de previews e 33 de
+autenticação controlada; Student 93 de rotas e 60 de autenticação/pagamento;
+Site 48; Cupom 15; Admin 132, incluindo o complemento de métricas e cobranças. Todas usam dados sintéticos, mesma largura
+390/768/1440 e rede externa bloqueada. Cadastro revelou um desvio real de margem:
+o seletor de AuthLegalText passou a cobrir AuthActions; as recapturas preservam a
+geometria anterior. Extensões locais de espaçamento também foram adaptadas sem
+acrescentar modos cosméticos.
+
+PR #33 permanece draft. Próxima tarefa: concluir evidências e revisão da fonte,
+preparar PRs dependentes completos, obter aceite humano da revisão atual e só
+então publicar a major e fixar o artefato oficial nos cinco consumidores. Nenhum
+merge, release ou deploy novo é provado pelas validações locais.

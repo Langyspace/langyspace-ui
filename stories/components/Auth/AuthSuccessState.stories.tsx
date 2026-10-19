@@ -5,7 +5,14 @@ const meta = {
   title: 'Auth/AuthSuccessState',
   component: AuthSuccessState,
   tags: ['visual-review'],
-  args: { children: 'Continuar' },
+  args: {
+    children: (
+      <>
+        <h2>Bem-vinda</h2>
+        <p>Te levando pro seu portal...</p>
+      </>
+    ),
+  },
 } satisfies Meta<typeof AuthSuccessState>
 
 export default meta

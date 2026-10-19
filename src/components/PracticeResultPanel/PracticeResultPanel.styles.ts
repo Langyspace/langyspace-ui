@@ -1,6 +1,14 @@
 import * as token from '../../foundations/tokenValues'
-import { styled, keyframes } from 'styled-components'
+import { styled, keyframes, css } from 'styled-components'
 import { quizRecipe } from '../../foundations/quizRecipe'
+
+const descriptionStyle = css`
+  max-width: 22rem;
+  margin: 0;
+  color: ${token.colorContentMuted};
+  font-size: ${token.typographyFontSizeSm};
+  line-height: ${token.typographyLineHeightNormal};
+`
 
 export const Panel = styled.div.withConfig({
   componentId: 'lsui-sc-practice-result-panel',
@@ -12,6 +20,10 @@ export const Panel = styled.div.withConfig({
   justify-content: center;
   gap: ${token.spacing4};
   text-align: center;
+
+  > p {
+    ${descriptionStyle}
+  }
 `
 
 const rise = keyframes`
@@ -49,11 +61,7 @@ export const Title = styled.h2.withConfig({
 export const Description = styled.p.withConfig({
   componentId: 'lsui-sc-practice-result-description',
 })`
-  max-width: 22rem;
-  margin: 0;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  ${descriptionStyle}
 `
 
 export const Actions = styled.div.withConfig({

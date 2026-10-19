@@ -1,5 +1,6 @@
 import * as Styled from './StatePanel.styles'
 import type { StatePanelProps } from './StatePanel.types'
+import { Spinner } from '../Spinner/Spinner'
 
 const accessibility = {
   empty: {},
@@ -19,6 +20,8 @@ export function StatePanel({
   title,
   ...props
 }: StatePanelProps) {
+  const stateIcon =
+    state === 'loading' && icon === undefined ? <Spinner size="lg" /> : icon
   return (
     <Styled.Container
       {...props}
@@ -28,8 +31,11 @@ export function StatePanel({
       $surface={surface}
       data-state={state}
       data-ui-state-panel="true"
+      data-ui-loading-state={state === 'loading' ? 'true' : undefined}
     >
-      {icon ? <Styled.Icon aria-hidden="true">{icon}</Styled.Icon> : null}
+      {stateIcon ? (
+        <Styled.Icon aria-hidden="true">{stateIcon}</Styled.Icon>
+      ) : null}
       <Styled.Content>
         <Styled.Title>{title}</Styled.Title>
         {description ? (

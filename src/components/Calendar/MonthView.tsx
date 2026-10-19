@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { CalendarDay } from './CalendarParts'
-import { CalendarDayNumber } from './CalendarParts'
-import { CalendarMonthGrid } from './CalendarParts'
+import { CalendarDay } from './CalendarElements'
+import { CalendarDayNumber } from './CalendarElements'
+import { CalendarMonthGrid } from './CalendarElements'
 import * as Styled from './ScheduleCalendar.styles'
 import type { ScheduleCalendarBodyProps } from './ScheduleCalendar.types'
 

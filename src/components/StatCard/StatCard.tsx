@@ -1,11 +1,13 @@
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 import * as Styled from './StatCard.styles'
 
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface StatCardProps extends ComponentPropsWithRef<'div'> {
+export interface StatCardProps extends Omit<
+  ComponentPropsWithRef<'div'>,
+  'children'
+> {
   tone?: 'neutral' | 'brand'
-  value?: ReactNode
-  label?: ReactNode
+  value: ReactNode
+  label: ReactNode
   action?: ReactNode
 }
 
@@ -14,25 +16,15 @@ export function StatCard({
   value,
   label,
   action,
-  children,
   ...props
 }: StatCardProps) {
-  const showAction = action != null && action !== false
-  const hasContent = value !== undefined || label !== undefined || showAction
-
   return (
     <Styled.Root {...props} data-tone={tone}>
-      {hasContent ? (
-        <>
-          {showAction && (
-            <Styled.Action data-ui-stat-action>{action}</Styled.Action>
-          )}
-          <Styled.Value>{value}</Styled.Value>
-          <Styled.Label>{label}</Styled.Label>
-        </>
-      ) : (
-        children
+      {action != null && action !== false && (
+        <Styled.Action data-ui-stat-action>{action}</Styled.Action>
       )}
+      <Styled.Value data-ui-stat-value>{value}</Styled.Value>
+      <Styled.Label data-ui-stat-label>{label}</Styled.Label>
     </Styled.Root>
   )
 }

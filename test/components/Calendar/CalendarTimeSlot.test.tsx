@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { it, expect } from 'vitest'
-import { CalendarTimeSlot } from '../../../src/components/Calendar/CalendarParts'
+import { CalendarTimeSlot } from '../../../src/components/Calendar/CalendarElements'
 
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(

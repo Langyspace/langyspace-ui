@@ -20,10 +20,33 @@ const Link = styled.a.withConfig({
   }
 `
 
+const Highlight = styled.span.withConfig({
+  componentId: 'lsui-sc-auth-top-link-highlight',
+})`
+  color: ${authRecipe.colors.text.primary};
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+`
+
 export interface AuthTopLinkProps extends ComponentPropsWithRef<'a'> {
   children: ReactNode
+  highlight?: ReactNode
 }
 
-export function AuthTopLink({ children, ...props }: AuthTopLinkProps) {
-  return <Link {...props}>{children}</Link>
+export function AuthTopLink({
+  children,
+  highlight,
+  ...props
+}: AuthTopLinkProps) {
+  return (
+    <Link {...props}>
+      {children}
+      {highlight != null && (
+        <>
+          {' '}
+          <Highlight>{highlight}</Highlight>
+        </>
+      )}
+    </Link>
+  )
 }

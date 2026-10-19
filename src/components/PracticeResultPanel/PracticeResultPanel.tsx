@@ -48,8 +48,7 @@ type ResultMarkProps = Omit<
   'children' | 'aria-hidden'
 >
 
-// The legacy named mark and the composed panel share this decorative graphic.
-export function ResultMark(props: ResultMarkProps) {
+function ResultMark(props: ResultMarkProps) {
   return (
     <Styled.Mark {...props} aria-hidden="true">
       <svg

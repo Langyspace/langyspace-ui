@@ -1,10 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { it, expect, vi } from 'vitest'
 import { PracticeResultPanel } from '../../../src/components/PracticeResultPanel/PracticeResultPanel'
-import { PracticeResultMark } from '../../../src/compatibility/PracticeResultPanel'
-import { PracticeResultTitle } from '../../../src/compatibility/PracticeResultPanel'
-import { PracticeResultDescription } from '../../../src/compatibility/PracticeResultPanel'
-import { PracticeResultActions } from '../../../src/compatibility/PracticeResultPanel'
 
 it('omits empty regions supplied by conditional React content', () => {
   const result = render(
@@ -31,17 +27,6 @@ it('composes the same result while preserving the native title attribute', () =>
       Você acertou <strong>0</strong> de 2 questões.
     </>
   )
-  const legacy = render(
-    <PracticeResultPanel title="Resumo da sessão">
-      <PracticeResultMark />
-      <PracticeResultTitle>Resultado</PracticeResultTitle>
-      <PracticeResultDescription>{description}</PracticeResultDescription>
-      {metrics}
-      <PracticeResultActions>{actions}</PracticeResultActions>
-    </PracticeResultPanel>,
-  )
-  const original = legacy.container.innerHTML
-  legacy.unmount()
   const current = render(
     <PracticeResultPanel
       title="Resumo da sessão"
@@ -53,7 +38,10 @@ it('composes the same result while preserving the native title attribute', () =>
     </PracticeResultPanel>,
   )
 
-  expect(current.container.innerHTML).toBe(original)
+  expect(current.container.firstElementChild?.children).toHaveLength(5)
+  expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent(
+    'Resultado',
+  )
   expect(screen.getByTitle('Resumo da sessão')).toBe(
     current.container.firstElementChild,
   )
@@ -84,24 +72,26 @@ it('keeps the result readable in JSX and leaves metrics, status and actions to t
 
   render(
     <form onSubmit={submit}>
-      <PracticeResultPanel>
-        <PracticeResultMark />
-        <PracticeResultTitle>Resultado</PracticeResultTitle>
-        <PracticeResultDescription>
-          Você acertou <strong>0</strong> de 2 questões.
-        </PracticeResultDescription>
+      <PracticeResultPanel
+        heading="Resultado"
+        description={
+          <>
+            Você acertou <strong>0</strong> de 2 questões.
+          </>
+        }
+        actions={
+          <>
+            <button type="button" onClick={reset}>
+              Refazer
+            </button>
+            <button type="button" onClick={close}>
+              Voltar para lista
+            </button>
+          </>
+        }
+      >
         <div data-testid="metrics">0 · 2 · 0%</div>
-        <PracticeResultDescription role="status">
-          Atualizando progresso...
-        </PracticeResultDescription>
-        <PracticeResultActions>
-          <button type="button" onClick={reset}>
-            Refazer
-          </button>
-          <button type="button" onClick={close}>
-            Voltar para lista
-          </button>
-        </PracticeResultActions>
+        <p role="status">Atualizando progresso...</p>
       </PracticeResultPanel>
     </form>,
   )
@@ -110,6 +100,10 @@ it('keeps the result readable in JSX and leaves metrics, status and actions to t
     'Resultado',
   )
   expect(screen.getByTestId('metrics').textContent).toBe('0 · 2 · 0%')
+  expect(screen.getByRole('status')).toHaveStyle({
+    maxWidth: '22rem',
+    margin: '0',
+  })
   expect(screen.getByRole('status').textContent).toBe(
     'Atualizando progresso...',
   )

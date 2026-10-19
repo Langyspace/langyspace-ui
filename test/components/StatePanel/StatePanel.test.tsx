@@ -66,3 +66,19 @@ describe('StatePanel', () => {
     ).toBeInTheDocument()
   })
 })
+
+it('provides the canonical loading spinner and permits explicit suppression', () => {
+  const { container, rerender } = render(
+    <StatePanel state="loading" title="Carregando" />,
+  )
+  expect(container.querySelector('.lsui-sc-spinner')).toHaveAttribute(
+    'aria-hidden',
+    'true',
+  )
+  expect(screen.getByRole('status')).toHaveAttribute(
+    'data-ui-loading-state',
+    'true',
+  )
+  rerender(<StatePanel state="loading" title="Carregando" icon={null} />)
+  expect(container.querySelector('.lsui-sc-spinner')).toBeNull()
+})

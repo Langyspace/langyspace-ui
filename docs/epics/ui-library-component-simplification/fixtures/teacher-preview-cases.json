@@ -1,0 +1,87 @@
+[
+  {
+    "id": "preview-flashcards",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards"
+  },
+  {
+    "id": "preview-shadowing",
+    "path": "/alunos/student-ui-evidence/licoes?tab=shadowing"
+  },
+  {
+    "id": "preview-music",
+    "path": "/alunos/student-ui-evidence/licoes?tab=music"
+  },
+  {
+    "id": "preview-quiz",
+    "path": "/alunos/student-ui-evidence/licoes?tab=quiz"
+  },
+  {
+    "id": "preview-personalized",
+    "path": "/alunos/student-ui-evidence/licoes?tab=personalized"
+  },
+  {
+    "id": "preview-empty",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&previewState=empty"
+  },
+  {
+    "id": "preview-loading",
+    "path": "/alunos/student-ui-evidence/licoes?previewState=loading"
+  },
+  {
+    "id": "preview-error",
+    "path": "/alunos/student-ui-evidence/licoes?previewState=error"
+  },
+  {
+    "id": "preview-vocabulary",
+    "path": "/alunos/student-ui-evidence/vocabulario"
+  },
+  {
+    "id": "preview-vocabulary-empty",
+    "path": "/alunos/student-ui-evidence/vocabulario?previewState=empty"
+  },
+  {
+    "id": "preview-vocabulary-loading",
+    "path": "/alunos/student-ui-evidence/vocabulario?previewState=loading"
+  },
+  {
+    "id": "preview-vocabulary-error",
+    "path": "/alunos/student-ui-evidence/vocabulario?previewState=error"
+  },
+  {
+    "id": "preview-flashcard-front",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&activity=deck-ui"
+  },
+  {
+    "id": "preview-flashcard-back",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&activity=deck-ui",
+    "captureAction": "flip"
+  },
+  {
+    "id": "preview-flashcard-complete",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&activity=deck-ui",
+    "captureAction": "complete-flashcards"
+  },
+  {
+    "id": "preview-flashcard-loading",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&activity=deck-ui&detailState=loading"
+  },
+  {
+    "id": "preview-flashcard-error",
+    "path": "/alunos/student-ui-evidence/licoes?tab=flashcards&activity=deck-ui&detailState=error"
+  },
+  {
+    "id": "preview-quiz-result",
+    "path": "/alunos/student-ui-evidence/licoes?tab=quiz&activity=quiz-ui",
+    "captureAction": "complete-quiz"
+  },
+  {
+    "id": "preview-shadowing-result",
+    "path": "/alunos/student-ui-evidence/licoes?tab=shadowing&activity=shadow-ui",
+    "captureAction": "complete-shadowing"
+  },
+  {
+    "id": "preview-music-result",
+    "path": "/alunos/student-ui-evidence/licoes?tab=music&activity=music-ui",
+    "captureAction": "complete-music"
+  }
+]

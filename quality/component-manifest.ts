@@ -1,7 +1,6 @@
 type Coverage = { status: 'complete' }
 
 export interface ComponentContract {
-  compatibilityFor?: string
   browserSmoke: Coverage
   exportName: string
   interactive: boolean
@@ -376,111 +375,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardProgressSegment',
-    interactive: false,
-    ownerPath: 'src/components/Flashcard/FlashcardProgressSegment.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-progress-segment',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Flashcard/FlashcardProgressSegment.stories.tsx',
-      title: 'Flashcard/FlashcardProgressSegment',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Flashcard/FlashcardProgressSegment.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Flashcard/FlashcardProgressSegment.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardprogresssegment',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardCounter',
-    interactive: false,
-    ownerPath: 'src/components/Flashcard/FlashcardCounter.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-counter',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Flashcard/FlashcardCounter.stories.tsx',
-      title: 'Flashcard/FlashcardCounter',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Flashcard/FlashcardCounter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Flashcard/FlashcardCounter.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardcounter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'FlashcardProgressTrack',
-    interactive: false,
-    ownerPath: 'src/components/Flashcard/FlashcardProgressTrack.tsx',
-    runtimeMarker: 'lsui-sc-flashcard-progress-track',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Flashcard/FlashcardProgressTrack.stories.tsx',
-      title: 'Flashcard/FlashcardProgressTrack',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Flashcard/FlashcardProgressTrack.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Flashcard/FlashcardProgressTrack.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'flashcardprogresstrack',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/FlashcardsV2.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'QuizBlank',
@@ -551,76 +446,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeCoverLabel',
-    interactive: false,
-    ownerPath: 'src/components/Practice/PracticeCoverLabel.tsx',
-    runtimeMarker: 'lsui-sc-practice-cover-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Practice/PracticeCoverLabel.stories.tsx',
-      title: 'Practice/PracticeCoverLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Practice/PracticeCoverLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Practice/PracticeCoverLabel.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practicecoverlabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeCoverValue',
-    interactive: false,
-    ownerPath: 'src/components/Practice/PracticeCoverValue.tsx',
-    runtimeMarker: 'lsui-sc-practice-cover-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Practice/PracticeCoverValue.stories.tsx',
-      title: 'Practice/PracticeCoverValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Practice/PracticeCoverValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Practice/PracticeCoverValue.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practicecovervalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/SavedVocabularyPreviewCard/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'PracticeLevelBadge',
@@ -757,38 +583,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarTimeSlot',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: true,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-time-slot',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarTimeSlot.stories.tsx',
-      title: 'Compatibility/CalendarTimeSlot',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarTimeSlot.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendartimeslot',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/WeekView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'SessionProgress',
@@ -2096,198 +1891,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'TimelineEvent',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: true,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-timeline-event',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/TimelineEvent.stories.tsx',
-      title: 'Compatibility/TimelineEvent',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/TimelineEvent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'timelineevent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/WeekView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarEvent',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: true,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-event',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarEvent.stories.tsx',
-      title: 'Compatibility/CalendarEvent',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarEvent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarevent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/MonthView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarDayNumber',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: false,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-day-number',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarDayNumber.stories.tsx',
-      title: 'Compatibility/CalendarDayNumber',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarDayNumber.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendardaynumber',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/MonthView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarDay',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: false,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-day',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarDay.stories.tsx',
-      title: 'Compatibility/CalendarDay',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarDay.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarday',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/MonthView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarWeekGrid',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: false,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-week-grid',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarWeekGrid.stories.tsx',
-      title: 'Compatibility/CalendarWeekGrid',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarWeekGrid.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarweekgrid',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/WeekView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'CalendarMonthGrid',
-    compatibilityFor: 'ScheduleCalendar',
-    interactive: false,
-    ownerPath: 'src/components/Calendar/CalendarParts.tsx',
-    runtimeMarker: 'lsui-sc-calendar-month-grid',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Calendar/CalendarMonthGrid.stories.tsx',
-      title: 'Compatibility/CalendarMonthGrid',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Calendar/CalendarMonthGrid.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Calendar/CalendarParts.tsx',
-      documentation: {
-        path: 'docs/components/calendar.md',
-        anchor: 'calendarmonthgrid',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-ui',
-          path: 'src/components/Calendar/MonthView.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'CalendarScroller',
@@ -2599,78 +2203,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'MetricLabel',
-    compatibilityFor: 'MetricSummary',
-    interactive: false,
-    ownerPath: 'src/compatibility/MetricSummary.tsx',
-    runtimeMarker: 'lsui-sc-metric-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/MetricSummary/MetricLabel.stories.tsx',
-      title: 'Compatibility/MetricLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/MetricSummary/MetricLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/MetricSummary.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'metriclabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'MetricValue',
-    compatibilityFor: 'MetricSummary',
-    interactive: false,
-    ownerPath: 'src/compatibility/MetricSummary.tsx',
-    runtimeMarker: 'lsui-sc-metric-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/MetricSummary/MetricValue.stories.tsx',
-      title: 'Compatibility/MetricValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/MetricSummary/MetricValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/MetricSummary.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'metricvalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'MetricSummary',
@@ -2706,42 +2239,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'TextButton',
-    compatibilityFor: 'Button',
-    interactive: true,
-    ownerPath: 'src/compatibility/Button.tsx',
-    runtimeMarker: 'lsui-sc-text-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Button/TextButton.stories.tsx',
-      title: 'Compatibility/TextButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Button/TextButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/Button.tsx',
-      documentation: {
-        path: 'docs/components/controls.md',
-        anchor: 'textbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/StudentPayment/index.tsx',
-        },
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/PortalAction.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'DetailRow',
@@ -2804,102 +2302,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'StatAction',
-    compatibilityFor: 'StatCard',
-    interactive: false,
-    ownerPath: 'src/compatibility/StatCard.tsx',
-    runtimeMarker: 'lsui-sc-stat-action',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/StatCard/StatAction.stories.tsx',
-      title: 'Compatibility/StatAction',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/StatCard/StatAction.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/StatCard.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'stataction',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'StatLabel',
-    compatibilityFor: 'StatCard',
-    interactive: false,
-    ownerPath: 'src/compatibility/StatCard.tsx',
-    runtimeMarker: 'lsui-sc-stat-label',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/StatCard/StatLabel.stories.tsx',
-      title: 'Compatibility/StatLabel',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/StatCard/StatLabel.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/StatCard.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'statlabel',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'StatValue',
-    compatibilityFor: 'StatCard',
-    interactive: false,
-    ownerPath: 'src/compatibility/StatCard.tsx',
-    runtimeMarker: 'lsui-sc-stat-value',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/StatCard/StatValue.stories.tsx',
-      title: 'Compatibility/StatValue',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/StatCard/StatValue.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/StatCard.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'statvalue',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'StatCard',
@@ -3398,282 +2801,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFeature',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthFeature.tsx',
-    runtimeMarker: 'lsui-sc-auth-feature',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthFeature.stories.tsx',
-      title: 'Auth/AuthFeature',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthFeature.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthFeature.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfeature',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFooterLink',
-    interactive: true,
-    ownerPath: 'src/components/Auth/AuthFooterLink.tsx',
-    runtimeMarker: 'lsui-sc-auth-footer-link',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthFooterLink.stories.tsx',
-      title: 'Auth/AuthFooterLink',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthFooterLink.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthFooterLink.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfooterlink',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthMobileFooter',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthMobileFooter.tsx',
-    runtimeMarker: 'lsui-sc-auth-mobile-footer',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthMobileFooter.stories.tsx',
-      title: 'Auth/AuthMobileFooter',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthMobileFooter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthMobileFooter.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authmobilefooter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandFooter',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthBrandFooter.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-footer',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthBrandFooter.stories.tsx',
-      title: 'Auth/AuthBrandFooter',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthBrandFooter.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthBrandFooter.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandfooter',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthFeatureList',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthFeatureList.tsx',
-    runtimeMarker: 'lsui-sc-auth-feature-list',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthFeatureList.stories.tsx',
-      title: 'Auth/AuthFeatureList',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthFeatureList.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthFeatureList.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authfeaturelist',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandDescription',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthBrandDescription.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-description',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthBrandDescription.stories.tsx',
-      title: 'Auth/AuthBrandDescription',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthBrandDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthBrandDescription.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbranddescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandAccent',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthBrandAccent.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-accent',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthBrandAccent.stories.tsx',
-      title: 'Auth/AuthBrandAccent',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthBrandAccent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthBrandAccent.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandaccent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBrandTitle',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthBrandTitle.tsx',
-    runtimeMarker: 'lsui-sc-auth-brand-title',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthBrandTitle.stories.tsx',
-      title: 'Auth/AuthBrandTitle',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthBrandTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthBrandTitle.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbrandtitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/AuthShell/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'BrandLogo',
@@ -3721,150 +2849,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultActions',
-    compatibilityFor: 'PracticeResultPanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/PracticeResultPanel.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-actions',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/PracticeResultPanel/PracticeResultActions.stories.tsx',
-      title: 'Compatibility/PracticeResultActions',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/PracticeResultPanel/PracticeResultActions.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/PracticeResultPanel.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultactions',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultDescription',
-    compatibilityFor: 'PracticeResultPanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/PracticeResultPanel.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-description',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/PracticeResultPanel/PracticeResultDescription.stories.tsx',
-      title: 'Compatibility/PracticeResultDescription',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/PracticeResultPanel/PracticeResultDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/PracticeResultPanel.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultdescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultTitle',
-    compatibilityFor: 'PracticeResultPanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/PracticeResultPanel.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-title',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/PracticeResultPanel/PracticeResultTitle.stories.tsx',
-      title: 'Compatibility/PracticeResultTitle',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/PracticeResultPanel/PracticeResultTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/PracticeResultPanel.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresulttitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'PracticeResultMark',
-    compatibilityFor: 'PracticeResultPanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/PracticeResultPanel.tsx',
-    runtimeMarker: 'lsui-sc-practice-result-mark',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/PracticeResultPanel/PracticeResultMark.stories.tsx',
-      title: 'Compatibility/PracticeResultMark',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/PracticeResultPanel/PracticeResultMark.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/PracticeResultPanel.tsx',
-      documentation: {
-        path: 'docs/components/practice.md',
-        anchor: 'practiceresultmark',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/features/portal/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthSuccessState',
@@ -3935,42 +2920,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthSubmitButton',
-    compatibilityFor: 'Button',
-    interactive: true,
-    ownerPath: 'src/compatibility/Button.tsx',
-    runtimeMarker: 'lsui-sc-auth-submit-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Button/AuthSubmitButton.stories.tsx',
-      title: 'Compatibility/AuthSubmitButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/compatibility/AuthButtons.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/Button.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authsubmitbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/RegisterStudent/sections/ClaimStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthProgress',
@@ -4006,76 +2956,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthSuccessIcon',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthSuccessIcon.tsx',
-    runtimeMarker: 'lsui-sc-auth-success-icon',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthSuccessIcon.stories.tsx',
-      title: 'Auth/AuthSuccessIcon',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthSuccessIcon.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthSuccessIcon.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authsuccessicon',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/SuccessStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/RegisterStudent/sections/SuccessStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthResendButton',
-    interactive: true,
-    ownerPath: 'src/components/Auth/AuthResendButton.tsx',
-    runtimeMarker: 'lsui-sc-auth-resend-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthResendButton.stories.tsx',
-      title: 'Auth/AuthResendButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthResendButton.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthResendButton.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authresendbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthResendAction',
@@ -4111,42 +2992,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthBackButton',
-    compatibilityFor: 'Button',
-    interactive: true,
-    ownerPath: 'src/compatibility/Button.tsx',
-    runtimeMarker: 'lsui-sc-auth-back-button',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Button/AuthBackButton.stories.tsx',
-      title: 'Compatibility/AuthBackButton',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/compatibility/AuthButtons.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/compatibility/Button.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authbackbutton',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/RegisterTeacher/sections/AvailabilityStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/TokenStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthForm',
@@ -4182,41 +3028,7 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthTopLinkHighlight',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthTopLinkHighlight.tsx',
-    runtimeMarker: 'lsui-sc-auth-top-link-highlight',
-    ssrSmoke: complete,
-    story: {
-      status: 'complete',
-      path: 'stories/components/Auth/AuthTopLinkHighlight.stories.tsx',
-      title: 'Auth/AuthTopLinkHighlight',
-    },
-    test: {
-      status: 'complete',
-      path: 'test/components/Auth/AuthTopLinkHighlight.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthTopLinkHighlight.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authtoplinkhighlight',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
+
   {
     browserSmoke: complete,
     exportName: 'AuthEyebrow',
@@ -4881,111 +3693,6 @@ export const publicComponentContracts = [
 
   {
     browserSmoke: complete,
-    exportName: 'AuthAccent',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthAccent.tsx',
-    runtimeMarker: 'lsui-sc-auth-accent',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'stories/components/Auth/AuthAccent.stories.tsx',
-      title: 'Auth/AuthAccent',
-    },
-    test: {
-      ...complete,
-      path: 'test/components/Auth/AuthAccent.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthAccent.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authaccent',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthDescription',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthDescription.tsx',
-    runtimeMarker: 'lsui-sc-auth-description',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'stories/components/Auth/AuthDescription.stories.tsx',
-      title: 'Auth/AuthDescription',
-    },
-    test: {
-      ...complete,
-      path: 'test/components/Auth/AuthDescription.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthDescription.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authdescription',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
-    exportName: 'AuthTitle',
-    interactive: false,
-    ownerPath: 'src/components/Auth/AuthTitle.tsx',
-    runtimeMarker: 'lsui-sc-auth-title',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'stories/components/Auth/AuthTitle.stories.tsx',
-      title: 'Auth/AuthTitle',
-    },
-    test: {
-      ...complete,
-      path: 'test/components/Auth/AuthTitle.test.tsx',
-    },
-    reference: {
-      propsPath: 'src/components/Auth/AuthTitle.tsx',
-      documentation: {
-        path: 'docs/components/auth-brand-documents.md',
-        anchor: 'authtitle',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
-        },
-      ],
-    },
-    visual: true,
-  },
-  {
-    browserSmoke: complete,
     exportName: 'AvailabilityCalendar',
     interactive: true,
     ownerPath: 'src/components/Calendar/AvailabilityCalendar.tsx',
@@ -5580,42 +4287,7 @@ export const publicComponentContracts = [
       ],
     },
   },
-  {
-    browserSmoke: complete,
-    exportName: 'EmptyState',
-    compatibilityFor: 'StatePanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/StatePanel.tsx',
-    runtimeMarker: 'lsui-sc-state-panel',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'stories/components/StatePanel/EmptyState.stories.tsx',
-      title: 'Compatibility/EmptyState',
-    },
-    test: {
-      ...complete,
-      path: 'test/components/StatePanel/EmptyState.test.tsx',
-    },
-    visual: true,
-    reference: {
-      propsPath: 'src/compatibility/StatePanel.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'emptystate',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/components/layout/NotificationDrawer/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/components/layout/NotificationDrawer/index.tsx',
-        },
-      ],
-    },
-  },
+
   {
     browserSmoke: complete,
     exportName: 'FieldRoot',
@@ -5690,46 +4362,7 @@ export const publicComponentContracts = [
       ],
     },
   },
-  {
-    browserSmoke: complete,
-    exportName: 'LoadingState',
-    compatibilityFor: 'StatePanel',
-    interactive: false,
-    ownerPath: 'src/compatibility/StatePanel.tsx',
-    runtimeMarker: 'lsui-sc-state-panel',
-    ssrSmoke: complete,
-    story: {
-      ...complete,
-      path: 'stories/components/StatePanel/LoadingState.stories.tsx',
-      title: 'Compatibility/LoadingState',
-    },
-    test: {
-      ...complete,
-      path: 'test/components/StatePanel/LoadingState.test.tsx',
-    },
-    visual: true,
-    reference: {
-      propsPath: 'src/compatibility/StatePanel.tsx',
-      documentation: {
-        path: 'docs/components/data-feedback.md',
-        anchor: 'loadingstate',
-      },
-      consumers: [
-        {
-          repository: 'langyspace-teacher',
-          path: 'src/pages/StudentLearningPreview/components/LearningPreviewShell/index.tsx',
-        },
-        {
-          repository: 'langyspace-student',
-          path: 'src/pages/StudentMessages/index.tsx',
-        },
-        {
-          repository: 'langyspace-admin',
-          path: 'src/pages/AdminPortal/MessagingPage/index.tsx',
-        },
-      ],
-    },
-  },
+
   {
     browserSmoke: complete,
     exportName: 'MessageBubble',
@@ -6127,6 +4760,181 @@ export const publicComponentContracts = [
         {
           repository: 'langyspace-admin',
           path: 'src/pages/AdminPortal/AdminGlobalSearch/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthBrandContent',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthBrandContent.tsx',
+    runtimeMarker: 'lsui-sc-auth-brand-title',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthBrandContent.stories.tsx',
+      title: 'Auth/AuthBrandContent',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthBrandContent.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authbrandcontent',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthFooter',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthFooter.tsx',
+    runtimeMarker: 'lsui-sc-auth-brand-footer',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthFooter.stories.tsx',
+      title: 'Auth/AuthFooter',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthFooter.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authfooter',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/layout/AuthShell/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthHeader',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthHeader.tsx',
+    runtimeMarker: 'lsui-sc-auth-title',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthHeader.stories.tsx',
+      title: 'Auth/AuthHeader',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthHeader.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authheader',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'AuthActions',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Auth/AuthActions.tsx',
+    runtimeMarker: 'lsui-sc-auth-actions',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Auth/AuthActions.stories.tsx',
+      title: 'Auth/AuthActions',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Auth/AuthComposition.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Auth/AuthActions.tsx',
+      documentation: {
+        path: 'docs/components/auth-brand-documents.md',
+        anchor: 'authactions',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/Login/sections/PhoneStep/index.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'FlashcardProgress',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Flashcard/FlashcardProgress.tsx',
+    runtimeMarker: 'lsui-sc-flashcard-progress-track',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Flashcard/FlashcardProgress.stories.tsx',
+      title: 'Flashcard/FlashcardProgress',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Flashcard/FlashcardProgress.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Flashcard/FlashcardProgress.tsx',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'flashcardprogress',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
+        },
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/FlashcardsV2.tsx',
         },
       ],
     },

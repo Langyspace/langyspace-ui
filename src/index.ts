@@ -1,4 +1,14 @@
 export { ActionLink } from './components/ActionLink/ActionLink'
+export { AuthBrandContent } from './components/Auth/AuthBrandContent'
+export type { AuthBrandContentProps } from './components/Auth/AuthBrandContent'
+export { AuthFooter } from './components/Auth/AuthFooter'
+export type { AuthFooterProps } from './components/Auth/AuthFooter'
+export { AuthHeader } from './components/Auth/AuthHeader'
+export type { AuthHeaderProps } from './components/Auth/AuthHeader'
+export { AuthActions } from './components/Auth/AuthActions'
+export type { AuthActionsProps } from './components/Auth/AuthActions'
+export { FlashcardProgress } from './components/Flashcard/FlashcardProgress'
+export type { FlashcardProgressProps } from './components/Flashcard/FlashcardProgress'
 export type {
   ActionLinkProps,
   ActionLinkVariant,
@@ -9,15 +19,6 @@ export type {
   AuthNoticeProps,
   AuthNoticeTone,
 } from './components/Auth/AuthNotice'
-
-export { AuthAccent } from './components/Auth/AuthAccent'
-export type { AuthAccentProps } from './components/Auth/AuthAccent'
-
-export { AuthDescription } from './components/Auth/AuthDescription'
-export type { AuthDescriptionProps } from './components/Auth/AuthDescription'
-
-export { AuthTitle } from './components/Auth/AuthTitle'
-export type { AuthTitleProps } from './components/Auth/AuthTitle'
 
 export { Avatar } from './components/Avatar/Avatar'
 export type {
@@ -115,9 +116,6 @@ export type {
   DrawerSize,
 } from './components/Drawer/Drawer'
 
-export { EmptyState } from './compatibility/StatePanel'
-export type { EmptyStateProps } from './compatibility/StatePanel'
-
 export { FieldRoot } from './components/Form/FieldRoot'
 export type {
   FieldLabelVariant,
@@ -130,9 +128,6 @@ export type {
   FilterPillsProps,
   FilterPillsSize,
 } from './components/Filter/FilterPills.types'
-
-export { LoadingState } from './compatibility/StatePanel'
-export type { LoadingStateProps } from './compatibility/StatePanel'
 
 export { MessageBubble } from './components/Message/MessageBubble'
 export type {
@@ -273,29 +268,14 @@ export type { PracticeResultPanelProps } from './components/PracticeResultPanel/
 export { AuthEyebrow } from './components/Auth/AuthEyebrow'
 export type { AuthEyebrowProps } from './components/Auth/AuthEyebrow'
 
-export { AuthTopLinkHighlight } from './components/Auth/AuthTopLinkHighlight'
-export type { AuthTopLinkHighlightProps } from './components/Auth/AuthTopLinkHighlight'
-
 export { AuthForm } from './components/Auth/AuthForm'
 export type { AuthFormProps } from './components/Auth/AuthForm'
-
-export { AuthBackButton } from './compatibility/Button'
-export type { AuthBackButtonProps } from './compatibility/Button'
 
 export { AuthResendAction } from './components/Auth/AuthResendAction'
 export type { AuthResendActionProps } from './components/Auth/AuthResendAction'
 
-export { AuthResendButton } from './components/Auth/AuthResendButton'
-export type { AuthResendButtonProps } from './components/Auth/AuthResendButton'
-
-export { AuthSuccessIcon } from './components/Auth/AuthSuccessIcon'
-export type { AuthSuccessIconProps } from './components/Auth/AuthSuccessIcon'
-
 export { AuthProgress } from './components/Auth/AuthProgress'
 export type { AuthProgressProps } from './components/Auth/AuthProgress'
-
-export { AuthSubmitButton } from './compatibility/Button'
-export type { AuthSubmitButtonProps } from './compatibility/Button'
 
 export { AuthTopLink } from './components/Auth/AuthTopLink'
 export type { AuthTopLinkProps } from './components/Auth/AuthTopLink'
@@ -303,44 +283,8 @@ export type { AuthTopLinkProps } from './components/Auth/AuthTopLink'
 export { AuthSuccessState } from './components/Auth/AuthSuccessState'
 export type { AuthSuccessStateProps } from './components/Auth/AuthSuccessState'
 
-export { PracticeResultMark } from './compatibility/PracticeResultPanel'
-export type { PracticeResultMarkProps } from './compatibility/PracticeResultPanel'
-
-export { PracticeResultTitle } from './compatibility/PracticeResultPanel'
-export type { PracticeResultTitleProps } from './compatibility/PracticeResultPanel'
-
-export { PracticeResultDescription } from './compatibility/PracticeResultPanel'
-export type { PracticeResultDescriptionProps } from './compatibility/PracticeResultPanel'
-
-export { PracticeResultActions } from './compatibility/PracticeResultPanel'
-export type { PracticeResultActionsProps } from './compatibility/PracticeResultPanel'
-
 export { BrandLogo } from './components/Brand/BrandLogo'
 export type { BrandLogoProps } from './components/Brand/BrandLogo'
-
-export { AuthBrandTitle } from './components/Auth/AuthBrandTitle'
-export type { AuthBrandTitleProps } from './components/Auth/AuthBrandTitle'
-
-export { AuthBrandAccent } from './components/Auth/AuthBrandAccent'
-export type { AuthBrandAccentProps } from './components/Auth/AuthBrandAccent'
-
-export { AuthBrandDescription } from './components/Auth/AuthBrandDescription'
-export type { AuthBrandDescriptionProps } from './components/Auth/AuthBrandDescription'
-
-export { AuthFeatureList } from './components/Auth/AuthFeatureList'
-export type { AuthFeatureListProps } from './components/Auth/AuthFeatureList'
-
-export { AuthBrandFooter } from './components/Auth/AuthBrandFooter'
-export type { AuthBrandFooterProps } from './components/Auth/AuthBrandFooter'
-
-export { AuthMobileFooter } from './components/Auth/AuthMobileFooter'
-export type { AuthMobileFooterProps } from './components/Auth/AuthMobileFooter'
-
-export { AuthFooterLink } from './components/Auth/AuthFooterLink'
-export type { AuthFooterLinkProps } from './components/Auth/AuthFooterLink'
-
-export { AuthFeature } from './components/Auth/AuthFeature'
-export type { AuthFeatureProps } from './components/Auth/AuthFeature'
 
 export { DocumentHeader } from './components/Document/DocumentHeader'
 export type { DocumentHeaderProps } from './components/Document/DocumentHeader'
@@ -389,34 +333,14 @@ export type { InlineNoticeProps } from './components/Notice/InlineNotice'
 export { StatCard } from './components/StatCard/StatCard'
 export type { StatCardProps } from './components/StatCard/StatCard'
 
-export { StatValue } from './compatibility/StatCard'
-export type { StatValueProps } from './compatibility/StatCard'
-
-export { StatLabel } from './compatibility/StatCard'
-export type { StatLabelProps } from './compatibility/StatCard'
-
-export { StatAction } from './compatibility/StatCard'
-export type { StatActionProps } from './compatibility/StatCard'
-
 export { DefinitionItem } from './components/Details/DefinitionItem'
 export type { DefinitionItemProps } from './components/Details/DefinitionItem'
 
 export { DetailRow } from './components/Details/DetailRow'
 export type { DetailRowProps } from './components/Details/DetailRow'
 
-export { TextButton } from './compatibility/Button'
-export type { TextButtonProps } from './compatibility/Button'
-
-export type { TextButtonVariant } from './compatibility/Button'
-
 export { MetricSummary } from './components/MetricSummary/MetricSummary'
 export type { MetricSummaryProps } from './components/MetricSummary/MetricSummary'
-
-export { MetricValue } from './compatibility/MetricSummary'
-export type { MetricValueProps } from './compatibility/MetricSummary'
-
-export { MetricLabel } from './compatibility/MetricSummary'
-export type { MetricLabelProps } from './compatibility/MetricSummary'
 
 export { SidebarFrame } from './components/Navigation/SidebarFrame'
 export type { SidebarFrameProps } from './components/Navigation/SidebarFrame'
@@ -445,11 +369,6 @@ export type { BottomNavigationLinkProps } from './components/Navigation/BottomNa
 export { CalendarScroller } from './components/Calendar/CalendarScroller'
 export type { CalendarScrollerProps } from './components/Calendar/CalendarScroller'
 
-export { CalendarMonthGrid } from './components/Calendar/CalendarParts'
-export type { CalendarMonthGridProps } from './components/Calendar/CalendarParts'
-
-export { CalendarWeekGrid } from './components/Calendar/CalendarParts'
-
 export { ScheduleCalendar } from './components/Calendar/ScheduleCalendar'
 export type {
   ScheduleCalendarProps,
@@ -457,20 +376,6 @@ export type {
   ScheduleCalendarSlot,
   ScheduleCalendarEvent,
 } from './components/Calendar/ScheduleCalendar'
-
-export type { CalendarWeekGridProps } from './components/Calendar/CalendarParts'
-
-export { CalendarDay } from './components/Calendar/CalendarParts'
-export type { CalendarDayProps } from './components/Calendar/CalendarParts'
-
-export { CalendarDayNumber } from './components/Calendar/CalendarParts'
-export type { CalendarDayNumberProps } from './components/Calendar/CalendarParts'
-
-export { CalendarEvent } from './components/Calendar/CalendarParts'
-export type { CalendarEventProps } from './components/Calendar/CalendarParts'
-
-export { TimelineEvent } from './components/Calendar/CalendarParts'
-export type { TimelineEventProps } from './components/Calendar/CalendarParts'
 
 export { FlashcardFrame } from './components/Flashcard/FlashcardFrame'
 export type { FlashcardFrameProps } from './components/Flashcard/FlashcardFrame'
@@ -580,9 +485,6 @@ export type { PageDescriptionProps } from './components/SectionHeader/PageDescri
 export { SessionProgress } from './components/SessionProgress/SessionProgress'
 export type { SessionProgressProps } from './components/SessionProgress/SessionProgress'
 
-export { CalendarTimeSlot } from './components/Calendar/CalendarParts'
-export type { CalendarTimeSlotProps } from './components/Calendar/CalendarParts'
-
 export { ScheduleRow } from './components/Calendar/ScheduleRow'
 export type { ScheduleRowProps } from './components/Calendar/ScheduleRow'
 
@@ -595,26 +497,11 @@ export type { PracticeCardCoverProps } from './components/Practice/PracticeCardC
 export { PracticeLevelBadge } from './components/Practice/PracticeLevelBadge'
 export type { PracticeLevelBadgeProps } from './components/Practice/PracticeLevelBadge'
 
-export { PracticeCoverValue } from './components/Practice/PracticeCoverValue'
-export type { PracticeCoverValueProps } from './components/Practice/PracticeCoverValue'
-
-export { PracticeCoverLabel } from './components/Practice/PracticeCoverLabel'
-export type { PracticeCoverLabelProps } from './components/Practice/PracticeCoverLabel'
-
 export { QuizQuestion } from './components/Quiz/QuizQuestion'
 export type { QuizQuestionProps } from './components/Quiz/QuizQuestion'
 
 export { QuizBlank } from './components/Quiz/QuizBlank'
 export type { QuizBlankProps } from './components/Quiz/QuizBlank'
-
-export { FlashcardProgressTrack } from './components/Flashcard/FlashcardProgressTrack'
-export type { FlashcardProgressTrackProps } from './components/Flashcard/FlashcardProgressTrack'
-
-export { FlashcardCounter } from './components/Flashcard/FlashcardCounter'
-export type { FlashcardCounterProps } from './components/Flashcard/FlashcardCounter'
-
-export { FlashcardProgressSegment } from './components/Flashcard/FlashcardProgressSegment'
-export type { FlashcardProgressSegmentProps } from './components/Flashcard/FlashcardProgressSegment'
 
 export { QuizPromptHeader } from './components/Quiz/QuizPromptHeader'
 export type { QuizPromptHeaderProps } from './components/Quiz/QuizPromptHeader'
