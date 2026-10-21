@@ -84,6 +84,8 @@ export const Icon = styled.span.withConfig({
 export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-toast-text',
 })`
+  display: grid;
+  gap: ${token.spacing2};
   min-width: 0;
   overflow-wrap: anywhere;
 `
@@ -111,7 +113,6 @@ export const Action = styled.span.withConfig({
   componentId: 'lsui-sc-toast-action',
 })`
   display: block;
-  margin-top: ${token.spacing1};
   color: ${token.colorBrandDefault};
   font-size: ${token.typographyFontSizeXs};
   font-weight: ${token.typographyFontWeightSemibold};
