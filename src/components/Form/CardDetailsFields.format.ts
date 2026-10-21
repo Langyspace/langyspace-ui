@@ -29,6 +29,18 @@ export const formatExpiry = (value: string) =>
 export const formatPostalCode = (value: string) =>
   value.length > 5 ? `${value.slice(0, 5)}-${value.slice(5)}` : value
 
+export const formatPhone = (value: string) => {
+  const country = value.length > 11 && value.startsWith('55') ? '+55 ' : ''
+  if (value.length > 11 && !country) return value
+  const national = country ? value.slice(2) : value
+  if (!national) return country
+  const area = `(${national.slice(0, 2)}${national.length >= 2 ? ')' : ''}`
+  if (national.length <= 2) return country + area
+  const number = national.slice(2)
+  const split = national.length > 10 ? 5 : 4
+  return `${country}${area} ${number.slice(0, split)}${number.length > split ? `-${number.slice(split)}` : ''}`
+}
+
 export function maskedEdit(
   input: HTMLInputElement,
   previous: string,

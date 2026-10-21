@@ -6,10 +6,11 @@ import {
   formatCardNumber,
   formatDocumentNumber,
   formatExpiry,
+  formatPhone,
   formatPostalCode,
   maskedEdit,
 } from './CardDetailsFields.format'
-import type { HTMLInputAutoCompleteAttribute } from 'react'
+import type { HTMLInputAutoCompleteAttribute, ReactNode } from 'react'
 
 /** Numeric fields contain digits only; formatting never enters the consumer's payload. */
 export interface CardDetailsValue {
@@ -34,6 +35,8 @@ export interface CardDetailsFieldsProps {
   disabled?: boolean
   postalCodeLookup?: CardPostalCodeLookup
   onRetryPostalCode?: () => void
+  /** A consumer may supply its existing country-aware phone control. */
+  phoneField?: ReactNode
 }
 
 const fields: Array<{
@@ -115,9 +118,12 @@ const fields: Array<{
     label: 'Telefone do titular com DDD',
     autoComplete: 'tel-national',
     limit: 13,
+    maxLength: 19,
     span: 12,
     numeric: true,
-    pattern: '[0-9]{10,13}',
+    pattern: '(?:(?:\\+55 )?\\([0-9]{2}\\) [0-9]{4,5}-[0-9]{4}|[0-9]{10,13})',
+    placeholder: '(11) 99999-9999',
+    format: formatPhone,
   },
   {
     name: 'postalCode',
@@ -148,6 +154,7 @@ export function CardDetailsFields({
   disabled,
   postalCodeLookup,
   onRetryPostalCode,
+  phoneField,
 }: CardDetailsFieldsProps) {
   const addressId = useId()
   const postalError =
@@ -159,63 +166,69 @@ export function CardDetailsFields({
       className="ph-no-capture ph-no-autocapture"
       data-private="true"
     >
-      {fields.map((field) => (
-        <Styled.Field
-          key={field.name}
-          label={field.label}
-          $span={field.span}
-          $wide={field.wide}
-          error={field.name === 'postalCode' ? postalError : undefined}
-        >
-          <Styled.Input
-            aria-label={field.accessibleLabel}
-            type={
-              field.name === 'email'
-                ? 'email'
-                : field.name === 'phone'
-                  ? 'tel'
-                  : 'text'
-            }
-            autoComplete={field.autoComplete}
-            inputMode={field.numeric ? 'numeric' : undefined}
-            maxLength={field.maxLength ?? field.limit}
-            pattern={field.pattern}
-            placeholder={field.placeholder}
-            required
-            disabled={disabled}
-            name={field.name}
-            value={
-              field.format ? field.format(value[field.name]) : value[field.name]
-            }
-            aria-describedby={
-              field.name === 'postalCode' &&
-              postalCodeLookup &&
-              ['loading', 'found', 'error'].includes(postalCodeLookup.status)
-                ? addressId
-                : undefined
-            }
-            aria-busy={
-              (field.name === 'postalCode' &&
-                postalCodeLookup?.status === 'loading') ||
-              undefined
-            }
-            onChange={(event) => {
-              const next = field.format
-                ? maskedEdit(
-                    event.currentTarget,
-                    value[field.name],
-                    field.limit,
-                    field.format,
-                    (event.nativeEvent as InputEvent).inputType,
-                  )
-                : field.numeric
-                  ? digits(event.target.value, field.limit)
-                  : event.target.value
-              onChange({ ...value, [field.name]: next })
-            }}
-          />
-        </Styled.Field>
-      ))}
+      {fields.map((field) =>
+        field.name === 'phone' && phoneField !== undefined ? (
+          <Styled.PhoneSlot key={field.name}>{phoneField}</Styled.PhoneSlot>
+        ) : (
+          <Styled.Field
+            key={field.name}
+            label={field.label}
+            $span={field.span}
+            $wide={field.wide}
+            error={field.name === 'postalCode' ? postalError : undefined}
+          >
+            <Styled.Input
+              aria-label={field.accessibleLabel}
+              type={
+                field.name === 'email'
+                  ? 'email'
+                  : field.name === 'phone'
+                    ? 'tel'
+                    : 'text'
+              }
+              autoComplete={field.autoComplete}
+              inputMode={field.numeric ? 'numeric' : undefined}
+              maxLength={field.maxLength ?? field.limit}
+              pattern={field.pattern}
+              placeholder={field.placeholder}
+              required
+              disabled={disabled}
+              name={field.name}
+              value={
+                field.format
+                  ? field.format(value[field.name])
+                  : value[field.name]
+              }
+              aria-describedby={
+                field.name === 'postalCode' &&
+                postalCodeLookup &&
+                ['loading', 'found', 'error'].includes(postalCodeLookup.status)
+                  ? addressId
+                  : undefined
+              }
+              aria-busy={
+                (field.name === 'postalCode' &&
+                  postalCodeLookup?.status === 'loading') ||
+                undefined
+              }
+              onChange={(event) => {
+                const next = field.format
+                  ? maskedEdit(
+                      event.currentTarget,
+                      value[field.name],
+                      field.limit,
+                      field.format,
+                      (event.nativeEvent as InputEvent).inputType,
+                    )
+                  : field.numeric
+                    ? digits(event.target.value, field.limit)
+                    : event.target.value
+                onChange({ ...value, [field.name]: next })
+              }}
+            />
+          </Styled.Field>
+        ),
+      )}
       {postalCodeLookup?.status === 'loading' ? (
         <Styled.Address id={addressId} role="status">
           Consultando CEP…

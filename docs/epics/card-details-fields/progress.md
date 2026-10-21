@@ -23,7 +23,13 @@ Student adotou esse download e foi publicado via staging em `ff6db95`; jornada d
 staging passou sem envio financeiro. Backend e frontend foram conferidos em produção. O teste
 bancário continua no epic do produto, com cartão próprio a ser informado novamente pelo titular.
 
-Nenhuma próxima implementação pendente nesta biblioteca. A qualificação bancária e a liberação aos
-alunos pertencem ao produto e não são demonstradas pelos mocks ou pela publicação do pacote.
+U4 preparado: máscara de telefone e slot opcional phoneField para controle internacional já existente
+no produto. API aditiva compatível, minor 3.2.0; 12 testes focados, build/declarations/API, typecheck,
+lint e smoke SSR do tarball passaram. Exportações da raiz preservadas; snapshots refletem somente
+prop e helpers privados. Artefato preparado e consumidor conferido com o arquivo exato.
 
-Visual gate review: accepted by human
+Capturas antes/depois: 18 pares do componente/consumidor em 390/1440, incluindo telefone do cadastro,
+país, edição e fallback sem telefone. Dados/respostas simulados, sem qualificação bancária.
+Próxima tarefa: revisão visual atual antes de merge/release e adoção Student.
+
+Visual gate review: pending human

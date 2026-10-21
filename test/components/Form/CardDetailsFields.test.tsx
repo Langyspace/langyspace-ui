@@ -38,6 +38,70 @@ function Controlled(
 }
 
 describe('CardDetailsFields', () => {
+  it('allows a country-aware phone control without rendering a second phone field', () => {
+    render(
+      <Controlled
+        phoneField={
+          <label>
+            Telefone do cadastro
+            <input name="phone" type="tel" defaultValue="83 123 4567" />
+          </label>
+        }
+      />,
+    )
+    expect(screen.getByLabelText('Telefone do cadastro')).toHaveValue(
+      '83 123 4567',
+    )
+    expect(
+      screen.queryByLabelText('Telefone do titular com DDD'),
+    ).not.toBeInTheDocument()
+    expect(document.querySelectorAll('input[name="phone"]')).toHaveLength(1)
+  })
+  it.each([
+    ['11999999999', '(11) 99999-9999'],
+    ['1133334444', '(11) 3333-4444'],
+    ['5511999999999', '+55 (11) 99999-9999'],
+    ['551133334444', '+55 (11) 3333-4444'],
+    ['353871234567', '353871234567'],
+  ])(
+    'formats phone %s while preserving its numeric payload',
+    async (raw, formatted) => {
+      const observe = vi.fn()
+      render(<Controlled observe={observe} />)
+      const phone = screen.getByLabelText(
+        'Telefone do titular com DDD',
+      ) as HTMLInputElement
+      await userEvent.type(phone, raw)
+      expect(phone).toHaveValue(formatted)
+      expect(phone.validity.patternMismatch).toBe(false)
+      expect(observe.mock.calls.at(-1)?.[0].phone).toBe(raw)
+      await userEvent.clear(phone)
+      await userEvent.paste(formatted)
+      expect(phone).toHaveValue(formatted)
+      expect(observe.mock.calls.at(-1)?.[0].phone).toBe(raw)
+    },
+  )
+
+  it('deletes across phone punctuation without retaining the removed digit', async () => {
+    const observe = vi.fn()
+    render(
+      <Controlled
+        value={{ ...empty, phone: '11999999999' }}
+        observe={observe}
+      />,
+    )
+    const phone = screen.getByLabelText(
+      'Telefone do titular com DDD',
+    ) as HTMLInputElement
+    phone.focus()
+    fireEvent.input(phone, {
+      target: { value: '(11) 999999999', selectionStart: 10 },
+      inputType: 'deleteContentBackward',
+    })
+    await waitFor(() => expect(phone).toHaveValue('(11) 9999-9999'))
+    expect(observe.mock.calls.at(-1)?.[0].phone).toBe('1199999999')
+  })
+
   it('formats card, CPF, CNPJ, expiry and postal code while returning only digits', async () => {
     const observe = vi.fn()
     render(<Controlled observe={observe} />)
