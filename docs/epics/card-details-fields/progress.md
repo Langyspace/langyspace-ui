@@ -30,6 +30,13 @@ prop e helpers privados. Artefato preparado e consumidor conferido com o arquivo
 
 Capturas antes/depois: 18 pares do componente/consumidor em 390/1440, incluindo telefone do cadastro,
 país, edição e fallback sem telefone. Dados/respostas simulados, sem qualificação bancária.
-Próxima tarefa: revisão visual atual antes de merge/release e adoção Student.
+U4 concluído: produto aprovou PR35 `f3830fe` e a adoção Student. Merge `1a5fa60`, sem diferença na
+árvore da revisão. Todos os oito jobs do CI 39629905679 passaram na fonte aprovada; prova reutilizada.
+Release `v3.2.0` publicado com o arquivo preparado; download SHA-256 conferido:
+`440872d9284c527540289f0dbb25706264d53b0f88c3a2978b4156fe2e2ba5df`.
+Student adotou UI 3.2.0, integrou o fluxo em `d497a39` e publicou a fonte `f2ada1e` via staging em
+produção. Browser real confirmou telefone do cadastro/país editável e máscaras em 390/1440. Essa
+publicação não enviou cartão nem qualificou a volta bancária completa; continuidade no epic do
+produto. Nenhum novo pacote é necessário para registrar este encerramento documental.
 
-Visual gate review: pending human
+Visual gate review: accepted by human
