@@ -64,6 +64,12 @@ export type {
 
 export { TextInput } from './components/Form/TextInput'
 export type { TextInputProps, TextInputSize } from './components/Form/TextInput'
+export { CardDetailsFields } from './components/Form/CardDetailsFields'
+export type {
+  CardDetailsFieldsProps,
+  CardDetailsValue,
+  CardPostalCodeLookup,
+} from './components/Form/CardDetailsFields'
 
 export { tokens } from './foundations/tokens'
 export type { DesignTokens } from './foundations/tokens'

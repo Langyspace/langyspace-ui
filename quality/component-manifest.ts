@@ -22,6 +22,37 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'CardDetailsFields',
+    interactive: true,
+    ownerPath: 'src/components/Form/CardDetailsFields.tsx',
+    runtimeMarker: 'lsui-sc-card-details-fields',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Form/CardDetailsFields.stories.tsx',
+      title: 'Form/CardDetailsFields',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Form/CardDetailsFields.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Form/CardDetailsFields.tsx',
+      documentation: {
+        path: 'docs/components/controls.md',
+        anchor: 'carddetailsfields',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/pages/StudentPayment/RecurringPaymentMethodDialog.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ScheduleCalendar',
     interactive: true,
     ownerPath: 'src/components/Calendar/ScheduleCalendar.tsx',

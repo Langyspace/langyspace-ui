@@ -249,3 +249,12 @@ Alternância compacta em formato pill, usada em seleções como os dias disponí
 Contrato: children e atributos/ref de button.
 
 Cuidados: Fornecer aria-pressed e o callback controlado. Não unificar com ChoiceCard por uma flag de densidade: suas anatomias e espaços são diferentes.
+
+## CardDetailsFields
+
+Controlled card and holder fields with numeric values, masks and visible numeric security code.
+`value` contains digits only for number, expiry, securityCode, documentNumber, postalCode and phone.
+The consumer owns validation, submission and address lookup. `postalCodeLookup` presents loading,
+found address, not found, or unavailable states; `onRetryPostalCode` delegates retry. No network,
+analytics or storage. `disabled` blocks all fields and retry during submission. Expiry and security
+code share one row at every width; document and email stack on mobile.
