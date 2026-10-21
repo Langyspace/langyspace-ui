@@ -13,7 +13,17 @@ Fonte original UI 4966d1c, Student f9142b1. Fingerprint conjunto de runtime:
 As imagens da biblioteca cobrem o componente em seu consumidor real. Campos preenchidos contêm
 somente fixtures sintéticas; nenhum cartão real foi reutilizado ou submetido nesta revisão.
 
-Exatamente uma próxima tarefa: U3, revisão explícita dos PRs de UI/Student antes de release 3.1.0,
-adoção/publicação via staging e repetição bancária própria. Preparação local não prova publicação.
+U3 concluído para a biblioteca: revisão `22112c0` aprovada explicitamente pelo produto e integrada
+em `b9c7df5`. Todos os oito jobs do CI dessa fonte passaram (arquitetura, pacote, testes, quatro
+partições visuais e gate final): https://github.com/MarcosLaboriosi/langyspace-ui/actions/runs/39609086921.
+A execução de release duplicada foi cancelada; reutilizada a evidência completa do mesmo código.
+Tag/release `v3.1.0` publicado com o arquivo preparado e checksum. Download verificado:
+`d5720989e073944a9c657940025d819212247f4cf8468ba7c1cc47a355c9d740`.
+Student adotou esse download e foi publicado via staging em `ff6db95`; jornada de formulário do
+staging passou sem envio financeiro. Backend e frontend foram conferidos em produção. O teste
+bancário continua no epic do produto, com cartão próprio a ser informado novamente pelo titular.
 
-Visual gate review: pending human
+Nenhuma próxima implementação pendente nesta biblioteca. A qualificação bancária e a liberação aos
+alunos pertencem ao produto e não são demonstradas pelos mocks ou pela publicação do pacote.
+
+Visual gate review: accepted by human
