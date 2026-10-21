@@ -140,3 +140,11 @@ Use pnpm e o Node definido em package.json. Faça a menor verificação que dete
 Toda mudança pública atualiza tipos, exemplos, manifest e snapshot de API. Novos componentes precisam de responsabilidade e reutilização demonstradas, stories de estados pertinentes e cobertura de comportamento. Pacotes têm build, budgets e smoke ESM/SSR/browser reais; nenhum orçamento é relaxado para acomodar uma refatoração.
 
 Mudanças visuais têm PR com imagens Antes/Depois lado a lado e aprovação humana da revisão atual. Os planos e decisões desta evolução ficam em docs/epics/ui-library-react-craftsmanship.
+
+### Dados do cartão
+
+CardDetailsFields mantém valores numéricos sem pontuação em value/onChange e aplica máscara ao
+telefone brasileiro, com ou sem +55. O slot opcional phoneField substitui apenas esse controle para
+consumidores que já conhecem país/telefone do cadastro. O consumidor controla esse valor, valida o
+formulário e fornece o campo com nome, rótulo e required. A biblioteca não persiste dados nem chama
+o provedor de pagamentos.

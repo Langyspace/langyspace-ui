@@ -4,6 +4,11 @@ import { authRecipe } from '../../foundations/authRecipe'
 import { FieldRoot } from './FieldRoot'
 import { TextInput } from './TextInput'
 
+export const PhoneSlot = styled.div`
+  grid-column: span 12;
+  min-width: 0;
+`
+
 export const Grid = styled.div.withConfig({
   componentId: 'lsui-sc-card-details-fields',
 })`
