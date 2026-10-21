@@ -96,6 +96,7 @@ src/
     Calendar/MonthView.tsx
     Auth/AuthFrame.tsx
     Form/TextInput.tsx
+    Form/CardDetailsFields.tsx
     MetricSummary/MetricSummary.tsx
     StatCard/StatCard.tsx
     PracticeResultPanel/PracticeResultPanel.tsx

@@ -1,0 +1,413 @@
+{
+  "sourceBefore": "f9142b199fcab3e239e54ebb8ec6d5c0db28f709",
+  "sourceAfter": "working-tree",
+  "route": "/pagamento",
+  "simulatedFinancialResponses": true,
+  "syntheticCardOnly": true,
+  "bankValidationProven": false,
+  "bankRequestsBlocked": 0,
+  "postalResponses": "controlled fixtures",
+  "postalLookupCount": 14,
+  "geometryPassed": true,
+  "evidence": [
+    {
+      "before": true,
+      "state": "01-cadastro-vazio",
+      "width": 390,
+      "file": "antes-01-cadastro-vazio-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "03-mascaras-cpf",
+      "width": 390,
+      "file": "antes-03-mascaras-cpf-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "04-mascara-cnpj",
+      "width": 390,
+      "file": "antes-04-mascara-cnpj-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "05-cep-encontrado",
+      "width": 390,
+      "file": "antes-05-cep-encontrado-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "11-cep-consultando",
+      "width": 390,
+      "file": "antes-11-cep-consultando-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "12-cep-inexistente",
+      "width": 390,
+      "file": "antes-12-cep-inexistente-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "13-cep-indisponivel",
+      "width": 390,
+      "file": "antes-13-cep-indisponivel-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "14-endereco-longo",
+      "width": 390,
+      "file": "antes-14-endereco-longo-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "01-cadastro-vazio",
+      "width": 390,
+      "file": "depois-01-cadastro-vazio-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "03-mascaras-cpf",
+      "width": 390,
+      "file": "depois-03-mascaras-cpf-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "04-mascara-cnpj",
+      "width": 390,
+      "file": "depois-04-mascara-cnpj-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "05-cep-encontrado",
+      "width": 390,
+      "file": "depois-05-cep-encontrado-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "11-cep-consultando",
+      "width": 390,
+      "file": "depois-11-cep-consultando-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "12-cep-inexistente",
+      "width": 390,
+      "file": "depois-12-cep-inexistente-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "13-cep-indisponivel",
+      "width": 390,
+      "file": "depois-13-cep-indisponivel-390.jpg"
+    },
+    {
+      "before": false,
+      "state": "14-endereco-longo",
+      "width": 390,
+      "file": "depois-14-endereco-longo-390.jpg"
+    },
+    {
+      "before": true,
+      "state": "01-cadastro-vazio",
+      "width": 1440,
+      "file": "antes-01-cadastro-vazio-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "03-mascaras-cpf",
+      "width": 1440,
+      "file": "antes-03-mascaras-cpf-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "04-mascara-cnpj",
+      "width": 1440,
+      "file": "antes-04-mascara-cnpj-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "05-cep-encontrado",
+      "width": 1440,
+      "file": "antes-05-cep-encontrado-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "11-cep-consultando",
+      "width": 1440,
+      "file": "antes-11-cep-consultando-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "12-cep-inexistente",
+      "width": 1440,
+      "file": "antes-12-cep-inexistente-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "13-cep-indisponivel",
+      "width": 1440,
+      "file": "antes-13-cep-indisponivel-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "14-endereco-longo",
+      "width": 1440,
+      "file": "antes-14-endereco-longo-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "01-cadastro-vazio",
+      "width": 1440,
+      "file": "depois-01-cadastro-vazio-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "03-mascaras-cpf",
+      "width": 1440,
+      "file": "depois-03-mascaras-cpf-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "04-mascara-cnpj",
+      "width": 1440,
+      "file": "depois-04-mascara-cnpj-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "05-cep-encontrado",
+      "width": 1440,
+      "file": "depois-05-cep-encontrado-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "11-cep-consultando",
+      "width": 1440,
+      "file": "depois-11-cep-consultando-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "12-cep-inexistente",
+      "width": 1440,
+      "file": "depois-12-cep-inexistente-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "13-cep-indisponivel",
+      "width": 1440,
+      "file": "depois-13-cep-indisponivel-1440.jpg"
+    },
+    {
+      "before": false,
+      "state": "14-endereco-longo",
+      "width": 1440,
+      "file": "depois-14-endereco-longo-1440.jpg"
+    },
+    {
+      "before": true,
+      "state": "01-cadastro-vazio",
+      "width": 320,
+      "file": "antes-01-cadastro-vazio-320.jpg"
+    },
+    {
+      "before": true,
+      "state": "03-mascaras-cpf",
+      "width": 320,
+      "file": "antes-03-mascaras-cpf-320.jpg"
+    },
+    {
+      "before": true,
+      "state": "04-mascara-cnpj",
+      "width": 320,
+      "file": "antes-04-mascara-cnpj-320.jpg"
+    },
+    {
+      "before": true,
+      "state": "05-cep-encontrado",
+      "width": 320,
+      "file": "antes-05-cep-encontrado-320.jpg"
+    },
+    {
+      "before": false,
+      "state": "01-cadastro-vazio",
+      "width": 320,
+      "file": "depois-01-cadastro-vazio-320.jpg"
+    },
+    {
+      "before": false,
+      "state": "03-mascaras-cpf",
+      "width": 320,
+      "file": "depois-03-mascaras-cpf-320.jpg"
+    },
+    {
+      "before": false,
+      "state": "04-mascara-cnpj",
+      "width": 320,
+      "file": "depois-04-mascara-cnpj-320.jpg"
+    },
+    {
+      "before": false,
+      "state": "05-cep-encontrado",
+      "width": 320,
+      "file": "depois-05-cep-encontrado-320.jpg"
+    }
+  ],
+  "screenshots": 40,
+  "viewports": [
+    {
+      "width": 390,
+      "height": 900
+    },
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 320,
+      "height": 640
+    }
+  ],
+  "uiSourceBefore": "4966d1cb1360420414c31cf5d04b89cdb58dcf80",
+  "pairs": [
+    {
+      "state": "01-cadastro-vazio",
+      "label": "Cadastro vazio",
+      "width": 390,
+      "before": "antes-01-cadastro-vazio-390.jpg",
+      "after": "depois-01-cadastro-vazio-390.jpg"
+    },
+    {
+      "state": "03-mascaras-cpf",
+      "label": "Cartão e CPF",
+      "width": 390,
+      "before": "antes-03-mascaras-cpf-390.jpg",
+      "after": "depois-03-mascaras-cpf-390.jpg"
+    },
+    {
+      "state": "04-mascara-cnpj",
+      "label": "CNPJ",
+      "width": 390,
+      "before": "antes-04-mascara-cnpj-390.jpg",
+      "after": "depois-04-mascara-cnpj-390.jpg"
+    },
+    {
+      "state": "05-cep-encontrado",
+      "label": "CEP encontrado",
+      "width": 390,
+      "before": "antes-05-cep-encontrado-390.jpg",
+      "after": "depois-05-cep-encontrado-390.jpg"
+    },
+    {
+      "state": "11-cep-consultando",
+      "label": "Consultando CEP",
+      "width": 390,
+      "before": "antes-11-cep-consultando-390.jpg",
+      "after": "depois-11-cep-consultando-390.jpg"
+    },
+    {
+      "state": "12-cep-inexistente",
+      "label": "CEP inexistente",
+      "width": 390,
+      "before": "antes-12-cep-inexistente-390.jpg",
+      "after": "depois-12-cep-inexistente-390.jpg"
+    },
+    {
+      "state": "13-cep-indisponivel",
+      "label": "Consulta indisponível",
+      "width": 390,
+      "before": "antes-13-cep-indisponivel-390.jpg",
+      "after": "depois-13-cep-indisponivel-390.jpg"
+    },
+    {
+      "state": "14-endereco-longo",
+      "label": "Endereço longo",
+      "width": 390,
+      "before": "antes-14-endereco-longo-390.jpg",
+      "after": "depois-14-endereco-longo-390.jpg"
+    },
+    {
+      "state": "01-cadastro-vazio",
+      "label": "Cadastro vazio",
+      "width": 1440,
+      "before": "antes-01-cadastro-vazio-1440.jpg",
+      "after": "depois-01-cadastro-vazio-1440.jpg"
+    },
+    {
+      "state": "03-mascaras-cpf",
+      "label": "Cartão e CPF",
+      "width": 1440,
+      "before": "antes-03-mascaras-cpf-1440.jpg",
+      "after": "depois-03-mascaras-cpf-1440.jpg"
+    },
+    {
+      "state": "04-mascara-cnpj",
+      "label": "CNPJ",
+      "width": 1440,
+      "before": "antes-04-mascara-cnpj-1440.jpg",
+      "after": "depois-04-mascara-cnpj-1440.jpg"
+    },
+    {
+      "state": "05-cep-encontrado",
+      "label": "CEP encontrado",
+      "width": 1440,
+      "before": "antes-05-cep-encontrado-1440.jpg",
+      "after": "depois-05-cep-encontrado-1440.jpg"
+    },
+    {
+      "state": "11-cep-consultando",
+      "label": "Consultando CEP",
+      "width": 1440,
+      "before": "antes-11-cep-consultando-1440.jpg",
+      "after": "depois-11-cep-consultando-1440.jpg"
+    },
+    {
+      "state": "12-cep-inexistente",
+      "label": "CEP inexistente",
+      "width": 1440,
+      "before": "antes-12-cep-inexistente-1440.jpg",
+      "after": "depois-12-cep-inexistente-1440.jpg"
+    },
+    {
+      "state": "13-cep-indisponivel",
+      "label": "Consulta indisponível",
+      "width": 1440,
+      "before": "antes-13-cep-indisponivel-1440.jpg",
+      "after": "depois-13-cep-indisponivel-1440.jpg"
+    },
+    {
+      "state": "14-endereco-longo",
+      "label": "Endereço longo",
+      "width": 1440,
+      "before": "antes-14-endereco-longo-1440.jpg",
+      "after": "depois-14-endereco-longo-1440.jpg"
+    },
+    {
+      "state": "01-cadastro-vazio",
+      "label": "Cadastro vazio",
+      "width": 320,
+      "before": "antes-01-cadastro-vazio-320.jpg",
+      "after": "depois-01-cadastro-vazio-320.jpg"
+    },
+    {
+      "state": "03-mascaras-cpf",
+      "label": "Cartão e CPF",
+      "width": 320,
+      "before": "antes-03-mascaras-cpf-320.jpg",
+      "after": "depois-03-mascaras-cpf-320.jpg"
+    },
+    {
+      "state": "04-mascara-cnpj",
+      "label": "CNPJ",
+      "width": 320,
+      "before": "antes-04-mascara-cnpj-320.jpg",
+      "after": "depois-04-mascara-cnpj-320.jpg"
+    },
+    {
+      "state": "05-cep-encontrado",
+      "label": "CEP encontrado",
+      "width": 320,
+      "before": "antes-05-cep-encontrado-320.jpg",
+      "after": "depois-05-cep-encontrado-320.jpg"
+    }
+  ],
+  "runtimeFingerprint": "532b2cf4f2aff44bba6f532b97362714d2a51f644a37d6b229b0368ac89aeefe"
+}
