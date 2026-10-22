@@ -17,3 +17,11 @@ Ao remover a aparência nativa, o WebKit deixou de centralizar o conteúdo inter
 A story NativeDate é nova; o Antes usa o TextInput anterior na mesma composição sintética dos estados/tamanhos. Nenhum outro produto foi atualizado. A revisão em iPhone físico continua humana.
 
 As capturas sanitizadas da adoção da landing também estão em .github/evidence/landing-form-recovery, porque o repositório do produto é privado e suas URLs raw não exibem imagens no PR. Este complemento altera somente evidências, sem modificar componente, candidato ou validações de runtime.
+
+## Ajuste do contrato de teste — 2026-10-22
+
+Release v3.2.2 bloqueada pelo teste de CompoundControl em JSDOM: a asserção de min-height literal não resolve a variável CSS. Os 365 casos Storybook passaram e os quatro grupos visuais passaram; o teste de tamanho deve continuar estrito no navegador real. A asserção de altura do filho será movida para a story Sizes, exigindo 40/44/56px em sm/md/lg. O teste JSDOM mantém disabled/invalid e tamanho externo. Nenhum código de componente, estilo ou tipo será alterado; não há exceção de layout ou redução do tamanho esperado.
+
+A correção de testes e a versão 3.2.3 têm impacto none: não alteram renderização. O tag 3.2.2 falho será preservado. Runtime e declarations do novo pacote devem ser idênticos ao candidato visual aprovado. Aprovação humana permanece sobre UI 9dc51f9 e Site 3def539, com a integração não visual c510 preservada.
+
+Validação do ajuste não visual: 5 testes unitários de CompoundControl passaram; 3 stories passaram no Chromium, incluindo min-height computado e altura real de 40/44/56px. Fontes src/, declarations e contrato de API não foram modificados. A instalação própria do worktree resolveu uma limitação local do symlink de node_modules no runner Storybook; nenhum ajuste de produção foi necessário.

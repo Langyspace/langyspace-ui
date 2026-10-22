@@ -100,7 +100,7 @@ describe('CompoundControl', () => {
     })
     expect(name).toBeDisabled()
     expect(name).toHaveAttribute('aria-invalid', 'true')
-    expect(name).toHaveStyle({ minHeight: '3.5rem' })
+    // Native CSS-variable sizing is asserted by the real-browser Sizes story.
     expect(screen.getByRole('combobox', { name: 'Nível' })).toBeDisabled()
     expect(screen.getByRole('textbox', { name: 'Notas' })).toBeDisabled()
   })

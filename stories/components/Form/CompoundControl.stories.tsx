@@ -40,6 +40,19 @@ export const Sizes: Story = {
       ))}
     </StoryStack>
   ),
+  play: async ({ canvas }) => {
+    for (const [size, height] of [
+      ['sm', '40px'],
+      ['md', '44px'],
+      ['lg', '56px'],
+    ] as const) {
+      const control = canvas.getByRole('textbox', { name: `Valor ${size}` })
+      await expect(getComputedStyle(control).minHeight).toBe(height)
+      await expect(control.getBoundingClientRect().height).toBe(
+        Number.parseFloat(height),
+      )
+    }
+  },
 }
 
 export const States: Story = {
