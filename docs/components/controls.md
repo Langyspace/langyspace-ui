@@ -258,3 +258,5 @@ The consumer owns validation, submission and address lookup. `postalCodeLookup` 
 found address, not found, or unavailable states; `onRetryPostalCode` delegates retry. No network,
 analytics or storage. `disabled` blocks all fields and retry during submission. Expiry and security
 code share one row at every width; document and email stack on mobile.
+
+Native `TextInput type="date"` controls keep the browser picker and ISO value. Below 768px they use the field size height and contain the WebKit date value. Consumers with an existing custom control height can set `--lsui-field-control-height`; it controls both the minimum height and native date height.
