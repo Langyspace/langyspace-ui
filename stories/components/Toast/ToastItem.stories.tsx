@@ -40,6 +40,14 @@ export const WithAction: Story = {
 
 export const Disabled: Story = { args: { disabled: true } }
 
+export const MessageWithAction: Story = {
+  args: {
+    message: 'Verifique a atualização antes de tentar novamente.',
+    actionLabel: 'Verificar atualização',
+    'aria-label': 'Verificar atualização',
+  },
+}
+
 export const LongContent: Story = {
   tags: ['layout-boundary'],
   decorators: [
