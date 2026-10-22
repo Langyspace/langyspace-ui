@@ -17,7 +17,8 @@ const heights = {
 export const fieldControlStyles = css<FieldControlStyleProps>`
   width: 100%;
   min-width: 0;
-  min-height: ${({ $size }) => heights[$size]};
+  --lsui-field-size-height: ${({ $size }) => heights[$size]};
+  min-height: var(--lsui-field-control-height, var(--lsui-field-size-height));
   border: 1px solid
     ${({ $invalid }) =>
       $invalid ? token.colorFeedbackDanger : token.colorSurfaceBorderDefault};
