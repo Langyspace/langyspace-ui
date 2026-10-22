@@ -9,7 +9,7 @@ ancestralidade em main. A release GitHub é única por tag; uma corrida de cria�
 existentes nunca são sobrescritos: baixar e conferir SHA256 é obrigatório. Uma publicação parcial
 retoma apenas os uploads ausentes; erro de leitura/permissão não é tratado como release inexistente.
 
-Checks focados: `node --test scripts/publish-release.test.mjs`. CI conserva validação completa,
+Checks focados: `node --test scripts/publish-release.node-test.mjs`. CI conserva validação completa,
 bundle/package smoke e revisão humana dos componentes quando houver mudanças visuais. Não criar
 tag nem publicar nova versão da biblioteca como efeito de uma mudança só no executor.
 
