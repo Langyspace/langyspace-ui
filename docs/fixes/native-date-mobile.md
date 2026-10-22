@@ -15,3 +15,5 @@ Build JS/declarations e check:api passaram (140 valores, 210 tipos, 264 declarat
 Ao remover a aparência nativa, o WebKit deixou de centralizar o conteúdo interno apesar de a geometria externa permanecer idêntica. A correção usa padding derivado da altura do controle, line-height de 1.5 e as duas bordas de 1px; não usa line-height igual à altura inteira, que esticava a seleção do dia. Chromium/WebKit revalidados após essa revisão.
 
 A story NativeDate é nova; o Antes usa o TextInput anterior na mesma composição sintética dos estados/tamanhos. Nenhum outro produto foi atualizado. A revisão em iPhone físico continua humana.
+
+As capturas sanitizadas da adoção da landing também estão em .github/evidence/landing-form-recovery, porque o repositório do produto é privado e suas URLs raw não exibem imagens no PR. Este complemento altera somente evidências, sem modificar componente, candidato ou validações de runtime.
