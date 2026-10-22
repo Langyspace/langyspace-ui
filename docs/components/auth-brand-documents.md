@@ -54,7 +54,7 @@ export function AccessForm({
       <AuthForm onSubmit={onSubmit}>
         {children}
         <AuthActions>
-          <Button type="submit" fullWidth size="lg" isLoading={submitting}>
+          <Button type="submit" fullWidth size="lg" loading={submitting}>
             Continuar
           </Button>
         </AuthActions>
@@ -146,7 +146,7 @@ Container de conclusão com marca decorativa própria e children para o conteúd
 
 Entrada de código dividida em campos, com digitação contínua, paste e navegação por teclado.
 
-Contrato: length, idPrefix, digitLabel, onTokenChange, value opcional, autoFocus, disabled, hasError e nome acessível do grupo.
+Contrato: length, idPrefix, digitLabel, onValueChange, value opcional, autoFocus, disabled, invalid e nome acessível do grupo.
 
 Cuidados: Controlado por value ou com edição local; não valida OTP no servidor. Produto fornece cópia, duração do token e ações; mudança de length não restaura dígitos truncados.
 
