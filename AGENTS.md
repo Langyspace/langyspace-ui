@@ -61,8 +61,10 @@
 - Organize public React components under `src/components` by named responsibility
   or cohesive family. Use component filenames such as `Button.tsx` and
   `Calendar/MonthView.tsx`; do not restore atomic-design directories or hide
-  implementations in repeated `index.tsx` files. Colocate short props/simple
-  styles; separate substantial styles/types when it improves reading. Keep
+  implementations in repeated `index.tsx` files. Component `.tsx` files hold
+  only React code: types live in `<Component>.types.ts` and styles in
+  `<Component>.styles.ts`. styled-components is the only styling tool; colors
+  come from `foundations`/theme, never literals or the `style` prop. Keep
   tokens/recipes in `foundations` and private infrastructure in `internal`.
   Stories belong in `stories` and tests in `test`, outside production source.
   Simple components may use a single named file without a dedicated folder.
@@ -83,6 +85,9 @@
 - Prefer semantic props and tokens over application-specific conditionals or one-off CSS.
 - Preserve accessibility across interaction states, keyboard/focus behavior, labels, and disabled or
   loading variants.
+- ESLint enforces these conventions. Existing debt lives in `eslint-suppressions.json`; never
+  edit it by hand or add entries for new code. When a change fixes suppressed violations, run
+  `pnpm run lint:prune` in the same commit. See `docs/epics/ui-library-react-patterns/plan.md`.
 - Update root exports intentionally. Never bypass `pnpm run check:api`; use `write:api` only after
   reviewing and accepting the compatibility change.
 - Component changes normally require focused tests and Storybook variants. Public releases also

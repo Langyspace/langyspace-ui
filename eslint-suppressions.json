@@ -1,0 +1,1486 @@
+{
+  "src/components/ActionMenu/ActionMenu.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-inline-styles": {
+      "count": 1
+    }
+  },
+  "src/components/ActionMenu/ActionMenu.types.ts": {
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    }
+  },
+  "src/components/ActionMenu/useActionMenu.ts": {
+    "@eslint-react/naming-convention-ref-name": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unnecessary-condition": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 2
+    }
+  },
+  "src/components/Auth/AuthActions.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthBrandContent.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Auth/AuthBrandContent.tsx": {
+    "@eslint-react/no-array-index-key": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthChannelHint.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthChannelIcon.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-raw-colors": {
+      "count": 3
+    }
+  },
+  "src/components/Auth/AuthEyebrow.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthFooter.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthFooter.tsx": {
+    "import-x/consistent-type-specifier-style": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Auth/AuthForm.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthFrame.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Auth/AuthFrame.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthHeader.tsx": {
+    "@eslint-react/no-array-index-key": {
+      "count": 1
+    },
+    "@eslint-react/no-unstable-default-props": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthLegalText.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthNotice.tsx": {
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Auth/AuthProgress.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthResendAction.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthSuccessState.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthTokenDigits.tsx": {
+    "@eslint-react/naming-convention-ref-name": {
+      "count": 1
+    },
+    "@eslint-react/no-array-index-key": {
+      "count": 1
+    },
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 2
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 2
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "import-x/no-duplicates": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Auth/AuthTokenLabel.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Auth/AuthTopLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Avatar/Avatar.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Brand/BrandLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Brand/BrandLogo.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Button/Button.tsx": {
+    "@typescript-eslint/naming-convention": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 6
+    }
+  },
+  "src/components/Calendar/AgendaView.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 2
+    },
+    "@typescript-eslint/no-unnecessary-type-conversion": {
+      "count": 1
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 2
+    }
+  },
+  "src/components/Calendar/AvailabilityCalendar.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/CalendarControls.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/CalendarDay.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Calendar/CalendarElements.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 11
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Calendar/CalendarScroller.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/MonthView.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 3
+    },
+    "@typescript-eslint/no-unnecessary-type-conversion": {
+      "count": 2
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "import-x/no-duplicates": {
+      "count": 3
+    }
+  },
+  "src/components/Calendar/ScheduleCalendar.styles.ts": {
+    "import-x/no-duplicates": {
+      "count": 3
+    }
+  },
+  "src/components/Calendar/ScheduleCalendar.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/ScheduleRow.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/ScheduleRow.tsx": {
+    "@eslint-react/no-leaked-conditional-rendering": {
+      "count": 1
+    },
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/WeekView.tsx": {
+    "@eslint-react/naming-convention-ref-name": {
+      "count": 2
+    },
+    "@eslint-react/no-unstable-default-props": {
+      "count": 1
+    },
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 3
+    },
+    "langyspace/no-inline-styles": {
+      "count": 1
+    }
+  },
+  "src/components/Calendar/calendarFixtures.ts": {
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 4
+    }
+  },
+  "src/components/Card/Card.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Card/CardLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Charts/GroupedBarChart.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 4
+    }
+  },
+  "src/components/Charts/GroupedBarChart.tsx": {
+    "@eslint-react/no-array-index-key": {
+      "count": 1
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-inline-styles": {
+      "count": 1
+    }
+  },
+  "src/components/Charts/WeeklyCountChart.styles.ts": {
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 4
+    }
+  },
+  "src/components/Charts/WeeklyCountChart.tsx": {
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Checkbox/Checkbox.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/ChoiceCard/ChoiceCard.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 3
+    }
+  },
+  "src/components/ChoiceCard/ChoiceCard.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Details/DefinitionItem.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Details/DetailRow.tsx": {
+    "@eslint-react/no-leaked-conditional-rendering": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Details/KeyValueList.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Dialog/Dialog.tsx": {
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Document/DocumentHeader.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Document/DocumentHeaderContent.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Document/DocumentLayout.tsx": {
+    "@eslint-react/no-array-index-key": {
+      "count": 4
+    },
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "@eslint-react/no-unstable-default-props": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Document/DocumentNavigation.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Document/DocumentNavigationLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Drawer/Drawer.tsx": {
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Filter/FilterPills.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Filter/FilterSelect.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Filter/FilterToolbar.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardAudioButton.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardAudioButton.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardBack.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardBack.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardDeck.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFace.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 5
+    }
+  },
+  "src/components/Flashcard/FlashcardFace.tsx": {
+    "@eslint-react/no-use-context": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFeedback.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 5
+    }
+  },
+  "src/components/Flashcard/FlashcardFeedback.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFlip.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Flashcard/FlashcardFlipButton.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFlipHint.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFrame.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 5
+    }
+  },
+  "src/components/Flashcard/FlashcardFrame.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardFront.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardGhost.tsx": {
+    "@typescript-eslint/no-useless-default-assignment": {
+      "count": 1
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Flashcard/FlashcardImagePanel.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 3
+    }
+  },
+  "src/components/Flashcard/FlashcardImagePanel.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardProgress.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 5
+    }
+  },
+  "src/components/Flashcard/FlashcardProgress.tsx": {
+    "langyspace/no-component-types": {
+      "count": 4
+    }
+  },
+  "src/components/Flashcard/FlashcardRatingButton.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 22
+    }
+  },
+  "src/components/Flashcard/FlashcardRatingButton.tsx": {
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Flashcard/FlashcardStage.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardSwiper.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardSwiper.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardWord.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Flashcard/FlashcardWordSkeleton.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/CardDetailsFields.format.ts": {
+    "@typescript-eslint/no-non-null-assertion": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unnecessary-type-assertion": {
+      "count": 1
+    }
+  },
+  "src/components/Form/CardDetailsFields.tsx": {
+    "langyspace/no-component-types": {
+      "count": 6
+    }
+  },
+  "src/components/Form/CompoundControl.tsx": {
+    "@eslint-react/no-context-provider": {
+      "count": 1
+    },
+    "@eslint-react/no-unstable-context-value": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Form/ControlledField.tsx": {
+    "@typescript-eslint/no-unnecessary-type-conversion": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FieldCounter.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FieldLabelRow.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FieldRoot.tsx": {
+    "@eslint-react/no-context-provider": {
+      "count": 1
+    },
+    "@eslint-react/no-unstable-context-value": {
+      "count": 1
+    },
+    "@typescript-eslint/no-duplicate-type-constituents": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Form/FileInput.tsx": {
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FormActions.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FormError.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/FormStack.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Form/PhoneField.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Form/PhoneField.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Form/SearchInput.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Form/SelectInput.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "import-x/no-duplicates": {
+      "count": 2
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Form/TextInput.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "import-x/no-duplicates": {
+      "count": 2
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Form/TextareaInput.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "import-x/no-duplicates": {
+      "count": 2
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/IconButton/IconButton.tsx": {
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    }
+  },
+  "src/components/IconButton/IconButton.types.ts": {
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    }
+  },
+  "src/components/IconButton/OverlayCloseButton.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Message/ConversationRow.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 4
+    }
+  },
+  "src/components/Message/ConversationRow.tsx": {
+    "@eslint-react/no-leaked-conditional-rendering": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Message/MessageBubble.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Message/MessageComposer.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    },
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "@typescript-eslint/no-deprecated": {
+      "count": 1
+    },
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 2
+    },
+    "jsx-a11y/no-autofocus": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Message/MessageComposer.types.ts": {
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    }
+  },
+  "src/components/Message/MessageThread.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Message/MessageThreadHeader.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/MetricSummary/MetricSummary.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/BottomNavigation.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/BottomNavigationLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/NavigationButton.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/NavigationLink.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/SidebarFrame.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Navigation/SidebarNavigation.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Notice/ConnectionNotice.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Notice/InlineNotice.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Notice/NoticeBanner.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Notice/NoticeBanner.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/NotificationItem/NotificationItem.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/NotificationItem/NotificationItem.tsx": {
+    "@eslint-react/no-leaked-conditional-rendering": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/OperationalList/ListHeader.tsx": {
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/OperationalList/ListRow.tsx": {
+    "langyspace/no-component-types": {
+      "count": 4
+    }
+  },
+  "src/components/OperationalList/OperationalList.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/OperationalList/OperationalList.types.ts": {
+    "@typescript-eslint/naming-convention": {
+      "count": 1
+    }
+  },
+  "src/components/OperationalList/RowActions.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeCard.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeCard.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeCardBody.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Practice/PracticeCardCover.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeCardCover.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeCardSkeletonBody.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticeLevelBadge.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticePlaybackControls.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/PracticePlaybackControls.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Practice/PracticeProgressBar.tsx": {
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-inline-styles": {
+      "count": 1
+    }
+  },
+  "src/components/Practice/recipe.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 8
+    }
+  },
+  "src/components/PracticeResultPanel/PracticeResultPanel.tsx": {
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Pressable.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizBadge.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizBlank.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizFeedback.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    },
+    "langyspace/no-raw-colors": {
+      "count": 4
+    }
+  },
+  "src/components/Quiz/QuizMetadata.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizOption.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 8
+    }
+  },
+  "src/components/Quiz/QuizOption.tsx": {
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Quiz/QuizPromptHeader.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizQuestion.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Quiz/QuizSessionHeader.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/RadioButton/RadioButton.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/SectionHeader/PageDescription.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/SectionHeader/PageTitle.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/SectionHeader/SectionHeader.tsx": {
+    "@typescript-eslint/restrict-template-expressions": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/SegmentedControl/SegmentedControl.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/SessionProgress/SessionProgress.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingActivePhrase.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingContextPhrase.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingControlCluster.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingControlDock.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingPanel.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingPhraseStack.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Shadowing/ShadowingReader.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingRepetitions.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 4
+    }
+  },
+  "src/components/Shadowing/ShadowingRepetitions.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingTranslation.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingTranslation.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/Shadowing/ShadowingWord.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/Skeleton/Skeleton.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 2
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    },
+    "langyspace/no-raw-colors": {
+      "count": 3
+    }
+  },
+  "src/components/Spinner/Spinner.tsx": {
+    "langyspace/no-component-types": {
+      "count": 4
+    }
+  },
+  "src/components/StatCard/StatCard.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 7
+    }
+  },
+  "src/components/StatCard/StatCard.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/StatePanel/StatePanel.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/StatusChip/StatusChip.tsx": {
+    "langyspace/no-component-types": {
+      "count": 3
+    }
+  },
+  "src/components/Toast/ToastItem.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 3
+    }
+  },
+  "src/components/Toast/ToastItem.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    }
+  },
+  "src/components/Toast/ToastViewport.tsx": {
+    "@eslint-react/no-forward-ref": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/components/ToggleButton/ToggleButton.styles.ts": {
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/components/ToggleButton/ToggleButton.tsx": {
+    "langyspace/no-component-types": {
+      "count": 1
+    }
+  },
+  "src/internal/CompoundControlContext/index.ts": {
+    "@eslint-react/no-use-context": {
+      "count": 1
+    }
+  },
+  "src/internal/FieldControlContext/index.ts": {
+    "@eslint-react/no-use-context": {
+      "count": 1
+    }
+  },
+  "src/internal/ModalLayer/index.tsx": {
+    "@typescript-eslint/no-confusing-void-expression": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unnecessary-condition": {
+      "count": 1
+    },
+    "import-x/consistent-type-specifier-style": {
+      "count": 2
+    }
+  },
+  "src/internal/QuizResponseMark/QuizResponseMark.tsx": {
+    "langyspace/no-component-styles": {
+      "count": 1
+    },
+    "langyspace/no-component-types": {
+      "count": 2
+    },
+    "langyspace/no-raw-colors": {
+      "count": 2
+    }
+  },
+  "src/internal/useMergedRef.ts": {
+    "import-x/consistent-type-specifier-style": {
+      "count": 1
+    }
+  }
+}
