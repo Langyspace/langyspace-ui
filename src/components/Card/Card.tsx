@@ -1,14 +1,6 @@
-import type { ComponentPropsWithRef } from 'react'
-
-import { styled } from 'styled-components'
-import { cardRecipe } from '../../foundations/surfaces/cardRecipe'
-
-const Container = styled.div.withConfig({ componentId: 'lsui-sc-card' })`
-  ${cardRecipe}
-`
-
-export type CardProps = ComponentPropsWithRef<'div'>
+import type { CardProps } from './Card.types'
+import * as Styled from './Card.styles'
 
 export function Card(props: CardProps) {
-  return <Container {...props} data-ui-card="true" />
+  return <Styled.Container {...props} data-ui-card="true" />
 }

@@ -1,13 +1,14 @@
-import { forwardRef, useRef, type SVGProps } from 'react'
+import { useRef } from 'react'
+import type { SVGProps } from 'react'
 import { IconButton } from '../IconButton/IconButton'
 import { useMergedRef } from '../../internal/useMergedRef'
 import { CompoundControl } from './CompoundControl'
 import * as Styled from './SearchInput.styles'
-import type { SearchInputProps } from './SearchInput.types'
+import type { SearchIconProps, SearchInputProps } from './SearchInput.types'
 
 const iconSizes = { lg: 18, md: 16, sm: 15 } as const
 
-function SearchIcon({ size }: { size: number }) {
+function SearchIcon({ size }: SearchIconProps) {
   return (
     <svg
       aria-hidden="true"
@@ -47,77 +48,66 @@ function CloseIcon(props: SVGProps<SVGSVGElement>) {
   )
 }
 
-export const SearchInput = forwardRef<HTMLInputElement, SearchInputProps>(
-  function SearchInput(
-    {
-      className,
-      clearLabel = 'Clear search',
-      disabled = false,
-      onClear,
-      size = 'md',
-      surface = 'surface',
-      value,
-      ...inputProps
-    },
-    forwardedRef,
-  ) {
-    const inputRef = useRef<HTMLInputElement | null>(null)
-    const setInputRef = useMergedRef(inputRef, forwardedRef)
-    const hasValue = Array.isArray(value)
-      ? value.length > 0
-      : String(value ?? '').length > 0
+export function SearchInput({
+  className,
+  clearLabel = 'Clear search',
+  disabled = false,
+  onClear,
+  size = 'md',
+  surface = 'surface',
+  value,
+  ref: forwardedRef,
+  ...inputProps
+}: SearchInputProps) {
+  const inputRef = useRef<HTMLInputElement | null>(null)
+  const setInputRef = useMergedRef(inputRef, forwardedRef)
+  const hasValue = Array.isArray(value)
+    ? value.length > 0
+    : String(value ?? '').length > 0
 
-    return (
-      <CompoundControl
-        className={className}
+  return (
+    <CompoundControl
+      className={className}
+      disabled={disabled}
+      onClick={(event) => {
+        if (
+          disabled ||
+          event.defaultPrevented ||
+          (event.target instanceof Element &&
+            event.target.closest('input, button'))
+        )
+          return
+        inputRef.current?.focus({ preventScroll: true })
+      }}
+      leading={<SearchIcon size={iconSizes[size]} />}
+      size={size}
+      surface={surface}
+      trailing={
+        onClear && clearLabel && hasValue ? (
+          <IconButton
+            aria-label={clearLabel}
+            disabled={disabled}
+            size="sm"
+            variant="subtle"
+            onClick={() => {
+              onClear()
+              inputRef.current?.focus({ preventScroll: true })
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        ) : null
+      }
+    >
+      <Styled.Input
+        {...inputProps}
+        ref={setInputRef}
         disabled={disabled}
-        onClick={(event) => {
-          if (
-            disabled ||
-            event.defaultPrevented ||
-            (event.target instanceof Element &&
-              event.target.closest('input, button'))
-          )
-            return
-          inputRef.current?.focus({ preventScroll: true })
-        }}
-        leading={<SearchIcon size={iconSizes[size]} />}
-        size={size}
-        surface={surface}
-        trailing={
-          onClear && clearLabel && hasValue ? (
-            <IconButton
-              aria-label={clearLabel}
-              disabled={disabled}
-              size="sm"
-              variant="subtle"
-              onClick={() => {
-                onClear()
-                inputRef.current?.focus({ preventScroll: true })
-              }}
-            >
-              <CloseIcon />
-            </IconButton>
-          ) : null
-        }
-      >
-        <Styled.Input
-          {...inputProps}
-          ref={setInputRef}
-          disabled={disabled}
-          type="search"
-          value={value}
-          $size={size}
-          data-ui-field="true"
-        />
-      </CompoundControl>
-    )
-  },
-)
-
-export type {
-  SearchInputClearAction,
-  SearchInputProps,
-} from './SearchInput.types'
-
-export type { FieldControlSize as SearchInputSize } from '../../foundations/fields'
+        type="search"
+        value={value}
+        $size={size}
+        data-ui-field="true"
+      />
+    </CompoundControl>
+  )
+}

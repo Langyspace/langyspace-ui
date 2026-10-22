@@ -1,14 +1,5 @@
 import * as Styled from './FlashcardRatingButton.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export type FlashcardGrade = 'again' | 'hard' | 'good' | 'easy'
-
-export type FlashcardRatingButtonProps = ComponentPropsWithRef<'button'> & {
-  grade: FlashcardGrade
-  selected?: boolean
-  interval: ReactNode
-}
+import type { FlashcardRatingButtonProps } from './FlashcardRatingButton.types'
 
 export function FlashcardRatingButton({
   children,
@@ -26,8 +17,8 @@ export function FlashcardRatingButton({
       $selected={selected}
       data-ui-flashcard-rating-button="true"
     >
-      <span className="label">{children}</span>{' '}
-      <span className="interval">{interval}</span>
+      <Styled.Label>{children}</Styled.Label>{' '}
+      <Styled.Interval>{interval}</Styled.Interval>
     </Styled.Button>
   )
 }

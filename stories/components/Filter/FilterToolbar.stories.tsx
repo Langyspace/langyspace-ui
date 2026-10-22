@@ -53,7 +53,7 @@ function SearchFilters({ long = false, disabled = false }) {
             { label: 'C2', value: 'c2', disabled: true },
           ]}
           value={level}
-          onChange={setLevel}
+          onValueChange={setLevel}
           size="sm"
           overflow="wrap"
         />

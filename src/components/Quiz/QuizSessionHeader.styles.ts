@@ -1,19 +1,18 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import { quizRecipe } from '../../foundations/quizRecipe'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Header = styled.header.withConfig({
   componentId: 'lsui-sc-quiz-session-header',
 })`
   display: flex;
   align-items: center;
-  gap: ${token.spacing3};
-  padding: ${token.spacing4} ${token.spacing4} ${token.spacing2};
+  gap: ${theme.spacing[3]};
+  padding: ${theme.spacing[4]} ${theme.spacing[4]} ${theme.spacing[2]};
 
-  @media (max-width: ${quizRecipe.breakpoints.sm}) {
-    padding-right: ${token.spacing2};
-    padding-left: ${token.spacing2};
+  @media (max-width: ${theme.breakpoints.sm}) {
+    padding-right: ${theme.spacing[2]};
+    padding-left: ${theme.spacing[2]};
   }
 `
 
@@ -25,21 +24,21 @@ export const BackButton = styled(Pressable)`
   width: 2.375rem;
   height: 2.375rem;
   border: 0;
-  border-radius: ${quizRecipe.radius.circle};
-  color: ${token.colorContentDefault};
-  background: ${token.colorSurfaceMuted};
+  border-radius: ${theme.radius.circle};
+  color: ${theme.colors.text.primary};
+  background: ${theme.semantic.background.muted};
   transition:
     transform 0.12s ease,
     background 0.15s ease;
 
   &:active {
     transform: scale(0.92);
-    background: ${token.colorSurfaceSubtle};
+    background: ${theme.semantic.background.surfaceSubtle};
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${quizRecipe.shadows.focus};
+    box-shadow: ${theme.shadows.focus};
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -52,22 +51,22 @@ export const ProgressArea = styled.div`
   min-width: 0;
   flex: 1;
   flex-direction: column;
-  gap: ${token.spacing1};
+  gap: ${theme.spacing[1]};
 `
 
 export const Label = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: ${token.spacing2};
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightSemibold};
+  gap: ${theme.spacing[2]};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
 `
 
 export const Name = styled.span`
   min-width: 0;
   overflow: hidden;
-  color: ${token.colorContentDefault};
+  color: ${theme.colors.text.primary};
   text-overflow: ellipsis;
   white-space: nowrap;
 `

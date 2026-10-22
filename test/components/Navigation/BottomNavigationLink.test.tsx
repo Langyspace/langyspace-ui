@@ -4,7 +4,7 @@ import { BottomNavigationLink } from '../../../src/components/Navigation/BottomN
 
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
-    <BottomNavigationLink data-testid="content">
+    <BottomNavigationLink data-testid="content" href="/destino">
       <strong>Conteúdo fornecido</strong>
     </BottomNavigationLink>,
   )

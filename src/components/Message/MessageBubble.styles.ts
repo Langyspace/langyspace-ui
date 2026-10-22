@@ -1,9 +1,9 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import type {
   MessageBubbleSide,
   MessageBubbleStatus,
 } from './MessageBubble.types'
+import { theme } from '../../foundations/theme/theme'
 
 interface MessageBubbleStyleProps {
   $side: MessageBubbleSide
@@ -24,37 +24,37 @@ export const Bubble = styled.div<MessageBubbleStyleProps>`
   width: fit-content;
   max-width: min(80%, 34rem);
   min-width: 0;
-  padding: ${token.spacing3} ${token.spacing4};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
   border: 1px solid
     ${({ $side, $status }) => {
-      if ($status === 'failed') return token.colorFeedbackDanger
-      if ($side === 'outgoing') return token.colorBrandDefault
+      if ($status === 'failed') return theme.colors.feedback.danger
+      if ($side === 'outgoing') return theme.semantic.foreground.brand
 
-      return token.colorSurfaceBorderSubtle
+      return theme.colors.border.subtle
     }};
   border-radius: ${({ $side }) =>
     $side === 'outgoing'
-      ? `${token.radiusRounded} ${token.radiusRounded} ${token.spacing1} ${token.radiusRounded}`
-      : `${token.radiusRounded} ${token.radiusRounded} ${token.radiusRounded} ${token.spacing1}`};
+      ? `${theme.radius.xl} ${theme.radius.xl} ${theme.spacing[1]} ${theme.radius.xl}`
+      : `${theme.radius.xl} ${theme.radius.xl} ${theme.radius.xl} ${theme.spacing[1]}`};
   color: ${({ $side, $status }) => {
-    if ($status === 'failed') return token.colorFeedbackDangerStrong
-    if ($side === 'outgoing') return token.colorNeutral0
+    if ($status === 'failed') return theme.semantic.status.danger.foreground
+    if ($side === 'outgoing') return theme.colors.palette.white
 
-    return token.colorContentDefault
+    return theme.colors.text.primary
   }};
   background: ${({ $side, $status }) => {
-    if ($status === 'failed') return token.colorFeedbackDangerSoft
-    if ($side === 'outgoing') return token.colorBrandDefault
+    if ($status === 'failed') return theme.colors.feedback.dangerSubtle
+    if ($side === 'outgoing') return theme.semantic.foreground.brand
 
-    return token.colorSurfaceMuted
+    return theme.semantic.background.muted
   }};
-  box-shadow: ${token.shadowSubtle};
+  box-shadow: ${theme.shadows.xs};
   overflow-wrap: anywhere;
 `
 
 export const Content = styled.div`
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
   white-space: pre-wrap;
 `
 
@@ -64,16 +64,16 @@ export const Meta = styled.footer<MessageBubbleStyleProps>`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  gap: ${token.spacing2};
-  margin-top: ${token.spacing1};
+  gap: ${theme.spacing[2]};
+  margin-top: ${theme.spacing[1]};
   color: ${({ $side, $status }) => {
-    if ($status === 'failed') return token.colorFeedbackDangerStrong
-    if ($side === 'outgoing') return token.colorNeutral0
+    if ($status === 'failed') return theme.semantic.status.danger.foreground
+    if ($side === 'outgoing') return theme.colors.palette.white
 
-    return token.colorContentMuted
+    return theme.colors.text.muted
   }};
-  font-size: ${token.typographyFontSize2xs};
-  line-height: ${token.typographyLineHeightNormal};
+  font-size: ${theme.typography.fontSize['2xs']};
+  line-height: ${theme.typography.lineHeight.normal};
 `
 
 export const Timestamp = styled.time`
@@ -81,5 +81,5 @@ export const Timestamp = styled.time`
 `
 
 export const Status = styled.span`
-  font-weight: ${token.typographyFontWeightMedium};
+  font-weight: ${theme.typography.fontWeight.medium};
 `

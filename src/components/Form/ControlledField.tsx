@@ -1,8 +1,5 @@
-import {
-  useController,
-  useFormContext,
-  type FieldValues,
-} from 'react-hook-form'
+import { useController, useFormContext } from 'react-hook-form'
+import type { FieldValues } from 'react-hook-form'
 import { FieldRoot } from './FieldRoot'
 import { TextInput } from './TextInput'
 import type { ControlledFieldProps } from './ControlledField.types'
@@ -33,7 +30,7 @@ export function ControlledField<TFieldValues extends FieldValues = FieldValues>(
     rules,
   })
 
-  const fieldId = controlId ?? String(name)
+  const fieldId = controlId ?? name
   const resolvedError = externalError ?? toOptionalError(fieldError?.message)
 
   return (
@@ -53,5 +50,3 @@ export function ControlledField<TFieldValues extends FieldValues = FieldValues>(
     </FieldRoot>
   )
 }
-
-export type { ControlledFieldProps } from './ControlledField.types'

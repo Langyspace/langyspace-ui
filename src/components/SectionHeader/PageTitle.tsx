@@ -1,24 +1,6 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-
-const Root = styled.h1.withConfig({ componentId: 'lsui-sc-page-title' })`
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0;
-  color: ${token.colorContentDefault};
-  font-size: 32px;
-  font-weight: ${token.typographyFontWeightBold};
-  line-height: 1.1;
-  letter-spacing: 0;
-`
-
-export interface PageTitleProps extends ComponentPropsWithRef<'h1'> {
-  children: ReactNode
-}
+import type { PageTitleProps } from './PageTitle.types'
+import * as Styled from './PageTitle.styles'
 
 export function PageTitle({ children, ...props }: PageTitleProps) {
-  return <Root {...props}>{children}</Root>
+  return <Styled.Root {...props}>{children}</Styled.Root>
 }

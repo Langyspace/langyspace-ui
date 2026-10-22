@@ -1,45 +1,8 @@
-import type { Key, ReactNode } from 'react'
-import type { NormalizedOperationalListActions } from './normalizeActions'
 import { OperationalRowActions } from './RowActions'
 import * as Styled from './OperationalList.styles'
-import type {
-  OperationalListColumn,
-  OperationalListDensity,
-  OperationalListNavigation,
-  OperationalListPrimaryContent,
-} from './OperationalList.types'
+import type { PrimaryNavigationProps, RowProps } from './ListRow.types'
 
-interface PreparedRow {
-  actions: NormalizedOperationalListActions
-  cells: readonly {
-    column: Pick<
-      OperationalListColumn<unknown>,
-      'align' | 'id' | 'importance' | 'label'
-    >
-    content: ReactNode
-    headerId: string
-  }[]
-  key: Key
-  primary: OperationalListPrimaryContent
-  rowHeaderId: string
-}
-
-interface RowProps {
-  actionsHeaderId: string
-  density: OperationalListDensity
-  hasActionsColumn: boolean
-  menuOpen: boolean
-  onMenuOpenChange: (open: boolean) => void
-  row: PreparedRow
-}
-
-function PrimaryNavigation({
-  navigation,
-  title,
-}: {
-  navigation: OperationalListNavigation
-  title: ReactNode
-}) {
+function PrimaryNavigation({ navigation, title }: PrimaryNavigationProps) {
   if ('href' in navigation) {
     return (
       <Styled.PrimaryLink
@@ -63,6 +26,7 @@ function PrimaryNavigation({
 }
 
 export function OperationalRow({
+  moreActionsLabel,
   actionsHeaderId,
   density,
   hasActionsColumn,
@@ -140,6 +104,7 @@ export function OperationalRow({
           {hasActions ? (
             <OperationalRowActions
               actions={row.actions}
+              moreActionsLabel={moreActionsLabel}
               density={density}
               menuOpen={menuOpen}
               onMenuOpenChange={onMenuOpenChange}

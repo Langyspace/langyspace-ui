@@ -17,7 +17,7 @@ describe('FilterPills', () => {
       <FilterPills
         aria-label="Filtrar alunos"
         counts={{ active: 4, all: 175 }}
-        onChange={onChange}
+        onValueChange={onChange}
         options={options}
         size="sm"
         value="all"
@@ -47,7 +47,7 @@ describe('FilterPills', () => {
       <FilterPills
         aria-label="Filtrar alunos"
         counts={{ active: 4 }}
-        onChange={() => undefined}
+        onValueChange={() => undefined}
         options={[
           {
             accessibleLabel: 'Alunos ativos',
@@ -73,14 +73,14 @@ describe('FilterPills', () => {
       <>
         <FilterPills
           aria-label="Filtro pequeno"
-          onChange={() => undefined}
+          onValueChange={() => undefined}
           options={options}
           size="sm"
           value="all"
         />
         <FilterPills
           aria-label="Filtro médio"
-          onChange={() => undefined}
+          onValueChange={() => undefined}
           options={options}
           size="md"
           value="all"

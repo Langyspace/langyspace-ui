@@ -47,9 +47,13 @@ describe('public component manifest', () => {
   })
 
   it('matches every public component value export', () => {
-    const entrypoint = readFileSync(resolve(root, 'src/index.ts'), 'utf8')
+    const entrypoint = ['src/index.ts', 'src/form.ts']
+      .map((path) => readFileSync(resolve(root, path), 'utf8'))
+      .join('\n')
     const componentExports = Array.from(
-      entrypoint.matchAll(/^export \{ ([A-Z][A-Za-z0-9]*) \}/gm),
+      entrypoint.matchAll(
+        /^export \{ ([A-Z][A-Za-z0-9]*) \} from '\.\/components\//gm,
+      ),
       ([, exportName]) => exportName,
     ).sort()
     const manifestExports = publicComponentContracts
@@ -126,7 +130,7 @@ describe('public component manifest', () => {
       await expect(access(resolve(root, propsPath))).resolves.toBeUndefined()
       const markdown = readFileSync(resolve(root, documentation.path), 'utf8')
       const headings = [...markdown.matchAll(/^#{1,6} (.+)$/gm)].map(
-        ([, heading]) => heading.toLowerCase().replaceAll(' ', '-'),
+        ([, heading = '']) => heading.toLowerCase().replaceAll(' ', '-'),
       )
       expect(headings).toContain(documentation.anchor)
       for (const consumer of consumers) {

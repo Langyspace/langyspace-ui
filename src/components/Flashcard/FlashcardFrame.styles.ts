@@ -1,27 +1,27 @@
 import { styled } from 'styled-components'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-flashcard-frame',
 })`
-  --fc-ink: ${token.colorContentDefault};
-  --fc-ink-2: ${token.colorContentSecondary};
-  --fc-muted: ${token.colorContentMuted};
-  --fc-muted-2: ${token.colorContentMuted};
-  --fc-line: ${token.colorSurfaceBorderSubtle};
-  --fc-line-strong: ${token.colorNeutral300};
-  --fc-pink: ${token.colorAccentDefault};
-  --fc-pink-soft: ${token.colorStatusBrandBackground};
-  --fc-pink-tint: ${token.colorAccentTint};
-  --fc-bg-soft: ${token.colorNeutral50};
-  --fc-paper: #fffdfb;
-  --fc-green: ${token.colorStatusSuccessIndicator};
-  --fc-green-soft: ${token.colorStatusSuccessBackground};
-  --fc-amber: #d97706;
-  --fc-amber-soft: #fff3e0;
-  --fc-red: #e11d48;
-  --fc-red-soft: #fef0f2;
+  --fc-ink: ${theme.colors.text.primary};
+  --fc-ink-2: ${theme.colors.text.secondary};
+  --fc-muted: ${theme.colors.text.muted};
+  --fc-muted-2: ${theme.colors.text.muted};
+  --fc-line: ${theme.colors.border.subtle};
+  --fc-line-strong: ${theme.colors.palette.neutral[400]};
+  --fc-pink: ${theme.colors.accent.primary};
+  --fc-pink-soft: ${theme.semantic.status.brand.background};
+  --fc-pink-tint: ${theme.colors.accent.primaryTint};
+  --fc-bg-soft: ${theme.colors.palette.neutral[100]};
+  --fc-paper: ${theme.colors.palette.extended.paperWarm};
+  --fc-green: ${theme.semantic.status.success.indicator};
+  --fc-green-soft: ${theme.semantic.status.success.background};
+  --fc-amber: ${theme.colors.palette.feedback.warning};
+  --fc-amber-soft: ${theme.colors.palette.extended.orange50};
+  --fc-red: ${theme.colors.palette.extended.rose600};
+  --fc-red-soft: ${theme.colors.palette.extended.rose50};
 
   display: flex;
   width: min(100%, 30rem);
@@ -62,13 +62,13 @@ export const Root = styled.section.withConfig({
   &:has(> footer):has(> [data-ui-flashcard-stage]) {
     ${compactPracticeLayout}
 
-    @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
+    @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.xs}) {
       width: min(100%, 44rem);
       --fc-footer-min-height: 0;
-      --fc-front-padding: ${token.spacing3};
-      --fc-back-padding: ${token.spacing3};
+      --fc-front-padding: ${theme.spacing[3]};
+      --fc-back-padding: ${theme.spacing[3]};
       --fc-image-panel-height: clamp(4rem, 20svh, 7rem);
-      --fc-word-font-size: ${token.typographyFontSize2xl};
+      --fc-word-font-size: ${theme.typography.fontSize['2xl']};
 
       > footer {
         min-height: 0;
@@ -79,7 +79,7 @@ export const Root = styled.section.withConfig({
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     &:has(> header):not(:has(> [data-ui-flashcard-stage])) {
       overflow: auto;
 

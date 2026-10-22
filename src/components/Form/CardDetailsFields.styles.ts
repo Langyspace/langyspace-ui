@@ -1,8 +1,7 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import { authRecipe } from '../../foundations/authRecipe'
 import { FieldRoot } from './FieldRoot'
 import { TextInput } from './TextInput'
+import { theme } from '../../foundations/theme/theme'
 
 export const PhoneSlot = styled.div`
   grid-column: span 12;
@@ -14,7 +13,7 @@ export const Grid = styled.div.withConfig({
 })`
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: ${token.spacing4};
+  gap: ${theme.spacing[4]};
   min-width: 0;
 `
 
@@ -22,9 +21,9 @@ export const Field = styled(FieldRoot)<{ $span: number; $wide?: boolean }>`
   grid-column: span ${({ $span }) => $span};
   min-width: 0;
   > label {
-    font-size: ${token.typographyFontSizeSm};
+    font-size: ${theme.typography.fontSize.sm};
   }
-  @media (max-width: ${authRecipe.breakpoints.sm}) {
+  @media (max-width: ${theme.breakpoints.sm}) {
     grid-column: span ${({ $wide, $span }) => ($wide ? 12 : $span)};
   }
 `
@@ -32,12 +31,12 @@ export const Field = styled(FieldRoot)<{ $span: number; $wide?: boolean }>`
 export const Address = styled.p`
   grid-column: 1 / -1;
   margin: 0;
-  color: ${token.colorContentSecondary};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.secondary};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
   overflow-wrap: anywhere;
 `
 
 export const Input = styled(TextInput)`
-  font-size: ${token.typographyFontSizeMd};
+  font-size: ${theme.typography.fontSize.md};
 `

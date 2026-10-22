@@ -1,15 +1,23 @@
+import { useControllableState } from '../../internal/useControllableState'
 import * as Styled from './SegmentedControl.styles'
 import type { ChoiceValue } from '../../foundations/selection'
 import type { SegmentedControlProps } from './SegmentedControl.types'
 
 export function SegmentedControl<Value extends ChoiceValue>({
-  onChange,
+  defaultValue,
+  onValueChange,
   options,
   shape = 'rounded',
   surface = 'light',
-  value,
+  value: controlledValue,
   ...props
 }: SegmentedControlProps<Value>) {
+  const [value, setValue] = useControllableState({
+    defaultValue: defaultValue ?? options[0]?.value,
+    onChange: onValueChange,
+    value: controlledValue,
+  })
+
   return (
     <Styled.Group {...props} $shape={shape} $surface={surface} role="group">
       {options.map((option) => (
@@ -22,7 +30,9 @@ export function SegmentedControl<Value extends ChoiceValue>({
           aria-pressed={option.value === value}
           disabled={option.disabled}
           type="button"
-          onClick={() => onChange(option.value)}
+          onClick={() => {
+            setValue(option.value)
+          }}
         >
           {option.label}
         </Styled.Item>
@@ -30,11 +40,3 @@ export function SegmentedControl<Value extends ChoiceValue>({
     </Styled.Group>
   )
 }
-
-export type {
-  SegmentedControlProps,
-  SegmentedControlShape,
-  SegmentedControlSurface,
-} from './SegmentedControl.types'
-
-export type { ChoiceOption, ChoiceValue } from '../../foundations/selection'

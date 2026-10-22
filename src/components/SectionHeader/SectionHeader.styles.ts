@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import type { SectionHeaderSpacing } from './SectionHeader'
+import type { SectionHeaderSpacing } from './SectionHeader.types'
+import { theme } from '../../foundations/theme/theme'
 
 const titleFlexBasis = '16rem'
 
@@ -13,19 +13,19 @@ export const Header = styled.div.withConfig({
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
-  gap: ${token.spacing3};
-  margin-top: ${({ $spacing }) => ($spacing === 'flush' ? 0 : token.spacing8)};
-  margin-bottom: ${token.spacing4};
+  gap: ${theme.spacing[3]};
+  margin-top: ${({ $spacing }) => ($spacing === 'flush' ? 0 : theme.spacing[8])};
+  margin-bottom: ${theme.spacing[4]};
 `
 
 export const Title = styled.h2`
   min-width: 0;
   flex: 1 1 ${titleFlexBasis};
   margin: 0;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSizeXl};
-  font-weight: ${token.typographyFontWeightBold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.xl};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: ${theme.typography.lineHeight.snug};
   overflow-wrap: anywhere;
 `
 
@@ -35,11 +35,11 @@ export const Aside = styled.div`
   max-width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   margin-left: auto;
 `
 
 export const Meta = styled.span`
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
 `

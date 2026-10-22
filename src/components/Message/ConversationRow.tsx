@@ -1,18 +1,5 @@
 import * as Styled from './ConversationRow.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface ConversationRowProps extends Omit<
-  ComponentPropsWithRef<'button'>,
-  'children' | 'title'
-> {
-  avatar: ReactNode
-  title: string
-  preview: string
-  meta?: ReactNode
-  badge?: ReactNode
-  unread?: boolean
-}
+import type { ConversationRowProps } from './ConversationRow.types'
 
 export function ConversationRow({
   avatar,
@@ -34,7 +21,7 @@ export function ConversationRow({
       <Styled.Body>
         <Styled.Top>
           <Styled.Title title={title}>{title}</Styled.Title>
-          {meta && <Styled.Meta>{meta}</Styled.Meta>}
+          {meta ? <Styled.Meta>{meta}</Styled.Meta> : null}
         </Styled.Top>
         <Styled.Bottom>
           <Styled.Preview $unread={unread} title={preview}>

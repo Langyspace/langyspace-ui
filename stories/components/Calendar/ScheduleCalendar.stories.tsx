@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ScheduleCalendar } from '../../../src/components/Calendar/ScheduleCalendar'
-import { scheduleCalendarFixture } from '../../../src/components/Calendar/calendarFixtures'
+import { scheduleCalendarFixture } from '../../fixtures/calendar'
 
 const meta = {
   title: 'Calendar/ScheduleCalendar',

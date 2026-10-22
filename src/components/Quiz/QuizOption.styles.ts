@@ -1,33 +1,69 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
-import { quizRecipe } from '../../foundations/quizRecipe'
+import { theme } from '../../foundations/theme/theme'
+import type { QuizOptionState } from './QuizOption.types'
+
+export const Letter = styled.span`
+  width: 1.875rem;
+  height: 1.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: ${theme.radius.md};
+  color: ${theme.colors.text.muted};
+  background: ${theme.colors.palette.neutral[100]};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.bold};
+  flex-shrink: 0;
+  transition:
+    color 0.14s ease,
+    background 0.14s ease;
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+`
+
+export const OptionText = styled.span<{ $state: QuizOptionState }>`
+  flex: 1;
+  min-width: 0;
+  color: ${({ $state }) =>
+    $state === 'correct'
+      ? theme.semantic.status.success.foreground
+      : $state === 'wrong'
+        ? theme.colors.palette.extended.red700
+        : theme.colors.palette.neutral[900]};
+  font-size: ${theme.typography.fontSize.md};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  overflow-wrap: anywhere;
+`
 
 export const Option = styled(Pressable).withConfig({
   componentId: 'lsui-sc-quiz-option',
-})<{ $state: 'default' | 'correct' | 'wrong' | 'dim' }>`
+})<{ $state: QuizOptionState }>`
   position: relative;
   display: flex;
   align-items: center;
-  gap: ${quizRecipe.spacing[3]};
+  gap: ${theme.spacing[3]};
   width: 100%;
   min-height: 3.875rem;
-  padding: ${quizRecipe.spacing[3]} ${quizRecipe.spacing[4]};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
   border: 1.5px solid
     ${({ $state }) =>
       $state === 'correct'
-        ? '#16a34a'
+        ? theme.colors.palette.feedback.success
         : $state === 'wrong'
-          ? '#dc2626'
-          : '#d9d9d6'};
-  border-radius: ${quizRecipe.radius.xl};
+          ? theme.colors.palette.extended.red600
+          : theme.colors.palette.neutral[400]};
+  border-radius: ${theme.radius.xl};
   background: ${({ $state }) =>
     $state === 'correct'
-      ? '#dcfce7'
+      ? theme.colors.palette.feedback.successSoft
       : $state === 'wrong'
-        ? '#fef2f2'
-        : quizRecipe.colors.surface.canvas};
-  color: ${token.colorContentDefault};
+        ? theme.colors.palette.extended.red50
+        : theme.colors.surface.canvas};
+  color: ${theme.colors.text.primary};
   cursor: pointer;
   text-align: left;
   opacity: ${({ $state }) => ($state === 'dim' ? 0.54 : 1)};
@@ -37,47 +73,13 @@ export const Option = styled(Pressable).withConfig({
     transform 0.14s ease,
     opacity 0.14s ease;
 
-  .optionText {
-    flex: 1;
-    min-width: 0;
-    color: ${({ $state }) =>
-      $state === 'correct'
-        ? '#166534'
-        : $state === 'wrong'
-          ? '#b91c1c'
-          : '#0a0a0a'};
-    font-size: ${quizRecipe.typography.fontSize.md};
-    font-weight: ${quizRecipe.typography.fontWeight.semibold};
-    overflow-wrap: anywhere;
-  }
-
-  .mark {
-    margin-left: auto;
-    width: 1.625rem;
-    height: 1.625rem;
-    border-radius: ${quizRecipe.radius.circle};
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mark.correct {
-    background: ${quizRecipe.colors.feedback.success};
-    color: ${quizRecipe.colors.text.inverse};
-  }
-
-  .mark.wrong {
-    background: ${quizRecipe.colors.feedback.danger};
-    color: ${quizRecipe.colors.text.inverse};
-  }
-
   &:not(:disabled):hover {
-    border-color: ${token.colorSurfaceBorderStrong};
+    border-color: ${theme.semantic.border.strong};
     transform: translateY(-1px);
 
-    .letter {
-      color: ${quizRecipe.colors.text.inverse};
-      background: ${token.colorNeutral950};
+    ${Letter} {
+      color: ${theme.colors.text.inverse};
+      background: ${theme.colors.palette.neutral[900]};
     }
   }
 
@@ -92,33 +94,11 @@ export const Option = styled(Pressable).withConfig({
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${quizRecipe.shadows.focus};
+    box-shadow: ${theme.shadows.focus};
   }
 
-  @media (max-width: ${quizRecipe.breakpoints.sm}) {
+  @media (max-width: ${theme.breakpoints.sm}) {
     min-height: 3.5rem;
-    padding: ${quizRecipe.spacing[3]} ${quizRecipe.spacing[3]};
-  }
-`
-
-export const Letter = styled.span`
-  width: 1.875rem;
-  height: 1.875rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: ${quizRecipe.radius.md};
-  color: ${token.colorContentMuted};
-  background: ${token.colorNeutral50};
-  font-size: ${quizRecipe.typography.fontSize.sm};
-  font-weight: ${quizRecipe.typography.fontWeight.bold};
-  flex-shrink: 0;
-  transition:
-    color 0.14s ease,
-    background 0.14s ease;
-
-  @media (max-width: ${quizRecipe.breakpoints.sm}) {
-    width: 1.75rem;
-    height: 1.75rem;
+    padding: ${theme.spacing[3]} ${theme.spacing[3]};
   }
 `

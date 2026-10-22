@@ -1,33 +1,6 @@
 import { useFieldControlAttributes } from '../../internal/FieldControlContext'
-
-import type { ComponentPropsWithRef } from 'react'
-
-import { styled } from 'styled-components'
-import {
-  fieldControlStyles,
-  type FieldControlStyleProps,
-} from '../../foundations/fields'
-import * as token from '../../foundations/tokenValues'
-
-const Root = styled.input.withConfig({
-  componentId: 'lsui-sc-file-input',
-})<FieldControlStyleProps>`
-  ${fieldControlStyles}
-  min-height: ${token.controlHeightLg};
-  padding-top: ${token.spacing2};
-  padding-bottom: ${token.spacing2};
-  &::file-selector-button {
-    font: inherit;
-  }
-  &:not(:disabled)::file-selector-button {
-    cursor: pointer;
-  }
-`
-
-export type FileInputProps = Omit<
-  ComponentPropsWithRef<'input'>,
-  'type' | 'size' | 'value' | 'defaultValue' | 'children'
->
+import type { FileInputProps } from './FileInput.types'
+import * as Styled from './FileInput.styles'
 
 export function FileInput(props: FileInputProps) {
   const field = useFieldControlAttributes(props)
@@ -35,7 +8,7 @@ export function FileInput(props: FileInputProps) {
     field['aria-invalid'] === true || field['aria-invalid'] === 'true'
 
   return (
-    <Root
+    <Styled.Root
       {...props}
       {...field}
       type="file"

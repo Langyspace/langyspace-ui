@@ -9,7 +9,7 @@ export function actionLinkTypeExamples() {
     Desabilitado
   </ActionLink>
   // @ts-expect-error links canônicos não possuem loading
-  ;<ActionLink href="/destino" isLoading>
+  ;<ActionLink href="/destino" loading>
     Carregando
   </ActionLink>
   // @ts-expect-error links canônicos não possuem icon-only

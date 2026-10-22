@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-practice-card-cover',
@@ -9,9 +10,9 @@ export const Root = styled.div.withConfig({
   flex-direction: column;
   justify-content: space-between;
   padding: 16px;
-  color: ${token.colorNeutral0};
-  background: ${token.colorNeutral950};
-  @media (max-width: 900px) {
+  color: ${theme.colors.palette.white};
+  background: ${theme.colors.palette.neutral[900]};
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     min-height: 0;
     aspect-ratio: 16 / 9;
   }
@@ -22,7 +23,7 @@ export const Value = styled.div.withConfig({
 })`
   color: inherit;
   font-size: 40px;
-  font-weight: ${token.typographyFontWeightBold};
+  font-weight: ${theme.typography.fontWeight.bold};
   line-height: 1;
   display: flex;
   align-items: center;
@@ -31,9 +32,9 @@ export const Value = styled.div.withConfig({
 export const Label = styled.div.withConfig({
   componentId: 'lsui-sc-practice-cover-label',
 })`
-  color: rgba(255, 255, 255, 0.72);
+  color: ${alpha(theme.colors.palette.white, 0.72)};
   font-size: 12px;
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   text-transform: uppercase;
 `

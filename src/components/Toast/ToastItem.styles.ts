@@ -1,28 +1,29 @@
 import { keyframes, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
-import type { ToastTone } from './ToastItem'
+import type { ToastTone } from './ToastItem.types'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 const tones = {
   neutral: {
-    border: token.colorSurfaceBorderSubtle,
-    icon: token.colorContentDefault,
+    border: theme.colors.border.subtle,
+    icon: theme.colors.text.primary,
   },
   success: {
-    border: token.colorStatusSuccessIndicator,
-    icon: token.colorStatusSuccessIndicator,
+    border: theme.semantic.status.success.indicator,
+    icon: theme.semantic.status.success.indicator,
   },
   danger: {
-    border: token.colorFeedbackDanger,
-    icon: token.colorFeedbackDanger,
+    border: theme.colors.feedback.danger,
+    icon: theme.colors.feedback.danger,
   },
   warning: {
-    border: token.colorStatusWarningIndicator,
-    icon: token.colorStatusWarningIndicator,
+    border: theme.semantic.status.warning.indicator,
+    icon: theme.semantic.status.warning.indicator,
   },
   brand: {
-    border: token.colorAccentDefault,
-    icon: token.colorAccentDefault,
+    border: theme.colors.accent.primary,
+    icon: theme.colors.accent.primary,
   },
 } as const satisfies Record<ToastTone, { border: string; icon: string }>
 
@@ -36,35 +37,35 @@ export const Item = styled(Pressable).withConfig({
 })<{ $tone: ToastTone }>`
   display: inline-flex;
   align-items: flex-start;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   min-height: 3rem;
-  padding: ${token.spacing3} ${token.spacing4};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
   border: 1px solid ${({ $tone }) => tones[$tone].border};
-  border-radius: ${token.radiusCard};
-  color: ${token.colorContentDefault};
-  background: ${token.colorNeutral0};
+  border-radius: ${theme.radius.card};
+  color: ${theme.colors.text.primary};
+  background: ${theme.colors.palette.white};
   box-shadow:
-    0 10px 30px rgba(10, 10, 10, 0.1),
-    0 2px 6px rgba(10, 10, 10, 0.06);
-  font-size: ${token.typographyFontSizeSm};
-  font-weight: ${token.typographyFontWeightMedium};
+    0 10px 30px ${alpha(theme.colors.palette.neutral[900], 0.1)},
+    0 2px 6px ${alpha(theme.colors.palette.neutral[900], 0.06)};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
   pointer-events: auto;
   text-align: left;
-  animation: ${appear} 250ms ${token.motionEasingInteractive};
+  animation: ${appear} 250ms ${theme.transitions.easing.standard};
   transition:
-    transform ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    border-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    box-shadow ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive};
+    transform ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    border-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    box-shadow ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard};
   &:hover {
     transform: translateY(-1px);
-    border-color: ${token.colorContentDefault};
+    border-color: ${theme.colors.text.primary};
   }
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px #00f2ea52;
+    box-shadow: 0 0 0 3px ${theme.colors.focusRing};
   }
   @media (prefers-reduced-motion: reduce) {
     animation: none;
@@ -85,7 +86,7 @@ export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-toast-text',
 })`
   display: grid;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   min-width: 0;
   overflow-wrap: anywhere;
 `
@@ -94,27 +95,27 @@ export const Title = styled.span.withConfig({
   componentId: 'lsui-sc-toast-title',
 })`
   display: block;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSizeSm};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
 `
 
 export const Message = styled.span.withConfig({
   componentId: 'lsui-sc-toast-message',
 })`
   display: block;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
 `
 
 export const Action = styled.span.withConfig({
   componentId: 'lsui-sc-toast-action',
 })`
   display: block;
-  color: ${token.colorBrandDefault};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.semantic.foreground.brand};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
 `

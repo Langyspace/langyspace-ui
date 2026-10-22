@@ -1,10 +1,5 @@
 import * as Styled from './PracticeCard.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export interface PracticeCardProps extends ComponentPropsWithRef<'button'> {
-  completed?: boolean
-}
+import type { PracticeCardProps } from './PracticeCard.types'
 
 export function PracticeCard({
   completed = false,

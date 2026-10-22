@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
-import { IconSlot } from '../../../src/internal/IconSlot/index'
-import * as Styled from '../../../src/internal/IconSlot/styles'
+import { IconSlot } from '../../../src/internal/IconSlot/IconSlot'
+import * as Styled from '../../../src/internal/IconSlot/IconSlot.styles'
 
 describe('IconSlot', () => {
   it('renders nothing when it has no content to show', () => {

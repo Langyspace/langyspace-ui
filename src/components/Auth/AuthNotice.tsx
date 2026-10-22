@@ -1,13 +1,5 @@
 import * as Styled from './AuthNotice.styles'
-
-import type { ComponentPropsWithoutRef, ReactNode } from 'react'
-
-export type AuthNoticeTone = 'error' | 'info'
-
-export interface AuthNoticeProps extends ComponentPropsWithoutRef<'p'> {
-  children: ReactNode
-  tone?: AuthNoticeTone
-}
+import type { AuthNoticeProps } from './AuthNotice.types'
 
 export function AuthNotice({
   children,

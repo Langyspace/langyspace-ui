@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, waitFor, within } from 'storybook/test'
-import {
-  ActionMenu,
-  type ActionMenuItem,
-} from '../../../src/components/ActionMenu/ActionMenu'
+import { ActionMenu } from '../../../src/components/ActionMenu/ActionMenu'
+import type { ActionMenuItem } from '../../../src/components/ActionMenu/ActionMenu.types'
 
 function StoryIcon({ kind = 'circle' }: { kind?: 'circle' | 'square' }) {
   return (
@@ -40,15 +38,15 @@ const defaultItems: readonly ActionMenuItem[] = [
 ]
 
 const keyboardItems: readonly ActionMenuItem[] = [
-  defaultItems[0],
+  defaultItems[0]!,
   {
     disabled: true,
     id: 'disabled',
     label: 'Ação indisponível',
     onSelect: () => undefined,
   },
-  defaultItems[1],
-  defaultItems[2],
+  defaultItems[1]!,
+  defaultItems[2]!,
 ]
 
 const meta = {
@@ -158,7 +156,7 @@ export const Loading: Story = {
         defaultOpen
         items={[
           {
-            isLoading: true,
+            loading: true,
             id: 'loading',
             label: 'Atualizando cadastro',
             onSelect: () => undefined,

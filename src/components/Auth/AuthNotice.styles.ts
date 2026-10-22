@@ -1,15 +1,15 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import type { AuthNoticeTone } from './AuthNotice'
+import type { AuthNoticeTone } from './AuthNotice.types'
+import { theme } from '../../foundations/theme/theme'
 
 const toneStyles = {
   error: css`
-    color: ${token.colorFeedbackDanger};
-    background-color: ${token.colorFeedbackDangerSoft};
+    color: ${theme.colors.feedback.danger};
+    background-color: ${theme.colors.feedback.dangerSubtle};
   `,
   info: css`
-    color: ${token.colorFeedbackInfo};
-    background-color: ${token.colorFeedbackInfoSoft};
+    color: ${theme.colors.feedback.info};
+    background-color: ${theme.colors.feedback.infoSubtle};
   `,
 } satisfies Record<AuthNoticeTone, ReturnType<typeof css>>
 
@@ -17,9 +17,9 @@ export const Notice = styled.p.withConfig({
   componentId: 'lsui-sc-auth-notice',
 })<{ $tone: AuthNoticeTone }>`
   margin: 0;
-  border-radius: ${token.radiusRounded};
-  padding: ${token.spacing3} ${token.spacing4};
-  font-size: ${token.typographyFontSizeSm};
+  border-radius: ${theme.radius.xl};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
+  font-size: ${theme.typography.fontSize.sm};
 
   ${({ $tone }) => toneStyles[$tone]}
 
@@ -31,7 +31,7 @@ export const Notice = styled.p.withConfig({
 
   a {
     color: inherit;
-    font-weight: ${token.typographyFontWeightSemibold};
+    font-weight: ${theme.typography.fontWeight.semibold};
     text-decoration-line: underline;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.18em;

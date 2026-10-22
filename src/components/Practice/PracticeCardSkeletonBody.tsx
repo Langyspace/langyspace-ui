@@ -1,11 +1,5 @@
 import * as Styled from './PracticeCardSkeletonBody.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export type PracticeCardSkeletonBodyProps = Omit<
-  ComponentPropsWithRef<'div'>,
-  'children' | 'aria-hidden' | 'role' | 'tabIndex'
->
+import type { PracticeCardSkeletonBodyProps } from './PracticeCardSkeletonBody.types'
 
 export function PracticeCardSkeletonBody(props: PracticeCardSkeletonBodyProps) {
   return (

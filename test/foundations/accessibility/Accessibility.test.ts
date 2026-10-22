@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   mergeIdRefs,
   type AccessibleName,
-} from '../../../src/foundations/accessibility/index'
+} from '../../../src/foundations/accessibility'
 
 describe('accessibility foundations', () => {
   it('combines, normalizes and deduplicates IDREF lists', () => {

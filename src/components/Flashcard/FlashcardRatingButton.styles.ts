@@ -1,7 +1,8 @@
 import { keyframes, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
-import * as token from '../../foundations/tokenValues'
-import type { FlashcardGrade } from './FlashcardRatingButton'
+import type { FlashcardGrade } from './FlashcardRatingButton.types'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 const rise = keyframes`
  from {opacity:0;transform:translateY(.625rem);}
@@ -10,34 +11,38 @@ const rise = keyframes`
 
 const tones = {
   again: {
-    fill: '#fef0f2',
-    border: '#e11d48',
-    text: '#991b1b',
-    glow: 'rgba(225,29,72,.12)',
-    hover: 'rgba(225,29,72,.5)',
+    fill: theme.colors.palette.extended.rose50,
+    border: theme.colors.palette.extended.rose600,
+    text: theme.semantic.status.danger.foreground,
+    glow: alpha(theme.colors.palette.extended.rose600, 0.12),
+    hover: alpha(theme.colors.palette.extended.rose600, 0.5),
   },
   hard: {
-    fill: '#fff3e0',
-    border: '#d97706',
-    text: '#854d0e',
-    glow: 'rgba(217,119,6,.12)',
-    hover: 'rgba(217,119,6,.5)',
+    fill: theme.colors.palette.extended.orange50,
+    border: theme.colors.palette.feedback.warning,
+    text: theme.colors.palette.extended.yellow800,
+    glow: alpha(theme.colors.palette.feedback.warning, 0.12),
+    hover: alpha(theme.colors.palette.feedback.warning, 0.5),
   },
   good: {
-    fill: '#dcfce7',
-    border: '#16a34a',
-    text: '#166534',
-    glow: 'rgba(22,163,74,.12)',
-    hover: 'rgba(22,163,74,.5)',
+    fill: theme.colors.palette.feedback.successSoft,
+    border: theme.colors.palette.feedback.success,
+    text: theme.semantic.status.success.foreground,
+    glow: alpha(theme.colors.palette.feedback.success, 0.12),
+    hover: alpha(theme.colors.palette.feedback.success, 0.5),
   },
   easy: {
-    fill: '#fff4f7',
-    border: '#ff1f5c',
-    text: token.colorBrandDefault,
-    glow: 'rgba(255,31,92,.12)',
-    hover: 'rgba(255,31,92,.5)',
+    fill: theme.colors.palette.accent.pinkTint,
+    border: theme.colors.palette.accent.pink,
+    text: theme.semantic.foreground.brand,
+    glow: alpha(theme.colors.palette.accent.pink, 0.12),
+    hover: alpha(theme.colors.palette.accent.pink, 0.5),
   },
 }
+
+export const Label = styled.span``
+
+export const Interval = styled.span``
 
 export const Button = styled(Pressable).withConfig({
   componentId: 'lsui-sc-flashcard-rating-button',
@@ -50,10 +55,10 @@ export const Button = styled(Pressable).withConfig({
   gap: 0.1875rem;
   padding: 0.75rem 0.25rem;
   border: 1.5px solid
-    ${({ $selected, $grade }) => ($selected ? tones[$grade].border : '#eceae6')};
+    ${({ $selected, $grade }) => ($selected ? tones[$grade].border : theme.colors.palette.extended.stone250)};
   border-radius: 1.0625rem;
-  color: ${token.colorContentDefault};
-  background: ${({ $selected, $grade }) => ($selected ? tones[$grade].fill : '#f6f6f3')};
+  color: ${theme.colors.text.primary};
+  background: ${({ $selected, $grade }) => ($selected ? tones[$grade].fill : theme.colors.palette.extended.stone100)};
   box-shadow: ${({ $selected, $grade }) => ($selected ? `0 0 0 3px ${tones[$grade].glow}` : 'none')};
   transition:
     transform 0.14s ease,
@@ -73,18 +78,17 @@ export const Button = styled(Pressable).withConfig({
   &:nth-child(4) {
     animation-delay: 0.14s;
   }
-  .label {
-    color: ${({ $selected, $grade }) => ($selected ? tones[$grade].text : '#5b5b58')};
+  ${Label} {
+    color: ${({ $selected, $grade }) => ($selected ? tones[$grade].text : theme.colors.palette.extended.stone600)};
     font-size: 0.96875rem;
-    font-weight: ${token.typographyFontWeightBold};
+    font-weight: ${theme.typography.fontWeight.bold};
     letter-spacing: 0;
   }
-  .interval {
-    color: ${token.colorContentMuted};
-    font-family:
-      'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  ${Interval} {
+    color: ${theme.colors.text.muted};
+    font-family: ${theme.typography.fontFamily.mono};
     font-size: 0.65625rem;
-    font-weight: ${token.typographyFontWeightMedium};
+    font-weight: ${theme.typography.fontWeight.medium};
   }
   &:active {
     transform: scale(0.96);
@@ -92,27 +96,27 @@ export const Button = styled(Pressable).withConfig({
   @media (hover: hover) {
     &:hover {
       border-color: ${({ $grade }) => tones[$grade].hover};
-      background: ${token.colorNeutral0};
+      background: ${theme.colors.palette.white};
     }
-    &:hover .label {
+    &:hover ${Label} {
       color: ${({ $grade }) => tones[$grade].text};
     }
   }
-  @media (max-width: 900px) and (max-height: 880px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.xl}) {
     min-height: 3.5rem;
     padding: 0.625rem 0.25rem;
   }
-  @media (max-width: 900px) and (max-height: 760px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.lg}) {
     min-height: 3.25rem;
     padding: 0.5rem 0.25rem;
-    .label {
-      font-size: ${token.typographyFontSizeSm};
+    ${Label} {
+      font-size: ${theme.typography.fontSize.sm};
     }
-    .interval {
+    ${Interval} {
       font-size: 0.625rem;
     }
   }
-  @media (max-width: 900px) and (max-height: 700px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.md}) {
     min-height: 3rem;
   }
   @media (prefers-reduced-motion: reduce) {

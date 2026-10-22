@@ -1,11 +1,5 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
 import * as Styled from './PracticeCardCover.styles'
-
-export interface PracticeCardCoverProps extends ComponentPropsWithRef<'div'> {
-  children: ReactNode
-  value?: ReactNode
-  label?: ReactNode
-}
+import type { PracticeCardCoverProps } from './PracticeCardCover.types'
 
 export function PracticeCardCover({
   children,

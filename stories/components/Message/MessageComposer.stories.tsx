@@ -98,7 +98,7 @@ export const States: Story = {
         value="Canal temporariamente indisponível"
       />
       <MessageComposer
-        isSubmitting
+        submitting
         onSubmit={() => undefined}
         onValueChange={() => undefined}
         submitIcon={sendIcon}

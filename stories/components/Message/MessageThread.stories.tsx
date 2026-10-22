@@ -5,7 +5,7 @@ import { styled } from 'styled-components'
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
 import { MessageComposer } from '../../../src/components/Message/MessageComposer'
 import { StatePanel } from '../../../src/components/StatePanel/StatePanel'
-import { tokens } from '../../../src/foundations/tokens'
+import { theme } from '../../../src/foundations/theme/theme'
 import { MessageThreadHeader } from '../../../src/components/Message/MessageThreadHeader'
 import { MessageThread } from '../../../src/components/Message/MessageThread'
 
@@ -26,25 +26,25 @@ const participantPhoto =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23ffe1ec'/%3E%3Ccircle cx='32' cy='24' r='12' fill='%23cc0f45'/%3E%3Cpath d='M12 62c2-14 10-22 20-22s18 8 20 22' fill='%23cc0f45'/%3E%3C/svg%3E"
 
 const ThreadSurface = styled.div<{ $short?: boolean }>`
-  width: min(calc(100% - ${tokens.spacing[8]}), 56rem);
+  width: min(calc(100% - ${theme.spacing[8]}), 56rem);
   height: ${({ $short }) => ($short ? '21rem' : '40rem')};
   min-width: 0;
   min-height: 0;
-  margin: ${tokens.spacing[4]} auto;
+  margin: ${theme.spacing[4]} auto;
 `
 
 const MessageList = styled.div`
   display: flex;
   min-width: 0;
   flex-direction: column;
-  gap: ${tokens.spacing[3]};
+  gap: ${theme.spacing[3]};
 `
 
 const Notice = styled.div`
-  margin-bottom: ${tokens.spacing[3]};
-  color: ${tokens.color.content.secondary};
-  font-size: ${tokens.typography.fontSize.sm};
-  line-height: ${tokens.typography.lineHeight.normal};
+  margin-bottom: ${theme.spacing[3]};
+  color: ${theme.colors.text.secondary};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
 `
 
 const denseMessages = Array.from({ length: 18 }, (_, index) => ({

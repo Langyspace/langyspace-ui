@@ -75,6 +75,10 @@ export default tseslint.config(
     },
     rules: {
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+      '@typescript-eslint/restrict-template-expressions': [
+        'error',
+        { allowNumber: true },
+      ],
       '@typescript-eslint/consistent-type-imports': [
         'error',
         { fixStyle: 'separate-type-imports' },
@@ -113,7 +117,9 @@ export default tseslint.config(
         },
       ],
       'langyspace/no-inline-styles': 'error',
+      'langyspace/no-raw-breakpoints': 'error',
       'langyspace/no-raw-colors': 'error',
+      'langyspace/no-raw-z-index': 'error',
       'no-restricted-imports': [
         'error',
         {
@@ -142,7 +148,9 @@ export default tseslint.config(
   {
     files: ['src/foundations/**/*.ts'],
     rules: {
+      'langyspace/no-raw-breakpoints': 'off',
       'langyspace/no-raw-colors': 'off',
+      'langyspace/no-raw-z-index': 'off',
     },
   },
   {

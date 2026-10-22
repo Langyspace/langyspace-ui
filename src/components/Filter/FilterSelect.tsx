@@ -1,17 +1,7 @@
 import { CompoundControl } from '../Form/CompoundControl'
 import { useFieldControlAttributes } from '../../internal/FieldControlContext'
 import * as Styled from './FilterSelect.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-import type { FieldControlSize } from '../../foundations/fields'
-
-export interface FilterSelectProps extends Omit<
-  ComponentPropsWithRef<'select'>,
-  'size' | 'multiple'
-> {
-  children: ReactNode
-  size?: FieldControlSize
-}
+import type { FilterSelectProps } from './FilterSelect.types'
 
 export function FilterSelect({
   className,

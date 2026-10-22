@@ -1,36 +1,17 @@
-import { forwardRef } from 'react'
 import { Avatar } from '../Avatar/Avatar'
 import * as Styled from './MessageThreadHeader.styles'
+import type { MessageThreadHeaderProps } from './MessageThreadHeader.types'
 
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface MessageThreadHeaderProps extends Omit<
-  ComponentPropsWithRef<'header'>,
-  'children' | 'title'
-> {
-  imageUrl?: string
-  initials: string
-  leadingAction?: ReactNode
-  subtitle?: string
-  title: string
-  trailingAction?: ReactNode
-}
-
-export const MessageThreadHeader = forwardRef<
-  HTMLElement,
-  MessageThreadHeaderProps
->(function MessageThreadHeader(
-  {
-    imageUrl,
-    initials,
-    leadingAction,
-    subtitle,
-    title,
-    trailingAction,
-    ...headerProps
-  },
+export function MessageThreadHeader({
+  imageUrl,
+  initials,
+  leadingAction,
+  subtitle,
+  title,
+  trailingAction,
   ref,
-) {
+  ...headerProps
+}: MessageThreadHeaderProps) {
   return (
     <Styled.Header
       {...headerProps}
@@ -63,4 +44,4 @@ export const MessageThreadHeader = forwardRef<
       ) : null}
     </Styled.Header>
   )
-})
+}

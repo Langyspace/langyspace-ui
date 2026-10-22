@@ -1,13 +1,14 @@
 import { styled } from 'styled-components'
-import { authRecipe } from '../../foundations/authRecipe'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Brand = styled.p.withConfig({
   componentId: 'lsui-sc-auth-brand-footer',
 })`
   margin-top: auto;
-  padding-top: ${authRecipe.spacing.responsive.block['2xl']};
-  color: rgba(255, 255, 255, 0.5);
-  font-size: ${authRecipe.typography.fontSize.xs};
+  padding-top: ${theme.spacing.responsive.block['2xl']};
+  color: ${alpha(theme.colors.palette.white, 0.5)};
+  font-size: ${theme.typography.fontSize.xs};
 `
 
 export const Mobile = styled.p.withConfig({
@@ -15,20 +16,20 @@ export const Mobile = styled.p.withConfig({
 })`
   display: none;
   margin-top: auto;
-  padding-top: ${authRecipe.spacing.responsive.compactBlock.sm};
-  padding-right: ${authRecipe.spacing[6]};
-  padding-bottom: ${authRecipe.spacing.responsive.compactBlock.md};
-  padding-left: ${authRecipe.spacing[6]};
-  color: ${authRecipe.colors.text.muted};
-  font-size: ${authRecipe.typography.fontSize.xs};
-  letter-spacing: ${authRecipe.typography.letterSpacing.wide};
+  padding-top: ${theme.spacing.responsive.compactBlock.sm};
+  padding-right: ${theme.spacing[6]};
+  padding-bottom: ${theme.spacing.responsive.compactBlock.md};
+  padding-left: ${theme.spacing[6]};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  letter-spacing: ${theme.typography.letterSpacing.wide};
   text-align: center;
 
-  @media (min-width: ${authRecipe.breakpoints.sm}) {
+  @media (min-width: ${theme.breakpoints.sm}) {
     display: block;
   }
 
-  @media (min-width: ${authRecipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     display: none;
   }
 `

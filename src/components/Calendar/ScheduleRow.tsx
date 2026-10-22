@@ -1,18 +1,5 @@
 import * as Styled from './ScheduleRow.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface ScheduleRowProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children' | 'onClick' | 'onKeyDown' | 'role' | 'tabIndex'
-> {
-  time: ReactNode
-  participant: ReactNode
-  actions?: ReactNode
-  muted?: boolean
-  onOpen: () => void
-  openLabel: string
-}
+import type { ScheduleRowProps } from './ScheduleRow.types'
 
 export function ScheduleRow({
   time,
@@ -29,11 +16,15 @@ export function ScheduleRow({
         <Styled.Time>{time}</Styled.Time>
         <Styled.Participant>{participant}</Styled.Participant>
       </Styled.OpenButton>
-      {actions && (
-        <Styled.Actions onClick={(event) => event.stopPropagation()}>
+      {actions ? (
+        <Styled.Actions
+          onClick={(event) => {
+            event.stopPropagation()
+          }}
+        >
           {actions}
         </Styled.Actions>
-      )}
+      ) : null}
     </Styled.Root>
   )
 }

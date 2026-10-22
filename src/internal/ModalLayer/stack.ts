@@ -46,7 +46,8 @@ export const unregisterModalLayer = (id: symbol) => {
   if (index === -1) return
 
   const [removedLayer] = layers.splice(index, 1)
-  removedLayer.element.inert = false
+
+  if (removedLayer) removedLayer.element.inert = false
   syncLayerInertState()
 
   if (layers.length === 0) unlockDocument()

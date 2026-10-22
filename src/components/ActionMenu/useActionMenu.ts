@@ -5,38 +5,16 @@ import {
   useMemo,
   useRef,
   useState,
-  useSyncExternalStore,
-  type KeyboardEvent as ReactKeyboardEvent,
 } from 'react'
-import { getActionMenuPosition, type ActionMenuPosition } from './position'
+import type { KeyboardEvent as ReactKeyboardEvent } from 'react'
+import { getActionMenuPosition } from './position'
+import type { ActionMenuPosition } from './position'
 import type { ActionMenuItem, ActionMenuProps } from './ActionMenu.types'
+import { getTabbableElements } from '../../internal/focus'
+import { useControllableState } from '../../internal/useControllableState'
+import { useIsClient } from '../../internal/useIsClient'
 
 type FocusIntent = 'first' | 'last'
-
-const tabbableSelector = [
-  'a[href]',
-  'button:not([disabled])',
-  'input:not([disabled]):not([type="hidden"])',
-  'select:not([disabled])',
-  'textarea:not([disabled])',
-  '[tabindex]:not([tabindex="-1"])',
-].join(',')
-
-const subscribeToClient = () => () => undefined
-
-const isTabbable = (element: HTMLElement) => {
-  if (
-    element.hidden ||
-    element.closest('[inert]') ||
-    element.getAttribute('aria-hidden') === 'true'
-  ) {
-    return false
-  }
-
-  const style = window.getComputedStyle(element)
-
-  return style.display !== 'none' && style.visibility !== 'hidden'
-}
 
 const normalizeItems = (items: readonly ActionMenuItem[]) => [
   ...items.filter((item) => item.tone !== 'danger'),
@@ -44,7 +22,7 @@ const normalizeItems = (items: readonly ActionMenuItem[]) => [
 ]
 
 const getEnabledItems = (items: readonly ActionMenuItem[]) =>
-  items.filter((item) => !item.disabled && !item.isLoading)
+  items.filter((item) => !item.disabled && !item.loading)
 
 type InteractionProps = Pick<
   ActionMenuProps,
@@ -59,20 +37,18 @@ export function useActionMenu({
   open,
   size = 'md',
 }: InteractionProps) {
-  const canUseDOM = useSyncExternalStore(
-    subscribeToClient,
-    () => true,
-    () => false,
-  )
-  const [internalOpen, setInternalOpen] = useState(defaultOpen)
+  const canUseDOM = useIsClient()
   const [activeItemId, setActiveItemId] = useState<string | null>(null)
   const [position, setPosition] = useState<ActionMenuPosition | null>(null)
-  const isControlled = open !== undefined
-  const isOpen = isControlled ? open : internalOpen
+  const [isOpen, requestOpen] = useControllableState({
+    defaultValue: defaultOpen,
+    onChange: onOpenChange,
+    value: open,
+  })
   const rootRef = useRef<HTMLDivElement | null>(null)
   const triggerRef = useRef<HTMLButtonElement | null>(null)
   const menuRef = useRef<HTMLDivElement | null>(null)
-  const itemRefs = useRef(new Map<string, HTMLButtonElement>())
+  const itemsRef = useRef(new Map<string, HTMLButtonElement>())
   const focusIntentRef = useRef<FocusIntent>('first')
   const normalizedItems = useMemo(() => normalizeItems(items), [items])
   const isMenuOpen = isOpen && canUseDOM && normalizedItems.length > 0
@@ -80,14 +56,6 @@ export function useActionMenu({
     () => getEnabledItems(normalizedItems),
     [normalizedItems],
   )
-  const requestOpen = useCallback(
-    (nextOpen: boolean) => {
-      if (!isControlled) setInternalOpen(nextOpen)
-      onOpenChange?.(nextOpen)
-    },
-    [isControlled, onOpenChange],
-  )
-
   const focusTrigger = useCallback(() => {
     if (triggerRef.current?.isConnected) {
       triggerRef.current.focus({ preventScroll: true })
@@ -97,7 +65,7 @@ export function useActionMenu({
   const focusItem = useCallback((item: ActionMenuItem | undefined) => {
     if (!item) return false
 
-    const node = itemRefs.current.get(item.id)
+    const node = itemsRef.current.get(item.id)
     if (!node?.isConnected) return false
 
     setActiveItemId(item.id)
@@ -111,9 +79,9 @@ export function useActionMenu({
     if (!trigger) return
 
     const menu = menuRef.current
-    const tabbables = Array.from(
-      document.querySelectorAll<HTMLElement>(tabbableSelector),
-    ).filter((element) => isTabbable(element) && !menu?.contains(element))
+    const tabbables = getTabbableElements(document).filter(
+      (element) => !menu?.contains(element),
+    )
     const triggerIndex = tabbables.indexOf(trigger)
     const target = tabbables[triggerIndex + (backward ? -1 : 1)]
 
@@ -266,7 +234,7 @@ export function useActionMenu({
     handleTriggerKeyDown,
     isMenuOpen,
     isOpen,
-    itemRefs,
+    itemsRef,
     menuRef,
     normalizedItems,
     openWithIntent,

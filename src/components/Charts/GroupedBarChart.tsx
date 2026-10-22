@@ -1,18 +1,5 @@
 import * as Styled from './GroupedBarChart.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export interface GroupedBarChartProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children'
-> {
-  items: readonly {
-    id: string
-    label: string
-    description: string
-    values: readonly number[]
-  }[]
-}
+import type { GroupedBarChartProps } from './GroupedBarChart.types'
 
 export function GroupedBarChart({
   items,
@@ -44,11 +31,14 @@ export function GroupedBarChart({
         <Styled.Day key={item.id} role="img" aria-label={item.description}>
           <Styled.Bars aria-hidden>
             {item.values.map((value, index) => (
-              <span
+              <Styled.Bar
+                // Each position is one series of the grouped chart.
+                // eslint-disable-next-line @eslint-react/no-array-index-key
                 key={index}
-                style={{
-                  height: `${Math.max(6, ((Number.isFinite(value) ? value : 0) / max) * 100)}%`,
-                }}
+                $height={Math.max(
+                  6,
+                  ((Number.isFinite(value) ? value : 0) / max) * 100,
+                )}
               />
             ))}
           </Styled.Bars>

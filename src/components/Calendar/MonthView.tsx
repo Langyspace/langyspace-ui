@@ -1,17 +1,22 @@
 import { useState } from 'react'
-import { CalendarDay } from './CalendarElements'
-import { CalendarDayNumber } from './CalendarElements'
-import { CalendarMonthGrid } from './CalendarElements'
+import {
+  CalendarDay,
+  CalendarDayNumber,
+  CalendarMonthGrid,
+} from './CalendarElements'
 import * as Styled from './ScheduleCalendar.styles'
 import type { ScheduleCalendarBodyProps } from './ScheduleCalendar.types'
+import { resolveScheduleCalendarLabels } from './scheduleCalendarLabels'
 
 export function MonthView({
   days,
   events,
+  labels,
   slots,
   onOpenEvent,
   onSlotClick,
 }: ScheduleCalendarBodyProps) {
+  const text = resolveScheduleCalendarLabels(labels)
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
 
   return (
@@ -39,11 +44,11 @@ export function MonthView({
           return (
             <CalendarDay
               key={day.id}
-              muted={Boolean(
+              muted={
                 day.outsideMonth ||
                 day.past ||
-                (!available && !dayEvents.length),
-              )}
+                (!available && dayEvents.length === 0)
+              }
               day={
                 <CalendarDayNumber
                   aria-current={day.today ? 'date' : undefined}
@@ -53,8 +58,10 @@ export function MonthView({
               }
               {...(actionable && onSlotClick
                 ? {
-                    openLabel: `${day.label} · Opções dos horários`,
-                    onOpen: () => onSlotClick(actionable.id),
+                    openLabel: text.dayOptions(day.label),
+                    onOpen: () => {
+                      onSlotClick(actionable.id)
+                    },
                   }
                 : { onOpen: undefined, openLabel: undefined })}
             >
@@ -67,7 +74,9 @@ export function MonthView({
                       aria-label={event.label}
                       title={event.label}
                       data-calendar-class-id={event.id}
-                      onClick={() => onOpenEvent(event.id)}
+                      onClick={() => {
+                        onOpenEvent(event.id)
+                      }}
                     >
                       <Styled.EventTime>{event.timeLabel}</Styled.EventTime>
                       {event.badge && (
@@ -80,16 +89,16 @@ export function MonthView({
                 {dayEvents.length > 3 && (
                   <Styled.More
                     aria-expanded={Boolean(expanded[day.id])}
-                    onClick={() =>
+                    onClick={() => {
                       setExpanded((current) => ({
                         ...current,
                         [day.id]: !current[day.id],
                       }))
-                    }
+                    }}
                   >
                     {expanded[day.id]
-                      ? 'Mostrar menos'
-                      : `+${dayEvents.length - 3} mais`}
+                      ? text.showFewerEvents
+                      : text.showMoreEvents(dayEvents.length - 3)}
                   </Styled.More>
                 )}
               </Styled.MonthEvents>

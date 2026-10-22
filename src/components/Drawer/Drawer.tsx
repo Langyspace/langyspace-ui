@@ -1,9 +1,6 @@
-import { ModalLayer } from '../../internal/ModalLayer'
+import { ModalLayer } from '../../internal/ModalLayer/ModalLayer'
 import { OverlayCloseButton } from '../IconButton/OverlayCloseButton'
-
-import type { OverlayShellProps } from '../../internal/ModalLayer/types'
-
-export type DrawerProps = OverlayShellProps
+import type { DrawerProps } from './Drawer.types'
 
 export function Drawer(props: DrawerProps) {
   return (
@@ -20,9 +17,3 @@ export function Drawer(props: DrawerProps) {
     />
   )
 }
-
-export type {
-  OverlayDismissal as DrawerDismissal,
-  OverlayPanelProps as DrawerPanelProps,
-  OverlaySize as DrawerSize,
-} from '../../internal/ModalLayer/types'

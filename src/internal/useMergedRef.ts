@@ -1,4 +1,5 @@
-import { useCallback, type Ref } from 'react'
+import { useCallback } from 'react'
+import type { Ref } from 'react'
 
 function attachRef<Element>(
   ref: Ref<Element> | undefined,

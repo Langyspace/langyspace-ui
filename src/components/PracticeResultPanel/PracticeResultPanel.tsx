@@ -1,16 +1,8 @@
 import * as Styled from './PracticeResultPanel.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface PracticeResultPanelProps extends ComponentPropsWithRef<'div'> {
-  children?: ReactNode
-  /** Heading content; native title remains the HTML tooltip. */
-  heading?: ReactNode
-  description?: ReactNode
-  actions?: ReactNode
-  /** null suppresses the default completion mark. */
-  icon?: ReactNode
-}
+import type {
+  PracticeResultPanelProps,
+  ResultMarkProps,
+} from './PracticeResultPanel.types'
 
 export function PracticeResultPanel({
   children,
@@ -42,11 +34,6 @@ export function PracticeResultPanel({
     </Styled.Panel>
   )
 }
-
-type ResultMarkProps = Omit<
-  ComponentPropsWithRef<'div'>,
-  'children' | 'aria-hidden'
->
 
 function ResultMark(props: ResultMarkProps) {
   return (

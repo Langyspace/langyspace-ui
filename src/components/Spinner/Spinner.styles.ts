@@ -1,6 +1,10 @@
 import { keyframes, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import type { SpinnerSize, SpinnerStyleProps } from './Spinner'
+import type { SpinnerSize } from './Spinner.types'
+import { theme } from '../../foundations/theme/theme'
+
+interface SpinnerStyleProps {
+  $size: SpinnerSize
+}
 
 const sizes = {
   inherit: '1em',
@@ -26,7 +30,7 @@ export const Spinner = styled.span.withConfig({
   border: 2px solid currentcolor;
   border-right-color: transparent;
   border-radius: 50%;
-  animation: ${spin} ${token.motionDurationSpinner} linear infinite;
+  animation: ${spin} ${theme.transitions.duration.spinner} linear infinite;
 
   @media (prefers-reduced-motion: reduce) {
     animation: none;

@@ -1,4 +1,6 @@
 import { styled } from 'styled-components'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-grouped-bar-chart',
@@ -12,7 +14,7 @@ export const Root = styled.div.withConfig({
   padding-bottom: 8px;
   overflow-x: auto;
   &:focus-visible {
-    outline: 3px solid rgba(0, 242, 234, 0.72);
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: 2px;
   }
 `
@@ -24,11 +26,15 @@ export const Day = styled.div`
   height: 100%;
   gap: 8px;
   small {
-    color: rgba(17, 17, 17, 0.64);
+    color: ${alpha(theme.colors.palette.extended.ink, 0.64)};
     font-size: 12px;
     text-align: center;
   }
 `
+
+export const Bar = styled.span.attrs<{ $height: number }>(({ $height }) => ({
+  style: { height: `${$height}%` },
+}))``
 
 export const Bars = styled.div`
   display: grid;
@@ -37,12 +43,12 @@ export const Bars = styled.div`
   align-items: end;
   height: 176px;
   gap: 2px;
-  span {
+  ${Bar} {
     min-height: 6px;
     border-radius: 4px 4px 0 0;
-    background: #111;
+    background: ${theme.colors.palette.extended.ink};
   }
-  span:nth-child(2n) {
-    background: #007f78;
+  ${Bar}:nth-child(2n) {
+    background: ${theme.colors.palette.extended.teal700};
   }
 `

@@ -10,49 +10,13 @@ import {
   formatPostalCode,
   maskedEdit,
 } from './CardDetailsFields.format'
-import type { HTMLInputAutoCompleteAttribute, ReactNode } from 'react'
+import type {
+  CardDetailsFieldDefinition,
+  CardDetailsFieldsLabels,
+  CardDetailsFieldsProps,
+} from './CardDetailsFields.types'
 
-/** Numeric fields contain digits only; formatting never enters the consumer's payload. */
-export interface CardDetailsValue {
-  holderName: string
-  number: string
-  expiry: string
-  securityCode: string
-  documentNumber: string
-  email: string
-  postalCode: string
-  addressNumber: string
-  phone: string
-}
-
-export type CardPostalCodeLookup =
-  | { status: 'idle' | 'loading' | 'not_found' | 'error' }
-  | { status: 'found'; address: string }
-
-export interface CardDetailsFieldsProps {
-  value: CardDetailsValue
-  onChange: (value: CardDetailsValue) => void
-  disabled?: boolean
-  postalCodeLookup?: CardPostalCodeLookup
-  onRetryPostalCode?: () => void
-  /** A consumer may supply its existing country-aware phone control. */
-  phoneField?: ReactNode
-}
-
-const fields: Array<{
-  name: keyof CardDetailsValue
-  label: string
-  accessibleLabel?: string
-  autoComplete: HTMLInputAutoCompleteAttribute
-  limit: number
-  maxLength?: number
-  span: number
-  wide?: boolean
-  numeric?: boolean
-  pattern?: string
-  placeholder?: string
-  format?: (value: string) => string
-}> = [
+const fields: readonly CardDetailsFieldDefinition[] = [
   {
     name: 'holderName',
     label: 'Nome do titular',
@@ -147,6 +111,14 @@ const fields: Array<{
   },
 ]
 
+const defaultLabels: CardDetailsFieldsLabels = {
+  fields: {},
+  postalCodeLookupFailed:
+    'Não foi possível consultar o CEP. Confira o endereço da fatura ou tente novamente.',
+  postalCodeNotFound: 'CEP não encontrado. Confira os números.',
+  retryPostalCode: 'Consultar CEP novamente',
+}
+
 /** Presentation only: no network, persistence, analytics, card registration or submission. */
 export function CardDetailsFields({
   value,
@@ -155,11 +127,13 @@ export function CardDetailsFields({
   postalCodeLookup,
   onRetryPostalCode,
   phoneField,
+  labels,
 }: CardDetailsFieldsProps) {
   const addressId = useId()
+  const text = { ...defaultLabels, ...labels }
   const postalError =
     postalCodeLookup?.status === 'not_found'
-      ? 'CEP não encontrado. Confira os números.'
+      ? text.postalCodeNotFound
       : undefined
   return (
     <Styled.Grid
@@ -172,7 +146,7 @@ export function CardDetailsFields({
         ) : (
           <Styled.Field
             key={field.name}
-            label={field.label}
+            label={text.fields[field.name] ?? field.label}
             $span={field.span}
             $wide={field.wide}
             error={field.name === 'postalCode' ? postalError : undefined}
@@ -241,8 +215,7 @@ export function CardDetailsFields({
       ) : null}
       {postalCodeLookup?.status === 'error' ? (
         <Styled.Address id={addressId} role="status">
-          Não foi possível consultar o CEP. Confira o endereço da fatura ou
-          tente novamente.{' '}
+          {text.postalCodeLookupFailed}{' '}
           {onRetryPostalCode ? (
             <Button
               type="button"
@@ -251,7 +224,7 @@ export function CardDetailsFields({
               disabled={disabled}
               onClick={onRetryPostalCode}
             >
-              Consultar CEP novamente
+              {text.retryPostalCode}
             </Button>
           ) : null}
         </Styled.Address>

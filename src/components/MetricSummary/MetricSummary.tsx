@@ -1,13 +1,5 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
 import * as Styled from './MetricSummary.styles'
-
-export interface MetricSummaryProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children'
-> {
-  value: ReactNode
-  label: ReactNode
-}
+import type { MetricSummaryProps } from './MetricSummary.types'
 
 export function MetricSummary({ value, label, ...props }: MetricSummaryProps) {
   return (

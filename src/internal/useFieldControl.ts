@@ -1,7 +1,7 @@
 import type { FieldControlSize } from '../foundations/fields'
 import { useCompoundControlContext } from './CompoundControlContext'
 import { useFieldControlAttributes } from './FieldControlContext'
-import type { FieldControlNativeAttributes } from './FieldControlContext/types'
+import type { FieldControlNativeAttributes } from './FieldControlContext.types'
 
 type NativeControlAttributes = FieldControlNativeAttributes & {
   disabled?: boolean

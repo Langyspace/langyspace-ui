@@ -5,7 +5,7 @@ import { Avatar } from '../../../src/components/Avatar/Avatar'
 import type {
   AvatarSize,
   AvatarTone,
-} from '../../../src/components/Avatar/Avatar'
+} from '../../../src/components/Avatar/Avatar.types'
 
 describe('Avatar', () => {
   it('renders the default decorative identity on a native span', () => {

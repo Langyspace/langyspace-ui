@@ -11,20 +11,25 @@ import type {
   ScheduleCalendarBodyProps,
   ScheduleCalendarSlot,
 } from './ScheduleCalendar.types'
+import { resolveScheduleCalendarLabels } from './scheduleCalendarLabels'
+
+const defaultTimeRange = { startMinute: 480, endMinute: 1320 } as const
 
 export function WeekView({
   days,
   events,
+  labels,
   slots,
-  timeRange = { startMinute: 480, endMinute: 1320 },
+  timeRange = defaultTimeRange,
   onOpenEvent,
   onSlotClick,
   onSlotSelection,
 }: ScheduleCalendarBodyProps) {
+  const text = resolveScheduleCalendarLabels(labels)
   const [anchor, setAnchor] = useState<ScheduleCalendarSlot>()
   const [target, setTarget] = useState<ScheduleCalendarSlot>()
-  const suppressClick = useRef(false)
-  const buttons = useRef(new Map<string, HTMLButtonElement>())
+  const suppressClickRef = useRef(false)
+  const buttonsRef = useRef(new Map<string, HTMLButtonElement>())
   const times = Array.from(
     { length: Math.ceil((timeRange.endMinute - timeRange.startMinute) / 30) },
     (_, index) => timeRange.startMinute + index * 30,
@@ -42,7 +47,7 @@ export function WeekView({
     if (!anchor) return
     const selection = getScheduleSelection(days, slots, anchor, slot ?? target)
     if (selection.length > 1) {
-      suppressClick.current = pointer
+      suppressClickRef.current = pointer
       onSlotSelection?.(selection.map((item) => item.id))
     }
     reset()
@@ -51,7 +56,7 @@ export function WeekView({
     event: KeyboardEvent<HTMLButtonElement>,
     slot?: ScheduleCalendarSlot,
   ) => {
-    suppressClick.current = false
+    suppressClickRef.current = false
     if (!slot) return
     if (event.key === 'Escape') {
       reset()
@@ -82,7 +87,7 @@ export function WeekView({
     event.preventDefault()
     if (!anchor && isSelectableScheduleSlot(slot)) setAnchor(slot)
     setTarget(next)
-    buttons.current.get(next.id)?.focus()
+    buttonsRef.current.get(next.id)?.focus()
   }
 
   return (
@@ -117,8 +122,8 @@ export function WeekView({
               <Styled.Slot
                 key={minute}
                 ref={(element) => {
-                  if (slot && element) buttons.current.set(slot.id, element)
-                  else if (slot) buttons.current.delete(slot.id)
+                  if (slot && element) buttonsRef.current.set(slot.id, element)
+                  else if (slot) buttonsRef.current.delete(slot.id)
                 }}
                 tone={
                   slot?.state === 'available' || slot?.state === 'occupied'
@@ -129,16 +134,20 @@ export function WeekView({
                 aria-pressed={Boolean(slot && selectedIds.has(slot.id))}
                 aria-label={
                   slot?.label ??
-                  `${day.label} ${formatScheduleMinute(minute)} · Indisponível`
+                  text.unavailableSlot(
+                    `${day.label} ${formatScheduleMinute(minute)}`,
+                  )
                 }
                 aria-disabled={!interactive}
                 tabIndex={interactive ? 0 : -1}
                 title={slot?.label}
                 data-calendar-slot-id={slot?.id}
                 data-calendar-start-minute={minute}
-                onKeyDown={(event) => keyDown(event, slot)}
+                onKeyDown={(event) => {
+                  keyDown(event, slot)
+                }}
                 onPointerDown={(event) => {
-                  suppressClick.current = false
+                  suppressClickRef.current = false
                   if (
                     event.button === 0 &&
                     event.pointerType !== 'touch' &&
@@ -152,10 +161,12 @@ export function WeekView({
                 onPointerEnter={() => {
                   if (anchor && slot) setTarget(slot)
                 }}
-                onPointerUp={() => finish(slot, true)}
+                onPointerUp={() => {
+                  finish(slot, true)
+                }}
                 onClick={() => {
-                  if (suppressClick.current) {
-                    suppressClick.current = false
+                  if (suppressClickRef.current) {
+                    suppressClickRef.current = false
 
                     return
                   }
@@ -173,16 +184,15 @@ export function WeekView({
                 <Styled.Event
                   key={event.id}
                   tone={event.tone ?? 'neutral'}
-                  style={{
-                    top:
-                      ((event.startMinute - timeRange.startMinute) / 60) * 56,
-                    height,
-                  }}
+                  $top={((event.startMinute - timeRange.startMinute) / 60) * 56}
+                  $height={height}
                   aria-label={event.label}
                   title={event.label}
                   data-compact={event.durationMinutes <= 30}
                   data-calendar-class-id={event.id}
-                  onClick={() => onOpenEvent(event.id)}
+                  onClick={() => {
+                    onOpenEvent(event.id)
+                  }}
                 >
                   <Styled.EventTime>{event.timeLabel}</Styled.EventTime>
                   <Styled.EventName>{event.title}</Styled.EventName>

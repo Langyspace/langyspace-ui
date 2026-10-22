@@ -1,18 +1,13 @@
-import { useContext } from 'react'
+import { use } from 'react'
 import { FlashcardFlipContext } from '../../internal/FlashcardFlipContext'
 import * as Styled from './FlashcardFace.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export interface FlashcardFaceProps extends ComponentPropsWithRef<'div'> {
-  side?: 'front' | 'back'
-}
+import type { FlashcardFaceProps } from './FlashcardFace.types'
 
 export function FlashcardFace({
   side = 'front',
   ...props
 }: FlashcardFaceProps) {
-  const flipped = useContext(FlashcardFlipContext)
+  const flipped = use(FlashcardFlipContext)
   const hidden =
     flipped !== undefined && (side === 'front' ? flipped : !flipped)
 

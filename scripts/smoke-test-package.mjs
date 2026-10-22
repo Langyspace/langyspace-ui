@@ -78,7 +78,8 @@ async function writeConsumer(packageSpec) {
   )
   await writeFile(
     join(consumerDirectory, 'src', 'main.tsx'),
-    `import { ScheduleCalendar, AuthBrandContent, AuthFooter, AuthHeader, AuthActions, FlashcardProgress, BrandLogo, DocumentHeader, DocumentHeaderContent, DocumentNavigation, BrandLink, DocumentNavigationLink, FormStack, FieldLabelRow, FieldCounter, FormError, FormActions, FilterSelect, FileInput, InlineNotice, StatCard, DefinitionItem, DetailRow, MetricSummary, SidebarFrame, SidebarNavigation, NavigationLink, NavigationButton, NotificationItem, ConversationRow, BottomNavigation, BottomNavigationLink, CalendarScroller, FlashcardAudioButton, FlashcardFlipButton, FlashcardWordSkeleton, FlashcardFrame, FlashcardStage, FlashcardDeck, FlashcardFront, FlashcardImagePanel, FlashcardWord, FlashcardBack, FlashcardFlipHint, FlashcardFace, FlashcardGhost, FlashcardFlip, FlashcardSwiper, FlashcardFeedback, KeyValueList, GroupedBarChart, WeeklyCountChart, Checkbox, RadioButton, ToggleButton, ChoiceCard, Skeleton, ShadowingPanel, ShadowingReader, ShadowingPhraseStack, ShadowingContextPhrase, ShadowingActivePhrase, ShadowingTranslation, ShadowingControlDock, ShadowingControlCluster, ShadowingRepetitions, AuthChannelHint, AuthChannelIcon, AuthTokenLabel, AuthLegalText, PageTitle, PageDescription, SessionProgress, ScheduleRow, PracticeCard, PracticeCardCover, PracticeLevelBadge, QuizQuestion, QuizBlank, QuizPromptHeader, QuizMetadata, QuizBadge, ConnectionNotice, CardLink, ShadowingWord, AuthEyebrow, AuthForm, AuthResendAction, AuthProgress, AuthTopLink, AuthSuccessState, PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, ControlledField, Dialog, DocumentLayout, NoticeBanner, Drawer, FieldRoot, FilterPills, FilterToolbar, IconButton, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, CardDetailsFields, ToastItem, ToastViewport } from '@langyspace/ui'
+    `import { ScheduleCalendar, AuthBrandContent, AuthFooter, AuthHeader, AuthActions, FlashcardProgress, BrandLogo, DocumentHeader, DocumentHeaderContent, DocumentNavigation, BrandLink, DocumentNavigationLink, FormStack, FieldLabelRow, FieldCounter, FormError, FormActions, FilterSelect, FileInput, InlineNotice, StatCard, DefinitionItem, DetailRow, MetricSummary, SidebarFrame, SidebarNavigation, NavigationLink, NavigationButton, NotificationItem, ConversationRow, BottomNavigation, BottomNavigationLink, CalendarScroller, FlashcardAudioButton, FlashcardFlipButton, FlashcardWordSkeleton, FlashcardFrame, FlashcardStage, FlashcardDeck, FlashcardFront, FlashcardImagePanel, FlashcardWord, FlashcardBack, FlashcardFlipHint, FlashcardFace, FlashcardGhost, FlashcardFlip, FlashcardSwiper, FlashcardFeedback, KeyValueList, GroupedBarChart, WeeklyCountChart, Checkbox, RadioButton, ToggleButton, ChoiceCard, Skeleton, ShadowingPanel, ShadowingReader, ShadowingPhraseStack, ShadowingContextPhrase, ShadowingActivePhrase, ShadowingTranslation, ShadowingControlDock, ShadowingControlCluster, ShadowingRepetitions, AuthChannelHint, AuthChannelIcon, AuthTokenLabel, AuthLegalText, PageTitle, PageDescription, SessionProgress, ScheduleRow, PracticeCard, PracticeCardCover, PracticeLevelBadge, QuizQuestion, QuizBlank, QuizPromptHeader, QuizMetadata, QuizBadge, ConnectionNotice, CardLink, ShadowingWord, AuthEyebrow, AuthForm, AuthResendAction, AuthProgress, AuthTopLink, AuthSuccessState, PracticeResultPanel, QuizSessionHeader, ActionLink, ActionMenu, PracticePlaybackControls, FlashcardRatingButton, QuizOption, QuizFeedback, PracticeCardBody, CalendarControls, AuthFrame, AuthNotice, AuthTokenDigits, AvailabilityCalendar, Avatar, Button, Card, CompoundControl, Dialog, DocumentLayout, NoticeBanner, Drawer, FieldRoot, FilterPills, FilterToolbar, IconButton, MessageBubble, MessageComposer, MessageThread, MessageThreadHeader, OperationalList, Pressable, PhoneField, PracticeCardSkeletonBody, PracticeProgressBar, SearchInput, SectionHeader, SegmentedControl, SelectInput, Spinner, StatePanel, StatusChip, TextareaInput, TextInput, CardDetailsFields, ToastItem, ToastProvider, Toaster, ToastViewport } from '@langyspace/ui'
+import { ControlledField } from '@langyspace/ui/form'
 import type { AuditConfig } from '@langyspace/ui/audit'
 import { createRoot } from 'react-dom/client'
 import { FormProvider, useForm } from 'react-hook-form'
@@ -175,11 +176,13 @@ createRoot(document.getElementById('root')!).render(
     <Card>Package card passed</Card>
     <FilterToolbar aria-label="Package filters"><Button>Filter toolbar passed</Button></FilterToolbar>
     <SectionHeader meta="4 items" title="Package section header passed" />
-    <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onChange={() => undefined} />
-    <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onChange={() => undefined} />
-    <AuthTokenDigits aria-label="Code" autoFocus={false} digitLabel="Digit" idPrefix="code" length={4} onTokenChange={() => undefined} />
+    <FilterPills aria-label="Filters" options={[{ label: 'All', value: 'all' }]} value="all" onValueChange={() => undefined} />
+    <SegmentedControl aria-label="Range" options={[{ label: '30 days', value: '30' }]} value="30" onValueChange={() => undefined} />
+    <AuthTokenDigits aria-label="Code" autoFocus={false} digitLabel="Digit" idPrefix="code" length={4} onValueChange={() => undefined} />
 
     <ToastViewport><ToastItem message="Package toast passed" /></ToastViewport>
+    <Toaster toasts={[{ id: 'package', message: 'Package toaster passed' }]} onDismiss={() => undefined} />
+    <ToastProvider>Package toast provider</ToastProvider>
     <DocumentLayout title="Package document passed" sections={[{title:"Section",body:["Text"]}]} />
     <NoticeBanner title="Package notice passed" icon={<span aria-hidden="true">!</span>}>Notice text</NoticeBanner>
 
@@ -287,6 +290,7 @@ try {
       'audit',
       'dist',
       'docs',
+      'eslint',
       'package.json',
     ])
   ) {
@@ -306,16 +310,32 @@ try {
   if (
     installedPackageJson.sideEffects !== false ||
     JSON.stringify(Object.keys(installedPackageJson.exports).sort()) !==
-      JSON.stringify(['.', './audit']) ||
+      JSON.stringify(['.', './audit', './eslint', './form']) ||
     installedPackageJson.bin?.['langyspace-ui-audit'] !== './audit/cli.mjs' ||
     installedPackageJson.peerDependencies?.react !== '>=19 <20' ||
     installedPackageJson.peerDependencies?.['react-dom'] !== '>=19 <20' ||
     installedPackageJson.peerDependencies?.['react-hook-form'] !== '>=7 <8' ||
+    installedPackageJson.peerDependenciesMeta?.['react-hook-form']?.optional !==
+      true ||
     installedPackageJson.peerDependencies?.['styled-components'] !== '>=6 <7'
   ) {
     throw new Error('installed_package_contract_mismatch')
   }
 
+  run(
+    'node',
+    ['--input-type=module', '--eval', "await import('@langyspace/ui/form')"],
+    consumerDirectory,
+  )
+  run(
+    'node',
+    [
+      '--input-type=module',
+      '--eval',
+      "const { productConfig } = await import('@langyspace/ui/eslint'); if (!productConfig.plugins.langyspace.rules['no-raw-colors']) throw new Error('eslint_plugin_missing')",
+    ],
+    consumerDirectory,
+  )
   run(
     'node',
     ['--input-type=module', '--eval', "await import('@langyspace/ui')"],

@@ -1,16 +1,16 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import type { FieldControlSize } from '../../foundations/fields'
+import { theme } from '../../foundations/theme/theme'
 
 const fontStyles = {
   lg: css`
-    font-size: ${token.typographyFontSizeMd};
+    font-size: ${theme.typography.fontSize.md};
   `,
   md: css`
-    font-size: ${token.typographyFontSizeSm};
+    font-size: ${theme.typography.fontSize.sm};
   `,
   sm: css`
-    font-size: ${token.typographyFontSizeSm};
+    font-size: ${theme.typography.fontSize.sm};
   `,
 } satisfies Record<FieldControlSize, ReturnType<typeof css>>
 
@@ -27,7 +27,7 @@ export const Input = styled.input.withConfig({
   appearance: none;
   background: transparent;
   box-shadow: none;
-  color: ${token.colorContentDefault};
+  color: ${theme.colors.text.primary};
   font-family: inherit;
   padding: 0;
 
@@ -46,11 +46,11 @@ export const Input = styled.input.withConfig({
   }
 
   &::placeholder {
-    color: ${token.colorContentPlaceholder};
+    color: ${theme.semantic.foreground.placeholder};
   }
 
   &:disabled {
-    color: ${token.colorContentMuted};
+    color: ${theme.colors.text.muted};
     cursor: default;
   }
 `

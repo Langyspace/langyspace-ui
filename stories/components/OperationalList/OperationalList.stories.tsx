@@ -5,14 +5,14 @@ import { expect, waitFor, within } from 'storybook/test'
 import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { Button } from '../../../src/components/Button/Button'
 import { StatusChip } from '../../../src/components/StatusChip/StatusChip'
-import { tokens } from '../../../src/foundations/tokens'
-import {
-  OperationalList,
-  type OperationalListColumn,
-  type OperationalListItemAction,
-  type OperationalListPrimaryColumn,
-  type OperationalListSortDirection,
-} from '../../../src/components/OperationalList/OperationalList'
+import { theme } from '../../../src/foundations/theme/theme'
+import { OperationalList } from '../../../src/components/OperationalList/OperationalList'
+import type {
+  OperationalListColumn,
+  OperationalListItemAction,
+  OperationalListPrimaryColumn,
+  OperationalListSortDirection,
+} from '../../../src/components/OperationalList/OperationalList.types'
 
 interface QueueItem {
   email: string
@@ -64,8 +64,8 @@ const Page = styled.div`
   box-sizing: border-box;
   width: 100%;
   min-height: 100vh;
-  padding: ${tokens.spacing[6]};
-  background: ${tokens.color.surface.muted};
+  padding: ${theme.spacing[6]};
+  background: ${theme.semantic.background.muted};
 `
 
 const StoryContainer = styled.div<{ $maxWidth?: string }>`
@@ -79,19 +79,19 @@ const StoryHeader = styled.div`
   flex-wrap: wrap;
   align-items: end;
   justify-content: space-between;
-  gap: ${tokens.spacing[3]};
-  margin-bottom: ${tokens.spacing[4]};
+  gap: ${theme.spacing[3]};
+  margin-bottom: ${theme.spacing[4]};
 `
 
 const Heading = styled.h2`
   margin: 0;
-  font-size: ${tokens.typography.fontSize.xl};
-  line-height: ${tokens.typography.lineHeight.snug};
+  font-size: ${theme.typography.fontSize.xl};
+  line-height: ${theme.typography.lineHeight.snug};
 `
 
 const Muted = styled.span`
-  color: ${tokens.color.content.muted};
-  font-size: ${tokens.typography.fontSize.sm};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
 `
 
 const ScrollFixture = styled.div`
@@ -396,7 +396,7 @@ export const DisabledAndLoading: Story = {
       getActions={(item) => [
         {
           id: 'convert',
-          isLoading: true,
+          loading: true,
           label: 'Convertendo em aluna',
           onSelect: () => undefined,
           placement: 'primary',
@@ -448,7 +448,7 @@ export const Empty: Story = {
             <div>
               <Heading>Nenhum registro neste recorte</Heading>
               <Muted>Remova os filtros ou atualize a busca.</Muted>
-              <div style={{ marginTop: tokens.spacing[4] }}>
+              <div style={{ marginTop: theme.spacing[4] }}>
                 <Button variant="secondary">Limpar filtros</Button>
               </div>
             </div>
@@ -484,7 +484,7 @@ export const LongLocalizedContent: Story = {
       ]}
       items={[
         {
-          ...queueItems[0],
+          ...queueItems[0]!,
           email:
             'responsavel.financeiro.com.nome.muito.extenso@instituicao-internacional.example.com',
           name: 'Ana Beatriz de Albuquerque e Vasconcelos Ferreira',
@@ -511,7 +511,7 @@ export const NoActions: Story = {
 }
 
 const fiftyRows = Array.from({ length: 50 }, (_, index): QueueItem => {
-  const base = queueItems[index % queueItems.length]
+  const base = queueItems[index % queueItems.length]!
 
   return {
     ...base,
@@ -543,8 +543,8 @@ export const FiftyRows: Story = {
     const body = within(canvasElement.ownerDocument.body)
     const triggers = body.getAllByRole('button', { name: 'Mais ações' })
 
-    await userEvent.click(triggers[0])
-    await userEvent.click(triggers[1])
+    await userEvent.click(triggers[0]!)
+    await userEvent.click(triggers[1]!)
     await waitFor(() => expect(body.getAllByRole('menu')).toHaveLength(1))
   },
 }

@@ -154,7 +154,7 @@ describe('Button', () => {
     expect(onClick).toHaveBeenCalledTimes(2)
 
     rerender(
-      <Button isLoading onClick={onClick} variant="text">
+      <Button loading onClick={onClick} variant="text">
         Editar detalhes
       </Button>,
     )
@@ -198,7 +198,7 @@ describe('Button', () => {
     render(
       <Button
         iconStart={<span data-testid="consumer-icon" />}
-        isLoading
+        loading
         onClick={onClick}
       >
         Salvar alterações
@@ -226,7 +226,7 @@ describe('Button', () => {
 
   it('always replaces or creates the ending slot with one spinner', () => {
     const { rerender } = render(
-      <Button iconEnd={<svg data-testid="end" />} isLoading>
+      <Button iconEnd={<svg data-testid="end" />} loading>
         <span data-testid="label">Salvar</span>
       </Button>,
     )
@@ -242,7 +242,7 @@ describe('Button', () => {
       <Button
         iconEnd={<svg data-testid="end" />}
         iconStart={<svg data-testid="start" />}
-        isLoading
+        loading
       >
         <span data-testid="label">Salvar</span>
       </Button>,
@@ -272,7 +272,7 @@ describe('Button', () => {
     expect(button).not.toBeDisabled()
 
     rerender(
-      <Button aria-busy="false" disabled={false} isLoading type="submit">
+      <Button aria-busy="false" disabled={false} loading type="submit">
         Enviar
       </Button>,
     )

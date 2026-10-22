@@ -1,18 +1,11 @@
 import { Button } from '../Button/Button'
 import { IconButton } from '../IconButton/IconButton'
 import { ActionMenu } from '../ActionMenu/ActionMenu'
-import type { NormalizedOperationalListActions } from './normalizeActions'
 import * as Styled from './OperationalList.styles'
-import type { OperationalListDensity } from './OperationalList.types'
-
-interface RowActionsProps {
-  actions: NormalizedOperationalListActions
-  density: OperationalListDensity
-  menuOpen: boolean
-  onMenuOpenChange: (open: boolean) => void
-}
+import type { RowActionsProps } from './RowActions.types'
 
 export function OperationalRowActions({
+  moreActionsLabel,
   actions,
   density,
   menuOpen,
@@ -28,7 +21,7 @@ export function OperationalRowActions({
             density={density}
             disabled={actions.primary.disabled}
             iconStart={actions.primary.icon}
-            isLoading={actions.primary.isLoading}
+            loading={actions.primary.loading}
             size={size}
             variant={actions.primary.variant ?? 'primary'}
             onClick={actions.primary.onSelect}
@@ -43,7 +36,7 @@ export function OperationalRowActions({
             <IconButton
               aria-label={action.label}
               disabled={action.disabled}
-              isLoading={action.isLoading}
+              loading={action.loading}
               key={action.id}
               size={size}
               variant="neutral"
@@ -60,7 +53,7 @@ export function OperationalRowActions({
             items={actions.overflow}
             open={menuOpen}
             size={size}
-            triggerLabel="Mais ações"
+            triggerLabel={moreActionsLabel}
             onOpenChange={onMenuOpenChange}
           />
         </div>

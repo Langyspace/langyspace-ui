@@ -1,20 +1,7 @@
+import { useMemo } from 'react'
 import { CompoundControlContext } from '../../internal/CompoundControlContext'
 import * as Styled from './CompoundControl.styles'
-
-import type { HTMLAttributes, ReactNode } from 'react'
-import type { FieldControlSize } from '../../foundations/fields'
-
-export type CompoundControlSurface = 'surface' | 'muted'
-
-export interface CompoundControlProps extends HTMLAttributes<HTMLDivElement> {
-  children: ReactNode
-  disabled?: boolean
-  invalid?: boolean
-  leading?: ReactNode
-  size?: FieldControlSize
-  surface?: CompoundControlSurface
-  trailing?: ReactNode
-}
+import type { CompoundControlProps } from './CompoundControl.types'
 
 export function CompoundControl({
   children,
@@ -26,8 +13,13 @@ export function CompoundControl({
   trailing,
   ...props
 }: CompoundControlProps) {
+  const context = useMemo(
+    () => ({ disabled, invalid, size }),
+    [disabled, invalid, size],
+  )
+
   return (
-    <CompoundControlContext.Provider value={{ disabled, invalid, size }}>
+    <CompoundControlContext value={context}>
       <Styled.Root
         {...props}
         $disabled={disabled}
@@ -45,6 +37,6 @@ export function CompoundControl({
         {children}
         {trailing ? <Styled.Slot>{trailing}</Styled.Slot> : null}
       </Styled.Root>
-    </CompoundControlContext.Provider>
+    </CompoundControlContext>
   )
 }

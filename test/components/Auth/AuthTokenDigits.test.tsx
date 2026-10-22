@@ -6,7 +6,7 @@ import { AuthTokenDigits } from '../../../src/components/Auth/AuthTokenDigits'
 
 describe('AuthTokenDigits', () => {
   it('supports uncontrolled digit entry, sanitization, focus and backspace', async () => {
-    const onTokenChange = vi.fn()
+    const onValueChange = vi.fn()
     const user = userEvent.setup()
 
     render(
@@ -16,15 +16,15 @@ describe('AuthTokenDigits', () => {
         digitLabel="Dígito"
         idPrefix="login-code"
         length={4}
-        onTokenChange={onTokenChange}
+        onValueChange={onValueChange}
       />,
     )
 
     const digits = screen.getAllByRole('textbox')
 
-    await user.type(digits[0], 'a1')
+    await user.type(digits[0]!, 'a1')
 
-    expect(onTokenChange).toHaveBeenLastCalledWith('1')
+    expect(onValueChange).toHaveBeenLastCalledWith('1')
     expect(digits[1]).toHaveFocus()
 
     await user.keyboard('{Backspace}')
@@ -33,7 +33,7 @@ describe('AuthTokenDigits', () => {
   })
 
   it('supports full paste and a controlled value without owning flow state', () => {
-    const onTokenChange = vi.fn()
+    const onValueChange = vi.fn()
     const { rerender } = render(
       <AuthTokenDigits
         aria-label="Código de acesso"
@@ -42,7 +42,7 @@ describe('AuthTokenDigits', () => {
         idPrefix="register-code"
         length={4}
         value="12"
-        onTokenChange={onTokenChange}
+        onValueChange={onValueChange}
       />,
     )
 
@@ -50,22 +50,22 @@ describe('AuthTokenDigits', () => {
 
     expect(digits.map((input) => input.value)).toEqual(['1', '2', '', ''])
 
-    fireEvent.paste(digits[2], {
+    fireEvent.paste(digits[2]!, {
       clipboardData: { getData: () => '9a876' },
     })
 
-    expect(onTokenChange).toHaveBeenLastCalledWith('9876')
+    expect(onValueChange).toHaveBeenLastCalledWith('9876')
 
     rerender(
       <AuthTokenDigits
         aria-label="Código de acesso"
         autoFocus={false}
         digitLabel="Dígito"
-        hasError
+        invalid
         idPrefix="register-code"
         length={4}
         value="9876"
-        onTokenChange={onTokenChange}
+        onValueChange={onValueChange}
       />,
     )
     digits = screen.getAllByRole('textbox') as HTMLInputElement[]
@@ -75,7 +75,7 @@ describe('AuthTokenDigits', () => {
   })
 
   it('distributes continuous typing through a controlled value', async () => {
-    const onTokenChange = vi.fn()
+    const onValueChange = vi.fn()
     const user = userEvent.setup()
 
     function ControlledToken() {
@@ -89,9 +89,9 @@ describe('AuthTokenDigits', () => {
           idPrefix="continuous-code"
           length={6}
           value={value}
-          onTokenChange={(token) => {
+          onValueChange={(token) => {
             setValue(token)
-            onTokenChange(token)
+            onValueChange(token)
           }}
         />
       )
@@ -101,7 +101,7 @@ describe('AuthTokenDigits', () => {
 
     await user.type(screen.getByLabelText('Dígito 1'), '123456')
 
-    expect(onTokenChange).toHaveBeenLastCalledWith('123456')
+    expect(onValueChange).toHaveBeenLastCalledWith('123456')
   })
 
   it('supports directional, first and last keyboard focus', async () => {
@@ -114,13 +114,13 @@ describe('AuthTokenDigits', () => {
         digitLabel="Dígito"
         idPrefix="keyboard-code"
         length={4}
-        onTokenChange={() => undefined}
+        onValueChange={() => undefined}
       />,
     )
 
     const digits = screen.getAllByRole('textbox')
 
-    await user.click(digits[1])
+    await user.click(digits[1]!)
     await user.keyboard('{ArrowLeft}')
 
     expect(digits[0]).toHaveFocus()
@@ -145,7 +145,7 @@ describe('AuthTokenDigits', () => {
       autoFocus: false,
       digitLabel: 'Dígito',
       idPrefix: 'resized-code',
-      onTokenChange: () => undefined,
+      onValueChange: () => undefined,
     } as const
     const { rerender } = render(<AuthTokenDigits {...props} length={6} />)
 
@@ -172,7 +172,7 @@ describe('AuthTokenDigits', () => {
         digitLabel: 'Dígito',
         idPrefix: 'autofocus-code',
         length: 4,
-        onTokenChange: () => undefined,
+        onValueChange: () => undefined,
       } as const
       const { rerender } = render(
         <AuthTokenDigits {...props} autoFocus disabled />,

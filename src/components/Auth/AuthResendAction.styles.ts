@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import { authRecipe } from '../../foundations/authRecipe'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Container = styled.div.withConfig({
   componentId: 'lsui-sc-auth-resend-action',
@@ -8,10 +8,10 @@ export const Container = styled.div.withConfig({
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${authRecipe.spacing[2]};
-  margin-top: ${authRecipe.spacing[5]};
-  color: ${authRecipe.colors.text.muted};
-  font-size: ${authRecipe.typography.fontSize.sm};
+  gap: ${theme.spacing[2]};
+  margin-top: ${theme.spacing[5]};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
 `
 
 export const ResendButton = styled(Pressable).withConfig({
@@ -19,10 +19,10 @@ export const ResendButton = styled(Pressable).withConfig({
 })`
   border: 0;
   background: transparent;
-  color: ${authRecipe.colors.text.primary};
-  font-weight: ${authRecipe.typography.fontWeight.semibold};
+  color: ${theme.colors.text.primary};
+  font-weight: ${theme.typography.fontWeight.semibold};
 
   &:disabled {
-    color: ${authRecipe.colors.text.subtle};
+    color: ${theme.colors.text.subtle};
   }
 `

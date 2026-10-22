@@ -1,10 +1,6 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 import type { AccessibleName } from '../../foundations/accessibility'
-import type {
-  ActionRecipeStyleProps,
-  ActionShape,
-  ActionSize,
-} from '../../foundations/actions/types'
+import type { ActionSize } from '../../foundations/actions/types'
 
 export type IconButtonVariant =
   'neutral' | 'subtle' | 'brand' | 'success' | 'danger' | 'inverse'
@@ -21,13 +17,8 @@ type NativeIconButtonProps = Omit<
 export type IconButtonProps = NativeIconButtonProps &
   AccessibleName & {
     children: ReactNode
-    isLoading?: boolean
+    loading?: boolean
     shape?: IconButtonShape
     size?: IconButtonSize
     variant?: IconButtonVariant
   }
-
-export interface IconButtonStyleProps extends ActionRecipeStyleProps {
-  $iconVariant: IconButtonVariant
-  $shape: ActionShape
-}

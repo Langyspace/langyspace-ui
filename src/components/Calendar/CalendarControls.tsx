@@ -1,30 +1,21 @@
 import { Button } from '../Button/Button'
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './CalendarControls.styles'
-
-import type { ReactNode } from 'react'
-
-export interface CalendarControlsProps {
-  label: ReactNode
-  previousLabel: string
-  nextLabel: string
-  onPrevious: () => void
-  onNext: () => void
-  onToday: () => void
-  children?: ReactNode
-}
+import type { CalendarControlsProps } from './CalendarControls.types'
 
 export function CalendarControls({
   children,
+  groupLabel = 'Navegação do calendário',
   label,
   nextLabel,
   onNext,
   onPrevious,
   onToday,
   previousLabel,
+  todayLabel = 'Hoje',
 }: CalendarControlsProps) {
   return (
-    <Styled.Container role="group" aria-label="Navegação do calendário">
+    <Styled.Container role="group" aria-label={groupLabel}>
       <IconButton aria-label={previousLabel} type="button" onClick={onPrevious}>
         <svg
           aria-hidden="true"
@@ -62,7 +53,7 @@ export function CalendarControls({
         type="button"
         onClick={onToday}
       >
-        Hoje
+        {todayLabel}
       </Button>
       <Styled.Label>{label}</Styled.Label>
       {children}

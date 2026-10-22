@@ -1,4 +1,4 @@
-import { IconSlot } from '../../internal/IconSlot'
+import { IconSlot } from '../../internal/IconSlot/IconSlot'
 import { Spinner } from '../Spinner/Spinner'
 import * as Styled from './IconButton.styles'
 import type { IconButtonProps, IconButtonVariant } from './IconButton.types'
@@ -15,7 +15,7 @@ const actionVariants = {
 
 export function IconButton({
   children,
-  isLoading = false,
+  loading = false,
   shape = 'circle',
   size = 'md',
   type = 'button',
@@ -25,7 +25,7 @@ export function IconButton({
   return (
     <Styled.IconButton
       {...props}
-      {...(isLoading && { 'aria-busy': true, disabled: true })}
+      {...(loading && { 'aria-busy': true, disabled: true })}
       type={type}
       $density="regular"
       $fullWidth={false}
@@ -33,10 +33,10 @@ export function IconButton({
       $shape={shape === 'circle' ? 'pill' : 'rounded'}
       $size={size}
       $variant={actionVariants[variant]}
-      data-loading={isLoading ? 'true' : undefined}
+      data-loading={loading ? 'true' : undefined}
       data-size={size}
     >
-      <IconSlot icon={isLoading ? <Spinner /> : children} />
+      <IconSlot icon={loading ? <Spinner /> : children} />
     </Styled.IconButton>
   )
 }

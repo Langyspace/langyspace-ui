@@ -37,7 +37,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/CardDetailsFields.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/CardDetailsFields.tsx',
+      propsPath: 'src/components/Form/CardDetailsFields.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'carddetailsfields',
@@ -104,7 +104,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFlipButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFlipButton.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFlipButton.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardflipbutton',
@@ -143,7 +143,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardAudioButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardAudioButton.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardAudioButton.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardaudiobutton',
@@ -178,7 +178,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardWordSkeleton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardWordSkeleton.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardWordSkeleton.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardwordskeleton',
@@ -213,7 +213,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingWord.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingWord.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingWord.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingword',
@@ -252,7 +252,7 @@ export const publicComponentContracts = [
       path: 'test/components/Card/CardLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Card/CardLink.tsx',
+      propsPath: 'src/components/Card/CardLink.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'cardlink',
@@ -283,7 +283,7 @@ export const publicComponentContracts = [
       path: 'test/components/Notice/ConnectionNotice.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Notice/ConnectionNotice.tsx',
+      propsPath: 'src/components/Notice/ConnectionNotice.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'connectionnotice',
@@ -318,7 +318,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizBadge.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizBadge.tsx',
+      propsPath: 'src/components/Quiz/QuizBadge.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizbadge',
@@ -353,7 +353,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizMetadata.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizMetadata.tsx',
+      propsPath: 'src/components/Quiz/QuizMetadata.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizmetadata',
@@ -388,7 +388,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizPromptHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizPromptHeader.tsx',
+      propsPath: 'src/components/Quiz/QuizPromptHeader.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizpromptheader',
@@ -424,7 +424,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizBlank.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizBlank.tsx',
+      propsPath: 'src/components/Quiz/QuizBlank.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizblank',
@@ -459,7 +459,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizQuestion.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizQuestion.tsx',
+      propsPath: 'src/components/Quiz/QuizQuestion.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizquestion',
@@ -495,7 +495,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeLevelBadge.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeLevelBadge.tsx',
+      propsPath: 'src/components/Practice/PracticeLevelBadge.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicelevelbadge',
@@ -530,7 +530,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeCardCover.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeCardCover.tsx',
+      propsPath: 'src/components/Practice/PracticeCardCover.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardcover',
@@ -565,7 +565,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeCard.tsx',
+      propsPath: 'src/components/Practice/PracticeCard.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecard',
@@ -600,7 +600,7 @@ export const publicComponentContracts = [
       path: 'test/components/Calendar/ScheduleRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Calendar/ScheduleRow.tsx',
+      propsPath: 'src/components/Calendar/ScheduleRow.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'schedulerow',
@@ -632,7 +632,7 @@ export const publicComponentContracts = [
       path: 'test/components/SessionProgress/SessionProgress.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/SessionProgress/SessionProgress.tsx',
+      propsPath: 'src/components/SessionProgress/SessionProgress.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'sessionprogress',
@@ -667,7 +667,7 @@ export const publicComponentContracts = [
       path: 'test/components/SectionHeader/PageDescription.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/SectionHeader/PageDescription.tsx',
+      propsPath: 'src/components/SectionHeader/PageDescription.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'pagedescription',
@@ -702,7 +702,7 @@ export const publicComponentContracts = [
       path: 'test/components/SectionHeader/PageTitle.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/SectionHeader/PageTitle.tsx',
+      propsPath: 'src/components/SectionHeader/PageTitle.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'pagetitle',
@@ -741,7 +741,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthLegalText.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthLegalText.tsx',
+      propsPath: 'src/components/Auth/AuthLegalText.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authlegaltext',
@@ -776,7 +776,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthTokenLabel.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthTokenLabel.tsx',
+      propsPath: 'src/components/Auth/AuthTokenLabel.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtokenlabel',
@@ -811,7 +811,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthChannelIcon.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthChannelIcon.tsx',
+      propsPath: 'src/components/Auth/AuthChannelIcon.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authchannelicon',
@@ -846,7 +846,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthChannelHint.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthChannelHint.tsx',
+      propsPath: 'src/components/Auth/AuthChannelHint.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authchannelhint',
@@ -881,7 +881,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingRepetitions.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingRepetitions.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingRepetitions.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingrepetitions',
@@ -916,7 +916,7 @@ export const publicComponentContracts = [
       path: 'test/components/Skeleton/Skeleton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Skeleton/Skeleton.tsx',
+      propsPath: 'src/components/Skeleton/Skeleton.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'skeleton',
@@ -955,7 +955,7 @@ export const publicComponentContracts = [
       path: 'test/components/ChoiceCard/ChoiceCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/ChoiceCard/ChoiceCard.tsx',
+      propsPath: 'src/components/ChoiceCard/ChoiceCard.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'choicecard',
@@ -986,7 +986,7 @@ export const publicComponentContracts = [
       path: 'test/components/ToggleButton/ToggleButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/ToggleButton/ToggleButton.tsx',
+      propsPath: 'src/components/ToggleButton/ToggleButton.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'togglebutton',
@@ -1017,7 +1017,7 @@ export const publicComponentContracts = [
       path: 'test/components/RadioButton/RadioButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/RadioButton/RadioButton.tsx',
+      propsPath: 'src/components/RadioButton/RadioButton.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'radiobutton',
@@ -1048,7 +1048,7 @@ export const publicComponentContracts = [
       path: 'test/components/Checkbox/Checkbox.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Checkbox/Checkbox.tsx',
+      propsPath: 'src/components/Checkbox/Checkbox.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'checkbox',
@@ -1079,7 +1079,7 @@ export const publicComponentContracts = [
       path: 'test/components/Charts/WeeklyCountChart.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Charts/WeeklyCountChart.tsx',
+      propsPath: 'src/components/Charts/WeeklyCountChart.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'weeklycountchart',
@@ -1110,7 +1110,7 @@ export const publicComponentContracts = [
       path: 'test/components/Charts/GroupedBarChart.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Charts/GroupedBarChart.tsx',
+      propsPath: 'src/components/Charts/GroupedBarChart.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'groupedbarchart',
@@ -1141,7 +1141,7 @@ export const publicComponentContracts = [
       path: 'test/components/Details/KeyValueList.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Details/KeyValueList.tsx',
+      propsPath: 'src/components/Details/KeyValueList.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'keyvaluelist',
@@ -1172,7 +1172,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingControlCluster.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingControlCluster.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingControlCluster.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontrolcluster',
@@ -1207,7 +1207,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingControlDock.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingControlDock.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingControlDock.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontroldock',
@@ -1246,7 +1246,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingTranslation.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingTranslation.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingTranslation.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingtranslation',
@@ -1281,7 +1281,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingActivePhrase.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingActivePhrase.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingActivePhrase.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingactivephrase',
@@ -1320,7 +1320,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingContextPhrase.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingContextPhrase.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingContextPhrase.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingcontextphrase',
@@ -1359,7 +1359,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingPhraseStack.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingPhraseStack.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingPhraseStack.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingphrasestack',
@@ -1398,7 +1398,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingPanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingPanel.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingPanel.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingpanel',
@@ -1433,7 +1433,7 @@ export const publicComponentContracts = [
       path: 'test/components/Shadowing/ShadowingReader.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Shadowing/ShadowingReader.tsx',
+      propsPath: 'src/components/Shadowing/ShadowingReader.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'shadowingreader',
@@ -1472,7 +1472,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFeedback.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFeedback.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFeedback.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfeedback',
@@ -1507,7 +1507,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardSwiper.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardSwiper.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardSwiper.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardswiper',
@@ -1542,7 +1542,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFlip.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFlip.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFlip.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardflip',
@@ -1581,7 +1581,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardGhost.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardGhost.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardGhost.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardghost',
@@ -1620,7 +1620,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFace.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFace.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFace.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardface',
@@ -1659,7 +1659,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFlipHint.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFlipHint.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFlipHint.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfliphint',
@@ -1694,7 +1694,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardBack.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardBack.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardBack.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardback',
@@ -1729,7 +1729,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardWord.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardWord.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardWord.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardword',
@@ -1764,7 +1764,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardImagePanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardImagePanel.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardImagePanel.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardimagepanel',
@@ -1799,7 +1799,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFront.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFront.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFront.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardfront',
@@ -1834,7 +1834,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardDeck.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardDeck.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardDeck.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcarddeck',
@@ -1869,7 +1869,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardStage.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardStage.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardStage.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardstage',
@@ -1904,7 +1904,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardFrame.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardFrame.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardFrame.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardframe',
@@ -1940,7 +1940,7 @@ export const publicComponentContracts = [
       path: 'test/components/Calendar/CalendarScroller.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Calendar/CalendarScroller.tsx',
+      propsPath: 'src/components/Calendar/CalendarScroller.types.ts',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'calendarscroller',
@@ -1971,7 +1971,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/BottomNavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/BottomNavigationLink.tsx',
+      propsPath: 'src/components/Navigation/BottomNavigationLink.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'bottomnavigationlink',
@@ -2002,7 +2002,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/BottomNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/BottomNavigation.tsx',
+      propsPath: 'src/components/Navigation/BottomNavigation.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'bottomnavigation',
@@ -2037,7 +2037,7 @@ export const publicComponentContracts = [
       path: 'test/components/Message/ConversationRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Message/ConversationRow.tsx',
+      propsPath: 'src/components/Message/ConversationRow.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'conversationrow',
@@ -2068,7 +2068,7 @@ export const publicComponentContracts = [
       path: 'test/components/NotificationItem/NotificationItem.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/NotificationItem/NotificationItem.tsx',
+      propsPath: 'src/components/NotificationItem/NotificationItem.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'notificationitem',
@@ -2099,7 +2099,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/NavigationButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/NavigationButton.tsx',
+      propsPath: 'src/components/Navigation/NavigationButton.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'navigationbutton',
@@ -2138,7 +2138,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/NavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/NavigationLink.tsx',
+      propsPath: 'src/components/Navigation/NavigationLink.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'navigationlink',
@@ -2173,7 +2173,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/SidebarNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/SidebarNavigation.tsx',
+      propsPath: 'src/components/Navigation/SidebarNavigation.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'sidebarnavigation',
@@ -2212,7 +2212,7 @@ export const publicComponentContracts = [
       path: 'test/components/Navigation/SidebarFrame.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Navigation/SidebarFrame.tsx',
+      propsPath: 'src/components/Navigation/SidebarFrame.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'sidebarframe',
@@ -2252,7 +2252,7 @@ export const publicComponentContracts = [
       path: 'test/components/MetricSummary/MetricSummary.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/MetricSummary/MetricSummary.tsx',
+      propsPath: 'src/components/MetricSummary/MetricSummary.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'metricsummary',
@@ -2288,7 +2288,7 @@ export const publicComponentContracts = [
       path: 'test/components/Details/DetailRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Details/DetailRow.tsx',
+      propsPath: 'src/components/Details/DetailRow.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'detailrow',
@@ -2319,7 +2319,7 @@ export const publicComponentContracts = [
       path: 'test/components/Details/DefinitionItem.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Details/DefinitionItem.tsx',
+      propsPath: 'src/components/Details/DefinitionItem.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'definitionitem',
@@ -2351,7 +2351,7 @@ export const publicComponentContracts = [
       path: 'test/components/StatCard/StatCard.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/StatCard/StatCard.tsx',
+      propsPath: 'src/components/StatCard/StatCard.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'statcard',
@@ -2382,7 +2382,7 @@ export const publicComponentContracts = [
       path: 'test/components/Notice/InlineNotice.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Notice/InlineNotice.tsx',
+      propsPath: 'src/components/Notice/InlineNotice.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'inlinenotice',
@@ -2413,7 +2413,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FileInput.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FileInput.tsx',
+      propsPath: 'src/components/Form/FileInput.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fileinput',
@@ -2444,7 +2444,7 @@ export const publicComponentContracts = [
       path: 'test/components/Filter/FilterSelect.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Filter/FilterSelect.tsx',
+      propsPath: 'src/components/Filter/FilterSelect.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'filterselect',
@@ -2479,7 +2479,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FormActions.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FormActions.tsx',
+      propsPath: 'src/components/Form/FormActions.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formactions',
@@ -2514,7 +2514,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FormError.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FormError.tsx',
+      propsPath: 'src/components/Form/FormError.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formerror',
@@ -2549,7 +2549,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FieldCounter.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FieldCounter.tsx',
+      propsPath: 'src/components/Form/FieldCounter.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldcounter',
@@ -2584,7 +2584,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FieldLabelRow.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FieldLabelRow.tsx',
+      propsPath: 'src/components/Form/FieldLabelRow.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldlabelrow',
@@ -2619,7 +2619,7 @@ export const publicComponentContracts = [
       path: 'test/components/Form/FormStack.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Form/FormStack.tsx',
+      propsPath: 'src/components/Form/FormStack.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'formstack',
@@ -2654,7 +2654,7 @@ export const publicComponentContracts = [
       path: 'test/components/Document/DocumentNavigationLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Document/DocumentNavigationLink.tsx',
+      propsPath: 'src/components/Document/DocumentNavigationLink.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentnavigationlink',
@@ -2693,7 +2693,7 @@ export const publicComponentContracts = [
       path: 'test/components/Brand/BrandLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Brand/BrandLink.tsx',
+      propsPath: 'src/components/Brand/BrandLink.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'brandlink',
@@ -2732,7 +2732,7 @@ export const publicComponentContracts = [
       path: 'test/components/Document/DocumentNavigation.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Document/DocumentNavigation.tsx',
+      propsPath: 'src/components/Document/DocumentNavigation.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentnavigation',
@@ -2771,7 +2771,7 @@ export const publicComponentContracts = [
       path: 'test/components/Document/DocumentHeaderContent.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Document/DocumentHeaderContent.tsx',
+      propsPath: 'src/components/Document/DocumentHeaderContent.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentheadercontent',
@@ -2810,7 +2810,7 @@ export const publicComponentContracts = [
       path: 'test/components/Document/DocumentHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Document/DocumentHeader.tsx',
+      propsPath: 'src/components/Document/DocumentHeader.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentheader',
@@ -2850,7 +2850,7 @@ export const publicComponentContracts = [
       path: 'test/components/Brand/BrandLogo.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Brand/BrandLogo.tsx',
+      propsPath: 'src/components/Brand/BrandLogo.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'brandlogo',
@@ -2898,7 +2898,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthSuccessState.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthSuccessState.tsx',
+      propsPath: 'src/components/Auth/AuthSuccessState.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authsuccessstate',
@@ -2933,7 +2933,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthTopLink.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthTopLink.tsx',
+      propsPath: 'src/components/Auth/AuthTopLink.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtoplink',
@@ -2969,7 +2969,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthProgress.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthProgress.tsx',
+      propsPath: 'src/components/Auth/AuthProgress.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authprogress',
@@ -3005,7 +3005,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthResendAction.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthResendAction.tsx',
+      propsPath: 'src/components/Auth/AuthResendAction.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authresendaction',
@@ -3041,7 +3041,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthForm.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthForm.tsx',
+      propsPath: 'src/components/Auth/AuthForm.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authform',
@@ -3077,7 +3077,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthEyebrow.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthEyebrow.tsx',
+      propsPath: 'src/components/Auth/AuthEyebrow.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'autheyebrow',
@@ -3112,7 +3112,8 @@ export const publicComponentContracts = [
       path: 'test/components/PracticeResultPanel/PracticeResultPanel.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/PracticeResultPanel/PracticeResultPanel.tsx',
+      propsPath:
+        'src/components/PracticeResultPanel/PracticeResultPanel.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceresultpanel',
@@ -3148,7 +3149,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizSessionHeader.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizSessionHeader.tsx',
+      propsPath: 'src/components/Quiz/QuizSessionHeader.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizsessionheader',
@@ -3184,7 +3185,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeCardBody.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeCardBody.tsx',
+      propsPath: 'src/components/Practice/PracticeCardBody.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardbody',
@@ -3216,7 +3217,7 @@ export const publicComponentContracts = [
     },
     test: { ...complete, path: 'test/components/Quiz/QuizOption.test.tsx' },
     reference: {
-      propsPath: 'src/components/Quiz/QuizOption.tsx',
+      propsPath: 'src/components/Quiz/QuizOption.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizoption',
@@ -3255,7 +3256,7 @@ export const publicComponentContracts = [
       path: 'test/components/Quiz/QuizFeedback.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Quiz/QuizFeedback.tsx',
+      propsPath: 'src/components/Quiz/QuizFeedback.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'quizfeedback',
@@ -3294,7 +3295,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardRatingButton.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardRatingButton.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardRatingButton.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardratingbutton',
@@ -3329,7 +3330,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticePlaybackControls.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticePlaybackControls.tsx',
+      propsPath: 'src/components/Practice/PracticePlaybackControls.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceplaybackcontrols',
@@ -3364,7 +3365,7 @@ export const publicComponentContracts = [
       path: 'test/components/Calendar/CalendarControls.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Calendar/CalendarControls.tsx',
+      propsPath: 'src/components/Calendar/CalendarControls.types.ts',
       documentation: {
         path: 'docs/components/calendar.md',
         anchor: 'calendarcontrols',
@@ -3392,7 +3393,7 @@ export const publicComponentContracts = [
     },
     test: { ...complete, path: 'test/components/Auth/AuthFrame.test.tsx' },
     reference: {
-      propsPath: 'src/components/Auth/AuthFrame.tsx',
+      propsPath: 'src/components/Auth/AuthFrame.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authframe',
@@ -3424,7 +3425,7 @@ export const publicComponentContracts = [
     },
     test: { ...complete, path: 'test/components/Form/PhoneField.test.tsx' },
     reference: {
-      propsPath: 'src/components/Form/PhoneField.tsx',
+      propsPath: 'src/components/Form/PhoneField.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'phonefield',
@@ -3460,7 +3461,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeProgressBar.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeProgressBar.tsx',
+      propsPath: 'src/components/Practice/PracticeProgressBar.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practiceprogressbar',
@@ -3491,7 +3492,7 @@ export const publicComponentContracts = [
       path: 'test/components/Practice/PracticeCardSkeletonBody.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Practice/PracticeCardSkeletonBody.tsx',
+      propsPath: 'src/components/Practice/PracticeCardSkeletonBody.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'practicecardskeletonbody',
@@ -3526,7 +3527,7 @@ export const publicComponentContracts = [
       path: 'test/components/Filter/FilterToolbar.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Filter/FilterToolbar.tsx',
+      propsPath: 'src/components/Filter/FilterToolbar.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'filtertoolbar',
@@ -3558,7 +3559,7 @@ export const publicComponentContracts = [
     },
     test: { ...complete, path: 'test/components/Card/Card.test.tsx' },
     reference: {
-      propsPath: 'src/components/Card/Card.tsx',
+      propsPath: 'src/components/Card/Card.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'card',
@@ -3598,7 +3599,7 @@ export const publicComponentContracts = [
     },
     test: { ...complete, path: 'test/components/Toast/ToastItem.test.tsx' },
     reference: {
-      propsPath: 'src/components/Toast/ToastItem.tsx',
+      propsPath: 'src/components/Toast/ToastItem.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'toastitem',
@@ -3618,6 +3619,58 @@ export const publicComponentContracts = [
   },
   {
     browserSmoke: complete,
+    exportName: 'Toaster',
+    interactive: true,
+    ownerPath: 'src/components/Toast/Toaster.tsx',
+    runtimeMarker: 'lsui-sc-toast-viewport',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Toast/Toaster.stories.tsx',
+      title: 'Toast/Toaster',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Toast/Toaster.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Toast/Toaster.types.ts',
+      documentation: {
+        path: 'docs/components/navigation-overlays-messaging.md',
+        anchor: 'toaster',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'ToastProvider',
+    interactive: true,
+    ownerPath: 'src/components/Toast/ToastProvider.tsx',
+    runtimeMarker: 'lsui-sc-toast-viewport',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Toast/ToastProvider.stories.tsx',
+      title: 'Toast/ToastProvider',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Toast/ToastProvider.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Toast/Toaster.types.ts',
+      documentation: {
+        path: 'docs/components/navigation-overlays-messaging.md',
+        anchor: 'toastprovider',
+      },
+      consumers: [],
+    },
+    visual: false,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'ToastViewport',
     interactive: false,
     ownerPath: 'src/components/Toast/ToastViewport.tsx',
@@ -3633,7 +3686,7 @@ export const publicComponentContracts = [
       path: 'test/components/Toast/ToastViewport.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Toast/ToastViewport.tsx',
+      propsPath: 'src/components/Toast/ToastViewport.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'toastviewport',
@@ -3668,7 +3721,7 @@ export const publicComponentContracts = [
       path: 'test/components/Notice/NoticeBanner.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Notice/NoticeBanner.tsx',
+      propsPath: 'src/components/Notice/NoticeBanner.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'noticebanner',
@@ -3703,7 +3756,7 @@ export const publicComponentContracts = [
       path: 'test/components/Document/DocumentLayout.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Document/DocumentLayout.tsx',
+      propsPath: 'src/components/Document/DocumentLayout.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'documentlayout',
@@ -3810,7 +3863,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Auth/AuthNotice.tsx',
+      propsPath: 'src/components/Auth/AuthNotice.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authnotice',
@@ -3845,7 +3898,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Avatar/Avatar.tsx',
+      propsPath: 'src/components/Avatar/Avatar.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'avatar',
@@ -3884,7 +3937,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Button/Button.tsx',
+      propsPath: 'src/components/Button/Button.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'button',
@@ -3970,7 +4023,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Form/SelectInput.tsx',
+      propsPath: 'src/components/Form/SelectInput.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'selectinput',
@@ -4009,7 +4062,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/StatusChip/StatusChip.tsx',
+      propsPath: 'src/components/StatusChip/StatusChip.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'statuschip',
@@ -4048,7 +4101,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Form/TextareaInput.tsx',
+      propsPath: 'src/components/Form/TextareaInput.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'textareainput',
@@ -4087,7 +4140,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Form/TextInput.tsx',
+      propsPath: 'src/components/Form/TextInput.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'textinput',
@@ -4161,7 +4214,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Auth/AuthTokenDigits.tsx',
+      propsPath: 'src/components/Auth/AuthTokenDigits.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authtokendigits',
@@ -4196,7 +4249,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Form/CompoundControl.tsx',
+      propsPath: 'src/components/Form/CompoundControl.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'compoundcontrol',
@@ -4262,7 +4315,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Dialog/Dialog.tsx',
+      propsPath: 'src/components/Dialog/Dialog.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'dialog',
@@ -4297,7 +4350,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Drawer/Drawer.tsx',
+      propsPath: 'src/components/Drawer/Drawer.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'drawer',
@@ -4337,7 +4390,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Form/FieldRoot.tsx',
+      propsPath: 'src/components/Form/FieldRoot.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'fieldroot',
@@ -4486,7 +4539,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Message/MessageThread.tsx',
+      propsPath: 'src/components/Message/MessageThread.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagethread',
@@ -4521,7 +4574,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Message/MessageThreadHeader.tsx',
+      propsPath: 'src/components/Message/MessageThreadHeader.types.ts',
       documentation: {
         path: 'docs/components/navigation-overlays-messaging.md',
         anchor: 'messagethreadheader',
@@ -4622,7 +4675,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/SectionHeader/SectionHeader.tsx',
+      propsPath: 'src/components/SectionHeader/SectionHeader.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'sectionheader',
@@ -4731,7 +4784,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Pressable.tsx',
+      propsPath: 'src/components/Pressable.types.ts',
       documentation: {
         path: 'docs/components/controls.md',
         anchor: 'pressable',
@@ -4774,7 +4827,7 @@ export const publicComponentContracts = [
     },
     visual: true,
     reference: {
-      propsPath: 'src/components/Spinner/Spinner.tsx',
+      propsPath: 'src/components/Spinner/Spinner.types.ts',
       documentation: {
         path: 'docs/components/data-feedback.md',
         anchor: 'spinner',
@@ -4813,7 +4866,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthComposition.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthBrandContent.tsx',
+      propsPath: 'src/components/Auth/AuthBrandContent.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authbrandcontent',
@@ -4848,7 +4901,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthComposition.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthFooter.tsx',
+      propsPath: 'src/components/Auth/AuthFooter.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authfooter',
@@ -4883,7 +4936,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthComposition.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthHeader.tsx',
+      propsPath: 'src/components/Auth/AuthHeader.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authheader',
@@ -4918,7 +4971,7 @@ export const publicComponentContracts = [
       path: 'test/components/Auth/AuthComposition.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Auth/AuthActions.tsx',
+      propsPath: 'src/components/Auth/AuthActions.types.ts',
       documentation: {
         path: 'docs/components/auth-brand-documents.md',
         anchor: 'authactions',
@@ -4953,7 +5006,7 @@ export const publicComponentContracts = [
       path: 'test/components/Flashcard/FlashcardProgress.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Flashcard/FlashcardProgress.tsx',
+      propsPath: 'src/components/Flashcard/FlashcardProgress.types.ts',
       documentation: {
         path: 'docs/components/practice.md',
         anchor: 'flashcardprogress',

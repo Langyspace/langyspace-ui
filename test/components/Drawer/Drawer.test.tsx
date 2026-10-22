@@ -33,9 +33,9 @@ describe('Drawer', () => {
     const backdrops = document.querySelectorAll<HTMLElement>(
       '[data-ui-modal-backdrop="true"]',
     )
-    await waitFor(() => expect(backdrops[0].inert).toBe(true))
+    await waitFor(() => expect(backdrops[0]!.inert).toBe(true))
 
-    expect(backdrops[1].inert).toBe(false)
+    expect(backdrops[1]!.inert).toBe(false)
 
     await user.keyboard('{Escape}')
 

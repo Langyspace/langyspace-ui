@@ -9,8 +9,8 @@ it('renders the supplied count without advancing the product state', () => {
     </ShadowingRepetitions>,
   )
 
-  expect(container.querySelectorAll('.dot')).toHaveLength(3)
-  expect(container.querySelectorAll('.on')).toHaveLength(2)
-  expect(container.querySelectorAll('.live')).toHaveLength(1)
+  expect(container.querySelectorAll('[data-ui-shadowing-dot]')).toHaveLength(3)
+  expect(container.querySelectorAll('[data-active]')).toHaveLength(2)
+  expect(container.querySelectorAll('[data-live]')).toHaveLength(1)
   expect(screen.getByText('2/3 escutas')).toBeInTheDocument()
 })

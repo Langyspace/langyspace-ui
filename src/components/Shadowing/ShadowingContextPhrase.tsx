@@ -1,26 +1,6 @@
-import type { ComponentPropsWithRef } from 'react'
-
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-
-const Root = styled.div.withConfig({
-  componentId: 'lsui-sc-shadowing-context-phrase',
-})`
-  min-height: 1.25rem;
-  max-width: 22rem;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
-  font-weight: 400;
-  line-height: ${token.typographyLineHeightNormal};
-
-  @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
-    max-width: 32rem;
-    font-size: ${token.typographyFontSizeMd};
-  }
-`
-
-export type ShadowingContextPhraseProps = ComponentPropsWithRef<'div'>
+import type { ShadowingContextPhraseProps } from './ShadowingContextPhrase.types'
+import * as Styled from './ShadowingContextPhrase.styles'
 
 export function ShadowingContextPhrase(props: ShadowingContextPhraseProps) {
-  return <Root {...props} />
+  return <Styled.Root {...props} />
 }

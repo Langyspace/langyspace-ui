@@ -1,12 +1,5 @@
 import * as Styled from './ShadowingRepetitions.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export interface ShadowingRepetitionsProps extends ComponentPropsWithRef<'div'> {
-  total: number
-  value?: number
-  playing?: boolean
-}
+import type { ShadowingRepetitionsProps } from './ShadowingRepetitions.types'
 
 export function ShadowingRepetitions({
   total,
@@ -20,19 +13,15 @@ export function ShadowingRepetitions({
   return (
     <Styled.Root {...props}>
       {Array.from({ length: count }, (_, index) => (
-        <span
+        <Styled.Dot
           key={index}
           aria-hidden
-          className={[
-            'dot',
-            index < value ? 'on' : '',
-            index === value - 1 && playing ? 'live' : '',
-          ]
-            .filter(Boolean)
-            .join(' ')}
+          data-ui-shadowing-dot="true"
+          data-active={index < value || undefined}
+          data-live={(index === value - 1 && playing) || undefined}
         />
       ))}
-      <span className="label">{children}</span>
+      <Styled.Label>{children}</Styled.Label>
     </Styled.Root>
   )
 }

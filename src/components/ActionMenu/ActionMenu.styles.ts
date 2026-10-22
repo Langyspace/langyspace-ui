@@ -1,10 +1,24 @@
 import { css, keyframes, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 import type {
-  ActionMenuItemStyleProps,
-  ActionMenuMenuStyleProps,
+  ActionMenuAlign,
+  ActionMenuPlacement,
+  ActionMenuSize,
+  ActionMenuTone,
 } from './ActionMenu.types'
+import type { ActionMenuPosition } from './position'
+
+interface ActionMenuMenuStyleProps {
+  $align: ActionMenuAlign
+  $placement: ActionMenuPlacement
+  $position: ActionMenuPosition | null
+}
+
+interface ActionMenuItemStyleProps {
+  $size: ActionMenuSize
+  $tone: ActionMenuTone
+}
 
 const enter = keyframes`
   from {
@@ -20,20 +34,20 @@ const enter = keyframes`
 
 const toneStyles = {
   danger: css`
-    color: ${token.colorFeedbackDangerStrong};
+    color: ${theme.semantic.status.danger.foreground};
 
     &:hover:not(:disabled),
     &:focus-visible {
-      color: ${token.colorFeedbackDangerStrong};
-      background: ${token.colorFeedbackDangerSoft};
+      color: ${theme.semantic.status.danger.foreground};
+      background: ${theme.colors.feedback.dangerSubtle};
     }
   `,
   neutral: css`
-    color: ${token.colorContentDefault};
+    color: ${theme.colors.text.primary};
 
     &:hover:not(:disabled),
     &:focus-visible {
-      background: ${token.colorNeutral100};
+      background: ${theme.colors.palette.neutral[200]};
     }
   `,
 } satisfies Record<ActionMenuItemStyleProps['$tone'], ReturnType<typeof css>>
@@ -48,28 +62,38 @@ export const Root = styled.div.withConfig({
   max-width: 100%;
 `
 
-export const Menu = styled.div<ActionMenuMenuStyleProps>`
+// Coordinates follow the trigger on every layout pass, so they stay inline.
+export const Menu = styled.div.attrs<ActionMenuMenuStyleProps>(
+  ({ $position }) => ({
+    style: {
+      left: $position?.left,
+      maxHeight: $position?.maxHeight,
+      top: $position?.top,
+      visibility: $position ? 'visible' : 'hidden',
+    },
+  }),
+)`
   --lsui-action-menu-enter-y: ${({ $placement }) =>
-    $placement === 'top' ? token.spacing1 : `-${token.spacing1}`};
+    $placement === 'top' ? theme.spacing[1] : `-${theme.spacing[1]}`};
 
   box-sizing: border-box;
   position: fixed;
-  z-index: 1200;
+  z-index: ${theme.zIndex.popover};
   display: flex;
   width: max-content;
   min-width: 13rem;
-  max-width: calc(100vw - ${token.spacing4});
+  max-width: calc(100vw - ${theme.spacing[4]});
   flex-direction: column;
-  padding: calc(${token.spacing1} + ${token.spacing1} / 2);
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusRounded};
-  background: ${token.colorNeutral0};
-  box-shadow: ${token.shadowPopover};
+  padding: calc(${theme.spacing[1]} + ${theme.spacing[1]} / 2);
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.xl};
+  background: ${theme.colors.palette.white};
+  box-shadow: ${theme.shadows.floating};
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
-  animation: ${enter} ${token.motionDurationInteractive}
-    ${token.motionEasingInteractive};
+  animation: ${enter} ${theme.transitions.duration.fast}
+    ${theme.transitions.easing.standard};
   transform-origin: ${({ $align, $placement }) =>
     `${$align === 'start' ? 'left' : 'right'} ${$placement === 'top' ? 'bottom' : 'top'}`};
 
@@ -84,23 +108,23 @@ export const MenuItem = styled(Pressable)<ActionMenuItemStyleProps>`
   width: 100%;
   min-width: 0;
   min-height: ${({ $size }) =>
-    $size === 'sm' ? token.controlHeightMd : token.fieldHeightMd};
+    $size === 'sm' ? theme.sizes.control.md : theme.sizes.field.md};
   align-items: center;
-  gap: ${token.spacing2};
-  padding: ${token.spacing2} ${token.spacing3};
+  gap: ${theme.spacing[2]};
+  padding: ${theme.spacing[2]} ${theme.spacing[3]};
   border: 0;
-  border-radius: ${token.radiusControl};
+  border-radius: ${theme.radius.control};
   background: transparent;
-  font-size: ${token.typographyFontSizeSm};
-  font-weight: ${token.typographyFontWeightMedium};
-  line-height: ${token.typographyLineHeightSnug};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: ${theme.typography.lineHeight.snug};
   text-align: left;
   overflow-wrap: anywhere;
 
   ${({ $tone }) => toneStyles[$tone]}
 
   &:focus-visible {
-    outline: 3px solid ${token.colorFocus};
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: -3px;
   }
 
@@ -122,6 +146,6 @@ export const ItemLabel = styled.span`
 export const Separator = styled.div`
   height: 1px;
   flex: 0 0 auto;
-  margin: ${token.spacing1} ${token.spacing2};
-  background: ${token.colorSurfaceBorderSubtle};
+  margin: ${theme.spacing[1]} ${theme.spacing[2]};
+  background: ${theme.colors.border.subtle};
 `

@@ -1,15 +1,5 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
 import * as Styled from './StatCard.styles'
-
-export interface StatCardProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children'
-> {
-  tone?: 'neutral' | 'brand'
-  value: ReactNode
-  label: ReactNode
-  action?: ReactNode
-}
+import type { StatCardProps } from './StatCard.types'
 
 export function StatCard({
   tone = 'neutral',

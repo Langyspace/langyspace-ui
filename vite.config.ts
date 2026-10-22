@@ -6,8 +6,8 @@ export default defineConfig({
   plugins: [styledComponentsBuild(), react()],
   build: {
     lib: {
-      entry: 'src/index.ts',
-      fileName: 'index',
+      entry: { form: 'src/form.ts', index: 'src/index.ts' },
+      fileName: (_format, entryName) => `${entryName}.js`,
       formats: ['es'],
     },
     rollupOptions: {
@@ -18,6 +18,7 @@ export default defineConfig({
         'react/jsx-runtime',
         'styled-components',
       ],
+      output: { chunkFileNames: 'chunks/[name].js' },
     },
   },
 })

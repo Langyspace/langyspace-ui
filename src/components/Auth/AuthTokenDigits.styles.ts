@@ -1,5 +1,5 @@
 import { css, keyframes, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
 
 const shake = keyframes`
   0%, 100% { transform: translateX(0); }
@@ -13,51 +13,51 @@ export const Row = styled.div.withConfig({
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: ${token.spacing2};
-  margin: ${token.spacing4} 0 ${token.spacing6};
+  gap: ${theme.spacing[2]};
+  margin: ${theme.spacing[4]} 0 ${theme.spacing[6]};
 `
 
-export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
+export const Input = styled.input<{ $invalid: boolean; $isFilled: boolean }>`
   width: 100%;
   min-width: 0;
   max-width: 3.25rem;
   flex: 1 1 0;
   aspect-ratio: 1 / 1.1;
   border: 2px solid
-    ${({ $hasError, $isFilled }) =>
-      $hasError
-        ? token.colorAccentDefault
+    ${({ $invalid, $isFilled }) =>
+      $invalid
+        ? theme.colors.accent.primary
         : $isFilled
-          ? token.colorNeutral950
-          : token.colorNeutral300};
-  border-radius: ${token.radiusCard};
+          ? theme.colors.palette.neutral[900]
+          : theme.colors.palette.neutral[400]};
+  border-radius: ${theme.radius.card};
   outline: 0;
-  background-color: ${({ $hasError, $isFilled }) =>
-    $hasError
-      ? token.colorAccentTint
+  background-color: ${({ $invalid, $isFilled }) =>
+    $invalid
+      ? theme.colors.accent.primaryTint
       : $isFilled
-        ? token.colorNeutral50
-        : token.colorNeutral0};
-  color: ${token.colorNeutral950};
-  font-size: ${token.typographyFontSize2xl};
-  font-weight: ${token.typographyFontWeightBold};
+        ? theme.colors.palette.neutral[100]
+        : theme.colors.palette.white};
+  color: ${theme.colors.palette.neutral[900]};
+  font-size: ${theme.typography.fontSize['2xl']};
+  font-weight: ${theme.typography.fontWeight.bold};
   text-align: center;
   transition:
-    background-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    border-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    transform ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive};
+    background-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    border-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    transform ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard};
 
-  ${({ $hasError }) =>
-    $hasError &&
+  ${({ $invalid }) =>
+    $invalid &&
     css`
       animation: ${shake} 350ms ease;
     `}
 
   &:focus {
-    border-color: ${token.colorNeutral950};
+    border-color: ${theme.colors.palette.neutral[900]};
     transform: translateY(-1px);
   }
 
@@ -71,8 +71,8 @@ export const Input = styled.input<{ $hasError: boolean; $isFilled: boolean }>`
     transition: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.breakpoints.md}) {
     max-width: 3.75rem;
-    font-size: ${token.typographyFontSize3xl};
+    font-size: ${theme.typography.fontSize['3xl']};
   }
 `

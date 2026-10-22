@@ -1,42 +1,27 @@
-import { useEffect, useRef, useState, type ClipboardEvent } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import type { ClipboardEvent } from 'react'
 import * as Styled from './AuthTokenDigits.styles'
 import { getEmptyDigits, getTokenDigits } from './utils'
-
-import type { HTMLAttributes } from 'react'
-import type { CompatibleAccessibleName } from '../../foundations/accessibility'
-
-export type AuthTokenLength = 4 | 6
-
-export type AuthTokenDigitsProps = Omit<
-  HTMLAttributes<HTMLDivElement>,
-  'aria-label' | 'aria-labelledby' | 'onChange'
-> &
-  CompatibleAccessibleName & {
-    autoFocus?: boolean
-    digitLabel: string
-    disabled?: boolean
-    hasError?: boolean
-    idPrefix: string
-    length: number
-    value?: string
-    onTokenChange: (token: string) => void
-  }
+import type { AuthTokenDigitsProps } from './AuthTokenDigits.types'
 
 export function AuthTokenDigits({
   autoFocus = true,
   digitLabel,
   disabled = false,
-  hasError = false,
+  defaultValue = '',
   idPrefix,
+  invalid = false,
   length,
+  onValueChange,
   value,
-  onTokenChange,
   ...props
 }: AuthTokenDigitsProps) {
-  const inputRefs = useRef<Array<HTMLInputElement | null>>([])
+  const inputsRef = useRef<Array<HTMLInputElement | null>>([])
   const previousLengthRef = useRef(length)
   const [internalDigits, setInternalDigits] = useState<string[]>(() =>
-    getEmptyDigits(length),
+    defaultValue
+      ? getTokenDigits(defaultValue, length)
+      : getEmptyDigits(length),
   )
   const digits =
     value === undefined
@@ -46,11 +31,13 @@ export function AuthTokenDigits({
   useEffect(() => {
     if (!autoFocus || disabled) return
     const focusTimeoutId = window.setTimeout(
-      () => inputRefs.current[0]?.focus(),
+      () => inputsRef.current[0]?.focus(),
       80,
     )
 
-    return () => window.clearTimeout(focusTimeoutId)
+    return () => {
+      window.clearTimeout(focusTimeoutId)
+    }
   }, [autoFocus, disabled])
 
   useEffect(() => {
@@ -59,13 +46,13 @@ export function AuthTokenDigits({
     setInternalDigits((currentDigits) =>
       getTokenDigits(currentDigits.join(''), length),
     )
-    inputRefs.current.length = length
+    inputsRef.current.length = length
     previousLengthRef.current = length
   }, [length])
 
   const updateDigits = (nextDigits: string[]) => {
     setInternalDigits(nextDigits)
-    onTokenChange(nextDigits.join(''))
+    onValueChange(nextDigits.join(''))
   }
 
   const handleDigitChange = (index: number, nextInput: string) => {
@@ -78,7 +65,7 @@ export function AuthTokenDigits({
         nextDigits[index + digitIndex] = digit
       })
       updateDigits(nextDigits)
-      inputRefs.current[Math.min(index + inserted.length, length) - 1]?.focus()
+      inputsRef.current[Math.min(index + inserted.length, length) - 1]?.focus()
 
       return
     }
@@ -87,7 +74,7 @@ export function AuthTokenDigits({
     const nextDigit = nextValue.slice(-1)
     nextDigits[index] = nextDigit
     updateDigits(nextDigits)
-    if (nextDigit && index < length - 1) inputRefs.current[index + 1]?.focus()
+    if (nextDigit && index < length - 1) inputsRef.current[index + 1]?.focus()
   }
 
   const handlePaste = (event: ClipboardEvent<HTMLInputElement>) => {
@@ -103,20 +90,22 @@ export function AuthTokenDigits({
       (_, index) => pastedDigits[index] ?? '',
     )
     updateDigits(nextDigits)
-    inputRefs.current[Math.min(pastedDigits.length, length) - 1]?.focus()
+    inputsRef.current[Math.min(pastedDigits.length, length) - 1]?.focus()
   }
 
   return (
     <Styled.Row {...props}>
       {digits.map((digit, index) => (
         <Styled.Input
+          // Each input is a fixed position of the token.
+          // eslint-disable-next-line @eslint-react/no-array-index-key
           key={index}
           ref={(input) => {
-            inputRefs.current[index] = input
+            inputsRef.current[index] = input
           }}
-          $hasError={hasError}
+          $invalid={invalid}
           $isFilled={Boolean(digit)}
-          aria-invalid={hasError || undefined}
+          aria-invalid={invalid || undefined}
           aria-label={`${digitLabel} ${index + 1}`}
           autoComplete={index === 0 ? 'one-time-code' : 'off'}
           disabled={disabled}
@@ -124,11 +113,13 @@ export function AuthTokenDigits({
           inputMode="numeric"
           maxLength={index === 0 ? length : 1}
           value={digit}
-          onChange={(event) => handleDigitChange(index, event.target.value)}
+          onChange={(event) => {
+            handleDigitChange(index, event.target.value)
+          }}
           onKeyDown={(event) => {
             const focusIndex = (nextIndex: number) => {
               event.preventDefault()
-              inputRefs.current[nextIndex]?.focus()
+              inputsRef.current[nextIndex]?.focus()
             }
 
             if (event.key === 'ArrowLeft') {

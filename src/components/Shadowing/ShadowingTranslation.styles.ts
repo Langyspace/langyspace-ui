@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-translation',
@@ -19,9 +19,9 @@ export const Root = styled.div.withConfig({
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    color: ${token.colorContentMuted};
-    font-size: ${token.typographyFontSizeSm};
-    line-height: ${token.typographyLineHeightNormal};
+    color: ${theme.colors.text.muted};
+    font-size: ${theme.typography.fontSize.sm};
+    line-height: ${theme.typography.lineHeight.normal};
 
     &::before {
       content: '';
@@ -29,19 +29,19 @@ export const Root = styled.div.withConfig({
       width: 1.875rem;
       height: 0.1875rem;
       margin: 0 auto 0.5rem;
-      border-radius: ${token.radiusPill};
-      background: #ff1f5c;
+      border-radius: ${theme.radius.pill};
+      background: ${theme.colors.palette.accent.pink};
     }
   }
 
-  @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     > [data-ui-shadowing-translation-content] {
       max-width: 32rem;
-      font-size: ${token.typographyFontSizeMd};
+      font-size: ${theme.typography.fontSize.md};
 
       &::before {
         width: 2.5rem;
-        margin-bottom: ${token.spacing3};
+        margin-bottom: ${theme.spacing[3]};
       }
     }
   }

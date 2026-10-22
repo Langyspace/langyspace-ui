@@ -1,4 +1,5 @@
-import { useId, useState, type Key } from 'react'
+import { useId, useState } from 'react'
+import type { Key } from 'react'
 import { OperationalHeader } from './ListHeader'
 import { normalizeOperationalListActions } from './normalizeActions'
 import { OperationalRow } from './ListRow'
@@ -15,6 +16,7 @@ export function OperationalList<Item>({
   getActions,
   getItemKey,
   items,
+  labels,
   primaryColumn,
   ref,
   ...nativeProps
@@ -75,6 +77,7 @@ export function OperationalList<Item>({
           data-ui-operational-list-table="true"
         >
           <OperationalHeader
+            actionsLabel={labels?.actionsColumn ?? 'Ações'}
             columns={columns}
             hasActions={hasAnyActions}
             hasSorting={hasSorting}
@@ -96,9 +99,10 @@ export function OperationalList<Item>({
                   hasActionsColumn={hasAnyActions}
                   key={row.key}
                   menuOpen={openMenuKey === row.key}
-                  onMenuOpenChange={(open) =>
+                  moreActionsLabel={labels?.moreActions ?? 'Mais ações'}
+                  onMenuOpenChange={(open) => {
                     setOpenMenuKey(open ? row.key : null)
-                  }
+                  }}
                   row={row}
                 />
               ))
@@ -114,17 +118,3 @@ export function OperationalList<Item>({
     </Styled.Root>
   )
 }
-
-export type {
-  OperationalListAlign,
-  OperationalListColumn,
-  OperationalListDensity,
-  OperationalListImportance,
-  OperationalListItemAction,
-  OperationalListNavigation,
-  OperationalListPrimaryColumn,
-  OperationalListPrimaryContent,
-  OperationalListProps,
-  OperationalListSort,
-  OperationalListSortDirection,
-} from './OperationalList.types'

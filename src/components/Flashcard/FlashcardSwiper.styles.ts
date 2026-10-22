@@ -1,4 +1,5 @@
 import { styled, keyframes } from 'styled-components'
+import { theme } from '../../foundations/theme/theme'
 
 const cardIn = keyframes`
   from {
@@ -40,7 +41,7 @@ export const Root = styled.div.withConfig({
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px #00f2ea52;
+    box-shadow: 0 0 0 3px ${theme.colors.focusRing};
     border-radius: 1.625rem;
   }
 

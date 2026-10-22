@@ -1,18 +1,8 @@
 import * as Styled from './PracticePlaybackControls.styles'
-
-export interface PracticePlaybackControlsProps<Speed extends string = string> {
-  playing: boolean
-  playLabel: string
-  onPlay: () => void
-  skipAction?: { label: string; onClick: () => void }
-  speed: Speed
-  speedOptions: readonly Speed[]
-  onSpeedChange: (speed: Speed) => void
-  translationVisible: boolean
-  onTranslationToggle: () => void
-}
+import type { PracticePlaybackControlsProps } from './PracticePlaybackControls.types'
 
 export function PracticePlaybackControls<Speed extends string>({
+  translationLabel = 'Tradução',
   playing,
   playLabel,
   onPlay,
@@ -85,7 +75,9 @@ export function PracticePlaybackControls<Speed extends string>({
               key={option}
               className={speed === option ? 'active' : undefined}
               type="button"
-              onClick={() => onSpeedChange(option)}
+              onClick={() => {
+                onSpeedChange(option)
+              }}
             >
               {option}
             </Styled.SpeedButton>
@@ -97,7 +89,7 @@ export function PracticePlaybackControls<Speed extends string>({
           type="button"
           onClick={onTranslationToggle}
         >
-          Tradução
+          {translationLabel}
         </Styled.TranslationToggle>
       </Styled.ControlRow>
     </Styled.ControlCluster>

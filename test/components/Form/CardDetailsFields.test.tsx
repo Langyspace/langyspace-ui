@@ -2,11 +2,11 @@ import { fireEvent, render, screen, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { useState } from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import {
-  CardDetailsFields,
-  type CardDetailsFieldsProps,
-  type CardDetailsValue,
-} from '../../../src/components/Form/CardDetailsFields'
+import { CardDetailsFields } from '../../../src/components/Form/CardDetailsFields'
+import type {
+  CardDetailsFieldsProps,
+  CardDetailsValue,
+} from '../../../src/components/Form/CardDetailsFields.types'
 
 const empty: CardDetailsValue = {
   holderName: '',

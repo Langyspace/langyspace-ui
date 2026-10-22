@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Notice = styled.aside.withConfig({
   componentId: 'lsui-sc-notice-banner',
@@ -7,15 +8,15 @@ export const Notice = styled.aside.withConfig({
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  column-gap: ${token.spacing3};
-  padding: ${token.spacing3} ${token.spacing4};
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusLg};
-  background: ${token.colorNeutral50};
+  column-gap: ${theme.spacing[3]};
+  padding: ${theme.spacing[3]} ${theme.spacing[4]};
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.lg};
+  background: ${theme.colors.palette.neutral[100]};
   box-shadow:
-    0 1px 0 rgba(10, 10, 10, 0.04),
-    0 1px 2px rgba(10, 10, 10, 0.04);
-  @media (max-width: 768px) {
+    0 1px 0 ${alpha(theme.colors.palette.neutral[900], 0.04)},
+    0 1px 2px ${alpha(theme.colors.palette.neutral[900], 0.04)};
+  @media (max-width: ${theme.breakpoints.md}) {
     grid-template-columns: auto minmax(0, 1fr);
     align-items: flex-start;
   }
@@ -30,9 +31,9 @@ export const Icon = styled.span.withConfig({
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: ${token.radiusPill};
-  background: ${token.colorNeutral100};
-  color: ${token.colorContentSecondary};
+  border-radius: ${theme.radius.pill};
+  background: ${theme.colors.palette.neutral[200]};
+  color: ${theme.colors.text.secondary};
 `
 
 export const Copy = styled.div.withConfig({
@@ -47,11 +48,11 @@ export const Actions = styled.div.withConfig({
   display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${token.spacing2};
-  @media (max-width: 768px) {
+  gap: ${theme.spacing[2]};
+  @media (max-width: ${theme.breakpoints.md}) {
     grid-column: 1 / -1;
     justify-self: end;
-    margin-top: ${token.spacing3};
+    margin-top: ${theme.spacing[3]};
   }
 `
 
@@ -59,18 +60,18 @@ export const Title = styled.strong.withConfig({
   componentId: 'lsui-sc-notice-title',
 })`
   display: block;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSizeSm};
-  font-weight: ${token.typographyFontWeightBold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: ${theme.typography.lineHeight.snug};
 `
 
 export const Text = styled.span.withConfig({
   componentId: 'lsui-sc-notice-text',
 })`
   display: block;
-  margin-top: ${token.spacing1};
-  color: ${token.colorContentSecondary};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  margin-top: ${theme.spacing[1]};
+  color: ${theme.colors.text.secondary};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
 `

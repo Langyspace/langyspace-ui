@@ -4,10 +4,8 @@ import { createRef } from 'react'
 import { renderToString } from 'react-dom/server'
 import { styled } from 'styled-components'
 import { describe, expect, it, vi } from 'vitest'
-import {
-  ActionMenu,
-  type ActionMenuItem,
-} from '../../../src/components/ActionMenu/ActionMenu'
+import { ActionMenu } from '../../../src/components/ActionMenu/ActionMenu'
+import type { ActionMenuItem } from '../../../src/components/ActionMenu/ActionMenu.types'
 import { getActionMenuPosition } from '../../../src/components/ActionMenu/position'
 import * as ActionMenuStyles from '../../../src/components/ActionMenu/ActionMenu.styles'
 
@@ -35,7 +33,7 @@ const createItems = (
     tone: 'danger',
   },
   {
-    isLoading: true,
+    loading: true,
     id: 'loading',
     label: 'Atualizando registro',
     onSelect: () => onSelect('loading'),
@@ -134,7 +132,7 @@ describe('ActionMenu', () => {
       screen.getByRole('menuitem', { name: 'Atualizando registro' }),
     ).toHaveAttribute('aria-busy', 'true')
 
-    await user.click(items[0])
+    await user.click(items[0]!)
 
     expect(screen.queryByRole('menu')).not.toBeInTheDocument()
     expect(trigger).toHaveFocus()
@@ -201,7 +199,7 @@ describe('ActionMenu', () => {
             onSelect: () => undefined,
           },
           {
-            isLoading: true,
+            loading: true,
             id: 'loading',
             label: 'Processando',
             onSelect: () => undefined,

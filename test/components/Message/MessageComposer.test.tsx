@@ -136,7 +136,7 @@ describe('MessageComposer', () => {
 
     expect(screen.getByRole('textbox', { name: 'Mensagem' })).toBeDisabled()
 
-    rerender(<MessageComposer {...baseProps} isSubmitting value="A" />)
+    rerender(<MessageComposer {...baseProps} submitting value="A" />)
 
     const input = screen.getByRole('textbox', { name: 'Mensagem' })
     const submit = screen.getByRole('button', { name: 'Enviar mensagem' })

@@ -1,0 +1,150 @@
+import { css, styled } from 'styled-components'
+import type { OverlayKind, OverlaySize } from './ModalLayer.types'
+import { theme } from '../../foundations/theme/theme'
+
+const dialogWidths = {
+  lg: '42.5rem',
+  md: '31rem',
+  sm: '24rem',
+} satisfies Record<OverlaySize, string>
+
+const drawerWidths = {
+  lg: '44rem',
+  md: '36rem',
+  sm: '24rem',
+} satisfies Record<OverlaySize, string>
+
+export const Backdrop = styled.div.withConfig({
+  componentId: 'lsui-sc-modal-backdrop',
+})<{ $kind: OverlayKind }>`
+  position: fixed;
+  z-index: ${theme.zIndex.overlay};
+  inset: 0;
+  display: grid;
+  align-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'stretch')};
+  justify-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'end')};
+  padding: ${({ $kind }) => ($kind === 'dialog' ? theme.spacing[5] : '0')};
+  background: ${theme.semantic.background.overlay};
+  backdrop-filter: blur(2px);
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    align-items: end;
+    justify-items: stretch;
+    padding: 0;
+  }
+`
+
+export const Panel = styled.div.withConfig({
+  componentId: 'lsui-sc-modal-panel',
+})<{ $kind: OverlayKind; $size: OverlaySize }>`
+  box-sizing: border-box;
+  position: relative;
+  display: grid;
+  width: min(
+    ${({ $kind, $size }) => ($kind === 'dialog' ? dialogWidths[$size] : drawerWidths[$size])},
+    100%
+  );
+  min-width: 0;
+  max-height: ${({ $kind }) => ($kind === 'dialog' ? 'calc(100dvh - 2.5rem)' : '100dvh')};
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  border: 1px solid ${theme.semantic.border.default};
+  background: ${theme.colors.palette.white};
+  box-shadow: ${({ $kind }) => ($kind === 'dialog' ? theme.shadows.floating : theme.shadows.drawer)};
+  outline: none;
+
+  ${({ $kind }) =>
+    $kind === 'dialog'
+      ? css`
+          border-radius: ${theme.radius.card};
+        `
+      : css`
+          height: 100dvh;
+          border-radius: ${theme.radius.card} 0 0 ${theme.radius.card};
+        `}
+
+  &:focus-visible {
+    box-shadow: ${theme.shadows.focusHalo};
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    width: 100%;
+
+    ${({ $kind }) =>
+      $kind === 'drawer'
+        ? css`
+            height: 100dvh;
+            max-height: 100dvh;
+            border-right: 0;
+            border-left: 0;
+            border-radius: 0;
+          `
+        : css`
+            max-height: calc(100dvh - ${theme.spacing[4]});
+            border-radius: ${theme.radius.card} ${theme.radius.card} 0 0;
+          `}
+  }
+`
+
+export const Header = styled.header`
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: ${theme.spacing[4]};
+  border-bottom: 1px solid ${theme.colors.border.subtle};
+  padding: ${theme.spacing[5]};
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    padding-top: calc(${theme.spacing[5]} + env(safe-area-inset-top));
+  }
+`
+
+export const Heading = styled.div`
+  min-width: 0;
+`
+
+export const Title = styled.h2`
+  margin: 0;
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.xl};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: ${theme.typography.lineHeight.snug};
+  overflow-wrap: anywhere;
+`
+
+export const Description = styled.p`
+  margin: ${theme.spacing[1]} 0 0;
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
+  overflow-wrap: anywhere;
+`
+
+export const Body = styled.div`
+  min-width: 0;
+  min-height: 0;
+  overflow-y: auto;
+  padding: ${theme.spacing[5]};
+  overscroll-behavior: contain;
+`
+
+export const Footer = styled.footer`
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: ${theme.spacing[2]};
+  border-top: 1px solid ${theme.colors.border.subtle};
+  padding: ${theme.spacing[4]} ${theme.spacing[5]};
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    align-items: stretch;
+    flex-direction: column;
+    padding-bottom: calc(${theme.spacing[4]} + env(safe-area-inset-bottom));
+
+    > * {
+      width: 100%;
+    }
+  }
+`

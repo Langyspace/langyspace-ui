@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import type {
   AccessibleChoiceOption,
   ChoiceOption,
-} from '../../../src/foundations/selection/index'
+} from '../../../src/foundations/selection'
 
 describe('selection foundations', () => {
   it('requires an accessible label for custom visual labels', () => {

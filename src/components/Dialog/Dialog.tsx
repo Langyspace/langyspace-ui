@@ -1,9 +1,6 @@
-import { ModalLayer } from '../../internal/ModalLayer'
+import { ModalLayer } from '../../internal/ModalLayer/ModalLayer'
 import { OverlayCloseButton } from '../IconButton/OverlayCloseButton'
-
-import type { OverlayShellProps } from '../../internal/ModalLayer/types'
-
-export type DialogProps = OverlayShellProps
+import type { DialogProps } from './Dialog.types'
 
 export function Dialog(props: DialogProps) {
   return (
@@ -20,9 +17,3 @@ export function Dialog(props: DialogProps) {
     />
   )
 }
-
-export type {
-  OverlayDismissal as DialogDismissal,
-  OverlayPanelProps as DialogPanelProps,
-  OverlaySize as DialogSize,
-} from '../../internal/ModalLayer/types'

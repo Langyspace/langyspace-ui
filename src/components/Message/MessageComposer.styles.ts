@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { TextareaInput } from '../Form/TextareaInput'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
 
 export const Form = styled.form.withConfig({
   componentId: 'lsui-sc-message-composer',
@@ -9,7 +9,7 @@ export const Form = styled.form.withConfig({
   width: 100%;
   min-width: 0;
   flex-direction: column;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
 `
 
 export const InputRow = styled.div`
@@ -17,14 +17,14 @@ export const InputRow = styled.div`
   width: 100%;
   min-width: 0;
   align-items: flex-end;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
 `
 
 export const Input = styled(TextareaInput)`
   box-sizing: border-box;
-  height: ${token.controlHeightLg};
+  height: ${theme.sizes.control.lg};
   min-width: 0;
-  min-height: ${token.controlHeightLg};
+  min-height: ${theme.sizes.control.lg};
   max-height: 9rem;
   flex: 1 1 auto;
   overflow-y: auto;
@@ -45,10 +45,10 @@ export const Support = styled.div`
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  gap: ${token.spacing1} ${token.spacing3};
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  line-height: ${token.typographyLineHeightNormal};
+  gap: ${theme.spacing[1]} ${theme.spacing[3]};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  line-height: ${theme.typography.lineHeight.normal};
 `
 
 export const Helper = styled.span`
@@ -60,18 +60,18 @@ export const Helper = styled.span`
 export const Counter = styled.span<{ $invalid: boolean }>`
   margin-left: auto;
   color: ${({ $invalid }) =>
-    $invalid ? token.colorFeedbackDangerStrong : 'inherit'};
+    $invalid ? theme.semantic.status.danger.foreground : 'inherit'};
   font-weight: ${({ $invalid }) =>
     $invalid
-      ? token.typographyFontWeightSemibold
-      : token.typographyFontWeightMedium};
+      ? theme.typography.fontWeight.semibold
+      : theme.typography.fontWeight.medium};
   white-space: nowrap;
 `
 
 export const Error = styled.p`
   margin: 0;
-  color: ${token.colorFeedbackDangerStrong};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.semantic.status.danger.foreground};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
   overflow-wrap: anywhere;
 `

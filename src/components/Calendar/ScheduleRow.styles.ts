@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-schedule-row',
@@ -8,14 +8,14 @@ export const Root = styled.div.withConfig({
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
-  gap: ${token.spacing5};
-  padding-top: ${token.spacing4};
-  padding-right: ${token.spacing5};
-  padding-bottom: ${token.spacing4};
-  padding-left: ${token.spacing5};
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusCard};
-  color: ${token.colorContentDefault};
+  gap: ${theme.spacing[5]};
+  padding-top: ${theme.spacing[4]};
+  padding-right: ${theme.spacing[5]};
+  padding-bottom: ${theme.spacing[4]};
+  padding-left: ${theme.spacing[5]};
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.card};
+  color: ${theme.colors.text.primary};
   transition:
     color 150ms cubic-bezier(0.2, 0, 0, 1),
     background-color 150ms cubic-bezier(0.2, 0, 0, 1),
@@ -24,23 +24,23 @@ export const Root = styled.div.withConfig({
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
   & + & {
-    margin-top: ${token.spacing3};
+    margin-top: ${theme.spacing[3]};
   }
 
   &:hover {
-    border-color: ${token.colorSurfaceBorderStrong};
+    border-color: ${theme.semantic.border.strong};
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     align-items: center;
-    column-gap: ${token.spacing3};
-    padding-right: ${token.spacing4};
-    padding-left: ${token.spacing4};
+    column-gap: ${theme.spacing[3]};
+    padding-right: ${theme.spacing[4]};
+    padding-left: ${theme.spacing[4]};
   }
 
-  background: ${token.colorNeutral0};
+  background: ${theme.colors.palette.white};
   &[data-muted='true'] {
-    background: ${token.colorNeutral50};
+    background: ${theme.colors.palette.neutral[100]};
     opacity: 0.85;
   }
 `
@@ -52,7 +52,7 @@ export const OpenButton = styled(Pressable).withConfig({
   min-width: 0;
   grid-template-columns: 5.75rem minmax(0, 1fr);
   align-items: center;
-  gap: ${token.spacing5};
+  gap: ${theme.spacing[5]};
   padding: 0;
   border: 0;
   color: inherit;
@@ -61,13 +61,13 @@ export const OpenButton = styled(Pressable).withConfig({
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px #00f2ea52;
+    box-shadow: 0 0 0 3px ${theme.colors.focusRing};
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     grid-template-areas: 'time student';
     grid-template-columns: auto minmax(0, 1fr);
-    column-gap: ${token.spacing3};
+    column-gap: ${theme.spacing[3]};
   }
 `
 
@@ -75,12 +75,12 @@ export const Time = styled.span.withConfig({
   componentId: 'lsui-sc-schedule-time',
 })`
   display: block;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSizeLg};
-  font-weight: ${token.typographyFontWeightBold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.lg};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: ${theme.typography.lineHeight.snug};
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     grid-area: time;
   }
 `
@@ -91,13 +91,13 @@ export const Participant = styled.span.withConfig({
   display: flex;
   align-items: center;
   min-width: 0;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
 
   > * {
     min-width: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     grid-area: student;
   }
 `
@@ -108,9 +108,9 @@ export const Actions = styled.div.withConfig({
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     align-self: center;
     justify-content: flex-end;
   }

@@ -1,16 +1,24 @@
+import { useControllableState } from '../../internal/useControllableState'
 import * as Styled from './FilterPills.styles'
 import type { ChoiceValue } from '../../foundations/selection'
 import type { FilterPillsProps } from './FilterPills.types'
 
 export function FilterPills<Value extends ChoiceValue>({
   counts,
-  onChange,
+  defaultValue,
+  onValueChange,
   options,
   overflow = 'scroll',
   size = 'md',
-  value,
+  value: controlledValue,
   ...props
 }: FilterPillsProps<Value>) {
+  const [value, setValue] = useControllableState({
+    defaultValue: defaultValue ?? options[0]?.value,
+    onChange: onValueChange,
+    value: controlledValue,
+  })
+
   return (
     <Styled.Group {...props} $overflow={overflow} role="group">
       {options.map((option) => {
@@ -32,7 +40,9 @@ export function FilterPills<Value extends ChoiceValue>({
             aria-pressed={option.value === value}
             disabled={option.disabled}
             type="button"
-            onClick={() => onChange(option.value)}
+            onClick={() => {
+              setValue(option.value)
+            }}
           >
             {option.label}
             {count !== undefined ? <Styled.Count>{count}</Styled.Count> : null}
@@ -42,9 +52,3 @@ export function FilterPills<Value extends ChoiceValue>({
     </Styled.Group>
   )
 }
-
-export type {
-  FilterPillsOverflow,
-  FilterPillsProps,
-  FilterPillsSize,
-} from './FilterPills.types'
