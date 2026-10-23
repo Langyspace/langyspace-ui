@@ -81,3 +81,46 @@ componente fosse reescrito uma só vez.
 Resultado do lint: 573 violações registradas → 0. O registro de supressões foi
 removido e o AGENTS.md proíbe novas supressões.
 
+## Ajustes da lib pedidos pela adoção (23/10/2026)
+
+A adoção nos produtos trouxe para a lib o que eles faziam por seletor interno ou
+por variável CSS:
+
+- `MetricSummary variant="tile"`, `MessageThreadHeader leadingActionDisplay="compact"`
+  e `StatCard size="sm"` substituem os seletores `[data-ui-*]` de Teacher e Admin.
+- `FlashcardSwiper exit={{ rotate, x, y }}` substitui `exiting` + `style` com
+  `--tr`, `--tx`, `--ty` (Teacher e Student).
+- `palette.extended` ganhou as cinco cores avulsas usadas por dois ou mais
+  produtos; `zIndex.notice` (24) cobre o aviso de shell de Teacher e Student.
+- O tipo de `createTheme` deixou de perder as chaves do tema quando a sobrescrita
+  é grande (caso do Site); `test/types/createTheme.tsx` cobre o contrato.
+
+## T9 — Adoção nos produtos (23/10/2026)
+
+Worktrees `langyspace-<produto>-ui-v4` (Site: `langyspace-ui-v4-site`), branch
+`refactor/ui-v4-adoption`, a partir de `origin/staging` (Teacher, Student, Admin) e
+`main` (Cupom, Site). Cada produto:
+
+- usa o candidato v4 e corrige a API renomeada apontada pelo typecheck;
+- troca o tema local por `theme`/`createTheme` da lib. A equivalência foi provada
+  caminho a caminho contra o tema anterior: Teacher, Student (2 gradientes),
+  Admin (1 foco) e Site (paleta da landing) sem nenhum valor diferente;
+- usa `render` com `Link`/`NavLink` nos adaptadores de link do roteador, `Toaster`
+  nos toasts com store e o `ToastProvider` da lib no Admin;
+- adota `@langyspace/ui/eslint`. Cores, breakpoints e z-index com equivalente no
+  tema foram migrados por codemod; o resto ficou registrado em
+  `eslint-suppressions.json` do produto.
+
+| Produto | Dívida de estilo restante (bulk suppressions)                                 |
+| ------- | ----------------------------------------------------------------------------- |
+| Teacher | nenhuma                                                                       |
+| Student | 49 cores de arte sem equivalente no tema                                      |
+| Admin   | 247 `style={{}}`, 49 cores, 41 breakpoints fora da escala, 6 z-index locais   |
+| Site    | 89 cores da paleta antiga da landing, 2 breakpoints em rem                    |
+| Cupom   | sem ESLint no projeto; CSS migrado para `createGlobalStyle` com o mesmo texto |
+
+Nomear cores de arte e criar novos degraus de breakpoint é decisão de design da
+product owner; por isso esses valores não entraram no tema por conta própria.
+Pendências que exigem desenho de API: o layout de agenda do Admin sobre
+`AvailabilityCalendar` (8 regras por seletor) e a quebra do BEM do Cupom em
+componentes com tema.
