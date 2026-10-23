@@ -4,20 +4,19 @@ type Widen<Value> = Value extends string
   ? string
   : Value extends number
     ? number
-    : { [Key in keyof Value]?: Widen<Value[Key]> }
+    : { [Key in keyof Value]?: Widen<Value[Key]> } & Record<string, unknown>
 
-export type ThemeOverrides = Widen<LangyTheme> & Record<string, unknown>
+/** Partial theme values; products may also add keys of their own. */
+export type ThemeOverrides = Widen<LangyTheme>
+
+type PlainObject = Record<string, unknown>
 
 export type DeepMerge<Base, Override> = {
-  [Key in keyof Base | keyof Override]: Key extends keyof Override
-    ? Key extends keyof Base
-      ? Base[Key] extends Record<string, unknown>
-        ? Override[Key] extends Record<string, unknown>
-          ? DeepMerge<Base[Key], Override[Key]>
-          : Override[Key]
+  -readonly [Key in keyof Base]-?: Key extends keyof Override
+    ? Base[Key] extends PlainObject
+      ? Override[Key] extends PlainObject
+        ? DeepMerge<Base[Key], Override[Key]>
         : Override[Key]
-      : Override[Key]
-    : Key extends keyof Base
-      ? Base[Key]
-      : never
-}
+      : Exclude<Override[Key], undefined>
+    : Base[Key]
+} & Omit<Override, keyof Base>

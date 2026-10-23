@@ -1,5 +1,6 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import type { MessageThreadHeaderLeadingActionDisplay } from './MessageThreadHeader.types'
 
 export const Header = styled.header.withConfig({
   componentId: 'lsui-sc-message-thread-header',
@@ -11,11 +12,22 @@ export const Header = styled.header.withConfig({
   gap: ${theme.spacing[3]};
 `
 
-export const Action = styled.div`
+const compactOnly = css`
+  display: none;
+
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
+    display: inline-flex;
+  }
+`
+
+export const Action = styled.div<{
+  $display?: MessageThreadHeaderLeadingActionDisplay
+}>`
   display: inline-flex;
   min-width: 0;
   flex: 0 0 auto;
   align-items: center;
+  ${({ $display }) => $display === 'compact' && compactOnly}
 `
 
 export const Identity = styled.div`

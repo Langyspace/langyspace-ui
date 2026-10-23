@@ -1,9 +1,37 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import type { MetricSummaryVariant } from './MetricSummary.types'
+
+const tile = css`
+  border: 1px solid ${theme.colors.border.subtle};
+  text-align: left;
+
+  [data-ui-metric-value] {
+    line-height: 1.1;
+  }
+
+  [data-ui-metric-label] {
+    font-size: ${theme.typography.fontSize.xs};
+    text-transform: none;
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    padding: ${theme.spacing[3]};
+
+    [data-ui-metric-value] {
+      font-size: ${theme.typography.fontSize.xl};
+    }
+
+    [data-ui-metric-label] {
+      font-size: ${theme.typography.fontSize.xs};
+      white-space: normal;
+    }
+  }
+`
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-metric-summary',
-})`
+})<{ $variant: MetricSummaryVariant }>`
   padding: ${theme.spacing[3]};
   border-radius: ${theme.radius.card};
   background: ${theme.colors.palette.neutral[100]};
@@ -39,6 +67,8 @@ export const Root = styled.div.withConfig({
       white-space: nowrap;
     }
   }
+
+  ${({ $variant }) => $variant === 'tile' && tile}
 `
 
 export const Value = styled.div.withConfig({

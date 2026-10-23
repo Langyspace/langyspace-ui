@@ -28,16 +28,17 @@ declare module 'styled-components' {
 
 ## Props
 
-| Componente                                                                                                                                                                                 | Antes                       | Depois                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------- | ------------------------------------------------------------ |
-| Button, IconButton                                                                                                                                                                         | `isLoading`                 | `loading`                                                    |
-| ActionMenu (`items`)                                                                                                                                                                       | `isLoading`                 | `loading`                                                    |
-| OperationalList (ações dos itens)                                                                                                                                                          | `isLoading`                 | `loading`                                                    |
-| MessageComposer                                                                                                                                                                            | `isSubmitting`              | `submitting`                                                 |
-| SegmentedControl, FilterPills                                                                                                                                                              | `onChange(value)`, `value`  | `onValueChange(value)`; `value` ou `defaultValue`            |
-| AuthTokenDigits                                                                                                                                                                            | `onTokenChange`, `hasError` | `onValueChange`, `invalid`; `defaultValue` opcional          |
-| TextInput, SelectInput, TextareaInput, SearchInput, PhoneField, ToastViewport, ToastItem, MessageThread, MessageThreadHeader, MessageComposer, MessageBubble, DocumentLayout, NoticeBanner | `forwardRef`                | `ref` como prop comum do React 19; mesmo elemento de destino |
-| FieldRoot, CompoundControl, SegmentedControl, FilterPills, AuthTokenDigits                                                                                                                 | sem `ref` tipado            | aceitam `ref` do elemento raiz                               |
+| Componente                                                                                                                                                                                 | Antes                                          | Depois                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- | ------------------------------------------------------------ |
+| Button, IconButton                                                                                                                                                                         | `isLoading`                                    | `loading`                                                    |
+| ActionMenu (`items`)                                                                                                                                                                       | `isLoading`                                    | `loading`                                                    |
+| OperationalList (ações dos itens)                                                                                                                                                          | `isLoading`                                    | `loading`                                                    |
+| MessageComposer                                                                                                                                                                            | `isSubmitting`                                 | `submitting`                                                 |
+| FlashcardSwiper                                                                                                                                                                            | `exiting` + `style` com `--tr`, `--tx`, `--ty` | `exit={{ rotate, x, y }}`                                    |
+| SegmentedControl, FilterPills                                                                                                                                                              | `onChange(value)`, `value`                     | `onValueChange(value)`; `value` ou `defaultValue`            |
+| AuthTokenDigits                                                                                                                                                                            | `onTokenChange`, `hasError`                    | `onValueChange`, `invalid`; `defaultValue` opcional          |
+| TextInput, SelectInput, TextareaInput, SearchInput, PhoneField, ToastViewport, ToastItem, MessageThread, MessageThreadHeader, MessageComposer, MessageBubble, DocumentLayout, NoticeBanner | `forwardRef`                                   | `ref` como prop comum do React 19; mesmo elemento de destino |
+| FieldRoot, CompoundControl, SegmentedControl, FilterPills, AuthTokenDigits                                                                                                                 | sem `ref` tipado                               | aceitam `ref` do elemento raiz                               |
 
 ## Links e roteador
 
@@ -75,4 +76,10 @@ controlados não precisam instalá-lo.
 ## Seletores internos
 
 Os atributos `data-ui-*` continuam para testes e diagnósticos, mas não são contrato
-de estilo. Variações visuais pedidas pelos produtos entram como props.
+de estilo. Variações visuais pedidas pelos produtos entram como props:
+
+| Seletor anterior no produto                             | Prop                                                 |
+| ------------------------------------------------------- | ---------------------------------------------------- |
+| `[data-ui-message-thread-header-part='leading-action']` | `MessageThreadHeader leadingActionDisplay="compact"` |
+| `[data-ui-metric-value]`, `[data-ui-metric-label]`      | `MetricSummary variant="tile"`                       |
+| `[data-ui-stat-value]` (valor compacto)                 | `StatCard size="sm"`                                 |

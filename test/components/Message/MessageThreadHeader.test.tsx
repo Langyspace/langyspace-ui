@@ -79,3 +79,18 @@ describe('MessageThreadHeader', () => {
     ).toHaveAttribute('title', title)
   })
 })
+
+it('keeps a compact leading action out of wide layouts', () => {
+  render(
+    <MessageThreadHeader
+      initials="MA"
+      leadingAction={<button type="button">Voltar</button>}
+      leadingActionDisplay="compact"
+      title="Mariana Alves"
+    />,
+  )
+
+  expect(
+    screen.getByRole('button', { name: 'Voltar', hidden: true }).parentElement,
+  ).toHaveStyle({ display: 'none' })
+})

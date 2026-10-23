@@ -3,7 +3,10 @@ import { resolve } from 'node:path'
 import { describe, expect, it } from 'vitest'
 import { inlineTheme } from '../../scripts/inline-theme.mjs'
 
-const filename = resolve(import.meta.dirname, '../../src/components/Probe/Probe.styles.ts')
+const filename = resolve(
+  import.meta.dirname,
+  '../../src/components/Probe/Probe.styles.ts',
+)
 
 const transform = (code) =>
   transformSync(code, {

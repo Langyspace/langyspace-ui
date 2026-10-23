@@ -1,4 +1,5 @@
 import { Linter, RuleTester } from 'eslint'
+import { describe, expect, it } from 'vitest'
 import tseslint from 'typescript-eslint'
 import langyspace, { productConfig } from '../../eslint/langyspace.mjs'
 
@@ -120,7 +121,9 @@ describe('productConfig', () => {
   it('keeps product styling on styled-components and the theme', () => {
     expect(lint("import './page.css'")).toEqual(['no-restricted-imports'])
     expect(lint("import clsx from 'clsx'")).toEqual(['no-restricted-imports'])
-    expect(lint("const color = '#FF1F5C'")).toEqual(['langyspace/no-raw-colors'])
+    expect(lint("const color = '#FF1F5C'")).toEqual([
+      'langyspace/no-raw-colors',
+    ])
   })
 
   it('allows font packages to load their stylesheet', () => {

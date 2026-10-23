@@ -164,7 +164,10 @@ export { MessageThread } from './components/Message/MessageThread'
 export type { MessageThreadProps } from './components/Message/MessageThread.types'
 
 export { MessageThreadHeader } from './components/Message/MessageThreadHeader'
-export type { MessageThreadHeaderProps } from './components/Message/MessageThreadHeader.types'
+export type {
+  MessageThreadHeaderLeadingActionDisplay,
+  MessageThreadHeaderProps,
+} from './components/Message/MessageThreadHeader.types'
 
 export { OperationalList } from './components/OperationalList/OperationalList'
 export type {
@@ -379,7 +382,10 @@ export { DetailRow } from './components/Details/DetailRow'
 export type { DetailRowProps } from './components/Details/DetailRow.types'
 
 export { MetricSummary } from './components/MetricSummary/MetricSummary'
-export type { MetricSummaryProps } from './components/MetricSummary/MetricSummary.types'
+export type {
+  MetricSummaryProps,
+  MetricSummaryVariant,
+} from './components/MetricSummary/MetricSummary.types'
 
 export { SidebarFrame } from './components/Navigation/SidebarFrame'
 export type { SidebarFrameProps } from './components/Navigation/SidebarFrame.types'
@@ -452,7 +458,10 @@ export { FlashcardFlip } from './components/Flashcard/FlashcardFlip'
 export type { FlashcardFlipProps } from './components/Flashcard/FlashcardFlip.types'
 
 export { FlashcardSwiper } from './components/Flashcard/FlashcardSwiper'
-export type { FlashcardSwiperProps } from './components/Flashcard/FlashcardSwiper.types'
+export type {
+  FlashcardSwiperExit,
+  FlashcardSwiperProps,
+} from './components/Flashcard/FlashcardSwiper.types'
 
 export { FlashcardFeedback } from './components/Flashcard/FlashcardFeedback'
 export type { FlashcardFeedbackProps } from './components/Flashcard/FlashcardFeedback.types'

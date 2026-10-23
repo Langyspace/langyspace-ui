@@ -260,7 +260,7 @@ Cuidados: Compor dentro de Frame; não conhece cartão ou dados. Breakpoint900px
 
 Camada visual de entrada/saída e gestos do cartão.
 
-Contrato: exiting e atributos/ref/children de div.
+Contrato: `exit` (`{ rotate, x, y }`, inicia a animação de saída nessa direção) e atributos/ref/children de div.
 
 Cuidados: Produto fornece vetores de saída/gestos; comando de virar fica no botão nativo irmão do áudio. Retirar role/click/keydown genéricos dos consumidores.
 

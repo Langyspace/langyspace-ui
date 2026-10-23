@@ -25,3 +25,8 @@ export const ZeroValue: Story = {
 export const LongContent: Story = {
   args: { value: '123.456', label: 'Atividades concluídas' },
 }
+
+export const Tile: Story = {
+  args: { value: 8, label: 'Acertos', variant: 'tile' },
+  tags: ['visual-review'],
+}

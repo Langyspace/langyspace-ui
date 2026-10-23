@@ -30,3 +30,13 @@ it('styles value and label together without a product theme', () => {
     fontWeight: '600',
   })
 })
+
+it('renders the tile variant left-aligned with sentence-case labels', () => {
+  render(<MetricSummary label="Acertos" value={8} variant="tile" />)
+
+  const label = screen.getByText('Acertos')
+
+  expect(label.parentElement).toHaveAttribute('data-variant', 'tile')
+  expect(label.parentElement).toHaveStyle({ textAlign: 'left' })
+  expect(label).toHaveStyle({ textTransform: 'none', fontSize: '0.75rem' })
+})

@@ -28,6 +28,10 @@ export const Root = styled.div.withConfig({ componentId: 'lsui-sc-stat-card' })`
       background: ${theme.colors.palette.accent.pink};
     }
   }
+
+  &[data-size='sm'] [data-ui-stat-value] {
+    font-size: 18px;
+  }
 `
 
 export const Value = styled.div.withConfig({

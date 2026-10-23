@@ -3,7 +3,10 @@ import { resolve } from 'node:path'
 import vm from 'node:vm'
 import ts from 'typescript'
 
-const themeFile = resolve(import.meta.dirname, '../src/foundations/theme/theme.ts')
+const themeFile = resolve(
+  import.meta.dirname,
+  '../src/foundations/theme/theme.ts',
+)
 const themeImport = /(?:^|\/)theme\/theme$|^\.\/theme$/
 
 function loadTheme() {
@@ -52,7 +55,8 @@ export function inlineTheme({ types: t }) {
             ) {
               const { computed, property } = current.parentPath.node
 
-              if (!computed && t.isIdentifier(property)) keys.push(property.name)
+              if (!computed && t.isIdentifier(property))
+                keys.push(property.name)
               else if (
                 computed &&
                 (t.isStringLiteral(property) || t.isNumericLiteral(property))

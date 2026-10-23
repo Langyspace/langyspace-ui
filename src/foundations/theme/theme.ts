@@ -33,6 +33,9 @@ const palette = {
     stone250: '#ECEAE6',
     stone300: '#E4E1DA',
     stone350: '#D8D6D2',
+    stone275: '#E3E3E0',
+    stone380: '#CFCFCC',
+    stone400: '#CBCBC8',
     stone600: '#5B5B58',
     rose50: '#FEF0F2',
     rose600: '#E11D48',
@@ -43,6 +46,8 @@ const palette = {
     pink600: '#F10F4D',
     pink800: '#9D174D',
     orange50: '#FFF3E0',
+    amber50: '#FFFBEB',
+    amber900: '#78350F',
     yellow800: '#854D0E',
     teal700: '#007F78',
   },
@@ -659,6 +664,8 @@ export const theme = {
   },
   zIndex: {
     base: 0,
+    // Shell notices stick below the mobile header and above page content.
+    notice: 24,
     dropdown: 100,
     sticky: 200,
     overlay: 800,

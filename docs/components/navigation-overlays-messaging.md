@@ -249,7 +249,7 @@ Cuidados: viewportRef é o alvo do scroll; ref externo é da section. O produto 
 
 Identificação da conversa e ações de navegação.
 
-Contrato: title, subtitle, initials/imageUrl, leadingAction e trailingAction; atributos/ref de header.
+Contrato: title, subtitle, initials/imageUrl, leadingAction, `leadingActionDisplay` (`always` ou `compact`, só abaixo do breakpoint mobileShell) e trailingAction; atributos/ref de header.
 
 Cuidados: Usar botões/links nomeados nos slots de ação. Busca de perfil, bloqueio de acesso e conversas arquivadas continuam no produto.
 

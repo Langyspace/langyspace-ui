@@ -6,6 +6,7 @@ export function MessageThreadHeader({
   imageUrl,
   initials,
   leadingAction,
+  leadingActionDisplay = 'always',
   subtitle,
   title,
   trailingAction,
@@ -19,7 +20,10 @@ export function MessageThreadHeader({
       data-ui-message-thread-header="true"
     >
       {leadingAction != null ? (
-        <Styled.Action data-ui-message-thread-header-part="leading-action">
+        <Styled.Action
+          $display={leadingActionDisplay}
+          data-ui-message-thread-header-part="leading-action"
+        >
           {leadingAction}
         </Styled.Action>
       ) : null}
