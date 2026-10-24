@@ -17,6 +17,9 @@ importers:
       '@eslint/js':
         specifier: ^9.39.4
         version: 9.39.5
+      '@fontsource/montserrat':
+        specifier: 5.2.8
+        version: 5.2.8
       '@rolldown/plugin-babel':
         specifier: 0.2.4
         version: 0.2.4(@babel/core@7.29.7)(@babel/runtime@7.29.7)(rolldown@1.2.5)(vite@8.2.2(@types/node@24.13.3)(esbuild@0.28.2))
@@ -580,6 +583,9 @@ packages:
     peerDependenciesMeta:
       '@noble/hashes':
         optional: true
+
+  '@fontsource/montserrat@5.2.8':
+    resolution: {integrity: sha512-xTjLxSbSfCycDB0pwmNsfNvdfWPaDaRQ2LC6yt/ZI7SdvXG52zHnzNYC/09mzuAuWNJyShkteutfCoDgym56hQ==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -3625,6 +3631,8 @@ snapshots:
       levn: 0.4.1
 
   '@exodus/bytes@1.15.1': {}
+
+  '@fontsource/montserrat@5.2.8': {}
 
   '@humanfs/core@0.19.2':
     dependencies:

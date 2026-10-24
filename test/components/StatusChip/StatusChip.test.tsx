@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { StatusChip } from '../../../src/index'
-import type { StatusChipTone } from '../../../src/components/StatusChip/StatusChip'
+import type { StatusChipTone } from '../../../src/components/StatusChip/StatusChip.types'
 
 describe('StatusChip', () => {
   it('renders every semantic tone with native span props', () => {

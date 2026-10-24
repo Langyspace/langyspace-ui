@@ -65,6 +65,18 @@ export const FallbackAndActions: Story = {
   tags: ['visual-review'],
 }
 
+export const CompactLeadingAction: Story = {
+  args: {
+    leadingAction: (
+      <IconButton aria-label="Voltar" size="sm" variant="neutral">
+        {backIcon}
+      </IconButton>
+    ),
+    leadingActionDisplay: 'compact',
+  },
+  tags: ['visual-review'],
+}
+
 export const IdentityExtremes: Story = {
   render: () => (
     <NarrowSurface>

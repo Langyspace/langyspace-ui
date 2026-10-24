@@ -1,11 +1,5 @@
 import * as Styled from './FlashcardWord.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface FlashcardWordProps extends ComponentPropsWithRef<'div'> {
-  phonetic?: ReactNode
-  example?: ReactNode
-}
+import type { FlashcardWordProps } from './FlashcardWord.types'
 
 export function FlashcardWord({
   children,

@@ -5,7 +5,7 @@ import { ToastViewport } from '../../../src/components/Toast/ToastViewport'
 import { ToastItem } from '../../../src/components/Toast/ToastItem'
 
 describe('ToastViewport', () => {
-  it('forwards announcement semantics and ref without owning items or timers', () => {
+  it('is a polite live region by default and forwards ref without owning items or timers', () => {
     const ref = createRef<HTMLDivElement>()
     const { rerender } = render(
       <ToastViewport ref={ref} aria-live="polite" data-testid="viewport">
@@ -17,9 +17,13 @@ describe('ToastViewport', () => {
     expect(ref.current).toHaveAttribute('aria-live', 'polite')
     expect(screen.getByRole('button')).toHaveTextContent('Pronto')
 
-    rerender(<ToastViewport data-testid="viewport" />)
+    rerender(<ToastViewport aria-live="assertive" data-testid="viewport" />)
 
-    expect(screen.getByTestId('viewport')).not.toHaveAttribute('aria-live')
+    expect(screen.getByTestId('viewport')).toHaveAttribute('role', 'status')
+    expect(screen.getByTestId('viewport')).toHaveAttribute(
+      'aria-live',
+      'assertive',
+    )
     expect(screen.queryByRole('button')).not.toBeInTheDocument()
   })
 })

@@ -1,8 +1,5 @@
 import * as Styled from './FlashcardFrame.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export type FlashcardFrameProps = ComponentPropsWithRef<'section'>
+import type { FlashcardFrameProps } from './FlashcardFrame.types'
 
 export function FlashcardFrame(props: FlashcardFrameProps) {
   return <Styled.Root {...props} />

@@ -1,17 +1,5 @@
 import * as Styled from './NotificationItem.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface NotificationItemProps extends Omit<
-  ComponentPropsWithRef<'button'>,
-  'children' | 'title'
-> {
-  avatar: ReactNode
-  title: ReactNode
-  description: ReactNode
-  meta: ReactNode
-  action?: ReactNode
-}
+import type { NotificationItemProps } from './NotificationItem.types'
 
 export function NotificationItem({
   avatar,
@@ -30,7 +18,7 @@ export function NotificationItem({
         <Styled.ItemBody>{description}</Styled.ItemBody>
         <Styled.ItemMeta>{meta}</Styled.ItemMeta>
       </Styled.Content>
-      {action && <Styled.ItemAction>{action}</Styled.ItemAction>}
+      {action ? <Styled.ItemAction>{action}</Styled.ItemAction> : null}
     </Styled.Root>
   )
 }

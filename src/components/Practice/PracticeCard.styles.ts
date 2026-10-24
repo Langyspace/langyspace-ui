@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-practice-card',
@@ -11,16 +11,16 @@ export const Root = styled(Pressable).withConfig({
   flex-direction: column;
   overflow: hidden;
   padding: 0;
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
+  border: 1px solid ${theme.colors.border.subtle};
   border-radius: 14px;
-  color: ${token.colorContentDefault};
-  background: ${token.colorNeutral0};
+  color: ${theme.colors.text.primary};
+  background: ${theme.colors.palette.white};
   text-align: left;
   transition:
     border-color 0.15s ease,
     transform 0.15s ease;
   &:hover:not(:disabled) {
-    border-color: ${token.colorSurfaceBorderStrong};
+    border-color: ${theme.semantic.border.strong};
     transform: translateY(-1px);
   }
   &:disabled {
@@ -28,19 +28,19 @@ export const Root = styled(Pressable).withConfig({
     opacity: 0.72;
   }
   &:focus-visible {
-    outline: 3px solid rgba(0, 242, 234, 0.72);
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: 2px;
   }
   &[data-completed='true'] {
-    border-color: ${token.colorNeutral300};
-    background: ${token.colorNeutral50};
+    border-color: ${theme.colors.palette.neutral[400]};
+    background: ${theme.colors.palette.neutral[100]};
     box-shadow: none;
     [data-ui-practice-card-cover] {
       opacity: 0.72;
       filter: grayscale(0.38);
     }
     &:hover:not(:disabled) {
-      background: ${token.colorNeutral100};
+      background: ${theme.colors.palette.neutral[200]};
     }
   }
   @media (prefers-reduced-motion: reduce) {

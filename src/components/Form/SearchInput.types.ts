@@ -1,10 +1,10 @@
-import type { InputHTMLAttributes } from 'react'
+import type { ComponentPropsWithRef } from 'react'
 import type { CompatibleAccessibleName } from '../../foundations/accessibility'
 import type { FieldControlSize } from '../../foundations/fields'
-import type { CompoundControlSurface } from './CompoundControl'
+import type { CompoundControlSurface } from './CompoundControl.types'
 
 type NativeProps = Omit<
-  InputHTMLAttributes<HTMLInputElement>,
+  ComponentPropsWithRef<'input'>,
   'aria-label' | 'aria-labelledby' | 'size' | 'type'
 >
 
@@ -19,3 +19,9 @@ export type SearchInputProps = NativeProps &
     size?: FieldControlSize
     surface?: CompoundControlSurface
   }
+
+export type { FieldControlSize as SearchInputSize } from '../../foundations/fields'
+
+export interface SearchIconProps {
+  size: number
+}

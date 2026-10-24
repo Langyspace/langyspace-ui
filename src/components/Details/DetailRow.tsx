@@ -1,16 +1,5 @@
 import * as Styled from './DetailRow.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface DetailRowProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children'
-> {
-  label: ReactNode
-  value: ReactNode
-  icon?: ReactNode
-  action?: ReactNode
-}
+import type { DetailRowProps } from './DetailRow.types'
 
 export function DetailRow({
   icon,
@@ -21,7 +10,7 @@ export function DetailRow({
 }: DetailRowProps) {
   return (
     <Styled.Root {...props}>
-      {icon && <Styled.Icon aria-hidden>{icon}</Styled.Icon>}
+      {icon ? <Styled.Icon aria-hidden>{icon}</Styled.Icon> : null}
       <Styled.Content>
         <Styled.Label>{label}</Styled.Label>
         <Styled.Value>{value}</Styled.Value>

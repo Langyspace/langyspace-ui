@@ -3,7 +3,7 @@ import { dirname, extname, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const canonicalButtonTypes = fileURLToPath(
-  new URL('../src/components/Button/Button.tsx', import.meta.url),
+  new URL('../src/components/Button/Button.types.ts', import.meta.url),
 )
 
 const sourceExtensions = new Set(['.js', '.jsx', '.ts', '.tsx'])
@@ -261,9 +261,8 @@ export async function auditArchitecture(config) {
       }
     }
 
-    const privateImportMatch = /from\s+['"]@langyspace\/ui\/(?!audit['"])/.exec(
-      source,
-    )
+    const privateImportMatch =
+      /from\s+['"]@langyspace\/ui\/(?!(?:audit|form)['"])/.exec(source)
     if (privateImportMatch) {
       report({
         index: privateImportMatch.index,

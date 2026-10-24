@@ -50,10 +50,3 @@ export function StatePanel({
     </Styled.Container>
   )
 }
-
-export type {
-  StatePanelDensity,
-  StatePanelProps,
-  StatePanelState,
-  StatePanelSurface,
-} from './StatePanel.types'

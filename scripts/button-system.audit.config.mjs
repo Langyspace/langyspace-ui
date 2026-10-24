@@ -7,7 +7,7 @@ export default defineAuditConfig({
   nativeButtonOwners: [
     {
       owner: 'UI foundations',
-      path: 'src/components/Pressable.tsx',
+      path: 'src/components/Pressable.styles.ts',
       reason: 'Pressable owns the native styled button',
       expiresAt: '2027-08-25',
     },
@@ -30,7 +30,7 @@ export default defineAuditConfig({
     },
     {
       owner: 'Shadowing presentation',
-      path: 'src/components/Shadowing/ShadowingPhraseStack.tsx',
+      path: 'src/components/Shadowing/ShadowingPhraseStack.styles.ts',
       reason:
         'Existing phrase entrance or decorative repeat pulse with explicit reduced motion; audio timing remains local',
       expiresAt: '2027-04-14',
@@ -45,7 +45,7 @@ export default defineAuditConfig({
 
     {
       owner: 'Loading presentation',
-      path: 'src/components/Skeleton/Skeleton.tsx',
+      path: 'src/components/Skeleton/Skeleton.styles.ts',
       reason: 'Decorative placeholder shimmer, disabled for reduced motion',
       expiresAt: '2027-04-14',
     },
@@ -66,14 +66,14 @@ export default defineAuditConfig({
 
     {
       owner: 'Auth presentation',
-      path: 'src/components/Auth/AuthSuccessState.tsx',
+      path: 'src/components/Auth/AuthSuccessState.styles.ts',
       reason:
         'Existing finite auth success entrance, with explicit reduced motion',
       expiresAt: '2027-04-14',
     },
     {
       owner: 'Auth presentation',
-      path: 'src/components/Auth/AuthProgress.tsx',
+      path: 'src/components/Auth/AuthProgress.styles.ts',
       reason:
         'Existing decorative auth completion progress; no navigation timer; explicit reduced motion',
       expiresAt: '2027-04-14',

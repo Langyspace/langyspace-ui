@@ -1,7 +1,8 @@
 import { keyframes, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
-import * as token from '../../foundations/tokenValues'
-import type { FlashcardAudioButtonProps } from './FlashcardAudioButton'
+import type { FlashcardAudioButtonProps } from './FlashcardAudioButton.types'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 const pulse = keyframes`
   0%, 100% { transform: scale(1); }
@@ -25,9 +26,9 @@ export const Button = styled(Pressable).withConfig({
   justify-content: center;
   border: 0;
   border-radius: 50%;
-  color: ${token.colorNeutral0};
+  color: ${theme.colors.palette.white};
   background: ${({ $playing }) => ($playing ? 'var(--fc-pink)' : 'var(--fc-ink)')};
-  box-shadow: ${({ $placement }) => ($placement === 'term' ? 'none' : '0 6px 14px rgba(0, 0, 0, 0.22)')};
+  box-shadow: ${({ $placement }) => ($placement === 'term' ? 'none' : `0 6px 14px ${alpha(theme.colors.palette.black, 0.22)}`)};
   transition:
     transform 0.15s ease,
     background 0.15s ease;
@@ -37,7 +38,7 @@ export const Button = styled(Pressable).withConfig({
     transform: scale(0.9);
   }
   &:focus-visible {
-    outline: 3px solid ${token.colorFocus};
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: 2px;
   }
   @media (prefers-reduced-motion: reduce) {

@@ -14,7 +14,7 @@ pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLabor
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
 
-React/React DOM19, styled-components6 e react-hook-form7 são peers. Não há import obrigatório de CSS nem ThemeProvider externo. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
+React/React DOM19 e styled-components6 são peers; react-hook-form7 é peer opcional, usado só por `@langyspace/ui/form`. Não há import obrigatório de CSS nem ThemeProvider externo: os componentes leem o `theme` exportado. Os produtos usam o mesmo `theme` e o `GlobalStyles` da UI no próprio ThemeProvider. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
 
 ## Como o código deve ser lido
 
@@ -34,7 +34,7 @@ export function RecordActions({
 }: RecordActionsProps) {
   return (
     <>
-      <Button isLoading={saving} onClick={onSave}>
+      <Button loading={saving} onClick={onSave}>
         Salvar
       </Button>
       <ActionLink href={listHref} variant="secondary">
@@ -100,15 +100,18 @@ src/
     MetricSummary/MetricSummary.tsx
     StatCard/StatCard.tsx
     PracticeResultPanel/PracticeResultPanel.tsx
-  foundations/    tokens e receitas
+  foundations/    tema, receitas e contratos compartilhados
   internal/       hooks, contextos e infraestrutura privada
   index.ts        API pública
+  form.ts         entrada com react-hook-form
 stories/          exemplos e estados do catálogo
 test/             comportamento, contratos de tipos e setup
 ```
 
-Tipos curtos e estilos simples ficam no arquivo do componente. Estilos ou tipos
-maiores ficam em arquivos próprios quando ajudam a leitura, como Button.styles.ts.
+Cada componente separa responsabilidades: `Button.tsx` contém só React,
+`Button.types.ts` os tipos públicos e `Button.styles.ts` os estilos styled-components,
+que leem o `theme` de `foundations/theme`. O ESLint impõe essa divisão; a dívida
+restante fica em `eslint-suppressions.json` e só pode diminuir.
 Exemplos ficam em stories e testes em test, separados da implementação.
 Componentes simples podem usar um único arquivo. Não há classificação atomic nem
 uma pasta para cada detalhe. A major retira adaptadores já substituídos; os componentes completos possuem sua anatomia privada.
@@ -121,7 +124,7 @@ uma pasta para cada detalhe. A major retira adaptadores já substituídos; os co
 </PracticeResultPanel>
 ```
 
-As remoções incompatíveis estão documentadas no guia da major 3; a versão 2 continua publicada para consumidores ainda não migrados. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
+As mudanças de contrato estão no [guia da v4](docs/components/migration-v4.md); o guia da major 3 continua como histórico. O guia [de estrutura](docs/epics/ui-library-component-simplification/structure-plan.md)
 registra o escopo e os limites desta reorganização.
 
 O manifest em quality/component-manifest.ts liga export, owner, props, guia, story, teste e exemplos de consumidores. O comando é uma ferramenta do repositório:

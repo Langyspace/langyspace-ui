@@ -1,16 +1,5 @@
-// Volume2 geometry from Lucide (ISC); see THIRD_PARTY_NOTICES.md.
 import * as Styled from './FlashcardAudioButton.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export interface FlashcardAudioButtonProps extends Omit<
-  ComponentPropsWithRef<'button'>,
-  'children' | 'type' | 'aria-label'
-> {
-  label: string
-  placement?: 'image' | 'term'
-  playing?: boolean
-}
+import type { FlashcardAudioButtonProps } from './FlashcardAudioButton.types'
 
 export function FlashcardAudioButton({
   label,

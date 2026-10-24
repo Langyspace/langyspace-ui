@@ -1,26 +1,9 @@
-import { useId } from 'react'
+import { useId, useMemo } from 'react'
 import { FieldControlContext } from '../../internal/FieldControlContext'
 import * as Styled from './FieldRoot.styles'
+import type { FieldRootProps } from './FieldRoot.types'
 
-import type { HTMLAttributes, ReactNode } from 'react'
-
-export type FieldLabelVariant = 'default' | 'eyebrow'
-
-export interface FieldRootProps extends Omit<
-  HTMLAttributes<HTMLDivElement>,
-  'children'
-> {
-  children: ReactNode
-  controlId?: string
-  error?: ReactNode
-  hint?: ReactNode
-  label: ReactNode
-  labelVariant?: FieldLabelVariant
-}
-
-const hasContent = (
-  content: FieldRootProps['error'] | FieldRootProps['hint'],
-) =>
+const hasContent = (content: FieldRootProps['hint']) =>
   content !== undefined &&
   content !== null &&
   content !== false &&
@@ -40,31 +23,33 @@ export function FieldRoot({
   const hintId = `${controlId}-hint`
   const errorId = `${controlId}-error`
   const hasHint = hasContent(hint)
-  const hasError = hasContent(error)
-  const describedBy = [hasHint ? hintId : null, hasError ? errorId : null]
+  const invalid = hasContent(error)
+  const describedBy = [hasHint ? hintId : null, invalid ? errorId : null]
     .filter(Boolean)
     .join(' ')
+  const context = useMemo(
+    () => ({
+      controlId,
+      describedBy: describedBy || undefined,
+      invalid,
+    }),
+    [controlId, describedBy, invalid],
+  )
 
   return (
-    <FieldControlContext.Provider
-      value={{
-        controlId,
-        describedBy: describedBy || undefined,
-        invalid: hasError,
-      }}
-    >
-      <Styled.Root {...rootProps} data-invalid={hasError || undefined}>
+    <FieldControlContext value={context}>
+      <Styled.Root {...rootProps} data-invalid={invalid || undefined}>
         <Styled.Label $variant={labelVariant} htmlFor={controlId}>
           {label}
         </Styled.Label>
         {children}
         {hasHint ? <Styled.Hint id={hintId}>{hint}</Styled.Hint> : null}
-        {hasError ? (
+        {invalid ? (
           <Styled.Error id={errorId} role="alert">
             {error}
           </Styled.Error>
         ) : null}
       </Styled.Root>
-    </FieldControlContext.Provider>
+    </FieldControlContext>
   )
 }

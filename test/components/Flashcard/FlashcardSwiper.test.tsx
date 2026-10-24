@@ -13,3 +13,18 @@ it('preserves native attributes and structured caller content without a private 
     screen.getByTestId('content').querySelector('strong')?.textContent,
   ).toBe('Conteúdo fornecido')
 })
+
+it('exposes the exit vector to the throw animation', () => {
+  render(
+    <FlashcardSwiper
+      data-testid="card"
+      exit={{ rotate: '12deg', x: '120%', y: '-1rem' }}
+    />,
+  )
+
+  const card = screen.getByTestId('card')
+
+  expect(card.style.getPropertyValue('--tr')).toBe('12deg')
+  expect(card.style.getPropertyValue('--tx')).toBe('120%')
+  expect(card.style.getPropertyValue('--ty')).toBe('-1rem')
+})

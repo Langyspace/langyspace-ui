@@ -13,6 +13,7 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
+    "noUncheckedIndexedAccess": true,
     "noUnusedParameters": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,6 +22,7 @@
   },
   "include": [
     ".storybook/**/*.ts",
+    ".storybook/**/*.tsx",
     "audit/index.d.ts",
     "quality",
     "src",

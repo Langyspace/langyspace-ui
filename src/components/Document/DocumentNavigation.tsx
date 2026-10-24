@@ -1,23 +1,9 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-
-const Root = styled.nav.withConfig({
-  componentId: 'lsui-sc-document-navigation',
-})`
-  display: flex;
-  align-items: center;
-  gap: ${token.spacing2};
-`
-
-export interface DocumentNavigationProps extends ComponentPropsWithRef<'nav'> {
-  children: ReactNode
-}
+import type { DocumentNavigationProps } from './DocumentNavigation.types'
+import * as Styled from './DocumentNavigation.styles'
 
 export function DocumentNavigation({
   children,
   ...props
 }: DocumentNavigationProps) {
-  return <Root {...props}>{children}</Root>
+  return <Styled.Root {...props}>{children}</Styled.Root>
 }

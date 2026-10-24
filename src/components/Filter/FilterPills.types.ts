@@ -1,4 +1,4 @@
-import type { HTMLAttributes } from 'react'
+import type { ComponentPropsWithRef } from 'react'
 import type { CompatibleAccessibleName } from '../../foundations/accessibility'
 import type { ChoiceOption, ChoiceValue } from '../../foundations/selection'
 
@@ -7,14 +7,15 @@ export type FilterPillsOverflow = 'scroll' | 'wrap'
 export type FilterPillsSize = 'sm' | 'md'
 
 export type FilterPillsProps<Value extends ChoiceValue = string> = Omit<
-  HTMLAttributes<HTMLDivElement>,
-  'aria-label' | 'aria-labelledby' | 'onChange'
+  ComponentPropsWithRef<'div'>,
+  'aria-label' | 'aria-labelledby' | 'defaultValue' | 'onChange'
 > &
   CompatibleAccessibleName & {
     counts?: Partial<Record<Value, number>>
-    onChange: (value: Value) => void
+    defaultValue?: Value
+    onValueChange?: (value: Value) => void
     options: readonly ChoiceOption<Value>[]
     overflow?: FilterPillsOverflow
     size?: FilterPillsSize
-    value: Value
+    value?: Value
   }

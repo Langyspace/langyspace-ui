@@ -64,7 +64,9 @@ export function AvailabilityCalendar({
                       aria-label={`${day.label}, ${day.dateLabel}, ${slot.label}${!slot.available ? `, ${slot.unavailableReason}` : ''}`}
                       aria-pressed={isSelected}
                       disabled={!slot.available && !isSelected}
-                      onClick={() => onToggleSlot(slot.id)}
+                      onClick={() => {
+                        onToggleSlot(slot.id)
+                      }}
                     >
                       <span>
                         {isSelected ? <span aria-hidden="true">✓ </span> : null}
@@ -84,10 +86,3 @@ export function AvailabilityCalendar({
     </Styled.Container>
   )
 }
-
-export type {
-  AvailabilityCalendarDay,
-  AvailabilityCalendarProps,
-  AvailabilityCalendarSlot,
-  AvailabilityCalendarStatus,
-} from './AvailabilityCalendar.types'

@@ -105,6 +105,102 @@ const rawColors = {
   },
 }
 
+// Builds the CSS text of a template literal, keeping each character's source index.
+function templateText(node) {
+  let text = ''
+  const indexes = []
+
+  node.quasis.forEach((quasi, position) => {
+    const start = quasi.range[0] + 1
+
+    for (let offset = 0; offset < quasi.value.raw.length; offset += 1) {
+      text += quasi.value.raw[offset]
+      indexes.push(start + offset)
+    }
+    if (position < node.expressions.length) {
+      text += '0'
+      indexes.push(node.expressions[position].range[0])
+    }
+  })
+
+  return { text, indexes }
+}
+
+const rawBreakpoints = {
+  meta: {
+    type: 'suggestion',
+    docs: {
+      description:
+        'Use theme breakpoints and viewport heights in media queries.',
+    },
+    messages: {
+      useTheme:
+        'Use theme.breakpoints or theme.viewportHeights instead of a raw media query size.',
+    },
+    schema: [],
+  },
+  create(context) {
+    const { sourceCode } = context
+    const feature =
+      /\(\s*(?:min-|max-)?(?:width|height)\s*(?::|[<>]=?)\s*\d+(?:\.\d+)?(?:px|r?em)\b/g
+
+    return {
+      TemplateLiteral(node) {
+        const { text, indexes } = templateText(node)
+
+        for (const query of text.matchAll(/@media[^{]*/g)) {
+          for (const match of query[0].matchAll(feature)) {
+            const index = indexes[query.index + match.index]
+
+            context.report({
+              loc: {
+                start: sourceCode.getLocFromIndex(index),
+                end: sourceCode.getLocFromIndex(index + match[0].length),
+              },
+              messageId: 'useTheme',
+            })
+          }
+        }
+      },
+    }
+  },
+}
+
+const rawZIndex = {
+  meta: {
+    type: 'suggestion',
+    docs: {
+      description: 'Use the theme z-index scale for stacking across layers.',
+    },
+    messages: {
+      useTheme:
+        'Use theme.zIndex for z-index values of 10 or more; local stacking may use 0-9.',
+    },
+    schema: [],
+  },
+  create(context) {
+    const { sourceCode } = context
+
+    return {
+      TemplateLiteral(node) {
+        const { text, indexes } = templateText(node)
+
+        for (const match of text.matchAll(/z-index:\s*-?\d{2,}/g)) {
+          const index = indexes[match.index]
+
+          context.report({
+            loc: {
+              start: sourceCode.getLocFromIndex(index),
+              end: sourceCode.getLocFromIndex(index + match[0].length),
+            },
+            messageId: 'useTheme',
+          })
+        }
+      },
+    }
+  },
+}
+
 const inlineStyles = {
   meta: {
     type: 'suggestion',
@@ -126,12 +222,48 @@ const inlineStyles = {
   },
 }
 
-export default {
+const plugin = {
   meta: { name: 'langyspace' },
   rules: {
     'no-component-styles': componentStyles,
     'no-component-types': componentTypes,
     'no-inline-styles': inlineStyles,
+    'no-raw-breakpoints': rawBreakpoints,
     'no-raw-colors': rawColors,
+    'no-raw-z-index': rawZIndex,
   },
 }
+
+// Shared styling rules for the Langy products: styled-components with the
+// @langyspace/ui theme as the only styling path.
+export const productConfig = {
+  files: ['src/**/*.{ts,tsx}'],
+  ignores: ['src/**/*.test.{ts,tsx}'],
+  plugins: { langyspace: plugin },
+  rules: {
+    'langyspace/no-inline-styles': 'error',
+    'langyspace/no-raw-breakpoints': 'error',
+    'langyspace/no-raw-colors': 'error',
+    'langyspace/no-raw-z-index': 'error',
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: [
+          {
+            regex: '^(?!@fontsource/).*\\.(css|less|sass|scss)$',
+            message:
+              'Style with styled-components and the @langyspace/ui theme.',
+          },
+          {
+            regex:
+              '^(@emotion/|@vanilla-extract/|clsx$|classnames$|sass|styled-jsx|tailwindcss)',
+            message:
+              'Style with styled-components and the @langyspace/ui theme.',
+          },
+        ],
+      },
+    ],
+  },
+}
+
+export default plugin

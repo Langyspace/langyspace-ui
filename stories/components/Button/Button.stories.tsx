@@ -21,7 +21,7 @@ const meta = {
     children: 'Continuar',
     density: 'regular',
     fullWidth: false,
-    isLoading: false,
+    loading: false,
     size: 'md',
     variant: 'primary',
   },
@@ -76,11 +76,11 @@ export const TextWithIcons: Story = {
 }
 
 export const TextLoading: Story = {
-  args: { isLoading: true, variant: 'text' },
+  args: { loading: true, variant: 'text' },
 }
 
 export const Loading: Story = {
-  args: { iconEnd: ArrowIcon, isLoading: true },
+  args: { iconEnd: ArrowIcon, loading: true },
   tags: ['visual-review'],
   play: async ({ canvas }) => {
     const button = canvas.getByRole('button', { name: 'Continuar' })

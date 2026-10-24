@@ -1,19 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-import { authRecipe } from '../../foundations/authRecipe'
-
-// Shared auth recipe preserves the established panel rhythm and product breakpoints.
-const recipe = {
-  breakpoints: authRecipe.breakpoints,
-  blockXl: authRecipe.spacing.responsive.block.xl,
-  block2Xl: authRecipe.spacing.responsive.block['2xl'],
-  block3Xl: `clamp(${token.spacing8}, 5svh, 2.5rem)`,
-  compactSm: authRecipe.spacing.responsive.compactBlock.sm,
-  compactMd: authRecipe.spacing.responsive.compactBlock.md,
-  compactXl: authRecipe.spacing.responsive.compactBlock.xl,
-  compact2Xl: `clamp(${token.spacing5}, 4svh, 2.5rem)`,
-  compact3Xl: `clamp(${token.spacing6}, 5svh, 3rem)`,
-} as const
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Page = styled.main.withConfig({
   componentId: 'lsui-sc-auth-frame',
@@ -22,14 +9,14 @@ export const Page = styled.main.withConfig({
   height: 100svh;
   min-height: 100svh;
   overflow: hidden;
-  background-color: ${token.colorNeutral0};
+  background-color: ${theme.colors.palette.white};
 
   @supports (height: 100dvh) {
     height: 100dvh;
     min-height: 100dvh;
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 `
@@ -40,8 +27,8 @@ export const BrandPanel = styled.section`
   min-height: 24rem;
   overscroll-behavior: none;
   overflow: hidden;
-  background-color: #000000;
-  color: ${token.colorNeutral0};
+  background-color: ${theme.colors.palette.black};
+  color: ${theme.colors.palette.white};
 
   &::before {
     position: absolute;
@@ -52,7 +39,7 @@ export const BrandPanel = styled.section`
     border-radius: 50%;
     background-image: radial-gradient(
       circle at 30% 30%,
-      ${token.colorAccentDefault} 0%,
+      ${theme.colors.accent.primary} 0%,
       transparent 60%
     );
     opacity: 0.45;
@@ -69,14 +56,14 @@ export const BrandPanel = styled.section`
     border-radius: 50%;
     background-image: radial-gradient(
       circle at 50% 50%,
-      rgba(255, 255, 255, 0.06) 0%,
+      ${alpha(theme.colors.palette.white, 0.06)} 0%,
       transparent 70%
     );
     content: '';
     pointer-events: none;
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     display: flex;
     min-height: 100svh;
 
@@ -94,18 +81,18 @@ export const BrandInner = styled.div`
   flex-direction: column;
   width: 100%;
   max-width: 34rem;
-  padding-top: ${recipe.blockXl};
-  padding-right: ${token.spacing6};
-  padding-bottom: ${recipe.blockXl};
-  padding-left: ${token.spacing6};
+  padding-top: ${theme.spacing.responsive.block.xl};
+  padding-right: ${theme.spacing[6]};
+  padding-bottom: ${theme.spacing.responsive.block.xl};
+  padding-left: ${theme.spacing[6]};
 
-  @media (min-width: ${recipe.breakpoints.md}) {
-    padding: ${recipe.block3Xl};
+  @media (min-width: ${theme.breakpoints.md}) {
+    padding: ${theme.spacing.responsive.block['3xl']};
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${token.spacing8};
-    padding-bottom: ${token.spacing8};
+  @media (min-width: ${theme.breakpoints.lg}) and (max-height: ${theme.viewportHeights.lg}) {
+    padding-top: ${theme.spacing[8]};
+    padding-bottom: ${theme.spacing[8]};
   }
 `
 
@@ -118,34 +105,34 @@ export const FormPanel = styled.section`
   overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior-y: contain;
-  background-color: ${token.colorNeutral0};
+  background-color: ${theme.colors.palette.white};
   -webkit-overflow-scrolling: touch;
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
-    padding-top: ${recipe.block2Xl};
+  @media (min-width: ${theme.breakpoints.lg}) {
+    padding-top: ${theme.spacing.responsive.block['2xl']};
     padding-right: 3rem;
-    padding-bottom: ${recipe.block2Xl};
+    padding-bottom: ${theme.spacing.responsive.block['2xl']};
     padding-left: 3rem;
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${token.spacing6};
-    padding-bottom: ${token.spacing6};
+  @media (min-width: ${theme.breakpoints.lg}) and (max-height: ${theme.viewportHeights.lg}) {
+    padding-top: ${theme.spacing[6]};
+    padding-bottom: ${theme.spacing[6]};
   }
 `
 
 export const MobileHeader = styled.div`
   display: grid;
-  gap: ${recipe.compactSm};
-  padding-top: ${recipe.compact2Xl};
-  padding-right: ${token.spacing6};
-  padding-left: ${token.spacing6};
+  gap: ${theme.spacing.responsive.compactBlock.sm};
+  padding-top: ${theme.spacing.responsive.compactBlock['2xl']};
+  padding-right: ${theme.spacing[6]};
+  padding-left: ${theme.spacing[6]};
 
-  @media (min-width: ${recipe.breakpoints.sm}) {
+  @media (min-width: ${theme.breakpoints.sm}) {
     align-items: center;
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     display: none;
   }
 `
@@ -154,12 +141,12 @@ export const MobileCardAction = styled.div`
   display: flex;
   min-width: 0;
   justify-content: center;
-  margin-top: ${recipe.compactMd};
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
+  margin-top: ${theme.spacing.responsive.compactBlock.md};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
   text-align: center;
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     display: none;
   }
 `
@@ -167,10 +154,10 @@ export const MobileCardAction = styled.div`
 export const TopBar = styled.div`
   display: none;
   justify-content: flex-end;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     display: flex;
   }
 `
@@ -180,22 +167,22 @@ export const Content = styled.div`
   flex: 1;
   align-items: flex-start;
   justify-content: center;
-  padding-top: ${recipe.compact3Xl};
-  padding-right: ${token.spacing6};
-  padding-bottom: ${recipe.compactXl};
-  padding-left: ${token.spacing6};
+  padding-top: ${theme.spacing.responsive.compactBlock['3xl']};
+  padding-right: ${theme.spacing[6]};
+  padding-bottom: ${theme.spacing.responsive.compactBlock.xl};
+  padding-left: ${theme.spacing[6]};
 
-  @media (min-width: ${recipe.breakpoints.lg}) {
+  @media (min-width: ${theme.breakpoints.lg}) {
     align-items: center;
-    padding-top: ${recipe.block2Xl};
+    padding-top: ${theme.spacing.responsive.block['2xl']};
     padding-right: 0;
-    padding-bottom: ${recipe.block2Xl};
+    padding-bottom: ${theme.spacing.responsive.block['2xl']};
     padding-left: 0;
   }
 
-  @media (min-width: ${recipe.breakpoints.lg}) and (max-height: 760px) {
-    padding-top: ${token.spacing6};
-    padding-bottom: ${token.spacing6};
+  @media (min-width: ${theme.breakpoints.lg}) and (max-height: ${theme.viewportHeights.lg}) {
+    padding-top: ${theme.spacing[6]};
+    padding-bottom: ${theme.spacing[6]};
   }
 `
 

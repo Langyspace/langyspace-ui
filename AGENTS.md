@@ -85,9 +85,9 @@
 - Prefer semantic props and tokens over application-specific conditionals or one-off CSS.
 - Preserve accessibility across interaction states, keyboard/focus behavior, labels, and disabled or
   loading variants.
-- ESLint enforces these conventions. Existing debt lives in `eslint-suppressions.json`; never
-  edit it by hand or add entries for new code. When a change fixes suppressed violations, run
-  `pnpm run lint:prune` in the same commit. See `docs/epics/ui-library-react-patterns/plan.md`.
+- ESLint enforces these conventions with zero debt. Do not add bulk suppressions
+  (`eslint-suppressions.json`) or rule-wide disables; an inline disable needs a comment with the
+  reason. See `docs/epics/ui-library-react-patterns/plan.md`.
 - Update root exports intentionally. Never bypass `pnpm run check:api`; use `write:api` only after
   reviewing and accepting the compatibility change.
 - Component changes normally require focused tests and Storybook variants. Public releases also

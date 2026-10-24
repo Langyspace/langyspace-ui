@@ -31,4 +31,6 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
-export const Exiting: Story = { args: { exiting: true } }
+export const Exiting: Story = {
+  args: { exit: { rotate: '0deg', x: '0', y: '-2.5rem' } },
+}

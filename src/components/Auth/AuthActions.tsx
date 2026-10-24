@@ -1,23 +1,6 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-
-const Actions = styled.div.withConfig({ componentId: 'lsui-sc-auth-actions' })`
-  display: contents;
-
-  > button {
-    margin-top: clamp(${token.spacing4}, 3svh, ${token.spacing6});
-
-    @media (max-width: 900px) {
-      margin-top: clamp(${token.spacing3}, 2.5svh, ${token.spacing5});
-    }
-  }
-`
-
-export interface AuthActionsProps extends ComponentPropsWithRef<'div'> {
-  children: ReactNode
-}
+import type { AuthActionsProps } from './AuthActions.types'
+import * as Styled from './AuthActions.styles'
 
 export function AuthActions({ children, ...props }: AuthActionsProps) {
-  return <Actions {...props}>{children}</Actions>
+  return <Styled.Actions {...props}>{children}</Styled.Actions>
 }

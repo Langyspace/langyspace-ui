@@ -1,11 +1,24 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
 import type {
-  OperationalListCellStyleProps,
-  OperationalListHeadStyleProps,
-  OperationalListHeaderStyleProps,
+  OperationalListAlign,
+  OperationalListImportance,
 } from './OperationalList.types'
+import { theme } from '../../foundations/theme/theme'
+
+interface OperationalListCellStyleProps {
+  $align: OperationalListAlign
+  $importance?: OperationalListImportance
+}
+
+interface OperationalListHeadStyleProps {
+  $hasSorting: boolean
+}
+
+interface OperationalListHeaderStyleProps {
+  $align: OperationalListAlign
+  $sortable: boolean
+}
 
 const visuallyHidden = css`
   position: absolute;
@@ -26,23 +39,23 @@ const densityPadding = css`
 
 const interactiveTitle = css`
   min-width: 0;
-  color: ${token.colorContentDefault};
+  color: ${theme.colors.text.primary};
   font: inherit;
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   text-align: left;
   text-decoration: none;
   overflow-wrap: anywhere;
 
   &:hover {
-    color: ${token.colorBrandDefault};
+    color: ${theme.semantic.foreground.brand};
     text-decoration: underline;
     text-underline-offset: 0.18em;
   }
 
   &:focus-visible {
-    border-radius: ${token.radiusControl};
-    outline: 3px solid ${token.colorFocus};
+    border-radius: ${theme.radius.control};
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: 2px;
   }
 `
@@ -50,21 +63,21 @@ const interactiveTitle = css`
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-operational-list',
 })`
-  --lsui-operational-list-cell-x: ${token.spacing4};
-  --lsui-operational-list-cell-y: ${token.spacing4};
-  --lsui-operational-list-action-gap: ${token.spacing2};
+  --lsui-operational-list-cell-x: ${theme.spacing[4]};
+  --lsui-operational-list-cell-y: ${theme.spacing[4]};
+  --lsui-operational-list-action-gap: ${theme.spacing[2]};
 
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  color: ${token.colorContentDefault};
+  color: ${theme.colors.text.primary};
   container-type: inline-size;
 
   &[data-density='compact'] {
-    --lsui-operational-list-cell-x: ${token.spacing3};
-    --lsui-operational-list-cell-y: ${token.spacing3};
+    --lsui-operational-list-cell-x: ${theme.spacing[3]};
+    --lsui-operational-list-cell-y: ${theme.spacing[3]};
     --lsui-operational-list-action-gap: calc(
-      ${token.spacing1} + ${token.spacing1} / 2
+      ${theme.spacing[1]} + ${theme.spacing[1]} / 2
     );
   }
 `
@@ -73,9 +86,9 @@ export const Surface = styled.div`
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusCard};
-  background: ${token.colorNeutral0};
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.card};
+  background: ${theme.colors.palette.white};
   overflow: hidden;
 
   @container (max-width: 71.99rem) {
@@ -92,7 +105,7 @@ export const Table = styled.table`
   border-spacing: 0;
   table-layout: auto;
   color: inherit;
-  font-size: ${token.typographyFontSizeSm};
+  font-size: ${theme.typography.fontSize.sm};
 
   @container (max-width: 71.99rem) {
     display: block;
@@ -100,44 +113,44 @@ export const Table = styled.table`
     > tbody {
       display: grid;
       min-width: 0;
-      gap: ${token.spacing3};
+      gap: ${theme.spacing[3]};
     }
   }
 `
 
 export const TableHead = styled.thead<OperationalListHeadStyleProps>`
-  background: ${token.colorSurfaceMuted};
+  background: ${theme.semantic.background.muted};
 
   @container (max-width: 71.99rem) {
     ${({ $hasSorting }) => !$hasSorting && visuallyHidden}
 
     display: block;
-    margin-bottom: ${token.spacing3};
-    border: 1px solid ${token.colorSurfaceBorderSubtle};
-    border-radius: ${token.radiusRounded};
-    background: ${token.colorNeutral0};
+    margin-bottom: ${theme.spacing[3]};
+    border: 1px solid ${theme.colors.border.subtle};
+    border-radius: ${theme.radius.xl};
+    background: ${theme.colors.palette.white};
   }
 `
 
 export const HeaderRow = styled.tr`
-  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-bottom: 1px solid ${theme.colors.border.subtle};
 
   @container (max-width: 71.99rem) {
     display: flex;
     min-width: 0;
     flex-wrap: wrap;
-    gap: ${token.spacing1};
-    padding: ${token.spacing2};
+    gap: ${theme.spacing[1]};
+    padding: ${theme.spacing[2]};
     border: 0;
   }
 `
 
 export const ColumnHeader = styled.th<OperationalListHeaderStyleProps>`
   ${densityPadding}
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   text-align: ${({ $align }) => ($align === 'end' ? 'right' : 'left')};
   white-space: nowrap;
 
@@ -150,10 +163,10 @@ export const ColumnHeader = styled.th<OperationalListHeaderStyleProps>`
 export const ActionsHeader = styled.th`
   ${densityPadding}
   width: 1%;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   text-align: right;
   white-space: nowrap;
 
@@ -168,18 +181,18 @@ export const SortButton = styled(Pressable)`
   min-height: 2rem;
   align-items: center;
   justify-content: inherit;
-  gap: ${token.spacing1};
-  padding: ${token.spacing1} ${token.spacing2};
+  gap: ${theme.spacing[1]};
+  padding: ${theme.spacing[1]} ${theme.spacing[2]};
   border: 0;
-  border-radius: ${token.radiusControl};
+  border-radius: ${theme.radius.control};
   background: transparent;
   color: inherit;
   font: inherit;
   font-weight: inherit;
 
   &:hover {
-    color: ${token.colorContentDefault};
-    background: ${token.colorNeutral100};
+    color: ${theme.colors.text.primary};
+    background: ${theme.colors.palette.neutral[200]};
   }
 `
 
@@ -190,12 +203,12 @@ export const SortGlyph = styled.span`
   flex: 0 0 auto;
   align-items: center;
   justify-content: center;
-  font-size: ${token.typographyFontSizeXs};
+  font-size: ${theme.typography.fontSize.xs};
   line-height: 1;
 `
 
 export const Row = styled.tr`
-  border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
+  border-bottom: 1px solid ${theme.colors.border.subtle};
 
   &:last-child {
     border-bottom: 0;
@@ -203,7 +216,7 @@ export const Row = styled.tr`
 
   &:hover,
   &:focus-within {
-    background: ${token.colorSurfaceSubtle};
+    background: ${theme.semantic.background.surfaceSubtle};
   }
 
   @container (max-width: 71.99rem) {
@@ -211,10 +224,10 @@ export const Row = styled.tr`
     display: grid;
     min-width: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    border: 1px solid ${token.colorSurfaceBorderSubtle};
-    border-radius: ${token.radiusCard};
-    background: ${token.colorNeutral0};
-    box-shadow: ${token.shadowSubtle};
+    border: 1px solid ${theme.colors.border.subtle};
+    border-radius: ${theme.radius.card};
+    background: ${theme.colors.palette.white};
+    box-shadow: ${theme.shadows.xs};
     overflow: visible;
   }
 
@@ -241,7 +254,7 @@ export const PrimaryCell = styled.th`
     display: block;
     min-width: 0;
     grid-column: 1 / -1;
-    border-bottom: 1px solid ${token.colorSurfaceBorderSubtle};
+    border-bottom: 1px solid ${theme.colors.border.subtle};
   }
 `
 
@@ -249,7 +262,7 @@ export const PrimaryLayout = styled.div`
   display: flex;
   min-width: 0;
   align-items: center;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
 `
 
 export const Leading = styled.span`
@@ -264,14 +277,14 @@ export const PrimaryBody = styled.span`
   min-width: 0;
   flex: 1 1 auto;
   flex-direction: column;
-  gap: ${token.spacing1};
+  gap: ${theme.spacing[1]};
 `
 
 export const PrimaryTitle = styled.span`
   min-width: 0;
-  color: ${token.colorContentDefault};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   overflow-wrap: anywhere;
 `
 
@@ -288,27 +301,27 @@ export const PrimaryButton = styled(Pressable)`
 
 export const PrimaryDescription = styled.span`
   min-width: 0;
-  color: ${token.colorContentSecondary};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightMedium};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.secondary};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: ${theme.typography.lineHeight.normal};
   overflow-wrap: anywhere;
 `
 
 export const PrimaryMeta = styled.span`
   min-width: 0;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  font-weight: ${token.typographyFontWeightMedium};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: ${theme.typography.lineHeight.normal};
   overflow-wrap: anywhere;
 `
 
 export const NavigationHint = styled.span`
   display: none;
   flex: 0 0 auto;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeLg};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.lg};
   line-height: 1;
 
   @container (max-width: 71.99rem) {
@@ -319,8 +332,8 @@ export const NavigationHint = styled.span`
 export const DataCell = styled.td<OperationalListCellStyleProps>`
   ${densityPadding}
   min-width: 0;
-  color: ${token.colorContentSecondary};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.secondary};
+  line-height: ${theme.typography.lineHeight.normal};
   text-align: ${({ $align }) => ($align === 'end' ? 'right' : 'left')};
   vertical-align: middle;
   overflow-wrap: anywhere;
@@ -345,11 +358,11 @@ export const DataCell = styled.td<OperationalListCellStyleProps>`
 
 export const CompactLabel = styled.span`
   display: none;
-  margin-bottom: ${token.spacing1};
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSize2xs};
-  font-weight: ${token.typographyFontWeightBold};
-  line-height: ${token.typographyLineHeightSnug};
+  margin-bottom: ${theme.spacing[1]};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize['2xs']};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: ${theme.typography.lineHeight.snug};
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
@@ -373,7 +386,7 @@ export const ActionsCell = styled.td`
     width: auto;
     min-width: 0;
     grid-column: 1 / -1;
-    border-top: 1px solid ${token.colorSurfaceBorderSubtle};
+    border-top: 1px solid ${theme.colors.border.subtle};
   }
 `
 
@@ -419,17 +432,17 @@ export const QuickActions = styled.div`
 `
 
 export const EmptyCell = styled.td`
-  padding: ${token.spacing8} ${token.spacing4};
-  color: ${token.colorContentMuted};
+  padding: ${theme.spacing[8]} ${theme.spacing[4]};
+  color: ${theme.colors.text.muted};
   text-align: center;
 
   @container (max-width: 71.99rem) {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border: 1px solid ${token.colorSurfaceBorderSubtle};
-    border-radius: ${token.radiusCard};
-    background: ${token.colorNeutral0};
+    border: 1px solid ${theme.colors.border.subtle};
+    border-radius: ${theme.radius.card};
+    background: ${theme.colors.palette.white};
   }
 `
 
@@ -437,5 +450,5 @@ export const Footer = styled.div`
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  margin-top: ${token.spacing3};
+  margin-top: ${theme.spacing[3]};
 `

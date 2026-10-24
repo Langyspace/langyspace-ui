@@ -1,20 +1,13 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { ReactNode } from 'react'
 import * as Styled from './AuthHeader.styles'
+import type { AuthHeaderProps } from './AuthHeader.types'
 
-export interface AuthHeaderProps extends Omit<
-  ComponentPropsWithRef<'h2'>,
-  'title' | 'children'
-> {
-  title: ReactNode
-  highlight?: ReactNode
-  paragraphs?: readonly ReactNode[]
-  backAction?: ReactNode
-}
+const noParagraphs: readonly ReactNode[] = []
 
 export function AuthHeader({
   title,
   highlight,
-  paragraphs = [],
+  paragraphs = noParagraphs,
   backAction,
   ...headingProps
 }: AuthHeaderProps) {
@@ -28,6 +21,8 @@ export function AuthHeader({
         {highlight != null && <Styled.Accent>{highlight}</Styled.Accent>}
       </Styled.Title>
       {paragraphs.map((paragraph, index) => (
+        // Paragraphs are static copy rendered in their given order.
+        // eslint-disable-next-line @eslint-react/no-array-index-key
         <Styled.Description key={index}>{paragraph}</Styled.Description>
       ))}
     </>

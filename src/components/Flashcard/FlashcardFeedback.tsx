@@ -1,13 +1,5 @@
 import * as Styled from './FlashcardFeedback.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-import type { FlashcardGrade } from './FlashcardRatingButton'
-
-export interface FlashcardFeedbackProps extends ComponentPropsWithRef<'div'> {
-  grade: FlashcardGrade
-  mark: ReactNode
-  next?: ReactNode
-}
+import type { FlashcardFeedbackProps } from './FlashcardFeedback.types'
 
 export function FlashcardFeedback({
   grade,

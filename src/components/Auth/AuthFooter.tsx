@@ -1,11 +1,6 @@
-import { Fragment, type ComponentPropsWithRef, type ReactNode } from 'react'
+import { Fragment } from 'react'
 import * as Styled from './AuthFooter.styles'
-
-export interface AuthFooterProps extends ComponentPropsWithRef<'p'> {
-  children: ReactNode
-  links: readonly { href: string; label: ReactNode }[]
-  placement?: 'brand' | 'mobile'
-}
+import type { AuthFooterProps } from './AuthFooter.types'
 
 export function AuthFooter({
   children,

@@ -1,16 +1,5 @@
 import * as Styled from './FlashcardBack.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface FlashcardBackProps extends Omit<
-  ComponentPropsWithRef<'div'>,
-  'children'
-> {
-  term: ReactNode
-  translation: ReactNode
-  phonetic?: ReactNode
-  example?: ReactNode
-}
+import type { FlashcardBackProps } from './FlashcardBack.types'
 
 export function FlashcardBack({
   term,

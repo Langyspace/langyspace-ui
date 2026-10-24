@@ -1,26 +1,10 @@
-import { styled } from 'styled-components'
-import { quizRecipe } from '../../foundations/quizRecipe'
+import * as Styled from './QuizResponseMark.styles'
+import type {
+  QuizMarkProps,
+  QuizResponseMarkProps,
+} from './QuizResponseMark.types'
 
-const Mark = styled.span`
-  width: 1.375rem;
-  height: 1.375rem;
-  flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: ${quizRecipe.radius.circle};
-  color: ${quizRecipe.colors.text.inverse};
-
-  &.correct {
-    background: #16a34a;
-  }
-
-  &.wrong {
-    background: #dc2626;
-  }
-`
-
-export function QuizMark({ correct }: { correct: boolean }) {
+export function QuizMark({ correct }: QuizMarkProps) {
   return (
     <svg
       aria-hidden="true"
@@ -46,15 +30,12 @@ export function QuizMark({ correct }: { correct: boolean }) {
 }
 
 export function QuizResponseMark({
-  className = '',
   tone,
-}: {
-  className?: string
-  tone: 'correct' | 'wrong'
-}) {
+  variant = 'feedback',
+}: QuizResponseMarkProps) {
   return (
-    <Mark className={`${className} ${tone}`} aria-hidden="true">
+    <Styled.Mark $tone={tone} $variant={variant} aria-hidden="true">
       <QuizMark correct={tone === 'correct'} />
-    </Mark>
+    </Styled.Mark>
   )
 }

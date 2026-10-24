@@ -1,4 +1,4 @@
-import { IconSlot } from '../../internal/IconSlot'
+import { IconSlot } from '../../internal/IconSlot/IconSlot'
 import * as Styled from './ActionLink.styles'
 import type { ActionLinkProps } from './ActionLink.types'
 

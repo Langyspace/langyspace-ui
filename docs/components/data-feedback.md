@@ -129,9 +129,9 @@ Cuidados: Os estilos pertencem aos wrappers de label/value; conteúdo rico mant�
 
 Unidade compacta de métrica com valor e legenda.
 
-Contrato: value e label obrigatórios; atributos/ref de div.
+Contrato: value e label obrigatórios; `variant` `summary` (padrão, centralizado) ou `tile` (alinhado à esquerda, com borda e legenda sem caixa alta); atributos/ref de div.
 
-Cuidados: Fornecer valor calculado/formatado e legenda. A grade entre métricas permanece no produto; não fabricar marcadores internos.
+Cuidados: Fornecer valor calculado/formatado e legenda. A grade entre métricas permanece no produto; não estilizar as partes internas por seletor.
 
 ## NoticeBanner
 
@@ -201,7 +201,7 @@ Cuidados: O label e o estado busy pertencem ao comando ou ao status externo. Nã
 
 Card de estatística operacional/financeira com faixa e tom neutral/brand.
 
-Contrato: value, label, action opcional, tone e atributos/ref de div. Children legado permanece quando as props de conteúdo não são fornecidas.
+Contrato: value, label, action opcional, tone e atributos/ref de div. Children legado permanece quando as props de conteúdo não são fornecidas; `size` `md` (padrão) ou `sm` para resumos densos.
 
 Cuidados: O owner reserva espaço para action. StatValue/Label/Action ficam por compatibilidade para customizações anteriores, inclusive a tipografia small do Admin; não exigir mudança visual para adotar o pacote.
 

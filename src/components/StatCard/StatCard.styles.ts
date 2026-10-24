@@ -1,5 +1,6 @@
-import * as token from '../../foundations/tokenValues'
 import { styled } from 'styled-components'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({ componentId: 'lsui-sc-stat-card' })`
   position: relative;
@@ -8,24 +9,28 @@ export const Root = styled.div.withConfig({ componentId: 'lsui-sc-stat-card' })`
   min-height: 82px;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid #e4e1da;
+  border: 1px solid ${theme.colors.palette.extended.stone300};
   border-radius: 14px;
-  background: ${token.colorNeutral0};
-  box-shadow: 0 1px 0 rgba(10, 10, 10, 0.03);
+  background: ${theme.colors.palette.white};
+  box-shadow: 0 1px 0 ${alpha(theme.colors.palette.neutral[900], 0.03)};
   padding: 12px 14px;
   &::before {
     position: absolute;
     inset: 0 0 auto;
     height: 3px;
-    background: #d8d6d2;
+    background: ${theme.colors.palette.extended.stone350};
     content: '';
   }
   &[data-tone='brand'] {
-    border-color: rgba(255, 31, 92, 0.2);
-    background: #fff7fa;
+    border-color: ${alpha(theme.colors.palette.accent.pink, 0.2)};
+    background: ${theme.colors.palette.extended.pink50};
     &::before {
-      background: #ff1f5c;
+      background: ${theme.colors.palette.accent.pink};
     }
+  }
+
+  &[data-size='sm'] [data-ui-stat-value] {
+    font-size: 18px;
   }
 `
 
@@ -45,13 +50,13 @@ export const Label = styled.div.withConfig({
   componentId: 'lsui-sc-stat-label',
 })`
   margin-top: 7px;
-  color: ${token.colorContentMuted};
+  color: ${theme.colors.text.muted};
   font-size: 10px;
-  font-weight: ${token.typographyFontWeightBold};
+  font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.06em;
   text-transform: uppercase;
   [data-tone='brand'] & {
-    color: #9d174d;
+    color: ${theme.colors.palette.extended.pink800};
   }
 `
 

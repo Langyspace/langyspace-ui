@@ -1,4 +1,5 @@
 import babel from '@rolldown/plugin-babel'
+import { inlineTheme } from './inline-theme.mjs'
 
 // Keep authored CSS readable; only the distributed JavaScript is compacted.
 // Public owners already declare stable componentId values.
@@ -7,6 +8,7 @@ export function styledComponentsBuild() {
     babel({
       include: /[/\\](?:src|stories)[/\\].*\.[jt]sx?$/,
       plugins: [
+        inlineTheme,
         [
           'babel-plugin-styled-components',
           {

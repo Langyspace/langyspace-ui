@@ -7,7 +7,7 @@ const meta = {
   args: {
     'aria-label': 'Avançar',
     children: ArrowIcon,
-    isLoading: false,
+    loading: false,
     shape: 'circle',
     size: 'md',
     variant: 'neutral',
@@ -58,7 +58,7 @@ export const Variants: Story = {
 }
 
 export const Loading: Story = {
-  args: { isLoading: true },
+  args: { loading: true },
   tags: ['visual-review'],
   play: async ({ canvas }) => {
     const button = canvas.getByRole('button', { name: 'Avançar' })

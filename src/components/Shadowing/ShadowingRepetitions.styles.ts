@@ -1,61 +1,65 @@
 import { styled, keyframes } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 const shadowPulse = keyframes`
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(255, 31, 92, 0.35);
+    box-shadow: 0 0 0 0 ${alpha(theme.colors.palette.accent.pink, 0.35)};
   }
 
   50% {
-    box-shadow: 0 0 0 5px rgba(255, 31, 92, 0);
+    box-shadow: 0 0 0 5px ${alpha(theme.colors.palette.accent.pink, 0)};
   }
 `
+
+export const Dot = styled.span``
+
+export const Label = styled.span``
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-repetitions',
 })`
   display: inline-flex;
   align-items: center;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
 
-  .dot {
+  ${Dot} {
     width: 0.5625rem;
     height: 0.5625rem;
     border-radius: 50%;
-    background: #d9d9d6;
+    background: ${theme.colors.palette.neutral[400]};
     transition:
       background 0.2s ease,
       transform 0.2s ease,
       box-shadow 0.2s ease;
   }
 
-  .dot.on {
-    background: #ff1f5c;
+  ${Dot}[data-active] {
+    background: ${theme.colors.palette.accent.pink};
     transform: scale(1.12);
   }
 
-  .dot.live {
+  ${Dot}[data-live] {
     animation: ${shadowPulse} 1s ease-in-out infinite;
   }
 
-  .label {
-    margin-left: ${token.spacing1};
-    color: ${token.colorContentMuted};
-    font-family:
-      'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-    font-size: ${token.typographyFontSizeXs};
-    font-weight: ${token.typographyFontWeightBold};
+  ${Label} {
+    margin-left: ${theme.spacing[1]};
+    color: ${theme.colors.text.muted};
+    font-family: ${theme.typography.fontFamily.mono};
+    font-size: ${theme.typography.fontSize.xs};
+    font-weight: ${theme.typography.fontWeight.bold};
   }
 
-  @media (min-width: 640px) and (max-width: 900px) and (min-height: 761px) {
-    .dot {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
+    ${Dot} {
       width: 0.625rem;
       height: 0.625rem;
     }
 
-    .label {
-      font-size: ${token.typographyFontSizeSm};
+    ${Label} {
+      font-size: ${theme.typography.fontSize.sm};
     }
   }
 

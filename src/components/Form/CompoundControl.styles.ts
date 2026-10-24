@@ -1,35 +1,35 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import type { FieldControlSize } from '../../foundations/fields'
-import type { CompoundControlSurface } from './CompoundControl'
+import type { CompoundControlSurface } from './CompoundControl.types'
+import { theme } from '../../foundations/theme/theme'
 
 const sizeStyles = {
   sm: css`
-    min-height: ${token.fieldHeightSm};
-    gap: ${token.spacing2};
-    border-radius: ${token.radiusControl};
-    padding-right: ${token.spacing3};
-    padding-left: ${token.spacing3};
+    min-height: ${theme.sizes.field.sm};
+    gap: ${theme.spacing[2]};
+    border-radius: ${theme.radius.control};
+    padding-right: ${theme.spacing[3]};
+    padding-left: ${theme.spacing[3]};
   `,
   md: css`
-    min-height: ${token.fieldHeightMd};
-    gap: ${token.spacing2};
-    border-radius: ${token.radiusControl};
-    padding-right: ${token.spacing3};
-    padding-left: ${token.spacing3};
+    min-height: ${theme.sizes.field.md};
+    gap: ${theme.spacing[2]};
+    border-radius: ${theme.radius.control};
+    padding-right: ${theme.spacing[3]};
+    padding-left: ${theme.spacing[3]};
   `,
   lg: css`
-    min-height: ${token.fieldHeightLg};
-    gap: ${token.spacing3};
-    border-radius: ${token.radiusControl};
-    padding-right: ${token.spacing3};
-    padding-left: ${token.spacing3};
+    min-height: ${theme.sizes.field.lg};
+    gap: ${theme.spacing[3]};
+    border-radius: ${theme.radius.control};
+    padding-right: ${theme.spacing[3]};
+    padding-left: ${theme.spacing[3]};
   `,
 } satisfies Record<FieldControlSize, ReturnType<typeof css>>
 
 const surfaces = {
-  muted: token.colorSurfaceMuted,
-  surface: token.colorNeutral0,
+  muted: theme.semantic.background.muted,
+  surface: theme.colors.palette.white,
 } satisfies Record<CompoundControlSurface, string>
 
 export const Root = styled.div.withConfig({
@@ -46,33 +46,33 @@ export const Root = styled.div.withConfig({
   align-items: center;
   border: 1px solid
     ${({ $invalid }) =>
-      $invalid ? token.colorFeedbackDanger : token.colorSurfaceBorderDefault};
-  color: ${token.colorContentMuted};
+      $invalid ? theme.colors.feedback.danger : theme.semantic.border.default};
+  color: ${theme.colors.text.muted};
   background: ${({ $surface }) => surfaces[$surface]};
   transition:
-    background-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    border-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    box-shadow ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive};
+    background-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    border-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    box-shadow ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard};
 
   ${({ $size }) => sizeStyles[$size]}
 
   &:hover:not([data-disabled='true']):not([data-invalid='true']) {
-    border-color: ${token.colorSurfaceBorderStrong};
+    border-color: ${theme.semantic.border.strong};
   }
 
   &:focus-within {
     border-color: ${({ $invalid }) =>
-      $invalid ? token.colorFeedbackDanger : token.colorSurfaceBorderStrong};
-    background: ${token.colorNeutral0};
-    box-shadow: ${token.shadowFocus};
+      $invalid ? theme.colors.feedback.danger : theme.semantic.border.strong};
+    background: ${theme.colors.palette.white};
+    box-shadow: ${theme.shadows.focusHalo};
   }
 
   &[data-disabled='true'] {
-    background: ${token.colorSurfaceMuted};
-    color: ${token.colorContentPlaceholder};
+    background: ${theme.semantic.background.muted};
+    color: ${theme.semantic.foreground.placeholder};
   }
 
   &&& > input,

@@ -1,17 +1,5 @@
 import * as Styled from './FlashcardProgress.styles'
-
-export type FlashcardProgressProps = {
-  label: string
-} & (
-  | { loading: true }
-  | {
-      loading?: false
-      current: number
-      total: number
-      revealed?: boolean
-      complete?: boolean
-    }
-)
+import type { FlashcardProgressProps } from './FlashcardProgress.types'
 
 export function FlashcardProgress(props: FlashcardProgressProps) {
   if (props.loading) {

@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-day',
@@ -12,17 +12,17 @@ export const Root = styled.div.withConfig({
   min-height: 112px;
   gap: 4px;
   padding: 8px 12px;
-  border-top: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-right: 1px solid ${token.colorSurfaceBorderSubtle};
-  color: ${token.colorContentDefault};
-  background: ${token.colorNeutral0};
+  border-top: 1px solid ${theme.colors.border.subtle};
+  border-right: 1px solid ${theme.colors.border.subtle};
+  color: ${theme.colors.text.primary};
+  background: ${theme.colors.palette.white};
   > [data-ui-calendar-event] {
     position: relative;
     z-index: 1;
   }
   &[data-muted='true'] {
-    color: ${token.colorContentMuted};
-    background: #fcfcfb;
+    color: ${theme.colors.text.muted};
+    background: ${theme.colors.palette.extended.snow};
   }
   &:nth-child(7n) {
     border-right: 0;
@@ -30,7 +30,7 @@ export const Root = styled.div.withConfig({
   &[data-interactive='true'] {
     cursor: pointer;
     &:hover {
-      background: ${token.colorNeutral50};
+      background: ${theme.colors.palette.neutral[100]};
     }
   }
 `
@@ -57,7 +57,7 @@ export const OpenButton = styled(Pressable).withConfig({
   }
 
   &:focus-visible::after {
-    outline: 3px solid rgba(0, 242, 234, 0.72);
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: -3px;
   }
 `

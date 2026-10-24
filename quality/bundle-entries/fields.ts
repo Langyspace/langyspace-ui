@@ -1,5 +1,5 @@
+export { ControlledField } from '../../src/form'
 export {
-  ControlledField,
   CompoundControl,
   FieldRoot,
   SearchInput,

@@ -16,7 +16,7 @@ describe('SegmentedControl', () => {
     render(
       <SegmentedControl
         aria-label="Período"
-        onChange={onChange}
+        onValueChange={onChange}
         options={options}
         shape="pill"
         surface="inverse"
@@ -43,7 +43,7 @@ describe('SegmentedControl', () => {
     render(
       <SegmentedControl
         aria-label="Período detalhado"
-        onChange={() => undefined}
+        onValueChange={() => undefined}
         options={options}
         value="all"
       />,

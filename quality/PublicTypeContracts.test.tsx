@@ -133,7 +133,7 @@ describe('public type contracts', () => {
       digitLabel: 'Dígito',
       idPrefix: 'token',
       length: 5,
-      onTokenChange: () => undefined,
+      onValueChange: () => undefined,
     }
     const legacyChoice: ChoiceOption = {
       label: <span>18</span>,
@@ -202,7 +202,7 @@ describe('public type contracts', () => {
       'aria-labelledby': 'queue-title',
     }
 
-    expect(props.getItemKey(items[0])).toBe('person-1')
+    expect(props.getItemKey(items[0]!)).toBe('person-1')
     expect(quickAction.placement).toBe('quick')
     expect(missingQuickIcon.id).toBe('message')
     expect(destructivePrimary.placement).toBe('primary')

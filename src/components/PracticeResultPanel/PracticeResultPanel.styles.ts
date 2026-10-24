@@ -1,13 +1,12 @@
-import * as token from '../../foundations/tokenValues'
 import { styled, keyframes, css } from 'styled-components'
-import { quizRecipe } from '../../foundations/quizRecipe'
+import { theme } from '../../foundations/theme/theme'
 
 const descriptionStyle = css`
   max-width: 22rem;
   margin: 0;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
 `
 
 export const Panel = styled.div.withConfig({
@@ -18,7 +17,7 @@ export const Panel = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${token.spacing4};
+  gap: ${theme.spacing[4]};
   text-align: center;
 
   > p {
@@ -39,9 +38,9 @@ export const Mark = styled.div.withConfig({
   justify-content: center;
   width: 5.25rem;
   height: 5.25rem;
-  border-radius: ${quizRecipe.radius.circle};
-  color: ${token.colorNeutral0};
-  background: ${token.colorAccentDefault};
+  border-radius: ${theme.radius.circle};
+  color: ${theme.colors.palette.white};
+  background: ${theme.colors.accent.primary};
   animation: ${rise} 0.32s ease both;
 
   @media (prefers-reduced-motion: reduce) {
@@ -53,9 +52,9 @@ export const Title = styled.h2.withConfig({
   componentId: 'lsui-sc-practice-result-title',
 })`
   margin: 0;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSize2xl};
-  font-weight: ${token.typographyFontWeightBold};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize['2xl']};
+  font-weight: ${theme.typography.fontWeight.bold};
 `
 
 export const Description = styled.p.withConfig({
@@ -70,8 +69,8 @@ export const Actions = styled.div.withConfig({
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: ${token.spacing2};
-  margin-top: ${token.spacing1};
+  gap: ${theme.spacing[2]};
+  margin-top: ${theme.spacing[1]};
 
   > button {
     width: 100%;

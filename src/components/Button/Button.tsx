@@ -1,42 +1,7 @@
-import { IconSlot } from '../../internal/IconSlot'
+import { IconSlot } from '../../internal/IconSlot/IconSlot'
 import { Spinner } from '../Spinner/Spinner'
 import * as Styled from './Button.styles'
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-import type { ActionDensity, ActionSize } from '../../foundations/actions/types'
-
-export type ButtonTextVariant = 'text' | 'text-subtle' | 'text-danger'
-
-export type ButtonVariant =
-  | 'primary'
-  | 'secondary'
-  | 'tertiary'
-  | 'brand'
-  | 'danger'
-  | 'success'
-  | 'inverse'
-  | 'text'
-  | 'text-subtle'
-  | 'text-danger'
-
-export type ButtonSize = ActionSize
-
-export type ButtonDensity = ActionDensity
-
-type NativeButtonProps = Omit<
-  ComponentPropsWithRef<'button'>,
-  'children' | 'color'
->
-
-export interface ButtonProps extends NativeButtonProps {
-  children: ReactNode
-  density?: ButtonDensity
-  fullWidth?: boolean
-  iconEnd?: ReactNode
-  iconStart?: ReactNode
-  isLoading?: boolean
-  size?: ButtonSize
-  variant?: ButtonVariant
-}
+import type { ButtonProps } from './Button.types'
 
 export function Button({
   children,
@@ -44,7 +9,7 @@ export function Button({
   fullWidth = false,
   iconEnd,
   iconStart,
-  isLoading = false,
+  loading = false,
   size = 'md',
   type = 'button',
   variant = 'primary',
@@ -52,12 +17,12 @@ export function Button({
 }: ButtonProps) {
   const isText =
     variant === 'text' || variant === 'text-subtle' || variant === 'text-danger'
-  const endIcon = isLoading ? <Spinner /> : iconEnd
+  const endIcon = loading ? <Spinner /> : iconEnd
 
   return (
     <Styled.Button
       {...props}
-      {...(isLoading && { 'aria-busy': true, disabled: true })}
+      {...(loading && { 'aria-busy': true, disabled: true })}
       type={type}
       $density={density}
       $fullWidth={fullWidth}
@@ -66,7 +31,7 @@ export function Button({
       $variant={isText ? 'primary' : variant}
       $textVariant={isText ? variant : undefined}
       data-action-appearance={isText ? 'text' : 'button'}
-      data-loading={isLoading ? 'true' : undefined}
+      data-loading={loading ? 'true' : undefined}
       data-density={density}
       data-size={size}
     >

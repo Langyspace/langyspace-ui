@@ -17,7 +17,7 @@ export interface MessageComposerProps extends Omit<
   disabled?: boolean
   error?: string
   helperText?: string
-  isSubmitting?: boolean
+  submitting?: boolean
   maxLength?: number
   name?: string
   onSubmit: () => void

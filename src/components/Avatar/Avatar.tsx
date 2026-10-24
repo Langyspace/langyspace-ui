@@ -1,21 +1,6 @@
 import { useState } from 'react'
 import * as Styled from './Avatar.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-
-export type AvatarTone = 'neutral' | 'brand' | 'inverse'
-
-export interface AvatarProps extends Omit<
-  ComponentPropsWithRef<'span'>,
-  'color'
-> {
-  imageUrl?: string
-  initials: string
-  size?: AvatarSize
-  tone?: AvatarTone
-}
+import type { AvatarProps } from './Avatar.types'
 
 export function Avatar({
   'aria-hidden': ariaHidden = true,
@@ -43,7 +28,9 @@ export function Avatar({
         <Styled.Image
           alt=""
           src={imageUrl}
-          onError={() => setFailedImageUrl(imageUrl ?? null)}
+          onError={() => {
+            setFailedImageUrl(imageUrl ?? null)
+          }}
         />
       ) : null}
     </Styled.Avatar>

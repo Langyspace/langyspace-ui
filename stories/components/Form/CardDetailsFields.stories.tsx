@@ -1,9 +1,7 @@
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
-import {
-  CardDetailsFields,
-  type CardDetailsValue,
-} from '../../../src/components/Form/CardDetailsFields'
+import { CardDetailsFields } from '../../../src/components/Form/CardDetailsFields'
+import type { CardDetailsValue } from '../../../src/components/Form/CardDetailsFields.types'
 import { PhoneField } from '../../../src/components/Form/PhoneField'
 
 const empty: CardDetailsValue = {

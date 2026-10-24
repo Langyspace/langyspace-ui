@@ -1,7 +1,7 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
-import { playbackRecipe } from './recipe'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const ControlCluster = styled.div.withConfig({
   componentId: 'lsui-sc-practice-playback-controls',
@@ -11,19 +11,19 @@ export const ControlCluster = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${playbackRecipe.spacing[4]};
+  gap: ${theme.spacing[4]};
 
-  @media (max-width: ${playbackRecipe.breakpoints.sm}) {
+  @media (max-width: ${theme.breakpoints.sm}) {
     width: 100%;
-    gap: ${playbackRecipe.spacing[4]};
+    gap: ${theme.spacing[4]};
   }
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     width: min(28rem, 100%);
   }
 
-  @media (min-width: 640px) and (max-width: 900px) and (max-height: 500px) {
-    gap: ${playbackRecipe.spacing[2]};
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.xs}) {
+    gap: ${theme.spacing[2]};
   }
 `
 
@@ -33,7 +33,7 @@ export const PlaybackControls = styled.div<{ $withSkip?: boolean }>`
   grid-template-columns: ${({ $withSkip }) => ($withSkip ? '3rem auto 3rem' : 'auto')};
   align-items: center;
   justify-content: center;
-  gap: ${playbackRecipe.spacing[3]};
+  gap: ${theme.spacing[3]};
 
   ${({ $withSkip }) =>
     $withSkip
@@ -47,7 +47,7 @@ export const PlaybackControls = styled.div<{ $withSkip?: boolean }>`
         `
       : null}
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     grid-template-columns: ${({ $withSkip }) => ($withSkip ? '3.5rem auto 3.5rem' : 'auto')};
 
     ${({ $withSkip }) =>
@@ -70,10 +70,10 @@ export const PlayButton = styled(Pressable)<{ $playing?: boolean }>`
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: ${playbackRecipe.radius.circle};
-  color: ${playbackRecipe.colors.text.inverse};
-  background: ${playbackRecipe.colors.text.primary};
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  border-radius: ${theme.radius.circle};
+  color: ${theme.colors.text.inverse};
+  background: ${theme.colors.text.primary};
+  box-shadow: 0 8px 22px ${alpha(theme.colors.palette.black, 0.2)};
   transition: transform 0.14s ease;
 
   &:active {
@@ -82,14 +82,14 @@ export const PlayButton = styled(Pressable)<{ $playing?: boolean }>`
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${playbackRecipe.shadows.focus};
+    box-shadow: ${theme.shadows.focus};
   }
 
   svg {
     margin-left: ${({ $playing }) => ($playing ? '0' : '0.25rem')};
   }
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     width: 5.25rem;
     height: 5.25rem;
 
@@ -106,11 +106,11 @@ export const SkipButton = styled(Pressable)`
   height: 3rem;
   align-items: center;
   justify-content: center;
-  border: 1px solid ${playbackRecipe.colors.border.default};
-  border-radius: ${playbackRecipe.radius.circle};
-  color: ${playbackRecipe.colors.text.primary};
-  background: ${playbackRecipe.colors.surface.canvas};
-  box-shadow: ${playbackRecipe.shadows.xs};
+  border: 1px solid ${theme.colors.border.default};
+  border-radius: ${theme.radius.circle};
+  color: ${theme.colors.text.primary};
+  background: ${theme.colors.surface.canvas};
+  box-shadow: ${theme.shadows.xs};
   cursor: pointer;
   transition:
     background 0.14s ease,
@@ -118,8 +118,8 @@ export const SkipButton = styled(Pressable)`
     transform 0.14s ease;
 
   &:hover {
-    border-color: ${playbackRecipe.colors.text.primary};
-    background: ${playbackRecipe.colors.surface.subtle};
+    border-color: ${theme.colors.text.primary};
+    background: ${theme.colors.surface.subtle};
   }
 
   &:active {
@@ -128,10 +128,10 @@ export const SkipButton = styled(Pressable)`
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${playbackRecipe.shadows.focus};
+    box-shadow: ${theme.shadows.focus};
   }
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     width: 3.5rem;
     height: 3.5rem;
 
@@ -149,9 +149,9 @@ export const ControlRow = styled.div`
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   justify-content: center;
-  gap: ${playbackRecipe.spacing[3]};
+  gap: ${theme.spacing[3]};
 
-  @media (max-width: ${playbackRecipe.breakpoints.sm}) {
+  @media (max-width: ${theme.breakpoints.sm}) {
     width: min(20rem, 100%);
     grid-template-columns: 1fr;
   }
@@ -162,56 +162,54 @@ export const SpeedControl = styled.div`
   width: 100%;
   flex: 1 1 auto;
   gap: 0.1875rem;
-  padding: ${token.spacing1};
-  border-radius: ${playbackRecipe.radius.pill};
-  background: ${playbackRecipe.colors.surface.subtle};
+  padding: ${theme.spacing[1]};
+  border-radius: ${theme.radius.pill};
+  background: ${theme.colors.surface.subtle};
 `
 
 export const SpeedButton = styled(Pressable)`
   min-width: 0;
   min-height: 2.125rem;
   flex: 1;
-  padding-right: ${playbackRecipe.spacing[2]};
-  padding-left: ${playbackRecipe.spacing[2]};
+  padding-right: ${theme.spacing[2]};
+  padding-left: ${theme.spacing[2]};
   border: none;
-  border-radius: ${playbackRecipe.radius.pill};
-  color: ${playbackRecipe.colors.text.muted};
+  border-radius: ${theme.radius.pill};
+  color: ${theme.colors.text.muted};
   background: transparent;
-  font-size: ${playbackRecipe.typography.fontSize.xs};
-  font-weight: ${playbackRecipe.typography.fontWeight.semibold};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
 
   &.active {
-    color: ${playbackRecipe.colors.text.primary};
-    background: ${playbackRecipe.colors.surface.canvas};
-    box-shadow: ${playbackRecipe.shadows.xs};
+    color: ${theme.colors.text.primary};
+    background: ${theme.colors.surface.canvas};
+    box-shadow: ${theme.shadows.xs};
   }
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     min-height: 2.5rem;
-    font-size: ${playbackRecipe.typography.fontSize.sm};
+    font-size: ${theme.typography.fontSize.sm};
   }
 `
 
 export const TranslationToggle = styled(Pressable)<{ $active?: boolean }>`
   min-height: 2.625rem;
   flex: 0 0 auto;
-  padding-right: ${playbackRecipe.spacing[3]};
-  padding-left: ${playbackRecipe.spacing[3]};
+  padding-right: ${theme.spacing[3]};
+  padding-left: ${theme.spacing[3]};
   border: 1px solid
-    ${({ $active }) => ($active ? playbackRecipe.colors.text.primary : playbackRecipe.colors.border.default)};
-  border-radius: ${playbackRecipe.radius.pill};
-  color: ${({ $active }) => ($active ? playbackRecipe.colors.text.inverse : playbackRecipe.colors.text.muted)};
+    ${({ $active }) => ($active ? theme.colors.text.primary : theme.colors.border.default)};
+  border-radius: ${theme.radius.pill};
+  color: ${({ $active }) => ($active ? theme.colors.text.inverse : theme.colors.text.muted)};
   background: ${({ $active }) =>
-    $active
-      ? playbackRecipe.colors.text.primary
-      : playbackRecipe.colors.surface.canvas};
-  font-size: ${playbackRecipe.typography.fontSize.xs};
-  font-weight: ${playbackRecipe.typography.fontWeight.semibold};
+    $active ? theme.colors.text.primary : theme.colors.surface.canvas};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
 
-  @media (min-width: ${playbackRecipe.breakpoints.sm}) and (max-width: ${playbackRecipe.breakpoints.mobileShell}) and (min-height: 761px) {
+  @media (min-width: ${theme.breakpoints.sm}) and (max-width: ${theme.breakpoints.mobileShell}) and (min-height: ${theme.viewportHeights.tall}) {
     min-height: 3rem;
-    padding-right: ${playbackRecipe.spacing[4]};
-    padding-left: ${playbackRecipe.spacing[4]};
-    font-size: ${playbackRecipe.typography.fontSize.sm};
+    padding-right: ${theme.spacing[4]};
+    padding-left: ${theme.spacing[4]};
+    font-size: ${theme.typography.fontSize.sm};
   }
 `

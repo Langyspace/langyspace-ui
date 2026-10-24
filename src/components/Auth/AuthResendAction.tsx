@@ -1,12 +1,5 @@
-import type { ComponentPropsWithRef, ReactNode, MouseEventHandler } from 'react'
 import { Container, ResendButton } from './AuthResendAction.styles'
-
-export interface AuthResendActionProps extends ComponentPropsWithRef<'div'> {
-  children: ReactNode
-  onResend: MouseEventHandler<HTMLButtonElement>
-  resendLabel: ReactNode
-  disabled?: boolean
-}
+import type { AuthResendActionProps } from './AuthResendAction.types'
 
 export function AuthResendAction({
   children,

@@ -1,4 +1,7 @@
 import { styled, keyframes } from 'styled-components'
+import type { CSSProperties } from 'react'
+import { theme } from '../../foundations/theme/theme'
+import type { FlashcardSwiperExit } from './FlashcardSwiper.types'
 
 const cardIn = keyframes`
   from {
@@ -19,9 +22,23 @@ const cardThrow = keyframes`
   }
 `
 
-export const Root = styled.div.withConfig({
-  componentId: 'lsui-sc-flashcard-swiper',
-})<{ $exiting?: boolean }>`
+interface SwiperStyleProps {
+  $exit: FlashcardSwiperExit | null
+}
+
+const exitVector = ({ $exit }: SwiperStyleProps): CSSProperties | undefined =>
+  $exit
+    ? ({
+        '--tr': $exit.rotate,
+        '--tx': $exit.x,
+        '--ty': $exit.y,
+      } as CSSProperties)
+    : undefined
+
+// The exit vector changes per rating, so it is passed as inline custom properties.
+export const Root = styled.div
+  .attrs<SwiperStyleProps>((props) => ({ style: exitVector(props) }))
+  .withConfig({ componentId: 'lsui-sc-flashcard-swiper' })`
   position: absolute;
   inset: 0;
   z-index: 3;
@@ -29,10 +46,10 @@ export const Root = styled.div.withConfig({
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   user-select: none;
-  animation: ${({ $exiting }) => ($exiting ? cardThrow : cardIn)}
-    ${({ $exiting }) => ($exiting ? '0.3s' : '0.36s')}
+  animation: ${({ $exit }) => ($exit ? cardThrow : cardIn)}
+    ${({ $exit }) => ($exit ? '0.3s' : '0.36s')}
     cubic-bezier(0.2, 0.85, 0.25, 1)
-    ${({ $exiting }) => ($exiting ? 'forwards' : 'both')};
+    ${({ $exit }) => ($exit ? 'forwards' : 'both')};
 
   &[aria-disabled='true'] {
     pointer-events: none;
@@ -40,7 +57,7 @@ export const Root = styled.div.withConfig({
 
   &:focus-visible {
     outline: none;
-    box-shadow: 0 0 0 3px #00f2ea52;
+    box-shadow: 0 0 0 3px ${theme.colors.focusRing};
     border-radius: 1.625rem;
   }
 

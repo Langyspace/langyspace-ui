@@ -1,14 +1,5 @@
-import type { ReactNode } from 'react'
 import * as Styled from './AuthBrandContent.styles'
-
-export interface AuthBrandContentProps {
-  logo: ReactNode
-  title: ReactNode
-  highlight?: ReactNode
-  description: ReactNode
-  features: readonly ReactNode[]
-  footer?: ReactNode
-}
+import type { AuthBrandContentProps } from './AuthBrandContent.types'
 
 export function AuthBrandContent({
   logo,
@@ -28,6 +19,8 @@ export function AuthBrandContent({
       <Styled.Description>{description}</Styled.Description>
       <Styled.FeatureList>
         {features.map((feature, index) => (
+          // Features are static copy rendered in their given order.
+          // eslint-disable-next-line @eslint-react/no-array-index-key
           <Styled.Feature key={index}>
             <Styled.Mark aria-hidden="true" />
             {feature}

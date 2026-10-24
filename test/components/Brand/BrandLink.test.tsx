@@ -4,7 +4,7 @@ import { BrandLink } from '../../../src/components/Brand/BrandLink'
 
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
-    <BrandLink data-testid="content">
+    <BrandLink data-testid="content" href="/destino">
       <strong>Conteúdo fornecido</strong>
     </BrandLink>,
   )

@@ -1,13 +1,13 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
+import { theme } from '../../foundations/theme/theme'
 
 export const Container = styled.section.withConfig({
   componentId: 'lsui-sc-availability-calendar',
 })`
   container-type: inline-size;
   min-width: 0;
-  color: ${token.colorContentDefault};
+  color: ${theme.colors.text.primary};
   overflow-wrap: anywhere;
 
   > header {
@@ -15,30 +15,30 @@ export const Container = styled.section.withConfig({
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
-    gap: ${token.spacing2};
-    margin-bottom: ${token.spacing3};
+    gap: ${theme.spacing[2]};
+    margin-bottom: ${theme.spacing[3]};
   }
 
   > header > h2 {
     margin: 0;
-    font-size: ${token.typographyFontSizeLg};
+    font-size: ${theme.typography.fontSize.lg};
   }
 
   > header > div,
   > p {
-    font-size: ${token.typographyFontSizeSm};
+    font-size: ${theme.typography.fontSize.sm};
   }
 
   > p {
-    margin: 0 0 ${token.spacing4};
-    color: ${token.colorContentSecondary};
+    margin: 0 0 ${theme.spacing[4]};
+    color: ${theme.colors.text.secondary};
   }
 `
 
 export const Days = styled.div<{ $dayCount: number }>`
   display: grid;
   min-width: 0;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
 
   @container (min-width: 56rem) {
     grid-template-columns: repeat(
@@ -50,29 +50,29 @@ export const Days = styled.div<{ $dayCount: number }>`
 
 export const Day = styled.section`
   min-width: 0;
-  padding: ${token.spacing3};
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusCard};
-  background: ${token.colorSurfaceSubtle};
+  padding: ${theme.spacing[3]};
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.card};
+  background: ${theme.semantic.background.surfaceSubtle};
 
   > h3 {
-    margin: 0 0 ${token.spacing3};
-    font-size: ${token.typographyFontSizeSm};
-    line-height: ${token.typographyLineHeightNormal};
+    margin: 0 0 ${theme.spacing[3]};
+    font-size: ${theme.typography.fontSize.sm};
+    line-height: ${theme.typography.lineHeight.normal};
   }
 
   > h3 > span {
     display: block;
-    color: ${token.colorContentMuted};
-    font-size: ${token.typographyFontSizeXs};
-    font-weight: ${token.typographyFontWeightMedium};
+    color: ${theme.colors.text.muted};
+    font-size: ${theme.typography.fontSize.xs};
+    font-weight: ${theme.typography.fontWeight.medium};
   }
 `
 
 export const Slots = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr));
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
 
   @container (min-width: 56rem) {
     grid-template-columns: minmax(0, 1fr);
@@ -82,32 +82,32 @@ export const Slots = styled.div`
 export const Slot = styled(Pressable)<{ $selected: boolean }>`
   display: flex;
   min-width: 0;
-  min-height: ${token.controlHeightLg};
+  min-height: ${theme.sizes.control.lg};
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${token.spacing1};
-  padding: ${token.spacing2};
+  gap: ${theme.spacing[1]};
+  padding: ${theme.spacing[2]};
   border: 1px solid
-    ${({ $selected }) => ($selected ? token.colorBrandDefault : token.colorSurfaceBorderDefault)};
-  border-radius: ${token.radiusControl};
-  background: ${({ $selected }) => ($selected ? token.colorStatusBrandBackground : token.colorNeutral0)};
-  color: ${({ $selected }) => ($selected ? token.colorStatusBrandForeground : token.colorContentDefault)};
-  font-size: ${token.typographyFontSizeSm};
-  line-height: ${token.typographyLineHeightNormal};
+    ${({ $selected }) => ($selected ? theme.semantic.foreground.brand : theme.semantic.border.default)};
+  border-radius: ${theme.radius.control};
+  background: ${({ $selected }) => ($selected ? theme.semantic.status.brand.background : theme.colors.palette.white)};
+  color: ${({ $selected }) => ($selected ? theme.semantic.status.brand.foreground : theme.colors.text.primary)};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: ${theme.typography.lineHeight.normal};
   text-align: center;
 
   > small {
-    font-size: ${token.typographyFontSizeXs};
+    font-size: ${theme.typography.fontSize.xs};
   }
 
   &:hover:not(:disabled) {
-    border-color: ${token.colorBrandDefault};
+    border-color: ${theme.semantic.foreground.brand};
   }
 
   &:disabled {
-    border-color: ${token.colorSurfaceBorderSubtle};
-    background: ${token.colorNeutral100};
-    color: ${token.colorContentMuted};
+    border-color: ${theme.colors.border.subtle};
+    background: ${theme.colors.palette.neutral[200]};
+    color: ${theme.colors.text.muted};
   }
 `

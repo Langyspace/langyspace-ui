@@ -23,7 +23,7 @@ const countries = [
 
 const props = {
   countries,
-  country: countries[0],
+  country: countries[0]!,
   label: 'Celular',
   onCountryChange: vi.fn(),
 }
@@ -158,7 +158,7 @@ describe('PhoneField', () => {
 
     expect(options[0]).toHaveAttribute('aria-selected', 'true')
 
-    options[0].focus()
+    options[0]!.focus()
     await user.keyboard('{ArrowDown}')
 
     expect(options[1]).toHaveFocus()

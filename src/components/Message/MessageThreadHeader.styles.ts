@@ -1,5 +1,6 @@
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { css, styled } from 'styled-components'
+import { theme } from '../../foundations/theme/theme'
+import type { MessageThreadHeaderLeadingActionDisplay } from './MessageThreadHeader.types'
 
 export const Header = styled.header.withConfig({
   componentId: 'lsui-sc-message-thread-header',
@@ -8,14 +9,25 @@ export const Header = styled.header.withConfig({
   width: 100%;
   min-width: 0;
   align-items: center;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
 `
 
-export const Action = styled.div`
+const compactOnly = css`
+  display: none;
+
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
+    display: inline-flex;
+  }
+`
+
+export const Action = styled.div<{
+  $display?: MessageThreadHeaderLeadingActionDisplay
+}>`
   display: inline-flex;
   min-width: 0;
   flex: 0 0 auto;
   align-items: center;
+  ${({ $display }) => $display === 'compact' && compactOnly}
 `
 
 export const Identity = styled.div`
@@ -23,7 +35,7 @@ export const Identity = styled.div`
   min-width: 0;
   flex: 1 1 auto;
   align-items: center;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
 `
 
 export const Text = styled.div`
@@ -34,20 +46,20 @@ export const Text = styled.div`
 export const Title = styled.h2`
   overflow: hidden;
   margin: 0;
-  color: ${token.colorContentDefault};
-  font-size: ${token.typographyFontSizeMd};
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  color: ${theme.colors.text.primary};
+  font-size: ${theme.typography.fontSize.md};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   text-overflow: ellipsis;
   white-space: nowrap;
 `
 
 export const Subtitle = styled.p`
   overflow: hidden;
-  margin: ${token.spacing1} 0 0;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  line-height: ${token.typographyLineHeightSnug};
+  margin: ${theme.spacing[1]} 0 0;
+  color: ${theme.colors.text.muted};
+  font-size: ${theme.typography.fontSize.xs};
+  line-height: ${theme.typography.lineHeight.snug};
   text-overflow: ellipsis;
   white-space: nowrap;
 `

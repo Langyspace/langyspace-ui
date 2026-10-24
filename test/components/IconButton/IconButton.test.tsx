@@ -98,7 +98,7 @@ describe('IconButton', () => {
     const user = userEvent.setup()
 
     render(
-      <IconButton aria-label="Guardar" isLoading onClick={onClick}>
+      <IconButton aria-label="Guardar" loading onClick={onClick}>
         <svg data-testid="glyph" />
       </IconButton>,
     )

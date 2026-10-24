@@ -8,6 +8,7 @@ const ConsumerSurface = styled.div`
 `
 
 const sharedUi = await import('@langyspace/ui')
+const { ControlledField } = await import('@langyspace/ui/form')
 for (const name of [
   'EmptyState',
   'LoadingState',
@@ -66,7 +67,6 @@ const {
   Card,
   FilterToolbar,
   CompoundControl,
-  ControlledField,
   Dialog,
   DocumentLayout,
   NoticeBanner,
@@ -185,6 +185,8 @@ const {
   TextareaInput,
   TextInput,
   ToastItem,
+  ToastProvider,
+  Toaster,
   ToastViewport,
   AuthBrandContent,
   AuthFooter,
@@ -667,13 +669,13 @@ try {
         }),
         createElement(FilterPills, {
           'aria-label': 'Filters',
-          onChange: () => undefined,
+          onValueChange: () => undefined,
           options: [{ label: 'All', value: 'all' }],
           value: 'all',
         }),
         createElement(SegmentedControl, {
           'aria-label': 'Range',
-          onChange: () => undefined,
+          onValueChange: () => undefined,
           options: [{ label: '30 days', value: '30' }],
           value: '30',
         }),
@@ -683,7 +685,7 @@ try {
           digitLabel: 'Digit',
           idPrefix: 'code',
           length: 4,
-          onTokenChange: () => undefined,
+          onValueChange: () => undefined,
         }),
 
         createElement(
@@ -691,6 +693,11 @@ try {
           null,
           createElement(ToastItem, { message: 'SSR toast', tone: 'success' }),
         ),
+        createElement(Toaster, {
+          onDismiss: () => undefined,
+          toasts: [{ id: 'ssr', message: 'SSR toaster' }],
+        }),
+        createElement(ToastProvider, null, 'SSR toast provider'),
         createElement(DocumentLayout, {
           title: 'SSR document',
           sections: [{ title: 'Section', body: ['Text'] }],

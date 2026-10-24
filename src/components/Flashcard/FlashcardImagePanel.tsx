@@ -1,10 +1,5 @@
 import * as Styled from './FlashcardImagePanel.styles'
-
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-export interface FlashcardImagePanelProps extends ComponentPropsWithRef<'div'> {
-  emoji?: ReactNode
-}
+import type { FlashcardImagePanelProps } from './FlashcardImagePanel.types'
 
 export function FlashcardImagePanel({
   emoji,

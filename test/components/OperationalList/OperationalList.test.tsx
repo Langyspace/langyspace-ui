@@ -4,12 +4,12 @@ import { createRef } from 'react'
 import { renderToString } from 'react-dom/server'
 import { styled } from 'styled-components'
 import { describe, expect, it, vi } from 'vitest'
-import {
-  OperationalList,
-  type OperationalListColumn,
-  type OperationalListItemAction,
-  type OperationalListPrimaryColumn,
-} from '../../../src/components/OperationalList/OperationalList'
+import { OperationalList } from '../../../src/components/OperationalList/OperationalList'
+import type {
+  OperationalListColumn,
+  OperationalListItemAction,
+  OperationalListPrimaryColumn,
+} from '../../../src/components/OperationalList/OperationalList.types'
 import * as OperationalListStyles from '../../../src/components/OperationalList/OperationalList.styles'
 
 interface Person {
@@ -75,11 +75,11 @@ describe('OperationalList', () => {
     expect(rowHeaders[0]).toHaveAttribute('scope', 'row')
     expect(cells[0]).toHaveAttribute(
       'headers',
-      `${rowHeaders[0].id} ${statusHeader.id}`,
+      `${rowHeaders[0]!.id} ${statusHeader.id}`,
     )
     expect(cells[1]).toHaveAttribute(
       'headers',
-      `${rowHeaders[1].id} ${statusHeader.id}`,
+      `${rowHeaders[1]!.id} ${statusHeader.id}`,
     )
     expect(
       within(table).getByRole('button', {
@@ -152,7 +152,7 @@ describe('OperationalList', () => {
         aria-label="Pessoas ordenadas"
         columns={[
           {
-            ...columns[0],
+            ...columns[0]!,
             sort: { direction: 'none', onToggle: onStatusSort },
           },
           {
@@ -241,7 +241,7 @@ describe('OperationalList', () => {
     ])
     expect(screen.getAllByRole('separator')).toHaveLength(1)
 
-    await user.click(menuItems[1])
+    await user.click(menuItems[1]!)
 
     expect(selected).toEqual(['primary-extra'])
   })
@@ -269,9 +269,9 @@ describe('OperationalList', () => {
 
     const triggers = screen.getAllByRole('button', { name: 'Mais ações' })
 
-    await user.click(triggers[0])
+    await user.click(triggers[0]!)
     await waitFor(() => expect(screen.getAllByRole('menu')).toHaveLength(1))
-    await user.click(triggers[1])
+    await user.click(triggers[1]!)
     await waitFor(() => expect(screen.getAllByRole('menu')).toHaveLength(1))
 
     expect(triggers[0]).toHaveAttribute('aria-expanded', 'false')

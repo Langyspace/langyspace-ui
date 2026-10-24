@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
+import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-shadowing-panel',
@@ -16,7 +17,7 @@ export const Root = styled.div.withConfig({
     flex-shrink: 0;
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     width: 100%;
     height: 100%;
     min-height: 0;
@@ -27,7 +28,7 @@ export const Root = styled.div.withConfig({
     ${compactPracticeLayout}
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: ${theme.breakpoints.mobileShell}) {
     &:has(> header):not(:has(> [data-ui-shadowing-reader])) {
       overflow: auto;
 

@@ -4,7 +4,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { ScheduleCalendar } from '../../../src/components/Calendar/ScheduleCalendar'
 import { AgendaView } from '../../../src/components/Calendar/AgendaView'
 import { MonthView } from '../../../src/components/Calendar/MonthView'
-import { scheduleCalendarFixture as fixture } from '../../../src/components/Calendar/calendarFixtures'
+import { scheduleCalendarFixture as fixture } from '../../../stories/fixtures/calendar'
 
 describe('ScheduleCalendar', () => {
   it('keeps adjacent-month days out of the compact month agenda', () => {
@@ -12,7 +12,7 @@ describe('ScheduleCalendar', () => {
       <AgendaView
         {...fixture}
         view="month"
-        days={[{ ...fixture.days[4], outsideMonth: true }, fixture.days[5]]}
+        days={[{ ...fixture.days[4]!, outsideMonth: true }, fixture.days[5]!]}
       />,
     )
 
@@ -27,7 +27,7 @@ describe('ScheduleCalendar', () => {
   it('previews available slots and counts lessons, keeping other actions behind expansion', () => {
     const onSlotClick = vi.fn()
     const daySlots = fixture.slots
-      .filter((slot) => slot.dateKey === fixture.days[5].dateKey)
+      .filter((slot) => slot.dateKey === fixture.days[5]!.dateKey)
       .map((slot) =>
         slot.startMinute < 840
           ? { ...slot, state: 'unavailable' as const }
@@ -37,7 +37,7 @@ describe('ScheduleCalendar', () => {
     render(
       <AgendaView
         {...fixture}
-        days={[fixture.days[5]]}
+        days={[fixture.days[5]!]}
         slots={daySlots}
         onSlotClick={onSlotClick}
       />,
@@ -45,8 +45,8 @@ describe('ScheduleCalendar', () => {
 
     expect(screen.getByText('3 aulas')).toBeInTheDocument()
     expect(screen.queryByText(/itens/)).toBeNull()
-    expect(screen.queryByLabelText(daySlots[0].label)).toBeNull()
-    expect(screen.getByLabelText(daySlots[16].label)).toBeInTheDocument()
+    expect(screen.queryByLabelText(daySlots[0]!.label)).toBeNull()
+    expect(screen.getByLabelText(daySlots[16]!.label)).toBeInTheDocument()
 
     fireEvent.click(
       screen.getByRole('button', {
@@ -54,41 +54,41 @@ describe('ScheduleCalendar', () => {
         hidden: true,
       }),
     )
-    fireEvent.click(screen.getByLabelText(daySlots[0].label))
+    fireEvent.click(screen.getByLabelText(daySlots[0]!.label))
 
-    expect(onSlotClick).toHaveBeenCalledExactlyOnceWith(daySlots[0].id)
+    expect(onSlotClick).toHaveBeenCalledExactlyOnceWith(daySlots[0]!.id)
   })
 
   it('keeps unavailable actions reachable when there are no available slots', () => {
     const daySlots = fixture.slots
-      .filter((slot) => slot.dateKey === fixture.days[4].dateKey)
+      .filter((slot) => slot.dateKey === fixture.days[4]!.dateKey)
       .slice(0, 2)
       .map((slot) => ({ ...slot, state: 'unavailable' as const }))
 
     render(
       <AgendaView
         {...fixture}
-        days={[fixture.days[4]]}
+        days={[fixture.days[4]!]}
         slots={daySlots}
         events={[]}
       />,
     )
 
     expect(screen.getByText('sem aulas')).toBeInTheDocument()
-    expect(screen.queryByLabelText(daySlots[0].label)).toBeNull()
+    expect(screen.queryByLabelText(daySlots[0]!.label)).toBeNull()
 
     fireEvent.click(
       screen.getByRole('button', { name: 'Ver 2 horários', hidden: true }),
     )
 
-    expect(screen.getByLabelText(daySlots[0].label)).toBeInTheDocument()
+    expect(screen.getByLabelText(daySlots[0]!.label)).toBeInTheDocument()
   })
 
   it('expands hidden month lessons without opening a slot action', () => {
     const onSlotClick = vi.fn(),
       onOpenEvent = vi.fn()
     const extraEvents = [960, 1020].map((startMinute) => ({
-      ...fixture.events[0],
+      ...fixture.events[0]!,
       id: `extra-${startMinute}`,
       startMinute,
       timeLabel: `${startMinute / 60}:00`,
@@ -165,7 +165,7 @@ describe('ScheduleCalendar', () => {
     render(
       <AgendaView
         {...fixture}
-        days={[fixture.days[4]]}
+        days={[fixture.days[4]!]}
         onSlotClick={onSlotClick}
       />,
     )

@@ -1,16 +1,6 @@
 import { PracticeProgressBar } from '../Practice/PracticeProgressBar'
 import * as Styled from './QuizSessionHeader.styles'
-
-export interface QuizSessionHeaderProps {
-  /** Consumer-owned session name and question/result counter. */
-  name: string
-  counter: string
-  /** Consumer-owned progress in the 0–1 range. */
-  progress: number
-  /** Accessible name and action for returning to the owning screen. */
-  backLabel: string
-  onBack: () => void
-}
+import type { QuizSessionHeaderProps } from './QuizSessionHeader.types'
 
 export function QuizSessionHeader({
   name,

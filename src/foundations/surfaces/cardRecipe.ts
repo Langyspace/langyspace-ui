@@ -1,12 +1,12 @@
 import { css } from 'styled-components'
-import * as token from '../tokenValues'
+import { theme } from '../theme/theme'
 
 export const cardRecipe = css`
   min-width: 0;
-  padding: ${token.spacing4};
-  border: 1px solid ${token.colorSurfaceBorderSubtle};
-  border-radius: ${token.radiusCard};
-  background: ${token.colorNeutral0};
-  box-shadow: ${token.shadowSubtle};
+  padding: ${theme.spacing[4]};
+  border: 1px solid ${theme.colors.border.subtle};
+  border-radius: ${theme.radius.card};
+  background: ${theme.colors.palette.white};
+  box-shadow: ${theme.shadows.xs};
   overflow-wrap: anywhere;
 `

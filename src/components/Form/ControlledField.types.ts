@@ -1,7 +1,7 @@
 import type { FieldPath, FieldValues, RegisterOptions } from 'react-hook-form'
 import type { ReactNode } from 'react'
-import type { TextInputProps } from './TextInput'
-import type { FieldLabelVariant } from './FieldRoot'
+import type { TextInputProps } from './TextInput.types'
+import type { FieldLabelVariant } from './FieldRoot.types'
 
 export interface ControlledFieldBaseProps<TFieldValues extends FieldValues> {
   controlId?: string

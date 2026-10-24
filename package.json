@@ -1,6 +1,6 @@
 {
   "name": "@langyspace/ui",
-  "version": "3.2.3",
+  "version": "4.0.0",
   "description": "Semantic React components and interaction contracts shared by Langy.space products.",
   "type": "module",
   "license": "UNLICENSED",
@@ -11,6 +11,7 @@
   "files": [
     "audit",
     "dist",
+    "eslint/langyspace.mjs",
     "LICENSE",
     "README.md",
     "docs/components",
@@ -24,6 +25,13 @@
     "./audit": {
       "types": "./audit/index.d.ts",
       "import": "./audit/index.mjs"
+    },
+    "./eslint": {
+      "import": "./eslint/langyspace.mjs"
+    },
+    "./form": {
+      "types": "./dist/form.d.ts",
+      "import": "./dist/form.js"
     }
   },
   "bin": {
@@ -40,7 +48,6 @@
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint .",
-    "lint:prune": "eslint . --prune-suppressions",
     "storybook": "storybook dev -p 6006",
     "test": "vitest run",
     "test:storybook": "vitest run --project storybook",
@@ -60,10 +67,16 @@
     "react-hook-form": ">=7 <8",
     "styled-components": ">=6 <7"
   },
+  "peerDependenciesMeta": {
+    "react-hook-form": {
+      "optional": true
+    }
+  },
   "devDependencies": {
     "@babel/core": "7.29.7",
     "@eslint-react/eslint-plugin": "5.24.10",
     "@eslint/js": "^9.39.4",
+    "@fontsource/montserrat": "5.2.8",
     "@rolldown/plugin-babel": "0.2.4",
     "@storybook/addon-a11y": "10.5.10",
     "@storybook/addon-docs": "10.5.10",

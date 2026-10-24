@@ -1,18 +1,18 @@
 import { css, styled } from 'styled-components'
 import { actionRecipe } from '../../foundations/actions/recipe'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
 import type { ActionRecipeStyleProps } from '../../foundations/actions/types'
-import type { ButtonTextVariant } from './Button'
+import type { ButtonTextVariant } from './Button.types'
+import { theme } from '../../foundations/theme/theme'
 
 interface ButtonStyleProps extends ActionRecipeStyleProps {
   $textVariant?: ButtonTextVariant
 }
 
 const textColors = {
-  text: token.colorContentDefault,
-  'text-subtle': token.colorContentMuted,
-  'text-danger': token.colorFeedbackDanger,
+  text: theme.colors.text.primary,
+  'text-subtle': theme.colors.text.muted,
+  'text-danger': theme.colors.feedback.danger,
 } as const
 
 const textRecipe = css<ButtonStyleProps>`
@@ -31,18 +31,18 @@ const textRecipe = css<ButtonStyleProps>`
   color: ${({ $textVariant }) => textColors[$textVariant ?? 'text']};
   font-weight: ${({ $textVariant }) =>
     $textVariant === 'text-subtle'
-      ? token.typographyFontWeightMedium
-      : token.typographyFontWeightSemibold};
+      ? theme.typography.fontWeight.medium
+      : theme.typography.fontWeight.semibold};
   text-decoration: ${({ $textVariant }) =>
     $textVariant === 'text-subtle' ? 'none' : 'underline'};
   text-underline-offset: 2px;
 
   &:hover:not(:disabled) {
-    color: ${token.colorBrandDefault};
+    color: ${theme.semantic.foreground.brand};
   }
 
   &:focus-visible {
-    outline: 3px solid ${token.colorFocus};
+    outline: 3px solid ${theme.semantic.focus.ring};
     outline-offset: 3px;
   }
 

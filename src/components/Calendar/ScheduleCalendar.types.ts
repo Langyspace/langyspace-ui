@@ -1,4 +1,4 @@
-import type { CalendarControlsProps } from './CalendarControls'
+import type { CalendarControlsProps } from './CalendarControls.types'
 
 export interface ScheduleCalendarDay {
   id: string
@@ -36,8 +36,24 @@ export interface ScheduleCalendarEvent {
   tone?: 'neutral' | 'success' | 'muted'
 }
 
+/** Copy rendered by the calendar views; every entry has a Portuguese default. */
+export interface ScheduleCalendarLabels {
+  agendaEmpty: string
+  agendaEventCount: (count: number) => string
+  agendaNoEvents: string
+  calendar: string
+  dayOptions: (dayLabel: string) => string
+  showFewerEvents: string
+  showFewerSlots: string
+  showMoreEvents: (count: number) => string
+  showMoreSlots: (count: number, hasPreview: boolean) => string
+  today: string
+  unavailableSlot: (slotLabel: string) => string
+}
+
 export interface ScheduleCalendarProps {
   view: 'week' | 'month'
+  labels?: Partial<ScheduleCalendarLabels>
   days: readonly ScheduleCalendarDay[]
   events: readonly ScheduleCalendarEvent[]
   slots: readonly ScheduleCalendarSlot[]

@@ -1,12 +1,15 @@
-import { forwardRef } from 'react'
 import { Viewport } from './ToastViewport.styles'
+import type { ToastViewportProps } from './ToastViewport.types'
 
-import type { ComponentPropsWithoutRef } from 'react'
-
-export type ToastViewportProps = ComponentPropsWithoutRef<'div'>
-
-export const ToastViewport = forwardRef<HTMLDivElement, ToastViewportProps>(
-  function ToastViewport(props, ref) {
-    return <Viewport {...props} ref={ref} />
-  },
-)
+// A polite live region by default so every toast is announced.
+export function ToastViewport({ ref, ...props }: ToastViewportProps) {
+  return (
+    <Viewport
+      aria-live="polite"
+      aria-relevant="additions"
+      role="status"
+      {...props}
+      ref={ref}
+    />
+  )
+}

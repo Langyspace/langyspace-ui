@@ -1,22 +1,22 @@
 import { css, styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Pressable } from '../Pressable'
 import type { FilterPillsOverflow, FilterPillsSize } from './FilterPills.types'
+import { theme } from '../../foundations/theme/theme'
 
 const sizeStyles = {
   md: css`
-    min-height: ${token.controlHeightMd};
-    padding-right: ${token.spacing4};
-    padding-left: ${token.spacing4};
-    font-size: ${token.typographyFontSizeSm};
-    font-weight: ${token.typographyFontWeightBold};
+    min-height: ${theme.sizes.control.md};
+    padding-right: ${theme.spacing[4]};
+    padding-left: ${theme.spacing[4]};
+    font-size: ${theme.typography.fontSize.sm};
+    font-weight: ${theme.typography.fontWeight.bold};
   `,
   sm: css`
-    min-height: ${token.controlHeightSm};
-    padding-right: ${token.spacing3};
-    padding-left: ${token.spacing3};
-    font-size: ${token.typographyFontSizeXs};
-    font-weight: ${token.typographyFontWeightMedium};
+    min-height: ${theme.sizes.control.sm};
+    padding-right: ${theme.spacing[3]};
+    padding-left: ${theme.spacing[3]};
+    font-size: ${theme.typography.fontSize.xs};
+    font-weight: ${theme.typography.fontWeight.medium};
   `,
 } satisfies Record<FilterPillsSize, ReturnType<typeof css>>
 
@@ -27,7 +27,7 @@ export const Group = styled.div.withConfig({
   width: 100%;
   min-width: 0;
   flex-wrap: ${({ $overflow }) => ($overflow === 'wrap' ? 'wrap' : 'nowrap')};
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   overflow-x: ${({ $overflow }) => ($overflow === 'scroll' ? 'auto' : 'visible')};
   scrollbar-width: none;
 
@@ -44,32 +44,33 @@ export const Item = styled(Pressable)<{
   align-items: center;
   justify-content: center;
   flex: 0 0 auto;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   border: 1px solid
     ${({ $active }) =>
-      $active ? token.colorContentDefault : token.colorSurfaceBorderDefault};
-  border-radius: ${token.radiusPill};
+      $active ? theme.colors.text.primary : theme.semantic.border.default};
+  border-radius: ${theme.radius.pill};
   color: ${({ $active }) =>
-    $active ? token.colorNeutral0 : token.colorContentSecondary};
+    $active ? theme.colors.palette.white : theme.colors.text.secondary};
   background: ${({ $active }) =>
-    $active ? token.colorContentDefault : token.colorNeutral0};
+    $active ? theme.colors.text.primary : theme.colors.palette.white};
   white-space: nowrap;
   transition:
-    color ${token.motionDurationInteractive} ${token.motionEasingInteractive},
-    background-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    border-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive};
+    color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    background-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    border-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard};
 
   ${({ $size }) => sizeStyles[$size]}
 
   &:hover:not(:disabled) {
-    border-color: ${token.colorSurfaceBorderStrong};
+    border-color: ${theme.semantic.border.strong};
   }
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${token.shadowFocus};
+    box-shadow: ${theme.shadows.focusHalo};
   }
 
   &:disabled {
@@ -80,11 +81,11 @@ export const Item = styled(Pressable)<{
 
 export const Count = styled.span`
   min-width: 1.375rem;
-  border-radius: ${token.radiusPill};
-  background: ${token.colorInverseSurfaceSubtle};
+  border-radius: ${theme.radius.pill};
+  background: ${theme.semantic.inverse.surface};
   color: inherit;
-  font-size: ${token.typographyFontSize2xs};
+  font-size: ${theme.typography.fontSize['2xs']};
   line-height: 1;
-  padding: ${token.spacing1} 0.4375rem;
+  padding: ${theme.spacing[1]} 0.4375rem;
   text-align: center;
 `

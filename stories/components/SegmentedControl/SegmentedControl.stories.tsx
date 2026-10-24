@@ -26,7 +26,7 @@ function SegmentedExample({
   return (
     <SegmentedControl
       aria-label="Período do relatório"
-      onChange={setValue}
+      onValueChange={setValue}
       options={options}
       shape="pill"
       surface={surface}
@@ -38,7 +38,7 @@ function SegmentedExample({
 const meta = {
   args: {
     'aria-label': 'Período do relatório',
-    onChange: () => undefined,
+    onValueChange: () => undefined,
     options,
     shape: 'rounded',
     surface: 'light',

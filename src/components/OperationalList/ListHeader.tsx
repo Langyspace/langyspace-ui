@@ -1,30 +1,7 @@
 import * as Styled from './OperationalList.styles'
-import type {
-  OperationalListColumn,
-  OperationalListPrimaryColumn,
-  OperationalListSort,
-} from './OperationalList.types'
+import type { ColumnLabelProps, HeaderProps } from './ListHeader.types'
 
-type HeaderColumn = Pick<
-  OperationalListColumn<unknown>,
-  'align' | 'id' | 'label' | 'sort'
->
-
-interface HeaderProps {
-  columns: readonly HeaderColumn[]
-  hasActions: boolean
-  hasSorting: boolean
-  idPrefix: string
-  primaryColumn: Pick<OperationalListPrimaryColumn<unknown>, 'label' | 'sort'>
-}
-
-function ColumnLabel({
-  label,
-  sort,
-}: {
-  label: string
-  sort?: OperationalListSort
-}) {
+function ColumnLabel({ label, sort }: ColumnLabelProps) {
   if (!sort) return label
 
   return (
@@ -42,6 +19,7 @@ function ColumnLabel({
 }
 
 export function OperationalHeader({
+  actionsLabel,
   columns,
   hasActions,
   hasSorting,
@@ -77,7 +55,7 @@ export function OperationalHeader({
         ))}
         {hasActions ? (
           <Styled.ActionsHeader id={`${idPrefix}-column-actions`} scope="col">
-            Ações
+            {actionsLabel}
           </Styled.ActionsHeader>
         ) : null}
       </Styled.HeaderRow>

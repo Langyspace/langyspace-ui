@@ -20,30 +20,37 @@ async function collectDeclarations(directory) {
   return nested.flat()
 }
 
-const entrypointPath = resolve(root, 'src/index.ts')
-const entrypoint = await readFile(entrypointPath, 'utf8')
-const sourceFile = ts.createSourceFile(
-  entrypointPath,
-  entrypoint,
-  ts.ScriptTarget.Latest,
-  true,
-  ts.ScriptKind.TS,
-)
-const exportsByKind = { types: [], values: [] }
+async function collectExports(path) {
+  const source = await readFile(resolve(root, path), 'utf8')
+  const sourceFile = ts.createSourceFile(
+    path,
+    source,
+    ts.ScriptTarget.Latest,
+    true,
+    ts.ScriptKind.TS,
+  )
+  const exportsByKind = { types: [], values: [] }
 
-for (const statement of sourceFile.statements) {
-  if (!ts.isExportDeclaration(statement)) continue
-  if (!statement.exportClause || !ts.isNamedExports(statement.exportClause))
-    continue
+  for (const statement of sourceFile.statements) {
+    if (!ts.isExportDeclaration(statement)) continue
+    if (!statement.exportClause || !ts.isNamedExports(statement.exportClause))
+      continue
 
-  for (const element of statement.exportClause.elements) {
-    const kind = statement.isTypeOnly || element.isTypeOnly ? 'types' : 'values'
-    exportsByKind[kind].push(element.name.text)
+    for (const element of statement.exportClause.elements) {
+      const kind =
+        statement.isTypeOnly || element.isTypeOnly ? 'types' : 'values'
+      exportsByKind[kind].push(element.name.text)
+    }
   }
+
+  exportsByKind.types.sort()
+  exportsByKind.values.sort()
+
+  return exportsByKind
 }
 
-exportsByKind.types.sort()
-exportsByKind.values.sort()
+const exportsByKind = await collectExports('src/index.ts')
+const formExports = await collectExports('src/form.ts')
 
 const declarationFiles = (
   await collectDeclarations(resolve(root, 'dist'))
@@ -64,7 +71,8 @@ const report = `${JSON.stringify(
   {
     declarations,
     entrypoint: exportsByKind,
-    schemaVersion: 1,
+    formEntrypoint: formExports,
+    schemaVersion: 2,
   },
   null,
   2,

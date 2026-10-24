@@ -27,7 +27,7 @@ export function RecordActions({
           id: 'archive',
           label: 'Arquivar',
           tone: 'danger',
-          isLoading: archiving,
+          loading: archiving,
           onSelect: onArchive,
         },
       ]}
@@ -187,7 +187,23 @@ Posiciona a pilha de notificações sem capturar cliques fora dos itens.
 
 Contrato: children e atributos/ref de div.
 
-Cuidados: O dono escolhe role/status e aria-live conforme prioridade. Não é um provider de notificações; expiração e persistência continuam no produto.
+Cuidados: É uma região `role="status"` com `aria-live="polite"` por padrão; passe `aria-live="assertive"` só para avisos urgentes. Use `Toaster` para a lista completa.
+
+## Toaster
+
+Renderiza a lista de toasts de qualquer store e cuida do anúncio, do clique e da expiração.
+
+Contrato: `toasts` (`id`, `message`, `title`, `tone`, `icon`, `actionLabel`, `duration`), `onDismiss(id)`, `onSelect(toast)` opcional, `duration` padrão opcional, `getItemLabel` para o nome acessível de cada toast (padrão `Fechar notificação`) e atributos/ref do `ToastViewport`.
+
+Cuidados: Sem `duration`, os toasts ficam até serem dispensados. O tempo pausa enquanto o ponteiro ou o foco estão sobre um toast. A navegação de `onSelect` continua no produto.
+
+## ToastProvider
+
+Estado local de toasts para produtos sem store própria, consumido por `useToast()`.
+
+Contrato: `children`, `duration` (padrão 4200 ms), `getItemLabel` e atributos do `ToastViewport`. `useToast()` devolve `show(toast)`, que retorna o id, e `dismiss(id)`.
+
+Cuidados: `useToast()` fora do provider lança erro. Produtos com store (Teacher, Student) usam `Toaster` diretamente.
 
 ## ConnectionNotice
 
@@ -217,9 +233,9 @@ Cuidados: status exige texto de entrega. children é conteúdo React; sanitizaç
 
 Formulário controlado de escrita e envio de mensagem.
 
-Contrato: value/onValueChange/onSubmit, textareaLabel/submitLabel/submitIcon; feedback, maxLength, disabled e isSubmitting.
+Contrato: value/onValueChange/onSubmit, textareaLabel/submitLabel/submitIcon; feedback, maxLength, disabled e submitting.
 
-Cuidados: disabled bloqueia edição/envio; isSubmitting comunica atividade e mantém fila/rascunho interativos, como previsto nos dois consumidores. Enter envia, Shift+Enter quebra linha e composição IME não envia. Validação vazia/limite devolve foco.
+Cuidados: disabled bloqueia edição/envio; submitting comunica atividade e mantém fila/rascunho interativos, como previsto nos dois consumidores. Enter envia, Shift+Enter quebra linha e composição IME não envia. Validação vazia/limite devolve foco.
 
 ## MessageThread
 
@@ -233,7 +249,7 @@ Cuidados: viewportRef é o alvo do scroll; ref externo é da section. O produto 
 
 Identificação da conversa e ações de navegação.
 
-Contrato: title, subtitle, initials/imageUrl, leadingAction e trailingAction; atributos/ref de header.
+Contrato: title, subtitle, initials/imageUrl, leadingAction, `leadingActionDisplay` (`always` ou `compact`, só abaixo do breakpoint mobileShell) e trailingAction; atributos/ref de header.
 
 Cuidados: Usar botões/links nomeados nos slots de ação. Busca de perfil, bloqueio de acesso e conversas arquivadas continuam no produto.
 

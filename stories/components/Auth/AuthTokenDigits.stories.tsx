@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { expect } from 'storybook/test'
 import { AuthTokenDigits } from '../../../src/components/Auth/AuthTokenDigits'
-import type { AuthTokenDigitsProps } from '../../../src/components/Auth/AuthTokenDigits'
+import type { AuthTokenDigitsProps } from '../../../src/components/Auth/AuthTokenDigits.types'
 
 function TokenExample(props: AuthTokenDigitsProps) {
   const [value, setValue] = useState(props.value ?? '')
@@ -11,9 +11,9 @@ function TokenExample(props: AuthTokenDigitsProps) {
     <AuthTokenDigits
       {...props}
       value={value}
-      onTokenChange={(token) => {
+      onValueChange={(token) => {
         setValue(token)
-        props.onTokenChange(token)
+        props.onValueChange(token)
       }}
     />
   )
@@ -24,10 +24,10 @@ const meta = {
     'aria-label': 'Código de confirmação',
     autoFocus: false,
     digitLabel: 'Dígito',
-    hasError: false,
+    invalid: false,
     idPrefix: 'storybook-token',
     length: 4,
-    onTokenChange: () => undefined,
+    onValueChange: () => undefined,
   },
   component: AuthTokenDigits,
   parameters: {
@@ -50,7 +50,7 @@ export const Default: Story = {
   play: async ({ canvas, userEvent }) => {
     const inputs = canvas.getAllByRole('textbox')
 
-    await userEvent.click(inputs[0])
+    await userEvent.click(inputs[0]!)
     await userEvent.paste('12a34')
 
     await expect(inputs[0]).toHaveValue('1')
@@ -83,7 +83,7 @@ export const Partial: Story = {
 }
 
 export const Invalid: Story = {
-  args: { hasError: true, value: '9876' },
+  args: { invalid: true, value: '9876' },
 }
 
 export const SixDigits: Story = {

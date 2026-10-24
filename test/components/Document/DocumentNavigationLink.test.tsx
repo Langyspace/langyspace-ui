@@ -4,7 +4,7 @@ import { DocumentNavigationLink } from '../../../src/components/Document/Documen
 
 it('preserves native attributes and structured caller content without a private theme', () => {
   render(
-    <DocumentNavigationLink data-testid="content">
+    <DocumentNavigationLink data-testid="content" href="/destino">
       <strong>Conteúdo fornecido</strong>
     </DocumentNavigationLink>,
   )

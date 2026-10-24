@@ -1,15 +1,18 @@
 import { useState } from 'react'
 import * as Styled from './AgendaView.styles'
 import type { ScheduleCalendarProps } from './ScheduleCalendar.types'
+import { resolveScheduleCalendarLabels } from './scheduleCalendarLabels'
 
 export function AgendaView({
   days,
   events,
+  labels,
   slots,
   view,
   onOpenEvent,
   onSlotClick,
 }: Omit<ScheduleCalendarProps, 'navigation'>) {
+  const text = resolveScheduleCalendarLabels(labels)
   const [expanded, setExpanded] = useState<Record<string, boolean>>({})
 
   return (
@@ -40,16 +43,16 @@ export function AgendaView({
             <Styled.Header>
               <h2>
                 {day.shortLabel}, {String(day.dayNumber).padStart(2, '0')}
-                {day.today ? ' · Hoje' : ''}
+                {day.today ? ` · ${text.today}` : ''}
               </h2>
               <span>
                 {dayEvents.length
-                  ? `${dayEvents.length} ${dayEvents.length === 1 ? 'aula' : 'aulas'}`
-                  : 'sem aulas'}
+                  ? text.agendaEventCount(dayEvents.length)
+                  : text.agendaNoEvents}
               </span>
             </Styled.Header>
             {!count ? (
-              <Styled.Empty>Nenhuma aula ou horário acionável.</Styled.Empty>
+              <Styled.Empty>{text.agendaEmpty}</Styled.Empty>
             ) : (
               <Styled.Stack>
                 {dayEvents.map((event) => (
@@ -58,7 +61,9 @@ export function AgendaView({
                     data-tone={event.tone ?? 'neutral'}
                     aria-label={event.label}
                     data-calendar-class-id={event.id}
-                    onClick={() => onOpenEvent(event.id)}
+                    onClick={() => {
+                      onOpenEvent(event.id)
+                    }}
                   >
                     <span>{event.timeLabel}</span>
                     <div>
@@ -86,16 +91,19 @@ export function AgendaView({
                 {remainingSlots > 0 && (
                   <Styled.More
                     aria-expanded={Boolean(expanded[day.id])}
-                    onClick={() =>
+                    onClick={() => {
                       setExpanded((current) => ({
                         ...current,
                         [day.id]: !current[day.id],
                       }))
-                    }
+                    }}
                   >
                     {expanded[day.id]
-                      ? 'Mostrar menos horários'
-                      : `Ver ${previewSlots.length ? 'mais ' : ''}${remainingSlots} horários`}
+                      ? text.showFewerSlots
+                      : text.showMoreSlots(
+                          remainingSlots,
+                          previewSlots.length > 0,
+                        )}
                   </Styled.More>
                 )}
               </Styled.Stack>

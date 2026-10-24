@@ -1,42 +1,31 @@
-import {
-  forwardRef,
-  useId,
-  useLayoutEffect,
-  useRef,
-  type FormEvent,
-  type KeyboardEvent,
-} from 'react'
+import { useId, useLayoutEffect, useRef } from 'react'
+import type { KeyboardEvent, SubmitEvent } from 'react'
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './MessageComposer.styles'
 import type { MessageComposerProps } from './MessageComposer.types'
 
 const defaultMaxLength = 1000
 
-export const MessageComposer = forwardRef<
-  HTMLFormElement,
-  MessageComposerProps
->(function MessageComposer(
-  {
-    autoComplete = 'off',
-    autoFocus = false,
-    disabled = false,
-    error,
-    helperText,
-    isSubmitting = false,
-    maxLength = defaultMaxLength,
-    name,
-    onSubmit,
-    onValueChange,
-    placeholder,
-    rows = 1,
-    submitIcon,
-    submitLabel,
-    textareaLabel,
-    value,
-    ...formProps
-  },
+export function MessageComposer({
+  autoComplete = 'off',
+  autoFocus = false,
+  disabled = false,
+  error,
+  helperText,
+  submitting = false,
+  maxLength = defaultMaxLength,
+  name,
+  onSubmit,
+  onValueChange,
+  placeholder,
+  rows = 1,
+  submitIcon,
+  submitLabel,
+  textareaLabel,
+  value,
   ref,
-) {
+  ...formProps
+}: MessageComposerProps) {
   const inputRef = useRef<HTMLTextAreaElement>(null)
   const supportId = useId()
   const errorId = `${supportId}-error`
@@ -60,7 +49,7 @@ export const MessageComposer = forwardRef<
     input.style.height = `${input.scrollHeight}px`
   }, [value])
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (disabled) return
     if (isEmpty || overLimit) {
@@ -88,7 +77,7 @@ export const MessageComposer = forwardRef<
     <Styled.Form
       {...formProps}
       ref={ref}
-      aria-busy={isSubmitting || undefined}
+      aria-busy={submitting || undefined}
       data-ui-message-composer="true"
       onSubmit={handleSubmit}
     >
@@ -99,11 +88,15 @@ export const MessageComposer = forwardRef<
           aria-invalid={Boolean(error) || overLimit || undefined}
           aria-label={textareaLabel}
           autoComplete={autoComplete}
+          // The consumer opts in when the composer is the screen's primary task.
+          // eslint-disable-next-line jsx-a11y/no-autofocus
           autoFocus={autoFocus}
           disabled={disabled}
           maxLength={maxLength}
           name={name}
-          onChange={(event) => onValueChange(event.target.value)}
+          onChange={(event) => {
+            onValueChange(event.target.value)
+          }}
           onKeyDown={handleKeyDown}
           placeholder={placeholder}
           rows={rows}
@@ -135,6 +128,4 @@ export const MessageComposer = forwardRef<
       </Styled.Support>
     </Styled.Form>
   )
-})
-
-export type { MessageComposerProps } from './MessageComposer.types'
+}

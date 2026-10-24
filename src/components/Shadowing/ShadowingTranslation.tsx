@@ -1,8 +1,5 @@
 import * as Styled from './ShadowingTranslation.styles'
-
-import type { ComponentPropsWithRef } from 'react'
-
-export type ShadowingTranslationProps = ComponentPropsWithRef<'div'>
+import type { ShadowingTranslationProps } from './ShadowingTranslation.types'
 
 export function ShadowingTranslation({
   children,

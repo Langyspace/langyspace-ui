@@ -44,7 +44,7 @@ export function NameForm({
           />
         </FieldRoot>
         <FormActions>
-          <Button type="submit" isLoading={saving}>
+          <Button type="submit" loading={saving}>
             Salvar
           </Button>
         </FormActions>
@@ -62,9 +62,9 @@ FieldRoot compõe o nome/feedback e mescla IDREFs. CompoundControl determina dis
 
 ## ActionLink
 
-Navegação com aparência de ação. É uma âncora com href obrigatório; o produto integra seu Router sem perder o elemento nativo.
+Navegação com aparência de ação. Recebe `href` ou `render` para delegar a navegação ao Router sem perder o elemento nativo.
 
-Contrato: variant, size, density, fullWidth, iconStart/iconEnd e children.
+Contrato: variant, size, density, fullWidth, iconStart/iconEnd, children e `href` ou `render`.
 
 Cuidados: Usar Button para comandos; não interceptar navegação sem preservar teclado e abrir em nova aba.
 
@@ -72,7 +72,7 @@ Cuidados: Usar Button para comandos; não interceptar navegação sem preservar 
 
 Comando rotulado, com variantes de ação e texto e type button seguro por padrão.
 
-Contrato: variant, size, density, fullWidth, iconStart/iconEnd, isLoading e children.
+Contrato: variant, size, density, fullWidth, iconStart/iconEnd, loading e children.
 
 Cuidados: Durante loading mantém o rótulo e bloqueia cliques. Submit exige type="submit"; glyph isolado usa IconButton.
 
@@ -120,7 +120,7 @@ Adaptador de apresentação para um campo de react-hook-form. Mantém FieldRoot/
 
 Contrato: name tipado, rules, label, hint, error, controlId, labelVariant e props de TextInput.
 
-Cuidados: Usar dentro de FormProvider; regras e envio ficam no produto. Para controles sem react-hook-form, compor FieldRoot diretamente.
+Cuidados: Importar de `@langyspace/ui/form`, que é o único ponto de entrada que depende de react-hook-form. Usar dentro de FormProvider; regras e envio ficam no produto. Para controles sem react-hook-form, compor FieldRoot diretamente.
 
 ## FieldCounter
 
@@ -182,7 +182,7 @@ Cuidados: O elemento form e seu submit são externos. Preservar este papel espec
 
 Comando de um glyph, com nome acessível obrigatório e receita de ação por intenção.
 
-Contrato: aria-label ou aria-labelledby, variant, size, shape, isLoading e children.
+Contrato: aria-label ou aria-labelledby, variant, size, shape, loading e children.
 
 Cuidados: Não usar sem nome acessível nem aplicar cor/borda/hover local; escolher a variante existente. O ref aponta para o button.
 

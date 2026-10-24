@@ -1,188 +1,188 @@
 import { css } from 'styled-components'
-import * as token from '../tokenValues'
 import type {
   ActionRecipeStyleProps,
   ActionShape,
   ActionSize,
   ActionVariant,
 } from './types'
+import { theme } from '../theme/theme'
 
 const shapeRadii = {
-  pill: token.radiusPill,
-  rounded: token.radiusRounded,
+  pill: theme.radius.pill,
+  rounded: theme.radius.xl,
 } satisfies Record<ActionShape, string>
 
 export const actionSizeHeights = {
-  sm: token.controlHeightSm,
-  md: token.controlHeightMd,
-  lg: token.controlHeightLg,
+  sm: theme.sizes.control.sm,
+  md: theme.sizes.control.md,
+  lg: theme.sizes.control.lg,
 } satisfies Record<ActionSize, string>
 
 const sizeStyles = {
   sm: css`
     min-height: ${actionSizeHeights.sm};
-    gap: ${token.spacing2};
-    padding-right: ${token.spacing3};
-    padding-left: ${token.spacing3};
-    font-size: ${token.typographyFontSizeSm};
+    gap: ${theme.spacing[2]};
+    padding-right: ${theme.spacing[3]};
+    padding-left: ${theme.spacing[3]};
+    font-size: ${theme.typography.fontSize.sm};
   `,
   md: css`
     min-height: ${actionSizeHeights.md};
-    gap: ${token.spacing2};
-    padding-right: ${token.spacing5};
-    padding-left: ${token.spacing5};
-    font-size: ${token.typographyFontSizeMd};
+    gap: ${theme.spacing[2]};
+    padding-right: ${theme.spacing[5]};
+    padding-left: ${theme.spacing[5]};
+    font-size: ${theme.typography.fontSize.md};
   `,
   lg: css`
     min-height: ${actionSizeHeights.lg};
-    gap: ${token.spacing3};
-    padding-right: ${token.spacing6};
-    padding-left: ${token.spacing6};
-    font-size: ${token.typographyFontSizeMd};
+    gap: ${theme.spacing[3]};
+    padding-right: ${theme.spacing[6]};
+    padding-left: ${theme.spacing[6]};
+    font-size: ${theme.typography.fontSize.md};
   `,
 } satisfies Record<ActionSize, ReturnType<typeof css>>
 
 const compactSizeStyles = {
   sm: css``,
   md: css`
-    padding-right: ${token.spacing4};
-    padding-left: ${token.spacing4};
-    font-size: ${token.typographyFontSizeSm};
+    padding-right: ${theme.spacing[4]};
+    padding-left: ${theme.spacing[4]};
+    font-size: ${theme.typography.fontSize.sm};
   `,
   lg: css`
-    padding-right: ${token.spacing5};
-    padding-left: ${token.spacing5};
+    padding-right: ${theme.spacing[5]};
+    padding-left: ${theme.spacing[5]};
   `,
 } satisfies Record<ActionSize, ReturnType<typeof css>>
 
 const variantStyles = {
   primary: css`
-    border-color: ${token.colorNeutral950};
-    color: ${token.colorNeutral0};
-    background-color: ${token.colorNeutral950};
+    border-color: ${theme.colors.palette.neutral[900]};
+    color: ${theme.colors.palette.white};
+    background-color: ${theme.colors.palette.neutral[900]};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorNeutral900};
-      background-color: ${token.colorNeutral900};
-      box-shadow: ${token.shadowRaised};
+      border-color: ${theme.colors.palette.neutral[800]};
+      background-color: ${theme.colors.palette.neutral[800]};
+      box-shadow: ${theme.shadows.sm};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorNeutral950};
-      background-color: ${token.colorNeutral950};
+      border-color: ${theme.colors.palette.neutral[900]};
+      background-color: ${theme.colors.palette.neutral[900]};
       transform: translateY(0);
     }
   `,
   secondary: css`
-    border-color: ${token.colorNeutral300};
-    color: ${token.colorNeutral950};
-    background-color: ${token.colorNeutral0};
+    border-color: ${theme.colors.palette.neutral[400]};
+    color: ${theme.colors.palette.neutral[900]};
+    background-color: ${theme.colors.palette.white};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorNeutral500};
-      background-color: ${token.colorNeutral50};
-      box-shadow: ${token.shadowSubtle};
+      border-color: ${theme.colors.palette.neutral[500]};
+      background-color: ${theme.colors.palette.neutral[100]};
+      box-shadow: ${theme.shadows.xs};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${token.colorNeutral100};
+      background-color: ${theme.colors.palette.neutral[200]};
       transform: translateY(0);
     }
   `,
   tertiary: css`
     border-color: transparent;
-    color: ${token.colorNeutral950};
+    color: ${theme.colors.palette.neutral[900]};
     background-color: transparent;
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${token.colorNeutral50};
+      background-color: ${theme.colors.palette.neutral[100]};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      background-color: ${token.colorNeutral100};
+      background-color: ${theme.colors.palette.neutral[200]};
       transform: translateY(0);
     }
   `,
   brand: css`
-    border-color: ${token.colorBrandDefault};
-    color: ${token.colorNeutral0};
-    background-color: ${token.colorBrandDefault};
+    border-color: ${theme.semantic.foreground.brand};
+    color: ${theme.colors.palette.white};
+    background-color: ${theme.semantic.foreground.brand};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorBrandHover};
-      background-color: ${token.colorBrandHover};
-      box-shadow: ${token.shadowRaised};
+      border-color: ${theme.semantic.foreground.brandHover};
+      background-color: ${theme.semantic.foreground.brandHover};
+      box-shadow: ${theme.shadows.sm};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorBrandHover};
-      background-color: ${token.colorBrandHover};
+      border-color: ${theme.semantic.foreground.brandHover};
+      background-color: ${theme.semantic.foreground.brandHover};
       transform: translateY(0);
     }
   `,
   danger: css`
-    border-color: ${token.colorFeedbackDanger};
-    color: ${token.colorNeutral0};
-    background-color: ${token.colorFeedbackDanger};
+    border-color: ${theme.colors.feedback.danger};
+    color: ${theme.colors.palette.white};
+    background-color: ${theme.colors.feedback.danger};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorFeedbackDangerStrong};
-      background-color: ${token.colorFeedbackDangerStrong};
-      box-shadow: ${token.shadowRaised};
+      border-color: ${theme.semantic.status.danger.foreground};
+      background-color: ${theme.semantic.status.danger.foreground};
+      box-shadow: ${theme.shadows.sm};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorFeedbackDangerStrong};
-      background-color: ${token.colorFeedbackDangerStrong};
+      border-color: ${theme.semantic.status.danger.foreground};
+      background-color: ${theme.semantic.status.danger.foreground};
       transform: translateY(0);
     }
   `,
   success: css`
-    border-color: ${token.colorFeedbackSuccess};
-    color: ${token.colorNeutral0};
-    background-color: ${token.colorFeedbackSuccess};
+    border-color: ${theme.semantic.status.success.foreground};
+    color: ${theme.colors.palette.white};
+    background-color: ${theme.semantic.status.success.foreground};
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorFeedbackSuccessStrong};
-      background-color: ${token.colorFeedbackSuccessStrong};
-      box-shadow: ${token.shadowRaised};
+      border-color: ${theme.semantic.foreground.successStrong};
+      background-color: ${theme.semantic.foreground.successStrong};
+      box-shadow: ${theme.shadows.sm};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorFeedbackSuccessStrong};
-      background-color: ${token.colorFeedbackSuccessStrong};
+      border-color: ${theme.semantic.foreground.successStrong};
+      background-color: ${theme.semantic.foreground.successStrong};
       transform: translateY(0);
     }
   `,
   inverse: css`
     border-color: transparent;
-    color: ${token.colorNeutral0};
+    color: ${theme.colors.palette.white};
     background-color: transparent;
     box-shadow: none;
 
     &:hover:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorNeutral0};
-      color: ${token.colorNeutral950};
-      background-color: ${token.colorNeutral0};
+      border-color: ${theme.colors.palette.white};
+      color: ${theme.colors.palette.neutral[900]};
+      background-color: ${theme.colors.palette.white};
       transform: translateY(-1px);
     }
 
     &:active:not(:disabled):not([aria-disabled='true']) {
-      border-color: ${token.colorNeutral100};
-      color: ${token.colorNeutral950};
-      background-color: ${token.colorNeutral100};
+      border-color: ${theme.colors.palette.neutral[200]};
+      color: ${theme.colors.palette.neutral[900]};
+      background-color: ${theme.colors.palette.neutral[200]};
       transform: translateY(0);
     }
   `,
@@ -203,23 +203,24 @@ export const actionRecipe = css<ActionRecipeStyleProps>`
   border-radius: ${({ $shape }) => shapeRadii[$shape]};
   appearance: none;
   font: inherit;
-  font-weight: ${token.typographyFontWeightSemibold};
-  line-height: ${token.typographyLineHeightSnug};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.snug};
   overflow-wrap: anywhere;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   transition:
-    background-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    border-color ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    box-shadow ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive},
-    color ${token.motionDurationInteractive} ${token.motionEasingInteractive},
-    transform ${token.motionDurationInteractive}
-      ${token.motionEasingInteractive};
+    background-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    border-color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    box-shadow ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    color ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard},
+    transform ${theme.transitions.duration.fast}
+      ${theme.transitions.easing.standard};
 
   ${({ $fullWidth }) =>
     $fullWidth &&
@@ -232,7 +233,7 @@ export const actionRecipe = css<ActionRecipeStyleProps>`
 
   &:focus-visible {
     outline: none;
-    box-shadow: ${token.shadowFocus};
+    box-shadow: ${theme.shadows.focusHalo};
   }
 
   @media (prefers-reduced-motion: reduce) {

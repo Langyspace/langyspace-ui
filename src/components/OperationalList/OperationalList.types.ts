@@ -56,7 +56,7 @@ export interface OperationalListColumn<Item> {
 interface OperationalListActionBase {
   disabled?: boolean
   id: string
-  isLoading?: boolean
+  loading?: boolean
   label: string
   onSelect: () => void
 }
@@ -82,6 +82,12 @@ type NativeRootProps = Omit<
   'aria-label' | 'aria-labelledby' | 'children'
 >
 
+/** Copy rendered by the list; every entry has a Portuguese default. */
+export interface OperationalListLabels {
+  actionsColumn: string
+  moreActions: string
+}
+
 export type OperationalListProps<Item> = NativeRootProps &
   AccessibleName & {
     columns: readonly OperationalListColumn<Item>[]
@@ -94,19 +100,6 @@ export type OperationalListProps<Item> = NativeRootProps &
     ) => readonly OperationalListItemAction[]
     getItemKey: (item: Item) => Key
     items: readonly Item[]
+    labels?: Partial<OperationalListLabels>
     primaryColumn: OperationalListPrimaryColumn<Item>
   }
-
-export interface OperationalListCellStyleProps {
-  $align: OperationalListAlign
-  $importance?: OperationalListImportance
-}
-
-export interface OperationalListHeadStyleProps {
-  $hasSorting: boolean
-}
-
-export interface OperationalListHeaderStyleProps {
-  $align: OperationalListAlign
-  $sortable: boolean
-}

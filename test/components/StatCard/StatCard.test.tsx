@@ -33,3 +33,9 @@ it('preserves zero, the brand layout, native container ref and action activation
   fireEvent.click(screen.getByRole('button', { name: 'Atualizar' }))
   expect(onClick).toHaveBeenCalledOnce()
 })
+
+it('uses a smaller value in the compact size', () => {
+  render(<StatCard label="Receita" size="sm" value="R$ 1.200" />)
+
+  expect(screen.getByText('R$ 1.200')).toHaveStyle({ fontSize: '18px' })
+})

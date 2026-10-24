@@ -1,6 +1,7 @@
-import type { FlashcardGrade } from './FlashcardRatingButton'
+import type { FlashcardGrade } from './FlashcardRatingButton.types'
 import { styled, keyframes } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 const rise = keyframes`
   from {
@@ -37,10 +38,22 @@ const pop = keyframes`
 `
 
 const feedbackTones = {
-  again: { color: 'var(--fc-red)', glow: 'rgba(225, 29, 72, 0.30)' },
-  hard: { color: 'var(--fc-amber)', glow: 'rgba(217, 119, 6, 0.30)' },
-  good: { color: 'var(--fc-green)', glow: 'rgba(22, 163, 74, 0.30)' },
-  easy: { color: 'var(--fc-pink)', glow: 'rgba(255, 31, 92, 0.30)' },
+  again: {
+    color: 'var(--fc-red)',
+    glow: alpha(theme.colors.palette.extended.rose600, 0.3),
+  },
+  hard: {
+    color: 'var(--fc-amber)',
+    glow: alpha(theme.colors.palette.feedback.warning, 0.3),
+  },
+  good: {
+    color: 'var(--fc-green)',
+    glow: alpha(theme.colors.palette.feedback.success, 0.3),
+  },
+  easy: {
+    color: 'var(--fc-pink)',
+    glow: alpha(theme.colors.palette.accent.pink, 0.3),
+  },
 } satisfies Record<FlashcardGrade, { color: string; glow: string }>
 
 export const Root = styled.div.withConfig({
@@ -53,10 +66,10 @@ export const Root = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: ${token.spacing4};
+  gap: ${theme.spacing[4]};
   overflow: hidden;
   border-radius: 1.625rem;
-  background: rgba(255, 255, 255, 0.92);
+  background: ${alpha(theme.colors.palette.white, 0.92)};
   animation: ${fadeIn} 0.18s ease;
   backdrop-filter: blur(5px);
 
@@ -80,7 +93,7 @@ export const Mark = styled.div.withConfig({
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 50%;
-  color: ${token.colorNeutral0};
+  color: ${theme.colors.palette.white};
   animation: ${pop} 0.46s cubic-bezier(0.2, 1.45, 0.4, 1);
 `
 
@@ -90,7 +103,7 @@ export const Message = styled.div.withConfig({
   color: ${({ $grade }) => feedbackTones[$grade].color};
   padding: 0 1.625rem;
   font-size: 1.625rem;
-  font-weight: ${token.typographyFontWeightBold};
+  font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0;
   line-height: 1.15;
   text-align: center;
@@ -107,7 +120,7 @@ export const Next = styled.div.withConfig({
   color: var(--fc-muted);
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   font-size: 0.78125rem;
-  font-weight: ${token.typographyFontWeightMedium};
+  font-weight: ${theme.typography.fontWeight.medium};
   white-space: nowrap;
   animation: ${rise} 0.34s ease both 0.13s;
 `

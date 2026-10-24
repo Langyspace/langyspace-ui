@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
+import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-back',
@@ -12,7 +13,7 @@ export const Root = styled.div.withConfig({
   flex-direction: column;
   align-items: center;
   justify-content: safe center;
-  gap: ${token.spacing3};
+  gap: ${theme.spacing[3]};
   padding: var(--fc-back-padding);
   text-align: center;
   overflow-y: auto;
@@ -24,10 +25,10 @@ export const Term = styled.div.withConfig({
 })`
   display: inline-flex;
   align-items: center;
-  gap: ${token.spacing2};
+  gap: ${theme.spacing[2]};
   color: var(--fc-ink);
   font-size: 0.9375rem;
-  font-weight: ${token.typographyFontWeightBold};
+  font-weight: ${theme.typography.fontWeight.bold};
 `
 
 export const Phonetic = styled.div.withConfig({
@@ -36,7 +37,7 @@ export const Phonetic = styled.div.withConfig({
   margin-top: -0.375rem;
   color: var(--fc-muted-2);
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  font-size: ${token.typographyFontSizeXs};
+  font-size: ${theme.typography.fontSize.xs};
 `
 
 export const Divider = styled.div.withConfig({
@@ -44,8 +45,8 @@ export const Divider = styled.div.withConfig({
 })`
   width: 2.125rem;
   height: 0.125rem;
-  border-radius: ${token.radiusPill};
-  background: rgba(255, 31, 92, 0.25);
+  border-radius: ${theme.radius.pill};
+  background: ${alpha(theme.colors.palette.accent.pink, 0.25)};
 `
 
 export const Translation = styled.div.withConfig({
@@ -53,9 +54,9 @@ export const Translation = styled.div.withConfig({
 })`
   color: var(--fc-ink);
   font-size: var(--fc-back-translation-size);
-  font-weight: ${token.typographyFontWeightBold};
+  font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0;
-  line-height: ${token.typographyLineHeightSnug};
+  line-height: ${theme.typography.lineHeight.snug};
 `
 
 export const Example = styled.div.withConfig({
@@ -63,13 +64,13 @@ export const Example = styled.div.withConfig({
 })`
   max-width: 15rem;
   color: var(--fc-muted);
-  font-size: ${token.typographyFontSizeSm};
+  font-size: ${theme.typography.fontSize.sm};
   font-style: italic;
   line-height: 1.55;
 
   b {
     color: var(--fc-pink);
     font-style: normal;
-    font-weight: ${token.typographyFontWeightSemibold};
+    font-weight: ${theme.typography.fontWeight.semibold};
   }
 `

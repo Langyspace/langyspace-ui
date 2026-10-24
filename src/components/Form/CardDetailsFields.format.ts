@@ -17,7 +17,7 @@ export const formatDocumentNumber = (value: string) => {
   for (const [index, length] of groups.entries()) {
     if (offset >= value.length) break
     result +=
-      (index ? separators[index - 1] : '') +
+      (index ? (separators[index - 1] ?? '') : '') +
       value.slice(offset, offset + length)
     offset += length
   }
@@ -66,7 +66,7 @@ export function maskedEdit(
     let position = 0,
       counted = 0
     while (position < formatted.length && counted < before) {
-      if (/\d/.test(formatted[position]!)) counted++
+      if (/\d/.test(formatted.charAt(position))) counted++
       position++
     }
     input.setSelectionRange(position, position)

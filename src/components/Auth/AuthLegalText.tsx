@@ -1,26 +1,6 @@
-import type { ComponentPropsWithRef, ReactNode } from 'react'
-
-import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
-
-const Root = styled.p.withConfig({
-  componentId: 'lsui-sc-auth-legal-text',
-})`
-  margin: 1rem 0 0;
-  color: ${token.colorContentMuted};
-  font-size: ${token.typographyFontSizeXs};
-  line-height: ${token.typographyLineHeightNormal};
-
-  & + button,
-  & + div > button {
-    margin-top: ${token.spacing4};
-  }
-`
-
-export interface AuthLegalTextProps extends ComponentPropsWithRef<'p'> {
-  children: ReactNode
-}
+import type { AuthLegalTextProps } from './AuthLegalText.types'
+import * as Styled from './AuthLegalText.styles'
 
 export function AuthLegalText({ children, ...props }: AuthLegalTextProps) {
-  return <Root {...props}>{children}</Root>
+  return <Styled.Root {...props}>{children}</Styled.Root>
 }

@@ -1,7 +1,7 @@
-import { useId, type CSSProperties } from 'react'
+import { useId } from 'react'
 import { createPortal } from 'react-dom'
 import { IconButton } from '../IconButton/IconButton'
-import { IconSlot } from '../../internal/IconSlot'
+import { IconSlot } from '../../internal/IconSlot/IconSlot'
 import { useMergedRef } from '../../internal/useMergedRef'
 import { Spinner } from '../Spinner/Spinner'
 import { useActionMenu } from './useActionMenu'
@@ -36,7 +36,7 @@ export function ActionMenu({
     handleTriggerKeyDown,
     isMenuOpen,
     isOpen,
-    itemRefs,
+    itemsRef,
     menuRef,
     normalizedItems,
     openWithIntent,
@@ -64,13 +64,6 @@ export function ActionMenu({
     return <Styled.Root {...nativeProps} ref={setRootRef} />
   }
 
-  const menuStyle: CSSProperties = {
-    left: position?.left,
-    maxHeight: position?.maxHeight,
-    top: position?.top,
-    visibility: position ? 'visible' : 'hidden',
-  }
-
   return (
     <Styled.Root {...nativeProps} ref={setRootRef}>
       <IconButton
@@ -96,6 +89,7 @@ export function ActionMenu({
             <Styled.Menu
               $align={align}
               $placement={position?.placement ?? 'bottom'}
+              $position={position}
               aria-labelledby={triggerId}
               data-align={align}
               data-placement={position?.placement}
@@ -103,12 +97,11 @@ export function ActionMenu({
               id={menuId}
               ref={menuRef}
               role="menu"
-              style={menuStyle}
               tabIndex={-1}
               onKeyDown={handleMenuKeyDown}
             >
               {normalizedItems.map((item, index) => {
-                const isUnavailable = Boolean(item.disabled || item.isLoading)
+                const isUnavailable = Boolean(item.disabled || item.loading)
                 const shouldSeparate =
                   index === firstDangerIndex && firstDangerIndex > 0
 
@@ -120,14 +113,14 @@ export function ActionMenu({
                     <Styled.MenuItem
                       $size={size}
                       $tone={item.tone ?? 'neutral'}
-                      aria-busy={item.isLoading || undefined}
+                      aria-busy={item.loading || undefined}
                       aria-disabled={isUnavailable || undefined}
                       data-action-menu-item-id={item.id}
-                      data-loading={item.isLoading ? 'true' : undefined}
+                      data-loading={item.loading ? 'true' : undefined}
                       disabled={isUnavailable}
                       ref={(node) => {
-                        if (node) itemRefs.current.set(item.id, node)
-                        else itemRefs.current.delete(item.id)
+                        if (node) itemsRef.current.set(item.id, node)
+                        else itemsRef.current.delete(item.id)
                       }}
                       role="menuitem"
                       tabIndex={item.id === activeItemId ? 0 : -1}
@@ -136,11 +129,11 @@ export function ActionMenu({
                         focusTrigger()
                         item.onSelect()
                       }}
-                      onFocus={() => setActiveItemId(item.id)}
+                      onFocus={() => {
+                        setActiveItemId(item.id)
+                      }}
                     >
-                      <IconSlot
-                        icon={item.isLoading ? <Spinner /> : item.icon}
-                      />
+                      <IconSlot icon={item.loading ? <Spinner /> : item.icon} />
                       <Styled.ItemLabel>{item.label}</Styled.ItemLabel>
                     </Styled.MenuItem>
                   </div>
@@ -153,11 +146,3 @@ export function ActionMenu({
     </Styled.Root>
   )
 }
-
-export type {
-  ActionMenuAlign,
-  ActionMenuItem,
-  ActionMenuProps,
-  ActionMenuSize,
-  ActionMenuTone,
-} from './ActionMenu.types'

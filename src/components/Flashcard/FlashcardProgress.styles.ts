@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
-import * as token from '../../foundations/tokenValues'
 import { Skeleton } from '../Skeleton/Skeleton'
+import { theme } from '../../foundations/theme/theme'
 
 export const Track = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-progress-track',
@@ -8,7 +8,7 @@ export const Track = styled.div.withConfig({
   min-width: 0;
   flex: 1;
   display: flex;
-  gap: ${token.spacing1};
+  gap: ${theme.spacing[1]};
 `
 
 export const Segment = styled.span.withConfig({
@@ -19,14 +19,14 @@ export const Segment = styled.span.withConfig({
   height: 0.3125rem;
   flex: 1;
   overflow: hidden;
-  border-radius: ${token.radiusPill};
-  background: #eeece8;
+  border-radius: ${theme.radius.pill};
+  background: ${theme.colors.palette.extended.stone200};
 
   &::after {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    background: ${({ state }) => (state === 'current' ? 'var(--fc-pink, #f10f4d)' : 'var(--fc-ink, #0a0a0a)')};
+    background: ${({ state }) => (state === 'current' ? `var(--fc-pink, ${theme.colors.palette.extended.pink600})` : `var(--fc-ink, ${theme.colors.palette.neutral[900]})`)};
     content: '';
     transform: scaleX(
       ${({ state }) => (state === 'done' ? 1 : state === 'current' ? 0.5 : 0)}
@@ -46,14 +46,14 @@ export const Counter = styled.div.withConfig({
   componentId: 'lsui-sc-flashcard-counter',
 })`
   flex-shrink: 0;
-  color: var(--fc-muted-2, #6b6b6b);
-  font-size: ${token.typographyFontSizeXs};
+  color: var(--fc-muted-2, ${theme.colors.palette.neutral[600]});
+  font-size: ${theme.typography.fontSize.xs};
   font-variant-numeric: tabular-nums;
-  font-weight: ${token.typographyFontWeightMedium};
+  font-weight: ${theme.typography.fontWeight.medium};
 
   b {
-    color: var(--fc-ink, #0a0a0a);
-    font-weight: ${token.typographyFontWeightBold};
+    color: var(--fc-ink, ${theme.colors.palette.neutral[900]});
+    font-weight: ${theme.typography.fontWeight.bold};
   }
 `
 

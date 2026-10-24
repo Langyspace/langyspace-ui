@@ -22,7 +22,7 @@ function FilterExample({
     <FilterPills
       aria-label="Filtrar alunos"
       counts={{ active: 18, all: 175, pending: 4 }}
-      onChange={setValue}
+      onValueChange={setValue}
       options={options}
       overflow={overflow}
       value={value}
@@ -34,7 +34,7 @@ const meta = {
   args: {
     'aria-label': 'Filtrar alunos',
     counts: { active: 18, all: 175, pending: 4 },
-    onChange: () => undefined,
+    onValueChange: () => undefined,
     options,
     overflow: 'scroll',
     size: 'md',

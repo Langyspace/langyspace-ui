@@ -10,7 +10,7 @@ export interface ActionMenuItem {
   disabled?: boolean
   icon?: ReactNode
   id: string
-  isLoading?: boolean
+  loading?: boolean
   label: string
   onSelect: () => void
   tone?: ActionMenuTone
@@ -27,16 +27,6 @@ export interface ActionMenuProps extends Omit<
   open?: boolean
   size?: ActionMenuSize
   triggerLabel: string
-}
-
-export interface ActionMenuMenuStyleProps {
-  $align: ActionMenuAlign
-  $placement: ActionMenuPlacement
-}
-
-export interface ActionMenuItemStyleProps {
-  $size: ActionMenuSize
-  $tone: ActionMenuTone
 }
 
 export type ActionMenuPlacement = 'bottom' | 'top'
