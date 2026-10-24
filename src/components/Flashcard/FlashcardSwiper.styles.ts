@@ -37,8 +37,8 @@ const exitVector = ({ $exit }: SwiperStyleProps): CSSProperties | undefined =>
 
 // The exit vector changes per rating, so it is passed as inline custom properties.
 export const Root = styled.div
-  .withConfig({ componentId: 'lsui-sc-flashcard-swiper' })
-  .attrs<SwiperStyleProps>((props) => ({ style: exitVector(props) }))`
+  .attrs<SwiperStyleProps>((props) => ({ style: exitVector(props) }))
+  .withConfig({ componentId: 'lsui-sc-flashcard-swiper' })`
   position: absolute;
   inset: 0;
   z-index: 3;
