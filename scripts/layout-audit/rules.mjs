@@ -331,7 +331,8 @@ export async function inspectStory(page, scenario, tolerance) {
           return
         }
 
-        const spinnerStyle = window.getComputedStyle(spinner)
+        // The ring turns in the spinner's ::before so its rotation adds no overflow.
+        const spinnerStyle = window.getComputedStyle(spinner, '::before')
         if (
           (reducedMotion && spinnerStyle.animationName !== 'none') ||
           (!reducedMotion && spinnerStyle.animationName === 'none')
