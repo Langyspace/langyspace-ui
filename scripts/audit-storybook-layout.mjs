@@ -83,6 +83,13 @@ try {
             .first()
             .waitFor({ state: 'visible', timeout: auditConfig.timeoutMs })
           await page.evaluate(() => document.fonts.ready)
+          // Let layout that depends on the loaded fonts settle before measuring.
+          await page.evaluate(
+            () =>
+              new Promise((resolve) => {
+                requestAnimationFrame(() => requestAnimationFrame(resolve))
+              }),
+          )
           await page.evaluate(async () => {
             const entrances = document.getAnimations().filter((animation) => {
               const endTime = animation.effect?.getComputedTiming().endTime

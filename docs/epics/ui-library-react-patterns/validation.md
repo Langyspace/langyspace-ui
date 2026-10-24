@@ -19,6 +19,15 @@ Checagens locais: typecheck, ESLint sem supressões, 362+ testes unitários,
 370 testes de stories no navegador, `check:api`, `test:bundle`, `test:package` e
 `test:button-system`.
 
+## Exceções de orçamento revisadas
+
+- `library.gzipBytes` 65.000 → 68.000. A entrada completa passou de 63.638 para
+  66.928 bytes porque passa a exportar o `theme` (4.068 bytes gzip sozinho); sem
+  ele o restante da v4 é menor que a `main`. Os produtos deixam de embarcar a
+  própria cópia do tema.
+- `flashcardPresentation.rawBytes` 22.000 → 22.500: o vetor de saída tipado do
+  `FlashcardSwiper` (`exit`) acrescenta 125 bytes.
+
 ## Produtos
 
 Cada produto foi capturado com os dados simulados do próprio `audit-layout`

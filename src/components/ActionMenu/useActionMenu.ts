@@ -90,20 +90,48 @@ export function useActionMenu({
   }, [])
 
   useLayoutEffect(() => {
-    if (!isMenuOpen || !menuRef.current || !triggerRef.current) {
+    const menu = menuRef.current
+    const trigger = triggerRef.current
+
+    if (!isMenuOpen || !menu || !trigger) {
       setPosition(null)
 
       return
     }
 
-    const nextPosition = getActionMenuPosition({
-      align,
-      menu: menuRef.current.getBoundingClientRect(),
-      trigger: triggerRef.current.getBoundingClientRect(),
-      viewportHeight: window.innerHeight,
-      viewportWidth: window.innerWidth,
-    })
-    setPosition(nextPosition)
+    const updatePosition = () => {
+      const next = getActionMenuPosition({
+        align,
+        menu: menu.getBoundingClientRect(),
+        trigger: trigger.getBoundingClientRect(),
+        viewportHeight: window.innerHeight,
+        viewportWidth: window.innerWidth,
+      })
+
+      setPosition((current) =>
+        current &&
+        current.left === next.left &&
+        current.top === next.top &&
+        current.maxHeight === next.maxHeight &&
+        current.placement === next.placement
+          ? current
+          : next,
+      )
+    }
+
+    updatePosition()
+
+    // Late size changes, such as a web font finishing to load, move the edges.
+    const observer =
+      typeof ResizeObserver === 'undefined'
+        ? null
+        : new ResizeObserver(updatePosition)
+
+    observer?.observe(menu)
+
+    return () => {
+      observer?.disconnect()
+    }
   }, [align, isMenuOpen, normalizedItems, size])
 
   useEffect(() => {

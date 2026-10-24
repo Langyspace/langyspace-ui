@@ -251,12 +251,14 @@ export const productConfig = {
         patterns: [
           {
             regex: '^(?!@fontsource/).*\\.(css|less|sass|scss)$',
-            message: 'Style with styled-components and the @langyspace/ui theme.',
+            message:
+              'Style with styled-components and the @langyspace/ui theme.',
           },
           {
             regex:
               '^(@emotion/|@vanilla-extract/|clsx$|classnames$|sass|styled-jsx|tailwindcss)',
-            message: 'Style with styled-components and the @langyspace/ui theme.',
+            message:
+              'Style with styled-components and the @langyspace/ui theme.',
           },
         ],
       },
