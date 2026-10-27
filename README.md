@@ -9,7 +9,7 @@ Esta revisão define a **3.0.0**, com organização por responsabilidade, compos
 Após a publicação da release 3.0.0, instale seu artefato imutável:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/MarcosLaboriosi/langyspace-ui/releases/download/v3.0.0/langyspace-ui-3.0.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v3.0.0/langyspace-ui-3.0.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
