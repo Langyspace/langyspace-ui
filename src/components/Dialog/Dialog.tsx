@@ -11,7 +11,9 @@ export function Dialog(props: DialogProps) {
           disabled={props.dismissal === 'blocked'}
           label={props.closeLabel}
           onClick={props.onClose}
-        />
+        >
+          {props.closeIcon}
+        </OverlayCloseButton>
       }
       kind="dialog"
     />

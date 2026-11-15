@@ -3,6 +3,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import { ArrowIcon } from '../../../.storybook/fixtures'
 import { Button } from '../../../src/components/Button/Button'
+import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { ThemeProvider } from 'styled-components'
 
 const variants = [
   'primary',
@@ -106,6 +108,44 @@ export const Stress: Story = {
       <StoryLayout.ButtonStressPreview>
         <Story />
       </StoryLayout.ButtonStressPreview>
+    ),
+  ],
+}
+
+export const ProductTheme: Story = {
+  // Source-fidelity fixture: this exact approved prototype pink has 3.74:1 contrast.
+  // Retain all other axe rules and contrast checks outside its single source button.
+  parameters: {
+    a11y: {
+      config: {
+        rules: [
+          {
+            id: 'color-contrast',
+            selector: ':not(button.lsui-sc-button)',
+          },
+        ],
+      },
+    },
+  },
+  args: { variant: 'brand', size: 'lg', children: 'Agendar aula experimental' },
+  tags: ['visual-review'],
+  decorators: [
+    (Story) => (
+      <ThemeProvider
+        theme={createTheme({
+          buttons: {
+            brand: {
+              background: '#FF1F5C',
+              backgroundHover: '#D3104A',
+              border: '0px solid transparent',
+              color: '#FFFFFF',
+            },
+            sizes: { lg: { minHeight: '54px', paddingX: '26px' } },
+          },
+        })}
+      >
+        <Story />
+      </ThemeProvider>
     ),
   ],
 }

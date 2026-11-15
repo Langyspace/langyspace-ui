@@ -3,6 +3,7 @@ import type { OverlayCloseButtonProps } from './OverlayCloseButton.types'
 import * as Styled from './OverlayCloseButton.styles'
 
 export function OverlayCloseButton({
+  children,
   disabled,
   label,
   onClick,
@@ -16,7 +17,7 @@ export function OverlayCloseButton({
       variant="subtle"
       onClick={onClick}
     >
-      <Styled.Glyph aria-hidden="true" />
+      {children ?? <Styled.Glyph aria-hidden="true" />}
     </IconButton>
   )
 }

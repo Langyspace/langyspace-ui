@@ -23,6 +23,8 @@ export type OverlayPanelProps = Omit<
 export interface OverlayShellProps {
   children: ReactNode
   closeLabel: string
+  /** Optional accessible-control icon content; label and dismissal behavior remain owned here. */
+  closeIcon?: ReactNode
   description?: ReactNode
   dismissal?: OverlayDismissal
   fallbackFocusRef?: RefObject<HTMLElement | null>

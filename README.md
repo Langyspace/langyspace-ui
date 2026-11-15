@@ -2,19 +2,19 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-A versão **4.1.0** mantém os contratos do React 19, o tema compartilhado e as props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+A versão **4.2.0** acrescenta contratos de tema para ações e Dialog e mantém os contratos do React 19, o tema compartilhado e as props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Após a publicação e conferência do checksum, instale o artefato imutável da release 4.1.0:
+Após a publicação e conferência do checksum, instale o artefato imutável da release 4.2.0:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.1.0/langyspace-ui-4.1.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.2.0/langyspace-ui-4.2.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
 
-React/React DOM19 e styled-components6 são peers; react-hook-form7 é peer opcional, usado só por `@langyspace/ui/form`. Não há import obrigatório de CSS nem ThemeProvider externo: os componentes leem o `theme` exportado. Os produtos usam o mesmo `theme` e o `GlobalStyles` da UI no próprio ThemeProvider. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
+React/React DOM19 e styled-components6 são peers; react-hook-form7 é peer opcional, usado só por `@langyspace/ui/form`. Não há import obrigatório de CSS nem ThemeProvider externo. As ações leem o tema do ThemeProvider quando fornecido e usam o `theme` exportado como fallback. Os produtos usam o mesmo `theme` e o `GlobalStyles` da UI no próprio ThemeProvider. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
 
 ## Como o código deve ser lido
 
@@ -155,3 +155,15 @@ telefone brasileiro, com ou sem +55. O slot opcional phoneField substitui apenas
 consumidores que já conhecem país/telefone do cadastro. O consumidor controla esse valor, valida o
 formulário e fornece o campo com nome, rótulo e required. A biblioteca não persiste dados nem chama
 o provedor de pagamentos.
+
+## Contratos de tema 4.2
+
+A versão `4.2.0` corrige as receitas existentes de Button, ActionLink e IconButton para
+respeitarem `buttons`, `typography`, `radius` e demais tokens já públicos do ThemeProvider. A API de
+props/exports continua a mesma; o tema padrão é usado sem provider. As capturas e a origem do candidato estão em `docs/epics/themed-action-recipes/`. Esta versão incorpora a migração de autoria da UI 4.1.
+
+O tema acrescenta `theme.dialog` para apresentação suportada do Dialog e completa as
+receitas de ações, incluindo borda, hover, texto e foco. Use `createTheme` para criar um tema completo;
+ThemeProvider transmite seus valores também aos portais React. CSS de página, conteúdo, rotas e
+estado do domínio ficam no produto. Não sobrescreva classes privadas da biblioteca para alterar pele,
+fontes ou medidas de seus componentes. As chaves são aditivas; props existentes são preservadas e `closeIcon` é um slot opcional.

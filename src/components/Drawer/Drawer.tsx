@@ -11,7 +11,9 @@ export function Drawer(props: DrawerProps) {
           disabled={props.dismissal === 'blocked'}
           label={props.closeLabel}
           onClick={props.onClose}
-        />
+        >
+          {props.closeIcon}
+        </OverlayCloseButton>
       }
       kind="drawer"
     />

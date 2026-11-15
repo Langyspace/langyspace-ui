@@ -43,7 +43,15 @@ export async function inspectStory(page, scenario, tolerance) {
         })
       }
 
-      if (!document.querySelector('#storybook-root > *')) {
+      const hasVisibleModalPortal = Array.from(
+        document.querySelectorAll(
+          '.lsui-sc-modal-backdrop [aria-modal="true"]',
+        ),
+      ).some(isVisible)
+      if (
+        !document.querySelector('#storybook-root > *') &&
+        !hasVisibleModalPortal
+      ) {
         issues.push({ rule: 'render/empty-story' })
       }
 

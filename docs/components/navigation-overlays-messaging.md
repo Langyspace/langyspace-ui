@@ -264,3 +264,16 @@ Cuidados: action é texto/ícone da chamada, não um segundo botão. Teacher já
 ## Composição de teclado
 
 Um menu dentro de Dialog/Drawer trata Escape antes da camada: fecha o menu, devolve foco ao gatilho e mantém o painel. Tab escolhido pelo menu não é processado de novo pela armadilha de foco. Atualizar a coleção de ações com os mesmos IDs preserva o item habilitado que já tinha foco e usa o callback novo. Esses comportamentos têm regressões reproduzidas e testes de composição.
+
+### Temas do Dialog
+
+Use `createTheme({ dialog: { ... } })` dentro do ThemeProvider do produto para a apresentação do
+Dialog. O contrato inclui `widths`, `mobileBreakpoint`, `backdrop`, `panel`, `header`, `title`,
+`description`, `body` e `closeControl`. Valores omitidos preservam o tema padrão. O portal mantém o
+contexto React; não precisa de seletores globais nem conhecimento da marcação interna. A estrutura,
+foco, dismiss e conteúdo continuam nas props atuais. Tokens de `dialog` não alteram Drawer.
+
+Use `closeIcon` para conteúdo visual próprio do controle de fechar, preservando o botão semântico,
+a identificação por `closeLabel` e a política de dismiss. O padrão continua o mesmo quando omitido.
+Não transforme conteúdo (ícones/texto) em tokens CSS; tema controla medidas/cores/tipografia, slots
+controlam o conteúdo. O produto não precisa inspecionar a marcação privada para compor esse ícone.

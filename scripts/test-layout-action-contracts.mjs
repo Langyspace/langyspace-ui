@@ -12,6 +12,34 @@ try {
     height: 720,
     motion: 'normal',
   }
+  const root = '<div id="storybook-root"></div>'
+  const portalCases = [
+    ['empty story', root, true],
+    [
+      'hidden public portal',
+      `${root}<div class="lsui-sc-modal-backdrop" hidden><section aria-modal="true">Hidden dialog</section></div>`,
+      true,
+    ],
+    [
+      'unowned modal',
+      `${root}<section aria-modal="true">Unowned dialog</section>`,
+      true,
+    ],
+    [
+      'visible public portal',
+      `${root}<div class="lsui-sc-modal-backdrop"><section role="dialog" aria-modal="true">Visible dialog</section></div>`,
+      false,
+    ],
+  ]
+  for (const [name, markup, fails] of portalCases) {
+    await page.setContent(markup)
+    const report = await inspectStory(page, scenario, 2)
+    assert.equal(
+      report.issues.some((issue) => issue.rule === 'render/empty-story'),
+      fails,
+      name,
+    )
+  }
   const cases = [
     ['boxed-short', 'button', 19, true],
     ['boxed-valid', 'button', 40, false],
