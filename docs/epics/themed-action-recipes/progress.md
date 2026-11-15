@@ -99,7 +99,8 @@ This does not invalidate the successful qualification of the release source or t
 ESM/SSR/browser smoke and product parity. The actual distributed archive is identified by the fixed
 checksum above, rather than by the rejected second archive.
 
-Landing PR12 production commit1b710f1 is live as immutable Hosting version0113ff737a521547,
-verified at both langy.space and the Firebase default domain with zero browser page errors at
-390/1440. The consumer production receipt is in its epic. Other portals retain their independent
-release pins. Canonical UI checkout is clean main. Visual gate review: accepted by human.
+Landing PR12 introduced the migration in commit1b710f1, initially promoted as version0113ff737a521547.
+The final consumer buildb2f255f aligned all14 CI variables and is verified live as version63ffdb14b285cb96
+at both langy.space and the Firebase default domain, with zero browser page errors at390/1440.
+Current build, environment and isolated Ads proof are owned by the landing epic production receipt.
+Other portals retain their independent release pins. Canonical UI checkout is clean main. Visual gate review: accepted by human.
