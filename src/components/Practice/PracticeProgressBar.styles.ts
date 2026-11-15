@@ -10,12 +10,10 @@ export const Track = styled.div.withConfig({
   background: ${theme.colors.palette.neutral[200]};
 `
 
-// Width changes continuously, so it is an inline style instead of a new class per value.
-export const Fill = styled.div.attrs<{ $progress: number }>(
-  ({ $progress }) => ({
-    style: { width: `${$progress * 100}%` },
-  }),
-)`
+export const Fill = styled.div<{ $progress: number }>`
+  &&&& {
+    width: ${({ $progress }) => $progress * 100}%;
+  }
   height: 100%;
   border-radius: inherit;
   background: ${theme.colors.accent.primary};

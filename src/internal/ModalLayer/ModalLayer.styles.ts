@@ -1,6 +1,24 @@
-import { css, styled } from 'styled-components'
+import { createGlobalStyle, css, styled } from 'styled-components'
 import type { OverlayKind, OverlaySize } from './ModalLayer.types'
 import { theme } from '../../foundations/theme/theme'
+import { cssIdSelector } from '../cssIdSelector'
+import { modalScrollLockAttribute } from './stack'
+
+interface ModalPresentationStyleProps {
+  $backdropId: string
+  $order: number | null
+}
+
+// Mounted only in the public client portal. Ordinary host inline overflow stays untouched.
+export const Presentation = createGlobalStyle<ModalPresentationStyleProps>`
+  body[${modalScrollLockAttribute}='locked'] {
+    overflow: hidden !important;
+  }
+
+  ${({ $backdropId }) => cssIdSelector($backdropId)} {
+    z-index: ${({ $order }) => theme.zIndex.overlay + ($order ?? 0) * 2};
+  }
+`
 
 const dialogWidths = {
   lg: '42.5rem',

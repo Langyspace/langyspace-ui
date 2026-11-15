@@ -1,0 +1,19 @@
+{
+  "review": "4.1.0 minor tooling addition; public component signatures unchanged",
+  "publicValues": 145,
+  "publicTypes": 225,
+  "publicEntrypointsAndPropsSourceUnchanged": true,
+  "changedPrivateDeclarations": [
+    "dist/components/ActionMenu/ActionMenu.styles.d.ts",
+    "dist/components/Calendar/ScheduleCalendar.styles.d.ts",
+    "dist/components/Charts/GroupedBarChart.styles.d.ts",
+    "dist/components/Flashcard/FlashcardSwiper.styles.d.ts",
+    "dist/components/Message/MessageComposer.styles.d.ts",
+    "dist/components/Practice/PracticeProgressBar.styles.d.ts",
+    "dist/internal/ModalLayer/ModalLayer.styles.d.ts",
+    "dist/internal/ModalLayer/stack.d.ts"
+  ],
+  "addedPrivateDeclarations": ["dist/internal/cssIdSelector.d.ts"],
+  "stylingAuditApi": "additive Node-only auditStyling/defineStylingAuditConfig and optional TypeScript tooling peer",
+  "decision": "Refresh declaration hashes for reviewed internal changes; retain all public exports and props."
+}

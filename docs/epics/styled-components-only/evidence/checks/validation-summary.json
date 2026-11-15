@@ -1,0 +1,66 @@
+{
+  "node": "24.16.0",
+  "react": "19.2.8",
+  "styledComponents": "6.5.3",
+  "unit": {
+    "distinctPassed": 62,
+    "initial": {
+      "passed": 57,
+      "failed": 6
+    },
+    "unchangedPassesReused": 57,
+    "replayedInteractionCases": 4,
+    "newBlankVectorCase": 1,
+    "finalSwiperReplay": {
+      "passed": 3,
+      "newDistinctCases": 0
+    },
+    "cssRequirementsMovedToBrowser": 6
+  },
+  "browser": {
+    "distinctPassed": 8,
+    "initial": {
+      "passed": 5,
+      "failed": 1,
+      "reason": "New driver expected reposition on resize; native behavior closes. Corrected only driver."
+    },
+    "replayedMenuCase": 1,
+    "newCompositionCases": 2,
+    "ciEntrypoint": "scripts/test-layout-action-contracts.mjs (existing test:layout)"
+  },
+  "static": {
+    "lintFiles": 75,
+    "errors": 0,
+    "warnings": 0,
+    "typecheckPassed": true,
+    "stylingAuditFiles": 654,
+    "stylingViolations": 0,
+    "catalogAttributes": 42,
+    "catalogCssProperties": 99,
+    "runtimeViolationsConverted": 10
+  },
+  "capture": {
+    "baseline": 132,
+    "initialAfter": 132,
+    "finalOwnerRecapture": 46,
+    "reused": 86,
+    "finalPairs": 132,
+    "pageErrors": 0,
+    "strictTextTagsGeometryComputedFocusInertScrollEqual": true,
+    "pngExact": 126,
+    "pngRasterDifferences": 6,
+    "maxChannelDelta": 2
+  },
+  "notRunByWorker": [
+    "full unit/coverage/Storybook test suites",
+    "API/package/bundle release gates",
+    "full validate:ui",
+    "push/CI/deploy"
+  ],
+  "limitations": [
+    "Public client-only portal SSR path checked; private multi-instance GlobalStyle SSR not claimed.",
+    "Modal lock cannot override preexisting host inline important overflow.",
+    "Ordinary consumer class composition checked; arbitrary IDs/important outside that promise.",
+    "External inline overrides of private Swiper --tx/--ty/--tr channels are not claimed equivalent; four actual Student/Teacher call sites have no conflict."
+  ]
+}

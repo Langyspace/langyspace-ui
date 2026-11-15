@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-A versão atual é a **4.0.0**, com contratos do React 19, tema compartilhado e props padronizadas. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+A versão **4.1.0** mantém os contratos do React 19, o tema compartilhado e as props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Instale o artefato imutável da release 4.0.0:
+Após a publicação e conferência do checksum, instale o artefato imutável da release 4.1.0:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.0.0/langyspace-ui-4.0.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.1.0/langyspace-ui-4.1.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
@@ -65,6 +65,10 @@ O [índice de componentes](docs/components/index.md) liga cada export ao guia, �
 Não unifique contratos só porque se parecem. MetricSummary e StatCard, por exemplo, têm hierarquias diferentes. Não mantenha um export sem responsabilidade ou uso comprovado; remoções e mudanças incompatíveis têm migração e SemVer explícitos.
 
 ## Estilos e contexto
+
+A apresentação autoral usa definições tagged de styled-components. `pnpm run test:styling-system` verifica também as stories e os fixtures vivos do catálogo: CSS/Sass/Less autoral, style em JSX/HTML, attrs de estilo e escritas diretas de CSS no DOM bloqueiam a entrega. Imports de folhas de fontes do pacote Fontsource são permitidos. HTML gerado pelo styled-components exige manifesto com origem, commit e hashes conferidos; marcar uma pasta como vendor não é uma exceção.
+
+Nos produtos, execute `langyspace-styling-audit scripts/styling-system.audit.config.mjs` como parte da qualidade de código. A ferramenta usa TypeScript >=5.9 e <7 como peer opcional; o runtime dos componentes não carrega TypeScript. O CSS final gerado pelo styled-components continua sendo entregue ao navegador normalmente.
 
 Tokens e receitas existentes concentram valores compartilhados. Geometria contextual pode permanecer local quando padronizá-la mudaria a interface. Não aproximar cores, trocar px por rem ou acrescentar uma prop para cada diferença de layout.
 

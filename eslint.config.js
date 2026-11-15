@@ -166,6 +166,7 @@ export default tseslint.config(
       'scripts/audit-storybook-layout.mjs',
       'scripts/layout-audit/**/*.mjs',
       'scripts/check-react-composition.mjs',
+      'docs/epics/styled-components-only/capture-library.mjs',
     ],
     languageOptions: {
       globals: {

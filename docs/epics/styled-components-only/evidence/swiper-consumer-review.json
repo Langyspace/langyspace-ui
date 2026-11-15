@@ -1,0 +1,47 @@
+{
+  "readOnly": true,
+  "reviewedCallSites": 4,
+  "noConflictingInlineStyleOrSpreadAtCallSites": true,
+  "noExternalAuthoringOfInternalVectorVariablesInSrc": true,
+  "loadingWrapperDeclarations": ["cursor:default", "animation:none"],
+  "behavioralParityEvidence": [
+    "Swiper vector unit cases",
+    "normal entering/exiting and reduced-motion390/1440 pairs",
+    "ordinary styled composition and blank-vector browser case"
+  ],
+  "boundary": "--tx/--ty/--tr are internal animation channels. Native HTML style remains passthrough for nonconflicting props; external inline overrides of internal channels are not supported or claimed equivalent. Full consumer candidate adoption gates are coordinated separately.",
+  "repositories": [
+    {
+      "repository": "langyspace-student",
+      "headAtRead": "bebf66034c7d711d4c97130feedec64ca2e869f7",
+      "files": [
+        {
+          "path": "src/components/features/portal/FlashcardsV2.tsx",
+          "sha256": "e8565cbeb940d0b1b797ce5600fe2e6c27c5f1ab3e7e6fb9cbed1090c92e7d7a"
+        },
+        {
+          "path": "src/components/features/portal/FlashcardsV2.styles.ts",
+          "sha256": "9c166c9982810fd8b8802e1d49fb9dbfc1cfa4eb2a46fb204e215ce3f0569749"
+        }
+      ]
+    },
+    {
+      "repository": "langyspace-teacher",
+      "headAtRead": "bcb07867146274213d3b85a95e9f5772b31f7870",
+      "files": [
+        {
+          "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx",
+          "sha256": "e8b17bf6600473703e8c7076390d4c922f2a3c57753ca70afe86697eeb243c65"
+        },
+        {
+          "path": "src/pages/StudentLearningPreview/components/StudentFlashcardSessionSkeleton/index.tsx",
+          "sha256": "2054da52e834465dfd5f18b3b88b8f95f1a7ba4c48817ad26ac16750e88c6476"
+        },
+        {
+          "path": "src/pages/StudentLearningPreview/styles.ts",
+          "sha256": "5432aa9a4c55da1cd95e1eb810e7f7cdda1a87b47aa8f55a0e36b44ce651bf89"
+        }
+      ]
+    }
+  ]
+}

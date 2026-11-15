@@ -1,7 +1,8 @@
+import * as StoryLayout from './FlashcardFlipButton.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardFlipButton } from '../../../src/components/Flashcard/FlashcardFlipButton'
 import { FlashcardFrame } from '../../../src/components/Flashcard/FlashcardFrame'
-import { FlashcardFront } from '../../../src/components/Flashcard/FlashcardFront'
+
 import { FlashcardWord } from '../../../src/components/Flashcard/FlashcardWord'
 
 const meta = {
@@ -11,10 +12,10 @@ const meta = {
   args: { label: 'Virar card', onClick: () => undefined },
   render: (args) => (
     <FlashcardFrame>
-      <FlashcardFront style={{ height: '24rem' }}>
+      <StoryLayout.FlipButtonPreview>
         <FlashcardFlipButton {...args} />
         <FlashcardWord phonetic="/bɜːrd/">bird</FlashcardWord>
-      </FlashcardFront>
+      </StoryLayout.FlipButtonPreview>
     </FlashcardFrame>
   ),
 } satisfies Meta<typeof FlashcardFlipButton>

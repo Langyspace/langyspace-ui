@@ -1,0 +1,217 @@
+{
+  "control": "Every field in original before receipt compared as recorded; newly added screenshot/repeated-read metadata has no original counterpart. No existing CSS/geometry/focus field is omitted or normalized.",
+  "pairs": 10,
+  "allOriginalFieldsExact": true,
+  "cases": [
+    {
+      "file": "drawer-open-1440.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "drawer-open-390.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-menu-1440.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-menu-390.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-nested-1440.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-nested-390.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-open-1440.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-open-390.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-reopen-1440.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    },
+    {
+      "file": "modal-reopen-390.json.gz",
+      "originalFieldsCompared": [
+        "text",
+        "overflow",
+        "bodyComputedOverflow",
+        "bodyInlineOverflow",
+        "appInert",
+        "layerInert",
+        "focused",
+        "scroll",
+        "nodes"
+      ],
+      "addedReadMetadata": [
+        "screenshot",
+        "metricsBeforeScreenshot",
+        "metricsRepeat"
+      ],
+      "differenceCount": 0,
+      "differences": []
+    }
+  ]
+}

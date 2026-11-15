@@ -60,7 +60,7 @@ describe('Drawer', () => {
       ).toBe(false)
     })
 
-    expect(document.body.style.overflow).toBe('hidden')
+    // The identical computed CSS assertion runs in test/browser/styled-only.browser.tsx.
 
     await user.keyboard('{Escape}')
 

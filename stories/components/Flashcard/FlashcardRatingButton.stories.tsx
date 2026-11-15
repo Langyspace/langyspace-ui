@@ -1,3 +1,4 @@
+import * as StoryLayout from './FlashcardRatingButton.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardRatingButton } from '../../../src/components/Flashcard/FlashcardRatingButton'
 import { FlashcardCanvas } from '../../../.storybook/flashcard-fixtures'
@@ -10,9 +11,9 @@ const meta = {
   decorators: [
     (Story) => (
       <FlashcardCanvas>
-        <div style={{ maxWidth: '8rem' }}>
+        <StoryLayout.RatingPreview>
           <Story />
-        </div>
+        </StoryLayout.RatingPreview>
       </FlashcardCanvas>
     ),
   ],

@@ -1,0 +1,268 @@
+RUN  v4.1.11 <repo>
+
+ ❯ |unit| test/components/ActionMenu/ActionMenu.test.tsx (14 tests | 1 failed) 1572ms
+   × reuses the menu class while updating private position rules and removes its rule on close 1020ms
+ ❯ |unit| test/components/Dialog/Dialog.test.tsx (4 tests | 1 failed) 187ms
+     × names the layer, traps focus and restores the trigger after Escape 156ms
+ ❯ |unit| test/internal/ModalLayer/StyledPresentation.test.tsx (2 tests | 1 failed) 131ms
+   × keeps host inline overflow and marker intact through nested layers and cleanup 125ms
+ ❯ |unit| test/internal/ModalLayer/Hydration.test.tsx (2 tests | 2 failed) 132ms
+     × activates an initially open server-rendered layer and restores document state on unmount 111ms
+     × activates an initially open server-rendered layer and restores document state on unmount 20ms
+ ❯ |unit| test/components/Drawer/Drawer.test.tsx (2 tests | 1 failed) 154ms
+     × keeps only the top nested layer interactive and preserves the document lock 133ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 6 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |unit| test/components/ActionMenu/ActionMenu.test.tsx > reuses the menu class while updating private position rules and removes its rule on close
+AssertionError: expected 'auto' to be '62px' // Object.is equality
+
+Ignored nodes: comments, script, style
+<html>
+  <head />
+  <body>
+    <div>
+      <div
+        class="lsui-sc-action-menu jUEnWu"
+      >
+        <button
+          aria-controls="_r_o_"
+          aria-expanded="true"
+          aria-haspopup="menu"
+          aria-label="Menu móvel"
+          class="lsui-sc-pressable bPLbKG lsui-sc-icon-button kdLuma"
+          data-size="md"
+          id="_r_p_"
+          type="button"
+        >
+          <span
+            class="lsui-sc-icon hANSTo"
+          >
+            <svg
+              aria-hidden="true"
+              height="18"
+              viewBox="0 0 18 18"
+              width="18"
+            >
+              <circle
+                cx="3.5"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+              <circle
+                cx="9"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+              <circle
+                cx="14.5"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div
+      aria-labelledby="_r_p_"
+      class="sc-bdvwhi kqhOgi"
+      data-align="end"
+      data-placement="bottom"
+      data-ui-action-menu="true"
+      id="_r_o_"
+      role="menu"
+      tabindex="-1"
+    >
+      <div
+        role="none"
+      >
+        <button
+          class="lsui-sc-pressable bPLbKG sc-gsDMPd dGBDzW"
+          data-action-menu-item-id="open"
+          role="menuitem"
+          tabindex="0"
+          type="button"
+        >
+          <span
+            class="lsui-sc-icon hANSTo"
+          >
+            <svg
+              data-testid="item-icon"
+            />
+          </span>
+          <span
+            class="sc-dkPwfY fLgReC"
+          >
+            Abrir cadastro
+          </span>
+        </button>
+      </div>
+      <div
+        role="none"
+      >
+        <button
+          aria-disabled="true"
+          class="lsui-sc-pressable bPLbKG sc-gsDMPd dGBDzW"
+          data-action-menu-item-id="disabled"
+          disabled=""
+          role="menuitem"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="sc-dkPwfY fLgReC"
+          >
+            Ação indisponível
+          </span>
+        </button>
+      </div>
+      <div
+        role="none"
+      >
+        <button
+          aria-busy="true"
+          aria-disabled="true"
+          class="lsui-sc-pressable bPLbKG sc-gsDMPd dGBDzW"
+          data-action-menu-item-id="loading"
+          data-loading="true"
+          disabled=""
+          role="menuitem"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="lsui-sc-icon hANSTo"
+          >
+            <span
+              aria-hidden="true"
+              class="lsui-sc-spinner iLuBGt"
+            />
+          </span>
+          <span
+            class="sc-dkPwfY fLgReC"
+          >
+            Atualizando registro
+          </span>
+        </button>
+      </div>
+      <div
+        role="none"
+      >
+        <div
+          class="sc-hKwBjT kHxPwP"
+          role="separator"
+        />
+        <button
+          class="lsui-sc-pressable bPLbKG sc-gsDMPd cAEbRf"
+          data-action-menu-item-id="archive"
+          role="menuitem"
+          tabindex="-1"
+          type="button"
+        >
+          <span
+            class="sc-dkPwfY fLgReC"
+          >
+            Arquivar registro
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>...
+
+Expected: "62px"
+Received: "auto"
+
+ ❯ test/components/ActionMenu/ActionMenu.test.tsx:574:61
+    572|   try {
+    573|     const menu = await screen.findByRole('menu')
+    574|     await waitFor(() => expect(getComputedStyle(menu).left).toBe('62px…
+       |                                                             ^
+    575|     const className = menu.className
+    576|     const positionRules = () =>
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/config.js:47:12
+ ❯ checkCallback node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/wait-for.js:124:77
+ ❯ Timeout.checkRealTimersCallback node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/wait-for.js:118:16
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/6]⎯
+
+ FAIL  |unit| test/components/Dialog/Dialog.test.tsx > Dialog > names the layer, traps focus and restores the trigger after Escape
+AssertionError: expected '' to be 'hidden' // Object.is equality
+
+- Expected
++ Received
+
+- hidden
+
+ ❯ test/components/Dialog/Dialog.test.tsx:60:54
+     58|       'Revise os dados antes de continuar.',
+     59|     )
+     60|     expect(getComputedStyle(document.body).overflow).toBe('hidden')
+       |                                                      ^
+     61|
+     62|     screen.getByRole('button', { name: 'Confirmar' }).focus()
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/6]⎯
+
+ FAIL  |unit| test/components/Drawer/Drawer.test.tsx > Drawer > keeps only the top nested layer interactive and preserves the document lock
+AssertionError: expected '' to be 'hidden' // Object.is equality
+
+- Expected
++ Received
+
+- hidden
+
+ ❯ test/components/Drawer/Drawer.test.tsx:63:54
+     61|     })
+     62|
+     63|     expect(getComputedStyle(document.body).overflow).toBe('hidden')
+       |                                                      ^
+     64|
+     65|     await user.keyboard('{Escape}')
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/6]⎯
+
+ FAIL  |unit| test/internal/ModalLayer/Hydration.test.tsx > dialog hydration > activates an initially open server-rendered layer and restores document state on unmount
+ FAIL  |unit| test/internal/ModalLayer/Hydration.test.tsx > drawer hydration > activates an initially open server-rendered layer and restores document state on unmount
+AssertionError: expected '' to be 'hidden' // Object.is equality
+
+- Expected
++ Received
+
+- hidden
+
+ ❯ test/internal/ModalLayer/Hydration.test.tsx:31:56
+     29|       expect(screen.getByRole('dialog', { name: 'Ajuda' })).toBeVisibl…
+     30|       expect(appRoot.inert).toBe(true)
+     31|       expect(getComputedStyle(document.body).overflow).toBe('hidden')
+       |                                                        ^
+     32|       expect(screen.getByRole('button', { name: 'Fechar' })).toHaveFoc…
+     33|     } finally {
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/6]⎯
+
+ FAIL  |unit| test/internal/ModalLayer/StyledPresentation.test.tsx > keeps host inline overflow and marker intact through nested layers and cleanup
+AssertionError: expected 'scroll' to be 'hidden' // Object.is equality
+
+Expected: "hidden"
+Received: "scroll"
+
+ ❯ test/internal/ModalLayer/StyledPresentation.test.tsx:40:54
+     38|   try {
+     39|     expect(document.body.style.overflow).toBe('scroll')
+     40|     expect(getComputedStyle(document.body).overflow).toBe('hidden')
+       |                                                      ^
+     41|     expect(document.body.getAttribute(modalScrollLockAttribute)).toBe(…
+     42|     const layers = [
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[5/6]⎯
+
+
+ Test Files  5 failed | 7 passed (12)
+      Tests  6 failed | 57 passed (63)
+   Start at  12:22:39
+   Duration  13.63s (transform 311ms, setup 1.19s, import 807ms, tests 5.46s, environment 5.02s)

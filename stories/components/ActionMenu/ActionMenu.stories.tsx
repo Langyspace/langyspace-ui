@@ -1,3 +1,4 @@
+import * as StoryLayout from './ActionMenu.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, waitFor, within } from 'storybook/test'
 import { ActionMenu } from '../../../src/components/ActionMenu/ActionMenu'
@@ -63,42 +64,34 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-const centered = {
-  alignItems: 'center',
-  display: 'flex',
-  justifyContent: 'center',
-  minHeight: '100vh',
-  padding: '2rem',
-} as const
-
 export const Default: Story = {
   tags: ['visual-review'],
   render: (args) => (
-    <div style={centered}>
+    <StoryLayout.MenuStage>
       <ActionMenu {...args} defaultOpen />
-    </div>
+    </StoryLayout.MenuStage>
   ),
 }
 
 export const TonesAndDisabled: Story = {
   tags: ['visual-review'],
   render: (args) => (
-    <div style={centered}>
+    <StoryLayout.MenuStage>
       <ActionMenu
         {...args}
         defaultOpen
         items={keyboardItems}
         triggerLabel="Ações com estados"
       />
-    </div>
+    </StoryLayout.MenuStage>
   ),
 }
 
 export const InteractiveKeyboard: Story = {
   render: (args) => (
-    <div style={centered}>
+    <StoryLayout.MenuStage>
       <ActionMenu {...args} items={keyboardItems} />
-    </div>
+    </StoryLayout.MenuStage>
   ),
   play: async ({ canvasElement, userEvent }) => {
     const body = within(canvasElement.ownerDocument.body)
@@ -128,29 +121,21 @@ export const InteractiveKeyboard: Story = {
 export const NarrowViewportFlip: Story = {
   tags: ['layout-boundary', 'visual-review'],
   render: (args) => (
-    <div
-      style={{
-        alignItems: 'flex-end',
-        display: 'flex',
-        justifyContent: 'flex-end',
-        minHeight: '100vh',
-        padding: '1rem',
-      }}
-    >
+    <StoryLayout.EdgeMenuStage>
       <ActionMenu
         {...args}
         align="end"
         defaultOpen
         triggerLabel="Ações no limite"
       />
-    </div>
+    </StoryLayout.EdgeMenuStage>
   ),
 }
 
 export const Loading: Story = {
   tags: ['visual-review'],
   render: (args) => (
-    <div style={centered}>
+    <StoryLayout.MenuStage>
       <ActionMenu
         {...args}
         defaultOpen
@@ -170,14 +155,14 @@ export const Loading: Story = {
         ]}
         triggerLabel="Ações em processamento"
       />
-    </div>
+    </StoryLayout.MenuStage>
   ),
 }
 
 export const StressLongLabels: Story = {
   tags: ['layout-boundary', 'visual-review'],
   render: (args) => (
-    <div style={centered}>
+    <StoryLayout.MenuStage>
       <ActionMenu
         {...args}
         align="start"
@@ -201,6 +186,6 @@ export const StressLongLabels: Story = {
         ]}
         triggerLabel="Mais ações para um registro com nome muito longo"
       />
-    </div>
+    </StoryLayout.MenuStage>
   ),
 }

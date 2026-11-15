@@ -1,3 +1,4 @@
+import * as StoryLayout from './OperationalList.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { styled } from 'styled-components'
@@ -448,9 +449,9 @@ export const Empty: Story = {
             <div>
               <Heading>Nenhum registro neste recorte</Heading>
               <Muted>Remova os filtros ou atualize a busca.</Muted>
-              <div style={{ marginTop: theme.spacing[4] }}>
+              <StoryLayout.EmptyListActions>
                 <Button variant="secondary">Limpar filtros</Button>
-              </div>
+              </StoryLayout.EmptyListActions>
             </div>
           }
           footer={<Muted>0 resultados</Muted>}

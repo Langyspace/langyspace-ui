@@ -1,0 +1,135 @@
+{
+  "kind": "ui-library-pr-viewport-evidence",
+  "sourceBefore": "be8a31600a548f6b3fb828c650163341e7d42009",
+  "sourceAfter": "f3a571214f6dbc2285c3e4004b2cbb52927b6e28",
+  "renderedSourceUnchangedSince": "e032ced",
+  "baselineLoader": "Git blob/SHA fail-closed; every requested src module must exist in baseline Git, with no checkout fallback.",
+  "beforeLoadedModules": 37,
+  "afterLoadedModules": 38,
+  "fixtureOrigin": "Current sanitized test fixture, identical in both phases; absent from baseline Git. Its product component imports are frozen separately.",
+  "fixtures": [
+    {
+      "file": "test/fixtures/styled-only/Runtime.tsx",
+      "sha256": "08a0b11b0f16f382e3942280843840d09dc1364457b1d4d959892e14b75b659f"
+    },
+    {
+      "file": "test/fixtures/styled-only/Runtime.styles.ts",
+      "sha256": "0fe0fad3034520dccd5d10334d42992bd3fbd5e03e55fd7b0535a5eccc3e9b59"
+    }
+  ],
+  "versions": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "styled-components": "6.5.3",
+    "@fontsource/montserrat": "5.2.8"
+  },
+  "fontAssets": [
+    {
+      "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-400-normal.woff2",
+      "sha256": "e66bcd2761ab6924b25ce70dafe10e57a39193c4fea1516730bd9cb5240af6c8"
+    },
+    {
+      "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2",
+      "sha256": "2b53300fb9471520df2f4905847fb7a209879b2029ae893c05c6ee346b1320cd"
+    },
+    {
+      "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2",
+      "sha256": "d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83"
+    },
+    {
+      "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2",
+      "sha256": "f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371"
+    }
+  ],
+  "staticRoots": {
+    "before": "/Users/margaridamartins/langyspace-ui/.local/styled-only/storybook-before",
+    "after": "/Users/margaridamartins/langyspace-ui/.local/styled-only/storybook-final",
+    "compiledFixtureAvailable": false
+  },
+  "baselineOriginControl": "10/10: every original raw receipt field reproduced exactly, with new repeated-read/screenshot metadata separately declared.",
+  "viewportPairs": 10,
+  "viewportHeight": 1100,
+  "pngExact": 10,
+  "allRawTextTagsGeometryCssFocusInertScrollExact": true,
+  "intendedInlineOwnership": "hidden before / auto after; computed hidden in both phases, in all three raw reads.",
+  "originalRawPairsPreserved": 132,
+  "selectedPrPairs": 132,
+  "selectionExactPng": 129,
+  "selectionRasterResidualPairs": 3,
+  "selectedManifest": "selection-manifest.json",
+  "comparison": "comparison.json",
+  "snapshots": "snapshots.json",
+  "beforeAttempts": [
+    {
+      "report": "report-1794754846779.json",
+      "cases": 9,
+      "failures": [
+        {
+          "id": "modal-open-390",
+          "message": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1').first() to be visible\u001b[22m\n"
+        }
+      ],
+      "pageErrors": [
+        {
+          "id": "modal-open-390",
+          "message": "Cannot read properties of null (reading 'useContext')"
+        }
+      ]
+    },
+    {
+      "report": "report-1794754936684.json",
+      "cases": 0,
+      "failures": [
+        {
+          "id": "modal-open-390",
+          "message": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1').first() to be visible\u001b[22m\n"
+        }
+      ],
+      "pageErrors": [
+        {
+          "id": "modal-open-390",
+          "message": "Cannot read properties of null (reading 'useContext')"
+        }
+      ]
+    },
+    {
+      "report": "report-1794755045792.json",
+      "cases": 1,
+      "failures": [],
+      "pageErrors": [],
+      "fixtureReadiness": {
+        "errors": [
+          {
+            "message": "Cannot read properties of null (reading 'use')",
+            "stack": "TypeError: Cannot read properties of null (reading 'use')\n    at exports.use (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react.js?v=6a97ad4f:695:30)\n    at useCompoundControlContext (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/src/internal/CompoundControlContext.ts:4:9)\n    at useFieldControl (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/src/internal/useFieldControl.ts:6:19)\n    at TextareaInput (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/src/components/Form/TextareaInput.tsx:6:16)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:13045:12)\n    at renderWithHooks (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:4392:19)\n    at updateFunctionComponent (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:5748:16)\n    at beginWork (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:6319:20)\n    at runWithFiberInDEV (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:1030:66)\n    at performUnitOfWork (http://127.0.0.1:56547/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/before/deps/react-dom_client.js?v=743a3793:8608:92)"
+          }
+        ],
+        "reloads": 1,
+        "ready": true
+      }
+    }
+  ],
+  "afterAttempts": [
+    {
+      "report": "report-1794755106529.json",
+      "cases": 10,
+      "failures": [],
+      "pageErrors": [],
+      "fixtureReadiness": {
+        "errors": [
+          {
+            "message": "Cannot read properties of null (reading 'useContext')",
+            "stack": "TypeError: Cannot read properties of null (reading 'useContext')\n    at exports.useContext (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react.js?v=a902c619:706:22)\n    at http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/styled-components.js?v=a902c619:1440:137\n    at y (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/styled-components.js?v=a902c619:1486:4)\n    at Object.react_stack_bottom_frame (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:13045:12)\n    at renderWithHooks (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:4392:19)\n    at updateForwardRef (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:5575:16)\n    at beginWork (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:6383:21)\n    at runWithFiberInDEV (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:1030:66)\n    at performUnitOfWork (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:8608:92)\n    at workLoopSync (http://127.0.0.1:56571/@fs/Users/margaridamartins/langyspace-ui/.local/styled-only/pr-viewport-vite-cache/after/deps/react-dom_client.js?v=85ba177b:8504:37)"
+          }
+        ],
+        "reloads": 1,
+        "ready": true
+      }
+    }
+  ],
+  "readinessLimit": "Cold Vite source-fixture render had React dispatcher errors; both stacks/errors and two initial failed before attempts are preserved. An explicit preflight requires successful heading readiness after at most one reload; actual capture contexts had zero errors after readiness. No product cause is inferred.",
+  "serverAndBrowserClosed": true,
+  "noRuntimePolicyPackageOrDependencyChanges": true,
+  "noRebuildOrFull132Recapture": true,
+  "visualReview": "pending human"
+}

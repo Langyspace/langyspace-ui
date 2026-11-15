@@ -1,3 +1,4 @@
+import * as StoryLayout from './flashcard-fixtures.styles'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import {
   Button,
@@ -137,7 +138,7 @@ export function FlashcardSessionExample({
           </FlashcardFlip>
         </FlashcardDeck>
       </FlashcardStage>
-      <footer style={{ display: 'flex', flexDirection: 'column' }}>
+      <StoryLayout.FlashcardSessionFooter>
         {flipped ? (
           <Button ref={rating} onClick={() => setFlipped(false)}>
             Próximo cartão
@@ -147,7 +148,7 @@ export function FlashcardSessionExample({
             Toque no cartão para ver a tradução
           </FlashcardFlipHint>
         )}
-      </footer>
+      </StoryLayout.FlashcardSessionFooter>
     </>
   )
 }

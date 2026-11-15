@@ -1,0 +1,149 @@
+RUN  v4.1.11 <repo>
+
+ ❯ |styled-browser (chromium)| test/browser/styled-only.browser.tsx (6 tests | 1 failed) 1307ms
+   × reuses the menu class while updating private position rules and removes its rule on close 1153ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  |styled-browser (chromium)| test/browser/styled-only.browser.tsx > reuses the menu class while updating private position rules and removes its rule on close
+AssertionError: expected '' to be '82px' // Object.is equality
+
+Ignored nodes: comments, script, style
+<html
+  lang="en"
+>
+  <head>
+
+
+
+
+
+
+
+
+
+
+    <meta
+      charset="UTF-8"
+    />
+
+
+    <link
+      href="/__vitest__/favicon.svg"
+      rel="icon"
+      type="image/svg+xml"
+    />
+
+
+    <meta
+      content="width=device-width, initial-scale=1.0"
+      name="viewport"
+    />
+
+
+    <title>
+      Vitest Browser Tester
+    </title>
+
+
+
+
+    <link
+      crossorigin=""
+      href="/__vitest_browser__/utils-BsFW67Gk.js"
+      rel="modulepreload"
+    />
+
+
+
+
+
+
+
+
+
+
+  </head>
+
+
+  <body
+    style=""
+  >
+
+
+
+
+    <div>
+      <div
+        class="lsui-sc-action-menu jUEnWu"
+      >
+        <button
+          aria-expanded="false"
+          aria-haspopup="menu"
+          aria-label="Menu móvel"
+          class="lsui-sc-pressable bPLbKG lsui-sc-icon-button kdLuma"
+          data-size="md"
+          id="_r_b_"
+          type="button"
+        >
+          <span
+            class="lsui-sc-icon hANSTo"
+          >
+            <svg
+              aria-hidden="true"
+              height="18"
+              viewBox="0 0 18 18"
+              width="18"
+            >
+              <circle
+                cx="3.5"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+              <circle
+                cx="9"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+              <circle
+                cx="14.5"
+                cy="9"
+                fill="currentColor"
+                r="1.25"
+              />
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>...
+
+Failure screenshot:
+  - test/browser/__screenshots__/styled-only.browser.tsx/reuses-the-menu-class-while-updating-private-position-rules-and-removes-its-rule-on-close-1.png
+
+- Expected
++ Received
+
+- 82px
+
+ ❯ test/browser/styled-only.browser.tsx:308:44
+    306|       fireEvent.resize(window)
+    307|       await waitFor(() =>
+    308|         expect(getComputedStyle(menu).left).toBe(`${left - 188}px`),
+       |                                            ^
+    309|       )
+    310|       expect(menu.className).toBe(className)
+ ❯ runWithExpensiveErrorDiagnosticsDisabled node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/@testing-library/dom.esm.js:349:11
+ ❯ checkCallback node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/@testing-library/dom.esm.js:1097:23
+ ❯ checkRealTimersCallback node_modules/.pnpm/@testing-library+dom@10.4.1/node_modules/@testing-library/dom/dist/@testing-library/dom.esm.js:1091:15
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  1 failed | 5 passed (6)
+   Start at  13:15:29
+   Duration  3.05s (transform 0ms, setup 131ms, import 82ms, tests 1.31s, environment 0ms)

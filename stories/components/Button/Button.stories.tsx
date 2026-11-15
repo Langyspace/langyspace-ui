@@ -1,3 +1,4 @@
+import * as StoryLayout from './Button.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import { ArrowIcon } from '../../../.storybook/fixtures'
@@ -102,9 +103,9 @@ export const Stress: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ margin: '0 auto', maxWidth: 280, width: '100%' }}>
+      <StoryLayout.ButtonStressPreview>
         <Story />
-      </div>
+      </StoryLayout.ButtonStressPreview>
     ),
   ],
 }

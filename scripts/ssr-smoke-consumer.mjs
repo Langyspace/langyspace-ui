@@ -997,10 +997,24 @@ if (!collectedCss.includes('border-radius:999px')) {
   throw new Error('shared_button_declarations_missing_from_collected_ssr_css')
 }
 
-if (
-  !markup.includes('lsui-sc-practice-progress-bar') ||
-  !markup.includes('width:37.5%')
-) {
+const progressFills = [
+  ...markup.matchAll(
+    /<div[^>]*class="[^"]*\blsui-sc-practice-progress-bar\b[^"]*"[^>]*><div[^>]*class="([^"]+)"[^>]*><\/div><\/div>/g,
+  ),
+]
+const cssRules = [...collectedCss.matchAll(/([^{}]+)\{([^{}]*)\}/g)]
+const hasProgressWidth = progressFills.some(([, classes]) =>
+  classes
+    .split(' ')
+    .some((name) =>
+      cssRules.some(
+        ([, selector, declarations]) =>
+          selector.match(/\.[\w-]+/g)?.includes(`.${name}`) &&
+          /(?:^|;)\s*width:\s*37\.5%\s*(?:;|$)/.test(declarations),
+      ),
+    ),
+)
+if (!hasProgressWidth) {
   throw new Error('ssr_practice_progress_contract_missing')
 }
 

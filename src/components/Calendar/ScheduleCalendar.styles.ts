@@ -102,10 +102,14 @@ export const Slot = styled(CalendarTimeSlot)`
   }
 `
 
-export const Event = styled(TimelineEvent).attrs<{
+export const Event = styled(TimelineEvent)<{
   $height: number
   $top: number
-}>(({ $height, $top }) => ({ style: { height: $height, top: $top } }))`
+}>`
+  &&&& {
+    height: ${({ $height }) => $height}px;
+    top: ${({ $top }) => $top}px;
+  }
   box-sizing: border-box;
   min-height: 1.5rem;
   padding: ${theme.spacing[1]} ${theme.spacing[2]};

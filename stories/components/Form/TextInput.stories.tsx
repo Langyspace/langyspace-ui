@@ -1,3 +1,4 @@
+import * as StoryLayout from './TextInput.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { StoryStack } from '../../../.storybook/fixtures'
 import { TextInput } from '../../../src/components/Form/TextInput'
@@ -83,9 +84,9 @@ export const Stress: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ margin: '0 auto', maxWidth: 280, width: '100%' }}>
+      <StoryLayout.TextInputStressPreview>
         <Story />
-      </div>
+      </StoryLayout.TextInputStressPreview>
     ),
   ],
 }

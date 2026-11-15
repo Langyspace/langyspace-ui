@@ -86,60 +86,64 @@ export function ActionMenu({
 
       {isMenuOpen
         ? createPortal(
-            <Styled.Menu
-              $align={align}
-              $placement={position?.placement ?? 'bottom'}
-              $position={position}
-              aria-labelledby={triggerId}
-              data-align={align}
-              data-placement={position?.placement}
-              data-ui-action-menu="true"
-              id={menuId}
-              ref={menuRef}
-              role="menu"
-              tabIndex={-1}
-              onKeyDown={handleMenuKeyDown}
-            >
-              {normalizedItems.map((item, index) => {
-                const isUnavailable = Boolean(item.disabled || item.loading)
-                const shouldSeparate =
-                  index === firstDangerIndex && firstDangerIndex > 0
+            <>
+              <Styled.MenuPosition $menuId={menuId} $position={position} />
+              <Styled.Menu
+                $align={align}
+                $placement={position?.placement ?? 'bottom'}
+                aria-labelledby={triggerId}
+                data-align={align}
+                data-placement={position?.placement}
+                data-ui-action-menu="true"
+                id={menuId}
+                ref={menuRef}
+                role="menu"
+                tabIndex={-1}
+                onKeyDown={handleMenuKeyDown}
+              >
+                {normalizedItems.map((item, index) => {
+                  const isUnavailable = Boolean(item.disabled || item.loading)
+                  const shouldSeparate =
+                    index === firstDangerIndex && firstDangerIndex > 0
 
-                return (
-                  <div key={item.id} role="none">
-                    {shouldSeparate ? (
-                      <Styled.Separator role="separator" />
-                    ) : null}
-                    <Styled.MenuItem
-                      $size={size}
-                      $tone={item.tone ?? 'neutral'}
-                      aria-busy={item.loading || undefined}
-                      aria-disabled={isUnavailable || undefined}
-                      data-action-menu-item-id={item.id}
-                      data-loading={item.loading ? 'true' : undefined}
-                      disabled={isUnavailable}
-                      ref={(node) => {
-                        if (node) itemsRef.current.set(item.id, node)
-                        else itemsRef.current.delete(item.id)
-                      }}
-                      role="menuitem"
-                      tabIndex={item.id === activeItemId ? 0 : -1}
-                      onClick={() => {
-                        requestOpen(false)
-                        focusTrigger()
-                        item.onSelect()
-                      }}
-                      onFocus={() => {
-                        setActiveItemId(item.id)
-                      }}
-                    >
-                      <IconSlot icon={item.loading ? <Spinner /> : item.icon} />
-                      <Styled.ItemLabel>{item.label}</Styled.ItemLabel>
-                    </Styled.MenuItem>
-                  </div>
-                )
-              })}
-            </Styled.Menu>,
+                  return (
+                    <div key={item.id} role="none">
+                      {shouldSeparate ? (
+                        <Styled.Separator role="separator" />
+                      ) : null}
+                      <Styled.MenuItem
+                        $size={size}
+                        $tone={item.tone ?? 'neutral'}
+                        aria-busy={item.loading || undefined}
+                        aria-disabled={isUnavailable || undefined}
+                        data-action-menu-item-id={item.id}
+                        data-loading={item.loading ? 'true' : undefined}
+                        disabled={isUnavailable}
+                        ref={(node) => {
+                          if (node) itemsRef.current.set(item.id, node)
+                          else itemsRef.current.delete(item.id)
+                        }}
+                        role="menuitem"
+                        tabIndex={item.id === activeItemId ? 0 : -1}
+                        onClick={() => {
+                          requestOpen(false)
+                          focusTrigger()
+                          item.onSelect()
+                        }}
+                        onFocus={() => {
+                          setActiveItemId(item.id)
+                        }}
+                      >
+                        <IconSlot
+                          icon={item.loading ? <Spinner /> : item.icon}
+                        />
+                        <Styled.ItemLabel>{item.label}</Styled.ItemLabel>
+                      </Styled.MenuItem>
+                    </div>
+                  )
+                })}
+              </Styled.Menu>
+            </>,
             document.body,
           )
         : null}

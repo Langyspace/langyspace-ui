@@ -1,0 +1,65 @@
+{
+  "phase": "after",
+  "baseSource": "be8a31600a548f6b3fb828c650163341e7d42009",
+  "head": "8aaa792d207507e07f00f17483e9c2e25845ac40",
+  "localOnly": true,
+  "cases": [
+    {
+      "id": "modal-open",
+      "fixture": true,
+      "action": "modal-open",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "c81b3e1cf67ee9386de695e42008e9e49f4e12f04c366162657792f218a27ff2",
+      "nodes": 44
+    },
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "94914307add20a783769d88942d258ecd533398ca9b00991a578e905fd79848e",
+      "nodes": 54
+    },
+    {
+      "id": "menu-scroll",
+      "fixture": true,
+      "action": "menu-scroll",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "26395252335ea00e8103c8add67150b40566d12e6d7b646d624070a291342380",
+      "nodes": 25
+    },
+    {
+      "id": "modal-open",
+      "fixture": true,
+      "action": "modal-open",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "770286c09000aa99a51c2e1c565249be43327b5d35bb5896c058a4820f464cc6",
+      "nodes": 44
+    },
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "41a5e41cfb4e3c99b7d05c84e7c8c1231c0f8e427e881b3bd8e38473d33ab10d",
+      "nodes": 54
+    },
+    {
+      "id": "menu-scroll",
+      "fixture": true,
+      "action": "menu-scroll",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "3e2be067709dbae48b7b5a03db9107c010f1df6d6f23e4060cb19a6d1c6f03cb",
+      "nodes": 25
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "blockedHosts": []
+}

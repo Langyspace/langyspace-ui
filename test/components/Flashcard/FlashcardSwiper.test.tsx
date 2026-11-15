@@ -24,7 +24,27 @@ it('exposes the exit vector to the throw animation', () => {
 
   const card = screen.getByTestId('card')
 
-  expect(card.style.getPropertyValue('--tr')).toBe('12deg')
-  expect(card.style.getPropertyValue('--tx')).toBe('120%')
-  expect(card.style.getPropertyValue('--ty')).toBe('-1rem')
+  expect(getComputedStyle(card).getPropertyValue('--tr')).toBe('12deg')
+  expect(getComputedStyle(card).getPropertyValue('--tx')).toBe('120%')
+  expect(getComputedStyle(card).getPropertyValue('--ty')).toBe('-1rem')
+})
+
+it('keeps blank exit values unset so the animation retains its CSS fallbacks', () => {
+  render(
+    <FlashcardSwiper
+      data-testid="blank-vector"
+      exit={{ rotate: '', x: '', y: '' }}
+    />,
+  )
+  const card = screen.getByTestId('blank-vector')
+  const rules = [...document.styleSheets]
+    .flatMap((sheet) => [...sheet.cssRules])
+    .filter(
+      (rule) => rule instanceof CSSStyleRule && card.matches(rule.selectorText),
+    )
+  for (const variable of ['--tr', '--tx', '--ty']) {
+    expect(rules.some((rule) => rule.cssText.includes(`${variable}:`))).toBe(
+      false,
+    )
+  }
 })
