@@ -60,7 +60,7 @@ Release checks: focused 35 tests, typecheck, lint/format, reviewed API, all bund
 packaged ESM/SSR/browser smoke passed. Product release captures versus approved revision have
 16/18 pixel-identical images; mobile modal differs by 1 pixel and desktop modal by 90 pixels,
 maximum channel delta 1. Hero, phone frames and all sections are pixel-identical; geometry is exact.
-Raw measurements are in evidence/release/landing-approved-parity.json.
+Raw measurements are in evidence/qualification/landing-approved-parity.json.
 
 CI43766303317 passed architecture/package but exposed a real absent-provider createGlobalStyle
 case: SC supplies undefined rather than an empty theme. The resolver now normalizes that value

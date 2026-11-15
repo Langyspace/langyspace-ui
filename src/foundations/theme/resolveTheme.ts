@@ -3,7 +3,11 @@ import { theme as defaultTheme } from './theme'
 import type { LangyTheme } from './theme'
 
 // Callers fall back at the token leaf so unused default branches remain tree-shakeable.
-export function resolveTheme({ theme }: ExecutionContext): Partial<LangyTheme> {
+export function resolveTheme({
+  theme,
+}: {
+  theme?: ExecutionContext['theme']
+}): Partial<LangyTheme> {
   return theme ?? {}
 }
 
