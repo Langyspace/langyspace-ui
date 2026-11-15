@@ -82,3 +82,14 @@ on pull requests, not only in the release validate:ui command. Existing successf
 groups and654-file/zero-violation evidence remains applicable: source, policy, config and package
 inputs are unchanged. Only CI wiring and this note changed; screenshots and candidate payload remain
 valid without recapture or repack. Workflow syntax/command wiring and scoped formatting were checked.
+
+## Approved publication and CI follow-up
+
+The product owner explicitly approved the current seven-PR visual batch, UI4.1 package/catalog and
+production delivery, with native manual fallback only for billing refusal before job execution.
+Current UI CI ran: behavior/coverage and all four visual partitions passed. Architecture failed on
+missing browser globals in the mixed Node/Playwright capture helper; the existing browser-script
+ESLint context now includes that exact file. Package smoke still expected an inline progress width;
+it now verifies the same37.5% declaration on the actual fill class in collected SSR CSS, without
+depending on private specificity or generated names. Runtime/package payload is unchanged.
+Focused lint, SSR smoke and full formatting passed locally. CI must pass before merge/release.
