@@ -3,7 +3,11 @@ import { actionRecipe } from '../../foundations/actions/recipe'
 import { Pressable } from '../Pressable'
 import type { ActionRecipeStyleProps } from '../../foundations/actions/types'
 import type { ButtonTextVariant } from './Button.types'
-import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import {
+  resolveButtonsTheme,
+  resolveTheme,
+} from '../../foundations/theme/resolveTheme'
+import { theme as defaultTheme } from '../../foundations/theme/theme'
 import type { ExecutionContext } from 'styled-components'
 
 interface ButtonStyleProps extends ActionRecipeStyleProps {
@@ -11,9 +15,14 @@ interface ButtonStyleProps extends ActionRecipeStyleProps {
 }
 
 const textColors = (context: ExecutionContext) => ({
-  text: resolveTheme(context).colors.text.primary,
-  'text-subtle': resolveTheme(context).colors.text.muted,
-  'text-danger': resolveTheme(context).colors.feedback.danger,
+  text:
+    resolveTheme(context).colors?.text.primary ??
+    defaultTheme.colors.text.primary,
+  'text-subtle':
+    resolveTheme(context).colors?.text.muted ?? defaultTheme.colors.text.muted,
+  'text-danger':
+    resolveTheme(context).colors?.feedback.danger ??
+    defaultTheme.colors.feedback.danger,
 })
 
 const textRecipe = css<ButtonStyleProps>`
@@ -32,18 +41,21 @@ const textRecipe = css<ButtonStyleProps>`
   color: ${({ $textVariant, ...context }) => textColors(context)[$textVariant ?? 'text']};
   font-weight: ${({ $textVariant, ...context }) =>
     $textVariant === 'text-subtle'
-      ? resolveTheme(context).typography.fontWeight.medium
-      : resolveTheme(context).typography.fontWeight.semibold};
+      ? (resolveTheme(context).typography?.fontWeight.medium ??
+        defaultTheme.typography.fontWeight.medium)
+      : (resolveTheme(context).typography?.fontWeight.semibold ??
+        defaultTheme.typography.fontWeight.semibold)};
   text-decoration: ${({ $textVariant }) =>
     $textVariant === 'text-subtle' ? 'none' : 'underline'};
   text-underline-offset: 2px;
 
   &:hover:not(:disabled) {
-    color: ${(context) => resolveTheme(context).semantic.foreground.brand};
+    color: ${(context) => resolveTheme(context).semantic?.foreground.brand ?? defaultTheme.semantic.foreground.brand};
   }
 
   &:focus-visible {
-    outline: 3px solid ${(context) => resolveTheme(context).semantic.focus.ring};
+    outline: 3px solid
+      ${(context) => resolveTheme(context).semantic?.focus.ring ?? defaultTheme.semantic.focus.ring};
     outline-offset: 3px;
   }
 
@@ -59,7 +71,7 @@ const textRecipe = css<ButtonStyleProps>`
 
 const actionStates = css`
   &:disabled {
-    opacity: ${(context) => resolveTheme(context).buttons.base.disabledOpacity};
+    opacity: ${(context) => resolveButtonsTheme(context).base.disabledOpacity};
     cursor: default;
   }
 

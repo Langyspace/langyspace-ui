@@ -6,7 +6,11 @@ import type {
   ActionShape,
 } from '../../foundations/actions/types'
 import type { IconButtonVariant } from './IconButton.types'
-import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import {
+  resolveButtonsTheme,
+  resolveTheme,
+} from '../../foundations/theme/resolveTheme'
+import { theme as defaultTheme } from '../../foundations/theme/theme'
 
 interface IconButtonStyleProps extends ActionRecipeStyleProps {
   $iconVariant: IconButtonVariant
@@ -19,19 +23,19 @@ const intentStyles = {
     &,
     &:active:not(:disabled) {
       border-color: transparent;
-      color: ${(context) => resolveTheme(context).colors.feedback.danger};
+      color: ${(context) => resolveTheme(context).colors?.feedback.danger ?? defaultTheme.colors.feedback.danger};
       background-color: transparent;
     }
 
     &:hover:not(:disabled) {
       border-color: transparent;
-      color: ${(context) => resolveTheme(context).semantic.status.danger.foreground};
-      background-color: ${(context) => resolveTheme(context).colors.palette.neutral[200]};
+      color: ${(context) => resolveTheme(context).semantic?.status.danger.foreground ?? defaultTheme.semantic.status.danger.foreground};
+      background-color: ${(context) => resolveTheme(context).colors?.palette.neutral[200] ?? defaultTheme.colors.palette.neutral[200]};
     }
   `,
   inverse: css`
     & {
-      border-color: ${(context) => resolveTheme(context).semantic.inverse.border};
+      border-color: ${(context) => resolveTheme(context).semantic?.inverse.border ?? defaultTheme.semantic.inverse.border};
     }
   `,
   neutral: css``,
@@ -43,9 +47,9 @@ export const IconButton = styled(Pressable).withConfig({
   componentId: 'lsui-sc-icon-button',
 })<IconButtonStyleProps>`
   ${actionRecipe}
-  width: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
-  height: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
-  min-height: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
+  width: ${({ $size, ...context }) => resolveTheme(context).sizes?.control[$size] ?? defaultTheme.sizes.control[$size]};
+  height: ${({ $size, ...context }) => resolveTheme(context).sizes?.control[$size] ?? defaultTheme.sizes.control[$size]};
+  min-height: ${({ $size, ...context }) => resolveTheme(context).sizes?.control[$size] ?? defaultTheme.sizes.control[$size]};
   padding-top: 0;
   padding-bottom: 0;
   max-width: none;
@@ -56,7 +60,7 @@ export const IconButton = styled(Pressable).withConfig({
   ${({ $iconVariant }) => intentStyles[$iconVariant]}
 
   &:disabled {
-    opacity: ${(context) => resolveTheme(context).buttons.base.disabledOpacity};
+    opacity: ${(context) => resolveButtonsTheme(context).base.disabledOpacity};
     cursor: default;
   }
 

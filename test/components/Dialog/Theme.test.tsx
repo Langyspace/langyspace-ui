@@ -37,9 +37,7 @@ it('applies the dialog contract through the provider and preserves its accessibl
   await waitFor(() =>
     expect(panel).toHaveAccessibleDescription('Provide your details'),
   )
-  expect(
-    screen.getByRole('button', { name: 'Close', exact: true }),
-  ).toHaveTextContent('×')
+  expect(screen.getByRole('button', { name: 'Close' })).toHaveTextContent('×')
   const panelCss = getComputedStyle(panel)
   expect(panelCss.backgroundColor).toBe('rgb(250, 250, 250)')
   expect(panelCss.borderRadius).toBe('28px')

@@ -78,8 +78,8 @@ try {
             state: 'attached',
             timeout: auditConfig.timeoutMs,
           })
-          await storyRoot
-            .locator(':scope > *')
+          await page
+            .locator('#storybook-root > :visible, [aria-modal="true"]:visible')
             .first()
             .waitFor({ state: 'visible', timeout: auditConfig.timeoutMs })
           await page.evaluate(() => document.fonts.ready)

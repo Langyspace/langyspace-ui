@@ -1,6 +1,7 @@
 import { createGlobalStyle, css, styled } from 'styled-components'
 import type { OverlayKind, OverlaySize } from './ModalLayer.types'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import { theme as defaultTheme } from '../../foundations/theme/theme'
 import type { ExecutionContext } from 'styled-components'
 import { cssIdSelector } from '../cssIdSelector'
 import { modalScrollLockAttribute } from './stack'
@@ -17,17 +18,18 @@ export const Presentation = createGlobalStyle<ModalPresentationStyleProps>`
   }
 
   ${({ $backdropId }) => cssIdSelector($backdropId)} {
-    z-index: ${({ $order, ...context }) => resolveTheme(context).zIndex.overlay + ($order ?? 0) * 2};
+    z-index: ${({ $order, ...context }) => (resolveTheme(context).zIndex?.overlay ?? defaultTheme.zIndex.overlay) + ($order ?? 0) * 2};
   }
 `
 
 type KindContext = ExecutionContext & { $kind: OverlayKind }
-const dialogTokens = (context: ExecutionContext) => resolveTheme(context).dialog
+const dialogTokens = (context: ExecutionContext) =>
+  resolveTheme(context).dialog ?? defaultTheme.dialog
 const isDialog = (context: KindContext) => context.$kind === 'dialog'
 const mobileBreakpoint = (context: KindContext) =>
   isDialog(context)
     ? dialogTokens(context).mobileBreakpoint
-    : resolveTheme(context).breakpoints.sm
+    : (resolveTheme(context).breakpoints?.sm ?? defaultTheme.breakpoints.sm)
 
 const drawerWidths = { lg: '44rem', md: '36rem', sm: '24rem' } satisfies Record<
   OverlaySize,
@@ -38,13 +40,13 @@ export const Backdrop = styled.div.withConfig({
   componentId: 'lsui-sc-modal-backdrop',
 })<{ $kind: OverlayKind }>`
   position: fixed;
-  z-index: ${(context) => resolveTheme(context).zIndex.overlay};
+  z-index: ${(context) => resolveTheme(context).zIndex?.overlay ?? defaultTheme.zIndex.overlay};
   inset: 0;
   display: grid;
   align-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'stretch')};
   justify-items: ${({ $kind }) => ($kind === 'dialog' ? 'center' : 'end')};
   padding: ${(context) => (isDialog(context) ? dialogTokens(context).backdrop.padding : '0')};
-  background: ${(context) => (isDialog(context) ? dialogTokens(context).backdrop.background : resolveTheme(context).semantic.background.overlay)};
+  background: ${(context) => (isDialog(context) ? dialogTokens(context).backdrop.background : (resolveTheme(context).semantic?.background.overlay ?? defaultTheme.semantic.background.overlay))};
   backdrop-filter: ${(context) => (isDialog(context) ? dialogTokens(context).backdrop.filter : 'blur(2px)')};
   @media (max-width: ${mobileBreakpoint}) {
     align-items: end;
@@ -66,9 +68,9 @@ export const Panel = styled.div.withConfig({
   min-width: 0;
   max-height: ${(context) => (isDialog(context) ? dialogTokens(context).panel.maxHeight : '100dvh')};
   grid-template-rows: auto minmax(0, 1fr) auto;
-  border: ${(context) => (isDialog(context) ? dialogTokens(context).panel.border : `1px solid ${resolveTheme(context).semantic.border.default}`)};
-  background: ${(context) => (isDialog(context) ? dialogTokens(context).panel.background : resolveTheme(context).colors.palette.white)};
-  box-shadow: ${(context) => (isDialog(context) ? dialogTokens(context).panel.shadow : resolveTheme(context).shadows.drawer)};
+  border: ${(context) => (isDialog(context) ? dialogTokens(context).panel.border : `1px solid ${resolveTheme(context).semantic?.border.default ?? defaultTheme.semantic.border.default}`)};
+  background: ${(context) => (isDialog(context) ? dialogTokens(context).panel.background : (resolveTheme(context).colors?.palette.white ?? defaultTheme.colors.palette.white))};
+  box-shadow: ${(context) => (isDialog(context) ? dialogTokens(context).panel.shadow : (resolveTheme(context).shadows?.drawer ?? defaultTheme.shadows.drawer))};
   outline: none;
   ${(context) =>
     isDialog(context)
@@ -81,11 +83,12 @@ export const Panel = styled.div.withConfig({
         `
       : css`
           height: 100dvh;
-          border-radius: ${resolveTheme(context).radius.card} 0 0
-            ${resolveTheme(context).radius.card};
+          border-radius: ${resolveTheme(context).radius?.card ?? defaultTheme.radius.card}
+            0 0
+            ${resolveTheme(context).radius?.card ?? defaultTheme.radius.card};
         `}
   &:focus-visible {
-    box-shadow: ${(context) => resolveTheme(context).shadows.focusHalo};
+    box-shadow: ${(context) => resolveTheme(context).shadows?.focusHalo ?? defaultTheme.shadows.focusHalo};
   }
   @media (max-width: ${mobileBreakpoint}) {
     width: 100%;
@@ -110,9 +113,9 @@ export const Header = styled.header<{ $kind: OverlayKind }>`
   min-width: 0;
   align-items: flex-start;
   justify-content: space-between;
-  gap: ${(context) => (isDialog(context) ? dialogTokens(context).header.gap : resolveTheme(context).spacing[4])};
-  border-bottom: ${(context) => (isDialog(context) ? dialogTokens(context).header.borderBottom : `1px solid ${resolveTheme(context).colors.border.subtle}`)};
-  padding: ${(context) => (isDialog(context) ? dialogTokens(context).header.padding : resolveTheme(context).spacing[5])};
+  gap: ${(context) => (isDialog(context) ? dialogTokens(context).header.gap : (resolveTheme(context).spacing?.[4] ?? defaultTheme.spacing[4]))};
+  border-bottom: ${(context) => (isDialog(context) ? dialogTokens(context).header.borderBottom : `1px solid ${resolveTheme(context).colors?.border.subtle ?? defaultTheme.colors.border.subtle}`)};
+  padding: ${(context) => (isDialog(context) ? dialogTokens(context).header.padding : (resolveTheme(context).spacing?.[5] ?? defaultTheme.spacing[5]))};
   ${(context) =>
     isDialog(context) &&
     css`
@@ -124,7 +127,7 @@ export const Header = styled.header<{ $kind: OverlayKind }>`
       }
     `}
   @media (max-width:${mobileBreakpoint}) {
-    padding-top: ${(context) => (isDialog(context) ? dialogTokens(context).header.mobilePaddingTop : `calc(${resolveTheme(context).spacing[5]} + env(safe-area-inset-top))`)};
+    padding-top: ${(context) => (isDialog(context) ? dialogTokens(context).header.mobilePaddingTop : `calc(${resolveTheme(context).spacing?.[5] ?? defaultTheme.spacing[5]} + env(safe-area-inset-top))`)};
   }
 `
 export const Heading = styled.div<{ $kind: OverlayKind }>`
@@ -137,10 +140,10 @@ export const Heading = styled.div<{ $kind: OverlayKind }>`
 `
 export const Title = styled.h2<{ $kind: OverlayKind }>`
   margin: 0;
-  color: ${(context) => (isDialog(context) ? dialogTokens(context).title.color : resolveTheme(context).colors.text.primary)};
-  font-size: ${(context) => (isDialog(context) ? dialogTokens(context).title.fontSize : resolveTheme(context).typography.fontSize.xl)};
-  font-weight: ${(context) => (isDialog(context) ? dialogTokens(context).title.fontWeight : resolveTheme(context).typography.fontWeight.bold)};
-  line-height: ${(context) => (isDialog(context) ? dialogTokens(context).title.lineHeight : resolveTheme(context).typography.lineHeight.snug)};
+  color: ${(context) => (isDialog(context) ? dialogTokens(context).title.color : (resolveTheme(context).colors?.text.primary ?? defaultTheme.colors.text.primary))};
+  font-size: ${(context) => (isDialog(context) ? dialogTokens(context).title.fontSize : (resolveTheme(context).typography?.fontSize.xl ?? defaultTheme.typography.fontSize.xl))};
+  font-weight: ${(context) => (isDialog(context) ? dialogTokens(context).title.fontWeight : (resolveTheme(context).typography?.fontWeight.bold ?? defaultTheme.typography.fontWeight.bold))};
+  line-height: ${(context) => (isDialog(context) ? dialogTokens(context).title.lineHeight : (resolveTheme(context).typography?.lineHeight.snug ?? defaultTheme.typography.lineHeight.snug))};
   overflow-wrap: anywhere;
   ${(context) =>
     isDialog(context) &&
@@ -150,18 +153,18 @@ export const Title = styled.h2<{ $kind: OverlayKind }>`
     `}
 `
 export const Description = styled.p<{ $kind: OverlayKind }>`
-  margin: ${(context) => (isDialog(context) ? dialogTokens(context).description.marginTop : resolveTheme(context).spacing[1])}
+  margin: ${(context) => (isDialog(context) ? dialogTokens(context).description.marginTop : (resolveTheme(context).spacing?.[1] ?? defaultTheme.spacing[1]))}
     0 0;
-  color: ${(context) => (isDialog(context) ? dialogTokens(context).description.color : resolveTheme(context).colors.text.muted)};
-  font-size: ${(context) => (isDialog(context) ? dialogTokens(context).description.fontSize : resolveTheme(context).typography.fontSize.sm)};
-  line-height: ${(context) => (isDialog(context) ? dialogTokens(context).description.lineHeight : resolveTheme(context).typography.lineHeight.normal)};
+  color: ${(context) => (isDialog(context) ? dialogTokens(context).description.color : (resolveTheme(context).colors?.text.muted ?? defaultTheme.colors.text.muted))};
+  font-size: ${(context) => (isDialog(context) ? dialogTokens(context).description.fontSize : (resolveTheme(context).typography?.fontSize.sm ?? defaultTheme.typography.fontSize.sm))};
+  line-height: ${(context) => (isDialog(context) ? dialogTokens(context).description.lineHeight : (resolveTheme(context).typography?.lineHeight.normal ?? defaultTheme.typography.lineHeight.normal))};
   overflow-wrap: anywhere;
 `
 export const Body = styled.div<{ $kind: OverlayKind }>`
   min-width: 0;
   min-height: 0;
   overflow-y: auto;
-  padding: ${(context) => (isDialog(context) ? dialogTokens(context).body.padding : resolveTheme(context).spacing[5])};
+  padding: ${(context) => (isDialog(context) ? dialogTokens(context).body.padding : (resolveTheme(context).spacing?.[5] ?? defaultTheme.spacing[5]))};
   overscroll-behavior: contain;
   @media (max-width: ${mobileBreakpoint}) {
     ${(context) =>
@@ -177,16 +180,16 @@ export const Footer = styled.footer`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
-  gap: ${(context) => resolveTheme(context).spacing[2]};
+  gap: ${(context) => resolveTheme(context).spacing?.[2] ?? defaultTheme.spacing[2]};
   border-top: 1px solid
-    ${(context) => resolveTheme(context).colors.border.subtle};
-  padding: ${(context) => resolveTheme(context).spacing[4]}
-    ${(context) => resolveTheme(context).spacing[5]};
-  @media (max-width: ${(context) => resolveTheme(context).breakpoints.sm}) {
+    ${(context) => resolveTheme(context).colors?.border.subtle ?? defaultTheme.colors.border.subtle};
+  padding: ${(context) => resolveTheme(context).spacing?.[4] ?? defaultTheme.spacing[4]}
+    ${(context) => resolveTheme(context).spacing?.[5] ?? defaultTheme.spacing[5]};
+  @media (max-width: ${(context) => resolveTheme(context).breakpoints?.sm ?? defaultTheme.breakpoints.sm}) {
     align-items: stretch;
     flex-direction: column;
     padding-bottom: calc(
-      ${(context) => resolveTheme(context).spacing[4]} +
+      ${(context) => resolveTheme(context).spacing?.[4] ?? defaultTheme.spacing[4]} +
         env(safe-area-inset-bottom)
     );
     > * {
