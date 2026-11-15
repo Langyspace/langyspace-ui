@@ -4,7 +4,8 @@ import { createHash } from 'node:crypto'
 import { gzipSync } from 'node:zlib'
 import { execFileSync } from 'node:child_process'
 import { chromium } from 'playwright'
-import { startStaticStorybook } from '../../../scripts/layout-audit/server.mjs'
+import { createServer as createViteServer } from 'vite'
+import { captureVisualEvidence } from '../../../scripts/capture-visual-evidence.mjs'
 const phase = process.argv[2]
 if (!['before', 'after'].includes(phase)) throw Error('before/after required')
 const root = process.cwd(),
@@ -117,10 +118,118 @@ const index = JSON.parse(
 for (const c of cases)
   if (c.story && !index.entries[c.story])
     throw Error('Missing story ' + c.story)
-const server = await startStaticStorybook(staticRoot)
+// Runtime.tsx is a source fixture, not a compiled Storybook story. Freeze its actual component
+// imports for the baseline; selecting storybook-before alone does not freeze /@fs/src requests.
+const baseSource =
+  process.env.LIBRARY_STYLED_BASE_SOURCE ??
+  'be8a31600a548f6b3fb828c650163341e7d42009'
+const sourceRef = phase === 'before' ? baseSource : 'HEAD'
+const sourceCommit = execFileSync('git', ['rev-parse', sourceRef], {
+  encoding: 'utf8',
+}).trim()
+const sourceFiles = new Set(
+  execFileSync('git', ['ls-tree', '-r', '--name-only', sourceCommit, 'src'], {
+    encoding: 'utf8',
+  })
+    .trim()
+    .split('\n'),
+)
+const loadedSources = new Map()
+const fixtureFiles = [
+  'test/fixtures/styled-only/Runtime.tsx',
+  'test/fixtures/styled-only/Runtime.styles.ts',
+]
+const digest = (bytes) => createHash('sha256').update(bytes).digest('hex')
+const sourceProvenance = {
+  sourceMode: phase === 'before' ? 'git-baseline-loader' : 'git-head-loader',
+  sourceCommit,
+  fixtureOrigin:
+    'Current sanitized test fixture, identical in both phases; absent from baseline Git. Its product component imports are frozen separately.',
+  fixtureFiles: fixtureFiles.map((file) => ({
+    file,
+    sha256: digest(fs.readFileSync(file)),
+  })),
+  versions: Object.fromEntries(
+    ['react', 'react-dom', 'styled-components', '@fontsource/montserrat'].map(
+      (name) => [
+        name,
+        JSON.parse(
+          fs.readFileSync(
+            path.join(root, 'node_modules', name, 'package.json'),
+          ),
+        ).version,
+      ],
+    ),
+  ),
+  staticRoot,
+  staticIndexSha256: digest(
+    fs.readFileSync(path.join(staticRoot, 'index.json')),
+  ),
+  staticIframeSha256: digest(
+    fs.readFileSync(path.join(staticRoot, 'iframe.html')),
+  ),
+  compiledFixtureAvailable: false,
+  fontAssets: [400, 500, 600, 700].map((weight) => {
+    const file = `node_modules/@fontsource/montserrat/files/montserrat-latin-${weight}-normal.woff2`
+    return { file, sha256: digest(fs.readFileSync(file)) }
+  }),
+}
+const vite = await createViteServer({
+  appType: 'spa',
+  configFile: false,
+  logLevel: 'error',
+  root: staticRoot,
+  cacheDir: path.join(root, '.local/styled-only/pr-viewport-vite-cache', phase),
+  optimizeDeps: {
+    force: true,
+    include: ['react', 'react-dom/client', 'styled-components'],
+  },
+  resolve: { dedupe: ['react', 'react-dom', 'styled-components'] },
+  plugins: [
+    {
+      name: 'verified-library-fixture-sources',
+      enforce: 'pre',
+      load(id) {
+        const filename = id.split('?')[0]
+        if (!filename.startsWith(path.join(root, 'src') + path.sep)) return null
+        const relative = path.relative(root, filename)
+        if (!sourceFiles.has(relative))
+          throw Error('Unproven fixture component source: ' + relative)
+        const bytes = execFileSync('git', [
+          'show',
+          `${sourceCommit}:${relative}`,
+        ])
+        if (phase === 'after' && !bytes.equals(fs.readFileSync(filename)))
+          throw Error('Current component differs from Git HEAD: ' + relative)
+        loadedSources.set(relative, {
+          file: relative,
+          gitBlob: execFileSync(
+            'git',
+            ['rev-parse', `${sourceCommit}:${relative}`],
+            { encoding: 'utf8' },
+          ).trim(),
+          sha256: digest(bytes),
+        })
+        return bytes.toString('utf8')
+      },
+    },
+  ],
+  server: { host: '127.0.0.1', port: 0, strictPort: true },
+})
+await vite.listen()
+const address = vite.httpServer.address()
+if (!address || typeof address === 'string') {
+  await vite.close()
+  throw Error('library_fixture_server_address_missing')
+}
+const server = {
+  baseUrl: `http://127.0.0.1:${address.port}`,
+  close: () => vite.close(),
+}
 const report = {
   phase,
-  baseSource: 'be8a31600a548f6b3fb828c650163341e7d42009',
+  baseSource,
+  sourceProvenance,
   head: execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim(),
   localOnly: true,
   cases: [],
@@ -128,9 +237,49 @@ const report = {
   pageErrors: [],
   blockedHosts: [],
 }
+const routeRequest = async (route) => {
+  const url = new URL(route.request().url())
+  if (url.origin !== server.baseUrl) {
+    report.blockedHosts.push(url.hostname)
+    return route.abort()
+  }
+  if (url.pathname === '/__styled-runtime.html')
+    return route.fulfill({
+      contentType: 'text/html',
+      body: `<!doctype html><html><head></head><body style="overflow:auto"><div id="root"></div><div id="overlay-root"></div><script type="module" src="/@fs/${root}/test/fixtures/styled-only/Runtime.tsx"></script></body></html>`,
+    })
+  return route.continue()
+}
 let browser
 try {
   browser = await chromium.launch({ headless: true })
+  if (cases.some((entry) => entry.fixture)) {
+    const readiness = { errors: [], reloads: 0, ready: false }
+    report.fixtureReadiness = readiness
+    const context = await browser.newContext({
+      viewport: { width: 390, height: 1100 },
+      colorScheme: 'light',
+      reducedMotion: 'reduce',
+    })
+    try {
+      const page = await context.newPage()
+      page.on('pageerror', (error) =>
+        readiness.errors.push({ message: error.message, stack: error.stack }),
+      )
+      await page.route('**/*', routeRequest)
+      await page.goto(server.baseUrl + '/__styled-runtime.html', {
+        waitUntil: 'networkidle',
+      })
+      if (readiness.errors.length) {
+        readiness.reloads = 1
+        await page.reload({ waitUntil: 'networkidle' })
+      }
+      await page.locator('h1').waitFor({ timeout: 15000 })
+      readiness.ready = true
+    } finally {
+      await context.close()
+    }
+  }
   for (const width of [390, 1440])
     for (const c of cases) {
       const id = c.id + '-' + width
@@ -146,19 +295,7 @@ try {
       page.on('pageerror', (e) =>
         report.pageErrors.push({ id, message: e.message }),
       )
-      await page.route('**/*', async (route) => {
-        const url = new URL(route.request().url())
-        if (url.origin !== server.baseUrl) {
-          report.blockedHosts.push(url.hostname)
-          return route.abort()
-        }
-        if (url.pathname === '/__styled-runtime.html')
-          return route.fulfill({
-            contentType: 'text/html',
-            body: `<!doctype html><html><head></head><body style="overflow:auto"><div id="root"></div><div id="overlay-root"></div><script type="module" src="/@fs/${root}/test/fixtures/styled-only/Runtime.tsx"></script></body></html>`,
-          })
-        return route.continue()
-      })
+      await page.route('**/*', routeRequest)
       try {
         await page.goto(
           c.fixture
@@ -354,11 +491,17 @@ try {
             }
           })
         const metricsBeforeScreenshot = await readMetrics()
-        const png = await page.screenshot({
-          path: path.join(output, id + '.png'),
-          fullPage: true,
+        const imagePath = path.join(output, id + '.png')
+        const screenshot = await captureVisualEvidence(page, {
+          path: imagePath,
           animations: 'allow',
         })
+        const png = fs.readFileSync(imagePath)
+        if (
+          screenshot.mode === 'viewport' &&
+          (png.readUInt32BE(16) !== width || png.readUInt32BE(20) !== 1100)
+        )
+          throw Error('Modal screenshot must match the exact visible viewport')
         const metrics = await readMetrics()
         const metricsRepeat = await readMetrics()
         if (JSON.stringify(metrics) !== JSON.stringify(metricsRepeat))
@@ -371,6 +514,7 @@ try {
             Buffer.from(
               JSON.stringify({
                 ...metrics,
+                screenshot,
                 metricsBeforeScreenshot,
                 metricsRepeat,
               }),
@@ -382,6 +526,11 @@ try {
           width,
           sha256: createHash('sha256').update(png).digest('hex'),
           nodes: metrics.nodes.length,
+          screenshot,
+          pngSize: {
+            width: png.readUInt32BE(16),
+            height: png.readUInt32BE(20),
+          },
         })
         console.log(phase + ' ' + id)
       } catch (error) {
@@ -394,6 +543,15 @@ try {
 } finally {
   await browser?.close()
   await server.close()
+  report.sourceProvenance.loadedSources = [...loadedSources.values()].sort(
+    (a, b) => a.file.localeCompare(b.file),
+  )
+  report.sourceProvenance.loadedSourceManifestSha256 = digest(
+    JSON.stringify(report.sourceProvenance.loadedSources),
+  )
+  report.serverClosed = true
+  report.browserClosed = true
+  if (report.failures.length || report.pageErrors.length) process.exitCode = 1
   fs.writeFileSync(
     path.join(output, 'report-' + Date.now() + '.json'),
     JSON.stringify(report, null, 2) + '\n',

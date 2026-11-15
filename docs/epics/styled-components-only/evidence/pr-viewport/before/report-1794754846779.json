@@ -1,0 +1,443 @@
+{
+  "phase": "before",
+  "baseSource": "be8a31600a548f6b3fb828c650163341e7d42009",
+  "sourceProvenance": {
+    "sourceMode": "git-baseline-loader",
+    "sourceCommit": "be8a31600a548f6b3fb828c650163341e7d42009",
+    "fixtureOrigin": "Current sanitized test fixture, identical in both phases; absent from baseline Git. Its product component imports are frozen separately.",
+    "fixtureFiles": [
+      {
+        "file": "test/fixtures/styled-only/Runtime.tsx",
+        "sha256": "08a0b11b0f16f382e3942280843840d09dc1364457b1d4d959892e14b75b659f"
+      },
+      {
+        "file": "test/fixtures/styled-only/Runtime.styles.ts",
+        "sha256": "0fe0fad3034520dccd5d10334d42992bd3fbd5e03e55fd7b0535a5eccc3e9b59"
+      }
+    ],
+    "versions": {
+      "react": "19.2.8",
+      "react-dom": "19.2.8",
+      "styled-components": "6.5.3",
+      "@fontsource/montserrat": "5.2.8"
+    },
+    "staticRoot": "/Users/margaridamartins/langyspace-ui/.local/styled-only/storybook-before",
+    "staticIndexSha256": "247cb266d052976443a3993854002a232da261d244daa5f9faddda614260dd26",
+    "staticIframeSha256": "a5ed44afd5e0ae5421caae11b27d2877c293aec3a809fc01157aa9aad83b9f48",
+    "compiledFixtureAvailable": false,
+    "fontAssets": [
+      {
+        "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-400-normal.woff2",
+        "sha256": "e66bcd2761ab6924b25ce70dafe10e57a39193c4fea1516730bd9cb5240af6c8"
+      },
+      {
+        "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2",
+        "sha256": "2b53300fb9471520df2f4905847fb7a209879b2029ae893c05c6ee346b1320cd"
+      },
+      {
+        "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2",
+        "sha256": "d857325c360f7128b347ca924c1974967aaa886ba47dad22e4042d6c38b26a83"
+      },
+      {
+        "file": "node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2",
+        "sha256": "f9d9e65b15372cebcafc3acd1e664a564c5c4b23278de4d5760de9a13c530371"
+      }
+    ],
+    "loadedSources": [
+      {
+        "file": "src/components/ActionMenu/ActionMenu.styles.ts",
+        "gitBlob": "040df9633518bc67035434a1636746124b4c20fd",
+        "sha256": "176688a85871d4074d69685243494be84176d25e1f5321dc168691f5acf0241a"
+      },
+      {
+        "file": "src/components/ActionMenu/ActionMenu.tsx",
+        "gitBlob": "2a3e92a0a3a10e45d1c607690a3270d17a3e6ecc",
+        "sha256": "4d91dfd4a06a8255b8994997f428f882dd2c2f83709f28a41e12504ac24b0e0b"
+      },
+      {
+        "file": "src/components/ActionMenu/position.ts",
+        "gitBlob": "b32f91ce64bdf457e21138e1c2b30034ec1bc47f",
+        "sha256": "c0e76aa7310fb0c0e2cff551456e3b946c41b61632df041cf2f68658d0a3a2d4"
+      },
+      {
+        "file": "src/components/ActionMenu/useActionMenu.ts",
+        "gitBlob": "d5e142af539bcedd915f332ed0792b870f60455f",
+        "sha256": "1fa708211f11ef6c1acaff6e0b901cabb23e5aa2b78e0332677842bd997c455d"
+      },
+      {
+        "file": "src/components/Button/Button.styles.ts",
+        "gitBlob": "f6710c4f06235f06c27b33277e2bf3d446aa4c8a",
+        "sha256": "904a0940912b5a121734561f9939013d5653787dff8d6f0da96eab1b2cb819b3"
+      },
+      {
+        "file": "src/components/Button/Button.tsx",
+        "gitBlob": "241fa6e8875712249294e2d471bb83de15a68ce8",
+        "sha256": "90d8373105dd9a8c71f6151f176eefc27700b0cc3025ab31497213aa4761b467"
+      },
+      {
+        "file": "src/components/Dialog/Dialog.tsx",
+        "gitBlob": "0a78ff80f59db7b584d2cc3eb33354a90d218dd9",
+        "sha256": "8884c0ea97fa3d9c90106f565f8365074ba7434eeed535f022c7fba4a2bd0f9f"
+      },
+      {
+        "file": "src/components/Drawer/Drawer.tsx",
+        "gitBlob": "f0ba6f021f5687b0344931e0fe7244e2d99ea0b5",
+        "sha256": "718736e5be642ff13f251d6300035b0cfe26b29c56089883a3bd8a40a0e9af53"
+      },
+      {
+        "file": "src/components/Form/TextareaInput.styles.ts",
+        "gitBlob": "e40e0b331392089c1c2ba0695a25db59e651b170",
+        "sha256": "e4fb61fde052872c1851f87b1692ee95cb709675c9b13a7a2ea71568282b9415"
+      },
+      {
+        "file": "src/components/Form/TextareaInput.tsx",
+        "gitBlob": "ba601d63147f691a456f7ed744f448c44aee10ad",
+        "sha256": "0d654b15214913b2f4bd7e6fee2892bd05b6524f6ac110a82d47438c3050623a"
+      },
+      {
+        "file": "src/components/IconButton/IconButton.styles.ts",
+        "gitBlob": "fb996e22a3f4ef914cc9de77809eb6b1478c1279",
+        "sha256": "d8b7857d0925e6172f9bb8a0a3449a2bf87df9227d6e36d47c0a2a7ebc23956d"
+      },
+      {
+        "file": "src/components/IconButton/IconButton.tsx",
+        "gitBlob": "1d95ff173419ff73298a27e8355207490b88a0ae",
+        "sha256": "15ed82098c59a11e3c595215de83f1bfebf7ba8e02a45fb4ba876911673c4135"
+      },
+      {
+        "file": "src/components/IconButton/OverlayCloseButton.styles.ts",
+        "gitBlob": "970a7cb646832d3befcaec2d23e6d02a4dd802d2",
+        "sha256": "52da7e263bfc0d6b53360109e996dae0de18c3000f9cefc92b5a7509ab3f466e"
+      },
+      {
+        "file": "src/components/IconButton/OverlayCloseButton.tsx",
+        "gitBlob": "7af7b95a6e81722c4f6f8799cdd59e28c9c0a8e3",
+        "sha256": "5de3ffac1b6ac3ffd8da892ed5e06e1e4185d34becc3c554058a3c725f7b4c83"
+      },
+      {
+        "file": "src/components/Message/MessageComposer.styles.ts",
+        "gitBlob": "8401b248e07d9338852d72c1ba28450b9bb194d6",
+        "sha256": "8a6680c420a351a367a4b3c355f1fd9190231adc14902e633aa989989f3cdded"
+      },
+      {
+        "file": "src/components/Message/MessageComposer.tsx",
+        "gitBlob": "d6d247ae8b400a39825f1f8ab050f57870a45cfe",
+        "sha256": "3ed0cf5347a94f6ee2a595df89b788f245c13c908a2b8431d3c3eded47d2521b"
+      },
+      {
+        "file": "src/components/Pressable.styles.ts",
+        "gitBlob": "6cede2bed41eb18f7f2027da3751c84dc2d2ef7c",
+        "sha256": "dc317c46b4a96ddd73707100ca8dda3330c55d0c17a57351f631d8aa41bd304a"
+      },
+      {
+        "file": "src/components/Pressable.tsx",
+        "gitBlob": "7b60d137b7a74b8158f6406b6d7f3e10a7f835fc",
+        "sha256": "77aeaf9a7be8b000176ce50f47db0072630df98d30b295fbb95dddfc28d9f8e0"
+      },
+      {
+        "file": "src/components/Spinner/Spinner.styles.ts",
+        "gitBlob": "88e420ed7fcd12bca505796ea5c199b0bf4651d8",
+        "sha256": "c50852abdb49eefc4db8ff1d142ef61fd436721bc58287540b17529f1cc17a2d"
+      },
+      {
+        "file": "src/components/Spinner/Spinner.tsx",
+        "gitBlob": "2a641af4e8b47a209c84c38fa48f9a894c497133",
+        "sha256": "d7d032e07b3c9dc7eb81166a4faa219b293752179197b5f58d3ac3720a642b9c"
+      },
+      {
+        "file": "src/foundations/accessibility.ts",
+        "gitBlob": "da1e9a4b4bd33ea977091e23eda4303769146f4d",
+        "sha256": "ddfe84c985f0573e93724bf5cfd63b985533e08be9bc1be0de955ead9f543e30"
+      },
+      {
+        "file": "src/foundations/actions/recipe.ts",
+        "gitBlob": "f4960cf0264aa50a0ddd92bfd4692c7b25f9a7d3",
+        "sha256": "2c7c304cbf1cf2e9b2d4739a8c1d388b3b5547c6ca39e481a23a48e677f2d4e4"
+      },
+      {
+        "file": "src/foundations/fields.ts",
+        "gitBlob": "7004e61c459df5a4fa6dd9c77a528259eb22ecc0",
+        "sha256": "a80adb451cdc2952de55184a1601b3988e184ee6b9a7dab53fc5625d9bf254f1"
+      },
+      {
+        "file": "src/foundations/theme/GlobalStyles.ts",
+        "gitBlob": "c25ceeb5f154323e9a01bf4eae84c1a748d1d632",
+        "sha256": "dad35691da5eddc5cb0376c91d60f9825e4ad98d1e30013c93be36aca8de2e96"
+      },
+      {
+        "file": "src/foundations/theme/theme.ts",
+        "gitBlob": "e581a0e60b49c955995c92b22ad037079480b388",
+        "sha256": "baa394783b213dd53508dfc1ea141a4882171feb239b97b2bd4dc70e2931cd72"
+      },
+      {
+        "file": "src/internal/CompoundControlContext.ts",
+        "gitBlob": "7ae484cf9d6cbc224bf6a1ef9737edc72946aed0",
+        "sha256": "a3684c15bb983bc56b73584edf5a4ff76f0bcea9e7a0d1134ff8f10243c28ad9"
+      },
+      {
+        "file": "src/internal/FieldControlContext.ts",
+        "gitBlob": "9f3a35abe8dd52af518fec0a9400fad82f17d5a1",
+        "sha256": "14600234b22dcea47f49e637c5fbdd87e84ac0a2c17e799a76ea3145c6d9d2f1"
+      },
+      {
+        "file": "src/internal/focus.ts",
+        "gitBlob": "632f065f29c892f097a5cb301ba8e8958f66a7c7",
+        "sha256": "6efcda8c49b907ad96be8f446ce036359f80175e19433293d4befbc469260c18"
+      },
+      {
+        "file": "src/internal/IconSlot/IconSlot.styles.ts",
+        "gitBlob": "bd7cedc9e7d85d25b7971189a1733bdf3676d9d3",
+        "sha256": "e1e8d9c38c2e00056323593fc94be33458a46877636243502e78d32884c956ba"
+      },
+      {
+        "file": "src/internal/IconSlot/IconSlot.tsx",
+        "gitBlob": "30540d39f7bd65aff8b83a5abe2037022aab551b",
+        "sha256": "b4bfa7598d4cb6d9f130e49cb32e7c6bf68663c92c6e18994b81372f1c444c8f"
+      },
+      {
+        "file": "src/internal/ModalLayer/ModalLayer.styles.ts",
+        "gitBlob": "e6b6a6eb027d13f2c3751bf8e3cc844425215c36",
+        "sha256": "9cde9b78a905110a10c85ca4f7e96eff6183501767485f39123e76b132558e0b"
+      },
+      {
+        "file": "src/internal/ModalLayer/ModalLayer.tsx",
+        "gitBlob": "87abab36f2a548719407d4ca93fbb6095c86732f",
+        "sha256": "1a65b8ca528735251f0073f9e857312b0db5841d850a66cdc3d4c32a122dd060"
+      },
+      {
+        "file": "src/internal/ModalLayer/stack.ts",
+        "gitBlob": "781592fc559b2460fd4a9925400821e9b2e5be47",
+        "sha256": "20f4b8327c4b7625ffa2bda0af756a5b4cccfa62e8d495f943a01e336e5c43db"
+      },
+      {
+        "file": "src/internal/useControllableState.ts",
+        "gitBlob": "f770dee779e42e24db78ed4383c6309f45b913f2",
+        "sha256": "ffbfdbf32c9cf0e67edf634f24036619945a98f80257758bd6da81806b3a1580"
+      },
+      {
+        "file": "src/internal/useFieldControl.ts",
+        "gitBlob": "35b038e926e326fbf2946cb15fb673507721613f",
+        "sha256": "80b8209d01919fb418f320efdebf6d7636ec4430f5c3aac66d12a28101ea3584"
+      },
+      {
+        "file": "src/internal/useIsClient.ts",
+        "gitBlob": "02308cfce943f370b5d1a1974913f3f9288ca7ba",
+        "sha256": "34efadfc9e4a39ed1d0b748bbea86356b155f7db5d14e3b5ca47fd5f25308276"
+      },
+      {
+        "file": "src/internal/useMergedRef.ts",
+        "gitBlob": "23fb2e18bf39901b0534136cdcb3e5663f1fc22d",
+        "sha256": "00b9ca681c08f08d71efa9cd108845f77dea934ee9a2858591c2fcaa06298f5e"
+      }
+    ],
+    "loadedSourceManifestSha256": "d13c84d81fb6f7d1b0e2a5dc73a01a3e1015e529fbce6573a26beacc1ef3c209"
+  },
+  "head": "f3a571214f6dbc2285c3e4004b2cbb52927b6e28",
+  "localOnly": true,
+  "cases": [
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "14c292bd0e7f702c5e5480819126fa66fe80cd7dc5ab01c48960807c96e340b0",
+      "nodes": 54,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 2
+      },
+      "pngSize": {
+        "width": 390,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-menu",
+      "fixture": true,
+      "action": "modal-menu",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "ea4057a5b2ca5b749d316e6f85851984aa732e2a1c0a055b7c8ea936c0b66f52",
+      "nodes": 44,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 390,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-reopen",
+      "fixture": true,
+      "action": "modal-reopen",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "6d39e20e3e4bb0a78b276c8674ae6e83686bc554f7ab670dc4dcf34885770c52",
+      "nodes": 44,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 390,
+        "height": 1100
+      }
+    },
+    {
+      "id": "drawer-open",
+      "fixture": true,
+      "action": "drawer-open",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "f4c69a037c91931665e20a95fa72de0f82bc4a675db521a37f933364ae1bbff7",
+      "nodes": 36,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 390,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-open",
+      "fixture": true,
+      "action": "modal-open",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "b245105a47412e09d64288f1f94df468faf1886cb2b0e0e2ae8b347c106b0966",
+      "nodes": 44,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 1440,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "68f2cff05f58ec5fe9e74380bdc379864f09b49fd08cb6ef47190871897b2eae",
+      "nodes": 54,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 2
+      },
+      "pngSize": {
+        "width": 1440,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-menu",
+      "fixture": true,
+      "action": "modal-menu",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "2781f8f9aa9128fdb119b21ede9165a26c0bdfb0b320c736c7cb907c9535c1ac",
+      "nodes": 44,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 1440,
+        "height": 1100
+      }
+    },
+    {
+      "id": "modal-reopen",
+      "fixture": true,
+      "action": "modal-reopen",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "b6c65035c2a0035a94a64a023e829a256948a00b9b1f0b9d3b8d7281880c7350",
+      "nodes": 44,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 1440,
+        "height": 1100
+      }
+    },
+    {
+      "id": "drawer-open",
+      "fixture": true,
+      "action": "drawer-open",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "09476de25429c27484003cdb43a9f03e512e5efc1ab8f6ef5090e445cc4aa0c3",
+      "nodes": 36,
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "pngSize": {
+        "width": 1440,
+        "height": 1100
+      }
+    }
+  ],
+  "failures": [
+    {
+      "id": "modal-open-390",
+      "message": "locator.waitFor: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('h1').first() to be visible\u001b[22m\n"
+    }
+  ],
+  "pageErrors": [
+    {
+      "id": "modal-open-390",
+      "message": "Cannot read properties of null (reading 'useContext')"
+    }
+  ],
+  "blockedHosts": [],
+  "serverClosed": true,
+  "browserClosed": true
+}

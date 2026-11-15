@@ -31,3 +31,45 @@ Build and declaration generation passed. The first API check correctly flagged8 
 The exact4.1.0 candidate tarball is206521 bytes, SHA256985b11e59d002a7d1beb5f22f14857457dd5c0b94ef6b49d8e3c220f6192a7f0. Packed audit files match source; both bins and the optional TypeScript tooling peer are present. README states publication/checksum prerequisites. The artifact is not published. Consumer official pins remain4.0.0 until the release exists and its checksum is verified; qualification temporarily links only the extracted candidate and uses each consumer's installed peers. No dependency store or copied dependency tree is used.
 
 Cupom candidate integration is4/4 exact DOM/CSS/geometry/PNG pairs (7/30-day aggregate demo at390/1440), with actual compiled4.1.0 and own React19.2.7/SC6.5.3. CLI source audit40/0 passes from the tarball; UI symlink and both bin wrappers were restored exactly. Admin/Teacher/Student integration and the Lab sealed build follow their coordinated slots. Full CI/release gates and human visual approval are still pending. No tag/package publication or deploy has occurred.
+
+## PR viewport evidence format
+
+Root requested evidence-only correction for five fixture cases whose full-page PNGs were1650px high
+under a1100px viewport: drawer-open, modal-menu, modal-nested, modal-open and modal-reopen at390/1440.
+Read the native workflow/component-quality and docs/visual-pr-review.md before action. The original
+capture fixture imported current src even under storybook-before; no compiled fixture or baseline
+Git fixture exists. Root reviewed the remedy: same explicitly current sanitized fixture in both
+phases, with all product component sources loaded from Gitbe8a316 before and Gitf3a5712 after.
+
+The fail-closed loader records37 baseline and38 after modules with Git blobs/SHA256; each recorded
+byte/hash was rechecked against Git. A src path absent from the pinned tree throws rather than reading
+new checkout code. Fixture hashes, React/DOM19.2.8, styled-components6.5.3, Montserrat5.2.8 and four
+local font hashes match between phases. After source/fixture inputs have no rendered delta from
+final runtimee032ced; the existing storybook-final artifact root is selected. No rebuild ran.
+
+Every field from all10 original baseline receipts is reproduced exactly, including all captured CSS,
+geometry, text, focus, inert layers and scroll/inline/computed overflow. The new metadata adds
+screenshot/repeated-read fields and does not normalize old values. All10 new before/after PNGs are
+byte-identical at390/1440x1100. All three raw reads match text/native tags/geometry/CSS/focus/inert/
+scroll across phases. The intended body inline-overflowhidden→auto transition is explicit while
+computed overflow remainshidden. No CSS assertion or field was masked.
+
+Two initial cold before attempts had React dispatcher errors before h1 readiness; they remain in the
+raw reports. Explicit include/dedupe alone did not resolve the cold start. A bounded readiness
+preflight now records its cold error/stack and requires heading readiness after one reload before
+fresh capture contexts. Both final phases record that preflight event explicitly; the selected10
+states have zero failures/page errors. The cause is not attributed to product code. Source origin
+and reproduction of the original raw receipts independently prove the actual baseline composition.
+
+The new evidence/pr-viewport/selection-manifest.json substitutes only these10 selections in the132
+matrix. All original raw images/receipts/manifests remain byte-identical. The selected set is now129
+byte-exact PNGs plus the same unmodified three calendar/Composer residual pairs. Summary, snapshots,
+origin control, both phase reports and Git provenance are versioned. Visual inspection of the mobile
+drawer and desktop nested modal confirms the screenshot boundary follows the visible window.
+Browser/server finally blocks completed; the CPU/browser slot was released before documentation.
+Native capture syntax and focused lint with explicit browser globals passed; formatting/diff passed.
+Component/runtime/policy/package/lock/fixture sources were preserved. No install, build, broad tests,
+push, CI, release or deploy was triggered.
+
+Exactly one next subtask: coordinator reviews the selection and packages the visual PR.
+Visual gate review: pending human.

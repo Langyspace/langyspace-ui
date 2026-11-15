@@ -9,3 +9,13 @@ Root owns Library, shared enforcement and Site/Cupom; bounded workers own Admin,
 Success: zero owned stylesheet/inline/manual CSS authoring violations in all seven source boundaries; a source-aware blocking check in each project; equivalent focused DOM/geometry/interaction evidence; complete source provenance for generated assets. Intentional output style tags are generated through styled-components and are not authored CSS exceptions.
 
 Library handoff boundary: the coordinator committed policy8aaa792, then delegated only runtime/catalog/tests/docs/evidence to this worker. Library scope is10 runtime violations plus42 catalog attributes, with141 component exports frozen. Consumer ownership and package/CI integration remain with their designated agents/coordinator. The fresh66-state matrix at two widths produces132 pairs; final selection may reuse source-invariant pairs after a focused correction, with complete attempt/source mapping retained.
+
+## PR viewport evidence follow-on
+
+The native visual-PR contract requires visible-window images for open modal/drawer states. The
+coordinator authorized an evidence-only recapture of drawer-open, modal-menu, modal-nested,
+modal-open and modal-reopen at390/1440. Ten new pairs in evidence/pr-viewport are1100px high and
+byte-identical before/after. selection-manifest.json overrides only those10 paths in the132-pair
+PR selection; all original raw evidence stays intact. Current selected PNGs are129 exact plus the
+same three unmodified calendar/Composer raster residual pairs. Component/runtime/policy/package
+sources are unchanged.

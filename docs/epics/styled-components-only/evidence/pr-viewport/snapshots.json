@@ -1,0 +1,205 @@
+{
+  "pairs": 10,
+  "cases": [
+    {
+      "id": "drawer-open-1440",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar drawer local"
+    },
+    {
+      "id": "drawer-open-390",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar drawer local"
+    },
+    {
+      "id": "modal-menu-1440",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Ações do modal"
+    },
+    {
+      "id": "modal-menu-390",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Ações do modal"
+    },
+    {
+      "id": "modal-nested-1440",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 2
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [true, false],
+      "focused": "Fechar modal filho"
+    },
+    {
+      "id": "modal-nested-390",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 2
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [true, false],
+      "focused": "Fechar modal filho"
+    },
+    {
+      "id": "modal-open-1440",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar modal pai"
+    },
+    {
+      "id": "modal-open-390",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar modal pai"
+    },
+    {
+      "id": "modal-reopen-1440",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 1440,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar modal pai"
+    },
+    {
+      "id": "modal-reopen-390",
+      "screenshot": {
+        "mode": "viewport",
+        "viewport": {
+          "width": 390,
+          "height": 1100
+        },
+        "modalCount": 1
+      },
+      "allThreeRawReadsEquivalent": true,
+      "intendedOwnershipChange": {
+        "bodyInlineOverflowBefore": "hidden",
+        "bodyInlineOverflowAfter": "auto",
+        "computedOverflowBoth": "hidden"
+      },
+      "appInert": true,
+      "layerInert": [false],
+      "focused": "Fechar modal pai"
+    }
+  ]
+}

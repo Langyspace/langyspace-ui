@@ -17,3 +17,14 @@
 - [ ] Product owner: approve current visual revision before integration/publication.
 
 Generated output is not hand-edited. Initial failed checks and superseded captures remain recorded; successful unchanged evidence is reused. No package version/release, push, PR, merge or deployment is delegated to this worker.
+
+## PR viewport evidence follow-on
+
+- [x] Read native visual-PR contract and inspect true fixture/source provenance.
+- [x] Obtain root review for a fail-closed Git baseline loader and identical current fixture.
+- [x] Recapture only five open-modal/drawer cases at390/1440 into separate viewport evidence.
+- [x] Prove every original baseline raw field, exact new10-pair PNG/DOM/CSS/lifecycle and Git origins.
+- [x] Preserve original132 pairs/reports and record cold preflight failures without hiding them.
+- [x] Prepare the132-pair PR selection with only10 overrides, run focused tooling checks and commit.
+
+Exactly one next subtask: coordinator reviews the new selection manifest and packages the visual PR.

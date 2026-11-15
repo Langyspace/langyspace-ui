@@ -29,3 +29,32 @@ The public chart/progress/Swiper/Composer props forward className to their roots
 UI's installed versions are React19.2.8/styled-components6.5.3. The earlier6.4.2 SSR observation came from Student, not this installed Library. Public Dialog/Drawer/ActionMenu portals are client-only and the public SSR path is checked; private multi-instance GlobalStyle SSR behavior is outside that assertion.
 
 The final reviewed interoperability boundary preserves native HTML style passthrough for nonconflicting properties. External inline writes to private Swiper --tx/--ty/--tr channels are not supported or claimed universally equivalent: the old attrs merge overwrote them, whereas an external inline declaration can outrank the new class. No important rule or prop filter was introduced. Four real Student/Teacher call sites and their loading wrappers have no such conflicts; their source hashes are recorded. Candidate adoption remains a coordinator check.
+
+## Reviewed PR viewport recapture
+
+The coordinator approved the evidence-only format correction before execution. Runtime.tsx is served
+as source via /@fs and is not bundled into the frozen Storybook. Merely selecting storybook-before
+would therefore import the current component checkout. The capture now uses the same native Vite
+static-server configuration with a pre-load Git source boundary: every requested src file must exist
+in the pinned Git tree, bytes come from git show, and Git blob/SHA256 are recorded. Baseline pins
+be8a316; after pinsf3a5712 and verifies checkout bytes. No baseline fallback is possible. The current
+sanitized Runtime/Runtime.styles fixture is identical in both phases and declared as current, with
+explicit hashes. Local Montserrat400/500/600/700 and React/SC versions/hashes are bound in reports.
+The after static root is the already compiled storybook-final, with no rendered source change since
+e032ced and no rebuild.
+
+The native captureVisualEvidence helper selects fullPage=false for a visible modal. PNG dimensions,
+screenshot mode, repeated raw reads and all provenance are persisted. The same five cases run at
+390/1440x1100. A native-comparer invocation restricted to the new10-pair directory checks exact
+text/tags/geometry/CSS/focus/inert/scroll, classifies only the intended body inline lock ownership,
+and reports PNG differences without normalization/thresholds. Each baseline receipt is also compared
+against every original raw field as an origin control. The new selection manifest replaces only10
+paths in the original132 selection; the original manifests/PNG/receipts are untouched.
+
+Two first cold source-fixture attempts failed with React dispatcher errors before heading readiness.
+Their reports remain raw. Explicit peer include/dedupe did not alone resolve the cold start. A bounded
+preflight records the cold stack, reloads once and requires the heading before fresh capture contexts;
+its errors/readiness are separate and explicit in each final phase report. No product cause is
+inferred from this harness startup. All selected capture contexts subsequently passed. Native
+browser/server finally blocks completed. Validation is the focused origin/10-pair visual block plus
+capture syntax/lint/format/diff; no full132 recapture, build, package or cloud operation.
