@@ -1,9 +1,11 @@
 # Migração para UI 4
 
-Candidato preparado, ainda não publicado. A v4 alinha a biblioteca aos contratos do
-React 19, adota um tema styled-components único e padroniza nomes de props. Nenhum
-componente público é retirado; os nomes abaixo mudam. Os produtos migram nos PRs de
-adoção do epic [ui-library-react-patterns](../epics/ui-library-react-patterns/plan.md).
+A [v4.0.0 foi publicada](https://github.com/Langyspace/langyspace-ui/releases/tag/v4.0.0)
+em 24/10/2026. A adoção em Site, Admin, Student, Teacher e Cupom foi concluída em
+14/11/2026. A v4 alinha a biblioteca aos contratos do React 19, adota um tema
+styled-components único e padroniza nomes de props. Nenhum componente público é
+retirado; os nomes abaixo mudam. O histórico está no epic
+[ui-library-react-patterns](../epics/ui-library-react-patterns/plan.md).
 
 ## Tema
 

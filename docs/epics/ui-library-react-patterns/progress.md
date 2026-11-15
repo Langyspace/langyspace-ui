@@ -124,3 +124,17 @@ product owner; por isso esses valores não entraram no tema por conta própria.
 Pendências que exigem desenho de API: o layout de agenda do Admin sobre
 `AvailabilityCalendar` (8 regras por seletor) e a quebra do BEM do Cupom em
 componentes com tema.
+
+## Encerramento da adoção — 14/11/2026
+
+A release v4.0.0 foi publicada em 24/10/2026. Site, Admin, Student, Teacher e
+Cupom adotaram o artefato imutável, tiveram as alterações mescladas e foram
+publicados em 14/11/2026. Os worktrees temporários descritos em T9 foram removidos
+após a conferência dos commits e das publicações; os repositórios canônicos e as
+referências Git foram preservados.
+
+O registro de T9 acima descreve a etapa de preparação em 23/10 e sua dívida
+conhecida, não uma adoção ainda pendente. A melhoria de legibilidade,
+modularização, abstração, escalabilidade, limpeza e lint dos consumidores segue
+no epic [code-quality-20261115](../code-quality-20261115/epic.md), com execução
+coordenada e sem nova alteração da API pública da biblioteca.
