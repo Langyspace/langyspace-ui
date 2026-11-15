@@ -124,7 +124,9 @@ export function inspectStylingSource(source, file, offset = 0) {
   const checkImport = (node, argument) => {
     if (!argument || !ts.isStringLiteralLike(argument)) return
     const value = argument.text
-    if (stylesheet.test(value) && !fontStylesheet.test(value))
+    const packageFont =
+      fontStylesheet.test(value) && !value.split('/').includes('..')
+    if (stylesheet.test(value) && !packageFont)
       report(
         'LSSTYLE001',
         node,

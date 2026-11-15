@@ -12,7 +12,8 @@
 - [x] Finish two ordinary-composition browser discriminants and final owner-only recapture.
 - [x] Refresh exact audit/source hashes, final evidence selection and scoped lint/format proof.
 - [x] Review complete diff and create local Codex commit; return clean ownership to coordinator.
-- [ ] Coordinator: API/bundle/package candidate, consumer adoption, broad CI and visual PR packet.
+- [x] Coordinator: review compatible declaration changes, build and pack exact4.1.0 candidate, verify source/audit metadata.
+- [ ] Coordinator: finish consumer qualification, release prerequisites, broad CI and visual PR packet.
 - [ ] Product owner: approve current visual revision before integration/publication.
 
 Generated output is not hand-edited. Initial failed checks and superseded captures remain recorded; successful unchanged evidence is reused. No package version/release, push, PR, merge or deployment is delegated to this worker.

@@ -7,6 +7,7 @@ import test from 'node:test'
 import { inspectStylingSource } from '../../audit/styling-source.mjs'
 import { inspectStylingHtml } from '../../audit/styling-html.mjs'
 import { auditStyling } from '../../audit/styling.mjs'
+import { auditArchitecture } from '../../audit/index.mjs'
 
 const ids = (source, file = 'src/Example.tsx') =>
   inspectStylingSource(source, file).map((failure) => failure.ruleId)
@@ -31,6 +32,7 @@ test('static, dynamic and CommonJS stylesheet imports cannot evade the styling o
     "export * from './own.scss'",
     "import('./own.sass')",
     "require('./own.less')",
+    "import '@fontsource/montserrat/../../own.css'",
     "import '@emotion/styled'",
   ])
     assert(ids(source).includes('LSSTYLE001'), source)
@@ -141,6 +143,56 @@ test('owned public/HTML/CSS files are audited and generated assets require exact
       /outside_root/,
     )
     await assert.rejects(auditStyling({ root, sourceRoots: [] }), /scope_empty/)
+    const cssBundle = 'body {color:red}'
+    await writeFile(join(root, 'public/UPPER.CSS'), cssBundle)
+    const cssManifest = {
+      ...manifest,
+      files: { 'UPPER.CSS': hash(cssBundle) },
+    }
+    const cssBytes = JSON.stringify(cssManifest)
+    await writeFile(join(root, 'public/manifest.json'), cssBytes)
+    await assert.rejects(
+      auditStyling({
+        root,
+        generatedAssets: [{ ...declaration, manifestSha256: hash(cssBytes) }],
+      }),
+      /plain_stylesheet_forbidden/,
+    )
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('Node module extensions retain architecture motion ownership', async () => {
+  const root = await mkdtemp(join(tmpdir(), 'langy-node-motion-'))
+  const paths = ['mjs', 'cjs', 'mts', 'cts'].map(
+    (extension) => `src/pulse.${extension}`,
+  )
+  try {
+    await mkdir(join(root, 'src'))
+    for (const path of paths)
+      await writeFile(
+        join(root, path),
+        'const pulse = keyframes`to {opacity:1;}`',
+      )
+    const initial = await auditArchitecture({ root })
+    assert.equal(
+      initial.diagnostics.filter((row) => row.message === 'unclassified motion')
+        .length,
+      4,
+    )
+    const classified = await auditArchitecture({
+      root,
+      requireExceptionExpiry: true,
+      today: '2026-11-15',
+      allowedDomainMotion: paths.map((path) => ({
+        path,
+        owner: 'Scheduling',
+        reason: 'Existing availability pulse moved with its owner',
+        expiresAt: '2027-11-01',
+      })),
+    })
+    assert.deepEqual(classified.diagnostics, [])
   } finally {
     await rm(root, { recursive: true, force: true })
   }

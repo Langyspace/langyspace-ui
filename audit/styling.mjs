@@ -91,7 +91,7 @@ async function generatedFiles(root, declarations) {
       const key = relative(root, checkedPath(root, `${base}/${name}`))
         .split(sep)
         .join('/')
-      if (stylesheet.has(extname(name)))
+      if (stylesheet.has(extname(name).toLowerCase()))
         throw new Error('styling_generated_plain_stylesheet_forbidden')
       if (sha256(await readFile(checkedPath(root, key))) !== hash)
         throw new Error('styling_generated_asset_hash_mismatch')

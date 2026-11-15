@@ -96,6 +96,8 @@
 
 ## Progressive guidance
 
+Owned component and live catalog presentation uses tagged styled-components. `pnpm run test:styling-system` rejects authored CSS/Sass/Less, JSX/HTML style, attrs style objects and manual DOM CSS writes. Package font stylesheets are allowed; generated bundles require exact reviewed source and asset provenance. Keep these checks in the existing release gate.
+
 Use `.agents/skills/langyspace-ui-workflow/SKILL.md` for component/API implementation, visual or
 interaction work, tokens/theming, Storybook/layout auditing, packaging, or release changes. Do not
 load it for simple read-only answers or isolated documentation.
