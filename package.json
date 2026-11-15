@@ -35,7 +35,8 @@
     }
   },
   "bin": {
-    "langyspace-ui-audit": "./audit/cli.mjs"
+    "langyspace-ui-audit": "./audit/cli.mjs",
+    "langyspace-styling-audit": "./audit/styling-cli.mjs"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -58,17 +59,23 @@
     "test:layout": "pnpm run build:storybook && node scripts/test-layout-action-contracts.mjs && node scripts/audit-storybook-layout.mjs",
     "test:package": "node scripts/smoke-test-package.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.json",
-    "validate:ui": "pnpm run test:button-system && pnpm run lint && pnpm run format:check && pnpm run typecheck && pnpm run test:storybook && pnpm run test:coverage && pnpm run build && pnpm run check:api && pnpm run test:bundle && pnpm run test:package && LAYOUT_AUDIT_SCREENSHOTS=1 pnpm run test:layout",
-    "write:api": "node scripts/check-public-api.mjs --write"
+    "validate:ui": "pnpm run test:styling-policy && pnpm run test:styling-system && pnpm run test:button-system && pnpm run lint && pnpm run format:check && pnpm run typecheck && pnpm run test:storybook && pnpm run test:coverage && pnpm run build && pnpm run check:api && pnpm run test:bundle && pnpm run test:package && LAYOUT_AUDIT_SCREENSHOTS=1 pnpm run test:layout",
+    "write:api": "node scripts/check-public-api.mjs --write",
+    "test:styling-policy": "node --test test/audit/styling.node-test.mjs",
+    "test:styling-system": "node audit/styling-cli.mjs scripts/styling-system.audit.config.mjs"
   },
   "peerDependencies": {
     "react": ">=19 <20",
     "react-dom": ">=19 <20",
     "react-hook-form": ">=7 <8",
-    "styled-components": ">=6 <7"
+    "styled-components": ">=6 <7",
+    "typescript": ">=5.9 <7"
   },
   "peerDependenciesMeta": {
     "react-hook-form": {
+      "optional": true
+    },
+    "typescript": {
       "optional": true
     }
   },
