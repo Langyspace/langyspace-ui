@@ -6,10 +6,30 @@ const canonicalButtonTypes = fileURLToPath(
   new URL('../src/components/Button/Button.types.ts', import.meta.url),
 )
 
-const sourceExtensions = new Set(['.js', '.jsx', '.ts', '.tsx'])
+const sourceExtensions = new Set([
+  '.js',
+  '.jsx',
+  '.mjs',
+  '.cjs',
+  '.ts',
+  '.tsx',
+  '.mts',
+  '.cts',
+])
 const ignoredSource = /(?:^|\/)[^/]+\.(?:test|spec)\.[cm]?[jt]sx?$|\.d\.ts$/
 const forbiddenRecipeDeclaration =
   /^\s*(?:background(?:-color)?|border(?:-color|-radius|-style|-width)?|box-shadow|color|font-size|font-weight|height|max-height|min-height|opacity|padding(?:-bottom|-left|-right|-top)?)\s*:/m
+
+export function defineStylingAuditConfig(config) {
+  return config
+}
+
+export async function auditStyling(config) {
+  // Preserve the existing dependency-light architecture audit for consumers that do not run
+  // the optional TypeScript-aware authoring policy.
+  const implementation = await import('./styling.mjs')
+  return implementation.auditStyling(config)
+}
 
 export function defineAuditConfig(config) {
   return config

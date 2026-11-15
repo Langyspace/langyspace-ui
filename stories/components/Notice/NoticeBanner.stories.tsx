@@ -1,3 +1,4 @@
+import * as StoryLayout from './NoticeBanner.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { Button } from '../../../src/components/Button/Button'
 import { NoticeBanner } from '../../../src/components/Notice/NoticeBanner'
@@ -54,9 +55,9 @@ export const NarrowStress: Story = {
   tags: ['layout-boundary'],
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: '18rem' }}>
+      <StoryLayout.NoticeStressPreview>
         <Story />
-      </div>
+      </StoryLayout.NoticeStressPreview>
     ),
   ],
   args: {

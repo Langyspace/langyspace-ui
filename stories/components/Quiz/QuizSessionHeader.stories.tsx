@@ -1,3 +1,4 @@
+import * as StoryLayout from './QuizSessionHeader.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { expect, userEvent, within, fn } from 'storybook/test'
@@ -17,9 +18,9 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: '30rem', margin: '0 auto' }}>
+      <StoryLayout.QuizSessionPreview>
         <Story />
-      </div>
+      </StoryLayout.QuizSessionPreview>
     ),
   ],
 } satisfies Meta<typeof QuizSessionHeader>

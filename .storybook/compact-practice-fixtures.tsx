@@ -1,3 +1,4 @@
+import * as StoryLayout from './compact-practice-fixtures.styles'
 import { useState } from 'react'
 import {
   Button,
@@ -6,7 +7,6 @@ import {
   FlashcardFace,
   FlashcardFlip,
   FlashcardFlipButton,
-  FlashcardFrame,
   FlashcardFront,
   FlashcardImagePanel,
   FlashcardRatingButton,
@@ -16,7 +16,6 @@ import {
   PracticeResultPanel,
   ShadowingActivePhrase,
   ShadowingControlDock,
-  ShadowingPanel,
   ShadowingPhraseStack,
   ShadowingReader,
   ShadowingRepetitions,
@@ -30,7 +29,7 @@ export function BoundedFlashcardExample({
 }) {
   const [flipped, setFlipped] = useState(false)
   return (
-    <FlashcardFrame style={{ height: 'calc(100svh - 9rem)' }}>
+    <StoryLayout.BoundedFlashcardPreview>
       <header>
         <Button onClick={() => setFlipped(false)}>Recomeçar</Button>
       </header>
@@ -73,18 +72,11 @@ export function BoundedFlashcardExample({
           </FlashcardFlip>
         </FlashcardDeck>
       </FlashcardStage>
-      <footer
-        style={{
-          display: 'flex',
-          flexShrink: 0,
-          flexDirection: 'column',
-          padding: '1rem',
-        }}
-      >
+      <StoryLayout.FlashcardControls>
         {flipped ? (
           <>
             <p>Você lembra?</p>
-            <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <StoryLayout.FlashcardRatings>
               <FlashcardRatingButton
                 grade="again"
                 interval="1 min"
@@ -113,13 +105,13 @@ export function BoundedFlashcardExample({
               >
                 Fácil
               </FlashcardRatingButton>
-            </div>
+            </StoryLayout.FlashcardRatings>
           </>
         ) : (
           <p>Toque no cartão para ver a tradução</p>
         )}
-      </footer>
-    </FlashcardFrame>
+      </StoryLayout.FlashcardControls>
+    </StoryLayout.BoundedFlashcardPreview>
   )
 }
 
@@ -132,8 +124,10 @@ export function BoundedShadowingExample({
   const [translation, setTranslation] = useState(true)
   const [speed, setSpeed] = useState('1x')
   return (
-    <ShadowingPanel style={{ height: 'calc(100svh - 9rem)' }}>
-      <header style={{ padding: '1rem' }}>Prática de fala · frase 1/3</header>
+    <StoryLayout.BoundedShadowingPreview>
+      <StoryLayout.ShadowingHeader>
+        Prática de fala · frase 1/3
+      </StoryLayout.ShadowingHeader>
       <ShadowingReader>
         <ShadowingPhraseStack>
           <ShadowingActivePhrase>
@@ -164,13 +158,13 @@ export function BoundedShadowingExample({
           onTranslationToggle={() => setTranslation(!translation)}
         />
       </ShadowingControlDock>
-    </ShadowingPanel>
+    </StoryLayout.BoundedShadowingPreview>
   )
 }
 
 export function BoundedCompletionExample() {
   return (
-    <FlashcardFrame style={{ height: 'calc(100svh - 9rem)' }}>
+    <StoryLayout.BoundedFlashcardPreview>
       <header>
         <Button>Voltar</Button>
       </header>
@@ -184,13 +178,13 @@ export function BoundedCompletionExample() {
           </>
         }
       />
-    </FlashcardFrame>
+    </StoryLayout.BoundedFlashcardPreview>
   )
 }
 
 export function ShadowingCompletionExample() {
   return (
-    <ShadowingPanel style={{ height: 'calc(100svh - 9rem)' }}>
+    <StoryLayout.BoundedShadowingPreview>
       <header>
         <Button>Voltar</Button>
       </header>
@@ -204,6 +198,6 @@ export function ShadowingCompletionExample() {
           </>
         }
       />
-    </ShadowingPanel>
+    </StoryLayout.BoundedShadowingPreview>
   )
 }

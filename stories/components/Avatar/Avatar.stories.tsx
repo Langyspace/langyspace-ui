@@ -1,3 +1,4 @@
+import * as StoryLayout from './Avatar.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import {
@@ -105,12 +106,12 @@ export const Stress: Story = {
     ),
   ],
   render: () => (
-    <StoryRow style={{ flexWrap: 'nowrap', justifyContent: 'flex-start' }}>
+    <StoryLayout.AvatarIdentityRow>
       <Avatar initials="MFA" />
-      <span style={{ minWidth: 0, overflowWrap: 'anywhere' }}>
+      <StoryLayout.AvatarLongName>
         Maria Fernanda de Albuquerque Nogueira Vasconcelos com identidade
         operacional extensa
-      </span>
-    </StoryRow>
+      </StoryLayout.AvatarLongName>
+    </StoryLayout.AvatarIdentityRow>
   ),
 }

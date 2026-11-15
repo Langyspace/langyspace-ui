@@ -1,4 +1,4 @@
-import { css, keyframes, styled } from 'styled-components'
+import { createGlobalStyle, css, keyframes, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
 import type {
@@ -8,10 +8,15 @@ import type {
   ActionMenuTone,
 } from './ActionMenu.types'
 import type { ActionMenuPosition } from './position'
+import { cssIdSelector } from '../../internal/cssIdSelector'
 
 interface ActionMenuMenuStyleProps {
   $align: ActionMenuAlign
   $placement: ActionMenuPlacement
+}
+
+interface ActionMenuPositionStyleProps {
+  $menuId: string
   $position: ActionMenuPosition | null
 }
 
@@ -62,17 +67,17 @@ export const Root = styled.div.withConfig({
   max-width: 100%;
 `
 
-// Coordinates follow the trigger on every layout pass, so they stay inline.
-export const Menu = styled.div.attrs<ActionMenuMenuStyleProps>(
-  ({ $position }) => ({
-    style: {
-      left: $position?.left,
-      maxHeight: $position?.maxHeight,
-      top: $position?.top,
-      visibility: $position ? 'visible' : 'hidden',
-    },
-  }),
-)`
+// One client-owned rule set per open menu; moving a trigger does not allocate new classes.
+export const MenuPosition = createGlobalStyle<ActionMenuPositionStyleProps>`
+  ${({ $menuId }) => cssIdSelector($menuId)} {
+    left: ${({ $position }) => ($position ? `${$position.left}px` : 'auto')};
+    max-height: ${({ $position }) => ($position ? `${$position.maxHeight}px` : 'none')};
+    top: ${({ $position }) => ($position ? `${$position.top}px` : 'auto')};
+    visibility: ${({ $position }) => ($position ? 'visible' : 'hidden')};
+  }
+`
+
+export const Menu = styled.div<ActionMenuMenuStyleProps>`
   --lsui-action-menu-enter-y: ${({ $placement }) =>
     $placement === 'top' ? theme.spacing[1] : `-${theme.spacing[1]}`};
 

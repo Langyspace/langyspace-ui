@@ -1,3 +1,4 @@
+import * as StoryLayout from './PracticeCardBody.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PracticeCardBody } from '../../../src/components/Practice/PracticeCardBody'
 
@@ -13,16 +14,9 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div
-        style={{
-          maxWidth: '20rem',
-          border: '1px solid #ececea',
-          borderRadius: '1rem',
-          overflow: 'hidden',
-        }}
-      >
+      <StoryLayout.PracticeLessonPreview>
         <Story />
-      </div>
+      </StoryLayout.PracticeLessonPreview>
     ),
   ],
 } satisfies Meta<typeof PracticeCardBody>
@@ -49,8 +43,8 @@ export const LongContent: Story = {
     trailingMeta: 'Refazer para reforçar',
   },
   render: (args) => (
-    <div style={{ maxWidth: '16.875rem' }}>
+    <StoryLayout.CompletedLessonPreview>
       <PracticeCardBody {...args} />
-    </div>
+    </StoryLayout.CompletedLessonPreview>
   ),
 }

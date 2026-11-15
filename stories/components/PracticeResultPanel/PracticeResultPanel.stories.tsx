@@ -1,3 +1,4 @@
+import * as StoryLayout from './PracticeResultPanel.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect, userEvent, within } from 'storybook/test'
 import { PracticeResultPanel } from '../../../src/components/PracticeResultPanel/PracticeResultPanel'
@@ -25,9 +26,9 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div style={{ width: '100%', maxWidth: '30rem', margin: '0 auto' }}>
+      <StoryLayout.PracticeResultPreview>
         <Story />
-      </div>
+      </StoryLayout.PracticeResultPreview>
     ),
   ],
 } satisfies Meta<typeof PracticeResultPanel>

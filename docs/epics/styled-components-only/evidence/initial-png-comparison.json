@@ -1,0 +1,51 @@
+{
+  "pairs": 132,
+  "exactPng": 129,
+  "different": [
+    {
+      "name": "composer-grow-1440.png",
+      "dimensions": {
+        "format": "raw",
+        "width": 1440,
+        "height": 1650,
+        "channels": 4,
+        "depth": "uchar",
+        "premultiplied": false,
+        "size": 9504000
+      },
+      "changedPixels": 17,
+      "maxChannelDelta": 1,
+      "totalAbsoluteChannelDelta": 32
+    },
+    {
+      "name": "modal-menu-390.png",
+      "dimensions": {
+        "format": "raw",
+        "width": 390,
+        "height": 1650,
+        "channels": 4,
+        "depth": "uchar",
+        "premultiplied": false,
+        "size": 2574000
+      },
+      "changedPixels": 135,
+      "maxChannelDelta": 2,
+      "totalAbsoluteChannelDelta": 489
+    },
+    {
+      "name": "modal-nested-1440.png",
+      "dimensions": {
+        "format": "raw",
+        "width": 1440,
+        "height": 1650,
+        "channels": 4,
+        "depth": "uchar",
+        "premultiplied": false,
+        "size": 9504000
+      },
+      "changedPixels": 43,
+      "maxChannelDelta": 2,
+      "totalAbsoluteChannelDelta": 159
+    }
+  ]
+}

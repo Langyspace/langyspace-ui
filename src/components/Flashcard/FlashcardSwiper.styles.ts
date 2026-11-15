@@ -1,5 +1,4 @@
-import { styled, keyframes } from 'styled-components'
-import type { CSSProperties } from 'react'
+import { css, styled, keyframes } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import type { FlashcardSwiperExit } from './FlashcardSwiper.types'
 
@@ -26,19 +25,30 @@ interface SwiperStyleProps {
   $exit: FlashcardSwiperExit | null
 }
 
-const exitVector = ({ $exit }: SwiperStyleProps): CSSProperties | undefined =>
-  $exit
-    ? ({
-        '--tr': $exit.rotate,
-        '--tx': $exit.x,
-        '--ty': $exit.y,
-      } as CSSProperties)
-    : undefined
-
-// The exit vector changes per rating, so it is passed as inline custom properties.
-export const Root = styled.div
-  .attrs<SwiperStyleProps>((props) => ({ style: exitVector(props) }))
-  .withConfig({ componentId: 'lsui-sc-flashcard-swiper' })`
+export const Root = styled.div.withConfig({
+  componentId: 'lsui-sc-flashcard-swiper',
+})<SwiperStyleProps>`
+  ${({ $exit }) =>
+    $exit?.rotate &&
+    css`
+      &&&& {
+        --tr: ${$exit.rotate};
+      }
+    `}
+  ${({ $exit }) =>
+    $exit?.x &&
+    css`
+      &&&& {
+        --tx: ${$exit.x};
+      }
+    `}
+  ${({ $exit }) =>
+    $exit?.y &&
+    css`
+      &&&& {
+        --ty: ${$exit.y};
+      }
+    `}
   position: absolute;
   inset: 0;
   z-index: 3;

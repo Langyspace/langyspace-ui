@@ -1,3 +1,4 @@
+import * as StoryLayout from './FieldRoot.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import { TextInput } from '../../../src/components/Form/TextInput'
@@ -14,9 +15,9 @@ const meta = {
   component: FieldRoot,
   decorators: [
     (Story) => (
-      <div style={{ margin: '0 auto', maxWidth: 480, width: '100%' }}>
+      <StoryLayout.FieldPreview>
         <Story />
-      </div>
+      </StoryLayout.FieldPreview>
     ),
   ],
   parameters: {
@@ -87,9 +88,9 @@ export const Stress: Story = {
   },
   decorators: [
     (Story) => (
-      <div style={{ margin: '0 auto', maxWidth: 280, width: '100%' }}>
+      <StoryLayout.CompactFieldPreview>
         <Story />
-      </div>
+      </StoryLayout.CompactFieldPreview>
     ),
   ],
 }

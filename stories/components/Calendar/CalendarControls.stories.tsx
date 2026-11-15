@@ -1,3 +1,4 @@
+import * as StoryLayout from './CalendarControls.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { CalendarControls } from '../../../src/components/Calendar/CalendarControls'
 import { styled } from 'styled-components'
@@ -50,8 +51,8 @@ export const LongLabel: Story = {
 
 export const NarrowContainer: Story = {
   render: (args) => (
-    <div style={{ maxWidth: '20rem' }}>
+    <StoryLayout.NarrowControlsPreview>
       <CalendarControls {...args} />
-    </div>
+    </StoryLayout.NarrowControlsPreview>
   ),
 }

@@ -1,0 +1,534 @@
+┌  Building storybook v10.5.10
+│
+◇  Cleaning outputDir: .local/styled-only/storybook-final
+│
+◇  Loading presets
+│
+◇  Building manager..
+│
+●  Building open services..
+│
+●  Building preview..
+│  Vite vite v8.2.2 building client environment for production...
+transforming...
+✓ 672 modules transformed.
+rendering chunks...
+computing gzip size...
+│  Vite .local/styled-only/storybook-final/assets/stacked-F0DWc_5U.svg
+│  5.22 kB │ gzip:   2.29 kB
+│  .local/styled-only/storybook-final/assets/horizontal-inverse-DzjC847x.svg
+│  10.27 kB │ gzip:   4.46 kB
+│  .local/styled-only/storybook-final/assets/horizontal-ct-Cp6C2.svg
+│  10.33 kB │ gzip:   4.48 kB
+│  .local/styled-only/storybook-final/assets/stacked-inverse-ToV_keaG.svg
+│  10.91 kB │ gzip:   4.60 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-600-normal-UVxSCcoG.woff2
+│  18.68 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-500-normal-DRFEGfly.woff2
+│  18.74 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-400-normal-BLhwKU8k.woff2
+│  18.78 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-700-normal-BdjcYUrC.woff2
+│  18.82 kB
+│  .local/styled-only/storybook-final/iframe.html
+│  19.24 kB │ gzip:   5.38 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-600-normal-CdhFl4lI.woff
+│  20.54 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-500-normal-Dok2oTci.woff
+│  20.60 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-400-normal-xItZbAXg.woff
+│  20.64 kB
+│  .local/styled-only/storybook-final/assets/montserrat-latin-700-normal-BWkrl476.woff
+│  20.67 kB
+│  .local/styled-only/storybook-final/assets/iframe-gX77Pq6n.css
+│  0.87 kB │ gzip:   0.25 kB
+│  .local/styled-only/storybook-final/assets/iframe-DzBxG9vm.js
+│  0.04 kB │ gzip:   0.06 kB
+│  .local/styled-only/storybook-final/assets/CompoundControlContext-Dg0tscMP.js
+│  0.22 kB │ gzip:   0.18 kB
+│  .local/styled-only/storybook-final/assets/components-DfYIBrxN.js
+│  0.23 kB │ gzip:   0.19 kB
+│  .local/styled-only/storybook-final/assets/chunk-242VQQM5-bHL6qIJq.js
+│  0.24 kB │ gzip:   0.20 kB
+│  .local/styled-only/storybook-final/assets/useControllableState-BLzN9_kl.js
+│  0.29 kB │ gzip:   0.24 kB
+│  .local/styled-only/storybook-final/assets/formatter-L2YTDE3Q-CRGuSxAF.js
+│  0.30 kB │ gzip:   0.24 kB
+│  .local/styled-only/storybook-final/assets/alpha-DQfDhJnX.js
+│  0.31 kB │ gzip:   0.24 kB
+│  .local/styled-only/storybook-final/assets/chunk-QQBDHPVZ-DC5n6Pix.js
+│  0.32 kB │ gzip:   0.20 kB
+│  .local/styled-only/storybook-final/assets/cardRecipe-D-eyWihY.js
+│  0.35 kB │ gzip:   0.27 kB
+│  .local/styled-only/storybook-final/assets/useMergedRef-BSkIKYoe.js
+│  0.39 kB │ gzip:   0.26 kB
+│  .local/styled-only/storybook-final/assets/useFieldControl-QvvEm9Xy.js
+│  0.40 kB │ gzip:   0.27 kB
+│  .local/styled-only/storybook-final/assets/BrandLogo.stories-7BC_C3Hq.js
+│  0.43 kB │ gzip:   0.29 kB
+│  .local/styled-only/storybook-final/assets/Skeleton.stories-cb-B-pZe.js
+│  0.45 kB │ gzip:   0.31 kB
+│  .local/styled-only/storybook-final/assets/Card-D7AspFYi.js
+│  0.46 kB │ gzip:   0.32 kB
+│  .local/styled-only/storybook-final/assets/AuthLegalText.stories-DbyNqj8P.js
+│  0.47 kB │ gzip:   0.32 kB
+│  .local/styled-only/storybook-final/assets/ShadowingReader.stories-BNn3wfCd.js
+│  0.48 kB │ gzip:   0.32 kB
+│  .local/styled-only/storybook-final/assets/CalendarScroller.stories-CE9h-5a8.js
+│  0.48 kB │ gzip:   0.32 kB
+│  .local/styled-only/storybook-final/assets/AuthTopLink.stories-CTDJLLkg.js
+│  0.48 kB │ gzip:   0.33 kB
+│  .local/styled-only/storybook-final/assets/PracticeCardCover.stories-Dl_At2wR.js
+│  0.48 kB │ gzip:   0.32 kB
+│  .local/styled-only/storybook-final/assets/ShadowingControlDock.stories-CWH4Az8T.js
+│  0.49 kB │ gzip:   0.33 kB
+│  .local/styled-only/storybook-final/assets/ShadowingPhraseStack.stories-Dm8X9e5_.js
+│  0.49 kB │ gzip:   0.33 kB
+│  .local/styled-only/storybook-final/assets/ShadowingTranslation.stories-in4zsN0T.js
+│  0.49 kB │ gzip:   0.33 kB
+│  .local/styled-only/storybook-final/assets/ShadowingActivePhrase.stories-zJoMDESV.js
+│  0.49 kB │ gzip:   0.33 kB
+│  .local/styled-only/storybook-final/assets/AuthHeader.stories-DOKcEihV.js
+│  0.51 kB │ gzip:   0.35 kB
+│  .local/styled-only/storybook-final/assets/react-Bl2r1tuC.js
+│  0.58 kB │ gzip:   0.34 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFlipHint.stories-BYJbLNui.js
+│  0.61 kB │ gzip:   0.40 kB
+│  .local/styled-only/storybook-final/assets/FlashcardImagePanel.stories-CROpt8fv.js
+│  0.62 kB │ gzip:   0.40 kB
+│  .local/styled-only/storybook-final/assets/AuthLegalText-Blby52gV.js
+│  0.65 kB │ gzip:   0.44 kB
+│  .local/styled-only/storybook-final/assets/LinkElement-C3U2-VHG.js
+│  0.67 kB │ gzip:   0.41 kB
+│  .local/styled-only/storybook-final/assets/FlashcardDeck.stories-n5orK0-A.js
+│  0.67 kB │ gzip:   0.40 kB
+│  .local/styled-only/storybook-final/assets/AuthActions-DitrhQ1c.js
+│  0.68 kB │ gzip:   0.44 kB
+│  .local/styled-only/storybook-final/assets/FlashcardStage.stories-BnSr3Y2t.js
+│  0.71 kB │ gzip:   0.41 kB
+│  .local/styled-only/storybook-final/assets/Pressable-Bx_pJ8tU.js
+│  0.71 kB │ gzip:   0.48 kB
+│  .local/styled-only/storybook-final/assets/AuthForm-CS0UQtZh.js
+│  0.73 kB │ gzip:   0.46 kB
+│  .local/styled-only/storybook-final/assets/AuthForm.stories-CGlyuA2Y.js
+│  0.74 kB │ gzip:   0.43 kB
+│  .local/styled-only/storybook-final/assets/FlashcardBack.stories-GqE0grj1.js
+│  0.75 kB │ gzip:   0.47 kB
+│  .local/styled-only/storybook-final/assets/ShadowingRepetitions.stories-BNViYyGF.js
+│  0.76 kB │ gzip:   0.40 kB
+│  .local/styled-only/storybook-final/assets/ToastViewport-DvZyFt49.js
+│  0.77 kB │ gzip:   0.49 kB
+│  .local/styled-only/storybook-final/assets/CalendarScroller-6YnS7QYF.js
+│  0.78 kB │ gzip:   0.50 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFlip.stories-4lI7iugU.js
+│  0.82 kB │ gzip:   0.44 kB
+│  .local/styled-only/storybook-final/assets/ShadowingActivePhrase-tqrNnaXp.js
+│  0.83 kB │ gzip:   0.48 kB
+│  .local/styled-only/storybook-final/assets/fixtures-DsX_k8xX.js
+│  0.90 kB │ gzip:   0.50 kB
+│  .local/styled-only/storybook-final/assets/FormStack.stories-BSF9eX60.js
+│  0.92 kB │ gzip:   0.56 kB
+│  .local/styled-only/storybook-final/assets/cssIdSelector-DufgT1EU.js
+│  0.93 kB │ gzip:   0.56 kB
+│  .local/styled-only/storybook-final/assets/SidebarNavigation.stories-DqEeNjVC.js
+│  0.93 kB │ gzip:   0.55 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFlipButton.stories-DCh7iuWY.js
+│  0.94 kB │ gzip:   0.55 kB
+│  .local/styled-only/storybook-final/assets/DocumentNavigation.stories-DhRECNCh.js
+│  0.94 kB │ gzip:   0.55 kB
+│  .local/styled-only/storybook-final/assets/DocumentHeader.stories-ByAP0ugc.js
+│  0.94 kB │ gzip:   0.56 kB
+│  .local/styled-only/storybook-final/assets/SelectInput-CzL0c8YZ.js
+│  0.95 kB │ gzip:   0.56 kB
+│  .local/styled-only/storybook-final/assets/QuizBlank.stories-vYszZBKD.js
+│  0.95 kB │ gzip:   0.60 kB
+│  .local/styled-only/storybook-final/assets/PageDescription.stories-DVBwgPGv.js
+│  0.95 kB │ gzip:   0.57 kB
+│  .local/styled-only/storybook-final/assets/FieldCounter.stories-Cma1OBqY.js
+│  0.96 kB │ gzip:   0.58 kB
+│  .local/styled-only/storybook-final/assets/QuizMetadata.stories-C3hHNaJ4.js
+│  0.96 kB │ gzip:   0.58 kB
+│  .local/styled-only/storybook-final/assets/ShadowingControlDock-DXd93EAt.js
+│  0.98 kB │ gzip:   0.54 kB
+│  .local/styled-only/storybook-final/assets/ShadowingReader-C5pd1wQZ.js
+│  0.99 kB │ gzip:   0.52 kB
+│  .local/styled-only/storybook-final/assets/ShadowingPhraseStack-JqGDELiI.js
+│  1.01 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/ShadowingContextPhrase.stories-CjkbqhzV.js
+│  1.01 kB │ gzip:   0.59 kB
+│  .local/styled-only/storybook-final/assets/PageTitle.stories-BcGuNMUw.js
+│  1.01 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/ShadowingPanel.stories-C4Bhs5rP.js
+│  1.02 kB │ gzip:   0.48 kB
+│  .local/styled-only/storybook-final/assets/AuthTokenLabel.stories-CLaDJlO4.js
+│  1.03 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/SidebarFrame.stories-BMfmaQzG.js
+│  1.04 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/FieldLabelRow.stories-rOID_2dh.js
+│  1.04 kB │ gzip:   0.63 kB
+│  .local/styled-only/storybook-final/assets/FormError.stories-2GujbjpN.js
+│  1.04 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/ConnectionNotice.stories-4DCR_8Sf.js
+│  1.04 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/BrandLink.stories-ClLN60-1.js
+│  1.04 kB │ gzip:   0.63 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFront.stories-CtiOWu2r.js
+│  1.04 kB │ gzip:   0.57 kB
+│  .local/styled-only/storybook-final/assets/TextareaInput-CA5qBvrn.js
+│  1.05 kB │ gzip:   0.61 kB
+│  .local/styled-only/storybook-final/assets/ShadowingControlCluster.stories-D_TPFGAq.js
+│  1.05 kB │ gzip:   0.60 kB
+│  .local/styled-only/storybook-final/assets/QuizPromptHeader.stories-Cr3W0lEF.js
+│  1.05 kB │ gzip:   0.63 kB
+│  .local/styled-only/storybook-final/assets/AuthTopLink-7NQgt8g0.js
+│  1.06 kB │ gzip:   0.58 kB
+│  .local/styled-only/storybook-final/assets/QuizBadge.stories-DbDMHjmW.js
+│  1.06 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/PracticeProgressBar-DC9YoEPM.js
+│  1.07 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/InlineNotice.stories-sua13fB_.js
+│  1.07 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/Skeleton-KL5sq6OK.js
+│  1.08 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/DocumentHeaderContent.stories-CdfnrOM1.js
+│  1.11 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/AuthProgress.stories-BSyOEBKx.js
+│  1.12 kB │ gzip:   0.66 kB
+│  .local/styled-only/storybook-final/assets/CardLink.stories-CxHcEu3U.js
+│  1.13 kB │ gzip:   0.66 kB
+│  .local/styled-only/storybook-final/assets/AuthActions.stories-DNyvWOLB.js
+│  1.14 kB │ gzip:   0.57 kB
+│  .local/styled-only/storybook-final/assets/AuthChannelHint.stories-CpR133R3.js
+│  1.14 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/QuizQuestion.stories-Cv3zyYfF.js
+│  1.16 kB │ gzip:   0.70 kB
+│  .local/styled-only/storybook-final/assets/FormActions.stories-DQ7s8f51.js
+│  1.18 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/FlashcardWord.stories-CAYLRGrH.js
+│  1.19 kB │ gzip:   0.58 kB
+│  .local/styled-only/storybook-final/assets/rolldown-runtime-DkW27tQK.js
+│  1.19 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/Spinner-ixqxeQPr.js
+│  1.20 kB │ gzip:   0.69 kB
+│  .local/styled-only/storybook-final/assets/ShadowingTranslation-DLX11Vg9.js
+│  1.20 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/AuthEyebrow.stories-WKPDmOXA.js
+│  1.21 kB │ gzip:   0.72 kB
+│  .local/styled-only/storybook-final/assets/flashcardWordLayout-Bt_WdTNs.js
+│  1.22 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFace.stories-BqBHUPa4.js
+│  1.26 kB │ gzip:   0.56 kB
+│  .local/styled-only/storybook-final/assets/FileInput.stories-BNKMVIM0.js
+│  1.29 kB │ gzip:   0.71 kB
+│  .local/styled-only/storybook-final/assets/PracticeLevelBadge.stories-CaT4Dagj.js
+│  1.30 kB │ gzip:   0.74 kB
+│  .local/styled-only/storybook-final/assets/DocumentNavigationLink.stories-BcxjSkyT.js
+│  1.30 kB │ gzip:   0.75 kB
+│  .local/styled-only/storybook-final/assets/preload-helper-wdlQj8DP.js
+│  1.31 kB │ gzip:   0.74 kB
+│  .local/styled-only/storybook-final/assets/TextareaInput.stories-lz2coJCv.js
+│  1.36 kB │ gzip:   0.65 kB
+│  .local/styled-only/storybook-final/assets/BottomNavigation.stories-CzjgNbcW.js
+│  1.37 kB │ gzip:   0.80 kB
+│  .local/styled-only/storybook-final/assets/Pressable.stories-BFSHS8N2.js
+│  1.38 kB │ gzip:   0.70 kB
+│  .local/styled-only/storybook-final/assets/BottomNavigationLink.stories-BbgqniOm.js
+│  1.39 kB │ gzip:   0.82 kB
+│  .local/styled-only/storybook-final/assets/ToastViewport.stories-BIWNF0Ig.js
+│  1.39 kB │ gzip:   0.66 kB
+│  .local/styled-only/storybook-final/assets/Checkbox.stories-DqTCcNUA.js
+│  1.40 kB │ gzip:   0.72 kB
+│  .local/styled-only/storybook-final/assets/TextInput-uwmgSpc_.js
+│  1.41 kB │ gzip:   0.73 kB
+│  .local/styled-only/storybook-final/assets/RadioButton.stories-CrlrrBPD.js
+│  1.41 kB │ gzip:   0.72 kB
+│  .local/styled-only/storybook-final/assets/FlashcardAudioButton.stories-Ccgyjp9h.js
+│  1.41 kB │ gzip:   0.63 kB
+│  .local/styled-only/storybook-final/assets/QuizFeedback.stories-C8MKXiJl.js
+│  1.45 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/PracticeCardCover-D2B2XcXk.js
+│  1.47 kB │ gzip:   0.73 kB
+│  .local/styled-only/storybook-final/assets/FlashcardWordSkeleton.stories-Dhr8QV2b.js
+│  1.47 kB │ gzip:   0.73 kB
+│  .local/styled-only/storybook-final/assets/Spinner.stories-D2vEbA8S.js
+│  1.48 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/KeyValueList.stories-xBz7tl7n.js
+│  1.50 kB │ gzip:   0.81 kB
+│  .local/styled-only/storybook-final/assets/DefinitionItem.stories-lt1LXMgd.js
+│  1.51 kB │ gzip:   0.79 kB
+│  .local/styled-only/storybook-final/assets/SessionProgress.stories-Bl_Pznec.js
+│  1.53 kB │ gzip:   0.79 kB
+│  .local/styled-only/storybook-final/assets/BrandLogo-ZmvrKuTM.js
+│  1.55 kB │ gzip:   0.67 kB
+│  .local/styled-only/storybook-final/assets/NavigationLink.stories-Dvx8feJo.js
+│  1.61 kB │ gzip:   0.89 kB
+│  .local/styled-only/storybook-final/assets/AuthHeader-BH6o9MOM.js
+│  1.62 kB │ gzip:   0.80 kB
+│  .local/styled-only/storybook-final/assets/fields-Cp6j4toq.js
+│  1.62 kB │ gzip:   0.81 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFrame.stories-pyYxryLd.js
+│  1.63 kB │ gzip:   0.62 kB
+│  .local/styled-only/storybook-final/assets/Toaster.stories-B3otis9o.js
+│  1.63 kB │ gzip:   0.83 kB
+│  .local/styled-only/storybook-final/assets/AuthChannelIcon.stories-B0_FWPXy.js
+│  1.67 kB │ gzip:   0.89 kB
+│  .local/styled-only/storybook-final/assets/chunk-IMSF75WX-CGYlPTyG.js
+│  1.67 kB │ gzip:   0.91 kB
+│  .local/styled-only/storybook-final/assets/SelectInput.stories-lCWUQrgb.js
+│  1.75 kB │ gzip:   0.70 kB
+│  .local/styled-only/storybook-final/assets/PracticeCard.stories-BddTueAj.js
+│  1.76 kB │ gzip:   0.96 kB
+│  .local/styled-only/storybook-final/assets/DetailRow.stories-BVkeEWr9.js
+│  1.82 kB │ gzip:   0.87 kB
+│  .local/styled-only/storybook-final/assets/ShadowingWord.stories-XaSpx0xi.js
+│  1.83 kB │ gzip:   0.85 kB
+│  .local/styled-only/storybook-final/assets/StatusChip.stories-CDi7WG9X.js
+│  1.84 kB │ gzip:   0.84 kB
+│  .local/styled-only/storybook-final/assets/AuthSuccessState.stories-BP841rsz.js
+│  1.86 kB │ gzip:   0.99 kB
+│  .local/styled-only/storybook-final/assets/NavigationButton.stories-CVE6O-Xh.js
+│  1.92 kB │ gzip:   1.00 kB
+│  .local/styled-only/storybook-final/assets/PracticePlaybackControls.stories-CXV8I4GI.js
+│  1.96 kB │ gzip:   0.74 kB
+│  .local/styled-only/storybook-final/assets/AuthResendAction.stories-D_iokRmj.js
+│  1.97 kB │ gzip:   0.94 kB
+│  .local/styled-only/storybook-final/assets/ShadowingRepetitions-0Jblilpn.js
+│  1.98 kB │ gzip:   1.03 kB
+│  .local/styled-only/storybook-final/assets/CalendarControls.stories-CGxfeocr.js
+│  2.00 kB │ gzip:   0.87 kB
+│  .local/styled-only/storybook-final/assets/WeeklyCountChart.stories-BPnqTHwD.js
+│  2.16 kB │ gzip:   1.03 kB
+│  .local/styled-only/storybook-final/assets/Toaster-D3loXVZM.js
+│  2.17 kB │ gzip:   0.98 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFlipButton-IjHrTb2O.js
+│  2.20 kB │ gzip:   0.99 kB
+│  .local/styled-only/storybook-final/assets/ToastProvider.stories-C7vQ4OOu.js
+│  2.21 kB │ gzip:   1.15 kB
+│  .local/styled-only/storybook-final/assets/Card.stories-DmSHi2wv.js
+│  2.24 kB │ gzip:   0.86 kB
+│  .local/styled-only/storybook-final/assets/FieldRoot-EpGm2nME.js
+│  2.25 kB │ gzip:   1.06 kB
+│  .local/styled-only/storybook-final/assets/FlashcardGhost.stories-INS3RZHk.js
+│  2.26 kB │ gzip:   1.15 kB
+│  .local/styled-only/storybook-final/assets/GroupedBarChart.stories-DX3fnFAJ.js
+│  2.29 kB │ gzip:   1.20 kB
+│  .local/styled-only/storybook-final/assets/PhoneField.stories-BYbxAPfa.js
+│  2.35 kB │ gzip:   0.91 kB
+│  .local/styled-only/storybook-final/assets/AuthFooter.stories-DIRekrB3.js
+│  2.35 kB │ gzip:   1.14 kB
+│  .local/styled-only/storybook-final/assets/ChoiceCard.stories-DEh5Srrz.js
+│  2.39 kB │ gzip:   1.07 kB
+│  .local/styled-only/storybook-final/assets/ToggleButton.stories-BHmbxr8C.js
+│  2.44 kB │ gzip:   1.07 kB
+│  .local/styled-only/storybook-final/assets/AuthFrame.stories-DI4UYE4-.js
+│  2.45 kB │ gzip:   1.01 kB
+│  .local/styled-only/storybook-final/assets/FlashcardAudioButton-CfiXAzcc.js
+│  2.45 kB │ gzip:   1.23 kB
+│  .local/styled-only/storybook-final/assets/MessageBubble-hnOTAgsR.js
+│  2.46 kB │ gzip:   1.04 kB
+│  .local/styled-only/storybook-final/assets/FlashcardRatingButton.stories-L0zSJShb.js
+│  2.47 kB │ gzip:   0.89 kB
+│  .local/styled-only/storybook-final/assets/FlashcardSwiper.stories---f7cd7v.js
+│  2.47 kB │ gzip:   1.20 kB
+│  .local/styled-only/storybook-final/assets/PracticeResultPanel-C8LO_D9-.js
+│  2.56 kB │ gzip:   1.15 kB
+│  .local/styled-only/storybook-final/assets/Avatar-C63ymIyf.js
+│  2.58 kB │ gzip:   1.10 kB
+│  .local/styled-only/storybook-final/assets/MessageThreadHeader-IS7v9ezm.js
+│  2.59 kB │ gzip:   1.01 kB
+│  .local/styled-only/storybook-final/assets/QuizFeedback-BhRWKFfB.js
+│  2.59 kB │ gzip:   1.10 kB
+│  .local/styled-only/storybook-final/assets/CalendarControls-yAzZ2_dK.js
+│  2.66 kB │ gzip:   1.00 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFrame-UMIxud6c.js
+│  2.69 kB │ gzip:   1.13 kB
+│  .local/styled-only/storybook-final/assets/PracticeProgressBar.stories-BK05HQ1T.js
+│  2.70 kB │ gzip:   0.94 kB
+│  .local/styled-only/storybook-final/assets/IconButton-D92Ohdmk.js
+│  2.70 kB │ gzip:   1.11 kB
+│  .local/styled-only/storybook-final/assets/PracticeCardSkeletonBody.stories-D2lcHB6S.js
+│  2.73 kB │ gzip:   1.11 kB
+│  .local/styled-only/storybook-final/assets/FilterSelect.stories-DRw8HqVS.js
+│  2.75 kB │ gzip:   1.24 kB
+│  .local/styled-only/storybook-final/assets/StatePanel.stories-C5cWro5f.js
+│  2.78 kB │ gzip:   1.07 kB
+│  .local/styled-only/storybook-final/assets/IconButton.stories-CXEIjW3v.js
+│  2.86 kB │ gzip:   1.20 kB
+│  .local/styled-only/storybook-final/assets/AuthNotice.stories-BxTmJ3VK.js
+│  3.06 kB │ gzip:   1.38 kB
+│  .local/styled-only/storybook-final/assets/NotificationItem.stories-CixLZp4b.js
+│  3.16 kB │ gzip:   1.23 kB
+│  .local/styled-only/storybook-final/assets/SearchInput-Cjcp6NKL.js
+│  3.16 kB │ gzip:   1.40 kB
+│  .local/styled-only/storybook-final/assets/ToastItem-CKR542X4.js
+│  3.19 kB │ gzip:   1.27 kB
+│  .local/styled-only/storybook-final/assets/FlashcardRatingButton-Dn6dtaiG.js
+│  3.30 kB │ gzip:   1.44 kB
+│  .local/styled-only/storybook-final/assets/StatePanel-B8ZdYQVc.js
+│  3.31 kB │ gzip:   1.25 kB
+│  .local/styled-only/storybook-final/assets/PracticeCardBody.stories-vt4s63ZN.js
+│  3.36 kB │ gzip:   1.36 kB
+│  .local/styled-only/storybook-final/assets/chunk-DRQKCCAG-DvsmU7ha.js
+│  3.39 kB │ gzip:   1.41 kB
+│  .local/styled-only/storybook-final/assets/MessageBubble.stories-ow8bvQwK.js
+│  3.40 kB │ gzip:   1.14 kB
+│  .local/styled-only/storybook-final/assets/ToastItem.stories-qzkCvZQV.js
+│  3.42 kB │ gzip:   1.28 kB
+│  .local/styled-only/storybook-final/assets/CompoundControl-CYsa0nfq.js
+│  3.48 kB │ gzip:   1.31 kB
+│  .local/styled-only/storybook-final/assets/Theme.stories-0UzST0H2.js
+│  3.49 kB │ gzip:   1.42 kB
+│  .local/styled-only/storybook-final/assets/ConversationRow.stories-BJB0wsh9.js
+│  3.49 kB │ gzip:   1.35 kB
+│  .local/styled-only/storybook-final/assets/TextInput.stories-CCcQqKKQ.js
+│  3.49 kB │ gzip:   1.11 kB
+│  .local/styled-only/storybook-final/assets/FilterPills-D7YK8u9f.js
+│  3.52 kB │ gzip:   1.47 kB
+│  .local/styled-only/storybook-final/assets/PracticeResultPanel.stories-D3Mzs-YT.js
+│  3.52 kB │ gzip:   1.33 kB
+│  .local/styled-only/storybook-final/assets/MetricSummary.stories-o8j-Soep.js
+│  3.54 kB │ gzip:   1.31 kB
+│  .local/styled-only/storybook-final/assets/react-dom-BzEl8usk.js
+│  3.58 kB │ gzip:   1.36 kB
+│  .local/styled-only/storybook-final/assets/StatusChip-B-lDvUqY.js
+│  3.58 kB │ gzip:   1.16 kB
+│  .local/styled-only/storybook-final/assets/Button-Y-xslDnF.js
+│  3.62 kB │ gzip:   1.40 kB
+│  .local/styled-only/storybook-final/assets/StatCard.stories-Re_a25Pr.js
+│  3.76 kB │ gzip:   1.56 kB
+│  .local/styled-only/storybook-final/assets/SearchInput.stories-0GrIGyS_.js
+│  3.79 kB │ gzip:   1.38 kB
+│  .local/styled-only/storybook-final/assets/FilterToolbar.stories-DvXUTeAW.js
+│  3.88 kB │ gzip:   1.52 kB
+│  .local/styled-only/storybook-final/assets/CompoundControl.stories-BtBjqLVW.js
+│  3.89 kB │ gzip:   1.29 kB
+│  .local/styled-only/storybook-final/assets/FilterPills.stories-4RTPIlRa.js
+│  3.97 kB │ gzip:   1.38 kB
+│  .local/styled-only/storybook-final/assets/SectionHeader.stories-CFbmd5fD.js
+│  4.03 kB │ gzip:   1.56 kB
+│  .local/styled-only/storybook-final/assets/flashcard-fixtures-B_zZ59gr.js
+│  4.15 kB │ gzip:   1.41 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFeedback.stories-B7SsEqdB.js
+│  4.25 kB │ gzip:   1.75 kB
+│  .local/styled-only/storybook-final/assets/ActionLink.stories-7m-LRdFE.js
+│  4.25 kB │ gzip:   1.53 kB
+│  .local/styled-only/storybook-final/assets/FlashcardProgress.stories-D82h5DAJ.js
+│  4.34 kB │ gzip:   1.73 kB
+│  .local/styled-only/storybook-final/assets/AuthBrandContent.stories-D85oqlbi.js
+│  4.41 kB │ gzip:   1.97 kB
+│  .local/styled-only/storybook-final/assets/FieldRoot.stories-COgkijoH.js
+│  4.45 kB │ gzip:   1.56 kB
+│  .local/styled-only/storybook-final/assets/Avatar.stories-CANcpbP8.js
+│  4.45 kB │ gzip:   1.71 kB
+│  .local/styled-only/storybook-final/assets/MessageThreadHeader.stories-DSUbYAYF.js
+│  4.51 kB │ gzip:   1.53 kB
+│  .local/styled-only/storybook-final/assets/Button.stories-DhlY8KIc.js
+│  4.52 kB │ gzip:   1.57 kB
+│  .local/styled-only/storybook-final/assets/AuthFrame-DVbmZT1x.js
+│  4.59 kB │ gzip:   1.38 kB
+│  .local/styled-only/storybook-final/assets/ScheduleRow.stories-OMfL1OAQ.js
+│  4.59 kB │ gzip:   1.70 kB
+│  .local/styled-only/storybook-final/assets/MessageComposer-UjyG0u6s.js
+│  4.81 kB │ gzip:   1.88 kB
+│  .local/styled-only/storybook-final/assets/NoticeBanner.stories-C5Q-qKFt.js
+│  4.92 kB │ gzip:   1.68 kB
+│  .local/styled-only/storybook-final/assets/recipe-ClP5IE0O.js
+│  5.06 kB │ gzip:   1.36 kB
+│  .local/styled-only/storybook-final/assets/chunk-5GYAEUAU-BGgO7bU4.js
+│  5.14 kB │ gzip:   1.93 kB
+│  .local/styled-only/storybook-final/assets/QuizOption.stories-CDWzTrnP.js
+│  5.44 kB │ gzip:   2.00 kB
+│  .local/styled-only/storybook-final/assets/QuizSessionHeader.stories-BqQO3aXt.js
+│  5.49 kB │ gzip:   2.34 kB
+│  .local/styled-only/storybook-final/assets/MessageComposer.stories-ZNT0pty2.js
+│  5.56 kB │ gzip:   1.56 kB
+│  .local/styled-only/storybook-final/assets/Drawer.stories-B1U1PxV6.js
+│  5.78 kB │ gzip:   1.91 kB
+│  .local/styled-only/storybook-final/assets/DocumentLayout.stories-eJR_CuRq.js
+│  5.90 kB │ gzip:   2.05 kB
+│  .local/styled-only/storybook-final/assets/compact-practice-fixtures-BcI9jYv6.js
+│  6.13 kB │ gzip:   2.23 kB
+│  .local/styled-only/storybook-final/assets/PhoneField-DDV1s-ni.js
+│  6.56 kB │ gzip:   2.47 kB
+│  .local/styled-only/storybook-final/assets/Dialog.stories-Wv1MS1Y0.js
+│  6.73 kB │ gzip:   2.10 kB
+│  .local/styled-only/storybook-final/assets/SegmentedControl.stories-D2FGKHl7.js
+│  6.90 kB │ gzip:   2.41 kB
+│  .local/styled-only/storybook-final/assets/ActionMenu.stories-BY_TuHOu.js
+│  6.95 kB │ gzip:   2.02 kB
+│  .local/styled-only/storybook-final/assets/AuthTokenDigits.stories-DR740bRG.js
+│  6.97 kB │ gzip:   2.72 kB
+│  .local/styled-only/storybook-final/assets/PracticePlaybackControls-FZ4JvcU8.js
+│  7.03 kB │ gzip:   2.10 kB
+│  .local/styled-only/storybook-final/assets/FlashcardFlip--nghQjL6.js
+│  7.45 kB │ gzip:   2.45 kB
+│  .local/styled-only/storybook-final/assets/react-BZJXY1be.js
+│  7.53 kB │ gzip:   2.88 kB
+│  .local/styled-only/storybook-final/assets/OverlayCloseButton-Bemeli46.js
+│  7.77 kB │ gzip:   3.15 kB
+│  .local/styled-only/storybook-final/assets/ActionMenu-CCMvbNCK.js
+│  9.73 kB │ gzip:   3.89 kB
+│  .local/styled-only/storybook-final/assets/AvailabilityCalendar.stories-CeVKY1tx.js
+│  10.66 kB │ gzip:   3.57 kB
+│  .local/styled-only/storybook-final/assets/MessageThread.stories-C539yPrk.js
+│  11.90 kB │ gzip:   3.76 kB
+│  .local/styled-only/storybook-final/assets/CardDetailsFields.stories-BY5JDt4n.js
+│  12.09 kB │ gzip:   4.32 kB
+│  .local/styled-only/storybook-final/assets/chunk-W22LQPXL-DFf8lZu4.js
+│  22.74 kB │ gzip:   7.60 kB
+│  .local/styled-only/storybook-final/assets/ScheduleCalendar.stories-DxEImGCG.js
+│  24.02 kB │ gzip:   6.82 kB
+│  .local/styled-only/storybook-final/vite-inject-mocker-entry.js
+│  27.84 kB │ gzip:   9.66 kB
+│  .local/styled-only/storybook-final/assets/matchers-JIUQ3HVY-C789_MAK.js
+│  28.79 kB │ gzip:   9.68 kB
+│  .local/styled-only/storybook-final/assets/Color-6AOWCN3U-CROR69__.js
+│  30.42 kB │ gzip:  11.51 kB
+│  .local/styled-only/storybook-final/assets/WithTooltip-CDUNV5IS-CpnMJxlq.js
+│  32.78 kB │ gzip:  11.49 kB
+│  .local/styled-only/storybook-final/assets/OperationalList.stories-Vfly64L4.js
+│  33.00 kB │ gzip:   8.35 kB
+│  .local/styled-only/storybook-final/assets/ControlledField.stories-B_2SG1Il.js
+│  38.74 kB │ gzip:  13.83 kB
+│  .local/styled-only/storybook-final/assets/theming-DecH_S4Y.js
+│  55.41 kB │ gzip:  21.34 kB
+│  .local/styled-only/storybook-final/assets/syntaxhighlighter-QEQV7K2Y-BhIaSDX5.js
+│  75.92 kB │ gzip:  27.27 kB
+│  .local/styled-only/storybook-final/assets/react-18-EmNFJX4V.js
+│  179.10 kB │ gzip:  56.66 kB
+│  .local/styled-only/storybook-final/assets/axe-_9eNhXQJ.js
+│  587.04 kB │ gzip: 160.26 kB
+│  .local/styled-only/storybook-final/assets/DocsRenderer-JROSPFPF-5I6fOgKi.js
+│  758.56 kB │ gzip: 240.72 kB
+│  .local/styled-only/storybook-final/assets/iframe-C6Uuphm-.js
+│  1,186.77 kB │ gzip: 339.74 kB
+
+│
+▲  Vite [plugin builtin:vite-reporter]
+│  (!) Some chunks are larger than 500 kB after minification. Consider:
+│  - Using dynamic import() to code-split the application
+│  - Use build.rolldownOptions.output.codeSplitting to improve chunking:
+│  ]8;;https://rolldown.rs/reference/OutputOptions.codeSplittinghttps://rolldown.rs/reference/OutputOptions.codeSplitting]8;;
+│  - Adjust chunk size limit for this warning via
+│  build.chunkSizeWarningLimit.
+│  Vite ✓ built in 3.11s
+│
+▲  Vite [PLUGIN_TIMINGS] Your build spent 83% of 3.1s inside plugin hooks
+│  (2.6s).
+│  Measured inside the callback, so queue time is excluded and time the
+│  callback itself awaited is not:
+│  - storybook:react-docgen-plugin transform (34%, 1.1s, 672 calls)
+│  Those rows are 34% of the build; the rest of the 83% is below.
+│  Not measurable — 3 hooks whose calls overlap, so elapsed time covers
+│  work other calls were doing. Profile with `node --cpu-prof`:
+│  - plugin-csf transform (672 calls)
+│  - vite:css transform (5 calls)
+│  - vite:asset load (5 calls)
+│  See ]8;;https://rolldown.rs/reference/InputOptions.checks#plugintimingshttps://rolldown.rs/reference/InputOptions.checks#plugintimings]8;;
+│  for more details.
+
+│
+◇  Output directory:
+│  <repo>/.local/styled-only/storybook-final
+│
+└  Storybook build completed successfully

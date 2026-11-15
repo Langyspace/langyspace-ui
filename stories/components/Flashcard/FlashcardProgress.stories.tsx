@@ -1,3 +1,4 @@
+import * as StoryLayout from './FlashcardProgress.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardProgress, type FlashcardProgressProps } from '../../../src'
 
@@ -7,16 +8,9 @@ const meta = {
   args: { current: 5, total: 10, label: 'Progresso 5 de 10' },
   decorators: [
     (Story) => (
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: 16,
-          width: 'min(32rem, 85vw)',
-        }}
-      >
+      <StoryLayout.DeckProgressPreview>
         <Story />
-      </div>
+      </StoryLayout.DeckProgressPreview>
     ),
   ],
 } satisfies Meta<typeof FlashcardProgress>

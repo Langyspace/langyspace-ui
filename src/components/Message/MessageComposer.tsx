@@ -1,4 +1,4 @@
-import { useId, useLayoutEffect, useRef } from 'react'
+import { useId, useLayoutEffect, useRef, useState } from 'react'
 import type { KeyboardEvent, SubmitEvent } from 'react'
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './MessageComposer.styles'
@@ -27,6 +27,8 @@ export function MessageComposer({
   ...formProps
 }: MessageComposerProps) {
   const inputRef = useRef<HTMLTextAreaElement>(null)
+  const [measurement, setMeasurement] = useState({ height: 0, value })
+  const measuredHeight = measurement.value === value ? measurement.height : 0
   const supportId = useId()
   const errorId = `${supportId}-error`
   const helperId = `${supportId}-helper`
@@ -45,8 +47,19 @@ export function MessageComposer({
     const input = inputRef.current
     if (!input) return
 
-    input.style.height = '0px'
-    input.style.height = `${input.scrollHeight}px`
+    // The value-keyed render first releases the prior height, so scrollHeight can shrink.
+    const resolvedMaxHeight = getComputedStyle(input).maxHeight
+    const maxHeight = resolvedMaxHeight.endsWith('px')
+      ? Number.parseFloat(resolvedMaxHeight)
+      : Number.NaN
+    const height = Number.isFinite(maxHeight)
+      ? Math.min(input.scrollHeight, maxHeight)
+      : input.scrollHeight
+    setMeasurement((current) =>
+      current.value === value && current.height === height
+        ? current
+        : { height, value },
+    )
   }, [value])
 
   const handleSubmit = (event: SubmitEvent<HTMLFormElement>) => {
@@ -83,6 +96,7 @@ export function MessageComposer({
     >
       <Styled.InputRow>
         <Styled.Input
+          $height={measuredHeight}
           ref={inputRef}
           aria-describedby={describedBy}
           aria-invalid={Boolean(error) || overLimit || undefined}

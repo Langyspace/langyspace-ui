@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useId, useRef } from 'react'
+import { useCallback, useEffect, useId, useRef, useState } from 'react'
 import type {
   KeyboardEvent as ReactKeyboardEvent,
   PointerEvent as ReactPointerEvent,
@@ -36,6 +36,8 @@ export function ModalLayer({
   const canUseDOM = useIsClient()
   const titleId = useId()
   const descriptionId = useId()
+  const backdropId = `${titleId}-backdrop`
+  const [layerOrder, setLayerOrder] = useState<number | null>(null)
   const backdropRef = useRef<HTMLDivElement>(null)
   const panelRef = useRef<HTMLDivElement>(null)
   const layerRef = useRef<ReturnType<typeof registerModalLayer> | null>(null)
@@ -61,6 +63,7 @@ export function ModalLayer({
 
     unregisterModalLayer(layer.id)
     layerRef.current = null
+    setLayerOrder(null)
     restoreFocus()
   }, [restoreFocus])
 
@@ -74,7 +77,7 @@ export function ModalLayer({
 
     triggerRef.current = document.activeElement as HTMLElement | null
     layerRef.current = registerModalLayer(backdropRef.current)
-    backdropRef.current.style.zIndex = String(800 + layerRef.current.order * 2)
+    setLayerOrder(layerRef.current.order)
     const focusTarget =
       initialFocusRef?.current ??
       panelRef.current.querySelector<HTMLElement>(
@@ -169,46 +172,50 @@ export function ModalLayer({
   }
 
   return createPortal(
-    <Styled.Backdrop
-      ref={backdropRef}
-      $kind={kind}
-      data-ui-modal-backdrop="true"
-      onPointerDown={handleBackdropPointerDown}
-      onPointerUp={handleBackdropPointerUp}
-    >
-      <Styled.Panel
-        ref={panelRef}
+    <>
+      <Styled.Presentation $backdropId={backdropId} $order={layerOrder} />
+      <Styled.Backdrop
+        id={backdropId}
+        ref={backdropRef}
         $kind={kind}
-        $size={size}
-        {...panelProps}
-        aria-describedby={description ? descriptionId : undefined}
-        aria-labelledby={titleId}
-        aria-modal="true"
-        data-size={size}
-        data-ui-modal-layer={kind}
-        role="dialog"
-        tabIndex={-1}
-        onKeyDown={handlePanelKeyDown}
+        data-ui-modal-backdrop="true"
+        onPointerDown={handleBackdropPointerDown}
+        onPointerUp={handleBackdropPointerUp}
       >
-        <Styled.Header>
-          <Styled.Heading>
-            <Styled.Title id={titleId}>{title}</Styled.Title>
-            {description ? (
-              <Styled.Description id={descriptionId}>
-                {description}
-              </Styled.Description>
-            ) : null}
-          </Styled.Heading>
-          {closeControl}
-        </Styled.Header>
-        <Styled.Body>{children}</Styled.Body>
-        {footer ? (
-          <Styled.Footer data-ui-action-group="modal-footer">
-            {footer}
-          </Styled.Footer>
-        ) : null}
-      </Styled.Panel>
-    </Styled.Backdrop>,
+        <Styled.Panel
+          ref={panelRef}
+          $kind={kind}
+          $size={size}
+          {...panelProps}
+          aria-describedby={description ? descriptionId : undefined}
+          aria-labelledby={titleId}
+          aria-modal="true"
+          data-size={size}
+          data-ui-modal-layer={kind}
+          role="dialog"
+          tabIndex={-1}
+          onKeyDown={handlePanelKeyDown}
+        >
+          <Styled.Header>
+            <Styled.Heading>
+              <Styled.Title id={titleId}>{title}</Styled.Title>
+              {description ? (
+                <Styled.Description id={descriptionId}>
+                  {description}
+                </Styled.Description>
+              ) : null}
+            </Styled.Heading>
+            {closeControl}
+          </Styled.Header>
+          <Styled.Body>{children}</Styled.Body>
+          {footer ? (
+            <Styled.Footer data-ui-action-group="modal-footer">
+              {footer}
+            </Styled.Footer>
+          ) : null}
+        </Styled.Panel>
+      </Styled.Backdrop>
+    </>,
     portalTarget,
   )
 }

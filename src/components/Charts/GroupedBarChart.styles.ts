@@ -32,9 +32,11 @@ export const Day = styled.div`
   }
 `
 
-export const Bar = styled.span.attrs<{ $height: number }>(({ $height }) => ({
-  style: { height: `${$height}%` },
-}))``
+export const Bar = styled.span<{ $height: number }>`
+  &&&& {
+    height: ${({ $height }) => $height}%;
+  }
+`
 
 export const Bars = styled.div`
   display: grid;
