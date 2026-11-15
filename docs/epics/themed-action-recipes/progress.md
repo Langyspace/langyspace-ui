@@ -55,3 +55,15 @@ Type declarations were reviewed: only the private theme resolver declaration cha
 approved additive API snapshot; root and form entrypoints and the public theme declaration are
 unchanged. User approval remains attached to the same visible revision; release optimizations must
 prove screenshot parity before production.
+
+Release checks: focused 35 tests, typecheck, lint/format, reviewed API, all bundle entries and
+packaged ESM/SSR/browser smoke passed. Product release captures versus approved revision have
+16/18 pixel-identical images; mobile modal differs by 1 pixel and desktop modal by 90 pixels,
+maximum channel delta 1. Hero, phone frames and all sections are pixel-identical; geometry is exact.
+Raw measurements are in evidence/release/landing-approved-parity.json.
+
+CI43766303317 passed architecture/package but exposed a real absent-provider createGlobalStyle
+case: SC supplies undefined rather than an empty theme. The resolver now normalizes that value
+before reading any group. Existing 8 browser contracts passed, including nested layers, focus,
+Escape, hydration and document-state preservation. This corrective follow-up changes no configured
+product values; full CI is rerun before merge. The owner-approved visuals remain the authority.

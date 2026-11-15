@@ -4,7 +4,7 @@ import type { LangyTheme } from './theme'
 
 // Callers fall back at the token leaf so unused default branches remain tree-shakeable.
 export function resolveTheme({ theme }: ExecutionContext): Partial<LangyTheme> {
-  return theme
+  return theme ?? {}
 }
 
 const defaultButtons = {
@@ -25,5 +25,5 @@ const defaultButtons = {
 export function resolveButtonsTheme({
   theme,
 }: ExecutionContext): typeof defaultButtons {
-  return (theme as Partial<LangyTheme>).buttons ?? defaultButtons
+  return resolveTheme({ theme }).buttons ?? defaultButtons
 }
