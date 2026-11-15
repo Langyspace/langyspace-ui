@@ -2,11 +2,56 @@ import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { createRef } from 'react'
 import { describe, expect, it, vi } from 'vitest'
-import styled from 'styled-components'
-import { Button } from '../../../src/index'
+import styled, { ThemeProvider } from 'styled-components'
+import { Button, ActionLink, createTheme } from '../../../src/index'
 import * as ButtonStyles from '../../../src/components/Button/Button.styles'
 
 describe('Button', () => {
+  it('applies the supplied product theme consistently to commands and action links', () => {
+    const themed = createTheme({
+      buttons: {
+        brand: {
+          background: '#123456',
+          color: '#ffffff',
+          border: '0px solid transparent',
+        },
+        sizes: {
+          lg: { minHeight: '54px', paddingX: '26px', fontSize: '1.02rem' },
+        },
+      },
+      typography: { fontFamily: { heading: 'monospace' } },
+    })
+    render(
+      <ThemeProvider theme={themed}>
+        <Button size="lg" variant="brand">
+          Schedule
+        </Button>
+        <ActionLink href="/next" size="lg" variant="brand">
+          Continue
+        </ActionLink>
+      </ThemeProvider>,
+    )
+    for (const element of [
+      screen.getByRole('button', { name: 'Schedule' }),
+      screen.getByRole('link', { name: 'Continue' }),
+    ]) {
+      const actual = getComputedStyle(element)
+      expect({
+        background: actual.backgroundColor,
+        color: actual.color,
+        height: actual.minHeight,
+        padding: actual.paddingLeft,
+        family: actual.fontFamily,
+      }).toEqual({
+        background: 'rgb(18, 52, 86)',
+        color: 'rgb(255, 255, 255)',
+        height: '54px',
+        padding: '26px',
+        family: 'monospace',
+      })
+    }
+  })
+
   it('defaults to a native non-submitting primary command and forwards its ref', async () => {
     const onClick = vi.fn()
     const ref = createRef<HTMLButtonElement>()

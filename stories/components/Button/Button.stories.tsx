@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
 import { ArrowIcon } from '../../../.storybook/fixtures'
 import { Button } from '../../../src/components/Button/Button'
+import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { ThemeProvider } from 'styled-components'
 
 const variants = [
   'primary',
@@ -105,6 +107,30 @@ export const Stress: Story = {
       <div style={{ margin: '0 auto', maxWidth: 280, width: '100%' }}>
         <Story />
       </div>
+    ),
+  ],
+}
+
+export const ProductTheme: Story = {
+  args: { variant: 'brand', size: 'lg', children: 'Agendar aula experimental' },
+  tags: ['visual-review'],
+  decorators: [
+    (Story) => (
+      <ThemeProvider
+        theme={createTheme({
+          buttons: {
+            brand: {
+              background: '#FF1F5C',
+              backgroundHover: '#D3104A',
+              border: '0px solid transparent',
+              color: '#FFFFFF',
+            },
+            sizes: { lg: { minHeight: '54px', paddingX: '26px' } },
+          },
+        })}
+      >
+        <Story />
+      </ThemeProvider>
     ),
   ],
 }

@@ -1,8 +1,5 @@
 import { css, styled } from 'styled-components'
-import {
-  actionRecipe,
-  actionSizeHeights,
-} from '../../foundations/actions/recipe'
+import { actionRecipe } from '../../foundations/actions/recipe'
 import { Pressable } from '../Pressable'
 import type {
   ActionRecipeStyleProps,
@@ -10,6 +7,7 @@ import type {
 } from '../../foundations/actions/types'
 import type { IconButtonVariant } from './IconButton.types'
 import { theme } from '../../foundations/theme/theme'
+import type { LangyTheme } from '../../foundations/theme/theme'
 
 interface IconButtonStyleProps extends ActionRecipeStyleProps {
   $iconVariant: IconButtonVariant
@@ -46,7 +44,7 @@ export const IconButton = styled(Pressable).withConfig({
   componentId: 'lsui-sc-icon-button',
 })<IconButtonStyleProps>`
   ${actionRecipe}
-  width: ${({ $size }) => actionSizeHeights[$size]};
+  width: ${({ $size, theme: context }) => ((context as Partial<LangyTheme>).buttons ?? theme.buttons).sizes[$size].minHeight};
   max-width: none;
   flex-shrink: 0;
   padding-right: 0;

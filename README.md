@@ -14,7 +14,7 @@ pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
 
-React/React DOM19 e styled-components6 são peers; react-hook-form7 é peer opcional, usado só por `@langyspace/ui/form`. Não há import obrigatório de CSS nem ThemeProvider externo: os componentes leem o `theme` exportado. Os produtos usam o mesmo `theme` e o `GlobalStyles` da UI no próprio ThemeProvider. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
+React/React DOM19 e styled-components6 são peers; react-hook-form7 é peer opcional, usado só por `@langyspace/ui/form`. Não há import obrigatório de CSS nem ThemeProvider externo. As ações leem o tema do ThemeProvider quando fornecido e usam o `theme` exportado como fallback. Os produtos usam o mesmo `theme` e o `GlobalStyles` da UI no próprio ThemeProvider. A tipografia herda a fonte do produto. Algumas famílias têm composição própria documentada, como FlashcardFrame e seus filhos.
 
 ## Como o código deve ser lido
 
@@ -151,3 +151,11 @@ telefone brasileiro, com ou sem +55. O slot opcional phoneField substitui apenas
 consumidores que já conhecem país/telefone do cadastro. O consumidor controla esse valor, valida o
 formulário e fornece o campo com nome, rótulo e required. A biblioteca não persiste dados nem chama
 o provedor de pagamentos.
+
+## Candidato de tema para revisão
+
+A revisão `4.0.1-design.1` corrige as receitas existentes de Button, ActionLink e IconButton para
+respeitarem `buttons`, `typography`, `radius` e demais tokens já públicos do ThemeProvider. A API de
+props/exports continua a mesma; o tema padrão é usado sem provider. As capturas e a origem do
+candidato estão em `docs/epics/themed-action-recipes/`. Esse candidato não substitui a release 4.0.0
+para integração final nem autoriza publicação.
