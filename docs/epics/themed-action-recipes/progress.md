@@ -67,3 +67,12 @@ case: SC supplies undefined rather than an empty theme. The resolver now normali
 before reading any group. Existing 8 browser contracts passed, including nested layers, focus,
 Escape, hydration and document-state preservation. This corrective follow-up changes no configured
 product values; full CI is rerun before merge. The owner-approved visuals remain the authority.
+
+CI43767305667 passed architecture, package, behavior/accessibility/coverage. Visual partition2
+reported exactly six `render/empty-story` findings, all Dialog ProductTheme at3 widths x2 motions.
+The component is visibly rendered in its public portal; its Storybook host is empty by design.
+The inspector now recognizes only a visible `[aria-modal="true"]` owned by
+`.lsui-sc-modal-backdrop` as rendered content when the host has no children. Existing document-wide
+geometry/action checks remain active. Four real-browser policy fixtures prove blank hosts, hidden
+public portals and unowned modal markup still fail, while a visible public Dialog portal passes.
+This changes audit ownership recognition, with no fixture/product rendering or threshold change.
