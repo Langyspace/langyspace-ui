@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import { theme } from '../foundations/theme/theme'
+import { resolveTheme } from '../foundations/theme/resolveTheme'
 
 export const Root = styled.button.withConfig({
   componentId: 'lsui-sc-pressable',
@@ -12,7 +12,7 @@ export const Root = styled.button.withConfig({
   -webkit-tap-highlight-color: transparent;
 
   &:focus-visible {
-    outline: 3px solid ${theme.semantic.focus.ring};
+    outline: 3px solid ${(context) => resolveTheme(context).semantic.focus.ring};
     outline-offset: 2px;
   }
 

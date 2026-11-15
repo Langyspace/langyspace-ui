@@ -1,15 +1,15 @@
 # Progress
 
-Implementation and local verification complete. Existing Button, ActionLink and IconButton recipes
-now honor supported createTheme/ThemeProvider values, with the unchanged singleton as fallback.
-No component prop/public export changes. The product keeps domain actions and route state.
+Implementation complete on the isolated branch, based on approved UI4.1 main ee0b4ff. The current
+canonical release checkout was only read. Product-specific values/content remain outside UI.
 
-Evidence: provider override regression and default Button/IconButton tests (21 tests); default
-ActionLink tests (4 tests); library production build and TypeScript declarations; focused ESLint;
-390/1440 before/after fixture screenshots showing normal, link, loading and disabled actions.
-Baseline be8a316, published package 4.0.0; candidate 4.0.1-design.1 is for review only, with exact
-SHA-256 recorded in candidate/SHA256SUMS. No tag or official package release has been published.
+32 focused tests passed across Button, ActionLink, IconButton, Dialog and Drawer, including supplied
+tokens and closeIcon semantics. Production library build/declarations and reviewed API snapshot
+passed (145 values/225 types/482 declarations); changes are additive tokens/optional slot. Focused
+lint and style audit passed. Browser comparison against the SHA-verified UI4.1 candidate showed exact
+default Dialog geometry/computed styles at 390/1440, with Escape/reopen and zero console errors.
+Product-themed captures exercise the new contract.
 
-Next: draft PR and explicit product-owner approval of the current revision. No merge or release is
-authorized. Dependent landing stays in draft until this is approved/released and an official
-immutable release replaces the review candidate. Visual gate review: pending human.
+Immutable candidate sealed with checksum; current screenshots cover actions and default/product
+Dialog. Final handoff updates both draft PRs. Version 4.2.0-design.1 is unpublished. No tag, release, merge or
+deployment was performed. Visual gate review: pending human.

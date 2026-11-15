@@ -196,18 +196,20 @@ export function ModalLayer({
           tabIndex={-1}
           onKeyDown={handlePanelKeyDown}
         >
-          <Styled.Header>
-            <Styled.Heading>
-              <Styled.Title id={titleId}>{title}</Styled.Title>
+          <Styled.Header $kind={kind}>
+            <Styled.Heading $kind={kind}>
+              <Styled.Title $kind={kind} id={titleId}>
+                {title}
+              </Styled.Title>
               {description ? (
-                <Styled.Description id={descriptionId}>
+                <Styled.Description $kind={kind} id={descriptionId}>
                   {description}
                 </Styled.Description>
               ) : null}
             </Styled.Heading>
             {closeControl}
           </Styled.Header>
-          <Styled.Body>{children}</Styled.Body>
+          <Styled.Body $kind={kind}>{children}</Styled.Body>
           {footer ? (
             <Styled.Footer data-ui-action-group="modal-footer">
               {footer}

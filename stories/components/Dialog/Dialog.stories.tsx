@@ -1,3 +1,5 @@
+import { ThemeProvider } from 'styled-components'
+import { createTheme } from '../../../src/foundations/theme/createTheme'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { expect, waitFor, within } from 'storybook/test'
@@ -105,4 +107,25 @@ export const Blocked: Story = {
 export const Stress: Story = {
   tags: ['layout-boundary', 'visual-review'],
   render: () => <ControlledDialog long />,
+}
+
+const productDialogTheme = createTheme({
+  dialog: {
+    widths: { md: '440px' },
+    panel: { radius: '28px', border: '0px solid transparent' },
+    header: { padding: '30px 24px 0', borderBottom: '0px solid transparent' },
+    title: { fontSize: '27.2px', lineHeight: 1.2 },
+    description: { marginTop: '14px', fontSize: '17px' },
+    body: { padding: '14px 24px 22px' },
+  },
+})
+
+export const ProductTheme: Story = {
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={productDialogTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
 }

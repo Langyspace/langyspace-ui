@@ -158,8 +158,14 @@ o provedor de pagamentos.
 
 ## Candidato de tema para revisão
 
-A revisão `4.0.1-design.1` corrige as receitas existentes de Button, ActionLink e IconButton para
+A revisão `4.2.0-design.1` corrige as receitas existentes de Button, ActionLink e IconButton para
 respeitarem `buttons`, `typography`, `radius` e demais tokens já públicos do ThemeProvider. A API de
 props/exports continua a mesma; o tema padrão é usado sem provider. As capturas e a origem do
-candidato estão em `docs/epics/themed-action-recipes/`. Esse candidato não substitui a release 4.0.0
+candidato estão em `docs/epics/themed-action-recipes/`. Esse candidato depende do trabalho UI 4.1 e não substitui a release oficial
 para integração final nem autoriza publicação.
+
+O candidato de tema acrescenta `theme.dialog` para apresentação suportada do Dialog e completa as
+receitas de ações, incluindo borda, hover, texto e foco. Use `createTheme` para criar um tema completo;
+ThemeProvider transmite seus valores também aos portais React. CSS de página, conteúdo, rotas e
+estado do domínio ficam no produto. Não sobrescreva classes privadas da biblioteca para alterar pele,
+fontes ou medidas de seus componentes. As chaves são aditivas; props existentes são preservadas e `closeIcon` é um slot opcional.

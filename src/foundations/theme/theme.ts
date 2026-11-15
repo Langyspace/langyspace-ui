@@ -509,11 +509,14 @@ const buttons = {
     transition: transitions.property.interactive,
     focusShadow: shadows.focus,
     disabledOpacity: 0.48,
+    hoverTransform: 'translateY(-1px)',
+    activeTransform: 'translateY(0)',
   },
   sizes: {
     sm: {
       minHeight: sizes.control.sm,
       paddingX: spacing[3],
+      paddingY: '0px',
       gap: spacing[2],
       fontSize: typography.fontSize.sm,
       borderRadius: radius.pill,
@@ -521,6 +524,7 @@ const buttons = {
     md: {
       minHeight: sizes.control.md,
       paddingX: spacing[5],
+      paddingY: '0px',
       gap: spacing[2],
       fontSize: typography.fontSize.md,
       borderRadius: radius.pill,
@@ -528,6 +532,7 @@ const buttons = {
     lg: {
       minHeight: sizes.control.lg,
       paddingX: spacing[6],
+      paddingY: '0px',
       gap: spacing[3],
       fontSize: typography.fontSize.md,
       borderRadius: radius.pill,
@@ -559,6 +564,8 @@ const buttons = {
     backgroundActive: colors.action.secondaryActive,
     color: colors.action.secondaryText,
     borderColor: colors.action.secondaryBorder,
+    borderColorHover: palette.neutral[500],
+    colorHover: colors.action.secondaryText,
     border: `1px solid ${colors.action.secondaryBorder}`,
     shadow: shadows.none,
     shadowHover: shadows.xs,
@@ -572,6 +579,14 @@ const buttons = {
     border: `1px solid ${semantic.border.danger}`,
     shadow: shadows.none,
     shadowHover: shadows.sm,
+  },
+  tertiary: {
+    background: 'transparent',
+    backgroundHover: palette.neutral[100],
+    backgroundActive: palette.neutral[200],
+    color: palette.neutral[900],
+    border: '1px solid transparent',
+    shadow: shadows.none,
   },
   ghost: {
     background: 'transparent',
@@ -638,8 +653,57 @@ const gradients = {
   storyQuiz: 'linear-gradient(135deg, #F3E8FF 0%, #C4B5FD 100%)',
 } as const
 
+// Dialog presentation is a component contract; products supply values, never private selectors.
+const dialog = {
+  widths: { sm: '24rem', md: '31rem', lg: '42.5rem' },
+  mobileBreakpoint: breakpoints.sm,
+  backdrop: {
+    padding: spacing[5],
+    background: semantic.background.overlay,
+    filter: 'blur(2px)',
+  },
+  panel: {
+    background: colors.palette.white,
+    color: 'inherit',
+    border: `1px solid ${semantic.border.default}`,
+    radius: radius.card,
+    mobileRadius: `${radius.card} ${radius.card} 0 0`,
+    shadow: shadows.floating,
+    maxHeight: 'calc(100dvh - 2.5rem)',
+    mobileMaxHeight: `calc(100dvh - ${spacing[4]})`,
+    fontFamily: 'inherit',
+    fontSize: 'inherit',
+    lineHeight: 'inherit',
+  },
+  header: {
+    padding: spacing[5],
+    mobilePaddingTop: `calc(${spacing[5]} + env(safe-area-inset-top))`,
+    gap: spacing[4],
+    borderBottom: `1px solid ${colors.border.subtle}`,
+    textAlign: 'inherit',
+    headingWidth: 'auto',
+  },
+  title: {
+    color: colors.text.primary,
+    fontFamily: 'inherit',
+    fontSize: typography.fontSize.xl,
+    fontWeight: typography.fontWeight.bold,
+    lineHeight: typography.lineHeight.snug,
+    letterSpacing: 'inherit',
+  },
+  description: {
+    color: colors.text.muted,
+    marginTop: spacing[1],
+    fontSize: typography.fontSize.sm,
+    lineHeight: typography.lineHeight.normal,
+  },
+  body: { padding: spacing[5], mobilePaddingBottom: spacing[5] },
+  closeControl: { position: 'static', top: 'auto', right: 'auto' },
+} as const
+
 export const theme = {
   semantic,
+  dialog,
   colors,
   typography,
   spacing,

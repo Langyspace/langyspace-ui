@@ -6,8 +6,7 @@ import type {
   ActionShape,
 } from '../../foundations/actions/types'
 import type { IconButtonVariant } from './IconButton.types'
-import { theme } from '../../foundations/theme/theme'
-import type { LangyTheme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 
 interface IconButtonStyleProps extends ActionRecipeStyleProps {
   $iconVariant: IconButtonVariant
@@ -20,19 +19,19 @@ const intentStyles = {
     &,
     &:active:not(:disabled) {
       border-color: transparent;
-      color: ${theme.colors.feedback.danger};
+      color: ${(context) => resolveTheme(context).colors.feedback.danger};
       background-color: transparent;
     }
 
     &:hover:not(:disabled) {
       border-color: transparent;
-      color: ${theme.semantic.status.danger.foreground};
-      background-color: ${theme.colors.palette.neutral[200]};
+      color: ${(context) => resolveTheme(context).semantic.status.danger.foreground};
+      background-color: ${(context) => resolveTheme(context).colors.palette.neutral[200]};
     }
   `,
   inverse: css`
     & {
-      border-color: ${theme.semantic.inverse.border};
+      border-color: ${(context) => resolveTheme(context).semantic.inverse.border};
     }
   `,
   neutral: css``,
@@ -44,7 +43,11 @@ export const IconButton = styled(Pressable).withConfig({
   componentId: 'lsui-sc-icon-button',
 })<IconButtonStyleProps>`
   ${actionRecipe}
-  width: ${({ $size, theme: context }) => ((context as Partial<LangyTheme>).buttons ?? theme.buttons).sizes[$size].minHeight};
+  width: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
+  height: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
+  min-height: ${({ $size, ...context }) => resolveTheme(context).sizes.control[$size]};
+  padding-top: 0;
+  padding-bottom: 0;
   max-width: none;
   flex-shrink: 0;
   padding-right: 0;
@@ -53,7 +56,7 @@ export const IconButton = styled(Pressable).withConfig({
   ${({ $iconVariant }) => intentStyles[$iconVariant]}
 
   &:disabled {
-    opacity: 0.48;
+    opacity: ${(context) => resolveTheme(context).buttons.base.disabledOpacity};
     cursor: default;
   }
 

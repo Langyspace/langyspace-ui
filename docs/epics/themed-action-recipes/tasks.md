@@ -1,6 +1,10 @@
 # Tasks
 
-- [x] Inspect source/defaults and critically review scope.
-- [x] Make existing recipe consume supplied theme.
-- [x] Add regression/story, run focused validation and prepare local review package.
-- [x] Capture evidence and open draft PR; human approval before merge.
+- [x] Inspect the named migration and preserve approved UI4.1 in feature ancestry.
+- [x] Add native action/Dialog theme contracts and optional closeIcon composition.
+- [x] Cover defaults, overrides and lifecycle with focused tests and stories.
+- [x] Build/declarations and deliberately review/check additive public API snapshot.
+- [x] Compare default Dialog geometry/styles at 390/1440 against verified UI4.1 candidate.
+- [x] Seal immutable candidate/provenance, refresh product adoption and draft visual PR evidence.
+
+No merge, official package publication or deployment in this task.

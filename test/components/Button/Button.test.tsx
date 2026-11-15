@@ -16,7 +16,12 @@ describe('Button', () => {
           border: '0px solid transparent',
         },
         sizes: {
-          lg: { minHeight: '54px', paddingX: '26px', fontSize: '1.02rem' },
+          lg: {
+            minHeight: '54px',
+            paddingX: '26px',
+            paddingY: '17px',
+            fontSize: '1.02rem',
+          },
         },
       },
       typography: { fontFamily: { heading: 'monospace' } },
@@ -41,12 +46,14 @@ describe('Button', () => {
         color: actual.color,
         height: actual.minHeight,
         padding: actual.paddingLeft,
+        paddingY: actual.paddingTop,
         family: actual.fontFamily,
       }).toEqual({
         background: 'rgb(18, 52, 86)',
         color: 'rgb(255, 255, 255)',
         height: '54px',
         padding: '26px',
+        paddingY: '17px',
         family: 'monospace',
       })
     }
