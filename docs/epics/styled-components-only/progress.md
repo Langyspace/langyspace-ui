@@ -73,3 +73,12 @@ push, CI, release or deploy was triggered.
 
 Exactly one next subtask: coordinator reviews the selection and packages the visual PR.
 Visual gate review: pending human.
+
+## Pull-request CI enforcement
+
+The architecture job now runs test:styling-policy and test:styling-system as well as the existing
+architecture/lint/type checks. The new policy fixtures and full owned-source scan are mandatory
+on pull requests, not only in the release validate:ui command. Existing successful seven policy
+groups and654-file/zero-violation evidence remains applicable: source, policy, config and package
+inputs are unchanged. Only CI wiring and this note changed; screenshots and candidate payload remain
+valid without recapture or repack. Workflow syntax/command wiring and scoped formatting were checked.
