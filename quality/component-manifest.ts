@@ -45,7 +45,7 @@ export const publicComponentContracts = [
       consumers: [
         {
           repository: 'langyspace-student',
-          path: 'src/pages/StudentPayment/RecurringPaymentMethodDialog.tsx',
+          path: 'src/pages/StudentPayment/RecurringPaymentMethodFlow.tsx',
         },
       ],
     },

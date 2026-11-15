@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-Esta revisão define a **3.0.0**, com organização por responsabilidade, composições coesas e retirada deliberada de 40 APIs substituídas. Consulte a [migração para 3.0](docs/components/migration-v3.md). Para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+A versão atual é a **4.0.0**, com contratos do React 19, tema compartilhado e props padronizadas. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Após a publicação da release 3.0.0, instale seu artefato imutável:
+Instale o artefato imutável da release 4.0.0:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v3.0.0/langyspace-ui-3.0.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.0.0/langyspace-ui-4.0.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
