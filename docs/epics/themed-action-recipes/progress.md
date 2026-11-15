@@ -1,5 +1,12 @@
 # Progress
 
+Current: official UI4.2.0 is published at https://github.com/Langyspace/langyspace-ui/releases/tag/v4.2.0
+and adopted by the verified landing production release. PR41 merged as8b26ac7, tagv4.2.0.
+Native publisher verified source/tag/main ancestry and downloaded immutable archive SHA256
+6a91c51e17a4504afc5db3f0a4b498342837d8cdea90319955ef6b3d48b1ed3b. Product-owner approval was explicit.
+
+## Implementation and review history
+
 Implementation complete on the isolated branch, based on approved UI4.1 main ee0b4ff. The current
 canonical release checkout was only read. Product-specific values/content remain outside UI.
 
@@ -76,3 +83,23 @@ The inspector now recognizes only a visible `[aria-modal="true"]` owned by
 geometry/action checks remain active. Four real-browser policy fixtures prove blank hosts, hidden
 public portals and unowned modal markup still fail, while a visible public Dialog portal passes.
 This changes audit ownership recognition, with no fixture/product rendering or threshold change.
+
+## Official publication receipt
+
+All source qualification gates passed in CI43768466743 at6903a2e; merged/tagged8b26ac7 has the
+identical tree. The repository-native publisher published the qualified210,327-byte4.2 archive,
+verified remote tag ancestry and downloaded both release assets to check exact bytes. The landing
+uses the official release URL, SRI lock and checksum, not a candidate or local path.
+
+The independent tag workflow43769421439 passed its validation/build/package/layout stages, then
+rejected duplicate publication with `ui_release_existing_asset_differs`. Its second archive bytes
+were different; neither container identity nor payload equivalence is claimed. The already verified
+official asset was preserved, and no force upload/overwrite or fabricated CI result was used.
+This does not invalidate the successful qualification of the release source or the actual artifact's
+ESM/SSR/browser smoke and product parity. The actual distributed archive is identified by the fixed
+checksum above, rather than by the rejected second archive.
+
+Landing PR12 production commit1b710f1 is live as immutable Hosting version0113ff737a521547,
+verified at both langy.space and the Firebase default domain with zero browser page errors at
+390/1440. The consumer production receipt is in its epic. Other portals retain their independent
+release pins. Canonical UI checkout is clean main. Visual gate review: accepted by human.

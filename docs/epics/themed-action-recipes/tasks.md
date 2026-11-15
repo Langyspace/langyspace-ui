@@ -7,4 +7,7 @@
 - [x] Compare default Dialog geometry/styles at 390/1440 against verified UI4.1 candidate.
 - [x] Seal immutable candidate/provenance, refresh product adoption and draft visual PR evidence.
 
-No merge, official package publication or deployment in this task.
+- [x] Obtain owner production approval; merge PR41, publish the official immutable4.2 release and
+      verify its checksum/adoption in landing production.
+
+The tag replay publication refusal and the canonical artifact identity are recorded in progress.md.
