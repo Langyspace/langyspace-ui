@@ -1,3 +1,4 @@
+import * as StoryLayout from './FlashcardAudioButton.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FlashcardAudioButton } from '../../../src/components/Flashcard/FlashcardAudioButton'
 import { FlashcardFrame } from '../../../src/components/Flashcard/FlashcardFrame'
@@ -10,9 +11,9 @@ const meta = {
   decorators: [
     (Story) => (
       <FlashcardFrame>
-        <div style={{ position: 'relative', height: '5rem' }}>
+        <StoryLayout.AudioDemoPreview>
           <Story />
-        </div>
+        </StoryLayout.AudioDemoPreview>
       </FlashcardFrame>
     ),
   ],

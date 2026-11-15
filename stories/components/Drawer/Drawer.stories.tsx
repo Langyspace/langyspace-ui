@@ -1,3 +1,4 @@
+import * as StoryLayout from './Drawer.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -33,13 +34,13 @@ function ControlledDrawer({ size = 'md' }: { size?: 'lg' | 'md' | 'sm' }) {
           <TextInput defaultValue="Maria Fernanda de Albuquerque Nogueira Vasconcelos" />
         </FieldRoot>
         {Array.from({ length: 8 }, (_, index) => (
-          <section key={index} style={{ marginTop: '1rem' }}>
+          <StoryLayout.OperationalSection key={index}>
             <strong>Bloco operacional {index + 1}</strong>
             <p>
               Conteúdo operacional extremamente longo para provar quebra,
               contenção e leitura sem depender de uma rota de produção.
             </p>
-          </section>
+          </StoryLayout.OperationalSection>
         ))}
       </Drawer>
     </>

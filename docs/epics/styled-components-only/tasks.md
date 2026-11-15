@@ -1,12 +1,18 @@
 # Tasks
 
-- [x] Read owning guidance, inspect source/API and classify direct/none surfaces.
-- [x] Review scope/risks and exclusive ownership.
-- [ ] Implement/test shared styling source policy and library command.
-- [ ] Capture shared component baseline under scheduled browser slot.
-- [ ] Convert shared dynamic styles and internal CSS mutation, preserving APIs.
-- [ ] Verify focused shared interaction/layout evidence and API/package candidate.
-- [ ] Integrate consumer source migrations with shared guard/package candidate.
-- [ ] Review all source/asset provenance and publish coherent feature PR packets.
+- [x] Read owning guidance, inspect source/API and classify rendered surfaces.
+- [x] Review scope, exclusive ownership, runtime design and later cascade discriminant.
+- [x] Preserve coordinator's completed source-policy implementation and six fixture groups.
+- [x] Capture fresh baseline132 local states at390/1440 before rendered-input edits.
+- [x] Convert10 runtime violations and42 catalog attributes; no policy/package/lock/CI edits.
+- [x] Prove catalog JSX/value equivalence; audit authored src/stories/.storybook at zero.
+- [x] Validate62 distinct focused unit contracts, typecheck and scoped lint/format.
+- [x] Keep six computed-CSS browser requirements in native existing CI layout gate.
+- [x] Capture initial132 after states and investigate raw Swiper margin measurement.
+- [x] Finish two ordinary-composition browser discriminants and final owner-only recapture.
+- [x] Refresh exact audit/source hashes, final evidence selection and scoped lint/format proof.
+- [x] Review complete diff and create local Codex commit; return clean ownership to coordinator.
+- [ ] Coordinator: API/bundle/package candidate, consumer adoption, broad CI and visual PR packet.
+- [ ] Product owner: approve current visual revision before integration/publication.
 
-Generated output is not hand-edited. Product visual adoption requires fresh comparable evidence. Native final visual review state is recorded honestly.
+Generated output is not hand-edited. Initial failed checks and superseded captures remain recorded; successful unchanged evidence is reused. No package version/release, push, PR, merge or deployment is delegated to this worker.

@@ -1,0 +1,96 @@
+{
+  "base": "8aaa792d207507e07f00f17483e9c2e25845ac40",
+  "sourceViolations": 10,
+  "entries": [
+    {
+      "file": "src/components/ActionMenu/ActionMenu.styles.ts",
+      "line": 68,
+      "ruleId": "LSSTYLE002",
+      "message": "Author presentation in a tagged styled-components stylesheet, not a style object.",
+      "newOwner": "MenuPosition",
+      "method": "stable-ID client GlobalStyle",
+      "presentation": "left/top/max-height/visibility"
+    },
+    {
+      "file": "src/components/Calendar/ScheduleCalendar.styles.ts",
+      "line": 108,
+      "ruleId": "LSSTYLE002",
+      "message": "Author presentation in a tagged styled-components stylesheet, not a style object.",
+      "newOwner": "Event",
+      "method": "transient tagged rules with scoped specificity",
+      "presentation": "height/top"
+    },
+    {
+      "file": "src/components/Charts/GroupedBarChart.styles.ts",
+      "line": 36,
+      "ruleId": "LSSTYLE002",
+      "message": "Author presentation in a tagged styled-components stylesheet, not a style object.",
+      "newOwner": "Bar",
+      "method": "transient tagged rule with scoped specificity",
+      "presentation": "height"
+    },
+    {
+      "file": "src/components/Flashcard/FlashcardSwiper.styles.ts",
+      "line": 40,
+      "ruleId": "LSSTYLE002",
+      "message": "Author presentation in a tagged styled-components stylesheet, not a style object.",
+      "newOwner": "Root",
+      "method": "transient tagged rules with scoped specificity; empty strings omit declaration",
+      "presentation": "--tr/--tx/--ty"
+    },
+    {
+      "file": "src/components/Message/MessageComposer.tsx",
+      "line": 48,
+      "ruleId": "LSSTYLE003",
+      "message": "Direct DOM CSS mutation must become declarative styled-components state.",
+      "newOwner": "MessageComposer measurement state + Input.styles",
+      "method": "layout measurement -> bounded render state",
+      "presentation": "height grow/shrink"
+    },
+    {
+      "file": "src/components/Message/MessageComposer.tsx",
+      "line": 49,
+      "ruleId": "LSSTYLE003",
+      "message": "Direct DOM CSS mutation must become declarative styled-components state.",
+      "newOwner": "MessageComposer measurement state + Input.styles",
+      "method": "layout measurement -> bounded render state",
+      "presentation": "height grow/shrink"
+    },
+    {
+      "file": "src/components/Practice/PracticeProgressBar.styles.ts",
+      "line": 16,
+      "ruleId": "LSSTYLE002",
+      "message": "Author presentation in a tagged styled-components stylesheet, not a style object.",
+      "newOwner": "Fill",
+      "method": "transient tagged rule with scoped specificity",
+      "presentation": "width"
+    },
+    {
+      "file": "src/internal/ModalLayer/ModalLayer.tsx",
+      "line": 77,
+      "ruleId": "LSSTYLE003",
+      "message": "Direct DOM CSS mutation must become declarative styled-components state.",
+      "newOwner": "Presentation",
+      "method": "stack order -> stable-ID client GlobalStyle",
+      "presentation": "z-index"
+    },
+    {
+      "file": "src/internal/ModalLayer/stack.ts",
+      "line": 24,
+      "ruleId": "LSSTYLE003",
+      "message": "Direct DOM CSS mutation must become declarative styled-components state.",
+      "newOwner": "modalScrollLockAttribute + Presentation",
+      "method": "preserved body marker; declarative scoped global lock",
+      "presentation": "body overflow lock/restore"
+    },
+    {
+      "file": "src/internal/ModalLayer/stack.ts",
+      "line": 31,
+      "ruleId": "LSSTYLE003",
+      "message": "Direct DOM CSS mutation must become declarative styled-components state.",
+      "newOwner": "modalScrollLockAttribute + Presentation",
+      "method": "preserved body marker; declarative scoped global lock",
+      "presentation": "body overflow lock/restore"
+    }
+  ]
+}

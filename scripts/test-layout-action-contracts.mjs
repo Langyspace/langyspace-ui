@@ -1,3 +1,5 @@
+import { spawnSync } from 'node:child_process'
+import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 import { chromium } from 'playwright'
 import { inspectStory } from './layout-audit/rules.mjs'
@@ -52,3 +54,24 @@ try {
 } finally {
   await browser.close()
 }
+
+// These are production component CSS assertions, not hand-authored geometry fixtures.
+// Keep them in the existing CI layout gate because the styled-components Node entry
+// does not install createGlobalStyle rules into jsdom's document.
+const root = resolve(import.meta.dirname, '..')
+const presentation = spawnSync(
+  process.execPath,
+  [
+    resolve(root, 'node_modules/vitest/vitest.mjs'),
+    'run',
+    '--config',
+    resolve(root, 'test/browser/styled-only.config.ts'),
+  ],
+  { cwd: root, stdio: 'inherit' },
+)
+if (presentation.error) throw presentation.error
+assert.equal(
+  presentation.status,
+  0,
+  'Shared styled presentation browser contracts failed',
+)

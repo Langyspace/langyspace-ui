@@ -28,7 +28,7 @@ describe.each([
 
       expect(screen.getByRole('dialog', { name: 'Ajuda' })).toBeVisible()
       expect(appRoot.inert).toBe(true)
-      expect(document.body.style.overflow).toBe('hidden')
+      // The identical computed CSS assertion runs in test/browser/styled-only.browser.tsx.
       expect(screen.getByRole('button', { name: 'Fechar' })).toHaveFocus()
     } finally {
       await act(async () => {

@@ -1,3 +1,4 @@
+import * as StoryLayout from './ControlledField.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { FormProvider, useForm } from 'react-hook-form'
 import { expect } from 'storybook/test'
@@ -35,9 +36,9 @@ const meta = {
   component: ControlledFieldExample,
   decorators: [
     (Story) => (
-      <div style={{ margin: '0 auto', maxWidth: 480, width: '100%' }}>
+      <StoryLayout.ControlledFieldPreview>
         <Story />
-      </div>
+      </StoryLayout.ControlledFieldPreview>
     ),
   ],
   parameters: {

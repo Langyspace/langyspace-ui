@@ -7,7 +7,8 @@ interface ModalLayerEntry {
 const layers: ModalLayerEntry[] = []
 let nextOrder = 0
 let appRootWasInert = false
-let bodyOverflow = ''
+export const modalScrollLockAttribute = 'data-lsui-modal-scroll-lock'
+let priorScrollLockMarker: string | null = null
 
 const syncLayerInertState = () => {
   layers.forEach((layer, index) => {
@@ -20,15 +21,18 @@ const lockDocument = () => {
   appRootWasInert = appRoot?.inert ?? false
   if (appRoot) appRoot.inert = true
 
-  bodyOverflow = document.body.style.overflow
-  document.body.style.overflow = 'hidden'
+  priorScrollLockMarker = document.body.getAttribute(modalScrollLockAttribute)
+  document.body.setAttribute(modalScrollLockAttribute, 'locked')
 }
 
 const unlockDocument = () => {
   const appRoot = document.getElementById('root')
   if (appRoot) appRoot.inert = appRootWasInert
 
-  document.body.style.overflow = bodyOverflow
+  if (priorScrollLockMarker === null)
+    document.body.removeAttribute(modalScrollLockAttribute)
+  else
+    document.body.setAttribute(modalScrollLockAttribute, priorScrollLockMarker)
 }
 
 export const registerModalLayer = (element: HTMLElement) => {

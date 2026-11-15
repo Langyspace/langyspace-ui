@@ -9,3 +9,7 @@
 - Browser and builds are scheduled by root for the8GB host. One heavy task at a time. External network/provider effects blocked with synthetic fixtures.
 
 Live Storybook and .storybook fixtures are owned UI and use the same styling policy; tests containing intentionally invalid source remain outside production authoring roots.
+
+Library implementation boundaries: preserve141 exported component APIs/types, canonical component IDs, source order, palette values and license files. Runtime has10 source violations; catalog has42 attributes in25 modules. All52 are mapped to their owning styles and must pass AST/source plus rendered evidence. Native styling policy/package/lock/CI remain coordinator-owned. No new suppression, object-style helper, CSS mutation escape, public prop or theme token.
+
+Dynamic cascade parity includes ordinary consumer styled composition. Only former inline declarations receive increased class specificity; no broad override is added. Modal preserves ordinary host inline overflow and prior marker while the lock is mounted; preexisting inline important overflow remains an explicitly unverified external-cascade limitation.

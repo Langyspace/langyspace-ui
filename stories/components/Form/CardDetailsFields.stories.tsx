@@ -1,3 +1,4 @@
+import * as StoryLayout from './CardDetailsFields.stories.styles'
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { CardDetailsFields } from '../../../src/components/Form/CardDetailsFields'
@@ -22,9 +23,9 @@ const meta = {
   render: function Controlled(args) {
     const [value, setValue] = useState(args.value)
     return (
-      <div style={{ maxWidth: 560, margin: 'auto' }}>
+      <StoryLayout.PaymentDetailsPreview>
         <CardDetailsFields {...args} value={value} onChange={setValue} />
-      </div>
+      </StoryLayout.PaymentDetailsPreview>
     )
   },
 } satisfies Meta<typeof CardDetailsFields>
@@ -48,7 +49,7 @@ export const ExistingCountryControl: Story = {
       placeholder: '83 123 4567',
     }
     return (
-      <div style={{ maxWidth: 560, margin: 'auto' }}>
+      <StoryLayout.PaymentDetailsPreview>
         <CardDetailsFields
           {...args}
           value={value}
@@ -72,7 +73,7 @@ export const ExistingCountryControl: Story = {
             />
           }
         />
-      </div>
+      </StoryLayout.PaymentDetailsPreview>
     )
   },
 }

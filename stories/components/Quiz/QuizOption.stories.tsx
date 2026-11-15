@@ -1,3 +1,4 @@
+import * as StoryLayout from './QuizOption.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
@@ -9,9 +10,9 @@ const meta = {
   args: { letter: 'A', children: 'I work every day.' },
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: '30rem' }}>
+      <StoryLayout.AnswerPreview>
         <Story />
-      </div>
+      </StoryLayout.AnswerPreview>
     ),
   ],
 } satisfies Meta<typeof QuizOption>
@@ -25,20 +26,20 @@ export const Default: Story = {}
 export const Correct: Story = {
   args: { state: 'correct', disabled: true },
   render: (args) => (
-    <div style={{ display: 'grid', gap: '1rem' }}>
+    <StoryLayout.AnswerStates>
       <QuizOption {...args} />
       <QuizFeedback tone="correct">Acertou! Boa resposta.</QuizFeedback>
-    </div>
+    </StoryLayout.AnswerStates>
   ),
 }
 
 export const Wrong: Story = {
   args: { state: 'wrong', disabled: true },
   render: (args) => (
-    <div style={{ display: 'grid', gap: '1rem' }}>
+    <StoryLayout.AnswerStates>
       <QuizOption {...args} />
       <QuizFeedback tone="wrong">Quase. Revise a forma do verbo.</QuizFeedback>
-    </div>
+    </StoryLayout.AnswerStates>
   ),
 }
 

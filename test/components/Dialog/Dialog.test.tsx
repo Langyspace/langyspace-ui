@@ -57,7 +57,7 @@ describe('Dialog', () => {
     expect(dialog).toHaveAccessibleDescription(
       'Revise os dados antes de continuar.',
     )
-    expect(document.body.style.overflow).toBe('hidden')
+    // The identical computed CSS assertion runs in test/browser/styled-only.browser.tsx.
 
     screen.getByRole('button', { name: 'Confirmar' }).focus()
     await user.tab()

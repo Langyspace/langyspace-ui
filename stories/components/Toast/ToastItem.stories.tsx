@@ -1,3 +1,4 @@
+import * as StoryLayout from './ToastItem.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { StoryStack } from '../../../.storybook/fixtures'
 import { ToastItem } from '../../../src/components/Toast/ToastItem'
@@ -52,9 +53,9 @@ export const LongContent: Story = {
   tags: ['layout-boundary'],
   decorators: [
     (Story) => (
-      <div style={{ maxWidth: '18rem' }}>
+      <StoryLayout.ToastPreview>
         <Story />
-      </div>
+      </StoryLayout.ToastPreview>
     ),
   ],
   args: {

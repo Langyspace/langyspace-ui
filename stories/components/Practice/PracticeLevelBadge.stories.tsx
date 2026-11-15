@@ -1,4 +1,5 @@
-import { PracticeCardCover } from '../../../src/components/Practice/PracticeCardCover'
+import * as StoryLayout from './PracticeLevelBadge.stories.styles'
+
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { PracticeLevelBadge } from '../../../src/components/Practice/PracticeLevelBadge'
 
@@ -8,9 +9,9 @@ const meta = {
   tags: ['visual-review'],
   decorators: [
     (Story) => (
-      <PracticeCardCover style={{ width: 260 }}>
+      <StoryLayout.LevelCoverPreview>
         <Story />
-      </PracticeCardCover>
+      </StoryLayout.LevelCoverPreview>
     ),
   ],
   args: { children: 'A1' },

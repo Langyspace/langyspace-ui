@@ -1,0 +1,401 @@
+{
+  "phase": "after",
+  "baseSource": "be8a31600a548f6b3fb828c650163341e7d42009",
+  "head": "8aaa792d207507e07f00f17483e9c2e25845ac40",
+  "localOnly": true,
+  "cases": [
+    {
+      "id": "calendar-schedulecalendar--week",
+      "story": "calendar-schedulecalendar--week",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "e95cd3738e674185ad6f8c85c418cbc5d1c12b1517d5f692671a894c66640763",
+      "nodes": 457
+    },
+    {
+      "id": "calendar-schedulecalendar--long-names",
+      "story": "calendar-schedulecalendar--long-names",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "b327e5cc371d5d973c9d9ce1e57820c9f5c7e2bbb0fb605aa48aa7571e04a3c1",
+      "nodes": 457
+    },
+    {
+      "id": "charts-groupedbarchart--default",
+      "story": "charts-groupedbarchart--default",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "190e14ea0514ffec6369f32f78263593c3b7b42c481eeb8ed91fdf2b6b65f96b",
+      "nodes": 119
+    },
+    {
+      "id": "flashcard-flashcardswiper--default",
+      "story": "flashcard-flashcardswiper--default",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "78cd605f83646c137801441c49576a8e391f5fdc7ac5e72a42a8ffedb8c8c922",
+      "nodes": 136
+    },
+    {
+      "id": "flashcard-flashcardswiper--exiting",
+      "story": "flashcard-flashcardswiper--exiting",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "78cd605f83646c137801441c49576a8e391f5fdc7ac5e72a42a8ffedb8c8c922",
+      "nodes": 136
+    },
+    {
+      "id": "message-messagecomposer--growing",
+      "story": "message-messagecomposer--growing",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "12e4adea407c2faf8fd0346a4044489ac431454920dfdb2504de13e8e8bd46d9",
+      "nodes": 125
+    },
+    {
+      "id": "message-messagecomposer--states",
+      "story": "message-messagecomposer--states",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "b885cf95be084c48c6e199005fbf5988674d9010876422a2937e64dd8ed5d875",
+      "nodes": 156
+    },
+    {
+      "id": "message-messagecomposer--stress",
+      "story": "message-messagecomposer--stress",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "cc7d952ee428f2ffde96a01d2e1b1734a7eaaa4f063d205e1d7d208ff1b5f603",
+      "nodes": 126
+    },
+    {
+      "id": "practice-practiceprogressbar--default",
+      "story": "practice-practiceprogressbar--default",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "566b29fa631cbd5585fd326ad2e7cf8fdc2102e9a958fb8a9d503b7659b04009",
+      "nodes": 117
+    },
+    {
+      "id": "practice-practiceprogressbar--zero",
+      "story": "practice-practiceprogressbar--zero",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "8b0f719d043fbddee145251e4373244f8de2a92e9897c3454d260a59b799b9be",
+      "nodes": 117
+    },
+    {
+      "id": "practice-practiceprogressbar--complete",
+      "story": "practice-practiceprogressbar--complete",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "885964ae63e4ed986715fe482c9b480ad29e56216ee89ee01e461f8d1a259d25",
+      "nodes": 117
+    },
+    {
+      "id": "progress-changing",
+      "story": "practice-practiceprogressbar--changing-value",
+      "action": "progress",
+      "width": 390,
+      "sha256": "2629287743233521701629ba0525d7fbdba3e7d2e817ebeac4ca799ae3b7512f",
+      "nodes": 118
+    },
+    {
+      "id": "swiper-entering",
+      "story": "flashcard-flashcardswiper--default",
+      "motion": "no-preference",
+      "animationTime": 100,
+      "width": 390,
+      "sha256": "b22e6f3fe78101c99400603990797608de88c674bf9d13b2b0782334066a0f69",
+      "nodes": 136
+    },
+    {
+      "id": "swiper-exiting",
+      "story": "flashcard-flashcardswiper--exiting",
+      "motion": "no-preference",
+      "animationTime": 100,
+      "width": 390,
+      "sha256": "d65833b35f134706167141a907f07d4fb55deec5f24abcb83ecdb8df6487a6e6",
+      "nodes": 136
+    },
+    {
+      "id": "composer-grow",
+      "fixture": true,
+      "action": "composer-grow",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "f64c82eb4a305100a3d53ee929d049dbd238ae56ef34fac93c9dcb1ec474f042",
+      "nodes": 25
+    },
+    {
+      "id": "composer-shrink",
+      "fixture": true,
+      "action": "composer-shrink",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "bbf0c0b4c0889cb8c5f63f9baf754063327595075841546a5e48d070561bf1cf",
+      "nodes": 25
+    },
+    {
+      "id": "composer-keyboard",
+      "fixture": true,
+      "action": "composer-keyboard",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "12f66bbf4fa2aa8c111a037066a753d9769c5cdb0282d11e72f2360c4691b2fa",
+      "nodes": 25
+    },
+    {
+      "id": "modal-open",
+      "fixture": true,
+      "action": "modal-open",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "c81b3e1cf67ee9386de695e42008e9e49f4e12f04c366162657792f218a27ff2",
+      "nodes": 44
+    },
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "8721de35f6a7836a21420118f01d1069476011b78776f85799be9b0aeb7b180b",
+      "nodes": 54
+    },
+    {
+      "id": "modal-menu",
+      "fixture": true,
+      "action": "modal-menu",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "561f915e858074fad67e591cb540d8203548184153e80f6e4aeba43ec7787f0c",
+      "nodes": 44
+    },
+    {
+      "id": "modal-reopen",
+      "fixture": true,
+      "action": "modal-reopen",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "e7fd8d6e545b2e13d3f431bb05628d8835fedbd718fe8be8726b7a48fcebe8e7",
+      "nodes": 44
+    },
+    {
+      "id": "drawer-open",
+      "fixture": true,
+      "action": "drawer-open",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "550487de10e2cfeebceeb358ed4760a29960e1229c9198d72e92d7f5912caf3c",
+      "nodes": 36
+    },
+    {
+      "id": "menu-scroll",
+      "fixture": true,
+      "action": "menu-scroll",
+      "motion": "reduce",
+      "width": 390,
+      "sha256": "26395252335ea00e8103c8add67150b40566d12e6d7b646d624070a291342380",
+      "nodes": 25
+    },
+    {
+      "id": "calendar-schedulecalendar--week",
+      "story": "calendar-schedulecalendar--week",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "8c8ee8e2646f30fe706c928b78ba321eb45b35f9123827a80bf6d1112d83e59c",
+      "nodes": 457
+    },
+    {
+      "id": "calendar-schedulecalendar--long-names",
+      "story": "calendar-schedulecalendar--long-names",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "36302f0cd65917165124b4ce4fb4e28d594122beed21980d125a89c214073a7f",
+      "nodes": 457
+    },
+    {
+      "id": "charts-groupedbarchart--default",
+      "story": "charts-groupedbarchart--default",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "acc7cef10ebb821d212ec68b14218bd3704673ff3a00dbd09f0a3b9fced2b13c",
+      "nodes": 119
+    },
+    {
+      "id": "flashcard-flashcardswiper--default",
+      "story": "flashcard-flashcardswiper--default",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "ca62a866c65b5fbee40aa0009ac0f2b815f99834e1d119afb7efc3b6318522be",
+      "nodes": 136
+    },
+    {
+      "id": "flashcard-flashcardswiper--exiting",
+      "story": "flashcard-flashcardswiper--exiting",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "ca62a866c65b5fbee40aa0009ac0f2b815f99834e1d119afb7efc3b6318522be",
+      "nodes": 136
+    },
+    {
+      "id": "message-messagecomposer--growing",
+      "story": "message-messagecomposer--growing",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "b51b4f60ae4c28417f4559b941f0759fc09b57a6964656487569ecaadd085672",
+      "nodes": 125
+    },
+    {
+      "id": "message-messagecomposer--states",
+      "story": "message-messagecomposer--states",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "2bec5c3af84fac73f98fcfdb74031d24469648805c871c7271387a74f81122db",
+      "nodes": 156
+    },
+    {
+      "id": "message-messagecomposer--stress",
+      "story": "message-messagecomposer--stress",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "61fd58a6cc40fcd6c6daa0861c3ea8b65257b98685e40b77cb9353e12b9daad6",
+      "nodes": 126
+    },
+    {
+      "id": "practice-practiceprogressbar--default",
+      "story": "practice-practiceprogressbar--default",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "bc9aed3e748043a9f0274ef1c5ceb740147004516f73bf8a16ac43f270d8fca9",
+      "nodes": 117
+    },
+    {
+      "id": "practice-practiceprogressbar--zero",
+      "story": "practice-practiceprogressbar--zero",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "17a41de60d3a31cf9f3ca4ef859e110404b48d3b0d0606ea9f862d22573207d9",
+      "nodes": 117
+    },
+    {
+      "id": "practice-practiceprogressbar--complete",
+      "story": "practice-practiceprogressbar--complete",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "889848e38bc1ebbb7cb30127775152b62729d6b1d557fee8d5d9e857789f993c",
+      "nodes": 117
+    },
+    {
+      "id": "progress-changing",
+      "story": "practice-practiceprogressbar--changing-value",
+      "action": "progress",
+      "width": 1440,
+      "sha256": "57352d29f67b9ad5f7d924bd94f92061aa4053146076c9db2f08a07b662e59ee",
+      "nodes": 118
+    },
+    {
+      "id": "swiper-entering",
+      "story": "flashcard-flashcardswiper--default",
+      "motion": "no-preference",
+      "animationTime": 100,
+      "width": 1440,
+      "sha256": "5810de396c6cac338fb43df613fd90cfacb093b4b258b03f69da4873c1c5133b",
+      "nodes": 136
+    },
+    {
+      "id": "swiper-exiting",
+      "story": "flashcard-flashcardswiper--exiting",
+      "motion": "no-preference",
+      "animationTime": 100,
+      "width": 1440,
+      "sha256": "78ee841c7580e38da0627fe6a5c2a5240e0f48ba9c17b4c5b03648e8a0fa2148",
+      "nodes": 136
+    },
+    {
+      "id": "composer-grow",
+      "fixture": true,
+      "action": "composer-grow",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "86f5d3d5c76ea1a7bddc42145626b4e2a6ea4cd953d72a22aa62a10ffe391a7d",
+      "nodes": 25
+    },
+    {
+      "id": "composer-shrink",
+      "fixture": true,
+      "action": "composer-shrink",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "d401053d5e9b2afde8c746c358034ac1fad96c2c3daa3a9d2e6e79772670033e",
+      "nodes": 25
+    },
+    {
+      "id": "composer-keyboard",
+      "fixture": true,
+      "action": "composer-keyboard",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "7ecdd6ac14f5a103ba39c6dbbcb8002e988114b8ef694f74c18b746b00b2d277",
+      "nodes": 25
+    },
+    {
+      "id": "modal-open",
+      "fixture": true,
+      "action": "modal-open",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "770286c09000aa99a51c2e1c565249be43327b5d35bb5896c058a4820f464cc6",
+      "nodes": 44
+    },
+    {
+      "id": "modal-nested",
+      "fixture": true,
+      "action": "modal-nested",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "41a5e41cfb4e3c99b7d05c84e7c8c1231c0f8e427e881b3bd8e38473d33ab10d",
+      "nodes": 54
+    },
+    {
+      "id": "modal-menu",
+      "fixture": true,
+      "action": "modal-menu",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "5c3d53e75346a3133874e10fd623e2bc674ead6ffc1dc9dff228188d345be234",
+      "nodes": 44
+    },
+    {
+      "id": "modal-reopen",
+      "fixture": true,
+      "action": "modal-reopen",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "cbce100455ad704276d36644e3830dc01402b22c0a085eb0fd9d2cbefa84d3d4",
+      "nodes": 44
+    },
+    {
+      "id": "drawer-open",
+      "fixture": true,
+      "action": "drawer-open",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "93a6674b1a2b3b7a8c159cd7310f4025e3c6f614e123a96959f2a5ab5cf8ba79",
+      "nodes": 36
+    },
+    {
+      "id": "menu-scroll",
+      "fixture": true,
+      "action": "menu-scroll",
+      "motion": "reduce",
+      "width": 1440,
+      "sha256": "3e2be067709dbae48b7b5a03db9107c010f1df6d6f23e4060cb19a6d1c6f03cb",
+      "nodes": 25
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "blockedHosts": []
+}

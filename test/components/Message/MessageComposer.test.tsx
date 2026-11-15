@@ -181,12 +181,14 @@ describe('MessageComposer', () => {
       <MessageComposer {...baseProps} value={'Linha 1\nLinha 2\nLinha 3'} />,
     )
 
-    expect(input.style.height).toBe('96px')
+    expect(getComputedStyle(input).height).toBe('96px')
+    expect(input.style.height).toBe('')
 
     scrollHeight = 48
     rerender(<MessageComposer {...baseProps} value="Uma linha novamente" />)
 
-    expect(input.style.height).toBe('48px')
+    expect(getComputedStyle(input).height).toBe('48px')
+    expect(input.style.height).toBe('')
   })
 
   it('associates error, helper and counter while preserving form props and ref', () => {

@@ -1,3 +1,4 @@
+import * as StoryLayout from './AuthFooter.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { AuthFooter } from '../../../src'
 
@@ -13,9 +14,9 @@ const meta = {
   },
   decorators: [
     (Story) => (
-      <div style={{ background: '#000', color: '#fff', padding: 24 }}>
+      <StoryLayout.DarkFooterPreview>
         <Story />
-      </div>
+      </StoryLayout.DarkFooterPreview>
     ),
   ],
 } satisfies Meta<typeof AuthFooter>

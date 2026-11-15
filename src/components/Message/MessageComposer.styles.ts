@@ -20,9 +20,11 @@ export const InputRow = styled.div`
   gap: ${theme.spacing[2]};
 `
 
-export const Input = styled(TextareaInput)`
+export const Input = styled(TextareaInput)<{ $height: number }>`
   box-sizing: border-box;
-  height: ${theme.sizes.control.lg};
+  &&&& {
+    height: ${({ $height }) => $height}px;
+  }
   min-width: 0;
   min-height: ${theme.sizes.control.lg};
   max-height: 9rem;
