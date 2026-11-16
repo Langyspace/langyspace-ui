@@ -20,6 +20,32 @@ export interface ComponentContract {
 
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
+  {
+    browserSmoke: complete,
+    exportName: 'VoiceMessageExercise',
+    interactive: true,
+    ownerPath: 'src/components/VoiceMessage/VoiceMessageExercise.tsx',
+    runtimeMarker: 'lsui-sc-voice-message-exercise',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/VoiceMessage/VoiceMessageExercise.stories.tsx',
+      title: 'VoiceMessage/VoiceMessageExercise',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/VoiceMessage/VoiceMessageExercise.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/VoiceMessage/VoiceMessageExercise.types.ts',
+      documentation: {
+        path: 'docs/components/voice-message.md',
+        anchor: 'voicemessageexercise',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
   ...(['SlideDeck', 'SlidePage'] as const).map((exportName) => ({
     browserSmoke: complete,
     exportName,

@@ -588,4 +588,12 @@ export type {
   SlideDeckProps,
 } from './components/Slide/SlideDeck.types'
 export { SlidePage } from './components/Slide/SlidePage'
+export { VoiceMessageExercise } from './components/VoiceMessage/VoiceMessageExercise'
+export type {
+  VoiceMessageAudio,
+  VoiceMessageChoice,
+  VoiceMessageQuestion,
+  VoiceMessageLabels,
+  VoiceMessageExerciseProps,
+} from './components/VoiceMessage/VoiceMessageExercise.types'
 export type { SlidePageProps } from './components/Slide/SlidePage.types'

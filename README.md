@@ -174,3 +174,8 @@ fontes ou medidas de seus componentes. As chaves são aditivas; props existentes
 provides the common heading, instructions, tools and content column. Both retain exercise state
 when navigating and leave lesson loading and persistence to the teacher/student applications.
 See [the slide contracts and example](docs/components/slides.md).
+
+`VoiceMessageExercise` composes into `SlidePage`: realistic phone frame, native voice-note
+playback, second-listen transcript and controlled listening questions. See
+[the voice-message contract](docs/components/voice-message.md). Media URLs, answer evaluation and
+recording actions belong to the teacher/student consumers.

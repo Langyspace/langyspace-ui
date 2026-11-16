@@ -2,6 +2,8 @@
 
 ## Current scope
 
+Subsequent user instruction: implement the phone exercise in this same PR. See `voice-message-plan.md` and `voice-message-delivery.md`; the original priority decision below explains the initial shared-layout delivery.
+
 The user reprioritized this delivery on 2026-11-16: prepare the common slide capsule/layout and scrolling before the individual voice-message exercise. Its early draft is preserved in the ignored `.local/deferred-voice-message/` directory and is excluded from the public API and this PR.
 
 Build `SlidePage` for consistent heading, instruction, tools, width and content. Build `SlideDeck` for the independently scrollable viewport, full-height pages, native vertical snap, previous-page action, progress and page-change callbacks. Teacher/student keep routes, lesson fetching, learner identity, exercise data, recordings and persistence.

@@ -23,12 +23,12 @@ export const Root = styled.div.withConfig({
   }
 `
 
-export const Content = styled.div<{ $width: 'focused' | 'wide' }>`
+export const Content = styled.div<{ $width: 'focused' | 'standard' | 'wide' }>`
   display: flex;
   flex-direction: column;
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$width === 'focused' ? recipe(p).focusedWidth : recipe(p).wideWidth)};
+  max-width: ${(p) => (p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : recipe(p).wideWidth)};
   margin-inline: auto;
   gap: ${theme.spacing[6]};
 `

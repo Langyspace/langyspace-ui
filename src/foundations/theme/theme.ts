@@ -716,12 +716,37 @@ const slideRecipe = {
   inverseMuted: '#A3A3A3',
   inverseBorder: '#2C2C2C',
   focusedWidth: '37.5rem',
+  standardWidth: '47.5rem',
   wideWidth: '65rem',
   headerHeight: '3.5rem',
   panelRadius: '0.5rem',
 } as const
 
+// Current Claude A1.01 phone, browser-measured 2026-11-16; colors stay local to this device recipe.
+const voiceMessage = {
+  phoneWidth: '13.28125rem',
+  phoneHeight: '26.5625rem',
+  phoneRadius: '2.125rem',
+  frameWidth: '0.5625rem',
+  contentWidth: '47.5rem',
+  frame: palette.extended.ink,
+  frameEdge: palette.neutral[700],
+  canvas: '#EFE9E2',
+  surface: palette.white,
+  foreground: palette.neutral[900],
+  muted: palette.neutral[600],
+  border: '#E2E2E2',
+  accent: palette.accent.pink,
+  onAccent: palette.white,
+  success: semantic.status.success.foreground,
+  successSurface: semantic.status.success.background,
+  danger: semantic.status.danger.foreground,
+  dangerSurface: semantic.status.danger.background,
+  composerAccent: '#0E8A57',
+} as const
+
 export const theme = {
+  voiceMessage,
   slides: slideRecipe,
   semantic,
   dialog,

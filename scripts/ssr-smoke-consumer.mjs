@@ -77,6 +77,7 @@ const {
   MessageBubble,
   SlideDeck,
   SlidePage,
+  VoiceMessageExercise,
   MessageComposer,
   MessageThread,
   MessageThreadHeader,
@@ -625,6 +626,22 @@ try {
               ),
             },
           ],
+        }),
+        createElement(VoiceMessageExercise, {
+          contact: { name: 'Kim', status: 'online' },
+          audio: {
+            id: 'ssr-audio',
+            transcript: 'Listening transcript',
+            timestamp: '19:41',
+          },
+          questions: [
+            {
+              id: 'tired',
+              prompt: 'Is Kim tired?',
+              choices: [{ id: 'yes', label: 'Yes' }],
+            },
+          ],
+          onAnswer: () => undefined,
         }),
         createElement(MessageComposer, {
           onSubmit: () => undefined,

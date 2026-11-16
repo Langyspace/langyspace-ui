@@ -43,7 +43,14 @@ export default defineConfig({
             enabled: true,
             headless: true,
             instances: [{ browser: 'chromium' }],
-            provider: playwright({}),
+            // Story play functions use synthetic clicks, which cannot grant a media gesture.
+            // Permit native fixture playback in this isolated test browser. The separate
+            // Playwright capture verifies real clicks with the browser's normal policy.
+            provider: playwright({
+              launchOptions: {
+                args: ['--autoplay-policy=no-user-gesture-required'],
+              },
+            }),
           },
           name: 'storybook',
         },

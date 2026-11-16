@@ -1,6 +1,6 @@
 # Layout delivery
 
-The user's latest instruction prioritizes the shared slide capsule/layout and page scrolling before the voice-message exercise. This delivery implements that foundation only.
+This document records the original shared-layout delivery. The user's subsequent request adds the phone exercise to the same PR; see `voice-message-delivery.md` for that implementation and evidence.
 
 ## Implemented
 
@@ -24,7 +24,7 @@ The user's latest instruction prioritizes the shared slide capsule/layout and pa
 
 1. Product-owner review of this revision's screenshots and scroll preview.
 2. Compatible official UI package release and teacher adoption, preserving the existing material navigation/fullscreen shell; student can adopt the same components later.
-3. Resume the voice-message component inside `SlidePage`: real phone frame, three questions and transcript on second successful playback. The early local draft was preserved under `.local/deferred-voice-message/`; it is not exported or part of this PR.
+3. The phone component is now implemented and exported in this same PR; see `voice-message-delivery.md`. The early local draft remains ignored as recovery material.
 
 No remote design, portal route, production data or package release was changed. The private A1.01 source could be viewed in the browser but its file transport returned a content-fetch error; full source synchronization was not claimed.
 

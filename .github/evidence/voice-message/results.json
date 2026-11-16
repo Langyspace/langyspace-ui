@@ -1,0 +1,273 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "name": "idle-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "keyboard-focus-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "keyboard-focus-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "playing-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "paused-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "first-pass-complete-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "transcript-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "answered-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "idle-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "keyboard-focus-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "keyboard-focus-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "playing-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "paused-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "first-pass-complete-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "transcript-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "answered-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "interaction": "native playback, pause/resume, second-pass-only transcript, native speed, controlled answers",
+      "passed": true
+    },
+    {
+      "name": "deck-listening-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "interaction": "active-page audio pause, preserved listening state, deck host isolation",
+      "passed": true
+    },
+    {
+      "name": "error-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "retry-recovered-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "error-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "retry-recovered-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "interaction": "native missing-file error and retry with actual MP3 response",
+      "passed": true
+    },
+    {
+      "name": "missing-recording-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "answer-feedback-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "inactive-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "theme-override-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "long-content-1280",
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "missing-recording-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "answer-feedback-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "inactive-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "theme-override-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "long-content-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    },
+    {
+      "name": "narrow-container-280",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "horizontalOverflow": false
+    }
+  ]
+}
