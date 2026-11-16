@@ -25,7 +25,7 @@ Root bundle: 288,904 raw / 70,650 gzip bytes. The proposed 71,500-byte root gzip
 
 ## Publication boundary
 
-This is a feature-branch visual PR for review. No merge, tag, release or production deployment is included. Published 4.3.0 and its immutable assets stay intact; a subsequent approved package publication must use a fresh minor version. The canonical checkout remains clean on approved main. Product adoption is a separate consumer change.
+At the review handoff this was a feature-branch visual PR with no merge, tag, release or production deployment. The product owner subsequently authorized publication of PR #44. The approved rendered source and evidence remain `23b3ee5eab94f73cdb89fc71b07edc6ee73033bc`; release preparation changes only version and documentation to 4.4.0. Published 4.3.0 and its immutable assets stay intact. Package and catalog publication use the existing validated workflows. Product adoption is a separate consumer change.
 
 Final review also exercised 12 pronunciation attempts, keeping eight recent results with stable unique keys. The ten existing default-composition comparisons have SSIM 1.000000 at the reported precision; the hidden-grammar changes are intentional. Before/after hashes and the 12 scene dimensions were rechecked. The Claude live version and local export hash remain unchanged at handoff.
 
