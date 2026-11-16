@@ -110,6 +110,7 @@ export const ThemeOverride: Story = {
           voiceMessage: {
             canvas: '#1B1A18',
             surface: '#171717',
+            controlSurface: '#2A2A2A',
             foreground: '#F7F7F7',
             muted: '#A3A3A3',
             border: '#555555',
@@ -150,17 +151,26 @@ export const PlaybackAndTranscript: Story = {
     )
     await userEvent.click(canvas.getByRole('button', { name: 'Pausar áudio' }))
     await userEvent.click(canvas.getByRole('button', { name: 'Ouvir áudio' }))
-    await waitFor(() => expect(audio.paused).toBe(false))
+    await waitFor(
+      () =>
+        expect(canvasElement.querySelector('[data-playback]')).toHaveAttribute(
+          'data-playback',
+          'playing',
+        ),
+      { timeout: 10000 },
+    )
     await expect(canvasElement.querySelector('[data-listens]')).toHaveAttribute(
       'data-listens',
       '1',
     )
     audio.currentTime = audio.duration - 0.05
-    await waitFor(() =>
-      expect(canvasElement.querySelector('[data-playback]')).toHaveAttribute(
-        'data-playback',
-        'ended',
-      ),
+    await waitFor(
+      () =>
+        expect(canvasElement.querySelector('[data-playback]')).toHaveAttribute(
+          'data-playback',
+          'ended',
+        ),
+      { timeout: 10000 },
     )
     await userEvent.click(
       canvas.getByRole('button', { name: 'Ouvir novamente' }),

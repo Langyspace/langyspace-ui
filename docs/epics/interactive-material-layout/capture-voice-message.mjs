@@ -1,4 +1,4 @@
-/* global document, window, innerWidth */
+/* global document, window, innerWidth, getComputedStyle */
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { chromium } from 'playwright'
 
@@ -60,17 +60,67 @@ const finish = async () => {
   })
   await status('ended')
 }
+const compactPlayer = async () => {
+  const metrics = await root().evaluate((element) => {
+    const rect = (node) => {
+      const { width, height } = node.getBoundingClientRect()
+      return { width, height }
+    }
+    const play = element.querySelector('button')
+    return {
+      play: rect(play),
+      glyph: rect(play.querySelector('svg')),
+      speed: rect(element.querySelector('button[aria-label^="Velocidade:"]')),
+      waveform: rect(element.querySelector('i').parentElement),
+      bubble: rect(element.querySelector('audio').parentElement),
+      choices: [...element.querySelectorAll('fieldset button')].map(rect),
+    }
+  })
+  if (
+    Math.abs(metrics.play.width - 32) > 0.5 ||
+    Math.abs(metrics.play.height - 32) > 0.5
+  )
+    throw new Error('Play must match the 32px reference control')
+  if (metrics.glyph.width !== 14 || metrics.glyph.height !== 14)
+    throw new Error('Play glyph is disproportionate to the reference')
+  if (metrics.speed.width > 28 || metrics.speed.height !== 24)
+    throw new Error('Speed control crowds out the waveform')
+  if (metrics.waveform.width < 60 || metrics.waveform.height !== 28)
+    throw new Error('Waveform is compressed inside the voice bubble')
+  if (metrics.bubble.height > 64)
+    throw new Error('Locked transcript adds visible bulk to the voice bubble')
+  if (metrics.choices.some(({ height }) => height < 32 || height > 34))
+    throw new Error('Question choices no longer match the compact reference')
+  results.push({
+    viewport: page.viewportSize(),
+    geometry: metrics,
+    passed: true,
+  })
+}
 
 try {
   for (const width of [1280, 390]) {
     await page.setViewportSize({ width, height: width === 390 ? 844 : 720 })
     await story('default')
+    await compactPlayer()
     await snapshot(`idle-${width}`)
     await page.getByRole('region', { name: 'Conversa: Kim' }).focus()
     await snapshot(`keyboard-focus-${width}`)
-    await page.getByRole('region', { name: 'Conversa: Kim' }).focus()
-    await snapshot(`keyboard-focus-${width}`)
-    await play()
+    await page.keyboard.press('Tab')
+    const focusedPlay = page.getByRole('button', {
+      name: 'Ouvir áudio',
+      exact: true,
+    })
+    if (
+      !(await focusedPlay.evaluate(
+        (button) =>
+          button === document.activeElement &&
+          getComputedStyle(button).boxShadow !== 'none',
+      ))
+    )
+      throw new Error('Compact play control lost keyboard focus visibility')
+    await page.keyboard.press('Enter')
+    await status('playing')
     await count(1)
     await snapshot(`playing-${width}`)
     await page.getByRole('button', { name: 'Pausar áudio' }).click()

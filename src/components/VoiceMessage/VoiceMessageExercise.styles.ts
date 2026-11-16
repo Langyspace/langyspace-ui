@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { Button } from '../Button/Button'
@@ -43,7 +43,7 @@ export const Phone = styled.div`
   margin-inline: auto;
   box-shadow:
     0 0 0 2px ${(p) => recipe(p).frameEdge},
-    ${theme.shadows.lg};
+    ${theme.voiceMessage.phoneShadow};
   border: ${theme.voiceMessage.frameWidth} solid ${(p) => recipe(p).frame};
   border-radius: ${theme.voiceMessage.phoneRadius};
   background: ${(p) => recipe(p).canvas};
@@ -55,12 +55,13 @@ export const Contact = styled.div`
   display: flex;
   align-items: center;
   gap: ${theme.spacing[2]};
-  padding: ${theme.spacing[2]};
+  padding: ${theme.voiceMessage.conversationInset};
   background: ${(p) => recipe(p).surface};
   border-bottom: 1px solid ${(p) => recipe(p).border};
 `
 export const ContactText = styled.div`
   min-width: 0;
+  line-height: 1.4;
   overflow-wrap: anywhere;
   strong {
     display: block;
@@ -68,7 +69,7 @@ export const ContactText = styled.div`
   }
   small {
     color: ${(p) => recipe(p).muted};
-    font-size: ${theme.typography.fontSize.sm};
+    font-size: ${theme.typography.fontSize.xs};
   }
 `
 export const Conversation = styled.div`
@@ -77,8 +78,8 @@ export const Conversation = styled.div`
   flex-direction: column;
   align-items: flex-start;
   min-height: 0;
-  gap: ${theme.spacing[2]};
-  padding: ${theme.spacing[2]};
+  gap: ${theme.voiceMessage.conversationInset};
+  padding: ${theme.spacing[2]} ${theme.voiceMessage.conversationInset};
   overflow-y: auto;
   overscroll-behavior: contain;
   &:focus-visible {
@@ -89,15 +90,15 @@ export const Conversation = styled.div`
 export const Bubble = styled.div`
   width: 86%;
   max-width: 100%;
-  padding: ${theme.spacing[2]};
+  padding: ${theme.voiceMessage.bubblePaddingBlock} ${theme.spacing[2]};
   border-radius: ${theme.radius.xl} ${theme.radius.xl} ${theme.radius.xl}
     ${theme.radius.sm};
   color: ${(p) => recipe(p).foreground};
   background: ${(p) => recipe(p).surface};
   box-shadow: ${theme.shadows.xs};
   box-sizing: border-box;
-  font-size: ${theme.typography.fontSize.sm};
-  line-height: ${theme.typography.lineHeight.normal};
+  font-size: ${theme.typography.fontSize.xs};
+  line-height: 1.4;
   overflow-wrap: anywhere;
 `
 export const VoiceBubble = styled(Bubble)`
@@ -106,13 +107,14 @@ export const VoiceBubble = styled(Bubble)`
 export const Player = styled.div`
   display: flex;
   align-items: center;
-  gap: ${theme.spacing[1]};
+  gap: ${theme.spacing[2]};
   min-width: 0;
 `
 export const Play = styled(Button)`
   flex-shrink: 0;
-  width: ${theme.sizes.control.lg};
-  min-height: ${theme.sizes.control.lg};
+  width: ${theme.sizes.control.sm};
+  height: ${theme.sizes.control.sm};
+  min-height: ${theme.sizes.control.sm};
   padding: 0;
   background: ${(p) => recipe(p).accent};
   border-color: ${(p) => recipe(p).accent};
@@ -120,12 +122,13 @@ export const Play = styled(Button)`
 `
 export const Speed = styled(Button)`
   flex-shrink: 0;
-  min-width: ${theme.sizes.control.lg};
-  min-height: ${theme.sizes.control.lg};
-  padding-inline: ${theme.spacing[1]};
+  min-width: ${theme.voiceMessage.speedHeight};
+  height: ${theme.voiceMessage.speedHeight};
+  min-height: ${theme.voiceMessage.speedHeight};
+  padding: 2px ${theme.voiceMessage.conversationInset};
   color: ${(p) => recipe(p).foreground};
-  background: ${(p) => recipe(p).surface};
-  font-size: ${theme.typography.fontSize.sm};
+  background: ${(p) => recipe(p).controlSurface};
+  font-size: ${theme.voiceMessage.speedFontSize};
 `
 export const Wave = styled.div`
   display: flex;
@@ -133,7 +136,7 @@ export const Wave = styled.div`
   align-items: center;
   justify-content: space-between;
   min-width: 0;
-  height: ${theme.sizes.control.md};
+  height: ${theme.voiceMessage.waveformHeight};
   gap: 2px;
 `
 export const Bar = styled.i<{ $height: number; $played: boolean }>`
@@ -148,25 +151,38 @@ export const Meta = styled.div`
   justify-content: space-between;
   gap: ${theme.spacing[2]};
   color: ${(p) => recipe(p).muted};
-  font-size: ${theme.typography.fontSize.xs};
+  font-size: ${theme.voiceMessage.metaFontSize};
   font-variant-numeric: tabular-nums;
 `
 export const Time = styled.time`
   display: block;
   text-align: right;
   color: ${(p) => recipe(p).muted};
-  font-size: ${theme.typography.fontSize.xs};
+  font-size: ${theme.voiceMessage.metaFontSize};
 `
-export const Transcript = styled.div`
+export const Transcript = styled.div<{ $visible: boolean }>`
   border-top: 1px dashed ${(p) => recipe(p).border};
-  margin-top: ${theme.spacing[2]};
-  padding-top: ${theme.spacing[2]};
-  font-size: ${theme.typography.fontSize.sm};
-  line-height: ${theme.typography.lineHeight.normal};
+  margin-top: ${theme.voiceMessage.conversationInset};
+  padding-top: ${theme.voiceMessage.conversationInset};
+  font-size: ${theme.voiceMessage.transcriptFontSize};
+  line-height: 1.4;
   white-space: pre-wrap;
   p {
     margin: 0;
   }
+  ${({ $visible }) =>
+    !$visible &&
+    css`
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      border: 0;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    `}
 `
 export const Hint = styled.p`
   margin: 0;
@@ -215,7 +231,7 @@ export const Choices = styled.div`
   gap: ${theme.spacing[2]};
 `
 export const Choice = styled(Button)<{ $feedback?: 'correct' | 'incorrect' }>`
-  min-height: ${theme.sizes.control.lg};
+  min-height: ${theme.sizes.control.sm};
   color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).foreground)};
   background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : recipe(p).surface)};
   border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).border)};

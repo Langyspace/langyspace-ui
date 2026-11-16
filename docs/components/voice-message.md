@@ -25,7 +25,9 @@ The teacher and student applications supply contacts, learner names, media URLs,
 
 `audio.id` and `audio.src` identify the current voice note. Changing either starts a fresh listening state and pauses the old media. Pausing, buffering and resuming continue the same listen. A second pass starts only after the first ends, and only a native `playing` event increments listens. The transcript appears at the start of that second successful pass and stays available. Failed starts do not unlock it. Playback has no autoplay.
 
-The file's native metadata and time updates drive duration/progress. Speed alternates between 1x and 0.75x as in A1.01. A retryable media failure keeps questions and answers intact and restores focus to the play control. Buttons remain keyboard accessible, with 44px or larger interactive targets. Localized labels, semantic named question groups, selected states and explicit correct/incorrect labels support assistive technology.
+The file's native metadata and time updates drive duration/progress. Speed alternates between 1x and 0.75x as in A1.01. A retryable media failure keeps questions and answers intact and restores focus to the play control. Play and answer controls use the reference's compact 32px height; the speed control has a 24px target. All retain native keyboard activation and visible focus. Localized labels, semantic named question groups, selected states and explicit correct/incorrect labels support assistive technology.
+
+The locked-transcript explanation is available to assistive technology through the play control's description, without enlarging the voice bubble. The transcript enters the visible layout on the second successful playback pass.
 
 Set `active` from the deck's page-change state to pause a departing page; returning retains transcript/listen state. Unmount pauses media and invalidates pending play requests. Product pages own this orchestration, file availability and recording authorization.
 

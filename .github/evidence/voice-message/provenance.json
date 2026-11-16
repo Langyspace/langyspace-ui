@@ -1,54 +1,96 @@
 {
-  "baseline": "2a7860c141d368e16f30ff8a9b074ee8f6e4103e",
+  "baseline": "70804da2bf9faec81bc0655763e3b843588a38d4",
   "sourceSha256": {
     "src/components/VoiceMessage/VoiceMessageExercise.types.ts": "a699df3dedf202149b2ff0a7aa4ef5aadb1e5e3da417b4a4e4179b27fed438f8",
     "src/components/VoiceMessage/useVoiceMessageAudio.ts": "6fb43914c554ad2c66c816fbdef222779f633b0b2f4da6b62ee711ff880b1f7a",
-    "src/components/VoiceMessage/VoiceMessageExercise.tsx": "6764457c548efe2035bc4d2d99677f1d27ab25136f2d789446934f1f0a975f1e",
-    "src/components/VoiceMessage/VoiceMessageExercise.styles.ts": "cf6ea7ed46e2cc79839ba982c25d18c26f02d862302da1efcf9a9c514455aa90",
+    "src/components/VoiceMessage/VoiceMessageExercise.tsx": "f4283753ce96b110555e227b5df5485fbc5e3e6309146dd1cfd8f055fe93a9e2",
+    "src/components/VoiceMessage/VoiceMessageExercise.styles.ts": "d38c1102892c79cfb7df2689fb93fef3b7a26c54ce52e3c138d77b9adff0b65c",
     "src/components/Slide/SlidePage.styles.ts": "49055b3ce5a3bbfc2d025516a79eef334e3cb4edb0b1e125dae81b3f3b3b55f7",
     "src/components/Slide/SlidePage.types.ts": "e4510b4720c7f450263ca312cb54b6a5414f76c80ad45fd26ae20a7ad2f2ad2f",
-    "src/foundations/theme/theme.ts": "150dbc1f5afb247ca6b254a35687c4e9e3ce1e6e8856c144a5c8e3c0c81b0c4f",
+    "src/foundations/theme/theme.ts": "be0369697b8f6271357882dc163eefbe744aa86f43f36488f4880908d752c272",
     "stories/components/VoiceMessage/VoiceMessageDemo.tsx": "994cbb9d1c5360330e32d41fd7196d3ae34109536a5eeea8caf5ad62d9a96003",
-    "stories/components/VoiceMessage/VoiceMessageExercise.stories.tsx": "8b7e47ad45ab52d2e451d626a1392f073ed2bf25e359736f4c500b9f95ee3759"
+    "stories/components/VoiceMessage/VoiceMessageExercise.stories.tsx": "b2308858bc1bc486cdc5dfb47ac106c5b8832506165f89d6e5a4a9ac98ce75e5",
+    "docs/epics/interactive-material-layout/capture-voice-message.mjs": "630c4dc0f22f61be34c37c108fbc711921d2cc9f27f2dc31aed2378cd3b6ae19"
   },
   "screenshotsSha256": {
-    ".github/evidence/voice-message/answer-feedback-1280.png": "af7054c6db8caae17828a1bc9aa19d2c7675bc05ec45e8c7d08704215d344624",
-    ".github/evidence/voice-message/answer-feedback-390.png": "e912181c59d4f45a528ba3779f59d12c9ef2061ab23d7c9ba338baf4805e6df1",
-    ".github/evidence/voice-message/answered-1280.png": "8896f98c7a75c72d001c6fb4edd1bda7ad9d12dd25c2fd8fe49f82f85be1a043",
-    ".github/evidence/voice-message/answered-390.png": "7bf73ddbd0cbdad97728ea6d8189128e032bd0c27d409313072c2f6a11e7dc85",
-    ".github/evidence/voice-message/deck-listening-1280.png": "36932b99b4934e368305d348b1fdd6d9f8edda090713a2786273445931c79baa",
-    ".github/evidence/voice-message/error-1280.png": "f7ed07b396e58bf5e29a79f05c88fd14beacb7b2c39377c1e46a78a6cba39328",
-    ".github/evidence/voice-message/error-390.png": "ca08128d44504ff32d839353b988d91a57d5597872cc070925a6f4883402d140",
-    ".github/evidence/voice-message/first-pass-complete-1280.png": "f98123da5ec5dee3654d34f4d3c4bc45cab06dd1c2fa16c54f3ab3f782d61e8c",
-    ".github/evidence/voice-message/first-pass-complete-390.png": "e8ab3634ab5397ec67d7eed087807fe7c3dfadb7898ba63e4b12548c395e900d",
-    ".github/evidence/voice-message/idle-1280.png": "1c6b491a803cbace5038c08203cf80cddcd0b03a7ecca10e6498aa343953e039",
-    ".github/evidence/voice-message/idle-390.png": "5cfed6540579d83b4c42eaf9a42b2b695b8aa5fd79fe0b89333b65aaba127ceb",
-    ".github/evidence/voice-message/inactive-1280.png": "3a6225e19824aeae84f7df79d6d006d6cf13313994c45f27d543bd07bc1f63f5",
-    ".github/evidence/voice-message/inactive-390.png": "4b1f126b8e86831215db1a8d3ba3e21d88d6eaa140ee3d8a0d806ea69d08ab10",
-    ".github/evidence/voice-message/keyboard-focus-1280.png": "1edf5a52a42eb8f6b1d379f71df4b449ecd752db32527aece75befc7dd425d4c",
-    ".github/evidence/voice-message/keyboard-focus-390.png": "dd93e2a16f94351f17910e030a2e0d076439ad62e9892bed745ae56c8cd90026",
-    ".github/evidence/voice-message/long-content-1280.png": "2b48748f25f5602ed3a99a3960e28936f7439a61f64ed14a56814467b675764d",
-    ".github/evidence/voice-message/long-content-390.png": "9ef549fd9586e4295182866f077e0ca46fe5bf96e8f30cc20bc81106922920c0",
-    ".github/evidence/voice-message/missing-recording-1280.png": "05488eb6c844df7b36360f06de7543abdbf5b8e71ef0fc330a627a7c7ccf8567",
-    ".github/evidence/voice-message/missing-recording-390.png": "70cfa770542faa1dfa7225fb070ee7fbd215705553506c7832356a758f14de5b",
-    ".github/evidence/voice-message/narrow-container-280.png": "b5705d3c4d6ce97afdd56d506a3190656f0c58bd9da03c86d84d68f5058f60cb",
-    ".github/evidence/voice-message/paused-1280.png": "5cbf8ad8bfe347bac8997ea33223423bdbc225db0183acf0f0ad2093141dd252",
-    ".github/evidence/voice-message/paused-390.png": "8b7e32c923fe0e508bcdc8d2212afaae4465259e34265e7680e83e354b7cda50",
-    ".github/evidence/voice-message/playing-1280.png": "3950d82f944e1e557906fa7f27e92b03962402da23589d47f7f7e1088785d79a",
-    ".github/evidence/voice-message/playing-390.png": "d5b4ae67eb069cebd64244c335bb720b082122dd95386f47541af38ef26d9216",
-    ".github/evidence/voice-message/retry-recovered-1280.png": "b30cb653e58ac81900655ec0f500a4294b5ff84ba376f646e5b28027bfe68919",
-    ".github/evidence/voice-message/retry-recovered-390.png": "70e6029010407c3bc6cc07938d59c788c737727ad389c1ec80fc17d1ec8b464c",
-    ".github/evidence/voice-message/theme-override-1280.png": "758239544c293084488dd3c8dd9dc3b5a9c8641e3ad089a083685d09e4f86db5",
-    ".github/evidence/voice-message/theme-override-390.png": "9dccf585d81f75f3613924d6a77f01f827dd6bab79dd507927649608f0ed2fc6",
-    ".github/evidence/voice-message/transcript-1280.png": "fee9e96526c88a84d649f6a6fd364b6ef7d2d2a662636993409d28568ce284c3",
-    ".github/evidence/voice-message/transcript-390.png": "235d6fabc39d43ad0c01d7981b5d112c559c0d405eb526b9ddfc01009476cc11"
+    ".github/evidence/voice-message/answer-feedback-1280.png": "7a9bb26fa37f8701e8a0f228590277579e3a08a2a378cc96ca73273587187086",
+    ".github/evidence/voice-message/answer-feedback-390.png": "329e24800f2bb6876b58d95f39cb5d7aa6538a4369eed03f12bb1d58eca4e4c3",
+    ".github/evidence/voice-message/answered-1280.png": "428ba5c0aa84b32ce0781561c0042222c866ab82067bd27e49ba7b2260d66d4e",
+    ".github/evidence/voice-message/answered-390.png": "c8ab8a1a146a2a382fa110a5bd89a5e9fc663ab69a5beb5e418dff96460f5cac",
+    ".github/evidence/voice-message/deck-listening-1280.png": "b768654d6b67b6588167795a7739e19ce507100eb2ae94252bd9edf639e38f1e",
+    ".github/evidence/voice-message/error-1280.png": "c080b9950101bc005b1c0ec70836d8da0c0ce4a9ea7fe3d5ea4bf25f44f3d80f",
+    ".github/evidence/voice-message/error-390.png": "ed6089ec929d4b1749dc420ecb79f85611eea4e4d0e421d4334efd20bc926f2d",
+    ".github/evidence/voice-message/first-pass-complete-1280.png": "f90742b22818d04d88d4d35afe6d1df5fda38ddbc7d122fdf10c8d780f9fefe2",
+    ".github/evidence/voice-message/first-pass-complete-390.png": "2d50480c8bdde1c58508165358329f821277960dc7c7aa925de9b644f9e1008e",
+    ".github/evidence/voice-message/idle-1280.png": "d97eee23f5190c3ce7eb5a379fdba332059bd191610bfce3d180086912e00cef",
+    ".github/evidence/voice-message/idle-390.png": "3a6bca7189bdcd9d749a2999d6ba9b8aef3646abec710dcea12b2d991992b3bd",
+    ".github/evidence/voice-message/inactive-1280.png": "5fa28f64ea07e0bb95300bcb2a3218b6efa0afa4057a9c16e872b9a7a8a5ed29",
+    ".github/evidence/voice-message/inactive-390.png": "d6e17d682a0e11dda5f5e6cd1e618e5e37bb6c5897ecd339fe19e2b232367dfe",
+    ".github/evidence/voice-message/keyboard-focus-1280.png": "c994f81a840ad1983e44eadf65c860f05b587f328443cedb81bbed984955723a",
+    ".github/evidence/voice-message/keyboard-focus-390.png": "dfc357ed70c9c31d0e2e9222f5ba1326b2ab53ba1e89cb463bb3ffc20632b994",
+    ".github/evidence/voice-message/long-content-1280.png": "61261f35ef6d85f60280b490f72e19dda2d046689f35e54ad0d42c2d652ee15d",
+    ".github/evidence/voice-message/long-content-390.png": "b23c468c7f80fd39e4bae0c1a153ce65abeac737c0708c3acbdf3ccb40fee83b",
+    ".github/evidence/voice-message/missing-recording-1280.png": "8ef3d2ba9cb559ca2b32e72af6816efea2f8b47078299fc6375d1501546cf658",
+    ".github/evidence/voice-message/missing-recording-390.png": "a00711d5c622289515f3b70e25d4835fdb34fc3b7f366155ed9dca6f369adf73",
+    ".github/evidence/voice-message/narrow-container-280.png": "816c6247bd8d36d66b55b502b2027307a63c35fcd52e77d6518aa18e69ce33e2",
+    ".github/evidence/voice-message/paused-1280.png": "9e11b5a38a45756587f012579fe9cb2480b9e11982fadff466a65b508079f670",
+    ".github/evidence/voice-message/paused-390.png": "9b91b5f3f00579acc354fb0971cbd8fc1fe6cd932feac11bd148335a24326aaa",
+    ".github/evidence/voice-message/playing-1280.png": "2e0a9c3d2bb728400712cd687197d506b790aca36a8b078acbf0cf5dcec0b089",
+    ".github/evidence/voice-message/playing-390.png": "71ec9fbb215d105e4e7e9caf524c58f26b394041896aeddf0d2a0dc9c221e8cb",
+    ".github/evidence/voice-message/retry-recovered-1280.png": "e0848fdf90427d8a1c0beffe9f68fa688a69aaccd2f7e29d80f1df501b8d4874",
+    ".github/evidence/voice-message/retry-recovered-390.png": "2929f7b37681ccbcc21561227e92a3038f55edb192beddde80d2552733529a54",
+    ".github/evidence/voice-message/theme-override-1280.png": "1c5df523e008e34a314e1ca450390062ecbc6e30f5498afd5e61defb3b4495cb",
+    ".github/evidence/voice-message/theme-override-390.png": "964bbf02c8dad43457e16c5c80c3cd17968f33a7ed67bad4c635c30ce4688f49",
+    ".github/evidence/voice-message/transcript-1280.png": "852fbe0a7fbf0167279ea5469149bf0689a3307245957d5ea1af3241c5b865e7",
+    ".github/evidence/voice-message/transcript-390.png": "f70d6cdb78061c48aa983d89f8b463eb14167a29aa2cd9c70292582474a499c4"
   },
   "captureCommand": "node docs/epics/interactive-material-layout/capture-voice-message.mjs",
   "source": "https://claude.ai/artifact/KX94fLxvBjhqmz8VmHpjgr",
   "nativeBrowserPlayback": "passed with trusted clicks and normal browser autoplay policy",
-  "nativeStoryTest": "passed with isolated test autoplay permission; muted fixture",
+  "nativeStoryTest": "10 variants passed; native playback story passed on focused rerun after waiting for actual playing and allowing native seek completion (10 seconds)",
   "artifactFileTransport": "content fetch unavailable; rendered source inspected in browser",
   "visualReview": "pending human",
   "packagePublished": false,
-  "portalsChanged": false
+  "portalsChanged": false,
+  "featureBaseline": "2a7860c141d368e16f30ff8a9b074ee8f6e4103e",
+  "change": "Compact phone controls and voice bubble after product-owner screenshot feedback",
+  "referenceMeasurements": {
+    "play": {
+      "width": 32,
+      "height": 32,
+      "glyph": 14
+    },
+    "speed": {
+      "width": 22.859375,
+      "height": 19.3984375,
+      "fontSize": 11
+    },
+    "waveform": {
+      "width": 70.0859375,
+      "height": 28
+    },
+    "voiceRow": {
+      "width": 140.9453125,
+      "gap": 8
+    },
+    "bubble": {
+      "width": 156.9453125,
+      "fontSize": 12
+    },
+    "question": {
+      "width": 515.5,
+      "height": 59.59375
+    },
+    "answer": {
+      "height": 32.59375,
+      "fontSize": 14
+    }
+  },
+  "localValidation": [
+    "30 browser captures with measured compact geometry at 1280px and 390px",
+    "Native keyboard Enter activation and visible play focus",
+    "Native playback, pause/resume, replay transcript, speed, error/retry and slide pause",
+    "Storybook accessibility and native playback story",
+    "Scoped ESLint, TypeScript and deliberate API snapshot validation"
+  ]
 }

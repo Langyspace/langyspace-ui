@@ -2,15 +2,62 @@
   "passed": true,
   "results": [
     {
-      "name": "idle-1280",
       "viewport": {
         "width": 1280,
         "height": 720
       },
-      "horizontalOverflow": false
+      "geometry": {
+        "play": {
+          "width": 32,
+          "height": 32
+        },
+        "glyph": {
+          "width": 14,
+          "height": 14
+        },
+        "speed": {
+          "width": 24.515625,
+          "height": 24
+        },
+        "waveform": {
+          "width": 68.421875,
+          "height": 28
+        },
+        "bubble": {
+          "width": 156.9375,
+          "height": 56
+        },
+        "choices": [
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          },
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          },
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          }
+        ]
+      },
+      "passed": true
     },
     {
-      "name": "keyboard-focus-1280",
+      "name": "idle-1280",
       "viewport": {
         "width": 1280,
         "height": 720
@@ -66,15 +113,62 @@
       "horizontalOverflow": false
     },
     {
-      "name": "idle-390",
       "viewport": {
         "width": 390,
         "height": 844
       },
-      "horizontalOverflow": false
+      "geometry": {
+        "play": {
+          "width": 32,
+          "height": 32
+        },
+        "glyph": {
+          "width": 14,
+          "height": 14
+        },
+        "speed": {
+          "width": 24.515625,
+          "height": 24
+        },
+        "waveform": {
+          "width": 68.421875,
+          "height": 28
+        },
+        "bubble": {
+          "width": 156.9375,
+          "height": 56
+        },
+        "choices": [
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          },
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          },
+          {
+            "width": 101.671875,
+            "height": 32
+          },
+          {
+            "width": 116.609375,
+            "height": 32
+          }
+        ]
+      },
+      "passed": true
     },
     {
-      "name": "keyboard-focus-390",
+      "name": "idle-390",
       "viewport": {
         "width": 390,
         "height": 844

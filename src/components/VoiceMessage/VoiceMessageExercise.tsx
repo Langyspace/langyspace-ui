@@ -166,16 +166,20 @@ function VoiceMessageContent({
                   aria-busy={loading || undefined}
                   title={loading ? labels.loading : playLabel}
                   aria-controls={`${id}-transcript`}
+                  aria-describedby={
+                    transcriptVisible ? undefined : `${id}-transcript`
+                  }
                   disabled={!audio.src || !active}
                   onClick={() => {
                     void media.toggle()
                   }}
                   variant="brand"
+                  size="sm"
                 >
                   <svg
                     aria-hidden="true"
-                    width="16"
-                    height="16"
+                    width="14"
+                    height="14"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -200,6 +204,7 @@ function VoiceMessageContent({
                   disabled={!audio.src || !active}
                   onClick={media.changeSpeed}
                   variant="tertiary"
+                  size="sm"
                 >
                   {media.speed}x
                 </Styled.Speed>
@@ -211,6 +216,7 @@ function VoiceMessageContent({
                 <time>{audio.timestamp}</time>
               </Styled.Meta>
               <Styled.Transcript
+                $visible={transcriptVisible}
                 id={`${id}-transcript`}
                 aria-live="polite"
                 role="region"
