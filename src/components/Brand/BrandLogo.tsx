@@ -1,7 +1,7 @@
-import horizontal from '../../assets/brand/horizontal.svg'
-import horizontalInverse from '../../assets/brand/horizontal-inverse.svg'
-import stacked from '../../assets/brand/stacked.svg'
-import stackedInverse from '../../assets/brand/stacked-inverse.svg'
+import horizontal from '../../assets/brand/horizontal.svg?no-inline'
+import horizontalInverse from '../../assets/brand/horizontal-inverse.svg?no-inline'
+import stacked from '../../assets/brand/stacked.svg?no-inline'
+import stackedInverse from '../../assets/brand/stacked-inverse.svg?no-inline'
 import type { BrandLogoProps } from './BrandLogo.types'
 import * as Styled from './BrandLogo.styles'
 

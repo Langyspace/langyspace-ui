@@ -2,19 +2,19 @@ import { LabTile } from './LabTile'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
-import { CallSimulation } from '../../../src/components/Simulation/CallSimulation'
-import { InterviewSimulation } from '../../../src/components/Simulation/InterviewSimulation'
-import { AudioSequenceControls } from '../../../src/components/Simulation/AudioSequenceControls'
-import { GrammarTable } from '../../../src/components/Grammar/GrammarTable'
-import { GapFillExercise } from '../../../src/components/Exercise/GapFillExercise'
-import { RolePlayExercise } from '../../../src/components/Exercise/RolePlayExercise'
-import { SceneExplorer } from '../../../src/components/Exercise/SceneExplorer'
-import { MinimalPairExercise } from '../../../src/components/Exercise/MinimalPairExercise'
-import { FluencyTimer } from '../../../src/components/Exercise/FluencyTimer'
-import { BranchingConversation } from '../../../src/components/Simulation/BranchingConversation'
-import { VideoExercise } from '../../../src/components/Exercise/VideoExercise'
-import { OralReview } from '../../../src/components/Exercise/OralReview'
-import { OralReviewResult } from '../../../src/components/Exercise/OralReviewResult'
+import { CallSimulation } from '../../../src/components/InteractiveMaterial/CallSimulation'
+import { InterviewSimulation } from '../../../src/components/InteractiveMaterial/InterviewSimulation'
+import { AudioSequenceControls } from '../../../src/components/InteractiveMaterial/AudioSequenceControls'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
+import { FluencyTimer } from '../../../src/components/InteractiveMaterial/FluencyTimer'
+import { BranchingConversation } from '../../../src/components/InteractiveMaterial/BranchingConversation'
+import { VideoExercise } from '../../../src/components/InteractiveMaterial/VideoExercise'
+import { OralReview } from '../../../src/components/InteractiveMaterial/OralReview'
+import { OralReviewResult } from '../../../src/components/InteractiveMaterial/OralReviewResult'
 import { CallDemo } from './CallDemo'
 import { InterviewDemo } from './InterviewDemo'
 import { ConversationDemo } from './ConversationDemo'
@@ -161,6 +161,7 @@ export const DarkComponents: Story = {
     (Story) => (
       <ThemeProvider
         theme={createTheme({
+          colors: { text: { primary: '#F7F7F7', muted: '#B8B8B8' } },
           slides: {
             canvas: '#121212',
             surface: '#1F1F1F',

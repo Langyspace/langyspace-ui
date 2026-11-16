@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import { BranchingConversation } from '../../../src/components/Simulation/BranchingConversation'
-import type { ConversationMessage } from '../../../src/components/Simulation/BranchingConversation.types'
+import { BranchingConversation } from '../../../src/components/InteractiveMaterial/BranchingConversation'
+import type { ConversationMessage } from '../../../src/components/InteractiveMaterial/BranchingConversation.types'
 import data from '../../materials/UXLab/lab-data.json'
 import kim from '../../materials/UXLab/assets/bust_kim.png'
-import * as Common from '../../../src/components/Exercise/Material.shared.styles'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import type { LabDemoProps } from './UXLab.demo.types'
 export function ConversationDemo({ level = 'a1' }: LabDemoProps) {
   const graph = data.BR[level]

@@ -39,6 +39,7 @@ jobs:
       - name: Validate architecture and source contracts
         run: |
           node --test scripts/publish-release.node-test.mjs
+          pnpm run test:build-transforms
           pnpm run test:styling-policy
           pnpm run test:styling-system
           pnpm run test:button-system

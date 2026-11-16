@@ -1,8 +1,7 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { resolveTheme } from '../../foundations/theme/resolveTheme'
-export const recipe = (props: Parameters<typeof resolveTheme>[0]) =>
-  resolveTheme(props).slides ?? theme.slides
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
+export const recipe = resolveSlideTheme
 export const Stack = styled.div`
   display: flex;
   flex-direction: column;

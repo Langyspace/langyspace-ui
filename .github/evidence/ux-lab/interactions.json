@@ -1,12 +1,27 @@
 {
   "results": [
     {
+      "name": "interview: navigation, captions, toggles, last turn, end",
+      "width": 1280,
+      "passed": true
+    },
+    {
       "name": "call: wrong menu, support, connected turns, summary, cancelled transitions",
       "width": 1280,
       "passed": true
     },
     {
+      "name": "advanced interview: long caption and CC default off",
+      "width": 1280,
+      "passed": true
+    },
+    {
       "name": "advanced call: correct key and long caption",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "grammar: no hidden answers in DOM, reveal and play",
       "width": 1280,
       "passed": true
     },
@@ -17,6 +32,11 @@
     },
     {
       "name": "role play: support and checklist controlled",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "scene: selected hotspot, visited progress and help",
       "width": 1280,
       "passed": true
     },
@@ -41,6 +61,11 @@
       "passed": true
     },
     {
+      "name": "oral: manual stars and example",
+      "width": 1280,
+      "passed": true
+    },
+    {
       "name": "oral result: editable fields, export callback, clear",
       "width": 1280,
       "passed": true
@@ -61,12 +86,27 @@
       "passed": true
     },
     {
+      "name": "interview: navigation, captions, toggles, last turn, end",
+      "width": 390,
+      "passed": true
+    },
+    {
       "name": "call: wrong menu, support, connected turns, summary, cancelled transitions",
       "width": 390,
       "passed": true
     },
     {
+      "name": "advanced interview: long caption and CC default off",
+      "width": 390,
+      "passed": true
+    },
+    {
       "name": "advanced call: correct key and long caption",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "grammar: no hidden answers in DOM, reveal and play",
       "width": 390,
       "passed": true
     },
@@ -77,6 +117,11 @@
     },
     {
       "name": "role play: support and checklist controlled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "scene: selected hotspot, visited progress and help",
       "width": 390,
       "passed": true
     },
@@ -122,56 +167,44 @@
     },
     {
       "name": "fluency: real-second clock, pause/resume, three rounds, restart",
-      "width": 390,
-      "passed": true
-    },
-    {
-      "name": "advanced interview: long caption and CC default off",
-      "width": 1280,
-      "passed": true
-    },
-    {
-      "name": "scene: selected hotspot, visited progress and help",
-      "width": 1280,
-      "passed": true
-    },
-    {
-      "name": "oral: manual stars and example",
-      "width": 1280,
-      "passed": true
-    },
-    {
-      "name": "advanced interview: long caption and CC default off",
-      "width": 390,
-      "passed": true
-    },
-    {
-      "name": "scene: selected hotspot, visited progress and help",
-      "width": 390,
-      "passed": true
-    },
-    {
-      "name": "grammar: no hidden answers in DOM, reveal and play",
-      "width": 1280,
-      "passed": true
-    },
-    {
-      "name": "grammar: no hidden answers in DOM, reveal and play",
-      "width": 390,
-      "passed": true
-    },
-    {
-      "name": "interview: navigation, captions, toggles, last turn, end",
-      "width": 1280,
-      "passed": true
-    },
-    {
-      "name": "interview: navigation, captions, toggles, last turn, end",
       "width": 390,
       "passed": true
     }
   ],
   "shots": [
+    {
+      "key": "interview-caption-keyboard-focus-1280",
+      "name": "interview",
+      "state": "caption-keyboard-focus",
+      "width": 1280,
+      "file": "after-interview-caption-keyboard-focus-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "interview-last-turn-1280",
+      "name": "interview",
+      "state": "last-turn",
+      "width": 1280,
+      "file": "after-interview-last-turn-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "interview-ended-1280",
+      "name": "interview",
+      "state": "ended",
+      "width": 1280,
+      "file": "after-interview-ended-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
     {
       "key": "call-ringing-1280",
       "name": "call",
@@ -217,11 +250,33 @@
       }
     },
     {
+      "key": "advanced-interview-long-caption-1280",
+      "name": "advanced-interview",
+      "state": "long-caption",
+      "width": 1280,
+      "file": "after-advanced-interview-long-caption-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
       "key": "advanced-call-connected-long-1280",
       "name": "advanced-call",
       "state": "connected-long",
       "width": 1280,
       "file": "after-advanced-call-connected-long-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "hidden-grammar-first-revealed-1280",
+      "name": "hidden-grammar",
+      "state": "first-revealed",
+      "width": 1280,
+      "file": "after-hidden-grammar-first-revealed-1280.png",
       "overflow": {
         "viewport": 1280,
         "scroll": 1280
@@ -255,6 +310,17 @@
       "state": "support-completed-step",
       "width": 1280,
       "file": "after-role-play-support-completed-step-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "explore-the-scene-hotspot-help-1280",
+      "name": "explore-the-scene",
+      "state": "hotspot-help",
+      "width": 1280,
+      "file": "after-explore-the-scene-hotspot-help-1280.png",
       "overflow": {
         "viewport": 1280,
         "scroll": 1280
@@ -310,6 +376,17 @@
       "state": "discuss",
       "width": 1280,
       "file": "after-video-discuss-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "oral-assessment-rated-example-1280",
+      "name": "oral-assessment",
+      "state": "rated-example",
+      "width": 1280,
+      "file": "after-oral-assessment-rated-example-1280.png",
       "overflow": {
         "viewport": 1280,
         "scroll": 1280
@@ -393,6 +470,39 @@
       }
     },
     {
+      "key": "interview-caption-keyboard-focus-390",
+      "name": "interview",
+      "state": "caption-keyboard-focus",
+      "width": 390,
+      "file": "after-interview-caption-keyboard-focus-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "interview-last-turn-390",
+      "name": "interview",
+      "state": "last-turn",
+      "width": 390,
+      "file": "after-interview-last-turn-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "interview-ended-390",
+      "name": "interview",
+      "state": "ended",
+      "width": 390,
+      "file": "after-interview-ended-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
       "key": "call-ringing-390",
       "name": "call",
       "state": "ringing",
@@ -437,11 +547,33 @@
       }
     },
     {
+      "key": "advanced-interview-long-caption-390",
+      "name": "advanced-interview",
+      "state": "long-caption",
+      "width": 390,
+      "file": "after-advanced-interview-long-caption-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
       "key": "advanced-call-connected-long-390",
       "name": "advanced-call",
       "state": "connected-long",
       "width": 390,
       "file": "after-advanced-call-connected-long-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "hidden-grammar-first-revealed-390",
+      "name": "hidden-grammar",
+      "state": "first-revealed",
+      "width": 390,
+      "file": "after-hidden-grammar-first-revealed-390.png",
       "overflow": {
         "viewport": 390,
         "scroll": 390
@@ -475,6 +607,17 @@
       "state": "support-completed-step",
       "width": 390,
       "file": "after-role-play-support-completed-step-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "explore-the-scene-hotspot-help-390",
+      "name": "explore-the-scene",
+      "state": "hotspot-help",
+      "width": 390,
+      "file": "after-explore-the-scene-hotspot-help-390.png",
       "overflow": {
         "viewport": 390,
         "scroll": 390
@@ -618,149 +761,6 @@
       "state": "finished",
       "width": 390,
       "file": "after-fluency-finished-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "advanced-interview-long-caption-1280",
-      "name": "advanced-interview",
-      "state": "long-caption",
-      "width": 1280,
-      "file": "after-advanced-interview-long-caption-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "explore-the-scene-hotspot-help-1280",
-      "name": "explore-the-scene",
-      "state": "hotspot-help",
-      "width": 1280,
-      "file": "after-explore-the-scene-hotspot-help-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "oral-assessment-rated-example-1280",
-      "name": "oral-assessment",
-      "state": "rated-example",
-      "width": 1280,
-      "file": "after-oral-assessment-rated-example-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "advanced-interview-long-caption-390",
-      "name": "advanced-interview",
-      "state": "long-caption",
-      "width": 390,
-      "file": "after-advanced-interview-long-caption-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "explore-the-scene-hotspot-help-390",
-      "name": "explore-the-scene",
-      "state": "hotspot-help",
-      "width": 390,
-      "file": "after-explore-the-scene-hotspot-help-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "hidden-grammar-first-revealed-1280",
-      "name": "hidden-grammar",
-      "state": "first-revealed",
-      "width": 1280,
-      "file": "after-hidden-grammar-first-revealed-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "hidden-grammar-first-revealed-390",
-      "name": "hidden-grammar",
-      "state": "first-revealed",
-      "width": 390,
-      "file": "after-hidden-grammar-first-revealed-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "interview-caption-keyboard-focus-1280",
-      "name": "interview",
-      "state": "caption-keyboard-focus",
-      "width": 1280,
-      "file": "after-interview-caption-keyboard-focus-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "interview-last-turn-1280",
-      "name": "interview",
-      "state": "last-turn",
-      "width": 1280,
-      "file": "after-interview-last-turn-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "interview-ended-1280",
-      "name": "interview",
-      "state": "ended",
-      "width": 1280,
-      "file": "after-interview-ended-1280.png",
-      "overflow": {
-        "viewport": 1280,
-        "scroll": 1280
-      }
-    },
-    {
-      "key": "interview-caption-keyboard-focus-390",
-      "name": "interview",
-      "state": "caption-keyboard-focus",
-      "width": 390,
-      "file": "after-interview-caption-keyboard-focus-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "interview-last-turn-390",
-      "name": "interview",
-      "state": "last-turn",
-      "width": 390,
-      "file": "after-interview-last-turn-390.png",
-      "overflow": {
-        "viewport": 390,
-        "scroll": 390
-      }
-    },
-    {
-      "key": "interview-ended-390",
-      "name": "interview",
-      "state": "ended",
-      "width": 390,
-      "file": "after-interview-ended-390.png",
       "overflow": {
         "viewport": 390,
         "scroll": 390

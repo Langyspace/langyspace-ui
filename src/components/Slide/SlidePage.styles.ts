@@ -1,10 +1,9 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import type { SlidePageProps } from './SlidePage.types'
 
-const recipe = (props: Parameters<typeof resolveTheme>[0]) =>
-  resolveTheme(props).slides ?? theme.slides
+const recipe = resolveSlideTheme
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-page',

@@ -173,8 +173,6 @@ function VoiceMessageContent({
                   onClick={() => {
                     void media.toggle()
                   }}
-                  variant="brand"
-                  size="sm"
                 >
                   <svg
                     aria-hidden="true"
@@ -203,8 +201,6 @@ function VoiceMessageContent({
                   aria-label={`${labels.speed}: ${media.speed}x`}
                   disabled={!audio.src || !active}
                   onClick={media.changeSpeed}
-                  variant="tertiary"
-                  size="sm"
                 >
                   {media.speed}x
                 </Styled.Speed>
@@ -252,7 +248,6 @@ function VoiceMessageContent({
             <Styled.MessagePlaceholder>Message</Styled.MessagePlaceholder>
             {replyAction ? (
               <Styled.Reply
-                variant="success"
                 aria-label={replyAction.label}
                 disabled={replyAction.disabled || !active}
                 onClick={replyAction.onClick}
@@ -296,8 +291,6 @@ function VoiceMessageContent({
                 {question.choices.map((choice) => (
                   <Styled.Choice
                     key={choice.id}
-                    variant="secondary"
-                    size="sm"
                     disabled={question.disabled}
                     $feedback={choice.feedback}
                     aria-pressed={question.value === choice.id}

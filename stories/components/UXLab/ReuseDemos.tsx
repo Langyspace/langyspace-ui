@@ -7,10 +7,10 @@ import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GuessWho, DialogueQuestions } from '../../materials/A101/A101.sections'
 import { A101Lesson } from '../../materials/A101/A101Lesson'
-import { BranchingConversation } from '../../../src/components/Simulation/BranchingConversation'
+import { BranchingConversation } from '../../../src/components/InteractiveMaterial/BranchingConversation'
 import { VoiceMessageDemo } from '../VoiceMessage/VoiceMessageDemo'
 import data from '../../materials/UXLab/lab-data.json'
-import * as Common from '../../../src/components/Exercise/Material.shared.styles'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 
 import apple from '../../materials/UXLab/assets/apple.png'
 import banana from '../../materials/UXLab/assets/banana.png'
@@ -98,7 +98,7 @@ export function RevealsDemo({
       {rows.map((line, i) => (
         <RevealCard
           key={line}
-          marker={line}
+          marker={i + 1}
           revealed={revealed.includes(String(i))}
           answer={
             [

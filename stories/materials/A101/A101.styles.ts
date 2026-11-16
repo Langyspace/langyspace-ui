@@ -80,7 +80,7 @@ export const LessonVocabulary = styled(VocabularyGrid)<{ $regular: boolean }>`
 `
 export const TranslationButton = styled(Button)`
   padding: 0;
-  min-height: ${theme.spacing[6]};
+  min-height: ${theme.sizes.control.sm};
   font-weight: ${theme.typography.fontWeight.regular};
   text-align: left;
   justify-content: flex-start;

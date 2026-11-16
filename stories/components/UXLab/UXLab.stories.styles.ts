@@ -1,6 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
-import * as Common from '../../../src/components/Exercise/Material.shared.styles'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 export const Demo = styled.section`
   display: flex;
   flex-direction: column;

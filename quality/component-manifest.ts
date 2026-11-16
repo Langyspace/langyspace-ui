@@ -24,7 +24,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'CallSimulation',
     interactive: true,
-    ownerPath: 'src/components/Simulation/CallSimulation.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/CallSimulation.tsx',
     runtimeMarker: 'lsui-sc-call-simulation',
     ssrSmoke: complete,
     story: {
@@ -37,7 +37,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Simulation/CallSimulation.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/CallSimulation.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'callsimulation',
@@ -50,7 +50,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'InterviewSimulation',
     interactive: true,
-    ownerPath: 'src/components/Simulation/InterviewSimulation.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/InterviewSimulation.tsx',
     runtimeMarker: 'lsui-sc-interview-simulation',
     ssrSmoke: complete,
     story: {
@@ -63,7 +63,8 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Simulation/InterviewSimulation.types.ts',
+      propsPath:
+        'src/components/InteractiveMaterial/InterviewSimulation.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'interviewsimulation',
@@ -76,7 +77,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'AudioSequenceControls',
     interactive: true,
-    ownerPath: 'src/components/Simulation/AudioSequenceControls.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/AudioSequenceControls.tsx',
     runtimeMarker: 'lsui-sc-audio-sequence-controls',
     ssrSmoke: complete,
     story: {
@@ -89,7 +90,8 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Simulation/AudioSequenceControls.types.ts',
+      propsPath:
+        'src/components/InteractiveMaterial/AudioSequenceControls.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'audiosequencecontrols',
@@ -102,7 +104,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'GrammarTable',
     interactive: true,
-    ownerPath: 'src/components/Grammar/GrammarTable.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/GrammarTable.tsx',
     runtimeMarker: 'lsui-sc-grammar-table',
     ssrSmoke: complete,
     story: {
@@ -115,7 +117,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Grammar/GrammarTable.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/GrammarTable.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'grammartable',
@@ -128,7 +130,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'GapFillExercise',
     interactive: true,
-    ownerPath: 'src/components/Exercise/GapFillExercise.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/GapFillExercise.tsx',
     runtimeMarker: 'lsui-sc-gap-fill-exercise',
     ssrSmoke: complete,
     story: {
@@ -141,7 +143,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/GapFillExercise.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/GapFillExercise.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'gapfillexercise',
@@ -154,7 +156,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'RolePlayExercise',
     interactive: true,
-    ownerPath: 'src/components/Exercise/RolePlayExercise.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/RolePlayExercise.tsx',
     runtimeMarker: 'lsui-sc-role-play-exercise',
     ssrSmoke: complete,
     story: {
@@ -167,7 +169,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/RolePlayExercise.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/RolePlayExercise.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'roleplayexercise',
@@ -180,7 +182,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'SceneExplorer',
     interactive: true,
-    ownerPath: 'src/components/Exercise/SceneExplorer.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/SceneExplorer.tsx',
     runtimeMarker: 'lsui-sc-scene-explorer',
     ssrSmoke: complete,
     story: {
@@ -193,7 +195,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/SceneExplorer.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/SceneExplorer.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'sceneexplorer',
@@ -206,7 +208,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'MinimalPairExercise',
     interactive: true,
-    ownerPath: 'src/components/Exercise/MinimalPairExercise.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/MinimalPairExercise.tsx',
     runtimeMarker: 'lsui-sc-minimal-pair-exercise',
     ssrSmoke: complete,
     story: {
@@ -219,7 +221,8 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/MinimalPairExercise.types.ts',
+      propsPath:
+        'src/components/InteractiveMaterial/MinimalPairExercise.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'minimalpairexercise',
@@ -232,7 +235,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'FluencyTimer',
     interactive: true,
-    ownerPath: 'src/components/Exercise/FluencyTimer.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/FluencyTimer.tsx',
     runtimeMarker: 'lsui-sc-fluency-timer',
     ssrSmoke: complete,
     story: {
@@ -245,7 +248,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/FluencyTimer.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/FluencyTimer.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'fluencytimer',
@@ -258,7 +261,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'BranchingConversation',
     interactive: true,
-    ownerPath: 'src/components/Simulation/BranchingConversation.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/BranchingConversation.tsx',
     runtimeMarker: 'lsui-sc-branching-conversation',
     ssrSmoke: complete,
     story: {
@@ -271,7 +274,8 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Simulation/BranchingConversation.types.ts',
+      propsPath:
+        'src/components/InteractiveMaterial/BranchingConversation.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'branchingconversation',
@@ -284,7 +288,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'VideoExercise',
     interactive: true,
-    ownerPath: 'src/components/Exercise/VideoExercise.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/VideoExercise.tsx',
     runtimeMarker: 'lsui-sc-video-exercise',
     ssrSmoke: complete,
     story: {
@@ -297,7 +301,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/VideoExercise.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/VideoExercise.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'videoexercise',
@@ -310,7 +314,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'OralReview',
     interactive: true,
-    ownerPath: 'src/components/Exercise/OralReview.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/OralReview.tsx',
     runtimeMarker: 'lsui-sc-oral-review',
     ssrSmoke: complete,
     story: {
@@ -323,7 +327,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/OralReview.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/OralReview.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'oralreview',
@@ -336,7 +340,7 @@ export const publicComponentContracts = [
     browserSmoke: complete,
     exportName: 'OralReviewResult',
     interactive: true,
-    ownerPath: 'src/components/Exercise/OralReviewResult.tsx',
+    ownerPath: 'src/components/InteractiveMaterial/OralReviewResult.tsx',
     runtimeMarker: 'lsui-sc-oral-review-result',
     ssrSmoke: complete,
     story: {
@@ -349,7 +353,7 @@ export const publicComponentContracts = [
       path: 'test/components/Exercise/UXLab.test.tsx',
     },
     reference: {
-      propsPath: 'src/components/Exercise/OralReviewResult.types.ts',
+      propsPath: 'src/components/InteractiveMaterial/OralReviewResult.types.ts',
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'oralreviewresult',

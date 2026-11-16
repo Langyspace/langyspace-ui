@@ -1,10 +1,9 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
-import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { Button } from '../Button/Button'
 
-const recipe = (props: Parameters<typeof resolveTheme>[0]) =>
-  resolveTheme(props).slides ?? theme.slides
+const recipe = resolveSlideTheme
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-deck',
@@ -43,12 +42,7 @@ export const Navigation = styled.nav`
 `
 
 export const BackButton = styled(Button)`
-  background: ${(p) => recipe(p).surface};
-  min-height: calc(${theme.spacing[8]} + ${theme.spacing[1]});
-  padding: 0 ${theme.spacing[3]};
   font-family: ${(p) => recipe(p).displayFontFamily};
-  font-size: ${theme.typography.fontSize.sm};
-  font-weight: ${theme.typography.fontWeight.bold};
 `
 
 export const Actions = styled.div`

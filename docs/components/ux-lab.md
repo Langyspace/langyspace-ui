@@ -2,7 +2,7 @@
 
 Contratos extraídos do [UX Lab publicado](https://claude.ai/artifact/4JSNcRAHm4yHsyN89SXKwN), versão `1794646326-5b98`. As demonstrações estão em **Exercise / UX Lab** no Storybook. O inventário dos 34 padrões, dados de exemplo e hashes das mídias ficam em `stories/materials/UXLab`; os dados não entram no pacote.
 
-Use Montserrat e Space Grotesk pelo carregamento normal do produto. Os componentes usam os tokens de slides, exercícios, WhatsApp e `theme.simulations`. Componha-os dentro de SlidePage/SlideDeck. O consumidor fornece conteúdo, estado e ações e pausa áudio/relógio ao sair da página. Não há dependência de iframe nem importação de fixtures em produção.
+Use Montserrat e Space Grotesk pelo carregamento normal do produto. Os componentes usam os tokens de slides, exercícios, WhatsApp e `theme.simulations`. Componha-os dentro de SlidePage/SlideDeck. O consumidor fornece conteúdo, estado e ações e pausa áudio/relógio ao sair da página. Em tema escuro, configure também `colors.text.primary` e `colors.text.muted` para as ações canônicas. Não há dependência de iframe nem importação de fixtures em produção.
 
 ## CallSimulation
 

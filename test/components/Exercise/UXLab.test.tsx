@@ -1,19 +1,22 @@
 import { fireEvent, render, screen } from '@testing-library/react'
+import { ThemeProvider } from 'styled-components'
+import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { renderToString } from 'react-dom/server'
 import { describe, expect, it, vi } from 'vitest'
-import { CallSimulation } from '../../../src/components/Simulation/CallSimulation'
-import { InterviewSimulation } from '../../../src/components/Simulation/InterviewSimulation'
-import { AudioSequenceControls } from '../../../src/components/Simulation/AudioSequenceControls'
-import { GrammarTable } from '../../../src/components/Grammar/GrammarTable'
-import { GapFillExercise } from '../../../src/components/Exercise/GapFillExercise'
-import { RolePlayExercise } from '../../../src/components/Exercise/RolePlayExercise'
-import { SceneExplorer } from '../../../src/components/Exercise/SceneExplorer'
-import { MinimalPairExercise } from '../../../src/components/Exercise/MinimalPairExercise'
-import { FluencyTimer } from '../../../src/components/Exercise/FluencyTimer'
-import { BranchingConversation } from '../../../src/components/Simulation/BranchingConversation'
-import { VideoExercise } from '../../../src/components/Exercise/VideoExercise'
-import { OralReview } from '../../../src/components/Exercise/OralReview'
-import { OralReviewResult } from '../../../src/components/Exercise/OralReviewResult'
+import { CallSimulation } from '../../../src/components/InteractiveMaterial/CallSimulation'
+import { InterviewSimulation } from '../../../src/components/InteractiveMaterial/InterviewSimulation'
+import { AudioSequenceControls } from '../../../src/components/InteractiveMaterial/AudioSequenceControls'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
+import { FluencyTimer } from '../../../src/components/InteractiveMaterial/FluencyTimer'
+import { BranchingConversation } from '../../../src/components/InteractiveMaterial/BranchingConversation'
+import { VideoExercise } from '../../../src/components/InteractiveMaterial/VideoExercise'
+import { OralReview } from '../../../src/components/InteractiveMaterial/OralReview'
+import { OralReviewResult } from '../../../src/components/InteractiveMaterial/OralReviewResult'
 const noop = () => {}
 const interview = {
   title: 'Receptionist',
@@ -367,5 +370,563 @@ describe('UX Lab contracts', () => {
       'oral-review-result',
     ])
       expect(html).toContain(`lsui-sc-${marker}`)
+  })
+})
+
+describe('material exercise states and accessibility', () => {
+  it('keeps empty and loading transports inert and retains supplied status and children', () => {
+    const next = vi.fn()
+    const props = {
+      index: 0,
+      count: 3,
+      onNext: next,
+      onPrevious: noop,
+      onReplay: noop,
+    }
+    const { rerender } = render(
+      <AudioSequenceControls {...props} loading status="Loading media">
+        <span>Transcript available below</span>
+      </AudioSequenceControls>,
+    )
+    expect(screen.getByRole('status')).toHaveTextContent('Loading media')
+    screen
+      .getAllByRole('button')
+      .forEach((button) => expect(button).toBeDisabled())
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Tocar o próximo áudio' }),
+    )
+    expect(next).not.toHaveBeenCalled()
+    rerender(<AudioSequenceControls {...props} index={2} disabled />)
+    expect(screen.getByRole('img')).toHaveAccessibleName('Áudios: 3 / 3')
+  })
+  it('delegates all interview toggles and shows a caption only when requested', () => {
+    const camera = vi.fn(),
+      captions = vi.fn(),
+      hand = vi.fn(),
+      previous = vi.fn(),
+      replay = vi.fn(),
+      end = vi.fn()
+    const props = {
+      ...interview,
+      turnIndex: 1,
+      turnCount: 3,
+      caption: 'Please describe your experience.',
+      onCameraChange: camera,
+      onCaptionsChange: captions,
+      onHandChange: hand,
+      onPrevious: previous,
+      onReplay: replay,
+      onEnd: end,
+    }
+    const { rerender } = render(
+      <InterviewSimulation {...props} playing>
+        <span>Interviewer notes</span>
+      </InterviewSimulation>,
+    )
+    expect(screen.getByText('Please describe your experience.')).toBeVisible()
+    for (const label of [
+      'Câmera',
+      'Legenda',
+      'Levantar a mão',
+      'Áudio anterior',
+      'Tocar de novo',
+      'Sair da chamada',
+    ])
+      fireEvent.click(screen.getByRole('button', { name: label }))
+    expect(camera).toHaveBeenCalledWith(false)
+    expect(captions).toHaveBeenCalledWith(false)
+    expect(hand).toHaveBeenCalledWith(true)
+    expect(previous).toHaveBeenCalledOnce()
+    expect(replay).toHaveBeenCalledOnce()
+    expect(end).toHaveBeenCalledOnce()
+    rerender(
+      <InterviewSimulation
+        {...props}
+        captionsEnabled={false}
+        microphoneEnabled={false}
+        cameraEnabled={false}
+        handRaised
+        ended
+      />,
+    )
+    expect(screen.queryByText('Please describe your experience.')).toBeNull()
+    expect(screen.getByText('Call ended')).toBeVisible()
+    expect(screen.getByRole('button', { name: 'Microfone' })).toBeDisabled()
+  })
+  it('keeps a disabled menu inert, renders the active caption and supports calling again', () => {
+    const start = vi.fn(),
+      key = vi.fn()
+    const props = {
+      contactName: 'Support',
+      initials: 'S',
+      onCall: start,
+      onHangUp: noop,
+      onKeyPress: key,
+    }
+    const { rerender } = render(
+      <CallSimulation
+        {...props}
+        state="menu"
+        disabled
+        caption="Press one for support."
+        pressedKey="1"
+        status="Try another option"
+      />,
+    )
+    expect(screen.getByText('Press one for support.')).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: '1' }))
+    expect(key).not.toHaveBeenCalled()
+    rerender(<CallSimulation {...props} state="ringing" />)
+    expect(screen.getByText('Calling…')).toBeVisible()
+    rerender(<CallSimulation {...props} state="ended" elapsedLabel="1:12" />)
+    expect(screen.getByText('Call ended · 1:12')).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: 'Ligar de novo' }))
+    expect(start).toHaveBeenCalledOnce()
+    rerender(
+      <CallSimulation {...props} state="connected" caption="How can I help?" />,
+    )
+    expect(screen.queryByRole('group')).toBeNull()
+  })
+  it.each(['affirmative', 'negative', 'question'] as const)(
+    'supports %s grammar with verb, translation, audio and an empty alternative',
+    (tone) => {
+      const play = vi.fn()
+      const props = {
+        title: 'Examples',
+        tone,
+        columns: { subject: 'Who', verb: 'Be', example: 'Sentence' },
+        rows: [
+          {
+            id: 'you',
+            subject: 'You',
+            verb: 'are',
+            example: 'You are ready.',
+            translation: 'Você está pronta.',
+            audioLabel: 'Listen to the example',
+          },
+        ],
+      }
+      const { rerender } = render(<GrammarTable {...props} onPlay={play} />)
+      fireEvent.click(
+        screen.getByRole('button', { name: 'Listen to the example' }),
+      )
+      expect(play).toHaveBeenCalledWith('you')
+      expect(screen.getByText('Você está pronta.')).toBeVisible()
+      expect(screen.getByRole('columnheader', { name: 'Be' })).toBeVisible()
+      rerender(<GrammarTable {...props} />)
+      expect(screen.queryByRole('button')).toBeNull()
+      expect(screen.getByText('You are ready.')).toBeVisible()
+      rerender(
+        <GrammarTable
+          title="Examples"
+          rows={[]}
+          emptyMessage="No examples yet."
+        />,
+      )
+      expect(screen.getByText('No examples yet.')).toBeVisible()
+      rerender(<GrammarTable {...props} hiddenAnswers />)
+      expect(
+        screen.getByRole('button', { name: 'Mostrar resposta: you' }),
+      ).toBeDisabled()
+      expect(screen.queryByText('You are ready.')).toBeNull()
+    },
+  )
+  it('retains filled gaps and prevents unavailable options from dispatching', () => {
+    const select = vi.fn()
+    const { rerender } = render(
+      <GapFillExercise
+        items={[
+          { id: 'a', before: 'She ', answer: 'is', after: ' ready.' },
+          { id: 'b', before: 'They ', after: ' ready.' },
+        ]}
+        activeId="b"
+        choices={[{ id: 'are', label: 'are', disabled: true }]}
+        onSelect={select}
+      />,
+    )
+    expect(screen.getByText('She is ready.')).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: 'A are' }))
+    expect(select).not.toHaveBeenCalled()
+    rerender(<GapFillExercise items={[]} choices={[]} onSelect={select} />)
+    expect(screen.getByText('Nenhuma frase.')).toBeVisible()
+  })
+  it('reveals role-play support independently of the completed checklist', () => {
+    const support = vi.fn(),
+      step = vi.fn()
+    render(
+      <RolePlayExercise
+        situation="Talk about your photos"
+        image={{ src: '/photos.webp', alt: 'Family photos' }}
+        roles={['Learner', 'Teacher']}
+        support={['This is my…']}
+        supportVisible
+        onSupportToggle={support}
+        steps={[{ id: 'intro', label: 'Introduce a person' }]}
+        completedIds={['intro']}
+        onStepToggle={step}
+      >
+        Extra instructions
+      </RolePlayExercise>,
+    )
+    expect(screen.getByText('This is my…')).toBeVisible()
+    expect(screen.getByRole('img')).toHaveAccessibleName('Family photos')
+    expect(
+      screen.getByRole('button', { name: /Introduce a person/ }),
+    ).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByRole('button', { name: 'Esconder apoio' }))
+    expect(support).toHaveBeenCalledOnce()
+    expect(screen.getByRole('status')).toHaveTextContent('1 / 1 concluídos')
+  })
+  it('shows selected scene help, counts only known visited objects and can hide the answer', () => {
+    const help = vi.fn()
+    const props = {
+      imageUrl: '/room.webp',
+      imageAlt: 'Room',
+      hotspots: [
+        {
+          id: 'bag',
+          xPercent: 25,
+          yPercent: 50,
+          label: 'Bag',
+          prompt: 'Where is it?',
+          answer: 'On the chair.',
+        },
+      ],
+      selectedId: 'bag',
+      visitedIds: ['bag', 'unknown'],
+      onSelect: noop,
+      onAnswerToggle: help,
+    }
+    const { rerender } = render(<SceneExplorer {...props} answerVisible />)
+    expect(screen.getByText(/On the chair\./)).toBeVisible()
+    expect(screen.getByText('1 / 1 explorados')).toBeVisible()
+    expect(screen.getByRole('button', { name: 'Bag' })).toHaveAttribute(
+      'aria-expanded',
+      'true',
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'Esconder resposta' }))
+    expect(help).toHaveBeenCalledOnce()
+    rerender(<SceneExplorer {...props} answerVisible={false} />)
+    expect(screen.queryByText(/On the chair\./)).toBeNull()
+  })
+  it.each(['correct', 'incorrect'] as const)(
+    'renders %s pair feedback and delegates listen, mode and next',
+    (feedback) => {
+      const mode = vi.fn(),
+        listen = vi.fn(),
+        next = vi.fn()
+      const props = {
+        mode: 'listen' as const,
+        onModeChange: mode,
+        onListen: listen,
+        onNext: next,
+        onSelect: noop,
+        choices: [
+          {
+            id: 'ship',
+            word: 'ship',
+            imageUrl: '/ship.png',
+            imageAlt: 'Ship',
+            phonetic: '/ʃɪp/',
+          },
+        ],
+        selectedId: 'ship',
+        feedback,
+        hint: 'Listen for the short vowel.',
+        score: [{ id: '1', result: feedback }],
+      }
+      const { rerender } = render(<MinimalPairExercise {...props} />)
+      fireEvent.click(screen.getByRole('button', { name: 'Listen' }))
+      fireEvent.click(screen.getByRole('button', { name: 'You say' }))
+      fireEvent.click(screen.getByRole('button', { name: 'You listen' }))
+      fireEvent.click(screen.getByRole('button', { name: 'Próximo par' }))
+      expect(listen).toHaveBeenCalledOnce()
+      expect(mode.mock.calls).toEqual([['speak'], ['listen']])
+      expect(next).toHaveBeenCalledOnce()
+      expect(screen.getByRole('img', { name: /Placar/ })).toHaveAccessibleName(
+        `Placar: ${feedback === 'correct' ? 1 : 0} / 1`,
+      )
+      rerender(<MinimalPairExercise {...props} disabled />)
+      expect(screen.getByRole('button', { name: /ship.*ʃɪp/ })).toBeDisabled()
+    },
+  )
+  it('renders later rounds, audience and finish without starting an internal clock', () => {
+    const reset = vi.fn()
+    const props = {
+      title: 'Your weekend',
+      description: 'Speak again, with less time.',
+      rounds: [
+        { id: 'a', seconds: 120, audience: 'A friend' },
+        { id: 'b', seconds: 60, audience: 'A colleague' },
+      ],
+      onToggle: noop,
+      onReset: reset,
+    }
+    const { rerender } = render(
+      <FluencyTimer
+        {...props}
+        roundIndex={0}
+        remainingSeconds={Infinity}
+        running
+        support={['First…', 'Then…']}
+      />,
+    )
+    expect(screen.getByRole('timer')).toHaveTextContent('0:00')
+    expect(screen.getByText('2 min')).toBeVisible()
+    expect(screen.getByRole('button', { name: 'Parar' })).toBeVisible()
+    rerender(
+      <FluencyTimer
+        {...props}
+        roundIndex={1}
+        remainingSeconds={60}
+        running={false}
+      />,
+    )
+    expect(screen.getByText('A colleague')).toBeVisible()
+    expect(screen.getByText('✓ 2 min')).toBeVisible()
+    rerender(
+      <FluencyTimer
+        {...props}
+        roundIndex={2}
+        remainingSeconds={0}
+        running={false}
+      />,
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'Recomeçar' }))
+    expect(reset).toHaveBeenCalledOnce()
+    rerender(
+      <FluencyTimer
+        {...props}
+        rounds={[]}
+        roundIndex={0}
+        remainingSeconds={0}
+        running={false}
+      />,
+    )
+    expect(screen.getByText('Nenhuma rodada.')).toBeVisible()
+    expect(screen.getByRole('button')).toBeDisabled()
+  })
+  it('submits edited conversation text, blocks ended forms and delegates restart', () => {
+    const edit = vi.fn(),
+      send = vi.fn(),
+      restart = vi.fn()
+    const props = {
+      contact: { name: 'Kim', imageUrl: '/kim.png', status: 'typing…' },
+      messages: [
+        {
+          id: 'a',
+          side: 'incoming' as const,
+          content: 'Can we talk?',
+          timeLabel: '10:20',
+        },
+        { id: 'b', side: 'outgoing' as const, content: 'Sure.' },
+      ],
+      mode: 'free' as const,
+      draft: 'Yes, at noon.',
+      onDraftChange: edit,
+      onSend: send,
+      onRestart: restart,
+      status: 'Choose a time.',
+    }
+    const { rerender } = render(<BranchingConversation {...props} />)
+    fireEvent.change(screen.getByRole('textbox'), {
+      target: { value: 'At one.' },
+    })
+    expect(edit).toHaveBeenCalledWith('At one.')
+    fireEvent.submit(
+      screen.getByRole('button', { name: 'Enviar' }).closest('form')!,
+    )
+    expect(send).toHaveBeenCalledOnce()
+    fireEvent.click(screen.getByRole('button', { name: 'Recomeçar' }))
+    expect(restart).toHaveBeenCalledOnce()
+    rerender(<BranchingConversation {...props} ended />)
+    expect(screen.getByRole('textbox')).toBeDisabled()
+    fireEvent.submit(
+      screen.getByRole('button', { name: 'Enviar' }).closest('form')!,
+    )
+    expect(send).toHaveBeenCalledOnce()
+    rerender(<BranchingConversation {...props} disabled />)
+    fireEvent.submit(
+      screen.getByRole('button', { name: 'Enviar' }).closest('form')!,
+    )
+    expect(send).toHaveBeenCalledOnce()
+  })
+  it('displays discussion content and disables chapter seeking when no player is connected', () => {
+    const page = vi.fn()
+    const props = {
+      title: 'Lesson video',
+      media: <span>Player</span>,
+      onPageChange: page,
+      chapters: [{ id: 'a', seconds: 75, label: 'The plan' }],
+    }
+    const { rerender } = render(
+      <VideoExercise {...props} page="discuss">
+        Discuss the plan.
+      </VideoExercise>,
+    )
+    expect(screen.queryByText('Player')).toBeNull()
+    expect(screen.getByText('Discuss the plan.')).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: '1 · Watch' }))
+    expect(page).toHaveBeenCalledWith('watch')
+    rerender(
+      <VideoExercise
+        {...props}
+        page="watch"
+        activeChapterId="a"
+        beforeWatch="What will happen?"
+      />,
+    )
+    expect(
+      screen.getByRole('button', { name: '1. The plan · 1:15' }),
+    ).toBeDisabled()
+    expect(screen.getByText('What will happen?')).toBeVisible()
+  })
+  it('renders manual oral ratings, reveals examples and blocks stars when disabled', () => {
+    const rate = vi.fn(),
+      reveal = vi.fn()
+    const props = {
+      questions: [
+        {
+          id: 'q',
+          level: 'Easy',
+          prompt: 'Who is he?',
+          example: 'He is my brother.',
+        },
+      ],
+      ratings: { q: 2 },
+      onRate: rate,
+      onReveal: reveal,
+      revealedIds: ['q'],
+    }
+    const { rerender } = render(<OralReview {...props} />)
+    expect(screen.getByText('He is my brother.')).toBeVisible()
+    expect(
+      screen.getByRole('button', { name: '2 estrelas: q' }),
+    ).toHaveAttribute('aria-pressed', 'true')
+    fireEvent.click(screen.getByRole('button', { name: 'Esconder exemplo' }))
+    expect(reveal).toHaveBeenCalledWith('q')
+    rerender(<OralReview {...props} disabled />)
+    fireEvent.click(screen.getByRole('button', { name: '1 estrelas: q' }))
+    expect(rate).not.toHaveBeenCalled()
+    rerender(<OralReview questions={[]} ratings={{}} onRate={rate} />)
+    expect(screen.getByText('Nenhuma pergunta.')).toBeVisible()
+  })
+  it('edits every result field independently and blocks duplicate exports while exporting', () => {
+    const change = vi.fn(),
+      clear = vi.fn()
+    const { rerender } = render(
+      <OralReviewResult
+        {...results}
+        onFieldChange={change}
+        onClear={clear}
+        exporting
+        status="Preparing PDF…"
+      />,
+    )
+    fireEvent.change(screen.getByLabelText('Aluna'), {
+      target: { value: 'Maria' },
+    })
+    fireEvent.change(screen.getByLabelText('Professora'), {
+      target: { value: 'Ana' },
+    })
+    fireEvent.change(screen.getByLabelText('Data'), {
+      target: { value: '2026-11-16' },
+    })
+    fireEvent.change(screen.getByLabelText('Comentários (opcional)'), {
+      target: { value: 'Keep practising.' },
+    })
+    expect(change.mock.calls).toEqual([
+      ['studentName', 'Maria'],
+      ['teacherName', 'Ana'],
+      ['date', '2026-11-16'],
+      ['notes', 'Keep practising.'],
+    ])
+    expect(screen.getByRole('button', { name: 'Baixar PDF' })).toBeDisabled()
+    fireEvent.click(screen.getByRole('button', { name: 'Limpar notas' }))
+    expect(clear).toHaveBeenCalledOnce()
+    expect(screen.getByRole('status')).toHaveTextContent('Preparing PDF…')
+    rerender(
+      <OralReviewResult
+        {...results}
+        parts={[]}
+        completedQuestions={0}
+        totalQuestions={1}
+      />,
+    )
+    expect(screen.getByRole('button', { name: 'Baixar PDF' })).toBeDisabled()
+  })
+  it('renders themed grammar, selected pairs and support without leaking hidden content', () => {
+    render(
+      <ThemeProvider
+        theme={createTheme({
+          slides: {
+            canvas: '#121212',
+            surface: '#1F1F1F',
+            foreground: '#F7F7F7',
+            muted: '#B8B8B8',
+            border: '#555555',
+            accent: '#FF8AA8',
+          },
+        })}
+      >
+        <GrammarTable
+          title="Questions"
+          tone="question"
+          columns={{ subject: 'Who', verb: 'Verb', example: 'Question' }}
+          rows={[
+            {
+              id: 'a',
+              subject: 'You',
+              verb: 'Are',
+              example: <strong>Are you ready?</strong>,
+            },
+          ]}
+        />
+        <GapFillExercise
+          items={[{ id: 'a', before: 'We ', after: ' ready.' }]}
+          activeId="a"
+          optionsVisible
+          choices={[]}
+          onSelect={noop}
+        />
+        <RolePlayExercise
+          situation="Talk"
+          steps={[{ id: 'a', label: 'Greet' }]}
+          completedIds={['a']}
+          onStepToggle={noop}
+        />
+        <MinimalPairExercise
+          mode="speak"
+          choices={[{ id: 'a', word: 'ship', phonetic: '/ʃɪp/' }]}
+          selectedId="a"
+          feedback="correct"
+          onSelect={noop}
+        />
+      </ThemeProvider>,
+    )
+    expect(screen.getByRole('table')).toHaveAccessibleName('Questions')
+    expect(screen.getByRole('button', { name: /ship.*ʃɪp/ })).toHaveAttribute(
+      'aria-pressed',
+      'true',
+    )
+  })
+  it('omits an empty panel heading and supports independent title, counter and media slots', () => {
+    const { rerender } = render(
+      <ExercisePanel>Exercise instructions</ExercisePanel>,
+    )
+    expect(screen.queryByRole('heading')).toBeNull()
+    rerender(
+      <ExercisePanel
+        title="Prompt"
+        media={<img src="/scene.webp" alt="Scene" />}
+      >
+        Instructions
+      </ExercisePanel>,
+    )
+    expect(screen.getByRole('heading')).toHaveTextContent('Prompt')
+    expect(screen.getByRole('img')).toHaveAccessibleName('Scene')
+    rerender(<ExercisePanel counter="2 / 4">Instructions</ExercisePanel>)
+    expect(screen.getByText('2 / 4')).toBeVisible()
+    expect(screen.queryByRole('heading')).toBeNull()
   })
 })

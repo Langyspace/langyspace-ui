@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { InterviewSimulation } from '../../../src/components/Simulation/InterviewSimulation'
+import { InterviewSimulation } from '../../../src/components/InteractiveMaterial/InterviewSimulation'
 import data from '../../materials/UXLab/lab-data.json'
 import jun from '../../materials/UXLab/assets/jun.png'
 import { useLabSpeech } from './useLabSpeech'

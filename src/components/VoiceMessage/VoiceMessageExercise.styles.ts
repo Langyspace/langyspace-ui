@@ -1,10 +1,23 @@
 import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
-import { Button } from '../Button/Button'
+import { Pressable } from '../Pressable'
 
 const recipe = (props: Parameters<typeof resolveTheme>[0]) =>
   resolveTheme(props).voiceMessage ?? theme.voiceMessage
+
+const DeviceControl = styled(Pressable)`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: ${theme.radius.pill};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: ${theme.typography.lineHeight.normal};
+  &:disabled {
+    opacity: 0.45;
+  }
+`
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-voice-message-exercise',
@@ -110,7 +123,7 @@ export const Player = styled.div`
   gap: ${theme.spacing[2]};
   min-width: 0;
 `
-export const Play = styled(Button)`
+export const Play = styled(DeviceControl)`
   flex-shrink: 0;
   width: ${theme.sizes.control.sm};
   height: ${theme.sizes.control.sm};
@@ -120,11 +133,11 @@ export const Play = styled(Button)`
   border-color: ${(p) => recipe(p).accent};
   color: ${(p) => recipe(p).onAccent};
 `
-export const Speed = styled(Button)`
+export const Speed = styled(DeviceControl)`
   flex-shrink: 0;
   min-width: ${theme.voiceMessage.speedHeight};
-  height: ${theme.voiceMessage.speedHeight};
-  min-height: ${theme.voiceMessage.speedHeight};
+  height: ${theme.sizes.control.sm};
+  min-height: ${theme.sizes.control.sm};
   padding: 2px ${theme.voiceMessage.conversationInset};
   color: ${(p) => recipe(p).foreground};
   background: ${(p) => recipe(p).controlSurface};
@@ -230,8 +243,13 @@ export const Choices = styled.div`
   flex-wrap: wrap;
   gap: ${theme.spacing[2]};
 `
-export const Choice = styled(Button)<{ $feedback?: 'correct' | 'incorrect' }>`
+export const Choice = styled(DeviceControl)<{
+  $feedback?: 'correct' | 'incorrect'
+}>`
   min-height: ${theme.sizes.control.sm};
+  padding: 0 ${theme.spacing[3]};
+  border: 1px solid;
+  font-size: ${theme.typography.fontSize.sm};
   color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).foreground)};
   background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : recipe(p).surface)};
   border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).border)};
@@ -294,12 +312,13 @@ export const Microphone = styled.span`
   color: ${(p) => recipe(p).onAccent};
   background: ${(p) => recipe(p).composerAccent};
 `
-export const Reply = styled(Button)`
+export const Reply = styled(DeviceControl)`
   flex-shrink: 0;
   width: ${theme.sizes.control.lg};
   min-height: ${theme.sizes.control.lg};
   padding: 0;
   background: ${(p) => recipe(p).composerAccent};
+  color: ${(p) => recipe(p).onAccent};
 `
 export const HomeIndicator = styled.span`
   position: absolute;
