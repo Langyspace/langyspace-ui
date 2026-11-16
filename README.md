@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-A versão **4.2.0** acrescenta contratos de tema para ações e Dialog e mantém os contratos do React 19, o tema compartilhado e as props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+A versão **4.3.0** acrescenta slides, WhatsApp e exercícios interativos do UX Lab, preservando os contratos de tema, React 19 e props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Após a publicação e conferência do checksum, instale o artefato imutável da release 4.2.0:
+Após a publicação e conferência do checksum, instale o artefato imutável da release 4.3.0:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.2.0/langyspace-ui-4.2.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.3.0/langyspace-ui-4.3.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
@@ -167,3 +167,21 @@ receitas de ações, incluindo borda, hover, texto e foco. Use `createTheme` par
 ThemeProvider transmite seus valores também aos portais React. CSS de página, conteúdo, rotas e
 estado do domínio ficam no produto. Não sobrescreva classes privadas da biblioteca para alterar pele,
 fontes ou medidas de seus componentes. As chaves são aditivas; props existentes são preservadas e `closeIcon` é um slot opcional.
+
+# Interactive slide layout
+
+`SlideDeck` provides a scoped viewport with vertical page snapping and navigation. `SlidePage`
+provides the common heading, instructions, tools and content column. Both retain exercise state
+when navigating and leave lesson loading and persistence to the teacher/student applications.
+See [the slide contracts and example](docs/components/slides.md).
+
+`VoiceMessageExercise` composes into `SlidePage`: realistic phone frame, native voice-note
+playback, second-listen transcript and controlled listening questions. See
+[the voice-message contract](docs/components/voice-message.md). Media URLs, answer evaluation and
+recording actions belong to the teacher/student consumers.
+
+`Materials/A1.01` demonstrates the complete 26-screen lesson using shared vocabulary,
+dialogue, matching and reveal contracts. Lesson content stays in catalog fixtures; see
+[exercise components](docs/components/exercises.md) and the
+[delivery plan](docs/epics/a101-material/epic.md). Portal adoption follows visual approval and
+the official package release.

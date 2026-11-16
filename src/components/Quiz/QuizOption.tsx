@@ -6,6 +6,7 @@ export function QuizOption({
   children,
   letter,
   state = 'default',
+  density = 'regular',
   type = 'button',
   ...props
 }: QuizOptionProps) {
@@ -14,6 +15,7 @@ export function QuizOption({
       {...props}
       type={type}
       $state={state}
+      $density={density}
       data-ui-quiz-option="true"
     >
       <Styled.Letter>{letter}</Styled.Letter>

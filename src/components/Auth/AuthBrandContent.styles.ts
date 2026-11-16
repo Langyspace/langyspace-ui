@@ -1,5 +1,5 @@
 import { styled } from 'styled-components'
-import starSrc from '../../assets/brand/star.svg'
+import starSrc from '../../assets/brand/star.svg?no-inline'
 import { theme } from '../../foundations/theme/theme'
 import { alpha } from '../../foundations/theme/alpha'
 

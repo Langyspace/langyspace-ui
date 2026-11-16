@@ -9,6 +9,121 @@ const ConsumerSurface = styled.div`
 
 const sharedUi = await import('@langyspace/ui')
 const { ControlledField } = await import('@langyspace/ui/form')
+for (const [name, props] of [
+  ['ExercisePanel', { title: 'Example' }],
+  ['VocabularyGrid', { items: [], revealedIds: [], onReveal() {} }],
+  ['LearningDialogue', { lines: [] }],
+  ['RevealCard', { children: 'Prompt', answer: 'Answer', revealed: false }],
+  [
+    'MatchPairs',
+    {
+      questions: [],
+      answers: [],
+      matches: {},
+      questionLabel: 'Q',
+      answerLabel: 'A',
+      onQuestionSelect() {},
+      onAnswerSelect() {},
+    },
+  ],
+  [
+    'CallSimulation',
+    {
+      contactName: 'Support',
+      initials: 'S',
+      state: 'idle',
+      onCall() {},
+      onHangUp() {},
+    },
+  ],
+  [
+    'InterviewSimulation',
+    {
+      title: 'Interview',
+      interviewer: { name: 'Jun', imageUrl: '/jun.png' },
+      learnerName: 'Maria',
+      captionsEnabled: true,
+      onCaptionsChange() {},
+      microphoneEnabled: true,
+      onMicrophoneChange() {},
+      cameraEnabled: true,
+      onCameraChange() {},
+      handRaised: false,
+      onHandChange() {},
+      turnIndex: -1,
+      turnCount: 0,
+      onNext() {},
+      onPrevious() {},
+      onReplay() {},
+      onEnd() {},
+    },
+  ],
+  [
+    'AudioSequenceControls',
+    { index: -1, count: 0, onNext() {}, onPrevious() {}, onReplay() {} },
+  ],
+  ['GrammarTable', { title: 'Examples', rows: [] }],
+  ['GapFillExercise', { items: [], choices: [], onSelect() {} }],
+  [
+    'RolePlayExercise',
+    {
+      situation: 'Introduce yourself',
+      steps: [],
+      completedIds: [],
+      onStepToggle() {},
+    },
+  ],
+  [
+    'SceneExplorer',
+    {
+      imageUrl: '/room.webp',
+      imageAlt: 'Room',
+      hotspots: [],
+      visitedIds: [],
+      onSelect() {},
+    },
+  ],
+  ['MinimalPairExercise', { mode: 'listen', choices: [], onSelect() {} }],
+  [
+    'FluencyTimer',
+    {
+      title: 'Your weekend',
+      rounds: [],
+      roundIndex: 0,
+      remainingSeconds: 0,
+      running: false,
+      onToggle() {},
+      onReset() {},
+    },
+  ],
+  ['BranchingConversation', { contact: { name: 'Kim' }, messages: [] }],
+  [
+    'VideoExercise',
+    { title: 'Video', media: null, page: 'watch', onPageChange() {} },
+  ],
+  ['OralReview', { questions: [], ratings: {}, onRate() {} }],
+  [
+    'OralReviewResult',
+    {
+      parts: [],
+      result: 'Review',
+      completedQuestions: 0,
+      totalQuestions: 1,
+      studentName: '',
+      teacherName: '',
+      date: '',
+      notes: '',
+      onFieldChange() {},
+      onExport() {},
+      onClear() {},
+    },
+  ],
+]) {
+  const output = renderToString(createElement(sharedUi[name], props))
+  if (!output.includes('lsui-sc-'))
+    throw new Error(`Missing exercise SSR output: ${name}`)
+}
+
 for (const name of [
   'EmptyState',
   'LoadingState',
@@ -75,6 +190,9 @@ const {
   FilterPills,
   IconButton,
   MessageBubble,
+  SlideDeck,
+  SlidePage,
+  VoiceMessageExercise,
   MessageComposer,
   MessageThread,
   MessageThreadHeader,
@@ -610,6 +728,36 @@ try {
           },
           'Message SSR',
         ),
+        createElement(SlideDeck, {
+          label: 'Lesson SSR',
+          pages: [
+            {
+              id: 'intro',
+              label: 'Intro SSR',
+              content: createElement(
+                SlidePage,
+                { title: 'Intro SSR' },
+                'Slide content SSR',
+              ),
+            },
+          ],
+        }),
+        createElement(VoiceMessageExercise, {
+          contact: { name: 'Kim', status: 'online' },
+          audio: {
+            id: 'ssr-audio',
+            transcript: 'Listening transcript',
+            timestamp: '19:41',
+          },
+          questions: [
+            {
+              id: 'tired',
+              prompt: 'Is Kim tired?',
+              choices: [{ id: 'yes', label: 'Yes' }],
+            },
+          ],
+          onAnswer: () => undefined,
+        }),
         createElement(MessageComposer, {
           onSubmit: () => undefined,
           onValueChange: () => undefined,

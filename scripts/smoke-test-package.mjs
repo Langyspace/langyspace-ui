@@ -559,6 +559,23 @@ try {
     }
   }
 
+  const consumerAssets = await readdir(
+    join(consumerDirectory, 'dist', 'assets'),
+  )
+  for (const name of [
+    'horizontal',
+    'horizontal-inverse',
+    'stacked',
+    'stacked-inverse',
+  ]) {
+    if (
+      !consumerAssets.some(
+        (file) => file.startsWith(name + '-') && file.endsWith('.svg'),
+      )
+    )
+      throw new Error(`packaged_logo_asset_not_resolved_${name}`)
+  }
+
   console.log(
     `Package smoke passed for ${externalPackageSpec ? 'external package' : 'local tarball'}.`,
   )

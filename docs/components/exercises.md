@@ -1,0 +1,33 @@
+# Exercise components
+
+The teacher and student compose these contracts with `SlidePage` and `SlideDeck`. `Materials/A1.01` is the complete 26-screen source fixture; lesson data, answer keys, synthesis, homework destinations and private teacher notes are catalog fixtures, not package exports.
+
+## ExercisePanel
+
+A shared capsule with optional heading, counter and media slots. It supplies the measured compact exercise layout, without owning options, media playback or scoring.
+
+## VocabularyGrid
+
+Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
+
+`imageVariant="scene"` gives contextual illustrations a full-card frame whose height follows the material viewport. The default `isolated` keeps icon framing. Optional `columns={3}` keeps the reference's three columns even on a phone; omit it for the responsive three/two-column grid. `density="regular"` provides taller vocabulary cards. `revealVariant="tooltip"` uses a hover/focus translation tooltip, a persistent word caption after activation/show-all and an initial-letter hint. The default overlay reveal remains available. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
+
+## LearningDialogue
+
+Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.
+
+## RevealCard
+
+Controlled native button with a numbered marker, prompt, hidden answer and expanded state. The product supplies `revealed`, `answer` and the click action. This supports turning statements into questions and checking answers without an evaluator inside the library.
+
+## MatchPairs
+
+Two named groups with stable question/answer ids. Products supply the selected question, completed matches, incorrect answer and handlers. Only the product evaluates correctness. Completed choices are disabled; status text and check/cross marks expose feedback beyond color. Long content wraps in both columns and remains usable at narrow widths.
+
+## QuizOption compact density
+
+`density="compact"` opts into the reference's 47px slide option with a 36px letter marker, using the existing default/correct/wrong/dim contract. The default `regular` density retains the existing practice appearance.
+
+All components use styled-components and the shared theme, native keyboard semantics and visible focus. Interactive examples, narrow content and theme overrides live in `Exercise/Components`. Source copying never imports a lesson or an application route into the public package.
+
+Exercise layouts use the enclosing inline-size container supplied by `SlideDeck`. A standalone host supplies `container-type: inline-size`, as shown by the component stories, so the same narrow-container rules apply without a global stylesheet.

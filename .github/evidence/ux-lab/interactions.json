@@ -1,0 +1,770 @@
+{
+  "results": [
+    {
+      "name": "interview: navigation, captions, toggles, last turn, end",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "call: wrong menu, support, connected turns, summary, cancelled transitions",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "advanced interview: long caption and CC default off",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "advanced call: correct key and long caption",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "grammar: no hidden answers in DOM, reveal and play",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "gaps: options, wrong feedback, correct advancement, completion",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "role play: support and checklist controlled",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "scene: selected hotspot, visited progress and help",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "minimal pairs: listen first, wrong choice, score, speaking mode, next",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "conversation: branches, ending and reset",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "free conversation: empty disabled, Enter submit, teacher tone route",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "video: chapter seek and discussion page",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "oral: manual stars and example",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "oral result: editable fields, export callback, clear",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "shadowing: speed, boundaries, final task",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "right/wrong and received video composition",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "fluency: real-second clock, pause/resume, three rounds, restart",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "interview: navigation, captions, toggles, last turn, end",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "call: wrong menu, support, connected turns, summary, cancelled transitions",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "advanced interview: long caption and CC default off",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "advanced call: correct key and long caption",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "grammar: no hidden answers in DOM, reveal and play",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "gaps: options, wrong feedback, correct advancement, completion",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "role play: support and checklist controlled",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "scene: selected hotspot, visited progress and help",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "minimal pairs: listen first, wrong choice, score, speaking mode, next",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "conversation: branches, ending and reset",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "free conversation: empty disabled, Enter submit, teacher tone route",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "video: chapter seek and discussion page",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "oral: manual stars and example",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "oral result: editable fields, export callback, clear",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "shadowing: speed, boundaries, final task",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "right/wrong and received video composition",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "fluency: real-second clock, pause/resume, three rounds, restart",
+      "width": 390,
+      "passed": true
+    }
+  ],
+  "shots": [
+    {
+      "key": "interview-caption-keyboard-focus-1280",
+      "name": "interview",
+      "state": "caption-keyboard-focus",
+      "width": 1280,
+      "file": "after-interview-caption-keyboard-focus-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "interview-last-turn-1280",
+      "name": "interview",
+      "state": "last-turn",
+      "width": 1280,
+      "file": "after-interview-last-turn-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "interview-ended-1280",
+      "name": "interview",
+      "state": "ended",
+      "width": 1280,
+      "file": "after-interview-ended-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "call-ringing-1280",
+      "name": "call",
+      "state": "ringing",
+      "width": 1280,
+      "file": "after-call-ringing-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "call-menu-wrong-support-1280",
+      "name": "call",
+      "state": "menu-wrong-support",
+      "width": 1280,
+      "file": "after-call-menu-wrong-support-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "call-connected-1280",
+      "name": "call",
+      "state": "connected",
+      "width": 1280,
+      "file": "after-call-connected-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "call-ended-summary-1280",
+      "name": "call",
+      "state": "ended-summary",
+      "width": 1280,
+      "file": "after-call-ended-summary-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "advanced-interview-long-caption-1280",
+      "name": "advanced-interview",
+      "state": "long-caption",
+      "width": 1280,
+      "file": "after-advanced-interview-long-caption-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "advanced-call-connected-long-1280",
+      "name": "advanced-call",
+      "state": "connected-long",
+      "width": 1280,
+      "file": "after-advanced-call-connected-long-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "hidden-grammar-first-revealed-1280",
+      "name": "hidden-grammar",
+      "state": "first-revealed",
+      "width": 1280,
+      "file": "after-hidden-grammar-first-revealed-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "fill-in-the-blanks-wrong-choice-1280",
+      "name": "fill-in-the-blanks",
+      "state": "wrong-choice",
+      "width": 1280,
+      "file": "after-fill-in-the-blanks-wrong-choice-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "fill-in-the-blanks-complete-1280",
+      "name": "fill-in-the-blanks",
+      "state": "complete",
+      "width": 1280,
+      "file": "after-fill-in-the-blanks-complete-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "role-play-support-completed-step-1280",
+      "name": "role-play",
+      "state": "support-completed-step",
+      "width": 1280,
+      "file": "after-role-play-support-completed-step-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "explore-the-scene-hotspot-help-1280",
+      "name": "explore-the-scene",
+      "state": "hotspot-help",
+      "width": 1280,
+      "file": "after-explore-the-scene-hotspot-help-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "minimal-pairs-wrong-mouth-hint-1280",
+      "name": "minimal-pairs",
+      "state": "wrong-mouth-hint",
+      "width": 1280,
+      "file": "after-minimal-pairs-wrong-mouth-hint-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "minimal-pairs-teacher-listens-1280",
+      "name": "minimal-pairs",
+      "state": "teacher-listens",
+      "width": 1280,
+      "file": "after-minimal-pairs-teacher-listens-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "conversation-branch-ending-1280",
+      "name": "conversation",
+      "state": "branch-ending",
+      "width": 1280,
+      "file": "after-conversation-branch-ending-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "free-conversation-teacher-tone-1280",
+      "name": "free-conversation",
+      "state": "teacher-tone",
+      "width": 1280,
+      "file": "after-free-conversation-teacher-tone-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "video-discuss-1280",
+      "name": "video",
+      "state": "discuss",
+      "width": 1280,
+      "file": "after-video-discuss-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "oral-assessment-rated-example-1280",
+      "name": "oral-assessment",
+      "state": "rated-example",
+      "width": 1280,
+      "file": "after-oral-assessment-rated-example-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "oral-result-filled-export-callback-1280",
+      "name": "oral-result",
+      "state": "filled-export-callback",
+      "width": 1280,
+      "file": "after-oral-result-filled-export-callback-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "shadowing-last-phrase-1280",
+      "name": "shadowing",
+      "state": "last-phrase",
+      "width": 1280,
+      "file": "after-shadowing-last-phrase-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "right-or-wrong-explanation-1280",
+      "name": "right-or-wrong",
+      "state": "explanation",
+      "width": 1280,
+      "file": "after-right-or-wrong-explanation-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "received-video-reply-1280",
+      "name": "received-video",
+      "state": "reply",
+      "width": 1280,
+      "file": "after-received-video-reply-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "fluency-paused-1280",
+      "name": "fluency",
+      "state": "paused",
+      "width": 1280,
+      "file": "after-fluency-paused-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "fluency-second-round-1280",
+      "name": "fluency",
+      "state": "second-round",
+      "width": 1280,
+      "file": "after-fluency-second-round-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "fluency-finished-1280",
+      "name": "fluency",
+      "state": "finished",
+      "width": 1280,
+      "file": "after-fluency-finished-1280.png",
+      "overflow": {
+        "viewport": 1280,
+        "scroll": 1280
+      }
+    },
+    {
+      "key": "interview-caption-keyboard-focus-390",
+      "name": "interview",
+      "state": "caption-keyboard-focus",
+      "width": 390,
+      "file": "after-interview-caption-keyboard-focus-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "interview-last-turn-390",
+      "name": "interview",
+      "state": "last-turn",
+      "width": 390,
+      "file": "after-interview-last-turn-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "interview-ended-390",
+      "name": "interview",
+      "state": "ended",
+      "width": 390,
+      "file": "after-interview-ended-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "call-ringing-390",
+      "name": "call",
+      "state": "ringing",
+      "width": 390,
+      "file": "after-call-ringing-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "call-menu-wrong-support-390",
+      "name": "call",
+      "state": "menu-wrong-support",
+      "width": 390,
+      "file": "after-call-menu-wrong-support-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "call-connected-390",
+      "name": "call",
+      "state": "connected",
+      "width": 390,
+      "file": "after-call-connected-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "call-ended-summary-390",
+      "name": "call",
+      "state": "ended-summary",
+      "width": 390,
+      "file": "after-call-ended-summary-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "advanced-interview-long-caption-390",
+      "name": "advanced-interview",
+      "state": "long-caption",
+      "width": 390,
+      "file": "after-advanced-interview-long-caption-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "advanced-call-connected-long-390",
+      "name": "advanced-call",
+      "state": "connected-long",
+      "width": 390,
+      "file": "after-advanced-call-connected-long-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "hidden-grammar-first-revealed-390",
+      "name": "hidden-grammar",
+      "state": "first-revealed",
+      "width": 390,
+      "file": "after-hidden-grammar-first-revealed-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "fill-in-the-blanks-wrong-choice-390",
+      "name": "fill-in-the-blanks",
+      "state": "wrong-choice",
+      "width": 390,
+      "file": "after-fill-in-the-blanks-wrong-choice-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "fill-in-the-blanks-complete-390",
+      "name": "fill-in-the-blanks",
+      "state": "complete",
+      "width": 390,
+      "file": "after-fill-in-the-blanks-complete-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "role-play-support-completed-step-390",
+      "name": "role-play",
+      "state": "support-completed-step",
+      "width": 390,
+      "file": "after-role-play-support-completed-step-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "explore-the-scene-hotspot-help-390",
+      "name": "explore-the-scene",
+      "state": "hotspot-help",
+      "width": 390,
+      "file": "after-explore-the-scene-hotspot-help-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "minimal-pairs-wrong-mouth-hint-390",
+      "name": "minimal-pairs",
+      "state": "wrong-mouth-hint",
+      "width": 390,
+      "file": "after-minimal-pairs-wrong-mouth-hint-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "minimal-pairs-teacher-listens-390",
+      "name": "minimal-pairs",
+      "state": "teacher-listens",
+      "width": 390,
+      "file": "after-minimal-pairs-teacher-listens-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "conversation-branch-ending-390",
+      "name": "conversation",
+      "state": "branch-ending",
+      "width": 390,
+      "file": "after-conversation-branch-ending-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "free-conversation-teacher-tone-390",
+      "name": "free-conversation",
+      "state": "teacher-tone",
+      "width": 390,
+      "file": "after-free-conversation-teacher-tone-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "video-discuss-390",
+      "name": "video",
+      "state": "discuss",
+      "width": 390,
+      "file": "after-video-discuss-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "oral-assessment-rated-example-390",
+      "name": "oral-assessment",
+      "state": "rated-example",
+      "width": 390,
+      "file": "after-oral-assessment-rated-example-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "oral-result-filled-export-callback-390",
+      "name": "oral-result",
+      "state": "filled-export-callback",
+      "width": 390,
+      "file": "after-oral-result-filled-export-callback-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "shadowing-last-phrase-390",
+      "name": "shadowing",
+      "state": "last-phrase",
+      "width": 390,
+      "file": "after-shadowing-last-phrase-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "right-or-wrong-explanation-390",
+      "name": "right-or-wrong",
+      "state": "explanation",
+      "width": 390,
+      "file": "after-right-or-wrong-explanation-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "received-video-reply-390",
+      "name": "received-video",
+      "state": "reply",
+      "width": 390,
+      "file": "after-received-video-reply-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "fluency-paused-390",
+      "name": "fluency",
+      "state": "paused",
+      "width": 390,
+      "file": "after-fluency-paused-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "fluency-second-round-390",
+      "name": "fluency",
+      "state": "second-round",
+      "width": 390,
+      "file": "after-fluency-second-round-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    },
+    {
+      "key": "fluency-finished-390",
+      "name": "fluency",
+      "state": "finished",
+      "width": 390,
+      "file": "after-fluency-finished-390.png",
+      "overflow": {
+        "viewport": 390,
+        "scroll": 390
+      }
+    }
+  ]
+}

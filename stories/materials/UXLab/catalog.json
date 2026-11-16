@@ -1,0 +1,252 @@
+[
+  {
+    "id": "nomes",
+    "title": "Fale o nome dessas coisas",
+    "description": "Só imagens, sem texto. A aluna tenta falar primeiro; a professora passa o mouse ou toca e o balão confirma com som.",
+    "anchor": "nomes"
+  },
+  {
+    "id": "whatsapp",
+    "title": "Áudio no WhatsApp",
+    "description": "Uma amiga manda um áudio chamando a aluna pelo nome. Ela ouve, responde as perguntas e grava a resposta como faria na vida real.",
+    "anchor": "whatsapp"
+  },
+  {
+    "id": "video",
+    "title": "Vídeo em duas páginas",
+    "description": "Página 1: assistir, com perguntas de foco antes do play. Página 2: responder. Capítulos deixam a professora voltar só no trecho difícil.",
+    "anchor": "video"
+  },
+  {
+    "id": "ligacao",
+    "title": "Ligação",
+    "description": "A aluna liga para um lugar. Primeiro cai no atendimento automático (\"press 1 for…\") e precisa escolher a opção certa pelo que ouviu. Depois fala com uma pessoa, e as falas aparecem como legenda da chamada.",
+    "anchor": "ligacao"
+  },
+  {
+    "id": "entrevista",
+    "title": "Entrevista em videochamada",
+    "description": "Uma videochamada no estilo do Google Meet, sem a marca: a entrevistadora na tela grande e a aluna no quadrinho. Embaixo tem só um player: o play grande toca o próximo áudio, a seta circular repete o atual e a seta da esquerda volta um. A aluna responde e a professora decide quando dar play de novo. Os follow-ups já estão na sequência, logo depois de cada pergunta.",
+    "anchor": "entrevista"
+  },
+  {
+    "id": "engracado",
+    "title": "Recebeu um vídeo engraçado",
+    "description": "O Leo manda no WhatsApp um vídeo do YouTube com \"you HAVE to watch this 😂\". A aluna assiste no player do YouTube e responde por áudio: conta o que aconteceu e reage como faria com um amigo.",
+    "anchor": "engracado"
+  },
+  {
+    "id": "cena",
+    "title": "Cena explorável",
+    "description": "Uma ilustração grande com pontos que pulsam. Cada toque dá zoom no objeto, toca o som e faz uma pergunta. Reaproveita as cenas que já desenhamos para as aulas.",
+    "anchor": "cena"
+  },
+  {
+    "id": "shadowing",
+    "title": "Shadowing guiado",
+    "description": "Duas telas de app. Primeiro, a letra sincronizada, como num app de música: as frases rolam sozinhas, a atual fica grande e as palavras acendem com o áudio, e a aluna fala junto. Depois, o gravador de voz: ela grava o trecho inteiro sem olhar o texto e compara a onda dela com a original.",
+    "anchor": "shadowing"
+  },
+  {
+    "id": "caminhos",
+    "title": "Conversa no WhatsApp",
+    "description": "Uma conversa com a cara do WhatsApp em que cada resposta da aluna leva para um caminho diferente. Nos níveis menores ela escolhe uma de três opções, que aparecem logo abaixo da última mensagem. Do B2 ao C2 ela escreve o que quiser e, junto com a professora, diz como a mensagem soou; a outra pessoa reage a esse tom.",
+    "anchor": "caminhos"
+  },
+  {
+    "id": "pares",
+    "title": "Ouvi qual?",
+    "description": "Duas imagens de palavras que brasileiros confundem (ship e sheep). Toca uma, a aluna escolhe. Depois inverte: ela fala e a professora escolhe o que ouviu.",
+    "anchor": "pares"
+  },
+  {
+    "id": "fluencia",
+    "title": "Desafio 4-3-2",
+    "description": "A aluna fala sobre o mesmo tema três vezes, cada vez com menos tempo. A correção fica para o fim.",
+    "anchor": "fluencia"
+  },
+  {
+    "id": "c-review",
+    "title": "Review",
+    "description": "Abre a aula com perguntas numeradas sobre a aula anterior. A professora pergunta e a aluna responde falando.",
+    "anchor": "c-review",
+    "file": "a1-componentes",
+    "page": 1
+  },
+  {
+    "id": "c-multipla",
+    "title": "Múltipla escolha",
+    "description": "Imagem + 3 opções A, B e C. O erro explica por que está errado; o acerto toca o áudio da frase.",
+    "anchor": "c-multipla",
+    "file": "a1-componentes",
+    "page": 31
+  },
+  {
+    "id": "c-vocab",
+    "title": "Vocabulário com áudio",
+    "description": "Igual ao Fale o nome: só a imagem com ?. Passar o mouse mostra o balão e toca o áudio; tocar fixa a palavra. Ícones de dica (primeira letra) e de mostrar todas.",
+    "anchor": "c-vocab",
+    "file": "a1-componentes",
+    "page": 5
+  },
+  {
+    "id": "c-gramatica",
+    "title": "Gramática",
+    "description": "Explicação curta + tabela verde da afirmativa. Passar o mouse numa frase lê a frase.",
+    "anchor": "c-gramatica",
+    "file": "a1-componentes",
+    "page": 2
+  },
+  {
+    "id": "c-check",
+    "title": "Quick check",
+    "description": "Frases com lacuna e botões para escolher a palavra certa, logo depois da gramática.",
+    "anchor": "c-check",
+    "file": "a1-componentes",
+    "page": 22
+  },
+  {
+    "id": "c-make",
+    "title": "Make your own examples",
+    "description": "Pronome + linha para a aluna criar a própria frase. O exemplo fica escondido até a professora abrir.",
+    "anchor": "c-make",
+    "file": "a1-componentes",
+    "page": 23
+  },
+  {
+    "id": "c-guided",
+    "title": "Guided conversation",
+    "description": "Diálogo com foto e nome: um personagem à esquerda em balão cinza, o outro à direita em rosa. Play e pausa logo depois do título toca a conversa inteira, ícone de som discreto em cada fala e tradução no toque.",
+    "anchor": "c-guided",
+    "file": "a1-componentes",
+    "page": 7
+  },
+  {
+    "id": "c-comp",
+    "title": "Comprehension questions",
+    "description": "Perguntas sobre o diálogo, com a resposta revelável.",
+    "anchor": "c-comp",
+    "file": "a1-componentes",
+    "page": 17
+  },
+  {
+    "id": "c-blanks",
+    "title": "Fill in the blanks",
+    "description": "O mesmo diálogo, uma lacuna por vez: o tracinho da lacuna atual fica rosa, as opções aparecem logo abaixo da fala e, ao acertar, passam para a próxima.",
+    "anchor": "c-blanks",
+    "file": "a1-componentes",
+    "page": 8
+  },
+  {
+    "id": "c-yourturn",
+    "title": "Your turn",
+    "description": "Modelo com lacunas para a aluna trocar pelas coisas da vida dela.",
+    "anchor": "c-yourturn",
+    "file": "a1-componentes",
+    "page": 15
+  },
+  {
+    "id": "c-roleplay",
+    "title": "Role play",
+    "description": "Cena e situação nova para usar tudo da aula. A professora marca o passo a passo.",
+    "anchor": "c-roleplay",
+    "file": "a1-componentes",
+    "page": 11
+  },
+  {
+    "id": "c-challenge",
+    "title": "Challenge de casa",
+    "description": "Roteiro do áudio que a aluna grava e manda para a professora.",
+    "anchor": "c-challenge",
+    "file": "a1-componentes",
+    "page": 123
+  },
+  {
+    "id": "c-oral",
+    "title": "Oral review",
+    "description": "Prova oral: perguntas easy, medium e challenge, com 1 a 3 estrelas por resposta.",
+    "anchor": "c-oral",
+    "file": "oral-review",
+    "page": 3
+  },
+  {
+    "id": "c-oralres",
+    "title": "Resultado da Oral review",
+    "description": "Total, faixa de resultado, barras por parte e o PDF.",
+    "anchor": "c-oralres",
+    "file": "oral-review",
+    "page": 8
+  },
+  {
+    "id": "c-titulo",
+    "title": "Título da lição na primeira página",
+    "description": "O título da lição divide a primeira página com o vocabulário: nível e número da lição, o título ligado ao tema e o “Goal” com o objetivo em português. Em telas largas fica à esquerda das imagens; em telas estreitas, acima delas. Não há tela de capa separada.",
+    "anchor": "c-titulo",
+    "file": "a1-01",
+    "page": 1
+  },
+  {
+    "id": "c-dlgq",
+    "title": "Diálogo com perguntas",
+    "description": "O Guided conversation sem os botões de papéis (a professora decide na hora quem lê o quê) e com três perguntas de compreensão depois do texto, com a resposta revelável. Em telas largas as perguntas ficam ao lado do diálogo; em telas estreitas, embaixo.",
+    "anchor": "c-dlgq",
+    "file": "a1-01",
+    "page": 3
+  },
+  {
+    "id": "c-tentar",
+    "title": "Gramática com a resposta escondida",
+    "description": "A tabela mostra só quem; o verbo e o exemplo de cada linha abrem no clique, depois que a aluna tenta dizer. A mesma ideia vale no Quick check e no Fill in the blanks: as opções só abrem em “Show options”.",
+    "anchor": "c-tentar",
+    "file": "a1-01",
+    "page": 4
+  },
+  {
+    "id": "c-chatplay",
+    "title": "Role play em chat",
+    "description": "O chat do Guided conversation com os balões da aluna abertos: as falas da outra pessoa vêm prontas, com áudio, e cada balão rosa traz só a deixa do que ela diz. A professora clica no balão quando ela fala. A lâmpada mostra o começo de cada frase. Swap roles põe a aluna para fazer as perguntas.",
+    "anchor": "c-chatplay",
+    "file": "a1-01",
+    "page": 8
+  },
+  {
+    "id": "c-simnao",
+    "title": "Áudio no WhatsApp com sim ou não",
+    "description": "Variação do Áudio no WhatsApp para o começo do A1: as perguntas aparecem antes do play, cada uma numa linha com Yes e No. Depois das respostas, entra o botão “Listen again and check”. O cartão preto pede a resposta falada.",
+    "anchor": "c-simnao",
+    "file": "a1-01",
+    "page": 9
+  },
+  {
+    "id": "c-quem",
+    "title": "Jogo de adivinhar",
+    "description": "Seis cartões sem rosto, com nome, bandeira e carinha. A professora escolhe um em segredo; a aluna faz as duas perguntas dos balões pretos e descobre quem é. Cada país e cada estado aparecem duas vezes, então só as duas perguntas juntas resolvem. Clicar num cartão marca a pessoa como descoberta. Swap roles inverte os papéis e New group troca as seis pessoas.",
+    "anchor": "c-quem",
+    "file": "a1-01",
+    "page": 10
+  },
+  {
+    "id": "c-certo",
+    "title": "Right or wrong?",
+    "description": "Lista de frases com os botões Right e Wrong. Cada frase tem um problema diferente e uma delas está certa. Ao acertar, a linha mostra a frase certa, o motivo em português e o áudio. A última linha, “One from today”, é para uma frase que a própria aluna errou na aula.",
+    "anchor": "c-certo",
+    "file": "a1-01",
+    "page": 13
+  },
+  {
+    "id": "c-paresaula",
+    "title": "Ouvi qual? como página de aula",
+    "description": "O padrão 7 (Ouvi qual?) dentro da aula: dois cartões com imagem, palavra e símbolo do som, botão Listen, placar em bolinhas e os modos “You listen” e “You say”. Ao errar, aparece a dica de boca.",
+    "anchor": "c-paresaula",
+    "file": "a1-01",
+    "page": 19
+  },
+  {
+    "id": "c-casa",
+    "title": "Casa ligada à plataforma",
+    "description": "Cartões que abrem um exercício do Langy Space em outra aba: flashcards, shadowing e quiz. A página não tem tarefa solta: tudo o que a aluna faz em casa está na plataforma.",
+    "anchor": "c-casa",
+    "file": "a1-01",
+    "page": 14
+  }
+]

@@ -59,3 +59,7 @@ export const Focused: Story = {
 }
 
 export const Hovered: Story = {}
+
+export const Compact: Story = {
+  args: { density: 'compact', children: 'He’s tired.' },
+}

@@ -582,3 +582,72 @@ export type { FlashcardWordSkeletonProps } from './components/Flashcard/Flashcar
 
 export { ShadowingPanel } from './components/Shadowing/ShadowingPanel'
 export type { ShadowingPanelProps } from './components/Shadowing/ShadowingPanel.types'
+export { SlideDeck } from './components/Slide/SlideDeck'
+export type {
+  SlideDeckPage,
+  SlideDeckProps,
+} from './components/Slide/SlideDeck.types'
+export { SlidePage } from './components/Slide/SlidePage'
+export { VoiceMessageExercise } from './components/VoiceMessage/VoiceMessageExercise'
+export type {
+  VoiceMessageAudio,
+  VoiceMessageChoice,
+  VoiceMessageQuestion,
+  VoiceMessageLabels,
+  VoiceMessageExerciseProps,
+} from './components/VoiceMessage/VoiceMessageExercise.types'
+export type { SlidePageProps } from './components/Slide/SlidePage.types'
+
+export { ExercisePanel } from './components/Exercise/ExercisePanel'
+export type { ExercisePanelProps } from './components/Exercise/ExercisePanel.types'
+export { VocabularyGrid } from './components/Exercise/VocabularyGrid'
+export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.types'
+export { LearningDialogue } from './components/Exercise/LearningDialogue'
+export type { LearningDialogueProps } from './components/Exercise/LearningDialogue.types'
+export { RevealCard } from './components/Exercise/RevealCard'
+export type { RevealCardProps } from './components/Exercise/RevealCard.types'
+export { MatchPairs } from './components/Exercise/MatchPairs'
+export type { MatchPairsProps } from './components/Exercise/MatchPairs.types'
+export type { VocabularyItem } from './components/Exercise/VocabularyGrid.types'
+export type { LearningDialogueLine } from './components/Exercise/LearningDialogue.types'
+export type { MatchPairItem } from './components/Exercise/MatchPairs.types'
+
+export { CallSimulation } from './components/InteractiveMaterial/CallSimulation'
+export type { CallSimulationProps } from './components/InteractiveMaterial/CallSimulation.types'
+export { InterviewSimulation } from './components/InteractiveMaterial/InterviewSimulation'
+export type { InterviewSimulationProps } from './components/InteractiveMaterial/InterviewSimulation.types'
+export { AudioSequenceControls } from './components/InteractiveMaterial/AudioSequenceControls'
+export type { AudioSequenceControlsProps } from './components/InteractiveMaterial/AudioSequenceControls.types'
+export { GrammarTable } from './components/InteractiveMaterial/GrammarTable'
+export type { GrammarTableProps } from './components/InteractiveMaterial/GrammarTable.types'
+export { GapFillExercise } from './components/InteractiveMaterial/GapFillExercise'
+export type { GapFillExerciseProps } from './components/InteractiveMaterial/GapFillExercise.types'
+export { RolePlayExercise } from './components/InteractiveMaterial/RolePlayExercise'
+export type { RolePlayExerciseProps } from './components/InteractiveMaterial/RolePlayExercise.types'
+export { SceneExplorer } from './components/InteractiveMaterial/SceneExplorer'
+export type { SceneExplorerProps } from './components/InteractiveMaterial/SceneExplorer.types'
+export { MinimalPairExercise } from './components/InteractiveMaterial/MinimalPairExercise'
+export type { MinimalPairExerciseProps } from './components/InteractiveMaterial/MinimalPairExercise.types'
+export { FluencyTimer } from './components/InteractiveMaterial/FluencyTimer'
+export type { FluencyTimerProps } from './components/InteractiveMaterial/FluencyTimer.types'
+export { BranchingConversation } from './components/InteractiveMaterial/BranchingConversation'
+export type { BranchingConversationProps } from './components/InteractiveMaterial/BranchingConversation.types'
+export { VideoExercise } from './components/InteractiveMaterial/VideoExercise'
+export type { VideoExerciseProps } from './components/InteractiveMaterial/VideoExercise.types'
+export { OralReview } from './components/InteractiveMaterial/OralReview'
+export type { OralReviewProps } from './components/InteractiveMaterial/OralReview.types'
+export { OralReviewResult } from './components/InteractiveMaterial/OralReviewResult'
+export type { OralReviewResultProps } from './components/InteractiveMaterial/OralReviewResult.types'
+export type { GrammarTableRow } from './components/InteractiveMaterial/GrammarTable.types'
+export type { SceneHotspot } from './components/InteractiveMaterial/SceneExplorer.types'
+export type { RolePlayStep } from './components/InteractiveMaterial/RolePlayExercise.types'
+export type { MinimalPairChoice } from './components/InteractiveMaterial/MinimalPairExercise.types'
+export type { FluencyRound } from './components/InteractiveMaterial/FluencyTimer.types'
+export type {
+  ConversationMessage,
+  ConversationChoice,
+} from './components/InteractiveMaterial/BranchingConversation.types'
+export type { VideoChapter } from './components/InteractiveMaterial/VideoExercise.types'
+export type { OralReviewQuestion } from './components/InteractiveMaterial/OralReview.types'
+export type { OralReviewPart } from './components/InteractiveMaterial/OralReviewResult.types'
+export type { CallSimulationState } from './components/InteractiveMaterial/CallSimulation.types'

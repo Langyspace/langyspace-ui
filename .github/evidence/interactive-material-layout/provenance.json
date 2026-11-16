@@ -1,0 +1,31 @@
+{
+  "baseline": "3a05e0b7811e9ce2f42216f125dcd3cdea043b77",
+  "renderCommand": "node docs/epics/interactive-material-layout/capture.mjs",
+  "sourceSha256": {
+    "src/components/Slide/SlideDeck.styles.ts": "411f9e613cf50e7057596adcaa7a84cf0ba0dc32419804ad032b3bdeac2e22a3",
+    "src/components/Slide/useSlideNavigation.ts": "3a312c8122687a9457486f87136f8623a6112cb2413f3972a13a5d52e2349001",
+    "src/components/Slide/SlidePage.tsx": "955cc6c50517cec0fc89643996eeee51df731d729e64f8f0993d1503bda9fb2c",
+    "src/components/Slide/SlideDeck.types.ts": "1215f89e508a60ddf25efad7203036dfec4b4effe09b8e1941ad8692a687db2d",
+    "src/components/Slide/SlidePage.types.ts": "2a8d67a83420db6330f406e675a3740a50f0aefa4b7c98ce85fb91d5e2eacd0b",
+    "src/components/Slide/SlideDeck.tsx": "080aa961608d9717448ae53630aa520dc9b1e630e60c56072689588c64bc7211",
+    "src/components/Slide/SlidePage.styles.ts": "714f27c353ca6ea4f8f2f300edeb9d5b402545db4472c1b5c4e012d38ed2b82a",
+    "src/foundations/theme/theme.ts": "94385b74a22471a36dcef4a4b81d9b4d2518eaa9e4d0c561f09fef9ed90720d1"
+  },
+  "screenshotsSha256": {
+    ".github/evidence/interactive-material-layout/answered-1280.png": "f112948296cc3767159cf78276118bd973ca2f4a4fd2d0d73515b2f1d363f820",
+    ".github/evidence/interactive-material-layout/intro-1280.png": "e209a4f2aa753fa56a9e39f11d90cf8069c590c9d27cfca41ff3771cf74279a8",
+    ".github/evidence/interactive-material-layout/long-content-end-390.png": "9fd9f11ca83c99d2863a84fae089887fb7f13adf495161c68a9ed9cde1e6a7d7",
+    ".github/evidence/interactive-material-layout/long-content-start-390.png": "1be8df96245cfd6b5701733cbd3236192830ad80170260beecb060859deba88d",
+    ".github/evidence/interactive-material-layout/long-heading-1280.png": "2950c872975d0468a3246acfe89de09063fc1899a4103eea79d87a8f9f848b88",
+    ".github/evidence/interactive-material-layout/long-heading-390.png": "9eac0917017fbe45c0a4860e6cfa39a37a199fc0d248fcba4fd2962b3e4bf49f",
+    ".github/evidence/interactive-material-layout/narrow-280.png": "411d52fc1726179f4f166b08e41e008c9bb8ec8456a772273d8df76234ade858",
+    ".github/evidence/interactive-material-layout/theme-1280.png": "6b1db515cc3b718bfd6e6093f876df09e42705233f19b4333121b282473b9941",
+    ".github/evidence/interactive-material-layout/warm-up-1280.png": "ffd8b9dfc9b4bb5613e899a9931c0f8814d3efc7cc4788045bd9d73f2c200081",
+    ".github/evidence/interactive-material-layout/warm-up-1280x720.png": "097c386cbefbcf6263cf2bfcd26812c0158820728080033278051588450c48a6",
+    ".github/evidence/interactive-material-layout/warm-up-390x844.png": "8727f14d85e90b3cbe049848d26e8d0698be8ffb691bee15c0c25d51abfb9993",
+    ".github/evidence/interactive-material-layout/warm-up-844x390.png": "4a6a8af51999a7180eed25cc312b694a3ebc3e113da86d3c8057fb1f4b38443f"
+  },
+  "newStories": true,
+  "visualReview": "pending human",
+  "portalAdoption": "not started"
+}

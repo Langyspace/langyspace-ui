@@ -1,0 +1,167 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-16",
+  "profile": "exercise-scene",
+  "styleReference": "scene-tired-tom.webp",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.34.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-tired-tom",
+      "file": "scene-tired-tom.webp",
+      "originalSha256": "091b288c947d50a05f324ce5fc8500bffcd96f6fdd4090cf842deadc6e925f71",
+      "sha256": "7c8bfaa9544bfa68d35106e0a18a54e514b2ef781326e76d568096467004cfcb",
+      "bytes": 87888,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cold-julia",
+      "file": "scene-cold-julia.webp",
+      "originalSha256": "601986b0d77e3b6a16913644b2691737970187fa20b35bb53b61a2d279f2532f",
+      "sha256": "ca5440727f92b9e46034ad607add679cbed4edcc2462010c57bfc0d719648cd1",
+      "bytes": 117844,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-sad-josh",
+      "file": "scene-sad-josh.webp",
+      "originalSha256": "1106155788f92ec3bae5d1cf683a343c831ca38786344491e718b1e6143043ad",
+      "sha256": "e0bcc0cbb7f9113ce64d7ab589b7d3719bac6198041cb2e1b9d151b10bce4786",
+      "bytes": 100384,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-happy-mia",
+      "file": "scene-happy-mia.webp",
+      "originalSha256": "c2ac3d46965171b7640858792e13b4c299fefd34e8fc3708fd44eeaa5601fa51",
+      "sha256": "f8439def8bc0cb005086a0d41eff6cfde781d404987c3b129366fb8fc76d2670",
+      "bytes": 125854,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-hungry-ana",
+      "file": "scene-hungry-ana.webp",
+      "originalSha256": "f1a1a446a6390f5490476dce815108f568bc6f570561be7cea4e132cc158d87f",
+      "sha256": "43dae0d9a95b429cd64998b7a05d74165cb4c92b3768c97617d1301cdab6c30e",
+      "bytes": 105556,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-angry-leo",
+      "file": "scene-angry-leo.webp",
+      "originalSha256": "a3536feef1cefbbd2ee8da37c31983e93c02a0dfc3c12c13356613e314970d3c",
+      "sha256": "fb78fd1013fea48ea7ff0f90e1afa1cad62d1b343072ab94c60cf61efa9c0095",
+      "bytes": 97256,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-korea-jiwoo",
+      "file": "scene-korea-jiwoo.webp",
+      "originalSha256": "8bc33665ac8cea172e9a0cd49c2e72c97b5e4fe679a349cd0d533e5f5497a819",
+      "sha256": "ae39f70d93b740326f3e330fe2bd2873e4ec9b58db82159777b87a46bd15650c",
+      "bytes": 100762,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-japan-hiro",
+      "file": "scene-japan-hiro.webp",
+      "originalSha256": "d66347e8a1b2e5ad45df060af90a68526ffbb5ecacf8e8411464b93d4057148b",
+      "sha256": "35adffc7b2d16f53dd3b890207c79e484f7c5b290d060db5d44598961243b24c",
+      "bytes": 86226,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-spain-lucia",
+      "file": "scene-spain-lucia.webp",
+      "originalSha256": "ae0f399116c978a006fc797fe19b3738d59fc3a9277c0bf021109bc0f0686048",
+      "sha256": "783c3581eefbdc24b817f5b35ee5f20b8dca3780270350a9ad38439529bcbed7",
+      "bytes": 99662,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-germany-lukas",
+      "file": "scene-germany-lukas.webp",
+      "originalSha256": "f00933f94f4f33d8ca4f14c1ee173105c7cc62feee627973f237bb93cd0dd4ab",
+      "sha256": "adf9a20fbe39b52f7e19f918054395a2b117f73642bec0c354a2d0de4f6d429c",
+      "bytes": 105106,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-france-chloe",
+      "file": "scene-france-chloe.webp",
+      "originalSha256": "28f1b49577b9769fbb0bf114393a5d62ec199cd0cf807426cfe6b4b00a28af41",
+      "sha256": "61f8d9a680fdbf6b7a80cbb5c9a5ec8d165e27684dc9ef4225caa912cae2728f",
+      "bytes": 110196,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-usa-jake",
+      "file": "scene-usa-jake.webp",
+      "originalSha256": "a05364ecda56a5fc26d00ee3ad50a3e5c478b1683eb1d4be09af1519c5813f03",
+      "sha256": "7fe3ab9902ba0e1533c22fe9ad49528f334842585dab0a4164d5e1bf9a9889d6",
+      "bytes": 101792,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cold-tom",
+      "file": "scene-cold-tom.webp",
+      "originalSha256": "8614bc666e545d9c5df5df58f87873bb4f66c44d8f619b7ffa9fc1634762877d",
+      "sha256": "33be333a8a3674d45ef4628fa6dd5427c10ac9d027523c06a64029b1b2a3c4b0",
+      "bytes": 109176,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-tired-kim",
+      "file": "scene-tired-kim.webp",
+      "originalSha256": "6586af99217dba8a128690412e037e8d21ac222ea6f54c3086e246f530bcb90e",
+      "sha256": "53d0986210bbbac1209ce7dfcba0abb3c82357250e4ffb2debb90d4d0ea28b33",
+      "bytes": 104020,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-hungry-jun",
+      "file": "scene-hungry-jun.webp",
+      "originalSha256": "4e97bce2d34d17892557d024e4cc27219207b25b9edfa83c699d26288776d19c",
+      "sha256": "5a56e4e0f113379a064fac49f71dbb9bea144170ac20608bc5ef9b9797250305",
+      "bytes": 88098,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false
+    }
+  ]
+}
