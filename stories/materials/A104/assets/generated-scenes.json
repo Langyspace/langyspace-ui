@@ -1,0 +1,83 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-16",
+  "profile": "exercise-scene",
+  "styleReference": "../../A101/assets/scene-tired-tom.webp",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.35.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-getup",
+      "file": "scene-getup.webp",
+      "originalSha256": "37bb12d58f8ff7b740c3f78df3a6158d50f39c59213a868222a829b9c34afe64",
+      "sha256": "983485cbd1048276d33f2c9f7236fe527a474f2f56d9f09c5801f0235cd63b57",
+      "bytes": 93688,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: get up. Scene: Ana, a young adult woman with warm medium skin and shoulder-length dark hair, sitting on the edge of her bed at dawn, stretching arms after waking. Her feet near slippers; soft morning light through window; bedside alarm clock with blank unmarked face. The action is GET UP, not sleeping."
+    },
+    {
+      "id": "scene-eat",
+      "file": "scene-eat.webp",
+      "originalSha256": "8c0002c9f16a894035041f9c4874cf9ee25728014ffc90001294c052ac1384c6",
+      "sha256": "47fbe36be53396930e73bb211fae583e96c4c8773f2267ec0f646497c50e3030",
+      "bytes": 109662,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: eat. Scene: Ana, same young adult woman with medium warm skin and shoulder-length dark hair, seated at a breakfast table eating a bowl of fruit and toast. Hand with fork near mouth, relaxed clear eating action, bright home dining area."
+    },
+    {
+      "id": "scene-work",
+      "file": "scene-work.webp",
+      "originalSha256": "e28421013bf92f896bd188fac9266f663a761287d1b6299b4a9a8741aaf08897",
+      "sha256": "1f155485a5073608d9701eb3779c88b25c63746d04b122f3912650cd7d5ffd31",
+      "bytes": 78450,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: work. Scene: Ana, same young adult woman, concentrating on her laptop at a modest modern office desk with a blank notebook, desk lamp and small plant. Comfortable professional clothing and clear workplace context."
+    },
+    {
+      "id": "scene-study",
+      "file": "scene-study.webp",
+      "originalSha256": "91d015c2ee655ec79224fc0e0341b2a1739560eadc8267bc8fc951471a048be0",
+      "sha256": "22d4704c5c8167f6a971efd48d02123297825290402edcd69bcbe4e358939ee1",
+      "bytes": 84444,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: study. Scene: Ana, same young adult woman, actively studying at home in the early evening, reading an open textbook and taking notes with a pencil. A few books on desk and warm lamp; no laptop required, clearly learning."
+    },
+    {
+      "id": "scene-gym",
+      "file": "scene-gym.webp",
+      "originalSha256": "d936c8b4042cf282a9d1eca754347ea02b655ae29b89bb90666b6d0d2f81773d",
+      "sha256": "78ff3a8f9b259ed08f570de813eb5d5a08fa74b7da390f3db0a5c60414f2683d",
+      "bytes": 67266,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: gym. Scene: Ana, same young adult woman in comfortable athletic clothes, training in a clean gym, holding a light dumbbell with correct safe posture. A few unobtrusive gym machines blurred in the background. Energetic, friendly, realistic adult proportions."
+    },
+    {
+      "id": "scene-sleep",
+      "file": "scene-sleep.webp",
+      "originalSha256": "904ded66af87cce446f76bfd3940d5e6750a61dbc2bb1bfa4c1ae84f6865101a",
+      "sha256": "a05e77e93f7daa3927e14d11d1ad038a355299f6a986a76f1c7ef3ef1cbb259f",
+      "bytes": 77374,
+      "width": 768,
+      "height": 768,
+      "hasAlpha": false,
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: sleep. Scene: Ana, same young adult woman, peacefully asleep on her side in bed at night, eyes closed, head resting on pillow, blanket covering her shoulders. Moonlit window and bedside lamp off, restful bedroom. No floating sleep symbols or typography."
+    }
+  ]
+}

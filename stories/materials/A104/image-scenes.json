@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "profile": "exercise-scene",
+  "generationTool": "built-in image_gen",
+  "basePrompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. ",
+  "reference": "../A101/assets/scene-tired-tom.webp",
+  "output": {
+    "background": "opaque full-bleed scene",
+    "format": "webp",
+    "width": 768,
+    "quality": 86
+  },
+  "scenes": [
+    {
+      "id": "scene-getup",
+      "target": "get up",
+      "alt": "Ana se espreguiçando sentada na beira da cama de manhã.",
+      "scene": "Ana, a young adult woman with warm medium skin and shoulder-length dark hair, sitting on the edge of her bed at dawn, stretching arms after waking. Her feet near slippers; soft morning light through window; bedside alarm clock with blank unmarked face. The action is GET UP, not sleeping.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: get up. Scene: Ana, a young adult woman with warm medium skin and shoulder-length dark hair, sitting on the edge of her bed at dawn, stretching arms after waking. Her feet near slippers; soft morning light through window; bedside alarm clock with blank unmarked face. The action is GET UP, not sleeping.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-eat",
+      "target": "eat",
+      "alt": "Ana comendo à mesa do café da manhã.",
+      "scene": "Ana, same young adult woman with medium warm skin and shoulder-length dark hair, seated at a breakfast table eating a bowl of fruit and toast. Hand with fork near mouth, relaxed clear eating action, bright home dining area.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: eat. Scene: Ana, same young adult woman with medium warm skin and shoulder-length dark hair, seated at a breakfast table eating a bowl of fruit and toast. Hand with fork near mouth, relaxed clear eating action, bright home dining area.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-work",
+      "target": "work",
+      "alt": "Ana trabalhando no notebook em uma mesa de escritório.",
+      "scene": "Ana, same young adult woman, concentrating on her laptop at a modest modern office desk with a blank notebook, desk lamp and small plant. Comfortable professional clothing and clear workplace context.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: work. Scene: Ana, same young adult woman, concentrating on her laptop at a modest modern office desk with a blank notebook, desk lamp and small plant. Comfortable professional clothing and clear workplace context.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-study",
+      "target": "study",
+      "alt": "Ana estudando com um livro aberto e anotando no caderno.",
+      "scene": "Ana, same young adult woman, actively studying at home in the early evening, reading an open textbook and taking notes with a pencil. A few books on desk and warm lamp; no laptop required, clearly learning.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: study. Scene: Ana, same young adult woman, actively studying at home in the early evening, reading an open textbook and taking notes with a pencil. A few books on desk and warm lamp; no laptop required, clearly learning.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-gym",
+      "target": "gym",
+      "alt": "Ana se exercitando com um halter na academia.",
+      "scene": "Ana, same young adult woman in comfortable athletic clothes, training in a clean gym, holding a light dumbbell with correct safe posture. A few unobtrusive gym machines blurred in the background. Energetic, friendly, realistic adult proportions.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: gym. Scene: Ana, same young adult woman in comfortable athletic clothes, training in a clean gym, holding a light dumbbell with correct safe posture. A few unobtrusive gym machines blurred in the background. Energetic, friendly, realistic adult proportions.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-sleep",
+      "target": "sleep",
+      "alt": "Ana dormindo tranquilamente na cama à noite.",
+      "scene": "Ana, same young adult woman, peacefully asleep on her side in bed at night, eyes closed, head resting on pillow, blanket covering her shoulders. Moonlit window and bedside lamp off, restful bedroom. No floating sleep symbols or typography.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: sleep. Scene: Ana, same young adult woman, peacefully asleep on her side in bed at night, eyes closed, head resting on pillow, blanket covering her shoulders. Moonlit window and bedside lamp off, restful bedroom. No floating sleep symbols or typography.",
+      "status": "generated"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "profile": "exercise-scene",
+  "generationTool": "built-in image_gen",
+  "basePrompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. ",
+  "reference": "../A101/assets/scene-tired-tom.webp",
+  "output": {
+    "background": "opaque full-bleed scene",
+    "format": "webp",
+    "width": 768,
+    "quality": 86
+  },
+  "scenes": [
+    {
+      "id": "scene-student",
+      "target": "a student",
+      "alt": "Leo estudando com livros e mochila na biblioteca.",
+      "scene": "Leo, a young adult man with dark curly hair and olive skin, studying in a bright college library with an open textbook, notebook and backpack. The books, active studying and campus setting make STUDENT instantly clear. No chalkboard or teaching pose.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: a student. Scene: Leo, a young adult man with dark curly hair and olive skin, studying in a bright college library with an open textbook, notebook and backpack. The books, active studying and campus setting make STUDENT instantly clear. No chalkboard or teaching pose.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-teacher",
+      "target": "a teacher",
+      "alt": "Professora dando aula em frente a um quadro sem texto.",
+      "scene": "An adult woman teaching beside an unlettered classroom chalkboard, holding chalk in one hand and a plain book in the other. A few blurred desks provide context. Clear TEACHER profession, not a student.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: a teacher. Scene: An adult woman teaching beside an unlettered classroom chalkboard, holding chalk in one hand and a plain book in the other. A few blurred desks provide context. Clear TEACHER profession, not a student.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-doctor",
+      "target": "a doctor",
+      "alt": "Médica com jaleco e estetoscópio atendendo em um consultório.",
+      "scene": "An adult woman doctor in a clean clinic examination room, wearing a white medical coat and a visible stethoscope, gently checking an adult patient’s heartbeat. Small simple clinical equipment in background. Respectful, approachable medical context.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: a doctor. Scene: An adult woman doctor in a clean clinic examination room, wearing a white medical coat and a visible stethoscope, gently checking an adult patient’s heartbeat. Small simple clinical equipment in background. Respectful, approachable medical context.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-cook",
+      "target": "a cook",
+      "alt": "Cozinheiro preparando legumes em uma frigideira na cozinha.",
+      "scene": "A young adult male cook in a simple professional kitchen, wearing a white chef jacket and apron, confidently cooking vegetables in a pan. Stainless counters and a few ingredients provide clear culinary context.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: a cook. Scene: A young adult male cook in a simple professional kitchen, wearing a white chef jacket and apron, confidently cooking vegetables in a pan. Stainless counters and a few ingredients provide clear culinary context.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-driver",
+      "target": "a driver",
+      "alt": "Motorista com cinto de segurança sentado ao volante de um carro estacionado.",
+      "scene": "An adult professional driver at the wheel of a car, safely parked before starting a trip. Both hands visible on steering wheel, seatbelt fastened, medium view through open side window with recognizable car interior and city street beyond.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: a driver. Scene: An adult professional driver at the wheel of a car, safely parked before starting a trip. Both hands visible on steering wheel, seatbelt fastened, medium view through open side window with recognizable car interior and city street beyond.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-engineer",
+      "target": "an engineer",
+      "alt": "Jun com capacete examinando um projeto em um canteiro de obras.",
+      "scene": "Jun, a young adult Korean man with short black hair and glasses, wearing a safety helmet and reflective vest at a construction site, examining a blank technical plan on a clipboard. Building beams softly blurred behind. Clear engineer context, no flags or text.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: an engineer. Scene: Jun, a young adult Korean man with short black hair and glasses, wearing a safety helmet and reflective vest at a construction site, examining a blank technical plan on a clipboard. Building beams softly blurred behind. Clear engineer context, no flags or text.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-parents",
+      "target": "These are my parents.",
+      "alt": "Os pais da Ana juntos na sala de casa.",
+      "scene": "Ana’s mother and father, two middle-aged adults with warm brown skin, standing closely together in a welcoming Brazilian living room, smiling naturally. Equal visual prominence, no third person. A family photograph feeling.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: These are my parents.. Scene: Ana’s mother and father, two middle-aged adults with warm brown skin, standing closely together in a welcoming Brazilian living room, smiling naturally. Equal visual prominence, no third person. A family photograph feeling.",
+      "status": "generated"
+    },
+    {
+      "id": "scene-jin-tom",
+      "target": "Jin is a doctor. Tom is a young cook.",
+      "alt": "Jin, médica, ao lado do amigo Tom, um jovem cozinheiro.",
+      "scene": "Two adult friends standing together in a café courtyard: Jin, a Korean adult woman in a white medical coat with stethoscope, and Tom, a young adult male cook with apron and chef jacket. Both friendly, full upper bodies visible. Exactly two people, clear distinct professional cues, no text or flags.",
+      "prompt": "Use case: illustration-story. Asset type: one square opaque full-bleed contextual illustration for adult beginner English exercises. The attached image is STYLE REFERENCE ONLY: preserve its polished soft 3D rendering, tactile matte materials, adult human proportions, warm restrained palette, soft lighting and environmental depth. Create a NEW scene and a NEW character as specified. Not a floating emoji, isolated icon or toy. Medium waist-up shot with expressive face and hands fully visible in inner 70% safe area; one clear main subject, uncluttered recognizable environment filling every edge. Instantly readable at 170px. No typography, letters, captions, numerals, logos, watermark, borders, transparency, white studio background, collage or multiple panels. Lesson target: Jin is a doctor. Tom is a young cook.. Scene: Two adult friends standing together in a café courtyard: Jin, a Korean adult woman in a white medical coat with stethoscope, and Tom, a young adult male cook with apron and chef jacket. Both friendly, full upper bodies visible. Exactly two people, clear distinct professional cues, no text or flags.",
+      "status": "generated"
+    }
+  ]
+}
