@@ -22,6 +22,345 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'CallSimulation',
+    interactive: true,
+    ownerPath: 'src/components/Simulation/CallSimulation.tsx',
+    runtimeMarker: 'lsui-sc-call-simulation',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Simulation/CallSimulation.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'callsimulation',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'InterviewSimulation',
+    interactive: true,
+    ownerPath: 'src/components/Simulation/InterviewSimulation.tsx',
+    runtimeMarker: 'lsui-sc-interview-simulation',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Simulation/InterviewSimulation.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'interviewsimulation',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'AudioSequenceControls',
+    interactive: true,
+    ownerPath: 'src/components/Simulation/AudioSequenceControls.tsx',
+    runtimeMarker: 'lsui-sc-audio-sequence-controls',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Simulation/AudioSequenceControls.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'audiosequencecontrols',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'GrammarTable',
+    interactive: true,
+    ownerPath: 'src/components/Grammar/GrammarTable.tsx',
+    runtimeMarker: 'lsui-sc-grammar-table',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Grammar/GrammarTable.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'grammartable',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'GapFillExercise',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/GapFillExercise.tsx',
+    runtimeMarker: 'lsui-sc-gap-fill-exercise',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/GapFillExercise.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'gapfillexercise',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'RolePlayExercise',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/RolePlayExercise.tsx',
+    runtimeMarker: 'lsui-sc-role-play-exercise',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/RolePlayExercise.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'roleplayexercise',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'SceneExplorer',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/SceneExplorer.tsx',
+    runtimeMarker: 'lsui-sc-scene-explorer',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/SceneExplorer.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'sceneexplorer',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'MinimalPairExercise',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/MinimalPairExercise.tsx',
+    runtimeMarker: 'lsui-sc-minimal-pair-exercise',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/MinimalPairExercise.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'minimalpairexercise',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'FluencyTimer',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/FluencyTimer.tsx',
+    runtimeMarker: 'lsui-sc-fluency-timer',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/FluencyTimer.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'fluencytimer',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'BranchingConversation',
+    interactive: true,
+    ownerPath: 'src/components/Simulation/BranchingConversation.tsx',
+    runtimeMarker: 'lsui-sc-branching-conversation',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Simulation/BranchingConversation.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'branchingconversation',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'VideoExercise',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/VideoExercise.tsx',
+    runtimeMarker: 'lsui-sc-video-exercise',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/VideoExercise.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'videoexercise',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'OralReview',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/OralReview.tsx',
+    runtimeMarker: 'lsui-sc-oral-review',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/OralReview.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'oralreview',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'OralReviewResult',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/OralReviewResult.tsx',
+    runtimeMarker: 'lsui-sc-oral-review-result',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/UXLab.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/OralReviewResult.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'oralreviewresult',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'ExercisePanel',
     interactive: false,
     ownerPath: 'src/components/Exercise/ExercisePanel.tsx',

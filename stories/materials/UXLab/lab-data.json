@@ -1,0 +1,905 @@
+{
+  "FR": [
+    ["apple", "an apple", "maçã", "crunchy, sweet, red"],
+    ["banana", "a banana", "banana", "soft, sweet, ripe"],
+    ["grapes", "grapes", "uvas", "juicy, seedless, bunch"],
+    ["strawberry", "a strawberry", "morango", "tart, fragrant, seedy"],
+    ["watermelon", "a watermelon", "melancia", "refreshing, watery, heavy"],
+    ["pineapple", "a pineapple", "abacaxi", "tangy, spiky, tropical"],
+    ["lemon", "a lemon", "limão-siciliano", "sour, zesty, acidic"],
+    ["cherries", "cherries", "cerejas", "glossy, sweet, stoned"]
+  ],
+  "ID": [
+    [
+      "plunger",
+      "a plunger",
+      "desentupidor",
+      "unblock the sink · plunge the toilet · a blocked drain",
+      "I had to unblock the sink with a plunger last night.",
+      "When did something last get blocked or break at home? What did you do?"
+    ],
+    [
+      "wrench",
+      "a spanner / a wrench",
+      "chave inglesa (spanner no Reino Unido, wrench nos EUA)",
+      "tighten a nut · loosen a bolt · an adjustable spanner",
+      "Can you pass me the spanner? This bolt won’t budge.",
+      "Are you the person who fixes things at home, or do you call someone?"
+    ],
+    [
+      "bolt",
+      "a nut and bolt",
+      "porca e parafuso",
+      "tighten · come loose · the nuts and bolts of something",
+      "One of the bolts had come loose, so the shelf collapsed.",
+      "Tell me about a piece of furniture you assembled yourself. How did it go?"
+    ],
+    [
+      "saw",
+      "a handsaw",
+      "serrote",
+      "saw through · saw off · a blunt saw",
+      "He sawed off the bottom of the door so it would close.",
+      "Have you ever done a DIY project? What would you never try yourself?"
+    ],
+    [
+      "clamp",
+      "a clamp",
+      "grampo",
+      "clamp it to the table · hold it in place · while the glue sets",
+      "Clamp the two pieces together until the glue sets.",
+      "Describe how you would fix a broken chair, step by step."
+    ],
+    [
+      "screwdriver",
+      "a Phillips screwdriver",
+      "chave Phillips (a de fenda é a flathead)",
+      "screw in · unscrew · strip a screw",
+      "You need a Phillips screwdriver for these screws, not a flathead.",
+      "What is the most annoying problem you have ever had in a house or flat?"
+    ]
+  ],
+  "V": {
+    "dur": 42,
+    "t": 0,
+    "playing": false,
+    "sp": 1,
+    "cc": true,
+    "timer": null,
+    "chap": [
+      [0, "Hi, where are you?"],
+      [12, "The problem"],
+      [28, "The plan"]
+    ],
+    "cap": [
+      [0, "Ana: Hey Kim! Where are you?"],
+      [5, "Kim: I’m so sorry, I’m still at the bus stop."],
+      [12, "Kim: The bus didn’t come. I’m waiting for twenty minutes!"],
+      [20, "Ana: Oh no. The movie starts at seven."],
+      [28, "Ana: Let’s take a taxi together."],
+      [34, "Kim: Good idea. Meet me at the corner?"],
+      [39, "Ana: OK, see you in five!"]
+    ]
+  },
+  "HS": [
+    {
+      "x": 26.6,
+      "y": 57,
+      "k": "h_bag",
+      "w": "bag",
+      "a1": "Where’s the bag?",
+      "a1a": "It’s on the chair.",
+      "c2": "The bag is still on the chair. Where is the owner now?",
+      "c2a": "She can’t have gone far, she’d never leave without her bag. She must be in the kitchen."
+    },
+    {
+      "x": 51.5,
+      "y": 92,
+      "k": "h_key",
+      "w": "keys",
+      "a1": "Where are the keys?",
+      "a1a": "They’re under the table.",
+      "c2": "How did the keys end up on the floor?",
+      "c2a": "They must have fallen when she put the bag down in a hurry."
+    },
+    {
+      "x": 46.9,
+      "y": 55,
+      "k": "phone",
+      "w": "phone",
+      "a1": "Where’s the phone?",
+      "a1a": "It’s on the table.",
+      "c2": "Why would someone leave their phone face up on the table?",
+      "c2a": "She might be waiting for an important call."
+    },
+    {
+      "x": 59.4,
+      "y": 57,
+      "k": "h_glasses",
+      "w": "glasses",
+      "a1": "Where are the glasses?",
+      "a1a": "They’re on the table, next to the phone.",
+      "c2": "Two pairs of things left out. Is this a tidy person? Argue both sides.",
+      "c2a": "It looks as if she was interrupted. On the other hand, everything has its place."
+    },
+    {
+      "x": 84.4,
+      "y": 55,
+      "k": "h_book",
+      "w": "book",
+      "a1": "Where’s the book?",
+      "a1a": "It’s on the sofa.",
+      "c2": "What was she doing before she had to leave?",
+      "c2a": "She must have been reading on the sofa when someone called."
+    },
+    {
+      "x": 18.8,
+      "y": 82,
+      "k": "h_umbrella",
+      "w": "umbrella",
+      "a1": "Where’s the umbrella?",
+      "a1a": "It’s next to the chair.",
+      "c2": "What does the umbrella tell you about her morning?",
+      "c2a": "It might have been raining when she got home."
+    }
+  ],
+  "SH": {
+    "a1": {
+      "lines": [
+        "Hi, I’m Ana.",
+        "I get up at seven every day.",
+        "I have coffee and a sandwich.",
+        "Then I go to work by bus.",
+        "I work from nine to five.",
+        "In the evening, I go to the gym."
+      ],
+      "stress": [[2], [1, 4], [2, 5], [1, 4, 6], [3, 5], [2, 6]],
+      "link": [[], [], [[0, 1]], [], [], [[3, 4]]],
+      "end": "Agora sem texto: a aluna fala o trecho inteiro, de memória. Depois toque tudo de novo para conferir."
+    },
+    "c2": {
+      "lines": [
+        "Hi Sam, it’s Kim, just following up on this morning’s meeting.",
+        "To be honest, I was kind of hoping we could put the launch off until next week.",
+        "The numbers aren’t quite where they need to be, and I’d rather not rush it.",
+        "That said, if it absolutely has to go out on Friday, I’ll make it work.",
+        "Have a think and let me know what you’d prefer."
+      ],
+      "stress": [
+        [1, 4, 8],
+        [2, 6, 12, 15],
+        [1, 3, 11],
+        [5, 10, 12],
+        [3, 6, 9]
+      ],
+      "link": [
+        [[5, 6]],
+        [
+          [11, 12],
+          [12, 13]
+        ],
+        [[2, 3]],
+        [[7, 8]],
+        [[1, 2]]
+      ],
+      "end": "Agora diga o mesmo recado para uma amiga: mesma ideia, outro registro. Ex.: “Hey, any chance we push the launch to next week? If not, fine, I’ll sort it.”"
+    }
+  },
+  "BR": {
+    "c2": {
+      "start": "n0",
+      "n": {
+        "n0": {
+          "them": "Hey! Any chance you could cover my 9am meeting tomorrow? Something’s come up.",
+          "r": [
+            ["Sure, no problem. What do I need to know?", "friendly", "n1"],
+            [
+              "I’d love to help, but I’m swamped tomorrow morning. Could we move it?",
+              "polite no",
+              "n2"
+            ],
+            ["No, I can’t.", "blunt", "n3"]
+          ]
+        },
+        "n1": {
+          "them": "You’re a lifesaver! It’s just the weekly update. I’ll send you my notes tonight.",
+          "r": [
+            ["Perfect, I’ll keep an eye out for them.", "warm", "e1"],
+            ["OK. Send them before 10, please.", "firm", "e2"],
+            ["Fine.", "cold", "e6"]
+          ]
+        },
+        "n2": {
+          "them": "Totally understand. Would 11 work if I ask the team?",
+          "r": [
+            ["11 works. Count me in.", "agree", "e3"],
+            ["I’m afraid not. Maybe ask Leo?", "polite no", "e4"],
+            ["Let me check and get back to you.", "vague", "e4"]
+          ]
+        },
+        "n3": {
+          "them": "Oh. OK…",
+          "r": [
+            [
+              "Sorry, that came out wrong. I just have a lot on tomorrow.",
+              "repair",
+              "e5"
+            ],
+            ["Yeah.", "cold", "e6"],
+            ["I mean, I really can’t, sorry!", "softer", "e5"]
+          ]
+        },
+        "e1": {
+          "end": "Relação ótima. \"keep an eye out for\" é natural aqui."
+        },
+        "e2": {
+          "end": "Funciona. Um pouco seco: \"before 10, if you can\" soa mais gentil."
+        },
+        "e3": {
+          "end": "Ótimo. Negociou e ajudou."
+        },
+        "e4": {
+          "end": "Educado e útil: sugeriu outra pessoa."
+        },
+        "e5": {
+          "end": "Boa recuperação. Explicar o motivo suaviza o \"no\"."
+        },
+        "e6": {
+          "end": "A conversa esfriou. Compare com a opção \"polite no\"."
+        }
+      }
+    },
+    "a1": {
+      "start": "n0",
+      "n": {
+        "n0": {
+          "them": "Hi! Are you free on Saturday?",
+          "r": [
+            ["Yes, I am!", "", "n1"],
+            ["Yes, I free.", "", "n4"],
+            ["Sorry, I’m busy on Saturday.", "", "n6"]
+          ]
+        },
+        "n4": {
+          "them": "Hmm? Sorry?",
+          "r": [
+            ["Yes, I’m free!", "", "n1"],
+            ["Yes, I is free.", "", "n4"],
+            ["Sorry, I’m busy.", "", "n6"]
+          ]
+        },
+        "n6": {
+          "them": "Oh no! What about Sunday?",
+          "r": [
+            ["Yes, Sunday is great!", "", "n1"],
+            ["Sunday good.", "", "n4"],
+            ["Sorry, I can’t on Sunday.", "", "e2"]
+          ]
+        },
+        "n1": {
+          "them": "Great! Let’s go to the movies. 7 or 9?",
+          "r": [
+            ["At seven, please.", "", "e1"],
+            ["In seven.", "", "n5"],
+            ["On nine.", "", "n5"]
+          ]
+        },
+        "n5": {
+          "them": "Hmm… Do you mean at seven or at nine?",
+          "r": [
+            ["At seven!", "", "e1"],
+            ["At nine!", "", "e3"],
+            ["In nine!", "", "n5"]
+          ]
+        },
+        "e1": {
+          "end": "Plano feito! Movies at seven."
+        },
+        "e2": {
+          "end": "Ficou para outro dia. Educado e claro."
+        },
+        "e3": {
+          "end": "Plano feito! Movies at nine."
+        }
+      }
+    }
+  },
+  "MP": [
+    [
+      ["ship", "ship", "/ʃɪp/"],
+      ["sheep", "sheep", "/ʃiːp/"],
+      "sheep: lábios esticados, som longo. ship: curto e relaxado, quase um \"ê\" rápido."
+    ],
+    [
+      ["pen", "pen", "/pen/"],
+      ["pan", "pan", "/pæn/"],
+      "pan: abra mais a boca, como entre \"é\" e \"á\". pen: boca menos aberta."
+    ],
+    [
+      ["cap", "cap", "/kæp/"],
+      ["cup", "cup", "/kʌp/"],
+      "cup: som curto e central, parecido com o \"â\" de \"cama\". cap: boca bem aberta."
+    ]
+  ],
+  "MPC": [
+    [
+      ["I didn’t <u>say</u> she took it.", "…but I implied it."],
+      ["I didn’t say <u>she</u> took it.", "…someone else did."],
+      "A palavra com ênfase é a que a pessoa quer corrigir ou contrastar."
+    ],
+    [
+      ["I’d <u>love</u> to come.", "Genuine: yes, I’m coming."],
+      ["I’d love to come…", "Polite: but I can’t."],
+      "Entonação que cai e para no meio sinaliza um “mas” não dito."
+    ]
+  ],
+  "FT": {
+    "a1": {
+      "times": [60, 45, 30],
+      "topic": "My weekend",
+      "sub": "Talk about what you do on Saturday and Sunday.",
+      "sup": ["I get up at…", "I like…", "On Sunday I…", "with my…"]
+    },
+    "c2": {
+      "times": [120, 90, 60],
+      "topic": "Should remote work be the default?",
+      "sub": "Same position, new audience each round.",
+      "sup": [],
+      "aud": [
+        "to a friend over coffee",
+        "to your manager",
+        "as a pitch to the board"
+      ]
+    }
+  },
+  "CALL": {
+    "a1": {
+      "place": "Bella Pizza",
+      "ini": "BP",
+      "key": "2",
+      "voice": 1,
+      "ivr": "Thank you for calling Bella Pizza. For delivery, press one. For table reservations, press two. For our opening hours, press three.",
+      "wrong": {
+        "1": "Delivery. Sorry, all our drivers are busy.",
+        "3": "We are open every day from six to eleven."
+      },
+      "lines": [
+        [
+          "Hello, Bella Pizza, this is Tony. How can I help you?",
+          "Hi! I’d like to book a table, please."
+        ],
+        ["Sure! What day?", "On Saturday, please."],
+        ["And what time?", "At eight, please."],
+        ["For how many people?", "For four people."],
+        ["Can I have your name, please?", "It’s Maria. M-A-R-I-A."],
+        ["And your phone number?", "It’s 9 8 7 6…"],
+        ["Perfect. See you on Saturday!", "Thank you. Bye!"]
+      ],
+      "sum": ["Dia", "Hora", "Número de pessoas", "Nome soletrado", "Telefone"],
+      "task": "Agora conte para a professora: What did you book?"
+    },
+    "c2": {
+      "place": "Fibrenet Support",
+      "ini": "F",
+      "key": "1",
+      "voice": 1,
+      "ivr": "Welcome to Fibrenet. To report a fault, press one. For billing, press two. To upgrade your plan, press three. For anything else, please stay on the line.",
+      "wrong": {
+        "2": "Billing. Your next bill is due on the fifteenth. Goodbye.",
+        "3": "Great news! Our new Ultra plan is only nine ninety-nine extra a month."
+      },
+      "lines": [
+        [
+          "Fibrenet fault line, you’re speaking to Dan. What seems to be the problem?",
+          "My connection has been dropping every evening for about a week."
+        ],
+        [
+          "I’ve run a check and there’s no fault on our end. Have you tried restarting the router?",
+          "I appreciate that, but I’ve restarted it several times and it makes no difference."
+        ],
+        [
+          "To be honest, these things are usually down to the customer’s own Wi-Fi setup.",
+          "With respect, it started the day after your maintenance work in my area."
+        ],
+        [
+          "I can book an engineer, but the earliest slot is in ten days.",
+          "That’s not really acceptable, I work from home. I’d like to escalate this, please."
+        ],
+        [
+          "Let me see what I can do… I could offer you ten percent off this month.",
+          "Given that it’s been a week, I’d expect a bit more than that."
+        ],
+        [
+          "OK. I can do twenty-five percent off and an engineer on Thursday. Does that work for you?",
+          "That works. Could you confirm that in writing, please?"
+        ]
+      ],
+      "sum": [
+        "Explicou o problema com clareza",
+        "Discordou sem aceitar a culpa",
+        "Pediu para escalar o caso",
+        "Conseguiu desconto e data do técnico",
+        "Pediu confirmação por escrito"
+      ],
+      "task": "Agora mude o tom: conte a ligação para uma amiga em três frases, com a sua opinião sobre a empresa."
+    }
+  },
+  "IVD": {
+    "a1": {
+      "job": "Receptionist · Bloom Hotel",
+      "cc": true,
+      "q": [
+        [
+          "Tell me a little about yourself.",
+          "Can you tell me more about your last job?"
+        ],
+        ["Why do you want to work here?", "Why a hotel?"],
+        ["What are your strengths?", "Can you give me an example?"],
+        [
+          "Tell me about a time you helped a customer.",
+          "What happened in the end?"
+        ],
+        ["Do you have any questions for us?", "Anything else?"]
+      ]
+    },
+    "c2": {
+      "job": "Senior Project Manager · Northway",
+      "cc": false,
+      "q": [
+        [
+          "Tell me about a time you disagreed with your manager.",
+          "But wasn’t that your fault?"
+        ],
+        [
+          "Describe a project that failed. What would you do differently?",
+          "That sounds rehearsed. What really happened?"
+        ],
+        [
+          "Why are you leaving your current role?",
+          "So you don’t get on with your team?"
+        ],
+        [
+          "What are your salary expectations?",
+          "That’s above our budget. Would you consider less?"
+        ],
+        [
+          "Why should we hire you over the other candidates?",
+          "Everyone says that. Why you specifically?"
+        ]
+      ]
+    }
+  },
+  "FV": {
+    "a1": {
+      "title": "My dog vs. the new robot vacuum",
+      "ch": "Canal do criador",
+      "dur": "0:48",
+      "qs": [
+        [
+          "hahaha what happened?? 😂",
+          ["First, the dog…", "Then…", "In the end…"]
+        ],
+        [
+          "what was the funniest part for you?",
+          ["The funniest part was when…"]
+        ],
+        [
+          "do you have a pet? does it do funny things?",
+          ["Yes, I have a…", "No, but my friend’s cat…"]
+        ]
+      ],
+      "end": "hahaha love it. send me something funny too 😂",
+      "task": "Contar o que aconteceu, em ordem (first, then, in the end)."
+    },
+    "c2": {
+      "title": "The world’s most awkward job interview",
+      "ch": "Canal do criador",
+      "dur": "3:12",
+      "qs": [
+        [
+          "ok but WHY is it so funny?? I can’t explain it 😂",
+          ["What makes it funny is…", "The irony is that…"]
+        ],
+        [
+          "the bit at the end… did you get the joke?",
+          ["It’s a play on words:…", "The timing is what sells it."]
+        ],
+        [
+          "has anything like that ever happened to you?",
+          ["It reminds me of the time…", "I once completely misread…"]
+        ]
+      ],
+      "end": "ok you explained that better than I could 😂",
+      "task": "Explicar por que é engraçado (ironia, timing, jogo de palavras) e contar uma história parecida."
+    }
+  },
+  "CMP": [
+    [
+      "review",
+      "Review",
+      "Abre a aula com perguntas numeradas sobre a aula anterior. A professora pergunta e a aluna responde falando.",
+      "a1-componentes",
+      1
+    ],
+    [
+      "multipla",
+      "Múltipla escolha",
+      "Imagem + 3 opções A, B e C. O erro explica por que está errado; o acerto toca o áudio da frase.",
+      "a1-componentes",
+      31
+    ],
+    [
+      "vocab",
+      "Vocabulário com áudio",
+      "Igual ao Fale o nome: só a imagem com ?. Passar o mouse mostra o balão e toca o áudio; tocar fixa a palavra. Ícones de dica (primeira letra) e de mostrar todas.",
+      "a1-componentes",
+      5
+    ],
+    [
+      "gramatica",
+      "Gramática",
+      "Explicação curta + tabela verde da afirmativa. Passar o mouse numa frase lê a frase.",
+      "a1-componentes",
+      2
+    ],
+    [
+      "check",
+      "Quick check",
+      "Frases com lacuna e botões para escolher a palavra certa, logo depois da gramática.",
+      "a1-componentes",
+      22
+    ],
+    [
+      "make",
+      "Make your own examples",
+      "Pronome + linha para a aluna criar a própria frase. O exemplo fica escondido até a professora abrir.",
+      "a1-componentes",
+      23
+    ],
+    [
+      "guided",
+      "Guided conversation",
+      "Diálogo com foto e nome: um personagem à esquerda em balão cinza, o outro à direita em rosa. Play e pausa logo depois do título toca a conversa inteira, ícone de som discreto em cada fala e tradução no toque.",
+      "a1-componentes",
+      7
+    ],
+    [
+      "comp",
+      "Comprehension questions",
+      "Perguntas sobre o diálogo, com a resposta revelável.",
+      "a1-componentes",
+      17
+    ],
+    [
+      "blanks",
+      "Fill in the blanks",
+      "O mesmo diálogo, uma lacuna por vez: o tracinho da lacuna atual fica rosa, as opções aparecem logo abaixo da fala e, ao acertar, passam para a próxima.",
+      "a1-componentes",
+      8
+    ],
+    [
+      "yourturn",
+      "Your turn",
+      "Modelo com lacunas para a aluna trocar pelas coisas da vida dela.",
+      "a1-componentes",
+      15
+    ],
+    [
+      "roleplay",
+      "Role play",
+      "Cena e situação nova para usar tudo da aula. A professora marca o passo a passo.",
+      "a1-componentes",
+      11
+    ],
+    [
+      "challenge",
+      "Challenge de casa",
+      "Roteiro do áudio que a aluna grava e manda para a professora.",
+      "a1-componentes",
+      123
+    ],
+    [
+      "oral",
+      "Oral review",
+      "Prova oral: perguntas easy, medium e challenge, com 1 a 3 estrelas por resposta.",
+      "oral-review",
+      3
+    ],
+    [
+      "oralres",
+      "Resultado da Oral review",
+      "Total, faixa de resultado, barras por parte e o PDF.",
+      "oral-review",
+      8
+    ],
+    [
+      "titulo",
+      "Título da lição na primeira página",
+      "O título da lição divide a primeira página com o vocabulário: nível e número da lição, o título ligado ao tema e o “Goal” com o objetivo em português. Em telas largas fica à esquerda das imagens; em telas estreitas, acima delas. Não há tela de capa separada.",
+      "a1-01",
+      1,
+      "Novo na A1.01"
+    ],
+    [
+      "dlgq",
+      "Diálogo com perguntas",
+      "O Guided conversation sem os botões de papéis (a professora decide na hora quem lê o quê) e com três perguntas de compreensão depois do texto, com a resposta revelável. Em telas largas as perguntas ficam ao lado do diálogo; em telas estreitas, embaixo.",
+      "a1-01",
+      3,
+      "Novo na A1.01"
+    ],
+    [
+      "tentar",
+      "Gramática com a resposta escondida",
+      "A tabela mostra só quem; o verbo e o exemplo de cada linha abrem no clique, depois que a aluna tenta dizer. A mesma ideia vale no Quick check e no Fill in the blanks: as opções só abrem em “Show options”.",
+      "a1-01",
+      4,
+      "Novo na A1.01"
+    ],
+    [
+      "chatplay",
+      "Role play em chat",
+      "O chat do Guided conversation com os balões da aluna abertos: as falas da outra pessoa vêm prontas, com áudio, e cada balão rosa traz só a deixa do que ela diz. A professora clica no balão quando ela fala. A lâmpada mostra o começo de cada frase. Swap roles põe a aluna para fazer as perguntas.",
+      "a1-01",
+      8,
+      "Novo na A1.01"
+    ],
+    [
+      "simnao",
+      "Áudio no WhatsApp com sim ou não",
+      "Variação do Áudio no WhatsApp para o começo do A1: as perguntas aparecem antes do play, cada uma numa linha com Yes e No. Depois das respostas, entra o botão “Listen again and check”. O cartão preto pede a resposta falada.",
+      "a1-01",
+      9,
+      "Novo na A1.01"
+    ],
+    [
+      "quem",
+      "Jogo de adivinhar",
+      "Seis cartões sem rosto, com nome, bandeira e carinha. A professora escolhe um em segredo; a aluna faz as duas perguntas dos balões pretos e descobre quem é. Cada país e cada estado aparecem duas vezes, então só as duas perguntas juntas resolvem. Clicar num cartão marca a pessoa como descoberta. Swap roles inverte os papéis e New group troca as seis pessoas.",
+      "a1-01",
+      10,
+      "Novo na A1.01"
+    ],
+    [
+      "certo",
+      "Right or wrong?",
+      "Lista de frases com os botões Right e Wrong. Cada frase tem um problema diferente e uma delas está certa. Ao acertar, a linha mostra a frase certa, o motivo em português e o áudio. A última linha, “One from today”, é para uma frase que a própria aluna errou na aula.",
+      "a1-01",
+      13,
+      "Novo na A1.01"
+    ],
+    [
+      "paresaula",
+      "Ouvi qual? como página de aula",
+      "O padrão 7 (Ouvi qual?) dentro da aula: dois cartões com imagem, palavra e símbolo do som, botão Listen, placar em bolinhas e os modos “You listen” e “You say”. Ao errar, aparece a dica de boca.",
+      "a1-01",
+      19,
+      "Novo na A1.01"
+    ],
+    [
+      "casa",
+      "Casa ligada à plataforma",
+      "Cartões que abrem um exercício do Langy Space em outra aba: flashcards, shadowing e quiz. A página não tem tarefa solta: tudo o que a aluna faz em casa está na plataforma.",
+      "a1-01",
+      14,
+      "Novo na A1.01"
+    ]
+  ],
+  "OR": {
+    "code": "A1",
+    "title": "Oral review 1",
+    "sub": "Revisão oral das Lessons 1 a 6",
+    "bands": [
+      "Pronta para seguir para a Lesson 7",
+      "Pode seguir, revisando as partes com menos estrelas",
+      "Revisar as Lessons 1 a 6 antes de seguir"
+    ],
+    "parts": [
+      {
+        "t": "Introduce yourself",
+        "les": "Lessons 1 e 2",
+        "img": "scene_desk",
+        "alt": "Recepção da academia: Kim diz o nome e soletra",
+        "tip": "I’m 25 ✓ / I have 25 years ✗",
+        "q": [
+          [
+            "What’s your name? How do you spell it?",
+            "My name’s Maria. M-A-R-I-A."
+          ],
+          ["Where are you from? How old are you?", "I’m from Recife. I’m 28."],
+          [
+            "What’s your phone number? (Repita o número com um erro.) Is that right?",
+            "It’s 9 8 7 6… No, it’s 6, not 5."
+          ]
+        ]
+      },
+      {
+        "t": "Introduce someone",
+        "les": "Lesson 3",
+        "img": "scene_photos",
+        "alt": "Ana e Kim olhando fotos da família",
+        "tip": "She’s a nurse ✓ / She’s nurse ✗",
+        "q": [
+          [
+            "Think of a person in your life. Who is he or she?",
+            "This is my sister. Her name’s Julia."
+          ],
+          [
+            "What does she or he do? Where is she or he from?",
+            "She’s a nurse. She’s from São Paulo."
+          ],
+          [
+            "Tell me about two people in your life: names, jobs and cities.",
+            "These are my parents. They’re from Recife. My father is a cook and my mother is a teacher."
+          ]
+        ]
+      },
+      {
+        "t": "Your routine",
+        "les": "Lesson 4",
+        "img": "n4_work",
+        "alt": "Kim trabalhando no computador",
+        "tip": "She works ✓ / She work ✗",
+        "q": [
+          ["What time do you get up?", "I get up at seven."],
+          [
+            "What do you do on Saturday?",
+            "On Saturday I go to the gym and I study."
+          ],
+          [
+            "Tell me about the day of a person in your family.",
+            "My mother gets up at six. She works from nine to five. She has lunch at one."
+          ]
+        ]
+      },
+      {
+        "t": "Make plans",
+        "les": "Lesson 5",
+        "img": "n5_invite",
+        "alt": "Ana convidando Kim para sair",
+        "tip": "I can swim ✓ / I can to swim ✗",
+        "q": [
+          [
+            "What do you like doing on the weekend? What don’t you like?",
+            "I like dancing. I don’t like cooking."
+          ],
+          [
+            "Can you swim? Can you cook? What can your best friend do?",
+            "Yes, I can. / No, I can’t. She can play the guitar."
+          ],
+          [
+            "I’m your friend. Invite me to do something and choose a day and a time.",
+            "Let’s go to the movies! Are you free on Saturday? At seven? Great, see you on Saturday!"
+          ]
+        ]
+      },
+      {
+        "t": "Where is it?",
+        "les": "Lesson 6",
+        "img": "scene_room",
+        "alt": "Uma sala com porta, cadeira, mesa, sofá e várias coisas",
+        "need": true,
+        "tip": "Where are my keys? ✓ / Where is my keys? ✗",
+        "q": [
+          [
+            "Look at the picture. Where’s the bag? Where are the keys?",
+            "It’s on the chair. They’re under the table."
+          ],
+          [
+            "What do you have in your bag today?",
+            "I have my phone, my keys and a wallet."
+          ],
+          [
+            "Where are your things now? Then ask me about one of my things.",
+            "My phone is on the table. My keys are in my bag. Where’s your phone?"
+          ]
+        ]
+      }
+    ]
+  },
+  "engine": {
+    "TXT": {
+      "D01.T1": "Who’s this?",
+      "D01.T2": "This is my brother, Leo. He’s a student.",
+      "D01.T3": "And who are they?",
+      "D01.T4": "These are my parents. They’re from Recife.",
+      "D01.T5": "Is your mother a teacher?",
+      "D01.T6": "No, she isn’t. She’s a nurse.",
+      "D01.T7": "Cool! And who’s he?",
+      "D01.T8": "That’s my friend Jun. He’s an engineer.",
+      "A01": "This is my sister.",
+      "A02": "These are my parents.",
+      "A03": "He’s a student.",
+      "A04": "She’s a nurse.",
+      "A05": "He’s an engineer. He’s from Korea.",
+      "G01": "No, she isn’t. She’s a nurse.",
+      "G02": "No, he isn’t. He’s her friend.",
+      "G03": "Yes, they are.",
+      "G04": "No, he isn’t. He’s a student.",
+      "C01": "This is my brother.",
+      "C02": "These are my friends.",
+      "C03": "He’s a student.",
+      "C04": "She’s an engineer.",
+      "C05": "They’re teachers.",
+      "V01": "mother",
+      "V02": "father",
+      "V03": "sister",
+      "V04": "brother",
+      "V05": "grandmother",
+      "V06": "grandfather",
+      "V07": "friend",
+      "V08": "coworker",
+      "V09": "classmate",
+      "V11": "a teacher",
+      "V12": "a student",
+      "V13": "a doctor",
+      "V14": "a nurse",
+      "V15": "an engineer",
+      "V16": "a cook",
+      "V17": "an office worker",
+      "V18": "a lawyer",
+      "D01": "Diálogo Ana e Kim"
+    },
+    "TB": [
+      ["this", "This is my brother.", "C01"],
+      ["these", "These are my friends.", "C02"],
+      ["he", "He’s a student.", "C03"],
+      ["she", "She’s an engineer.", "C04"],
+      ["they", "They’re teachers.", "C05"]
+    ],
+    "RP": {
+      "img": "scene_photos",
+      "alt": "Ana mostrando fotos da família e de um amigo para a Kim",
+      "txt": "Mostre fotos do seu celular para a professora (família, amigos, colegas). A professora pergunta sobre cada pessoa. Depois, troquem de papel.",
+      "ck": [
+        "Apresente uma pessoa: This is my…",
+        "Diga o nome dela: His / Her name is…",
+        "Diga a profissão: He’s / She’s a…",
+        "Apresente duas pessoas: These are my…",
+        "Responda à professora: Yes, he is. / No, she isn’t."
+      ],
+      "sup": [
+        "This is my…",
+        "These are my…",
+        "He’s / She’s a…",
+        "They’re from…",
+        "Who’s this?"
+      ]
+    },
+    "SCRIPT": [
+      "Hi! This is my ___.",
+      "His / Her name is ___.",
+      "He’s / She’s a ___.",
+      "He’s / She’s from ___.",
+      "These are my ___.",
+      "They’re ___."
+    ]
+  },
+  "a101Corrections": [
+    {
+      "s": "I from Brazil.",
+      "a": "I’m from Brazil.",
+      "why": "Faltou o verbo: I am = I’m."
+    },
+    {
+      "s": "How you are?",
+      "a": "How are you?",
+      "why": "Na pergunta, are vem antes de you."
+    },
+    {
+      "s": "I’m cold.",
+      "ok": true,
+      "why": "“Estou com frio” é só I’m cold."
+    },
+    {
+      "s": "Kim are tired.",
+      "a": "Kim is tired.",
+      "why": "Kim = she. Com she, o verbo é is."
+    },
+    {
+      "s": "She’s from the Korea.",
+      "a": "She’s from Korea.",
+      "why": "Dos países da aula, só the USA leva the."
+    }
+  ]
+}

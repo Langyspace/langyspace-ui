@@ -1,0 +1,2395 @@
+{
+  "purpose": "Aliases byte a byte para preservar todas as evidências no limite do corpo do PR. Originais e proporções mantidos.",
+  "aliases": [
+    {
+      "original": ".github/evidence/a101-fidelity/before-s1-1280.png",
+      "alias": ".github/e/0.png",
+      "sha256": "c834527374508ca262c3244390af7d0e1e34dadff44558a056072994603daceb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s1-1280.png",
+      "alias": ".github/e/1.png",
+      "sha256": "fd0da3dc0701faec082bb968c43fa58e6bfe748f04dedc296c3e4007aff7c04c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s21-1280.png",
+      "alias": ".github/e/2.png",
+      "sha256": "e913b5da04da396dd5c7d2a07694f04d7ef1de39d8acc27cd467ab16aaad090f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s21-1280.png",
+      "alias": ".github/e/3.png",
+      "sha256": "b6f7e36b20a87dcc2b20f559d45b9459464e393dd815840a818ad4e1aac734a6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s22-1280.png",
+      "alias": ".github/e/4.png",
+      "sha256": "b432eba59b050a67ae85b1db554fe62a47a3b9e2eb05e7e92cf8c5937d91b5ac"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s22-1280.png",
+      "alias": ".github/e/5.png",
+      "sha256": "c77a062dd8b09b227134ac4c1da27f30d0e981e42c66611337c0ed48965dad6c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s23-1280.png",
+      "alias": ".github/e/6.png",
+      "sha256": "b0662310458ac48240a7efa6dad4b257618ff7e723967b305c0b1caec542d526"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s23-1280.png",
+      "alias": ".github/e/7.png",
+      "sha256": "b0f87770f8996b248c9bcf4476227285e250e6814432b060dddcc7395090e2cb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s24-1280.png",
+      "alias": ".github/e/8.png",
+      "sha256": "79eff15bff0ad9f80b00b540d9181efac8765b5d655fe934457823f5b787b88a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s24-1280.png",
+      "alias": ".github/e/9.png",
+      "sha256": "d42a2e3f8d0595862bad84433d749f1c31c7c03835c4ce85c910ad8345874312"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s25-1280.png",
+      "alias": ".github/e/a.png",
+      "sha256": "86fa2030fb330b107b5a293c7841138c6f3f13fe2a569328a2ccf772f9f479d6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s25-1280.png",
+      "alias": ".github/e/b.png",
+      "sha256": "3ef5e450ae315194a17dae67f58e622ef727831f029bcaac6e45e82d11442883"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s26-1280.png",
+      "alias": ".github/e/c.png",
+      "sha256": "fdacce56eb0f30447dfe302b1a12eb59b95f17cce2f82be4e83a2f8bc7d07eaf"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s26-1280.png",
+      "alias": ".github/e/d.png",
+      "sha256": "929465079e77d951ff4b4cf740242dc654ad9327f1d408a9eb28707141ce4135"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s4-1280.png",
+      "alias": ".github/e/e.png",
+      "sha256": "4825fa86b34edf84fbeeb62ac1aac8979cafae5728e4d7c47e3c81fd6094e3b7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s4-1280.png",
+      "alias": ".github/e/f.png",
+      "sha256": "ebc80952616403ab4fd2d54acc8b3fb1d3dd6adff6d382424d0f0d075d3cd7a2"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s51-1280.png",
+      "alias": ".github/e/g.png",
+      "sha256": "88e106eccd7056c66a8eaa4bd8ea4822b3317864b13a7b184eb384e60903cb33"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s51-1280.png",
+      "alias": ".github/e/h.png",
+      "sha256": "48d4e44c8ec6d8f30d56df2e786dbcf488cc3ff1d96efe26dbd879a2936ea1bd"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s52-1280.png",
+      "alias": ".github/e/i.png",
+      "sha256": "9364ca86c63a86568d0656ed465c53e13847dc5c93397a6d7e1de56d6e3d72ec"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s52-1280.png",
+      "alias": ".github/e/j.png",
+      "sha256": "bf5000db90be73f30629bd9b1fa5d8992726787a1604757f3d931e8ba24bf1c9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s53-1280.png",
+      "alias": ".github/e/k.png",
+      "sha256": "27744af285b8cd434e85749559482d162dfe8d853ee9cd51b60058578d4baf1d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s53-1280.png",
+      "alias": ".github/e/l.png",
+      "sha256": "fef82a98cb07cb5387b63855d2b5ccc752accae101d4d512c0915d3bd30ab985"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s54-1280.png",
+      "alias": ".github/e/m.png",
+      "sha256": "96bba99813167b83758a9004546a61f48d9c7789669f7402575f8c10aa21e061"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s54-1280.png",
+      "alias": ".github/e/n.png",
+      "sha256": "2ca4187211f0c6650139260819a08b1ebce5fd544a24cb695039d079aa7c2461"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s55-1280.png",
+      "alias": ".github/e/o.png",
+      "sha256": "31eaf574110b11ca46eb9129c3e3b2409cb7841159ad4b701be7de7aab80f336"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s55-1280.png",
+      "alias": ".github/e/p.png",
+      "sha256": "ecf80c75db6eaa3bb4f35db2d0525db4843a035b9c0a4c406510eb2230424792"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s56-1280.png",
+      "alias": ".github/e/q.png",
+      "sha256": "f3429382c200de720853b4f7299e5a5464a258197b195e5c426aca29fb693caf"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s56-1280.png",
+      "alias": ".github/e/r.png",
+      "sha256": "4c93b81b68c505b8e22a2e9324c064bf8a1d3925d40d97cb0056abda5e654c82"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s6-1280.png",
+      "alias": ".github/e/s.png",
+      "sha256": "57381833fa69587a2b41db5d83203ee318e03fbb17ae56aca10c0f608e25a746"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s6-1280.png",
+      "alias": ".github/e/t.png",
+      "sha256": "c79b9f2fbd207e8c3f4b54545e29df93b35c0872484140d63e914795048e18f3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s14-1280.png",
+      "alias": ".github/e/u.png",
+      "sha256": "798327a393f830c8fcb0c510de0db101370dc78229d5879b35ff895a93454493"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s14-1280.png",
+      "alias": ".github/e/v.png",
+      "sha256": "ae70acdc0790e9a5ff40ba69647217d4e490b00b5fc406b7c77912cd41c40f41"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s71-1280.png",
+      "alias": ".github/e/w.png",
+      "sha256": "8fd5386da1b548ecba4b1d0dd9d9ee3724f10f3c6fb3682c263bb5206259073f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s71-1280.png",
+      "alias": ".github/e/x.png",
+      "sha256": "36f3440373c600fb3e19fbb6c90b86393a5f771b9b532b9cf998e915ded75e1d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s72-1280.png",
+      "alias": ".github/e/y.png",
+      "sha256": "6e03c966ce3483030c0995890c540916f9bcfd2a6f4e037c8c00e5c16ee59ec1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s72-1280.png",
+      "alias": ".github/e/z.png",
+      "sha256": "d7bb349af1f9cec4ffcbb566513601be4a25cb146dd36a66da0056ea222ac81f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s16-1280.png",
+      "alias": ".github/e/10.png",
+      "sha256": "2c2e3740385995d2a188a436aeaaa2742b2c68f73a7a94ba6203b165bc412618"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s16-1280.png",
+      "alias": ".github/e/11.png",
+      "sha256": "29cb55501bda19f8a8c1dbc3cb83afa5385ce6dbf3068277c8f4afcc38009c63"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s17-1280.png",
+      "alias": ".github/e/12.png",
+      "sha256": "25fa02ed2274fbd9064ded6712cedefffd67f71bd3ba7dd383df8693c10d03a7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s17-1280.png",
+      "alias": ".github/e/13.png",
+      "sha256": "f926935df6050c32da8039e6d13964b5b91de3ee5704d7ec5ebfa5ab9bffe907"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s8-1280.png",
+      "alias": ".github/e/14.png",
+      "sha256": "157ba6ca367b552a408f738b835baf39487a0bf51206ebf61594de5ea0e1c22b"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s8-1280.png",
+      "alias": ".github/e/15.png",
+      "sha256": "bd0d1fb56666e227a4e6341ff22ee403241cae93bd2402a84a9a67ca0ba9a63e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s9-1280.png",
+      "alias": ".github/e/16.png",
+      "sha256": "2829c9e366d93ba1a72ceb64e056be64a59c2b8858462c21d20a12b1e206067d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s9-1280.png",
+      "alias": ".github/e/17.png",
+      "sha256": "dc65562af38863c123e6dcfb2c8f635ab21814f0c0ea7f93a5f899c6e9b61703"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s10-1280.png",
+      "alias": ".github/e/18.png",
+      "sha256": "600344091c157acf3ddf75a79b557de231368ed4d24a8abc557d2990bfd0fb19"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s10-1280.png",
+      "alias": ".github/e/19.png",
+      "sha256": "59ff0f18630d3a1e6ea4ee31ed90e404e40aba6c1741f130bf98adaa32ab5979"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s18-1280.png",
+      "alias": ".github/e/1a.png",
+      "sha256": "f7b87d4e8ef2d7d7eb5a94d25581ccca884f6cbecb1e3ecdfffcfb76630ddaf0"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s18-1280.png",
+      "alias": ".github/e/1b.png",
+      "sha256": "4a45fce74e5815c3225eabff0961acf97b42d23a4e4f3c1e4e06da544fbf9abb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s15-1280.png",
+      "alias": ".github/e/1c.png",
+      "sha256": "9da6e7c8651fea77ee82db57dbc0890cb65b5265a457f7e2fea65dd3f2eaaaaf"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s15-1280.png",
+      "alias": ".github/e/1d.png",
+      "sha256": "22bafe17910909ce62e57510adf1751cf58f2d0b87c5111ec4a755d3cb40f3e1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s13-1280.png",
+      "alias": ".github/e/1e.png",
+      "sha256": "c8ed1e1a24c3b94872614db7b487446cf07d54b4f509503fc588bb3df8940cfe"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s13-1280.png",
+      "alias": ".github/e/1f.png",
+      "sha256": "d847532fc671ced1b96e4941702ee9d3373186658cd653fd781b3321b1d5621d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-vocabulary-revealed-1280.png",
+      "alias": ".github/e/1g.png",
+      "sha256": "d211477abd37535e6c9692a30e646ea91ab56a4b1a1573e2baaf00ef22c613d3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-vocabulary-revealed-1280.png",
+      "alias": ".github/e/1h.png",
+      "sha256": "4a5d129977c51ce26fd27af52deb4c356cf74a34381e9b95f903c83fbf2c7d2a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-warm-up-wrong-1280.png",
+      "alias": ".github/e/1i.png",
+      "sha256": "0c54945aeb978d26d22a4a82858f76b58b36bf0273f0e470c283e840068ac750"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-warm-up-wrong-1280.png",
+      "alias": ".github/e/1j.png",
+      "sha256": "d9dff023f19740ae3fe8f9f44767579d8796aace27bbb9281ff191a5287d4e17"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-warm-up-correct-1280.png",
+      "alias": ".github/e/1k.png",
+      "sha256": "67d46c864c71e2e11c3ae533f516ad0fac71540f7d1dbba014eda0ea1d5d6fce"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-warm-up-correct-1280.png",
+      "alias": ".github/e/1l.png",
+      "sha256": "46216054d1f5186577f7e09caf14a196241535edaff41f4cef52d52ac076596b"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-grammar-translation-1280.png",
+      "alias": ".github/e/1m.png",
+      "sha256": "cabcaeec44ee51836ae60e9be1671bfe6ff19ecfb1ad0e3fa2478ed914e4a955"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-grammar-translation-1280.png",
+      "alias": ".github/e/1n.png",
+      "sha256": "d83d1acc20d2f0a090b1d4848823bcfc100dcb65ba4d89d4427e419ac28f6860"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-matching-wrong-1280.png",
+      "alias": ".github/e/1o.png",
+      "sha256": "8a4f87b949643445aeaf283ed1397e4fa563574a13863b6af175e1668301362d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-matching-wrong-1280.png",
+      "alias": ".github/e/1p.png",
+      "sha256": "9ff5c068430db213e2da95c0043aab58d45dae2ebc9ded00c649317ff299c390"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-matching-correct-1280.png",
+      "alias": ".github/e/1q.png",
+      "sha256": "37af88c13175557f43308de7a3e9644b8540aa910cda4768485d1d5ce6a82d0e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-matching-correct-1280.png",
+      "alias": ".github/e/1r.png",
+      "sha256": "516e15b46aac328b6fb44274e79c9f29297e112c694d178389f7ded04f2d93a6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-listening-transcript-1280.png",
+      "alias": ".github/e/1s.png",
+      "sha256": "76f5ac2d55a0994a459b10b1d539f979ff6caca92c3644ea67207554d1308615"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-listening-transcript-1280.png",
+      "alias": ".github/e/1t.png",
+      "sha256": "52c4fc9a64e46766f3762d8fabc729963b2a301b0efd2441e64bde1ef95228a1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-private-notes-480.png",
+      "alias": ".github/e/1u.png",
+      "sha256": "7fc4dc34d32d5f101b3e95bea8a1e0476ff839fb34b7a261593f9c2fe8220404"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-private-notes-480.png",
+      "alias": ".github/e/1u.png",
+      "sha256": "7fc4dc34d32d5f101b3e95bea8a1e0476ff839fb34b7a261593f9c2fe8220404"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s1-390.png",
+      "alias": ".github/e/1v.png",
+      "sha256": "50a24fdd42092bae7d84e2aae51ca2e4fd14d95bb8956c1336aa554a28f6cd75"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s1-390.png",
+      "alias": ".github/e/1w.png",
+      "sha256": "62ec6fa46c95b12055f5f53453601eeb43406325852d4a8e4206bae8d4e3f0e6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s21-390.png",
+      "alias": ".github/e/1x.png",
+      "sha256": "f77ba0539c7d4b0974ce235a59f5dc4d4aeff446caeaef71d7e3b38dae6b7257"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s21-390.png",
+      "alias": ".github/e/1y.png",
+      "sha256": "a8431f6da5597e1cd1eebfd3c0720c2cbdac5388f48e9284605ee62da89533c4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s22-390.png",
+      "alias": ".github/e/1z.png",
+      "sha256": "cc85d9dc821eefcb3268a536f9fa7b7609ed13ab99aa7b22d42e9d898f0ceef4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s22-390.png",
+      "alias": ".github/e/20.png",
+      "sha256": "602da6c3dbe2863cb793bd8cdb7709432c5315b2effb2c4ed918868b06c2617c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s23-390.png",
+      "alias": ".github/e/21.png",
+      "sha256": "375a09812065c3ab460ba230f5d5512b3d67984e85754d0ab4bfcf26456e3761"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s23-390.png",
+      "alias": ".github/e/22.png",
+      "sha256": "d178ff6644d459732ee5da8f657641af7a70be80429b7a1d2328eaf99bf8a490"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s24-390.png",
+      "alias": ".github/e/23.png",
+      "sha256": "068a445425a61d25be532d3b7c99b47203b57afa649a5952072bfe13ee63e315"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s24-390.png",
+      "alias": ".github/e/24.png",
+      "sha256": "4f61bfad7edeccf4ffc48453a26e6b4b81ac2a12449f226d7b2e33562496050a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s25-390.png",
+      "alias": ".github/e/25.png",
+      "sha256": "5754be560e5a19a7959e0a5045173a2d2c2d8d783c4bf3ba15d973a060402bb3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s25-390.png",
+      "alias": ".github/e/26.png",
+      "sha256": "9b79db33d0e3030716283e1549a2c8607c5110978d3243245647ca5d743e4012"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s26-390.png",
+      "alias": ".github/e/27.png",
+      "sha256": "d9bca330fe34758f009fc7a33fac7782de91b61df038227ebe5a178f2822341c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s26-390.png",
+      "alias": ".github/e/28.png",
+      "sha256": "ed43826d6dfd4bf2286d65935ef1f5d88f8d1c7eb87630bae9a7abce8e74bc61"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s4-390.png",
+      "alias": ".github/e/29.png",
+      "sha256": "554dfed04807bda05d82d322899892612ba02655fe8cd9436d7b75a15b88d649"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s4-390.png",
+      "alias": ".github/e/2a.png",
+      "sha256": "9beab94ff13821e63bc78e36c244780b6425e665c401280878c4aa2fd15e1d8d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s51-390.png",
+      "alias": ".github/e/2b.png",
+      "sha256": "0e9781b87418afbab6129b8258ee89899df0701fa090bf839bcd6beebebca6b1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s51-390.png",
+      "alias": ".github/e/2c.png",
+      "sha256": "90e24bb6a5e4d70399bca9d926b2261c9e1159c57241b25f2c495224da7a0a9f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s52-390.png",
+      "alias": ".github/e/2d.png",
+      "sha256": "a66ad42755cdbbf05dba5e1a7eccf6660a40cb2e8774ebdb27f68ff6973cad0a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s52-390.png",
+      "alias": ".github/e/2e.png",
+      "sha256": "2eb0c3193230341689700c37f3cfb996fb971bdc27d8919148b2569c203e52a4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s53-390.png",
+      "alias": ".github/e/2f.png",
+      "sha256": "8d6eb14112cf49eca7396269c387b327b7208db7f3a49298646778ee840f9727"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s53-390.png",
+      "alias": ".github/e/2g.png",
+      "sha256": "5625ef7f2e46342a6f0aafead6cb2db2ba2a75d36f0888f883f1b8c7f50b4323"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s54-390.png",
+      "alias": ".github/e/2h.png",
+      "sha256": "ee253ff83c98e370c543cf01ca9cf7f932e5faa0c329e5bed0a77d1f0d775d1e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s54-390.png",
+      "alias": ".github/e/2i.png",
+      "sha256": "c8ab01ef0383d3bf7ef33ee1ce5055e5ddb6aa6c75f32aaed074367eb01e4335"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s55-390.png",
+      "alias": ".github/e/2j.png",
+      "sha256": "16cfeb78774e120eb2db8b8a1989c829d2f8ded26bd7fac7d1f9063ab841f52b"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s55-390.png",
+      "alias": ".github/e/2k.png",
+      "sha256": "f5da46948582e28bc0b819bb29ed09c4229064cf2fe8029f4b0b8666e82ca72e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s56-390.png",
+      "alias": ".github/e/2l.png",
+      "sha256": "bddd5b9fa6ae0bc7ab8d5a69af2ae473874218deae5a179207909fcfe092f288"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s56-390.png",
+      "alias": ".github/e/2m.png",
+      "sha256": "faa7e08f345236cb91308ddcd52804fdc5b8cc570b8735167cd5fb31a7d9fbc8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s6-390.png",
+      "alias": ".github/e/2n.png",
+      "sha256": "3773b3c745b95a77ef4526bda2bc4171e5d2351377ea984cd7b7a0e1e2b023cd"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s6-390.png",
+      "alias": ".github/e/2o.png",
+      "sha256": "8e327e5ec841e5b0bbcabead9db1f95b2910324bea1651eae498b26c14fd0cf9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s14-390.png",
+      "alias": ".github/e/2p.png",
+      "sha256": "605996574a5a4a49f17a7b936c72db53f86420f33afbfcecfc975d036f7fc431"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s14-390.png",
+      "alias": ".github/e/2q.png",
+      "sha256": "abb5e0e15307294ed5b47e4f7ff1a7ad663d43e7e1f325c2e8452a25726f6bfe"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s71-390.png",
+      "alias": ".github/e/2r.png",
+      "sha256": "f6e67222ea59ad60f1194af64d537b5766bf80b4a9ec7ce01a2b960201f8fecd"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s71-390.png",
+      "alias": ".github/e/2s.png",
+      "sha256": "4b762f0808c4a81687627cb5da9fdb8d02e48b29ea9fd49deb299feb89011617"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s71-end-390.png",
+      "alias": ".github/e/2r.png",
+      "sha256": "f6e67222ea59ad60f1194af64d537b5766bf80b4a9ec7ce01a2b960201f8fecd"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s71-end-390.png",
+      "alias": ".github/e/2s.png",
+      "sha256": "4b762f0808c4a81687627cb5da9fdb8d02e48b29ea9fd49deb299feb89011617"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s72-390.png",
+      "alias": ".github/e/2t.png",
+      "sha256": "7750c6af3c8bdc6cc7389445d9434d56ee124ed84228e0bc63a674204c58960c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s72-390.png",
+      "alias": ".github/e/2u.png",
+      "sha256": "0bad8fc4c59c4fb1e961b7e28f6517448161d97a135dcd923a92b42ac7e75fb5"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s16-390.png",
+      "alias": ".github/e/2v.png",
+      "sha256": "06a7e61abd4d78b4dcd5504f55c2c775f58cf244bcb0056777bfbc139aa5b4b8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s16-390.png",
+      "alias": ".github/e/2w.png",
+      "sha256": "402891681afed863cdb0d108115353e322ac9fb0c37c6bf5d386be93f6001c9a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s16-end-390.png",
+      "alias": ".github/e/2x.png",
+      "sha256": "61050f80e7cac77ebbd14c58137a0a343c2225929a4e609260a35f7afb9c16ed"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s16-end-390.png",
+      "alias": ".github/e/2y.png",
+      "sha256": "3147984b219841a5e227511653ca85cb51021c67d18b474068beae99f76f7515"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s17-390.png",
+      "alias": ".github/e/2z.png",
+      "sha256": "8d3a76fff062382f55c4ad21e7f97a76f78b8ef7f20fafda5df2d2cdd4427b43"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s17-390.png",
+      "alias": ".github/e/30.png",
+      "sha256": "a610f328c47612e117fcd981df0103509912428fe94b93758105cd36917922cb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s17-end-390.png",
+      "alias": ".github/e/2z.png",
+      "sha256": "8d3a76fff062382f55c4ad21e7f97a76f78b8ef7f20fafda5df2d2cdd4427b43"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s17-end-390.png",
+      "alias": ".github/e/31.png",
+      "sha256": "614234174c10b05558fcd1af1a0358b78a6b92b79aac29e683a788205f1cd4d7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s8-390.png",
+      "alias": ".github/e/32.png",
+      "sha256": "ab7efe61e90bb895eabb773cb2ac8565bf0413f32448eac04bec9865505891dc"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s8-390.png",
+      "alias": ".github/e/33.png",
+      "sha256": "1f86eed61f71a6eba6abe5fec2fa9a08475f517e5b5496dc20bf716a548b9e5f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s9-390.png",
+      "alias": ".github/e/34.png",
+      "sha256": "e68a681c0b81c6fdd30fee5695ba328411254040c25a1cc3d866009dcc3b707d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s9-390.png",
+      "alias": ".github/e/35.png",
+      "sha256": "8fc5f86ebde77fde7f9666430b9ce8ac25a24a87efe43a937bcc2735074074d8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s9-end-390.png",
+      "alias": ".github/e/36.png",
+      "sha256": "d0d851892256ba8500057ed88c6f9942f45ef16871b737644b9ee2b342164370"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s9-end-390.png",
+      "alias": ".github/e/37.png",
+      "sha256": "e78772e46367b6a079f746504393ec02d6e50715b6a80109ff7b2c81bc9ecbfb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s10-390.png",
+      "alias": ".github/e/38.png",
+      "sha256": "913972e4adbd14920f7f4c5d7bc7f05c110962f1a8a43682f526e8f7fb7ac75f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s10-390.png",
+      "alias": ".github/e/39.png",
+      "sha256": "a181d0481f33f2a8bd11645579a550af2aa0e6a033e5bd46512d3a8d83efc44c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s10-end-390.png",
+      "alias": ".github/e/3a.png",
+      "sha256": "a49f40879848ab46dfd9ec1c4d01485096a89062312f683579f7cc24bff0bc8f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s10-end-390.png",
+      "alias": ".github/e/3b.png",
+      "sha256": "27f4a59b3166d30f6efe395ecc2549faac93536f4d16c7119836d8fcf7e38d3c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s18-390.png",
+      "alias": ".github/e/3c.png",
+      "sha256": "3e04e39295f58b46c61c70103b30ac89edc415659521f5d6cf92e4c9d075dd45"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s18-390.png",
+      "alias": ".github/e/3d.png",
+      "sha256": "8797e1fa12fa6bf92600523ec1dbab192ad8f8b98532ff2cc45b0f226f6c719c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s15-390.png",
+      "alias": ".github/e/3e.png",
+      "sha256": "0d922dd9fef577d44fcaaa10a913cb547f1f9c229f23381fc17a7604841b9772"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s15-390.png",
+      "alias": ".github/e/3f.png",
+      "sha256": "3fba35a333d2c85054e50ef11ca8c0b6b88bcb4a841138382134dd9521b9822b"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s15-end-390.png",
+      "alias": ".github/e/3g.png",
+      "sha256": "656a047a46e143a24b252778b3e65033f51f66669950b2234cf5296e9992d01c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s15-end-390.png",
+      "alias": ".github/e/3h.png",
+      "sha256": "86ce897260541e34623c88f1a6df7820f4b11f448a7834ada8a348c13fcede24"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-s13-390.png",
+      "alias": ".github/e/3i.png",
+      "sha256": "235731ceca02d94164549e8e59c4a004b550516d25ed427e42077c0216a8df6c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s13-390.png",
+      "alias": ".github/e/3j.png",
+      "sha256": "9b326844fc8e12a504f5f38fca5d7a65e074bfd58e55c5fecca7ede750497502"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-vocabulary-revealed-390.png",
+      "alias": ".github/e/3k.png",
+      "sha256": "114c092e9ae5f95abd763450173d1ae36f8ceeb9e0399ca03e96f81b8453c8bb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-vocabulary-revealed-390.png",
+      "alias": ".github/e/3l.png",
+      "sha256": "db6664e10ef6154a60e0264d97d8fd5edd3e2e088cd7ec884f8e380226d43c06"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-warm-up-wrong-390.png",
+      "alias": ".github/e/3m.png",
+      "sha256": "8785a10059274f79f8af1ffdb7e2ac9ced3457ec337a8b5f189cbca256355610"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-warm-up-wrong-390.png",
+      "alias": ".github/e/3n.png",
+      "sha256": "fde8db6d02d9797882d12c478c6763de288d49872a88d0c1e87584afad73876f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-warm-up-correct-390.png",
+      "alias": ".github/e/3o.png",
+      "sha256": "1e5aa61adf915b38bd5b3fd9ea55b078a330410674e658233ca05392c7c1bf64"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-warm-up-correct-390.png",
+      "alias": ".github/e/3p.png",
+      "sha256": "814956dd93d4e373ba34423d0ecba227861179feb2fec20ca47a08a160e79c8c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-grammar-translation-390.png",
+      "alias": ".github/e/3q.png",
+      "sha256": "2ce5627a048787b5733c6e1aecef3c2be576b9d96619abe3a85a3aa649883c83"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-grammar-translation-390.png",
+      "alias": ".github/e/3r.png",
+      "sha256": "1883e7773e446a1b41e5e745bb426848f437b22141d030044b8f4e6dabd28d8d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-matching-wrong-390.png",
+      "alias": ".github/e/3s.png",
+      "sha256": "5ade2dfdb3922dec715c8a6c5e707cf58d515d8a523b1c694171ba58716bf292"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-matching-wrong-390.png",
+      "alias": ".github/e/3t.png",
+      "sha256": "a0afa906a2e86602ed331c98660837888aff67290eb95c30e135298b9a5645c4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-matching-correct-390.png",
+      "alias": ".github/e/3u.png",
+      "sha256": "55e0fb2aa9d0355003657a68af79f41f8228bcf9cae71a6b6ef912170f5cb5e7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-matching-correct-390.png",
+      "alias": ".github/e/3v.png",
+      "sha256": "145ae1a1aaaf7d25aae275313fd2c11e42d9946f09aa8a6a6c3183301fa4ba71"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-listening-transcript-390.png",
+      "alias": ".github/e/3w.png",
+      "sha256": "257a6a84eefb0025cb42150f949d7ba7ccbdba321e4f1170efb583c0cad67218"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-listening-transcript-390.png",
+      "alias": ".github/e/3x.png",
+      "sha256": "42b41df4cdbde4a6e88f771ac38cf49072afed9f9161fd246a7191e9a3b80b94"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-listening-transcript-end-390.png",
+      "alias": ".github/e/3y.png",
+      "sha256": "8886d5717294c2ae20462f1ec327779f0381ddd07bfe842b3d2efce0c98765ee"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-listening-transcript-end-390.png",
+      "alias": ".github/e/3z.png",
+      "sha256": "00be8c1ff2a1626d22814791c5d5f42c55f9dd08da930435d10790c075ead559"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--default-1280.png",
+      "alias": ".github/e/40.png",
+      "sha256": "a5c5bffb67f2f5d09a4801003c0c7c5985b3804eb57eb36c50697d4e83c019e0"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--default-1280.png",
+      "alias": ".github/e/41.png",
+      "sha256": "6c060c6078ba8109c0f764b59372cf5f08da3c12b7ed47c881454514cd5458fb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--default-390.png",
+      "alias": ".github/e/42.png",
+      "sha256": "5e5b85da5feae826cf530db713d2acff648137047a1d07831bd0cab6789e5be8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--default-390.png",
+      "alias": ".github/e/43.png",
+      "sha256": "70b2a4f99ec5983bd079507f301846d59b0c33172b99ba88ae2cb50573bcfa38"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--warm-up-1280.png",
+      "alias": ".github/e/44.png",
+      "sha256": "097c386cbefbcf6263cf2bfcd26812c0158820728080033278051588450c48a6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--warm-up-1280.png",
+      "alias": ".github/e/45.png",
+      "sha256": "65785424f4f30cbb76254bbd0d226b9a63af759d14acd093c42fd71afa217650"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--warm-up-390.png",
+      "alias": ".github/e/46.png",
+      "sha256": "8727f14d85e90b3cbe049848d26e8d0698be8ffb691bee15c0c25d51abfb9993"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--warm-up-390.png",
+      "alias": ".github/e/47.png",
+      "sha256": "34fac1c35fa66fa64a8cd303d50d8e03068c5756a891adf745a27f3666116383"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--long-content-1280.png",
+      "alias": ".github/e/48.png",
+      "sha256": "e6ff3afdabe382a2f92f7c36dcdd8b132d8ee2b79b53eed68d76c6ebc352d663"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--long-content-1280.png",
+      "alias": ".github/e/49.png",
+      "sha256": "59d30f1aab9bf1bc4c18a4642cdb8dc1e3366642b48aef8d86cb51b7755097a2"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--long-content-390.png",
+      "alias": ".github/e/4a.png",
+      "sha256": "1be8df96245cfd6b5701733cbd3236192830ad80170260beecb060859deba88d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--long-content-390.png",
+      "alias": ".github/e/4b.png",
+      "sha256": "635c2063a1dd888f56c351994faff16552da006b494bdd9440d809f660c30d9f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--narrow-1280.png",
+      "alias": ".github/e/4c.png",
+      "sha256": "c0827b5e81dfc54dbade22c6922d85e6027db0156c97f226b3fe26990744c94f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--narrow-1280.png",
+      "alias": ".github/e/4d.png",
+      "sha256": "734c5090ccc0898c58cdae90a50ae9a35ebdb299f9d9fa1ea476fd8cdd9f22ae"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--narrow-390.png",
+      "alias": ".github/e/4e.png",
+      "sha256": "411d52fc1726179f4f166b08e41e008c9bb8ec8456a772273d8df76234ade858"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--narrow-390.png",
+      "alias": ".github/e/4f.png",
+      "sha256": "1eec4d52de31a011891ddbc52c01315bbdc675b9df14d7f696ff7fa51d42caa4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--empty-1280.png",
+      "alias": ".github/e/4g.png",
+      "sha256": "6dc8ef0d2aa5df34b1ecdd0d2afe98a869034bb0c08a7331f851d7b3ff165a0a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--empty-1280.png",
+      "alias": ".github/e/4h.png",
+      "sha256": "3ebe51e4fe8e62ee2d83470102a48da9e643dc6822007858f47618fd1a51787f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--empty-390.png",
+      "alias": ".github/e/4i.png",
+      "sha256": "bd266ff535ef35b5308848372cf032cdefc86d06d2fc094cadda3d129502a0f8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--empty-390.png",
+      "alias": ".github/e/4j.png",
+      "sha256": "70bbddcb8c20ce454f8e151f2b74526eccff21f6eabffe0088f3af5c4a565051"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--single-page-1280.png",
+      "alias": ".github/e/4k.png",
+      "sha256": "f1d941735a4efa7d887151ecd1a88e09b7b6eb09c00989e26a6902f70b345dcb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--single-page-1280.png",
+      "alias": ".github/e/4l.png",
+      "sha256": "f4a73872406f125da4c67690d399c865f627ed59ff78f8ac707796364534b4ee"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--single-page-390.png",
+      "alias": ".github/e/4m.png",
+      "sha256": "40386dd24524459ae40ca90f6207792360e0f1282625cedb27be95fef81d5c39"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--single-page-390.png",
+      "alias": ".github/e/4n.png",
+      "sha256": "ee512ef782e7aea29020ecf605f5e87f227a153c49e465e4afce58056a892260"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--controlled-1280.png",
+      "alias": ".github/e/4o.png",
+      "sha256": "e209a4f2aa753fa56a9e39f11d90cf8069c590c9d27cfca41ff3771cf74279a8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--controlled-1280.png",
+      "alias": ".github/e/4p.png",
+      "sha256": "92427673e9715b0ace24e247785a0e8290a83026381d845d662d939b25d4dceb"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidedeck--controlled-390.png",
+      "alias": ".github/e/4q.png",
+      "sha256": "cf18120646cb03d763db304764a2d75eefda46fe1d51246d30bb72fc33d9ef18"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidedeck--controlled-390.png",
+      "alias": ".github/e/4r.png",
+      "sha256": "4d29a4099564ca554a19e5e01fade27df2fed96e64af3e58a886eeb5cdcaf8c7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--default-1280.png",
+      "alias": ".github/e/4s.png",
+      "sha256": "48ff1ab5a01b511fe652e624a8d131a7e7913245d28611ddb84655d02135cc7e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--default-1280.png",
+      "alias": ".github/e/4t.png",
+      "sha256": "f082bb5f887b4eef0737a4dabfa4a43c207af8cbca5b7d2c0e9d32085e870f44"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--default-390.png",
+      "alias": ".github/e/4u.png",
+      "sha256": "6cad05720129be40a73311f2258cc33406b182b9e24cc91e4247cce0a084b7f3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--default-390.png",
+      "alias": ".github/e/4v.png",
+      "sha256": "1873751d06b36880215ba8d60ab7f78321abf411df2e5c32c5cfb4d33259acdd"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--focused-1280.png",
+      "alias": ".github/e/4w.png",
+      "sha256": "9926e4521e4604584bd3d4f852b397fe0c763d614854d4e269dc397428e307fa"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--focused-1280.png",
+      "alias": ".github/e/4x.png",
+      "sha256": "4776c0590e6b6a521f6cdba79cc7a89666033a98607449bb4f10ae43b3757aee"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--focused-390.png",
+      "alias": ".github/e/4u.png",
+      "sha256": "6cad05720129be40a73311f2258cc33406b182b9e24cc91e4247cce0a084b7f3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--focused-390.png",
+      "alias": ".github/e/4y.png",
+      "sha256": "78acb4115b90a3d864784fdd8019aad8de7f314dfe320b8a3e2ced3b259c8703"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--inverse-1280.png",
+      "alias": ".github/e/4z.png",
+      "sha256": "3abb42d2c65800a38696eea72b62dc2a0c4afd05b49d7929887b79a083adc745"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--inverse-1280.png",
+      "alias": ".github/e/50.png",
+      "sha256": "8110cd84f1832cd6f15d4ba54194faa996fc31bf83a7ce1a8caee3969842b365"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--inverse-390.png",
+      "alias": ".github/e/51.png",
+      "sha256": "8228792912ac2c46e8ac6d8e234b93b72d18a61429cd625208ca0763979b7a09"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--inverse-390.png",
+      "alias": ".github/e/52.png",
+      "sha256": "4f1e4982232e43465aa2ecf0003a862375c794cbc35cbb6ee637f9f97b2e1a77"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--long-heading-1280.png",
+      "alias": ".github/e/53.png",
+      "sha256": "2950c872975d0468a3246acfe89de09063fc1899a4103eea79d87a8f9f848b88"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--long-heading-1280.png",
+      "alias": ".github/e/54.png",
+      "sha256": "0b0d0212a668d043d3cc6ed0f02d434ea19a6e2f0c7c1cfe371ab7a27cd9b1aa"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--long-heading-390.png",
+      "alias": ".github/e/55.png",
+      "sha256": "9eac0917017fbe45c0a4860e6cfa39a37a199fc0d248fcba4fd2962b3e4bf49f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--long-heading-390.png",
+      "alias": ".github/e/56.png",
+      "sha256": "61fb85cb47bfe57195a301bee6fe0ef6cec508c160e650a5d2e2a408f48b5be1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--theme-override-1280.png",
+      "alias": ".github/e/57.png",
+      "sha256": "6b1db515cc3b718bfd6e6093f876df09e42705233f19b4333121b282473b9941"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--theme-override-1280.png",
+      "alias": ".github/e/58.png",
+      "sha256": "5d9a69484a1bfba71bab309b4429fd1811c62111cdf8b9f5f74c404925579b9d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-slide-slidepage--theme-override-390.png",
+      "alias": ".github/e/59.png",
+      "sha256": "664037265f32a2cfa97171436c8c71e2e04fa84093da1dd2f0ed0c9897c68395"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--theme-override-390.png",
+      "alias": ".github/e/5a.png",
+      "sha256": "9fdb18729ca5843c135c675bada3d0e2e0a9ab04c2a4519c92797ba23381a1ba"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--default-1280.png",
+      "alias": ".github/e/5b.png",
+      "sha256": "a02575af8d1cb7ced118e1aad2bfdffd7ae19e5883d0421eea2dfbca3d3b3c40"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--default-1280.png",
+      "alias": ".github/e/5c.png",
+      "sha256": "95e8042b369644da268bd3a7f191a97d9e4f0c8eb596b4809923e943868639e9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--default-390.png",
+      "alias": ".github/e/5d.png",
+      "sha256": "e2b14c40de9fb0f1c2bd2cff848c7dbb617a770bd199d55765489f29d7041ff2"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--default-390.png",
+      "alias": ".github/e/5e.png",
+      "sha256": "e46d49cdb882c293a22c0b009e6ac548cb4a87800eab99cf373cfe44acf1a863"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--dark-1280.png",
+      "alias": ".github/e/5f.png",
+      "sha256": "94ce4fa945118aa4ad437aed495246b2f56aac195f9c6e0896fb3239f8208170"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--dark-1280.png",
+      "alias": ".github/e/5g.png",
+      "sha256": "e762d9bff545c41522fe384a0188de697f51267ec0fcf03da2aa9b0ec0115693"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--dark-390.png",
+      "alias": ".github/e/5h.png",
+      "sha256": "9cd36c4385341f6e3185f3f8133ce292ed3af4b9b98cab9e820bd559b8dda126"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--dark-390.png",
+      "alias": ".github/e/5i.png",
+      "sha256": "655c5c51e4caa6a2f279eac3457a6026a554d4dcd0beae6a9ae9e8eb73947f11"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--narrow-long-content-1280.png",
+      "alias": ".github/e/5j.png",
+      "sha256": "3bcb361eb87cf1d502aa420372b8b827637cddf35fe0f1ceffbc6f53a1a0f4ee"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--narrow-long-content-1280.png",
+      "alias": ".github/e/5k.png",
+      "sha256": "3941eaab90d86d0bbacbbb94d6a8ed496668ac0dfaf8aa2184e28bfb7cdfef1a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--narrow-long-content-390.png",
+      "alias": ".github/e/5l.png",
+      "sha256": "6a30568ca347c372ef80b2ce524a47f3c8ddd439ad960af398133db661544927"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--narrow-long-content-390.png",
+      "alias": ".github/e/5m.png",
+      "sha256": "7e690e362acb616a97f9426766c5c212327da59b54b3f4a5598678b139ae3510"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--contextual-scenes-1280.png",
+      "alias": ".github/e/5n.png",
+      "sha256": "04832a6b4220fe552c33b5ee739efdf2074adfc7a109ac0f05640b0d7ac44095"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--contextual-scenes-1280.png",
+      "alias": ".github/e/5o.png",
+      "sha256": "7065b883d0b52ecc0bf5ec506fc75bcbf45d7871066eeded1379b67fcafa8ad4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--contextual-scenes-390.png",
+      "alias": ".github/e/5p.png",
+      "sha256": "228270fa4a749f6f269a4ed8ca8a7eb9f0245f798e410a1c19b19fc1abce2f74"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--contextual-scenes-390.png",
+      "alias": ".github/e/5q.png",
+      "sha256": "25625b3a5770f82351ef82cbb7be72bff5c863143b9033938bed660e0ed82322"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--dark-scenes-1280.png",
+      "alias": ".github/e/5r.png",
+      "sha256": "50851e5753397d0210690dd1672eb94aad33341d20e9d6b07eaf1710d93297e5"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--dark-scenes-1280.png",
+      "alias": ".github/e/5s.png",
+      "sha256": "90aa2e45d3739ce50d00efdfdd01bd3c064bb2e6f43044ba9986ff62f384450f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--dark-scenes-390.png",
+      "alias": ".github/e/5t.png",
+      "sha256": "9ad314848a5c988b50ea2a805c236cfc3b72a384407872bfa07a5c75e7a04192"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--dark-scenes-390.png",
+      "alias": ".github/e/5u.png",
+      "sha256": "62eb769bc3d44722557cf1f10767a30fb9f39354229a1929732216c7d4b5d192"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--narrow-scenes-1280.png",
+      "alias": ".github/e/5v.png",
+      "sha256": "5e6da9adca3793909e942f0b6d0a93a9ec50a8e972f23c53efb35b66e10497d4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--narrow-scenes-1280.png",
+      "alias": ".github/e/5w.png",
+      "sha256": "5ac289dbc55dc63273f1e84d979a518211c7a7c5d0affc3f2a2faf2e31f25ed3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-exercise-components--narrow-scenes-390.png",
+      "alias": ".github/e/5x.png",
+      "sha256": "b2f36c31a8ed3a03b99bed3bea31286dbdaf0f9d1e451facf3e8c1b04d22e06a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--narrow-scenes-390.png",
+      "alias": ".github/e/5y.png",
+      "sha256": "11f793393bdf455bfaa4f16ca72483995897000537f5e2a9a43d4002d5864811"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-quiz-quizoption--compact-1280.png",
+      "alias": ".github/e/5z.png",
+      "sha256": "15eaa12e42908e889519a5aff883b9485a020ee2d7cb73fd63bf5f10c2d84376"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-quiz-quizoption--compact-1280.png",
+      "alias": ".github/e/60.png",
+      "sha256": "e383191b23df84dde990c5e2c7c45eddd545082c19d1f3b5fb52f525b4757545"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-quiz-quizoption--compact-390.png",
+      "alias": ".github/e/61.png",
+      "sha256": "0dc9e7b40510d7a0b26327c3070a81efec39f20e965e1f235192cdf67182e2d3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-quiz-quizoption--compact-390.png",
+      "alias": ".github/e/62.png",
+      "sha256": "0d0c7f073cf013c99272ceed7f29c2a1a6b034dc159873ded613aa3b7d771b36"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-voicemessage-voicemessageexercise--default-1280.png",
+      "alias": ".github/e/63.png",
+      "sha256": "d97eee23f5190c3ce7eb5a379fdba332059bd191610bfce3d180086912e00cef"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-voicemessage-voicemessageexercise--default-1280.png",
+      "alias": ".github/e/64.png",
+      "sha256": "6fd39217de84d8a1518ad0b1b4fb8cad9d89ed4fcbf98ea0517fe18179dfee25"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-voicemessage-voicemessageexercise--default-390.png",
+      "alias": ".github/e/65.png",
+      "sha256": "f3ffcd356c7fc1d5dd0e18358945befd40b6f9ef7637276762b022fbca7b5ab1"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-voicemessage-voicemessageexercise--default-390.png",
+      "alias": ".github/e/66.png",
+      "sha256": "9f3804c4cbcd024bea0a81c3ced535f7d8c20e2a8646f8713319622050439c4a"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-voicemessage-voicemessageexercise--in-slide-deck-1280.png",
+      "alias": ".github/e/67.png",
+      "sha256": "1864a7cc403fe44d45cf217164d41a21395c3797eb79df8b4570a11f66b6b072"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-voicemessage-voicemessageexercise--in-slide-deck-1280.png",
+      "alias": ".github/e/68.png",
+      "sha256": "328193ca0de082ae2fcac23e0ae3af385b2cdece5767a2f66ed1be63324b68a9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/before-voicemessage-voicemessageexercise--in-slide-deck-390.png",
+      "alias": ".github/e/69.png",
+      "sha256": "d245bd0281046b90400d686948709b12e3dfac4657074fa4f957a1feda0962e8"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-voicemessage-voicemessageexercise--in-slide-deck-390.png",
+      "alias": ".github/e/6a.png",
+      "sha256": "bf6c6dc7192dbae840415e7e0f72611e6b74ceb887af57df03c9306cfe843922"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--reading-1280.png",
+      "alias": ".github/e/6b.png",
+      "sha256": "59b6c71591dc038eead93dd71518059f33f157e644e89c9281b344cde2616f59"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--reading-390.png",
+      "alias": ".github/e/4y.png",
+      "sha256": "78acb4115b90a3d864784fdd8019aad8de7f314dfe320b8a3e2ced3b259c8703"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--with-introduction-1280.png",
+      "alias": ".github/e/6c.png",
+      "sha256": "ac3b034724d0536607e711d7c8dacc446c5293ced53de9163dd648ee73261f33"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-slide-slidepage--with-introduction-390.png",
+      "alias": ".github/e/6d.png",
+      "sha256": "130d21f4e58843600722abe38eedbf3dfe0fc1003f750c3a506eacb0b397370f"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--fixed-columns-with-tooltips-1280.png",
+      "alias": ".github/e/6e.png",
+      "sha256": "940b22391905e3fdcdf1f6947140435c4c7fb7047c9ecc30151526fc459c8706"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-exercise-components--fixed-columns-with-tooltips-390.png",
+      "alias": ".github/e/6f.png",
+      "sha256": "010e8ae7c5f80cd64e4aa4faf2f4f503e6e9c03a839d7948c2b1255ebcf89698"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s1-1280.png",
+      "alias": ".github/e/6g.png",
+      "sha256": "c6eb5f2f36f8074ae53cc40e91b7bbecc53c58ff9345e8a45cd0b8d60c26837b"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s1-1280.png",
+      "alias": ".github/e/1.png",
+      "sha256": "fd0da3dc0701faec082bb968c43fa58e6bfe748f04dedc296c3e4007aff7c04c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s1-390.png",
+      "alias": ".github/e/6h.png",
+      "sha256": "8019d87f994183287d750a7c891528793451303efb1e49514de1dd021b2dcae9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s1-390.png",
+      "alias": ".github/e/1w.png",
+      "sha256": "62ec6fa46c95b12055f5f53453601eeb43406325852d4a8e4206bae8d4e3f0e6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s21-1280.png",
+      "alias": ".github/e/6i.png",
+      "sha256": "7edf0cedd59eb365e2e667474694467821a4cc12c213efec67474571be54ca6e"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s21-1280.png",
+      "alias": ".github/e/3.png",
+      "sha256": "b6f7e36b20a87dcc2b20f559d45b9459464e393dd815840a818ad4e1aac734a6"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s21-390.png",
+      "alias": ".github/e/6j.png",
+      "sha256": "dd5b2281a8fcf1595a646ea291a5c9f5ead95bad9bdb8dfb7d15704586a27449"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s21-390.png",
+      "alias": ".github/e/1y.png",
+      "sha256": "a8431f6da5597e1cd1eebfd3c0720c2cbdac5388f48e9284605ee62da89533c4"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s6-1280.png",
+      "alias": ".github/e/6k.png",
+      "sha256": "8e109a3659642710b08e2af0f03e8dffdfa096863a33f6e6e6904b72ac91fb8c"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s6-1280.png",
+      "alias": ".github/e/t.png",
+      "sha256": "c79b9f2fbd207e8c3f4b54545e29df93b35c0872484140d63e914795048e18f3"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s6-390.png",
+      "alias": ".github/e/6l.png",
+      "sha256": "d1f9a843a73f26300c491e4eddc536cb20cbe1adeb2942609c9027301879c174"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s6-390.png",
+      "alias": ".github/e/2o.png",
+      "sha256": "8e327e5ec841e5b0bbcabead9db1f95b2910324bea1651eae498b26c14fd0cf9"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s71-1280.png",
+      "alias": ".github/e/6m.png",
+      "sha256": "d417e2728c2b412a39c13b16ba7d329caa6bf09a2fee2ea71a8ebd785d033cf7"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s71-1280.png",
+      "alias": ".github/e/x.png",
+      "sha256": "36f3440373c600fb3e19fbb6c90b86393a5f771b9b532b9cf998e915ded75e1d"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s72-390.png",
+      "alias": ".github/e/6n.png",
+      "sha256": "d79254fe20e5515ab770e6a3c578cd99b84d9bb965ace2924f087457c55b73de"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s72-390.png",
+      "alias": ".github/e/2u.png",
+      "sha256": "0bad8fc4c59c4fb1e961b7e28f6517448161d97a135dcd923a92b42ac7e75fb5"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s9-1280.png",
+      "alias": ".github/e/6o.png",
+      "sha256": "9e651300409b23dfdb189064ad171f71cfb484b66cef996ecf56d3c740cb4bea"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s9-1280.png",
+      "alias": ".github/e/17.png",
+      "sha256": "dc65562af38863c123e6dcfb2c8f635ab21814f0c0ea7f93a5f899c6e9b61703"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/reference-s13-390.png",
+      "alias": ".github/e/6p.png",
+      "sha256": "da7dbf2e13230b4305b2d2a51b88338a0027aade82665d8fe822c7c2b3e0f929"
+    },
+    {
+      "original": ".github/evidence/a101-fidelity/after-s13-390.png",
+      "alias": ".github/e/3j.png",
+      "sha256": "9b326844fc8e12a504f5f38fca5d7a65e074bfd58e55c5fecca7ede750497502"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-interview-default-1280.png",
+      "alias": ".github/e/6q.png",
+      "sha256": "6c2b965733eb5a408812ba858ffc2d59eebe5c4f5dbdfe7c897a079000987cd4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-default-1280.png",
+      "alias": ".github/e/6r.png",
+      "sha256": "9a465359dd39f5aa1ad80a063aba8c334f4a8e58bf32341ec2010f33356d77d4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-interview-default-1280.png",
+      "alias": ".github/e/6s.png",
+      "sha256": "3c2258c12a9e05ca18d833e5ab94d89f3e3e23cdf6bbf46af3e152464798074e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-interview-default-1280.png",
+      "alias": ".github/e/6t.png",
+      "sha256": "fcc1497af8210a7cf3a39c5adfcc37d6d34ec1d171c4e901ea13027de883a317"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-call-default-1280.png",
+      "alias": ".github/e/6u.png",
+      "sha256": "9e503bceb6492d1363bfc3ee708e7722df67d2522ad51477767817839d192721"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-default-1280.png",
+      "alias": ".github/e/6v.png",
+      "sha256": "cf9940ec0f769650c945192b4354184988fc20b8277fbccdf8b4e755e3aa3854"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-call-default-1280.png",
+      "alias": ".github/e/6w.png",
+      "sha256": "1b36d45b2eb6e893ab4785fd2cdc7ee983d55d5053cb36f04be28719409906e3"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-call-default-1280.png",
+      "alias": ".github/e/6x.png",
+      "sha256": "11fda34a90bbacca89d8a2a456f3965ce2df28310052cf29446a361cae877940"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-grammar-default-1280.png",
+      "alias": ".github/e/6y.png",
+      "sha256": "8cf7c60bf2c17380e1eac55b29251c06c5e318155bfa53ade2fdd3fded02f410"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-grammar-default-1280.png",
+      "alias": ".github/e/6z.png",
+      "sha256": "36fce5bf71803d27f5c1136cf0bf1b90fd811652b214afdbf020c3bafa422c88"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-hidden-grammar-default-1280.png",
+      "alias": ".github/e/70.png",
+      "sha256": "1fa4d4a2eaa5825a0e36b00ca1dbaeadacaa1e21765eb55d73c978e294e210ae"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-hidden-grammar-default-1280.png",
+      "alias": ".github/e/71.png",
+      "sha256": "5485e870d4cee2273f875eba79b6e404d33f9f5da942ccd567a625eeec541e3f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-fill-in-the-blanks-default-1280.png",
+      "alias": ".github/e/72.png",
+      "sha256": "b7006bf59a153827b4cb2a9ff7f9e7aac8c7fdc5a5e3e4431b477d22f75a16a6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-default-1280.png",
+      "alias": ".github/e/73.png",
+      "sha256": "a3d5ea1f9d8b89f699345179556b7c7f2f553c7e311ea1dd5be6f5e746c96307"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-role-play-default-1280.png",
+      "alias": ".github/e/74.png",
+      "sha256": "864e1be64499af290b15a1c0d69d0cdf6ceace13c138449c578733679b11cc2d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-role-play-default-1280.png",
+      "alias": ".github/e/75.png",
+      "sha256": "69595a0cd04e8461d6bc28d4d3008ca3faae7f7807ca0db8d41f9bcdbe7e5895"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-explore-the-scene-default-1280.png",
+      "alias": ".github/e/76.png",
+      "sha256": "e122fb7b36fc7904b2340b83b4c7e1447b6997f1172819b1f942d047e840075e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-explore-the-scene-default-1280.png",
+      "alias": ".github/e/77.png",
+      "sha256": "8d0cc751cd01dffe3bfec94c7f7423bce100fbdafc1b5fd7f1fe641c66941114"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-scene-default-1280.png",
+      "alias": ".github/e/78.png",
+      "sha256": "ff61645e3e228a50e147c9a8c59932ef543575b679c4043ba638690140b13f21"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-scene-default-1280.png",
+      "alias": ".github/e/77.png",
+      "sha256": "8d0cc751cd01dffe3bfec94c7f7423bce100fbdafc1b5fd7f1fe641c66941114"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-minimal-pairs-default-1280.png",
+      "alias": ".github/e/79.png",
+      "sha256": "57c04a25938abfdf03a978bb80beaacd31b38e4df58819424aea3c46b137f17c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-default-1280.png",
+      "alias": ".github/e/7a.png",
+      "sha256": "0a88f2b12a9a91e4deb81f897eb6761341128af45dd914700bf7fd0c805c9229"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-fluency-default-1280.png",
+      "alias": ".github/e/7b.png",
+      "sha256": "d0fb17a76e69a4616bb82ebbdbc9f84a04bf9524b7010311290de2d991f102ff"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-default-1280.png",
+      "alias": ".github/e/7c.png",
+      "sha256": "8d7256923d2c6f4afa77458b0325be25a63146c3d7e397ce1c7d952e4a7d08ec"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-fluency-default-1280.png",
+      "alias": ".github/e/7d.png",
+      "sha256": "e24657c8e9b451f29d68a1178aae0e99424ed86bde0c669d20291d79888443be"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-fluency-default-1280.png",
+      "alias": ".github/e/7e.png",
+      "sha256": "b7601b74a3baeecfba93ca35b80c4f5e7c0313f07f41f7c951c885a9985c5b62"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-conversation-default-1280.png",
+      "alias": ".github/e/7f.png",
+      "sha256": "fc58ef445e434d6dd6c4583e62f870174bfdeaba663ecdd7eff4b4323bac4206"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-conversation-default-1280.png",
+      "alias": ".github/e/7g.png",
+      "sha256": "15ee2584fd407b4af7ba356d13dba43f2985353d2dfd89ded1da60b1e0f40fe2"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-free-conversation-default-1280.png",
+      "alias": ".github/e/7h.png",
+      "sha256": "91860c5a7e253b63394eff08a597f63f681aafbda0d48e01c052e6fb7c1ec1fb"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-free-conversation-default-1280.png",
+      "alias": ".github/e/7i.png",
+      "sha256": "f4076beca9ad626a0098bffca8b5f7023906e6cb0e36c94722611a8f9f3dbb89"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-video-default-1280.png",
+      "alias": ".github/e/7j.png",
+      "sha256": "42d246630c8365512249c297f88615d75cee00353abd0990af72c604832f87c0"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-video-default-1280.png",
+      "alias": ".github/e/7k.png",
+      "sha256": "f15052c9da963e359a193c36d75f63dae1718a4ad40f6cf1a19c027e3d827530"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-oral-assessment-default-1280.png",
+      "alias": ".github/e/7l.png",
+      "sha256": "3ea51568f2e49c66d1f46775deed6bd5ec44077edddac2480b011b82ee90070f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-assessment-default-1280.png",
+      "alias": ".github/e/7m.png",
+      "sha256": "98803f67e460e8f95551bc247ae5e787f1c88b8b34d8264328b503febae408f9"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-oral-result-default-1280.png",
+      "alias": ".github/e/7n.png",
+      "sha256": "fc4e7857357231a3399494db8e99b1982b8cfb4f579cab08993691c922c4486b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-result-default-1280.png",
+      "alias": ".github/e/7o.png",
+      "sha256": "0b5aff3fe602e463e57a8798dbf86fead1fc3a5011fdef8df65e18199b0adbc4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-shadowing-default-1280.png",
+      "alias": ".github/e/7p.png",
+      "sha256": "7988a29fcf04517235c569f5226c8d577c956090223b7b056a5b4b458665c1c4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-shadowing-default-1280.png",
+      "alias": ".github/e/7q.png",
+      "sha256": "abc6eb5d221fecb9ca6eaf9339ee194f7764fa6d73ad3e42454d99bf422588c1"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-shadowing-default-1280.png",
+      "alias": ".github/e/7r.png",
+      "sha256": "76516839a4ea78969b6447c7515adaaf6350fed79258d089ecfc7f6f030a81b3"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-shadowing-default-1280.png",
+      "alias": ".github/e/7s.png",
+      "sha256": "c915ff16bceacb49621705aecb6a291b9eb15a8a2127e93c01c405d144ff6f04"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-multiple-choice-default-1280.png",
+      "alias": ".github/e/7t.png",
+      "sha256": "1d5ef7e3c8082940bd3fa4e65b734d3b47af901a19bc54edff416a31f1750dc6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-multiple-choice-default-1280.png",
+      "alias": ".github/e/7u.png",
+      "sha256": "43b4a34e0677bb7ac06934f7a6d678646e9ca7f8f3c57389c40a9c54fa6f1504"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-quick-check-default-1280.png",
+      "alias": ".github/e/7v.png",
+      "sha256": "c0b7c0e883bcbd92463b5af03bf2490f841b389567914244eb6cddc1dcd4d688"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-quick-check-default-1280.png",
+      "alias": ".github/e/7w.png",
+      "sha256": "f1ead5c30858fd7836c7444fb9a52114fb8d48d8aa0b1c46f8604addd2129432"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-vocabulary-default-1280.png",
+      "alias": ".github/e/7x.png",
+      "sha256": "dba9c5decd4e29a0857318d23ffffe0e02a21896d617b5a3fd44b2bb5b4c4bdb"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-vocabulary-default-1280.png",
+      "alias": ".github/e/7y.png",
+      "sha256": "239ae72be7493cdc0e5d76ae9ceb5c9d64921c915419ef8c5fd007770840624b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-guided-conversation-default-1280.png",
+      "alias": ".github/e/7z.png",
+      "sha256": "23798fd8c4579e32d052d48cd3b4ff03af10c9247d08e938df715b27caa44ad4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-guided-conversation-default-1280.png",
+      "alias": ".github/e/80.png",
+      "sha256": "a09a95e5f7445b3b137dd5c9642285b4f8a9c66ee82a7e567f65cdaebfdb40ef"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-chat-role-play-default-1280.png",
+      "alias": ".github/e/81.png",
+      "sha256": "d9dde1fe4a35e5704a388198ef44eba113ac6b8d73d5c130fd30e2cbe0529b41"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-chat-role-play-default-1280.png",
+      "alias": ".github/e/82.png",
+      "sha256": "ac371988427657a40c261ba2233cbd0e3539a912f440d309a00c4457dae94143"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-comprehension-default-1280.png",
+      "alias": ".github/e/83.png",
+      "sha256": "15755da623bfdfb905ade0ec98ac52ae062878bee6fe89ffb056a06cf8f6c485"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-comprehension-default-1280.png",
+      "alias": ".github/e/84.png",
+      "sha256": "0607edc563c8b31c2e76bf063e079664521e80158c8e606873d118a5da6be692"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-make-your-examples-default-1280.png",
+      "alias": ".github/e/85.png",
+      "sha256": "076b340af754a56fad3c7e0a75b12a28f929a9238b3466d77ec4f738c4a272cb"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-make-your-examples-default-1280.png",
+      "alias": ".github/e/86.png",
+      "sha256": "98c5960dc8f9bd22426c29bb153b514cad903e7fb41b0012c1c34e1dc74daa75"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-review-default-1280.png",
+      "alias": ".github/e/87.png",
+      "sha256": "8ab1ea51f089843129b8be76981f344f800d1176b2b1fb709999c1ead99eb36d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-review-default-1280.png",
+      "alias": ".github/e/88.png",
+      "sha256": "c1f582bbbfd9b70dd93e11bc093fc381dfc32fbe47a78b3d24db32b960779f5d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-challenge-default-1280.png",
+      "alias": ".github/e/89.png",
+      "sha256": "acd598d5c2df0e4c42ee8d9ee60fa0db7bc6cd90916551d2b8a853b17c3fc81f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-challenge-default-1280.png",
+      "alias": ".github/e/8a.png",
+      "sha256": "a3dfb97d236542a670a8d711a286be1d321a50b4dc7c3e21e3158b296afb5fb5"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-guess-who-default-1280.png",
+      "alias": ".github/e/8b.png",
+      "sha256": "d6240f9d42c8389527def9adbfe2f8eb9fa756753cccefba247e967ce4ec8a87"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-guess-who-default-1280.png",
+      "alias": ".github/e/8c.png",
+      "sha256": "ea41ec008ab70e89e3f47efcebab3f08fb28eb77689b137aa2689a8b663abe3e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-listening-default-1280.png",
+      "alias": ".github/e/8d.png",
+      "sha256": "c274f3a8f3b1baf0561f6eec12ff0ab386f7a4d3a23159d7dd8d025239e1a2df"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-listening-default-1280.png",
+      "alias": ".github/e/8e.png",
+      "sha256": "ef1024f60457ca28541c241e1362d41add7b5aba431936a13d4f760d092a7569"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-dialogue-and-questions-default-1280.png",
+      "alias": ".github/e/8f.png",
+      "sha256": "24d266540b97f46dbcf59796f6d563b1bffbbd21f5746c08ed05bff26f8a9d7c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-dialogue-and-questions-default-1280.png",
+      "alias": ".github/e/8g.png",
+      "sha256": "5978e023574077320e128c0d095624ec05c0454b20929937059c666a3cc679fe"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-your-turn-default-1280.png",
+      "alias": ".github/e/8h.png",
+      "sha256": "f542ba5f0aefaba6005fa8e1ed3c1b8d6de0cb48967092cbc341e32af86883bb"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-your-turn-default-1280.png",
+      "alias": ".github/e/8i.png",
+      "sha256": "a391ab4e7e377f28b2078676d57966dafc4d2fd5a2639d7efbda351fe498ddde"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-right-or-wrong-default-1280.png",
+      "alias": ".github/e/8j.png",
+      "sha256": "d10283b677f05aee4eff67918ffb7e0e7ce16b3aaa440d6883d0eecc80d36e6f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-right-or-wrong-default-1280.png",
+      "alias": ".github/e/8k.png",
+      "sha256": "23bdf3036c99d910618d1094c3b8524aae15300611a08432a3847a6bb8db542b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-homework-default-1280.png",
+      "alias": ".github/e/8l.png",
+      "sha256": "c5acce550296b321b5758bf48ab05c822bfb4bb6b507fa0ec8b2e3d687730741"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-homework-default-1280.png",
+      "alias": ".github/e/8m.png",
+      "sha256": "6aa758d90560af5e6a405578077b2941fc94e45ded895e0d02bc9925a6d239be"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-lesson-intro-default-1280.png",
+      "alias": ".github/e/8n.png",
+      "sha256": "44d96fba62bdc6ba9bb5359656d101828165d66fcc519f388948bbfb04385719"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-lesson-intro-default-1280.png",
+      "alias": ".github/e/8o.png",
+      "sha256": "f5bb4082d51f0de6f3fb372432c8afe1d1e081430fa0d45c47d2b9b416cb6c9c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-name-these-things-default-1280.png",
+      "alias": ".github/e/8p.png",
+      "sha256": "43a81d1559912d4583ac6569b4f6e6914db8befa8c49120144d914d808fe45d4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-name-these-things-default-1280.png",
+      "alias": ".github/e/8q.png",
+      "sha256": "f1e6d7a10c85bca06f3781cbcc9b04621507bf89fe6b557597cdb249f1c9191e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-pairs-in-lesson-default-1280.png",
+      "alias": ".github/e/8r.png",
+      "sha256": "13aa51cc65c41de15a95211dfd52cd4c328bd77c692a48c9f2f51b469049935f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-pairs-in-lesson-default-1280.png",
+      "alias": ".github/e/8s.png",
+      "sha256": "ceea39692c9b0ab4f3566a430ba451dcbe952b1390159cb423a160822907ff60"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-received-video-default-1280.png",
+      "alias": ".github/e/8t.png",
+      "sha256": "5e6e27ee40c77bf95fbbc0685f6814ab05d0fa40cd6516e060f7f26caaff9877"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-received-video-default-1280.png",
+      "alias": ".github/e/8u.png",
+      "sha256": "6eabc54066303310fae0c229bf13d159c3c5ed55d295c2acc183e5eddc0d4541"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-sequence-empty-default-1280.png",
+      "alias": ".github/e/8v.png",
+      "sha256": "759172e6c356588ffd278f184ee5476a5054aa45cdbb57dbdd81b61f81886d19"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-sequence-loading-default-1280.png",
+      "alias": ".github/e/8w.png",
+      "sha256": "3ed40df04554e014a269a919beeb28ee101c80480757e3c5397714bcabfb3ce7"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-dark-components-default-1280.png",
+      "alias": ".github/e/8x.png",
+      "sha256": "d9606062782ef998ea8252dbc041ec9c26e6b2067199bd63efab1317667ba8b2"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-narrow-components-default-1280.png",
+      "alias": ".github/e/8y.png",
+      "sha256": "7cdac148e87f49a7bfb552324a184c945657bfbafdade2b99fe8054eef45c257"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-interview-default-390.png",
+      "alias": ".github/e/8z.png",
+      "sha256": "2de3a1d3cac30b44d6ca7b1155efffff92e5e49b3d010b17e2be382c90a10ad5"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-default-390.png",
+      "alias": ".github/e/90.png",
+      "sha256": "354e268af0c346c2528a35be185e2eb7c925b984fb35251bf08836a40d7875d6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-interview-default-390.png",
+      "alias": ".github/e/91.png",
+      "sha256": "edcc1a527182bfbf3e6664b982b315ff9c48a578f08a0d0cc361dd0ad0f43e4b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-interview-default-390.png",
+      "alias": ".github/e/92.png",
+      "sha256": "ccf5ce3d3760cfcea1448accc5a1102100c3d8f37065e384e3fa41153e7bee7d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-call-default-390.png",
+      "alias": ".github/e/93.png",
+      "sha256": "878b0da95e6b3d58f51cb262b67a7afb6bd04c0698358c038aeb6634edb3c2db"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-default-390.png",
+      "alias": ".github/e/94.png",
+      "sha256": "eb266cec7d7efe85c4279c19d0824249f0d4bbd4303fdfd9debe3c7a64a8686d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-call-default-390.png",
+      "alias": ".github/e/95.png",
+      "sha256": "dd77760f4fa77898baf2ec6b58f9c92bdaba32d70ce5129c176fb54638d0a549"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-call-default-390.png",
+      "alias": ".github/e/96.png",
+      "sha256": "99c2ba12de569cf845bce2b95115a6b4326ad7e3c434f581c0af780e17ca41d6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-grammar-default-390.png",
+      "alias": ".github/e/97.png",
+      "sha256": "c7cfd30db2f705a1aed67c7d138e27282a79bd3b69a00d47d2e704d301b1a3a5"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-grammar-default-390.png",
+      "alias": ".github/e/98.png",
+      "sha256": "cdc85f218f961edc0387627c65cb3352cdf5dc505c01b18ddeef70bea106dee4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-hidden-grammar-default-390.png",
+      "alias": ".github/e/99.png",
+      "sha256": "57e3b36da3275a4853efc016c3d4832545e50e8f7880f2562e5da15abe4842c3"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-hidden-grammar-default-390.png",
+      "alias": ".github/e/9a.png",
+      "sha256": "4b486428af09a5e63ca5542632c495cb4efc06420651473d1d97b74221f9245a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-fill-in-the-blanks-default-390.png",
+      "alias": ".github/e/9b.png",
+      "sha256": "71672ea6efaab786ddccc622fc74c9ec5ef86887889b06859d0e6941d8d6129d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-default-390.png",
+      "alias": ".github/e/9c.png",
+      "sha256": "519e94567fac49190d52521514fc5ab065a274e4293afd510027f3ff659f45f4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-role-play-default-390.png",
+      "alias": ".github/e/9d.png",
+      "sha256": "1c030d980acd23997fc16fdff50210ff60d6c216413f6ab264ae5aa41d085c5a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-role-play-default-390.png",
+      "alias": ".github/e/9e.png",
+      "sha256": "8f26a29511a5f95dd49ea14974c1114ed336121b0f2a27d797574a0bb3033bdb"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-explore-the-scene-default-390.png",
+      "alias": ".github/e/9f.png",
+      "sha256": "c3986504c488e15e64d50b3d20ede377fe5051733f32ba07aa8e798b0673ca86"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-explore-the-scene-default-390.png",
+      "alias": ".github/e/9g.png",
+      "sha256": "d35b43a125e25d41a0528476de79fc9e19dc73e071ec99c4bed0b82470c34733"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-scene-default-390.png",
+      "alias": ".github/e/9h.png",
+      "sha256": "dcbc022407750d4fab934e4bacdd5a4d938eb3068f79175d0cc28297d647239c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-scene-default-390.png",
+      "alias": ".github/e/9g.png",
+      "sha256": "d35b43a125e25d41a0528476de79fc9e19dc73e071ec99c4bed0b82470c34733"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-minimal-pairs-default-390.png",
+      "alias": ".github/e/9i.png",
+      "sha256": "e8b99331509635cd02f1fdd30fff1b67a477ddd9b004ab36ca00875723459d8c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-default-390.png",
+      "alias": ".github/e/9j.png",
+      "sha256": "022f11190a77e55b5b70fb98a276211c3338cc351877212e04f02c1f0abe0055"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-fluency-default-390.png",
+      "alias": ".github/e/9k.png",
+      "sha256": "9e78d89485d65db417e583e735526ee4b88ac1e07fc97d97fbe806109611e36c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-default-390.png",
+      "alias": ".github/e/9l.png",
+      "sha256": "3992d73467537c8f1da6a74c63b7a3250f4bdabc0e9fbbacad63480ee66148d6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-fluency-default-390.png",
+      "alias": ".github/e/9m.png",
+      "sha256": "deac6814b3242b382a9be723a287a6594a4690897307a476583a66a28f719822"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-fluency-default-390.png",
+      "alias": ".github/e/9n.png",
+      "sha256": "d6ecd5fcdc79a61eeb985eecb433dc1033b25190a183b05e78e0a48f7e79d8ea"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-conversation-default-390.png",
+      "alias": ".github/e/9o.png",
+      "sha256": "d84a0d0b711cb376fe862cd331df3310118130f9841eac56256f4ff26dd07261"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-conversation-default-390.png",
+      "alias": ".github/e/9p.png",
+      "sha256": "b3b7a1d48e16b33115bd790c59c48b873c5238c2cf724684c79b921a25129d0f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-free-conversation-default-390.png",
+      "alias": ".github/e/9q.png",
+      "sha256": "6a878ddefa7525fa7948ce2da775e4367e725aa1a3cba3bb0c40a70bdebc7287"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-free-conversation-default-390.png",
+      "alias": ".github/e/9r.png",
+      "sha256": "1db52b080201d9a8634651a424687938932008e47bfdca2ef97304db778d59c8"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-video-default-390.png",
+      "alias": ".github/e/9s.png",
+      "sha256": "e4c9cb8a57c1e5cb11c09fadfd14689e6218388c11990559dccb14a9966b9dc5"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-video-default-390.png",
+      "alias": ".github/e/9t.png",
+      "sha256": "5308a841cc9ffaeb3f4e1929849185cd12608f438d2836d29b7eae0fdf9d5880"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-oral-assessment-default-390.png",
+      "alias": ".github/e/9u.png",
+      "sha256": "1c3a341773a9fd9f6af8251ad3cf372101980bf608abda005f0df188d6d3a9aa"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-assessment-default-390.png",
+      "alias": ".github/e/9v.png",
+      "sha256": "421a52085f7f346765ded490f6a3ddfd1f7e5f12f20fea89e1feb477b0f33b72"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-oral-result-default-390.png",
+      "alias": ".github/e/9w.png",
+      "sha256": "1c3c3462cc8939f5fe8afaee8deb29323a110edbb1272bfab49cc152fa6b134c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-result-default-390.png",
+      "alias": ".github/e/9x.png",
+      "sha256": "6592f9dfdee970dd3cd5090dbfe819ace37a4f9d09a88d68707202668dda4546"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-shadowing-default-390.png",
+      "alias": ".github/e/9y.png",
+      "sha256": "2ca1b08a7f69fa68544bf8f7db1335c16d415ef4c91e26323e606960bb8202f9"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-shadowing-default-390.png",
+      "alias": ".github/e/9z.png",
+      "sha256": "6d4786a5b58aba16c89b4d9d01822e287f87d2c0ae1bda378a085cea934e5683"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-advanced-shadowing-default-390.png",
+      "alias": ".github/e/a0.png",
+      "sha256": "5d323f81f6885681873430f216bd032f669318758e964eb7e52673e1de810fe1"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-shadowing-default-390.png",
+      "alias": ".github/e/a1.png",
+      "sha256": "058a83863feceffafb4dd2d0e180c3b1f33307e4b6b64b878dc6676f69b78479"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-multiple-choice-default-390.png",
+      "alias": ".github/e/a2.png",
+      "sha256": "e1544226d955556f4de0f6d4a3daeb6337c22a72219c8ffd0ad2bc99002c4194"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-multiple-choice-default-390.png",
+      "alias": ".github/e/a3.png",
+      "sha256": "52af82ac56b3cf247cc7278da88baecb629c5d55957b74ef191ea15081eabb0b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-quick-check-default-390.png",
+      "alias": ".github/e/a4.png",
+      "sha256": "96c7b8703d627cadbff57cf9939c1ee24f9457a49e4ba9b3148f78ef2441851f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-quick-check-default-390.png",
+      "alias": ".github/e/a5.png",
+      "sha256": "6928a3d65f5be61f3845270f594e6c2c47e41396a320cafdc6b60e4d7bef164c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-vocabulary-default-390.png",
+      "alias": ".github/e/a6.png",
+      "sha256": "7e1b37ee2d4e9846736cfff0d42ba10b32fd78b9486443af0c65b1ba3fe51f66"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-vocabulary-default-390.png",
+      "alias": ".github/e/a7.png",
+      "sha256": "d1d37d91da08fbee1ca0f53e1882b5e5b7f8a571fdd122cf70ae6fa1140dd181"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-guided-conversation-default-390.png",
+      "alias": ".github/e/a8.png",
+      "sha256": "a603c96b4b7d72144e9787b4b9d085c0ec6f82678e4e39c79082ead490a7aee9"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-guided-conversation-default-390.png",
+      "alias": ".github/e/a9.png",
+      "sha256": "ebe4daf29535c78af8e1cb1607e34bcdfd0ef8359860b98dfd32adfe26f5341c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-chat-role-play-default-390.png",
+      "alias": ".github/e/aa.png",
+      "sha256": "dc125b239671b811a4e1e425ad3e24d93741742f5c0198d9c0eb0d4976f12aae"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-chat-role-play-default-390.png",
+      "alias": ".github/e/ab.png",
+      "sha256": "5f5e22421ed755d68be2f9902a3f739643f8d7c076ce3abd8ce5d65b8caa7718"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-comprehension-default-390.png",
+      "alias": ".github/e/ac.png",
+      "sha256": "0ce48774fe26caebb1bf4a7f492dd7218d4bc2560f7a87c40a7f7a428bee3c21"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-comprehension-default-390.png",
+      "alias": ".github/e/ad.png",
+      "sha256": "9c3b0261dc880d6d1c76a509cf923e3177f614baf06510b092306da4b0cd2e65"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-make-your-examples-default-390.png",
+      "alias": ".github/e/ae.png",
+      "sha256": "03f6984f1e12789f053686d03cf12dbdcdc2573ef04b6f4d7f1111c2aa3af220"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-make-your-examples-default-390.png",
+      "alias": ".github/e/af.png",
+      "sha256": "62e769d922a592a65cc58574b2a73fc0ea3336dfe6636c96a0e95d1d64c938f3"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-review-default-390.png",
+      "alias": ".github/e/ag.png",
+      "sha256": "7f28b565cc523170867e38862f9d645b335d05261e18ff49f7ba26c88838b370"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-review-default-390.png",
+      "alias": ".github/e/ah.png",
+      "sha256": "eebd565f6a8a995a077b4a277d95832ecc93dbc17d6beca12ca3d4ca89de9b6c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-challenge-default-390.png",
+      "alias": ".github/e/ai.png",
+      "sha256": "d6095c333cdb5c0f101646422eb495f576007e250371b3317c25a30823775e71"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-challenge-default-390.png",
+      "alias": ".github/e/aj.png",
+      "sha256": "7ab868aecca7ee9ffa0d82217b7fe49603f5fa3ec3713415a9e94bdea2270758"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-guess-who-default-390.png",
+      "alias": ".github/e/ak.png",
+      "sha256": "9fe3ac7141ac7aacd388e72ef9f76b187a54b50fc4ba6aab47ab03ee0dfb8a30"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-guess-who-default-390.png",
+      "alias": ".github/e/al.png",
+      "sha256": "2d17ae5f499026f29d8a736172e97b90a9b5ee30bad87c734bcfe99166f6a4d6"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-listening-default-390.png",
+      "alias": ".github/e/am.png",
+      "sha256": "92a7f3645f97ba07d1771d2fcf7ffa5eb0e671055b61025c734b9035d18452ef"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-listening-default-390.png",
+      "alias": ".github/e/an.png",
+      "sha256": "3377868927f4fbfe9bd45e30c9122216f3ed90028aadd652d9617a37867ea71a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-dialogue-and-questions-default-390.png",
+      "alias": ".github/e/ao.png",
+      "sha256": "e46ad564bd172c4318732da3dd63074990f7c29bad2454708b88921cbec33e62"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-dialogue-and-questions-default-390.png",
+      "alias": ".github/e/ap.png",
+      "sha256": "4918e597c07858b2d4010ea1ef3dedf4e39866c920bbf006465d110e5039e67f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-your-turn-default-390.png",
+      "alias": ".github/e/aq.png",
+      "sha256": "4e6b890f599672b34179885d34d143a082294b9151fbb63c0619dc72a49b77ff"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-your-turn-default-390.png",
+      "alias": ".github/e/ar.png",
+      "sha256": "011137e909abe89365566c500098d67b5dedd6dccb1966ab604b9f7655d4c6e0"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-right-or-wrong-default-390.png",
+      "alias": ".github/e/as.png",
+      "sha256": "7ad002adb41de91f1492855304337d6e958574cd8fae91ff0aa15fa8ff2b6975"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-right-or-wrong-default-390.png",
+      "alias": ".github/e/at.png",
+      "sha256": "2658e3cb7513c5c90315a3b5b6a8ec45a19bc31964f9b10b07d8cb0652cc9873"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-homework-default-390.png",
+      "alias": ".github/e/au.png",
+      "sha256": "8b8a70181087393677f05330977be63bfb492fbf8323f3abd43f917f473c5a27"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-homework-default-390.png",
+      "alias": ".github/e/av.png",
+      "sha256": "2e6b96d9e2781091e2cee6057e05f8ad3bf65f815b3b2ed2cea9411ee22afabe"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-lesson-intro-default-390.png",
+      "alias": ".github/e/aw.png",
+      "sha256": "a4140566f1c7567160196918d316bcd04608b7b4bac4e6c84b31c53931e49f3b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-lesson-intro-default-390.png",
+      "alias": ".github/e/ax.png",
+      "sha256": "445134f1f8031bf5df1c7d58a564d347e360f7010e5f575824ce0e23356cf081"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-name-these-things-default-390.png",
+      "alias": ".github/e/ay.png",
+      "sha256": "40904893850493a436af35917f76fa4cf64c700ca21d0e8f689fbf754d21840e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-name-these-things-default-390.png",
+      "alias": ".github/e/az.png",
+      "sha256": "6c291c6fb30ece6ed6a04e2ed7078eee64981750eb7feff8929939880625cd85"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-pairs-in-lesson-default-390.png",
+      "alias": ".github/e/b0.png",
+      "sha256": "9980fa9103c5331f57cb812287fc12d6c0634f9d3422110b6833afc6018371b7"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-pairs-in-lesson-default-390.png",
+      "alias": ".github/e/b1.png",
+      "sha256": "04823d452a63ff31307e511f386dd44bc6f93111a56d08f5269784e66ae9f0f0"
+    },
+    {
+      "original": ".github/evidence/ux-lab/before-received-video-default-390.png",
+      "alias": ".github/e/b2.png",
+      "sha256": "94af7ca12fb1ab00bda711fddad043cd199d553df268d48d196524b85691065a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-received-video-default-390.png",
+      "alias": ".github/e/b3.png",
+      "sha256": "3363005a6aa44b1379859e30e134c8946cfd0f3ddac89c8a74294ffae42e3b53"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-sequence-empty-default-390.png",
+      "alias": ".github/e/b4.png",
+      "sha256": "920a9df71605df4924d7c937960b066f8ba5a3ed933979367a4ea1a30068d0e9"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-sequence-loading-default-390.png",
+      "alias": ".github/e/b5.png",
+      "sha256": "0fe7ba936a457020682f7b4ebdbabe94806f01daa745beb7fba018d57847b971"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-dark-components-default-390.png",
+      "alias": ".github/e/b6.png",
+      "sha256": "d93417e3ba7d46a8c05648d3d3f7630ccf64d321e5e8d4eca69e0d43eddf76ba"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-narrow-components-default-390.png",
+      "alias": ".github/e/b7.png",
+      "sha256": "e96901f040fdb02bfbbb1f689ed45495a96ebf768a37b3d551926fe3e2a53c1d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-grammar-forms-default-1280.png",
+      "alias": ".github/e/b8.png",
+      "sha256": "580cb1d575d2b7da94a5c1e4541ca566fada764d261c6c450d0557c4ee36bdac"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-grammar-forms-default-390.png",
+      "alias": ".github/e/b9.png",
+      "sha256": "25acfdb043e0765640add3b0ff3eb710f064929c4afcb917a719e5d0ec48da9e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-ringing-1280.png",
+      "alias": ".github/e/ba.png",
+      "sha256": "6cf66ddd522704764a57f07ba21017a2e1a8e719b7112895d454be7bd3c919ef"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-menu-wrong-support-1280.png",
+      "alias": ".github/e/bb.png",
+      "sha256": "61eb948455274c32ab0b26860553a9aa1cc90847640831fbecb0c05b55b85f60"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-connected-1280.png",
+      "alias": ".github/e/bc.png",
+      "sha256": "1246907f2422bd277f9241aed3598bf2953e4f7f31b4a63b35ead5533818e39a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-ended-summary-1280.png",
+      "alias": ".github/e/bd.png",
+      "sha256": "623c444997cc07737dd465a24ef3247a82ee4f2f44e2979183068399f91b7b87"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-call-connected-long-1280.png",
+      "alias": ".github/e/be.png",
+      "sha256": "3b0f0577fdc7177a40f1732742926aee76e878c510af8e1f91621613a4bf67dc"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-wrong-choice-1280.png",
+      "alias": ".github/e/bf.png",
+      "sha256": "825dd065710f6a62ba0eadfdb4bdff128e9f7a98d9e29f34cebe45ae648cdb8d"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-complete-1280.png",
+      "alias": ".github/e/bg.png",
+      "sha256": "e222418a049bfa1052141cfaffdc9d2610f02ce74640cfe6516c9928fbce4f4b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-role-play-support-completed-step-1280.png",
+      "alias": ".github/e/bh.png",
+      "sha256": "f81b99d580e3db4155ff40ac5cd20d568ba339f58c2ee11e9ab13b20207b7ad3"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-wrong-mouth-hint-1280.png",
+      "alias": ".github/e/bi.png",
+      "sha256": "5855d646e9373fbc83880dc869248d7e2d435ce64bccc73ff72dda207493a726"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-teacher-listens-1280.png",
+      "alias": ".github/e/bj.png",
+      "sha256": "f9525af500af08080ee9dc083ed56497d905ddde342b0a25e4219c8331eba0e8"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-conversation-branch-ending-1280.png",
+      "alias": ".github/e/bk.png",
+      "sha256": "9b84a81c1b9de588d5728d53eba22615103306c9b4b1413c1c620a59cc8ff0a4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-free-conversation-teacher-tone-1280.png",
+      "alias": ".github/e/bl.png",
+      "sha256": "aab3cc00f2ddbe580ae7dbc467597d0a9c2ce554f3ee2470d8a87c47aef9b495"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-video-discuss-1280.png",
+      "alias": ".github/e/bm.png",
+      "sha256": "83e7003b18c733cbb4115c84f80e7eb32797fa2bab42aeb31ebb3833580ad74f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-result-filled-export-callback-1280.png",
+      "alias": ".github/e/bn.png",
+      "sha256": "f0922d2eda033fceed370186f22825744d44d02edc967b1b2a951b52a6f9faa0"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-shadowing-last-phrase-1280.png",
+      "alias": ".github/e/bo.png",
+      "sha256": "25d708c9a44511fc28530f06aa1380db7a90e81ee47dbee768798154a2412ab4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-right-or-wrong-explanation-1280.png",
+      "alias": ".github/e/bp.png",
+      "sha256": "ac55ef7c05b0266c01af037d4903314607f62d46131732ae2f99c442b2699eff"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-received-video-reply-1280.png",
+      "alias": ".github/e/bq.png",
+      "sha256": "a5de9fd3d7fb3a818a725ff8b35286f1f6af6f3bead7a19629044e48363e5758"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-paused-1280.png",
+      "alias": ".github/e/br.png",
+      "sha256": "2069f5c62e90355c03b9b9d85db2c3fbf46035582967b27502d20d62ef015b6f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-second-round-1280.png",
+      "alias": ".github/e/bs.png",
+      "sha256": "89da978cb9ec5969f68d48103863c05d502a564b8458291a7a0e782dd8dbc94b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-finished-1280.png",
+      "alias": ".github/e/bt.png",
+      "sha256": "3daa4f94f8c836cc2e88e557591bc4bc0f4060d7d5ad4987d71e8f578693052c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-ringing-390.png",
+      "alias": ".github/e/bu.png",
+      "sha256": "442ce117787b1c5b4a5215b40847910858c6d7814ff3fb6c3c08b890cf27fd21"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-menu-wrong-support-390.png",
+      "alias": ".github/e/bv.png",
+      "sha256": "10297d423d02b4ec2b236569b0e75d66904b221407b7bd0a96aef5bc07f5d87c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-connected-390.png",
+      "alias": ".github/e/bw.png",
+      "sha256": "c0b7c6c4b056e6420a98ed425084099f747a826aa68e81e67476eba7c1b6896e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-call-ended-summary-390.png",
+      "alias": ".github/e/bx.png",
+      "sha256": "f2a07ed907946a0b8abba1f91b9c02b20b2e7f4635753700d6752797dbe48093"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-call-connected-long-390.png",
+      "alias": ".github/e/by.png",
+      "sha256": "151f5e7d48f65b140c31f015e1a9bf12be6ffed95c8fd2b21c77a2daa8a31b47"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-wrong-choice-390.png",
+      "alias": ".github/e/bz.png",
+      "sha256": "fa4fc5eb8d38fd6099bc2fc725f7cc177d5d904fdaf1d6b747a03a3d59059a8b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fill-in-the-blanks-complete-390.png",
+      "alias": ".github/e/c0.png",
+      "sha256": "6cab7364e80dc8570f5cb20f340b85bb696e3da4bd67ecd3ebe91ce08d8a0853"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-role-play-support-completed-step-390.png",
+      "alias": ".github/e/c1.png",
+      "sha256": "19a0816f012c2e144cb02c4285606c65b87256328d9b63dad097714c537c3099"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-wrong-mouth-hint-390.png",
+      "alias": ".github/e/c2.png",
+      "sha256": "63aa87408b8a86be110ba86007fcde07cd234d3008a30d28c87c0b70ecc8d084"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-minimal-pairs-teacher-listens-390.png",
+      "alias": ".github/e/c3.png",
+      "sha256": "442d9f212f724d8801a69fcc1ae97ae73dbc937df9cf0bbc282ec6d00f3f6910"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-conversation-branch-ending-390.png",
+      "alias": ".github/e/c4.png",
+      "sha256": "e7d17b62ed300f8c5d0fbdc7702f09c3231c74262419960702017a98dc98c930"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-free-conversation-teacher-tone-390.png",
+      "alias": ".github/e/c5.png",
+      "sha256": "3336f58847d47b8de4583f9cfeabf8840bf59d69799a794b10a9dbcb09f8e46a"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-video-discuss-390.png",
+      "alias": ".github/e/c6.png",
+      "sha256": "8e7af48df66e00a65d9380373f375055561e9b140b2ebb32bd35b58065edbe0b"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-assessment-rated-example-390.png",
+      "alias": ".github/e/c7.png",
+      "sha256": "fb0e8a42b08c4e121e3348ca89cc5067ed46c33bf2a795af667519f1f0ba3958"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-result-filled-export-callback-390.png",
+      "alias": ".github/e/c8.png",
+      "sha256": "499c1a1426583df42282f86a6c77b628558f95e3ec681183fbbe7efdb5031cf1"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-shadowing-last-phrase-390.png",
+      "alias": ".github/e/c9.png",
+      "sha256": "930063bdd5c7d5f8fb8e13d53c80e2315ef47807df8208c1b1d42af9dc1fa32f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-right-or-wrong-explanation-390.png",
+      "alias": ".github/e/ca.png",
+      "sha256": "9125a96e10d1ad47756c67932b336b7f02be198b7f620cd38338d8a6807f9db7"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-received-video-reply-390.png",
+      "alias": ".github/e/cb.png",
+      "sha256": "b3a05a3a51b9bea2c78903f8f4b069a1f6f5a16186edc9c3eecb84f52551b306"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-paused-390.png",
+      "alias": ".github/e/cc.png",
+      "sha256": "1da554a62cefecf59bcb87015a7c54d7f79c57113d5d27714c0ffaf54581d485"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-second-round-390.png",
+      "alias": ".github/e/cd.png",
+      "sha256": "3bc8bdcd0068354d0c5b781d32da23c981df0cecff9b307d08c90e8da9f2b9aa"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-fluency-finished-390.png",
+      "alias": ".github/e/ce.png",
+      "sha256": "d673a3d36ffbcd0504a1c909c9deb76b6311628c6a16fbad3c8b701c6af241c4"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-interview-long-caption-1280.png",
+      "alias": ".github/e/cf.png",
+      "sha256": "4d972b8970dec457d4a313669e4a17f6fb29686d1b36ec408c0325b95072d63e"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-explore-the-scene-hotspot-help-1280.png",
+      "alias": ".github/e/cg.png",
+      "sha256": "c6e5328e4245314983dac7385c671d78bec20c648672dac5bf8937130449c63c"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-oral-assessment-rated-example-1280.png",
+      "alias": ".github/e/ch.png",
+      "sha256": "c09c8b008c2c5dcba4e39ba77b1b51b9a08cc5a65b0097d3086601a20e29b3bd"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-advanced-interview-long-caption-390.png",
+      "alias": ".github/e/ci.png",
+      "sha256": "f9759f1b33e342d84811920821b311b280c5a9c387aadb6da5ed41079da8fd48"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-explore-the-scene-hotspot-help-390.png",
+      "alias": ".github/e/cj.png",
+      "sha256": "054c4f15279e6ff9ba913ea7d857bc82fbde07cec884023a8bf617a89edb7542"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-hidden-grammar-first-revealed-1280.png",
+      "alias": ".github/e/ck.png",
+      "sha256": "4a19de6f82745ef8f07f265d04b9cce3b0c64ebe0ef982d75f266182d3e7ab6f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-hidden-grammar-first-revealed-390.png",
+      "alias": ".github/e/cl.png",
+      "sha256": "15ed9c99dd76a1eed7e057edf10e2fa6c578c8930be261ba125805bd6b8e6160"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-caption-keyboard-focus-1280.png",
+      "alias": ".github/e/cm.png",
+      "sha256": "9f09eec2eef3cc40fc501429bfacc8d6da90aeb23f01153073b98f08ad862ada"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-last-turn-1280.png",
+      "alias": ".github/e/cn.png",
+      "sha256": "34024ba7543866362c4941f36640aff619e09f426d8a41a80c6cc7931fbdad6f"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-ended-1280.png",
+      "alias": ".github/e/co.png",
+      "sha256": "bc5758baec795a4358f31291aa1fb51546e36c38d2249a9b0cfe93b69d3f16ad"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-caption-keyboard-focus-390.png",
+      "alias": ".github/e/cp.png",
+      "sha256": "221c1fd3be9e8294ecfb566f6e519bebd9e7c31bd3a6e1d48ee756e0660eeac2"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-last-turn-390.png",
+      "alias": ".github/e/cq.png",
+      "sha256": "580565a41c912ab20c26b788008cdf2bd2e51b69bc8341b55fdf5f34965899e1"
+    },
+    {
+      "original": ".github/evidence/ux-lab/after-interview-ended-390.png",
+      "alias": ".github/e/cr.png",
+      "sha256": "e1afccad5c0c84b760ec43af04574c42254b83ff2415c59e7e74f82af32332c0"
+    }
+  ]
+}

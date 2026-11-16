@@ -761,6 +761,28 @@ const voiceMessage = {
   composerAccent: '#0E8A57',
 } as const
 
+// Device simulations extracted from the published UX Lab (2026-11-16).
+const simulations = {
+  stackWidth: '560px',
+  canvas: '#1F1F1F',
+  stage: '#2B2B2E',
+  foreground: '#FFFFFF',
+  muted: '#C9C9C9',
+  controls: '#3C4043',
+  active: '#8AB4F8',
+  activeForeground: '#202124',
+  end: '#D92D3A',
+  accept: '#148244',
+  nameBackground: 'rgba(0, 0, 0, 0.45)',
+  captionBackground: 'rgba(0, 0, 0, 0.72)',
+  callBackground: 'linear-gradient(180deg, #1E1B22, #0B0B0D)',
+  callAvatar: '#2E2A33',
+  callCaption: 'rgba(255, 255, 255, 0.08)',
+  callKey: 'rgba(255, 255, 255, 0.12)',
+  callKeyHover: 'rgba(255, 255, 255, 0.22)',
+  outgoingMessage: '#E7F8EE',
+} as const
+
 const exercises = {
   negative: '#CF2634',
   question: '#2563D9',
@@ -779,6 +801,7 @@ const exercises = {
 } as const
 
 export const theme = {
+  simulations,
   exercises,
   voiceMessage,
   slides: slideRecipe,
