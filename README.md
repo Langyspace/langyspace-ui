@@ -167,3 +167,10 @@ receitas de ações, incluindo borda, hover, texto e foco. Use `createTheme` par
 ThemeProvider transmite seus valores também aos portais React. CSS de página, conteúdo, rotas e
 estado do domínio ficam no produto. Não sobrescreva classes privadas da biblioteca para alterar pele,
 fontes ou medidas de seus componentes. As chaves são aditivas; props existentes são preservadas e `closeIcon` é um slot opcional.
+
+# Interactive slide layout
+
+`SlideDeck` provides a scoped viewport with vertical page snapping and navigation. `SlidePage`
+provides the common heading, instructions, tools and content column. Both retain exercise state
+when navigating and leave lesson loading and persistence to the teacher/student applications.
+See [the slide contracts and example](docs/components/slides.md).

@@ -701,7 +701,28 @@ const dialog = {
   closeControl: { position: 'static', top: 'auto', right: 'auto' },
 } as const
 
+// Claude Design A1.01, inspected 2026-11-16: full-height snap pages, 600/1040px content.
+// This module stays self-contained because the build evaluates it to inline theme leaves.
+const slideRecipe = {
+  canvas: '#F7F7F7',
+  surface: '#FFFFFF',
+  foreground: '#0A0A0A',
+  muted: '#6B6B6B',
+  border: '#E2E2E2',
+  accent: '#CC0F45',
+  indicator: '#FF1F5C',
+  inverseCanvas: '#0B0B0C',
+  inverseForeground: '#F7F7F7',
+  inverseMuted: '#A3A3A3',
+  inverseBorder: '#2C2C2C',
+  focusedWidth: '37.5rem',
+  wideWidth: '65rem',
+  headerHeight: '3.5rem',
+  panelRadius: '0.5rem',
+} as const
+
 export const theme = {
+  slides: slideRecipe,
   semantic,
   dialog,
   colors,

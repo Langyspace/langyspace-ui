@@ -20,6 +20,30 @@ export interface ComponentContract {
 
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
+  ...(['SlideDeck', 'SlidePage'] as const).map((exportName) => ({
+    browserSmoke: complete,
+    exportName,
+    interactive: exportName === 'SlideDeck',
+    ownerPath: `src/components/Slide/${exportName}.tsx`,
+    runtimeMarker:
+      exportName === 'SlideDeck' ? 'lsui-sc-slide-deck' : 'lsui-sc-slide-page',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: `stories/components/Slide/${exportName}.stories.tsx`,
+      title: `Slide/${exportName}`,
+    },
+    test: { ...complete, path: `test/components/Slide/${exportName}.test.tsx` },
+    reference: {
+      propsPath: `src/components/Slide/${exportName}.types.ts`,
+      documentation: {
+        path: 'docs/components/slides.md',
+        anchor: exportName.toLowerCase(),
+      },
+      consumers: [],
+    },
+    visual: true,
+  })),
   {
     browserSmoke: complete,
     exportName: 'CardDetailsFields',

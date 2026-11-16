@@ -75,6 +75,8 @@ const {
   FilterPills,
   IconButton,
   MessageBubble,
+  SlideDeck,
+  SlidePage,
   MessageComposer,
   MessageThread,
   MessageThreadHeader,
@@ -610,6 +612,20 @@ try {
           },
           'Message SSR',
         ),
+        createElement(SlideDeck, {
+          label: 'Lesson SSR',
+          pages: [
+            {
+              id: 'intro',
+              label: 'Intro SSR',
+              content: createElement(
+                SlidePage,
+                { title: 'Intro SSR' },
+                'Slide content SSR',
+              ),
+            },
+          ],
+        }),
         createElement(MessageComposer, {
           onSubmit: () => undefined,
           onValueChange: () => undefined,

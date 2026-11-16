@@ -1,0 +1,110 @@
+[
+  {
+    "name": "intro-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "warm-up-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "answered-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "interaction": "wheel, controlled navigation, keyboard, input isolation, state persistence, host isolation",
+    "passed": true
+  },
+  {
+    "interaction": "live resize keeps the current page; smooth navigation settles correctly",
+    "passed": true
+  },
+  {
+    "name": "warm-up-390x844",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "warm-up-844x390",
+    "viewport": {
+      "width": 844,
+      "height": 390
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "warm-up-1280x720",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "long-content-start-390",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "long-content-end-390",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "interaction": "long content remains reachable before the next slide",
+    "passed": true
+  },
+  {
+    "name": "theme-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "long-heading-1280",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "long-heading-390",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  },
+  {
+    "name": "narrow-280",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "horizontalOverflow": false
+  }
+]

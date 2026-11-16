@@ -582,3 +582,10 @@ export type { FlashcardWordSkeletonProps } from './components/Flashcard/Flashcar
 
 export { ShadowingPanel } from './components/Shadowing/ShadowingPanel'
 export type { ShadowingPanelProps } from './components/Shadowing/ShadowingPanel.types'
+export { SlideDeck } from './components/Slide/SlideDeck'
+export type {
+  SlideDeckPage,
+  SlideDeckProps,
+} from './components/Slide/SlideDeck.types'
+export { SlidePage } from './components/Slide/SlidePage'
+export type { SlidePageProps } from './components/Slide/SlidePage.types'
