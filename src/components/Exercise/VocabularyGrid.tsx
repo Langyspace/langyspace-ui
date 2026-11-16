@@ -8,6 +8,7 @@ export function VocabularyGrid({
   onPlay,
   showAll = false,
   showInitial = false,
+  imageVariant = 'isolated',
   revealLabel = 'Mostrar palavra',
   ...props
 }: VocabularyGridProps) {
@@ -19,6 +20,7 @@ export function VocabularyGrid({
           showAll || revealedIds.includes(item.id) || hovered === item.id
         return (
           <Styled.Word
+            $scene={imageVariant === 'scene'}
             key={item.id}
             type="button"
             aria-label={
@@ -44,7 +46,11 @@ export function VocabularyGrid({
               onPlay?.(item.id)
             }}
           >
-            <Styled.WordImage src={item.imageUrl} alt="" />
+            <Styled.WordImage
+              $scene={imageVariant === 'scene'}
+              src={item.imageUrl}
+              alt=""
+            />
             <Styled.QuestionMark aria-hidden="true">
               {showInitial && !revealed ? item.word[0] : '?'}
             </Styled.QuestionMark>

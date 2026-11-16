@@ -10,6 +10,8 @@ A shared capsule with optional heading, counter and media slots. It supplies the
 
 Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
 
+`imageVariant="scene"` gives contextual illustrations a full-card 3:2 frame, retaining the description and word-reveal controls. The default `isolated` keeps existing icon framing. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
+
 ## LearningDialogue
 
 Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.

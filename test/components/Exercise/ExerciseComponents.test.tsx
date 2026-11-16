@@ -16,33 +16,38 @@ const items = [
   },
 ]
 describe('shared exercise contracts', () => {
-  it('delegates vocabulary ids and retains product-controlled reveals', () => {
-    const onReveal = vi.fn(),
-      onPlay = vi.fn()
-    const { rerender } = render(
-      <VocabularyGrid
-        items={items}
-        revealedIds={[]}
-        onReveal={onReveal}
-        onPlay={onPlay}
-      />,
-    )
-    expect(screen.queryByText('feliz')).toBeNull()
-    fireEvent.click(screen.getByRole('button'))
-    expect(onReveal).toHaveBeenCalledWith('happy')
-    expect(onPlay).toHaveBeenCalledWith('happy')
-    rerender(
-      <VocabularyGrid
-        items={items}
-        revealedIds={['happy']}
-        onReveal={onReveal}
-      />,
-    )
-    expect(screen.getByText('feliz')).toBeVisible()
-    expect(
-      screen.getByRole('button', { name: 'happy: feliz' }),
-    ).toHaveAttribute('aria-expanded', 'true')
-  })
+  it.each(['isolated', 'scene'] as const)(
+    'delegates vocabulary ids and retains controlled reveals with %s images',
+    (imageVariant) => {
+      const onReveal = vi.fn(),
+        onPlay = vi.fn()
+      const { rerender } = render(
+        <VocabularyGrid
+          imageVariant={imageVariant}
+          items={items}
+          revealedIds={[]}
+          onReveal={onReveal}
+          onPlay={onPlay}
+        />,
+      )
+      expect(screen.queryByText('feliz')).toBeNull()
+      fireEvent.click(screen.getByRole('button'))
+      expect(onReveal).toHaveBeenCalledWith('happy')
+      expect(onPlay).toHaveBeenCalledWith('happy')
+      rerender(
+        <VocabularyGrid
+          imageVariant={imageVariant}
+          items={items}
+          revealedIds={['happy']}
+          onReveal={onReveal}
+        />,
+      )
+      expect(screen.getByText('feliz')).toBeVisible()
+      expect(
+        screen.getByRole('button', { name: 'happy: feliz' }),
+      ).toHaveAttribute('aria-expanded', 'true')
+    },
+  )
   it('exposes translations and playback through independent stable line callbacks', () => {
     const onTranslate = vi.fn(),
       onPlay = vi.fn()

@@ -12,13 +12,15 @@ export const Vocabulary = styled.div.withConfig({
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 `
-export const Word = styled(Pressable)`
+export const Word = styled(Pressable)<{ $scene: boolean }>`
   position: relative;
   display: grid;
   place-items: center;
   min-width: 0;
   min-height: ${theme.exercises.vocabularyHeight};
-  padding: ${theme.spacing[2]};
+  padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
+  aspect-ratio: ${(p) => (p.$scene ? '3 / 2' : 'auto')};
+  overflow: ${(p) => (p.$scene ? 'hidden' : 'visible')};
   border: 1px solid ${(p) => recipe(p).border};
   border-radius: ${theme.radius.lg};
   background: ${(p) => recipe(p).surface};
@@ -29,10 +31,12 @@ export const Word = styled(Pressable)`
     outline-offset: 2px;
   }
 `
-export const WordImage = styled.img`
+export const WordImage = styled.img<{ $scene: boolean }>`
+  position: ${(p) => (p.$scene ? 'absolute' : 'static')};
+  inset: 0;
   width: 100%;
-  height: ${theme.exercises.vocabularyImageHeight};
-  object-fit: contain;
+  height: ${(p) => (p.$scene ? '100%' : theme.exercises.vocabularyImageHeight)};
+  object-fit: ${(p) => (p.$scene ? 'cover' : 'contain')};
 `
 export const QuestionMark = styled.span`
   position: absolute;

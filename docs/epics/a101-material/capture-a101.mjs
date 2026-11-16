@@ -72,6 +72,7 @@ const verifyScene = async (number) => {
   if ((number >= 21 && number <= 26) || (number >= 51 && number <= 56)) {
     const bounded = await active()
       .locator('img')
+      .first()
       .evaluate((image) => {
         const r = image.getBoundingClientRect(),
           p = image.parentElement.getBoundingClientRect()

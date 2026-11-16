@@ -47,3 +47,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 The A1.01 catalog fixtures reuse original Microsoft Fluent Emoji assets from the user-provided lesson prototype under the MIT license. The complete notice is in stories/materials/A101/assets/FLUENT-EMOJI-LICENSE.txt and included in the A1.01 catalog documentation. These fixture images are not exported as library components.
+
+A1.01 country clues use the 4×3 SVGs from flag-icons 7.5.0, Copyright (c) 2013 Panayiotis Lipiridis, under the MIT license. The complete notice is in stories/materials/A101/assets/FLAG-ICONS-LICENSE.txt. Generated contextual illustrations are recorded separately in stories/materials/A101/assets/generated-scenes.json.

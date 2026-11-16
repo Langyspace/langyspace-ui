@@ -14,11 +14,14 @@ import {
   image,
   warmUpImage,
   warmUpImageAlt,
+  warmUpFlag,
+  countryFlag,
   gapTexts,
   gapAnswers,
   questions,
   trueForYou,
-  feelings,
+  guestImage,
+  guestImageAlt,
   homeworkMessage,
 } from './A101.data'
 import * as Styled from './A101.styles'
@@ -29,7 +32,11 @@ import type {
   TranslatedTextProps,
   VerbPhraseProps,
 } from './A101.sections.types'
-export function VocabularySection({ items, speak }: VocabularySectionProps) {
+export function VocabularySection({
+  items,
+  speak,
+  imageVariant = 'isolated',
+}: VocabularySectionProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [all, setAll] = useState(false)
   const [hint, setHint] = useState(false)
@@ -37,6 +44,7 @@ export function VocabularySection({ items, speak }: VocabularySectionProps) {
     <Styled.Stack>
       <VocabularyGrid
         items={items}
+        imageVariant={imageVariant}
         revealedIds={revealed}
         showAll={all}
         showInitial={hint}
@@ -106,11 +114,15 @@ export function WarmUpSection({ item, index, speak }: WarmUpSectionProps) {
       title={item.t}
       counter={`${index + 1} / 6`}
       media={
-        <Styled.WarmImage
-          src={warmUpImage(item)}
-          alt={warmUpImageAlt(item)}
-          $feeling={item.im.startsWith('wu')}
-        />
+        <Styled.WarmScene>
+          <Styled.WarmImage
+            src={warmUpImage(item)}
+            alt={warmUpImageAlt(item)}
+          />
+          {warmUpFlag(item) ? (
+            <Styled.CountryFlag src={warmUpFlag(item)} alt="" />
+          ) : null}
+        </Styled.WarmScene>
       }
     >
       {item.o.map((option, i) => (
@@ -408,17 +420,11 @@ export function GuessWho() {
               {found.includes(name) ? ' ✓' : ''}
             </b>
             <Styled.GuestImages>
-              <img src={image(country)} alt={country.replace('fl_', '')} />
-              <img
-                src={
-                  feelings.find((item) => item.id === feeling.replace('_s', ''))
-                    ?.imageUrl
-                }
-                alt={
-                  feelings.find((item) => item.id === feeling.replace('_s', ''))
-                    ?.translation
-                }
+              <Styled.GuestScene
+                src={guestImage(name)}
+                alt={guestImageAlt(name, country, feeling)}
               />
+              <Styled.CountryFlag src={countryFlag(country)} alt="" />
             </Styled.GuestImages>
           </Styled.Guest>
         ))}

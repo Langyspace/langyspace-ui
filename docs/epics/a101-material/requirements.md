@@ -1,7 +1,7 @@
 # Requirements
 
 - Use the current source order: 1,21,22,23,24,25,26,4,51,52,53,54,55,56,6,14,71,72,16,17,8,9,10,18,15,13.
-- Keep source content, images, answer keys and feedback; do not add retired pronunciation, Right or wrong, or party pages.
+- Keep source content, answer keys and feedback; do not add retired pronunciation, Right or wrong, or party pages. User correction: prototype emojis are examples, replaced by generated illustrations with contextual backgrounds. Preserve exact flag assets for country clues.
 - Shared components accept semantic data and callbacks. Products own correctness, language, media URLs, learner identity, persistence and homework destinations.
 - Keyboard and touch work without hover. Reveal controls expose expanded state, selected answers retain feedback in text, and matching reports outcomes without relying only on color.
 - Correct answers persist when revisiting a page. Wrong attempts allow another choice. Matching never accepts an incorrect pair. Gap answers/reveals follow the six source blanks.

@@ -2,6 +2,7 @@ import type { VocabularyItem } from '../../../src/components/Exercise/Vocabulary
 import type { WarmUpData, SpeechLine } from './A101.types'
 export interface VocabularySectionProps {
   items: readonly VocabularyItem[]
+  imageVariant?: 'isolated' | 'scene'
   speak: (lines: readonly SpeechLine[]) => void
 }
 export interface WarmUpSectionProps {

@@ -100,14 +100,9 @@ export const Guest = styled(ChoiceCard)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: ${theme.spacing[3]};
-  padding: ${theme.spacing[4]};
+  gap: ${theme.spacing[2]};
+  padding: ${theme.spacing[2]};
   font: inherit;
-  img {
-    width: 44%;
-    height: ${theme.spacing[16]};
-    object-fit: contain;
-  }
 `
 export const Gap = styled(Button)`
   min-width: ${theme.spacing[12]};
@@ -249,13 +244,19 @@ export const Prompts = styled.div`
   flex-wrap: wrap;
 `
 export const GuestImages = styled.span`
-  display: flex;
-  gap: ${theme.spacing[3]};
-  img {
-    width: ${theme.spacing[16]};
-    height: ${theme.spacing[16]};
-    object-fit: contain;
-  }
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: ${theme.radius.md};
+`
+export const GuestScene = styled.img`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 `
 export const AudioError = styled.p`
   position: fixed;
@@ -277,14 +278,37 @@ export const Eyebrow = styled.span`
   letter-spacing: 0.12em;
 `
 
-export const WarmImage = styled.img<{ $feeling: boolean }>`
+export const WarmScene = styled.div`
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 100%;
+  aspect-ratio: 1;
+  max-width: 100%;
+  border-radius: ${theme.radius.lg};
+  overflow: hidden;
+`
+export const WarmImage = styled.img`
   && {
     min-width: 0;
     min-height: 0;
     max-height: 100%;
-    height: ${(p) => (p.$feeling ? '60%' : '100%')};
+    height: 100%;
     width: 100%;
     object-fit: contain;
+  }
+`
+export const CountryFlag = styled.img`
+  && {
+    position: absolute;
+    right: ${theme.spacing[2]};
+    bottom: ${theme.spacing[2]};
+    width: ${theme.spacing[12]};
+    height: ${theme.spacing[8]};
+    object-fit: contain;
+    border: 2px solid ${theme.colors.palette.white};
+    border-radius: ${theme.radius.sm};
+    background: ${theme.colors.palette.white};
   }
 `
 

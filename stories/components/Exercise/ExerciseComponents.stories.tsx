@@ -7,8 +7,16 @@ import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
-import { feelings } from '../../materials/A101/A101.data'
+import { feelings, image } from '../../materials/A101/A101.data'
 import * as Styled from './ExerciseComponents.stories.styles'
+const isolatedFeelings = feelings.slice(0, 3).map((item, index) => ({
+  ...item,
+  imageUrl: image(
+    ['f_beaming_face_with_smiling_eyes', 'f_crying_face', 'f_yawning_face'][
+      index
+    ]!,
+  ),
+}))
 function ComponentsPreview() {
   const [revealed, setRevealed] = useState<string[]>([])
   const [answer, setAnswer] = useState(false)
@@ -20,7 +28,7 @@ function ComponentsPreview() {
     <Styled.Preview>
       <ExercisePanel title="Vocabulary" counter="1 / 2">
         <VocabularyGrid
-          items={feelings.slice(0, 3)}
+          items={isolatedFeelings}
           revealedIds={revealed}
           onReveal={(id) => setRevealed((old) => [...old, id])}
         />
@@ -111,4 +119,35 @@ export const Dark: Story = {
       </ThemeProvider>
     ),
   ],
+}
+function ScenesPreview() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        items={feelings}
+        imageVariant="scene"
+        revealedIds={revealed}
+        onReveal={(id) =>
+          setRevealed((old) =>
+            old.includes(id)
+              ? old.filter((value) => value !== id)
+              : [...old, id],
+          )
+        }
+      />
+    </Styled.Preview>
+  )
+}
+export const ContextualScenes: Story = { render: () => <ScenesPreview /> }
+export const DarkScenes: Story = {
+  ...Dark,
+  render: () => <ScenesPreview />,
+}
+export const NarrowScenes: Story = {
+  render: () => (
+    <Styled.Narrow>
+      <ScenesPreview />
+    </Styled.Narrow>
+  ),
 }

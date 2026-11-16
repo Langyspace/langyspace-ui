@@ -16,5 +16,7 @@ export interface VocabularyGridProps extends Omit<
   onPlay?: (id: string) => void
   showAll?: boolean
   showInitial?: boolean
+  /** Contextual scenes fill the card; isolated illustrations retain their existing framing. */
+  imageVariant?: 'isolated' | 'scene'
   revealLabel?: string
 }

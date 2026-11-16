@@ -61,7 +61,11 @@ export function A101Lesson({
               <h3>Guess the word</h3>
               <p>Observe a imagem e tente adivinhar a palavra.</p>
             </Styled.VocabularyHeading>
-            <VocabularySection items={feelings} speak={speech.speak} />
+            <VocabularySection
+              items={feelings}
+              imageVariant="scene"
+              speak={speech.speak}
+            />
           </SlidePage>
         ),
       }

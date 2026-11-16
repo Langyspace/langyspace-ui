@@ -6,6 +6,8 @@ Reuse SlideDeck, SlidePage, VoiceMessageExercise, Button, ChoiceCard, Avatar and
 
 Catalog ownership: stories/materials/A101 contains source data, answer evaluation, matching state, speech orchestration, teacher-note window, homework clipboard fallback and all 26 page compositions. No lesson copy/answer keys enter src or root exports. Source images are extracted unchanged from the local published artifact; retain hashes/provenance.
 
+User-directed image revision: generated contextual scene assets replace the prototype emoji examples in exercises. Preserve original source files for provenance; record generated images and prompts separately. `VocabularyGrid` gains an opt-in scene image frame while retaining its isolated default. Exact country flag assets are composed independently from the generated illustrations. The producer adaptation and the delivered built-in-generation batch are documented in `image-generation.md`; provider implementation stays outside the component library.
+
 Validation budget: one focused interaction/SSR/manifest and static/API check group; one browser and Storybook group covering source order, reveal/feedback/matching/gaps, slide-state persistence, transcript, audio cancellation, notes and copying. CI owns broad gates. Inspect rendered desktop/mobile pages and keep matching before/after evidence in PR #42.
 
 Review: product scope follows the current 26 screens; no route/auth/data migrations. Technical ownership avoids a public A101 component and duplicate answer evaluators. Accessibility uses native buttons, labeled controls and explicit feedback. Package adoption remains a documented release dependency rather than a local-source alias or unpublished package pin.

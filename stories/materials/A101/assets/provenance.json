@@ -41,5 +41,10 @@
   "dialogueAndVocabularyAudio": "Browser speech, as in the live prototype; final recordings pending",
   "fluentEmojiLicense": "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE",
   "previousPublishedHtmlSha256": "57440784b9218344ce68ebc31c409eb4392a81805da53b6b99520e087bb42b8e",
-  "latestChange": "Country warm-up USA: changed incorrect first choice to “He’s not from the USA.” with corresponding feedback. Original binary images and SVG flag builders unchanged."
+  "latestChange": "Country warm-up USA: changed incorrect first choice to “He’s not from the USA.” with corresponding feedback. Original binary images and SVG flag builders unchanged.",
+  "generatedScenes": {
+    "promptSet": "../image-scenes.json",
+    "provenance": "generated-scenes.json",
+    "reason": "User clarified that prototype emoji images are examples; exercise images require contextual backgrounds."
+  }
 }
