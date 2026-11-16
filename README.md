@@ -179,3 +179,9 @@ See [the slide contracts and example](docs/components/slides.md).
 playback, second-listen transcript and controlled listening questions. See
 [the voice-message contract](docs/components/voice-message.md). Media URLs, answer evaluation and
 recording actions belong to the teacher/student consumers.
+
+`Materials/A1.01` demonstrates the complete 26-screen lesson using shared vocabulary,
+dialogue, matching and reveal contracts. Lesson content stays in catalog fixtures; see
+[exercise components](docs/components/exercises.md) and the
+[delivery plan](docs/epics/a101-material/epic.md). Portal adoption follows visual approval and
+the official package release.

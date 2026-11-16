@@ -9,6 +9,29 @@ const ConsumerSurface = styled.div`
 
 const sharedUi = await import('@langyspace/ui')
 const { ControlledField } = await import('@langyspace/ui/form')
+for (const [name, props] of [
+  ['ExercisePanel', { title: 'Example' }],
+  ['VocabularyGrid', { items: [], revealedIds: [], onReveal() {} }],
+  ['LearningDialogue', { lines: [] }],
+  ['RevealCard', { children: 'Prompt', answer: 'Answer', revealed: false }],
+  [
+    'MatchPairs',
+    {
+      questions: [],
+      answers: [],
+      matches: {},
+      questionLabel: 'Q',
+      answerLabel: 'A',
+      onQuestionSelect() {},
+      onAnswerSelect() {},
+    },
+  ],
+]) {
+  const output = renderToString(createElement(sharedUi[name], props))
+  if (!output.includes('lsui-sc-'))
+    throw new Error(`Missing exercise SSR output: ${name}`)
+}
+
 for (const name of [
   'EmptyState',
   'LoadingState',

@@ -597,3 +597,17 @@ export type {
   VoiceMessageExerciseProps,
 } from './components/VoiceMessage/VoiceMessageExercise.types'
 export type { SlidePageProps } from './components/Slide/SlidePage.types'
+
+export { ExercisePanel } from './components/Exercise/ExercisePanel'
+export type { ExercisePanelProps } from './components/Exercise/ExercisePanel.types'
+export { VocabularyGrid } from './components/Exercise/VocabularyGrid'
+export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.types'
+export { LearningDialogue } from './components/Exercise/LearningDialogue'
+export type { LearningDialogueProps } from './components/Exercise/LearningDialogue.types'
+export { RevealCard } from './components/Exercise/RevealCard'
+export type { RevealCardProps } from './components/Exercise/RevealCard.types'
+export { MatchPairs } from './components/Exercise/MatchPairs'
+export type { MatchPairsProps } from './components/Exercise/MatchPairs.types'
+export type { VocabularyItem } from './components/Exercise/VocabularyGrid.types'
+export type { LearningDialogueLine } from './components/Exercise/LearningDialogue.types'
+export type { MatchPairItem } from './components/Exercise/MatchPairs.types'

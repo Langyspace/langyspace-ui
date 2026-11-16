@@ -22,6 +22,136 @@ const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
     browserSmoke: complete,
+    exportName: 'ExercisePanel',
+    interactive: false,
+    ownerPath: 'src/components/Exercise/ExercisePanel.tsx',
+    runtimeMarker: 'lsui-sc-exercise-panel',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ExerciseComponents.stories.tsx',
+      title: 'Exercise/Components',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ExerciseComponents.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/ExercisePanel.types.ts',
+      documentation: {
+        path: 'docs/components/exercises.md',
+        anchor: 'exercisepanel',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'VocabularyGrid',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/VocabularyGrid.tsx',
+    runtimeMarker: 'lsui-sc-vocabulary-grid',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ExerciseComponents.stories.tsx',
+      title: 'Exercise/Components',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ExerciseComponents.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/VocabularyGrid.types.ts',
+      documentation: {
+        path: 'docs/components/exercises.md',
+        anchor: 'vocabularygrid',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'LearningDialogue',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/LearningDialogue.tsx',
+    runtimeMarker: 'lsui-sc-learning-dialogue',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ExerciseComponents.stories.tsx',
+      title: 'Exercise/Components',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ExerciseComponents.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/LearningDialogue.types.ts',
+      documentation: {
+        path: 'docs/components/exercises.md',
+        anchor: 'learningdialogue',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'RevealCard',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/RevealCard.tsx',
+    runtimeMarker: 'lsui-sc-reveal-card',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ExerciseComponents.stories.tsx',
+      title: 'Exercise/Components',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ExerciseComponents.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/RevealCard.types.ts',
+      documentation: {
+        path: 'docs/components/exercises.md',
+        anchor: 'revealcard',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'MatchPairs',
+    interactive: true,
+    ownerPath: 'src/components/Exercise/MatchPairs.tsx',
+    runtimeMarker: 'lsui-sc-match-pairs',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ExerciseComponents.stories.tsx',
+      title: 'Exercise/Components',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ExerciseComponents.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/MatchPairs.types.ts',
+      documentation: {
+        path: 'docs/components/exercises.md',
+        anchor: 'matchpairs',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'VoiceMessageExercise',
     interactive: true,
     ownerPath: 'src/components/VoiceMessage/VoiceMessageExercise.tsx',

@@ -754,7 +754,16 @@ const voiceMessage = {
   composerAccent: '#0E8A57',
 } as const
 
+const exercises = {
+  mediaHeight: '10.625rem',
+  vocabularyHeight: '7.625rem',
+  vocabularyImageHeight: '4.5rem',
+  mediaBackground:
+    'radial-gradient(120% 90% at 50% 38%, #FFF6F8 0%, #FFE3EB 70%, #FFD6E1 100%)',
+} as const
+
 export const theme = {
+  exercises,
   voiceMessage,
   slides: slideRecipe,
   semantic,

@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
 import type { QuizOptionState } from './QuizOption.types'
@@ -41,7 +41,7 @@ export const OptionText = styled.span<{ $state: QuizOptionState }>`
 
 export const Option = styled(Pressable).withConfig({
   componentId: 'lsui-sc-quiz-option',
-})<{ $state: QuizOptionState }>`
+})<{ $state: QuizOptionState; $density: 'regular' | 'compact' }>`
   position: relative;
   display: flex;
   align-items: center;
@@ -101,4 +101,15 @@ export const Option = styled(Pressable).withConfig({
     min-height: 3.5rem;
     padding: ${theme.spacing[3]} ${theme.spacing[3]};
   }
+  ${({ $density }) =>
+    $density === 'compact' &&
+    css`
+      min-height: ${theme.sizes.control.lg};
+      padding: ${theme.spacing[1]} ${theme.spacing[2]};
+      border-radius: ${theme.radius.lg};
+      ${OptionText} {
+        font-size: ${theme.typography.fontSize.lg};
+        font-weight: ${theme.typography.fontWeight.bold};
+      }
+    `}
 `

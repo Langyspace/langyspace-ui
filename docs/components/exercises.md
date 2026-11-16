@@ -1,0 +1,31 @@
+# Exercise components
+
+The teacher and student compose these contracts with `SlidePage` and `SlideDeck`. `Materials/A1.01` is the complete 26-screen source fixture; lesson data, answer keys, synthesis, homework destinations and private teacher notes are catalog fixtures, not package exports.
+
+## ExercisePanel
+
+A shared capsule with optional heading, counter and media slots. It supplies the measured compact exercise layout, without owning options, media playback or scoring.
+
+## VocabularyGrid
+
+Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
+
+## LearningDialogue
+
+Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.
+
+## RevealCard
+
+Controlled native button with a numbered marker, prompt, hidden answer and expanded state. The product supplies `revealed`, `answer` and the click action. This supports turning statements into questions and checking answers without an evaluator inside the library.
+
+## MatchPairs
+
+Two named groups with stable question/answer ids. Products supply the selected question, completed matches, incorrect answer and handlers. Only the product evaluates correctness. Completed choices are disabled; status text and check/cross marks expose feedback beyond color. Long content wraps in both columns and remains usable at narrow widths.
+
+## QuizOption compact density
+
+`density="compact"` opts into a 48px slide option, using the existing default/correct/wrong/dim contract. The default `regular` density retains the existing practice appearance.
+
+All components use styled-components and the shared theme, native keyboard semantics and visible focus. Interactive examples, narrow content and theme overrides live in `Exercise/Components`. Source copying never imports a lesson or an application route into the public package.
+
+Exercise layouts use the enclosing inline-size container supplied by `SlideDeck`. A standalone host supplies `container-type: inline-size`, as shown by the component stories, so the same narrow-container rules apply without a global stylesheet.
