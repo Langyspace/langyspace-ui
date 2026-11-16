@@ -151,3 +151,27 @@ export const NarrowScenes: Story = {
     </Styled.Narrow>
   ),
 }
+function TooltipVocabularyPreview() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        items={feelings}
+        imageVariant="scene"
+        columns={3}
+        revealVariant="tooltip"
+        revealedIds={revealed}
+        onReveal={(id) =>
+          setRevealed((old) =>
+            old.includes(id)
+              ? old.filter((value) => value !== id)
+              : [...old, id],
+          )
+        }
+      />
+    </Styled.Preview>
+  )
+}
+export const FixedColumnsWithTooltips: Story = {
+  render: () => <TooltipVocabularyPreview />,
+}

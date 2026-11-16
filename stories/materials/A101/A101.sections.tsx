@@ -1,10 +1,7 @@
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
-import { Button } from '../../../src/components/Button/Button'
-import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
-import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
@@ -42,9 +39,13 @@ export function VocabularySection({
   const [hint, setHint] = useState(false)
   return (
     <Styled.Stack>
-      <VocabularyGrid
+      <Styled.LessonVocabulary
+        $regular={imageVariant !== 'scene'}
         items={items}
         imageVariant={imageVariant}
+        columns={3}
+        revealVariant="tooltip"
+        density={imageVariant === 'scene' ? 'compact' : 'regular'}
         revealedIds={revealed}
         showAll={all}
         showInitial={hint}
@@ -231,10 +232,10 @@ export function DialogueQuestions() {
   return (
     <Styled.Stack>
       {questions.map((question, index) => (
-        <Styled.SpeakingCard key={question}>
+        <Styled.DialogueQuestion key={question}>
           <Styled.Number>{index + 1}</Styled.Number>
           <strong>{question}</strong>
-        </Styled.SpeakingCard>
+        </Styled.DialogueQuestion>
       ))}
     </Styled.Stack>
   )
@@ -302,17 +303,21 @@ export function GrammarTable() {
 export function GrammarNegative() {
   return (
     <Styled.TwoColumns>
-      <Styled.Card>
-        <h3>− Negative</h3>
+      <Styled.GrammarCard $kind="negative">
+        <h3>
+          <span aria-hidden="true">−</span>Negative
+        </h3>
         <Styled.Stack>
           {lesson.G_NEG.map(([text, translation]) => (
             <TranslatedText key={text} text={text} translation={translation} />
           ))}
         </Styled.Stack>
         <p>is not = isn’t · are not = aren’t</p>
-      </Styled.Card>
-      <Styled.Card>
-        <h3>? Questions</h3>
+      </Styled.GrammarCard>
+      <Styled.GrammarCard $kind="question">
+        <h3>
+          <span aria-hidden="true">?</span>Questions
+        </h3>
         <Styled.Stack>
           {lesson.G_Q.map(([text, translation, answer]) => (
             <div key={text}>
@@ -321,15 +326,15 @@ export function GrammarNegative() {
             </div>
           ))}
         </Styled.Stack>
-      </Styled.Card>
+      </Styled.GrammarCard>
     </Styled.TwoColumns>
   )
 }
 export function TrueForYou() {
   return (
-    <Styled.TwoColumns>
+    <Styled.TrueGrid>
       {trueForYou.map((text, index) => (
-        <Styled.SpeakingCard key={text}>
+        <Styled.TrueCard key={text} $index={index}>
           <Styled.Number>{index + 1}</Styled.Number>
           <strong>{text}</strong>
           <small>
@@ -337,9 +342,9 @@ export function TrueForYou() {
               ? 'True ✓ or not true ✗?'
               : 'e.g. I’m not American. I’m Brazilian.'}
           </small>
-        </Styled.SpeakingCard>
+        </Styled.TrueCard>
       ))}
-    </Styled.TwoColumns>
+    </Styled.TrueGrid>
   )
 }
 export function MatchingSection() {
@@ -459,9 +464,9 @@ export function MakeQuestions() {
 export function ConversationSection() {
   const [marked, setMarked] = useState<string[]>([])
   return (
-    <Styled.ThreeColumns>
+    <Styled.TalkGrid>
       {lesson.TALK.map((text, index) => (
-        <ChoiceCard
+        <Styled.TalkQuestion
           key={text}
           aria-pressed={marked.includes(text)}
           onClick={() =>
@@ -475,16 +480,16 @@ export function ConversationSection() {
           <Styled.Number>{index + 1}</Styled.Number>
           <b>{text}</b>
           {marked.includes(text) ? <span aria-hidden="true">✓</span> : null}
-        </ChoiceCard>
+        </Styled.TalkQuestion>
       ))}
-    </Styled.ThreeColumns>
+    </Styled.TalkGrid>
   )
 }
 export function HomeworkSection() {
   const [copied, setCopied] = useState(false)
   const [fallback, setFallback] = useState(false)
   return (
-    <Styled.Stack>
+    <Styled.HomeworkStack>
       {lesson.HW13.map((item, index) => (
         <Styled.Homework key={item.t}>
           <img
@@ -498,8 +503,8 @@ export function HomeworkSection() {
         </Styled.Homework>
       ))}
       <Styled.Tools>
-        <Button
-          variant="primary"
+        <Styled.HomeworkCopy
+          variant="brand"
           onClick={() => {
             void (async () => {
               try {
@@ -513,7 +518,7 @@ export function HomeworkSection() {
           }}
         >
           {copied ? 'Copied ✓' : 'Copy links'}
-        </Button>
+        </Styled.HomeworkCopy>
       </Styled.Tools>
       {fallback ? (
         <label>
@@ -525,7 +530,7 @@ export function HomeworkSection() {
           />
         </label>
       ) : null}
-    </Styled.Stack>
+    </Styled.HomeworkStack>
   )
 }
 

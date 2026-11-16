@@ -86,9 +86,23 @@ export function TeacherNotes({ pageId }: TeacherNotesProps) {
   }, [popup])
   return (
     <>
-      <Button
+      <Styled.NotesButton
         variant="secondary"
-        size="sm"
+        size="md"
+        aria-label="Notas da professora"
+        iconStart={
+          <svg
+            aria-hidden="true"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
+            <path d="m16 3 5 5M4 20l4-1L20 7a3.5 3.5 0 0 0-5-5L3 14l-1 7zM11 21h10" />
+          </svg>
+        }
         onClick={() => {
           if (popup && !popup.closed) {
             popup.focus()
@@ -109,8 +123,8 @@ export function TeacherNotes({ pageId }: TeacherNotesProps) {
           setPopup(opened)
         }}
       >
-        Notas da professora
-      </Button>
+        Notes
+      </Styled.NotesButton>
       {blocked ? (
         <small role="status">Permita abrir a janela das notas.</small>
       ) : null}

@@ -1,4 +1,3 @@
-import { Button } from '../Button/Button'
 import { useSlideNavigation } from './useSlideNavigation'
 import * as Styled from './SlideDeck.styles'
 import type { SlideDeckProps } from './SlideDeck.types'
@@ -21,33 +20,31 @@ export function SlideDeck({
   return (
     <Styled.Root {...props}>
       <Styled.Navigation aria-label={label}>
-        <div>
-          {index > 0 ? (
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => {
-                goToIndex(index - 1)
-                viewportRef.current?.focus({ preventScroll: true })
-              }}
-              iconStart={
-                <svg
-                  aria-hidden="true"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path d="m12 5-7 7 7 7M5 12h14" />
-                </svg>
-              }
-            >
-              {previousPageLabel}
-            </Button>
-          ) : null}
-        </div>
+        {index > 0 ? (
+          <Styled.BackButton
+            variant="secondary"
+            size="sm"
+            onClick={() => {
+              goToIndex(index - 1)
+              viewportRef.current?.focus({ preventScroll: true })
+            }}
+            iconStart={
+              <svg
+                aria-hidden="true"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="m12 5-7 7 7 7M5 12h14" />
+              </svg>
+            }
+          >
+            {previousPageLabel}
+          </Styled.BackButton>
+        ) : null}
         {actions ? <Styled.Actions>{actions}</Styled.Actions> : null}
       </Styled.Navigation>
       {pages.length > 0 ? (

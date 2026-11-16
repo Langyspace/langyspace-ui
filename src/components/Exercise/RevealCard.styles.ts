@@ -12,15 +12,21 @@ export const Reveal = styled(Pressable).withConfig({
   gap: ${theme.spacing[4]};
   width: 100%;
   min-width: 0;
-  padding: ${theme.spacing[4]};
-  border: 1px solid ${(p) => recipe(p).border};
-  border-radius: ${theme.radius.lg};
+  min-height: 52px;
+  padding: ${theme.spacing[2]} ${theme.spacing[4]};
+  border: 1.5px solid ${(p) => recipe(p).border};
+  border-radius: ${theme.radius.xl};
   background: ${(p) => recipe(p).surface};
   color: ${(p) => recipe(p).foreground};
   text-align: left;
   font: inherit;
+  font-size: ${theme.typography.fontSize.lg};
   cursor: pointer;
   overflow-wrap: anywhere;
+  @container (max-height: ${theme.viewportHeights.lg}) {
+    min-height: 44px;
+    padding-block: ${theme.spacing[1]};
+  }
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 2px;

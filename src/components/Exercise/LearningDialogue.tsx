@@ -1,4 +1,3 @@
-import { Avatar } from '../Avatar/Avatar'
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './LearningDialogue.styles'
 import type { LearningDialogueProps } from './LearningDialogue.types'
@@ -15,14 +14,14 @@ export function LearningDialogue({
       {lines.map((line) => (
         <Styled.DialogueLine key={line.id} $side={line.side}>
           <Styled.Speaker>
-            <Avatar
+            <Styled.SpeakerAvatar
               size="sm"
               imageUrl={line.avatarUrl}
               initials={line.speaker.slice(0, 2)}
             />
             <small>{line.speaker}</small>
           </Styled.Speaker>
-          <Styled.Speech $playing={playingId === line.id}>
+          <Styled.Speech $playing={playingId === line.id} $side={line.side}>
             {onTranslate && line.translation ? (
               <Styled.Translate
                 type="button"

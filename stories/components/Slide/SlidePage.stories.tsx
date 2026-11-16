@@ -26,6 +26,21 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = { tags: ['visual-review'] }
 export const Focused: Story = { args: { width: 'focused' } }
+export const Reading: Story = { args: { width: 'reading', density: 'compact' } }
+export const WithIntroduction: Story = {
+  args: {
+    lead: (
+      <div>
+        <h1>Introduce yourself</h1>
+        <p>Dizer o seu nome, de onde você é e como você está.</p>
+      </div>
+    ),
+    eyebrow: 'Vocabulary',
+    title: 'Guess the word',
+    instruction: 'Observe a imagem e tente adivinhar a palavra.',
+    width: 'standard',
+  },
+}
 export const Inverse: Story = {
   args: {
     tone: 'inverse',

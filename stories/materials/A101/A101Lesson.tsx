@@ -46,26 +46,41 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="standard"
-            eyebrow="A1 · Lesson 01"
-            title={
-              <Styled.Hero>
-                Introduce <em>yourself</em>
-              </Styled.Hero>
+            lead={
+              <Styled.Introduction>
+                <Styled.LessonEyebrow>
+                  <b>A1</b>Lesson 01
+                </Styled.LessonEyebrow>
+                <Styled.Hero>
+                  Introduce <em>yourself</em>
+                </Styled.Hero>
+                <Styled.Goal>
+                  <Styled.GoalStar aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path
+                        d="M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </Styled.GoalStar>
+                  <p>
+                    <b>Goal</b>Dizer o seu nome, de onde você é e como você
+                    está.
+                  </p>
+                </Styled.Goal>
+              </Styled.Introduction>
             }
+            eyebrow="Vocabulary"
+            title="Guess the word"
+            instruction="Observe a imagem e tente adivinhar a palavra."
           >
-            <Styled.Goal>
-              <b>Goal</b>Dizer o seu nome, de onde você é e como você está.
-            </Styled.Goal>
-            <Styled.VocabularyHeading>
-              <Styled.Eyebrow>Vocabulary</Styled.Eyebrow>
-              <h3>Guess the word</h3>
-              <p>Observe a imagem e tente adivinhar a palavra.</p>
-            </Styled.VocabularyHeading>
-            <VocabularySection
-              items={feelings}
-              imageVariant="scene"
-              speak={speech.speak}
-            />
+            <Styled.IntroVocabulary>
+              <VocabularySection
+                items={feelings}
+                imageVariant="scene"
+                speak={speech.speak}
+              />
+            </Styled.IntroVocabulary>
           </SlidePage>
         ),
       }
@@ -112,7 +127,8 @@ export function A101Lesson({
         label: 'Guided conversation · Nice to meet you',
         content: (
           <SlidePage
-            width="standard"
+            width="reading"
+            density="compact"
             eyebrow="Guided conversation"
             instruction="Escute o áudio e depois leia o texto com a sua professora."
             title={
@@ -120,7 +136,7 @@ export function A101Lesson({
                 Nice to meet you
                 <IconButton
                   variant="brand"
-                  size="sm"
+                  size="md"
                   aria-label={
                     speech.playingId?.startsWith('R.')
                       ? speech.paused
@@ -146,8 +162,8 @@ export function A101Lesson({
                 >
                   <svg
                     aria-hidden="true"
-                    width="14"
-                    height="14"
+                    width="18"
+                    height="18"
                     viewBox="0 0 24 24"
                     fill="currentColor"
                   >
@@ -174,7 +190,7 @@ export function A101Lesson({
         label: 'Guided conversation · Questions',
         content: (
           <SlidePage
-            width="focused"
+            width="reading"
             eyebrow="Guided conversation"
             title="Questions"
             instruction="Responda as perguntas sobre o diálogo."
@@ -203,7 +219,7 @@ export function A101Lesson({
         label: 'Grammar · Negative and questions',
         content: (
           <SlidePage
-            width="standard"
+            width="wide"
             eyebrow="Grammar · Verb to be"
             title="Negative and questions"
             instruction="Clique na frase para ver a tradução."
@@ -218,7 +234,7 @@ export function A101Lesson({
         label: 'Practice · True for you',
         content: (
           <SlidePage
-            width="standard"
+            width="wide"
             eyebrow="Practice · Speaking"
             title="True for you? If not, say it in the negative"
             instruction="Leia a frase. Se não for verdade para você, diga na negativa."
@@ -233,7 +249,7 @@ export function A101Lesson({
         label: 'Practice · Match',
         content: (
           <SlidePage
-            width="standard"
+            width="wide"
             eyebrow="Practice · Questions & answers"
             title="Match the questions and the answers"
             instruction="Clique numa pergunta e depois na resposta certa."
@@ -248,7 +264,7 @@ export function A101Lesson({
         label: 'Guided conversation · Complete',
         content: (
           <SlidePage
-            width="standard"
+            width="reading"
             eyebrow="Guided conversation"
             title="Nice to meet you"
             instruction="Complete os espaços e depois leia o diálogo com a sua professora."
@@ -312,7 +328,7 @@ export function A101Lesson({
         label: 'Practice · Make it a question',
         content: (
           <SlidePage
-            width="standard"
+            width="exercise"
             eyebrow="Practice · Questions"
             title="Make it a question"
             instruction="Inverta a ordem: comece a pergunta com am, is ou are. Depois clique para conferir."
@@ -327,6 +343,7 @@ export function A101Lesson({
         label: 'Conversation · Let’s talk',
         content: (
           <SlidePage
+            width="conversation"
             eyebrow="Conversation"
             title="Let’s talk"
             instruction="Escolham as perguntas e conversem. Responda sobre você e devolva a pergunta: And you?"
@@ -340,7 +357,7 @@ export function A101Lesson({
       label: 'Homework · Before next class',
       content: (
         <SlidePage
-          width="focused"
+          width="standard"
           eyebrow="Homework"
           title="Before next class"
           instruction="Continue praticando no espaço do aluno."
@@ -353,6 +370,7 @@ export function A101Lesson({
   return (
     <Styled.Stage>
       <SlideDeck
+        previousPageLabel="Back"
         label="A1.01 · Introduce yourself"
         pages={pages}
         pageId={pageId}
@@ -360,12 +378,7 @@ export function A101Lesson({
           if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        actions={
-          <>
-            <small>{order.indexOf(pageId) + 1} / 26</small>
-            <TeacherNotes pageId={pageId} />
-          </>
-        }
+        actions={<TeacherNotes pageId={pageId} />}
       />
       {speech.error ? (
         <Styled.AudioError role="status">{speech.error}</Styled.AudioError>

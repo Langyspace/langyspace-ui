@@ -704,11 +704,14 @@ const dialog = {
 // Claude Design A1.01, inspected 2026-11-16: full-height snap pages, 600/1040px content.
 // This module stays self-contained because the build evaluates it to inline theme leaves.
 const slideRecipe = {
-  canvas: '#F7F7F7',
-  surface: '#FFFFFF',
-  foreground: '#0A0A0A',
+  displayFontFamily: "'Space Grotesk', system-ui, sans-serif",
+  accentFontFamily: "'Instrument Serif', Georgia, serif",
+  pageLineHeight: 1.4,
+  canvas: '#FFFFFF',
+  surface: '#F3F3F3',
+  foreground: '#0B0B0C',
   muted: '#6B6B6B',
-  border: '#E2E2E2',
+  border: '#E4E4E4',
   accent: '#CC0F45',
   indicator: '#FF1F5C',
   inverseCanvas: '#0B0B0C',
@@ -718,7 +721,11 @@ const slideRecipe = {
   focusedWidth: '37.5rem',
   standardWidth: '47.5rem',
   wideWidth: '65rem',
+  readingWidth: '56.25rem',
+  exerciseWidth: '55rem',
+  conversationWidth: '60rem',
   headerHeight: '3.5rem',
+  headerSurface: 'rgba(255, 255, 255, 0.92)',
   panelRadius: '0.5rem',
 } as const
 
@@ -755,7 +762,16 @@ const voiceMessage = {
 } as const
 
 const exercises = {
-  mediaHeight: '10.625rem',
+  negative: '#CF2634',
+  question: '#2563D9',
+  sceneHeight: 'clamp(5.75rem, 18cqh, 11.25rem)',
+  vocabularyRegularHeight: 'clamp(7.75rem, 23cqh, 13.5rem)',
+  vocabularyRegularImageHeight: 'clamp(4rem, 13cqh, 9rem)',
+  vocabularyRegularTopSpace: 'clamp(1.5rem, 5cqh, 3rem)',
+  vocabularyTopSpace: 'clamp(1.25rem, 3cqh, 2rem)',
+  mediaHeight: 'clamp(7.5rem, 26cqh, 13.5rem)',
+  compactOptionHeight: '2.9375rem',
+  compactOptionGap: '0.375rem',
   vocabularyHeight: '7.625rem',
   vocabularyImageHeight: '4.5rem',
   mediaBackground:

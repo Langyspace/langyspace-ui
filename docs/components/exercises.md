@@ -10,7 +10,7 @@ A shared capsule with optional heading, counter and media slots. It supplies the
 
 Receives semantic image/word/translation items, controlled `revealedIds`, `showAll`, `showInitial` and `onReveal`. Hover/focus previews the label; native button activation delegates the stable id and optional `onPlay`. Touch and keyboard do not depend on hover. Image descriptions come from the consumer; decorative images do not duplicate the spoken description.
 
-`imageVariant="scene"` gives contextual illustrations a full-card 3:2 frame, retaining the description and word-reveal controls. The default `isolated` keeps existing icon framing. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
+`imageVariant="scene"` gives contextual illustrations a full-card frame whose height follows the material viewport. The default `isolated` keeps icon framing. Optional `columns={3}` keeps the reference's three columns even on a phone; omit it for the responsive three/two-column grid. `density="regular"` provides taller vocabulary cards. `revealVariant="tooltip"` uses a hover/focus translation tooltip, a persistent word caption after activation/show-all and an initial-letter hint. The default overlay reveal remains available. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
 
 ## LearningDialogue
 
@@ -26,7 +26,7 @@ Two named groups with stable question/answer ids. Products supply the selected q
 
 ## QuizOption compact density
 
-`density="compact"` opts into a 48px slide option, using the existing default/correct/wrong/dim contract. The default `regular` density retains the existing practice appearance.
+`density="compact"` opts into the reference's 47px slide option with a 36px letter marker, using the existing default/correct/wrong/dim contract. The default `regular` density retains the existing practice appearance.
 
 All components use styled-components and the shared theme, native keyboard semantics and visible focus. Interactive examples, narrow content and theme overrides live in `Exercise/Components`. Source copying never imports a lesson or an application route into the public package.
 

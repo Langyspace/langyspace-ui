@@ -6,6 +6,8 @@ export function SlidePage({
   eyebrow,
   instruction,
   tools,
+  lead,
+  density = 'regular',
   width = 'wide',
   tone = 'default',
   children,
@@ -14,7 +16,11 @@ export function SlidePage({
   return (
     <Styled.Root {...props} $tone={tone}>
       <Styled.Content $width={width}>
-        <Styled.Header>
+        {lead ? <Styled.Lead>{lead}</Styled.Lead> : null}
+        <Styled.Header
+          $lead={Boolean(lead)}
+          $compact={density === 'compact' || width === 'focused'}
+        >
           <Styled.Heading>
             {eyebrow ? (
               <Styled.Eyebrow $tone={tone}>{eyebrow}</Styled.Eyebrow>

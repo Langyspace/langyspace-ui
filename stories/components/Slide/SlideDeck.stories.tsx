@@ -25,6 +25,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = {
   tags: ['visual-review'],
   play: async ({ canvasElement }) => {
+    await canvasElement.ownerDocument.fonts.ready
     const canvas = within(canvasElement)
     const viewport = canvas.getByRole('region', {
       name: 'A1.01 · Introduce yourself',

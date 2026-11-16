@@ -2,13 +2,17 @@ import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+import { Avatar } from '../Avatar/Avatar'
 export const Dialogue = styled.div.withConfig({
   componentId: 'lsui-sc-learning-dialogue',
 })`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacing[3]};
+  gap: 6px;
   min-width: 0;
+  @container (max-width: ${theme.breakpoints.md}) {
+    gap: ${theme.spacing[2]};
+  }
 `
 export const DialogueLine = styled.div<{ $side: 'start' | 'end' }>`
   display: flex;
@@ -17,29 +21,60 @@ export const DialogueLine = styled.div<{ $side: 'start' | 'end' }>`
   justify-content: flex-start;
   gap: ${theme.spacing[3]};
   min-width: 0;
+  max-width: 88%;
+  align-self: ${(p) => (p.$side === 'start' ? 'flex-start' : 'flex-end')};
+  @container (max-width: ${theme.breakpoints.md}) {
+    max-width: 94%;
+    gap: ${theme.spacing[2]};
+  }
+`
+export const SpeakerAvatar = styled(Avatar)`
+  width: 44px;
+  height: 44px;
+  border-radius: ${theme.radius.lg};
+  background: ${theme.colors.palette.accent.pinkSoft};
+  @container (max-width: ${theme.breakpoints.md}) {
+    width: ${theme.spacing[10]};
+    height: ${theme.spacing[10]};
+  }
 `
 export const Speaker = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  gap: ${theme.spacing[1]};
+  gap: 0;
   small {
-    font-size: ${theme.typography.fontSize.xs};
+    font-size: 0.625rem;
+  }
+  @container (max-width: ${theme.breakpoints.md}) {
+    gap: ${theme.spacing[1]};
+    small {
+      line-height: 1.2;
+    }
   }
 `
-export const Speech = styled.div<{ $playing: boolean }>`
+export const Speech = styled.div<{ $playing: boolean; $side: 'start' | 'end' }>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: ${theme.spacing[1]};
-  max-width: 86%;
+  gap: ${theme.spacing[2]};
+  max-width: 100%;
   min-width: 0;
-  padding: ${theme.spacing[2]} ${theme.spacing[3]};
-  border: 1px solid ${(p) => (p.$playing ? recipe(p).accent : recipe(p).border)};
-  border-radius: ${theme.radius.xl};
-  background: ${(p) => recipe(p).surface};
+  padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[1]} 14px;
+  border: 0;
+  border-radius: ${(p) => (p.$side === 'start' ? '6px 20px 20px 20px' : '20px 6px 20px 20px')};
+  background: ${(p) => (p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
+  outline: ${(p) => (p.$playing ? `2px solid ${recipe(p).accent}` : 'none')};
   color: ${(p) => recipe(p).foreground};
+  font-size: 1.0625rem;
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.4;
+  @container (max-width: ${theme.breakpoints.md}) {
+    padding: ${theme.spacing[2]} ${theme.spacing[2]} ${theme.spacing[2]}
+      ${theme.spacing[4]};
+    font-size: ${theme.typography.fontSize.md};
+  }
   > div:first-child,
   > button:first-child {
     flex: 1;

@@ -18,5 +18,9 @@ export interface VocabularyGridProps extends Omit<
   showInitial?: boolean
   /** Contextual scenes fill the card; isolated illustrations retain their existing framing. */
   imageVariant?: 'isolated' | 'scene'
+  /** Omit for responsive three/two-column layout. */
+  columns?: 2 | 3
+  density?: 'compact' | 'regular'
+  revealVariant?: 'overlay' | 'tooltip'
   revealLabel?: string
 }

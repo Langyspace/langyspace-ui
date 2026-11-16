@@ -13,6 +13,7 @@ it('keeps common page content semantic and passes native attributes and ref', ()
       ref={ref}
       data-testid="slide"
       title="Listening Practice"
+      lead={<h1>Introduce yourself</h1>}
       eyebrow="Listening"
       instruction="Ouça e responda."
       tools={<button>Dica</button>}
@@ -24,6 +25,9 @@ it('keeps common page content semantic and passes native attributes and ref', ()
     screen.getByRole('heading', { name: 'Listening Practice' }),
   ).toBeInTheDocument()
   expect(screen.getByRole('button', { name: 'Dica' })).toBeInTheDocument()
+  expect(
+    screen.getByRole('heading', { level: 1, name: 'Introduce yourself' }),
+  ).toBeInTheDocument()
   expect(screen.getByText('Ouça e responda.')).toBeInTheDocument()
   expect(ref.current).toBe(screen.getByTestId('slide'))
 })

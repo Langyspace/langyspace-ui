@@ -29,7 +29,7 @@ export function MatchPairs({
                 onQuestionSelect(item.id)
               }}
             >
-              <Styled.Marker>{item.marker}</Styled.Marker>
+              <Styled.Marker $role="question">{item.marker}</Styled.Marker>
               <Styled.MatchLabel as="strong">{item.label}</Styled.MatchLabel>
               {matches[item.id] ? (
                 <Styled.MatchMark>
@@ -55,7 +55,7 @@ export function MatchPairs({
                 onAnswerSelect(item.id)
               }}
             >
-              <Styled.Marker>{item.marker}</Styled.Marker>
+              <Styled.Marker $role="answer">{item.marker}</Styled.Marker>
               <Styled.MatchLabel>{item.label}</Styled.MatchLabel>
               {Object.values(matches).includes(item.id) ? (
                 <Styled.MatchMark>✓</Styled.MatchMark>
