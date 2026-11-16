@@ -8,6 +8,7 @@ export function VocabularyGrid({
   onPlay,
   showAll = false,
   showInitial = false,
+  revealOnHover = true,
   imageVariant = 'isolated',
   columns,
   density = 'compact',
@@ -20,7 +21,9 @@ export function VocabularyGrid({
     <Styled.Vocabulary {...props} $columns={columns}>
       {items.map((item, index) => {
         const revealed =
-          showAll || revealedIds.includes(item.id) || hovered === item.id
+          showAll ||
+          revealedIds.includes(item.id) ||
+          (revealOnHover && hovered === item.id)
         return (
           <Styled.Word
             $scene={imageVariant === 'scene'}
@@ -58,7 +61,9 @@ export function VocabularyGrid({
             />
             {revealVariant === 'overlay' ? (
               <Styled.QuestionMark aria-hidden="true">
-                {showInitial && !revealed ? item.word[0] : '?'}
+                {showInitial && !revealed
+                  ? (item.initialHint ?? item.word[0])
+                  : '?'}
               </Styled.QuestionMark>
             ) : null}
             {revealVariant === 'tooltip' &&
@@ -68,10 +73,14 @@ export function VocabularyGrid({
               <Styled.WordCaption>
                 {showAll || revealedIds.includes(item.id)
                   ? item.word
-                  : item.word[0]}
+                  : (item.initialHint ?? item.word[0])}
               </Styled.WordCaption>
             ) : null}
-            {(revealVariant === 'overlay' ? revealed : hovered === item.id) ? (
+            {(
+              revealVariant === 'overlay'
+                ? revealed
+                : hovered === item.id && (revealOnHover || revealed)
+            ) ? (
               <Styled.WordLabel $floating={revealVariant === 'tooltip'}>
                 <b>{item.word}</b>
                 <small>{item.translation}</small>

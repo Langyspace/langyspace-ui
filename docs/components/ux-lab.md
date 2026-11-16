@@ -80,3 +80,13 @@ Resultado, total, barras por parte e campos de aluna, professora, data e coment�
 | Título, cápsula, scroll, casa                 | SlidePage, SlideDeck e composição de ações do produto                          |
 
 Todos os contratos novos são exportados da raiz e aceitam props/ref nativos do elemento correspondente. Use `labels` quando disponível para traduzir os controles. Conteúdo de aula e gabaritos permanecem nas fixtures ou no consumidor.
+
+## RevealSequenceCard
+
+A controlled card for progressive disclosure, for example closed → clue → answer. Pass ordered `stages`, `stageId` and `onAdvance`; the callback receives the next stage id. Each stage supplies its own accessible `revealLabel`, optional image/alt text and content. The component never evaluates an answer or stores lesson progress. The last stage remains focusable with `aria-disabled`; it cannot advance. An empty sequence is disabled. Theme colors and native keyboard activation follow the shared library.
+
+`stories/materials/B101` composes this contract for the three-day role play. It also exercises `RolePlayExercise.tracker`, a slot for a consumer-owned editable summary before the checklist. Free notes and all learner-specific state remain outside package exports.
+
+`GrammarTable hiddenAnswers` presents unrevealed rows as one disclosure cell across the answer columns, with a visible question action. Revealed rows return to the normal table columns. The strong table header and plain subject labels keep the longer B1 meaning descriptions readable; standard tables retain their tagged presentation.
+
+`RolePlayExercise density="compact"` reduces step spacing and text size for short lesson viewports; its default density stays unchanged.

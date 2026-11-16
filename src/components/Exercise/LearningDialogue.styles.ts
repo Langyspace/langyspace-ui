@@ -28,17 +28,17 @@ export const DialogueLine = styled.div<{ $side: 'start' | 'end' }>`
     gap: ${theme.spacing[2]};
   }
 `
-export const SpeakerAvatar = styled(Avatar)`
-  width: 44px;
-  height: 44px;
+export const SpeakerAvatar = styled(Avatar)<{ $compact: boolean }>`
+  width: ${(p) => (p.$compact ? theme.spacing[8] : '44px')};
+  height: ${(p) => (p.$compact ? theme.spacing[8] : '44px')};
   border-radius: ${theme.radius.lg};
   background: ${theme.colors.palette.accent.pinkSoft};
   @container (max-width: ${theme.breakpoints.md}) {
-    width: ${theme.spacing[10]};
-    height: ${theme.spacing[10]};
+    width: ${(p) => (p.$compact ? theme.spacing[8] : theme.spacing[10])};
+    height: ${(p) => (p.$compact ? theme.spacing[8] : theme.spacing[10])};
   }
 `
-export const Speaker = styled.div`
+export const Speaker = styled.div<{ $compact: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +46,7 @@ export const Speaker = styled.div`
   gap: 0;
   small {
     font-size: 0.625rem;
+    display: ${(p) => (p.$compact ? 'none' : 'block')};
   }
   @container (max-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing[1]};
@@ -54,7 +55,11 @@ export const Speaker = styled.div`
     }
   }
 `
-export const Speech = styled.div<{ $playing: boolean; $side: 'start' | 'end' }>`
+export const Speech = styled.div<{
+  $playing: boolean
+  $side: 'start' | 'end'
+  $completed: boolean
+}>`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -64,7 +69,7 @@ export const Speech = styled.div<{ $playing: boolean; $side: 'start' | 'end' }>`
   padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[1]} 14px;
   border: 0;
   border-radius: ${(p) => (p.$side === 'start' ? '6px 20px 20px 20px' : '20px 6px 20px 20px')};
-  background: ${(p) => (p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
+  background: ${(p) => (p.$completed ? theme.semantic.status.success.background : p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
   outline: ${(p) => (p.$playing ? `2px solid ${recipe(p).accent}` : 'none')};
   color: ${(p) => recipe(p).foreground};
   font-size: 1.0625rem;

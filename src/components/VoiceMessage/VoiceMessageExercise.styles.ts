@@ -31,13 +31,13 @@ export const Root = styled.section.withConfig({
 
 export const Layout = styled.div`
   display: grid;
-  grid-template-columns: minmax(0, ${theme.voiceMessage.phoneWidth}) minmax(
+  grid-template-columns: minmax(0, ${(p) => recipe(p).phoneWidth}) minmax(
       0,
       1fr
     );
   align-items: start;
   gap: ${theme.spacing[8]};
-  width: min(100%, ${theme.voiceMessage.contentWidth});
+  width: min(100%, ${(p) => recipe(p).contentWidth});
   margin-inline: auto;
 
   @container (max-width: ${theme.breakpoints.sm}) {
@@ -50,8 +50,8 @@ export const Phone = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  width: min(100%, ${theme.voiceMessage.phoneWidth});
-  height: ${theme.voiceMessage.phoneHeight};
+  width: min(100%, ${(p) => recipe(p).phoneWidth});
+  height: ${(p) => recipe(p).phoneHeight};
   min-width: 0;
   margin-inline: auto;
   box-shadow:
@@ -218,6 +218,12 @@ export const Side = styled.div`
   gap: ${theme.spacing[2]};
 `
 export const Question = styled.fieldset`
+  > [data-answer-feedback] {
+    flex-basis: 100%;
+    margin: 0;
+    font-size: ${theme.typography.fontSize.sm};
+    line-height: 1.4;
+  }
   display: flex;
   align-items: center;
   justify-content: space-between;

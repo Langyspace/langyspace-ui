@@ -4,19 +4,37 @@ export function ExercisePanel({
   title,
   counter,
   media,
+  layout = 'stacked',
   children,
   ...props
 }: ExercisePanelProps) {
-  return (
-    <Styled.Panel {...props}>
+  const heading = (
+    <>
       {title || counter ? (
         <Styled.PanelHeading>
           {title ? <h3>{title}</h3> : null}
           {counter ? <Styled.Counter>{counter}</Styled.Counter> : null}
         </Styled.PanelHeading>
       ) : null}
-      {media ? <Styled.Media>{media}</Styled.Media> : null}
-      <Styled.Stack>{children}</Styled.Stack>
+    </>
+  )
+  return (
+    <Styled.Panel {...props}>
+      {layout === 'split' && media ? (
+        <Styled.Split>
+          {media ? <div data-exercise-media="true">{media}</div> : null}
+          <Styled.Stack>
+            {heading}
+            {children}
+          </Styled.Stack>
+        </Styled.Split>
+      ) : (
+        <>
+          {heading}
+          {media ? <Styled.Media>{media}</Styled.Media> : null}
+          <Styled.Stack>{children}</Styled.Stack>
+        </>
+      )}
     </Styled.Panel>
   )
 }

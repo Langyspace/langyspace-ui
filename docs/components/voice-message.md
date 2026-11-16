@@ -36,3 +36,7 @@ Layout is two columns above the container breakpoint and stacks naturally in nar
 Storybook supplies an explicitly labeled locally generated voice demonstration, not a final lesson recording. Missing recordings render a disabled play control with an availability explanation rather than fake audio. Do not pass an unrelated file while displaying a different transcript.
 
 Current consumer status: new shared-library API; teacher/student adoption follows the reviewed official package release. The components remain reusable across both products.
+
+Each question can receive optional `feedback` content, supplied by the consumer after an answer. It is announced as a status and appears below its choices. This allows a correction or inference explanation without putting answer evaluation into the phone component. B1.01 supplies four Yes/No statements and retains the second-listen transcript rule.
+
+`voiceMessage.phoneWidth`, `phoneHeight` and `contentWidth` honor the theme recipe. Use `createTheme` to supply overrides while retaining the remaining device tokens.

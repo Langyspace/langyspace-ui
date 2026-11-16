@@ -7,7 +7,7 @@ const recipe = resolveSlideTheme
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-page',
-})<{ $tone: 'default' | 'inverse' }>`
+})<{ $tone: 'default' | 'inverse'; $dense: boolean }>`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -19,6 +19,9 @@ export const Root = styled.div.withConfig({
   background: ${(p) => (p.$tone === 'inverse' ? recipe(p).inverseCanvas : recipe(p).canvas)};
   font-family: ${theme.typography.fontFamily.sans};
   line-height: ${(p) => recipe(p).pageLineHeight};
+  @container (max-height: ${theme.viewportHeights.lg}) and (min-width: ${theme.breakpoints.md}) {
+    padding-block: ${(p) => (p.$dense ? `calc(${recipe(p).headerHeight} + ${theme.spacing[1]}) ${theme.spacing[2]}` : `calc(${recipe(p).headerHeight} + ${theme.spacing[2]}) ${theme.spacing[8]}`)};
+  }
 
   @container (max-width: ${theme.breakpoints.sm}) {
     padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[2]})
@@ -28,13 +31,26 @@ export const Root = styled.div.withConfig({
 
 export const Content = styled.div<{
   $width: NonNullable<SlidePageProps['width']>
+  $layout: NonNullable<SlidePageProps['layout']>
 }>`
-  display: flex;
+  display: ${(p) => (p.$layout === 'split' ? 'grid' : 'flex')};
   flex-direction: column;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.875fr);
+  align-items: ${(p) => (p.$layout === 'split' ? 'center' : 'stretch')};
+  gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
+  max-width: ${(p) => (p.$layout === 'split' ? recipe(p).introductionWidth : p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
   margin-inline: auto;
+  > [data-slide-introduction] {
+    min-width: 0;
+    > header {
+      margin-bottom: 0;
+    }
+  }
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 `
 
 export const Lead = styled.div`

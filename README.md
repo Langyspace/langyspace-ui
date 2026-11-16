@@ -2,14 +2,14 @@
 
 Componentes React compartilhados pelos cinco produtos Langy.space. Cada componente tem uma responsabilidade de apresentação ou interação; o produto fornece conteúdo, dados e ações.
 
-A versão **4.3.0** acrescenta slides, WhatsApp e exercícios interativos do UX Lab, preservando os contratos de tema, React 19 e props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
+A versão **4.4.0** acrescenta a aula B1.01, cartões de revelação progressiva e variantes compartilhadas para os exercícios, preservando os contratos de tema, React 19 e props da major 4. Ela padroniza a autoria com styled-components e acrescenta a auditoria de estilos. Consulte a [migração para 4.0](docs/components/migration-v4.md). O histórico de organização por responsabilidade e retirada de APIs está na [migração para 3.0](docs/components/migration-v3.md); para adoções anteriores à major 2, consulte a [migração para 2.0](docs/components/migration-v2.md).
 
 ## Instalação
 
-Após a publicação e conferência do checksum, instale o artefato imutável da release 4.3.0:
+Após a publicação e conferência do checksum, instale o artefato imutável da release 4.4.0:
 
 ```bash
-pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.3.0/langyspace-ui-4.3.0.tgz'
+pnpm add styled-components@^6.4.0 '@langyspace/ui@https://github.com/Langyspace/langyspace-ui/releases/download/v4.4.0/langyspace-ui-4.4.0.tgz'
 ```
 
 Durante a preparação, valide pelo candidato imutável identificado na entrega, com sua integridade registrada. Os produtos mantêm a dependência oficial anterior até a nova release existir e seu checksum ser conferido. Não usar uma branch móvel ou um link local na dependência entregue.
@@ -185,3 +185,5 @@ dialogue, matching and reveal contracts. Lesson content stays in catalog fixture
 [exercise components](docs/components/exercises.md) and the
 [delivery plan](docs/epics/a101-material/epic.md). Portal adoption follows visual approval and
 the official package release.
+
+`Materials/B1.01` adds the 17-screen “What have you been doing?” catalog composition, contextual scenes and progressive clue cards. Its content, speech and controlled exercise state remain outside the package. See [the B1.01 review handoff](docs/epics/b101-material/release.md). This feature requires a new approved library release before consumer adoption.

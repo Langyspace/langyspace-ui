@@ -77,3 +77,18 @@ export const ThemeOverride: Story = {
   args: { children: <p>How are you?</p> },
   tags: ['visual-review'],
 }
+export const SplitIntroduction: Story = {
+  args: {
+    layout: 'split',
+    lead: (
+      <div>
+        <h1>What have you been doing?</h1>
+        <p>Goal: Contar o que você tem feito ultimamente.</p>
+      </div>
+    ),
+    eyebrow: 'Review',
+    title: 'Last class',
+    instruction: 'Answer your teacher. Then ask your teacher.',
+    children: <Panel>Would you like to come to dinner on Friday?</Panel>,
+  },
+}

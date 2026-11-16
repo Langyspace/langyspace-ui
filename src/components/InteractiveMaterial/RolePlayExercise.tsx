@@ -13,6 +13,8 @@ export function RolePlayExercise({
   steps,
   completedIds,
   onStepToggle,
+  tracker,
+  density = 'regular',
   labels,
   children,
   ...props
@@ -57,6 +59,7 @@ export function RolePlayExercise({
         {children}
       </Styled.Scene>
       <Common.Stack>
+        {tracker}
         <Common.Row>
           <Common.Tag>{text.steps}</Common.Tag>
           <Common.Hint role="status">
@@ -65,6 +68,7 @@ export function RolePlayExercise({
         </Common.Row>
         {steps.map((step, i) => (
           <Styled.Step
+            $compact={density === 'compact'}
             type="button"
             key={step.id}
             $done={completedIds.includes(step.id)}

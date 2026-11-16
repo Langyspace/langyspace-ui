@@ -36,6 +36,23 @@ export const PanelHeading = styled.div`
     }
   }
 `
+export const Split = styled.div`
+  > [data-exercise-media] {
+    min-width: 0;
+    img {
+      max-width: 100%;
+      max-height: 18rem;
+      object-fit: contain;
+    }
+  }
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  align-items: center;
+  gap: ${theme.spacing[6]};
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+`
 export const Counter = styled.span`
   color: ${(p) => recipe(p).muted};
   font-size: ${theme.typography.fontSize.sm};

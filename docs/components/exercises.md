@@ -31,3 +31,9 @@ Two named groups with stable question/answer ids. Products supply the selected q
 All components use styled-components and the shared theme, native keyboard semantics and visible focus. Interactive examples, narrow content and theme overrides live in `Exercise/Components`. Source copying never imports a lesson or an application route into the public package.
 
 Exercise layouts use the enclosing inline-size container supplied by `SlideDeck`. A standalone host supplies `container-type: inline-size`, as shown by the component stories, so the same narrow-container rules apply without a global stylesheet.
+
+B1.01 also uses `VocabularyGrid columns={4}` (two columns on narrow containers) and `ExercisePanel layout="split"` for a scene beside the question and choices. Existing column and stacked-layout defaults are preserved.
+
+Learner turns in `LearningDialogue` can provide `actionLabel`, `completedIds` and `onComplete`. They use the same bubble and a native, keyboard-operable response action, with a visible completion state. Consumer callbacks own evaluation and progress. Ordinary line translation and audio remain unchanged.
+
+For teacher-led guessing, `VocabularyGrid revealOnHover={false}` keeps an answer concealed while pointing or focusing until the consumer reveals its id. An optional `initialHint` on each item supplies a phrase scaffold such as `playing the g_____`; otherwise the initial-letter hint keeps its existing behavior. `LearningDialogue density="compact"` keeps the speaker accessible while reducing avatar/name chrome for longer conversations.

@@ -3,26 +3,52 @@ import * as Styled from './LearningDialogue.styles'
 import type { LearningDialogueProps } from './LearningDialogue.types'
 export function LearningDialogue({
   lines,
+  density = 'regular',
   translatedIds,
   playingId,
   onTranslate,
   onPlay,
+  completedIds,
+  onComplete,
   ...props
 }: LearningDialogueProps) {
   return (
     <Styled.Dialogue {...props}>
       {lines.map((line) => (
         <Styled.DialogueLine key={line.id} $side={line.side}>
-          <Styled.Speaker>
+          <Styled.Speaker
+            $compact={density === 'compact'}
+            role={density === 'compact' ? 'img' : undefined}
+            aria-label={density === 'compact' ? line.speaker : undefined}
+          >
             <Styled.SpeakerAvatar
               size="sm"
               imageUrl={line.avatarUrl}
               initials={line.speaker.slice(0, 2)}
+              $compact={density === 'compact'}
             />
             <small>{line.speaker}</small>
           </Styled.Speaker>
-          <Styled.Speech $playing={playingId === line.id} $side={line.side}>
-            {onTranslate && line.translation ? (
+          <Styled.Speech
+            $playing={playingId === line.id}
+            $side={line.side}
+            $completed={completedIds?.includes(line.id) ?? false}
+          >
+            {onComplete && line.actionLabel ? (
+              <Styled.Translate
+                type="button"
+                aria-label={line.actionLabel}
+                aria-pressed={completedIds?.includes(line.id) ?? false}
+                onClick={() => {
+                  onComplete(line.id)
+                }}
+              >
+                {line.content}
+                {completedIds?.includes(line.id) ? (
+                  <span aria-hidden="true"> ✓</span>
+                ) : null}
+              </Styled.Translate>
+            ) : onTranslate && line.translation ? (
               <Styled.Translate
                 type="button"
                 onClick={() => {

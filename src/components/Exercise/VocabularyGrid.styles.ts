@@ -4,12 +4,15 @@ import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
-})<{ $columns?: 2 | 3 }>`
+})<{ $columns?: 2 | 3 | 4 }>`
   display: grid;
   grid-template-columns: repeat(${(p) => p.$columns ?? 3}, minmax(0, 1fr));
   gap: ${theme.spacing[3]};
   @container (max-width: ${theme.breakpoints.sm}) {
-    grid-template-columns: repeat(${(p) => p.$columns ?? 2}, minmax(0, 1fr));
+    grid-template-columns: repeat(
+      ${(p) => (p.$columns === 4 ? 2 : (p.$columns ?? 2))},
+      minmax(0, 1fr)
+    );
   }
 `
 export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
