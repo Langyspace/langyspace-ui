@@ -312,6 +312,11 @@ function VoiceMessageContent({
                   </Styled.Choice>
                 ))}
               </Styled.Choices>
+              {question.feedback ? (
+                <p data-answer-feedback="true" role="status">
+                  {question.feedback}
+                </p>
+              ) : null}
             </Styled.Question>
           ))}
           {footer}

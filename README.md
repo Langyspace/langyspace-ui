@@ -185,3 +185,5 @@ dialogue, matching and reveal contracts. Lesson content stays in catalog fixture
 [exercise components](docs/components/exercises.md) and the
 [delivery plan](docs/epics/a101-material/epic.md). Portal adoption follows visual approval and
 the official package release.
+
+`Materials/B1.01` adds the 17-screen “What have you been doing?” catalog composition, contextual scenes and progressive clue cards. Its content, speech and controlled exercise state remain outside the package. See [the B1.01 review handoff](docs/epics/b101-material/release.md). This feature requires a new approved library release before consumer adoption.

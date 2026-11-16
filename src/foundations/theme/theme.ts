@@ -724,6 +724,7 @@ const slideRecipe = {
   readingWidth: '56.25rem',
   exerciseWidth: '55rem',
   conversationWidth: '60rem',
+  introductionWidth: '70rem',
   headerHeight: '3.5rem',
   headerSurface: 'rgba(255, 255, 255, 0.92)',
   panelRadius: '0.5rem',

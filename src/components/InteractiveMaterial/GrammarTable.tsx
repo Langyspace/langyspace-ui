@@ -21,7 +21,7 @@ export function GrammarTable({
     <Styled.Root as="section" {...props}>
       {explanation}
       <Styled.Wrap>
-        <Styled.Table $tone={tone}>
+        <Styled.Table $tone={tone} $reveal={hiddenAnswers}>
           <caption>{title}</caption>
           <thead>
             <tr>
@@ -38,22 +38,24 @@ export function GrammarTable({
                   <th scope="row">
                     <span>{row.subject}</span>
                   </th>
-                  {columns.verb ? (
-                    <td data-verb="true">{open ? row.verb : '…'}</td>
+                  {columns.verb && open ? (
+                    <td data-verb="true">{row.verb}</td>
                   ) : null}
-                  <td>
+                  <td colSpan={!open && columns.verb ? 2 : undefined}>
                     {!open ? (
                       <Styled.Example
+                        $concealed
                         type="button"
                         aria-expanded={false}
                         aria-label={`${revealLabel}: ${row.id}`}
                         disabled={!onReveal}
                         onClick={() => onReveal?.(row.id)}
                       >
-                        …
+                        ?
                       </Styled.Example>
                     ) : onPlay ? (
                       <Styled.Example
+                        $concealed={false}
                         type="button"
                         aria-label={row.audioLabel}
                         onPointerEnter={(event) => {

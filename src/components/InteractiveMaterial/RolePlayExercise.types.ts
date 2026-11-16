@@ -13,6 +13,9 @@ export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> 
   steps: readonly RolePlayStep[]
   completedIds: readonly string[]
   onStepToggle: (id: string) => void
+  /** Consumer-owned summary or task information before the checklist. */
+  tracker?: ReactNode
+  density?: 'regular' | 'compact'
   labels?: Partial<{
     show: string
     hide: string

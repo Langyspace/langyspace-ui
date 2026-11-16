@@ -6,4 +6,5 @@ export interface ExercisePanelProps extends Omit<
   title?: ReactNode
   counter?: ReactNode
   media?: ReactNode
+  layout?: 'stacked' | 'split'
 }

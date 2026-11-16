@@ -1,0 +1,294 @@
+{
+  "journeys": [
+    {
+      "name": "free notes, clear and Escape focus restoration",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "four/two columns, vocabulary reveal and false friends",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "wrong-answer recovery and answer retention across scrolling",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "hidden warm-up options",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "pronunciation preview, wrong answer and correct retry",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "dialogue translation with all six source lines visible",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "comprehension answer disclosure",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "grammar rows, second explanation and sentence starters",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "learner completion, role swap and independent retained state",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "real native audio, second-listen transcription, inference feedback and pause on departure",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "right/wrong correction and source explanation",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "closed/clue/answer boundary, editable summary, input-safe PageDown, checklist and clear focus",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "actual clipboard copy and visible focused fallback on failure",
+      "width": 1280,
+      "passed": true
+    },
+    {
+      "name": "free notes, clear and Escape focus restoration",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "four/two columns, vocabulary reveal and false friends",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "wrong-answer recovery and answer retention across scrolling",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "hidden warm-up options",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "pronunciation preview, wrong answer and correct retry",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "dialogue translation with all six source lines visible",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "comprehension answer disclosure",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "grammar rows, second explanation and sentence starters",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "learner completion, role swap and independent retained state",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "real native audio, second-listen transcription, inference feedback and pause on departure",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "right/wrong correction and source explanation",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "closed/clue/answer boundary, editable summary, input-safe PageDown, checklist and clear focus",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "name": "actual clipboard copy and visible focused fallback on failure",
+      "width": 390,
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "tts": "Deterministic speech engine for source/state captures; browser speech orchestration is unit-tested. Leo playback uses the real MP3 and native media events, with seeking to shorten the first pass.",
+  "pairs": [
+    {
+      "label": "B1.01 s2 · revealed · 1280×620",
+      "before": "before/s2-revealed-1280x620.png",
+      "after": "after/s2-revealed-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s31 · wrong · 1280×620",
+      "before": "before/s31-wrong-1280x620.png",
+      "after": "after/s31-wrong-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s31 · correct · 1280×620",
+      "before": "before/s31-correct-1280x620.png",
+      "after": "after/s31-correct-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s32 · options · 1280×620",
+      "before": "before/s32-options-1280x620.png",
+      "after": "after/s32-options-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s6 · translated · 1280×620",
+      "before": "before/s6-translated-1280x620.png",
+      "after": "after/s6-translated-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s61 · answer · 1280×620",
+      "before": "before/s61-answer-1280x620.png",
+      "after": "after/s61-answer-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s7 · all-rows · 1280×620",
+      "before": "before/s7-all-rows-1280x620.png",
+      "after": "after/s7-all-rows-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s8 · marked · 1280×620",
+      "before": "before/s8-marked-1280x620.png",
+      "after": "after/s8-marked-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s8 · swapped · 1280×620",
+      "before": "before/s8-swapped-1280x620.png",
+      "after": "after/s8-swapped-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s9 · second-listen · 1280×620",
+      "before": "before/s9-second-listen-1280x620.png",
+      "after": "after/s9-second-listen-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s10 · corrected · 1280×620",
+      "before": "before/s10-corrected-1280x620.png",
+      "after": "after/s10-corrected-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s11 · clue · 1280×620",
+      "before": "before/s11-clue-1280x620.png",
+      "after": "after/s11-clue-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s11 · answer · 1280×620",
+      "before": "before/s11-answer-1280x620.png",
+      "after": "after/s11-answer-1280x620.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s2 · revealed · 390×844",
+      "before": "before/s2-revealed-390x844.png",
+      "after": "after/s2-revealed-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s31 · wrong · 390×844",
+      "before": "before/s31-wrong-390x844.png",
+      "after": "after/s31-wrong-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s31 · correct · 390×844",
+      "before": "before/s31-correct-390x844.png",
+      "after": "after/s31-correct-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s32 · options · 390×844",
+      "before": "before/s32-options-390x844.png",
+      "after": "after/s32-options-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s6 · translated · 390×844",
+      "before": "before/s6-translated-390x844.png",
+      "after": "after/s6-translated-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s61 · answer · 390×844",
+      "before": "before/s61-answer-390x844.png",
+      "after": "after/s61-answer-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s7 · all-rows · 390×844",
+      "before": "before/s7-all-rows-390x844.png",
+      "after": "after/s7-all-rows-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s8 · marked · 390×844",
+      "before": "before/s8-marked-390x844.png",
+      "after": "after/s8-marked-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s8 · swapped · 390×844",
+      "before": "before/s8-swapped-390x844.png",
+      "after": "after/s8-swapped-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s9 · second-listen · 390×844",
+      "before": "before/s9-second-listen-390x844.png",
+      "after": "after/s9-second-listen-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s10 · corrected · 390×844",
+      "before": "before/s10-corrected-390x844.png",
+      "after": "after/s10-corrected-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s11 · clue · 390×844",
+      "before": "before/s11-clue-390x844.png",
+      "after": "after/s11-clue-390x844.png",
+      "source": "local-authoring-export"
+    },
+    {
+      "label": "B1.01 s11 · answer · 390×844",
+      "before": "before/s11-answer-390x844.png",
+      "after": "after/s11-answer-390x844.png",
+      "source": "local-authoring-export"
+    }
+  ]
+}

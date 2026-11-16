@@ -44,3 +44,7 @@ The previous-page button returns focus to the scroll region. PageDown/PageUp and
 The 56px navigation bar overlays the deck viewport, so each page retains the complete available height. `SlidePage` reserves that header space in its own padding. The progress indicator has a transparent track, and actions remain at the right edge, including on the first page. Product-specific page counters are optional consumer content; A1.01 follows the reference with Notes and Back only.
 
 Theme values live in `theme.slides` and can be overridden through `createTheme`. Source: [current A1.01](https://claude.ai/artifact/KX94fLxvBjhqmz8VmHpjgr), browser inspection on 2026-11-16, with local source provenance in the epic plan. New library components; teacher/student adoption is pending.
+
+`SlidePage layout="split"` places its lead and heading beside the exercise, and stacks them below the medium breakpoint. The default remains `stacked`. The introductory width is controlled by `slides.introductionWidth`. B1.01 demonstrates a lesson title/goal and review questions without adding a product-specific page component to the package.
+
+`density="dense"` opts into tighter block padding on short desktop containers. Existing regular and compact page padding is preserved.

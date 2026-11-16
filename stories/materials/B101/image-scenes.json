@@ -1,0 +1,130 @@
+{
+  "tool": "built-in image_gen",
+  "profile": "exercise-scene",
+  "transparentBackground": false,
+  "styleReference": "A101/assets/scene-happy-mia.webp",
+  "identityReferenceForClues": "UXLab/assets/bust_kim.png",
+  "conversion": "cwebp quality 86; proportional resize 768px wide; opaque background retained; no crop",
+  "images": [
+    {
+      "id": "baking",
+      "file": "assets/scene-baking.webp",
+      "prompt": "Use case: illustration-story. Asset: ONE square vocabulary illustration for an adult English lesson, 'baking'. Input image is STYLE REFERENCE ONLY, not an edit target. Match its polished, warm stylized 3D animated-film adult character rendering, expressive natural face, soft detailed fabrics and gently blurred but complete environment. New composition: an adult woman with dark hair in an apron, standing at a kitchen counter just after making bread/cake. Clearly visible flour on her hands and apron, mixing bowl with dough and a freshly baked loaf beside her, oven in the home kitchen background. Hands anatomically natural. Frame waist-up with all essential evidence in the central 75 percent so a 3:2 UI crop keeps the meaning. Opaque environmental background, warm light. No text, words, lettering, emojis, symbols, logos, borders or collage. A single coherent scene.",
+      "sourceSha256": "79728e1f4d9c412f8eea9545737f371eb81249e8be459b43d690064451abefa1",
+      "sha256": "88cf3a9ed74937e7076c0e33e6f474512f9cf0269c99a36b09aec9cbf110b585",
+      "size": 90012,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "swimming",
+      "file": "assets/scene-swimming.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. Put essential face, hands and activity evidence centrally so a square crop also makes sense. An adult man with short damp hair, blue swim shirt, towel across his shoulders, holding clearly visible swimming goggles. He has JUST finished swimming and is now standing on the dry indoor swimming-pool deck, calm and slightly tired, pool lanes behind him. Water droplets in hair, not a shower, not running, no other sporting equipment.",
+      "sourceSha256": "5930d9136369a31dd78a17f197b6d6e49b96f1c472814372c2ca90a1496c3d50",
+      "sha256": "02e0c4a229584c96779c9a733784963d0ab88383013020d7f4802735b37d31ee",
+      "size": 72542,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "gardening",
+      "file": "assets/scene-gardening.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. Put essential face, hands and activity evidence centrally so a square crop also makes sense. An adult woman kneels beside a terracotta flowerpot on a patio in a home garden. She has JUST finished gardening: both hands are visibly earthy and muddy, with gardening gloves and a small trowel beside the pot. A fresh planted herb and garden soil make the activity unambiguous. Not cooking or shopping. Show her face and hands and pot clearly.",
+      "sourceSha256": "2a3eca6ecb6994e301f8643519b007665f0ee990b7bd044e740296d199bcdf14",
+      "sha256": "22ccd2fb8c61b17db2383551e69d91af8cbf27284dabe832b43e9fb2a5a44eec",
+      "size": 96440,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "guitar",
+      "file": "assets/scene-guitar.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. Put essential face, hands and activity evidence centrally so a square crop also makes sense. An adult woman in a cozy home living room holding and naturally playing an acoustic wooden guitar across her lap. One hand on the frets and the other at the strings. A relaxed content expression; the guitar clearly recognizable including its round sound hole, not an electric guitar. Background home sofa and window.",
+      "sourceSha256": "7daa617aa6162b2138215ce73a23c1f20e5d6c3aba19a781b5e42e912f685215",
+      "sha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7",
+      "size": 95618,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "soccer",
+      "file": "assets/scene-soccer.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. Put essential face, hands and activity evidence centrally. A young adult woman with dark wavy hair in a plain blue soccer jersey and shorts, muddy soccer cleats, standing next to a real soccer ball on a community soccer pitch just after playing. Green field, subtle soccer goal behind her, relaxed slightly sweaty expression. Show her body from head to shoes and the ball clearly. Not American football, not running without ball.",
+      "sourceSha256": "1ebd560905df1780d1fdab6797f6e91f18690af9736043f575296a904a767ab5",
+      "sha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e",
+      "size": 94932,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "shopping",
+      "file": "assets/scene-shopping.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. Put essential face, hands and activity evidence centrally. An adult woman walking outside a neighborhood row of shops after shopping, carrying several plain paper shopping bags with handles in both hands, one visible clothing purchase peeking out. Friendly relaxed expression, casual everyday clothes, storefront windows softly blurred behind her. No store names or legible text. Not grocery cooking, no cart.",
+      "sourceSha256": "25f62738c681c9f53b1370f69a8c5602cb104761ab317c3fb35dec0121a16312",
+      "sha256": "f026549cc5cf1ed2561085247bc5275a5af1aa310660b61182f55f472eed8a15",
+      "size": 72950,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "tv",
+      "file": "assets/scene-tv.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. An adult woman with dark wavy hair sitting comfortably on her home sofa facing a television, with a bowl of popcorn in her lap and a TV remote in her hand. View from a slight side angle so her face, the remote, popcorn and the television are clearly visible together. The TV shows a simple indistinct landscape, no text. Quiet cozy evening. Essential evidence centralized.",
+      "sourceSha256": "6136d2f1b71e6dfd66284ca36e0e1eee401889989fe53b3c7fda6399191a5e7f",
+      "sha256": "f2d10708aced14d9b8c3c871c7f3ac75810de1ebad8e8353401dd9370d476569",
+      "size": 75352,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "bike",
+      "file": "assets/scene-bike.webp",
+      "prompt": "Create ONE coherent landscape 3:2 adult English lesson illustration. The attached image is STYLE REFERENCE ONLY: warm polished stylized 3D animated-film adults, expressive faces, believable textured clothes, soft natural light, complete gently blurred environment. No text, logos, emojis, symbols, borders or collage. Opaque background. An adult woman in a plain bicycle helmet has just stopped riding her bicycle on a leafy neighborhood cycle path. She remains seated astride the real bicycle with both hands naturally on the handlebars, one foot on the ground, rosy slightly sweaty cheeks, relaxed smile. Show enough bicycle wheels, pedals and helmet to make cycling unmistakable. Not a motorcycle or exercise bike. A warm park environment.",
+      "sourceSha256": "6241982bc53ca04bfcb09a1fd55d5c64201ee3c28e2f7eb9fe672d9bf293f285",
+      "sha256": "2bc6694c3124a538c81d4b54213bfa0c3d4f0fccdb9e24900040c74011168c61",
+      "size": 109658,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "muddy-shoes",
+      "file": "assets/scene-muddy-shoes.webp",
+      "prompt": "ONE landscape 3:2 illustration for an English inference exercise. Warm polished stylized 3D animated-film rendering with a complete softly lit environmental background, matching reference image 1. Image 1 is a STYLE reference only. Image 2 is a simple character identity guide for Kim: adult Korean woman with straight black bob and bangs, natural adult proportions, fair skin. Render her in the more detailed 3D style of image 1 wherever a person appears. No text, lettering, symbols, logos, emojis, borders or collage. This is a CLUE ONLY: it must not reveal the activity. Close-up low view of a pair of muddy blue-gray athletic shoes on a home entrance mat, with the lower legs of the person standing in them, plain socks, soft home doorway background. Fresh brown mud is clearly visible on the shoes. NO soccer ball, field, goal, bicycle, sports kit, tools or sports equipment. The learner should be able to guess several activities from the muddy shoes.",
+      "sourceSha256": "21fe5cf7b21532418ae2d1dd9032802f35b4a8f679f7ae7cd677ee068e6c9c7c",
+      "sha256": "3cc3b4b7e3b26dfc050ba8bc6bc66762e334231aeec2e74a72d234321040a77d",
+      "size": 94448,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "hot",
+      "file": "assets/scene-hot.webp",
+      "prompt": "ONE landscape 3:2 illustration for an English inference exercise. Warm polished stylized 3D animated-film rendering with a complete softly lit environmental background, matching reference image 1. Image 1 is a STYLE reference only. Image 2 is a simple character identity guide for Kim: adult Korean woman with straight black bob and bangs, natural adult proportions, fair skin. Render her in the more detailed 3D style of image 1 wherever a person appears. No text, lettering, symbols, logos, emojis, borders or collage. This is a CLUE ONLY: it must not reveal the activity. Kim has just arrived at a friend's home doorway. Frame her face and upper torso, flushed cheeks and visible perspiration, using one hand to fan herself, plain blue athletic T-shirt. She looks warm and slightly tired but well. Neutral home entrance behind her. NO bicycle, helmet, ball, swimming goggles, running gear or activity objects. The cause of being hot must remain ambiguous.",
+      "sourceSha256": "ec671b0b613063517397b5bcd68342e3117875486be493c5b9d9b6344f986a83",
+      "sha256": "7f3aa606248cc82724cab59d0385e470d573f619acf814c89ca51efd0796c349",
+      "size": 54900,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "wet-shirt",
+      "file": "assets/scene-wet-shirt.webp",
+      "prompt": "ONE landscape 3:2 illustration for an adult English lesson. Warm polished stylized 3D animated-film rendering, believable materials and soft light, complete environmental background. Image 1 is a STYLE reference. Image 2 is an identity guide: Kim, an adult Korean woman with a straight black bob and bangs; render her in the detailed 3D style of image 1, natural adult proportions. Keep her plain blue T-shirt opaque and modest. No text, readable signage, lettering, logos, emojis, symbols, borders or collage. CLUE ONLY: Kim has just arrived at a friend's home doorway, her blue cotton T-shirt and hair damp with clear irregular darker wet patches, holding the edge of a sleeve and looking mildly surprised. View upper body. Neutral home entrance background. NO swimming pool, goggles, sports equipment, bus, bus stop, rain or umbrella: the cause of being wet must remain ambiguous. Do not make clothing transparent.",
+      "sourceSha256": "6ce8cb5350f7a70dc87d6f58787b90496fbb84c694110a712060c4cd91c2836f",
+      "sha256": "e36f7b9431bc7facd8f92dc59ff6096d3d6c4f06001f1d48b05b785d7eb0de5f",
+      "size": 63358,
+      "width": 768,
+      "height": 512
+    },
+    {
+      "id": "bus",
+      "file": "assets/scene-bus.webp",
+      "prompt": "ONE landscape 3:2 illustration for an adult English lesson. Warm polished stylized 3D animated-film rendering, believable materials and soft light, complete environmental background. Image 1 is a STYLE reference. Image 2 is an identity guide: Kim, an adult Korean woman with a straight black bob and bangs; render her in the detailed 3D style of image 1, natural adult proportions. Keep her plain blue T-shirt opaque and modest. No text, readable signage, lettering, logos, emojis, symbols, borders or collage. ANSWER SCENE: Kim in a damp plain blue T-shirt and jeans, waiting at an outdoor city bus stop in the rain without an umbrella. Rain drops and puddles visible, small roofed bus shelter and an approaching city bus behind her, she looks towards the bus while standing still with a bag. The scene must clearly mean waiting for the bus, NOT swimming, exercising, or riding a bicycle. Show full enough setting for the bus and shelter to be unmistakable; no legible bus text.",
+      "sourceSha256": "7c22ffde540a8008e4a77cf14ea5cb0751ffaa7cd185b02174d21c411dd79245",
+      "sha256": "baada491df7d5a9ef01de5f3e13b7b42143ba29834e3f457caa4f735fa1a2338",
+      "size": 120544,
+      "width": 768,
+      "height": 512
+    }
+  ]
+}

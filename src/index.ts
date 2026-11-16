@@ -651,3 +651,9 @@ export type { VideoChapter } from './components/InteractiveMaterial/VideoExercis
 export type { OralReviewQuestion } from './components/InteractiveMaterial/OralReview.types'
 export type { OralReviewPart } from './components/InteractiveMaterial/OralReviewResult.types'
 export type { CallSimulationState } from './components/InteractiveMaterial/CallSimulation.types'
+
+export { RevealSequenceCard } from './components/InteractiveMaterial/RevealSequenceCard'
+export type {
+  RevealSequenceCardProps,
+  RevealSequenceStage,
+} from './components/InteractiveMaterial/RevealSequenceCard.types'

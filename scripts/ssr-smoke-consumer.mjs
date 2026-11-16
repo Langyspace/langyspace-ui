@@ -10,6 +10,18 @@ const ConsumerSurface = styled.div`
 const sharedUi = await import('@langyspace/ui')
 const { ControlledField } = await import('@langyspace/ui/form')
 for (const [name, props] of [
+  [
+    'RevealSequenceCard',
+    {
+      title: 'Saturday',
+      stages: [
+        { id: 'closed', revealLabel: 'Show clue', content: '?' },
+        { id: 'answer', revealLabel: 'Answer', content: 'waiting for the bus' },
+      ],
+      stageId: 'closed',
+      onAdvance() {},
+    },
+  ],
   ['ExercisePanel', { title: 'Example' }],
   ['VocabularyGrid', { items: [], revealedIds: [], onReveal() {} }],
   ['LearningDialogue', { lines: [] }],

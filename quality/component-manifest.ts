@@ -21,6 +21,34 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'RevealSequenceCard',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/InteractiveMaterial/RevealSequenceCard.tsx',
+    runtimeMarker: 'lsui-sc-reveal-sequence-card',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/RevealSequenceCard.stories.tsx',
+      title: 'Exercise/RevealSequenceCard',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/B101Contracts.test.tsx',
+    },
+    reference: {
+      propsPath:
+        'src/components/InteractiveMaterial/RevealSequenceCard.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'revealsequencecard',
+      },
+      consumers: [],
+    },
+  },
+
+  {
     browserSmoke: complete,
     exportName: 'CallSimulation',
     interactive: true,

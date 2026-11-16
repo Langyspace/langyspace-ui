@@ -16,6 +16,7 @@ export const Wrap = styled.div`
 `
 export const Table = styled.table<{
   $tone: 'affirmative' | 'negative' | 'question'
+  $reveal: boolean
 }>`
   --grammar-ink: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.foreground : p.$tone === 'question' ? theme.semantic.status.info.foreground : theme.semantic.status.success.foreground)};
   --grammar-surface: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.background : p.$tone === 'question' ? theme.semantic.status.info.background : theme.semantic.status.success.background)};
@@ -30,15 +31,15 @@ export const Table = styled.table<{
     font: 700 12px ${theme.slides.displayFontFamily};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--grammar-ink);
-    background: var(--grammar-surface);
+    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
+    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
   }
   th {
     font: 700 12px ${theme.slides.displayFontFamily};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--grammar-ink);
-    background: var(--grammar-surface);
+    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
+    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
   }
   th,
   td {
@@ -54,10 +55,10 @@ export const Table = styled.table<{
     background: ${(p) => Common.recipe(p).canvas};
     > span {
       display: inline-block;
-      padding: 3px 10px;
+      padding: ${(p) => (p.$reveal ? '0' : '3px 10px')};
       border-radius: ${theme.radius.pill};
-      background: ${(p) => Common.recipe(p).accent};
-      color: ${(p) => Common.recipe(p).canvas};
+      background: ${(p) => (p.$reveal ? 'transparent' : Common.recipe(p).accent)};
+      color: ${(p) => (p.$reveal ? 'inherit' : Common.recipe(p).canvas)};
     }
   }
   td[data-verb],
@@ -69,12 +70,12 @@ export const Table = styled.table<{
     border-bottom: 0;
   }
 `
-export const Example = styled(Pressable)`
-  padding: ${theme.spacing[1]} 0;
+export const Example = styled(Pressable)<{ $concealed: boolean }>`
+  padding: ${theme.spacing[1]} ${(p) => (p.$concealed ? theme.spacing[4] : '0')};
   border: 0;
-  background: transparent;
+  background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
   font: inherit;
-  color: inherit;
+  color: ${(p) => (p.$concealed ? theme.colors.palette.white : 'inherit')};
   cursor: pointer;
   text-align: left;
   border-radius: ${theme.radius.sm};

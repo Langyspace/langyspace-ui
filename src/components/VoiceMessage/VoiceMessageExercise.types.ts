@@ -12,6 +12,8 @@ export interface VoiceMessageQuestion {
   choices: readonly VoiceMessageChoice[]
   value?: string
   disabled?: boolean
+  /** Consumer-owned corrective feedback after an answer. */
+  feedback?: ReactNode
 }
 
 export interface VoiceMessageAudio {
