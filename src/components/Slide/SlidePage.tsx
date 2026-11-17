@@ -35,7 +35,7 @@ export function SlidePage({
     </>
   )
   return (
-    <Styled.Root {...props} $tone={tone} $dense={density === 'dense'}>
+    <Styled.Root {...props} $tone={tone}>
       <Styled.Content $width={width} $layout={layout}>
         {layout === 'split' ? (
           <div data-slide-introduction="true">{introduction}</div>

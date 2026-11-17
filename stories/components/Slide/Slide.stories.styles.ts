@@ -1,3 +1,4 @@
+import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 import { styled } from 'styled-components'
 import { Card } from '../../../src/components/Card/Card'
 import { theme } from '../../../src/foundations/theme/theme'
@@ -56,4 +57,11 @@ export const Goal = styled.strong`
   font-size: ${theme.typography.fontSize.xs};
   text-transform: uppercase;
   letter-spacing: 0.1em;
+`
+
+export const NotesStage = styled(Stage)`
+  position: relative;
+  background: ${(p) => resolveSlideTheme(p).canvas};
+  color: ${(p) => resolveSlideTheme(p).foreground};
+  align-items: flex-start;
 `

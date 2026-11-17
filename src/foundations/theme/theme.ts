@@ -726,6 +726,11 @@ const slideRecipe = {
   conversationWidth: '60rem',
   introductionWidth: '70rem',
   headerHeight: '3.5rem',
+  compactBreakpoint: '47.5rem',
+  notesWidth: '22.5rem',
+  notesHeight: '27.5rem',
+  notesBorder: '#E4E4E4',
+  notesShadow: '0 12px 32px rgba(0,0,0,.14)',
   headerSurface: 'rgba(255, 255, 255, 0.92)',
   panelRadius: '0.5rem',
 } as const

@@ -25,17 +25,18 @@ export function useSlideNavigation({
   )
 
   const goToIndex = useCallback(
-    (nextIndex: number, behavior?: ScrollBehavior) => {
+    (nextIndex: number, behavior?: ScrollBehavior, alignEnd = false) => {
       const viewport = viewportRef.current
       if (!viewport) return
       const target = viewport.children[nextIndex]
       if (!(target instanceof HTMLElement)) return
       requestedRef.current = target.dataset.slideId
       // Scroll only this viewport; scrollIntoView could move a surrounding portal/iframe too.
-      const top =
-        target.getBoundingClientRect().top -
-        viewport.getBoundingClientRect().top +
-        viewport.scrollTop
+      const top = alignEnd
+        ? Math.max(0, viewport.scrollHeight - viewport.clientHeight)
+        : target.getBoundingClientRect().top -
+          viewport.getBoundingClientRect().top +
+          viewport.scrollTop
       const reduced = window.matchMedia(
         '(prefers-reduced-motion: reduce)',
       ).matches
@@ -89,12 +90,19 @@ export function useSlideNavigation({
             )
           : 0,
       )
-      const line = viewport.getBoundingClientRect().top + 1
+      const view = viewport.getBoundingClientRect()
+      // Match the reference's60% entry threshold without making oversized pages unreachable.
       const current =
         elements.find((element) => {
           const rect = element.getBoundingClientRect()
-          return rect.top <= line && rect.bottom > line
-        }) ?? elements[0]
+          const visible = Math.max(
+            0,
+            Math.min(rect.bottom, view.bottom) - Math.max(rect.top, view.top),
+          )
+          return visible / Math.min(rect.height, view.height) >= 0.6
+        }) ??
+        elements.find((e) => e.dataset.slideId === activeRef.current) ??
+        elements[0]
       const id = current?.dataset.slideId
       if (id === requestedRef.current) requestedRef.current = undefined
       pageOffset = current
@@ -147,7 +155,6 @@ export function useSlideNavigation({
 
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (
-      event.target !== event.currentTarget ||
       event.defaultPrevented ||
       event.altKey ||
       event.ctrlKey ||
@@ -155,26 +162,53 @@ export function useSlideNavigation({
       event.shiftKey
     )
       return
+    if (
+      event.target instanceof Element &&
+      event.target.closest(
+        'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="tablist"],[role="radiogroup"],[role="grid"],[role="tree"],[role="spinbutton"]',
+      )
+    )
+      return
     if (event.key === 'Home' || event.key === 'End') {
       event.preventDefault()
-      goToIndex(event.key === 'Home' ? 0 : pages.length - 1)
+      goToIndex(
+        event.key === 'Home' ? 0 : pages.length - 1,
+        undefined,
+        event.key === 'End',
+      )
       return
     }
-    if (event.key !== 'PageDown' && event.key !== 'PageUp') return
+    const forward = ['PageDown', 'ArrowDown', 'ArrowRight'].includes(event.key)
+    const backward = ['PageUp', 'ArrowUp', 'ArrowLeft'].includes(event.key)
+    if (!forward && !backward) return
     const viewport = viewportRef.current
     const page = viewport?.children[index]
     if (!viewport || !(page instanceof HTMLElement)) return
     const view = viewport.getBoundingClientRect()
     const rect = page.getBoundingClientRect()
     // Native page scrolling must expose all of an oversized slide before changing pages.
-    if (event.key === 'PageDown' && rect.bottom > view.bottom + 2) return
-    if (event.key === 'PageUp' && rect.top < view.top - 2) return
+    if (
+      ((event.key === 'PageDown' || event.key === 'ArrowDown') &&
+        rect.bottom > view.bottom + 2) ||
+      ((event.key === 'PageUp' || event.key === 'ArrowUp') &&
+        rect.top < view.top - 2)
+    ) {
+      // Native scrolling inside the page remains available; a header control is outside that scroller.
+      if (event.target instanceof Node && !viewport.contains(event.target)) {
+        event.preventDefault()
+        const distance = event.key.startsWith('Page')
+          ? viewport.clientHeight
+          : 40
+        viewport.scrollTo({
+          top: viewport.scrollTop + (forward ? distance : -distance),
+          behavior: 'instant',
+        })
+      }
+      return
+    }
     event.preventDefault()
     goToIndex(
-      Math.min(
-        pages.length - 1,
-        Math.max(0, index + (event.key === 'PageDown' ? 1 : -1)),
-      ),
+      Math.min(pages.length - 1, Math.max(0, index + (forward ? 1 : -1))),
     )
   }
 

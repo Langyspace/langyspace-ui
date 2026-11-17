@@ -659,3 +659,8 @@ export type {
 } from './components/InteractiveMaterial/RevealSequenceCard.types'
 
 export { materialDarkTheme } from './foundations/theme/materialDarkTheme'
+export { SlideNotes } from './components/Slide/SlideNotes'
+export type {
+  SlideNotesProps,
+  SlideNotesLabels,
+} from './components/Slide/SlideNotes.types'

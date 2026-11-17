@@ -7,25 +7,38 @@ const recipe = resolveSlideTheme
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-page',
-})<{ $tone: 'default' | 'inverse'; $dense: boolean }>`
+})<{ $tone: 'default' | 'inverse' }>`
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[2]})
-    ${theme.spacing[8]} ${theme.spacing[8]};
+  padding: calc(
+      ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+        ${theme.spacing[2]}
+    )
+    max(${theme.spacing[8]}, env(safe-area-inset-right, 0px))
+    calc(${theme.spacing[8]} + env(safe-area-inset-bottom, 0px))
+    max(${theme.spacing[8]}, env(safe-area-inset-left, 0px));
   color: ${(p) => (p.$tone === 'inverse' ? recipe(p).inverseForeground : recipe(p).foreground)};
   background: ${(p) => (p.$tone === 'inverse' ? recipe(p).inverseCanvas : recipe(p).canvas)};
   font-family: ${theme.typography.fontFamily.sans};
   line-height: ${(p) => recipe(p).pageLineHeight};
-  @container (max-height: ${theme.viewportHeights.lg}) and (min-width: ${theme.breakpoints.md}) {
-    padding-block: ${(p) => (p.$dense ? `calc(${recipe(p).headerHeight} + ${theme.spacing[1]}) ${theme.spacing[2]}` : `calc(${recipe(p).headerHeight} + ${theme.spacing[2]}) ${theme.spacing[8]}`)};
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    padding: calc(
+        ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+          ${theme.spacing[2]}
+      )
+      max(${theme.spacing[4]}, env(safe-area-inset-right, 0px))
+      calc(${theme.spacing[4]} + env(safe-area-inset-bottom, 0px))
+      max(${theme.spacing[4]}, env(safe-area-inset-left, 0px));
   }
-
-  @container (max-width: ${theme.breakpoints.sm}) {
-    padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[2]})
-      ${theme.spacing[4]} ${theme.spacing[4]};
+  @container (max-height:${theme.viewportHeights.lg}) {
+    padding-block: calc(
+        ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+          ${theme.spacing[1]}
+      )
+      calc(${theme.spacing[3]} + env(safe-area-inset-bottom, 0px));
   }
 `
 
@@ -48,7 +61,7 @@ export const Content = styled.div<{
       margin-bottom: 0;
     }
   }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     grid-template-columns: minmax(0, 1fr);
   }
 `
@@ -66,7 +79,7 @@ export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`
   gap: ${theme.spacing[3]} ${theme.spacing[4]};
   min-width: 0;
   margin-bottom: ${(p) => (p.$lead ? `clamp(${theme.spacing[2]}, 2.2cqh, ${theme.spacing[6]})` : p.$compact ? theme.spacing[6] : `calc(${theme.spacing[6]} + ${theme.spacing[1]})`)};
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-bottom: ${(p) => (p.$lead ? `clamp(${theme.spacing[2]}, 2.2cqh, ${theme.spacing[6]})` : theme.spacing[5])};
   }
 `
@@ -94,7 +107,7 @@ export const Eyebrow = styled.div<{ $tone: 'default' | 'inverse' }>`
     font-size: 1em;
     letter-spacing: 0;
   }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-bottom: 0;
   }
 `
@@ -113,11 +126,11 @@ export const Title = styled.h2`
   letter-spacing: -0.02em;
   overflow-wrap: anywhere;
   text-wrap: balance;
-  @container (max-height: ${theme.viewportHeights.lg}) and (min-width: ${theme.breakpoints.md}) {
-    font-size: 1.875rem;
-  }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     font-size: 1.375rem;
+  }
+  @container (max-height:${theme.viewportHeights.lg}) {
+    font-size: 1.625rem;
   }
 `
 
@@ -128,7 +141,7 @@ export const Instruction = styled.div<{ $tone: 'default' | 'inverse' }>`
   font-weight: ${theme.typography.fontWeight.medium};
   line-height: 1.4;
   overflow-wrap: anywhere;
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-top: ${theme.spacing[1]};
     font-size: ${theme.typography.fontSize.sm};
   }

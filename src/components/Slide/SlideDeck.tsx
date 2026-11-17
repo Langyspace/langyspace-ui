@@ -9,6 +9,8 @@ export function SlideDeck({
   label,
   previousPageLabel = 'Voltar',
   actions,
+  overlay,
+  onKeyDown: onRootKeyDown,
   ...props
 }: SlideDeckProps) {
   const { viewportRef, index, progress, goToIndex, onKeyDown } =
@@ -18,7 +20,14 @@ export function SlideDeck({
       onPageChange,
     })
   return (
-    <Styled.Root {...props}>
+    <Styled.Root
+      data-slide-deck="true"
+      {...props}
+      onKeyDown={(event) => {
+        onRootKeyDown?.(event)
+        onKeyDown(event)
+      }}
+    >
       <Styled.Navigation aria-label={label}>
         {index > 0 ? (
           <Styled.BackButton
@@ -31,14 +40,16 @@ export function SlideDeck({
             iconStart={
               <svg
                 aria-hidden="true"
-                width="16"
-                height="16"
+                width="18"
+                height="18"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="2.4"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                <path d="m12 5-7 7 7 7M5 12h14" />
+                <path d="M15 5l-7 7 7 7" />
               </svg>
             }
           >
@@ -55,7 +66,6 @@ export function SlideDeck({
         tabIndex={0}
         role="region"
         aria-label={label}
-        onKeyDown={onKeyDown}
         data-slide-viewport="true"
       >
         {pages.map((page, pageIndex) => (
@@ -70,6 +80,7 @@ export function SlideDeck({
           </Styled.Page>
         ))}
       </Styled.Viewport>
+      {overlay}
     </Styled.Root>
   )
 }

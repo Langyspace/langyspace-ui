@@ -5,6 +5,39 @@ import type { MaterialViewProps, MaterialReadyProps } from './MaterialApp.types'
 function Ready({ materialKey }: MaterialReadyProps) {
   useEffect(() => {
     document.title = `${materialKey === 'trial-a1-a2' ? 'Experimental A1 e A2' : materialKey.toUpperCase().replace('-', '.')} · Langy`
+    const focusMaterial = () => {
+      const active = document.activeElement
+      if (
+        active instanceof Element &&
+        active.matches('input,textarea,select,[contenteditable="true"]')
+      )
+        return
+      document
+        .querySelector<HTMLElement>('[data-slide-deck]')
+        ?.focus({ preventScroll: true })
+    }
+    const focusRequest = (event: MessageEvent<unknown>) => {
+      const data = event.data
+      if (
+        event.source !== window.parent ||
+        event.origin !== window.location.origin ||
+        typeof data !== 'object' ||
+        data === null
+      )
+        return
+      if (
+        'type' in data &&
+        data.type === 'langy.material.focus' &&
+        'version' in data &&
+        data.version === 1 &&
+        'materialKey' in data &&
+        data.materialKey === materialKey &&
+        'sourceCommit' in data &&
+        data.sourceCommit === __MATERIAL_SOURCE_COMMIT__
+      )
+        focusMaterial()
+    }
+    window.addEventListener('message', focusRequest)
     window.parent.postMessage(
       {
         type: 'langy.material.ready',
@@ -14,6 +47,8 @@ function Ready({ materialKey }: MaterialReadyProps) {
       },
       window.location.origin,
     )
+    if (window.parent === window) focusMaterial()
+    return () => window.removeEventListener('message', focusRequest)
   }, [materialKey])
   return null
 }

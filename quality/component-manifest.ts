@@ -547,13 +547,17 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  ...(['SlideDeck', 'SlidePage'] as const).map((exportName) => ({
+  ...(['SlideDeck', 'SlidePage', 'SlideNotes'] as const).map((exportName) => ({
     browserSmoke: complete,
     exportName,
-    interactive: exportName === 'SlideDeck',
+    interactive: exportName !== 'SlidePage',
     ownerPath: `src/components/Slide/${exportName}.tsx`,
     runtimeMarker:
-      exportName === 'SlideDeck' ? 'lsui-sc-slide-deck' : 'lsui-sc-slide-page',
+      exportName === 'SlideDeck'
+        ? 'lsui-sc-slide-deck'
+        : exportName === 'SlideNotes'
+          ? 'lsui-sc-slide-notes'
+          : 'lsui-sc-slide-page',
     ssrSmoke: complete,
     story: {
       ...complete,

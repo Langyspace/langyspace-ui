@@ -339,27 +339,6 @@ export const Homework = styled(Surface)`
     display: block;
   }
 `
-export const Notes = styled.aside`
-  position: absolute;
-  z-index: 5;
-  top: calc(${(p) => resolveSlideTheme(p).headerHeight} + ${theme.spacing[2]});
-  right: ${theme.spacing[4]};
-  width: min(22.5rem, calc(100% - ${theme.spacing[8]}));
-  height: min(27.5rem, calc(100% - ${theme.spacing[20]}));
-  display: flex;
-  flex-direction: column;
-  gap: ${theme.spacing[3]};
-  padding: ${theme.spacing[3]};
-  border: 1px solid ${(p) => resolveSlideTheme(p).border};
-  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
-  background: ${(p) => resolveSlideTheme(p).canvas};
-  box-shadow: ${theme.shadows.md};
-  textarea {
-    flex: 1;
-    resize: none;
-    min-height: 0;
-  }
-`
 export const AudioError = styled.p`
   position: fixed;
   z-index: 6;

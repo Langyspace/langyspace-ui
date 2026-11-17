@@ -1,3 +1,5 @@
+import { useLessonPage } from '../shared/useLessonPage'
+import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -26,11 +28,11 @@ import { LessonNotes, HomeworkSection } from './B101.utilities'
 import type { B101LessonProps } from './B101.types'
 import * as S from './B101.styles'
 function B101LessonContent({
-  initialPageId = 's1',
+  initialPageId,
   studentPortalOrigin,
 }: B101LessonProps) {
-  const [pageId, setPageId] = useState(initialPageId),
-    [notes, setNotes] = useState(false)
+  const [pageId, setPageId] = useLessonPage(initialPageId, 'b1-01', order)
+  const [notes, setNotes] = useState(false)
   const notesButton = useRef<HTMLButtonElement>(null),
     speech = useLessonSpeech()
   const closeNotes = () => {
@@ -312,6 +314,7 @@ function B101LessonContent({
   return (
     <S.Stage>
       <SlideDeck
+        tabIndex={-1}
         label="B1.01 · What have you been doing?"
         previousPageLabel="Back"
         pageId={pageId}
@@ -320,19 +323,21 @@ function B101LessonContent({
           setPageId(id)
         }}
         pages={pages}
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:b1-01"
+            open={notes}
+            onClose={closeNotes}
+          />
+        }
         actions={
-          <Button
+          <LessonNotesTrigger
             ref={notesButton}
-            size="sm"
-            variant="secondary"
-            aria-expanded={notes}
+            open={notes}
             onClick={() => (notes ? closeNotes() : setNotes(true))}
-          >
-            Notes
-          </Button>
+          />
         }
       />
-      <LessonNotes open={notes} onClose={closeNotes} />
       {speech.error ? (
         <S.AudioError role="status">{speech.error}</S.AudioError>
       ) : null}

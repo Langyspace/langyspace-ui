@@ -53,6 +53,8 @@ function A201LessonContent({
 }: LessonProps) {
   return (
     <LessonShell
+      materialKey="a2-01"
+      pageIds={order}
       initialPageId={initialPageId}
       label="A2.01 · This week I’m working in Porto"
       pages={(speech, activeId) =>

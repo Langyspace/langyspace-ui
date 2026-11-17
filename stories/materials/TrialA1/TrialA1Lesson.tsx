@@ -18,6 +18,8 @@ function TrialA1LessonContent({
 }: TrialA1LessonProps) {
   return (
     <LessonShell
+      materialKey="trial-a1-a2"
+      pageIds={order}
       initialPageId={initialPageId}
       label={`${levelLabel} Trial · What do you like?`}
       pages={(speech) =>

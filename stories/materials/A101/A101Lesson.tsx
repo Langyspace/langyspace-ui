@@ -1,5 +1,6 @@
+import { useLessonPage } from '../shared/useLessonPage'
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -27,17 +28,24 @@ import {
   ConversationSection,
   HomeworkSection,
 } from './A101.sections'
-import { TeacherNotes } from './A101.notes'
+import { LessonNotes } from '../shared/LessonNotes'
+import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { useLessonSpeech } from './useLessonSpeech'
 import voice from './assets/kim-demo.mp3'
 import * as Styled from './A101.styles'
 import type { A101LessonProps } from './A101.types'
 function A101LessonContent({
-  initialPageId = 's1',
+  initialPageId,
   learnerName = '',
   studentPortalOrigin,
 }: A101LessonProps) {
-  const [pageId, setPageId] = useState(initialPageId)
+  const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
+  const [notes, setNotes] = useState(false)
+  const notesButton = useRef<HTMLButtonElement>(null)
+  const closeNotes = () => {
+    setNotes(false)
+    notesButton.current?.focus()
+  }
   const speech = useLessonSpeech()
   const pages = order.map((id) => {
     const number = Number(id.slice(1))
@@ -372,6 +380,7 @@ function A101LessonContent({
   return (
     <Styled.Stage>
       <SlideDeck
+        tabIndex={-1}
         previousPageLabel="Back"
         label="A1.01 · Introduce yourself"
         pages={pages}
@@ -380,7 +389,20 @@ function A101LessonContent({
           if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        actions={<TeacherNotes pageId={pageId} />}
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:a1-01"
+            open={notes}
+            onClose={closeNotes}
+          />
+        }
+        actions={
+          <LessonNotesTrigger
+            ref={notesButton}
+            open={notes}
+            onClick={() => (notes ? closeNotes() : setNotes(true))}
+          />
+        }
       />
       {speech.error ? (
         <Styled.AudioError role="status">{speech.error}</Styled.AudioError>

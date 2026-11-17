@@ -8,6 +8,9 @@ const recipe = resolveSlideTheme
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-deck',
 })`
+  &[tabindex='-1']:focus {
+    outline: none;
+  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,19 +33,53 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
   gap: ${theme.spacing[3]};
-  min-height: ${(p) => recipe(p).headerHeight};
-  padding: 0 ${theme.spacing[8]};
+  min-height: calc(
+    ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px)
+  );
+  padding: env(safe-area-inset-top, 0px)
+    max(${theme.spacing[8]}, env(safe-area-inset-right, 0px)) 0
+    max(${theme.spacing[8]}, env(safe-area-inset-left, 0px));
   border-bottom: 1px solid ${(p) => recipe(p).border};
   background: ${(p) => recipe(p).headerSurface};
   backdrop-filter: blur(8px);
 
-  @media (max-width: ${theme.breakpoints.sm}) {
-    padding-inline: ${theme.spacing[4]};
+  @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    padding-inline: max(${theme.spacing[4]}, env(safe-area-inset-left, 0px))
+      max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));
   }
 `
 
 export const BackButton = styled(Button)`
   font-family: ${(p) => recipe(p).displayFontFamily};
+  line-height: 1.4;
+  height: 36px;
+  min-height: 36px;
+  padding: 0 14px 0 10px;
+  gap: ${theme.spacing[1]};
+  border: 1.5px solid ${(p) => recipe(p).border};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.bold};
+  &&:hover:not(:disabled),
+  &&:active:not(:disabled) {
+    transform: none;
+    background: ${(p) => recipe(p).surface};
+    border-color: ${(p) => recipe(p).foreground};
+  }
+  &:focus-visible {
+    outline: 3px solid ${(p) => recipe(p).accent};
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    height: 32px;
+    min-height: 32px;
+    padding: 0 ${theme.spacing[3]} 0 ${theme.spacing[2]};
+    font-size: 0.8125rem;
+  }
 `
 
 export const Actions = styled.div`
@@ -57,7 +94,9 @@ export const Actions = styled.div`
 
 export const Progress = styled.progress`
   position: absolute;
-  top: calc(${(p) => recipe(p).headerHeight} - 3px);
+  top: calc(
+    ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) - 3px
+  );
   z-index: 3;
   pointer-events: none;
   display: block;
@@ -74,9 +113,17 @@ export const Progress = styled.progress`
   }
   &::-webkit-progress-value {
     background: ${(p) => recipe(p).indicator};
+    border-radius: 0 3px 3px 0;
+    transition: width ${theme.transitions.duration.fast} linear;
   }
   &::-moz-progress-bar {
     background: ${(p) => recipe(p).indicator};
+    border-radius: 0 3px 3px 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &::-webkit-progress-value {
+      transition: none;
+    }
   }
 `
 

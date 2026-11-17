@@ -19,4 +19,6 @@ export interface SlideDeckProps extends Omit<
   previousPageLabel?: string
   /** Product-owned actions such as fullscreen, without duplicating the slide layout. */
   actions?: ReactNode
+  /** Nonmodal material overlays, such as controlled notes, within the deck's viewport. */
+  overlay?: ReactNode
 }

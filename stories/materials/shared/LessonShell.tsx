@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
+import { useLessonPage } from './useLessonPage'
+import { LessonNotesTrigger } from './LessonNotesTrigger'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { useLessonSpeech } from './useLessonSpeech'
 import { LessonNotes } from './LessonNotes'
@@ -35,12 +36,14 @@ export function LessonIntro({
   )
 }
 export function LessonShell({
-  initialPageId = 's1',
+  initialPageId,
+  materialKey,
+  pageIds,
   label,
   pages,
 }: LessonShellProps) {
-  const [pageId, setPageId] = useState(initialPageId),
-    [notes, setNotes] = useState(false)
+  const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
+  const [notes, setNotes] = useState(false)
   const button = useRef<HTMLButtonElement>(null),
     speech = useLessonSpeech()
   const close = () => {
@@ -50,6 +53,7 @@ export function LessonShell({
   return (
     <S.Stage>
       <SlideDeck
+        tabIndex={-1}
         label={label}
         previousPageLabel="Back"
         pageId={pageId}
@@ -58,19 +62,21 @@ export function LessonShell({
           setPageId(id)
         }}
         pages={pages(speech, pageId)}
+        overlay={
+          <LessonNotes
+            storageKey={'langy-notes:' + materialKey}
+            open={notes}
+            onClose={close}
+          />
+        }
         actions={
-          <Button
+          <LessonNotesTrigger
             ref={button}
-            size="sm"
-            variant="secondary"
-            aria-expanded={notes}
+            open={notes}
             onClick={() => (notes ? close() : setNotes(true))}
-          >
-            Notes
-          </Button>
+          />
         }
       />
-      <LessonNotes open={notes} onClose={close} />
       {speech.error ? (
         <S.AudioError role="status">{speech.error}</S.AudioError>
       ) : null}

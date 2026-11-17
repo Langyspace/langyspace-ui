@@ -215,6 +215,71 @@ describe('SlideDeck', () => {
     expect(scrollTo).not.toHaveBeenCalled()
   })
 
+  it('activates the majority page at60% visibility while progress follows actual scroll', () => {
+    const changed = vi.fn()
+    render(<SlideDeck label="Aula" pages={pages} onPageChange={changed} />)
+    const { scroll } = geometry()
+    scroll(275)
+    expect(changed).not.toHaveBeenCalled()
+    scroll(300)
+    expect(changed).toHaveBeenLastCalledWith('two')
+    expect(screen.getByRole('progressbar')).toHaveAttribute('value', '30')
+  })
+  it('handles arrow navigation from deck controls and honors consumer key handling', () => {
+    const { rerender } = render(
+      <SlideDeck label="Aula" pages={pages} actions={<button>Notes</button>} />,
+    )
+    const { scrollTo } = geometry()
+    fireEvent.keyDown(screen.getByRole('button', { name: 'Notes' }), {
+      key: 'ArrowRight',
+    })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'smooth' })
+    scrollTo.mockClear()
+    fireEvent.keyDown(screen.getByRole('textbox'), { key: 'ArrowDown' })
+    expect(scrollTo).not.toHaveBeenCalled()
+    rerender(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        onKeyDown={(e) => e.preventDefault()}
+      />,
+    )
+    fireEvent.keyDown(screen.getByRole('region', { name: 'Aula' }), {
+      key: 'ArrowRight',
+    })
+    expect(scrollTo).not.toHaveBeenCalled()
+  })
+
+  it('reaches the end of an oversized final page', () => {
+    render(<SlideDeck label="Aula" pages={pages} />)
+    const { viewport, scrollTo } = geometry()
+    Object.defineProperty(viewport, 'scrollHeight', {
+      configurable: true,
+      value: 2000,
+    })
+    fireEvent.keyDown(viewport, { key: 'End' })
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1500, behavior: 'smooth' })
+  })
+
+  it('leaves custom widget arrow keys to their own interaction pattern', () => {
+    render(
+      <SlideDeck
+        label="Aula"
+        pages={pages}
+        overlay={
+          <div role="radiogroup" aria-label="Practice">
+            <button role="radio" aria-checked={false}>
+              Choice
+            </button>
+          </div>
+        }
+      />,
+    )
+    const { scrollTo } = geometry()
+    fireEvent.keyDown(screen.getByRole('radio'), { key: 'ArrowRight' })
+    expect(scrollTo).not.toHaveBeenCalled()
+  })
+
   it('supports empty/single-page collections and cleans up its observer', () => {
     const { rerender, unmount } = render(<SlideDeck label="Aula" pages={[]} />)
     expect(screen.queryByRole('progressbar')).not.toBeInTheDocument()

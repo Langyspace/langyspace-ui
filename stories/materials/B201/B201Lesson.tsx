@@ -59,6 +59,8 @@ function B201LessonContent({
 }: LessonProps) {
   return (
     <LessonShell
+      materialKey="b2-01"
+      pageIds={order}
       initialPageId={initialPageId}
       label="B2.01 · Dead phone, no charger"
       pages={(speech, activeId) =>

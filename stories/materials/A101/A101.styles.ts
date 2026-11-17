@@ -9,15 +9,6 @@ export const Stage = styled.div`
   height: 100dvh;
   min-width: 0;
 `
-export const NotesButton = styled(Button)`
-  background: ${(p) => resolveSlideTheme(p).surface};
-  min-height: ${theme.spacing[10]};
-  padding: ${theme.spacing[2]} ${theme.spacing[4]};
-  border: 1.5px solid ${(p) => resolveSlideTheme(p).border};
-  font-size: 0.9375rem;
-  line-height: 20px;
-  font-weight: ${theme.typography.fontWeight.bold};
-`
 export const Stack = styled.div`
   display: flex;
   flex-direction: column;
@@ -229,25 +220,6 @@ export const CopyFallback = styled.textarea`
   width: 100%;
   min-height: ${theme.spacing[32]};
   font: inherit;
-`
-export const Notes = styled.main`
-  color-scheme: dark;
-  color: ${(p) => resolveSlideTheme(p).foreground};
-  h1,
-  h2,
-  h3 {
-    color: inherit;
-  }
-  padding: ${theme.spacing[5]};
-  font-family: ${theme.typography.fontFamily.sans};
-  background: ${(p) => resolveSlideTheme(p).canvas};
-  min-height: 100vh;
-  h1 {
-    font-size: ${theme.typography.fontSize.xl};
-  }
-  li {
-    margin-bottom: ${theme.spacing[3]};
-  }
 `
 export const Tools = styled.div`
   display: flex;

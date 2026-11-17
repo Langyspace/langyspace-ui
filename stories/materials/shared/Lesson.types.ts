@@ -1,3 +1,4 @@
+import type { Ref } from 'react'
 import type { SlideDeckPage } from '../../../src/components/Slide/SlideDeck.types'
 import type { useLessonSpeech } from './useLessonSpeech'
 export interface HomeworkDestinationProps {
@@ -7,6 +8,7 @@ export interface LessonProps extends HomeworkDestinationProps {
   initialPageId?: string
 }
 export interface NotesProps {
+  storageKey: string
   open: boolean
   onClose: () => void
 }
@@ -15,6 +17,8 @@ export interface SpeechProps {
   speech: LessonSpeech
 }
 export interface LessonShellProps extends LessonProps {
+  materialKey: string
+  pageIds: readonly string[]
   label: string
   pages: (
     speech: LessonSpeech,
@@ -39,4 +43,10 @@ export interface CorrectionItem {
   a?: string
   why: string
   ok?: boolean
+}
+
+export interface NotesTriggerProps {
+  open: boolean
+  onClick: () => void
+  ref?: Ref<HTMLButtonElement>
 }
