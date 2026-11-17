@@ -1,4 +1,9 @@
 import { LabTile } from './LabTile'
+import {
+  VideoCallDemo,
+  LabeledSceneDemo,
+  GuidedRolePlayDemo,
+} from './MaterialVariants'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
@@ -83,6 +88,9 @@ export const AdvancedInterview: Story = {
 }
 export const Call: Story = { render: () => <CallDemo /> }
 export const AdvancedCall: Story = { render: () => <CallDemo level="c2" /> }
+export const VideoCall: Story = { render: () => <VideoCallDemo /> }
+export const LabeledScene: Story = { render: () => <LabeledSceneDemo /> }
+export const GuidedRolePlay: Story = { render: () => <GuidedRolePlayDemo /> }
 export const Grammar: Story = { render: () => <GrammarDemo /> }
 export const GrammarForms: Story = { render: () => <GrammarFormsDemo /> }
 export const HiddenGrammar: Story = { render: () => <GrammarDemo hidden /> }

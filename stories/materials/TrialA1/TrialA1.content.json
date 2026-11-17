@@ -1,0 +1,178 @@
+{
+  "level": "A1",
+  "title": "What do you like?",
+  "titleParts": ["What do you ", "like?"],
+  "goal": "Conversar em inglês sobre o que você gosta de fazer.",
+  "p1": {
+    "ins": "Ouça a professora e responda sobre você.",
+    "cards": [
+      {
+        "e": "🪪",
+        "q": "What’s your name?",
+        "pt": "Qual é o seu nome?",
+        "a": "My name is …"
+      },
+      {
+        "e": "🏠",
+        "q": "Where are you from?",
+        "pt": "De onde você é?",
+        "a": "I’m from …"
+      },
+      {
+        "e": "🙂",
+        "q": "How are you?",
+        "pt": "Como você está?",
+        "a": "I’m good, thanks. And you?"
+      }
+    ]
+  },
+  "p2": {
+    "title": "Sunday in the park",
+    "ins": "Olhe a cena e converse com a professora.",
+    "bg": "park",
+    "items": [
+      {
+        "e": "🎧",
+        "en": "music",
+        "x": 14,
+        "y": 58
+      },
+      {
+        "e": "⚽",
+        "en": "soccer",
+        "x": 40,
+        "y": 74
+      },
+      {
+        "e": "📖",
+        "en": "a book",
+        "x": 78,
+        "y": 52
+      },
+      {
+        "e": "🐶",
+        "en": "a dog",
+        "x": 60,
+        "y": 80
+      },
+      {
+        "e": "🚲",
+        "en": "a bike",
+        "x": 84,
+        "y": 78
+      },
+      {
+        "e": "🧺",
+        "en": "a picnic",
+        "x": 30,
+        "y": 40
+      }
+    ],
+    "support": [
+      {
+        "h": "About the picture",
+        "lines": [
+          ["What’s this?", "It’s a …"],
+          ["Is it a cat?", "No, it’s a dog."]
+        ]
+      },
+      {
+        "h": "About you",
+        "lines": [
+          ["Do you like …?", "Yes, I do. · No, I don’t."],
+          ["", "I love …!"]
+        ]
+      }
+    ]
+  },
+  "p3": {
+    "title": "Do you like the park?",
+    "ins": "Kim (from Korea) and Ana (from Brazil) are friends. They speak English.",
+    "lines": [
+      {
+        "who": "kim",
+        "en": "Do you like the park, Ana?",
+        "g": "Você gosta do parque, Ana?"
+      },
+      {
+        "who": "ana",
+        "en": "Yes, I do! I love the park. And you?",
+        "g": "Gosto! Eu amo o parque. E você?"
+      },
+      {
+        "who": "kim",
+        "en": "Me too. I like music and books.",
+        "g": "Eu também. Eu gosto de música e de livros."
+      },
+      {
+        "who": "ana",
+        "en": "Books? I don’t like books. I like soccer!",
+        "g": "Livros? Eu não gosto de livros. Eu gosto de futebol!"
+      },
+      {
+        "who": "kim",
+        "en": "Soccer? Cool!",
+        "g": "Futebol? Legal!"
+      }
+    ],
+    "your": [
+      ["Do you like the park?", "Yes, I do. · No, I don’t."],
+      ["Do you like books?", "I like … · I don’t like …"],
+      ["What do you like?", "I like … and …"]
+    ]
+  },
+  "p4": {
+    "title": "Choose one",
+    "ins": "Escolha uma e diga por quê.",
+    "strip": ["I like …", "I love …!", "I don’t like …", "And you?"],
+    "pairs": [
+      {
+        "q": "Movies or music?",
+        "a": ["🍿", "movies"],
+        "b": ["🎧", "music"]
+      },
+      {
+        "q": "Dogs or cats?",
+        "a": ["🐶", "a dog"],
+        "b": ["🐱", "a cat"]
+      },
+      {
+        "q": "Pizza or salad?",
+        "a": ["🍕", "pizza"],
+        "b": ["🥗", "salad"]
+      }
+    ]
+  },
+  "p5": {
+    "ins": "Escolham as perguntas e conversem.",
+    "qs": [
+      ["🎧", "Do you like music?"],
+      ["🍿", "Do you like movies?"],
+      ["🏖️", "Do you like the beach?"],
+      ["⚽", "Do you like soccer?"],
+      ["🍕", "Do you like pizza?"],
+      ["🐶", "Do you like dogs or cats?"]
+    ],
+    "go": [
+      ["🎧", "What music do you like?"],
+      ["🍿", "What movies do you like?"],
+      ["💬", "Do you like English?"]
+    ],
+    "strip": [
+      "Yes, I do.",
+      "No, I don’t.",
+      "I love …",
+      "I don’t like …",
+      "And you?",
+      "Me too!"
+    ]
+  },
+  "p6": [
+    "My name is …",
+    "I’m from …",
+    "I like music.",
+    "I don’t like soccer.",
+    "Do you like dogs?",
+    "Yes, I do. / No, I don’t."
+  ]
+}

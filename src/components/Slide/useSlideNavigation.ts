@@ -12,6 +12,7 @@ export function useSlideNavigation({
   const [progress, setProgress] = useState(0)
   const activeRef = useRef(pages[0]?.id)
   const requestedRef = useRef<string | undefined>(undefined)
+  const firstRequestRef = useRef(true)
   const callbackRef = useRef(onPageChange)
   useEffect(() => {
     callbackRef.current = onPageChange
@@ -23,22 +24,28 @@ export function useSlideNavigation({
     pages.findIndex((page) => page.id === observedId),
   )
 
-  const goToIndex = useCallback((nextIndex: number) => {
-    const viewport = viewportRef.current
-    if (!viewport) return
-    const target = viewport.children[nextIndex]
-    if (!(target instanceof HTMLElement)) return
-    requestedRef.current = target.dataset.slideId
-    // Scroll only this viewport; scrollIntoView could move a surrounding portal/iframe too.
-    const top =
-      target.getBoundingClientRect().top -
-      viewport.getBoundingClientRect().top +
-      viewport.scrollTop
-    const reduced = window.matchMedia(
-      '(prefers-reduced-motion: reduce)',
-    ).matches
-    viewport.scrollTo({ top, behavior: reduced ? 'instant' : 'smooth' })
-  }, [])
+  const goToIndex = useCallback(
+    (nextIndex: number, behavior?: ScrollBehavior) => {
+      const viewport = viewportRef.current
+      if (!viewport) return
+      const target = viewport.children[nextIndex]
+      if (!(target instanceof HTMLElement)) return
+      requestedRef.current = target.dataset.slideId
+      // Scroll only this viewport; scrollIntoView could move a surrounding portal/iframe too.
+      const top =
+        target.getBoundingClientRect().top -
+        viewport.getBoundingClientRect().top +
+        viewport.scrollTop
+      const reduced = window.matchMedia(
+        '(prefers-reduced-motion: reduce)',
+      ).matches
+      viewport.scrollTo({
+        top,
+        behavior: behavior ?? (reduced ? 'instant' : 'smooth'),
+      })
+    },
+    [],
+  )
 
   useEffect(() => {
     const viewport = viewportRef.current
@@ -124,6 +131,8 @@ export function useSlideNavigation({
   }, [idsKey])
 
   useEffect(() => {
+    const initial = firstRequestRef.current
+    firstRequestRef.current = false
     if (pageId === undefined || pageId === activeRef.current) return
     const viewport = viewportRef.current
     if (!viewport) return
@@ -131,7 +140,9 @@ export function useSlideNavigation({
       (element) =>
         element instanceof HTMLElement && element.dataset.slideId === pageId,
     )
-    if (target >= 0) goToIndex(target)
+    // Initial deep links must not animate through intermediate snap stops and
+    // report those pages back to a controlled consumer before reaching the target.
+    if (target >= 0) goToIndex(target, initial ? 'instant' : undefined)
   }, [pageId, idsKey, goToIndex])
 
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {

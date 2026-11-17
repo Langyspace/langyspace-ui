@@ -1,0 +1,129 @@
+{
+  "created": "2026-11-17",
+  "assets": [
+    {
+      "key": "movies",
+      "asset": "../shared/assets/scene-movies.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D style and believable materials. A cozy cinema theater, plush red seats, young adults watching a bright movie screen, foreground tub of popcorn and movie tickets without letters. Clearly MOVIES as a preference, warm polished scene, no readable text. No captions, labels, emoji, logos, watermark, collage or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-7de5115e-aff2-4ade-9307-8f617cf875a8.png",
+      "sourceSHA256": "57d158230ed33f63f01db63c8fec0624269eaed902f7d53e0ac26ec6018811f5",
+      "sha256": "2a7ab4224eb5549f3109b5df12a535e53a8a365eb5aa46902df56c37e0077363",
+      "width": 768,
+      "height": 512,
+      "bytes": 101676,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "dog",
+      "asset": "../shared/assets/scene-dog.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson choice image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D illustration style and believable materials, natural soft light. One friendly golden retriever sitting in a sunny green garden with a path and flowers, clear full-body view, main subject is the dog, no cat, no person. No text, labels, emoji, logos, watermark, collage, white studio or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-936d7c26-2444-494b-b092-608952ea13ff.png",
+      "sourceSHA256": "d49c2a2e5abbb3dba8b594d23334644dc8aca7600be2f6578d7a137d62c3c542",
+      "sha256": "8eaa019c768e504430e879f5afd323160b82d674c84a1893fbe7479e3dafb833",
+      "width": 768,
+      "height": 512,
+      "bytes": 134534,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "pizza",
+      "asset": "../shared/assets/scene-pizza.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson choice image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D illustration style and believable materials, natural soft light. A delicious freshly baked pizza on a plate on a small restaurant table, visible tomato, cheese and basil, warm pizzeria interior softly behind, pizza fills most of foreground. No salad as main dish. No text, labels, emoji, logos, watermark, collage, white studio or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-262c4877-75b9-47bf-ac2d-c8883273b40e.png",
+      "sourceSHA256": "41e99b6b75c346b628ca941a60140272231de6a5775b4ae589b95fe5718b6d86",
+      "sha256": "021fcee1d45e66f7e471783dd7ce53022dedef3e24946b2cbaa808c599919826",
+      "width": 768,
+      "height": 512,
+      "bytes": 137086,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "cat",
+      "asset": "../shared/assets/scene-cat.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson choice image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D illustration style and believable materials, natural soft light. One friendly orange cat sitting comfortably on a sofa in a cozy bright living room beside a plant, clear full-body view, main subject is the cat, no dog, no person. No text, labels, emoji, logos, watermark, collage, white studio or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-c7e5150a-1ff8-49a1-9912-b40646dd005a.png",
+      "sourceSHA256": "20a78f2289430b9bdddcc303ca1aaffe81ce6380b93b3bc194076d90044b1810",
+      "sha256": "ac10aee118360cd6f43f57f280bb65f5885e6855c83c9f2c5efdb2f21e15167d",
+      "width": 768,
+      "height": 512,
+      "bytes": 124072,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "salad",
+      "asset": "../shared/assets/scene-salad.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson choice image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D illustration style and believable materials, natural soft light. A colorful fresh green salad in a ceramic bowl on a bright kitchen table, lettuce, tomato, cucumber and carrot clearly visible, soft sunny dining room behind, bowl fills most of foreground. No pizza. No text, labels, emoji, logos, watermark, collage, white studio or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-1c62df4c-d1d8-4942-b28a-804a79aa2f34.png",
+      "sourceSHA256": "4263c2ffb6b622daa6e3cfedfa78296fb7a49d7178868bc4c43de699fc25139c",
+      "sha256": "db4736410df650a31fc110f3ace95bd38c6cb864a937a083393f9edef06ce8b9",
+      "width": 768,
+      "height": 512,
+      "bytes": 123232,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "beach",
+      "asset": "../shared/assets/scene-beach.webp",
+      "generator": "built-in image_gen",
+      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape contextual English-lesson image, 3:2. A sunny inviting beach with golden sand, gentle blue sea waves, one beach umbrella and towel in foreground, distant adults walking along the water, warm polished realistic 3D illustration matching the reference style only. Clear beach and sea, no river or city. No text, labels, emoji, logos, watermark, collage or transparency.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-edfa876d-febf-4bce-901e-958de399de83.png",
+      "sourceSHA256": "348a83f1aa9f6379b863213630dbe1dfd0903075ebe3e7080799e3399c992e2d",
+      "sha256": "faf3abb691581c06ca73c8a0b3c451ebe0a0caf153228c45334d8dd3ac7e8287",
+      "width": 768,
+      "height": 512,
+      "bytes": 116024,
+      "background": "opaque contextual scene"
+    },
+    {
+      "key": "park",
+      "asset": "../shared/assets/scene-park.webp",
+      "generator": "built-in image_gen",
+      "prompt": "One coherent warm realistic 3D park scene with six separated items: music/headphones, soccer ball, book on bench, dog, bicycle and picnic basket. Generated from the approved B1 gardening scene as style reference; no text or emoji.",
+      "reference": "B101/assets/scene-gardening.webp (style only)",
+      "generatedFile": "exec-d86d2f26-a41c-411a-b000-afe9916c30b4.png",
+      "sourceSHA256": "03543694cef0e969952a779bc06d52a520882c1e53b96c1e91a8c8d9857e3fbc",
+      "sha256": "5ad1df13b98ec304b47d67edf4d06ee9f4e10e681d842b23bbf957b833b7ea52",
+      "width": 1024,
+      "height": 634,
+      "bytes": 258862,
+      "background": "opaque contextual scene"
+    }
+  ],
+  "reused": [
+    {
+      "asset": "../B101/assets/scene-guitar.webp",
+      "sha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7"
+    },
+    {
+      "asset": "../B101/assets/scene-soccer.webp",
+      "sha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e"
+    },
+    {
+      "asset": "../A101/assets/scene-france-chloe.webp",
+      "sha256": "61f8d9a680fdbf6b7a80cbb5c9a5ec8d165e27684dc9ef4225caa912cae2728f"
+    },
+    {
+      "asset": "../A101/assets/scene-spain-lucia.webp",
+      "sha256": "783c3581eefbdc24b817f5b35ee5f20b8dca3780270350a9ad38439529bcbed7"
+    },
+    {
+      "asset": "../A101/assets/scene-happy-mia.webp",
+      "sha256": "f8439def8bc0cb005086a0d41eff6cfde781d404987c3b129366fb8fc76d2670"
+    },
+    {
+      "asset": "../shared/assets/scene-studying.webp",
+      "sha256": "4e8159eca6464d964db6dc5706ea6dc0e2bb3d7ce43ad03930c54d8569967708"
+    }
+  ]
+}

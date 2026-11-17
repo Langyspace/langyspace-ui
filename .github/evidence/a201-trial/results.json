@@ -1,0 +1,2501 @@
+{
+  "baselineSha": "83b70fb78c8dbdbe1e649102050076c344bb4a54",
+  "reference": [
+    {
+      "path": "a2-01/saida/langy-a2-01.html",
+      "bytes": 458896,
+      "sha256": "580822b951f79342bd285494e3a5e4f4202b04257742c5a1dc443fec6770fc71"
+    },
+    {
+      "path": "a2-01/int-a201.js",
+      "bytes": 41612,
+      "sha256": "60f975fbfbbfbda2ef5c22a7831a172b8b92df879253e0be3944dcfc020f039b"
+    },
+    {
+      "path": "a2-01/a201.css",
+      "bytes": 15791,
+      "sha256": "bf2cb2428345d5b845977b6d195fc4a39107e1c81ebf2c73a2feb4b3e589e778"
+    },
+    {
+      "path": "experimentais/saida/langy-exp-a1.html",
+      "bytes": 815031,
+      "sha256": "0b65e7c678ba2464cf2e9b830c52a57ecba6229aef5e039af3f028d0a0e10008"
+    },
+    {
+      "path": "experimentais/dados/exp-a1.js",
+      "bytes": 3271,
+      "sha256": "04230511b0f5d30502567dea789cbd7787ef157c946d3da262121e2fbac27e33"
+    },
+    {
+      "path": "experimentais/exp-common.js",
+      "bytes": 7147,
+      "sha256": "934dc8538b98d1726e2dfc35c6bc57d48dab2e12f834fb9cfd7420a4e4ee9fb7"
+    },
+    {
+      "path": "experimentais/exp.css",
+      "bytes": 6491,
+      "sha256": "09a567ea60845b43450b73e59f3bb77f11c330d152f2e661d36da7185d97fda5"
+    }
+  ],
+  "screens": [
+    {
+      "lesson": "a2",
+      "id": "s1",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s2",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s31",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s32",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s33",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s4",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s51",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s52",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s6",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s62",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s61",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s7",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s8",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s9",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s10",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s11",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s12",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s1",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s2",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s3",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s41",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s42",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s43",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s5",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s6",
+      "width": 1280,
+      "height": 800,
+      "before": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 800,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s1",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s2",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s31",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s32",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s33",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s4",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s51",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s52",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s6",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s62",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s61",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s7",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s8",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s9",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s10",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s11",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s12",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s1",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s2",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s3",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s41",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s42",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s43",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s5",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s6",
+      "width": 1280,
+      "height": 620,
+      "before": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 1280,
+        "height": 620,
+        "scrollWidth": 1280,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s1",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 872,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s2",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s31",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 416,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s32",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 438,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s33",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 525,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 868,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s4",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 415,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s51",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s52",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s6",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s62",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s61",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s7",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s8",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 852,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s9",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 1032,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 1093,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s10",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s11",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 1287,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 1316,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "a2",
+      "id": "s12",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": true,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s1",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s2",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s3",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s41",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 948,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 910,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s42",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 948,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 910,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s43",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 948,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 910,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s5",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 950,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 928,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    },
+    {
+      "lesson": "t",
+      "id": "s6",
+      "width": 390,
+      "height": 844,
+      "before": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      },
+      "after": {
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "viewportOverflow": false,
+        "broken": []
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "label": "a2.s1 1280×800",
+      "before": "b/a2-s1-1280x800.png",
+      "after": "a/a2-s1-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s2 1280×800",
+      "before": "b/a2-s2-1280x800.png",
+      "after": "a/a2-s2-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s31 1280×800",
+      "before": "b/a2-s31-1280x800.png",
+      "after": "a/a2-s31-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s32 1280×800",
+      "before": "b/a2-s32-1280x800.png",
+      "after": "a/a2-s32-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s33 1280×800",
+      "before": "b/a2-s33-1280x800.png",
+      "after": "a/a2-s33-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s4 1280×800",
+      "before": "b/a2-s4-1280x800.png",
+      "after": "a/a2-s4-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s51 1280×800",
+      "before": "b/a2-s51-1280x800.png",
+      "after": "a/a2-s51-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s52 1280×800",
+      "before": "b/a2-s52-1280x800.png",
+      "after": "a/a2-s52-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s6 1280×800",
+      "before": "b/a2-s6-1280x800.png",
+      "after": "a/a2-s6-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s62 1280×800",
+      "before": "b/a2-s62-1280x800.png",
+      "after": "a/a2-s62-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s61 1280×800",
+      "before": "b/a2-s61-1280x800.png",
+      "after": "a/a2-s61-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s7 1280×800",
+      "before": "b/a2-s7-1280x800.png",
+      "after": "a/a2-s7-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s8 1280×800",
+      "before": "b/a2-s8-1280x800.png",
+      "after": "a/a2-s8-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s9 1280×800",
+      "before": "b/a2-s9-1280x800.png",
+      "after": "a/a2-s9-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s10 1280×800",
+      "before": "b/a2-s10-1280x800.png",
+      "after": "a/a2-s10-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s11 1280×800",
+      "before": "b/a2-s11-1280x800.png",
+      "after": "a/a2-s11-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s12 1280×800",
+      "before": "b/a2-s12-1280x800.png",
+      "after": "a/a2-s12-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s1 1280×800",
+      "before": "b/t-s1-1280x800.png",
+      "after": "a/t-s1-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s2 1280×800",
+      "before": "b/t-s2-1280x800.png",
+      "after": "a/t-s2-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s3 1280×800",
+      "before": "b/t-s3-1280x800.png",
+      "after": "a/t-s3-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s41 1280×800",
+      "before": "b/t-s41-1280x800.png",
+      "after": "a/t-s41-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s42 1280×800",
+      "before": "b/t-s42-1280x800.png",
+      "after": "a/t-s42-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s43 1280×800",
+      "before": "b/t-s43-1280x800.png",
+      "after": "a/t-s43-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s5 1280×800",
+      "before": "b/t-s5-1280x800.png",
+      "after": "a/t-s5-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s6 1280×800",
+      "before": "b/t-s6-1280x800.png",
+      "after": "a/t-s6-1280x800.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "call 1280",
+      "before": "b/r-call-1280.png",
+      "after": "a/r-call-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "call2 1280",
+      "before": "b/r-call2-1280.png",
+      "after": "a/r-call2-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "scene 1280",
+      "before": "b/r-scene-1280.png",
+      "after": "a/r-scene-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "scene2 1280",
+      "before": "b/r-scene2-1280.png",
+      "after": "a/r-scene2-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "role 1280",
+      "before": "b/r-role-1280.png",
+      "after": "a/r-role-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "slide 1280",
+      "before": "b/r-slide-1280.png",
+      "after": "a/r-slide-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "split 1280",
+      "before": "b/r-split-1280.png",
+      "after": "a/r-split-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choice 1280",
+      "before": "b/r-choice-1280.png",
+      "after": "a/r-choice-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choice0 1280",
+      "before": "b/r-choice0-1280.png",
+      "after": "a/r-choice0-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choiceoff 1280",
+      "before": "b/r-choiceoff-1280.png",
+      "after": "a/r-choiceoff-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1 1280",
+      "before": "b/r-b1-1280.png",
+      "after": "a/r-b1-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-listen 1280",
+      "before": "b/r-b1-listen-1280.png",
+      "after": "a/r-b1-listen-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-role 1280",
+      "before": "b/r-b1-role-1280.png",
+      "after": "a/r-b1-role-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-talk 1280",
+      "before": "b/r-b1-talk-1280.png",
+      "after": "a/r-b1-talk-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "video 1280",
+      "before": null,
+      "after": "a/n-video-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "labels 1280",
+      "before": null,
+      "after": "a/n-labels-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "tracker 1280",
+      "before": null,
+      "after": "a/n-tracker-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "lesson 1280",
+      "before": null,
+      "after": "a/n-lesson-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "selected 1280",
+      "before": null,
+      "after": "a/n-selected-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "disabled 1280",
+      "before": null,
+      "after": "a/n-disabled-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "expanded 1280",
+      "before": null,
+      "after": "a/n-expanded-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "a2.s1 1280×620",
+      "before": "b/a2-s1-1280x620.png",
+      "after": "a/a2-s1-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s2 1280×620",
+      "before": "b/a2-s2-1280x620.png",
+      "after": "a/a2-s2-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s31 1280×620",
+      "before": "b/a2-s31-1280x620.png",
+      "after": "a/a2-s31-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s32 1280×620",
+      "before": "b/a2-s32-1280x620.png",
+      "after": "a/a2-s32-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s33 1280×620",
+      "before": "b/a2-s33-1280x620.png",
+      "after": "a/a2-s33-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s4 1280×620",
+      "before": "b/a2-s4-1280x620.png",
+      "after": "a/a2-s4-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s51 1280×620",
+      "before": "b/a2-s51-1280x620.png",
+      "after": "a/a2-s51-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s52 1280×620",
+      "before": "b/a2-s52-1280x620.png",
+      "after": "a/a2-s52-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s6 1280×620",
+      "before": "b/a2-s6-1280x620.png",
+      "after": "a/a2-s6-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s62 1280×620",
+      "before": "b/a2-s62-1280x620.png",
+      "after": "a/a2-s62-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s61 1280×620",
+      "before": "b/a2-s61-1280x620.png",
+      "after": "a/a2-s61-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s7 1280×620",
+      "before": "b/a2-s7-1280x620.png",
+      "after": "a/a2-s7-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s8 1280×620",
+      "before": "b/a2-s8-1280x620.png",
+      "after": "a/a2-s8-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s9 1280×620",
+      "before": "b/a2-s9-1280x620.png",
+      "after": "a/a2-s9-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s10 1280×620",
+      "before": "b/a2-s10-1280x620.png",
+      "after": "a/a2-s10-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s11 1280×620",
+      "before": "b/a2-s11-1280x620.png",
+      "after": "a/a2-s11-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s12 1280×620",
+      "before": "b/a2-s12-1280x620.png",
+      "after": "a/a2-s12-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s1 1280×620",
+      "before": "b/t-s1-1280x620.png",
+      "after": "a/t-s1-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s2 1280×620",
+      "before": "b/t-s2-1280x620.png",
+      "after": "a/t-s2-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s3 1280×620",
+      "before": "b/t-s3-1280x620.png",
+      "after": "a/t-s3-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s41 1280×620",
+      "before": "b/t-s41-1280x620.png",
+      "after": "a/t-s41-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s42 1280×620",
+      "before": "b/t-s42-1280x620.png",
+      "after": "a/t-s42-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s43 1280×620",
+      "before": "b/t-s43-1280x620.png",
+      "after": "a/t-s43-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s5 1280×620",
+      "before": "b/t-s5-1280x620.png",
+      "after": "a/t-s5-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s6 1280×620",
+      "before": "b/t-s6-1280x620.png",
+      "after": "a/t-s6-1280x620.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s1 390×844",
+      "before": "b/a2-s1-390x844.png",
+      "after": "a/a2-s1-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s2 390×844",
+      "before": "b/a2-s2-390x844.png",
+      "after": "a/a2-s2-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s31 390×844",
+      "before": "b/a2-s31-390x844.png",
+      "after": "a/a2-s31-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s32 390×844",
+      "before": "b/a2-s32-390x844.png",
+      "after": "a/a2-s32-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s33 390×844",
+      "before": "b/a2-s33-390x844.png",
+      "after": "a/a2-s33-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s4 390×844",
+      "before": "b/a2-s4-390x844.png",
+      "after": "a/a2-s4-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s51 390×844",
+      "before": "b/a2-s51-390x844.png",
+      "after": "a/a2-s51-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s52 390×844",
+      "before": "b/a2-s52-390x844.png",
+      "after": "a/a2-s52-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s6 390×844",
+      "before": "b/a2-s6-390x844.png",
+      "after": "a/a2-s6-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s62 390×844",
+      "before": "b/a2-s62-390x844.png",
+      "after": "a/a2-s62-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s61 390×844",
+      "before": "b/a2-s61-390x844.png",
+      "after": "a/a2-s61-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s7 390×844",
+      "before": "b/a2-s7-390x844.png",
+      "after": "a/a2-s7-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s8 390×844",
+      "before": "b/a2-s8-390x844.png",
+      "after": "a/a2-s8-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s9 390×844",
+      "before": "b/a2-s9-390x844.png",
+      "after": "a/a2-s9-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s10 390×844",
+      "before": "b/a2-s10-390x844.png",
+      "after": "a/a2-s10-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s11 390×844",
+      "before": "b/a2-s11-390x844.png",
+      "after": "a/a2-s11-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.s12 390×844",
+      "before": "b/a2-s12-390x844.png",
+      "after": "a/a2-s12-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s1 390×844",
+      "before": "b/t-s1-390x844.png",
+      "after": "a/t-s1-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s2 390×844",
+      "before": "b/t-s2-390x844.png",
+      "after": "a/t-s2-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s3 390×844",
+      "before": "b/t-s3-390x844.png",
+      "after": "a/t-s3-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s41 390×844",
+      "before": "b/t-s41-390x844.png",
+      "after": "a/t-s41-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s42 390×844",
+      "before": "b/t-s42-390x844.png",
+      "after": "a/t-s42-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s43 390×844",
+      "before": "b/t-s43-390x844.png",
+      "after": "a/t-s43-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s5 390×844",
+      "before": "b/t-s5-390x844.png",
+      "after": "a/t-s5-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.s6 390×844",
+      "before": "b/t-s6-390x844.png",
+      "after": "a/t-s6-390x844.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "call 390",
+      "before": "b/r-call-390.png",
+      "after": "a/r-call-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "call2 390",
+      "before": "b/r-call2-390.png",
+      "after": "a/r-call2-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "scene 390",
+      "before": "b/r-scene-390.png",
+      "after": "a/r-scene-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "scene2 390",
+      "before": "b/r-scene2-390.png",
+      "after": "a/r-scene2-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "role 390",
+      "before": "b/r-role-390.png",
+      "after": "a/r-role-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "slide 390",
+      "before": "b/r-slide-390.png",
+      "after": "a/r-slide-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "split 390",
+      "before": "b/r-split-390.png",
+      "after": "a/r-split-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choice 390",
+      "before": "b/r-choice-390.png",
+      "after": "a/r-choice-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choice0 390",
+      "before": "b/r-choice0-390.png",
+      "after": "a/r-choice0-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "choiceoff 390",
+      "before": "b/r-choiceoff-390.png",
+      "after": "a/r-choiceoff-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1 390",
+      "before": "b/r-b1-390.png",
+      "after": "a/r-b1-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-listen 390",
+      "before": "b/r-b1-listen-390.png",
+      "after": "a/r-b1-listen-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-role 390",
+      "before": "b/r-b1-role-390.png",
+      "after": "a/r-b1-role-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-talk 390",
+      "before": "b/r-b1-talk-390.png",
+      "after": "a/r-b1-talk-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "video 390",
+      "before": null,
+      "after": "a/n-video-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "labels 390",
+      "before": null,
+      "after": "a/n-labels-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "tracker 390",
+      "before": null,
+      "after": "a/n-tracker-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "lesson 390",
+      "before": null,
+      "after": "a/n-lesson-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "selected 390",
+      "before": null,
+      "after": "a/n-selected-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "disabled 390",
+      "before": null,
+      "after": "a/n-disabled-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "expanded 390",
+      "before": null,
+      "after": "a/n-expanded-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "context 1280",
+      "before": "b/r-context-1280.png",
+      "after": "a/r-context-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-vocab 1280",
+      "before": "b/r-b1-vocab-1280.png",
+      "after": "a/r-b1-vocab-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "regular 1280",
+      "before": null,
+      "after": "a/n-regular-1280.png",
+      "source": "new-story"
+    },
+    {
+      "label": "context 390",
+      "before": "b/r-context-390.png",
+      "after": "a/r-context-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "b1-vocab 390",
+      "before": "b/r-b1-vocab-390.png",
+      "after": "a/r-b1-vocab-390.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "regular 390",
+      "before": null,
+      "after": "a/n-regular-390.png",
+      "source": "new-story"
+    },
+    {
+      "label": "deep link 1280",
+      "before": "b/x-deeplink-1280.png",
+      "after": "a/x-deeplink-1280.png",
+      "source": "baseline-83b70fb-normal-motion"
+    },
+    {
+      "label": "a2.hints 1280",
+      "before": "b/x-a2.hints-1280.png",
+      "after": "a/x-a2.hints-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.words 1280",
+      "before": "b/x-a2.words-1280.png",
+      "after": "a/x-a2.words-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.wrong 1280",
+      "before": "b/x-a2.wrong-1280.png",
+      "after": "a/x-a2.wrong-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.correct 1280",
+      "before": "b/x-a2.correct-1280.png",
+      "after": "a/x-a2.correct-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.grammar 1280",
+      "before": "b/x-a2.grammar-1280.png",
+      "after": "a/x-a2.grammar-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.swapped 1280",
+      "before": "b/x-a2.swapped-1280.png",
+      "after": "a/x-a2.swapped-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.signal 1280",
+      "before": "b/x-a2.signal-1280.png",
+      "after": "a/x-a2.signal-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.ended 1280",
+      "before": "b/x-a2.ended-1280.png",
+      "after": "a/x-a2.ended-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.summary 1280",
+      "before": "b/x-a2.summary-1280.png",
+      "after": "a/x-a2.summary-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.translations 1280",
+      "before": "b/x-t.translations-1280.png",
+      "after": "a/x-t.translations-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.visited 1280",
+      "before": "b/x-t.visited-1280.png",
+      "after": "a/x-t.visited-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.preference 1280",
+      "before": "b/x-t.preference-1280.png",
+      "after": "a/x-t.preference-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.conversation 1280",
+      "before": "b/x-t.conversation-1280.png",
+      "after": "a/x-t.conversation-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.hints 390",
+      "before": "b/x-a2.hints-390.png",
+      "after": "a/x-a2.hints-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.words 390",
+      "before": "b/x-a2.words-390.png",
+      "after": "a/x-a2.words-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.wrong 390",
+      "before": "b/x-a2.wrong-390.png",
+      "after": "a/x-a2.wrong-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.correct 390",
+      "before": "b/x-a2.correct-390.png",
+      "after": "a/x-a2.correct-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.grammar 390",
+      "before": "b/x-a2.grammar-390.png",
+      "after": "a/x-a2.grammar-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.swapped 390",
+      "before": "b/x-a2.swapped-390.png",
+      "after": "a/x-a2.swapped-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.signal 390",
+      "before": "b/x-a2.signal-390.png",
+      "after": "a/x-a2.signal-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.ended 390",
+      "before": "b/x-a2.ended-390.png",
+      "after": "a/x-a2.ended-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.summary 390",
+      "before": "b/x-a2.summary-390.png",
+      "after": "a/x-a2.summary-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.translations 390",
+      "before": "b/x-t.translations-390.png",
+      "after": "a/x-t.translations-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.visited 390",
+      "before": "b/x-t.visited-390.png",
+      "after": "a/x-t.visited-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.preference 390",
+      "before": "b/x-t.preference-390.png",
+      "after": "a/x-t.preference-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "t.conversation 390",
+      "before": "b/x-t.conversation-390.png",
+      "after": "a/x-t.conversation-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.transcript 1280",
+      "before": "b/x-a2.transcript-1280.png",
+      "after": "a/x-a2.transcript-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.transcript-end 1280",
+      "before": "b/x-a2.transcript-end-1280.png",
+      "after": "a/x-a2.transcript-end-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.grammar-end 390",
+      "before": "b/x-a2.grammar-end-390.png",
+      "after": "a/x-a2.grammar-end-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.transcript 390",
+      "before": "b/x-a2.transcript-390.png",
+      "after": "a/x-a2.transcript-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "a2.transcript-end 390",
+      "before": "b/x-a2.transcript-end-390.png",
+      "after": "a/x-a2.transcript-end-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "source notes 1280",
+      "before": "b/x-source-notes-1280.png",
+      "after": "a/x-source-notes-1280.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "baseline notes 1280",
+      "before": "b/x-baseline-notes-1280.png",
+      "after": "a/x-baseline-notes-1280.png",
+      "source": "baseline-83b70fb"
+    },
+    {
+      "label": "source notes 390",
+      "before": "b/x-source-notes-390.png",
+      "after": "a/x-source-notes-390.png",
+      "source": "frozen-authoring-export"
+    },
+    {
+      "label": "baseline notes 390",
+      "before": "b/x-baseline-notes-390.png",
+      "after": "a/x-baseline-notes-390.png",
+      "source": "baseline-83b70fb"
+    }
+  ],
+  "errors": [],
+  "referenceSpeech": "Deterministic speech stub for UI capture only; native MP3 verified in separate unmocked browser journeys.",
+  "reviewRevision": "The immutable image URLs in the PR identify the exact feature commit; no moving branch URLs."
+}

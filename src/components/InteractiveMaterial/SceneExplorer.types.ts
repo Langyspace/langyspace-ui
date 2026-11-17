@@ -17,6 +17,8 @@ export interface SceneExplorerProps extends Omit<
   selectedId?: string
   visitedIds: readonly string[]
   onSelect: (id: string) => void
+  /** Labeled audio targets over a scene, without the exploration answer panel. */
+  presentation?: 'explore' | 'labels'
   answerVisible?: boolean
   onAnswerToggle?: () => void
   labels?: Partial<{
@@ -24,5 +26,6 @@ export interface SceneExplorerProps extends Omit<
     show: string
     hide: string
     progress: string
+    play: string
   }>
 }

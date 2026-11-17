@@ -14,7 +14,13 @@ export interface SlidePageProps extends Omit<
   layout?: 'stacked' | 'split'
   /** The reference uses 600px for focused tasks, 760px for standard content and 1040px for wider exercises. */
   width?:
-    'focused' | 'standard' | 'wide' | 'reading' | 'exercise' | 'conversation'
+    | 'focused'
+    | 'standard'
+    | 'wide'
+    | 'reading'
+    | 'exercise'
+    | 'conversation'
+    | 'expanded'
   density?: 'regular' | 'compact' | 'dense'
   tone?: 'default' | 'inverse'
 }

@@ -1,11 +1,11 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
 import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-choice-card',
-})`
+})<{ $lesson?: boolean }>`
   display: flex;
   align-items: center;
   min-width: 0;
@@ -56,4 +56,22 @@ export const Root = styled(Pressable).withConfig({
     padding-right: ${theme.spacing[3]};
     padding-left: ${theme.spacing[3]};
   }
+  ${(p) =>
+    p.$lesson
+      ? css`
+          border-radius: ${theme.slides.panelRadius};
+          border-color: ${theme.slides.border};
+          color: ${theme.slides.foreground};
+          background: ${theme.slides.surface};
+          font-family: ${theme.slides.displayFontFamily};
+          &[aria-pressed='true'] {
+            border: 3px solid ${theme.semantic.status.success.foreground};
+            color: ${theme.slides.foreground};
+            background: ${theme.slides.surface};
+          }
+          &:focus-visible {
+            outline-color: ${theme.slides.accent};
+          }
+        `
+      : undefined}
 `

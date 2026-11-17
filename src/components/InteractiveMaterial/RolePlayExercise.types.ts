@@ -16,10 +16,13 @@ export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> 
   /** Consumer-owned summary or task information before the checklist. */
   tracker?: ReactNode
   density?: 'regular' | 'compact'
+  /** Plain scene with support beside the checklist and an outlined next step. */
+  presentation?: 'default' | 'tracker'
   labels?: Partial<{
     show: string
     hide: string
     steps: string
     progress: string
+    joiner: string
   }>
 }

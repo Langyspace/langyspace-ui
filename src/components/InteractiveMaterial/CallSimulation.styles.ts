@@ -1,6 +1,10 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import * as Common from './Material.shared.styles'
+import { ConnectionSignal } from './ConnectionSignal'
+const device = (props: Parameters<typeof resolveTheme>[0]) =>
+  resolveTheme(props).voiceMessage ?? theme.voiceMessage
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-call-simulation',
 })`
@@ -17,7 +21,7 @@ export const Root = styled.section.withConfig({
     min-width: min(100%, 200px);
   }
 `
-export const Phone = styled.div`
+export const Phone = styled.div<{ $video?: boolean }>`
   width: 280px;
   max-width: 100%;
   min-height: 540px;
@@ -33,6 +37,16 @@ export const Phone = styled.div`
   text-align: center;
   margin-inline: auto;
   box-sizing: border-box;
+  ${(p) =>
+    p.$video
+      ? css`
+          padding: ${theme.spacing[4]} ${theme.spacing[3]};
+          width: ${device(p).phoneWidth};
+          min-height: ${device(p).phoneHeight};
+          border-radius: ${device(p).phoneRadius};
+          border-width: ${device(p).frameWidth};
+        `
+      : undefined}
   h3 {
     font-family: ${theme.slides.displayFontFamily};
     font-size: 22px;
@@ -42,7 +56,7 @@ export const Phone = styled.div`
     overflow-wrap: anywhere;
   }
 `
-export const Avatar = styled.div`
+export const Avatar = styled.div<{ $poor?: boolean; $video?: boolean }>`
   width: 84px;
   height: 84px;
   display: grid;
@@ -50,6 +64,51 @@ export const Avatar = styled.div`
   border-radius: ${theme.radius.circle};
   background: ${theme.simulations.callAvatar};
   font: 700 30px ${theme.slides.displayFontFamily};
+  position: relative;
+  overflow: ${(p) => (p.$video ? 'visible' : 'hidden')};
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: ${theme.radius.circle};
+    filter: ${(p) => (p.$video ? (p.$poor ? 'grayscale(1) brightness(.6) blur(4px)' : 'grayscale(1) brightness(.75)') : 'none')};
+  }
+`
+export const CameraBadge = styled.span`
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid ${theme.voiceMessage.frame};
+  border-radius: ${theme.radius.circle};
+  background: ${theme.simulations.callAvatar};
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    transform: rotate(45deg);
+    background: ${theme.simulations.foreground};
+  }
+`
+export const SignalButton = styled(Common.DeviceControl)`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[2]};
+  min-height: 44px;
+  padding: ${theme.spacing[2]} ${theme.spacing[3]};
+  border-radius: ${theme.radius.pill};
+  background: ${theme.simulations.callKey};
+  color: ${theme.simulations.foreground};
+  font-size: ${theme.typography.fontSize.sm};
+  margin-top: auto;
 `
 export const Status = styled.div`
   font-size: 12px;
@@ -107,5 +166,33 @@ export const CallButton = styled(Common.DeviceControl)<{ $start: boolean }>`
   margin-top: auto;
   &:not(:disabled):hover {
     background: ${(p) => (p.$start ? theme.simulations.accept : theme.simulations.end)};
+  }
+`
+
+export const PoorSignal = styled(ConnectionSignal)`
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  padding: 6px;
+  border-radius: ${theme.radius.lg};
+  background: ${theme.colors.palette.white};
+  box-shadow: ${theme.shadows.sm};
+  i {
+    width: 8px;
+  }
+  i:nth-child(1) {
+    height: 10px;
+  }
+  i:nth-child(2) {
+    height: 20px;
+  }
+  i:nth-child(3) {
+    height: 30px;
+  }
+  i:nth-child(4) {
+    height: 40px;
   }
 `

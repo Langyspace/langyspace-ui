@@ -10,6 +10,8 @@ Frame de telefone com estados `idle`, `ringing`, `menu`, `connected` e `ended`. 
 
 A demonstração A1 usa Bella Pizza; a avançada usa Fibrenet. O consumidor controla a opção correta, os tempos de transição, a sequência de falas e o cancelamento ao desligar.
 
+`presentation="video"` utiliza o frame compacto da receita de voz, aceita `avatarUrl` e mostra câmera desligada. `signalPoor` e `onSignalToggle` controlam a perda simulada de conexão, o desfoque e o botão de recuperação. Os rótulos `cameraOff`, `signalPoor` e `signalGood` são traduzíveis. A duração, a pausa ao sair da página e o reinício pertencem ao consumidor. Os padrões da chamada de áudio permanecem iguais; não há acesso a câmera, microfone ou rede telefônica.
+
 ## InterviewSimulation
 
 Videochamada com entrevistadora, aluna, legenda, controles de mic/câmera/mão e sequência de áudios. Recebe `interviewer`, `learnerName`, `caption`, `turnIndex`, `turnCount` e callbacks de navegação. Cada toggle recebe valor e callback; `ended` bloqueia a reprodução e os controles da chamada. `loading` bloqueia o transporte.
@@ -34,9 +36,13 @@ Frases com uma lacuna ativa por `activeId`; as opções ficam junto dessa fala. 
 
 Situação com imagem e papéis opcionais, apoio revelável e checklist. `steps` identifica cada passo, `completedIds` controla a seleção e `onStepToggle(id)` comunica a ação. `supportVisible`/`onSupportToggle` controlam os apoios. `children` permite instruções adicionais. Não avalia nem persiste a participação.
 
+A apresentação opcional `tracker` de `RolePlayExercise` mantém a cena sem painel extra, coloca o controle de apoio junto aos passos e identifica o próximo item por `aria-current="step"`. Os passos continuam independentes e controlados. `labels.joiner` permite localizar a contagem (por exemplo, `de`); a apresentação padrão preserva a aparência anterior.
+
 ## SceneExplorer
 
 Imagem com hotspots em coordenadas percentuais. Cada hotspot tem `id`, posição, rótulo, pergunta e resposta opcional. `selectedId`, `visitedIds` e `answerVisible` controlam seleção, progresso e apoio. `onSelect(id)` pode também acionar o áudio do objeto no consumidor. Os hotspots são botões com nome acessível e equivalente de teclado.
+
+`presentation="labels"` mostra as palavras sobre a imagem e mantém a marca visual dos itens visitados, sem o painel de respostas do modo exploratório. O rótulo de áudio recebe `labels.play`. Posição, fala e estado continuam fornecidos pelo consumidor; a apresentação padrão permanece `explore`.
 
 ## MinimalPairExercise
 

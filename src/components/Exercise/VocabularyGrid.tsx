@@ -18,7 +18,11 @@ export function VocabularyGrid({
 }: VocabularyGridProps) {
   const [hovered, setHovered] = useState<string>()
   return (
-    <Styled.Vocabulary {...props} $columns={columns}>
+    <Styled.Vocabulary
+      {...props}
+      $columns={columns}
+      $regularScene={imageVariant === 'scene' && density === 'regular'}
+    >
       {items.map((item, index) => {
         const revealed =
           showAll ||

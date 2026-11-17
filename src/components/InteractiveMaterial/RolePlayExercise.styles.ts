@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
@@ -8,7 +8,15 @@ export const Root = styled(Common.Columns).withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
 `
-export const Scene = styled(Common.Surface)`
+export const Scene = styled(Common.Surface)<{ $plain?: boolean }>`
+  ${(p) =>
+    p.$plain
+      ? css`
+          padding: 0;
+          border: 0;
+          background: transparent;
+        `
+      : undefined}
   img {
     width: 100%;
     max-height: 300px;
@@ -20,7 +28,12 @@ export const Scene = styled(Common.Surface)`
     margin: 0;
   }
 `
-export const Step = styled(Pressable)<{ $done: boolean; $compact: boolean }>`
+export const Step = styled(Pressable)<{
+  $done: boolean
+  $compact: boolean
+  $tracker?: boolean
+  $current?: boolean
+}>`
   display: flex;
   align-items: center;
   gap: ${theme.spacing[3]};
@@ -40,5 +53,33 @@ export const Step = styled(Pressable)<{ $done: boolean; $compact: boolean }>`
   &:focus-visible {
     outline: 3px solid ${(p) => Common.recipe(p).accent};
     outline-offset: 3px;
+  }
+  ${(p) =>
+    p.$tracker
+      ? css`
+          min-height: 44px;
+          padding: ${theme.spacing[2]} ${theme.spacing[3]};
+          border-radius: ${theme.slides.panelRadius};
+          font-weight: ${theme.typography.fontWeight.semibold};
+          border-color: ${p.$current ? theme.slides.indicator : p.$done ? theme.semantic.status.success.foreground : theme.slides.border};
+          > span:first-child {
+            width: ${theme.spacing[6]};
+            height: ${theme.spacing[6]};
+            border: 2px solid
+              ${p.$current ? theme.slides.indicator : p.$done ? theme.semantic.status.success.foreground : theme.slides.border};
+            border-radius: ${theme.radius.sm};
+            background: transparent;
+            color: ${p.$current ? theme.slides.indicator : p.$done ? theme.semantic.status.success.foreground : theme.slides.muted};
+          }
+        `
+      : undefined}
+`
+export const TrackerHeader = styled(Common.Row)`
+  > p:first-child {
+    flex: 1;
+  }
+  > [role='status'] {
+    font-weight: ${theme.typography.fontWeight.bold};
+    color: ${theme.slides.foreground};
   }
 `

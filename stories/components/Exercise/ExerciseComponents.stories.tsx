@@ -120,13 +120,14 @@ export const Dark: Story = {
     ),
   ],
 }
-function ScenesPreview() {
+function ScenesPreview({ regular = false }: { regular?: boolean }) {
   const [revealed, setRevealed] = useState<string[]>([])
   return (
     <Styled.Preview>
       <VocabularyGrid
         items={feelings}
         imageVariant="scene"
+        density={regular ? 'regular' : 'compact'}
         revealedIds={revealed}
         onReveal={(id) =>
           setRevealed((old) =>
@@ -140,6 +141,7 @@ function ScenesPreview() {
   )
 }
 export const ContextualScenes: Story = { render: () => <ScenesPreview /> }
+export const RegularScenes: Story = { render: () => <ScenesPreview regular /> }
 export const DarkScenes: Story = {
   ...Dark,
   render: () => <ScenesPreview />,

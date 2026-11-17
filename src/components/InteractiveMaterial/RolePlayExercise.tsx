@@ -15,6 +15,7 @@ export function RolePlayExercise({
   onStepToggle,
   tracker,
   density = 'regular',
+  presentation = 'default',
   labels,
   children,
   ...props
@@ -25,53 +26,71 @@ export function RolePlayExercise({
     hide: 'Esconder apoio',
     steps: 'Passo a passo · a professora marca',
     progress: 'concluídos',
+    joiner: '/',
     ...labels,
   }
   const count = steps.filter((s) => completedIds.includes(s.id)).length
+  const next = steps.find((s) => !completedIds.includes(s.id))?.id
+  const guided = presentation === 'tracker'
+  const Header = guided ? Styled.TrackerHeader : Common.Row
+  const Support = guided ? Common.Row : Common.Stack
+  const supportControl =
+    support.length && onSupportToggle ? (
+      <Common.Action
+        type="button"
+        variant="secondary"
+        size={guided ? 'sm' : undefined}
+        aria-label={supportVisible ? text.hide : text.show}
+        aria-controls={id}
+        aria-expanded={supportVisible}
+        onClick={onSupportToggle}
+      >
+        {supportVisible ? text.hide : text.show}
+      </Common.Action>
+    ) : null
+  const supportContent = supportVisible ? (
+    <Support id={id}>
+      {support.map((line) => (
+        <Common.Chip key={line}>{line}</Common.Chip>
+      ))}
+    </Support>
+  ) : null
   return (
     <Styled.Root as="section" {...props}>
-      <Styled.Scene>
+      <Styled.Scene $plain={guided}>
         {image ? <img src={image.src} alt={image.alt} /> : null}
-        <p>{situation}</p>
+        {situation ? <p>{situation}</p> : null}
         <Common.Row>
           {roles.map((role) => (
             <Common.Chip key={role}>{role}</Common.Chip>
           ))}
         </Common.Row>
-        {support.length && onSupportToggle ? (
-          <Common.Action
-            type="button"
-            variant="secondary"
-            aria-controls={id}
-            aria-expanded={supportVisible}
-            onClick={onSupportToggle}
-          >
-            {supportVisible ? text.hide : text.show}
-          </Common.Action>
-        ) : null}
-        {supportVisible ? (
-          <Common.Stack id={id}>
-            {support.map((line) => (
-              <Common.Chip key={line}>{line}</Common.Chip>
-            ))}
-          </Common.Stack>
-        ) : null}
+        {!guided ? supportControl : null}
+        {!guided ? supportContent : null}
         {children}
       </Styled.Scene>
       <Common.Stack>
         {tracker}
-        <Common.Row>
-          <Common.Tag>{text.steps}</Common.Tag>
+        <Header>
+          {guided ? (
+            <Common.Hint>{text.steps}</Common.Hint>
+          ) : (
+            <Common.Tag>{text.steps}</Common.Tag>
+          )}
           <Common.Hint role="status">
-            {count} / {steps.length} {text.progress}
+            {count} {text.joiner} {steps.length} {text.progress}
           </Common.Hint>
-        </Common.Row>
+          {guided ? supportControl : null}
+        </Header>
         {steps.map((step, i) => (
           <Styled.Step
             $compact={density === 'compact'}
             type="button"
             key={step.id}
             $done={completedIds.includes(step.id)}
+            $tracker={guided}
+            $current={guided && next === step.id}
+            aria-current={guided && next === step.id ? 'step' : undefined}
             aria-pressed={completedIds.includes(step.id)}
             onClick={() => {
               onStepToggle(step.id)
@@ -83,6 +102,7 @@ export function RolePlayExercise({
             {step.label}
           </Styled.Step>
         ))}
+        {guided ? supportContent : null}
       </Common.Stack>
     </Styled.Root>
   )

@@ -40,3 +40,24 @@ export const Hotspot = styled(Pressable)<{
     outline-offset: 3px;
   }
 `
+export const LabelScene = styled(Scene)`
+  container-type: inline-size;
+  border-radius: ${theme.slides.panelRadius};
+`
+export const LabelHotspot = styled(Hotspot)`
+  width: auto;
+  min-width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: ${theme.slides.panelRadius};
+  background: transparent;
+  span {
+    padding: ${theme.spacing[1]} ${theme.spacing[2]};
+    border-radius: ${theme.slides.panelRadius};
+    background: ${(p) => (p.$visited ? theme.semantic.status.success.foreground : theme.colors.palette.white)};
+    color: ${(p) => (p.$visited ? theme.colors.palette.white : theme.slides.foreground)};
+    box-shadow: ${theme.shadows.sm};
+    white-space: nowrap;
+    font-size: clamp(0.8125rem, 2.1cqw, 1rem);
+  }
+`

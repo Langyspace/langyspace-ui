@@ -27,6 +27,7 @@ type Story = StoryObj<typeof meta>
 export const Default: Story = { tags: ['visual-review'] }
 export const Focused: Story = { args: { width: 'focused' } }
 export const Reading: Story = { args: { width: 'reading', density: 'compact' } }
+export const Expanded: Story = { args: { width: 'expanded' } }
 export const WithIntroduction: Story = {
   args: {
     lead: (

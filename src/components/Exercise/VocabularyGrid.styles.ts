@@ -1,13 +1,25 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
-})<{ $columns?: 2 | 3 | 4 }>`
+})<{ $columns?: 2 | 3 | 4; $regularScene?: boolean }>`
   display: grid;
   grid-template-columns: repeat(${(p) => p.$columns ?? 3}, minmax(0, 1fr));
   gap: ${theme.spacing[3]};
+  ${(p) =>
+    p.$regularScene
+      ? css`
+          width: 100%;
+          max-width: calc(
+            ${theme.exercises.vocabularyRegularHeight} *
+              ${(p.$columns ?? 3) * 1.5} + ${theme.spacing[3]} *
+              ${(p.$columns ?? 3) - 1}
+          );
+          margin-inline: auto;
+        `
+      : undefined}
   @container (max-width: ${theme.breakpoints.sm}) {
     grid-template-columns: repeat(
       ${(p) => (p.$columns === 4 ? 2 : (p.$columns ?? 2))},
@@ -21,7 +33,8 @@ export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
   place-items: center;
   min-width: 0;
   min-height: ${(p) => (p.$scene || p.$regular ? '0' : theme.exercises.vocabularyHeight)};
-  height: ${(p) => (p.$scene ? theme.exercises.sceneHeight : p.$regular ? theme.exercises.vocabularyRegularHeight : 'auto')};
+  height: ${(p) => (p.$scene && p.$regular ? 'auto' : p.$regular ? theme.exercises.vocabularyRegularHeight : p.$scene ? theme.exercises.sceneHeight : 'auto')};
+  aspect-ratio: ${(p) => (p.$scene && p.$regular ? '3 / 2' : 'auto')};
   padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
   border: 1px solid ${(p) => recipe(p).border};
   border-radius: ${theme.radius.lg};
@@ -39,7 +52,7 @@ export const WordImage = styled.img<{ $scene: boolean; $regular: boolean }>`
   width: 100%;
   height: ${(p) => (p.$scene ? '100%' : p.$regular ? theme.exercises.vocabularyRegularImageHeight : theme.exercises.vocabularyImageHeight)};
   object-fit: ${(p) => (p.$scene ? 'cover' : 'contain')};
-  object-position: ${(p) => (p.$scene ? 'center 25%' : 'center')};
+  object-position: ${(p) => (p.$scene && !p.$regular ? 'center 25%' : 'center')};
   border-radius: inherit;
 `
 export const QuestionMark = styled.span`

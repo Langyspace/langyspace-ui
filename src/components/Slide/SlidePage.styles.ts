@@ -40,7 +40,7 @@ export const Content = styled.div<{
   gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$layout === 'split' ? recipe(p).introductionWidth : p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
+  max-width: ${(p) => (p.$layout === 'split' ? recipe(p).introductionWidth : p.$width === 'expanded' ? recipe(p).introductionWidth : p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
   margin-inline: auto;
   > [data-slide-introduction] {
     min-width: 0;

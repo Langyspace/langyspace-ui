@@ -86,6 +86,29 @@ function geometry() {
 }
 
 describe('SlideDeck', () => {
+  it('positions an initial deep request directly', () => {
+    const descriptor = Object.getOwnPropertyDescriptor(
+      HTMLElement.prototype,
+      'scrollTo',
+    )
+    const navigate = vi.fn()
+    Object.defineProperty(HTMLElement.prototype, 'scrollTo', {
+      configurable: true,
+      writable: true,
+      value: navigate,
+    })
+    try {
+      render(<SlideDeck label="Aula" pages={pages} pageId="three" />)
+      expect(navigate).toHaveBeenCalledWith(
+        expect.objectContaining({ behavior: 'instant' }),
+      )
+    } finally {
+      if (descriptor)
+        Object.defineProperty(HTMLElement.prototype, 'scrollTo', descriptor)
+      else Reflect.deleteProperty(HTMLElement.prototype, 'scrollTo')
+    }
+  })
+
   it('retains a new navigation target when a pending resize arrives before scrolling settles', () => {
     render(<SlideDeck label="Aula" pages={pages} />)
     const { viewport, scroll, resize, scrollTo } = geometry()

@@ -12,6 +12,8 @@ Receives semantic image/word/translation items, controlled `revealedIds`, `showA
 
 `imageVariant="scene"` gives contextual illustrations a full-card frame whose height follows the material viewport. The default `isolated` keeps icon framing. Optional `columns={3}` keeps the reference's three columns even on a phone; omit it for the responsive three/two-column grid. `density="regular"` provides taller vocabulary cards. `revealVariant="tooltip"` uses a hover/focus translation tooltip, a persistent word caption after activation/show-all and an initial-letter hint. The default overlay reveal remains available. Image generation, scene selection and asset URLs remain owned by the material author; no generation provider or credentials enter the component bundle.
 
+Scene cards also honor the existing `density="regular"`: a 3:2 frame capped by the regular height preserves the composition of matching 3:2 artwork. Compact scenes keep their original height and upper framing. A2.01 uses the responsive three/two-column default; image composition remains the material author's responsibility.
+
 ## LearningDialogue
 
 Receives stable line ids, speaker names/avatars, start/end alignment and React content. Translation visibility, playing id and playback/translation actions are controlled by the product. Content slots permit the existing dialogue to contain exercise blanks without cloning the chat. No speech engine or microphone service is bundled.

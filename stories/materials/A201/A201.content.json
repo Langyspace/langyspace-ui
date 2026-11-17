@@ -1,0 +1,351 @@
+{
+  "vocabulary": [
+    {
+      "ic": "v_laptop",
+      "en": "a laptop",
+      "pt": "um notebook",
+      "hint": "a l_____",
+      "id": "V.0"
+    },
+    {
+      "ic": "v_meet",
+      "en": "a meeting",
+      "pt": "uma reunião",
+      "hint": "a m______",
+      "id": "V.1"
+    },
+    {
+      "ic": "v_river",
+      "en": "a river",
+      "pt": "um rio",
+      "hint": "a r____",
+      "id": "V.2"
+    },
+    {
+      "ic": "v_bridge",
+      "en": "a bridge",
+      "pt": "uma ponte",
+      "hint": "a b_____",
+      "id": "V.3"
+    },
+    {
+      "ic": "v_vcall",
+      "en": "a video call",
+      "pt": "uma chamada de vídeo",
+      "hint": "a v____ c___",
+      "id": "V.4"
+    },
+    {
+      "ic": "v_sig",
+      "en": "bad signal",
+      "pt": "sinal fraco",
+      "hint": "b__ s_____",
+      "id": "V.5"
+    }
+  ],
+  "actions": [
+    {
+      "ic": "a_walk",
+      "en": "I’m walking.",
+      "pt": "Estou andando.",
+      "hint": "I’m w______",
+      "id": "A4.0"
+    },
+    {
+      "ic": "a_coffee",
+      "en": "I’m drinking coffee.",
+      "pt": "Estou tomando café.",
+      "hint": "I’m d_______ coffee",
+      "id": "A4.1"
+    },
+    {
+      "ic": "a_cook",
+      "en": "I’m cooking.",
+      "pt": "Estou cozinhando.",
+      "hint": "I’m c______",
+      "id": "A4.2"
+    },
+    {
+      "ic": "a_work",
+      "en": "I’m working.",
+      "pt": "Estou trabalhando.",
+      "hint": "I’m w______",
+      "id": "A4.3"
+    },
+    {
+      "ic": "a_eat",
+      "en": "I’m eating.",
+      "pt": "Estou comendo.",
+      "hint": "I’m e_____",
+      "id": "A4.4"
+    },
+    {
+      "ic": "a_study",
+      "en": "I’m studying.",
+      "pt": "Estou estudando.",
+      "hint": "I’m s_______",
+      "id": "A4.5"
+    }
+  ],
+  "warmUps": [
+    {
+      "pic": "v_river",
+      "q": "Where are you?",
+      "id": "W.1",
+      "a": 0,
+      "ins": "A Ana manda uma foto de onde ela está. Complete o balão: o que a Ana responde?",
+      "o": ["I’m next to the river.", "I’m in the river.", "It’s a river."],
+      "why": {
+        "1": "In the river é dentro da água! Do lado do rio é next to the river.",
+        "2": "It’s a river responde What’s this?. A pergunta é Where are you?, e a resposta começa com I’m."
+      },
+      "now": "Pergunte à professora: Where are you?"
+    },
+    {
+      "pic": "v_meet",
+      "q": "Where are you?",
+      "id": "W.2",
+      "a": 1,
+      "hide": true,
+      "ins": "A Ana manda uma foto de onde ela está. Complete o balão: o que a Ana responde?",
+      "o": ["I’m at home.", "I’m in a meeting.", "It’s a meeting."],
+      "why": {
+        "0": "At home é em casa. Olhe a foto que a Ana mandou: é uma reunião. I’m in a meeting.",
+        "2": "It’s responde What’s this?. Para Where are you?, comece com I’m."
+      },
+      "now": "Responda sobre você: Where are you now?",
+      "sub": "now = agora · I’m at home. = Estou em casa. · I’m on a business trip. = Estou numa viagem de trabalho. · I’m in …"
+    },
+    {
+      "pic": "wu_laptop",
+      "q": "Do you usually work from home?",
+      "tr": "usually = normalmente · from home = de casa",
+      "id": "W.3",
+      "a": 0,
+      "ins": "A Ana normalmente trabalha de casa 👍. Complete o balão: o que a Ana responde?",
+      "o": ["Yes, I do.", "No, I don’t.", "I’m in a meeting."],
+      "why": {
+        "1": "No, I don’t diz que a Ana não trabalha de casa. Olhe o 👍: ela trabalha de casa. Yes, I do.",
+        "2": "I’m in a meeting diz onde a Ana está agora. A Kim pergunta o que ela faz normalmente: Yes, I do."
+      },
+      "now": "Responda a verdade, ou invente, e depois pergunte à professora: Do you usually work from home?"
+    }
+  ],
+  "pronunciation": [
+    {
+      "t": "walking or working?",
+      "c": [
+        ["walking", "“andando”"],
+        ["working", "“trabalhando”"]
+      ],
+      "tip": "walking: o l não se fala, e a boca fica redonda, “uó-kin”. working tem o r: a língua vai para trás, “uâr-kin”."
+    },
+    {
+      "t": "I work or I’m working?",
+      "c": [
+        ["I work", "“eu trabalho (sempre)”"],
+        ["I’m working", "“estou trabalhando (agora)”"]
+      ],
+      "tip": "No I’m, o m cola no I: “áim”. No fim de working, o ing é curto, sem “gui”."
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D.1",
+      "who": "kim",
+      "g": "Oi, Ana! Onde você está?",
+      "text": "Hi, Ana! Where are you?"
+    },
+    {
+      "id": "D.2",
+      "who": "ana",
+      "g": "Oi, Kim! Estou em Porto. Esta semana estou trabalhando aqui.",
+      "text": "Hi, Kim! I’m in Porto. This week I’m working here."
+    },
+    {
+      "id": "D.3",
+      "who": "kim",
+      "g": "Como? Pode repetir?",
+      "sig": 1,
+      "text": "Sorry? Can you say that again?"
+    },
+    {
+      "id": "D.4",
+      "who": "ana",
+      "g": "Estou em Porto! É uma viagem de trabalho. Normalmente eu trabalho de casa, mas esta semana estou trabalhando aqui.",
+      "text": "I’m in Porto! It’s a business trip. I usually work from home, but this week I’m working here."
+    },
+    {
+      "id": "D.5",
+      "who": "kim",
+      "g": "Sério? Nossa! O que você está fazendo agora?",
+      "text": "Really? Wow! What are you doing now?"
+    },
+    {
+      "id": "D.6",
+      "who": "ana",
+      "g": "Estou tomando café do lado do rio. Olha a ponte! É linda! Tenho uma reunião importante com um cliente às dez.",
+      "text": "I’m drinking coffee next to the river. Look, the bridge! It’s beautiful! I have an important meeting with a client at ten."
+    },
+    {
+      "id": "D.7",
+      "who": "kim",
+      "g": "É, que ótimo! E eu estou andando no …",
+      "text": "Yeah, great! And I’m walking in the …"
+    },
+    {
+      "id": "D.8",
+      "who": "ana",
+      "g": "Como? Pode repetir? Kim? Kim?",
+      "sig": 1,
+      "text": "Sorry? Can you say that again? Kim? Kim?"
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Ana usually works in Porto.",
+      "a": "No. She usually works from home."
+    },
+    {
+      "q": "Ana is drinking coffee now.",
+      "a": "Yes."
+    },
+    {
+      "q": "Ana has an important meeting at eleven.",
+      "a": "No. At ten."
+    }
+  ],
+  "grammar": [
+    [
+      "usually",
+      "work",
+      "I usually work from home.",
+      "normalmente eu trabalho",
+      "G.0"
+    ],
+    [
+      "now",
+      "’m drinking",
+      "I’m drinking coffee now.",
+      "agora estou tomando",
+      "G.1"
+    ],
+    [
+      "this week",
+      "’m working",
+      "This week I’m working in Porto.",
+      "esta semana estou trabalhando",
+      "G.2"
+    ],
+    [
+      "pergunta",
+      "Are you … ing?",
+      "Are you working now? Yes, I am. · No, I’m not.",
+      "você está trabalhando agora?",
+      "G.3"
+    ]
+  ],
+  "corrections": [
+    {
+      "s": "I working in Porto this week.",
+      "a": "I’m working in Porto this week.",
+      "why": "Agora ou esta semana: am + ing. Faltou o ’m.",
+      "id": "X.1"
+    },
+    {
+      "s": "I’m usually work from home.",
+      "a": "I usually work from home.",
+      "why": "Rotina: sem am.",
+      "id": "X.2"
+    },
+    {
+      "s": "This week I’m work in Porto.",
+      "a": "This week I’m working in Porto.",
+      "why": "Depois de I’m, o verbo leva ing: I’m working.",
+      "id": "X.3"
+    },
+    {
+      "s": "Leo is cooking now.",
+      "ok": true,
+      "why": "O Leo é he: is + ing.",
+      "id": "X.4"
+    },
+    {
+      "s": "What you are doing now?",
+      "a": "What are you doing now?",
+      "why": "Na pergunta, are vem antes de you.",
+      "id": "X.5"
+    }
+  ],
+  "steps": [
+    "Descubra onde a Kim está e o que ela está fazendo. Só perguntas de sim ou não.",
+    "O sinal caiu. Peça para a Kim repetir.",
+    "Pergunte se ela faz isso normalmente. Depois conte à professora: Kim is … She usually …",
+    "Troquem: escolha em segredo um lugar e uma ação. A Kim descobre."
+  ],
+  "support": [
+    "Are you at the …?",
+    "Are you in the park?",
+    "Are you on the bridge?",
+    "Are you next to the river?",
+    "Are you …ing?",
+    "Bad signal! Sorry? Can you say that again?",
+    "Do you usually …?",
+    "Do you travel for work?",
+    "Kim is … She’s …ing. She usually …",
+    "Yes, I am. · No, I’m not."
+  ],
+  "summary": ["Agora", "Normalmente"],
+  "homework": [
+    [
+      "Flashcards · A work trip",
+      "19 cartões · 5 min · Hoje, daqui a 2 dias e daqui a 6 dias.",
+      "https://student.langy.space/licoes?tab=flashcards&deck=deck-a2-01",
+      "5 min",
+      "v_bridge"
+    ],
+    [
+      "Shadowing · A video call from Porto",
+      "Fale junto com a Ana: falas 2, 4, 6 e 8 · 5 min.",
+      "https://student.langy.space/licoes?tab=shadowing&item=a2-01",
+      "5 min",
+      "x_speech"
+    ],
+    [
+      "Quiz · I work or I’m working?",
+      "10 perguntas · 3 min.",
+      "https://student.langy.space/licoes?tab=quiz&item=a2-01",
+      "3 min",
+      "x_bulb"
+    ]
+  ],
+  "listening": {
+    "transcript": "Hi, Ana! Sorry, bad signal! Never mind. I’m walking in the park next to my home. I usually work in the morning, but this week I’m working in the evening. Maybe I can travel to Porto soon! See you on Monday!",
+    "questions": [
+      {
+        "q": "Kim is at the gym.",
+        "o": ["Yes", "No"],
+        "a": 1,
+        "say": "No. She’s walking in the park."
+      },
+      {
+        "q": "Kim usually works in the morning.",
+        "o": ["Yes", "No"],
+        "a": 0,
+        "say": "Yes. She usually works in the morning."
+      },
+      {
+        "q": "This week Kim is working in the morning.",
+        "o": ["Yes", "No"],
+        "a": 1,
+        "say": "No. This week she’s working in the evening."
+      },
+      {
+        "q": "Kim says: See you on Saturday!",
+        "o": ["Yes", "No"],
+        "a": 1,
+        "say": "No. See you on Monday!"
+      }
+    ]
+  }
+}

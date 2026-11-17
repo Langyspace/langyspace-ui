@@ -7,6 +7,11 @@ export interface CallSimulationProps extends Omit<
 > {
   contactName: string
   initials: string
+  /** Video-call exercise presentation. No camera or microphone is requested. */
+  presentation?: 'audio' | 'video'
+  avatarUrl?: string
+  signalPoor?: boolean
+  onSignalToggle?: () => void
   state: CallSimulationState
   elapsedLabel?: string
   caption?: ReactNode
@@ -27,5 +32,8 @@ export interface CallSimulationProps extends Omit<
     callAgain: string
     hangUp: string
     keypad: string
+    cameraOff: string
+    signalPoor: string
+    signalGood: string
   }>
 }

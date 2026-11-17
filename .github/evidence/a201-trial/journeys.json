@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "result": "Both pronunciation targets/last-eight score; dialogue pause/resume/cancellation; comprehension/corrections; exact homework clipboard/failure focus; Notes retained/clear/Escape/focus passed."
+    },
+    {
+      "normalMotionDeepLink": {
+        "baseline": "s2",
+        "current": "s11"
+      }
+    },
+    {
+      "result": "Native PageDown/Back/wheel navigation and 320px hotspot bounds/no-overlap passed."
+    },
+    {
+      "width": 1280,
+      "result": "Vocabulary hints/reveals, three warmups, grammar unlock, swapped roles, poor/ended/restarted call, four steps, summary/clear focus, three greetings, six hotspot bounds/no-overlap, exclusive reversible preferences and nine retained conversation checks passed."
+    },
+    {
+      "width": 390,
+      "result": "Vocabulary hints/reveals, three warmups, grammar unlock, swapped roles, poor/ended/restarted call, four steps, summary/clear focus, three greetings, six hotspot bounds/no-overlap, exclusive reversible preferences and nine retained conversation checks passed."
+    },
+    {
+      "nativeAudio": {
+        "duration": 17.6561,
+        "rate": 0.75,
+        "firstPass": 1,
+        "resume": 1,
+        "secondPass": 2,
+        "departurePaused": true,
+        "networkFailureAndRetry": true,
+        "verification": "Unmocked HTMLAudio, full-duration native first pass/ended, pause/resume, speed, second-pass transcript, departure pause and genuine network failure/retry."
+      }
+    },
+    {
+      "result": "Source/current Notes and baseline/current B1 Notes captured at 1280×620 and 390×844."
+    }
+  ],
+  "errors": []
+}

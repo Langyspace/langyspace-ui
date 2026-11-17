@@ -9,6 +9,7 @@ export function SceneExplorer({
   selectedId,
   visitedIds,
   onSelect,
+  presentation = 'explore',
   answerVisible = false,
   onAnswerToggle,
   labels,
@@ -20,50 +21,68 @@ export function SceneExplorer({
     progress: 'explorados',
     show: 'Mostrar resposta',
     hide: 'Esconder resposta',
+    play: 'Ouvir',
     ...labels,
   }
   const selected = hotspots.find((h) => h.id === selectedId)
+  const Marker =
+    presentation === 'labels' ? Styled.LabelHotspot : Styled.Hotspot
+  const Frame = presentation === 'labels' ? Styled.LabelScene : Styled.Scene
   return (
     <Styled.Root as="section" {...props}>
-      <Styled.Scene>
+      <Frame>
         <img src={imageUrl} alt={imageAlt} />
         {hotspots.map((h, i) => (
-          <Styled.Hotspot
+          <Marker
             key={h.id}
             type="button"
             $x={h.xPercent}
             $y={h.yPercent}
             $visited={visitedIds.includes(h.id)}
-            aria-label={h.label}
-            aria-controls={id}
-            aria-expanded={selectedId === h.id}
+            aria-label={
+              presentation === 'labels' ? `${text.play}: ${h.label}` : h.label
+            }
+            aria-controls={presentation === 'explore' ? id : undefined}
+            aria-expanded={
+              presentation === 'explore' ? selectedId === h.id : undefined
+            }
             onClick={() => {
               onSelect(h.id)
             }}
           >
-            {visitedIds.includes(h.id) ? '✓' : i + 1}
-          </Styled.Hotspot>
+            {presentation === 'labels' ? (
+              <span>{h.label}</span>
+            ) : visitedIds.includes(h.id) ? (
+              '✓'
+            ) : (
+              i + 1
+            )}
+          </Marker>
         ))}
-      </Styled.Scene>
-      <Common.Surface id={id} aria-live="polite">
-        <Common.Heading>{selected?.label ?? text.initial}</Common.Heading>
-        {selected?.prompt}
-        {selected?.answer && onAnswerToggle ? (
-          <Common.Action
-            type="button"
-            variant="secondary"
-            aria-expanded={answerVisible}
-            onClick={onAnswerToggle}
-          >
-            {answerVisible ? text.hide : text.show}
-          </Common.Action>
-        ) : null}
-        {answerVisible ? selected?.answer : null}
-      </Common.Surface>
-      <Common.Hint>
-        {hotspots.filter((h) => visitedIds.includes(h.id)).length} /{' '}
-        {hotspots.length} {text.progress}
-      </Common.Hint>
+      </Frame>
+      {presentation === 'explore' ? (
+        <>
+          <Common.Surface id={id} aria-live="polite">
+            <Common.Heading>{selected?.label ?? text.initial}</Common.Heading>
+            {selected?.prompt}
+            {selected?.answer && onAnswerToggle ? (
+              <Common.Action
+                type="button"
+                variant="secondary"
+                aria-expanded={answerVisible}
+                onClick={onAnswerToggle}
+              >
+                {answerVisible ? text.hide : text.show}
+              </Common.Action>
+            ) : null}
+            {answerVisible ? selected?.answer : null}
+          </Common.Surface>
+          <Common.Hint>
+            {hotspots.filter((h) => visitedIds.includes(h.id)).length} /{' '}
+            {hotspots.length} {text.progress}
+          </Common.Hint>
+        </>
+      ) : null}
     </Styled.Root>
   )
 }
