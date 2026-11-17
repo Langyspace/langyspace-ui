@@ -19,6 +19,7 @@ export function useSlideNavigation({
   }, [onPageChange])
   const ids = pages.map((page) => page.id)
   const idsKey = JSON.stringify(ids)
+  const previousRequestRef = useRef({ pageId, idsKey: '' })
   const index = Math.max(
     0,
     pages.findIndex((page) => page.id === observedId),
@@ -140,8 +141,15 @@ export function useSlideNavigation({
 
   useEffect(() => {
     const initial = firstRequestRef.current
+    const previous = previousRequestRef.current
+    if (!initial && previous.pageId === pageId && previous.idsKey === idsKey)
+      return
     firstRequestRef.current = false
-    if (pageId === undefined || pageId === activeRef.current) return
+    previousRequestRef.current = { pageId, idsKey }
+    // A parent can echo a native scroll while the next animation frame has
+    // already advanced activeRef. Compare the committed observation instead of
+    // turning that delayed echo into a new scroll back to an intermediate page.
+    if (pageId === undefined || pageId === observedId) return
     const viewport = viewportRef.current
     if (!viewport) return
     const target = Array.from(viewport.children).findIndex(
@@ -151,7 +159,7 @@ export function useSlideNavigation({
     // Initial deep links must not animate through intermediate snap stops and
     // report those pages back to a controlled consumer before reaching the target.
     if (target >= 0) goToIndex(target, initial ? 'instant' : undefined)
-  }, [pageId, idsKey, goToIndex])
+  }, [pageId, idsKey, observedId, goToIndex])
 
   const onKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
     if (

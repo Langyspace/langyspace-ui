@@ -1,5 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { renderToString } from 'react-dom/server'
+import { useLayoutEffect, useState } from 'react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import type { SlideDeckPage } from '../../../src/components/Slide/SlideDeck.types'
@@ -86,6 +87,31 @@ function geometry() {
 }
 
 describe('SlideDeck', () => {
+  it('does not turn a delayed controlled scroll echo into a new navigation request', () => {
+    function Controlled() {
+      const [pageId, setPageId] = useState('one')
+      useLayoutEffect(() => {
+        if (pageId === 'two') advanceBeforeEffects()
+      }, [pageId])
+      return (
+        <SlideDeck
+          label="Aula"
+          pages={pages}
+          pageId={pageId}
+          onPageChange={setPageId}
+        />
+      )
+    }
+    render(<Controlled />)
+    const { scroll, scrollTo } = geometry()
+    const advanceBeforeEffects = () => scroll(1000)
+    scroll(500)
+    expect(scrollTo).not.toHaveBeenCalled()
+    expect(screen.getByRole('region', { name: 'Terceira' })).toHaveAttribute(
+      'data-current',
+      'true',
+    )
+  })
   it('positions an initial deep request directly', () => {
     const descriptor = Object.getOwnPropertyDescriptor(
       HTMLElement.prototype,

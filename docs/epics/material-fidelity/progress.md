@@ -51,3 +51,42 @@ Retained browser proof:60 paired UI states across all five materials/three viewp
 Resource note: disk pressure came from concurrent workspace activity. Only this feature checkout's historical evidence folders are sparsified; source hashes were verified unchanged, current dark/fidelity proof remains present, and old blobs remain immutable in Git/GitHub. Canonical checkouts were preserved. Restore full checkout when disk safely permits.
 
 Native touch gestures passed for all five materials at390x844 in an isolated Chromium mobile profile. The widget guard also preserves radio/grid/tree/spinbutton arrow-key ownership; its focused test passed. Source/reference measurement tooling and the changed source passed targeted lint after focused corrections. Current UI evidence and API snapshot are ready for the feature commit; clean producer/adoption remains next.
+
+## Authenticated staging follow-up: animated controlled navigation
+
+Owner-authorized Teacher97763e04 / producer7ce020bf was published to staging Hosting. Byte/config
+receipt verification remains incomplete: public reads of the unchanged1.5–1.6MiB legacy B1 PNGs
+expired at the existing30s deadline with eight parallel downloads. The existing coordinator is being
+retried with a private read-transport queue of two; no deadline, hash/config check, lease or publisher
+is bypassed. No production or target-branch change.
+
+Actual live checks passed technical login and shared-extra/new-tab flow, but found a real End
+navigation regression. Native animation reported a page; its controlled parent echoed that state
+after activeRef had already advanced. The effect treated the delayed observation as an external
+request and scrolled backwards. Traces show an End request11520px followed by unintended2880/3600px
+requests. Earlier screenshot checks used reduced motion, so their static geometry remains valid
+but they did not cover this race. Ten isolated native-motion/reload/notes cases at CPU1x/4x reproduced
+five failures across A1/A2/B1/B2. The committed unit regression fails against7ce020bf and all15
+SlideDeck unit cases pass after the correction.
+
+The request effect now distinguishes a changed external request from a committed observed-page
+echo, using committed observation rather than a newer mutable scroll ref. Controlled Storybook
+coverage includes native Home/End progress. No visual recipe, content, media, public API or package
+version changes. Native-motion browser proof and affected End screenshots are being refreshed.
+This correction is a new runtime within the same owner-authorized staging delivery. Record its new
+source explicitly; the authorization remains staging-only and does not approve a target-branch merge
+or production.97763e04 must not be described as passing the animated navigation check.
+
+Correction verification complete:15 SlideDeck unit cases, focused Controlled Storybook Home/End,
+typecheck and changed-source/tool lint passed. Ten default-motion desktop cases (all five lessons at
+CPU1x/4x) now reach100%; the original hook failed five. Fifteen paired native-motion End views cover
+all five lessons at1280x800,1280x620 and390x844, CPU4x. Every corrected case reaches100% and returns
+Home to0%. The mobile A2 Home check exceeded its initial5s harness deadline while progress was still
+moving under throttling/resource pressure; only the failed/remaining mobile cases were retried with
+10s and unchanged implementation. Retained successful desktop cases were reused. Existing static
+geometry/notes/content/media proofs remain relevant because no presentation recipe changed.
+
+Historical evidence was temporarily restored, but disk pressure recurred below200MiB during another
+checkout. This feature worktree again omits historical.github/evidence folders only, retaining current
+material-dark/material-fidelity proof. Source hashes were verified unchanged. All old evidence stays
+in Git/GitHub; canonical checkouts remain untouched. Do not expand it while disk remains constrained.

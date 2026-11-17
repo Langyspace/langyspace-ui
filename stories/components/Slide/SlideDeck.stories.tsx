@@ -101,4 +101,21 @@ function ControlledDeck() {
     />
   )
 }
-export const Controlled: Story = { render: () => <ControlledDeck /> }
+export const Controlled: Story = {
+  render: () => <ControlledDeck />,
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement)
+    const viewport = canvas.getByRole('region', {
+      name: 'A1.01 · Introduce yourself',
+    })
+    viewport.focus()
+    await userEvent.keyboard('{End}')
+    await waitFor(() =>
+      expect(canvas.getByRole('progressbar')).toHaveAttribute('value', '100'),
+    )
+    await userEvent.keyboard('{Home}')
+    await waitFor(() =>
+      expect(canvas.getByRole('progressbar')).toHaveAttribute('value', '0'),
+    )
+  },
+}
