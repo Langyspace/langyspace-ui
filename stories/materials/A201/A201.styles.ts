@@ -1,13 +1,14 @@
 import { styled } from 'styled-components'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { theme } from '../../../src/foundations/theme/theme'
+import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 import { Stack, Surface, VocabularyTools, Now } from '../shared/Lesson.styles'
 export const SceneImage = styled.img`
   display: block;
   width: min(100%, 15rem);
   max-height: 9rem;
   object-fit: contain;
-  border-radius: ${theme.slides.panelRadius};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   align-self: center;
 `
 export const CallBoard = styled.div`
@@ -20,7 +21,7 @@ export const CallBoard = styled.div`
     width: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: ${theme.slides.panelRadius};
+    border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   }
 `
 export const CallSummary = styled(Surface)`
@@ -32,7 +33,7 @@ export const CallSummary = styled(Surface)`
     font-weight: ${theme.typography.fontWeight.bold};
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
   }
 
   padding: ${theme.spacing[3]};

@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
@@ -31,7 +32,7 @@ import { useLessonSpeech } from './useLessonSpeech'
 import voice from './assets/kim-demo.mp3'
 import * as Styled from './A101.styles'
 import type { A101LessonProps } from './A101.types'
-export function A101Lesson({
+function A101LessonContent({
   initialPageId = 's1',
   learnerName = '',
   studentPortalOrigin,
@@ -385,5 +386,13 @@ export function A101Lesson({
         <Styled.AudioError role="status">{speech.error}</Styled.AudioError>
       ) : null}
     </Styled.Stage>
+  )
+}
+
+export function A101Lesson(props: A101LessonProps) {
+  return (
+    <MaterialTheme>
+      <A101LessonContent {...props} />
+    </MaterialTheme>
   )
 }

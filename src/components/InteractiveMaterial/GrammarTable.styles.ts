@@ -75,7 +75,7 @@ export const Example = styled(Pressable)<{ $concealed: boolean }>`
   border: 0;
   background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
   font: inherit;
-  color: ${(p) => (p.$concealed ? theme.colors.palette.white : 'inherit')};
+  color: ${(p) => (p.$concealed ? Common.recipe(p).canvas : 'inherit')};
   cursor: pointer;
   text-align: left;
   border-radius: ${theme.radius.sm};

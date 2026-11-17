@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 import { Avatar } from '../Avatar/Avatar'
@@ -69,7 +70,7 @@ export const Speech = styled.div<{
   padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[1]} 14px;
   border: 0;
   border-radius: ${(p) => (p.$side === 'start' ? '6px 20px 20px 20px' : '20px 6px 20px 20px')};
-  background: ${(p) => (p.$completed ? theme.semantic.status.success.background : p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
+  background: ${(p) => (p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
   outline: ${(p) => (p.$playing ? `2px solid ${recipe(p).accent}` : 'none')};
   color: ${(p) => recipe(p).foreground};
   font-size: 1.0625rem;

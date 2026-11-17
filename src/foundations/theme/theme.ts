@@ -732,6 +732,9 @@ const slideRecipe = {
 
 // Current Claude A1.01 phone, browser-measured 2026-11-16; colors stay local to this device recipe.
 const voiceMessage = {
+  questionSurface: undefined as string | undefined,
+  questionForeground: undefined as string | undefined,
+  questionBorder: undefined as string | undefined,
   phoneWidth: '13.28125rem',
   phoneHeight: '26.5625rem',
   phoneRadius: '2.125rem',

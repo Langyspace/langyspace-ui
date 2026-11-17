@@ -1,6 +1,8 @@
 import { styled } from 'styled-components'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { theme } from '../../../src/foundations/theme/theme'
+import { resolveTheme } from '../../../src/foundations/theme/resolveTheme'
+import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 import { Stack, Surface } from '../shared/Lesson.styles'
 export const Greeting = styled(ChoiceCard)`
   gap: ${theme.spacing[4]};
@@ -15,13 +17,13 @@ export const GreetingImage = styled.img`
   height: ${theme.spacing[12]};
   flex-shrink: 0;
   object-fit: cover;
-  border-radius: ${theme.slides.panelRadius};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
 `
 export const GreetingText = styled(Stack)`
   gap: ${theme.spacing[1]};
   > span {
     font-family: ${theme.typography.fontFamily.sans};
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
     font-size: clamp(1rem, 2.6cqh, 1.25rem);
   }
 `
@@ -46,9 +48,9 @@ export const Support = styled(Surface)`
   b {
     display: block;
     padding: ${theme.spacing[2]};
-    border-radius: ${theme.slides.panelRadius};
-    background: ${theme.colors.palette.accent.pinkSoft};
-    color: ${theme.slides.accent};
+    border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+    background: ${(p) => resolveTheme(p).colors?.palette.accent.pinkSoft ?? theme.colors.palette.accent.pinkSoft};
+    color: ${(p) => resolveSlideTheme(p).accent};
     font-size: ${theme.typography.fontSize.xs};
     letter-spacing: 0.14em;
     text-transform: uppercase;
@@ -62,7 +64,7 @@ export const Support = styled(Surface)`
     display: block;
     margin-top: ${theme.spacing[1]};
     font-size: clamp(0.8125rem, 2.1cqh, 1rem);
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
     font-weight: ${theme.typography.fontWeight.medium};
   }
 `
@@ -74,8 +76,8 @@ export const Strip = styled.div`
   span {
     padding: ${theme.spacing[2]} ${theme.spacing[4]};
     border-radius: ${theme.radius.pill};
-    background: ${theme.slides.inverseCanvas};
-    color: ${theme.slides.inverseForeground};
+    background: ${(p) => resolveSlideTheme(p).inverseCanvas};
+    color: ${(p) => resolveSlideTheme(p).inverseForeground};
     font-weight: ${theme.typography.fontWeight.semibold};
     font-size: clamp(0.875rem, 2.2cqh, 1.0625rem);
   }
@@ -86,10 +88,10 @@ export const Pair = styled.div`
   align-items: center;
   gap: ${theme.spacing[4]};
   > span {
-    font-family: ${theme.slides.accentFontFamily};
+    font-family: ${(p) => resolveSlideTheme(p).accentFontFamily};
     font-style: italic;
     font-size: clamp(1.75rem, 5cqh, 2.5rem);
-    color: ${theme.slides.indicator};
+    color: ${(p) => resolveSlideTheme(p).indicator};
     text-align: center;
   }
   @container (max-width:${theme.breakpoints.sm}) {
@@ -112,7 +114,7 @@ export const Preference = styled(ChoiceCard)`
     min-height: 0;
     flex: 1;
     object-fit: cover;
-    border-radius: ${theme.slides.panelRadius};
+    border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   }
   b {
     font-size: clamp(1.125rem, 3cqh, 1.5rem);
@@ -165,8 +167,8 @@ export const Summary = styled.ol`
 `
 export const SupportTitle = styled.h3`
   margin: 0;
-  color: ${theme.slides.accent};
-  font-family: ${theme.slides.displayFontFamily};
+  color: ${(p) => resolveSlideTheme(p).accent};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.14em;

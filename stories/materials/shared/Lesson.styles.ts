@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
+import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 export const Stage = styled.div`
   position: relative;
   height: 100dvh;
@@ -10,33 +11,33 @@ export const Introduction = styled.div`
   flex-direction: column;
   gap: ${theme.spacing[4]};
   padding-bottom: ${theme.spacing[5]};
-  border-bottom: 1px solid ${theme.slides.border};
+  border-bottom: 1px solid ${(p) => resolveSlideTheme(p).border};
 `
 export const Eyebrow = styled.div`
   display: flex;
   gap: ${theme.spacing[4]};
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: ${theme.slides.muted};
+  color: ${(p) => resolveSlideTheme(p).muted};
   b {
-    color: ${theme.slides.accent};
+    color: ${(p) => resolveSlideTheme(p).accent};
   }
 `
 export const Hero = styled.h1`
   margin: 0;
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-weight: ${theme.typography.fontWeight.bold};
   font-size: clamp(2rem, 6cqh, 3.25rem);
   line-height: 1.02;
   letter-spacing: -0.03em;
   em {
     display: block;
-    font-family: ${theme.slides.accentFontFamily};
+    font-family: ${(p) => resolveSlideTheme(p).accentFontFamily};
     font-weight: ${theme.typography.fontWeight.regular};
-    color: ${theme.slides.indicator};
+    color: ${(p) => resolveSlideTheme(p).indicator};
   }
 `
 export const Goal = styled.div`
@@ -46,7 +47,7 @@ export const Goal = styled.div`
   font-size: ${theme.typography.fontSize.md};
   line-height: 1.5;
   > span {
-    color: ${theme.slides.indicator};
+    color: ${(p) => resolveSlideTheme(p).indicator};
     font-size: ${theme.typography.fontSize.xl};
   }
   p {
@@ -54,8 +55,8 @@ export const Goal = styled.div`
   }
   b {
     display: block;
-    color: ${theme.slides.accent};
-    font-family: ${theme.slides.displayFontFamily};
+    color: ${(p) => resolveSlideTheme(p).accent};
+    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
     font-size: ${theme.typography.fontSize.xs};
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -74,11 +75,11 @@ export const Question = styled.li`
   align-items: center;
   gap: ${theme.spacing[4]};
   padding: ${theme.spacing[4]};
-  border: 1px solid ${theme.slides.border};
-  border-radius: ${theme.slides.panelRadius};
-  background: ${theme.slides.surface};
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+  background: ${(p) => resolveSlideTheme(p).surface};
   min-width: 0;
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-weight: ${theme.typography.fontWeight.bold};
   font-size: clamp(1.0625rem, 2.8cqh, 1.5rem);
   line-height: 1.3;
@@ -94,13 +95,13 @@ export const Number = styled.span`
   width: calc(${theme.spacing[8]} + ${theme.spacing[1]});
   height: calc(${theme.spacing[8]} + ${theme.spacing[1]});
   border-radius: ${theme.radius.circle};
-  background: ${theme.slides.accent};
-  color: ${theme.colors.palette.white};
+  background: ${(p) => resolveSlideTheme(p).accent};
+  color: ${(p) => resolveSlideTheme(p).canvas};
   font-size: ${theme.typography.fontSize.md};
 `
 export const Hint = styled.small`
   display: block;
-  color: ${theme.slides.muted};
+  color: ${(p) => resolveSlideTheme(p).muted};
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.medium};
   line-height: 1.4;
@@ -123,9 +124,9 @@ export const Center = styled(Row)`
 `
 export const Surface = styled(Stack)`
   padding: ${theme.spacing[4]};
-  border: 1px solid ${theme.slides.border};
-  border-radius: ${theme.slides.panelRadius};
-  background: ${theme.slides.surface};
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+  background: ${(p) => resolveSlideTheme(p).surface};
 `
 export const VocabularyTools = styled(Row)`
   justify-content: center;
@@ -137,13 +138,13 @@ export const QuestionTitle = styled.h3`
   justify-content: space-between;
   gap: ${theme.spacing[3]};
   margin: 0;
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-size: clamp(1.125rem, 2.8cqh, 1.375rem);
   line-height: 1.3;
 `
 export const Counter = styled.span`
   flex-shrink: 0;
-  color: ${theme.slides.muted};
+  color: ${(p) => resolveSlideTheme(p).muted};
   font-size: ${theme.typography.fontSize.sm};
   font-weight: ${theme.typography.fontWeight.medium};
   white-space: nowrap;
@@ -154,7 +155,7 @@ export const WarmImage = styled.img`
   height: 100%;
   max-height: 18rem;
   object-fit: contain;
-  border-radius: ${theme.slides.panelRadius};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
 `
 export const MiniGrid = styled.ol<{ $column?: boolean }>`
   display: grid;
@@ -175,7 +176,7 @@ export const MiniCard = styled.li`
   aspect-ratio: 1;
   min-width: 0;
   overflow: hidden;
-  border: 1px solid ${theme.slides.border};
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
   border-radius: ${theme.radius.sm};
   img {
     width: 100%;
@@ -187,7 +188,7 @@ export const MiniCard = styled.li`
     left: 0;
     top: 0;
     padding: 0 ${theme.spacing[1]};
-    background: ${theme.slides.accent};
+    background: ${(p) => resolveSlideTheme(p).accent};
     color: ${theme.colors.palette.white};
     font-size: ${theme.typography.fontSize.xs};
   }
@@ -199,8 +200,8 @@ export const Now = styled(Surface)`
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.4;
   > b {
-    color: ${theme.slides.accent};
-    font-family: ${theme.slides.displayFontFamily};
+    color: ${(p) => resolveSlideTheme(p).accent};
+    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   }
   > p {
     flex: 1;
@@ -220,7 +221,7 @@ export const GrammarColumns = styled.div`
 export const Explanation = styled(Surface)`
   h3 {
     margin: 0;
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
     font-size: ${theme.typography.fontSize.lg};
   }
   p {
@@ -229,7 +230,7 @@ export const Explanation = styled(Surface)`
     line-height: 1.5;
   }
   b {
-    color: ${theme.slides.accent};
+    color: ${(p) => resolveSlideTheme(p).accent};
   }
 `
 export const ConversationColumns = styled.div`
@@ -247,26 +248,29 @@ export const Support = styled.div`
   gap: ${theme.spacing[2]};
   span {
     padding: ${theme.spacing[1]} ${theme.spacing[2]};
-    border: 1px solid ${theme.slides.border};
+    border: 1px solid ${(p) => resolveSlideTheme(p).border};
     border-radius: ${theme.radius.sm};
     font-size: ${theme.typography.fontSize.sm};
   }
 `
 export const Dark = styled(Stack)`
   small {
-    color: ${theme.slides.inverseMuted};
+    color: ${(p) => resolveSlideTheme(p).inverseMuted};
   }
   padding: ${theme.spacing[4]};
-  border-radius: ${theme.slides.panelRadius};
-  background: ${theme.slides.inverseCanvas};
-  color: ${theme.slides.inverseForeground};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+  background: ${(p) => resolveSlideTheme(p).inverseCanvas};
+  color: ${(p) => resolveSlideTheme(p).inverseForeground};
+  button {
+    color: inherit;
+  }
   p {
     margin: 0;
     line-height: 1.4;
   }
   strong {
-    color: ${theme.slides.indicator};
-    font-family: ${theme.slides.displayFontFamily};
+    color: ${theme.semantic.foreground.brand};
+    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
     font-size: ${theme.typography.fontSize.xs};
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -277,13 +281,13 @@ export const Correction = styled(Question)`
   font-size: clamp(1rem, 2.4cqh, 1.25rem);
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
   s {
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
   }
   small {
     flex-basis: 100%;
     font-family: ${theme.typography.fontFamily.sans};
     font-size: ${theme.typography.fontSize.sm};
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
     font-weight: ${theme.typography.fontWeight.medium};
     line-height: 1.4;
   }
@@ -308,7 +312,7 @@ export const Summary = styled(Surface)`
     gap: ${theme.spacing[1]};
     min-width: 0;
     font-size: ${theme.typography.fontSize.xs};
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
   }
   > div {
     grid-column: 1/-1;
@@ -322,7 +326,7 @@ export const Homework = styled(Surface)`
   flex-direction: row;
   align-items: center;
   gap: ${theme.spacing[4]};
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   font-size: clamp(1.125rem, 3cqh, 1.5rem);
   line-height: 1.3;
   img {
@@ -338,7 +342,7 @@ export const Homework = styled(Surface)`
 export const Notes = styled.aside`
   position: absolute;
   z-index: 5;
-  top: calc(${theme.slides.headerHeight} + ${theme.spacing[2]});
+  top: calc(${(p) => resolveSlideTheme(p).headerHeight} + ${theme.spacing[2]});
   right: ${theme.spacing[4]};
   width: min(22.5rem, calc(100% - ${theme.spacing[8]}));
   height: min(27.5rem, calc(100% - ${theme.spacing[20]}));
@@ -346,9 +350,9 @@ export const Notes = styled.aside`
   flex-direction: column;
   gap: ${theme.spacing[3]};
   padding: ${theme.spacing[3]};
-  border: 1px solid ${theme.slides.border};
-  border-radius: ${theme.slides.panelRadius};
-  background: ${theme.slides.canvas};
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+  background: ${(p) => resolveSlideTheme(p).canvas};
   box-shadow: ${theme.shadows.md};
   textarea {
     flex: 1;

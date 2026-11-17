@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { Suspense, useEffect } from 'react'
 import { MaterialView } from './MaterialViews'
 import type { MaterialViewProps, MaterialReadyProps } from './MaterialApp.types'
@@ -21,12 +22,14 @@ export function MaterialApp({
   studentPortalOrigin,
 }: MaterialViewProps) {
   return (
-    <Suspense fallback={<p role="status">Carregando material…</p>}>
-      <MaterialView
-        materialKey={materialKey}
-        studentPortalOrigin={studentPortalOrigin}
-      />
-      <Ready materialKey={materialKey} />
-    </Suspense>
+    <MaterialTheme>
+      <Suspense fallback={<p role="status">Carregando material…</p>}>
+        <MaterialView
+          materialKey={materialKey}
+          studentPortalOrigin={studentPortalOrigin}
+        />
+        <Ready materialKey={materialKey} />
+      </Suspense>
+    </MaterialTheme>
   )
 }

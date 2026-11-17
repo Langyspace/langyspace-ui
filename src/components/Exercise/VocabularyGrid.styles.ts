@@ -74,7 +74,7 @@ export const QuestionMark = styled.span<{ $completed?: boolean }>`
   height: ${theme.spacing[6]};
   border-radius: ${theme.radius.circle};
   background: ${(p) => (p.$completed ? theme.semantic.status.success.foreground : recipe(p).accent)};
-  color: ${theme.colors.palette.white};
+  color: ${(p) => (p.$completed ? theme.colors.palette.white : recipe(p).canvas)};
   font-size: ${theme.typography.fontSize.sm};
 `
 export const WordBadge = styled.span`

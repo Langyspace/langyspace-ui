@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
+import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 export * from '../shared/Lesson.styles'
 export const SceneImage = styled.img`
@@ -7,7 +8,7 @@ export const SceneImage = styled.img`
   max-height: 36cqh;
   object-fit: contain;
   aspect-ratio: 3/2;
-  border-radius: ${theme.slides.panelRadius};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   @container (max-width:${theme.breakpoints.sm}) {
     max-height: none;
   }
@@ -76,7 +77,7 @@ export const NoteFields = styled.div`
     flex-direction: column;
     gap: ${theme.spacing[1]};
     font-size: ${theme.typography.fontSize.sm};
-    color: ${theme.slides.muted};
+    color: ${(p) => resolveSlideTheme(p).muted};
   }
   @container (max-width:${theme.breakpoints.sm}) {
     grid-template-columns: 1fr;

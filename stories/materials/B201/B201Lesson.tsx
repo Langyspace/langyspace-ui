@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell, LessonIntro } from '../shared/LessonShell'
@@ -52,7 +53,7 @@ const review = [
   'Now ask your teacher: Home or office? Why?',
   'Ask your teacher: How was your week?',
 ]
-export function B201Lesson({
+function B201LessonContent({
   initialPageId,
   studentPortalOrigin,
 }: LessonProps) {
@@ -333,5 +334,13 @@ export function B201Lesson({
         })
       }
     />
+  )
+}
+
+export function B201Lesson(props: LessonProps) {
+  return (
+    <MaterialTheme>
+      <B201LessonContent {...props} />
+    </MaterialTheme>
   )
 }

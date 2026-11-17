@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { TextInput } from '../../../src/components/Form/TextInput'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
@@ -156,13 +156,12 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
     </S.Stack>
   )
 }
-const listeningTheme = createTheme({
-  voiceMessage: {
-    contentWidth: '65rem',
-    phoneWidth: '11.875rem',
-    phoneHeight: '23.75rem',
-  },
+const listeningTheme = withVoiceMessageLayout({
+  contentWidth: '65rem',
+  phoneWidth: '11.875rem',
+  phoneHeight: '23.75rem',
 })
+
 export function ListeningSection({ active }: { active: boolean }) {
   const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
     [support, setSupport] = useState(false)

@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell, LessonIntro } from '../shared/LessonShell'
@@ -11,7 +12,7 @@ import {
   ConversationSection,
   TodaySection,
 } from './TrialA1.sections'
-export function TrialA1Lesson({
+function TrialA1LessonContent({
   initialPageId,
   levelLabel = 'A1',
 }: TrialA1LessonProps) {
@@ -145,5 +146,13 @@ export function TrialA1Lesson({
         })
       }
     />
+  )
+}
+
+export function TrialA1Lesson(props: TrialA1LessonProps) {
+  return (
+    <MaterialTheme>
+      <TrialA1LessonContent {...props} />
+    </MaterialTheme>
   )
 }

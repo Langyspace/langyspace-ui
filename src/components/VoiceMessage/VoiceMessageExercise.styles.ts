@@ -212,6 +212,7 @@ export const Error = styled.div`
   font-size: ${theme.typography.fontSize.sm};
 `
 export const Side = styled.div`
+  color: ${(p) => recipe(p).questionForeground ?? recipe(p).foreground};
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -232,9 +233,9 @@ export const Question = styled.fieldset`
   min-width: 0;
   margin: 0;
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
-  border: 1px solid ${(p) => recipe(p).border};
+  border: 1px solid ${(p) => recipe(p).questionBorder ?? recipe(p).border};
   border-radius: ${theme.radius.lg};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => recipe(p).questionSurface ?? recipe(p).surface};
 `
 export const QuestionText = styled.p`
   flex: 1 1 10rem;
@@ -256,9 +257,9 @@ export const Choice = styled(DeviceControl)<{
   padding: 0 ${theme.spacing[3]};
   border: 1px solid;
   font-size: ${theme.typography.fontSize.sm};
-  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).foreground)};
-  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : recipe(p).surface)};
-  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).border)};
+  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionForeground ?? recipe(p).foreground))};
+  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : (recipe(p).questionSurface ?? recipe(p).surface))};
+  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionBorder ?? recipe(p).border))};
   text-decoration: ${({ $feedback }) => ($feedback === 'incorrect' ? 'line-through' : 'none')};
   overflow-wrap: anywhere;
   max-width: 100%;

@@ -657,3 +657,5 @@ export type {
   RevealSequenceCardProps,
   RevealSequenceStage,
 } from './components/InteractiveMaterial/RevealSequenceCard.types'
+
+export { materialDarkTheme } from './foundations/theme/materialDarkTheme'

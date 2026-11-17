@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
@@ -24,7 +25,7 @@ import {
 import { LessonNotes, HomeworkSection } from './B101.utilities'
 import type { B101LessonProps } from './B101.types'
 import * as S from './B101.styles'
-export function B101Lesson({
+function B101LessonContent({
   initialPageId = 's1',
   studentPortalOrigin,
 }: B101LessonProps) {
@@ -336,5 +337,13 @@ export function B101Lesson({
         <S.AudioError role="status">{speech.error}</S.AudioError>
       ) : null}
     </S.Stage>
+  )
+}
+
+export function B101Lesson(props: B101LessonProps) {
+  return (
+    <MaterialTheme>
+      <B101LessonContent {...props} />
+    </MaterialTheme>
   )
 }

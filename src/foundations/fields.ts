@@ -1,5 +1,6 @@
 import { css } from 'styled-components'
 import { theme } from './theme/theme'
+import { resolveTheme } from './theme/resolveTheme'
 
 export type FieldControlSize = 'sm' | 'md' | 'lg'
 
@@ -20,12 +21,16 @@ export const fieldControlStyles = css<FieldControlStyleProps>`
   --lsui-field-size-height: ${({ $size }) => heights[$size]};
   min-height: var(--lsui-field-control-height, var(--lsui-field-size-height));
   border: 1px solid
-    ${({ $invalid }) =>
-      $invalid ? theme.colors.feedback.danger : theme.semantic.border.default};
+    ${(p) =>
+      p.$invalid
+        ? (resolveTheme(p).colors?.feedback.danger ??
+          theme.colors.feedback.danger)
+        : (resolveTheme(p).semantic?.border.default ??
+          theme.semantic.border.default)};
   border-radius: ${theme.radius.control};
   outline: none;
-  background: ${theme.colors.palette.white};
-  color: ${theme.colors.text.primary};
+  background: ${(p) => resolveTheme(p).colors?.surface.canvas ?? theme.colors.palette.white};
+  color: ${(p) => resolveTheme(p).colors?.text.primary ?? theme.colors.text.primary};
   font: inherit;
   font-size: ${theme.typography.fontSize.sm};
   padding-right: ${theme.spacing[3]};
@@ -41,26 +46,30 @@ export const fieldControlStyles = css<FieldControlStyleProps>`
       ${theme.transitions.easing.standard};
 
   &:hover:not(:disabled):not([aria-invalid='true']) {
-    border-color: ${theme.semantic.border.strong};
+    border-color: ${(p) => resolveTheme(p).semantic?.border.strong ?? theme.semantic.border.strong};
   }
 
   &:focus-visible {
-    border-color: ${({ $invalid }) =>
-      $invalid ? theme.colors.feedback.danger : theme.semantic.border.strong};
-    box-shadow: ${theme.shadows.focusHalo};
+    border-color: ${(p) =>
+      p.$invalid
+        ? (resolveTheme(p).colors?.feedback.danger ??
+          theme.colors.feedback.danger)
+        : (resolveTheme(p).semantic?.border.strong ??
+          theme.semantic.border.strong)};
+    box-shadow: ${(p) => resolveTheme(p).shadows?.focusHalo ?? theme.shadows.focusHalo};
   }
 
   &:disabled {
-    background: ${theme.semantic.background.muted};
-    color: ${theme.colors.text.muted};
+    background: ${(p) => resolveTheme(p).semantic?.background.muted ?? theme.semantic.background.muted};
+    color: ${(p) => resolveTheme(p).colors?.text.muted ?? theme.colors.text.muted};
     cursor: default;
   }
 
   &:read-only:not(:disabled) {
-    background: ${theme.semantic.background.surfaceSubtle};
+    background: ${(p) => resolveTheme(p).semantic?.background.surfaceSubtle ?? theme.semantic.background.surfaceSubtle};
   }
 
   &::placeholder {
-    color: ${theme.semantic.foreground.placeholder};
+    color: ${(p) => resolveTheme(p).semantic?.foreground.placeholder ?? theme.semantic.foreground.placeholder};
   }
 `

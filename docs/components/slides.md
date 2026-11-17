@@ -48,3 +48,11 @@ Theme values live in `theme.slides` and can be overridden through `createTheme`.
 `SlidePage layout="split"` places its lead and heading beside the exercise, and stacks them below the medium breakpoint. The default remains `stacked`. The introductory width is controlled by `slides.introductionWidth`. B1.01 demonstrates a lesson title/goal and review questions without adding a product-specific page component to the package.
 
 `density="dense"` opts into tighter block padding on short desktop containers. Existing regular and compact page padding is preserved.
+
+## Always-dark lesson materials
+
+`materialDarkTheme` is an opt-in theme preset for immersive materials. Wrap a deck in styled-components’ `ThemeProvider` and give its parent a height. The canonical five lesson compositions apply this boundary internally, regardless of the OS color scheme; catalog and portal themes remain owned by their consumers.
+
+The preset provides the dark slide canvas, panels, semantic fields, choices, feedback, grammar, role tracking and notes. Shared controls read the effective provider while preserving their defaults outside it. Phone canvas, bubbles and native player remain their original colors. Optional `voiceMessage.questionSurface`, `questionForeground` and `questionBorder` theme leaves style only the adjacent questions; omitted leaves use the device recipe, preserving existing themes. Nested layout providers must merge their parent theme.
+
+The updated Claude shared theme uses #0B0B0C canvas, #1A1A1C cards and #F7F7F7 text. Soft pink is adjusted from #3A0F1C to #350A17 so small pink text meets AA contrast. This adaptation and source hashes are recorded in `docs/epics/material-dark-theme/`.

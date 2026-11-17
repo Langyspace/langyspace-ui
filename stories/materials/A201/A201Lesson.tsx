@@ -1,3 +1,4 @@
+import { MaterialTheme } from '../shared/MaterialTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell, LessonIntro } from '../shared/LessonShell'
@@ -46,7 +47,7 @@ function audioTool(speech: LessonSpeech, part?: number) {
     </Button>
   )
 }
-export function A201Lesson({
+function A201LessonContent({
   initialPageId,
   studentPortalOrigin,
 }: LessonProps) {
@@ -296,5 +297,13 @@ export function A201Lesson({
         })
       }
     />
+  )
+}
+
+export function A201Lesson(props: LessonProps) {
+  return (
+    <MaterialTheme>
+      <A201LessonContent {...props} />
+    </MaterialTheme>
   )
 }
