@@ -68,3 +68,5 @@ export const Conversation: Story = {
   },
 }
 export const TodayYouSaid: Story = { args: { initialPageId: 's6' } }
+
+export const SharedA1A2: Story = { args: { levelLabel: 'A1 · A2' } }

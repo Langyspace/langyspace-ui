@@ -1,0 +1,49 @@
+[
+  {
+    "key": "a1-01",
+    "code": "A1.01",
+    "title": "Introduce yourself",
+    "description": "Apresentar-se, conversar sobre países e sentimentos e conhecer outras pessoas.",
+    "levels": ["A1"],
+    "kind": "course",
+    "sequence": 1,
+    "pageCount": 12,
+    "tags": ["Apresentações", "Países", "Sentimentos"],
+    "coverSource": "stories/materials/A101/assets/scene-france-chloe.webp"
+  },
+  {
+    "key": "a2-01",
+    "code": "A2.01",
+    "title": "This week I’m working in Porto",
+    "description": "Falar sobre a rotina e o que está acontecendo agora, e pedir para repetir durante uma ligação.",
+    "levels": ["A2"],
+    "kind": "course",
+    "sequence": 1,
+    "pageCount": 12,
+    "tags": ["Rotina", "Trabalho", "Present continuous"],
+    "coverSource": "stories/materials/shared/assets/scene-coffee.webp"
+  },
+  {
+    "key": "b1-01",
+    "code": "B1.01",
+    "title": "What have you been doing?",
+    "description": "Conversar sobre experiências recentes e retomar o contato com amigos.",
+    "levels": ["B1"],
+    "kind": "course",
+    "sequence": 1,
+    "pageCount": 12,
+    "tags": ["Conversação", "Experiências", "Present perfect"],
+    "coverSource": "stories/materials/B101/assets/scene-gardening.webp"
+  },
+  {
+    "key": "trial-a1-a2",
+    "code": "Experimental",
+    "title": "What do you like?",
+    "description": "Conversar sobre preferências, conhecer o aluno e experimentar uma aula de inglês.",
+    "levels": ["A1", "A2"],
+    "kind": "extra",
+    "pageCount": 6,
+    "tags": ["Aula experimental", "Preferências", "Conversação"],
+    "coverSource": "stories/materials/shared/assets/scene-park.webp"
+  }
+]

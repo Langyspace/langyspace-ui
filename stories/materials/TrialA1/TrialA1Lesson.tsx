@@ -1,7 +1,7 @@
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell, LessonIntro } from '../shared/LessonShell'
-import type { LessonProps } from '../shared/Lesson.types'
+import type { TrialA1LessonProps } from './TrialA1.types'
 import { content, order } from './TrialA1.data'
 import {
   GreetingSection,
@@ -11,11 +11,14 @@ import {
   ConversationSection,
   TodaySection,
 } from './TrialA1.sections'
-export function TrialA1Lesson({ initialPageId }: LessonProps) {
+export function TrialA1Lesson({
+  initialPageId,
+  levelLabel = 'A1',
+}: TrialA1LessonProps) {
   return (
     <LessonShell
       initialPageId={initialPageId}
-      label="A1 Trial · What do you like?"
+      label={`${levelLabel} Trial · What do you like?`}
       pages={(speech) =>
         order.map((id) => {
           if (id === 's1')
@@ -32,7 +35,7 @@ export function TrialA1Lesson({ initialPageId }: LessonProps) {
                   lead={
                     <LessonIntro
                       compact
-                      level="A1"
+                      level={levelLabel}
                       lesson="Trial class"
                       before={content.titleParts[0] ?? ''}
                       accent={content.titleParts[1] ?? ''}
