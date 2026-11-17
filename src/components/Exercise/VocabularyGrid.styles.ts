@@ -27,7 +27,11 @@ export const Vocabulary = styled.div.withConfig({
     );
   }
 `
-export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
+export const Word = styled(Pressable)<{
+  $scene: boolean
+  $regular: boolean
+  $completed?: boolean
+}>`
   position: relative;
   display: grid;
   place-items: center;
@@ -36,7 +40,8 @@ export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
   height: ${(p) => (p.$scene && p.$regular ? 'auto' : p.$regular ? theme.exercises.vocabularyRegularHeight : p.$scene ? theme.exercises.sceneHeight : 'auto')};
   aspect-ratio: ${(p) => (p.$scene && p.$regular ? '3 / 2' : 'auto')};
   padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
-  border: 1px solid ${(p) => recipe(p).border};
+  border: 1px solid
+    ${(p) => (p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
   border-radius: ${theme.radius.lg};
   background: ${(p) => recipe(p).surface};
   color: ${(p) => recipe(p).foreground};
@@ -46,16 +51,20 @@ export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
     outline-offset: 2px;
   }
 `
-export const WordImage = styled.img<{ $scene: boolean; $regular: boolean }>`
+export const WordImage = styled.img<{
+  $scene: boolean
+  $regular: boolean
+  $fit?: 'cover' | 'contain'
+}>`
   position: ${(p) => (p.$scene ? 'absolute' : 'static')};
   inset: 0;
   width: 100%;
   height: ${(p) => (p.$scene ? '100%' : p.$regular ? theme.exercises.vocabularyRegularImageHeight : theme.exercises.vocabularyImageHeight)};
-  object-fit: ${(p) => (p.$scene ? 'cover' : 'contain')};
+  object-fit: ${(p) => p.$fit ?? (p.$scene ? 'cover' : 'contain')};
   object-position: ${(p) => (p.$scene && !p.$regular ? 'center 25%' : 'center')};
   border-radius: inherit;
 `
-export const QuestionMark = styled.span`
+export const QuestionMark = styled.span<{ $completed?: boolean }>`
   position: absolute;
   top: ${theme.spacing[2]};
   right: ${theme.spacing[2]};
@@ -64,9 +73,20 @@ export const QuestionMark = styled.span`
   width: ${theme.spacing[6]};
   height: ${theme.spacing[6]};
   border-radius: ${theme.radius.circle};
-  background: ${(p) => recipe(p).accent};
+  background: ${(p) => (p.$completed ? theme.semantic.status.success.foreground : recipe(p).accent)};
   color: ${theme.colors.palette.white};
   font-size: ${theme.typography.fontSize.sm};
+`
+export const WordBadge = styled.span`
+  position: absolute;
+  top: ${theme.spacing[2]};
+  left: ${theme.spacing[2]};
+  padding: ${theme.spacing[1]} ${theme.spacing[2]};
+  border-radius: ${theme.radius.pill};
+  background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).muted};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.bold};
 `
 export const WordCaption = styled.span`
   position: absolute;

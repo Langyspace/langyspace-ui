@@ -1,0 +1,359 @@
+{
+  "sourcePlanSha256": "d54699229a634ec45743bddf6108e92c8b392157bcb085c079bfb778b60a40db",
+  "vocabulary": [
+    {
+      "id": "V.0",
+      "en": "a dead phone",
+      "pt": "celular sem bateria (volta da B1.03)",
+      "hint": "a d___ p____"
+    },
+    {
+      "id": "V.1",
+      "en": "a phone charger",
+      "pt": "carregador de celular (volta da B1.04)",
+      "hint": "a phone c______"
+    },
+    {
+      "id": "V.2",
+      "en": "a charging cable",
+      "pt": "cabo de carregar",
+      "hint": "a charging c____"
+    },
+    {
+      "id": "V.3",
+      "en": "a power bank",
+      "pt": "bateria portátil, power bank",
+      "hint": "a power b___"
+    },
+    {
+      "id": "V.4",
+      "en": "an outlet",
+      "pt": "tomada (volta da B1.07)",
+      "hint": "an o_____"
+    },
+    {
+      "id": "V.5",
+      "en": "a map",
+      "pt": "mapa (volta da B1.04)",
+      "hint": "a m__"
+    },
+    {
+      "id": "V.6",
+      "en": "a doorman",
+      "pt": "porteiro de prédio",
+      "hint": "a d______"
+    }
+  ],
+  "expressions": [
+    {
+      "id": "E.0",
+      "pt": "ficar sem bateria",
+      "en": "run out of battery",
+      "example": "My phone ran out of battery at four."
+    },
+    {
+      "id": "E.1",
+      "pt": "se perder",
+      "en": "get lost",
+      "example": "I got lost in New York."
+    },
+    {
+      "id": "E.2",
+      "pt": "pegar emprestado",
+      "en": "borrow",
+      "example": "Can I borrow your charger?"
+    },
+    {
+      "id": "E.3",
+      "pt": "emprestar a alguém",
+      "en": "lend (lent)",
+      "example": "A woman lent me her power bank."
+    },
+    {
+      "id": "E.4",
+      "pt": "um endereço",
+      "en": "an address",
+      "example": "What’s the address of the restaurant?"
+    },
+    {
+      "id": "E.5",
+      "pt": "àquela altura",
+      "en": "by then",
+      "example": "By then, it was eight o’clock."
+    },
+    {
+      "id": "E.6",
+      "pt": "no fim, depois de muito tempo (parece “eventualmente”, mas não é)",
+      "en": "eventually",
+      "example": "Eventually, I found the restaurant."
+    }
+  ],
+  "pronunciation": [
+    {
+      "c": [
+        ["I’d walked", "“eu tinha andado (e parei)”"],
+        ["I’d been walking", "“eu vinha andando”"]
+      ],
+      "tip": "“I’d been” se diz “aid-bin”, numa batida só, com o “i” curto de “bin”. Em “I’d walked”, o “d” cola no “w”: “aid-uókt”."
+    },
+    {
+      "c": [
+        ["I’ve been waiting", "“estou esperando (até agora)”"],
+        ["I’d been waiting", "“eu vinha esperando (até aquele momento)”"]
+      ],
+      "tip": "No ’ve, os dentes de cima tocam o lábio de baixo, como no “v” de “vela”. No ’d, a língua bate atrás dos dentes de cima, como no começo de “dia” dito sem o “i”."
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D.1",
+      "who": "kim",
+      "text": "So, how was New York?",
+      "g": "E aí, como foi Nova York?"
+    },
+    {
+      "id": "D.2",
+      "who": "ana",
+      "text": "Pretty good, but on the second day, my phone died at four in the afternoon.",
+      "g": "Bem bom, mas no segundo dia o meu celular descarregou às quatro da tarde."
+    },
+    {
+      "id": "D.3",
+      "who": "kim",
+      "text": "Oh no! Why?",
+      "g": "Ah, não! Por quê?"
+    },
+    {
+      "id": "D.4",
+      "who": "ana",
+      "text": "I’d been using it as a map all day, and I didn’t notice the battery. And I’d left my charger at the hotel.",
+      "g": "Eu vinha usando o celular como mapa o dia todo, e não reparei na bateria. E tinha deixado o carregador no hotel."
+    },
+    {
+      "id": "D.5",
+      "who": "kim",
+      "text": "Why didn’t you go back to the hotel?",
+      "g": "Por que você não voltou para o hotel?"
+    },
+    {
+      "id": "D.6",
+      "who": "ana",
+      "text": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+      "g": "Eu tentei, mas me perdi. E o jantar da equipe era às sete. O endereço estava numa mensagem do Raj!"
+    },
+    {
+      "id": "D.7",
+      "who": "kim",
+      "text": "So what did you do?",
+      "g": "E aí, o que você fez?"
+    },
+    {
+      "id": "D.8",
+      "who": "ana",
+      "text": "I asked a doorman for help, and he told me about a café. But there were no free outlets.",
+      "g": "Pedi ajuda a um porteiro, e ele me falou de um café. Mas não tinha nenhuma tomada livre."
+    },
+    {
+      "id": "D.9",
+      "who": "kim",
+      "text": "Oh no. And then?",
+      "g": "Ah, não. E depois?"
+    },
+    {
+      "id": "D.10",
+      "who": "ana",
+      "text": "I’d been waiting there alone for twenty minutes when a woman lent me her power bank. Luckily, I had my cable.",
+      "g": "Eu estava esperando lá sozinha havia vinte minutos quando uma moça me emprestou a bateria portátil dela. Por sorte, eu estava com o meu cabo."
+    },
+    {
+      "id": "D.11",
+      "who": "kim",
+      "text": "So did you ever arrive at the dinner?",
+      "g": "E você chegou ao jantar, afinal?"
+    },
+    {
+      "id": "D.12",
+      "who": "ana",
+      "text": "Eventually, yes. I caught a taxi and got there at eight. By then, they’d been waiting for an hour!",
+      "g": "No fim, sim. Peguei um táxi e cheguei às oito. Àquela altura, eles já estavam esperando havia uma hora!"
+    }
+  ],
+  "grammar": [
+    {
+      "id": "G.0",
+      "question": "Why did your phone die?",
+      "form": "had been + -ing",
+      "example": "I’d been using it as a map all day.",
+      "hint": "for some time, before it died"
+    },
+    {
+      "id": "G.1",
+      "question": "How long had you been waiting at the café?",
+      "form": "had been + -ing + for",
+      "example": "I’d been waiting for twenty minutes.",
+      "hint": "for + time"
+    },
+    {
+      "id": "G.2",
+      "question": "Why didn’t you have your charger?",
+      "form": "had + participle",
+      "example": "I’d left it at the hotel.",
+      "hint": "it happened before, and finished"
+    },
+    {
+      "id": "G.3",
+      "question": "What were you doing at four?",
+      "form": "was + -ing",
+      "example": "I was walking near Times Square.",
+      "hint": "in the middle of it"
+    },
+    {
+      "id": "G.4",
+      "question": "What time did you get to the dinner?",
+      "form": "past simple",
+      "example": "I got there at eight.",
+      "hint": "the main thing that happened"
+    }
+  ],
+  "yourVersionSource": [
+    [
+      ["1", "Kim", "So, how was your day?", ""],
+      [
+        "2",
+        "Aluna",
+        "say when and where your phone died (you choose)",
+        "My phone died at … in … · It ran out of battery at …"
+      ],
+      ["3", "Kim", "Oh no! Why?", ""],
+      [
+        "4",
+        "Aluna",
+        "say what you’d been doing, and where your charger was",
+        "I’d been … all … · I’d left my charger …"
+      ],
+      ["5", "Kim", "So what did you do?", ""],
+      [
+        "6",
+        "Aluna",
+        "say what you tried, and what went wrong",
+        "I tried …, but … · I got lost. · I didn’t have the address."
+      ],
+      ["7", "Kim", "And then?", ""],
+      [
+        "8",
+        "Aluna",
+        "say who helped you, and how long you’d been waiting",
+        "I’d been … for … when … lent me …"
+      ],
+      ["9", "Kim", "And in the end?", ""],
+      ["10", "Aluna", "say how it ended", "Eventually, … · By then, …"]
+    ],
+    [
+      ["1", "Aluna", "ask about her day", "So, how was your day?"],
+      [
+        "2",
+        "Teacher",
+        "Long! The dinner was great, but the taxi was terrible.",
+        ""
+      ],
+      ["3", "Aluna", "ask why", "Oh no! Why?"],
+      [
+        "4",
+        "Teacher",
+        "There was a lot of traffic. I’d been sitting in the taxi for half an hour!",
+        ""
+      ],
+      ["5", "Aluna", "ask what she did", "So what did you do?"],
+      [
+        "6",
+        "Teacher",
+        "I turned on my phone, and there was a message from Raj.",
+        ""
+      ],
+      ["7", "Aluna", "ask what happened next", "And then?"],
+      [
+        "8",
+        "Teacher",
+        "I got to the restaurant at eight. By then, they’d been waiting for an hour!",
+        ""
+      ],
+      ["9", "Aluna", "ask how it ended", "And in the end?"],
+      [
+        "10",
+        "Teacher",
+        "Eventually, I had dinner. Do you want to hear Raj’s message?",
+        ""
+      ]
+    ]
+  ],
+  "listeningStatements": [
+    {
+      "id": "L.0",
+      "text": "The team waited at the door for an hour.",
+      "yes": false,
+      "correction": "No. For fifteen minutes. Then they got a table."
+    },
+    {
+      "id": "L.1",
+      "text": "Raj called Ana three times.",
+      "yes": true,
+      "correction": "Yes. He called her three times."
+    },
+    {
+      "id": "L.2",
+      "text": "Sarah thinks Ana is at the hotel.",
+      "yes": false,
+      "correction": "No. She thinks Ana got lost in Times Square."
+    },
+    {
+      "id": "L.3",
+      "text": "They didn’t order any food for Ana.",
+      "yes": false,
+      "correction": "No. They ordered a pizza for her."
+    }
+  ],
+  "corrections": [
+    {
+      "id": "C.0",
+      "s": "I was walking since two o’clock when my phone died.",
+      "ok": false,
+      "a": "I’d been walking since two o’clock when my phone died.",
+      "why": "Grammar. For some time before another moment: had been + -ing. Em português é “eu estava andando desde as duas”."
+    },
+    {
+      "id": "C.1",
+      "s": "Can you borrow me your charger?",
+      "ok": false,
+      "a": "Can you lend me your charger?",
+      "why": "Grammar. You give: lend. You take: borrow (Can I borrow your charger?). Em português, emprestar serve para os dois."
+    },
+    {
+      "id": "C.2",
+      "s": "I’d been waiting for twenty minutes when a woman lent me her power bank.",
+      "ok": true,
+      "a": "I’d been waiting for twenty minutes when a woman lent me her power bank.",
+      "why": "had been + -ing for the waiting, past simple for what happened."
+    },
+    {
+      "id": "C.3",
+      "s": "I lost myself in Manhattan.",
+      "ok": false,
+      "a": "I got lost in Manhattan.",
+      "why": "Sounds strange. In English: get lost. “Me perdi” não é lost myself."
+    },
+    {
+      "id": "C.4",
+      "s": "Eventually my phone dies, maybe once a month.",
+      "ok": false,
+      "a": "Sometimes my phone dies, maybe once a month.",
+      "why": "Sounds strange. eventually = no fim, e não diz quantas vezes. Eventualmente (de vez em quando) = sometimes."
+    }
+  ],
+  "listening": {
+    "transcript": "Hi, Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, and nothing! Sarah thinks you got lost in Times Square. Ha! The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just arrive, OK?",
+    "focus": "Did Raj say this?",
+    "textMessage": "Ana? Are you coming?",
+    "textTimestamp": "6:40 PM",
+    "voiceTimestamp": "7:20 PM"
+  }
+}

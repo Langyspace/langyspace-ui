@@ -18,7 +18,16 @@ export function useVoiceMessageAudio(active: boolean) {
   useEffect(() => {
     mountedRef.current = true
     const audio = audioRef.current
+    const onVisibilityChange = () => {
+      if (document.hidden) {
+        intentRef.current = false
+        attemptRef.current += 1
+        audio?.pause()
+      }
+    }
+    document.addEventListener('visibilitychange', onVisibilityChange)
     return () => {
+      document.removeEventListener('visibilitychange', onVisibilityChange)
       mountedRef.current = false
       intentRef.current = false
       attemptRef.current += 1

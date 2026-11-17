@@ -337,3 +337,54 @@ describe('VoiceMessageExercise', () => {
     }
   })
 })
+
+it('offers an optional replay after a complete first pass and removes it on the second native pass', async () => {
+  const { container } = render(
+    <VoiceMessageExercise
+      {...fixture}
+      replayActionLabel="Listen again and check"
+    />,
+  )
+  expect(
+    screen.getByRole('button', { name: 'Listen again and check' }),
+  ).toBeDisabled()
+  await start()
+  fireEvent.pause(media(container))
+  expect(
+    screen.getByRole('button', { name: 'Listen again and check' }),
+  ).toBeDisabled()
+  fireEvent.ended(media(container))
+  expect(
+    screen.getByRole('button', { name: 'Listen again and check' }),
+  ).toBeEnabled()
+  await act(async () => {
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Listen again and check' }),
+    )
+  })
+  expect(
+    screen.queryByRole('button', { name: 'Listen again and check' }),
+  ).not.toBeInTheDocument()
+  expect(screen.getByText(fixture.audio.transcript)).toBeVisible()
+})
+
+it('pauses when the document is hidden and resumes the same listening pass only on user action', async () => {
+  const { container } = render(<VoiceMessageExercise {...fixture} />)
+  await start()
+  const calls = play.mock.calls.length
+  const visibility = vi.spyOn(document, 'hidden', 'get').mockReturnValue(true)
+  fireEvent(document, new Event('visibilitychange'))
+  expect(pause).toHaveBeenCalled()
+  expect(container.querySelector('[data-playback]')).toHaveAttribute(
+    'data-playback',
+    'paused',
+  )
+  visibility.mockReturnValue(false)
+  fireEvent(document, new Event('visibilitychange'))
+  expect(play).toHaveBeenCalledTimes(calls)
+  await start()
+  expect(container.querySelector('[data-listens]')).toHaveAttribute(
+    'data-listens',
+    '1',
+  )
+})

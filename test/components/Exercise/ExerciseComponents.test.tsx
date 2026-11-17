@@ -164,3 +164,57 @@ describe('shared exercise contracts', () => {
       expect(html).toContain(`lsui-sc-${marker}`)
   })
 })
+
+it('keeps a controlled vocabulary tooltip active and marks reviewed cards without changing defaults', () => {
+  const items = [
+    {
+      id: 'one',
+      word: 'a map',
+      translation: 'um mapa',
+      imageUrl: '/map.webp',
+      imageAlt: 'Mapa',
+      badge: 'B1',
+    },
+    {
+      id: 'two',
+      word: 'a key',
+      translation: 'uma chave',
+      imageUrl: '/key.webp',
+      imageAlt: 'Chave',
+    },
+  ]
+  const { rerender } = render(
+    <VocabularyGrid
+      items={items}
+      revealedIds={['one']}
+      activeId="one"
+      imageFit="contain"
+      markRevealed
+      revealVariant="tooltip"
+      revealOnHover={false}
+      onReveal={() => {}}
+    />,
+  )
+  expect(screen.getByText('B1')).toBeInTheDocument()
+  expect(screen.getByText('✓')).toBeInTheDocument()
+  expect(screen.queryByText('?')).not.toBeInTheDocument()
+  expect(screen.getByText('um mapa')).toBeVisible()
+  fireEvent.mouseLeave(screen.getByRole('button', { name: 'a map: um mapa' }))
+  expect(screen.getByText('um mapa')).toBeVisible()
+  rerender(
+    <VocabularyGrid
+      items={items}
+      revealedIds={['one', 'two']}
+      activeId="two"
+      markRevealed
+      revealVariant="tooltip"
+      revealOnHover={false}
+      onReveal={() => {}}
+    />,
+  )
+  expect(screen.queryByText('um mapa')).not.toBeInTheDocument()
+  expect(
+    screen.getByRole('button', { name: 'a map: um mapa' }),
+  ).toHaveAttribute('aria-expanded', 'false')
+  expect(screen.getByText('uma chave')).toBeVisible()
+})

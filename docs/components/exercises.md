@@ -39,3 +39,12 @@ B1.01 also uses `VocabularyGrid columns={4}` (two columns on narrow containers) 
 Learner turns in `LearningDialogue` can provide `actionLabel`, `completedIds` and `onComplete`. They use the same bubble and a native, keyboard-operable response action, with a visible completion state. Consumer callbacks own evaluation and progress. Ordinary line translation and audio remain unchanged.
 
 For teacher-led guessing, `VocabularyGrid revealOnHover={false}` keeps an answer concealed while pointing or focusing until the consumer reveals its id. An optional `initialHint` on each item supplies a phrase scaffold such as `playing the g_____`; otherwise the initial-letter hint keeps its existing behavior. `LearningDialogue density="compact"` keeps the speaker accessible while reducing avatar/name chrome for longer conversations.
+
+For a controlled classroom reveal, `activeId` keeps just the current card's tooltip open independently
+of pointer hover. Other reviewed word captions stay concealed until `showAll`; initial scaffolds
+still follow `showInitial`. `markRevealed` adds a green check and border to activated cards without
+adding a question mark to untouched tooltip cards. An optional item `badge` carries consumer-owned
+review metadata. All three contracts are opt-in; existing reveals and captions keep their defaults.
+See `ReviewedVocabulary` and `Materials/B2.01` for the new twelve-page lesson composition.
+
+`imageFit="contain"` preserves a whole scene inside its existing card. Omit it to retain the previous framing.

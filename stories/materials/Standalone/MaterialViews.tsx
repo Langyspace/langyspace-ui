@@ -9,6 +9,9 @@ const A201 = lazy(() =>
 const B101 = lazy(() =>
   import('../B101/B101Lesson').then((m) => ({ default: m.B101Lesson })),
 )
+const B201 = lazy(() =>
+  import('../B201/B201Lesson').then((m) => ({ default: m.B201Lesson })),
+)
 const Trial = lazy(() =>
   import('../TrialA1/TrialA1Lesson').then((m) => ({
     default: m.TrialA1Lesson,
@@ -24,5 +27,7 @@ export function MaterialView({
     return <A201 studentPortalOrigin={studentPortalOrigin} />
   if (materialKey === 'b1-01')
     return <B101 studentPortalOrigin={studentPortalOrigin} />
+  if (materialKey === 'b2-01')
+    return <B201 studentPortalOrigin={studentPortalOrigin} />
   return <Trial levelLabel="A1 · A2" />
 }

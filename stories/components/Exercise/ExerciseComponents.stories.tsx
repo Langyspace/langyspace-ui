@@ -177,3 +177,33 @@ function TooltipVocabularyPreview() {
 export const FixedColumnsWithTooltips: Story = {
   render: () => <TooltipVocabularyPreview />,
 }
+
+function ReviewedVocabularyPreview() {
+  const [revealed, setRevealed] = useState<string[]>([]),
+    [active, setActive] = useState('')
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        items={feelings.slice(0, 3).map((item, i) => ({
+          ...item,
+          badge: i === 0 ? 'Review' : undefined,
+        }))}
+        imageVariant="scene"
+        imageFit="contain"
+        columns={3}
+        revealVariant="tooltip"
+        revealOnHover={false}
+        markRevealed
+        activeId={active}
+        revealedIds={revealed}
+        onReveal={(id) => {
+          setActive(id)
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
+        }}
+      />
+    </Styled.Preview>
+  )
+}
+export const ReviewedVocabulary: Story = {
+  render: () => <ReviewedVocabularyPreview />,
+}

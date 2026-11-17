@@ -10,10 +10,13 @@ export function VocabularyGrid({
   showInitial = false,
   revealOnHover = true,
   imageVariant = 'isolated',
+  imageFit,
   columns,
   density = 'compact',
   revealVariant = 'overlay',
   revealLabel = 'Mostrar palavra',
+  activeId,
+  markRevealed = false,
   ...props
 }: VocabularyGridProps) {
   const [hovered, setHovered] = useState<string>()
@@ -30,6 +33,7 @@ export function VocabularyGrid({
           (revealOnHover && hovered === item.id)
         return (
           <Styled.Word
+            $completed={markRevealed && revealedIds.includes(item.id)}
             $scene={imageVariant === 'scene'}
             $regular={density === 'regular'}
             key={item.id}
@@ -39,7 +43,11 @@ export function VocabularyGrid({
                 ? `${item.word}: ${item.translation}`
                 : `${revealLabel} ${index + 1}: ${item.imageAlt}`
             }
-            aria-expanded={revealed}
+            aria-expanded={
+              activeId !== undefined && revealVariant === 'tooltip'
+                ? showAll || (activeId === item.id && revealed)
+                : revealed
+            }
             onPointerEnter={() => {
               setHovered(item.id)
             }}
@@ -58,21 +66,31 @@ export function VocabularyGrid({
             }}
           >
             <Styled.WordImage
+              $fit={imageFit}
               $scene={imageVariant === 'scene'}
               $regular={density === 'regular'}
               src={item.imageUrl}
               alt=""
             />
-            {revealVariant === 'overlay' ? (
-              <Styled.QuestionMark aria-hidden="true">
-                {showInitial && !revealed
-                  ? (item.initialHint ?? item.word[0])
-                  : '?'}
+            {item.badge ? (
+              <Styled.WordBadge>{item.badge}</Styled.WordBadge>
+            ) : null}
+            {revealVariant === 'overlay' ||
+            (markRevealed && revealedIds.includes(item.id)) ? (
+              <Styled.QuestionMark
+                $completed={markRevealed && revealedIds.includes(item.id)}
+                aria-hidden="true"
+              >
+                {markRevealed && revealedIds.includes(item.id)
+                  ? '✓'
+                  : showInitial && !revealed
+                    ? (item.initialHint ?? item.word[0])
+                    : '?'}
               </Styled.QuestionMark>
             ) : null}
             {revealVariant === 'tooltip' &&
             (showAll ||
-              revealedIds.includes(item.id) ||
+              (activeId === undefined && revealedIds.includes(item.id)) ||
               (showInitial && !revealed)) ? (
               <Styled.WordCaption>
                 {showAll || revealedIds.includes(item.id)
@@ -83,7 +101,9 @@ export function VocabularyGrid({
             {(
               revealVariant === 'overlay'
                 ? revealed
-                : hovered === item.id && (revealOnHover || revealed)
+                : activeId !== undefined
+                  ? activeId === item.id && revealed
+                  : hovered === item.id && (revealOnHover || revealed)
             ) ? (
               <Styled.WordLabel $floating={revealVariant === 'tooltip'}>
                 <b>{item.word}</b>

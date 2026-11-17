@@ -46,6 +46,7 @@ function VoiceMessageContent({
   active = true,
   footer,
   replyAction,
+  replayActionLabel,
   labels: overrides,
   ...props
 }: VoiceMessageExerciseProps) {
@@ -319,6 +320,17 @@ function VoiceMessageContent({
               ) : null}
             </Styled.Question>
           ))}
+          {replayActionLabel && media.playCount < 2 ? (
+            <Button
+              variant="secondary"
+              disabled={!active || media.status !== 'ended'}
+              onClick={() => {
+                void media.toggle()
+              }}
+            >
+              {replayActionLabel}
+            </Button>
+          ) : null}
           {footer}
         </Styled.Side>
       </Styled.Layout>

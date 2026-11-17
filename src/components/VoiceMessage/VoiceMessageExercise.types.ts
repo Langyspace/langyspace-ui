@@ -60,4 +60,6 @@ export interface VoiceMessageExerciseProps extends Omit<
   /** Optional product-owned action; this component never requests microphone access. */
   replyAction?: { label: string; onClick: () => void; disabled?: boolean }
   labels?: Partial<VoiceMessageLabels>
+  /** Optional follow-up replay control after a completed first pass; disappears on the second. */
+  replayActionLabel?: string
 }

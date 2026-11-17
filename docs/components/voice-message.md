@@ -40,3 +40,10 @@ Current consumer status: new shared-library API; teacher/student adoption follow
 Each question can receive optional `feedback` content, supplied by the consumer after an answer. It is announced as a status and appears below its choices. This allows a correction or inference explanation without putting answer evaluation into the phone component. B1.01 supplies four Yes/No statements and retains the second-listen transcript rule.
 
 `voiceMessage.phoneWidth`, `phoneHeight` and `contentWidth` honor the theme recipe. Use `createTheme` to supply overrides while retaining the remaining device tokens.
+
+An optional `replayActionLabel` adds a follow-up replay control beside the questions. It stays
+disabled until the first native pass ends and disappears on the second native playing pass, when
+the existing transcript unlocks. Pausing or buffering does not enable it. The consumer decides when
+the prompt is appropriate, such as after all four listening statements have been answered.
+
+Native playback pauses when the document becomes hidden. Returning does not autoplay or count a new listening pass.

@@ -187,3 +187,7 @@ export const PlaybackAndTranscript: Story = {
     await userEvent.click(canvas.getByRole('button', { name: 'Pausar áudio' }))
   },
 }
+
+export const FollowUpReplay: Story = {
+  args: { replayActionLabel: 'Listen again and check' },
+}
