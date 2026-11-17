@@ -14,9 +14,15 @@ const Trial = lazy(() =>
     default: m.TrialA1Lesson,
   })),
 )
-export function MaterialView({ materialKey }: MaterialViewProps) {
-  if (materialKey === 'a1-01') return <A101 />
-  if (materialKey === 'a2-01') return <A201 />
-  if (materialKey === 'b1-01') return <B101 />
+export function MaterialView({
+  materialKey,
+  studentPortalOrigin,
+}: MaterialViewProps) {
+  if (materialKey === 'a1-01')
+    return <A101 studentPortalOrigin={studentPortalOrigin} />
+  if (materialKey === 'a2-01')
+    return <A201 studentPortalOrigin={studentPortalOrigin} />
+  if (materialKey === 'b1-01')
+    return <B101 studentPortalOrigin={studentPortalOrigin} />
   return <Trial levelLabel="A1 · A2" />
 }

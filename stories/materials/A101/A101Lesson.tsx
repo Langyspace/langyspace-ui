@@ -34,6 +34,7 @@ import type { A101LessonProps } from './A101.types'
 export function A101Lesson({
   initialPageId = 's1',
   learnerName = '',
+  studentPortalOrigin,
 }: A101LessonProps) {
   const [pageId, setPageId] = useState(initialPageId)
   const speech = useLessonSpeech()
@@ -362,7 +363,7 @@ export function A101Lesson({
           title="Before next class"
           instruction="Continue praticando no espaço do aluno."
         >
-          <HomeworkSection />
+          <HomeworkSection studentPortalOrigin={studentPortalOrigin} />
         </SlidePage>
       ),
     }

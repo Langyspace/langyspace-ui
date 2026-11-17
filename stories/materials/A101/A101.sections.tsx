@@ -1,3 +1,5 @@
+import { bindStudentDestinations } from '../shared/studentDestinations'
+import type { HomeworkDestinationProps } from '../shared/Lesson.types'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
@@ -485,7 +487,10 @@ export function ConversationSection() {
     </Styled.TalkGrid>
   )
 }
-export function HomeworkSection() {
+export function HomeworkSection({
+  studentPortalOrigin,
+}: HomeworkDestinationProps = {}) {
+  const message = bindStudentDestinations(homeworkMessage, studentPortalOrigin)
   const [copied, setCopied] = useState(false)
   const [fallback, setFallback] = useState(false)
   return (
@@ -508,7 +513,7 @@ export function HomeworkSection() {
           onClick={() => {
             void (async () => {
               try {
-                await navigator.clipboard.writeText(homeworkMessage)
+                await navigator.clipboard.writeText(message)
                 setCopied(true)
                 setFallback(false)
               } catch {
@@ -525,7 +530,7 @@ export function HomeworkSection() {
           Copie os links abaixo.
           <Styled.CopyFallback
             readOnly
-            value={homeworkMessage}
+            value={message}
             onFocus={(event) => event.currentTarget.select()}
           />
         </label>

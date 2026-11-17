@@ -1,4 +1,5 @@
 export interface B101LessonProps {
+  studentPortalOrigin?: string
   initialPageId?: string
 }
 export interface SpeechLine {

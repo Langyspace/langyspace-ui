@@ -9,15 +9,7 @@ import { styledComponentsBuild } from './styled-components-build.mjs'
 import { auditStyling } from '../audit/index.mjs'
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)))
 const preview = process.argv.includes('--preview')
-const environmentArg = process.argv.indexOf('--environment')
-const environment =
-  environmentArg >= 0 ? process.argv[environmentArg + 1] : 'staging'
-if (!['staging', 'production'].includes(environment))
-  throw new Error('materials_environment_invalid')
-const studentPortalOrigin =
-  environment === 'staging'
-    ? 'https://student.staging.langy.space'
-    : 'https://student.langy.space'
+const environment = 'neutral'
 const outputArg = process.argv.indexOf('--out')
 const outDir = resolve(
   root,
@@ -55,10 +47,7 @@ await build({
           id.includes('/stories/materials/') &&
           /\.(tsx?|json)(?:\?|$)/.test(id)
         )
-          return code.replaceAll(
-            'https://student.langy.space',
-            studentPortalOrigin,
-          )
+          return code.replaceAll('https://student.langy.space', '')
       },
     },
     styledComponentsBuild(),
@@ -89,6 +78,22 @@ await writeFile(
   resolve(outDir, 'catalog.json'),
   JSON.stringify(catalog, null, 2) + '\n',
 )
+const noticeFiles = [
+  ['THIRD_PARTY_NOTICES.md', 'ui-third-party.md'],
+  [
+    'stories/materials/A101/assets/FLUENT-EMOJI-LICENSE.txt',
+    'fluent-emoji.txt',
+  ],
+  ['node_modules/@fontsource/montserrat/LICENSE', 'montserrat.txt'],
+  ['node_modules/@fontsource/space-grotesk/LICENSE', 'space-grotesk.txt'],
+  ['node_modules/@fontsource/instrument-serif/LICENSE', 'instrument-serif.txt'],
+  ['node_modules/react/LICENSE', 'react.txt'],
+  ['node_modules/react-dom/LICENSE', 'react-dom.txt'],
+  ['node_modules/styled-components/LICENSE', 'styled-components.txt'],
+]
+await mkdir(resolve(outDir, 'notices'), { recursive: true })
+for (const [source, name] of noticeFiles)
+  await copyFile(resolve(root, source), resolve(outDir, 'notices', name))
 const files = {}
 async function walk(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -107,7 +112,7 @@ await walk(outDir)
 const manifest = {
   schemaVersion: 1,
   environment,
-  studentPortalOrigin,
+  destinationBinding: 'validated studentPortalOrigin consumer parameter',
   sourceRepository: 'https://github.com/Langyspace/langyspace-ui',
   sourceCommit,
   sourceDate,

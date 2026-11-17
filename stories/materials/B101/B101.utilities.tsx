@@ -1,10 +1,15 @@
+import { bindStudentDestinations } from '../shared/studentDestinations'
+import type { HomeworkDestinationProps } from '../shared/Lesson.types'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { TextareaInput } from '../../../src/components/Form/TextareaInput'
 import { content, image, homeworkMessage } from './B101.data'
 import * as S from './B101.styles'
 export { LessonNotes } from '../shared/LessonNotes'
-export function HomeworkSection() {
+export function HomeworkSection({
+  studentPortalOrigin,
+}: HomeworkDestinationProps = {}) {
+  const message = bindStudentDestinations(homeworkMessage, studentPortalOrigin)
   const [status, setStatus] = useState<'idle' | 'copied' | 'fallback'>('idle')
   const fallback = useRef<HTMLTextAreaElement>(null)
   useEffect(() => {
@@ -20,7 +25,7 @@ export function HomeworkSection() {
   }, [status])
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(homeworkMessage)
+      await navigator.clipboard.writeText(message)
       setStatus('copied')
     } catch {
       setStatus('fallback')
@@ -54,7 +59,7 @@ export function HomeworkSection() {
             ref={fallback}
             aria-label="Homework links"
             readOnly
-            value={homeworkMessage}
+            value={message}
           />
         </S.Stack>
       ) : null}

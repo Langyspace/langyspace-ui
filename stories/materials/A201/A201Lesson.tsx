@@ -46,7 +46,10 @@ function audioTool(speech: LessonSpeech, part?: number) {
     </Button>
   )
 }
-export function A201Lesson({ initialPageId }: LessonProps) {
+export function A201Lesson({
+  initialPageId,
+  studentPortalOrigin,
+}: LessonProps) {
   return (
     <LessonShell
       initialPageId={initialPageId}
@@ -282,6 +285,7 @@ export function A201Lesson({ initialPageId }: LessonProps) {
                 instruction="Suas três tarefas na plataforma. A professora manda os links pelo chat."
               >
                 <LessonHomework
+                  studentPortalOrigin={studentPortalOrigin}
                   lesson="A2.01 · This week I’m working in Porto"
                   items={content.homework}
                   image={image('bridge')}

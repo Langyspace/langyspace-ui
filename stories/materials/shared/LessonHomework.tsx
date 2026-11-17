@@ -1,3 +1,4 @@
+import { bindStudentDestinations } from './studentDestinations'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { TextareaInput } from '../../../src/components/Form/TextareaInput'
@@ -6,18 +7,21 @@ export function LessonHomework({
   lesson,
   items,
   image,
+  studentPortalOrigin,
 }: {
   lesson: string
   items: readonly string[][]
   image?: string
+  studentPortalOrigin?: string
 }) {
   const [status, setStatus] = useState<'idle' | 'copied' | 'fallback'>('idle'),
     input = useRef<HTMLTextAreaElement>(null)
-  const message =
+  const authoredMessage =
     `Lição de casa da aula ${lesson}\n` +
     items
       .map(([title, , url, min], i) => `${i + 1}. ${title} · ${min} · ${url}`)
       .join('\n')
+  const message = bindStudentDestinations(authoredMessage, studentPortalOrigin)
   useEffect(() => {
     if (status === 'fallback') {
       input.current?.focus()

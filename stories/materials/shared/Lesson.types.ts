@@ -1,6 +1,9 @@
 import type { SlideDeckPage } from '../../../src/components/Slide/SlideDeck.types'
 import type { useLessonSpeech } from './useLessonSpeech'
-export interface LessonProps {
+export interface HomeworkDestinationProps {
+  studentPortalOrigin?: string
+}
+export interface LessonProps extends HomeworkDestinationProps {
   initialPageId?: string
 }
 export interface NotesProps {

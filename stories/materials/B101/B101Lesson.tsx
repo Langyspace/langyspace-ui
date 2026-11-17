@@ -24,7 +24,10 @@ import {
 import { LessonNotes, HomeworkSection } from './B101.utilities'
 import type { B101LessonProps } from './B101.types'
 import * as S from './B101.styles'
-export function B101Lesson({ initialPageId = 's1' }: B101LessonProps) {
+export function B101Lesson({
+  initialPageId = 's1',
+  studentPortalOrigin,
+}: B101LessonProps) {
   const [pageId, setPageId] = useState(initialPageId),
     [notes, setNotes] = useState(false)
   const notesButton = useRef<HTMLButtonElement>(null),
@@ -300,7 +303,7 @@ export function B101Lesson({ initialPageId = 's1' }: B101LessonProps) {
           title="Before next class"
           instruction="Three cards for you. Your teacher puts the links in the chat."
         >
-          <HomeworkSection />
+          <HomeworkSection studentPortalOrigin={studentPortalOrigin} />
         </SlidePage>
       ),
     }
