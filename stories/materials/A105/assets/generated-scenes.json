@@ -1,8 +1,9 @@
 {
   "generationTool": "built-in image_gen",
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "profile": "exercise-scene",
-  "styleReference": "../../A101/assets/scene-tired-tom.webp",
+  "styleReference": "A101/scene-tired-tom",
+  "styleBase": "../../shared/illustration-style.txt",
   "promptSet": "../image-scenes.json",
   "sourceFormat": "PNG",
   "conversion": {
@@ -16,134 +17,122 @@
     {
       "id": "scene-banana",
       "file": "scene-banana.webp",
-      "originalSha256": "957f8b643813270d26f00b1bc803fa84e8385e5a86d1a50645fbb1c8ac2b214a",
-      "sha256": "4e879c51e2b8a34ba1b91cb628b2915435d4bbdf830b011f961e42b9b063866a",
-      "bytes": 77988,
+      "originalSha256": "ca3a5729cac8be93b21aa381e515b4ed8d5b7e718055ae2feb14c4dadec84fbb",
+      "sha256": "8060b3d422f67e5306393d22c93b53d93881f960636fbed806d2b6e02e51a6e7",
+      "bytes": 45094,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a banana\". Scene: A single ripe yellow banana prominent in a wooden crate on a Brazilian street-market stall; no other produce types."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-apple",
       "file": "scene-apple.webp",
-      "originalSha256": "df7c5002f9e810c0f2b595a4454ecdcee7628acf164999a2c0e98c8393cbb0ee",
-      "sha256": "17cd43984f01ba4181af5a2046411add29f048e3262cde74cea818df6917d487",
-      "bytes": 82754,
+      "originalSha256": "be2fa888bad4877f593c194c5a1a4f2add76e1fa3b999e700bb455560df71051",
+      "sha256": "797c863ba5ca222a9d209c827371f251ca9b4459ba4157e705add683a79d0333",
+      "bytes": 50736,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"an apple\". Scene: A single green apple with natural leaf prominent in a shallow wooden crate in a Brazilian street market; no other produce types."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-orange",
       "file": "scene-orange.webp",
-      "originalSha256": "fcd759f0808467a5824b61fc97c1773ec39a101bad85918b8ffdb45cb8854563",
-      "sha256": "a9fb642e65e83592b9796c76a2a43ae8385b3be25dbca09a69811336134d674d",
-      "bytes": 104296,
+      "originalSha256": "848faf77f0cd5d837862fae446319e81d3bfe53464917916b0013b26d0d248d1",
+      "sha256": "576f44618fdb89e13dd0b38c14ef4f6107155e130108d17ea443bca55f7c17ed",
+      "bytes": 44682,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"an orange\". Scene: One orange fruit with a matching cut half clearly showing juicy orange segments on a wooden Brazilian market-stall counter; no other produce types."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-mango",
       "file": "scene-mango.webp",
-      "originalSha256": "f40c4857faedb790f29ad8586b2fdf1d46d89d1b9a3d9d391a09e4f8f3b2c22e",
-      "sha256": "d3446348632fd658f71320d7e588fecad0fad85b063e85ea9c13f45ca038a682",
-      "bytes": 98506,
+      "originalSha256": "5adc04bc60f299a5acc5d1d48718a0cd3baaa4f8cd900547036cd5b8f1b4229b",
+      "sha256": "06dac8cf14fbdd7f3e248672ac9a293dc4a4b86a3bef419066553df440bcac35",
+      "bytes": 42626,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a mango\". Scene: One ripe mango with red-green skin and a matching cut yellow-fleshed half on a wooden Brazilian market-stall counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-pineapple",
       "file": "scene-pineapple.webp",
-      "originalSha256": "fe737bf1aeba418cdd507911a81923d0cb7f1450ff6cb26abb8e31b512db504b",
-      "sha256": "dd1e93a45a923cb30e0a259ae70a6e3fb8726b8765c89cf5c31720160792040b",
-      "bytes": 131600,
+      "originalSha256": "159c942ecda2143fb5e4fd9e8e8cb629ff4b6c95860d354910ec65ff156793cc",
+      "sha256": "d1b29d6f62c0a68af4e21e78b122d2bd9a63dec6882cedcd2a0d25fc47d2e0fe",
+      "bytes": 50508,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a pineapple\". Scene: One unmistakable whole pineapple large in the foreground on a Brazilian street-market counter. In the softly focused background Ana, an adult woman with medium brown skin and curly brown hair, smiles and gives a thumbs-up to clearly communicate she likes pineapple. Pineapple is the dominant subject, not the person; no other produce. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-watermelon",
       "file": "scene-watermelon.webp",
-      "originalSha256": "4aa7ba39deb6a2c7253781fbf0fc0de2da116e67e12a4c69f6516d8c11a724da",
-      "sha256": "53ce5f5ba3e25b09880072eff5c3f54b82558fec4af8c34bc89a0e0a50d953ac",
-      "bytes": 126488,
+      "originalSha256": "ee937c0869d2e42ce856f8c2106da9a2cd8c98f348f3a456711a1f2eef99b602",
+      "sha256": "e3c510c7f01066bef15866d5d9a20f1a97f5c78e2cce036775a8743c0f78e382",
+      "bytes": 48946,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a watermelon\". Scene: One green watermelon and a matching red-fleshed wedge with black seeds prominent on a wooden Brazilian street-market counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-tomato",
       "file": "scene-tomato.webp",
-      "originalSha256": "9f1fa4d0284e6f98f396ed3930c0883605dcbc4b5ada564cb323e60b26666099",
-      "sha256": "95a71f27d5da2e0bbd862f080b8865a844fdc3887b585e90c53609ab1e7315f9",
-      "bytes": 94860,
+      "originalSha256": "3683a26472fe15c25d2afd1dd342949fbb3cfa6a6f572b260e8a8134c589103c",
+      "sha256": "ebf968033a74545367a56caffa3e324f5d16b0a26e81577d9f0acd1fbb3b74c1",
+      "bytes": 39544,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a tomato\". Scene: A single ripe red tomato with green calyx dominant on a wooden Brazilian market-stall counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-potato",
       "file": "scene-potato.webp",
-      "originalSha256": "00862cf7d7dad71defb73aee496ac60297ba573420e066ea096efbaf10abdcbd",
-      "sha256": "0803f0cffcd1a75304545bfdb3b655f2db2189880e189edd8d5b21606268f78e",
-      "bytes": 125584,
+      "originalSha256": "4f679b4e23d2803b3173923eb1d53f9e2eca6f97fa6f460daf6550cbe8bc3198",
+      "sha256": "8687c6f78c57e21d1f056b77dd84de58a25d31ec2561e4ad4b9558e12e4f47a8",
+      "bytes": 44144,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a potato\". Scene: One unmistakable brown potato with natural tiny eyes dominant in a shallow wooden Brazilian market-stall crate; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-carrot",
       "file": "scene-carrot.webp",
-      "originalSha256": "3d03261e24fa48183fdfd686b0bc5b6c4a6b4750779dcaa881e3891a0abb1948",
-      "sha256": "e36b30fd887a50dc02e521c309fb4782c4c381acb823cb54763c11abef0ae531",
-      "bytes": 108232,
+      "originalSha256": "ba5b604c46fbb49f78cbe655894140f49518105192eef800cb081964c524bab8",
+      "sha256": "464d09dfc65cb6f7d9837f9d93640576b18eb56ba9863fd326bdbe457234baea",
+      "bytes": 57724,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"a carrot\". Scene: One vivid orange carrot with short fresh green tops dominant on a wooden Brazilian street-market counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-onion",
       "file": "scene-onion.webp",
-      "originalSha256": "877df413d67bb97dc2ff4432c8935ea4fff93c2e35ccb2974082bdd7cce90351",
-      "sha256": "1381d0f39eed91c50cc9acf5bbff8668e6642a1c1afb233c635d97aa20365c08",
-      "bytes": 95690,
+      "originalSha256": "91fff38a1374c1a555a401a207bf823c963821ff7ab8c99376f0c56d8b5ea81b",
+      "sha256": "e5ac6d3fa92be2169e05323343b48c57d02b72b65887c71008d92bda7b84d9c4",
+      "bytes": 47066,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"an onion\". Scene: A single golden-brown onion with papery skin and small dry roots dominant on a wooden Brazilian street-market counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-lettuce",
       "file": "scene-lettuce.webp",
-      "originalSha256": "fd93b24e92129af7f7172dfed1a8bb568d112d2e44e2edf54c35998edfa48732",
-      "sha256": "7518b892ff5c768f5ae671b53e0efab9ff955b10619b6b8d58788487ed4cf43e",
-      "bytes": 120398,
+      "originalSha256": "b95ace1e08b5799c98cb2577a5e1ca835d6ff88690edc860f4a147cf4cd0919c",
+      "sha256": "7e5e66521427fd6af48f1006663518956fc4bc294c424065ad4a8d2ebdb1b8aa",
+      "bytes": 54574,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"lettuce\". Scene: A single fresh leafy green lettuce head dominant in a wooden Brazilian street-market crate; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     },
     {
       "id": "scene-corn",
       "file": "scene-corn.webp",
-      "originalSha256": "6b73f62fc90310ba1ad2b42109fbd4e4734a844190039db371b7e97e3c018b49",
-      "sha256": "19e09263fadac4e678a5d6e0e2dcc8ec5c61736ccc71a768726d9411ecb660ce",
-      "bytes": 109948,
+      "originalSha256": "ee70ff671c27f90064f9fc9cf35016d59b66f48c912fc7acfb05afc0f9b3efc4",
+      "sha256": "12d20e96b67f1d610d0f2ae53a0ca2e17ef91f9fe5bb09b62bb30260c084122a",
+      "bytes": 55726,
       "width": 768,
-      "height": 768,
-      "hasAlpha": false,
-      "prompt": "Use case: illustration-story. Asset type: one standalone square opaque full-bleed contextual illustration for adult beginner English exercises. Use attached A1.01 reference for STYLE ONLY: polished soft 3D rendering, tactile matte materials, warm restrained palette, soft natural lighting and environmental depth. Produce must be instantly recognizable at 170px, with main fruit or vegetable filling the central 70% safe area. A softly blurred recognizable Brazilian street-market stall fills every edge. No isolated emoji, icon, toy, clipart, collage, multiple panels, white studio background, transparency, words, letters, captions, prices, numerals, logos, watermark or borders. Keep one unambiguous produce type as specified. Lesson question target: \"corn\". Scene: One yellow corn cob partly wrapped in peeled-back green husk dominant on a wooden Brazilian street-market counter; no other produce types. Background has only stall fabric, wooden crates, cobblestones and greenery. Strictly no flags or national symbols in any part of the image."
+      "height": 512,
+      "hasAlpha": false
     }
   ]
 }
