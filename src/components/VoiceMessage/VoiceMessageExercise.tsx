@@ -6,10 +6,10 @@ import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
 
-const waveHeights = [
+const wave = [
   10, 26, 12, 27, 12, 22, 15, 14, 21, 9, 27, 9, 27, 8, 23, 9, 18, 18, 16, 24,
   17, 25, 15, 22,
-]
+].map((height, index) => ({ id: String.fromCharCode(97 + index), height }))
 
 function formatTime(seconds: number) {
   const value = Number.isFinite(seconds) ? Math.max(0, Math.floor(seconds)) : 0
@@ -169,11 +169,11 @@ function VoiceMessageContent({
                   </svg>
                 </Styled.Play>
                 <Styled.Wave aria-hidden="true">
-                  {waveHeights.map((height, index) => (
+                  {wave.map(({ id: barId, height }, index) => (
                     <Styled.Bar
-                      key={index}
+                      key={barId}
                       $height={height}
-                      $played={progress > index / waveHeights.length}
+                      $played={progress > index / wave.length}
                     />
                   ))}
                 </Styled.Wave>
