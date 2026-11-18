@@ -25,9 +25,9 @@ export function AnswerDisclosure({
       >
         {label}
       </Button>
-      <S.Hint id={id} hidden={!open}>
-        {answer}
-      </S.Hint>
+      <div id={id} hidden={!open}>
+        {open ? <S.Hint as="div">{answer}</S.Hint> : null}
+      </div>
     </S.Answer>
   )
 }
