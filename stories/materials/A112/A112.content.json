@@ -1,0 +1,1082 @@
+{
+  "code": "A1.12",
+  "number": 12,
+  "title": "Let’s meet",
+  "before": "Let’s",
+  "accent": "meet",
+  "goal": "Combinar um programa completo com alguém da sua vida: atividade, dia, horário e lugar. E resolver quando o plano muda.",
+  "pages": [
+    {
+      "id": "s1",
+      "title": "Do you remember?",
+      "eyebrow": "Review",
+      "instruction": "Answer your teacher’s questions.",
+      "prompts": [
+        {
+          "q": "What’s a problem you have at home?"
+        },
+        {
+          "q": "Can you help me with my homework?"
+        },
+        {
+          "q": "Is your phone working well today? What do you need for it?"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Are you free on Saturday?",
+      "eyebrow": "Dialogue",
+      "instruction": "Listen and then read the messages with your teacher.",
+      "dialogue": "read"
+    },
+    {
+      "id": "s17",
+      "title": "Comprehension questions",
+      "eyebrow": "Dialogue",
+      "instruction": "Now, answer the questions based on the text.",
+      "prompts": [
+        {
+          "q": "Where do they go on Saturday?",
+          "a": "They go to the new café on Augusta Street."
+        },
+        {
+          "q": "Why can’t Ana meet at ten?",
+          "a": "She has a class."
+        },
+        {
+          "q": "What does Kim ask?",
+          "a": "She asks Ana to bring her book."
+        },
+        {
+          "q": "Where is the café?",
+          "a": "It’s next to the pharmacy."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Plans",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say a plan you like.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_f_popcorn",
+            "en": "the movies",
+            "pt": "cinema",
+            "id": "V01"
+          },
+          {
+            "ic": "x_pl_cafe",
+            "en": "the café",
+            "pt": "café",
+            "id": "V02"
+          },
+          {
+            "ic": "x_pl_park",
+            "en": "the park",
+            "pt": "parque",
+            "id": "V03"
+          },
+          {
+            "ic": "x_r_gym",
+            "en": "the gym",
+            "pt": "academia",
+            "id": "V04"
+          },
+          {
+            "ic": "x_o_calendar",
+            "en": "Saturday",
+            "pt": "sábado",
+            "id": "V05"
+          },
+          {
+            "ic": "x_o_clock",
+            "en": "at ten o’clock",
+            "pt": "às dez horas",
+            "id": "V06"
+          }
+        ],
+        "letterHint": true
+      },
+      "tip": {
+        "text": "Dia com on: on Saturday. Horário com at: at ten. Lugar com at ou to: meet at the café, go to the movies.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s6",
+      "title": "Changing plans",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_mt_think",
+            "en": "How about…?",
+            "pt": "Que tal…?",
+            "id": "V11"
+          },
+          {
+            "ic": "x_mt_sorry",
+            "en": "Sorry, I can’t.",
+            "pt": "Desculpa, não posso.",
+            "id": "V12"
+          },
+          {
+            "ic": "x_d_right",
+            "en": "later",
+            "pt": "mais tarde",
+            "id": "V13"
+          },
+          {
+            "ic": "x_d_left",
+            "en": "earlier",
+            "pt": "mais cedo",
+            "id": "V14"
+          },
+          {
+            "ic": "x_o_clock",
+            "en": "instead",
+            "pt": "em vez disso",
+            "id": "V15"
+          },
+          {
+            "ic": "x_mt_wave",
+            "en": "See you!",
+            "pt": "Até mais!",
+            "id": "V16"
+          }
+        ],
+        "letterHint": false
+      },
+      "tip": {
+        "text": "instead vai no fim: Can we meet at twelve instead? = Podemos nos encontrar ao meio-dia, em vez disso?",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s31",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Let’s try the new café!”",
+          "im": "n12_invite",
+          "id": "A01",
+          "alt": "Kim feliz, uma xícara de café e a etiqueta Saturday",
+          "o": ["Great idea!", "Yes, I try.", "Great, I am idea!"],
+          "a": 0,
+          "now": "Invite your teacher: Let’s…",
+          "why": {
+            "1": "Para aceitar um convite: Great idea! ou Sure!",
+            "2": "Use só: Great idea!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Ana asks: “What time?” Suggest a time.",
+          "im": "n12_time",
+          "id": "A02",
+          "alt": "Ana pensando e um relógio",
+          "o": [
+            "How about at ten o’clock?",
+            "How about ten o’clock?",
+            "How ten o’clock about?"
+          ],
+          "a": 1,
+          "now": "Answer about you: What time are you free on Saturday?",
+          "why": {
+            "0": "Com How about, não precisa de at: How about ten o’clock?",
+            "2": "A ordem é: How about ten o’clock?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Leo suggests a place.",
+          "im": "n12_place",
+          "id": "A03",
+          "alt": "Leo, um mapa e uma árvore",
+          "o": [
+            "How about the park?",
+            "How about go the park?",
+            "How about to the park?"
+          ],
+          "a": 0,
+          "now": "Change the person: Where does your best friend like to meet?",
+          "why": {
+            "1": "Use só o lugar: How about the park?",
+            "2": "Sem to: How about the park?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Kim needs her book. What does she say?",
+          "im": "n12_book",
+          "id": "A04",
+          "alt": "Kim e um livro vermelho",
+          "o": [
+            "You can bring my book?",
+            "Can you bring my book?",
+            "Can you to bring my book?"
+          ],
+          "a": 1,
+          "now": "Ask your teacher: Can you bring…?",
+          "why": {
+            "0": "Na pergunta, can vem primeiro: Can you…?",
+            "2": "Depois de can, sem to."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Ana has a class at ten. What does she say?",
+          "im": "n12_cant",
+          "id": "A05",
+          "alt": "Ana chateada e a etiqueta 10:00",
+          "o": [
+            "Sorry, I don’t can at ten.",
+            "Sorry, I can’t in ten.",
+            "Sorry, I can’t at ten."
+          ],
+          "a": 2,
+          "now": "Answer about you: When can’t you meet this week?",
+          "why": {
+            "0": "O negativo de can é can’t.",
+            "1": "Horário com at: at ten."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Let’s… How about…? Can we…?",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Convidar",
+            "text": "Let’s + ação: Let’s go to the movies. Let’s meet at the café."
+          },
+          {
+            "label": "Sugerir",
+            "text": "How about + dia, horário ou lugar: How about Friday? How about the park?"
+          },
+          {
+            "label": "Perguntar",
+            "text": "Can we + ação: Can we meet at the café? Can you bring my book?"
+          }
+        ],
+        "cols": ["Quem", "Exemplo"],
+        "rows": [
+          {
+            "cells": ["Let’s", "Let’s go to the movies."],
+            "audio": "C01",
+            "spoken": "Let’s go to the movies."
+          },
+          {
+            "cells": ["day", "How about Friday?"],
+            "audio": "C02",
+            "spoken": "How about Friday?"
+          },
+          {
+            "cells": ["time", "How about eight o’clock?"],
+            "audio": "C03",
+            "spoken": "How about eight o’clock?"
+          },
+          {
+            "cells": ["place", "Can we meet at the café?"],
+            "audio": "C04",
+            "spoken": "Can we meet at the café?"
+          },
+          {
+            "cells": ["meet", "Let’s meet at the park."],
+            "audio": "C05",
+            "spoken": "Let’s meet at the park."
+          },
+          {
+            "cells": ["ask", "Can you bring my book?"],
+            "audio": "C06",
+            "spoken": "Can you bring my book?"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s22",
+      "title": "Quick check",
+      "eyebrow": "Grammar",
+      "instruction": "Choose the correct word.",
+      "choices": [
+        {
+          "t": "___ go to the park!",
+          "o": ["Let’s", "Let"],
+          "a": 0
+        },
+        {
+          "t": "See you ___ Saturday!",
+          "o": ["on", "in"],
+          "a": 0
+        },
+        {
+          "t": "Can we ___ at the café?",
+          "o": ["meet", "to meet"],
+          "a": 0
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "title": "Make your own examples",
+      "eyebrow": "Grammar",
+      "instruction": "Create 3 examples to invite people in your life.",
+      "prompts": [
+        {
+          "q": "Let’s",
+          "a": "Let’s have lunch with mom on Sunday."
+        },
+        {
+          "q": "How about",
+          "a": "How about the café near my house?"
+        },
+        {
+          "q": "Can we",
+          "a": "Can we meet at seven?"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Look at the plans in the picture and answer the questions.",
+      "model": {
+        "question": "What’s Leo’s plan?",
+        "model": ["He {plays soccer} on Sunday at nine."],
+        "image": "n12_leo",
+        "alt": "Leo com uma bola de futebol e a etiqueta Sunday, 9:00."
+      }
+    },
+    {
+      "id": "s42",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Look at the plans in the picture and answer the questions.",
+      "model": {
+        "question": "What’s Ana’s parents’ plan?",
+        "model": ["They {go to the movies} on Friday at eight."],
+        "image": "n12_parents",
+        "alt": "Os pais da Ana com um balde de pipoca e a etiqueta Friday, 8:00."
+      }
+    },
+    {
+      "id": "s43",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Look at the plans in the picture and answer the questions.",
+      "model": {
+        "question": "When does Kim go to the gym?",
+        "model": ["She goes {on Monday at seven}."],
+        "image": "n12_kim",
+        "alt": "Kim com um peso de academia e a etiqueta Monday, 7:00."
+      }
+    },
+    {
+      "id": "s44",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Look at the plans in the picture and answer the questions.",
+      "model": {
+        "question": "Kim invites Ana. What does she say?",
+        "model": ["{Let’s} try the new café on Saturday."],
+        "image": "n12_invite",
+        "alt": "Kim com uma xícara de café e a etiqueta Saturday."
+      }
+    },
+    {
+      "id": "s45",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Look at the plans in the picture and answer the questions.",
+      "model": {
+        "question": "Kim suggests a new time. What does she say?",
+        "model": ["{How about} twelve o’clock?"],
+        "image": "n12_later",
+        "alt": "Kim junto de um relógio e da etiqueta 12:00 com ponto de interrogação."
+      }
+    },
+    {
+      "id": "s46",
+      "title": "Now you",
+      "eyebrow": "",
+      "instruction": "Answer about you and the people in your life.",
+      "prompts": [
+        {
+          "q": "What’s a plan with your family this month?",
+          "a": "Let’s have lunch at my grandmother’s house on Sunday."
+        },
+        {
+          "q": "Invite your best friend to do something.",
+          "a": "Let’s go to the park on Saturday. How about ten o’clock?"
+        },
+        {
+          "q": "Where do you and your friends like to meet?",
+          "a": "We like to meet at a café near my work."
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Changing plans",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Não dá",
+            "text": "Sorry, I can’t at ten. Sorry, I can’t on Friday. Diga o motivo: I have a class."
+          },
+          {
+            "label": "Outro plano",
+            "text": "Can we meet at twelve instead? How about Sunday?"
+          },
+          {
+            "label": "Aceitar",
+            "text": "No problem! Sure! See you on Saturday!"
+          }
+        ],
+        "cols": ["Question", "Yes", "No"],
+        "rows": [
+          {
+            "cells": [
+              "How about ten o’clock?",
+              "Great!",
+              "Sorry, I can’t at ten. How about twelve?"
+            ]
+          },
+          {
+            "cells": [
+              "Are you free on Friday?",
+              "Yes, I am.",
+              "Sorry, I can’t on Friday. I work."
+            ]
+          },
+          {
+            "cells": [
+              "Can we meet at twelve instead?",
+              "No problem!",
+              "Sorry, I can’t. How about later?"
+            ]
+          },
+          {
+            "cells": ["Can you bring my book?", "Of course.", "Sorry, I can’t."]
+          }
+        ]
+      },
+      "tip": {
+        "text": "Para fechar o plano, repita dia e horário: See you on Saturday at twelve!",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s141",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "You can’t at ten. Suggest twelve.",
+          "im": "n12_cant",
+          "id": "G01",
+          "alt": "Ana chateada e a etiqueta 10:00",
+          "o": [
+            "Sorry, I can’t at ten. Can we meet at twelve instead?",
+            "Sorry, I can’t at ten. Can we meet instead at twelve?",
+            "Sorry, I no can at ten. We meet at twelve?"
+          ],
+          "a": 0,
+          "why": {
+            "1": "Instead vai no fim da frase.",
+            "2": "Use can’t e a pergunta com Can we…?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s142",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Kim wants a later time. What does she say?",
+          "im": "n12_later",
+          "id": "G02",
+          "alt": "Kim, um relógio e a etiqueta 12:00?",
+          "o": [
+            "Can we to meet later?",
+            "Can we meet at twelve instead?",
+            "We can meet at twelve instead?"
+          ],
+          "a": 1,
+          "why": {
+            "0": "Depois de can, sem to.",
+            "2": "Na pergunta, can vem primeiro: Can we…?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s143",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Your friend changes the time. It’s OK for you.",
+          "im": "n12_noprob",
+          "id": "G03",
+          "alt": "Ana feliz e um sinal de certo",
+          "o": ["No problem!", "Yes, problem.", "No, I can."],
+          "a": 0,
+          "why": {
+            "1": "Para dizer que está tudo bem: No problem!",
+            "2": "Para dizer que está tudo bem: No problem!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s144",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "The plan is ready. Say goodbye.",
+          "im": "n12_see",
+          "id": "G04",
+          "alt": "Ana e Kim acenando",
+          "o": [
+            "See you in Saturday!",
+            "See you on Saturday!",
+            "See you at Saturday!"
+          ],
+          "a": 1,
+          "why": {
+            "0": "Dia da semana com on.",
+            "2": "Dia da semana com on."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "Invite someone",
+      "eyebrow": "Your turn",
+      "instruction": "Write a message to a person in your life. Use the model.",
+      "model": {
+        "question": "Invite someone",
+        "model": [
+          "Hi! Are you {free} on Saturday?",
+          "Let’s {go to the park}.",
+          "How about {ten o’clock}?",
+          "See you {on Saturday}!"
+        ],
+        "alt": ""
+      }
+    },
+    {
+      "id": "s161",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "John is busy this week. Answer his friend.",
+        "model": ["Sorry, {I can’t on Friday}. How about Sunday?"],
+        "image": "c12_john",
+        "alt": "John chateado e um calendário com a etiqueta Busy!"
+      }
+    },
+    {
+      "id": "s162",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "Leticia can’t at three. What does she say?",
+        "model": ["Sorry, I can’t at three. {Can we meet at five instead}?"],
+        "image": "c12_leticia",
+        "alt": "Leticia, um relógio e a etiqueta 3:00 → 5:00"
+      }
+    },
+    {
+      "id": "s8",
+      "title": "Fill in the blanks",
+      "eyebrow": "Dialogue",
+      "instruction": "Fill in the blanks of the dialogue you heard. Then read it with your teacher.",
+      "dialogue": "practice"
+    },
+    {
+      "id": "s91",
+      "title": "Plans this week",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "What are your plans this weekend?",
+          "a": "On Saturday I go to the gym. On Sunday I have lunch with my family."
+        },
+        {
+          "q": "Are you free on Friday night?",
+          "a": "Yes, I am. / Sorry, I can’t. I work."
+        },
+        {
+          "q": "Invite your teacher to do something this week.",
+          "a": "Let’s… on… How about… o’clock?"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_o_calendar",
+          "en": "weekend",
+          "pt": "fim de semana"
+        },
+        {
+          "ic": "x_f_popcorn",
+          "en": "movies",
+          "pt": "cinema"
+        },
+        {
+          "ic": "x_r_gym",
+          "en": "gym",
+          "pt": "academia"
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "title": "A favourite place",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "What’s your favourite place in your city?",
+          "a": "My favourite place is a café near my house."
+        },
+        {
+          "q": "Who do you go there with?",
+          "a": "I go with my sister."
+        },
+        {
+          "q": "How do I get there from your house?",
+          "a": "Go straight and turn left. It’s next to…"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_pl_cafe",
+          "en": "café",
+          "pt": "café"
+        },
+        {
+          "ic": "x_pl_park",
+          "en": "park",
+          "pt": "parque"
+        },
+        {
+          "ic": "x_d_right",
+          "en": "turn right",
+          "pt": "vire à direita"
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "title": "A change",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Your teacher says: “Sorry, I can’t at seven.” Suggest another time.",
+          "a": "No problem! Can we meet at eight instead?"
+        },
+        {
+          "q": "Your teacher asks you to bring something. Answer.",
+          "a": "Of course! / Sorry, I can’t."
+        },
+        {
+          "q": "Repeat the final plan and say goodbye.",
+          "a": "See you on Saturday at eight at the café!"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_mt_sorry",
+          "en": "Sorry, I can’t.",
+          "pt": "não posso"
+        },
+        {
+          "ic": "x_o_clock",
+          "en": "instead",
+          "pt": "em vez disso"
+        },
+        {
+          "ic": "x_check",
+          "en": "No problem!",
+          "pt": "sem problema"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Role play: plan your Saturday",
+      "eyebrow": "Recycle",
+      "instruction": "Use everything from the module in a new situation.",
+      "role": {
+        "img": "scene_plan",
+        "alt": "Dois cartões. Saturday traz movies, 7:00 e café. Change! traz Sorry..., later? e How about...?",
+        "txt": "Planeje o sábado com a professora: atividade, dia, horário, lugar e um pedido. No meio da conversa, a professora tira o cartão de mudança. Resolva e feche o plano. Depois, troquem de papel.",
+        "ck": [
+          "Convide: Are you free on Saturday? Let’s…",
+          "Combine horário e lugar: How about…? Can we meet at…?",
+          "Faça um pedido: Can you bring…?",
+          "Resolva a mudança: Sorry, I can’t at… Can we meet at… instead?",
+          "Feche o plano: See you on… at…!"
+        ],
+        "sup": [
+          "Are you free on…?",
+          "Let’s…",
+          "How about…?",
+          "Can we meet at… instead?",
+          "No problem!",
+          "See you on…!"
+        ]
+      }
+    },
+    {
+      "id": "s122",
+      "title": "Quiz",
+      "eyebrow": "Homework",
+      "instruction": "Answer one quiz question now.",
+      "choices": [
+        {
+          "o": [
+            "Can we meet instead at five?",
+            "Can we meet at five instead?",
+            "We can meet at five instead?"
+          ],
+          "a": 1,
+          "why": {
+            "0": "Instead vai no fim da frase.",
+            "2": "Na pergunta, can vem primeiro: Can we…?"
+          },
+          "t": "Suggest a new time.",
+          "im": "n12_later",
+          "alt": "Kim, um relógio e a etiqueta 12:00?"
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "title": "Challenge",
+      "eyebrow": "Homework",
+      "instruction": "",
+      "script": {
+        "items": [
+          "Hi! Are you free on ___?",
+          "Let’s ___.",
+          "How about ___ o’clock?",
+          "Can you bring ___?",
+          "Sorry, I can’t at ___. Can we meet at ___ instead?",
+          "See you on ___!"
+        ],
+        "art": ["x_sparkles", "x_mic"]
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "D01.T1",
+      "who": "kim",
+      "g": "Oi, Ana! Você está livre no sábado? Vamos experimentar o café novo da Rua Augusta.",
+      "text": "Hi Ana! Are you free on Saturday? Let’s try the new café on Augusta Street."
+    },
+    {
+      "id": "D01.T2",
+      "who": "ana",
+      "g": "Ótima ideia! Que horas?",
+      "text": "Great idea! What time?"
+    },
+    {
+      "id": "D01.T3",
+      "who": "kim",
+      "g": "Que tal às dez horas?",
+      "text": "How about ten o’clock?"
+    },
+    {
+      "id": "D01.T4",
+      "who": "ana",
+      "g": "Desculpa, às dez não dá. Tenho aula. Podemos nos encontrar ao meio-dia?",
+      "text": "Sorry, I can’t at ten. I have a class. Can we meet at twelve?"
+    },
+    {
+      "id": "D01.T5",
+      "who": "kim",
+      "g": "Claro! Pode levar meu livro? Está na sua mesa.",
+      "text": "Sure! Can you bring my book? It’s on your desk."
+    },
+    {
+      "id": "D01.T6",
+      "who": "ana",
+      "g": "Claro. Onde fica o café?",
+      "text": "Of course. Where is the café?"
+    },
+    {
+      "id": "D01.T7",
+      "who": "kim",
+      "g": "Siga em frente e vire à direita no banco. Fica do lado da farmácia.",
+      "text": "Go straight and turn right at the bank. It’s next to the pharmacy."
+    },
+    {
+      "id": "D01.T8",
+      "who": "ana",
+      "g": "Perfeito! Até sábado ao meio-dia.",
+      "text": "Perfect! See you on Saturday at twelve."
+    }
+  ],
+  "gaps": {
+    "D01.T1": "Hi Ana! Are you free on Saturday? {1} try the new café on Augusta Street.",
+    "D01.T2": "Great idea! What time?",
+    "D01.T3": "{2} ten o’clock?",
+    "D01.T4": "Sorry, I {3} at ten. I have a class. Can we meet at twelve?",
+    "D01.T5": "Sure! Can you bring my book? It’s on your desk.",
+    "D01.T6": "Of course. Where is the café?",
+    "D01.T7": "Go straight and turn right at the bank. It’s next to the pharmacy.",
+    "D01.T8": "Perfect! See you {4} Saturday at twelve."
+  },
+  "bank": {
+    "1": {
+      "o": ["Let’s", "Can"],
+      "a": "Let’s"
+    },
+    "2": {
+      "o": ["How about", "How"],
+      "a": "How about"
+    },
+    "3": {
+      "o": ["can’t", "don’t"],
+      "a": "can’t"
+    },
+    "4": {
+      "o": ["on", "at"],
+      "a": "on"
+    }
+  },
+  "media": {
+    "x_check": {
+      "file": "check-mark.webp",
+      "alt": {
+        "s93": ""
+      }
+    },
+    "x_f_popcorn": {
+      "file": "x-f-popcorn.webp",
+      "alt": {
+        "s5": "Balde listrado cheio de pipoca.",
+        "s91": ""
+      }
+    },
+    "x_pl_park": {
+      "file": "x-pl-park.webp",
+      "alt": {
+        "s5": "Árvores verdes e um banco em uma área ao ar livre.",
+        "s92": ""
+      }
+    },
+    "x_r_gym": {
+      "file": "x-r-gym.webp",
+      "alt": {
+        "s5": "Pessoa erguendo um peso na academia.",
+        "s91": ""
+      }
+    },
+    "x_o_calendar": {
+      "file": "x-o-calendar.webp",
+      "alt": {
+        "s5": "Calendário de mesa sem data marcada.",
+        "s91": ""
+      }
+    },
+    "x_o_clock": {
+      "file": "x-o-clock.webp",
+      "alt": {
+        "s5": "Relógio com dois sinos no topo.",
+        "s6": "Relógio com dois sinos no topo.",
+        "s93": ""
+      }
+    },
+    "x_mt_think": {
+      "file": "x-mt-think.webp",
+      "alt": {
+        "s6": "Pessoa pensativa com a mão no queixo."
+      }
+    },
+    "x_mt_sorry": {
+      "file": "x-mt-sorry.webp",
+      "alt": {
+        "s6": "Pessoa com uma expressão de desculpa.",
+        "s93": ""
+      }
+    },
+    "x_d_right": {
+      "file": "x-d-right.webp",
+      "alt": {
+        "s6": "Seta apontando para a direita.",
+        "s92": ""
+      }
+    },
+    "x_d_left": {
+      "file": "x-d-left.webp",
+      "alt": {
+        "s6": "Seta apontando para a esquerda."
+      }
+    },
+    "x_mt_wave": {
+      "file": "x-mt-wave.webp",
+      "alt": {
+        "s6": "Mão aberta acenando."
+      }
+    },
+    "n12_invite": {
+      "file": "n12-invite.webp",
+      "alt": {
+        "s31": "Kim feliz, uma xícara de café e a etiqueta Saturday",
+        "s44": "Kim com uma xícara de café e a etiqueta Saturday."
+      }
+    },
+    "n12_time": {
+      "file": "n12-time.webp",
+      "alt": {
+        "s32": "Ana pensando e um relógio"
+      }
+    },
+    "n12_place": {
+      "file": "n12-place.webp",
+      "alt": {
+        "s33": "Leo, um mapa e uma árvore"
+      }
+    },
+    "n12_book": {
+      "file": "n12-book.webp",
+      "alt": {
+        "s34": "Kim e um livro vermelho"
+      }
+    },
+    "n12_cant": {
+      "file": "n12-cant.webp",
+      "alt": {
+        "s35": "Ana chateada e a etiqueta 10:00",
+        "s141": "Ana chateada e a etiqueta 10:00"
+      }
+    },
+    "n12_leo": {
+      "file": "n12-leo.webp",
+      "alt": {
+        "s41": "Leo com uma bola de futebol e a etiqueta Sunday, 9:00."
+      }
+    },
+    "n12_parents": {
+      "file": "n12-parents.webp",
+      "alt": {
+        "s42": "Os pais da Ana com um balde de pipoca e a etiqueta Friday, 8:00."
+      }
+    },
+    "n12_kim": {
+      "file": "n12-kim.webp",
+      "alt": {
+        "s43": "Kim com um peso de academia e a etiqueta Monday, 7:00."
+      }
+    },
+    "n12_later": {
+      "file": "n12-later.webp",
+      "alt": {
+        "s45": "Kim junto de um relógio e da etiqueta 12:00 com ponto de interrogação.",
+        "s142": "Kim, um relógio e a etiqueta 12:00?",
+        "s122": "Kim, um relógio e a etiqueta 12:00?"
+      }
+    },
+    "n12_noprob": {
+      "file": "n12-noprob.webp",
+      "alt": {
+        "s143": "Ana feliz e um sinal de certo"
+      }
+    },
+    "n12_see": {
+      "file": "n12-see.webp",
+      "alt": {
+        "s144": "Ana e Kim acenando"
+      }
+    },
+    "c12_john": {
+      "file": "c12-john.webp",
+      "alt": {
+        "s161": "John chateado e um calendário com a etiqueta Busy!"
+      }
+    },
+    "c12_leticia": {
+      "file": "c12-leticia.webp",
+      "alt": {
+        "s162": "Leticia, um relógio e a etiqueta 3:00 → 5:00"
+      }
+    },
+    "scene_plan": {
+      "file": "scene-plan.webp",
+      "alt": {
+        "s11": "Dois cartões. Saturday traz movies, 7:00 e café. Change! traz Sorry..., later? e How about...?"
+      }
+    },
+    "x_bulb": {
+      "file": "x-bulb.webp",
+      "alt": {}
+    },
+    "x_sparkles": {
+      "file": "x-sparkles.webp",
+      "alt": {}
+    },
+    "x_mic": {
+      "file": "x-mic.webp",
+      "alt": {}
+    }
+  }
+}
