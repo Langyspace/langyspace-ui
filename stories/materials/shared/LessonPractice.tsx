@@ -49,7 +49,12 @@ export function PronunciationPractice({
   pair,
   index,
   speech,
-}: SpeechProps & { pair: PronunciationPair; index: number }) {
+  useSpokenWord = false,
+}: SpeechProps & {
+  pair: PronunciationPair
+  index: number
+  useSpokenWord?: boolean
+}) {
   const seq = useRef(0)
   const [target, setTarget] = useState<number>(),
     [selected, setSelected] = useState<string>(),
@@ -57,6 +62,7 @@ export function PronunciationPractice({
     [score, setScore] = useState<
       { id: string; result: 'correct' | 'incorrect' }[]
     >([])
+  const wordAt = (i: number) => pair.c[i]?.[useSpokenWord ? 2 : 0] ?? ''
   return (
     <MinimalPairExercise
       mode="listen"
@@ -74,14 +80,12 @@ export function PronunciationPractice({
         setTarget(next)
         setSelected(undefined)
         setFeedback(undefined)
-        speech.speak([
-          { id: `pair-${index}-${next}`, text: pair.c[next]?.[0] ?? '' },
-        ])
+        speech.speak([{ id: `pair-${index}-${next}`, text: wordAt(next) }])
       }}
       onSelect={(id) => {
         if (target === undefined) {
           speech.speak([
-            { id: `pair-${index}-${id}`, text: pair.c[Number(id)]?.[0] ?? '' },
+            { id: `pair-${index}-${id}`, text: wordAt(Number(id)) },
           ])
           return
         }
@@ -100,7 +104,12 @@ export function CorrectionPractice({
   items,
   speech,
   ownInstruction,
-}: SpeechProps & { items: readonly CorrectionItem[]; ownInstruction: string }) {
+  revealAnswers = false,
+}: SpeechProps & {
+  items: readonly CorrectionItem[]
+  ownInstruction: string
+  revealAnswers?: boolean
+}) {
   const [done, setDone] = useState<string[]>([]),
     [bad, setBad] = useState<Record<string, string>>({}),
     [own, setOwn] = useState(false)
@@ -112,6 +121,7 @@ export function CorrectionPractice({
           <S.Correction key={r.id}>
             <S.Number>{complete ? '✓' : i + 1}</S.Number>
             <div>
+              {r.ctx ? <S.Hint>🚕 {r.ctx}</S.Hint> : null}
               {complete && r.a ? (
                 <>
                   <s>{r.s}</s>
@@ -153,6 +163,9 @@ export function CorrectionPractice({
                 ))}
               </S.Row>
             )}
+            {revealAnswers ? (
+              <AnswerDisclosure question={r.s} answer={r.a ?? r.s} />
+            ) : null}
             {!complete && bad[r.id] ? (
               <QuizFeedback tone="wrong">Tente novamente.</QuizFeedback>
             ) : null}

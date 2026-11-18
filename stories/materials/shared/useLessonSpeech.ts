@@ -30,7 +30,7 @@ export function useLessonSpeech() {
         }
         const utterance = new SpeechSynthesisUtterance(line.text)
         utterance.lang = 'en-US'
-        utterance.rate = 0.92
+        utterance.rate = line.rate ?? 0.92
         const voices = window.speechSynthesis
           .getVoices()
           .filter((voice) => voice.lang === 'en-US')
@@ -39,7 +39,15 @@ export function useLessonSpeech() {
             (line.speaker === 'kim' ? 1 : line.speaker === 'leo' ? 2 : 0) %
               Math.max(1, voices.length)
           ]
-        if (voice) utterance.voice = voice
+        const officer =
+          line.speaker === 'officer'
+            ? voices.find((option) =>
+                /\b(David|Guy|Daniel|Alex|Fred|Tom|Male)\b/i.test(option.name),
+              )
+            : undefined
+        const selectedVoice = officer ?? voice
+        if (selectedVoice) utterance.voice = selectedVoice
+        if (line.speaker === 'officer') utterance.pitch = 0.86
         utterance.onstart = () => {
           if (current === version.current) setPlayingId(line.id)
         }

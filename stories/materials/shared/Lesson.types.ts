@@ -44,6 +44,7 @@ export interface CorrectionItem {
   s: string
   a?: string
   why: string
+  ctx?: string
   ok?: boolean
 }
 
