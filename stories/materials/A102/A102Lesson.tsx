@@ -193,7 +193,7 @@ export function A102Lesson({ initialPageId }: LessonProps) {
                   <LessonIntro
                     level="A1.02"
                     lesson="Lesson 2"
-                    before="Your name"
+                    before="Your name "
                     accent="and number"
                     goal="Dizer, soletrar e confirmar os seus dados e os das pessoas da sua vida: nome, sobrenome e telefone."
                     compact

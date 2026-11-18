@@ -67,6 +67,7 @@ export interface DialogueProps extends SpeechProps {
 }
 
 export interface RoleProps {
+  showDescription?: boolean
   role: CatalogRole
   image: ImageResolver
 }

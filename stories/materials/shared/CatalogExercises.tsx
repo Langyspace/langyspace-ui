@@ -230,7 +230,11 @@ export function CatalogDialogue({
   )
 }
 
-export function CatalogRolePlay({ role, image }: RoleProps) {
+export function CatalogRolePlay({
+  role,
+  image,
+  showDescription = false,
+}: RoleProps) {
   const [support, setSupport] = useState(false)
   const [completed, setCompleted] = useState<string[]>([])
   return (
@@ -240,7 +244,7 @@ export function CatalogRolePlay({ role, image }: RoleProps) {
       situation={
         <S.Stack>
           {role.txt}
-          <S.Hint>{role.alt}</S.Hint>
+          {showDescription ? <S.Hint>{role.alt}</S.Hint> : null}
         </S.Stack>
       }
       image={image(role.img, role.alt)}

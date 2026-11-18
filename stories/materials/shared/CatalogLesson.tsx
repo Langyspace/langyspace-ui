@@ -119,7 +119,7 @@ export function CatalogLesson({
                     <LessonIntro
                       level={data.code}
                       lesson={'Lesson ' + data.number}
-                      before={data.before}
+                      before={data.before + ' '}
                       accent={data.accent}
                       goal={data.goal}
                       compact
@@ -228,7 +228,11 @@ export function CatalogLesson({
                     </S.Row>
                   ) : null}
                   {p.role ? (
-                    <CatalogRolePlay role={p.role} image={image} />
+                    <CatalogRolePlay
+                      role={p.role}
+                      image={image}
+                      showDescription
+                    />
                   ) : null}
                   {p.script ? (
                     <S.Stack>
