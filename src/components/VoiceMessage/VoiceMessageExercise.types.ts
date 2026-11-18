@@ -34,6 +34,8 @@ export interface VoiceMessageLabels {
   replay: string
   speed: string
   transcript: string
+  showTranscript?: string
+  hideTranscript?: string
   transcriptHidden: string
   audioUnavailable: string
   audioError: string
@@ -54,6 +56,8 @@ export interface VoiceMessageExerciseProps extends Omit<
   /** Pause when leaving a slide, without losing its transcript/listening history. */
   active?: boolean
   questions: readonly VoiceMessageQuestion[]
+  /** Optional visible heading above the questions; the accessible group name remains in labels. */
+  questionHeading?: ReactNode
   onAnswer: (questionId: string, choiceId: string) => void
   /** Optional instructions or a spoken-response prompt, owned by the lesson. */
   footer?: ReactNode
@@ -62,4 +66,6 @@ export interface VoiceMessageExerciseProps extends Omit<
   labels?: Partial<VoiceMessageLabels>
   /** Optional follow-up replay control after a completed first pass; disappears on the second. */
   replayActionLabel?: string
+  /** Keep automatic second-listen behavior, or let the learner reveal text after the consumer-enabled follow-up replay. */
+  transcriptReveal?: 'second-listen' | 'manual-after-replay'
 }

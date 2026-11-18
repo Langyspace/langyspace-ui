@@ -90,3 +90,57 @@ Historical evidence was temporarily restored, but disk pressure recurred below20
 checkout. This feature worktree again omits historical.github/evidence folders only, retaining current
 material-dark/material-fidelity proof. Source hashes were verified unchanged. All old evidence stays
 in Git/GitHub; canonical checkouts remain untouched. Do not expand it while disk remains constrained.
+
+##18November · recover Sofia GitHub delivery and adopt completed A1 lessons
+
+Direct rendered impact: four existing Sofia compositions (A1.03/04/05/06:17/16/16/20 screens),59
+existing scene images and A1 interface refinements are adopted from PR43, author SofiaTresse,
+head0a3fea8046eb9c73e99612cb67abb26fe551258a. Source commits76c471cb/3557e03f/0a3fea8 and their
+provenance/evidence are preserved; commit author is Codex, so PR ownership is the attribution
+proof. No regenerated images or rewritten curricular content. PR43 and its feature branch stay intact.
+The integration continues existing PR45/Teacher154, with no package publication, target merge or deploy.
+
+The orchestrator granted exclusive INT-SOFIA-ADOPT-01 and INT-A201-AUDIO-01 file reservations.
+690 exact source/evidence files were imported; adapters retain the current always-dark material
+interiors, lateral public SlideNotes, per-material cursor and Notes persistence/focus, and the
+animated controlled-scroll correction. The source modal Notes and light selector are deliberately
+not reintroduced. Exercise group progress is retained. Do not wholesale overwrite shared styles:
+PR43 lacks some later PR45 dark-theme and header fixes. The82-entry catalog remains a Storybook
+fixture; portable delivery receives only actual implemented lessons. Its historical A2 title does
+not replace the current approved Porto lesson.
+
+The completed A2 Kim MP3 from AUD-A201-KIM-01 is reused with exact transcript match, duration15.18585s,
+SHA1bb0cf895fb5c62b31726f5f9e6bffe2975f25d3a96ee33d674b036522eb92b5. Voice Sarah Explains, ElevenLabs
+multilingual_v2, source Claude version1795033410-432c. No additional TTS call. Notes and media do not
+imply Student homework provisioning. New compositions bind authored homework links to the validated
+consumer origin. Previous69-page/static illustration proofs are reused for unchanged content/media;
+current adaptations require focused type/lint and runtime checks, plus paired affected screenshots.
+
+Next: complete adapters/router, verify all new inventories, Notes/cursor/default-motion progress,
+Pet notes locations, environment-bound homework and native A2 playback/transcription. Stage one
+coherent source commit; defer consumer artifact/publication until the full Frontend handoff. Frontend
+already has17 reviewed source screens and49 MP3s; the later full port must not stop at a pilot.
+
+
+## Complete Sofia and Frontend adoption,18 November
+
+Reuse PR43 by SofiaTresse at0a3fea8046eb9c73e99612cb67abb26fe551258a (commits76c471c,3557e03,
+0a3fea8), without rewriting that branch.690 imported source/evidence files are listed with their
+original SHA256s in sofia-import-manifest.json. Integration reconciles imports/private adapters,
+retains current forced-dark theme, lateral free Notes and focus/cursor/native scrolling, and binds
+homework to the consumer environment. New A1.03/04/05/06 have17/16/16/20 screens; the59 approved
+scenes include the15 A1.01 refinements.200 paired current-adapter views and11 functional checks
+passed; A101's former Notes popup is captured as the real before state. Historical Sofia evidence
+is retained as historical source evidence, not recaptured or represented as current remote proof.
+
+A201 adopts the exact verified15.18585s Kim ElevenLabs clip; full native first pass/second transcript
+and departure pause passed. The complete17-screen B1 Tech Frontend extra reuses49 verified MP3s and
+14 images from final original1795037606-0c26/8ab03020.68 current default pairs and20 state pairs
+passed. Shared VoiceMessage adds optional manual-after-replay text visibility and an optional
+questions heading, keeping automatic second-listen/default rendering unchanged.15 focused tests,
+typecheck/scoped lint and the reviewed one-declaration API snapshot passed. See frontend-material.
+
+Review sheets arrange4 unedited captures per side; originals and provenance remain available.
+They retain83 earlier valid pairs and288 new source/current pairs within GitHub's PR body limit.
+No package publication, merge, new staging release or production is authorized in this round.
+Student-specific Frontend activity provisioning remains separate; links resolve to supported tabs.

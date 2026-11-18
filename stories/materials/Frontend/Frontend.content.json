@@ -1,0 +1,490 @@
+{
+  "vocabulary": [
+    {
+      "ic": "v_bt",
+      "en": "a button",
+      "pt": "botão",
+      "hint": "a b_____",
+      "id": "V.0"
+    },
+    {
+      "ic": "v_fm",
+      "en": "a form",
+      "pt": "formulário",
+      "hint": "a f___",
+      "id": "V.1"
+    },
+    {
+      "ic": "v_mn",
+      "en": "a menu",
+      "pt": "menu (o ≡)",
+      "hint": "a m___",
+      "id": "V.2"
+    },
+    {
+      "ic": "v_sb",
+      "en": "a search bar",
+      "pt": "barra de busca",
+      "hint": "a s_____ b__",
+      "id": "V.3"
+    },
+    {
+      "ic": "v_pp",
+      "en": "a pop-up",
+      "pt": "janela que abre por cima",
+      "hint": "a p__-__",
+      "id": "V.4"
+    },
+    {
+      "ic": "v_cb",
+      "en": "a checkbox",
+      "pt": "caixa de marcar",
+      "hint": "a c_______",
+      "id": "V.5"
+    },
+    {
+      "ic": "v_dd",
+      "en": "a dropdown",
+      "pt": "lista que abre",
+      "hint": "a d_______",
+      "id": "V.6"
+    }
+  ],
+  "warmUps": [
+    {
+      "cap": "Kim’s test: the shop page on desktop and on mobile.",
+      "pic": "wu_test",
+      "q": "What’s the problem?",
+      "tr": "What’s the problem? = Qual é o problema?",
+      "id": "W.1",
+      "a": 1,
+      "o": [
+        "The button doesn’t show on desktop.",
+        "The button doesn’t show on mobile.",
+        "The search bar doesn’t show on mobile."
+      ],
+      "why": {
+        "0": "Olhe o computador: o botão vermelho está lá (✓). O ✗ é no celular.",
+        "2": "Olhe o celular: a barra de busca está lá. O que falta é o botão vermelho."
+      },
+      "now": "Your teacher asks: What’s a problem you’ve had on mobile? Say: The … doesn’t show (or doesn’t open) on mobile."
+    },
+    {
+      "cap": "It’s the morning stand-up. This is Kim’s task.",
+      "task": true,
+      "q": "What does Kim say?",
+      "hide": true,
+      "tr": "What does Kim say? = O que a Kim diz? · stand-up = a reunião rápida da equipe, de manhã · deploy = publicar o código",
+      "id": "W.2",
+      "a": 0,
+      "o": [
+        "I’ve fixed the menu, but I haven’t deployed it yet.",
+        "I haven’t fixed the menu yet.",
+        "I’ve fixed the menu and deployed it."
+      ],
+      "why": {
+        "1": "Olhe o cartão: Fix tem ✓. A Kim já consertou o menu.",
+        "2": "Olhe o cartão: Deploy tem ✗. Ela ainda não publicou."
+      },
+      "now": "Your teacher asks: What have you done this week? Say one thing you’ve done and one you haven’t done yet."
+    },
+    {
+      "ak": true,
+      "q": "What does Kim answer?",
+      "tr": "How long have you worked with …? = Há quanto tempo você trabalha com …?",
+      "id": "W.3",
+      "a": 0,
+      "o": [
+        "For three years.",
+        "Three years ago.",
+        "In three years."
+      ],
+      "why": {
+        "1": "Three years ago = há três anos, uma vez, e acabou. Olhe o perfil: a Kim ainda usa JavaScript.",
+        "2": "In three years = daqui a três anos. A Kim já trabalha com JavaScript."
+      },
+      "now": "Answer about you. Then ask your teacher: How long have you worked as a teacher?",
+      "sub": "No tech job yet? How long have you studied …?"
+    }
+  ],
+  "pronunciation": [
+    {
+      "t": "I fixed it or I’ll fix it?",
+      "c": [
+        [
+          "I fixed it.",
+          "“eu consertei”"
+        ],
+        [
+          "I’ll fix it.",
+          "“eu vou consertar”"
+        ]
+      ],
+      "tip": "No I’ll, o som é “ÁIL”, com o L no fim, e o verbo fica sem -ed: fix. No fixed, o fim é um T rápido: “FIKST”."
+    },
+    {
+      "t": "Thirteen or thirty?",
+      "c": [
+        [
+          "thirteen pixels",
+          "“treze pixels”"
+        ],
+        [
+          "thirty pixels",
+          "“trinta pixels”"
+        ]
+      ],
+      "tip": "thirTEEN: a força fica no fim, “thâr-TÍIN”. THIRty: a força fica no começo, “THÂR-di”."
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D.1",
+      "who": "kim",
+      "g": "Ana, você tem um minuto? Tem um bug antes do lançamento. O botão “Buy now” não aparece no celular."
+    },
+    {
+      "id": "D.2",
+      "who": "ana",
+      "g": "Ah, não! Em quais celulares?"
+    },
+    {
+      "id": "D.3",
+      "who": "kim",
+      "g": "Nas telas pequenas. Quando o pop-up abre, ele cobre o botão. Eu testei em três celulares, e quebra em todos."
+    },
+    {
+      "id": "D.4",
+      "who": "ana",
+      "g": "Hum. E se a gente mudar o botão para cima das fotos?"
+    },
+    {
+      "id": "D.5",
+      "who": "kim",
+      "g": "Boa ideia, mas o design vai mudar. Você pode conferir hoje? O lançamento é na sexta."
+    },
+    {
+      "id": "D.6",
+      "who": "ana",
+      "g": "Claro. Eu te mando uma versão nova hoje à tarde. Você já falou com o Leo?"
+    },
+    {
+      "id": "D.7",
+      "who": "kim",
+      "g": "Ainda não. Eu escrevi para ele, mas ele ainda não respondeu. Ele está numa reunião."
+    },
+    {
+      "id": "D.8",
+      "who": "ana",
+      "g": "Tá. E o leitor de tela? Semana passada, ele não lia o botão."
+    },
+    {
+      "id": "D.9",
+      "who": "kim",
+      "g": "Isso eu já consertei. Agora ele lê “Buy now”. Eu testei ontem de olhos fechados!"
+    },
+    {
+      "id": "D.10",
+      "who": "ana",
+      "g": "Ha! Perfeito. Vamos consertar a versão do celular, e aí a gente pode publicar."
+    }
+  ],
+  "dialogueQuestions": [
+    {
+      "q": "What’s the problem with the button?",
+      "a": "It doesn’t show on small screens. When the pop-up opens, it covers the button."
+    },
+    {
+      "q": "What does Ana suggest?",
+      "a": "To move the button above the pictures: “What if we move the button above the pictures?”"
+    },
+    {
+      "q": "Has Kim talked to Leo?",
+      "a": "Not yet. She’s written to him, but he hasn’t answered yet."
+    },
+    {
+      "q": "What has Kim already fixed?",
+      "a": "The screen reader. Now it reads “Buy now”."
+    }
+  ],
+  "grammar": [
+    [
+      "O que já está feito (vale agora)",
+      "I’ve + particípio",
+      "I’ve fixed the menu. I’ve tested it on three phones.",
+      "eu (já) consertei · eu testei",
+      "G.0"
+    ],
+    [
+      "O que ainda não",
+      "haven’t … yet",
+      "I haven’t deployed it yet.",
+      "eu ainda não publiquei",
+      "G.1"
+    ],
+    [
+      "De um ponto até hoje",
+      "I’ve … for · since",
+      "I’ve worked with React for two years. · I’ve worked here since 2024.",
+      "trabalho com React há dois anos · trabalho aqui desde 2024",
+      "G.2"
+    ],
+    [
+      "Uma vez, com quando",
+      "passado: built, fixed",
+      "I built a shop page last year. I fixed it yesterday.",
+      "fiz no ano passado · consertei ontem",
+      "G.3"
+    ]
+  ],
+  "listeningQuestions": [
+    {
+      "q": "Leo has looked at the new version on his computer.",
+      "o": [
+        "Yes",
+        "No"
+      ],
+      "a": 1,
+      "say": "No. On his phone."
+    },
+    {
+      "q": "Leo wants a bigger button on mobile.",
+      "o": [
+        "Yes",
+        "No"
+      ],
+      "a": 0,
+      "say": "Yes. Forty-four pixels, at least."
+    },
+    {
+      "q": "Kim can deploy today.",
+      "o": [
+        "Yes",
+        "No"
+      ],
+      "a": 1,
+      "say": "No. Tomorrow morning, at ten."
+    },
+    {
+      "q": "Everything is ready for the launch. How do you know?",
+      "g": "ready = pronto",
+      "o": [
+        "Yes",
+        "No"
+      ],
+      "a": 1,
+      "say": "No. The button is too small, and the tests haven’t finished yet."
+    }
+  ],
+  "corrections": [
+    {
+      "s": "I work with React since 2023.",
+      "a": "I’ve worked with React since 2023.",
+      "why": "Desde 2023 até hoje: I’ve worked … since.",
+      "id": "X.1"
+    },
+    {
+      "s": "I’ve fixed the bug yesterday.",
+      "a": "I fixed the bug yesterday.",
+      "why": "Com data (yesterday, last week), use o passado, sem I’ve.",
+      "id": "X.2"
+    },
+    {
+      "s": "I haven’t deployed it yet.",
+      "ok": true,
+      "why": "O que ainda não aconteceu: haven’t … yet.",
+      "id": "X.3"
+    },
+    {
+      "s": "Could you to check the form?",
+      "a": "Could you check the form?",
+      "why": "Depois de could you, o verbo vem direto, sem to.",
+      "id": "X.4"
+    },
+    {
+      "s": "Tomorrow, we’ll realize the tests.",
+      "a": "Tomorrow, we’ll run the tests.",
+      "why": "Realize é perceber. “Realizar os testes” é run the tests.",
+      "id": "X.5"
+    }
+  ],
+  "interview": [
+    "Hi, thanks for joining! Can you hear me OK? Great. So, tell me a little about yourself.",
+    "What have you built? Tell me about a project you’re proud of.",
+    "Interesting! What was the hardest part?",
+    "A lot of our users are on their phones. How do you make a page work on mobile?",
+    "And how do you make a page accessible? For example, for people who use a screen reader.",
+    "Tell me about a bug you fixed. What happened, and how did you fix it?",
+    "In our team, we review each other’s code. How do you deal with feedback in a code review?",
+    "Great. That’s all from me. Do you have any questions for us?"
+  ],
+  "steps": [
+    "Answer Jun’s questions, with an example from your work.",
+    "Jun’s surprise: listen to your teacher and say what you’d do.",
+    "Ask Jun two questions about the job.",
+    "Swap: you’re Jun. Ask your teacher three questions from the interview."
+  ],
+  "support": [
+    "I’m a frontend developer. / I’m learning frontend.",
+    "I’ve worked with … for …",
+    "I’ve built …",
+    "I’m proud of it because …",
+    "I’m comfortable with …",
+    "I’m still learning …",
+    "First, I test it on …",
+    "The … didn’t show on …, so I …",
+    "Thanks for the feedback. Could you explain …?",
+    "That’s a good question. Let me think.",
+    "What’s the team like?"
+  ],
+  "noteFields": [
+    "Experience",
+    "Project",
+    "Bug",
+    "Her questions"
+  ],
+  "homework": [
+    [
+      "Flashcards · Frontend",
+      "The seven parts of a page and fourteen phrases from today · 6 min · Today, in 2 days and in 6 days.",
+      "https://student.langy.space/licoes?tab=flashcards&deck=deck-tema-frontend",
+      "6 min",
+      "v_bt"
+    ],
+    [
+      "Quiz · I’ve fixed it or I fixed it?",
+      "10 questions · 4 min.",
+      "https://student.langy.space/licoes?tab=quiz&item=tema-frontend",
+      "4 min",
+      "x_bulb"
+    ],
+    [
+      "Shadowing · A bug before the launch",
+      "Speak with Kim: lines 1, 3, 5, 7 and 9 · 5 min.",
+      "https://student.langy.space/licoes?tab=shadowing&item=tema-frontend",
+      "5 min",
+      "x_speech"
+    ]
+  ],
+  "order": [
+    1,
+    2,
+    31,
+    32,
+    33,
+    4,
+    51,
+    52,
+    6,
+    62,
+    61,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "text": {
+    "V.0": "a button",
+    "V.1": "a form",
+    "V.2": "a menu",
+    "V.3": "a search bar",
+    "V.4": "a pop-up",
+    "V.5": "a checkbox",
+    "V.6": "a dropdown",
+    "W.1": "The button doesn’t show on mobile.",
+    "W.2": "I’ve fixed the menu, but I haven’t deployed it yet.",
+    "W.3": "For three years.",
+    "P5.00a": "I fixed it.",
+    "P5.00k": "I fixed it.",
+    "P5.01a": "I’ll fix it.",
+    "P5.01k": "I’ll fix it.",
+    "P5.10a": "thirteen pixels.",
+    "P5.10k": "thirteen pixels.",
+    "P5.11a": "thirty pixels.",
+    "P5.11k": "thirty pixels.",
+    "D.1": "Ana, do you have a minute? There’s a bug before the launch. The “Buy now” button doesn’t show on mobile.",
+    "D.2": "Oh no! On which phones?",
+    "D.3": "On small screens. When the pop-up opens, it covers the button. I’ve tested it on three phones, and it breaks on all of them.",
+    "D.4": "Hmm. What if we move the button above the pictures?",
+    "D.5": "Good idea, but the design will change. Could you check it today? The launch is on Friday.",
+    "D.6": "Sure. I’ll send you a new version this afternoon. Have you talked to Leo?",
+    "D.7": "Not yet. I’ve written to him, but he hasn’t answered yet. He’s in a meeting.",
+    "D.8": "OK. And what about the screen reader? Last week, it didn’t read the button.",
+    "D.9": "I’ve already fixed that. Now it reads “Buy now”. I tested it yesterday with my eyes closed!",
+    "D.10": "Ha! Perfect. Let’s fix the mobile version, and then we can deploy.",
+    "G.0": "I’ve fixed the menu. I’ve tested it on three phones.",
+    "G.1": "I haven’t deployed it yet.",
+    "G.2": "I’ve worked with React for two years. I’ve worked here since 2024.",
+    "G.3": "I built a shop page last year. I fixed it yesterday.",
+    "Y8.1": "Hi! What are you working on today?",
+    "Y8.3": "Nice. Any problems?",
+    "Y8.5": "Oh no! What have you done?",
+    "L.9": "Hi, Kim! It’s Leo. Thanks for your message. I’ve looked at the new version on my phone, and it looks great. Just one thing before we deploy: the “Buy now” button is too small on mobile. Could you make it bigger? Forty-four pixels, at least. And please don’t deploy today. The tests haven’t finished yet. Let’s deploy tomorrow morning, at ten. Thanks!",
+    "X.1": "I’ve worked with React since 2023.",
+    "X.2": "I fixed the bug yesterday.",
+    "X.3": "I haven’t deployed it yet.",
+    "X.4": "Could you check the form?",
+    "X.5": "Tomorrow, we’ll run the tests.",
+    "J.1": "Hi, thanks for joining! Can you hear me OK? Great. So, tell me a little about yourself.",
+    "J.2": "What have you built? Tell me about a project you’re proud of.",
+    "J.3": "Interesting! What was the hardest part?",
+    "J.4": "A lot of our users are on their phones. How do you make a page work on mobile?",
+    "J.5": "And how do you make a page accessible? For example, for people who use a screen reader.",
+    "J.6": "Tell me about a bug you fixed. What happened, and how did you fix it?",
+    "J.7": "In our team, we review each other’s code. How do you deal with feedback in a code review?",
+    "J.8": "Great. That’s all from me. Do you have any questions for us?"
+  },
+  "speakers": {
+    "V.0": "kim",
+    "V.1": "kim",
+    "V.2": "kim",
+    "V.3": "kim",
+    "V.4": "kim",
+    "V.5": "kim",
+    "V.6": "kim",
+    "W.1": "kim",
+    "W.2": "kim",
+    "W.3": "kim",
+    "P5.00a": "ana",
+    "P5.00k": "kim",
+    "P5.01a": "ana",
+    "P5.01k": "kim",
+    "P5.10a": "ana",
+    "P5.10k": "kim",
+    "P5.11a": "ana",
+    "P5.11k": "kim",
+    "D.1": "kim",
+    "D.2": "ana",
+    "D.3": "kim",
+    "D.4": "ana",
+    "D.5": "kim",
+    "D.6": "ana",
+    "D.7": "kim",
+    "D.8": "ana",
+    "D.9": "kim",
+    "D.10": "ana",
+    "G.0": "kim",
+    "G.1": "kim",
+    "G.2": "kim",
+    "G.3": "kim",
+    "Y8.1": "ana",
+    "Y8.3": "ana",
+    "Y8.5": "ana",
+    "L.9": "leo",
+    "X.1": "kim",
+    "X.2": "kim",
+    "X.3": "kim",
+    "X.4": "kim",
+    "X.5": "kim",
+    "J.1": "jun",
+    "J.2": "jun",
+    "J.3": "jun",
+    "J.4": "jun",
+    "J.5": "jun",
+    "J.6": "jun",
+    "J.7": "jun",
+    "J.8": "jun"
+  }
+}

@@ -1,5 +1,6 @@
 import { bindStudentDestinations } from '../shared/studentDestinations'
-import type { HomeworkDestinationProps } from '../shared/Lesson.types'
+import { AnswerDisclosure } from '../shared/AnswerDisclosure'
+import { PromptExercise } from '../shared/LessonExercises'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
@@ -108,14 +109,13 @@ export function VocabularySection({
     </Styled.Stack>
   )
 }
-export function WarmUpSection({ item, index, speak }: WarmUpSectionProps) {
+export function WarmUpSection({ item, speak }: WarmUpSectionProps) {
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(item.a)
   const last = attempts.at(-1)
   return (
     <ExercisePanel
       title={item.t}
-      counter={`${index + 1} / 6`}
       media={
         <Styled.WarmScene>
           <Styled.WarmImage
@@ -150,6 +150,7 @@ export function WarmUpSection({ item, index, speak }: WarmUpSectionProps) {
           {option}
         </QuizOption>
       ))}
+      <AnswerDisclosure question={item.t} answer={item.o[item.a]} />
       <Styled.Feedback role="status">
         {last === undefined ? '' : done ? 'Correto!' : item.why[String(last)]}
       </Styled.Feedback>
@@ -163,85 +164,91 @@ export function DialogueSection({
 }: DialogueSectionProps) {
   const [translated, setTranslated] = useState<string[]>([])
   const [revealed, setRevealed] = useState<number[]>([])
-  return (
-    <LearningDialogue
-      playingId={playingId}
-      translatedIds={translated}
-      onTranslate={
-        gaps
-          ? undefined
-          : (id) =>
-              setTranslated((old) =>
-                old.includes(id)
-                  ? old.filter((value) => value !== id)
-                  : [...old, id],
-              )
-      }
-      onPlay={
-        gaps
-          ? undefined
-          : (id) => {
-              const line = lesson.RT.find((line) => line.id === id)!
-              speak([{ id, text: line.en, speaker: line.who }])
-            }
-      }
-      lines={lesson.RT.map((line, index) => ({
-        id: line.id,
-        speaker: line.who === 'kim' ? 'Kim' : 'Ana',
-        side: line.who === 'kim' ? 'start' : 'end',
-        avatarUrl: image(`bust_${line.who}`),
-        translation: line.g,
-        audioLabel: `Ouvir: ${line.en}`,
-        content: gaps ? (
-          <span>
-            {itemAt(gapTexts, index)
-              .split(/(\{\d\})/)
-              .map((part) =>
-                part.startsWith('{') ? (
-                  <Styled.Gap
-                    key={part}
-                    size="sm"
-                    variant={revealed.includes(index) ? 'success' : 'tertiary'}
-                    aria-label={`Lacuna ${index + 1}: ${revealed.includes(index) ? 'esconder' : 'mostrar'} a resposta`}
-                    aria-expanded={revealed.includes(index)}
-                    onClick={() =>
-                      setRevealed((old) =>
-                        old.includes(index)
-                          ? old.filter((n) => n !== index)
-                          : [...old, index],
-                      )
-                    }
-                  >
-                    {revealed.includes(index) ? (
-                      gapAnswers[index]
-                    ) : (
-                      <span aria-hidden="true">____</span>
-                    )}
-                  </Styled.Gap>
-                ) : (
-                  part
-                ),
-              )}
-          </span>
-        ) : (
-          line.en
-        ),
-      }))}
-    />
-  )
-}
-export function DialogueQuestions() {
+  const allTranslated = translated.length === lesson.RT.length
   return (
     <Styled.Stack>
-      {questions.map((question, index) => (
-        <Styled.DialogueQuestion key={question}>
-          <Styled.Number>{index + 1}</Styled.Number>
-          <strong>{question}</strong>
-        </Styled.DialogueQuestion>
-      ))}
+      <LearningDialogue
+        playingId={playingId}
+        translatedIds={translated}
+        onTranslate={
+          gaps
+            ? undefined
+            : (id) =>
+                setTranslated((old) =>
+                  old.includes(id)
+                    ? old.filter((value) => value !== id)
+                    : [...old, id],
+                )
+        }
+        onPlay={
+          gaps
+            ? undefined
+            : (id) => {
+                const line = lesson.RT.find((line) => line.id === id)!
+                speak([{ id, text: line.en, speaker: line.who }])
+              }
+        }
+        lines={lesson.RT.map((line, index) => ({
+          id: line.id,
+          speaker: line.who === 'kim' ? 'Kim' : 'Ana',
+          side: line.who === 'kim' ? 'start' : 'end',
+          avatarUrl: image(`bust_${line.who}`),
+          translation: line.g,
+          audioLabel: `Ouvir: ${line.en}`,
+          content: gaps ? (
+            <span>
+              {itemAt(gapTexts, index)
+                .split(/(\{\d\})/)
+                .map((part) =>
+                  part.startsWith('{') ? (
+                    <Styled.Gap
+                      key={part}
+                      size="sm"
+                      variant={
+                        revealed.includes(index) ? 'success' : 'tertiary'
+                      }
+                      aria-label={`Lacuna ${index + 1}: ${revealed.includes(index) ? 'esconder' : 'mostrar'} a resposta`}
+                      aria-expanded={revealed.includes(index)}
+                      onClick={() =>
+                        setRevealed((old) =>
+                          old.includes(index)
+                            ? old.filter((n) => n !== index)
+                            : [...old, index],
+                        )
+                      }
+                    >
+                      {revealed.includes(index) ? (
+                        gapAnswers[index]
+                      ) : (
+                        <span aria-hidden="true">____</span>
+                      )}
+                    </Styled.Gap>
+                  ) : (
+                    part
+                  ),
+                )}
+            </span>
+          ) : (
+            line.en
+          ),
+        }))}
+      />
+      <Styled.TranslationButton
+        variant="text"
+        aria-expanded={allTranslated}
+        onClick={() =>
+          setTranslated(allTranslated ? [] : lesson.RT.map((line) => line.id))
+        }
+      >
+        {allTranslated ? 'Ocultar tradução' : 'Ver em português'}
+      </Styled.TranslationButton>
     </Styled.Stack>
   )
 }
+export function DialogueQuestions() {
+  return <PromptExercise items={questions} />
+}
+
 export function TranslatedText({ text, translation }: TranslatedTextProps) {
   const [visible, setVisible] = useState(false)
   return (
@@ -487,10 +494,8 @@ export function ConversationSection() {
     </Styled.TalkGrid>
   )
 }
-export function HomeworkSection({
-  studentPortalOrigin,
-}: HomeworkDestinationProps = {}) {
-  const message = bindStudentDestinations(homeworkMessage, studentPortalOrigin)
+export function HomeworkSection({ studentPortalOrigin }: { studentPortalOrigin?: string }) {
+  const boundHomeworkMessage = bindStudentDestinations(homeworkMessage, studentPortalOrigin)
   const [copied, setCopied] = useState(false)
   const [fallback, setFallback] = useState(false)
   return (
@@ -513,7 +518,7 @@ export function HomeworkSection({
           onClick={() => {
             void (async () => {
               try {
-                await navigator.clipboard.writeText(message)
+                await navigator.clipboard.writeText(boundHomeworkMessage)
                 setCopied(true)
                 setFallback(false)
               } catch {
@@ -530,7 +535,7 @@ export function HomeworkSection({
           Copie os links abaixo.
           <Styled.CopyFallback
             readOnly
-            value={message}
+            value={boundHomeworkMessage}
             onFocus={(event) => event.currentTarget.select()}
           />
         </label>

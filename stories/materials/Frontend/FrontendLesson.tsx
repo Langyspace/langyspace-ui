@@ -1,0 +1,258 @@
+import { useRef, useState } from 'react'
+import { Button } from '../../../src/components/Button/Button'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
+import { LessonNotes } from '../shared/LessonNotes'
+import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
+import { LessonHomework } from '../shared/LessonHomework'
+import { useLessonPage } from '../shared/useLessonPage'
+import {
+  Vocabulary,
+  Questions,
+  WarmUp,
+  Pronunciation,
+  Corrections,
+} from './Frontend.practice'
+import { Dialogue, Comprehension, Grammar } from './Frontend.dialogue'
+import { YourVersion, Listening, Interview } from './Frontend.conversation'
+import { useFrontendAudio } from './useFrontendAudio'
+import {
+  order,
+  content,
+  image,
+  review,
+  yourWork,
+  homework,
+} from './Frontend.data'
+import type { FrontendLessonProps } from './Frontend.types'
+import * as S from './Frontend.styles'
+export function FrontendLesson({
+  initialPageId,
+  studentPortalOrigin,
+}: FrontendLessonProps) {
+  const [pageId, setPageId] = useLessonPage(
+      initialPageId,
+      'tema-frontend',
+      order,
+    ),
+    [notes, setNotes] = useState(false),
+    trigger = useRef<HTMLButtonElement>(null),
+    { audioRef, events, ...media } = useFrontendAudio()
+  const closeNotes = () => {
+    setNotes(false)
+    trigger.current?.focus()
+  }
+  const dialogueTool = (part?: number) => {
+    const ids = (
+      part === undefined
+        ? content.dialogue
+        : content.dialogue.slice(part * 5, part * 5 + 5)
+    ).map((line) => line.id)
+    const busy =
+      ids.includes(media.playingId ?? '') &&
+      (media.status === 'playing' || media.status === 'loading')
+    return (
+      <Button size="sm" variant="secondary" onClick={() => media.play(ids)}>
+        {busy ? 'Pause' : 'Listen to the dialogue'}
+      </Button>
+    )
+  }
+  const pages = order.map((id) => {
+    let title = '',
+      eyebrow = '',
+      instruction = '',
+      tools,
+      lead,
+      element
+    if (id === 's1') {
+      title = 'Your work'
+      eyebrow = 'Review'
+      instruction = 'Answer your teacher’s questions. Then ask question 4.'
+      lead = (
+        <S.Introduction>
+          <S.Eyebrow>
+            <b>B1</b>Tech · Special lesson
+          </S.Eyebrow>
+          <S.FrontendHero>
+            Tech · <em>Frontend</em>
+          </S.FrontendHero>
+          <S.Goal>
+            <span aria-hidden="true">✦</span>
+            <p>
+              <b>Goal</b>Explain a bug, say what you’ve done, and answer
+              interview questions about your work.
+            </p>
+          </S.Goal>
+        </S.Introduction>
+      )
+      element = <Questions items={review} />
+    } else if (id === 's2') {
+      title = 'Parts of a page'
+      eyebrow = 'Vocabulary'
+      instruction =
+        'The things you talk about in a meeting. Look at the picture and say the word.'
+      element = <Vocabulary media={media} />
+    } else if (['s31', 's32', 's33'].includes(id)) {
+      title = 'Choose the correct answer.'
+      eyebrow = 'Warm up'
+      instruction = 'Read the question and choose. Then it’s your turn.'
+      element = <WarmUp index={Number(id.slice(2)) - 1} media={media} />
+    } else if (id === 's4') {
+      title = 'Your work with the web'
+      eyebrow = 'Now you'
+      instruction = 'Answer about your work or your studies. You can invent.'
+      element = <Questions items={yourWork} />
+    } else if (id === 's51' || id === 's52') {
+      const index = id === 's51' ? 0 : 1
+      title = content.pronunciation[index]!.t
+      eyebrow = 'Pronunciation'
+      instruction = 'Listen. Which one did you hear? Say it, then click it.'
+      element = <Pronunciation index={index} media={media} />
+    } else if (id === 's6' || id === 's62') {
+      const index = id === 's6' ? 0 : 1
+      title = `A bug before the launch (${index + 1}/2)`
+      eyebrow = 'Dialogue'
+      instruction = index
+        ? 'The talk goes on. Listen and read along.'
+        : 'Friday is the launch of a new shop page. Kim, a frontend developer, talks with Ana, the designer. Listen and read along.'
+      tools = dialogueTool(index)
+      element = (
+        <S.Stack>
+          {!index ? (
+            <S.Hint>
+              launch = lançamento · Clique numa fala para ver a tradução.
+            </S.Hint>
+          ) : null}
+          <Dialogue index={index} media={media} />
+        </S.Stack>
+      )
+    } else if (id === 's61') {
+      title = 'Questions'
+      eyebrow = 'Dialogue'
+      instruction =
+        'Answer the questions about Kim and Ana’s talk. If you don’t remember, listen again.'
+      tools = dialogueTool()
+      element = <Comprehension />
+    } else if (id === 's7') {
+      title = 'I’ve fixed it, I fixed it yesterday'
+      eyebrow = 'Grammar'
+      instruction = 'Say the words before you click the line.'
+      element = <Grammar media={media} />
+    } else if (id === 's8') {
+      title = 'Your bug, with Ana'
+      eyebrow = 'Your version'
+      instruction =
+        'The same talk, with a bug from your work. No tech job yet? Talk about a course project, or invent.'
+      element = <YourVersion media={media} />
+    } else if (id === 's9') {
+      title = 'A message from Leo'
+      eyebrow = 'Listening'
+      instruction =
+        'Leo, the tech lead, sends Kim a voice message. Read, listen, and say Yes or No. If it’s No, say what’s right.'
+      element = <Listening active={pageId === id} />
+    } else if (id === 's10') {
+      title = 'Right or wrong?'
+      eyebrow = 'Review'
+      instruction = 'Is the sentence right? If not, say it the right way.'
+      element = <Corrections media={media} />
+    } else if (id === 's11') {
+      title = 'The interview'
+      eyebrow = 'Role play'
+      instruction = 'Press play. Answer Jun’s question. Then press play again.'
+      element = <Interview media={media} />
+    } else {
+      title = 'Practice at home'
+      eyebrow = 'Homework'
+      instruction =
+        'Your three tasks on the platform. Your teacher sends the links in the chat.'
+      element = (
+        <LessonHomework
+          lesson="B1 Tech · Frontend"
+          items={homework}
+          image={image('v_bt')}
+          images={['v_bt', 'x_bulb', 'x_speech'].map(image)}
+          studentPortalOrigin={studentPortalOrigin}
+        />
+      )
+    }
+    return {
+      id,
+      label: `${eyebrow} · ${title}`,
+      content: (
+        <SlidePage
+          title={title}
+          eyebrow={eyebrow}
+          instruction={instruction}
+          tools={tools}
+          lead={lead}
+          layout={id === 's1' ? 'split' : 'stacked'}
+          density={
+            ['s6', 's62', 's7', 's8', 's9', 's11'].includes(id)
+              ? 'dense'
+              : 'regular'
+          }
+          width={
+            id === 's2' || ['s6', 's62', 's61', 's10'].includes(id)
+              ? 'reading'
+              : ['s31', 's32', 's33'].includes(id)
+                ? 'wide'
+                : ['s51', 's52', 's4'].includes(id)
+                  ? 'focused'
+                  : ['s7', 's9', 's11'].includes(id)
+                    ? 'expanded'
+                    : id === 's8'
+                      ? 'conversation'
+                      : 'standard'
+          }
+        >
+          {element}
+        </SlidePage>
+      ),
+    }
+  })
+  return (
+    <S.Stage>
+      <MaterialSlideDeck
+        label="B1 Tech · Frontend"
+        pageId={pageId}
+        onPageChange={(next) => {
+          if (next !== pageId) media.stop()
+          setPageId(next)
+        }}
+        pages={pages}
+        previousPageLabel="Back"
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:tema-frontend"
+            open={notes}
+            onClose={closeNotes}
+          />
+        }
+        actions={
+          <LessonNotesTrigger
+            ref={trigger}
+            open={notes}
+            onClick={() => (notes ? closeNotes() : setNotes(true))}
+          />
+        }
+      />
+      {/* Every native clip has its source text in the controlled vocabulary, dialogue or interview; this single element prevents overlapping playback. */}
+      <audio ref={audioRef} preload="metadata" {...events} aria-hidden="true" />
+      {media.status === 'error' || media.status === 'loading' ? (
+        <S.AudioStatus role={media.status === 'error' ? 'alert' : 'status'}>
+          {media.status === 'loading'
+            ? 'Loading recording…'
+            : 'Could not play the recording.'}
+          {media.status === 'error' ? (
+            <Button size="sm" variant="secondary" onClick={media.retry}>
+              Try again
+            </Button>
+          ) : null}
+          <Button size="sm" variant="secondary" onClick={media.stop}>
+            {media.status === 'loading' ? 'Cancel playback' : 'Close'}
+          </Button>
+        </S.AudioStatus>
+      ) : null}
+    </S.Stage>
+  )
+}

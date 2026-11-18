@@ -388,3 +388,72 @@ it('pauses when the document is hidden and resumes the same listening pass only 
     '1',
   )
 })
+
+describe('consumer-enabled manual transcript', () => {
+  it('keeps four answers before replay, unlocks Show/Hide on successful replay, and pauses on departure', async () => {
+    const onAnswer = vi.fn()
+    const questions = Array.from({ length: 4 }, (_, i) => ({
+      id: String(i),
+      prompt: `Statement ${i + 1}`,
+      choices: [
+        { id: 'yes', label: 'Yes' },
+        { id: 'no', label: 'No' },
+      ],
+    }))
+    const props = {
+      ...fixture,
+      questions,
+      onAnswer,
+      transcriptReveal: 'manual-after-replay' as const,
+      questionHeading: 'Four statements',
+    }
+    const { container, rerender } = render(<VoiceMessageExercise {...props} />)
+    for (const question of screen.getAllByRole('group', { name: /Statement/ }))
+      fireEvent.click(within(question).getByRole('button', { name: 'Yes' }))
+    expect(screen.getByText('Four statements')).toBeVisible()
+    expect(onAnswer).toHaveBeenCalledTimes(4)
+    await start()
+    fireEvent.ended(media(container))
+    expect(
+      screen.queryByRole('button', { name: 'Listen again and check' }),
+    ).not.toBeInTheDocument()
+    rerender(
+      <VoiceMessageExercise
+        {...props}
+        questions={questions.map((q) => ({
+          ...q,
+          disabled: true,
+          value: 'yes',
+        }))}
+        replayActionLabel="Listen again and check"
+      />,
+    )
+    await act(async () =>
+      fireEvent.click(
+        screen.getByRole('button', { name: 'Listen again and check' }),
+      ),
+    )
+    expect(container.querySelector('[data-listens]')).toHaveAttribute(
+      'data-listens',
+      '2',
+    )
+    expect(screen.queryByText(fixture.audio.transcript)).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Mostrar transcrição' }))
+    expect(
+      screen.getByRole('region', { name: 'Transcrição' }),
+    ).toHaveTextContent(fixture.audio.transcript)
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Esconder transcrição' }),
+    )
+    expect(screen.queryByText(fixture.audio.transcript)).not.toBeInTheDocument()
+    rerender(
+      <VoiceMessageExercise
+        {...props}
+        active={false}
+        replayActionLabel="Listen again and check"
+      />,
+    )
+    expect(pause).toHaveBeenCalled()
+    expect(screen.getByRole('button', { name: 'Ouvir áudio' })).toBeDisabled()
+  })
+})

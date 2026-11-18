@@ -1,0 +1,98 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-17",
+  "profile": "exercise-scene",
+  "styleReference": "A101/scene-tired-tom",
+  "styleBase": "../../shared/illustration-style.txt",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.35.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-student",
+      "file": "scene-student.webp",
+      "originalSha256": "5a0856ba06b70f4005931de5f53988d12c8bebf3bad0ad40f686412d6c330661",
+      "sha256": "bd3d6a132b7bf195227a92c86831cf241adfd45b7bea97899cc011ce16cebf17",
+      "bytes": 61040,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-teacher",
+      "file": "scene-teacher.webp",
+      "originalSha256": "74502771f8a080ff917540a795fdb8901560eb9ef7721e135a5b598a3edef61f",
+      "sha256": "9ae541cf990531d61c9fbe9940dd20eb3363cceff104e4f593ae08d5a46bef8a",
+      "bytes": 33034,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-doctor",
+      "file": "scene-doctor.webp",
+      "originalSha256": "36bb663de8ae1af8a93ef482890798d061dfc0d49ab7ea74019d75ef70ca286e",
+      "sha256": "e9d561807a1d71f0aab6fcf841f8c96748ee79c9512bacfaf5f90a35cfc2fc1a",
+      "bytes": 41792,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cook",
+      "file": "scene-cook.webp",
+      "originalSha256": "5b24a369ca9d4610f3d355b74d44e28fd6b72efe934c8602aabe274594a0158a",
+      "sha256": "ae72a43dd8405cfc16cfb3ba976486a6997e28ad83e0e9f32e9993cc5fe3ca7c",
+      "bytes": 55140,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-driver",
+      "file": "scene-driver.webp",
+      "originalSha256": "ae9edf723d9dc7b5c27fb814c7af51dbf43bdb7769c1e7e9ba1040375a9083df",
+      "sha256": "12e913b24544c8295e147fbc063d06629cd7f624a33453126e06038e70056344",
+      "bytes": 52664,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-engineer",
+      "file": "scene-engineer.webp",
+      "originalSha256": "b3e29958f78e6633071bef1b4aad0ce3c55ca11487a72614735b755e5e07b6e3",
+      "sha256": "1f210589497daee40a8b77fc03b1a1d812a56f760e708ef555abf57494b9a566",
+      "bytes": 56388,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-parents",
+      "file": "scene-parents.webp",
+      "originalSha256": "bf035e82839b9b746eeb3e74f744dd3963c2f3dd6bead93d0cfe124488531b8e",
+      "sha256": "f4e653c60a3f5111bf2a6ea0995a65a456318cfc5d17420131438ed32e24b75e",
+      "bytes": 55830,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-jin-tom",
+      "file": "scene-jin-tom.webp",
+      "originalSha256": "262c97a782210099e3ab942fb82306030390935c2977992ca02aa0fd22522f09",
+      "sha256": "31bad217e92a465dedee2879177ab6ba76059c54b6ae0ac259189f10566747f6",
+      "bytes": 64268,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ]
+}

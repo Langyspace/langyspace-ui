@@ -103,8 +103,9 @@ export function ListeningSection({ active }: { active: boolean }) {
         contact={{ name: 'Kim', avatarUrl: kim, status: 'online' }}
         greeting={{ text: 'Sorry, Ana!', timestamp: '09:41' }}
         audio={{
-          id: 'a201-kim-demo',
+          id: 'a201-kim-elevenlabs-20261118',
           src: voice,
+          duration: 15.18585,
           transcript:
             content.listening.transcript +
             '\nNever mind = deixa pra lá · maybe = talvez · travel = viajar · soon = logo',

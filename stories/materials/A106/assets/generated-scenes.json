@@ -1,0 +1,198 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-17",
+  "profile": "exercise-scene",
+  "styleReference": "A101/scene-tired-tom",
+  "styleBase": "../../shared/illustration-style.txt",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.35.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-dog",
+      "file": "scene-dog.webp",
+      "originalSha256": "3fb37781fb3fb931542e1a0338b2fdd9ea3dd0f2f13a04b69c8f933811642adc",
+      "sha256": "50fa7fd6b965a058cc562b0e79a35fd31a1d6f5dbe76621dfb81e4656f8de966",
+      "bytes": 48654,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cat",
+      "file": "scene-cat.webp",
+      "originalSha256": "db4a5e1411ae40ed7ec47827392d0e76c3c0df098e7613f0b45cb63651324f99",
+      "sha256": "d6585e9187a68fdd75ad0456925790afc0ca9aa10840c1c78551ed27668be577",
+      "bytes": 51734,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-fish",
+      "file": "scene-fish.webp",
+      "originalSha256": "8724cff9f09bb9dce713bd74df72db69e4f681392327882c57b548a1fc3df6b8",
+      "sha256": "2ace8783071f098b1b01126e64b7c1058001f81da13eeb322a2f1032f1a65c53",
+      "bytes": 43178,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-bird",
+      "file": "scene-bird.webp",
+      "originalSha256": "fad1d353f9c6c272e6044ac8d89eebca7066045370d6e42fb8380a1c59b0e70d",
+      "sha256": "26374fd9353b4b82993ab5971ae4be36958a8a93bf8e9cbd27e27023273fd6f5",
+      "bytes": 38376,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-rabbit",
+      "file": "scene-rabbit.webp",
+      "originalSha256": "f499870bcfeb860b4b206e7ace34426af25a3ddc20863c397933c849ccdfcd75",
+      "sha256": "6b3e7fa8c779b55aa0069c0fdb652897e3a573f3846c117ec3941f09d24f776d",
+      "bytes": 40754,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-turtle",
+      "file": "scene-turtle.webp",
+      "originalSha256": "798fe6a6226e240c7b14dcaebd2ede05f01d83403f7524144f3caf61678733a0",
+      "sha256": "b92abb1874f2902ed08df2e64ca74a041854544f0212833997cc487347506664",
+      "bytes": 50720,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-bed",
+      "file": "scene-bed.webp",
+      "originalSha256": "7bcd8a57268425c15cf4ff6c4fe1ad7c9e571b7caee6a62cb269f83aa4feb94d",
+      "sha256": "f767663255335eaba3766a02eff82ad9ecb7ab68261f7189cd101186f2e67658",
+      "bytes": 43802,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-sofa",
+      "file": "scene-sofa.webp",
+      "originalSha256": "8e2d23734ae7830343359888a8bff204601cde67947b4067ff74c2f549bf2586",
+      "sha256": "c835b303522e4f9bf1ec0e38f21ecfd5963c2eb9a3176c82c8c24ef0571c8dbb",
+      "bytes": 36604,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-table",
+      "file": "scene-table.webp",
+      "originalSha256": "f3f9cc70920e326c8d1a710e8eee5076e585be91d657ce4a4db890847275f356",
+      "sha256": "b367604699e5fc45971cf27c478ba3e76937f2a1c00f701abc8792c9562ad85f",
+      "bytes": 44900,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cat-on",
+      "file": "scene-cat-on.webp",
+      "originalSha256": "bdf47adf8f899958d22e5a8ca15bf7e85fee313a1ba3b4c932fc3535cf438976",
+      "sha256": "0d53bbfcff2999ecc75c407d381ad41130e2217b448464a4b7553174d23c3b0b",
+      "bytes": 51538,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cat-in",
+      "file": "scene-cat-in.webp",
+      "originalSha256": "64bde1f6350add1dbbcc64c2a807b82a400f6f03d8844bf1a7efbac63191383e",
+      "sha256": "45782ad82ae1efcd84b96bf4e7d6a8fb5b332e1aeedf80a73aebd513d8fa496b",
+      "bytes": 54350,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cat-under",
+      "file": "scene-cat-under.webp",
+      "originalSha256": "147f67618914b4c0c23ba61317728023abd2edecbdc3ab3226adb99a2bfdbe82",
+      "sha256": "52dad90b6dc77dd190675c92c04a56f0d92dd0d004c82354e1784bca49cb009e",
+      "bytes": 52498,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-cat-next",
+      "file": "scene-cat-next.webp",
+      "originalSha256": "f587f17e1e67594a4cdf074862194ddc0cf983f343d90d944586fe0de1bd1972",
+      "sha256": "13e0c1025430844fe2d8c11155fab20b59ed728b1c2bd28abab49652aa3d4ece",
+      "bytes": 53612,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-home",
+      "file": "scene-home.webp",
+      "originalSha256": "6e3ef323b04740142b8f39825d7d7548e7db7876a57d706c8cedb6ab526911e5",
+      "sha256": "39986adf50ba295e6e2896dea0798d3e05b7df97ccba43390b3647da41d05f7f",
+      "bytes": 51420,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-home-hidden",
+      "file": "scene-home-hidden.webp",
+      "originalSha256": "e0d6da3e670a47fe9bd382c1b343c0719339ac87011fea6a74cfc4f99e6bc649",
+      "sha256": "9562709b8f9e56635306c6ff2db8f234c483e61ede0de4b6be80c02a0aaff9c0",
+      "bytes": 47832,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-home-sofa",
+      "file": "scene-home-sofa.webp",
+      "originalSha256": "8b9f1d57784151c70f946efa1d1313a74f2af5b1435beabe3bcbc2732ecef0e9",
+      "sha256": "bafe1b726e3487bed0c6cb4567958d4ffc43af7014e584a2aeee7c2aec27218c",
+      "bytes": 48756,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-home-bed",
+      "file": "scene-home-bed.webp",
+      "originalSha256": "cf2680bff384f801f528e50cdc42933730d55a50c57abff6fd06607bd82f2f3f",
+      "sha256": "63f734beec705f8f819b59c715bbbc6b86e61f1620a0705f447543d5c19d1763",
+      "bytes": 47460,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-home-table",
+      "file": "scene-home-table.webp",
+      "originalSha256": "88f913efbe097d61cc7099173411708c4f12f9ac24e2933e26dc9d7448f148a4",
+      "sha256": "7c59bf77930b87222f269b6075c9323beecd45b2b18a672f36705498968b29d7",
+      "bytes": 48864,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ]
+}

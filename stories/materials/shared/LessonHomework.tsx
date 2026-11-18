@@ -7,11 +7,13 @@ export function LessonHomework({
   lesson,
   items,
   image,
+  images,
   studentPortalOrigin,
 }: {
   lesson: string
   items: readonly string[][]
   image?: string
+  images?: readonly string[]
   studentPortalOrigin?: string
 }) {
   const [status, setStatus] = useState<'idle' | 'copied' | 'fallback'>('idle'),
@@ -45,7 +47,9 @@ export function LessonHomework({
     <S.Stack>
       {items.map(([title, description], i) => (
         <S.Homework key={title}>
-          {i === 0 && image ? <img src={image} alt="" /> : null}
+          {images?.[i] || (i === 0 && image) ? (
+            <img src={images?.[i] ?? image} alt="" />
+          ) : null}
           <div>
             <b>{title}</b>
             <S.Hint>{description}</S.Hint>

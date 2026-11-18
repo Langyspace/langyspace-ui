@@ -52,5 +52,59 @@
     "kind": "extra",
     "tags": ["Aula experimental", "Preferências", "Conversação"],
     "coverSource": "stories/materials/shared/assets/scene-park.webp"
+  },
+  {
+    "key": "a1-03",
+    "code": "A1.03",
+    "title": "People in my life",
+    "description": "Apresentar as pessoas da sua vida e dizer o que elas fazem.",
+    "levels": ["A1"],
+    "kind": "course",
+    "sequence": 3,
+    "tags": [],
+    "coverSource": "stories/materials/A103/assets/scene-parents.webp"
+  },
+  {
+    "key": "a1-04",
+    "code": "A1.04",
+    "title": "My day and our time",
+    "description": "Falar da sua rotina e combinar um dia e uma hora.",
+    "levels": ["A1"],
+    "kind": "course",
+    "sequence": 4,
+    "tags": [],
+    "coverSource": "stories/materials/A104/assets/scene-getup.webp"
+  },
+  {
+    "key": "a1-05",
+    "code": "A1.05",
+    "title": "At the street market",
+    "description": "Dizer do que você gosta e do que não gosta, e perguntar do que a outra pessoa gosta.",
+    "levels": ["A1"],
+    "kind": "course",
+    "sequence": 5,
+    "tags": [],
+    "coverSource": "stories/materials/A105/assets/scene-apple.webp"
+  },
+  {
+    "key": "a1-06",
+    "code": "A1.06",
+    "title": "My home and my pet",
+    "description": "Falar do seu bicho de estimação e dizer onde as coisas estão.",
+    "levels": ["A1"],
+    "kind": "course",
+    "sequence": 6,
+    "tags": [],
+    "coverSource": "stories/materials/A106/assets/scene-home.webp"
+  },
+  {
+    "key": "tema-frontend",
+    "code": "B1 Tech",
+    "title": "Tech · Frontend",
+    "description": "Explicar um bug, contar o que você já fez e responder a perguntas de entrevista sobre seu trabalho.",
+    "levels": ["B1"],
+    "kind": "extra",
+    "tags": ["Tecnologia", "Trabalho", "Entrevista"],
+    "coverSource": "stories/materials/Frontend/assets/meet_jun.webp"
   }
 ]

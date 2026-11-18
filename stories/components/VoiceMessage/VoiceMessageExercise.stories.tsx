@@ -191,3 +191,11 @@ export const PlaybackAndTranscript: Story = {
 export const FollowUpReplay: Story = {
   args: { replayActionLabel: 'Listen again and check' },
 }
+
+export const ManualTranscriptAfterReplay: Story = {
+  args: {
+    transcriptReveal: 'manual-after-replay',
+    replayActionLabel: 'Listen again and check',
+  },
+  tags: ['visual-review'],
+}
