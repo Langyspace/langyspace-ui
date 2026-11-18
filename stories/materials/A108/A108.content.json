@@ -1,0 +1,706 @@
+{
+  "pages": [
+    1, 7, 17, 5, 6, 31, 32, 33, 34, 35, 2, 22, 23, 41, 42, 43, 44, 45, 46, 13,
+    141, 142, 143, 144, 15, 161, 162, 8, 91, 92, 93, 11, 122, 123
+  ],
+  "heads": [
+    ["Review", "Do you remember?", "Answer your teacher’s questions."],
+    ["Grammar", "Can I have…? a, an and plurals", ""],
+    ["Warm-up", "Warm-up", "Choose the correct answer."],
+    [
+      "Let’s practice more!",
+      "Let’s practice more!",
+      "Remember the words you learned and answer the questions according to the picture."
+    ],
+    [
+      "Vocabulary",
+      "Food and drinks",
+      "Listen and repeat. Then say what you have for breakfast."
+    ],
+    [
+      "Vocabulary",
+      "At the café",
+      "Listen and repeat. Then say what you ask for at the end."
+    ],
+    [
+      "Dialogue",
+      "What can I get you?",
+      "Listen and then read the dialogue with your teacher."
+    ],
+    [
+      "Dialogue",
+      "Fill in the blanks",
+      "Fill in the blanks of the dialogue you heard. Then read it with your teacher."
+    ],
+    [
+      "Let’s talk",
+      "",
+      "Ask your teacher the questions. Then answer them yourself."
+    ],
+    null,
+    [
+      "Recycle",
+      "Role play: at the café",
+      "Use everything from today in a new situation."
+    ],
+    ["Homework", "", ""],
+    ["Grammar", "Correct it and pay", ""],
+    ["Warm-up", "Warm-up", "Choose the correct answer."],
+    [
+      "Your turn",
+      "Your order",
+      "Order for you and for a person in your life. Use the model."
+    ],
+    ["Challenge", "Challenge", "Look at the picture and answer the questions."],
+    [
+      "Dialogue",
+      "Comprehension questions",
+      "Now, answer the questions based on the text."
+    ]
+  ],
+  "lines": [
+    {
+      "id": "D01.T1",
+      "who": "ana",
+      "g": "Oi! O que vai ser?",
+      "en": "Hi! What can I get you?"
+    },
+    {
+      "id": "D01.T2",
+      "who": "kim",
+      "g": "Pode ser um café e um suco de laranja, por favor?",
+      "en": "Can I have a coffee and an orange juice, please?"
+    },
+    {
+      "id": "D01.T3",
+      "who": "ana",
+      "g": "Claro. Algo para comer?",
+      "en": "Sure. Anything to eat?"
+    },
+    {
+      "id": "D01.T4",
+      "who": "kim",
+      "g": "Dois pães de queijo e um bolo de banana, por favor.",
+      "en": "Two cheese breads and a banana cake, please."
+    },
+    {
+      "id": "D01.T5",
+      "who": "ana",
+      "g": "Aqui está. Dois cafés e…",
+      "en": "Here you are. Two coffees and…"
+    },
+    {
+      "id": "D01.T6",
+      "who": "kim",
+      "g": "Desculpe, é um café e um suco de laranja.",
+      "en": "Sorry, it’s one coffee and one orange juice."
+    },
+    {
+      "id": "D01.T7",
+      "who": "ana",
+      "g": "Ah, desculpe! Mais alguma coisa?",
+      "en": "Oh, sorry! Anything else?"
+    },
+    {
+      "id": "D01.T8",
+      "who": "kim",
+      "g": "Não, obrigada. Pode me trazer a conta, por favor?",
+      "en": "No, thanks. Can I have the bill, please?"
+    }
+  ],
+  "food": [
+    {
+      "ic": "x_pl_cafe",
+      "en": "coffee",
+      "pt": "café",
+      "id": "V01"
+    },
+    {
+      "ic": "x_fd_tea",
+      "en": "tea",
+      "pt": "chá",
+      "id": "V02"
+    },
+    {
+      "ic": "x_fd_orange",
+      "alt": "Copo transparente com bebida laranja e uma fatia cítrica na borda.",
+      "en": "orange juice",
+      "pt": "suco de laranja",
+      "id": "V03"
+    },
+    {
+      "ic": "x_fd_water",
+      "en": "water",
+      "pt": "água",
+      "id": "V04"
+    },
+    {
+      "ic": "x_fd_cheese",
+      "alt": "Pão redondo e dourado aberto, com miolo claro e macio.",
+      "en": "cheese bread",
+      "pt": "pão de queijo",
+      "id": "V05"
+    },
+    {
+      "ic": "x_fd_sandwich",
+      "en": "a sandwich",
+      "pt": "sanduíche",
+      "id": "V06"
+    },
+    {
+      "ic": "x_fd_cake",
+      "en": "a cake",
+      "pt": "bolo",
+      "id": "V07"
+    },
+    {
+      "ic": "x_fd_salad",
+      "en": "a salad",
+      "pt": "salada",
+      "id": "V08"
+    },
+    {
+      "ic": "x_fd_apple",
+      "en": "an apple",
+      "pt": "maçã",
+      "id": "V09"
+    }
+  ],
+  "cafeVocabulary": [
+    {
+      "ic": "x_fd_menu",
+      "en": "the menu",
+      "pt": "o cardápio",
+      "id": "V11"
+    },
+    {
+      "ic": "x_fd_bill",
+      "en": "the bill",
+      "pt": "a conta",
+      "id": "V12"
+    },
+    {
+      "ic": "x_fd_tea",
+      "en": "a cup",
+      "pt": "uma xícara",
+      "id": "V13"
+    },
+    {
+      "ic": "x_kim",
+      "en": "for me",
+      "pt": "para mim",
+      "id": "V14"
+    }
+  ],
+  "warmUp": [
+    {
+      "t": "Leo is at a café. What does he say?",
+      "im": "n8_sandwich",
+      "id": "A01",
+      "alt": "Leo, um sanduíche e o cardápio",
+      "o": [
+        "Can I have a sandwich, please?",
+        "Can I have sandwich, please?",
+        "Can I has a sandwich, please?"
+      ],
+      "a": 0,
+      "now": "Answer about you: What do you order at a café?",
+      "why": {
+        "1": "Um sanduíche: a sandwich.",
+        "2": "Com I, use have: Can I have…?"
+      }
+    },
+    {
+      "t": "Laura is at a café. What does she say?",
+      "im": "n8_orange",
+      "id": "A02",
+      "alt": "Laura sorri ao lado de um copo de bebida laranja com uma fatia cítrica na borda.",
+      "o": [
+        "Can I have a orange juice?",
+        "Can I have an orange juice, please?",
+        "I have an orange juice, please."
+      ],
+      "a": 1,
+      "now": "Change the person: What does your mother order at a café?",
+      "why": {
+        "0": "Orange começa com som de vogal: an orange juice.",
+        "2": "Para pedir, use a pergunta: Can I have…?"
+      }
+    },
+    {
+      "t": "Kim, what do you order?",
+      "im": "n8_cakes",
+      "id": "A03",
+      "alt": "Kim e duas fatias de bolo",
+      "o": ["Two cake, please.", "A two cakes, please.", "Two cakes, please."],
+      "a": 2,
+      "now": "Answer about you: What do you eat at a café?",
+      "why": {
+        "0": "Dois bolos: plural com s, cakes.",
+        "1": "Com número, não use a: two cakes."
+      }
+    },
+    {
+      "t": "What do Ana’s parents say?",
+      "im": "n8_coffees",
+      "id": "A04",
+      "alt": "Os pais da Ana e dois cafés",
+      "o": [
+        "Can we have two coffees, please?",
+        "Can we have two coffee, please?",
+        "Can we has two coffees, please?"
+      ],
+      "a": 0,
+      "now": "Ask your teacher: What do you order at a café?",
+      "why": {
+        "1": "Dois cafés: coffees.",
+        "2": "Com we, use have."
+      }
+    },
+    {
+      "t": "Ana and Kim, what do you order?",
+      "im": "n8_sandwiches",
+      "id": "A05",
+      "alt": "Ana e Kim com dois sanduíches",
+      "o": [
+        "Two sandwichs, please.",
+        "Two sandwiches, please.",
+        "Two sandwich, please."
+      ],
+      "a": 1,
+      "now": "Change the person: What do you and your friends order?",
+      "why": {
+        "0": "Palavras terminadas em ch ganham es: sandwiches.",
+        "2": "Dois sanduíches: plural, sandwiches."
+      }
+    }
+  ],
+  "quickCheck": [
+    {
+      "s": "Can I have ___ orange juice?",
+      "o": ["a", "an"],
+      "a": "an"
+    },
+    {
+      "s": "Two ___, please.",
+      "o": ["sandwich", "sandwiches"],
+      "a": "sandwiches"
+    },
+    {
+      "s": "Can ___ have the bill?",
+      "o": ["I", "me"],
+      "a": "I"
+    }
+  ],
+  "practice": [
+    {
+      "im": "n8_sandwich",
+      "q": "What does Leo say?",
+      "a": "Can I have {a sandwich}, please?"
+    },
+    {
+      "im": "n8_orange",
+      "alt": "Laura sorri ao lado de um copo de bebida laranja com uma fatia cítrica na borda.",
+      "q": "What does Laura say?",
+      "a": "Can I have {an orange juice}, please?"
+    },
+    {
+      "im": "n8_cakes",
+      "q": "What does Kim say?",
+      "a": "{Two cakes}, please."
+    },
+    {
+      "im": "n8_coffees",
+      "q": "What do Ana’s parents say?",
+      "a": "{Can we have two coffees}, please?"
+    },
+    {
+      "im": "n8_sandwiches",
+      "q": "What do Ana and Kim say?",
+      "a": "{Can we have two sandwiches}, please?"
+    }
+  ],
+  "fixOrder": [
+    {
+      "t": "You order one coffee. The waiter brings two. What do you say?",
+      "im": "n8_wrong",
+      "id": "G01",
+      "alt": "Kim surpresa com dois cafés e um X",
+      "o": [
+        "Sorry, it’s one coffee.",
+        "Sorry, it’s two coffees.",
+        "Sorry, is one coffee."
+      ],
+      "a": 0,
+      "why": {
+        "1": "Você pediu um café: it’s one coffee.",
+        "2": "Não esqueça o it: it’s."
+      }
+    },
+    {
+      "t": "“Anything else?”",
+      "im": "n8_done",
+      "id": "G02",
+      "alt": "Kim feliz com bolo e café na mesa",
+      "o": ["No, I don’t.", "No, thanks.", "No, it isn’t."],
+      "a": 1,
+      "why": {
+        "0": "Para recusar com educação: No, thanks.",
+        "2": "Para recusar com educação: No, thanks."
+      }
+    },
+    {
+      "t": "You want to pay. What do you say?",
+      "im": "n8_bill",
+      "id": "G03",
+      "alt": "Ana e Kim com a conta",
+      "o": [
+        "Can I have the menu, please?",
+        "I have the bill.",
+        "Can I have the bill, please?"
+      ],
+      "a": 2,
+      "why": {
+        "0": "Menu é o cardápio. Para pagar: the bill.",
+        "1": "Para pedir, use a pergunta: Can I have…?"
+      }
+    },
+    {
+      "t": "“Here’s your orange juice.”",
+      "im": "n8_orange",
+      "id": "G04",
+      "alt": "",
+      "o": ["Thank you!", "Yes, it is.", "Sorry, it’s."],
+      "a": 0,
+      "why": {
+        "1": "Quando recebe o pedido certo, agradeça: Thank you!",
+        "2": "Quando recebe o pedido certo, agradeça: Thank you!"
+      }
+    }
+  ],
+  "challenge": [
+    {
+      "t": "What does John say?",
+      "im": "c8_john",
+      "alt": "John, um café e uma fatia de bolo",
+      "a": "Can I have {a coffee and a cake}, please?"
+    },
+    {
+      "t": "Leticia orders for her family. What does she say?",
+      "im": "c8_leticia",
+      "alt": "Leticia sorri ao lado de três copos de bebida laranja. Acima deles está escrito “x 3”.",
+      "a": "Can we have {three orange juices}, please?"
+    }
+  ],
+  "gaps": {
+    "D01.T1": "Hi! What can I get you?",
+    "D01.T2": "Can I have a coffee and {1} orange juice, please?",
+    "D01.T3": "Sure. Anything to eat?",
+    "D01.T4": "Two cheese {2} and a banana cake, please.",
+    "D01.T5": "Here you are. Two coffees and…",
+    "D01.T6": "{3}, it’s one coffee and one orange juice.",
+    "D01.T7": "Oh, sorry! Anything else?",
+    "D01.T8": "No, thanks. Can I have the {4}, please?"
+  },
+  "bank": {
+    "1": {
+      "o": ["a", "an"],
+      "a": "an"
+    },
+    "2": {
+      "o": ["bread", "breads"],
+      "a": "breads"
+    },
+    "3": {
+      "o": ["Sorry", "Thanks"],
+      "a": "Sorry"
+    },
+    "4": {
+      "o": ["bill", "menu"],
+      "a": "bill"
+    }
+  },
+  "talk": [
+    {
+      "t": "Your favourite café",
+      "w": [
+        {
+          "ic": "x_pl_cafe",
+          "en": "coffee",
+          "pt": "café"
+        },
+        {
+          "ic": "x_fd_cheese",
+          "en": "cheese bread",
+          "pt": "pão de queijo"
+        },
+        {
+          "ic": "x_fd_cake",
+          "en": "cake",
+          "pt": "bolo"
+        }
+      ],
+      "q": [
+        {
+          "q": "Is there a good café near your house?",
+          "a": "Yes, there is. It’s on… Street."
+        },
+        {
+          "q": "What do you order there?",
+          "a": "I have a… and a…"
+        },
+        {
+          "q": "Who do you go there with?",
+          "a": "I go with my sister / friend…"
+        }
+      ]
+    },
+    {
+      "t": "Food at home",
+      "w": [
+        {
+          "ic": "x_fd_salad",
+          "en": "salad",
+          "pt": "salada"
+        },
+        {
+          "ic": "x_fd_apple",
+          "en": "apple",
+          "pt": "maçã"
+        },
+        {
+          "ic": "x_fd_water",
+          "en": "water",
+          "pt": "água"
+        }
+      ],
+      "q": [
+        {
+          "q": "What do you have for breakfast?",
+          "a": "I have coffee and…"
+        },
+        {
+          "q": "What does your family have for lunch on Sunday?",
+          "a": "We have…"
+        },
+        {
+          "q": "What food don’t you like?",
+          "a": "I don’t like…"
+        }
+      ]
+    },
+    {
+      "t": "Ordering",
+      "w": [
+        {
+          "ic": "x_fd_menu",
+          "en": "menu",
+          "pt": "cardápio"
+        },
+        {
+          "ic": "x_fd_bill",
+          "en": "bill",
+          "pt": "conta"
+        },
+        {
+          "ic": "x_kim",
+          "en": "for me",
+          "pt": "para mim"
+        }
+      ],
+      "q": [
+        {
+          "q": "Your teacher is the waiter. Order a drink and something to eat.",
+          "a": "Can I have a… and a…, please?"
+        },
+        {
+          "q": "The waiter brings the wrong drink. Correct it.",
+          "a": "Sorry, it’s a…, not a…"
+        },
+        {
+          "q": "Order for you and a friend. Then ask for the bill.",
+          "a": "Can we have two…? … Can we have the bill, please?"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "o": [
+      "Can I have a orange juice?",
+      "Can I have an orange juice?",
+      "Can I has an orange juice?"
+    ],
+    "a": 1,
+    "why": {
+      "0": "Orange começa com som de vogal: an.",
+      "2": "Com I, use have."
+    }
+  },
+  "review": [
+    ["What’s near your house?"],
+    ["Is there a café near your house?", "How do I get there?"],
+    ["What’s your favourite place in your neighbourhood?"]
+  ],
+  "comprehension": [
+    {
+      "q": "What drinks does Kim order?",
+      "a": "A coffee and an orange juice."
+    },
+    {
+      "q": "What does she order to eat?",
+      "a": "Two cheese breads and a banana cake."
+    },
+    {
+      "q": "What’s wrong with the order?",
+      "a": "Ana brings two coffees. It’s one coffee and one orange juice."
+    },
+    {
+      "q": "What does Kim ask for at the end?",
+      "a": "She asks for the bill."
+    }
+  ],
+  "make": [
+    {
+      "p": "I",
+      "ex": "Can I have a coffee and a cheese bread, please?"
+    },
+    {
+      "p": "for + person",
+      "ex": "A tea for my mother, please."
+    },
+    {
+      "p": "we",
+      "ex": "Can we have two waters, please?"
+    }
+  ],
+  "yourPractice": [
+    {
+      "q": "What do you order at a café?",
+      "a": "Can I have a…, please?"
+    },
+    {
+      "q": "What does your mother or best friend order?",
+      "a": "She has a… and a…"
+    },
+    {
+      "q": "What do you and your friends eat on the weekend?",
+      "a": "We have… and two…"
+    }
+  ],
+  "roleplay": {
+    "img": "scene_cafe",
+    "alt": "Cardápio de um café com coffee, tea, orange juice, water, cheese bread, sandwich, cake e salad",
+    "txt": "Você está num café com uma pessoa da sua vida. A professora é a atendente. Peça para as duas, corrija um item que ela trouxer errado e peça a conta. Depois, troquem de papel.",
+    "ck": [
+      "Peça uma bebida para você: Can I have a…, please?",
+      "Peça para a outra pessoa: And a… for my…",
+      "Peça algo para comer, com número: Two…, please.",
+      "Corrija o item errado: Sorry, it’s a…, not a…",
+      "Responda e peça a conta: No, thanks. Can we have the bill, please?"
+    ],
+    "sup": [
+      "Can I have…, please?",
+      "Can we have…?",
+      "a… for me and a… for my…",
+      "Sorry, it’s…, not…",
+      "Anything else? No, thanks."
+    ]
+  },
+  "homework": [
+    "Hi! Can I have ___, please?",
+    "And ___ for my ___.",
+    "Two ___, please.",
+    "Sorry, it’s ___, not ___.",
+    "No, thanks. Can I have the bill, please?",
+    "At a café, I usually order ___."
+  ],
+  "yourOrder": [
+    "Can I have {a coffee}, please?",
+    "And {a tea} for my {mother}.",
+    "Can we have {the bill}, please?"
+  ],
+  "startGrammar": {
+    "rules": [
+      [
+        "Para pedir",
+        "<b class=\"g\">Can I have</b> a coffee, please? Para você e outra pessoa: <b class=\"g\">Can we have</b>…?"
+      ],
+      [
+        "A ou an?",
+        "<b class=\"g\">an</b> antes de som de vogal: an orange juice, an apple. <b class=\"g\">a</b> antes de consoante: a coffee, a cake."
+      ],
+      [
+        "Plural",
+        "Duas ou mais: two coffee<b class=\"g\">s</b>, three cake<b class=\"g\">s</b>. Com ch, s ou x: sandwich<b class=\"g\">es</b>."
+      ]
+    ],
+    "examples": [
+      ["I", "Can I have a coffee, please?", "C01"],
+      ["an", "Can I have an orange juice?", "C02"],
+      ["we", "Can we have two waters, please?", "C03"],
+      ["plural", "Two sandwiches, please.", "C04"],
+      ["for", "A coffee for me and a tea for my friend.", "C05"],
+      ["the bill", "Can I have the bill, please?", "C06"]
+    ]
+  },
+  "payGrammar": {
+    "rules": [
+      [
+        "Corrigir",
+        "<b class=\"r\">Sorry</b>, it’s one coffee, <b class=\"r\">not</b> two.",
+        "r"
+      ],
+      [
+        "Mais alguma coisa?",
+        "<b class=\"bl\">Anything else?</b> → <b class=\"g\">Yes, a water, please.</b> / <b class=\"r\">No, thanks.</b>",
+        "bl"
+      ],
+      [
+        "Pagar",
+        "<b class=\"g\">Can I have the bill, please?</b> Com outra pessoa: <b class=\"g\">Can we have the bill?</b>",
+        "g"
+      ]
+    ],
+    "examples": [
+      ["Here’s your coffee.", "Thank you!", "Sorry, it’s a tea, not a coffee."],
+      ["Two cakes?", "Yes, that’s right.", "No, sorry. It’s one cake."],
+      ["Anything else?", "Yes, a water, please.", "No, thanks."],
+      ["Is that all?", "Yes, that’s all.", "No. Can I have a…?"]
+    ],
+    "hint": "Comece a correção com <b>Sorry</b>: fica educado e natural."
+  },
+  "goal": "Pedir comida e bebida para você e para quem está com você, corrigir um item errado e pedir a conta.",
+  "source": {
+    "artifact": "ac20bc57-8c42-4611-ba9e-0bf5c49f5592",
+    "path": "a1/lesson-08-at-the-cafe.html",
+    "version": "1795024895-98f3",
+    "sha256": "b599ae1f5e67959313ffcb9fc547b1ccb1a432111df5d399f339f1755682319c"
+  },
+  "assets": {
+    "x_pl_cafe": "x-pl-cafe.webp",
+    "x_fd_tea": "x-fd-tea.webp",
+    "x_fd_orange": "scene-orange-juice.webp",
+    "x_fd_water": "x-fd-water.webp",
+    "x_fd_cheese": "scene-cheese-bread.webp",
+    "x_fd_sandwich": "x-fd-sandwich.webp",
+    "x_fd_cake": "x-fd-cake.webp",
+    "x_fd_salad": "x-fd-salad.webp",
+    "x_fd_apple": "x-fd-apple.webp",
+    "x_fd_menu": "x-fd-menu.webp",
+    "x_fd_bill": "x-fd-bill.webp",
+    "x_kim": "x-kim.webp",
+    "n8_sandwich": "n8-sandwich.webp",
+    "n8_orange": "scene-laura-orange-juice.webp",
+    "n8_cakes": "n8-cakes.webp",
+    "n8_coffees": "n8-coffees.webp",
+    "n8_sandwiches": "n8-sandwiches.webp",
+    "n8_wrong": "n8-wrong.webp",
+    "n8_done": "n8-done.webp",
+    "n8_bill": "n8-bill.webp",
+    "c8_john": "c8-john.webp",
+    "c8_leticia": "scene-leticia-three-orange-juices.webp",
+    "scene_cafe": "scene-cafe.webp",
+    "bust_ana": "bust-ana.webp",
+    "bust_kim": "bust-kim.webp"
+  }
+}
