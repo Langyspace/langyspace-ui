@@ -1,0 +1,1120 @@
+{
+  "code": "A1.09",
+  "number": 9,
+  "title": "This one, please",
+  "before": "This one,",
+  "accent": "please",
+  "goal": "Comprar algo para você ou para alguém da sua vida: pedir produto, cor e tamanho, perguntar o preço e decidir.",
+  "pages": [
+    {
+      "id": "s1",
+      "title": "Do you remember?",
+      "eyebrow": "Review",
+      "instruction": "Answer your teacher’s questions.",
+      "prompts": [
+        {
+          "q": "What do you order at a café?"
+        },
+        {
+          "q": "What do you have for breakfast?"
+        },
+        {
+          "q": "The waiter brings the wrong drink. What do you say?"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Can I help you?",
+      "eyebrow": "Dialogue",
+      "instruction": "Listen and then read the dialogue with your teacher.",
+      "dialogue": "read"
+    },
+    {
+      "id": "s17",
+      "title": "Comprehension questions",
+      "eyebrow": "Dialogue",
+      "instruction": "Now, answer the questions based on the text.",
+      "prompts": [
+        {
+          "q": "Who is the T-shirt for?",
+          "a": "It’s for Ana’s mother."
+        },
+        {
+          "q": "What colour and size?",
+          "a": "Blue, medium."
+        },
+        {
+          "q": "How much is the T-shirt?",
+          "a": "It’s 80 reais."
+        },
+        {
+          "q": "Does Ana buy the sneakers? Why?",
+          "a": "No, she doesn’t. They’re too expensive."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Clothes and things",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say what clothes you like.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_cl_tshirt",
+            "en": "a T-shirt",
+            "pt": "camiseta",
+            "id": "V01"
+          },
+          {
+            "ic": "x_cl_dress",
+            "en": "a dress",
+            "pt": "vestido",
+            "id": "V02"
+          },
+          {
+            "ic": "x_cl_jeans",
+            "en": "jeans",
+            "pt": "calça jeans",
+            "id": "V03"
+          },
+          {
+            "ic": "x_cl_sneakers",
+            "en": "sneakers",
+            "pt": "tênis",
+            "id": "V04"
+          },
+          {
+            "ic": "x_cl_jacket",
+            "en": "a jacket",
+            "pt": "jaqueta, casaco",
+            "id": "V05"
+          },
+          {
+            "ic": "x_cl_cap",
+            "en": "a cap",
+            "pt": "boné",
+            "id": "V06"
+          },
+          {
+            "ic": "x_cl_sunglasses",
+            "en": "sunglasses",
+            "pt": "óculos de sol",
+            "id": "V07"
+          },
+          {
+            "ic": "x_h_bag",
+            "en": "a bag",
+            "pt": "bolsa",
+            "id": "V08"
+          },
+          {
+            "ic": "x_sh_gift",
+            "en": "a present",
+            "pt": "presente",
+            "id": "V09"
+          }
+        ],
+        "letterHint": true
+      },
+      "tip": {
+        "text": "jeans, sneakers e sunglasses são sempre plural: these jeans, they’re… Tamanhos: small, medium, large.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s6",
+      "title": "Colours",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say your favourite colour.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_co_black",
+            "en": "black",
+            "pt": "preto",
+            "id": "V11"
+          },
+          {
+            "ic": "x_co_white",
+            "en": "white",
+            "pt": "branco",
+            "id": "V12"
+          },
+          {
+            "ic": "x_co_blue",
+            "en": "blue",
+            "pt": "azul",
+            "id": "V13"
+          },
+          {
+            "ic": "x_co_red",
+            "en": "red",
+            "pt": "vermelho",
+            "id": "V14"
+          },
+          {
+            "ic": "x_co_green",
+            "en": "green",
+            "pt": "verde",
+            "id": "V15"
+          },
+          {
+            "ic": "x_co_pink",
+            "en": "pink",
+            "pt": "rosa",
+            "id": "V16"
+          }
+        ],
+        "letterHint": false
+      },
+      "tip": {
+        "text": "A cor vem antes da coisa: a blue T-shirt. Ou depois de in: this T-shirt in blue.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s31",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Leo wants this T-shirt in blue. What does he ask?",
+          "im": "n9_tshirt",
+          "id": "A01",
+          "alt": "Leo, uma camiseta verde e uma bolinha azul",
+          "o": [
+            "Do you have this T-shirt in blue?",
+            "Do you has this T-shirt in blue?",
+            "You have this T-shirt in blue?"
+          ],
+          "a": 0,
+          "now": "Answer about you: What colour are your clothes today?",
+          "why": {
+            "1": "Com you, use have: Do you have…?",
+            "2": "Para perguntar, comece com Do: Do you have…?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Laura likes the dress. What does she ask?",
+          "im": "n9_dress",
+          "id": "A02",
+          "alt": "Laura, um vestido azul e uma etiqueta de preço",
+          "o": ["How much are it?", "How much is it?", "How many is it?"],
+          "a": 1,
+          "now": "Change the person: What does your mother like to buy?",
+          "why": {
+            "0": "Um vestido: is it.",
+            "2": "Para preço, use how much."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Kim, what do you ask about the sneakers?",
+          "im": "n9_sneakers",
+          "id": "A03",
+          "alt": "Kim, um tênis e uma etiqueta de preço",
+          "o": [
+            "How much is they?",
+            "How many are they?",
+            "How much are they?"
+          ],
+          "a": 2,
+          "now": "Answer about you: Do you like sneakers?",
+          "why": {
+            "0": "Sneakers é plural: are they.",
+            "1": "Para preço, use how much."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Ana’s parents choose a present. What do they say?",
+          "im": "n9_gift",
+          "id": "A04",
+          "alt": "Os pais da Ana com um presente",
+          "o": [
+            "This one, please.",
+            "These one, please.",
+            "This ones, please."
+          ],
+          "a": 0,
+          "now": "Ask your teacher: What’s a good present for your mother?",
+          "why": {
+            "1": "Um presente: this one.",
+            "2": "Um presente: this one, sem s."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Ana and Kim like the sunglasses. What do they say?",
+          "im": "n9_sunglasses",
+          "id": "A05",
+          "alt": "Ana e Kim com dois óculos de sol",
+          "o": [
+            "We like this sunglasses.",
+            "We like these sunglasses.",
+            "We like these sunglass."
+          ],
+          "a": 1,
+          "now": "Change the person: What does your best friend like to wear?",
+          "why": {
+            "0": "Sunglasses é plural: these.",
+            "2": "É sempre sunglasses, com s."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "This, these and how much",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "This ou these?",
+            "text": "this = este, esta (uma coisa). these = estes, estas (duas ou mais). Para não repetir: this one."
+          },
+          {
+            "label": "Preço",
+            "text": "Uma coisa: How much is it? Duas ou mais: How much are they?"
+          },
+          {
+            "label": "Resposta",
+            "text": "It’s 80 reais. They’re 200 reais."
+          }
+        ],
+        "cols": ["Quem", "Exemplo"],
+        "rows": [
+          {
+            "cells": ["this", "This T-shirt is blue."],
+            "audio": "C01",
+            "spoken": "This T-shirt is blue."
+          },
+          {
+            "cells": ["these", "These sneakers are white."],
+            "audio": "C02",
+            "spoken": "These sneakers are white."
+          },
+          {
+            "cells": ["is", "How much is this dress?"],
+            "audio": "C03",
+            "spoken": "How much is this dress?"
+          },
+          {
+            "cells": ["are", "How much are these jeans?"],
+            "audio": "C04",
+            "spoken": "How much are these jeans?"
+          },
+          {
+            "cells": ["price", "It’s 80 reais."],
+            "audio": "C05",
+            "spoken": "It’s 80 reais."
+          },
+          {
+            "cells": ["this one", "This one, please."],
+            "audio": "C06",
+            "spoken": "This one, please."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s22",
+      "title": "Quick check",
+      "eyebrow": "Grammar",
+      "instruction": "Choose the correct word.",
+      "choices": [
+        {
+          "t": "___ sneakers are on sale.",
+          "o": ["This", "These"],
+          "a": 1
+        },
+        {
+          "t": "How much ___ this cap?",
+          "o": ["is", "are"],
+          "a": 0
+        },
+        {
+          "t": "How much are ___?",
+          "o": ["it", "they"],
+          "a": 1
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "title": "Make your own examples",
+      "eyebrow": "Grammar",
+      "instruction": "Create 3 examples about things you and the people in your life like to buy.",
+      "prompts": [
+        {
+          "q": "this",
+          "a": "This black jacket is for my brother."
+        },
+        {
+          "q": "these",
+          "a": "These sneakers are for me."
+        },
+        {
+          "q": "how much",
+          "a": "How much are these sunglasses?"
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What does Leo ask?",
+        "model": ["Do you have {this T-shirt in blue}?"],
+        "image": "n9_tshirt",
+        "alt": "Leo ao lado de uma camiseta verde e de uma amostra de cor azul."
+      }
+    },
+    {
+      "id": "s42",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What does Laura ask?",
+        "model": ["How much {is it}?"],
+        "image": "n9_dress",
+        "alt": "Laura observa um vestido azul com uma etiqueta de preço sem número."
+      }
+    },
+    {
+      "id": "s43",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What does Kim ask about the sneakers?",
+        "model": ["{How much are they}?"],
+        "image": "n9_sneakers",
+        "alt": "Kim olha para tênis lilás com uma etiqueta de preço sem número."
+      }
+    },
+    {
+      "id": "s44",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What do Ana’s parents say?",
+        "model": ["{This one}, please."],
+        "image": "n9_gift",
+        "alt": "Os pais da Ana escolhem um presente embrulhado com laço vermelho."
+      }
+    },
+    {
+      "id": "s45",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What do Ana and Kim say?",
+        "model": ["{We like these sunglasses}."],
+        "image": "n9_sunglasses",
+        "alt": "Ana e Kim olham dois pares de óculos de sol."
+      }
+    },
+    {
+      "id": "s46",
+      "title": "Now you",
+      "eyebrow": "",
+      "instruction": "Answer about you and the people in your life.",
+      "prompts": [
+        {
+          "q": "What colour are your clothes today?",
+          "a": "My T-shirt is black and my jeans are blue."
+        },
+        {
+          "q": "What does your mother or best friend like to buy?",
+          "a": "She likes to buy… / bags / sneakers."
+        },
+        {
+          "q": "How much is a good T-shirt in your city?",
+          "a": "It’s about… reais."
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Do you have…? Too expensive!",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Tem?",
+            "text": "Do you have this in blue? → Yes, we do. / No, we don’t."
+          },
+          {
+            "label": "Problema",
+            "text": "It’s too expensive. They’re too big. (too = demais)"
+          },
+          {
+            "label": "Decidir",
+            "text": "I’ll take it. (vou levar) / Just the T-shirt, please."
+          }
+        ],
+        "cols": ["Question", "Yes", "No"],
+        "rows": [
+          {
+            "cells": [
+              "Do you have this in black?",
+              "Yes, we do.",
+              "No, we don’t."
+            ]
+          },
+          {
+            "cells": [
+              "Do you have a medium?",
+              "Yes, we do. Here you are.",
+              "No, sorry. Only small."
+            ]
+          },
+          {
+            "cells": ["Is it OK?", "Yes, I’ll take it.", "No, it’s too big."]
+          },
+          {
+            "cells": [
+              "Are they OK?",
+              "Yes, I’ll take them.",
+              "No, they’re too expensive."
+            ]
+          }
+        ]
+      },
+      "tip": {
+        "text": "Quer só olhar? Diga: I’m just looking, thanks.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s141",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Do you have this jacket in black?”",
+          "im": "n9_jacket",
+          "id": "G01",
+          "alt": "Kim, uma jaqueta bege, uma bolinha preta e um sinal de certo",
+          "o": ["Yes, we do.", "Yes, we have.", "Yes, it is."],
+          "a": 0,
+          "why": {
+            "1": "A pergunta é com do: Yes, we do.",
+            "2": "A pergunta é com do: Yes, we do."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s142",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Do you have this cap in pink?”",
+          "im": "n9_cap_no",
+          "id": "G02",
+          "alt": "Laura triste, um boné azul, um X e um coração rosa",
+          "o": ["No, we aren’t.", "No, we don’t.", "No, it doesn’t."],
+          "a": 1,
+          "why": {
+            "0": "A pergunta é com do: No, we don’t.",
+            "2": "Quem responde é a loja: we. No, we don’t."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s143",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "The jeans are R$ 300. Your budget is R$ 100.",
+          "im": "n9_expensive",
+          "id": "G03",
+          "alt": "Ana surpresa com uma calça jeans de R$ 300",
+          "o": [
+            "It’s too cheap.",
+            "They’re too expensive.",
+            "They’re too big."
+          ],
+          "a": 1,
+          "why": {
+            "0": "300 é muito para 100: expensive. E jeans é plural: they’re.",
+            "2": "O problema é o preço: too expensive."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s144",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "The T-shirt is perfect. What do you say?",
+          "im": "n9_perfect",
+          "id": "G04",
+          "alt": "Kim feliz com uma camiseta e um sinal de certo",
+          "o": ["I take it.", "I’ll take them.", "I’ll take it."],
+          "a": 2,
+          "why": {
+            "0": "Para decidir na hora: I’ll take it.",
+            "1": "Uma camiseta: it."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "A present",
+      "eyebrow": "Your turn",
+      "instruction": "Buy a present for a person in your life. Use the model.",
+      "model": {
+        "question": "A present",
+        "model": [
+          "Do you have {this bag in black}?",
+          "It’s for my {sister}.",
+          "How much {is it}?"
+        ],
+        "alt": ""
+      }
+    },
+    {
+      "id": "s161",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "How much is John’s jacket?",
+        "model": ["It’s {90 reais}."],
+        "image": "c9_john",
+        "alt": "John, uma jaqueta com etiqueta R$ 90 e um boné"
+      }
+    },
+    {
+      "id": "s162",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "Leticia wants this dress in red. What does she ask?",
+        "model": ["Do you have {this dress in red}?"],
+        "image": "c9_leticia",
+        "alt": "Leticia, um vestido azul e uma bolinha vermelha"
+      }
+    },
+    {
+      "id": "s8",
+      "title": "Fill in the blanks",
+      "eyebrow": "Dialogue",
+      "instruction": "Fill in the blanks of the dialogue you heard. Then read it with your teacher.",
+      "dialogue": "practice"
+    },
+    {
+      "id": "s91",
+      "title": "Shopping",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Where do you buy clothes? Online or in a shop?",
+          "a": "I buy clothes online / at…"
+        },
+        {
+          "q": "What’s your favourite shop?",
+          "a": "My favourite shop is…"
+        },
+        {
+          "q": "What’s too expensive for you?",
+          "a": "Sneakers are too expensive."
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_h_bag",
+          "en": "bag",
+          "pt": "bolsa"
+        },
+        {
+          "ic": "x_cl_sneakers",
+          "en": "sneakers",
+          "pt": "tênis"
+        },
+        {
+          "ic": "x_sh_tag",
+          "en": "price",
+          "pt": "preço"
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "title": "Presents",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Who do you buy presents for?",
+          "a": "I buy presents for my…"
+        },
+        {
+          "q": "What’s a good present for your best friend?",
+          "a": "A… She likes…"
+        },
+        {
+          "q": "What’s your favourite present?",
+          "a": "My favourite present is…"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_sh_gift",
+          "en": "present",
+          "pt": "presente"
+        },
+        {
+          "ic": "x_mother",
+          "en": "for my mother",
+          "pt": "para a minha mãe"
+        },
+        {
+          "ic": "x_sh_money",
+          "en": "money",
+          "pt": "dinheiro"
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "title": "Your style",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "What’s your favourite colour?",
+          "a": "My favourite colour is…"
+        },
+        {
+          "q": "Do you like dresses or jeans?",
+          "a": "I like… I don’t like…"
+        },
+        {
+          "q": "Ask your teacher: What colour is your favourite T-shirt?",
+          "a": "What colour is your favourite T-shirt?"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_co_black",
+          "en": "black",
+          "pt": "preto"
+        },
+        {
+          "ic": "x_cl_tshirt",
+          "en": "T-shirt",
+          "pt": "camiseta"
+        },
+        {
+          "ic": "x_cl_dress",
+          "en": "dress",
+          "pt": "vestido"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Role play: a present",
+      "eyebrow": "Recycle",
+      "instruction": "Use everything from today in a new situation.",
+      "role": {
+        "img": "scene_shop",
+        "alt": "Na loja, camiseta verde R$ 60, vestido azul R$ 120, jaqueta bege R$ 150, boné azul R$ 40, tênis lilás R$ 200, óculos de sol R$ 80, bolsa R$ 110 e jeans R$ 130. Orçamento de R$ 150.",
+        "txt": "Você quer comprar um presente para uma pessoa da sua vida e tem R$ 150. A professora é a vendedora. Escolha, pergunte cor, tamanho e preço e decida. Depois, troquem de papel.",
+        "ck": [
+          "Diga para quem é: It’s for my…",
+          "Pergunte por outra cor: Do you have this in…?",
+          "Peça o tamanho: Medium, please.",
+          "Pergunte o preço: How much is it? / How much are they?",
+          "Decida: I’ll take it. / It’s too expensive."
+        ],
+        "sup": [
+          "Do you have this in…?",
+          "It’s for my…",
+          "How much is it / are they?",
+          "It’s too expensive / big / small.",
+          "I’ll take it."
+        ]
+      }
+    },
+    {
+      "id": "s122",
+      "title": "Quiz",
+      "eyebrow": "Homework",
+      "instruction": "Answer one quiz question now.",
+      "choices": [
+        {
+          "o": [
+            "How much is these sneakers?",
+            "How much are these sneakers?",
+            "How many are these sneakers?"
+          ],
+          "a": 1,
+          "why": {
+            "0": "Sneakers é plural: are.",
+            "2": "Para preço, use how much."
+          },
+          "t": "Kim wants to know the price of the sneakers. What does she ask?",
+          "im": "n9_sneakers",
+          "alt": "Kim, um tênis e uma etiqueta de preço"
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "title": "Challenge",
+      "eyebrow": "Homework",
+      "instruction": "",
+      "script": {
+        "items": [
+          "I want a present for my ___.",
+          "He / She likes ___.",
+          "Do you have this ___ in ___?",
+          "How much ___ it?",
+          "It’s ___ reais. I’ll take it! / It’s too expensive.",
+          "My favourite colour is ___."
+        ],
+        "art": ["x_sparkles", "x_mic"]
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "D01.T1",
+      "who": "kim",
+      "g": "Oi! Posso ajudar?",
+      "text": "Hi! Can I help you?"
+    },
+    {
+      "id": "D01.T2",
+      "who": "ana",
+      "g": "Pode, sim. Vocês têm esta camiseta em azul?",
+      "text": "Yes, please. Do you have this T-shirt in blue?"
+    },
+    {
+      "id": "D01.T3",
+      "who": "kim",
+      "g": "Temos, sim. Qual tamanho?",
+      "text": "Yes, we do. What size?"
+    },
+    {
+      "id": "D01.T4",
+      "who": "ana",
+      "g": "Médio, por favor. É para a minha mãe.",
+      "text": "Medium, please. It’s for my mother."
+    },
+    {
+      "id": "D01.T5",
+      "who": "kim",
+      "g": "Aqui está.",
+      "text": "Here you are."
+    },
+    {
+      "id": "D01.T6",
+      "who": "ana",
+      "g": "Quanto custa?",
+      "text": "How much is it?"
+    },
+    {
+      "id": "D01.T7",
+      "who": "kim",
+      "g": "Custa 80 reais. E estes tênis estão em promoção.",
+      "text": "It’s 80 reais. And these sneakers are on sale."
+    },
+    {
+      "id": "D01.T8",
+      "who": "ana",
+      "g": "Quanto custam? Hmm, é caro demais. Só a camiseta, por favor.",
+      "text": "How much are they? Hmm, that’s too expensive. Just the T-shirt, please."
+    }
+  ],
+  "gaps": {
+    "D01.T1": "Hi! Can I help you?",
+    "D01.T2": "Yes, please. Do you {1} this T-shirt in blue?",
+    "D01.T3": "Yes, we do. What size?",
+    "D01.T4": "Medium, please. It’s for my mother.",
+    "D01.T5": "Here you are.",
+    "D01.T6": "How much {2} it?",
+    "D01.T7": "It’s 80 reais. And {3} sneakers are on sale.",
+    "D01.T8": "How much are they? Hmm, that’s {4} expensive. Just the T-shirt, please."
+  },
+  "bank": {
+    "1": {
+      "o": ["have", "has"],
+      "a": "have"
+    },
+    "2": {
+      "o": ["is", "are"],
+      "a": "is"
+    },
+    "3": {
+      "o": ["this", "these"],
+      "a": "these"
+    },
+    "4": {
+      "o": ["too", "very"],
+      "a": "too"
+    }
+  },
+  "media": {
+    "x_mother": {
+      "file": "older-mother.webp",
+      "alt": {
+        "s92": ""
+      }
+    },
+    "x_cl_tshirt": {
+      "file": "x-cl-tshirt.webp",
+      "alt": {
+        "s5": "Camiseta verde de mangas curtas com uma faixa no peito.",
+        "s93": ""
+      }
+    },
+    "x_cl_dress": {
+      "file": "x-cl-dress.webp",
+      "alt": {
+        "s5": "Vestido azul, sem mangas, com faixa na cintura.",
+        "s93": ""
+      }
+    },
+    "x_cl_jeans": {
+      "file": "x-cl-jeans.webp",
+      "alt": {
+        "s5": "Calça azul de tecido jeans."
+      }
+    },
+    "x_cl_sneakers": {
+      "file": "x-cl-sneakers.webp",
+      "alt": {
+        "s5": "Calçado esportivo lilás com cadarço.",
+        "s91": ""
+      }
+    },
+    "x_cl_jacket": {
+      "file": "x-cl-jacket.webp",
+      "alt": {
+        "s5": "Jaqueta bege com lapelas e bolsos."
+      }
+    },
+    "x_cl_sunglasses": {
+      "file": "x-cl-sunglasses.webp",
+      "alt": {
+        "s5": "Óculos escuros com armação roxa."
+      }
+    },
+    "x_h_bag": {
+      "file": "x-h-bag.webp",
+      "alt": {
+        "s5": "Bolsa bege e marrom com alças.",
+        "s91": ""
+      }
+    },
+    "x_sh_gift": {
+      "file": "x-sh-gift.webp",
+      "alt": {
+        "s5": "Caixa embrulhada com laço vermelho.",
+        "s92": ""
+      }
+    },
+    "x_co_black": {
+      "file": "x-co-black.webp",
+      "alt": {
+        "s6": "Esfera preta.",
+        "s93": ""
+      }
+    },
+    "x_co_white": {
+      "file": "x-co-white.webp",
+      "alt": {
+        "s6": "Esfera branca."
+      }
+    },
+    "x_co_blue": {
+      "file": "x-co-blue.webp",
+      "alt": {
+        "s6": "Esfera azul."
+      }
+    },
+    "x_co_red": {
+      "file": "x-co-red.webp",
+      "alt": {
+        "s6": "Esfera vermelha."
+      }
+    },
+    "x_co_green": {
+      "file": "x-co-green.webp",
+      "alt": {
+        "s6": "Esfera verde."
+      }
+    },
+    "x_co_pink": {
+      "file": "x-co-pink.webp",
+      "alt": {
+        "s6": "Coração rosa."
+      }
+    },
+    "n9_tshirt": {
+      "file": "n9-tshirt.webp",
+      "alt": {
+        "s31": "Leo, uma camiseta verde e uma bolinha azul",
+        "s41": "Leo ao lado de uma camiseta verde e de uma amostra de cor azul."
+      }
+    },
+    "n9_dress": {
+      "file": "n9-dress.webp",
+      "alt": {
+        "s32": "Laura, um vestido azul e uma etiqueta de preço",
+        "s42": "Laura observa um vestido azul com uma etiqueta de preço sem número."
+      }
+    },
+    "n9_sneakers": {
+      "file": "n9-sneakers.webp",
+      "alt": {
+        "s33": "Kim, um tênis e uma etiqueta de preço",
+        "s43": "Kim olha para tênis lilás com uma etiqueta de preço sem número.",
+        "s122": "Kim, um tênis e uma etiqueta de preço"
+      }
+    },
+    "n9_gift": {
+      "file": "n9-gift.webp",
+      "alt": {
+        "s34": "Os pais da Ana com um presente",
+        "s44": "Os pais da Ana escolhem um presente embrulhado com laço vermelho."
+      }
+    },
+    "n9_sunglasses": {
+      "file": "n9-sunglasses.webp",
+      "alt": {
+        "s35": "Ana e Kim com dois óculos de sol",
+        "s45": "Ana e Kim olham dois pares de óculos de sol."
+      }
+    },
+    "n9_jacket": {
+      "file": "n9-jacket.webp",
+      "alt": {
+        "s141": "Kim, uma jaqueta bege, uma bolinha preta e um sinal de certo"
+      }
+    },
+    "n9_cap_no": {
+      "file": "n9-cap-no.webp",
+      "alt": {
+        "s142": "Laura triste, um boné azul, um X e um coração rosa"
+      }
+    },
+    "n9_expensive": {
+      "file": "n9-expensive.webp",
+      "alt": {
+        "s143": "Ana surpresa com uma calça jeans de R$ 300"
+      }
+    },
+    "n9_perfect": {
+      "file": "n9-perfect.webp",
+      "alt": {
+        "s144": "Kim feliz com uma camiseta e um sinal de certo"
+      }
+    },
+    "c9_john": {
+      "file": "c9-john.webp",
+      "alt": {
+        "s161": "John, uma jaqueta com etiqueta R$ 90 e um boné"
+      }
+    },
+    "c9_leticia": {
+      "file": "c9-leticia.webp",
+      "alt": {
+        "s162": "Leticia, um vestido azul e uma bolinha vermelha"
+      }
+    },
+    "x_sh_tag": {
+      "file": "x-sh-tag.webp",
+      "alt": {
+        "s91": ""
+      }
+    },
+    "x_sh_money": {
+      "file": "x-sh-money.webp",
+      "alt": {
+        "s92": ""
+      }
+    },
+    "scene_shop": {
+      "file": "scene-shop.webp",
+      "alt": {
+        "s11": "Na loja, camiseta verde R$ 60, vestido azul R$ 120, jaqueta bege R$ 150, boné azul R$ 40, tênis lilás R$ 200, óculos de sol R$ 80, bolsa R$ 110 e jeans R$ 130. Orçamento de R$ 150."
+      }
+    },
+    "x_cl_cap": {
+      "file": "catalog-cap.webp",
+      "alt": {
+        "s5": ""
+      }
+    },
+    "x_bulb": {
+      "file": "x-bulb.webp",
+      "alt": {}
+    },
+    "x_sparkles": {
+      "file": "x-sparkles.webp",
+      "alt": {}
+    },
+    "x_mic": {
+      "file": "x-mic.webp",
+      "alt": {}
+    }
+  }
+}
