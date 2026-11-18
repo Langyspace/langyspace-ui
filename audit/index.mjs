@@ -1,6 +1,14 @@
 import { readdir, readFile } from 'node:fs/promises'
-import { dirname, extname, relative, resolve } from 'node:path'
+import {
+  dirname,
+  extname,
+  relative as relativePath,
+  resolve,
+  sep,
+} from 'node:path'
 import { fileURLToPath } from 'node:url'
+
+const relative = (root, file) => relativePath(root, file).split(sep).join('/')
 
 const canonicalButtonTypes = fileURLToPath(
   new URL('../src/components/Button/Button.types.ts', import.meta.url),
@@ -429,8 +437,8 @@ export async function auditArchitecture(config) {
       }
     }
 
-    const sourceRoot = sourceRoots.find((candidate) =>
-      file.startsWith(`${candidate}/`),
+    const sourceRoot = sourceRoots.find(
+      (candidate) => relative(candidate, file).split('/')[0] !== '..',
     )
     const ownerLayer = sourceRoot
       ? sourceLayer(file, sourceRoot, config.layerDependencies)

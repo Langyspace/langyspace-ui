@@ -1,7 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
-import { Button } from '../Button/Button'
 
 const recipe = resolveSlideTheme
 
@@ -46,39 +45,6 @@ export const Navigation = styled.nav`
   @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     padding-inline: max(${theme.spacing[4]}, env(safe-area-inset-left, 0px))
       max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));
-  }
-`
-
-export const BackButton = styled(Button)`
-  font-family: ${(p) => recipe(p).displayFontFamily};
-  line-height: 1.4;
-  height: 36px;
-  min-height: 36px;
-  padding: 0 14px 0 10px;
-  gap: ${theme.spacing[1]};
-  border: 1.5px solid ${(p) => recipe(p).border};
-  font-size: ${theme.typography.fontSize.sm};
-  font-weight: ${theme.typography.fontWeight.bold};
-  &&:hover:not(:disabled),
-  &&:active:not(:disabled) {
-    transform: none;
-    background: ${(p) => recipe(p).surface};
-    border-color: ${(p) => recipe(p).foreground};
-  }
-  &:focus-visible {
-    outline: 3px solid ${(p) => recipe(p).accent};
-    outline-offset: 2px;
-    box-shadow: none;
-  }
-  svg {
-    width: 18px;
-    height: 18px;
-  }
-  @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
-    height: 32px;
-    min-height: 32px;
-    padding: 0 ${theme.spacing[3]} 0 ${theme.spacing[2]};
-    font-size: 0.8125rem;
   }
 `
 

@@ -1,5 +1,4 @@
 import { styled } from 'styled-components'
-import { Button } from '../Button/Button'
 import { TextareaInput } from '../Form/TextareaInput'
 import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
@@ -54,28 +53,6 @@ export const Heading = styled.b`
   line-height: 1.4;
   span {
     color: ${(p) => resolveSlideTheme(p).accent};
-  }
-`
-export const Action = styled(Button)`
-  min-height: 32px;
-  padding: ${theme.spacing[1]} ${theme.spacing[3]};
-  border-width: 1.5px;
-  border-color: ${(p) => resolveSlideTheme(p).border};
-  color: ${(p) => resolveSlideTheme(p).foreground};
-  background: ${(p) => resolveSlideTheme(p).surface};
-  font-family: ${theme.typography.fontFamily.sans};
-  font-size: 0.8125rem;
-  font-weight: ${theme.typography.fontWeight.bold};
-  line-height: 20px;
-  &&:hover:not(:disabled),
-  &&:active:not(:disabled) {
-    transform: none;
-    background: ${(p) => resolveSlideTheme(p).surface};
-  }
-  &:focus-visible {
-    outline: 3px solid ${(p) => resolveSlideTheme(p).accent};
-    outline-offset: 4px;
-    box-shadow: none;
   }
 `
 export const Editor = styled(TextareaInput)`

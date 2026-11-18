@@ -7,7 +7,6 @@ export interface VocabularySectionProps {
 }
 export interface WarmUpSectionProps {
   item: WarmUpData
-  index: number
   speak: (lines: readonly SpeechLine[]) => void
 }
 export interface DialogueSectionProps {

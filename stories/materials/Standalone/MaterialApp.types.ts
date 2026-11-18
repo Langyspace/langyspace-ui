@@ -1,5 +1,15 @@
 export type MaterialKey =
-  'a1-01' | 'a1-07' | 'a1-08' | 'a2-01' | 'b1-01' | 'b2-01' | 'trial-a1-a2'
+  | 'a1-01'
+  | 'a1-03'
+  | 'a1-04'
+  | 'a1-05'
+  | 'a1-06'
+  | 'a1-07'
+  | 'a1-08'
+  | 'a2-01'
+  | 'b1-01'
+  | 'b2-01'
+  | 'trial-a1-a2'
 export interface MaterialViewProps {
   studentPortalOrigin: string
   materialKey: MaterialKey

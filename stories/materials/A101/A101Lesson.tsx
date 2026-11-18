@@ -1,5 +1,7 @@
 import { useLessonPage } from '../shared/useLessonPage'
-import { MaterialTheme } from '../shared/MaterialTheme'
+import * as LessonStyled from '../shared/Lesson.styles'
+import { useMaterialThemeSwitch } from '../shared/useMaterialThemeSwitch'
+import { MaterialTheme, MaterialThemeSwitch } from '../shared/MaterialTheme'
 import { useRef, useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
@@ -34,12 +36,29 @@ import { useLessonSpeech } from './useLessonSpeech'
 import voice from './assets/kim-demo.mp3'
 import * as Styled from './A101.styles'
 import type { A101LessonProps } from './A101.types'
-function A101LessonContent({
+const warmUpPages = [
+  's21',
+  's22',
+  's23',
+  's24',
+  's25',
+  's26',
+  's51',
+  's52',
+  's53',
+  's54',
+  's55',
+  's56',
+]
+
+export function A101Lesson({
   initialPageId,
   learnerName = '',
   studentPortalOrigin,
 }: A101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
+  const { light, toggle } = useMaterialThemeSwitch()
+  const progress = warmUpPages.indexOf(pageId)
   const [notes, setNotes] = useState(false)
   const notesButton = useRef<HTMLButtonElement>(null)
   const closeNotes = () => {
@@ -109,7 +128,6 @@ function A101LessonContent({
           >
             <WarmUpSection
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
-              index={slot}
               speak={speech.speak}
             />
           </SlidePage>
@@ -140,7 +158,7 @@ function A101LessonContent({
             width="reading"
             density="compact"
             eyebrow="Guided conversation"
-            instruction="Escute o áudio e depois leia o texto com a sua professora."
+            instruction="Escute o áudio e leia com a sua professora. Clique em uma fala para ver em português."
             title={
               <Styled.TitleAudio>
                 Nice to meet you
@@ -203,7 +221,7 @@ function A101LessonContent({
             width="reading"
             eyebrow="Guided conversation"
             title="Questions"
-            instruction="Responda as perguntas sobre o diálogo."
+            instruction="Responda às perguntas sobre o diálogo. Use Answer para conferir."
           >
             <DialogueQuestions />
           </SlidePage>
@@ -378,43 +396,48 @@ function A101LessonContent({
     }
   })
   return (
-    <Styled.Stage>
-      <SlideDeck
-        tabIndex={-1}
-        previousPageLabel="Back"
-        label="A1.01 · Introduce yourself"
-        pages={pages}
-        pageId={pageId}
-        onPageChange={(id) => {
-          if (id !== pageId) speech.stop()
-          setPageId(id)
-        }}
-        overlay={
-          <LessonNotes
-            storageKey="langy-notes:a1-01"
-            open={notes}
-            onClose={closeNotes}
-          />
-        }
-        actions={
-          <LessonNotesTrigger
-            ref={notesButton}
-            open={notes}
-            onClick={() => (notes ? closeNotes() : setNotes(true))}
-          />
-        }
-      />
-      {speech.error ? (
-        <Styled.AudioError role="status">{speech.error}</Styled.AudioError>
-      ) : null}
-    </Styled.Stage>
-  )
-}
-
-export function A101Lesson(props: A101LessonProps) {
-  return (
-    <MaterialTheme>
-      <A101LessonContent {...props} />
+    <MaterialTheme light={light}>
+      <Styled.Stage>
+        <SlideDeck
+          tabIndex={-1}
+          previousPageLabel="Back"
+          label="A1.01 · Introduce yourself"
+          pages={pages}
+          pageId={pageId}
+          onPageChange={(id) => {
+            if (id !== pageId) speech.stop()
+            setPageId(id)
+          }}
+          overlay={
+            <LessonNotes
+              storageKey="langy-notes:a1-01"
+              open={notes}
+              onClose={closeNotes}
+            />
+          }
+          actions={
+            <>
+              {progress >= 0 ? (
+                <LessonStyled.ProgressCount role="status">
+                  <LessonStyled.ProgressLabel>
+                    Exercício{' '}
+                  </LessonStyled.ProgressLabel>
+                  {progress + 1}/{warmUpPages.length}
+                </LessonStyled.ProgressCount>
+              ) : null}
+              <MaterialThemeSwitch light={light} onToggle={toggle} />
+              <LessonNotesTrigger
+                ref={notesButton}
+                open={notes}
+                onClick={() => (notes ? closeNotes() : setNotes(true))}
+              />
+            </>
+          }
+        />
+        {speech.error ? (
+          <Styled.AudioError role="status">{speech.error}</Styled.AudioError>
+        ) : null}
+      </Styled.Stage>
     </MaterialTheme>
   )
 }

@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button'
 import { useSlideNavigation } from './useSlideNavigation'
 import * as Styled from './SlideDeck.styles'
 import type { SlideDeckProps } from './SlideDeck.types'
@@ -30,7 +31,7 @@ export function SlideDeck({
     >
       <Styled.Navigation aria-label={label}>
         {index > 0 ? (
-          <Styled.BackButton
+          <Button
             variant="secondary"
             size="sm"
             onClick={() => {
@@ -54,7 +55,7 @@ export function SlideDeck({
             }
           >
             {previousPageLabel}
-          </Styled.BackButton>
+          </Button>
         ) : null}
         {actions ? <Styled.Actions>{actions}</Styled.Actions> : null}
       </Styled.Navigation>

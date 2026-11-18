@@ -1,0 +1,138 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-17",
+  "profile": "exercise-scene",
+  "styleReference": "A101/scene-tired-tom",
+  "styleBase": "../../shared/illustration-style.txt",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.35.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-banana",
+      "file": "scene-banana.webp",
+      "originalSha256": "ca3a5729cac8be93b21aa381e515b4ed8d5b7e718055ae2feb14c4dadec84fbb",
+      "sha256": "8060b3d422f67e5306393d22c93b53d93881f960636fbed806d2b6e02e51a6e7",
+      "bytes": 45094,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-apple",
+      "file": "scene-apple.webp",
+      "originalSha256": "be2fa888bad4877f593c194c5a1a4f2add76e1fa3b999e700bb455560df71051",
+      "sha256": "797c863ba5ca222a9d209c827371f251ca9b4459ba4157e705add683a79d0333",
+      "bytes": 50736,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-orange",
+      "file": "scene-orange.webp",
+      "originalSha256": "848faf77f0cd5d837862fae446319e81d3bfe53464917916b0013b26d0d248d1",
+      "sha256": "576f44618fdb89e13dd0b38c14ef4f6107155e130108d17ea443bca55f7c17ed",
+      "bytes": 44682,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-mango",
+      "file": "scene-mango.webp",
+      "originalSha256": "5adc04bc60f299a5acc5d1d48718a0cd3baaa4f8cd900547036cd5b8f1b4229b",
+      "sha256": "06dac8cf14fbdd7f3e248672ac9a293dc4a4b86a3bef419066553df440bcac35",
+      "bytes": 42626,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-pineapple",
+      "file": "scene-pineapple.webp",
+      "originalSha256": "159c942ecda2143fb5e4fd9e8e8cb629ff4b6c95860d354910ec65ff156793cc",
+      "sha256": "d1b29d6f62c0a68af4e21e78b122d2bd9a63dec6882cedcd2a0d25fc47d2e0fe",
+      "bytes": 50508,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-watermelon",
+      "file": "scene-watermelon.webp",
+      "originalSha256": "ee937c0869d2e42ce856f8c2106da9a2cd8c98f348f3a456711a1f2eef99b602",
+      "sha256": "e3c510c7f01066bef15866d5d9a20f1a97f5c78e2cce036775a8743c0f78e382",
+      "bytes": 48946,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-tomato",
+      "file": "scene-tomato.webp",
+      "originalSha256": "3683a26472fe15c25d2afd1dd342949fbb3cfa6a6f572b260e8a8134c589103c",
+      "sha256": "ebf968033a74545367a56caffa3e324f5d16b0a26e81577d9f0acd1fbb3b74c1",
+      "bytes": 39544,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-potato",
+      "file": "scene-potato.webp",
+      "originalSha256": "4f679b4e23d2803b3173923eb1d53f9e2eca6f97fa6f460daf6550cbe8bc3198",
+      "sha256": "8687c6f78c57e21d1f056b77dd84de58a25d31ec2561e4ad4b9558e12e4f47a8",
+      "bytes": 44144,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-carrot",
+      "file": "scene-carrot.webp",
+      "originalSha256": "ba5b604c46fbb49f78cbe655894140f49518105192eef800cb081964c524bab8",
+      "sha256": "464d09dfc65cb6f7d9837f9d93640576b18eb56ba9863fd326bdbe457234baea",
+      "bytes": 57724,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-onion",
+      "file": "scene-onion.webp",
+      "originalSha256": "91fff38a1374c1a555a401a207bf823c963821ff7ab8c99376f0c56d8b5ea81b",
+      "sha256": "e5ac6d3fa92be2169e05323343b48c57d02b72b65887c71008d92bda7b84d9c4",
+      "bytes": 47066,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-lettuce",
+      "file": "scene-lettuce.webp",
+      "originalSha256": "b95ace1e08b5799c98cb2577a5e1ca835d6ff88690edc860f4a147cf4cd0919c",
+      "sha256": "7e5e66521427fd6af48f1006663518956fc4bc294c424065ad4a8d2ebdb1b8aa",
+      "bytes": 54574,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-corn",
+      "file": "scene-corn.webp",
+      "originalSha256": "ee70ff671c27f90064f9fc9cf35016d59b66f48c912fc7acfb05afc0f9b3efc4",
+      "sha256": "12d20e96b67f1d610d0f2ae53a0ca2e17ef91f9fe5bb09b62bb30260c084122a",
+      "bytes": 55726,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ]
+}

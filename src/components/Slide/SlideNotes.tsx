@@ -1,3 +1,4 @@
+import { Button } from '../Button/Button'
 import { useEffect, useRef } from 'react'
 import type { SlideNotesProps } from './SlideNotes.types'
 import * as S from './SlideNotes.styles'
@@ -40,7 +41,7 @@ export function SlideNotes({
           <span aria-hidden="true">✦</span>
           {labels?.title ?? 'Notes'}
         </S.Heading>
-        <S.Action
+        <Button
           size="sm"
           variant="secondary"
           onClick={() => {
@@ -49,15 +50,15 @@ export function SlideNotes({
           }}
         >
           {labels?.clear ?? 'Clear'}
-        </S.Action>
-        <S.Action
+        </Button>
+        <Button
           size="sm"
           variant="secondary"
           aria-label={labels?.close ?? 'Close notes'}
           onClick={onClose}
         >
           ✕
-        </S.Action>
+        </Button>
       </S.Header>
       <S.Editor
         ref={inputRef}

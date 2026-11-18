@@ -66,7 +66,9 @@ for (const [width, height] of [
           ),
         )
         await new Promise((r) =>
-          requestAnimationFrame(() => requestAnimationFrame(r)),
+          globalThis.requestAnimationFrame(() =>
+            globalThis.requestAnimationFrame(r),
+          ),
         )
       })
       assert(

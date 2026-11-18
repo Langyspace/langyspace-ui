@@ -1,8 +1,8 @@
 import { useRef, useState } from 'react'
 import { useLessonPage } from './useLessonPage'
 import { LessonNotesTrigger } from './LessonNotesTrigger'
-import { Button } from '../../../src/components/Button/Button'
-import { MaterialTheme } from './MaterialTheme'
+import { MaterialTheme, MaterialThemeSwitch } from './MaterialTheme'
+import { useMaterialThemeSwitch } from './useMaterialThemeSwitch'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { useLessonSpeech } from './useLessonSpeech'
 import { LessonNotes } from './LessonNotes'
@@ -47,16 +47,7 @@ export function LessonShell({
   pages,
 }: LessonShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
-  const [light, setLight] = useState(() => {
-    try {
-      return (
-        themeSwitch &&
-        window.localStorage.getItem('langyspace.materials.theme') === 'light'
-      )
-    } catch {
-      return false
-    }
-  })
+  const { light, toggle } = useMaterialThemeSwitch(themeSwitch)
   const group = exerciseGroups?.find((ids) => ids.includes(pageId))
   const [notes, setNotes] = useState(false)
   const button = useRef<HTMLButtonElement>(null),
@@ -93,24 +84,7 @@ export function LessonShell({
               </S.ProgressCount>
             ) : null}
             {themeSwitch ? (
-              <Button
-                variant="secondary"
-                size="sm"
-                aria-label={light ? 'Ativar tema escuro' : 'Ativar tema claro'}
-                onClick={() => {
-                  try {
-                    window.localStorage.setItem(
-                      'langyspace.materials.theme',
-                      light ? 'dark' : 'light',
-                    )
-                  } catch {
-                    // The theme still changes when storage is unavailable.
-                  }
-                  setLight(!light)
-                }}
-              >
-                {light ? 'Escuro' : 'Claro'}
-              </Button>
+              <MaterialThemeSwitch light={light} onToggle={toggle} />
             ) : null}
             <LessonNotesTrigger
               ref={button}

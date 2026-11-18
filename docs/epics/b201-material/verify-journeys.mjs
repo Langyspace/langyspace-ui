@@ -1,4 +1,4 @@
-/* global window, document */
+/* global window */
 import { chromium, expect } from 'playwright/test'
 import assert from 'node:assert/strict'
 import { readFile, writeFile } from 'node:fs/promises'

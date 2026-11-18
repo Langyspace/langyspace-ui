@@ -30,7 +30,7 @@ for (const [p, sel] of [
   [ref, null],
 ])
   await p.evaluate(async (sel) => {
-    const a = sel ? document.querySelector(sel) : window.rajAudio
+    const a = sel ? document.querySelector(sel) : globalThis.window.rajAudio
     if (!a.duration)
       await new Promise((r) =>
         a.addEventListener('loadedmetadata', r, { once: true }),
@@ -55,7 +55,7 @@ await now.getByRole('button', { name: 'Pause', exact: true }).click()
 await ref
   .getByRole('button', { name: 'Pause Raj’s voice message', exact: true })
   .click()
-async function pair(label, id) {
+async function pair(label) {
   for (const [p, side] of [
     [ref, 'b'],
     [now, 'a'],
@@ -94,10 +94,7 @@ for (const [width, height] of [
     await ref
       .locator('#s9 .ph-chat')
       .evaluate((e, end) => (e.scrollTop = end ? e.scrollHeight : 0), end)
-    await pair(
-      'transcript-' + (end ? 'end-' : 'start-') + width + 'x' + height,
-      's9',
-    )
+    await pair('transcript-' + (end ? 'end-' : 'start-') + width + 'x' + height)
   }
 }
 results.visualMediaNote =
