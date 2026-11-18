@@ -28,3 +28,9 @@ export const Prompt = styled.li`
     line-height: 1.6;
   }
 `
+
+export const AnswerPanel = styled.div`
+  display: grid;
+  justify-items: start;
+  gap: ${theme.spacing[2]};
+`

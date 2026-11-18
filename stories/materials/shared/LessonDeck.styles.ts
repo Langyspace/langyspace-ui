@@ -1,4 +1,5 @@
 import { styled } from 'styled-components'
+import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { theme } from '../../../src/foundations/theme/theme'
 import { recipe } from '../../../src/components/Exercise/Material.shared.styles'
 
@@ -41,5 +42,36 @@ export const Goal = styled.p`
   strong {
     color: ${(p) => recipe(p).accent};
     margin-right: ${theme.spacing[2]};
+  }
+`
+
+export const ExerciseProgress = styled.span`
+  color: ${(p) => recipe(p).foreground};
+  font-size: ${theme.typography.fontSize.xs};
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+`
+
+export const ExerciseProgressLabel = styled.span`
+  @media (max-width: ${theme.breakpoints.sm}) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+`
+
+export const MaterialDeck = styled(SlideDeck)`
+  color-scheme: dark;
+  &[data-material-theme='light'] {
+    color-scheme: light;
+  }
+
+  @media (max-width: ${theme.breakpoints.sm}) {
+    > nav {
+      gap: ${theme.spacing[2]};
+      padding-inline: ${theme.spacing[3]};
+    }
   }
 `

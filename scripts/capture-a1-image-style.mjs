@@ -56,9 +56,11 @@ try {
       )
       await page.locator('[data-slide-id]').first().waitFor()
       await page.evaluate(async () => {
-        await document.fonts.ready
+        await globalThis.document.fonts.ready
         await Promise.all(
-          [...document.images].map((img) => img.decode().catch(() => {})),
+          [...globalThis.document.images].map((img) =>
+            img.decode().catch(() => {}),
+          ),
         )
       })
       const slides = page.locator('[data-slide-id]')

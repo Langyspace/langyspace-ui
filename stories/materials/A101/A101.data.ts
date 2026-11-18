@@ -17,13 +17,13 @@ export const image = (name: string) => {
 export const lesson = source
 export const order = [
   's1',
+  's4',
   's21',
   's22',
   's23',
   's24',
   's25',
   's26',
-  's4',
   's51',
   's52',
   's53',
@@ -159,11 +159,27 @@ export const gapTexts = [
 ]
 export const gapAnswers = ['am', 'from', 'are', 'am', 'is', 'He']
 export const questions = [
-  'Where is Kim from?',
-  'Where is Ana from?',
-  'How is Kim?',
-  'Where is Lukas from?',
-  'How is Lukas?',
+  {
+    id: 'dialogue-1',
+    prompt: 'Where is Kim from?',
+    answer: 'She’s from Korea.',
+  },
+  {
+    id: 'dialogue-2',
+    prompt: 'Where is Ana from?',
+    answer: 'She’s from Brazil.',
+  },
+  {
+    id: 'dialogue-3',
+    prompt: 'How is Kim?',
+    answer: 'She’s tired, but she’s happy.',
+  },
+  {
+    id: 'dialogue-4',
+    prompt: 'Where is Lukas from?',
+    answer: 'He’s from Germany.',
+  },
+  { id: 'dialogue-5', prompt: 'How is Lukas?', answer: 'He’s cold.' },
 ]
 export const trueForYou = [
   'I’m American.',

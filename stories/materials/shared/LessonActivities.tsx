@@ -1,3 +1,4 @@
+import { AnswerDisclosure } from './AnswerDisclosure'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import * as Common from '../../../src/components/Exercise/Material.shared.styles'
@@ -201,6 +202,7 @@ export function ReviewActivity({
               </Button>
             ))}
           </Common.Row>
+          <AnswerDisclosure question={item.sentence} answer={item.answer} />
           {answers[item.sentence] !== undefined ? (
             <Common.Hint role="status">
               {answers[item.sentence] === item.correct

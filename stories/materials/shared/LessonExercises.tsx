@@ -3,7 +3,7 @@ import { Button } from '../../../src/components/Button/Button'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GapFillExercise } from '../../../src/components/Exercise/GapFillExercise'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import { AnswerDisclosure } from './AnswerDisclosure'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import * as Common from '../../../src/components/Exercise/Material.shared.styles'
 import * as Styled from './LessonExercises.styles'
@@ -99,6 +99,7 @@ export function ChoiceExercise({
           {explanation ? ` ${explanation}` : ''}
         </Common.Hint>
       ) : null}
+      <AnswerDisclosure question={question} answer={options[correctIndex]} />
       {selected !== undefined ? (
         <Button variant="text" onClick={() => setSelected(undefined)}>
           Tentar novamente
@@ -112,6 +113,9 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
   const [translations, setTranslations] = useState<string[]>([])
   const { speak, error } = useMaterialSpeech()
   const speakers = [...new Set(lines.map((line) => line.speaker))]
+  const translatable = lines.filter((line) => line.translation)
+  const allTranslated =
+    translatable.length > 0 && translations.length === translatable.length
   return (
     <Common.Stack>
       <LearningDialogue
@@ -128,6 +132,21 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
         onTranslate={(id) => setTranslations((ids) => toggle(ids, id))}
         onPlay={(id) => speak(lines.find((line) => line.id === id)?.text ?? '')}
       />
+      {translatable.length > 0 ? (
+        <Common.Row>
+          <Button
+            variant="secondary"
+            aria-expanded={allTranslated}
+            onClick={() =>
+              setTranslations(
+                allTranslated ? [] : translatable.map((line) => line.id),
+              )
+            }
+          >
+            {allTranslated ? 'Ocultar tradução' : 'Ver em português'}
+          </Button>
+        </Common.Row>
+      ) : null}
       {error ? <Common.Hint role="status">{error}</Common.Hint> : null}
     </Common.Stack>
   )
@@ -137,7 +156,6 @@ export function PromptExercise({
   items,
   numbered = true,
 }: PromptExerciseProps) {
-  const [revealed, setRevealed] = useState<string[]>([])
   return (
     <Styled.PromptList>
       {items.map((item, index) => (
@@ -145,18 +163,12 @@ export function PromptExercise({
           {numbered ? (
             <Common.Number aria-hidden="true">{index + 1}</Common.Number>
           ) : null}
-          {item.answer ? (
-            <RevealCard
-              marker=""
-              revealed={revealed.includes(item.id)}
-              answer={item.answer}
-              onClick={() => setRevealed((ids) => toggle(ids, item.id))}
-            >
-              {item.prompt}
-            </RevealCard>
-          ) : (
+          <Common.Stack>
             <p>{item.prompt}</p>
-          )}
+            {item.answer ? (
+              <AnswerDisclosure question={item.prompt} answer={item.answer} />
+            ) : null}
+          </Common.Stack>
         </Styled.Prompt>
       ))}
     </Styled.PromptList>

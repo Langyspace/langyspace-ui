@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
-import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { VoiceMessageDemo } from '../../components/VoiceMessage/VoiceMessageDemo'
 import {
@@ -99,7 +99,6 @@ export function A101Lesson({
           >
             <WarmUpSection
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
-              index={slot}
               speak={speech.speak}
             />
           </SlidePage>
@@ -130,7 +129,7 @@ export function A101Lesson({
             width="reading"
             density="compact"
             eyebrow="Guided conversation"
-            instruction="Escute o áudio e depois leia o texto com a sua professora."
+            instruction="Escute o áudio e leia com a sua professora. Clique em uma fala para ver em português."
             title={
               <Styled.TitleAudio>
                 Nice to meet you
@@ -193,7 +192,7 @@ export function A101Lesson({
             width="reading"
             eyebrow="Guided conversation"
             title="Questions"
-            instruction="Responda as perguntas sobre o diálogo."
+            instruction="Responda às perguntas sobre o diálogo. Use Answer para conferir."
           >
             <DialogueQuestions />
           </SlidePage>
@@ -369,7 +368,7 @@ export function A101Lesson({
   })
   return (
     <Styled.Stage>
-      <SlideDeck
+      <MaterialSlideDeck
         previousPageLabel="Back"
         label="A1.01 · Introduce yourself"
         pages={pages}

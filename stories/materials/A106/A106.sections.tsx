@@ -86,6 +86,9 @@ export function ExploreHome() {
                     setCorrect((old) =>
                       old.includes(current) ? old : [...old, current],
                     )
+                    setShown((old) =>
+                      old.includes(current) ? old : [...old, current],
+                    )
                     speech.speak(item.answer)
                   }}
                 >
@@ -93,6 +96,7 @@ export function ExploreHome() {
                 </Button>
                 <Button
                   variant="secondary"
+                  aria-expanded={shown.includes(current)}
                   onClick={() =>
                     setShown((old) =>
                       old.includes(current)
@@ -101,10 +105,10 @@ export function ExploreHome() {
                     )
                   }
                 >
-                  {shown.includes(current) ? 'Hide' : 'Show'}
+                  {shown.includes(current) ? 'Hide answer' : 'Answer'}
                 </Button>
               </Common.Row>
-              {shown.includes(current) || correct.includes(current) ? (
+              {shown.includes(current) ? (
                 <Button
                   variant="text"
                   onClick={() => speech.speak(item.answer)}

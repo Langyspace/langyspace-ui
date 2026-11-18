@@ -43,6 +43,8 @@ export const Navigation = styled.nav`
 `
 
 export const BackButton = styled(Button)`
+  flex-shrink: 0;
+  white-space: nowrap;
   background: ${(p) => recipe(p).surface};
   min-height: calc(${theme.spacing[8]} + ${theme.spacing[1]});
   padding: 0 ${theme.spacing[3]};

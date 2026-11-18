@@ -1,3 +1,4 @@
+import { recipe } from '../Exercise/Material.shared.styles'
 import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
@@ -101,36 +102,43 @@ export const Option = styled(Pressable).withConfig({
     min-height: 3.5rem;
     padding: ${theme.spacing[3]} ${theme.spacing[3]};
   }
-  ${({ $density, $state }) =>
-    $density === 'compact' &&
-    css`
-      min-height: ${theme.exercises.compactOptionHeight};
-      background: ${$state === 'default' ? theme.slides.surface : ''};
-      border-color: ${$state === 'default' ? theme.slides.border : ''};
-      padding: ${theme.spacing[1]} ${theme.spacing[2]};
-      border-radius: ${theme.radius.lg};
+  ${(props) => props.$density === 'compact' && compactOption(props)}
+`
+
+const compactOption = (
+  props: Parameters<typeof recipe>[0] & { $state: QuizOptionState },
+) => {
+  const { $state } = props
+  return css`
+    min-height: ${theme.exercises.compactOptionHeight};
+    background: ${$state === 'default' ? recipe(props).surface : ''};
+    border-color: ${$state === 'default' ? recipe(props).border : ''};
+    padding: ${theme.spacing[1]} ${theme.spacing[2]};
+    border-radius: ${theme.radius.lg};
+    ${Letter} {
+      width: 36px;
+      height: 36px;
+      border-radius: ${theme.radius.circle};
+      background: ${recipe(props).canvas};
+      color: ${recipe(props).muted};
+      font-family: ${theme.slides.displayFontFamily};
+      font-size: 0.9375rem;
+    }
+    ${OptionText} {
+      color: ${$state === 'default' ? recipe(props).foreground : ''};
+      font-size: clamp(${theme.typography.fontSize.lg}, 2.8cqh, 1.375rem);
+      font-weight: ${theme.typography.fontWeight.semibold};
+    }
+    @container (max-width: ${theme.breakpoints.md}) {
+      min-height: ${theme.spacing[12]};
       ${Letter} {
-        width: 36px;
-        height: 36px;
-        border-radius: ${theme.radius.circle};
-        background: ${theme.slides.canvas};
-        font-family: ${theme.slides.displayFontFamily};
-        font-size: 0.9375rem;
+        width: 28px;
+        height: 28px;
+        font-size: 0.8125rem;
       }
       ${OptionText} {
-        font-size: clamp(${theme.typography.fontSize.lg}, 2.8cqh, 1.375rem);
-        font-weight: ${theme.typography.fontWeight.semibold};
+        font-size: ${theme.typography.fontSize.md};
       }
-      @container (max-width: ${theme.breakpoints.md}) {
-        min-height: ${theme.spacing[12]};
-        ${Letter} {
-          width: 28px;
-          height: 28px;
-          font-size: 0.8125rem;
-        }
-        ${OptionText} {
-          font-size: ${theme.typography.fontSize.md};
-        }
-      }
-    `}
-`
+    }
+  `
+}

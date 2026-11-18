@@ -40,9 +40,11 @@ const story = (code) =>
   `http://localhost:6006/iframe.html?id=materials-a1-0${code.at(-1)}--complete-lesson&viewMode=story`
 async function settle(page) {
   await page.evaluate(async () => {
-    await document.fonts.ready
+    await globalThis.document.fonts.ready
     await Promise.all(
-      [...document.images].map((image) => image.decode().catch(() => {})),
+      [...globalThis.document.images].map((image) =>
+        image.decode().catch(() => {}),
+      ),
     )
   })
 }
@@ -91,9 +93,12 @@ try {
         )
         await page.waitForFunction(
           () =>
-            !document.querySelector('[data-slide-viewport]') ||
-            document.querySelector('[data-slide-viewport]').scrollWidth <=
-              document.querySelector('[data-slide-viewport]').clientWidth + 2,
+            !globalThis.document.querySelector('[data-slide-viewport]') ||
+            globalThis.document.querySelector('[data-slide-viewport]')
+              .scrollWidth <=
+              globalThis.document.querySelector('[data-slide-viewport]')
+                .clientWidth +
+                2,
         )
         const overflow = await slide.evaluate(
           (element) => element.scrollWidth > element.clientWidth + 2,

@@ -1,3 +1,4 @@
+import { AnswerDisclosure } from './AnswerDisclosure'
 import { useId, useState } from 'react'
 import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { Button } from '../../../src/components/Button/Button'
@@ -140,6 +141,7 @@ export function ListeningActivity({
                   </Phone.Choice>
                 ))}
               </Phone.Choices>
+              <AnswerDisclosure question={item.text} answer={item.correct} />
               {answers[item.id] ? (
                 <Common.Hint role="status">
                   {answers[item.id] === item.correct

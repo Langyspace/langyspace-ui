@@ -1,5 +1,5 @@
 import { useCallback, useState } from 'react'
-import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
+import { MaterialSlideDeck } from './MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import * as Styled from './LessonDeck.styles'
 import { LessonNotes } from './LessonNotes'
@@ -49,7 +49,7 @@ export function LessonDeck({
   }))
   return (
     <Styled.Stage>
-      <SlideDeck
+      <MaterialSlideDeck
         label={`${lesson.code} · ${lesson.title}${learnerName ? ` · ${learnerName}` : ''}`}
         pages={pages}
         pageId={pageId}
