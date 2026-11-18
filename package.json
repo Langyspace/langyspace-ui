@@ -63,7 +63,7 @@
     "write:api": "node scripts/check-public-api.mjs --write",
     "test:styling-policy": "node --test test/audit/styling.node-test.mjs",
     "test:styling-system": "node audit/styling-cli.mjs scripts/styling-system.audit.config.mjs",
-    "test:build-transforms": "node --test scripts/compact-jsx-annotations.node-test.mjs scripts/fold-style-tokens.node-test.mjs",
+    "test:build-transforms": "node --test scripts/compact-jsx-annotations.node-test.mjs scripts/fold-style-tokens.node-test.mjs scripts/inline-theme.node-test.mjs",
     "build:materials": "node scripts/build-materials.mjs"
   },
   "peerDependencies": {

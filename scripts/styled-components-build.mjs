@@ -1,16 +1,18 @@
 import babel from '@rolldown/plugin-babel'
-import { inlineTheme } from './inline-theme.mjs'
+import { themeBuild } from './inline-theme.mjs'
 import { foldStyleTokens } from './fold-style-tokens.mjs'
 import { compactJSXAnnotations } from './compact-jsx-annotations.mjs'
 
 // Keep authored CSS readable; only the distributed JavaScript is compacted.
 // Public owners already declare stable componentId values.
 export function styledComponentsBuild() {
+  const theme = themeBuild()
   return [
+    theme.defaults,
     babel({
       include: /[/\\](?:src|stories)[/\\].*\.[jt]sx?$/,
       plugins: [
-        inlineTheme,
+        theme.inline,
         foldStyleTokens,
         [
           'babel-plugin-styled-components',
@@ -18,7 +20,7 @@ export function styledComponentsBuild() {
             displayName: false,
             ssr: true,
             minify: true,
-            transpileTemplateLiterals: true,
+            transpileTemplateLiterals: false,
             pure: true,
           },
         ],

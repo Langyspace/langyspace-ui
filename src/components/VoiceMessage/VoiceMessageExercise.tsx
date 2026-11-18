@@ -1,3 +1,4 @@
+import { microphonePath } from '../../internal/audioIconPaths'
 import { useId, useRef } from 'react'
 import { Avatar } from '../Avatar/Avatar'
 import { Button } from '../Button/Button'
@@ -5,31 +6,9 @@ import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
 
-const wave = [
-  { id: 'a', height: 10 },
-  { id: 'b', height: 26 },
-  { id: 'c', height: 12 },
-  { id: 'd', height: 27 },
-  { id: 'e', height: 12 },
-  { id: 'f', height: 22 },
-  { id: 'g', height: 15 },
-  { id: 'h', height: 14 },
-  { id: 'i', height: 21 },
-  { id: 'j', height: 9 },
-  { id: 'k', height: 27 },
-  { id: 'l', height: 9 },
-  { id: 'm', height: 27 },
-  { id: 'n', height: 8 },
-  { id: 'o', height: 23 },
-  { id: 'p', height: 9 },
-  { id: 'q', height: 18 },
-  { id: 'r', height: 18 },
-  { id: 's', height: 16 },
-  { id: 't', height: 24 },
-  { id: 'u', height: 17 },
-  { id: 'v', height: 25 },
-  { id: 'w', height: 15 },
-  { id: 'x', height: 22 },
+const waveHeights = [
+  10, 26, 12, 27, 12, 22, 15, 14, 21, 9, 27, 9, 27, 8, 23, 9, 18, 18, 16, 24,
+  17, 25, 15, 22,
 ]
 
 function formatTime(seconds: number) {
@@ -190,11 +169,11 @@ function VoiceMessageContent({
                   </svg>
                 </Styled.Play>
                 <Styled.Wave aria-hidden="true">
-                  {wave.map(({ id: barId, height }, index) => (
+                  {waveHeights.map((height, index) => (
                     <Styled.Bar
-                      key={barId}
+                      key={index}
                       $height={height}
-                      $played={progress > index / wave.length}
+                      $played={progress > index / waveHeights.length}
                     />
                   ))}
                 </Styled.Wave>
@@ -260,7 +239,7 @@ function VoiceMessageContent({
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
-                  <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
+                  <path d={microphonePath} />
                 </svg>
               </Styled.Reply>
             ) : (
@@ -271,7 +250,7 @@ function VoiceMessageContent({
                   viewBox="0 0 24 24"
                   fill="currentColor"
                 >
-                  <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
+                  <path d={microphonePath} />
                 </svg>
               </Styled.Microphone>
             )}
