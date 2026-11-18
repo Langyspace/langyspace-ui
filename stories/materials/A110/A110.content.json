@@ -1,0 +1,1094 @@
+{
+  "code": "A1.10",
+  "number": 10,
+  "title": "A ticket, please",
+  "before": "A ticket,",
+  "accent": "please",
+  "goal": "Comprar uma passagem para você e para quem viaja com você e confirmar destino, horário, parada e preço.",
+  "pages": [
+    {
+      "id": "s1",
+      "title": "Do you remember?",
+      "eyebrow": "Review",
+      "instruction": "Answer your teacher’s questions.",
+      "prompts": [
+        {
+          "q": "Where do you buy clothes?"
+        },
+        {
+          "q": "What’s your favourite colour?"
+        },
+        {
+          "q": "How much is a good T-shirt in your city?"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "One ticket to Santos",
+      "eyebrow": "Dialogue",
+      "instruction": "Listen and then read the dialogue with your teacher.",
+      "dialogue": "read"
+    },
+    {
+      "id": "s17",
+      "title": "Comprehension questions",
+      "eyebrow": "Dialogue",
+      "instruction": "Now, answer the questions based on the text.",
+      "prompts": [
+        {
+          "q": "What ticket does Ana buy?",
+          "a": "A return ticket to Santos."
+        },
+        {
+          "q": "What time is the bus? Which platform?",
+          "a": "At two thirty, from platform 4."
+        },
+        {
+          "q": "How long does it take? How much is it?",
+          "a": "About one hour. It’s 35 reais."
+        },
+        {
+          "q": "Does the bus stop at the beach?",
+          "a": "No, it doesn’t. The last stop is the bus station."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Transport",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say how you go to work or school.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_r_bus",
+            "en": "a bus",
+            "pt": "ônibus",
+            "id": "V01"
+          },
+          {
+            "ic": "x_tr_subway",
+            "en": "the subway",
+            "pt": "metrô",
+            "id": "V02"
+          },
+          {
+            "ic": "x_tr_train",
+            "en": "a train",
+            "pt": "trem",
+            "id": "V03"
+          },
+          {
+            "ic": "x_tr_plane",
+            "en": "a plane",
+            "pt": "avião",
+            "id": "V04"
+          },
+          {
+            "ic": "x_tr_taxi",
+            "en": "a taxi",
+            "pt": "táxi",
+            "id": "V05"
+          },
+          {
+            "ic": "x_tr_car",
+            "en": "a car",
+            "pt": "carro",
+            "id": "V06"
+          },
+          {
+            "ic": "x_tr_bike",
+            "en": "a bike",
+            "pt": "bicicleta",
+            "id": "V07"
+          },
+          {
+            "ic": "x_d_walk",
+            "en": "on foot",
+            "pt": "a pé",
+            "id": "V08"
+          },
+          {
+            "ic": "x_pl_busstop",
+            "en": "a bus stop",
+            "pt": "ponto de ônibus",
+            "id": "V09"
+          }
+        ],
+        "letterHint": true
+      },
+      "tip": {
+        "text": "Para dizer como vai: by bus, by car, by subway. A pé é diferente: on foot.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s6",
+      "title": "At the station",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say what time your bus or train leaves.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_st_ticket",
+            "en": "a ticket",
+            "pt": "passagem",
+            "id": "V11"
+          },
+          {
+            "ic": "x_st_station",
+            "en": "a platform",
+            "pt": "plataforma",
+            "id": "V12"
+          },
+          {
+            "ic": "x_st_leave",
+            "en": "leave",
+            "pt": "sair, partir",
+            "id": "V13"
+          },
+          {
+            "ic": "x_st_arrive",
+            "en": "arrive",
+            "pt": "chegar",
+            "id": "V14"
+          }
+        ],
+        "letterHint": false
+      },
+      "tip": {
+        "text": "one-way = só ida. return = ida e volta. the next bus = o próximo ônibus.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s31",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "How does Leo go to work?",
+          "im": "n10_bus",
+          "id": "A01",
+          "alt": "Leo, um ônibus e uma maleta de trabalho",
+          "o": [
+            "He goes to work by bus.",
+            "He goes to work in bus.",
+            "He go to work by bus."
+          ],
+          "a": 0,
+          "now": "Answer about you: How do you go to work or school?",
+          "why": {
+            "1": "Meio de transporte: by bus.",
+            "2": "Com he, o verbo ganha es: goes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "How does Laura go to school?",
+          "im": "n10_bike",
+          "id": "A02",
+          "alt": "Laura e uma bicicleta",
+          "o": [
+            "She go to school by bike.",
+            "She goes to school by bike.",
+            "She goes to school on bike."
+          ],
+          "a": 1,
+          "now": "Change the person: How does your mother go to work?",
+          "why": {
+            "0": "Com she, o verbo ganha es: goes.",
+            "2": "Bicicleta também usa by: by bike."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Kim, how do you go to work?",
+          "im": "n10_walk",
+          "id": "A03",
+          "alt": "Kim, uma pessoa caminhando e uma maleta",
+          "o": [
+            "I go to work by foot.",
+            "I goes to work on foot.",
+            "I go to work on foot."
+          ],
+          "a": 2,
+          "now": "Answer about you: Do you walk to the bakery?",
+          "why": {
+            "0": "A pé é on foot.",
+            "1": "Com I, o verbo fica sem s: I go."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "What time does the train leave?",
+          "im": "n10_train",
+          "id": "A04",
+          "alt": "Os pais da Ana, um trem e o horário 9:15",
+          "o": [
+            "It leaves at nine fifteen.",
+            "It leave at nine fifteen.",
+            "It leaves on nine fifteen."
+          ],
+          "a": 0,
+          "now": "Ask your teacher: What time do you leave home?",
+          "why": {
+            "1": "Com it, o verbo ganha s: leaves.",
+            "2": "Para horário, use at."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "How long does the flight take?",
+          "im": "n10_plane",
+          "id": "A05",
+          "alt": "Ana, Kim, um avião e a etiqueta 2 hours",
+          "o": [
+            "It take two hours.",
+            "It takes two hours.",
+            "It takes two hour."
+          ],
+          "a": 1,
+          "now": "Change the person: How long does your best friend’s trip to work take?",
+          "why": {
+            "0": "Com it, o verbo ganha s: takes.",
+            "2": "Duas horas: hours."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "What time? How long? How do you go?",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Horário",
+            "text": "What time does the bus leave? It leaves at two thirty. Também: arrive (chegar)."
+          },
+          {
+            "label": "Quanto tempo",
+            "text": "How long does it take? → It takes one hour."
+          },
+          {
+            "label": "Como você vai",
+            "text": "How do you go to work? → I go by bus. She goes on foot."
+          }
+        ],
+        "cols": ["Quem", "Exemplo"],
+        "rows": [
+          {
+            "cells": ["leave", "The bus leaves at two thirty."],
+            "audio": "C01",
+            "spoken": "The bus leaves at two thirty."
+          },
+          {
+            "cells": ["arrive", "It arrives at three thirty."],
+            "audio": "C02",
+            "spoken": "It arrives at three thirty."
+          },
+          {
+            "cells": ["how long", "It takes one hour."],
+            "audio": "C03",
+            "spoken": "It takes one hour."
+          },
+          {
+            "cells": ["by", "I go to work by bus."],
+            "audio": "C04",
+            "spoken": "I go to work by bus."
+          },
+          {
+            "cells": ["on foot", "She goes to school on foot."],
+            "audio": "C05",
+            "spoken": "She goes to school on foot."
+          },
+          {
+            "cells": ["they", "They take the subway."],
+            "audio": "C06",
+            "spoken": "They take the subway."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s22",
+      "title": "Quick check",
+      "eyebrow": "Grammar",
+      "instruction": "Choose the correct word.",
+      "choices": [
+        {
+          "t": "The train ___ at nine.",
+          "o": ["leave", "leaves"],
+          "a": 1
+        },
+        {
+          "t": "I go to work ___ subway.",
+          "o": ["by", "on"],
+          "a": 0
+        },
+        {
+          "t": "How long does it ___?",
+          "o": ["take", "takes"],
+          "a": 0
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "title": "Make your own examples",
+      "eyebrow": "Grammar",
+      "instruction": "Create 3 examples about how you and the people in your life travel.",
+      "prompts": [
+        {
+          "q": "I",
+          "a": "I go to work by subway. It takes 40 minutes."
+        },
+        {
+          "q": "he / she",
+          "a": "My sister goes to school on foot."
+        },
+        {
+          "q": "it",
+          "a": "My bus leaves at seven."
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "How does Leo go to work?",
+        "model": ["He goes to work {by bus}."],
+        "image": "n10_bus",
+        "alt": "Leo com uma maleta ao lado de um ônibus."
+      }
+    },
+    {
+      "id": "s42",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "How does Laura go to school?",
+        "model": ["She {goes to school by bike}."],
+        "image": "n10_bike",
+        "alt": "Laura ao lado de uma bicicleta."
+      }
+    },
+    {
+      "id": "s43",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "How does Kim go to work?",
+        "model": ["She {goes to work on foot}."],
+        "image": "n10_walk",
+        "alt": "Kim caminha pela calçada com uma maleta."
+      }
+    },
+    {
+      "id": "s44",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What time does the train leave?",
+        "model": ["{It leaves at nine fifteen}."],
+        "image": "n10_train",
+        "alt": "Os pais da Ana estão junto a um trem. O painel mostra 9:15."
+      }
+    },
+    {
+      "id": "s45",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "How long does the flight take?",
+        "model": ["{It takes two hours}."],
+        "image": "n10_plane",
+        "alt": "Ana e Kim ao lado de um avião e da etiqueta 2 hours."
+      }
+    },
+    {
+      "id": "s46",
+      "title": "Now you",
+      "eyebrow": "",
+      "instruction": "Answer about you and the people in your life.",
+      "prompts": [
+        {
+          "q": "How do you go to work or school? How long does it take?",
+          "a": "I go by… It takes… minutes."
+        },
+        {
+          "q": "How does your mother or best friend go to work?",
+          "a": "She goes by… / on foot."
+        },
+        {
+          "q": "What time do you leave home?",
+          "a": "I leave home at…"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Check it: Does it stop…? Is this…?",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "É esse?",
+            "text": "Is this the bus to Santos? → Yes, it is. / No, it isn’t."
+          },
+          {
+            "label": "Para em…?",
+            "text": "Does it stop at the beach? → Yes, it does. / No, it doesn’t."
+          },
+          {
+            "label": "Qual?",
+            "text": "Which platform? → It’s platform 4. Which bus? → The bus to Rio."
+          }
+        ],
+        "cols": ["Question", "Yes", "No"],
+        "rows": [
+          {
+            "cells": [
+              "Is this the bus to Santos?",
+              "Yes, it is.",
+              "No, it isn’t. It’s the bus to Rio."
+            ]
+          },
+          {
+            "cells": [
+              "Does it stop at the beach?",
+              "Yes, it does.",
+              "No, it doesn’t."
+            ]
+          },
+          {
+            "cells": [
+              "Does the train leave at nine?",
+              "Yes, it does.",
+              "No, it doesn’t. It leaves at ten."
+            ]
+          },
+          {
+            "cells": [
+              "Is it a return ticket?",
+              "Yes, it is.",
+              "No, it’s one-way."
+            ]
+          }
+        ]
+      },
+      "tip": {
+        "text": "Não entendeu o horário? Peça: Sorry, can you repeat that?",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s141",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Is this the bus to Santos?”",
+          "im": "n10_santos",
+          "id": "G01",
+          "alt": "Kim, um ônibus com a placa Santos e um sinal de certo",
+          "o": ["Yes, it does.", "Yes, it is.", "Yes, there is."],
+          "a": 1,
+          "why": {
+            "0": "A pergunta é com is: Yes, it is.",
+            "2": "A pergunta é com is this: Yes, it is."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s142",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Does it stop at the beach?”",
+          "im": "n10_nobeach",
+          "id": "G02",
+          "alt": "Ana triste, uma praia e um X",
+          "o": ["No, it doesn’t.", "No, it isn’t.", "No, it don’t."],
+          "a": 0,
+          "why": {
+            "1": "A pergunta é com does: No, it doesn’t.",
+            "2": "Com it, use doesn’t."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s143",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "You want to go and come back. What do you say?",
+          "im": "n10_return",
+          "id": "G03",
+          "alt": "Ana, uma passagem e duas setas, uma de ida e uma de volta",
+          "o": [
+            "A one-way ticket, please.",
+            "A ticket return, please.",
+            "A return ticket, please."
+          ],
+          "a": 2,
+          "why": {
+            "0": "One-way é só ida. Ida e volta: return.",
+            "1": "O tipo vem antes: a return ticket."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s144",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Which platform?”",
+          "im": "n10_platform",
+          "id": "G04",
+          "alt": "Kim, uma estação e a etiqueta Platform 4",
+          "o": ["It’s platform 4.", "Is platform 4.", "It platform 4."],
+          "a": 0,
+          "why": {
+            "1": "Não esqueça o it: It’s platform 4.",
+            "2": "Falta o is: It’s platform 4."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "A trip",
+      "eyebrow": "Your turn",
+      "instruction": "Plan a trip with a person in your life. Use the model.",
+      "model": {
+        "question": "A trip",
+        "model": [
+          "Two tickets to {Rio}, please.",
+          "It’s for me and my {sister}.",
+          "What time {does the bus leave}?"
+        ],
+        "alt": ""
+      }
+    },
+    {
+      "id": "s161",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "What time does John’s plane leave?",
+        "model": ["It {leaves at eight}."],
+        "image": "c10_john",
+        "alt": "John, um avião e a etiqueta Rio 8:00"
+      }
+    },
+    {
+      "id": "s162",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "How long does Leticia’s train take?",
+        "model": ["It {takes three hours}."],
+        "image": "c10_leticia",
+        "alt": "Leticia, um trem e a etiqueta 3 hours"
+      }
+    },
+    {
+      "id": "s8",
+      "title": "Fill in the blanks",
+      "eyebrow": "Dialogue",
+      "instruction": "Fill in the blanks of the dialogue you heard. Then read it with your teacher.",
+      "dialogue": "practice"
+    },
+    {
+      "id": "s91",
+      "title": "Your way to work",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "How do you go to work or school?",
+          "a": "I go by…"
+        },
+        {
+          "q": "How long does it take?",
+          "a": "It takes about… minutes."
+        },
+        {
+          "q": "How does your best friend go to work?",
+          "a": "She goes by…"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_r_bus",
+          "en": "bus",
+          "pt": "ônibus"
+        },
+        {
+          "ic": "x_tr_subway",
+          "en": "subway",
+          "pt": "metrô"
+        },
+        {
+          "ic": "x_d_walk",
+          "en": "on foot",
+          "pt": "a pé"
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "title": "Trips",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Where do you like to travel?",
+          "a": "I like to travel to…"
+        },
+        {
+          "q": "Who do you travel with?",
+          "a": "I travel with my…"
+        },
+        {
+          "q": "How do you go there? How long does it take?",
+          "a": "We go by car. It takes three hours."
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_tr_plane",
+          "en": "plane",
+          "pt": "avião"
+        },
+        {
+          "ic": "x_tr_train",
+          "en": "train",
+          "pt": "trem"
+        },
+        {
+          "ic": "x_st_beach",
+          "en": "beach",
+          "pt": "praia"
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "title": "Check it",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Your teacher sells tickets. Buy one to a city you like.",
+          "a": "One ticket to…, please. One-way / return."
+        },
+        {
+          "q": "Ask about the time and the platform.",
+          "a": "What time is the next bus? Which platform?"
+        },
+        {
+          "q": "Check a stop.",
+          "a": "Does it stop at…?"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_st_ticket",
+          "en": "ticket",
+          "pt": "passagem"
+        },
+        {
+          "ic": "x_st_station",
+          "en": "platform",
+          "pt": "plataforma"
+        },
+        {
+          "ic": "x_pl_busstop",
+          "en": "stop",
+          "pt": "parada"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Role play: at the bus station",
+      "eyebrow": "Recycle",
+      "instruction": "Use everything from today in a new situation.",
+      "role": {
+        "img": "scene_board",
+        "alt": "Painel da rodoviária. Santos, 2:30, plataforma 4, R$ 35. Rio, 3:00, plataforma 2, R$ 120. Campinas, 3:15, plataforma 1, R$ 45. Curitiba, 4:00, plataforma 3, R$ 150.",
+        "txt": "Você vai viajar com uma pessoa da sua vida. A professora trabalha na rodoviária. Olhe o painel, compre duas passagens e confirme tudo. Depois, troquem de papel.",
+        "ck": [
+          "Peça as passagens: Two tickets to…, please.",
+          "Diga se é só ida ou ida e volta: One-way / Return, please.",
+          "Pergunte o horário e a plataforma: What time…? Which platform?",
+          "Pergunte quanto tempo leva: How long does it take?",
+          "Confirme uma parada: Does it stop at…?"
+        ],
+        "sup": [
+          "Two tickets to…, please.",
+          "One-way or return?",
+          "What time does it leave?",
+          "How long does it take?",
+          "Does it stop at…?"
+        ]
+      }
+    },
+    {
+      "id": "s122",
+      "title": "Quiz",
+      "eyebrow": "Homework",
+      "instruction": "Answer one quiz question now.",
+      "choices": [
+        {
+          "o": [
+            "It take one hour.",
+            "It takes one hour.",
+            "It takes one hours."
+          ],
+          "a": 1,
+          "why": {
+            "0": "Com it, o verbo ganha s: takes.",
+            "2": "Uma hora: hour."
+          },
+          "t": "How long does the bus to Santos take?",
+          "im": "n10_santos",
+          "alt": "Kim e o ônibus para Santos"
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "title": "Challenge",
+      "eyebrow": "Homework",
+      "instruction": "",
+      "script": {
+        "items": [
+          "One ticket to ___, please.",
+          "Return, please.",
+          "What time does the bus ___?",
+          "How long ___?",
+          "Does it stop at ___?",
+          "I go to work by ___. It takes ___."
+        ],
+        "art": ["x_sparkles", "x_mic"]
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "D01.T1",
+      "who": "ana",
+      "g": "Oi! Uma passagem para Santos, por favor.",
+      "text": "Hi! One ticket to Santos, please."
+    },
+    {
+      "id": "D01.T2",
+      "who": "kim",
+      "g": "Só ida ou ida e volta?",
+      "text": "One-way or return?"
+    },
+    {
+      "id": "D01.T3",
+      "who": "ana",
+      "g": "Ida e volta, por favor. A que horas sai o próximo ônibus?",
+      "text": "Return, please. What time is the next bus?"
+    },
+    {
+      "id": "D01.T4",
+      "who": "kim",
+      "g": "Às duas e meia, da plataforma 4.",
+      "text": "At two thirty, from platform 4."
+    },
+    {
+      "id": "D01.T5",
+      "who": "ana",
+      "g": "Quanto tempo leva?",
+      "text": "How long does it take?"
+    },
+    {
+      "id": "D01.T6",
+      "who": "kim",
+      "g": "Mais ou menos uma hora. São 35 reais.",
+      "text": "About one hour. It’s 35 reais."
+    },
+    {
+      "id": "D01.T7",
+      "who": "ana",
+      "g": "Aqui está. Ele para na praia?",
+      "text": "Here you are. Does it stop at the beach?"
+    },
+    {
+      "id": "D01.T8",
+      "who": "kim",
+      "g": "Não, não para. A última parada é a rodoviária.",
+      "text": "No, it doesn’t. The last stop is the bus station."
+    }
+  ],
+  "gaps": {
+    "D01.T1": "Hi! One {1} to Santos, please.",
+    "D01.T2": "One-way or return?",
+    "D01.T3": "Return, please. What time is the next bus?",
+    "D01.T4": "{2} two thirty, from platform 4.",
+    "D01.T5": "How long does it {3}?",
+    "D01.T6": "About one hour. It’s 35 reais.",
+    "D01.T7": "Here you are. {4} it stop at the beach?",
+    "D01.T8": "No, it doesn’t. The last stop is the bus station."
+  },
+  "bank": {
+    "1": {
+      "o": ["ticket", "platform"],
+      "a": "ticket"
+    },
+    "2": {
+      "o": ["At", "On"],
+      "a": "At"
+    },
+    "3": {
+      "o": ["take", "takes"],
+      "a": "take"
+    },
+    "4": {
+      "o": ["Does", "Is"],
+      "a": "Does"
+    }
+  },
+  "media": {
+    "x_r_bus": {
+      "file": "x-r-bus.webp",
+      "alt": {
+        "s5": "Veículo urbano comprido com rodas e janelas grandes.",
+        "s91": ""
+      }
+    },
+    "x_tr_subway": {
+      "file": "x-tr-subway.webp",
+      "alt": {
+        "s5": "Vagão entrando por um túnel subterrâneo.",
+        "s91": ""
+      }
+    },
+    "x_tr_train": {
+      "file": "x-tr-train.webp",
+      "alt": {
+        "s5": "Veículo de passageiros sobre trilhos.",
+        "s92": ""
+      }
+    },
+    "x_tr_plane": {
+      "file": "x-tr-plane.webp",
+      "alt": {
+        "s5": "Aeronave com fuselagem branca e asas azuis.",
+        "s92": ""
+      }
+    },
+    "x_tr_taxi": {
+      "file": "x-tr-taxi.webp",
+      "alt": {
+        "s5": "Carro amarelo com faixa quadriculada e luz no teto."
+      }
+    },
+    "x_tr_car": {
+      "file": "x-tr-car.webp",
+      "alt": {
+        "s5": "Carro pequeno e vermelho."
+      }
+    },
+    "x_tr_bike": {
+      "file": "x-tr-bike.webp",
+      "alt": {
+        "s5": "Veículo de duas rodas com pedais."
+      }
+    },
+    "x_d_walk": {
+      "file": "x-d-walk.webp",
+      "alt": {
+        "s5": "Pessoa dando um passo à frente.",
+        "s91": ""
+      }
+    },
+    "x_pl_busstop": {
+      "file": "x-pl-busstop.webp",
+      "alt": {
+        "s5": "Placa azul com um desenho de ônibus.",
+        "s93": ""
+      }
+    },
+    "x_st_ticket": {
+      "file": "x-st-ticket.webp",
+      "alt": {
+        "s6": "Bilhete retangular amarelo com bordas perfuradas.",
+        "s93": ""
+      }
+    },
+    "x_st_station": {
+      "file": "x-st-station.webp",
+      "alt": {
+        "s6": "Trem parado junto a uma plataforma elevada.",
+        "s93": ""
+      }
+    },
+    "x_st_leave": {
+      "file": "x-st-leave.webp",
+      "alt": {
+        "s6": "Avião subindo logo acima da pista."
+      }
+    },
+    "x_st_arrive": {
+      "file": "x-st-arrive.webp",
+      "alt": {
+        "s6": "Avião descendo com as rodas perto da pista."
+      }
+    },
+    "n10_bus": {
+      "file": "n10-bus.webp",
+      "alt": {
+        "s31": "Leo, um ônibus e uma maleta de trabalho",
+        "s41": "Leo com uma maleta ao lado de um ônibus."
+      }
+    },
+    "n10_bike": {
+      "file": "n10-bike.webp",
+      "alt": {
+        "s32": "Laura e uma bicicleta",
+        "s42": "Laura ao lado de uma bicicleta."
+      }
+    },
+    "n10_walk": {
+      "file": "n10-walk.webp",
+      "alt": {
+        "s33": "Kim, uma pessoa caminhando e uma maleta",
+        "s43": "Kim caminha pela calçada com uma maleta."
+      }
+    },
+    "n10_train": {
+      "file": "n10-train.webp",
+      "alt": {
+        "s34": "Os pais da Ana, um trem e o horário 9:15",
+        "s44": "Os pais da Ana estão junto a um trem. O painel mostra 9:15."
+      }
+    },
+    "n10_plane": {
+      "file": "n10-plane.webp",
+      "alt": {
+        "s35": "Ana, Kim, um avião e a etiqueta 2 hours",
+        "s45": "Ana e Kim ao lado de um avião e da etiqueta 2 hours."
+      }
+    },
+    "n10_santos": {
+      "file": "n10-santos.webp",
+      "alt": {
+        "s141": "Kim, um ônibus com a placa Santos e um sinal de certo",
+        "s122": "Kim e o ônibus para Santos"
+      }
+    },
+    "n10_nobeach": {
+      "file": "n10-nobeach.webp",
+      "alt": {
+        "s142": "Ana triste, uma praia e um X"
+      }
+    },
+    "n10_return": {
+      "file": "n10-return.webp",
+      "alt": {
+        "s143": "Ana, uma passagem e duas setas, uma de ida e uma de volta"
+      }
+    },
+    "n10_platform": {
+      "file": "n10-platform.webp",
+      "alt": {
+        "s144": "Kim, uma estação e a etiqueta Platform 4"
+      }
+    },
+    "c10_john": {
+      "file": "c10-john.webp",
+      "alt": {
+        "s161": "John, um avião e a etiqueta Rio 8:00"
+      }
+    },
+    "c10_leticia": {
+      "file": "c10-leticia.webp",
+      "alt": {
+        "s162": "Leticia, um trem e a etiqueta 3 hours"
+      }
+    },
+    "x_st_beach": {
+      "file": "x-st-beach.webp",
+      "alt": {
+        "s92": ""
+      }
+    },
+    "scene_board": {
+      "file": "scene-board.webp",
+      "alt": {
+        "s11": "Painel da rodoviária. Santos, 2:30, plataforma 4, R$ 35. Rio, 3:00, plataforma 2, R$ 120. Campinas, 3:15, plataforma 1, R$ 45. Curitiba, 4:00, plataforma 3, R$ 150."
+      }
+    },
+    "x_bulb": {
+      "file": "x-bulb.webp",
+      "alt": {}
+    },
+    "x_sparkles": {
+      "file": "x-sparkles.webp",
+      "alt": {}
+    },
+    "x_mic": {
+      "file": "x-mic.webp",
+      "alt": {}
+    }
+  }
+}
