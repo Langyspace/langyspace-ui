@@ -1,0 +1,1108 @@
+{
+  "code": "A1.11",
+  "number": 11,
+  "title": "Can you help me?",
+  "before": "Can you",
+  "accent": "help me?",
+  "goal": "Pedir ajuda, explicar um problema seu ou de alguém da sua vida e confirmar se foi resolvido.",
+  "pages": [
+    {
+      "id": "s1",
+      "title": "Do you remember?",
+      "eyebrow": "Review",
+      "instruction": "Answer your teacher’s questions.",
+      "prompts": [
+        {
+          "q": "How do you go to work or school?"
+        },
+        {
+          "q": "How long does it take?"
+        },
+        {
+          "q": "Where do you like to travel? Who do you travel with?"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "title": "Can I help you?",
+      "eyebrow": "Dialogue",
+      "instruction": "Listen and then read the dialogue with your teacher.",
+      "dialogue": "read"
+    },
+    {
+      "id": "s17",
+      "title": "Comprehension questions",
+      "eyebrow": "Dialogue",
+      "instruction": "Now, answer the questions based on the text.",
+      "prompts": [
+        {
+          "q": "What isn’t working in Kim’s room?",
+          "a": "The air conditioning isn’t working."
+        },
+        {
+          "q": "What’s Kim’s room number?",
+          "a": "It’s 305."
+        },
+        {
+          "q": "What’s broken?",
+          "a": "The light in the bathroom."
+        },
+        {
+          "q": "What’s the wi-fi password?",
+          "a": "It’s G-U-E-S-T-3-0-5."
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Things",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say what you need every day.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_pb_ac",
+            "en": "the air conditioning",
+            "pt": "ar-condicionado",
+            "id": "V01"
+          },
+          {
+            "ic": "x_pb_wifi",
+            "en": "the wi-fi",
+            "pt": "wi-fi",
+            "id": "V02"
+          },
+          {
+            "ic": "x_pb_password",
+            "en": "the password",
+            "pt": "senha",
+            "id": "V03"
+          },
+          {
+            "ic": "x_pb_charger",
+            "en": "a charger",
+            "pt": "carregador",
+            "id": "V04"
+          },
+          {
+            "ic": "x_bulb",
+            "en": "the light",
+            "pt": "luz",
+            "id": "V05"
+          },
+          {
+            "ic": "x_pb_shower",
+            "en": "the shower",
+            "pt": "chuveiro",
+            "id": "V06"
+          },
+          {
+            "ic": "x_h_key",
+            "en": "a key",
+            "pt": "chave",
+            "id": "V07"
+          },
+          {
+            "ic": "x_phone",
+            "en": "a phone",
+            "pt": "celular",
+            "id": "V08"
+          },
+          {
+            "ic": "x_o_laptop",
+            "en": "a laptop",
+            "pt": "notebook",
+            "id": "V09"
+          }
+        ],
+        "letterHint": true
+      },
+      "tip": {
+        "text": "Para algo do lugar, use the: the wi-fi, the shower. Para algo seu, use my: my phone, my charger.",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s6",
+      "title": "Problems",
+      "eyebrow": "Vocabulary",
+      "instruction": "Listen and repeat. Then say a problem you have at home.",
+      "vocab": {
+        "items": [
+          {
+            "ic": "x_f_cross",
+            "en": "isn’t working",
+            "pt": "não está funcionando",
+            "id": "V11"
+          },
+          {
+            "ic": "x_pb_broken",
+            "en": "broken",
+            "pt": "quebrado",
+            "id": "V12"
+          },
+          {
+            "ic": "x_pb_lost",
+            "en": "lost",
+            "pt": "perdido",
+            "id": "V13"
+          },
+          {
+            "ic": "x_pb_cold",
+            "en": "cold",
+            "pt": "frio",
+            "id": "V14"
+          },
+          {
+            "ic": "x_pb_hot",
+            "en": "hot",
+            "pt": "quente",
+            "id": "V15"
+          }
+        ],
+        "letterHint": false
+      },
+      "tip": {
+        "text": "It’s too cold. = está frio demais. Lembra do too da aula 9?",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s31",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "What’s Leo’s problem?",
+          "im": "n11_phone",
+          "id": "A01",
+          "alt": "Leo triste, um celular e um X",
+          "o": [
+            "His phone isn’t working.",
+            "His phone not working.",
+            "His phone aren’t working."
+          ],
+          "a": 0,
+          "now": "Answer about you: Is your phone OK today?",
+          "why": {
+            "1": "Falta o verbo: isn’t working.",
+            "2": "Um celular: isn’t."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s32",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "What does Laura need?",
+          "im": "n11_charger",
+          "id": "A02",
+          "alt": "Laura, um notebook e um carregador",
+          "o": [
+            "She need a charger.",
+            "She needs a charger.",
+            "She needs charger."
+          ],
+          "a": 1,
+          "now": "Change the person: What does your mother need for her phone?",
+          "why": {
+            "0": "Com she, o verbo ganha s: needs.",
+            "2": "Um carregador: a charger."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s33",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Kim, what’s the problem?",
+          "im": "n11_cold",
+          "id": "A03",
+          "alt": "Kim abraça os braços, tremendo, ao lado de um aparelho de ar-condicionado marcado com um X.",
+          "o": [
+            "The air conditioning isn’t work.",
+            "The air conditioning is working not.",
+            "The air conditioning isn’t working."
+          ],
+          "a": 2,
+          "now": "Answer about you: What’s a problem in your house?",
+          "why": {
+            "0": "Use working: isn’t working.",
+            "1": "O not vem junto do is: isn’t working."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s34",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "What’s the problem at Ana’s parents’ house?",
+          "im": "n11_lights",
+          "id": "A04",
+          "alt": "Os pais da Ana, duas lâmpadas e um X",
+          "o": [
+            "The lights aren’t working.",
+            "The lights isn’t working.",
+            "The lights aren’t work."
+          ],
+          "a": 0,
+          "now": "Ask your teacher: Is everything OK in your house?",
+          "why": {
+            "1": "Lights é plural: aren’t.",
+            "2": "Use working: aren’t working."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s35",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "Ana and Kim, what do you need?",
+          "im": "n11_password",
+          "id": "A05",
+          "alt": "Ana e Kim com o sinal de wi-fi e um cadeado",
+          "o": [
+            "We needs the wi-fi password.",
+            "We need the wi-fi password.",
+            "We need wi-fi the password."
+          ],
+          "a": 1,
+          "now": "Change the person: What do you and your family need at home?",
+          "why": {
+            "0": "Com we, o verbo fica sem s: need.",
+            "2": "O the vem antes: the wi-fi password."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "I need… It isn’t working.",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Precisar",
+            "text": "I need a charger. Com he e she, ganha s: she needs help."
+          },
+          {
+            "label": "Não funciona",
+            "text": "Uma coisa: it isn’t working. Duas ou mais: they aren’t working."
+          },
+          {
+            "label": "Quebrado",
+            "text": "My phone is broken. The lights are broken."
+          }
+        ],
+        "cols": ["Quem", "Exemplo"],
+        "rows": [
+          {
+            "cells": ["I", "I need a charger."],
+            "audio": "C01",
+            "spoken": "I need a charger."
+          },
+          {
+            "cells": ["it", "The wi-fi isn’t working."],
+            "audio": "C02",
+            "spoken": "The wi-fi isn’t working."
+          },
+          {
+            "cells": ["they", "The lights aren’t working."],
+            "audio": "C03",
+            "spoken": "The lights aren’t working."
+          },
+          {
+            "cells": ["broken", "My phone is broken."],
+            "audio": "C04",
+            "spoken": "My phone is broken."
+          },
+          {
+            "cells": ["he", "He needs a new password."],
+            "audio": "C05",
+            "spoken": "He needs a new password."
+          },
+          {
+            "cells": ["she", "She needs help."],
+            "audio": "C06",
+            "spoken": "She needs help."
+          }
+        ]
+      }
+    },
+    {
+      "id": "s22",
+      "title": "Quick check",
+      "eyebrow": "Grammar",
+      "instruction": "Choose the correct word.",
+      "choices": [
+        {
+          "t": "She ___ a new phone.",
+          "o": ["need", "needs"],
+          "a": 1
+        },
+        {
+          "t": "The shower ___ working.",
+          "o": ["isn’t", "aren’t"],
+          "a": 0
+        },
+        {
+          "t": "The lights aren’t ___.",
+          "o": ["work", "working"],
+          "a": 1
+        }
+      ]
+    },
+    {
+      "id": "s23",
+      "title": "Make your own examples",
+      "eyebrow": "Grammar",
+      "instruction": "Create 3 examples about problems you and the people in your life have.",
+      "prompts": [
+        {
+          "q": "I need",
+          "a": "I need a new charger."
+        },
+        {
+          "q": "isn’t working",
+          "a": "My mother’s laptop isn’t working."
+        },
+        {
+          "q": "broken",
+          "a": "The shower in my house is broken."
+        }
+      ]
+    },
+    {
+      "id": "s41",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What’s Leo’s problem?",
+        "model": ["His phone {isn’t working}."],
+        "image": "n11_phone",
+        "alt": "Leo ao lado de um celular marcado com X vermelho."
+      }
+    },
+    {
+      "id": "s42",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What does Laura need?",
+        "model": ["She {needs a charger}."],
+        "image": "n11_charger",
+        "alt": "Laura ao lado de um notebook e de um carregador com cabo."
+      }
+    },
+    {
+      "id": "s43",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What’s Kim’s problem?",
+        "model": ["The air conditioning {isn’t working}."],
+        "image": "n11_cold",
+        "alt": "Kim abraça os braços, tremendo, ao lado de um aparelho de ar-condicionado marcado com um X."
+      }
+    },
+    {
+      "id": "s44",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What’s the problem at Ana’s parents’ house?",
+        "model": ["{The lights aren’t working}."],
+        "image": "n11_lights",
+        "alt": "Os pais da Ana estão perto de duas lâmpadas marcadas com um X."
+      }
+    },
+    {
+      "id": "s45",
+      "title": "Let’s practice more!",
+      "eyebrow": "",
+      "instruction": "Remember the words you learned and answer the questions according to the picture.",
+      "model": {
+        "question": "What do Ana and Kim need?",
+        "model": ["{They need the wi-fi password}."],
+        "image": "n11_password",
+        "alt": "Ana e Kim olham para um símbolo de Wi-Fi acompanhado de um cadeado."
+      }
+    },
+    {
+      "id": "s46",
+      "title": "Now you",
+      "eyebrow": "",
+      "instruction": "Answer about you and the people in your life.",
+      "prompts": [
+        {
+          "q": "What do you need every day?",
+          "a": "I need my phone and…"
+        },
+        {
+          "q": "What isn’t working in your house now?",
+          "a": "The… isn’t working. / Everything is OK."
+        },
+        {
+          "q": "What does your best friend need?",
+          "a": "She needs a new…"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "title": "Can you…? Is it OK now?",
+      "eyebrow": "Grammar",
+      "instruction": "",
+      "grammar": {
+        "explanations": [
+          {
+            "label": "Pedir",
+            "text": "Can you help me? Can you tell me the password? (sem to depois de can)"
+          },
+          {
+            "label": "Responder",
+            "text": "Sure! Of course. No problem. / Sorry, I can’t."
+          },
+          {
+            "label": "Conferir",
+            "text": "Is it OK now? → Yes, it’s working now. / No, it isn’t."
+          }
+        ],
+        "cols": ["Question", "Yes", "No"],
+        "rows": [
+          {
+            "cells": ["Can you help me?", "Sure.", "Sorry, I can’t."]
+          },
+          {
+            "cells": [
+              "Can you tell me the password?",
+              "Of course. It’s…",
+              "Sorry, I don’t know."
+            ]
+          },
+          {
+            "cells": [
+              "Is it OK now?",
+              "Yes, it’s working now.",
+              "No, it isn’t working."
+            ]
+          },
+          {
+            "cells": [
+              "Does it work now?",
+              "Yes, it does. Thanks!",
+              "No, it doesn’t."
+            ]
+          }
+        ]
+      },
+      "tip": {
+        "text": "No fim, agradeça: Thank you for your help!",
+        "image": "x_bulb"
+      }
+    },
+    {
+      "id": "s141",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Can you help me?”",
+          "im": "n11_help",
+          "id": "G01",
+          "alt": "Ana na recepção do hotel com uma campainha",
+          "o": ["Sure!", "Sure, I do.", "Yes, I help."],
+          "a": 0,
+          "why": {
+            "1": "A pergunta é com can: Sure! ou Yes, I can.",
+            "2": "A pergunta é com can: Sure! ou Yes, I can."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s142",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "You need the wi-fi password. What do you say?",
+          "im": "n11_wifi",
+          "id": "G02",
+          "alt": "Kim, o sinal de wi-fi e um cadeado",
+          "o": [
+            "You can tell me the wi-fi password?",
+            "Can you to tell me the wi-fi password?",
+            "Can you tell me the wi-fi password?"
+          ],
+          "a": 2,
+          "why": {
+            "0": "Na pergunta, can vem primeiro: Can you…?",
+            "1": "Depois de can, sem to: Can you tell…?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "s143",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Is it OK now?” The shower is working.",
+          "im": "n11_shower",
+          "id": "G03",
+          "alt": "Kim feliz, um chuveiro e um sinal de certo",
+          "o": [
+            "No, it isn’t.",
+            "Yes, it’s working now.",
+            "Yes, it works not now."
+          ],
+          "a": 1,
+          "why": {
+            "0": "O chuveiro está funcionando: Yes.",
+            "2": "Use: Yes, it’s working now."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s144",
+      "title": "Warm-up",
+      "eyebrow": "",
+      "instruction": "Choose the correct answer.",
+      "choices": [
+        {
+          "t": "“Can you wait ten minutes?”",
+          "im": "n11_wait",
+          "id": "G04",
+          "alt": "Kim, um relógio e a etiqueta 10 min",
+          "o": [
+            "Yes, I wait.",
+            "Sure, no problem.",
+            "Yes, I can wait ten minute."
+          ],
+          "a": 1,
+          "why": {
+            "0": "A pergunta é com can: Sure! ou Yes, I can.",
+            "2": "Dez minutos: minutes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "title": "A problem",
+      "eyebrow": "Your turn",
+      "instruction": "Explain a problem and ask for help. Use the model.",
+      "model": {
+        "question": "A problem",
+        "model": [
+          "Excuse me, can you {help me}?",
+          "My {laptop} isn’t working.",
+          "I need {a charger}."
+        ],
+        "alt": ""
+      }
+    },
+    {
+      "id": "s161",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "What’s John’s problem?",
+        "model": ["His {laptop is broken}."],
+        "image": "c11_john",
+        "alt": "John triste, um notebook e ferramentas"
+      }
+    },
+    {
+      "id": "s162",
+      "title": "Challenge",
+      "eyebrow": "",
+      "instruction": "Look at the picture and answer the questions.",
+      "model": {
+        "question": "What does Leticia need?",
+        "model": ["She {needs a charger}."],
+        "image": "c11_leticia",
+        "alt": "Leticia, um celular e um carregador"
+      }
+    },
+    {
+      "id": "s8",
+      "title": "Fill in the blanks",
+      "eyebrow": "Dialogue",
+      "instruction": "Fill in the blanks of the dialogue you heard. Then read it with your teacher.",
+      "dialogue": "practice"
+    },
+    {
+      "id": "s91",
+      "title": "Problems at home",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "What isn’t working in your house?",
+          "a": "The… isn’t working. / Everything is OK."
+        },
+        {
+          "q": "Who helps you with problems at home?",
+          "a": "My brother / father helps me."
+        },
+        {
+          "q": "Is your house too hot or too cold?",
+          "a": "It’s too hot in the summer."
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_pb_shower",
+          "en": "shower",
+          "pt": "chuveiro"
+        },
+        {
+          "ic": "x_bulb",
+          "en": "light",
+          "pt": "luz"
+        },
+        {
+          "ic": "x_pb_wifi",
+          "en": "wi-fi",
+          "pt": "wi-fi"
+        }
+      ]
+    },
+    {
+      "id": "s92",
+      "title": "At work or school",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "What do you need for work or school?",
+          "a": "I need my laptop and…"
+        },
+        {
+          "q": "Is the wi-fi good at your work or school?",
+          "a": "Yes, it is. / No, it isn’t working well."
+        },
+        {
+          "q": "What does your best friend need for work?",
+          "a": "She needs…"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_o_laptop",
+          "en": "laptop",
+          "pt": "notebook"
+        },
+        {
+          "ic": "x_pb_charger",
+          "en": "charger",
+          "pt": "carregador"
+        },
+        {
+          "ic": "x_pb_password",
+          "en": "password",
+          "pt": "senha"
+        }
+      ]
+    },
+    {
+      "id": "s93",
+      "title": "Asking for help",
+      "eyebrow": "Let’s talk",
+      "instruction": "Ask your teacher the questions. Then answer them yourself.",
+      "prompts": [
+        {
+          "q": "Your teacher works at a hotel. Explain a problem in your room.",
+          "a": "Excuse me, the… in my room isn’t working."
+        },
+        {
+          "q": "Ask your teacher to spell the wi-fi password.",
+          "a": "Can you tell me the wi-fi password? How do you spell it?"
+        },
+        {
+          "q": "Check if the problem is OK now and say thank you.",
+          "a": "Is it OK now? Thank you for your help!"
+        }
+      ],
+      "words": [
+        {
+          "ic": "x_pb_bell",
+          "en": "reception",
+          "pt": "recepção"
+        },
+        {
+          "ic": "x_pb_lost",
+          "en": "lost",
+          "pt": "perdido"
+        },
+        {
+          "ic": "x_check",
+          "en": "OK now",
+          "pt": "resolvido"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "title": "Role play: help, please!",
+      "eyebrow": "Recycle",
+      "instruction": "Use everything from today in a new situation.",
+      "role": {
+        "img": "scene_problems",
+        "alt": "Três cartões de problema: hotel com ar-condicionado e calor, academia com chuveiro quebrado, escritório com wi-fi sem funcionar",
+        "txt": "Escolha um cartão: hotel, academia ou escritório. A professora trabalha lá. Explique o problema, peça ajuda e confira se foi resolvido. Depois, troquem de papel.",
+        "ck": [
+          "Comece com educação: Excuse me, can you help me?",
+          "Explique o problema: The… isn’t working.",
+          "Diga o que precisa: I need…",
+          "Responda à professora: Sure, no problem.",
+          "Confira e agradeça: Is it OK now? Thank you for your help!"
+        ],
+        "sup": [
+          "Excuse me, can you help me?",
+          "The… isn’t working.",
+          "It’s broken / too hot / too cold.",
+          "I need…",
+          "Is it OK now?"
+        ]
+      }
+    },
+    {
+      "id": "s122",
+      "title": "Quiz",
+      "eyebrow": "Homework",
+      "instruction": "Answer one quiz question now.",
+      "choices": [
+        {
+          "o": [
+            "The lights isn’t working.",
+            "The lights aren’t work.",
+            "The lights aren’t working."
+          ],
+          "a": 2,
+          "why": {
+            "0": "Lights é plural: aren’t.",
+            "1": "Use working: aren’t working."
+          },
+          "t": "What’s the problem?",
+          "im": "n11_lights",
+          "alt": "Os pais da Ana, duas lâmpadas e um X"
+        }
+      ]
+    },
+    {
+      "id": "s123",
+      "title": "Challenge",
+      "eyebrow": "Homework",
+      "instruction": "",
+      "script": {
+        "items": [
+          "Excuse me, can you help me?",
+          "My ___ isn’t working.",
+          "I need ___.",
+          "Can you ___?",
+          "Is it OK now?",
+          "Thank you for your help!"
+        ],
+        "art": ["x_sparkles", "x_mic"]
+      }
+    }
+  ],
+  "lines": [
+    {
+      "id": "D01.T1",
+      "who": "ana",
+      "g": "Boa noite. Posso ajudar?",
+      "text": "Good evening. Can I help you?"
+    },
+    {
+      "id": "D01.T2",
+      "who": "kim",
+      "g": "Pode, sim. O ar-condicionado do meu quarto não está funcionando.",
+      "text": "Yes, please. The air conditioning in my room isn’t working."
+    },
+    {
+      "id": "D01.T3",
+      "who": "ana",
+      "g": "Ah, sinto muito. Qual é o número do seu quarto?",
+      "text": "Oh, I’m sorry. What’s your room number?"
+    },
+    {
+      "id": "D01.T4",
+      "who": "kim",
+      "g": "É 305. E a luz do banheiro está quebrada.",
+      "text": "It’s 305. And the light in the bathroom is broken."
+    },
+    {
+      "id": "D01.T5",
+      "who": "ana",
+      "g": "Sem problema. Pode esperar dez minutos?",
+      "text": "No problem. Can you wait ten minutes?"
+    },
+    {
+      "id": "D01.T6",
+      "who": "kim",
+      "g": "Claro. Pode me dizer a senha do wi-fi também?",
+      "text": "Sure. Can you tell me the wi-fi password too?"
+    },
+    {
+      "id": "D01.T7",
+      "who": "ana",
+      "g": "Claro. É G-U-E-S-T-3-0-5.",
+      "text": "Of course. It’s G-U-E-S-T-3-0-5."
+    },
+    {
+      "id": "D01.T8",
+      "who": "kim",
+      "g": "Ótimo. Obrigada pela ajuda!",
+      "text": "Great. Thank you for your help!"
+    }
+  ],
+  "gaps": {
+    "D01.T1": "Good evening. Can I help you?",
+    "D01.T2": "Yes, please. The air conditioning in my room {1} working.",
+    "D01.T3": "Oh, I’m sorry. What’s your room number?",
+    "D01.T4": "It’s 305. And the light in the bathroom is {2}.",
+    "D01.T5": "No problem. {3} you wait ten minutes?",
+    "D01.T6": "Sure. Can you {4} me the wi-fi password too?",
+    "D01.T7": "Of course. It’s G-U-E-S-T-3-0-5.",
+    "D01.T8": "Great. Thank you for your help!"
+  },
+  "bank": {
+    "1": {
+      "o": ["isn’t", "aren’t"],
+      "a": "isn’t"
+    },
+    "2": {
+      "o": ["broken", "lost"],
+      "a": "broken"
+    },
+    "3": {
+      "o": ["Can", "Do"],
+      "a": "Can"
+    },
+    "4": {
+      "o": ["tell", "to tell"],
+      "a": "tell"
+    }
+  },
+  "media": {
+    "x_check": {
+      "file": "check-mark.webp",
+      "alt": {
+        "s93": ""
+      }
+    },
+    "x_pb_ac": {
+      "file": "x-pb-ac.webp",
+      "alt": {
+        "s5": "Aparelho de parede soltando ar frio."
+      }
+    },
+    "x_pb_wifi": {
+      "file": "x-pb-wifi.webp",
+      "alt": {
+        "s5": "Roteador com três arcos de sinal sem fio.",
+        "s91": ""
+      }
+    },
+    "x_pb_password": {
+      "file": "x-pb-password.webp",
+      "alt": {
+        "s5": "Cadeado, chave e pontos usados para ocultar caracteres.",
+        "s92": ""
+      }
+    },
+    "x_pb_charger": {
+      "file": "x-pb-charger.webp",
+      "alt": {
+        "s5": "Plugue de energia com cabo e conector.",
+        "s92": ""
+      }
+    },
+    "x_pb_shower": {
+      "file": "x-pb-shower.webp",
+      "alt": {
+        "s5": "Chuveiro de parede soltando água.",
+        "s91": ""
+      }
+    },
+    "x_h_key": {
+      "file": "x-h-key.webp",
+      "alt": {
+        "s5": "Chave dourada com ponta dentada."
+      }
+    },
+    "x_phone": {
+      "file": "x-phone.webp",
+      "alt": {
+        "s5": "Celular com uma grade de aplicativos."
+      }
+    },
+    "x_o_laptop": {
+      "file": "x-o-laptop.webp",
+      "alt": {
+        "s5": "Computador portátil aberto.",
+        "s92": ""
+      }
+    },
+    "x_f_cross": {
+      "file": "x-f-cross.webp",
+      "alt": {
+        "s6": "X vermelho."
+      }
+    },
+    "x_pb_broken": {
+      "file": "x-pb-broken.webp",
+      "alt": {
+        "s6": "Aparelho rachado ao lado de uma ferramenta."
+      }
+    },
+    "x_pb_lost": {
+      "file": "x-pb-lost.webp",
+      "alt": {
+        "s6": "Lupa procurando um pequeno molho de chaves.",
+        "s93": ""
+      }
+    },
+    "x_pb_cold": {
+      "file": "x-pb-cold.webp",
+      "alt": {
+        "s6": "Pessoa encolhida e tremendo com um cachecol."
+      }
+    },
+    "x_pb_hot": {
+      "file": "x-pb-hot.webp",
+      "alt": {
+        "s6": "Pessoa com o rosto quente se abanando."
+      }
+    },
+    "n11_phone": {
+      "file": "n11-phone.webp",
+      "alt": {
+        "s31": "Leo triste, um celular e um X",
+        "s41": "Leo ao lado de um celular marcado com X vermelho."
+      }
+    },
+    "n11_charger": {
+      "file": "n11-charger.webp",
+      "alt": {
+        "s32": "Laura, um notebook e um carregador",
+        "s42": "Laura ao lado de um notebook e de um carregador com cabo."
+      }
+    },
+    "n11_cold": {
+      "file": "n11-cold.webp",
+      "alt": {
+        "s33": "Kim abraça os braços, tremendo, ao lado de um aparelho de ar-condicionado marcado com um X.",
+        "s43": "Kim abraça os braços, tremendo, ao lado de um aparelho de ar-condicionado marcado com um X."
+      }
+    },
+    "n11_lights": {
+      "file": "n11-lights.webp",
+      "alt": {
+        "s34": "Os pais da Ana, duas lâmpadas e um X",
+        "s44": "Os pais da Ana estão perto de duas lâmpadas marcadas com um X.",
+        "s122": "Os pais da Ana, duas lâmpadas e um X"
+      }
+    },
+    "n11_password": {
+      "file": "n11-password.webp",
+      "alt": {
+        "s35": "Ana e Kim com o sinal de wi-fi e um cadeado",
+        "s45": "Ana e Kim olham para um símbolo de Wi-Fi acompanhado de um cadeado."
+      }
+    },
+    "n11_help": {
+      "file": "n11-help.webp",
+      "alt": {
+        "s141": "Ana na recepção do hotel com uma campainha"
+      }
+    },
+    "n11_wifi": {
+      "file": "n11-wifi.webp",
+      "alt": {
+        "s142": "Kim, o sinal de wi-fi e um cadeado"
+      }
+    },
+    "n11_shower": {
+      "file": "n11-shower.webp",
+      "alt": {
+        "s143": "Kim feliz, um chuveiro e um sinal de certo"
+      }
+    },
+    "n11_wait": {
+      "file": "n11-wait.webp",
+      "alt": {
+        "s144": "Kim, um relógio e a etiqueta 10 min"
+      }
+    },
+    "c11_john": {
+      "file": "c11-john.webp",
+      "alt": {
+        "s161": "John triste, um notebook e ferramentas"
+      }
+    },
+    "c11_leticia": {
+      "file": "c11-leticia.webp",
+      "alt": {
+        "s162": "Leticia, um celular e um carregador"
+      }
+    },
+    "x_pb_bell": {
+      "file": "x-pb-bell.webp",
+      "alt": {
+        "s93": ""
+      }
+    },
+    "scene_problems": {
+      "file": "scene-problems.webp",
+      "alt": {
+        "s11": "Três cartões de problema: hotel com ar-condicionado e calor, academia com chuveiro quebrado, escritório com wi-fi sem funcionar"
+      }
+    },
+    "x_bulb": {
+      "file": "x-bulb.webp",
+      "alt": {}
+    },
+    "x_sparkles": {
+      "file": "x-sparkles.webp",
+      "alt": {}
+    },
+    "x_mic": {
+      "file": "x-mic.webp",
+      "alt": {}
+    }
+  }
+}
