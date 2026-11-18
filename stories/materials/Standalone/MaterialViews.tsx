@@ -3,6 +3,9 @@ import type { MaterialViewProps } from './MaterialApp.types'
 const A101 = lazy(() =>
   import('../A101/A101Lesson').then((m) => ({ default: m.A101Lesson })),
 )
+const A102 = lazy(() =>
+  import('../A102/A102Lesson').then((m) => ({ default: m.A102Lesson })),
+)
 const A103 = lazy(() =>
   import('../A103/A103Lesson').then((m) => ({ default: m.A103Lesson })),
 )
@@ -41,6 +44,7 @@ export function MaterialView({
 }: MaterialViewProps) {
   if (materialKey === 'a1-01')
     return <A101 studentPortalOrigin={studentPortalOrigin} />
+  if (materialKey === 'a1-02') return <A102 />
   if (materialKey === 'a1-03')
     return <A103 studentPortalOrigin={studentPortalOrigin} />
   if (materialKey === 'a1-04')

@@ -1,5 +1,6 @@
 export type MaterialKey =
   | 'a1-01'
+  | 'a1-02'
   | 'a1-03'
   | 'a1-04'
   | 'a1-05'
