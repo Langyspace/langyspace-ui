@@ -19,6 +19,8 @@ export interface SpeechProps {
 export interface LessonShellProps extends LessonProps {
   materialKey: string
   pageIds: readonly string[]
+  themeSwitch?: boolean
+  exerciseGroups?: readonly (readonly string[])[]
   label: string
   pages: (
     speech: LessonSpeech,

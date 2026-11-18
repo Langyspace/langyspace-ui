@@ -1,4 +1,3 @@
-import { MaterialTheme } from '../shared/MaterialTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell, LessonIntro } from '../shared/LessonShell'
@@ -12,7 +11,9 @@ import {
   ConversationSection,
   TodaySection,
 } from './TrialA1.sections'
-function TrialA1LessonContent({
+const preferenceGroup = ['s41', 's42', 's43'] as const
+
+export function TrialA1Lesson({
   initialPageId,
   levelLabel = 'A1',
 }: TrialA1LessonProps) {
@@ -20,6 +21,8 @@ function TrialA1LessonContent({
     <LessonShell
       materialKey="trial-a1-a2"
       pageIds={order}
+      themeSwitch
+      exerciseGroups={[preferenceGroup]}
       initialPageId={initialPageId}
       label={`${levelLabel} Trial · What do you like?`}
       pages={(speech) =>
@@ -148,13 +151,5 @@ function TrialA1LessonContent({
         })
       }
     />
-  )
-}
-
-export function TrialA1Lesson(props: TrialA1LessonProps) {
-  return (
-    <MaterialTheme>
-      <TrialA1LessonContent {...props} />
-    </MaterialTheme>
   )
 }

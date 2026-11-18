@@ -389,3 +389,23 @@ export const CompactQuestion = styled(Question)`
     font-size: ${theme.typography.fontSize.sm};
   }
 `
+
+export const ProgressCount = styled.span`
+  font-size: ${theme.typography.fontSize.xs};
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+`
+export const ProgressLabel = styled.span`
+  @media (max-width: ${theme.breakpoints.sm}) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+`
+export const Answer = styled.div`
+  display: grid;
+  justify-items: start;
+  gap: ${theme.spacing[2]};
+`

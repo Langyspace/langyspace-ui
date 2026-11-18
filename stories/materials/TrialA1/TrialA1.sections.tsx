@@ -1,3 +1,4 @@
+import { AnswerDisclosure } from '../shared/AnswerDisclosure'
 import { toggleId } from '../shared/lessonState'
 import { Fragment, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -20,20 +21,21 @@ export function GreetingSection() {
   return (
     <S.Stack>
       {content.p1.cards.map((q, i) => (
-        <T.Greeting
-          key={q.q}
-          variant="lesson"
-          aria-label={q.q}
-          aria-expanded={open.includes(q.q)}
-          onClick={() => setOpen((old) => toggleId(old, q.q))}
-        >
-          <T.GreetingImage src={greetingImages[i]} alt="" />
-          <T.GreetingText>
-            <b>{q.q}</b>
-            {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
-            <span>{q.a}</span>
-          </T.GreetingText>
-        </T.Greeting>
+        <S.Stack key={q.q}>
+          <T.Greeting
+            variant="lesson"
+            aria-label={q.q}
+            aria-expanded={open.includes(q.q)}
+            onClick={() => setOpen((old) => toggleId(old, q.q))}
+          >
+            <T.GreetingImage src={greetingImages[i]} alt="" />
+            <T.GreetingText>
+              <b>{q.q}</b>
+              {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
+            </T.GreetingText>
+          </T.Greeting>
+          <AnswerDisclosure question={q.q} answer={q.a} />
+        </S.Stack>
       ))}
     </S.Stack>
   )
@@ -71,10 +73,14 @@ export function PictureTalkSection({ speech }: SpeechProps) {
           <T.Support key={group.h}>
             <b>{group.h}</b>
             {group.lines.map(([q, a], i) => (
-              <p key={i}>
-                {q}
-                {a ? <span>{a}</span> : null}
-              </p>
+              <div key={i}>
+                {q ? <p>{q}</p> : null}
+                {a && q ? (
+                  <AnswerDisclosure question={q} answer={a} />
+                ) : a ? (
+                  <p>{a}</p>
+                ) : null}
+              </div>
             ))}
           </T.Support>
         ))}
@@ -86,6 +92,7 @@ export function ListenTalkSection({ speech }: SpeechProps) {
   return (
     <T.Columns>
       <DialoguePractice
+        translateAll
         speech={speech}
         lines={content.p3.lines.map((l, i) => ({
           id: 'D.' + (i + 1),
@@ -98,6 +105,7 @@ export function ListenTalkSection({ speech }: SpeechProps) {
         <b>Your turn</b>
         <SourceQuestions
           compact
+          revealHints
           items={content.p3.your.map(([question, hint]) => ({
             question: question ?? '',
             hint,
@@ -114,7 +122,7 @@ export function PreferenceSection({
   const [pick, setPick] = useState<number>()
   const pair = content.p4.pairs[index]!
   return (
-    <ExercisePanel title={pair.q} counter={`${index + 1} / 3`}>
+    <ExercisePanel title={pair.q}>
       <S.Stack>
         <T.Pair>
           {[pair.a, pair.b].map((choice, i) => (
@@ -157,6 +165,18 @@ export function PreferenceSection({
     </ExercisePanel>
   )
 }
+const conversationPortuguese = [
+  'Você gosta de música?',
+  'Você gosta de filmes?',
+  'Você gosta de praia?',
+  'Você gosta de futebol?',
+  'Você gosta de pizza?',
+  'Você gosta de cachorros ou de gatos?',
+  'De que tipo de música você gosta?',
+  'De que filmes você gosta?',
+  'Você gosta de inglês?',
+]
+
 export function ConversationSection() {
   const [done, setDone] = useState<string[]>([])
   const qs = [...content.p5.qs, ...content.p5.go]
@@ -173,7 +193,12 @@ export function ConversationSection() {
             onClick={() => setDone((old) => toggleId(old, id))}
           >
             <img src={talkImages[i]} alt="" />
-            <b>{q}</b>
+            <div>
+              <b>{q}</b>
+              {done.includes(id) ? (
+                <S.Hint lang="pt-BR">{conversationPortuguese[i]}</S.Hint>
+              ) : null}
+            </div>
             {done.includes(id) ? <span aria-hidden="true">✓</span> : null}
           </T.Talk>
         )

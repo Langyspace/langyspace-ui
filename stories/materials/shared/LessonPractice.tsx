@@ -1,3 +1,4 @@
+import { AnswerDisclosure } from './AnswerDisclosure'
 import { toggleId } from './lessonState'
 import { useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -17,9 +18,11 @@ import * as S from './Lesson.styles'
 export function SourceQuestions({
   items,
   compact = false,
+  revealHints = false,
 }: {
   items: readonly { question: string; hint?: string }[]
   compact?: boolean
+  revealHints?: boolean
 }) {
   const Question = compact ? S.CompactQuestion : S.Question
   return (
@@ -29,7 +32,13 @@ export function SourceQuestions({
           <S.Number>{i + 1}</S.Number>
           <div>
             {q.question}
-            {q.hint ? <S.Hint>{q.hint}</S.Hint> : null}
+            {q.hint ? (
+              revealHints ? (
+                <AnswerDisclosure answer={q.hint} question={q.question} />
+              ) : (
+                <S.Hint>{q.hint}</S.Hint>
+              )
+            ) : null}
           </div>
         </Question>
       ))}
@@ -170,7 +179,9 @@ export function CorrectionPractice({
 export function DialoguePractice({
   lines,
   speech,
+  translateAll = false,
 }: SpeechProps & {
+  translateAll?: boolean
   lines: readonly {
     id: string
     who: string
@@ -180,31 +191,47 @@ export function DialoguePractice({
   }[]
 }) {
   const [translated, setTranslated] = useState<string[]>([])
+  const ids = lines.filter((line) => line.g).map((line) => line.id)
+  const all = ids.length > 0 && ids.every((id) => translated.includes(id))
   return (
-    <LearningDialogue
-      density="compact"
-      lines={lines.map((l) => ({
-        id: l.id,
-        speaker: l.who === 'kim' ? 'Kim' : 'Ana',
-        avatarUrl: l.who === 'kim' ? kim : ana,
-        side: l.who === 'kim' ? 'start' : 'end',
-        content: (
-          <>
-            {l.text}
-            {l.sig ? <ConnectionSignal /> : null}
-          </>
-        ),
-        translation: l.g,
-        audioLabel: `Listen: ${l.text}`,
-      }))}
-      translatedIds={translated}
-      onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
-      playingId={speech.playingId}
-      onPlay={(id) => {
-        const l = lines.find((x) => x.id === id)
-        if (l) speech.speak([{ id, text: l.text, speaker: l.who }])
-      }}
-    />
+    <S.Stack>
+      {translateAll && ids.length > 0 ? (
+        <S.Row>
+          <Button
+            variant="secondary"
+            size="sm"
+            aria-expanded={all}
+            onClick={() => setTranslated(all ? [] : ids)}
+          >
+            {all ? 'Ocultar tradução' : 'Ver em português'}
+          </Button>
+        </S.Row>
+      ) : null}
+      <LearningDialogue
+        density="compact"
+        lines={lines.map((l) => ({
+          id: l.id,
+          speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+          avatarUrl: l.who === 'kim' ? kim : ana,
+          side: l.who === 'kim' ? 'start' : 'end',
+          content: (
+            <>
+              {l.text}
+              {l.sig ? <ConnectionSignal /> : null}
+            </>
+          ),
+          translation: l.g,
+          audioLabel: `Listen: ${l.text}`,
+        }))}
+        translatedIds={translated}
+        onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
+        playingId={speech.playingId}
+        onPlay={(id) => {
+          const l = lines.find((x) => x.id === id)
+          if (l) speech.speak([{ id, text: l.text, speaker: l.who }])
+        }}
+      />
+    </S.Stack>
   )
 }
 export function ComprehensionPractice({
