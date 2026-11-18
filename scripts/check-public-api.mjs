@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto'
 import { readFile, readdir, writeFile } from 'node:fs/promises'
-import { relative, resolve } from 'node:path'
+import { relative, resolve, sep } from 'node:path'
 import ts from 'typescript'
 
 const root = resolve(import.meta.dirname, '..')
@@ -52,19 +52,17 @@ async function collectExports(path) {
 const exportsByKind = await collectExports('src/index.ts')
 const formExports = await collectExports('src/form.ts')
 
-const declarationFiles = (
-  await collectDeclarations(resolve(root, 'dist'))
-).sort()
+const declarationPaths = (await collectDeclarations(resolve(root, 'dist')))
+  .map((file) => relative(root, file).split(sep).join('/'))
+  .sort()
 const declarations = {}
 
-for (const file of declarationFiles) {
-  const source = (await readFile(file, 'utf8')).replace(
+for (const path of declarationPaths) {
+  const source = (await readFile(resolve(root, path), 'utf8')).replace(
     /\n\/\/# sourceMappingURL=.*$/,
     '',
   )
-  declarations[relative(root, file)] = createHash('sha256')
-    .update(source)
-    .digest('hex')
+  declarations[path] = createHash('sha256').update(source).digest('hex')
 }
 
 const report = `${JSON.stringify(
@@ -82,13 +80,13 @@ if (shouldWrite) {
   await writeFile(reportPath, report)
   console.log(`Public API report written: ${relative(root, reportPath)}`)
 } else {
-  const expected = await readFile(reportPath, 'utf8')
+  const expected = (await readFile(reportPath, 'utf8')).replaceAll('\r\n', '\n')
   if (expected !== report) {
     throw new Error(
       'public_api_changed: review SemVer, then run pnpm run write:api and commit the report',
     )
   }
   console.log(
-    `Public API report passed: ${exportsByKind.values.length} values, ${exportsByKind.types.length} types, ${declarationFiles.length} declarations.`,
+    `Public API report passed: ${exportsByKind.values.length} values, ${exportsByKind.types.length} types, ${declarationPaths.length} declarations.`,
   )
 }
