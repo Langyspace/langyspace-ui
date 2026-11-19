@@ -47,6 +47,7 @@ export const Content = styled.div`
 `
 export const Title = styled.h2`
   margin: 0;
+  color: inherit;
   font-family: ${(p) => recipe(p).displayFontFamily};
   font-size: clamp(1.75rem, 4.4cqh, 2.75rem);
   font-weight: ${theme.typography.fontWeight.bold};
@@ -56,6 +57,7 @@ export const Title = styled.h2`
 `
 export const Hero = styled.h1`
   margin: 0;
+  color: inherit;
   font-family: ${(p) => recipe(p).displayFontFamily};
   font-size: clamp(2.5rem, 7cqh, 4.5rem);
   font-weight: ${theme.typography.fontWeight.bold};

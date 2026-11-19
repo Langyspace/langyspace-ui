@@ -221,6 +221,7 @@ export const GrammarColumns = styled.div`
 export const Explanation = styled(Surface)`
   h3 {
     margin: 0;
+    color: ${(p) => resolveSlideTheme(p).foreground};
     font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
     font-size: ${theme.typography.fontSize.lg};
   }

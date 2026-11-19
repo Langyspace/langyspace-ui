@@ -32,6 +32,7 @@ export const Question = styled(Stack)`
 `
 export const Heading = styled.h3`
   margin: 0;
+  color: inherit;
   font-size: ${theme.typography.fontSize.xl};
   line-height: 1.3;
   font-weight: ${theme.typography.fontWeight.semibold};

@@ -77,7 +77,7 @@ export function PictureTalkSection({
       <S.Stack>
         {content.p2.support.map((group) => (
           <T.Support key={group.h}>
-            <h3>{group.h}</h3>
+            <T.SupportTitle>{group.h}</T.SupportTitle>
             {group.lines.map(([q, a]) => (
               <Fragment key={q}>
                 <p>{q}</p>
@@ -115,7 +115,7 @@ export function ListenTalkSection({
           onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
         />
         <T.Support>
-          <h3>No diálogo</h3>
+          <T.SupportTitle>No diálogo</T.SupportTitle>
           {content.p3.your.map(([question, hint]) => (
             <Fragment key={question}>
               <p>{question}</p>
