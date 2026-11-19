@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'B2.01 · Dead phone, no charger, plano novo com Ana, Kim e Raj.12 páginas em17 telas. Imagens geradas com ambientação e áudio nativo de demonstração sintetizado. Conteúdo e controle pertencem à composição; tarefas do Student estão em preparação.',
+          'B2.01 · Dead phone, no charger, plano novo com Ana, Kim e Raj.12 páginas em17 telas. Ilustrações preservadas, escuta ElevenLabs, leitura e conversa com a professora. Prática de casa oral sem destinos inventados.',
       },
     },
   },

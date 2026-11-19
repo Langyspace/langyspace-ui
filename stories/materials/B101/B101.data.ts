@@ -5,6 +5,7 @@ export { content, ana, kim }
 export const order = [
   's1',
   's2',
+  's21',
   's31',
   's32',
   's33',
@@ -63,8 +64,3 @@ export const dialogue = content.dialogue.map((line) => ({
   speaker: line.who,
   text: line.text,
 }))
-export const homeworkMessage =
-  'Lição de casa da aula B1.01 · What have you been doing?\n' +
-  content.homework
-    .map(([t, , url, min], i) => `${i + 1}. ${t} · ${min} · ${url}`)
-    .join('\n')

@@ -1,0 +1,45 @@
+{
+  "taskId": "INT-COURSE-FIVE-02",
+  "checkedAt": "2026-11-19T01:52:44.439277+00:00",
+  "sourceTask": "AUD-COURSE-FIVE-02-C101-ACOUSTIC",
+  "addendum": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-audios-20261119/C101/acoustic-addendum.json",
+  "addendumSha256": "5e0357fbcc8871dab7d1265cec9f3cda85e310b1ac293fa8b4c64bcebffa85cf",
+  "evidenceZipSha256": "cf16428625513300b03dbf8adc78f9d404dcca60f790368290877419a271a4d9",
+  "fourMp3HashesStillMatch": true,
+  "reportResult": "estimated contours differ but requested pedagogical contrast not confirmed",
+  "notEvidenceOf": [
+    "human listening",
+    "perceptual acceptance",
+    "fixed intent answer key",
+    "original or staging integration"
+  ],
+  "adoptionCondition": "Final C101 handoff records open A/B comparison decision and acoustic-addendum. Human paired listening remains pending, explicitly not a staging publication blocker under root decision.",
+  "ordinary55": "unchanged; no reanalysis or regeneration",
+  "sourceWrites": 0,
+  "remoteWrites": 0,
+  "providerCalls": 0,
+  "decisionAt": "2026-11-19T01:54:18.536536+00:00",
+  "decisionOwnerThread": "01a1ef87-bfee-7121-a7fa-e409b2bd9a7b",
+  "decision": "Use open A/B comparison and discuss impression, then try a more tactful version. No tag-derived fixed answer. Author confirmed and root visually inspected.",
+  "sourceReadback": {
+    "path": "stories/materials/C101/C101.practice.tsx",
+    "section": "Prosody",
+    "observedQuestion": "What impression does each version create?",
+    "labels": [
+      "Version A",
+      "Version B"
+    ],
+    "ruleDescription": "tendencies, not rules",
+    "fixedCorrectnessPropsPassed": false,
+    "note": "Read from active private source, not final frozen source verification."
+  },
+  "canPublishForStagingReviewUnderCurrentScope": true,
+  "humanListening": "pending; not approved",
+  "smallSharedAccessibilityObservation": {
+    "path": "src/components/InteractiveMaterial/MinimalPairExercise.tsx",
+    "finding": "Always renders role=img score0/0 even when no score was supplied.",
+    "reportedToRoot": true,
+    "sourceChanged": false,
+    "blocking": false
+  }
+}

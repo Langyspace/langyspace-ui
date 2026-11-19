@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'B1.01 · What have you been doing? · 12 páginas pedagógicas em 17 telas. Composição dos componentes compartilhados a partir da exportação local de 16/11/2026. Cenas com ambientação geradas pelo image_gen; vocabulário e diálogo usam voz do navegador, áudio do Leo é demonstração sintetizada localmente. Adoção nos portais e disponibilização das tarefas dependem do produto consumidor. Notas e respostas ficam apenas na memória desta prévia.',
+          'B1.01 · 18 páginas para conversação B1. Componentes do UX Lab, cenas preservadas com enquadramento seguro, áudio ElevenLabs nos trechos de escuta e Notes persistentes. Revisão visual humana pendente',
       },
     },
   },

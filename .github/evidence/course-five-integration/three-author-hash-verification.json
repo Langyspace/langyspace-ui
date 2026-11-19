@@ -1,0 +1,2410 @@
+{
+  "checkedAt": "2026-11-19T01:56:20.065000+00:00",
+  "taskId": "INT-COURSE-FIVE-02",
+  "authors": {
+    "a101": {
+      "sourceManifestSha256": "23b4d4584ab33610050012730e9678b9eace6a98f2649c850262b3083ab10501",
+      "verifiedUniqueLocalFiles": 392,
+      "mirror": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/course-a1-01.html",
+      "mirrorSha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757",
+      "files": [
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.data.ts",
+          "sha256": "a9d6637d79d8065b0b49f2a4de36617ef1b33e7b98fd567ed56e70802f8825f2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.sections.tsx",
+          "sha256": "83b357c09892af5513dd52f04a043d377330fc875dc2910469e230ee5e2586f2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.sections.types.ts",
+          "sha256": "e62769f0b5a224f19a8a1d769b2b28045bbbcc86205a46243e41329f5256989f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.stories.tsx",
+          "sha256": "0d9110ada2bc0d1994b95dadfd4d1dda4c9935354b0ab98312f9ed8e0bebdd76"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.styles.ts",
+          "sha256": "096960127babe2c9da8432108a94c9026fc556e273f897e4b2e4fdd5d24334d6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101.types.ts",
+          "sha256": "d20714c02065310ab23e59ce0c895d2bf5ea2e0f8ab47f90975b47b1222d7597"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/A101Lesson.tsx",
+          "sha256": "6dff466d0d3fce08243318c97e8437f9fd4d0bccf2debb65521b7cab6bc4eb9a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/FLAG-ICONS-LICENSE.txt",
+          "sha256": "8f1195d55a2fd315a07d812328470ca9ba2abb78c8d317ff19619d5125e00cea"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/FLUENT-EMOJI-LICENSE.txt",
+          "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T1.mp3",
+          "sha256": "4d6ea12ea2fbbde8e79c19d630ec1ff10dab3936719d0bc429e6d0a0326b1d54"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T2.mp3",
+          "sha256": "c6d79ea0907da3cd5e5061680b27cb32bb60613b1a85762fe81843c75dc75b53"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T3.mp3",
+          "sha256": "9d2061219880e2a7eb8a7aa3dab7b12406e9db14716afaa728576c7102485112"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T4.mp3",
+          "sha256": "5b284856850c21bf21f7f0e6275c623e26d910b469db4dbe896c0f9875e08708"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T5.mp3",
+          "sha256": "e8929ca3a9f4043e89e6a65a1183d0807a464038a6ae0e88f10470408b7b2101"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/R.T6.mp3",
+          "sha256": "1cd39b17cc4e124df1d38a5de355e9205415dc66a63e5623ed10561475565619"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_france.mp3",
+          "sha256": "c90fe12f2a3e1fd3a48b937acba83accd2a65214239cd3d477a4fae6b5ba8f19"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_germany.mp3",
+          "sha256": "e9dbfeea2d8d33f849094b331ecc5fb89d7e591bb1c8bf377e40b8f5319aeeb3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_japan.mp3",
+          "sha256": "42dd85d11481c19cbc349b8241a1ddc0a31c133e073eaebc74948a14507a16f1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_korea.mp3",
+          "sha256": "9d947198b420161952aa5419ec40e0c194fc7b5b24a2f919e0a843eed9a848bd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_spain.mp3",
+          "sha256": "0758baebd2536c7c45063538ad063c944aadc305daa03971fc2d64512ce8cdc8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/fl_usa.mp3",
+          "sha256": "acf3f0b03592b45ada9a018a0cb44e3dbdb8a2e96d0c5c4bcfaeab15170fb18c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_angry.mp3",
+          "sha256": "fcccde01486bf6e485c554da56fa9b1c8f75ae527361e175604a804aeb60e344"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_cold.mp3",
+          "sha256": "30f3c412d634959d31ea0ce4341fee1f00c616bb239726dee82c88bc10f04fb8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_happy.mp3",
+          "sha256": "787603ecac452060da261170bb6105e145513fba7b3c871ea9d5b472876d58aa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_hungry.mp3",
+          "sha256": "a839a06f0bee30f0eac839275e1e4a3ac1136220273c80612efcef76b4f2dadf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_sad.mp3",
+          "sha256": "e3017b8583bdc0df5b2784e2d0b283c8e8f10216bc048e1dd8c38cf43446dfcd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/audio/ph_tired.mp3",
+          "sha256": "9756f31bdc6239312ce93d1765a20107b725b43498fd0133572ca4b1a208e60d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/bust_ana.webp",
+          "sha256": "67a83a2c7523cbdaf92c392c514dd019496d68431de8b984b26a69e7149943b9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/bust_kim.webp",
+          "sha256": "6212c0d03b40db66764e73dfda87171760ef5c12ff3101ebb76460d99f0bacab"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/d_angry.svg",
+          "sha256": "f0d453853dd9e32b52794338bda764a9fde0c0d40245d6ff7253ed71ff661153"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_brain.png",
+          "sha256": "c08d46cd6c11dbef58c0a3c3d6408bd69115f0b6cdda0c88a50ef6f8198d71b1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_cards.png",
+          "sha256": "675a201350aed2522baca2deab185dafa130eb96e99a19306cc59b0d592c3f6f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_mic.png",
+          "sha256": "0fbeeb1be51923e6f409eb8f6e851ecf98fe463cb553e1684d7fc45702c04bb5"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/f_beaming_face_with_smiling_eyes.png",
+          "sha256": "043c9fced9114368d73af7d1689cfcfc1ed42883456642770912f3d5e978dda3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/f_cold_face.png",
+          "sha256": "0196625191a24519055a6eec8526b4c6b215197a93dc477a1f51657fa5486bad"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/f_crying_face.png",
+          "sha256": "9fb63e831445543e063c675ea3d428feedfe4c66a6630ae0f9223c6f9b17653f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/f_face_savoring_food.png",
+          "sha256": "5e058b31cb8e7260d4a95fb1156a17ca11ce1a198524b4b33f162cbe0866c0c6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/f_yawning_face.png",
+          "sha256": "3a6f9f61b703d0a21c67eeabde6771fd8916ed18e3c49f96942675b76e566a7a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_france.svg",
+          "sha256": "02cc1e339650fac06e3055c0eaf1b80e0b1af72390030adac5b805830fccf516"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_germany.svg",
+          "sha256": "7da8501c85591283fa9a9610c8e5df05f7db9628dba73100e6e0b8b139d33aff"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_japan.svg",
+          "sha256": "dbf83196d49c76d54cc73e75712a2870782299a3b660c3872049e93e0e0d01d9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_korea.svg",
+          "sha256": "3c1c1c7c4bbacfe517fe717fee9e810df1795adbb97b364dc8516bee570e9481"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_spain.svg",
+          "sha256": "e9f30e305b7e376d445fb275e9c4d1401286560f69a090077bfa05fae32f14f6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/fl_usa.svg",
+          "sha256": "b721ca85e97196271a2cf6217aac22b76d33d06c4037c70d0b4bc4da8ceed06a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-de.svg",
+          "sha256": "efd480af5a154a7651f29da23ee0d09dbc892410fb4041898ddf8face336c575"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-es.svg",
+          "sha256": "f9cfaff858e95f830733ade9591037b5322dfb5827a53b70956a3d190bb49b9a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-fr.svg",
+          "sha256": "8cdacc8d79bcf210cdca2777a2c0de1f9e5862526877bd3026c9d59ecdcd4578"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-jp.svg",
+          "sha256": "bfea80baf9989383dc4bf7ca594ed95be0df0ff125bfc88d0bfa878eb0198022"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-kr.svg",
+          "sha256": "7a6cd5b51d0e2841ed8b79b1147ad8a66cf3c09f6344d4a63b5e4413ffa5d15b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-us.svg",
+          "sha256": "e7be4240cf57987926673708f09233be1ab6bdf35acc7b86bd32a263f197a2a7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flags-provenance.json",
+          "sha256": "989c22377e87ce9d0c9437bfcf4670d5d3d07bb4c087a095546f301de5fc0f60"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/generated-scenes.json",
+          "sha256": "a4f4e34ccff142778e36e0a1bc4b2153788f94256bd4cb4f3a9be4edcb3df5e1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_france.png",
+          "sha256": "930cd42e471aeaa6b7b394b7b3979f62a2e049bd48069d30a814898fd0648eef"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_germany.png",
+          "sha256": "e14a8c3e8f7a7d370a3170364932bae71c3be119b986e43dd655fbefb3333437"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_japan.png",
+          "sha256": "423c5340229403cee396eaebbb9f1163ca27be3f17c01b1ae60da4b30b808f4b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_korea.png",
+          "sha256": "468caf4dc08e21f8dd8501bf7b342f9cd5a3953c30df49e96a43af46fceeae27"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_spain.png",
+          "sha256": "b1715135c7f4fb6a964347e9e8d5ada3ce540557aff0f222f75de0418a302eba"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/k_usa.png",
+          "sha256": "916d76c55f9baaa3ec7b8f9f715ad3defa5fa7fe404d92dcbf2b685bfe6297a1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/kim-demo.mp3",
+          "sha256": "7ba86bb9db20b3c9a4d35a58c46f46932f0aa45a546f6fa16f2b7757c89f32e4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/provenance.json",
+          "sha256": "dfde497f8b15ca004b3e54384300d2e8e9470dbf9fbdbf3bbd9402d9937f5165"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "sha256": "20afb59f6d9095306d86392489b6ef8498928343cd048330804e1b3626fbf09e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "sha256": "d958ef296546d04098163cfca9f51eac80c163b5c6ae547cde794d4dbb09d14e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-tom.webp",
+          "sha256": "fdc3099ea0bee372a467182a03a1a117f9c2fd454687ada6e73b8d48e25065b6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-france-chloe.webp",
+          "sha256": "a6caf8b9d1bf821bcfd36458361cf28d6c758ce3df5fb98464e49bb1b38ddcba"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-germany-lukas.webp",
+          "sha256": "64ed3fc5f65f103d29c18fc1b61b9c838410869253b1415640370c93b3e24b30"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "sha256": "720a3f496bfe314d0001ee746c171f624129efd4ea5d3a60dd8e5267304448c4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "sha256": "f06f71d3710f5d2c0e3cedcc75d34cd849a362c74519e4ffb946d1c7309d661d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-jun.webp",
+          "sha256": "c05781a056fff72831a28e6f425dd227666d83f8a516f99a459a266e8e66db8a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-japan-hiro.webp",
+          "sha256": "296f44d6bdfdd7da0c1cea92e8490c3e866b9abd2ce230abc48fcdfb2657d724"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-korea-jiwoo.webp",
+          "sha256": "933490834b3073cae972bebdd0a88dd5081263e134ba1709f941a68b8839246b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "sha256": "040e05946d33c43e7d1f4523aeea71b32fe944803838fa0fb75e4223b4f5c2d6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-spain-lucia.webp",
+          "sha256": "41e94e3eb3e7d8294664d9de8089e4ee5ab521f4b9e4cd8f109659fc85ade03e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-kim.webp",
+          "sha256": "5c861c3b8c6ba75a0387cdc4713c60721bb18eb31d4a754f1e1706a8e86c949d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "sha256": "f8a8063f1ac795b962172d26f13cdf06b35b351ac48b5a60a58ec8c27823088f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-usa-jake.webp",
+          "sha256": "93494cbda0ae3e4f673e5beb66f3a8010ba688351c4fcd4e46f12c4cc33f16e9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/audio-provenance.json",
+          "sha256": "b10d5852e07a5fcb833a1b6269765c032fd3934eaefa6dc1c3a683fe561b248e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/image-scenes.json",
+          "sha256": "aa114feba02f7f72ea2906c9d6e7a32f6a2387a798588bb98280ef90a5c1a6a8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/lesson.ts",
+          "sha256": "f5aadedcbb235e41e8adc3353e5a9b0f22fa27d79a67f09a379aa4c0e5b62990"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/useLessonSpeech.ts",
+          "sha256": "2b6f53789d0ff88fa5f082a8afc6fbba09727272ee70806eaf796a214ea8ceed"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/test/materials/A101/A101RecordedAudio.test.tsx",
+          "sha256": "665f1d58ab5235c1ff3117f4d27ec32aad8984a4f5988addf50903240b93399d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/course-a101-review/evidence.md",
+          "sha256": "9949134eb0d45bf0b7c842b6450013813de1bf3c8499d03260ee7e8665e3041a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/course-a101-review/handoff.md",
+          "sha256": "50c50847ff078d95459fe3bb1dc7da00c165a44c7c772c43f269b88307e165bc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/course-a101-review/plan.md",
+          "sha256": "a07d58c011af08fe7d6b1bde04b85e21c1359e45d8cc7e84ce6983f023229729"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T1.mp3",
+          "sha256": "4d6ea12ea2fbbde8e79c19d630ec1ff10dab3936719d0bc429e6d0a0326b1d54"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T2.mp3",
+          "sha256": "c6d79ea0907da3cd5e5061680b27cb32bb60613b1a85762fe81843c75dc75b53"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T3.mp3",
+          "sha256": "9d2061219880e2a7eb8a7aa3dab7b12406e9db14716afaa728576c7102485112"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T4.mp3",
+          "sha256": "5b284856850c21bf21f7f0e6275c623e26d910b469db4dbe896c0f9875e08708"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T5.mp3",
+          "sha256": "e8929ca3a9f4043e89e6a65a1183d0807a464038a6ae0e88f10470408b7b2101"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/R.T6.mp3",
+          "sha256": "1cd39b17cc4e124df1d38a5de355e9205415dc66a63e5623ed10561475565619"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_france.mp3",
+          "sha256": "c90fe12f2a3e1fd3a48b937acba83accd2a65214239cd3d477a4fae6b5ba8f19"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_germany.mp3",
+          "sha256": "e9dbfeea2d8d33f849094b331ecc5fb89d7e591bb1c8bf377e40b8f5319aeeb3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_japan.mp3",
+          "sha256": "42dd85d11481c19cbc349b8241a1ddc0a31c133e073eaebc74948a14507a16f1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_korea.mp3",
+          "sha256": "9d947198b420161952aa5419ec40e0c194fc7b5b24a2f919e0a843eed9a848bd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_spain.mp3",
+          "sha256": "0758baebd2536c7c45063538ad063c944aadc305daa03971fc2d64512ce8cdc8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/fl_usa.mp3",
+          "sha256": "acf3f0b03592b45ada9a018a0cb44e3dbdb8a2e96d0c5c4bcfaeab15170fb18c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_angry.mp3",
+          "sha256": "fcccde01486bf6e485c554da56fa9b1c8f75ae527361e175604a804aeb60e344"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_cold.mp3",
+          "sha256": "30f3c412d634959d31ea0ce4341fee1f00c616bb239726dee82c88bc10f04fb8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_happy.mp3",
+          "sha256": "787603ecac452060da261170bb6105e145513fba7b3c871ea9d5b472876d58aa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_hungry.mp3",
+          "sha256": "a839a06f0bee30f0eac839275e1e4a3ac1136220273c80612efcef76b4f2dadf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_sad.mp3",
+          "sha256": "e3017b8583bdc0df5b2784e2d0b283c8e8f10216bc048e1dd8c38cf43446dfcd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/audio/ph_tired.mp3",
+          "sha256": "9756f31bdc6239312ce93d1765a20107b725b43498fd0133572ca4b1a208e60d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/assets/kim-demo.mp3",
+          "sha256": "7ba86bb9db20b3c9a4d35a58c46f46932f0aa45a546f6fa16f2b7757c89f32e4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/audio-approved.json",
+          "sha256": "4dda083e5906d31fe25588076db6ca6a9ba667641fa2f9d986e1499b22187e90"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/base-fim.html",
+          "sha256": "1f9519e8e8794d89df2f4aa2b30ba030450a9ddb891d87dc83116a006348877d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/base-inicio.html",
+          "sha256": "5297d0f28a1f9a4682badfe9d1e0b49300c64213c1488b11861c88df19bda7bc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/build.py",
+          "sha256": "017db7759e810218a2761b299ee06471e0109d7eeeb89d27a29d48b93446b49a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/extra2.css",
+          "sha256": "881cb21f59288c221c3f2efc1cd2587965aaecc8ab12c36144d9ae9b75ab823a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/int-a101n.js",
+          "sha256": "1ae4403d3cd8b1f0dc8dd6b6c2853844dfe0c1d8e34f5fd67f7d0b6dede48008"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/int-art.js",
+          "sha256": "e05964aba86aaf4f52b1c2b06a95fbdec2498fb97d41f7ec8bbbc8cd2c7c5f13"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/int-common.js",
+          "sha256": "bb5d6193cbd328c7de689055a0b3c66115cea0b3f562326c880ae97fa65d1981"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/review.css",
+          "sha256": "e8723167ccbd469fe48605ae50f0fbbf59fd5825a4f38683b3762158fa1a377b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/saida/langy-a1-01-novo-publicado.html",
+          "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/saida/langy-a1-01-novo.html",
+          "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/saida/local.html",
+          "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/a1-01-novo/source-original.html",
+          "sha256": "2da7f098ff30bbb50baabfa337244a526985c7119044b338a05d68e0b7ca596d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/course-a1-01.html",
+          "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/published-readback.html",
+          "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/page-map.json",
+          "sha256": "9309e041df505392d21166bdb8b70e15241836d78ce2fddf49e2d11c42a15641"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/image-report.json",
+          "sha256": "5fc1b2bf89933c2c7a658b0a605decdff0ef3fdc44a9f59ddee6938b33a3a9f9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/audio-request.json",
+          "sha256": "67021d6d16d7db4fc25550c90f4f5f69ee281feeb10a1cba193d6a3c83c5bc37"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/audio-integrated-provenance.json",
+          "sha256": "b10d5852e07a5fcb833a1b6269765c032fd3934eaefa6dc1c3a683fe561b248e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/lab-cmp-patch.json",
+          "sha256": "bc8d3daba50e5ae64cb6994f49566e038da5c51cc06436af172665cf1c5441c1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/integration-legacy-speech-test.patch",
+          "sha256": "f72cdfe31c13850f3c1944d4d980a1a32d0a5778289c7a10b84b10b6ff5325fd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/verification-summary.json",
+          "sha256": "4cb11cb1a99a9d1eda75d8e84bdbba629b48b4282c654026a73b4c33d83c6bd7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/contrast-report.json",
+          "sha256": "b06cf870f1d811056de7898b67eb54b1e45438b29eb2119c0edb8b31a4758f20"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/publication-receipt.json",
+          "sha256": "a8351c670af82c38600250679cf4dfe15a8d91a78494e8c15d078768468f6e00"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/readback-receipt.json",
+          "sha256": "38ca3ea7832bfc68f36c11797c68066731813b1f7b670143bea405763d309ebd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/preview-receipt.json",
+          "sha256": "16a26adb35b5f2d5a77906dcb5091c15be7d0d18337ab4ccb1e54e61857cff13"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/published-render.json",
+          "sha256": "735d823236ebb913a29381f9e42d8641ead9460e2eb72f16d31e82368e649748"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/HANDOFF.md",
+          "sha256": "50c50847ff078d95459fe3bb1dc7da00c165a44c7c772c43f269b88307e165bc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s1-1440.png",
+          "sha256": "0f625c9471e4c699377b1071c52428d4bf810ecb85bf4012b974cc8f26adc12a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s1-320.png",
+          "sha256": "0259f82fb1190f7d480ba34a252f766977286733a0b8ef9de1667aed25fe5e61"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s10-1440.png",
+          "sha256": "a96b8ab0d62f5208c59d94c7e15fd160f2461d022bbdd3cbe1de85023a603f1e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s10-320.png",
+          "sha256": "d4ff0549c743d6c1d4709e6e70c4090920cd0cae86ab31ff925e890332a13999"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s13-1440.png",
+          "sha256": "cf51e0b6593621b8e8ad4ab60bfb868b35328ff99cd51e51b18b17314c7f96ed"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s13-320.png",
+          "sha256": "22a4b44a696033e4f770744a3bb13037c413284b89c64474f4966845812cee57"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s14-1440.png",
+          "sha256": "89b391ca0e6caa6057de97ba966567287b9bd551bb5b56a8aa21098489fc0722"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s14-320.png",
+          "sha256": "b785b947b7a908e6b58b5400c0a7b16e144610bd5d6c93673e75b71a94440b69"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s15-1440.png",
+          "sha256": "2d79fcd5503ddf0969d404653ad35a5f31f3c5d10026e0aa82e79eca7f7bec7d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s15-320-bottom.png",
+          "sha256": "5a5ed5249054b8aabf37553e6971a81e0a866e5e92cec9ce172be0c27be13225"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s15-320.png",
+          "sha256": "37245c9994aa2c35ea5e64f8adfb2110dfca0a6c53d3e0da69f5ddb2e37e94e1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s16-1440.png",
+          "sha256": "4cf0cb8e1c8709725929902a0d40c7dd3499e66ab3af898ea59d5ba3bcd977d7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s16-320-bottom.png",
+          "sha256": "ee6698e147c72c1833a4926814c716ccab5dcfac4322e648d1ef87932575ef18"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s16-320.png",
+          "sha256": "fdc495b5c07ec401fe8f7cd21a0923b5096e242c2de759174fff63bcc60fa652"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s17-1440.png",
+          "sha256": "dec51eeafee33f332bfc5638a0de848421830b272bae59af78267e2fb667d39d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s17-320-bottom.png",
+          "sha256": "49846c54bb086acbcaac5e26818e153d98183c7a9cf0fe67afab914b87964155"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s17-320.png",
+          "sha256": "fd4ac9da995097905f4e3659ee8cf09cf7e8cb40cb9c3f8ac165449bf08de2ee"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s18-1440.png",
+          "sha256": "288c7533709c087126f34551b7821bc28064a8f3624a1a8ae0190adf2d2a3f10"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s18-320.png",
+          "sha256": "687836ce1fb4b9d17ba45028f03cdf848a8656490a537c38f82f9999f9d21df8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s21-1440.png",
+          "sha256": "6d6c11b9b4d8d01206f8eacc41eaf1abe26eb10b76d5c0d441c727e8c8f2b163"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s21-320.png",
+          "sha256": "73fa0d01ec4e00d5f926f9147f1e893a33e0c55034131906bd66eb7263fc099c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s22-1440.png",
+          "sha256": "1368bd88745fca2771bb00d34e8129501cd372ea5895ffa89dc200320f9972dd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s22-320.png",
+          "sha256": "9075246759d3bb115aa9a06a7d7e8b498bee4e0995c5d77adc7e62bef7f0c27c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s23-1440.png",
+          "sha256": "215f69f1f2cdd2eaa5cd4b13e0e667b01dd9fcb08ea7587f29550bb0d5fb1adf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s23-320.png",
+          "sha256": "0fcba0ae4606d8006d07564e30f2fe9e28f0d823ac76cb25684adcf788dcfe59"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s24-1440.png",
+          "sha256": "a87bf5723efc2c53753c32610eaceeed971a5657f630fc583e8e610ec9c6c567"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s24-320.png",
+          "sha256": "16f38d80ab9b43142c6b375d1071c99dc2442ec0c1499b8fc8dab48d7a7d2138"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s25-1440.png",
+          "sha256": "acc1256edc2c52777d3403435c0201da5166c4296acb031ec97a86118990117c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s25-320.png",
+          "sha256": "621d56bdb62f6d8e06dbe0a5b41f877be5519c7669dfe02a63fbdfdd377b6e08"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s26-1440.png",
+          "sha256": "e516fa9b473f7846b6805713fa57a3fad0e33b191d7ef7d9bad6377d0f353043"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s26-320.png",
+          "sha256": "16b94a4edac4f007bb7ea8f2c00b7078cc3c065d1b71622fd0886796e59d8c7c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s4-1440.png",
+          "sha256": "ab98e4469f628aa286b9a8ae82946cb70860365eabb041db8659eb1f687a4022"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s4-320.png",
+          "sha256": "cd8ad512cc4e9b557bc23839eba09b38a376b45a051a5b0e6423d06762f2521d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s51-1440.png",
+          "sha256": "334c91782e480d172a0e5726560d96c00cbdb87ff2cfb54a9cfe2f47536c7f15"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s51-320.png",
+          "sha256": "610b90f9e70dda91a2cb6a3bbc32298953721e6ede4ef21184273eb910cfc220"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s52-1440.png",
+          "sha256": "53a6cba50165cc8928360ba13c4520db1f9b9f5c619997e82143d2bc44d5d864"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s52-320.png",
+          "sha256": "36adab3a291f78c546ee1d8a5ea36c565ac7a44dc28587e29c9423b7db95cc15"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s53-1440.png",
+          "sha256": "825cddeb63470c54fb528b3c5f9110668c7d375c39a0b6a25ca1cf382702c953"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s53-320.png",
+          "sha256": "5ad532eaa6a3113182c3edf9bdeb285b3ce30aa4c054f1e1cbf01dc13b76d60b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s54-1440.png",
+          "sha256": "984fbd3cc1239fbb0e68517b788987556567505b78299365906af42ba6f1f30d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s54-320.png",
+          "sha256": "7b4e037fc8d0b01b8ec4c84d5a6aa4f9265ee2df95abfbf71479bcda627ebb52"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s55-1440.png",
+          "sha256": "f5417f4cf6d5a3c3598824de9b7b24f4dcf86e3f14af94f5a01e1fb4f4e55715"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s55-320.png",
+          "sha256": "b61df84cb61c03afa1db5e30d238e3340927e157449dac16d915cac57c8f3f15"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s56-1440.png",
+          "sha256": "190825d79108387ff24731b4930346dbe3616f17884015a77abc954aa915e962"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s56-320.png",
+          "sha256": "dcbcf1b261b384600ff98cc89e6c6d146f58079d0f910ab9c961076f8caba388"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s6-1440.png",
+          "sha256": "5311fcfca478fb11df3fec3918cac10609c6e96bee6c12a7a8073841e6650939"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s6-320.png",
+          "sha256": "3b2f24912c2055d446101ecd763e743c38465d0476f1e570c9069e32ffb07e4d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s71-1440.png",
+          "sha256": "0d6728343e5f043fed9fdb1f232a512dfdc6853575b92def9e76644503d9ae5d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s71-320-bottom.png",
+          "sha256": "85445b83c147c085dfbcba9da0542ca3b1fb3ce728b373ea2842b7869f5c7c75"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s71-320.png",
+          "sha256": "e35e7f277a64d1b68e07c98d391093a3fcd62cb2e4d76901fd827584b57dea45"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s72-1440.png",
+          "sha256": "3378a572e3bb8995491dfeb7e7eeace435b3b3f21324b70b6f67ef1a586772f3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s72-320.png",
+          "sha256": "e4e663c885963fefcbcbdab8148e8be13ddda47c7f287f7b43b47caf4525bd8e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s8-1440.png",
+          "sha256": "241eaf8e17086f1fe088c51d1ca5af0f535e80c77c6cf13628568d1e536527de"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s8-320.png",
+          "sha256": "0f807fa97b7e99ee9dc0bfa54fffcfb396eb98fd632f9b82bf8376f09e73b0e5"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s9-1440.png",
+          "sha256": "6a2ff8aa09af79d5163228df8ad69397a4b7fa8380f145832f5097d8389e0f5e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/original-s9-320.png",
+          "sha256": "883a26c2da1e7f531fa2d13c5f855009c0055db57ce5141a4653ba92166d9455"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s1-1440.png",
+          "sha256": "7c3c16802aec58995f36a8898f1747e96faf0b3b8e4005f125a3e82e6c935963"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s1-320.png",
+          "sha256": "b16ff6e858867715bc692a27e6b6a2f8291a2f71aa4b678716192da0e8756516"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s10-1440.png",
+          "sha256": "00829c5d5bd18772115350c86693c1f2cd54ce9a4cdf1a59c1b4089ccfd031b2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s10-320.png",
+          "sha256": "ec031769ac91166afed6b81bb0d6b8aca8058130c7ae9707c4a1a6a1b9da2064"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s13-1440.png",
+          "sha256": "eba9c1913c735923efc687952416351a118d056208918628731fd543e6bfb9f0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s13-320.png",
+          "sha256": "1bd7e98b4157c42448fbf5d2814a9635af2f497beaff5bf9e544c48500eeb122"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s14-1440.png",
+          "sha256": "f41e7d98041c9752f3d6c349367149fa4a4633e6b541d1a990c10e87ddf442fa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s14-320.png",
+          "sha256": "e4b2f0eab831a62131a58829572937409dab1991d43b46a1c57cdf5e46e46d1c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s15-1440.png",
+          "sha256": "1c5d8ea7a47c22cadbbfcc3a331a7a30d3d03a43f9d3c0f91e56b912bdd055b9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s15-320-bottom.png",
+          "sha256": "50d0316c46696d4e07e7b7c3fbc2b8eb27748c34668dbe22b9b2dad715b67c65"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s15-320.png",
+          "sha256": "ffad16a7cfe3d9b10ebb12b5bc8f3999308d096cb1d8e94fd7c3a79f9ddf8634"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s16-1440.png",
+          "sha256": "65c53a48902f43fcbc3e6228aae1269dfe8293b5ea60313546bb0609dc9863ff"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s16-320-bottom.png",
+          "sha256": "22f2d237b0cfedfa069e04b03e184d63b4068b83887f43fa6ab73b57b525c9a1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s16-320.png",
+          "sha256": "ff17f16549e35ca37881c8b4dbddd3f945ef0415be5ac0f3597fc022f6710c0c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s17-1440.png",
+          "sha256": "f751b04933cd02df3f733c3c5a78f6035e2bdf51c8b14de38361e9c1ce7dd037"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s17-320-bottom.png",
+          "sha256": "3077a067c106edeeaecf34b96f4216f64e2dcb0361c91622facf2d75b52257ea"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s17-320.png",
+          "sha256": "c15e6be40ea3f86b2b45686734c23bb6d152c22f2220d33471411e3b5bf70085"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s18-1440.png",
+          "sha256": "74b2b6fc7e77d45f19e5a832b833da5472e265e9b9cab220aa33b06355f495d1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s18-320.png",
+          "sha256": "4c3d81a01070a0ac79922b50b882e6b2ba79249abe0fa7c7af6f882e2006035f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s21-1440.png",
+          "sha256": "f1ed55296e3b0a85a09dbc6430bc1a7c93b8e49a60644ae71ed1a6b511c8e792"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s21-320.png",
+          "sha256": "10fb43bacb7aa9f145f2938365c9739c9cabaf008fa1d8c4371f6f2949c0b699"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s22-1440.png",
+          "sha256": "51c76a5cb8d5fe880916dd402a2c4aefa81e382454a998576ce1f5b8d1ce75a9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s22-320.png",
+          "sha256": "4699c8e7d73c055c2b8e52711e1e7112e0af6ccd644f183c4fd2f81d28e198e6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s23-1440.png",
+          "sha256": "c61e4df60cf8f9db9725e4c91a5509cffe44dd5c35d0c98ebf92a5ccc8b5ec5a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s23-320.png",
+          "sha256": "a11c1514b2d54dfc8b0c3054fb5e2dd30af19c43dc08aa654216307bbb3324cc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s24-1440.png",
+          "sha256": "87b1691f4d86968a3b7a1451b9001deced4fcdac872e69e92ca4b67fc8f0c5fc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s24-320.png",
+          "sha256": "d86fe34ad2eb8b7e1a51cbb258a35bf899deb1375da50098604275cd27799120"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s25-1440.png",
+          "sha256": "db4b8322c26aed0c2924aa8fbd7cd27f302ad24606e8ef9b2fa1405858bdfbda"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s25-320.png",
+          "sha256": "f5030f22de8304e94c3a690ea73b3cdf4885a424bbf49158a4d45969d9c3f5b7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s26-1440.png",
+          "sha256": "494cb4b4094f5d43cf261aa0cfff95af65685d1a5472e68521a84d6361e96bcc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s26-320.png",
+          "sha256": "c0e1c588572b4540a56b5bcae82abc3df9f6233ae03d23f2bc70110e5d593e9b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s4-1440.png",
+          "sha256": "22c811b71830209b2aa4462603e401b29af0236672a65b7280ddc941c02a1e78"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s4-320.png",
+          "sha256": "02a429ccc997e6579455a241a7a7ebc131b9d42b1d1b839f450676061d8ff486"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s51-1440.png",
+          "sha256": "bdd670675baa3169f45f3c01bdfa2d7a3b00ca06f38849a6b69f829b0f62ebce"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s51-320.png",
+          "sha256": "aaa1dd39cfa9fa9ef186eb2a3094230a3306c0f123425876f6874244846d3e8e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s52-1440.png",
+          "sha256": "dc6944dc0add3699aea373f0e64e354477627684b1f418c15238875ea4793eac"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s52-320.png",
+          "sha256": "ad0d3b8e01340378cc2775f037eb10676dbcc40bd7c022e300e1f227001a743d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s53-1440.png",
+          "sha256": "3b2f316a09e3c6fff4c1352d91dcf2606f6b177eb56aac95246d4005becf902a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s53-320.png",
+          "sha256": "51136d98073edbb6edce74b48434058c5eb9d761384e33c07a7d0c825ab014fc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s54-1440.png",
+          "sha256": "6aa79f5ca5c303b8b165ac9757754a2d5f28ee94f4ebe692c6f652c8fdfa2ae8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s54-320.png",
+          "sha256": "b9248e881b6aa91779ea6227581ebe0f44ecb8318f91b5c8c2444aec4e259b81"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s55-1440.png",
+          "sha256": "85b403355269c527451baf817873dc2b13231babcfe43a0a324ddf0eaacaa267"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s55-320.png",
+          "sha256": "5a8f162b286fad860989d0176bb0ecb27ec9e99fad4db32139a7249eb4884289"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s56-1440.png",
+          "sha256": "5ac28621cee8e6bbba19545d13e23f8ce378949067fded1706013fe15dad9264"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s56-320.png",
+          "sha256": "ec3d9cfb28be46dadac3f4aa631b3028957c827f2591fca13fc5508df07266d1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s6-1440.png",
+          "sha256": "bbeea49bd3739428fcf096d2a2c47a6c8c0051db0139f9e85f262834d451ef5f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s6-320.png",
+          "sha256": "9b43d17cd11a732dc4c7983942098a739e0fe78068d109a324a574bb53fe325d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s71-1440.png",
+          "sha256": "4339848ffaf97091f9726e157a06aaa816f0091482ce11917be481187cade811"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s71-320.png",
+          "sha256": "551e2a56539f61b70643dcf3e9d87061081dafbf78263d9c8d3db908361c0990"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s72-1440.png",
+          "sha256": "2fa9ae099855b280fcf8a80b2fffc2dc4ccc138023167427979ea469a1544351"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s72-320.png",
+          "sha256": "aefe0d54a1bd389487de22b92a96622ff5e13417cb87bc5854aa93f2546dd0fd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s8-1440.png",
+          "sha256": "3388b8651a080ea6d2511b8899866837e2f621e756cd656551d6e7e71500c345"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s8-320.png",
+          "sha256": "0ad9282123e28dbaa64bb48a96608f87d9868bc5f5c71dd5491b14ffc6a0afeb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s9-1440.png",
+          "sha256": "9547c1f514bfcbaae5bf9d1dc894ac17561bc6287ed5d43af26de89d668ae7cd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/baseline/shots/react-s9-320.png",
+          "sha256": "d8086ba5e69bd7e0e06aeafb33614ac3caae6dcd5637ebabd8bc162078ba6864"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s1-1440.png",
+          "sha256": "37ba17b7e01a33a238afa58ff57ef471598a04336812f114f5f656943d887f00"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s1-320.png",
+          "sha256": "01abec80ad9e8b3b4f320bbffba0f8c04bf58ae317ff69ae5cdfcc953469f9aa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s10-1440-bottom.png",
+          "sha256": "1d91d0c819c6db78e22f94844fbfa55cad541e23e5fb9d421492ccae5cab4e94"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s10-1440.png",
+          "sha256": "1d91d0c819c6db78e22f94844fbfa55cad541e23e5fb9d421492ccae5cab4e94"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s10-320-bottom.png",
+          "sha256": "38277053bd6416a4dfcab8e4bd4c3b770f0a93d1c606ff19bbcfc8cbf1e0270a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s10-320.png",
+          "sha256": "38277053bd6416a4dfcab8e4bd4c3b770f0a93d1c606ff19bbcfc8cbf1e0270a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s13-1440.png",
+          "sha256": "6baed2ac48a6bded38a8022cfb57b1bdc1eba3e8ec70d85af81f1bfb3574dde2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s13-320.png",
+          "sha256": "bd4bf32de6127bcc3b0fff964f26a4a3c3e8b8d5da287f31aa1ffb63110217c6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s14-1440.png",
+          "sha256": "8b84a851fc7c92a91e62b56f68b19fa1aadc19f8590fcde709226347151bf459"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s14-320.png",
+          "sha256": "388f3296220ab2ac3bc4cba10d203fa9d3b4ac1e2e2f5089e5b3be6f4dee0efd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s15-1440.png",
+          "sha256": "82da7cd4a2f873164f2ad12d53d7d5d71c86dfcf2ac35cb85f4a8261406a5262"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s15-320-bottom.png",
+          "sha256": "5e94ab351875746de702959931171c27e3e3efe1ca7165db72fb1bf008418832"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s15-320.png",
+          "sha256": "5e94ab351875746de702959931171c27e3e3efe1ca7165db72fb1bf008418832"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s16-1440.png",
+          "sha256": "8efe483b5b6742420c8e8675bca88b0bfe97c375468b38593d214f65b1727f90"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s16-320-bottom.png",
+          "sha256": "c4a9c0b4da6b9b80ec90847ecfe96b6fb464b2038bde879f602f97e625d791b3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s16-320.png",
+          "sha256": "c4a9c0b4da6b9b80ec90847ecfe96b6fb464b2038bde879f602f97e625d791b3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s17-1440.png",
+          "sha256": "39f1384ca24b7140c8d4da00457c2783f138ac368ea8214a0b2056dbf6bc5ce1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s17-320-bottom.png",
+          "sha256": "0d31174e9815a7871d5ccd3c089513f685ef9dc4d3f7e55be3a92c8e66bdf008"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s17-320.png",
+          "sha256": "0d31174e9815a7871d5ccd3c089513f685ef9dc4d3f7e55be3a92c8e66bdf008"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s18-1440.png",
+          "sha256": "3018daa8c4740155e58c24ec34896ddb7184a86f43414f5e5330e0a162b57667"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s18-320.png",
+          "sha256": "ed40b538e32ec5cf082b8bd55c8dcdb07e22b030e6bd32cddceb23ade913f091"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s21-1440.png",
+          "sha256": "939b907dfe0d51b588a514cbe15ce0f98e7a6a81127323ebc2f593eecdbf03c3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s21-320.png",
+          "sha256": "5f9c07c508ad625ee8d8ca0cfa8db3c671c2f5fe6578ac2bc8d3d89c7e79c65b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s22-1440.png",
+          "sha256": "b0641ce144ccb9622b75876eb4a4a9b27cf7429185a4fed369e64e5f7d25cac0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s22-320.png",
+          "sha256": "2f3c31d596bedd895c2f7bbe2ce0c69e67e0d130d96c59a44d40f2cd2fe1f06f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s23-1440.png",
+          "sha256": "0b863518b71ded372587a1264678fd12512a8bf5e133b473fb0c41babc87ddf9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s23-320.png",
+          "sha256": "0ffd859aa09ff242445ff5cb609312ad6682911ab560389ca62367af2d6b2681"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s24-1440.png",
+          "sha256": "2ffafe853310a2a75e45735fc0b258341ac0e3fa3c78f43050ae45e7a0df1a07"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s24-320.png",
+          "sha256": "3fdb964cbcb57ae47cd000f0c15174b40729cb0c9838b9ab26e8a4798d8d12af"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s25-1440.png",
+          "sha256": "de1e772c24b42a46b2ae514ea7f6002eee1d84de1e36917a8a8f99a11cbed869"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s25-320.png",
+          "sha256": "e7241b0eb5037e33f695c2638cdcbbbc380b43bc741cc8e8aa96721fd0d2ade4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s26-1440.png",
+          "sha256": "f295bc52e977bac07a144061a4ead3037734e05f219be3db54ad6eab7ec33576"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s26-320.png",
+          "sha256": "e85e6532bbd7c5b39c729196c051624b00883215a51a58ea15067cf6331064fb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s4-1440.png",
+          "sha256": "ceecf5971aa2da8796b9701d66e5e39dd7685a9a80e6b055e4cb2f2bdf8a221a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s4-320.png",
+          "sha256": "edbb833c3ceff2c065621b14e72442f5e5be48df04fcd27ffce81ba7bf59eb30"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s51-1440.png",
+          "sha256": "13d40ae51d955fd74313f205bc2a65c175ebebdba096af72f701cf837bf391dd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s51-320.png",
+          "sha256": "17153390cb289bc464c7618aa00ae3723555a30e48a3bb41286e4c4788ab4be2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s52-1440.png",
+          "sha256": "93bb7465934f8979e664f7e55a033ab635340c235a4c273fffe4c1bf81448000"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s52-320.png",
+          "sha256": "9e51f95e489cf74b8c8a80875c8c0047ca3eb1f1eee98b58ccc0414e5385a419"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s53-1440.png",
+          "sha256": "d477ba3b0cc5615fb964a797e1d0d1aacaa093af1969a64ff498cb89eba4cbdc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s53-320.png",
+          "sha256": "905dfabf1027a7ce8834131414b171b5b9fca89ad514781f17446379f4161a9b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s54-1440.png",
+          "sha256": "e02688d4070850b78a9c860bfe6a8b981987f4e30cc5a291b81bc68c64fec226"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s54-320.png",
+          "sha256": "dfb24f58c11960c5358edda109aee0c2e10687f7bc4aedc9cc6b7b6688b5ae2d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s55-1440.png",
+          "sha256": "2c8dd20445b9097b736cd49d91a9b1a43a4ebb6d23dfc8bca05a300d96e7cab0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s55-320.png",
+          "sha256": "2ee472696869439363279f617e8014ca6f8f77d6ef5078d79be117ab80de09d0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s56-1440.png",
+          "sha256": "14e2b8d1608de7ee7b91899a390e6a5e437697150b8ecb36986a49a6188d27fd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s56-320.png",
+          "sha256": "b8ce6eea18efdf69998c75abb5b6e2324b172800abd577148d0c465413673ca7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s6-1440.png",
+          "sha256": "7f384b6348099ed254cc475f57b36a71c96ec5948fc2be900e15e477c64fb894"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s6-320.png",
+          "sha256": "4d0bb75b13c3a77f4668e24cce6fd4095528189686e4f51452ecee570448d00f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s71-1440.png",
+          "sha256": "69d104dadcdcb179c6d5f84b860bc35317f67006f205a602507f48d6eede95b7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s71-320-bottom.png",
+          "sha256": "58b3493debbd717789a6c6ddb32586369c023d439cddf4915aeeafc0cdb35b95"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s71-320.png",
+          "sha256": "58b3493debbd717789a6c6ddb32586369c023d439cddf4915aeeafc0cdb35b95"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s72-1440.png",
+          "sha256": "db2577724c667d66072749aef6d3c1e2b6a42fd94bf397914439499724318fde"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s72-320-bottom.png",
+          "sha256": "481c75f7e78b7c8b65aca5fad1c6b3566f2d24d888c23d101a93a243ef36851c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s72-320.png",
+          "sha256": "481c75f7e78b7c8b65aca5fad1c6b3566f2d24d888c23d101a93a243ef36851c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s8-1440.png",
+          "sha256": "b22f301b1083d184a6dd31d62c5ad5f9ff93e46216600898fcae7c712910400a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s8-320.png",
+          "sha256": "c5425ebf92ff42cbea87beab77190537b275cc9b79db77707042f08363deef67"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s9-1440.png",
+          "sha256": "6feeef213ef6905f22f6e24f7551bc01e8e12b24e62566f866c46c664680f6f8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s9-320-bottom.png",
+          "sha256": "bf33d5a21620683e2e6f99a6c4d7fe1b2e09e7a96c64b12242846edde7d316cd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/original-s9-320.png",
+          "sha256": "bf33d5a21620683e2e6f99a6c4d7fe1b2e09e7a96c64b12242846edde7d316cd"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s1-1440.png",
+          "sha256": "db0b2ec581245409941be6158591af30cfb95de574cb86221c3a45b60271b7c8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s1-320.png",
+          "sha256": "330be960f801ff26e7feb1b082621e73ec5479d4ee3ac4c3ede0807304579cd3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s10-1440.png",
+          "sha256": "087fea80fd248273ddfd350fb088379c7127eeb68fdd5dc0eaac7c1116c2d247"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s10-320-bottom.png",
+          "sha256": "6db08766ac7874b1ab180dadc67f75ec2e93aa4d717c248970800e2c4e2471c3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s10-320.png",
+          "sha256": "5cc5b8a5a8219c09762c9be4a9419643849db5132f40fa26f5d91a333ebfba91"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s13-1440.png",
+          "sha256": "0edad0c2ec31ed89f830ee1e4e81b4db888c026df7facfd65eab2533997d6ed0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s13-320-bottom.png",
+          "sha256": "e03d87ea4e802df2dca8159c2758415a13b7c5729e02817e3bef72fcc8a7f295"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s13-320.png",
+          "sha256": "afc5e571db3d6e7da8294f2d45e09bd2392440e2608f5534e7e5bcb6bbdd61dc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s14-1440.png",
+          "sha256": "440e4ecc59a90b21cb16ae4ce868bfa069efbc04ee33c8a11b08c0dcee6af821"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s14-320.png",
+          "sha256": "20ed860ef11338520d0af3b5cd8004cf0c543fc0cbfce658f657cc720aa6cb83"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s15-1440.png",
+          "sha256": "7116688e4354b05289c3e9abbdeb938f794246e5c674266f2b85774816dfe1a5"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s15-320-bottom.png",
+          "sha256": "0c917e61349cf901ffed8438f10227d437b23ce39d1a7801b2b5ee9b8871885b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s15-320.png",
+          "sha256": "8e74634b6287d933aa72cdafb455dfcb4057d8ceb6e5ad330cadd25422c753fa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s16-1440.png",
+          "sha256": "76f0a409a528e007d472538328769698411b8cd772a1d65df6c7cf64054f9fd6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s16-320-bottom.png",
+          "sha256": "de5143f61e028595df3c9cbd31a3217e95ca448884d09e6111a1a55d8d14e4ab"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s16-320.png",
+          "sha256": "b62c7bb837d43f832224124a288fddea0a3441f0800ec0579c01093496c6007b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s17-1440.png",
+          "sha256": "8a7625bcf2c0e0ed88331ff261ec6994cbd9153017e652dc5809adac19a8093d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s17-320-bottom.png",
+          "sha256": "4503f95780ae754af335e7dd031dfaab9c031cc4470ddbf100515b1fce0576f4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s17-320.png",
+          "sha256": "e94e80d156c37a5a3a20a53da8ae6e3e74ad6e381cdc14efa96ed4bd8d030b75"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s18-1440.png",
+          "sha256": "23108e2dc41cacfd4d900a0b732e4eae34a26dc9f2b626dcfe190fba33ce8333"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s18-320.png",
+          "sha256": "db66f4bd5bf19e91e383255efbbc2b1cd72236963a24c81cf8e2f22330f9c053"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s21-1440.png",
+          "sha256": "0328a8f232eb5367832431cf5c64d3b40db50e3f5e16106164d8551a65c9e893"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s21-320.png",
+          "sha256": "bae236cb149373db85d263d0f4f6ead98536dd1ad9cf159c13801424f2dbd24b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s22-1440.png",
+          "sha256": "8f79f750b1a6bee95e1f835394e5b6b2687bc3a77eff067d0b592ff953bf230c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s22-320.png",
+          "sha256": "2bf35fc4134e53c1bd677d5771bb8623dbbd992ccdabb6f58851b9bfce807843"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s23-1440.png",
+          "sha256": "e3ade53ffffddb60ba2242caa75d497b61cf57131bf5e7d7275d473f4bb95ef9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s23-320.png",
+          "sha256": "863756fcab29ebd679ab4f96c4bea89d9a81192098512521ed8e20963498cff8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s24-1440.png",
+          "sha256": "b9967cb4b584a41d0d67876034fbd60c81f035dee3077aefaae8cd15234ebb5d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s24-320.png",
+          "sha256": "872b593b1810a49eca322b4b33027911ae21199a98f7f3fb073754c6707219e1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s25-1440.png",
+          "sha256": "381ff281e6d63a92d77bbc74dadb34d743fbc86ec237dea11ba555a3a8c2d6b1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s25-320.png",
+          "sha256": "bbe1f5e2542432b2d52c0620a4bd83b41a55a22076682c853ce1376a2a7b26c8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s26-1440.png",
+          "sha256": "6e300fb27aa76cb5293af72dcbfb23e6c882657f5eeee2d2c5462ba88eade564"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s26-320.png",
+          "sha256": "0bb4ebfde460e156e64baf3c2f93555a1d2da20b343c72253ab6962548f6232b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s4-1440.png",
+          "sha256": "223f4ca9b2fd1ac3c6999432e18ffcc96f030031f0a81d2eed1cbd11fd2a7503"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s4-320-bottom.png",
+          "sha256": "b4d8a2cb37d1bbaf900f5fddf12a695e2e2e99e2574aebe89cbaadcc60d922e0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s4-320.png",
+          "sha256": "5b3ce39d513c742339d7aa28789ff92f6c263ead75034ef6743a60cbd86a74af"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s51-1440.png",
+          "sha256": "2592febd82df5cfbd5c9c2e3ce51956e5d43d707d962ba977de1cf50a5c92b53"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s51-320.png",
+          "sha256": "5b1dd5bc87ec14a9c53b1fffa92dd55ae9b5b4e2833a99d046e10ac824f362ef"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s52-1440.png",
+          "sha256": "9a154e85d66cb2da06109a53c2e31a445d67be734d6966f381712b052abece82"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s52-320.png",
+          "sha256": "4cb797cf92bde504217285c88282d9fed56617a8a5d2390507d1b572542ffe5e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s53-1440.png",
+          "sha256": "f8c942b91396aa9c4f547c94438e8ed0f4d383b027485d70809cfb2372965212"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s53-320.png",
+          "sha256": "fce1b90a6e0ee16e9534355ccdca753cba4fe0f1f80230e202918a8cb578c240"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s54-1440.png",
+          "sha256": "e0cebf51d57a097acf4a41afca7fbb14d05bc3e5044fe47362d96fc1502d19a6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s54-320.png",
+          "sha256": "5ef4c82d9be19061369f0355685cdaf0a7a4746195ba8ecc9176f3adecabb609"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s55-1440.png",
+          "sha256": "676e73c71a63fc77e3cee191ea6b9ec47fbb4b53e00f23a66fce936cac6ee358"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s55-320.png",
+          "sha256": "0d1d465894b867ccab9d8274f678fe812a61252bed6168f08db858a67b1faba4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s56-1440.png",
+          "sha256": "96081e06cb37296966578dad21a1039e9f3f05b1ff7988ecfaeb9ff35f5c5bea"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s56-320.png",
+          "sha256": "dddb529eb10bc98ac570a3fdbd125f2fdefa385957fcff0279c3e8e76bd821ac"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s6-1440.png",
+          "sha256": "7db4489163426e1b7152353fcf87e0443442d8d154aa5aea232a177e42ae6155"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s6-320.png",
+          "sha256": "ca331f6fed0c427d186b5b1dcbde6135ab4b95afae88aaf0976a1fd4fde4f588"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s71-1440.png",
+          "sha256": "f3c978f525da3ed6a2b8cdb0fe9de8ccb8214cb633b2bb3a88ef1d091c503a71"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s71-320-bottom.png",
+          "sha256": "ff59c69d4af595d9a2ca8bd52f24c3545f1315372a6f3f2aad2735cab38ae707"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s71-320.png",
+          "sha256": "1f0f64654acccfbe387a9764f5434eb3a73fc5cc87650b5e50c3a8275bf4ed10"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s72-1440.png",
+          "sha256": "03f4c00fedff68210e0012a65b168c5f972b8761372b0d689415e5a3f4e08211"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s72-320.png",
+          "sha256": "229ef373aa23d46157f89e5a24fcd3f4eee560dcbd928e921e8fcc7ad063c6e0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s8-1440.png",
+          "sha256": "fd1a7cb4bbda939b44d8baf1cebd13bfcb5628b03cadaf7d9d58a0306ec854ca"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s8-320.png",
+          "sha256": "d393d9abb6e6db5480c55fcce9b44e8ea74c4b51803332aecce363890e00ee57"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s9-1440.png",
+          "sha256": "c674c49807d6b7d21d810c7611113b4372b98f8bdcccfac7889cc4fd93353680"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/shots/react-s9-320.png",
+          "sha256": "747a654925f51d7e9211049dab38ea769b40c8e76870c9a1c1f04e11d8ff7914"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-grammar-pagedown-1440.png",
+          "sha256": "d96c743b4434f690b5c0034090b3eb9e4a04d56bc1c5c9527f8d57a673a22679"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-grammar-pagedown-320.png",
+          "sha256": "2de943a026d9d61a3fe70586b94ebec7f4f23c1e42327dc02d6b3efd1ffc5d8f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-kim-paused-1440.png",
+          "sha256": "a415b428c9f935d7c69a36da4f966490ef8e0c2bc4342e27d293002688776980"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-kim-paused-320.png",
+          "sha256": "e021ed49d5f7595bd434f6a4eb242e9cf11373e7535570bdbf74cc105605b1e1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s1-markers-320.png",
+          "sha256": "01abec80ad9e8b3b4f320bbffba0f8c04bf58ae317ff69ae5cdfcc953469f9aa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s1-markers-390.png",
+          "sha256": "9ba82f5bd7e788e67711b7cc450dca7bf219c77253cdec44f8eac7a9c0c4d06b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s1-reveal-320.png",
+          "sha256": "9c61e38f61157232e518f613d5c588be7b9bbd0e90b377ce4c64b2ec2345a1ab"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s1-reveal-390.png",
+          "sha256": "7a815dd8ce72f0c5226f5be73028d8ec07bf6c71bcaae228d4abe1259db67441"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s10-markers-320.png",
+          "sha256": "44eb6b91c34eda9d897ed945e8cab88c5b48ff4f99dc62a5ec5951e01365fa0d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s10-markers-390.png",
+          "sha256": "ab53ef4794b183408194d075dbcbf43af9b775094592abaece2cb9f04d8c763c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s10-selected-320.png",
+          "sha256": "8881928a1414e9b9a14e13ef61d7dfa1b31de47579b42b70f11cc18516053bd1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s10-selected-390.png",
+          "sha256": "8234d3514ab2b31df4ebdf26a9e5ca461d10e733954c37e15455a527cf861c98"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s51-markers-320.png",
+          "sha256": "0f9dfa8a0a42a22c23d47228deacf4de241987686d1b3cd3566392d65a88fc27"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-s51-markers-390.png",
+          "sha256": "0f1841ab7c2de22674c899d023ddbd45e52745896f08d0e891e9f6378e03d584"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-warm-correct-1440.png",
+          "sha256": "2da2450930b9aa8c661d02e31e1adeb842bc36b88229614f5eed1ca887452588"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/original-warm-correct-320.png",
+          "sha256": "fd3899c127456bcfc6908ff79eceb203daf8a70025d407cfc0d019d64fd19592"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-grammar-pagedown-1440.png",
+          "sha256": "e3664f5b6b5f0031c85b8b983b47cc560110a313f6bde4b1c186088c8dfb15f4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-grammar-pagedown-320.png",
+          "sha256": "e36f295e6797909fde5f6cb6bcc22ad4c37cdfee5d7479963b705e3eecf61f87"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-kim-paused-1440.png",
+          "sha256": "c674c49807d6b7d21d810c7611113b4372b98f8bdcccfac7889cc4fd93353680"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-kim-paused-320.png",
+          "sha256": "5d9463de4b2758d3b0b6929ac76d02d7ddc455df251c68af773c24f1a6563542"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s1-markers-320.png",
+          "sha256": "330be960f801ff26e7feb1b082621e73ec5479d4ee3ac4c3ede0807304579cd3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s1-markers-390.png",
+          "sha256": "166fb46c69734241160de5405dd0bd41d009fec17fc81dfcf95328d53c4d75f8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s1-reveal-320.png",
+          "sha256": "3fa59eef775d671dd383aa147012fb5969d8a87102f07e2f2cc4193ab2525a28"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s1-reveal-390.png",
+          "sha256": "f23f32ba50ca502ed72c2e5a4c9c231ddc527ef3f6190781ea3440dc991d4b18"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s10-markers-320.png",
+          "sha256": "5cc5b8a5a8219c09762c9be4a9419643849db5132f40fa26f5d91a333ebfba91"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s10-markers-390.png",
+          "sha256": "a56feda4cd9cf136a7895c8cdef0574866959488f99bfed23d8ac7fd07b7c3cb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s10-selected-320.png",
+          "sha256": "9aedde7c4b8350da6087aaa71129b6cda4f7eb8be7995319b1596e49b8dcc2a1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s10-selected-390.png",
+          "sha256": "b29d273d179d3cd59461ff6da0e791da508ca2ddb03299e3ea09945a57325b7e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s51-markers-320.png",
+          "sha256": "5b1dd5bc87ec14a9c53b1fffa92dd55ae9b5b4e2833a99d046e10ac824f362ef"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-s51-markers-390.png",
+          "sha256": "a82052b632328fed29e77633c0d9c0d9e6cc880a2ed40edd382a38ebb0f4b953"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-warm-correct-1440.png",
+          "sha256": "dda02299bea5d8972889463b98b2212c9cc97ba20460301e61b7ba29f354ba68"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-a101-20261119/after/states/react-warm-correct-320.png",
+          "sha256": "d328f1750136bee36dbf74358461b760d70e505aee31e2a339b6b73806380d65"
+        }
+      ]
+    },
+    "b101": {
+      "sourceManifestSha256": "bb75ef49a13d15f6d86f208c2a09e269ad32c507b87a3006c18a0d444bafd557",
+      "verifiedUniqueLocalFiles": 67,
+      "mirror": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/course-b1-01.html",
+      "mirrorSha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "files": [
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.content.json",
+          "sha256": "db0a31d6199f673ccc91ec0085f70d491afa6e517144d4cd2fd545f7fd9b920b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.conversation.tsx",
+          "sha256": "78e0002981ef3fc18be1195c963fa035af023e349d8ddfa54f74176ef78f288b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.data.ts",
+          "sha256": "fe6ffebe8c73fa7c98ff97eda02fea2f5af7bacdc03f54ab5c44d59ac9de1af2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.dialogue.tsx",
+          "sha256": "9363ec5c716157da615838438830889050da7d7a2d995d9aaf8b0858d22aaa90"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.practice.tsx",
+          "sha256": "5f78f6b5013c7d038b17ae8bc096d0978b5287d294de559eed0153e9bd380cd2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.stories.tsx",
+          "sha256": "94d754de3b565587d24a1c05959f6205e1b70ef4e3a96ee3b6ccd7ac9578603d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.styles.ts",
+          "sha256": "1dd82ad62eb8c15f7a69f80b29d0c5f93db36c8643bb5b718405806437ced171"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.types.ts",
+          "sha256": "330b459a4763d1230fffbcbb4259853fc872b24e10743d4a9ac230798fdc11da"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.utilities.tsx",
+          "sha256": "14f773b9e0ba2151a68ff9df4725f9e086532c8003fd22fff56f7b2044d07c12"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101Lesson.tsx",
+          "sha256": "c88a733714fb6319d0907f8c7f6a24089a6392035f33d548626cd10ad34e7845"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.1.mp3",
+          "sha256": "7bf1bd7965308be2dbbc97df67bcdaaf24e3f6438790562f478208d17ac23096"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.10.mp3",
+          "sha256": "27c33c3be44e3dcece7fda34fa64725bb10436d1c5be64cd0823ac3cf6fb8137"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.11.mp3",
+          "sha256": "6c190dc68d736e28e68c45fbc29fca581f68bd7ee25eee5d24d8f46dc7eda91b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.2.mp3",
+          "sha256": "b80a9f6fc00fae5c409dbcb24a3c7d723b1f6f0c25a82cc4291108bf646c1a86"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.3.mp3",
+          "sha256": "5b28c7490872ee3fbd424c57f9fb5d2d3c272e3cb710148ded292e93e0b60872"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.4.mp3",
+          "sha256": "b4203c544728a37fb2245bbc9ad9ba449473d9c0d44e06c26780150f24421559"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.5.mp3",
+          "sha256": "bc43604f90e4c7befcacaae5f595055dc5d1aab76a844bbf560601ec6f751485"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.6.mp3",
+          "sha256": "44c53c5d7978786b933398c344e80c70fb925b474844f772a2810aea71b25d60"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.7.mp3",
+          "sha256": "7aa6c9cb71e8b0507b9905234ccad4d439d80856506f7c005c98739f9d4c2279"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.8.mp3",
+          "sha256": "81d933755f3b90f4cbc489e0c095c519a71eca3776703c3c73ae3a7744ec5547"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.9.mp3",
+          "sha256": "774b821194fd02b20c59d60a7f38ea1606ddbf7f576a80740bdc87343c82b335"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/L.9.mp3",
+          "sha256": "f83af7b038c2c94f421f39dc57f464d46312bb8b4cefe323274853f8fe7367f4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.0.0.mp3",
+          "sha256": "20fe475cab0e52f82625a22aa631a5828b7ceceb0e2e741ec6bfacc5fc4a2428"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.0.1.mp3",
+          "sha256": "82aa2a22d562b111096ba4048969db185a7970b608f253b34c688fa72f70ee2f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.1.0.mp3",
+          "sha256": "f01e026fcf2b3b6006fa8abc2dda70336989311fead6dc42469409e306815a49"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.1.1.mp3",
+          "sha256": "6a306ae5fd372e4bbf641f7a54bbe706dd8d45bf16e5ac0b91b6b358ab511462"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/leo-demo.mp3",
+          "sha256": "f83af7b038c2c94f421f39dc57f464d46312bb8b4cefe323274853f8fe7367f4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-baking.webp",
+          "sha256": "88cf3a9ed74937e7076c0e33e6f474512f9cf0269c99a36b09aec9cbf110b585"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+          "sha256": "2bc6694c3124a538c81d4b54213bfa0c3d4f0fccdb9e24900040c74011168c61"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bus.webp",
+          "sha256": "baada491df7d5a9ef01de5f3e13b7b42143ba29834e3f457caa4f735fa1a2338"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+          "sha256": "22ccd2fb8c61b17db2383551e69d91af8cbf27284dabe832b43e9fb2a5a44eec"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-guitar.webp",
+          "sha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-hot.webp",
+          "sha256": "7f3aa606248cc82724cab59d0385e470d573f619acf814c89ca51efd0796c349"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-muddy-shoes.webp",
+          "sha256": "3cc3b4b7e3b26dfc050ba8bc6bc66762e334231aeec2e74a72d234321040a77d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-shopping.webp",
+          "sha256": "f026549cc5cf1ed2561085247bc5275a5af1aa310660b61182f55f472eed8a15"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+          "sha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+          "sha256": "02e0c4a229584c96779c9a733784963d0ab88383013020d7f4802735b37d31ee"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-tv.webp",
+          "sha256": "f2d10708aced14d9b8c3c871c7f3ac75810de1ebad8e8353401dd9370d476569"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-wet-shirt.webp",
+          "sha256": "e36f7b9431bc7facd8f92dc59ff6096d3d6c4f06001f1d48b05b785d7eb0de5f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/audio-provenance.json",
+          "sha256": "a99997b2b0a7a7ef57fa78bdac3cc94dfb39cadf15a1332dab4f3ddd7cc0e094"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/image-scenes.json",
+          "sha256": "68a01662bd721599318d98c40b70abd909bacb02d82003b62e664b2c51d1137d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/useB101Audio.ts",
+          "sha256": "3fd12b16f8f9189d740a1b7183d1ea08b0489f57453d05c755da1edb3538cde3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/build.py",
+          "sha256": "7dd30d9bf23efab69607bc276c49c518fb368c37a9ac2a7c5b5a1069b4b868fb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/README.md",
+          "sha256": "3d5cba61f8fdd47bc02594bc3c1e9a94820d51fd488ccc1a253c01453b548f1b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/main.tsx",
+          "sha256": "54312e5797a3bea0a35734f9db166b7c75fa15dd1ecb7c258b10250030604507"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/index.html",
+          "sha256": "f240a47a0a7e9d9e0c8cc07f18128bef506af927a10d4f3b897c27b7a700616e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/vite.config.mjs",
+          "sha256": "7d629a63d74f63552501e3b3cc733fe363bbb3af67e1a1b539df6406abb3bd4a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/saida/langy-b1-01.html",
+          "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/saida/local.html",
+          "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/page-map.json",
+          "sha256": "25b60d86052530ea3cec148f78f408463e007d73b2112d9f7ace18dc79b15a8f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/audio-request.json",
+          "sha256": "a94a4f43181f698036aa41c18b7fb48f758321b3334f6d85d2b42e3b7895c6be"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/audio-integration.json",
+          "sha256": "c2a1781cbac6e7c84fb68dcee34b9e1075be67b878cf974544af4930a138f8aa"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/image-report.json",
+          "sha256": "1c72e98a3b8ee98d90c50ba704f04c7d05fa9c793dd855cdb1886675cd293d48"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/verification.json",
+          "sha256": "58ffee21400d25f056c71aabbbf6a4b585bc611fb18592cbc1b76f0ed6b0367a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/deep-link-verification.json",
+          "sha256": "5f5ca27cb07670fe168af68e1f4243044e58fdce6ed979eb5574da8706c4f8a3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/queue-verification.json",
+          "sha256": "2b58fcfd950751df3f0736863fe18edd61c9f6f0a231ba27d9a448a39ac2da03"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/embedded-media-verification.json",
+          "sha256": "626b2fb7e20ca2d81c5e6eb501d768941d2c6651be02b38d5f1fc68c218cdeda"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/publication.json",
+          "sha256": "3376bf5da61e8a2dedfe062cd5d6a70c94eb71422acc4a7459544d3042f44e5c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/readback.json",
+          "sha256": "2567813080199b1f9f28ddd34723d407d09a6f1e4b97dd93ad6d487330080886"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/preview.json",
+          "sha256": "6c8cd02dfdbe8c3d72eaf05a108ddbef9ce68b4182a6328f8d0dad33b8a611eb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/published-render.json",
+          "sha256": "7365c099a839caa21543f45242a96798845fdab94b639f4a58dfe83f270c1348"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/lab-patch.json",
+          "sha256": "4e7abb5afef2a88a654939fdcf313aa953550870c63382dafa64c6a9d32725f8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/lab-CMP.patch.txt",
+          "sha256": "47e21807c1696c4faad5f78b7314007e277e8519727942fd8482507a59c2c8e2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/typecheck.log",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/index.html",
+          "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/course-b1-01.html",
+          "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/readback-index.html",
+          "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984"
+        }
+      ]
+    },
+    "c101": {
+      "sourceManifestSha256": "7d02c1918d7c9840fc9e625a39c9d9951a1e04d3327379bc1b092d78bec48b81",
+      "verifiedUniqueLocalFiles": 136,
+      "mirror": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/ux-lab/course-c1-01.html",
+      "mirrorSha256": "9114ab2aeb6486101df07bab343c86bd4f7fc74486e8106ee2631cf05d54e716",
+      "files": [
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.assets.ts",
+          "sha256": "66219242a23ef7c9a18064c95fdd1321c5fbd19438051adeff2e0ac7a10668d3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.audio.ts",
+          "sha256": "de03e4b1a4209a2d089e872ba0485aeb858db11bf11099ef77a582e0d30c25cf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json",
+          "sha256": "6d70e746fdb21f3b981f925e4907715b4a05eb7e501d4141a0625777ffb45cc0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.conversation.tsx",
+          "sha256": "960ba4dbf72a146db019614baa45092b46c1ceb5f183e374c15b6b9f0e516282"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.practice.tsx",
+          "sha256": "c7b30727c87978468429c45c0f287c2ee6b4e4d4e895dff4ec90751a85f10578"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.stories.tsx",
+          "sha256": "193ed53ad085243b502cd82e5e2bedef4d086a99d7739155f93580aa3fd8a32d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.styles.ts",
+          "sha256": "add1eba1106b96ea6a9702d901fc4282e22ce35c016201afabb59756dc59f90c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.types.ts",
+          "sha256": "0dae81b08596930af0fecc4003d8787dba152673657e7c5f7f85ad78f116ce67"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101Lesson.tsx",
+          "sha256": "6958e49e8fe77536f3497d6c77f2bb7ab08fbef6880b556926cd38f11f393112"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-1.mp3",
+          "sha256": "3a01594937324e0fbce73731c2de6b5feb4b6a66adccf40507bb36850255f089"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-10.mp3",
+          "sha256": "45bee44106989f35f9cd0375e4ed9992014f5727a1bdb5394ee7c34662802df9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-11.mp3",
+          "sha256": "209eef2979e7f6530e37df32700f46fd43d7891713d5e4cca806b1913be208c8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-12.mp3",
+          "sha256": "4ef873d927fcc2c521c277057b4af72e36326a6b1654e052a0719e16bda14a1b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-13.mp3",
+          "sha256": "97f68bb478a03a3f9e06fb01c46e1fc586ed173497801d0b886518db06c96ac1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-14.mp3",
+          "sha256": "ab9392f3d4bb412959cd0be262697a64883007b508c2a1bd72db1002de74b914"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-2.mp3",
+          "sha256": "f2944968c07d3d9a2faac4fd0a189102181a518ed8bd0b0f95db4b030c748aba"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-3.mp3",
+          "sha256": "32720f0d5226bb7692c05495ffc0872b10f837b65dc7c4b016b3c7dfbfe24940"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-4.mp3",
+          "sha256": "90201cee48751ac7c600157599f41fc04dc8561a28366efb3360c46a375ffd57"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-5.mp3",
+          "sha256": "d79e61606035b037ff0bf8953275c654f7bbbb788638ed41aa1d74bc03449f5d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-6.mp3",
+          "sha256": "4d189a71a8b661706a713cda15b92887fc51f7d9c0dff807bfe163e82e17afa6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-7.mp3",
+          "sha256": "48c42fe3cab336e1f5bdd4494f7a4e832cfee6a156af5e7f819c699d0b0ca77a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-8.mp3",
+          "sha256": "7b9ce856c0a646adaa8865322cd8ddbd9d5ab8af4f4c1ae0b4f3f699c6fc5d45"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-D6-9.mp3",
+          "sha256": "71cd01dddd1a056e875d8c814ce55ffa0de1c349469d7e0977f46062c2bbf0ea"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-pair-0-0.mp3",
+          "sha256": "9891986db2c6b9d42bc42a41b2a1c0408d59ffa1b4851128f78520947a58a96a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-pair-0-1.mp3",
+          "sha256": "aace662e62db01784fd91672f379f764f7e37253093fcb1088029e7af6ea92f9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-pair-1-0.mp3",
+          "sha256": "aae71df29b67ea2aa51f05308b26a55c92c6beacc19119f358579fc83b34eaf0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-pair-1-1.mp3",
+          "sha256": "c6f27730700cb9b79080c7b2b8d1d0a3a142407ebe6bd51d78017e9810a63fdf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/assets/c101-raj-message.mp3",
+          "sha256": "ebb79a53ae9d5c15eb77c068b796f6263d704cf395d479b811a40f0397930d9d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/audio-provenance.json",
+          "sha256": "1da943b98c704af4203545a63bfbef558ee2eb32444004f0426dff333c16ab36"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/course-c101-review/page-map.json",
+          "sha256": "f128c87ba76f7c5ba13a376ef49bfd6a6661ae36858a4563731d09c967d65b23"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/course-c101-review/progress.md",
+          "sha256": "23216fa0fd77719ae1950b35b7663e21e9b6ef09575b1529bbd9b1fc5ab84343"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/README.md",
+          "sha256": "0c9e4d4f41d707e3665135621c983bda6db2972721fe0208accc41dad18ab5a3"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s1.png",
+          "sha256": "620d0af6e9d7ca6e1364e275328cab90c05b943d23c7c1c518fc99bb6cb8197a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s10.png",
+          "sha256": "6a7878ebfd72894dd1012965452f242b38425e2fe3e38bc69c47f18a02cc7570"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s11.png",
+          "sha256": "2709f8783c1d5a0a52eba0af29a9e1822fd36fdee5deeaf66d1eca05425ea6a4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s12.png",
+          "sha256": "f9577a37e6713fa363a6e8b8d3c0f4d245d407c736d83592443fa12cd123d869"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s2.png",
+          "sha256": "ba858a3a65fa0bd68a7ece84dfb4f310d57575caa49be2f15b346309231af751"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s31.png",
+          "sha256": "ea9941693877eae35ac3a35c24a3983bd88cd221e06471a3ee49da32ee081a6d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s32.png",
+          "sha256": "86c1b392cb9c04466b892008c535f1495e942700b09a66de0188ccb443540143"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s33.png",
+          "sha256": "1bebcaee627d93cb3c61f982bb7d98939aa3f4a81e7234416ae070e75b24457d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s4.png",
+          "sha256": "7f323d3946a808eec42b7d2369add5984600c48cdbe67ef8e2d674c97c106016"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s51.png",
+          "sha256": "a0895f1b9587f1a55cc97b1db7e6689b1c3072c8b9cd4b4274ea73e230c06ffc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s52.png",
+          "sha256": "496daa89360f0202f332883e367a92ede88caeab44a6a7b44b34f2174098fe05"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s6.png",
+          "sha256": "628c40a270a740f0ad08b95ec85ae4972b7413c2a0c53b0ec70fa893819cbdf9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s61.png",
+          "sha256": "32f583e51fe3415b82020ebfe3b7ef230faf82a32f93dc496904b89cf67fff8e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s62.png",
+          "sha256": "8f67f1f401eac3077ce836c5cf62d9938f36ebfea8cdd32b21ad8fed6cfa83b0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s7.png",
+          "sha256": "9c5f1fe67b5b1f3801cd37925afcf48b591a8f35fef9f2b63b797d794b6b3054"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s8.png",
+          "sha256": "a2ac3c0238f56dd0744fd8787ea73f9fe3c48e6a2b22cca941d8000f430ec446"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/1440-s9.png",
+          "sha256": "5ffe43de810d01363a95c9bc554461cff2f7d1aef1de88a3343651c3c16fc8da"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s1.png",
+          "sha256": "2b36f8363e07760990b4c75e63e481af16522764aebbda8c1409b2a4011a112e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s10.png",
+          "sha256": "04b19df4d7564162fe19c00f9e8767759f4f20d19eedd685dc547ca905f0fda5"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s11.png",
+          "sha256": "bfcb665427b59ba78c3b376c6ba4035e6bdd9eca8c733b4c93395af635d474e9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s12.png",
+          "sha256": "ba69b1962064262e6223c98dd8399cf25f9b589ae4ded296f8e9b7777baef573"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s2.png",
+          "sha256": "24f3ae05c3b955d938e7ee7bf2ec1cec381f88b1f7af2b3d7667f556817970c9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s31.png",
+          "sha256": "93ddc0080ad1a621ea7f667f8a236925bfbf303cc5bf3848fecb0d2a687952bf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s32.png",
+          "sha256": "19c4a0fed7dcc01dd0b27caf768eedfd9b03a5e7e4c674f0cc2142cc64424c2b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s33.png",
+          "sha256": "50f52f9a76228c8fc618a4ee1e10dce7200b32d92801a84e187beb8342ddf9ee"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s4.png",
+          "sha256": "a776928acbe5379bad52c9e7d7b87616d77ef4710e0afb3b5d6da78277b2a072"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s51.png",
+          "sha256": "006f207671a4e44115a19cb686241757baffee49fd337082e5c58490b19bab8e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s52.png",
+          "sha256": "f2cfa5e0e190d60831e60e95b2b6ede2b3a42ac80f573f13bbcfad849aa0f8d4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s6.png",
+          "sha256": "31f5c3f182174fc07bd92da6695b79e8156e09190322928cb43712c06925c905"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s61.png",
+          "sha256": "484b52981b58b426d438cbb949f81c38e24184b9e51277ad1a18b9095db983ea"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s62.png",
+          "sha256": "fad2928f4f8427d66933a2e33790a641fa30078472023969f1cc2aad3e3c3451"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s7.png",
+          "sha256": "afb81cb195eae336886cb587c0cca6ebe0505dd3abf01dbe2ff44962ef216f8b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s8.png",
+          "sha256": "ad9ee8b7886535b7b432edb963866d2d225e6301f5339d6266ac326d059b1cdf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/after/390-s9.png",
+          "sha256": "713896a87d498c543e6db4178bfa6faf9b0541e890cb411c613a3a6c196f5f61"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/audio-playback-report.json",
+          "sha256": "aa8d9170de57fa450fc37f6651a0dae2779bf3af19864ae785666e4154cfadad"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s1.png",
+          "sha256": "9255ddf02297fb77aacb7e40c030196c5073682d636ab4a31067e5e4c8863733"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s10.png",
+          "sha256": "88077a578fa62b0ccf6b6eabf37d68cf7f46a26e510af4f5ebb17b938c3d7d40"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s11.png",
+          "sha256": "c634a3f9e003a3b7d39df9a83d7950f37be4cb52cd0b7da7fc398811273a06db"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s12.png",
+          "sha256": "e2a4e0e8fcfb1f3325a3b88ecea77d6c8c746e8c771df0e1aa2e26b992dfda62"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s2.png",
+          "sha256": "1488006923a9efab69afffaf6c56f236dc0ca64adb66fa150b7d9a3cc10ee47a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s31.png",
+          "sha256": "48faaff91e1ffe7f6e915bb67512640e1c7d149205a7ed2f4f5179c5eb51fa98"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s32.png",
+          "sha256": "3e9b4e77c3e54b8f3e729a54329bd06b406f40110a48e6bb516c88ca5d17d799"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s33.png",
+          "sha256": "c38501b5eab9bd11e2111ba59f1931edc23584031151e188fd23ce424e11e936"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s4.png",
+          "sha256": "efd65cbe53689619c1473aa9d2f5ef721b2c4399af62e40fba7adacc351f904c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s51.png",
+          "sha256": "45e48fb0cfc75b850afd268a3350903a6e6b100c93b37b1ec076d06a9662d8ae"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s52.png",
+          "sha256": "2fb4f7f3a648857f590077879a52acdfd32063ec44ef2c77f62341300f9df1cf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s6.png",
+          "sha256": "c4d250a3d779ed34d71178f1c2cd8d2f3c0de2404c2d53b8b850f01d8e8528e8"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s61.png",
+          "sha256": "f41f3779c9c797f0d04fc3b0a498c0dfd71e3013d24490ad96389ba3c1aa1bfb"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s62.png",
+          "sha256": "31e8f6f05b21aabfe1baeee0276f84f612266824a71611b5f85dc93d6e16872a"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s7.png",
+          "sha256": "79946385d9bf2e8b47d3a8431f1bdcabf3ed3742998c51920185b8518931be13"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s8.png",
+          "sha256": "c25a66abbf9ee69b1f979d68f617b8433a4bcfee689f3e5d1b8258b4f6addb82"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/1440-s9.png",
+          "sha256": "b90f5a2331938a71c88e21726d596cff6834bdb9fd578dafdaf87bc0614da174"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s1.png",
+          "sha256": "1ac6e47bac6d051b4577a14032260531416619735f192199175e9f304b85fc4c"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s10.png",
+          "sha256": "4423fa84489aa37068ab79cdd9b097e7733671f8d34088ea73f6456b2fdfb89b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s11.png",
+          "sha256": "3e627e056adfe80e52b3d165f443d68cb43e68faa54e4e3450dccaa7bddb1d83"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s12.png",
+          "sha256": "09d1b374512b1b2cdc775891f01f6d793abd2155d2799a597cbdc2a103b5f9b2"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s2.png",
+          "sha256": "5297db08897f28686c6665633751bb4c1ea7eaba7f4a887a69312a9134d1d774"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s31.png",
+          "sha256": "570ac74319176be7ba8393d60e1d4b89f8a7146a9a30d3b4a69a3f5aa5230b78"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s32.png",
+          "sha256": "c46df501af85977821ff750d15952472e7230b677406dfd2794b4dc96f9b1fbc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s33.png",
+          "sha256": "e50eb152b08b840765cf9773c00b3d583b0b743ef92327523d5a3436ff109b32"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s4.png",
+          "sha256": "214ed64f9113fe9889d892f8b4d5f53db8fb694221dde3499f10e571f54f8aa0"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s51.png",
+          "sha256": "18b1d3ce4a0c842bdcfbac4392beecc873206e6142f5115500f5bc72680f8258"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s52.png",
+          "sha256": "579d706ffba45b02edccb8d3797f16343a8ad8f4ee326e2a40ee9dba5f1c6d55"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s6.png",
+          "sha256": "f361ca29ebd33d9a3d6c256878828d228e8bf504a9011b74fc619687c4b5f4bc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s61.png",
+          "sha256": "af8a9dbe873e14b7ae7a40d287116884f1ef37cd762ff650a08a1dcc8bdd6d7e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s62.png",
+          "sha256": "7448a08b62a52155ce2b2a0c32875ad68f17359c9e590fd2ed2f28729d2b7032"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s7.png",
+          "sha256": "859c3ae2843f15b6399ed38d83516aeb93549b074be9ca866697eeed47125983"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s8.png",
+          "sha256": "1d748b7aa8501c3c7eec3a74d314ad2aeeb2abbb9277f0190d89bee83a552fbe"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/before/390-s9.png",
+          "sha256": "e1a753c3026cbddb66f9bf2f92e891420ebbc73146848991e12a438cf9b69560"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/final-delta-report.json",
+          "sha256": "0000cfc086efc9436ec182568744338b431c0be4060780c551502ff93fb1c7d9"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-preview.json",
+          "sha256": "fdd655384ddcd40572f5004fa3acd34213aff6b60a5411e0296e73ed61aaceae"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-publish.json",
+          "sha256": "5a3cb58cab450f00370682454fcdabcc1e845ed6c46d196caeba747e5b7564dc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-readback.json",
+          "sha256": "c1bba4f8a2ccbbaaa1ff7c96ff1a01f97790318f08d9519ff1c65b18bc9f3393"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-render-1440.png",
+          "sha256": "837f70cd0e9c39c84ac4d12c24eee5f0284b41555b129ca3b9e0f2b3ec43889e"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-render-390.png",
+          "sha256": "1d77faedf147db694da08dcb92031d47562f3983d7ae3eb8ae2bcb646a935b1f"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/original-render.json",
+          "sha256": "16c45dd8343f4712d2ce746ca73a768c6ac53b5680606aef30135ebef78af374"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/course-c101-review/ui-report.json",
+          "sha256": "4977ea7720b9d084c242f6652dc89bd3c52feb7a5d0a2df2cc3d20039282f974"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/README.md",
+          "sha256": "7e50ed4413d102440b30a78119c6fac3d0c6afbcb1b76d24a2165a49e6861e19"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/build.py",
+          "sha256": "8dc38435d6e7bbe399db2750866f0f193fbbb0f6ff68f684a5c71969a1436aa1"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/course-c1-01.html",
+          "sha256": "aaf04a2068b1d55c6323ec5ae054edc15b9b963f768480cd5738c9e2a50e61ca"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/legacy/build.py",
+          "sha256": "75e57535914129013a2503505caf9d08b678a289351fdc0cb7540abd29b8681b"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/legacy/c101.css",
+          "sha256": "a67e5292260a5d531aa142748b7de5ee15c05d8832544e091d1819a6a0325bb6"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/legacy/int-c101.js",
+          "sha256": "235e084e7d7dfe53f5befd8e5a9566eabd05a36fc18e5be948d75a6c21d4e093"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/saida/langy-c1-01.html",
+          "sha256": "aaf04a2068b1d55c6323ec5ae054edc15b9b963f768480cd5738c9e2a50e61ca"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/saida/local.html",
+          "sha256": "aaf04a2068b1d55c6323ec5ae054edc15b9b963f768480cd5738c9e2a50e61ca"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/c1-01/source-provenance.json",
+          "sha256": "da7a17573b7073782fbb99cfd1c7f238c028ba98fed8a1137edabbd6096f59ff"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/course-c1-01.html",
+          "sha256": "aaf04a2068b1d55c6323ec5ae054edc15b9b963f768480cd5738c9e2a50e61ca"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/ux-lab/course-c1-01.html",
+          "sha256": "9114ab2aeb6486101df07bab343c86bd4f7fc74486e8106ee2631cf05d54e716"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/ux-lab/CMP-entries.json",
+          "sha256": "a99014aa5a04b55203412dfa20e521f3e24822d80a04cb8e0b1166bcee32ff4d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/ux-lab/CMP.patch.txt",
+          "sha256": "ae43d60239292fbea5f7da8d63d0de14d8dcd071f62e2da8e3bbce059561a19d"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/page-map.json",
+          "sha256": "f128c87ba76f7c5ba13a376ef49bfd6a6661ae36858a4563731d09c967d65b23"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/image-report.json",
+          "sha256": "c85727f1cade22c5290a8dc09dac09350c1151e027198b3660154b2c4d25d7f5"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/audio-request.json",
+          "sha256": "0e469ec836104ac5d40df5fae2d1210176bd1816b0c099b0b42a16a75eccdd35"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/audio-integration.json",
+          "sha256": "4e0113e365b7a07d6d8588f5b752c4a703bde52755449f8059a05e224d5433b4"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/audio-review/acoustic-addendum.json",
+          "sha256": "5e0357fbcc8871dab7d1265cec9f3cda85e310b1ac293fa8b4c64bcebffa85cf"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/audio-review/acoustic-analysis/report.md",
+          "sha256": "096e9eb67934ab86df54530001905fdb6888e4da18cbe2f5bab554b9b5aed272"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/original-publish.json",
+          "sha256": "5a3cb58cab450f00370682454fcdabcc1e845ed6c46d196caeba747e5b7564dc"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/original-readback.json",
+          "sha256": "c1bba4f8a2ccbbaaa1ff7c96ff1a01f97790318f08d9519ff1c65b18bc9f3393"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/original-preview.json",
+          "sha256": "fdd655384ddcd40572f5004fa3acd34213aff6b60a5411e0296e73ed61aaceae"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/original-render.json",
+          "sha256": "16c45dd8343f4712d2ce746ca73a768c6ac53b5680606aef30135ebef78af374"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/before/baseline-provenance.json",
+          "sha256": "310d051f9d17b90c8104d394c03c1ae7e18d62a91aec373ffd5bdc9eabf10ea7"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/after/ui-report.json",
+          "sha256": "4977ea7720b9d084c242f6652dc89bd3c52feb7a5d0a2df2cc3d20039282f974"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/after/audio-playback-report.json",
+          "sha256": "aa8d9170de57fa450fc37f6651a0dae2779bf3af19864ae785666e4154cfadad"
+        },
+        {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-c101-20261119/after/final-delta-report.json",
+          "sha256": "0000cfc086efc9436ec182568744338b431c0be4060780c551502ff93fb1c7d9"
+        }
+      ]
+    }
+  }
+}

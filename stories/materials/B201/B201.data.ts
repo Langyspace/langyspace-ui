@@ -45,7 +45,6 @@ export const vocabulary = content.vocabulary.map((item, i) => ({
   word: item.en,
   translation: item.pt.replace(/ \(volta.*\)/, ''),
   initialHint: item.hint,
-  badge: [0, 1, 4, 5].includes(i) ? 'B1' : undefined,
   imageUrl: image(keys[i]!),
   imageAlt: item.pt.replace(/ \(volta.*\)/, ''),
 }))
@@ -123,26 +122,6 @@ export const comprehension = [
     q: 'How long had the team been waiting when Ana arrived?',
     a: 'For an hour.',
   },
-]
-export const homework = [
-  [
-    'Flashcards · No battery',
-    '18 cards · 5 min · Today, in 2 days and in 6 days.',
-    'https://student.langy.space/licoes?tab=flashcards&deck=deck-b2-01',
-    '5 min',
-  ],
-  [
-    'Shadowing · How was New York?',
-    'Speak with Ana: lines 2, 4, 6, 8, 10 and 12 · 5 min.',
-    'https://student.langy.space/licoes?tab=shadowing&item=b2-01',
-    '5 min',
-  ],
-  [
-    'Quiz · What had been happening?',
-    '10 questions · 4 min.',
-    'https://student.langy.space/licoes?tab=quiz&item=b2-01',
-    '4 min',
-  ],
 ]
 export const reviewImages = [
   { src: image('office'), alt: 'Um escritório' },

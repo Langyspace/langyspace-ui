@@ -83,6 +83,7 @@ export function MinimalPairExercise({
       </Styled.Choices>
       <Common.Row
         role="img"
+        aria-hidden={score.length === 0}
         aria-label={`${text.score}: ${score.filter((s) => s.result === 'correct').length} / ${score.length}`}
       >
         {score.map((value) => (

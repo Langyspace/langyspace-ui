@@ -3,6 +3,7 @@ import { recipe } from '../../../src/components/InteractiveMaterial/Material.sha
 import { theme } from '../../../src/foundations/theme/theme'
 import { Button } from '../../../src/components/Button/Button'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 export const Stage = styled.div`
   height: 100dvh;
@@ -127,7 +128,7 @@ export const Use = styled.aside`
 `
 export const Card = styled.div`
   padding: ${theme.spacing[4]};
-  border: 1px solid ${theme.voiceMessage.border};
+  border: 1px solid ${(p) => recipe(p).border};
   border-radius: ${theme.radius.lg};
   background: ${theme.colors.palette.white};
   min-width: 0;
@@ -284,7 +285,7 @@ export const Grammar = styled.div`
 export const TableScroll = styled.div`
   min-width: 0;
   overflow-x: auto;
-  border: 1px solid ${theme.voiceMessage.border};
+  border: 1px solid ${(p) => recipe(p).border};
   border-radius: ${theme.radius.lg};
 `
 export const Table = styled.table`
@@ -294,17 +295,18 @@ export const Table = styled.table`
   td {
     padding: ${theme.spacing[2]} ${theme.spacing[4]};
     text-align: left;
-    border-bottom: 1px solid ${theme.voiceMessage.border};
+    border-bottom: 1px solid ${(p) => recipe(p).border};
   }
   thead th {
-    background: ${theme.semantic.status.success.foreground};
-    color: ${theme.colors.palette.white};
+    background: ${(p) => recipe(p).surface};
+    color: ${(p) => recipe(p).foreground};
     font-size: 0.8125rem;
     padding: ${theme.spacing[3]} ${theme.spacing[4]};
     text-transform: uppercase;
   }
   tbody {
-    background: ${theme.colors.palette.white};
+    background: ${(p) => recipe(p).canvas};
+    color: ${(p) => recipe(p).foreground};
   }
   tbody th,
   tbody td {
@@ -319,7 +321,7 @@ export const Table = styled.table`
     }
   }
   tbody td:nth-child(2) {
-    color: ${theme.semantic.status.success.foreground};
+    color: ${(p) => recipe(p).foreground};
     font-weight: ${theme.typography.fontWeight.bold};
   }
   @container (max-width:${theme.breakpoints.sm}) {
@@ -327,6 +329,28 @@ export const Table = styled.table`
     td {
       padding: ${theme.spacing[1]};
       font-size: ${theme.typography.fontSize.sm};
+    }
+    thead {
+      display: none;
+    }
+    tbody,
+    tr,
+    td,
+    th {
+      display: block;
+    }
+    tr {
+      padding: ${theme.spacing[3]};
+      border-bottom: 1px solid ${(p) => recipe(p).border};
+    }
+    tbody th,
+    tbody td {
+      height: auto;
+      border: 0;
+      padding: ${theme.spacing[1]} 0;
+    }
+    tbody th {
+      font-size: ${theme.typography.fontSize.lg};
     }
   }
 `
@@ -478,7 +502,7 @@ export const GuestImages = styled.span`
   display: block;
   position: relative;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
   overflow: hidden;
   border-radius: ${theme.radius.md};
 `
@@ -487,7 +511,7 @@ export const GuestScene = styled.img`
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 `
 export const AudioError = styled.p`
   position: fixed;
@@ -510,30 +534,28 @@ export const Eyebrow = styled.span`
 `
 
 export const WarmScene = styled.div`
-  position: relative;
-  display: grid;
-  place-items: center;
-  height: 100%;
-  aspect-ratio: 1;
-  max-width: 100%;
-  border-radius: ${theme.radius.lg};
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: ${theme.spacing[2]};
+  width: 100%;
+  min-width: 0;
 `
 export const WarmImage = styled.img`
   && {
     min-width: 0;
     min-height: 0;
-    max-height: 100%;
-    height: 100%;
+    max-height: none;
+    aspect-ratio: 3 / 2;
+    height: auto;
     width: 100%;
     object-fit: contain;
+    border-radius: ${theme.radius.lg};
   }
 `
 export const CountryFlag = styled.img`
   && {
-    position: absolute;
-    right: ${theme.spacing[2]};
-    bottom: ${theme.spacing[2]};
+    position: static;
+    align-self: flex-end;
     width: ${theme.spacing[12]};
     height: ${theme.spacing[8]};
     object-fit: contain;
@@ -544,10 +566,10 @@ export const CountryFlag = styled.img`
 `
 
 export const QuestionVerb = styled.b`
-  color: ${theme.semantic.status.info.foreground};
+  color: ${(p) => recipe(p).accent};
 `
 export const StatementVerb = styled.b`
-  color: ${theme.semantic.status.success.foreground};
+  color: ${(p) => recipe(p).foreground};
 `
 
 export const TitleAudio = styled.span`
@@ -555,4 +577,21 @@ export const TitleAudio = styled.span`
   align-items: center;
   gap: ${theme.spacing[2]};
   flex-wrap: wrap;
+`
+
+export const WarmPanel = styled(ExercisePanel)`
+  padding: ${theme.spacing[4]};
+  [data-exercise-media] {
+    align-self: stretch;
+    display: grid;
+    align-items: center;
+  }
+  [data-exercise-media] img {
+    max-height: none;
+  }
+  @container (min-width: ${theme.breakpoints.md}) {
+    > div {
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    }
+  }
 `

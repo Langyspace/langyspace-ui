@@ -7,6 +7,7 @@ export type MaterialKey =
   | 'a2-01'
   | 'b1-01'
   | 'b2-01'
+  | 'c1-01'
   | 'trial-a1-a2'
   | 'trial-b1'
   | 'trial-b2'

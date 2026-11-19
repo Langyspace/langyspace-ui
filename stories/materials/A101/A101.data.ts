@@ -189,9 +189,6 @@ export const trueForYou = [
   'I’m hungry.',
   'It’s cold today.',
 ]
-export const homeworkMessage =
-  'Lição de casa da aula A1.01 · Introduce yourself\n' +
-  source.HW13.map((item) => `${item.line}: ${item.url}`).join('\n')
 export function itemAt<T>(items: readonly T[], index: number): T {
   const item = items[index]
   if (item === undefined)

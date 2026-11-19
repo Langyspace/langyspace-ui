@@ -1,10 +1,7 @@
-import { bindStudentDestinations } from '../shared/studentDestinations'
-import { AnswerDisclosure } from '../shared/AnswerDisclosure'
 import { PromptExercise } from '../shared/LessonExercises'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
@@ -22,7 +19,6 @@ import {
   trueForYou,
   guestImage,
   guestImageAlt,
-  homeworkMessage,
 } from './A101.data'
 import * as Styled from './A101.styles'
 import type {
@@ -46,9 +42,10 @@ export function VocabularySection({
         $regular={imageVariant !== 'scene'}
         items={items}
         imageVariant={imageVariant}
-        columns={3}
         revealVariant="tooltip"
-        density={imageVariant === 'scene' ? 'compact' : 'regular'}
+        density="regular"
+        imageFit="contain"
+        revealOnHover={false}
         revealedIds={revealed}
         showAll={all}
         showInitial={hint}
@@ -109,13 +106,13 @@ export function VocabularySection({
     </Styled.Stack>
   )
 }
-export function WarmUpSection({ item, speak }: WarmUpSectionProps) {
+export function WarmUpSection({ item }: WarmUpSectionProps) {
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(item.a)
   const last = attempts.at(-1)
   return (
-    <ExercisePanel
-      title={item.t}
+    <Styled.WarmPanel
+      layout="split"
       media={
         <Styled.WarmScene>
           <Styled.WarmImage
@@ -144,17 +141,15 @@ export function WarmUpSection({ item, speak }: WarmUpSectionProps) {
           aria-pressed={attempts.includes(i)}
           onClick={() => {
             setAttempts((old) => [...old, i])
-            if (i === item.a) speak([{ id: item.id, text: option }])
           }}
         >
           {option}
         </QuizOption>
       ))}
-      <AnswerDisclosure question={item.t} answer={item.o[item.a]} />
       <Styled.Feedback role="status">
         {last === undefined ? '' : done ? 'Correto!' : item.why[String(last)]}
       </Styled.Feedback>
-    </ExercisePanel>
+    </Styled.WarmPanel>
   )
 }
 export function DialogueSection({
@@ -347,9 +342,7 @@ export function TrueForYou() {
           <Styled.Number>{index + 1}</Styled.Number>
           <strong>{text}</strong>
           <small>
-            {index
-              ? 'True ✓ or not true ✗?'
-              : 'e.g. I’m not American. I’m Brazilian.'}
+            {index === 0 ? 'I’m not American. I’m Brazilian.' : null}
           </small>
         </Styled.TrueCard>
       ))}
@@ -438,8 +431,8 @@ export function GuessWho() {
                 src={guestImage(name)}
                 alt={guestImageAlt(name, country, feeling)}
               />
-              <Styled.CountryFlag src={countryFlag(country)} alt="" />
             </Styled.GuestImages>
+            <Styled.CountryFlag src={countryFlag(country)} alt="" />
           </Styled.Guest>
         ))}
       </Styled.ThreeColumns>
@@ -494,10 +487,7 @@ export function ConversationSection() {
     </Styled.TalkGrid>
   )
 }
-export function HomeworkSection({ studentPortalOrigin }: { studentPortalOrigin?: string }) {
-  const boundHomeworkMessage = bindStudentDestinations(homeworkMessage, studentPortalOrigin)
-  const [copied, setCopied] = useState(false)
-  const [fallback, setFallback] = useState(false)
+export function HomeworkSection() {
   return (
     <Styled.HomeworkStack>
       {lesson.HW13.map((item, index) => (
@@ -512,34 +502,6 @@ export function HomeworkSection({ studentPortalOrigin }: { studentPortalOrigin?:
           </div>
         </Styled.Homework>
       ))}
-      <Styled.Tools>
-        <Styled.HomeworkCopy
-          variant="brand"
-          onClick={() => {
-            void (async () => {
-              try {
-                await navigator.clipboard.writeText(boundHomeworkMessage)
-                setCopied(true)
-                setFallback(false)
-              } catch {
-                setFallback(true)
-              }
-            })()
-          }}
-        >
-          {copied ? 'Copied ✓' : 'Copy links'}
-        </Styled.HomeworkCopy>
-      </Styled.Tools>
-      {fallback ? (
-        <label>
-          Copie os links abaixo.
-          <Styled.CopyFallback
-            readOnly
-            value={boundHomeworkMessage}
-            onFocus={(event) => event.currentTarget.select()}
-          />
-        </label>
-      ) : null}
     </Styled.HomeworkStack>
   )
 }

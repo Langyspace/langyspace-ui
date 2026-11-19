@@ -1,0 +1,55 @@
+{
+  "targetArtifact": "1abab24d-11b9-4a0d-9a3d-0ebd2df12159",
+  "authorWriteStatus": "prepared_only; integration is sole Lab writer",
+  "mirrorRemotePath": "course-b1-01.html",
+  "mirrorLocalPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/course-b1-01.html",
+  "insertInto": "index.html const CMP array; insert rows idempotently by first element; retain all existing rows/files/history",
+  "CMP": [
+    [
+      "course-b101-vocabulary",
+      "B1.01 · Atividades e pistas",
+      "Quatro cenas grandes por página, rótulos adjacentes às imagens e produção oral antes da revelação.",
+      "course-b1-01",
+      2,
+      "Revisão B1.01",
+      "B1"
+    ],
+    [
+      "course-b101-contrast",
+      "B1.01 · Ouvir a diferença",
+      "Áudio ElevenLabs para distinguir ação atual e atividade recente; tradução só após a tentativa.",
+      "course-b1-01",
+      51,
+      "Revisão B1.01",
+      "B1"
+    ],
+    [
+      "course-b101-grammar",
+      "B1.01 · Atividade ou resultado",
+      "Tabela revelável, estrutura completa e apoio de for/since sem repetir o enunciado.",
+      "course-b1-01",
+      7,
+      "Revisão B1.01",
+      "B1"
+    ],
+    [
+      "course-b101-listening",
+      "B1.01 · Mensagem do Leo",
+      "Mensagem gravada ElevenLabs com pausa, velocidade, repetição, transcrição progressiva e resposta oral.",
+      "course-b1-01",
+      9,
+      "Revisão B1.01",
+      "B1"
+    ],
+    [
+      "course-b101-clues",
+      "B1.01 · Inferência oral",
+      "Cartões pista/resposta com imagem inteira, alternativas plausíveis e perguntas de continuidade.",
+      "course-b1-01",
+      11,
+      "Revisão B1.01",
+      "B1"
+    ]
+  ],
+  "deepLinkContract": "<mirror>#p=<source page numeric suffix>; e.g. #p=9 -> s9, #p=21 -> s21. Entire lesson remains vertically scrollable."
+}

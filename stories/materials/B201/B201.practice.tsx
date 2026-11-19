@@ -1,23 +1,23 @@
 import { useState } from 'react'
+import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import type { CorrectionItem } from '../shared/Lesson.types'
+import { ana } from './B201.data'
 import { Button } from '../../../src/components/Button/Button'
-import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
-import type { SpeechProps } from '../shared/Lesson.types'
 import type { WarmUpProps, WordTableProps } from './B201.types'
 import { content, vocabulary, warmUps, image, kim } from './B201.data'
 import * as S from './B201.styles'
-export function VocabularySection({ speech }: SpeechProps) {
+export function VocabularySection() {
   const [ids, setIds] = useState<string[]>([]),
     [active, setActive] = useState(''),
     [all, setAll] = useState(false),
     [initial, setInitial] = useState(false)
   return (
     <S.Stack>
-      <S.QuestionTitle>What’s this?</S.QuestionTitle>
-      <VocabularyGrid
+      <S.LargeVocabularyGrid
         items={vocabulary}
         columns={4}
         density="regular"
@@ -26,17 +26,12 @@ export function VocabularySection({ speech }: SpeechProps) {
         revealVariant="tooltip"
         revealOnHover={false}
         activeId={active}
-        markRevealed
         revealedIds={ids}
         showAll={all}
         showInitial={initial}
         onReveal={(id) => {
           setActive(id)
           setIds((old) => (old.includes(id) ? old : [...old, id]))
-        }}
-        onPlay={(id) => {
-          const row = vocabulary.find((v) => v.id === id)
-          if (row) speech.speak([{ id, text: row.word, speaker: 'ana' }])
         }}
       />
       <S.Row>
@@ -67,7 +62,7 @@ export function VocabularySection({ speech }: SpeechProps) {
     </S.Stack>
   )
 }
-export function WarmUpSection({ index, speech }: WarmUpProps) {
+export function WarmUpSection({ index }: WarmUpProps) {
   const w = warmUps[index] ?? warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([]),
     [open, setOpen] = useState(!w.hide)
@@ -88,14 +83,15 @@ export function WarmUpSection({ index, speech }: WarmUpProps) {
                 avatarUrl: kim,
                 side: 'start',
                 content: w.q,
-                audioLabel: `Listen: ${w.q}`,
               },
             ]}
-            onPlay={() =>
-              speech.speak([{ id: `WUQ.${index}`, text: w.q, speaker: 'kim' }])
-            }
           />
-          {w.hint ? <S.Hint>{w.hint}</S.Hint> : null}
+          {w.hint ? (
+            <details>
+              <summary>Language support</summary>
+              <S.Hint>{w.hint}</S.Hint>
+            </details>
+          ) : null}
           <S.SceneImage
             src={image(w.pic)}
             alt={
@@ -126,10 +122,6 @@ export function WarmUpSection({ index, speech }: WarmUpProps) {
                 disabled={done}
                 onClick={() => {
                   setAttempts((old) => [...old, i])
-                  if (i === w.a)
-                    speech.speak([
-                      { id: `WUA.${index}`, text: option, speaker: 'ana' },
-                    ])
                 }}
               >
                 {option}
@@ -146,7 +138,7 @@ export function WarmUpSection({ index, speech }: WarmUpProps) {
             {done ? 'Correct!' : `Not yet. ${w.why[last] ?? ''}`}
           </QuizFeedback>
         ) : null}
-        {index === 0 ? <S.Hint>{w.sub}</S.Hint> : null}
+
         {done ? (
           <S.Now>
             <b>Now you</b>
@@ -158,7 +150,7 @@ export function WarmUpSection({ index, speech }: WarmUpProps) {
     </ExercisePanel>
   )
 }
-export function WordTableSection({ speech, grammar = false }: WordTableProps) {
+export function WordTableSection({ grammar = false }: WordTableProps) {
   const [ids, setIds] = useState<string[]>([]),
     [unlocked, setUnlocked] = useState(false),
     [practice, setPractice] = useState(false),
@@ -182,11 +174,6 @@ export function WordTableSection({ speech, grammar = false }: WordTableProps) {
     const next = ids.includes(id) ? ids : [...ids, id]
     setIds(next)
     if (next.length === rows.length) setUnlocked(true)
-    const row = rows.find((r) => r.id === id)
-    if (row)
-      speech.speak([
-        { id, text: grammar ? row.example : row.verb, speaker: 'ana' },
-      ])
   }
   return (
     <S.GrammarColumns $explanation={grammar || unlocked}>
@@ -200,10 +187,29 @@ export function WordTableSection({ speech, grammar = false }: WordTableProps) {
                 <b>before</b> another moment in the past. I’d been walking for
                 two hours <b>when</b> my phone died. Here, <b>’d = had</b>.
               </p>
-              <p>
-                Eu estava andando havia duas horas = I’d been walking for two
-                hours. Não é I was walking since two hours.
-              </p>
+              <details>
+                <summary>Form and meaning</summary>
+                <p>
+                  <b>Negative:</b> I hadn’t been checking my battery.
+                </p>
+                <p>
+                  <b>Question:</b> Had you been using your phone? How long had
+                  you been waiting?
+                </p>
+                <p>
+                  <b>For</b> two hours · <b>since</b> two o’clock. The reference
+                  point is in the past.
+                </p>
+                <p>
+                  Use <b>had + past participle</b> for a completed earlier
+                  action or a state: I’d left my charger. I’d known Raj for
+                  years.
+                </p>
+                <p>
+                  The continuous form focuses on activity or duration; the
+                  activity may have just stopped or still have been continuing.
+                </p>
+              </details>
             </S.Explanation>
           ) : null}
           {unlocked ? (
@@ -253,10 +259,6 @@ export function WordTableSection({ speech, grammar = false }: WordTableProps) {
           hiddenAnswers
           revealedIds={ids}
           onReveal={reveal}
-          onPlay={(id) => {
-            const row = rows.find((r) => r.id === id)
-            if (row) speech.speak([{ id, text: row.example, speaker: 'ana' }])
-          }}
           revealLabel={grammar ? 'Reveal form' : 'Reveal expression'}
           columns={{
             subject: grammar ? 'Kim asks' : 'Em português',
@@ -307,5 +309,72 @@ export function WordTableSection({ speech, grammar = false }: WordTableProps) {
         ) : null}
       </S.Stack>
     </S.GrammarColumns>
+  )
+}
+
+export function DialogueSection({
+  lines,
+}: {
+  lines: readonly { id: string; who: string; text: string; g?: string }[]
+}) {
+  const [translated, setTranslated] = useState<string[]>([])
+  return (
+    <LearningDialogue
+      density="compact"
+      lines={lines.map((l) => ({
+        id: l.id,
+        speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+        avatarUrl: l.who === 'kim' ? kim : ana,
+        side: l.who === 'kim' ? 'start' : 'end',
+        content: l.text,
+        translation: l.g,
+      }))}
+      translatedIds={translated}
+      onTranslate={(id) =>
+        setTranslated((old) =>
+          old.includes(id) ? old.filter((x) => x !== id) : [...old, id],
+        )
+      }
+    />
+  )
+}
+export function CorrectionSection({
+  items,
+}: {
+  items: readonly CorrectionItem[]
+}) {
+  const [ids, setIds] = useState<string[]>([])
+  return (
+    <S.Stack>
+      {items.map((r, i) => (
+        <RevealCard
+          key={r.id}
+          marker={i + 1}
+          revealed={ids.includes(r.id)}
+          onClick={() =>
+            setIds((old) =>
+              old.includes(r.id)
+                ? old.filter((x) => x !== r.id)
+                : [...old, r.id],
+            )
+          }
+          answer={
+            <>
+              <b>{r.ok ? 'This is correct.' : r.a}</b>
+              <p>{r.why}</p>
+            </>
+          }
+        >
+          {r.s}
+        </RevealCard>
+      ))}
+      <S.Now>
+        <b>One from today</b>
+        <p>
+          Your teacher repeats a sentence from your conversation. Improve it
+          together.
+        </p>
+      </S.Now>
+    </S.Stack>
   )
 }

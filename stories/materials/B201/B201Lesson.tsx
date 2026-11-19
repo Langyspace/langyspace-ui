@@ -1,64 +1,34 @@
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { LessonShell, LessonIntro } from '../shared/LessonShell'
+import { B201Shell } from './B201Shell'
 import {
   PronunciationPractice,
-  CorrectionPractice,
-  DialoguePractice,
   ComprehensionPractice,
 } from '../shared/LessonPractice'
-import { LessonHomework } from '../shared/LessonHomework'
-import type { LessonProps, LessonSpeech } from '../shared/Lesson.types'
+import type { LessonProps } from '../shared/Lesson.types'
 import {
   VocabularySection,
   WarmUpSection,
   WordTableSection,
+  CorrectionSection,
+  DialogueSection,
 } from './B201.practice'
 import {
   YourVersionSection,
   ListeningSection,
   RolePlaySection,
 } from './B201.conversation'
-import {
-  content,
-  order,
-  dialogue,
-  comprehension,
-  homework,
-  image,
-  reviewImages,
-} from './B201.data'
+import { content, order, comprehension, reviewImages } from './B201.data'
 import * as S from './B201.styles'
-function audioTool(speech: LessonSpeech, part: number) {
-  const lines = part === 0 ? dialogue.slice(0, 6) : dialogue.slice(6)
-  const playing = lines.some((line) => line.id === speech.playingId)
-  return (
-    <Button
-      variant="secondary"
-      size="sm"
-      onClick={() => (playing ? speech.togglePause() : speech.speak(lines))}
-    >
-      {playing
-        ? speech.paused
-          ? 'Resume'
-          : 'Pause'
-        : 'Listen to the dialogue'}
-    </Button>
-  )
-}
 const review = [
   'If you could choose, would you work at home or in an office? Why?',
   'Your teacher doesn’t agree. Answer: I see your point, but …',
   'Now ask your teacher: Home or office? Why?',
-  'Ask your teacher: How was your week?',
+  'Ask your teacher about her week and follow up on one detail.',
 ]
-function B201LessonContent({
-  initialPageId,
-  studentPortalOrigin,
-}: LessonProps) {
+function B201LessonContent({ initialPageId }: LessonProps) {
   return (
-    <LessonShell
+    <B201Shell
       materialKey="b2-01"
       pageIds={order}
       initialPageId={initialPageId}
@@ -68,22 +38,12 @@ function B201LessonContent({
           if (id === 's1')
             return {
               id,
-              label: 'Review · Last class',
+              label: 'Review · Dead phone, no charger',
               content: (
                 <SlidePage
-                  layout="split"
                   eyebrow="Review"
-                  title="Last class"
-                  instruction="Answer your teacher’s questions about last class. No job? Talk about school, or invent."
-                  lead={
-                    <LessonIntro
-                      level="B2"
-                      lesson="Lesson 01"
-                      before="Dead phone,"
-                      accent="no charger"
-                      goal="Contar uma história longa, dizendo o que vinha acontecendo antes de cada fato."
-                    />
-                  }
+                  title="Dead phone, no charger"
+                  instruction="Reconnect with last class: give reasons, respond and ask follow-up questions."
                 >
                   <S.Questions>
                     {review.map((q, i) => (
@@ -119,9 +79,9 @@ function B201LessonContent({
                   width="expanded"
                   density="dense"
                   title="No battery"
-                  instruction="Look at the picture and say the word in English."
+                  instruction="Name the object, then explain how it could help on a trip."
                 >
-                  <VocabularySection speech={speech} />
+                  <VocabularySection />
                 </SlidePage>
               ),
             }
@@ -141,10 +101,7 @@ function B201LessonContent({
                       : 'Kim asks about Ana’s day in New York. Choose Ana’s answer.'
                   }
                 >
-                  <WarmUpSection
-                    index={Number(id.at(-1)) - 1}
-                    speech={speech}
-                  />
+                  <WarmUpSection index={Number(id.at(-1)) - 1} />
                 </SlidePage>
               ),
             }
@@ -159,7 +116,7 @@ function B201LessonContent({
                   title="Expressions"
                   instruction="Read the Portuguese and say it in English. Then click to check."
                 >
-                  <WordTableSection speech={speech} />
+                  <WordTableSection />
                 </SlidePage>
               ),
             }
@@ -198,20 +155,18 @@ function B201LessonContent({
                   width="conversation"
                   density="dense"
                   title={`How was New York? (${part + 1}/2)`}
-                  tools={audioTool(speech, part)}
                   instruction={
                     part === 0
-                      ? 'Ana is back in São Paulo. Kim asks about her trip. Listen and read along.'
-                      : 'The talk goes on. Listen and read along.'
+                      ? 'Ana is back in São Paulo. Kim asks about her trip. Read with your teacher.'
+                      : 'The talk goes on. Read with your teacher.'
                   }
                 >
-                  <DialoguePractice
+                  <DialogueSection
                     lines={
                       part === 0
                         ? content.dialogue.slice(0, 6)
                         : content.dialogue.slice(6)
                     }
-                    speech={speech}
                   />
                 </SlidePage>
               ),
@@ -225,7 +180,7 @@ function B201LessonContent({
                 <SlidePage
                   eyebrow="Dialogue"
                   title="Questions"
-                  instruction="Answer the questions about the talk. If you don’t remember, listen again."
+                  instruction="Answer the questions about the talk. Give reasons and refer to the dialogue when needed."
                 >
                   <ComprehensionPractice items={comprehension} />
                 </SlidePage>
@@ -242,7 +197,7 @@ function B201LessonContent({
                   title="What had been happening?"
                   instruction="Read Kim’s question. Say Ana’s answer before you click the line."
                 >
-                  <WordTableSection grammar speech={speech} />
+                  <WordTableSection grammar />
                 </SlidePage>
               ),
             }
@@ -255,8 +210,9 @@ function B201LessonContent({
                   eyebrow="Your version"
                   width="conversation"
                   title="Your bad day"
+                  instruction="Create your version with your teacher, then swap roles."
                 >
-                  <YourVersionSection speech={speech} />
+                  <YourVersionSection />
                 </SlidePage>
               ),
             }
@@ -270,7 +226,7 @@ function B201LessonContent({
                   width="expanded"
                   density="dense"
                   title="A message from Raj"
-                  instruction="Ana’s phone is on again. In the taxi, she listens to this message from Raj. Read the sentences, listen and say Yes or No. If No, say the right answer."
+                  instruction="Listen to Raj’s message; decide what he said and correct the false statements."
                 >
                   <ListeningSection active={activeId === id} />
                 </SlidePage>
@@ -287,13 +243,11 @@ function B201LessonContent({
                   title="Right or wrong?"
                   instruction="Is it right? Does it sound natural? If not, say it the right way."
                 >
-                  <CorrectionPractice
+                  <CorrectionSection
                     items={content.corrections.map((r) => ({
                       ...r,
                       a: r.ok ? undefined : r.a,
                     }))}
-                    speech={speech}
-                    ownInstruction="Your teacher says one of your sentences from today."
                   />
                 </SlidePage>
               ),
@@ -321,15 +275,41 @@ function B201LessonContent({
               <SlidePage
                 eyebrow="Homework"
                 title="Before next class"
-                instruction="Your three tasks on the platform. Your teacher sends the links in the chat."
+                instruction="Rehearse a new story and bring it to your next class."
               >
-                <LessonHomework
-                  lesson="B2.01 · Dead phone, no charger"
-                  items={homework}
-                  image={image('power-bank-new')}
-                  studentPortalOrigin={studentPortalOrigin}
-                />
-                <S.Hint>Atividades em preparação na plataforma.</S.Hint>
+                <S.Questions>
+                  <S.Question>
+                    <S.Number>1</S.Number>
+                    <div>
+                      <b>Recall the words</b>
+                      <p>
+                        Look around you. Name five objects from today and
+                        explain when you might need them.
+                      </p>
+                    </div>
+                  </S.Question>
+                  <S.Question>
+                    <S.Number>2</S.Number>
+                    <div>
+                      <b>Rehearse a story</b>
+                      <p>
+                        Tell a one-minute story about a journey that went wrong.
+                        Explain what had happened and what you’d been doing
+                        before the problem.
+                      </p>
+                    </div>
+                  </S.Question>
+                  <S.Question>
+                    <S.Number>3</S.Number>
+                    <div>
+                      <b>Prepare to ask</b>
+                      <p>
+                        Bring two follow-up questions for your teacher. Use “How
+                        long had you been …?” in one of them.
+                      </p>
+                    </div>
+                  </S.Question>
+                </S.Questions>
               </SlidePage>
             ),
           }

@@ -216,28 +216,28 @@
   ],
   "grammar": [
     [
-      "A atividade até agora, com a marca",
+      "Activity",
       "’ve been painting",
       "I’ve been painting all week.",
       "passei a semana pintando",
       "G.0"
     ],
     [
-      "Há quanto tempo",
+      "Duration",
       "have you been running",
       "How long have you been running? — For two weeks.",
       "há quanto tempo você corre?",
       "G.1"
     ],
     [
-      "Outra pessoa",
+      "Another person",
       "’s been sleeping",
       "Kim’s been sleeping all day.",
       "a Kim passou o dia dormindo (Kim’s = Kim has)",
       "G.2"
     ],
     [
-      "O resultado: quanto, quantos, terminei",
+      "Completed result",
       "’ve baked",
       "I’ve baked three cakes this week.",
       "fiz três bolos (estão prontos)",
@@ -261,14 +261,15 @@
       "pre": "há quanto tempo?",
       "s": "How long are you studying English?",
       "a": "How long have you been studying English?",
-      "why": "How long are you studying? pergunta por quanto tempo você ainda vai estudar, como o How long are you staying? da A1.07. Para “há quanto tempo”: How long have you been studying English?",
+      "why": "Para “há quanto tempo”: How long have you been studying English? Use have + been + -ing.",
       "id": "X.3"
     },
     {
       "s": "I’ve been baking three cakes this week.",
       "a": "I’ve baked three cakes this week.",
-      "why": "Com um número, você conta o resultado: have + particípio.",
-      "id": "X.4"
+      "why": "Para contar três bolos terminados: I’ve baked three cakes. O contínuo pode descrever o trabalho, mas não afirma que os três ficaram prontos.",
+      "id": "X.4",
+      "pre": "Three cakes are finished. Report the result."
     },
     {
       "s": "Leo and Carla have both been visiting places for three weeks.",
@@ -298,9 +299,9 @@
     }
   ],
   "steps": [
-    "Open a card. Ask Kim: Have you been …ing? Then: How long?",
-    "Choose a card from the vocabulary. Don’t say it! Kim asks. Answer.",
-    "Kim asks about your last three weeks. Answer."
+    "Reveal a clue. Ask Kim what she has been doing and for how long.",
+    "Choose an activity. Let Kim ask questions and guess it.",
+    "Catch up about your real week: give details, ask follow-ups and mention one finished result."
   ],
   "support": [
     "Have you been …ing?",
@@ -314,25 +315,16 @@
   "summary": ["I’ve been …", "How long?", "And …", "I’ve finished …"],
   "homework": [
     [
-      "Flashcards · Busy weeks",
-      "16 cards · 5 min · Today, in 2 days and in 6 days.",
-      "https://student.langy.space/licoes?tab=flashcards&deck=deck-b1-01",
-      "5 min",
-      "v_bk"
+      "A one-minute update",
+      "Say what you’ve been doing this week, how long and one thing you’ve finished."
     ],
     [
-      "Shadowing · Welcome back!",
-      "Say it with Ana: lines 2, 4, 6, 8 and 10 · 5 min.",
-      "https://student.langy.space/licoes?tab=shadowing&item=b1-01",
-      "5 min",
-      "x_speech"
+      "Catch up with a friend",
+      "Ask three follow-up questions with What, How long and Have you…?"
     ],
     [
-      "Quiz · Been doing or done?",
-      "10 questions · 4 min.",
-      "https://student.langy.space/licoes?tab=quiz&item=b1-01",
-      "4 min",
-      "x_bulb"
+      "Activity or result?",
+      "Bring two examples from your life: I’ve been… and I’ve finished…"
     ]
   ],
   "listening": {

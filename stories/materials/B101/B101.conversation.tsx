@@ -5,12 +5,10 @@ import { Button } from '../../../src/components/Button/Button'
 import { TextInput } from '../../../src/components/Form/TextInput'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { RevealSequenceCard } from '../../../src/components/InteractiveMaterial/RevealSequenceCard'
 import { content, kim, image, toggle } from './B101.data'
-import { MiniVocabulary } from './B101.practice'
 import type { SpeechSectionProps } from './B101.types'
-import voice from './assets/leo-demo.mp3'
+import voice from './assets/audio/L.9.mp3'
 import * as S from './B101.styles'
 const firstTurns = [
   {
@@ -79,13 +77,10 @@ const swappedTurns = [
 ]
 export function YourVersionSection({ speech }: SpeechSectionProps) {
   const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState(true),
+    [support, setSupport] = useState(false),
     [marked, setMarked] = useState<string[]>([])
   const turns = swapped ? swappedTurns : firstTurns,
     prefix = swapped ? 'swapped' : 'first'
-  const done = turns.filter(
-    (t, i) => t.speaker === 'You' && marked.includes(`${prefix}-${i}`),
-  ).length
   return (
     <S.Stack>
       <S.Row>
@@ -109,7 +104,6 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
         >
           {support ? 'Hide support' : 'Show support'}
         </Button>
-        <S.Counter role="status">{done} of 4</S.Counter>
       </S.Row>
       {swapped ? (
         <S.Hint>
@@ -117,7 +111,7 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
           model: she can change them.
         </S.Hint>
       ) : null}
-      <S.ConversationColumns>
+      <S.Stack>
         <LearningDialogue
           density="compact"
           lines={turns.map((turn, i) => {
@@ -128,10 +122,6 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
               speaker: turn.speaker,
               avatarUrl: turn.speaker === 'Kim' ? kim : undefined,
               side: learner ? 'end' : 'start',
-              audioLabel:
-                'audio' in turn && turn.audio
-                  ? `Listen: ${turn.text}`
-                  : undefined,
               actionLabel: learner ? `Mark response: ${turn.cue}` : undefined,
               content: learner ? (
                 <S.LearnerCue>
@@ -145,14 +135,8 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
           })}
           completedIds={marked}
           onComplete={(id) => setMarked((old) => toggle(old, id))}
-          playingId={speech.playingId}
-          onPlay={(id) => {
-            const turn = turns[Number(id.split('-')[1])]
-            if (turn) speech.speak([{ id, text: turn.text, speaker: 'kim' }])
-          }}
         />
-        {!swapped ? <MiniVocabulary column /> : null}
-      </S.ConversationColumns>
+      </S.Stack>
     </S.Stack>
   )
 }
@@ -174,7 +158,7 @@ export function ListeningSection({ active }: { active: boolean }) {
           timestamp: '19:02',
         }}
         audio={{
-          id: 'b101-leo-demo',
+          id: 'b101-leo-message',
           src: voice,
           transcript: content.listening.transcript,
           timestamp: '19:15',
@@ -253,9 +237,9 @@ export function RolePlaySection() {
   const answers = ['soccer', 'bike', 'bus'],
     clues = ['muddy-shoes', 'hot', 'wet-shirt']
   return (
-    <RolePlayExercise
+    <S.RolePlay
       density="compact"
-      situation="One week later. Kim comes to your house on Monday, Wednesday and Saturday."
+      situation="Your teacher is Kim. Use each clue to guess what she has been doing."
       support={content.support}
       supportVisible={support}
       onSupportToggle={() => setSupport(!support)}
@@ -328,14 +312,13 @@ export function RolePlaySection() {
               {
                 id: 'answer',
                 image: { src: image(answers[i] ?? ''), alt: clue.w },
-                content: clue.w,
+                content: `Possible answer: ${clue.w}`,
                 revealLabel: `${clue.day}: show answer`,
               },
             ]}
           />
         ))}
       </S.Clues>
-      <MiniVocabulary />
-    </RolePlayExercise>
+    </S.RolePlay>
   )
 }

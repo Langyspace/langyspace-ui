@@ -37,7 +37,6 @@ import type { A101LessonProps } from './A101.types'
 function A101LessonContent({
   initialPageId,
   learnerName = '',
-  studentPortalOrigin,
 }: A101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
   const [notes, setNotes] = useState(false)
@@ -55,34 +54,10 @@ function A101LessonContent({
         label: 'Vocabulary · Guess the word',
         content: (
           <SlidePage
-            width="standard"
-            lead={
-              <Styled.Introduction>
-                <Styled.LessonEyebrow>
-                  <b>A1</b>Lesson 01
-                </Styled.LessonEyebrow>
-                <Styled.Hero>
-                  Introduce <em>yourself</em>
-                </Styled.Hero>
-                <Styled.Goal>
-                  <Styled.GoalStar aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path
-                        d="M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </Styled.GoalStar>
-                  <p>
-                    <b>Goal</b>Dizer o seu nome, de onde você é e como você
-                    está.
-                  </p>
-                </Styled.Goal>
-              </Styled.Introduction>
-            }
-            eyebrow="Vocabulary"
-            title="Guess the word"
-            instruction="Observe a imagem e tente adivinhar a palavra."
+            width="expanded"
+            eyebrow="A1 · Lesson 01 · Feelings"
+            title="Introduce yourself"
+            instruction="Observe as cenas, diga como cada pessoa está e clique para conferir."
           >
             <Styled.IntroVocabulary>
               <VocabularySection
@@ -102,10 +77,10 @@ function A101LessonContent({
         label: `Warm up · ${feeling ? 'Feelings' : 'Countries'} ${slot + 1}`,
         content: (
           <SlidePage
-            width="focused"
+            width="expanded"
             eyebrow="Warm up"
-            title="Choose the correct answer."
-            instruction="Escolha a resposta correta de acordo com a imagem."
+            title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
+            instruction="Diga a resposta em voz alta e escolha a opção."
           >
             <WarmUpSection
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
@@ -123,8 +98,8 @@ function A101LessonContent({
           <SlidePage
             width="standard"
             eyebrow="Vocabulary"
-            title="Guess the country"
-            instruction="Observe a bandeira e tente adivinhar o nome do país."
+            title="Where are you from?"
+            instruction="Diga o país de cada bandeira e depois conte de onde você é."
           >
             <VocabularySection items={countries} speak={speech.speak} />
           </SlidePage>
@@ -139,7 +114,7 @@ function A101LessonContent({
             width="reading"
             density="compact"
             eyebrow="Guided conversation"
-            instruction="Escute o áudio e leia com a sua professora. Clique em uma fala para ver em português."
+            instruction="Escute e depois leia com a professora, uma personagem para cada uma."
             title={
               <Styled.TitleAudio>
                 Nice to meet you
@@ -201,8 +176,8 @@ function A101LessonContent({
           <SlidePage
             width="reading"
             eyebrow="Guided conversation"
-            title="Questions"
-            instruction="Responda às perguntas sobre o diálogo. Use Answer para conferir."
+            title="What did they say?"
+            instruction="Responda sobre Kim, Ana e Lukas; confira a resposta se precisar."
           >
             <DialogueQuestions />
           </SlidePage>
@@ -216,7 +191,7 @@ function A101LessonContent({
           <SlidePage
             eyebrow="Grammar · Verb to be"
             title="I am, you are, she is…"
-            instruction="Clique no exemplo para ver a tradução."
+            instruction="Use am, is ou are para falar de nome, origem e sentimentos."
           >
             <GrammarTable />
           </SlidePage>
@@ -231,7 +206,7 @@ function A101LessonContent({
             width="wide"
             eyebrow="Grammar · Verb to be"
             title="Negative and questions"
-            instruction="Clique na frase para ver a tradução."
+            instruction="Use not para negar; comece a pergunta com am, is ou are."
           >
             <GrammarNegative />
           </SlidePage>
@@ -245,8 +220,8 @@ function A101LessonContent({
           <SlidePage
             width="wide"
             eyebrow="Practice · Speaking"
-            title="True for you? If not, say it in the negative"
-            instruction="Leia a frase. Se não for verdade para você, diga na negativa."
+            title="True for you?"
+            instruction="Diga se a frase é verdade para você; se não for, corrija na negativa."
           >
             <TrueForYou />
           </SlidePage>
@@ -260,8 +235,8 @@ function A101LessonContent({
           <SlidePage
             width="wide"
             eyebrow="Practice · Questions & answers"
-            title="Match the questions and the answers"
-            instruction="Clique numa pergunta e depois na resposta certa."
+            title="Ask and answer"
+            instruction="Associe cada pergunta à resposta e leia a dupla em voz alta."
           >
             <MatchingSection />
           </SlidePage>
@@ -275,8 +250,8 @@ function A101LessonContent({
           <SlidePage
             width="reading"
             eyebrow="Guided conversation"
-            title="Nice to meet you"
-            instruction="Complete os espaços e depois leia o diálogo com a sua professora."
+            title="Complete the conversation"
+            instruction="Diga a palavra que falta e depois leia o diálogo com a professora."
           >
             <DialogueSection gaps speak={speech.speak} />
           </SlidePage>
@@ -340,7 +315,7 @@ function A101LessonContent({
             width="exercise"
             eyebrow="Practice · Questions"
             title="Make it a question"
-            instruction="Inverta a ordem: comece a pergunta com am, is ou are. Depois clique para conferir."
+            instruction="Transforme a frase em pergunta; clique para conferir depois de falar."
           >
             <MakeQuestions />
           </SlidePage>
@@ -369,9 +344,9 @@ function A101LessonContent({
           width="standard"
           eyebrow="Homework"
           title="Before next class"
-          instruction="Continue praticando no espaço do aluno."
+          instruction="Combine com a professora como repetir estas três práticas durante a semana."
         >
-          <HomeworkSection studentPortalOrigin={studentPortalOrigin} />
+          <HomeworkSection />
         </SlidePage>
       ),
     }

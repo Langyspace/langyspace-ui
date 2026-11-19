@@ -7,12 +7,12 @@ import { LearningDialogue } from '../../../src/components/Exercise/LearningDialo
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { toggleId } from '../shared/lessonState'
-import type { SpeechProps } from '../shared/Lesson.types'
 import type { ListeningProps } from './B201.types'
 import { content, kim, image, vocabulary } from './B201.data'
-import voice from './assets/raj-demo.mp3'
+import voice from './assets/b201-raj-message.mp3'
+import audioProvenance from './audio-provenance.json'
 import * as S from './B201.styles'
-export function YourVersionSection({ speech }: SpeechProps) {
+export function YourVersionSection() {
   const [swapped, setSwapped] = useState(false),
     [support, setSupport] = useState(false),
     [marked, setMarked] = useState<string[]>([])
@@ -38,7 +38,6 @@ export function YourVersionSection({ speech }: SpeechProps) {
           variant="secondary"
           size="sm"
           onClick={() => {
-            speech.stop()
             setSwapped(!swapped)
           }}
         >
@@ -54,11 +53,6 @@ export function YourVersionSection({ speech }: SpeechProps) {
         </Button>
         <S.Counter role="status">{count} of 5</S.Counter>
       </S.Row>
-      <S.Hint>
-        {swapped
-          ? 'Now you are Kim. Ask the questions; your teacher answers as Ana (she can change the answers).'
-          : 'The same talk. Now it’s your day with no battery. True or invented.'}
-      </S.Hint>
       <LearningDialogue
         density="compact"
         lines={rows.slice(offset, end).map((r, j) => {
@@ -71,7 +65,6 @@ export function YourVersionSection({ speech }: SpeechProps) {
             avatarUrl: !learner && !swapped ? kim : undefined,
             side: learner ? 'end' : 'start',
             actionLabel: learner ? `Mark response: ${r[2]}` : undefined,
-            audioLabel: learner ? undefined : `Listen: ${r[2]}`,
             content: learner ? (
               <S.LearnerCue>
                 {support ? r[3] : r[2]}
@@ -84,14 +77,6 @@ export function YourVersionSection({ speech }: SpeechProps) {
         })}
         completedIds={marked}
         onComplete={(id) => setMarked((old) => toggleId(old, id))}
-        playingId={speech.playingId}
-        onPlay={(id) => {
-          const row = rows[Number(id.split('-')[1])]
-          if (row)
-            speech.speak([
-              { id, text: row[2] ?? '', speaker: swapped ? 'ana' : 'kim' },
-            ])
-        }}
       />
       <S.PictureStrip aria-label="The seven pictures from page 2">
         {vocabulary.map((item) => (
@@ -122,10 +107,10 @@ export function ListeningSection({ active }: ListeningProps) {
           timestamp: content.listening.textTimestamp,
         }}
         audio={{
-          id: 'b201-raj-demo',
+          id: 'b201-raj-message',
           src: voice,
           transcript: content.listening.transcript,
-          duration: 25.98,
+          duration: audioProvenance.durationSeconds,
           timestamp: content.listening.voiceTimestamp,
         }}
         active={active}
@@ -136,13 +121,12 @@ export function ListeningSection({ active }: ListeningProps) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden:
-            'A transcrição aparece na segunda vez que você ouve.',
-          audioError: 'Não foi possível tocar. Tente novamente.',
-          retry: 'Tentar novamente',
+          transcriptHidden: 'Transcript appears on the second listen.',
+          audioError: 'Audio unavailable. Try again.',
+          retry: 'Try again',
           questions: 'Did Raj say this?',
-          correct: 'Correto',
-          incorrect: 'Tente novamente',
+          correct: 'Correct',
+          incorrect: 'Try again',
         }}
         questions={content.listeningStatements.map((q) => {
           const chosen = attempts[q.id] ?? [],
@@ -156,7 +140,7 @@ export function ListeningSection({ active }: ListeningProps) {
             feedback: done
               ? q.correction
               : chosen.length
-                ? 'Tente novamente.'
+                ? 'Try again.'
                 : undefined,
             choices: ['yes', 'no'].map((id) => ({
               id,

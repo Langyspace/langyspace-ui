@@ -1,10 +1,9 @@
-import type { SpeechProps } from '../shared/Lesson.types'
-export interface WarmUpProps extends SpeechProps {
+export interface WarmUpProps {
   index: number
 }
 export interface ListeningProps {
   active: boolean
 }
-export interface WordTableProps extends SpeechProps {
+export interface WordTableProps {
   grammar?: boolean
 }

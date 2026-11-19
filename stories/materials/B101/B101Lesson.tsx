@@ -1,11 +1,10 @@
 import { useLessonPage } from '../shared/useLessonPage'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
-import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { useLessonSpeech } from '../shared/useLessonSpeech'
+import { useB101Audio } from './useB101Audio'
 import { order, dialogue } from './B101.data'
 import {
   VocabularySection,
@@ -27,14 +26,17 @@ import {
 import { LessonNotes, HomeworkSection } from './B101.utilities'
 import type { B101LessonProps } from './B101.types'
 import * as S from './B101.styles'
-function B101LessonContent({
-  initialPageId,
-  studentPortalOrigin,
-}: B101LessonProps) {
+function B101LessonContent({ initialPageId }: B101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'b1-01', order)
   const [notes, setNotes] = useState(false)
+  const stage = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    stage.current
+      ?.querySelector<HTMLElement>('[data-slide-viewport]')
+      ?.focus({ preventScroll: true })
+  }, [])
   const notesButton = useRef<HTMLButtonElement>(null),
-    speech = useLessonSpeech()
+    speech = useB101Audio()
   const closeNotes = () => {
     setNotes(false)
     notesButton.current?.focus()
@@ -64,33 +66,15 @@ function B101LessonContent({
         id,
         label: 'Review · Last class',
         content: (
-          <SlidePage
+          <S.Page
             layout="split"
-            title="Last class"
-            eyebrow="Review"
-            instruction={
+            title={
               <>
-                Answer your teacher. Then ask your teacher.
-                <S.Hint>ask = perguntar</S.Hint>
+                What have you <em>been doing?</em>
               </>
             }
-            lead={
-              <S.Introduction>
-                <S.Eyebrow>
-                  <b>B1</b>Lesson 01
-                </S.Eyebrow>
-                <S.Hero>
-                  What have you <em>been doing?</em>
-                </S.Hero>
-                <S.Goal>
-                  <span aria-hidden="true">✦</span>
-                  <p>
-                    <b>Goal</b>Contar o que você tem feito ultimamente e há
-                    quanto tempo, e perguntar o mesmo.
-                  </p>
-                </S.Goal>
-              </S.Introduction>
-            }
+            eyebrow="B1 · Lesson 01"
+            instruction="Make plans with your teacher before catching up."
           >
             <SourceQuestions
               items={[
@@ -99,21 +83,24 @@ function B101LessonContent({
                 'Now ask your teacher: Would you like to …?',
               ].map((question) => ({ question }))}
             />
-          </SlidePage>
+          </S.Page>
         ),
       }
-    if (id === 's2')
+    if (id === 's2' || id === 's21')
       return {
         id,
-        label: 'Vocabulary · Busy weeks',
+        label:
+          id === 's2'
+            ? 'Vocabulary · Busy weeks'
+            : 'Vocabulary · Time for yourself',
         content: (
-          <SlidePage
+          <S.Page
             eyebrow="Vocabulary"
-            title="Busy weeks"
-            instruction="Look. What was he doing? What was she doing? Say the word."
+            title={id === 's2' ? 'Busy weeks' : 'Time for yourself'}
+            instruction="Name the activities, then say what you’ve been doing lately."
           >
-            <VocabularySection speech={speech} />
-          </SlidePage>
+            <VocabularySection group={id === 's2' ? 0 : 1} />
+          </S.Page>
         ),
       }
     if (id === 's31' || id === 's32' || id === 's33')
@@ -121,13 +108,19 @@ function B101LessonContent({
         id,
         label: `Warm up · ${Number(id.slice(2))}`,
         content: (
-          <SlidePage
+          <S.Page
             eyebrow="Warm up"
-            title="Choose the correct answer."
-            instruction="Look. What has she been doing? Choose. Then it’s your turn."
+            title={
+              [
+                'What has she been doing?',
+                'What has he been doing?',
+                'Catch up with Leo',
+              ][Number(id.slice(2)) - 1]
+            }
+            instruction="Say your answer, then choose and explain."
           >
             <WarmUpSection index={Number(id.slice(2)) - 1} speech={speech} />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's4')
@@ -135,10 +128,10 @@ function B101LessonContent({
         id,
         label: 'Now you · Lately',
         content: (
-          <SlidePage
+          <S.Page
             eyebrow="Now you"
             title="Lately"
-            instruction="Answer about you. It can be true or not!"
+            instruction="Talk about your week and ask a follow-up question."
           >
             <SourceQuestions
               items={[
@@ -149,7 +142,7 @@ function B101LessonContent({
                 },
                 {
                   question:
-                    'Have you been working a lot this week? Even on the weekend?',
+                    'Have you been working a lot this week? What have you been working on?',
                 },
                 {
                   question:
@@ -157,7 +150,7 @@ function B101LessonContent({
                 },
               ]}
             />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's51' || id === 's52')
@@ -165,7 +158,7 @@ function B101LessonContent({
         id,
         label: `Pronunciation · ${id === 's51' ? 'Running or been running?' : 'Painted or been painting?'}`,
         content: (
-          <SlidePage
+          <S.Page
             width="reading"
             eyebrow="Pronunciation"
             title={
@@ -173,13 +166,13 @@ function B101LessonContent({
                 ? 'Running or been running?'
                 : 'Painted or been painting?'
             }
-            instruction="Listen. Which one did you hear? Say it, then click it."
+            instruction="Listen, choose the sentence you hear, then repeat it."
           >
             <PronunciationSection
               index={id === 's51' ? 0 : 1}
               speech={speech}
             />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's6' || id === 's62') {
@@ -188,20 +181,20 @@ function B101LessonContent({
         id,
         label: `Dialogue · Welcome back! (${part + 1}/2)`,
         content: (
-          <SlidePage
+          <S.Page
             width="reading"
             density="dense"
             eyebrow="Dialogue"
             title={`Welcome back! (${part + 1}/2)`}
             instruction={
               part === 0
-                ? 'Kim is back from Korea. She comes to Ana’s apartment. Listen and read along.'
-                : 'The talk goes on. Listen and read along.'
+                ? 'Kim is back from Korea. Listen to her conversation with Ana.'
+                : 'Listen for what Ana has finished and how Kim feels.'
             }
             tools={audioTool(part)}
           >
             <DialogueSection part={part} speech={speech} />
-          </SlidePage>
+          </S.Page>
         ),
       }
     }
@@ -210,15 +203,15 @@ function B101LessonContent({
         id,
         label: 'Dialogue · Questions',
         content: (
-          <SlidePage
+          <S.Page
             width="reading"
             eyebrow="Dialogue"
-            title="Questions"
-            instruction="Answer the questions about Kim and Ana’s talk. If you don’t remember, listen again."
+            title="What did you find out?"
+            instruction="Answer about Kim and Ana, then connect the story to your life."
             tools={audioTool()}
           >
             <ComprehensionSection />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's7')
@@ -226,14 +219,14 @@ function B101LessonContent({
         id,
         label: 'Grammar · Been doing or done?',
         content: (
-          <SlidePage
+          <S.Page
             density="dense"
             eyebrow="Grammar"
             title="Been doing or done?"
-            instruction="Say it first. Then look."
+            instruction="Compare the activity, its duration and the finished result."
           >
-            <GrammarSection speech={speech} />
-          </SlidePage>
+            <GrammarSection />
+          </S.Page>
         ),
       }
     if (id === 's8')
@@ -241,15 +234,15 @@ function B101LessonContent({
         id,
         label: 'Your version · Kim is back',
         content: (
-          <SlidePage
+          <S.Page
             density="dense"
             width="conversation"
             eyebrow="Your version"
             title="Kim is back"
-            instruction="Kim is back. Answer about your life."
+            instruction="Catch up with Kim using your own news, then swap roles."
           >
             <YourVersionSection speech={speech} />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's9')
@@ -257,14 +250,14 @@ function B101LessonContent({
         id,
         label: 'Listening · A message from Leo',
         content: (
-          <SlidePage
+          <S.Page
             density="dense"
             eyebrow="Listening"
             title="A message from Leo"
-            instruction="Leo has a message for Ana. Read, listen and answer: Yes or No? If No, say it right."
+            instruction="Listen to Leo, check the statements and correct the false ones."
           >
             <ListeningSection active={pageId === 's9'} />
-          </SlidePage>
+          </S.Page>
         ),
       }
     if (id === 's10')
@@ -272,13 +265,13 @@ function B101LessonContent({
         id,
         label: 'Review · Right or wrong?',
         content: (
-          <SlidePage
+          <S.Page
             eyebrow="Review"
             title="Right or wrong?"
-            instruction="Right or wrong? If wrong, say it right."
+            instruction="Check each sentence and explain your corrections."
           >
-            <CorrectionSection speech={speech} />
-          </SlidePage>
+            <CorrectionSection />
+          </S.Page>
         ),
       }
     if (id === 's11')
@@ -286,33 +279,33 @@ function B101LessonContent({
         id,
         label: 'Role play · What has Kim been doing?',
         content: (
-          <SlidePage
+          <S.Page
             density="dense"
             eyebrow="Role play"
             title="What has Kim been doing?"
             instruction="Ask and guess. Then answer Kim’s questions about your life."
           >
             <RolePlaySection />
-          </SlidePage>
+          </S.Page>
         ),
       }
     return {
       id,
       label: 'Homework · Before next class',
       content: (
-        <SlidePage
+        <S.Page
           width="reading"
           eyebrow="Homework"
           title="Before next class"
-          instruction="Three cards for you. Your teacher puts the links in the chat."
+          instruction="Plan three short speaking practices before your next lesson."
         >
-          <HomeworkSection studentPortalOrigin={studentPortalOrigin} />
-        </SlidePage>
+          <HomeworkSection />
+        </S.Page>
       ),
     }
   })
   return (
-    <S.Stage>
+    <S.Stage ref={stage}>
       <SlideDeck
         tabIndex={-1}
         label="B1.01 · What have you been doing?"

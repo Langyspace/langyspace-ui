@@ -1,6 +1,5 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
-import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
@@ -21,20 +20,20 @@ export function MiniVocabulary({ column = false }: { column?: boolean }) {
     </S.MiniGrid>
   )
 }
-export function VocabularySection({ speech }: SpeechSectionProps) {
+export function VocabularySection({ group = 0 }: { group?: number }) {
   const [ids, setIds] = useState<string[]>([]),
     [all, setAll] = useState(false),
     [initial, setInitial] = useState(false)
-  const complete = all || ids.length === vocabulary.length
+  const items = vocabulary.slice(group * 4, group * 4 + 4)
+  const complete = all || ids.length === items.length
   return (
     <S.Stack>
-      <S.QuestionTitle>
-        What was she doing? · What was he doing?
-      </S.QuestionTitle>
-      <VocabularyGrid
-        items={vocabulary}
-        columns={4}
+      <S.Vocabulary
+        items={items}
+        columns={2}
         imageVariant="scene"
+        imageFit="contain"
+        density="regular"
         revealOnHover={false}
         revealVariant="tooltip"
         revealedIds={ids}
@@ -42,11 +41,6 @@ export function VocabularySection({ speech }: SpeechSectionProps) {
         showInitial={initial}
         onReveal={(id) =>
           setIds((old) => (old.includes(id) ? old : [...old, id]))
-        }
-        onPlay={(id) =>
-          speech.speak([
-            { id, text: vocabulary.find((v) => v.id === id)?.word ?? '' },
-          ])
         }
       />
       <S.VocabularyTools>
@@ -81,7 +75,6 @@ export function VocabularySection({ speech }: SpeechSectionProps) {
 }
 export function WarmUpSection({
   index,
-  speech,
 }: SpeechSectionProps & { index: number }) {
   const w = content.warmUps[index] ?? content.warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([]),
@@ -92,8 +85,7 @@ export function WarmUpSection({
   return (
     <ExercisePanel
       layout="split"
-      title={w.q}
-      counter={`${index + 1} / 3`}
+      title={index === 2 ? w.ctx : undefined}
       media={
         w.kl ? (
           <LearningDialogue
@@ -122,8 +114,6 @@ export function WarmUpSection({
       }
     >
       <S.Stack>
-        {w.ctx ? <b>{w.ctx}</b> : null}
-        {w.tr ? <S.Hint>{w.tr}</S.Hint> : null}
         {open ? (
           <S.Stack>
             {w.o.map((option, i) => (
@@ -143,14 +133,6 @@ export function WarmUpSection({
                 disabled={done}
                 onClick={() => {
                   setAttempts((old) => [...old, i])
-                  if (i === w.a)
-                    speech.speak([
-                      {
-                        id: w.id,
-                        text: answer,
-                        speaker: index === 2 ? 'leo' : 'ana',
-                      },
-                    ])
                 }}
               >
                 {option}
@@ -177,7 +159,6 @@ export function WarmUpSection({
               <b>Now you</b>
               <p>{w.now}</p>
             </S.Now>
-            <MiniVocabulary />
           </>
         ) : null}
       </S.Stack>
@@ -188,21 +169,18 @@ export function PronunciationSection({
   index,
   speech,
 }: SpeechSectionProps & { index: number }) {
-  const scoreSequence = useRef(0)
   const pair = content.pronunciation[index] ?? content.pronunciation[0]!
   const [target, setTarget] = useState<number>(),
     [selected, setSelected] = useState<string>(),
-    [feedback, setFeedback] = useState<'correct' | 'incorrect'>(),
-    [score, setScore] = useState<
-      { id: string; result: 'correct' | 'incorrect' }[]
-    >([])
+    [feedback, setFeedback] = useState<'correct' | 'incorrect'>()
+
   return (
     <MinimalPairExercise
       mode="listen"
       choices={pair.c.map(([word, phonetic], i) => ({
         id: String(i),
         word,
-        phonetic,
+        phonetic: feedback ? phonetic : undefined,
       }))}
       onListen={() => {
         const next = Math.random() < 0.5 ? 0 : 1
@@ -210,33 +188,29 @@ export function PronunciationSection({
         setSelected(undefined)
         setFeedback(undefined)
         speech.speak([
-          { id: `pair-${index}-${next}`, text: pair.c[next]?.[0] ?? '' },
+          { id: `P.${index}.${next}`, text: pair.c[next]?.[0] ?? '' },
         ])
       }}
       selectedId={selected}
       feedback={feedback}
-      score={score}
       hint={feedback === 'incorrect' ? pair.tip : undefined}
-      labels={{ score: 'Score' }}
       onSelect={(id) => {
         if (target === undefined) {
           speech.speak([
-            { id: `pair-${index}-${id}`, text: pair.c[Number(id)]?.[0] ?? '' },
+            { id: `P.${index}.${id}`, text: pair.c[Number(id)]?.[0] ?? '' },
           ])
           return
         }
         const result: 'correct' | 'incorrect' =
           Number(id) === target ? 'correct' : 'incorrect'
-        const scoreId = String(++scoreSequence.current)
         setSelected(id)
         setFeedback(result)
-        setScore((old) => [...old, { id: scoreId, result }].slice(-8))
         setTarget(undefined)
       }}
     />
   )
 }
-export function CorrectionSection({ speech }: SpeechSectionProps) {
+export function CorrectionSection() {
   const [done, setDone] = useState<string[]>([]),
     [bad, setBad] = useState<Record<string, string>>({}),
     [own, setOwn] = useState(false)
@@ -262,15 +236,6 @@ export function CorrectionSection({ speech }: SpeechSectionProps) {
             {correct ? (
               <>
                 <small>{row.why}</small>
-                <Button
-                  size="sm"
-                  variant="secondary"
-                  onClick={() =>
-                    speech.speak([{ id: row.id, text: row.a ?? row.s }])
-                  }
-                >
-                  Listen
-                </Button>
               </>
             ) : (
               <S.Row>
@@ -283,7 +248,6 @@ export function CorrectionSection({ speech }: SpeechSectionProps) {
                     onClick={() => {
                       if ((value === 'Right') === Boolean(row.ok)) {
                         setDone((old) => [...old, row.id])
-                        speech.speak([{ id: row.id, text: row.a ?? row.s }])
                       } else setBad((old) => ({ ...old, [row.id]: value }))
                     }}
                   >

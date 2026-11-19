@@ -49,10 +49,16 @@ export function ComprehensionSection() {
           {row.q}
         </RevealCard>
       ))}
+      <S.Now>
+        <b>Now you</b>
+        <p>
+          Have you ever started a new hobby? What have you been doing recently?
+        </p>
+      </S.Now>
     </S.Stack>
   )
 }
-export function GrammarSection({ speech }: SpeechSectionProps) {
+export function GrammarSection() {
   const [ids, setIds] = useState<string[]>([]),
     [starters, setStarters] = useState(false)
   const all = content.grammar.every((row) => ids.includes(row[4] ?? ''))
@@ -60,37 +66,57 @@ export function GrammarSection({ speech }: SpeechSectionProps) {
     <S.GrammarColumns>
       <S.Stack>
         <S.Explanation>
-          <h3>A atividade ou o resultado?</h3>
+          <h3>Activity or result?</h3>
           <p>
-            <b>have / has been + verbo com -ing</b>: o que você vem fazendo até
-            agora, e quanto tempo (I’ve been painting all week). Muitas vezes
-            ainda se vê a marca.
+            <b>I’ve been painting all week.</b>
+            <br />
+            Focus: the activity and the time spent.
           </p>
           <p>
-            <b>have / has + particípio</b>: o que ficou pronto, quanto ou
-            quantos (I’ve painted the kitchen. I’ve baked three cakes).
+            <b>I’ve painted two rooms.</b>
+            <br />
+            Focus: the completed result or quantity.
           </p>
         </S.Explanation>
-        {all ? (
+        <S.Explanation>
+          <h3>Build the continuous form</h3>
+          <p>
+            I / you / we / they <b>have been + -ing</b>
+            <br />
+            He / she / it <b>has been + -ing</b>
+          </p>
+          <p>
+            <b>I haven’t been sleeping well.</b>
+            <br />
+            <b>Has she been working late?</b> — Yes, she has.
+          </p>
+        </S.Explanation>
+        <details>
+          <summary>Duration and verb choice</summary>
           <S.Explanation>
-            <h3>Há duas semanas = for two weeks</h3>
             <p>
-              Em português: estou correndo <b>há</b> duas semanas; corro{' '}
-              <b>desde</b> segunda. Em inglês, não vem I’m running nem I run:{' '}
-              <b>
-                I’ve been running for two weeks. I’ve been running since Monday.
-              </b>
+              <b>for</b> + a period: for two weeks.
+              <br />
+              <b>since</b> + a starting point: since Monday.
+            </p>
+            <p>
+              An activity can still be happening or have just stopped: “You’re
+              wet. Have you been swimming?”
+            </p>
+            <p>
+              Use the simple form with state verbs:{' '}
+              <b>I’ve known her for years.</b>
             </p>
           </S.Explanation>
-        ) : null}
+        </details>
       </S.Stack>
       <S.Stack>
         <GrammarTable
           title="Doing or done?"
           columns={{
-            subject: 'O que você conta',
-            verb: 'Palavras',
-            example: 'Exemplo',
+            subject: 'Focus',
+            verb: 'Form',
+            example: 'Example',
           }}
           rows={content.grammar.map(
             ([subject, verb, example, translation, id]) => ({
@@ -99,29 +125,12 @@ export function GrammarSection({ speech }: SpeechSectionProps) {
               verb,
               example,
               translation,
-              audioLabel: `Listen: ${example}`,
             }),
           )}
           hiddenAnswers
           revealedIds={ids}
           revealLabel="Show words and example"
-          onReveal={(id) => {
-            setIds((old) => [...old, id])
-            speech.speak([
-              {
-                id,
-                text: content.grammar.find((row) => row[4] === id)?.[2] ?? '',
-              },
-            ])
-          }}
-          onPlay={(id) =>
-            speech.speak([
-              {
-                id,
-                text: content.grammar.find((row) => row[4] === id)?.[2] ?? '',
-              },
-            ])
-          }
+          onReveal={(id) => setIds((old) => [...old, id])}
         />
         {all ? (
           <S.Now>

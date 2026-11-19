@@ -1,11 +1,12 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
 import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 export * from '../shared/Lesson.styles'
 export const SceneImage = styled.img`
   width: 100%;
-  max-height: 36cqh;
+  max-height: 28rem;
   object-fit: contain;
   aspect-ratio: 3/2;
   border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
@@ -17,15 +18,16 @@ export const RecallImages = styled.div`
   display: flex;
   gap: ${theme.spacing[2]};
   img {
-    width: ${theme.spacing[16]};
-    height: ${theme.spacing[16]};
+    width: clamp(6rem, 14cqw, 12rem);
+    height: auto;
+    aspect-ratio: 4/3;
     object-fit: contain;
     border-radius: ${theme.radius.md};
   }
 `
 export const PictureStrip = styled.div`
   display: grid;
-  grid-template-columns: repeat(7, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
   gap: ${theme.spacing[2]};
   img {
     width: 100%;
@@ -51,10 +53,38 @@ export const LessonTable = styled(GrammarTable)`
     overflow-wrap: normal;
   }
   thead th:first-child {
-    width: 36%;
+    width: 38%;
   }
   thead th:nth-child(2) {
-    width: 25%;
+    width: 24%;
+  }
+  @container (max-width: ${theme.breakpoints.sm}) {
+    table,
+    tbody,
+    tr,
+    th,
+    td {
+      display: block;
+      width: 100%;
+      min-width: 0;
+    }
+    caption {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    thead {
+      display: none;
+    }
+    tr {
+      padding-block: ${theme.spacing[3]};
+      border-bottom: 1px solid ${(p) => resolveSlideTheme(p).border};
+    }
+    th,
+    td {
+      border: 0;
+      overflow-wrap: anywhere;
+    }
   }
 `
 export const Board = styled.div`
@@ -81,5 +111,29 @@ export const NoteFields = styled.div`
   }
   @container (max-width:${theme.breakpoints.sm}) {
     grid-template-columns: 1fr;
+  }
+`
+
+export const GrammarSummary = styled.div`
+  display: grid;
+  gap: ${theme.spacing[3]};
+`
+
+export const LargeVocabularyGrid = styled(VocabularyGrid)`
+  max-width: 100%;
+  button {
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: auto;
+  }
+  button img {
+    position: static;
+    height: auto;
+    aspect-ratio: 1;
+  }
+  button > span {
+    position: static;
+    inset: auto;
+    width: 100%;
   }
 `

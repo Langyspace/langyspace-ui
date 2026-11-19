@@ -1,0 +1,297 @@
+{
+  "material": "C101",
+  "totalPages": 17,
+  "plannedMinutes": 50,
+  "pacing": "Suggested pacing for a teacher-led 50 minute conversation lesson, adjustable to the learner.",
+  "pages": [
+    {
+      "originalPage": 1,
+      "reactId": "s1",
+      "titleGroup": "Review",
+      "decision": "One title and one instruction; preserve prior contrast language; ask teacher and respond.",
+      "components": "SlidePage, SourceQuestions",
+      "minutes": 2,
+      "before": [
+        "before/1440-s1.png",
+        "before/390-s1.png"
+      ],
+      "after": [
+        "after/1440-s1.png",
+        "after/390-s1.png",
+        "after/320-s1.png"
+      ]
+    },
+    {
+      "originalPage": 2,
+      "reactId": "s2",
+      "titleGroup": "Expressions",
+      "decision": "Preserve eight real expressions/context/meanings; reveal instead of dense three-column table; recall mode and personal turn.",
+      "components": "details using shared tokens",
+      "minutes": 4,
+      "before": [
+        "before/1440-s2.png",
+        "before/390-s2.png"
+      ],
+      "after": [
+        "after/1440-s2.png",
+        "after/390-s2.png",
+        "after/320-s2.png"
+      ]
+    },
+    {
+      "originalPage": 31,
+      "reactId": "s31",
+      "titleGroup": "Warm up 1",
+      "decision": "Preserve Ana note and all choices; contextual note has large type and no gratuitous image.",
+      "components": "Button, Paper",
+      "minutes": 2,
+      "before": [
+        "before/1440-s31.png",
+        "before/390-s31.png"
+      ],
+      "after": [
+        "after/1440-s31.png",
+        "after/390-s31.png",
+        "after/320-s31.png"
+      ]
+    },
+    {
+      "originalPage": 32,
+      "reactId": "s32",
+      "titleGroup": "Warm up 2",
+      "decision": "Preserve note, hidden choices, suggestion and subsequent oral transfer.",
+      "components": "Button, Paper",
+      "minutes": 2,
+      "before": [
+        "before/1440-s32.png",
+        "before/390-s32.png"
+      ],
+      "after": [
+        "after/1440-s32.png",
+        "after/390-s32.png",
+        "after/320-s32.png"
+      ]
+    },
+    {
+      "originalPage": 33,
+      "reactId": "s33",
+      "titleGroup": "Warm up 3",
+      "decision": "Preserve Kim question and Ana choices; personal follow-up retains received-versus-given distinction.",
+      "components": "Button, Paper",
+      "minutes": 2,
+      "before": [
+        "before/1440-s33.png",
+        "before/390-s33.png"
+      ],
+      "after": [
+        "after/1440-s33.png",
+        "after/390-s33.png",
+        "after/320-s33.png"
+      ]
+    },
+    {
+      "originalPage": 4,
+      "reactId": "s4",
+      "titleGroup": "Reading",
+      "decision": "Single full email removes duplicate phone rendering; two comprehension/inference reveals plus personal conversation. Interpretations are evidence-based, not a unique mind-reading key.",
+      "components": "QuestionReveal(extends RevealCard), Paper",
+      "minutes": 4,
+      "before": [
+        "before/1440-s4.png",
+        "before/390-s4.png"
+      ],
+      "after": [
+        "after/1440-s4.png",
+        "after/390-s4.png",
+        "after/320-s4.png"
+      ]
+    },
+    {
+      "originalPage": 51,
+      "reactId": "s51",
+      "titleGroup": "Intonation 1",
+      "decision": "Two real ElevenLabs deliveries of identical words. Neutral A/B comparison, no automatic key; context and production discussed.",
+      "components": "MinimalPairExercise",
+      "minutes": 2,
+      "before": [
+        "before/1440-s51.png",
+        "before/390-s51.png"
+      ],
+      "after": [
+        "after/1440-s51.png",
+        "after/390-s51.png",
+        "after/320-s51.png"
+      ]
+    },
+    {
+      "originalPage": 52,
+      "reactId": "s52",
+      "titleGroup": "Intonation 2",
+      "decision": "Two deliveries of the suggestion. No fixed soft/order scoring; neutral comparison and imitation with teacher.",
+      "components": "MinimalPairExercise",
+      "minutes": 2,
+      "before": [
+        "before/1440-s52.png",
+        "before/390-s52.png"
+      ],
+      "after": [
+        "after/1440-s52.png",
+        "after/390-s52.png",
+        "after/320-s52.png"
+      ]
+    },
+    {
+      "originalPage": 6,
+      "reactId": "s6",
+      "titleGroup": "Dialogue 1",
+      "decision": "Keep first seven original turns, audio and revealable Portuguese support. Thursday context made explicit.",
+      "components": "LearningDialogue",
+      "minutes": 3,
+      "before": [
+        "before/1440-s6.png",
+        "before/390-s6.png"
+      ],
+      "after": [
+        "after/1440-s6.png",
+        "after/390-s6.png",
+        "after/320-s6.png"
+      ]
+    },
+    {
+      "originalPage": 62,
+      "reactId": "s62",
+      "titleGroup": "Dialogue 2",
+      "decision": "Keep last seven original turns; interruption and pragmatic reformulation preserved.",
+      "components": "LearningDialogue",
+      "minutes": 3,
+      "before": [
+        "before/1440-s62.png",
+        "before/390-s62.png"
+      ],
+      "after": [
+        "after/1440-s62.png",
+        "after/390-s62.png",
+        "after/320-s62.png"
+      ]
+    },
+    {
+      "originalPage": 61,
+      "reactId": "s61",
+      "titleGroup": "Dialogue questions",
+      "decision": "Keep all three questions and revealable model answers; evidence before reveal.",
+      "components": "QuestionReveal(extends RevealCard)",
+      "minutes": 2,
+      "before": [
+        "before/1440-s61.png",
+        "before/390-s61.png"
+      ],
+      "after": [
+        "after/1440-s61.png",
+        "after/390-s61.png",
+        "after/320-s61.png"
+      ]
+    },
+    {
+      "originalPage": 7,
+      "reactId": "s7",
+      "titleGroup": "Grammar",
+      "decision": "Keep six reformulations. Two-column attempt-first GrammarTable plus concise optional notes on form, pragmatic effect, power/context and specificity.",
+      "components": "GrammarTable, details",
+      "minutes": 4,
+      "before": [
+        "before/1440-s7.png",
+        "before/390-s7.png"
+      ],
+      "after": [
+        "after/1440-s7.png",
+        "after/390-s7.png",
+        "after/320-s7.png"
+      ]
+    },
+    {
+      "originalPage": 8,
+      "reactId": "s8",
+      "titleGroup": "Your version",
+      "decision": "Preserve four exchanges in both roles, learner oral cues and optional support. Teacher speaks live; no unbacked player.",
+      "components": "LearningDialogue",
+      "minutes": 4,
+      "before": [
+        "before/1440-s8.png",
+        "before/390-s8.png"
+      ],
+      "after": [
+        "after/1440-s8.png",
+        "after/390-s8.png",
+        "after/320-s8.png"
+      ]
+    },
+    {
+      "originalPage": 9,
+      "reactId": "s9",
+      "titleGroup": "Listening",
+      "decision": "Keep full Raj message and three questions; natural real duration/1x, pause, replay, transcript gate. Replace simulated recording/send with real spoken reply prompt.",
+      "components": "VoiceMessageExercise",
+      "minutes": 4,
+      "before": [
+        "before/1440-s9.png",
+        "before/390-s9.png"
+      ],
+      "after": [
+        "after/1440-s9.png",
+        "after/390-s9.png",
+        "after/320-s9.png"
+      ]
+    },
+    {
+      "originalPage": 10,
+      "reactId": "s10",
+      "titleGroup": "Natural or not",
+      "decision": "Keep five examples and personal repair; distinguish grammar/tone/specificity rather than claim presentation criticism attacks a person.",
+      "components": "Button, QuestionReveal",
+      "minutes": 3,
+      "before": [
+        "before/1440-s10.png",
+        "before/390-s10.png"
+      ],
+      "after": [
+        "after/1440-s10.png",
+        "after/390-s10.png",
+        "after/320-s10.png"
+      ]
+    },
+    {
+      "originalPage": 11,
+      "reactId": "s11",
+      "titleGroup": "Role play",
+      "decision": "Preserve situation, four planning fields, clear/focus and four teacher checklist steps. No decorative images or scores.",
+      "components": "RolePlayExercise, TextareaInput",
+      "minutes": 5,
+      "before": [
+        "before/1440-s11.png",
+        "before/390-s11.png"
+      ],
+      "after": [
+        "after/1440-s11.png",
+        "after/390-s11.png",
+        "after/320-s11.png"
+      ]
+    },
+    {
+      "originalPage": 12,
+      "reactId": "s12",
+      "titleGroup": "Before next class",
+      "decision": "Replace unverifiable links and fake copy action with three useful oral/retrieval tasks related to the original language and dialogue.",
+      "components": "shared Surface tokens",
+      "minutes": 2,
+      "before": [
+        "before/1440-s12.png",
+        "before/390-s12.png"
+      ],
+      "after": [
+        "after/1440-s12.png",
+        "after/390-s12.png",
+        "after/320-s12.png"
+      ]
+    }
+  ]
+}

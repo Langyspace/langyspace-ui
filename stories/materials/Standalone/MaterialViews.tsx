@@ -24,6 +24,9 @@ const B101 = lazy(() =>
 const B201 = lazy(() =>
   import('../B201/B201Lesson').then((m) => ({ default: m.B201Lesson })),
 )
+const C101 = lazy(() =>
+  import('../C101/C101Lesson').then((m) => ({ default: m.C101Lesson })),
+)
 const Frontend = lazy(() =>
   import('../Frontend/FrontendLesson').then((m) => ({
     default: m.FrontendLesson,
@@ -68,5 +71,7 @@ export function MaterialView({
     return <B101 studentPortalOrigin={studentPortalOrigin} />
   if (materialKey === 'b2-01')
     return <B201 studentPortalOrigin={studentPortalOrigin} />
+  if (materialKey === 'c1-01')
+    return <C101 studentPortalOrigin={studentPortalOrigin} />
   return <Trial levelLabel="A1 · A2" />
 }
