@@ -2,11 +2,13 @@ import { PromptExercise } from '../shared/LessonExercises'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
 import {
   lesson,
+  ana,
+  kim,
   itemAt,
   image,
   warmUpImage,
@@ -187,7 +189,7 @@ export function DialogueSection({
           id: line.id,
           speaker: line.who === 'kim' ? 'Kim' : 'Ana',
           side: line.who === 'kim' ? 'start' : 'end',
-          avatarUrl: image(`bust_${line.who}`),
+          avatarUrl: line.who === 'kim' ? kim : ana,
           translation: line.g,
           audioLabel: `Ouvir: ${line.en}`,
           content: gaps ? (

@@ -31,7 +31,7 @@
     {
       "id": "s2",
       "title": "An unexpected stop",
-      "subtitle": "Explore the picture and decide what happens next.",
+      "subtitle": "Choose a dot, describe that detail and decide what happens next.",
       "minutes": 4,
       "objective": "Describe a concrete travel problem and suggest an immediate response.",
       "source": "Original s2 · A road trip",
@@ -41,18 +41,30 @@
         {
           "id": "tire",
           "label": "The flat tire",
-          "xPercent": 40,
-          "yPercent": 75,
+          "xPercent": 41,
+          "yPercent": 72,
           "prompt": "What went wrong? What could they do next?",
-          "support": "They had a flat tire. They could …"
+          "support": "They had a flat tire. They could …",
+          "targetBounds": {
+            "xPercent": 32,
+            "yPercent": 57,
+            "widthPercent": 18,
+            "heightPercent": 24
+          }
         },
         {
           "id": "suitcase",
           "label": "The suitcase",
-          "xPercent": 87,
-          "yPercent": 63,
+          "xPercent": 92,
+          "yPercent": 58,
           "prompt": "What do you always take on a trip?",
-          "support": "I always take … because …"
+          "support": "I always take … because …",
+          "targetBounds": {
+            "xPercent": 85,
+            "yPercent": 40,
+            "widthPercent": 13,
+            "heightPercent": 34
+          }
         },
         {
           "id": "coast",
@@ -60,7 +72,13 @@
           "xPercent": 94,
           "yPercent": 40,
           "prompt": "Would you like to take a trip here? Why?",
-          "support": "I’d love to … / I’d prefer … because …"
+          "support": "I’d love to … / I’d prefer … because …",
+          "targetBounds": {
+            "xPercent": 86,
+            "yPercent": 35,
+            "widthPercent": 14,
+            "heightPercent": 9
+          }
         }
       ]
     },
@@ -205,8 +223,8 @@
     "story": "Allow 60–90 seconds for the first story. Respond naturally, then invite the learner to ask two questions. Optional extensions are conversation choices, not a checklist or assessment."
   },
   "audio": {
-    "mode": "live-reading",
-    "validRecordingsFound": 0,
-    "reason": "Original explicitly forces browser speech synthesis; no valid ElevenLabs mapping. No audio controls in revised material."
+    "mode": "recorded-labels-and-live-reading",
+    "validRecordingsFound": 3,
+    "reason": "The three picture-talk labels use approved ElevenLabs recordings. Read the model dialogue live; no recorded dialogue or speech-synthesis fallback."
   }
 }

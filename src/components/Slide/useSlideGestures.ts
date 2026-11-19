@@ -1,5 +1,10 @@
 import { useEffect } from 'react'
-import type { SlideGestureOptions, SlideTouchGesture } from './SlideDeck.types'
+import type { RefObject } from 'react'
+import type {
+  SlideGestureOptions,
+  SlideMovementTarget,
+  SlideTouchGesture,
+} from './SlideDeck.types'
 
 export const SLIDE_EDITABLE_SELECTOR =
   'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="tablist"],[role="radiogroup"],[role="grid"],[role="tree"],[role="spinbutton"]'
@@ -9,9 +14,34 @@ const POINTER_NATIVE_SELECTOR =
 
 // Same-burst browser gaps measured 44–83ms; isolated detents were at least 200ms apart.
 const WHEEL_GESTURE_IDLE_MS = 160
-// Native mobile Chromium still clicks at 12px, but treats 16px as a gesture.
-// Keep that tap tolerance before choosing an axis or suppressing a control click.
-const TOUCH_INTENT_PX = 16
+// Preserve 2–4px tap jitter. Real scroll starts delivered their last cancelable
+// move as early as 4.63px; waiting for 5/16px handed control to native snap.
+const TOUCH_TAP_TOLERANCE_PX = 4
+// Capturing a pan is separate from committing a page. Native control clicks
+// survived 12px displacement; require the observed 16px swipe intent to leave.
+const TOUCH_SWIPE_INTENT_PX = 16
+
+/** Check the live anchor: fonts, portraits and Hint expansion can move its pixels. */
+export function isSlideMovementPending(
+  viewport: HTMLElement,
+  targetRef: RefObject<SlideMovementTarget | undefined>,
+) {
+  const target = targetRef.current
+  if (!target) return false
+  const page = Array.from(viewport.children).find(
+    (element) =>
+      element instanceof HTMLElement &&
+      element.dataset.slideId === target.pageId,
+  )
+  const remaining = target.alignEnd
+    ? viewport.scrollHeight - viewport.clientHeight - viewport.scrollTop
+    : page
+      ? page.getBoundingClientRect().top - viewport.getBoundingClientRect().top
+      : 0
+  if (Math.abs(remaining) > 2) return true
+  targetRef.current = undefined
+  return false
+}
 
 function hasNestedScroller(target: EventTarget | null, viewport: HTMLElement) {
   let element = target instanceof Element ? target : null
@@ -48,15 +78,7 @@ export function useSlideGestures({
       (target instanceof Element &&
         Boolean(target.closest(POINTER_NATIVE_SELECTOR))) ||
       hasNestedScroller(target, viewport)
-    const moving = () => {
-      const target = movementTargetRef.current
-      if (target === undefined) return false
-      if (Math.abs(viewport.scrollTop - target) <= 2) {
-        movementTargetRef.current = undefined
-        return false
-      }
-      return true
-    }
+    const moving = () => isSlideMovementPending(viewport, movementTargetRef)
     const scrollContent = (delta: number) => {
       if (!delta) return false
       const page = Array.from(viewport.children).find(
@@ -156,12 +178,13 @@ export function useSlideGestures({
       let delta = touch.lastY - point.clientY
       touch.lastY = point.clientY
       if (!touch.axis) {
-        if (Math.max(Math.abs(dx), Math.abs(dy)) < TOUCH_INTENT_PX) return
+        if (Math.max(Math.abs(dx), Math.abs(dy)) <= TOUCH_TAP_TOLERANCE_PX)
+          return
         touch.axis = Math.abs(dx) >= Math.abs(dy) ? 'horizontal' : 'vertical'
         delta = dy
       }
       touch.direction =
-        Math.abs(dy) >= TOUCH_INTENT_PX ? (dy > 0 ? 1 : -1) : undefined
+        Math.abs(dy) >= TOUCH_SWIPE_INTENT_PX ? (dy > 0 ? 1 : -1) : undefined
       if (touch.axis !== 'vertical' || !dy || !event.cancelable) return
       event.preventDefault()
       if (!touch.moving && scrollContent(delta)) touch.consumedContent = true

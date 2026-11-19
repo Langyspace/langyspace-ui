@@ -20,7 +20,7 @@
     {
       "id": "s2",
       "title": "A place to get things done",
-      "subtitle": "Explore the picture and compare it with your day.",
+      "subtitle": "Choose a dot, discuss that detail and compare it with your day.",
       "minutes": 4
     },
     {
@@ -87,23 +87,41 @@
         "y": 64,
         "label": "The laptop",
         "q": "What can you tell about Ana’s setup? What can’t you tell?",
-        "support": "I can see …, but I can’t tell …"
+        "support": "I can see …, but I can’t tell …",
+        "targetBounds": {
+          "xPercent": 38,
+          "yPercent": 49,
+          "widthPercent": 57,
+          "heightPercent": 45
+        }
       },
       {
         "id": "focus",
-        "x": 27,
-        "y": 37,
+        "x": 30,
+        "y": 60,
         "label": "Ana at work",
         "q": "What would help you concentrate in a space like this?",
-        "support": "I find it easier to get things done when …"
+        "support": "I find it easier to get things done when …",
+        "targetBounds": {
+          "xPercent": 13,
+          "yPercent": 0,
+          "widthPercent": 57,
+          "heightPercent": 90
+        }
       },
       {
         "id": "boundaries",
-        "x": 15,
-        "y": 90,
+        "x": 16,
+        "y": 96,
         "label": "The desk",
         "q": "How easy would it be to switch off after working here?",
-        "support": "It would depend on …"
+        "support": "It would depend on …",
+        "targetBounds": {
+          "xPercent": 0,
+          "yPercent": 92,
+          "widthPercent": 100,
+          "heightPercent": 8
+        }
       }
     ]
   },

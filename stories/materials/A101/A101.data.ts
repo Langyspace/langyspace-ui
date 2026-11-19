@@ -1,3 +1,4 @@
+export { ana, kim } from '../shared/characterPortraits'
 import source from './lesson'
 import sceneManifest from './image-scenes.json'
 import type { WarmUpData, VocabularyData } from './A101.types'

@@ -1,7 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
-import type { SlideDeckProps } from './SlideDeck.types'
-import { SLIDE_EDITABLE_SELECTOR, useSlideGestures } from './useSlideGestures'
+import type { SlideDeckProps, SlideMovementTarget } from './SlideDeck.types'
+import {
+  isSlideMovementPending,
+  SLIDE_EDITABLE_SELECTOR,
+  useSlideGestures,
+} from './useSlideGestures'
 
 export function useSlideNavigation({
   pages,
@@ -16,7 +20,7 @@ export function useSlideNavigation({
   const [observedId, setObservedId] = useState(pages[0]?.id)
   const [progress, setProgress] = useState(0)
   const activeRef = useRef(pages[0]?.id)
-  const movementTargetRef = useRef<number | undefined>(undefined)
+  const movementTargetRef = useRef<SlideMovementTarget | undefined>(undefined)
   const requestedRef = useRef<string | undefined>(undefined)
   const firstRequestRef = useRef(true)
   const callbackRef = useRef(onPageChange)
@@ -47,7 +51,9 @@ export function useSlideNavigation({
       const reduced = window.matchMedia(
         '(prefers-reduced-motion: reduce)',
       ).matches
-      movementTargetRef.current = top
+      movementTargetRef.current = target.dataset.slideId
+        ? { pageId: target.dataset.slideId, alignEnd }
+        : undefined
       viewport.scrollTo({
         top,
         behavior: behavior ?? (reduced ? 'instant' : 'smooth'),
@@ -121,11 +127,7 @@ export function useSlideNavigation({
         lastHeight = viewport.clientHeight
       }
       const scrollableHeight = viewport.scrollHeight - viewport.clientHeight
-      if (
-        movementTargetRef.current !== undefined &&
-        Math.abs(viewport.scrollTop - movementTargetRef.current) <= 2
-      )
-        movementTargetRef.current = undefined
+      isSlideMovementPending(viewport, movementTargetRef)
       setProgress(
         scrollableHeight > 0
           ? Math.max(

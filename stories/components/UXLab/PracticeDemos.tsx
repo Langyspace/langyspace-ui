@@ -17,7 +17,7 @@ import { ShadowingControlDock } from '../../../src/components/Shadowing/Shadowin
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import * as Styled from './UXLab.stories.styles'
 import data from '../../materials/UXLab/lab-data.json'
-import scene from '../../materials/UXLab/assets/scene_room.jpeg'
+import scene from '../../materials/UXLab/assets/scene-room-native.png'
 import photos from '../../materials/UXLab/assets/scene_photos.webp'
 import sheep from '../../materials/UXLab/assets/sheep.png'
 import ship from '../../materials/UXLab/assets/ship.png'
@@ -28,6 +28,13 @@ import cup from '../../materials/UXLab/assets/cup.png'
 import ana from '../../materials/UXLab/assets/bust_ana.png'
 import kim from '../../materials/UXLab/assets/bust_kim.png'
 import { useLabSpeech } from './useLabSpeech'
+import { useSceneAudio } from '../../materials/shared/useSceneAudio'
+import bagLabel from '../../materials/UXLab/assets/bag-label.mp3'
+import keysLabel from '../../materials/UXLab/assets/keys-label.mp3'
+import phoneLabel from '../../materials/UXLab/assets/phone-label.mp3'
+import glassesLabel from '../../materials/UXLab/assets/glasses-label.mp3'
+import bookLabel from '../../materials/UXLab/assets/book-label.mp3'
+import umbrellaLabel from '../../materials/UXLab/assets/umbrella-label.mp3'
 import type { LabDemoProps } from './UXLab.demo.types'
 const toggle = (old: readonly string[], id: string) =>
   old.includes(id) ? old.filter((v) => v !== id) : [...old, id]
@@ -226,8 +233,27 @@ export function RolePlayDemo() {
     />
   )
 }
+const sceneLabelClips: Readonly<Record<string, string>> = {
+  bag: bagLabel,
+  keys: keysLabel,
+  phone: phoneLabel,
+  glasses: glassesLabel,
+  book: bookLabel,
+  umbrella: umbrellaLabel,
+}
+// Natural coordinates for the approved 1536×1024 PNG; historic HS data belongs
+// to a different image. Bounds conservatively protect each complete object.
+const sceneTargets = [
+  { point: [25.6, 54.8], bounds: [304, 464, 176, 184] },
+  { point: [51, 78.7], bounds: [708, 752, 136, 104] },
+  { point: [45.8, 47.1], bounds: [640, 432, 128, 104] },
+  { point: [56.6, 47.4], bounds: [800, 456, 144, 72] },
+  { point: [81.2, 57.9], bounds: [1152, 544, 192, 96] },
+  { point: [17.3, 76.4], bounds: [104, 680, 288, 192] },
+] as const
 export function SceneDemo({ level = 'a1' }: LabDemoProps) {
-  const speech = useLabSpeech()
+  const { play, stop, playingId, error } = useSceneAudio(true, sceneLabelClips)
+  useEffect(() => stop, [level, stop])
   const [selected, setSelected] = useState<string>(),
     [visited, setVisited] = useState<string[]>([]),
     [answer, setAnswer] = useState(false)
@@ -235,19 +261,45 @@ export function SceneDemo({ level = 'a1' }: LabDemoProps) {
     <SceneExplorer
       imageUrl={scene}
       imageAlt="Sala com cadeira, mesa, sofá e objetos para explorar"
-      hotspots={data.HS.map((h, i) => ({
-        id: String(i),
-        xPercent: h.x + 3.5,
-        yPercent: h.y - 9,
-        label: h.w,
-        prompt: level === 'a1' ? h.a1 : h.c2,
-        answer: level === 'a1' ? h.a1a : h.c2a,
-      }))}
+      hotspots={data.HS.map((h, i) => {
+        const target = sceneTargets[i]
+        return {
+          id: String(i),
+          xPercent: target?.point[0] ?? h.x,
+          yPercent: target?.point[1] ?? h.y,
+          targetBounds: target
+            ? {
+                xPercent: (target.bounds[0] / 1536) * 100,
+                yPercent: (target.bounds[1] / 1024) * 100,
+                widthPercent: (target.bounds[2] / 1536) * 100,
+                heightPercent: (target.bounds[3] / 1024) * 100,
+              }
+            : undefined,
+          label: h.w,
+          prompt: (
+            <>
+              {level === 'a1' ? h.a1 : h.c2}
+              {selected === String(i) && error ? (
+                <span role="status">{error}</span>
+              ) : null}
+            </>
+          ),
+          answer: level === 'a1' ? h.a1a : h.c2a,
+        }
+      })}
       selectedId={selected}
       visitedIds={visited}
+      onPlayHotspot={(id) => {
+        play(data.HS[Number(id)]?.w ?? '')
+      }}
+      playingId={
+        selected && playingId === data.HS[Number(selected)]?.w
+          ? selected
+          : undefined
+      }
       onSelect={(id) => {
+        stop()
         setSelected(id)
-        speech.play(data.HS[Number(id)]?.w ?? '')
         setVisited((old) => (old.includes(id) ? old : [...old, id]))
         setAnswer(false)
       }}

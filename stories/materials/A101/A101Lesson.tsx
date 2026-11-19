@@ -12,7 +12,7 @@ import {
   order,
   itemAt,
   lesson,
-  image,
+  kim,
 } from './A101.data'
 import {
   VocabularySection,
@@ -264,14 +264,15 @@ function A101LessonContent({
         content: (
           <SlidePage
             width="standard"
-            title="Listening Practice"
+            eyebrow="Listening"
+            title="A message from Kim"
             instruction="Ouça o áudio da Kim e responda."
           >
             <VoiceMessageDemo
               contact={{
                 name: 'Kim',
                 status: 'online',
-                avatarUrl: image('bust_kim'),
+                avatarUrl: kim,
               }}
               audio={{
                 id: 'a101-kim-demo',

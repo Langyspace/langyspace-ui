@@ -33,7 +33,7 @@ export const Page = styled(SlidePage)`
   }
   h2 em {
     font-family: ${(p) => resolveSlideTheme(p).accentFontFamily};
-    color: ${(p) => resolveSlideTheme(p).indicator};
+    color: ${(p) => resolveSlideTheme(p).foreground};
     font-weight: ${theme.typography.fontWeight.regular};
   }
 `

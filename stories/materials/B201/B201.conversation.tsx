@@ -3,12 +3,12 @@ import { ThemeProvider } from 'styled-components'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { TextareaInput } from '../../../src/components/Form/TextareaInput'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { toggleId } from '../shared/lessonState'
 import type { ListeningProps } from './B201.types'
-import { content, kim, image, vocabulary } from './B201.data'
+import { content, ana, kim, raj, image, vocabulary } from './B201.data'
 import voice from './assets/b201-raj-message.mp3'
 import audioProvenance from './audio-provenance.json'
 import * as S from './B201.styles'
@@ -62,7 +62,7 @@ export function YourVersionSection() {
           return {
             id,
             speaker: learner ? 'You' : swapped ? 'Teacher: Ana' : 'Kim',
-            avatarUrl: !learner && !swapped ? kim : undefined,
+            avatarUrl: learner ? undefined : swapped ? ana : kim,
             side: learner ? 'end' : 'start',
             actionLabel: learner ? `Mark response: ${r[2]}` : undefined,
             content: learner ? (
@@ -101,7 +101,7 @@ export function ListeningSection({ active }: ListeningProps) {
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
-        contact={{ name: 'Raj', status: 'online' }}
+        contact={{ name: 'Raj', avatarUrl: raj, status: 'online' }}
         greeting={{
           text: content.listening.textMessage,
           timestamp: content.listening.textTimestamp,

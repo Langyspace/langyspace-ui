@@ -34,8 +34,8 @@ export const Stage = styled(SharedStage)`
   }
 `
 export const Page = styled(SlidePage)`
-  em {
-    color: ${(p) => resolveSlideTheme(p).indicator};
+  h2 em {
+    color: ${(p) => resolveSlideTheme(p).foreground};
     font-family: ${(p) => resolveSlideTheme(p).accentFontFamily};
     font-weight: ${theme.typography.fontWeight.regular};
   }

@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
 import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
-import { content, vocabulary, image, kim } from './B101.data'
+import { content, vocabulary, image, kim, leo } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
 import * as S from './B101.styles'
 export function MiniVocabulary({ column = false }: { column?: boolean }) {
@@ -100,6 +100,7 @@ export function WarmUpSection({
               {
                 id: 'leo',
                 speaker: 'Leo',
+                avatarUrl: leo,
                 side: 'end',
                 content: done ? answer : '…',
               },

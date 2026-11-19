@@ -1,10 +1,11 @@
+import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import type { CorrectionItem } from '../shared/Lesson.types'
 import { ana } from './B201.data'
 import { Button } from '../../../src/components/Button/Button'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
 import type { WarmUpProps, WordTableProps } from './B201.types'
@@ -87,10 +88,10 @@ export function WarmUpSection({ index }: WarmUpProps) {
             ]}
           />
           {w.hint ? (
-            <details>
-              <summary>Language support</summary>
+            <LessonHint context="Language support">
+              <b>Language support</b>
               <S.Hint>{w.hint}</S.Hint>
-            </details>
+            </LessonHint>
           ) : null}
           <S.SceneImage
             src={image(w.pic)}
@@ -187,8 +188,8 @@ export function WordTableSection({ grammar = false }: WordTableProps) {
                 <b>before</b> another moment in the past. I’d been walking for
                 two hours <b>when</b> my phone died. Here, <b>’d = had</b>.
               </p>
-              <details>
-                <summary>Form and meaning</summary>
+              <LessonHint context="Form and meaning">
+                <b>Form and meaning</b>
                 <p>
                   <b>Negative:</b> I hadn’t been checking my battery.
                 </p>
@@ -209,7 +210,7 @@ export function WordTableSection({ grammar = false }: WordTableProps) {
                   The continuous form focuses on activity or duration; the
                   activity may have just stopped or still have been continuing.
                 </p>
-              </details>
+              </LessonHint>
             </S.Explanation>
           ) : null}
           {unlocked ? (

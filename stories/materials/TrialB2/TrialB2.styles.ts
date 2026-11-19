@@ -1,3 +1,5 @@
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { LessonHint } from '../shared/LessonHint'
 import { createGlobalStyle, styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
 import { resolveSlideTheme as recipe } from '../../../src/foundations/theme/resolveSlideTheme'
@@ -60,7 +62,7 @@ export const Hero = styled.h1`
   line-height: 1.05;
   letter-spacing: -0.03em;
   em {
-    color: ${(p) => recipe(p).indicator};
+    color: ${(p) => recipe(p).foreground};
     font-family: ${(p) => recipe(p).accentFontFamily};
     font-weight: ${theme.typography.fontWeight.regular};
   }
@@ -101,26 +103,23 @@ export const Questions = styled.ol`
     min-width: 0;
   }
 `
-export const Support = styled.details`
-  font-size: 1rem;
-  color: ${(p) => recipe(p).muted};
-  summary {
-    width: fit-content;
-    padding: ${theme.spacing[2]} 0;
-    color: ${(p) => recipe(p).foreground};
-    font-size: ${theme.typography.fontSize.sm};
-    font-weight: ${theme.typography.fontWeight.bold};
-  }
-  p {
-    margin: ${theme.spacing[2]} 0 0;
-  }
+export const Support = styled(LessonHint)`
+  min-width: 0;
   ul {
-    margin: ${theme.spacing[2]} 0 0;
     padding-left: ${theme.spacing[5]};
   }
   li + li {
     margin-top: ${theme.spacing[2]};
   }
+`
+export const Activity = styled.p`
+  margin: 0 0 ${theme.spacing[2]};
+  color: ${(p) => recipe(p).accent};
+  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.bold};
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 `
 export const Columns = styled.div`
   display: grid;
@@ -132,42 +131,10 @@ export const Columns = styled.div`
     gap: ${theme.spacing[5]};
   }
 `
-export const Scene = styled.div`
-  position: relative;
+export const Scene = styled(SceneExplorer)`
   width: 100%;
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: ${(p) => recipe(p).panelRadius};
-  }
-`
-export const Hotspot = styled.button<{ $x: number; $y: number }>`
-  position: absolute;
-  left: ${(p) => p.$x}%;
-  top: ${(p) => p.$y}%;
-  transform: translate(-50%, -50%);
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  padding: 0;
-  border: 2px solid ${(p) => recipe(p).foreground};
-  border-radius: ${theme.radius.circle};
-  background: ${(p) => recipe(p).canvas};
-  color: ${(p) => recipe(p).foreground};
-  font: inherit;
-  font-weight: ${theme.typography.fontWeight.bold};
-  &[aria-pressed='true'] {
-    background: ${(p) => recipe(p).accent};
-    color: ${(p) => recipe(p).canvas};
-  }
-`
-export const Caption = styled.p`
-  margin: 0;
-  color: ${(p) => recipe(p).muted};
-  font-size: ${theme.typography.fontSize.sm};
+  max-width: 40rem;
+  margin-inline: auto;
 `
 export const Dialogue = styled.ol`
   display: flex;
@@ -178,10 +145,17 @@ export const Dialogue = styled.ol`
   list-style: none;
   max-width: 54rem;
   li {
+    display: flex;
+    align-items: flex-start;
+    gap: ${theme.spacing[3]};
     padding: ${theme.spacing[3]} ${theme.spacing[4]};
     border-radius: ${(p) => recipe(p).panelRadius};
     background: ${(p) => recipe(p).surface};
     max-width: 92%;
+  }
+  li > div {
+    min-width: 0;
+    flex: 1;
   }
   li:nth-child(2n) {
     margin-left: auto;

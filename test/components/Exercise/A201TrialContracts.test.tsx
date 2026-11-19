@@ -66,7 +66,7 @@ describe('A2.01 and A1 trial shared contracts', () => {
         onSelect={select}
       />,
     )
-    expect(screen.getByText('Tap a pink dot')).toBeVisible()
+    expect(screen.getByText('Tap a dot to explore')).toBeVisible()
   })
   it('delegates video signal, hang-up and restart without changing the audio default', async () => {
     const user = userEvent.setup()

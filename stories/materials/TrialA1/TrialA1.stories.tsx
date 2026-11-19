@@ -34,7 +34,7 @@ export const PictureTalk: Story = {
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's2')
     await userEvent.click(c.getByRole('button', { name: 'music' }))
-    await expect(c.getByText('Na imagem', { exact: true })).toBeVisible()
+    await expect(c.getByRole('region', { name: 'music' })).toBeVisible()
   },
 }
 export const ListenAndTalk: Story = { args: { initialPageId: 's3' } }

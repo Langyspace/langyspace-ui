@@ -1,3 +1,4 @@
+import { LessonHint } from '../shared/LessonHint'
 import { styled } from 'styled-components'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
@@ -35,41 +36,9 @@ export const Heading = styled.h3`
   line-height: 1.3;
   font-weight: ${theme.typography.fontWeight.semibold};
 `
-export const Support = styled.details`
+export const Support = styled(LessonHint)`
   align-self: flex-start;
-  font-family: ${theme.typography.fontFamily.sans};
-  font-size: ${theme.typography.fontSize.md};
-  summary {
-    display: inline-flex;
-    align-items: center;
-    gap: ${theme.spacing[2]};
-    min-height: ${theme.spacing[12]};
-    padding: ${theme.spacing[2]} ${theme.spacing[3]};
-    border: 1px solid ${(p) => recipe(p).border};
-    border-radius: ${(p) => recipe(p).panelRadius};
-    font-weight: ${theme.typography.fontWeight.semibold};
-    cursor: pointer;
-    list-style: none;
-    &::after {
-      content: '+';
-    }
-    &:hover {
-      border-color: ${(p) => recipe(p).foreground};
-    }
-    &:focus-visible {
-      outline: 3px solid ${(p) => recipe(p).accent};
-      outline-offset: 4px;
-    }
-  }
-  &[open] summary::after {
-    content: '−';
-  }
-  > div {
-    display: grid;
-    gap: ${theme.spacing[2]};
-    padding-top: ${theme.spacing[3]};
-    color: ${(p) => recipe(p).muted};
-  }
+  min-width: 0;
 `
 export const Invitation = styled(Stack)`
   padding-top: ${theme.spacing[6]};
@@ -77,22 +46,12 @@ export const Invitation = styled(Stack)`
   font-size: ${theme.typography.fontSize.xl};
 `
 export const Scene = styled(SceneExplorer)`
-  display: grid;
-  grid-template-columns: minmax(0, 1.8fr) minmax(240px, 1fr);
-  align-items: center;
-  gap: ${theme.spacing[6]};
-  > :first-child {
-    grid-row: 1 / 3;
-  }
-  > :first-child img {
+  width: 100%;
+  max-width: 56rem;
+  margin-inline: auto;
+  > div > img {
     object-fit: contain;
     aspect-ratio: 4 / 3;
-  }
-  @media (max-width: ${theme.breakpoints.md}) {
-    grid-template-columns: minmax(0, 1fr);
-    > :first-child {
-      grid-row: auto;
-    }
   }
 `
 export const Choices = styled.div`

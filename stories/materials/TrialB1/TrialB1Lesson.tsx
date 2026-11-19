@@ -3,6 +3,10 @@ import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { LessonShell } from '../shared/LessonShell'
+import { useSceneAudio } from '../shared/useSceneAudio'
+import tireLabel from './assets/flat-tire-label.mp3'
+import suitcaseLabel from './assets/suitcase-label.mp3'
+import coastLabel from './assets/coast-label.mp3'
 import source from './TrialB1.content.json'
 import sceneUrl from './assets/roadside-stop.png'
 import anaUrl from './assets/ana-working.webp'
@@ -15,6 +19,11 @@ import type {
 import * as S from './TrialB1.styles'
 
 const content = source as TrialB1Content
+const sceneClips = {
+  tire: tireLabel,
+  suitcase: suitcaseLabel,
+  coast: coastLabel,
+}
 function Support({
   lines,
   label = 'Show support',
@@ -23,8 +32,7 @@ function Support({
   label?: string
 }) {
   return (
-    <S.Support>
-      <summary>{label}</summary>
+    <S.Support context={label}>
       <div>
         {(typeof lines === 'string' ? [lines] : lines).map((line) => (
           <p key={line}>{line}</p>
@@ -33,7 +41,8 @@ function Support({
     </S.Support>
   )
 }
-function Activity({ page }: { page: TrialB1Page }) {
+function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
+  const audio = useSceneAudio(active && page.kind === 'scene', sceneClips)
   const [selected, setSelected] = useState<string>()
   const [visited, setVisited] = useState<string[]>([])
   const [support, setSupport] = useState(false)
@@ -63,12 +72,22 @@ function Activity({ page }: { page: TrialB1Page }) {
         imageAlt={page.imageAlt}
         hotspots={page.hotspots.map((h) => ({
           ...h,
-          prompt: <p>{h.prompt}</p>,
+          prompt: (
+            <>
+              <p>{h.prompt}</p>
+              {selected === h.id && audio.error ? (
+                <p role="status">{audio.error}</p>
+              ) : null}
+            </>
+          ),
           answer: <p>{h.support}</p>,
         }))}
         selectedId={selected}
         visitedIds={visited}
+        onPlayHotspot={audio.play}
+        playingId={audio.playingId}
         onSelect={(id) => {
+          audio.stop()
           setSelected(id)
           setSupport(false)
           setVisited((ids) => (ids.includes(id) ? ids : [...ids, id]))
@@ -195,17 +214,27 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
         materialKey="trial-b1-a-trip-to-remember"
         pageIds={content.pages.map((page) => page.id)}
         label="B1 Trial · A trip to remember"
-        pages={() =>
+        pages={(_, activeId) =>
           content.pages.map((page) => ({
             id: page.id,
             label: page.title,
             content: (
               <SlidePage
                 width="expanded"
+                eyebrow={
+                  {
+                    greeting: 'Warm up',
+                    scene: 'Picture talk',
+                    dialogue: 'Dialogue',
+                    choice: 'Preferences',
+                    story: 'Conversation',
+                    review: 'Review',
+                  }[page.kind]
+                }
                 title={page.title}
                 instruction={page.subtitle}
               >
-                <Activity page={page} />
+                <Activity page={page} active={activeId === page.id} />
               </SlidePage>
             ),
           }))

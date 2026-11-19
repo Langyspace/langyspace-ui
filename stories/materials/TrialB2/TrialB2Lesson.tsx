@@ -3,55 +3,72 @@ import { MaterialTheme } from '../shared/MaterialTheme'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
+import { useSceneAudio } from '../shared/useSceneAudio'
+import laptopLabel from './assets/laptop-label.mp3'
+import anaAtWorkLabel from './assets/ana-at-work-label.mp3'
+import deskLabel from './assets/desk-label.mp3'
+import { CharacterAvatar } from '../shared/CharacterPortraits.styles'
+import { ana, kim } from '../shared/characterPortraits'
 import content from './TrialB2.content.json'
 import image from './assets/ana-working.webp'
 import type { TrialB2LessonProps } from './TrialB2.types'
 import * as S from './TrialB2.styles'
 
-// Adapted from the actual UX Lab index.html, HS/drawScene/openHs, lines 861–883.
-// The image and question change together; support is optional, with no model answer.
-function PictureTalk() {
-  const [active, setActive] = useState(0)
-  const [seen, setSeen] = useState(() => new Set([0]))
-  const hotspot = content.p2.hotspots[active]!
+const sceneClips = {
+  setup: laptopLabel,
+  focus: anaAtWorkLabel,
+  boundaries: deskLabel,
+}
+
+// Reuse the same image-coordinate and anchored-feedback contract as the other trials.
+function PictureTalk({ active }: { active: boolean }) {
+  const audio = useSceneAudio(active, sceneClips)
+  const [selected, setSelected] = useState<string>()
+  const [visited, setVisited] = useState<string[]>([])
+  const [support, setSupport] = useState(false)
   return (
-    <S.Columns>
-      <S.Stack>
-        <S.Scene>
-          <img src={image} alt={content.p2.alt} />
-          {content.p2.hotspots.map((item, index) => (
-            <S.Hotspot
-              key={item.id}
-              $x={item.x}
-              $y={item.y}
-              aria-label={`Explore ${item.label.toLowerCase()}`}
-              aria-pressed={active === index}
-              aria-controls="b2-picture-question"
-              onClick={() => {
-                setActive(index)
-                setSeen((previous) => new Set(previous).add(index))
-              }}
-            >
-              {index + 1}
-            </S.Hotspot>
-          ))}
-        </S.Scene>
-        <S.Caption data-explored-count>{seen.size} of 3 explored</S.Caption>
-      </S.Stack>
-      <S.Panel id="b2-picture-question" aria-live="polite">
-        <S.Prompt>{hotspot.q}</S.Prompt>
-        <S.Support key={hotspot.id}>
-          <summary>Phrase support</summary>
-          <p>{hotspot.support}</p>
-        </S.Support>
-      </S.Panel>
-    </S.Columns>
+    <S.Scene
+      imageUrl={image}
+      imageAlt={content.p2.alt}
+      hotspots={content.p2.hotspots.map((item) => ({
+        id: item.id,
+        label: item.label,
+        xPercent: item.x,
+        yPercent: item.y,
+        targetBounds: item.targetBounds,
+        prompt: (
+          <>
+            <p>{item.q}</p>
+            {selected === item.id && audio.error ? (
+              <p role="status">{audio.error}</p>
+            ) : null}
+          </>
+        ),
+        answer: <p>{item.support}</p>,
+      }))}
+      selectedId={selected}
+      visitedIds={visited}
+      onPlayHotspot={audio.play}
+      playingId={audio.playingId}
+      onSelect={(id) => {
+        audio.stop()
+        setSelected(id)
+        setSupport(false)
+        setVisited((old) => (old.includes(id) ? old : [...old, id]))
+      }}
+      answerVisible={support}
+      onAnswerToggle={() => setSupport((open) => !open)}
+      labels={{
+        initial: 'Choose a dot to discuss that detail.',
+        show: 'Phrase support',
+        hide: 'Hide support',
+      }}
+    />
   )
 }
 function PhraseSupport({ phrases }: { phrases: string[] }) {
   return (
-    <S.Support>
-      <summary>Phrase support</summary>
+    <S.Support context="Phrase support">
       <ul>
         {phrases.map((phrase) => (
           <li key={phrase}>{phrase}</li>
@@ -62,8 +79,7 @@ function PhraseSupport({ phrases }: { phrases: string[] }) {
 }
 function Glossary({ entries }: { entries: string[][] }) {
   return (
-    <S.Support>
-      <summary>Word help</summary>
+    <S.Support context="Word help">
       <ul>
         {entries.map(([term, meaning]) => (
           <li key={term}>
@@ -115,16 +131,14 @@ function Conversation() {
           <span aria-hidden="true">{selected === index ? '✓' : ''}</span>
         </S.ConversationButton>
       ))}
-      <S.Support>
-        <summary>Keep it going</summary>
+      <S.Support label="Hint: Keep it going" context="Keep it going">
         <ul>
           {content.p5.followUps.map((question) => (
             <li key={question}>{question}</li>
           ))}
         </ul>
       </S.Support>
-      <S.Support>
-        <summary>Go further</summary>
+      <S.Support label="Hint: Go further" context="Go further">
         <S.Prompt>{content.p5.further}</S.Prompt>
       </S.Support>
       <PhraseSupport phrases={content.p5.support} />
@@ -132,7 +146,7 @@ function Conversation() {
     </S.Stack>
   )
 }
-function PageBody({ id }: { id: string }) {
+function PageBody({ id, active }: { id: string; active: boolean }) {
   if (id === 's1')
     return (
       <S.Stack>
@@ -147,15 +161,23 @@ function PageBody({ id }: { id: string }) {
         <S.Prompt>{content.p1.ask}</S.Prompt>
       </S.Stack>
     )
-  if (id === 's2') return <PictureTalk />
+  if (id === 's2') return <PictureTalk active={active} />
   if (id === 's3')
     return (
       <S.Stack>
         <S.Dialogue>
           {content.p3.lines.map((line, index) => (
             <li key={index}>
-              <b>{line.who === 'ana' ? 'Ana' : 'Kim'}</b>
-              <p>{line.en}</p>
+              <CharacterAvatar
+                size="md"
+                imageUrl={line.who === 'ana' ? ana : kim}
+                initials={line.who === 'ana' ? 'An' : 'Ki'}
+                aria-hidden="true"
+              />
+              <div>
+                <b>{line.who === 'ana' ? 'Ana' : 'Kim'}</b>
+                <p>{line.en}</p>
+              </div>
             </li>
           ))}
         </S.Dialogue>
@@ -180,6 +202,7 @@ function PageBody({ id }: { id: string }) {
   )
 }
 function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
+  const [activeId, setActiveId] = useState(initialPageId ?? 's1')
   const trigger = useRef<HTMLButtonElement>(null)
   const [notes, setNotes] = useState(false)
   const close = () => {
@@ -192,6 +215,7 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
         label="B2 Trial · Work and life"
         previousPageLabel="Back"
         pageId={initialPageId}
+        onPageChange={setActiveId}
         actions={
           <LessonNotesTrigger
             ref={trigger}
@@ -205,6 +229,22 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
           content: (
             <S.Page id={page.id}>
               <S.Content>
+                <S.Activity>
+                  {
+                    (
+                      {
+                        s1: 'Warm up',
+                        s2: 'Picture talk',
+                        s3: 'Dialogue',
+                        s41: 'Preferences',
+                        s42: 'Preferences',
+                        s43: 'Preferences',
+                        s5: 'Conversation',
+                        s6: 'Review',
+                      } as Record<string, string>
+                    )[page.id]
+                  }
+                </S.Activity>
                 {page.id === 's1' ? (
                   <S.Hero id={`${page.id}-title`}>
                     Work and <em>life</em>
@@ -213,7 +253,7 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
                   <S.Title id={`${page.id}-title`}>{page.title}</S.Title>
                 )}
                 <S.Subtitle>{page.subtitle}</S.Subtitle>
-                <PageBody id={page.id} />
+                <PageBody id={page.id} active={activeId === page.id} />
               </S.Content>
             </S.Page>
           ),

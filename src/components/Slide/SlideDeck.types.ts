@@ -3,10 +3,15 @@ import type { ComponentPropsWithRef, ReactNode, RefObject } from 'react'
 export interface SlideGestureOptions {
   viewportRef: RefObject<HTMLDivElement | null>
   activeIdRef: RefObject<string | undefined>
-  movementTargetRef: RefObject<number | undefined>
+  movementTargetRef: RefObject<SlideMovementTarget | undefined>
   idsKey: string
   navigationMode: 'pages' | 'continuous'
   onStep: (direction: 1 | -1) => void
+}
+
+export interface SlideMovementTarget {
+  pageId: string
+  alignEnd: boolean
 }
 
 export interface SlideTouchGesture {

@@ -22,7 +22,7 @@ export function TrialA1Lesson({
         pageIds={order}
         initialPageId={initialPageId}
         label={`${levelLabel} Trial · What do you like?`}
-        pages={() =>
+        pages={(_, activeId) =>
           order.map((id) => {
             if (id === 's1')
               return {
@@ -31,6 +31,7 @@ export function TrialA1Lesson({
                 content: (
                   <SlidePage
                     width="reading"
+                    eyebrow="Warm up"
                     title={content.title}
                     instruction={content.p1.ins}
                   >
@@ -45,10 +46,11 @@ export function TrialA1Lesson({
                 content: (
                   <SlidePage
                     width="expanded"
+                    eyebrow="Picture talk"
                     title={content.p2.title}
                     instruction={content.p2.ins}
                   >
-                    <PictureTalkSection />
+                    <PictureTalkSection active={activeId === 's2'} />
                   </SlidePage>
                 ),
               }
@@ -59,6 +61,7 @@ export function TrialA1Lesson({
                 content: (
                   <SlidePage
                     width="expanded"
+                    eyebrow="Dialogue"
                     title={content.p3.title}
                     instruction={content.p3.ins}
                   >
@@ -74,6 +77,7 @@ export function TrialA1Lesson({
                 content: (
                   <SlidePage
                     width="exercise"
+                    eyebrow="Preferences"
                     title={content.p4.pairs[index]!.q}
                     instruction={content.p4.ins}
                   >
@@ -88,6 +92,7 @@ export function TrialA1Lesson({
                 label: 'Your turn to ask',
                 content: (
                   <SlidePage
+                    eyebrow="Conversation"
                     title="Your turn to ask"
                     instruction={content.p5.ins}
                   >
@@ -101,6 +106,7 @@ export function TrialA1Lesson({
               content: (
                 <SlidePage
                   width="reading"
+                  eyebrow="Review"
                   title="What can you say now?"
                   instruction="Complete com suas ideias e faça uma pergunta à professora."
                 >

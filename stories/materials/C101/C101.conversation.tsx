@@ -2,7 +2,8 @@ import { useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Button } from '../../../src/components/Button/Button'
 import { TextareaInput } from '../../../src/components/Form/TextareaInput'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
+import { ana, raj } from '../shared/characterPortraits'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
@@ -87,6 +88,7 @@ export function YourVersion() {
           {
             id: `${prefix}-teacher-${i}`,
             speaker: swapped ? 'Teacher: Ana' : 'Teacher: Raj',
+            avatarUrl: swapped ? ana : raj,
             side: 'start' as const,
             content: line,
           },
@@ -123,7 +125,7 @@ export function Listening({ active }: { active: boolean }) {
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
-        contact={{ name: 'Raj', status: 'online' }}
+        contact={{ name: 'Raj', avatarUrl: raj, status: 'online' }}
         audio={{
           id: 'c101-raj-message',
           src: audioUrl('c101-raj-message'),

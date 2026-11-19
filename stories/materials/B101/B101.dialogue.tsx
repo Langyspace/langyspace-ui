@@ -1,6 +1,7 @@
+import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { content, ana, kim, toggle } from './B101.data'
@@ -91,8 +92,8 @@ export function GrammarSection() {
             <b>Has she been working late?</b> — Yes, she has.
           </p>
         </S.Explanation>
-        <details>
-          <summary>Duration and verb choice</summary>
+        <LessonHint context="Duration and verb choice">
+          <b>Duration and verb choice</b>
           <S.Explanation>
             <p>
               <b>for</b> + a period: for two weeks.
@@ -108,7 +109,7 @@ export function GrammarSection() {
               <b>I’ve known her for years.</b>
             </p>
           </S.Explanation>
-        </details>
+        </LessonHint>
       </S.Stack>
       <S.Stack>
         <GrammarTable

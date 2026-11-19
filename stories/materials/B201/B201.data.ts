@@ -1,7 +1,6 @@
 import content from './B201.content.json'
-import ana from '../UXLab/assets/bust_ana.png'
-import kim from '../UXLab/assets/bust_kim.png'
-export { content, ana, kim }
+import { ana, kim, raj } from '../shared/characterPortraits'
+export { content, ana, kim, raj }
 export const order = [
   's1',
   's2',

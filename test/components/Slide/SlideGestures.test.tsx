@@ -60,8 +60,7 @@ function fixture({
   const viewport = screen.getByRole('region', { name: 'Aula' })
   const heights = [tall ? 620 : 500, 500, lastTall ? 620 : 500]
   let position = 0,
-    clock = 0,
-    offset = 0
+    clock = 0
   Object.defineProperty(viewport, 'scrollTop', {
     configurable: true,
     get: () => position,
@@ -72,20 +71,25 @@ function fixture({
   })
   Object.defineProperty(viewport, 'scrollHeight', {
     configurable: true,
-    value: heights.reduce((a, b) => a + b),
+    get: () => heights.reduce((a, b) => a + b),
   })
   vi.spyOn(viewport, 'getBoundingClientRect').mockReturnValue(
     new DOMRect(0, 0, 800, 500),
   )
   Array.from(viewport.children).forEach((child, i) => {
-    const start = offset
-    offset += heights[i]!
     vi.spyOn(child, 'getBoundingClientRect').mockImplementation(
-      () => new DOMRect(0, start - position, 800, heights[i]),
+      () =>
+        new DOMRect(
+          0,
+          heights.slice(0, i).reduce((a, b) => a + b, 0) - position,
+          800,
+          heights[i],
+        ),
     )
   })
-  const scrollTo = vi.fn((options: ScrollToOptions) => {
-    position = options.top ?? position
+  const scrollTo = vi.fn((options?: ScrollToOptions | number, y?: number) => {
+    position =
+      typeof options === 'number' ? (y ?? position) : (options?.top ?? position)
   })
   viewport.scrollTo = scrollTo
   fireEvent.scroll(viewport)
@@ -127,6 +131,9 @@ function fixture({
     wheel,
     touch,
     rerender,
+    growFirstPage: (distance: number) => {
+      heights[0] = (heights[0] ?? 0) + distance
+    },
     scroll: (top: number) => {
       position = top
       fireEvent.scroll(viewport)
@@ -275,6 +282,20 @@ describe('SlideDeck local page gestures', () => {
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
   })
 
+  it('unlocks navigation at the live page anchor after earlier content grows', () => {
+    const { wheel, scrollTo, scroll, growFirstPage } = fixture({
+      reduced: false,
+    })
+    scrollTo.mockImplementation(() => {})
+    wheel(120)
+    expect(scrollTo).toHaveBeenCalledOnce()
+    growFirstPage(100)
+    scroll(600)
+    wheel(120, { gap: 200 })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1100, behavior: 'smooth' })
+  })
+
   it('keeps pointer page gestures available over non-scrolling choice buttons', () => {
     const { wheel, scrollTo } = fixture()
     expect(
@@ -335,6 +356,29 @@ describe('SlideDeck local page gestures', () => {
     expect(scrollTo).toHaveBeenCalledOnce()
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
   })
+
+  it('handles the first cancelable scroll move just beyond the measured tap tolerance', () => {
+    const { touch, scrollTo } = fixture()
+    touch('touchstart', [point(300)])
+    expect(touch('touchmove', [point(296)]).defaultPrevented).toBe(false)
+    expect(touch('touchmove', [point(295.4)]).defaultPrevented).toBe(true)
+    touch('touchmove', [point(180)])
+    touch('touchend', [])
+    expect(scrollTo).toHaveBeenCalledOnce()
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+  })
+
+  it.each([6, 8, 12])(
+    'does not commit a page for a %ipx control touch even if a move is delivered',
+    (distance) => {
+      const { touch, scrollTo } = fixture()
+      const button = screen.getByRole('radio')
+      touch('touchstart', [point(300)], button)
+      touch('touchmove', [point(300 - distance)], button)
+      touch('touchend', [], button)
+      expect(scrollTo).not.toHaveBeenCalled()
+    },
+  )
 
   it('leaves touch scrolling inside a nested reading pane native', () => {
     const { touch, scrollTo } = fixture()

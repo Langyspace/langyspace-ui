@@ -19,6 +19,12 @@ interface ScenePage extends BasePage {
     label: string
     xPercent: number
     yPercent: number
+    targetBounds?: {
+      xPercent: number
+      yPercent: number
+      widthPercent: number
+      heightPercent: number
+    }
     prompt: string
     support: string
   }[]

@@ -1,11 +1,19 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 export interface SceneHotspot {
   id: string
+  /** Coordinates in the original image, before object-fit cropping or letterboxing. */
   xPercent: number
   yPercent: number
   label: string
   prompt: ReactNode
   answer?: ReactNode
+  /** Original-image bounds kept clear of the selected callout. */
+  targetBounds?: {
+    xPercent: number
+    yPercent: number
+    widthPercent: number
+    heightPercent: number
+  }
 }
 export interface SceneExplorerProps extends Omit<
   ComponentPropsWithRef<'section'>,
@@ -17,6 +25,9 @@ export interface SceneExplorerProps extends Omit<
   selectedId?: string
   visitedIds: readonly string[]
   onSelect: (id: string) => void
+  /** Consumer owns playback and recording selection. No speech synthesis fallback. */
+  onPlayHotspot?: (id: string) => void
+  playingId?: string
   /** Labeled audio targets over a scene, without the exploration answer panel. */
   presentation?: 'explore' | 'labels'
   answerVisible?: boolean
@@ -28,4 +39,26 @@ export interface SceneExplorerProps extends Omit<
     progress: string
     play: string
   }>
+}
+
+export interface SceneImageGeometry {
+  left: number
+  top: number
+  width: number
+  height: number
+  frameWidth: number
+  frameHeight: number
+}
+export interface SceneTargetRect {
+  left: number
+  top: number
+  width: number
+  height: number
+}
+export interface SceneCalloutLayout {
+  left: number
+  top: number
+  gutter: number
+  placement: 'above' | 'below' | 'left' | 'right'
+  arrow: number
 }

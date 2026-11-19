@@ -3,10 +3,10 @@ import { ThemeProvider } from 'styled-components'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { TextInput } from '../../../src/components/Form/TextInput'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { RevealSequenceCard } from '../../../src/components/InteractiveMaterial/RevealSequenceCard'
-import { content, kim, image, toggle } from './B101.data'
+import { content, kim, leo, image, toggle } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
 import voice from './assets/audio/L.9.mp3'
 import * as S from './B101.styles'
@@ -152,7 +152,7 @@ export function ListeningSection({ active }: { active: boolean }) {
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
-        contact={{ name: 'Leo', status: 'online' }}
+        contact={{ name: 'Leo', avatarUrl: leo, status: 'online' }}
         greeting={{
           text: 'Leo! Kim is back. Where are you??',
           timestamp: '19:02',

@@ -1,4 +1,5 @@
-import { styled } from 'styled-components'
+import { LessonHint } from '../shared/LessonHint'
+import { css, styled } from 'styled-components'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { theme } from '../../../src/foundations/theme/theme'
 import { resolveTheme } from '../../../src/foundations/theme/resolveTheme'
@@ -7,8 +8,12 @@ import { Stack, Surface } from '../shared/Lesson.styles'
 export const Greeting = styled(ChoiceCard)`
   gap: ${theme.spacing[4]};
   padding: ${theme.spacing[2]};
-  border: 0;
-  background: transparent;
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
+  background: ${(p) => resolveSlideTheme(p).surface};
+  &:hover:not(:disabled),
+  &[aria-expanded='true'] {
+    border-color: ${(p) => resolveSlideTheme(p).accent};
+  }
   b {
     font-size: clamp(1.25rem, 3.6cqh, 1.75rem);
     line-height: 1.2;
@@ -30,13 +35,6 @@ export const GreetingText = styled(Stack)`
   }
 `
 export const SceneFit = styled.div`
-  button {
-    min-width: ${theme.spacing[12]};
-    min-height: ${theme.spacing[12]};
-    background: ${(p) => resolveSlideTheme(p).inverseCanvas};
-    color: ${(p) => resolveSlideTheme(p).inverseForeground};
-  }
-
   width: 100%;
   max-width: 100%;
   margin-inline: auto;
@@ -85,8 +83,8 @@ export const Strip = styled.div`
   span {
     padding: ${theme.spacing[2]} ${theme.spacing[4]};
     border-radius: ${theme.radius.pill};
-    background: ${(p) => resolveSlideTheme(p).inverseCanvas};
-    color: ${(p) => resolveSlideTheme(p).inverseForeground};
+    background: transparent;
+    color: ${(p) => resolveSlideTheme(p).muted};
     font-weight: ${theme.typography.fontWeight.semibold};
     font-size: clamp(0.875rem, 2.2cqh, 1.0625rem);
   }
@@ -107,7 +105,22 @@ export const Pair = styled.div`
     grid-template-columns: minmax(0, 1fr);
   }
 `
+const choiceAffordance = css`
+  border-color: ${(p) => resolveTheme(p).semantic?.border.strong ?? theme.semantic.border.strong};
+  &&:hover:not(:disabled) {
+    border-color: ${(p) => resolveSlideTheme(p).accent};
+  }
+  &&[aria-pressed='true'] {
+    border: 2px solid ${(p) => resolveSlideTheme(p).accent};
+    background: ${(p) => `color-mix(in srgb, ${resolveSlideTheme(p).accent} 8%, ${resolveSlideTheme(p).surface})`};
+  }
+  &&:focus-visible {
+    outline: 3px solid ${(p) => resolveSlideTheme(p).accent};
+    outline-offset: ${theme.spacing[1]};
+  }
+`
 export const Preference = styled(ChoiceCard)`
+  ${choiceAffordance}
   position: relative;
   display: flex;
   flex-direction: column;
@@ -150,6 +163,7 @@ export const Questions = styled.div`
   }
 `
 export const Talk = styled(ChoiceCard)`
+  ${choiceAffordance}
   min-height: ${theme.spacing[12]};
   b {
     flex: 1;
@@ -184,20 +198,6 @@ export const SupportTitle = styled.h3`
   text-transform: uppercase;
 `
 
-export const Help = styled.details`
-  font-size: ${theme.typography.fontSize.md};
-  color: ${(p) => resolveSlideTheme(p).foreground};
-  summary {
-    cursor: pointer;
-    padding: ${theme.spacing[2]};
-    font-weight: ${theme.typography.fontWeight.semibold};
-  }
-  summary:focus-visible {
-    outline: 3px solid currentColor;
-    outline-offset: 2px;
-  }
-  p {
-    padding: ${theme.spacing[2]};
-    margin: 0;
-  }
+export const Help = styled(LessonHint)`
+  min-width: 0;
 `

@@ -28,41 +28,62 @@
   },
   "p2": {
     "title": "A day in the park",
-    "ins": "Nomeie as imagens e conte do que você gosta.",
+    "ins": "Toque nos pontos para descobrir os nomes. Depois, conte do que você gosta.",
     "bg": "park",
     "items": [
       {
         "e": "🎧",
         "en": "music",
-        "x": 42,
-        "y": 16
+        "x": 23,
+        "y": 20,
+        "targetBounds": {
+          "xPercent": 18,
+          "yPercent": 4,
+          "widthPercent": 20,
+          "heightPercent": 28
+        }
       },
       {
         "e": "⚽",
-        "en": "soccer",
-        "x": 84,
-        "y": 90
+        "en": "a soccer ball",
+        "x": 64,
+        "y": 88,
+        "targetBounds": {
+          "xPercent": 57,
+          "yPercent": 79,
+          "widthPercent": 14,
+          "heightPercent": 19
+        }
       },
       {
         "e": "📖",
         "en": "a book",
-        "x": 66,
-        "y": 40
+        "x": 61,
+        "y": 57,
+        "targetBounds": {
+          "xPercent": 50,
+          "yPercent": 51,
+          "widthPercent": 21,
+          "heightPercent": 11
+        }
       },
       {
         "e": "🐶",
         "en": "a dog",
-        "x": 86,
-        "y": 65
+        "x": 85,
+        "y": 61,
+        "targetBounds": {
+          "xPercent": 73,
+          "yPercent": 38,
+          "widthPercent": 26,
+          "heightPercent": 46
+        }
       }
     ],
     "support": [
       {
-        "h": "Na imagem",
-        "lines": [
-          ["What’s this?", "It’s a …"],
-          ["Is it a dog?", "Yes, it is. · No, it isn’t."]
-        ]
+        "h": "Depois de escolher um ponto",
+        "lines": [["Do you like it?", "Yes, I do. · No, I don’t."]]
       },
       {
         "h": "Sobre você",

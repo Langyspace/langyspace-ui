@@ -54,8 +54,9 @@ function layout() {
       () => new DOMRect(0, start - position, 1440, heights[i]),
     )
   })
-  const scrollTo = vi.fn((options: ScrollToOptions) => {
-    position = options.top ?? position
+  const scrollTo = vi.fn((options?: ScrollToOptions | number, y?: number) => {
+    position =
+      typeof options === 'number' ? (y ?? position) : (options?.top ?? position)
   })
   viewport.scrollTo = scrollTo
   const scroll = (next: number) => {

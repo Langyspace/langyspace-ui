@@ -1,11 +1,11 @@
+import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { toggleId } from '../shared/lessonState'
-import ana from '../UXLab/assets/bust_ana.png'
-import kim from '../UXLab/assets/bust_kim.png'
+import { ana, kim } from '../shared/characterPortraits'
 import content from './C101.content.json'
 import type { C101Audio } from './C101.types'
 import * as S from './C101.styles'
@@ -40,14 +40,14 @@ export function Expressions() {
           </S.Disclosure>
         ))}
       </S.ExpressionList>
-      <S.Disclosure>
-        <summary>Language to watch</summary>
+      <LessonHint context="Language to watch">
+        <b>Language to watch</b>
         <p>
           <b>Feedback</b> is uncountable: some feedback. <b>Take it on board</b>{' '}
           means consider it and use it. <b>It’s worth + -ing</b>: It’s worth
           practicing.
         </p>
-      </S.Disclosure>
+      </LessonHint>
       <S.Surface>
         <b>Has anything you said or wrote ever come across as harsh?</b>
         <p>
@@ -187,14 +187,14 @@ export function Prosody({ index, audio }: { index: number; audio: C101Audio }) {
           and final pitch.
         </p>
       </S.Surface>
-      <S.Disclosure>
-        <summary>How does context change the message?</summary>
+      <LessonHint context="How does context change the message?">
+        <b>How does context change the message?</b>
         <p>
           A lighter onset and fall-rise can sound tentative; strong stress and a
           final fall can sound decisive. These are tendencies, not rules:
           context and the speaker’s relationship matter.
         </p>
-      </S.Disclosure>
+      </LessonHint>
     </S.Stack>
   )
 }
@@ -263,10 +263,10 @@ export function Grammar() {
       />
       <S.ExpressionList>
         {content.grammarNotes.map((x) => (
-          <S.Disclosure key={x.title}>
-            <summary>{x.title}</summary>
+          <LessonHint key={x.title} context={x.title}>
+            <b>{x.title}</b>
             <p>{x.text}</p>
-          </S.Disclosure>
+          </LessonHint>
         ))}
       </S.ExpressionList>
       <S.Surface>

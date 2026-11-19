@@ -1,8 +1,11 @@
 import { Fragment, useState } from 'react'
 import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
+import { ana, kim } from '../shared/characterPortraits'
 import { SourceQuestions } from '../shared/LessonPractice'
+import type { TrialA1PictureTalkProps } from './TrialA1.types'
+import { useTrialA1Audio } from './useTrialA1Audio'
 import { content, preferenceImages, pictures } from './TrialA1.data'
 import * as S from '../shared/Lesson.styles'
 import * as T from './TrialA1.styles'
@@ -22,8 +25,7 @@ export function GreetingSection() {
               {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
             </T.GreetingText>
           </T.Greeting>
-          <T.Help>
-            <summary>Apoio</summary>
+          <T.Help context={q.q}>
             <p>{q.a}</p>
           </T.Help>
         </T.Support>
@@ -31,7 +33,12 @@ export function GreetingSection() {
     </S.Stack>
   )
 }
-export function PictureTalkSection() {
+export function PictureTalkSection({
+  onPlay,
+  playingId,
+  active = true,
+}: TrialA1PictureTalkProps = {}) {
+  const audio = useTrialA1Audio(active)
   const [selected, setSelected] = useState<string>(),
     [visited, setVisited] = useState<string[]>([])
   return (
@@ -41,17 +48,28 @@ export function PictureTalkSection() {
           imageUrl={pictures.park}
           imageAlt="Ana ouve música no parque; um livro, uma bola de futebol e um cachorro estão inteiros e separados."
           presentation="explore"
-          labels={{ initial: 'O que você vê?', progress: 'imagens exploradas' }}
+          onPlayHotspot={onPlay ?? audio.play}
+          playingId={playingId ?? audio.playingId}
+          labels={{ initial: 'Escolha um ponto para ver o nome.' }}
           hotspots={content.p2.items.map((p, i) => ({
             id: String(i),
             label: p.en,
-            prompt: null,
+            prompt: (
+              <>
+                <span>{i === 0 ? 'Do you like music?' : 'What’s this?'}</span>
+                {selected === String(i) && audio.error ? (
+                  <span role="status">{audio.error}</span>
+                ) : null}
+              </>
+            ),
+            targetBounds: p.targetBounds,
             xPercent: p.x,
             yPercent: p.y,
           }))}
           selectedId={selected}
           visitedIds={visited}
           onSelect={(id) => {
+            audio.stop()
             setSelected(selected === id ? undefined : id)
             setVisited((old) => (old.includes(id) ? old : [...old, id]))
           }}
@@ -64,8 +82,7 @@ export function PictureTalkSection() {
             {group.lines.map(([q, a]) => (
               <Fragment key={q}>
                 <p>{q}</p>
-                <T.Help>
-                  <summary>Apoio</summary>
+                <T.Help context={q}>
                   <p>{a}</p>
                 </T.Help>
               </Fragment>
@@ -85,6 +102,7 @@ export function ListenTalkSection() {
         lines={content.p3.lines.map((l, i) => ({
           id: String(i),
           speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+          avatarUrl: l.who === 'kim' ? kim : ana,
           side: l.who === 'kim' ? 'start' : 'end',
           content: l.en,
           translation: l.g,
@@ -97,8 +115,7 @@ export function ListenTalkSection() {
         {content.p3.your.map(([question, hint]) => (
           <Fragment key={question}>
             <p>{question}</p>
-            <T.Help>
-              <summary>Apoio</summary>
+            <T.Help context={question}>
               <p>{hint}</p>
             </T.Help>
           </Fragment>
@@ -136,11 +153,13 @@ export function PreferenceSection({
           </Fragment>
         ))}
       </T.Pair>
-      <T.Strip>
-        {content.p4.strip.map((text) => (
-          <span key={text}>{text}</span>
-        ))}
-      </T.Strip>
+      <T.Help context={pair.q}>
+        <T.Strip>
+          {content.p4.strip.map((text) => (
+            <span key={text}>{text}</span>
+          ))}
+        </T.Strip>
+      </T.Help>
     </S.Stack>
   )
 }
@@ -163,8 +182,7 @@ export function ConversationSection() {
           </T.Talk>
         ))}
       </T.Questions>
-      <T.Help>
-        <summary>Apoio para continuar</summary>
+      <T.Help context="Continue the conversation">
         <T.Strip>
           {content.p5.strip.map((t) => (
             <span key={t}>{t}</span>
