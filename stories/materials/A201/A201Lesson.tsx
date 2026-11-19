@@ -1,3 +1,4 @@
+import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { LessonShell } from '../shared/LessonShell'
 import { SourceQuestions } from '../shared/LessonPractice'
@@ -110,6 +111,14 @@ export function A201Lesson({ initialPageId }: LessonProps) {
                     )
                   }
                   instruction={instruction}
+                  tools={
+                    page === 6 ? (
+                      <RecordedDialoguePlayback
+                        conversationId="A201:s6"
+                        active={activeId === section.id}
+                      />
+                    ) : undefined
+                  }
                 >
                   {body}
                 </A.Page>

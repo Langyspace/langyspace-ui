@@ -1,3 +1,4 @@
+import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { B201Shell } from './B201Shell'
@@ -155,6 +156,12 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   width="conversation"
                   density="dense"
                   title={`How was New York? (${part + 1}/2)`}
+                  tools={
+                    <RecordedDialoguePlayback
+                      conversationId={id === 's6' ? 'B201:s6' : 'B201:s62'}
+                      active={activeId === id}
+                    />
+                  }
                   instruction={
                     part === 0
                       ? 'Ana is back in São Paulo. Kim asks about her trip. Read with your teacher.'

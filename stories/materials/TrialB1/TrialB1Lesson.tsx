@@ -1,3 +1,4 @@
+import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -106,6 +107,10 @@ function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
     return (
       <S.Stack>
         <S.Tools>
+          <RecordedDialoguePlayback
+            conversationId="TrialB1:s3"
+            active={active && page.id === 's3'}
+          />
           <Button
             variant="secondary"
             aria-pressed={learner === 'kim'}

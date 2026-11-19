@@ -1,3 +1,4 @@
+import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell } from '../shared/LessonShell'
@@ -63,6 +64,12 @@ export function TrialA1Lesson({
                     width="expanded"
                     eyebrow="Dialogue"
                     title={content.p3.title}
+                    tools={
+                      <RecordedDialoguePlayback
+                        conversationId="TrialA1:s3"
+                        active={activeId === 's3'}
+                      />
+                    }
                     instruction={content.p3.ins}
                   >
                     <ListenTalkSection />

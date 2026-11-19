@@ -1,3 +1,4 @@
+import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { useRef, useState } from 'react'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
@@ -165,6 +166,7 @@ function PageBody({ id, active }: { id: string; active: boolean }) {
   if (id === 's3')
     return (
       <S.Stack>
+        <RecordedDialoguePlayback conversationId="TrialB2:s3" active={active} />
         <S.Dialogue>
           {content.p3.lines.map((line, index) => (
             <li key={index}>
