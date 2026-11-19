@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import * as Styled from './VocabularyGrid.styles'
+import { formatVocabularyHint } from './VocabularyGrid.utils'
 import type { VocabularyGridProps } from './VocabularyGrid.types'
 export function VocabularyGrid({
   items,
@@ -31,6 +32,13 @@ export function VocabularyGrid({
           showAll ||
           revealedIds.includes(item.id) ||
           (revealOnHover && hovered === item.id)
+        const showLabel =
+          revealVariant === 'overlay'
+            ? revealed
+            : activeId !== undefined
+              ? activeId === item.id && revealed
+              : hovered === item.id && (revealOnHover || revealed)
+        const hint = item.initialHint ?? formatVocabularyHint(item.word)
         return (
           <Styled.Word
             $completed={markRevealed && revealedIds.includes(item.id)}
@@ -89,23 +97,18 @@ export function VocabularyGrid({
               </Styled.QuestionMark>
             ) : null}
             {revealVariant === 'tooltip' &&
+            !showLabel &&
             (showAll ||
               (activeId === undefined && revealedIds.includes(item.id)) ||
               (showInitial && !revealed)) ? (
               <Styled.WordCaption>
                 {showAll || revealedIds.includes(item.id)
                   ? item.word
-                  : (item.initialHint ?? item.word[0])}
+                  : hint}
               </Styled.WordCaption>
             ) : null}
-            {(
-              revealVariant === 'overlay'
-                ? revealed
-                : activeId !== undefined
-                  ? activeId === item.id && revealed
-                  : hovered === item.id && (revealOnHover || revealed)
-            ) ? (
-              <Styled.WordLabel $floating={revealVariant === 'tooltip'}>
+            {showLabel ? (
+              <Styled.WordLabel>
                 <b>{item.word}</b>
                 <small>{item.translation}</small>
               </Styled.WordLabel>

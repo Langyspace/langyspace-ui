@@ -5,6 +5,9 @@ import { Button } from '../../../src/components/Button/Button'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { regularVocabularyMaxWidth } from '../../../src/components/Exercise/VocabularyGrid.styles'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { Content as SlideContent } from '../../../src/components/Slide/SlidePage.styles'
 export const Stage = styled.div`
   height: 100dvh;
   min-width: 0;
@@ -76,6 +79,12 @@ export const GoalStar = styled.span`
   flex-shrink: 0;
   margin-top: 2px;
   color: ${theme.slides.indicator};
+`
+export const VocabularyPage = styled(SlidePage)`
+  ${SlideContent} {
+    max-width: ${regularVocabularyMaxWidth()};
+    text-align: left;
+  }
 `
 export const IntroVocabulary = styled.div`
   padding-top: ${theme.exercises.vocabularyTopSpace};

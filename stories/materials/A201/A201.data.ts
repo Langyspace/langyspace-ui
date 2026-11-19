@@ -1,3 +1,4 @@
+import { formatVocabularyHint } from '../../../src/components/Exercise/VocabularyGrid.utils'
 import content from './A201.content.json'
 import working from './assets/a201-copy-working.webp'
 import walking from './assets/a201-copy-walking.webp'
@@ -19,7 +20,7 @@ export const vocabulary = [content.vocabulary1, content.vocabulary2].map(
       id: card.asset,
       word: card.reveal,
       translation: card.pt,
-      initialHint: card.reveal.replace('I’m ', '')[0]?.toUpperCase(),
+      initialHint: formatVocabularyHint(card.reveal, ['I’m']),
       imageUrl: images[card.asset] ?? '',
       imageAlt: card.pt,
     })),

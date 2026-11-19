@@ -1,7 +1,12 @@
-import { css, styled } from 'styled-components'
+import { css, keyframes, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+
+/** Shared by the scene grid and an introduction aligned to that same grid. */
+export const regularVocabularyMaxWidth = (columns = 3) =>
+  `calc(${theme.exercises.vocabularyRegularHeight} * ${columns * 1.5} + ${theme.spacing[3]} * ${columns - 1})`
+
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
 })<{ $columns?: 2 | 3 | 4; $regularScene?: boolean }>`
@@ -12,11 +17,7 @@ export const Vocabulary = styled.div.withConfig({
     p.$regularScene
       ? css`
           width: 100%;
-          max-width: calc(
-            ${theme.exercises.vocabularyRegularHeight} *
-              ${(p.$columns ?? 3) * 1.5} + ${theme.spacing[3]} *
-              ${(p.$columns ?? 3) - 1}
-          );
+          max-width: ${regularVocabularyMaxWidth(p.$columns)};
           margin-inline: auto;
         `
       : undefined}
@@ -88,37 +89,68 @@ export const WordBadge = styled.span`
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
 `
-export const WordCaption = styled.span`
-  position: absolute;
-  bottom: ${theme.spacing[1]};
-  left: ${theme.spacing[1]};
-  right: ${theme.spacing[1]};
-  border-radius: ${theme.radius.md};
-  padding: ${theme.spacing[1]};
-  background: ${(p) => recipe(p).surface};
-  color: ${(p) => recipe(p).foreground};
-  font-family: ${(p) => recipe(p).displayFontFamily};
-  font-weight: ${theme.typography.fontWeight.bold};
-  font-size: ${theme.typography.fontSize.md};
-  line-height: 1.1;
+// Exact label treatment recovered from Margarida's 19/11 Vocabulary edit.
+const labelEnter = keyframes`
+  from {
+    opacity: 0;
+    transform: translate(-50%, 4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
 `
-export const WordLabel = styled.span<{ $floating: boolean }>`
+const vocabularyLabel = css`
   position: absolute;
-  bottom: ${(p) => (p.$floating ? `calc(100% - ${theme.spacing[2]})` : theme.spacing[1])};
-  left: ${theme.spacing[1]};
-  right: ${theme.spacing[1]};
-  padding: ${theme.spacing[1]};
-  border-radius: ${theme.radius.md};
-  background: ${(p) => (p.$floating ? recipe(p).inverseCanvas : recipe(p).surface)};
-  color: ${(p) => (p.$floating ? recipe(p).inverseForeground : recipe(p).foreground)};
-  z-index: 1;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  top: auto;
+  bottom: 10px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 20px);
+  padding: 6px 14px;
+  border-radius: ${theme.radius.pill};
+  background: color-mix(in srgb, ${theme.colors.palette.white} 82%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: ${theme.colors.palette.extended.ink};
+  border: 1px solid color-mix(in srgb, ${theme.colors.palette.white} 70%, transparent);
+  box-shadow: 0 6px 18px color-mix(in srgb, ${theme.colors.palette.black} 14%, transparent);
   text-align: center;
-  b,
-  small {
+  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-size: 15px;
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  z-index: 1;
+  animation: ${labelEnter} 0.22s ease-out both;
+  @media (max-width: 600px) {
+    bottom: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+`
+export const WordCaption = styled.span`
+  ${vocabularyLabel}
+`
+export const WordLabel = styled.span`
+  ${vocabularyLabel}
+  b {
     display: block;
+    font-size: ${theme.typography.fontSize.md};
+    font-weight: ${theme.typography.fontWeight.bold};
+    color: ${theme.colors.palette.extended.ink};
   }
   small {
-    color: ${(p) => (p.$floating ? recipe(p).inverseMuted : recipe(p).muted)};
+    display: none;
+  }
+  @media (max-width: 600px) {
+    b {
+      font-size: 13.5px;
+    }
   }
 `

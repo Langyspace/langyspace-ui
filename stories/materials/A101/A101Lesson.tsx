@@ -51,11 +51,11 @@ function A101LessonContent({
         id,
         label: 'Vocabulary · Guess the word',
         content: (
-          <SlidePage
+          <Styled.VocabularyPage
             width="expanded"
-            eyebrow="A1 · Lesson 01 · Feelings"
+            eyebrow="A1 LESSON 01"
             title="Introduce yourself"
-            instruction="Observe as cenas, diga como cada pessoa está e clique para conferir."
+            instruction="Observe as imagens e tente adivinhar as palavras."
           >
             <Styled.IntroVocabulary>
               <VocabularySection
@@ -64,7 +64,7 @@ function A101LessonContent({
                 speak={speech.speak}
               />
             </Styled.IntroVocabulary>
-          </SlidePage>
+          </Styled.VocabularyPage>
         ),
       }
     if ((number >= 21 && number <= 26) || (number >= 51 && number <= 56)) {
