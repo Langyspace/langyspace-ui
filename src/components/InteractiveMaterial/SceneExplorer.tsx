@@ -130,7 +130,7 @@ export function SceneExplorer({
   const Frame = presentation === 'labels' ? Styled.LabelScene : Styled.Scene
   return (
     <Styled.Root as="section" {...props}>
-      {presentation === 'explore' && !selected ? (
+      {presentation === 'explore' && !selected && text.initial ? (
         <Styled.Instruction>{text.initial}</Styled.Instruction>
       ) : null}
       <Frame

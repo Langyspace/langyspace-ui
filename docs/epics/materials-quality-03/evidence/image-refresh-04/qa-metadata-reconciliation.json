@@ -1,0 +1,32 @@
+[
+  {
+    "id": "a101-scene-happy-mia-v2",
+    "oldEvidenceSha256": "44a6658414d832a8728bca98d2c2977ae73214b1b7d6c74402ed1e7f98dfa514",
+    "currentEvidenceSha256": "56cef5466fe75658174ab0a378e2e0431fc260601608106eef501d9f2c8ff5f2",
+    "oldBytesReconstructedExactly": true,
+    "fieldsChanged": ["state", "bitmapQa"],
+    "stateBefore": "generated_pending_visual_qa",
+    "stateAfter": "bitmap_qa_pass_human_review_pending",
+    "bitmapPromptOriginalUnchanged": true
+  },
+  {
+    "id": "a101-scene-germany-lukas-v2",
+    "oldEvidenceSha256": "dd8c8bc89e3f7b8d4ddf0efe38081c91da3778d76607238b90bc9cee2068eec3",
+    "currentEvidenceSha256": "3ede69f82115ad60528d05735b6acde6e364cd2f2eaaa701a4c8f8efe3e99cf7",
+    "oldBytesReconstructedExactly": true,
+    "fieldsChanged": ["state", "bitmapQa"],
+    "stateBefore": "generated_pending_visual_qa",
+    "stateAfter": "bitmap_qa_pass_human_review_pending",
+    "bitmapPromptOriginalUnchanged": true
+  },
+  {
+    "id": "a101-scene-angry-leo-v2",
+    "oldEvidenceSha256": "61868ed2606434d5f3a0639c6827abc9537a379855df54611a0f45af22cf4d0c",
+    "currentEvidenceSha256": "a57da5f387cbfd1f40595606cab0eb920b7941282d3c065d7c07e20a42ab2117",
+    "oldBytesReconstructedExactly": true,
+    "fieldsChanged": ["state", "bitmapQa"],
+    "stateBefore": "generated_pending_visual_qa",
+    "stateAfter": "bitmap_qa_pass_human_review_pending",
+    "bitmapPromptOriginalUnchanged": true
+  }
+]

@@ -106,6 +106,25 @@ describe('SceneExplorer selected feedback', () => {
       prompt: 'What’s this?',
     },
   ]
+  it('lets a host subtitle own the instruction without an empty paragraph', () => {
+    const select = vi.fn()
+    const props = {
+      imageUrl: '/park.webp',
+      imageAlt: 'Park',
+      hotspots,
+      visitedIds: [],
+      onSelect: select,
+    }
+    const { rerender } = render(<SceneExplorer {...props} />)
+    expect(screen.getByText('Tap a dot to explore')).toBeVisible()
+    rerender(<SceneExplorer {...props} labels={{ initial: '' }} />)
+    expect(screen.queryByText('Tap a dot to explore')).not.toBeInTheDocument()
+    expect(
+      screen.getByRole('img').closest('section')?.querySelector('p'),
+    ).toBeNull()
+    fireEvent.click(screen.getByRole('button', { name: 'a book' }))
+    expect(select).toHaveBeenCalledWith('book')
+  })
   it('keeps the name, question and replay together inside the image frame', async () => {
     const user = userEvent.setup(),
       play = vi.fn(),

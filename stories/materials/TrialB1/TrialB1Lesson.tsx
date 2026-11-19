@@ -95,7 +95,7 @@ function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
         answerVisible={support}
         onAnswerToggle={() => setSupport((open) => !open)}
         labels={{
-          initial: 'Choose a detail',
+          initial: '',
           show: 'Show support',
           hide: 'Hide support',
           progress: 'explored',

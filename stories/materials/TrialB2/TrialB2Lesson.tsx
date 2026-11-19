@@ -59,7 +59,7 @@ function PictureTalk({ active }: { active: boolean }) {
       answerVisible={support}
       onAnswerToggle={() => setSupport((open) => !open)}
       labels={{
-        initial: 'Choose a dot to discuss that detail.',
+        initial: '',
         show: 'Phrase support',
         hide: 'Hide support',
       }}

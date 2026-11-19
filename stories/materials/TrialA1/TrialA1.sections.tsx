@@ -50,7 +50,7 @@ export function PictureTalkSection({
           presentation="explore"
           onPlayHotspot={onPlay ?? audio.play}
           playingId={playingId ?? audio.playingId}
-          labels={{ initial: 'Escolha um ponto para ver o nome.' }}
+          labels={{ initial: '' }}
           hotspots={content.p2.items.map((p, i) => ({
             id: String(i),
             label: p.en,

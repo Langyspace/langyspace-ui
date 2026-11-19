@@ -1,6 +1,6 @@
 # Progress
 
-All frozen specialist deltas were integrated inside exact reservations. The final source is ready for a scoped local commit; no coherent quality push, neutral build, adoption or remote write has occurred. Existing PR45/154 remain draft.
+All frozen specialist deltas were integrated inside exact reservations. The initial combined source was committed as a604 and two portable pilots were verified. The final33image/copy source is now ready for its scoped clean freeze; no coherent quality push, neutral build, adoption or remote write has occurred. Existing PR45/154 remain draft.
 
 The shared page contract passed23 gesture and16 keyboard tests. Independent review closed the touch P2: pan capture and page commitment are separate, real2–12px taps preserve native clicks, and two raw touch drivers each exposed the full tall tail before leaving in7 gestures. Their effective distances were120/135px. A separate logical-anchor guard fixes stale animation pixels after fonts/Hint/layout shifts. CSS sentinel alternative failed privately and was not adopted.
 
@@ -10,6 +10,10 @@ Four original A1 label recordings, six B1/B2 labels and six UXLab labels were co
 
 UXLab source now uses the same approved1536×1024 PNG as the native #cena, with explicit natural points and conservative full-object bounds. JPEG/HS history and other54demos are preserved; only SceneDemo loses TTS/autoplay.48After states passed (6targets×A1/C2×2widths×Hint open/closed), with zero intersection against all6objects and every balloon inside the viewport.48Before counterparts use immutable a609source. Six native clips, explicit replay and stop on level change passed; existing UXLab29unit cases passed. UIUX independently reconciled the native candidate with the same map and48/48clear states.
 
-Current served staging remains the prior verifieda0a4fccb catalog delivery, which includes the asynchronously approved97763e04. A fresh custom-domain manifest read returned200 and the expected21120471hash/sourcea609. No rollback publication was made. Next: freeze clean combined source, receive exact pilot/export/original/Lab grants, then prove resource closure before scaling to8existing originals and existingLab.
+Current served staging remains the prior verifieda0a4fccb catalog delivery, which includes the asynchronously approved97763e04. A fresh custom-domain manifest read returned200 and the expected21120471hash/sourcea609. No rollback publication was made. The exact delivery reservations are now granted: final source/crop gate, eight immutable exports with closure/size/native renders, CAS writes to the same originals and mirrors by the sole Lab writer. The official neutral build may run after eight exports are verified, independently of remote readback. Teacher apply requires its exact operation plan/source/manifest pin; staging additionally requires all original/mirror readbacks/previews.
+
+All33final image destinations are accepted and byte verified. The source consumes18A101 images (including3PNGicons),12B101 scenes, newAna/Leo square portraits and dedicated C1v2cover. Mia/Lukas/LeoA1 and bikeB1 use their acceptedv2; rejectedC1v1 was never copied. Source consumer QA includes90paired states at1440/390 and6actualTeacher16:10crop comparisons; the image-only before fixture and unchanged thumbnail crop are labeled explicitly. All33bitmap/prompt/original hashes and sole catalog-field change are frozen. Source85unit/API/type/lint/gesture/audio proofs remain valid; six changedTS/TSX are byte-identical to that passing input.
+
+Current task after this source freeze: export the eight actual React compositions from one clean fullSHA. Execution receipts and next gates remain in coordination status/integracao.json and the immutable portable/neutral outputs. No Teacher adoption or new staging publication has happened for this quality revision.
 
 Visual gate review: pending human

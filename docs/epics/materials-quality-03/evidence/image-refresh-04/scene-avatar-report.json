@@ -1,0 +1,1716 @@
+{
+  "phase": "after",
+  "driver": "Local source preview; source-level media/copy delta, not staging or final portable export",
+  "results": [
+    {
+      "kind": "scene",
+      "material": "trial-a1",
+      "width": 1440,
+      "instruction": "Toque nos pontos para descobrir os nomes. Depois, conte do que você gosta.",
+      "instructionRows": [],
+      "callout": {
+        "label": "music",
+        "left": 239.953125,
+        "right": 416.140625,
+        "top": 443.109375,
+        "bottom": 541.109375,
+        "inside": true
+      }
+    },
+    {
+      "kind": "scene",
+      "material": "trial-b1",
+      "width": 1440,
+      "instruction": "Choose a dot, describe that detail and decide what happens next.",
+      "instructionRows": [],
+      "callout": {
+        "label": "The flat tire",
+        "left": 487.359375,
+        "right": 791.359375,
+        "top": 394.78125,
+        "bottom": 564.78125,
+        "inside": true
+      }
+    },
+    {
+      "kind": "scene",
+      "material": "trial-b2",
+      "width": 1440,
+      "instruction": "Choose a dot, discuss that detail and compare it with your day.",
+      "instructionRows": [],
+      "callout": {
+        "label": "The laptop",
+        "left": 728,
+        "right": 1032,
+        "top": 245.328125,
+        "bottom": 415.328125,
+        "inside": true
+      }
+    },
+    {
+      "kind": "avatar",
+      "material": "a1-01",
+      "id": "s6",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 385.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 513.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 641.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "a1-01",
+      "id": "s8",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 387.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 515.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 643.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s6",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 403.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 531.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 659.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s62",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 435.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 1127,
+            "top": 563.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s33",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/leo-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 566.796875,
+            "top": 533.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s9",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/leo-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 228.796875,
+            "top": 371.34375
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s6",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 432.15625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 508.15625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 607.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s62",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 432.15625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 508.15625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1169,
+            "top": 607.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s8",
+      "width": 1440,
+      "swapped": true,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 241,
+            "top": 484.609375
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s6",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 440.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 532.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 624.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s62",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 394.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 486.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 578.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 1209,
+            "top": 670.75
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s8",
+      "width": 1440,
+      "swapped": true,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 161,
+            "top": 391.953125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 161,
+            "top": 467.953125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 161,
+            "top": 543.953125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 161,
+            "top": 619.953125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "trial-a1",
+      "id": "s3",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 736.46875,
+            "top": 437.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 42,
+            "height": 42,
+            "left": 736.46875,
+            "top": 565.75
+          },
+          "parent": {
+            "width": 44,
+            "height": 44,
+            "contentWidth": 42,
+            "contentHeight": 42
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "trial-b2",
+      "id": "s3",
+      "width": 1440,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 247.125,
+            "top": 345.921875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 657.90625,
+            "top": 575.109375
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 248.25,
+            "top": 750.296875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "scene",
+      "material": "trial-a1",
+      "width": 390,
+      "instruction": "Toque nos pontos para descobrir os nomes. Depois, conte do que você gosta.",
+      "instructionRows": [],
+      "callout": {
+        "label": "music",
+        "left": 24,
+        "right": 200.1875,
+        "top": 169.28125,
+        "bottom": 267.28125,
+        "inside": true
+      }
+    },
+    {
+      "kind": "scene",
+      "material": "trial-b1",
+      "width": 390,
+      "instruction": "Choose a dot, describe that detail and decide what happens next.",
+      "instructionRows": [],
+      "callout": {
+        "label": "The flat tire",
+        "left": 24,
+        "right": 328,
+        "top": 273.390625,
+        "bottom": 443.390625,
+        "inside": true
+      }
+    },
+    {
+      "kind": "scene",
+      "material": "trial-b2",
+      "width": 390,
+      "instruction": "Choose a dot, discuss that detail and compare it with your day.",
+      "instructionRows": [],
+      "callout": {
+        "label": "The laptop",
+        "left": 62,
+        "right": 366,
+        "top": 419.796875,
+        "bottom": 589.796875,
+        "inside": true
+      }
+    },
+    {
+      "kind": "avatar",
+      "material": "a1-01",
+      "id": "s6",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 352.828125
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 490.390625
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 627.953125
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "a1-01",
+      "id": "s8",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 321.1875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 477.96875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 634.75
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s6",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 354.671875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 492.234375
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 674.578125
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s62",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 400.265625
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 605
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s33",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/leo-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 322,
+            "top": 371.921875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "contain",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b1-01",
+      "id": "s9",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/leo-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 128.796875,
+            "top": 224.109375
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s6",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 309.65625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 447.21875
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 629.5625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s62",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 322.25
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 459.8125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 619.765625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "b2-01",
+      "id": "s8",
+      "width": 390,
+      "swapped": true,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 17,
+            "top": 349.46875
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s6",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 344.515625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 491.6875
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 629.25
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s62",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 229.359375
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 366.921875
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 549.265625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 343,
+            "top": 731.609375
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "c1-01",
+      "id": "s8",
+      "width": 390,
+      "swapped": true,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 17,
+            "top": 253.953125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 17,
+            "top": 391.515625
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 17,
+            "top": 529.078125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 30,
+            "height": 30,
+            "left": 17,
+            "top": 689.03125
+          },
+          "parent": {
+            "width": 32,
+            "height": 32,
+            "contentWidth": 30,
+            "contentHeight": 30
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "trial-a1",
+      "id": "s3",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 234.734375
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 335,
+            "top": 367.515625
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    },
+    {
+      "kind": "avatar",
+      "material": "trial-b2",
+      "id": "s3",
+      "width": 390,
+      "swapped": false,
+      "imgs": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 62.640625,
+            "top": 408.046875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 62.640625,
+            "top": 745.234375
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/assets/ana-profile-soft-v2.webp",
+          "natural": [768, 768],
+          "rect": {
+            "width": 38,
+            "height": 38,
+            "left": 62.640625,
+            "top": 1001.421875
+          },
+          "parent": {
+            "width": 40,
+            "height": 40,
+            "contentWidth": 38,
+            "contentHeight": 38
+          },
+          "fit": "cover",
+          "position": "50% 50%",
+          "decoded": true
+        }
+      ]
+    }
+  ]
+}

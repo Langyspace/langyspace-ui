@@ -1,8 +1,6 @@
-import anaSource from './assets/ana-working-approved.webp'
+import ana from './assets/ana-profile-soft-v2.webp'
 import kim from './assets/kim-profile-approved.webp'
-import leo from './assets/leo-profile-existing.webp'
+import leo from './assets/leo-profile-soft-v2.webp'
 import raj from './assets/raj-profile-v1.webp'
 
-// The fragment scopes the established Ana action-image crop to avatar use only.
-const ana = `${anaSource}#ana`
 export { ana, kim, leo, raj }
