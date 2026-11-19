@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Seis páginas em oito telas, com cena, diálogo, preferências e conversa. Exportação local de 16/11 e cenas com ambientação. Preferências sem certo ou errado; notas e marcações ficam na memória. Vozes do navegador com erro visível quando indisponíveis.',
+          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo lido ao vivo, sem áudio artificial. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -33,10 +33,8 @@ export const PictureTalk: Story = {
   args: { initialPageId: 's2' },
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's2')
-    await userEvent.click(c.getByRole('button', { name: 'Ouvir: music' }))
-    await expect(
-      c.getByText('About the picture', { exact: true }),
-    ).toBeVisible()
+    await userEvent.click(c.getByRole('button', { name: 'music' }))
+    await expect(c.getByText('Na imagem', { exact: true })).toBeVisible()
   },
 }
 export const ListenAndTalk: Story = { args: { initialPageId: 's3' } }

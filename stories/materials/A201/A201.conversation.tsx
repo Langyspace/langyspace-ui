@@ -1,292 +1,280 @@
-import { useEffect, useRef, useState } from 'react'
-import { ThemeProvider } from 'styled-components'
-import { withVoiceMessageLayout } from '../shared/deviceTheme'
+import { useId, useRef, useState } from 'react'
+import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { Button } from '../../../src/components/Button/Button'
-import { TextInput } from '../../../src/components/Form/TextInput'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
-import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { CallSimulation } from '../../../src/components/InteractiveMaterial/CallSimulation'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { ConnectionSignal } from '../../../src/components/InteractiveMaterial/ConnectionSignal'
+import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
+import { useVoiceMessageAudio } from '../../../src/components/VoiceMessage/useVoiceMessageAudio'
+import { SourceQuestions } from '../shared/LessonPractice'
 import { toggleId } from '../shared/lessonState'
-import type { SpeechProps } from '../shared/Lesson.types'
-import { content, kim, board, image } from './A201.data'
-import { firstTurns, swappedTurns } from './A201.turns'
-import voice from './assets/kim-demo.mp3'
+import { content, kim, vocabulary } from './A201.data'
+import type { ActiveSectionProps } from './A201.types'
+import voice from './assets/L.9.mp3'
 import * as S from '../shared/Lesson.styles'
 import * as A from './A201.styles'
-export function YourVersionSection({ speech }: SpeechProps) {
-  const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState({ first: true, swapped: true }),
-    [marked, setMarked] = useState<string[]>([])
-  const turns = swapped ? swappedTurns : firstTurns,
-    prefix = swapped ? 'swapped' : 'first',
-    shown = support[prefix]
-  const count = turns.filter(
-    (t, i) => t.speaker === 'You' && marked.includes(`${prefix}-${i}`),
-  ).length
+export function PersonalSection() {
+  const [support, setSupport] = useState(false)
   return (
     <S.Stack>
-      <S.Row>
-        <b>{swapped ? 'You: Kim' : 'You: about your life'}</b>
-        <S.Hint>{swapped ? 'Teacher: Ana' : 'Teacher: Kim'}</S.Hint>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => {
-            speech.stop()
-            setSwapped(!swapped)
-          }}
-        >
-          {swapped ? '⇄ Swap back' : '⇄ Swap roles'}
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={shown}
-          onClick={() => setSupport((old) => ({ ...old, [prefix]: !shown }))}
-        >
-          {shown ? 'Hide support' : 'Show support'}
-        </Button>
-        <S.Counter role="status">{count} of 4</S.Counter>
-      </S.Row>
-      {swapped ? <S.Hint>Agora você é a Kim e faz as perguntas.</S.Hint> : null}
-      <LearningDialogue
-        density="compact"
-        lines={turns.map((t, i) => {
-          const learner = t.speaker === 'You'
-          return {
-            id: `${prefix}-${i}`,
-            speaker: t.speaker,
-            avatarUrl: t.speaker === 'Kim' ? kim : undefined,
-            side: learner ? 'end' : 'start',
-            audioLabel: 'audio' in t ? `Listen: ${t.text}` : undefined,
-            actionLabel: learner
-              ? `Marcar resposta: ${'cue' in t ? t.cue : ''}`
-              : undefined,
-            content: learner ? (
-              <S.LearnerCue>
-                {shown ? t.text : 'cue' in t ? t.cue : ''}
-                {shown && 'cue' in t ? <S.Hint>{t.cue}</S.Hint> : null}
-              </S.LearnerCue>
-            ) : (
-              <>
-                {'signal' in t && t.signal ? <ConnectionSignal /> : null}
-                {t.text}
-              </>
-            ),
-          }
-        })}
-        completedIds={marked}
-        onComplete={(id) => setMarked((old) => toggleId(old, id))}
-        playingId={speech.playingId}
-        onPlay={(id) => {
-          const turn = turns[Number(id.split('-')[1])]
-          if (turn) speech.speak([{ id, text: turn.text, speaker: 'kim' }])
-        }}
+      <SourceQuestions
+        items={content.personal.questions.map((question) => ({ question }))}
       />
+      <Button
+        variant="secondary"
+        size="sm"
+        aria-expanded={support}
+        onClick={() => setSupport(!support)}
+      >
+        {support ? 'Hide support' : 'Show support'}
+      </Button>
+      {support ? (
+        <S.Support>
+          {content.personal.optionalSupport.map((line) => (
+            <span key={line}>{line}</span>
+          ))}
+        </S.Support>
+      ) : null}
     </S.Stack>
   )
 }
-const listeningTheme = withVoiceMessageLayout({
-  contentWidth: '65rem',
-  phoneWidth: '11.875rem',
-  phoneHeight: '23.75rem',
-})
-
-export function ListeningSection({ active }: { active: boolean }) {
-  const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
-    [support, setSupport] = useState(false)
+const time = (seconds: number) =>
+  `0:${String(Math.floor(seconds)).padStart(2, '0')}`
+export function ListeningSection({ active }: ActiveSectionProps) {
+  const media = useVoiceMessageAudio(active)
+  const [answers, setAnswers] = useState<Record<number, string>>({})
+  const [support, setSupport] = useState(false)
+  const [listened, setListened] = useState(false)
+  const [transcript, setTranscript] = useState(false)
+  const play = useRef<HTMLButtonElement>(null)
+  const transcriptId = useId()
+  const busy = media.status === 'playing' || media.status === 'loading'
   return (
-    <ThemeProvider theme={listeningTheme}>
-      <VoiceMessageExercise
-        contact={{ name: 'Kim', avatarUrl: kim, status: 'online' }}
-        greeting={{ text: 'Sorry, Ana!', timestamp: '09:41' }}
-        audio={{
-          id: 'a201-kim-elevenlabs-20261118',
-          src: voice,
-          duration: 15.18585,
-          transcript:
-            content.listening.transcript +
-            '\nNever mind = deixa pra lá · maybe = talvez · travel = viajar · soon = logo',
-          timestamp: '09:41',
-        }}
-        active={active}
-        labels={{
-          play: 'Play Kim’s message',
-          pause: 'Pause',
-          loading: 'Loading',
-          replay: 'Listen again',
-          speed: 'Playback speed',
-          transcript: 'Transcription',
-          transcriptHidden:
-            'A transcrição aparece na segunda vez que você ouve.',
-          audioUnavailable: 'Áudio indisponível',
-          audioError: 'Não foi possível tocar. Tente novamente.',
-          retry: 'Tentar novamente',
-          correct: 'Correto',
-          incorrect: 'Tente novamente',
-          questions: 'A Kim disse isso?',
-          conversation: 'Conversa',
-        }}
-        questions={content.listening.questions.map((q, i) => {
-          const id = String(i),
-            chosen = attempts[id] ?? [],
-            done = chosen.includes(String(q.a))
-          return {
-            id,
-            prompt: q.q,
-            value: chosen.at(-1),
-            disabled: done,
-            feedback: done
-              ? q.say
-              : chosen.length
-                ? 'Tente novamente.'
-                : undefined,
-            choices: q.o.map((label, j) => ({
-              id: String(j),
-              label,
-              feedback: chosen.includes(String(j))
-                ? j === q.a
-                  ? 'correct'
-                  : 'incorrect'
-                : undefined,
-            })),
-          }
-        })}
-        onAnswer={(id, value) =>
-          setAttempts((old) => ({ ...old, [id]: [...(old[id] ?? []), value] }))
-        }
-        footer={
-          <S.Dark>
-            <strong>Now you</strong>
-            <p>
-              Responda à Kim: diga o que você faz normalmente e o que você está
-              fazendo esta semana.
-            </p>
-            <S.Row>
+    <S.Stack>
+      <A.Player>
+        <A.Contact>
+          <Avatar imageUrl={kim} initials="K" size="lg" />
+          <b>Kim</b>
+        </A.Contact>
+        <audio
+          ref={media.audioRef}
+          src={voice}
+          preload="metadata"
+          {...media.events}
+          onEnded={() => {
+            media.events.onEnded()
+            setListened(true)
+          }}
+        />
+        <S.Row>
+          <Button
+            ref={play}
+            variant="primary"
+            disabled={!active}
+            onClick={() => {
+              void media.toggle()
+            }}
+          >
+            {busy
+              ? 'Pause'
+              : media.status === 'ended'
+                ? 'Listen again'
+                : media.status === 'paused'
+                  ? 'Resume'
+                  : 'Play Kim’s message'}
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
+            disabled={!active}
+            aria-label={`Playback speed: ${media.speed}x`}
+            onClick={media.changeSpeed}
+          >
+            {media.speed}x
+          </Button>
+          <S.Hint aria-live="off">
+            {time(media.elapsed)} / {time(media.duration || 15.18585)}
+          </S.Hint>
+        </S.Row>
+        <progress
+          aria-label="Audio progress"
+          max={media.duration || 15.18585}
+          value={media.elapsed}
+        />
+        {media.status === 'error' ? (
+          <QuizFeedback tone="wrong">
+            Audio unavailable.{' '}
+            <Button
+              variant="text"
+              onClick={() => {
+                void media.toggle()
+                play.current?.focus()
+              }}
+            >
+              Try again
+            </Button>
+          </QuizFeedback>
+        ) : null}
+        {listened ? (
+          <Button
+            variant="secondary"
+            size="sm"
+            aria-expanded={transcript}
+            aria-controls={transcriptId}
+            onClick={() => setTranscript(!transcript)}
+          >
+            {transcript ? 'Hide transcription' : 'Show transcription'}
+          </Button>
+        ) : null}
+        {transcript ? (
+          <A.Transcript id={transcriptId}>
+            <p>{content.listening.transcript}</p>
+            <S.Hint>
+              Never mind = deixa pra lá · maybe = talvez · travel = viajar ·
+              soon = logo
+            </S.Hint>
+          </A.Transcript>
+        ) : null}
+      </A.Player>
+      {content.listening.questions.map((q, i) => (
+        <A.Question key={q.q}>
+          <legend>{q.q}</legend>
+          <S.Row>
+            {['Yes', 'No'].map((choice) => (
               <Button
-                variant="inverse"
+                key={choice}
+                variant="secondary"
                 size="sm"
-                aria-expanded={support}
-                onClick={() => setSupport(!support)}
+                aria-pressed={answers[i] === choice}
+                onClick={() => setAnswers((old) => ({ ...old, [i]: choice }))}
               >
-                {support ? 'Esconder dica' : 'Dica: começos de frase'}
+                {choice}
               </Button>
-            </S.Row>
-            {support ? (
-              <p>
-                Hi, Kim! Never mind! · I usually … · This week I’m … · See you
-                soon!
-              </p>
-            ) : null}
-          </S.Dark>
-        }
-      />
-    </ThemeProvider>
+            ))}
+          </S.Row>
+          {answers[i] ? (
+            <QuizFeedback tone={answers[i] === q.yesNo ? 'correct' : 'wrong'}>
+              {answers[i] === q.yesNo ? q.fullAnswer : 'Try again.'}
+            </QuizFeedback>
+          ) : null}
+        </A.Question>
+      ))}
+      <A.Info>
+        <b>{content.listening.replyPrompt}</b>
+        <Button
+          variant="secondary"
+          size="sm"
+          aria-expanded={support}
+          onClick={() => setSupport(!support)}
+        >
+          {support ? 'Hide support' : 'Show support'}
+        </Button>
+        {support ? (
+          <S.Support>
+            {content.listening.optionalSupport.map((line) => (
+              <span key={line}>{line}</span>
+            ))}
+          </S.Support>
+        ) : null}
+      </A.Info>
+    </S.Stack>
   )
 }
-export function RolePlaySection({ active }: { active: boolean }) {
-  const [poor, setPoor] = useState(false),
-    [ended, setEnded] = useState(false),
-    [elapsed, setElapsed] = useState(0),
-    [steps, setSteps] = useState<string[]>([]),
-    [support, setSupport] = useState(false),
-    [values, setValues] = useState<Record<string, string>>({})
-  const field = useRef<HTMLInputElement>(null)
-  useEffect(() => {
-    if (!active || ended) return
-    let last = Date.now()
-    const timer = window.setInterval(() => {
-      const now = Date.now(),
-        delta = now - last
-      last = now
-      setElapsed((old) => old + delta)
-    }, 1000)
-    return () => window.clearInterval(timer)
-  }, [active, ended])
-  const seconds = Math.floor(elapsed / 1000),
-    time = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`
+export function RolePlaySection() {
+  const [poor, setPoor] = useState(false)
+  const [swapped, setSwapped] = useState(false)
+  const [steps, setSteps] = useState<string[]>([])
+  const [support, setSupport] = useState(false)
+  const [cue, setCue] = useState<number>()
+  const cards = vocabulary.flat()
+  const current = cue === undefined ? undefined : cards[cue]
   return (
-    <ThemeProvider theme={listeningTheme}>
-      <CallSimulation
-        presentation="video"
-        contactName="Kim"
-        initials="K"
-        avatarUrl={kim}
-        state={ended ? 'ended' : 'connected'}
-        elapsedLabel={time}
-        signalPoor={poor}
-        onSignalToggle={() => setPoor(!poor)}
-        onCall={() => {
-          setElapsed(0)
-          setPoor(false)
-          setEnded(false)
-        }}
-        onHangUp={() => {
-          setEnded(true)
-          setPoor(false)
-        }}
-        labels={{
-          cameraOff: 'câmera desligada',
-          hangUp: 'End call',
-          callAgain: 'Call again',
-        }}
-      >
-        <RolePlayExercise
-          presentation="tracker"
-          density="compact"
-          situation={null}
-          support={content.support}
-          supportVisible={support}
-          onSupportToggle={() => setSupport(!support)}
-          labels={{
-            show: 'Dica',
-            hide: 'Esconder dica',
-            steps: 'Passo a passo · a professora marca',
-            progress: '',
-            joiner: 'de',
-          }}
-          steps={content.steps.map((label, i) => ({ id: String(i), label }))}
-          completedIds={steps}
-          onStepToggle={(id) => setSteps((old) => toggleId(old, id))}
-        >
-          <A.CallBoard role="group" aria-label="Seis lugares e seis ações">
-            {board.map((item) => (
-              <img key={item.key} src={image(item.key)} alt={item.label} />
-            ))}
-          </A.CallBoard>
-          <A.CallSummary>
+    <RolePlayExercise
+      presentation="tracker"
+      situation={content.roleplay.situation}
+      steps={content.roleplay.steps.map((label, i) => ({
+        id: String(i),
+        label,
+      }))}
+      completedIds={steps}
+      onStepToggle={(id) => setSteps((old) => toggleId(old, id))}
+      support={content.roleplay.optionalSupport}
+      supportVisible={support}
+      onSupportToggle={() => setSupport(!support)}
+      labels={{
+        show: 'Show support',
+        hide: 'Hide support',
+        steps: 'Conversation checklist',
+        progress: '',
+        joiner: 'of',
+      }}
+      tracker={
+        <S.Stack>
+          <A.Contact>
+            <Avatar imageUrl={kim} initials="K" size="lg" />
+            <b>
+              {swapped ? 'You: Kim · Teacher: Ana' : 'You: Ana · Teacher: Kim'}
+            </b>
+          </A.Contact>
+          <S.Row>
+            <Button
+              variant="secondary"
+              size="sm"
+              aria-pressed={swapped}
+              onClick={() => setSwapped(!swapped)}
+            >
+              Swap roles
+            </Button>
+            <Button
+              variant="secondary"
+              size="sm"
+              aria-pressed={poor}
+              onClick={() => setPoor(!poor)}
+            >
+              {poor ? 'Signal OK' : 'Bad signal'}
+            </Button>
+          </S.Row>
+          {poor ? (
             <S.Row>
-              <b>Kim</b>
+              <ConnectionSignal />
+              <b>Sorry? Can you say that again?</b>
+            </S.Row>
+          ) : null}
+        </S.Stack>
+      }
+    >
+      <S.Stack>
+        <S.Row>
+          <Button
+            variant="secondary"
+            size="sm"
+            aria-expanded={cue !== undefined}
+            onClick={() => setCue(cue === undefined ? 0 : undefined)}
+          >
+            {cue === undefined ? 'Show action cues' : 'Hide action cues'}
+          </Button>
+          {cue !== undefined ? (
+            <>
               <Button
                 variant="secondary"
                 size="sm"
-                onClick={() => {
-                  setValues({})
-                  field.current?.focus()
-                }}
+                onClick={() => setCue((cue + 3) % 4)}
               >
-                Clear
+                Previous action
               </Button>
-            </S.Row>
-            {content.summary.map((label, i) => (
-              <label key={label}>
-                <span>{label}</span>
-                <TextInput
-                  ref={i === 0 ? field : undefined}
-                  size="sm"
-                  value={values[label] ?? ''}
-                  autoComplete="off"
-                  onChange={(e) =>
-                    setValues((old) => ({ ...old, [label]: e.target.value }))
-                  }
-                />
-              </label>
-            ))}
-          </A.CallSummary>
-        </RolePlayExercise>
-      </CallSimulation>
-    </ThemeProvider>
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() => setCue((cue + 1) % 4)}
+              >
+                Next action
+              </Button>
+            </>
+          ) : null}
+        </S.Row>
+        {current ? (
+          <A.CueImage src={current.imageUrl} alt={current.imageAlt} />
+        ) : null}
+      </S.Stack>
+    </RolePlayExercise>
   )
 }

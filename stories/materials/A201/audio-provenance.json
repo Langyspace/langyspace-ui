@@ -1,5 +1,5 @@
 {
-  "file": "assets/kim-demo.mp3",
+  "file": "assets/L.9.mp3",
   "sha256": "1bb0cf895fb5c62b31726f5f9e6bffe2975f25d3a96ee33d674b036522eb92b5",
   "durationSeconds": 15.18585,
   "source": "exact A201.content.json listening transcript; completed AUD-A201-KIM-01",
@@ -20,5 +20,6 @@
     "id": "1e9bba01-d234-4ac8-ad04-113e051f2e9f",
     "version": "1795033410-432c"
   },
-  "transport": "Native HTMLAudioElement via VoiceMessageExercise; source supplied by audio specialist; no new TTS request."
+  "transport": "Native HTMLAudioElement via shared useVoiceMessageAudio; lesson-owned panel composed with shared Button/Avatar. No new TTS request.",
+  "adoptedOfficialVersion": "1795045837-60e6"
 }

@@ -1,6 +1,5 @@
-import { VocabularySection } from '../../../stories/materials/A201/A201.practice'
 import { useState } from 'react'
-import { act, fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { renderToString } from 'react-dom/server'
 import { afterEach, describe, expect, it, vi } from 'vitest'
@@ -8,10 +7,6 @@ import { CallSimulation } from '../../../src/components/InteractiveMaterial/Call
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
-import {
-  RolePlaySection,
-  YourVersionSection,
-} from '../../../stories/materials/A201/A201.conversation'
 import { PreferenceSection } from '../../../stories/materials/TrialA1/TrialA1.sections'
 const speech = {
   speak: vi.fn(),
@@ -215,65 +210,7 @@ describe('guided role-play contract', () => {
     )
   })
 })
-describe('consumer-owned lesson behavior', () => {
-  it('keeps contextual vocabulary concealed on focus, then reveals and speaks the stable item', async () => {
-    const user = userEvent.setup()
-    render(<VocabularySection speech={speech} />)
-    const card = screen.getByRole('button', {
-      name: 'Mostrar palavra 1: um notebook',
-    })
-    await user.tab()
-    expect(card).toHaveFocus()
-    expect(card).toHaveAttribute('aria-expanded', 'false')
-    expect(
-      screen.queryByText('a laptop', { exact: true }),
-    ).not.toBeInTheDocument()
-    await user.keyboard('{Enter}')
-    expect(card).toHaveAttribute('aria-expanded', 'true')
-    expect(speech.speak).toHaveBeenCalledWith([{ id: 'V.0', text: 'a laptop' }])
-  })
-
-  it('pauses the video-call clock on departure, resumes, freezes after hang-up and resets on restart', () => {
-    vi.useFakeTimers()
-    const { rerender } = render(<RolePlaySection active />)
-    act(() => vi.advanceTimersByTime(2000))
-    expect(screen.getByText('00:02', { exact: true })).toBeVisible()
-    rerender(<RolePlaySection active={false} />)
-    act(() => vi.advanceTimersByTime(5000))
-    expect(screen.getByText('00:02', { exact: true })).toBeVisible()
-    rerender(<RolePlaySection active />)
-    act(() => vi.advanceTimersByTime(1000))
-    expect(screen.getByText('00:03', { exact: true })).toBeVisible()
-    fireEvent.click(screen.getByRole('button', { name: 'End call' }))
-    act(() => vi.advanceTimersByTime(5000))
-    expect(screen.getByText('Call ended · 00:03')).toBeVisible()
-    fireEvent.click(screen.getByRole('button', { name: 'Call again' }))
-    expect(screen.getByText('00:00', { exact: true })).toBeVisible()
-  })
-  it('clears the call summary and returns focus to its first field', () => {
-    render(<RolePlaySection active={false} />)
-    fireEvent.change(screen.getByLabelText('Agora'), {
-      target: { value: 'Kim is in the park.' },
-    })
-    fireEvent.click(screen.getByRole('button', { name: 'Clear' }))
-    expect(screen.getByLabelText('Agora')).toHaveValue('')
-    expect(screen.getByLabelText('Agora')).toHaveFocus()
-  })
-  it('keeps support and marked learner turns independent across swapped roles', async () => {
-    const user = userEvent.setup()
-    render(<YourVersionSection speech={speech} />)
-    await user.click(
-      screen.getByRole('button', {
-        name: 'Marcar resposta: diga onde você está agora',
-      }),
-    )
-    await user.click(screen.getByRole('button', { name: 'Hide support' }))
-    await user.click(screen.getByRole('button', { name: '⇄ Swap roles' }))
-    expect(screen.getByRole('button', { name: 'Hide support' })).toBeVisible()
-    await user.click(screen.getByRole('button', { name: '⇄ Swap back' }))
-    expect(screen.getByRole('button', { name: 'Show support' })).toBeVisible()
-    expect(screen.getByText('1 of 4', { exact: true })).toBeVisible()
-  })
+describe('A1 trial preference behavior', () => {
   it('treats preferences as exclusive, reversible and ungraded choices', async () => {
     const user = userEvent.setup()
     render(<PreferenceSection index={0} speech={speech} />)
@@ -287,6 +224,6 @@ describe('consumer-owned lesson behavior', () => {
     await user.click(b)
     expect(b).toHaveAttribute('aria-pressed', 'false')
     expect(screen.queryByText(/Correct!|Try again/)).not.toBeInTheDocument()
-    expect(speech.speak).toHaveBeenCalledWith([{ id: 'T.0a', text: 'movies' }])
+    expect(speech.speak).not.toHaveBeenCalled()
   })
 })

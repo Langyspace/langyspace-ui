@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 2,
+  "revision": "b2-work-life-20261118-r2",
+  "level": "B2",
+  "title": "Work and life",
+  "minutes": 30,
+  "lexicalFocus": [
+    "get things done",
+    "commute",
+    "switch off",
+    "work-life balance"
+  ],
+  "pages": [
+    {
+      "id": "s1",
+      "title": "Work and life",
+      "subtitle": "Tell your story, then ask your teacher.",
+      "minutes": 3
+    },
+    {
+      "id": "s2",
+      "title": "A place to get things done",
+      "subtitle": "Explore the picture and compare it with your day.",
+      "minutes": 4
+    },
+    {
+      "id": "s3",
+      "title": "A good day at work",
+      "subtitle": "Read together, then compare Ana’s and Kim’s views.",
+      "minutes": 5
+    },
+    {
+      "id": "s41",
+      "title": "Where you work",
+      "subtitle": "Choose a side, explain why and ask your teacher.",
+      "minutes": 3
+    },
+    {
+      "id": "s42",
+      "title": "When you work",
+      "subtitle": "Compare the benefits and drawbacks of each option.",
+      "minutes": 3
+    },
+    {
+      "id": "s43",
+      "title": "What you value",
+      "subtitle": "Make a choice, then explain what might change your mind.",
+      "minutes": 3
+    },
+    {
+      "id": "s5",
+      "title": "A better balance",
+      "subtitle": "Choose a question, share an example and lead the conversation.",
+      "minutes": 7
+    },
+    {
+      "id": "s6",
+      "title": "Your next step",
+      "subtitle": "Look back on the conversation and say what comes next.",
+      "minutes": 2
+    }
+  ],
+  "p1": {
+    "cards": [
+      {
+        "q": "What keeps you busy these days?",
+        "support": "At the moment, I’m …"
+      },
+      {
+        "q": "What do you enjoy most about your day?",
+        "support": "What I like about … is …"
+      },
+      {
+        "q": "When would you like to feel more confident in English?",
+        "support": "I’d like to feel more confident when …"
+      }
+    ],
+    "ask": "What would you like to find out about your teacher?"
+  },
+  "p2": {
+    "image": "ana-working.webp",
+    "alt": "Ana seated at a desk, typing on a laptop; the whole laptop, keyboard and both hands are visible.",
+    "hotspots": [
+      {
+        "id": "setup",
+        "x": 75,
+        "y": 64,
+        "label": "The laptop",
+        "q": "What can you tell about Ana’s setup? What can’t you tell?",
+        "support": "I can see …, but I can’t tell …"
+      },
+      {
+        "id": "focus",
+        "x": 27,
+        "y": 37,
+        "label": "Ana at work",
+        "q": "What would help you concentrate in a space like this?",
+        "support": "I find it easier to get things done when …"
+      },
+      {
+        "id": "boundaries",
+        "x": 15,
+        "y": 90,
+        "label": "The desk",
+        "q": "How easy would it be to switch off after working here?",
+        "support": "It would depend on …"
+      }
+    ]
+  },
+  "p3": {
+    "lines": [
+      {
+        "who": "kim",
+        "en": "So, how’s the new job going? Do you go to the office every day?",
+        "g": "E aí, como está indo o emprego novo? Você vai ao escritório todo dia?"
+      },
+      {
+        "who": "ana",
+        "en": "Three days a week. What I like about the office is the people. I learn so much from my team.",
+        "g": "Três dias por semana. O que eu gosto no escritório são as pessoas. Eu aprendo muito com a minha equipe."
+      },
+      {
+        "who": "kim",
+        "en": "I see your point, but I’d rather stay home. No commute, no noise, and I take a break when I want.",
+        "g": "Entendo o seu lado, mas eu prefiro ficar em casa. Sem trânsito, sem barulho, e eu faço uma pausa quando quero."
+      },
+      {
+        "who": "ana",
+        "en": "Don’t you feel lonely sometimes?",
+        "g": "Você não se sente sozinha às vezes?"
+      },
+      {
+        "who": "kim",
+        "en": "It depends on the week. On a good day, I finish early and go for a walk.",
+        "g": "Depende da semana. Num dia bom, eu termino cedo e vou dar uma caminhada."
+      },
+      {
+        "who": "ana",
+        "en": "For me, a good day is when I get things done and still have time for my friends.",
+        "g": "Para mim, um dia bom é quando eu dou conta das coisas e ainda tenho tempo para os meus amigos."
+      },
+      {
+        "who": "kim",
+        "en": "Exactly. Work is important, but it’s not everything.",
+        "g": "Exatamente. Trabalho é importante, mas não é tudo."
+      }
+    ],
+    "question": "Whose view is closer to yours? Give an example.",
+    "support": [
+      "What I like about … is …",
+      "I see your point, but …",
+      "It depends on …"
+    ],
+    "glossary": [
+      ["commute", "the journey between home and work"],
+      ["get things done", "finish the tasks you need to do"]
+    ]
+  },
+  "p4": {
+    "pairs": [
+      {
+        "q": "Would you rather work or study at home or in a shared space?",
+        "a": "At home",
+        "b": "In a shared space",
+        "followUp": "What would you miss about the other option?"
+      },
+      {
+        "q": "Would you rather start and finish early, or start and finish late?",
+        "a": "Start early",
+        "b": "Start late",
+        "followUp": "When would the other schedule work better for you?"
+      },
+      {
+        "q": "Would you choose higher pay or more free time?",
+        "a": "Higher pay",
+        "b": "More free time",
+        "followUp": "Would your answer change at a different stage of life?"
+      }
+    ],
+    "support": [
+      "I’d rather …, because …",
+      "One drawback is …",
+      "I see your point, but …",
+      "What about you?"
+    ]
+  },
+  "p5": {
+    "questions": [
+      "How do you switch off at the end of the day?",
+      "If you could change one thing about your routine, what would it be?",
+      "What makes a healthy work-life balance possible?"
+    ],
+    "further": "Should people be able to choose where they work or study?",
+    "followUps": [
+      "Has that always been true for you?",
+      "Can you give me an example?",
+      "What might make you change your mind?"
+    ],
+    "support": [
+      "In my experience, …",
+      "On the other hand, …",
+      "It depends on …"
+    ],
+    "glossary": [
+      ["switch off", "stop thinking about work or study and relax"],
+      ["work-life balance", "how work and the rest of your life fit together"]
+    ]
+  },
+  "p6": {
+    "questions": [
+      "What is one idea you expressed clearly today?",
+      "Which phrase would you like to use again?",
+      "What would you like to be able to discuss in English next?"
+    ]
+  }
+}

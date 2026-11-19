@@ -4,7 +4,7 @@
   "titleParts": ["What do you ", "like?"],
   "goal": "Conversar em inglês sobre o que você gosta de fazer.",
   "p1": {
-    "ins": "Ouça a professora e responda sobre você.",
+    "ins": "Vamos nos conhecer e conversar sobre seus gostos.",
     "cards": [
       {
         "e": "🪪",
@@ -27,67 +27,55 @@
     ]
   },
   "p2": {
-    "title": "Sunday in the park",
-    "ins": "Olhe a cena e converse com a professora.",
+    "title": "A day in the park",
+    "ins": "Nomeie as imagens e conte do que você gosta.",
     "bg": "park",
     "items": [
       {
         "e": "🎧",
         "en": "music",
-        "x": 14,
-        "y": 58
+        "x": 42,
+        "y": 16
       },
       {
         "e": "⚽",
         "en": "soccer",
-        "x": 40,
-        "y": 74
+        "x": 64,
+        "y": 88
       },
       {
         "e": "📖",
         "en": "a book",
-        "x": 78,
-        "y": 52
+        "x": 62,
+        "y": 56
       },
       {
         "e": "🐶",
         "en": "a dog",
-        "x": 60,
-        "y": 80
-      },
-      {
-        "e": "🚲",
-        "en": "a bike",
-        "x": 84,
-        "y": 78
-      },
-      {
-        "e": "🧺",
-        "en": "a picnic",
-        "x": 30,
-        "y": 40
+        "x": 86,
+        "y": 65
       }
     ],
     "support": [
       {
-        "h": "About the picture",
+        "h": "Na imagem",
         "lines": [
           ["What’s this?", "It’s a …"],
-          ["Is it a cat?", "No, it’s a dog."]
+          ["Is it a dog?", "Yes, it is. · No, it isn’t."]
         ]
       },
       {
-        "h": "About you",
+        "h": "Sobre você",
         "lines": [
-          ["Do you like …?", "Yes, I do. · No, I don’t."],
-          ["", "I love …!"]
+          ["Do you like the park?", "Yes, I do. · No, I don’t."],
+          ["What do you like?", "I like …"]
         ]
       }
     ]
   },
   "p3": {
     "title": "Do you like the park?",
-    "ins": "Kim (from Korea) and Ana (from Brazil) are friends. They speak English.",
+    "ins": "Leiam como Kim e Ana. Depois, falem sobre vocês.",
     "lines": [
       {
         "who": "kim",
@@ -117,14 +105,14 @@
     ],
     "your": [
       ["Do you like the park?", "Yes, I do. · No, I don’t."],
-      ["Do you like books?", "I like … · I don’t like …"],
+      ["Do you like books?", "Yes, I do. · No, I don’t."],
       ["What do you like?", "I like … and …"]
     ]
   },
   "p4": {
     "title": "Choose one",
-    "ins": "Escolha uma e diga por quê.",
-    "strip": ["I like …", "I love …!", "I don’t like …", "And you?"],
+    "ins": "Conte do que você gosta e pergunte: “And you?”",
+    "strip": ["I like …", "I don’t like …", "And you?"],
     "pairs": [
       {
         "q": "Movies or music?",
@@ -133,8 +121,8 @@
       },
       {
         "q": "Dogs or cats?",
-        "a": ["🐶", "a dog"],
-        "b": ["🐱", "a cat"]
+        "a": ["🐶", "dogs"],
+        "b": ["🐱", "cats"]
       },
       {
         "q": "Pizza or salad?",
@@ -144,35 +132,27 @@
     ]
   },
   "p5": {
-    "ins": "Escolham as perguntas e conversem.",
+    "ins": "Agora você pergunta. Escolha um assunto e conversem.",
     "qs": [
       ["🎧", "Do you like music?"],
       ["🍿", "Do you like movies?"],
-      ["🏖️", "Do you like the beach?"],
+      ["📖", "Do you like books?"],
       ["⚽", "Do you like soccer?"],
       ["🍕", "Do you like pizza?"],
-      ["🐶", "Do you like dogs or cats?"]
+      ["🐶", "Do you like dogs?"]
     ],
     "go": [
       ["🎧", "What music do you like?"],
-      ["🍿", "What movies do you like?"],
-      ["💬", "Do you like English?"]
+      ["🍿", "What movies do you like?"]
     ],
-    "strip": [
-      "Yes, I do.",
-      "No, I don’t.",
-      "I love …",
-      "I don’t like …",
-      "And you?",
-      "Me too!"
-    ]
+    "strip": ["Yes, I do.", "No, I don’t.", "I like …", "And you?", "Me too!"]
   },
   "p6": [
     "My name is …",
     "I’m from …",
-    "I like music.",
-    "I don’t like soccer.",
-    "Do you like dogs?",
-    "Yes, I do. / No, I don’t."
+    "I like …",
+    "I don’t like …",
+    "Do you like …?",
+    "And you?"
   ]
 }

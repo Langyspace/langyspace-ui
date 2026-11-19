@@ -1,0 +1,199 @@
+{
+  "source": "React source preview, not generated bundle or staging",
+  "baselineHead": "cfc558ed36d4ffaacb4d43854961a15cc10b3581",
+  "officialVersion": "1795045837-60e6",
+  "checks": [
+    {
+      "name": "13 continuous sections; opening cleanup and only one recorded audio",
+      "passed": true
+    },
+    {
+      "name": "13 rendered sections and assets 1280x900",
+      "passed": true
+    },
+    {
+      "name": "13 rendered sections and assets 390x844",
+      "passed": true
+    },
+    {
+      "name": "13 rendered sections and assets 1280x650",
+      "passed": true
+    },
+    {
+      "name": "dark grammar tables and readable question columns at three viewports",
+      "passed": true
+    },
+    {
+      "name": "vocabulary keyboard reveal, letter hints and show all; full 4:3 scenes",
+      "passed": true
+    },
+    {
+      "name": "eight live-read dialogue lines, optional glosses and new Kim/Ana profiles",
+      "passed": true
+    },
+    {
+      "name": "factual reveal and personal questions without prescribed answers",
+      "passed": true
+    },
+    {
+      "name": "six progressive gaps, incorrect retry and focus progression",
+      "passed": true
+    },
+    {
+      "name": "role play checklist, signal, role swap, support and four real cues",
+      "passed": true
+    },
+    {
+      "name": "native Kim audio real full pass, pause/resume, speed, replay, manual transcript and departure pause",
+      "passed": true
+    },
+    {
+      "name": "audio error branch and real retry playback",
+      "passed": true
+    },
+    {
+      "name": "Notes persistence, textarea navigation exclusion and focus return",
+      "passed": true
+    },
+    {
+      "name": "Home/End and measured tall C11 PageDown reading",
+      "passed": true,
+      "before": {
+        "height": 1049,
+        "viewport": 844,
+        "top": 8922,
+        "remaining": 205.265625,
+        "current": "s11"
+      },
+      "after": {
+        "height": 1049,
+        "viewport": 844,
+        "top": 9457,
+        "remaining": -329.734375,
+        "current": "s11"
+      },
+      "fixture": "Native ended event unlocks presentation only; real full audio pass reused from preceding check."
+    },
+    {
+      "name": "Opening hierarchy refreshed at three viewports without overflow",
+      "passed": true
+    }
+  ],
+  "captures": [
+    "after-1280x650-s1.png",
+    "after-1280x650-s10.png",
+    "after-1280x650-s11-bottom.png",
+    "after-1280x650-s11.png",
+    "after-1280x650-s12.png",
+    "after-1280x650-s13.png",
+    "after-1280x650-s2.png",
+    "after-1280x650-s3.png",
+    "after-1280x650-s4.png",
+    "after-1280x650-s5-bottom.png",
+    "after-1280x650-s5.png",
+    "after-1280x650-s6.png",
+    "after-1280x650-s7.png",
+    "after-1280x650-s8-bottom.png",
+    "after-1280x650-s8.png",
+    "after-1280x650-s9.png",
+    "after-1280x900-s1.png",
+    "after-1280x900-s10.png",
+    "after-1280x900-s11.png",
+    "after-1280x900-s12.png",
+    "after-1280x900-s13.png",
+    "after-1280x900-s2.png",
+    "after-1280x900-s3.png",
+    "after-1280x900-s4.png",
+    "after-1280x900-s5.png",
+    "after-1280x900-s6.png",
+    "after-1280x900-s7.png",
+    "after-1280x900-s8-bottom.png",
+    "after-1280x900-s8.png",
+    "after-1280x900-s9.png",
+    "after-390x844-s1.png",
+    "after-390x844-s10.png",
+    "after-390x844-s11.png",
+    "after-390x844-s12.png",
+    "after-390x844-s13.png",
+    "after-390x844-s2.png",
+    "after-390x844-s3.png",
+    "after-390x844-s4.png",
+    "after-390x844-s5.png",
+    "after-390x844-s6.png",
+    "after-390x844-s7.png",
+    "after-390x844-s8-bottom.png",
+    "after-390x844-s8.png",
+    "after-390x844-s9.png",
+    "before-1280x650-s1.png",
+    "before-1280x650-s10.png",
+    "before-1280x650-s11.png",
+    "before-1280x650-s12.png",
+    "before-1280x650-s2.png",
+    "before-1280x650-s31.png",
+    "before-1280x650-s32.png",
+    "before-1280x650-s33.png",
+    "before-1280x650-s4.png",
+    "before-1280x650-s51.png",
+    "before-1280x650-s52.png",
+    "before-1280x650-s6.png",
+    "before-1280x650-s61.png",
+    "before-1280x650-s62.png",
+    "before-1280x650-s7.png",
+    "before-1280x650-s8.png",
+    "before-1280x650-s9.png",
+    "before-1280x900-s1.png",
+    "before-1280x900-s10.png",
+    "before-1280x900-s11.png",
+    "before-1280x900-s12.png",
+    "before-1280x900-s2.png",
+    "before-1280x900-s31.png",
+    "before-1280x900-s32.png",
+    "before-1280x900-s33.png",
+    "before-1280x900-s4.png",
+    "before-1280x900-s51.png",
+    "before-1280x900-s52.png",
+    "before-1280x900-s6.png",
+    "before-1280x900-s61.png",
+    "before-1280x900-s62.png",
+    "before-1280x900-s7.png",
+    "before-1280x900-s8.png",
+    "before-1280x900-s9.png",
+    "before-390x844-s1.png",
+    "before-390x844-s10.png",
+    "before-390x844-s11.png",
+    "before-390x844-s12.png",
+    "before-390x844-s2.png",
+    "before-390x844-s31.png",
+    "before-390x844-s32.png",
+    "before-390x844-s33.png",
+    "before-390x844-s4.png",
+    "before-390x844-s51.png",
+    "before-390x844-s52.png",
+    "before-390x844-s6.png",
+    "before-390x844-s61.png",
+    "before-390x844-s62.png",
+    "before-390x844-s7.png",
+    "before-390x844-s8.png",
+    "before-390x844-s9.png",
+    "state-comprehension.png",
+    "state-dialogue-help.png",
+    "state-gap-complete.png",
+    "state-gap-incorrect.png",
+    "state-listening-transcript.png",
+    "state-notes.png",
+    "state-roleplay.png",
+    "state-vocabulary-revealed.png",
+    "state-tall-reading.png"
+  ],
+  "errors": [],
+  "failedRequests": [],
+  "passed": true,
+  "resumedAfter": "Dynamic accessible-name locator corrected; prior matrix retained. Grammar captures refreshed after dark styling.",
+  "audio": {
+    "duration": 15.18585,
+    "fullPass": true,
+    "audibleSpeakerCapture": false
+  },
+  "errorBranch": "Error event injected to exercise handler; retry performed real native playback.",
+  "verificationHistory": "Initial harness used a changing accessible name and incorrectly assumed C6 was oversized. Those assertions were corrected. The original 39-pair matrix and successful functional groups were reused; grammar/opening captures and the measured tall navigation were refreshed separately."
+}

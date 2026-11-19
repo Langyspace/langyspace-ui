@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "batch": "EXP-B1-REVIEW-01",
+  "owner": "experimental-intermediario",
+  "threadId": "01a1f10b-7979-76e2-a303-036ade294611",
+  "status": "ready_for_integration",
+  "contentRevision": "EXP-B1-REVIEW-01-v1",
+  "pages": 8,
+  "plannedMinutes": 30,
+  "original": {
+    "artifactId": "0fcdeaa6-65d4-438e-a8ce-7bdc93f20675",
+    "url": "https://claude.ai/code/artifact/0fcdeaa6-65d4-438e-a8ce-7bdc93f20675",
+    "path": "index.html",
+    "beforeVersion": "1795030916-c929",
+    "beforeSha256": "a552a7c7db3f5050416c4b115248a282670eb78c4b0a2996e91c44027a860cf3",
+    "version": "1795046499-789a",
+    "sha256": "e5d39617f7c8ffe742cc98b385eb8248282c6905653bcd80978d2e9666680098",
+    "readbackVerified": true,
+    "localBytesEqualReadback": true,
+    "checkpointReceipts": [
+      "checkpoint-1.json",
+      "checkpoint-2.json"
+    ],
+    "renderExecuted": true,
+    "renderOk": true,
+    "missingRequests": [],
+    "renderEvidence": "claude-render-final.json",
+    "previewEvidence": "preview-final.json",
+    "syncLedger": "Not advanced. Plain legacy index.html is supported by conditional push/readback/render; typed sync review refuses it. Orchestrator confirmed this capability distinction; no bypass."
+  },
+  "media": {
+    "newFinalAssets": 1,
+    "builtInImageGenCalls": 2,
+    "newSceneSha256": "571e04bd813f9e92f9d5ecbcb8990ee57d878b95dc9bbdfddc314a8da98c08c9",
+    "unchangedCanonicalAvatarsReused": 2,
+    "nativeAssetReceipts": [
+      "native-asset-receipt.json",
+      "avatar-assets-receipt.json"
+    ],
+    "manifest": "media-manifest.json",
+    "prompts": [
+      "scene-prompt.txt",
+      "scene-refinement-prompt.txt"
+    ]
+  },
+  "audio": {
+    "originalValidRecordingsFound": 0,
+    "newRecordings": 0,
+    "originalBehavior": "Original explicitly forced speechSynthesis fallback (ttsOn=true, A.missing.has=()=>true).",
+    "result": "Live reading with teacher; no Play/speech/record/send controls",
+    "elevenLabsRegenerationRequired": false
+  },
+  "contentEvidence": "page-map.json",
+  "reuseEvidence": "component-provenance.json",
+  "code": {
+    "repository": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117",
+    "branch": "feat/materials-a201-exp-a1-20261117",
+    "headObserved": "cfc558ed36d4ffaacb4d43854961a15cc10b3581",
+    "entry": "stories/materials/TrialB1/TrialB1Lesson.tsx",
+    "export": "TrialB1Lesson",
+    "files": [
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/TrialB1.content.json",
+        "bytes": 8118,
+        "sha256": "a4041bfd330152c3f0920bef4eead4c497fdd777b526c64b6f3c2cd0ef659163"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/TrialB1.stories.tsx",
+        "bytes": 587,
+        "sha256": "65da9bca2a6ac13a054aec4f370835a46e2f45f2df5f425bdc12d4fc9e91f166"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/TrialB1.styles.ts",
+        "bytes": 4417,
+        "sha256": "79c2609980b58cd84e11fc98fcb949dd4f0c36ad092eeacd0bac829fa019c9a2"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/TrialB1.types.ts",
+        "bytes": 1299,
+        "sha256": "fa40e21aee2ffcc936b6b7f98dd343dc319f9378bd4bf030a83e2b4d936183b4"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/TrialB1Lesson.tsx",
+        "bytes": 6482,
+        "sha256": "db662f93e9e0948d35ec2271c97329ba2bdaffe2c5f800a8aa2b2973cdffcae7"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/ana-working.webp",
+        "bytes": 80744,
+        "sha256": "174e68947a8f81c77944b2cbaeb1c24ee284a749ecb10f5f065a2813a39cfd11"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/kim-profile.webp",
+        "bytes": 44302,
+        "sha256": "1637ecd219e5f3df56127eacdbea10ca510c59f16381e5e8f5c7f1a55d386fbf"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialB1/assets/roadside-stop.png",
+        "bytes": 2029628,
+        "sha256": "571e04bd813f9e92f9d5ecbcb8990ee57d878b95dc9bbdfddc314a8da98c08c9"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/docs/epics/experimental-b1/plan.json",
+        "bytes": 1243,
+        "sha256": "9b7e1e879ef7f5dd44b6690bdabb1263d7d24c4609df307a453531feda1f7db8"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/experimentais/dados/exp-b1.js",
+        "bytes": 8481,
+        "sha256": "647d0ff42bcabf322d8d646d54ec9c99d638162a9b3d1ad42771cbb988b7d125"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/experimentais/overrides/exp-b1.html",
+        "bytes": 3313170,
+        "sha256": "03ee0023d950d9062b2d30838298ca335d8419e9f81fcfaee49dd40d819fd764"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/experimentais/overrides/exp-b1.json",
+        "bytes": 466,
+        "sha256": "8cfefe7f25d5cd310ca852624d43ce301dc18f04937951a14342a619306bdc13"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/experimentais/saida/langy-exp-b1.html",
+        "bytes": 3313170,
+        "sha256": "03ee0023d950d9062b2d30838298ca335d8419e9f81fcfaee49dd40d819fd764"
+      }
+    ],
+    "globalSharedCatalogChanged": false,
+    "commitCreated": false,
+    "buildBundleExecuted": false,
+    "ciTriggered": false
+  },
+  "uxLab": {
+    "artifactId": "1abab24d-11b9-4a0d-9a3d-0ebd2df12159",
+    "publishedByThisAgent": false,
+    "patchDirectory": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-intermediario/outputs/b1-trip-20261118/lab-patch",
+    "files": [
+      "exp-b1.html",
+      "index.patch",
+      "apply-instructions.json"
+    ],
+    "sameContentAndImageBytes": true,
+    "pending": "Central writer must merge index row with other material patches and upload material file."
+  },
+  "checks": {
+    "standaloneInteractions": {
+      "passed": 29,
+      "runtimeErrors": [],
+      "textContrast": {
+        "count": 86,
+        "fails": []
+      },
+      "evidence": "evidence/runtime-checks.json",
+      "note": "Final interaction-only rerun after keyboard correction; all32 per-page/viewport renders and reflow assertions had completed in preceding pass. Avatar-only changes then checked separately."
+    },
+    "react": {
+      "passed": 21,
+      "surfaces": 4,
+      "runtimeErrors": [],
+      "evidence": "evidence/react-runtime-checks.json"
+    },
+    "avatars": {
+      "passed": true,
+      "cases": 8,
+      "evidence": "evidence/avatar-verification.json"
+    },
+    "viewportCaptures": [
+      "1280x900",
+      "1280x650",
+      "390x844",
+      "320x844"
+    ],
+    "sectionsCapturedPerRenderer": 8,
+    "visualInspection": [
+      "evidence/board-after-desktop.png",
+      "evidence/board-after-mobile.png",
+      "evidence/board-react-desktop.png",
+      "evidence/board-react-mobile.png",
+      "evidence/after-1280x650-s3.png",
+      "evidence/react-1280x650-s2.png",
+      "evidence/claude-final-1280.png",
+      "evidence/claude-final-390.png"
+    ],
+    "focusedEslint": "B1 files passed (exit0).",
+    "typecheck": "Whole-repo tsc exit2 due concurrent A1 and A201TrialContracts diagnostics; after correction no B1 diagnostics. No broad rerun after those unrelated changes.",
+    "sourceParity": "JSON content equal between original/portable source/React; native readback bytes equal final local publication."
+  },
+  "integrationActions": [
+    "Register TrialB1Lesson in the central standalone entry and catalog.",
+    "Prefer the material-specific exp-b1 override: revised EXP is canonical page data, intentionally not compatible with old exp-common.js. Central builder should copy the override or consume React, never rebuild B1 using legacy browser TTS.",
+    "Merge lab-patch/index.patch against current Lab index and publish exp-b1.html, retaining unrelated material changes.",
+    "Publish the coordinated four-material staging revision and qualify real Teacher route, including Notes, scroll and content/image revision."
+  ],
+  "staging": {
+    "publishedByThisAgent": false,
+    "verified": false,
+    "owner": "integracao",
+    "state": "awaiting_coordinated_integration"
+  },
+  "limits": [
+    "No authenticated native-canvas shell interaction through CUA; CLI rendered published bytes and assets; local browser ran exact material code.",
+    "No Teacher staging route tested in this lane; central publication pending.",
+    "No human approval of whole lesson inferred from approved characters."
+  ],
+  "visualGateReview": "Visual gate review: pending human"
+}

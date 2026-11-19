@@ -6,7 +6,9 @@ import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTh
 import { Stack, Surface } from '../shared/Lesson.styles'
 export const Greeting = styled(ChoiceCard)`
   gap: ${theme.spacing[4]};
-  padding: ${theme.spacing[4]} ${theme.spacing[5]};
+  padding: ${theme.spacing[2]};
+  border: 0;
+  background: transparent;
   b {
     font-size: clamp(1.25rem, 3.6cqh, 1.75rem);
     line-height: 1.2;
@@ -16,7 +18,7 @@ export const GreetingImage = styled.img`
   width: ${theme.spacing[12]};
   height: ${theme.spacing[12]};
   flex-shrink: 0;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
 `
 export const GreetingText = styled(Stack)`
@@ -28,8 +30,15 @@ export const GreetingText = styled(Stack)`
   }
 `
 export const SceneFit = styled.div`
+  button {
+    min-width: ${theme.spacing[12]};
+    min-height: ${theme.spacing[12]};
+    background: ${(p) => resolveSlideTheme(p).inverseCanvas};
+    color: ${(p) => resolveSlideTheme(p).inverseForeground};
+  }
+
   width: 100%;
-  max-width: calc((100dvh - 15rem) * 100 / 62);
+  max-width: 100%;
   margin-inline: auto;
 `
 export const Columns = styled.div<{ $scene?: boolean }>`
@@ -45,7 +54,7 @@ export const Columns = styled.div<{ $scene?: boolean }>`
 export const Support = styled(Surface)`
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
   gap: ${theme.spacing[2]};
-  b {
+  > b {
     display: block;
     padding: ${theme.spacing[2]};
     border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
@@ -105,7 +114,7 @@ export const Preference = styled(ChoiceCard)`
   justify-content: center;
   width: 100%;
   aspect-ratio: 4/3;
-  max-height: 40cqh;
+  min-height: 18rem;
   padding: ${theme.spacing[3]};
   gap: ${theme.spacing[2]};
   img {
@@ -113,7 +122,7 @@ export const Preference = styled(ChoiceCard)`
     width: 100%;
     min-height: 0;
     flex: 1;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   }
   b {
@@ -129,7 +138,7 @@ export const Selected = styled.span`
   display: grid;
   place-items: center;
   border-radius: ${theme.radius.circle};
-  background: ${theme.semantic.status.success.foreground};
+  background: ${(p) => resolveSlideTheme(p).accent};
   color: ${theme.colors.palette.white};
 `
 export const Questions = styled.div`
@@ -144,13 +153,13 @@ export const Talk = styled(ChoiceCard)`
   min-height: ${theme.spacing[12]};
   b {
     flex: 1;
-    font-size: clamp(0.875rem, 2.2cqh, 1rem);
+    font-size: clamp(1.125rem, 2.2cqh, 1.375rem);
     line-height: 1.3;
   }
   img {
     width: ${theme.spacing[8]};
     height: ${theme.spacing[8]};
-    object-fit: cover;
+    object-fit: contain;
     border-radius: ${theme.radius.sm};
   }
 `
@@ -173,4 +182,22 @@ export const SupportTitle = styled.h3`
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.14em;
   text-transform: uppercase;
+`
+
+export const Help = styled.details`
+  font-size: ${theme.typography.fontSize.md};
+  color: ${(p) => resolveSlideTheme(p).foreground};
+  summary {
+    cursor: pointer;
+    padding: ${theme.spacing[2]};
+    font-weight: ${theme.typography.fontWeight.semibold};
+  }
+  summary:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 2px;
+  }
+  p {
+    padding: ${theme.spacing[2]};
+    margin: 0;
+  }
 `

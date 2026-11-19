@@ -1,80 +1,74 @@
-import { toggleId } from '../shared/lessonState'
 import { Fragment, useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
+import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
-import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
-import { sceneImage } from '../shared/sceneAssets'
-import { SourceQuestions, DialoguePractice } from '../shared/LessonPractice'
-import type { SpeechProps } from '../shared/Lesson.types'
-import {
-  content,
-  greetingImages,
-  points,
-  preferenceImages,
-  talkImages,
-} from './TrialA1.data'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { SourceQuestions } from '../shared/LessonPractice'
+import { content, preferenceImages, pictures } from './TrialA1.data'
 import * as S from '../shared/Lesson.styles'
 import * as T from './TrialA1.styles'
 export function GreetingSection() {
   const [open, setOpen] = useState<string[]>([])
   return (
     <S.Stack>
-      {content.p1.cards.map((q, i) => (
-        <T.Greeting
-          key={q.q}
-          variant="lesson"
-          aria-label={q.q}
-          aria-expanded={open.includes(q.q)}
-          onClick={() => setOpen((old) => toggleId(old, q.q))}
-        >
-          <T.GreetingImage src={greetingImages[i]} alt="" />
-          <T.GreetingText>
-            <b>{q.q}</b>
-            {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
-            <span>{q.a}</span>
-          </T.GreetingText>
-        </T.Greeting>
+      {content.p1.cards.map((q) => (
+        <T.Support key={q.q}>
+          <T.Greeting
+            variant="lesson"
+            aria-expanded={open.includes(q.q)}
+            onClick={() => setOpen((old) => toggleId(old, q.q))}
+          >
+            <T.GreetingText>
+              <b>{q.q}</b>
+              {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
+            </T.GreetingText>
+          </T.Greeting>
+          <T.Help>
+            <summary>Apoio</summary>
+            <p>{q.a}</p>
+          </T.Help>
+        </T.Support>
       ))}
     </S.Stack>
   )
 }
-export function PictureTalkSection({ speech }: SpeechProps) {
-  const [visited, setVisited] = useState<string[]>([]),
-    [selected, setSelected] = useState<string>()
+export function PictureTalkSection() {
+  const [selected, setSelected] = useState<string>(),
+    [visited, setVisited] = useState<string[]>([])
   return (
     <T.Columns $scene>
       <T.SceneFit>
         <SceneExplorer
-          imageUrl={sceneImage('park')}
-          imageAlt="Parque ensolarado com música, bola de futebol, livro, cachorro, bicicleta e piquenique"
-          presentation="labels"
+          imageUrl={pictures.park}
+          imageAlt="Ana ouve música no parque; um livro, uma bola de futebol e um cachorro estão inteiros e separados."
+          presentation="explore"
+          labels={{ initial: 'O que você vê?', progress: 'imagens exploradas' }}
           hotspots={content.p2.items.map((p, i) => ({
             id: String(i),
             label: p.en,
             prompt: null,
-            xPercent: points[i]?.[0] ?? 50,
-            yPercent: points[i]?.[1] ?? 50,
+            xPercent: p.x,
+            yPercent: p.y,
           }))}
           selectedId={selected}
           visitedIds={visited}
           onSelect={(id) => {
-            setSelected(id)
+            setSelected(selected === id ? undefined : id)
             setVisited((old) => (old.includes(id) ? old : [...old, id]))
-            speech.speak([
-              { id: 'P.' + id, text: content.p2.items[Number(id)]?.en ?? '' },
-            ])
           }}
         />
       </T.SceneFit>
       <S.Stack>
         {content.p2.support.map((group) => (
           <T.Support key={group.h}>
-            <b>{group.h}</b>
-            {group.lines.map(([q, a], i) => (
-              <p key={i}>
-                {q}
-                {a ? <span>{a}</span> : null}
-              </p>
+            <h3>{group.h}</h3>
+            {group.lines.map(([q, a]) => (
+              <Fragment key={q}>
+                <p>{q}</p>
+                <T.Help>
+                  <summary>Apoio</summary>
+                  <p>{a}</p>
+                </T.Help>
+              </Fragment>
             ))}
           </T.Support>
         ))}
@@ -82,139 +76,118 @@ export function PictureTalkSection({ speech }: SpeechProps) {
     </T.Columns>
   )
 }
-export function ListenTalkSection({ speech }: SpeechProps) {
+export function ListenTalkSection() {
+  const [translated, setTranslated] = useState<string[]>([])
   return (
     <T.Columns>
-      <DialoguePractice
-        speech={speech}
+      <LearningDialogue
+        density="regular"
         lines={content.p3.lines.map((l, i) => ({
-          id: 'D.' + (i + 1),
-          who: l.who,
-          text: l.en,
-          g: l.g,
+          id: String(i),
+          speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+          side: l.who === 'kim' ? 'start' : 'end',
+          content: l.en,
+          translation: l.g,
         }))}
+        translatedIds={translated}
+        onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
       />
       <T.Support>
-        <b>Your turn</b>
-        <SourceQuestions
-          compact
-          items={content.p3.your.map(([question, hint]) => ({
-            question: question ?? '',
-            hint,
-          }))}
-        />
+        <h3>Agora vocês</h3>
+        {content.p3.your.map(([question, hint]) => (
+          <Fragment key={question}>
+            <p>{question}</p>
+            <T.Help>
+              <summary>Apoio</summary>
+              <p>{hint}</p>
+            </T.Help>
+          </Fragment>
+        ))}
       </T.Support>
     </T.Columns>
   )
 }
 export function PreferenceSection({
   index,
-  speech,
-}: SpeechProps & { index: number }) {
+}: {
+  index: number
+  speech?: unknown
+}) {
   const [pick, setPick] = useState<number>()
   const pair = content.p4.pairs[index]!
   return (
-    <ExercisePanel title={pair.q} counter={`${index + 1} / 3`}>
-      <S.Stack>
-        <T.Pair>
-          {[pair.a, pair.b].map((choice, i) => (
-            <Fragment key={choice[1]}>
-              {i ? <span>or</span> : null}
-              <T.Preference
-                variant="lesson"
-                aria-pressed={pick === i}
-                aria-label={choice[1]}
-                onClick={() => {
-                  if (pick === i) {
-                    setPick(undefined)
-                    speech.stop()
-                  } else {
-                    setPick(i)
-                    speech.speak([
-                      {
-                        id: `T.${index}${i === 0 ? 'a' : 'b'}`,
-                        text: choice[1] ?? '',
-                      },
-                    ])
-                  }
-                }}
-              >
-                <img src={preferenceImages[index]?.[i]} alt="" />
-                <b>{choice[1]}</b>
-                {pick === i ? (
-                  <T.Selected aria-hidden="true">✓</T.Selected>
-                ) : null}
-              </T.Preference>
-            </Fragment>
-          ))}
-        </T.Pair>
-        <T.Strip>
-          {content.p4.strip.map((text) => (
-            <span key={text}>{text}</span>
-          ))}
-        </T.Strip>
-      </S.Stack>
-    </ExercisePanel>
-  )
-}
-export function ConversationSection() {
-  const [done, setDone] = useState<string[]>([])
-  const qs = [...content.p5.qs, ...content.p5.go]
-  const cards = (from: number, to: number) => (
-    <T.Questions>
-      {qs.slice(from, to).map(([, q], n) => {
-        const i = from + n,
-          id = String(i)
-        return (
-          <T.Talk
-            variant="lesson"
-            key={id}
-            aria-pressed={done.includes(id)}
-            onClick={() => setDone((old) => toggleId(old, id))}
-          >
-            <img src={talkImages[i]} alt="" />
-            <b>{q}</b>
-            {done.includes(id) ? <span aria-hidden="true">✓</span> : null}
-          </T.Talk>
-        )
-      })}
-    </T.Questions>
-  )
-  return (
     <S.Stack>
-      {cards(0, content.p5.qs.length)}
-      <T.SupportTitle>Go further</T.SupportTitle>
-      {cards(content.p5.qs.length, qs.length)}
+      <T.Pair>
+        {[pair.a, pair.b].map((choice, i) => (
+          <Fragment key={choice[1]}>
+            {i ? <span>or</span> : null}
+            <T.Preference
+              variant="lesson"
+              aria-pressed={pick === i}
+              aria-label={choice[1]}
+              onClick={() => setPick(pick === i ? undefined : i)}
+            >
+              <img src={preferenceImages[index]?.[i]} alt="" />
+              <b>{choice[1]}</b>
+              {pick === i ? (
+                <T.Selected aria-hidden="true">✓</T.Selected>
+              ) : null}
+            </T.Preference>
+          </Fragment>
+        ))}
+      </T.Pair>
       <T.Strip>
-        {content.p5.strip.map((text) => (
+        {content.p4.strip.map((text) => (
           <span key={text}>{text}</span>
         ))}
       </T.Strip>
     </S.Stack>
   )
 }
-export function TodaySection({ speech }: SpeechProps) {
+export function ConversationSection() {
+  const [topics, setTopics] = useState<string[]>([])
+  return (
+    <S.Stack>
+      <T.Questions>
+        {content.p5.qs.map(([, q]) => (
+          <T.Talk
+            variant="lesson"
+            key={q}
+            aria-pressed={topics.includes(q ?? '')}
+            onClick={() => setTopics((old) => toggleId(old, q ?? ''))}
+          >
+            <b>{q}</b>
+            {topics.includes(q ?? '') ? (
+              <span aria-hidden="true">✓</span>
+            ) : null}
+          </T.Talk>
+        ))}
+      </T.Questions>
+      <T.Help>
+        <summary>Apoio para continuar</summary>
+        <T.Strip>
+          {content.p5.strip.map((t) => (
+            <span key={t}>{t}</span>
+          ))}
+        </T.Strip>
+        <SourceQuestions
+          items={content.p5.go.map(([, question]) => ({
+            question: question ?? '',
+          }))}
+        />
+      </T.Help>
+    </S.Stack>
+  )
+}
+export function TodaySection() {
   return (
     <T.Summary>
-      {content.p6.map((text, i) => {
-        const id = 'Y.' + i
-        return (
-          <S.Question key={text}>
-            <S.Number>{i + 1}</S.Number>
-            <div>{text}</div>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-label={`Listen: ${text}`}
-              onClick={() =>
-                speech.speak([{ id, text: text.replace(' / ', '. ') }])
-              }
-            >
-              Listen
-            </Button>
-          </S.Question>
-        )
-      })}
+      {content.p6.map((text, i) => (
+        <S.Question as="li" key={text}>
+          <S.Number>{i + 1}</S.Number>
+          <div>{text}</div>
+        </S.Question>
+      ))}
     </T.Summary>
   )
 }

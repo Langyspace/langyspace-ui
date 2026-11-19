@@ -34,10 +34,22 @@ const Trial = lazy(() =>
     default: m.TrialA1Lesson,
   })),
 )
+const TrialB1 = lazy(() =>
+  import('../TrialB1/TrialB1Lesson').then((m) => ({
+    default: m.TrialB1Lesson,
+  })),
+)
+const TrialB2 = lazy(() =>
+  import('../TrialB2/TrialB2Lesson').then((m) => ({
+    default: m.TrialB2Lesson,
+  })),
+)
 export function MaterialView({
   materialKey,
   studentPortalOrigin,
 }: MaterialViewProps) {
+  if (materialKey === 'trial-b1') return <TrialB1 />
+  if (materialKey === 'trial-b2') return <TrialB2 />
   if (materialKey === 'tema-frontend')
     return <Frontend studentPortalOrigin={studentPortalOrigin} />
   if (materialKey === 'a1-01')

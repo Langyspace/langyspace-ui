@@ -8,6 +8,8 @@ export type MaterialKey =
   | 'b1-01'
   | 'b2-01'
   | 'trial-a1-a2'
+  | 'trial-b1'
+  | 'trial-b2'
   | 'tema-frontend'
 export interface MaterialViewProps {
   studentPortalOrigin: string

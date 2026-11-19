@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A2.01 · This week I’m working in Porto. 12 páginas em 17 telas, a partir da exportação local de 16/11. Cenas com ambientação e áudio da Kim sintetizado localmente. Conteúdo, respostas, notas, fala e timer pertencem à prévia. Integração nos portais e tarefas dependem dos consumidores.',
+          'A2.01 · 13 continuous sections, planned 50-minute oral lesson. Exact official revision 1795045837-60e6; approved Ana/Kim illustrations and original Kim recording. Notes and progress use shared controls. Homework is live oral practice.',
       },
     },
   },
@@ -24,53 +24,27 @@ export const Vocabulary: Story = {
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's2')
     await userEvent.click(c.getByRole('button', { name: 'Show all' }))
-    await expect(c.getByText('a laptop', { exact: true })).toBeVisible()
+    await expect(c.getByText('I’m working.', { exact: true })).toBeVisible()
   },
 }
-export const WarmUpOne: Story = {
-  args: { initialPageId: 's31' },
-  play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's31')
-    await userEvent.click(c.getByRole('button', { name: /I’m in the river/ }))
-    await expect(c.getByText(/dentro da água/)).toBeVisible()
-    await userEvent.click(
-      c.getByRole('button', { name: /I’m next to the river/ }),
-    )
-    await expect(c.getByText('Now you', { exact: true })).toBeVisible()
-  },
-}
-export const WarmUpHiddenOptions: Story = {
-  args: { initialPageId: 's32' },
-  play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's32')
-    await userEvent.click(c.getByRole('button', { name: 'Show options' }))
-    await expect(
-      c.getByRole('button', { name: /I’m in a meeting/ }),
-    ).toBeVisible()
-  },
-}
-export const WarmUpHome: Story = { args: { initialPageId: 's33' } }
-export const Actions: Story = { args: { initialPageId: 's4' } }
-export const PronunciationOne: Story = { args: { initialPageId: 's51' } }
-export const PronunciationTwo: Story = { args: { initialPageId: 's52' } }
-export const DialogueOne: Story = { args: { initialPageId: 's6' } }
-export const DialogueTwo: Story = { args: { initialPageId: 's62' } }
-export const Comprehension: Story = { args: { initialPageId: 's61' } }
-export const Grammar: Story = { args: { initialPageId: 's7' } }
-export const YourVersion: Story = { args: { initialPageId: 's8' } }
-export const Listening: Story = { args: { initialPageId: 's9' } }
-export const RightOrWrong: Story = { args: { initialPageId: 's10' } }
+export const Actions: Story = { args: { initialPageId: 's3' } }
+export const Grammar: Story = { args: { initialPageId: 's4' } }
+export const Questions: Story = { args: { initialPageId: 's5' } }
+export const Dialogue: Story = { args: { initialPageId: 's6' } }
+export const Comprehension: Story = { args: { initialPageId: 's7' } }
+export const Gaps: Story = { args: { initialPageId: 's8' } }
+export const FollowUp: Story = { args: { initialPageId: 's9' } }
+export const Personal: Story = { args: { initialPageId: 's10' } }
+export const Listening: Story = { args: { initialPageId: 's11' } }
 export const RolePlay: Story = {
-  args: { initialPageId: 's11' },
+  args: { initialPageId: 's12' },
   play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's11')
+    const c = await lessonCanvas(canvasElement, 's12')
     await userEvent.click(c.getByRole('button', { name: 'Bad signal' }))
     await expect(c.getByRole('button', { name: 'Signal OK' })).toHaveAttribute(
       'aria-pressed',
       'true',
     )
-    await userEvent.click(c.getByRole('button', { name: 'End call' }))
-    await expect(c.getByRole('button', { name: 'Call again' })).toBeVisible()
   },
 }
-export const Homework: Story = { args: { initialPageId: 's12' } }
+export const Homework: Story = { args: { initialPageId: 's13' } }

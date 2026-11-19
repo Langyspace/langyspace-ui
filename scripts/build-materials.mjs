@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { execFileSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, copyFile, writeFile } from 'node:fs/promises'
-import { resolve, relative } from 'node:path'
+import { resolve, relative, extname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { styledComponentsBuild } from './styled-components-build.mjs'
 import { auditStyling } from '../audit/index.mjs'
@@ -69,7 +69,7 @@ const catalog = JSON.parse(
 )
 await mkdir(resolve(outDir, 'covers'), { recursive: true })
 for (const item of catalog) {
-  const cover = `covers/${item.key}.webp`
+  const cover = `covers/${item.key}${extname(item.coverSource)}`
   await copyFile(resolve(root, item.coverSource), resolve(outDir, cover))
   item.cover = cover
   delete item.coverSource
