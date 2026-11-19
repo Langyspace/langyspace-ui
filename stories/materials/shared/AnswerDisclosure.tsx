@@ -6,9 +6,11 @@ import { AnswerPanel, QuestionTrigger } from './LessonExercises.styles'
 export function AnswerDisclosure({
   answer,
   question,
+  marker,
 }: {
   answer: ReactNode
   question: string
+  marker?: ReactNode
 }) {
   const [open, setOpen] = useState(false)
   const id = useId()
@@ -21,7 +23,8 @@ export function AnswerDisclosure({
         aria-controls={id}
         onClick={() => setOpen(!open)}
       >
-        {question}
+        {marker}
+        <span>{question}</span>
       </QuestionTrigger>
       <Hint id={id} hidden={!open}>
         {answer}

@@ -94,6 +94,26 @@
   require bundle and package smoke checks.
 - Do not add an implicit global stylesheet requirement or rely on consumer import order.
 
+## Interactive lesson defaults
+
+- Apply reusable exercise changes in canonical components and shared lesson helpers, then adopt
+  them in every maintained material, the UX Lab and its originals. Do not fix one exported HTML
+  while leaving the source component with the old behavior.
+- Keep learner instructions short, clear and in English. Keep optional Portuguese translations
+  behind a click on the original text; reveal answers below the question without a separate
+  show/hide button.
+- Keep manually revealed vocabulary labels static. Use the same numbered marker component for
+  exercise questions and conversation prompts, vertically centered with the question itself.
+- Center dialogue text within equal vertical padding. Keep audio beside the English text, with
+  translations below; revealing a translation must not move the audio control.
+- Warm-up choices communicate correctness with the option states, without success banners or
+  explanations of wrong answers. Place short progress counters inside the exercise card.
+- Reuse prepared ElevenLabs recordings and native players; preload before the click and retain
+  buffers between plays. Do not replace recordings with browser speech or regenerate valid media.
+- Keep flag assets at their natural proportions, without added white frames or backgrounds.
+  Preserve white that is part of an official flag. Single-round timers omit the round label and
+  the numeric suffix on Start.
+
 ## Progressive guidance
 
 Owned component and live catalog presentation uses tagged styled-components. `pnpm run test:styling-system` rejects authored CSS/Sass/Less, JSX/HTML style, attrs style objects and manual DOM CSS writes. Package font stylesheets are allowed; generated bundles require exact reviewed source and asset provenance. Keep these checks in the existing release gate.

@@ -77,7 +77,7 @@ export function TrialA1Lesson({
                         }
                       />
                     }
-                    instruction="Escutem, respondam e mantenham a conversa."
+                    instruction="Listen, answer and keep talking."
                   >
                     <ListenTalkSection
                       onModeChange={(mode) => setModelActive(mode === 'model')}
@@ -124,7 +124,7 @@ export function TrialA1Lesson({
                   width="reading"
                   eyebrow="Review"
                   title="What can you say now?"
-                  instruction="Escolha duas frases e complete com novas ideias. Termine com uma pergunta à professora."
+                  instruction="Complete two sentences with new ideas. Finish with a question for your teacher."
                 >
                   <TodaySection />
                 </SlidePage>

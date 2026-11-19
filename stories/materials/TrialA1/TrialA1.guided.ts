@@ -2,30 +2,17 @@ import type { GuidedConversationContent } from '../shared/GuidedConversation.typ
 import { kim } from '../shared/characterPortraits'
 
 export const guidedConversation = {
-  labels: {
-    switcher: 'Etapas da conversa',
-    model: 'Modelo',
-    rehearse: 'Ensaio',
-    independent: 'Sem roteiro',
-    previous: 'Voltar',
-    next: 'Próximo turno',
-    turn: 'Turno',
-    of: 'de',
-    learner: 'Você',
-    support: 'Ver apoio',
-    hideSupport: 'Esconder apoio',
-  },
   rehearsalInstruction:
-    'A professora faz a fala da Kim. Responda sobre você; abra o apoio se precisar.',
+    'Your teacher is Kim. Answer about yourself. Use support if needed.',
   independentInstruction:
-    'Repitam com outro assunto, sem ler as frases. Respondam sobre vocês e devolvam uma pergunta.',
+    'Try a new topic without reading. Answer and ask a question.',
   turns: [
     {
       id: 'like-music',
       partner: 'Kim',
       avatarUrl: kim,
       partnerLine: 'Do you like music?',
-      cue: 'Responda e pergunte: e você?',
+      cue: 'Answer and ask: “And you?”',
       support: ['Yes, I do. / No, I don’t. And you?'],
     },
     {
@@ -33,7 +20,7 @@ export const guidedConversation = {
       partner: 'Kim',
       avatarUrl: kim,
       partnerLine: 'I like music and books. What do you like?',
-      cue: 'Conte do que você gosta.',
+      cue: 'Say what you like.',
       support: ['I like … and … .'],
     },
     {
@@ -41,7 +28,7 @@ export const guidedConversation = {
       partner: 'Kim',
       avatarUrl: kim,
       partnerLine: 'I like soccer!',
-      cue: 'Diga se vocês gostam da mesma coisa.',
+      cue: 'Say if you like the same things.',
       support: ['Me too! / I don’t like soccer.'],
     },
   ],

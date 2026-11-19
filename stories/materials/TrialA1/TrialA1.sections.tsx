@@ -115,7 +115,7 @@ export function ListenTalkSection({
           onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
         />
         <T.Support>
-          <T.SupportTitle>No diálogo</T.SupportTitle>
+          <T.SupportTitle>In the dialogue</T.SupportTitle>
           {content.p3.your.map(([question, hint]) => (
             <Fragment key={question}>
               <p>{question}</p>

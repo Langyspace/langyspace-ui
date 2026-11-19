@@ -4,7 +4,7 @@
   "titleParts": ["What do you ", "like?"],
   "goal": "Conversar em inglês sobre o que você gosta de fazer.",
   "p1": {
-    "ins": "Vamos nos conhecer e conversar sobre seus gostos.",
+    "ins": "Introduce yourself and talk about what you like.",
     "cards": [
       {
         "e": "🪪",
@@ -28,7 +28,7 @@
   },
   "p2": {
     "title": "A day in the park",
-    "ins": "Toque nos pontos e descubra os nomes. Depois, diga duas palavras sem olhar.",
+    "ins": "Tap the dots to learn the words. Say two without looking.",
     "bg": "park",
     "items": [
       {
@@ -118,16 +118,19 @@
     ],
     "support": [
       {
-        "h": "Depois de explorar",
+        "h": "After exploring",
         "lines": [
-          ["Sem abrir os pontos, diga duas palavras da cena.", "music · a soccer ball · a book · a dog"]
+          [
+            "Say two words from the picture without opening the dots.",
+            "music · a soccer ball · a book · a dog"
+          ]
         ]
       }
     ]
   },
   "p3": {
     "title": "Do you like the park?",
-    "ins": "Escutem o modelo. Depois, criem a conversa de vocês.",
+    "ins": "Listen to the model. Then have your own conversation.",
     "lines": [
       {
         "who": "kim",
@@ -155,13 +158,11 @@
         "g": "Futebol? Legal!"
       }
     ],
-    "your": [
-      ["Kim: books or soccer? And Ana?", "Kim: books. Ana: soccer."]
-    ]
+    "your": [["Kim: books or soccer? And Ana?", "Kim: books. Ana: soccer."]]
   },
   "p4": {
     "title": "Choose one",
-    "ins": "Conte do que você gosta e pergunte: “And you?”",
+    "ins": "Say what you like and ask: “And you?”",
     "strip": ["I like …", "I don’t like …", "And you?"],
     "pairs": [
       {
@@ -182,7 +183,7 @@
     ]
   },
   "p5": {
-    "ins": "Agora você pergunta. Escolha um assunto e conversem.",
+    "ins": "Choose a topic. Ask a question and keep talking.",
     "qs": [
       ["🎧", "Do you like music?"],
       ["🍿", "Do you like movies?"],

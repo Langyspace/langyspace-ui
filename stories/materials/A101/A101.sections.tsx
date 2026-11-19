@@ -347,12 +347,18 @@ export function GrammarNegative() {
 export function AgeSection() {
   return (
     <Styled.Stack>
-      <Styled.AgeExamples>
-        <strong>I’m 32 years old.</strong>
-        <span>or</span>
-        <strong>I’m 32.</strong>
-        <Styled.WrongExample>Wrong: I have 32.</Styled.WrongExample>
-      </Styled.AgeExamples>
+      <Styled.AgeTop>
+        <Styled.AgeExamples>
+          <strong>I’m 32 years old.</strong>
+          <span>or</span>
+          <strong>I’m 32.</strong>
+          <Styled.WrongExample>Wrong: I have 32.</Styled.WrongExample>
+        </Styled.AgeExamples>
+        <Styled.AgeImage
+          src={image('scene-birthday-adult')}
+          alt="An adult celebrating a birthday with a cake and balloons."
+        />
+      </Styled.AgeTop>
       <p>Ask your teacher:</p>
       <PromptExercise
         items={[

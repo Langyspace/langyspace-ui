@@ -57,9 +57,9 @@ export function PronunciationActivity({
       </Common.Row>
       <Common.Hint role="status">
         {result === undefined
-          ? 'Ouça e diga qual você ouviu.'
+          ? 'Listen and choose what you hear.'
           : result
-            ? 'Correto! Ouça mais uma vez.'
+            ? 'Correct! Listen again.'
             : tip}
       </Common.Hint>
       {score.length ? (
@@ -90,7 +90,7 @@ export function GrammarActivity({
   rows,
   explanation,
   afterReveal,
-  columns = { label: 'Quem', word: 'Palavra', example: 'Exemplo' },
+  columns = { label: 'Who', word: 'Word', example: 'Example' },
 }: GrammarActivityProps) {
   const [revealed, setRevealed] = useState<readonly string[]>([])
   const speech = useMaterialSpeech()

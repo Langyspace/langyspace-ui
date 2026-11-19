@@ -32,6 +32,7 @@ export const Prompt = styled.li`
 `
 
 export const AnswerPanel = styled.div`
+  width: 100%;
   min-width: 0;
   display: grid;
   justify-items: start;
@@ -39,7 +40,10 @@ export const AnswerPanel = styled.div`
 `
 
 export const QuestionTrigger = styled(Pressable)`
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  min-height: ${theme.spacing[8]};
   width: 100%;
   min-width: 0;
   padding: 0;
@@ -51,8 +55,25 @@ export const QuestionTrigger = styled(Pressable)`
   line-height: 1.5;
   text-align: left;
   cursor: pointer;
+  > span:last-child {
+    flex: 1;
+    min-width: 0;
+  }
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 3px;
+  }
+`
+
+export const PromptQuestion = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  width: 100%;
+  min-width: 0;
+  min-height: ${theme.spacing[8]};
+  p {
+    flex: 1;
+    min-width: 0;
   }
 `

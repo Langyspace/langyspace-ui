@@ -1,5 +1,8 @@
 import { styled } from 'styled-components'
-import { recipe } from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import {
+  recipe,
+  Number as MaterialNumber,
+} from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { theme } from '../../../src/foundations/theme/theme'
 import { Button } from '../../../src/components/Button/Button'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
@@ -174,17 +177,7 @@ export const DialogueQuestion = styled(SpeakingCard)`
     line-height: 1.3;
   }
 `
-export const Number = styled.span`
-  display: inline-grid;
-  place-items: center;
-  width: ${theme.spacing[8]};
-  height: ${theme.spacing[8]};
-  border-radius: ${theme.radius.circle};
-  background: ${theme.colors.palette.accent.pinkSoft};
-  color: ${(p) => recipe(p).accent};
-  font-size: ${theme.typography.fontSize.sm};
-  flex-shrink: 0;
-`
+export const Number = styled(MaterialNumber)``
 export const Guest = styled.figure`
   margin: 0;
   min-width: 0;
@@ -454,8 +447,6 @@ export const TrueCard = styled(SpeakingCard)<{ $index: number }>`
   ${Number} {
     width: 44px;
     height: 44px;
-    color: ${theme.colors.palette.white};
-    background: ${(p) => (p.$index % 3 === 0 ? theme.slides.accent : p.$index % 3 === 1 ? theme.semantic.status.success.foreground : theme.exercises.question)};
     font-size: ${theme.typography.fontSize.lg};
     font-weight: ${theme.typography.fontWeight.bold};
   }
@@ -576,12 +567,11 @@ export const CountryFlag = styled.img`
     right: ${theme.spacing[3]};
     width: clamp(${theme.spacing[16]}, 10cqw, ${theme.spacing[20]});
     height: auto;
-    aspect-ratio: 3 / 2;
     z-index: 1;
     object-fit: contain;
-    border: 2px solid ${theme.colors.palette.white};
+    border: 0;
     border-radius: ${theme.radius.sm};
-    background: ${theme.colors.palette.white};
+    background: transparent;
   }
 `
 
@@ -661,4 +651,21 @@ export const TruthsPanel = styled.div`
   p {
     color: ${(p) => recipe(p).muted};
   }
+`
+
+export const AgeTop = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: ${theme.spacing[6]};
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+`
+export const AgeImage = styled.img`
+  width: 100%;
+  height: auto;
+  max-height: clamp(8rem, 24cqh, 16rem);
+  object-fit: contain;
+  border-radius: ${theme.radius.lg};
 `

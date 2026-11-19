@@ -1,4 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import {
+  resetPreparedAudio,
+  usePreparedAudio,
+} from '../shared/usePreparedAudio'
 import type { SpeechLine } from './B101.types'
 import clip0 from './assets/audio/D.1.mp3'
 import clip1 from './assets/audio/D.2.mp3'
@@ -34,6 +38,7 @@ const sources: Readonly<Record<string, string>> = {
 }
 /** Recorded ElevenLabs clips only; one native element owns the dialogue queue. */
 export function useB101Audio() {
+  const preparedAudio = usePreparedAudio(Object.values(sources))
   const player = useRef<HTMLAudioElement | null>(null)
   const request = useRef(0)
   const [playingId, setPlayingId] = useState<string>()
@@ -42,11 +47,7 @@ export function useB101Audio() {
   const stop = useCallback(() => {
     request.current++
     if (player.current) {
-      player.current.onended = null
-      player.current.onerror = null
-      player.current.pause()
-      player.current.removeAttribute('src')
-      player.current.load()
+      resetPreparedAudio(player.current)
       player.current = null
     }
     setPlayingId(undefined)
@@ -69,9 +70,9 @@ export function useB101Audio() {
           setError('Audio unavailable. Try another clip.')
           return
         }
-        const audio = player.current ?? new Audio()
+        if (player.current) resetPreparedAudio(player.current)
+        const audio = preparedAudio(src)
         player.current = audio
-        audio.src = src
         audio.playbackRate = 1
         setPlayingId(line.id)
         setPaused(false)
@@ -87,7 +88,7 @@ export function useB101Audio() {
       }
       run(0)
     },
-    [stop],
+    [stop, preparedAudio],
   )
   const togglePause = () => {
     const audio = player.current
@@ -110,11 +111,7 @@ export function useB101Audio() {
     () => () => {
       request.current++
       if (player.current) {
-        player.current.onended = null
-        player.current.onerror = null
-        player.current.pause()
-        player.current.removeAttribute('src')
-        player.current.load()
+        resetPreparedAudio(player.current)
       }
     },
     [],

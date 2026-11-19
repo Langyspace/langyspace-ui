@@ -1,5 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import provenance from './audio-provenance.json'
+import {
+  resetPreparedAudio,
+  usePreparedAudio,
+} from '../shared/usePreparedAudio'
 import type { SpeechLine } from './A101.types'
 
 const assets = import.meta.glob('./assets/**/*.mp3', {
@@ -8,7 +12,15 @@ const assets = import.meta.glob('./assets/**/*.mp3', {
   import: 'default',
 }) as Record<string, string>
 
+const recordings = [...provenance.items]
+  .sort(
+    (a, b) => Number(!a.id.startsWith('ph_')) - Number(!b.id.startsWith('ph_')),
+  )
+  .map((clip) => assets['./' + clip.file])
+  .filter((src): src is string => Boolean(src))
+
 export function useLessonSpeech() {
+  const preparedAudio = usePreparedAudio(recordings)
   const [playingId, setPlayingId] = useState<string>()
   const [paused, setPaused] = useState(false)
   const [error, setError] = useState('')
@@ -18,8 +30,7 @@ export function useLessonSpeech() {
     version.current++
     const audio = current.current
     if (audio) {
-      audio.onended = audio.onerror = audio.onplaying = null
-      audio.pause()
+      resetPreparedAudio(audio)
     }
     current.current = null
     setPlayingId(undefined)
@@ -46,7 +57,8 @@ export function useLessonSpeech() {
           setError('Áudio indisponível. Leia com a professora.')
           return
         }
-        const audio = new Audio(src)
+        if (current.current) resetPreparedAudio(current.current)
+        const audio = preparedAudio(src)
         current.current = audio
         const fail = () => {
           if (request !== version.current || current.current !== audio) return
@@ -65,15 +77,14 @@ export function useLessonSpeech() {
       }
       run(0)
     },
-    [stop],
+    [stop, preparedAudio],
   )
   useEffect(
     () => () => {
       version.current++
       const audio = current.current
       if (audio) {
-        audio.onended = audio.onerror = audio.onplaying = null
-        audio.pause()
+        resetPreparedAudio(audio)
       }
     },
     [],

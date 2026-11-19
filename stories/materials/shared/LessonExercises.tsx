@@ -134,16 +134,24 @@ export function PromptExercise({
     <Styled.PromptList>
       {items.map((item, index) => (
         <Styled.Prompt key={item.id}>
-          {numbered ? (
-            <Common.Number aria-hidden="true">{index + 1}</Common.Number>
-          ) : null}
-          <Common.Stack>
-            {item.answer ? (
-              <AnswerDisclosure question={item.prompt} answer={item.answer} />
-            ) : (
+          {item.answer ? (
+            <AnswerDisclosure
+              question={item.prompt}
+              answer={item.answer}
+              marker={
+                numbered ? (
+                  <Common.Number aria-hidden="true">{index + 1}</Common.Number>
+                ) : undefined
+              }
+            />
+          ) : (
+            <Styled.PromptQuestion>
+              {numbered ? (
+                <Common.Number aria-hidden="true">{index + 1}</Common.Number>
+              ) : null}
               <p>{item.prompt}</p>
-            )}
-          </Common.Stack>
+            </Styled.PromptQuestion>
+          )}
         </Styled.Prompt>
       ))}
     </Styled.PromptList>
@@ -169,7 +177,7 @@ export function GapExercise({ items, choices }: GapExerciseProps) {
           setWrong(undefined)
         } else setWrong(choice)
       }}
-      status={!active ? 'Concluído!' : wrong ? 'Tente novamente.' : undefined}
+      status={!active ? 'Done!' : wrong ? 'Try again.' : undefined}
     />
   )
 }

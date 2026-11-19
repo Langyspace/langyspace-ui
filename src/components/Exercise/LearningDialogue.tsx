@@ -107,10 +107,10 @@ export function LearningDialogue({
               ) : (
                 <div>{line.content}</div>
               )}
-              {(translatedIds?.includes(line.id) ?? false) ? (
-                <Styled.Translation>{line.translation}</Styled.Translation>
-              ) : null}
             </Styled.Message>
+            {(translatedIds?.includes(line.id) ?? false) ? (
+              <Styled.Translation>{line.translation}</Styled.Translation>
+            ) : null}
             {onPlay && line.audioLabel ? (
               <IconButton
                 size="sm"

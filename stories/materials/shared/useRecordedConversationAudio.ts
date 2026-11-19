@@ -10,20 +10,19 @@ import type {
   RecordedConversationState,
 } from './RecordedDialoguePlayback.types'
 
+import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
+
 const idle = (): RecordedConversationState => ({ status: 'idle', error: '' })
-const dispose = (audio: HTMLAudioElement) => {
-  audio.onplaying = audio.onwaiting = audio.onpause = null
-  audio.onended = audio.onerror = null
-  audio.pause()
-  audio.removeAttribute('src')
-  audio.load()
-}
+const dispose = resetPreparedAudio
 
 /** B101/C101's recorded run-next queue, injected once for the six missing models. */
 export function useRecordedConversationAudio(
   active: boolean,
   conversation: RecordedConversationDefinition | undefined,
 ) {
+  const preparedAudio = usePreparedAudio(
+    conversation?.turns.map((turn) => turn.src) ?? [],
+  )
   const [state, setState] = useState<RecordedConversationState>(idle)
   const stateRef = useRef(state)
   const player = useRef<HTMLAudioElement | null>(null)
@@ -154,7 +153,7 @@ export function useRecordedConversationAudio(
         publish({ status: 'ended', error: '' })
         return
       }
-      const next = new Audio(turn.src)
+      const next = preparedAudio(turn.src)
       player.current = next
       next.playbackRate = 1
       publish({ status: 'loading', currentId: turn.id, error: '' })

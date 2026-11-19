@@ -167,7 +167,7 @@ function VoiceMessageContent({
               <audio
                 ref={media.audioRef}
                 src={audio.src}
-                preload="metadata"
+                preload="auto"
                 {...media.events}
               />
               <Styled.Player>

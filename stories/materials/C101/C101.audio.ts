@@ -1,7 +1,12 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import {
+  resetPreparedAudio,
+  usePreparedAudio,
+} from '../shared/usePreparedAudio'
 import { audioSources } from './C101.assets'
 export const audioUrl = (id: string) => audioSources[id]
 export function useC101Audio() {
+  const preparedAudio = usePreparedAudio(Object.values(audioSources))
   const [playingId, setPlayingId] = useState<string>()
   const [paused, setPaused] = useState(false)
   const [error, setError] = useState('')
@@ -9,7 +14,7 @@ export function useC101Audio() {
   const revision = useRef(0)
   const stop = useCallback(() => {
     revision.current++
-    element.current?.pause()
+    if (element.current) resetPreparedAudio(element.current)
     element.current = null
     setPlayingId(undefined)
     setPaused(false)
@@ -32,12 +37,13 @@ export function useC101Audio() {
           setError('The recording is unavailable. Try again.')
           return
         }
-        const audio = new Audio(src)
+        if (element.current) resetPreparedAudio(element.current)
+        const audio = preparedAudio(src)
         element.current = audio
         audio.onended = () => run(i + 1)
         const failed = () => {
           if (current !== revision.current) return
-          element.current?.pause()
+          if (element.current) resetPreparedAudio(element.current)
           element.current = null
           setPlayingId(undefined)
           setPaused(false)
@@ -50,7 +56,7 @@ export function useC101Audio() {
       }
       run(0)
     },
-    [stop],
+    [stop, preparedAudio],
   )
   const togglePause = () => {
     if (!element.current) return
@@ -67,7 +73,7 @@ export function useC101Audio() {
   useEffect(
     () => () => {
       revision.current++
-      element.current?.pause()
+      if (element.current) resetPreparedAudio(element.current)
     },
     [],
   )

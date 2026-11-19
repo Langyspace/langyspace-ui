@@ -58,7 +58,7 @@ export function ListeningSection({ active }: ActiveSectionProps) {
         <audio
           ref={media.audioRef}
           src={voice}
-          preload="metadata"
+          preload="auto"
           {...media.events}
           onEnded={() => {
             media.events.onEnded()

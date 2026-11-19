@@ -1,4 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import {
+  resetPreparedAudio,
+  usePreparedAudio,
+} from '../shared/usePreparedAudio'
 import type { LessonSpeech } from '../shared/Lesson.types'
 const clips = import.meta.glob<string>('./assets/b201-pair-*.mp3', {
   eager: true,
@@ -6,15 +10,17 @@ const clips = import.meta.glob<string>('./assets/b201-pair-*.mp3', {
   import: 'default',
 })
 export function useB201Speech(): LessonSpeech {
+  const preparedAudio = usePreparedAudio(Object.values(clips))
+  const generation = useRef(0)
   const current = useRef<HTMLAudioElement | null>(null)
   const [playingId, setPlayingId] = useState<string>()
   const [paused, setPaused] = useState(false)
   const [error, setError] = useState('')
   const stop = useCallback(() => {
+    generation.current++
     const audio = current.current
     if (audio) {
-      audio.pause()
-      audio.currentTime = 0
+      resetPreparedAudio(audio)
       current.current = null
     }
     setPlayingId(undefined)
@@ -31,33 +37,35 @@ export function useB201Speech(): LessonSpeech {
         setError('Audio unavailable. Try again.')
         return
       }
-      const audio = new Audio(src)
+      const token = generation.current
+      const audio = preparedAudio(src)
       current.current = audio
       audio.onended = () => {
-        if (current.current === audio) {
+        if (token === generation.current && current.current === audio) {
           setPlayingId(undefined)
           setPaused(false)
         }
       }
       audio.onerror = () => {
-        if (current.current === audio) {
+        if (token === generation.current && current.current === audio) {
           setPlayingId(undefined)
           setError('Audio unavailable. Try again.')
         }
       }
       setPlayingId(line.id)
       void audio.play().catch(() => {
-        if (current.current === audio) {
+        if (token === generation.current && current.current === audio) {
           setPlayingId(undefined)
           setError('Audio unavailable. Try again.')
         }
       })
     },
-    [stop],
+    [stop, preparedAudio],
   )
   useEffect(
     () => () => {
-      current.current?.pause()
+      generation.current++
+      if (current.current) resetPreparedAudio(current.current)
     },
     [],
   )

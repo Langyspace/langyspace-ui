@@ -68,7 +68,7 @@ export const Speech = styled.div<{
   gap: ${theme.spacing[2]};
   max-width: 100%;
   min-width: 0;
-  padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[1]} 14px;
+  padding: ${theme.spacing[2]} ${theme.spacing[2]} ${theme.spacing[2]} 14px;
   border: 0;
   border-radius: ${(p) => (p.$side === 'start' ? '6px 20px 20px 20px' : '20px 6px 20px 20px')};
   background: ${(p) => (p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
@@ -83,14 +83,23 @@ export const Speech = styled.div<{
     font-size: ${theme.typography.fontSize.md};
   }
   > button {
-    align-self: start;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
   }
 `
 export const Message = styled.div`
-  display: grid;
-  gap: ${theme.spacing[2]};
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+  min-height: ${theme.spacing[10]};
   min-width: 0;
   overflow-wrap: anywhere;
+  > * {
+    flex: 1;
+    min-width: 0;
+  }
 `
 const textAction = css`
   border: 0;
@@ -112,6 +121,8 @@ export const RichTranslate = styled.div`
   ${textAction}
 `
 export const Translation = styled.div`
+  grid-column: 1;
+  grid-row: 2;
   min-width: 0;
   contain: inline-size;
   font-size: ${theme.typography.fontSize.sm};

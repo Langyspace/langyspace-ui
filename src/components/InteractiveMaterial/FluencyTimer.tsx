@@ -16,14 +16,15 @@ export function FluencyTimer({
   ...props
 }: FluencyTimerProps) {
   const text = {
-    start: 'Começar rodada',
-    pause: 'Parar',
-    restart: 'Recomeçar',
-    round: 'Rodada',
-    finished: 'Fim',
-    empty: 'Nenhuma rodada.',
+    start: 'Start',
+    pause: 'Pause',
+    restart: 'Restart',
+    round: 'Round',
+    finished: 'Time’s up!',
+    empty: 'No rounds.',
     ...labels,
   }
+  const singleRound = rounds.length === 1
   const round = rounds[roundIndex]
   const finished = roundIndex >= rounds.length && !!rounds.length
   const left = Math.max(
@@ -52,13 +53,15 @@ export function FluencyTimer({
           ? '✓'
           : `${Math.floor(left / 60)}:${String(left % 60).padStart(2, '0')}`}
       </Styled.Clock>
-      <Common.Tag>
-        {finished
-          ? text.finished
-          : round
-            ? `${text.round} ${roundIndex + 1}`
-            : text.empty}
-      </Common.Tag>
+      {!singleRound || finished ? (
+        <Common.Tag>
+          {finished
+            ? text.finished
+            : round
+              ? `${text.round} ${roundIndex + 1}`
+              : text.empty}
+        </Common.Tag>
+      ) : null}
       {round ? (
         <Styled.Progress
           max={Math.max(1, round.seconds)}
@@ -82,7 +85,9 @@ export function FluencyTimer({
           ? text.restart
           : running
             ? text.pause
-            : `${text.start} ${roundIndex + 1}`}
+            : singleRound
+              ? text.start
+              : `${text.start} ${roundIndex + 1}`}
       </Common.Action>
     </Styled.Root>
   )

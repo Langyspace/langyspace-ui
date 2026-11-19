@@ -1,9 +1,11 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
 /** Same single-player/request-guard pattern as the recorded B1/A1 dialogue controllers. */
 export function useSceneAudio(
   active: boolean,
   clips: Readonly<Record<string, string>>,
 ) {
+  const preparedAudio = usePreparedAudio(Object.values(clips))
   const playerRef = useRef<HTMLAudioElement | null>(null)
   const requestRef = useRef(0)
   const [playingId, setPlayingId] = useState<string>()
@@ -12,10 +14,7 @@ export function useSceneAudio(
     requestRef.current++
     const audio = playerRef.current
     if (audio) {
-      audio.onended = audio.onerror = audio.onplaying = null
-      audio.pause()
-      audio.removeAttribute('src')
-      audio.load()
+      resetPreparedAudio(audio)
     }
     playerRef.current = null
   }, [])
@@ -29,7 +28,7 @@ export function useSceneAudio(
       stop()
       if (!active || !clips[id]) return
       const token = requestRef.current
-      const audio = new Audio(clips[id])
+      const audio = preparedAudio(clips[id]!)
       playerRef.current = audio
       setPlayingId(id)
       const fail = () => {
@@ -44,7 +43,7 @@ export function useSceneAudio(
       }
       void audio.play().catch(fail)
     },
-    [active, clips, release, stop],
+    [active, clips, release, stop, preparedAudio],
   )
   // Changing pages releases the previous page's external playerRef and its UI state.
   useEffect(() => stop, [active, stop])
