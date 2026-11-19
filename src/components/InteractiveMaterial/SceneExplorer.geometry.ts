@@ -57,7 +57,7 @@ export function scenePoint(geometry: SceneImageGeometry, x: number, y: number) {
   }
 }
 
-/** Prefer above the target; use another clear side or reserve space above the image. */
+/** Prefer above the target, then below; keep every fallback inside the image. */
 export function sceneCalloutLayout(
   frame: { width: number; height: number },
   point: { x: number; y: number },
@@ -73,10 +73,6 @@ export function sceneCalloutLayout(
     point.x - callout.width / 2,
     frame.width - callout.width - edge,
   )
-  const centeredTop = clamp(
-    point.y - callout.height / 2,
-    frame.height - callout.height - edge,
-  )
   const candidates = [
     {
       placement: 'above' as const,
@@ -88,23 +84,15 @@ export function sceneCalloutLayout(
       left: centeredLeft,
       top: target.top + target.height + gap,
     },
-    {
-      placement: 'left' as const,
-      left: target.left - gap - callout.width,
-      top: centeredTop,
-    },
-    {
-      placement: 'right' as const,
-      left: target.left + target.width + gap,
-      top: centeredTop,
-    },
   ]
+  const fits = (candidate: (typeof candidates)[number]) =>
+    candidate.left >= edge &&
+    candidate.top >= edge &&
+    candidate.left + callout.width <= frame.width - edge &&
+    candidate.top + callout.height <= frame.height - edge
   const selected = candidates.find(
     (candidate) =>
-      candidate.left >= edge &&
-      candidate.top >= edge &&
-      candidate.left + callout.width <= frame.width - edge &&
-      candidate.top + callout.height <= frame.height - edge &&
+      fits(candidate) &&
       obstacles.every(
         (obstacle) =>
           candidate.left + callout.width <= obstacle.left ||
@@ -116,13 +104,16 @@ export function sceneCalloutLayout(
   const fallback = {
     placement: 'above' as const,
     left: centeredLeft,
-    top: -callout.height - gap,
+    top: clamp(
+      point.y - gap - callout.height,
+      frame.height - callout.height - edge,
+    ),
   }
-  const result = selected ?? fallback
+  const result = selected ?? candidates.find(fits) ?? fallback
   const vertical = result.placement === 'above' || result.placement === 'below'
   return {
     ...result,
-    gutter: selected ? 0 : callout.height + gap,
+    gutter: 0,
     arrow: clamp(
       vertical ? point.x - result.left : point.y - result.top,
       (vertical ? callout.width : callout.height) - edge,

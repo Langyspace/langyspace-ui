@@ -8,12 +8,7 @@ export function useLessonPage(
   const [id, setId] = useState(() => {
     if (initialPageId !== undefined)
       return ids.includes(initialPageId) ? initialPageId : (ids[0] ?? '')
-    try {
-      const saved = window.localStorage.getItem(key)
-      if (saved && ids.includes(saved)) return saved
-    } catch {
-      /* Reading remains available without browser storage. */
-    }
+    // A new material session starts at the beginning; saved progress stays intact.
     return ids[0] ?? ''
   })
   const change = (next: string) => {

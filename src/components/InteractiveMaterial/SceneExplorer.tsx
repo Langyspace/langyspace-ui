@@ -19,6 +19,7 @@ import type {
   SceneCalloutLayout,
   SceneExplorerProps,
   SceneImageGeometry,
+  SceneTargetRect,
 } from './SceneExplorer.types'
 
 export function SceneExplorer(options: SceneExplorerProps) {
@@ -43,6 +44,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
   const calloutRef = useRef<HTMLDivElement>(null)
   const [geometry, setGeometry] = useState<SceneImageGeometry>()
   const [layout, setLayout] = useState<SceneCalloutLayout>()
+  const [imageBounds, setImageBounds] = useState<SceneTargetRect>()
   const [frameWidth, setFrameWidth] = useState(0)
   const [localSelectedId, setLocalSelectedId] = useState<string>()
   const controlledSelection = Object.hasOwn(options, 'selectedId')
@@ -52,9 +54,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
   const showCallout = presentation === 'explore' || compactLabels
   const currentSelectedId = controlledSelection
     ? selectedId
-    : presentation === 'labels'
-      ? localSelectedId
-      : selectedId
+    : localSelectedId
   const text = {
     initial: 'Tap a dot to explore',
     show: 'Mostrar resposta',
@@ -88,6 +88,21 @@ export function SceneExplorer(options: SceneExplorerProps) {
     setGeometry((old) =>
       JSON.stringify(old) === JSON.stringify(next) ? old : next,
     )
+    const left = Math.max(0, box.left - bounds.left, next.left)
+    const top = Math.max(0, box.top - bounds.top, next.top)
+    const visible = {
+      left,
+      top,
+      width:
+        Math.min(bounds.width, box.right - bounds.left, next.left + next.width) -
+        left,
+      height:
+        Math.min(bounds.height, box.bottom - bounds.top, next.top + next.height) -
+        top,
+    }
+    setImageBounds((old) =>
+      JSON.stringify(old) === JSON.stringify(visible) ? old : visible,
+    )
     if (!selected || !calloutRef.current) return
     const point = scenePoint(next, selected.xPercent, selected.yPercent)
     const target = selected.targetBounds
@@ -115,18 +130,27 @@ export function SceneExplorer(options: SceneExplorerProps) {
           : []),
       ]
     })
-    const nextLayout = sceneCalloutLayout(
-      bounds,
-      point,
+    const relativeLayout = sceneCalloutLayout(
+      visible,
+      { x: point.x - left, y: point.y - top },
       {
-        left: start.x,
-        top: start.y,
+        left: start.x - left,
+        top: start.y - top,
         width: target ? (next.width * target.widthPercent) / 100 : 48,
         height: target ? (next.height * target.heightPercent) / 100 : 48,
       },
       panel,
-      obstacles,
+      obstacles.map((obstacle) => ({
+        ...obstacle,
+        left: obstacle.left - left,
+        top: obstacle.top - top,
+      })),
     )
+    const nextLayout = {
+      ...relativeLayout,
+      left: relativeLayout.left + left,
+      top: relativeLayout.top + top,
+    }
     setLayout((old) =>
       JSON.stringify(old) === JSON.stringify(nextLayout) ? old : nextLayout,
     )
@@ -195,12 +219,12 @@ export function SceneExplorer(options: SceneExplorerProps) {
               }
               data-scene-compact={compactLabels || undefined}
               onClick={() => {
-                if (presentation === 'labels' && !controlledSelection)
+                if (!controlledSelection)
                   setLocalSelectedId((old) =>
                     !labelButtons && old === h.id ? undefined : h.id,
                   )
                 onSelect(h.id)
-                if (labelButtons) onPlayHotspot?.(h.id)
+                onPlayHotspot?.(h.id)
               }}
             >
               {labelButtons ? <span>{h.label}</span> : null}
@@ -219,6 +243,8 @@ export function SceneExplorer(options: SceneExplorerProps) {
             $top={layout?.top ?? 8}
             $placement={layout?.placement ?? 'above'}
             $arrow={layout?.arrow ?? 24}
+            $imageWidth={imageBounds?.width}
+            $imageHeight={imageBounds?.height}
           >
             <Styled.CalloutHeading>
               <Common.Heading>{selected.label}</Common.Heading>

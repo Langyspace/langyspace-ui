@@ -111,6 +111,8 @@ export const Callout = styled(Common.Surface)<{
   $top: number
   $placement: 'above' | 'below' | 'left' | 'right'
   $arrow: number
+  $imageWidth?: number
+  $imageHeight?: number
 }>`
   position: absolute;
   z-index: 5;
@@ -118,7 +120,12 @@ export const Callout = styled(Common.Surface)<{
   left: ${(p) => p.$left}px;
   top: ${(p) => p.$top}px;
   width: max-content;
-  max-width: min(19rem, calc(100% - 1rem));
+  max-width: min(
+    19rem,
+    ${(p) => p.$imageWidth === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageWidth - 16)}px`}
+  );
+  max-height: ${(p) => p.$imageHeight === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageHeight - 16)}px`};
+  overflow: auto;
   padding: ${theme.spacing[3]};
   gap: ${theme.spacing[2]};
   box-shadow: ${theme.shadows.md};
