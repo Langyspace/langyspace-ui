@@ -110,13 +110,9 @@ export function sceneCalloutLayout(
     ),
   }
   const result = selected ?? candidates.find(fits) ?? fallback
-  const vertical = result.placement === 'above' || result.placement === 'below'
   return {
     ...result,
     gutter: 0,
-    arrow: clamp(
-      vertical ? point.x - result.left : point.y - result.top,
-      (vertical ? callout.width : callout.height) - edge,
-    ),
+    arrow: clamp(point.x - result.left, callout.width - edge),
   }
 }
