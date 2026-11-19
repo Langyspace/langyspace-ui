@@ -97,7 +97,9 @@ export const HiddenGrammar: Story = { render: () => <GrammarDemo hidden /> }
 export const FillInTheBlanks: Story = { render: () => <GapsDemo /> }
 export const RolePlay: Story = { render: () => <RolePlayDemo /> }
 export const ExploreTheScene: Story = { render: () => <SceneDemo /> }
-export const AdvancedScene: Story = { render: () => <SceneDemo level="c2" /> }
+export const AdvancedScene: Story = {
+  render: () => <SceneDemo level="c2" practice />,
+}
 export const MinimalPairs: Story = { render: () => <PairsDemo /> }
 export const Fluency: Story = { render: () => <FluencyDemo /> }
 export const AdvancedFluency: Story = {

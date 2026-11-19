@@ -1,3 +1,7 @@
+import { GuidedConversation } from '../shared/GuidedConversation'
+import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
+import { guidedConversation } from './TrialB1.guided'
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -42,11 +46,17 @@ function Support({
     </S.Support>
   )
 }
-function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
+function Activity({
+  page,
+  active,
+  onModeChange,
+}: { page: TrialB1Page; active: boolean } & Pick<
+  GuidedConversationProps,
+  'onModeChange'
+>) {
   const audio = useSceneAudio(active && page.kind === 'scene', sceneClips)
   const [selected, setSelected] = useState<string>()
   const [visited, setVisited] = useState<string[]>([])
-  const [support, setSupport] = useState(false)
   const [translated, setTranslated] = useState(false)
   const [learner, setLearner] = useState('ana')
   const [phrases, setPhrases] = useState<string[]>([])
@@ -68,80 +78,72 @@ function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
     )
   if (page.kind === 'scene')
     return (
-      <S.Scene
-        imageUrl={sceneUrl}
-        imageAlt={page.imageAlt}
-        hotspots={page.hotspots.map((h) => ({
-          ...h,
-          prompt: (
-            <>
-              <p>{h.prompt}</p>
-              {selected === h.id && audio.error ? (
-                <p role="status">{audio.error}</p>
-              ) : null}
-            </>
-          ),
-          answer: <p>{h.support}</p>,
-        }))}
-        selectedId={selected}
-        visitedIds={visited}
-        onPlayHotspot={audio.play}
-        playingId={audio.playingId}
-        onSelect={(id) => {
-          audio.stop()
-          setSelected(id)
-          setSupport(false)
-          setVisited((ids) => (ids.includes(id) ? ids : [...ids, id]))
-        }}
-        answerVisible={support}
-        onAnswerToggle={() => setSupport((open) => !open)}
-        labels={{
-          initial: '',
-          show: 'Show support',
-          hide: 'Hide support',
-          progress: 'explored',
-        }}
-      />
+      <>
+        <S.Scene
+          imageUrl={sceneUrl}
+          imageAlt={page.imageAlt}
+          hotspots={page.hotspots.map((h) => ({
+            ...h,
+            prompt: null,
+          }))}
+          selectedId={selected}
+          visitedIds={visited}
+          onPlayHotspot={audio.play}
+          playingId={audio.playingId}
+          onSelect={(id) => {
+            audio.stop()
+            setSelected(id)
+            setVisited((ids) => (ids.includes(id) ? ids : [...ids, id]))
+          }}
+          labels={{
+            initial: '',
+          }}
+        />
+        {selected && audio.error ? <p role="status">{audio.error}</p> : null}
+      </>
     )
   if (page.kind === 'dialogue')
     return (
-      <S.Stack>
-        <S.Tools>
-          <RecordedDialoguePlayback
-            conversationId="TrialB1:s3"
-            active={active && page.id === 's3'}
-          />
-          <Button
-            variant="secondary"
-            aria-pressed={learner === 'kim'}
-            onClick={() => setLearner((who) => (who === 'ana' ? 'kim' : 'ana'))}
-          >
-            You: {learner === 'ana' ? 'Ana' : 'Kim'} · Swap roles
-          </Button>
-          <Button
-            variant="secondary"
-            aria-expanded={translated}
-            onClick={() => setTranslated((open) => !open)}
-          >
-            {translated ? 'Hide translation' : 'Show translation'}
-          </Button>
-        </S.Tools>
-        <S.Dialogue
-          lines={page.lines.map((line, i) => ({
-            id: String(i),
-            speaker: line.who === 'ana' ? 'Ana' : 'Kim',
-            avatarUrl: line.who === 'ana' ? anaUrl + '#ana' : kimUrl,
-            side: line.who === learner ? ('end' as const) : ('start' as const),
-            content: line.en,
-            translation: line.pt,
-          }))}
-          translatedIds={translated ? page.lines.map((_, i) => String(i)) : []}
-        />
+      <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
         <S.Stack>
-          <S.Heading>{page.followup}</S.Heading>
-          <Support lines={page.support} />
+          <S.Tools>
+            <Button
+              variant="secondary"
+              aria-pressed={learner === 'kim'}
+              onClick={() =>
+                setLearner((who) => (who === 'ana' ? 'kim' : 'ana'))
+              }
+            >
+              You: {learner === 'ana' ? 'Ana' : 'Kim'} · Swap roles
+            </Button>
+            <Button
+              variant="secondary"
+              aria-expanded={translated}
+              onClick={() => setTranslated((open) => !open)}
+            >
+              {translated ? 'Hide translation' : 'Show translation'}
+            </Button>
+          </S.Tools>
+          <S.Dialogue
+            lines={page.lines.map((line, i) => ({
+              id: String(i),
+              speaker: line.who === 'ana' ? 'Ana' : 'Kim',
+              avatarUrl: line.who === 'ana' ? anaUrl + '#ana' : kimUrl,
+              side:
+                line.who === learner ? ('end' as const) : ('start' as const),
+              content: line.en,
+              translation: line.pt,
+            }))}
+            translatedIds={
+              translated ? page.lines.map((_, i) => String(i)) : []
+            }
+          />
+          <S.Stack>
+            <S.Heading>{page.followup}</S.Heading>
+            <Support lines={page.support} />
+          </S.Stack>
         </S.Stack>
-      </S.Stack>
+      </GuidedConversation>
     )
   if (page.kind === 'choice')
     return (
@@ -212,6 +214,7 @@ function Activity({ page, active }: { page: TrialB1Page; active: boolean }) {
   )
 }
 export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
+  const [modelActive, setModelActive] = useState(true)
   return (
     <MaterialTheme>
       <LessonShell
@@ -236,10 +239,32 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
                     review: 'Review',
                   }[page.kind]
                 }
-                title={page.title}
-                instruction={page.subtitle}
+                title={
+                  page.kind === 'dialogue' ? (
+                    <DialogueTitle
+                      title={page.title}
+                      action={
+                        <RecordedDialoguePlayback
+                          conversationId="TrialB1:s3"
+                          active={activeId === page.id && modelActive}
+                        />
+                      }
+                    />
+                  ) : (
+                    page.title
+                  )
+                }
+                instruction={
+                  page.kind === 'dialogue'
+                    ? 'Listen, respond and keep the conversation going.'
+                    : page.subtitle
+                }
               >
-                <Activity page={page} active={activeId === page.id} />
+                <Activity
+                  page={page}
+                  active={activeId === page.id}
+                  onModeChange={(mode) => setModelActive(mode === 'model')}
+                />
               </SlidePage>
             ),
           }))

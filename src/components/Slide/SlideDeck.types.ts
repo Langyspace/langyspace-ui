@@ -4,6 +4,7 @@ export interface SlideGestureOptions {
   viewportRef: RefObject<HTMLDivElement | null>
   activeIdRef: RefObject<string | undefined>
   movementTargetRef: RefObject<SlideMovementTarget | undefined>
+  movementRevisionRef: RefObject<number>
   idsKey: string
   navigationMode: 'pages' | 'continuous'
   onStep: (direction: 1 | -1) => void

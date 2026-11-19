@@ -223,7 +223,7 @@ export function RolePlaySection() {
     <RolePlayExercise
       presentation="tracker"
       density="compact"
-      situation="Monday, with Kim. You’re Ana, but the day is yours: true or invented. Choose four moments: from the pictures, or your own."
+      situation="Choose a problem from the board that is different from the phone story. Your teacher is Kim. Explain four moments from a true or invented bad day."
       support={hasSupport ? supportLines : []}
       supportVisible={hasSupport && support}
       onSupportToggle={hasSupport ? () => setSupport(!support) : undefined}

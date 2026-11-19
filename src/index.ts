@@ -664,3 +664,6 @@ export type {
   SlideNotesProps,
   SlideNotesLabels,
 } from './components/Slide/SlideNotes.types'
+
+export { SlideNotesWindow } from './components/Slide/SlideNotesWindow'
+export type { SlideNotesWindowProps } from './components/Slide/SlideNotesWindow.types'

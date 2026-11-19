@@ -9,6 +9,11 @@ import type {
 export const SLIDE_EDITABLE_SELECTOR =
   'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="tablist"],[role="radiogroup"],[role="grid"],[role="tree"],[role="spinbutton"]'
 
+// Text fields without overflow have no wheel action of their own. Let the deck
+// handle those wheels, while preserving scrolling editors and value controls.
+const WHEEL_NATIVE_SELECTOR =
+  'select,input[type="number"],input[type="range"],[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="spinbutton"]'
+
 const POINTER_NATIVE_SELECTOR =
   'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="spinbutton"]'
 
@@ -61,6 +66,7 @@ export function useSlideGestures({
   viewportRef,
   activeIdRef,
   movementTargetRef,
+  movementRevisionRef,
   navigationMode,
   onStep,
   idsKey,
@@ -72,11 +78,17 @@ export function useSlideGestures({
     let wheelAxis: 'vertical' | 'horizontal' | 'native' | undefined
     let wheelConsumed = false
     let wheelAdvanced = false
+    let wheelDirection: 1 | -1 | undefined
+    let pendingWheelDelta = 0
+    let pendingWheelRevision: number | undefined
+    let wheelSettle: ReturnType<typeof setTimeout> | undefined
     let touch: SlideTouchGesture | undefined
 
-    const nativeTarget = (target: EventTarget | null) =>
-      (target instanceof Element &&
-        Boolean(target.closest(POINTER_NATIVE_SELECTOR))) ||
+    const nativeTarget = (
+      target: EventTarget | null,
+      selector = POINTER_NATIVE_SELECTOR,
+    ) =>
+      (target instanceof Element && Boolean(target.closest(selector))) ||
       hasNestedScroller(target, viewport)
     const moving = () => isSlideMovementPending(viewport, movementTargetRef)
     const scrollContent = (delta: number) => {
@@ -102,6 +114,35 @@ export function useSlideGestures({
       })
       return true
     }
+    const applyWheel = (delta: number) => {
+      if (scrollContent(delta)) {
+        wheelConsumed = true
+        return
+      }
+      // Finishing a tall page consumes this gesture; the next gesture can leave it.
+      if (!wheelConsumed) {
+        wheelAdvanced = true
+        onStep(delta > 0 ? 1 : -1)
+      }
+    }
+    const discardStaleWheel = () => {
+      if (pendingWheelRevision !== movementRevisionRef.current)
+        pendingWheelDelta = 0
+    }
+    const settleWheel = () => {
+      if (!pendingWheelDelta) return
+      clearTimeout(wheelSettle)
+      // Read the page observation after this scroll event's other listeners.
+      // This schedules a read, not a timed input lock or another page per burst.
+      wheelSettle = setTimeout(() => {
+        // A newer control, keyboard or geometry request owns the destination.
+        discardStaleWheel()
+        if (moving()) return
+        const delta = pendingWheelDelta
+        pendingWheelDelta = 0
+        if (delta) applyWheel(delta)
+      }, 0)
+    }
     const onWheel = (event: WheelEvent) => {
       if (
         event.defaultPrevented ||
@@ -119,7 +160,7 @@ export function useSlideGestures({
       }
       wheelTime = event.timeStamp
       if (!wheelAxis)
-        wheelAxis = nativeTarget(event.target)
+        wheelAxis = nativeTarget(event.target, WHEEL_NATIVE_SELECTOR)
           ? 'native'
           : Math.abs(event.deltaX) >= Math.abs(event.deltaY)
             ? 'horizontal'
@@ -128,10 +169,18 @@ export function useSlideGestures({
         return
       event.preventDefault()
       const direction = event.deltaY > 0 ? 1 : -1
-      if (wheelAdvanced || moving()) {
-        wheelAdvanced = true
-        return
+      if (wheelDirection && direction !== wheelDirection) {
+        // A reversal is fresh intent, including during a smooth page transition.
+        wheelConsumed = false
+        wheelAdvanced = false
+        pendingWheelDelta = 0
+        if (moving()) {
+          viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' })
+          movementTargetRef.current = undefined
+        }
       }
+      wheelDirection = direction
+      if (wheelAdvanced) return
       const style = getComputedStyle(viewport)
       const unit =
         event.deltaMode === 2
@@ -139,17 +188,21 @@ export function useSlideGestures({
           : event.deltaMode === 1
             ? parseFloat(style.lineHeight) || parseFloat(style.fontSize) || 16
             : 1
-      if (scrollContent(event.deltaY * unit)) {
-        wheelConsumed = true
+      discardStaleWheel()
+      const delta = pendingWheelDelta + event.deltaY * unit
+      if (moving()) {
+        // Retain one fresh gesture while the previous destination settles.
+        // The gesture that already advanced is excluded by wheelAdvanced above.
+        pendingWheelDelta = delta
+        pendingWheelRevision = movementRevisionRef.current
+        settleWheel()
         return
       }
-      // Finishing a tall page consumes this gesture; the next gesture can leave it.
-      if (!wheelConsumed) {
-        wheelAdvanced = true
-        onStep(direction)
-      }
+      pendingWheelDelta = 0
+      applyWheel(delta)
     }
     const onTouchStart = (event: TouchEvent) => {
+      pendingWheelDelta = 0
       const point = event.touches[0]
       touch =
         !event.defaultPrevented && event.touches.length === 1 && point
@@ -205,12 +258,15 @@ export function useSlideGestures({
     const onTouchCancel = () => {
       touch = undefined
     }
+    viewport.addEventListener('scroll', settleWheel, { passive: true })
     viewport.addEventListener('wheel', onWheel, { passive: false })
     viewport.addEventListener('touchstart', onTouchStart, { passive: true })
     viewport.addEventListener('touchmove', onTouchMove, { passive: false })
     viewport.addEventListener('touchend', onTouchEnd)
     viewport.addEventListener('touchcancel', onTouchCancel)
     return () => {
+      clearTimeout(wheelSettle)
+      viewport.removeEventListener('scroll', settleWheel)
       viewport.removeEventListener('wheel', onWheel)
       viewport.removeEventListener('touchstart', onTouchStart)
       viewport.removeEventListener('touchmove', onTouchMove)
@@ -221,6 +277,7 @@ export function useSlideGestures({
     activeIdRef,
     idsKey,
     movementTargetRef,
+    movementRevisionRef,
     navigationMode,
     onStep,
     viewportRef,

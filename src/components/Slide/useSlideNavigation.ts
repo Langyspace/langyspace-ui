@@ -21,6 +21,7 @@ export function useSlideNavigation({
   const [progress, setProgress] = useState(0)
   const activeRef = useRef(pages[0]?.id)
   const movementTargetRef = useRef<SlideMovementTarget | undefined>(undefined)
+  const movementRevisionRef = useRef(0)
   const requestedRef = useRef<string | undefined>(undefined)
   const firstRequestRef = useRef(true)
   const callbackRef = useRef(onPageChange)
@@ -41,6 +42,7 @@ export function useSlideNavigation({
       if (!viewport) return
       const target = viewport.children[nextIndex]
       if (!(target instanceof HTMLElement)) return
+      movementRevisionRef.current++
       requestedRef.current = target.dataset.slideId
       // Scroll only this viewport; scrollIntoView could move a surrounding portal/iframe too.
       const top = alignEnd
@@ -87,6 +89,7 @@ export function useSlideNavigation({
     viewportRef,
     activeIdRef: activeRef,
     movementTargetRef,
+    movementRevisionRef,
     navigationMode,
     idsKey,
     onStep: step,
@@ -106,6 +109,7 @@ export function useSlideNavigation({
         lastWidth !== viewport.clientWidth ||
         lastHeight !== viewport.clientHeight
       ) {
+        movementRevisionRef.current++
         movementTargetRef.current = undefined
         // Cancel an in-flight smooth scroll at its new geometry, keeping the current page.
         const anchor = elements.find(
@@ -269,6 +273,8 @@ export function useSlideNavigation({
       const distance = event.key.startsWith('Page') ? viewport.clientHeight : 40
       const pageTop = viewport.scrollTop + rect.top - view.top
       const pageBottom = pageTop + rect.height - viewport.clientHeight
+      movementRevisionRef.current++
+      movementTargetRef.current = undefined
       viewport.scrollTo({
         top: forward
           ? Math.min(viewport.scrollTop + distance, pageBottom)

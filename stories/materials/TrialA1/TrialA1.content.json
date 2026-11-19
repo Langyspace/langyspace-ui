@@ -28,19 +28,19 @@
   },
   "p2": {
     "title": "A day in the park",
-    "ins": "Toque nos pontos para descobrir os nomes. Depois, conte do que você gosta.",
+    "ins": "Toque nos pontos e descubra os nomes. Depois, diga duas palavras sem olhar.",
     "bg": "park",
     "items": [
       {
         "e": "🎧",
         "en": "music",
-        "x": 23,
-        "y": 20,
+        "x": 42.5,
+        "y": 8.5,
         "targetBounds": {
-          "xPercent": 18,
+          "xPercent": 39.5,
           "yPercent": 4,
-          "widthPercent": 20,
-          "heightPercent": 28
+          "widthPercent": 8.5,
+          "heightPercent": 16
         }
       },
       {
@@ -78,25 +78,56 @@
           "widthPercent": 26,
           "heightPercent": 46
         }
+      },
+      {
+        "e": "🎧",
+        "en": "headphones",
+        "x": 23,
+        "y": 20,
+        "targetBounds": {
+          "xPercent": 20.5,
+          "yPercent": 4.5,
+          "widthPercent": 15.5,
+          "heightPercent": 21
+        }
+      },
+      {
+        "e": "🪑",
+        "en": "a bench",
+        "x": 66,
+        "y": 38,
+        "targetBounds": {
+          "xPercent": 4,
+          "yPercent": 35,
+          "widthPercent": 70,
+          "heightPercent": 49
+        }
+      },
+      {
+        "e": "👟",
+        "en": "sneakers",
+        "x": 47.5,
+        "y": 79.5,
+        "targetBounds": {
+          "xPercent": 29,
+          "yPercent": 72,
+          "widthPercent": 25,
+          "heightPercent": 21
+        }
       }
     ],
     "support": [
       {
-        "h": "Depois de escolher um ponto",
-        "lines": [["Do you like it?", "Yes, I do. · No, I don’t."]]
-      },
-      {
-        "h": "Sobre você",
+        "h": "Depois de explorar",
         "lines": [
-          ["Do you like the park?", "Yes, I do. · No, I don’t."],
-          ["What do you like?", "I like …"]
+          ["Sem abrir os pontos, diga duas palavras da cena.", "music · a soccer ball · a book · a dog"]
         ]
       }
     ]
   },
   "p3": {
     "title": "Do you like the park?",
-    "ins": "Leiam como Kim e Ana. Depois, falem sobre vocês.",
+    "ins": "Escutem o modelo. Depois, criem a conversa de vocês.",
     "lines": [
       {
         "who": "kim",
@@ -125,9 +156,7 @@
       }
     ],
     "your": [
-      ["Do you like the park?", "Yes, I do. · No, I don’t."],
-      ["Do you like books?", "Yes, I do. · No, I don’t."],
-      ["What do you like?", "I like … and …"]
+      ["Kim: books or soccer? And Ana?", "Kim: books. Ana: soccer."]
     ]
   },
   "p4": {

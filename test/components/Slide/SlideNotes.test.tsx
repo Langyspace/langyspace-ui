@@ -48,47 +48,32 @@ it('focuses the controlled editor, clears it and returns focus on Escape', () =>
   expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   expect(trigger).toHaveFocus()
 })
-it('persists a draft per lesson in the composition and clears the saved value', () => {
-  window.localStorage.clear()
-  const { rerender } = render(
+it('keeps private legacy drafts outside the presentation and preserves their storage', () => {
+  window.localStorage.setItem('langy-notes:a1', 'Private legacy note')
+  const { container } = render(
     <LessonNotes storageKey="langy-notes:a1" open onClose={() => {}} />,
   )
-  fireEvent.change(screen.getByRole('textbox'), {
-    target: { value: 'My A1 note' },
-  })
-  rerender(<LessonNotes storageKey="langy-notes:b2" open onClose={() => {}} />)
-  expect(screen.getByRole('textbox')).toHaveValue('')
-  fireEvent.change(screen.getByRole('textbox'), {
-    target: { value: 'My B2 note' },
-  })
-  rerender(<LessonNotes storageKey="langy-notes:a1" open onClose={() => {}} />)
-  expect(screen.getByRole('textbox')).toHaveValue('My A1 note')
-  fireEvent.click(screen.getByRole('button', { name: 'Clear' }))
-  expect(window.localStorage.getItem('langy-notes:a1')).toBe('')
-  expect(window.localStorage.getItem('langy-notes:b2')).toBe('My B2 note')
-  window.localStorage.clear()
+  expect(container).toBeEmptyDOMElement()
+  expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
+  expect(window.localStorage.getItem('langy-notes:a1')).toBe(
+    'Private legacy note',
+  )
 })
-it('keeps editing available when browser storage is unavailable', () => {
-  const spy = vi
-      .spyOn(Object.getPrototypeOf(window.localStorage) as Storage, 'getItem')
-      .mockImplementation(() => {
-        throw Error('blocked')
-      }),
-    write = vi
-      .spyOn(Object.getPrototypeOf(window.localStorage) as Storage, 'setItem')
-      .mockImplementation(() => {
-        throw Error('blocked')
-      })
-  try {
-    render(<LessonNotes storageKey="blocked" open onClose={() => {}} />)
-    fireEvent.change(screen.getByRole('textbox'), {
-      target: { value: 'Still editable' },
-    })
-    expect(screen.getByRole('textbox')).toHaveValue('Still editable')
-  } finally {
-    spy.mockRestore()
-    write.mockRestore()
-  }
+it('reports a blocked popup without loading an inline editor or changing legacy storage', () => {
+  window.localStorage.setItem('langy-notes:a1', 'Private legacy note')
+  render(
+    <LessonNotes
+      storageKey="langy-notes:a1"
+      open
+      onClose={() => {}}
+      error="Permita a janela de anotações e tente novamente."
+    />,
+  )
+  expect(screen.getByRole('status')).toHaveTextContent('Permita a janela')
+  expect(screen.queryByRole('textbox')).not.toBeInTheDocument()
+  expect(window.localStorage.getItem('langy-notes:a1')).toBe(
+    'Private legacy note',
+  )
 })
 it('renders controlled notes on the server and omits the closed panel', () => {
   expect(

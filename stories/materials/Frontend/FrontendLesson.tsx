@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react'
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
@@ -30,18 +31,14 @@ export function FrontendLesson({
   initialPageId,
   studentPortalOrigin,
 }: FrontendLessonProps) {
+  const notePopup = useLessonNotesPopup('langy-notes:tema-frontend')
   const [pageId, setPageId] = useLessonPage(
       initialPageId,
       'tema-frontend',
       order,
     ),
-    [notes, setNotes] = useState(false),
-    trigger = useRef<HTMLButtonElement>(null),
     { audioRef, events, ...media } = useFrontendAudio()
-  const closeNotes = () => {
-    setNotes(false)
-    trigger.current?.focus()
-  }
+
   const dialogueTool = (part?: number) => {
     const ids = (
       part === undefined
@@ -224,15 +221,20 @@ export function FrontendLesson({
         overlay={
           <LessonNotes
             storageKey="langy-notes:tema-frontend"
-            open={notes}
-            onClose={closeNotes}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={trigger}
-            open={notes}
-            onClick={() => (notes ? closeNotes() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />

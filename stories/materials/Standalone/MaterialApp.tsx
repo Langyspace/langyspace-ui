@@ -1,3 +1,4 @@
+import { NotesHostProvider } from '../shared/NotesHostContext'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { Suspense, useEffect } from 'react'
 import { MaterialView } from './MaterialViews'
@@ -59,10 +60,12 @@ export function MaterialApp({
   return (
     <MaterialTheme>
       <Suspense fallback={<p role="status">Carregando material…</p>}>
-        <MaterialView
-          materialKey={materialKey}
-          studentPortalOrigin={studentPortalOrigin}
-        />
+        <NotesHostProvider materialKey={materialKey}>
+          <MaterialView
+            materialKey={materialKey}
+            studentPortalOrigin={studentPortalOrigin}
+          />
+        </NotesHostProvider>
         <Ready materialKey={materialKey} />
       </Suspense>
     </MaterialTheme>

@@ -19,9 +19,13 @@ const speech = {
 afterEach(() => {
   vi.useRealTimers()
   vi.clearAllMocks()
+  vi.restoreAllMocks()
 })
 describe('A2.01 and A1 trial shared contracts', () => {
-  it('keeps labeled hotspots keyboard accessible without leaking exploration answers', async () => {
+  it('keeps labeled hotspots honest and keyboard accessible without a playback handler', async () => {
+    vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockReturnValue(
+      new DOMRect(0, 0, 800, 600),
+    )
     const user = userEvent.setup(),
       select = vi.fn()
     const { rerender } = render(
@@ -45,8 +49,9 @@ describe('A2.01 and A1 trial shared contracts', () => {
     )
     await user.tab()
     await user.keyboard('{Enter}')
-    expect(select).toHaveBeenCalledWith('music')
-    expect(screen.getByRole('button')).toHaveAccessibleName('Ouvir: music')
+    expect(select).toHaveBeenCalledExactlyOnceWith('music')
+    expect(screen.getByRole('button')).toHaveAccessibleName('music')
+    expect(screen.getByRole('button')).toHaveFocus()
     expect(screen.queryByText('A hidden answer')).not.toBeInTheDocument()
     expect(screen.queryByText('A hidden question')).not.toBeInTheDocument()
     rerender(
@@ -67,6 +72,52 @@ describe('A2.01 and A1 trial shared contracts', () => {
       />,
     )
     expect(screen.getByText('Tap a dot to explore')).toBeVisible()
+  })
+  it('plays labeled targets once after selection for pointer and keyboard activation', async () => {
+    vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockReturnValue(
+      new DOMRect(0, 0, 800, 600),
+    )
+    const user = userEvent.setup(),
+      order: string[] = [],
+      select = vi.fn((id: string) => order.push(`select:${id}`)),
+      play = vi.fn((id: string) => order.push(`play:${id}`))
+    const props = {
+      imageUrl: '/park.webp',
+      imageAlt: 'Park',
+      hotspots: [
+        {
+          id: 'music',
+          xPercent: 14,
+          yPercent: 30,
+          label: 'music',
+          prompt: 'A hidden question',
+        },
+      ],
+      visitedIds: [],
+      onSelect: select,
+      onPlayHotspot: play,
+    }
+    const { rerender } = render(
+      <SceneExplorer {...props} presentation="labels" />,
+    )
+    const button = screen.getByRole('button', { name: 'Ouvir: music' })
+    expect(order).toEqual([])
+    await user.click(button)
+    expect(order).toEqual(['select:music', 'play:music'])
+    expect(play).toHaveBeenCalledOnce()
+    await user.keyboard('{Enter}')
+    expect(order).toEqual([
+      'select:music',
+      'play:music',
+      'select:music',
+      'play:music',
+    ])
+    expect(play).toHaveBeenCalledTimes(2)
+    expect(button).toHaveFocus()
+    rerender(<SceneExplorer {...props} />)
+    await user.click(screen.getByRole('button', { name: 'music' }))
+    expect(select).toHaveBeenCalledTimes(3)
+    expect(play).toHaveBeenCalledTimes(2)
   })
   it('delegates video signal, hang-up and restart without changing the audio default', async () => {
     const user = userEvent.setup()

@@ -1,4 +1,7 @@
-import { useEffect, useRef, useState } from 'react'
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { DialogueTitle } from '../shared/DialogueTitle'
+import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
+import { useEffect, useRef } from 'react'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
@@ -111,8 +114,8 @@ const pageInfo: Record<string, [string, string, string]> = {
 }
 function C101Content({ initialPageId }: C101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'c1-01', c101PageIds)
-  const [notes, setNotes] = useState(false)
-  const notesButton = useRef<HTMLButtonElement>(null)
+  const notePopup = useLessonNotesPopup('langy-notes:c1-01')
+
   const audio = useC101Audio()
   const stage = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -120,9 +123,28 @@ function C101Content({ initialPageId }: C101LessonProps) {
       ?.querySelector<HTMLElement>('[data-slide-viewport]')
       ?.focus({ preventScroll: true })
   }, [])
-  const close = () => {
-    setNotes(false)
-    notesButton.current?.focus()
+
+  const dialogueAction = (id: string) => {
+    const lines =
+      id === 's6' ? content.dialogue.slice(0, 7) : content.dialogue.slice(7)
+    const ids = lines.map((line) => `c101-${line.id.replace('.', '-')}`)
+    const playing = ids.includes(audio.playingId ?? '')
+    return (
+      <DialoguePlaybackAction
+        context={pageInfo[id]![1]}
+        disabled={pageId !== id}
+        status={
+          playing
+            ? audio.paused
+              ? 'paused'
+              : 'playing'
+            : audio.error
+              ? 'error'
+              : 'idle'
+        }
+        onClick={() => (playing ? audio.togglePause() : audio.play(ids))}
+      />
+    )
   }
   const body = (id: string) => {
     if (id === 's1') return <SourceQuestions items={content.review} />
@@ -165,16 +187,21 @@ function C101Content({ initialPageId }: C101LessonProps) {
         }}
         actions={
           <LessonNotesTrigger
-            ref={notesButton}
-            open={notes}
-            onClick={() => (notes ? close() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
         overlay={
           <LessonNotes
             storageKey="langy-notes:c1-01"
-            open={notes}
-            onClose={close}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         pages={c101PageIds.map((id) => {
@@ -185,7 +212,13 @@ function C101Content({ initialPageId }: C101LessonProps) {
             content: (
               <SlidePage
                 eyebrow={eyebrow}
-                title={title}
+                title={
+                  id === 's6' || id === 's62' ? (
+                    <DialogueTitle title={title} action={dialogueAction(id)} />
+                  ) : (
+                    title
+                  )
+                }
                 instruction={instruction}
                 width={
                   ['s4', 's8', 's9', 's11'].includes(id) ? 'expanded' : 'wide'

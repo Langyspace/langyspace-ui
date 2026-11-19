@@ -1,3 +1,4 @@
+import { MaterialNotesEditor } from './MaterialNotesEditor'
 import { readStudentPortalOrigin } from './destinations'
 import { createRoot } from 'react-dom/client'
 import { GlobalStyles } from '../../../src/foundations/theme/GlobalStyles'
@@ -13,7 +14,9 @@ if (root)
     <>
       <GlobalStyles />
       <FontStyles />
-      {studentPortalOrigin && catalog.some((m) => m.key === key) ? (
+      {new URLSearchParams(window.location.search).get('view') === 'notes' ? (
+        <MaterialNotesEditor materialKey="notes" />
+      ) : studentPortalOrigin && catalog.some((m) => m.key === key) ? (
         <MaterialApp
           materialKey={key as MaterialKey}
           studentPortalOrigin={studentPortalOrigin}

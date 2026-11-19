@@ -28,3 +28,16 @@ export const Trigger = styled(Button)`
     height: 16px;
   }
 `
+
+export const PopupWarning = styled.p`
+  position: absolute;
+  top: calc(${(p) => resolveSlideTheme(p).headerHeight} + ${theme.spacing[2]});
+  right: ${theme.spacing[4]};
+  max-width: min(28rem, calc(100% - ${theme.spacing[8]}));
+  padding: ${theme.spacing[3]};
+  border: 1px solid ${(p) => resolveSlideTheme(p).border};
+  border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+  color: ${(p) => resolveSlideTheme(p).foreground};
+  background: ${(p) => resolveSlideTheme(p).surface};
+  z-index: 6;
+`

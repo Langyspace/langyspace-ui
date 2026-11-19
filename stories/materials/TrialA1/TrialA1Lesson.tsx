@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -16,6 +18,7 @@ export function TrialA1Lesson({
   initialPageId,
   levelLabel = 'A1',
 }: TrialA1LessonProps) {
+  const [modelActive, setModelActive] = useState(true)
   return (
     <MaterialTheme>
       <LessonShell
@@ -63,16 +66,22 @@ export function TrialA1Lesson({
                   <SlidePage
                     width="expanded"
                     eyebrow="Dialogue"
-                    title={content.p3.title}
-                    tools={
-                      <RecordedDialoguePlayback
-                        conversationId="TrialA1:s3"
-                        active={activeId === 's3'}
+                    title={
+                      <DialogueTitle
+                        title={content.p3.title}
+                        action={
+                          <RecordedDialoguePlayback
+                            conversationId="TrialA1:s3"
+                            active={activeId === 's3' && modelActive}
+                          />
+                        }
                       />
                     }
-                    instruction={content.p3.ins}
+                    instruction="Escutem, respondam e mantenham a conversa."
                   >
-                    <ListenTalkSection />
+                    <ListenTalkSection
+                      onModeChange={(mode) => setModelActive(mode === 'model')}
+                    />
                   </SlidePage>
                 ),
               }
@@ -115,7 +124,7 @@ export function TrialA1Lesson({
                   width="reading"
                   eyebrow="Review"
                   title="What can you say now?"
-                  instruction="Complete com suas ideias e faça uma pergunta à professora."
+                  instruction="Escolha duas frases e complete com novas ideias. Termine com uma pergunta à professora."
                 >
                   <TodaySection />
                 </SlidePage>

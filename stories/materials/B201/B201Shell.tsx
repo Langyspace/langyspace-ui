@@ -1,4 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { useEffect, useRef } from 'react'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { useLessonPage } from '../shared/useLessonPage'
 import { LessonNotes } from '../shared/LessonNotes'
@@ -15,8 +16,8 @@ export function B201Shell({
   pages,
 }: LessonShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
-  const [notes, setNotes] = useState(false)
-  const trigger = useRef<HTMLButtonElement>(null)
+  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
+
   const root = useRef<HTMLDivElement>(null)
   const speech = useB201Speech()
   useEffect(() => {
@@ -24,10 +25,7 @@ export function B201Shell({
       ?.querySelector<HTMLElement>('[data-slide-viewport]')
       ?.focus({ preventScroll: true })
   }, [])
-  const close = () => {
-    setNotes(false)
-    trigger.current?.focus()
-  }
+
   return (
     <S.Stage ref={root}>
       <MaterialSlideDeck
@@ -41,15 +39,20 @@ export function B201Shell({
         overlay={
           <LessonNotes
             storageKey={'langy-notes:' + materialKey}
-            open={notes}
-            onClose={close}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={trigger}
-            open={notes}
-            onClick={() => (notes ? close() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />

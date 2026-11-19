@@ -7,6 +7,7 @@ import {
   useState,
 } from 'react'
 import { IconButton } from '../IconButton/IconButton'
+import { theme } from '../../foundations/theme/theme'
 import * as Common from './Material.shared.styles'
 import * as Styled from './SceneExplorer.styles'
 import {
@@ -20,27 +21,40 @@ import type {
   SceneImageGeometry,
 } from './SceneExplorer.types'
 
-export function SceneExplorer({
-  imageUrl,
-  imageAlt,
-  hotspots,
-  selectedId,
-  visitedIds,
-  onSelect,
-  onPlayHotspot,
-  playingId,
-  presentation = 'explore',
-  answerVisible = false,
-  onAnswerToggle,
-  labels,
-  ...props
-}: SceneExplorerProps) {
+export function SceneExplorer(options: SceneExplorerProps) {
+  const {
+    imageUrl,
+    imageAlt,
+    hotspots,
+    selectedId,
+    visitedIds,
+    onSelect,
+    onPlayHotspot,
+    playingId,
+    presentation = 'explore',
+    answerVisible = false,
+    onAnswerToggle,
+    labels,
+    ...props
+  } = options
   const id = useId()
   const frameRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLImageElement>(null)
   const calloutRef = useRef<HTMLDivElement>(null)
   const [geometry, setGeometry] = useState<SceneImageGeometry>()
   const [layout, setLayout] = useState<SceneCalloutLayout>()
+  const [frameWidth, setFrameWidth] = useState(0)
+  const [localSelectedId, setLocalSelectedId] = useState<string>()
+  const controlledSelection = Object.hasOwn(options, 'selectedId')
+  const compactLabels =
+    presentation === 'labels' && frameWidth < parseFloat(theme.breakpoints.sm)
+  const labelButtons = presentation === 'labels' && !compactLabels
+  const showCallout = presentation === 'explore' || compactLabels
+  const currentSelectedId = controlledSelection
+    ? selectedId
+    : presentation === 'labels'
+      ? localSelectedId
+      : selectedId
   const text = {
     initial: 'Tap a dot to explore',
     show: 'Mostrar resposta',
@@ -48,10 +62,13 @@ export function SceneExplorer({
     play: 'Ouvir',
     ...labels,
   }
-  const selected = hotspots.find((h) => h.id === selectedId)
+  const selected = hotspots.find((h) => h.id === currentSelectedId)
+  const practice =
+    presentation === 'explore' && Boolean(selected?.answer && onAnswerToggle)
   const measure = useCallback(() => {
     if (!frameRef.current || !imageRef.current) return
     const bounds = frameRef.current.getBoundingClientRect()
+    setFrameWidth((old) => (old === bounds.width ? old : bounds.width))
     const box = imageRef.current.getBoundingClientRect()
     if (!bounds.width || !box.height || !imageRef.current.naturalWidth) return
     const computed = getComputedStyle(imageRef.current)
@@ -114,7 +131,7 @@ export function SceneExplorer({
       JSON.stringify(old) === JSON.stringify(nextLayout) ? old : nextLayout,
     )
   }, [selected, hotspots])
-  useLayoutEffect(measure, [measure, answerVisible, imageUrl])
+  useLayoutEffect(measure, [measure, answerVisible, imageUrl, compactLabels])
   useEffect(() => {
     if (typeof ResizeObserver === 'undefined') return
     const observer = new ResizeObserver(measure)
@@ -124,7 +141,7 @@ export function SceneExplorer({
     return () => {
       observer.disconnect()
     }
-  }, [measure])
+  }, [measure, compactLabels])
   const Marker =
     presentation === 'labels' ? Styled.LabelHotspot : Styled.DotHotspot
   const Frame = presentation === 'labels' ? Styled.LabelScene : Styled.Scene
@@ -135,9 +152,7 @@ export function SceneExplorer({
       ) : null}
       <Frame
         ref={frameRef}
-        $gutter={
-          selected && presentation === 'explore' ? (layout?.gutter ?? 0) : 0
-        }
+        $gutter={selected && showCallout ? (layout?.gutter ?? 0) : 0}
       >
         <img ref={imageRef} src={imageUrl} alt={imageAlt} onLoad={measure} />
         {hotspots.map((h) => {
@@ -168,25 +183,31 @@ export function SceneExplorer({
               }
               $visited={visitedIds.includes(h.id)}
               aria-label={
-                presentation === 'labels' ? `${text.play}: ${h.label}` : h.label
+                labelButtons && onPlayHotspot
+                  ? `${text.play}: ${h.label}`
+                  : h.label
               }
               aria-controls={
-                presentation === 'explore' && selectedId === h.id
-                  ? id
-                  : undefined
+                showCallout && currentSelectedId === h.id ? id : undefined
               }
               aria-expanded={
-                presentation === 'explore' ? selectedId === h.id : undefined
+                showCallout ? currentSelectedId === h.id : undefined
               }
+              data-scene-compact={compactLabels || undefined}
               onClick={() => {
+                if (presentation === 'labels' && !controlledSelection)
+                  setLocalSelectedId((old) =>
+                    !labelButtons && old === h.id ? undefined : h.id,
+                  )
                 onSelect(h.id)
+                if (labelButtons) onPlayHotspot?.(h.id)
               }}
             >
-              {presentation === 'labels' ? <span>{h.label}</span> : null}
+              {labelButtons ? <span>{h.label}</span> : null}
             </Marker>
           )
         })}
-        {presentation === 'explore' && selected ? (
+        {showCallout && selected ? (
           <Styled.Callout
             ref={calloutRef}
             id={id}
@@ -225,8 +246,8 @@ export function SceneExplorer({
                 </IconButton>
               ) : null}
             </Styled.CalloutHeading>
-            {selected.prompt}
-            {selected.answer && onAnswerToggle ? (
+            {practice ? selected.prompt : null}
+            {practice ? (
               <Common.Action
                 type="button"
                 variant="secondary"
@@ -236,7 +257,7 @@ export function SceneExplorer({
                 {answerVisible ? text.hide : text.show}
               </Common.Action>
             ) : null}
-            {answerVisible ? selected.answer : null}
+            {practice && answerVisible ? selected.answer : null}
           </Styled.Callout>
         ) : null}
       </Frame>

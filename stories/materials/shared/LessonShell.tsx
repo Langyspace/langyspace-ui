@@ -1,4 +1,5 @@
-import { useRef, useState } from 'react'
+import { useLessonNotesPopup } from './useLessonNotesPopup'
+
 import { useLessonPage } from './useLessonPage'
 import { LessonNotesTrigger } from './LessonNotesTrigger'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
@@ -44,13 +45,10 @@ export function LessonShell({
   navigationMode,
 }: LessonShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
-  const [notes, setNotes] = useState(false)
-  const button = useRef<HTMLButtonElement>(null),
-    speech = useLessonSpeech()
-  const close = () => {
-    setNotes(false)
-    button.current?.focus()
-  }
+  const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
+
+  const speech = useLessonSpeech()
+
   return (
     <S.Stage>
       <SlideDeck
@@ -67,15 +65,20 @@ export function LessonShell({
         overlay={
           <LessonNotes
             storageKey={'langy-notes:' + materialKey}
-            open={notes}
-            onClose={close}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={button}
-            open={notes}
-            onClick={() => (notes ? close() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />

@@ -207,7 +207,7 @@ export function ListeningSection({ active }: { active: boolean }) {
         footer={
           <S.Dark>
             <strong>Now you</strong>
-            <p>Answer Leo: say Congratulations! and what you’ve been doing.</p>
+            <p>Congratulate Leo, react to the eleven places and suggest one idea for the party.</p>
             <S.Row>
               <Button
                 variant="inverse"
@@ -219,7 +219,7 @@ export function ListeningSection({ active }: { active: boolean }) {
               </Button>
             </S.Row>
             {support ? (
-              <p>Congratulations, Leo! · I’ve been … · Of course! · Call me!</p>
+              <p>Congratulations, Leo! · Eleven places! · Why don’t you …? · Call me!</p>
             ) : null}
             <S.Hint>I mean = quer dizer</S.Hint>
           </S.Dark>

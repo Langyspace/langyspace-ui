@@ -1,17 +1,11 @@
 export default {
   TALK: [
-    'Are you happy?',
-    'Are you hungry?',
-    'How are you?',
-    'Are you Brazilian?',
+    'How are you today?',
     'Where are you from?',
     'Is your pet a dog or a cat?',
-    'Is your mom tired?',
-    'How is your mom?',
-    'Is your mom from Brazil?',
-    'Is your dad tired?',
-    'How is your dad?',
-    'Where is your dad from?',
+    'How is your mom or dad today?',
+    'Where is your friend from?',
+    'Your teacher: “You’re from Japan!” You: …',
   ],
   FEEL: [
     ['ph_happy', 'happy', 'feliz'],

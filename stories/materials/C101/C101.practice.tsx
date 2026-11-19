@@ -202,23 +202,8 @@ export function Dialogue({ part, audio }: { part: number; audio: C101Audio }) {
   const [translated, setTranslated] = useState<string[]>([])
   const lines =
     part === 0 ? content.dialogue.slice(0, 7) : content.dialogue.slice(7)
-  const ids = lines.map((l) => `c101-${l.id.replace('.', '-')}`)
-  const playing = ids.includes(audio.playingId ?? '')
   return (
     <S.Stack>
-      <S.Row>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => (playing ? audio.togglePause() : audio.play(ids))}
-        >
-          {playing
-            ? audio.paused
-              ? 'Resume dialogue'
-              : 'Pause dialogue'
-            : 'Listen to dialogue'}
-        </Button>
-      </S.Row>
       <LearningDialogue
         density="compact"
         lines={lines.map((l) => ({
@@ -272,8 +257,8 @@ export function Grammar() {
       <S.Surface>
         <b>One observation, one request</b>
         <p>
-          Give your teacher specific feedback about a true or invented
-          situation. Keep your point clear and leave room for their perspective.
+          Your colleague’s updates arrive after the meeting. Describe the
+          effect and ask for one change. Leave room for their perspective.
         </p>
       </S.Surface>
     </S.Stack>

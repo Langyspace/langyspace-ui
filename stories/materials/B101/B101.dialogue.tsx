@@ -53,7 +53,8 @@ export function ComprehensionSection() {
       <S.Now>
         <b>Now you</b>
         <p>
-          Have you ever started a new hobby? What have you been doing recently?
+          Think of a hobby you started. What helped you keep going, and what
+          has changed since you started?
         </p>
       </S.Now>
     </S.Stack>
@@ -137,8 +138,8 @@ export function GrammarSection() {
           <S.Now>
             <b>Now you</b>
             <p>
-              One thing you’ve been doing lately, and how long. Then one thing
-              you’ve finished this week.
+              Use Ana’s news: describe her ongoing activity, count the finished
+              rooms and say what is next.
             </p>
             <Button
               variant="secondary"
@@ -150,7 +151,7 @@ export function GrammarSection() {
             </Button>
             {starters ? (
               <S.Hint>
-                I’ve been …ing for … · I’ve finished … · I’ve …ed …
+                She’s been …ing for … · She’s …ed … · The … is next.
               </S.Hint>
             ) : null}
           </S.Now>

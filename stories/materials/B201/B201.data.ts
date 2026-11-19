@@ -68,7 +68,7 @@ export const warmUps = [
       '',
       'Charging gives the phone battery. Why did it die? Because I’d been using it …',
     ],
-    now: 'Your teacher asks: Why did your phone die, the last time? Answer: I’d been …',
+    now: 'Give Ana a different possible reason. Start: I’d been …',
     sub: 'I’d been using it all day = Eu vinha usando o celular o dia todo.',
     hide: false,
   },

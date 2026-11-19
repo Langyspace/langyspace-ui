@@ -23,7 +23,7 @@
         "pt": "Estou caminhando."
       }
     ],
-    "oralPromptAfterReveal": "Choose a picture. What are you doing?"
+    "oralPromptAfterReveal": "Choose a picture. Say the action without looking at the words."
   },
   "vocabulary2": {
     "instruction": "Choose a picture and speak.",
@@ -39,7 +39,7 @@
         "pt": "Estou estudando."
       }
     ],
-    "oralPromptAfterReveal": "Now talk about you."
+    "oralPromptAfterReveal": "Choose a picture. Say what Ana is doing: She’s …"
   },
   "affirmative": {
     "use": [
@@ -60,7 +60,7 @@
       ["he / she / it → is", "She’s walking in the park."],
       ["you / we / they → are", "They’re studying English this week."]
     ],
-    "oralPrompt": "Say one sentence about now."
+    "oralPrompt": "Imagine Ana’s week. Say one thing she usually does and one thing she’s doing this week."
   },
   "questions": {
     "negativeStructure": "Subject + am / is / are + not + verb-ing",
@@ -234,14 +234,13 @@
     ]
   },
   "personal": {
-    "instruction": "Give full answers. Then ask your teacher two questions.",
+    "instruction": "Compare your usual evenings with this week. Then find one similarity with your teacher.",
     "questions": [
-      "Where are you now?",
-      "What are you doing now?",
-      "Where do you usually work or study?",
-      "What are you doing this week?"
+      "What do you usually do in the evening?",
+      "What is different this week?",
+      "Ask your teacher about her evenings. Find one thing you have in common."
     ],
-    "optionalSupport": ["I’m…", "I usually…", "This week I’m…"],
+    "optionalSupport": ["I usually…", "This week I’m…", "We both…"],
     "alternativeIfNeither": "Do you usually have English classes at home?"
   },
   "listening": {
@@ -263,12 +262,12 @@
         "fullAnswer": "No, she isn’t. She’s working in the evening."
       }
     ],
-    "replyPrompt": "Tell Kim what you usually do and what you are doing this week.",
+    "replyPrompt": "Kim is working in the evening this week. Tell her when you’re free for a call.",
     "optionalSupport": [
       "Hi, Kim!",
-      "I usually…",
+      "I’m free in the morning / afternoon / evening.",
       "This week I’m…",
-      "See you soon!"
+      "What about you?"
     ],
     "transcript": "Hi, Ana! Sorry, bad signal! Never mind. I’m walking in the park next to my home. I usually work in the morning, but this week I’m working in the evening. Maybe I can travel to Porto soon! See you on Monday!"
   },
@@ -309,7 +308,7 @@
         "availability": "Teacher assigns live oral practice; no submission claim."
       }
     ],
-    "exitPrompt": "Tell me one thing you usually do and one thing you are doing this week."
+    "exitPrompt": "Choose one question you can now ask without looking. Ask it to end the lesson."
   },
   "sections": [
     {

@@ -1,3 +1,4 @@
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -155,11 +156,15 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Dialogue"
                   width="conversation"
                   density="dense"
-                  title={`How was New York? (${part + 1}/2)`}
-                  tools={
-                    <RecordedDialoguePlayback
-                      conversationId={id === 's6' ? 'B201:s6' : 'B201:s62'}
-                      active={activeId === id}
+                  title={
+                    <DialogueTitle
+                      title={`How was New York? (${part + 1}/2)`}
+                      action={
+                        <RecordedDialoguePlayback
+                          conversationId={id === 's6' ? 'B201:s6' : 'B201:s62'}
+                          active={activeId === id}
+                        />
+                      }
                     />
                   }
                   instruction={
@@ -269,7 +274,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   width="expanded"
                   density="dense"
                   title="Everything went wrong"
-                  instruction="Tell Kim about a day when everything went wrong. Then listen to Kim’s day."
+                  instruction="Tell Kim a new story about a different problem. Then ask about Kim’s day."
                 >
                   <RolePlaySection />
                 </SlidePage>

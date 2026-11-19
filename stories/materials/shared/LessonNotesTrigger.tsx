@@ -5,7 +5,8 @@ export function LessonNotesTrigger({ open, onClick, ref }: NotesTriggerProps) {
     <Trigger
       ref={ref}
       variant="secondary"
-      aria-expanded={open}
+      data-window-open={open || undefined}
+      aria-label="Notes, abrir em uma janela separada"
       onClick={onClick}
       iconStart={
         <svg

@@ -1,8 +1,10 @@
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { DialogueTitle } from '../shared/DialogueTitle'
+import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
 import { useLessonPage } from '../shared/useLessonPage'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { useEffect, useRef, useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
+import { useEffect, useRef } from 'react'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { useB101Audio } from './useB101Audio'
 import { order, dialogue } from './B101.data'
@@ -28,19 +30,16 @@ import type { B101LessonProps } from './B101.types'
 import * as S from './B101.styles'
 function B101LessonContent({ initialPageId }: B101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'b1-01', order)
-  const [notes, setNotes] = useState(false)
+  const notePopup = useLessonNotesPopup('langy-notes:b1-01')
+
   const stage = useRef<HTMLDivElement>(null)
   useEffect(() => {
     stage.current
       ?.querySelector<HTMLElement>('[data-slide-viewport]')
       ?.focus({ preventScroll: true })
   }, [])
-  const notesButton = useRef<HTMLButtonElement>(null),
-    speech = useB101Audio()
-  const closeNotes = () => {
-    setNotes(false)
-    notesButton.current?.focus()
-  }
+  const speech = useB101Audio()
+
   const playDialogue = (part?: number) => {
     const lines =
       part === undefined
@@ -51,14 +50,21 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (lines.some((line) => line.id === speech.playingId)) speech.togglePause()
     else speech.speak(lines)
   }
-  const audioTool = (part?: number) => (
-    <Button size="sm" variant="secondary" onClick={() => playDialogue(part)}>
-      {speech.playingId?.startsWith('D.')
-        ? speech.paused
-          ? 'Resume'
-          : 'Pause'
-        : 'Listen to the dialogue'}
-    </Button>
+  const audioTool = (context: string, id: string, part?: number) => (
+    <DialoguePlaybackAction
+      context={context}
+      disabled={pageId !== id}
+      status={
+        speech.playingId?.startsWith('D.')
+          ? speech.paused
+            ? 'paused'
+            : 'playing'
+          : speech.error
+            ? 'error'
+            : 'idle'
+      }
+      onClick={() => playDialogue(part)}
+    />
   )
   const pages = order.map((id) => {
     if (id === 's1')
@@ -97,7 +103,11 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
           <S.Page
             eyebrow="Vocabulary"
             title={id === 's2' ? 'Busy weeks' : 'Time for yourself'}
-            instruction="Name the activities, then say what you’ve been doing lately."
+            instruction={
+              id === 's2'
+                ? 'Name the activities. Which ones can people do at home?'
+                : 'Name the activities. Which ones need good weather?'
+            }
           >
             <VocabularySection group={id === 's2' ? 0 : 1} />
           </S.Page>
@@ -141,8 +151,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
                   hint: 'Há quanto tempo você …? · For two weeks. · Since 2024.',
                 },
                 {
-                  question:
-                    'Have you been working a lot this week? What have you been working on?',
+                  question: 'What have you completed this week?',
                 },
                 {
                   question:
@@ -185,13 +194,17 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
             width="reading"
             density="dense"
             eyebrow="Dialogue"
-            title={`Welcome back! (${part + 1}/2)`}
+            title={
+              <DialogueTitle
+                title={`Welcome back! (${part + 1}/2)`}
+                action={audioTool(`Welcome back! (${part + 1}/2)`, id, part)}
+              />
+            }
             instruction={
               part === 0
                 ? 'Kim is back from Korea. Listen to her conversation with Ana.'
                 : 'Listen for what Ana has finished and how Kim feels.'
             }
-            tools={audioTool(part)}
           >
             <DialogueSection part={part} speech={speech} />
           </S.Page>
@@ -206,9 +219,13 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
           <S.Page
             width="reading"
             eyebrow="Dialogue"
-            title="What did you find out?"
+            title={
+              <DialogueTitle
+                title="What did you find out?"
+                action={audioTool('What did you find out?', id)}
+              />
+            }
             instruction="Answer about Kim and Ana, then connect the story to your life."
-            tools={audioTool()}
           >
             <ComprehensionSection />
           </S.Page>
@@ -319,15 +336,20 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         overlay={
           <LessonNotes
             storageKey="langy-notes:b1-01"
-            open={notes}
-            onClose={closeNotes}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={notesButton}
-            open={notes}
-            onClick={() => (notes ? closeNotes() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />

@@ -1,4 +1,5 @@
-import { useCallback, useRef, useState } from 'react'
+import { useLessonNotesPopup } from './useLessonNotesPopup'
+import { useCallback } from 'react'
 import { useLessonPage } from './useLessonPage'
 import { LessonNotesTrigger } from './LessonNotesTrigger'
 import { MaterialSlideDeck } from './MaterialSlideDeck'
@@ -33,12 +34,8 @@ export function LessonDeck({
     materialKey,
     lesson.pages.map((page) => page.id),
   )
-  const [notes, setNotes] = useState(false)
-  const trigger = useRef<HTMLButtonElement>(null)
-  const closeNotes = () => {
-    setNotes(false)
-    trigger.current?.focus()
-  }
+  const notePopup = useLessonNotesPopup('langy-material-notes-' + lesson.code)
+
   const changePage = useCallback(
     (next: string) => {
       if (typeof window !== 'undefined' && 'speechSynthesis' in window)
@@ -74,15 +71,20 @@ export function LessonDeck({
         overlay={
           <LessonNotes
             storageKey={'langy-material-notes-' + lesson.code}
-            open={notes}
-            onClose={closeNotes}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={trigger}
-            open={notes}
-            onClick={() => (notes ? closeNotes() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />

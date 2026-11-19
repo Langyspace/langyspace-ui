@@ -3,6 +3,9 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { styled } from 'styled-components'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 
+const Editor = styled.textarea`
+  overflow-y: auto;
+`
 const Nested = styled.div`
   overflow-y: auto;
   max-height: 100px;
@@ -42,7 +45,9 @@ function fixture({
           label: 'First',
           content: (
             <>
-              <textarea aria-label="Answer" />
+              <Editor aria-label="Answer" />
+              <input aria-label="Name" />
+              <input type="number" aria-label="Quantity" />
               <Nested data-testid="nested">Long nested reading</Nested>
               <div role="radiogroup" aria-label="Options">
                 <button role="radio" aria-checked={false}>
@@ -152,28 +157,132 @@ describe('SlideDeck local page gestures', () => {
     wheel(120)
     for (let n = 0; n < 4; n++) wheel(120)
     expect(scrollTo).toHaveBeenCalledTimes(1)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
     wheel(120, { gap: 200 })
     expect(scrollTo).toHaveBeenLastCalledWith({
       top: 1000,
       behavior: 'instant',
     })
     wheel(-120, { gap: 200 })
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
+  })
+
+  it('responds to a quick reversal without advancing another page from the same forward burst', () => {
+    const { wheel, scrollTo } = fixture()
+    wheel(120)
+    wheel(80)
+    expect(scrollTo).toHaveBeenCalledOnce()
+    wheel(-120)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+  })
+
+  it('lets a fresh burst continue after an earlier smooth transition settles', () => {
+    const { wheel, scrollTo, scroll } = fixture({ reduced: false })
+    scrollTo.mockImplementation(() => {})
+    wheel(120)
+    wheel(120, { gap: 200 })
+    expect(scrollTo).toHaveBeenCalledOnce()
+    scroll(500)
+    wheel(60)
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'smooth',
+    })
+    wheel(30)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+  })
+
+  it('retains one isolated fresh detent during a previous smooth transition', async () => {
+    const { wheel, scrollTo, scroll } = fixture({ reduced: false })
+    scrollTo.mockImplementation(() => {})
+    wheel(120)
+    wheel(120, { gap: 200 })
+    expect(scrollTo).toHaveBeenCalledOnce()
+    scroll(500)
+    await vi.waitFor(() => {
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 1000,
+        behavior: 'smooth',
+      })
+    })
+    wheel(60)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+  })
+
+  it.each(['Home', 'Back'])(
+    'does not replay a queued wheel after a later %s navigation request',
+    async (navigation) => {
+      const { wheel, scrollTo, scroll, viewport } = fixture({ reduced: false })
+      scrollTo.mockImplementation(() => {})
+      wheel(120)
+      scroll(350)
+      wheel(120, { gap: 200 })
+      expect(scrollTo).toHaveBeenCalledOnce()
+      if (navigation === 'Home') fireEvent.keyDown(viewport, { key: 'Home' })
+      else fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
+      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
+      scroll(0)
+      await new Promise((resolve) => setTimeout(resolve, 10))
+      expect(scrollTo).toHaveBeenCalledTimes(2)
+      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
+    },
+  )
+
+  it.each(['Name', 'Answer'])(
+    'keeps page gestures available over a non-scrolling text field: %s',
+    (name) => {
+      const { wheel, scrollTo } = fixture()
+      const input = screen.getByRole('textbox', { name })
+      input.focus()
+      expect(wheel(120, { target: input }).defaultPrevented).toBe(true)
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 500,
+        behavior: 'instant',
+      })
+      expect(input).toHaveFocus()
+    },
+  )
+
+  it('leaves wheel scrolling inside an overflowing text editor native', () => {
+    const { wheel, scrollTo } = fixture()
+    const input = screen.getByRole('textbox', { name: 'Answer' })
+    Object.defineProperty(input, 'scrollHeight', {
+      configurable: true,
+      value: 400,
+    })
+    Object.defineProperty(input, 'clientHeight', {
+      configurable: true,
+      value: 80,
+    })
+    expect(wheel(120, { target: input }).defaultPrevented).toBe(false)
+    expect(scrollTo).not.toHaveBeenCalled()
   })
 
   it('clamps even a large wheel delta to a tall page tail and leaves only on the next gesture', () => {
     const { wheel, scrollTo, viewport } = fixture({ tall: true })
     wheel(900)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 120, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 120,
+      behavior: 'instant',
+    })
     expect(viewport.children[0]).toHaveAttribute('data-current', 'true')
     wheel(120)
     expect(scrollTo).toHaveBeenCalledTimes(1)
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 620, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 620,
+      behavior: 'instant',
+    })
   })
 
-  it('does not steal nested scrolling, editable fields, horizontal bursts or pinch wheels', () => {
+  it('does not steal nested scrolling, wheel value controls, horizontal bursts or pinch wheels', () => {
     const { wheel, scrollTo } = fixture()
     const nested = screen.getByTestId('nested')
     Object.defineProperty(nested, 'scrollHeight', {
@@ -186,7 +295,7 @@ describe('SlideDeck local page gestures', () => {
     })
     expect(wheel(120, { target: nested }).defaultPrevented).toBe(false)
     expect(
-      wheel(120, { target: screen.getByRole('textbox'), gap: 200 })
+      wheel(120, { target: screen.getByRole('spinbutton'), gap: 200 })
         .defaultPrevented,
     ).toBe(false)
     expect(wheel(30, { deltaX: 120, gap: 200 }).defaultPrevented).toBe(false)
@@ -219,7 +328,10 @@ describe('SlideDeck local page gestures', () => {
     expect(scrollTo).not.toHaveBeenCalled()
     touch('touchend', [])
     expect(scrollTo).toHaveBeenCalledTimes(1)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
     touch('touchstart', [point(300)])
     expect(touch('touchmove', [point(280, 250)]).defaultPrevented).toBe(false)
     touch('touchend', [])
@@ -242,12 +354,18 @@ describe('SlideDeck local page gestures', () => {
     touch('touchmove', [point(50)])
     touch('touchend', [])
     expect(scrollTo).toHaveBeenCalledTimes(1)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 120, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 120,
+      behavior: 'instant',
+    })
     expect(viewport.children[0]).toHaveAttribute('data-current', 'true')
     touch('touchstart', [point(400)])
     touch('touchmove', [point(100)])
     touch('touchend', [])
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 620, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 620,
+      behavior: 'instant',
+    })
   })
 
   it.each([
@@ -270,7 +388,7 @@ describe('SlideDeck local page gestures', () => {
     },
   )
 
-  it('does not queue another wheel page while a previous page is moving', () => {
+  it('does not start another wheel page before a previous page settles', () => {
     const { wheel, scrollTo, scroll } = fixture({ reduced: false })
     scrollTo.mockImplementation(() => {})
     wheel(120)
@@ -279,7 +397,10 @@ describe('SlideDeck local page gestures', () => {
     expect(scrollTo).toHaveBeenCalledTimes(1)
     scroll(500)
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'smooth',
+    })
   })
 
   it('unlocks navigation at the live page anchor after earlier content grows', () => {
@@ -293,7 +414,10 @@ describe('SlideDeck local page gestures', () => {
     scroll(600)
     wheel(120, { gap: 200 })
     expect(scrollTo).toHaveBeenCalledTimes(2)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1100, behavior: 'smooth' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1100,
+      behavior: 'smooth',
+    })
   })
 
   it('keeps pointer page gestures available over non-scrolling choice buttons', () => {
@@ -301,7 +425,10 @@ describe('SlideDeck local page gestures', () => {
     expect(
       wheel(120, { target: screen.getByRole('radio') }).defaultPrevented,
     ).toBe(true)
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
   })
 
   it('leaves taps and canceled vertical round trips on their original page', () => {
@@ -354,7 +481,10 @@ describe('SlideDeck local page gestures', () => {
     expect(touch('touchmove', [point(200)], button).defaultPrevented).toBe(true)
     touch('touchend', [], button)
     expect(scrollTo).toHaveBeenCalledOnce()
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
   })
 
   it('handles the first cancelable scroll move just beyond the measured tap tolerance', () => {
@@ -365,7 +495,10 @@ describe('SlideDeck local page gestures', () => {
     touch('touchmove', [point(180)])
     touch('touchend', [])
     expect(scrollTo).toHaveBeenCalledOnce()
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
   })
 
   it.each([6, 8, 12])(
@@ -404,7 +537,10 @@ describe('SlideDeck local page gestures', () => {
     expect(wheel(0).defaultPrevented).toBe(false)
     wheel(120)
     expect(scrollTo).toHaveBeenCalledOnce()
-    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'instant' })
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 500,
+      behavior: 'instant',
+    })
   })
 
   it('does not rewind an oversized final page at its end', () => {

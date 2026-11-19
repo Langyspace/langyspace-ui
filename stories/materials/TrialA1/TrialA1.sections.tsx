@@ -1,4 +1,7 @@
 import { Fragment, useState } from 'react'
+import { GuidedConversation } from '../shared/GuidedConversation'
+import type { GuidedConversationMode } from '../shared/GuidedConversation.types'
+import { guidedConversation } from './TrialA1.guided'
 import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
@@ -54,14 +57,7 @@ export function PictureTalkSection({
           hotspots={content.p2.items.map((p, i) => ({
             id: String(i),
             label: p.en,
-            prompt: (
-              <>
-                <span>{i === 0 ? 'Do you like music?' : 'What’s this?'}</span>
-                {selected === String(i) && audio.error ? (
-                  <span role="status">{audio.error}</span>
-                ) : null}
-              </>
-            ),
+            prompt: null,
             targetBounds: p.targetBounds,
             xPercent: p.x,
             yPercent: p.y,
@@ -74,6 +70,9 @@ export function PictureTalkSection({
             setVisited((old) => (old.includes(id) ? old : [...old, id]))
           }}
         />
+        {selected && audio.error ? (
+          <S.Hint role="status">{audio.error}</S.Hint>
+        ) : null}
       </T.SceneFit>
       <S.Stack>
         {content.p2.support.map((group) => (
@@ -93,35 +92,41 @@ export function PictureTalkSection({
     </T.Columns>
   )
 }
-export function ListenTalkSection() {
+export function ListenTalkSection({
+  onModeChange,
+}: {
+  onModeChange?: (mode: GuidedConversationMode) => void
+} = {}) {
   const [translated, setTranslated] = useState<string[]>([])
   return (
-    <T.Columns>
-      <LearningDialogue
-        density="regular"
-        lines={content.p3.lines.map((l, i) => ({
-          id: String(i),
-          speaker: l.who === 'kim' ? 'Kim' : 'Ana',
-          avatarUrl: l.who === 'kim' ? kim : ana,
-          side: l.who === 'kim' ? 'start' : 'end',
-          content: l.en,
-          translation: l.g,
-        }))}
-        translatedIds={translated}
-        onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
-      />
-      <T.Support>
-        <h3>Agora vocês</h3>
-        {content.p3.your.map(([question, hint]) => (
-          <Fragment key={question}>
-            <p>{question}</p>
-            <T.Help context={question}>
-              <p>{hint}</p>
-            </T.Help>
-          </Fragment>
-        ))}
-      </T.Support>
-    </T.Columns>
+    <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
+      <T.Columns>
+        <LearningDialogue
+          density="regular"
+          lines={content.p3.lines.map((l, i) => ({
+            id: String(i),
+            speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+            avatarUrl: l.who === 'kim' ? kim : ana,
+            side: l.who === 'kim' ? 'start' : 'end',
+            content: l.en,
+            translation: l.g,
+          }))}
+          translatedIds={translated}
+          onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
+        />
+        <T.Support>
+          <h3>No diálogo</h3>
+          {content.p3.your.map(([question, hint]) => (
+            <Fragment key={question}>
+              <p>{question}</p>
+              <T.Help context={question}>
+                <p>{hint}</p>
+              </T.Help>
+            </Fragment>
+          ))}
+        </T.Support>
+      </T.Columns>
+    </GuidedConversation>
   )
 }
 export function PreferenceSection({

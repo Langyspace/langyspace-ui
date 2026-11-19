@@ -1,5 +1,10 @@
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { GuidedConversation } from '../shared/GuidedConversation'
+import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
+import { guidedConversation } from './TrialB2.guided'
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
@@ -26,45 +31,34 @@ function PictureTalk({ active }: { active: boolean }) {
   const audio = useSceneAudio(active, sceneClips)
   const [selected, setSelected] = useState<string>()
   const [visited, setVisited] = useState<string[]>([])
-  const [support, setSupport] = useState(false)
   return (
-    <S.Scene
-      imageUrl={image}
-      imageAlt={content.p2.alt}
-      hotspots={content.p2.hotspots.map((item) => ({
-        id: item.id,
-        label: item.label,
-        xPercent: item.x,
-        yPercent: item.y,
-        targetBounds: item.targetBounds,
-        prompt: (
-          <>
-            <p>{item.q}</p>
-            {selected === item.id && audio.error ? (
-              <p role="status">{audio.error}</p>
-            ) : null}
-          </>
-        ),
-        answer: <p>{item.support}</p>,
-      }))}
-      selectedId={selected}
-      visitedIds={visited}
-      onPlayHotspot={audio.play}
-      playingId={audio.playingId}
-      onSelect={(id) => {
-        audio.stop()
-        setSelected(id)
-        setSupport(false)
-        setVisited((old) => (old.includes(id) ? old : [...old, id]))
-      }}
-      answerVisible={support}
-      onAnswerToggle={() => setSupport((open) => !open)}
-      labels={{
-        initial: '',
-        show: 'Phrase support',
-        hide: 'Hide support',
-      }}
-    />
+    <>
+      <S.Scene
+        imageUrl={image}
+        imageAlt={content.p2.alt}
+        hotspots={content.p2.hotspots.map((item) => ({
+          id: item.id,
+          label: item.label,
+          xPercent: item.x,
+          yPercent: item.y,
+          targetBounds: item.targetBounds,
+          prompt: null,
+        }))}
+        selectedId={selected}
+        visitedIds={visited}
+        onPlayHotspot={audio.play}
+        playingId={audio.playingId}
+        onSelect={(id) => {
+          audio.stop()
+          setSelected(id)
+          setVisited((old) => (old.includes(id) ? old : [...old, id]))
+        }}
+        labels={{
+          initial: '',
+        }}
+      />
+      {selected && audio.error ? <p role="status">{audio.error}</p> : null}
+    </>
   )
 }
 function PhraseSupport({ phrases }: { phrases: string[] }) {
@@ -147,7 +141,14 @@ function Conversation() {
     </S.Stack>
   )
 }
-function PageBody({ id, active }: { id: string; active: boolean }) {
+function PageBody({
+  id,
+  active,
+  onModeChange,
+}: { id: string; active: boolean } & Pick<
+  GuidedConversationProps,
+  'onModeChange'
+>) {
   if (id === 's1')
     return (
       <S.Stack>
@@ -165,30 +166,31 @@ function PageBody({ id, active }: { id: string; active: boolean }) {
   if (id === 's2') return <PictureTalk active={active} />
   if (id === 's3')
     return (
-      <S.Stack>
-        <RecordedDialoguePlayback conversationId="TrialB2:s3" active={active} />
-        <S.Dialogue>
-          {content.p3.lines.map((line, index) => (
-            <li key={index}>
-              <CharacterAvatar
-                size="md"
-                imageUrl={line.who === 'ana' ? ana : kim}
-                initials={line.who === 'ana' ? 'An' : 'Ki'}
-                aria-hidden="true"
-              />
-              <div>
-                <b>{line.who === 'ana' ? 'Ana' : 'Kim'}</b>
-                <p>{line.en}</p>
-              </div>
-            </li>
-          ))}
-        </S.Dialogue>
-        <Glossary entries={content.p3.glossary} />
-        <S.Panel>
-          <S.Prompt>{content.p3.question}</S.Prompt>
-          <PhraseSupport phrases={content.p3.support} />
-        </S.Panel>
-      </S.Stack>
+      <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
+        <S.Stack>
+          <S.Dialogue>
+            {content.p3.lines.map((line, index) => (
+              <li key={index}>
+                <CharacterAvatar
+                  size="md"
+                  imageUrl={line.who === 'ana' ? ana : kim}
+                  initials={line.who === 'ana' ? 'An' : 'Ki'}
+                  aria-hidden="true"
+                />
+                <div>
+                  <b>{line.who === 'ana' ? 'Ana' : 'Kim'}</b>
+                  <p>{line.en}</p>
+                </div>
+              </li>
+            ))}
+          </S.Dialogue>
+          <Glossary entries={content.p3.glossary} />
+          <S.Panel>
+            <S.Prompt>{content.p3.question}</S.Prompt>
+            <PhraseSupport phrases={content.p3.support} />
+          </S.Panel>
+        </S.Stack>
+      </GuidedConversation>
     )
   if (id.startsWith('s4'))
     return <Preference index={Number(id.slice(-1)) - 1} />
@@ -205,12 +207,12 @@ function PageBody({ id, active }: { id: string; active: boolean }) {
 }
 function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
   const [activeId, setActiveId] = useState(initialPageId ?? 's1')
-  const trigger = useRef<HTMLButtonElement>(null)
-  const [notes, setNotes] = useState(false)
-  const close = () => {
-    setNotes(false)
-    trigger.current?.focus({ preventScroll: true })
-  }
+  const [modelActive, setModelActive] = useState(true)
+
+  const notePopup = useLessonNotesPopup(
+    'langy-notes:Langy Trial B2 Work and life',
+  )
+
   return (
     <S.Root data-material-revision={content.revision}>
       <MaterialSlideDeck
@@ -220,9 +222,11 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
         onPageChange={setActiveId}
         actions={
           <LessonNotesTrigger
-            ref={trigger}
-            open={notes}
-            onClick={() => (notes ? close() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
         pages={content.pages.map((page) => ({
@@ -252,10 +256,32 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
                     Work and <em>life</em>
                   </S.Hero>
                 ) : (
-                  <S.Title id={`${page.id}-title`}>{page.title}</S.Title>
+                  <S.Title id={`${page.id}-title`}>
+                    {page.id === 's3' ? (
+                      <DialogueTitle
+                        title={page.title}
+                        action={
+                          <RecordedDialoguePlayback
+                            conversationId="TrialB2:s3"
+                            active={activeId === page.id && modelActive}
+                          />
+                        }
+                      />
+                    ) : (
+                      page.title
+                    )}
+                  </S.Title>
                 )}
-                <S.Subtitle>{page.subtitle}</S.Subtitle>
-                <PageBody id={page.id} active={activeId === page.id} />
+                <S.Subtitle>
+                  {page.id === 's3'
+                    ? 'Listen, respond and develop each other’s ideas.'
+                    : page.subtitle}
+                </S.Subtitle>
+                <PageBody
+                  id={page.id}
+                  active={activeId === page.id}
+                  onModeChange={(mode) => setModelActive(mode === 'model')}
+                />
               </S.Content>
             </S.Page>
           ),
@@ -263,8 +289,11 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
         overlay={
           <LessonNotes
             storageKey="langy-notes:Langy Trial B2 Work and life"
-            open={notes}
-            onClose={close}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
       />

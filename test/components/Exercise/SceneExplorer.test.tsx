@@ -26,7 +26,12 @@ describe('SceneExplorer projection', () => {
       fit: 'cover',
       position: '50% 100%',
     })
-    expect(image).toMatchObject({ left: 0, top: -150, width: 600, height: 450 })
+    expect(image).toMatchObject({
+      left: 0,
+      top: -150,
+      width: 600,
+      height: 450,
+    })
     expect(scenePoint(image, 50, 10)).toEqual({ x: 300, y: -105 })
   })
   it('retains original size for scale-down and projects image-box offsets', () => {
@@ -125,7 +130,43 @@ describe('SceneExplorer selected feedback', () => {
     fireEvent.click(screen.getByRole('button', { name: 'a book' }))
     expect(select).toHaveBeenCalledWith('book')
   })
-  it('keeps the name, question and replay together inside the image frame', async () => {
+  it('defaults to vocabulary without exposing legacy questions or answers', async () => {
+    const user = userEvent.setup(),
+      play = vi.fn(),
+      select = vi.fn()
+    render(
+      <SceneExplorer
+        imageUrl="/park.webp"
+        imageAlt="Park"
+        hotspots={hotspots.map((hotspot) => ({
+          ...hotspot,
+          answer: 'It is a book.',
+        }))}
+        selectedId="book"
+        visitedIds={['book']}
+        onSelect={select}
+        onPlayHotspot={play}
+        answerVisible
+      />,
+    )
+    const marker = screen.getByRole('button', { name: 'a book' })
+    marker.focus()
+    await user.keyboard('{Enter}')
+    expect(select).toHaveBeenCalledWith('book')
+    expect(marker).toHaveFocus()
+    expect(play).not.toHaveBeenCalled()
+    const region = screen.getByRole('region', { name: 'a book' })
+    expect(region.parentElement).toContainElement(screen.getByRole('img'))
+    expect(region).toHaveTextContent('a book')
+    expect(screen.queryByText('What’s this?')).not.toBeInTheDocument()
+    expect(screen.queryByText('It is a book.')).not.toBeInTheDocument()
+    expect(
+      screen.queryByRole('button', { name: /resposta/ }),
+    ).not.toBeInTheDocument()
+    await user.click(screen.getByRole('button', { name: 'Ouvir: a book' }))
+    expect(play).toHaveBeenCalledExactlyOnceWith('book')
+  })
+  it('keeps an explicitly controlled comprehension question and replay together', async () => {
     const user = userEvent.setup(),
       play = vi.fn(),
       select = vi.fn(),
@@ -142,6 +183,7 @@ describe('SceneExplorer selected feedback', () => {
               <audio aria-label="Native recording" />
             </>
           ),
+          answer: 'It is a book.',
         }))}
         selectedId="book"
         visitedIds={['book']}
@@ -150,6 +192,7 @@ describe('SceneExplorer selected feedback', () => {
         onPlay={nativePlay}
         aria-label="Explorer"
         playingId="book"
+        onAnswerToggle={vi.fn()}
       />,
     )
     const region = screen.getByRole('region', { name: 'a book' })

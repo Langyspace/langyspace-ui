@@ -1,3 +1,4 @@
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { LessonShell } from '../shared/LessonShell'
@@ -106,19 +107,21 @@ export function A201Lesson({ initialPageId }: LessonProps) {
                       <>
                         This week I’m <em>working in Porto</em>
                       </>
+                    ) : page === 6 ? (
+                      <DialogueTitle
+                        title={section.title}
+                        action={
+                          <RecordedDialoguePlayback
+                            conversationId="A201:s6"
+                            active={activeId === section.id}
+                          />
+                        }
+                      />
                     ) : (
                       section.title
                     )
                   }
                   instruction={instruction}
-                  tools={
-                    page === 6 ? (
-                      <RecordedDialoguePlayback
-                        conversationId="A201:s6"
-                        active={activeId === section.id}
-                      />
-                    ) : undefined
-                  }
                 >
                   {body}
                 </A.Page>

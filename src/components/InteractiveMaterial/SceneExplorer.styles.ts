@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
@@ -45,7 +45,7 @@ export const Hotspot = styled(Pressable)<{
     outline-offset: 3px;
   }
 `
-export const DotHotspot = styled(Hotspot)`
+const dotHotspot = css`
   border: 0;
   background: transparent;
   &::before {
@@ -73,6 +73,9 @@ export const DotHotspot = styled(Hotspot)`
     outline-offset: 2px;
   }
 `
+export const DotHotspot = styled(Hotspot)`
+  ${dotHotspot}
+`
 export const LabelScene = styled(Scene)`
   container-type: inline-size;
   border-radius: ${theme.slides.panelRadius};
@@ -92,6 +95,11 @@ export const LabelHotspot = styled(Hotspot)`
     box-shadow: ${theme.shadows.sm};
     white-space: nowrap;
     font-size: clamp(0.8125rem, 2.1cqw, 1rem);
+  }
+  &[data-scene-compact='true'] {
+    width: 44px;
+    border-radius: ${theme.radius.circle};
+    ${dotHotspot}
   }
 `
 

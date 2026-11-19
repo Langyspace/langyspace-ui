@@ -1,30 +1,6 @@
-import { useState } from 'react'
-import { SlideNotes } from '../../../src/components/Slide/SlideNotes'
+import { PopupWarning } from './LessonNotes.styles'
 import type { NotesProps } from './Lesson.types'
-function PersistentNotes({ open, onClose, storageKey }: NotesProps) {
-  const [text, setText] = useState(() => {
-    try {
-      return window.localStorage.getItem(storageKey) ?? ''
-    } catch {
-      return ''
-    }
-  })
-  return (
-    <SlideNotes
-      open={open}
-      value={text}
-      onClose={onClose}
-      onChange={(value) => {
-        setText(value)
-        try {
-          window.localStorage.setItem(storageKey, value)
-        } catch {
-          /* A blocked browser store must never prevent editing. */
-        }
-      }}
-    />
-  )
-}
-export function LessonNotes(props: NotesProps) {
-  return <PersistentNotes key={props.storageKey} {...props} />
+/** Teacher content lives only in its protected popup; previews mount their own event root on click. */
+export function LessonNotes({ error }: NotesProps) {
+  return error ? <PopupWarning role="status">{error}</PopupWarning> : null
 }

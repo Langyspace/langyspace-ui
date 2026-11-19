@@ -11,6 +11,9 @@ export interface LessonProps extends HomeworkDestinationProps {
   initialPageId?: string
 }
 export interface NotesProps {
+  popupWindow?: Window | null
+  preview?: boolean
+  error?: string
   storageKey: string
   open: boolean
   onClose: () => void

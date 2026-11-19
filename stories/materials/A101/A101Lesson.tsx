@@ -1,7 +1,9 @@
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { DialogueTitle } from '../shared/DialogueTitle'
+import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
 import { useLessonPage } from '../shared/useLessonPage'
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { useRef, useState } from 'react'
-import { IconButton } from '../../../src/components/IconButton/IconButton'
+
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { VoiceMessageDemo } from '../../components/VoiceMessage/VoiceMessageDemo'
@@ -39,12 +41,8 @@ function A101LessonContent({
   learnerName = '',
 }: A101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
-  const [notes, setNotes] = useState(false)
-  const notesButton = useRef<HTMLButtonElement>(null)
-  const closeNotes = () => {
-    setNotes(false)
-    notesButton.current?.focus()
-  }
+  const notePopup = useLessonNotesPopup('langy-notes:a1-01')
+
   const speech = useLessonSpeech()
   const pages = order.map((id) => {
     const number = Number(id.slice(1))
@@ -116,49 +114,36 @@ function A101LessonContent({
             eyebrow="Guided conversation"
             instruction="Escute e depois leia com a professora, uma personagem para cada uma."
             title={
-              <Styled.TitleAudio>
-                Nice to meet you
-                <IconButton
-                  variant="brand"
-                  size="md"
-                  aria-label={
-                    speech.playingId?.startsWith('R.')
-                      ? speech.paused
-                        ? 'Continuar conversa'
-                        : 'Pausar conversa'
-                      : 'Ouvir conversa completa'
-                  }
-                  aria-pressed={
-                    Boolean(speech.playingId?.startsWith('R.')) &&
-                    !speech.paused
-                  }
-                  onClick={() => {
-                    if (speech.playingId?.startsWith('R.')) speech.togglePause()
-                    else
-                      speech.speak(
-                        lesson.RT.map((line) => ({
-                          id: line.id,
-                          text: line.en,
-                          speaker: line.who,
-                        })),
-                      )
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    {speech.playingId?.startsWith('R.') && !speech.paused ? (
-                      <path d="M6 4h4v16H6zm8 0h4v16h-4z" />
-                    ) : (
-                      <path d="M7 4v16l13-8z" />
-                    )}
-                  </svg>
-                </IconButton>
-              </Styled.TitleAudio>
+              <DialogueTitle
+                title="Nice to meet you"
+                action={
+                  <DialoguePlaybackAction
+                    context="Nice to meet you"
+                    disabled={pageId !== id}
+                    status={
+                      speech.playingId?.startsWith('R.')
+                        ? speech.paused
+                          ? 'paused'
+                          : 'playing'
+                        : speech.error
+                          ? 'error'
+                          : 'idle'
+                    }
+                    onClick={() => {
+                      if (speech.playingId?.startsWith('R.'))
+                        speech.togglePause()
+                      else
+                        speech.speak(
+                          lesson.RT.map((line) => ({
+                            id: line.id,
+                            text: line.en,
+                            speaker: line.who,
+                          })),
+                        )
+                    }}
+                  />
+                }
+              />
             }
           >
             <DialogueSection
@@ -331,7 +316,7 @@ function A101LessonContent({
             width="conversation"
             eyebrow="Conversation"
             title="Let’s talk"
-            instruction="Escolham as perguntas e conversem. Responda sobre você e devolva a pergunta: And you?"
+            instruction="Conversem sobre você e alguém que você conhece. Depois, comece as perguntas. Na última situação, corrija a informação."
           >
             <ConversationSection />
           </SlidePage>
@@ -367,15 +352,20 @@ function A101LessonContent({
         overlay={
           <LessonNotes
             storageKey="langy-notes:a1-01"
-            open={notes}
-            onClose={closeNotes}
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
           />
         }
         actions={
           <LessonNotesTrigger
-            ref={notesButton}
-            open={notes}
-            onClick={() => (notes ? closeNotes() : setNotes(true))}
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
           />
         }
       />
