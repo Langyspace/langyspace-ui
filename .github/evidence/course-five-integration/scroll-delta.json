@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-19T02:45:31.151481+00:00",
+  "rootReservation": "INT-COURSE-SCROLL-02",
+  "bug": "PageDown skipped initially offscreen final controls/text on slightly oversized B2/C1 mobile pages because the viewport-height step crossed the next snap point.",
+  "change": "Clamp vertical Arrow40/Page viewport-height steps to current page start/end for both viewport and header/root focus. Preserve snap CSS, API and input/widget guards. Next vertical key advances after exposing tail.",
+  "checks": {
+    "SlideDeck": "16tests passed, then2 updated small-remainder arrow assertions passed;14unchanged tests reused"
+  },
+  "stagingBefore": "Teacher84505eae verified792assets;A1/B1journeys passed;B2/C1 failed on actual skipped tail",
+  "portables": "B1/C1 rebuilt from actual reviewed shared source; original conditional publication/readback/render recorded in central Teacher evidence. A1/B2native original HTML remains unchanged."
+}

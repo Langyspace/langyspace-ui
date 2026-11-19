@@ -198,15 +198,63 @@ describe('SlideDeck', () => {
     expect(scrollTo).not.toHaveBeenCalled()
   })
 
-  it('allows native scrolling within a long slide before advancing', () => {
-    render(<SlideDeck label="Aula" pages={pages} />)
-    const { viewport, scrollTo } = geometry()
-    vi.spyOn(viewport.children[0]!, 'getBoundingClientRect').mockReturnValue(
-      new DOMRect(0, 0, 800, 1100),
-    )
-    expect(fireEvent.keyDown(viewport, { key: 'PageDown' })).toBe(true)
-    expect(scrollTo).not.toHaveBeenCalled()
-  })
+  it.each(['viewport', 'header'] as const)(
+    'exposes a short page remainder before advancing from the %s',
+    (focus) => {
+      render(
+        <SlideDeck
+          label="Aula"
+          pages={pages}
+          actions={<button>Notes</button>}
+        />,
+      )
+      const { viewport, scrollTo } = geometry()
+      const heights = [613, 500, 500]
+      let top = 0
+      Array.from(viewport.children).forEach((child, index) => {
+        const start = top
+        top += heights[index]!
+        vi.spyOn(child, 'getBoundingClientRect').mockImplementation(
+          () => new DOMRect(0, start - viewport.scrollTop, 800, heights[index]),
+        )
+      })
+      Object.defineProperty(viewport, 'scrollHeight', {
+        configurable: true,
+        value: top,
+      })
+      const target =
+        focus === 'viewport'
+          ? viewport
+          : screen.getByRole('button', { name: 'Notes' })
+      target.focus()
+      expect(fireEvent.keyDown(target, { key: 'PageDown' })).toBe(false)
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 113,
+        behavior: 'instant',
+      })
+      fireEvent.scroll(viewport)
+      expect(screen.getByRole('region', { name: 'Primeira' })).toHaveAttribute(
+        'data-current',
+        'true',
+      )
+      fireEvent.keyDown(target, { key: 'ArrowUp' })
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 73,
+        behavior: 'instant',
+      })
+      fireEvent.keyDown(target, { key: 'PageUp' })
+      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'instant' })
+      for (const top of [40, 80, 113]) {
+        fireEvent.keyDown(target, { key: 'ArrowDown' })
+        expect(scrollTo).toHaveBeenLastCalledWith({ top, behavior: 'instant' })
+      }
+      fireEvent.keyDown(target, { key: 'PageDown' })
+      expect(scrollTo).toHaveBeenLastCalledWith({
+        top: 613,
+        behavior: 'smooth',
+      })
+    },
+  )
 
   it('navigates previous, preserving keyboard focus when the first-page button disappears', () => {
     render(<SlideDeck label="Aula" pages={pages} />)

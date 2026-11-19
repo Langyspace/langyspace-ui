@@ -201,17 +201,17 @@ export function useSlideNavigation({
       ((event.key === 'PageUp' || event.key === 'ArrowUp') &&
         rect.top < view.top - 2)
     ) {
-      // Native scrolling inside the page remains available; a header control is outside that scroller.
-      if (event.target instanceof Node && !viewport.contains(event.target)) {
-        event.preventDefault()
-        const distance = event.key.startsWith('Page')
-          ? viewport.clientHeight
-          : 40
-        viewport.scrollTo({
-          top: viewport.scrollTop + (forward ? distance : -distance),
-          behavior: 'instant',
-        })
-      }
+      // Expose the remaining content before a native step can snap past it.
+      event.preventDefault()
+      const distance = event.key.startsWith('Page') ? viewport.clientHeight : 40
+      const pageTop = viewport.scrollTop + rect.top - view.top
+      const pageBottom = pageTop + rect.height - viewport.clientHeight
+      viewport.scrollTo({
+        top: forward
+          ? Math.min(viewport.scrollTop + distance, pageBottom)
+          : Math.max(viewport.scrollTop - distance, pageTop),
+        behavior: 'instant',
+      })
       return
     }
     event.preventDefault()
