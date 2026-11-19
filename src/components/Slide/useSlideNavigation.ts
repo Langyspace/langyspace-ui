@@ -1,16 +1,22 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
 import type { SlideDeckProps } from './SlideDeck.types'
+import { SLIDE_EDITABLE_SELECTOR, useSlideGestures } from './useSlideGestures'
 
 export function useSlideNavigation({
   pages,
   pageId,
   onPageChange,
-}: Pick<SlideDeckProps, 'pages' | 'pageId' | 'onPageChange'>) {
+  navigationMode = 'pages',
+}: Pick<
+  SlideDeckProps,
+  'pages' | 'pageId' | 'onPageChange' | 'navigationMode'
+>) {
   const viewportRef = useRef<HTMLDivElement>(null)
   const [observedId, setObservedId] = useState(pages[0]?.id)
   const [progress, setProgress] = useState(0)
   const activeRef = useRef(pages[0]?.id)
+  const movementTargetRef = useRef<number | undefined>(undefined)
   const requestedRef = useRef<string | undefined>(undefined)
   const firstRequestRef = useRef(true)
   const callbackRef = useRef(onPageChange)
@@ -41,6 +47,7 @@ export function useSlideNavigation({
       const reduced = window.matchMedia(
         '(prefers-reduced-motion: reduce)',
       ).matches
+      movementTargetRef.current = top
       viewport.scrollTo({
         top,
         behavior: behavior ?? (reduced ? 'instant' : 'smooth'),
@@ -48,6 +55,36 @@ export function useSlideNavigation({
     },
     [],
   )
+
+  const step = useCallback(
+    (direction: 1 | -1) => {
+      const viewport = viewportRef.current
+      if (!viewport) return
+      const current = Math.max(
+        0,
+        Array.from(viewport.children).findIndex(
+          (page) =>
+            page instanceof HTMLElement &&
+            page.dataset.slideId === activeRef.current,
+        ),
+      )
+      const next = Math.min(
+        viewport.children.length - 1,
+        Math.max(0, current + direction),
+      )
+      if (next !== current) goToIndex(next)
+    },
+    [goToIndex],
+  )
+
+  useSlideGestures({
+    viewportRef,
+    activeIdRef: activeRef,
+    movementTargetRef,
+    navigationMode,
+    idsKey,
+    onStep: step,
+  })
 
   useEffect(() => {
     const viewport = viewportRef.current
@@ -63,6 +100,7 @@ export function useSlideNavigation({
         lastWidth !== viewport.clientWidth ||
         lastHeight !== viewport.clientHeight
       ) {
+        movementTargetRef.current = undefined
         // Cancel an in-flight smooth scroll at its new geometry, keeping the current page.
         const anchor = elements.find(
           (element) =>
@@ -83,6 +121,11 @@ export function useSlideNavigation({
         lastHeight = viewport.clientHeight
       }
       const scrollableHeight = viewport.scrollHeight - viewport.clientHeight
+      if (
+        movementTargetRef.current !== undefined &&
+        Math.abs(viewport.scrollTop - movementTargetRef.current) <= 2
+      )
+        movementTargetRef.current = undefined
       setProgress(
         scrollableHeight > 0
           ? Math.max(
@@ -172,9 +215,7 @@ export function useSlideNavigation({
       return
     if (
       event.target instanceof Element &&
-      event.target.closest(
-        'input,textarea,select,[contenteditable]:not([contenteditable="false"]),[role="combobox"],[role="listbox"],[role="menu"],[role="slider"],[role="tablist"],[role="radiogroup"],[role="grid"],[role="tree"],[role="spinbutton"]',
-      )
+      event.target.closest(SLIDE_EDITABLE_SELECTOR)
     )
       return
     if (event.key === 'Home' || event.key === 'End') {
@@ -184,6 +225,26 @@ export function useSlideNavigation({
         undefined,
         event.key === 'End',
       )
+      return
+    }
+    if (navigationMode === 'continuous') {
+      const viewport = viewportRef.current
+      if (
+        viewport &&
+        ['PageDown', 'PageUp', 'ArrowDown', 'ArrowUp'].includes(event.key) &&
+        event.target instanceof Node &&
+        !viewport.contains(event.target)
+      ) {
+        event.preventDefault()
+        const direction = event.key.endsWith('Down') ? 1 : -1
+        const distance = event.key.startsWith('Page')
+          ? viewport.clientHeight
+          : 40
+        viewport.scrollTo({
+          top: viewport.scrollTop + direction * distance,
+          behavior: 'instant',
+        })
+      }
       return
     }
     const forward = ['PageDown', 'ArrowDown', 'ArrowRight'].includes(event.key)
@@ -215,9 +276,7 @@ export function useSlideNavigation({
       return
     }
     event.preventDefault()
-    goToIndex(
-      Math.min(pages.length - 1, Math.max(0, index + (forward ? 1 : -1))),
-    )
+    step(forward ? 1 : -1)
   }
 
   return { viewportRef, index, progress, goToIndex, onKeyDown }

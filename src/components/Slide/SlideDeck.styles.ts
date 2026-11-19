@@ -129,7 +129,7 @@ export const Progress = styled.progress`
   }
 `
 
-export const Viewport = styled.div`
+export const Viewport = styled.div<{ $continuous: boolean }>`
   container-type: size;
   flex: 1 1 0;
   min-width: 0;
@@ -137,7 +137,7 @@ export const Viewport = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: ${(p) => (p.$continuous ? 'none' : 'y mandatory')};
   scroll-behavior: smooth;
   scrollbar-width: none;
   &::-webkit-scrollbar {

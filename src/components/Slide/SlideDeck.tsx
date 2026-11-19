@@ -8,6 +8,7 @@ export function SlideDeck({
   onPageChange,
   label,
   previousPageLabel = 'Voltar',
+  navigationMode = 'pages',
   actions,
   overlay,
   onKeyDown: onRootKeyDown,
@@ -18,6 +19,7 @@ export function SlideDeck({
       pages,
       pageId,
       onPageChange,
+      navigationMode,
     })
   return (
     <Styled.Root
@@ -29,7 +31,7 @@ export function SlideDeck({
       }}
     >
       <Styled.Navigation aria-label={label}>
-        {index > 0 ? (
+        {navigationMode === 'pages' && index > 0 ? (
           <Styled.BackButton
             variant="secondary"
             size="sm"
@@ -62,6 +64,7 @@ export function SlideDeck({
         <Styled.Progress aria-label={label} max={100} value={progress} />
       ) : null}
       <Styled.Viewport
+        $continuous={navigationMode === 'continuous'}
         ref={viewportRef}
         tabIndex={0}
         role="region"

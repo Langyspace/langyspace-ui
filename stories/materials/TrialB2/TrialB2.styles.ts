@@ -24,72 +24,17 @@ export const Root = styled.div`
     outline-offset: 4px;
   }
 `
-export const Header = styled.header`
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-shrink: 0;
-  min-height: ${(p) => recipe(p).headerHeight};
-  padding: ${theme.spacing[2]} ${theme.spacing[8]};
-  border-bottom: 1px solid ${(p) => recipe(p).border};
-  background: ${(p) => recipe(p).headerSurface};
-  gap: ${theme.spacing[3]};
-  font-family: ${(p) => recipe(p).displayFontFamily};
-  font-weight: ${theme.typography.fontWeight.bold};
-  @media (max-width: ${theme.breakpoints.sm}) {
-    padding-inline: ${theme.spacing[4]};
-  }
-`
-export const Brand = styled.span`
-  min-width: 0;
-  font-size: ${theme.typography.fontSize.sm};
-  span {
-    color: ${(p) => recipe(p).indicator};
-    margin-right: ${theme.spacing[2]};
-  }
-`
-export const Progress = styled.progress`
-  position: absolute;
-  inset: auto 0 -1px;
-  height: 3px;
-  width: 100%;
-  border: 0;
-  appearance: none;
-  pointer-events: none;
-  color: ${(p) => recipe(p).indicator};
-  background: transparent;
-  &::-webkit-progress-bar {
-    background: transparent;
-  }
-  &::-webkit-progress-value {
-    background: ${(p) => recipe(p).indicator};
-  }
-  &::-moz-progress-bar {
-    background: ${(p) => recipe(p).indicator};
-  }
-`
-export const Viewport = styled.main`
-  flex: 1;
-  min-height: 0;
-  min-width: 0;
-  overflow: auto;
-  container-type: size;
-  scroll-behavior: smooth;
-  scrollbar-width: thin;
-  @media (prefers-reduced-motion: reduce) {
-    scroll-behavior: auto;
-  }
-`
-export const Page = styled.section`
+export const Page = styled.div`
   min-height: 100cqh;
   min-width: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: ${theme.spacing[12]} ${theme.spacing[8]};
+  padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[12]})
+    ${theme.spacing[8]} ${theme.spacing[12]};
   @media (max-width: ${theme.breakpoints.sm}) {
-    padding: ${theme.spacing[8]} ${theme.spacing[4]};
+    padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[8]})
+      ${theme.spacing[4]} ${theme.spacing[8]};
   }
 `
 export const Content = styled.div`

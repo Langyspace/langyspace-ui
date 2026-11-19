@@ -1,5 +1,8 @@
 import type { Ref } from 'react'
-import type { SlideDeckPage } from '../../../src/components/Slide/SlideDeck.types'
+import type {
+  SlideDeckPage,
+  SlideDeckProps,
+} from '../../../src/components/Slide/SlideDeck.types'
 import type { useLessonSpeech } from './useLessonSpeech'
 export interface HomeworkDestinationProps {
   studentPortalOrigin?: string
@@ -17,6 +20,7 @@ export interface SpeechProps {
   speech: LessonSpeech
 }
 export interface LessonShellProps extends LessonProps {
+  navigationMode?: SlideDeckProps['navigationMode']
   materialKey: string
   pageIds: readonly string[]
   label: string

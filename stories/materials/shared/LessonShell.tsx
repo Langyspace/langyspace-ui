@@ -41,6 +41,7 @@ export function LessonShell({
   pageIds,
   label,
   pages,
+  navigationMode,
 }: LessonShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
   const [notes, setNotes] = useState(false)
@@ -53,6 +54,7 @@ export function LessonShell({
   return (
     <S.Stage>
       <SlideDeck
+        navigationMode={navigationMode}
         tabIndex={-1}
         label={label}
         previousPageLabel="Back"

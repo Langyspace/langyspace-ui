@@ -21,6 +21,7 @@ export function A201Lesson({ initialPageId }: LessonProps) {
   return (
     <MaterialTheme>
       <LessonShell
+        navigationMode="continuous"
         materialKey="a2-01"
         initialPageId={initialPageId}
         pageIds={order}

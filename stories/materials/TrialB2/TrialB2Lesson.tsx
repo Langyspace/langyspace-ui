@@ -1,5 +1,6 @@
-import { useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { MaterialTheme } from '../shared/MaterialTheme'
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import content from './TrialB2.content.json'
@@ -179,84 +180,51 @@ function PageBody({ id }: { id: string }) {
   )
 }
 function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
-  const viewport = useRef<HTMLElement>(null)
   const trigger = useRef<HTMLButtonElement>(null)
   const [notes, setNotes] = useState(false)
-  const [progress, setProgress] = useState(0)
-  useEffect(() => {
-    if (!initialPageId) return
-    const target = viewport.current?.querySelector<HTMLElement>(
-      `[data-page-id="${initialPageId}"]`,
-    )
-    if (target && viewport.current)
-      viewport.current.scrollTo({
-        top:
-          target.getBoundingClientRect().top -
-          viewport.current.getBoundingClientRect().top +
-          viewport.current.scrollTop,
-        behavior: 'instant',
-      })
-  }, [initialPageId])
   const close = () => {
     setNotes(false)
     trigger.current?.focus({ preventScroll: true })
   }
   return (
     <S.Root data-material-revision={content.revision}>
-      <S.Header>
-        <S.Brand>
-          <span>B2</span>Work and life
-        </S.Brand>
-        <LessonNotesTrigger
-          ref={trigger}
-          open={notes}
-          onClick={() => (notes ? close() : setNotes(true))}
-        />
-        <S.Progress aria-label="Lesson progress" value={progress} max={100} />
-      </S.Header>
-      <S.Viewport
-        ref={viewport}
-        data-slide-deck="true"
-        data-slide-viewport="true"
-        tabIndex={0}
-        aria-label="Work and life lesson"
-        onScroll={() => {
-          const element = viewport.current
-          if (element)
-            setProgress(
-              element.scrollHeight > element.clientHeight
-                ? (element.scrollTop /
-                    (element.scrollHeight - element.clientHeight)) *
-                    100
-                : 0,
-            )
-        }}
-      >
-        {content.pages.map((page) => (
-          <S.Page
-            key={page.id}
-            id={page.id}
-            data-page-id={page.id}
-            aria-labelledby={`${page.id}-title`}
-          >
-            <S.Content>
-              {page.id === 's1' ? (
-                <S.Hero id={`${page.id}-title`}>
-                  Work and <em>life</em>
-                </S.Hero>
-              ) : (
-                <S.Title id={`${page.id}-title`}>{page.title}</S.Title>
-              )}
-              <S.Subtitle>{page.subtitle}</S.Subtitle>
-              <PageBody id={page.id} />
-            </S.Content>
-          </S.Page>
-        ))}
-      </S.Viewport>
-      <LessonNotes
-        storageKey="langy-notes:Langy Trial B2 Work and life"
-        open={notes}
-        onClose={close}
+      <MaterialSlideDeck
+        label="B2 Trial · Work and life"
+        previousPageLabel="Back"
+        pageId={initialPageId}
+        actions={
+          <LessonNotesTrigger
+            ref={trigger}
+            open={notes}
+            onClick={() => (notes ? close() : setNotes(true))}
+          />
+        }
+        pages={content.pages.map((page) => ({
+          id: page.id,
+          label: page.title,
+          content: (
+            <S.Page id={page.id}>
+              <S.Content>
+                {page.id === 's1' ? (
+                  <S.Hero id={`${page.id}-title`}>
+                    Work and <em>life</em>
+                  </S.Hero>
+                ) : (
+                  <S.Title id={`${page.id}-title`}>{page.title}</S.Title>
+                )}
+                <S.Subtitle>{page.subtitle}</S.Subtitle>
+                <PageBody id={page.id} />
+              </S.Content>
+            </S.Page>
+          ),
+        }))}
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:Langy Trial B2 Work and life"
+            open={notes}
+            onClose={close}
+          />
+        }
       />
     </S.Root>
   )
