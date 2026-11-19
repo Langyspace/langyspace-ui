@@ -1,0 +1,70 @@
+{
+  "taskId": "EXP-A1-MARKER-02",
+  "status": "ready_for_integration",
+  "phase": "refrozen",
+  "checkedAt": "2026-11-19T01:23:26.874521+00:00",
+  "scope": "Only marker2/3 coordinates and explicitly authorized mobile native tap40→44.",
+  "coordinates": {
+    "2soccer": [
+      84,
+      90
+    ],
+    "3book": [
+      66,
+      40
+    ]
+  },
+  "targets": {
+    "legacyDesktop": 44,
+    "legacyMobile": 44,
+    "reactDesktop": 48,
+    "reactMobile": 48
+  },
+  "original": {
+    "id": "b49c56f7-830d-41db-9de3-c8d24d4bb694",
+    "url": "https://claude.ai/code/artifact/b49c56f7-830d-41db-9de3-c8d24d4bb694",
+    "path": "index.html",
+    "previousVersion": "1795048142-e538",
+    "previousSha256": "b7ce5e61f2bac0e2cf5845ea73ef995251c9a8d23ac7a59a612a531dfc43e43d",
+    "version": "1795051315-e2fb",
+    "sha256": "56ecda0a5b15689e05c5211a1afa7129af60f52698d086c8700a65995e139043",
+    "readbackVerified": true,
+    "readbackByteIdenticalToPortableAndMirror": true
+  },
+  "reactJson": {
+    "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/TrialA1/TrialA1.content.json",
+    "previousSha256": "690cbed38940f7d062ede20381a3071ab0236c0c69001529e872405b442b8ff8",
+    "sha256": "a1b05c233806619535709d89672c7ba32615293ff80177f48bb07eb949292763",
+    "onlyFourCoordinatesChanged": true,
+    "allOtherReactFilesUnchanged": true
+  },
+  "media": "All7 images byte-identical; text, other marker coordinates, scroll, dark, Notes unchanged.",
+  "validation": {
+    "runtime": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/runtime.json",
+    "remoteRenderReceipt": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/remote-render-receipt.json",
+    "viewports": [
+      [
+        1280,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "scope": "Only picture page2; rendered native+React, confirmed ball/book unobscured before and after click, clicked soccer/book, checked44/48 targets. No other journey or audio tests repeated.",
+    "consoleErrors": 0,
+    "visual": "Ball and book fully visible. Soccer moved from proposed80/89 to84/90 to keep expanded soccer label clear of ball too. Book66/40.",
+    "reactMobileImage": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/react-390-scene.png",
+    "legacyMobileImage": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/native-390-scene.png"
+  },
+  "handoff": {
+    "portable": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/index.html",
+    "mirror": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/lab-patch/exp-a1.html",
+    "mirrorPatch": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/mirror.patch",
+    "reactJsonCopy": "/Users/margaridamartins/Documents/Codex/2026-11-18/materiais-experimental-basico/outputs/experimental-basico/marker-02/TrialA1.content.json",
+    "instructions": "Central writer only: re-read current mirror/Lab hash; apply marker-02/mirror.patch (baseline b7ce...) or reconcile exact delta. No index change. Do not replay old dark-only.patch against this revision."
+  },
+  "noCommitBundleTeacherLabSharedWrites": true,
+  "visualGate": "Visual gate review: pending human"
+}

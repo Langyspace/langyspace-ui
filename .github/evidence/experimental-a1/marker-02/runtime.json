@@ -1,0 +1,119 @@
+{
+  "ok": true,
+  "scope": "Only page2, objects/markers2&3 and clicks; 2 viewports per renderer",
+  "results": [
+    {
+      "mode": "native",
+      "width": 1280,
+      "height": 900,
+      "image": {
+        "x": 80,
+        "y": 259.140625,
+        "width": 725.328125,
+        "height": 543.984375
+      },
+      "markers": [
+        {
+          "name": "Revelar: soccer",
+          "x": 83.99862131362961,
+          "y": 89.99856383742639,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Revelar: a book",
+          "x": 65.99814739018979,
+          "y": 40,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clicks": "soccer and book expanded successfully"
+    },
+    {
+      "mode": "native",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 20,
+        "y": 213.59375,
+        "width": 350,
+        "height": 262.5
+      },
+      "markers": [
+        {
+          "name": "Revelar: soccer",
+          "x": 84,
+          "y": 90,
+          "width": 44,
+          "height": 44
+        },
+        {
+          "name": "Revelar: a book",
+          "x": 66,
+          "y": 40,
+          "width": 44,
+          "height": 44
+        }
+      ],
+      "clicks": "soccer and book expanded successfully"
+    },
+    {
+      "mode": "react",
+      "width": 1280,
+      "height": 900,
+      "image": {
+        "x": 80,
+        "y": 193.859375,
+        "width": 730.65625,
+        "height": 547.984375
+      },
+      "markers": [
+        {
+          "name": "soccer",
+          "x": 83.9998289209187,
+          "y": 89.99743377719483,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "name": "a book",
+          "x": 65.99803259056499,
+          "y": 39.99885945653104,
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "clicks": "soccer and book expanded successfully"
+    },
+    {
+      "mode": "react",
+      "width": 390,
+      "height": 844,
+      "image": {
+        "x": 16,
+        "y": 132.890625,
+        "width": 358,
+        "height": 268.5
+      },
+      "markers": [
+        {
+          "name": "soccer",
+          "x": 83.99965083798882,
+          "y": 89.99650837988827,
+          "width": 48,
+          "height": 48
+        },
+        {
+          "name": "a book",
+          "x": 65.99598463687151,
+          "y": 39.99650837988827,
+          "width": 48,
+          "height": 48
+        }
+      ],
+      "clicks": "soccer and book expanded successfully"
+    }
+  ],
+  "errors": []
+}
