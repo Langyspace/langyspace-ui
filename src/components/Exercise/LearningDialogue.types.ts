@@ -23,3 +23,13 @@ export interface LearningDialogueProps extends Omit<
   completedIds?: readonly string[]
   onComplete?: (id: string) => void
 }
+
+/** Internal text action; rich content may contain its own independent controls. */
+export interface LearningDialogueActionProps {
+  content: ReactNode
+  completed?: boolean
+  label?: string
+  expanded?: boolean
+  pressed?: boolean
+  onActivate: () => void
+}

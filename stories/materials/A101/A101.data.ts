@@ -35,13 +35,16 @@ export const order = [
   's14',
   's71',
   's72',
+  's18',
+  's73',
   's16',
   's17',
   's8',
   's9',
   's10',
-  's18',
+  's74',
   's15',
+  's75',
   's13',
 ]
 const feelingImages = [

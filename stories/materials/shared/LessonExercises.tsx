@@ -43,14 +43,14 @@ export function VocabularyExercise({ items, note }: VocabularyExerciseProps) {
           aria-pressed={hint}
           onClick={() => setHint(!hint)}
         >
-          Dica: primeira letra
+          First letter
         </Button>
         <Button
           variant="secondary"
           aria-pressed={all}
           onClick={() => setAll(!all)}
         >
-          {all ? 'Esconder palavras' : 'Mostrar palavras'}
+          {all ? 'Hide words' : 'Show words'}
         </Button>
       </Common.Row>
       {note ? <Common.Hint>{note}</Common.Hint> : null}
@@ -64,7 +64,6 @@ export function ChoiceExercise({
   options,
   correctIndex,
   image,
-  explanation,
 }: ChoiceExerciseProps) {
   const [selected, setSelected] = useState<number>()
   return (
@@ -94,15 +93,8 @@ export function ChoiceExercise({
         ))}
       </Common.Stack>
       {selected !== undefined ? (
-        <Common.Hint role="status">
-          {selected === correctIndex ? 'Correto!' : 'Tente novamente.'}
-          {explanation ? ` ${explanation}` : ''}
-        </Common.Hint>
-      ) : null}
-      <AnswerDisclosure question={question} answer={options[correctIndex]} />
-      {selected !== undefined ? (
         <Button variant="text" onClick={() => setSelected(undefined)}>
-          Tentar novamente
+          Try again
         </Button>
       ) : null}
     </Common.Surface>
@@ -113,9 +105,6 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
   const [translations, setTranslations] = useState<string[]>([])
   const { speak, error } = useMaterialSpeech()
   const speakers = [...new Set(lines.map((line) => line.speaker))]
-  const translatable = lines.filter((line) => line.translation)
-  const allTranslated =
-    translatable.length > 0 && translations.length === translatable.length
   return (
     <Common.Stack>
       <LearningDialogue
@@ -126,27 +115,12 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
           translation: line.translation,
           avatarUrl: line.avatarUrl,
           side: speakers.indexOf(line.speaker) % 2 ? 'end' : 'start',
-          audioLabel: `Ouvir: ${line.text}`,
+          audioLabel: `Listen: ${line.text}`,
         }))}
         translatedIds={translations}
         onTranslate={(id) => setTranslations((ids) => toggle(ids, id))}
         onPlay={(id) => speak(lines.find((line) => line.id === id)?.text ?? '')}
       />
-      {translatable.length > 0 ? (
-        <Common.Row>
-          <Button
-            variant="secondary"
-            aria-expanded={allTranslated}
-            onClick={() =>
-              setTranslations(
-                allTranslated ? [] : translatable.map((line) => line.id),
-              )
-            }
-          >
-            {allTranslated ? 'Ocultar tradução' : 'Ver em português'}
-          </Button>
-        </Common.Row>
-      ) : null}
       {error ? <Common.Hint role="status">{error}</Common.Hint> : null}
     </Common.Stack>
   )
@@ -164,10 +138,11 @@ export function PromptExercise({
             <Common.Number aria-hidden="true">{index + 1}</Common.Number>
           ) : null}
           <Common.Stack>
-            <p>{item.prompt}</p>
             {item.answer ? (
               <AnswerDisclosure question={item.prompt} answer={item.answer} />
-            ) : null}
+            ) : (
+              <p>{item.prompt}</p>
+            )}
           </Common.Stack>
         </Styled.Prompt>
       ))}

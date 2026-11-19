@@ -79,8 +79,7 @@ export function WarmUpSection({
   const w = content.warmUps[index] ?? content.warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([]),
     [open, setOpen] = useState(!w.hide)
-  const done = attempts.includes(w.a),
-    last = attempts.at(-1)
+  const done = attempts.includes(w.a)
   const answer = w.o[w.a] ?? ''
   return (
     <ExercisePanel
@@ -145,15 +144,6 @@ export function WarmUpSection({
             Show options
           </Button>
         )}
-        {last !== undefined ? (
-          <QuizFeedback tone={done ? 'correct' : 'wrong'}>
-            {done
-              ? 'Correct!'
-              : (Object.entries(w.why).find(
-                  ([key]) => key === String(last),
-                )?.[1] ?? 'Try again.')}
-          </QuizFeedback>
-        ) : null}
         {done ? (
           <>
             <S.Now>

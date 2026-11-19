@@ -67,8 +67,7 @@ export function WarmUpSection({ index }: WarmUpProps) {
   const w = warmUps[index] ?? warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([]),
     [open, setOpen] = useState(!w.hide)
-  const done = attempts.includes(w.a),
-    last = attempts.at(-1)
+  const done = attempts.includes(w.a)
   return (
     <ExercisePanel
       layout="split"
@@ -87,17 +86,11 @@ export function WarmUpSection({ index }: WarmUpProps) {
               },
             ]}
           />
-          {w.hint ? (
-            <LessonHint context="Language support">
-              <b>Language support</b>
-              <S.Hint>{w.hint}</S.Hint>
-            </LessonHint>
-          ) : null}
           <S.SceneImage
             src={image(w.pic)}
             alt={
               vocabulary.find((v) => v.imageUrl === image(w.pic))?.imageAlt ??
-              'Cena da pergunta'
+              'Question scene'
             }
           />
         </S.Stack>
@@ -134,17 +127,10 @@ export function WarmUpSection({ index }: WarmUpProps) {
             Show options
           </Button>
         )}
-        {last !== undefined ? (
-          <QuizFeedback tone={done ? 'correct' : 'wrong'}>
-            {done ? 'Correct!' : `Not yet. ${w.why[last] ?? ''}`}
-          </QuizFeedback>
-        ) : null}
-
         {done ? (
           <S.Now>
             <b>Now you</b>
             <p>{w.now}</p>
-            {index === 2 ? <S.Hint>{w.sub}</S.Hint> : null}
           </S.Now>
         ) : null}
       </S.Stack>

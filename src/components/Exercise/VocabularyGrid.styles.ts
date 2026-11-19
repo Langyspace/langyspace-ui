@@ -1,4 +1,4 @@
-import { css, keyframes, styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
@@ -90,16 +90,6 @@ export const WordBadge = styled.span`
   font-weight: ${theme.typography.fontWeight.bold};
 `
 // Exact label treatment recovered from Margarida's 19/11 Vocabulary edit.
-const labelEnter = keyframes`
-  from {
-    opacity: 0;
-    transform: translate(-50%, 4px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
-`
 const vocabularyLabel = css`
   position: absolute;
   top: auto;
@@ -111,12 +101,18 @@ const vocabularyLabel = css`
   max-width: calc(100% - 20px);
   padding: 6px 14px;
   border-radius: ${theme.radius.pill};
-  background: color-mix(in srgb, ${theme.colors.palette.white} 82%, transparent);
+  background: color-mix(
+    in srgb,
+    ${theme.colors.palette.white} 82%,
+    transparent
+  );
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: ${theme.colors.palette.extended.ink};
-  border: 1px solid color-mix(in srgb, ${theme.colors.palette.white} 70%, transparent);
-  box-shadow: 0 6px 18px color-mix(in srgb, ${theme.colors.palette.black} 14%, transparent);
+  border: 1px solid
+    color-mix(in srgb, ${theme.colors.palette.white} 70%, transparent);
+  box-shadow: 0 6px 18px
+    color-mix(in srgb, ${theme.colors.palette.black} 14%, transparent);
   text-align: center;
   font-family: ${(p) => recipe(p).displayFontFamily};
   font-size: 15px;
@@ -124,24 +120,20 @@ const vocabularyLabel = css`
   line-height: 1.15;
   letter-spacing: -0.01em;
   z-index: 1;
-  animation: ${labelEnter} 0.22s ease-out both;
   @media (max-width: 600px) {
     bottom: 6px;
     padding: 4px 10px;
     font-size: 13px;
   }
-  @media (prefers-reduced-motion: reduce) {
-    animation: none;
-  }
 `
 export const WordCaption = styled.span`
   ${vocabularyLabel}
 `
-export const WordLabel = styled.span`
+export const WordLabel = styled.span<{ $revealed: boolean }>`
   ${vocabularyLabel}
   b {
     display: block;
-    font-size: ${theme.typography.fontSize.md};
+    font-size: ${(p) => (p.$revealed ? theme.typography.fontSize.md : '15px')};
     font-weight: ${theme.typography.fontWeight.bold};
     color: ${theme.colors.palette.extended.ink};
   }
@@ -150,7 +142,7 @@ export const WordLabel = styled.span`
   }
   @media (max-width: 600px) {
     b {
-      font-size: 13.5px;
+      font-size: ${(p) => (p.$revealed ? '13.5px' : '13px')};
     }
   }
 `

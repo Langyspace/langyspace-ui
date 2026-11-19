@@ -39,6 +39,16 @@ export function VocabularyGrid({
               ? activeId === item.id && revealed
               : hovered === item.id && (revealOnHover || revealed)
         const hint = item.initialHint ?? formatVocabularyHint(item.word)
+        const showChip =
+          showLabel ||
+          (revealVariant === 'tooltip' &&
+            (showAll ||
+              (activeId === undefined && revealedIds.includes(item.id)) ||
+              (showInitial && !revealed)))
+        const preview = () => {
+          if (revealOnHover && !showAll && !revealedIds.includes(item.id))
+            setHovered(item.id)
+        }
         return (
           <Styled.Word
             $completed={markRevealed && revealedIds.includes(item.id)}
@@ -56,15 +66,11 @@ export function VocabularyGrid({
                 ? showAll || (activeId === item.id && revealed)
                 : revealed
             }
-            onPointerEnter={() => {
-              setHovered(item.id)
-            }}
+            onPointerEnter={preview}
             onPointerLeave={() => {
               setHovered(undefined)
             }}
-            onFocus={() => {
-              setHovered(item.id)
-            }}
+            onFocus={preview}
             onBlur={() => {
               setHovered(undefined)
             }}
@@ -96,20 +102,9 @@ export function VocabularyGrid({
                     : '?'}
               </Styled.QuestionMark>
             ) : null}
-            {revealVariant === 'tooltip' &&
-            !showLabel &&
-            (showAll ||
-              (activeId === undefined && revealedIds.includes(item.id)) ||
-              (showInitial && !revealed)) ? (
-              <Styled.WordCaption>
-                {showAll || revealedIds.includes(item.id)
-                  ? item.word
-                  : hint}
-              </Styled.WordCaption>
-            ) : null}
-            {showLabel ? (
-              <Styled.WordLabel>
-                <b>{item.word}</b>
+            {showChip ? (
+              <Styled.WordLabel $revealed={revealed}>
+                <b>{revealed ? item.word : hint}</b>
                 <small>{item.translation}</small>
               </Styled.WordLabel>
             ) : null}

@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
@@ -60,10 +60,11 @@ export const Speech = styled.div<{
   $playing: boolean
   $side: 'start' | 'end'
   $completed: boolean
+  $hasAudio: boolean
 }>`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: ${(p) => (p.$hasAudio ? 'minmax(0, 1fr) auto' : 'minmax(0, 1fr)')};
+  align-items: start;
   gap: ${theme.spacing[2]};
   max-width: 100%;
   min-width: 0;
@@ -81,13 +82,17 @@ export const Speech = styled.div<{
       ${theme.spacing[4]};
     font-size: ${theme.typography.fontSize.md};
   }
-  > div:first-child,
-  > button:first-child {
-    flex: 1;
-    min-width: 0;
+  > button {
+    align-self: start;
   }
 `
-export const Translate = styled(Pressable)`
+export const Message = styled.div`
+  display: grid;
+  gap: ${theme.spacing[2]};
+  min-width: 0;
+  overflow-wrap: anywhere;
+`
+const textAction = css`
   border: 0;
   background: transparent;
   padding: 0;
@@ -100,8 +105,15 @@ export const Translate = styled(Pressable)`
     outline-offset: 3px;
   }
 `
+export const Translate = styled(Pressable)`
+  ${textAction}
+`
+export const RichTranslate = styled.div`
+  ${textAction}
+`
 export const Translation = styled.div`
-  flex-basis: 100%;
+  min-width: 0;
+  contain: inline-size;
   font-size: ${theme.typography.fontSize.sm};
   color: ${(p) => recipe(p).muted};
 `

@@ -1,8 +1,7 @@
 import { useId, useState } from 'react'
 import type { ReactNode } from 'react'
-import { Button } from '../../../src/components/Button/Button'
 import { Hint } from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import { AnswerPanel } from './LessonExercises.styles'
+import { AnswerPanel, QuestionTrigger } from './LessonExercises.styles'
 
 export function AnswerDisclosure({
   answer,
@@ -15,16 +14,15 @@ export function AnswerDisclosure({
   const id = useId()
   return (
     <AnswerPanel>
-      <Button
-        variant="secondary"
-        size="sm"
-        aria-label={`${open ? 'Hide answer' : 'Answer'}: ${question}`}
+      <QuestionTrigger
+        type="button"
+        aria-label={question}
         aria-expanded={open}
         aria-controls={id}
         onClick={() => setOpen(!open)}
       >
-        {open ? 'Hide answer' : 'Answer'}
-      </Button>
+        {question}
+      </QuestionTrigger>
       <Hint id={id} hidden={!open}>
         {answer}
       </Hint>

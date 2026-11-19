@@ -1,6 +1,60 @@
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './LearningDialogue.styles'
-import type { LearningDialogueProps } from './LearningDialogue.types'
+import type {
+  LearningDialogueActionProps,
+  LearningDialogueProps,
+} from './LearningDialogue.types'
+
+function DialogueAction({
+  content,
+  completed,
+  label,
+  expanded,
+  pressed,
+  onActivate,
+}: LearningDialogueActionProps) {
+  const text = (
+    <>
+      {content}
+      {completed ? <span aria-hidden="true"> ✓</span> : null}
+    </>
+  )
+  const accessibility = {
+    'aria-label': label,
+    'aria-expanded': expanded,
+    'aria-pressed': pressed,
+  }
+  if (typeof content === 'string' || typeof content === 'number')
+    return (
+      <Styled.Translate type="button" {...accessibility} onClick={onActivate}>
+        {text}
+      </Styled.Translate>
+    )
+  return (
+    <Styled.RichTranslate
+      role="button"
+      tabIndex={0}
+      {...accessibility}
+      onClick={(event) => {
+        const control = (event.target as Element).closest?.(
+          'button, a, input, select, textarea, [role="button"]',
+        )
+        if (control && control !== event.currentTarget) return
+        onActivate()
+      }}
+      onKeyDown={(event) => {
+        if (event.target !== event.currentTarget) return
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          onActivate()
+        }
+      }}
+    >
+      {text}
+    </Styled.RichTranslate>
+  )
+}
+
 export function LearningDialogue({
   lines,
   density = 'regular',
@@ -33,46 +87,37 @@ export function LearningDialogue({
             $playing={playingId === line.id}
             $side={line.side}
             $completed={completedIds?.includes(line.id) ?? false}
+            $hasAudio={Boolean(onPlay && line.audioLabel)}
           >
-            {onComplete && line.actionLabel ? (
-              <Styled.Translate
-                type="button"
-                aria-label={line.actionLabel}
-                aria-pressed={completedIds?.includes(line.id) ?? false}
-                onClick={() => {
-                  onComplete(line.id)
-                }}
-              >
-                {line.content}
-                {completedIds?.includes(line.id) ? (
-                  <span aria-hidden="true"> ✓</span>
-                ) : null}
-              </Styled.Translate>
-            ) : onTranslate && line.translation ? (
-              <Styled.Translate
-                type="button"
-                onClick={() => {
-                  onTranslate(line.id)
-                }}
-                aria-expanded={translatedIds?.includes(line.id) ?? false}
-              >
-                {line.content}
-              </Styled.Translate>
-            ) : (
-              <div>{line.content}</div>
-            )}
-            {(translatedIds?.includes(line.id) ?? false) ? (
-              <Styled.Translation>{line.translation}</Styled.Translation>
-            ) : null}
+            <Styled.Message>
+              {onComplete && line.actionLabel ? (
+                <DialogueAction
+                  content={line.content}
+                  completed={completedIds?.includes(line.id)}
+                  label={line.actionLabel}
+                  pressed={completedIds?.includes(line.id) ?? false}
+                  onActivate={() => onComplete(line.id)}
+                />
+              ) : onTranslate && line.translation ? (
+                <DialogueAction
+                  content={line.content}
+                  expanded={translatedIds?.includes(line.id) ?? false}
+                  onActivate={() => onTranslate(line.id)}
+                />
+              ) : (
+                <div>{line.content}</div>
+              )}
+              {(translatedIds?.includes(line.id) ?? false) ? (
+                <Styled.Translation>{line.translation}</Styled.Translation>
+              ) : null}
+            </Styled.Message>
             {onPlay && line.audioLabel ? (
               <IconButton
                 size="sm"
                 variant="subtle"
                 aria-label={line.audioLabel}
                 aria-pressed={playingId === line.id}
-                onClick={() => {
-                  onPlay(line.id)
-                }}
+                onClick={() => onPlay(line.id)}
               >
                 <svg
                   aria-hidden="true"

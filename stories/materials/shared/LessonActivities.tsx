@@ -171,7 +171,7 @@ export function GrammarActivity({
 
 export function ReviewActivity({
   items,
-  ownPrompt = 'A professora diz uma frase sua de hoje.',
+  ownPrompt = 'Correct one sentence from today.',
 }: ReviewActivityProps) {
   const [answers, setAnswers] = useState<Record<string, boolean>>({})
   const [marked, setMarked] = useState(false)
@@ -179,9 +179,10 @@ export function ReviewActivity({
     <Common.Stack>
       {items.map((item, index) => (
         <Common.Surface key={item.sentence}>
-          <Common.Heading>
-            {index + 1}. {item.sentence}
-          </Common.Heading>
+          <AnswerDisclosure
+            question={`${index + 1}. ${item.sentence}`}
+            answer={item.answer}
+          />
           <Common.Row>
             {['Right', 'Wrong'].map((choice, option) => (
               <Button
@@ -203,7 +204,6 @@ export function ReviewActivity({
               </Button>
             ))}
           </Common.Row>
-          <AnswerDisclosure question={item.sentence} answer={item.answer} />
           {answers[item.sentence] !== undefined ? (
             <Common.Hint role="status">
               {answers[item.sentence] === item.correct

@@ -1,5 +1,6 @@
 import { PromptExercise } from '../shared/LessonExercises'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { FluencyTimer } from '../../../src/components/InteractiveMaterial/FluencyTimer'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
@@ -66,7 +67,7 @@ export function VocabularySection({
         <IconButton
           size="md"
           variant="neutral"
-          aria-label="Dica: primeira letra"
+          aria-label="Hint: first letter"
           aria-pressed={hint}
           onClick={() => setHint(!hint)}
         >
@@ -85,9 +86,7 @@ export function VocabularySection({
         <IconButton
           size="md"
           variant="neutral"
-          aria-label={
-            all ? 'Esconder todas as palavras' : 'Mostrar todas as palavras'
-          }
+          aria-label={all ? 'Hide all words' : 'Show all words'}
           aria-pressed={all}
           onClick={() => setAll(!all)}
         >
@@ -111,7 +110,6 @@ export function VocabularySection({
 export function WarmUpSection({ item }: WarmUpSectionProps) {
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(item.a)
-  const last = attempts.at(-1)
   return (
     <Styled.WarmPanel
       layout="split"
@@ -127,6 +125,11 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
         </Styled.WarmScene>
       }
     >
+      <Styled.WarmCounter
+        aria-label={`Question ${item.id.split('.')[1]} of 12`}
+      >
+        {item.id.split('.')[1]}/12
+      </Styled.WarmCounter>
       {item.o.map((option, i) => (
         <QuizOption
           key={option}
@@ -148,9 +151,6 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
           {option}
         </QuizOption>
       ))}
-      <Styled.Feedback role="status">
-        {last === undefined ? '' : done ? 'Correto!' : item.why[String(last)]}
-      </Styled.Feedback>
     </Styled.WarmPanel>
   )
 }
@@ -161,21 +161,17 @@ export function DialogueSection({
 }: DialogueSectionProps) {
   const [translated, setTranslated] = useState<string[]>([])
   const [revealed, setRevealed] = useState<number[]>([])
-  const allTranslated = translated.length === lesson.RT.length
   return (
     <Styled.Stack>
       <LearningDialogue
         playingId={playingId}
         translatedIds={translated}
-        onTranslate={
-          gaps
-            ? undefined
-            : (id) =>
-                setTranslated((old) =>
-                  old.includes(id)
-                    ? old.filter((value) => value !== id)
-                    : [...old, id],
-                )
+        onTranslate={(id) =>
+          setTranslated((old) =>
+            old.includes(id)
+              ? old.filter((value) => value !== id)
+              : [...old, id],
+          )
         }
         onPlay={
           gaps
@@ -191,7 +187,7 @@ export function DialogueSection({
           side: line.who === 'kim' ? 'start' : 'end',
           avatarUrl: line.who === 'kim' ? kim : ana,
           translation: line.g,
-          audioLabel: `Ouvir: ${line.en}`,
+          audioLabel: `Play: ${line.en}`,
           content: gaps ? (
             <span>
               {itemAt(gapTexts, index)
@@ -201,18 +197,18 @@ export function DialogueSection({
                     <Styled.Gap
                       key={part}
                       size="sm"
-                      variant={
-                        revealed.includes(index) ? 'success' : 'tertiary'
-                      }
-                      aria-label={`Lacuna ${index + 1}: ${revealed.includes(index) ? 'esconder' : 'mostrar'} a resposta`}
+                      variant="text"
+                      $revealed={revealed.includes(index)}
+                      aria-label={`Gap ${index + 1}: ${revealed.includes(index) ? 'hide' : 'show'} answer`}
                       aria-expanded={revealed.includes(index)}
-                      onClick={() =>
+                      onClick={(event) => {
+                        event.stopPropagation()
                         setRevealed((old) =>
                           old.includes(index)
                             ? old.filter((n) => n !== index)
                             : [...old, index],
                         )
-                      }
+                      }}
                     >
                       {revealed.includes(index) ? (
                         gapAnswers[index]
@@ -230,15 +226,6 @@ export function DialogueSection({
           ),
         }))}
       />
-      <Styled.TranslationButton
-        variant="text"
-        aria-expanded={allTranslated}
-        onClick={() =>
-          setTranslated(allTranslated ? [] : lesson.RT.map((line) => line.id))
-        }
-      >
-        {allTranslated ? 'Ocultar tradução' : 'Ver em português'}
-      </Styled.TranslationButton>
     </Styled.Stack>
   )
 }
@@ -310,30 +297,142 @@ export function GrammarNegative() {
   return (
     <Styled.TwoColumns>
       <Styled.GrammarCard $kind="negative">
-        <h3>
-          <span aria-hidden="true">−</span>Negative
-        </h3>
+        <h3>Negatives</h3>
+        <p>
+          Add <b>not</b> after the verb.
+        </p>
         <Styled.Stack>
-          {lesson.G_NEG.map(([text, translation]) => (
-            <TranslatedText key={text} text={text} translation={translation} />
-          ))}
+          <TranslatedText
+            text="I am not tired. → I’m not tired."
+            translation="Eu não estou cansada."
+          />
+          <TranslatedText
+            text="She is not hungry. → She isn’t hungry."
+            translation="Ela não está com fome."
+          />
+          <TranslatedText
+            text="They are not from Japan. → They aren’t from Japan."
+            translation="Eles não são do Japão."
+          />
         </Styled.Stack>
-        <p>is not = isn’t · are not = aren’t</p>
+        <p>is not → isn’t · are not → aren’t</p>
+        <Styled.Muted>
+          Informal speech: “I ain’t tired.” In class, use “I’m not tired.”
+        </Styled.Muted>
       </Styled.GrammarCard>
       <Styled.GrammarCard $kind="question">
-        <h3>
-          <span aria-hidden="true">?</span>Questions
-        </h3>
+        <h3>Questions</h3>
+        <p>
+          Start with the verb: <b>am, is, are</b>.
+        </p>
         <Styled.Stack>
-          {lesson.G_Q.map(([text, translation, answer]) => (
-            <div key={text}>
-              <TranslatedText text={text} translation={translation} />
-              <Styled.Muted>{answer}</Styled.Muted>
-            </div>
-          ))}
+          <TranslatedText
+            text="You are tired. → Are you tired?"
+            translation="Você está cansada?"
+          />
+          <TranslatedText
+            text="She is from Japan. → Is she from Japan?"
+            translation="Ela é do Japão?"
+          />
+          <TranslatedText
+            text="They are happy. → Are they happy?"
+            translation="Eles estão felizes?"
+          />
         </Styled.Stack>
+        <p>Yes, I am. · No, I’m not.</p>
       </Styled.GrammarCard>
     </Styled.TwoColumns>
+  )
+}
+export function AgeSection() {
+  return (
+    <Styled.Stack>
+      <Styled.AgeExamples>
+        <strong>I’m 32 years old.</strong>
+        <span>or</span>
+        <strong>I’m 32.</strong>
+        <Styled.WrongExample>Wrong: I have 32.</Styled.WrongExample>
+      </Styled.AgeExamples>
+      <p>Ask your teacher:</p>
+      <PromptExercise
+        items={[
+          { id: 'age-you', prompt: 'How old are you?' },
+          { id: 'age-parents', prompt: 'How old are your parents?' },
+          { id: 'age-house', prompt: 'How old is your house?' },
+        ]}
+      />
+    </Styled.Stack>
+  )
+}
+export function TwoTruthsAndALie() {
+  return (
+    <Styled.TwoColumns>
+      {['You', 'Your teacher'].map((person) => (
+        <Styled.TruthsPanel key={person}>
+          <h3>{person}</h3>
+          <ol>
+            <li>I’m …</li>
+            <li>I’m from …</li>
+            <li>My … is …</li>
+          </ol>
+          <p>Which fact is the lie?</p>
+        </Styled.TruthsPanel>
+      ))}
+    </Styled.TwoColumns>
+  )
+}
+export function SpeakingTimer({ active }: { active: boolean }) {
+  const [remaining, setRemaining] = useState(30)
+  const [running, setRunning] = useState(false)
+  const deadline = useRef(0)
+  useEffect(() => {
+    if (!active || !running) return
+    const interval = window.setInterval(() => {
+      const left = Math.max(
+        0,
+        Math.ceil((deadline.current - Date.now()) / 1000),
+      )
+      setRemaining(left)
+      if (left === 0) setRunning(false)
+    }, 200)
+    return () => window.clearInterval(interval)
+  }, [active, running])
+  const reset = () => {
+    setRunning(false)
+    setRemaining(30)
+    deadline.current = 0
+  }
+  return (
+    <Styled.Stack>
+      <FluencyTimer
+        title="Ready?"
+        rounds={[{ id: 'introduction', seconds: 30 }]}
+        roundIndex={remaining === 0 ? 1 : 0}
+        remainingSeconds={remaining}
+        running={running}
+        support={['My name is …', 'I’m from …', 'I’m …']}
+        onToggle={() => {
+          if (running) {
+            setRunning(false)
+            return
+          }
+          deadline.current = Date.now() + remaining * 1000
+          setRunning(true)
+        }}
+        onReset={reset}
+        labels={{
+          start: 'Start',
+          pause: 'Pause',
+          restart: 'Try again',
+          round: 'Round',
+          finished: 'Time’s up!',
+          empty: '',
+        }}
+      />
+      <Styled.TranslationButton variant="text" onClick={reset}>
+        Reset timer
+      </Styled.TranslationButton>
+    </Styled.Stack>
   )
 }
 export function TrueForYou() {
@@ -358,8 +457,8 @@ export function MatchingSection() {
   const [status, setStatus] = useState('')
   return (
     <MatchPairs
-      questionLabel="Perguntas"
-      answerLabel="Respostas"
+      questionLabel="Questions"
+      answerLabel="Answers"
       questions={lesson.MQ.map(([label], i) => ({
         id: String(i),
         label: String(label),
@@ -377,11 +476,11 @@ export function MatchingSection() {
       onQuestionSelect={(id) => {
         setSelected(id)
         setIncorrect(undefined)
-        setStatus(`Pergunta ${Number(id) + 1} selecionada. Escolha a resposta.`)
+        setStatus(`Question ${Number(id) + 1}. Choose an answer.`)
       }}
       onAnswerSelect={(id) => {
         if (selected === undefined) {
-          setStatus('Escolha uma pergunta primeiro.')
+          setStatus('Choose a question first.')
           return
         }
         if (Number(itemAt(lesson.MQ, Number(selected))[1]) === Number(id)) {
@@ -390,51 +489,36 @@ export function MatchingSection() {
           setIncorrect(undefined)
           setStatus(
             Object.keys(matches).length === 7
-              ? 'Todas as associações estão corretas!'
-              : 'Correto! Escolha a próxima pergunta.',
+              ? 'All matched.'
+              : 'Choose the next question.',
           )
         } else {
           setIncorrect(id)
-          setStatus('Essa resposta não corresponde. Tente outra.')
+          setStatus('Try another answer.')
         }
       }}
     />
   )
 }
 export function GuessWho() {
-  const [found, setFound] = useState<string[]>([])
   return (
     <Styled.Stack>
       <Styled.Prompts>
-        <b>How are you?</b>
-        <b>Where are you from?</b>
         <b>Are you …?</b>
+        <b>Are you from …?</b>
+        <b>Are you tired?</b>
       </Styled.Prompts>
       <Styled.ThreeColumns>
         {lesson.GUESTS.map(([name, country, feeling]) => (
-          <Styled.Guest
-            key={name}
-            aria-label={`${name}${found.includes(name) ? ': já descoberta' : ''}`}
-            aria-pressed={found.includes(name)}
-            onClick={() =>
-              setFound((old) =>
-                old.includes(name)
-                  ? old.filter((value) => value !== name)
-                  : [...old, name],
-              )
-            }
-          >
-            <b>
-              {name}
-              {found.includes(name) ? ' ✓' : ''}
-            </b>
+          <Styled.Guest key={name}>
             <Styled.GuestImages>
               <Styled.GuestScene
                 src={guestImage(name)}
                 alt={guestImageAlt(name, country, feeling)}
               />
+              <Styled.CountryFlag src={countryFlag(country)} alt="" />
+              <Styled.GuestName>{name}</Styled.GuestName>
             </Styled.GuestImages>
-            <Styled.CountryFlag src={countryFlag(country)} alt="" />
           </Styled.Guest>
         ))}
       </Styled.ThreeColumns>

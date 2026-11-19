@@ -23,6 +23,9 @@ import {
   DialogueQuestions,
   GrammarTable,
   GrammarNegative,
+  AgeSection,
+  TwoTruthsAndALie,
+  SpeakingTimer,
   TrueForYou,
   MatchingSection,
   GuessWho,
@@ -55,7 +58,7 @@ function A101LessonContent({
             width="expanded"
             eyebrow="A1 LESSON 01"
             title="Introduce yourself"
-            instruction="Observe as imagens e tente adivinhar as palavras."
+            instruction="Look at the pictures. Guess the words."
           >
             <Styled.IntroVocabulary>
               <VocabularySection
@@ -78,7 +81,7 @@ function A101LessonContent({
             width="expanded"
             eyebrow="Warm up"
             title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
-            instruction="Diga a resposta em voz alta e escolha a opção."
+            instruction="Choose the correct answer."
           >
             <WarmUpSection
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
@@ -97,7 +100,7 @@ function A101LessonContent({
             width="standard"
             eyebrow="Vocabulary"
             title="Where are you from?"
-            instruction="Diga o país de cada bandeira e depois conte de onde você é."
+            instruction="Name the countries. Where are you from?"
           >
             <VocabularySection items={countries} speak={speech.speak} />
           </SlidePage>
@@ -112,7 +115,7 @@ function A101LessonContent({
             width="reading"
             density="compact"
             eyebrow="Guided conversation"
-            instruction="Escute e depois leia com a professora, uma personagem para cada uma."
+            instruction="Listen, then read with your teacher."
             title={
               <DialogueTitle
                 title="Nice to meet you"
@@ -161,8 +164,8 @@ function A101LessonContent({
           <SlidePage
             width="reading"
             eyebrow="Guided conversation"
-            title="What did they say?"
-            instruction="Responda sobre Kim, Ana e Lukas; confira a resposta se precisar."
+            title="Comprehension questions"
+            instruction="Answer the questions about the text."
           >
             <DialogueQuestions />
           </SlidePage>
@@ -174,9 +177,9 @@ function A101LessonContent({
         label: 'Grammar · Verb to be',
         content: (
           <SlidePage
-            eyebrow="Grammar · Verb to be"
-            title="I am, you are, she is…"
-            instruction="Use am, is ou are para falar de nome, origem e sentimentos."
+            eyebrow="Grammar"
+            title="Verb to be"
+            instruction="Use be to say who someone is or how they feel."
           >
             <GrammarTable />
           </SlidePage>
@@ -189,11 +192,56 @@ function A101LessonContent({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Grammar · Verb to be"
-            title="Negative and questions"
-            instruction="Use not para negar; comece a pergunta com am, is ou are."
+            eyebrow="Grammar"
+            title="Verb to be"
+            instruction="Negatives and questions"
           >
             <GrammarNegative />
+          </SlidePage>
+        ),
+      }
+    if (id === 's73')
+      return {
+        id,
+        label: 'Language tip · Age',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Language tip"
+            title="How old are you?"
+            instruction="Use be to talk about age."
+          >
+            <AgeSection />
+          </SlidePage>
+        ),
+      }
+    if (id === 's74')
+      return {
+        id,
+        label: 'Speaking · Two truths and one lie',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Speaking"
+            title="Two truths and one lie"
+            instruction="Say three facts: two true, one false. Guess the lie. Then swap roles."
+          >
+            <TwoTruthsAndALie />
+          </SlidePage>
+        ),
+      }
+    if (id === 's75')
+      return {
+        id,
+        label: 'Speaking · Now you',
+        content: (
+          <SlidePage
+            width="standard"
+            eyebrow="Speaking"
+            title="Now you!"
+            instruction="Introduce yourself in 30 seconds."
+          >
+            <SpeakingTimer key={pageId} active={pageId === id} />
           </SlidePage>
         ),
       }
@@ -204,9 +252,9 @@ function A101LessonContent({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Practice · Speaking"
+            eyebrow="Speaking"
             title="True for you?"
-            instruction="Diga se a frase é verdade para você; se não for, corrija na negativa."
+            instruction="Is it true for you? If not, correct it."
           >
             <TrueForYou />
           </SlidePage>
@@ -219,9 +267,9 @@ function A101LessonContent({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Practice · Questions & answers"
-            title="Ask and answer"
-            instruction="Associe cada pergunta à resposta e leia a dupla em voz alta."
+            eyebrow="Practice"
+            title="Questions & answers"
+            instruction="Match the questions and answers. Read aloud."
           >
             <MatchingSection />
           </SlidePage>
@@ -236,7 +284,7 @@ function A101LessonContent({
             width="reading"
             eyebrow="Guided conversation"
             title="Complete the conversation"
-            instruction="Diga a palavra que falta e depois leia o diálogo com a professora."
+            instruction="Fill in the gaps. Read with your teacher."
           >
             <DialogueSection gaps speak={speech.speak} />
           </SlidePage>
@@ -251,7 +299,7 @@ function A101LessonContent({
             width="standard"
             eyebrow="Listening"
             title="A message from Kim"
-            instruction="Ouça o áudio da Kim e responda."
+            instruction="Listen to Kim’s message and answer."
           >
             <VoiceMessageDemo
               contact={{
@@ -286,7 +334,7 @@ function A101LessonContent({
             width="standard"
             eyebrow="Role play"
             title="Guess who"
-            instruction="A professora escolhe uma pessoa em segredo. Faça as perguntas e descubra quem é."
+            instruction="Your teacher chooses a person. Ask questions. Guess who."
           >
             <GuessWho />
           </SlidePage>
@@ -299,9 +347,9 @@ function A101LessonContent({
         content: (
           <SlidePage
             width="exercise"
-            eyebrow="Practice · Questions"
-            title="Make it a question"
-            instruction="Transforme a frase em pergunta; clique para conferir depois de falar."
+            eyebrow="Practice"
+            title="Questions"
+            instruction="Make a question."
           >
             <MakeQuestions />
           </SlidePage>
@@ -315,8 +363,8 @@ function A101LessonContent({
           <SlidePage
             width="conversation"
             eyebrow="Conversation"
-            title="Let’s talk"
-            instruction="Conversem sobre você e alguém que você conhece. Depois, comece as perguntas. Na última situação, corrija a informação."
+            title="Let’s talk!"
+            instruction="Ask your teacher these questions, then answer them."
           >
             <ConversationSection />
           </SlidePage>
@@ -330,7 +378,7 @@ function A101LessonContent({
           width="standard"
           eyebrow="Homework"
           title="Before next class"
-          instruction="Combine com a professora como repetir estas três práticas durante a semana."
+          instruction="Practise before your next lesson."
         >
           <HomeworkSection />
         </SlidePage>

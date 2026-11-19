@@ -1,3 +1,4 @@
+import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -100,26 +101,33 @@ export function WarmUp({ index }: { index: number }) {
           </Button>
         ) : (
           w.o.map((text, i) => (
-            <Button
+            <QuizOption
               key={text}
-              variant="secondary"
+              letter={String.fromCharCode(65 + i)}
+              density="compact"
               aria-pressed={chosen === i}
+              state={
+                chosen === undefined
+                  ? 'default'
+                  : chosen === i
+                    ? complete
+                      ? 'correct'
+                      : 'wrong'
+                    : complete
+                      ? 'dim'
+                      : 'default'
+              }
+              disabled={complete}
               onClick={() => setChosen(i)}
             >
               {text}
-            </Button>
+            </QuizOption>
           ))
         )}
-        {chosen !== undefined && !complete ? (
-          <S.Hint role="status">
-            {w.why[String(chosen) as keyof typeof w.why]}
-          </S.Hint>
-        ) : null}
         {complete ? (
           <S.Surface role="status">
             <b>Now you</b>
             <p>{w.now}</p>
-            {w.form ? <S.Hint>{w.form}</S.Hint> : null}
           </S.Surface>
         ) : null}
       </S.Stack>
@@ -257,8 +265,8 @@ export function Grammar() {
       <S.Surface>
         <b>One observation, one request</b>
         <p>
-          Your colleague’s updates arrive after the meeting. Describe the
-          effect and ask for one change. Leave room for their perspective.
+          Your colleague’s updates arrive after the meeting. Describe the effect
+          and ask for one change. Leave room for their perspective.
         </p>
       </S.Surface>
     </S.Stack>

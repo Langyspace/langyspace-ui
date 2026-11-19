@@ -5,7 +5,10 @@ import { Button } from '../../../src/components/Button/Button'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
-import { regularVocabularyMaxWidth } from '../../../src/components/Exercise/VocabularyGrid.styles'
+import {
+  regularVocabularyMaxWidth,
+  WordCaption,
+} from '../../../src/components/Exercise/VocabularyGrid.styles'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { Content as SlideContent } from '../../../src/components/Slide/SlidePage.styles'
 export const Stage = styled.div`
@@ -182,26 +185,32 @@ export const Number = styled.span`
   font-size: ${theme.typography.fontSize.sm};
   flex-shrink: 0;
 `
-export const Guest = styled(ChoiceCard)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: ${theme.spacing[2]};
-  padding: ${theme.spacing[2]};
-  font: inherit;
-  background: ${(p) => recipe(p).surface};
-  > b {
-    font-family: ${theme.slides.displayFontFamily};
-    font-size: clamp(1.1875rem, 3.3cqh, 1.75rem);
-    line-height: 1.1;
-  }
+export const Guest = styled.figure`
+  margin: 0;
+  min-width: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
 `
-export const Gap = styled(Button)`
-  min-width: ${theme.spacing[12]};
-  min-height: ${theme.sizes.control.sm};
-  padding: 0 ${theme.spacing[2]};
-  border-radius: ${theme.radius.sm};
-  vertical-align: baseline;
+export const GuestName = styled(WordCaption)``
+export const Gap = styled(Button)<{ $revealed: boolean }>`
+  && {
+    min-width: ${theme.spacing[10]};
+    min-height: ${theme.sizes.control.sm};
+    padding: 0 ${theme.spacing[1]};
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    color: ${(p) => (p.$revealed ? theme.colors.palette.feedback.success : recipe(p).foreground)};
+    font: inherit;
+    font-weight: ${theme.typography.fontWeight.bold};
+    vertical-align: baseline;
+    &:hover,
+    &:active {
+      background: transparent;
+      box-shadow: none;
+    }
+  }
 `
 export const Homework = styled(Card)`
   display: flex;
@@ -543,9 +552,8 @@ export const Eyebrow = styled.span`
 `
 
 export const WarmScene = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: ${theme.spacing[2]};
+  position: relative;
+  display: block;
   width: 100%;
   min-width: 0;
 `
@@ -563,10 +571,13 @@ export const WarmImage = styled.img`
 `
 export const CountryFlag = styled.img`
   && {
-    position: static;
-    align-self: flex-end;
-    width: ${theme.spacing[12]};
-    height: ${theme.spacing[8]};
+    position: absolute;
+    top: ${theme.spacing[3]};
+    right: ${theme.spacing[3]};
+    width: clamp(${theme.spacing[16]}, 10cqw, ${theme.spacing[20]});
+    height: auto;
+    aspect-ratio: 3 / 2;
+    z-index: 1;
     object-fit: contain;
     border: 2px solid ${theme.colors.palette.white};
     border-radius: ${theme.radius.sm};
@@ -589,7 +600,8 @@ export const TitleAudio = styled.span`
 `
 
 export const WarmPanel = styled(ExercisePanel)`
-  padding: ${theme.spacing[4]};
+  position: relative;
+  padding: ${theme.spacing[10]} ${theme.spacing[4]} ${theme.spacing[4]};
   [data-exercise-media] {
     align-self: stretch;
     display: grid;
@@ -602,5 +614,51 @@ export const WarmPanel = styled(ExercisePanel)`
     > div {
       grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
     }
+  }
+`
+
+export const WarmCounter = styled.span`
+  position: absolute;
+  top: ${theme.spacing[3]};
+  right: ${theme.spacing[4]};
+  color: ${(p) => recipe(p).muted};
+  font-size: ${theme.typography.fontSize.sm};
+  font-variant-numeric: tabular-nums;
+`
+export const AgeExamples = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: ${theme.spacing[3]};
+  strong {
+    font-size: ${theme.typography.fontSize['2xl']};
+    color: ${(p) => recipe(p).foreground};
+  }
+  > span {
+    color: ${(p) => recipe(p).muted};
+  }
+`
+export const WrongExample = styled.p`
+  color: ${theme.exercises.negative};
+  margin: 0;
+`
+export const TruthsPanel = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${theme.spacing[4]};
+  h3 {
+    color: ${(p) => recipe(p).foreground};
+    margin: 0;
+  }
+  ol {
+    margin: 0;
+    padding-left: ${theme.spacing[6]};
+  }
+  li {
+    padding: ${theme.spacing[4]} 0;
+    font-size: ${theme.typography.fontSize.xl};
+  }
+  p {
+    color: ${(p) => recipe(p).muted};
   }
 `

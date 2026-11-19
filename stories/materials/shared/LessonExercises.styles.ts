@@ -1,4 +1,6 @@
 import { styled } from 'styled-components'
+import { Pressable } from '../../../src/components/Pressable'
+import { recipe } from '../../../src/components/Exercise/Exercise.shared.styles'
 import { theme } from '../../../src/foundations/theme/theme'
 
 export const Scene = styled.img`
@@ -30,7 +32,27 @@ export const Prompt = styled.li`
 `
 
 export const AnswerPanel = styled.div`
+  min-width: 0;
   display: grid;
   justify-items: start;
   gap: ${theme.spacing[2]};
+`
+
+export const QuestionTrigger = styled(Pressable)`
+  display: block;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  &:focus-visible {
+    outline: 2px solid ${(p) => recipe(p).accent};
+    outline-offset: 3px;
+  }
 `

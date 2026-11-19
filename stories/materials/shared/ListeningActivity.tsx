@@ -114,15 +114,20 @@ export function ListeningActivity({
           <Phone.HomeIndicator />
         </Phone.Phone>
         <Phone.Side>
-          <Common.Heading>{contact} disse isso?</Common.Heading>
+          <Common.Heading>Did {contact} say this?</Common.Heading>
           {questions.map((item) => (
-            <Phone.Question key={item.id}>
-              <legend>{item.text}</legend>
+            <Phone.Question
+              as="div"
+              role="group"
+              aria-label={item.text}
+              key={item.id}
+            >
+              <AnswerDisclosure question={item.text} answer={item.correct} />
               <Phone.Choices>
                 {(['Yes', 'No'] as const).map((choice) => (
                   <Phone.Choice
                     key={choice}
-                      aria-pressed={answers[item.id] === choice}
+                    aria-pressed={answers[item.id] === choice}
                     $feedback={
                       answers[item.id] === choice
                         ? choice === item.correct
@@ -138,7 +143,6 @@ export function ListeningActivity({
                   </Phone.Choice>
                 ))}
               </Phone.Choices>
-              <AnswerDisclosure question={item.text} answer={item.correct} />
               {answers[item.id] ? (
                 <Common.Hint role="status">
                   {answers[item.id] === item.correct
