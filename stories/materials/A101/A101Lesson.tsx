@@ -77,7 +77,7 @@ function A101LessonContent({
         id,
         label: `Warm up · ${feeling ? 'Feelings' : 'Countries'} ${slot + 1}`,
         content: (
-          <SlidePage
+          <Styled.WarmupPage
             width="expanded"
             eyebrow="Warm up"
             title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
@@ -87,7 +87,7 @@ function A101LessonContent({
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
               speak={speech.speak}
             />
-          </SlidePage>
+          </Styled.WarmupPage>
         ),
       }
     }

@@ -70,7 +70,7 @@ export function WarmUpSection({ index }: WarmUpProps) {
   const done = attempts.includes(w.a)
   return (
     <ExercisePanel
-      layout="split"
+      variant="warmup"
       counter={`${index + 1} / 3`}
       media={
         <S.Stack>

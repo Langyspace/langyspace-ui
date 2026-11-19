@@ -5,6 +5,7 @@ export function ExercisePanel({
   counter,
   media,
   layout = 'stacked',
+  variant = 'default',
   children,
   ...props
 }: ExercisePanelProps) {
@@ -19,8 +20,18 @@ export function ExercisePanel({
     </>
   )
   return (
-    <Styled.Panel {...props}>
-      {layout === 'split' && media ? (
+    <Styled.Panel {...props} $warmup={variant === 'warmup'}>
+      {variant === 'warmup' ? (
+        <Styled.Warmup>
+          {heading}
+          {media ? (
+            <Styled.WarmupMedia data-exercise-media="true">
+              {media}
+            </Styled.WarmupMedia>
+          ) : null}
+          <Styled.Stack>{children}</Styled.Stack>
+        </Styled.Warmup>
+      ) : layout === 'split' && media ? (
         <Styled.Split>
           {media ? <div data-exercise-media="true">{media}</div> : null}
           <Styled.Stack>

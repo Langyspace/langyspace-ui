@@ -107,7 +107,11 @@
 - Center dialogue text within equal vertical padding. Keep audio beside the English text, with
   translations below; revealing a translation must not move the audio control.
 - Warm-up choices communicate correctness with the option states, without success banners or
-  explanations of wrong answers. Place short progress counters inside the exercise card.
+  explanations of wrong answers. Use ExercisePanel's warmup variant with the image above the
+  options; align the header, image and options to the same centered column. Place short progress
+  counters inside the exercise card.
+- Selected conversation choices use the canonical dark green with readable white text. Preserve
+  intentional color sequences on speaking activity markers; do not normalize them globally.
 - Reuse prepared ElevenLabs recordings and native players; preload before the click and retain
   buffers between plays. Do not replace recordings with browser speech or regenerate valid media.
 - Keep flag assets at their natural proportions, without added white frames or backgrounds.

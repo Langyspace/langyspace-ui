@@ -1,3 +1,4 @@
+import { WarmupPage } from '../shared/WarmupPage.styles'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -118,7 +119,8 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         id,
         label: `Warm up · ${Number(id.slice(2))}`,
         content: (
-          <S.Page
+          <WarmupPage
+            as={S.Page}
             eyebrow="Warm up"
             title={
               [
@@ -130,7 +132,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
             instruction="Say your answer, then choose and explain."
           >
             <WarmUpSection index={Number(id.slice(2)) - 1} speech={speech} />
-          </S.Page>
+          </WarmupPage>
         ),
       }
     if (id === 's4')

@@ -1,3 +1,4 @@
+import { WarmupPage } from '../shared/WarmupPage.styles'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
 import { MaterialTheme } from '../shared/MaterialTheme'
@@ -92,7 +93,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
               id,
               label: `Warm up · Choose the correct answer. (${Number(id.at(-1))}/3)`,
               content: (
-                <SlidePage
+                <WarmupPage
                   eyebrow="Warm up"
                   width="expanded"
                   density="dense"
@@ -104,7 +105,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   }
                 >
                   <WarmUpSection index={Number(id.at(-1)) - 1} />
-                </SlidePage>
+                </WarmupPage>
               ),
             }
           if (id === 's4')

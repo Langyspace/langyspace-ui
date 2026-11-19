@@ -1,3 +1,4 @@
+import { WarmupPage } from '../shared/WarmupPage.styles'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -206,11 +207,14 @@ function C101Content({ initialPageId }: C101LessonProps) {
         }
         pages={c101PageIds.map((id) => {
           const [eyebrow, title, instruction] = pageInfo[id]!
+          const Page = ['s31', 's32', 's33'].includes(id)
+            ? WarmupPage
+            : SlidePage
           return {
             id,
             label: `${eyebrow} · ${title}`,
             content: (
-              <SlidePage
+              <Page
                 eyebrow={eyebrow}
                 title={
                   id === 's6' || id === 's62' ? (
@@ -228,7 +232,7 @@ function C101Content({ initialPageId }: C101LessonProps) {
                 {audio.error && pageId === id ? (
                   <S.AudioStatus role="status">{audio.error}</S.AudioStatus>
                 ) : null}
-              </SlidePage>
+              </Page>
             ),
           }
         })}

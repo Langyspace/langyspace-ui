@@ -40,9 +40,12 @@ export const Root = styled(Pressable).withConfig({
   }
 
   &[aria-pressed='true'] {
-    border-color: ${(p) => resolveTheme(p).semantic?.border.strong ?? theme.semantic.border.strong};
+    border-color: ${theme.semantic.status.success.foreground};
     color: ${theme.colors.palette.white};
-    background-color: ${theme.colors.palette.black};
+    background-color: ${theme.semantic.status.success.foreground};
+    &:hover:not(:disabled) {
+      border-color: ${theme.semantic.status.success.foreground};
+    }
   }
 
   &:disabled {
@@ -67,10 +70,9 @@ export const Root = styled(Pressable).withConfig({
           background: ${(p) => resolveSlideTheme(p).surface};
           font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
           &[aria-pressed='true'] {
-            border: 3px solid
-              ${(p) => resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground};
-            color: ${(p) => resolveSlideTheme(p).foreground};
-            background: ${(p) => resolveSlideTheme(p).surface};
+            border: 3px solid ${theme.semantic.status.success.foreground};
+            color: ${theme.colors.palette.white};
+            background: ${theme.semantic.status.success.foreground};
           }
           &:focus-visible {
             outline-color: ${(p) => resolveSlideTheme(p).accent};

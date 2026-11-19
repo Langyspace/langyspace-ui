@@ -83,7 +83,7 @@ export function WarmUpSection({
   const answer = w.o[w.a] ?? ''
   return (
     <ExercisePanel
-      layout="split"
+      variant="warmup"
       title={index === 2 ? w.ctx : undefined}
       media={
         w.kl ? (

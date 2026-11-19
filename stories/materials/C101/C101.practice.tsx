@@ -1,3 +1,4 @@
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
@@ -70,29 +71,33 @@ export function WarmUp({ index }: { index: number }) {
         ? 'How could she ask Raj to change it?'
         : 'What’s the best feedback you’ve ever received?'
   return (
-    <S.Columns>
-      <S.Note
-        aria-label={index === 2 ? 'Ana’s answer' : 'Ana’s notes for Friday'}
-      >
-        {index === 2 ? (
-          <>
-            <small>Kim asks Ana</small>
-            <p>{prompt}</p>
-            <strong>{complete ? w.o[w.a] : '…'}</strong>
-          </>
-        ) : (
-          <>
-            <small>Ana’s notes for Friday</small>
-            <p>
-              <strong>
-                {index === 0
-                  ? '1. Raj talked too fast.'
-                  : '2. Use fewer slides.'}
-              </strong>
-            </p>
-          </>
-        )}
-      </S.Note>
+    <ExercisePanel
+      variant="warmup"
+      media={
+        <S.Note
+          aria-label={index === 2 ? 'Ana’s answer' : 'Ana’s notes for Friday'}
+        >
+          {index === 2 ? (
+            <>
+              <small>Kim asks Ana</small>
+              <p>{prompt}</p>
+              <strong>{complete ? w.o[w.a] : '…'}</strong>
+            </>
+          ) : (
+            <>
+              <small>Ana’s notes for Friday</small>
+              <p>
+                <strong>
+                  {index === 0
+                    ? '1. Raj talked too fast.'
+                    : '2. Use fewer slides.'}
+                </strong>
+              </p>
+            </>
+          )}
+        </S.Note>
+      }
+    >
       <S.Stack>
         <p>{index < 2 ? prompt : 'Which answer responds to Kim’s question?'}</p>
         {!show ? (
@@ -131,7 +136,7 @@ export function WarmUp({ index }: { index: number }) {
           </S.Surface>
         ) : null}
       </S.Stack>
-    </S.Columns>
+    </ExercisePanel>
   )
 }
 export function Reading() {

@@ -7,6 +7,7 @@ import { theme } from '../../../src/foundations/theme/theme'
 import { Button } from '../../../src/components/Button/Button'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { Split as ExerciseSplit } from '../../../src/components/Exercise/ExercisePanel.styles'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import {
   regularVocabularyMaxWidth,
@@ -14,6 +15,7 @@ import {
 } from '../../../src/components/Exercise/VocabularyGrid.styles'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { Content as SlideContent } from '../../../src/components/Slide/SlidePage.styles'
+export { WarmupPage } from '../shared/WarmupPage.styles'
 export const Stage = styled.div`
   height: 100dvh;
   min-width: 0;
@@ -449,6 +451,8 @@ export const TrueCard = styled(SpeakingCard)<{ $index: number }>`
     height: 44px;
     font-size: ${theme.typography.fontSize.lg};
     font-weight: ${theme.typography.fontWeight.bold};
+    color: ${theme.colors.palette.white};
+    background: ${(p) => (p.$index % 3 === 0 ? theme.slides.accent : p.$index % 3 === 1 ? theme.semantic.status.success.foreground : theme.exercises.question)};
   }
   @container (max-height: ${theme.viewportHeights.lg}) {
     min-height: 150px;
@@ -501,10 +505,6 @@ export const TalkQuestion = styled(ChoiceCard)`
     width: 28px;
     height: 28px;
     font-size: 0.8125rem;
-  }
-  &[aria-pressed='true'] {
-    border-color: ${theme.semantic.status.success.foreground};
-    background: ${theme.semantic.status.success.background};
   }
 `
 export const GuestImages = styled.span`
@@ -591,22 +591,8 @@ export const TitleAudio = styled.span`
 
 export const WarmPanel = styled(ExercisePanel)`
   position: relative;
-  padding: ${theme.spacing[10]} ${theme.spacing[4]} ${theme.spacing[4]};
-  [data-exercise-media] {
-    align-self: stretch;
-    display: grid;
-    align-items: center;
-  }
-  [data-exercise-media] img {
-    max-height: none;
-  }
-  @container (min-width: ${theme.breakpoints.md}) {
-    > div {
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-    }
-  }
+  padding-top: ${theme.spacing[8]};
 `
-
 export const WarmCounter = styled.span`
   position: absolute;
   top: ${theme.spacing[3]};
@@ -618,19 +604,21 @@ export const WarmCounter = styled.span`
 export const AgeExamples = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: ${theme.spacing[3]};
-  strong {
-    font-size: ${theme.typography.fontSize['2xl']};
-    color: ${(p) => recipe(p).foreground};
-  }
-  > span {
-    color: ${(p) => recipe(p).muted};
-  }
 `
-export const WrongExample = styled.p`
-  color: ${theme.exercises.negative};
-  margin: 0;
+export const AgeExample = styled.div<{ $correct: boolean }>`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  color: ${(p) => recipe(p).foreground};
+  font-size: ${theme.typography.fontSize.xl};
+  line-height: 1.4;
+  > span {
+    flex-shrink: 0;
+    color: ${(p) => (p.$correct ? theme.semantic.status.success.foreground : theme.exercises.negative)};
+    font-size: ${theme.typography.fontSize['2xl']};
+    font-weight: ${theme.typography.fontWeight.bold};
+  }
 `
 export const TruthsPanel = styled.div`
   display: flex;
@@ -640,32 +628,40 @@ export const TruthsPanel = styled.div`
     color: ${(p) => recipe(p).foreground};
     margin: 0;
   }
-  ol {
-    margin: 0;
-    padding-left: ${theme.spacing[6]};
-  }
-  li {
-    padding: ${theme.spacing[4]} 0;
-    font-size: ${theme.typography.fontSize.xl};
-  }
   p {
     color: ${(p) => recipe(p).muted};
   }
 `
 
-export const AgeTop = styled.div`
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  align-items: center;
+export const AgePanel = styled(ExercisePanel)`
+  border: 0;
+  padding: 0;
+  background: transparent;
+  ${ExerciseSplit} {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    > [data-exercise-media] img {
+      max-height: none;
+    }
+    @container (max-width: ${theme.breakpoints.md}) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+`
+export const AgePractice = styled.div`
+  display: flex;
+  flex-direction: column;
   gap: ${theme.spacing[6]};
-  @container (max-width: ${theme.breakpoints.md}) {
-    grid-template-columns: minmax(0, 1fr);
+  h3 {
+    margin: 0;
+    font-size: ${theme.typography.fontSize.xl};
+    color: ${(p) => recipe(p).foreground};
   }
 `
 export const AgeImage = styled.img`
+  display: block;
   width: 100%;
   height: auto;
-  max-height: clamp(8rem, 24cqh, 16rem);
+  aspect-ratio: 3 / 2;
   object-fit: contain;
   border-radius: ${theme.radius.lg};
 `

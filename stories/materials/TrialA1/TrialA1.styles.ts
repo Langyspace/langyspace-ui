@@ -33,6 +33,9 @@ export const GreetingText = styled(Stack)`
     color: ${(p) => resolveSlideTheme(p).muted};
     font-size: clamp(1rem, 2.6cqh, 1.25rem);
   }
+  [aria-pressed='true'] & > span {
+    color: inherit;
+  }
 `
 export const SceneFit = styled.div`
   width: 100%;
@@ -107,12 +110,8 @@ export const Pair = styled.div`
 `
 const choiceAffordance = css`
   border-color: ${(p) => resolveTheme(p).semantic?.border.strong ?? theme.semantic.border.strong};
-  &&:hover:not(:disabled) {
+  &&:hover:not(:disabled):not([aria-pressed='true']) {
     border-color: ${(p) => resolveSlideTheme(p).accent};
-  }
-  &&[aria-pressed='true'] {
-    border: 2px solid ${(p) => resolveSlideTheme(p).accent};
-    background: ${(p) => `color-mix(in srgb, ${resolveSlideTheme(p).accent} 8%, ${resolveSlideTheme(p).surface})`};
   }
   &&:focus-visible {
     outline: 3px solid ${(p) => resolveSlideTheme(p).accent};

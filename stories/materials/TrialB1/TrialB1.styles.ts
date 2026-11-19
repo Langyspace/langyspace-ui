@@ -73,7 +73,7 @@ export const Choice = styled(ChoiceCard)`
 `
 export const Selected = styled.span`
   visibility: hidden;
-  color: ${theme.semantic.status.success.foreground};
+  color: inherit;
   [aria-pressed='true'] > & {
     visibility: visible;
   }

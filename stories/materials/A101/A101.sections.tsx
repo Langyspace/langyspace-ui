@@ -112,7 +112,7 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
   const done = attempts.includes(item.a)
   return (
     <Styled.WarmPanel
-      layout="split"
+      variant="warmup"
       media={
         <Styled.WarmScene>
           <Styled.WarmImage
@@ -346,28 +346,42 @@ export function GrammarNegative() {
 }
 export function AgeSection() {
   return (
-    <Styled.Stack>
-      <Styled.AgeTop>
-        <Styled.AgeExamples>
-          <strong>I’m 32 years old.</strong>
-          <span>or</span>
-          <strong>I’m 32.</strong>
-          <Styled.WrongExample>Wrong: I have 32.</Styled.WrongExample>
-        </Styled.AgeExamples>
+    <Styled.AgePanel
+      layout="split"
+      media={
         <Styled.AgeImage
           src={image('scene-birthday-adult')}
           alt="An adult celebrating a birthday with a cake and balloons."
         />
-      </Styled.AgeTop>
-      <p>Ask your teacher:</p>
-      <PromptExercise
-        items={[
-          { id: 'age-you', prompt: 'How old are you?' },
-          { id: 'age-parents', prompt: 'How old are your parents?' },
-          { id: 'age-house', prompt: 'How old is your house?' },
-        ]}
-      />
-    </Styled.Stack>
+      }
+    >
+      <Styled.AgePractice>
+        <Styled.AgeExamples>
+          <Styled.AgeExample $correct>
+            <span aria-label="Correct">✓</span>
+            <strong>I’m 32 years old.</strong>
+          </Styled.AgeExample>
+          <Styled.AgeExample $correct>
+            <span aria-label="Correct">✓</span>
+            <strong>I’m 32.</strong>
+          </Styled.AgeExample>
+          <Styled.AgeExample $correct={false}>
+            <span aria-label="Incorrect">✕</span>
+            <strong>I have 32.</strong>
+          </Styled.AgeExample>
+        </Styled.AgeExamples>
+        <Styled.Stack>
+          <h3>Now you:</h3>
+          <PromptExercise
+            items={[
+              { id: 'age-you', prompt: 'How old are you?' },
+              { id: 'age-teacher', prompt: 'How old is your teacher?' },
+              { id: 'age-parents', prompt: 'How old are your parents?' },
+            ]}
+          />
+        </Styled.Stack>
+      </Styled.AgePractice>
+    </Styled.AgePanel>
   )
 }
 export function TwoTruthsAndALie() {
@@ -376,11 +390,13 @@ export function TwoTruthsAndALie() {
       {['You', 'Your teacher'].map((person) => (
         <Styled.TruthsPanel key={person}>
           <h3>{person}</h3>
-          <ol>
-            <li>I’m …</li>
-            <li>I’m from …</li>
-            <li>My … is …</li>
-          </ol>
+          <PromptExercise
+            items={[
+              { id: `${person}-one`, prompt: 'I’m …' },
+              { id: `${person}-two`, prompt: 'I’m from …' },
+              { id: `${person}-three`, prompt: 'My … is …' },
+            ]}
+          />
           <p>Which fact is the lie?</p>
         </Styled.TruthsPanel>
       ))}

@@ -1,3 +1,4 @@
+import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { LessonHint } from '../shared/LessonHint'
 import { createGlobalStyle, styled } from 'styled-components'
@@ -183,7 +184,7 @@ export const Choices = styled.div`
     grid-template-columns: minmax(0, 1fr);
   }
 `
-export const Choice = styled.button`
+export const Choice = styled(ChoiceCard)`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -200,11 +201,11 @@ export const Choice = styled.button`
   font-weight: ${theme.typography.fontWeight.bold};
   text-align: left;
   line-height: 1.4;
-  &[aria-pressed='true'] {
-    border-color: ${(p) => recipe(p).accent};
-  }
   span[aria-hidden] {
     color: ${(p) => recipe(p).indicator};
+  }
+  &[aria-pressed='true'] span[aria-hidden] {
+    color: inherit;
   }
 `
 export const ConversationButton = styled(Choice)`
