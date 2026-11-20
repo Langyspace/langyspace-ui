@@ -111,3 +111,13 @@ checklist counters or required clicks. Existing lesson adapters delegate to thes
 A1.05 demonstrates the combinations in Materials/A1.05, including transparent fruits, static fruit
 cards, oral role-play, native ElevenLabs playback and third-listen transcript disclosure. Those
 stories are examples for human review; no visual acceptance is implied.
+
+## Contact and symbol exercises — A1.02
+
+`VocabularyGrid` items may use native `symbol` text instead of `imageUrl`. This keeps numbers and
+letters selectable, readable and audible with the approved reveal controls, without SVG/image
+substitutes. `CallSimulation` supports `density="compact"` using the existing phone-layout theme.
+`KeyValueList` supports `tone="material"` so contact-card labels and values resolve against the
+slide theme. Existing defaults remain intact. Examples are in Materials/A1.02,
+Exercise/Components/NativeSymbols, Exercise/UX Lab/CompactContactCall and
+Details/KeyValueList/MaterialContact. Human review remains pending.

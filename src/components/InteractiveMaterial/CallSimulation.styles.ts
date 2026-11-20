@@ -21,7 +21,7 @@ export const Root = styled.section.withConfig({
     min-width: min(100%, 200px);
   }
 `
-export const Phone = styled.div<{ $video?: boolean }>`
+export const Phone = styled.div<{ $video?: boolean; $compact?: boolean }>`
   width: 280px;
   max-width: 100%;
   min-height: 540px;
@@ -47,6 +47,15 @@ export const Phone = styled.div<{ $video?: boolean }>`
           border-width: ${device(p).frameWidth};
         `
       : undefined}
+  ${(p) =>
+    p.$compact
+      ? css`
+          width: ${device(p).phoneWidth};
+          min-height: ${device(p).phoneHeight};
+          padding: ${theme.spacing[4]} ${theme.spacing[3]};
+          gap: ${theme.spacing[2]};
+        `
+      : undefined}
   h3 {
     font-family: ${theme.typography.fontFamily.sans};
     font-size: 22px;
@@ -56,9 +65,13 @@ export const Phone = styled.div<{ $video?: boolean }>`
     overflow-wrap: anywhere;
   }
 `
-export const Avatar = styled.div<{ $poor?: boolean; $video?: boolean }>`
-  width: 84px;
-  height: 84px;
+export const Avatar = styled.div<{
+  $poor?: boolean
+  $video?: boolean
+  $compact?: boolean
+}>`
+  width: ${(p) => (p.$compact ? theme.spacing[12] : '84px')};
+  height: ${(p) => (p.$compact ? theme.spacing[12] : '84px')};
   display: grid;
   place-items: center;
   border-radius: ${theme.radius.circle};
@@ -154,10 +167,13 @@ export const Key = styled(Common.DeviceControl)<{ $pressed: boolean }>`
     color: ${theme.simulations.foreground};
   }
 `
-export const CallButton = styled(Common.DeviceControl)<{ $start: boolean }>`
-  width: 58px;
+export const CallButton = styled(Common.DeviceControl)<{
+  $start: boolean
+  $compact?: boolean
+}>`
+  width: ${(p) => (p.$compact ? theme.sizes.control.lg : '58px')};
   min-width: 0;
-  height: 58px;
+  height: ${(p) => (p.$compact ? theme.sizes.control.lg : '58px')};
   border: 0;
   padding: 0;
   border-radius: ${theme.radius.circle};

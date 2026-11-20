@@ -31,10 +31,21 @@ export const Vocabulary = styled.div.withConfig({
 export const Word = styled(Pressable)<{
   $plain?: boolean
   $static?: boolean
+  $symbol?: boolean
   $scene: boolean
   $regular: boolean
   $completed?: boolean
 }>`
+  ${(p) =>
+    p.$symbol
+      ? css`
+          && {
+            height: clamp(5.5rem, 14cqh, 6rem);
+            min-height: 0;
+            padding-bottom: ${theme.spacing[6]};
+          }
+        `
+      : undefined}
   position: relative;
   display: grid;
   place-items: center;
@@ -154,4 +165,12 @@ export const VocabularySection = styled.div`
   display: grid;
   min-width: 0;
   gap: ${theme.spacing[3]};
+`
+
+export const WordSymbol = styled.span`
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize['3xl']};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1;
+  color: inherit;
 `

@@ -6,6 +6,7 @@ export function CallSimulation({
   contactName,
   initials,
   presentation = 'audio',
+  density = 'regular',
   avatarUrl,
   signalPoor = false,
   onSignalToggle,
@@ -40,10 +41,14 @@ export function CallSimulation({
   const start = state === 'idle' || state === 'ended'
   return (
     <Styled.Root as="section" {...props}>
-      <Styled.Phone $video={presentation === 'video'}>
+      <Styled.Phone
+        $video={presentation === 'video'}
+        $compact={density === 'compact'}
+      >
         {state !== 'menu' ? (
           <Styled.Avatar
             aria-hidden="true"
+            $compact={density === 'compact'}
             $video={presentation === 'video'}
             $poor={presentation === 'video' && signalPoor}
           >
@@ -74,7 +79,7 @@ export function CallSimulation({
             : state === 'ringing'
               ? text.ringing
               : state === 'ended'
-                ? `${text.ended} · ${elapsedLabel}`
+                ? `${text.ended}${elapsedLabel ? ` · ${elapsedLabel}` : ''}`
                 : elapsedLabel}
         </Styled.Status>
         {caption || state === 'menu' ? (
@@ -115,6 +120,7 @@ export function CallSimulation({
         <Styled.CallButton
           type="button"
           $start={start}
+          $compact={density === 'compact'}
           disabled={disabled}
           aria-label={
             start

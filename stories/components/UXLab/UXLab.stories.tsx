@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { withVoiceMessageLayout } from '../../materials/shared/deviceTheme'
 import { LabTile } from './LabTile'
 import {
   VideoCallDemo,
@@ -216,4 +218,42 @@ export const NarrowComponents: Story = {
       </Styled.Sheet>
     </Styled.Narrow>
   ),
+}
+
+function CompactCallPreview() {
+  const [connected, setConnected] = useState(false)
+  return (
+    <ThemeProvider
+      theme={withVoiceMessageLayout({
+        contentWidth: '47.5rem',
+        phoneWidth: '11.875rem',
+        phoneHeight: '23.75rem',
+      })}
+    >
+      <CallSimulation
+        density="compact"
+        contactName="Kim"
+        initials="K"
+        state={connected ? 'connected' : 'idle'}
+        elapsedLabel=""
+        caption={
+          connected
+            ? 'Your phone number is 984 221 517. Is that right?'
+            : undefined
+        }
+        onCall={() => setConnected(true)}
+        onHangUp={() => setConnected(false)}
+        labels={{
+          idle: 'Answer Kim’s call',
+          call: 'Answer',
+          hangUp: 'End call',
+        }}
+      >
+        <p>Listen and correct the contact details.</p>
+      </CallSimulation>
+    </ThemeProvider>
+  )
+}
+export const CompactContactCall: Story = {
+  render: () => <CompactCallPreview />,
 }

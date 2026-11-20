@@ -61,6 +61,7 @@ export function VocabularyGrid({
             <Styled.Word
               as={interaction === 'static' ? 'figure' : 'button'}
               $static={interaction === 'static'}
+              $symbol={item.symbol !== undefined}
               $plain={surface === 'plain'}
               $completed={markRevealed && revealedIds.includes(item.id)}
               $scene={imageVariant === 'scene'}
@@ -96,13 +97,19 @@ export function VocabularyGrid({
                     }
               }
             >
-              <Styled.WordImage
-                $fit={imageFit}
-                $scene={imageVariant === 'scene'}
-                $regular={density === 'regular'}
-                src={item.imageUrl}
-                alt=""
-              />
+              {item.symbol !== undefined ? (
+                <Styled.WordSymbol aria-hidden="true">
+                  {item.symbol}
+                </Styled.WordSymbol>
+              ) : (
+                <Styled.WordImage
+                  $fit={imageFit}
+                  $scene={imageVariant === 'scene'}
+                  $regular={density === 'regular'}
+                  src={item.imageUrl}
+                  alt=""
+                />
+              )}
               {item.badge ? (
                 <Styled.WordBadge>{item.badge}</Styled.WordBadge>
               ) : null}

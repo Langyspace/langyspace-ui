@@ -1,8 +1,10 @@
-import type { ComponentPropsWithRef } from 'react'
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 import type { VocabularyControlsProps } from './VocabularyControls.types'
 export interface VocabularyItem {
   id: string
-  imageUrl: string
+  imageUrl?: string
+  /** Native letters/numerals, with the same reveal and playback contract as images. */
+  symbol?: ReactNode
   imageAlt: string
   word: string
   translation: string

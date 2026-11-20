@@ -9,6 +9,8 @@ export interface CallSimulationProps extends Omit<
   initials: string
   /** Video-call exercise presentation. No camera or microphone is requested. */
   presentation?: 'audio' | 'video'
+  /** Compact lesson calls fit the presentation viewport and resolve device dimensions from theme. */
+  density?: 'regular' | 'compact'
   avatarUrl?: string
   signalPoor?: boolean
   onSignalToggle?: () => void

@@ -257,3 +257,38 @@ function InlineDialoguePreview() {
 export const InlineDialogueAnswers: Story = {
   render: () => <InlineDialoguePreview />,
 }
+
+function NativeSymbolsPreview() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        columns={3}
+        revealOnHover={false}
+        revealVariant="tooltip"
+        items={[
+          {
+            id: 'zero',
+            symbol: '0',
+            word: 'zero',
+            translation: '',
+            imageAlt: '0',
+          },
+          {
+            id: 'one',
+            symbol: '1',
+            word: 'one',
+            translation: '',
+            imageAlt: '1',
+          },
+          { id: 'A', symbol: 'A', word: 'ay', translation: '', imageAlt: 'A' },
+        ]}
+        revealedIds={revealed}
+        onReveal={(id) =>
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
+        }
+      />
+    </Styled.Preview>
+  )
+}
+export const NativeSymbols: Story = { render: () => <NativeSymbolsPreview /> }
