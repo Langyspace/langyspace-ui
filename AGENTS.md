@@ -109,7 +109,8 @@
 - Warm-up choices communicate correctness with the option states, without success banners or
   explanations of wrong answers. Use ExercisePanel's warmup variant with the image above the
   options; align the header, image and options to the same centered column. Place short progress
-  counters inside the exercise card.
+  counters inside the image in a small rounded translucent badge. Do not reserve a separate row
+  or extra top padding for the counter. Keep the header-to-image gap on the compact spacing scale.
 - Selected conversation choices use the canonical dark green with readable white text. Preserve
   intentional color sequences on speaking activity markers; do not normalize them globally.
 - Reuse prepared ElevenLabs recordings and native players; preload before the click and retain

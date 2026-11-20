@@ -9,12 +9,15 @@ export function ExercisePanel({
   children,
   ...props
 }: ExercisePanelProps) {
+  const counterInMedia = variant === 'warmup' && Boolean(media)
   const heading = (
     <>
-      {title || counter ? (
+      {title || (counter && !counterInMedia) ? (
         <Styled.PanelHeading>
           {title ? <h3>{title}</h3> : null}
-          {counter ? <Styled.Counter>{counter}</Styled.Counter> : null}
+          {counter && !counterInMedia ? (
+            <Styled.Counter>{counter}</Styled.Counter>
+          ) : null}
         </Styled.PanelHeading>
       ) : null}
     </>
@@ -27,6 +30,9 @@ export function ExercisePanel({
           {media ? (
             <Styled.WarmupMedia data-exercise-media="true">
               {media}
+              {counter ? (
+                <Styled.MediaCounter>{counter}</Styled.MediaCounter>
+              ) : null}
             </Styled.WarmupMedia>
           ) : null}
           <Styled.Stack>{children}</Styled.Stack>

@@ -1,5 +1,6 @@
 import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 import { recipe, Stack as SharedStack } from './Exercise.shared.styles'
 
 /** Internal composition width, also used by a warm-up page's external header. */
@@ -111,6 +112,7 @@ export const Warmup = styled.div`
   min-width: 0;
 `
 export const WarmupMedia = styled.div`
+  position: relative;
   display: grid;
   gap: ${theme.spacing[3]};
   width: 100%;
@@ -128,4 +130,18 @@ export const WarmupMedia = styled.div`
     object-fit: contain;
     border-radius: ${(p) => recipe(p).panelRadius};
   }
+`
+export const MediaCounter = styled.span`
+  position: absolute;
+  top: ${theme.spacing[3]};
+  left: ${theme.spacing[3]};
+  z-index: 1;
+  padding: ${theme.spacing[1]} ${theme.spacing[2]};
+  border-radius: ${theme.radius.pill};
+  background: ${alpha(theme.colors.palette.black, 0.6)};
+  color: ${theme.colors.palette.white};
+  font-size: ${theme.typography.fontSize.sm};
+  font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  pointer-events: none;
 `

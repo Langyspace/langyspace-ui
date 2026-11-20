@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { FluencyTimer } from '../../../src/components/InteractiveMaterial/FluencyTimer'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
@@ -111,8 +112,9 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(item.a)
   return (
-    <Styled.WarmPanel
+    <ExercisePanel
       variant="warmup"
+      counter={`${item.id.split('.')[1]}/12`}
       media={
         <Styled.WarmScene>
           <Styled.WarmImage
@@ -125,11 +127,6 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
         </Styled.WarmScene>
       }
     >
-      <Styled.WarmCounter
-        aria-label={`Question ${item.id.split('.')[1]} of 12`}
-      >
-        {item.id.split('.')[1]}/12
-      </Styled.WarmCounter>
       {item.o.map((option, i) => (
         <QuizOption
           key={option}
@@ -151,7 +148,7 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
           {option}
         </QuizOption>
       ))}
-    </Styled.WarmPanel>
+    </ExercisePanel>
   )
 }
 export function DialogueSection({

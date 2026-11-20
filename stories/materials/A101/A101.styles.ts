@@ -589,18 +589,6 @@ export const TitleAudio = styled.span`
   flex-wrap: wrap;
 `
 
-export const WarmPanel = styled(ExercisePanel)`
-  position: relative;
-  padding-top: ${theme.spacing[8]};
-`
-export const WarmCounter = styled.span`
-  position: absolute;
-  top: ${theme.spacing[3]};
-  right: ${theme.spacing[4]};
-  color: ${(p) => recipe(p).muted};
-  font-size: ${theme.typography.fontSize.sm};
-  font-variant-numeric: tabular-nums;
-`
 export const AgeExamples = styled.div`
   display: flex;
   flex-direction: column;

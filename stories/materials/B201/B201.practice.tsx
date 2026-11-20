@@ -69,23 +69,23 @@ export function WarmUpSection({ index }: WarmUpProps) {
     [open, setOpen] = useState(!w.hide)
   const done = attempts.includes(w.a)
   return (
-    <ExercisePanel
-      variant="warmup"
-      counter={`${index + 1} / 3`}
-      media={
-        <S.Stack>
-          <LearningDialogue
-            density="compact"
-            lines={[
-              {
-                id: 'kim',
-                speaker: 'Kim asks Ana',
-                avatarUrl: kim,
-                side: 'start',
-                content: w.q,
-              },
-            ]}
-          />
+    <S.Stack>
+      <LearningDialogue
+        density="compact"
+        lines={[
+          {
+            id: 'kim',
+            speaker: 'Kim asks Ana',
+            avatarUrl: kim,
+            side: 'start',
+            content: w.q,
+          },
+        ]}
+      />
+      <ExercisePanel
+        variant="warmup"
+        counter={`${index + 1}/3`}
+        media={
           <S.SceneImage
             src={image(w.pic)}
             alt={
@@ -93,48 +93,48 @@ export function WarmUpSection({ index }: WarmUpProps) {
               'Question scene'
             }
           />
+        }
+      >
+        <S.Stack>
+          {open ? (
+            <S.Stack>
+              {w.o.map((option, i) => (
+                <QuizOption
+                  key={option}
+                  letter={String.fromCharCode(65 + i)}
+                  density="compact"
+                  state={
+                    attempts.includes(i)
+                      ? i === w.a
+                        ? 'correct'
+                        : 'wrong'
+                      : done
+                        ? 'dim'
+                        : 'default'
+                  }
+                  disabled={done}
+                  onClick={() => {
+                    setAttempts((old) => [...old, i])
+                  }}
+                >
+                  {option}
+                </QuizOption>
+              ))}
+            </S.Stack>
+          ) : (
+            <Button variant="secondary" onClick={() => setOpen(true)}>
+              Show options
+            </Button>
+          )}
+          {done ? (
+            <S.Now>
+              <b>Now you</b>
+              <p>{w.now}</p>
+            </S.Now>
+          ) : null}
         </S.Stack>
-      }
-    >
-      <S.Stack>
-        {open ? (
-          <S.Stack>
-            {w.o.map((option, i) => (
-              <QuizOption
-                key={option}
-                letter={String.fromCharCode(65 + i)}
-                density="compact"
-                state={
-                  attempts.includes(i)
-                    ? i === w.a
-                      ? 'correct'
-                      : 'wrong'
-                    : done
-                      ? 'dim'
-                      : 'default'
-                }
-                disabled={done}
-                onClick={() => {
-                  setAttempts((old) => [...old, i])
-                }}
-              >
-                {option}
-              </QuizOption>
-            ))}
-          </S.Stack>
-        ) : (
-          <Button variant="secondary" onClick={() => setOpen(true)}>
-            Show options
-          </Button>
-        )}
-        {done ? (
-          <S.Now>
-            <b>Now you</b>
-            <p>{w.now}</p>
-          </S.Now>
-        ) : null}
-      </S.Stack>
-    </ExercisePanel>
+      </ExercisePanel>
+    </S.Stack>
   )
 }
 export function WordTableSection({ grammar = false }: WordTableProps) {
