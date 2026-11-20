@@ -349,9 +349,9 @@ export function ConversationSection({ index }: WarmupProps) {
     <PromptExercise
       items={content.conversation
         .slice(index * 5, index * 5 + 5)
-        .map((prompt, offset) => ({
+        .map((item, offset) => ({
           id: `conversation.${index * 5 + offset + 1}`,
-          prompt,
+          ...item,
         }))}
     />
   )

@@ -418,26 +418,86 @@
     }
   ],
   "conversation": [
-    "What are you doing right now?",
-    "What are you wearing today?",
-    "Are you sitting or standing?",
-    "Are you listening to music?",
-    "What are you thinking about right now?",
-    "Are you drinking anything?",
-    "What are you doing after class?",
-    "Are you watching any good series these days?",
-    "Are you reading any interesting books?",
-    "Are you learning anything new at the moment?",
-    "Are you exercising these days?",
-    "Are you spending more time at home lately?",
-    "What is your family doing right now?",
-    "Is anyone in your family working today?",
-    "What are your friends doing this weekend?",
-    "Are any of your friends studying English?",
-    "Is anyone you know traveling right now?",
-    "Are you working or studying a lot this week?",
-    "Are you trying any new hobbies these days?",
-    "Are you planning a trip?"
+    {
+      "prompt": "What are you doing right now?",
+      "answer": "I'm … right now."
+    },
+    {
+      "prompt": "What are you wearing today?",
+      "answer": "I'm wearing … today."
+    },
+    {
+      "prompt": "Are you sitting or standing?",
+      "answer": "I'm sitting down. / I'm standing up."
+    },
+    {
+      "prompt": "Are you listening to music?",
+      "answer": "Yes, I'm listening to … / No, I'm not listening to music."
+    },
+    {
+      "prompt": "What are you thinking about right now?",
+      "answer": "I'm thinking about …"
+    },
+    {
+      "prompt": "Are you drinking anything?",
+      "answer": "Yes, I'm drinking … / No, I'm not drinking anything."
+    },
+    {
+      "prompt": "What are you doing after class?",
+      "answer": "After class, I'm …"
+    },
+    {
+      "prompt": "Are you watching any good series these days?",
+      "answer": "Yes, I'm watching … / No, I'm not watching a series right now."
+    },
+    {
+      "prompt": "Are you reading any interesting books?",
+      "answer": "Yes, I'm reading … / No, I'm not reading a book right now."
+    },
+    {
+      "prompt": "Are you learning anything new at the moment?",
+      "answer": "I'm learning … at the moment. / I'm not learning anything new right now."
+    },
+    {
+      "prompt": "Are you exercising these days?",
+      "answer": "Yes, I'm … / No, I'm not exercising these days."
+    },
+    {
+      "prompt": "Are you spending more time at home lately?",
+      "answer": "Yes, I'm spending more time at home. / No, I'm going out more."
+    },
+    {
+      "prompt": "What is your family doing right now?",
+      "answer": "My … is … right now. / My parents are …"
+    },
+    {
+      "prompt": "Is anyone in your family working today?",
+      "answer": "Yes, my … is working today. / No, no one is working today."
+    },
+    {
+      "prompt": "What are your friends doing this weekend?",
+      "answer": "My friends are … this weekend."
+    },
+    {
+      "prompt": "Are any of your friends studying English?",
+      "answer": "Yes, my … is studying English. / No, they aren't."
+    },
+    {
+      "prompt": "Is anyone you know traveling right now?",
+      "answer": "Yes, my … is traveling in … / No, no one is traveling right now."
+    },
+    {
+      "prompt": "Are you working or studying a lot this week?",
+      "answer": "This week, I'm working / studying a lot. / I'm not working or studying much."
+    },
+    {
+      "prompt": "Are you trying any new hobbies these days?",
+      "answer": "Yes, I'm trying … / No, I'm not trying any new hobbies."
+    },
+    {
+      "prompt": "Are you planning a trip?",
+      "answer": "Yes, I'm planning a trip to … / No, I'm not planning a trip."
+    }
   ],
   "homework": {
     "title": "Real-Life Observation",
