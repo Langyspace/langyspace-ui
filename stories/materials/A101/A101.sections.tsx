@@ -173,11 +173,9 @@ export function DialogueSection({
                         )
                       }}
                     >
-                      {revealed.includes(index) ? (
-                        gapAnswers[index]
-                      ) : (
-                        <span aria-hidden="true">____</span>
-                      )}
+                      <Styled.GapAnswer $revealed={revealed.includes(index)}>
+                        {gapAnswers[index]}
+                      </Styled.GapAnswer>
                     </Styled.Gap>
                   ) : (
                     part

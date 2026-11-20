@@ -49,7 +49,9 @@ export function DialogueSection({
                   aria-label={`${gaps.includes(part.id) ? 'Hide' : 'Reveal'} answer ${Number(part.id.slice(1))}`}
                   onClick={() => onGapToggle?.(part.id)}
                 >
-                  {gaps.includes(part.id) ? part.answer : '__________'}
+                  <S.GapAnswer $revealed={gaps.includes(part.id)}>
+                    {part.answer}
+                  </S.GapAnswer>
                 </S.Gap>
               ),
             )

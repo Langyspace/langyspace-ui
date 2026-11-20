@@ -34,9 +34,7 @@ export function GapFillExercise({
               <Styled.Gap
                 $active={activeId === item.id}
                 aria-label={`${text.gap} ${index + 1}`}
-              >
-                ___
-              </Styled.Gap>
+              />
             )}
             {item.after}
           </p>

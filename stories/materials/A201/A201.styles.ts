@@ -7,7 +7,6 @@ import { Phone } from '../../../src/components/VoiceMessage/VoiceMessageExercise
 import { regularVocabularyMaxWidth } from '../../../src/components/Exercise/VocabularyGrid.styles'
 import { theme } from '../../../src/foundations/theme/theme'
 import { recipe } from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import type { GapButtonStyleProps } from './A201.types'
 
 export { WarmupPage } from '../shared/WarmupPage.styles'
 
@@ -78,25 +77,11 @@ export const Emphasis = styled.strong`
   color: ${(p) => recipe(p).accent};
   font-weight: ${theme.typography.fontWeight.bold};
 `
-export const Gap = styled(Button)<GapButtonStyleProps>`
-  && {
-    min-width: ${theme.spacing[10]};
-    min-height: ${theme.sizes.control.sm};
-    padding: 0 ${theme.spacing[1]};
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    color: ${(p) => (p.$revealed ? theme.colors.palette.feedback.success : recipe(p).foreground)};
-    font: inherit;
-    font-weight: ${theme.typography.fontWeight.bold};
-    vertical-align: baseline;
-    &:hover,
-    &:active {
-      background: transparent;
-      box-shadow: none;
-    }
-  }
-`
+export {
+  DialogueGap as Gap,
+  DialogueGapAnswer as GapAnswer,
+} from '../shared/DialogueGap.styles'
+
 export const ParkLayout = styled.div`
   display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);

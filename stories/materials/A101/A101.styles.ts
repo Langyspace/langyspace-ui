@@ -188,25 +188,11 @@ export const Guest = styled.figure`
   background: transparent;
 `
 export const GuestName = styled(WordCaption)``
-export const Gap = styled(Button)<{ $revealed: boolean }>`
-  && {
-    min-width: ${theme.spacing[10]};
-    min-height: ${theme.sizes.control.sm};
-    padding: 0 ${theme.spacing[1]};
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-    color: ${(p) => (p.$revealed ? theme.colors.palette.feedback.success : recipe(p).foreground)};
-    font: inherit;
-    font-weight: ${theme.typography.fontWeight.bold};
-    vertical-align: baseline;
-    &:hover,
-    &:active {
-      background: transparent;
-      box-shadow: none;
-    }
-  }
-`
+export {
+  DialogueGap as Gap,
+  DialogueGapAnswer as GapAnswer,
+} from '../shared/DialogueGap.styles'
+
 export const Homework = styled(Card)`
   display: flex;
   align-items: center;
