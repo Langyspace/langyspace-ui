@@ -1,13 +1,11 @@
 import { PromptExercise } from '../shared/LessonExercises'
-import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
-import { content, ana, kim, toggle } from './B101.data'
+import { content, ana, kim, toggle, paintingScene } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
-import * as S from './B101.styles'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 export function DialogueSection({
   part,
   speech,
@@ -39,128 +37,80 @@ export function DialogueSection({
 }
 export function ComprehensionSection({ part }: { part?: number }) {
   return (
-    <S.Stack>
-      <PromptExercise
-        items={content.comprehension
-          .filter(
-            (_, index) =>
-              part === undefined || (part === 0 ? index < 2 : index >= 2),
-          )
-          .map((item, index) => ({
-            id: String(index),
-            prompt: item.q,
-            answer: item.a,
-          }))}
-      />
-      {part !== 0 ? (
-        <S.Now>
-          <b>Now you</b>
-          <p>
-            Think of a hobby you started. What helped you keep going, and what
-            has changed since you started?
-          </p>
-        </S.Now>
-      ) : null}
-    </S.Stack>
+    <PromptExercise
+      items={content.comprehension
+        .filter(
+          (_, index) =>
+            part === undefined || (part === 0 ? index < 2 : index >= 2),
+        )
+        .map((item, index) => ({
+          id: String(index),
+          prompt: item.q,
+          answer: item.a,
+        }))}
+    />
   )
 }
 export function GrammarSection() {
-  const [ids, setIds] = useState<string[]>([]),
-    [starters, setStarters] = useState(false)
-  const all = content.grammar.every((row) => ids.includes(row[4] ?? ''))
   return (
-    <S.GrammarColumns>
-      <S.Stack>
-        <S.Explanation>
-          <h3>Activity or result?</h3>
-          <p>
-            <b>I’ve been painting all week.</b>
-            <br />
-            Focus: the activity and the time spent.
-          </p>
-          <p>
-            <b>I’ve painted two rooms.</b>
-            <br />
-            Focus: the completed result or quantity.
-          </p>
-        </S.Explanation>
-        <S.Explanation>
-          <h3>Build the continuous form</h3>
-          <p>
-            I / you / we / they <b>have been + -ing</b>
-            <br />
-            He / she / it <b>has been + -ing</b>
-          </p>
-          <p>
-            <b>I haven’t been sleeping well.</b>
-            <br />
-            <b>Has she been working late?</b> — Yes, she has.
-          </p>
-        </S.Explanation>
-        <LessonHint context="Duration and verb choice">
-          <b>Duration and verb choice</b>
-          <S.Explanation>
-            <p>
-              <b>for</b> + a period: for two weeks.
-              <br />
-              <b>since</b> + a starting point: since Monday.
-            </p>
-            <p>
-              An activity can still be happening or have just stopped: “You’re
-              wet. Have you been swimming?”
-            </p>
-            <p>
-              Use the simple form with state verbs:{' '}
-              <b>I’ve known her for years.</b>
-            </p>
-          </S.Explanation>
-        </LessonHint>
-      </S.Stack>
-      <S.Stack>
-        <GrammarTable
-          title="Doing or done?"
-          columns={{
-            subject: 'Focus',
-            verb: 'Form',
-            example: 'Example',
-          }}
-          rows={content.grammar.map(
-            ([subject, verb, example, translation, id]) => ({
-              id: id ?? '',
-              subject,
-              verb,
-              example,
-              translation,
-            }),
-          )}
-          hiddenAnswers
-          revealedIds={ids}
-          revealLabel="Show words and example"
-          onReveal={(id) => setIds((old) => [...old, id])}
-        />
-        {all ? (
-          <S.Now>
-            <b>Now you</b>
-            <p>
-              Use Ana’s news: describe her ongoing activity, count the finished
-              rooms and say what is next.
-            </p>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-expanded={starters}
-              onClick={() => setStarters(!starters)}
-            >
-              {starters ? 'Hide starters' : 'Show starters'}
-            </Button>
-            {starters ? (
-              <S.Hint>
-                She’s been …ing for … · She’s …ed … · The … is next.
-              </S.Hint>
-            ) : null}
-          </S.Now>
-        ) : null}
-      </S.Stack>
-    </S.GrammarColumns>
+    <RolePlayExercise
+      presentation="instructions"
+      density="compact"
+      situation=""
+      steps={[]}
+      completedIds={[]}
+      onStepToggle={() => undefined}
+      image={{
+        src: paintingScene,
+        alt: 'Ana and Kim in the blue living room, with Ana holding a paint roller.',
+      }}
+      tracker={
+        <Common.Stack>
+          <GrammarTable
+            title="Activity and result"
+            captionVisibility="screen-reader"
+            columns={{
+              subject: 'What do you want to say?',
+              verb: 'Form',
+              example: 'Ana’s update',
+            }}
+            rows={[
+              {
+                id: 'activity',
+                subject: 'What have you been doing?',
+                verb: 'have / has been + -ing',
+                example: 'I’ve been painting all week.',
+              },
+              {
+                id: 'result',
+                subject: 'How many rooms have you painted?',
+                verb: 'have / has + past participle',
+                example: 'I’ve painted two rooms.',
+              },
+            ]}
+            explanation={
+              <Common.Stack>
+                <Common.Hint>
+                  The continuous tells us about the activity. It can still be
+                  happening or may have just stopped.
+                </Common.Hint>
+                <Common.Hint>
+                  The simple form tells us the result: two rooms are finished.
+                </Common.Hint>
+                <Common.Hint>
+                  How long? For a period: for two weeks. Since a starting point:
+                  since Monday.
+                </Common.Hint>
+              </Common.Stack>
+            }
+          />
+        </Common.Stack>
+      }
+    >
+      <Common.Hint>
+        Ana has spent the week painting. The living room and kitchen are
+        finished; the bedroom is next.
+      </Common.Hint>
+    </RolePlayExercise>
   )
 }

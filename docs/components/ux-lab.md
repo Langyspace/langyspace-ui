@@ -91,11 +91,11 @@ Todos os contratos novos são exportados da raiz e aceitam props/ref nativos do 
 
 A controlled card for progressive disclosure, for example closed → clue → answer. Pass ordered `stages`, `stageId` and `onAdvance`; the callback receives the next stage id. Each stage supplies its own accessible `revealLabel`, optional image/alt text and content. The component never evaluates an answer or stores lesson progress. The last stage remains focusable with `aria-disabled`; it cannot advance. An empty sequence is disabled. Theme colors and native keyboard activation follow the shared library.
 
-`stories/materials/B101` composes this contract for the three-day role play. It also exercises `RolePlayExercise.tracker`, a slot for a consumer-owned editable summary before the checklist. Free notes and all learner-specific state remain outside package exports.
+`RevealSequenceCard` remains available for a genuine progressive-disclosure task. B1.01 now uses visible contextual media, three compact facts and a guided six-turn dialogue; its former hidden cards, editable summary and checklist were removed in feedback43. Free notes and learner-specific state stay outside package exports.
 
 `GrammarTable hiddenAnswers` presents unrevealed rows as one disclosure cell across the answer columns, with a visible question action. Revealed rows return to the normal table columns. The strong table header and plain subject labels keep the longer B1 meaning descriptions readable; standard tables retain their tagged presentation.
 
-`RolePlayExercise density="compact"` reduces step spacing and text size for short lesson viewports; its default density stays unchanged.
+`RolePlayExercise density="compact"` reduces step spacing and bounds its scene image to the presentation height. `KeyValueList density="compact"` keeps three facts with smaller gaps and a body-sized value. Both default densities remain unchanged. See B1.01 RolePlay and Details/KeyValueList CompactFacts source stories.
 
 ## Reviewed lesson compositions — A1.05
 

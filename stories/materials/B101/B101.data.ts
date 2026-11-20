@@ -1,6 +1,7 @@
 import content from './B101.content.json'
+import paintingScene from './assets/catalog-cover40.webp'
 import { ana, kim, leo } from '../shared/characterPortraits'
-export { content, ana, kim, leo }
+export { content, ana, kim, leo, paintingScene }
 export const order = [
   's1',
   's2',
@@ -10,10 +11,10 @@ export const order = [
   's33',
   's4',
   's51',
-  's52',
   's6',
   's62',
   's7',
+  's52',
   's8',
   's9',
   's10',

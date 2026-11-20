@@ -152,6 +152,7 @@ function VoiceMessageContent({
               initials={contact.name.slice(0, 2)}
               name={contact.name}
               namePosition="beside"
+              textTone="inherit"
               description={contact.status}
               size="sm"
             />

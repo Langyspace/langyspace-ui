@@ -36,7 +36,11 @@ export function RolePlayExercise({
   if (presentation === 'instructions')
     return (
       <Styled.Root as="section" {...props}>
-        <Styled.Scene $plain $imageFit={imageFit}>
+        <Styled.Scene
+          $plain
+          $imageFit={imageFit}
+          $compact={density === 'compact'}
+        >
           {image ? <img src={image.src} alt={image.alt} /> : null}
           {situation ? <p>{situation}</p> : null}
           {roles.length ? (
@@ -91,7 +95,11 @@ export function RolePlayExercise({
   ) : null
   return (
     <Styled.Root as="section" {...props}>
-      <Styled.Scene $plain={guided} $imageFit={imageFit}>
+      <Styled.Scene
+        $plain={guided}
+        $imageFit={imageFit}
+        $compact={density === 'compact'}
+      >
         {image ? <img src={image.src} alt={image.alt} /> : null}
         {situation ? <p>{situation}</p> : null}
         <Common.Row>

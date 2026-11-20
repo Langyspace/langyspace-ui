@@ -1,11 +1,13 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { Button } from '../../../src/components/Button/Button'
-import { TextInput } from '../../../src/components/Form/TextInput'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RevealSequenceCard } from '../../../src/components/InteractiveMaterial/RevealSequenceCard'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import { KeyValueList } from '../../../src/components/Details/KeyValueList'
+import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { content, kim, leo, image, toggle } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
 import voice from './assets/audio/L.9.mp3'
@@ -142,13 +144,13 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
 }
 const listeningTheme = withVoiceMessageLayout({
   contentWidth: '65rem',
-  phoneWidth: '11.875rem',
-  phoneHeight: '23.75rem',
+  phoneWidth: 'clamp(11.875rem, calc((100dvh - 15.625rem) / 2), 16.875rem)',
+  phoneHeight: 'clamp(23.75rem, calc(100dvh - 15.625rem), 33.75rem)',
+  transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
 })
 
 export function ListeningSection({ active }: { active: boolean }) {
-  const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
-    [support, setSupport] = useState(false)
+  const [attempts, setAttempts] = useState<Record<string, string[]>>({})
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
@@ -207,127 +209,132 @@ export function ListeningSection({ active }: { active: boolean }) {
         onAnswer={(id, choice) =>
           setAttempts((old) => ({ ...old, [id]: [...(old[id] ?? []), choice] }))
         }
-        footer={
-          <S.Dark>
-            <strong>Now you</strong>
-            <p>
-              Congratulate Leo, react to the eleven places and suggest one idea
-              for the party.
-            </p>
-            <S.Row>
-              <Button
-                variant="inverse"
-                size="sm"
-                aria-expanded={support}
-                onClick={() => setSupport(!support)}
-              >
-                {support ? 'Hide support' : 'Show support'}
-              </Button>
-            </S.Row>
-            {support ? (
-              <p>
-                Congratulations, Leo! · Eleven places! · Why don’t you …? · Call
-                me!
-              </p>
-            ) : null}
-            <S.Hint>I mean = quer dizer</S.Hint>
-          </S.Dark>
-        }
       />
     </ThemeProvider>
   )
 }
+const roleplayCases = [
+  {
+    id: 'soccer',
+    label: 'Monday',
+    clue: 'muddy-shoes',
+    alt: 'Muddy soccer shoes beside the door.',
+    activity: 'playing soccer',
+    duration: 'an hour',
+    partner: 'my friends',
+  },
+  {
+    id: 'bike',
+    label: 'Wednesday',
+    clue: 'hot',
+    alt: 'Someone feeling hot after being outdoors.',
+    activity: 'riding my bike',
+    duration: 'two hours',
+    partner: 'my sister',
+  },
+  {
+    id: 'bus',
+    label: 'Saturday',
+    clue: 'wet-shirt',
+    alt: 'A wet shirt after being outside in the rain.',
+    activity: 'waiting for the bus',
+    duration: 'twenty minutes',
+    partner: 'a friend',
+  },
+]
 export function RolePlaySection() {
-  const [stages, setStages] = useState<Record<string, string>>({}),
-    [support, setSupport] = useState(false),
-    [steps, setSteps] = useState<string[]>([]),
-    [summary, setSummary] = useState<Record<string, string>>({})
-  const firstField = useRef<HTMLInputElement>(null)
-  const answers = ['soccer', 'bike', 'bus'],
-    clues = ['muddy-shoes', 'hot', 'wet-shirt']
+  const [index, setIndex] = useState(0)
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
+  const current = roleplayCases[index]!
+  const questionActivity =
+    current.id === 'bike' ? 'riding your bike' : current.activity
   return (
-    <S.RolePlay
+    <RolePlayExercise
+      presentation="instructions"
       density="compact"
-      situation="Your teacher is Kim. Use each clue to guess what she has been doing."
-      support={content.support}
-      supportVisible={support}
-      onSupportToggle={() => setSupport(!support)}
-      labels={{
-        show: 'Show support',
-        hide: 'Hide support',
-        steps: 'Steps · your teacher checks',
-        progress: 'done',
-      }}
-      steps={content.steps.map((label, i) => ({ id: String(i), label }))}
-      completedIds={steps}
-      onStepToggle={(id) => setSteps((old) => toggle(old, id))}
+      situation=""
+      steps={[]}
+      completedIds={[]}
+      onStepToggle={() => undefined}
+      image={{ src: image(current.clue), alt: current.alt }}
       tracker={
-        <S.Summary>
-          <S.Row>
-            <b>Your three weeks</b>
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => {
-                setSummary({})
-                firstField.current?.focus()
-              }}
-            >
-              Clear
-            </Button>
-          </S.Row>
-          {content.summary.map((label, i) => (
-            <label key={label}>
-              {label}
-              <TextInput
-                ref={i === 0 ? firstField : undefined}
-                size="sm"
-                value={summary[String(i)] ?? ''}
-                onChange={(e) =>
-                  setSummary((old) => ({ ...old, [String(i)]: e.target.value }))
-                }
-                autoComplete="off"
-              />
-            </label>
-          ))}
-        </S.Summary>
+        <LearningDialogue
+          density="compact"
+          guidance={{ level, onChange: setLevel }}
+          lines={[
+            {
+              id: 'ask-activity',
+              speaker: 'You',
+              side: 'end',
+              cue: 'Ask what Kim has been doing.',
+              hint: 'What have you been …?',
+              content: 'What have you been doing?',
+            },
+            {
+              id: 'activity',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start',
+              content: `I’ve been ${current.activity}.`,
+            },
+            {
+              id: 'ask-duration',
+              speaker: 'You',
+              side: 'end',
+              cue: 'Ask how long.',
+              hint: 'How long have you been …?',
+              content: `How long have you been ${questionActivity}?`,
+            },
+            {
+              id: 'duration',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start',
+              content: `For ${current.duration}.`,
+            },
+            {
+              id: 'ask-partner',
+              speaker: 'You',
+              side: 'end',
+              cue: 'Ask who was with her.',
+              hint: 'Who have you been … with?',
+              content: `Who have you been ${questionActivity} with?`,
+            },
+            {
+              id: 'partner',
+              speaker: 'Kim',
+              avatarUrl: kim,
+              side: 'start',
+              content: `With ${current.partner}.`,
+            },
+          ]}
+        />
       }
     >
-      <S.Clues>
-        {content.clues.map((clue, i) => (
-          <RevealSequenceCard
-            key={clue.day}
-            title={clue.day}
-            stageId={stages[clue.day] ?? 'closed'}
-            onAdvance={(id) => setStages((old) => ({ ...old, [clue.day]: id }))}
-            stages={[
-              {
-                id: 'closed',
-                revealLabel: `${clue.day}: closed card`,
-              },
-              {
-                id: 'clue',
-                image: {
-                  src: image(clues[i] ?? ''),
-                  alt:
-                    i === 0
-                      ? 'Tênis com lama na entrada da casa'
-                      : i === 1
-                        ? 'Kim com calor e suor após chegar em casa'
-                        : 'Camiseta molhada ao chegar em casa',
-                },
-                revealLabel: `${clue.day}: show clue`,
-              },
-              {
-                id: 'answer',
-                image: { src: image(answers[i] ?? ''), alt: clue.w },
-                content: `Possible answer: ${clue.w}`,
-                revealLabel: `${clue.day}: show answer`,
-              },
-            ]}
-          />
+      <Common.Row role="group" aria-label="Choose Kim’s day">
+        {roleplayCases.map((item, i) => (
+          <ChoiceCard
+            key={item.id}
+            variant="lesson"
+            aria-pressed={index === i}
+            onClick={() => {
+              setIndex(i)
+              setLevel('cue')
+            }}
+          >
+            {item.label}
+          </ChoiceCard>
         ))}
-      </S.Clues>
-    </S.RolePlay>
+      </Common.Row>
+      <KeyValueList
+        density="compact"
+        tone="material"
+        items={[
+          { id: 'activity', label: 'Activity', value: current.activity },
+          { id: 'duration', label: 'How long', value: current.duration },
+          { id: 'partner', label: 'With whom', value: current.partner },
+        ]}
+      />
+    </RolePlayExercise>
   )
 }

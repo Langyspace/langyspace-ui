@@ -15,10 +15,6 @@ import clip7 from './assets/audio/D.8.mp3'
 import clip8 from './assets/audio/D.9.mp3'
 import clip9 from './assets/audio/D.10.mp3'
 import clip10 from './assets/audio/D.11.mp3'
-import clip11 from './assets/audio/P.0.0.mp3'
-import clip12 from './assets/audio/P.0.1.mp3'
-import clip13 from './assets/audio/P.1.0.mp3'
-import clip14 from './assets/audio/P.1.1.mp3'
 const sources: Readonly<Record<string, string>> = {
   'D.1': clip0,
   'D.2': clip1,
@@ -31,10 +27,6 @@ const sources: Readonly<Record<string, string>> = {
   'D.9': clip8,
   'D.10': clip9,
   'D.11': clip10,
-  'P.0.0': clip11,
-  'P.0.1': clip12,
-  'P.1.0': clip13,
-  'P.1.1': clip14,
 }
 /** Recorded ElevenLabs clips only; one native element owns the dialogue queue. */
 export function useB101Audio() {

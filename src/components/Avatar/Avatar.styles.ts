@@ -98,15 +98,15 @@ export const IdentityText = styled.span<{ $position: 'below' | 'beside' }>`
   gap: ${theme.spacing[1]};
   text-align: ${(p) => (p.$position === 'below' ? 'center' : 'left')};
 `
-export const Name = styled.span<{ $tone: AvatarTone }>`
-  color: ${(p) => (p.$tone === 'inverse' ? theme.colors.palette.white : (resolveTheme(p).colors?.text.primary ?? theme.colors.text.primary))};
+export const Name = styled.span<{ $tone: AvatarTone; $inherit?: boolean }>`
+  color: ${(p) => (p.$inherit ? 'inherit' : p.$tone === 'inverse' ? theme.colors.palette.white : (resolveTheme(p).colors?.text.primary ?? theme.colors.text.primary))};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.semibold};
   line-height: 1.35;
   overflow-wrap: anywhere;
 `
-export const Description = styled.span`
-  color: ${(p) => resolveTheme(p).colors?.text.secondary ?? theme.colors.text.secondary};
+export const Description = styled.span<{ $inherit?: boolean }>`
+  color: ${(p) => (p.$inherit ? 'inherit' : (resolveTheme(p).colors?.text.secondary ?? theme.colors.text.secondary))};
   font-size: ${theme.typography.fontSize['2xs']};
   font-weight: ${theme.typography.fontWeight.medium};
   line-height: 1.3;

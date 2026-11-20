@@ -12,8 +12,16 @@ export const Root = styled(Common.Columns).withConfig({
 `
 export const Scene = styled(Common.Surface)<{
   $plain?: boolean
+  $compact?: boolean
   $imageFit: 'contain' | 'cover'
 }>`
+  ${(p) =>
+    p.$compact
+      ? css`
+          padding: ${theme.spacing[3]};
+          gap: ${theme.spacing[2]};
+        `
+      : undefined}
   ${(p) =>
     p.$plain
       ? css`
@@ -24,7 +32,7 @@ export const Scene = styled(Common.Surface)<{
       : undefined}
   img {
     width: 100%;
-    max-height: 300px;
+    max-height: ${(p) => (p.$compact ? 'clamp(8rem, 24cqh, 12rem)' : '300px')};
     object-fit: ${(p) => p.$imageFit};
     border-radius: ${theme.radius.xl};
   }

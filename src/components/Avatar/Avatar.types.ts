@@ -13,6 +13,8 @@ export interface AvatarProps extends Omit<
   name?: string
   namePosition?: 'below' | 'beside'
   description?: ReactNode
+  /** Use the enclosing surface’s foreground for an identity inside a differently themed device. */
+  textTone?: 'theme' | 'inherit'
   initials: string
   size?: AvatarSize
   tone?: AvatarTone

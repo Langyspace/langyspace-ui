@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import { initial, questions } from './VoiceMessage.fixtures'
 import { VoiceMessageDemo, VoiceMessageDeck } from './VoiceMessageDemo'
 import { Stage, Caption, Narrow } from './VoiceMessage.stories.styles'
@@ -45,6 +46,17 @@ export const InSlideDeck: Story = {
 }
 export const Standalone: Story = {
   render: (args) => <VoiceMessageDemo {...args} />,
+}
+export const LightPhoneInDarkMaterial: Story = {
+  args: { contact: { name: 'Leo', status: 'online' } },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  tags: ['visual-review'],
 }
 export const NarrowContainer: Story = {
   render: (args) => (

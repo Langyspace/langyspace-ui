@@ -44,6 +44,16 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+export const InheritedIdentity: Story = {
+  args: {
+    name: 'Leo',
+    description: 'online',
+    initials: 'LE',
+    namePosition: 'beside',
+    textTone: 'inherit',
+  },
+  tags: ['visual-review'],
+}
 
 export const Sizes: Story = {
   tags: ['visual-review'],

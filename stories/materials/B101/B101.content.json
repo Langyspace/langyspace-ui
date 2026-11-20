@@ -76,8 +76,7 @@
       "why": {
         "0": "She’s gardening é agora, neste segundo. Ela parou, mas as mãos mostram o que ela fez até agora: She’s been gardening.",
         "2": "Falta o been: She has been gardening, ou She’s been gardening."
-      },
-      "now": "Your teacher says a number and asks. Answer: He’s been … · She’s been …"
+      }
     },
     {
       "pic": "v_sw",
@@ -89,8 +88,7 @@
       "why": {
         "0": "He’s going to swim = ele vai nadar (ainda não foi). O cabelo molhado mostra que ele já nadou: He’s been swimming.",
         "1": "Ele não está nadando agora. O cabelo mostra o que ele fez: He’s been swimming."
-      },
-      "now": "Now you choose a number. Ask your teacher: What has he been doing?"
+      }
     },
     {
       "kl": true,
@@ -107,29 +105,7 @@
       "why": {
         "1": "I’m working now = estou trabalhando agora, neste segundo. A Kim ia achar que ele está ocupado e não pode falar. Ele está livre; o que ele vem fazendo ultimamente é I’ve been working a lot.",
         "2": "Last year = o ano passado, que já acabou. A Kim perguntou de ultimamente: I’ve been working a lot."
-      },
-      "now": "Ask Leo one follow-up question about his work. Start with What or How long."
-    }
-  ],
-  "pronunciation": [
-    {
-      "t": "Running or been running?",
-      "c": [
-        ["She’s running", "“ela está correndo (agora)”"],
-        ["She’s been running", "“ela estava correndo (até agora há pouco)”"]
-      ],
-      "tip": "O been é curto, “bin”, e cola no she’s: “xizbin-râning”. Não diga “bín” nem “bein”."
-    },
-    {
-      "t": "Painted or been painting?",
-      "c": [
-        ["I’ve painted", "“eu pintei (terminei)”"],
-        [
-          "I’ve been painting",
-          "“eu venho pintando (o foco é a atividade; pode ou não estar pronto)”"
-        ]
-      ],
-      "tip": "Ouça o fim: “pêinted” termina em “-ted”; “pêinting” termina em “-in”, com o “bin” antes."
+      }
     }
   ],
   "dialogue": [
@@ -248,33 +224,35 @@
     {
       "s": "I’m running for two weeks.",
       "a": "I’ve been running for two weeks.",
-      "why": "“Estou correndo há duas semanas” vira have been + -ing, com for.",
-      "id": "X.1"
+      "why": "Use have been + -ing for an activity continuing over a period up to now.",
+      "id": "X.1",
+      "pre": "The activity started two weeks ago and is still continuing."
     },
     {
       "s": "She’s been touching the guitar all day.",
       "a": "She’s been playing the guitar all day.",
-      "why": "Tocar um instrumento é play: playing the guitar. Touch é encostar, pôr a mão; quem ouve imagina outra coisa.",
-      "id": "X.2"
+      "why": "For a musical instrument, use play. Touch means putting your hand on it.",
+      "id": "X.2",
+      "pre": "She is making music."
     },
     {
-      "pre": "há quanto tempo?",
+      "pre": "Ask about duration up to now.",
       "s": "How long are you studying English?",
       "a": "How long have you been studying English?",
-      "why": "Para “há quanto tempo”: How long have you been studying English? Use have + been + -ing.",
+      "why": "Ask How long have you been…? for an activity continuing up to now.",
       "id": "X.3"
     },
     {
       "s": "I’ve been baking three cakes this week.",
       "a": "I’ve baked three cakes this week.",
-      "why": "Para contar três bolos terminados: I’ve baked three cakes. O contínuo pode descrever o trabalho, mas não afirma que os três ficaram prontos.",
+      "why": "Report the finished amount with the simple form. The continuous describes the work, without saying all three cakes are ready.",
       "id": "X.4",
       "pre": "Three cakes are finished. Report the result."
     },
     {
       "s": "Leo and Carla have both been visiting places for three weeks.",
       "ok": true,
-      "why": "A atividade até agora, com o tempo: have been + -ing.",
+      "why": "Have been + -ing describes the repeated activity over the last three weeks.",
       "id": "X.5"
     }
   ],

@@ -1,67 +1,56 @@
-import { PromptExercise } from '../shared/LessonExercises'
+import { useState } from 'react'
 import { useVocabularyAudio } from '../shared/useVocabularyAudio'
 import { vocabularyRecordings } from './B101.vocabularyAudio'
-import type { VocabularySectionProps } from './B101.types'
-import { VocabularyControls } from '../shared/VocabularyControls'
-import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
-import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
-import { content, vocabulary, image, kim, leo } from './B101.data'
-import type { SpeechSectionProps } from './B101.types'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import {
+  content,
+  vocabulary,
+  image,
+  kim,
+  leo,
+  paintingScene,
+} from './B101.data'
+import type { SpeechSectionProps, VocabularySectionProps } from './B101.types'
 import * as S from './B101.styles'
-export function MiniVocabulary({ column = false }: { column?: boolean }) {
-  return (
-    <S.MiniGrid $column={column} aria-label="Vocabulary reference">
-      {vocabulary.map((v, i) => (
-        <S.MiniCard key={v.id}>
-          <img src={v.imageUrl} alt={v.imageAlt} />
-          <span>{i + 1}</span>
-        </S.MiniCard>
-      ))}
-    </S.MiniGrid>
-  )
-}
 export function VocabularySection({
   group = 0,
   active = true,
 }: VocabularySectionProps) {
   const audio = useVocabularyAudio(vocabularyRecordings, active)
-  const [ids, setIds] = useState<string[]>([]),
-    [all, setAll] = useState(false),
-    [initial, setInitial] = useState(false)
-  const items = vocabulary.slice(group * 4, group * 4 + 4)
+  const [ids, setIds] = useState<string[]>([])
+  const [all, setAll] = useState(false)
+  const [initial, setInitial] = useState(false)
   return (
-    <S.Stack>
-      <S.Vocabulary
-        items={items}
-        columns={2}
-        imageVariant="scene"
-        imageFit="contain"
-        density="regular"
-        revealOnHover={false}
-        revealVariant="tooltip"
-        revealedIds={ids}
-        showAll={all}
-        showInitial={initial}
-        onPlay={(id) => {
-          const item = vocabulary.find((x) => x.id === id)
-          if (item) audio.speak([{ id, text: item.word }])
-        }}
-        onReveal={(id) =>
-          setIds((old) => (old.includes(id) ? old : [...old, id]))
-        }
-      />
-      <VocabularyControls
-        showInitial={initial}
-        showAll={all}
-        onToggleInitial={() => setInitial(!initial)}
-        onToggleAll={() => setAll(!all)}
-      />
-    </S.Stack>
+    <VocabularyGrid
+      items={vocabulary.slice(group * 4, group * 4 + 4)}
+      columns={2}
+      imageVariant="scene"
+      imageFit="contain"
+      density="regular"
+      revealOnHover={false}
+      revealVariant="tooltip"
+      revealedIds={ids}
+      showAll={all}
+      showInitial={initial}
+      controls={{
+        showAll: all,
+        showInitial: initial,
+        onToggleInitial: () => setInitial(!initial),
+        onToggleAll: () => setAll(!all),
+      }}
+      onPlay={(id) => {
+        const item = vocabulary.find((x) => x.id === id)
+        if (item) audio.speak([{ id, text: item.word }])
+      }}
+      onReveal={(id) =>
+        setIds((old) => (old.includes(id) ? old : [...old, id]))
+      }
+    />
   )
 }
 export function WarmUpSection({
@@ -70,10 +59,10 @@ export function WarmUpSection({
   const w = content.warmUps[index] ?? content.warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(w.a)
-  const answer = w.o[w.a] ?? ''
   return (
     <ExercisePanel
       variant="warmup"
+      counter={`${index + 1}/3`}
       title={index === 2 ? w.ctx : undefined}
       media={
         w.kl ? (
@@ -91,173 +80,163 @@ export function WarmUpSection({
                 speaker: 'Leo',
                 avatarUrl: leo,
                 side: 'end',
-                content: done ? answer : '…',
+                content: done ? w.o[w.a] : '…',
               },
             ]}
           />
         ) : (
-          <S.WarmImage
+          <img
             src={image(index === 0 ? 'gardening' : 'swimming')}
             alt={vocabulary[index === 0 ? 2 : 1]?.imageAlt ?? ''}
           />
         )
       }
     >
-      <S.Stack>
-        {
-          <S.Stack>
-            {w.o.map((option, i) => (
-              <QuizOption
-                key={option}
-                letter={String.fromCharCode(65 + i)}
-                feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
-                density="compact"
-                state={
-                  attempts.includes(i)
-                    ? i === w.a
-                      ? 'correct'
-                      : 'wrong'
-                    : done
-                      ? 'dim'
-                      : 'default'
-                }
-                disabled={done}
-                onClick={() => {
-                  setAttempts((old) => [...old, i])
-                }}
-              >
-                {option}
-              </QuizOption>
-            ))}
-          </S.Stack>
-        }
-        <PromptExercise
-          numbered={false}
-          items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
-        />
-      </S.Stack>
+      {w.o.map((option, i) => (
+        <QuizOption
+          key={option}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === w.a
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          disabled={done}
+          onClick={() => setAttempts((old) => [...old, i])}
+        >
+          {option}
+        </QuizOption>
+      ))}
     </ExercisePanel>
   )
 }
-export function PronunciationSection({
-  index,
-  speech,
-}: SpeechSectionProps & { index: number }) {
-  const pair = content.pronunciation[index] ?? content.pronunciation[0]!
-  const [target, setTarget] = useState<number>(),
-    [selected, setSelected] = useState<string>(),
-    [feedback, setFeedback] = useState<'correct' | 'incorrect'>()
-
+const scenarios = [
+  {
+    image: image('bike'),
+    alt: 'A cyclist wearing a helmet beside a bicycle.',
+    context: '“I’ve been cycling to work for a month.”',
+    options: [
+      'What made you decide to cycle to work?',
+      'How long have you been cycling to work?',
+      'Are you cycling right now?',
+    ],
+    answer: 0,
+    support: 'Ask for a reason. The speaker already told you how long.',
+  },
+  {
+    image: paintingScene,
+    alt: 'Ana with a paint roller, talking to Kim in a blue living room.',
+    context: 'The living room and kitchen are finished. The bedroom is next.',
+    options: [
+      'I’ve been painting all week.',
+      'I’ve painted two rooms.',
+      'I’m going to paint two rooms.',
+    ],
+    answer: 1,
+    support:
+      'Two completed rooms: the simple form reports the finished amount.',
+  },
+]
+export function ContextPracticeSection({ index }: { index: number }) {
+  const scenario = scenarios[index] ?? scenarios[0]!
+  const [attempts, setAttempts] = useState<number[]>([])
+  const done = attempts.includes(scenario.answer)
   return (
-    <MinimalPairExercise
-      mode="listen"
-      choices={pair.c.map(([word, phonetic], i) => ({
-        id: String(i),
-        word,
-        phonetic: feedback ? phonetic : undefined,
-        feedbackOutcome:
-          target === undefined
-            ? undefined
-            : i === target
-              ? ('correct' as const)
-              : ('wrong' as const),
-      }))}
-      onListen={() => {
-        const next = Math.random() < 0.5 ? 0 : 1
-        setTarget(next)
-        setSelected(undefined)
-        setFeedback(undefined)
-        speech.speak([
-          { id: `P.${index}.${next}`, text: pair.c[next]?.[0] ?? '' },
-        ])
-      }}
-      selectedId={selected}
-      feedback={feedback}
-      hint={feedback === 'incorrect' ? pair.tip : undefined}
-      onSelect={(id) => {
-        if (target === undefined) {
-          speech.speak([
-            { id: `P.${index}.${id}`, text: pair.c[Number(id)]?.[0] ?? '' },
-          ])
-          return
-        }
-        const result: 'correct' | 'incorrect' =
-          Number(id) === target ? 'correct' : 'incorrect'
-        setSelected(id)
-        setFeedback(result)
-        setTarget(undefined)
-      }}
-    />
+    <ExercisePanel media={<img src={scenario.image} alt={scenario.alt} />}>
+      <Common.Heading $prompt>{scenario.context}</Common.Heading>
+      {scenario.options.map((option, i) => (
+        <QuizOption
+          key={option}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          feedbackOutcome={i === scenario.answer ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === scenario.answer
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          disabled={done}
+          onClick={() => setAttempts((old) => [...old, i])}
+        >
+          {option}
+        </QuizOption>
+      ))}
+    </ExercisePanel>
   )
 }
 export function CorrectionSection() {
-  const [done, setDone] = useState<string[]>([]),
-    [bad, setBad] = useState<Record<string, string>>({}),
-    [own, setOwn] = useState(false)
+  const [index, setIndex] = useState(0)
+  const [attempts, setAttempts] = useState<Record<string, string[]>>({})
+  const row = content.corrections[index]!
+  const answer = row.ok ? 'Right' : 'Wrong'
+  const chosen = attempts[row.id] ?? []
+  const done = chosen.includes(answer)
   return (
-    <S.Questions>
-      {content.corrections.map((row, i) => {
-        const correct = done.includes(row.id)
-        return (
-          <S.Correction key={row.id}>
-            <S.Number>{correct ? '✓' : i + 1}</S.Number>
-            <div>
-              {row.pre ? <S.Hint>({row.pre})</S.Hint> : null}
-              {correct && row.a ? (
-                <>
-                  <s>{row.s}</s>
-                  <br />
-                  {row.a}
-                </>
-              ) : (
-                row.s
-              )}
-            </div>
-            {correct ? (
-              <>
-                <small>{row.why}</small>
-              </>
-            ) : (
-              <S.Row>
-                {['Right', 'Wrong'].map((value) => (
-                  <Button
-                    key={value}
-                    variant="secondary"
-                    size="sm"
-                    aria-pressed={bad[row.id] === value}
-                    onClick={() => {
-                      if ((value === 'Right') === Boolean(row.ok)) {
-                        setDone((old) => [...old, row.id])
-                      } else setBad((old) => ({ ...old, [row.id]: value }))
-                    }}
-                  >
-                    {value}
-                  </Button>
-                ))}
-              </S.Row>
-            )}
-            {!correct && bad[row.id] ? (
-              <QuizFeedback tone="wrong">Try again.</QuizFeedback>
-            ) : null}
-          </S.Correction>
-        )
-      })}
-      <S.Correction>
-        <S.Number>{own ? '✓' : 6}</S.Number>
-        <div>
-          One from today
-          <S.Hint>Your teacher says one of your sentences from today.</S.Hint>
-        </div>
+    <ExercisePanel
+      counter={`${index + 1}/${content.corrections.length}`}
+      title={row.pre ?? 'Check the sentence.'}
+    >
+      <Common.Surface>
+        <Common.Heading $prompt>{row.s}</Common.Heading>
+      </Common.Surface>
+      {['Right', 'Wrong'].map((label, i) => (
+        <QuizOption
+          key={label}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          feedbackOutcome={label === answer ? 'correct' : 'wrong'}
+          disabled={done}
+          state={
+            chosen.includes(label)
+              ? label === answer
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          onClick={() =>
+            setAttempts((old) => ({ ...old, [row.id]: [...chosen, label] }))
+          }
+        >
+          {label}
+        </QuizOption>
+      ))}
+      {done ? (
+        <Common.Surface>
+          {row.a ? <strong>{row.a}</strong> : null}
+          <Common.Hint>{row.why}</Common.Hint>
+        </Common.Surface>
+      ) : null}
+      <Common.Row>
         <Button
           variant="secondary"
           size="sm"
-          aria-pressed={own}
-          onClick={() => setOwn(!own)}
+          disabled={index === 0}
+          onClick={() => setIndex(index - 1)}
         >
-          {own ? 'Done' : 'Fixed'}
+          Previous
         </Button>
-      </S.Correction>
-    </S.Questions>
+        <Button
+          variant="secondary"
+          size="sm"
+          disabled={index === content.corrections.length - 1}
+          onClick={() => setIndex(index + 1)}
+        >
+          Next
+        </Button>
+      </Common.Row>
+    </ExercisePanel>
   )
 }
 export function SourceQuestions({

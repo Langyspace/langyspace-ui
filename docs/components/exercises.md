@@ -89,3 +89,5 @@ See `ReviewedVocabulary` and `Materials/B2.01` for the new twelve-page lesson co
 `ExercisePanel variant="monitor"` reuses the workstation hardware frame with arbitrary children. `monitorLayout="flow"` is the default; `form` opts into the compact two-column field layout. `workstationMeta.clock` and `.date` share one line in the top bar. Omitting `.appLabel` omits the bottom taskbar and its decorative icon. `variant="workstation"` retains the contextual image and form grid. No simulated save, clock service or operating-system actions are bundled.
 
 See Exercise/Components stories `ProgressiveHint`, `ProgressiveAnswer`, `MonitorContent` and `MonitorForm`; final visual review belongs to the consumer.
+
+B1.01 composes the existing ExercisePanel and QuizOption as a five-item Right/Wrong sequence with one active sentence, retained attempts and short inline correction. No second evaluator, sound engine or lesson-specific choice CSS is introduced. Its warm-ups use the existing media counter and VocabularyGrid uses its canonical scene/label layout without consumer overrides.

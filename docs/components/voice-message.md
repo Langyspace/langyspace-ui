@@ -57,3 +57,7 @@ the existing transcript unlocks. Pausing or buffering does not enable it. The co
 the prompt is appropriate, such as after all four listening statements have been answered.
 
 Native playback pauses when the document becomes hidden. Returning does not autoplay or count a new listening pass.
+
+## Identity on a device surface
+
+The contact header owns its foreground through the voiceMessage recipe. Its canonical named Avatar uses `textTone="inherit"` for name and status so an external dark lesson does not turn the contact name white on a light phone header. Other Avatar consumers retain the existing theme-based default. B1.01 keeps the native phone player and automatic third-listen transcript, uses a responsive larger presentation layout, and removes the unrelated footer task.

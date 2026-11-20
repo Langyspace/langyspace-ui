@@ -5,5 +5,6 @@ export interface KeyValueListProps extends Omit<
   'children'
 > {
   tone?: 'default' | 'material'
+  density?: 'regular' | 'compact'
   items: readonly { id: string; label: ReactNode; value: ReactNode }[]
 }

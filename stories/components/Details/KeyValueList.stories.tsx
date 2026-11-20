@@ -15,6 +15,24 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+export const CompactFacts: Story = {
+  args: {
+    tone: 'material',
+    density: 'compact',
+    items: [
+      { id: 'activity', label: 'Activity', value: 'playing soccer' },
+      { id: 'duration', label: 'How long', value: 'an hour' },
+      { id: 'partner', label: 'With whom', value: 'my friends' },
+    ],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+}
 
 export const MaterialContact: Story = {
   args: {

@@ -70,6 +70,7 @@ export const Contact = styled.div`
   gap: ${theme.spacing[2]};
   padding: ${theme.voiceMessage.conversationInset};
   background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
   border-bottom: 1px solid ${(p) => recipe(p).border};
 `
 export const Conversation = styled.div`

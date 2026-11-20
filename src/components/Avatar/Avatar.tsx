@@ -9,6 +9,7 @@ export function Avatar({
   name,
   namePosition = 'below',
   description,
+  textTone = 'theme',
   initials,
   size = 'md',
   tone = 'neutral',
@@ -48,9 +49,13 @@ export function Avatar({
     >
       {portrait}
       <Styled.IdentityText $position={namePosition}>
-        <Styled.Name $tone={tone}>{name}</Styled.Name>
+        <Styled.Name $tone={tone} $inherit={textTone === 'inherit'}>
+          {name}
+        </Styled.Name>
         {description ? (
-          <Styled.Description>{description}</Styled.Description>
+          <Styled.Description $inherit={textTone === 'inherit'}>
+            {description}
+          </Styled.Description>
         ) : null}
       </Styled.IdentityText>
     </Styled.Identity>

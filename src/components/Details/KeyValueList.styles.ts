@@ -5,18 +5,18 @@ import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-key-value-list',
-})`
+})<{ $compact?: boolean }>`
   display: grid;
-  gap: 12px;
+  gap: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])};
 `
 
-export const Row = styled.div<{ $material?: boolean }>`
+export const Row = styled.div<{ $material?: boolean; $compact?: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 44px;
+  min-height: ${(p) => (p.$compact ? theme.spacing[8] : '44px')};
   gap: 16px;
-  padding-bottom: 12px;
+  padding-bottom: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])};
   border-bottom: 1px solid
     ${(p) => (p.$material ? resolveSlideTheme(p).border : alpha(theme.colors.palette.extended.ink, 0.08))};
   &:last-child {
@@ -36,8 +36,8 @@ export const Label = styled.span.withConfig({
 
 export const Value = styled.strong.withConfig({
   componentId: 'lsui-sc-key-value-value',
-})<{ $material?: boolean }>`
+})<{ $material?: boolean; $compact?: boolean }>`
   flex-shrink: 0;
   color: ${(p) => (p.$material ? resolveSlideTheme(p).foreground : 'inherit')};
-  font-size: 20px;
+  font-size: ${(p) => (p.$compact ? theme.typography.fontSize.md : theme.typography.fontSize.xl)};
 `

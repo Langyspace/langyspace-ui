@@ -12,7 +12,7 @@ import { order, dialogue } from './B101.data'
 import {
   VocabularySection,
   WarmUpSection,
-  PronunciationSection,
+  ContextPracticeSection,
   CorrectionSection,
   SourceQuestions,
 } from './B101.practice'
@@ -170,22 +170,27 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's51' || id === 's52')
       return {
         id,
-        label: `Pronunciation · ${id === 's51' ? 'Running or been running?' : 'Painted or been painting?'}`,
+        label:
+          id === 's51'
+            ? 'Conversation · Keep the conversation going'
+            : 'Practice · What have you finished?',
         content: (
           <S.Page
+            density="dense"
             width="reading"
-            eyebrow="Pronunciation"
+            eyebrow={id === 's51' ? 'Conversation' : 'Practice'}
             title={
               id === 's51'
-                ? 'Running or been running?'
-                : 'Painted or been painting?'
+                ? 'Keep the conversation going'
+                : 'What have you finished?'
             }
-            instruction="Listen, choose the sentence you hear, then repeat it."
+            instruction={
+              id === 's51'
+                ? 'Choose the question that asks for new information.'
+                : 'Choose the update that tells Kim the finished result.'
+            }
           >
-            <PronunciationSection
-              index={id === 's51' ? 0 : 1}
-              speech={speech}
-            />
+            <ContextPracticeSection index={id === 's51' ? 0 : 1} />
           </S.Page>
         ),
       }
@@ -226,7 +231,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
             density="dense"
             eyebrow="Grammar"
             title="Been doing or done?"
-            instruction="Compare the activity, its duration and the finished result."
+            instruction="One situation. Two ways to talk about it."
           >
             <GrammarSection />
           </S.Page>
@@ -286,7 +291,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
             density="dense"
             eyebrow="Role play"
             title="What has Kim been doing?"
-            instruction="Ask and guess. Then answer Kim’s questions about your life."
+            instruction="Choose a day. Ask Kim three questions; your teacher answers from the card."
           >
             <RolePlaySection />
           </S.Page>
@@ -310,6 +315,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
   return (
     <S.Stage ref={stage}>
       <SlideDeck
+        feedbackSounds
         tabIndex={-1}
         label="B1.01 · What have you been doing?"
         previousPageLabel="Back"
