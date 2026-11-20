@@ -19,8 +19,6 @@ const POINTER_NATIVE_SELECTOR =
 
 // Same-burst browser gaps measured 44–83ms; isolated detents were at least 200ms apart.
 const WHEEL_GESTURE_IDLE_MS = 160
-// Group duplicate packets briefly without requiring a pause to advance again.
-const WHEEL_PAGE_GUARD_MS = 400
 // Preserve 2–4px tap jitter. Real scroll starts delivered their last cancelable
 // move as early as 4.63px; waiting for 5/16px handed control to native snap.
 const TOUCH_TAP_TOLERANCE_PX = 4
@@ -78,12 +76,15 @@ export function useSlideGestures({
     if (!viewport || navigationMode === 'continuous') return
     let wheelTime = -Infinity
     let wheelVertical = false
-    let wheelBlockedUntil = -Infinity
-    let wheelContentTime = -Infinity
+    let wheelConsumed = false
+    let wheelAdvanced = false
+    let wheelPeak = 0
+    let wheelPrevious = 0
+    let wheelTrough = Infinity
+    let wheelDecayPackets = 0
+    let wheelRisePackets = 0
+    let wheelDecaying = false
     let wheelDirection: 1 | -1 | undefined
-    let pendingWheelDelta = 0
-    let pendingWheelRevision: number | undefined
-    let wheelSettle: ReturnType<typeof setTimeout> | undefined
     let touch: SlideTouchGesture | undefined
 
     const nativeTarget = (
@@ -116,35 +117,50 @@ export function useSlideGestures({
       })
       return true
     }
+    const resetWheelImpulse = (magnitude = 0) => {
+      wheelConsumed = false
+      wheelAdvanced = false
+      wheelPeak = magnitude
+      wheelPrevious = magnitude
+      wheelTrough = Infinity
+      wheelDecayPackets = 0
+      wheelRisePackets = 0
+      wheelDecaying = false
+    }
+    const observeWheelImpulse = (magnitude: number) => {
+      wheelPeak = Math.max(wheelPeak, magnitude)
+      if (!wheelDecaying) {
+        if (magnitude < wheelPrevious - 0.5 && magnitude <= wheelPeak * 0.7)
+          wheelDecayPackets++
+        else if (magnitude >= wheelPrevious) wheelDecayPackets = 0
+        if (wheelDecayPackets >= 2) {
+          wheelDecaying = true
+          wheelTrough = magnitude
+        }
+      } else {
+        wheelTrough = Math.min(wheelTrough, magnitude)
+        wheelRisePackets =
+          magnitude > wheelPrevious + 0.5 ? wheelRisePackets + 1 : 0
+        // A new push accelerates after decay. A lone late momentum spike does not.
+        if (
+          wheelRisePackets >= 2 &&
+          magnitude - wheelTrough >= 6 &&
+          magnitude >= wheelTrough * 1.5
+        )
+          resetWheelImpulse(magnitude)
+      }
+      wheelPrevious = magnitude
+    }
     const applyWheel = (delta: number) => {
-      const now = performance.now()
-      if (now < wheelBlockedUntil) return
       if (scrollContent(delta)) {
-        wheelContentTime = now
+        wheelConsumed = true
         return
       }
-      // Protect a tall page's edge briefly, then allow continuous scrolling out.
-      if (now - wheelContentTime < WHEEL_PAGE_GUARD_MS) return
-      wheelBlockedUntil = now + WHEEL_PAGE_GUARD_MS
-      onStep(delta > 0 ? 1 : -1)
-    }
-    const discardStaleWheel = () => {
-      if (pendingWheelRevision !== movementRevisionRef.current)
-        pendingWheelDelta = 0
-    }
-    const settleWheel = () => {
-      if (!pendingWheelDelta) return
-      clearTimeout(wheelSettle)
-      // Read the page observation after this scroll event's other listeners.
-      // This schedules a read after the current page transition settles.
-      wheelSettle = setTimeout(() => {
-        // A newer control, keyboard or geometry request owns the destination.
-        discardStaleWheel()
-        if (moving()) return
-        const delta = pendingWheelDelta
-        pendingWheelDelta = 0
-        if (delta) applyWheel(delta)
-      }, 0)
+      // The impulse that finished a tall page cannot also leave that page.
+      if (!wheelConsumed) {
+        wheelAdvanced = true
+        onStep(delta > 0 ? 1 : -1)
+      }
     }
     const onWheel = (event: WheelEvent) => {
       if (
@@ -158,7 +174,7 @@ export function useSlideGestures({
       if (event.deltaX === 0 && event.deltaY === 0) return
       if (event.timeStamp - wheelTime > WHEEL_GESTURE_IDLE_MS) {
         wheelVertical = false
-        wheelContentTime = -Infinity
+        resetWheelImpulse()
       }
       wheelTime = event.timeStamp
       if (!wheelVertical) {
@@ -176,16 +192,13 @@ export function useSlideGestures({
       const direction = event.deltaY > 0 ? 1 : -1
       if (wheelDirection && direction !== wheelDirection) {
         // A reversal is fresh intent, including during a smooth page transition.
-        wheelBlockedUntil = -Infinity
-        wheelContentTime = -Infinity
-        pendingWheelDelta = 0
+        resetWheelImpulse()
         if (moving()) {
           viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' })
           movementTargetRef.current = undefined
         }
       }
       wheelDirection = direction
-      if (performance.now() < wheelBlockedUntil) return
       const style = getComputedStyle(viewport)
       const unit =
         event.deltaMode === 2
@@ -193,20 +206,13 @@ export function useSlideGestures({
           : event.deltaMode === 1
             ? parseFloat(style.lineHeight) || parseFloat(style.fontSize) || 16
             : 1
-      discardStaleWheel()
-      const delta = pendingWheelDelta + event.deltaY * unit
-      if (moving()) {
-        // After the short guard, retain continued input until the destination settles.
-        pendingWheelDelta = delta
-        pendingWheelRevision = movementRevisionRef.current
-        settleWheel()
-        return
-      }
-      pendingWheelDelta = 0
+      const delta = event.deltaY * unit
+      observeWheelImpulse(Math.abs(delta))
+      if (wheelAdvanced || moving()) return
+      // Navigation only happens on a live wheel packet, never on scroll-end/timers.
       applyWheel(delta)
     }
     const onTouchStart = (event: TouchEvent) => {
-      pendingWheelDelta = 0
       const point = event.touches[0]
       touch =
         !event.defaultPrevented && event.touches.length === 1 && point
@@ -262,15 +268,12 @@ export function useSlideGestures({
     const onTouchCancel = () => {
       touch = undefined
     }
-    viewport.addEventListener('scroll', settleWheel, { passive: true })
     viewport.addEventListener('wheel', onWheel, { passive: false })
     viewport.addEventListener('touchstart', onTouchStart, { passive: true })
     viewport.addEventListener('touchmove', onTouchMove, { passive: false })
     viewport.addEventListener('touchend', onTouchEnd)
     viewport.addEventListener('touchcancel', onTouchCancel)
     return () => {
-      clearTimeout(wheelSettle)
-      viewport.removeEventListener('scroll', settleWheel)
       viewport.removeEventListener('wheel', onWheel)
       viewport.removeEventListener('touchstart', onTouchStart)
       viewport.removeEventListener('touchmove', onTouchMove)
