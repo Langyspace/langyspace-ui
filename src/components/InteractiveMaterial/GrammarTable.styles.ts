@@ -31,15 +31,15 @@ export const Table = styled.table<{
     font: 700 12px ${theme.slides.displayFontFamily};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--grammar-ink);
-    background: var(--grammar-surface);
+    color: ${(p) => Common.recipe(p).muted};
+    background: ${(p) => Common.recipe(p).surface};
   }
   th {
     font: 700 12px ${theme.typography.fontFamily.sans};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--grammar-ink);
-    background: var(--grammar-surface);
+    color: ${(p) => Common.recipe(p).muted};
+    background: ${(p) => Common.recipe(p).surface};
   }
   th,
   td {
