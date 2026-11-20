@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react'
 import { CharacterDialogue } from '../shared/CharacterPortraits.styles'
+import { ana, kim, leo, raj } from '../shared/characterPortraits'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -16,6 +17,12 @@ const emphasize = (text: string) =>
     .map((part, index) =>
       index % 2 ? <S.Emphasis key={index}>{part}</S.Emphasis> : part,
     )
+const portraits: Record<string, string> = {
+  Anna: ana,
+  Emma: kim,
+  Ben: leo,
+  Lucas: raj,
+}
 
 export function DialogueSection({
   lines,
@@ -32,6 +39,7 @@ export function DialogueSection({
       lines={lines.map((line) => ({
         id: line.id,
         speaker: line.speaker,
+        avatarUrl: portraits[line.speaker],
         side: speakers.indexOf(line.speaker) % 2 ? 'end' : 'start',
         translation: line.translation,
         audioLabel: `Listen to ${line.speaker}'s line`,
