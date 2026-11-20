@@ -82,9 +82,9 @@
     },
     {
       "id": "s3",
-      "kind": "words",
+      "kind": "calendar",
       "title": "Days of the week",
-      "instruction": "How do you say these days in English?",
+      "instruction": "Click a day and listen. Say the days in order.",
       "minutes": 3,
       "eyebrow": "Vocabulary",
       "items": [
@@ -134,41 +134,32 @@
     },
     {
       "id": "s31",
-      "kind": "words",
+      "kind": "vocabulary",
       "title": "Times of day",
-      "instruction": "Say the words, then click to check.",
+      "instruction": "Look at Ana’s day. Click a scene and listen.",
       "minutes": 3,
       "eyebrow": "Vocabulary",
       "items": [
         {
           "id": "T.morning",
-          "clue": "manhã",
           "word": "morning",
-          "example": "in the morning"
+          "translation": "manhã",
+          "imageUrl": "scene-morning42",
+          "imageAlt": "Ana having breakfast in a bright kitchen."
+        },
+        {
+          "id": "T.afternoon",
+          "word": "afternoon",
+          "translation": "tarde",
+          "imageUrl": "scene-afternoon42",
+          "imageAlt": "Ana working at a desk with daylight through the window."
         },
         {
           "id": "T.evening",
-          "clue": "noite",
           "word": "evening",
-          "example": "in the evening"
-        },
-        {
-          "id": "T.ten",
-          "clue": "10",
-          "word": "ten",
-          "example": "at ten"
-        },
-        {
-          "id": "T.eleven",
-          "clue": "11",
-          "word": "eleven",
-          "example": "at eleven"
-        },
-        {
-          "id": "T.twelve",
-          "clue": "12",
-          "word": "twelve",
-          "example": "at twelve"
+          "translation": "início da noite",
+          "imageUrl": "scene-evening42",
+          "imageAlt": "Ana relaxing at home as the sky outside turns violet."
         }
       ]
     },

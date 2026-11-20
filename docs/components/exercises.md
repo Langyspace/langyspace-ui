@@ -81,3 +81,11 @@ review metadata. All three contracts are opt-in; existing reveals and captions k
 See `ReviewedVocabulary` and `Materials/B2.01` for the new twelve-page lesson composition.
 
 `imageFit="contain"` preserves a whole scene inside its existing card. Omit it to retain the previous framing.
+
+## Progressive guidance and reusable monitor
+
+`RevealCard.guidance` is opt-in controlled support with levels `cue`, `hint` and `full`. One button cycles Hint → Answer → Hide beneath the prompt. The consumer supplies the hint, answer, labels and state; `answerMinLines` keeps space for both support states without clipping longer text. Changing the selected record should reset guidance to `cue`. Existing card and click-to-reveal prompt behavior remains unchanged.
+
+`ExercisePanel variant="monitor"` reuses the workstation hardware frame with arbitrary children. `monitorLayout="flow"` is the default; `form` opts into the compact two-column field layout. `workstationMeta.clock` and `.date` share one line in the top bar. Omitting `.appLabel` omits the bottom taskbar and its decorative icon. `variant="workstation"` retains the contextual image and form grid. No simulated save, clock service or operating-system actions are bundled.
+
+See Exercise/Components stories `ProgressiveHint`, `ProgressiveAnswer`, `MonitorContent` and `MonitorForm`; final visual review belongs to the consumer.

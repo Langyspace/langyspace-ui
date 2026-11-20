@@ -8,6 +8,9 @@ import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import type { RevealGuidanceLevel } from '../../../src/components/Exercise/RevealCard.types'
+import { FieldRoot } from '../../../src/components/Form/FieldRoot'
+import { TextInput } from '../../../src/components/Form/TextInput'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
 import { feelings, image } from '../../materials/A101/A101.data'
 import * as Styled from './ExerciseComponents.stories.styles'
@@ -95,6 +98,76 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = {}
+function ProgressiveSupport({
+  initial = 'cue',
+}: {
+  initial?: RevealGuidanceLevel
+}) {
+  const [level, setLevel] = useState(initial)
+  return (
+    <Styled.Preview>
+      <RevealCard
+        presentation="prompt"
+        revealed={level === 'full'}
+        answer="This is Bia, my sister. She’s a cook from Recife."
+        answerMinLines={3}
+        guidance={{
+          level,
+          hint: 'Start with “This is my sister…”. Add her job or city.',
+          onChange: setLevel,
+        }}
+      >
+        Introduce them. Add a job or a city.
+      </RevealCard>
+    </Styled.Preview>
+  )
+}
+export const ProgressiveGuidance: Story = {
+  render: () => <ProgressiveSupport />,
+}
+export const ProgressiveHint: Story = {
+  render: () => <ProgressiveSupport initial="hint" />,
+}
+export const ProgressiveAnswer: Story = {
+  render: () => <ProgressiveSupport initial="full" />,
+}
+export const MonitorContent: Story = {
+  render: () => (
+    <Styled.Preview>
+      <ExercisePanel
+        variant="monitor"
+        title="Contact card"
+        workstationMeta={{ clock: '09:41', date: '20 Nov' }}
+      >
+        <h3>Ana Souza</h3>
+        <p>First name: Ana</p>
+        <p>Last name: Souza</p>
+      </ExercisePanel>
+    </Styled.Preview>
+  ),
+}
+export const MonitorForm: Story = {
+  render: () => (
+    <Styled.Preview>
+      <ExercisePanel
+        variant="monitor"
+        monitorLayout="form"
+        title="New student"
+        workstationMeta={{ clock: '09:41', date: '20 Nov' }}
+      >
+        <FieldRoot label="First name">
+          <TextInput defaultValue="Ana" />
+        </FieldRoot>
+        <FieldRoot label="Last name">
+          <TextInput defaultValue="Souza" />
+        </FieldRoot>
+        <FieldRoot label="Phone number">
+          <TextInput type="tel" autoComplete="off" />
+        </FieldRoot>
+      </ExercisePanel>
+    </Styled.Preview>
+  ),
+}
 export const NarrowLongContent: Story = {
   render: () => (
     <Styled.Narrow>

@@ -34,7 +34,7 @@ export type ReviewedPage = PageBase &
         isolated?: boolean
       }
     | {
-        kind: 'words'
+        kind: 'words' | 'calendar'
         items: readonly {
           id: string
           clue: string
@@ -81,6 +81,7 @@ export type ReviewedPage = PageBase &
           facts: readonly { label: string; value: string }[]
           introduction: string
           detail: string
+          hint: string
         }[]
       }
     | {

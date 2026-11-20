@@ -100,8 +100,9 @@
   Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
   Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
   Guided dialogue and comprehension share SlidePage’s two-column questions slot; names remain visible in compact dialogue.
-  New or replanned guided dialogues have at least six meaningful turns; isolated vocabulary objects
+  New or replanned full guided dialogues and role-play models have at least six meaningful turns; isolated vocabulary objects
   use transparent assets. Do not expand unrelated lessons or start extra QA/automation from this rule.
+  Grammar explanation pages contain meaning, form and examples only; put quizzes and evaluated practice on separate pages.
 
 - Reviewed UI Library components take precedence over historical Claude Design implementations.
   Reuse them first; add semantic variations to their canonical owners before consuming them.

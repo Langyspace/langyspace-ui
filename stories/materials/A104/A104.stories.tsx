@@ -19,7 +19,14 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const Vocabulary: Story = { args: { initialPageId: 's2' } }
-export const DaysAndTimes: Story = { args: { initialPageId: 's3' } }
+export const DaysAndTimes: Story = {
+  args: { initialPageId: 's3' },
+  tags: ['visual-review'],
+}
+export const TimesOfDay: Story = {
+  args: { initialPageId: 's31' },
+  tags: ['visual-review'],
+}
 export const WarmUp: Story = { args: { initialPageId: 's41' } }
 export const Pronunciation: Story = { args: { initialPageId: 's51' } }
 export const Dialogue: Story = { args: { initialPageId: 's6' } }

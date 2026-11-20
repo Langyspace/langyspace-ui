@@ -45,3 +45,7 @@ Calendário composto com semana, mês e agenda compacta para telas estreitas. A 
 Contrato: view, days, events, slots, navigation e onOpenEvent; onSlotClick/onSlotSelection e timeRange quando há seleção de horários. Datas e IDs já vêm preparados pelo produto.
 
 Cuidados: o produto mantém fuso, disponibilidade, regras de duração, consultas e persistência. A UI mantém expansão, foco e seleção por ponteiro/teclado. A agenda compacta usa os mesmos dados. Preserve eventos sobre o comando do dia, datas fora do mês, slot indisponível e seleção em intervalos de meia hora. O novo contrato entrou da entrega paralela de calendário já adotada no staging do Teacher; não substituir por cópias antigas ao atualizar a dependência.
+
+## Consulta de dias em materiais
+
+`CalendarMonthGrid density="compact"` ocupa a largura disponível com sete colunas; em contêiner estreito, usa duas colunas sem impor a largura mínima do calendário operacional. O padrão `regular` permanece inalterado. `CalendarDay presentation="vocabulary"` usa as cores do material, nome do dia como botão e `selected` exposto por aria-pressed. O consumidor fornece a ação de áudio em onOpen; a UI não sintetiza nem avalia a resposta. A104 usa os sete nomes e um exemplo curto com on, sem datas fictícias ou números adicionais.

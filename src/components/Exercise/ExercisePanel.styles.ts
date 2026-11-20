@@ -177,6 +177,10 @@ export const Desktop = styled.div`
   display: grid;
   justify-items: center;
 `
+export const MonitorPanel = styled.section`
+  min-width: 0;
+  color: ${(p) => recipe(p).foreground};
+`
 export const Screen = styled.div`
   width: 100%;
   min-width: 0;
@@ -225,9 +229,9 @@ export const ScreenHeader = styled.h3`
   line-height: 1.3;
   color: inherit;
 `
-export const ScreenBody = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+export const ScreenBody = styled.div<{ $form: boolean }>`
+  display: ${(p) => (p.$form ? 'grid' : 'block')};
+  grid-template-columns: ${(p) => (p.$form ? 'repeat(2, minmax(0, 1fr))' : undefined)};
   align-content: center;
   flex: 1 0 auto;
   min-width: 0;
@@ -257,13 +261,16 @@ export const Taskbar = styled.div`
   }
 `
 export const DesktopClock = styled.div`
-  display: grid;
+  display: flex;
   flex-shrink: 0;
-  gap: ${theme.spacing[1]};
+  gap: ${theme.spacing[2]};
   margin-left: auto;
   text-align: right;
   line-height: 1.1;
   font-variant-numeric: tabular-nums;
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize['2xs']};
+  white-space: nowrap;
 `
 export const DesktopMenu = styled.span`
   display: grid;

@@ -2010,6 +2010,58 @@
       "durationMethod": "ffprobe format duration obtained during generation metadata flow",
       "baselineFile": "assets/audio/L.1.mp3",
       "retainedFromManifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/A104/manifest.json"
+    },
+    {
+      "id": "T.afternoon",
+      "material": "A104",
+      "text": "afternoon",
+      "synthesisInput": "afternoon",
+      "speaker": "Ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "text": "afternoon",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "file": "assets/audio/T.afternoon.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega42-audio-20261120/A104/assets/audio/T.afternoon.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "durationSeconds": 0.928798,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 15925,
+      "sha256": "a8ceb3b19080dc68aa39569ba2d64c816228e4a45699d6555d9e7ff11f4b9d1a",
+      "requestId": "ZCgkN0LQzb9OviveN3gr",
+      "providerHeaders": {
+        "request-id": "ZCgkN0LQzb9OviveN3gr",
+        "character-cost": "4",
+        "history-item-id": "K5JqwCSEbNMl4sd1bijB"
+      },
+      "httpStatus": 200,
+      "generatedAt": "2026-11-20T15:56:18.183661+00:00",
+      "durationMethod": "ffprobe metadata from generationflow"
     }
   ],
   "dialogueSequence": ["D.1", "D.2", "D.3", "D.4", "D.5", "D.6"],
@@ -2019,5 +2071,11 @@
   "baselineManifestSha256": "427685fa94f4747fe0b5621e25e81ff23624778ec48bd87985c6ce935d35afbc",
   "deltaManifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/A104-vocab-delta/manifest.json",
   "deltaManifestSha256": "21730724da2338fbcb9b79bb00a52d23fe268c62ff2095f98070e089ceb00a02",
-  "scope": "Complete31binding reference;30oldassets referenced by absolute path;ZIPcontains1newMP3 only. Oldgymrecording remains historical,unchanged. Other84Entrega34IDsunchanged."
+  "scope": "Complete31binding reference;30oldassets referenced by absolute path;ZIPcontains1newMP3 only. Oldgymrecording remains historical,unchanged. Other84Entrega34IDsunchanged.",
+  "appliedFeedback42": {
+    "revision": "FINAL42",
+    "deltaManifest": "docs/epics/material-refinements42/A104-audio-delta.json",
+    "preserveOtherItems": true,
+    "perceptualReview": "pending human"
+  }
 }

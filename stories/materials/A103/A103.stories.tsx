@@ -31,7 +31,10 @@ export const Listening: Story = {
   args: { initialPageId: 's10', learnerName: 'Carla' },
   tags: ['visual-review'],
 }
-export const RolePlay: Story = { args: { initialPageId: 's12' } }
+export const RolePlay: Story = {
+  args: { initialPageId: 's12' },
+  tags: ['visual-review'],
+}
 
 export const GuidedGaps: Story = {
   args: { initialPageId: 's72' },

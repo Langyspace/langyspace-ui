@@ -438,8 +438,8 @@
       ],
       "greeting": "Hi! Look at this photo.",
       "image": {
-        "src": "scene-jin-tom",
-        "alt": "Jin and Tom standing together in a photo shared by Kim."
+        "src": "scene-jin-tom-family42",
+        "alt": "Jin with long straight black hair and a fringe, next to Tom in a café photo shared by Kim."
       }
     },
     {
@@ -499,7 +499,8 @@
               "label": "Job",
               "value": "student"
             }
-          ]
+          ],
+          "hint": "Start with “This is my brother…”. Add his job."
         },
         {
           "id": "bia",
@@ -521,7 +522,8 @@
               "label": "From",
               "value": "Recife"
             }
-          ]
+          ],
+          "hint": "Start with “This is my sister…”. Add her job or city."
         },
         {
           "id": "parents",
@@ -543,7 +545,8 @@
               "label": "From",
               "value": "Recife"
             }
-          ]
+          ],
+          "hint": "Use “These are…” for two people. Add their city."
         }
       ],
       "teacherNotes": "The learner speaks as Ana. Choose Leo, Bia and the parents in any order; the facts are always visible. Ask for an introduction and one detail. The optional model combines the same facts, without a secret goal or guessing. No new personal information is required."
@@ -569,14 +572,26 @@
         {
           "id": "role.1",
           "speaker": "Ana",
-          "text": "This is my friend. He’s a cook.",
+          "text": "This is my friend.",
           "cue": "Introduce the person.",
-          "hint": "This is my … He’s/She’s a …"
+          "hint": "This is my …"
+        },
+        {
+          "id": "role.job.question",
+          "speaker": "Kim",
+          "text": "What’s his job?"
+        },
+        {
+          "id": "role.job.answer",
+          "speaker": "Ana",
+          "text": "He’s a cook.",
+          "cue": "Say his job.",
+          "hint": "He’s a …"
         },
         {
           "id": "role.2",
           "speaker": "Kim",
-          "text": "Where is he or she from?"
+          "text": "Where is he from?"
         },
         {
           "id": "role.3",
@@ -586,7 +601,7 @@
           "hint": "He’s/She’s from …"
         }
       ],
-      "teacherNotes": "Use the ready questions naturally: Who’s this? / What does he or she do? / Where is he or she from? Ask “Who are they?” only when the learner shows a photo of several people. Models are optional examples, not facts about the learner’s photo."
+      "teacherNotes": "Use the six-turn model: Who’s this? / What’s his or her job? / Where is he or she from? Adapt the pronouns to the learner’s real photo. For several people, use Who are they? Models are optional examples, not facts about the learner’s photo."
     },
     {
       "id": "s9",

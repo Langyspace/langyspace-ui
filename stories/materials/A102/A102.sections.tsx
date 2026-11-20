@@ -13,7 +13,7 @@ import { FieldRoot } from '../../../src/components/Form/FieldRoot'
 import { TextInput } from '../../../src/components/Form/TextInput'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import { GapExercise, PromptExercise } from '../shared/LessonExercises'
+import { PromptExercise } from '../shared/LessonExercises'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import {
   numbers,
@@ -211,26 +211,6 @@ export function Grammar() {
           },
         ]}
       />
-      <Common.Hint>
-        Use my or your before a noun: name, number, teacher.
-      </Common.Hint>
-      <GapExercise
-        choices={['My', 'your']}
-        items={[
-          {
-            id: 'my-name',
-            before: '',
-            after: ' name is Ana.',
-            answer: 'My',
-          },
-          {
-            id: 'your-number',
-            before: 'What’s ',
-            after: ' phone number?',
-            answer: 'your',
-          },
-        ]}
-      />
     </Common.Stack>
   )
 }
@@ -241,7 +221,6 @@ export function ContactPractice() {
       variant="workstation"
       title="New student"
       workstationMeta={{
-        appLabel: 'Student registration',
         clock: '09:41',
         date: '20 Nov',
       }}
@@ -259,11 +238,7 @@ export function ContactPractice() {
           { id: 'phone', label: 'Phone number' },
         ] as const
       ).map((field) => (
-        <FieldRoot
-          key={field.id}
-          label={field.label}
-          hint={field.id === 'phone' ? 'Use a made-up number.' : undefined}
-        >
+        <FieldRoot key={field.id} label={field.label}>
           <TextInput
             size="md"
             type={field.id === 'phone' ? 'tel' : 'text'}

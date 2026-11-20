@@ -1,10 +1,11 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-calendar-day',
-})`
+})<{ $vocabulary: boolean }>`
   position: relative;
   display: flex;
   min-width: 0;
@@ -33,6 +34,36 @@ export const Root = styled.div.withConfig({
       background: ${theme.colors.palette.neutral[100]};
     }
   }
+  ${(p) =>
+    p.$vocabulary
+      ? css`
+          padding: ${theme.spacing[2]};
+          color: ${resolveSlideTheme(p).foreground};
+          background: ${resolveSlideTheme(p).surface};
+          border-color: ${resolveSlideTheme(p).border};
+          font-family: ${theme.typography.fontFamily.sans};
+          font-size: ${theme.typography.fontSize.md};
+          font-weight: ${theme.typography.fontWeight.semibold};
+          text-align: center;
+          overflow-wrap: anywhere;
+          > button {
+            align-self: stretch;
+            justify-content: center;
+          }
+          &[data-selected='true'] {
+            box-shadow: inset 0 0 0 2px ${resolveSlideTheme(p).accent};
+          }
+          &[data-interactive='true']:hover {
+            background: ${resolveSlideTheme(p).surface};
+          }
+          @container (max-width: ${theme.breakpoints.md}) {
+            font-size: ${theme.typography.fontSize.sm};
+          }
+          @container (max-width: ${theme.breakpoints.sm}) {
+            min-height: ${theme.spacing[20]};
+          }
+        `
+      : undefined}
 `
 
 export const OpenButton = styled(Pressable).withConfig({

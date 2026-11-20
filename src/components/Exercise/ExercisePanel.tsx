@@ -1,15 +1,79 @@
 import * as Styled from './ExercisePanel.styles'
-import type { ExercisePanelProps } from './ExercisePanel.types'
+import type {
+  ExercisePanelProps,
+  ExerciseMonitorProps,
+} from './ExercisePanel.types'
+
+function MonitorFrame({
+  title,
+  workstationMeta,
+  children,
+  form,
+}: ExerciseMonitorProps) {
+  return (
+    <Styled.Desktop>
+      <Styled.Screen>
+        <Styled.WindowBar>
+          <Styled.WindowControls aria-hidden="true">
+            <i />
+            <i />
+            <i />
+          </Styled.WindowControls>
+          {title ? <Styled.ScreenHeader>{title}</Styled.ScreenHeader> : null}
+          {workstationMeta?.clock || workstationMeta?.date ? (
+            <Styled.DesktopClock>
+              {workstationMeta.clock ? (
+                <time>{workstationMeta.clock}</time>
+              ) : null}
+              {workstationMeta.date ? (
+                <span>{workstationMeta.date}</span>
+              ) : null}
+            </Styled.DesktopClock>
+          ) : null}
+        </Styled.WindowBar>
+        <Styled.ScreenBody $form={form}>{children}</Styled.ScreenBody>
+        {workstationMeta?.appLabel ? (
+          <Styled.Taskbar>
+            <Styled.DesktopMenu aria-hidden="true">
+              <i />
+              <i />
+              <i />
+              <i />
+            </Styled.DesktopMenu>
+            <span>{workstationMeta.appLabel}</span>
+          </Styled.Taskbar>
+        ) : null}
+      </Styled.Screen>
+      <Styled.MonitorChin aria-hidden="true">
+        <i />
+      </Styled.MonitorChin>
+      <Styled.Stand aria-hidden="true" />
+    </Styled.Desktop>
+  )
+}
 export function ExercisePanel({
   title,
   counter,
   workstationMeta,
   media,
   layout = 'stacked',
+  monitorLayout = 'flow',
   variant = 'default',
   children,
   ...props
 }: ExercisePanelProps) {
+  if (variant === 'monitor')
+    return (
+      <Styled.MonitorPanel {...props}>
+        <MonitorFrame
+          title={title}
+          workstationMeta={workstationMeta}
+          form={monitorLayout === 'form'}
+        >
+          {children}
+        </MonitorFrame>
+      </Styled.MonitorPanel>
+    )
   if (variant === 'workstation')
     return (
       <Styled.Workstation {...props} $withMedia={Boolean(media)}>
@@ -18,46 +82,9 @@ export function ExercisePanel({
             {media}
           </Styled.ContextMedia>
         ) : null}
-        <Styled.Desktop>
-          <Styled.Screen>
-            <Styled.WindowBar>
-              <Styled.WindowControls aria-hidden="true">
-                <i />
-                <i />
-                <i />
-              </Styled.WindowControls>
-              {title ? (
-                <Styled.ScreenHeader>{title}</Styled.ScreenHeader>
-              ) : null}
-            </Styled.WindowBar>
-            <Styled.ScreenBody>{children}</Styled.ScreenBody>
-            <Styled.Taskbar>
-              <Styled.DesktopMenu aria-hidden="true">
-                <i />
-                <i />
-                <i />
-                <i />
-              </Styled.DesktopMenu>
-              {workstationMeta?.appLabel ? (
-                <span>{workstationMeta.appLabel}</span>
-              ) : null}
-              {workstationMeta?.clock || workstationMeta?.date ? (
-                <Styled.DesktopClock>
-                  {workstationMeta.clock ? (
-                    <time>{workstationMeta.clock}</time>
-                  ) : null}
-                  {workstationMeta.date ? (
-                    <span>{workstationMeta.date}</span>
-                  ) : null}
-                </Styled.DesktopClock>
-              ) : null}
-            </Styled.Taskbar>
-          </Styled.Screen>
-          <Styled.MonitorChin aria-hidden="true">
-            <i />
-          </Styled.MonitorChin>
-          <Styled.Stand aria-hidden="true" />
-        </Styled.Desktop>
+        <MonitorFrame title={title} workstationMeta={workstationMeta} form>
+          {children}
+        </MonitorFrame>
       </Styled.Workstation>
     )
   const counterInMedia = variant === 'warmup' && Boolean(media)

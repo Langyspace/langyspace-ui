@@ -1,4 +1,10 @@
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
+import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import {
+  CalendarDay,
+  CalendarMonthGrid,
+} from '../../../src/components/Calendar/CalendarElements'
+import type { RevealGuidanceLevel } from '../../../src/components/Exercise/RevealCard.types'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -86,6 +92,7 @@ function PageContent({
   const [initial, setInitial] = useState(false)
   const [all, setAll] = useState(false)
   const [selected, setSelected] = useState<string>()
+  const [helpLevel, setHelpLevel] = useState<RevealGuidanceLevel>('cue')
   if (page.kind === 'prompts') return <PromptExercise items={page.items} />
   if (page.kind === 'vocabulary')
     return (
@@ -114,6 +121,34 @@ function PageContent({
           if (item) speech.speak([{ id, text: item.word }])
         }}
       />
+    )
+  if (page.kind === 'calendar')
+    return (
+      <Common.Surface>
+        <CalendarMonthGrid
+          density="compact"
+          role="group"
+          aria-label={page.title}
+        >
+          {page.items.map((item) => (
+            <CalendarDay
+              key={item.id}
+              presentation="vocabulary"
+              selected={selected === item.id}
+              day={item.word}
+              openLabel={`Listen to ${item.word}`}
+              onOpen={() => {
+                setSelected(item.id)
+                speech.speak([{ id: item.id, text: item.word }])
+              }}
+            >
+              <Common.Hint hidden={selected !== item.id}>
+                {item.example}
+              </Common.Hint>
+            </CalendarDay>
+          ))}
+        </CalendarMonthGrid>
+      </Common.Surface>
     )
   if (page.kind === 'words')
     return (
@@ -245,18 +280,19 @@ function PageContent({
         tracker={
           choice ? (
             <Common.Stack>
-              <PromptExercise
-                key={choice.id}
-                numbered={false}
+              <RevealCard
+                presentation="prompt"
+                revealed={helpLevel === 'full'}
                 answerMinLines={3}
-                items={[
-                  {
-                    id: 'introduce',
-                    prompt: 'Introduce them. Add a job or a city.',
-                    answer: `${choice.introduction} ${choice.detail}`,
-                  },
-                ]}
-              />
+                answer={`${choice.introduction} ${choice.detail}`}
+                guidance={{
+                  level: helpLevel,
+                  hint: choice.hint,
+                  onChange: setHelpLevel,
+                }}
+              >
+                Introduce them. Add a job or a city.
+              </RevealCard>
               <Common.Surface>
                 <Common.Heading>{choice.label}</Common.Heading>
                 <KeyValueList
@@ -280,7 +316,10 @@ function PageContent({
           hotspots={page.choices.map((item) => ({ ...item, prompt: null }))}
           selectedId={choice?.id}
           visitedIds={choice ? [choice.id] : []}
-          onSelect={setSelected}
+          onSelect={(id) => {
+            setSelected(id)
+            setHelpLevel('cue')
+          }}
         />
       </RolePlayExercise>
     )
