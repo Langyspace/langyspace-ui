@@ -98,6 +98,27 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = {}
+function SequencedReference() {
+  const [index, setIndex] = useState(0)
+  const examples = [
+    'Before the phone died: I’d been using it as a map.',
+    'At four: my phone died.',
+    'Afterwards: I asked a doorman for help.',
+  ]
+  return (
+    <Styled.Preview>
+      <ExercisePanel
+        title="One story, three time points"
+        navigation={{ index, count: examples.length, onChange: setIndex }}
+      >
+        <p>{examples[index]}</p>
+      </ExercisePanel>
+    </Styled.Preview>
+  )
+}
+export const ControlledSequence: Story = {
+  render: () => <SequencedReference />,
+}
 function ProgressiveSupport({
   initial = 'cue',
 }: {

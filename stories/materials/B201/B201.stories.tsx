@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'B2.01 · Dead phone, no charger, plano novo com Ana, Kim e Raj.12 páginas em17 telas. Ilustrações preservadas, escuta ElevenLabs, leitura e conversa com a professora. Prática de casa oral sem destinos inventados.',
+          'B2.01 · Dead phone, no charger, plano novo com Ana, Kim e Raj.16 páginas revisadas. Ilustrações preservadas, escuta ElevenLabs, leitura e conversa com a professora. Prática de casa oral sem destinos inventados.',
       },
     },
   },
@@ -30,39 +30,44 @@ export const Vocabulary: Story = {
   },
 }
 export const WarmUpOne: Story = { args: { initialPageId: 's31' } }
-export const WarmUpHiddenOptions: Story = {
-  args: { initialPageId: 's32' },
-  play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's32')
-    await userEvent.click(c.getByRole('button', { name: 'Show options' }))
-    await expect(
-      c.getByRole('button', { name: /I’d been walking for two hours/ }),
-    ).toBeVisible()
-  },
-}
+export const WarmUpTwo: Story = { args: { initialPageId: 's32' } }
 export const WarmUpBorrow: Story = { args: { initialPageId: 's33' } }
 export const Expressions: Story = { args: { initialPageId: 's4' } }
-export const PronunciationOne: Story = { args: { initialPageId: 's51' } }
-export const PronunciationTwo: Story = { args: { initialPageId: 's52' } }
+export const Chronology: Story = { args: { initialPageId: 's51' } }
+export const MissingDetail: Story = { args: { initialPageId: 's52' } }
 export const DialogueOne: Story = { args: { initialPageId: 's6' } }
 export const DialogueTwo: Story = { args: { initialPageId: 's62' } }
-export const Comprehension: Story = { args: { initialPageId: 's63' } }
+export const Comprehension: Story = { args: { initialPageId: 's62' } }
 export const Grammar: Story = { args: { initialPageId: 's7' } }
 export const YourVersion: Story = { args: { initialPageId: 's8' } }
 export const Listening: Story = { args: { initialPageId: 's9' } }
 export const RightOrWrong: Story = { args: { initialPageId: 's10' } }
 export const RolePlay: Story = {
   args: { initialPageId: 's11' },
+  tags: ['visual-review'],
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's11')
-    await userEvent.type(
-      c.getByRole('textbox', { name: 'When? Where?' }),
-      'Monday, New York',
-    )
-    await userEvent.click(c.getByRole('button', { name: 'Clear' }))
-    await expect(c.getByRole('textbox', { name: 'When? Where?' })).toHaveValue(
-      '',
-    )
+    await userEvent.click(c.getByRole('button', { name: 'Locked out' }))
+    await expect(c.getByRole('img', { name: 'A key.' })).toBeVisible()
+    await expect(
+      c.getByText('Your housemate came home with a spare key.', {
+        exact: true,
+      }),
+    ).toBeVisible()
   },
+}
+export const ExpressionsSecondGroup: Story = {
+  args: { initialPageId: 's4' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 's4')
+    await userEvent.click(c.getByRole('button', { name: 'Next' }))
+    await expect(c.getByText('2/2', { exact: true })).toBeVisible()
+  },
+}
+export const ListeningNarrow: Story = {
+  args: { initialPageId: 's9' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
 }
 export const Homework: Story = { args: { initialPageId: 's12' } }

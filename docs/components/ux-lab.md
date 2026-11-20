@@ -164,6 +164,8 @@ space through RevealCard.answerMinLines. All are source compositions of the UI L
 
 Feedback42 adds source variants in Exercise/Components: reusable monitor flow/form and RevealCard guidance cycling Hint → Answer → Hide. A104 DaysAndTimes and TimesOfDay use the canonical compact calendar and existing scene vocabulary; A103 Introductions resets progressive guidance per selected person. Existing originals consume the same owners. No remote Lab publication or new visual approval is implied.
 
+Feedback44 consolidates lesson scenario composition and statement review in shared data adapters using the reviewed RolePlayExercise, KeyValueList, LearningDialogue, ExercisePanel and QuizOption owners. B1/B2/C1 share the same responsive phone preset. Source stories include reference navigation, descriptive stacked facts, revealed expression tables, role-play choices and advanced feedback decisions. No remote Lab update or browser validation is implied.
+
 The supplied A102 mobile-soft file is already attenuated to approximately−30.46LUFS, so that exercise explicitly uses volume0.7; the generic0.18 default protects unattenuated assets. Do not stack both reductions blindly. Playback/perceptual acceptance remains with the product owner.
 
 ### Named speakers and fact-based introductions (feedback39)

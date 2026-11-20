@@ -9,6 +9,14 @@ export const warmupMaxWidth = theme.slides.focusedWidth
 export const Stack = styled(SharedStack)`
   gap: ${theme.exercises.compactOptionGap};
 `
+export const Navigation = styled.nav`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: ${theme.spacing[3]};
+  margin-top: ${theme.spacing[3]};
+  grid-column: 1 / -1;
+`
 export const Panel = styled.section.withConfig({
   componentId: 'lsui-sc-exercise-panel',
 })<{ $warmup?: boolean }>`
@@ -111,22 +119,24 @@ export const Warmup = styled.div`
   width: 100%;
   min-width: 0;
 `
-export const WarmupMedia = styled.div`
+export const WarmupMedia = styled.div<{ $presentation?: boolean }>`
   position: relative;
   display: grid;
   gap: ${theme.spacing[3]};
   width: 100%;
   min-width: 0;
+  max-width: ${(p) => (p.$presentation ? `calc(${theme.exercises.mediaHeight} * 1.5)` : undefined)};
+  margin-inline: ${(p) => (p.$presentation ? 'auto' : undefined)};
   /* Scene at the slot root or in a simple stack; nested speaker avatars retain their sizes. */
   > img,
   > div > img:first-child {
     display: block;
     width: 100%;
-    height: auto;
+    height: ${(p) => (p.$presentation ? theme.exercises.mediaHeight : 'auto')};
     min-height: 0;
     max-width: 100%;
     max-height: none;
-    aspect-ratio: 3 / 2;
+    aspect-ratio: ${(p) => (p.$presentation ? 'auto' : '3 / 2')};
     object-fit: contain;
     border-radius: ${(p) => recipe(p).panelRadius};
   }

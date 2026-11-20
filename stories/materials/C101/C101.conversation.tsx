@@ -1,131 +1,81 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { Button } from '../../../src/components/Button/Button'
-import { TextareaInput } from '../../../src/components/Form/TextareaInput'
+import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
+import { GuidedScenario } from '../shared/GuidedScenario'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
-import { ana, raj } from '../shared/characterPortraits'
+import { raj } from '../shared/characterPortraits'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { withVoiceMessageLayout } from '../shared/deviceTheme'
-import { toggleId } from '../shared/lessonState'
 import { audioUrl } from './C101.audio'
 import content from './C101.content.json'
-import * as S from './C101.styles'
-const prompts = [
-  [
-    'Hi, Ana. So, you wanted to talk about Tuesday?',
-    'Start with a question about the presentation.',
-    'How do you think it went?',
-  ],
-  [
-    'Honestly? I didn’t deliver it well, I guess.',
-    'Acknowledge a strength, then describe what didn’t work.',
-    'You really know the project. Having said that, the second part seemed a little …',
-  ],
-  [
-    'OK. What do you mean, exactly?',
-    'Give one specific example: the slides, the ending or Laura’s question.',
-    'The slides tend to … · It might come across as …',
-  ],
-  [
-    'OK. So how should I handle it next time?',
-    'Request one change and check Raj’s perspective.',
-    'You might want to … · I wonder if we could … · Would it be worth …?',
-  ],
-]
-const swappedPrompts = [
-  [
-    'Hi, Raj. How do you think it went on Tuesday?',
-    'Answer, then ask what didn’t work.',
-    'Thanks. But …? · What didn’t work?',
-  ],
-  [
-    'You really know the project. Having said that, the second part seemed a little rushed.',
-    'Ask for a specific example.',
-    'What do you mean? · Could you give me an example?',
-  ],
-  [
-    'Well, Laura asked about the deadline, and she didn’t get an answer.',
-    'Ask what you could do next time.',
-    'So what should I do next time?',
-  ],
-  [
-    'I wonder if we could prepare the answers together. And Laura wants a new meeting on Thursday. I’ll be there too.',
-    'Question the severity, then respond to the feedback.',
-    'Was it really that bad? · OK, I’ll take it on board.',
-  ],
-]
+import cover from './assets/catalog-cover40.webp'
 export function YourVersion() {
-  const [swapped, setSwapped] = useState(false)
-  const [support, setSupport] = useState(false)
-  const [done, setDone] = useState<string[]>([])
-  const rows = swapped ? swappedPrompts : prompts
-  const prefix = swapped ? 'raj' : 'ana'
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
   return (
-    <S.Stack>
-      <S.Row>
-        <b>You: {swapped ? 'Raj' : 'Ana'}</b>
-        <S.Hint>Teacher: {swapped ? 'Ana' : 'Raj'}</S.Hint>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => setSwapped(!swapped)}
-        >
-          Swap roles
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={support}
-          onClick={() => setSupport(!support)}
-        >
-          {support ? 'Hide support' : 'Show support'}
-        </Button>
-      </S.Row>
-      <LearningDialogue
-        density="compact"
-        lines={rows.flatMap(([line, cue, hint], i) => [
-          {
-            id: `${prefix}-teacher-${i}`,
-            speaker: swapped ? 'Teacher: Ana' : 'Teacher: Raj',
-            avatarUrl: swapped ? ana : raj,
-            side: 'start' as const,
-            content: line,
-          },
-          {
-            id: `${prefix}-you-${i}`,
-            speaker: 'You',
-            side: 'end' as const,
-            content: (
-              <>
-                <b>{cue}</b>
-                {support ? <S.Hint>{hint}</S.Hint> : null}
-              </>
-            ),
-            actionLabel: `Mark response: ${cue}`,
-          },
-        ])}
-        completedIds={done}
-        onComplete={(id) => setDone((old) => toggleId(old, id))}
-      />
-    </S.Stack>
+    <LearningDialogue
+      density="compact"
+      guidance={{ level, onChange: setLevel }}
+      lines={[
+        {
+          id: 'you-1',
+          speaker: 'You',
+          side: 'end',
+          cue: 'Open the conversation and acknowledge one strength.',
+          hint: 'Could we talk about…? / Your knowledge…',
+          content:
+            'Could we talk about Tuesday’s presentation? Your knowledge of the project really came through.',
+        },
+        {
+          id: 'raj-1',
+          speaker: 'Raj',
+          avatarUrl: raj,
+          side: 'start',
+          content: 'Sure. What stood out to you?',
+        },
+        {
+          id: 'you-2',
+          speaker: 'You',
+          side: 'end',
+          cue: 'State one concern with evidence from Laura’s email.',
+          hint: 'The second half seemed… / When Laura asked…',
+          content:
+            'The second half seemed rushed, and we didn’t answer Laura’s question about the deadline.',
+        },
+        {
+          id: 'raj-2',
+          speaker: 'Raj',
+          avatarUrl: raj,
+          side: 'start',
+          content: 'I was trying to cover everything in thirty minutes.',
+        },
+        {
+          id: 'you-3',
+          speaker: 'You',
+          side: 'end',
+          cue: 'Acknowledge the pressure and propose a specific next step.',
+          hint: 'I can see… / Would it be worth…?',
+          content:
+            'I can see the time pressure. Would it be worth preparing the key answers together next time?',
+        },
+        {
+          id: 'raj-3',
+          speaker: 'Raj',
+          avatarUrl: raj,
+          side: 'start',
+          content: 'Yes. Let’s agree which questions each of us will handle.',
+        },
+      ]}
+    />
   )
 }
-const listeningTheme = withVoiceMessageLayout({
-  contentWidth: '65rem',
-  phoneWidth: '12.5rem',
-  phoneHeight: '24rem',
-})
 export function Listening({ active }: { active: boolean }) {
   const [answers, setAnswers] = useState<Record<string, string>>()
-  const [support, setSupport] = useState(false)
   return (
-    <ThemeProvider theme={listeningTheme}>
+    <ThemeProvider theme={lessonVoiceMessageTheme}>
       <VoiceMessageExercise
         contact={{ name: 'Raj', avatarUrl: raj, status: 'online' }}
         greeting={{
           text: 'Hi, Ana. Can I ask you about the presentation?',
-          timestamp: '18:40',
+          timestamp: '16:05',
         }}
         audio={{
           id: 'c101-raj-message',
@@ -139,12 +89,9 @@ export function Listening({ active }: { active: boolean }) {
           id: String(i),
           prompt: q.q,
           value: answers?.[i],
+          disabled: answers?.[i] === String(q.a),
           feedback:
-            answers?.[i] === String(q.a)
-              ? q.say
-              : answers?.[i] !== undefined
-                ? 'Listen for the detail and try again.'
-                : undefined,
+            answers?.[i] === String(q.a) && q.a === 1 ? q.say : undefined,
           choices: q.o.map((label, j) => ({
             id: String(j),
             label,
@@ -170,90 +117,169 @@ export function Listening({ active }: { active: boolean }) {
           correct: 'Correct',
           incorrect: 'Try again',
         }}
-        footer={
-          <S.Surface>
-            <b>What is Raj accepting, and what is he resisting?</b>
-            <p>
-              Discuss how he feels. Then answer him: should he meet Laura alone?
-              Use the email to support your decision.
-            </p>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-expanded={support}
-              onClick={() => setSupport(!support)}
-            >
-              {support ? 'Hide support' : 'Show support'}
-            </Button>
-            {support ? (
-              <p>
-                He agrees, but … · To be fair, he has a point … · He seems a
-                little hurt. · I wonder if we could … · It might be worth …
-              </p>
-            ) : null}
-          </S.Surface>
-        }
       />
     </ThemeProvider>
   )
 }
+const scenarios = [
+  {
+    id: 'updates',
+    label: 'Project updates',
+    image: {
+      src: cover,
+      alt: 'Ana and Kim preparing feedback in a workspace.',
+    },
+    facts: [
+      {
+        id: 'observation',
+        label: 'What you observed',
+        value: 'The last two updates arrived after the meetings.',
+      },
+      {
+        id: 'effect',
+        label: 'The effect',
+        value: 'The team had to reopen decisions.',
+      },
+      {
+        id: 'goal',
+        label: 'A workable change',
+        value: 'Send confirmed figures early and flag missing ones.',
+      },
+    ],
+    lines: [
+      {
+        id: 'you-1',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Describe the observation and its effect without blaming.',
+        hint: 'The last two… / This meant…',
+        content:
+          'The last two updates arrived after our meetings, so we had to reopen the decisions.',
+      },
+      {
+        id: 'raj-1',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content: 'I can’t send figures I don’t have yet.',
+      },
+      {
+        id: 'you-2',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Acknowledge his constraint while keeping your concern clear.',
+        hint: 'I understand… / We still need…',
+        content:
+          'I understand the figures may be late. We still need to know what’s missing before we decide.',
+      },
+      {
+        id: 'raj-2',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content: 'What would you suggest?',
+      },
+      {
+        id: 'you-3',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Propose a feasible change.',
+        hint: 'Could you… and flag…?',
+        content:
+          'Could you send the confirmed figures before the meeting and flag anything outstanding?',
+      },
+      {
+        id: 'raj-3',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content:
+          'Yes. I’ll mark what’s missing and send the rest before we start.',
+      },
+    ],
+  },
+  {
+    id: 'meetings',
+    label: 'Meeting discussions',
+    image: {
+      src: cover,
+      alt: 'Ana and Kim preparing a difficult conversation.',
+    },
+    facts: [
+      {
+        id: 'observation',
+        label: 'What you observed',
+        value: 'Raj cut in twice before colleagues finished.',
+      },
+      {
+        id: 'effect',
+        label: 'The effect',
+        value: 'Two colleagues stopped contributing.',
+      },
+      {
+        id: 'goal',
+        label: 'A workable change',
+        value: 'Let each person finish before inviting responses.',
+      },
+    ],
+    lines: [
+      {
+        id: 'you-1',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Describe the behaviour and effect specifically.',
+        hint: 'When… / I noticed…',
+        content:
+          'When you cut in twice today, I noticed two colleagues stopped contributing.',
+      },
+      {
+        id: 'raj-1',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content: 'I was trying to keep the discussion moving.',
+      },
+      {
+        id: 'you-2',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Recognise his intention without dismissing the impact.',
+        hint: 'I can see… / At the same time,…',
+        content:
+          'I can see you wanted to save time. At the same time, we missed their input.',
+      },
+      {
+        id: 'raj-2',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content: 'How could we handle that differently?',
+      },
+      {
+        id: 'you-3',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Request a concrete change that leaves room for agreement.',
+        hint: 'Would you be open to…?',
+        content:
+          'Would you be open to letting each person finish, then inviting responses?',
+      },
+      {
+        id: 'raj-3',
+        speaker: 'Raj',
+        avatarUrl: raj,
+        side: 'start' as const,
+        content: 'That sounds fair. I’ll wait until they’ve finished.',
+      },
+    ],
+  },
+]
 export function RolePlay() {
-  const [done, setDone] = useState<string[]>([])
-  const [notes, setNotes] = useState(['', '', '', ''])
-  const first = useRef<HTMLTextAreaElement>(null)
   return (
-    <RolePlayExercise
-      presentation="tracker"
-      density="compact"
-      situation="Choose someone in your life: a colleague, relative, student, neighbour or service provider. Something they did didn’t go well. Your teacher is that person."
-      steps={content.roleSteps.map((label, i) => ({ id: String(i), label }))}
-      completedIds={done}
-      onStepToggle={(id) => setDone((old) => toggleId(old, id))}
-      labels={{
-        steps: 'Your teacher marks each step',
-        progress: '',
-        joiner: 'of',
-      }}
-      tracker={
-        <S.Surface>
-          <S.Row>
-            <b>Feedback notes</b>
-            <Button
-              variant="secondary"
-              size="sm"
-              onClick={() => {
-                setNotes(['', '', '', ''])
-                first.current?.focus()
-              }}
-            >
-              Clear feedback notes
-            </Button>
-          </S.Row>
-          <S.Forms>
-            {[
-              'Who and what?',
-              'The good part',
-              'The change',
-              'After the reaction',
-            ].map((label, i) => (
-              <label key={label}>
-                {label}
-                <TextareaInput
-                  ref={i === 0 ? first : undefined}
-                  rows={2}
-                  value={notes[i] ?? ''}
-                  aria-label={label}
-                  onChange={(e) =>
-                    setNotes((old) =>
-                      old.map((v, j) => (i === j ? e.target.value : v)),
-                    )
-                  }
-                />
-              </label>
-            ))}
-          </S.Forms>
-        </S.Surface>
-      }
+    <GuidedScenario
+      cases={scenarios}
+      factLayout="stacked"
+      selectionLabel="Choose a feedback situation"
     />
   )
 }

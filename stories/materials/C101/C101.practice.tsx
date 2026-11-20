@@ -1,19 +1,18 @@
+import { useState } from 'react'
 import { PromptExercise } from '../shared/LessonExercises'
+import { StatementReview } from '../shared/StatementReview'
 import { useVocabularyAudio } from '../shared/useVocabularyAudio'
 import { vocabularyRecordings } from './C101.vocabularyAudio'
-import type { ExpressionsProps } from './C101.types'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import { LessonHint } from '../shared/LessonHint'
-import { useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
 import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { toggleId } from '../shared/lessonState'
 import { ana, kim } from '../shared/characterPortraits'
 import content from './C101.content.json'
-import type { C101Audio } from './C101.types'
+import type { C101Audio, ExpressionsProps } from './C101.types'
 import * as S from './C101.styles'
 export function Expressions({
   group = 0,
@@ -30,12 +29,16 @@ export function Expressions({
     <GrammarTable
       title="Feedback expressions"
       captionVisibility="screen-reader"
-      columns={{ subject: 'Context', verb: 'Expression', example: 'Meaning' }}
+      columns={{
+        subject: 'Context',
+        verb: 'One expression',
+        example: 'Meaning',
+      }}
       hiddenAnswers
       revealedIds={revealed}
       rows={items.map((item) => ({
         id: `E.${item.i}`,
-        subject: item.s.replace(/[{}]/g, ''),
+        subject: item.s.replace(/\{[^}]*\}/g, '…'),
         verb: item.e,
         example: item.m,
         translation: item.t,
@@ -50,138 +53,80 @@ export function Expressions({
 }
 export function WarmUp({ index }: { index: number }) {
   const w = content.warmups[index]!
-  const [chosen, setChosen] = useState<number>()
-  const complete = chosen === w.a
-  const prompt =
-    index === 0
-      ? 'How could Ana describe the problem tactfully?'
-      : index === 1
-        ? 'How could she ask Raj to change it?'
-        : 'What’s the best feedback you’ve ever received?'
+  const [attempts, setAttempts] = useState<number[]>([])
+  const done = attempts.includes(w.a)
   return (
-    <ExercisePanel
-      variant="warmup"
-      media={
-        <S.Note
-          aria-label={index === 2 ? 'Ana’s answer' : 'Ana’s notes for Friday'}
+    <ExercisePanel counter={`${index + 1}/3`}>
+      <Common.Surface>
+        <Common.Heading $prompt>{w.context}</Common.Heading>
+      </Common.Surface>
+      {w.o.map((text, i) => (
+        <QuizOption
+          key={text}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          disabled={done}
+          feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === w.a
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          onClick={() => setAttempts((old) => [...old, i])}
         >
-          {index === 2 ? (
-            <>
-              <small>Kim asks Ana</small>
-              <p>{prompt}</p>
-              <strong>{complete ? w.o[w.a] : '…'}</strong>
-            </>
-          ) : (
-            <>
-              <small>Ana’s notes for Friday</small>
-              <p>
-                <strong>
-                  {index === 0
-                    ? '1. Raj talked too fast.'
-                    : '2. Use fewer slides.'}
-                </strong>
-              </p>
-            </>
-          )}
-        </S.Note>
-      }
-    >
-      <S.Stack>
-        <p>{index < 2 ? prompt : 'Which answer responds to Kim’s question?'}</p>
-        {w.o.map((text, i) => (
-          <QuizOption
-            key={text}
-            letter={String.fromCharCode(65 + i)}
-            feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
-            density="compact"
-            aria-pressed={chosen === i}
-            state={
-              chosen === undefined
-                ? 'default'
-                : chosen === i
-                  ? complete
-                    ? 'correct'
-                    : 'wrong'
-                  : complete
-                    ? 'dim'
-                    : 'default'
-            }
-            disabled={complete}
-            onClick={() => setChosen(i)}
-          >
-            {text}
-          </QuizOption>
-        ))}
-        <PromptExercise
-          numbered={false}
-          items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
-        />
-      </S.Stack>
+          {text}
+        </QuizOption>
+      ))}
     </ExercisePanel>
   )
 }
 export function Reading() {
   return (
-    <S.Stack>
-      <S.Columns>
-        <S.Paper aria-label="Laura’s email">
-          <header>
-            <b>Tuesday’s presentation</b>
-            <small>Laura Hughes → Ana · Wednesday, 9:12</small>
-          </header>
-          {content.mail.map((p) => (
-            <p key={p}>{p}</p>
-          ))}
-        </S.Paper>
-        <S.Stack>
-          <C101Questions items={content.reading} />
-          <S.Surface>
-            <b>
-              Have you received a polite message that signalled dissatisfaction?
-            </b>
-            <p>What gave it away? Tell your teacher how you responded.</p>
-          </S.Surface>
-        </S.Stack>
-      </S.Columns>
-    </S.Stack>
+    <Common.Surface as="article" aria-label="Laura’s email">
+      <Common.Stack>
+        <Common.Heading $prompt>Tuesday’s presentation</Common.Heading>
+        <Common.Hint>Laura Hughes → Ana · Wednesday, 9:12</Common.Hint>
+      </Common.Stack>
+      {content.mail.map((paragraph) => (
+        <Common.Paragraph key={paragraph}>{paragraph}</Common.Paragraph>
+      ))}
+    </Common.Surface>
   )
 }
-export function Prosody({ index, audio }: { index: number; audio: C101Audio }) {
+export function Prosody({ audio }: { audio: C101Audio }) {
   const [selected, setSelected] = useState<string>()
-  const text =
-    index === 0 ? 'It was a bit rushed.' : 'You might want to cut some slides.'
   return (
-    <S.Stack>
+    <Common.Stack>
       <MinimalPairExercise
         mode="listen"
-        choices={['Version A', 'Version B'].map((name, i) => ({
+        choices={['Version A', 'Version B'].map((label, i) => ({
           id: String(i),
-          word: text,
-          phonetic: name,
+          word: 'It was a bit rushed.',
+          phonetic: label,
         }))}
         selectedId={selected}
         onSelect={(id) => {
           setSelected(id)
-          audio.play([`c101-pair-${index}-${id}`])
+          audio.play([`c101-pair-0-${id}`])
         }}
       />
-      <S.Surface>
-        <b>What impression does each version create?</b>
-        <p>
-          Play either card. Which delivery sounds more tentative or more
-          decisive? Imitate both and explain what you notice in the stress, pace
-          and final pitch.
-        </p>
-      </S.Surface>
-      <LessonHint context="How does context change the message?">
-        <b>How does context change the message?</b>
-        <p>
-          A lighter onset and fall-rise can sound tentative; strong stress and a
-          final fall can sound decisive. These are tendencies, not rules:
-          context and the speaker’s relationship matter.
-        </p>
-      </LessonHint>
-    </S.Stack>
+      <PromptExercise
+        numbered={false}
+        items={[
+          {
+            id: 'impression',
+            prompt:
+              'Which delivery leaves more room for discussion? Use something you heard to explain your view.',
+            answer:
+              'Version … sounded more … because of the stress / pace / final pitch. Context and the relationship can change the impression.',
+          },
+        ]}
+      />
+    </Common.Stack>
   )
 }
 export function Dialogue({ part, audio }: { part: number; audio: C101Audio }) {
@@ -210,99 +155,89 @@ export function Dialogue({ part, audio }: { part: number; audio: C101Audio }) {
   )
 }
 export function Grammar() {
-  const [revealed, setRevealed] = useState<string[]>([])
+  const [index, setIndex] = useState(0)
+  const rows = content.grammar.slice(index * 3, index * 3 + 3)
   return (
-    <S.Stack>
+    <ExercisePanel
+      title={
+        index === 0 ? 'Describe an observation' : 'Make a workable request'
+      }
+      navigation={{ index, count: 2, onChange: setIndex }}
+    >
       <GrammarTable
-        title="From direct to constructive"
-        columns={{ subject: 'Direct', example: 'A possible alternative' }}
-        hiddenAnswers
-        rows={content.grammar.map((x) => ({
-          id: String(x.i + 1),
-          subject: x.d,
-          example: (
-            <>
-              <b>{x.f}</b>
-              <p>{x.ex}</p>
-            </>
-          ),
-          translation: x.n,
+        title="Tactful and precise language"
+        captionVisibility="screen-reader"
+        columns={{
+          subject: 'Starting point',
+          verb: 'Pattern',
+          example: 'One possible wording',
+        }}
+        rows={rows.map((row) => ({
+          id: String(row.i),
+          subject: row.d,
+          verb: row.f,
+          example: row.ex,
         }))}
-        revealedIds={revealed}
-        onReveal={(id) => setRevealed((old) => toggleId(old, id))}
-        revealLabel="Reveal alternative"
+        explanation={
+          <Common.Hint>
+            {index === 0
+              ? 'Tend to describes a recurring pattern, not one isolated incident. Seem marks your impression; might come across as marks a possible interpretation.'
+              : 'A suggestion or tentative request leaves room for a response. Keep the change specific; authority, urgency and tone still matter.'}
+          </Common.Hint>
+        }
       />
-      <S.ExpressionList>
-        {content.grammarNotes.map((x) => (
-          <LessonHint key={x.title} context={x.title}>
-            <b>{x.title}</b>
-            <p>{x.text}</p>
-          </LessonHint>
-        ))}
-      </S.ExpressionList>
-      <S.Surface>
-        <b>One observation, one request</b>
-        <p>
-          Your colleague’s updates arrive after the meeting. Describe the effect
-          and ask for one change. Leave room for their perspective.
-        </p>
-      </S.Surface>
-    </S.Stack>
+    </ExercisePanel>
+  )
+}
+export function RespondToRaj() {
+  const [attempts, setAttempts] = useState<number[]>([])
+  const done = attempts.includes(0)
+  const options = [
+    'I can see why you’d like to handle it. Laura has asked me to attend, so could we agree how we’ll share the questions?',
+    'Of course. I won’t go, and we don’t need to tell Laura.',
+    'You clearly can’t handle this alone. I’ll do all the talking.',
+  ]
+  return (
+    <ExercisePanel>
+      <Common.Surface>
+        <Common.Paragraph>
+          Laura asked Ana to attend Thursday’s meeting. Raj would like to speak
+          to Laura by himself.
+        </Common.Paragraph>
+      </Common.Surface>
+      {options.map((text, i) => (
+        <QuizOption
+          key={text}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          disabled={done}
+          feedbackOutcome={i === 0 ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === 0
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          onClick={() => setAttempts((old) => [...old, i])}
+        >
+          {text}
+        </QuizOption>
+      ))}
+    </ExercisePanel>
   )
 }
 export function NaturalReview() {
-  const [done, setDone] = useState<number[]>([])
-  const [wrong, setWrong] = useState<number[]>([])
-  const [own, setOwn] = useState(false)
   return (
-    <S.Stack>
-      {content.corrections.map((r, i) => (
-        <S.Surface key={r.s}>
-          <b>
-            {i + 1}. {r.s}
-          </b>
-          {done.includes(i) ? (
-            <>
-              <p>{r.a ?? 'This works as a tentative request.'}</p>
-              <S.Hint>{r.why}</S.Hint>
-            </>
-          ) : (
-            <S.Row>
-              {['Works here', 'Needs changing'].map((text, j) => (
-                <Button
-                  key={text}
-                  variant="secondary"
-                  size="sm"
-                  onClick={() => {
-                    if ((j === 0) === Boolean(r.ok))
-                      setDone((old) => [...old, i])
-                    else setWrong((old) => [...old, i])
-                  }}
-                >
-                  {text}
-                </Button>
-              ))}
-            </S.Row>
-          )}
-          {wrong.includes(i) && !done.includes(i) ? (
-            <S.Hint role="status">
-              Consider the tone, specificity and grammar, then try again.
-            </S.Hint>
-          ) : null}
-        </S.Surface>
-      ))}
-      <S.QuestionReveal
-        marker="6"
-        revealed={own}
-        answer="Rephrase it and explain why your version fits the situation."
-        onClick={() => setOwn(!own)}
-      >
-        Your teacher brings back one sentence you used today.
-      </S.QuestionReveal>
-    </S.Stack>
+    <StatementReview
+      context="Peer-to-peer feedback: be specific and collaborative."
+      labels={{ positive: 'Works here', negative: 'Needs changing' }}
+      items={content.corrections.map((row, i) => ({ ...row, id: `C1.${i}` }))}
+    />
   )
 }
-
 export function C101Questions({
   items,
 }: {

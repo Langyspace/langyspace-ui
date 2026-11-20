@@ -1,102 +1,75 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { withVoiceMessageLayout } from '../shared/deviceTheme'
-import { Button } from '../../../src/components/Button/Button'
-import { TextareaInput } from '../../../src/components/Form/TextareaInput'
+import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
+import { GuidedScenario } from '../shared/GuidedScenario'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { toggleId } from '../shared/lessonState'
 import type { ListeningProps } from './B201.types'
-import { content, ana, kim, raj, image, vocabulary } from './B201.data'
+import { content, kim, raj, image } from './B201.data'
 import voice from './assets/b201-raj-message.mp3'
 import audioProvenance from './audio-provenance.json'
-import * as S from './B201.styles'
 export function YourVersionSection() {
-  const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState(false),
-    [marked, setMarked] = useState<string[]>([])
-  const rows = content.yourVersionSource[swapped ? 1 : 0] ?? [],
-    prefix = swapped ? 'swapped' : 'first'
-  const count = rows.filter(
-    (r, i) => r[1] === 'Aluna' && marked.includes(`${prefix}-${i}`),
-  ).length
-  let current = 0
-  while (
-    current < 5 &&
-    marked.includes(`${prefix}-${current * 2 + (swapped ? 0 : 1)}`)
-  )
-    current++
-  const offset = Math.max(0, Math.min(4, current) * 2 - 2),
-    end = (Math.min(4, current) + 1) * 2
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
   return (
-    <S.Stack>
-      <S.Row>
-        <b>{swapped ? 'You: Kim' : 'You: Ana'}</b>
-        <S.Hint>{swapped ? 'Teacher: Ana' : 'Teacher: Kim'}</S.Hint>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => {
-            setSwapped(!swapped)
-          }}
-        >
-          {swapped ? '⇄ Swap back' : '⇄ Swap roles'}
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={support}
-          onClick={() => setSupport(!support)}
-        >
-          {support ? 'Hide support' : 'Show support'}
-        </Button>
-        <S.Counter role="status">{count} of 5</S.Counter>
-      </S.Row>
-      <LearningDialogue
-        density="compact"
-        lines={rows.slice(offset, end).map((r, j) => {
-          const i = j + offset,
-            learner = r[1] === 'Aluna',
-            id = `${prefix}-${i}`
-          return {
-            id,
-            speaker: learner ? 'You' : swapped ? 'Teacher: Ana' : 'Kim',
-            avatarUrl: learner ? undefined : swapped ? ana : kim,
-            side: learner ? 'end' : 'start',
-            actionLabel: learner ? `Mark response: ${r[2]}` : undefined,
-            content: learner ? (
-              <S.LearnerCue>
-                {support ? r[3] : r[2]}
-                {support ? <S.Hint>{r[2]}</S.Hint> : null}
-              </S.LearnerCue>
-            ) : (
-              r[2]
-            ),
-          }
-        })}
-        completedIds={marked}
-        onComplete={(id) => setMarked((old) => toggleId(old, id))}
-      />
-      <S.PictureStrip aria-label="The seven pictures from page 2">
-        {vocabulary.map((item) => (
-          <img key={item.id} src={item.imageUrl} alt={item.imageAlt} />
-        ))}
-      </S.PictureStrip>
-    </S.Stack>
+    <LearningDialogue
+      density="compact"
+      guidance={{ level, onChange: setLevel }}
+      lines={[
+        {
+          id: 'kim-1',
+          speaker: 'Kim',
+          avatarUrl: kim,
+          side: 'start',
+          content: 'So, how was your day?',
+        },
+        {
+          id: 'you-1',
+          speaker: 'You',
+          side: 'end',
+          cue: 'Say when and where a problem happened.',
+          hint: 'My phone died at… / I was… when…',
+          content: 'My phone died at four while I was exploring the city.',
+        },
+        {
+          id: 'kim-2',
+          speaker: 'Kim',
+          avatarUrl: kim,
+          side: 'start',
+          content: 'What had you been doing before that?',
+        },
+        {
+          id: 'you-2',
+          speaker: 'You',
+          side: 'end',
+          cue: 'Explain the earlier activity and one earlier action.',
+          hint: 'I’d been… / I’d left…',
+          content:
+            'I’d been using it as a map all day, and I’d left my charger at the hotel.',
+        },
+        {
+          id: 'kim-3',
+          speaker: 'Kim',
+          avatarUrl: kim,
+          side: 'start',
+          content: 'How did you sort it out in the end?',
+        },
+        {
+          id: 'you-3',
+          speaker: 'You',
+          side: 'end',
+          cue: 'Explain who helped and how the day ended.',
+          hint: 'I’d been waiting for… when… / Eventually,…',
+          content:
+            'I’d been waiting for twenty minutes when someone lent me a power bank. Eventually, I found my friends.',
+        },
+      ]}
+    />
   )
 }
-const listeningTheme = withVoiceMessageLayout({
-  contentWidth: '65rem',
-  phoneWidth: '11.875rem',
-  phoneHeight: '23.75rem',
-})
-
 export function ListeningSection({ active }: ListeningProps) {
-  const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
-    [support, setSupport] = useState(false)
+  const [attempts, setAttempts] = useState<Record<string, string[]>>({})
   return (
-    <ThemeProvider theme={listeningTheme}>
+    <ThemeProvider theme={lessonVoiceMessageTheme}>
       <VoiceMessageExercise
         contact={{ name: 'Raj', avatarUrl: raj, status: 'online' }}
         greeting={{
@@ -134,11 +107,7 @@ export function ListeningSection({ active }: ListeningProps) {
             prompt: q.text,
             value: chosen.at(-1),
             disabled: done,
-            feedback: done
-              ? q.correction
-              : chosen.length
-                ? 'Try again.'
-                : undefined,
+            feedback: done && !q.yes ? q.correction : undefined,
             choices: ['yes', 'no'].map((id) => ({
               id,
               label: id === 'yes' ? 'Yes' : 'No',
@@ -155,139 +124,158 @@ export function ListeningSection({ active }: ListeningProps) {
         onAnswer={(id, value) =>
           setAttempts((old) => ({ ...old, [id]: [...(old[id] ?? []), value] }))
         }
-        footer={
-          <S.Dark>
-            <strong>Kim asks</strong>
-            <p>
-              What exactly did Raj say? Was he angry? What did he think happened
-              to you? Tell her.
-            </p>
-            <S.Row>
-              <Button
-                variant="inverse"
-                size="sm"
-                aria-expanded={support}
-                onClick={() => setSupport(!support)}
-              >
-                {support ? 'Hide support' : 'Show support'}
-              </Button>
-            </S.Row>
-            {support ? (
-              <p>
-                He said they’d been waiting … · He sounded … because … · Sarah
-                thought …
-              </p>
-            ) : null}
-          </S.Dark>
-        }
       />
     </ThemeProvider>
   )
 }
-const noteLabels = [
-  'When? Where?',
-  'What had been happening?',
-  'What went wrong?',
-  'In the end',
-]
-const steps = [
+const cases = [
   {
-    id: '1',
-    label:
-      'Tell Kim about your day, in order. Kim asks: How long had you been …?',
+    id: 'train',
+    label: 'Missed train',
+    image: { src: image('departure-board'), alt: 'A station departure board.' },
+    facts: [
+      {
+        id: 'background',
+        label: 'Before the problem',
+        value: 'Waiting in a ticket queue for forty minutes.',
+      },
+      {
+        id: 'event',
+        label: 'The problem',
+        value: 'The train left while you were still queuing.',
+      },
+      {
+        id: 'resolution',
+        label: 'The resolution',
+        value: 'Station staff helped you catch the next train.',
+      },
+    ],
+    lines: [
+      {
+        id: 'you-1',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Open the story: say what went wrong.',
+        hint: 'Yesterday I missed…',
+        content: 'Yesterday I missed my train.',
+      },
+      {
+        id: 'kim-1',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'What had been happening before that?',
+      },
+      {
+        id: 'you-2',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Describe the earlier activity and its duration.',
+        hint: 'I’d been… for… when…',
+        content:
+          'I’d been waiting in a queue for forty minutes when I saw the train had left.',
+      },
+      {
+        id: 'kim-2',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'How did you deal with it?',
+      },
+      {
+        id: 'you-3',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Explain the resolution.',
+        hint: 'I spoke to… / Eventually,…',
+        content: 'I spoke to a member of staff and caught the next train.',
+      },
+      {
+        id: 'kim-3',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'At least you found a way to get there.',
+      },
+    ],
   },
-  { id: '2', label: 'Kim says something different! Explain.' },
-  { id: '3', label: 'Swap: Kim tells you the end of her day. Ask questions.' },
-  { id: '4', label: 'Tell Kim’s day back: You’d been … when …' },
-]
-const supportLines = [
-  'I was …ing when …',
-  'I’d been …ing for … when …',
-  'I’d left …',
-  'I didn’t notice …',
-  'By then, …',
-  'Eventually, …',
-  'How long had you been …?',
-  'What happened then?',
-  'Where were you going?',
+  {
+    id: 'keys',
+    label: 'Locked out',
+    image: { src: image('key'), alt: 'A key.' },
+    facts: [
+      {
+        id: 'background',
+        label: 'Before the problem',
+        value: 'Walking home in the rain for half an hour.',
+      },
+      {
+        id: 'event',
+        label: 'The problem',
+        value: 'At your door, you realised your keys were at the office.',
+      },
+      {
+        id: 'resolution',
+        label: 'The resolution',
+        value: 'Your housemate came home with a spare key.',
+      },
+    ],
+    lines: [
+      {
+        id: 'you-1',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Open the story: say what went wrong.',
+        hint: 'I got home, but…',
+        content: 'I got home yesterday, but I couldn’t get in.',
+      },
+      {
+        id: 'kim-1',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'What had been happening before that?',
+      },
+      {
+        id: 'you-2',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Give the background and earlier mistake.',
+        hint: 'I’d been… for… / I realised I’d left…',
+        content:
+          'I’d been walking in the rain for half an hour when I realised I’d left my keys at the office.',
+      },
+      {
+        id: 'kim-2',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'How did you deal with it?',
+      },
+      {
+        id: 'you-3',
+        speaker: 'You',
+        side: 'end' as const,
+        cue: 'Explain the resolution.',
+        hint: 'Luckily,… had…',
+        content: 'Luckily, my housemate came home with a spare key.',
+      },
+      {
+        id: 'kim-3',
+        speaker: 'Kim',
+        avatarUrl: kim,
+        side: 'start' as const,
+        content: 'What a relief after that walk.',
+      },
+    ],
+  },
 ]
 export function RolePlaySection() {
-  const [marked, setMarked] = useState<string[]>([]),
-    [support, setSupport] = useState(false),
-    [notes, setNotes] = useState(['', '', '', ''])
-  const firstField = useRef<HTMLTextAreaElement>(null)
-  const next = steps.find((s) => !marked.includes(s.id))?.id,
-    hasSupport = next === '1' || next === '3'
   return (
-    <RolePlayExercise
-      presentation="tracker"
-      density="compact"
-      situation="Choose a problem from the board that is different from the phone story. Your teacher is Kim. Explain four moments from a true or invented bad day."
-      support={hasSupport ? supportLines : []}
-      supportVisible={hasSupport && support}
-      onSupportToggle={hasSupport ? () => setSupport(!support) : undefined}
-      steps={steps}
-      completedIds={marked}
-      onStepToggle={(id) => setMarked((old) => toggleId(old, id))}
-      labels={{
-        show: 'Show support',
-        hide: 'Hide support',
-        steps: 'Step by step · your teacher marks',
-        progress: '',
-        joiner: 'of',
-      }}
-      tracker={
-        <S.Surface>
-          <S.Row>
-            <b>Kim’s notes</b>
-            <Button
-              size="sm"
-              variant="secondary"
-              onClick={() => {
-                setNotes(['', '', '', ''])
-                firstField.current?.focus()
-              }}
-            >
-              Clear
-            </Button>
-          </S.Row>
-          <S.NoteFields>
-            {noteLabels.map((label, i) => (
-              <label key={label}>
-                {label}
-                <TextareaInput
-                  rows={2}
-                  ref={i === 0 ? firstField : undefined}
-                  aria-label={label}
-                  value={notes[i] ?? ''}
-                  onChange={(event) =>
-                    setNotes((old) =>
-                      old.map((text, j) =>
-                        i === j ? event.target.value : text,
-                      ),
-                    )
-                  }
-                />
-              </label>
-            ))}
-          </S.NoteFields>
-        </S.Surface>
-      }
-    >
-      <S.Board aria-label="Choose four moments">
-        {[
-          'dead-phone',
-          'rain',
-          'traffic',
-          'line',
-          'departure-board',
-          'taxi',
-          'wallet',
-          'key',
-        ].map((key) => (
-          <img key={key} src={image(key)} alt={key.replaceAll('-', ' ')} />
-        ))}
-      </S.Board>
-    </RolePlayExercise>
+    <GuidedScenario
+      cases={cases}
+      factLayout="stacked"
+      selectionLabel="Choose a travel problem"
+    />
   )
 }

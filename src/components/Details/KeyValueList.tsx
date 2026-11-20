@@ -5,6 +5,7 @@ export function KeyValueList({
   items,
   tone = 'default',
   density = 'regular',
+  layout = 'inline',
   ...props
 }: KeyValueListProps) {
   return (
@@ -14,6 +15,7 @@ export function KeyValueList({
           key={item.id}
           $material={tone === 'material'}
           $compact={density === 'compact'}
+          $stacked={layout === 'stacked'}
         >
           <Styled.Label $material={tone === 'material'}>
             {item.label}
@@ -21,6 +23,7 @@ export function KeyValueList({
           <Styled.Value
             $material={tone === 'material'}
             $compact={density === 'compact'}
+            $stacked={layout === 'stacked'}
           >
             {item.value}
           </Styled.Value>

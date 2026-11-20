@@ -15,6 +15,37 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+export const StackedDescription: Story = {
+  args: {
+    tone: 'material',
+    density: 'compact',
+    layout: 'stacked',
+    items: [
+      {
+        id: 'observation',
+        label: 'What you observed',
+        value: 'The last two updates arrived after the meetings.',
+      },
+      {
+        id: 'effect',
+        label: 'The effect',
+        value: 'The team had to reopen decisions.',
+      },
+      {
+        id: 'goal',
+        label: 'A workable change',
+        value: 'Send confirmed figures early and flag missing ones.',
+      },
+    ],
+  },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+}
 export const CompactFacts: Story = {
   args: {
     tone: 'material',

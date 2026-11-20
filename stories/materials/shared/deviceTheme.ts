@@ -16,3 +16,11 @@ export const withVoiceMessageLayout =
       ...layout,
     },
   })
+
+/** Phone proportions used by the reviewed B1/B2/C1 listening compositions. */
+export const lessonVoiceMessageTheme = withVoiceMessageLayout({
+  contentWidth: '65rem',
+  phoneWidth: 'clamp(11.875rem, calc((100dvh - 15.625rem) / 2), 16.875rem)',
+  phoneHeight: 'clamp(23.75rem, calc(100dvh - 15.625rem), 33.75rem)',
+  transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
+})

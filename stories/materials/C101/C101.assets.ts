@@ -14,8 +14,6 @@ import clip12 from './assets/c101-D6-13.mp3'
 import clip13 from './assets/c101-D6-14.mp3'
 import clip14 from './assets/c101-pair-0-0.mp3'
 import clip15 from './assets/c101-pair-0-1.mp3'
-import clip16 from './assets/c101-pair-1-0.mp3'
-import clip17 from './assets/c101-pair-1-1.mp3'
 import clip18 from './assets/c101-raj-message.mp3'
 export const audioSources: Record<string, string> = {
   'c101-D6-1': clip0,
@@ -34,7 +32,5 @@ export const audioSources: Record<string, string> = {
   'c101-D6-14': clip13,
   'c101-pair-0-0': clip14,
   'c101-pair-0-1': clip15,
-  'c101-pair-1-0': clip16,
-  'c101-pair-1-1': clip17,
   'c101-raj-message': clip18,
 }

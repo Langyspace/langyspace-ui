@@ -1,60 +1,59 @@
-import { PromptExercise } from '../shared/LessonExercises'
+import { useState } from 'react'
 import { useVocabularyAudio } from '../shared/useVocabularyAudio'
 import { vocabularyRecordings } from './B201.vocabularyAudio'
-import type { VocabularySectionProps } from './B201.types'
-import { VocabularyControls } from '../shared/VocabularyControls'
-import { LessonHint } from '../shared/LessonHint'
-import { useState } from 'react'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
-import type { CorrectionItem } from '../shared/Lesson.types'
-import { ana } from './B201.data'
-import { Button } from '../../../src/components/Button/Button'
+import { expressionRecordings } from './B201.expressionAudio'
+import { StatementReview } from '../shared/StatementReview'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
-import type { WarmUpProps, WordTableProps } from './B201.types'
-import { content, vocabulary, warmUps, image, kim } from './B201.data'
-import * as S from './B201.styles'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import { KeyValueList } from '../../../src/components/Details/KeyValueList'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import type { CorrectionItem } from '../shared/Lesson.types'
+import type {
+  WarmUpProps,
+  WordTableProps,
+  VocabularySectionProps,
+} from './B201.types'
+import { content, vocabulary, warmUps, image, kim, ana } from './B201.data'
+
 export function VocabularySection({
-  active: pageActive = true,
+  active = true,
 }: VocabularySectionProps = {}) {
-  const audio = useVocabularyAudio(vocabularyRecordings, pageActive)
-  const [ids, setIds] = useState<string[]>([]),
-    [active, setActive] = useState(''),
-    [all, setAll] = useState(false),
-    [initial, setInitial] = useState(false)
+  const audio = useVocabularyAudio(vocabularyRecordings, active)
+  const [ids, setIds] = useState<string[]>([])
+  const [all, setAll] = useState(false)
+  const [initial, setInitial] = useState(false)
   return (
-    <S.Stack>
-      <S.LargeVocabularyGrid
-        items={vocabulary}
-        columns={4}
-        density="regular"
-        imageVariant="isolated"
-        imageFit="contain"
-        surface="plain"
-        revealVariant="tooltip"
-        revealOnHover={false}
-        activeId={active}
-        revealedIds={ids}
-        showAll={all}
-        showInitial={initial}
-        onPlay={(id) => {
-          const item = vocabulary.find((x) => x.id === id)
-          if (item) audio.speak([{ id, text: item.word }])
-        }}
-        onReveal={(id) => {
-          setActive(id)
-          setIds((old) => (old.includes(id) ? old : [...old, id]))
-        }}
-      />
-      <VocabularyControls
-        showInitial={initial}
-        showAll={all}
-        onToggleInitial={() => setInitial(!initial)}
-        onToggleAll={() => setAll(!all)}
-      />
-    </S.Stack>
+    <VocabularyGrid
+      items={vocabulary}
+      columns={4}
+      density="regular"
+      imageVariant="isolated"
+      imageFit="contain"
+      surface="plain"
+      revealVariant="tooltip"
+      revealOnHover={false}
+      revealedIds={ids}
+      showAll={all}
+      showInitial={initial}
+      controls={{
+        showAll: all,
+        showInitial: initial,
+        onToggleInitial: () => setInitial(!initial),
+        onToggleAll: () => setAll(!all),
+      }}
+      onReveal={(id) =>
+        setIds((old) => (old.includes(id) ? old : [...old, id]))
+      }
+      onPlay={(id) => {
+        const item = vocabulary.find((x) => x.id === id)
+        if (item) audio.speak([{ id, text: item.word }])
+      }}
+    />
   )
 }
 export function WarmUpSection({ index }: WarmUpProps) {
@@ -62,231 +61,235 @@ export function WarmUpSection({ index }: WarmUpProps) {
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(w.a)
   return (
-    <S.Stack>
-      <LearningDialogue
+    <ExercisePanel
+      variant="warmup"
+      warmupMediaSizing="presentation"
+      counter={`${index + 1}/3`}
+      media={
+        <img
+          src={image(w.pic)}
+          alt={
+            vocabulary.find((v) => v.imageUrl === image(w.pic))?.imageAlt ??
+            'An object from Ana’s trip.'
+          }
+        />
+      }
+    >
+      {w.o.map((option, i) => (
+        <QuizOption
+          key={option}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === w.a
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          disabled={done}
+          onClick={() => setAttempts((old) => [...old, i])}
+        >
+          {option}
+        </QuizOption>
+      ))}
+    </ExercisePanel>
+  )
+}
+export function WordTableSection({
+  grammar = false,
+  active = true,
+}: WordTableProps) {
+  const [ids, setIds] = useState<string[]>([])
+  const [index, setIndex] = useState(0)
+  const audio = useVocabularyAudio(expressionRecordings, active && !grammar)
+  if (grammar)
+    return (
+      <RolePlayExercise
+        presentation="instructions"
         density="compact"
-        lines={[
-          {
-            id: 'kim',
-            speaker: 'Kim asks Ana',
-            avatarUrl: kim,
-            side: 'start',
-            content: w.q,
-          },
-        ]}
-      />
-      <ExercisePanel
-        variant="warmup"
-        counter={`${index + 1}/3`}
-        media={
-          <S.SceneImage
-            src={image(w.pic)}
-            alt={
-              vocabulary.find((v) => v.imageUrl === image(w.pic))?.imageAlt ??
-              'Question scene'
+        situation=""
+        steps={[]}
+        completedIds={[]}
+        onStepToggle={() => undefined}
+        image={{
+          src: image('dead-phone'),
+          alt: 'A phone with an empty battery.',
+        }}
+        tracker={
+          <GrammarTable
+            title="One past event, different time perspectives"
+            captionVisibility="screen-reader"
+            columns={{
+              subject: 'Time focus',
+              verb: 'Form',
+              example: 'Ana’s story',
+            }}
+            rows={content.grammar.map((row) => ({
+              id: row.id,
+              subject: row.question,
+              verb: row.form,
+              example: row.example,
+            }))}
+            explanation={
+              <Common.Hint>
+                Look back from a past point, not from now. I’d = I had here. For
+                two hours is a duration; since two o’clock is a starting point.
+              </Common.Hint>
             }
           />
         }
       >
-        <S.Stack>
-          {
-            <S.Stack>
-              {w.o.map((option, i) => (
-                <QuizOption
-                  key={option}
-                  letter={String.fromCharCode(65 + i)}
-                  feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
-                  density="compact"
-                  state={
-                    attempts.includes(i)
-                      ? i === w.a
-                        ? 'correct'
-                        : 'wrong'
-                      : done
-                        ? 'dim'
-                        : 'default'
-                  }
-                  disabled={done}
-                  onClick={() => {
-                    setAttempts((old) => [...old, i])
-                  }}
-                >
-                  {option}
-                </QuizOption>
-              ))}
-            </S.Stack>
-          }
-          <PromptExercise
-            numbered={false}
-            items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
-          />
-        </S.Stack>
-      </ExercisePanel>
-    </S.Stack>
+        <KeyValueList
+          tone="material"
+          density="compact"
+          layout="stacked"
+          items={[
+            {
+              id: 'point',
+              label: 'The reference point',
+              value: 'At 4 pm, Ana’s phone died.',
+            },
+            {
+              id: 'activity',
+              label: 'Before 4 pm',
+              value: 'She had been using it as a map all day.',
+            },
+            {
+              id: 'completed',
+              label: 'Already completed',
+              value: 'She had left her charger at the hotel.',
+            },
+          ]}
+        />
+      </RolePlayExercise>
+    )
+  const rows = content.expressions.slice(index * 4, index * 4 + 4)
+  return (
+    <ExercisePanel navigation={{ index, count: 2, onChange: setIndex }}>
+      <GrammarTable
+        title="Travel expressions"
+        captionVisibility="screen-reader"
+        columns={{
+          subject: 'In Portuguese',
+          verb: 'English',
+          example: 'In context',
+        }}
+        hiddenAnswers
+        revealedIds={ids}
+        rows={rows.map((r) => ({
+          id: r.id,
+          subject: r.pt,
+          verb: r.en,
+          example: r.example,
+        }))}
+        onReveal={(id) => {
+          setIds((old) => (old.includes(id) ? old : [...old, id]))
+          const item = content.expressions.find((r) => r.id === id)
+          if (item) audio.speak([{ id, text: item.en }])
+        }}
+        onPlay={(id) => {
+          const item = content.expressions.find((r) => r.id === id)
+          if (item) audio.speak([{ id, text: item.en }])
+        }}
+      />
+    </ExercisePanel>
   )
 }
-export function WordTableSection({ grammar = false }: WordTableProps) {
-  const [ids, setIds] = useState<string[]>([]),
-    [unlocked, setUnlocked] = useState(false),
-    [practice, setPractice] = useState(false),
-    [support, setSupport] = useState(false)
-  const rows = grammar
-    ? content.grammar.map((r) => ({
-        id: r.id,
-        subject: r.question,
-        verb: r.form,
-        example: r.example,
-        hint: r.hint,
-      }))
-    : content.expressions.map((r) => ({
-        id: r.id,
-        subject: r.pt,
-        verb: r.en,
-        example: r.example,
-        hint: '',
-      }))
-  const reveal = (id: string) => {
-    const next = ids.includes(id) ? ids : [...ids, id]
-    setIds(next)
-    if (next.length === rows.length) setUnlocked(true)
+export function ChronologySection() {
+  const [selected, setSelected] = useState<string>()
+  const [matches, setMatches] = useState<Record<string, string>>({})
+  const [incorrect, setIncorrect] = useState<string>()
+  const correct: Record<string, string> = {
+    before: 'map',
+    moment: 'died',
+    after: 'help',
   }
   return (
-    <S.GrammarColumns $explanation={grammar || unlocked}>
-      {grammar || unlocked ? (
-        <S.Stack>
-          {grammar ? (
-            <S.Explanation>
-              <h3>had been + -ing</h3>
-              <p>
-                Use it for something that was happening for some time{' '}
-                <b>before</b> another moment in the past. I’d been walking for
-                two hours <b>when</b> my phone died. Here, <b>’d = had</b>.
-              </p>
-              <LessonHint context="Form and meaning">
-                <b>Form and meaning</b>
-                <p>
-                  <b>Negative:</b> I hadn’t been checking my battery.
-                </p>
-                <p>
-                  <b>Question:</b> Had you been using your phone? How long had
-                  you been waiting?
-                </p>
-                <p>
-                  <b>For</b> two hours · <b>since</b> two o’clock. The reference
-                  point is in the past.
-                </p>
-                <p>
-                  Use <b>had + past participle</b> for a completed earlier
-                  action or a state: I’d left my charger. I’d known Raj for
-                  years.
-                </p>
-                <p>
-                  The continuous form focuses on activity or duration; the
-                  activity may have just stopped or still have been continuing.
-                </p>
-              </LessonHint>
-            </S.Explanation>
-          ) : null}
-          {unlocked ? (
-            <S.Explanation>
-              {grammar ? (
-                <>
-                  <h3>Four tenses, one story</h3>
-                  <p>
-                    What happened: <b>past simple</b> (My phone died.)
-                  </p>
-                  <p>
-                    What was happening at that moment: <b>was + -ing</b> (I was
-                    walking.)
-                  </p>
-                  <p>
-                    What had happened before: <b>had + participle</b> (I’d left
-                    my charger.)
-                  </p>
-                  <p>
-                    What had been happening for some time before:{' '}
-                    <b>had been + -ing</b> (I’d been using it all day.)
-                  </p>
-                </>
-              ) : (
-                <>
-                  <h3>Careful</h3>
-                  <p>
-                    <b>eventually</b> is not “eventualmente”. Eventualmente (de
-                    vez em quando) = <b>sometimes</b>. <b>I got lost</b>, e não
-                    I lost myself. <b>borrow</b> = you take; <b>lend</b> = you
-                    give: Can you lend me your charger? <b>ran</b> and{' '}
-                    <b>lent</b> are the past.
-                  </p>
-                  <p>
-                    Em português, emprestar serve para os dois lados; em inglês,
-                    são dois verbos.
-                  </p>
-                </>
-              )}
-            </S.Explanation>
-          ) : null}
-        </S.Stack>
-      ) : null}
-      <S.Stack>
-        <S.LessonTable
-          title={grammar ? 'Ana’s day' : 'A day with no battery'}
-          hiddenAnswers
-          revealedIds={ids}
-          onReveal={reveal}
-          revealLabel={grammar ? 'Reveal form' : 'Reveal expression'}
-          columns={{
-            subject: grammar ? 'Kim asks' : 'Em português',
-            verb: grammar ? 'Form' : 'Expression',
-            example: 'Example',
-          }}
-          rows={rows.map((row) => ({
-            ...row,
-            translation: row.hint || undefined,
-          }))}
-        />
-        {!grammar ? (
-          <Button
-            size="sm"
-            variant="secondary"
-            onClick={() => {
-              setIds([])
-              if (unlocked) setPractice(true)
-            }}
-          >
-            Hide all
-          </Button>
-        ) : null}
-        {unlocked && (grammar || practice) ? (
-          <S.Now>
-            <b>Now you</b>
-            <p>
-              {grammar
-                ? 'What had you been doing before this class? Tell your teacher: I’d been …ing for … when the class started. Then ask: And you?'
-                : 'When did you last get lost? Tell your teacher. Then ask: And you?'}
-            </p>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-expanded={support}
-              onClick={() => setSupport(!support)}
-            >
-              {support ? 'Hide starters' : 'Show starters'}
-            </Button>
-            {support ? (
-              <S.Hint>
-                {grammar
-                  ? 'I’d been working · cooking · studying · driving …'
-                  : 'I got lost in … · I’d been walking for … · Never! I always use my phone.'}
-              </S.Hint>
-            ) : null}
-          </S.Now>
-        ) : null}
-      </S.Stack>
-    </S.GrammarColumns>
+    <MatchPairs
+      questionLabel="Time point"
+      answerLabel="Ana’s story"
+      selectedQuestionId={selected}
+      matches={matches}
+      incorrectAnswerId={incorrect}
+      questions={[
+        { id: 'before', marker: 1, label: 'Before the phone died' },
+        { id: 'moment', marker: 2, label: 'At four o’clock' },
+        { id: 'after', marker: 3, label: 'After the phone died' },
+      ]}
+      answers={[
+        { id: 'help', marker: 'A', label: 'I asked a doorman for help.' },
+        {
+          id: 'map',
+          marker: 'B',
+          label: 'I’d been using it as a map all day.',
+        },
+        { id: 'died', marker: 'C', label: 'My phone died.' },
+      ]}
+      onQuestionSelect={(id) => {
+        setSelected(id)
+        setIncorrect(undefined)
+      }}
+      onAnswerSelect={(id) => {
+        if (!selected) return
+        if (correct[selected] === id) {
+          setMatches((old) => ({ ...old, [selected]: id }))
+          setSelected(undefined)
+          setIncorrect(undefined)
+        } else setIncorrect(id)
+      }}
+    />
   )
 }
-
+export function MissingDetailSection() {
+  const [attempts, setAttempts] = useState<number[]>([])
+  const done = attempts.includes(0)
+  return (
+    <ExercisePanel>
+      <LearningDialogue
+        density="compact"
+        lines={[
+          {
+            id: 'context',
+            speaker: 'Ana',
+            avatarUrl: ana,
+            side: 'start',
+            content:
+              'I’d been waiting at the café when someone offered to help.',
+          },
+        ]}
+      />
+      {[
+        'How long had you been waiting?',
+        'What do you usually order at cafés?',
+        'Have you ever been to New York?',
+      ].map((text, i) => (
+        <QuizOption
+          key={text}
+          letter={String.fromCharCode(65 + i)}
+          density="compact"
+          disabled={done}
+          feedbackOutcome={i === 0 ? 'correct' : 'wrong'}
+          state={
+            attempts.includes(i)
+              ? i === 0
+                ? 'correct'
+                : 'wrong'
+              : done
+                ? 'dim'
+                : 'default'
+          }
+          onClick={() => setAttempts((old) => [...old, i])}
+        >
+          {text}
+        </QuizOption>
+      ))}
+    </ExercisePanel>
+  )
+}
 export function DialogueSection({
   lines,
 }: {
@@ -318,38 +321,5 @@ export function CorrectionSection({
 }: {
   items: readonly CorrectionItem[]
 }) {
-  const [ids, setIds] = useState<string[]>([])
-  return (
-    <S.Stack>
-      {items.map((r, i) => (
-        <RevealCard
-          key={r.id}
-          marker={i + 1}
-          revealed={ids.includes(r.id)}
-          onClick={() =>
-            setIds((old) =>
-              old.includes(r.id)
-                ? old.filter((x) => x !== r.id)
-                : [...old, r.id],
-            )
-          }
-          answer={
-            <>
-              <b>{r.ok ? 'This is correct.' : r.a}</b>
-              <p>{r.why}</p>
-            </>
-          }
-        >
-          {r.s}
-        </RevealCard>
-      ))}
-      <S.Now>
-        <b>One from today</b>
-        <p>
-          Your teacher repeats a sentence from your conversation. Improve it
-          together.
-        </p>
-      </S.Now>
-    </S.Stack>
-  )
+  return <StatementReview items={items} />
 }

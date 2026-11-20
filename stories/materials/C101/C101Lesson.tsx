@@ -1,4 +1,3 @@
-import { WarmupPage } from '../shared/WarmupPage.styles'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -19,6 +18,7 @@ import {
   Dialogue,
   Grammar,
   NaturalReview,
+  RespondToRaj,
 } from './C101.practice'
 import { YourVersion, Listening, RolePlay } from './C101.conversation'
 import { useC101Audio } from './C101.audio'
@@ -32,32 +32,32 @@ const pageInfo: Record<string, [string, string, string]> = {
   s1: [
     'C1 · Lesson 01',
     'It tends to come across as …',
-    'Revisit last class, then respond to a different point of view.',
+    'Share experiences of giving and receiving difficult feedback.',
   ],
   s2: [
     'Expressions',
     'Giving feedback',
-    'Read the context. Explain the expression, then click to check.',
+    'Suggest an expression for the gap, then click to reveal and listen.',
   ],
   s21: [
     'Expressions',
     'Feedback in context',
-    'Read the context. Explain the expression, then click to check.',
+    'Suggest an expression for the gap, then click to reveal and listen.',
   ],
   s31: [
     'Warm up',
     'From blunt to tactful',
-    'Help Ana turn her notes into constructive feedback.',
+    'Choose feedback that is specific without overgeneralising.',
   ],
   s32: [
     'Warm up',
     'Ask for a change',
-    'Try a suggestion before revealing the options.',
+    'Choose a specific request that leaves room for a response.',
   ],
   s33: [
     'Warm up',
-    'Feedback that stayed with you',
-    'Choose Ana’s answer, then share your own experience.',
+    'Take another perspective',
+    'Acknowledge Raj’s perspective without losing the client’s concern.',
   ],
   s4: [
     'Reading',
@@ -66,13 +66,13 @@ const pageInfo: Record<string, [string, string, string]> = {
   ],
   s51: [
     'Pronunciation',
-    'Soft or harsh?',
-    'Compare the two deliveries and explain the impression each creates.',
+    'Same words, different effect',
+    'Listen to both versions. Explain how the delivery changes the impression.',
   ],
   s52: [
-    'Pronunciation',
-    'A suggestion or an order?',
-    'Compare the same words in two deliveries, then imitate them.',
+    'Decision',
+    'Respond to Raj',
+    'Choose a reply that balances Raj’s independence with Laura’s request.',
   ],
   s6: [
     'Dialogue · 1 of 2',
@@ -84,20 +84,15 @@ const pageInfo: Record<string, [string, string, string]> = {
     'Making the point land',
     'Listen for the changes that make Ana’s feedback more constructive.',
   ],
-  s61: [
-    'Dialogue',
-    'Read between the lines',
-    'Answer with evidence from Kim and Ana’s conversation.',
-  ],
   s7: [
     'Grammar',
     'Softer, please',
-    'Rephrase each direct sentence before revealing an alternative.',
+    'Explore two goals: describe the effect and ask for a change.',
   ],
   s8: [
     'Your version',
     'Talk to Raj',
-    'Give clear, tactful feedback; respond when Raj questions it.',
+    'Give Raj a clear observation and negotiate a workable next step.',
   ],
   s9: [
     'Listening',
@@ -106,13 +101,13 @@ const pageInfo: Record<string, [string, string, string]> = {
   ],
   s10: [
     'Review',
-    'Natural or not?',
-    'Judge the wording and tone, then improve what needs changing.',
+    'Does it fit this conversation?',
+    'Judge the wording in a specific peer-to-peer feedback situation.',
   ],
   s11: [
     'Role play',
     'Your feedback',
-    'Handle a difficult conversation, then swap perspectives.',
+    'Choose a case. Respond to Raj’s concern without losing your point.',
   ],
   s12: [
     'Before next class',
@@ -161,11 +156,10 @@ function C101Content({ initialPageId }: C101LessonProps) {
     if (['s31', 's32', 's33'].includes(id))
       return <WarmUp index={Number(id.slice(2)) - 1} />
     if (id === 's4') return <Reading />
-    if (id === 's51' || id === 's52')
-      return <Prosody index={id === 's51' ? 0 : 1} audio={audio} />
+    if (id === 's51') return <Prosody audio={audio} />
+    if (id === 's52') return <RespondToRaj />
     if (id === 's6' || id === 's62')
       return <Dialogue part={id === 's6' ? 0 : 1} audio={audio} />
-    if (id === 's61') return <C101Questions items={content.comprehension} />
     if (id === 's7') return <Grammar />
     if (id === 's8') return <YourVersion />
     if (id === 's9') return <Listening active={pageId === id} />
@@ -215,14 +209,13 @@ function C101Content({ initialPageId }: C101LessonProps) {
         }
         pages={c101PageIds.map((id) => {
           const [eyebrow, title, instruction] = pageInfo[id]!
-          const Page = ['s31', 's32', 's33'].includes(id)
-            ? WarmupPage
-            : SlidePage
+          const Page = SlidePage
           return {
             id,
             label: `${eyebrow} · ${title}`,
             content: (
               <Page
+                density="dense"
                 eyebrow={eyebrow}
                 title={
                   id === 's6' || id === 's62' ? (
@@ -233,7 +226,9 @@ function C101Content({ initialPageId }: C101LessonProps) {
                 }
                 instruction={instruction}
                 questions={
-                  id === 's6' || id === 's62' ? (
+                  id === 's4' ? (
+                    <C101Questions items={content.reading} />
+                  ) : id === 's6' || id === 's62' ? (
                     <C101Questions
                       items={
                         id === 's6'
@@ -249,7 +244,7 @@ function C101Content({ initialPageId }: C101LessonProps) {
               >
                 {body(id)}
                 {audio.error && pageId === id ? (
-                  <S.AudioStatus role="status">{audio.error}</S.AudioStatus>
+                  <S.Hint role="status">{audio.error}</S.Hint>
                 ) : null}
               </Page>
             ),

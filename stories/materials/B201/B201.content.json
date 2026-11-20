@@ -66,7 +66,7 @@
     {
       "id": "E.3",
       "pt": "emprestar a alguém",
-      "en": "lend (lent)",
+      "en": "lend",
       "example": "A woman lent me her power bank."
     },
     {
@@ -83,25 +83,9 @@
     },
     {
       "id": "E.6",
-      "pt": "no fim, depois de muito tempo (parece “eventualmente”, mas não é)",
+      "pt": "no fim, depois de algum tempo",
       "en": "eventually",
       "example": "Eventually, I found the restaurant."
-    }
-  ],
-  "pronunciation": [
-    {
-      "c": [
-        ["I’d walked", "eu tinha andado"],
-        ["I’d been walking", "eu vinha andando"]
-      ],
-      "tip": "“I’d been” se diz “aid-bin”, numa batida só, com o “i” curto de “bin”. Em “I’d walked”, o “d” cola no “w”: “aid-uókt”."
-    },
-    {
-      "c": [
-        ["I’ve been waiting", "venho esperando até agora"],
-        ["I’d been waiting", "vinha esperando até aquele momento"]
-      ],
-      "tip": "No ’ve, os dentes de cima tocam o lábio de baixo, como no “v” de “vela”. No ’d, a língua bate atrás dos dentes de cima, como no começo de “dia” dito sem o “i”."
     }
   ],
   "dialogue": [
@@ -181,110 +165,28 @@
   "grammar": [
     {
       "id": "G.0",
-      "question": "Why did your phone die?",
+      "question": "Activity before that point",
       "form": "had been + -ing",
-      "example": "I’d been using it as a map all day.",
-      "hint": "for some time, before it died"
-    },
-    {
-      "id": "G.1",
-      "question": "How long had you been waiting at the café?",
-      "form": "had been + -ing + for",
-      "example": "I’d been waiting for twenty minutes.",
-      "hint": "for + time"
+      "example": "I’d been using it as a map all day."
     },
     {
       "id": "G.2",
-      "question": "Why didn’t you have your charger?",
-      "form": "had + participle",
-      "example": "I’d left it at the hotel.",
-      "hint": "it happened before, and finished"
+      "question": "An earlier completed action",
+      "form": "had + past participle",
+      "example": "I’d left my charger at the hotel."
     },
     {
       "id": "G.3",
-      "question": "What were you doing at four?",
-      "form": "was + -ing",
-      "example": "I was walking near Times Square.",
-      "hint": "in the middle of it"
+      "question": "In progress at that moment",
+      "form": "was / were + -ing",
+      "example": "I was walking when my phone died."
     },
     {
       "id": "G.4",
-      "question": "What time did you get to the dinner?",
+      "question": "The past event itself",
       "form": "past simple",
-      "example": "I got there at eight.",
-      "hint": "the main thing that happened"
+      "example": "My phone died at four."
     }
-  ],
-  "yourVersionSource": [
-    [
-      ["1", "Kim", "So, how was your day?", ""],
-      [
-        "2",
-        "Aluna",
-        "say when and where your phone died (you choose)",
-        "My phone died at … in … · It ran out of battery at …"
-      ],
-      ["3", "Kim", "Oh no! Why?", ""],
-      [
-        "4",
-        "Aluna",
-        "say what you’d been doing, and where your charger was",
-        "I’d been … all … · I’d left my charger …"
-      ],
-      ["5", "Kim", "So what did you do?", ""],
-      [
-        "6",
-        "Aluna",
-        "say what you tried, and what went wrong",
-        "I tried …, but … · I got lost. · I didn’t have the address."
-      ],
-      ["7", "Kim", "And then?", ""],
-      [
-        "8",
-        "Aluna",
-        "say who helped you, and how long you’d been waiting",
-        "I’d been … for … when … lent me …"
-      ],
-      ["9", "Kim", "And in the end?", ""],
-      ["10", "Aluna", "say how it ended", "Eventually, … · By then, …"]
-    ],
-    [
-      ["1", "Aluna", "ask about her day", "So, how was your day?"],
-      [
-        "2",
-        "Teacher",
-        "Long! The dinner was great, but the taxi was terrible.",
-        ""
-      ],
-      ["3", "Aluna", "ask why", "Oh no! Why?"],
-      [
-        "4",
-        "Teacher",
-        "There was a lot of traffic. I’d been sitting in the taxi for half an hour!",
-        ""
-      ],
-      ["5", "Aluna", "ask what she did", "So what did you do?"],
-      [
-        "6",
-        "Teacher",
-        "I turned on my phone, and there was a message from Raj.",
-        ""
-      ],
-      ["7", "Aluna", "ask what happened next", "And then?"],
-      [
-        "8",
-        "Teacher",
-        "I got to the restaurant at eight. By then, they’d been waiting for an hour!",
-        ""
-      ],
-      ["9", "Aluna", "ask how it ended", "And in the end?"],
-      [
-        "10",
-        "Teacher",
-        "Eventually, I had dinner. Do you want to hear Raj’s message?",
-        ""
-      ]
-    ]
   ],
   "listeningStatements": [
     {
@@ -318,35 +220,40 @@
       "s": "I was walking since two o’clock when my phone died.",
       "ok": false,
       "a": "I’d been walking since two o’clock when my phone died.",
-      "why": "Grammar. For some time before another moment: had been + -ing. Em português é “eu estava andando desde as duas”."
+      "why": "Use had been + -ing for an activity continuing before another past event.",
+      "pre": "Describe an activity continuing up to a past event."
     },
     {
       "id": "C.1",
       "s": "Can you borrow me your charger?",
       "ok": false,
       "a": "Can you lend me your charger?",
-      "why": "Grammar. You give: lend. You take: borrow (Can I borrow your charger?). Em português, emprestar serve para os dois."
+      "why": "Lend means give temporarily; borrow means take temporarily. Can I borrow your charger? also works.",
+      "pre": "Ask to use someone else’s charger."
     },
     {
       "id": "C.2",
       "s": "I’d been waiting for twenty minutes when a woman lent me her power bank.",
       "ok": true,
       "a": "I’d been waiting for twenty minutes when a woman lent me her power bank.",
-      "why": "had been + -ing for the waiting, past simple for what happened."
+      "why": "The continuous describes the earlier waiting; the simple past gives the event that interrupted it.",
+      "pre": "Describe waiting before someone offered help."
     },
     {
       "id": "C.3",
       "s": "I lost myself in Manhattan.",
       "ok": false,
       "a": "I got lost in Manhattan.",
-      "why": "Sounds strange. In English: get lost. “Me perdi” não é lost myself."
+      "why": "Get lost describes being unable to find your way. Lose yourself has other, often figurative meanings.",
+      "pre": "Explain that you could not find your way back."
     },
     {
       "id": "C.4",
       "s": "Eventually my phone dies, maybe once a month.",
       "ok": false,
       "a": "Sometimes my phone dies, maybe once a month.",
-      "why": "Sounds strange. eventually = no fim, e não diz quantas vezes. Eventualmente (de vez em quando) = sometimes."
+      "why": "Eventually means in the end. Sometimes describes frequency.",
+      "pre": "Describe something that happens from time to time."
     }
   ],
   "listening": {

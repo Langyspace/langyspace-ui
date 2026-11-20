@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useVocabularyAudio } from '../shared/useVocabularyAudio'
 import { vocabularyRecordings } from './B101.vocabularyAudio'
-import { Button } from '../../../src/components/Button/Button'
+import { StatementReview } from '../shared/StatementReview'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
@@ -175,69 +175,7 @@ export function ContextPracticeSection({ index }: { index: number }) {
   )
 }
 export function CorrectionSection() {
-  const [index, setIndex] = useState(0)
-  const [attempts, setAttempts] = useState<Record<string, string[]>>({})
-  const row = content.corrections[index]!
-  const answer = row.ok ? 'Right' : 'Wrong'
-  const chosen = attempts[row.id] ?? []
-  const done = chosen.includes(answer)
-  return (
-    <ExercisePanel
-      counter={`${index + 1}/${content.corrections.length}`}
-      title={row.pre ?? 'Check the sentence.'}
-    >
-      <Common.Surface>
-        <Common.Heading $prompt>{row.s}</Common.Heading>
-      </Common.Surface>
-      {['Right', 'Wrong'].map((label, i) => (
-        <QuizOption
-          key={label}
-          letter={String.fromCharCode(65 + i)}
-          density="compact"
-          feedbackOutcome={label === answer ? 'correct' : 'wrong'}
-          disabled={done}
-          state={
-            chosen.includes(label)
-              ? label === answer
-                ? 'correct'
-                : 'wrong'
-              : done
-                ? 'dim'
-                : 'default'
-          }
-          onClick={() =>
-            setAttempts((old) => ({ ...old, [row.id]: [...chosen, label] }))
-          }
-        >
-          {label}
-        </QuizOption>
-      ))}
-      {done ? (
-        <Common.Surface>
-          {row.a ? <strong>{row.a}</strong> : null}
-          <Common.Hint>{row.why}</Common.Hint>
-        </Common.Surface>
-      ) : null}
-      <Common.Row>
-        <Button
-          variant="secondary"
-          size="sm"
-          disabled={index === 0}
-          onClick={() => setIndex(index - 1)}
-        >
-          Previous
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          disabled={index === content.corrections.length - 1}
-          onClick={() => setIndex(index + 1)}
-        >
-          Next
-        </Button>
-      </Common.Row>
-    </ExercisePanel>
-  )
+  return <StatementReview items={content.corrections} />
 }
 export function SourceQuestions({
   items,

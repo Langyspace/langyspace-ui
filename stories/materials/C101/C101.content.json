@@ -1,5 +1,5 @@
 {
-  "order": [1, 2, 21, 31, 32, 33, 4, 51, 52, 6, 62, 61, 7, 8, 9, 10, 11, 12],
+  "order": [1, 2, 21, 31, 32, 33, 4, 51, 6, 62, 7, 8, 9, 52, 10, 11, 12],
   "expressions": [
     {
       "s": "Short emails can {come across as} cold.",
@@ -23,17 +23,17 @@
       "i": 2
     },
     {
-      "s": "Ana is a team leader now. There’s {a learning curve}.",
+      "s": "Starting a new role involves {a learning curve}.",
       "e": "a learning curve",
-      "m": "time to learn something new",
+      "m": "the process of learning a new skill and the difficulty involved",
       "t": "uma fase de aprendizado",
       "i": 3
     },
     {
       "s": "Raj listened to the feedback and said: “I’ll {take it on board}.”",
       "e": "take it on board",
-      "m": "I’ll think about it and use it",
-      "t": "vou levar isso em conta",
+      "m": "consider feedback seriously and use it where appropriate",
+      "t": "levar em conta, considerar",
       "i": 4
     },
     {
@@ -46,14 +46,14 @@
     {
       "s": "Good feedback is {constructive}: it says what to do next.",
       "e": "constructive",
-      "m": "it helps you get better",
+      "m": "intended to improve something through useful, specific suggestions",
       "t": "construtivo",
       "i": 6
     },
     {
       "s": "“Your slides were bad.” That sounds {harsh}.",
       "e": "harsh",
-      "m": "too hard, not kind",
+      "m": "overly severe or unkind in tone",
       "t": "duro, ríspido",
       "i": 7
     }
@@ -146,38 +146,38 @@
   ],
   "grammar": [
     {
-      "d": "Your slides have too much text.",
-      "f": "tend to",
+      "d": "In recent presentations, your slides have often contained too much text.",
+      "f": "tend to + verb",
       "ex": "Your slides tend to have a lot of text.",
       "n": "often, not always",
       "i": 0
     },
     {
       "d": "The end was rushed.",
-      "f": "seem + a little",
+      "f": "seem + (a little) + adjective",
       "ex": "The end seemed a little rushed.",
       "n": "this is how I saw it",
       "i": 1
     },
     {
       "d": "Your emails are cold.",
-      "f": "might come across as",
+      "f": "might come across as + adjective",
       "ex": "Your emails might come across as a little cold.",
       "n": "this is how others might see it",
       "i": 2
     },
     {
       "d": "Cut some slides.",
-      "f": "You might want to",
+      "f": "You might want to + verb",
       "ex": "You might want to cut some slides.",
       "n": "a suggestion",
       "i": 3
     },
     {
       "d": "Prepare the answers before the meeting.",
-      "f": "I wonder if you could",
+      "f": "I wonder if you could + verb",
       "ex": "I wonder if you could prepare the answers before the meeting.",
-      "n": "a request: he can say no",
+      "n": "a tentative request, with room for a response",
       "i": 4
     },
     {
@@ -196,60 +196,33 @@
   ],
   "warmups": [
     {
-      "note": 0,
-      "kim": "WU.k1",
       "id": "WU.1",
+      "context": "Ana’s note: the second half was too fast to follow.",
       "a": 1,
       "o": [
-        "You talked too fast.",
-        "It seemed a little rushed.",
-        "It seemed a little slow."
-      ],
-      "why": {
-        "0": "It’s true, but it sounds harsh. Talk about the presentation, not about Raj.",
-        "2": "Ana’s note says too fast, not slow."
-      },
-      "form": "seem = this is how it looked to me",
-      "now": "Another note: “The end was too long.” Say it softly to Raj."
+        "Your delivery is always rushed, although I’m sure you mean well.",
+        "It seemed a little rushed in the second half, and I found the main point hard to follow.",
+        "I suppose it was probably absolutely fine, really."
+      ]
     },
     {
-      "note": 1,
-      "kim": "WU.k2",
       "id": "WU.2",
-      "a": 1,
-      "hide": true,
+      "context": "Ana wants fewer slides and more time for questions.",
+      "a": 2,
       "o": [
-        "Use fewer slides.",
-        "You might want to use fewer slides.",
-        "You might want to use more slides."
-      ],
-      "why": {
-        "0": "It’s an order. Make it a suggestion.",
-        "2": "Ana’s note says fewer slides, not more."
-      },
-      "form": "You might want to = a suggestion, not an order",
-      "now": "Now say a note about someone in your life, as an order. The teacher says it as a suggestion."
+        "I wonder if you could stop relying on slides altogether.",
+        "You might want to think about maybe doing something a little different.",
+        "Would you be open to trimming the slide deck so there’s more time for questions?"
+      ]
     },
     {
-      "q": "What’s the best feedback you’ve ever received?",
-      "tr": "Qual foi o melhor feedback que você já recebeu? · received = recebeu",
       "id": "WU.3",
+      "context": "Raj says: “I only received the slides on Monday.”",
       "a": 0,
       "o": [
-        "My first boss told me to ask more questions.",
-        "My first job was at a bank.",
-        "I told my first boss to ask more questions."
-      ],
-      "why": {
-        "1": "That’s about her job. The question is about feedback: what did someone tell her?",
-        "2": "That’s feedback you gave. The question is about feedback you received."
-      },
-      "now": "Answer about you. Who said it? Why was it good? Then ask your teacher: What’s the best feedback you’ve ever received?",
-      "chips": [
-        "My mom told me to …",
-        "A teacher once said …",
-        "I don’t remember any!",
-        "Nobody gives me feedback!"
+        "That helps me understand the timing. How could we make sure the deadline question is covered next time?",
+        "Fair enough. Let’s forget about the unanswered question.",
+        "If you’d prepared properly, that wouldn’t have happened."
       ]
     }
   ],
@@ -280,28 +253,28 @@
   "listening": "Hi, Ana, it’s Raj. Thanks for today. Really. It was… constructive. I’ll take it on board. I guess I did talk a bit fast. But, to be fair, nobody told me Laura would ask about the deadline. I didn’t know how to handle it. And the slides were Sarah’s. I only saw them on Monday. Anyway. I’ll try not to rush next time. Oh, and Thursday? I wonder if I could talk to Laura directly. Just me. I think it’s worth trying. Let me know. Thanks.",
   "listeningQuestions": [
     {
-      "q": "Raj thinks he talked a bit fast.",
+      "q": "Raj accepts part of the feedback but qualifies his responsibility.",
       "o": ["Yes", "No"],
       "a": 0,
-      "say": "Yes. He said he did talk a bit fast."
+      "say": "He accepts that he spoke fast, but offers context for the unanswered question and the slides."
     },
     {
-      "q": "Raj made the slides.",
+      "q": "Raj takes full responsibility for the slides and the unanswered deadline question.",
       "o": ["Yes", "No"],
       "a": 1,
-      "say": "No. They were Sarah’s. He only saw them on Monday."
+      "say": "The slides were Sarah’s, and he says he had not been warned about the deadline question."
     },
     {
-      "q": "Raj wants Ana at the Thursday meeting.",
+      "q": "Raj wants more independence at the follow-up meeting.",
       "o": ["Yes", "No"],
-      "a": 1,
-      "say": "No. He wants to talk to Laura directly, by himself."
+      "a": 0,
+      "say": "He wants to speak to Laura directly, by himself."
     }
   ],
   "corrections": [
     {
       "s": "Your presentation was bad.",
-      "a": "Some parts seemed a little rushed.",
+      "a": "The second half seemed rushed, and the main point was hard to follow.",
       "rt": true,
       "why": "Grammatical, but vague and judgmental. Identify the part that caused difficulty and give an example."
     },
@@ -309,12 +282,12 @@
       "s": "Use fewer slides next time.",
       "a": "You might want to use fewer slides next time.",
       "rt": true,
-      "why": "It’s an order. Make it a suggestion."
+      "why": "In this peer conversation, a specific invitation is more collaborative than a bare imperative. A directive could suit different authority or urgency."
     },
     {
       "s": "I wonder if we could prepare the answers together next time.",
       "ok": true,
-      "why": "A soft request: he can say no."
+      "why": "The proposal is specific and includes the speaker, while leaving room for the colleague’s response."
     },
     {
       "s": "I need to give you a feedback.",
@@ -323,28 +296,23 @@
     },
     {
       "s": "You don’t know how to present.",
-      "a": "Presenting to clients has a learning curve.",
+      "a": "When the deadline question went unanswered, the next steps were unclear. Could we prepare the key answers together?",
       "rt": true,
-      "why": "It’s about the person. Avoid that: talk about the work, and say it’s normal to learn."
+      "why": "Describe the behaviour and its effect, then propose a concrete next step. General reassurance about learning does not explain the concern."
     }
-  ],
-  "roleSteps": [
-    "Tell your teacher who the person is and what happened.",
-    "Now talk to the person: something good, what didn’t work, and one change.",
-    "The person doesn’t take it well. Answer, and keep your point.",
-    "Swap: now your teacher gives you feedback. Answer and ask questions."
   ],
   "review": [
     {
-      "question": "Should phones be banned at school? What do you think?",
-      "hint": "Despite …, I think …"
+      "question": "When have you received feedback you disagreed with?",
+      "hint": "At first, I felt… / What bothered me was…"
     },
     {
-      "question": "Who sees it differently? Explain their position fairly.",
-      "hint": "I think …, whereas …"
+      "question": "What helped you understand the other person’s concern?",
+      "hint": "A specific example helped me see…"
     },
     {
-      "question": "Ask your teacher, then respond to their view."
+      "question": "Ask your teacher how they handle a difficult feedback conversation.",
+      "hint": "How do you…? / What would you do if…?"
     }
   ],
   "grammarNotes": [

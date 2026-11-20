@@ -5,8 +5,8 @@ import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { B201Shell } from './B201Shell'
 import {
-  PronunciationPractice,
   ComprehensionPractice,
+  SourceQuestions,
 } from '../shared/LessonPractice'
 import type { LessonProps } from '../shared/Lesson.types'
 import {
@@ -14,6 +14,8 @@ import {
   WarmUpSection,
   WordTableSection,
   CorrectionSection,
+  ChronologySection,
+  MissingDetailSection,
   DialogueSection,
 } from './B201.practice'
 import {
@@ -21,13 +23,21 @@ import {
   ListeningSection,
   RolePlaySection,
 } from './B201.conversation'
-import { content, order, comprehension, reviewImages } from './B201.data'
+import { content, order, comprehension, warmUps } from './B201.data'
 import * as S from './B201.styles'
 const review = [
-  'If you could choose, would you work at home or in an office? Why?',
-  'Your teacher doesn’t agree. Answer: I see your point, but …',
-  'Now ask your teacher: Home or office? Why?',
-  'Ask your teacher about her week and follow up on one detail.',
+  {
+    question: 'What do you usually do when you get lost on a trip?',
+    hint: 'I usually… / One thing that helps is…',
+  },
+  {
+    question: 'Describe a time a plan changed unexpectedly.',
+    hint: 'I was… when… / I had planned to…',
+  },
+  {
+    question: 'Ask your teacher about a journey that went wrong.',
+    hint: 'What happened? / What did you do next?',
+  },
 ]
 function B201LessonContent({ initialPageId }: LessonProps) {
   return (
@@ -36,7 +46,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
       pageIds={order}
       initialPageId={initialPageId}
       label="B2.01 · Dead phone, no charger"
-      pages={(speech, activeId) =>
+      pages={(activeId) =>
         order.map((id) => {
           if (id === 's1')
             return {
@@ -46,29 +56,9 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 <SlidePage
                   eyebrow="Review"
                   title="Dead phone, no charger"
-                  instruction="Reconnect with last class: give reasons, respond and ask follow-up questions."
+                  instruction="Talk about journeys that did not go to plan."
                 >
-                  <S.Questions>
-                    {review.map((q, i) => (
-                      <S.Question key={q}>
-                        <S.Number>{i + 1}</S.Number>
-                        <div>
-                          {i === 0 ? (
-                            <S.RecallImages>
-                              {reviewImages.map((pic) => (
-                                <img
-                                  key={pic.alt}
-                                  src={pic.src}
-                                  alt={pic.alt}
-                                />
-                              ))}
-                            </S.RecallImages>
-                          ) : null}
-                          {q}
-                        </div>
-                      </S.Question>
-                    ))}
-                  </S.Questions>
+                  <SourceQuestions items={review} />
                 </SlidePage>
               ),
             }
@@ -82,7 +72,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   width="expanded"
                   density="dense"
                   title="No battery"
-                  instruction="Name the object, then explain how it could help on a trip."
+                  instruction="Name the items and person. Click to listen and check."
                 >
                   <VocabularySection active={activeId === id} />
                 </SlidePage>
@@ -97,12 +87,14 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Warm up"
                   width="expanded"
                   density="dense"
-                  title="Choose the correct answer."
-                  instruction={
-                    id === 's33'
-                      ? 'Kim asks Ana. Choose Ana’s answer. Then answer about you.'
-                      : 'Kim asks about Ana’s day in New York. Choose Ana’s answer.'
+                  title={
+                    [
+                      'Why did it die?',
+                      'Before the battery died',
+                      'Borrow or lend?',
+                    ][Number(id.at(-1)) - 1]
                   }
+                  instruction={warmUps[Number(id.at(-1)) - 1]!.q}
                 >
                   <WarmUpSection index={Number(id.at(-1)) - 1} />
                 </WarmupPage>
@@ -117,36 +109,43 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Vocabulary"
                   width="expanded"
                   title="Expressions"
-                  instruction="Read the Portuguese and say it in English. Then click to check."
+                  instruction="Say the expression, then click to reveal and listen."
                 >
-                  <WordTableSection />
+                  <WordTableSection active={activeId === id} />
                 </SlidePage>
               ),
             }
-          if (id === 's51' || id === 's52') {
-            const index = id === 's51' ? 0 : 1
+          if (id === 's51' || id === 's52')
             return {
               id,
-              label: `Pronunciation · ${index === 0 ? 'I’d walked or I’d been walking?' : 'I’ve been or I’d been?'}`,
+              label:
+                id === 's51'
+                  ? 'Practice · Reconstruct Ana’s afternoon'
+                  : 'Conversation · Ask for the missing detail',
               content: (
                 <SlidePage
-                  eyebrow="Pronunciation"
+                  eyebrow={id === 's51' ? 'Practice' : 'Conversation'}
+                  density="dense"
+                  width="reading"
                   title={
-                    index === 0
-                      ? 'I’d walked or I’d been walking?'
-                      : 'I’ve been or I’d been?'
+                    id === 's51'
+                      ? 'Reconstruct Ana’s afternoon'
+                      : 'Ask for the missing detail'
                   }
-                  instruction="Listen. Which one did you hear? Say it, then click it."
+                  instruction={
+                    id === 's51'
+                      ? 'Match each part of the story to its time point.'
+                      : 'Choose a question that finds out the missing duration.'
+                  }
                 >
-                  <PronunciationPractice
-                    index={index}
-                    pair={content.pronunciation[index]!}
-                    speech={speech}
-                  />
+                  {id === 's51' ? (
+                    <ChronologySection />
+                  ) : (
+                    <MissingDetailSection />
+                  )}
                 </SlidePage>
               ),
             }
-          }
           if (id === 's6' || id === 's62') {
             const part = id === 's6' ? 0 : 1
             return {
@@ -203,7 +202,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Grammar"
                   width="expanded"
                   title="What had been happening?"
-                  instruction="Read Kim’s question. Say Ana’s answer before you click the line."
+                  instruction="Start at a past event. Look back to what happened before it."
                 >
                   <WordTableSection grammar />
                 </SlidePage>
@@ -218,7 +217,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Your version"
                   width="conversation"
                   title="Your bad day"
-                  instruction="Create your version with your teacher, then swap roles."
+                  instruction="Tell Kim about a bad day, using your own details."
                 >
                   <YourVersionSection />
                 </SlidePage>
@@ -270,7 +269,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   width="expanded"
                   density="dense"
                   title="Everything went wrong"
-                  instruction="Tell Kim a new story about a different problem. Then ask about Kim’s day."
+                  instruction="Choose a situation. Tell Kim what led to the problem and how you resolved it."
                 >
                   <RolePlaySection />
                 </SlidePage>

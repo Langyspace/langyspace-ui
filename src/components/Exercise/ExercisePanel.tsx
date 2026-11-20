@@ -1,4 +1,5 @@
 import * as Styled from './ExercisePanel.styles'
+import { Button } from '../Button/Button'
 import type {
   ExercisePanelProps,
   ExerciseMonitorProps,
@@ -54,14 +55,49 @@ function MonitorFrame({
 export function ExercisePanel({
   title,
   counter,
+  navigation,
   workstationMeta,
   media,
   layout = 'stacked',
   monitorLayout = 'flow',
+  warmupMediaSizing = 'natural',
   variant = 'default',
   children,
   ...props
 }: ExercisePanelProps) {
+  const current = navigation
+    ? Math.max(0, Math.min(navigation.index, navigation.count - 1))
+    : 0
+  const progress =
+    counter ??
+    (navigation
+      ? `${navigation.count ? current + 1 : 0}/${navigation.count}`
+      : undefined)
+  const controls = navigation ? (
+    <Styled.Navigation
+      aria-label={navigation.labels?.region ?? 'Exercise navigation'}
+    >
+      <Button
+        variant="secondary"
+        size="sm"
+        disabled={current <= 0}
+        onClick={() => navigation.onChange(current - 1)}
+      >
+        {navigation.labels?.previous ?? 'Previous'}
+      </Button>
+      {variant === 'monitor' || variant === 'workstation' ? (
+        <Styled.Counter aria-live="polite">{progress}</Styled.Counter>
+      ) : null}
+      <Button
+        variant="secondary"
+        size="sm"
+        disabled={current >= navigation.count - 1}
+        onClick={() => navigation.onChange(current + 1)}
+      >
+        {navigation.labels?.next ?? 'Next'}
+      </Button>
+    </Styled.Navigation>
+  ) : null
   if (variant === 'monitor')
     return (
       <Styled.MonitorPanel {...props}>
@@ -72,6 +108,7 @@ export function ExercisePanel({
         >
           {children}
         </MonitorFrame>
+        {controls}
       </Styled.MonitorPanel>
     )
   if (variant === 'workstation')
@@ -85,16 +122,19 @@ export function ExercisePanel({
         <MonitorFrame title={title} workstationMeta={workstationMeta} form>
           {children}
         </MonitorFrame>
+        {controls}
       </Styled.Workstation>
     )
   const counterInMedia = variant === 'warmup' && Boolean(media)
   const heading = (
     <>
-      {title || (counter && !counterInMedia) ? (
+      {title || (progress && !counterInMedia) ? (
         <Styled.PanelHeading $warmup={variant === 'warmup'}>
           {title ? <h3>{title}</h3> : null}
-          {counter && !counterInMedia ? (
-            <Styled.Counter>{counter}</Styled.Counter>
+          {progress && !counterInMedia ? (
+            <Styled.Counter aria-live={navigation ? 'polite' : undefined}>
+              {progress}
+            </Styled.Counter>
           ) : null}
         </Styled.PanelHeading>
       ) : null}
@@ -106,10 +146,13 @@ export function ExercisePanel({
         <Styled.Warmup>
           {heading}
           {media ? (
-            <Styled.WarmupMedia data-exercise-media="true">
+            <Styled.WarmupMedia
+              data-exercise-media="true"
+              $presentation={warmupMediaSizing === 'presentation'}
+            >
               {media}
-              {counter ? (
-                <Styled.MediaCounter>{counter}</Styled.MediaCounter>
+              {progress ? (
+                <Styled.MediaCounter>{progress}</Styled.MediaCounter>
               ) : null}
             </Styled.WarmupMedia>
           ) : null}
@@ -130,6 +173,7 @@ export function ExercisePanel({
           <Styled.Stack>{children}</Styled.Stack>
         </>
       )}
+      {controls}
     </Styled.Panel>
   )
 }

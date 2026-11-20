@@ -48,6 +48,14 @@ export const Heading = styled.h3<{ $prompt?: boolean }>`
   font-size: ${theme.typography.fontSize.xl};
   line-height: 1.2;
 `
+export const Paragraph = styled.p`
+  margin: 0;
+  color: inherit;
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.45;
+  white-space: pre-line;
+`
 export const Tag = styled.span`
   font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};

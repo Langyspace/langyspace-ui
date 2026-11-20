@@ -4,8 +4,7 @@ import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { useLessonPage } from '../shared/useLessonPage'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
-import type { LessonShellProps } from '../shared/Lesson.types'
-import { useB201Speech } from './useB201Speech'
+import type { B201ShellProps } from './B201.types'
 import * as S from './B201.styles'
 
 export function B201Shell({
@@ -14,12 +13,11 @@ export function B201Shell({
   pageIds,
   label,
   pages,
-}: LessonShellProps) {
+}: B201ShellProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, materialKey, pageIds)
   const notePopup = useLessonNotesPopup('langy-notes:' + materialKey)
 
   const root = useRef<HTMLDivElement>(null)
-  const speech = useB201Speech()
   useEffect(() => {
     root.current
       ?.querySelector<HTMLElement>('[data-slide-viewport]')
@@ -32,10 +30,9 @@ export function B201Shell({
         label={label}
         pageId={pageId}
         onPageChange={(id) => {
-          if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        pages={pages(speech, pageId)}
+        pages={pages(pageId)}
         overlay={
           <LessonNotes
             storageKey={'langy-notes:' + materialKey}
@@ -56,9 +53,6 @@ export function B201Shell({
           />
         }
       />
-      {speech.error ? (
-        <S.AudioError role="status">{speech.error}</S.AudioError>
-      ) : null}
     </S.Stage>
   )
 }

@@ -1,13 +1,10 @@
+import { GuidedScenario } from '../shared/GuidedScenario'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { withVoiceMessageLayout } from '../shared/deviceTheme'
+import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
 import { Button } from '../../../src/components/Button/Button'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { KeyValueList } from '../../../src/components/Details/KeyValueList'
-import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
-import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { content, kim, leo, image, toggle } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
 import voice from './assets/audio/L.9.mp3'
@@ -142,17 +139,10 @@ export function YourVersionSection({ speech }: SpeechSectionProps) {
     </S.Stack>
   )
 }
-const listeningTheme = withVoiceMessageLayout({
-  contentWidth: '65rem',
-  phoneWidth: 'clamp(11.875rem, calc((100dvh - 15.625rem) / 2), 16.875rem)',
-  phoneHeight: 'clamp(23.75rem, calc(100dvh - 15.625rem), 33.75rem)',
-  transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
-})
-
 export function ListeningSection({ active }: { active: boolean }) {
   const [attempts, setAttempts] = useState<Record<string, string[]>>({})
   return (
-    <ThemeProvider theme={listeningTheme}>
+    <ThemeProvider theme={lessonVoiceMessageTheme}>
       <VoiceMessageExercise
         contact={{ name: 'Leo', avatarUrl: leo, status: 'online' }}
         greeting={{
@@ -243,29 +233,26 @@ const roleplayCases = [
   },
 ]
 export function RolePlaySection() {
-  const [index, setIndex] = useState(0)
-  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
-  const current = roleplayCases[index]!
-  const questionActivity =
-    current.id === 'bike' ? 'riding your bike' : current.activity
   return (
-    <RolePlayExercise
-      presentation="instructions"
-      density="compact"
-      situation=""
-      steps={[]}
-      completedIds={[]}
-      onStepToggle={() => undefined}
-      image={{ src: image(current.clue), alt: current.alt }}
-      tracker={
-        <LearningDialogue
-          density="compact"
-          guidance={{ level, onChange: setLevel }}
-          lines={[
+    <GuidedScenario
+      selectionLabel="Choose Kim’s day"
+      cases={roleplayCases.map((current) => {
+        const questionActivity =
+          current.id === 'bike' ? 'riding your bike' : current.activity
+        return {
+          id: current.id,
+          label: current.label,
+          image: { src: image(current.clue), alt: current.alt },
+          facts: [
+            { id: 'activity', label: 'Activity', value: current.activity },
+            { id: 'duration', label: 'How long', value: current.duration },
+            { id: 'partner', label: 'With whom', value: current.partner },
+          ],
+          lines: [
             {
               id: 'ask-activity',
               speaker: 'You',
-              side: 'end',
+              side: 'end' as const,
               cue: 'Ask what Kim has been doing.',
               hint: 'What have you been …?',
               content: 'What have you been doing?',
@@ -274,13 +261,13 @@ export function RolePlaySection() {
               id: 'activity',
               speaker: 'Kim',
               avatarUrl: kim,
-              side: 'start',
+              side: 'start' as const,
               content: `I’ve been ${current.activity}.`,
             },
             {
               id: 'ask-duration',
               speaker: 'You',
-              side: 'end',
+              side: 'end' as const,
               cue: 'Ask how long.',
               hint: 'How long have you been …?',
               content: `How long have you been ${questionActivity}?`,
@@ -289,13 +276,13 @@ export function RolePlaySection() {
               id: 'duration',
               speaker: 'Kim',
               avatarUrl: kim,
-              side: 'start',
+              side: 'start' as const,
               content: `For ${current.duration}.`,
             },
             {
               id: 'ask-partner',
               speaker: 'You',
-              side: 'end',
+              side: 'end' as const,
               cue: 'Ask who was with her.',
               hint: 'Who have you been … with?',
               content: `Who have you been ${questionActivity} with?`,
@@ -304,37 +291,12 @@ export function RolePlaySection() {
               id: 'partner',
               speaker: 'Kim',
               avatarUrl: kim,
-              side: 'start',
+              side: 'start' as const,
               content: `With ${current.partner}.`,
             },
-          ]}
-        />
-      }
-    >
-      <Common.Row role="group" aria-label="Choose Kim’s day">
-        {roleplayCases.map((item, i) => (
-          <ChoiceCard
-            key={item.id}
-            variant="lesson"
-            aria-pressed={index === i}
-            onClick={() => {
-              setIndex(i)
-              setLevel('cue')
-            }}
-          >
-            {item.label}
-          </ChoiceCard>
-        ))}
-      </Common.Row>
-      <KeyValueList
-        density="compact"
-        tone="material"
-        items={[
-          { id: 'activity', label: 'Activity', value: current.activity },
-          { id: 'duration', label: 'How long', value: current.duration },
-          { id: 'partner', label: 'With whom', value: current.partner },
-        ]}
-      />
-    </RolePlayExercise>
+          ],
+        }
+      })}
+    />
   )
 }
