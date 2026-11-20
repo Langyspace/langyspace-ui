@@ -269,22 +269,16 @@ export default {
   ],
   HW13: [
     {
-      img: 'ph_happy_i',
-      t: 'Recall · Feelings and countries',
-      d: 'Look at the pictures. Say the words. Repeat on three different days.',
-      line: '1. Flashcards (5 min)',
+      img: 'e_cards',
+      t: 'Flashcards · Countries',
+      d: 'Review the countries.',
+      line: '1. Flashcards · Countries',
     },
     {
-      img: 'x_speech',
-      t: 'Listen and repeat · Nice to meet you',
-      d: 'Listen to the dialogue. Repeat Ana’s lines: 2, 4 and 6.',
-      line: '2. Shadowing (5 min)',
-    },
-    {
-      img: 'x_bulb',
-      t: 'Speak · Introduce yourself',
-      d: 'Say your name, where you are from and how you feel. Ask your teacher next lesson.',
-      line: '3. Quiz (3 min)',
+      img: 'e_brain',
+      t: 'Grammar · Verb to be',
+      d: 'Practise am, is and are.',
+      line: '2. Grammar · Verb to be',
     },
   ],
   NOTES: {
@@ -482,16 +476,16 @@ export default {
       end: 50,
       pg: 'Homework · Before next class',
       min: '2 min, até o minuto 50.',
-      tela: 'Flashcards, Shadowing e Quiz, cada um com Open, e o botão “Copy links”.',
+      tela: 'Dois exercícios: Flashcards · Countries e Grammar · Verb to be.',
       passos: [
-        'Mostre os três cartões e diga em português o que é cada um, quanto tempo leva e os dias dos flashcards: hoje, daqui a 2 dias e daqui a 6 dias.',
-        'Abra o primeiro, compartilhe a guia nova e façam dois flashcards juntas.',
-        'Volte à aula, clique em “Copy links”, cole no chat do Meet e peça para ela confirmar que recebeu. Despeça-se: “Bye! See you next class.”.',
+        'Apresente os dois exercícios: revisar os países nos flashcards e praticar am, is e are na gramática.',
+        'Se precisar, relembrem um país e uma frase com o verb to be.',
+        'Confirme que ela entendeu as duas tarefas e despeça-se: “Bye! See you next class.”.',
       ],
-      trava: 'Se a plataforma não abrir, pule o passo 2 e mande os links.',
+      trava: 'Se ela tiver dúvida, relembre um exemplo de cada exercício.',
       corr: 'Nenhuma.',
       tempo:
-        'Se atrasar, sem o passo 2; se sobrar, façam mais flashcards juntas. Avance quando os links estiverem no chat.',
+        'Se atrasar, apresente as duas tarefas brevemente; se sobrar, revisem mais um país e uma frase.',
     },
     '14': {
       end: 18,

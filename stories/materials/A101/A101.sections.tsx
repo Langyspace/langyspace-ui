@@ -595,12 +595,9 @@ export function ConversationSection() {
 export function HomeworkSection() {
   return (
     <Styled.HomeworkStack>
-      {lesson.HW13.map((item, index) => (
+      {lesson.HW13.map((item) => (
         <Styled.Homework key={item.t}>
-          <img
-            src={image(itemAt(['e_cards', 'e_mic', 'e_brain'], index))}
-            alt=""
-          />
+          <img src={image(item.img)} alt="" />
           <div>
             <b>{item.t}</b>
             <span>{item.d}</span>
