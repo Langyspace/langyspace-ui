@@ -3,6 +3,7 @@ import * as S from './VocabularyControls.styles'
 import type { VocabularyControlsProps } from './VocabularyControls.types'
 
 export function VocabularyControls({
+  labels,
   showInitial,
   showAll,
   onToggleInitial,
@@ -13,7 +14,8 @@ export function VocabularyControls({
       <IconButton
         size="md"
         variant="neutral"
-        aria-label="Hint: first letter"
+        aria-label={labels?.hint ?? 'Hint: first letter'}
+        title={labels?.hint ?? 'Hint: first letter'}
         aria-pressed={showInitial}
         onClick={onToggleInitial}
       >
@@ -32,7 +34,16 @@ export function VocabularyControls({
       <IconButton
         size="md"
         variant="neutral"
-        aria-label={showAll ? 'Hide all words' : 'Show all words'}
+        aria-label={
+          showAll
+            ? (labels?.hideAll ?? 'Hide all words')
+            : (labels?.showAll ?? 'Show all words')
+        }
+        title={
+          showAll
+            ? (labels?.hideAll ?? 'Hide all words')
+            : (labels?.showAll ?? 'Show all words')
+        }
         aria-pressed={showAll}
         onClick={onToggleAll}
       >

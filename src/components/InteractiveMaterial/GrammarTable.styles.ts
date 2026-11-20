@@ -1,5 +1,6 @@
 import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
 export const Root = styled(Common.Stack).withConfig({
@@ -18,8 +19,8 @@ export const Table = styled.table<{
   $tone: 'affirmative' | 'negative' | 'question'
   $captionHidden: boolean
 }>`
-  --grammar-ink: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.foreground : p.$tone === 'question' ? theme.semantic.status.info.foreground : theme.semantic.status.success.foreground)};
-  --grammar-surface: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.background : p.$tone === 'question' ? theme.semantic.status.info.background : theme.semantic.status.success.background)};
+  --grammar-ink: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.foreground ?? theme.semantic.status.danger.foreground) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.foreground ?? theme.semantic.status.info.foreground) : (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground))};
+  --grammar-surface: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.background ?? theme.semantic.status.danger.background) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.background ?? theme.semantic.status.info.background) : (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background))};
   width: 100%;
   border-collapse: collapse;
   text-align: left;
@@ -65,7 +66,7 @@ export const Table = styled.table<{
   td[data-verb],
   td strong {
     font-weight: 700;
-    color: ${(p) => `color-mix(in srgb, var(--grammar-ink) 65%, ${Common.recipe(p).foreground})`};
+    color: var(--grammar-ink);
   }
   tbody tr:last-child > * {
     border-bottom: 0;

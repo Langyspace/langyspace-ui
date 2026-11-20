@@ -4,7 +4,6 @@ import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { PromptExercise } from '../shared/LessonExercises'
 import { HomeworkActivity } from '../shared/LessonActivities'
@@ -25,8 +24,8 @@ import type { A105Speech } from './A105.types'
 
 const phoneTheme = withVoiceMessageLayout({
   contentWidth: '47.5rem',
-  phoneWidth: 'clamp(15rem, calc((100dvh - 15.625rem) / 2), 16.875rem)',
-  phoneHeight: 'clamp(30rem, calc(100dvh - 15.625rem), 33.75rem)',
+  phoneWidth: 'clamp(11.875rem, calc((100dvh - 13.75rem) / 2), 16.875rem)',
+  phoneHeight: 'clamp(23.75rem, calc(100dvh - 13.75rem), 33.75rem)',
   transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
 })
 export function ProduceVocabulary({
@@ -49,9 +48,9 @@ export function ProduceVocabulary({
       }))}
       revealedIds={revealed}
       revealOnHover={false}
-      imageVariant={fruit ? 'isolated' : 'scene'}
+      imageVariant="isolated"
       imageFit="contain"
-      surface={fruit ? 'plain' : 'card'}
+      surface="plain"
       density="regular"
       revealVariant="tooltip"
       showAll={showAll}
@@ -190,27 +189,52 @@ export function Listening({ active }: { active: boolean }) {
   )
 }
 export function KimsList() {
+  const [support, setSupport] = useState<'cue' | 'hint' | 'full'>('cue')
   const items = produce.filter((item) =>
     ['banana', 'apple', 'mango', 'orange'].includes(item.id),
   )
+  const mangoPrice = produce.find((item) => item.id === 'mango')!.price
+  const total = mangoPrice + produce.find((item) => item.id === 'banana')!.price
+  const turns = [
+    {
+      speaker: 'Ana',
+      cue: 'Ask about apples.',
+      hint: 'Do you … apples?',
+      text: 'Do you like apples?',
+    },
+    {
+      speaker: 'Kim',
+      cue: 'Say no. Choose mangoes.',
+      hint: 'No. I like …',
+      text: 'No. I like mangoes.',
+    },
+    {
+      speaker: 'Ana',
+      cue: 'Give the price.',
+      hint: 'A mango is … dollars.',
+      text: `A mango is ${mangoPrice} dollars.`,
+    },
+    {
+      speaker: 'Kim',
+      cue: 'Choose two fruits.',
+      hint: 'A mango and …, please.',
+      text: 'A mango and a banana, please.',
+    },
+    {
+      speaker: 'Ana',
+      cue: 'Give the total.',
+      hint: 'That’s … dollars.',
+      text: `That’s ${total} dollars.`,
+    },
+    {
+      speaker: 'Kim',
+      cue: 'Say thank you.',
+      hint: 'Thank …!',
+      text: 'Thank you!',
+    },
+  ] as const
   return (
-    <RolePlayExercise
-      presentation="instructions"
-      density="compact"
-      situation="You are at the market with Kim. Help her choose two fruits."
-      roles={['You: Ana', 'Teacher: Kim']}
-      steps={[
-        { id: 'choose', label: 'Ask Kim what she likes. Choose two fruits.' },
-        {
-          id: 'price',
-          label: 'Kim asks the price. Tell her how much each fruit is.',
-        },
-        { id: 'swap', label: 'Swap roles. Buy fruit for yourself.' },
-      ]}
-      completedIds={[]}
-      onStepToggle={() => undefined}
-      support={['Do you like …?', 'How much is it?', 'It’s … reais.']}
-    >
+    <Common.Columns>
       <VocabularyGrid
         columns={2}
         density="regular"
@@ -222,14 +246,28 @@ export function KimsList() {
           ...item,
           imageUrl: scene(item.id),
           imageAlt: item.translation,
-          badge: `R$ ${item.price}`,
+          badge: `$${item.price}`,
         }))}
         revealedIds={[]}
         onReveal={() => undefined}
       />
-    </RolePlayExercise>
+      <LearningDialogue
+        density="compact"
+        guidance={{ level: support, onChange: setSupport }}
+        lines={turns.map((turn, index) => ({
+          id: `market.turn.${index + 1}`,
+          speaker: turn.speaker,
+          avatarUrl: portraits[turn.speaker],
+          side: turn.speaker === 'Ana' ? 'start' : 'end',
+          cue: turn.cue,
+          hint: turn.hint,
+          content: turn.text,
+        }))}
+      />
+    </Common.Columns>
   )
 }
+
 export function Homework({
   studentPortalOrigin,
 }: {

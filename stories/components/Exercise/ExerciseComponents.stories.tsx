@@ -292,3 +292,134 @@ function NativeSymbolsPreview() {
   )
 }
 export const NativeSymbols: Story = { render: () => <NativeSymbolsPreview /> }
+
+function GuidedRoleplayPreview({
+  initial = 'cue',
+}: {
+  initial?: 'cue' | 'hint' | 'full'
+}) {
+  const [level, setLevel] = useState(initial)
+  return (
+    <Styled.Preview>
+      <LearningDialogue
+        density="compact"
+        guidance={{ level, onChange: setLevel }}
+        lines={[
+          {
+            id: '1',
+            speaker: 'Ana',
+            side: 'start',
+            cue: 'Ask about apples.',
+            hint: 'Do you … apples?',
+            content: 'Do you like apples?',
+          },
+          {
+            id: '2',
+            speaker: 'Kim',
+            side: 'end',
+            cue: 'Say no. Choose mangoes.',
+            hint: 'No. I like …',
+            content: 'No. I like mangoes.',
+          },
+          {
+            id: '3',
+            speaker: 'Ana',
+            side: 'start',
+            cue: 'Give the price.',
+            hint: 'A mango is … dollars.',
+            content: 'A mango is 3 dollars.',
+          },
+          {
+            id: '4',
+            speaker: 'Kim',
+            side: 'end',
+            cue: 'Choose two fruits.',
+            hint: 'A mango and …, please.',
+            content: 'A mango and a banana, please.',
+          },
+          {
+            id: '5',
+            speaker: 'Ana',
+            side: 'start',
+            cue: 'Give the total.',
+            hint: 'That’s … dollars.',
+            content: 'That’s 5 dollars.',
+          },
+          {
+            id: '6',
+            speaker: 'Kim',
+            side: 'end',
+            cue: 'Say thank you.',
+            hint: 'Thank …!',
+            content: 'Thank you!',
+          },
+        ]}
+      />
+    </Styled.Preview>
+  )
+}
+export const GuidedRoleplayChallenge: Story = {
+  render: () => <GuidedRoleplayPreview />,
+}
+export const GuidedRoleplayTips: Story = {
+  render: () => <GuidedRoleplayPreview initial="hint" />,
+}
+export const GuidedRoleplayModel: Story = {
+  render: () => <GuidedRoleplayPreview initial="full" />,
+}
+export const ExpandedQuestionSupports: Story = {
+  render: () => (
+    <Styled.Preview>
+      <RevealCard
+        presentation="prompt"
+        marker="1"
+        revealed
+        answer="She likes mangoes."
+      >
+        What fruit does Kim like?
+      </RevealCard>
+      <RevealCard
+        presentation="prompt"
+        marker="2"
+        revealed
+        answer="No, she doesn’t."
+      >
+        Does Kim like watermelons?
+      </RevealCard>
+      <RevealCard
+        presentation="prompt"
+        marker="3"
+        revealed
+        answer="They’re two dollars."
+      >
+        How much are the carrots?
+      </RevealCard>
+    </Styled.Preview>
+  ),
+}
+export const ProportionalDialogueGaps: Story = {
+  render: () => (
+    <Styled.Preview>
+      <LearningDialogue
+        density="compact"
+        lines={[
+          {
+            id: 'short',
+            speaker: 'Ana',
+            side: 'start',
+            content: 'Yes, I do.',
+            parts: ['Yes, I ', { id: 'do', answer: 'do' }, '.'],
+          },
+          {
+            id: 'long',
+            speaker: 'Kim',
+            side: 'end',
+            content: 'I don’t like onions.',
+            parts: ['I ', { id: 'negative', answer: 'don’t like' }, ' onions.'],
+          },
+        ]}
+        revealedGapIds={['do', 'negative']}
+      />
+    </Styled.Preview>
+  ),
+}

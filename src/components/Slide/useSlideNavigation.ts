@@ -23,6 +23,7 @@ export function useSlideNavigation({
   const movementTargetRef = useRef<SlideMovementTarget | undefined>(undefined)
   const movementRevisionRef = useRef(0)
   const requestedRef = useRef<string | undefined>(undefined)
+  const reportedIdsRef = useRef<string[]>([])
   const firstRequestRef = useRef(true)
   const callbackRef = useRef(onPageChange)
   useEffect(() => {
@@ -73,7 +74,8 @@ export function useSlideNavigation({
         Array.from(viewport.children).findIndex(
           (page) =>
             page instanceof HTMLElement &&
-            page.dataset.slideId === activeRef.current,
+            page.dataset.slideId ===
+              (movementTargetRef.current?.pageId ?? activeRef.current),
         ),
       )
       const next = Math.min(
@@ -104,28 +106,42 @@ export function useSlideNavigation({
     let lastWidth = viewport.clientWidth
     let lastHeight = viewport.clientHeight
     let pageOffset = 0
-    const update = () => {
+    const readPageGeometry = () =>
+      elements
+        .map((element) => `${element.offsetTop}:${element.offsetHeight}`)
+        .join('|')
+    let lastPageGeometry = readPageGeometry()
+    const update = (restoreAnchor = false) => {
       if (
         lastWidth !== viewport.clientWidth ||
-        lastHeight !== viewport.clientHeight
+        lastHeight !== viewport.clientHeight ||
+        (restoreAnchor && navigationMode === 'pages')
       ) {
+        const movement = movementTargetRef.current
         movementRevisionRef.current++
         movementTargetRef.current = undefined
-        // Cancel an in-flight smooth scroll at its new geometry, keeping the current page.
+        // Reveals/fonts can resize a page without resizing the viewport. Keep
+        // the same logical page and clamp only its existing content offset.
         const anchor = elements.find(
           (element) =>
             element.dataset.slideId ===
-            (requestedRef.current ?? activeRef.current),
+            (movement?.pageId ?? requestedRef.current ?? activeRef.current),
         )
         if (anchor) {
           const rect = anchor.getBoundingClientRect()
           const top =
             rect.top - viewport.getBoundingClientRect().top + viewport.scrollTop
-          const offset = Math.min(
-            pageOffset,
-            Math.max(0, rect.height - viewport.clientHeight),
-          )
-          viewport.scrollTo({ top: top + offset, behavior: 'instant' })
+          const offset = movement
+            ? 0
+            : Math.min(
+                pageOffset,
+                Math.max(0, rect.height - viewport.clientHeight),
+              )
+          const destination = movement?.alignEnd
+            ? Math.max(0, viewport.scrollHeight - viewport.clientHeight)
+            : top + offset
+          if (movement || Math.abs(viewport.scrollTop - destination) > 2)
+            viewport.scrollTo({ top: destination, behavior: 'instant' })
         }
         lastWidth = viewport.clientWidth
         lastHeight = viewport.clientHeight
@@ -165,28 +181,43 @@ export function useSlideNavigation({
       if (id !== activeRef.current) {
         activeRef.current = id
         setObservedId(id)
-        if (id !== undefined) callbackRef.current?.(id)
+        if (
+          id !== undefined &&
+          callbackRef.current &&
+          (!movementTargetRef.current ||
+            id === movementTargetRef.current.pageId)
+        ) {
+          if (previousRequestRef.current.pageId !== undefined)
+            reportedIdsRef.current = [...reportedIdsRef.current, id].slice(-32)
+          callbackRef.current(id)
+        }
       }
     }
-    viewport.addEventListener('scroll', update, { passive: true })
+    const onScroll = () => update()
+    viewport.addEventListener('scroll', onScroll, { passive: true })
     const cancelRequested = () => {
       requestedRef.current = undefined
     }
     viewport.addEventListener('wheel', cancelRequested, { passive: true })
     viewport.addEventListener('touchstart', cancelRequested, { passive: true })
-    const observer = new ResizeObserver(update)
+    const observer = new ResizeObserver(() => {
+      const geometry = readPageGeometry()
+      const changed = geometry !== lastPageGeometry
+      lastPageGeometry = geometry
+      update(changed)
+    })
     observer.observe(viewport)
     elements.forEach((element) => {
       observer.observe(element)
     })
     update()
     return () => {
-      viewport.removeEventListener('scroll', update)
+      viewport.removeEventListener('scroll', onScroll)
       viewport.removeEventListener('wheel', cancelRequested)
       viewport.removeEventListener('touchstart', cancelRequested)
       observer.disconnect()
     }
-  }, [idsKey])
+  }, [idsKey, navigationMode])
 
   useEffect(() => {
     const initial = firstRequestRef.current
@@ -195,10 +226,23 @@ export function useSlideNavigation({
       return
     firstRequestRef.current = false
     previousRequestRef.current = { pageId, idsKey }
-    // A parent can echo a native scroll while the next animation frame has
-    // already advanced activeRef. Compare the committed observation instead of
-    // turning that delayed echo into a new scroll back to an intermediate page.
-    if (pageId === undefined || pageId === observedId) return
+    if (previous.idsKey !== idsKey || pageId === undefined)
+      reportedIdsRef.current = []
+    if (pageId === undefined) return
+    // Controlled consumers may commit an earlier callback after a later page
+    // has already been observed. Acknowledge pending reports without scrolling.
+    const echo = reportedIdsRef.current.indexOf(pageId)
+    if (echo >= 0) {
+      reportedIdsRef.current.splice(0, echo + 1)
+      return
+    }
+    if (
+      pageId === observedId ||
+      pageId === activeRef.current ||
+      pageId === movementTargetRef.current?.pageId
+    )
+      return
+    reportedIdsRef.current = []
     const viewport = viewportRef.current
     if (!viewport) return
     const target = Array.from(viewport.children).findIndex(

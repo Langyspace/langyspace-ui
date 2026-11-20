@@ -12,6 +12,9 @@ export interface LearningDialogueLine {
   avatarUrl?: string
   side: 'start' | 'end'
   content: ReactNode
+  /** Challenge cues and optional short language supports for oral role-play. */
+  cue?: ReactNode
+  hint?: ReactNode
   /** Inline answers retain their width before and after a click. */
   parts?: readonly (string | LearningDialogueGap)[]
   translation?: ReactNode
@@ -24,6 +27,11 @@ export interface LearningDialogueProps extends Omit<
   'onPlay'
 > {
   lines: readonly LearningDialogueLine[]
+  /** Controlled challenge: cues first, bulb for tips, eye for the model dialogue. */
+  guidance?: {
+    level: 'cue' | 'hint' | 'full'
+    onChange: (level: 'cue' | 'hint' | 'full') => void
+  }
   density?: 'regular' | 'compact'
   translatedIds?: readonly string[]
   playingId?: string

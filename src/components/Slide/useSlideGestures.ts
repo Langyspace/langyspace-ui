@@ -19,6 +19,11 @@ const POINTER_NATIVE_SELECTOR =
 
 // Same-burst browser gaps measured 44–83ms; isolated detents were at least 200ms apart.
 const WHEEL_GESTURE_IDLE_MS = 160
+// Repeated pushes may share a wheel transaction. Require a sustained recovery
+// relative to the preceding push; small rebounds in its momentum tail stay spent.
+const WHEEL_REARM_RISE_PACKETS = 3
+const WHEEL_REARM_MIN_PEAK_PX = 24
+const WHEEL_REARM_MIN_RISE_PX = 12
 // Preserve 2–4px tap jitter. Real scroll starts delivered their last cancelable
 // move as early as 4.63px; waiting for 5/16px handed control to native snap.
 const TOUCH_TAP_TOLERANCE_PX = 4
@@ -141,11 +146,14 @@ export function useSlideGestures({
         wheelTrough = Math.min(wheelTrough, magnitude)
         wheelRisePackets =
           magnitude > wheelPrevious + 0.5 ? wheelRisePackets + 1 : 0
-        // A new push accelerates after decay. A lone late momentum spike does not.
+        // This is intent inference, not a browser-provided momentum phase.
+        // Cancelability is not a gesture boundary; observe every owned packet.
         if (
-          wheelRisePackets >= 2 &&
-          magnitude - wheelTrough >= 6 &&
-          magnitude >= wheelTrough * 1.5
+          wheelRisePackets >= WHEEL_REARM_RISE_PACKETS &&
+          magnitude >= Math.max(WHEEL_REARM_MIN_PEAK_PX, wheelPeak * 0.5) &&
+          magnitude - wheelTrough >=
+            Math.max(WHEEL_REARM_MIN_RISE_PX, wheelPeak * 0.35) &&
+          magnitude >= wheelTrough * 2
         )
           resetWheelImpulse(magnitude)
       }
@@ -172,23 +180,26 @@ export function useSlideGestures({
       )
         return
       if (event.deltaX === 0 && event.deltaY === 0) return
+      // Keep native editors/value controls native even after the deck has
+      // already seen another vertical packet in the same transaction.
+      if (nativeTarget(event.target, WHEEL_NATIVE_SELECTOR)) return
       if (event.timeStamp - wheelTime > WHEEL_GESTURE_IDLE_MS) {
         wheelVertical = false
+        wheelDirection = undefined
         resetWheelImpulse()
       }
       wheelTime = event.timeStamp
       if (!wheelVertical) {
         // A lateral/native lead-in must not veto the whole trackpad gesture.
         // Commit only when its first vertical packet arrives, however small.
-        if (
-          nativeTarget(event.target, WHEEL_NATIVE_SELECTOR) ||
-          Math.abs(event.deltaX) >= Math.abs(event.deltaY)
-        )
-          return
+        if (Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return
         wheelVertical = true
       }
-      if (event.deltaY === 0 || !event.cancelable) return
-      event.preventDefault()
+      if (event.deltaY === 0) return
+      // Pages mode must pair this hook with overflow-y:hidden and no CSS snap.
+      // Some browsers cancel only the first packet. Keep consuming the rest
+      // through scrollContent instead of handing them to native page scrolling.
+      if (event.cancelable) event.preventDefault()
       const direction = event.deltaY > 0 ? 1 : -1
       if (wheelDirection && direction !== wheelDirection) {
         // A reversal is fresh intent, including during a smooth page transition.
@@ -208,7 +219,16 @@ export function useSlideGestures({
             : 1
       const delta = event.deltaY * unit
       observeWheelImpulse(Math.abs(delta))
-      if (wheelAdvanced || moving()) return
+      if (wheelAdvanced) return
+      if (moving()) {
+        // A fresh live push may supersede an animation immediately. step uses
+        // its logical destination, so no input is queued for scroll-end.
+        if (!wheelConsumed) {
+          wheelAdvanced = true
+          onStep(direction)
+        }
+        return
+      }
       // Navigation only happens on a live wheel packet, never on scroll-end/timers.
       applyWheel(delta)
     }

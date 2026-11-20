@@ -27,7 +27,12 @@ export function RevealCard({
           )}
           <span>{children}</span>
         </Styled.PromptTrigger>
-        <Styled.PromptAnswer id={answerId} hidden={!revealed}>
+        <Styled.PromptAnswer
+          id={answerId}
+          $revealed={revealed}
+          aria-hidden={!revealed}
+          inert={!revealed}
+        >
           {answer}
         </Styled.PromptAnswer>
       </Styled.PromptPanel>

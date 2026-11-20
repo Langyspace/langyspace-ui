@@ -49,7 +49,7 @@ export const PromptPanel = styled.div`
   min-width: 0;
   display: grid;
   justify-items: start;
-  gap: ${theme.spacing[2]};
+  gap: ${theme.spacing[1]};
 `
 
 export const PromptTrigger = styled(Pressable)`
@@ -78,12 +78,11 @@ export const PromptTrigger = styled(Pressable)`
   }
 `
 
-export const PromptAnswer = styled.p`
+export const PromptAnswer = styled.p<{ $revealed: boolean }>`
   margin: 0;
   color: ${(p) => recipe(p).muted};
   font-size: ${theme.typography.fontSize.sm};
-  line-height: 1.5;
-  &[hidden] {
-    display: none;
-  }
+  line-height: 1.4;
+  visibility: ${(p) => (p.$revealed ? 'visible' : 'hidden')};
+  pointer-events: ${(p) => (p.$revealed ? 'auto' : 'none')};
 `

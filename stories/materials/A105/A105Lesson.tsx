@@ -201,7 +201,7 @@ export function A105Lesson({
           density="compact"
           eyebrow="Role play"
           title="Kim’s list"
-          instruction="Choose two fruits, ask the prices and swap roles."
+          instruction="Choose two fruits. Make the conversation, then swap roles."
         >
           <KimsList />
         </SlidePage>

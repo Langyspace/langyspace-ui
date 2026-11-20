@@ -1,7 +1,7 @@
 {
   "provider": "elevenlabs",
   "sourceManifestSha256": "ee07b2e572bc8c425809aa3fd23ef6d2f15cbd1fe0a54b125f22d95ffc078642",
-  "revision": "FINAL30",
+  "revision": "FINAL32",
   "items": [
     {
       "id": "vocab.banana",
@@ -208,18 +208,6 @@
       "file": "assets/audio/D.5.mp3"
     },
     {
-      "id": "D.6",
-      "text": "They’re two reais.",
-      "speaker": "ana",
-      "voiceId": "cgSgspJ2msm6clMCkdW9",
-      "voiceName": "Jessica - Playful, Bright, Warm",
-      "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 1.300317,
-      "sha256": "91572ea414485b2dbba6f839736343bd032e73f84cb3a211582e10e2ade2906b",
-      "file": "assets/audio/D.6.mp3"
-    },
-    {
       "id": "G.1",
       "text": "Do you like apples?",
       "speaker": "kim",
@@ -278,6 +266,43 @@
       "durationSeconds": 13.560454,
       "sha256": "a31fa62081477ffb915aa36b3521735425217638f0c7d988dbb076ca5c5686fa",
       "file": "assets/audio/L.1.mp3"
+    },
+    {
+      "id": "D.6",
+      "text": "They’re two dollars.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "durationSeconds": 1.393197,
+      "sha256": "d17ff8926841e385265fc136840cd2d2b84c11c556ec37d950d7608b4cfb95d0",
+      "file": "assets/audio/D.6.mp3"
+    },
+    {
+      "id": "G.5",
+      "text": "Does your mother like onions?",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "durationSeconds": 1.904036,
+      "sha256": "7b3c6bf1b64da582d9c0f63e22b0cdcfe378f5bfd8a5587eed4cbd0ec7f56652",
+      "file": "assets/audio/G.5.mp3"
+    },
+    {
+      "id": "G.6",
+      "text": "No, she doesn’t. She likes carrots.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "durationSeconds": 2.089796,
+      "sha256": "bd92c6b6dc55e259dee1698a8eca7d1ede39d2f58ad9281865ba3cfaeec3340a",
+      "file": "assets/audio/G.6.mp3"
     }
-  ]
+  ],
+  "deltaManifestSha256": "011089019db57f5d4b62f6949b12c1380a201c2521704d9e04d2bcb5ce1baa52"
 }

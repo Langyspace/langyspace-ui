@@ -15,7 +15,6 @@ export const Prompt = styled.li`
   gap: ${theme.spacing[3]};
   p {
     margin: 0;
-    line-height: 1.6;
   }
 `
 

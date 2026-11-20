@@ -47,13 +47,11 @@ function CutoutPreview({ staticCards = false }: { staticCards?: boolean }) {
         imageFit="contain"
         interaction={staticCards ? 'static' : 'reveal'}
         revealOnHover={false}
-        items={produce
-          .slice(0, 6)
-          .map((item) => ({
-            ...item,
-            imageUrl: scene(item.id),
-            imageAlt: item.translation,
-          }))}
+        items={produce.slice(0, 6).map((item) => ({
+          ...item,
+          imageUrl: scene(item.id),
+          imageAlt: item.translation,
+        }))}
         showAll={all}
         showInitial={initial}
         revealedIds={revealed}
@@ -97,3 +95,6 @@ export const OralRolePlay: Story = {
     </MaterialTheme>
   ),
 }
+
+export const Vegetables: Story = { args: { initialPageId: 's4' } }
+export const SixTurnGaps: Story = { args: { initialPageId: 's8' } }

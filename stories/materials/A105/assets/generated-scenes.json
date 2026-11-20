@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "lesson": "A1.05",
   "images": [
     {
@@ -95,62 +95,92 @@
     {
       "id": "scene-tomato",
       "file": "scene-tomato.webp",
-      "originalSha256": "3683a26472fe15c25d2afd1dd342949fbb3cfa6a6f572b260e8a8134c589103c",
-      "sha256": "ebf968033a74545367a56caffa3e324f5d16b0a26e81577d9f0acd1fbb3b74c1",
-      "bytes": 39544,
+      "sha256": "7e87b8fda62caf0d1946b978ece8f8a356c1cd47eec9827af35d2069a65c0188",
+      "bytes": 52592,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "b32a630614cd37a49c427f71ae9770856eda50a0d80563ff5b6ad5e80da10db6",
+      "promptSha256": "531de1493bd250f6a3614cedd96ce9934e7f3914d9dcc77e322a062f83154306",
+      "batch": "transparent-vegetables32"
     },
     {
       "id": "scene-potato",
       "file": "scene-potato.webp",
-      "originalSha256": "4f679b4e23d2803b3173923eb1d53f9e2eca6f97fa6f460daf6550cbe8bc3198",
-      "sha256": "8687c6f78c57e21d1f056b77dd84de58a25d31ec2561e4ad4b9558e12e4f47a8",
-      "bytes": 44144,
+      "sha256": "aa3da8ca70679caffb2d5d6995335a3d36a182c4f0f6889275e8a7caf801ba75",
+      "bytes": 51830,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "67fe9776d042e01c550aa48fa484f45084d586bff5c421e81907a9152db750a4",
+      "promptSha256": "ae74d7cd31ab527e7db064a0200e649ec9d33269f370473eb1b1eeff0dd6d960",
+      "batch": "transparent-vegetables32"
     },
     {
       "id": "scene-carrot",
       "file": "scene-carrot.webp",
-      "originalSha256": "ba5b604c46fbb49f78cbe655894140f49518105192eef800cb081964c524bab8",
-      "sha256": "464d09dfc65cb6f7d9837f9d93640576b18eb56ba9863fd326bdbe457234baea",
-      "bytes": 57724,
+      "sha256": "a069bd926ba0b5fafcf6318e62d404c1d35e4ca89f0574917e4bcac23b39378b",
+      "bytes": 57754,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "1c655c375b9579b15ba9500c58d0e55ebf0b70d49477089b19b497af70772057",
+      "promptSha256": "7903c106f9ad3bd944891bb819e1bd4ae7f8f9f92d2ae1552b8dc78127d18441",
+      "batch": "transparent-vegetables32"
     },
     {
       "id": "scene-onion",
       "file": "scene-onion.webp",
-      "originalSha256": "91fff38a1374c1a555a401a207bf823c963821ff7ab8c99376f0c56d8b5ea81b",
-      "sha256": "e5ac6d3fa92be2169e05323343b48c57d02b72b65887c71008d92bda7b84d9c4",
-      "bytes": 47066,
+      "sha256": "f2aeda44faab4de551f6a4453d45962cef25fcb4f39321b462b5391633e4883b",
+      "bytes": 82398,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "c00f06360d788cbf94b30f7eb25e0ad0d7eae66825b9dabf293ee974c139850c",
+      "promptSha256": "55ca1a994dbb53bf5421322d0b9c722cac23b968fa8a3f509856d307e30fb1e1",
+      "batch": "transparent-vegetables32"
     },
     {
       "id": "scene-lettuce",
       "file": "scene-lettuce.webp",
-      "originalSha256": "b95ace1e08b5799c98cb2577a5e1ca835d6ff88690edc860f4a147cf4cd0919c",
-      "sha256": "7e5e66521427fd6af48f1006663518956fc4bc294c424065ad4a8d2ebdb1b8aa",
-      "bytes": 54574,
+      "sha256": "b4d1f766ae7be2fc9a3cd4083413768487ea7655316c1cd60959d2feeadcf961",
+      "bytes": 82232,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "2c76f35fb51d55e5ab2cc31948f8cbcb16fef3ff8232802d76066312b9921c7c",
+      "promptSha256": "94f291cc59417e6e65f998d3d0ae7a1240b3e42046a93aca1f4265fecfa989c8",
+      "batch": "transparent-vegetables32"
     },
     {
       "id": "scene-corn",
       "file": "scene-corn.webp",
-      "originalSha256": "ee70ff671c27f90064f9fc9cf35016d59b66f48c912fc7acfb05afc0f9b3efc4",
-      "sha256": "12d20e96b67f1d610d0f2ae53a0ca2e17ef91f9fe5bb09b62bb30260c084122a",
-      "bytes": 55726,
+      "sha256": "02dc2440bb7e1bb3645b9eedfa44b4d55458bf7eb87cdc94e60403ba68764938",
+      "bytes": 75092,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "32e892f80b13fdc96586cf4d3ec9658d8d2fffe746ee841d35a62c0d456a7853",
+      "promptSha256": "be34f92588bbf34d0d97bdba99bd1853076d56c14bb70ee25cc19d4f0b95a382",
+      "batch": "transparent-vegetables32"
     }
   ],
   "batches": {
@@ -179,6 +209,16 @@
         "quality": 86,
         "removeBackground": false
       }
+    },
+    "transparent-vegetables32": {
+      "date": "2026-11-20",
+      "tool": "built-in image_gen",
+      "fromScratch": true,
+      "referenceImages": 0,
+      "transparentBackgroundRequested": true,
+      "conversion": "whole-frame contain resize, alpha-preserving WebP",
+      "sourceManifestSha256": "f34e4d914de110f5ee975d765d756a3bfc084088804e4efae22b957bb53d81ec",
+      "knownVisualObservation": "Native previews show colored edge fringe on some stems/leaf edges; human review remains pending."
     }
   },
   "supersededFruitImages": [
@@ -238,6 +278,68 @@
       "originalSha256": "ee937c0869d2e42ce856f8c2106da9a2cd8c98f348f3a456711a1f2eef99b602",
       "sha256": "e3c510c7f01066bef15866d5d9a20f1a97f5c78e2cce036775a8743c0f78e382",
       "bytes": 48946,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ],
+  "supersededVegetableImages": [
+    {
+      "id": "scene-tomato",
+      "file": "scene-tomato.webp",
+      "originalSha256": "3683a26472fe15c25d2afd1dd342949fbb3cfa6a6f572b260e8a8134c589103c",
+      "sha256": "ebf968033a74545367a56caffa3e324f5d16b0a26e81577d9f0acd1fbb3b74c1",
+      "bytes": 39544,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-potato",
+      "file": "scene-potato.webp",
+      "originalSha256": "4f679b4e23d2803b3173923eb1d53f9e2eca6f97fa6f460daf6550cbe8bc3198",
+      "sha256": "8687c6f78c57e21d1f056b77dd84de58a25d31ec2561e4ad4b9558e12e4f47a8",
+      "bytes": 44144,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-carrot",
+      "file": "scene-carrot.webp",
+      "originalSha256": "ba5b604c46fbb49f78cbe655894140f49518105192eef800cb081964c524bab8",
+      "sha256": "464d09dfc65cb6f7d9837f9d93640576b18eb56ba9863fd326bdbe457234baea",
+      "bytes": 57724,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-onion",
+      "file": "scene-onion.webp",
+      "originalSha256": "91fff38a1374c1a555a401a207bf823c963821ff7ab8c99376f0c56d8b5ea81b",
+      "sha256": "e5ac6d3fa92be2169e05323343b48c57d02b72b65887c71008d92bda7b84d9c4",
+      "bytes": 47066,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-lettuce",
+      "file": "scene-lettuce.webp",
+      "originalSha256": "b95ace1e08b5799c98cb2577a5e1ca835d6ff88690edc860f4a147cf4cd0919c",
+      "sha256": "7e5e66521427fd6af48f1006663518956fc4bc294c424065ad4a8d2ebdb1b8aa",
+      "bytes": 54574,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-corn",
+      "file": "scene-corn.webp",
+      "originalSha256": "ee70ff671c27f90064f9fc9cf35016d59b66f48c912fc7acfb05afc0f9b3efc4",
+      "sha256": "12d20e96b67f1d610d0f2ae53a0ca2e17ef91f9fe5bb09b62bb30260c084122a",
+      "bytes": 55726,
       "width": 768,
       "height": 512,
       "hasAlpha": false

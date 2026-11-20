@@ -96,6 +96,11 @@
 
 ## Interactive lesson defaults
 
+- Before planning or revising lesson content, read [content planning guidelines](docs/materials/content-planning-guidelines.md).
+  Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
+  New or replanned guided dialogues have at least six meaningful turns; isolated vocabulary objects
+  use transparent assets. Do not expand unrelated lessons or start extra QA/automation from this rule.
+
 - Reviewed UI Library components take precedence over historical Claude Design implementations.
   Reuse them first; add semantic variations to their canonical owners before consuming them.
   New reusable visual or interaction patterns belong in `src/components`, not copied lesson markup.

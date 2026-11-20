@@ -149,11 +149,12 @@ export const Viewport = styled.div<{ $continuous: boolean }>`
   flex: 1 1 0;
   min-width: 0;
   min-height: 0;
-  overflow-y: auto;
+  overflow-y: ${(p) => (p.$continuous ? 'auto' : 'hidden')};
   overflow-x: hidden;
   overscroll-behavior-y: contain;
-  scroll-snap-type: ${(p) => (p.$continuous ? 'none' : 'y mandatory')};
-  scroll-behavior: smooth;
+  scroll-snap-type: none;
+  overflow-anchor: none;
+  scroll-behavior: auto;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;

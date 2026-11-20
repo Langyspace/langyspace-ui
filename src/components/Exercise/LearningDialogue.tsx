@@ -1,3 +1,4 @@
+import { VocabularyControls } from './VocabularyControls'
 import { Fragment } from 'react'
 import * as Gap from './LearningDialogueGap.styles'
 import { IconButton } from '../IconButton/IconButton'
@@ -59,6 +60,7 @@ function DialogueAction({
 
 export function LearningDialogue({
   lines,
+  guidance,
   density = 'regular',
   translatedIds,
   playingId,
@@ -70,11 +72,29 @@ export function LearningDialogue({
   onComplete,
   ...props
 }: LearningDialogueProps) {
-  return (
+  const dialogue = (
     <Styled.Dialogue {...props}>
       {lines.map((line) => {
-        const content = line.parts
-          ? line.parts.map((part, index) =>
+        const content =
+          guidance && (line.cue || line.hint) ? (
+            <Styled.GuidedText>
+              {(['cue', 'hint', 'full'] as const).map((level) => (
+                <Styled.GuidedLayer
+                  key={level}
+                  $visible={guidance.level === level}
+                  aria-hidden={guidance.level !== level}
+                  inert={guidance.level !== level}
+                >
+                  {level === 'cue'
+                    ? (line.cue ?? line.content)
+                    : level === 'hint'
+                      ? (line.hint ?? line.content)
+                      : line.content}
+                </Styled.GuidedLayer>
+              ))}
+            </Styled.GuidedText>
+          ) : line.parts ? (
+            line.parts.map((part, index) =>
               typeof part === 'string' ? (
                 <Fragment key={index}>{part}</Fragment>
               ) : (
@@ -95,7 +115,9 @@ export function LearningDialogue({
                 </Gap.DialogueGap>
               ),
             )
-          : line.content
+          ) : (
+            line.content
+          )
         return (
           <Styled.DialogueLine key={line.id} $side={line.side}>
             <Styled.Speaker
@@ -112,6 +134,7 @@ export function LearningDialogue({
               <small>{line.speaker}</small>
             </Styled.Speaker>
             <Styled.Speech
+              $compact={density === 'compact'}
               $playing={playingId === line.id}
               $side={line.side}
               $completed={completedIds?.includes(line.id) ?? false}
@@ -166,5 +189,27 @@ export function LearningDialogue({
         )
       })}
     </Styled.Dialogue>
+  )
+  return guidance ? (
+    <Styled.DialogueSection>
+      {dialogue}
+      <VocabularyControls
+        showInitial={guidance.level === 'hint'}
+        showAll={guidance.level === 'full'}
+        onToggleInitial={() =>
+          guidance.onChange(guidance.level === 'hint' ? 'cue' : 'hint')
+        }
+        onToggleAll={() =>
+          guidance.onChange(guidance.level === 'full' ? 'cue' : 'full')
+        }
+        labels={{
+          hint: guidance.level === 'hint' ? 'Hide tips' : 'Show tips',
+          showAll: 'Show model dialogue',
+          hideAll: 'Hide model dialogue',
+        }}
+      />
+    </Styled.DialogueSection>
+  ) : (
+    dialogue
   )
 }

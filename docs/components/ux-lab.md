@@ -121,3 +121,16 @@ substitutes. `CallSimulation` supports `density="compact"` using the existing ph
 slide theme. Existing defaults remain intact. Examples are in Materials/A1.02,
 Exercise/Components/NativeSymbols, Exercise/UX Lab/CompactContactCall and
 Details/KeyValueList/MaterialContact. Human review remains pending.
+
+## Stable reveals and guided role-play — A1.05 feedback32
+
+`RevealCard` prompt answers retain an inert, invisible footprint before reveal; short support cannot
+move the page. Compact `LearningDialogue` uses the native small control height with equal vertical
+padding. Its optional controlled `guidance` selects cue, hint or full model, using the same centered
+bulb/eye controls as vocabulary; guidance layers reserve the longest text footprint. Inline gaps
+size to their real answer rather than a64px minimum. GrammarTable resolves semantic tone colors
+from the active theme, including the reviewed dark green text token.
+
+Paginated SlideDeck disables native snap/anchoring and native wheel scrolling; the gesture controller
+owns movement, while programmatic scrolling still exposes genuinely tall content. Continuous mode
+keeps native scrolling. Content planning rules are centralized in docs/materials/content-planning-guidelines.md.

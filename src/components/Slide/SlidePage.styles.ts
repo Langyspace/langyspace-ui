@@ -82,6 +82,9 @@ export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`
   @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-bottom: ${(p) => (p.$lead ? `clamp(${theme.spacing[2]}, 2.2cqh, ${theme.spacing[6]})` : theme.spacing[5])};
   }
+  @container (max-height: ${theme.viewportHeights.lg}) {
+    margin-bottom: ${theme.spacing[4]};
+  }
 `
 
 export const Heading = styled.div`

@@ -61,8 +61,8 @@ export const dialogue = [
   {
     id: 'D.6',
     speaker: 'Ana',
-    text: 'They’re two reais.',
-    translation: 'São dois reais.',
+    text: 'They’re two dollars.',
+    translation: 'São dois dólares.',
   },
 ] as const
 export const gaps = [
@@ -100,6 +100,24 @@ export const gaps = [
       'I like bananas, but I ',
       { id: 'g4', answer: 'don’t like' },
       ' onions.',
+    ],
+  },
+  {
+    id: 'G.5',
+    speaker: 'Kim',
+    text: 'Does your mother like onions?',
+    translation: 'Sua mãe gosta de cebola?',
+    parts: ['Does your mother ', { id: 'g5', answer: 'like' }, ' onions?'],
+  },
+  {
+    id: 'G.6',
+    speaker: 'Ana',
+    text: 'No, she doesn’t. She likes carrots.',
+    translation: 'Não. Ela gosta de cenoura.',
+    parts: [
+      'No, she ',
+      { id: 'g6', answer: 'doesn’t' },
+      '. She likes carrots.',
     ],
   },
 ] as const
@@ -150,7 +168,7 @@ export const prompts = {
     {
       id: 'comprehension.3',
       prompt: 'How much are the carrots?',
-      answer: 'They’re two reais.',
+      answer: 'They’re two dollars.',
     },
   ],
   gaps: [
@@ -166,8 +184,8 @@ export const prompts = {
     },
     {
       id: 'gaps.questions.3',
-      prompt: 'What doesn’t Ana like?',
-      answer: 'She doesn’t like onions.',
+      prompt: 'What does Ana’s mother like?',
+      answer: 'She likes carrots.',
     },
   ],
   personal: [
