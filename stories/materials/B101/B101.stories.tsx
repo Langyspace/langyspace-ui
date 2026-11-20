@@ -68,3 +68,31 @@ export const ListeningNarrow: Story = {
   tags: ['layout-boundary'],
 }
 export const Homework: Story = { args: { initialPageId: 's12' } }
+
+export const YourVersionSwapped: Story = {
+  args: { initialPageId: 's8' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = within(canvasElement)
+    await userEvent.click(c.getByRole('button', { name: '⇄ Swap roles' }))
+    await expect(
+      c.getByRole('heading', { name: 'You’re back: ask your teacher' }),
+    ).toBeVisible()
+    await userEvent.click(c.getByRole('button', { name: 'Show support' }))
+  },
+}
+export const RightOrWrongRevealed: Story = {
+  args: { initialPageId: 's10' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = within(canvasElement)
+    await userEvent.click(
+      c.getAllByRole('button', { name: 'Wrong', exact: true })[0]!,
+    )
+  },
+}
+export const RightOrWrongNarrow: Story = {
+  args: { initialPageId: 's10' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}

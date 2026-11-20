@@ -5,7 +5,8 @@ import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
 import { useLessonPage } from '../shared/useLessonPage'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { MaterialTheme } from '../shared/MaterialTheme'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { Button } from '../../../src/components/Button/Button'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
 import { useB101Audio } from './useB101Audio'
 import { order, dialogue } from './B101.data'
@@ -13,6 +14,7 @@ import {
   VocabularySection,
   WarmUpSection,
   ContextPracticeSection,
+  contextPractice,
   CorrectionSection,
   SourceQuestions,
 } from './B101.practice'
@@ -32,6 +34,8 @@ import * as S from './B101.styles'
 function B101LessonContent({ initialPageId }: B101LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'b1-01', order)
   const notePopup = useLessonNotesPopup('langy-notes:b1-01')
+  const [conversationSwapped, setConversationSwapped] = useState(false)
+  const [conversationSupport, setConversationSupport] = useState(false)
 
   const stage = useRef<HTMLDivElement>(null)
   useEffect(() => {
@@ -120,11 +124,14 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's31' || id === 's32' || id === 's33')
       return {
         id,
-        label: `Warm up · ${Number(id.slice(2))}`,
+        label:
+          id === 's33'
+            ? 'Conversation · Catch up with Leo'
+            : `Warm up · ${Number(id.slice(2))}`,
         content: (
           <WarmupPage
             as={S.Page}
-            eyebrow="Warm up"
+            eyebrow={id === 's33' ? 'Conversation' : 'Warm up'}
             title={
               [
                 'What has she been doing?',
@@ -167,7 +174,9 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
           </S.Page>
         ),
       }
-    if (id === 's51' || id === 's52')
+    if (id === 's51' || id === 's52') {
+      const index = id === 's51' ? 0 : 1
+      const scenario = contextPractice[index]!
       return {
         id,
         label:
@@ -175,25 +184,18 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
             ? 'Conversation · Keep the conversation going'
             : 'Practice · What have you finished?',
         content: (
-          <S.Page
+          <WarmupPage
+            as={S.Page}
             density="dense"
-            width="reading"
             eyebrow={id === 's51' ? 'Conversation' : 'Practice'}
-            title={
-              id === 's51'
-                ? 'Keep the conversation going'
-                : 'What have you finished?'
-            }
-            instruction={
-              id === 's51'
-                ? 'Choose the question that asks for new information.'
-                : 'Choose the update that tells Kim the finished result.'
-            }
+            title={scenario.title}
+            instruction={scenario.instruction}
           >
-            <ContextPracticeSection index={id === 's51' ? 0 : 1} />
-          </S.Page>
+            <ContextPracticeSection index={index} />
+          </WarmupPage>
         ),
       }
+    }
     if (id === 's6' || id === 's62') {
       const part = id === 's6' ? 0 : 1
       return {
@@ -240,16 +242,51 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's8')
       return {
         id,
-        label: 'Your version · Kim is back',
+        label: 'Your version · Catch up with Kim',
         content: (
           <S.Page
             density="dense"
             width="conversation"
             eyebrow="Your version"
-            title="Kim is back"
-            instruction="Catch up with Kim using your own news, then swap roles."
+            title={
+              conversationSwapped
+                ? 'You’re back: ask your teacher'
+                : 'Tell Kim about your week'
+            }
+            instruction={
+              conversationSwapped
+                ? 'You ask; your teacher answers. Ask about recent activities and duration, then share news from your trip.'
+                : 'You answer; your teacher plays Kim. Talk about recent activities, duration and finished work. Swap roles to become the traveller and ask the questions.'
+            }
+            tools={
+              <S.Row $justify="end">
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  aria-pressed={conversationSwapped}
+                  onClick={() => {
+                    speech.stop()
+                    setConversationSwapped(!conversationSwapped)
+                    setConversationSupport(false)
+                  }}
+                >
+                  {conversationSwapped ? '⇄ Swap back' : '⇄ Swap roles'}
+                </Button>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  aria-pressed={conversationSupport}
+                  onClick={() => setConversationSupport(!conversationSupport)}
+                >
+                  {conversationSupport ? 'Hide support' : 'Show support'}
+                </Button>
+              </S.Row>
+            }
           >
-            <YourVersionSection speech={speech} />
+            <YourVersionSection
+              swapped={conversationSwapped}
+              support={conversationSupport}
+            />
           </S.Page>
         ),
       }
@@ -274,6 +311,8 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         label: 'Review · Right or wrong?',
         content: (
           <S.Page
+            density="dense"
+            width="expanded"
             eyebrow="Review"
             title="Right or wrong?"
             instruction="Check each sentence and explain your corrections."

@@ -2,11 +2,10 @@ import { GuidedScenario } from '../shared/GuidedScenario'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
-import { Button } from '../../../src/components/Button/Button'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
-import { content, kim, leo, image, toggle } from './B101.data'
-import type { SpeechSectionProps } from './B101.types'
+import { content, kim, leo, image } from './B101.data'
+import type { YourVersionSectionProps } from './B101.types'
 import voice from './assets/audio/L.9.mp3'
 import * as S from './B101.styles'
 const firstTurns = [
@@ -74,69 +73,30 @@ const swappedTurns = [
   },
   { speaker: 'Teacher', text: 'Wow! Welcome back! Have some cake.' },
 ]
-export function YourVersionSection({ speech }: SpeechSectionProps) {
-  const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState(false),
-    [marked, setMarked] = useState<string[]>([])
-  const turns = swapped ? swappedTurns : firstTurns,
-    prefix = swapped ? 'swapped' : 'first'
+export function YourVersionSection({
+  swapped,
+  support,
+}: YourVersionSectionProps) {
+  const turns = swapped ? swappedTurns : firstTurns
+  const prefix = swapped ? 'swapped' : 'first'
   return (
-    <S.Stack>
-      <S.Row>
-        <b>{swapped ? 'You: back from a trip' : 'You: about your life'}</b>
-        <S.Hint>{swapped ? 'Teacher: friend' : 'Teacher: Kim'}</S.Hint>
-        <Button
-          variant="secondary"
-          size="sm"
-          onClick={() => {
-            speech.stop()
-            setSwapped(!swapped)
-          }}
-        >
-          {swapped ? '⇄ Swap back' : '⇄ Swap roles'}
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={support}
-          onClick={() => setSupport(!support)}
-        >
-          {support ? 'Hide support' : 'Show support'}
-        </Button>
-      </S.Row>
-      {swapped ? (
-        <S.Hint>
-          Now you are back from a trip. Ask your teacher. Her answers are a
-          model: she can change them.
-        </S.Hint>
-      ) : null}
-      <S.Stack>
-        <LearningDialogue
-          density="compact"
-          lines={turns.map((turn, i) => {
-            const id = `${prefix}-${i}`,
-              learner = turn.speaker === 'You'
-            return {
-              id,
-              speaker: turn.speaker,
-              avatarUrl: turn.speaker === 'Kim' ? kim : undefined,
-              side: learner ? 'end' : 'start',
-              actionLabel: learner ? `Mark response: ${turn.cue}` : undefined,
-              content: learner ? (
-                <S.LearnerCue>
-                  {support ? turn.text : turn.cue}
-                  {support ? <S.Hint>{turn.cue}</S.Hint> : null}
-                </S.LearnerCue>
-              ) : (
-                turn.text
-              ),
-            }
-          })}
-          completedIds={marked}
-          onComplete={(id) => setMarked((old) => toggle(old, id))}
-        />
-      </S.Stack>
-    </S.Stack>
+    <LearningDialogue
+      density="compact"
+      lines={turns.map((turn, i) => {
+        const learner = turn.speaker === 'You'
+        return {
+          id: `${prefix}-${i}`,
+          speaker: turn.speaker,
+          avatarUrl: turn.speaker === 'Kim' ? kim : undefined,
+          side: learner ? 'end' : 'start',
+          content: learner ? (
+            <S.LearnerCue>{support ? turn.text : turn.cue}</S.LearnerCue>
+          ) : (
+            turn.text
+          ),
+        }
+      })}
+    />
   )
 }
 export function ListeningSection({ active }: { active: boolean }) {

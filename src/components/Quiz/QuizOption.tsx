@@ -8,6 +8,7 @@ export function QuizOption({
   letter,
   state = 'default',
   density = 'regular',
+  layout = 'block',
   type = 'button',
   feedbackOutcome,
   onClick,
@@ -19,6 +20,7 @@ export function QuizOption({
       type={type}
       $state={state}
       $density={density}
+      $layout={layout}
       data-ui-quiz-option="true"
       onClick={(event) => {
         onClick?.(event)
@@ -26,9 +28,15 @@ export function QuizOption({
           playFeedbackSound(feedbackOutcome)
       }}
     >
-      <Styled.Letter>{letter}</Styled.Letter>
+      {letter != null ? <Styled.Letter>{letter}</Styled.Letter> : null}
       <Styled.OptionText $state={state}>{children}</Styled.OptionText>
-      {state === 'correct' || state === 'wrong' ? (
+      {layout === 'inline' ? (
+        <Styled.InlineResult>
+          {state === 'correct' || state === 'wrong' ? (
+            <QuizResponseMark tone={state} variant="option" />
+          ) : null}
+        </Styled.InlineResult>
+      ) : state === 'correct' || state === 'wrong' ? (
         <QuizResponseMark tone={state} variant="option" />
       ) : null}
     </Styled.Option>

@@ -151,6 +151,7 @@ export const Instruction = styled.div<{ $tone: 'default' | 'inverse' }>`
 `
 
 export const Tools = styled.div`
+  margin-inline-start: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;

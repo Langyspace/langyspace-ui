@@ -33,7 +33,7 @@ export function GuidedScenario({
         />
       }
     >
-      <Common.Row role="group" aria-label={selectionLabel}>
+      <Common.Row $justify="center" role="group" aria-label={selectionLabel}>
         {cases.map((item, i) => (
           <ChoiceCard
             key={item.id}

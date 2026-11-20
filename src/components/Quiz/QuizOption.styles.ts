@@ -46,7 +46,11 @@ export const OptionText = styled.span<{ $state: QuizOptionState }>`
 
 export const Option = styled(Pressable).withConfig({
   componentId: 'lsui-sc-quiz-option',
-})<{ $state: QuizOptionState; $density: 'regular' | 'compact' }>`
+})<{
+  $state: QuizOptionState
+  $density: 'regular' | 'compact'
+  $layout: 'block' | 'inline'
+}>`
   position: relative;
   display: flex;
   align-items: center;
@@ -144,4 +148,23 @@ export const Option = styled(Pressable).withConfig({
         }
       }
     `}
+  ${(p) =>
+    p.$layout === 'inline' &&
+    css`
+      width: auto;
+      min-height: ${theme.spacing[12]};
+      padding: ${theme.spacing[1]} ${theme.spacing[3]};
+      gap: ${theme.spacing[2]};
+      ${OptionText} {
+        font-size: ${theme.typography.fontSize.sm};
+      }
+    `}
+`
+
+export const InlineResult = styled.span`
+  display: inline-grid;
+  place-items: center;
+  width: 1.625rem;
+  height: 1.625rem;
+  flex-shrink: 0;
 `

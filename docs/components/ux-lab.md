@@ -180,3 +180,7 @@ the accepted click. SlideDeck exposes the opt-in sound toggle, independent of
 recorded speech. Materials adopt it consistently; preferences and exploratory
 prosody samples stay silent. The AnswerFeedbackSounds story demonstrates both
 results, mute, keyboard activation and disabled choices for human review.
+
+### Feedback45 — compact decisions and clear role swap
+
+The maintained B1/B2/C1 statement adapter shows multiple prompts with canonical inline QuizOption choices and compact material QuizQuestion text. One explanation opens at a time while answer states remain visible. GuidedScenario choices are centered. B1 contextual MCQs use the same warm-up column and put the scenario in the heading; the no-image Leo dialogue is outside the two-image count. The role-swap controls live in SlidePage tools and update the stage heading. Source stories expose these variations; no remote Lab publication or browser/visual review was performed.

@@ -10,4 +10,6 @@ export type QuizOptionProps = ComponentPropsWithRef<'button'> & {
   feedbackOutcome?: FeedbackSoundOutcome
   /** Compact choices for a slide panel; existing practice density is the default. */
   density?: 'regular' | 'compact'
+  /** Intrinsic-width answers beside a prompt; reserves space for the result mark. */
+  layout?: 'block' | 'inline'
 }

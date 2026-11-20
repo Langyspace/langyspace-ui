@@ -19,7 +19,8 @@ export const Surface = styled(Stack)`
   font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.5;
 `
-export const Row = styled.div`
+export const Row = styled.div<{ $justify?: 'start' | 'center' | 'end' }>`
+  justify-content: ${(p) => (p.$justify === 'center' ? 'center' : p.$justify === 'end' ? 'flex-end' : undefined)};
   display: flex;
   align-items: center;
   flex-wrap: wrap;

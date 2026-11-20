@@ -27,3 +27,8 @@ export interface VocabularySectionProps {
   group?: number
   active?: boolean
 }
+
+export interface YourVersionSectionProps {
+  swapped: boolean
+  support: boolean
+}

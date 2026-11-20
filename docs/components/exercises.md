@@ -90,8 +90,16 @@ See `ReviewedVocabulary` and `Materials/B2.01` for the new twelve-page lesson co
 
 See Exercise/Components stories `ProgressiveHint`, `ProgressiveAnswer`, `MonitorContent` and `MonitorForm`; final visual review belongs to the consumer.
 
-B1.01 composes the existing ExercisePanel and QuizOption as a five-item Right/Wrong sequence with one active sentence, retained attempts and short inline correction. No second evaluator, sound engine or lesson-specific choice CSS is introduced. Its warm-ups use the existing media counter and VocabularyGrid uses its canonical scene/label layout without consumer overrides.
+B1/B2/C1 compose ExercisePanel, QuizPromptHeader, QuizQuestion and QuizOption as a compact list of statement decisions. All examples remain visible, attempts are retained per item and only the selected completed explanation expands. Reopening it is silent. Evaluation stays in the shared lesson adapter. B1 image warm-ups count only their own image sequence; a dialogue portrait is not a progress surface.
 
-`ExercisePanel.navigation` accepts a controlled index, count, onChange and optional previous/next labels. It displays progress and native bounded navigation independently of exercise evaluation; no route, answer state or timer is bundled. B1/B2/C1 statement reviews use the same product adapter over ExercisePanel and QuizOption, retaining attempts when returning to an item. B2 references and C1 grammar use the same navigation for short content groups.
+`ExercisePanel.navigation` accepts a controlled index, count, onChange and optional previous/next labels. It displays progress and native bounded navigation independently of exercise evaluation; no route, answer state or timer is bundled. B2 references and C1 grammar use the same navigation for short content groups.
 
 `warmupMediaSizing="presentation"` opts into the existing media-height scale and a centered proportional frame for isolated warm-up illustrations. `natural` remains the default, preserving existing full-width framing. Counters stay on the media; images remain whole with contain. B2 uses the bounded variation for objects rather than stretching its square cutouts across the full page.
+
+## Compact statement decisions
+
+`QuizOption layout="inline"` uses intrinsic width for short answers beside a prompt, reserving the result-mark width before and after evaluation. Supply `letter={null}` when letter markers are unnecessary. `block` remains the default and preserves existing full-width options. Density, native buttons, sound outcomes and correct/wrong/dim states keep their existing contracts.
+
+`QuizQuestion density="compact" tone="material"` provides Montserrat semibold body-size questions with the material foreground. Regular/default preserves the original practice size and quiz ink. `QuizPromptHeader` stacks its prompt and answers at narrow widths.
+
+SlidePage tools align to the trailing edge, including a wrapped tools row. GuidedScenario centers its case choices through the shared Row alignment variation; B1/B2/C1 consume the same composition. Source stories cover inline choice states, the compact prompt, B1 role swap, revealed review and narrow review. These stories were authored, not executed, in delivery45.

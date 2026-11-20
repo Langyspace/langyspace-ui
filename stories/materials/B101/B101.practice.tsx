@@ -6,7 +6,6 @@ import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
-import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import {
   content,
   vocabulary,
@@ -59,10 +58,14 @@ export function WarmUpSection({
   const w = content.warmUps[index] ?? content.warmUps[0]!
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(w.a)
+  const imageCount = content.warmUps.filter((item) => !item.kl).length
+  const imageIndex = content.warmUps
+    .slice(0, index + 1)
+    .filter((item) => !item.kl).length
   return (
     <ExercisePanel
       variant="warmup"
-      counter={`${index + 1}/3`}
+      counter={w.kl ? undefined : `${imageIndex}/${imageCount}`}
       title={index === 2 ? w.ctx : undefined}
       media={
         w.kl ? (
@@ -116,11 +119,13 @@ export function WarmUpSection({
     </ExercisePanel>
   )
 }
-const scenarios = [
+export const contextPractice = [
   {
     image: image('bike'),
     alt: 'A cyclist wearing a helmet beside a bicycle.',
-    context: '“I’ve been cycling to work for a month.”',
+    title: '“I’ve been cycling to work for a month.”',
+    instruction:
+      'Keep the conversation going: choose a question that asks for new information.',
     options: [
       'What made you decide to cycle to work?',
       'How long have you been cycling to work?',
@@ -132,7 +137,8 @@ const scenarios = [
   {
     image: paintingScene,
     alt: 'Ana with a paint roller, talking to Kim in a blue living room.',
-    context: 'The living room and kitchen are finished. The bedroom is next.',
+    title: 'The living room and kitchen are finished. The bedroom is next.',
+    instruction: 'Choose the update that tells Kim the finished result.',
     options: [
       'I’ve been painting all week.',
       'I’ve painted two rooms.',
@@ -144,12 +150,15 @@ const scenarios = [
   },
 ]
 export function ContextPracticeSection({ index }: { index: number }) {
-  const scenario = scenarios[index] ?? scenarios[0]!
+  const scenario = contextPractice[index] ?? contextPractice[0]!
   const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(scenario.answer)
   return (
-    <ExercisePanel media={<img src={scenario.image} alt={scenario.alt} />}>
-      <Common.Heading $prompt>{scenario.context}</Common.Heading>
+    <ExercisePanel
+      variant="warmup"
+      warmupMediaSizing="presentation"
+      media={<img src={scenario.image} alt={scenario.alt} />}
+    >
       {scenario.options.map((option, i) => (
         <QuizOption
           key={option}

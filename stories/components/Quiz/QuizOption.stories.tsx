@@ -107,3 +107,21 @@ export const AnswerFeedbackSounds: Story = {
   render: () => <FeedbackSoundPreview />,
   tags: ['visual-review', 'audio-review'],
 }
+
+export const InlineAnswers: Story = {
+  args: { letter: null, density: 'compact', layout: 'inline' },
+  render: (args) => (
+    <StoryLayout.InlineStates>
+      <QuizOption {...args}>Right</QuizOption>
+      <QuizOption {...args} state="correct">
+        Right
+      </QuizOption>
+      <QuizOption {...args} state="wrong">
+        Wrong
+      </QuizOption>
+      <QuizOption {...args} state="dim" disabled>
+        Wrong
+      </QuizOption>
+    </StoryLayout.InlineStates>
+  ),
+}
