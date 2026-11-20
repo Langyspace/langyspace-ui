@@ -6,6 +6,7 @@ export interface RolePlayStep {
 export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> {
   situation: ReactNode
   image?: { src: string; alt: string }
+  imageFit?: 'contain' | 'cover'
   roles?: readonly string[]
   support?: readonly string[]
   supportVisible?: boolean

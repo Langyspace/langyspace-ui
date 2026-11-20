@@ -67,7 +67,6 @@ Active-page reporting follows60% viewport coverage, including oversized pages. P
 
 The standalone material boundary accepts a trusted `langy.material.focus` message (version1, same origin and parent window, exact material key and producer commit). It focuses the deck context after its host reveals the frame, preserving an active editor. This optional message complements the existing pinned ready protocol; untrusted or stale messages do nothing. The library itself installs no document keyboard handler. Canonical materials store separate validated page cursors and notes drafts by material key; unknown saved page ids fall back safely, and explicit initial pages take precedence.
 
-
 ## SlideNotesWindow
 
 Controlled, full-window notes editor shared by materials and their hosts. It reuses the existing
@@ -93,3 +92,7 @@ Native preview evidence covers eight material wrappers at desktop/mobile opener 
 actual windows), named-window reuse, local draft recovery and keyboard isolation from the deck.
 Cloud persistence requires the separate authenticated staging qualification; preview evidence does
 not establish it.
+
+### SlidePage — dialogue comprehension (feedback37)
+
+`questions?: ReactNode` places comprehension beside the main body: dialogue left, questions right. `questionsTitle?: ReactNode` defaults to Questions. With this slot the content expands to the wide presentation width and stacks at the existing medium container breakpoint. Both columns are normal page content, without an inner scroll area. Keep the existing title/titleAudio/instruction slots, and distribute questions according to the meaningful parts of a long dialogue. Do not render a duplicate standalone question page. The A103 Storybook examples expose real content, reveal controls and narrow-container states; product-owner review remains pending.

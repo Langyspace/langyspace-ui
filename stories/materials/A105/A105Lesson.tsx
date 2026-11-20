@@ -55,6 +55,11 @@ export function A105Lesson({
         <SlidePage
           width="reading"
           density="compact"
+          questions={
+            <PromptExercise
+              items={fillGaps ? prompts.gaps : prompts.comprehension}
+            />
+          }
           eyebrow="Guided conversation"
           title={title}
           titleAudio={{
@@ -140,21 +145,7 @@ export function A105Lesson({
       ),
     },
     dialoguePage('s6', 'At the street market'),
-    ask(
-      's61',
-      'Comprehension questions',
-      'Answer the questions about the text.',
-      prompts.comprehension,
-      'Guided conversation',
-    ),
     dialoguePage('s8', 'At the market with Kim', true),
-    ask(
-      's81',
-      'Comprehension questions',
-      'Answer the questions about the text.',
-      prompts.gaps,
-      'Guided conversation',
-    ),
     ask(
       's82',
       'Personal questions',

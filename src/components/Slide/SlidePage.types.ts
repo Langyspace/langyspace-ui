@@ -11,6 +11,9 @@ export interface SlidePageProps extends Omit<
   eyebrow?: ReactNode
   instruction?: ReactNode
   tools?: ReactNode
+  /** Comprehension beside the dialogue; stacks below it in narrow containers. */
+  questions?: ReactNode
+  questionsTitle?: ReactNode
   /** Optional introductory content before the exercise heading. */
   lead?: ReactNode
   /** Split introductions keep the lesson title and heading beside the exercise. Stacks on narrow screens. */

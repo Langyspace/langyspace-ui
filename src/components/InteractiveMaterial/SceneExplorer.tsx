@@ -26,7 +26,9 @@ export function SceneExplorer(options: SceneExplorerProps) {
   const {
     imageUrl,
     imageAlt,
+    imageSizing = 'natural',
     hotspots,
+    connections = [],
     selectedId,
     visitedIds,
     onSelect,
@@ -183,9 +185,34 @@ export function SceneExplorer(options: SceneExplorerProps) {
       ) : null}
       <Frame
         ref={frameRef}
+        $bounded={imageSizing === 'presentation'}
         $gutter={selected && showCallout ? (layout?.gutter ?? 0) : 0}
       >
         <img ref={imageRef} src={imageUrl} alt={imageAlt} onLoad={measure} />
+        {geometry && connections.length ? (
+          <Styled.Connections
+            aria-hidden="true"
+            viewBox={`0 0 ${geometry.frameWidth} ${geometry.frameHeight}`}
+            preserveAspectRatio="none"
+          >
+            {connections.map((connection) => {
+              const from = hotspots.find((h) => h.id === connection.from)
+              const to = hotspots.find((h) => h.id === connection.to)
+              if (!from || !to) return null
+              const start = scenePoint(geometry, from.xPercent, from.yPercent)
+              const end = scenePoint(geometry, to.xPercent, to.yPercent)
+              return (
+                <line
+                  key={`${connection.from}-${connection.to}`}
+                  x1={start.x}
+                  y1={start.y}
+                  x2={end.x}
+                  y2={end.y}
+                />
+              )
+            })}
+          </Styled.Connections>
+        ) : null}
         {hotspots.map((h) => {
           const point = geometry
             ? scenePoint(geometry, h.xPercent, h.yPercent)
@@ -279,6 +306,9 @@ export function SceneExplorer(options: SceneExplorerProps) {
                 </IconButton>
               ) : null}
             </Styled.CalloutHeading>
+            {selected.example ? (
+              <Styled.CalloutExample>{selected.example}</Styled.CalloutExample>
+            ) : null}
             {practice ? selected.prompt : null}
             {practice ? (
               <Common.Action

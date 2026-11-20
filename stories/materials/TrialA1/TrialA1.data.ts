@@ -11,7 +11,6 @@ export const order = [
   's1',
   's2',
   's3',
-  's31',
   's41',
   's42',
   's43',

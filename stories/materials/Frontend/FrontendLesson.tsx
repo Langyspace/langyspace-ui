@@ -1,6 +1,7 @@
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 
-import { Button } from '../../../src/components/Button/Button'
+import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
+import { DialogueTitle } from '../shared/DialogueTitle'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
@@ -38,9 +39,13 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       ids.includes(media.playingId ?? '') &&
       (media.status === 'playing' || media.status === 'loading')
     return (
-      <Button size="sm" variant="secondary" onClick={() => media.play(ids)}>
-        {busy ? 'Pause' : 'Listen to the dialogue'}
-      </Button>
+      <DialoguePlaybackAction
+        context="Kim and Ana before the launch"
+        status={
+          busy ? 'playing' : media.status === 'paused' ? 'paused' : 'idle'
+        }
+        onClick={() => media.play(ids)}
+      />
     )
   }
   const pages = order.map((id) => {
@@ -48,6 +53,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       eyebrow = '',
       instruction = '',
       tools,
+      titleAction,
       lead,
       element
     if (id === 's1') {
@@ -101,7 +107,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       instruction = index
         ? 'The talk goes on. Listen and read along.'
         : 'Listen to Kim and Ana plan a fix before Friday’s launch.'
-      tools = dialogueTool(index)
+      titleAction = dialogueTool(index)
       element = (
         <S.Stack>
           {!index ? (
@@ -164,9 +170,20 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       label: `${eyebrow} · ${title}`,
       content: (
         <SlidePage
-          title={title}
+          title={
+            titleAction ? (
+              <DialogueTitle title={title} action={titleAction} />
+            ) : (
+              title
+            )
+          }
           eyebrow={eyebrow}
           instruction={instruction}
+          questions={
+            id === 's6' || id === 's62' ? (
+              <Comprehension part={id === 's6' ? 0 : 1} />
+            ) : undefined
+          }
           tools={tools}
           lead={lead}
           layout={id === 's1' ? 'split' : 'stacked'}

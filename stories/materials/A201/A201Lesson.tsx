@@ -121,24 +121,15 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             lines={content.dialogue}
             speech={speech}
             emphasis
+            questions={
+              <PromptExercise
+                items={prompts(
+                  content.firstComprehension,
+                  'anna-ben.questions',
+                )}
+              />
+            }
           />
-        ),
-      }
-    if (id === 's111')
-      return {
-        id,
-        label: 'Guided conversation · Anna and Ben · Comprehension',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Guided conversation"
-            title="Comprehension questions"
-            instruction="Answer the questions about the text."
-          >
-            <PromptExercise
-              items={prompts(content.firstComprehension, 'anna-ben.questions')}
-            />
-          </SlidePage>
         ),
       }
     if (id === 's12')
@@ -154,24 +145,15 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             speech={speech}
             gaps={gaps}
             onGapToggle={onGapToggle}
+            questions={
+              <PromptExercise
+                items={prompts(
+                  content.gapComprehension,
+                  'emma-lucas.questions',
+                )}
+              />
+            }
           />
-        ),
-      }
-    if (id === 's13')
-      return {
-        id,
-        label: 'Guided conversation · Emma and Lucas · Comprehension',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Guided conversation"
-            title="Comprehension questions"
-            instruction="Answer the questions about the text."
-          >
-            <PromptExercise
-              items={prompts(content.gapComprehension, 'emma-lucas.questions')}
-            />
-          </SlidePage>
         ),
       }
     if (id === 's14')

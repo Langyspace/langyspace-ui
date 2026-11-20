@@ -125,6 +125,7 @@ export function DialogueSection({
   return (
     <Styled.Stack>
       <LearningDialogue
+        density="compact"
         playingId={playingId}
         translatedIds={translated}
         onTranslate={(id) =>

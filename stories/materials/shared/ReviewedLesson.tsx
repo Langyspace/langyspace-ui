@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
@@ -16,9 +18,9 @@ import { LessonNotes } from './LessonNotes'
 import { LessonNotesTrigger } from './LessonNotesTrigger'
 import { withVoiceMessageLayout } from './deviceTheme'
 import * as Shell from './Lesson.styles'
-import anaAvatar from '../A101/assets/bust_ana.webp'
-import kimAvatar from '../A101/assets/bust_kim.webp'
+import { ana as anaAvatar, kim as kimAvatar } from './characterPortraits'
 import type {
+  ReviewedPage,
   ReviewedLessonProps,
   ReviewedDialogueProps,
   ReviewedPageContentProps,
@@ -82,6 +84,7 @@ function PageContent({
   const [revealed, setRevealed] = useState<string[]>([])
   const [initial, setInitial] = useState(false)
   const [all, setAll] = useState(false)
+  const [selected, setSelected] = useState<string>()
   if (page.kind === 'prompts') return <PromptExercise items={page.items} />
   if (page.kind === 'vocabulary')
     return (
@@ -136,13 +139,51 @@ function PageContent({
         }}
       />
     )
+  if (page.kind === 'scene')
+    return (
+      <Common.Stack>
+        {page.context ? (
+          <Common.Row>
+            <Avatar size="sm" initials="Ana" imageUrl={anaAvatar} />
+            <Common.Hint>{page.context}</Common.Hint>
+          </Common.Row>
+        ) : null}
+        <SceneExplorer
+          imageSizing="presentation"
+          imageUrl={page.image.src}
+          imageAlt={page.image.alt}
+          hotspots={page.hotspots}
+          connections={page.connections}
+          selectedId={selected}
+          visitedIds={revealed}
+          playingId={
+            page.hotspots.find((h) => h.audioId === speech.playingId)?.id
+          }
+          onSelect={(id) => {
+            setSelected(id)
+            setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+          }}
+          onPlayHotspot={(id) => {
+            const h = page.hotspots.find((item) => item.id === id)
+            if (h) speech.speak([{ id: h.audioId, text: h.audioText }])
+          }}
+          labels={{ initial: '', play: 'Listen' }}
+        />
+      </Common.Stack>
+    )
   if (page.kind === 'grammar')
     return (
       <Common.Stack>
         <GrammarTable
           title={page.title}
           captionVisibility="screen-reader"
-          columns={{ subject: 'Who / When', verb: 'Form', example: 'Example' }}
+          columns={
+            page.columns ?? {
+              subject: 'Who / When',
+              verb: 'Form',
+              example: 'Example',
+            }
+          }
           rows={page.rows}
         />
         {page.note ? <Common.Hint>{page.note}</Common.Hint> : null}
@@ -185,6 +226,51 @@ function PageContent({
         />
       </ThemeProvider>
     )
+  if (page.kind === 'introductions') {
+    const choice = page.choices.find((item) => item.id === selected)
+    return (
+      <RolePlayExercise
+        presentation="instructions"
+        situation=""
+        steps={[]}
+        completedIds={[]}
+        onStepToggle={() => undefined}
+        tracker={
+          <PromptExercise
+            items={[
+              {
+                id: 'ask',
+                prompt: 'Find out who Kim wants to meet.',
+                answer: 'Is it my brother? My sister? My parents?',
+              },
+              {
+                id: 'introduce',
+                prompt: 'Introduce the person or people.',
+                answer: choice?.introduction ?? 'This is my … / These are my …',
+              },
+              {
+                id: 'detail',
+                prompt: 'Tell Kim one more thing.',
+                answer: choice?.detail ?? 'He’s/She’s a … / They’re from …',
+              },
+            ]}
+          />
+        }
+      >
+        <SceneExplorer
+          presentation="labels"
+          labelVisibility="always"
+          imageSizing="presentation"
+          imageUrl={page.image.src}
+          imageAlt={page.image.alt}
+          hotspots={page.choices.map((item) => ({ ...item, prompt: null }))}
+          selectedId={selected}
+          visitedIds={selected ? [selected] : []}
+          onSelect={setSelected}
+        />
+      </RolePlayExercise>
+    )
+  }
   if (page.kind === 'roleplay')
     return (
       <RolePlayExercise
@@ -197,6 +283,8 @@ function PageContent({
         tracker={
           page.lines ? (
             <Dialogue lines={page.lines} speech={speech} guidance />
+          ) : page.items ? (
+            <PromptExercise items={page.items} />
           ) : undefined
         }
       />
@@ -216,11 +304,33 @@ function PageContent({
 export function ReviewedLesson({
   code,
   title,
-  pages,
+  pages: authoredPages,
   recordings,
   initialPageId,
   learnerName = '',
 }: ReviewedLessonProps) {
+  const mergedQuestionIds = new Set<string>()
+  const pages: readonly ReviewedPage[] = authoredPages.flatMap(
+    (page, index) => {
+      if (mergedQuestionIds.has(page.id)) return []
+      const next = authoredPages[index + 1]
+      if (
+        page.kind === 'dialogue' &&
+        next?.kind === 'prompts' &&
+        next.eyebrow === 'Guided conversation'
+      ) {
+        mergedQuestionIds.add(next.id)
+        return [
+          {
+            ...page,
+            minutes: page.minutes + next.minutes,
+            questions: next.items,
+          },
+        ]
+      }
+      return [page]
+    },
+  )
   const [pageId, setPageId] = useLessonPage(
     initialPageId,
     code.toLowerCase().replace('.', '-'),
@@ -246,11 +356,19 @@ export function ReviewedLesson({
             content: (
               <SlidePage
                 title={page.title}
+                questions={
+                  page.kind === 'dialogue' && page.questions ? (
+                    <PromptExercise items={page.questions} />
+                  ) : undefined
+                }
                 eyebrow={page.eyebrow}
                 instruction={page.instruction}
                 density={page.kind === 'dialogue' ? 'compact' : 'regular'}
                 width={
-                  page.kind === 'vocabulary' || page.kind === 'roleplay'
+                  page.kind === 'vocabulary' ||
+                  page.kind === 'roleplay' ||
+                  page.kind === 'scene' ||
+                  page.kind === 'introductions'
                     ? 'wide'
                     : 'reading'
                 }

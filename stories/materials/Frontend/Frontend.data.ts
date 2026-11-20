@@ -11,7 +11,9 @@ const clips = import.meta.glob<string>('./assets/audio/*.mp3', {
   import: 'default',
 })
 export { content, provenance }
-export const order = content.order.map((id) => `s${id}`)
+export const order = content.order
+  .map((id) => `s${id}`)
+  .filter((id) => id !== 's61')
 export const image = (key: string) =>
   assets[
     `./${provenance.images[key as keyof typeof provenance.images]?.file}`

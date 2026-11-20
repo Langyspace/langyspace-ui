@@ -8,7 +8,7 @@ export const Root = styled(Common.Stack).withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
 `
-export const Scene = styled.div<{ $gutter: number }>`
+export const Scene = styled.div<{ $gutter: number; $bounded: boolean }>`
   position: relative;
   margin-top: ${(p) => p.$gutter}px;
   border-radius: ${theme.slides.panelRadius};
@@ -16,6 +16,14 @@ export const Scene = styled.div<{ $gutter: number }>`
     display: block;
     width: 100%;
     border-radius: inherit;
+    ${(p) =>
+      p.$bounded
+        ? css`
+            height: auto;
+            max-height: min(54cqh, 32rem);
+            object-fit: contain;
+          `
+        : undefined}
   }
 `
 export const Hotspot = styled(Pressable)<{
@@ -122,9 +130,9 @@ export const Callout = styled(Common.Surface)<{
   width: max-content;
   max-width: min(
     19rem,
-    ${(p) => p.$imageWidth === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageWidth - 16)}px`}
+    ${(p) => (p.$imageWidth === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageWidth - 16)}px`)}
   );
-  max-height: ${(p) => p.$imageHeight === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageHeight - 16)}px`};
+  max-height: ${(p) => (p.$imageHeight === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageHeight - 16)}px`)};
   overflow: auto;
   padding: ${theme.spacing[3]};
   gap: ${theme.spacing[2]};
@@ -157,4 +165,28 @@ export const CalloutHeading = styled.div`
   > button {
     flex-shrink: 0;
   }
+`
+
+/** Functional relationships over the image; never baked into a generated asset. */
+export const Connections = styled.svg`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  line {
+    stroke: ${(p) => Common.recipe(p).accent};
+    stroke-width: 3;
+    vector-effect: non-scaling-stroke;
+    stroke-linecap: round;
+  }
+`
+export const CalloutExample = styled.p`
+  margin: 0;
+  color: ${(p) => Common.recipe(p).foreground};
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.4;
 `

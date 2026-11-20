@@ -1,3 +1,4 @@
+import { characterPortrait } from './characterPortraits'
 import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -103,7 +104,7 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
           speaker: line.speaker,
           content: line.text,
           translation: line.translation,
-          avatarUrl: line.avatarUrl,
+          avatarUrl: line.avatarUrl ?? characterPortrait(line.speaker),
           side: speakers.indexOf(line.speaker) % 2 ? 'end' : 'start',
           audioLabel: `Listen: ${line.text}`,
         }))}

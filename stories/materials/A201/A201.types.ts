@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react'
 import type { LessonProps } from '../shared/Lesson.types'
 import type { useLessonSpeech } from './useLessonSpeech'
 
@@ -26,6 +27,7 @@ export interface DialogueProps extends SpeechProps {
   emphasis?: boolean
 }
 export interface DialoguePageProps extends DialogueProps {
+  questions?: ReactNode
   active: boolean
   title: string
   context: string

@@ -89,6 +89,11 @@ export function A102Lesson({
         <SlidePage
           width="reading"
           density="compact"
+          questions={
+            <PromptExercise
+              items={fillGaps ? prompts.gaps : prompts.comprehension}
+            />
+          }
           eyebrow="Guided conversation"
           title={title}
           titleAudio={{
@@ -172,12 +177,6 @@ export function A102Lesson({
     },
     audioChoice('s7', 2),
     dialoguePage('s8'),
-    questions(
-      's9',
-      'Comprehension questions',
-      'Answer the questions about the text.',
-      prompts.comprehension,
-    ),
     {
       id: 's10',
       label: 'Grammar · My and your',
@@ -193,12 +192,6 @@ export function A102Lesson({
       ),
     },
     dialoguePage('s11', true),
-    questions(
-      's12',
-      'Comprehension questions',
-      'Answer, then ask your teacher the same questions.',
-      prompts.gaps,
-    ),
     {
       id: 's14',
       label: 'Phone call · Kim is calling',

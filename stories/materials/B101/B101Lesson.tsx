@@ -198,6 +198,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
           <S.Page
             width="reading"
             density="dense"
+            questions={<ComprehensionSection part={part} />}
             eyebrow="Dialogue"
             title={
               <DialogueTitle
@@ -216,26 +217,6 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         ),
       }
     }
-    if (id === 's61')
-      return {
-        id,
-        label: 'Dialogue · Questions',
-        content: (
-          <S.Page
-            width="reading"
-            eyebrow="Dialogue"
-            title={
-              <DialogueTitle
-                title="What did you find out?"
-                action={audioTool('What did you find out?', id)}
-              />
-            }
-            instruction="Answer about Kim and Ana, then connect the story to your life."
-          >
-            <ComprehensionSection />
-          </S.Page>
-        ),
-      }
     if (id === 's7')
       return {
         id,

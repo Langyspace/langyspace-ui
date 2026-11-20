@@ -1,0 +1,264 @@
+{
+  "taskId": "A103-FEEDBACK37-FAMILY-PHONE-20261120",
+  "state": "ready_for_integration_and_human_visual_review",
+  "updatedAt": "2026-11-20T13:28:31.042Z",
+  "tool": "built-in image_gen",
+  "generationCalls": 2,
+  "finalAssets": 2,
+  "plannedAssets": 2,
+  "imageInputsPerCall": 0,
+  "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "assets": [
+    {
+      "taskId": "A103-FEEDBACK37-FAMILY-PHONE-20261120",
+      "id": "scene-ana-family",
+      "tool": "built-in image_gen",
+      "mode": "fresh text-only generation",
+      "generationCalls": 1,
+      "generationAttempts": 1,
+      "imageInputsPerCall": 0,
+      "requestArgumentKeys": ["prompt", "transparent_background"],
+      "transparentBackgroundRequested": false,
+      "omittedFields": ["referenced_image_paths", "num_last_images_to_include"],
+      "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/prompts/scene-ana-family.txt",
+      "promptSha256": "2df963455aabc416973b4c16fa7493fdb77c9657e10bdf9704f4f8cfe9b79bc4",
+      "requestPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/requests/scene-ana-family.json",
+      "requestSha256": "5806ef3590bb8af2e5c1256d13823f84a90b00bf5cf5151cec4fafe52cf0495d",
+      "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+      "destination": "stories/materials/A103/assets/scene-ana-family.webp",
+      "aspectRatioRequested": "16:9",
+      "original": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/originals/scene-ana-family.png",
+        "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-ebe784ad-6598-4d66-be8e-0d387e45fa0a.png",
+        "sha256": "56864e4687875a62dc957fba4fc0ab90c103150744b7d1e62ff22305e3277a59",
+        "width": 1672,
+        "height": 941,
+        "hasAlpha": false,
+        "format": "png"
+      },
+      "asset": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/assets/scene-ana-family.webp",
+        "sha256": "4e32abdc754e5a4a049b08d811bd363c96891d4a8423244c778dfade8212eb49",
+        "width": 1280,
+        "height": 720,
+        "hasAlpha": false,
+        "format": "webp"
+      },
+      "composition": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/family-composition.json",
+        "sha256": "b8f971624a88967772d9a8d7f7653f22ad6a746d2ac7312bf79507404d0f0424",
+        "assetId": "scene-ana-family",
+        "coordinateSystem": "Percent of the whole uncropped image; x left-to-right, y top-to-bottom.",
+        "evidence": "Approximate coordinates read from the native opaque generation preview as explicitly requested; no extra render, screenshot, browser or QA.",
+        "people": [
+          {
+            "id": "mother",
+            "label": "Ana’s mother",
+            "faceCenter": {
+              "xPercent": 33.3,
+              "yPercent": 22.3
+            },
+            "upperBodyCenter": {
+              "xPercent": 31.6,
+              "yPercent": 52
+            },
+            "personBounds": {
+              "xPercent": 20,
+              "yPercent": 6,
+              "widthPercent": 23,
+              "heightPercent": 94
+            }
+          },
+          {
+            "id": "father",
+            "label": "Ana’s father",
+            "faceCenter": {
+              "xPercent": 48.7,
+              "yPercent": 17.3
+            },
+            "upperBodyCenter": {
+              "xPercent": 50,
+              "yPercent": 50
+            },
+            "personBounds": {
+              "xPercent": 37,
+              "yPercent": 1.5,
+              "widthPercent": 27,
+              "heightPercent": 98.5
+            }
+          },
+          {
+            "id": "leo",
+            "label": "Leo",
+            "faceCenter": {
+              "xPercent": 17.5,
+              "yPercent": 43.5
+            },
+            "upperBodyCenter": {
+              "xPercent": 15,
+              "yPercent": 72
+            },
+            "personBounds": {
+              "xPercent": 0.5,
+              "yPercent": 25.5,
+              "widthPercent": 28.5,
+              "heightPercent": 74.5
+            }
+          },
+          {
+            "id": "bia",
+            "label": "Bia",
+            "faceCenter": {
+              "xPercent": 68.4,
+              "yPercent": 49.5
+            },
+            "upperBodyCenter": {
+              "xPercent": 68.6,
+              "yPercent": 77
+            },
+            "personBounds": {
+              "xPercent": 56,
+              "yPercent": 32,
+              "widthPercent": 25,
+              "heightPercent": 68
+            }
+          },
+          {
+            "id": "kim",
+            "label": "Kim",
+            "faceCenter": {
+              "xPercent": 85.5,
+              "yPercent": 29.5
+            },
+            "upperBodyCenter": {
+              "xPercent": 88,
+              "yPercent": 61
+            },
+            "personBounds": {
+              "xPercent": 77,
+              "yPercent": 13,
+              "widthPercent": 22.5,
+              "heightPercent": 87
+            }
+          }
+        ],
+        "parentsGroup": {
+          "memberIds": ["mother", "father"],
+          "suggestedNativeHotspot": {
+            "xPercent": 41.5,
+            "yPercent": 41
+          },
+          "suggestedNativeConnectorEndpoints": [
+            {
+              "personId": "mother",
+              "xPercent": 33,
+              "yPercent": 47
+            },
+            {
+              "personId": "father",
+              "xPercent": 50,
+              "yPercent": 47
+            }
+          ],
+          "drawnIntoImage": false
+        },
+        "knownCompositionObservations": [
+          "Exactly five adults are visible; Ana is absent.",
+          "Family group is more compact and front-row people sit lower than the planned approximate regions. Use final coordinates, not prompt coordinates.",
+          "Bia’s hands are partly cut at the lower edge. Leo’s non-book forearm continues out of the lower crop. All five faces are unobstructed.",
+          "These are approximate composition annotations, not a pixel-accurate segmentation or a UI placement validation."
+        ]
+      },
+      "technicalTransform": "Whole-frame proportional resize and WebP export only; no cropping, semantic edits or background replacement.",
+      "testsQA": "None as requested: no tests, QA, browser, screenshots, renders or publication. Approximate composition coordinates are part of the requested image handoff, based on native preview only.",
+      "humanVisualApproval": false,
+      "sharedSourceWrites": 0,
+      "remoteWrites": 0,
+      "savedAt": "2026-11-20T13:26:53.688Z"
+    },
+    {
+      "taskId": "A103-FEEDBACK37-FAMILY-PHONE-20261120",
+      "id": "scene-showing-phone-photo",
+      "tool": "built-in image_gen",
+      "mode": "fresh text-only generation",
+      "generationCalls": 1,
+      "generationAttempts": 1,
+      "imageInputsPerCall": 0,
+      "requestArgumentKeys": ["prompt", "transparent_background"],
+      "transparentBackgroundRequested": false,
+      "omittedFields": ["referenced_image_paths", "num_last_images_to_include"],
+      "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/prompts/scene-showing-phone-photo.txt",
+      "promptSha256": "ca8d0421ee066123080db9e226bf30629eac5e21504ed2f450371d7d402faa21",
+      "requestPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/requests/scene-showing-phone-photo.json",
+      "requestSha256": "266a332b97b470ff045715ca2dd5657759d7e4712c36c0381723e6f2c969cde1",
+      "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+      "destination": "stories/materials/A103/assets/scene-showing-phone-photo.webp",
+      "aspectRatioRequested": "3:2",
+      "original": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/originals/scene-showing-phone-photo.png",
+        "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-f4652682-8f4d-47db-94fc-4cd034904160.png",
+        "sha256": "023803382a09a70986fb1d2c36952397c080fbafbbfc522537a2e03b0cbc831b",
+        "width": 1536,
+        "height": 1024,
+        "hasAlpha": false,
+        "format": "png"
+      },
+      "asset": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/assets/scene-showing-phone-photo.webp",
+        "sha256": "d59a20ca3c78369a1b823b791161f910aaec945352f9dceb616348ac72dbf81f",
+        "width": 960,
+        "height": 640,
+        "hasAlpha": false,
+        "format": "webp"
+      },
+      "composition": {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/a103-feedback37-family-phone-20261120/phone-composition.json",
+        "sha256": "631619623acce489a98a0351c92ba548677ba464867429a706fb151c2e4b739b",
+        "assetId": "scene-showing-phone-photo",
+        "coordinateSystem": "Percent of full uncropped image; x left-to-right, y top-to-bottom.",
+        "evidence": "Approximate composition annotations from native opaque generation preview as requested; no extra render/browser/screenshot/QA.",
+        "anaFaceCenter": {
+          "xPercent": 34.9,
+          "yPercent": 36.7
+        },
+        "phoneCenter": {
+          "xPercent": 72.9,
+          "yPercent": 51
+        },
+        "phoneBounds": {
+          "xPercent": 63.1,
+          "yPercent": 22.9,
+          "widthPercent": 19.6,
+          "heightPercent": 56.1
+        },
+        "screenBounds": {
+          "xPercent": 64.3,
+          "yPercent": 26.1,
+          "widthPercent": 17.2,
+          "heightPercent": 50.5
+        },
+        "photoManFaceCenter": {
+          "xPercent": 73.6,
+          "yPercent": 46.7
+        },
+        "knownCompositionObservations": [
+          "One complete vertical phone is visible, showing one clear adult male portrait without UI/text.",
+          "Ana is on the left and holds the phone toward the observer at center-right, with a visible continuous forearm and natural edge grip.",
+          "Ana’s curls approach/touch the top canvas edge; composition is a little tighter than the requested generous head margin. No automatic variant was generated."
+        ]
+      },
+      "technicalTransform": "Whole-frame proportional resize and WebP export only; no cropping, semantic edits or background replacement.",
+      "testsQA": "None as requested: no tests, QA, browser, screenshots, renders or publication. Approximate composition coordinates are part of the requested image handoff, based on native preview only.",
+      "humanVisualApproval": false,
+      "sharedSourceWrites": 0,
+      "remoteWrites": 0,
+      "savedAt": "2026-11-20T13:28:31.028Z"
+    }
+  ],
+  "testsQA": "None as requested: no tests, QA, browser, screenshots, renders or publication. Approximate composition coordinates are part of the requested image handoff, based on native preview only.",
+  "humanVisualApproval": false,
+  "visualGateReview": "pending human",
+  "sharedSourceWrites": 0,
+  "remoteWrites": 0,
+  "callsInFlight": 0
+}

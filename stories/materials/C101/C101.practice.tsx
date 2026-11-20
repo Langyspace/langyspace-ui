@@ -307,20 +307,13 @@ export function C101Questions({
 }: {
   items: readonly { q: string; a: string }[]
 }) {
-  const [revealed, setRevealed] = useState<string[]>([])
   return (
-    <S.Stack>
-      {items.map((item, i) => (
-        <S.QuestionReveal
-          key={item.q}
-          marker={i + 1}
-          answer={item.a}
-          revealed={revealed.includes(item.q)}
-          onClick={() => setRevealed((old) => toggleId(old, item.q))}
-        >
-          {item.q}
-        </S.QuestionReveal>
-      ))}
-    </S.Stack>
+    <PromptExercise
+      items={items.map((item, index) => ({
+        id: String(index),
+        prompt: item.q,
+        answer: item.a,
+      }))}
+    />
   )
 }

@@ -1,3 +1,4 @@
+import { A103Lesson } from '../../materials/A103/A103Lesson'
 import { useState } from 'react'
 import { withVoiceMessageLayout } from '../../materials/shared/deviceTheme'
 import { LabTile } from './LabTile'
@@ -256,4 +257,13 @@ function CompactCallPreview() {
 }
 export const CompactContactCall: Story = {
   render: () => <CompactCallPreview />,
+}
+
+export const ContextualFamilyScene: Story = {
+  render: () => <A103Lesson initialPageId="s4" />,
+  tags: ['visual-review'],
+}
+export const ConversationAndComprehension: Story = {
+  render: () => <A103Lesson initialPageId="s71" />,
+  tags: ['visual-review'],
 }

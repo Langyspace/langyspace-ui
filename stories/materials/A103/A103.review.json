@@ -1,5 +1,5 @@
 {
-  "version": 34,
+  "version": 37,
   "code": "A1.03",
   "title": "People in my life",
   "pages": [
@@ -82,47 +82,86 @@
     },
     {
       "id": "s4",
-      "kind": "words",
+      "kind": "scene",
       "title": "Family words",
-      "instruction": "How do you say these words in English?",
+      "instruction": "Ana is showing a photo. Click a person and listen.",
       "minutes": 4,
       "eyebrow": "Vocabulary",
-      "items": [
+      "context": "Ana’s family and her friend Kim",
+      "image": {
+        "src": "scene-ana-family",
+        "alt": "Ana’s photo: her mother and father together, her brother Leo, her sister Bia and her friend Kim."
+      },
+      "hotspots": [
         {
-          "id": "F.0",
-          "clue": "mãe",
-          "word": "mother",
-          "example": "This is my mother."
+          "id": "family.0",
+          "label": "mother",
+          "prompt": "",
+          "example": "My mother is a doctor.",
+          "xPercent": 33,
+          "yPercent": 47,
+          "audioId": "FS.0",
+          "audioText": "mother. My mother is a doctor."
         },
         {
-          "id": "F.1",
-          "clue": "pai",
-          "word": "father",
-          "example": "This is my father."
+          "id": "family.1",
+          "label": "father",
+          "prompt": "",
+          "example": "This is my father. He’s from Recife.",
+          "xPercent": 50,
+          "yPercent": 47,
+          "audioId": "FS.1",
+          "audioText": "father. This is my father. He’s from Recife."
         },
         {
-          "id": "F.2",
-          "clue": "pai e mãe",
-          "word": "parents",
-          "example": "These are my parents."
+          "id": "family.2",
+          "label": "parents",
+          "prompt": "",
+          "example": "My parents are from Recife.",
+          "xPercent": 41.5,
+          "yPercent": 38,
+          "audioId": "FS.2",
+          "audioText": "parents. My parents are from Recife."
         },
         {
-          "id": "F.3",
-          "clue": "irmão",
-          "word": "brother",
-          "example": "This is my brother."
+          "id": "family.3",
+          "label": "brother",
+          "prompt": "",
+          "example": "My brother, Leo, is a student.",
+          "xPercent": 15,
+          "yPercent": 72,
+          "audioId": "FS.3",
+          "audioText": "brother. My brother, Leo, is a student."
         },
         {
-          "id": "F.4",
-          "clue": "irmã",
-          "word": "sister",
-          "example": "This is my sister."
+          "id": "family.4",
+          "label": "sister",
+          "prompt": "",
+          "example": "This is Bia, my sister. She’s a cook.",
+          "xPercent": 68.6,
+          "yPercent": 77,
+          "audioId": "FS.4",
+          "audioText": "sister. This is Bia, my sister. She’s a cook."
         },
         {
-          "id": "F.5",
-          "clue": "amigo ou amiga",
-          "word": "friend",
-          "example": "This is my friend."
+          "id": "family.5",
+          "label": "friend",
+          "prompt": "",
+          "example": "Kim is my friend.",
+          "xPercent": 88,
+          "yPercent": 61,
+          "audioId": "FS.5",
+          "audioText": "friend. Kim is my friend."
+        }
+      ],
+      "connections": [
+        {
+          "from": "family.0",
+          "to": "family.2"
+        },
+        {
+          "from": "family.1",
+          "to": "family.2"
         }
       ]
     },
@@ -135,25 +174,36 @@
       "eyebrow": "Grammar",
       "rows": [
         {
-          "id": "0",
-          "subject": "One person",
-          "verb": "This is",
+          "id": "this",
+          "subject": "This",
+          "verb": "is",
           "example": "This is my brother."
         },
         {
-          "id": "1",
-          "subject": "Two or more people",
-          "verb": "These are",
+          "id": "these",
+          "subject": "These",
+          "verb": "are",
           "example": "These are my parents."
         },
         {
-          "id": "2",
+          "id": "he-she",
           "subject": "He / She",
-          "verb": "a / an",
+          "verb": "is / ’s",
           "example": "She’s a doctor. He’s an engineer."
+        },
+        {
+          "id": "they",
+          "subject": "They",
+          "verb": "are / ’re",
+          "example": "They’re my parents."
         }
       ],
-      "note": "Use a or an with jobs. Use an before a vowel sound."
+      "note": "Use a or an with jobs. Use an before a vowel sound.",
+      "columns": {
+        "subject": "Subject",
+        "verb": "Verb",
+        "example": "Example"
+      }
     },
     {
       "id": "s71",
@@ -391,108 +441,106 @@
     {
       "id": "s101",
       "kind": "prompts",
-      "title": "Your reply",
-      "instruction": "Tell Kim about someone you know.",
+      "title": "Introduce someone",
+      "instruction": "Choose someone you know. Introduce them to Kim.",
       "minutes": 2,
       "eyebrow": "Speaking",
       "items": [
         {
           "id": "1",
-          "prompt": "Who would you like to introduce?",
+          "prompt": "Who is this person?",
           "answer": "This is my … His/Her name is …"
         },
         {
           "id": "2",
-          "prompt": "What can you say about them?",
-          "answer": "He’s/She’s a … He’s/She’s from …"
+          "prompt": "What’s this person’s job?",
+          "answer": "He’s/She’s a …"
+        },
+        {
+          "id": "3",
+          "prompt": "Where is this person from?",
+          "answer": "He’s/She’s from …"
         }
       ]
     },
     {
       "id": "s11",
-      "kind": "prompts",
-      "title": "Say it correctly",
-      "instruction": "Correct the sentences.",
+      "kind": "introductions",
+      "title": "Who should Kim meet?",
+      "instruction": "Kim chooses someone. Ask questions, then introduce them.",
       "minutes": 2,
       "eyebrow": "Practice",
-      "items": [
+      "image": {
+        "src": "scene-ana-family",
+        "alt": "Ana’s family and Kim at a small gathering."
+      },
+      "choices": [
         {
-          "id": "1",
-          "prompt": "This is my parents.",
-          "answer": "These are my parents."
+          "id": "leo",
+          "label": "Leo",
+          "xPercent": 15,
+          "yPercent": 72,
+          "introduction": "This is my brother, Leo.",
+          "detail": "He’s a student."
         },
         {
-          "id": "2",
-          "prompt": "My sister is doctor.",
-          "answer": "My sister is a doctor."
+          "id": "bia",
+          "label": "Bia",
+          "xPercent": 68.6,
+          "yPercent": 77,
+          "introduction": "This is my sister, Bia.",
+          "detail": "She’s a cook. She’s from Recife."
         },
         {
-          "id": "3",
-          "prompt": "He’s a engineer.",
-          "answer": "He’s an engineer."
+          "id": "parents",
+          "label": "Ana’s parents",
+          "xPercent": 41.5,
+          "yPercent": 38,
+          "introduction": "These are my parents.",
+          "detail": "They’re from Recife."
         }
-      ]
+      ],
+      "teacherNotes": "Choose one goal privately: meet Ana’s brother, meet a cook, or meet her parents. Say “Can I meet your brother?”, “Who is a cook?” or “Who are your parents?”. Let the learner confirm who you mean, select the person/pair and introduce them. Ask one follow-up. Do not show a wrong sentence or require a fixed answer before the learner speaks."
     },
     {
       "id": "s12",
       "kind": "roleplay",
       "title": "People in my photos",
-      "instruction": "Show a photo or imagine one. Have a conversation.",
+      "instruction": "Show a photo on your phone. Introduce the person.",
       "minutes": 5,
       "eyebrow": "Role play",
       "image": {
-        "src": "scene-parents",
-        "alt": "Ana’s parents together."
+        "src": "scene-showing-phone-photo",
+        "alt": "Ana holds her phone towards the teacher, showing a clear photo of an adult man."
       },
-      "steps": [
-        "Introduce one person and their job.",
-        "Introduce two people and say where they are from.",
-        "Swap roles. Ask follow-up questions."
-      ],
+      "steps": [],
       "lines": [
         {
           "id": "role.0",
           "speaker": "Kim",
-          "text": "Who’s this?",
-          "cue": "Ask about one person.",
-          "hint": "Who’s …?"
+          "text": "Who’s this?"
         },
         {
           "id": "role.1",
           "speaker": "Ana",
-          "text": "This is my friend. She’s a teacher.",
-          "cue": "Say who the person is and their job.",
-          "hint": "This is my … She’s a …"
+          "text": "This is my friend. He’s a cook.",
+          "cue": "Introduce the person.",
+          "hint": "This is my … He’s/She’s a …"
         },
         {
           "id": "role.2",
           "speaker": "Kim",
-          "text": "Where is she from?",
-          "cue": "Ask about their city.",
-          "hint": "Where is … from?"
+          "text": "Where is he or she from?"
         },
         {
           "id": "role.3",
           "speaker": "Ana",
-          "text": "She’s from Recife.",
-          "cue": "Give the city.",
-          "hint": "She’s from …"
-        },
-        {
-          "id": "role.4",
-          "speaker": "Kim",
-          "text": "And who are they?",
-          "cue": "Ask about two people.",
-          "hint": "And who …?"
-        },
-        {
-          "id": "role.5",
-          "speaker": "Ana",
-          "text": "These are my parents. They’re from Brazil.",
-          "cue": "Introduce two people.",
-          "hint": "These are my … They’re …"
+          "text": "He’s from Recife.",
+          "cue": "Say where the person is from.",
+          "hint": "He’s/She’s from …"
         }
-      ]
+      ],
+      "teacherNotes": "Use the ready questions naturally: Who’s this? / What does he or she do? / Where is he or she from? Ask “Who are they?” only when the learner shows a photo of several people. Models are optional examples, not facts about the learner’s photo."
     },
     {
       "id": "s9",
@@ -514,16 +562,16 @@
         },
         {
           "id": "3",
-          "prompt": "What’s your teacher’s job?",
-          "answer": "She’s a teacher. Now ask: What’s your friend’s job?"
+          "prompt": "What’s your friend’s job?",
+          "answer": "He’s/She’s a … Now ask your teacher about a friend."
         }
       ]
     },
     {
       "id": "s131",
       "kind": "prompts",
-      "title": "Now you!",
-      "instruction": "Introduce two people without reading.",
+      "title": "Introduce two people",
+      "instruction": "Introduce one person, then two people without reading.",
       "minutes": 1,
       "eyebrow": "Speaking",
       "items": [
@@ -568,6 +616,7 @@
       "Unprovisioned Student homework activity links."
     ],
     "provider": "ElevenLabs; prepared recordings only",
-    "homework": "Offline practice; no unprovisioned portal links"
+    "homework": "Offline practice; no unprovisioned portal links",
+    "feedback37": "Family scene with meaningful examples, contextual introductions, explicit grammar subjects, named speakers and dialogue/comprehension columns. Keep teacher-only goals in Notes."
   }
 }

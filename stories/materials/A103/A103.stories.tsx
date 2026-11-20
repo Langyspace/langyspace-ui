@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'As 17 telas atuais de People in my life, com componentes da UI library e imagens no padrão de cenas do A1.01. Proveniência da fonte e prompts preservados nesta pasta.',
+          'People in my life revisada: cena de família com áudio de exemplos, identificação dos interlocutores, conversa e compreensão lado a lado e tarefas visuais de apresentação.',
       },
     },
   },
@@ -19,12 +19,29 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const Vocabulary: Story = { args: { initialPageId: 's2' } }
-export const WarmUp: Story = { args: { initialPageId: 's31' } }
+export const WarmUp: Story = { args: { initialPageId: 's1' } }
 export const Family: Story = { args: { initialPageId: 's4' } }
-export const Pronunciation: Story = { args: { initialPageId: 's61' } }
+export const Introductions: Story = { args: { initialPageId: 's11' } }
 export const Dialogue: Story = { args: { initialPageId: 's71' } }
 export const Grammar: Story = { args: { initialPageId: 's8' } }
 export const Listening: Story = {
   args: { initialPageId: 's10', learnerName: 'Carla' },
 }
 export const RolePlay: Story = { args: { initialPageId: 's12' } }
+
+export const GuidedGaps: Story = {
+  args: { initialPageId: 's72' },
+  tags: ['visual-review'],
+}
+export const IntroduceSomeone: Story = { args: { initialPageId: 's101' } }
+
+export const FamilyNarrow: Story = {
+  args: { initialPageId: 's4' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}
+export const ConversationNarrow: Story = {
+  args: { initialPageId: 's71' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}

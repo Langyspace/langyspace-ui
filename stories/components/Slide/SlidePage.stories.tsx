@@ -1,3 +1,4 @@
+import { A103Lesson } from '../../materials/A103/A103Lesson'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -128,4 +129,15 @@ export const UnavailableDialogue: Story = {
       onClick: () => undefined,
     },
   },
+}
+
+/** Real six-turn content and functional click-to-reveal supports, without inner scrollbars. */
+export const DialogueWithQuestions: Story = {
+  render: () => <A103Lesson initialPageId="s71" />,
+  args: {
+    title: 'Who’s this?',
+    eyebrow: 'Guided conversation',
+    instruction: 'Listen, then read with your teacher.',
+  },
+  tags: ['visual-review', 'layout-boundary'],
 }

@@ -98,6 +98,8 @@
 
 - Before planning or revising lesson content, read [content planning guidelines](docs/materials/content-planning-guidelines.md).
   Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
+  Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
+  Guided dialogue and comprehension share SlidePage’s two-column questions slot; names remain visible in compact dialogue.
   New or replanned guided dialogues have at least six meaningful turns; isolated vocabulary objects
   use transparent assets. Do not expand unrelated lessons or start extra QA/automation from this rule.
 

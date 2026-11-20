@@ -112,8 +112,9 @@ function A101LessonContent({
         label: 'Guided conversation · Nice to meet you',
         content: (
           <SlidePage
-            width="reading"
+            width="expanded"
             density="compact"
+            questions={<DialogueQuestions />}
             eyebrow="Guided conversation"
             instruction="Listen, then read with your teacher."
             title={
@@ -153,21 +154,6 @@ function A101LessonContent({
               playingId={speech.playingId}
               speak={speech.speak}
             />
-          </SlidePage>
-        ),
-      }
-    if (id === 's14')
-      return {
-        id,
-        label: 'Guided conversation · Questions',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Guided conversation"
-            title="Comprehension questions"
-            instruction="Answer the questions about the text."
-          >
-            <DialogueQuestions />
           </SlidePage>
         ),
       }
@@ -284,6 +270,8 @@ function A101LessonContent({
             width="reading"
             eyebrow="Guided conversation"
             title="Complete the conversation"
+            questions={<DialogueQuestions />}
+            density="compact"
             instruction="Fill in the gaps. Read with your teacher."
           >
             <DialogueSection gaps speak={speech.speak} />

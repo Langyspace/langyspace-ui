@@ -6,6 +6,7 @@ import type { RolePlayExerciseProps } from './RolePlayExercise.types'
 export function RolePlayExercise({
   situation,
   image,
+  imageFit = 'contain',
   roles = EMPTY_LIST,
   support = EMPTY_LIST,
   supportVisible = false,
@@ -35,26 +36,30 @@ export function RolePlayExercise({
   if (presentation === 'instructions')
     return (
       <Styled.Root as="section" {...props}>
-        <Styled.Scene $plain>
+        <Styled.Scene $plain $imageFit={imageFit}>
           {image ? <img src={image.src} alt={image.alt} /> : null}
           {situation ? <p>{situation}</p> : null}
-          <Common.Row>
-            {roles.map((role) => (
-              <Common.Chip key={role}>{role}</Common.Chip>
-            ))}
-          </Common.Row>
+          {roles.length ? (
+            <Common.Row>
+              {roles.map((role) => (
+                <Common.Chip key={role}>{role}</Common.Chip>
+              ))}
+            </Common.Row>
+          ) : null}
           {children}
         </Styled.Scene>
         <Common.Stack>
           {tracker}
-          <Styled.Instructions>
-            {steps.map((step, i) => (
-              <li key={step.id}>
-                <Common.Number aria-hidden="true">{i + 1}</Common.Number>
-                <span>{step.label}</span>
-              </li>
-            ))}
-          </Styled.Instructions>
+          {steps.length ? (
+            <Styled.Instructions>
+              {steps.map((step, i) => (
+                <li key={step.id}>
+                  <Common.Number aria-hidden="true">{i + 1}</Common.Number>
+                  <span>{step.label}</span>
+                </li>
+              ))}
+            </Styled.Instructions>
+          ) : null}
           {support.length ? (
             <Common.Hint>{support.join(' · ')}</Common.Hint>
           ) : null}
@@ -86,7 +91,7 @@ export function RolePlayExercise({
   ) : null
   return (
     <Styled.Root as="section" {...props}>
-      <Styled.Scene $plain={guided}>
+      <Styled.Scene $plain={guided} $imageFit={imageFit}>
         {image ? <img src={image.src} alt={image.alt} /> : null}
         {situation ? <p>{situation}</p> : null}
         <Common.Row>

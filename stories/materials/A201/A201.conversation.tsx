@@ -78,6 +78,7 @@ export function DialoguePage({
   active,
   title,
   context,
+  questions,
   ...props
 }: DialoguePageProps) {
   const { lines, speech } = props
@@ -86,6 +87,7 @@ export function DialoguePage({
     <SlidePage
       width="reading"
       density="compact"
+      questions={questions}
       eyebrow="Guided conversation"
       title={
         <DialogueTitle

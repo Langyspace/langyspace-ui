@@ -140,3 +140,10 @@ keeps native scrolling. Content planning rules are centralized in docs/materials
 `CallSimulation` accepts `direction="incoming"`, `active` and an optional prepared `ringtoneSrc`. Incoming idle/ringing uses the answer action; ringtone playback stops when connected, inactive, hidden or unmounted. A trusted-click retry is available if native autoplay is refused. `playback` composes the compact `AudioSequenceControls` beside the caption, with optional previous navigation. No camera, microphone or real telephone call is requested.
 
 `AudioSequenceControls density="compact"` omits the outer panel and progress dots, using replay/next icons for embedded devices. Its existing regular presentation is preserved. `ExercisePanel variant="workstation"` composes a contextual media slot and a native monitor/form surface. `FieldRoot` resolves labels and assistance colors from the active theme, matching native inputs. See the A1.02 Contact flow stories for the incoming, registration, outgoing and independent-message compositions.
+
+### Contextual scenes and named dialogue (feedback37)
+
+- `LearningDialogue.speakerLabels` controls names independently of density and defaults to visible. Compact mode retains both name and avatar. Known product identities are supplied by the material adapter, never hard-coded into the generic component.
+- `SceneExplorer.connections` joins hotspot IDs using the same measured source-image geometry as the markers. `SceneHotspot.example` renders a short usage example in its callout; consumer-owned playback can use a prepared label + pause + example recording. `imageSizing="presentation"` fits the entire scene into the lesson viewport without cropping the hotspot targets.
+- `RolePlayExercise.imageFit` defaults to contain; instructions mode omits empty role rows and empty step lists. Its existing children/tracker slots compose an interactive scene with guided oral prompts without cloning a new exercise layout.
+- `SlidePage.questions` owns the responsive conversation/comprehension split. The maintained materials and UX Lab Storybook use the same component.

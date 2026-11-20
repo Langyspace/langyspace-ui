@@ -203,20 +203,13 @@ export function ComprehensionPractice({
 }: {
   items: readonly { q: string; a: string }[]
 }) {
-  const [ids, setIds] = useState<string[]>([])
   return (
-    <S.Stack>
-      {items.map((r, i) => (
-        <RevealCard
-          key={r.q}
-          marker={i + 1}
-          answer={r.a}
-          revealed={ids.includes(r.q)}
-          onClick={() => setIds((old) => toggleId(old, r.q))}
-        >
-          {r.q}
-        </RevealCard>
-      ))}
-    </S.Stack>
+    <PromptExercise
+      items={items.map((item, index) => ({
+        id: String(index),
+        prompt: item.q,
+        answer: item.a,
+      }))}
+    />
   )
 }

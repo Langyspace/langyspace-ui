@@ -1,3 +1,4 @@
+import { PromptExercise } from '../shared/LessonExercises'
 import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -16,6 +17,7 @@ export function DialogueSection({
     part === 0 ? content.dialogue.slice(0, 6) : content.dialogue.slice(6)
   return (
     <LearningDialogue
+      density="compact"
       lines={rows.map((line) => ({
         id: line.id,
         speaker: line.who === 'kim' ? 'Kim' : 'Ana',
@@ -35,28 +37,30 @@ export function DialogueSection({
     />
   )
 }
-export function ComprehensionSection() {
-  const [ids, setIds] = useState<string[]>([])
+export function ComprehensionSection({ part }: { part?: number }) {
   return (
     <S.Stack>
-      {content.comprehension.map((row, i) => (
-        <RevealCard
-          key={row.q}
-          marker={i + 1}
-          answer={row.a}
-          revealed={ids.includes(row.q)}
-          onClick={() => setIds((old) => toggle(old, row.q))}
-        >
-          {row.q}
-        </RevealCard>
-      ))}
-      <S.Now>
-        <b>Now you</b>
-        <p>
-          Think of a hobby you started. What helped you keep going, and what
-          has changed since you started?
-        </p>
-      </S.Now>
+      <PromptExercise
+        items={content.comprehension
+          .filter(
+            (_, index) =>
+              part === undefined || (part === 0 ? index < 2 : index >= 2),
+          )
+          .map((item, index) => ({
+            id: String(index),
+            prompt: item.q,
+            answer: item.a,
+          }))}
+      />
+      {part !== 0 ? (
+        <S.Now>
+          <b>Now you</b>
+          <p>
+            Think of a hobby you started. What helped you keep going, and what
+            has changed since you started?
+          </p>
+        </S.Now>
+      ) : null}
     </S.Stack>
   )
 }

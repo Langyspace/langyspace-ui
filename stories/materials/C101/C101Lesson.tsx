@@ -25,7 +25,9 @@ import { useC101Audio } from './C101.audio'
 import content from './C101.content.json'
 import type { C101LessonProps } from './C101.types'
 import * as S from './C101.styles'
-export const c101PageIds = content.order.map((id) => `s${id}`)
+export const c101PageIds = content.order
+  .map((id) => `s${id}`)
+  .filter((id) => id !== 's61')
 const pageInfo: Record<string, [string, string, string]> = {
   s1: [
     'C1 · Lesson 01',
@@ -230,6 +232,17 @@ function C101Content({ initialPageId }: C101LessonProps) {
                   )
                 }
                 instruction={instruction}
+                questions={
+                  id === 's6' || id === 's62' ? (
+                    <C101Questions
+                      items={
+                        id === 's6'
+                          ? content.comprehension.slice(0, 1)
+                          : content.comprehension.slice(1)
+                      }
+                    />
+                  ) : undefined
+                }
                 width={
                   ['s4', 's8', 's9', 's11'].includes(id) ? 'expanded' : 'wide'
                 }

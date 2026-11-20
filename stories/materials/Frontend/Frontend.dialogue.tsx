@@ -1,8 +1,10 @@
+import { PromptExercise } from '../shared/LessonExercises'
+import { ana, kim } from '../shared/characterPortraits'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
-import { content, image, text, toggle } from './Frontend.data'
+import { content, text, toggle } from './Frontend.data'
 import type { AudioProps, IndexedAudioProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function Dialogue({ index, media }: IndexedAudioProps) {
@@ -13,7 +15,7 @@ export function Dialogue({ index, media }: IndexedAudioProps) {
       lines={content.dialogue.slice(index * 5, index * 5 + 5).map((line) => ({
         id: line.id,
         speaker: line.who === 'ana' ? 'Ana' : 'Kim',
-        avatarUrl: image(`bust_${line.who}`),
+        avatarUrl: line.who === 'ana' ? ana : kim,
         side: line.who === 'ana' ? 'end' : 'start',
         content: text(line.id),
         translation: line.g,
@@ -26,28 +28,20 @@ export function Dialogue({ index, media }: IndexedAudioProps) {
     />
   )
 }
-export function Comprehension() {
-  const [revealed, setRevealed] = useState<string[]>([])
+export function Comprehension({ part }: { part?: number }) {
   return (
-    <S.Questions>
-      {content.dialogueQuestions.map((q, i) => (
-        <S.Question key={q.q}>
-          <S.Number>{i + 1}</S.Number>
-          <div>
-            {q.q}
-            {revealed.includes(q.q) ? <S.Hint>{q.a}</S.Hint> : null}
-          </div>
-          <Button
-            size="sm"
-            variant="secondary"
-            aria-expanded={revealed.includes(q.q)}
-            onClick={() => setRevealed((old) => toggle(old, q.q))}
-          >
-            {revealed.includes(q.q) ? 'Hide' : 'Answer'}
-          </Button>
-        </S.Question>
-      ))}
-    </S.Questions>
+    <PromptExercise
+      items={content.dialogueQuestions
+        .filter(
+          (_, index) =>
+            part === undefined || (part === 0 ? index < 2 : index >= 2),
+        )
+        .map((item, index) => ({
+          id: String(index),
+          prompt: item.q,
+          answer: item.a,
+        }))}
+    />
   )
 }
 export function Grammar({ media }: AudioProps) {

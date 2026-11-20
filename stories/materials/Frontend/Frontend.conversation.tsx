@@ -1,3 +1,4 @@
+import { ana, kim, leo } from '../shared/characterPortraits'
 import { useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Button } from '../../../src/components/Button/Button'
@@ -62,9 +63,7 @@ export function YourVersion({ media }: AudioProps) {
             return {
               id,
               speaker: turn.speaker,
-              avatarUrl: learner
-                ? undefined
-                : image(swapped ? 'bust_kim' : 'bust_ana'),
+              avatarUrl: learner ? undefined : swapped ? kim : ana,
               side: learner ? 'end' : 'start',
               content: learner ? (
                 <S.LearnerCue>
@@ -108,7 +107,7 @@ export function Listening({ active }: { active: boolean }) {
   return (
     <ThemeProvider theme={phoneTheme}>
       <VoiceMessageExercise
-        contact={{ name: 'Leo', avatarUrl: image('av_leo'), status: 'online' }}
+        contact={{ name: 'Leo', avatarUrl: leo, status: 'online' }}
         audio={{
           id: 'frontend-leo-elevenlabs',
           src: audio('L.9'),

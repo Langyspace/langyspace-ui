@@ -40,15 +40,17 @@ export const SpeakerAvatar = styled(Avatar)<{ $compact: boolean }>`
     height: ${(p) => (p.$compact ? theme.spacing[8] : theme.spacing[10])};
   }
 `
-export const Speaker = styled.div<{ $compact: boolean }>`
+export const Speaker = styled.div<{ $compact: boolean; $showLabel: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
   gap: 0;
   small {
-    font-size: 0.625rem;
-    display: ${(p) => (p.$compact ? 'none' : 'block')};
+    font-size: ${theme.typography.fontSize['2xs']};
+    line-height: 1.2;
+    color: ${(p) => recipe(p).muted};
+    display: ${(p) => (p.$showLabel ? 'block' : 'none')};
   }
   @container (max-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing[1]};

@@ -162,3 +162,34 @@ export const Body = styled.div`
   min-width: 0;
   overflow-wrap: anywhere;
 `
+
+/** Dialogue and its comprehension stay together; neither column has an inner scrollbar. */
+export const Conversation = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: ${theme.spacing[8]};
+  align-items: start;
+  min-width: 0;
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: ${theme.spacing[5]};
+  }
+`
+export const ConversationText = styled.div`
+  min-width: 0;
+`
+export const Questions = styled.aside`
+  min-width: 0;
+  display: grid;
+  gap: ${theme.spacing[3]};
+  align-content: start;
+  font-family: ${theme.typography.fontFamily.sans};
+`
+export const QuestionsTitle = styled.h3`
+  margin: 0;
+  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-size: ${theme.typography.fontSize.lg};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1.3;
+  color: inherit;
+`

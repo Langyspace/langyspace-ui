@@ -1,3 +1,4 @@
+import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
 import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 import type { GrammarTableProps } from '../../../src/components/InteractiveMaterial/GrammarTable.types'
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
@@ -41,14 +42,46 @@ export type ReviewedPage = PageBase &
           example: string
         }[]
       }
-    | { kind: 'grammar'; rows: GrammarTableProps['rows']; note?: string }
-    | { kind: 'dialogue'; lines: readonly ReviewedTurn[] }
+    | {
+        kind: 'scene'
+        image: { src: string; alt: string }
+        context?: string
+        hotspots: readonly (SceneHotspot & {
+          audioId: string
+          audioText: string
+        })[]
+        connections?: readonly { from: string; to: string }[]
+      }
+    | {
+        kind: 'grammar'
+        rows: GrammarTableProps['rows']
+        columns?: GrammarTableProps['columns']
+        note?: string
+      }
+    | {
+        kind: 'dialogue'
+        lines: readonly ReviewedTurn[]
+        questions?: readonly ReviewedPrompt[]
+      }
     | { kind: 'listening'; message: string; items: readonly ReviewedPrompt[] }
+    | {
+        kind: 'introductions'
+        image: { src: string; alt: string }
+        choices: readonly {
+          id: string
+          label: string
+          xPercent: number
+          yPercent: number
+          introduction: string
+          detail: string
+        }[]
+      }
     | {
         kind: 'roleplay'
         steps: readonly string[]
         image?: { src: string; alt: string }
         lines?: readonly ReviewedTurn[]
+        items?: readonly ReviewedPrompt[]
       }
     | {
         kind: 'homework'

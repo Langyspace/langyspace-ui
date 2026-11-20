@@ -10,7 +10,10 @@ export const Root = styled(Common.Columns).withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => Common.recipe(p).foreground};
 `
-export const Scene = styled(Common.Surface)<{ $plain?: boolean }>`
+export const Scene = styled(Common.Surface)<{
+  $plain?: boolean
+  $imageFit: 'contain' | 'cover'
+}>`
   ${(p) =>
     p.$plain
       ? css`
@@ -22,7 +25,7 @@ export const Scene = styled(Common.Surface)<{ $plain?: boolean }>`
   img {
     width: 100%;
     max-height: 300px;
-    object-fit: cover;
+    object-fit: ${(p) => p.$imageFit};
     border-radius: ${theme.radius.xl};
   }
   > p {

@@ -33,6 +33,8 @@ export interface LearningDialogueProps extends Omit<
     onChange: (level: 'cue' | 'hint' | 'full') => void
   }
   density?: 'regular' | 'compact'
+  /** Identification is independent of bubble density. Names remain visible by default. */
+  speakerLabels?: 'visible' | 'hidden'
   translatedIds?: readonly string[]
   playingId?: string
   onTranslate?: (id: string) => void

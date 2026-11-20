@@ -6,6 +6,8 @@ export interface SceneHotspot {
   yPercent: number
   label: string
   prompt: ReactNode
+  /** Short usage example shown with the vocabulary label, never as another question. */
+  example?: ReactNode
   answer?: ReactNode
   /** Original-image bounds kept clear of the selected callout. */
   targetBounds?: {
@@ -21,7 +23,11 @@ export interface SceneExplorerProps extends Omit<
 > {
   imageUrl: string
   imageAlt: string
+  /** Fit the complete scene into a lesson viewport, preserving image-coordinate hotspots. */
+  imageSizing?: 'natural' | 'presentation'
   hotspots: readonly SceneHotspot[]
+  /** Native relationship lines between hotspot IDs, in the same image geometry. */
+  connections?: readonly { from: string; to: string }[]
   selectedId?: string
   visitedIds: readonly string[]
   onSelect: (id: string) => void

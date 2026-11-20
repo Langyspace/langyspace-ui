@@ -84,7 +84,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   title="No battery"
                   instruction="Name the object, then explain how it could help on a trip."
                 >
-                  <VocabularySection active={pageId === id} />
+                  <VocabularySection active={activeId === id} />
                 </SlidePage>
               ),
             }
@@ -157,6 +157,15 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   eyebrow="Dialogue"
                   width="conversation"
                   density="dense"
+                  questions={
+                    <ComprehensionPractice
+                      items={
+                        part === 0
+                          ? comprehension.slice(0, 1)
+                          : comprehension.slice(1)
+                      }
+                    />
+                  }
                   title={
                     <DialogueTitle
                       title={`How was New York? (${part + 1}/2)`}
@@ -185,20 +194,6 @@ function B201LessonContent({ initialPageId }: LessonProps) {
               ),
             }
           }
-          if (id === 's63')
-            return {
-              id,
-              label: 'Dialogue · Questions',
-              content: (
-                <SlidePage
-                  eyebrow="Dialogue"
-                  title="Questions"
-                  instruction="Answer the questions about the talk. Give reasons and refer to the dialogue when needed."
-                >
-                  <ComprehensionPractice items={comprehension} />
-                </SlidePage>
-              ),
-            }
           if (id === 's7')
             return {
               id,

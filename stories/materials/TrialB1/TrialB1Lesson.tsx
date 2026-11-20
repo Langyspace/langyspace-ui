@@ -15,8 +15,7 @@ import suitcaseLabel from './assets/suitcase-label.mp3'
 import coastLabel from './assets/coast-label.mp3'
 import source from './TrialB1.content.json'
 import sceneUrl from './assets/roadside-stop.png'
-import anaUrl from './assets/ana-working.webp'
-import kimUrl from './assets/kim-profile.webp'
+import { ana as anaUrl, kim as kimUrl } from '../shared/characterPortraits'
 import type {
   TrialB1Content,
   TrialB1LessonProps,
@@ -25,6 +24,10 @@ import type {
 import * as S from './TrialB1.styles'
 
 const content = source as TrialB1Content
+const lessonPages = content.pages.filter((page) => page.kind !== 'questions')
+const comprehensionPage = content.pages.find(
+  (page) => page.kind === 'questions',
+)
 const sceneClips = {
   tire: tireLabel,
   suitcase: suitcaseLabel,
@@ -110,7 +113,7 @@ function Activity({
             lines={page.lines.map((line, i) => ({
               id: String(i),
               speaker: line.who === 'ana' ? 'Ana' : 'Kim',
-              avatarUrl: line.who === 'ana' ? anaUrl + '#ana' : kimUrl,
+              avatarUrl: line.who === 'ana' ? anaUrl : kimUrl,
               side: line.who === 'kim' ? 'start' : 'end',
               content: line.en,
               translation: line.pt,
@@ -211,15 +214,26 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
       <LessonShell
         initialPageId={initialPageId}
         materialKey="trial-b1-a-trip-to-remember"
-        pageIds={content.pages.map((page) => page.id)}
+        pageIds={lessonPages.map((page) => page.id)}
         label="B1 Trial · A trip to remember"
         pages={(_, activeId) =>
-          content.pages.map((page) => ({
+          lessonPages.map((page) => ({
             id: page.id,
             label: page.title,
             content: (
               <SlidePage
                 width="expanded"
+                density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                questions={
+                  page.kind === 'dialogue' &&
+                  modelActive &&
+                  comprehensionPage ? (
+                    <Activity
+                      page={comprehensionPage}
+                      active={activeId === page.id}
+                    />
+                  ) : undefined
+                }
                 eyebrow={
                   {
                     greeting: 'Warm up',

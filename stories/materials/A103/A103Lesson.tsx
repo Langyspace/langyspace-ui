@@ -35,7 +35,12 @@ const pages = (data.pages as readonly ReviewedPage[]).map((page) => {
         imageUrl: image(item.imageUrl ?? ''),
       })),
     }
-  if (page.kind === 'roleplay' && page.image)
+  if (
+    (page.kind === 'roleplay' ||
+      page.kind === 'scene' ||
+      page.kind === 'introductions') &&
+    page.image
+  )
     return { ...page, image: { ...page.image, src: image(page.image.src) } }
   return page
 })

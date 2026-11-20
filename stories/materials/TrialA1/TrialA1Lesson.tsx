@@ -67,6 +67,10 @@ export function TrialA1Lesson({
                   <SlidePage
                     width="expanded"
                     eyebrow="Dialogue"
+                    density="compact"
+                    questions={
+                      modelActive ? <ComprehensionSection /> : undefined
+                    }
                     title={
                       <DialogueTitle
                         title={content.p3.title}
@@ -83,21 +87,6 @@ export function TrialA1Lesson({
                     <ListenTalkSection
                       onModeChange={(mode) => setModelActive(mode === 'model')}
                     />
-                  </SlidePage>
-                ),
-              }
-            if (id === 's31')
-              return {
-                id,
-                label: 'Comprehension questions',
-                content: (
-                  <SlidePage
-                    width="reading"
-                    eyebrow="Guided conversation"
-                    title="Comprehension questions"
-                    instruction="Answer the questions about the conversation."
-                  >
-                    <ComprehensionSection />
                   </SlidePage>
                 ),
               }

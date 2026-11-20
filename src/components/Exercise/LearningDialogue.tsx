@@ -62,6 +62,7 @@ export function LearningDialogue({
   lines,
   guidance,
   density = 'regular',
+  speakerLabels = 'visible',
   translatedIds,
   playingId,
   onTranslate,
@@ -122,8 +123,9 @@ export function LearningDialogue({
           <Styled.DialogueLine key={line.id} $side={line.side}>
             <Styled.Speaker
               $compact={density === 'compact'}
-              role={density === 'compact' ? 'img' : undefined}
-              aria-label={density === 'compact' ? line.speaker : undefined}
+              $showLabel={speakerLabels === 'visible'}
+              role={speakerLabels === 'hidden' ? 'img' : undefined}
+              aria-label={speakerLabels === 'hidden' ? line.speaker : undefined}
             >
               <Styled.SpeakerAvatar
                 size="sm"

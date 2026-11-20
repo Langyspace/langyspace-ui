@@ -23,6 +23,8 @@ import image from './assets/ana-working.webp'
 import type { TrialB2LessonProps } from './TrialB2.types'
 import * as S from './TrialB2.styles'
 
+const lessonPages = content.pages.filter((page) => page.id !== 's31')
+
 const sceneClips = {
   setup: laptopLabel,
   focus: anaAtWorkLabel,
@@ -228,7 +230,7 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
   const [activeId, setActiveId] = useLessonPage(
     initialPageId,
     'trial-b2',
-    content.pages.map((page) => page.id),
+    lessonPages.map((page) => page.id),
   )
   const [modelActive, setModelActive] = useState(true)
 
@@ -252,13 +254,18 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
             onClick={notePopup.open}
           />
         }
-        pages={content.pages.map((page) => ({
+        pages={lessonPages.map((page) => ({
           id: page.id,
           label: page.title,
           content: (
             <SlidePage
               width={page.id === 's2' ? 'expanded' : 'reading'}
               density={page.id === 's3' ? 'compact' : 'regular'}
+              questions={
+                page.id === 's3' && modelActive ? (
+                  <PageBody id="s31" active={activeId === page.id} />
+                ) : undefined
+              }
               eyebrow={
                 page.id === 's1'
                   ? 'Warm up'

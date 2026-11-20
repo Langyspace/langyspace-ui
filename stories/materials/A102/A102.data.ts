@@ -216,10 +216,8 @@ export const pageOrder = [
   's6',
   's7',
   's8',
-  's9',
   's10',
   's11',
-  's12',
   's14',
   's13',
   's15',
@@ -227,5 +225,5 @@ export const pageOrder = [
   's17',
 ] as const
 export const pageMinutes = [
-  2, 3, 3, 1.5, 1.5, 4, 3, 4, 3, 3, 3, 2, 5, 4, 5, 2, 1,
-]
+  2, 3, 3, 3, 3, 4, 2, 7, 3, 5, 5, 4, 3, 2, 1,
+] as const
