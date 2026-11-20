@@ -1,3 +1,7 @@
+import { PromptExercise } from '../shared/LessonExercises'
+import { useVocabularyAudio } from '../shared/useVocabularyAudio'
+import { vocabularyRecordings } from './B101.vocabularyAudio'
+import type { VocabularySectionProps } from './B101.types'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -21,12 +25,15 @@ export function MiniVocabulary({ column = false }: { column?: boolean }) {
     </S.MiniGrid>
   )
 }
-export function VocabularySection({ group = 0 }: { group?: number }) {
+export function VocabularySection({
+  group = 0,
+  active = true,
+}: VocabularySectionProps) {
+  const audio = useVocabularyAudio(vocabularyRecordings, active)
   const [ids, setIds] = useState<string[]>([]),
     [all, setAll] = useState(false),
     [initial, setInitial] = useState(false)
   const items = vocabulary.slice(group * 4, group * 4 + 4)
-  const complete = all || ids.length === items.length
   return (
     <S.Stack>
       <S.Vocabulary
@@ -40,6 +47,10 @@ export function VocabularySection({ group = 0 }: { group?: number }) {
         revealedIds={ids}
         showAll={all}
         showInitial={initial}
+        onPlay={(id) => {
+          const item = vocabulary.find((x) => x.id === id)
+          if (item) audio.speak([{ id, text: item.word }])
+        }}
         onReveal={(id) =>
           setIds((old) => (old.includes(id) ? old : [...old, id]))
         }
@@ -50,15 +61,6 @@ export function VocabularySection({ group = 0 }: { group?: number }) {
         onToggleInitial={() => setInitial(!initial)}
         onToggleAll={() => setAll(!all)}
       />
-      {complete ? (
-        <S.Surface>
-          <S.Hint>
-            <b>play</b> = tocar (um instrumento) e jogar (um esporte).{' '}
-            <b>guitar</b> = violão e guitarra. <b>shopping</b> = fazer compras;
-            o shopping center é <b>the mall</b>.
-          </S.Hint>
-        </S.Surface>
-      ) : null}
     </S.Stack>
   )
 }
@@ -66,8 +68,7 @@ export function WarmUpSection({
   index,
 }: SpeechSectionProps & { index: number }) {
   const w = content.warmUps[index] ?? content.warmUps[0]!
-  const [attempts, setAttempts] = useState<number[]>([]),
-    [open, setOpen] = useState(!w.hide)
+  const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(w.a)
   const answer = w.o[w.a] ?? ''
   return (
@@ -103,7 +104,7 @@ export function WarmUpSection({
       }
     >
       <S.Stack>
-        {open ? (
+        {
           <S.Stack>
             {w.o.map((option, i) => (
               <QuizOption
@@ -128,19 +129,11 @@ export function WarmUpSection({
               </QuizOption>
             ))}
           </S.Stack>
-        ) : (
-          <Button variant="secondary" onClick={() => setOpen(true)}>
-            Show options
-          </Button>
-        )}
-        {done ? (
-          <>
-            <S.Now>
-              <b>Now you</b>
-              <p>{w.now}</p>
-            </S.Now>
-          </>
-        ) : null}
+        }
+        <PromptExercise
+          numbered={false}
+          items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
+        />
       </S.Stack>
     </ExercisePanel>
   )

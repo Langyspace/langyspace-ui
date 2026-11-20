@@ -135,6 +135,7 @@ export const ThemeOverride: Story = {
   tags: ['visual-review'],
 }
 export const PlaybackAndTranscript: Story = {
+  args: { transcriptReveal: 'second-listen' },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const audio = canvasElement.querySelector('audio')!
@@ -193,7 +194,10 @@ export const PlaybackAndTranscript: Story = {
 }
 
 export const FollowUpReplay: Story = {
-  args: { replayActionLabel: 'Listen again and check' },
+  args: {
+    transcriptReveal: 'second-listen',
+    replayActionLabel: 'Listen again and check',
+  },
 }
 
 export const ManualTranscriptAfterReplay: Story = {

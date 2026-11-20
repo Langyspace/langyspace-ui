@@ -22,3 +22,8 @@ export interface NotesProps {
   open: boolean
   onClose: () => void
 }
+
+export interface VocabularySectionProps {
+  group?: number
+  active?: boolean
+}

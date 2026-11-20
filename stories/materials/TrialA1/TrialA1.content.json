@@ -156,9 +156,17 @@
         "who": "kim",
         "en": "Soccer? Cool!",
         "g": "Futebol? Legal!"
+      },
+      {
+        "who": "ana",
+        "en": "I play soccer here with my friends.",
+        "g": "Eu jogo futebol aqui com meus amigos."
       }
     ],
-    "your": [["Kim: books or soccer? And Ana?", "Kim: books. Ana: soccer."]]
+    "your": [
+      ["Who likes books, Kim or Ana?", "Kim likes books. Ana likes soccer."],
+      ["Where does Ana play soccer?", "She plays in the park."]
+    ]
   },
   "p4": {
     "title": "Choose one",

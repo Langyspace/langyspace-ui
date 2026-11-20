@@ -10,6 +10,7 @@ import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { MatchPairs } from '../../../src/components/Exercise/MatchPairs'
 import {
   lesson,
+  conversationAnswers,
   ana,
   kim,
   itemAt,
@@ -32,6 +33,7 @@ import type {
   DialogueSectionProps,
   TranslatedTextProps,
   VerbPhraseProps,
+  ConversationSectionProps,
 } from './A101.sections.types'
 export function VocabularySection({
   items,
@@ -55,11 +57,7 @@ export function VocabularySection({
         showAll={all}
         showInitial={hint}
         onReveal={(id) =>
-          setRevealed((old) =>
-            old.includes(id)
-              ? old.filter((value) => value !== id)
-              : [...old, id],
-          )
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
         }
         onPlay={(id) =>
           speak([{ id, text: items.find((item) => item.id === id)!.word }])
@@ -532,28 +530,17 @@ export function MakeQuestions() {
     </Styled.Stack>
   )
 }
-export function ConversationSection() {
-  const [marked, setMarked] = useState<string[]>([])
+export function ConversationSection({
+  part = 0,
+}: ConversationSectionProps = {}) {
   return (
-    <Styled.TalkGrid>
-      {lesson.TALK.map((text, index) => (
-        <Styled.TalkQuestion
-          key={text}
-          aria-pressed={marked.includes(text)}
-          onClick={() =>
-            setMarked((old) =>
-              old.includes(text)
-                ? old.filter((value) => value !== text)
-                : [...old, text],
-            )
-          }
-        >
-          <Styled.Number>{index + 1}</Styled.Number>
-          <b>{text}</b>
-          {marked.includes(text) ? <span aria-hidden="true">✓</span> : null}
-        </Styled.TalkQuestion>
-      ))}
-    </Styled.TalkGrid>
+    <PromptExercise
+      items={lesson.TALK.slice(part * 5, part * 5 + 5).map((prompt, index) => ({
+        id: prompt,
+        prompt,
+        answer: conversationAnswers[part * 5 + index] ?? 'Use your own ideas.',
+      }))}
+    />
   )
 }
 export function HomeworkSection() {

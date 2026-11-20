@@ -21,7 +21,7 @@ import type { AudioProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function YourVersion({ media }: AudioProps) {
   const [swapped, setSwapped] = useState(false),
-    [support, setSupport] = useState(true),
+    [support, setSupport] = useState(false),
     [marked, setMarked] = useState<string[]>([])
   const turns = swapped ? swappedTurns : firstTurns,
     prefix = swapped ? 'swapped' : 'first',
@@ -104,11 +104,7 @@ const phoneTheme = withVoiceMessageLayout({
 })
 export function Listening({ active }: { active: boolean }) {
   const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
-    [support, setSupport] = useState(false),
-    [sent, setSent] = useState(false)
-  const all = content.listeningQuestions.every((q, i) =>
-    (attempts[String(i)] ?? []).includes(String(q.a)),
-  )
+    [support, setSupport] = useState(false)
   return (
     <ThemeProvider theme={phoneTheme}>
       <VoiceMessageExercise
@@ -121,9 +117,8 @@ export function Listening({ active }: { active: boolean }) {
           timestamp: '17:40',
         }}
         active={active}
-        transcriptReveal="manual-after-replay"
+        transcriptReveal="third-listen"
         questionHeading={<S.Eyebrow>Leo’s message: yes or no?</S.Eyebrow>}
-        replayActionLabel={all ? 'Listen again and check' : undefined}
         labels={{
           play: 'Play Leo’s message',
           pause: 'Pause',
@@ -131,10 +126,7 @@ export function Listening({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden:
-            'Answer, listen again, then show the transcription.',
-          showTranscript: 'Show transcription',
-          hideTranscript: 'Hide transcription',
+          transcriptHidden: 'The transcript appears on the third listen.',
           audioError: 'Could not play the message. Try again.',
           retry: 'Try again',
           correct: 'Correct',
@@ -165,11 +157,6 @@ export function Listening({ active }: { active: boolean }) {
         onAnswer={(id, value) =>
           setAttempts((old) => ({ ...old, [id]: [...(old[id] ?? []), value] }))
         }
-        replyAction={{
-          label: 'Marcar resposta da Kim como enviada (simulação)',
-          onClick: () => setSent(true),
-          disabled: sent,
-        }}
         footer={
           <S.Dark>
             <strong>Now you</strong>
@@ -195,11 +182,6 @@ export function Listening({ active }: { active: boolean }) {
                   <span key={value}>{value}</span>
                 ))}
               </S.Support>
-            ) : null}
-            {sent ? (
-              <S.Hint role="status">
-                Resposta marcada como enviada na simulação.
-              </S.Hint>
             ) : null}
           </S.Dark>
         }

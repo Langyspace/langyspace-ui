@@ -131,6 +131,29 @@
       "support": "I love that!"
     },
     {
+      "id": "s31",
+      "title": "Comprehension questions",
+      "subtitle": "Answer the questions about the conversation.",
+      "minutes": 2,
+      "objective": "Understand details and notice a natural reaction.",
+      "source": "Review34: separate comprehension from model",
+      "kind": "questions",
+      "questions": [
+        {
+          "q": "What was the best part of Ana’s trip?",
+          "answer": "The boat trip in Ilhabela."
+        },
+        {
+          "q": "Why did Ana play cards at the hotel?",
+          "answer": "It rained all day on Sunday."
+        },
+        {
+          "q": "How does Ana react to Kim’s story?",
+          "answer": "She says, “I love that!”"
+        }
+      ]
+    },
+    {
       "id": "s41",
       "title": "Beach or mountains?",
       "subtitle": "Choose a place, explain why, and ask your teacher.",
@@ -173,7 +196,7 @@
       "id": "s5",
       "title": "Your travel story",
       "subtitle": "Tell a story, then keep the conversation going.",
-      "minutes": 10.5,
+      "minutes": 8.5,
       "objective": "Sustain a personal narrative with less support and initiate follow-up questions.",
       "source": "Original s5 · Let’s talk + original s3 Your turn",
       "kind": "story",

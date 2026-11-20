@@ -84,7 +84,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                   title="No battery"
                   instruction="Name the object, then explain how it could help on a trip."
                 >
-                  <VocabularySection />
+                  <VocabularySection active={pageId === id} />
                 </SlidePage>
               ),
             }

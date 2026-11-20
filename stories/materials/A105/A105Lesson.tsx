@@ -21,7 +21,6 @@ import type { A105LessonProps } from './A105.types'
 export function A105Lesson({
   initialPageId,
   learnerName = '',
-  studentPortalOrigin,
 }: A105LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-05', pageOrder)
   const speech = useLessonSpeech()
@@ -222,9 +221,9 @@ export function A105Lesson({
           width="standard"
           eyebrow="Homework"
           title="Before next class"
-          instruction="Keep practising in your student portal."
+          instruction="Practise these two tasks before your next lesson."
         >
-          <Homework studentPortalOrigin={studentPortalOrigin} />
+          <Homework />
         </SlidePage>
       ),
     },

@@ -110,7 +110,10 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
                 : 'Name the activities. Which ones need good weather?'
             }
           >
-            <VocabularySection group={id === 's2' ? 0 : 1} />
+            <VocabularySection
+              group={id === 's2' ? 0 : 1}
+              active={pageId === id}
+            />
           </S.Page>
         ),
       }

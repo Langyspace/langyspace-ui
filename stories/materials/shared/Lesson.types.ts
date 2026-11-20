@@ -18,7 +18,10 @@ export interface NotesProps {
   open: boolean
   onClose: () => void
 }
-export type LessonSpeech = ReturnType<typeof useLessonSpeech>
+export type LessonSpeech = Pick<
+  ReturnType<typeof useLessonSpeech>,
+  'speak' | 'stop' | 'playingId' | 'error' | 'paused' | 'togglePause'
+>
 export interface SpeechProps {
   speech: LessonSpeech
 }
@@ -56,4 +59,9 @@ export interface NotesTriggerProps {
   open: boolean
   onClick: () => void
   ref?: Ref<HTMLButtonElement>
+}
+
+export interface SourceQuestionsProps {
+  items: readonly { question: string; hint?: string }[]
+  compact?: boolean
 }

@@ -10,6 +10,7 @@ import {
   GreetingSection,
   PictureTalkSection,
   ListenTalkSection,
+  ComprehensionSection,
   PreferenceSection,
   ConversationSection,
   TodaySection,
@@ -77,11 +78,26 @@ export function TrialA1Lesson({
                         }
                       />
                     }
-                    instruction="Listen, answer and keep talking."
+                    instruction="Listen, then read with your teacher."
                   >
                     <ListenTalkSection
                       onModeChange={(mode) => setModelActive(mode === 'model')}
                     />
+                  </SlidePage>
+                ),
+              }
+            if (id === 's31')
+              return {
+                id,
+                label: 'Comprehension questions',
+                content: (
+                  <SlidePage
+                    width="reading"
+                    eyebrow="Guided conversation"
+                    title="Comprehension questions"
+                    instruction="Answer the questions about the conversation."
+                  >
+                    <ComprehensionSection />
                   </SlidePage>
                 ),
               }

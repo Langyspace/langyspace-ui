@@ -35,7 +35,12 @@ const pageInfo: Record<string, [string, string, string]> = {
   s2: [
     'Expressions',
     'Giving feedback',
-    'Paraphrase each expression before opening its meaning.',
+    'Read the context. Explain the expression, then click to check.',
+  ],
+  s21: [
+    'Expressions',
+    'Feedback in context',
+    'Read the context. Explain the expression, then click to check.',
   ],
   s31: [
     'Warm up',
@@ -149,7 +154,8 @@ function C101Content({ initialPageId }: C101LessonProps) {
   }
   const body = (id: string) => {
     if (id === 's1') return <SourceQuestions items={content.review} />
-    if (id === 's2') return <Expressions />
+    if (id === 's2' || id === 's21')
+      return <Expressions group={id === 's2' ? 0 : 1} active={pageId === id} />
     if (['s31', 's32', 's33'].includes(id))
       return <WarmUp index={Number(id.slice(2)) - 1} />
     if (id === 's4') return <Reading />

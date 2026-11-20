@@ -1,0 +1,2525 @@
+{
+  "taskId": "CONTENT34-UIUX-NINE",
+  "sourceCommit": "6dde332cf5f3b1f8c2ac889454d34c60cd13d78c",
+  "method": "Static learner-copy, source composition and asset-header reading; bounded local Student destination lookup. No runtime gate.",
+  "catalogItems": 14,
+  "materialsReviewedHere": 14,
+  "pagesReviewedHere": 230,
+  "materials": {
+    "A101": {
+      "pages": 31,
+      "pageIds": [
+        "s1",
+        "s4",
+        "s21",
+        "s22",
+        "s23",
+        "s24",
+        "s25",
+        "s26",
+        "s51",
+        "s52",
+        "s53",
+        "s54",
+        "s55",
+        "s56",
+        "s6",
+        "s14",
+        "s71",
+        "s72",
+        "s18",
+        "s73",
+        "s16",
+        "s17",
+        "s8",
+        "s9",
+        "s10",
+        "s74",
+        "s15",
+        "s151",
+        "s152",
+        "s75",
+        "s13"
+      ],
+      "source": "stories/materials/A101",
+      "homework": "published_A101_preserved_by_root_confirmation",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "A201": {
+      "pages": 22,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s111",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s151",
+        "s16",
+        "s17",
+        "s18",
+        "s19",
+        "s20"
+      ],
+      "source": "stories/materials/A201",
+      "homework": "already_independent_no_portal_URL",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "B101": {
+      "pages": 18,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s21",
+        "s31",
+        "s32",
+        "s33",
+        "s4",
+        "s51",
+        "s52",
+        "s6",
+        "s62",
+        "s61",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "source": "stories/materials/B101",
+      "homework": "already_independent_no_portal_URL",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "B201": {
+      "pages": 17,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s31",
+        "s32",
+        "s33",
+        "s4",
+        "s51",
+        "s52",
+        "s6",
+        "s62",
+        "s63",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "source": "stories/materials/B201",
+      "homework": "already_independent_no_portal_URL",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "C101": {
+      "pages": 18,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s21",
+        "s31",
+        "s32",
+        "s33",
+        "s4",
+        "s51",
+        "s52",
+        "s6",
+        "s62",
+        "s61",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "source": "stories/materials/C101",
+      "homework": "already_independent_no_portal_URL",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "TrialA1": {
+      "pages": 9,
+      "pageIds": ["s1", "s2", "s3", "s31", "s41", "s42", "s43", "s5", "s6"],
+      "source": "stories/materials/TrialA1",
+      "homework": "none_in_trial",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "TrialB1": {
+      "pages": 9,
+      "pageIds": ["s1", "s2", "s3", "s31", "s41", "s42", "s43", "s5", "s6"],
+      "source": "stories/materials/TrialB1",
+      "homework": "none_in_trial",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "TrialB2": {
+      "pages": 9,
+      "pageIds": ["s1", "s2", "s3", "s31", "s41", "s42", "s43", "s5", "s6"],
+      "source": "stories/materials/TrialB2",
+      "homework": "none_in_trial",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "Frontend": {
+      "pages": 17,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s31",
+        "s32",
+        "s33",
+        "s4",
+        "s51",
+        "s52",
+        "s6",
+        "s62",
+        "s61",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12"
+      ],
+      "source": "stories/materials/Frontend",
+      "homework": "offline_private_patch",
+      "tts": "No authored browser-TTS call found here; real clip/live-read composition was read, without playback/provider verification."
+    },
+    "A103": {
+      "pages": 16,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s4",
+        "s8",
+        "s71",
+        "s73",
+        "s72",
+        "s74",
+        "s5",
+        "s10",
+        "s101",
+        "s11",
+        "s12",
+        "s9",
+        "s131",
+        "s13"
+      ],
+      "minutes": 50,
+      "pageReview": [
+        {
+          "id": "s1",
+          "title": "People you know",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer, then ask your teacher."
+        },
+        {
+          "id": "s2",
+          "title": "Jobs",
+          "kind": "vocabulary",
+          "minutes": 5,
+          "instruction": "Look at the pictures. Guess the words."
+        },
+        {
+          "id": "s4",
+          "title": "Family words",
+          "kind": "words",
+          "minutes": 4,
+          "instruction": "How do you say these words in English?"
+        },
+        {
+          "id": "s8",
+          "title": "This is / These are",
+          "kind": "grammar",
+          "minutes": 3,
+          "instruction": "Use this for one person and these for two or more."
+        },
+        {
+          "id": "s71",
+          "title": "Who’s this?",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Listen, then read with your teacher."
+        },
+        {
+          "id": "s73",
+          "title": "Comprehension questions",
+          "kind": "prompts",
+          "minutes": 3,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s72",
+          "title": "Meet Bia",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Say the missing words, then read with your teacher."
+        },
+        {
+          "id": "s74",
+          "title": "About Bia",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s5",
+          "title": "Personal questions",
+          "kind": "prompts",
+          "minutes": 4,
+          "instruction": "Talk about people in your life."
+        },
+        {
+          "id": "s10",
+          "title": "A photo from Kim",
+          "kind": "listening",
+          "minutes": 5,
+          "instruction": "Listen and answer the questions."
+        },
+        {
+          "id": "s101",
+          "title": "Your reply",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Tell Kim about someone you know."
+        },
+        {
+          "id": "s11",
+          "title": "Say it correctly",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Correct the sentences."
+        },
+        {
+          "id": "s12",
+          "title": "People in my photos",
+          "kind": "roleplay",
+          "minutes": 5,
+          "instruction": "Show a photo or imagine one. Have a conversation."
+        },
+        {
+          "id": "s9",
+          "title": "Let’s talk!",
+          "kind": "prompts",
+          "minutes": 3,
+          "instruction": "Choose a person. Ask and answer."
+        },
+        {
+          "id": "s131",
+          "title": "Now you!",
+          "kind": "prompts",
+          "minutes": 1,
+          "instruction": "Introduce two people without reading."
+        },
+        {
+          "id": "s13",
+          "title": "Before next class",
+          "kind": "homework",
+          "minutes": 1,
+          "instruction": "Practise these two tasks."
+        }
+      ],
+      "decisions": [
+        "Two isolated pronunciation drills with phonetic approximations.",
+        "Repeated job identification after vocabulary.",
+        "Four-line continuation with no distinct objective.",
+        "Scored checklist and long role-play support.",
+        "Unprovisioned Student homework activity links."
+      ],
+      "status": "active source migrated to canonical UI Library and exact prepared ElevenLabs"
+    },
+    "A104": {
+      "pages": 16,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s31",
+        "s7",
+        "s6",
+        "s61",
+        "s8",
+        "s81",
+        "s82",
+        "s9",
+        "s91",
+        "s10",
+        "s11",
+        "s111",
+        "s12"
+      ],
+      "minutes": 50,
+      "pageReview": [
+        {
+          "id": "s1",
+          "title": "Your day",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer, then ask your teacher."
+        },
+        {
+          "id": "s2",
+          "title": "Daily activities",
+          "kind": "vocabulary",
+          "minutes": 5,
+          "instruction": "Look at the pictures. Guess the words."
+        },
+        {
+          "id": "s3",
+          "title": "Days of the week",
+          "kind": "words",
+          "minutes": 3,
+          "instruction": "How do you say these days in English?"
+        },
+        {
+          "id": "s31",
+          "title": "Times of day",
+          "kind": "words",
+          "minutes": 3,
+          "instruction": "Say the words, then click to check."
+        },
+        {
+          "id": "s7",
+          "title": "At, on, in the",
+          "kind": "grammar",
+          "minutes": 3,
+          "instruction": "Use at for times, on for days and in the for parts of the day."
+        },
+        {
+          "id": "s6",
+          "title": "Are you free?",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Listen, then read with your teacher."
+        },
+        {
+          "id": "s61",
+          "title": "Comprehension questions",
+          "kind": "prompts",
+          "minutes": 3,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s8",
+          "title": "A plan for Saturday",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Say the missing words, then read with your teacher."
+        },
+        {
+          "id": "s81",
+          "title": "About the plan",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s82",
+          "title": "Personal questions",
+          "kind": "prompts",
+          "minutes": 4,
+          "instruction": "Talk about your real routine."
+        },
+        {
+          "id": "s9",
+          "title": "A message from Kim",
+          "kind": "listening",
+          "minutes": 5,
+          "instruction": "Listen and answer the questions."
+        },
+        {
+          "id": "s91",
+          "title": "Your reply",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Tell Kim about your week."
+        },
+        {
+          "id": "s10",
+          "title": "Say it correctly",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Correct the sentences."
+        },
+        {
+          "id": "s11",
+          "title": "Find a time",
+          "kind": "roleplay",
+          "minutes": 5,
+          "instruction": "Agree on a day, an activity and a time."
+        },
+        {
+          "id": "s111",
+          "title": "Let’s talk!",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Keep the conversation going. Ask “What about you?”"
+        },
+        {
+          "id": "s12",
+          "title": "Before next class",
+          "kind": "homework",
+          "minutes": 1,
+          "instruction": "Practise these two tasks."
+        }
+      ],
+      "decisions": [
+        "Three repeated picture-identification multiple-choice pages.",
+        "Two pronunciation drills without a separate conversation goal.",
+        "Large after-reveal grammar panels and role-play checklist.",
+        "Unprovisioned Student homework links."
+      ],
+      "status": "active source migrated to canonical UI Library and exact prepared ElevenLabs"
+    },
+    "A106": {
+      "pages": 15,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s41",
+        "s4",
+        "s81",
+        "s7",
+        "s72",
+        "s71",
+        "s73",
+        "s91",
+        "s10",
+        "s101",
+        "s12",
+        "s111",
+        "s13"
+      ],
+      "minutes": 50,
+      "pageReview": [
+        {
+          "id": "s1",
+          "title": "Pets and home",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer, then ask your teacher."
+        },
+        {
+          "id": "s2",
+          "title": "Pets",
+          "kind": "vocabulary",
+          "minutes": 5,
+          "instruction": "Look at the pictures. Guess the words."
+        },
+        {
+          "id": "s41",
+          "title": "Furniture",
+          "kind": "vocabulary",
+          "minutes": 3,
+          "instruction": "Look at the pictures. Guess the words."
+        },
+        {
+          "id": "s4",
+          "title": "Where is Mia?",
+          "kind": "vocabulary",
+          "minutes": 4,
+          "instruction": "Look at Mia and the furniture. Guess the words."
+        },
+        {
+          "id": "s81",
+          "title": "Have / Has",
+          "kind": "grammar",
+          "minutes": 3,
+          "instruction": "Use have with I and you. Use has with he and she."
+        },
+        {
+          "id": "s7",
+          "title": "Meet Thor and Mia",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Listen, then read with your teacher."
+        },
+        {
+          "id": "s72",
+          "title": "Comprehension questions",
+          "kind": "prompts",
+          "minutes": 3,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s71",
+          "title": "Kim’s sister’s pets",
+          "kind": "dialogue",
+          "minutes": 4,
+          "instruction": "Say the missing words, then read with your teacher."
+        },
+        {
+          "id": "s73",
+          "title": "About the pets",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer the questions about the conversation."
+        },
+        {
+          "id": "s91",
+          "title": "Personal questions",
+          "kind": "prompts",
+          "minutes": 4,
+          "instruction": "Talk about your pet or someone else’s pet."
+        },
+        {
+          "id": "s10",
+          "title": "A message from Kim",
+          "kind": "listening",
+          "minutes": 5,
+          "instruction": "Listen and answer the questions."
+        },
+        {
+          "id": "s101",
+          "title": "Your reply",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Tell Kim about a pet you know."
+        },
+        {
+          "id": "s12",
+          "title": "A pet conversation",
+          "kind": "roleplay",
+          "minutes": 6,
+          "instruction": "Ask about a pet. Listen and ask a follow-up question."
+        },
+        {
+          "id": "s111",
+          "title": "Let’s talk!",
+          "kind": "prompts",
+          "minutes": 2,
+          "instruction": "Answer in full sentences. Ask your teacher too."
+        },
+        {
+          "id": "s13",
+          "title": "Before next class",
+          "kind": "homework",
+          "minutes": 1,
+          "instruction": "Practise these two tasks."
+        }
+      ],
+      "decisions": [
+        "Repeated animal identification immediately after vocabulary.",
+        "Unverified numbered hotspots and unnecessary exploration counter.",
+        "Two/four-line continuation and teacher/student progress buttons.",
+        "Double-click guessing game, redundant location controls and notes checklist.",
+        "Unprovisioned Student homework links."
+      ],
+      "status": "active source migrated to canonical UI Library and exact prepared ElevenLabs"
+    },
+    "A102": {
+      "pages": 17,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s7",
+        "s8",
+        "s9",
+        "s10",
+        "s11",
+        "s12",
+        "s13",
+        "s14",
+        "s15",
+        "s16",
+        "s17"
+      ],
+      "pageReview": [
+        "s1 greeting with own answers",
+        "s2–s3 native digits, five each",
+        "s4–s5 listen to three digits",
+        "s6 optional segmented alphabet reference, relevant name letters first",
+        "s7 listen to a surname",
+        "s8 complete six-turn contact dialogue",
+        "s9 three comprehension questions",
+        "s10 my/your/it’s canonical grammar table",
+        "s11 six-turn gap conversation including confirmation",
+        "s12 three questions about this conversation",
+        "s13 contact dictation with made-up number",
+        "s14 four recorded prompts plus live replies, eight communicative turns",
+        "s15 open role-play: no full two-line authored dialogue",
+        "s16 independent checking prompts with hints",
+        "s17 two independent homework tasks"
+      ],
+      "status": "reviewed; guided gaps extended from four to six; valid existing clips preserved"
+    },
+    "A105": {
+      "pages": 16,
+      "pageIds": [
+        "s1",
+        "s2",
+        "s3",
+        "s4",
+        "s5",
+        "s6",
+        "s61",
+        "s8",
+        "s81",
+        "s82",
+        "s9",
+        "s91",
+        "s10",
+        "s11",
+        "s111",
+        "s12"
+      ],
+      "pageReview": [
+        "warm-up uses personal experience",
+        "six transparent fruit cutouts",
+        "preferences with clickable model",
+        "six transparent vegetable cutouts",
+        "theme-success grammar forms",
+        "complete six-turn market dialogue",
+        "separate comprehension questions",
+        "complete six-turn gap conversation",
+        "separate gap comprehension",
+        "personal questions with hints",
+        "native phone third-listen transcript",
+        "guided oral reply",
+        "three useful corrections",
+        "six-turn dollar role-play, category cues and optional bulb/eye model",
+        "independent conversation with models",
+        "two independent homework tasks; unprovisioned links removed"
+      ],
+      "status": "recent approved component/content fixes reused; homework promises corrected"
+    }
+  },
+  "issues": {
+    "A101-TALK": "15 unguided final prompts become three name/origin/feeling prompts with optional response models in the existing PromptExercise. Full original bank and stable question text IDs stay in source.",
+    "TRIALA1-DIALOGUE": "Append meaningful Ana turn6; keep five existing turns/clips and update two related comprehension prompts. New utterance identity/text is frozen separately.",
+    "B201-OBJECTS": "Use isolated/plain/contain/hoverfalse in VocabularyGrid. Root/images replace only the six approved object bytes/manifests; retain doorman context.",
+    "TRIALA1-OBJECTS": "Six pair images lack alpha in current source bytes and are approved for replacement. Existing ChoiceCard img uses contain; preserve selection format instead of adding unsupported VocabularyGrid props to a native img.",
+    "LISTEN-B101": "Explicit third-listen and accurate third-listen copy, native phone playback retained.",
+    "LISTEN-B201": "Explicit third-listen; remove duplicate external replay prop and obsolete derived state.",
+    "LISTEN-C101": "Replace manual-after-replay with third-listen; remove external replay and obsolete derived state.",
+    "LISTEN-FRONTEND": "Third-listen, no manual transcript/external replay props, no artificial mark-as-sent action/status; retain oral reply and native playback.",
+    "B101-INFERENCE": "Use seems for the inferred reaction to venue visits; preserve the contrast with barbecues and the actual recording.",
+    "B201-INFERENCE": "Optional support no longer dictates that Raj was not angry; learner can justify how he sounded.",
+    "C101-READING": "Distinguish explicit meeting requests from inference. Satisfaction prompt invites evidence rather than a categorical answer. JSX consumes corrected JSON instead of overriding question2.",
+    "FRONTEND-INSTRUCTION": "Remove Portuguese procedural copy and shorten dialogue context instruction; role/recording content stays valid.",
+    "FRONTEND-ENGLISH": "Visible grammar instructions/headings/column labels are concise English; audio example texts and IDs unchanged.",
+    "FRONTEND-INTENT-FIRST": "Start learner turns with intentions; complete starters are optional rather than initially exposed.",
+    "FRONTEND-HOMEWORK": "Replace unprovisioned activity URLs, platform promises, generic-tab adapter and Copy links control with three independent tasks. No Student provisioning."
+  },
+  "pages": [
+    {
+      "material": "A101",
+      "pageId": "s1",
+      "title": "Introduce yourself",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "characterScenes": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s4",
+      "title": "Where are you from?",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "officialFlags": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s21",
+      "title": "Feelings 1",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s22",
+      "title": "Feelings 2",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s23",
+      "title": "Feelings 3",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s24",
+      "title": "Feelings 4",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s25",
+      "title": "Feelings 5",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s26",
+      "title": "Feelings 6",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s51",
+      "title": "Countries 1",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s52",
+      "title": "Countries 2",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s53",
+      "title": "Countries 3",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s54",
+      "title": "Countries 4",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s55",
+      "title": "Countries 5",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s56",
+      "title": "Countries 6",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s6",
+      "title": "Nice to meet you",
+      "kind": "complete_dialogue",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s14",
+      "title": "Comprehension questions",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s71",
+      "title": "Verb to be",
+      "kind": "grammar",
+      "issues": [],
+      "sourceCounts": {
+        "rows": 7
+      },
+      "note": "Seven subject forms; open translations are a source-density risk, not demonstrated overflow.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s72",
+      "title": "Negatives and questions",
+      "kind": "grammar",
+      "issues": [],
+      "sourceCounts": {
+        "negativeExamples": 5,
+        "questionExamples": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s18",
+      "title": "Questions",
+      "kind": "guided_transformation",
+      "issues": [],
+      "sourceCounts": {
+        "items": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s73",
+      "title": "How old are you?",
+      "kind": "functional_mini_example",
+      "issues": [],
+      "note": "A be/age example; not an incomplete two-person dialogue.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s16",
+      "title": "True for you?",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "items": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s17",
+      "title": "Questions & answers",
+      "kind": "matching",
+      "issues": [],
+      "sourceCounts": {
+        "pairs": 8
+      },
+      "note": "16 visible labels: source-density risk only. Existing IDs preserved; no measured overflow claim.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s8",
+      "title": "Complete the conversation",
+      "kind": "gap_retrieval",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "note": "Six gaps in the same six-turn conversation already understood at s6/s14; retrieval has a different function. Reuse R.T1–R.T6, not a new recording.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s9",
+      "title": "A message from Kim",
+      "kind": "listening_monologue",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Kim": 1
+        }
+      },
+      "note": "Real one-speaker recording; minimum-six does not apply. Canonical demo is root-owned.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s10",
+      "title": "Guess who",
+      "kind": "open_roleplay",
+      "issues": [],
+      "sourceCounts": {
+        "personCards": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s74",
+      "title": "Two truths and one lie",
+      "kind": "personal_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "factsPerPerson": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s15",
+      "title": "Let’s talk",
+      "kind": "personal_questions",
+      "issues": ["A101-TALK"],
+      "sourceCounts": {
+        "displayedBefore": 15,
+        "displayedAfter": 3,
+        "modelsAfter": 3
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "A101",
+      "pageId": "s75",
+      "title": "Now you!",
+      "kind": "independent_speaking",
+      "issues": [],
+      "sourceCounts": {
+        "seconds": 30,
+        "starters": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A101",
+      "pageId": "s13",
+      "title": "Before next class",
+      "kind": "homework",
+      "issues": [],
+      "sourceCounts": {
+        "tasks": 3
+      },
+      "note": "Preserve published Introducing Yourself per coordinator confirmation; local negative ID lookup does not negate that evidence.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s1",
+      "title": "What Are You Doing?",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "actionScenes": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s2",
+      "title": "Time expressions",
+      "kind": "language_reference",
+      "issues": [],
+      "sourceCounts": {
+        "expressions": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s3",
+      "title": "Actions 1",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s4",
+      "title": "Actions 2",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s5",
+      "title": "Actions 3",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s6",
+      "title": "Actions 4",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s7",
+      "title": "Actions 5",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s8",
+      "title": "Actions 6",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s9",
+      "title": "Now vs. Usually",
+      "kind": "grammar",
+      "issues": [],
+      "sourceCounts": {
+        "contrast": "current action / routine"
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s10",
+      "title": "What Is Everyone Doing?",
+      "kind": "picture_talk",
+      "issues": [],
+      "sourceCounts": {
+        "people": 6
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s11",
+      "title": "Now vs. Usually",
+      "kind": "complete_dialogue",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Anna": 3,
+          "Ben": 3
+        }
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s111",
+      "title": "Anna and Ben: comprehension",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 4,
+        "models": 4
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s12",
+      "title": "Fill in the Blanks",
+      "kind": "complete_gap_dialogue",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 8,
+        "speakers": {
+          "Emma": 4,
+          "Lucas": 4
+        }
+      },
+      "note": "Eight turns, ten gaps; preserve stable utterance/gap IDs and valid clips.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s13",
+      "title": "Emma and Lucas: comprehension",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 6,
+        "models": 6
+      },
+      "note": "Largest question set in this lesson; open-state count is a density note, not measured overflow.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s14",
+      "title": "Personal questions",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s15",
+      "title": "Guess What I’m Doing!",
+      "kind": "functional_mini_example",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 4,
+        "speakers": {
+          "Anna": 2,
+          "Ben": 2
+        }
+      },
+      "note": "Four lines model guessing plus a routine question; the actual roleplay is open. No filler expansion.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s151",
+      "title": "A message from Anna",
+      "kind": "listening_monologue",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Anna": 1
+        }
+      },
+      "note": "Already explicit third-listen. Five matching questions/models; native control retained.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s16",
+      "title": "Let’s Talk 1",
+      "kind": "personal_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "note": "Now, temporary activities and other people have distinct uses. Teacher selects; do not exhaust all20 prompts mechanically.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s17",
+      "title": "Let’s Talk 2",
+      "kind": "personal_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "note": "Now, temporary activities and other people have distinct uses. Teacher selects; do not exhaust all20 prompts mechanically.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s18",
+      "title": "Let’s Talk 3",
+      "kind": "personal_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "note": "Now, temporary activities and other people have distinct uses. Teacher selects; do not exhaust all20 prompts mechanically.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s19",
+      "title": "Let’s Talk 4",
+      "kind": "personal_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 5,
+        "models": 5
+      },
+      "note": "Now, temporary activities and other people have distinct uses. Teacher selects; do not exhaust all20 prompts mechanically.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "A201",
+      "pageId": "s20",
+      "title": "Real-Life Observation",
+      "kind": "homework",
+      "issues": [],
+      "sourceCounts": {
+        "independentSteps": 4
+      },
+      "note": "No invented portal activity or URL.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s1",
+      "title": "Last class",
+      "kind": "review",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s2",
+      "title": "Busy weeks",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "actionScenes": 4
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s21",
+      "title": "Time for yourself",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "actionScenes": 4
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s31",
+      "title": "What has she been doing?",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s32",
+      "title": "What has he been doing?",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s33",
+      "title": "Catch up with Leo",
+      "kind": "functional_mini_example",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 2,
+        "speakers": {
+          "Kim": 1,
+          "Leo": 1
+        }
+      },
+      "note": "Two-turn warmup and answer choices, not a full guided dialogue.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s4",
+      "title": "Lately",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 4
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s51",
+      "title": "Running or been running?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s52",
+      "title": "Painted or been painting?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s6",
+      "title": "Welcome back! (1/2)",
+      "kind": "dialogue_part",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "note": "Same eleven-turn conversation continues on s62.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s62",
+      "title": "Welcome back! (2/2)",
+      "kind": "dialogue_continuation",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 5,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 2
+        }
+      },
+      "note": "Five-turn continuation; complete exchange is11 (Kim6/Ana5). No padding or regeneration.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s61",
+      "title": "What did you find out?",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 3,
+        "models": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s7",
+      "title": "Been doing or done?",
+      "kind": "grammar",
+      "issues": [],
+      "sourceCounts": {
+        "rows": 4,
+        "explanationBlocks": 2
+      },
+      "note": "Useful activity/result contrast; duration/state-verb help is optional.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s8",
+      "title": "Kim is back",
+      "kind": "guided_roleplay_template",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 8,
+        "speakers": {
+          "Kim_or_Teacher": 4,
+          "You": 4
+        }
+      },
+      "note": "Both orientations have eight turns. Learner intentions precede optional starters; teacher models are live.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s9",
+      "title": "A message from Leo",
+      "kind": "listening_monologue",
+      "issues": ["LISTEN-B101", "B101-INFERENCE"],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Leo": 1
+        }
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "B101",
+      "pageId": "s10",
+      "title": "Right or wrong?",
+      "kind": "correction",
+      "issues": [],
+      "sourceCounts": {
+        "items": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s11",
+      "title": "What has Kim been doing?",
+      "kind": "open_roleplay",
+      "issues": [],
+      "sourceCounts": {
+        "clues": 3,
+        "steps": 3
+      },
+      "note": "Clue results explicitly say Possible answer; preserve productive uncertainty and duration follow-ups.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B101",
+      "pageId": "s12",
+      "title": "Before next class",
+      "kind": "homework",
+      "issues": [],
+      "sourceCounts": {
+        "independentTasks": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s1",
+      "title": "Dead phone, no charger",
+      "kind": "review",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s2",
+      "title": "No battery",
+      "kind": "vocabulary",
+      "issues": ["B201-OBJECTS"],
+      "sourceCounts": {
+        "isolatedObjects": 6,
+        "contextPerson": 1
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "B201",
+      "pageId": "s31",
+      "title": "Why did the phone die?",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s32",
+      "title": "How long before it died?",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s33",
+      "title": "What do you do when your phone dies?",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s4",
+      "title": "Expressions",
+      "kind": "language_retrieval",
+      "issues": [],
+      "sourceCounts": {
+        "rows": 7
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s51",
+      "title": "I’d walked or I’d been walking?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s52",
+      "title": "I’ve been or I’d been?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s6",
+      "title": "How was New York? (1/2)",
+      "kind": "dialogue_part",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s62",
+      "title": "How was New York? (2/2)",
+      "kind": "dialogue_continuation",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "note": "Complete story is12 balanced turns; existing clips remain valid.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s63",
+      "title": "Questions",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 3,
+        "models": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s7",
+      "title": "What had been happening?",
+      "kind": "grammar",
+      "issues": [],
+      "sourceCounts": {
+        "rows": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s8",
+      "title": "Your bad day",
+      "kind": "guided_roleplay_template",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 10,
+        "speakers": {
+          "Kim_or_Teacher": 5,
+          "You": 5
+        }
+      },
+      "note": "Ten turns per orientation; progressive visible window is not a separate under-six conversation.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s9",
+      "title": "A message from Raj",
+      "kind": "listening_monologue",
+      "issues": ["LISTEN-B201", "B201-INFERENCE"],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Raj": 1
+        }
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "B201",
+      "pageId": "s10",
+      "title": "Right or wrong?",
+      "kind": "correction",
+      "issues": [],
+      "sourceCounts": {
+        "items": 5
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s11",
+      "title": "Everything went wrong",
+      "kind": "open_roleplay",
+      "issues": [],
+      "sourceCounts": {
+        "situationImages": 8,
+        "steps": 4
+      },
+      "note": "New problem provides transfer. Eight images are a source-density note. Keys/wallet are outside this approved alpha batch; no extra regeneration requested.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "B201",
+      "pageId": "s12",
+      "title": "Before next class",
+      "kind": "homework",
+      "issues": [],
+      "sourceCounts": {
+        "independentTasks": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s1",
+      "title": "It tends to come across as …",
+      "kind": "review",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "note": "Represent another view fairly; optional support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s2",
+      "title": "Giving feedback",
+      "kind": "expression_paraphrase",
+      "issues": [],
+      "sourceCounts": {
+        "expressions": 8
+      },
+      "note": "Definitions/translations reveal in-place. Eight contexts are a density note; no visual-overflow claim.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s31",
+      "title": "From blunt to tactful",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "note": "Wording, tone and specificity have distinct effects.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s32",
+      "title": "Ask for a change",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "note": "Try a suggestion before choice reveal.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s33",
+      "title": "Feedback that stayed with you",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "note": "Distinguishes receiving/giving feedback, then asks for a personal example.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s4",
+      "title": "An email from Laura",
+      "kind": "reading_inference",
+      "issues": ["C101-READING"],
+      "sourceCounts": {
+        "questions": 2
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "C101",
+      "pageId": "s51",
+      "title": "Soft or harsh?",
+      "kind": "prosody",
+      "issues": [],
+      "sourceCounts": {
+        "recordedVersions": 2
+      },
+      "note": "Same words/different delivery is a useful C1 perception task.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s52",
+      "title": "A suggestion or an order?",
+      "kind": "prosody",
+      "issues": [],
+      "sourceCounts": {
+        "recordedVersions": 2
+      },
+      "note": "Existing caveat about context/relationship is appropriate.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s6",
+      "title": "Practicing with Kim",
+      "kind": "dialogue_part",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 7,
+        "speakers": {
+          "Kim": 4,
+          "Ana": 3
+        }
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s62",
+      "title": "Making the point land",
+      "kind": "dialogue_continuation",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 7,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 4
+        }
+      },
+      "note": "Same14-turn exchange includes purposeful interruption, repair and reformulation.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s61",
+      "title": "Read between the lines",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 3,
+        "models": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s7",
+      "title": "Softer, please",
+      "kind": "guided_reformulation",
+      "issues": [],
+      "sourceCounts": {
+        "rows": 6
+      },
+      "note": "Optional notes preserve nuance rather than treating hedging as automatically polite.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s8",
+      "title": "Talk to Raj",
+      "kind": "guided_roleplay_template",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 8,
+        "speakers": {
+          "Teacher": 4,
+          "You": 4
+        }
+      },
+      "note": "Both orientations contain eight turns; intentions precede optional language alternatives.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s9",
+      "title": "A message from Raj",
+      "kind": "listening_monologue",
+      "issues": ["LISTEN-C101"],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Raj": 1
+        }
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "C101",
+      "pageId": "s10",
+      "title": "Natural or not?",
+      "kind": "pragmatic_correction",
+      "issues": [],
+      "sourceCounts": {
+        "items": 5,
+        "personalExtension": 1
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s11",
+      "title": "Your feedback",
+      "kind": "open_roleplay",
+      "issues": [],
+      "sourceCounts": {
+        "steps": 4
+      },
+      "note": "Open real situation, resistance and role swap. Six-turn rule is not a request for six static instruction bullets.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "C101",
+      "pageId": "s12",
+      "title": "Keep the conversation going",
+      "kind": "homework",
+      "issues": [],
+      "sourceCounts": {
+        "independentTasks": 3
+      },
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s1",
+      "title": "What do you like?",
+      "kind": "personal_greeting",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "note": "Short introductions with optional response support; no alphabet/age/email load added.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s2",
+      "title": "A day in the park",
+      "kind": "picture_talk",
+      "issues": [],
+      "sourceCounts": {
+        "hotspots": 7
+      },
+      "note": "Context is needed to understand the scene. Hotspot labels have real imported recordings; no automatic scene cutout.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s3",
+      "title": "Do you like the park?",
+      "kind": "complete_dialogue_with_guided_reply_modes",
+      "issues": ["TRIALA1-DIALOGUE"],
+      "sourceCounts": {
+        "turns": 6,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 3
+        }
+      },
+      "note": "Model has six turns after patch (TrialA1) or seven retained turns (B1/B2). Rehearsal has three partner/learner pairs. Inline follow-up remains inside the approved combined model/guided format; it is not claimed to be a separate comprehension page.",
+      "disposition": "private_patch"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s41",
+      "title": "Movies or music?",
+      "kind": "preference_interaction",
+      "issues": ["TRIALA1-OBJECTS"],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "private_patch"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s42",
+      "title": "Dogs or cats?",
+      "kind": "preference_interaction",
+      "issues": ["TRIALA1-OBJECTS"],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "private_patch"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s43",
+      "title": "Pizza or salad?",
+      "kind": "preference_interaction",
+      "issues": ["TRIALA1-OBJECTS"],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "private_patch"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s5",
+      "title": "Your turn to ask",
+      "kind": "independent_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "topicChoices": 6
+      },
+      "note": "Learner chooses topic/story and asks a follow-up. Open live interaction needs no added recorded filler.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialA1",
+      "pageId": "s6",
+      "title": "What can you say now?",
+      "kind": "reflection",
+      "issues": [],
+      "sourceCounts": {
+        "startersOrPrompts": 6
+      },
+      "note": "No homework portal claim. Preserve30-minute trial plans where stated, rather than extending them to course50-minute timing.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s1",
+      "title": "A trip to remember",
+      "kind": "personal_greeting",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "note": "Short introductions with optional response support; no alphabet/age/email load added.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s2",
+      "title": "An unexpected stop",
+      "kind": "picture_talk",
+      "issues": [],
+      "sourceCounts": {
+        "hotspots": 3
+      },
+      "note": "Context is needed to understand the scene. Hotspot labels have real imported recordings; no automatic scene cutout.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s3",
+      "title": "Ana and Kim’s favourite trips",
+      "kind": "complete_dialogue_with_guided_reply_modes",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 7,
+        "speakers": {
+          "Kim": 4,
+          "Ana": 3
+        }
+      },
+      "note": "Model has six turns after patch (TrialA1) or seven retained turns (B1/B2). Rehearsal has three partner/learner pairs. Inline follow-up remains inside the approved combined model/guided format; it is not claimed to be a separate comprehension page.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s41",
+      "title": "Beach or mountains?",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s42",
+      "title": "Big city or small town?",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s43",
+      "title": "Plane or bus?",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s5",
+      "title": "Your travel story",
+      "kind": "independent_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "topicChoices": 3
+      },
+      "note": "Learner chooses topic/story and asks a follow-up. Open live interaction needs no added recorded filler.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB1",
+      "pageId": "s6",
+      "title": "Make it yours",
+      "kind": "reflection",
+      "issues": [],
+      "sourceCounts": {
+        "startersOrPrompts": 4
+      },
+      "note": "No homework portal claim. Preserve30-minute trial plans where stated, rather than extending them to course50-minute timing.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s1",
+      "title": "Work and life",
+      "kind": "personal_greeting",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 3
+      },
+      "note": "Short introductions with optional response support; no alphabet/age/email load added.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s2",
+      "title": "A place to get things done",
+      "kind": "picture_talk",
+      "issues": [],
+      "sourceCounts": {
+        "hotspots": 3
+      },
+      "note": "Context is needed to understand the scene. Hotspot labels have real imported recordings; no automatic scene cutout.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s3",
+      "title": "A good day at work",
+      "kind": "complete_dialogue_with_guided_reply_modes",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 7,
+        "speakers": {
+          "Kim": 4,
+          "Ana": 3
+        }
+      },
+      "note": "Model has six turns after patch (TrialA1) or seven retained turns (B1/B2). Rehearsal has three partner/learner pairs. Inline follow-up remains inside the approved combined model/guided format; it is not claimed to be a separate comprehension page.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s41",
+      "title": "Where you work",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s42",
+      "title": "When you work",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s43",
+      "title": "What you value",
+      "kind": "preference_interaction",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Preference + personal follow-up has a new communicative purpose after recognition. Optional response support is supplied.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s5",
+      "title": "A better balance",
+      "kind": "independent_conversation",
+      "issues": [],
+      "sourceCounts": {
+        "topicChoices": 3
+      },
+      "note": "Learner chooses topic/story and asks a follow-up. Open live interaction needs no added recorded filler.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "TrialB2",
+      "pageId": "s6",
+      "title": "Your next step",
+      "kind": "reflection",
+      "issues": [],
+      "sourceCounts": {
+        "startersOrPrompts": 3
+      },
+      "note": "No homework portal claim. Preserve30-minute trial plans where stated, rather than extending them to course50-minute timing.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s1",
+      "title": "Your work",
+      "kind": "review",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 4
+      },
+      "note": "Includes a path for learners without a tech job.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s2",
+      "title": "Parts of a page",
+      "kind": "vocabulary",
+      "issues": [],
+      "sourceCounts": {
+        "items": 7
+      },
+      "note": "Seven valid recorded labels. Functional SVG white UI surfaces and raster button are outside the approved19-image alpha batch; preserve.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s31",
+      "title": "The button on mobile",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "note": "Text/art distinguish mobile from desktop.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s32",
+      "title": "The morning stand-up",
+      "kind": "recognition",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 3
+      },
+      "note": "Done/not yet differs from describing the bug.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s33",
+      "title": "Kim’s experience",
+      "kind": "functional_mini_example",
+      "issues": [],
+      "sourceCounts": {
+        "partnerQuestion": 1,
+        "answer": 1
+      },
+      "note": "Short duration example, not a full guided dialogue.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s4",
+      "title": "Your work with the web",
+      "kind": "personal_transfer",
+      "issues": [],
+      "sourceCounts": {
+        "prompts": 5
+      },
+      "note": "Bug, accessibility and review have a workplace use; vocabulary support is present.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s51",
+      "title": "I fixed it or I’ll fix it?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Past action versus commitment changes meaning.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s52",
+      "title": "Thirteen or thirty?",
+      "kind": "pronunciation",
+      "issues": [],
+      "sourceCounts": {
+        "choices": 2
+      },
+      "note": "Stress matters for pixel values; valid clips reused.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s6",
+      "title": "A bug before the launch (1/2)",
+      "kind": "dialogue_part",
+      "issues": ["FRONTEND-INSTRUCTION"],
+      "sourceCounts": {
+        "turns": 5,
+        "speakers": {
+          "Kim": 3,
+          "Ana": 2
+        }
+      },
+      "note": "First five of the same balanced ten-turn exchange. Shortened instruction; existing audio unchanged.",
+      "disposition": "private_patch"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s62",
+      "title": "A bug before the launch (2/2)",
+      "kind": "dialogue_continuation",
+      "issues": [],
+      "sourceCounts": {
+        "turns": 5,
+        "speakers": {
+          "Kim": 2,
+          "Ana": 3
+        }
+      },
+      "note": "Five-turn continuation completes ten turns, not a deficient standalone conversation.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s61",
+      "title": "Questions",
+      "kind": "comprehension",
+      "issues": [],
+      "sourceCounts": {
+        "questions": 4,
+        "models": 4
+      },
+      "note": "Follows both dialogue parts; facts and IDs preserved.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s7",
+      "title": "I’ve fixed it, I fixed it yesterday",
+      "kind": "grammar",
+      "issues": ["FRONTEND-ENGLISH"],
+      "sourceCounts": {
+        "rows": 4
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s8",
+      "title": "Your bug, with Ana",
+      "kind": "guided_roleplay_template",
+      "issues": ["FRONTEND-INTENT-FIRST"],
+      "sourceCounts": {
+        "turns": 8,
+        "speakers": {
+          "Ana_or_Teacher": 4,
+          "You": 4
+        }
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s9",
+      "title": "A message from Leo",
+      "kind": "listening_monologue",
+      "issues": ["LISTEN-FRONTEND"],
+      "sourceCounts": {
+        "turns": 1,
+        "speakers": {
+          "Leo": 1
+        }
+      },
+      "disposition": "private_patch"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s10",
+      "title": "Right or wrong?",
+      "kind": "correction",
+      "issues": [],
+      "sourceCounts": {
+        "items": 5
+      },
+      "note": "Useful tense/request/verb choice distinctions.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s11",
+      "title": "The interview",
+      "kind": "open_interview",
+      "issues": [],
+      "sourceCounts": {
+        "JunPrompts": 8,
+        "liveLearnerResponses": 8
+      },
+      "note": "Sustained open interview; do not add filler or regenerate valid Jun clips. Approved simulation format retained.",
+      "disposition": "retained_after_source_review"
+    },
+    {
+      "material": "Frontend",
+      "pageId": "s12",
+      "title": "Practice at home",
+      "kind": "homework",
+      "issues": ["FRONTEND-HOMEWORK"],
+      "sourceCounts": {
+        "independentTasks": 3
+      },
+      "disposition": "private_patch"
+    }
+  ],
+  "limits": [
+    "Source counts/density do not prove overflow or visual fit at any viewport; no QA was performed.",
+    "Complete conversations are counted across consecutive parts; functional mini examples and open roleplays are classified separately.",
+    "The three trials retain approved combined model/guided formats and short inline follow-up. If a separate comprehension page is required in trials too, root must split the composition; this patch does not claim that happened.",
+    "B101/B201 vocabulary currently has no imported V.* label recording/onPlay path. No additional audio requested per root instruction; recorded-label compliance is not claimed.",
+    "Latent shared useMaterialSpeech uses browser speechSynthesis. Assigned authored materials have no direct call; assigned trials discard shell speech and use recorded model/scene controls. Root owns shared legacy-TTS cleanup.",
+    "Header alpha evidence does not establish visual cutout quality. Root/images own approved replacement assets and bindings.",
+    "Negative local Student ID lookup is not a backend/production absence claim. Published A101 is preserved from coordinator confirmation.",
+    "No Claude original, Lab remote, production, Student write or provisioning performed."
+  ],
+  "rootReportedSubsequentChanges": {
+    "legacyTts": "Root reports shared speechSynthesis fallback removed after the inspected base; no new source read or runtime verification here.",
+    "canonicalVoiceMessage": "Root reports canonical default/demo migrated to third-listen; explicit lesson props retained in private patch.",
+    "otherFive": "Root owns A102/A103/A104/A105/A106 and later migrated three to canonical adapters; not included in this nine-material source review."
+  },
+  "finalSourceReviewRound": 34,
+  "finalRootDecisions": [
+    "Preserved all15 A101 user-authored conversation prompts; split into3 pages of5 with hints, instead of adopting private suggestion to show only3.",
+    "C101 expressions split4+4; B101/B201/C101 vocabulary clicks now play real recordings.",
+    "All3 trials separate full model dialogue from comprehension and use click-on-line translation.",
+    "TrialB2 adopts canonical SlidePage/LearningDialogue and controlled active page, keeping shared gesture hooks unchanged.",
+    "Shared vocabulary/phone defaults updated once in canonical components; no tests/playback/browser QA performed."
+  ]
+}

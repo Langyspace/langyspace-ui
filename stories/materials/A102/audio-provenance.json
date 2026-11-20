@@ -1,7 +1,7 @@
 {
   "provider": "elevenlabs",
   "sourceManifestSha256": "5937b4fce6502991267677dd17b6e1e8372fd87ed67505238c21b6de7fdb1f94",
-  "revision": "FINAL31",
+  "revision": "FINAL34-A102",
   "items": [
     {
       "id": "V.0",
@@ -744,6 +744,123 @@
       "synthesisInput": "Your phone number is nine eight four, two two one, five one seven. Is that right?",
       "phoneticIntent": "Read each digit individually, short pauses between groups 984, 221, 517.",
       "file": "assets/audio/C.4.mp3"
+    },
+    {
+      "id": "G.5",
+      "lesson": "A102",
+      "group": "guided-gaps",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "text": "Is that 362 409 518?",
+      "synthesisInput": "Is that three six two, four zero nine, five one eight?",
+      "phoneticIntent": "Read phone number digit by digit, short pauses between groups362,409,518;zero not oh.",
+      "textSha256": "5cc06400d78d55b47dee0c5ee3f63ac69d7f1e46f97e297add1ccaa5c621683a",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "Is that three six two, four zero nine, five one eight?",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "38b6ba8739604a62a7e5d78e018848ee92d47234e9c1657f4e42c69b146c8866",
+      "file": "assets/audio/G.5.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/a102-delta/assets/audio/G.5.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 4.365351,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 71096,
+      "sha256": "415e6713f3d8848318e2a171bf80adcbb43f46741acb7a5571c1c6610c551160",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "requestId": "8XHFs7PlHzPokMomh0y5",
+      "providerHeaders": {
+        "request-id": "8XHFs7PlHzPokMomh0y5",
+        "character-cost": "22",
+        "history-item-id": "KlXEawq7DYNd1Ayzzlzu"
+      },
+      "httpStatus": 200,
+      "generationElapsedSeconds": 1.142,
+      "cacheDisposition": "generated_missing",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow",
+      "generatedAt": "2026-11-20T11:25:36.465466+00:00"
+    },
+    {
+      "id": "G.6",
+      "lesson": "A102",
+      "group": "guided-gaps",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "text": "Yes, that’s right.",
+      "synthesisInput": "Yes, that's right.",
+      "phoneticIntent": "Read approved English response; typography-only apostrophe normalization.",
+      "textSha256": "f52b2e90ebea04656355e1d02c22b912ebd60b854dde41d34ef4e1933032d815",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "text": "Yes, that's right.",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "f615d323be81798aa5cae15ec68e0d15259320c0a5c083cb67263bd5bc6e7f21",
+      "file": "assets/audio/G.6.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/a102-delta/assets/audio/G.6.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.207438,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 20523,
+      "sha256": "e4428ebe0f097324b5818d42962bf41ae4b98b653a7b5e14fa791d6428a71de1",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "requestId": "qtcSZh3Tqhzqz3GnBvyw",
+      "providerHeaders": {
+        "request-id": "qtcSZh3Tqhzqz3GnBvyw",
+        "character-cost": "7",
+        "history-item-id": "z0HWPVfqGBhX2hcArp39"
+      },
+      "httpStatus": 200,
+      "generationElapsedSeconds": 0.467,
+      "cacheDisposition": "generated_missing",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow",
+      "generatedAt": "2026-11-20T11:25:36.934167+00:00"
     }
-  ]
+  ],
+  "deltaSource": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/a102-delta/manifest.json"
 }

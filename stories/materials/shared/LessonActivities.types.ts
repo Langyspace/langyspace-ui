@@ -32,6 +32,7 @@ export interface HomeworkActivityProps {
   message: string
 }
 export interface ListeningActivityProps {
+  audioSrc?: string
   contact?: string
   avatarUrl?: string
   message: string

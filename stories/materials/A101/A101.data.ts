@@ -44,6 +44,8 @@ export const order = [
   's10',
   's74',
   's15',
+  's151',
+  's152',
   's75',
   's13',
 ]
@@ -199,3 +201,21 @@ export function itemAt<T>(items: readonly T[], index: number): T {
     throw new Error(`A1.01 fixture index out of range: ${index}`)
   return item
 }
+
+export const conversationAnswers = [
+  'My name is … What’s your name?',
+  'Nice to meet you too!',
+  'Yes, I am. / No, I’m not.',
+  'Yes, I am. / No, I’m not.',
+  'I’m …, thanks. And you?',
+  'Yes, she is. / No, she isn’t. / I don’t know.',
+  'Yes, he is. / No, he isn’t. / I don’t know.',
+  'Yes, they are. / No, they aren’t. They’re from …',
+  'Yes, I am. / No, I’m not. I’m from …',
+  'I’m from … What about you?',
+  'My mother is … and my father is …',
+  'He’s/She’s … years old.',
+  'I’m … years old. / I’m …',
+  'My pet is a … / I don’t have a pet.',
+  'Yes, he/she is. / I don’t have a pet.',
+] as const

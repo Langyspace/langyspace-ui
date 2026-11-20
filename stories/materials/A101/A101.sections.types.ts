@@ -21,3 +21,7 @@ export interface TranslatedTextProps {
 export interface VerbPhraseProps {
   text: string
 }
+
+export interface ConversationSectionProps {
+  part?: number
+}

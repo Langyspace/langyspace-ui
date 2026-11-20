@@ -1,3 +1,4 @@
+import { PromptExercise } from '../shared/LessonExercises'
 import { Fragment, useState } from 'react'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationMode } from '../shared/GuidedConversation.types'
@@ -100,33 +101,31 @@ export function ListenTalkSection({
   const [translated, setTranslated] = useState<string[]>([])
   return (
     <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
-      <T.Columns>
-        <LearningDialogue
-          density="regular"
-          lines={content.p3.lines.map((l, i) => ({
-            id: String(i),
-            speaker: l.who === 'kim' ? 'Kim' : 'Ana',
-            avatarUrl: l.who === 'kim' ? kim : ana,
-            side: l.who === 'kim' ? 'start' : 'end',
-            content: l.en,
-            translation: l.g,
-          }))}
-          translatedIds={translated}
-          onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
-        />
-        <T.Support>
-          <T.SupportTitle>In the dialogue</T.SupportTitle>
-          {content.p3.your.map(([question, hint]) => (
-            <Fragment key={question}>
-              <p>{question}</p>
-              <T.Help context={question}>
-                <p>{hint}</p>
-              </T.Help>
-            </Fragment>
-          ))}
-        </T.Support>
-      </T.Columns>
+      <LearningDialogue
+        density="compact"
+        lines={content.p3.lines.map((l, i) => ({
+          id: String(i),
+          speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+          avatarUrl: l.who === 'kim' ? kim : ana,
+          side: l.who === 'kim' ? 'start' : 'end',
+          content: l.en,
+          translation: l.g,
+        }))}
+        translatedIds={translated}
+        onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
+      />
     </GuidedConversation>
+  )
+}
+export function ComprehensionSection() {
+  return (
+    <PromptExercise
+      items={content.p3.your.map(([prompt = '', answer = ''], i) => ({
+        id: String(i),
+        prompt,
+        answer,
+      }))}
+    />
   )
 }
 export function PreferenceSection({
@@ -169,37 +168,14 @@ export function PreferenceSection({
   )
 }
 export function ConversationSection() {
-  const [topics, setTopics] = useState<string[]>([])
   return (
-    <S.Stack>
-      <T.Questions>
-        {content.p5.qs.map(([, q]) => (
-          <T.Talk
-            variant="lesson"
-            key={q}
-            aria-pressed={topics.includes(q ?? '')}
-            onClick={() => setTopics((old) => toggleId(old, q ?? ''))}
-          >
-            <b>{q}</b>
-            {topics.includes(q ?? '') ? (
-              <span aria-hidden="true">✓</span>
-            ) : null}
-          </T.Talk>
-        ))}
-      </T.Questions>
-      <T.Help context="Continue the conversation">
-        <T.Strip>
-          {content.p5.strip.map((t) => (
-            <span key={t}>{t}</span>
-          ))}
-        </T.Strip>
-        <SourceQuestions
-          items={content.p5.go.map(([, question]) => ({
-            question: question ?? '',
-          }))}
-        />
-      </T.Help>
-    </S.Stack>
+    <PromptExercise
+      items={content.p5.qs.map(([, prompt = ''], index) => ({
+        id: String(index),
+        prompt,
+        answer: 'Yes, I do. / No, I don’t. I like … And you?',
+      }))}
+    />
   )
 }
 export function TodaySection() {

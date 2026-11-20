@@ -164,6 +164,7 @@ export function ListeningSection({ active }: { active: boolean }) {
           timestamp: '19:15',
         }}
         active={active}
+        transcriptReveal="third-listen"
         labels={{
           play: 'Play Leo’s message',
           pause: 'Pause',
@@ -171,7 +172,7 @@ export function ListeningSection({ active }: { active: boolean }) {
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden: 'The transcription appears on the second listen.',
+          transcriptHidden: 'The transcript appears on the third listen.',
           audioUnavailable: 'Audio unavailable',
           audioError: 'Could not play the message. Try again.',
           retry: 'Try again',
@@ -207,7 +208,10 @@ export function ListeningSection({ active }: { active: boolean }) {
         footer={
           <S.Dark>
             <strong>Now you</strong>
-            <p>Congratulate Leo, react to the eleven places and suggest one idea for the party.</p>
+            <p>
+              Congratulate Leo, react to the eleven places and suggest one idea
+              for the party.
+            </p>
             <S.Row>
               <Button
                 variant="inverse"
@@ -219,7 +223,10 @@ export function ListeningSection({ active }: { active: boolean }) {
               </Button>
             </S.Row>
             {support ? (
-              <p>Congratulations, Leo! · Eleven places! · Why don’t you …? · Call me!</p>
+              <p>
+                Congratulations, Leo! · Eleven places! · Why don’t you …? · Call
+                me!
+              </p>
             ) : null}
             <S.Hint>I mean = quer dizer</S.Hint>
           </S.Dark>

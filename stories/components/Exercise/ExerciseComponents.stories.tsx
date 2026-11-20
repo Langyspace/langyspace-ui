@@ -130,11 +130,7 @@ function ScenesPreview({ regular = false }: { regular?: boolean }) {
         density={regular ? 'regular' : 'compact'}
         revealedIds={revealed}
         onReveal={(id) =>
-          setRevealed((old) =>
-            old.includes(id)
-              ? old.filter((value) => value !== id)
-              : [...old, id],
-          )
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
         }
       />
     </Styled.Preview>
@@ -164,11 +160,7 @@ function TooltipVocabularyPreview() {
         revealVariant="tooltip"
         revealedIds={revealed}
         onReveal={(id) =>
-          setRevealed((old) =>
-            old.includes(id)
-              ? old.filter((value) => value !== id)
-              : [...old, id],
-          )
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
         }
       />
     </Styled.Preview>

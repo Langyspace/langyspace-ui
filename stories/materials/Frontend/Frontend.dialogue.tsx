@@ -58,24 +58,23 @@ export function Grammar({ media }: AudioProps) {
     <S.GrammarColumns>
       <S.Stack>
         <S.Explanation>
-          <h3>Agora ou com data</h3>
+          <h3>Now or a finished past time?</h3>
           <p>
-            <b>I’ve + particípio</b> diz o que está feito e vale agora, sem
-            dizer quando: I’ve fixed it. Com <b>yet</b>, o que ainda não: I
-            haven’t deployed it yet. Com <b>for</b> (há) e <b>since</b> (desde),
-            uma coisa que começou e continua até hoje. Quando você diz quando
-            (yesterday, last year, in 2023), use o passado:{' '}
+            <b>I’ve fixed it.</b> Focus on the result now. <b>Yet</b> marks
+            unfinished work: I haven’t deployed it yet.
+          </p>
+          <p>
+            Use <b>for</b> or <b>since</b> for something that continues now.
+            With a finished past time, use the past simple:{' '}
             <b>I fixed it yesterday.</b>
           </p>
         </S.Explanation>
         {all ? (
           <S.Explanation>
-            <h3>Dois cuidados</h3>
+            <h3>Duration or a finished time?</h3>
             <p>
-              “Trabalho com React há dois anos” é{' '}
-              <b>I’ve worked with React for two years</b> (e não I work with
-              React since two years). E, com data, sem I’ve:{' '}
-              <b>I fixed it yesterday</b> (e não I’ve fixed it yesterday).
+              <b>I’ve worked with React for two years.</b> The work continues
+              now. <b>I fixed it yesterday.</b> The finished past time is given.
             </p>
           </S.Explanation>
         ) : null}
@@ -83,7 +82,7 @@ export function Grammar({ media }: AudioProps) {
       <S.Stack>
         <GrammarTable
           title="Present perfect"
-          columns={{ subject: 'Para quê', verb: 'Forma', example: 'Exemplo' }}
+          columns={{ subject: 'Focus', verb: 'Form', example: 'Example' }}
           hiddenAnswers
           revealedIds={revealed}
           rows={content.grammar.map(
@@ -101,7 +100,7 @@ export function Grammar({ media }: AudioProps) {
             media.play([id])
           }}
           onPlay={(id) => media.play([id])}
-          revealLabel="Mostrar a forma e o exemplo"
+          revealLabel="Show the form and example"
         />
         {all ? (
           <S.Now>

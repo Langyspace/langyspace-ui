@@ -28,7 +28,7 @@ export interface VocabularyGridProps extends Omit<
   onPlay?: (id: string) => void
   showAll?: boolean
   showInitial?: boolean
-  /** Disable for teacher-led guessing: pointing/focusing alone will not reveal the answer. */
+  /** Defaults to click-driven reveal. Opt into hover only for a deliberate preview variation. */
   revealOnHover?: boolean
   /** Contextual scenes fill the card; isolated illustrations retain their existing framing. */
   imageVariant?: 'isolated' | 'scene'

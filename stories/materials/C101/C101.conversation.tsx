@@ -119,9 +119,6 @@ const listeningTheme = withVoiceMessageLayout({
 export function Listening({ active }: { active: boolean }) {
   const [answers, setAnswers] = useState<Record<string, string>>()
   const [support, setSupport] = useState(false)
-  const all = content.listeningQuestions.every(
-    (q, i) => answers?.[i] === String(q.a),
-  )
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
@@ -133,6 +130,7 @@ export function Listening({ active }: { active: boolean }) {
           timestamp: '16:20',
         }}
         active={active}
+        transcriptReveal="third-listen"
         questions={content.listeningQuestions.map((q, i) => ({
           id: String(i),
           prompt: q.q,
@@ -155,15 +153,13 @@ export function Listening({ active }: { active: boolean }) {
           })),
         }))}
         onAnswer={(id, value) => setAnswers((old) => ({ ...old, [id]: value }))}
-        replayActionLabel={all ? 'Listen again and check' : undefined}
-        transcriptReveal="manual-after-replay"
         labels={{
           play: 'Play Raj’s message',
           pause: 'Pause',
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden: 'Listen again before revealing the transcript.',
+          transcriptHidden: 'The transcript appears on the third listen.',
           questions: 'Did Raj say this?',
           correct: 'Correct',
           incorrect: 'Try again',

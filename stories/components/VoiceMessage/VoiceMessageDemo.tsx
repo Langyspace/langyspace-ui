@@ -71,7 +71,7 @@ export function VoiceMessageDeck() {
             <SlidePage
               width="standard"
               title="Listening Practice"
-              instruction="Ouça o áudio da Kim e responda."
+              instruction="Listen to Kim and answer the questions."
             >
               <VoiceMessageDemo active={pageId === 'listening'} />
             </SlidePage>
@@ -83,7 +83,7 @@ export function VoiceMessageDeck() {
           content: (
             <SlidePage
               title="Let’s talk"
-              instruction="Responda sobre você e devolva a pergunta: And you?"
+              instruction="Answer, then ask: And you?"
             />
           ),
         },

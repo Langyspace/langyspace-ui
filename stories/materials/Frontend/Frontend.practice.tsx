@@ -1,3 +1,4 @@
+import { PromptExercise } from '../shared/LessonExercises'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -10,17 +11,13 @@ import type { AudioProps, IndexedAudioProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function Questions({ items }: { items: readonly string[][] }) {
   return (
-    <S.Questions>
-      {items.map(([q, hint], i) => (
-        <S.Question key={q}>
-          <S.Number>{i + 1}</S.Number>
-          <div>
-            {q}
-            {hint ? <S.Hint>{hint}</S.Hint> : null}
-          </div>
-        </S.Question>
-      ))}
-    </S.Questions>
+    <PromptExercise
+      items={items.map(([prompt = '', answer = ''], index) => ({
+        id: String(index),
+        prompt,
+        answer,
+      }))}
+    />
   )
 }
 export function Vocabulary({ media }: AudioProps) {
@@ -29,7 +26,6 @@ export function Vocabulary({ media }: AudioProps) {
     [hints, setHints] = useState(false)
   return (
     <S.Stack>
-      <S.QuestionTitle>What’s this?</S.QuestionTitle>
       <VocabularyGrid
         items={vocabulary}
         columns={4}
@@ -39,7 +35,7 @@ export function Vocabulary({ media }: AudioProps) {
         showInitial={hints}
         revealVariant="tooltip"
         onReveal={(id) => {
-          setRevealed((old) => toggle(old, id))
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
         }}
         onPlay={(id) => media.play([id])}
       />
@@ -68,7 +64,6 @@ export function MiniVocabulary() {
 export function WarmUp({ index, media }: IndexedAudioProps) {
   const item = content.warmUps[index]!,
     [attempts, setAttempts] = useState<number[]>([]),
-    [open, setOpen] = useState(!item.hide),
     done = attempts.includes(item.a)
   const artwork = item.ak ? (
     <S.Stack>
@@ -115,48 +110,32 @@ export function WarmUp({ index, media }: IndexedAudioProps) {
       <S.Stack>
         <S.QuestionTitle>{item.q}</S.QuestionTitle>
         <S.Hint>{item.tr}</S.Hint>
-        {open ? (
-          item.o.map((option, i) => (
-            <QuizOption
-              key={option}
-              letter={String.fromCharCode(65 + i)}
-              density="compact"
-              state={
-                attempts.includes(i)
-                  ? i === item.a
-                    ? 'correct'
-                    : 'wrong'
-                  : 'default'
-              }
-              disabled={done}
-              aria-pressed={attempts.includes(i)}
-              onClick={() => {
-                setAttempts((old) => [...old, i])
-                if (i === item.a) media.play([item.id])
-              }}
-            >
-              {option}
-            </QuizOption>
-          ))
-        ) : (
-          <Button variant="secondary" onClick={() => setOpen(true)}>
-            Show options
-          </Button>
-        )}
-        {attempts.length && !done ? (
-          <S.Hint role="status">
-            {item.why[String(attempts.at(-1)) as keyof typeof item.why]}
-          </S.Hint>
-        ) : null}
-        {done ? (
-          <S.Now role="status">
-            <b>Now you</b>
-            <p>
-              {item.now}
-              {item.sub ? <S.Hint>{item.sub}</S.Hint> : null}
-            </p>
-          </S.Now>
-        ) : null}
+        {item.o.map((option, i) => (
+          <QuizOption
+            key={option}
+            letter={String.fromCharCode(65 + i)}
+            density="compact"
+            state={
+              attempts.includes(i)
+                ? i === item.a
+                  ? 'correct'
+                  : 'wrong'
+                : 'default'
+            }
+            disabled={done}
+            aria-pressed={attempts.includes(i)}
+            onClick={() => {
+              setAttempts((old) => [...old, i])
+              if (i === item.a) media.play([item.id])
+            }}
+          >
+            {option}
+          </QuizOption>
+        ))}
+        <PromptExercise
+          numbered={false}
+          items={[{ id: 'followup', prompt: 'Now you', answer: item.now }]}
+        />
       </S.Stack>
     </ExercisePanel>
   )

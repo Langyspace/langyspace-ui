@@ -95,9 +95,6 @@ const listeningTheme = withVoiceMessageLayout({
 export function ListeningSection({ active }: ListeningProps) {
   const [attempts, setAttempts] = useState<Record<string, string[]>>({}),
     [support, setSupport] = useState(false)
-  const all = content.listeningStatements.every((q) =>
-    (attempts[q.id] ?? []).includes(q.yes ? 'yes' : 'no'),
-  )
   return (
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
@@ -114,14 +111,14 @@ export function ListeningSection({ active }: ListeningProps) {
           timestamp: content.listening.voiceTimestamp,
         }}
         active={active}
-        replayActionLabel={all ? 'Listen again and check' : undefined}
+        transcriptReveal="third-listen"
         labels={{
           play: 'Play Raj’s message',
           pause: 'Pause',
           replay: 'Listen again',
           speed: 'Playback speed',
           transcript: 'Transcription',
-          transcriptHidden: 'Transcript appears on the second listen.',
+          transcriptHidden: 'The transcript appears on the third listen.',
           audioError: 'Audio unavailable. Try again.',
           retry: 'Try again',
           questions: 'Did Raj say this?',
@@ -175,8 +172,8 @@ export function ListeningSection({ active }: ListeningProps) {
             </S.Row>
             {support ? (
               <p>
-                He said they’d been waiting … · He wasn’t angry, because … ·
-                Sarah thought …, but Raj thought …
+                He said they’d been waiting … · He sounded … because … · Sarah
+                thought …
               </p>
             ) : null}
           </S.Dark>

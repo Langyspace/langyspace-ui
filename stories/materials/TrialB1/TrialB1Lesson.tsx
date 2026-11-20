@@ -1,3 +1,4 @@
+import { PromptExercise } from '../shared/LessonExercises'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
 import { guidedConversation } from './TrialB1.guided'
@@ -57,8 +58,7 @@ function Activity({
   const audio = useSceneAudio(active && page.kind === 'scene', sceneClips)
   const [selected, setSelected] = useState<string>()
   const [visited, setVisited] = useState<string[]>([])
-  const [translated, setTranslated] = useState(false)
-  const [learner, setLearner] = useState('ana')
+  const [translated, setTranslated] = useState<string[]>([])
   const [phrases, setPhrases] = useState<string[]>([])
   if (page.kind === 'greeting')
     return (
@@ -106,44 +106,35 @@ function Activity({
     return (
       <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
         <S.Stack>
-          <S.Tools>
-            <Button
-              variant="secondary"
-              aria-pressed={learner === 'kim'}
-              onClick={() =>
-                setLearner((who) => (who === 'ana' ? 'kim' : 'ana'))
-              }
-            >
-              You: {learner === 'ana' ? 'Ana' : 'Kim'} · Swap roles
-            </Button>
-            <Button
-              variant="secondary"
-              aria-expanded={translated}
-              onClick={() => setTranslated((open) => !open)}
-            >
-              {translated ? 'Hide translation' : 'Show translation'}
-            </Button>
-          </S.Tools>
           <S.Dialogue
             lines={page.lines.map((line, i) => ({
               id: String(i),
               speaker: line.who === 'ana' ? 'Ana' : 'Kim',
               avatarUrl: line.who === 'ana' ? anaUrl + '#ana' : kimUrl,
-              side:
-                line.who === learner ? ('end' as const) : ('start' as const),
+              side: line.who === 'kim' ? 'start' : 'end',
               content: line.en,
               translation: line.pt,
             }))}
-            translatedIds={
-              translated ? page.lines.map((_, i) => String(i)) : []
+            density="compact"
+            translatedIds={translated}
+            onTranslate={(id) =>
+              setTranslated((ids) =>
+                ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id],
+              )
             }
           />
-          <S.Stack>
-            <S.Heading>{page.followup}</S.Heading>
-            <Support lines={page.support} />
-          </S.Stack>
         </S.Stack>
       </GuidedConversation>
+    )
+  if (page.kind === 'questions')
+    return (
+      <PromptExercise
+        items={page.questions.map((item, i) => ({
+          id: String(i),
+          prompt: item.q,
+          answer: item.answer,
+        }))}
+      />
     )
   if (page.kind === 'choice')
     return (
@@ -233,7 +224,8 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
                   {
                     greeting: 'Warm up',
                     scene: 'Picture talk',
-                    dialogue: 'Dialogue',
+                    dialogue: 'Guided conversation',
+                    questions: 'Guided conversation',
                     choice: 'Preferences',
                     story: 'Conversation',
                     review: 'Review',
@@ -256,7 +248,7 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
                 }
                 instruction={
                   page.kind === 'dialogue'
-                    ? 'Listen, respond and keep the conversation going.'
+                    ? 'Listen, then read with your teacher.'
                     : page.subtitle
                 }
               >

@@ -5,7 +5,6 @@ import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
-import { LessonHomework } from '../shared/LessonHomework'
 import { useLessonPage } from '../shared/useLessonPage'
 import {
   Vocabulary,
@@ -17,20 +16,10 @@ import {
 import { Dialogue, Comprehension, Grammar } from './Frontend.dialogue'
 import { YourVersion, Listening, Interview } from './Frontend.conversation'
 import { useFrontendAudio } from './useFrontendAudio'
-import {
-  order,
-  content,
-  image,
-  review,
-  yourWork,
-  homework,
-} from './Frontend.data'
+import { order, content, review, yourWork, homework } from './Frontend.data'
 import type { FrontendLessonProps } from './Frontend.types'
 import * as S from './Frontend.styles'
-export function FrontendLesson({
-  initialPageId,
-  studentPortalOrigin,
-}: FrontendLessonProps) {
+export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
   const notePopup = useLessonNotesPopup('langy-notes:tema-frontend')
   const [pageId, setPageId] = useLessonPage(
       initialPageId,
@@ -111,14 +100,12 @@ export function FrontendLesson({
       eyebrow = 'Dialogue'
       instruction = index
         ? 'The talk goes on. Listen and read along.'
-        : 'Friday is the launch of a new shop page. Kim, a frontend developer, talks with Ana, the designer. Listen and read along.'
+        : 'Listen to Kim and Ana plan a fix before Friday’s launch.'
       tools = dialogueTool(index)
       element = (
         <S.Stack>
           {!index ? (
-            <S.Hint>
-              launch = lançamento · Clique numa fala para ver a tradução.
-            </S.Hint>
+            <S.Hint>Select a line to read its translation.</S.Hint>
           ) : null}
           <Dialogue index={index} media={media} />
         </S.Stack>
@@ -160,16 +147,16 @@ export function FrontendLesson({
     } else {
       title = 'Practice at home'
       eyebrow = 'Homework'
-      instruction =
-        'Your three tasks on the platform. Your teacher sends the links in the chat.'
+      instruction = 'Practise offline and bring an example to your next class.'
       element = (
-        <LessonHomework
-          lesson="B1 Tech · Frontend"
-          items={homework}
-          image={image('v_bt')}
-          images={['v_bt', 'x_bulb', 'x_speech'].map(image)}
-          studentPortalOrigin={studentPortalOrigin}
-        />
+        <S.Stack>
+          {homework.map(([task, description]) => (
+            <S.Surface key={task}>
+              <b>{task}</b>
+              <p>{description}</p>
+            </S.Surface>
+          ))}
+        </S.Stack>
       )
     }
     return {

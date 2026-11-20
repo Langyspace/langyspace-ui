@@ -29,7 +29,11 @@ export function VocabularyExercise({ items, note }: VocabularyExerciseProps) {
       <VocabularyGrid
         items={items}
         revealedIds={revealed}
-        onReveal={(id) => setRevealed((ids) => toggle(ids, id))}
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
+        revealOnHover={false}
+        imageFit="contain"
         onPlay={(id) => speak(items.find((item) => item.id === id)?.word ?? '')}
         showAll={all}
         showInitial={hint}
@@ -93,6 +97,7 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
   return (
     <Common.Stack>
       <LearningDialogue
+        density="compact"
         lines={lines.map((line) => ({
           id: line.id,
           speaker: line.speaker,
@@ -162,7 +167,6 @@ export function GapExercise({ items, choices }: GapExerciseProps) {
           setWrong(undefined)
         } else setWrong(choice)
       }}
-      status={!active ? 'Done!' : wrong ? 'Try again.' : undefined}
     />
   )
 }

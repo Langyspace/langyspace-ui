@@ -1,0 +1,612 @@
+{
+  "taskId": "FINAL34-C101-VOCABULARY",
+  "revision": "FINAL34-vocabulary",
+  "authorityThread": "01a1ef87-bfee-7121-a7fa-e409b2bd9a7b",
+  "frozenAt": "2026-11-20T11:48:39.801629+00:00",
+  "provider": "elevenlabs",
+  "voices": {
+    "ana": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica - Playful, Bright, Warm"
+    },
+    "kim": {
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "name": "Sarah Explains"
+    }
+  },
+  "config": {
+    "modelId": "eleven_multilingual_v2",
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.1,
+      "use_speaker_boost": true,
+      "speed": 0.92
+    },
+    "languageCode": "en",
+    "outputFormat": "mp3_44100_128"
+  },
+  "scope": "Only23literalcurrentlabels(B1018,B2017,C1018),KimSarahExplains. No otherlesson audits, no priorIDs altered, no dialogue changes, no tests/playbackQA/browser/repo/cloud/publication. Root binds on reveal-click.",
+  "material": "C101",
+  "sourceArrays": [
+    {
+      "material": "C101",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json",
+      "sourceFileSha256AtFreeze": "27ebd643e624004e5ceeeb4124108e2cde02b9751136f4e3f305514e5845e5bc",
+      "arrayField": "expressions",
+      "sourceArraySha256": "d761536d0fa862e89bbea803338d2769a1c4d359f4f29fdc4f89bca20b25f5c1",
+      "sourceArray": [
+        {
+          "s": "Short emails can {come across as} cold.",
+          "e": "come across as",
+          "m": "seem to other people",
+          "t": "passar a impressão de, soar como",
+          "i": 0
+        },
+        {
+          "s": "Ten slides in two minutes? The end was {a bit rushed}.",
+          "e": "a bit rushed",
+          "m": "a little too fast",
+          "t": "um pouco corrido, apressado",
+          "i": 1
+        },
+        {
+          "s": "The food was cold. {To be fair}, the restaurant was very busy.",
+          "e": "To be fair",
+          "m": "let’s be honest about the other side too",
+          "t": "para ser justa, verdade seja dita",
+          "i": 2
+        },
+        {
+          "s": "Ana is a team leader now. There’s {a learning curve}.",
+          "e": "a learning curve",
+          "m": "time to learn something new",
+          "t": "uma fase de aprendizado",
+          "i": 3
+        },
+        {
+          "s": "Raj listened to the feedback and said: “I’ll {take it on board}.”",
+          "e": "take it on board",
+          "m": "I’ll think about it and use it",
+          "t": "vou levar isso em conta",
+          "i": 4
+        },
+        {
+          "s": "{It’s worth practicing} before a big meeting.",
+          "e": "It’s worth practicing",
+          "m": "it’s a good idea; it helps",
+          "t": "vale a pena praticar",
+          "i": 5
+        },
+        {
+          "s": "Good feedback is {constructive}: it says what to do next.",
+          "e": "constructive",
+          "m": "it helps you get better",
+          "t": "construtivo",
+          "i": 6
+        },
+        {
+          "s": "“Your slides were bad.” That sounds {harsh}.",
+          "e": "harsh",
+          "m": "too hard, not kind",
+          "t": "duro, ríspido",
+          "i": 7
+        }
+      ],
+      "count": 8
+    }
+  ],
+  "items": [
+    {
+      "material": "C101",
+      "id": "E.0",
+      "qualifiedId": "C101:E.0",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "come across as",
+      "synthesisInput": "come across as",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "come across as",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "a08d5614c19fb273f003ce4358288ebbd1668b9209b950c85ca199a78f00739e",
+      "textSha256": "132099617851449ea101a42e5f4dc6dd98fb55b5a55b2936d8c58d087fb65ae7",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/0/e",
+      "file": "assets/vocabulary/E.0.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.0.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.671837,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 27628,
+      "sha256": "018d579d1b0c3a7d027d04f56cc877369e9d26d7fbc3e07d46a87bff3ae4d215",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "53IMkRuxcZfuDXu9uJDl",
+        "character-cost": "6",
+        "history-item-id": "rSfqydKcshndhiXtmamm"
+      },
+      "requestId": "53IMkRuxcZfuDXu9uJDl",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.488,
+      "generatedAt": "2026-11-20T11:48:38.418096+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.1",
+      "qualifiedId": "C101:E.1",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a bit rushed",
+      "synthesisInput": "a bit rushed",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a bit rushed",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "033b3cb2f07502667c686d8f841b71b26f16d256a927aff40b1c2dd406929864",
+      "textSha256": "ccf279db0d7206b6780781542ebb994fd54fb6f217e7783ad7b47f00d040b891",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/1/e",
+      "file": "assets/vocabulary/E.1.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.1.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.253878,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 20941,
+      "sha256": "a4c26d1494fc74e3a360d1f0ed799c184fa04fa9ccc96d65474058c841e30730",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "Zk3e7UV0jUcwAM4u75Fa",
+        "character-cost": "5",
+        "history-item-id": "uX0XnqDDqX4mniPWBnO0"
+      },
+      "requestId": "Zk3e7UV0jUcwAM4u75Fa",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.461,
+      "generatedAt": "2026-11-20T11:48:38.395385+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.2",
+      "qualifiedId": "C101:E.2",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "To be fair",
+      "synthesisInput": "To be fair",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "To be fair",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "a9d38964c8188a03163df8ae0850dd1f4958f81814c827b722e85166c5bcda15",
+      "textSha256": "330c192dbc43a45bb11a0585f43c3a88687e3bc5f7b29cb1d0ea6827ec7da50d",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/2/e",
+      "file": "assets/vocabulary/E.2.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.2.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.068118,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 18015,
+      "sha256": "9ddb8ba88bbab2cd2857beddce3d1541d4cc20b424a0314adb8abecadbd42b4e",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "F3rPvN4SZJACF95yOGYo",
+        "character-cost": "4",
+        "history-item-id": "scVh8UWiLTZe1WUfVJH6"
+      },
+      "requestId": "F3rPvN4SZJACF95yOGYo",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.422,
+      "generatedAt": "2026-11-20T11:48:38.819252+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.3",
+      "qualifiedId": "C101:E.3",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "a learning curve",
+      "synthesisInput": "a learning curve",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "a learning curve",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "0bc351246b52815ece5e0496e8d32746eabd93f2b8ae0e6fa3e54e0aa11df2a0",
+      "textSha256": "9a49148dbf609d47c6ca5024e5a26df7b0aafdd03b18a43c3df8779194d39472",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/3/e",
+      "file": "assets/vocabulary/E.3.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.3.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.439637,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 24284,
+      "sha256": "6315a76939bc56a8c4e8da0309d93bf207be66165ca69bd40d4432f078d94aaf",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "TkWU9eIxj0mQYt6RHQg2",
+        "character-cost": "6",
+        "history-item-id": "IOfty8dJW8LUM0mCW3zJ"
+      },
+      "requestId": "TkWU9eIxj0mQYt6RHQg2",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.435,
+      "generatedAt": "2026-11-20T11:48:38.854605+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.4",
+      "qualifiedId": "C101:E.4",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "take it on board",
+      "synthesisInput": "take it on board",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "take it on board",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "bdad39c59852ef112d0fa0cb454c09281b0efed85efea502bc3742a7c1fd0112",
+      "textSha256": "0a86aa8dbdc3ee9a76f8027742748eb33d5f5b714d2a424e98af1d2385e7c499",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/4/e",
+      "file": "assets/vocabulary/E.4.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.4.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.393197,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 23448,
+      "sha256": "2d9bd59a45c1c82d3721b9601231ecb9a48811c2675dc5322ef97e558378b530",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "8UnHT4r1Q1GZlC9MXy6x",
+        "character-cost": "6",
+        "history-item-id": "Cai8w1qJKT5IGq2Wl1ji"
+      },
+      "requestId": "8UnHT4r1Q1GZlC9MXy6x",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.456,
+      "generatedAt": "2026-11-20T11:48:39.280447+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.5",
+      "qualifiedId": "C101:E.5",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "It’s worth practicing",
+      "synthesisInput": "It's worth practicing",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "It's worth practicing",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "5f72c4bb9beb66e706955b30f4148e4bef3f3823c35c9378ce75de0a64010ebc",
+      "textSha256": "c91d0df52473f25ee69242e7d482b8d38d5e2b4ea2010b4ed1783f3755458319",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/5/e",
+      "file": "assets/vocabulary/E.5.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.5.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.718277,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 28464,
+      "sha256": "33423e8398d16ed269a953e0e28496d72833f6e5dc6a141f98114915288bc2c9",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "efZBvGE6M4UrqKlYwmkM",
+        "character-cost": "8",
+        "history-item-id": "7mzHIBbSArhUgSObeC5b"
+      },
+      "requestId": "efZBvGE6M4UrqKlYwmkM",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.465,
+      "generatedAt": "2026-11-20T11:48:39.320802+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.6",
+      "qualifiedId": "C101:E.6",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "constructive",
+      "synthesisInput": "constructive",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "constructive",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "175313c3b53021389ec269885682979b032695ed133bdedc205cd2d2faf368ef",
+      "textSha256": "521bdd8056bf0c57b8f6222f2a26923b196671d14be430a5b6cbbb856a6747f6",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/6/e",
+      "file": "assets/vocabulary/E.6.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.6.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.486077,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 24702,
+      "sha256": "1f1f2dbf24225bc2643019e738608a4c198633fd9c6aa9397e8d749c3a5e9026",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "wkHQg991qPwDLl9HN365",
+        "character-cost": "5",
+        "history-item-id": "kXH012x4TIZw9FxBtnKI"
+      },
+      "requestId": "wkHQg991qPwDLl9HN365",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.516,
+      "generatedAt": "2026-11-20T11:48:39.798959+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    },
+    {
+      "material": "C101",
+      "id": "E.7",
+      "qualifiedId": "C101:E.7",
+      "group": "expression-label",
+      "speaker": "Kim",
+      "speakerKey": "kim",
+      "text": "harsh",
+      "synthesisInput": "harsh",
+      "textNormalization": "NFC and apostrophe typography only; original display words/case unchanged.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "text": "harsh",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "fcd9ff5917035d741457f20c757552d3c3940f4eb3b82ea221b91b86e9f09bfe",
+      "textSha256": "bd878fa2293de72e9c871463e1c2ef2964acb0ea282540c9d2f52fe32c6d18d1",
+      "sourcePointer": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/C101/C101.content.json#/expressions/7/e",
+      "file": "assets/vocabulary/E.7.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/vocabulary34/C101/assets/vocabulary/E.7.mp3",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 0.975238,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 16761,
+      "sha256": "dfaa357bdb6b3ba6cb11d0c1876664da41b8d70fa03969de364fde40415d29a3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "qDQuZycc5fYkAk58MBVj",
+        "character-cost": "2",
+        "history-item-id": "Wg0qdO0vApySrGjUQzHa"
+      },
+      "requestId": "qDQuZycc5fYkAk58MBVj",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.477,
+      "generatedAt": "2026-11-20T11:48:39.799886+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    }
+  ],
+  "requestSha256": "aa630f0d9d20480eefdfa971e4deb8d093cbb22a0afbae7d077b3e0dbf65a772",
+  "frozen": true,
+  "createdAt": "2026-11-20T11:48:37.928587+00:00",
+  "summary": {
+    "ids": 8,
+    "generated": 8,
+    "existingReused": 0,
+    "generationCalls": 8,
+    "retries": 0,
+    "failures": 0,
+    "providerCharacterCostHeaderSum": 42,
+    "costNote": "Raw provider header; not currency."
+  },
+  "review": {
+    "testsRun": false,
+    "playbackQA": false,
+    "browserUsed": false,
+    "otherMaterialAudits": false,
+    "sourceOrRepoWrites": false,
+    "cloudOrPublicationWrites": false,
+    "durationBasis": "ffprobe metadata collected during generation flow",
+    "finalReviewer": "user"
+  }
+}

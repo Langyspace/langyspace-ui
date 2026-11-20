@@ -1,3 +1,5 @@
+import { PromptExercise } from './LessonExercises'
+import type { SourceQuestionsProps } from './Lesson.types'
 import { toggleId } from './lessonState'
 import { useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
@@ -14,26 +16,15 @@ import type {
   CorrectionItem,
 } from './Lesson.types'
 import * as S from './Lesson.styles'
-export function SourceQuestions({
-  items,
-  compact = false,
-}: {
-  items: readonly { question: string; hint?: string }[]
-  compact?: boolean
-}) {
-  const Question = compact ? S.CompactQuestion : S.Question
+export function SourceQuestions({ items }: SourceQuestionsProps) {
   return (
-    <S.Questions>
-      {items.map((q, i) => (
-        <Question key={q.question}>
-          <S.Number>{i + 1}</S.Number>
-          <div>
-            {q.question}
-            {q.hint ? <S.Hint>{q.hint}</S.Hint> : null}
-          </div>
-        </Question>
-      ))}
-    </S.Questions>
+    <PromptExercise
+      items={items.map((item, index) => ({
+        id: String(index),
+        prompt: item.question,
+        answer: item.hint,
+      }))}
+    />
   )
 }
 export function PronunciationPractice({

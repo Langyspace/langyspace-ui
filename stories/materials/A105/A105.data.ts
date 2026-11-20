@@ -272,27 +272,16 @@ export const prompts = {
 }
 export const homework = [
   {
-    title: 'Flashcards · Fruit and vegetables',
-    description: 'Review the words from today’s lesson.',
-    url: 'https://student.langy.space/licoes?tab=flashcards&deck=deck-a1-05',
-    line: '1. Flashcards',
+    title: 'Vocabulary · Fruit and vegetables',
+    description:
+      'Say the twelve words. Choose three foods you like and three you don’t like.',
   },
   {
-    title: 'Shadowing · At the street market',
-    description: 'Listen and speak along with Ana.',
-    url: 'https://student.langy.space/licoes?tab=shadowing&item=a1-05',
-    line: '2. Shadowing',
-  },
-  {
-    title: 'Quiz · like and likes',
-    description: 'Practise talking about food preferences.',
-    url: 'https://student.langy.space/licoes?tab=quiz&item=a1-05',
-    line: '3. Quiz',
+    title: 'Speaking · Your market visit',
+    description:
+      'Record a short message: say what you like, what your family likes and what you want to buy.',
   },
 ] as const
-export const homeworkMessage =
-  'A1.05 · At the street market\n' +
-  homework.map((item) => `${item.line}: ${item.url}`).join('\n')
 export const pageOrder = [
   's1',
   's2',

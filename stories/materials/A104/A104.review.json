@@ -1,0 +1,598 @@
+{
+  "version": 34,
+  "code": "A1.04",
+  "title": "My day and our time",
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "prompts",
+      "title": "Your day",
+      "instruction": "Answer, then ask your teacher.",
+      "minutes": 2,
+      "eyebrow": "A1 LESSON 04 · Warm up",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "How are you today?",
+          "answer": "I’m …"
+        },
+        {
+          "id": "2",
+          "prompt": "Are you at home now?",
+          "answer": "Yes, I am. / No, I’m not."
+        },
+        {
+          "id": "3",
+          "prompt": "Are you a student?",
+          "answer": "Yes, I am. / No, I’m not. I’m a …"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "vocabulary",
+      "title": "Daily activities",
+      "instruction": "Look at the pictures. Guess the words.",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "V.0",
+          "word": "get up",
+          "translation": "levantar",
+          "imageUrl": "scene-getup",
+          "imageAlt": "A person getting out of bed."
+        },
+        {
+          "id": "V.1",
+          "word": "eat",
+          "translation": "comer",
+          "imageUrl": "scene-eat",
+          "imageAlt": "A person eating a meal."
+        },
+        {
+          "id": "V.2",
+          "word": "work",
+          "translation": "trabalhar",
+          "imageUrl": "scene-work",
+          "imageAlt": "A person working."
+        },
+        {
+          "id": "V.3",
+          "word": "study",
+          "translation": "estudar",
+          "imageUrl": "scene-study",
+          "imageAlt": "A person studying."
+        },
+        {
+          "id": "V.4",
+          "word": "go to the gym",
+          "translation": "ir à academia",
+          "imageUrl": "scene-gym",
+          "imageAlt": "A person exercising at the gym."
+        },
+        {
+          "id": "V.5",
+          "word": "sleep",
+          "translation": "dormir",
+          "imageUrl": "scene-sleep",
+          "imageAlt": "A person sleeping."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "kind": "words",
+      "title": "Days of the week",
+      "instruction": "How do you say these days in English?",
+      "minutes": 3,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "T.Monday",
+          "clue": "segunda",
+          "word": "Monday",
+          "example": "on Monday"
+        },
+        {
+          "id": "T.Tuesday",
+          "clue": "terça",
+          "word": "Tuesday",
+          "example": "on Tuesday"
+        },
+        {
+          "id": "T.Wednesday",
+          "clue": "quarta",
+          "word": "Wednesday",
+          "example": "on Wednesday"
+        },
+        {
+          "id": "T.Thursday",
+          "clue": "quinta",
+          "word": "Thursday",
+          "example": "on Thursday"
+        },
+        {
+          "id": "T.Friday",
+          "clue": "sexta",
+          "word": "Friday",
+          "example": "on Friday"
+        },
+        {
+          "id": "T.Saturday",
+          "clue": "sábado",
+          "word": "Saturday",
+          "example": "on Saturday"
+        },
+        {
+          "id": "T.Sunday",
+          "clue": "domingo",
+          "word": "Sunday",
+          "example": "on Sunday"
+        }
+      ]
+    },
+    {
+      "id": "s31",
+      "kind": "words",
+      "title": "Times of day",
+      "instruction": "Say the words, then click to check.",
+      "minutes": 3,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "T.morning",
+          "clue": "manhã",
+          "word": "morning",
+          "example": "in the morning"
+        },
+        {
+          "id": "T.evening",
+          "clue": "noite",
+          "word": "evening",
+          "example": "in the evening"
+        },
+        {
+          "id": "T.ten",
+          "clue": "10",
+          "word": "ten",
+          "example": "at ten"
+        },
+        {
+          "id": "T.eleven",
+          "clue": "11",
+          "word": "eleven",
+          "example": "at eleven"
+        },
+        {
+          "id": "T.twelve",
+          "clue": "12",
+          "word": "twelve",
+          "example": "at twelve"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "kind": "grammar",
+      "title": "At, on, in the",
+      "instruction": "Use at for times, on for days and in the for parts of the day.",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Time",
+          "verb": "at",
+          "example": "I get up at six."
+        },
+        {
+          "id": "1",
+          "subject": "Day",
+          "verb": "on",
+          "example": "I study on Monday."
+        },
+        {
+          "id": "2",
+          "subject": "Part of the day",
+          "verb": "in the",
+          "example": "I work in the morning."
+        }
+      ],
+      "note": "Say I work, I study and I get up. Say I’m free or I’m tired."
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "Are you free?",
+      "instruction": "Listen, then read with your teacher.",
+      "minutes": 4,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "What time do you get up?",
+          "translation": "A que horas você levanta?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "I always get up early, at six. I work in the morning.",
+          "translation": "Eu sempre levanto cedo, às seis. Eu trabalho de manhã."
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "And in the evening?",
+          "translation": "E à noite?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I study on Monday and Wednesday, after work.",
+          "translation": "Eu estudo na segunda e na quarta, depois do trabalho."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "I go to the gym on Tuesday at seven in the evening. Are you free?",
+          "translation": "Eu vou à academia na terça às sete da noite. Você está livre?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "Yes, I am. Great! See you on Tuesday.",
+          "translation": "Sim, estou. Ótimo! Até terça."
+        }
+      ]
+    },
+    {
+      "id": "s61",
+      "kind": "prompts",
+      "title": "Comprehension questions",
+      "instruction": "Answer the questions about the conversation.",
+      "minutes": 3,
+      "eyebrow": "Guided conversation",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "What time does Ana get up?",
+          "answer": "She gets up at six."
+        },
+        {
+          "id": "2",
+          "prompt": "Does Ana study on Wednesday?",
+          "answer": "Yes, she does."
+        },
+        {
+          "id": "3",
+          "prompt": "When do they go to the gym?",
+          "answer": "On Tuesday at seven in the evening."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "kind": "dialogue",
+      "title": "A plan for Saturday",
+      "instruction": "Say the missing words, then read with your teacher.",
+      "minutes": 4,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "G.1",
+          "speaker": "Kim",
+          "text": "What time do you get up?",
+          "translation": "A que horas você levanta?"
+        },
+        {
+          "id": "G.2",
+          "speaker": "Ana",
+          "text": "I get up at seven.",
+          "translation": "Eu levanto às sete.",
+          "parts": [
+            "I get up ",
+            {
+              "id": "A104.gap.1",
+              "answer": "at"
+            },
+            " seven."
+          ]
+        },
+        {
+          "id": "G.3",
+          "speaker": "Kim",
+          "text": "Do you work on Saturday?",
+          "translation": "Você trabalha no sábado?",
+          "parts": [
+            "Do you work ",
+            {
+              "id": "A104.gap.2",
+              "answer": "on"
+            },
+            " Saturday?"
+          ]
+        },
+        {
+          "id": "G.4",
+          "speaker": "Ana",
+          "text": "No, I don’t. I’m free on Saturday.",
+          "translation": "Não. Estou livre no sábado.",
+          "parts": [
+            "No, I don’t. I’m ",
+            {
+              "id": "A104.gap.3",
+              "answer": "free"
+            },
+            " on Saturday."
+          ]
+        },
+        {
+          "id": "G.5",
+          "speaker": "Kim",
+          "text": "Let’s go to the gym in the morning.",
+          "translation": "Vamos à academia de manhã.",
+          "parts": [
+            "Let’s go to the gym ",
+            {
+              "id": "A104.gap.4",
+              "answer": "in the"
+            },
+            " morning."
+          ]
+        },
+        {
+          "id": "G.6",
+          "speaker": "Ana",
+          "text": "Great! See you at ten.",
+          "translation": "Ótimo! Até as dez.",
+          "parts": [
+            "Gre",
+            {
+              "id": "A104.gap.5",
+              "answer": "at"
+            },
+            "! See you at ten."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s81",
+      "kind": "prompts",
+      "title": "About the plan",
+      "instruction": "Answer the questions about the conversation.",
+      "minutes": 2,
+      "eyebrow": "Guided conversation",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "What time does Ana get up?",
+          "answer": "She gets up at seven."
+        },
+        {
+          "id": "2",
+          "prompt": "Is Ana free on Saturday?",
+          "answer": "Yes, she is."
+        },
+        {
+          "id": "3",
+          "prompt": "What time do they go to the gym?",
+          "answer": "At ten in the morning."
+        }
+      ]
+    },
+    {
+      "id": "s82",
+      "kind": "prompts",
+      "title": "Personal questions",
+      "instruction": "Talk about your real routine.",
+      "minutes": 4,
+      "eyebrow": "Speaking",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "What time do you get up?",
+          "answer": "I get up at …"
+        },
+        {
+          "id": "2",
+          "prompt": "Do you work or study in the morning?",
+          "answer": "I work/study in the …"
+        },
+        {
+          "id": "3",
+          "prompt": "Are you free on Saturday?",
+          "answer": "Yes, I am. / No, I’m not. I’m free on …"
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "A message from Kim",
+      "instruction": "Listen and answer the questions.",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi! I work on Monday and Wednesday. I go to the gym every Tuesday and Thursday, in the evening. I never go in the morning. Sometimes I also go on Saturday. And you?",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "Does Kim work on Wednesday?",
+          "answer": "Yes, she does."
+        },
+        {
+          "id": "2",
+          "prompt": "When does Kim go to the gym?",
+          "answer": "Every Tuesday and Thursday in the evening. Sometimes on Saturday."
+        },
+        {
+          "id": "3",
+          "prompt": "Does Kim go to the gym in the morning?",
+          "answer": "No, she doesn’t."
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "prompts",
+      "title": "Your reply",
+      "instruction": "Tell Kim about your week.",
+      "minutes": 2,
+      "eyebrow": "Speaking",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "When do you work or study?",
+          "answer": "I work/study on …"
+        },
+        {
+          "id": "2",
+          "prompt": "When are you free?",
+          "answer": "I’m free on … in the …"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "kind": "prompts",
+      "title": "Say it correctly",
+      "instruction": "Correct the sentences.",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "I get up on seven.",
+          "answer": "I get up at seven."
+        },
+        {
+          "id": "2",
+          "prompt": "I study in Monday.",
+          "answer": "I study on Monday."
+        },
+        {
+          "id": "3",
+          "prompt": "I am work in the morning.",
+          "answer": "I work in the morning."
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "kind": "roleplay",
+      "title": "Find a time",
+      "instruction": "Agree on a day, an activity and a time.",
+      "minutes": 5,
+      "eyebrow": "Role play",
+      "image": {
+        "src": "scene-gym",
+        "alt": "An adult at the gym."
+      },
+      "steps": [
+        "Invite your teacher.",
+        "If the day is not good, suggest another day.",
+        "Agree on a time. Then swap roles."
+      ],
+      "lines": [
+        {
+          "id": "role.0",
+          "speaker": "Kim",
+          "text": "Are you free on Saturday?",
+          "cue": "Ask about a day.",
+          "hint": "Are you free on …?"
+        },
+        {
+          "id": "role.1",
+          "speaker": "Ana",
+          "text": "No, I’m not. What about Sunday?",
+          "cue": "Say no. Suggest a day.",
+          "hint": "No, I’m not. What about …?"
+        },
+        {
+          "id": "role.2",
+          "speaker": "Kim",
+          "text": "Yes, I am. Let’s go to the gym.",
+          "cue": "Suggest an activity.",
+          "hint": "Let’s …"
+        },
+        {
+          "id": "role.3",
+          "speaker": "Ana",
+          "text": "Great! What time?",
+          "cue": "Ask the time.",
+          "hint": "What …?"
+        },
+        {
+          "id": "role.4",
+          "speaker": "Kim",
+          "text": "At ten in the morning.",
+          "cue": "Give a time.",
+          "hint": "At … in the …"
+        },
+        {
+          "id": "role.5",
+          "speaker": "Ana",
+          "text": "See you on Sunday!",
+          "cue": "Confirm the plan.",
+          "hint": "See you on …"
+        }
+      ]
+    },
+    {
+      "id": "s111",
+      "kind": "prompts",
+      "title": "Let’s talk!",
+      "instruction": "Keep the conversation going. Ask “What about you?”",
+      "minutes": 2,
+      "eyebrow": "Speaking",
+      "items": [
+        {
+          "id": "1",
+          "prompt": "What do you do in the evening?",
+          "answer": "I … in the evening. What about you?"
+        },
+        {
+          "id": "2",
+          "prompt": "When do you study English?",
+          "answer": "I study English on … at …"
+        },
+        {
+          "id": "3",
+          "prompt": "Are you free tomorrow?",
+          "answer": "Yes, I am. / No, I’m not. What about …?"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise these two tasks.",
+      "minutes": 1,
+      "eyebrow": "Homework",
+      "tasks": [
+        {
+          "title": "Vocabulary",
+          "description": "Say six daily activities and the days of the week."
+        },
+        {
+          "title": "Speaking",
+          "description": "Describe your routine and invite your teacher to do an activity. Give a day and a time."
+        }
+      ]
+    }
+  ],
+  "planningNotes": {
+    "durationMinutes": 50,
+    "removed": [
+      "Three repeated picture-identification multiple-choice pages.",
+      "Two pronunciation drills without a separate conversation goal.",
+      "Large after-reveal grammar panels and role-play checklist.",
+      "Unprovisioned Student homework links."
+    ],
+    "provider": "ElevenLabs; prepared recordings only",
+    "homework": "Offline practice; no unprovisioned portal links"
+  }
+}

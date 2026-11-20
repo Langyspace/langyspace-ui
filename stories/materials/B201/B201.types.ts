@@ -7,3 +7,8 @@ export interface ListeningProps {
 export interface WordTableProps {
   grammar?: boolean
 }
+
+export interface VocabularySectionProps {
+  group?: number
+  active?: boolean
+}

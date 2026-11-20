@@ -112,11 +112,5 @@ export const swappedTurns = [
   },
 ]
 
-// Student supports these tab destinations. No Frontend activity records were provisioned by this adoption.
-export const homework = content.homework.map((row) =>
-  row.map((value, index) =>
-    index === 2
-      ? `https://student.langy.space/licoes?tab=${new URLSearchParams(value.split('?')[1]).get('tab')}`
-      : value,
-  ),
-)
+// Independent practice: no activity-specific Student destination is claimed.
+export const homework = content.homework

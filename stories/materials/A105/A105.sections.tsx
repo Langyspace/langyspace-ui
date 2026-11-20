@@ -6,7 +6,6 @@ import { GrammarTable } from '../../../src/components/InteractiveMaterial/Gramma
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import { PromptExercise } from '../shared/LessonExercises'
-import { HomeworkActivity } from '../shared/LessonActivities'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import {
   produce,
@@ -17,7 +16,6 @@ import {
   message,
   prompts,
   homework,
-  homeworkMessage,
 } from './A105.data'
 import { recordingUrl } from './A105.audio'
 import type { A105Speech } from './A105.types'
@@ -268,16 +266,15 @@ export function KimsList() {
   )
 }
 
-export function Homework({
-  studentPortalOrigin,
-}: {
-  studentPortalOrigin?: string
-}) {
+export function Homework() {
   return (
-    <HomeworkActivity
-      items={homework}
-      message={homeworkMessage}
-      studentPortalOrigin={studentPortalOrigin}
-    />
+    <Common.Stack>
+      {homework.map((task) => (
+        <Common.Surface key={task.title}>
+          <Common.Heading>{task.title}</Common.Heading>
+          <p>{task.description}</p>
+        </Common.Surface>
+      ))}
+    </Common.Stack>
   )
 }

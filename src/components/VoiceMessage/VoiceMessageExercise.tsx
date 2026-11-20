@@ -48,7 +48,7 @@ function VoiceMessageContent({
   footer,
   replyAction,
   replayActionLabel,
-  transcriptReveal = 'second-listen',
+  transcriptReveal = 'third-listen',
   labels: overrides,
   ...props
 }: VoiceMessageExerciseProps) {
@@ -66,7 +66,10 @@ function VoiceMessageContent({
     transcript: 'Transcrição',
     showTranscript: 'Mostrar transcrição',
     hideTranscript: 'Esconder transcrição',
-    transcriptHidden: 'Transcrição na segunda escuta',
+    transcriptHidden:
+      transcriptReveal === 'third-listen'
+        ? 'Transcrição na terceira escuta'
+        : 'Transcrição na segunda escuta',
     audioUnavailable: 'Áudio ainda não disponível.',
     audioError: 'Não foi possível reproduzir o áudio.',
     retry: 'Tentar novamente',

@@ -1,3 +1,7 @@
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { PromptExercise } from '../shared/LessonExercises'
+import { useLessonPage } from '../shared/useLessonPage'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
@@ -13,7 +17,6 @@ import { useSceneAudio } from '../shared/useSceneAudio'
 import laptopLabel from './assets/laptop-label.mp3'
 import anaAtWorkLabel from './assets/ana-at-work-label.mp3'
 import deskLabel from './assets/desk-label.mp3'
-import { CharacterAvatar } from '../shared/CharacterPortraits.styles'
 import { ana, kim } from '../shared/characterPortraits'
 import content from './TrialB2.content.json'
 import image from './assets/ana-working.webp'
@@ -113,32 +116,27 @@ function Preference({ index }: { index: number }) {
   )
 }
 function Conversation() {
-  const [selected, setSelected] = useState<number | null>(null)
   return (
-    <S.Stack>
-      {content.p5.questions.map((question, index) => (
-        <S.ConversationButton
-          key={question}
-          aria-pressed={selected === index}
-          onClick={() => setSelected(selected === index ? null : index)}
-        >
-          {question}
-          <span aria-hidden="true">{selected === index ? '✓' : ''}</span>
-        </S.ConversationButton>
-      ))}
-      <S.Support label="Hint: Keep it going" context="Keep it going">
-        <ul>
-          {content.p5.followUps.map((question) => (
-            <li key={question}>{question}</li>
-          ))}
-        </ul>
-      </S.Support>
-      <S.Support label="Hint: Go further" context="Go further">
-        <S.Prompt>{content.p5.further}</S.Prompt>
-      </S.Support>
-      <PhraseSupport phrases={content.p5.support} />
-      <Glossary entries={content.p5.glossary} />
-    </S.Stack>
+    <PromptExercise
+      items={[
+        {
+          id: '0',
+          prompt: 'How do you switch off at the end of the day?',
+          answer: 'For me, a good day is when … What about you?',
+        },
+        {
+          id: '1',
+          prompt:
+            'If you could change one thing about your routine, what would it be?',
+          answer: 'I’d rather … because … It depends on …',
+        },
+        {
+          id: '2',
+          prompt: 'What makes a healthy work-life balance possible?',
+          answer: 'What I value most is … For example, …',
+        },
+      ]}
+    />
   )
 }
 function PageBody({
@@ -149,6 +147,7 @@ function PageBody({
   GuidedConversationProps,
   'onModeChange'
 >) {
+  const [translated, setTranslated] = useState<string[]>([])
   if (id === 's1')
     return (
       <S.Stack>
@@ -168,29 +167,49 @@ function PageBody({
     return (
       <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
         <S.Stack>
-          <S.Dialogue>
-            {content.p3.lines.map((line, index) => (
-              <li key={index}>
-                <CharacterAvatar
-                  size="md"
-                  imageUrl={line.who === 'ana' ? ana : kim}
-                  initials={line.who === 'ana' ? 'An' : 'Ki'}
-                  aria-hidden="true"
-                />
-                <div>
-                  <b>{line.who === 'ana' ? 'Ana' : 'Kim'}</b>
-                  <p>{line.en}</p>
-                </div>
-              </li>
-            ))}
-          </S.Dialogue>
-          <Glossary entries={content.p3.glossary} />
-          <S.Panel>
-            <S.Prompt>{content.p3.question}</S.Prompt>
-            <PhraseSupport phrases={content.p3.support} />
-          </S.Panel>
+          <LearningDialogue
+            density="compact"
+            lines={content.p3.lines.map((line, i) => ({
+              id: String(i),
+              speaker: line.who === 'ana' ? 'Ana' : 'Kim',
+              avatarUrl: line.who === 'ana' ? ana : kim,
+              side: line.who === 'kim' ? 'start' : 'end',
+              content: line.en,
+              translation: line.g,
+            }))}
+            translatedIds={translated}
+            onTranslate={(id) =>
+              setTranslated((ids) =>
+                ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id],
+              )
+            }
+          />
         </S.Stack>
       </GuidedConversation>
+    )
+  if (id === 's31')
+    return (
+      <PromptExercise
+        items={[
+          {
+            id: 'office',
+            prompt: 'What does Ana value about the office?',
+            answer: 'The people: she learns from her team.',
+          },
+          {
+            id: 'home',
+            prompt: 'Why does Kim prefer working at home?',
+            answer:
+              'There is no commute or noise, and she can take a break when she wants.',
+          },
+          {
+            id: 'balance',
+            prompt: 'What do they both want from a good day?',
+            answer:
+              'To get things done and still have time for life outside work.',
+          },
+        ]}
+      />
     )
   if (id.startsWith('s4'))
     return <Preference index={Number(id.slice(-1)) - 1} />
@@ -206,7 +225,11 @@ function PageBody({
   )
 }
 function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
-  const [activeId, setActiveId] = useState(initialPageId ?? 's1')
+  const [activeId, setActiveId] = useLessonPage(
+    initialPageId,
+    'trial-b2',
+    content.pages.map((page) => page.id),
+  )
   const [modelActive, setModelActive] = useState(true)
 
   const notePopup = useLessonNotesPopup(
@@ -218,7 +241,7 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
       <MaterialSlideDeck
         label="B2 Trial · Work and life"
         previousPageLabel="Back"
-        pageId={initialPageId}
+        pageId={activeId}
         onPageChange={setActiveId}
         actions={
           <LessonNotesTrigger
@@ -233,57 +256,47 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
           id: page.id,
           label: page.title,
           content: (
-            <S.Page id={page.id}>
-              <S.Content>
-                <S.Activity>
-                  {
-                    (
-                      {
-                        s1: 'Warm up',
-                        s2: 'Picture talk',
-                        s3: 'Dialogue',
-                        s41: 'Preferences',
-                        s42: 'Preferences',
-                        s43: 'Preferences',
-                        s5: 'Conversation',
-                        s6: 'Review',
-                      } as Record<string, string>
-                    )[page.id]
-                  }
-                </S.Activity>
-                {page.id === 's1' ? (
-                  <S.Hero id={`${page.id}-title`}>
-                    Work and <em>life</em>
-                  </S.Hero>
-                ) : (
-                  <S.Title id={`${page.id}-title`}>
-                    {page.id === 's3' ? (
-                      <DialogueTitle
-                        title={page.title}
-                        action={
-                          <RecordedDialoguePlayback
-                            conversationId="TrialB2:s3"
-                            active={activeId === page.id && modelActive}
-                          />
-                        }
+            <SlidePage
+              width={page.id === 's2' ? 'expanded' : 'reading'}
+              density={page.id === 's3' ? 'compact' : 'regular'}
+              eyebrow={
+                page.id === 's1'
+                  ? 'Warm up'
+                  : page.id === 's2'
+                    ? 'Picture talk'
+                    : page.id === 's3' || page.id === 's31'
+                      ? 'Guided conversation'
+                      : page.id.startsWith('s4')
+                        ? 'Preferences'
+                        : 'Conversation'
+              }
+              title={
+                page.id === 's3' ? (
+                  <DialogueTitle
+                    title={page.title}
+                    action={
+                      <RecordedDialoguePlayback
+                        conversationId="TrialB2:s3"
+                        active={activeId === page.id && modelActive}
                       />
-                    ) : (
-                      page.title
-                    )}
-                  </S.Title>
-                )}
-                <S.Subtitle>
-                  {page.id === 's3'
-                    ? 'Listen, respond and develop each other’s ideas.'
-                    : page.subtitle}
-                </S.Subtitle>
-                <PageBody
-                  id={page.id}
-                  active={activeId === page.id}
-                  onModeChange={(mode) => setModelActive(mode === 'model')}
-                />
-              </S.Content>
-            </S.Page>
+                    }
+                  />
+                ) : (
+                  page.title
+                )
+              }
+              instruction={
+                page.id === 's3'
+                  ? 'Listen, then read with your teacher.'
+                  : page.subtitle
+              }
+            >
+              <PageBody
+                id={page.id}
+                active={activeId === page.id}
+                onModeChange={(mode) => setModelActive(mode === 'model')}
+              />
+            </SlidePage>
           ),
         }))}
         overlay={

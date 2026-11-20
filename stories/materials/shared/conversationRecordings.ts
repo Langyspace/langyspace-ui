@@ -1,3 +1,4 @@
+import trialA1Clip06 from '../TrialA1/assets/dialogue/06.mp3'
 import clip0 from '../TrialA1/assets/dialogue/01.mp3'
 import clip1 from '../TrialA1/assets/dialogue/02.mp3'
 import clip2 from '../TrialA1/assets/dialogue/03.mp3'
@@ -120,6 +121,16 @@ export const conversationRecordings: Readonly<
         voiceId: 'Nhs7eitvQWFTQBsf0yiT',
         durationSeconds: 1.811156,
         src: clip4,
+      },
+      {
+        id: 'trial-a1.dialogue.06',
+        text: 'I play soccer here with my friends.',
+        speaker: 'ana',
+        sha256:
+          'e6a975a847d662dfd902e8a70e58da2f772ca6a7924ddf4f29633734239dc16a',
+        voiceId: 'cgSgspJ2msm6clMCkdW9',
+        durationSeconds: 1.996916,
+        src: trialA1Clip06,
       },
     ],
   ),

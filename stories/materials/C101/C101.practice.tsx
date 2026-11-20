@@ -1,3 +1,7 @@
+import { PromptExercise } from '../shared/LessonExercises'
+import { useVocabularyAudio } from '../shared/useVocabularyAudio'
+import { vocabularyRecordings } from './C101.vocabularyAudio'
+import type { ExpressionsProps } from './C101.types'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { LessonHint } from '../shared/LessonHint'
@@ -11,58 +15,42 @@ import { ana, kim } from '../shared/characterPortraits'
 import content from './C101.content.json'
 import type { C101Audio } from './C101.types'
 import * as S from './C101.styles'
-export function Expressions() {
-  const [recall, setRecall] = useState(false)
+export function Expressions({
+  group = 0,
+  active = true,
+}: ExpressionsProps = {}) {
+  const [revealed, setRevealed] = useState<string[]>([])
+  const audio = useVocabularyAudio(vocabularyRecordings, active)
+  const items = content.expressions.slice(group * 4, group * 4 + 4)
+  const play = (id: string) => {
+    const item = items.find((x) => `E.${x.i}` === id)
+    if (item) audio.speak([{ id, text: item.e }])
+  }
   return (
-    <S.Stack>
-      <S.Row>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={recall}
-          onClick={() => setRecall(!recall)}
-        >
-          {recall ? 'Show contexts' : 'Try without contexts'}
-        </Button>
-      </S.Row>
-      <S.ExpressionList>
-        {content.expressions.map((x) => (
-          <S.Disclosure key={`${x.i}-${recall}`}>
-            <summary>
-              {recall
-                ? x.e
-                : x.s
-                    .split(/[{}]/)
-                    .map((part, i) => (i === 1 ? <b key={i}>{part}</b> : part))}
-            </summary>
-            <p>
-              {x.m}
-              <small>{x.t}</small>
-            </p>
-          </S.Disclosure>
-        ))}
-      </S.ExpressionList>
-      <LessonHint context="Language to watch">
-        <b>Language to watch</b>
-        <p>
-          <b>Feedback</b> is uncountable: some feedback. <b>Take it on board</b>{' '}
-          means consider it and use it. <b>It’s worth + -ing</b>: It’s worth
-          practicing.
-        </p>
-      </LessonHint>
-      <S.Surface>
-        <b>Has anything you said or wrote ever come across as harsh?</b>
-        <p>
-          Explain the context and how you handled it. Then ask your teacher.
-        </p>
-      </S.Surface>
-    </S.Stack>
+    <GrammarTable
+      title="Feedback expressions"
+      captionVisibility="screen-reader"
+      columns={{ subject: 'Context', verb: 'Expression', example: 'Meaning' }}
+      hiddenAnswers
+      revealedIds={revealed}
+      rows={items.map((item) => ({
+        id: `E.${item.i}`,
+        subject: item.s.replace(/[{}]/g, ''),
+        verb: item.e,
+        example: item.m,
+        translation: item.t,
+      }))}
+      onReveal={(id) => {
+        setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        play(id)
+      }}
+      onPlay={play}
+    />
   )
 }
 export function WarmUp({ index }: { index: number }) {
   const w = content.warmups[index]!
   const [chosen, setChosen] = useState<number>()
-  const [show, setShow] = useState(!w.hide)
   const complete = chosen === w.a
   const prompt =
     index === 0
@@ -100,41 +88,33 @@ export function WarmUp({ index }: { index: number }) {
     >
       <S.Stack>
         <p>{index < 2 ? prompt : 'Which answer responds to Kim’s question?'}</p>
-        {!show ? (
-          <Button variant="secondary" onClick={() => setShow(true)}>
-            Show options
-          </Button>
-        ) : (
-          w.o.map((text, i) => (
-            <QuizOption
-              key={text}
-              letter={String.fromCharCode(65 + i)}
-              density="compact"
-              aria-pressed={chosen === i}
-              state={
-                chosen === undefined
-                  ? 'default'
-                  : chosen === i
-                    ? complete
-                      ? 'correct'
-                      : 'wrong'
-                    : complete
-                      ? 'dim'
-                      : 'default'
-              }
-              disabled={complete}
-              onClick={() => setChosen(i)}
-            >
-              {text}
-            </QuizOption>
-          ))
-        )}
-        {complete ? (
-          <S.Surface role="status">
-            <b>Now you</b>
-            <p>{w.now}</p>
-          </S.Surface>
-        ) : null}
+        {w.o.map((text, i) => (
+          <QuizOption
+            key={text}
+            letter={String.fromCharCode(65 + i)}
+            density="compact"
+            aria-pressed={chosen === i}
+            state={
+              chosen === undefined
+                ? 'default'
+                : chosen === i
+                  ? complete
+                    ? 'correct'
+                    : 'wrong'
+                  : complete
+                    ? 'dim'
+                    : 'default'
+            }
+            disabled={complete}
+            onClick={() => setChosen(i)}
+          >
+            {text}
+          </QuizOption>
+        ))}
+        <PromptExercise
+          numbered={false}
+          items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
+        />
       </S.Stack>
     </ExercisePanel>
   )
@@ -153,15 +133,7 @@ export function Reading() {
           ))}
         </S.Paper>
         <S.Stack>
-          <C101Questions
-            items={[
-              content.reading[0]!,
-              {
-                q: 'What might Laura be implying without saying it directly?',
-                a: 'She appears to want Ana at the next meeting and a clear answer about the deadline. Support your interpretation with the wording; other well-supported readings are possible.',
-              },
-            ]}
-          />
+          <C101Questions items={content.reading} />
           <S.Surface>
             <b>
               Have you received a polite message that signalled dissatisfaction?

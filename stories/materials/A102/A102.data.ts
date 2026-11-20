@@ -146,6 +146,20 @@ export const gaps = [
     translation: 'É 362 409 518.',
     parts: [{ id: 'g4', answer: 'It’s' }, ' 362 409 518.'],
   },
+  {
+    id: 'G.5',
+    speaker: 'Kim',
+    text: 'Is that 362 409 518?',
+    translation: 'É 362 409 518?',
+    parts: ['Is ', { id: 'g5', answer: 'that' }, ' 362 409 518?'],
+  },
+  {
+    id: 'G.6',
+    speaker: 'Ana',
+    text: 'Yes, that’s right.',
+    translation: 'Sim, está certo.',
+    parts: ['Yes, ', { id: 'g6', answer: 'that’s right' }, '.'],
+  },
 ] as const
 export const call = [
   { id: 'C.1', text: 'Hi, Ana! It’s Kim. I’m checking your contact details.' },
@@ -186,6 +200,11 @@ export const prompts = {
       id: 'gaps.question.2',
       prompt: 'What’s the phone number in this conversation?',
       answer: 'It’s 362 409 518.',
+    },
+    {
+      id: 'gaps.question.3',
+      prompt: 'Does Kim have the right number?',
+      answer: 'Yes. Ana says, “That’s right.”',
     },
   ],
   contact: [

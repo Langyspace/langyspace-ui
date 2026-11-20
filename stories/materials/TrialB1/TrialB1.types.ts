@@ -35,6 +35,10 @@ interface DialoguePage extends BasePage {
   followup: string
   support: string
 }
+interface QuestionsPage extends BasePage {
+  kind: 'questions'
+  questions: { q: string; answer: string }[]
+}
 interface ChoicePage extends BasePage {
   kind: 'choice'
   choices: string[]
@@ -56,7 +60,13 @@ interface ReviewPage extends BasePage {
   reflection: string
 }
 export type TrialB1Page =
-  GreetingPage | ScenePage | DialoguePage | ChoicePage | StoryPage | ReviewPage
+  | GreetingPage
+  | ScenePage
+  | DialoguePage
+  | QuestionsPage
+  | ChoicePage
+  | StoryPage
+  | ReviewPage
 export interface TrialB1Content {
   revision: string
   title: string

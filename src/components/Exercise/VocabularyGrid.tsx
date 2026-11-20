@@ -13,7 +13,7 @@ export function VocabularyGrid({
   onPlay,
   showAll = false,
   showInitial = false,
-  revealOnHover = true,
+  revealOnHover = false,
   imageVariant = 'isolated',
   imageFit,
   columns,

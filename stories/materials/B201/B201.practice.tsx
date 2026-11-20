@@ -1,3 +1,7 @@
+import { PromptExercise } from '../shared/LessonExercises'
+import { useVocabularyAudio } from '../shared/useVocabularyAudio'
+import { vocabularyRecordings } from './B201.vocabularyAudio'
+import type { VocabularySectionProps } from './B201.types'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
@@ -12,7 +16,10 @@ import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
 import type { WarmUpProps, WordTableProps } from './B201.types'
 import { content, vocabulary, warmUps, image, kim } from './B201.data'
 import * as S from './B201.styles'
-export function VocabularySection() {
+export function VocabularySection({
+  active: pageActive = true,
+}: VocabularySectionProps = {}) {
+  const audio = useVocabularyAudio(vocabularyRecordings, pageActive)
   const [ids, setIds] = useState<string[]>([]),
     [active, setActive] = useState(''),
     [all, setAll] = useState(false),
@@ -23,14 +30,19 @@ export function VocabularySection() {
         items={vocabulary}
         columns={4}
         density="regular"
-        imageVariant="scene"
+        imageVariant="isolated"
         imageFit="contain"
+        surface="plain"
         revealVariant="tooltip"
         revealOnHover={false}
         activeId={active}
         revealedIds={ids}
         showAll={all}
         showInitial={initial}
+        onPlay={(id) => {
+          const item = vocabulary.find((x) => x.id === id)
+          if (item) audio.speak([{ id, text: item.word }])
+        }}
         onReveal={(id) => {
           setActive(id)
           setIds((old) => (old.includes(id) ? old : [...old, id]))
@@ -42,20 +54,12 @@ export function VocabularySection() {
         onToggleInitial={() => setInitial(!initial)}
         onToggleAll={() => setAll(!all)}
       />
-      {all || ids.length === vocabulary.length ? (
-        <S.Hint>
-          <b>a charging cable</b> is only the cable. <b>a phone charger</b> goes
-          in the outlet. <b>a doorman</b> works at the door of a building.{' '}
-          <b>My phone died.</b> = Meu celular descarregou (morreu). It’s dead.
-        </S.Hint>
-      ) : null}
     </S.Stack>
   )
 }
 export function WarmUpSection({ index }: WarmUpProps) {
   const w = warmUps[index] ?? warmUps[0]!
-  const [attempts, setAttempts] = useState<number[]>([]),
-    [open, setOpen] = useState(!w.hide)
+  const [attempts, setAttempts] = useState<number[]>([])
   const done = attempts.includes(w.a)
   return (
     <S.Stack>
@@ -85,7 +89,7 @@ export function WarmUpSection({ index }: WarmUpProps) {
         }
       >
         <S.Stack>
-          {open ? (
+          {
             <S.Stack>
               {w.o.map((option, i) => (
                 <QuizOption
@@ -110,17 +114,11 @@ export function WarmUpSection({ index }: WarmUpProps) {
                 </QuizOption>
               ))}
             </S.Stack>
-          ) : (
-            <Button variant="secondary" onClick={() => setOpen(true)}>
-              Show options
-            </Button>
-          )}
-          {done ? (
-            <S.Now>
-              <b>Now you</b>
-              <p>{w.now}</p>
-            </S.Now>
-          ) : null}
+          }
+          <PromptExercise
+            numbered={false}
+            items={[{ id: 'followup', prompt: 'Now you', answer: w.now }]}
+          />
         </S.Stack>
       </ExercisePanel>
     </S.Stack>

@@ -38,8 +38,6 @@ export function LessonDeck({
 
   const changePage = useCallback(
     (next: string) => {
-      if (typeof window !== 'undefined' && 'speechSynthesis' in window)
-        window.speechSynthesis.cancel()
       setPageId(next)
     },
     [setPageId],

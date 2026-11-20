@@ -44,3 +44,17 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 - **20/11/2026 — feedback32 A1.05:** objetos de vocabulary transparentes; mínimo de seis falas; respostas abertas sem rolagem desnecessária; verde do tema; lacunas proporcionais; role-play visual com dólares e controles de dicas/modelo; prevenção de avanço por inércia. Consolida também os padrões já aprovados de A1.01/A2.01/A1.05/A1.02.
 
 - **20/11/2026 — feedback33 A1.05:** pistas de Kim’s list passaram a “a fruit”, sem predeterminar maçã ou manga; o modelo opcional continua sendo um exemplo.
+
+## Refinamentos da revisão 34
+
+- Conte turnos completos de comunicação, não apenas arquivos de áudio ou linhas visíveis. Diálogos completos e conversas com lacunas têm no mínimo seis falas significativas. Uma entrevista com quatro perguntas gravadas e quatro respostas orais da aluna tem oito turnos. Um exemplo curto não é um diálogo completo: identifique sua função, sem acrescentar falas artificiais.
+- Cada pergunta deve ser respondível a partir daquela conversa ou imagem. No role-play, a pista indica uma intenção ou categoria; a lâmpada oferece apoio parcial e o olho mostra um modelo. Detalhes opcionais e orientações de condução ficam nas Notes.
+- Planeje a aula regular para cerca de 50 minutos, protegendo a conversação final. Não preencha o tempo com identificação repetida após o vocabulary ou pares de pronúncia sem função comunicativa. Preserve o ritmo mais curto previsto nos experimentais. Ao dividir uma conversa, mantenha uma troca coerente em cada parte; não termine com uma pergunta sem resposta só para atingir uma contagem.
+- Preserve os pedidos de conteúdo já aprovados. Quando um banco de perguntas estiver denso, distribua-o entre páginas e ofereça modelos no clique; não elimine perguntas pessoais úteis apenas para reduzir o painel. A professora pode escolher duas ou três por bloco sem aumentar a duração da aula.
+- O padrão de vocabulary é revelar por clique, mantendo a palavra estática após a revelação. O hover é uma variação explícita. O clique também toca a gravação preparada da palavra; não deixe vocabulários silenciosos por faltar ligação entre dados e componente.
+- O celular revela a transcrição automaticamente na terceira escuta, com o próprio controle de play. Modos anteriores ou manuais são variações explícitas da biblioteca. Não acrescente outro botão de replay ou de transcrição ao material.
+- Diálogo e perguntas de compreensão ocupam páginas consecutivas. No modo de modelo dos experimentais, mantenha apenas a conversa; leve as perguntas para a página seguinte. A tradução aparece ao clicar na fala original, sem botão extra.
+- Reutilize o mesmo objeto aprovado e sua proveniência entre aulas. Preserve o fundo quando ele explica uma ação, posição ou relação: um gato isolado serve ao vocabulary de animais; um gato sob a cama precisa do gato e da cama.
+- Diferencie o preview nativo do gerador do arquivo final com alpha: o preview não prova a presença de fundo no WebP salvo. Registre limitações reais dos contornos sem declarar recorte perfeito apenas pelos metadados.
+- Um link de homework só representa uma atividade quando essa atividade existe no destino. Caso contrário, ofereça prática independente, sem botão de portal nem promessa de copiar links.
+- Migrações de aulas antigas compõem a UI Library revisada. ReviewedLesson é um adaptador de dados, não uma biblioteca visual paralela. Áudios preparados correspondem ao texto e à voz exatos; helpers de compatibilidade não usam síntese do navegador como alternativa.

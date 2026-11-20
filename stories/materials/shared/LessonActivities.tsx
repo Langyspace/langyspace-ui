@@ -1,5 +1,6 @@
 import { bindStudentDestinations } from './studentDestinations'
-import { AnswerDisclosure } from './AnswerDisclosure'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { PromptExercise } from './LessonExercises'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -89,142 +90,46 @@ export function PronunciationActivity({
 export function GrammarActivity({
   rows,
   explanation,
-  afterReveal,
-  columns = { label: 'Who', word: 'Word', example: 'Example' },
+  columns = { label: 'Who', word: 'Form', example: 'Example' },
 }: GrammarActivityProps) {
   const [revealed, setRevealed] = useState<readonly string[]>([])
-  const speech = useMaterialSpeech()
-  const all = rows.length > 0 && rows.every((row) => revealed.includes(row.id))
-  const table = (
+  return (
     <Common.Stack>
-      <Styled.TableScroll>
-        <Styled.Table>
-          <thead>
-            <tr>
-              <th scope="col">{columns.label}</th>
-              <th scope="col">{columns.word}</th>
-              <th scope="col">{columns.example}</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row) => (
-              <tr key={row.id}>
-                <td>{row.label}</td>
-                <td>
-                  {revealed.includes(row.id) ? (
-                    <b>{row.word}</b>
-                  ) : (
-                    <Button
-                      variant="brand"
-                      aria-label={`Mostrar: ${row.label}`}
-                      onClick={() => {
-                        setRevealed((ids) => [...ids, row.id])
-                        speech.speak(row.example)
-                      }}
-                    >
-                      ?
-                    </Button>
-                  )}
-                </td>
-                <td>
-                  {revealed.includes(row.id) ? (
-                    <>
-                      <Button
-                        variant="text"
-                        onClick={() => speech.speak(row.example)}
-                      >
-                        {row.example}
-                      </Button>
-                      {row.translation ? (
-                        <Common.Hint>{row.translation}</Common.Hint>
-                      ) : null}
-                    </>
-                  ) : (
-                    '…'
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </Styled.Table>
-      </Styled.TableScroll>
-      <Button variant="text" onClick={() => setRevealed([])}>
-        Hide all
-      </Button>
-      {all && afterReveal ? (
-        <Common.Surface>{afterReveal}</Common.Surface>
-      ) : null}
-      {speech.error ? (
-        <Common.Hint role="status">{speech.error}</Common.Hint>
-      ) : null}
+      <GrammarTable
+        title="Grammar"
+        captionVisibility="screen-reader"
+        hiddenAnswers
+        revealedIds={revealed}
+        columns={{
+          subject: columns.label,
+          verb: columns.word,
+          example: columns.example,
+        }}
+        rows={rows.map((row) => ({
+          id: row.id,
+          subject: row.label,
+          verb: row.word,
+          example: row.example,
+          translation: row.translation,
+        }))}
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
+      />
+      {explanation}
     </Common.Stack>
-  )
-  return explanation ? (
-    <Common.Columns>
-      {table}
-      <Styled.Rule>{explanation}</Styled.Rule>
-    </Common.Columns>
-  ) : (
-    table
   )
 }
 
-export function ReviewActivity({
-  items,
-  ownPrompt = 'Correct one sentence from today.',
-}: ReviewActivityProps) {
-  const [answers, setAnswers] = useState<Record<string, boolean>>({})
-  const [marked, setMarked] = useState(false)
+export function ReviewActivity({ items }: ReviewActivityProps) {
   return (
-    <Common.Stack>
-      {items.map((item, index) => (
-        <Common.Surface key={item.sentence}>
-          <AnswerDisclosure
-            question={`${index + 1}. ${item.sentence}`}
-            answer={item.answer}
-          />
-          <Common.Row>
-            {['Right', 'Wrong'].map((choice, option) => (
-              <Button
-                key={choice}
-                variant={
-                  answers[item.sentence] === (option === 0)
-                    ? 'brand'
-                    : 'secondary'
-                }
-                aria-pressed={answers[item.sentence] === (option === 0)}
-                onClick={() =>
-                  setAnswers((old) => ({
-                    ...old,
-                    [item.sentence]: option === 0,
-                  }))
-                }
-              >
-                {choice}
-              </Button>
-            ))}
-          </Common.Row>
-          {answers[item.sentence] !== undefined ? (
-            <Common.Hint role="status">
-              {answers[item.sentence] === item.correct
-                ? `${item.answer} ${item.why ?? ''}`
-                : 'Tente novamente.'}
-            </Common.Hint>
-          ) : null}
-        </Common.Surface>
-      ))}
-      <Common.Surface>
-        <Common.Heading>One from today</Common.Heading>
-        <p>{ownPrompt}</p>
-        <Button
-          variant="secondary"
-          aria-pressed={marked}
-          onClick={() => setMarked(!marked)}
-        >
-          {marked ? 'Done' : 'Fixed'}
-        </Button>
-      </Common.Surface>
-    </Common.Stack>
+    <PromptExercise
+      items={items.map((item, index) => ({
+        id: String(index),
+        prompt: item.sentence,
+        answer: item.answer,
+      }))}
+    />
   )
 }
 

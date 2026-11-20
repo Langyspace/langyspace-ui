@@ -94,11 +94,7 @@
       "tr": "How long have you worked with …? = Há quanto tempo você trabalha com …?",
       "id": "W.3",
       "a": 0,
-      "o": [
-        "For three years.",
-        "Three years ago.",
-        "In three years."
-      ],
+      "o": ["For three years.", "Three years ago.", "In three years."],
       "why": {
         "1": "Three years ago = há três anos, uma vez, e acabou. Olhe o perfil: a Kim ainda usa JavaScript.",
         "2": "In three years = daqui a três anos. A Kim já trabalha com JavaScript."
@@ -111,28 +107,16 @@
     {
       "t": "I fixed it or I’ll fix it?",
       "c": [
-        [
-          "I fixed it.",
-          "“eu consertei”"
-        ],
-        [
-          "I’ll fix it.",
-          "“eu vou consertar”"
-        ]
+        ["I fixed it.", "“eu consertei”"],
+        ["I’ll fix it.", "“eu vou consertar”"]
       ],
       "tip": "No I’ll, o som é “ÁIL”, com o L no fim, e o verbo fica sem -ed: fix. No fixed, o fim é um T rápido: “FIKST”."
     },
     {
       "t": "Thirteen or thirty?",
       "c": [
-        [
-          "thirteen pixels",
-          "“treze pixels”"
-        ],
-        [
-          "thirty pixels",
-          "“trinta pixels”"
-        ]
+        ["thirteen pixels", "“treze pixels”"],
+        ["thirty pixels", "“trinta pixels”"]
       ],
       "tip": "thirTEEN: a força fica no fim, “thâr-TÍIN”. THIRty: a força fica no começo, “THÂR-di”."
     }
@@ -209,29 +193,29 @@
   ],
   "grammar": [
     [
-      "O que já está feito (vale agora)",
-      "I’ve + particípio",
+      "Completed work",
+      "have + past participle",
       "I’ve fixed the menu. I’ve tested it on three phones.",
       "eu (já) consertei · eu testei",
       "G.0"
     ],
     [
-      "O que ainda não",
+      "Not finished yet",
       "haven’t … yet",
       "I haven’t deployed it yet.",
       "eu ainda não publiquei",
       "G.1"
     ],
     [
-      "De um ponto até hoje",
-      "I’ve … for · since",
+      "From then until now",
+      "have + past participle + for / since",
       "I’ve worked with React for two years. · I’ve worked here since 2024.",
       "trabalho com React há dois anos · trabalho aqui desde 2024",
       "G.2"
     ],
     [
-      "Uma vez, com quando",
-      "passado: built, fixed",
+      "A finished past time",
+      "past simple",
       "I built a shop page last year. I fixed it yesterday.",
       "fiz no ano passado · consertei ontem",
       "G.3"
@@ -240,38 +224,26 @@
   "listeningQuestions": [
     {
       "q": "Leo has looked at the new version on his computer.",
-      "o": [
-        "Yes",
-        "No"
-      ],
+      "o": ["Yes", "No"],
       "a": 1,
       "say": "No. On his phone."
     },
     {
       "q": "Leo wants a bigger button on mobile.",
-      "o": [
-        "Yes",
-        "No"
-      ],
+      "o": ["Yes", "No"],
       "a": 0,
       "say": "Yes. Forty-four pixels, at least."
     },
     {
       "q": "Kim can deploy today.",
-      "o": [
-        "Yes",
-        "No"
-      ],
+      "o": ["Yes", "No"],
       "a": 1,
       "say": "No. Tomorrow morning, at ten."
     },
     {
       "q": "Everything is ready for the launch. How do you know?",
       "g": "ready = pronto",
-      "o": [
-        "Yes",
-        "No"
-      ],
+      "o": ["Yes", "No"],
       "a": 1,
       "say": "No. The button is too small, and the tests haven’t finished yet."
     }
@@ -337,54 +309,31 @@
     "That’s a good question. Let me think.",
     "What’s the team like?"
   ],
-  "noteFields": [
-    "Experience",
-    "Project",
-    "Bug",
-    "Her questions"
-  ],
+  "noteFields": ["Experience", "Project", "Bug", "Her questions"],
   "homework": [
     [
-      "Flashcards · Frontend",
-      "The seven parts of a page and fourteen phrases from today · 6 min · Today, in 2 days and in 6 days.",
-      "https://student.langy.space/licoes?tab=flashcards&deck=deck-tema-frontend",
-      "6 min",
+      "Name the parts",
+      "Name the seven parts of a web page. Describe where three appear in an app you use.",
+      "",
+      "4 min",
       "v_bt"
     ],
     [
-      "Quiz · I’ve fixed it or I fixed it?",
-      "10 questions · 4 min.",
-      "https://student.langy.space/licoes?tab=quiz&item=tema-frontend",
-      "4 min",
+      "Give a work update",
+      "Say two things you’ve done and one you haven’t done yet. Add when you finished one task.",
+      "",
+      "3 min",
       "x_bulb"
     ],
     [
-      "Shadowing · A bug before the launch",
-      "Speak with Kim: lines 1, 3, 5, 7 and 9 · 5 min.",
-      "https://student.langy.space/licoes?tab=shadowing&item=tema-frontend",
+      "Prepare an interview answer",
+      "Choose a project. Explain the problem, what you did and the result. Bring your example to the next class.",
+      "",
       "5 min",
       "x_speech"
     ]
   ],
-  "order": [
-    1,
-    2,
-    31,
-    32,
-    33,
-    4,
-    51,
-    52,
-    6,
-    62,
-    61,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-  ],
+  "order": [1, 2, 31, 32, 33, 4, 51, 52, 6, 62, 61, 7, 8, 9, 10, 11, 12],
   "text": {
     "V.0": "a button",
     "V.1": "a form",

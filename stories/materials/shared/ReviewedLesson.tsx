@@ -1,0 +1,309 @@
+import { useState } from 'react'
+import { ThemeProvider } from 'styled-components'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
+import { MaterialSlideDeck } from './MaterialSlideDeck'
+import { PromptExercise } from './LessonExercises'
+import { useLessonPage } from './useLessonPage'
+import { useLessonNotesPopup } from './useLessonNotesPopup'
+import { LessonNotes } from './LessonNotes'
+import { LessonNotesTrigger } from './LessonNotesTrigger'
+import { withVoiceMessageLayout } from './deviceTheme'
+import * as Shell from './Lesson.styles'
+import anaAvatar from '../A101/assets/bust_ana.webp'
+import kimAvatar from '../A101/assets/bust_kim.webp'
+import type {
+  ReviewedLessonProps,
+  ReviewedDialogueProps,
+  ReviewedPageContentProps,
+} from './ReviewedLesson.types'
+
+const portraits = { Ana: anaAvatar, Kim: kimAvatar }
+const phoneTheme = withVoiceMessageLayout({
+  contentWidth: '47.5rem',
+  phoneWidth: 'clamp(11.875rem, calc((100dvh - 13.75rem) / 2), 16.875rem)',
+  phoneHeight: 'clamp(23.75rem, calc(100dvh - 13.75rem), 33.75rem)',
+  transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
+})
+const toggle = (ids: readonly string[], id: string) =>
+  ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]
+
+function Dialogue({ lines, speech, guidance = false }: ReviewedDialogueProps) {
+  const [translated, setTranslated] = useState<string[]>([])
+  const [revealed, setRevealed] = useState<string[]>([])
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
+  return (
+    <LearningDialogue
+      density="compact"
+      guidance={guidance ? { level, onChange: setLevel } : undefined}
+      lines={lines.map((line) => ({
+        ...line,
+        content: line.text,
+        avatarUrl: portraits[line.speaker],
+        side: line.speaker === 'Kim' ? 'start' : 'end',
+        audioLabel: guidance ? undefined : `Listen to ${line.speaker}`,
+      }))}
+      translatedIds={translated}
+      onTranslate={
+        guidance ? undefined : (id) => setTranslated((ids) => toggle(ids, id))
+      }
+      playingId={speech.playingId}
+      onPlay={
+        guidance
+          ? undefined
+          : (id) => {
+              const line = lines.find((x) => x.id === id)
+              if (line) speech.speak([line])
+            }
+      }
+      revealedGapIds={revealed}
+      onRevealGap={(id, lineId) => {
+        setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        const line = lines.find((x) => x.id === lineId)
+        if (line) speech.speak([line])
+      }}
+    />
+  )
+}
+
+/** Data adapters only: every visible exercise uses the reviewed UI Library. */
+function PageContent({
+  page,
+  speech,
+  active,
+  recordings,
+}: ReviewedPageContentProps) {
+  const [revealed, setRevealed] = useState<string[]>([])
+  const [initial, setInitial] = useState(false)
+  const [all, setAll] = useState(false)
+  if (page.kind === 'prompts') return <PromptExercise items={page.items} />
+  if (page.kind === 'vocabulary')
+    return (
+      <VocabularyGrid
+        items={page.items}
+        imageVariant={page.isolated ? 'isolated' : 'scene'}
+        imageFit="contain"
+        surface={page.isolated ? 'plain' : 'card'}
+        revealOnHover={false}
+        revealVariant="tooltip"
+        density="regular"
+        revealedIds={revealed}
+        showAll={all}
+        showInitial={initial}
+        controls={{
+          showAll: all,
+          showInitial: initial,
+          onToggleAll: () => setAll(!all),
+          onToggleInitial: () => setInitial(!initial),
+        }}
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
+        onPlay={(id) => {
+          const item = page.items.find((x) => x.id === id)
+          if (item) speech.speak([{ id, text: item.word }])
+        }}
+      />
+    )
+  if (page.kind === 'words')
+    return (
+      <GrammarTable
+        title={page.title}
+        captionVisibility="screen-reader"
+        columns={{ subject: 'Clue', verb: 'English', example: 'Example' }}
+        hiddenAnswers
+        revealedIds={revealed}
+        rows={page.items.map((x) => ({
+          id: x.id,
+          subject: x.clue,
+          verb: x.word,
+          example: x.example,
+        }))}
+        onReveal={(id) => {
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+          const item = page.items.find((x) => x.id === id)
+          if (item) speech.speak([{ id, text: item.word }])
+        }}
+        onPlay={(id) => {
+          const item = page.items.find((x) => x.id === id)
+          if (item) speech.speak([{ id, text: item.word }])
+        }}
+      />
+    )
+  if (page.kind === 'grammar')
+    return (
+      <Common.Stack>
+        <GrammarTable
+          title={page.title}
+          captionVisibility="screen-reader"
+          columns={{ subject: 'Who / When', verb: 'Form', example: 'Example' }}
+          rows={page.rows}
+        />
+        {page.note ? <Common.Hint>{page.note}</Common.Hint> : null}
+      </Common.Stack>
+    )
+  if (page.kind === 'dialogue')
+    return <Dialogue lines={page.lines} speech={speech} />
+  if (page.kind === 'listening')
+    return (
+      <ThemeProvider theme={phoneTheme}>
+        <VoiceMessageExercise
+          contact={{ name: 'Kim', avatarUrl: kimAvatar, status: 'online' }}
+          audio={{
+            id: 'L.1',
+            src: recordings.find(
+              (x) => x.id === 'L.1' && x.text === page.message,
+            )?.src,
+            transcript: page.message,
+            timestamp: '21:11',
+          }}
+          active={active}
+          questions={[]}
+          onAnswer={() => undefined}
+          transcriptReveal="third-listen"
+          labels={{
+            play: 'Listen to Kim',
+            pause: 'Pause',
+            loading: 'Loading audio',
+            replay: 'Listen again',
+            speed: 'Speed',
+            transcript: 'Transcript',
+            transcriptHidden: 'The transcript appears on the third listen.',
+            audioUnavailable: 'Audio is unavailable.',
+            audioError: 'The audio could not play.',
+            retry: 'Try again',
+            questions: 'Questions about Kim',
+            conversation: 'Conversation',
+          }}
+          footer={<PromptExercise items={page.items} />}
+        />
+      </ThemeProvider>
+    )
+  if (page.kind === 'roleplay')
+    return (
+      <RolePlayExercise
+        presentation="instructions"
+        situation=""
+        image={page.image}
+        steps={page.steps.map((label, i) => ({ id: String(i), label }))}
+        completedIds={[]}
+        onStepToggle={() => undefined}
+        tracker={
+          page.lines ? (
+            <Dialogue lines={page.lines} speech={speech} guidance />
+          ) : undefined
+        }
+      />
+    )
+  return (
+    <Common.Stack>
+      {page.tasks.map((task) => (
+        <Common.Surface key={task.title}>
+          <Common.Heading>{task.title}</Common.Heading>
+          <p>{task.description}</p>
+        </Common.Surface>
+      ))}
+    </Common.Stack>
+  )
+}
+
+export function ReviewedLesson({
+  code,
+  title,
+  pages,
+  recordings,
+  initialPageId,
+  learnerName = '',
+}: ReviewedLessonProps) {
+  const [pageId, setPageId] = useLessonPage(
+    initialPageId,
+    code.toLowerCase().replace('.', '-'),
+    pages.map((x) => x.id),
+  )
+  const speech = useRecordedAudio(recordings)
+  const notes = useLessonNotesPopup('langy-material-notes-' + code)
+  return (
+    <Shell.Stage>
+      <MaterialSlideDeck
+        label={`${code} · ${title}${learnerName ? ' · ' + learnerName : ''}`}
+        pageId={pageId}
+        onPageChange={(id) => {
+          speech.stop()
+          setPageId(id)
+        }}
+        pages={pages.map((page) => {
+          const lines = page.kind === 'dialogue' ? page.lines : undefined
+          const playing = lines?.some((x) => x.id === speech.playingId)
+          return {
+            id: page.id,
+            label: `${page.eyebrow} · ${page.title}`,
+            content: (
+              <SlidePage
+                title={page.title}
+                eyebrow={page.eyebrow}
+                instruction={page.instruction}
+                density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                width={
+                  page.kind === 'vocabulary' || page.kind === 'roleplay'
+                    ? 'wide'
+                    : 'reading'
+                }
+                titleAudio={
+                  lines
+                    ? {
+                        context: page.title,
+                        status: playing
+                          ? speech.paused
+                            ? 'paused'
+                            : 'playing'
+                          : 'idle',
+                        disabled:
+                          pageId !== page.id || !lines.every(speech.has),
+                        onClick: () =>
+                          playing ? speech.togglePause() : speech.speak(lines),
+                      }
+                    : undefined
+                }
+              >
+                <PageContent
+                  page={page}
+                  speech={speech}
+                  active={pageId === page.id}
+                  recordings={recordings}
+                />
+              </SlidePage>
+            ),
+          }
+        })}
+        overlay={
+          <LessonNotes
+            storageKey={'langy-material-notes-' + code}
+            open={notes.isOpen}
+            popupWindow={notes.popup}
+            preview={notes.preview}
+            error={notes.error}
+            onClose={notes.close}
+          />
+        }
+        actions={
+          <LessonNotesTrigger
+            ref={(element) => {
+              notes.trigger(element)
+            }}
+            open={notes.isOpen}
+            onClick={notes.open}
+          />
+        }
+      />
+      {speech.error ? (
+        <Shell.AudioError role="status">{speech.error}</Shell.AudioError>
+      ) : null}
+    </Shell.Stage>
+  )
+}

@@ -47,7 +47,9 @@ export function VocabularySection({ speech }: SpeechProps) {
         revealedIds={revealed}
         showAll={all}
         showInitial={hint}
-        onReveal={(id) => setRevealed((ids) => toggleId(ids, id))}
+        onReveal={(id) =>
+          setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
+        }
         onPlay={
           content.vocabulary.every(speech.has)
             ? (id) => {

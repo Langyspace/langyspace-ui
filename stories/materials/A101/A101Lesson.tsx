@@ -355,7 +355,7 @@ function A101LessonContent({
           </SlidePage>
         ),
       }
-    if (id === 's15')
+    if (['s15', 's151', 's152'].includes(id))
       return {
         id,
         label: 'Conversation · Let’s talk',
@@ -363,10 +363,18 @@ function A101LessonContent({
           <SlidePage
             width="conversation"
             eyebrow="Conversation"
-            title="Let’s talk!"
-            instruction="Ask your teacher these questions, then answer them."
+            title={
+              id === 's15'
+                ? 'Let’s talk!'
+                : id === 's151'
+                  ? 'People and places'
+                  : 'Pets and birthdays'
+            }
+            instruction="Choose two or three prompts. Speak with your teacher, then swap roles."
           >
-            <ConversationSection />
+            <ConversationSection
+              part={id === 's15' ? 0 : id === 's151' ? 1 : 2}
+            />
           </SlidePage>
         ),
       }
