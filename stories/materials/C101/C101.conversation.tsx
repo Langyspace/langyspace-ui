@@ -123,6 +123,10 @@ export function Listening({ active }: { active: boolean }) {
     <ThemeProvider theme={listeningTheme}>
       <VoiceMessageExercise
         contact={{ name: 'Raj', avatarUrl: raj, status: 'online' }}
+        greeting={{
+          text: 'Hi, Ana. Can I ask you about the presentation?',
+          timestamp: '18:40',
+        }}
         audio={{
           id: 'c101-raj-message',
           src: audioUrl('c101-raj-message'),

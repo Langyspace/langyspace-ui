@@ -108,6 +108,10 @@ export function Listening({ active }: { active: boolean }) {
     <ThemeProvider theme={phoneTheme}>
       <VoiceMessageExercise
         contact={{ name: 'Leo', avatarUrl: leo, status: 'online' }}
+        greeting={{
+          text: 'Hi! Here’s a quick update before the launch.',
+          timestamp: '09:40',
+        }}
         audio={{
           id: 'frontend-leo-elevenlabs',
           src: audio('L.9'),

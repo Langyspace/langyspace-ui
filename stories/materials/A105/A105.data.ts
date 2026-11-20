@@ -1,6 +1,8 @@
 import type { ProduceItem } from './A105.types'
-import kimAvatar from '../A101/assets/bust_kim.webp'
-import anaAvatar from '../A101/assets/bust_ana.webp'
+import {
+  kim as kimAvatar,
+  ana as anaAvatar,
+} from '../shared/characterPortraits'
 
 export const portraits = { Kim: kimAvatar, Ana: anaAvatar }
 export const produce: readonly ProduceItem[] = [

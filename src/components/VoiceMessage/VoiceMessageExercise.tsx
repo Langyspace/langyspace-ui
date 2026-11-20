@@ -219,6 +219,11 @@ function VoiceMessageContent({
                 >
                   {media.speed}x
                 </Styled.Speed>
+                <Avatar
+                  imageUrl={contact.avatarUrl}
+                  initials={contact.name.slice(0, 2)}
+                  size="xs"
+                />
               </Styled.Player>
               <Styled.Meta>
                 <span>

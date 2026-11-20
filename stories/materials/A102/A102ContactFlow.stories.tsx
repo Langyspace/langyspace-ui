@@ -30,3 +30,13 @@ export const VoiceMessage: Story = {
   args: { initialPageId: 's16' },
   tags: ['visual-review'],
 }
+
+export const OutgoingTeacherFallback: Story = {
+  args: { initialPageId: 's15' },
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const AlphabetWithPortugueseTips: Story = {
+  args: { initialPageId: 's6' },
+  tags: ['visual-review'],
+}

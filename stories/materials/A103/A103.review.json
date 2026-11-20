@@ -84,10 +84,9 @@
       "id": "s4",
       "kind": "scene",
       "title": "Family words",
-      "instruction": "Ana is showing a photo. Click a person and listen.",
+      "instruction": "Ana’s family and her friend Kim. Click a person and listen.",
       "minutes": 4,
       "eyebrow": "Vocabulary",
-      "context": "Ana’s family and her friend Kim",
       "image": {
         "src": "scene-ana-family",
         "alt": "Ana’s photo: her mother and father together, her brother Leo, her sister Bia and her friend Kim."
@@ -436,7 +435,8 @@
           "prompt": "Where is Jin from?",
           "answer": "She’s from Korea."
         }
-      ]
+      ],
+      "greeting": "Hi! Look at this photo."
     },
     {
       "id": "s101",

@@ -149,7 +149,7 @@ export const MediaCounter = styled.span`
 /** Native workstation for a contextual data-entry exercise; no UI is baked into its image. */
 export const Workstation = styled.section<{ $withMedia: boolean }>`
   display: grid;
-  grid-template-columns: ${(p) => (p.$withMedia ? 'minmax(0, 0.9fr) minmax(0, 1.1fr)' : 'minmax(0, 1fr)')};
+  grid-template-columns: ${(p) => (p.$withMedia ? 'minmax(0, 1.05fr) minmax(0, 1fr)' : 'minmax(0, 1fr)')};
   gap: ${theme.spacing[6]};
   align-items: center;
   min-width: 0;
@@ -164,42 +164,119 @@ export const ContextMedia = styled.div`
     display: block;
     width: 100%;
     height: auto;
-    max-height: 22rem;
-    aspect-ratio: 3 / 2;
+    max-height: min(48cqh, 24rem);
     object-fit: contain;
     border-radius: ${theme.radius.xl};
   }
 `
 export const Desktop = styled.div`
   min-width: 0;
+  width: 100%;
+  max-width: 34rem;
+  margin-inline: auto;
   display: grid;
   justify-items: center;
 `
 export const Screen = styled.div`
   width: 100%;
   min-width: 0;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
   border: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
-  border-radius: ${theme.radius.xl};
-  background: ${(p) => recipe(p).surface};
+  border-bottom: 0;
+  border-radius: ${theme.radius.lg} ${theme.radius.lg} 0 0;
+  background: ${(p) => recipe(p).canvas};
   overflow: hidden;
+`
+export const WindowBar = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  min-height: ${theme.spacing[8]};
+  padding: ${theme.spacing[1]} ${theme.spacing[3]};
+  border-bottom: 1px solid ${(p) => recipe(p).border};
+  background: ${(p) => recipe(p).surface};
+`
+export const WindowControls = styled.span`
+  display: inline-flex;
+  gap: ${theme.spacing[1]};
+  flex-shrink: 0;
+  i {
+    width: ${theme.spacing[2]};
+    height: ${theme.spacing[2]};
+    border-radius: ${theme.radius.circle};
+    background: ${(p) => recipe(p).muted};
+  }
 `
 export const ScreenHeader = styled.h3`
   margin: 0;
-  padding: ${theme.spacing[3]} ${theme.spacing[5]};
-  border-bottom: 1px solid ${(p) => recipe(p).border};
   font-family: ${theme.typography.fontFamily.sans};
-  font-size: ${theme.typography.fontSize.md};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
   line-height: 1.3;
   color: inherit;
 `
-export const ScreenBody = styled(SharedStack)`
-  padding: ${theme.spacing[4]} ${theme.spacing[5]};
-  gap: ${theme.spacing[4]};
+export const ScreenBody = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-content: center;
+  flex: 1;
+  min-width: 0;
+  padding: ${theme.spacing[4]};
+  gap: ${theme.spacing[3]};
+  > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  @container (max-width: ${theme.breakpoints.sm}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+`
+export const Taskbar = styled.div`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[2]};
+  min-height: ${theme.spacing[8]};
+  padding: ${theme.spacing[1]} ${theme.spacing[3]};
+  border-top: 1px solid ${(p) => recipe(p).border};
+  background: ${(p) => recipe(p).surface};
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize['2xs']};
+  color: ${(p) => recipe(p).muted};
+  time {
+    margin-left: auto;
+    font-variant-numeric: tabular-nums;
+  }
+`
+export const DesktopMenu = styled.span`
+  display: grid;
+  grid-template-columns: repeat(2, ${theme.spacing[1]});
+  gap: 2px;
+  i {
+    width: ${theme.spacing[1]};
+    height: ${theme.spacing[1]};
+    background: currentColor;
+  }
+`
+export const MonitorChin = styled.div`
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: ${theme.spacing[4]};
+  border-radius: 0 0 ${theme.radius.lg} ${theme.radius.lg};
+  background: ${(p) => recipe(p).border};
+  i {
+    width: ${theme.spacing[1]};
+    height: ${theme.spacing[1]};
+    border-radius: ${theme.radius.circle};
+    background: ${(p) => recipe(p).muted};
+  }
 `
 export const Stand = styled.div`
   width: ${theme.spacing[24]};
   max-width: 40%;
-  height: ${theme.spacing[5]};
+  height: ${theme.spacing[6]};
   border-bottom: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
   position: relative;
   &::before {

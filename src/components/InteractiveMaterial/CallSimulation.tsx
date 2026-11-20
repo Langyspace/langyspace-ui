@@ -13,6 +13,8 @@ export function CallSimulation({
   direction = 'outgoing',
   active = true,
   ringtoneSrc,
+  ringtoneVolume = 0.18,
+  messages,
   playback,
   avatarUrl,
   signalPoor = false,
@@ -50,6 +52,7 @@ export function CallSimulation({
   const waiting = state === 'idle' || state === 'ringing'
   const ringtone = useCallRingtone({
     src: ringtoneSrc,
+    volume: ringtoneVolume,
     playing: active && !disabled && direction === 'incoming' && waiting,
   })
   const start =
@@ -117,6 +120,16 @@ export function CallSimulation({
             {pressedKey ? <div>{pressedKey}</div> : null}
           </Styled.Caption>
         ) : null}
+        {messages?.length ? (
+          <Styled.PhoneMessages aria-label={contactName}>
+            {messages.map((message) => (
+              <Styled.Caption key={message.id}>
+                {message.label ? <small>{message.label}</small> : null}
+                {message.text}
+              </Styled.Caption>
+            ))}
+          </Styled.PhoneMessages>
+        ) : null}
         {state === 'connected' && playback ? (
           <AudioSequenceControls {...playback} density="compact" />
         ) : null}
@@ -178,10 +191,12 @@ export function CallSimulation({
           </Styled.Status>
         ) : null}
       </Styled.Phone>
-      <Common.Stack>
-        {status ? <Common.Hint role="status">{status}</Common.Hint> : null}
-        {children}
-      </Common.Stack>
+      {children || status ? (
+        <Styled.Support>
+          {status ? <Common.Hint role="status">{status}</Common.Hint> : null}
+          {children}
+        </Styled.Support>
+      ) : null}
     </Styled.Root>
   )
 }

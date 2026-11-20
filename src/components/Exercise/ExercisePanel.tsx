@@ -3,6 +3,7 @@ import type { ExercisePanelProps } from './ExercisePanel.types'
 export function ExercisePanel({
   title,
   counter,
+  workstationMeta,
   media,
   layout = 'stacked',
   variant = 'default',
@@ -19,9 +20,35 @@ export function ExercisePanel({
         ) : null}
         <Styled.Desktop>
           <Styled.Screen>
-            {title ? <Styled.ScreenHeader>{title}</Styled.ScreenHeader> : null}
+            <Styled.WindowBar>
+              <Styled.WindowControls aria-hidden="true">
+                <i />
+                <i />
+                <i />
+              </Styled.WindowControls>
+              {title ? (
+                <Styled.ScreenHeader>{title}</Styled.ScreenHeader>
+              ) : null}
+            </Styled.WindowBar>
             <Styled.ScreenBody>{children}</Styled.ScreenBody>
+            <Styled.Taskbar>
+              <Styled.DesktopMenu aria-hidden="true">
+                <i />
+                <i />
+                <i />
+                <i />
+              </Styled.DesktopMenu>
+              {workstationMeta?.appLabel ? (
+                <span>{workstationMeta.appLabel}</span>
+              ) : null}
+              {workstationMeta?.clock ? (
+                <time>{workstationMeta.clock}</time>
+              ) : null}
+            </Styled.Taskbar>
           </Styled.Screen>
+          <Styled.MonitorChin aria-hidden="true">
+            <i />
+          </Styled.MonitorChin>
           <Styled.Stand aria-hidden="true" />
         </Styled.Desktop>
       </Styled.Workstation>

@@ -120,7 +120,7 @@ export const VoiceBubble = styled(Bubble)`
 export const Player = styled.div`
   display: flex;
   align-items: center;
-  gap: ${theme.spacing[2]};
+  gap: ${theme.spacing[1]};
   min-width: 0;
 `
 export const Play = styled(DeviceControl)`
@@ -150,7 +150,8 @@ export const Wave = styled.div`
   justify-content: space-between;
   min-width: 0;
   height: ${theme.voiceMessage.waveformHeight};
-  gap: 2px;
+  overflow: hidden;
+  gap: 1px;
 `
 export const Bar = styled.i<{ $height: number; $played: boolean }>`
   display: block;

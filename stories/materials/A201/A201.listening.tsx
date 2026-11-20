@@ -24,6 +24,7 @@ export function ListeningSection({ active }: ListeningProps) {
     <ThemeProvider theme={phoneTheme}>
       <S.Listening
         contact={{ name: 'Anna', avatarUrl: portraits.Anna, status: 'online' }}
+        greeting={{ text: 'Hey! How’s your day?', timestamp: '09:40' }}
         audio={{
           id: content.listening.id,
           src: assets['./' + recording.file],

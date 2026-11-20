@@ -224,14 +224,14 @@ export function A102Lesson({
     },
     {
       id: 's15',
-      label: 'Role play · Now you call',
+      label: 'Role play · Your turn to ask',
       content: (
         <SlidePage
           width="exercise"
           density="compact"
           eyebrow="Role play"
-          title="Now you call"
-          instruction="Call Emma. Ask for her last name, spelling and phone number."
+          title="Your turn to ask"
+          instruction="Ask your teacher for their last name, spelling and phone number."
         >
           <OutgoingCall active={pageId === 's15'} />
         </SlidePage>

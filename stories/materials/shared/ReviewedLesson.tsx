@@ -196,6 +196,10 @@ function PageContent({
       <ThemeProvider theme={phoneTheme}>
         <VoiceMessageExercise
           contact={{ name: 'Kim', avatarUrl: kimAvatar, status: 'online' }}
+          greeting={{
+            text: page.greeting ?? 'Hi! I have a message for you.',
+            timestamp: '21:10',
+          }}
           audio={{
             id: 'L.1',
             src: recordings.find(

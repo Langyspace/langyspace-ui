@@ -16,10 +16,6 @@ export const Root = styled.section.withConfig({
   font-family: ${theme.typography.fontFamily.sans};
   min-width: 0;
   color: ${(p) => Common.recipe(p).foreground};
-  > div:last-child {
-    flex: 1;
-    min-width: min(100%, 200px);
-  }
 `
 export const Phone = styled.div<{ $video?: boolean; $compact?: boolean }>`
   width: 280px;
@@ -211,4 +207,21 @@ export const PoorSignal = styled(ConnectionSignal)`
   i:nth-child(4) {
     height: 40px;
   }
+`
+
+export const PhoneMessages = styled.div`
+  display: grid;
+  gap: ${theme.spacing[2]};
+  align-self: stretch;
+  min-width: 0;
+  ${Caption} {
+    min-height: 0;
+    padding: ${theme.spacing[2]} ${theme.spacing[3]};
+    font-size: ${theme.typography.fontSize.xs};
+  }
+`
+
+export const Support = styled(Common.Stack)`
+  flex: 1;
+  min-width: min(100%, 200px);
 `

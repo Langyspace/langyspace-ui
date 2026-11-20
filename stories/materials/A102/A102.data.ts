@@ -1,5 +1,7 @@
-import kimAvatar from '../A101/assets/bust_kim.webp'
-import anaAvatar from '../A101/assets/bust_ana.webp'
+import {
+  kim as kimAvatar,
+  ana as anaAvatar,
+} from '../shared/characterPortraits'
 import type { SymbolItem } from './A102.types'
 export const portraits = { Kim: kimAvatar, Ana: anaAvatar }
 export const numbers: readonly SymbolItem[] = [
@@ -19,33 +21,34 @@ export const numbers: readonly SymbolItem[] = [
   word,
   symbol: String(index),
 }))
+// Approximate PT-BR sound tips; the recording remains the English letter name.
 const letterNames = [
-  'ay',
-  'bee',
-  'see',
-  'dee',
-  'ee',
-  'ef',
-  'jee',
-  'aitch',
-  'eye',
-  'jay',
-  'kay',
-  'el',
-  'em',
-  'en',
-  'oh',
-  'pee',
-  'cue',
-  'ar',
-  'ess',
-  'tee',
-  'you',
-  'vee',
-  'double-you',
-  'ex',
-  'why',
-  'zee',
+  'êi',
+  'bí',
+  'sí',
+  'dí',
+  'í',
+  'éf',
+  'djí',
+  'êitch',
+  'ái',
+  'djêi',
+  'kêi',
+  'él',
+  'ém',
+  'én',
+  'ôu',
+  'pí',
+  'kiú',
+  'ár',
+  'és',
+  'tí',
+  'iú',
+  'ví',
+  'dâbol iú',
+  'éks',
+  'uái',
+  'zí',
 ]
 export const letters: readonly SymbolItem[] = [
   ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ',

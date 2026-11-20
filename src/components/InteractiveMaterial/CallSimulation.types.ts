@@ -16,6 +16,10 @@ export interface CallSimulationProps extends Omit<
   /** Pause the exercise, including its ringtone, when leaving its slide. */
   active?: boolean
   ringtoneSrc?: string
+  /** Restrained notification level, independent of lesson speech volume. */
+  ringtoneVolume?: number
+  /** Conversation prompts rendered inside the phone using its caption bubbles. */
+  messages?: readonly { id: string; text: ReactNode; label?: ReactNode }[]
   /** Recorded-turn controls live immediately beside the phone caption. */
   playback?: AudioSequenceControlsProps
   avatarUrl?: string

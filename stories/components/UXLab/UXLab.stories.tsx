@@ -1,3 +1,4 @@
+import { A102Lesson } from '../../materials/A102/A102Lesson'
 import { A103Lesson } from '../../materials/A103/A103Lesson'
 import { useState } from 'react'
 import { withVoiceMessageLayout } from '../../materials/shared/deviceTheme'
@@ -265,5 +266,14 @@ export const ContextualFamilyScene: Story = {
 }
 export const ConversationAndComprehension: Story = {
   render: () => <A103Lesson initialPageId="s71" />,
+  tags: ['visual-review'],
+}
+
+export const ReceptionMonitor: Story = {
+  render: () => <A102Lesson initialPageId="s13" />,
+  tags: ['visual-review'],
+}
+export const AskYourTeacherOnThePhone: Story = {
+  render: () => <A102Lesson initialPageId="s15" />,
   tags: ['visual-review'],
 }

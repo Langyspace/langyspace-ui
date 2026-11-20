@@ -129,11 +129,12 @@ export const Callout = styled(Common.Surface)<{
   top: ${(p) => p.$top}px;
   width: max-content;
   max-width: min(
-    19rem,
+    22rem,
     ${(p) => (p.$imageWidth === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageWidth - 16)}px`)}
   );
-  max-height: ${(p) => (p.$imageHeight === undefined ? 'calc(100% - 1rem)' : `${Math.max(0, p.$imageHeight - 16)}px`)};
-  overflow: auto;
+  height: auto;
+  max-height: none;
+  overflow: visible;
   padding: ${theme.spacing[3]};
   gap: ${theme.spacing[2]};
   box-shadow: ${theme.shadows.md};

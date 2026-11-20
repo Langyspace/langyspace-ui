@@ -2,7 +2,11 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
 import type { CallRingtoneOptions } from './useCallRingtone.types'
 
-export function useCallRingtone({ src, playing }: CallRingtoneOptions) {
+export function useCallRingtone({
+  src,
+  playing,
+  volume = 0.18,
+}: CallRingtoneOptions) {
   const prepare = usePreparedAudio(src ? [src] : [])
   const current = useRef<HTMLAudioElement | null>(null)
   const version = useRef(0)
@@ -20,12 +24,13 @@ export function useCallRingtone({ src, playing }: CallRingtoneOptions) {
     const audio = prepare(src)
     current.current = audio
     audio.loop = true
+    audio.volume = Math.max(0, Math.min(1, volume))
     const failed = () => {
       if (request === version.current) setBlocked(true)
     }
     audio.onerror = failed
     void audio.play().catch(failed)
-  }, [src, prepare, stop])
+  }, [src, prepare, stop, volume])
   useEffect(() => {
     if (playing) ring()
     else stop()

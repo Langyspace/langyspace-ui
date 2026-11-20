@@ -1,3 +1,4 @@
+import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -110,7 +111,9 @@ export function AlphabetReference({ speech }: { speech: A102Speech }) {
         showInitial: pronunciation,
         onToggleInitial: () => setPronunciation(!pronunciation),
         labels: {
-          hint: pronunciation ? 'Hide pronunciation' : 'Show pronunciation',
+          hint: pronunciation
+            ? 'Hide Portuguese sound tips'
+            : 'Show Portuguese sound tips',
         },
       }}
     />
@@ -234,6 +237,7 @@ export function ContactPractice() {
     <ExercisePanel
       variant="workstation"
       title="New student"
+      workstationMeta={{ appLabel: 'Student registration', clock: '09:41' }}
       media={
         <img
           src={reception}
@@ -254,7 +258,7 @@ export function ContactPractice() {
           hint={field.id === 'phone' ? 'Use a made-up number.' : undefined}
         >
           <TextInput
-            size="lg"
+            size="md"
             type={field.id === 'phone' ? 'tel' : 'text'}
             autoComplete="off"
             spellCheck={false}
@@ -296,6 +300,7 @@ export function CallPractice({
         direction="incoming"
         active={active}
         ringtoneSrc={ringtone}
+        ringtoneVolume={0.7}
         contactName="Kim"
         initials="K"
         avatarUrl={portraits.Kim}
@@ -353,47 +358,45 @@ export function CallPractice({
   )
 }
 export function OutgoingCall({ active }: { active: boolean }) {
+  const teacher = useMaterialTeacher()
   const [state, setState] = useState<'idle' | 'connected' | 'ended'>('idle')
   useEffect(() => {
     if (!active) setState('idle')
   }, [active])
+  const firstName =
+    teacher.name === 'Your teacher' ? '' : teacher.name.split(/\s+/)[0]
   return (
     <ThemeProvider theme={callTheme}>
       <CallSimulation
         density="compact"
         direction="outgoing"
         active={active}
-        contactName="Emma"
-        initials="E"
+        contactName={teacher.name}
+        initials={teacher.name
+          .split(/\s+/)
+          .slice(0, 2)
+          .map((part) => part[0])
+          .join('')}
+        avatarUrl={teacher.avatarUrl}
         state={state}
         elapsedLabel=""
+        messages={[
+          firstName ? `Hi, ${firstName}! How are you?` : 'Hi! How are you?',
+          'What’s your last name?',
+          'How do you spell it?',
+          'What’s your phone number?',
+        ].map((text, index) => ({ id: String(index), text }))}
         onCall={() => setState('connected')}
         onHangUp={() => setState('ended')}
         disabled={!active}
         labels={{
-          idle: 'Call Emma',
-          call: 'Call Emma',
+          idle: 'Your turn to ask',
+          call: `Call ${teacher.name}`,
           callAgain: 'Call again',
           hangUp: 'End call',
           ended: 'Call ended',
         }}
-      >
-        <LearningDialogue
-          density="compact"
-          lines={[
-            'Hi, Emma! How are you?',
-            'What’s your last name?',
-            'How do you spell it?',
-            'What’s your phone number?',
-          ].map((content, index) => ({
-            id: String(index),
-            speaker: 'You',
-            avatarUrl: portraits.Ana,
-            side: 'end',
-            content,
-          }))}
-        />
-      </CallSimulation>
+      />
     </ThemeProvider>
   )
 }

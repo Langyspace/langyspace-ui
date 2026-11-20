@@ -1,9 +1,6 @@
+import { prepareMaterialRecordings } from '../shared/prepareMaterialRecordings'
 import { ReviewedLesson } from '../shared/ReviewedLesson'
-import type {
-  ReviewedPage,
-  ReviewedClipRecord,
-} from '../shared/ReviewedLesson.types'
-import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
+import type { ReviewedPage } from '../shared/ReviewedLesson.types'
 import data from './A104.review.json'
 import provenance from './audio-provenance.json'
 import type { A104LessonProps } from './A104.types'
@@ -20,12 +17,7 @@ const audio = import.meta.glob('./assets/audio/*.mp3', {
 }) as Record<string, string>
 const image = (id: string) =>
   images[`./assets/${id}.webp`] ?? images[`./assets/${id}.png`] ?? ''
-const recordings: readonly PreparedRecording[] = (
-  provenance.items as readonly ReviewedClipRecord[]
-).flatMap((clip) => {
-  const src = audio['./' + clip.file]
-  return src ? [{ id: clip.id, text: clip.text, src }] : []
-})
+const recordings = prepareMaterialRecordings(provenance.items, audio)
 const pages = (data.pages as readonly ReviewedPage[]).map((page) => {
   if (page.kind === 'vocabulary')
     return {

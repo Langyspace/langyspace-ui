@@ -147,3 +147,13 @@ keeps native scrolling. Content planning rules are centralized in docs/materials
 - `SceneExplorer.connections` joins hotspot IDs using the same measured source-image geometry as the markers. `SceneHotspot.example` renders a short usage example in its callout; consumer-owned playback can use a prepared label + pause + example recording. `imageSizing="presentation"` fits the entire scene into the lesson viewport without cropping the hotspot targets.
 - `RolePlayExercise.imageFit` defaults to contain; instructions mode omits empty role rows and empty step lists. Its existing children/tracker slots compose an interactive scene with guided oral prompts without cloning a new exercise layout.
 - `SlidePage.questions` owns the responsive conversation/comprehension split. The maintained materials and UX Lab Storybook use the same component.
+
+### Device context and listening identity (feedback38)
+
+`CallSimulation.messages` renders consumer-authored prompts inside the phone, reusing its caption bubbles. External children remain exercise support; omit the empty side slot. `ringtoneVolume` defaults to0.18 and controls only the SFX, not speech. The existing lifecycle stops the tone on answer/end/inactivity/visibility/unmount.
+
+`ExercisePanel` workstation accepts `workstationMeta.appLabel` and `.clock`. It uses a landscape monitor with window/task bars, chin and stand; native fields are arranged compactly, and the contextual image retains its proportions. Decorative OS chrome has no fake system actions.
+
+`VoiceMessageExercise` uses one contact identity for header and voice-note portrait; contextual introductory text stays in the existing greeting prop. `SceneExplorer` short label/example callouts use natural height and visible overflow rather than inner scrollbars.
+
+The supplied A102 mobile-soft file is already attenuated to approximately−30.46LUFS, so that exercise explicitly uses volume0.7; the generic0.18 default protects unattenuated assets. Do not stack both reductions blindly. Playback/perceptual acceptance remains with the product owner.

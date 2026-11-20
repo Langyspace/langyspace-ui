@@ -207,3 +207,10 @@ export const ManualTranscriptAfterReplay: Story = {
   },
   tags: ['visual-review'],
 }
+
+export const ContextBeforeVoiceNote: Story = {
+  args: {
+    greeting: { text: 'Hi! Here’s a quick update.', timestamp: '19:40' },
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}

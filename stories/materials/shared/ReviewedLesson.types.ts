@@ -63,7 +63,12 @@ export type ReviewedPage = PageBase &
         lines: readonly ReviewedTurn[]
         questions?: readonly ReviewedPrompt[]
       }
-    | { kind: 'listening'; message: string; items: readonly ReviewedPrompt[] }
+    | {
+        kind: 'listening'
+        message: string
+        greeting?: string
+        items: readonly ReviewedPrompt[]
+      }
     | {
         kind: 'introductions'
         image: { src: string; alt: string }
