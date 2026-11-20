@@ -6,15 +6,18 @@ export function AnswerDisclosure({
   answer,
   question,
   marker,
+  answerMinLines,
 }: {
   answer: ReactNode
   question: string
   marker?: ReactNode
+  answerMinLines?: number
 }) {
   const [open, setOpen] = useState(false)
   return (
     <RevealCard
       presentation="prompt"
+      answerMinLines={answerMinLines}
       answer={answer}
       marker={marker}
       revealed={open}

@@ -104,6 +104,14 @@ export const Bubble = styled.div`
 export const VoiceBubble = styled(Bubble)`
   width: 86%;
 `
+export const PhotoBubble = styled(Bubble)`
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: ${theme.radius.lg};
+  }
+`
 export const Player = styled.div`
   display: flex;
   align-items: center;

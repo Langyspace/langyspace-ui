@@ -41,8 +41,15 @@ export function ExercisePanel({
               {workstationMeta?.appLabel ? (
                 <span>{workstationMeta.appLabel}</span>
               ) : null}
-              {workstationMeta?.clock ? (
-                <time>{workstationMeta.clock}</time>
+              {workstationMeta?.clock || workstationMeta?.date ? (
+                <Styled.DesktopClock>
+                  {workstationMeta.clock ? (
+                    <time>{workstationMeta.clock}</time>
+                  ) : null}
+                  {workstationMeta.date ? (
+                    <span>{workstationMeta.date}</span>
+                  ) : null}
+                </Styled.DesktopClock>
               ) : null}
             </Styled.Taskbar>
           </Styled.Screen>

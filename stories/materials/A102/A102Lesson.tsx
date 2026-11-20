@@ -185,7 +185,7 @@ export function A102Lesson({
           width="exercise"
           eyebrow="Grammar"
           title="My and your"
-          instruction="Talk about yourself. Ask about someone else."
+          instruction="Use my for yourself and your for the person you’re talking to."
         >
           <Grammar />
         </SlidePage>

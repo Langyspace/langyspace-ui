@@ -180,14 +180,14 @@ export const Desktop = styled.div`
 export const Screen = styled.div`
   width: 100%;
   min-width: 0;
-  min-height: 0;
-  aspect-ratio: 16 / 10;
+  min-height: min-content;
   display: flex;
   flex-direction: column;
-  border: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
+  border: ${theme.spacing[2]} solid ${theme.exercises.workstation.frame};
   border-bottom: 0;
   border-radius: ${theme.radius.lg} ${theme.radius.lg} 0 0;
   background: ${(p) => recipe(p).canvas};
+  box-shadow: 0 0 0 1px ${theme.exercises.workstation.edge};
   overflow: hidden;
 `
 export const WindowBar = styled.div`
@@ -195,9 +195,10 @@ export const WindowBar = styled.div`
   align-items: center;
   gap: ${theme.spacing[3]};
   min-height: ${theme.spacing[8]};
+  flex-shrink: 0;
   padding: ${theme.spacing[1]} ${theme.spacing[3]};
-  border-bottom: 1px solid ${(p) => recipe(p).border};
-  background: ${(p) => recipe(p).surface};
+  background: ${theme.exercises.workstation.windowBar};
+  color: ${theme.exercises.workstation.windowForeground};
 `
 export const WindowControls = styled.span`
   display: inline-flex;
@@ -207,7 +208,13 @@ export const WindowControls = styled.span`
     width: ${theme.spacing[2]};
     height: ${theme.spacing[2]};
     border-radius: ${theme.radius.circle};
-    background: ${(p) => recipe(p).muted};
+    background: ${theme.exercises.workstation.close};
+    &:nth-child(2) {
+      background: ${theme.exercises.workstation.minimize};
+    }
+    &:nth-child(3) {
+      background: ${theme.exercises.workstation.maximize};
+    }
   }
 `
 export const ScreenHeader = styled.h3`
@@ -222,7 +229,7 @@ export const ScreenBody = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-content: center;
-  flex: 1;
+  flex: 1 0 auto;
   min-width: 0;
   padding: ${theme.spacing[4]};
   gap: ${theme.spacing[3]};
@@ -238,16 +245,25 @@ export const Taskbar = styled.div`
   align-items: center;
   gap: ${theme.spacing[2]};
   min-height: ${theme.spacing[8]};
+  flex-shrink: 0;
   padding: ${theme.spacing[1]} ${theme.spacing[3]};
-  border-top: 1px solid ${(p) => recipe(p).border};
-  background: ${(p) => recipe(p).surface};
+  background: ${theme.exercises.workstation.taskbar};
   font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize['2xs']};
-  color: ${(p) => recipe(p).muted};
-  time {
-    margin-left: auto;
-    font-variant-numeric: tabular-nums;
+  color: ${theme.exercises.workstation.taskbarForeground};
+  > span {
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
+`
+export const DesktopClock = styled.div`
+  display: grid;
+  flex-shrink: 0;
+  gap: ${theme.spacing[1]};
+  margin-left: auto;
+  text-align: right;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 `
 export const DesktopMenu = styled.span`
   display: grid;
@@ -265,24 +281,24 @@ export const MonitorChin = styled.div`
   width: 100%;
   height: ${theme.spacing[4]};
   border-radius: 0 0 ${theme.radius.lg} ${theme.radius.lg};
-  background: ${(p) => recipe(p).border};
+  background: ${theme.exercises.workstation.frame};
   i {
     width: ${theme.spacing[1]};
     height: ${theme.spacing[1]};
     border-radius: ${theme.radius.circle};
-    background: ${(p) => recipe(p).muted};
+    background: ${theme.exercises.workstation.edge};
   }
 `
 export const Stand = styled.div`
   width: ${theme.spacing[24]};
   max-width: 40%;
   height: ${theme.spacing[6]};
-  border-bottom: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
+  border-bottom: ${theme.spacing[2]} solid ${theme.exercises.workstation.frame};
   position: relative;
   &::before {
     content: '';
     position: absolute;
     inset: 0 35%;
-    background: ${(p) => recipe(p).border};
+    background: ${theme.exercises.workstation.frame};
   }
 `

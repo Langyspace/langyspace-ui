@@ -793,6 +793,17 @@ const simulations = {
 } as const
 
 const exercises = {
+  workstation: {
+    frame: palette.neutral[400],
+    edge: palette.neutral[600],
+    windowBar: palette.feedback.info,
+    windowForeground: palette.white,
+    taskbar: palette.neutral[700],
+    taskbarForeground: palette.neutral[200],
+    close: palette.accent.pink,
+    minimize: palette.feedback.warning,
+    maximize: palette.feedback.success,
+  },
   negative: '#CF2634',
   question: '#2563D9',
   sceneHeight: 'clamp(5.75rem, 18cqh, 11.25rem)',

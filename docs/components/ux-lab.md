@@ -156,6 +156,12 @@ keeps native scrolling. Content planning rules are centralized in docs/materials
 
 `VoiceMessageExercise` uses one contact identity for header and voice-note portrait; contextual introductory text stays in the existing greeting prop. `SceneExplorer` short label/example callouts use natural height and visible overflow rather than inner scrollbars.
 
+Feedback40 adds the optional shared-photo attachment to the same WhatsApp owner.
+The A103 listening composition demonstrates photo + voice note; A102 demonstrates
+the monitor's colored chrome/date and the focused my/your grammar practice.
+Family introductions keep the action above a three-fact record, with stable model
+space through RevealCard.answerMinLines. All are source compositions of the UI Library.
+
 The supplied A102 mobile-soft file is already attenuated to approximately−30.46LUFS, so that exercise explicitly uses volume0.7; the generic0.18 default protects unattenuated assets. Do not stack both reductions blindly. Playback/perceptual acceptance remains with the product owner.
 
 ### Named speakers and fact-based introductions (feedback39)

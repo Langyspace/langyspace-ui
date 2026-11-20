@@ -52,6 +52,8 @@ export interface VoiceMessageExerciseProps extends Omit<
 > {
   contact: { name: string; avatarUrl?: string; status?: string }
   greeting?: { text: string; timestamp: string }
+  /** A real image shared in the conversation, before its voice message. */
+  attachment?: { src: string; alt: string; timestamp?: string }
   audio: VoiceMessageAudio
   /** Pause when leaving a slide, without losing its transcript/listening history. */
   active?: boolean

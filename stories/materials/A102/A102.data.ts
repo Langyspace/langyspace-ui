@@ -45,7 +45,7 @@ const letterNames = [
   'tí',
   'iú',
   'ví',
-  'dâbol iú',
+  'dábliu',
   'éks',
   'uái',
   'zí',

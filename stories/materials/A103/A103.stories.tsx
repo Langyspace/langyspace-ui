@@ -29,6 +29,7 @@ export const Dialogue: Story = { args: { initialPageId: 's71' } }
 export const Grammar: Story = { args: { initialPageId: 's8' } }
 export const Listening: Story = {
   args: { initialPageId: 's10', learnerName: 'Carla' },
+  tags: ['visual-review'],
 }
 export const RolePlay: Story = { args: { initialPageId: 's12' } }
 

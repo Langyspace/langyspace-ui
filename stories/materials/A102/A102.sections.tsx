@@ -11,10 +11,9 @@ import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/Ro
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { FieldRoot } from '../../../src/components/Form/FieldRoot'
 import { TextInput } from '../../../src/components/Form/TextInput'
-import { Button } from '../../../src/components/Button/Button'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import { PromptExercise } from '../shared/LessonExercises'
+import { GapExercise, PromptExercise } from '../shared/LessonExercises'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import {
   numbers,
@@ -193,38 +192,41 @@ export function Grammar() {
   return (
     <Common.Stack>
       <GrammarTable
-        title="Names and numbers"
+        title="My and your"
         captionVisibility="screen-reader"
-        columns={{ subject: 'Use', verb: 'Form', example: 'Example' }}
+        columns={{ subject: 'Who?', verb: 'Word + noun', example: 'Example' }}
         rows={[
           {
             id: 'my',
             subject: 'About me',
-            verb: 'my',
-            example: 'My last name is Souza.',
+            verb: 'my + name',
+            example: 'My name is Ana.',
           },
           {
             id: 'your',
             subject: 'About you',
-            verb: 'your',
-            example: 'What’s your phone number?',
-          },
-          {
-            id: 'it',
-            subject: 'A name or number',
-            verb: 'It’s',
-            example: 'It’s 984 221 507.',
+            verb: 'your + name',
+            example: 'What’s your name?',
           },
         ]}
       />
-      <Common.Hint>What is = What’s. It is = It’s.</Common.Hint>
-      <PromptExercise
-        numbered={false}
+      <Common.Hint>
+        Use my or your before a noun: name, number, teacher.
+      </Common.Hint>
+      <GapExercise
+        choices={['My', 'your']}
         items={[
           {
-            id: 'check',
-            prompt: 'Is that right?',
-            answer: 'Yes, that’s right. / No, sorry. It’s …',
+            id: 'my-name',
+            before: '',
+            after: ' name is Ana.',
+            answer: 'My',
+          },
+          {
+            id: 'your-number',
+            before: 'What’s ',
+            after: ' phone number?',
+            answer: 'your',
           },
         ]}
       />
@@ -237,7 +239,11 @@ export function ContactPractice() {
     <ExercisePanel
       variant="workstation"
       title="New student"
-      workstationMeta={{ appLabel: 'Student registration', clock: '09:41' }}
+      workstationMeta={{
+        appLabel: 'Student registration',
+        clock: '09:41',
+        date: '20 Nov',
+      }}
       media={
         <img
           src={reception}
@@ -365,18 +371,15 @@ export function OutgoingCall({ active }: { active: boolean }) {
   }, [active])
   const firstName =
     teacher.name === 'Your teacher' ? '' : teacher.name.split(/\s+/)[0]
+  const contactName = firstName || 'Your teacher'
   return (
     <ThemeProvider theme={callTheme}>
       <CallSimulation
         density="compact"
         direction="outgoing"
         active={active}
-        contactName={teacher.name}
-        initials={teacher.name
-          .split(/\s+/)
-          .slice(0, 2)
-          .map((part) => part[0])
-          .join('')}
+        contactName={contactName}
+        initials={firstName ? firstName.slice(0, 1) : 'T'}
         avatarUrl={teacher.avatarUrl}
         state={state}
         elapsedLabel=""
@@ -391,7 +394,7 @@ export function OutgoingCall({ active }: { active: boolean }) {
         disabled={!active}
         labels={{
           idle: 'Your turn to ask',
-          call: `Call ${teacher.name}`,
+          call: `Call ${contactName}`,
           callAgain: 'Call again',
           hangUp: 'End call',
           ended: 'Call ended',

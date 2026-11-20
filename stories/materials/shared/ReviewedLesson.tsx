@@ -201,6 +201,7 @@ function PageContent({
             text: page.greeting ?? 'Hi! I have a message for you.',
             timestamp: '21:10',
           }}
+          attachment={page.image}
           audio={{
             id: 'L.1',
             src: recordings.find(
@@ -244,6 +245,18 @@ function PageContent({
         tracker={
           choice ? (
             <Common.Stack>
+              <PromptExercise
+                key={choice.id}
+                numbered={false}
+                answerMinLines={3}
+                items={[
+                  {
+                    id: 'introduce',
+                    prompt: 'Introduce them. Add a job or a city.',
+                    answer: `${choice.introduction} ${choice.detail}`,
+                  },
+                ]}
+              />
               <Common.Surface>
                 <Common.Heading>{choice.label}</Common.Heading>
                 <KeyValueList
@@ -254,17 +267,6 @@ function PageContent({
                   }))}
                 />
               </Common.Surface>
-              <PromptExercise
-                key={choice.id}
-                numbered={false}
-                items={[
-                  {
-                    id: 'introduce',
-                    prompt: 'Introduce them. Add a job or a city.',
-                    answer: `${choice.introduction} ${choice.detail}`,
-                  },
-                ]}
-              />
             </Common.Stack>
           ) : undefined
         }

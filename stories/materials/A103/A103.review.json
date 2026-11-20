@@ -436,7 +436,11 @@
           "answer": "She’s from Korea."
         }
       ],
-      "greeting": "Hi! Look at this photo."
+      "greeting": "Hi! Look at this photo.",
+      "image": {
+        "src": "scene-jin-tom",
+        "alt": "Jin and Tom standing together in a photo shared by Kim."
+      }
     },
     {
       "id": "s101",
@@ -484,6 +488,10 @@
           "detail": "He’s a student.",
           "facts": [
             {
+              "label": "Name",
+              "value": "Leo"
+            },
+            {
               "label": "Family",
               "value": "Ana’s brother"
             },
@@ -523,6 +531,14 @@
           "introduction": "These are my parents.",
           "detail": "They’re from Recife.",
           "facts": [
+            {
+              "label": "Family",
+              "value": "Ana’s parents"
+            },
+            {
+              "label": "Mother’s job",
+              "value": "doctor"
+            },
             {
               "label": "From",
               "value": "Recife"

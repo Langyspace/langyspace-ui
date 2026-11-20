@@ -2,6 +2,11 @@
 
 ## VoiceMessageExercise
 
+`attachment={{ src, alt, timestamp? }}` adds a real shared photo between the
+greeting and voice note. The image keeps its natural ratio and has native alt text;
+it does not reveal the transcript or change listen counting. A listening task
+about a photo must supply that photo rather than referring to absent content.
+
 A reusable phone listening exercise with device frame, notch/status bar, contact, incoming text and voice note, native playback controls, transcript and question choices. The source is the [current Claude A1.01 listening page](https://claude.ai/artifact/KX94fLxvBjhqmz8VmHpjgr), inspected in the browser on 2026-11-16; measurements and source limitations are recorded in the epic plan.
 
 ```tsx

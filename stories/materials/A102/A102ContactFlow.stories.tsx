@@ -40,3 +40,14 @@ export const AlphabetWithPortugueseTips: Story = {
   args: { initialPageId: 's6' },
   tags: ['visual-review'],
 }
+
+export const MyAndYourGrammar: Story = {
+  args: { initialPageId: 's10' },
+  tags: ['visual-review'],
+}
+
+export const NarrowWorkstation: Story = {
+  args: { initialPageId: 's13' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['visual-review', 'layout-boundary'],
+}

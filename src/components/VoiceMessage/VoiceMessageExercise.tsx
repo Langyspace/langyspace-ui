@@ -40,6 +40,7 @@ function formatTime(seconds: number) {
 function VoiceMessageContent({
   contact,
   greeting,
+  attachment,
   audio,
   questions,
   questionHeading,
@@ -164,6 +165,14 @@ function VoiceMessageContent({
                 {greeting.text}
                 <Styled.Time>{greeting.timestamp}</Styled.Time>
               </Styled.Bubble>
+            ) : null}
+            {attachment ? (
+              <Styled.PhotoBubble>
+                <img src={attachment.src} alt={attachment.alt} />
+                {attachment.timestamp ? (
+                  <Styled.Time>{attachment.timestamp}</Styled.Time>
+                ) : null}
+              </Styled.PhotoBubble>
             ) : null}
             <Styled.VoiceBubble>
               {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks after the configured listening pass for this exercise. */}

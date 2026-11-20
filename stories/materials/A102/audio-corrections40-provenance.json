@@ -1,0 +1,627 @@
+{
+  "taskId": "FEEDBACK40-A102-PHONEME-AUDIO",
+  "revision": 40,
+  "frozen": true,
+  "sourceUI": "69ec5caf85c86b5e548e1f13bbf70774b77bf6cf",
+  "requestSha256": "1e75c8f64f0adfb9a01e25265c2131851d89ea38b9af234bcb3a2d40834ef9ba",
+  "baselineProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
+  "baselineProvenanceSha256": "62bc82df0c382349ec9459203599334cef0418333058056e54aef2ab7c108d51",
+  "items": [
+    {
+      "id": "A.A",
+      "material": "A102",
+      "kind": "native-speech",
+      "text": "A",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "outputFormat": "mp3_44100_128",
+        "body": {
+          "text": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+          "model_id": "eleven_flash_v2",
+          "language_code": "en",
+          "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "speed": 0.92
+          },
+          "apply_text_normalization": "off"
+        }
+      },
+      "synthesisFingerprint": "9679c63a3bf64420d05b786a57fe4615d0684c0cf509f6cf9f54041f9b37d518",
+      "textSha256": "559aead08264d5795d3909718cdd05abd49572e84fe55590eef31a88a08fdffd",
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["A"],
+        "phonemeRules": [
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 1,
+        "interLetterBreakSeconds": 0,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      },
+      "file": "assets/audio/A.A.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega40-audio-20261120/assets/audio/A.A.mp3",
+      "isDerived": false,
+      "historicalReplacedSha256": "d38bae0d4722ea328077f5ac1a56ba91c63179aad59e2c37cdc2b97688b070cd",
+      "voiceIdentitySource": "SameexactvoiceIDfromcurrentA102provenance;bothvoicesreportfine_tunedforFlashv2. No IVCfallback/voicecloneconversion requested.",
+      "processing": "No edits to provider MP3;one continuous request,no concat/crossfade/phoneme trimming.",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 0.464399,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 8402,
+      "sha256": "06a330c84874900a57c941bd615123683d4e8be9794859f5ecc55567d0e20792",
+      "requestId": "iqAFNPOHC38owdEQmar2",
+      "providerHeaders": {
+        "request-id": "iqAFNPOHC38owdEQmar2",
+        "character-cost": "0",
+        "history-item-id": "jj5UVcImapQ8XFt9WcH0",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "providerEndpoint": "https://api.elevenlabs.io/v1/text-to-speech/cgSgspJ2msm6clMCkdW9?output_format=mp3_44100_128",
+      "cacheDisposition": "generated_missing_phoneme_controlled",
+      "generationElapsedSeconds": 0.721,
+      "generatedAt": "2026-11-20T14:57:40.608401+00:00",
+      "durationMethod": "ffprobe metadata obtained during generation flow"
+    },
+    {
+      "id": "S.1",
+      "material": "A102",
+      "kind": "native-speech",
+      "text": "L-I-M-A.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 L\">L</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"AY1\">I</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 M\">M</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "outputFormat": "mp3_44100_128",
+        "body": {
+          "text": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 L\">L</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"AY1\">I</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 M\">M</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+          "model_id": "eleven_flash_v2",
+          "language_code": "en",
+          "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "speed": 0.92
+          },
+          "apply_text_normalization": "off"
+        }
+      },
+      "synthesisFingerprint": "fc7b33dc8145c43058b3a0401ab04cf01f69e308fb2f644be83798bada636412",
+      "textSha256": "0edb9b98a0a9e755e6d9444a56ba6861d532d562eaa54e8359409df49d861e5e",
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["L", "I", "M", "A"],
+        "phonemeRules": [
+          {
+            "letter": "L",
+            "cmu": "EH1 L",
+            "ipa": "ɛl"
+          },
+          {
+            "letter": "I",
+            "cmu": "AY1",
+            "ipa": "aɪ"
+          },
+          {
+            "letter": "M",
+            "cmu": "EH1 M",
+            "ipa": "ɛm"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 4,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      },
+      "file": "assets/audio/S.1.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega40-audio-20261120/assets/audio/S.1.mp3",
+      "isDerived": false,
+      "historicalReplacedSha256": "36c05f7a6acc2f9702c94fbbecd83fbb01c68ebaf4e2d87c122dab534b2d14d3",
+      "voiceIdentitySource": "SameexactvoiceIDfromcurrentA102provenance;bothvoicesreportfine_tunedforFlashv2. No IVCfallback/voicecloneconversion requested.",
+      "processing": "No edits to provider MP3;one continuous request,no concat/crossfade/phoneme trimming.",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.904036,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 31390,
+      "sha256": "3bf6e248094e9a61405b0300fe91957b482c39e6ad5be113e00980976d3134af",
+      "requestId": "NMB883wEsQ975AIdXXrY",
+      "providerHeaders": {
+        "request-id": "NMB883wEsQ975AIdXXrY",
+        "character-cost": "7",
+        "history-item-id": "EySFRXy73h3PLfRUUl39",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "providerEndpoint": "https://api.elevenlabs.io/v1/text-to-speech/cgSgspJ2msm6clMCkdW9?output_format=mp3_44100_128",
+      "cacheDisposition": "generated_missing_phoneme_controlled",
+      "generationElapsedSeconds": 0.719,
+      "generatedAt": "2026-11-20T14:57:40.607009+00:00",
+      "durationMethod": "ffprobe metadata obtained during generation flow"
+    },
+    {
+      "id": "D.4",
+      "material": "A102",
+      "kind": "native-speech",
+      "text": "S-O-U-Z-A.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "provider": "elevenlabs",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "outputFormat": "mp3_44100_128",
+        "body": {
+          "text": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
+          "model_id": "eleven_flash_v2",
+          "language_code": "en",
+          "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "speed": 0.92
+          },
+          "apply_text_normalization": "off"
+        }
+      },
+      "synthesisFingerprint": "c61995137491a08568cbe9176436c3ff42821dbc6fb25fea5ae39a74cdd9f4ad",
+      "textSha256": "a895734d53de784d807b73b19f9267765bd855ffb88e77007b68420fef5a139f",
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["S", "O", "U", "Z", "A"],
+        "phonemeRules": [
+          {
+            "letter": "S",
+            "cmu": "EH1 S",
+            "ipa": "ɛs"
+          },
+          {
+            "letter": "O",
+            "cmu": "OW1",
+            "ipa": "oʊ"
+          },
+          {
+            "letter": "U",
+            "cmu": "Y UW1",
+            "ipa": "juː"
+          },
+          {
+            "letter": "Z",
+            "cmu": "Z IY1",
+            "ipa": "ziː"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 5,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      },
+      "file": "assets/audio/D.4.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega40-audio-20261120/assets/audio/D.4.mp3",
+      "isDerived": false,
+      "historicalReplacedSha256": "0bbeb9e2f87bafeec29691b924e5bd2b2d10ebb85fd3577f6f1d42c828b6910a",
+      "voiceIdentitySource": "SameexactvoiceIDfromcurrentA102provenance;bothvoicesreportfine_tunedforFlashv2. No IVCfallback/voicecloneconversion requested.",
+      "processing": "No edits to provider MP3;one continuous request,no concat/crossfade/phoneme trimming.",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 2.600635,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 42674,
+      "sha256": "60f82af700c2116821527e7f09f64eb126ad1af8395621790fe52f36b5c36ade",
+      "requestId": "Zp9HluBn9suHKvMzuFq1",
+      "providerHeaders": {
+        "request-id": "Zp9HluBn9suHKvMzuFq1",
+        "character-cost": "10",
+        "history-item-id": "DSUY35usuMrZ8RVoXBne",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "providerEndpoint": "https://api.elevenlabs.io/v1/text-to-speech/cgSgspJ2msm6clMCkdW9?output_format=mp3_44100_128",
+      "cacheDisposition": "generated_missing_phoneme_controlled",
+      "generationElapsedSeconds": 0.451,
+      "generatedAt": "2026-11-20T14:57:41.063239+00:00",
+      "durationMethod": "ffprobe metadata obtained during generation flow"
+    },
+    {
+      "id": "C.2",
+      "material": "A102",
+      "kind": "native-speech",
+      "text": "Your first name is E-N-A. Is that right?",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "provider": "elevenlabs",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "Your first name is <phoneme alphabet=\"cmu-arpabet\" ph=\"IY1\">E</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 N\">N</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "outputFormat": "mp3_44100_128",
+        "body": {
+          "text": "Your first name is <phoneme alphabet=\"cmu-arpabet\" ph=\"IY1\">E</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 N\">N</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
+          "model_id": "eleven_flash_v2",
+          "language_code": "en",
+          "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "speed": 0.92
+          },
+          "apply_text_normalization": "off"
+        }
+      },
+      "synthesisFingerprint": "f38d6bb2b9e42f830de1c2bf394bd1f418764743cdfec1ab0e5bca0bd4e60578",
+      "textSha256": "ae49154ad528624b84b22eb90e0826f7e07fe4fc8b587bf788a98e7bf7ba9952",
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["E", "N", "A"],
+        "phonemeRules": [
+          {
+            "letter": "E",
+            "cmu": "IY1",
+            "ipa": "iː"
+          },
+          {
+            "letter": "N",
+            "cmu": "EH1 N",
+            "ipa": "ɛn"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 3,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": true,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      },
+      "file": "assets/audio/C.2.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega40-audio-20261120/assets/audio/C.2.mp3",
+      "isDerived": false,
+      "historicalReplacedSha256": "13aecd846273e589683b6bb3999841698cb947804626978602e54224f1027f4c",
+      "voiceIdentitySource": "SameexactvoiceIDfromcurrentA102provenance;bothvoicesreportfine_tunedforFlashv2. No IVCfallback/voicecloneconversion requested.",
+      "processing": "No edits to provider MP3;one continuous request,no concat/crossfade/phoneme trimming.",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 3.715193,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 60647,
+      "sha256": "4b99948063e5cfc3a0edab180c5a5fd352451104b7ad98b92aaeb0606ddc4a91",
+      "requestId": "XQnnV1EXMS0qCUugBhBh",
+      "providerHeaders": {
+        "request-id": "XQnnV1EXMS0qCUugBhBh",
+        "character-cost": "12",
+        "history-item-id": "XhZny5usGOhxEcmTWeoH",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "providerEndpoint": "https://api.elevenlabs.io/v1/text-to-speech/Nhs7eitvQWFTQBsf0yiT?output_format=mp3_44100_128",
+      "cacheDisposition": "generated_missing_phoneme_controlled",
+      "generationElapsedSeconds": 0.668,
+      "generatedAt": "2026-11-20T14:57:41.288831+00:00",
+      "durationMethod": "ffprobe metadata obtained during generation flow"
+    },
+    {
+      "id": "C.3",
+      "material": "A102",
+      "kind": "native-speech",
+      "text": "Your last name is S-O-U-Z-A. Is that right?",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceName": "Sarah Explains",
+      "provider": "elevenlabs",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "synthesisInput": "Your last name is <phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+        "outputFormat": "mp3_44100_128",
+        "body": {
+          "text": "Your last name is <phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
+          "model_id": "eleven_flash_v2",
+          "language_code": "en",
+          "voice_settings": {
+            "stability": 0.5,
+            "similarity_boost": 0.75,
+            "speed": 0.92
+          },
+          "apply_text_normalization": "off"
+        }
+      },
+      "synthesisFingerprint": "473fed84da811dcf6e94da866065a7884d1fe35d97e218ffa86c494d525b347f",
+      "textSha256": "742c3eabe2ec214b81f9fe7b6bc79726f221850c991383ff0381e5bc3e72389c",
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["S", "O", "U", "Z", "A"],
+        "phonemeRules": [
+          {
+            "letter": "S",
+            "cmu": "EH1 S",
+            "ipa": "ɛs"
+          },
+          {
+            "letter": "O",
+            "cmu": "OW1",
+            "ipa": "oʊ"
+          },
+          {
+            "letter": "U",
+            "cmu": "Y UW1",
+            "ipa": "juː"
+          },
+          {
+            "letter": "Z",
+            "cmu": "Z IY1",
+            "ipa": "ziː"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 5,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      },
+      "file": "assets/audio/C.3.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega40-audio-20261120/assets/audio/C.3.mp3",
+      "isDerived": false,
+      "historicalReplacedSha256": "22a734f0adf057fe9714e454122870583c3e0bf24658210b5364ffa821468549",
+      "voiceIdentitySource": "SameexactvoiceIDfromcurrentA102provenance;bothvoicesreportfine_tunedforFlashv2. No IVCfallback/voicecloneconversion requested.",
+      "processing": "No edits to provider MP3;one continuous request,no concat/crossfade/phoneme trimming.",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 4.690431,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 76111,
+      "sha256": "13fef59c9e9fc81e7f6c14c2a808263ae51d7d083a3cbc8c6d0bfdc6a86cbdf3",
+      "requestId": "0BoowTy2Ttw1Nt3QJIFy",
+      "providerHeaders": {
+        "request-id": "0BoowTy2Ttw1Nt3QJIFy",
+        "character-cost": "16",
+        "history-item-id": "rZL10HieYFOdaSXEr6e3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "providerEndpoint": "https://api.elevenlabs.io/v1/text-to-speech/Nhs7eitvQWFTQBsf0yiT?output_format=mp3_44100_128",
+      "cacheDisposition": "generated_missing_phoneme_controlled",
+      "generationElapsedSeconds": 0.538,
+      "generatedAt": "2026-11-20T14:57:41.605962+00:00",
+      "durationMethod": "ffprobe metadata obtained during generation flow"
+    }
+  ],
+  "replaceSpeechIds": ["A.A", "S.1", "D.4", "C.2", "C.3"],
+  "preservedSpeechIds": [
+    "V.0",
+    "V.1",
+    "V.2",
+    "V.3",
+    "V.4",
+    "V.5",
+    "V.6",
+    "V.7",
+    "V.8",
+    "V.9",
+    "A.B",
+    "A.C",
+    "A.D",
+    "A.E",
+    "A.F",
+    "A.G",
+    "A.H",
+    "A.I",
+    "A.J",
+    "A.K",
+    "A.L",
+    "A.M",
+    "A.N",
+    "A.O",
+    "A.P",
+    "A.Q",
+    "A.R",
+    "A.S",
+    "A.T",
+    "A.U",
+    "A.V",
+    "A.W",
+    "A.X",
+    "A.Y",
+    "A.Z",
+    "N.1",
+    "N.2",
+    "D.1",
+    "D.2",
+    "D.3",
+    "D.5",
+    "D.6",
+    "G.1",
+    "G.2",
+    "G.3",
+    "G.4",
+    "C.1",
+    "C.4",
+    "G.5",
+    "G.6"
+  ],
+  "preserveSoundEffects": true,
+  "mechanismContract": {
+    "oldMethod": "Heuristicrespelling(ay/ee)onMultilingualv2,no phonemecontrol.",
+    "newMethod": "Flashv2 +individualCMUArpabetSSMLphonemes;explicitEY1versusAY1versusIY1.",
+    "oldUnsupportedSettingsOmitted": ["style", "use_speaker_boost"],
+    "settingsOmissionReason": "CurrentFlashv2modelcapabilitiesreportcan_use_style=false andcan_use_speaker_boost=false. Stability/similarity/speed preserved.",
+    "modelCapabilityNote": "Genericmodelserves_pro_voicesflagfalse;pervoiceGETreportsbothfine_tunedandhighQualityBaseModelIdsincludingFlashv2. No use_pvc_as_ivc requested.",
+    "phonemes": {
+      "A": {
+        "cmu": "EY1",
+        "ipa": "eɪ"
+      },
+      "I": {
+        "cmu": "AY1",
+        "ipa": "aɪ"
+      },
+      "E": {
+        "cmu": "IY1",
+        "ipa": "iː"
+      },
+      "L": {
+        "cmu": "EH1 L",
+        "ipa": "ɛl"
+      },
+      "M": {
+        "cmu": "EH1 M",
+        "ipa": "ɛm"
+      },
+      "N": {
+        "cmu": "EH1 N",
+        "ipa": "ɛn"
+      },
+      "S": {
+        "cmu": "EH1 S",
+        "ipa": "ɛs"
+      },
+      "O": {
+        "cmu": "OW1",
+        "ipa": "oʊ"
+      },
+      "U": {
+        "cmu": "Y UW1",
+        "ipa": "juː"
+      },
+      "Z": {
+        "cmu": "Z IY1",
+        "ipa": "ziː"
+      }
+    },
+    "normalization": "off;do not expandabbreviations/singlelettertokens heuristically.",
+    "speechTagPolicy": "C2tagsequenceE/N/Aexactlyonceeach;onlydisplayedletters aretagged. Namesofcharacters andextraexplanationsnotadded.",
+    "guarantee": "Mechanism isofficiallysupported;actualperceptualcorrectnessnotclaimedwithoutuserlistening. No tests/playbackQA."
+  },
+  "officialDocs": [
+    {
+      "url": "https://elevenlabs.io/docs/overview/capabilities/text-to-speech/best-practices#phoneme-tags-for-v2-models",
+      "supports": "Flashv2 inlinephoneme tags,CMUrecommendation,individualwordtagging;Multilingualv2nophonemes."
+    },
+    {
+      "url": "https://elevenlabs.io/blog/pronunciation-dictionary-guide",
+      "supports": "Officialmodelmatrix:Flashv2supportsEnglishSSML;Multilingualv2doesnot."
+    },
+    {
+      "url": "https://elevenlabs.io/docs/api-reference/text-to-speech/convert",
+      "supports": "TTSbody,language_code,apply_text_normalizationoff."
+    }
+  ],
+  "scope": "Only5invalidspeechIDs:newcontinuousprovideraudio. Preserve50othersincludingD2en/pt,WandSFX. No sampletests,QA,playback,browser,repo/cloud/publication. Rootsolewriter;userlistens.",
+  "frozenAt": "2026-11-20T14:59:20.552685+00:00",
+  "summary": {
+    "finalAssets": 5,
+    "providerGenerationCalls": 5,
+    "modelId": "eleven_flash_v2",
+    "phonemeAlphabet": "cmu-arpabet",
+    "voiceIdsPreserved": true,
+    "retries": 0,
+    "failures": 0,
+    "preservedSpeechIds": 50,
+    "preservedD2": true,
+    "preservedWAUDIO": true,
+    "preservedSFX": true,
+    "speechAudioEditing": false,
+    "providerCharacterCostHeaderSum": 45,
+    "costNote": "Raw provider header sum,not currency."
+  },
+  "review": {
+    "providerRequestsAccepted": true,
+    "phonemeMechanismOfficiallyDocumented": true,
+    "phoneticOutputVerified": false,
+    "playbackQA": false,
+    "testsRun": false,
+    "ASROrAudioInspectionRun": false,
+    "browserUsed": false,
+    "sourceOrRepoWrites": false,
+    "cloudOrPublicationWrites": false,
+    "finalReviewer": "user",
+    "limits": "Request contract and realproviderreceipts documented;no claim of guaranteed pronunciation or userlistening."
+  }
+}

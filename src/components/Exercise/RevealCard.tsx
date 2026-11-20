@@ -8,6 +8,7 @@ export function RevealCard({
   children,
   type = 'button',
   presentation = 'card',
+  answerMinLines = 1,
   ...props
 }: RevealCardProps) {
   const answerId = useId()
@@ -30,6 +31,7 @@ export function RevealCard({
         <Styled.PromptAnswer
           id={answerId}
           $revealed={revealed}
+          $minLines={answerMinLines}
           aria-hidden={!revealed}
           inert={!revealed}
         >

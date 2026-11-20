@@ -24,6 +24,7 @@ export interface DialogueExerciseProps {
 export interface PromptExerciseProps {
   items: readonly { id: string; prompt: string; answer?: string }[]
   numbered?: boolean
+  answerMinLines?: number
 }
 export interface GapExerciseProps {
   items: readonly {

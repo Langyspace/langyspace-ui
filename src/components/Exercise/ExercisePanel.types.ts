@@ -6,7 +6,7 @@ export interface ExercisePanelProps extends Omit<
   title?: ReactNode
   counter?: ReactNode
   /** Illustrative desktop chrome; labels are supplied by the exercise, never a simulated save. */
-  workstationMeta?: { appLabel?: string; clock?: string }
+  workstationMeta?: { appLabel?: string; clock?: string; date?: string }
   media?: ReactNode
   layout?: 'stacked' | 'split'
   /** Warm-up keeps media above choices in one centered column, regardless of layout. */

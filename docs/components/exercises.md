@@ -4,6 +4,17 @@ The teacher and student compose these contracts with `SlidePage` and `SlideDeck`
 
 ## ExercisePanel
 
+`variant="workstation"` owns the monitor frame, colored window bar, fixed taskbar,
+chin and stand. `workstationMeta` accepts `appLabel`, `clock` and `date` supplied
+by the exercise; these are illustrative metadata, not an operating-system clock.
+The body grows with the native form fields; chrome never flex-shrinks over them.
+Its silver frame and blue title bar use the workstation tokens in `theme.exercises`.
+The contextual image remains a separate media slot at a comparable scale.
+
+`RevealCard presentation="prompt" answerMinLines={3}` can reserve a short model's
+minimum space when switching between content records. Longer text still grows;
+concealed answers remain inert and inaccessible. Omit it for the existing layout.
+
 A shared capsule with optional heading, counter and media slots. It supplies the measured compact exercise layout, without owning options, media playback or scoring.
 
 ## VocabularyGrid

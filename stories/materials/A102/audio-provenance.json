@@ -1,5 +1,5 @@
 {
-  "revision": 38,
+  "revision": 40,
   "provider": "elevenlabs",
   "items": [
     {
@@ -185,31 +185,45 @@
     {
       "id": "A.A",
       "text": "A",
-      "synthesisInput": "ay.",
-      "phoneticIntent": "Isolated American English name of letterA,ay;not article or eye.",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
       "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
+      "modelId": "eleven_flash_v2",
       "voiceSettings": {
         "stability": 0.5,
         "similarity_boost": 0.75,
-        "style": 0.1,
-        "use_speaker_boost": true,
         "speed": 0.92
       },
       "languageCode": "en",
       "file": "assets/audio/A.A.mp3",
-      "sha256": "d38bae0d4722ea328077f5ac1a56ba91c63179aad59e2c37cdc2b97688b070cd",
-      "bytes": 11327,
-      "durationSeconds": 0.650159,
-      "requestId": "EZOmXPrYOESQrd4u1TMf",
+      "sha256": "06a330c84874900a57c941bd615123683d4e8be9794859f5ecc55567d0e20792",
+      "bytes": 8402,
+      "durationSeconds": 0.464399,
+      "requestId": "iqAFNPOHC38owdEQmar2",
       "providerHeaders": {
-        "request-id": "EZOmXPrYOESQrd4u1TMf",
-        "character-cost": "1",
-        "history-item-id": "LmXapaN1rNbJLLphu9LU",
+        "request-id": "iqAFNPOHC38owdEQmar2",
+        "character-cost": "0",
+        "history-item-id": "jj5UVcImapQ8XFt9WcH0",
         "content-type": "audio/mpeg"
+      },
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["A"],
+        "phonemeRules": [
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 1,
+        "interLetterBreakSeconds": 0,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
       }
     },
     {
@@ -713,31 +727,60 @@
     {
       "id": "S.1",
       "text": "L-I-M-A.",
-      "synthesisInput": "ell, eye, em, ay.",
-      "phoneticIntent": "American letter names L/I/M/A in one continuous provider utterance;finalA=ay,not eye. No stitching/cuts.",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 L\">L</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"AY1\">I</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 M\">M</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
       "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
+      "modelId": "eleven_flash_v2",
       "voiceSettings": {
         "stability": 0.5,
         "similarity_boost": 0.75,
-        "style": 0.1,
-        "use_speaker_boost": true,
         "speed": 0.92
       },
       "languageCode": "en",
       "file": "assets/audio/S.1.mp3",
-      "sha256": "36c05f7a6acc2f9702c94fbbecd83fbb01c68ebaf4e2d87c122dab534b2d14d3",
-      "bytes": 27628,
-      "durationSeconds": 1.671837,
-      "requestId": "erEAU8jHqR57NNWdAGsT",
+      "sha256": "3bf6e248094e9a61405b0300fe91957b482c39e6ad5be113e00980976d3134af",
+      "bytes": 31390,
+      "durationSeconds": 1.904036,
+      "requestId": "NMB883wEsQ975AIdXXrY",
       "providerHeaders": {
-        "request-id": "erEAU8jHqR57NNWdAGsT",
+        "request-id": "NMB883wEsQ975AIdXXrY",
         "character-cost": "7",
-        "history-item-id": "XQntNdGUkduWOKUeSYpt",
+        "history-item-id": "EySFRXy73h3PLfRUUl39",
         "content-type": "audio/mpeg"
+      },
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["L", "I", "M", "A"],
+        "phonemeRules": [
+          {
+            "letter": "L",
+            "cmu": "EH1 L",
+            "ipa": "ɛl"
+          },
+          {
+            "letter": "I",
+            "cmu": "AY1",
+            "ipa": "aɪ"
+          },
+          {
+            "letter": "M",
+            "cmu": "EH1 M",
+            "ipa": "ɛm"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 4,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
       }
     },
     {
@@ -906,31 +949,65 @@
     {
       "id": "D.4",
       "text": "S-O-U-Z-A.",
-      "synthesisInput": "ess, oh, you, zee, ay.",
-      "phoneticIntent": "American letter names S/O/U/Z/A in one continuous provider utterance;Z=zee,finalA=ay. Not Portuguese surname pronunciation. No stitching/cuts.",
+      "synthesisInput": "<phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>.",
       "speaker": "ana",
       "voiceId": "cgSgspJ2msm6clMCkdW9",
       "voiceName": "Jessica - Playful, Bright, Warm",
       "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
+      "modelId": "eleven_flash_v2",
       "voiceSettings": {
         "stability": 0.5,
         "similarity_boost": 0.75,
-        "style": 0.1,
-        "use_speaker_boost": true,
         "speed": 0.92
       },
       "languageCode": "en",
       "file": "assets/audio/D.4.mp3",
-      "sha256": "0bbeb9e2f87bafeec29691b924e5bd2b2d10ebb85fd3577f6f1d42c828b6910a",
-      "bytes": 33061,
-      "durationSeconds": 1.996916,
-      "requestId": "ji0Qlgi4t2IohnNJ8Ls2",
+      "sha256": "60f82af700c2116821527e7f09f64eb126ad1af8395621790fe52f36b5c36ade",
+      "bytes": 42674,
+      "durationSeconds": 2.600635,
+      "requestId": "Zp9HluBn9suHKvMzuFq1",
       "providerHeaders": {
-        "request-id": "ji0Qlgi4t2IohnNJ8Ls2",
-        "character-cost": "9",
-        "history-item-id": "pqfSS9r2BWmaCvo3PXMu",
+        "request-id": "Zp9HluBn9suHKvMzuFq1",
+        "character-cost": "10",
+        "history-item-id": "DSUY35usuMrZ8RVoXBne",
         "content-type": "audio/mpeg"
+      },
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["S", "O", "U", "Z", "A"],
+        "phonemeRules": [
+          {
+            "letter": "S",
+            "cmu": "EH1 S",
+            "ipa": "ɛs"
+          },
+          {
+            "letter": "O",
+            "cmu": "OW1",
+            "ipa": "oʊ"
+          },
+          {
+            "letter": "U",
+            "cmu": "Y UW1",
+            "ipa": "juː"
+          },
+          {
+            "letter": "Z",
+            "cmu": "Z IY1",
+            "ipa": "ziː"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 5,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
       }
     },
     {
@@ -1062,38 +1139,120 @@
     {
       "id": "C.2",
       "text": "Your first name is E-N-A. Is that right?",
+      "synthesisInput": "Your first name is <phoneme alphabet=\"cmu-arpabet\" ph=\"IY1\">E</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 N\">N</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
       "speaker": "kim",
       "voiceId": "Nhs7eitvQWFTQBsf0yiT",
       "voiceName": "Sarah Explains",
       "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 5.433469,
-      "sha256": "13aecd846273e589683b6bb3999841698cb947804626978602e54224f1027f4c",
-      "synthesisInput": "Your first name is ee. en. ay. Is that right?",
-      "phoneticIntent": "Spell E, N, A as separated American letter names inside the sentence.",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
       "file": "assets/audio/C.2.mp3",
-      "baselineFile": "assets/audio/C.2.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/C.2.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/C.2.mp3"
+      "sha256": "4b99948063e5cfc3a0edab180c5a5fd352451104b7ad98b92aaeb0606ddc4a91",
+      "bytes": 60647,
+      "durationSeconds": 3.715193,
+      "requestId": "XQnnV1EXMS0qCUugBhBh",
+      "providerHeaders": {
+        "request-id": "XQnnV1EXMS0qCUugBhBh",
+        "character-cost": "12",
+        "history-item-id": "XhZny5usGOhxEcmTWeoH",
+        "content-type": "audio/mpeg"
+      },
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["E", "N", "A"],
+        "phonemeRules": [
+          {
+            "letter": "E",
+            "cmu": "IY1",
+            "ipa": "iː"
+          },
+          {
+            "letter": "N",
+            "cmu": "EH1 N",
+            "ipa": "ɛn"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 3,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": true,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      }
     },
     {
       "id": "C.3",
       "text": "Your last name is S-O-U-Z-A. Is that right?",
+      "synthesisInput": "Your last name is <phoneme alphabet=\"cmu-arpabet\" ph=\"EH1 S\">S</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"OW1\">O</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Y UW1\">U</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"Z IY1\">Z</phoneme><break time=\"0.18s\" /><phoneme alphabet=\"cmu-arpabet\" ph=\"EY1\">A</phoneme>. Is that right?",
       "speaker": "kim",
       "voiceId": "Nhs7eitvQWFTQBsf0yiT",
       "voiceName": "Sarah Explains",
       "provider": "elevenlabs",
-      "modelId": "eleven_multilingual_v2",
-      "durationSeconds": 6.408707,
-      "sha256": "22a734f0adf057fe9714e454122870583c3e0bf24658210b5364ffa821468549",
-      "synthesisInput": "Your last name is ess. oh. you. zee. ay. Is that right?",
-      "phoneticIntent": "Spell S, O, U, Z, A as separated American letter names inside the sentence; Z is zee.",
+      "modelId": "eleven_flash_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "speed": 0.92
+      },
+      "languageCode": "en",
       "file": "assets/audio/C.3.mp3",
-      "baselineFile": "assets/audio/C.3.mp3",
-      "assetPath": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/C.3.mp3",
-      "retainedFromProvenance": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/audio-provenance.json",
-      "sourceFileBeforeNormalization": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A102/assets/audio/C.3.mp3"
+      "sha256": "13fef59c9e9fc81e7f6c14c2a808263ae51d7d083a3cbc8c6d0bfdc6a86cbdf3",
+      "bytes": 76111,
+      "durationSeconds": 4.690431,
+      "requestId": "0BoowTy2Ttw1Nt3QJIFy",
+      "providerHeaders": {
+        "request-id": "0BoowTy2Ttw1Nt3QJIFy",
+        "character-cost": "16",
+        "history-item-id": "rZL10HieYFOdaSXEr6e3",
+        "content-type": "audio/mpeg"
+      },
+      "phoneticControl": {
+        "mechanism": "OfficialinlineSSMLphoneme,one individual letter pertag",
+        "alphabet": "cmu-arpabet",
+        "letters": ["S", "O", "U", "Z", "A"],
+        "phonemeRules": [
+          {
+            "letter": "S",
+            "cmu": "EH1 S",
+            "ipa": "ɛs"
+          },
+          {
+            "letter": "O",
+            "cmu": "OW1",
+            "ipa": "oʊ"
+          },
+          {
+            "letter": "U",
+            "cmu": "Y UW1",
+            "ipa": "juː"
+          },
+          {
+            "letter": "Z",
+            "cmu": "Z IY1",
+            "ipa": "ziː"
+          },
+          {
+            "letter": "A",
+            "cmu": "EY1",
+            "ipa": "eɪ"
+          }
+        ],
+        "tagCount": 5,
+        "interLetterBreakSeconds": 0.18,
+        "textNormalization": "off",
+        "noDuplicatedE": null,
+        "scope": "Force onlyletter-names;sentenceprefix/suffix remainnativeEnglish. Display text unchanged."
+      }
     },
     {
       "id": "C.4",
@@ -1255,5 +1414,12 @@
   "sourceDelta": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/a102-entrega36-audio-20261120/manifest.delta36.json",
   "derivationNote": "Three speech replacements; complete retained-reference and derived provenance from Entrega36. Ringing is separate from spoken lines.",
   "sourceDelta38": "audio-corrections38-provenance.json",
-  "bindingContract": "file is relative POSIX; local source locations belong in assetPath/sourceFile fields."
+  "bindingContract": "file is relative POSIX; local source locations belong in assetPath/sourceFile fields.",
+  "sourceDelta40": {
+    "manifest": "audio-corrections40-provenance.json",
+    "sha256": "814daa8e97d4fdf8a027331594105f127383277d99bfdff0c860df64cd4b3890",
+    "ids": ["A.A", "S.1", "D.4", "C.2", "C.3"],
+    "mechanism": "Flash v2 official SSML CMU Arpabet; exact display text, no voice change",
+    "review": "User-owned perceptual review; no playback QA performed."
+  }
 }

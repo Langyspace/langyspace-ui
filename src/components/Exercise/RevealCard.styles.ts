@@ -78,11 +78,12 @@ export const PromptTrigger = styled(Pressable)`
   }
 `
 
-export const PromptAnswer = styled.p<{ $revealed: boolean }>`
+export const PromptAnswer = styled.p<{ $revealed: boolean; $minLines: number }>`
   margin: 0;
   color: ${(p) => recipe(p).muted};
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.4;
+  min-block-size: calc(1.4em * ${(p) => Math.max(1, p.$minLines)});
   visibility: ${(p) => (p.$revealed ? 'visible' : 'hidden')};
   pointer-events: ${(p) => (p.$revealed ? 'auto' : 'none')};
 `

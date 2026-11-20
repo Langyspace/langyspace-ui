@@ -286,3 +286,13 @@ export const FamilyFactsIntroductions: Story = {
   render: () => <A103Lesson initialPageId="s11" />,
   tags: ['visual-review'],
 }
+
+export const SharedPhotoAndVoiceNote: Story = {
+  render: () => <A103Lesson initialPageId="s10" />,
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const PossessiveWords: Story = {
+  render: () => <A102Lesson initialPageId="s10" />,
+  tags: ['visual-review'],
+}

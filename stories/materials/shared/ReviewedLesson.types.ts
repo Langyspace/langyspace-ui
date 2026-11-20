@@ -67,6 +67,7 @@ export type ReviewedPage = PageBase &
         kind: 'listening'
         message: string
         greeting?: string
+        image?: { src: string; alt: string }
         items: readonly ReviewedPrompt[]
       }
     | {

@@ -120,6 +120,7 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
 export function PromptExercise({
   items,
   numbered = true,
+  answerMinLines,
 }: PromptExerciseProps) {
   return (
     <Styled.PromptList>
@@ -129,6 +130,7 @@ export function PromptExercise({
             <AnswerDisclosure
               question={item.prompt}
               answer={item.answer}
+              answerMinLines={answerMinLines}
               marker={
                 numbered ? (
                   <Common.Number aria-hidden="true">{index + 1}</Common.Number>
