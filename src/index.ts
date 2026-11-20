@@ -284,6 +284,11 @@ export { PracticeCardBody } from './components/Practice/PracticeCardBody'
 export type { PracticeCardBodyProps } from './components/Practice/PracticeCardBody.types'
 
 export { QuizOption } from './components/Quiz/QuizOption'
+export { useFeedbackSounds } from './components/Quiz/useFeedbackSounds'
+export type {
+  FeedbackSoundOutcome,
+  FeedbackSoundsController,
+} from './components/Quiz/useFeedbackSounds.types'
 export type {
   QuizOptionProps,
   QuizOptionState,

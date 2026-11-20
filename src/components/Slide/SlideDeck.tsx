@@ -1,6 +1,7 @@
 import { useSlideNavigation } from './useSlideNavigation'
 import * as Styled from './SlideDeck.styles'
 import type { SlideDeckProps } from './SlideDeck.types'
+import { useFeedbackSounds } from '../Quiz/useFeedbackSounds'
 
 export function SlideDeck({
   pages,
@@ -11,10 +12,13 @@ export function SlideDeck({
   firstPageLabel = 'Voltar à primeira página',
   navigationMode = 'pages',
   actions,
+  feedbackSounds = false,
+  feedbackSoundsLabel = 'Answer sounds',
   overlay,
   onKeyDown: onRootKeyDown,
   ...props
 }: SlideDeckProps) {
+  const sound = useFeedbackSounds()
   const { viewportRef, index, progress, goToIndex, onKeyDown } =
     useSlideNavigation({
       pages,
@@ -59,7 +63,41 @@ export function SlideDeck({
             {previousPageLabel}
           </Styled.BackButton>
         ) : null}
-        {actions ? <Styled.Actions>{actions}</Styled.Actions> : null}
+        {actions || feedbackSounds ? (
+          <Styled.Actions>
+            {feedbackSounds ? (
+              <Styled.SoundButton
+                variant="subtle"
+                shape="circle"
+                size="sm"
+                aria-label={feedbackSoundsLabel}
+                title={feedbackSoundsLabel}
+                aria-pressed={sound.enabled}
+                onClick={() => sound.setEnabled(!sound.enabled)}
+              >
+                <svg
+                  aria-hidden="true"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M11 5 6 9H3v6h3l5 4z" />
+                  {sound.enabled ? (
+                    <path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" />
+                  ) : (
+                    <path d="m16 9 5 6m0-6-5 6" />
+                  )}
+                </svg>
+              </Styled.SoundButton>
+            ) : null}
+            {actions}
+          </Styled.Actions>
+        ) : null}
       </Styled.Navigation>
       {pages.length > 0 ? (
         <Styled.Progress aria-label={label} max={100} value={progress} />

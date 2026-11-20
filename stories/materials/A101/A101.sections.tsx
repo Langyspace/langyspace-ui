@@ -96,6 +96,7 @@ export function WarmUpSection({ item }: WarmUpSectionProps) {
           key={option}
           density="compact"
           letter={String.fromCharCode(65 + i)}
+          feedbackOutcome={i === item.a ? 'correct' : 'wrong'}
           state={
             attempts.includes(i)
               ? i === item.a

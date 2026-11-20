@@ -1,9 +1,11 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { FeedbackSoundOutcome } from '../Quiz/useFeedbackSounds.types'
 
 export interface VoiceMessageChoice {
   id: string
   label: string
   feedback?: 'correct' | 'incorrect'
+  feedbackOutcome?: FeedbackSoundOutcome
 }
 
 export interface VoiceMessageQuestion {

@@ -1,10 +1,12 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { FeedbackSoundOutcome } from '../Quiz/useFeedbackSounds.types'
 export interface MinimalPairChoice {
   id: string
   word: ReactNode
   phonetic?: string
   imageUrl?: string
   imageAlt?: string
+  feedbackOutcome?: FeedbackSoundOutcome
 }
 export interface MinimalPairExerciseProps extends Omit<
   ComponentPropsWithRef<'section'>,

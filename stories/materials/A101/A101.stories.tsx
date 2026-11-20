@@ -23,6 +23,10 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const WarmUp: Story = { args: { initialPageId: 's21' } }
+export const WarmUpWithAnswerSounds: Story = {
+  args: { initialPageId: 's21' },
+  tags: ['visual-review', 'audio-review'],
+}
 export const Dialogue: Story = { args: { initialPageId: 's6' } }
 export const Grammar: Story = { args: { initialPageId: 's71' } }
 export const Matching: Story = { args: { initialPageId: 's17' } }

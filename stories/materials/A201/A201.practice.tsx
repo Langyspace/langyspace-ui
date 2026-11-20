@@ -153,6 +153,7 @@ export function WarmupSection({ index }: WarmupProps) {
           key={option}
           density="compact"
           letter={String.fromCharCode(65 + choice)}
+          feedbackOutcome={choice === item.correctIndex ? 'correct' : 'wrong'}
           state={
             attempts.includes(choice)
               ? choice === item.correctIndex

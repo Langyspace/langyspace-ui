@@ -19,6 +19,8 @@ export function VoiceMessageDemo(props: Partial<VoiceMessageExerciseProps>) {
       disabled: (attempts[question.id] ?? []).includes(correct),
       choices: question.choices.map((choice) => ({
         ...choice,
+        feedbackOutcome:
+          choice.id === correct ? ('correct' as const) : ('wrong' as const),
         feedback: (attempts[question.id] ?? []).includes(choice.id)
           ? choice.id === correct
             ? ('correct' as const)

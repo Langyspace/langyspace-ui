@@ -70,6 +70,7 @@ export function ChoiceExercise({
           <QuizOption
             key={`${index}-${option}`}
             letter={String.fromCharCode(65 + index)}
+            feedbackOutcome={index === correctIndex ? 'correct' : 'wrong'}
             density="compact"
             aria-pressed={selected === index}
             state={
@@ -163,6 +164,11 @@ export function GapExercise({ items, choices }: GapExerciseProps) {
         id: choice,
         label: choice,
         state: wrong === choice ? 'wrong' : 'default',
+        feedbackOutcome: active
+          ? active.answer === choice
+            ? ('correct' as const)
+            : ('wrong' as const)
+          : undefined,
       }))}
       onSelect={(id, choice) => {
         if (items.find((item) => item.id === id)?.answer === choice) {

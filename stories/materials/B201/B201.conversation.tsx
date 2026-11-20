@@ -142,6 +142,8 @@ export function ListeningSection({ active }: ListeningProps) {
             choices: ['yes', 'no'].map((id) => ({
               id,
               label: id === 'yes' ? 'Yes' : 'No',
+              feedbackOutcome:
+                id === correct ? ('correct' as const) : ('wrong' as const),
               feedback: chosen.includes(id)
                 ? id === correct
                   ? ('correct' as const)

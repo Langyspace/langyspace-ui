@@ -7,6 +7,7 @@ export function MaterialSlideDeck(props: SlideDeckProps) {
     <MaterialTheme>
       <Styled.MaterialDeck
         tabIndex={-1}
+        feedbackSounds
         {...props}
         data-material-theme="dark"
       />

@@ -114,6 +114,7 @@ export function WarmUp({ index, media }: IndexedAudioProps) {
           <QuizOption
             key={option}
             letter={String.fromCharCode(65 + i)}
+            feedbackOutcome={i === item.a ? 'correct' : 'wrong'}
             density="compact"
             state={
               attempts.includes(i)
@@ -184,6 +185,12 @@ export function Pronunciation({ index, media }: IndexedAudioProps) {
           id: String(i),
           word,
           phonetic,
+          feedbackOutcome:
+            target === undefined
+              ? undefined
+              : i === target
+                ? ('correct' as const)
+                : ('wrong' as const),
         }))}
         selectedId={selected}
         feedback={feedback}

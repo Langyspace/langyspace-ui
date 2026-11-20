@@ -2,6 +2,28 @@
 
 The teacher and student compose these contracts with `SlidePage` and `SlideDeck`. `Materials/A1.01` is the complete 26-screen source fixture; lesson data, answer keys, synthesis, homework destinations and private teacher notes are catalog fixtures, not package exports.
 
+## Answer sounds
+
+`QuizOption.feedbackOutcome` accepts `correct` or `wrong`, supplied by the consumer
+when the result of that alternative is known. It plays once in an accepted click,
+after the consumer callback; disabled buttons and prevented events stay silent.
+Omit the outcome on personal preferences, exploratory choices and ungraded tasks.
+No sound is triggered by state rendering, hover, answer reveal or navigation.
+
+`GapFillChoice`, `MinimalPairChoice` and `VoiceMessageChoice` carry the same optional
+outcome for their native choices. Existing result colors/icons remain independent.
+`useFeedbackSounds()` exposes the client-window mute preference, play and stop;
+`SlideDeck feedbackSounds` displays the library icon button to toggle it.
+Spoken recordings are independent. No storage, audio files, server or new provider
+is required. Context creation/resume happens only in the answer gesture and fails
+silently without affecting evaluation. Rapid responses replace the prior cue.
+
+The fixed design uses rounded sine tones with a quiet second harmonic: ascending
+280ms for correct, descending225ms for wrong, soft attack/release and bounded gain.
+Parameters are centralized in foundations/audio/feedbackSoundDesign.ts. See
+[research and limitations](../epics/choice-feedback41/sound-study.md); these are
+product choices, not clinically optimized frequencies or a retention guarantee.
+
 ## ExercisePanel
 
 `variant="workstation"` owns the monitor frame, colored window bar, fixed taskbar,

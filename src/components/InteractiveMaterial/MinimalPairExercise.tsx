@@ -2,6 +2,7 @@ import { EMPTY_LIST } from './Material.constants'
 import * as Common from './Material.shared.styles'
 import * as Styled from './MinimalPairExercise.styles'
 import type { MinimalPairExerciseProps } from './MinimalPairExercise.types'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 export function MinimalPairExercise({
   mode,
   onModeChange,
@@ -71,6 +72,8 @@ export function MinimalPairExercise({
             disabled={disabled}
             onClick={() => {
               onSelect(choice.id)
+              if (choice.feedbackOutcome)
+                playFeedbackSound(choice.feedbackOutcome)
             }}
           >
             {choice.imageUrl ? (

@@ -127,6 +127,7 @@ export function AudioChoices({ index }: { index: 0 | 1 | 2 }) {
         <QuizOption
           key={option}
           letter={String.fromCharCode(65 + i)}
+          feedbackOutcome={i === item.correctIndex ? 'correct' : 'wrong'}
           aria-pressed={selected === i}
           state={
             selected === undefined

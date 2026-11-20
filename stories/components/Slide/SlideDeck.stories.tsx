@@ -60,6 +60,11 @@ export const WarmUp: Story = {
   args: { pageId: 'warm-up' },
   tags: ['visual-review'],
 }
+
+export const AnswerSoundControl: Story = {
+  args: { pageId: 'warm-up', feedbackSounds: true },
+  tags: ['visual-review', 'audio-review'],
+}
 export const LongContent: Story = {
   args: {
     pages: [lessonPages[0]!, longPage, lessonPages[2]!],

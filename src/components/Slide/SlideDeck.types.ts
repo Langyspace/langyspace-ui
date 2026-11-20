@@ -50,6 +50,9 @@ export interface SlideDeckProps extends Omit<
   navigationMode?: 'pages' | 'continuous'
   /** Product-owned actions such as fullscreen, without duplicating the slide layout. */
   actions?: ReactNode
+  /** Show the shared answer-sound toggle; spoken lesson audio is independent. */
+  feedbackSounds?: boolean
+  feedbackSoundsLabel?: string
   /** Nonmodal material overlays, such as controlled notes, within the deck's viewport. */
   overlay?: ReactNode
 }

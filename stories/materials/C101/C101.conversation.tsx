@@ -148,6 +148,8 @@ export function Listening({ active }: { active: boolean }) {
           choices: q.o.map((label, j) => ({
             id: String(j),
             label,
+            feedbackOutcome:
+              j === q.a ? ('correct' as const) : ('wrong' as const),
             feedback:
               answers?.[i] === String(j)
                 ? j === q.a

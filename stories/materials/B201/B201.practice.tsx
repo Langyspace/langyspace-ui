@@ -95,6 +95,7 @@ export function WarmUpSection({ index }: WarmUpProps) {
                 <QuizOption
                   key={option}
                   letter={String.fromCharCode(65 + i)}
+                  feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
                   density="compact"
                   state={
                     attempts.includes(i)

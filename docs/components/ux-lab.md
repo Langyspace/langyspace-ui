@@ -167,3 +167,12 @@ The supplied A102 mobile-soft file is already attenuated to approximately−30.4
 ### Named speakers and fact-based introductions (feedback39)
 
 LearningDialogue and VoiceMessage contacts use Avatar.name/namePosition/description for a single portrait/name contract. Compact dialogues retain foreground semibold names with a spacing token. Native scrollbar tracks are hidden within the material surface, without changing overflow or gesture ownership. The A103 introduction exercise exposes the selected person’s actual family/job/city facts and an optional model, without a secret selection.
+
+### Answer feedback sounds (feedback41)
+
+QuizOption and graded native listening/gap/pair choices accept feedbackOutcome.
+The consumer supplies correctness; the shared sound engine plays a short cue on
+the accepted click. SlideDeck exposes the opt-in sound toggle, independent of
+recorded speech. Materials adopt it consistently; preferences and exploratory
+prosody samples stay silent. The AnswerFeedbackSounds story demonstrates both
+results, mute, keyboard activation and disabled choices for human review.

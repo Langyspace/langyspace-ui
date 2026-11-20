@@ -4,6 +4,7 @@ import { Button } from '../Button/Button'
 import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 
 const wave = [
   { id: 'a', height: 10 },
@@ -345,6 +346,8 @@ function VoiceMessageContent({
                     }
                     onClick={() => {
                       onAnswer(question.id, choice.id)
+                      if (choice.feedbackOutcome)
+                        playFeedbackSound(choice.feedbackOutcome)
                     }}
                   >
                     {choice.label}

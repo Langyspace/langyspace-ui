@@ -110,6 +110,7 @@ export function WarmUpSection({
               <QuizOption
                 key={option}
                 letter={String.fromCharCode(65 + i)}
+                feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
                 density="compact"
                 state={
                   attempts.includes(i)
@@ -154,6 +155,12 @@ export function PronunciationSection({
         id: String(i),
         word,
         phonetic: feedback ? phonetic : undefined,
+        feedbackOutcome:
+          target === undefined
+            ? undefined
+            : i === target
+              ? ('correct' as const)
+              : ('wrong' as const),
       }))}
       onListen={() => {
         const next = Math.random() < 0.5 ? 0 : 1

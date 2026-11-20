@@ -92,6 +92,7 @@ export function WarmUp({ index }: { index: number }) {
           <QuizOption
             key={text}
             letter={String.fromCharCode(65 + i)}
+            feedbackOutcome={i === w.a ? 'correct' : 'wrong'}
             density="compact"
             aria-pressed={chosen === i}
             state={

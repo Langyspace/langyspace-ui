@@ -6,6 +6,15 @@ import { IconButton } from '../IconButton/IconButton'
 
 const recipe = resolveSlideTheme
 
+export const SoundButton = styled(IconButton)`
+  flex-shrink: 0;
+  color: ${(p) => recipe(p).muted};
+  background: transparent;
+  &[aria-pressed='true'] {
+    color: ${(p) => recipe(p).foreground};
+  }
+`
+
 export const FirstPageButton = styled(IconButton)`
   position: absolute;
   right: max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));

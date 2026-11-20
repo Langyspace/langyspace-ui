@@ -1,4 +1,5 @@
 import { A102Lesson } from '../../materials/A102/A102Lesson'
+import { A101Lesson } from '../../materials/A101/A101Lesson'
 import { A103Lesson } from '../../materials/A103/A103Lesson'
 import { useState } from 'react'
 import { withVoiceMessageLayout } from '../../materials/shared/deviceTheme'
@@ -295,4 +296,9 @@ export const SharedPhotoAndVoiceNote: Story = {
 export const PossessiveWords: Story = {
   render: () => <A102Lesson initialPageId="s10" />,
   tags: ['visual-review'],
+}
+
+export const AnswerFeedbackSounds: Story = {
+  render: () => <A101Lesson initialPageId="s21" />,
+  tags: ['visual-review', 'audio-review'],
 }

@@ -46,6 +46,12 @@ export function PronunciationPractice({
         id: String(i),
         word: word ?? '',
         phonetic,
+        feedbackOutcome:
+          target === undefined
+            ? undefined
+            : i === target
+              ? ('correct' as const)
+              : ('wrong' as const),
       }))}
       selectedId={selected}
       feedback={feedback}
