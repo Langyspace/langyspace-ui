@@ -75,5 +75,6 @@ export const PromptQuestion = styled.div`
   p {
     flex: 1;
     min-width: 0;
+    font-weight: ${theme.typography.fontWeight.semibold};
   }
 `

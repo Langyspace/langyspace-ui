@@ -186,10 +186,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             instruction="Answer the questions about yourself."
           >
             <PromptExercise
-              items={prompts(
-                content.personal.map((prompt) => ({ prompt })),
-                'emma-lucas.personal',
-              )}
+              items={prompts(content.personal, 'emma-lucas.personal')}
             />
           </SlidePage>
         ),

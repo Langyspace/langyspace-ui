@@ -375,11 +375,26 @@
     }
   ],
   "personal": [
-    "Do you usually cook dinner or order food?",
-    "What do you usually do after dinner?",
-    "Are you watching any interesting series these days?",
-    "What are you doing differently this week?",
-    "What do you usually do on Friday nights?"
+    {
+      "prompt": "Do you usually cook dinner or order food?",
+      "answer": "I usually cook dinner. / I usually order food."
+    },
+    {
+      "prompt": "What do you usually do after dinner?",
+      "answer": "After dinner, I usually …"
+    },
+    {
+      "prompt": "Are you watching any interesting series these days?",
+      "answer": "Yes, I'm watching … / No, I'm not watching any series right now."
+    },
+    {
+      "prompt": "What are you doing differently this week?",
+      "answer": "This week, I'm … I usually …"
+    },
+    {
+      "prompt": "What do you usually do on Friday nights?",
+      "answer": "On Friday nights, I usually …"
+    }
   ],
   "mimeInstructions": [
     "One person acts out an activity without speaking.",
