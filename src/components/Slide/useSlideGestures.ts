@@ -19,6 +19,8 @@ const POINTER_NATIVE_SELECTOR =
 
 // Same-burst browser gaps measured 44–83ms; isolated detents were at least 200ms apart.
 const WHEEL_GESTURE_IDLE_MS = 160
+// Group duplicate packets briefly without requiring a pause to advance again.
+const WHEEL_PAGE_GUARD_MS = 400
 // Preserve 2–4px tap jitter. Real scroll starts delivered their last cancelable
 // move as early as 4.63px; waiting for 5/16px handed control to native snap.
 const TOUCH_TAP_TOLERANCE_PX = 4
@@ -76,8 +78,8 @@ export function useSlideGestures({
     if (!viewport || navigationMode === 'continuous') return
     let wheelTime = -Infinity
     let wheelVertical = false
-    let wheelConsumed = false
-    let wheelAdvanced = false
+    let wheelBlockedUntil = -Infinity
+    let wheelContentTime = -Infinity
     let wheelDirection: 1 | -1 | undefined
     let pendingWheelDelta = 0
     let pendingWheelRevision: number | undefined
@@ -115,15 +117,16 @@ export function useSlideGestures({
       return true
     }
     const applyWheel = (delta: number) => {
+      const now = performance.now()
+      if (now < wheelBlockedUntil) return
       if (scrollContent(delta)) {
-        wheelConsumed = true
+        wheelContentTime = now
         return
       }
-      // Finishing a tall page consumes this gesture; the next gesture can leave it.
-      if (!wheelConsumed) {
-        wheelAdvanced = true
-        onStep(delta > 0 ? 1 : -1)
-      }
+      // Protect a tall page's edge briefly, then allow continuous scrolling out.
+      if (now - wheelContentTime < WHEEL_PAGE_GUARD_MS) return
+      wheelBlockedUntil = now + WHEEL_PAGE_GUARD_MS
+      onStep(delta > 0 ? 1 : -1)
     }
     const discardStaleWheel = () => {
       if (pendingWheelRevision !== movementRevisionRef.current)
@@ -133,7 +136,7 @@ export function useSlideGestures({
       if (!pendingWheelDelta) return
       clearTimeout(wheelSettle)
       // Read the page observation after this scroll event's other listeners.
-      // This schedules a read, not a timed input lock or another page per burst.
+      // This schedules a read after the current page transition settles.
       wheelSettle = setTimeout(() => {
         // A newer control, keyboard or geometry request owns the destination.
         discardStaleWheel()
@@ -155,8 +158,7 @@ export function useSlideGestures({
       if (event.deltaX === 0 && event.deltaY === 0) return
       if (event.timeStamp - wheelTime > WHEEL_GESTURE_IDLE_MS) {
         wheelVertical = false
-        wheelConsumed = false
-        wheelAdvanced = false
+        wheelContentTime = -Infinity
       }
       wheelTime = event.timeStamp
       if (!wheelVertical) {
@@ -174,8 +176,8 @@ export function useSlideGestures({
       const direction = event.deltaY > 0 ? 1 : -1
       if (wheelDirection && direction !== wheelDirection) {
         // A reversal is fresh intent, including during a smooth page transition.
-        wheelConsumed = false
-        wheelAdvanced = false
+        wheelBlockedUntil = -Infinity
+        wheelContentTime = -Infinity
         pendingWheelDelta = 0
         if (moving()) {
           viewport.scrollTo({ top: viewport.scrollTop, behavior: 'instant' })
@@ -183,7 +185,7 @@ export function useSlideGestures({
         }
       }
       wheelDirection = direction
-      if (wheelAdvanced) return
+      if (performance.now() < wheelBlockedUntil) return
       const style = getComputedStyle(viewport)
       const unit =
         event.deltaMode === 2
@@ -194,8 +196,7 @@ export function useSlideGestures({
       discardStaleWheel()
       const delta = pendingWheelDelta + event.deltaY * unit
       if (moving()) {
-        // Retain one fresh gesture while the previous destination settles.
-        // The gesture that already advanced is excluded by wheelAdvanced above.
+        // After the short guard, retain continued input until the destination settles.
         pendingWheelDelta = delta
         pendingWheelRevision = movementRevisionRef.current
         settleWheel()
