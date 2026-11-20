@@ -8,6 +8,7 @@ export function SlideDeck({
   onPageChange,
   label,
   previousPageLabel = 'Voltar',
+  firstPageLabel = 'Voltar à primeira página',
   navigationMode = 'pages',
   actions,
   overlay,
@@ -83,6 +84,33 @@ export function SlideDeck({
           </Styled.Page>
         ))}
       </Styled.Viewport>
+      {pages.length > 1 ? (
+        <Styled.FirstPageButton
+          variant="neutral"
+          shape="circle"
+          size="lg"
+          aria-label={firstPageLabel}
+          title={firstPageLabel}
+          onClick={() => {
+            goToIndex(0)
+            viewportRef.current?.focus({ preventScroll: true })
+          }}
+        >
+          <svg
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M12 19V5m-7 7 7-7 7 7" />
+          </svg>
+        </Styled.FirstPageButton>
+      ) : null}
       {overlay}
     </Styled.Root>
   )

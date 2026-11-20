@@ -44,6 +44,8 @@ export interface SlideDeckProps extends Omit<
   onPageChange?: (pageId: string) => void
   label: string
   previousPageLabel?: string
+  /** Accessible name for the persistent control that returns to the first page. */
+  firstPageLabel?: string
   /** Page gestures by default; continuous mode keeps native document scrolling without page controls. */
   navigationMode?: 'pages' | 'continuous'
   /** Product-owned actions such as fullscreen, without duplicating the slide layout. */

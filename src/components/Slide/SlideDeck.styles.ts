@@ -2,8 +2,23 @@ import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { Button } from '../Button/Button'
+import { IconButton } from '../IconButton/IconButton'
 
 const recipe = resolveSlideTheme
+
+export const FirstPageButton = styled(IconButton)`
+  position: absolute;
+  right: max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));
+  bottom: max(${theme.spacing[4]}, env(safe-area-inset-bottom, 0px));
+  z-index: 2;
+  border: 1px solid ${(p) => recipe(p).border};
+  background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
+  &:focus-visible {
+    outline: 3px solid ${(p) => recipe(p).accent};
+    outline-offset: 2px;
+  }
+`
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-deck',
