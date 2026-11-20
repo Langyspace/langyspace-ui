@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef } from 'react'
+import type { VocabularyControlsProps } from './VocabularyControls.types'
 export interface VocabularyItem {
   id: string
   imageUrl: string
@@ -13,6 +14,12 @@ export interface VocabularyGridProps extends Omit<
   ComponentPropsWithRef<'div'>,
   'onChange' | 'onPlay'
 > {
+  /** Shared bulb/eye controls, rendered below the grid. */
+  controls?: VocabularyControlsProps
+  /** Plain surfaces preserve transparent object illustrations on the lesson canvas. */
+  surface?: 'card' | 'plain'
+  /** Static cards show labels without requiring a click during an oral role-play. */
+  interaction?: 'reveal' | 'static'
   items: readonly VocabularyItem[]
   revealedIds: readonly string[]
   onReveal: (id: string) => void

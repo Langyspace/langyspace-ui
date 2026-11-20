@@ -29,6 +29,8 @@ export const Vocabulary = styled.div.withConfig({
   }
 `
 export const Word = styled(Pressable)<{
+  $plain?: boolean
+  $static?: boolean
   $scene: boolean
   $regular: boolean
   $completed?: boolean
@@ -42,11 +44,12 @@ export const Word = styled(Pressable)<{
   aspect-ratio: ${(p) => (p.$scene && p.$regular ? '3 / 2' : 'auto')};
   padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
   border: 1px solid
-    ${(p) => (p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
+    ${(p) => (p.$plain ? 'transparent' : p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
   border-radius: ${theme.radius.lg};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => (p.$plain ? 'transparent' : recipe(p).surface)};
   color: ${(p) => recipe(p).foreground};
-  cursor: pointer;
+  margin: 0;
+  cursor: ${(p) => (p.$static ? 'default' : 'pointer')};
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 2px;
@@ -60,7 +63,7 @@ export const WordImage = styled.img<{
   position: ${(p) => (p.$scene ? 'absolute' : 'static')};
   inset: 0;
   width: 100%;
-  height: ${(p) => (p.$scene ? '100%' : p.$regular ? theme.exercises.vocabularyRegularImageHeight : theme.exercises.vocabularyImageHeight)};
+  height: ${(p) => (p.$scene ? '100%' : p.$regular ? `calc(${theme.exercises.vocabularyRegularHeight} - ${theme.spacing[4]})` : theme.exercises.vocabularyImageHeight)};
   object-fit: ${(p) => p.$fit ?? (p.$scene ? 'cover' : 'contain')};
   object-position: ${(p) => (p.$scene && !p.$regular ? 'center 25%' : 'center')};
   border-radius: inherit;
@@ -145,4 +148,10 @@ export const WordLabel = styled.span<{ $revealed: boolean }>`
       font-size: ${(p) => (p.$revealed ? '13.5px' : '13px')};
     }
   }
+`
+
+export const VocabularySection = styled.div`
+  display: grid;
+  min-width: 0;
+  gap: ${theme.spacing[3]};
 `

@@ -43,3 +43,47 @@ export const Reveal = styled(Pressable).withConfig({
 export const Answer = styled.span`
   font-weight: ${theme.typography.fontWeight.semibold};
 `
+
+export const PromptPanel = styled.div`
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  justify-items: start;
+  gap: ${theme.spacing[2]};
+`
+
+export const PromptTrigger = styled(Pressable)`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  min-height: ${theme.spacing[8]};
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  > span:last-child {
+    flex: 1;
+    min-width: 0;
+  }
+  &:focus-visible {
+    outline: 2px solid ${(p) => recipe(p).accent};
+    outline-offset: 3px;
+  }
+`
+
+export const PromptAnswer = styled.p`
+  margin: 0;
+  color: ${(p) => recipe(p).muted};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.5;
+  &[hidden] {
+    display: none;
+  }
+`

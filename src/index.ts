@@ -667,3 +667,9 @@ export type {
 
 export { SlideNotesWindow } from './components/Slide/SlideNotesWindow'
 export type { SlideNotesWindowProps } from './components/Slide/SlideNotesWindow.types'
+
+export type { LearningDialogueGap } from './components/Exercise/LearningDialogue.types'
+export type {
+  SlideAudioActionProps,
+  SlideAudioStatus,
+} from './components/Slide/SlideAudioAction.types'

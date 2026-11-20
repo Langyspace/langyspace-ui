@@ -1,10 +1,13 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { SlideAudioActionProps } from './SlideAudioAction.types'
 
 export interface SlidePageProps extends Omit<
   ComponentPropsWithRef<'div'>,
   'title'
 > {
   title: ReactNode
+  /** Recorded dialogue playback immediately beside a string title. */
+  titleAudio?: SlideAudioActionProps
   eyebrow?: ReactNode
   instruction?: ReactNode
   tools?: ReactNode

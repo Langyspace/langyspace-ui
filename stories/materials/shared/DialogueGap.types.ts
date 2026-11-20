@@ -1,3 +1,1 @@
-export interface DialogueGapStyleProps {
-  $revealed: boolean
-}
+export type { DialogueGapStyleProps } from '../../../src/components/Exercise/LearningDialogue.types'

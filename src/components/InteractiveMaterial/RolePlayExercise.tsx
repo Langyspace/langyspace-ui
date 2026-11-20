@@ -32,6 +32,35 @@ export function RolePlayExercise({
   const count = steps.filter((s) => completedIds.includes(s.id)).length
   const next = steps.find((s) => !completedIds.includes(s.id))?.id
   const guided = presentation === 'tracker'
+  if (presentation === 'instructions')
+    return (
+      <Styled.Root as="section" {...props}>
+        <Styled.Scene $plain>
+          {image ? <img src={image.src} alt={image.alt} /> : null}
+          {situation ? <p>{situation}</p> : null}
+          <Common.Row>
+            {roles.map((role) => (
+              <Common.Chip key={role}>{role}</Common.Chip>
+            ))}
+          </Common.Row>
+          {children}
+        </Styled.Scene>
+        <Common.Stack>
+          {tracker}
+          <Styled.Instructions>
+            {steps.map((step, i) => (
+              <li key={step.id}>
+                <Common.Number aria-hidden="true">{i + 1}</Common.Number>
+                <span>{step.label}</span>
+              </li>
+            ))}
+          </Styled.Instructions>
+          {support.length ? (
+            <Common.Hint>{support.join(' · ')}</Common.Hint>
+          ) : null}
+        </Common.Stack>
+      </Styled.Root>
+    )
   const Header = guided ? Styled.TrackerHeader : Common.Row
   const Support = guided ? Common.Row : Common.Stack
   const supportControl =

@@ -85,3 +85,17 @@ export const TrackerHeader = styled(Common.Row)`
     color: ${(p) => resolveSlideTheme(p).foreground};
   }
 `
+
+export const Instructions = styled.ol`
+  display: grid;
+  gap: ${theme.spacing[4]};
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: flex;
+    align-items: center;
+    gap: ${theme.spacing[3]};
+    font-weight: ${theme.typography.fontWeight.semibold};
+  }
+`

@@ -17,7 +17,7 @@ export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> 
   tracker?: ReactNode
   density?: 'regular' | 'compact'
   /** Plain scene with support beside the checklist and an outlined next step. */
-  presentation?: 'default' | 'tracker'
+  presentation?: 'default' | 'tracker' | 'instructions'
   labels?: Partial<{
     show: string
     hide: string

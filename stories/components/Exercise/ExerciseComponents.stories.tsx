@@ -207,3 +207,53 @@ function ReviewedVocabularyPreview() {
 export const ReviewedVocabulary: Story = {
   render: () => <ReviewedVocabularyPreview />,
 }
+
+function PromptSupportPreview() {
+  const [open, setOpen] = useState(false)
+  return (
+    <Styled.Preview>
+      <RevealCard
+        presentation="prompt"
+        marker="1"
+        answer="I like mangoes. What about you?"
+        revealed={open}
+        onClick={() => setOpen(!open)}
+      >
+        What fruit do you like?
+      </RevealCard>
+    </Styled.Preview>
+  )
+}
+export const QuestionSupport: Story = { render: () => <PromptSupportPreview /> }
+function InlineDialoguePreview() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  return (
+    <Styled.Preview>
+      <LearningDialogue
+        density="compact"
+        lines={[
+          {
+            id: 'question',
+            speaker: 'Kim',
+            side: 'start',
+            content: 'Do you like apples?',
+            parts: ['Do you ', { id: 'like', answer: 'like' }, ' apples?'],
+          },
+          {
+            id: 'reply',
+            speaker: 'Ana',
+            side: 'end',
+            content: 'Yes, I do. I love apples.',
+          },
+        ]}
+        revealedGapIds={revealed}
+        onRevealGap={(id) =>
+          setRevealed((old) => (old.includes(id) ? old : [...old, id]))
+        }
+      />
+    </Styled.Preview>
+  )
+}
+export const InlineDialogueAnswers: Story = {
+  render: () => <InlineDialoguePreview />,
+}

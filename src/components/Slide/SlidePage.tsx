@@ -1,8 +1,11 @@
+import { SlideTitle } from './SlideTitle'
+import { SlideAudioAction } from './SlideAudioAction'
 import * as Styled from './SlidePage.styles'
 import type { SlidePageProps } from './SlidePage.types'
 
 export function SlidePage({
   title,
+  titleAudio,
   eyebrow,
   instruction,
   tools,
@@ -25,7 +28,16 @@ export function SlidePage({
           {eyebrow ? (
             <Styled.Eyebrow $tone={tone}>{eyebrow}</Styled.Eyebrow>
           ) : null}
-          <Styled.Title>{title}</Styled.Title>
+          <Styled.Title>
+            {titleAudio && typeof title === 'string' ? (
+              <SlideTitle
+                title={title}
+                action={<SlideAudioAction {...titleAudio} />}
+              />
+            ) : (
+              title
+            )}
+          </Styled.Title>
           {instruction ? (
             <Styled.Instruction $tone={tone}>{instruction}</Styled.Instruction>
           ) : null}

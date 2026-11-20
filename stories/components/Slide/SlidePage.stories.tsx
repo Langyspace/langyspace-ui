@@ -93,3 +93,39 @@ export const SplitIntroduction: Story = {
     children: <Panel>Would you like to come to dinner on Friday?</Panel>,
   },
 }
+
+export const RecordedDialogue: Story = {
+  args: {
+    title: 'At the street market',
+    eyebrow: 'Guided conversation',
+    instruction: 'Listen, then read with your teacher.',
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'idle',
+      onClick: () => undefined,
+    },
+  },
+}
+export const PausedDialogue: Story = {
+  ...RecordedDialogue,
+  args: {
+    ...RecordedDialogue.args,
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'paused',
+      onClick: () => undefined,
+    },
+  },
+}
+export const UnavailableDialogue: Story = {
+  ...RecordedDialogue,
+  args: {
+    ...RecordedDialogue.args,
+    titleAudio: {
+      context: 'Kim and Ana',
+      status: 'idle',
+      disabled: true,
+      onClick: () => undefined,
+    },
+  },
+}

@@ -96,3 +96,18 @@ A controlled card for progressive disclosure, for example closed → clue → an
 `GrammarTable hiddenAnswers` presents unrevealed rows as one disclosure cell across the answer columns, with a visible question action. Revealed rows return to the normal table columns. The strong table header and plain subject labels keep the longer B1 meaning descriptions readable; standard tables retain their tagged presentation.
 
 `RolePlayExercise density="compact"` reduces step spacing and text size for short lesson viewports; its default density stays unchanged.
+
+## Reviewed lesson compositions — A1.05
+
+Reviewed library components take precedence over imported Claude versions. `RevealCard` supports
+`presentation="prompt"` for click-to-reveal hints beneath a question. `SlidePage.titleAudio` places
+the native recorded-playback action beside the final title word. `LearningDialogue` supports
+controlled `parts`, `revealedGapIds` and `onRevealGap` for stable inline answers. `VocabularyGrid`
+supports built-in `controls`, `surface="plain"` for transparent objects and `interaction="static"`
+for noninteractive role-play cards. Its regular isolated images use the available card height.
+`RolePlayExercise` supports `presentation="instructions"` for teacher-led oral tasks without
+checklist counters or required clicks. Existing lesson adapters delegate to these canonical owners.
+
+A1.05 demonstrates the combinations in Materials/A1.05, including transparent fruits, static fruit
+cards, oral role-play, native ElevenLabs playback and third-listen transcript disclosure. Those
+stories are examples for human review; no visual acceptance is implied.

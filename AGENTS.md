@@ -96,6 +96,10 @@
 
 ## Interactive lesson defaults
 
+- Reviewed UI Library components take precedence over historical Claude Design implementations.
+  Reuse them first; add semantic variations to their canonical owners before consuming them.
+  New reusable visual or interaction patterns belong in `src/components`, not copied lesson markup.
+
 - Apply reusable exercise changes in canonical components and shared lesson helpers, then adopt
   them in every maintained material, the UX Lab and its originals. Do not fix one exported HTML
   while leaving the source component with the old behavior.

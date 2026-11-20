@@ -1,78 +1,96 @@
 {
-  "generationTool": "built-in image_gen",
-  "date": "2026-11-17",
-  "profile": "exercise-scene",
-  "styleReference": "A101/scene-tired-tom",
-  "styleBase": "../../shared/illustration-style.txt",
-  "promptSet": "../image-scenes.json",
-  "sourceFormat": "PNG",
-  "conversion": {
-    "tool": "sharp",
-    "version": "0.35.5",
-    "width": 768,
-    "quality": 86,
-    "removeBackground": false
-  },
+  "version": 3,
+  "lesson": "A1.05",
   "images": [
     {
       "id": "scene-banana",
       "file": "scene-banana.webp",
-      "originalSha256": "ca3a5729cac8be93b21aa381e515b4ed8d5b7e718055ae2feb14c4dadec84fbb",
-      "sha256": "8060b3d422f67e5306393d22c93b53d93881f960636fbed806d2b6e02e51a6e7",
-      "bytes": 45094,
+      "sha256": "bdf6717331ee02da3f57872ff9338da4d9bd18fdd90fc004426881551c54d19f",
+      "bytes": 77258,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "2f73923312a77aece0d34d4871d1c380e10edae475704b502e4573c7dfe28aea",
+      "promptSha256": "225ff5ae96f24d5a6b0a8c7a31fb005dd31548fb64dcbcc81a6dfee11ae3d1b1",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-apple",
       "file": "scene-apple.webp",
-      "originalSha256": "be2fa888bad4877f593c194c5a1a4f2add76e1fa3b999e700bb455560df71051",
-      "sha256": "797c863ba5ca222a9d209c827371f251ca9b4459ba4157e705add683a79d0333",
-      "bytes": 50736,
+      "sha256": "a4bf61c74a81a676c1d5c9a45e306422e05ab64015493e0a624a8f70332f02bb",
+      "bytes": 83418,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "3a19902da3fbfa4a361f89559b6a210d89139357b453ff1d41a2233975f3de2f",
+      "promptSha256": "d158a665769db53c642aab890ba34395e4d73b83c638a6ef8355c968243a2dbe",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-orange",
       "file": "scene-orange.webp",
-      "originalSha256": "848faf77f0cd5d837862fae446319e81d3bfe53464917916b0013b26d0d248d1",
-      "sha256": "576f44618fdb89e13dd0b38c14ef4f6107155e130108d17ea443bca55f7c17ed",
-      "bytes": 44682,
+      "sha256": "e2c73b4ca600a4a0958a631991f00ecb685928be49006ef5a3677fb38d69bcb7",
+      "bytes": 98852,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "edba67e517b3653270464546b5f86370d6bd23049e33458bc218d5bea4f7cd56",
+      "promptSha256": "61126ee16acfffd897bab1664fdb17c778f88084d0abca5a2cb1d27e98fbbcae",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-mango",
       "file": "scene-mango.webp",
-      "originalSha256": "5adc04bc60f299a5acc5d1d48718a0cd3baaa4f8cd900547036cd5b8f1b4229b",
-      "sha256": "06dac8cf14fbdd7f3e248672ac9a293dc4a4b86a3bef419066553df440bcac35",
-      "bytes": 42626,
+      "sha256": "d2ebc8002fc7a0ae48b0485da6a8377337444f23d23fa53f519e9ced7d405338",
+      "bytes": 78468,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "152e31ec3b808c4d70297af338da8aa966f13b1997e6f4e0f4e95272d9510a14",
+      "promptSha256": "217b519ba53d90ce07b214c22dfccde8aa783a048aa6006b9d1e7a974273fff7",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-pineapple",
       "file": "scene-pineapple.webp",
-      "originalSha256": "159c942ecda2143fb5e4fd9e8e8cb629ff4b6c95860d354910ec65ff156793cc",
-      "sha256": "d1b29d6f62c0a68af4e21e78b122d2bd9a63dec6882cedcd2a0d25fc47d2e0fe",
-      "bytes": 50508,
+      "sha256": "cd098339d0c038011adb8e4e92a1ea2afe465effc5302dda4b8a164bd98adf37",
+      "bytes": 126226,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "94230bbf02dbbb16abd0ca9b73f5f7012210895dfe5a3bac5e561dd36c9973c3",
+      "promptSha256": "80291ec64464a2719d32cc22d7e0806ba08553a4c87961eabc79797a99ae633e",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-watermelon",
       "file": "scene-watermelon.webp",
-      "originalSha256": "ee937c0869d2e42ce856f8c2106da9a2cd8c98f348f3a456711a1f2eef99b602",
-      "sha256": "e3c510c7f01066bef15866d5d9a20f1a97f5c78e2cce036775a8743c0f78e382",
-      "bytes": 48946,
+      "sha256": "939c6214f54a47ef043ef90e2fea733a42be2da6a2547856cf819b52cc000e3f",
+      "bytes": 106332,
       "width": 768,
-      "height": 512,
-      "hasAlpha": false
+      "height": 768,
+      "hasAlpha": true,
+      "generationTool": "built-in image_gen",
+      "generationMode": "text-only from scratch",
+      "referenceImages": 0,
+      "originalSha256": "d1fac01692410e63134dd62bb4b2cb06754fd23eb7dd8ca447558b71cd8fef12",
+      "promptSha256": "b1fd6f90990e2e931ab3a612407b2fc9f5e7146df4285b611746c76662ebeee4",
+      "batch": "transparent-fruits30"
     },
     {
       "id": "scene-tomato",
@@ -130,6 +148,96 @@
       "originalSha256": "ee70ff671c27f90064f9fc9cf35016d59b66f48c912fc7acfb05afc0f9b3efc4",
       "sha256": "12d20e96b67f1d610d0f2ae53a0ca2e17ef91f9fe5bb09b62bb30260c084122a",
       "bytes": 55726,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ],
+  "batches": {
+    "transparent-fruits30": {
+      "date": "2026-11-20",
+      "tool": "built-in image_gen",
+      "fromScratch": true,
+      "referenceImages": 0,
+      "transparentBackgroundRequested": true,
+      "conversion": "whole-frame contain resize, alpha-preserving WebP",
+      "sourceManifestSha256": "5251e31e74dc00ee51b2f80e16156e546fab09faa23488f10818b4b2dc64426f",
+      "knownVisualObservation": "Banana v2 has a yellow/irregular edge visible in the native generator preview; pending human visual review."
+    },
+    "legacyVegetables": {
+      "generationTool": "built-in image_gen",
+      "date": "2026-11-17",
+      "profile": "exercise-scene",
+      "styleReference": "A101/scene-tired-tom",
+      "styleBase": "../../shared/illustration-style.txt",
+      "promptSet": "../image-scenes.json",
+      "sourceFormat": "PNG",
+      "conversion": {
+        "tool": "sharp",
+        "version": "0.35.5",
+        "width": 768,
+        "quality": 86,
+        "removeBackground": false
+      }
+    }
+  },
+  "supersededFruitImages": [
+    {
+      "id": "scene-banana",
+      "file": "scene-banana.webp",
+      "originalSha256": "ca3a5729cac8be93b21aa381e515b4ed8d5b7e718055ae2feb14c4dadec84fbb",
+      "sha256": "8060b3d422f67e5306393d22c93b53d93881f960636fbed806d2b6e02e51a6e7",
+      "bytes": 45094,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-apple",
+      "file": "scene-apple.webp",
+      "originalSha256": "be2fa888bad4877f593c194c5a1a4f2add76e1fa3b999e700bb455560df71051",
+      "sha256": "797c863ba5ca222a9d209c827371f251ca9b4459ba4157e705add683a79d0333",
+      "bytes": 50736,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-orange",
+      "file": "scene-orange.webp",
+      "originalSha256": "848faf77f0cd5d837862fae446319e81d3bfe53464917916b0013b26d0d248d1",
+      "sha256": "576f44618fdb89e13dd0b38c14ef4f6107155e130108d17ea443bca55f7c17ed",
+      "bytes": 44682,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-mango",
+      "file": "scene-mango.webp",
+      "originalSha256": "5adc04bc60f299a5acc5d1d48718a0cd3baaa4f8cd900547036cd5b8f1b4229b",
+      "sha256": "06dac8cf14fbdd7f3e248672ac9a293dc4a4b86a3bef419066553df440bcac35",
+      "bytes": 42626,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-pineapple",
+      "file": "scene-pineapple.webp",
+      "originalSha256": "159c942ecda2143fb5e4fd9e8e8cb629ff4b6c95860d354910ec65ff156793cc",
+      "sha256": "d1b29d6f62c0a68af4e21e78b122d2bd9a63dec6882cedcd2a0d25fc47d2e0fe",
+      "bytes": 50508,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-watermelon",
+      "file": "scene-watermelon.webp",
+      "originalSha256": "ee937c0869d2e42ce856f8c2106da9a2cd8c98f348f3a456711a1f2eef99b602",
+      "sha256": "e3c510c7f01066bef15866d5d9a20f1a97f5c78e2cce036775a8743c0f78e382",
+      "bytes": 48946,
       "width": 768,
       "height": 512,
       "hasAlpha": false

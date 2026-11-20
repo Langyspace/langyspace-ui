@@ -1,7 +1,6 @@
-import { useId, useState } from 'react'
+import { useState } from 'react'
 import type { ReactNode } from 'react'
-import { Hint } from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import { AnswerPanel, QuestionTrigger } from './LessonExercises.styles'
+import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 
 export function AnswerDisclosure({
   answer,
@@ -13,22 +12,16 @@ export function AnswerDisclosure({
   marker?: ReactNode
 }) {
   const [open, setOpen] = useState(false)
-  const id = useId()
   return (
-    <AnswerPanel>
-      <QuestionTrigger
-        type="button"
-        aria-label={question}
-        aria-expanded={open}
-        aria-controls={id}
-        onClick={() => setOpen(!open)}
-      >
-        {marker}
-        <span>{question}</span>
-      </QuestionTrigger>
-      <Hint id={id} hidden={!open}>
-        {answer}
-      </Hint>
-    </AnswerPanel>
+    <RevealCard
+      presentation="prompt"
+      answer={answer}
+      marker={marker}
+      revealed={open}
+      aria-label={question}
+      onClick={() => setOpen(!open)}
+    >
+      {question}
+    </RevealCard>
   )
 }

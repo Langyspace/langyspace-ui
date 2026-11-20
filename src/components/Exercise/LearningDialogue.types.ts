@@ -1,10 +1,19 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+export interface DialogueGapStyleProps {
+  $revealed: boolean
+}
+export interface LearningDialogueGap {
+  id: string
+  answer: string
+}
 export interface LearningDialogueLine {
   id: string
   speaker: string
   avatarUrl?: string
   side: 'start' | 'end'
   content: ReactNode
+  /** Inline answers retain their width before and after a click. */
+  parts?: readonly (string | LearningDialogueGap)[]
   translation?: ReactNode
   audioLabel?: string
   /** Makes this line a controlled learner-response action. */
@@ -20,6 +29,8 @@ export interface LearningDialogueProps extends Omit<
   playingId?: string
   onTranslate?: (id: string) => void
   onPlay?: (id: string) => void
+  revealedGapIds?: readonly string[]
+  onRevealGap?: (gapId: string, lineId: string) => void
   completedIds?: readonly string[]
   onComplete?: (id: string) => void
 }
