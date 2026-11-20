@@ -54,6 +54,10 @@ export const NarrowContainer: Story = {
   ),
   tags: ['layout-boundary', 'visual-review'],
 }
+export const AutomaticThirdListen: Story = {
+  args: { transcriptReveal: 'third-listen' },
+  tags: ['visual-review'],
+}
 export const Inactive: Story = { args: { active: false } }
 export const MissingRecording: Story = {
   args: { audio: { ...initial.audio, src: undefined } },

@@ -66,6 +66,6 @@ export interface VoiceMessageExerciseProps extends Omit<
   labels?: Partial<VoiceMessageLabels>
   /** Optional follow-up replay control after a completed first pass; disappears on the second. */
   replayActionLabel?: string
-  /** Keep automatic second-listen behavior, or let the learner reveal text after the consumer-enabled follow-up replay. */
-  transcriptReveal?: 'second-listen' | 'manual-after-replay'
+  /** Automatically reveal on the second/third listen, or let the learner reveal after the follow-up replay. */
+  transcriptReveal?: 'second-listen' | 'third-listen' | 'manual-after-replay'
 }

@@ -177,7 +177,7 @@ export const Transcript = styled.div<{ $visible: boolean }>`
   border-top: 1px dashed ${(p) => recipe(p).border};
   margin-top: ${theme.voiceMessage.conversationInset};
   padding-top: ${theme.voiceMessage.conversationInset};
-  font-size: ${theme.voiceMessage.transcriptFontSize};
+  font-size: ${(p) => recipe(p).transcriptFontSize};
   line-height: 1.4;
   white-space: pre-wrap;
   p {

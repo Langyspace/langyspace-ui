@@ -86,8 +86,9 @@ function VoiceMessageContent({
       ? 'paused'
       : media.status
   const manualTranscript = transcriptReveal === 'manual-after-replay'
+  const transcriptPass = transcriptReveal === 'third-listen' ? 3 : 2
   const transcriptUnlocked =
-    media.playCount >= 2 && (!manualTranscript || followUpStarted)
+    media.playCount >= transcriptPass && (!manualTranscript || followUpStarted)
   const transcriptVisible =
     transcriptUnlocked && (!manualTranscript || showTranscript)
   const playLabel = playing
@@ -163,7 +164,7 @@ function VoiceMessageContent({
               </Styled.Bubble>
             ) : null}
             <Styled.VoiceBubble>
-              {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks on the second listen as explicitly requested for this listening exercise. */}
+              {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks after the configured listening pass for this exercise. */}
               <audio
                 ref={media.audioRef}
                 src={audio.src}
@@ -347,6 +348,7 @@ function VoiceMessageContent({
             </Styled.Question>
           ))}
           {replayActionLabel &&
+          transcriptReveal !== 'third-listen' &&
           (manualTranscript ? !followUpStarted : media.playCount < 2) ? (
             <Button
               variant="secondary"
