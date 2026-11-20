@@ -1,6 +1,5 @@
 import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
@@ -83,11 +82,6 @@ export function ChoiceExercise({
           </QuizOption>
         ))}
       </Common.Stack>
-      {selected !== undefined ? (
-        <Button variant="text" onClick={() => setSelected(undefined)}>
-          Try again
-        </Button>
-      ) : null}
     </Common.Surface>
   )
 }
