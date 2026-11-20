@@ -466,8 +466,8 @@
     {
       "id": "s11",
       "kind": "introductions",
-      "title": "Who should Kim meet?",
-      "instruction": "Kim chooses someone. Ask questions, then introduce them.",
+      "title": "Introduce Ana’s family",
+      "instruction": "You’re Ana. Use the facts to introduce your family.",
       "minutes": 2,
       "eyebrow": "Practice",
       "image": {
@@ -481,7 +481,17 @@
           "xPercent": 15,
           "yPercent": 72,
           "introduction": "This is my brother, Leo.",
-          "detail": "He’s a student."
+          "detail": "He’s a student.",
+          "facts": [
+            {
+              "label": "Family",
+              "value": "Ana’s brother"
+            },
+            {
+              "label": "Job",
+              "value": "student"
+            }
+          ]
         },
         {
           "id": "bia",
@@ -489,7 +499,21 @@
           "xPercent": 68.6,
           "yPercent": 77,
           "introduction": "This is my sister, Bia.",
-          "detail": "She’s a cook. She’s from Recife."
+          "detail": "She’s a cook. She’s from Recife.",
+          "facts": [
+            {
+              "label": "Family",
+              "value": "Ana’s sister"
+            },
+            {
+              "label": "Job",
+              "value": "cook"
+            },
+            {
+              "label": "From",
+              "value": "Recife"
+            }
+          ]
         },
         {
           "id": "parents",
@@ -497,10 +521,16 @@
           "xPercent": 41.5,
           "yPercent": 38,
           "introduction": "These are my parents.",
-          "detail": "They’re from Recife."
+          "detail": "They’re from Recife.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Recife"
+            }
+          ]
         }
       ],
-      "teacherNotes": "Choose one goal privately: meet Ana’s brother, meet a cook, or meet her parents. Say “Can I meet your brother?”, “Who is a cook?” or “Who are your parents?”. Let the learner confirm who you mean, select the person/pair and introduce them. Ask one follow-up. Do not show a wrong sentence or require a fixed answer before the learner speaks."
+      "teacherNotes": "The learner speaks as Ana. Choose Leo, Bia and the parents in any order; the facts are always visible. Ask for an introduction and one detail. The optional model combines the same facts, without a secret goal or guessing. No new personal information is required."
     },
     {
       "id": "s12",

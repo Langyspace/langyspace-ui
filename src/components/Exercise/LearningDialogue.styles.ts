@@ -3,7 +3,6 @@ import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
-import { Avatar } from '../Avatar/Avatar'
 export const Dialogue = styled.div.withConfig({
   componentId: 'lsui-sc-learning-dialogue',
 })`
@@ -28,35 +27,6 @@ export const DialogueLine = styled.div<{ $side: 'start' | 'end' }>`
   @container (max-width: ${theme.breakpoints.md}) {
     max-width: 94%;
     gap: ${theme.spacing[2]};
-  }
-`
-export const SpeakerAvatar = styled(Avatar)<{ $compact: boolean }>`
-  width: ${(p) => (p.$compact ? theme.spacing[8] : '44px')};
-  height: ${(p) => (p.$compact ? theme.spacing[8] : '44px')};
-  border-radius: ${theme.radius.lg};
-  background: ${theme.colors.palette.accent.pinkSoft};
-  @container (max-width: ${theme.breakpoints.md}) {
-    width: ${(p) => (p.$compact ? theme.spacing[8] : theme.spacing[10])};
-    height: ${(p) => (p.$compact ? theme.spacing[8] : theme.spacing[10])};
-  }
-`
-export const Speaker = styled.div<{ $compact: boolean; $showLabel: boolean }>`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-  gap: 0;
-  small {
-    font-size: ${theme.typography.fontSize['2xs']};
-    line-height: 1.2;
-    color: ${(p) => recipe(p).muted};
-    display: ${(p) => (p.$showLabel ? 'block' : 'none')};
-  }
-  @container (max-width: ${theme.breakpoints.md}) {
-    gap: ${theme.spacing[1]};
-    small {
-      line-height: 1.2;
-    }
   }
 `
 export const Speech = styled.div<{

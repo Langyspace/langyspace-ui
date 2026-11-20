@@ -1,3 +1,4 @@
+import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -231,7 +232,8 @@ function PageContent({
       </ThemeProvider>
     )
   if (page.kind === 'introductions') {
-    const choice = page.choices.find((item) => item.id === selected)
+    const choice =
+      page.choices.find((item) => item.id === selected) ?? page.choices[0]
     return (
       <RolePlayExercise
         presentation="instructions"
@@ -240,25 +242,31 @@ function PageContent({
         completedIds={[]}
         onStepToggle={() => undefined}
         tracker={
-          <PromptExercise
-            items={[
-              {
-                id: 'ask',
-                prompt: 'Find out who Kim wants to meet.',
-                answer: 'Is it my brother? My sister? My parents?',
-              },
-              {
-                id: 'introduce',
-                prompt: 'Introduce the person or people.',
-                answer: choice?.introduction ?? 'This is my … / These are my …',
-              },
-              {
-                id: 'detail',
-                prompt: 'Tell Kim one more thing.',
-                answer: choice?.detail ?? 'He’s/She’s a … / They’re from …',
-              },
-            ]}
-          />
+          choice ? (
+            <Common.Stack>
+              <Common.Surface>
+                <Common.Heading>{choice.label}</Common.Heading>
+                <KeyValueList
+                  tone="material"
+                  items={choice.facts.map((fact, index) => ({
+                    ...fact,
+                    id: String(index),
+                  }))}
+                />
+              </Common.Surface>
+              <PromptExercise
+                key={choice.id}
+                numbered={false}
+                items={[
+                  {
+                    id: 'introduce',
+                    prompt: 'Introduce them. Add a job or a city.',
+                    answer: `${choice.introduction} ${choice.detail}`,
+                  },
+                ]}
+              />
+            </Common.Stack>
+          ) : undefined
         }
       >
         <SceneExplorer
@@ -268,8 +276,8 @@ function PageContent({
           imageUrl={page.image.src}
           imageAlt={page.image.alt}
           hotspots={page.choices.map((item) => ({ ...item, prompt: null }))}
-          selectedId={selected}
-          visitedIds={selected ? [selected] : []}
+          selectedId={choice?.id}
+          visitedIds={choice ? [choice.id] : []}
           onSelect={setSelected}
         />
       </RolePlayExercise>

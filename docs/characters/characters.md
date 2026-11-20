@@ -40,3 +40,5 @@ Ao criar/revisar uma aula, ler esta ficha e atualizar apenas o fato novo confirm
 **Feedback37:** a cena nova de família estabelece visualmente mãe/pai/Leo/Bia/Kim no mesmo contexto de Ana, sem acrescentar idade, nome dos pais ou profissão do pai. A foto no celular é um modelo de ação; o homem na tela não recebe identidade canônica por isso. `LearningDialogue` mantém nome visível na densidade compacta; os adaptadores reutilizam os retratos canônicos conhecidos.
 
 **Feedback38:** a ligação de saída da A102 passa a usar a professora autenticada do portal, não a personagem Emma. O fallback de prévia é Your teacher. Nome/foto da professora não entram na biografia do elenco nem são persistidos pelo material. As identidades de WhatsApp usam os retratos canônicos já existentes; mensagens curtas de contexto não criam novos fatos de vida.
+
+**Feedback39:** a atividade Introduce Ana’s family usa apenas os fatos já documentados: Leo irmão/estudante; Bia irmã/cozinheira/de Recife; pais de Recife. Esses fatos ficam visíveis na atividade. Foto+nome são compostos pelo Avatar nomeado canônico, sem gerar novos retratos ou estabelecer nova biografia.

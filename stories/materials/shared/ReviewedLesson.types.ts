@@ -77,6 +77,7 @@ export type ReviewedPage = PageBase &
           label: string
           xPercent: number
           yPercent: number
+          facts: readonly { label: string; value: string }[]
           introduction: string
           detail: string
         }[]

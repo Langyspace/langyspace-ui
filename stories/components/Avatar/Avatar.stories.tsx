@@ -1,3 +1,4 @@
+import { kim } from '../../materials/shared/characterPortraits'
 import * as StoryLayout from './Avatar.stories.styles'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { expect } from 'storybook/test'
@@ -114,4 +115,29 @@ export const Stress: Story = {
       </StoryLayout.AvatarLongName>
     </StoryLayout.AvatarIdentityRow>
   ),
+}
+
+export const NamedDialoguePortrait: Story = {
+  args: { name: 'Kim', initials: 'Ki', imageUrl: kim, size: 'sm' },
+  tags: ['visual-review'],
+}
+export const NamedContact: Story = {
+  args: {
+    name: 'Kim',
+    initials: 'Ki',
+    imageUrl: kim,
+    namePosition: 'beside',
+    description: 'Online',
+    size: 'sm',
+  },
+  tags: ['visual-review'],
+}
+export const LongNamedIdentity: Story = {
+  args: {
+    name: 'Your English teacher',
+    initials: 'YT',
+    namePosition: 'below',
+    size: 'sm',
+  },
+  tags: ['visual-review', 'layout-boundary'],
 }

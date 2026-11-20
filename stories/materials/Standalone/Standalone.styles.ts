@@ -20,4 +20,5 @@ const fonts = [
 export const FontStyles = createGlobalStyle`
   ${fonts.map(([family, weight, style, url]) => `@font-face {font-family: '${family}';font-style:${style};font-weight:${weight};font-display:swap;src:url('${url}') format('woff2');}`).join('\n')}
   #material-root { width:100%; min-width:0; height:100dvh; }
+  #material-root:has([data-slide-deck]) { overflow: hidden; color-scheme: dark; }
 `

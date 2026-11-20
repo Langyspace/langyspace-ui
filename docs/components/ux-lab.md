@@ -157,3 +157,7 @@ keeps native scrolling. Content planning rules are centralized in docs/materials
 `VoiceMessageExercise` uses one contact identity for header and voice-note portrait; contextual introductory text stays in the existing greeting prop. `SceneExplorer` short label/example callouts use natural height and visible overflow rather than inner scrollbars.
 
 The supplied A102 mobile-soft file is already attenuated to approximately−30.46LUFS, so that exercise explicitly uses volume0.7; the generic0.18 default protects unattenuated assets. Do not stack both reductions blindly. Playback/perceptual acceptance remains with the product owner.
+
+### Named speakers and fact-based introductions (feedback39)
+
+LearningDialogue and VoiceMessage contacts use Avatar.name/namePosition/description for a single portrait/name contract. Compact dialogues retain foreground semibold names with a spacing token. Native scrollbar tracks are hidden within the material surface, without changing overflow or gesture ownership. The A103 introduction exercise exposes the selected person’s actual family/job/city facts and an optional model, without a secret selection.

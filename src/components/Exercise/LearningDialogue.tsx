@@ -1,3 +1,4 @@
+import { Avatar } from '../Avatar/Avatar'
 import { VocabularyControls } from './VocabularyControls'
 import { Fragment } from 'react'
 import * as Gap from './LearningDialogueGap.styles'
@@ -121,20 +122,16 @@ export function LearningDialogue({
           )
         return (
           <Styled.DialogueLine key={line.id} $side={line.side}>
-            <Styled.Speaker
-              $compact={density === 'compact'}
-              $showLabel={speakerLabels === 'visible'}
+            <Avatar
+              size={density === 'compact' ? 'sm' : 'md'}
+              imageUrl={line.avatarUrl}
+              initials={line.speaker.slice(0, 2)}
+              name={speakerLabels === 'visible' ? line.speaker : undefined}
+              namePosition="below"
               role={speakerLabels === 'hidden' ? 'img' : undefined}
+              aria-hidden={false}
               aria-label={speakerLabels === 'hidden' ? line.speaker : undefined}
-            >
-              <Styled.SpeakerAvatar
-                size="sm"
-                imageUrl={line.avatarUrl}
-                initials={line.speaker.slice(0, 2)}
-                $compact={density === 'compact'}
-              />
-              <small>{line.speaker}</small>
-            </Styled.Speaker>
+            />
             <Styled.Speech
               $compact={density === 'compact'}
               $playing={playingId === line.id}

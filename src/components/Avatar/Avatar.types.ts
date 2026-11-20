@@ -1,4 +1,4 @@
-import type { ComponentPropsWithRef } from 'react'
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -9,6 +9,10 @@ export interface AvatarProps extends Omit<
   'color'
 > {
   imageUrl?: string
+  /** Optional visible identity, styled together with the portrait instead of ad-hoc adjacent text. */
+  name?: string
+  namePosition?: 'below' | 'beside'
+  description?: ReactNode
   initials: string
   size?: AvatarSize
   tone?: AvatarTone

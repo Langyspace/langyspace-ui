@@ -277,3 +277,12 @@ export const AskYourTeacherOnThePhone: Story = {
   render: () => <A102Lesson initialPageId="s15" />,
   tags: ['visual-review'],
 }
+
+export const NamedGuidedConversation: Story = {
+  render: () => <A103Lesson initialPageId="s72" />,
+  tags: ['visual-review'],
+}
+export const FamilyFactsIntroductions: Story = {
+  render: () => <A103Lesson initialPageId="s11" />,
+  tags: ['visual-review'],
+}

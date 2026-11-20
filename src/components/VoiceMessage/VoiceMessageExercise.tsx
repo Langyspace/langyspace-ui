@@ -148,12 +148,11 @@ function VoiceMessageContent({
             <Avatar
               imageUrl={contact.avatarUrl}
               initials={contact.name.slice(0, 2)}
+              name={contact.name}
+              namePosition="beside"
+              description={contact.status}
               size="sm"
             />
-            <Styled.ContactText>
-              <strong>{contact.name}</strong>
-              {contact.status ? <small>{contact.status}</small> : null}
-            </Styled.ContactText>
           </Styled.Contact>
           <Styled.Conversation
             tabIndex={0}

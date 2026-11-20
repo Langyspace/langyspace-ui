@@ -72,19 +72,6 @@ export const Contact = styled.div`
   background: ${(p) => recipe(p).surface};
   border-bottom: 1px solid ${(p) => recipe(p).border};
 `
-export const ContactText = styled.div`
-  min-width: 0;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
-  strong {
-    display: block;
-    font-size: ${theme.typography.fontSize.sm};
-  }
-  small {
-    color: ${(p) => recipe(p).muted};
-    font-size: ${theme.typography.fontSize.xs};
-  }
-`
 export const Conversation = styled.div`
   display: flex;
   flex: 1;

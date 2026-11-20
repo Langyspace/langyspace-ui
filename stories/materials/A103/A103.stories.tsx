@@ -21,7 +21,10 @@ export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const Vocabulary: Story = { args: { initialPageId: 's2' } }
 export const WarmUp: Story = { args: { initialPageId: 's1' } }
 export const Family: Story = { args: { initialPageId: 's4' } }
-export const Introductions: Story = { args: { initialPageId: 's11' } }
+export const Introductions: Story = {
+  args: { initialPageId: 's11' },
+  tags: ['visual-review'],
+}
 export const Dialogue: Story = { args: { initialPageId: 's71' } }
 export const Grammar: Story = { args: { initialPageId: 's8' } }
 export const Listening: Story = {

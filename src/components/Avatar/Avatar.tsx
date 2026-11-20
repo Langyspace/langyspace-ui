@@ -3,9 +3,12 @@ import * as Styled from './Avatar.styles'
 import type { AvatarProps } from './Avatar.types'
 
 export function Avatar({
-  'aria-hidden': ariaHidden = true,
+  'aria-hidden': ariaHidden,
   children,
   imageUrl,
+  name,
+  namePosition = 'below',
+  description,
   initials,
   size = 'md',
   tone = 'neutral',
@@ -14,12 +17,12 @@ export function Avatar({
   const [failedImageUrl, setFailedImageUrl] = useState<string | null>(null)
   const shouldShowImage = Boolean(imageUrl && imageUrl !== failedImageUrl)
 
-  return (
+  const portrait = (
     <Styled.Avatar
-      {...props}
+      {...(name ? {} : props)}
       $size={size}
       $tone={tone}
-      aria-hidden={ariaHidden}
+      aria-hidden={name ? true : (ariaHidden ?? true)}
       data-size={size}
       data-tone={tone}
     >
@@ -34,5 +37,22 @@ export function Avatar({
         />
       ) : null}
     </Styled.Avatar>
+  )
+  if (!name) return portrait
+  return (
+    <Styled.Identity
+      {...props}
+      $position={namePosition}
+      aria-hidden={ariaHidden ?? false}
+      data-avatar-identity="true"
+    >
+      {portrait}
+      <Styled.IdentityText $position={namePosition}>
+        <Styled.Name $tone={tone}>{name}</Styled.Name>
+        {description ? (
+          <Styled.Description>{description}</Styled.Description>
+        ) : null}
+      </Styled.IdentityText>
+    </Styled.Identity>
   )
 }
