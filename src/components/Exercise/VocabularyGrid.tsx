@@ -8,6 +8,7 @@ export function VocabularyGrid({
   controls,
   surface = 'card',
   interaction = 'reveal',
+  layout = 'cards',
   revealedIds,
   onReveal,
   onPlay,
@@ -20,6 +21,7 @@ export function VocabularyGrid({
   density = 'compact',
   revealVariant = 'overlay',
   revealLabel = 'Mostrar palavra',
+  playLabel = 'Listen to',
   activeId,
   markRevealed = false,
   ...props
@@ -30,14 +32,16 @@ export function VocabularyGrid({
       <Styled.Vocabulary
         {...props}
         $columns={columns}
+        $reference={layout === 'reference'}
         $regularScene={imageVariant === 'scene' && density === 'regular'}
       >
         {items.map((item, index) => {
           const revealed =
             interaction === 'static' ||
             showAll ||
-            revealedIds.includes(item.id) ||
-            (revealOnHover && hovered === item.id)
+            (interaction !== 'listen' &&
+              (revealedIds.includes(item.id) ||
+                (revealOnHover && hovered === item.id)))
           const showLabel =
             interaction === 'static'
               ? true
@@ -54,7 +58,12 @@ export function VocabularyGrid({
                 (activeId === undefined && revealedIds.includes(item.id)) ||
                 (showInitial && !revealed)))
           const preview = () => {
-            if (revealOnHover && !showAll && !revealedIds.includes(item.id))
+            if (
+              interaction === 'reveal' &&
+              revealOnHover &&
+              !showAll &&
+              !revealedIds.includes(item.id)
+            )
               setHovered(item.id)
           }
           return (
@@ -62,6 +71,7 @@ export function VocabularyGrid({
               as={interaction === 'static' ? 'figure' : 'button'}
               $static={interaction === 'static'}
               $symbol={item.symbol !== undefined}
+              $reference={layout === 'reference'}
               $plain={surface === 'plain'}
               $completed={markRevealed && revealedIds.includes(item.id)}
               $scene={imageVariant === 'scene'}
@@ -69,12 +79,14 @@ export function VocabularyGrid({
               key={item.id}
               type={interaction === 'static' ? undefined : 'button'}
               aria-label={
-                revealed
-                  ? `${item.word}: ${item.translation}`
-                  : `${revealLabel} ${index + 1}: ${item.imageAlt}`
+                interaction === 'listen'
+                  ? `${playLabel} ${item.imageAlt}${showAll ? `: ${item.word}` : ''}`
+                  : revealed
+                    ? `${item.word}: ${item.translation}`
+                    : `${revealLabel} ${index + 1}: ${item.imageAlt}`
               }
               aria-expanded={
-                interaction === 'static'
+                interaction !== 'reveal'
                   ? undefined
                   : activeId !== undefined && revealVariant === 'tooltip'
                     ? showAll || (activeId === item.id && revealed)
@@ -92,7 +104,7 @@ export function VocabularyGrid({
                 interaction === 'static'
                   ? undefined
                   : () => {
-                      onReveal(item.id)
+                      if (interaction === 'reveal') onReveal?.(item.id)
                       onPlay?.(item.id)
                     }
               }
@@ -113,7 +125,7 @@ export function VocabularyGrid({
               {item.badge ? (
                 <Styled.WordBadge>{item.badge}</Styled.WordBadge>
               ) : null}
-              {(interaction !== 'static' && revealVariant === 'overlay') ||
+              {(interaction === 'reveal' && revealVariant === 'overlay') ||
               (markRevealed && revealedIds.includes(item.id)) ? (
                 <Styled.QuestionMark
                   $completed={markRevealed && revealedIds.includes(item.id)}
@@ -127,7 +139,10 @@ export function VocabularyGrid({
                 </Styled.QuestionMark>
               ) : null}
               {showChip ? (
-                <Styled.WordLabel $revealed={revealed}>
+                <Styled.WordLabel
+                  $revealed={revealed}
+                  $reference={layout === 'reference'}
+                >
                   <b>{revealed ? item.word : hint}</b>
                   <small>{item.translation}</small>
                 </Styled.WordLabel>

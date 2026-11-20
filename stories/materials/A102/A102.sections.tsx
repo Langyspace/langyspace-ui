@@ -5,7 +5,6 @@ import { LearningDialogue } from '../../../src/components/Exercise/LearningDialo
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { CallSimulation } from '../../../src/components/InteractiveMaterial/CallSimulation'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { SegmentedControl } from '../../../src/components/SegmentedControl/SegmentedControl'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { FieldRoot } from '../../../src/components/Form/FieldRoot'
 import { TextInput } from '../../../src/components/Form/TextInput'
@@ -17,7 +16,6 @@ import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import {
   numbers,
   letters,
-  letterGroups,
   numberChecks,
   dialogue,
   gaps,
@@ -86,31 +84,33 @@ export function NumberVocabulary({
   )
 }
 export function AlphabetReference({ speech }: { speech: A102Speech }) {
-  const [group, setGroup] = useState('name')
-  const items =
-    group === 'name'
-      ? [...'SOUZAN'].map((letter) =>
-          letters.find((item) => item.symbol === letter)!,
-        )
-      : group === 'first'
-        ? letters.slice(0, 9)
-        : group === 'middle'
-          ? letters.slice(9, 18)
-          : letters.slice(18)
+  const [pronunciation, setPronunciation] = useState(false)
   return (
-    <Common.Stack>
-      <SegmentedControl
-        aria-label="Alphabet reference"
-        surface="inverse"
-        options={letterGroups}
-        value={group}
-        onValueChange={setGroup}
-      />
-      <Symbols key={group} items={items} speech={speech} />
-      <Common.Hint>
-        Spell your name. Your teacher writes it. Is it right?
-      </Common.Hint>
-    </Common.Stack>
+    <VocabularyGrid
+      layout="reference"
+      interaction="listen"
+      revealVariant="tooltip"
+      items={letters.map((item) => ({
+        id: item.id,
+        symbol: item.symbol,
+        word: item.word,
+        translation: '',
+        imageAlt: item.symbol,
+      }))}
+      revealedIds={[]}
+      showAll={pronunciation}
+      onPlay={(id) => {
+        const line = letters.find((item) => item.id === id)
+        if (line) speech.speak([line])
+      }}
+      controls={{
+        showInitial: pronunciation,
+        onToggleInitial: () => setPronunciation(!pronunciation),
+        labels: {
+          hint: pronunciation ? 'Hide pronunciation' : 'Show pronunciation',
+        },
+      }}
+    />
   )
 }
 export function AudioChoices({ index }: { index: 0 | 1 | 2 }) {

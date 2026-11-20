@@ -1,3 +1,5 @@
+import { letters as alphabetLetters } from '../../materials/A102/A102.data'
+import { useLessonSpeech as useAlphabetSpeech } from '../../materials/A102/useLessonSpeech'
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
@@ -414,4 +416,42 @@ export const ProportionalDialogueGaps: Story = {
       />
     </Styled.Preview>
   ),
+}
+
+function CompleteAlphabetPreview() {
+  const [pronunciation, setPronunciation] = useState(false)
+  const speech = useAlphabetSpeech()
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        layout="reference"
+        interaction="listen"
+        revealVariant="tooltip"
+        items={alphabetLetters.map((item) => ({
+          id: item.id,
+          symbol: item.symbol,
+          word: item.word,
+          translation: '',
+          imageAlt: item.symbol,
+        }))}
+        revealedIds={[]}
+        showAll={pronunciation}
+        onPlay={(id) => {
+          const line = alphabetLetters.find((item) => item.id === id)
+          if (line) speech.speak([line])
+        }}
+        controls={{
+          showInitial: pronunciation,
+          onToggleInitial: () => setPronunciation(!pronunciation),
+          labels: {
+            hint: pronunciation ? 'Hide pronunciation' : 'Show pronunciation',
+          },
+        }}
+      />
+    </Styled.Preview>
+  )
+}
+export const CompleteAlphabetReference: Story = {
+  render: () => <CompleteAlphabetPreview />,
+  tags: ['visual-review'],
 }

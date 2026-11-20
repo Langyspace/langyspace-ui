@@ -58,3 +58,9 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 - Diferencie o preview nativo do gerador do arquivo final com alpha: o preview não prova a presença de fundo no WebP salvo. Registre limitações reais dos contornos sem declarar recorte perfeito apenas pelos metadados.
 - Um link de homework só representa uma atividade quando essa atividade existe no destino. Caso contrário, ofereça prática independente, sem botão de portal nem promessa de copiar links.
 - Migrações de aulas antigas compõem a UI Library revisada. ReviewedLesson é um adaptador de dados, não uma biblioteca visual paralela. Áudios preparados correspondem ao texto e à voz exatos; helpers de compatibilidade não usam síntese do navegador como alternativa.
+
+## Alfabeto como referência — feedback35
+
+- Apresente todas as 26 letras na mesma página de consulta, sem abas de grupos nem seleção fixa que pareça usar o nome da aluna. Use a variação reference do VocabularyGrid, com símbolos nativos e medidas compactas legíveis.
+- Nesse formato, a letra já está visível: o clique apenas toca sua gravação existente. A única lâmpada mostra ou oculta o apoio completo de pronúncia, sem primeira letra da dica nem botão de olho redundante. Reserve a área das pronúncias para não deslocar a grade ao alternar.
+- Essa é uma variação semântica da biblioteca: os demais vocabulários mantêm os controles de dica e de revelação quando ambos têm função. Não remover o olho globalmente nem gerar áudio ou imagem novos para letras já gravadas.

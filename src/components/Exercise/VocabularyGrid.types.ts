@@ -20,11 +20,13 @@ export interface VocabularyGridProps extends Omit<
   controls?: VocabularyControlsProps
   /** Plain surfaces preserve transparent object illustrations on the lesson canvas. */
   surface?: 'card' | 'plain'
-  /** Static cards show labels without requiring a click during an oral role-play. */
-  interaction?: 'reveal' | 'static'
+  /** Listen keeps the visible symbol unchanged and plays audio without revealing a label. */
+  interaction?: 'reveal' | 'static' | 'listen'
+  /** Compact, complete symbol chart; ordinary vocabulary keeps the cards layout. */
+  layout?: 'cards' | 'reference'
   items: readonly VocabularyItem[]
   revealedIds: readonly string[]
-  onReveal: (id: string) => void
+  onReveal?: (id: string) => void
   onPlay?: (id: string) => void
   showAll?: boolean
   showInitial?: boolean
@@ -39,6 +41,8 @@ export interface VocabularyGridProps extends Omit<
   density?: 'compact' | 'regular'
   revealVariant?: 'overlay' | 'tooltip'
   revealLabel?: string
+  /** Accessible playback action prefix for listen-only cards. */
+  playLabel?: string
   /** Keep only this revealed card's tooltip open; other labels stay hidden until showAll. */
   activeId?: string
   /** Optional completed marker, without adding a question mark before a first reveal. */

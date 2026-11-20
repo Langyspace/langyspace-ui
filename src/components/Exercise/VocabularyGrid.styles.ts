@@ -9,10 +9,13 @@ export const regularVocabularyMaxWidth = (columns = 3) =>
 
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
-})<{ $columns?: 2 | 3 | 4; $regularScene?: boolean }>`
+})<{ $columns?: 2 | 3 | 4; $regularScene?: boolean; $reference?: boolean }>`
   display: grid;
-  grid-template-columns: repeat(${(p) => p.$columns ?? 3}, minmax(0, 1fr));
-  gap: ${theme.spacing[3]};
+  grid-template-columns: repeat(
+    ${(p) => (p.$reference ? 7 : (p.$columns ?? 3))},
+    minmax(0, 1fr)
+  );
+  gap: ${(p) => (p.$reference ? theme.spacing[2] : theme.spacing[3])};
   ${(p) =>
     p.$regularScene
       ? css`
@@ -23,7 +26,7 @@ export const Vocabulary = styled.div.withConfig({
       : undefined}
   @container (max-width: ${theme.breakpoints.sm}) {
     grid-template-columns: repeat(
-      ${(p) => (p.$columns === 4 ? 2 : (p.$columns ?? 2))},
+      ${(p) => (p.$reference ? 4 : p.$columns === 4 ? 2 : (p.$columns ?? 2))},
       minmax(0, 1fr)
     );
   }
@@ -32,6 +35,7 @@ export const Word = styled(Pressable)<{
   $plain?: boolean
   $static?: boolean
   $symbol?: boolean
+  $reference?: boolean
   $scene: boolean
   $regular: boolean
   $completed?: boolean
@@ -43,6 +47,16 @@ export const Word = styled(Pressable)<{
             height: clamp(5.5rem, 14cqh, 6rem);
             min-height: 0;
             padding-bottom: ${theme.spacing[6]};
+          }
+        `
+      : undefined}
+  ${(p) =>
+    p.$reference
+      ? css`
+          && {
+            height: clamp(${theme.spacing[16]}, 10cqh, ${theme.spacing[20]});
+            min-height: 0;
+            padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[3]};
           }
         `
       : undefined}
@@ -143,7 +157,10 @@ const vocabularyLabel = css`
 export const WordCaption = styled.span`
   ${vocabularyLabel}
 `
-export const WordLabel = styled.span<{ $revealed: boolean }>`
+export const WordLabel = styled.span<{
+  $revealed: boolean
+  $reference?: boolean
+}>`
   ${vocabularyLabel}
   b {
     display: block;
@@ -159,6 +176,31 @@ export const WordLabel = styled.span<{ $revealed: boolean }>`
       font-size: ${(p) => (p.$revealed ? '13.5px' : '13px')};
     }
   }
+  ${(p) =>
+    p.$reference
+      ? css`
+          && {
+            bottom: ${theme.spacing[1]};
+            max-width: none;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            color: ${recipe(p).muted};
+            font-size: ${theme.typography.fontSize.xs};
+            line-height: 1.2;
+            white-space: nowrap;
+          }
+          && b {
+            font-size: inherit;
+            font-weight: ${theme.typography.fontWeight.medium};
+            color: inherit;
+          }
+        `
+      : undefined}
 `
 
 export const VocabularySection = styled.div`

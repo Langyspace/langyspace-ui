@@ -157,11 +157,11 @@ export function A102Lesson({
       label: 'Vocabulary · Spell a name',
       content: (
         <SlidePage
-          width="standard"
+          width="wide"
           density="compact"
           eyebrow="Vocabulary"
           title="Spell a name"
-          instruction="Listen to the letters. Spell your name."
+          instruction="Click a letter to listen. Then spell your name."
         >
           <AlphabetReference speech={speech} />
         </SlidePage>

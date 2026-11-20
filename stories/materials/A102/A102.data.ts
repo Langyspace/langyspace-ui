@@ -55,12 +55,6 @@ export const letters: readonly SymbolItem[] = [
   text: symbol,
   word: letterNames[index]!,
 }))
-export const letterGroups = [
-  { value: 'name', label: 'Name letters' },
-  { value: 'first', label: 'A–I' },
-  { value: 'middle', label: 'J–R' },
-  { value: 'last', label: 'S–Z' },
-]
 export const numberChecks = [
   {
     id: 'N.1',
