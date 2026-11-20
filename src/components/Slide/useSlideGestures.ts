@@ -75,7 +75,7 @@ export function useSlideGestures({
     const viewport = viewportRef.current
     if (!viewport || navigationMode === 'continuous') return
     let wheelTime = -Infinity
-    let wheelAxis: 'vertical' | 'horizontal' | 'native' | undefined
+    let wheelVertical = false
     let wheelConsumed = false
     let wheelAdvanced = false
     let wheelDirection: 1 | -1 | undefined
@@ -154,19 +154,22 @@ export function useSlideGestures({
         return
       if (event.deltaX === 0 && event.deltaY === 0) return
       if (event.timeStamp - wheelTime > WHEEL_GESTURE_IDLE_MS) {
-        wheelAxis = undefined
+        wheelVertical = false
         wheelConsumed = false
         wheelAdvanced = false
       }
       wheelTime = event.timeStamp
-      if (!wheelAxis)
-        wheelAxis = nativeTarget(event.target, WHEEL_NATIVE_SELECTOR)
-          ? 'native'
-          : Math.abs(event.deltaX) >= Math.abs(event.deltaY)
-            ? 'horizontal'
-            : 'vertical'
-      if (wheelAxis !== 'vertical' || event.deltaY === 0 || !event.cancelable)
-        return
+      if (!wheelVertical) {
+        // A lateral/native lead-in must not veto the whole trackpad gesture.
+        // Commit only when its first vertical packet arrives, however small.
+        if (
+          nativeTarget(event.target, WHEEL_NATIVE_SELECTOR) ||
+          Math.abs(event.deltaX) >= Math.abs(event.deltaY)
+        )
+          return
+        wheelVertical = true
+      }
+      if (event.deltaY === 0 || !event.cancelable) return
       event.preventDefault()
       const direction = event.deltaY > 0 ? 1 : -1
       if (wheelDirection && direction !== wheelDirection) {

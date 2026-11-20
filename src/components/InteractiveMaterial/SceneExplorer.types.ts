@@ -30,6 +30,8 @@ export interface SceneExplorerProps extends Omit<
   playingId?: string
   /** Labeled audio targets over a scene, without the exploration answer panel. */
   presentation?: 'explore' | 'labels'
+  /** Keep named scene targets visible on compact frames when the activity depends on their names. */
+  labelVisibility?: 'responsive' | 'always'
   answerVisible?: boolean
   onAnswerToggle?: () => void
   labels?: Partial<{

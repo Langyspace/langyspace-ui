@@ -33,6 +33,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     onPlayHotspot,
     playingId,
     presentation = 'explore',
+    labelVisibility = 'responsive',
     answerVisible = false,
     onAnswerToggle,
     labels,
@@ -49,12 +50,12 @@ export function SceneExplorer(options: SceneExplorerProps) {
   const [localSelectedId, setLocalSelectedId] = useState<string>()
   const controlledSelection = Object.hasOwn(options, 'selectedId')
   const compactLabels =
-    presentation === 'labels' && frameWidth < parseFloat(theme.breakpoints.sm)
+    presentation === 'labels' &&
+    labelVisibility === 'responsive' &&
+    frameWidth < parseFloat(theme.breakpoints.sm)
   const labelButtons = presentation === 'labels' && !compactLabels
   const showCallout = presentation === 'explore' || compactLabels
-  const currentSelectedId = controlledSelection
-    ? selectedId
-    : localSelectedId
+  const currentSelectedId = controlledSelection ? selectedId : localSelectedId
   const text = {
     initial: 'Tap a dot to explore',
     show: 'Mostrar resposta',
@@ -94,11 +95,17 @@ export function SceneExplorer(options: SceneExplorerProps) {
       left,
       top,
       width:
-        Math.min(bounds.width, box.right - bounds.left, next.left + next.width) -
-        left,
+        Math.min(
+          bounds.width,
+          box.right - bounds.left,
+          next.left + next.width,
+        ) - left,
       height:
-        Math.min(bounds.height, box.bottom - bounds.top, next.top + next.height) -
-        top,
+        Math.min(
+          bounds.height,
+          box.bottom - bounds.top,
+          next.top + next.height,
+        ) - top,
     }
     setImageBounds((old) =>
       JSON.stringify(old) === JSON.stringify(visible) ? old : visible,
