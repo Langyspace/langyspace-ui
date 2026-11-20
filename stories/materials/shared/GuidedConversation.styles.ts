@@ -1,6 +1,5 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
-import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
 import { Row, Stack, Surface } from './Lesson.styles'
 
 export const Root = styled(Stack)`
@@ -13,7 +12,7 @@ export const Modes = styled(Row)`
 
 export const Cue = styled.p`
   margin: 0;
-  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-weight: ${theme.typography.fontWeight.bold};
   font-size: ${theme.typography.fontSize.lg};
   line-height: 1.4;

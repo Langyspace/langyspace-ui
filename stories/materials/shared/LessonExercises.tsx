@@ -1,3 +1,4 @@
+import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -37,22 +38,12 @@ export function VocabularyExercise({ items, note }: VocabularyExerciseProps) {
         revealVariant="tooltip"
         density="compact"
       />
-      <Common.Row>
-        <Button
-          variant="secondary"
-          aria-pressed={hint}
-          onClick={() => setHint(!hint)}
-        >
-          First letter
-        </Button>
-        <Button
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          {all ? 'Hide words' : 'Show words'}
-        </Button>
-      </Common.Row>
+      <VocabularyControls
+        showInitial={hint}
+        showAll={all}
+        onToggleInitial={() => setHint(!hint)}
+        onToggleAll={() => setAll(!all)}
+      />
       {note ? <Common.Hint>{note}</Common.Hint> : null}
       {error ? <Common.Hint role="status">{error}</Common.Hint> : null}
     </Common.Stack>
@@ -69,7 +60,7 @@ export function ChoiceExercise({
   return (
     <Common.Surface>
       {image ? <Styled.Scene src={image.src} alt={image.alt} /> : null}
-      <Common.Heading>{question}</Common.Heading>
+      <Common.Heading $prompt>{question}</Common.Heading>
       <Common.Stack role="group" aria-label={question}>
         {options.map((option, index) => (
           <QuizOption

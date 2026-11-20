@@ -85,7 +85,7 @@ export const Stack = styled.div`
 `
 export const Prompt = styled.p`
   margin: 0;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: clamp(1.25rem, 2.7cqh, 1.625rem);
   font-weight: ${theme.typography.fontWeight.bold};
   line-height: 1.4;
@@ -118,7 +118,7 @@ export const Support = styled(LessonHint)`
 export const Activity = styled.p`
   margin: 0 0 ${theme.spacing[2]};
   color: ${(p) => recipe(p).accent};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.2em;
@@ -196,7 +196,7 @@ export const Choice = styled(ChoiceCard)`
   border-radius: ${(p) => recipe(p).panelRadius};
   background: ${(p) => recipe(p).surface};
   color: ${(p) => recipe(p).foreground};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: 1.5rem;
   font-weight: ${theme.typography.fontWeight.bold};
   text-align: left;

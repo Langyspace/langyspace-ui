@@ -11,6 +11,7 @@ export const Dialogue = styled.div.withConfig({
   flex-direction: column;
   gap: 6px;
   min-width: 0;
+  font-family: ${theme.typography.fontFamily.sans};
   @container (max-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing[2]};
   }

@@ -114,7 +114,7 @@ const vocabularyLabel = css`
   box-shadow: 0 6px 18px
     color-mix(in srgb, ${theme.colors.palette.black} 14%, transparent);
   text-align: center;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: 15px;
   font-weight: ${theme.typography.fontWeight.bold};
   line-height: 1.15;

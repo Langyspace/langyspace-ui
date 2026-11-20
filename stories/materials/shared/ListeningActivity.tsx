@@ -114,7 +114,7 @@ export function ListeningActivity({
           <Phone.HomeIndicator />
         </Phone.Phone>
         <Phone.Side>
-          <Common.Heading>Did {contact} say this?</Common.Heading>
+          <Common.Heading $prompt>Did {contact} say this?</Common.Heading>
           {questions.map((item) => (
             <Phone.Question
               as="div"

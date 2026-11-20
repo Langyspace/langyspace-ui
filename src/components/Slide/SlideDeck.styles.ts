@@ -67,7 +67,7 @@ export const Navigation = styled.nav`
 export const BackButton = styled(Button)`
   flex-shrink: 0;
   white-space: nowrap;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.4;
   height: 36px;
   min-height: 36px;

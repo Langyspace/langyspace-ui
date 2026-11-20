@@ -1,12 +1,11 @@
+import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { CharacterDialogue } from '../shared/CharacterPortraits.styles'
 import { PromptExercise } from '../shared/LessonExercises'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -18,6 +17,7 @@ import {
   parkHotspots,
   toggleId,
   prompts,
+  portraits,
 } from './A201.data'
 import * as S from './A201.styles'
 import type { SpeechProps, WarmupProps } from './A201.types'
@@ -55,22 +55,12 @@ export function VocabularySection({ speech }: SpeechProps) {
             : undefined
         }
       />
-      <Common.Row>
-        <Button
-          variant="secondary"
-          aria-pressed={hint}
-          onClick={() => setHint(!hint)}
-        >
-          First letter
-        </Button>
-        <Button
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          {all ? 'Hide words' : 'Show words'}
-        </Button>
-      </Common.Row>
+      <VocabularyControls
+        showInitial={hint}
+        showAll={all}
+        onToggleInitial={() => setHint(!hint)}
+        onToggleAll={() => setAll(!all)}
+      />
     </Common.Stack>
   )
 }
@@ -81,6 +71,7 @@ export function TimeExpressions({ speech }: SpeechProps) {
   return (
     <GrammarTable
       title="Time expressions"
+      captionVisibility="screen-reader"
       columns={{ subject: 'Português', example: 'English' }}
       hiddenAnswers
       revealedIds={revealed}
@@ -91,14 +82,14 @@ export function TimeExpressions({ speech }: SpeechProps) {
         subject: item.pt,
         example: (
           <Common.Row>
-            <Button
+            <S.TimeWord
               variant="text"
               aria-expanded
               aria-label={`Hide expression: ${item.en}`}
               onClick={() => toggle(item.id)}
             >
               {item.en}
-            </Button>
+            </S.TimeWord>
             <IconButton
               variant="neutral"
               size="md"
@@ -315,46 +306,22 @@ export function PictureTalk({ speech }: SpeechProps) {
 }
 
 export function MimeSection() {
-  const [revealed, setRevealed] = useState<string[]>([])
   return (
     <Common.Stack>
-      <Common.Surface>
-        {content.mimeInstructions.map((text) => (
-          <Common.Hint key={text}>{text}</Common.Hint>
-        ))}
-      </Common.Surface>
-      <S.MimeLayout>
-        <S.StickyReference>
-          <Common.Stack>
-            <Common.Heading>Example</Common.Heading>
-            <CharacterDialogue
-              lines={content.mimeExample.map((line, index) => ({
-                id: `mime.example.${index}`,
-                speaker: line.speaker,
-                content: line.text,
-                side: index % 2 ? 'end' : 'start',
-              }))}
-            />
-          </Common.Stack>
-        </S.StickyReference>
-        <S.MimeCards>
-          {content.mimeActions.map((action, index) => {
-            const id = `mime.${index}`
-            return (
-              <RevealCard
-                key={id}
-                marker={<Common.Number>{index + 1}</Common.Number>}
-                answer={action}
-                revealed={revealed.includes(id)}
-                aria-expanded={revealed.includes(id)}
-                onClick={() => setRevealed((ids) => toggleId(ids, id))}
-              >
-                Action {index + 1}
-              </RevealCard>
-            )
-          })}
-        </S.MimeCards>
-      </S.MimeLayout>
+      {content.mimeInstructions.map((text) => (
+        <Common.Hint key={text}>{text}</Common.Hint>
+      ))}
+      <Common.Heading>Example</Common.Heading>
+      <CharacterDialogue
+        density="compact"
+        lines={content.mimeExample.map((line, index) => ({
+          id: `mime.example.${index}`,
+          speaker: line.speaker,
+          avatarUrl: portraits[line.speaker],
+          content: line.text,
+          side: index % 2 ? 'end' : 'start',
+        }))}
+      />
     </Common.Stack>
   )
 }
@@ -375,19 +342,17 @@ export function ConversationSection({ index }: WarmupProps) {
 export function HomeworkSection() {
   return (
     <Common.Stack>
-      <Common.Heading>{content.homework.mission}</Common.Heading>
       <Common.Hint>{content.homework.description}</Common.Hint>
-      <Common.Surface>
-        <Common.Tag>Example</Common.Tag>
-        {content.homework.example}
-      </Common.Surface>
       <PromptExercise
         items={prompts(
           content.homework.instructions.map((prompt) => ({ prompt })),
           'homework',
         )}
       />
-      <Common.Hint>{content.homework.note}</Common.Hint>
+      <Common.Surface>
+        <Common.Tag>Example</Common.Tag>
+        {content.homework.example}
+      </Common.Surface>
     </Common.Stack>
   )
 }

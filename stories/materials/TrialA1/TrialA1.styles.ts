@@ -98,7 +98,7 @@ export const Pair = styled.div`
   align-items: center;
   gap: ${theme.spacing[4]};
   > span {
-    font-family: ${(p) => resolveSlideTheme(p).accentFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-style: italic;
     font-size: clamp(1.75rem, 5cqh, 2.5rem);
     color: ${(p) => resolveSlideTheme(p).indicator};

@@ -1,10 +1,22 @@
 import content from './A201.content.json'
 import sceneManifest from './image-scenes.json'
+import { ana, kim, leo, raj } from '../shared/characterPortraits'
 import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
 
 export { content }
-export const order = Array.from({ length: 20 }, (_, index) => `s${index + 1}`)
+export const order = Array.from(
+  { length: 20 },
+  (_, index) => `s${index + 1}`,
+).flatMap((id) =>
+  id === 's11' ? [id, 's111'] : id === 's15' ? [id, 's151'] : [id],
+)
+export const portraits: Readonly<Record<string, string>> = {
+  Anna: ana,
+  Emma: kim,
+  Ben: leo,
+  Lucas: raj,
+}
 const assets = import.meta.glob('./assets/**/*.webp', {
   eager: true,
   query: '?url',

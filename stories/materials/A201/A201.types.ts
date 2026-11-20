@@ -1,4 +1,3 @@
-import type { ReactNode } from 'react'
 import type { LessonProps } from '../shared/Lesson.types'
 import type { useLessonSpeech } from './useLessonSpeech'
 
@@ -30,10 +29,12 @@ export interface DialoguePageProps extends DialogueProps {
   active: boolean
   title: string
   context: string
-  children?: ReactNode
 }
 export interface WarmupProps {
   index: number
+}
+export interface ListeningProps {
+  active: boolean
 }
 export interface GapButtonStyleProps {
   $revealed: boolean

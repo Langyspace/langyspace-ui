@@ -1,7 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
-import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
 export const Root = styled(Common.Stack).withConfig({
@@ -37,7 +36,7 @@ export const Choice = styled(Pressable)<{
     object-fit: contain;
   }
   b {
-    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: clamp(20px, 3.2cqh, 28px);
     line-height: 1.3;
   }

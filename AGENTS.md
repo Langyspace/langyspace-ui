@@ -104,6 +104,14 @@
   show/hide button.
 - Keep manually revealed vocabulary labels static. Use the same numbered marker component for
   exercise questions and conversation prompts, vertically centered with the question itself.
+- Use Montserrat for body text, prompts, dialogue, vocabulary, labels and controls. Reserve Space
+  Grotesk for titles and headings; question text is body content even when large.
+- Vocabulary hint/show controls use the shared centered bulb and eye IconButtons, preserving their
+  accessible labels and pressed states. Do not replace them with text buttons in individual lessons.
+- Reveal tables keep the full answer cell mounted with reserved dimensions before and after reveal.
+  Hidden content must be inert and inaccessible until revealed. Keep audio click-driven and avoid
+  hover-triggered changes. Reuse the standard table appearance and hide a repeated caption visually
+  through its semantic prop rather than creating a separate layout.
 - Center dialogue text within equal vertical padding. Keep audio beside the English text, with
   translations below; revealing a translation must not move the audio control.
 - Warm-up choices communicate correctness with the option states, without success banners or

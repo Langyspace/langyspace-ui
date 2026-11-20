@@ -46,7 +46,7 @@ export const Introduction = styled.div`
   border-bottom: 1.5px solid ${(p) => recipe(p).border};
 `
 export const LessonEyebrow = styled.div`
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};
   line-height: 16px;
   font-weight: ${theme.typography.fontWeight.bold};
@@ -74,7 +74,7 @@ export const Goal = styled.div`
   }
   b {
     display: block;
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     color: ${(p) => recipe(p).accent};
     font-size: ${theme.typography.fontSize.xs};
     text-transform: uppercase;
@@ -136,7 +136,7 @@ export const Use = styled.aside`
     margin-left: ${theme.spacing[2]};
   }
   small {
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     letter-spacing: 0.2em;
     color: ${theme.colors.palette.accent.pink};
     text-transform: uppercase;
@@ -174,7 +174,7 @@ export const DialogueQuestion = styled(SpeakingCard)`
   border-radius: ${theme.radius.lg};
   background: ${(p) => recipe(p).canvas};
   strong {
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: clamp(${theme.typography.fontSize.lg}, 2.8cqh, 1.375rem);
     line-height: 1.3;
   }
@@ -237,7 +237,7 @@ export const HomeworkStack = styled(Stack)`
   gap: ${theme.spacing[4]};
 `
 export const HomeworkCopy = styled(Button)`
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: 0.9375rem;
   min-height: ${theme.spacing[10]};
 `

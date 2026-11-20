@@ -7,7 +7,7 @@ export const Root = styled(Common.Surface).withConfig({
   gap: ${theme.spacing[5]};
 `
 export const Total = styled.strong`
-  font-family: ${theme.slides.displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: 48px;
   line-height: 1;
 `

@@ -125,7 +125,7 @@ export const Option = styled(Pressable).withConfig({
         height: 36px;
         border-radius: ${theme.radius.circle};
         background: ${(p) => resolveSlideTheme(p).canvas};
-        font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+        font-family: ${theme.typography.fontFamily.sans};
         font-size: 0.9375rem;
       }
       ${OptionText} {

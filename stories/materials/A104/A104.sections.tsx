@@ -88,7 +88,7 @@ export function RoutineWarmUp({ index }: RoutineWarmUpProps) {
         />
       ) : (
         <>
-          <Common.Heading>Kim asks: “{item.t}”</Common.Heading>
+          <Common.Heading $prompt>Kim asks: “{item.t}”</Common.Heading>
           <Styled.Scene src={scene(id)} alt={sceneAlt(id)} />
           <Button variant="secondary" onClick={() => setOpen(true)}>
             Show options

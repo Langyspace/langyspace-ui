@@ -94,7 +94,7 @@ export const Eyebrow = styled.div<{ $tone: 'default' | 'inverse' }>`
   display: flex;
   align-items: center;
   gap: ${theme.spacing[2]};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.4;
   color: ${(p) => (p.$tone === 'inverse' ? recipe(p).indicator : recipe(p).accent)};
   font-size: ${theme.typography.fontSize.xs};

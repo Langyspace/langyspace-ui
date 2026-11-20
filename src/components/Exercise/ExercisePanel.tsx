@@ -13,7 +13,7 @@ export function ExercisePanel({
   const heading = (
     <>
       {title || (counter && !counterInMedia) ? (
-        <Styled.PanelHeading>
+        <Styled.PanelHeading $warmup={variant === 'warmup'}>
           {title ? <h3>{title}</h3> : null}
           {counter && !counterInMedia ? (
             <Styled.Counter>{counter}</Styled.Counter>

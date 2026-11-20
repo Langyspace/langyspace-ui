@@ -6,7 +6,6 @@ import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { LessonNotes } from '../shared/LessonNotes'
 import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { PromptExercise } from '../shared/LessonExercises'
-import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import * as Shell from '../shared/Lesson.styles'
 import {
   VocabularySection,
@@ -19,6 +18,7 @@ import {
   HomeworkSection,
 } from './A201.practice'
 import { DialoguePage } from './A201.conversation'
+import { ListeningSection } from './A201.listening'
 import { content, order, prompts, toggleId } from './A201.data'
 import { useLessonSpeech } from './useLessonSpeech'
 import * as S from './A201.styles'
@@ -58,7 +58,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             width="standard"
             eyebrow="Vocabulary"
             title="Time Expressions"
-            instruction="Say it in English. Click to check."
+            instruction="How do you say that in English?"
           >
             <TimeExpressions speech={speech} />
           </SlidePage>
@@ -121,23 +121,30 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             lines={content.dialogue}
             speech={speech}
             emphasis
+          />
+        ),
+      }
+    if (id === 's111')
+      return {
+        id,
+        label: 'Guided conversation · Anna and Ben · Comprehension',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Guided conversation"
+            title="Comprehension questions"
+            instruction="Answer the questions about the text."
           >
-            <Common.Heading>Comprehension Questions</Common.Heading>
             <PromptExercise
               items={prompts(content.firstComprehension, 'anna-ben.questions')}
             />
-          </DialoguePage>
+          </SlidePage>
         ),
       }
-    if (number >= 12 && number <= 14)
+    if (id === 's12')
       return {
         id,
-        label:
-          number === 12
-            ? 'Guided conversation · Fill in the Blanks'
-            : number === 13
-              ? 'Guided conversation · Comprehension Questions'
-              : 'Guided conversation · Personal Questions',
+        label: 'Guided conversation · Fill in the Blanks',
         content: (
           <DialoguePage
             title="Fill in the Blanks"
@@ -147,30 +154,44 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             speech={speech}
             gaps={gaps}
             onGapToggle={onGapToggle}
+          />
+        ),
+      }
+    if (id === 's13')
+      return {
+        id,
+        label: 'Guided conversation · Emma and Lucas · Comprehension',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Guided conversation"
+            title="Comprehension questions"
+            instruction="Answer the questions about the text."
           >
-            {number === 13 ? (
-              <>
-                <Common.Heading>Comprehension Questions</Common.Heading>
-                <PromptExercise
-                  items={prompts(
-                    content.gapComprehension,
-                    'emma-lucas.questions',
-                  )}
-                />
-              </>
-            ) : null}
-            {number === 14 ? (
-              <>
-                <Common.Heading>Personal Questions</Common.Heading>
-                <PromptExercise
-                  items={prompts(
-                    content.personal.map((prompt) => ({ prompt })),
-                    'emma-lucas.personal',
-                  )}
-                />
-              </>
-            ) : null}
-          </DialoguePage>
+            <PromptExercise
+              items={prompts(content.gapComprehension, 'emma-lucas.questions')}
+            />
+          </SlidePage>
+        ),
+      }
+    if (id === 's14')
+      return {
+        id,
+        label: 'Guided conversation · Personal Questions',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Guided conversation"
+            title="Personal questions"
+            instruction="Answer the questions about yourself."
+          >
+            <PromptExercise
+              items={prompts(
+                content.personal.map((prompt) => ({ prompt })),
+                'emma-lucas.personal',
+              )}
+            />
+          </SlidePage>
         ),
       }
     if (id === 's15')
@@ -182,9 +203,23 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
             width="reading"
             eyebrow="Roleplay"
             title="Guess What I'm Doing!"
-            instruction="Choose a hidden card. Act, guess, then ask about a routine."
           >
             <MimeSection />
+          </SlidePage>
+        ),
+      }
+    if (id === 's151')
+      return {
+        id,
+        label: 'Listening Practice · A message from Anna',
+        content: (
+          <SlidePage
+            width="standard"
+            eyebrow="Listening"
+            title="A message from Anna"
+            instruction="Listen to Anna's message and answer the questions."
+          >
+            <ListeningSection active={pageId === id} />
           </SlidePage>
         ),
       }

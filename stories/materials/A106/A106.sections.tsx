@@ -30,7 +30,7 @@ export function FishWarmUp() {
         />
       ) : (
         <>
-          <Common.Heading>Is it a turtle?</Common.Heading>
+          <Common.Heading $prompt>Is it a turtle?</Common.Heading>
           <Styled.Scene
             src={scene('fish')}
             alt="Um peixe dentro de um aquário redondo."
@@ -75,7 +75,9 @@ export function ExploreHome() {
           {correct.length} of {homeQuestions.length}
         </Common.Hint>
         <Common.Surface>
-          <Common.Heading>{item?.question ?? 'Where’s …?'}</Common.Heading>
+          <Common.Heading $prompt>
+            {item?.question ?? 'Where’s …?'}
+          </Common.Heading>
           {item && current !== undefined ? (
             <>
               <Common.Row>

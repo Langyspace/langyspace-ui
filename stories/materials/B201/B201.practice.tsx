@@ -1,3 +1,4 @@
+import { VocabularyControls } from '../shared/VocabularyControls'
 import { LessonHint } from '../shared/LessonHint'
 import { useState } from 'react'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
@@ -35,24 +36,12 @@ export function VocabularySection() {
           setIds((old) => (old.includes(id) ? old : [...old, id]))
         }}
       />
-      <S.Row>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={initial}
-          onClick={() => setInitial(!initial)}
-        >
-          First letter
-        </Button>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          {all ? 'Hide all' : 'Show all'}
-        </Button>
-      </S.Row>
+      <VocabularyControls
+        showInitial={initial}
+        showAll={all}
+        onToggleInitial={() => setInitial(!initial)}
+        onToggleAll={() => setAll(!all)}
+      />
       {all || ids.length === vocabulary.length ? (
         <S.Hint>
           <b>a charging cable</b> is only the cable. <b>a phone charger</b> goes

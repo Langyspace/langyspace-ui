@@ -35,14 +35,14 @@ export const Panel = styled.section.withConfig({
       }
     `}
 `
-export const PanelHeading = styled.div`
+export const PanelHeading = styled.div<{ $warmup: boolean }>`
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: ${theme.spacing[3]};
   margin-bottom: ${theme.spacing[2]};
   h3 {
-    font-family: ${(p) => recipe(p).displayFontFamily};
+    font-family: ${(p) => (p.$warmup ? theme.typography.fontFamily.sans : recipe(p).displayFontFamily)};
     margin: 0;
     color: inherit;
     font-weight: ${theme.typography.fontWeight.bold};

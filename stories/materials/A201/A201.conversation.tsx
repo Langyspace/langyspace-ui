@@ -1,11 +1,9 @@
 import { Fragment, useState } from 'react'
 import { CharacterDialogue } from '../shared/CharacterPortraits.styles'
-import { ana, kim, leo, raj } from '../shared/characterPortraits'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
-import { toggleId } from './A201.data'
+import { portraits, toggleId } from './A201.data'
 import * as S from './A201.styles'
 import type { DialogueProps, DialoguePageProps } from './A201.types'
 
@@ -17,12 +15,6 @@ const emphasize = (text: string) =>
     .map((part, index) =>
       index % 2 ? <S.Emphasis key={index}>{part}</S.Emphasis> : part,
     )
-const portraits: Record<string, string> = {
-  Anna: ana,
-  Emma: kim,
-  Ben: leo,
-  Lucas: raj,
-}
 
 export function DialogueSection({
   lines,
@@ -84,7 +76,6 @@ export function DialoguePage({
   active,
   title,
   context,
-  children,
   ...props
 }: DialoguePageProps) {
   const { lines, speech } = props
@@ -123,10 +114,7 @@ export function DialoguePage({
           : 'Listen, then read with your teacher.'
       }
     >
-      <Common.Stack>
-        <DialogueSection {...props} />
-        {children}
-      </Common.Stack>
+      <DialogueSection {...props} />
     </SlidePage>
   )
 }

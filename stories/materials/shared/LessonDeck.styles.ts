@@ -19,7 +19,7 @@ export const Cover = styled.header`
 export const Eyebrow = styled.p`
   margin: 0;
   color: ${(p) => recipe(p).accent};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-weight: ${theme.typography.fontWeight.bold};
   font-size: ${theme.typography.fontSize.sm};
   letter-spacing: 0.15em;

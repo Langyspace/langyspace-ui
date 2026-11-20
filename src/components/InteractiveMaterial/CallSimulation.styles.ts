@@ -48,7 +48,7 @@ export const Phone = styled.div<{ $video?: boolean }>`
         `
       : undefined}
   h3 {
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: 22px;
     line-height: 1.1;
     margin: 0;
@@ -63,7 +63,7 @@ export const Avatar = styled.div<{ $poor?: boolean; $video?: boolean }>`
   place-items: center;
   border-radius: ${theme.radius.circle};
   background: ${theme.simulations.callAvatar};
-  font: 700 30px ${theme.slides.displayFontFamily};
+  font: 700 30px ${theme.typography.fontFamily.sans};
   position: relative;
   overflow: ${(p) => (p.$video ? 'visible' : 'hidden')};
   img {
@@ -148,7 +148,7 @@ export const Key = styled(Common.DeviceControl)<{ $pressed: boolean }>`
   border-radius: ${theme.radius.circle};
   background: ${(p) => (p.$pressed ? theme.simulations.foreground : theme.simulations.callKey)};
   color: ${(p) => (p.$pressed ? theme.simulations.canvas : theme.simulations.foreground)};
-  font: 600 20px ${theme.slides.displayFontFamily};
+  font: 600 20px ${theme.typography.fontFamily.sans};
   &:not(:disabled):hover {
     background: ${theme.simulations.callKeyHover};
     color: ${theme.simulations.foreground};

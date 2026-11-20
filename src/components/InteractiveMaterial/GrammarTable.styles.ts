@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
@@ -16,7 +16,7 @@ export const Wrap = styled.div`
 `
 export const Table = styled.table<{
   $tone: 'affirmative' | 'negative' | 'question'
-  $reveal: boolean
+  $captionHidden: boolean
 }>`
   --grammar-ink: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.foreground : p.$tone === 'question' ? theme.semantic.status.info.foreground : theme.semantic.status.success.foreground)};
   --grammar-surface: ${(p) => (p.$tone === 'negative' ? theme.semantic.status.danger.background : p.$tone === 'question' ? theme.semantic.status.info.background : theme.semantic.status.success.background)};
@@ -31,15 +31,15 @@ export const Table = styled.table<{
     font: 700 12px ${theme.slides.displayFontFamily};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
-    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
+    color: var(--grammar-ink);
+    background: var(--grammar-surface);
   }
   th {
-    font: 700 12px ${theme.slides.displayFontFamily};
+    font: 700 12px ${theme.typography.fontFamily.sans};
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: ${(p) => (p.$reveal ? theme.colors.palette.white : 'var(--grammar-ink)')};
-    background: ${(p) => (p.$reveal ? 'var(--grammar-ink)' : 'var(--grammar-surface)')};
+    color: var(--grammar-ink);
+    background: var(--grammar-surface);
   }
   th,
   td {
@@ -48,6 +48,7 @@ export const Table = styled.table<{
     vertical-align: middle;
   }
   tbody th {
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: inherit;
     text-transform: none;
     letter-spacing: normal;
@@ -55,10 +56,10 @@ export const Table = styled.table<{
     background: ${(p) => Common.recipe(p).canvas};
     > span {
       display: inline-block;
-      padding: ${(p) => (p.$reveal ? '0' : '3px 10px')};
+      padding: 3px 10px;
       border-radius: ${theme.radius.pill};
-      background: ${(p) => (p.$reveal ? 'transparent' : Common.recipe(p).accent)};
-      color: ${(p) => (p.$reveal ? 'inherit' : Common.recipe(p).canvas)};
+      background: ${(p) => Common.recipe(p).accent};
+      color: ${(p) => Common.recipe(p).canvas};
     }
   }
   td[data-verb],
@@ -69,6 +70,20 @@ export const Table = styled.table<{
   tbody tr:last-child > * {
     border-bottom: 0;
   }
+  ${(p) =>
+    p.$captionHidden &&
+    css`
+      caption {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip-path: inset(50%);
+        white-space: nowrap;
+        border: 0;
+      }
+    `}
 `
 export const Example = styled(Pressable)<{ $concealed: boolean }>`
   padding: ${theme.spacing[1]} ${(p) => (p.$concealed ? theme.spacing[4] : '0')};
@@ -80,8 +95,34 @@ export const Example = styled(Pressable)<{ $concealed: boolean }>`
   text-align: left;
   border-radius: ${theme.radius.sm};
   min-height: ${theme.spacing[8]};
+  font-family: ${theme.typography.fontFamily.sans};
+  transition: none;
+  &&:hover:not(:disabled),
+  &&:active:not(:disabled) {
+    transform: none;
+    box-shadow: none;
+    background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
+    color: ${(p) => (p.$concealed ? Common.recipe(p).canvas : 'inherit')};
+  }
   &:focus-visible {
     outline: 3px solid ${(p) => Common.recipe(p).accent};
     outline-offset: 3px;
   }
+`
+export const AnswerFrame = styled.div`
+  position: relative;
+  min-width: 0;
+  min-height: ${theme.sizes.control.md};
+`
+export const AnswerContent = styled.div<{ $concealed: boolean }>`
+  visibility: ${(p) => (p.$concealed ? 'hidden' : 'visible')};
+  min-width: 0;
+`
+export const RevealControl = styled(Example)`
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: 0;
+  height: ${theme.sizes.control.md};
+  min-height: ${theme.sizes.control.md};
+  margin-block: auto;
 `

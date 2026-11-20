@@ -16,7 +16,7 @@ export const Introduction = styled.div`
 export const Eyebrow = styled.div`
   display: flex;
   gap: ${theme.spacing[4]};
-  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.32em;
@@ -56,7 +56,7 @@ export const Goal = styled.div`
   b {
     display: block;
     color: ${(p) => resolveSlideTheme(p).accent};
-    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: ${theme.typography.fontSize.xs};
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ export const Question = styled.li`
   border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
   background: ${(p) => resolveSlideTheme(p).surface};
   min-width: 0;
-  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-weight: ${theme.typography.fontWeight.bold};
   font-size: clamp(1.0625rem, 2.8cqh, 1.5rem);
   line-height: 1.3;
@@ -138,7 +138,7 @@ export const QuestionTitle = styled.h3`
   justify-content: space-between;
   gap: ${theme.spacing[3]};
   margin: 0;
-  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: clamp(1.125rem, 2.8cqh, 1.375rem);
   line-height: 1.3;
 `
@@ -201,7 +201,7 @@ export const Now = styled(Surface)`
   line-height: 1.4;
   > b {
     color: ${(p) => resolveSlideTheme(p).accent};
-    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
   }
   > p {
     flex: 1;
@@ -271,7 +271,7 @@ export const Dark = styled(Stack)`
   }
   strong {
     color: ${theme.semantic.foreground.brand};
-    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: ${theme.typography.fontSize.xs};
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -327,7 +327,7 @@ export const Homework = styled(Surface)`
   flex-direction: row;
   align-items: center;
   gap: ${theme.spacing[4]};
-  font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: clamp(1.125rem, 3cqh, 1.5rem);
   line-height: 1.3;
   img {
@@ -338,6 +338,7 @@ export const Homework = styled(Surface)`
   }
   b {
     display: block;
+    font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
   }
 `
 export const AudioError = styled.p`

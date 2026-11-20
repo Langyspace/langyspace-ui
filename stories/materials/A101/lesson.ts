@@ -280,6 +280,12 @@ export default {
       d: 'Practise am, is and are.',
       line: '2. Grammar · Verb to be',
     },
+    {
+      img: 'e_mic',
+      t: 'Shadowing · Introducing Yourself',
+      d: 'Listen and repeat the conversation.',
+      line: '3. Shadowing · Introducing Yourself',
+    },
   ],
   NOTES: {
     '1': {
@@ -476,16 +482,16 @@ export default {
       end: 50,
       pg: 'Homework · Before next class',
       min: '2 min, até o minuto 50.',
-      tela: 'Dois exercícios: Flashcards · Countries e Grammar · Verb to be.',
+      tela: 'Três exercícios: Flashcards · Countries, Grammar · Verb to be e Shadowing · Introducing Yourself.',
       passos: [
-        'Apresente os dois exercícios: revisar os países nos flashcards e praticar am, is e are na gramática.',
+        'Apresente as três tarefas: revisar os países, praticar am, is e are e repetir a conversa Introducing Yourself.',
         'Se precisar, relembrem um país e uma frase com o verb to be.',
-        'Confirme que ela entendeu as duas tarefas e despeça-se: “Bye! See you next class.”.',
+        'Confirme que ela entendeu as três tarefas e despeça-se: “Bye! See you next class.”.',
       ],
       trava: 'Se ela tiver dúvida, relembre um exemplo de cada exercício.',
       corr: 'Nenhuma.',
       tempo:
-        'Se atrasar, apresente as duas tarefas brevemente; se sobrar, revisem mais um país e uma frase.',
+        'Se atrasar, apresente as três tarefas brevemente; se sobrar, ouçam a primeira fala do shadowing.',
     },
     '14': {
       end: 18,

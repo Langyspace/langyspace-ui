@@ -1,3 +1,4 @@
+import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -42,24 +43,12 @@ export function Vocabulary({ media }: AudioProps) {
         }}
         onPlay={(id) => media.play([id])}
       />
-      <S.VocabularyTools>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={hints}
-          onClick={() => setHints(!hints)}
-        >
-          Letter hints
-        </Button>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          {all ? 'Hide words' : 'Show all words'}
-        </Button>
-      </S.VocabularyTools>
+      <VocabularyControls
+        showInitial={hints}
+        showAll={all}
+        onToggleInitial={() => setHints(!hints)}
+        onToggleAll={() => setAll(!all)}
+      />
       <S.Hint>
         <b>on mobile</b> = no celular · <b>on desktop</b> = no computador. The
         menu doesn’t open on mobile.

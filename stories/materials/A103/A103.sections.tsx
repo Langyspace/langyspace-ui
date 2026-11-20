@@ -32,7 +32,7 @@ export function JobWarmUp({ index }: JobWarmUpProps) {
         />
       ) : (
         <>
-          <Common.Heading>{item.q}</Common.Heading>
+          <Common.Heading $prompt>{item.q}</Common.Heading>
           <Styled.Scene src={scene(id)} alt={sceneAlt(id)} />
           <Button variant="secondary" onClick={() => setOpen(true)}>
             Show options

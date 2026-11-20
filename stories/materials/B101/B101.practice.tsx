@@ -1,3 +1,4 @@
+import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
@@ -43,24 +44,12 @@ export function VocabularySection({ group = 0 }: { group?: number }) {
           setIds((old) => (old.includes(id) ? old : [...old, id]))
         }
       />
-      <S.VocabularyTools>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={initial}
-          onClick={() => setInitial(!initial)}
-        >
-          Initial letters
-        </Button>
-        <Button
-          size="sm"
-          variant="secondary"
-          aria-pressed={all}
-          onClick={() => setAll(!all)}
-        >
-          {all ? 'Hide words' : 'Show all'}
-        </Button>
-      </S.VocabularyTools>
+      <VocabularyControls
+        showInitial={initial}
+        showAll={all}
+        onToggleInitial={() => setInitial(!initial)}
+        onToggleAll={() => setAll(!all)}
+      />
       {complete ? (
         <S.Surface>
           <S.Hint>

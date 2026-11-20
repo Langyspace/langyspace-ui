@@ -2,6 +2,8 @@ import { styled } from 'styled-components'
 import { Button } from '../../../src/components/Button/Button'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { Content } from '../../../src/components/Slide/SlidePage.styles'
+import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
+import { Phone } from '../../../src/components/VoiceMessage/VoiceMessageExercise.styles'
 import { regularVocabularyMaxWidth } from '../../../src/components/Exercise/VocabularyGrid.styles'
 import { theme } from '../../../src/foundations/theme/theme'
 import { recipe } from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -16,6 +18,31 @@ export const VocabularyPage = styled(SlidePage)`
 `
 export const VocabularyBody = styled.div`
   padding-top: ${theme.exercises.vocabularyTopSpace};
+`
+export const TimeWord = styled(Button)`
+  padding: 0;
+  min-height: ${theme.spacing[10]};
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  font: inherit;
+  transform: none;
+  transition: none;
+  &:hover,
+  &:active {
+    background: transparent;
+    box-shadow: none;
+    color: inherit;
+    text-decoration: none;
+    transform: none;
+  }
+`
+export const Listening = styled(VoiceMessageExercise)`
+  ${Phone} {
+    position: sticky;
+    top: 0;
+  }
 `
 export const WarmImage = styled.img`
   min-width: 0;
@@ -42,7 +69,7 @@ export const Structure = styled.p`
   padding: ${theme.spacing[3]};
   border-radius: ${theme.slides.panelRadius};
   background: ${(p) => recipe(p).surface};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: inherit;
   font-weight: ${theme.typography.fontWeight.bold};
   line-height: 1.5;
 `
@@ -67,15 +94,6 @@ export const Gap = styled(Button)<GapButtonStyleProps>`
       background: transparent;
       box-shadow: none;
     }
-  }
-`
-export const MimeCards = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: ${theme.spacing[3]};
-  min-width: 0;
-  @container (max-width: ${theme.breakpoints.sm}) {
-    grid-template-columns: minmax(0, 1fr);
   }
 `
 export const ParkLayout = styled.div`
@@ -105,7 +123,4 @@ export const ParkReference = styled(StickyReference)`
       max-height: 32dvh;
     }
   }
-`
-export const MimeLayout = styled(GrammarColumns)`
-  align-items: start;
 `

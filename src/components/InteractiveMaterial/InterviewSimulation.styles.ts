@@ -72,7 +72,7 @@ export const Self = styled.div`
     display: grid;
     place-items: center;
     background: ${theme.slides.accent};
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-size: clamp(12px, 2vw, 18px);
   }
   span {

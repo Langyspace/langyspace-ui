@@ -1,5 +1,5 @@
 {
-  "revision": "a201-what-are-you-doing-v1",
+  "revision": "a201-what-are-you-doing-v2-feedback",
   "title": "What Are You Doing?",
   "vocabulary": [
     {
@@ -386,31 +386,21 @@
     "The other person guesses what they're doing using the Present Continuous.",
     "After guessing correctly, ask one question about the person's routine."
   ],
-  "mimeActions": [
-    "Brushing your teeth",
-    "Cooking dinner",
-    "Reading a book",
-    "Drinking coffee",
-    "Taking a picture",
-    "Washing your hair",
-    "Dancing",
-    "Playing the guitar"
-  ],
   "mimeExample": [
     {
-      "speaker": "A",
+      "speaker": "Anna",
       "text": "Are you brushing your teeth?"
     },
     {
-      "speaker": "B",
+      "speaker": "Ben",
       "text": "Yes, I am!"
     },
     {
-      "speaker": "A",
+      "speaker": "Anna",
       "text": "Do you brush your teeth after breakfast?"
     },
     {
-      "speaker": "B",
+      "speaker": "Ben",
       "text": "Yes, I do! I brush my teeth every morning."
     }
   ],
@@ -438,7 +428,6 @@
   ],
   "homework": {
     "title": "Real-Life Observation",
-    "mission": "Your Mission: What Are People Doing?",
     "description": "Go to a public place, such as a café, shopping mall or park. Observe what people around you are doing and record a short audio describing their activities.",
     "example": "I'm at a café. A woman is drinking coffee. Two people are talking. A man is working on his laptop.",
     "instructions": [
@@ -446,7 +435,32 @@
       "Observe the people around you.",
       "Record a short audio using the Present Continuous.",
       "Send the audio to your teacher."
-    ],
-    "note": "You only need an audio description. You do not need to film or photograph anyone."
+    ]
+  },
+  "listening": {
+    "id": "a201.listening.anna.01",
+    "transcript": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
+    "questions": [
+      {
+        "prompt": "Where is Anna right now?",
+        "answer": "Anna is at home right now."
+      },
+      {
+        "prompt": "What is Anna doing?",
+        "answer": "She is making coffee and listening to music."
+      },
+      {
+        "prompt": "What does Anna usually do in the morning?",
+        "answer": "She usually goes to the gym in the morning."
+      },
+      {
+        "prompt": "What is Anna's sister doing?",
+        "answer": "Her sister is watching TV."
+      },
+      {
+        "prompt": "What are Anna's parents doing?",
+        "answer": "Her parents are cooking lunch."
+      }
+    ]
   }
 }

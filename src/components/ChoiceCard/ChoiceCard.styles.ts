@@ -68,7 +68,7 @@ export const Root = styled(Pressable).withConfig({
           border-color: ${(p) => resolveSlideTheme(p).border};
           color: ${(p) => resolveSlideTheme(p).foreground};
           background: ${(p) => resolveSlideTheme(p).surface};
-          font-family: ${(p) => resolveSlideTheme(p).displayFontFamily};
+          font-family: ${theme.typography.fontFamily.sans};
           &[aria-pressed='true'] {
             border: 3px solid ${theme.semantic.status.success.foreground};
             color: ${theme.colors.palette.white};

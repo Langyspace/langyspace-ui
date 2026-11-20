@@ -12,6 +12,8 @@ export interface GrammarTableProps extends Omit<
   'title' | 'onPlay'
 > {
   title: ReactNode
+  /** Keep a table name accessible without repeating the page title visually. */
+  captionVisibility?: 'visible' | 'screen-reader'
   rows: readonly GrammarTableRow[]
   columns?: { subject: string; verb?: string; example: string }
   tone?: 'affirmative' | 'negative' | 'question'
