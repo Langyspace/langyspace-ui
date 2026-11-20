@@ -198,13 +198,13 @@ export function KimsList() {
   const turns = [
     {
       speaker: 'Ana',
-      cue: 'Ask about apples.',
+      cue: 'Ask about a fruit.',
       hint: 'Do you … apples?',
       text: 'Do you like apples?',
     },
     {
       speaker: 'Kim',
-      cue: 'Say no. Choose mangoes.',
+      cue: 'Say no. Choose a fruit.',
       hint: 'No. I like …',
       text: 'No. I like mangoes.',
     },
