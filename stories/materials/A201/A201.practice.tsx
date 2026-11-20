@@ -68,6 +68,14 @@ export function VocabularySection({ speech }: SpeechProps) {
 export function TimeExpressions({ speech }: SpeechProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const toggle = (id: string) => setRevealed((ids) => toggleId(ids, id))
+  const reveal = (id: string) => {
+    toggle(id)
+    const item = content.timeExpressions.find(
+      (expression) => expression.id === id,
+    )
+    if (item && speech.has({ id: item.id, text: item.en }))
+      speech.speak([{ id: item.id, text: item.en }])
+  }
   return (
     <GrammarTable
       title="Time expressions"
@@ -75,7 +83,7 @@ export function TimeExpressions({ speech }: SpeechProps) {
       columns={{ subject: 'Português', example: 'English' }}
       hiddenAnswers
       revealedIds={revealed}
-      onReveal={toggle}
+      onReveal={reveal}
       revealLabel="Reveal expression"
       rows={content.timeExpressions.map((item) => ({
         id: item.id,

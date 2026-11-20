@@ -90,6 +90,7 @@ export const Example = styled(Pressable)<{ $concealed: boolean }>`
   border: 0;
   background: ${(p) => (p.$concealed ? Common.recipe(p).accent : 'transparent')};
   font: inherit;
+  font-weight: ${(p) => (p.$concealed ? theme.typography.fontWeight.bold : theme.typography.fontWeight.semibold)};
   color: ${(p) => (p.$concealed ? Common.recipe(p).canvas : 'inherit')};
   cursor: pointer;
   text-align: left;

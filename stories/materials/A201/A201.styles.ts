@@ -27,6 +27,7 @@ export const TimeWord = styled(Button)`
   box-shadow: none;
   color: inherit;
   font: inherit;
+  font-weight: ${theme.typography.fontWeight.semibold};
   transform: none;
   transition: none;
   &:hover,
