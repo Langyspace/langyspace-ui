@@ -1,25 +1,1398 @@
 {
-  "file": "assets/L.9.mp3",
-  "sha256": "1bb0cf895fb5c62b31726f5f9e6bffe2975f25d3a96ee33d674b036522eb92b5",
-  "durationSeconds": 15.18585,
-  "source": "exact A201.content.json listening transcript; completed AUD-A201-KIM-01",
-  "provider": "elevenlabs",
-  "modelId": "eleven_multilingual_v2",
-  "voice": {
-    "voiceId": "Nhs7eitvQWFTQBsf0yiT",
-    "name": "Sarah Explains"
-  },
-  "voiceSettings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0.1,
-    "use_speaker_boost": true,
-    "speed": 0.92
-  },
-  "sourceArtifact": {
-    "id": "1e9bba01-d234-4ac8-ad04-113e051f2e9f",
-    "version": "1795033410-432c"
-  },
-  "transport": "Native HTMLAudioElement via shared useVoiceMessageAudio; lesson-owned panel composed with shared Button/Avatar. No new TTS request.",
-  "adoptedOfficialVersion": "1795045837-60e6"
+  "revision": "a201-what-are-you-doing-v1",
+  "source": "Frozen exact audio-script.final.json; provider complete-audio-map.json 04ef4cb366541a5bdc0c4a6a96792a038773ddce860bc72d5dc5aa5740de50ca",
+  "items": [
+    {
+      "id": "a201.vocabulary.01",
+      "text": "I am cooking.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "780f30a456711fff249ad1ff1c4dad600784812d40a93c6e33bde8bd034a9545",
+      "bytes": 18015,
+      "durationSeconds": 1.068118,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "7biYQWnSRlprg4YeeWfP",
+      "wordTimings": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.081
+        },
+        {
+          "text": "am",
+          "start": 0.139,
+          "end": 0.232
+        },
+        {
+          "text": "cooking.",
+          "start": 0.29,
+          "end": 1.068
+        }
+      ],
+      "synthesisFingerprint": "3d7288b0f9bd42f7c9e616fe38fade173b39934dfd1a650ba662c5c91213a245",
+      "file": "assets/audio/a201.vocabulary.01.mp3"
+    },
+    {
+      "id": "a201.vocabulary.02",
+      "text": "He is reading.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "cd58b91daadd5125c8e4160bbb32e20cec3c36309bcd3824d99314ee90403eb6",
+      "bytes": 18015,
+      "durationSeconds": 1.068118,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "Y3jJ4TIdHyJtQDwDFHEa",
+      "wordTimings": [
+        {
+          "text": "He",
+          "start": 0.0,
+          "end": 0.163
+        },
+        {
+          "text": "is",
+          "start": 0.221,
+          "end": 0.313
+        },
+        {
+          "text": "reading.",
+          "start": 0.372,
+          "end": 1.068
+        }
+      ],
+      "synthesisFingerprint": "bbe90c13e404588d1f41b4316493a5543f6a13d2392efe23165227bdd2aff2a8",
+      "file": "assets/audio/a201.vocabulary.02.mp3"
+    },
+    {
+      "id": "a201.vocabulary.03",
+      "text": "She is working.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "69eb0669d4c6a71746d893425bceb2f288bb3c39dcf6d08fd622971d5b03a4e1",
+      "bytes": 18851,
+      "durationSeconds": 1.114558,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "H4Iu2zPEX8OVi5SrsLlJ",
+      "wordTimings": [
+        {
+          "text": "She",
+          "start": 0.0,
+          "end": 0.163
+        },
+        {
+          "text": "is",
+          "start": 0.209,
+          "end": 0.29
+        },
+        {
+          "text": "working.",
+          "start": 0.337,
+          "end": 1.1145578231292517
+        }
+      ],
+      "synthesisFingerprint": "15e9e92823df4839e0ed7fa2fa83a0b627a6c68aac7d5a679cc8cceccfd45de0",
+      "file": "assets/audio/a201.vocabulary.03.mp3"
+    },
+    {
+      "id": "a201.vocabulary.04",
+      "text": "It is playing.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "8bb4eca342676861dc67a1ae67edb32480098fea760e7f3613e656590056e85f",
+      "bytes": 19687,
+      "durationSeconds": 1.160998,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "rN8FjRYMZgnHJZUEkC3O",
+      "wordTimings": [
+        {
+          "text": "It",
+          "start": 0.0,
+          "end": 0.163
+        },
+        {
+          "text": "is",
+          "start": 0.209,
+          "end": 0.29
+        },
+        {
+          "text": "playing.",
+          "start": 0.348,
+          "end": 1.1609977324263039
+        }
+      ],
+      "synthesisFingerprint": "43b5a2b3da628d213a8869699716df04b741b9ec3169a8495dab5edb1daf777d",
+      "file": "assets/audio/a201.vocabulary.04.mp3"
+    },
+    {
+      "id": "a201.vocabulary.05",
+      "text": "They are eating.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "da7c48e0f1b750fb8d799b82a129b9d16b98604e9fadaf1721ae4c92137545e7",
+      "bytes": 18851,
+      "durationSeconds": 1.114558,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "uIZzLnOhEeQMJJolMGM6",
+      "wordTimings": [
+        {
+          "text": "They",
+          "start": 0.0,
+          "end": 0.186
+        },
+        {
+          "text": "are",
+          "start": 0.221,
+          "end": 0.337
+        },
+        {
+          "text": "eating.",
+          "start": 0.383,
+          "end": 1.1145578231292517
+        }
+      ],
+      "synthesisFingerprint": "9714eb03fe55d325d5edc97e2c85c8419228c73222e36b6c1429396d431e1ce8",
+      "file": "assets/audio/a201.vocabulary.05.mp3"
+    },
+    {
+      "id": "a201.vocabulary.06",
+      "text": "We are sleeping.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "77af7aad4dfef2f23e7cdaecc794b2714a71ce70f6db7dbfbe1ab057104a6b33",
+      "bytes": 19687,
+      "durationSeconds": 1.160998,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "3qwRG4TlM670Pzuy1d7f",
+      "wordTimings": [
+        {
+          "text": "We",
+          "start": 0.0,
+          "end": 0.151
+        },
+        {
+          "text": "are",
+          "start": 0.186,
+          "end": 0.29
+        },
+        {
+          "text": "sleeping.",
+          "start": 0.325,
+          "end": 1.1609977324263039
+        }
+      ],
+      "synthesisFingerprint": "dba45297ee37179ffd9f64426bfa7f220b284477daaaada301b39836a596451c",
+      "file": "assets/audio/a201.vocabulary.06.mp3"
+    },
+    {
+      "id": "a201.time.now",
+      "text": "Now",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "e40e5c7722cd11e067ab5adc5ed8709b0a3847aa230dfbe4b8a1c3fa3434f897",
+      "bytes": 14253,
+      "durationSeconds": 0.835918,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "7nK3PEL3xKl5BBrw1UHW",
+      "wordTimings": [
+        {
+          "text": "Now",
+          "start": 0.0,
+          "end": 0.8359183673469388
+        }
+      ],
+      "synthesisFingerprint": "a74d56dc56e6ad8e81c274f719c6848cd4bf175140ddc3630b53ecbf957433ab",
+      "file": "assets/audio/a201.time.now.mp3"
+    },
+    {
+      "id": "a201.time.today",
+      "text": "Today",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "8ef81ef9fa55e00106c7991b47d003a66cdc51186caf44d17ba283441ce878af",
+      "bytes": 12999,
+      "durationSeconds": 0.743039,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "PAMHWTkpfxkKkD7Jv2FR",
+      "wordTimings": [
+        {
+          "text": "Today",
+          "start": 0.0,
+          "end": 0.743
+        }
+      ],
+      "synthesisFingerprint": "e17ba6e0475fd14aff13c1353ff9b835f9570198607afc552c7337e730a1627c",
+      "file": "assets/audio/a201.time.today.mp3"
+    },
+    {
+      "id": "a201.time.these-days",
+      "text": "These days",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "020e48148c0850039af79d576bdaadf7165cf0a9383a41d970d81d084d777d58",
+      "bytes": 17597,
+      "durationSeconds": 1.021678,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "AN7THlIA8YJt7DzKvEhB",
+      "wordTimings": [
+        {
+          "text": "These",
+          "start": 0.0,
+          "end": 0.267
+        },
+        {
+          "text": "days",
+          "start": 0.313,
+          "end": 1.0216780045351475
+        }
+      ],
+      "synthesisFingerprint": "b4a6d199ebb5d9d378bf1795579e6fd0975364ec366ff3de804258f60a019df9",
+      "file": "assets/audio/a201.time.these-days.mp3"
+    },
+    {
+      "id": "a201.time.lately",
+      "text": "Lately",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "41670e417ee205e795c917e07b6a80e24364e99cb7af4f06c5db02201924e7f7",
+      "bytes": 14253,
+      "durationSeconds": 0.835918,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "Z1uDNDWgvjaK5EIeHR7w",
+      "wordTimings": [
+        {
+          "text": "Lately",
+          "start": 0.0,
+          "end": 0.8359183673469388
+        }
+      ],
+      "synthesisFingerprint": "596d5e13c41017158e2730e89040417de73e79b6aab8ede8cc423a94889b9335",
+      "file": "assets/audio/a201.time.lately.mp3"
+    },
+    {
+      "id": "a201.time.this-week",
+      "text": "This week",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "dd0830813b12cd62096e399bb1b0d87fd584d8d70cfcccb9035d431c1ddc6a79",
+      "bytes": 15089,
+      "durationSeconds": 0.882358,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "iqhHnj4Io5zJC4WHUxux",
+      "wordTimings": [
+        {
+          "text": "This",
+          "start": 0.0,
+          "end": 0.209
+        },
+        {
+          "text": "week",
+          "start": 0.267,
+          "end": 0.882
+        }
+      ],
+      "synthesisFingerprint": "b9d941e3c0bf7ebb54165deb603ecdf6b8f389f1826e0ddd01be6940c4471f61",
+      "file": "assets/audio/a201.time.this-week.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.01",
+      "text": "Hey! What are you doing?",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "25de62188d4213c2c65b6971b3f2c2dd174ebcc9d0e22db12011079b034b7170",
+      "bytes": 24702,
+      "durationSeconds": 1.486077,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "OnQjUxhY2pkFr1PadZGA",
+      "wordTimings": [
+        {
+          "text": "Hey!",
+          "start": 0.0,
+          "end": 0.372
+        },
+        {
+          "text": "What",
+          "start": 0.464,
+          "end": 0.604
+        },
+        {
+          "text": "are",
+          "start": 0.627,
+          "end": 0.708
+        },
+        {
+          "text": "you",
+          "start": 0.731,
+          "end": 0.801
+        },
+        {
+          "text": "doing?",
+          "start": 0.836,
+          "end": 1.486
+        }
+      ],
+      "synthesisFingerprint": "926ac0a0947abfc2ff2339ef44d572fd36ec5e98ef3e7764bdc8e05b7351f27e",
+      "file": "assets/audio/a201.dialogue.anna-ben.01.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.02",
+      "text": "I'm cooking dinner. What about you?",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "21a7c0c91bfc24b846d1267c72b6d2b1f7ab443148f26772e623f0e81fbe1d5d",
+      "bytes": 35987,
+      "durationSeconds": 2.182676,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "ZSoXZ9ojJm4LY6FrsKHO",
+      "wordTimings": [
+        {
+          "text": "I'm",
+          "start": 0.0,
+          "end": 0.174
+        },
+        {
+          "text": "cooking",
+          "start": 0.232,
+          "end": 0.499
+        },
+        {
+          "text": "dinner.",
+          "start": 0.546,
+          "end": 0.929
+        },
+        {
+          "text": "What",
+          "start": 1.161,
+          "end": 1.324
+        },
+        {
+          "text": "about",
+          "start": 1.358,
+          "end": 1.533
+        },
+        {
+          "text": "you?",
+          "start": 1.591,
+          "end": 2.182675736961451
+        }
+      ],
+      "synthesisFingerprint": "ead095a060309c1a9b866ec5594a4b25bf4c56515b3e229ad683c7265675cff1",
+      "file": "assets/audio/a201.dialogue.anna-ben.02.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.03",
+      "text": "I'm watching a movie.",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "46c6a9ef1313f372695727ff1675f6c0111260f61008695c233fa39936349aea",
+      "bytes": 22612,
+      "durationSeconds": 1.346757,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "GDWlbjkFr9ueX5kwHlvb",
+      "wordTimings": [
+        {
+          "text": "I'm",
+          "start": 0.0,
+          "end": 0.174
+        },
+        {
+          "text": "watching",
+          "start": 0.209,
+          "end": 0.464
+        },
+        {
+          "text": "a",
+          "start": 0.511,
+          "end": 0.534
+        },
+        {
+          "text": "movie.",
+          "start": 0.569,
+          "end": 1.3467573696145125
+        }
+      ],
+      "synthesisFingerprint": "7eb0086fdb805d5c01bbeeb7fa7e34249742bac1d852e0caab0cb1aa0660ce9f",
+      "file": "assets/audio/a201.dialogue.anna-ben.03.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.04",
+      "text": "Nice! Do you usually watch movies at night?",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "83fbe274e63b20456ee0c14663058db0669598ade0bd141a0163b085ae9777ba",
+      "bytes": 38077,
+      "durationSeconds": 2.321995,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "L9YFinHLaGT8xQtKP9gY",
+      "wordTimings": [
+        {
+          "text": "Nice!",
+          "start": 0.0,
+          "end": 0.43
+        },
+        {
+          "text": "Do",
+          "start": 0.453,
+          "end": 0.534
+        },
+        {
+          "text": "you",
+          "start": 0.569,
+          "end": 0.639
+        },
+        {
+          "text": "usually",
+          "start": 0.72,
+          "end": 0.964
+        },
+        {
+          "text": "watch",
+          "start": 0.998,
+          "end": 1.173
+        },
+        {
+          "text": "movies",
+          "start": 1.254,
+          "end": 1.544
+        },
+        {
+          "text": "at",
+          "start": 1.579,
+          "end": 1.649
+        },
+        {
+          "text": "night?",
+          "start": 1.707,
+          "end": 2.3219954648526078
+        }
+      ],
+      "synthesisFingerprint": "13cfdddc3aa614e1ee8dabfec19470e950824561ea38a6ee596509c53072af1b",
+      "file": "assets/audio/a201.dialogue.anna-ben.04.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.05",
+      "text": "Yes, but I usually read before bed. Do you cook every day?",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "d4ed22eb6e3ca5f82997bad0fac1994c14fd1985d29f15a0586d31c7f143ad9f",
+      "bytes": 58975,
+      "durationSeconds": 3.622313,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "p71jt65Redn17zn3vqt2",
+      "wordTimings": [
+        {
+          "text": "Yes,",
+          "start": 0.0,
+          "end": 0.313
+        },
+        {
+          "text": "but",
+          "start": 0.348,
+          "end": 0.476
+        },
+        {
+          "text": "I",
+          "start": 0.511,
+          "end": 0.546
+        },
+        {
+          "text": "usually",
+          "start": 0.65,
+          "end": 0.952
+        },
+        {
+          "text": "read",
+          "start": 1.01,
+          "end": 1.161
+        },
+        {
+          "text": "before",
+          "start": 1.207,
+          "end": 1.463
+        },
+        {
+          "text": "bed.",
+          "start": 1.509,
+          "end": 1.904
+        },
+        {
+          "text": "Do",
+          "start": 2.38,
+          "end": 2.473
+        },
+        {
+          "text": "you",
+          "start": 2.496,
+          "end": 2.566
+        },
+        {
+          "text": "cook",
+          "start": 2.601,
+          "end": 2.74
+        },
+        {
+          "text": "every",
+          "start": 2.786,
+          "end": 2.961
+        },
+        {
+          "text": "day?",
+          "start": 3.007,
+          "end": 3.622
+        }
+      ],
+      "synthesisFingerprint": "6cc9e2742ef16c4aad6944b85989056f80b1096844f74ba9d87cd3a8fd05bc94",
+      "file": "assets/audio/a201.dialogue.anna-ben.05.mp3"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.06",
+      "text": "Not really. I usually order food, but today I'm making pasta.",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "aafb9073e70a6a235c311551ee7c3382907b0a6b57e8a9452f332a2a9e6a7f5d",
+      "bytes": 68588,
+      "durationSeconds": 4.226032,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "DgkQZg0fgtckJnXbCl0s",
+      "wordTimings": [
+        {
+          "text": "Not",
+          "start": 0.0,
+          "end": 0.255
+        },
+        {
+          "text": "really.",
+          "start": 0.313,
+          "end": 0.813
+        },
+        {
+          "text": "I",
+          "start": 1.045,
+          "end": 1.103
+        },
+        {
+          "text": "usually",
+          "start": 1.231,
+          "end": 1.498
+        },
+        {
+          "text": "order",
+          "start": 1.533,
+          "end": 1.707
+        },
+        {
+          "text": "food,",
+          "start": 1.8,
+          "end": 2.148
+        },
+        {
+          "text": "but",
+          "start": 2.171,
+          "end": 2.299
+        },
+        {
+          "text": "today",
+          "start": 2.334,
+          "end": 2.705
+        },
+        {
+          "text": "I'm",
+          "start": 2.833,
+          "end": 2.984
+        },
+        {
+          "text": "making",
+          "start": 3.042,
+          "end": 3.297
+        },
+        {
+          "text": "pasta.",
+          "start": 3.355,
+          "end": 4.226
+        }
+      ],
+      "synthesisFingerprint": "d37e6c449e01bda687fdf6f8b610032f1c70a9e0fa8eeb6ae5edaf6e743074de",
+      "file": "assets/audio/a201.dialogue.anna-ben.06.mp3"
+    },
+    {
+      "id": "a201.park.anna",
+      "text": "Anna is reading a book.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "d68369d2d5c92f5824a9e6a4c7435d367c2b292c6e0dfdd9f5b02571545f92dd",
+      "bytes": 18851,
+      "durationSeconds": 1.114558,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "nhWeOqKkzQ91wE8f1ER9",
+      "wordTimings": [
+        {
+          "text": "Anna",
+          "start": 0.0,
+          "end": 0.255
+        },
+        {
+          "text": "is",
+          "start": 0.302,
+          "end": 0.383
+        },
+        {
+          "text": "reading",
+          "start": 0.43,
+          "end": 0.65
+        },
+        {
+          "text": "a",
+          "start": 0.685,
+          "end": 0.708
+        },
+        {
+          "text": "book.",
+          "start": 0.755,
+          "end": 1.1145578231292517
+        }
+      ],
+      "synthesisFingerprint": "aab9e6817e04ee5ae2616d570acbc35ceb5b52caa2a249c406a015d78ecf4d03",
+      "file": "assets/audio/a201.park.anna.mp3"
+    },
+    {
+      "id": "a201.park.ben",
+      "text": "Ben is running.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "30d7b46f438fdbbf5f0709c5bfb0e8d17ab9a1328fae6d69fe1663d6b4c7bab6",
+      "bytes": 19687,
+      "durationSeconds": 1.160998,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "Ngvco33j93YkLkBCHxT2",
+      "wordTimings": [
+        {
+          "text": "Ben",
+          "start": 0.0,
+          "end": 0.244
+        },
+        {
+          "text": "is",
+          "start": 0.302,
+          "end": 0.383
+        },
+        {
+          "text": "running.",
+          "start": 0.441,
+          "end": 1.1609977324263039
+        }
+      ],
+      "synthesisFingerprint": "2d10903aaa9430ec3ca0051861b76722521349c91fd219c1a284f60f6afd3604",
+      "file": "assets/audio/a201.park.ben.mp3"
+    },
+    {
+      "id": "a201.park.emma",
+      "text": "Emma is walking her dog.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "e1f511ac4890ae9e89119e0b6c09438dddfc73353bb9f07f0088aedf39117daa",
+      "bytes": 22612,
+      "durationSeconds": 1.346757,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "TT2PwQeTNrZVnOOVKL3E",
+      "wordTimings": [
+        {
+          "text": "Emma",
+          "start": 0.0,
+          "end": 0.221
+        },
+        {
+          "text": "is",
+          "start": 0.267,
+          "end": 0.348
+        },
+        {
+          "text": "walking",
+          "start": 0.406,
+          "end": 0.685
+        },
+        {
+          "text": "her",
+          "start": 0.731,
+          "end": 0.813
+        },
+        {
+          "text": "dog.",
+          "start": 0.848,
+          "end": 1.3467573696145125
+        }
+      ],
+      "synthesisFingerprint": "1f60382b2b1fefd0755164934b6258ca1c58c41b80e64881ffd38b333cabad92",
+      "file": "assets/audio/a201.park.emma.mp3"
+    },
+    {
+      "id": "a201.park.lucas",
+      "text": "Lucas is riding a bike.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "4d13b7dc4a8e4aeb1325745cae65d7731dd3b1035bfe77c23a6f8681b5f95826",
+      "bytes": 26374,
+      "durationSeconds": 1.578957,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "yP8mUyk9MQ5KQEo0zD35",
+      "wordTimings": [
+        {
+          "text": "Lucas",
+          "start": 0.0,
+          "end": 0.372
+        },
+        {
+          "text": "is",
+          "start": 0.418,
+          "end": 0.488
+        },
+        {
+          "text": "riding",
+          "start": 0.546,
+          "end": 0.813
+        },
+        {
+          "text": "a",
+          "start": 0.859,
+          "end": 0.882
+        },
+        {
+          "text": "bike.",
+          "start": 0.929,
+          "end": 1.5789569160997732
+        }
+      ],
+      "synthesisFingerprint": "b83eb75198d1d78c83fa386a1b6cb9d568cd3142e0216d7e1e563792dfd18df0",
+      "file": "assets/audio/a201.park.lucas.mp3"
+    },
+    {
+      "id": "a201.park.sophie",
+      "text": "Sophie is eating a sandwich.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "6c7c83e6ab52660e6da89632da98b4103f7332b1ccb9c564f5bdcfad65e6f738",
+      "bytes": 29300,
+      "durationSeconds": 1.764717,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "zOEe6JZVtFKUQqyWx8D3",
+      "wordTimings": [
+        {
+          "text": "Sophie",
+          "start": 0.0,
+          "end": 0.395
+        },
+        {
+          "text": "is",
+          "start": 0.43,
+          "end": 0.499
+        },
+        {
+          "text": "eating",
+          "start": 0.546,
+          "end": 0.743
+        },
+        {
+          "text": "a",
+          "start": 0.778,
+          "end": 0.801
+        },
+        {
+          "text": "sandwich.",
+          "start": 0.848,
+          "end": 1.7647165532879818
+        }
+      ],
+      "synthesisFingerprint": "6a80041cb4e3dcd6328cbf930e3f651c0017d85db5e32222ee2e9da1e802297d",
+      "file": "assets/audio/a201.park.sophie.mp3"
+    },
+    {
+      "id": "a201.park.daniel",
+      "text": "Daniel is taking pictures.",
+      "speaker": "Narrator",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "0f2a3fa34ac4bf96bf130a408c65df11f29decb4303686b22f516d4898f72f19",
+      "bytes": 28464,
+      "durationSeconds": 1.718277,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "OpvJdmfqwFm3pFSuo8JL",
+      "wordTimings": [
+        {
+          "text": "Daniel",
+          "start": 0.0,
+          "end": 0.395
+        },
+        {
+          "text": "is",
+          "start": 0.453,
+          "end": 0.522
+        },
+        {
+          "text": "taking",
+          "start": 0.58,
+          "end": 0.848
+        },
+        {
+          "text": "pictures.",
+          "start": 0.906,
+          "end": 1.718
+        }
+      ],
+      "synthesisFingerprint": "283bc8d80069dca5a668532a7e9aad63c3466e45a83fc28864a4581dd627ff4f",
+      "file": "assets/audio/a201.park.daniel.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.01",
+      "text": "Hey, Lucas! What are you doing right now?",
+      "speaker": "Emma",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "553148df4faf618b7021c384321d520db9329e4244f5af07a82eccff2d578575",
+      "bytes": 39749,
+      "durationSeconds": 2.414875,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "0ziOjnKOaWd0aBe3Lgri",
+      "wordTimings": [
+        {
+          "text": "Hey,",
+          "start": 0.0,
+          "end": 0.221
+        },
+        {
+          "text": "Lucas!",
+          "start": 0.244,
+          "end": 0.882
+        },
+        {
+          "text": "What",
+          "start": 0.964,
+          "end": 1.115
+        },
+        {
+          "text": "are",
+          "start": 1.138,
+          "end": 1.207
+        },
+        {
+          "text": "you",
+          "start": 1.242,
+          "end": 1.312
+        },
+        {
+          "text": "doing",
+          "start": 1.347,
+          "end": 1.533
+        },
+        {
+          "text": "right",
+          "start": 1.579,
+          "end": 1.73
+        },
+        {
+          "text": "now?",
+          "start": 1.765,
+          "end": 2.414875283446712
+        }
+      ],
+      "synthesisFingerprint": "4c2a66a9f76ed8e59ce326bd3b559322a686b5f203142f6ece4f36dd83bc0f81",
+      "file": "assets/audio/a201.dialogue.emma-lucas.01.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.02",
+      "text": "Hey! I am cooking dinner. What about you?",
+      "speaker": "Lucas",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "c04dc5a7e31e4e0c5cd89d40ada423f4bd657a2e82962bbb2b9f11c853619b91",
+      "bytes": 35987,
+      "durationSeconds": 2.182676,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "VYyqCTZLgLbbVYkxGI7A",
+      "wordTimings": [
+        {
+          "text": "Hey!",
+          "start": 0.0,
+          "end": 0.313
+        },
+        {
+          "text": "I",
+          "start": 0.36,
+          "end": 0.395
+        },
+        {
+          "text": "am",
+          "start": 0.476,
+          "end": 0.557
+        },
+        {
+          "text": "cooking",
+          "start": 0.615,
+          "end": 0.859
+        },
+        {
+          "text": "dinner.",
+          "start": 0.906,
+          "end": 1.173
+        },
+        {
+          "text": "What",
+          "start": 1.207,
+          "end": 1.358
+        },
+        {
+          "text": "about",
+          "start": 1.382,
+          "end": 1.556
+        },
+        {
+          "text": "you?",
+          "start": 1.602,
+          "end": 2.182675736961451
+        }
+      ],
+      "synthesisFingerprint": "9cce02d845ab81e376815984bc2a358e74194ccf1f14c110f0c08bee7ad76454",
+      "file": "assets/audio/a201.dialogue.emma-lucas.02.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.03",
+      "text": "I am watching TV. Do you usually cook at home?",
+      "speaker": "Emma",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "3758a4682eb15c9e73f772e560a2eaf319026291f190426dda415eb6a6d3834e",
+      "bytes": 50198,
+      "durationSeconds": 3.065034,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "q8nDAL79C55mSOZjp3vz",
+      "wordTimings": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.081
+        },
+        {
+          "text": "am",
+          "start": 0.163,
+          "end": 0.244
+        },
+        {
+          "text": "watching",
+          "start": 0.29,
+          "end": 0.58
+        },
+        {
+          "text": "TV.",
+          "start": 0.639,
+          "end": 1.254
+        },
+        {
+          "text": "Do",
+          "start": 1.602,
+          "end": 1.707
+        },
+        {
+          "text": "you",
+          "start": 1.741,
+          "end": 1.811
+        },
+        {
+          "text": "usually",
+          "start": 1.869,
+          "end": 2.148
+        },
+        {
+          "text": "cook",
+          "start": 2.194,
+          "end": 2.334
+        },
+        {
+          "text": "at",
+          "start": 2.38,
+          "end": 2.426
+        },
+        {
+          "text": "home?",
+          "start": 2.473,
+          "end": 3.065
+        }
+      ],
+      "synthesisFingerprint": "7ee38515115ca7c10597a2fb3961e0c451cdf3f1d0bd887575f8e5acbb179f05",
+      "file": "assets/audio/a201.dialogue.emma-lucas.03.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.04",
+      "text": "Yes! I usually cook dinner every evening. But today, I am making pasta.",
+      "speaker": "Lucas",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "f268368dc0514643b9def988796f2cb4d0af88b79ae9d88416366d193e36b907",
+      "bytes": 76947,
+      "durationSeconds": 4.736871,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "5fFA3eRIBYuBZ7zXqy2R",
+      "wordTimings": [
+        {
+          "text": "Yes!",
+          "start": 0.0,
+          "end": 0.418
+        },
+        {
+          "text": "I",
+          "start": 0.464,
+          "end": 0.511
+        },
+        {
+          "text": "usually",
+          "start": 0.639,
+          "end": 0.952
+        },
+        {
+          "text": "cook",
+          "start": 0.987,
+          "end": 1.138
+        },
+        {
+          "text": "dinner",
+          "start": 1.196,
+          "end": 1.405
+        },
+        {
+          "text": "every",
+          "start": 1.463,
+          "end": 1.649
+        },
+        {
+          "text": "evening.",
+          "start": 1.707,
+          "end": 2.194
+        },
+        {
+          "text": "But",
+          "start": 2.496,
+          "end": 2.659
+        },
+        {
+          "text": "today,",
+          "start": 2.694,
+          "end": 3.135
+        },
+        {
+          "text": "I",
+          "start": 3.181,
+          "end": 3.228
+        },
+        {
+          "text": "am",
+          "start": 3.32,
+          "end": 3.402
+        },
+        {
+          "text": "making",
+          "start": 3.46,
+          "end": 3.738
+        },
+        {
+          "text": "pasta.",
+          "start": 3.82,
+          "end": 4.73687074829932
+        }
+      ],
+      "synthesisFingerprint": "762913c4c9963603db3e31adda0bab92c70f7813eee5c2ba02eb31773f86e18d",
+      "file": "assets/audio/a201.dialogue.emma-lucas.04.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.05",
+      "text": "Nice! I usually order food on Fridays.",
+      "speaker": "Emma",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "dbdb4bc8c00d4ece370b5f990f987e8a49288147ef64d119c47c905b2f189ad9",
+      "bytes": 46436,
+      "durationSeconds": 2.832834,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "vl0ovd9JLXRwt4zIPXwS",
+      "wordTimings": [
+        {
+          "text": "Nice!",
+          "start": 0.0,
+          "end": 0.627
+        },
+        {
+          "text": "I",
+          "start": 0.929,
+          "end": 0.987
+        },
+        {
+          "text": "usually",
+          "start": 1.08,
+          "end": 1.335
+        },
+        {
+          "text": "order",
+          "start": 1.37,
+          "end": 1.544
+        },
+        {
+          "text": "food",
+          "start": 1.602,
+          "end": 1.776
+        },
+        {
+          "text": "on",
+          "start": 1.823,
+          "end": 1.892
+        },
+        {
+          "text": "Fridays.",
+          "start": 1.939,
+          "end": 2.8328344671201813
+        }
+      ],
+      "synthesisFingerprint": "8435ff10eac2887429ed253dc6d2da17dc95f33acec859bf97225ce1a66536ae",
+      "file": "assets/audio/a201.dialogue.emma-lucas.05.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.06",
+      "text": "What do you usually do after dinner?",
+      "speaker": "Lucas",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "5d7c629ae2230d153598dda27ea84011fd369841552e26ae9e3c71bd7677f268",
+      "bytes": 31390,
+      "durationSeconds": 1.904036,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "pUKsiaCk6Uo2ZGVp7s1w",
+      "wordTimings": [
+        {
+          "text": "What",
+          "start": 0.0,
+          "end": 0.186
+        },
+        {
+          "text": "do",
+          "start": 0.209,
+          "end": 0.255
+        },
+        {
+          "text": "you",
+          "start": 0.29,
+          "end": 0.372
+        },
+        {
+          "text": "usually",
+          "start": 0.464,
+          "end": 0.778
+        },
+        {
+          "text": "do",
+          "start": 0.824,
+          "end": 0.917
+        },
+        {
+          "text": "after",
+          "start": 0.998,
+          "end": 1.196
+        },
+        {
+          "text": "dinner?",
+          "start": 1.254,
+          "end": 1.904
+        }
+      ],
+      "synthesisFingerprint": "dd7f2a906664c78bec0ec85f685f3d26ea2ceb6c5984329ae589afae149fb6aa",
+      "file": "assets/audio/a201.dialogue.emma-lucas.06.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.07",
+      "text": "I usually read a book, but these days I'm watching a new series.",
+      "speaker": "Emma",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "sha256": "29ee6863497a0821605d47f8ee5043205f9c1ba78c667834600943d0aa5d6a67",
+      "bytes": 51034,
+      "durationSeconds": 3.111474,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "qLGIFyOOk5QA0YzdBuY3",
+      "wordTimings": [
+        {
+          "text": "I",
+          "start": 0.0,
+          "end": 0.093
+        },
+        {
+          "text": "usually",
+          "start": 0.186,
+          "end": 0.441
+        },
+        {
+          "text": "read",
+          "start": 0.488,
+          "end": 0.627
+        },
+        {
+          "text": "a",
+          "start": 0.65,
+          "end": 0.673
+        },
+        {
+          "text": "book,",
+          "start": 0.72,
+          "end": 0.952
+        },
+        {
+          "text": "but",
+          "start": 0.987,
+          "end": 1.138
+        },
+        {
+          "text": "these",
+          "start": 1.173,
+          "end": 1.347
+        },
+        {
+          "text": "days",
+          "start": 1.393,
+          "end": 1.591
+        },
+        {
+          "text": "I'm",
+          "start": 1.625,
+          "end": 1.718
+        },
+        {
+          "text": "watching",
+          "start": 1.753,
+          "end": 2.009
+        },
+        {
+          "text": "a",
+          "start": 2.043,
+          "end": 2.067
+        },
+        {
+          "text": "new",
+          "start": 2.113,
+          "end": 2.218
+        },
+        {
+          "text": "series.",
+          "start": 2.264,
+          "end": 3.111
+        }
+      ],
+      "synthesisFingerprint": "8d43e1793f4bd092cf0545553608d1acb1bffa13720eec1dbcbae9879f396f63",
+      "file": "assets/audio/a201.dialogue.emma-lucas.07.mp3"
+    },
+    {
+      "id": "a201.dialogue.emma-lucas.08",
+      "text": "Sounds fun! Well, my pasta is ready. Talk later!",
+      "speaker": "Lucas",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "sha256": "b57d9ec0500464f698c61c71305e42425e0e9b5ec4f3c0d63d4c63ad1bee12ec",
+      "bytes": 55213,
+      "durationSeconds": 3.390113,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "8III3m759AB4hnplChKD",
+      "wordTimings": [
+        {
+          "text": "Sounds",
+          "start": 0.0,
+          "end": 0.325
+        },
+        {
+          "text": "fun!",
+          "start": 0.372,
+          "end": 0.778
+        },
+        {
+          "text": "Well,",
+          "start": 1.045,
+          "end": 1.219
+        },
+        {
+          "text": "my",
+          "start": 1.242,
+          "end": 1.3
+        },
+        {
+          "text": "pasta",
+          "start": 1.382,
+          "end": 1.683
+        },
+        {
+          "text": "is",
+          "start": 1.707,
+          "end": 1.776
+        },
+        {
+          "text": "ready.",
+          "start": 1.834,
+          "end": 2.229
+        },
+        {
+          "text": "Talk",
+          "start": 2.322,
+          "end": 2.612
+        },
+        {
+          "text": "later!",
+          "start": 2.67,
+          "end": 3.39
+        }
+      ],
+      "synthesisFingerprint": "24a6a71a35f324b092ed4a6ee78c68f2120101708d8bbaba456b050a4615bbb2",
+      "file": "assets/audio/a201.dialogue.emma-lucas.08.mp3"
+    }
+  ]
 }

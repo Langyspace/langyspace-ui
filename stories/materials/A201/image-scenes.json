@@ -1,221 +1,138 @@
 {
-  "created": "2026-11-17",
-  "assets": [
+  "revision": "a201-what-are-you-doing-v1",
+  "files": [
     {
-      "key": "meeting",
-      "asset": "../shared/assets/scene-meeting.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. Generate ONE opaque full-bleed landscape contextual English-lesson image, approximately 3:2. New scene, reference is visual style only: warm polished realistic 3D illustration, friendly adult-oriented detail, believable materials and soft daylight. Scene: A business meeting in a bright modern meeting room, six adult colleagues around a long table, one woman speaking and gesturing, laptops, notepads and water cups, large windows. Clear wide scene that unmistakably means a meeting. No text, captions, labels, emoji, logos, watermark, collage, white studio or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-4fb6d525-18c8-419c-ad47-2d760218a3ba.png",
-      "sourceSHA256": "f2813467c124cfa038144211a95ab7f810179331dc68cd0b2f770e8b745a2192",
-      "sha256": "5d695c53c51c2015c28e550d7103961e4421b373e85c4db3ee24411e8dc2c4ee",
-      "width": 768,
-      "height": 512,
-      "bytes": 114616,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-cooking.webp",
+      "status": "delivered",
+      "sha256": "7319e0a6de3279cb520c786c499c8792678e8ad8b5feecef6109dc48ba76bd67",
+      "bytes": 33444
     },
     {
-      "key": "laptop",
-      "asset": "../shared/assets/scene-laptop.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. Generate ONE opaque full-bleed landscape contextual English-lesson image, approximately 3:2. New scene, reference is visual style only: warm polished realistic 3D illustration, friendly adult-oriented detail, believable materials and soft daylight. Scene: A close clear open laptop on a tidy home-office wooden desk, keyboard and screen prominent, notebook and a plant nearby, soft window light. No person and no readable screen text. Clearly a laptop, not a paper notebook. No text, captions, labels, emoji, logos, watermark, collage, white studio or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-fb7f637a-7294-466d-b91f-bb5adf7ab80f.png",
-      "sourceSHA256": "1074236534dfe9de077eaba2a1d5b7baad523c06aff4b25d6afea944ee9337e5",
-      "sha256": "c9639c66aefa4395e6bb88b631009b6b64ad49f5f270f91d65b4dec7ab6245b0",
-      "width": 768,
-      "height": 512,
-      "bytes": 100538,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-reading.webp",
+      "status": "delivered",
+      "sha256": "540669e7e33e3eb68d82ada1c54ccf3cdb64cd3721481f698634b3fd78ba0013",
+      "bytes": 27436
     },
     {
-      "key": "bridge",
-      "asset": "../shared/assets/scene-bridge.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. Generate ONE opaque full-bleed landscape contextual English-lesson image, approximately 3:2. New scene, reference is visual style only: warm polished realistic 3D illustration, friendly adult-oriented detail, believable materials and soft daylight. Scene: A large iron arch bridge over a river in Porto seen clearly from the side, iron arch and lattice structure dominates the whole composition, narrow river strip below, historic embankments and warm sunny sky. Unmistakable bridge. No text, captions, labels, emoji, logos, watermark, collage, white studio or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-2f673acc-ebe5-4295-bece-7f07bf9a3011.png",
-      "sourceSHA256": "734c93c1b58a2d13eaa1444aa926fb5fee6a8c2c6de49acb47ed81f97b10517f",
-      "sha256": "282a01ef33f3796882d60a7be7751cb1dee15c96ebc85427f12b528605b3c6cd",
-      "width": 768,
-      "height": 512,
-      "bytes": 177824,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-working.webp",
+      "status": "delivered",
+      "sha256": "167f7cc21c49d22714c72f49326ff2532d76e3dca4e9ff50a83b73ffa2b81e58",
+      "bytes": 33434
     },
     {
-      "key": "river",
-      "asset": "../shared/assets/scene-river.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. Generate ONE opaque full-bleed landscape contextual English-lesson image, approximately 3:2. New scene, reference is visual style only: warm polished realistic 3D illustration, friendly adult-oriented detail, believable materials and soft daylight. Scene: A broad calm river between colorful historic Portuguese riverside houses in Porto, one small traditional wooden boat on the water, warm blue sky, stone embankment in foreground. Absolutely NO bridge in frame. The river is the clear main subject, not sea or beach. No text, captions, labels, emoji, logos, watermark, collage, white studio or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-8d37f131-160d-4cd1-8f14-5a6564eb94c5.png",
-      "sourceSHA256": "badd0ac508d013b42368a9782faed78e0a2396eb8b5657c26de3005e63cf435f",
-      "sha256": "c47595cb2831ec5da3344b0cbb4dc736f79d41422443875b2efb08222c05c0dd",
-      "width": 768,
-      "height": 512,
-      "bytes": 146594,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-dog-playing.webp",
+      "status": "delivered",
+      "sha256": "27e307ac1b696f9b1e5139a99480617e7df0e47e0d267de27ab2f6d086675601",
+      "bytes": 38606
     },
     {
-      "key": "cooking",
-      "asset": "../shared/assets/scene-cooking.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual language-lesson image, 3:2, new scene matching only the reference's warm polished realistic 3D style and soft daylight. The young adult woman with brown wavy hair and mustard sweater clearly COOKING at a stove in a cozy kitchen, stirring a pan of vegetables with a wooden spoon, ingredients on the counter. No eating or studying. Main action unmistakable at small card size. No text, captions, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-59376392-6e09-411c-9729-6bd4c885cc17.png",
-      "sourceSHA256": "7fbc13e3ed20107912c4bb65f1e8a97d0e17064808acd7672f7017b2d864d8e5",
-      "sha256": "8f8bbe86124b4caa2abe6b857e850a738ef380929d7502119877f6a57757384d",
-      "width": 768,
-      "height": 512,
-      "bytes": 119520,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-people-eating.webp",
+      "status": "delivered",
+      "sha256": "308dee7a6e97753f006ef87994e95bfbc9c1e3793eb73771724722b10b9768de",
+      "bytes": 76398
     },
     {
-      "key": "working",
-      "asset": "../shared/assets/scene-working.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual language-lesson image, 3:2, new scene matching only the reference's warm polished realistic 3D style and soft daylight. The young adult woman with brown wavy hair and mustard sweater clearly WORKING from home at an open laptop, typing and concentrating, neat home office with desk, plant and work documents, background shelves. Main action unmistakable at small card size. No text, captions, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-67f55b7d-5e5a-406e-a8ff-bc06a215b517.png",
-      "sourceSHA256": "f2f097bcc84bb8087f15f7f9329bb87ad394f3717b7de421c64d6322305ab672",
-      "sha256": "c7e88fb49a22c8382fcffd4cb8f5c19006f9dd7f69b16d72379fcd19eef4ea50",
-      "width": 768,
-      "height": 512,
-      "bytes": 103280,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-two-sleeping.webp",
+      "status": "delivered",
+      "sha256": "4a087c904981f7721dc60eb22dba23578e6e047b6a6be796dd7e1f4725ed0ba5",
+      "bytes": 44014
     },
     {
-      "key": "walking",
-      "asset": "../shared/assets/scene-walking.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual language-lesson image, 3:2, new scene matching only the reference's warm polished realistic 3D style and soft daylight. A young adult woman with brown wavy hair, mustard sweater and blue jeans clearly WALKING along a park path, full body in mid-step, natural arm swing, greenery and a bench. No running, bicycle or other main activity. Main action unmistakable at small card size. No text, captions, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-f72b70a6-808d-4ca0-bed1-64e97ac6364e.png",
-      "sourceSHA256": "050544f2099ceb51f12fd7bcf64411d0852b5950d1b1b90d69ac7731875ecbee",
-      "sha256": "04ef08e2f3ccb72c082ee832a83f05657b07a007f484cee172e17e42ae371d40",
-      "width": 768,
-      "height": 512,
-      "bytes": 141266,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "coffee",
-      "asset": "../shared/assets/scene-coffee.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual language-lesson image, 3:2, new scene matching only the reference's warm polished realistic 3D style and soft daylight. The young adult woman with brown wavy hair and mustard sweater clearly drinking coffee from a ceramic cup, seated at an outdoor riverside caf\u00e9 in Porto, cup held to her lips, little table, colorful houses softly behind. Main action unmistakable at small card size. No text, captions, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-0f91e3eb-18ec-4937-bf1a-64b1bdcd11c1.png",
-      "sourceSHA256": "ac18022ef39d4dcf421c971d5c59a0b18f68fb023132a31bfde701b9e27fe0e4",
-      "sha256": "090fccb927d241e628472e9b50c8ae1c1c4d6a76b727d2c0543dc5795cdcdef1",
-      "width": 768,
-      "height": 512,
-      "bytes": 132352,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "studying",
-      "asset": "../shared/assets/scene-studying.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual English-lesson image, 3:2, new scene using only the reference's warm polished realistic 3D illustration style, believable materials and natural light. The young adult woman with brown wavy hair and mustard sweater clearly STUDYING at a desk, reading an open textbook and writing with a pen in a notebook, books on desk, soft window light. No laptop or work charts, unmistakable studying. No captions, labels, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-ecd50780-36c3-4417-9fe6-c6e5fba2da9f.png",
-      "sourceSHA256": "1f4113c78685072f41ea62fb590b0a31091d0db54202f0c23b3006cf9bf227c2",
-      "sha256": "4e8159eca6464d964db6dc5706ea6dc0e2bb3d7ce43ad03930c54d8569967708",
-      "width": 768,
-      "height": 512,
-      "bytes": 108696,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "bad-signal",
-      "asset": "../shared/assets/scene-bad-signal.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual English-lesson image, 3:2, new scene using only the reference's warm polished realistic 3D illustration style, believable materials and natural light. A young adult brown-haired woman at a riverside caf\u00e9 holding a smartphone and looking mildly puzzled by a failing connection. Phone screen prominently shows a simple huge cellular signal icon of four rising bars: only the shortest bar RED, the other three bars pale gray, no text or numbers. An understandable contextual image for BAD SIGNAL, not Wi-Fi. Focus on phone screen and woman. No captions, labels, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-b76e442d-9c9c-4930-bedb-8340726a61c7.png",
-      "sourceSHA256": "8089d0c2c3a0e74ad342677c06ea403678f66bc6f0d143ab910578c6720c79e8",
-      "sha256": "cdaf81c8178bcf9e9b5c6949b92802aff3f609f032c5aaff7b698c027724a0f2",
-      "width": 768,
-      "height": 512,
-      "bytes": 106526,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "video-call",
-      "asset": "../shared/assets/scene-video-call.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual English-lesson image, 3:2, new scene using only the reference's warm polished realistic 3D illustration style, believable materials and natural light. Close view of a modern smartphone upright on a caf\u00e9 table, screen clearly showing a video call: large portrait of a smiling East Asian young adult woman, small corner preview of a brown-haired woman, green and red circular call controls, Porto riverside cafe softly in background. NO readable text or letters on screen. No captions, labels, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-36835307-baeb-4365-bb8a-9dce3ebcf08b.png",
-      "sourceSHA256": "2402d9a4f5c73d2b7aca6d68a700ce7d8ed37b9f744b406441f502ded0cdce47",
-      "sha256": "b1c61a873b6fce73416e9be7e97e8f705634fd81a2d31ca401516a4612b43903",
-      "width": 768,
-      "height": 512,
-      "bytes": 120250,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "eating",
-      "asset": "../shared/assets/scene-eating.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE full-bleed opaque landscape contextual English-lesson image, 3:2, new scene using only the reference's warm polished realistic 3D illustration style, believable materials and natural light. The young adult woman with brown wavy hair and mustard sweater clearly EATING pasta at her kitchen table, fork with pasta lifted to her mouth, a plate of spaghetti, no laptop, no stove or cooking action, cozy bright dining room. No captions, labels, emoji, logos, watermark, collage, isolated cutout or transparent background.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-0ed1871d-4f56-41f2-8f68-49c770ca776c.png",
-      "sourceSHA256": "5acfa45e3525df79684f0e40bfeee350a1c91575c328078b1042d91ae999a864",
-      "sha256": "32bb4dab0a5459184c2b76ed325ca4e1529dfb04dc473379ede2d233b30c8af9",
-      "width": 768,
-      "height": 512,
-      "bytes": 112348,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "supermarket",
-      "asset": "../shared/assets/scene-supermarket.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D style and believable materials. Inside a bright supermarket, one foreground shopping cart and clear aisles filled with groceries, produce section with fresh fruit and vegetables, people shopping in background, no readable packaging text. No captions, labels, emoji, logos, watermark, collage or transparency.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-71fbe221-9e54-4ad3-9b19-d71f59f897d7.png",
-      "sourceSHA256": "780fa3f5e309c5cb91fddf451acb83e0b3c5f3213b6403f6cbd40c9a1a7573fd",
-      "sha256": "fd4a4f73eeac3be015a5fd4afcea332617a625a15badb1626dd7d87abe9fafb4",
-      "width": 768,
-      "height": 512,
-      "bytes": 142106,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "cafe",
-      "asset": "../shared/assets/scene-cafe.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D style and believable materials. A welcoming small Portuguese street caf\u00e9, striped awning, outdoor tables and chairs, a cup and pastry on one foreground table, charming Porto buildings and warm daylight. Whole storefront visible, no readable sign text. No captions, labels, emoji, logos, watermark, collage or transparency.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-5a460343-d554-415e-b42b-564f8d50ec81.png",
-      "sourceSHA256": "e9f08ffae4c59082a7520a90eaee1d9250c24c2a09c72430217258aa1e89dec2",
-      "sha256": "a6d10a95d9d1de52968964e320a78d2bb6645687bc771a0ac0e56ad2a2837c95",
-      "width": 768,
-      "height": 512,
-      "bytes": 176854,
-      "background": "opaque contextual scene"
-    },
-    {
-      "key": "gym",
-      "asset": "../shared/assets/scene-gym.webp",
-      "generator": "built-in image_gen",
-      "prompt": "Use case: illustration-story. ONE opaque full-bleed landscape English-lesson image, 3:2. New contextual scene matching only the reference's warm polished realistic 3D style and believable materials. Interior of a clean modern gym, visible dumbbell rack, weight bench and exercise machines, one adult exercising in the background, warm natural daylight, no sports field or home setting. No captions, labels, emoji, logos, watermark, collage or transparency.",
-      "reference": "B101/assets/scene-gardening.webp (style only)",
-      "generatedFile": "exec-ee59861f-2701-445d-b8d4-8eb8e39aa754.png",
-      "sourceSHA256": "e367bd1371481d9ba40bf3304b49cb7a2a125392a9d77bc68d2fbd0a64e9f907",
-      "sha256": "c6b6dfc65f5a7a66cf961062c668b48ccab6d5685afc073fe11be15648eb323f",
-      "width": 768,
-      "height": 512,
-      "bytes": 110308,
-      "background": "opaque contextual scene"
+      "file": "assets/scene-park-six-actions.webp",
+      "status": "delivered",
+      "sha256": "5d1288d7632077a31f34d1ebc72f5b93092a8f11b63ce9bab9f49a9054abaf90",
+      "bytes": 167726
     }
   ],
-  "reused": [
-    {
-      "asset": "../shared/assets/scene-park.webp",
-      "sha256": "5ad1df13b98ec304b47d67edf4d06ee9f4e10e681d842b23bbf957b833b7ea52"
-    }
-  ]
+  "park": {
+    "image": "assets/scene-park-six-actions.webp",
+    "labelVisibility": "always",
+    "coordinates": "Measured original-image percentages from park-label-map.json; scene uses object-fit contain. Names are HTML, never image pixels.",
+    "hotspots": [
+      {
+        "id": "a201.park.anna",
+        "label": "Anna",
+        "xPercent": 7.5,
+        "yPercent": 18,
+        "prompt": "What is Anna doing?",
+        "answer": "Anna is reading a book.",
+        "targetBounds": {
+          "xPercent": 8,
+          "yPercent": 7,
+          "widthPercent": 20,
+          "heightPercent": 42
+        }
+      },
+      {
+        "id": "a201.park.ben",
+        "label": "Ben",
+        "xPercent": 61,
+        "yPercent": 12,
+        "prompt": "What is Ben doing?",
+        "answer": "Ben is running.",
+        "targetBounds": {
+          "xPercent": 38.5,
+          "yPercent": 2,
+          "widthPercent": 19,
+          "heightPercent": 46
+        }
+      },
+      {
+        "id": "a201.park.emma",
+        "label": "Emma",
+        "xPercent": 86,
+        "yPercent": 15,
+        "prompt": "What is Emma doing?",
+        "answer": "Emma is walking her dog.",
+        "targetBounds": {
+          "xPercent": 68.5,
+          "yPercent": 4,
+          "widthPercent": 24,
+          "heightPercent": 44
+        }
+      },
+      {
+        "id": "a201.park.lucas",
+        "label": "Lucas",
+        "xPercent": 33,
+        "yPercent": 58,
+        "prompt": "What is Lucas doing?",
+        "answer": "Lucas is riding a bike.",
+        "targetBounds": {
+          "xPercent": 4,
+          "yPercent": 50,
+          "widthPercent": 25.5,
+          "heightPercent": 48
+        }
+      },
+      {
+        "id": "a201.park.sophie",
+        "label": "Sophie",
+        "xPercent": 64,
+        "yPercent": 61,
+        "prompt": "What is Sophie doing?",
+        "answer": "Sophie is eating a sandwich.",
+        "targetBounds": {
+          "xPercent": 43,
+          "yPercent": 52,
+          "widthPercent": 14,
+          "heightPercent": 46
+        }
+      },
+      {
+        "id": "a201.park.daniel",
+        "label": "Daniel",
+        "xPercent": 92,
+        "yPercent": 69,
+        "prompt": "What is Daniel doing?",
+        "answer": "Daniel is taking pictures.",
+        "targetBounds": {
+          "xPercent": 74,
+          "yPercent": 49,
+          "widthPercent": 11,
+          "heightPercent": 49
+        }
+      }
+    ]
+  }
 }

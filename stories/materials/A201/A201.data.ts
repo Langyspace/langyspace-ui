@@ -1,27 +1,31 @@
-import { formatVocabularyHint } from '../../../src/components/Exercise/VocabularyGrid.utils'
 import content from './A201.content.json'
-import working from './assets/a201-copy-working.webp'
-import walking from './assets/a201-copy-walking.webp'
-import coffee from './assets/a201-copy-drinking-coffee.webp'
-import studying from './assets/a201-copy-studying.webp'
-import kim from './assets/kim-profile-refined.webp'
-export { content, kim }
-export const order = content.sections.map((section) => section.id)
-export const images: Record<string, string> = {
-  'a201-copy-working': working,
-  'a201-copy-walking': walking,
-  'a201-copy-drinking-coffee': coffee,
-  'a201-copy-studying': studying,
-}
-export const ana = working
-export const vocabulary = [content.vocabulary1, content.vocabulary2].map(
-  (group) =>
-    group.cards.map((card) => ({
-      id: card.asset,
-      word: card.reveal,
-      translation: card.pt,
-      initialHint: formatVocabularyHint(card.reveal, ['I’m']),
-      imageUrl: images[card.asset] ?? '',
-      imageAlt: card.pt,
-    })),
+import sceneManifest from './image-scenes.json'
+import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
+import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
+
+export { content }
+export const order = Array.from({ length: 20 }, (_, index) => `s${index + 1}`)
+const assets = import.meta.glob('./assets/**/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+
+export const vocabulary: readonly VocabularyItem[] = content.vocabulary.map(
+  (item) => ({
+    id: item.id,
+    word: item.text,
+    translation: item.translation,
+    imageUrl: assets['./' + item.image] ?? '',
+    imageAlt: item.imageAlt,
+  }),
 )
+export const parkImage = assets['./assets/scene-park-six-actions.webp']
+export const parkHotspots: readonly SceneHotspot[] = sceneManifest.park.hotspots
+export const hasVocabularyImages = vocabulary.every((item) => item.imageUrl)
+export const toggleId = (ids: readonly string[], id: string) =>
+  ids.includes(id) ? ids.filter((value) => value !== id) : [...ids, id]
+export const prompts = (
+  items: readonly { prompt: string; answer?: string }[],
+  prefix: string,
+) => items.map((item, index) => ({ id: `${prefix}.${index + 1}`, ...item }))

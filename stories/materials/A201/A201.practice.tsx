@@ -1,259 +1,393 @@
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
-import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
-import { ConnectionSignal } from '../../../src/components/InteractiveMaterial/ConnectionSignal'
-import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
+import { IconButton } from '../../../src/components/IconButton/IconButton'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { QuizOption } from '../../../src/components/Quiz/QuizOption'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import { CharacterDialogue } from '../shared/CharacterPortraits.styles'
+import { PromptExercise } from '../shared/LessonExercises'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import {
-  SourceQuestions,
-  ComprehensionPractice,
-} from '../shared/LessonPractice'
-import { content, vocabulary, ana, kim } from './A201.data'
-import type {
-  VocabularySectionProps,
-  GrammarSectionProps,
-  ComprehensionSectionProps,
-} from './A201.types'
-import * as S from '../shared/Lesson.styles'
-import * as A from './A201.styles'
-export function VocabularySection({ group = 0 }: VocabularySectionProps) {
-  const [ids, setIds] = useState<string[]>([])
+  content,
+  vocabulary,
+  hasVocabularyImages,
+  parkImage,
+  parkHotspots,
+  toggleId,
+  prompts,
+} from './A201.data'
+import * as S from './A201.styles'
+import type { SpeechProps, WarmupProps } from './A201.types'
+
+export function VocabularySection({ speech }: SpeechProps) {
+  const [revealed, setRevealed] = useState<string[]>([])
   const [all, setAll] = useState(false)
-  const [initial, setInitial] = useState(false)
+  const [hint, setHint] = useState(false)
+  if (!hasVocabularyImages)
+    return (
+      <Common.Hint role="status">
+        The illustrations are being prepared.
+      </Common.Hint>
+    )
   return (
-    <S.Stack>
-      <A.Vocabulary
-        items={vocabulary[group] ?? []}
-        columns={2}
-        density="regular"
+    <Common.Stack>
+      <VocabularyGrid
+        items={vocabulary}
         imageVariant="scene"
         imageFit="contain"
-        revealOnHover={false}
+        density="regular"
+        columns={3}
         revealVariant="tooltip"
-        revealedIds={ids}
+        revealOnHover={false}
+        revealedIds={revealed}
         showAll={all}
-        showInitial={initial}
-        onReveal={(id) =>
-          setIds((old) => (old.includes(id) ? old : [...old, id]))
+        showInitial={hint}
+        onReveal={(id) => setRevealed((ids) => toggleId(ids, id))}
+        onPlay={
+          content.vocabulary.every(speech.has)
+            ? (id) => {
+                const item = content.vocabulary.find((item) => item.id === id)
+                if (item) speech.speak([item])
+              }
+            : undefined
         }
       />
-      <S.Center>
+      <Common.Row>
         <Button
           variant="secondary"
-          size="sm"
-          aria-pressed={initial}
-          onClick={() => setInitial(!initial)}
+          aria-pressed={hint}
+          onClick={() => setHint(!hint)}
         >
-          Initial letters
+          First letter
         </Button>
         <Button
           variant="secondary"
-          size="sm"
           aria-pressed={all}
           onClick={() => setAll(!all)}
         >
-          {all ? 'Hide words' : 'Show all'}
+          {all ? 'Hide words' : 'Show words'}
         </Button>
-      </S.Center>
-      <S.Hint>
-        {group === 0
-          ? content.vocabulary1.oralPromptAfterReveal
-          : content.vocabulary2.oralPromptAfterReveal}
-      </S.Hint>
-    </S.Stack>
+      </Common.Row>
+    </Common.Stack>
   )
 }
-export function GrammarSection({ questions = false }: GrammarSectionProps) {
-  const d = content.affirmative,
-    q = content.questions
-  if (questions)
-    return (
-      <S.Stack>
-        <A.Formula>
-          Subject + <b>am / is / are + not</b> + <A.NoWrap>verb-ing</A.NoWrap>
-        </A.Formula>
-        <A.Info>
-          {q.negativeExamples.map((line) => (
-            <p key={line}>{line}</p>
-          ))}
-        </A.Info>
-        <A.Formula>
-          <b>Am / Is / Are</b> + subject + <A.NoWrap>verb-ing?</A.NoWrap>
-        </A.Formula>
-        <A.Grammar
-          $questions
-          title="Questions and short answers"
-          tone="question"
-          columns={{ subject: 'Question', example: 'Short answers' }}
-          rows={q.questionRows.map((row, i) => ({
-            id: String(i),
-            subject: row[0],
-            example: (
-              <>
-                {row[1]}
-                <br />
-                {row[2]}
-              </>
-            ),
-          }))}
-        />
-        <A.Info>
-          <p>
-            <b>{q.whQuestion}</b>
-          </p>
-          <p>{q.whAnswer}</p>
-        </A.Info>
-        <S.Hint>{q.oralPrompt}</S.Hint>
-      </S.Stack>
-    )
+
+export function TimeExpressions({ speech }: SpeechProps) {
+  const [revealed, setRevealed] = useState<string[]>([])
+  const toggle = (id: string) => setRevealed((ids) => toggleId(ids, id))
   return (
-    <S.Stack>
-      <A.Columns>
-        <A.Info>
-          <b>{d.use[0]!.label}</b>
-          <p>{d.use[0]!.example}</p>
-        </A.Info>
-        <A.Info>
-          <b>{d.use[1]!.label}</b>
-          <p>{d.use[1]!.usual}</p>
-          <p>{d.use[1]!.temporary}</p>
-          <S.Hint>{d.use[1]!.gloss}</S.Hint>
-        </A.Info>
-      </A.Columns>
-      <A.Formula>
-        Subject + <b>am / is / are</b> + <A.NoWrap>verb-ing</A.NoWrap>
-      </A.Formula>
-      <A.Grammar
-        title="Present continuous"
-        columns={{ subject: 'Subject + be', example: 'Example' }}
-        rows={d.rows.map((row, i) => ({
-          id: String(i),
-          subject: row[0],
-          example: row[1],
-        }))}
-      />
-      <S.Hint>{d.oralPrompt}</S.Hint>
-    </S.Stack>
+    <GrammarTable
+      title="Time expressions"
+      columns={{ subject: 'Português', example: 'English' }}
+      hiddenAnswers
+      revealedIds={revealed}
+      onReveal={toggle}
+      revealLabel="Reveal expression"
+      rows={content.timeExpressions.map((item) => ({
+        id: item.id,
+        subject: item.pt,
+        example: (
+          <Common.Row>
+            <Button
+              variant="text"
+              aria-expanded
+              aria-label={`Hide expression: ${item.en}`}
+              onClick={() => toggle(item.id)}
+            >
+              {item.en}
+            </Button>
+            <IconButton
+              variant="neutral"
+              size="md"
+              aria-label={`Listen: ${item.en}`}
+              aria-busy={speech.playingId === item.id || undefined}
+              disabled={!speech.has({ id: item.id, text: item.en })}
+              onClick={() => speech.speak([{ id: item.id, text: item.en }])}
+            >
+              <svg
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <path d="M11 5 6 9H3v6h3l5 4zM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14" />
+              </svg>
+            </IconButton>
+          </Common.Row>
+        ),
+      }))}
+    />
   )
 }
-export function DialogueSection() {
-  const [help, setHelp] = useState(false)
+
+export function WarmupSection({ index }: WarmupProps) {
+  const item = content.warmups[index]!
+  const image = vocabulary[index]!
+  const [attempts, setAttempts] = useState<number[]>([])
+  const done = attempts.includes(item.correctIndex)
   return (
-    <S.Stack>
-      <A.Dialogue
-        density="compact"
-        lines={content.dialogue.dialogue.map((line, i) => ({
-          id: String(i),
-          speaker: line.speaker,
-          side: line.speaker === 'Kim' ? ('start' as const) : ('end' as const),
-          avatarUrl: line.speaker === 'Kim' ? kim : ana,
-          content: (
-            <>
-              {line.text}
-              {'cue' in line ? <ConnectionSignal /> : null}
-            </>
-          ),
-        }))}
-      />
-      <S.Row>
-        <Button
-          variant="secondary"
-          size="sm"
-          aria-expanded={help}
-          onClick={() => setHelp(!help)}
+    <ExercisePanel
+      variant="warmup"
+      counter={`${index + 1}/6`}
+      media={
+        image.imageUrl ? (
+          <S.WarmImage src={image.imageUrl} alt={image.imageAlt} />
+        ) : (
+          <Common.Hint role="status">
+            The illustration is being prepared.
+          </Common.Hint>
+        )
+      }
+    >
+      {item.options.map((option, choice) => (
+        <QuizOption
+          key={option}
+          density="compact"
+          letter={String.fromCharCode(65 + choice)}
+          state={
+            attempts.includes(choice)
+              ? choice === item.correctIndex
+                ? 'correct'
+                : 'wrong'
+              : 'default'
+          }
+          aria-pressed={attempts.includes(choice)}
+          disabled={done}
+          onClick={() =>
+            setAttempts((old) =>
+              old.includes(choice) ? old : [...old, choice],
+            )
+          }
         >
-          Word help
-        </Button>
-      </S.Row>
-      {help ? (
-        <S.Support>
-          {Object.entries(content.dialogue.optionalGlosses).map(([en, pt]) => (
-            <span key={en}>
-              {en} = {pt}
-            </span>
-          ))}
-        </S.Support>
-      ) : null}
-    </S.Stack>
+          {option}
+        </QuizOption>
+      ))}
+    </ExercisePanel>
   )
 }
-export function ComprehensionSection({
-  second = false,
-}: ComprehensionSectionProps) {
-  const d = second ? content.comprehension2 : content.comprehension1
+
+export function GrammarSection() {
   return (
-    <S.Stack>
-      <ComprehensionPractice items={d.comprehension} />
-      <SourceQuestions items={d.personal.map((question) => ({ question }))} />
-    </S.Stack>
+    <Common.Stack>
+      <S.GrammarColumns>
+        <GrammarTable
+          title="Present Continuous — Now"
+          columns={{ subject: 'Action', example: 'Example' }}
+          explanation={
+            <Common.Stack>
+              <Common.Hint>
+                Actions happening now or temporary situations.
+              </Common.Hint>
+              <S.Structure>
+                Subject + <S.Emphasis>am/is/are + verb-ing</S.Emphasis>
+              </S.Structure>
+            </Common.Stack>
+          }
+          rows={[
+            {
+              id: 'now-work',
+              subject: 'Now',
+              example: (
+                <>
+                  I'm working <S.Emphasis>right now</S.Emphasis>.
+                </>
+              ),
+            },
+            {
+              id: 'now-cook',
+              subject: 'Now',
+              example: (
+                <>
+                  She's <S.Emphasis>cooking</S.Emphasis> dinner.
+                </>
+              ),
+            },
+            {
+              id: 'now-watch',
+              subject: 'Now',
+              example: (
+                <>
+                  They're <S.Emphasis>watching</S.Emphasis> TV.
+                </>
+              ),
+            },
+          ]}
+        />
+        <GrammarTable
+          title="Simple Present — Usually"
+          columns={{ subject: 'Routine', example: 'Example' }}
+          explanation={
+            <Common.Stack>
+              <Common.Hint>Habits and routines.</Common.Hint>
+              <S.Structure>
+                Subject + <S.Emphasis>verb</S.Emphasis> (s/es when necessary)
+              </S.Structure>
+            </Common.Stack>
+          }
+          rows={[
+            {
+              id: 'usual-work',
+              subject: 'Usually',
+              example: (
+                <>
+                  I work <S.Emphasis>every day</S.Emphasis>.
+                </>
+              ),
+            },
+            {
+              id: 'usual-cook',
+              subject: 'Usually',
+              example: (
+                <>
+                  She cooks <S.Emphasis>every evening</S.Emphasis>.
+                </>
+              ),
+            },
+            {
+              id: 'usual-watch',
+              subject: 'Usually',
+              example: (
+                <>
+                  They watch TV <S.Emphasis>on weekends</S.Emphasis>.
+                </>
+              ),
+            },
+          ]}
+        />
+      </S.GrammarColumns>
+      <Common.Hint>
+        Temporary situations can use the Present Continuous with{' '}
+        <S.Emphasis>these days</S.Emphasis> and{' '}
+        <S.Emphasis>this week</S.Emphasis>.
+      </Common.Hint>
+    </Common.Stack>
   )
 }
-export function GapSection() {
-  const [solved, setSolved] = useState<string[]>([])
-  const [wrong, setWrong] = useState<string[]>([])
-  const [visible, setVisible] = useState(true)
-  const root = useRef<HTMLDivElement>(null)
-  const gap = content.gaps.gaps[solved.length]
+
+export function PictureTalk({ speech }: SpeechProps) {
+  const [visited, setVisited] = useState<string[]>([])
   return (
-    <S.Stack ref={root}>
-      <S.Hint>{content.gaps.context}</S.Hint>
-      <GapFillExercise
-        items={content.gaps.dialogue.map((line, i) => {
-          const match = line.text.match(/\{(\d)\}/),
-            id = match?.[1]
-          if (!id)
-            return {
-              id: 'line-' + i,
-              speaker: line.speaker,
-              before: line.text,
-              answer: '',
+    <S.ParkLayout>
+      <S.ParkReference>
+        {parkImage && parkHotspots.length === 6 ? (
+          <SceneExplorer
+            imageUrl={parkImage}
+            imageAlt="Anna reads a book, Ben runs, Emma walks her dog, Lucas rides a bike, Sophie eats a sandwich, and Daniel takes pictures in a park."
+            hotspots={parkHotspots}
+            presentation="labels"
+            labelVisibility="always"
+            visitedIds={visited}
+            onSelect={(id) =>
+              setVisited((ids) => (ids.includes(id) ? ids : [...ids, id]))
             }
-          const [before, after] = line.text.split('{' + id + '}')
-          return {
-            id,
-            speaker: line.speaker,
-            before,
-            after,
-            answer: solved.includes(id)
-              ? content.gaps.gaps[Number(id) - 1]!.answer
-              : undefined,
-          }
-        })}
-        activeId={gap ? String(gap.id) : undefined}
-        choices={
-          gap
-            ? gap.options.map((label) => ({
-                id: label,
-                label,
-                state: wrong.includes(label) ? 'wrong' : undefined,
-              }))
-            : []
-        }
-        optionsVisible={visible}
-        onOptionsToggle={() => setVisible(!visible)}
-        onSelect={(_, choice) => {
-          if (!gap) return
-          if (choice !== gap.answer) {
-            setWrong((old) => [...old, choice])
-            return
-          }
-          setSolved((old) => [...old, String(gap.id)])
-          setWrong([])
-          setVisible(true)
-          requestAnimationFrame(() =>
-            root.current
-              ?.querySelectorAll<HTMLButtonElement>('button')[1]
-              ?.focus(),
-          )
-        }}
-        status={
-          gap
-            ? `${solved.length} of 6`
-            : 'Complete. Read the conversation with your teacher.'
-        }
+            playingId={speech.playingId}
+            onPlayHotspot={
+              content.park.every(speech.has)
+                ? (id) => {
+                    const item = content.park.find((item) => item.id === id)
+                    if (item) speech.speak([item])
+                  }
+                : undefined
+            }
+            labels={{ initial: 'Choose a name to listen.', play: 'Listen' }}
+          />
+        ) : (
+          <Common.Hint role="status">
+            The park illustration and name labels are being prepared.
+          </Common.Hint>
+        )}
+      </S.ParkReference>
+      <PromptExercise
+        items={content.park.map((person) => ({
+          id: person.id,
+          prompt: person.question,
+          answer: person.text,
+        }))}
       />
-      {wrong.length ? (
-        <QuizFeedback tone="wrong">Try again.</QuizFeedback>
-      ) : null}
-    </S.Stack>
+    </S.ParkLayout>
+  )
+}
+
+export function MimeSection() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  return (
+    <Common.Stack>
+      <Common.Surface>
+        {content.mimeInstructions.map((text) => (
+          <Common.Hint key={text}>{text}</Common.Hint>
+        ))}
+      </Common.Surface>
+      <S.MimeLayout>
+        <S.StickyReference>
+          <Common.Stack>
+            <Common.Heading>Example</Common.Heading>
+            <CharacterDialogue
+              lines={content.mimeExample.map((line, index) => ({
+                id: `mime.example.${index}`,
+                speaker: line.speaker,
+                content: line.text,
+                side: index % 2 ? 'end' : 'start',
+              }))}
+            />
+          </Common.Stack>
+        </S.StickyReference>
+        <S.MimeCards>
+          {content.mimeActions.map((action, index) => {
+            const id = `mime.${index}`
+            return (
+              <RevealCard
+                key={id}
+                marker={<Common.Number>{index + 1}</Common.Number>}
+                answer={action}
+                revealed={revealed.includes(id)}
+                aria-expanded={revealed.includes(id)}
+                onClick={() => setRevealed((ids) => toggleId(ids, id))}
+              >
+                Action {index + 1}
+              </RevealCard>
+            )
+          })}
+        </S.MimeCards>
+      </S.MimeLayout>
+    </Common.Stack>
+  )
+}
+
+export function ConversationSection({ index }: WarmupProps) {
+  return (
+    <PromptExercise
+      items={content.conversation
+        .slice(index * 5, index * 5 + 5)
+        .map((prompt, offset) => ({
+          id: `conversation.${index * 5 + offset + 1}`,
+          prompt,
+        }))}
+    />
+  )
+}
+
+export function HomeworkSection() {
+  return (
+    <Common.Stack>
+      <Common.Heading>{content.homework.mission}</Common.Heading>
+      <Common.Hint>{content.homework.description}</Common.Hint>
+      <Common.Surface>
+        <Common.Tag>Example</Common.Tag>
+        {content.homework.example}
+      </Common.Surface>
+      <PromptExercise
+        items={prompts(
+          content.homework.instructions.map((prompt) => ({ prompt })),
+          'homework',
+        )}
+      />
+      <Common.Hint>{content.homework.note}</Common.Hint>
+    </Common.Stack>
   )
 }

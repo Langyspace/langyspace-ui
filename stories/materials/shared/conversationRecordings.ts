@@ -3,14 +3,6 @@ import clip1 from '../TrialA1/assets/dialogue/02.mp3'
 import clip2 from '../TrialA1/assets/dialogue/03.mp3'
 import clip3 from '../TrialA1/assets/dialogue/04.mp3'
 import clip4 from '../TrialA1/assets/dialogue/05.mp3'
-import clip5 from '../A201/assets/dialogue/01.mp3'
-import clip6 from '../A201/assets/dialogue/02.mp3'
-import clip7 from '../A201/assets/dialogue/03.mp3'
-import clip8 from '../A201/assets/dialogue/04.mp3'
-import clip9 from '../A201/assets/dialogue/05.mp3'
-import clip10 from '../A201/assets/dialogue/06.mp3'
-import clip11 from '../A201/assets/dialogue/07.mp3'
-import clip12 from '../A201/assets/dialogue/08.mp3'
 import clip13 from '../TrialB1/assets/dialogue/01.mp3'
 import clip14 from '../TrialB1/assets/dialogue/02.mp3'
 import clip15 from '../TrialB1/assets/dialogue/03.mp3'
@@ -38,7 +30,6 @@ import clip36 from '../B201/assets/dialogue/10.mp3'
 import clip37 from '../B201/assets/dialogue/11.mp3'
 import clip38 from '../B201/assets/dialogue/12.mp3'
 import trialA1 from '../TrialA1/TrialA1.content.json'
-import a201 from '../A201/A201.content.json'
 import b201 from '../B201/B201.content.json'
 import trialB1 from '../TrialB1/TrialB1.content.json'
 import trialB2 from '../TrialB2/TrialB2.content.json'
@@ -132,96 +123,8 @@ export const conversationRecordings: Readonly<
       },
     ],
   ),
-  'A201:s6': define(
-    'A201:s6',
-    'A video call from Porto',
-    a201.dialogue.dialogue.map((line) => ({
-      text: line.text,
-      speaker: line.speaker,
-    })),
-    [
-      {
-        id: 'a201.s6.dialogue.01',
-        text: 'Hi, Ana! Where are you?',
-        speaker: 'kim',
-        sha256:
-          'b43ee095a664c097617729f9091eac0cbdafb68ff0a7c6f4ac85ac58163dcd11',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 2.182676,
-        src: clip5,
-      },
-      {
-        id: 'a201.s6.dialogue.02',
-        text: 'Hi, Kim! I’m in Porto. I’m working here this week.',
-        speaker: 'ana',
-        sha256:
-          '5d6e5930b17b7b05c3fde9aeea74c673b8d2a4c563142d76a40612222b0d165e',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 3.111474,
-        src: clip6,
-      },
-      {
-        id: 'a201.s6.dialogue.03',
-        text: 'Do you usually work in Porto?',
-        speaker: 'kim',
-        sha256:
-          'dca2ed49be9b4498ba0efaeaaae7343c915ac45859384a2761d537aa616eb8c5',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 1.904036,
-        src: clip7,
-      },
-      {
-        id: 'a201.s6.dialogue.04',
-        text: 'No, I don’t. I usually work from home.',
-        speaker: 'ana',
-        sha256:
-          '69b13431a4b03201140f084e8f3dc9cf07423d0c525622b166c8a798e3bce025',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 2.368435,
-        src: clip8,
-      },
-      {
-        id: 'a201.s6.dialogue.05',
-        text: 'What are you doing now?',
-        speaker: 'kim',
-        sha256:
-          '282037847b770de5a841ba924985788d5983d6dfd1cafc32827a0b256573dbd0',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 1.671837,
-        src: clip9,
-      },
-      {
-        id: 'a201.s6.dialogue.06',
-        text: 'I’m drinking coffee next to the river. I have a meeting at ten.',
-        speaker: 'ana',
-        sha256:
-          'a798608425ebb1304d2b4d03613ce2acbcaf5a982d1346d94d689ba804c4158e',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 3.808073,
-        src: clip10,
-      },
-      {
-        id: 'a201.s6.dialogue.07',
-        text: 'Nice! I’m walking in the…',
-        speaker: 'kim',
-        sha256:
-          '2ddcb923e9317d4eca4961358b9b4c33f8e97a77e5930d2d7cc9fd5eb829ea37',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 2.507755,
-        src: clip11,
-      },
-      {
-        id: 'a201.s6.dialogue.08',
-        text: 'Sorry? Can you say that again? Kim? Kim?',
-        speaker: 'ana',
-        sha256:
-          'dd24c292cd3affadb0ebca470af20e5d05e12cde26dd1ac580b67ab20c0fce57',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 4.504671,
-        src: clip12,
-      },
-    ],
-  ),
+  // Reserved legacy ID; the rebuilt A201 binds its new recordings directly.
+  'A201:s6': undefined,
   'TrialB1:s3': define(
     'TrialB1:s3',
     'Ana and Kim’s favourite trips',

@@ -1,135 +1,255 @@
-import { DialogueTitle } from '../shared/DialogueTitle'
-import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
-import { MaterialTheme } from '../shared/MaterialTheme'
-import { LessonShell } from '../shared/LessonShell'
-import { SourceQuestions } from '../shared/LessonPractice'
-import type { LessonProps } from '../shared/Lesson.types'
+import { useState } from 'react'
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { useLessonPage } from '../shared/useLessonPage'
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { LessonNotes } from '../shared/LessonNotes'
+import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
+import { PromptExercise } from '../shared/LessonExercises'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import * as Shell from '../shared/Lesson.styles'
 import {
   VocabularySection,
+  TimeExpressions,
+  WarmupSection,
   GrammarSection,
-  DialogueSection,
-  ComprehensionSection,
-  GapSection,
+  PictureTalk,
+  MimeSection,
+  ConversationSection,
+  HomeworkSection,
 } from './A201.practice'
-import {
-  PersonalSection,
-  ListeningSection,
-  RolePlaySection,
-} from './A201.conversation'
-import { content, order } from './A201.data'
-import * as S from '../shared/Lesson.styles'
-import * as A from './A201.styles'
-export function A201Lesson({ initialPageId }: LessonProps) {
-  return (
-    <MaterialTheme>
-      <LessonShell
-        navigationMode="continuous"
-        materialKey="a2-01"
-        initialPageId={initialPageId}
-        pageIds={order}
-        label="A2.01 · This week I’m working in Porto"
-        pages={(_, activeId) =>
-          content.sections.map((section, index) => {
-            const page = index + 1
-            const body =
-              page === 1 ? (
-                <SourceQuestions
-                  items={content.opening.questions.map((question) => ({
-                    question,
-                  }))}
+import { DialoguePage } from './A201.conversation'
+import { content, order, prompts, toggleId } from './A201.data'
+import { useLessonSpeech } from './useLessonSpeech'
+import * as S from './A201.styles'
+import type { A201LessonProps } from './A201.types'
+
+export function A201Lesson({ initialPageId }: A201LessonProps) {
+  const [pageId, setPageId] = useLessonPage(initialPageId, 'a2-01', order)
+  const notePopup = useLessonNotesPopup('langy-notes:a2-01')
+  const speech = useLessonSpeech()
+  const [gaps, setGaps] = useState<string[]>([])
+  const onGapToggle = (id: string) => setGaps((ids) => toggleId(ids, id))
+  const pages = order.map((id) => {
+    const number = Number(id.slice(1))
+    if (id === 's1')
+      return {
+        id,
+        label: 'Vocabulary · What Are You Doing?',
+        content: (
+          <S.VocabularyPage
+            width="expanded"
+            eyebrow="A2 LESSON 01"
+            title={content.title}
+            instruction="Look at the pictures. Guess the actions."
+          >
+            <S.VocabularyBody>
+              <VocabularySection speech={speech} />
+            </S.VocabularyBody>
+          </S.VocabularyPage>
+        ),
+      }
+    if (id === 's2')
+      return {
+        id,
+        label: 'Vocabulary · Time expressions',
+        content: (
+          <SlidePage
+            width="standard"
+            eyebrow="Vocabulary"
+            title="Time Expressions"
+            instruction="Say it in English. Click to check."
+          >
+            <TimeExpressions speech={speech} />
+          </SlidePage>
+        ),
+      }
+    if (number >= 3 && number <= 8)
+      return {
+        id,
+        label: `Warm up · Actions ${number - 2}`,
+        content: (
+          <S.WarmupPage
+            width="expanded"
+            eyebrow="Warm up"
+            title={content.warmups[number - 3]!.question}
+            instruction="Choose the correct answer."
+          >
+            <WarmupSection index={number - 3} />
+          </S.WarmupPage>
+        ),
+      }
+    if (id === 's9')
+      return {
+        id,
+        label: 'Grammar · Now vs. Usually',
+        content: (
+          <SlidePage
+            width="exercise"
+            eyebrow="Grammar"
+            title="Now vs. Usually"
+            instruction="Compare what is happening now with a routine."
+          >
+            <GrammarSection />
+          </SlidePage>
+        ),
+      }
+    if (id === 's10')
+      return {
+        id,
+        label: 'Picture talk · What Is Everyone Doing?',
+        content: (
+          <SlidePage
+            width="exercise"
+            eyebrow="Picture talk"
+            title="What Is Everyone Doing?"
+            instruction="Look at the park. Describe what each person is doing."
+          >
+            <PictureTalk speech={speech} />
+          </SlidePage>
+        ),
+      }
+    if (id === 's11')
+      return {
+        id,
+        label: 'Guided conversation · Now vs. Usually',
+        content: (
+          <DialoguePage
+            title="Now vs. Usually"
+            context="Anna and Ben"
+            active={pageId === id}
+            lines={content.dialogue}
+            speech={speech}
+            emphasis
+          >
+            <Common.Heading>Comprehension Questions</Common.Heading>
+            <PromptExercise
+              items={prompts(content.firstComprehension, 'anna-ben.questions')}
+            />
+          </DialoguePage>
+        ),
+      }
+    if (number >= 12 && number <= 14)
+      return {
+        id,
+        label:
+          number === 12
+            ? 'Guided conversation · Fill in the Blanks'
+            : number === 13
+              ? 'Guided conversation · Comprehension Questions'
+              : 'Guided conversation · Personal Questions',
+        content: (
+          <DialoguePage
+            title="Fill in the Blanks"
+            context="Emma and Lucas"
+            active={pageId === id}
+            lines={content.gaps}
+            speech={speech}
+            gaps={gaps}
+            onGapToggle={onGapToggle}
+          >
+            {number === 13 ? (
+              <>
+                <Common.Heading>Comprehension Questions</Common.Heading>
+                <PromptExercise
+                  items={prompts(
+                    content.gapComprehension,
+                    'emma-lucas.questions',
+                  )}
                 />
-              ) : page === 2 || page === 3 ? (
-                <VocabularySection group={page - 2} />
-              ) : page === 4 || page === 5 ? (
-                <GrammarSection questions={page === 5} />
-              ) : page === 6 ? (
-                <DialogueSection />
-              ) : page === 7 || page === 9 ? (
-                <ComprehensionSection second={page === 9} />
-              ) : page === 8 ? (
-                <GapSection />
-              ) : page === 10 ? (
-                <PersonalSection />
-              ) : page === 11 ? (
-                <ListeningSection active={activeId === 's11'} />
-              ) : page === 12 ? (
-                <RolePlaySection />
-              ) : (
-                <S.Stack>
-                  {content.homework.tasks.map((task) => (
-                    <A.Info key={task.title}>
-                      <b>{task.title}</b>
-                      <p>{task.text}</p>
-                    </A.Info>
-                  ))}
-                  <S.Hint>{content.homework.exitPrompt}</S.Hint>
-                </S.Stack>
-              )
-            const instruction =
-              page === 2
-                ? content.vocabulary1.instruction
-                : page === 3
-                  ? content.vocabulary2.instruction
-                  : page === 6
-                    ? content.dialogue.instruction
-                    : page === 7
-                      ? content.comprehension1.instruction
-                      : page === 8
-                        ? content.gaps.instruction
-                        : page === 9
-                          ? content.comprehension2.instruction
-                          : page === 10
-                            ? content.personal.instruction
-                            : page === 11
-                              ? content.listening.instruction
-                              : page === 13
-                                ? content.homework.instruction
-                                : undefined
-            return {
-              id: section.id,
-              label:
-                page === 1
-                  ? content.opening.lessonTitle
-                  : section.stage + ' · ' + section.title,
-              content: (
-                <A.Page
-                  data-opening={page === 1 ? 'true' : undefined}
-                  width={
-                    page === 2 || page === 3
-                      ? 'exercise'
-                      : page === 6 || page === 8
-                        ? 'reading'
-                        : 'standard'
-                  }
-                  eyebrow={page === 1 ? content.opening.lesson : section.stage}
-                  title={
-                    page === 1 ? (
-                      <>
-                        This week I’m <em>working in Porto</em>
-                      </>
-                    ) : page === 6 ? (
-                      <DialogueTitle
-                        title={section.title}
-                        action={
-                          <RecordedDialoguePlayback
-                            conversationId="A201:s6"
-                            active={activeId === section.id}
-                          />
-                        }
-                      />
-                    ) : (
-                      section.title
-                    )
-                  }
-                  instruction={instruction}
-                >
-                  {body}
-                </A.Page>
-              ),
-            }
-          })
+              </>
+            ) : null}
+            {number === 14 ? (
+              <>
+                <Common.Heading>Personal Questions</Common.Heading>
+                <PromptExercise
+                  items={prompts(
+                    content.personal.map((prompt) => ({ prompt })),
+                    'emma-lucas.personal',
+                  )}
+                />
+              </>
+            ) : null}
+          </DialoguePage>
+        ),
+      }
+    if (id === 's15')
+      return {
+        id,
+        label: "Roleplay · Guess What I'm Doing!",
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Roleplay"
+            title="Guess What I'm Doing!"
+            instruction="Choose a hidden card. Act, guess, then ask about a routine."
+          >
+            <MimeSection />
+          </SlidePage>
+        ),
+      }
+    if (number >= 16 && number <= 19)
+      return {
+        id,
+        label: `Conversation · Questions ${(number - 16) * 5 + 1}–${(number - 15) * 5}`,
+        content: (
+          <SlidePage
+            width="conversation"
+            eyebrow="Conversation"
+            title="Let's Talk!"
+            instruction={`Questions ${(number - 16) * 5 + 1}–${(number - 15) * 5}. Ask and answer. Give details.`}
+          >
+            <ConversationSection index={number - 16} />
+          </SlidePage>
+        ),
+      }
+    return {
+      id,
+      label: 'Homework · Real-Life Observation',
+      content: (
+        <SlidePage
+          width="standard"
+          eyebrow="Homework"
+          title={content.homework.title}
+          instruction="Describe what people are doing in a short audio."
+        >
+          <HomeworkSection />
+        </SlidePage>
+      ),
+    }
+  })
+  return (
+    <Shell.Stage>
+      <MaterialSlideDeck
+        label="A2.01 · What Are You Doing?"
+        previousPageLabel="Back"
+        pages={pages}
+        pageId={pageId}
+        onPageChange={(id) => {
+          if (id !== pageId) speech.stop()
+          setPageId(id)
+        }}
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:a2-01"
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
+          />
+        }
+        actions={
+          <LessonNotesTrigger
+            ref={(element) => notePopup.trigger(element)}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
+          />
         }
       />
-    </MaterialTheme>
+      {speech.error ? (
+        <Shell.AudioError role="status">{speech.error}</Shell.AudioError>
+      ) : null}
+    </Shell.Stage>
   )
 }
