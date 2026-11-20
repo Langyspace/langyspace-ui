@@ -197,9 +197,10 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
         label: "Roleplay · Guess What I'm Doing!",
         content: (
           <SlidePage
-            width="reading"
+            width="exercise"
             eyebrow="Roleplay"
             title="Guess What I'm Doing!"
+            instruction={content.mimeInstructions.join(' ')}
           >
             <MimeSection />
           </SlidePage>

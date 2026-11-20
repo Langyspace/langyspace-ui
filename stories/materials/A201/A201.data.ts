@@ -33,6 +33,7 @@ export const vocabulary: readonly VocabularyItem[] = content.vocabulary.map(
   }),
 )
 export const parkImage = assets['./assets/scene-park-six-actions.webp']
+export const mimeImage = assets['./assets/scene-mime-brushing-teeth.webp']
 export const parkHotspots: readonly SceneHotspot[] = sceneManifest.park.hotspots
 export const hasVocabularyImages = vocabulary.every((item) => item.imageUrl)
 export const toggleId = (ids: readonly string[], id: string) =>

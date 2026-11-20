@@ -1,3 +1,4 @@
+import { MeetingExample } from '../shared/MeetingExample'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
 import { IconButton } from '../../../src/components/IconButton/IconButton'
@@ -14,6 +15,7 @@ import {
   vocabulary,
   hasVocabularyImages,
   parkImage,
+  mimeImage,
   parkHotspots,
   toggleId,
   prompts,
@@ -316,20 +318,28 @@ export function PictureTalk({ speech }: SpeechProps) {
 export function MimeSection() {
   return (
     <Common.Stack>
-      {content.mimeInstructions.map((text) => (
-        <Common.Hint key={text}>{text}</Common.Hint>
-      ))}
       <Common.Heading>Example</Common.Heading>
-      <CharacterDialogue
-        density="compact"
-        lines={content.mimeExample.map((line, index) => ({
-          id: `mime.example.${index}`,
-          speaker: line.speaker,
-          avatarUrl: portraits[line.speaker],
-          content: line.text,
-          side: index % 2 ? 'end' : 'start',
-        }))}
-      />
+      <S.MimeExample>
+        <MeetingExample
+          actor={{
+            name: 'Ben',
+            imageUrl: mimeImage,
+            imageAlt:
+              'Ben mimes brushing his teeth with an empty hand near his mouth.',
+          }}
+          observer={{ name: 'Anna', avatarUrl: portraits.Anna }}
+        />
+        <CharacterDialogue
+          density="compact"
+          lines={content.mimeExample.map((line, index) => ({
+            id: `mime.example.${index}`,
+            speaker: line.speaker,
+            avatarUrl: portraits[line.speaker],
+            content: line.text,
+            side: index % 2 ? 'end' : 'start',
+          }))}
+        />
+      </S.MimeExample>
     </Common.Stack>
   )
 }

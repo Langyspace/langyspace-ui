@@ -110,3 +110,14 @@ export const ParkReference = styled(StickyReference)`
     }
   }
 `
+
+export const MimeExample = styled.div`
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: center;
+  gap: ${theme.spacing[5]};
+  min-width: 0;
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+`
