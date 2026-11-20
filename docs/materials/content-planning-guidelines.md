@@ -64,3 +64,11 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 - Apresente todas as 26 letras na mesma página de consulta, sem abas de grupos nem seleção fixa que pareça usar o nome da aluna. Use a variação reference do VocabularyGrid, com símbolos nativos e medidas compactas legíveis.
 - Nesse formato, a letra já está visível: o clique apenas toca sua gravação existente. A única lâmpada mostra ou oculta o apoio completo de pronúncia, sem primeira letra da dica nem botão de olho redundante. Reserve a área das pronúncias para não deslocar a grade ao alternar.
 - Essa é uma variação semântica da biblioteca: os demais vocabulários mantêm os controles de dica e de revelação quando ambos têm função. Não remover o olho globalmente nem gerar áudio ou imagem novos para letras já gravadas.
+
+## Contato, pronúncia e ligações — feedback36
+
+- Um título com áudio continua sendo um único bloco de texto. O play fica em um slot alinhado ao lado, sem destacar a última palavra em outro flex que mude sua linha de base.
+- Nome próprio é pronunciado conforme sua língua no contexto: uma apresentação em inglês pode terminar com um sobrenome brasileiro. Ao soletrar, usar os nomes ingleses das letras. Reaproveitar clipes isolados válidos para soletrações quando isso evita ambiguidades; registrar a voz e a proveniência dos arquivos montados, sem atribuir request-id fictício a um derivado.
+- Formulários de prática têm um contexto comunicativo concreto, campos nativos e contraste resolvido pelo tema. No atendimento, mostrar uma cena simples e uma estação de trabalho funcional; a professora digita o que a aluna dita. Não simular salvamento em backend nem depender de placeholders como rótulos.
+- Alternar o papel da aluna: primeiro atender e confirmar/corrigir, depois dar os próprios dados, depois fazer perguntas. O fechamento transfere para outra tarefa, como uma mensagem oral curta, em vez de repetir a mesma lista de perguntas ou pedir outra troca de papéis.
+- O toque de chamada pertence ao estado de entrada e à página ativa. Parar ao atender, desligar, trocar de página, ocultar a janela ou desmontar. Controles de replay/próximo são os ícones canônicos dentro do telefone, perto da fala, e apoios recorrentes podem permanecer em dois chips fixos.

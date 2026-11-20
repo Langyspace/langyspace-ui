@@ -145,3 +145,67 @@ export const MediaCounter = styled.span`
   line-height: 1.4;
   pointer-events: none;
 `
+
+/** Native workstation for a contextual data-entry exercise; no UI is baked into its image. */
+export const Workstation = styled.section<{ $withMedia: boolean }>`
+  display: grid;
+  grid-template-columns: ${(p) => (p.$withMedia ? 'minmax(0, 0.9fr) minmax(0, 1.1fr)' : 'minmax(0, 1fr)')};
+  gap: ${theme.spacing[6]};
+  align-items: center;
+  min-width: 0;
+  color: ${(p) => recipe(p).foreground};
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+`
+export const ContextMedia = styled.div`
+  min-width: 0;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 22rem;
+    aspect-ratio: 3 / 2;
+    object-fit: contain;
+    border-radius: ${theme.radius.xl};
+  }
+`
+export const Desktop = styled.div`
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+`
+export const Screen = styled.div`
+  width: 100%;
+  min-width: 0;
+  border: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
+  border-radius: ${theme.radius.xl};
+  background: ${(p) => recipe(p).surface};
+  overflow: hidden;
+`
+export const ScreenHeader = styled.h3`
+  margin: 0;
+  padding: ${theme.spacing[3]} ${theme.spacing[5]};
+  border-bottom: 1px solid ${(p) => recipe(p).border};
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.md};
+  line-height: 1.3;
+  color: inherit;
+`
+export const ScreenBody = styled(SharedStack)`
+  padding: ${theme.spacing[4]} ${theme.spacing[5]};
+  gap: ${theme.spacing[4]};
+`
+export const Stand = styled.div`
+  width: ${theme.spacing[24]};
+  max-width: 40%;
+  height: ${theme.spacing[5]};
+  border-bottom: ${theme.spacing[2]} solid ${(p) => recipe(p).border};
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0 35%;
+    background: ${(p) => recipe(p).border};
+  }
+`

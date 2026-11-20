@@ -8,5 +8,5 @@ export interface ExercisePanelProps extends Omit<
   media?: ReactNode
   layout?: 'stacked' | 'split'
   /** Warm-up keeps media above choices in one centered column, regardless of layout. */
-  variant?: 'default' | 'warmup'
+  variant?: 'default' | 'warmup' | 'workstation'
 }

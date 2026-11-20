@@ -21,7 +21,9 @@ export function SimulationIcon({ name }: SimulationIconProps) {
                         ? 'M6 6h2v12H6zm3.5 6 8.5 6V6z'
                         : name === 'replay'
                           ? 'M12 5V2L7 6l5 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z'
-                          : 'M7 5v14l12-7z'
+                          : name === 'next'
+                            ? 'M16 6h2v12h-2zM6 6v12l8.5-6z'
+                            : 'M7 5v14l12-7z'
         }
       />
     </Styled.Icon>

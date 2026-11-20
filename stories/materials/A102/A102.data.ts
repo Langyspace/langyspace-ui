@@ -201,55 +201,31 @@ export const prompts = {
       answer: 'Yes. Ana says, “That’s right.”',
     },
   ],
-  contact: [
-    {
-      id: 'contact.1',
-      prompt: 'What’s your first name?',
-      answer: 'My first name is …',
-    },
-    {
-      id: 'contact.2',
-      prompt: 'What’s your last name? How do you spell it?',
-      answer: 'My last name is … / Say one letter at a time.',
-    },
-    {
-      id: 'contact.3',
-      prompt: 'What’s your phone number?',
-      answer: 'It’s … / Say one digit at a time.',
-    },
-  ],
-  exit: [
-    {
-      id: 'exit.1',
-      prompt: 'Ask your teacher for a first name and a last name.',
-      answer: 'What’s your first name? What’s your last name?',
-    },
-    {
-      id: 'exit.2',
-      prompt: 'Ask how to spell the last name.',
-      answer: 'How do you spell it?',
-    },
-    {
-      id: 'exit.3',
-      prompt: 'Repeat a number. Check it with your teacher.',
-      answer: '… Is that right? / Yes, that’s right. / No, sorry. It’s …',
-    },
-  ],
 }
 export const anaContact = [
   { id: 'first', label: 'First name', value: 'Ana' },
   { id: 'last', label: 'Last name', value: 'Souza' },
   { id: 'phone', label: 'Phone number', value: '984 221 507' },
 ]
-export const emmaContact = [
-  { id: 'first', label: 'First name', value: 'Emma' },
-  { id: 'last', label: 'Last name', value: 'Grey' },
-  { id: 'phone', label: 'Phone number', value: '312 466 908' },
-]
-export const pageOrder = Array.from(
-  { length: 17 },
-  (_, index) => `s${index + 1}`,
-)
+export const pageOrder = [
+  's1',
+  's2',
+  's3',
+  's4',
+  's5',
+  's6',
+  's7',
+  's8',
+  's9',
+  's10',
+  's11',
+  's12',
+  's14',
+  's13',
+  's15',
+  's16',
+  's17',
+] as const
 export const pageMinutes = [
-  2, 3, 3, 1.5, 1.5, 4, 3, 4, 3, 3, 3, 2, 4, 5, 5, 2, 1,
+  2, 3, 3, 1.5, 1.5, 4, 3, 4, 3, 3, 3, 2, 5, 4, 5, 2, 1,
 ]

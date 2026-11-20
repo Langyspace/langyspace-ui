@@ -9,6 +9,23 @@ export function ExercisePanel({
   children,
   ...props
 }: ExercisePanelProps) {
+  if (variant === 'workstation')
+    return (
+      <Styled.Workstation {...props} $withMedia={Boolean(media)}>
+        {media ? (
+          <Styled.ContextMedia data-exercise-media="true">
+            {media}
+          </Styled.ContextMedia>
+        ) : null}
+        <Styled.Desktop>
+          <Styled.Screen>
+            {title ? <Styled.ScreenHeader>{title}</Styled.ScreenHeader> : null}
+            <Styled.ScreenBody>{children}</Styled.ScreenBody>
+          </Styled.Screen>
+          <Styled.Stand aria-hidden="true" />
+        </Styled.Desktop>
+      </Styled.Workstation>
+    )
   const counterInMedia = variant === 'warmup' && Boolean(media)
   const heading = (
     <>

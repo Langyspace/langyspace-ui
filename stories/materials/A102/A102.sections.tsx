@@ -1,9 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { CallSimulation } from '../../../src/components/InteractiveMaterial/CallSimulation'
+import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { FluencyTimer } from '../../../src/components/InteractiveMaterial/FluencyTimer'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { FieldRoot } from '../../../src/components/Form/FieldRoot'
@@ -22,10 +24,11 @@ import {
   portraits,
   prompts,
   anaContact,
-  emmaContact,
   call,
 } from './A102.data'
 import scene from './assets/scene-ana-offering-contact.webp'
+import reception from './assets/scene-school-reception.webp'
+import ringtone from './assets/classic-phone-ring.mp3'
 import type { A102Speech, SymbolItem } from './A102.types'
 
 function Symbols({
@@ -225,47 +228,44 @@ export function Grammar() {
     </Common.Stack>
   )
 }
-export function ContactPractice({ learnerName }: { learnerName: string }) {
-  const [fields, setFields] = useState({
-    first: learnerName,
-    last: '',
-    phone: '',
-  })
+export function ContactPractice() {
+  const [fields, setFields] = useState({ first: '', last: '', phone: '' })
   return (
-    <Common.Columns>
-      <PromptExercise items={prompts.contact} />
-      <Common.Surface>
-        <Common.Heading>New contact</Common.Heading>
-        {(
-          [
-            { id: 'first', label: 'First name' },
-            { id: 'last', label: 'Last name' },
-            { id: 'phone', label: 'Phone number' },
-          ] as const
-        ).map((field) => (
-          <FieldRoot key={field.id} label={field.label}>
-            <TextInput
-              autoComplete="off"
-              spellCheck={false}
-              value={fields[field.id]}
-              onChange={(event) =>
-                setFields((old) => ({ ...old, [field.id]: event.target.value }))
-              }
-            />
-          </FieldRoot>
-        ))}
-        <Common.Hint>
-          Your teacher writes what you say. Check the details.
-        </Common.Hint>
-        <Button
-          variant="text"
-          size="sm"
-          onClick={() => setFields({ first: '', last: '', phone: '' })}
+    <ExercisePanel
+      variant="workstation"
+      title="New student"
+      media={
+        <img
+          src={reception}
+          alt="Kim welcomes Ana at the reception desk of an English school."
+        />
+      }
+    >
+      {(
+        [
+          { id: 'first', label: 'First name' },
+          { id: 'last', label: 'Last name' },
+          { id: 'phone', label: 'Phone number' },
+        ] as const
+      ).map((field) => (
+        <FieldRoot
+          key={field.id}
+          label={field.label}
+          hint={field.id === 'phone' ? 'Use a made-up number.' : undefined}
         >
-          Clear contact
-        </Button>
-      </Common.Surface>
-    </Common.Columns>
+          <TextInput
+            size="lg"
+            type={field.id === 'phone' ? 'tel' : 'text'}
+            autoComplete="off"
+            spellCheck={false}
+            value={fields[field.id]}
+            onChange={(event) =>
+              setFields((old) => ({ ...old, [field.id]: event.target.value }))
+            }
+          />
+        </FieldRoot>
+      ))}
+    </ExercisePanel>
   )
 }
 const callTheme = withVoiceMessageLayout({
@@ -293,13 +293,16 @@ export function CallPractice({
     <ThemeProvider theme={callTheme}>
       <CallSimulation
         density="compact"
+        direction="incoming"
+        active={active}
+        ringtoneSrc={ringtone}
         contactName="Kim"
         initials="K"
         avatarUrl={portraits.Kim}
         state={state}
         elapsedLabel=""
         caption={state === 'connected' ? line.text : undefined}
-        captionLabel="Kim says"
+        captionLabel="Kim"
         onCall={() => {
           setState('connected')
           setIndex(0)
@@ -310,10 +313,29 @@ export function CallPractice({
           setState('ended')
         }}
         disabled={!active}
+        playback={{
+          index,
+          count: call.length,
+          disabled: !active,
+          onReplay: () => speech.speak([line]),
+          onNext: () => {
+            const next = call[index + 1]
+            if (next) {
+              setIndex(index + 1)
+              speech.speak([next])
+            }
+          },
+          labels: {
+            replay: 'Replay',
+            next: 'Next question',
+            progress: 'Call questions',
+          },
+        }}
         labels={{
-          idle: 'Answer Kim’s call',
+          idle: 'Incoming call',
+          ringing: 'Incoming call',
           call: 'Answer',
-          callAgain: 'Call again',
+          callAgain: 'Answer again',
           hangUp: 'End call',
           ended: 'Call ended',
         }}
@@ -322,77 +344,105 @@ export function CallPractice({
           <Common.Heading>Ana’s contact</Common.Heading>
           <KeyValueList tone="material" items={anaContact} />
         </Common.Surface>
-        <PromptExercise
-          numbered={false}
-          items={[
-            {
-              id: 'call.support',
-              prompt: 'Is that right?',
-              answer: 'Yes, that’s right. / No, sorry. It’s …',
-            },
-          ]}
-        />
-        {state === 'connected' ? (
-          <Common.Row>
-            <Button
-              size="sm"
-              variant="secondary"
-              onClick={() => speech.speak([line])}
-            >
-              Replay
-            </Button>
-            <Button
-              size="sm"
-              variant="brand"
-              onClick={() => {
-                if (index < call.length - 1) {
-                  setIndex(index + 1)
-                  speech.speak([call[index + 1]!])
-                } else {
-                  speech.stop()
-                  setState('ended')
-                }
-              }}
-            >
-              {index === call.length - 1 ? 'Finish call' : 'Next question'}
-            </Button>
-          </Common.Row>
-        ) : null}
+        <Common.Row>
+          <Common.Chip>Yes, that’s right.</Common.Chip>
+          <Common.Chip>No, sorry. It’s …</Common.Chip>
+        </Common.Row>
       </CallSimulation>
     </ThemeProvider>
   )
 }
-export function SwapRoles() {
+export function OutgoingCall({ active }: { active: boolean }) {
+  const [state, setState] = useState<'idle' | 'connected' | 'ended'>('idle')
+  useEffect(() => {
+    if (!active) setState('idle')
+  }, [active])
   return (
-    <RolePlayExercise
-      presentation="instructions"
-      situation="You are Kim. Call your teacher, who is Emma. Check her contact details."
-      roles={['You: Kim', 'Teacher: Emma']}
-      steps={[
-        { id: 'ask', label: 'Ask for Emma’s first name and last name.' },
-        { id: 'spell', label: 'Ask her to spell her last name.' },
-        {
-          id: 'check',
-          label:
-            'Read the phone number with one wrong digit. Let Emma correct it.',
-        },
-      ]}
-      completedIds={[]}
-      onStepToggle={() => undefined}
-      tracker={
-        <Common.Surface>
-          <Common.Heading>Emma’s contact</Common.Heading>
-          <KeyValueList tone="material" items={emmaContact} />
-        </Common.Surface>
-      }
-      support={[
-        'What’s your last name?',
-        'How do you spell it?',
-        'Is that right?',
-      ]}
-    >
-      <Common.Hint>Then swap roles and use new details.</Common.Hint>
-    </RolePlayExercise>
+    <ThemeProvider theme={callTheme}>
+      <CallSimulation
+        density="compact"
+        direction="outgoing"
+        active={active}
+        contactName="Emma"
+        initials="E"
+        state={state}
+        elapsedLabel=""
+        onCall={() => setState('connected')}
+        onHangUp={() => setState('ended')}
+        disabled={!active}
+        labels={{
+          idle: 'Call Emma',
+          call: 'Call Emma',
+          callAgain: 'Call again',
+          hangUp: 'End call',
+          ended: 'Call ended',
+        }}
+      >
+        <LearningDialogue
+          density="compact"
+          lines={[
+            'Hi, Emma! How are you?',
+            'What’s your last name?',
+            'How do you spell it?',
+            'What’s your phone number?',
+          ].map((content, index) => ({
+            id: String(index),
+            speaker: 'You',
+            avatarUrl: portraits.Ana,
+            side: 'end',
+            content,
+          }))}
+        />
+      </CallSimulation>
+    </ThemeProvider>
+  )
+}
+export function VoiceMessageChallenge({ active }: { active: boolean }) {
+  const [remaining, setRemaining] = useState(30)
+  const [running, setRunning] = useState(false)
+  const deadline = useRef(0)
+  useEffect(() => {
+    if (!active) setRunning(false)
+  }, [active])
+  useEffect(() => {
+    if (!active || !running) return
+    const timer = window.setInterval(() => {
+      const left = Math.max(
+        0,
+        Math.ceil((deadline.current - Date.now()) / 1000),
+      )
+      setRemaining(left)
+      if (!left) setRunning(false)
+    }, 200)
+    return () => window.clearInterval(timer)
+  }, [active, running])
+  return (
+    <FluencyTimer
+      title="Ready?"
+      rounds={[{ id: 'voice-message', seconds: 30 }]}
+      roundIndex={remaining === 0 ? 1 : 0}
+      remainingSeconds={remaining}
+      running={running}
+      support={['My name is …', 'My last name is …', 'My number is …']}
+      onToggle={() => {
+        if (running) setRunning(false)
+        else {
+          deadline.current = Date.now() + remaining * 1000
+          setRunning(true)
+        }
+      }}
+      onReset={() => {
+        setRunning(false)
+        setRemaining(30)
+        deadline.current = 0
+      }}
+      labels={{
+        start: 'Start',
+        pause: 'Pause',
+        restart: 'Try again',
+        finished: 'Time’s up!',
+      }}
+    />
   )
 }
 export function Homework() {

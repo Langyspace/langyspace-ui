@@ -14,7 +14,8 @@ import {
   Grammar,
   ContactPractice,
   CallPractice,
-  SwapRoles,
+  OutgoingCall,
+  VoiceMessageChallenge,
   Homework,
   ContactIntroduction,
 } from './A102.sections'
@@ -63,7 +64,9 @@ export function A102Lesson({
           instruction="Listen, then choose the correct answer."
           titleAudio={{
             context:
-              index === 2 ? 'Kim spells a last name' : 'Kim says three digits',
+              index === 2
+                ? 'A last name spelled in English'
+                : 'Kim says three digits',
             status: playing ? (speech.paused ? 'paused' : 'playing') : 'idle',
             disabled: pageId !== id || !speech.has(line),
             onClick: () =>
@@ -197,21 +200,6 @@ export function A102Lesson({
       prompts.gaps,
     ),
     {
-      id: 's13',
-      label: 'Speaking · Your new contact',
-      content: (
-        <SlidePage
-          width="exercise"
-          density="compact"
-          eyebrow="Speaking"
-          title="Your new contact"
-          instruction="Answer, then check what your teacher writes. Use a made-up number."
-        >
-          <ContactPractice learnerName={learnerName} />
-        </SlidePage>
-      ),
-    },
-    {
       id: 's14',
       label: 'Phone call · Kim is calling',
       content: (
@@ -227,6 +215,21 @@ export function A102Lesson({
       ),
     },
     {
+      id: 's13',
+      label: 'Speaking · Spell your name',
+      content: (
+        <SlidePage
+          width="exercise"
+          density="compact"
+          eyebrow="Speaking"
+          title="Spell your name"
+          instruction="You’re joining an English class. Spell your name and give your number."
+        >
+          <ContactPractice />
+        </SlidePage>
+      ),
+    },
+    {
       id: 's15',
       label: 'Role play · Now you call',
       content: (
@@ -235,19 +238,27 @@ export function A102Lesson({
           density="compact"
           eyebrow="Role play"
           title="Now you call"
-          instruction="Ask, listen and check the details."
+          instruction="Call Emma. Ask for her last name, spelling and phone number."
         >
-          <SwapRoles />
+          <OutgoingCall active={pageId === 's15'} />
         </SlidePage>
       ),
     },
-    questions(
-      's16',
-      'Can you check it?',
-      'Ask your teacher. Listen and respond.',
-      prompts.exit,
-      'Conversation',
-    ),
+    {
+      id: 's16',
+      label: 'Speaking · Leave a message',
+      content: (
+        <SlidePage
+          width="exercise"
+          density="compact"
+          eyebrow="Speaking"
+          title="Leave a message"
+          instruction="Introduce yourself, spell your last name and give your number."
+        >
+          <VoiceMessageChallenge active={pageId === 's16'} />
+        </SlidePage>
+      ),
+    },
     {
       id: 's17',
       label: 'Homework · Before next class',

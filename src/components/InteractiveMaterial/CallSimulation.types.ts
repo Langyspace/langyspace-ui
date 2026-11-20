@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { AudioSequenceControlsProps } from './AudioSequenceControls.types'
 export type CallSimulationState =
   'idle' | 'ringing' | 'menu' | 'connected' | 'ended'
 export interface CallSimulationProps extends Omit<
@@ -11,6 +12,12 @@ export interface CallSimulationProps extends Omit<
   presentation?: 'audio' | 'video'
   /** Compact lesson calls fit the presentation viewport and resolve device dimensions from theme. */
   density?: 'regular' | 'compact'
+  direction?: 'outgoing' | 'incoming'
+  /** Pause the exercise, including its ringtone, when leaving its slide. */
+  active?: boolean
+  ringtoneSrc?: string
+  /** Recorded-turn controls live immediately beside the phone caption. */
+  playback?: AudioSequenceControlsProps
   avatarUrl?: string
   signalPoor?: boolean
   onSignalToggle?: () => void
@@ -28,6 +35,8 @@ export interface CallSimulationProps extends Omit<
   labels?: Partial<{
     idle: string
     ringing: string
+    connected: string
+    playRingtone: string
     menu: string
     ended: string
     call: string
