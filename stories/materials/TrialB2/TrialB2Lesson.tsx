@@ -1,4 +1,8 @@
-import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+} from '../shared/lessonOpeningPolicy'
+import { TrialNextSteps } from '../shared/LessonBookends'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MaterialLearningDialogue as LearningDialogue } from '../shared/MaterialLearningDialogue'
 import { PromptExercise } from '../shared/LessonExercises'
@@ -228,10 +232,14 @@ function PageBody({
   )
 }
 function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
-  const [activeId, setActiveId] = useLessonPage(initialPageId, 'trial-b2', [
-    ...lessonPages.map((page) => page.id),
-    'next-steps',
-  ])
+  const [activeId, setActiveId] = useLessonPage(
+    initialPageId,
+    'trial-b2',
+    withLessonOpeningPageIds('trial-b2', [
+      ...lessonPages.map((page) => page.id),
+      'next-steps',
+    ]),
+  )
   const [modelActive, setModelActive] = useState(true)
 
   const notePopup = useLessonNotesPopup(
@@ -254,74 +262,65 @@ function TrialB2Content({ initialPageId }: TrialB2LessonProps) {
             onClick={notePopup.open}
           />
         }
-        pages={[
+        pages={withLessonOpeningPages('trial-b2', [
           ...lessonPages.map((page) => ({
             id: page.id,
             label: page.title,
-            content:
-              page.id === 's1' ? (
-                <LessonOpening
-                  materialKey="trial-b2"
-                  reviewTitle={page.title}
-                  instruction={page.subtitle}
-                >
-                  <PageBody id={page.id} active={activeId === page.id} />
-                </LessonOpening>
-              ) : (
-                <SlidePage
-                  width={page.id === 's2' ? 'expanded' : 'reading'}
-                  density={page.id === 's3' ? 'compact' : 'regular'}
-                  questions={
-                    page.id === 's3' && modelActive ? (
-                      <PageBody id="s31" active={activeId === page.id} />
-                    ) : undefined
-                  }
-                  eyebrow={
-                    page.id === 's1'
-                      ? 'Warm up'
-                      : page.id === 's2'
-                        ? 'Picture talk'
-                        : page.id === 's3' || page.id === 's31'
-                          ? 'Guided conversation'
-                          : page.id.startsWith('s4')
-                            ? 'Preferences'
-                            : 'Conversation'
-                  }
-                  title={
-                    page.id === 's3' ? (
-                      <DialogueTitle
-                        title={page.title}
-                        action={
-                          <RecordedDialoguePlayback
-                            conversationId="TrialB2:s3"
-                            active={activeId === page.id && modelActive}
-                          />
-                        }
-                      />
-                    ) : (
-                      page.title
-                    )
-                  }
-                  instruction={
-                    page.id === 's3'
-                      ? 'Listen, then read with your teacher.'
-                      : page.subtitle
-                  }
-                >
-                  <PageBody
-                    id={page.id}
-                    active={activeId === page.id}
-                    onModeChange={(mode) => setModelActive(mode === 'model')}
-                  />
-                </SlidePage>
-              ),
+            content: (
+              <SlidePage
+                width={page.id === 's2' ? 'expanded' : 'reading'}
+                density={page.id === 's3' ? 'compact' : 'regular'}
+                questions={
+                  page.id === 's3' && modelActive ? (
+                    <PageBody id="s31" active={activeId === page.id} />
+                  ) : undefined
+                }
+                eyebrow={
+                  page.id === 's1'
+                    ? 'Warm up'
+                    : page.id === 's2'
+                      ? 'Picture talk'
+                      : page.id === 's3' || page.id === 's31'
+                        ? 'Guided conversation'
+                        : page.id.startsWith('s4')
+                          ? 'Preferences'
+                          : 'Conversation'
+                }
+                title={
+                  page.id === 's3' ? (
+                    <DialogueTitle
+                      title={page.title}
+                      action={
+                        <RecordedDialoguePlayback
+                          conversationId="TrialB2:s3"
+                          active={activeId === page.id && modelActive}
+                        />
+                      }
+                    />
+                  ) : (
+                    page.title
+                  )
+                }
+                instruction={
+                  page.id === 's3'
+                    ? 'Listen, then read with your teacher.'
+                    : page.subtitle
+                }
+              >
+                <PageBody
+                  id={page.id}
+                  active={activeId === page.id}
+                  onModeChange={(mode) => setModelActive(mode === 'model')}
+                />
+              </SlidePage>
+            ),
           })),
           {
             id: 'next-steps',
             label: 'Next steps',
             content: <TrialNextSteps materialKey="trial-b2" />,
           },
-        ]}
+        ])}
         overlay={
           <LessonNotes
             storageKey="langy-notes:Langy Trial B2 Work and life"

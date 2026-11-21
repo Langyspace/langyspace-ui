@@ -1,4 +1,8 @@
-import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+} from '../shared/lessonOpeningPolicy'
+import { TrialNextSteps } from '../shared/LessonBookends'
 import { PromptExercise } from '../shared/LessonExercises'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
@@ -215,22 +219,17 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
       <LessonShell
         initialPageId={initialPageId}
         materialKey="trial-b1-a-trip-to-remember"
-        pageIds={[...lessonPages.map((page) => page.id), 'next-steps']}
+        pageIds={withLessonOpeningPageIds('trial-b1', [
+          ...lessonPages.map((page) => page.id),
+          'next-steps',
+        ])}
         label="B1 Trial · A trip to remember"
-        pages={(_, activeId) => [
-          ...lessonPages.map((page) => ({
-            id: page.id,
-            label: page.title,
-            content:
-              page.id === 's1' ? (
-                <LessonOpening
-                  materialKey="trial-b1"
-                  reviewTitle={page.title}
-                  instruction={page.subtitle}
-                >
-                  <Activity page={page} active={activeId === page.id} />
-                </LessonOpening>
-              ) : (
+        pages={(_, activeId) =>
+          withLessonOpeningPages('trial-b1', [
+            ...lessonPages.map((page) => ({
+              id: page.id,
+              label: page.title,
+              content: (
                 <SlidePage
                   width="expanded"
                   density={page.kind === 'dialogue' ? 'compact' : 'regular'}
@@ -283,13 +282,14 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
                   />
                 </SlidePage>
               ),
-          })),
-          {
-            id: 'next-steps',
-            label: 'Next steps',
-            content: <TrialNextSteps materialKey="trial-b1" />,
-          },
-        ]}
+            })),
+            {
+              id: 'next-steps',
+              label: 'Next steps',
+              content: <TrialNextSteps materialKey="trial-b1" />,
+            },
+          ])
+        }
       />
     </MaterialTheme>
   )

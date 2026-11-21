@@ -43,6 +43,8 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 
 ## Histórico
 
+- **21/11/2026 — feedback69, primeira página é capa ou revisão anterior:** mostrar apenas capa/título/subtítulo, ou capa com uma revisão explícita de conteúdo anterior ao lado. Aquecimento sobre o tema atual e apresentação da experimental não são revisão; ficam em página própria depois da capa. Não copiar a atividade seguinte para preencher a abertura, nem inventar uma revisão para justificar a coluna. O helper recebe review com conteúdo identificado; a política compartilha IDs e páginas renderizadas, sem renumerar atividades, duplicar capas ou deslocar a conversa livre do penúltimo lugar.
+
 - **21/11/2026 — feedback68, título antes da imagem:** em todas as primeiras páginas e no encerramento das experimentais, apresentar o título principal e o subtítulo acima da imagem da aula. Usar coverPlacement=after-heading do SlidePage, com a mesma ordem visual e de leitura, mantendo a revisão ou o celular na coluna ao lado quando houver. O padrão anterior do SlidePage continua disponível aos demais consumidores.
 
 - **21/11/2026 — feedback67, alinhamento no encerramento:** o título de ação e o celular compartilham o mesmo eixo central na coluna de encerramento, inclusive quando o título quebra linha. Aplicar a variação de alinhamento dos componentes compartilhados, preservando o alinhamento das capas, aberturas e demais conteúdos.

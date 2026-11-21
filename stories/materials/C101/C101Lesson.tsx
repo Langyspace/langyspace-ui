@@ -1,4 +1,8 @@
-import { LessonOpening, LessonPracticePlan } from '../shared/LessonBookends'
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+} from '../shared/lessonOpeningPolicy'
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -117,7 +121,11 @@ const pageInfo: Record<string, [string, string, string]> = {
   ],
 }
 function C101Content({ initialPageId }: C101LessonProps) {
-  const [pageId, setPageId] = useLessonPage(initialPageId, 'c1-01', c101PageIds)
+  const [pageId, setPageId] = useLessonPage(
+    initialPageId,
+    'c1-01',
+    withLessonOpeningPageIds('c1-01', c101PageIds),
+  )
   const notePopup = useLessonNotesPopup('langy-notes:c1-01')
 
   const audio = useC101Audio()
@@ -204,64 +212,72 @@ function C101Content({ initialPageId }: C101LessonProps) {
             onClose={notePopup.close}
           />
         }
-        pages={c101PageIds.map((id) => {
-          const [eyebrow, title, instruction] = pageInfo[id]!
-          if (id === 's1')
+        pages={withLessonOpeningPages(
+          'c1-01',
+          c101PageIds.map((id) => {
+            const [eyebrow, title, instruction] = pageInfo[id]!
+            if (id === 's1')
+              return {
+                id,
+                label: 'Warm up · Giving and receiving feedback',
+                content: (
+                  <SlidePage
+                    width="conversation"
+                    density="compact"
+                    eyebrow="Warm up"
+                    title={title}
+                    instruction={instruction}
+                  >
+                    {body(id)}
+                  </SlidePage>
+                ),
+              }
+            const Page = SlidePage
             return {
               id,
-              label: 'C1.01 · It tends to come across as …',
+              label: `${eyebrow} · ${title}`,
               content: (
-                <LessonOpening
-                  materialKey="c1-01"
-                  reviewTitle={title}
+                <Page
+                  layout={id === 's12' ? 'split' : 'stacked'}
+                  density="dense"
+                  eyebrow={eyebrow}
+                  title={
+                    id === 's6' || id === 's62' ? (
+                      <DialogueTitle
+                        title={title}
+                        action={dialogueAction(id)}
+                      />
+                    ) : (
+                      title
+                    )
+                  }
                   instruction={instruction}
+                  questions={
+                    id === 's4' ? (
+                      <C101Questions items={content.reading} />
+                    ) : id === 's6' || id === 's62' ? (
+                      <C101Questions
+                        items={
+                          id === 's6'
+                            ? content.comprehension.slice(0, 1)
+                            : content.comprehension.slice(1)
+                        }
+                      />
+                    ) : undefined
+                  }
+                  width={
+                    ['s4', 's8', 's9', 's11'].includes(id) ? 'expanded' : 'wide'
+                  }
                 >
                   {body(id)}
-                </LessonOpening>
+                  {audio.error && pageId === id ? (
+                    <S.Hint role="status">{audio.error}</S.Hint>
+                  ) : null}
+                </Page>
               ),
             }
-          const Page = SlidePage
-          return {
-            id,
-            label: `${eyebrow} · ${title}`,
-            content: (
-              <Page
-                layout={id === 's12' ? 'split' : 'stacked'}
-                density="dense"
-                eyebrow={eyebrow}
-                title={
-                  id === 's6' || id === 's62' ? (
-                    <DialogueTitle title={title} action={dialogueAction(id)} />
-                  ) : (
-                    title
-                  )
-                }
-                instruction={instruction}
-                questions={
-                  id === 's4' ? (
-                    <C101Questions items={content.reading} />
-                  ) : id === 's6' || id === 's62' ? (
-                    <C101Questions
-                      items={
-                        id === 's6'
-                          ? content.comprehension.slice(0, 1)
-                          : content.comprehension.slice(1)
-                      }
-                    />
-                  ) : undefined
-                }
-                width={
-                  ['s4', 's8', 's9', 's11'].includes(id) ? 'expanded' : 'wide'
-                }
-              >
-                {body(id)}
-                {audio.error && pageId === id ? (
-                  <S.Hint role="status">{audio.error}</S.Hint>
-                ) : null}
-              </Page>
-            ),
-          }
-        })}
+          }),
+        )}
       />
     </S.Stage>
   )

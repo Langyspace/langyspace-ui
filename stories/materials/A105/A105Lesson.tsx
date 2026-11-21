@@ -1,4 +1,7 @@
-import { LessonOpening } from '../shared/LessonBookends'
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+} from '../shared/lessonOpeningPolicy'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { useLessonPage } from '../shared/useLessonPage'
@@ -23,7 +26,11 @@ export function A105Lesson({
   initialPageId,
   learnerName = '',
 }: A105LessonProps) {
-  const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-05', pageOrder)
+  const [pageId, setPageId] = useLessonPage(
+    initialPageId,
+    'a1-05',
+    withLessonOpeningPageIds('a1-05', pageOrder),
+  )
   const speech = useLessonSpeech()
   const notes = useLessonNotesPopup('langy-material-notes-A1.05')
   const ask = (
@@ -35,25 +42,16 @@ export function A105Lesson({
   ) => ({
     id,
     label: `${eyebrow} · ${title}`,
-    content:
-      id === 's1' ? (
-        <LessonOpening
-          materialKey="a1-05"
-          reviewTitle={title}
-          instruction={instruction}
-        >
-          <PromptExercise items={items} />
-        </LessonOpening>
-      ) : (
-        <SlidePage
-          width="reading"
-          eyebrow={eyebrow}
-          title={title}
-          instruction={instruction}
-        >
-          <PromptExercise items={items} />
-        </SlidePage>
-      ),
+    content: (
+      <SlidePage
+        width="reading"
+        eyebrow={eyebrow}
+        title={title}
+        instruction={instruction}
+      >
+        <PromptExercise items={items} />
+      </SlidePage>
+    ),
   })
   const dialoguePage = (id: string, title: string, fillGaps = false) => {
     const lines = fillGaps ? gaps : dialogue
@@ -234,7 +232,7 @@ export function A105Lesson({
     <Shell.Stage>
       <MaterialSlideDeck
         label={`A1.05 · At the street market${learnerName ? ` · ${learnerName}` : ''}`}
-        pages={pages}
+        pages={withLessonOpeningPages('a1-05', pages)}
         pageId={pageId}
         previousPageLabel="Back"
         onPageChange={(id) => {

@@ -80,18 +80,22 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         label: 'Review · Make plans',
         content: (
           <LessonOpening
-            materialKey="b1-01"
-            reviewTitle="Make plans"
-            instruction="Invite your teacher to do something and agree on a day"
-          >
-            <SourceQuestions
-              items={[
-                'Would you like to come to dinner on Friday?',
-                'OK! How about Saturday?',
-                'Now ask your teacher: Would you like to …?',
-              ].map((question) => ({ question }))}
-            />
-          </LessonOpening>
+            materialKey={'b1-01'}
+            review={{
+              title: 'Make plans',
+              instruction:
+                'Invite your teacher to do something and agree on a day',
+              content: (
+                <SourceQuestions
+                  items={[
+                    'Would you like to come to dinner on Friday?',
+                    'OK! How about Saturday?',
+                    'Now ask your teacher: Would you like to …?',
+                  ].map((question) => ({ question }))}
+                />
+              ),
+            }}
+          />
         ),
       }
     if (id === 's2' || id === 's21')

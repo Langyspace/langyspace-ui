@@ -7,6 +7,8 @@ import { Avatar } from '../../../src/components/Avatar/Avatar'
 import langyProfile from '../../../src/assets/brand/profile.png'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import catalog from '../Standalone/catalog.json'
+import type { LessonOpeningProps } from './LessonBookends.types'
+import { hasLessonOpeningReview } from './lessonOpeningPolicy.data'
 
 const covers = import.meta.glob('../*/assets/catalog-cover40.webp', {
   eager: true,
@@ -33,17 +35,23 @@ const goals: Readonly<Record<string, string>> = {
 
 export function LessonOpening({
   materialKey,
-  reviewTitle = 'Review',
+  review,
+  reviewTitle,
   instruction,
   closing = false,
   children,
-}: {
-  materialKey: string
-  reviewTitle?: string
-  instruction?: ReactNode
-  closing?: boolean
-  children?: ReactNode
-}) {
+}: LessonOpeningProps) {
+  if (review && !hasLessonOpeningReview(materialKey))
+    throw new Error(
+      `Opening review must identify earlier content: ${materialKey}`,
+    )
+  const sideContent = closing ? children : review?.content
+  const sideTitle = closing
+    ? reviewTitle
+    : review
+      ? `Review: ${review.title}`
+      : undefined
+  const sideInstruction = closing ? instruction : review?.instruction
   const entry = catalog.find((item) => item.key === materialKey)
   if (!entry) throw new Error(`Missing lesson cover: ${materialKey}`)
   const src =
@@ -65,17 +73,19 @@ export function LessonOpening({
       }
       cover={{ src, alt: `Illustration for ${entry.title}` }}
       coverPlacement="after-heading"
-      layout={children ? 'split' : 'stacked'}
-      width={children ? 'expanded' : { mediaAspectRatio: 16 / 9 }}
+      layout={sideContent ? 'split' : 'stacked'}
+      width={sideContent ? 'expanded' : { mediaAspectRatio: 16 / 9 }}
       density="compact"
     >
-      {children ? (
+      {sideContent ? (
         <Common.Stack>
           <Common.Heading $align={closing ? 'center' : undefined}>
-            {reviewTitle}
+            {sideTitle}
           </Common.Heading>
-          {instruction ? <Common.Hint>{instruction}</Common.Hint> : null}
-          {children}
+          {sideInstruction ? (
+            <Common.Hint>{sideInstruction}</Common.Hint>
+          ) : null}
+          {sideContent}
         </Common.Stack>
       ) : null}
     </SlidePage>

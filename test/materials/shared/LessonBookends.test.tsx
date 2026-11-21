@@ -6,17 +6,14 @@ import {
   TrialNextSteps,
 } from '../../../stories/materials/shared/LessonBookends'
 import catalog from '../../../stories/materials/Standalone/catalog.json'
+import { lessonOpeningReviews } from '../../../stories/materials/shared/lessonOpeningPolicy.data'
 
 afterEach(cleanup)
 
 it.each(catalog)(
-  'resolves the approved cover and catalog title for $key without losing review content',
+  'resolves the cover and title for $key without inventing an opening activity',
   (entry) => {
-    render(
-      <LessonOpening materialKey={entry.key} reviewTitle="Review">
-        <button>Reveal my answer</button>
-      </LessonOpening>,
-    )
+    render(<LessonOpening materialKey={entry.key} />)
     expect(
       screen.getByRole('heading', { name: entry.title }),
     ).toBeInTheDocument()
@@ -30,9 +27,33 @@ it.each(catalog)(
         .compareDocumentPosition(screen.getByRole('img')) &
         Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy()
+    expect(screen.queryByRole('button')).not.toBeInTheDocument()
+    expect(screen.queryByText(/^Review:/)).not.toBeInTheDocument()
+  },
+)
+
+it.each(Object.keys(lessonOpeningReviews))(
+  'keeps only the explicit earlier-content review beside %s',
+  (materialKey) => {
+    render(
+      <LessonOpening
+        materialKey={materialKey}
+        review={{
+          title: 'Earlier content',
+          instruction: 'Recall the previous topic',
+          content: <button>Reveal my answer</button>,
+        }}
+      />,
+    )
+    expect(
+      screen.getByRole('heading', { name: 'Review: Earlier content' }),
+    ).toBeVisible()
     expect(
       screen.getByRole('button', { name: 'Reveal my answer' }),
-    ).toBeInTheDocument()
+    ).toBeVisible()
+    expect(
+      document.querySelector('[data-slide-introduction]'),
+    ).not.toContainElement(screen.getByRole('button'))
   },
 )
 

@@ -120,12 +120,14 @@ export function A102Lesson({
       label: 'Review · Say hello',
       content: (
         <LessonOpening
-          materialKey="a1-02"
-          reviewTitle="Say hello"
-          instruction="Say your name, where you’re from and how you feel. Then ask your teacher"
-        >
-          <PromptExercise items={prompts.review} />
-        </LessonOpening>
+          materialKey={'a1-02'}
+          review={{
+            title: 'Say hello',
+            instruction:
+              'Say your name, where you’re from and how you feel. Then ask your teacher',
+            content: <PromptExercise items={prompts.review} />,
+          }}
+        />
       ),
     },
     {

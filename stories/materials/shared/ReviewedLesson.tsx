@@ -1,3 +1,8 @@
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+  hasLessonOpeningReview,
+} from './lessonOpeningPolicy'
 import { LessonOpening, LessonPracticePlan } from './LessonBookends'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
@@ -354,6 +359,7 @@ export function ReviewedLesson({
   initialPageId,
   learnerName = '',
 }: ReviewedLessonProps) {
+  const materialKey = code.toLowerCase().replace('.', '-')
   const mergedQuestionIds = new Set<string>()
   const pages: readonly ReviewedPage[] = authoredPages.flatMap(
     (page, index) => {
@@ -379,7 +385,10 @@ export function ReviewedLesson({
   const [pageId, setPageId] = useLessonPage(
     initialPageId,
     code.toLowerCase().replace('.', '-'),
-    pages.map((x) => x.id),
+    withLessonOpeningPageIds(
+      materialKey,
+      pages.map((x) => x.id),
+    ),
   )
   const speech = useRecordedAudio(recordings)
   const notes = useLessonNotesPopup('langy-material-notes-' + code)
@@ -392,16 +401,74 @@ export function ReviewedLesson({
           speech.stop()
           setPageId(id)
         }}
-        pages={pages.map((page, index) => {
-          if (index === 0)
+        pages={withLessonOpeningPages(
+          materialKey,
+          pages.map((page, index) => {
+            if (index === 0 && hasLessonOpeningReview(materialKey))
+              return {
+                id: page.id,
+                label: `${code} · ${title}`,
+                content: (
+                  <LessonOpening
+                    materialKey={materialKey}
+                    review={{
+                      title: page.title,
+                      instruction: page.instruction,
+                      content: (
+                        <PageContent
+                          page={page}
+                          speech={speech}
+                          active={pageId === page.id}
+                          recordings={recordings}
+                        />
+                      ),
+                    }}
+                  />
+                ),
+              }
+            const lines = page.kind === 'dialogue' ? page.lines : undefined
+            const playing = lines?.some((x) => x.id === speech.playingId)
             return {
               id: page.id,
-              label: `${code} · ${title}`,
+              label: `${page.eyebrow} · ${page.title}`,
               content: (
-                <LessonOpening
-                  materialKey={code.toLowerCase().replace('.', '-')}
-                  reviewTitle={page.title}
+                <SlidePage
+                  layout={page.kind === 'homework' ? 'split' : 'stacked'}
+                  title={page.title}
+                  questions={
+                    page.kind === 'dialogue' && page.questions ? (
+                      <PromptExercise items={page.questions} />
+                    ) : undefined
+                  }
+                  eyebrow={page.eyebrow}
                   instruction={page.instruction}
+                  density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                  width={
+                    page.kind === 'vocabulary' ||
+                    page.kind === 'roleplay' ||
+                    page.kind === 'scene' ||
+                    page.kind === 'introductions'
+                      ? 'wide'
+                      : 'reading'
+                  }
+                  titleAudio={
+                    lines
+                      ? {
+                          context: page.title,
+                          status: playing
+                            ? speech.paused
+                              ? 'paused'
+                              : 'playing'
+                            : 'idle',
+                          disabled:
+                            pageId !== page.id || !lines.every(speech.has),
+                          onClick: () =>
+                            playing
+                              ? speech.togglePause()
+                              : speech.speak(lines),
+                        }
+                      : undefined
+                  }
                 >
                   <PageContent
                     page={page}
@@ -409,61 +476,11 @@ export function ReviewedLesson({
                     active={pageId === page.id}
                     recordings={recordings}
                   />
-                </LessonOpening>
+                </SlidePage>
               ),
             }
-          const lines = page.kind === 'dialogue' ? page.lines : undefined
-          const playing = lines?.some((x) => x.id === speech.playingId)
-          return {
-            id: page.id,
-            label: `${page.eyebrow} · ${page.title}`,
-            content: (
-              <SlidePage
-                layout={page.kind === 'homework' ? 'split' : 'stacked'}
-                title={page.title}
-                questions={
-                  page.kind === 'dialogue' && page.questions ? (
-                    <PromptExercise items={page.questions} />
-                  ) : undefined
-                }
-                eyebrow={page.eyebrow}
-                instruction={page.instruction}
-                density={page.kind === 'dialogue' ? 'compact' : 'regular'}
-                width={
-                  page.kind === 'vocabulary' ||
-                  page.kind === 'roleplay' ||
-                  page.kind === 'scene' ||
-                  page.kind === 'introductions'
-                    ? 'wide'
-                    : 'reading'
-                }
-                titleAudio={
-                  lines
-                    ? {
-                        context: page.title,
-                        status: playing
-                          ? speech.paused
-                            ? 'paused'
-                            : 'playing'
-                          : 'idle',
-                        disabled:
-                          pageId !== page.id || !lines.every(speech.has),
-                        onClick: () =>
-                          playing ? speech.togglePause() : speech.speak(lines),
-                      }
-                    : undefined
-                }
-              >
-                <PageContent
-                  page={page}
-                  speech={speech}
-                  active={pageId === page.id}
-                  recordings={recordings}
-                />
-              </SlidePage>
-            ),
-          }
-        })}
+          }),
+        )}
         overlay={
           <LessonNotes
             storageKey={'langy-material-notes-' + code}

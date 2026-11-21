@@ -1,4 +1,8 @@
-import { LessonOpening, LessonPracticePlan } from '../shared/LessonBookends'
+import {
+  withLessonOpeningPages,
+  withLessonOpeningPageIds,
+} from '../shared/lessonOpeningPolicy'
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -26,7 +30,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
   const [pageId, setPageId] = useLessonPage(
       initialPageId,
       'tema-frontend',
-      order,
+      withLessonOpeningPageIds('tema-frontend', order),
     ),
     { audioRef, events, ...media } = useFrontendAudio()
 
@@ -60,15 +64,19 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
     if (id === 's1') {
       return {
         id,
-        label: 'B1 Tech · Frontend',
+        label: 'Warm up · Your work',
         content: (
-          <LessonOpening
-            materialKey="tema-frontend"
-            reviewTitle="Your work"
-            instruction="Answer your teacher’s questions. Then ask question 4."
+          <SlidePage
+            width="conversation"
+            density="compact"
+            eyebrow="Warm up"
+            title={'Your work'}
+            instruction={
+              'Answer your teacher’s questions. Then ask question 4.'
+            }
           >
             <Questions items={review} />
-          </LessonOpening>
+          </SlidePage>
         ),
       }
     } else if (id === 's2') {
@@ -216,7 +224,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
           if (next !== pageId) media.stop()
           setPageId(next)
         }}
-        pages={pages}
+        pages={withLessonOpeningPages('tema-frontend', pages)}
         previousPageLabel="Back"
         overlay={
           <LessonNotes
