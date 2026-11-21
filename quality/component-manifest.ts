@@ -21,6 +21,29 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'MeetingFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MeetingFrame.tsx',
+    runtimeMarker: 'lsui-sc-meeting-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MeetingFrame.stories.tsx',
+      title: 'Device/MeetingFrame',
+    },
+    test: { ...complete, path: 'test/components/Device/MeetingFrame.test.tsx' },
+    reference: {
+      propsPath: 'src/components/Device/MeetingFrame.types.ts',
+      documentation: {
+        path: 'docs/components/meeting-frame.md',
+        anchor: 'meetingframe',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'ComicRolePlay',
     interactive: true,
     visual: true,

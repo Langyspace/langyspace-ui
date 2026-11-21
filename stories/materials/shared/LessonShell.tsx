@@ -7,6 +7,7 @@ import { useLessonSpeech } from './useLessonSpeech'
 import { LessonNotes } from './LessonNotes'
 import type { LessonShellProps, LessonIntroProps } from './Lesson.types'
 import * as S from './Lesson.styles'
+import { withFreeConversationEnding } from './freeConversationEnding'
 export function LessonIntro({
   level,
   lesson,
@@ -61,7 +62,7 @@ export function LessonShell({
           if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        pages={pages(speech, pageId)}
+        pages={withFreeConversationEnding(pages(speech, pageId))}
         overlay={
           <LessonNotes
             storageKey={'langy-notes:' + materialKey}

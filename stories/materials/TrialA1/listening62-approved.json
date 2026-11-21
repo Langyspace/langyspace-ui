@@ -1,0 +1,91 @@
+{
+  "feedback": 62,
+  "approvedByUser": true,
+  "approvedAt": "2026-11-21T16:16:40.708663+00:00",
+  "greeting": "Hi! I’m at the park with Kim 😊",
+  "items": [
+    {
+      "feedback": 62,
+      "id": "L.1",
+      "material": "TrialA1",
+      "text": "I’m happy today! I love playing soccer with my friends. I have my sneakers on and my ball with me.\n\nKim is on a bench with her headphones. We both like music, but I don’t like books",
+      "speaker": "Ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/listening-ana62-1.mp3",
+      "playbackRate": 1,
+      "synthesisInput": "I'm happy today! I love playing soccer with my friends. I have my sneakers on and my ball with me.\n\nKim is on a bench with her headphones. We both like music, but I don't like books"
+    },
+    {
+      "feedback": 62,
+      "id": "L.2",
+      "material": "TrialA1",
+      "text": "I also like watching movies at home. I love dogs, and Kim likes cats.\n\nNow I’m hungry! I want pizza, but I don’t like salad.\n\nWhat about you? Tell me what you like!",
+      "speaker": "Ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "languageCode": "en",
+      "outputFormat": "mp3_44100_128",
+      "file": "assets/listening-ana62-2.mp3",
+      "playbackRate": 1,
+      "synthesisInput": "I also like watching movies at home. I love dogs, and Kim likes cats.\n\nNow I'm hungry! I want pizza, but I don't like salad.\n\nWhat about you? Tell me what you like!"
+    }
+  ],
+  "questions": [
+    [
+      {
+        "id": "sport",
+        "prompt": "What sport does Ana like?",
+        "answer": "Soccer"
+      },
+      {
+        "id": "music",
+        "prompt": "What do Ana and Kim both like?",
+        "answer": "Music"
+      },
+      {
+        "id": "books",
+        "prompt": "Does Ana like books?",
+        "answer": "No, she doesn’t"
+      }
+    ],
+    [
+      {
+        "id": "movies",
+        "prompt": "What does Ana like watching?",
+        "answer": "Movies"
+      },
+      {
+        "id": "cats",
+        "prompt": "Does Kim like dogs or cats?",
+        "answer": "Cats"
+      },
+      {
+        "id": "food",
+        "prompt": "What food does Ana want?",
+        "answer": "Pizza"
+      }
+    ]
+  ],
+  "sourceUI": "b55b830b271427aadf4e53ccfb8128dc0b4b2797"
+}

@@ -9,6 +9,7 @@ import { MaterialTheme } from '../shared/MaterialTheme'
 import { useEffect, useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
+import { withFreeConversationEnding } from '../shared/freeConversationEnding'
 import { useB101Audio } from './useB101Audio'
 import { order, dialogue } from './B101.data'
 import {
@@ -360,7 +361,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
           if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        pages={pages}
+        pages={withFreeConversationEnding(pages)}
         overlay={
           <LessonNotes
             storageKey="langy-notes:b1-01"

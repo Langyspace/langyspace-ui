@@ -1,6 +1,9 @@
 import { LikesBoardSection } from './TrialA1LikesBoard'
-import { TrialA1Comic } from './TrialA1Comic'
-import { comicTitle, comicInstruction } from './TrialA1Comic.data'
+import {
+  TrialA1Listening,
+  listeningParts,
+  listeningInstruction,
+} from './TrialA1Listening'
 import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
 import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
@@ -100,22 +103,25 @@ export function TrialA1Lesson({
                   </SlidePage>
                 ),
               }
-            if (id === 's5')
+            if (id === 's5' || id === 's5-part-2') {
+              const part = id === 's5' ? 0 : 1
+              const listeningTitle = listeningParts[part].title
               return {
                 id,
-                label: comicTitle,
+                label: listeningTitle,
                 content: (
                   <SlidePage
-                    width={{ mediaAspectRatio: 1.4 }}
+                    width="expanded"
                     density="compact"
-                    eyebrow="Role-play"
-                    title={comicTitle}
-                    instruction={comicInstruction}
+                    eyebrow="Listening"
+                    title={listeningTitle}
+                    instruction={listeningInstruction}
                   >
-                    <TrialA1Comic />
+                    <TrialA1Listening active={activeId === id} part={part} />
                   </SlidePage>
                 ),
               }
+            }
             if (id === 'next-steps')
               return {
                 id,

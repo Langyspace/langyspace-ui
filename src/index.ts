@@ -513,6 +513,11 @@ export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton.t
 export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
 export { ImageSortBoard } from './components/Exercise/ImageSortBoard'
 export { ComicRolePlay } from './components/Exercise/ComicRolePlay'
+export { MeetingFrame } from './components/Device/MeetingFrame'
+export type {
+  MeetingFrameProps,
+  MeetingParticipant,
+} from './components/Device/MeetingFrame.types'
 export type {
   ComicRolePlayProps,
   ComicPanel,

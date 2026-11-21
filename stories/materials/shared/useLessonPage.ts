@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { withFreeConversationPageIds } from './freeConversationEnding'
 export function useLessonPage(
   initialPageId: string | undefined,
   materialKey: string,
-  ids: readonly string[],
+  authoredIds: readonly string[],
 ) {
+  const ids = withFreeConversationPageIds(authoredIds)
   const key = 'langy-page:' + materialKey
   const [id, setId] = useState(() => {
     if (initialPageId !== undefined)

@@ -55,3 +55,8 @@ Ao criar/revisar uma aula, ler esta ficha e atualizar apenas o fato novo confirm
 ## Cena hipotética — quadrinhos do experimental A1 (feedback60)
 
 Ana (à esquerda, camiseta rosa e bola) e Kim (à direita, blusa azul e fones) se encontram no parque, se apresentam, conversam sobre interesses e se despedem. São atores visuais para uma conversa criada pela aluna e pela professora. Os exemplos opcionais não fixam preferências, nomes dos participantes reais ou novos fatos biográficos. Reutilizar as identidades documentadas; não inferir uma amizade permanente a partir do título do exercício.
+
+
+## Mensagens da Ana no experimental A1 (feedback62)
+
+As duas gravações aprovadas são da mesma Ana e têm uma única saudação escrita antes da primeira. Ela está feliz, no parque com Kim, gosta de jogar futebol com os amigos, está de tênis e levou a bola. Kim está num banco com fones. As duas gostam de música; Ana não gosta de livros. Na continuação, Ana gosta de filmes em casa e de cachorros; Kim gosta de gatos. Ana está com fome, quer pizza e não gosta de salada. Esses fatos estão vinculados a esta atividade; não inferir preferências adicionais ou uma biografia fixa de outros contextos. O quadrinho ficou suspenso e não integra mais a aula.

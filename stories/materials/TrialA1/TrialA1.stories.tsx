@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
+          'Experimental A1 · What do you like? Dez páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -43,16 +43,31 @@ export const PictureTalk: Story = {
 }
 export const ListenAndTalk: Story = { args: { initialPageId: 's3' } }
 export const LikesAndDislikes: Story = { args: { initialPageId: 's4' } }
-export const ComicConversation: Story = {
+export const Listening: Story = {
   args: { initialPageId: 's5' },
   tags: ['visual-review'],
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's5')
-    await expect(c.getByText('A new friend at the park')).toBeVisible()
+    await expect(c.getByText('A message from Ana (1/2)')).toBeVisible()
     await userEvent.click(
-      c.getByRole('button', { name: 'Show next speaking tip' }),
+      c.getByRole('button', { name: 'What sport does Ana like?' }),
     )
-    await expect(c.getByText('Cumprimente')).toBeVisible()
+    await expect(c.getByText('Soccer', { exact: true })).toBeVisible()
+  },
+}
+export const ListeningContinuation: Story = {
+  args: { initialPageId: 's5-part-2' },
+  tags: ['visual-review'],
+}
+export const FreeConversation: Story = {
+  args: { initialPageId: 'free-conversation' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 'free-conversation')
+    await expect(c.getByText('Free conversation')).toBeVisible()
+    await expect(
+      c.getByRole('figure', { name: 'Your conversation with your teacher' }),
+    ).toBeVisible()
   },
 }
 
