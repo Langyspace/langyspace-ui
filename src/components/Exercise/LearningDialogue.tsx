@@ -63,6 +63,7 @@ export function LearningDialogue({
   lines,
   learnerIdentity,
   guidance,
+  sequentialGuidance,
   density = 'regular',
   presentation = 'dialogue',
   speakerLabels = 'visible',
@@ -82,15 +83,50 @@ export function LearningDialogue({
   const hasLearner = Boolean(
     learnerName && learnerPhoto && failedLearnerAvatar !== learnerPhoto,
   )
+  const sequential = sequentialGuidance
+  const levelGuidance = sequential ? undefined : guidance
+  const supportedLines = lines.filter((line) => line.cue || line.hint)
+  const nextHint =
+    sequential &&
+    supportedLines.find(
+      (line) =>
+        !sequential.hintedLineIds.includes(line.id) &&
+        !sequential.revealedLineIds.includes(line.id),
+    )
+  const nextModel =
+    sequential &&
+    supportedLines.find((line) => !sequential.revealedLineIds.includes(line.id))
+  const visibleHints =
+    sequential &&
+    supportedLines.some(
+      (line) =>
+        sequential.hintedLineIds.includes(line.id) &&
+        !sequential.revealedLineIds.includes(line.id),
+    )
+  const modelLabel = nextModel
+    ? `Show next model (${supportedLines.indexOf(nextModel) + 1}/${supportedLines.length})`
+    : 'Hide models'
+  const hintLabel = nextHint
+    ? `Show next tip (${supportedLines.indexOf(nextHint) + 1}/${supportedLines.length})`
+    : visibleHints
+      ? 'Hide tips'
+      : 'Models are already shown'
   const dialogue = (
     <Styled.Dialogue {...props} $paired={presentation === 'paired'}>
       {lines.map((line, index) => {
-        const hasSupport = Boolean(guidance && (line.cue || line.hint))
-        const inlineGuidance = hasSupport && guidance?.placement === 'line'
-        const level =
-          inlineGuidance && guidance?.activeLineId !== line.id
+        const hasSupport = Boolean(
+          (levelGuidance || sequential) && (line.cue || line.hint),
+        )
+        const inlineGuidance = hasSupport && levelGuidance?.placement === 'line'
+        const level = sequential
+          ? sequential.revealedLineIds.includes(line.id)
+            ? 'full'
+            : sequential.hintedLineIds.includes(line.id)
+              ? 'hint'
+              : 'cue'
+          : inlineGuidance && levelGuidance?.activeLineId !== line.id
             ? 'cue'
-            : (guidance?.level ?? 'cue')
+            : (levelGuidance?.level ?? 'cue')
         const supportContext = line.guidanceLabel ?? line.speaker
         const isLearner = line.participant === 'learner'
         const speaker = isLearner
@@ -104,7 +140,7 @@ export function LearningDialogue({
             : undefined
           : line.avatarUrl
         const content =
-          guidance && (line.cue || line.hint) ? (
+          (levelGuidance || sequential) && (line.cue || line.hint) ? (
             <Styled.GuidedText>
               {(['cue', 'hint', 'full'] as const).map((layer) => (
                 <Styled.GuidedLayer
@@ -173,7 +209,6 @@ export function LearningDialogue({
             />
             <Styled.Speech
               $compact={density === 'compact'}
-              $paired={presentation === 'paired'}
               $inlineGuidance={inlineGuidance}
               $playing={playingId === line.id}
               $side={line.side}
@@ -202,7 +237,7 @@ export function LearningDialogue({
               {(translatedIds?.includes(line.id) ?? false) ? (
                 <Styled.Translation>{line.translation}</Styled.Translation>
               ) : null}
-              {inlineGuidance && guidance ? (
+              {inlineGuidance && levelGuidance ? (
                 <Styled.LineControls
                   $afterAudio={Boolean(onPlay && line.audioLabel)}
                   role="group"
@@ -213,13 +248,13 @@ export function LearningDialogue({
                     showInitial={level === 'hint'}
                     showAll={level === 'full'}
                     onToggleInitial={() =>
-                      guidance.onChange(
+                      levelGuidance.onChange(
                         level === 'hint' ? 'cue' : 'hint',
                         line.id,
                       )
                     }
                     onToggleAll={() =>
-                      guidance.onChange(
+                      levelGuidance.onChange(
                         level === 'full' ? 'cue' : 'full',
                         line.id,
                       )
@@ -260,20 +295,41 @@ export function LearningDialogue({
       })}
     </Styled.Dialogue>
   )
-  return guidance && guidance.placement !== 'line' ? (
+  if (sequential && supportedLines.length)
+    return (
+      <Styled.DialogueSection>
+        <VocabularyControls
+          interaction="progressive"
+          showInitial={Boolean(visibleHints)}
+          showAll={supportedLines.some((line) =>
+            sequential.revealedLineIds.includes(line.id),
+          )}
+          hintDisabled={!nextHint && !visibleHints}
+          onToggleInitial={() => sequential.onRevealHint(nextHint?.id)}
+          onToggleAll={() => sequential.onRevealModel(nextModel?.id)}
+          labels={{ hint: hintLabel, showAll: modelLabel, hideAll: modelLabel }}
+        />
+        {dialogue}
+      </Styled.DialogueSection>
+    )
+  return levelGuidance && levelGuidance.placement !== 'line' ? (
     <Styled.DialogueSection>
       {dialogue}
       <VocabularyControls
-        showInitial={guidance.level === 'hint'}
-        showAll={guidance.level === 'full'}
+        showInitial={levelGuidance.level === 'hint'}
+        showAll={levelGuidance.level === 'full'}
         onToggleInitial={() =>
-          guidance.onChange(guidance.level === 'hint' ? 'cue' : 'hint')
+          levelGuidance.onChange(
+            levelGuidance.level === 'hint' ? 'cue' : 'hint',
+          )
         }
         onToggleAll={() =>
-          guidance.onChange(guidance.level === 'full' ? 'cue' : 'full')
+          levelGuidance.onChange(
+            levelGuidance.level === 'full' ? 'cue' : 'full',
+          )
         }
         labels={{
-          hint: guidance.level === 'hint' ? 'Hide tips' : 'Show tips',
+          hint: levelGuidance.level === 'hint' ? 'Hide tips' : 'Show tips',
           showAll: 'Show model dialogue',
           hideAll: 'Hide model dialogue',
         }}

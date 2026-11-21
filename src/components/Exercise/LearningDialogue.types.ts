@@ -36,11 +36,18 @@ export interface LearningDialogueProps extends Omit<
   learnerIdentity?: { firstName: string; avatarUrl: string }
   /** Controlled challenge: cues first, bulb for tips, eye for the model dialogue. */
   guidance?: {
-    /** Keep default shared controls, or place contextual support beside each answer. */
     placement?: 'below' | 'line'
     activeLineId?: string
     level: 'cue' | 'hint' | 'full'
     onChange: (level: 'cue' | 'hint' | 'full', lineId?: string) => void
+  }
+  /** Optional ordered support; standard guidance remains unchanged. */
+  sequentialGuidance?: {
+    hintedLineIds: readonly string[]
+    revealedLineIds: readonly string[]
+    /** Undefined resets the respective support layer after the last item. */
+    onRevealHint: (lineId?: string) => void
+    onRevealModel: (lineId?: string) => void
   }
   /** Paired introduces a visual gap before each new question/answer exchange. */
   presentation?: 'dialogue' | 'paired'

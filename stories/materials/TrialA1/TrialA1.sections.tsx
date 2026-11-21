@@ -21,8 +21,8 @@ export function GreetingSection() {
       ? teacher.name
       : teacher.name.trim().split(/\s+/u)[0]!
   const [translated, setTranslated] = useState<string[]>([])
-  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
-  const [activeLineId, setActiveLineId] = useState<string>()
+  const [hintedLineIds, setHintedLineIds] = useState<string[]>([])
+  const [revealedLineIds, setRevealedLineIds] = useState<string[]>([])
   const cues = [
     'Say your name.',
     'Say your city or country.',
@@ -37,14 +37,17 @@ export function GreetingSection() {
     <LearningDialogue
       density="regular"
       presentation="paired"
-      guidance={{
-        placement: 'line',
-        level,
-        activeLineId,
-        onChange: (next, lineId) => {
-          setLevel(next)
-          setActiveLineId(lineId)
-        },
+      sequentialGuidance={{
+        hintedLineIds,
+        revealedLineIds,
+        onRevealHint: (id) =>
+          setHintedLineIds((old) =>
+            id ? (old.includes(id) ? old : [...old, id]) : [],
+          ),
+        onRevealModel: (id) =>
+          setRevealedLineIds((old) =>
+            id ? (old.includes(id) ? old : [...old, id]) : [],
+          ),
       }}
       translatedIds={translated}
       onTranslate={(id) => setTranslated((old) => toggleId(old, id))}

@@ -39,7 +39,6 @@ export const Speech = styled.div<{
   $completed: boolean
   $hasAudio: boolean
   $compact?: boolean
-  $paired?: boolean
   $inlineGuidance?: boolean
 }>`
   display: grid;
@@ -51,13 +50,14 @@ export const Speech = styled.div<{
   row-gap: ${theme.spacing[1]};
   max-width: 100%;
   min-width: 0;
-  padding: ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[2])}
-    ${theme.spacing[2]}
-    ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[2])}
-    ${theme.spacing[3]};
+  padding: ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[3])}
+    ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[4])}
+    ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[3])}
+    ${(p) => (p.$compact ? theme.spacing[3] : theme.spacing[4])};
   border: 0;
+  box-shadow: inset 0 0 0 1px ${(p) => recipe(p).border};
   border-radius: ${(p) => (p.$side === 'start' ? '6px 20px 20px 20px' : '20px 6px 20px 20px')};
-  background: ${(p) => (p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? `color-mix(in srgb, ${recipe(p).foreground} 3%, ${recipe(p).canvas})` : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
+  background: ${(p) => (p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? recipe(p).surface : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`)};
   outline: ${(p) => (p.$playing ? `2px solid ${recipe(p).accent}` : 'none')};
   color: ${(p) => recipe(p).foreground};
   font-size: ${(p) => (p.$compact ? `clamp(${theme.typography.fontSize.md}, 2.6cqh, 1.0625rem)` : '1.0625rem')};
@@ -65,21 +65,11 @@ export const Speech = styled.div<{
   line-height: 1.4;
   @container (max-width: ${theme.breakpoints.md}) {
     padding: ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[2])}
-      ${theme.spacing[2]}
+      ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])}
       ${(p) => (p.$compact ? theme.spacing[1] : theme.spacing[2])}
       ${theme.spacing[3]};
     font-size: ${theme.typography.fontSize.md};
   }
-  ${(p) =>
-    p.$paired &&
-    css`
-      padding: ${theme.spacing[3]} ${theme.spacing[4]};
-      border: 1px solid ${recipe(p).border};
-      background: ${p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? recipe(p).surface : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`};
-      @container (max-width: ${theme.breakpoints.md}) {
-        padding: ${theme.spacing[2]} ${theme.spacing[3]};
-      }
-    `}
   > button {
     grid-column: 2;
     grid-row: 1;

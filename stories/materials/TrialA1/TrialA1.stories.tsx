@@ -75,7 +75,7 @@ export const GreetingHint: Story = {
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's1')
     await userEvent.click(
-      c.getByRole('button', { name: 'Show tip: What’s your name?' }),
+      c.getByRole('button', { name: 'Show next tip (1/3)' }),
     )
     await expect(
       c.getByText('Diga seu primeiro nome.', { exact: true }),
@@ -88,7 +88,10 @@ export const GreetingModel: Story = {
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's1')
     await userEvent.click(
-      c.getByRole('button', { name: 'Show model: Where are you from?' }),
+      c.getByRole('button', { name: 'Show next model (1/3)' }),
+    )
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show next model (2/3)' }),
     )
     await expect(c.getByText('I’m from …', { exact: true })).toBeVisible()
   },

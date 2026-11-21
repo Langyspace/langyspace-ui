@@ -192,3 +192,7 @@ The existing LearningDialogue receives optional learnerIdentity and semantic lea
 ### Feedback47 — paired greeting
 
 PairedDialogue, PairedDialogueHint and PairedDialogueModel source stories expose the optional paired LearningDialogue with contextual bulb/model controls. The first TrialA1 page uses the same shared variation and centered focused width. Other dialogues retain their current defaults. No remote Lab write, new media or browser/visual review was performed.
+
+### Feedback48 — one bubble skin and sequential support
+
+The newer bubble skin is canonical for LearningDialogue, including guided conversation; paired controls spacing only. Principal paired examples now use one progressive bulb/model row, retaining revealed prefixes and resetting the completed layer from the same control. Standard/inline contracts remain available for compatibility. No remote Lab update or visual/runtime validation was performed.

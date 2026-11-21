@@ -600,22 +600,23 @@ function PairedDialoguePreview({
 }: {
   initial?: 'cue' | 'hint' | 'full'
 }) {
-  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>(initial)
-  const [activeLineId, setActiveLineId] = useState<string | undefined>(
-    initial === 'cue' ? undefined : 'a2',
+  const [hintedLineIds, setHintedLineIds] = useState<string[]>(
+    initial === 'hint' ? ['a1'] : [],
+  )
+  const [revealedLineIds, setRevealedLineIds] = useState<string[]>(
+    initial === 'full' ? ['a1'] : [],
   )
   return (
     <Styled.Preview>
       <LearningDialogue
         presentation="paired"
-        guidance={{
-          placement: 'line',
-          level,
-          activeLineId,
-          onChange: (next, id) => {
-            setLevel(next)
-            setActiveLineId(id)
-          },
+        sequentialGuidance={{
+          hintedLineIds,
+          revealedLineIds,
+          onRevealHint: (id) =>
+            setHintedLineIds((old) => (id ? [...old, id] : [])),
+          onRevealModel: (id) =>
+            setRevealedLineIds((old) => (id ? [...old, id] : [])),
         }}
         lines={[
           {

@@ -4,6 +4,8 @@ import type { VocabularyControlsProps } from './VocabularyControls.types'
 
 export function VocabularyControls({
   labels,
+  interaction = 'toggle',
+  hintDisabled = false,
   density = 'regular',
   showInitial,
   showAll,
@@ -17,7 +19,8 @@ export function VocabularyControls({
         variant="neutral"
         aria-label={labels?.hint ?? 'Hint: first letter'}
         title={labels?.hint ?? 'Hint: first letter'}
-        aria-pressed={showInitial}
+        disabled={hintDisabled}
+        aria-pressed={interaction === 'toggle' ? showInitial : undefined}
         onClick={onToggleInitial}
       >
         <svg
@@ -46,7 +49,7 @@ export function VocabularyControls({
               ? (labels?.hideAll ?? 'Hide all words')
               : (labels?.showAll ?? 'Show all words')
           }
-          aria-pressed={showAll}
+          aria-pressed={interaction === 'toggle' ? showAll : undefined}
           onClick={onToggleAll}
         >
           <svg

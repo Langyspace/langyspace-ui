@@ -112,8 +112,16 @@ The material adapter binds this prop from a scoped context and recognizes legacy
 
 ## Paired conversation and contextual support
 
-`LearningDialogue presentation="paired"` adds space before each new adjacent question/answer pair and uses the existing surface/border/padding tokens for clear bubbles. Default dialogue presentation stays unchanged. Pairing affects presentation, not evaluation, identity or the number of lesson turns.
+`LearningDialogue presentation="paired"` adds space before each new adjacent question/answer pair. All presentations use the same canonical bubble skin; density alone controls padding. Default dialogue presentation stays unchanged. Pairing affects presentation, not evaluation, identity or the number of lesson turns.
 
 `guidance.placement="line"` moves the existing bulb/model controls beside lines with a cue/hint. The consumer controls `activeLineId` and `level`; `onChange(level, lineId?)` identifies the activated answer. Other lines stay at cue level, and the current control collapses its own support. `line.guidanceLabel` supplies question-specific accessible names. Hidden layers remain mounted/inert to reserve text geometry. Default below-dialogue controls keep their current behavior and labels.
 
 `VocabularyControls density="compact"` reuses small IconButtons for inline support. Regular density remains the default. Audio controls retain their own column if present with inline support. TrialA1 greeting adopts the paired variation in SlidePage’s focused column. Source fixtures cover cue/hint/model, cross-answer switching and narrow layout; these were authored, not executed, per the current fast-delivery policy.
+
+## Sequential support and unified bubble skin
+
+`LearningDialogue.sequentialGuidance` accepts controlled `hintedLineIds`, `revealedLineIds`, `onRevealHint(id?)` and `onRevealModel(id?)`. One shared VocabularyControls row sits above the dialogue. Each activation reports the next eligible line in source order; undefined resets that support layer after completion. Visible models take precedence and are skipped by the next-tip command. Previously shown tips can reappear when models are hidden. No supported lines means no controls.
+
+Sequential support uses `VocabularyControls interaction="progressive"` with position/action labels instead of toggle pressed semantics. `hintDisabled` covers the state in which models already show every answer. Defaults retain existing toggle behavior. Standard level and inline guidance remain compatible; TrialA1 introduction and principal paired examples adopt the sequential row.
+
+The newer bubble paint is now the common Speech rule for guided and introductory conversation. An inset stroke avoids adding height to dense compact rows. Paired spacing no longer chooses a separate surface or border. Regular/compact remain meaningful density variations. Identity, completion and playback states retain their own contracts. Sequential source tests/fixtures are authored, not executed in the fast delivery.
