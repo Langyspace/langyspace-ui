@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'MessagePhoneFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MessagePhoneFrame.tsx',
+    runtimeMarker: 'lsui-sc-message-phone-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MessagePhoneFrame.stories.tsx',
+      title: 'Device/MessagePhoneFrame',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Device/MessagePhoneFrame.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Device/MessagePhoneFrame.types.ts',
+      documentation: {
+        path: 'docs/components/message-phone-frame.md',
+        anchor: 'messagephoneframe',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'MeetingFrame',
     interactive: false,
     visual: true,

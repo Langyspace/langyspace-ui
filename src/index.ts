@@ -614,6 +614,8 @@ export type {
 export { SlidePage } from './components/Slide/SlidePage'
 export { MobileFrame } from './components/Device/MobileFrame'
 export type { MobileFrameProps } from './components/Device/MobileFrame.types'
+export { MessagePhoneFrame } from './components/Device/MessagePhoneFrame'
+export type { MessagePhoneFrameProps } from './components/Device/MessagePhoneFrame.types'
 export { VoiceMessageExercise } from './components/VoiceMessage/VoiceMessageExercise'
 export type {
   VoiceMessageAudio,

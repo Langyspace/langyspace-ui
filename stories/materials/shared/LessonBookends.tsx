@@ -1,6 +1,9 @@
 import type { ReactNode } from 'react'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MobileFrame } from '../../../src/components/Device/MobileFrame'
+import { MessagePhoneFrame } from '../../../src/components/Device/MessagePhoneFrame'
+import { MessageBubble } from '../../../src/components/Message/MessageBubble'
+import { BrandLogo } from '../../../src/components/Brand/BrandLogo'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import catalog from '../Standalone/catalog.json'
 
@@ -47,7 +50,8 @@ export function LessonOpening({
   if (!src) throw new Error(`Missing approved cover asset: ${materialKey}`)
   return (
     <SlidePage
-      title={entry.title}
+      title={closing ? 'Sua aula experimental chegou ao fim!' : entry.title}
+      lang={closing ? 'pt-BR' : undefined}
       eyebrow={
         materialKey.startsWith('trial-')
           ? `${entry.levels.join(' / ')} · Trial lesson`
@@ -55,7 +59,7 @@ export function LessonOpening({
       }
       instruction={
         closing
-          ? 'Talk to the school team about joining the course and continuing your English classes'
+          ? 'Vamos continuar? Fale com a equipe da Langy para começar seu curso de inglês'
           : goals[materialKey]
       }
       cover={{ src, alt: `Illustration for ${entry.title}` }}
@@ -106,19 +110,19 @@ export function TrialNextSteps({ materialKey }: { materialKey: string }) {
   return (
     <LessonOpening
       materialKey={materialKey}
-      reviewTitle="Keep learning with Langy"
+      reviewTitle="Mande uma mensagem para a Langy"
       closing
     >
-      <Common.Surface>
-        <Common.Heading>Talk to the school team</Common.Heading>
-        <Common.Paragraph>
-          Tell them you’d like to join the course and continue your English
-          classes
-        </Common.Paragraph>
-        <Common.Hint>
-          Ask your teacher how to contact the school team
-        </Common.Hint>
-      </Common.Surface>
+      <MessagePhoneFrame
+        contact={<BrandLogo width={96} alt="Langy" />}
+        composerPlaceholder="Mensagem"
+        aria-label="Exemplo de mensagem para a Langy"
+        lang="pt-BR"
+      >
+        <MessageBubble side="outgoing" timestamp="9:41">
+          Oi! Quero fechar o curso de inglês com vocês 😊
+        </MessageBubble>
+      </MessagePhoneFrame>
     </LessonOpening>
   )
 }

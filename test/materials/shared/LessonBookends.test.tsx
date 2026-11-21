@@ -56,13 +56,39 @@ it('presents genuine tasks and the optional example without inventing practice d
 })
 
 it.each(['trial-a1-a2', 'trial-b1', 'trial-b2'])(
-  'directs %s to the school team without invented enrolment offers or links',
+  'closes %s with one outgoing message, the cover split and no fake sending',
   (materialKey) => {
     render(<TrialNextSteps materialKey={materialKey} />)
     expect(
-      screen.getByRole('heading', { name: 'Talk to the school team' }),
+      screen.getByRole('heading', {
+        name: 'Sua aula experimental chegou ao fim!',
+      }),
     ).toBeInTheDocument()
-    expect(screen.getByText(/join the course/)).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: 'Mande uma mensagem para a Langy' }),
+    ).toBeInTheDocument()
+    const phone = screen.getByRole('region', {
+      name: 'Exemplo de mensagem para a Langy',
+    })
+    expect(phone).toContainElement(screen.getByRole('img', { name: 'Langy' }))
+    const message = screen.getByText(
+      'Oi! Quero fechar o curso de inglês com vocês 😊',
+    )
+    expect(phone).toContainElement(message)
+    expect(message.closest('article')).toHaveAttribute('data-side', 'outgoing')
+    const introduction = document.querySelector('[data-slide-introduction]')!
+    expect(introduction).toContainElement(
+      screen.getByRole('heading', {
+        name: 'Sua aula experimental chegou ao fim!',
+      }),
+    )
+    expect(introduction.querySelector('img')).toHaveAttribute(
+      'src',
+      expect.stringContaining('catalog-cover40.webp'),
+    )
+    expect(introduction).not.toContainElement(phone)
     expect(screen.queryByRole('link')).not.toBeInTheDocument()
+    expect(screen.queryByRole('button')).not.toBeInTheDocument()
+    expect(document.querySelector('input, textarea, audio')).toBeNull()
   },
 )
