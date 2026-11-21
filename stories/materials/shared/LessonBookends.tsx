@@ -27,7 +27,8 @@ const goals: Readonly<Record<string, string>> = {
   'b2-01': 'Tell a travel story and explain what happened before the problem',
   'c1-01': 'Give clear, constructive feedback and negotiate a next step',
   'trial-a1-a2': 'Meet your teacher and talk about what you like',
-  'trial-b1': 'Share a memorable trip and ask about someone else’s experience',
+  'trial-b1':
+    'Talk about a trip, deal with a change of plans and keep the conversation going',
   'trial-b2': 'Explore your opinions about work and life',
   'tema-frontend':
     'Explain a bug, share a work update and practise an interview',

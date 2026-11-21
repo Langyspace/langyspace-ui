@@ -70,3 +70,8 @@ Kim e Ana aparecem como figuras ilustrativas de professora e aluna em uma conver
 ## Composição das mensagens e conversa livre (feedback64)
 
 As duas gravações aprovadas da Ana são apresentadas juntas no mesmo chat, com a saudação única e seis perguntas agrupadas por áudio. Os arquivos, falas e fatos do feedback62 permanecem os mesmos. A representação ilustrada da conversa livre usa a professora em destaque e a aluna no pequeno quadro sobreposto; os papéis continuam fictícios.
+
+
+## Experimental B1/B2 — recorte de revisão70
+
+O diálogo proposto revisa o episódio de Ana e Leo em Ilhabela: eles planejavam passar domingo na praia, choveu pela manhã, foram a um café e depois fizeram o passeio de barco. Substitui a versão anterior de chuva o dia todo/cartas no hotel apenas nessa atividade. Kim é a interlocutora, não participante da viagem. O mecânico da cena é uma figura genérica sem nome, idade ou nova biografia. Capa e retratos aprovados são reutilizados. O recorte em staging contém apenas capa, seis itens de vocabulário, diálogo, conversa livre e encerramento; as outras páginas do plano continuam pendentes.

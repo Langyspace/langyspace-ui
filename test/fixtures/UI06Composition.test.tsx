@@ -3,7 +3,6 @@ import { act, cleanup, fireEvent, render, within } from '@testing-library/react'
 import { afterEach, beforeEach, expect, it, vi } from 'vitest'
 import type { SlideDeckProps } from '../../src/components/Slide/SlideDeck.types'
 import { TrialA1Lesson } from '../../stories/materials/TrialA1/TrialA1Lesson'
-import { TrialB1Lesson } from '../../stories/materials/TrialB1/TrialB1Lesson'
 import { TrialB2Lesson } from '../../stories/materials/TrialB2/TrialB2Lesson'
 import { PictureTalkSection } from '../../stories/materials/TrialA1/TrialA1.sections'
 import { LabeledSceneDemo } from '../../stories/components/UXLab/MaterialVariants'
@@ -71,14 +70,6 @@ afterEach(() => {
 })
 
 const cases = [
-  {
-    label: 'B1',
-    lesson: <TrialB1Lesson initialPageId="s3" />,
-    rehearsal: '2. Rehearse',
-    independent: '3. Without the script',
-    model: '1. Model',
-    subtitle: 'Listen, respond and keep the conversation going.',
-  },
   {
     label: 'B2',
     lesson: <TrialB2Lesson initialPageId="s3" />,

@@ -60,3 +60,20 @@ it('accepts the inserted page for initial navigation, return to practice and nav
   act(() => result.current[1]('invalid-page'))
   expect(result.current[0]).toBe('free-conversation')
 })
+
+it('preserves an explicitly provided theme-specific free conversation and remains idempotent', () => {
+  const provided = {
+    id: 'free-conversation',
+    label: 'Travel speaking',
+    content: <p>Talk about changes of plan</p>,
+  }
+  const closing = { id: 'next-steps', label: 'Next steps', content: null }
+  const pages = withFreeConversationEnding([
+    provided,
+    { id: 'practice', label: 'Practice', content: null },
+    closing,
+  ])
+  expect(pages.at(-2)).toBe(provided)
+  expect(withFreeConversationEnding(pages).at(-2)).toBe(provided)
+  expect(pages.at(-1)).toBe(closing)
+})

@@ -14,11 +14,12 @@ export function withFreeConversationPageIds(ids: readonly string[]): string[] {
 export function withFreeConversationEnding(
   pages: readonly SlideDeckPage[],
 ): readonly SlideDeckPage[] {
+  const provided = pages.find((page) => page.id === freeConversationPageId)
   const original = pages.filter((page) => page.id !== freeConversationPageId)
   if (!original.length) return []
   return [
     ...original.slice(0, -1),
-    {
+    provided ?? {
       id: freeConversationPageId,
       label: freeConversationTitle,
       content: <FreeConversationPage />,

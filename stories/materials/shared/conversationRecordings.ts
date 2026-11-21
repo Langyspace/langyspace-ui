@@ -4,13 +4,6 @@ import clip1 from '../TrialA1/assets/dialogue/02.mp3'
 import clip2 from '../TrialA1/assets/dialogue/03.mp3'
 import clip3 from '../TrialA1/assets/dialogue/04.mp3'
 import clip4 from '../TrialA1/assets/dialogue/05.mp3'
-import clip13 from '../TrialB1/assets/dialogue/01.mp3'
-import clip14 from '../TrialB1/assets/dialogue/02.mp3'
-import clip15 from '../TrialB1/assets/dialogue/03.mp3'
-import clip16 from '../TrialB1/assets/dialogue/04.mp3'
-import clip17 from '../TrialB1/assets/dialogue/05.mp3'
-import clip18 from '../TrialB1/assets/dialogue/06.mp3'
-import clip19 from '../TrialB1/assets/dialogue/07.mp3'
 import clip20 from '../TrialB2/assets/dialogue/01.mp3'
 import clip21 from '../TrialB2/assets/dialogue/02.mp3'
 import clip22 from '../TrialB2/assets/dialogue/03.mp3'
@@ -32,7 +25,6 @@ import clip37 from '../B201/assets/dialogue/11.mp3'
 import clip38 from '../B201/assets/dialogue/12.mp3'
 import trialA1 from '../TrialA1/TrialA1.content.json'
 import b201 from '../B201/B201.content.json'
-import trialB1 from '../TrialB1/TrialB1.content.json'
 import trialB2 from '../TrialB2/TrialB2.content.json'
 import type {
   RecordedConversationDefinition,
@@ -63,7 +55,6 @@ const define = (
     turns,
   }
 }
-const trialB1Dialogue = trialB1.pages.find((page) => page.kind === 'dialogue')
 export const conversationRecordings: Readonly<
   Record<RecordedConversationId, RecordedConversationDefinition | undefined>
 > = {
@@ -136,86 +127,8 @@ export const conversationRecordings: Readonly<
   ),
   // Reserved legacy ID; the rebuilt A201 binds its new recordings directly.
   'A201:s6': undefined,
-  'TrialB1:s3': define(
-    'TrialB1:s3',
-    'Ana and Kim’s favourite trips',
-    (trialB1Dialogue?.lines ?? []).map((line) => ({
-      text: line.en,
-      speaker: line.who,
-    })),
-    [
-      {
-        id: 'trial-b1.s3.dialogue.01',
-        text: 'Ana, what was your best trip?',
-        speaker: 'kim',
-        sha256:
-          'fba15c5bb9155a78a993f3df5b1c312207834fe55b085490c459991279306e0f',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 2.089796,
-        src: clip13,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.02',
-        text: 'A weekend in Ilhabela with my brother, Leo. The best part was the boat trip.',
-        speaker: 'ana',
-        sha256:
-          '4a15ce205e4edf2be9b842593ef9cfdefe29487cd8848b4e3d40f55b8e86af5c',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 4.643991,
-        src: clip14,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.03',
-        text: 'Nice! Did anything go wrong?',
-        speaker: 'kim',
-        sha256:
-          'dc8160d07c1b4218cd029a3afaccb14aaeda27e59ffaf24da779a784a43ab5dd',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 2.693515,
-        src: clip15,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.04',
-        text: 'Yes! It rained all day on Sunday, so we played cards at the hotel. What about you?',
-        speaker: 'ana',
-        sha256:
-          '86afc08896a74405447e07c13154a357ba32071584e54c011ba99aaaf57d575e',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 5.526349,
-        src: clip16,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.05',
-        text: 'My best day out was a Sunday in Bom Retiro, in São Paulo. It felt like home!',
-        speaker: 'kim',
-        sha256:
-          '261ee87c069694b6d0d3a3ab81ea4abcd2c641a4d49c67fe0801946f2c68b5a2',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 7.709025,
-        src: clip17,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.06',
-        text: 'I love that! Where would you like to go next?',
-        speaker: 'ana',
-        sha256:
-          '61a0c6d3b0c402ed49436e5519362c75481d4f79c1c178f86265156f821b867d',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 2.739955,
-        src: clip18,
-      },
-      {
-        id: 'trial-b1.s3.dialogue.07',
-        text: 'I’d love to go to Salvador. The food looks amazing!',
-        speaker: 'kim',
-        sha256:
-          'e218b45ef9ce8e283501302f0ebe2fb34b6ce661e1cb99ee80d20ff71bdb445f',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 4.643991,
-        src: clip19,
-      },
-    ],
-  ),
+  // Reserved legacy ID; the reviewed B1/B2 dialogue binds its eight MP3s directly.
+  'TrialB1:s3': undefined,
   'TrialB2:s3': define(
     'TrialB2:s3',
     'A good day at work',

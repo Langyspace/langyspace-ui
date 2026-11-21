@@ -1,253 +1,180 @@
 {
-  "revision": "EXP-B1-REVIEW-01-v1",
-  "level": "B1",
+  "revision": "EXP-B1-B2-PARTIAL-REVIEW70",
   "title": "A trip to remember",
-  "minutes": 30,
-  "pages": [
-    {
-      "id": "s1",
-      "title": "Get to know each other",
-      "subtitle": "Talk about your home, work and goals for English. Then ask your teacher",
-      "minutes": 3,
-      "objective": "Establish rapport and elicit a personal reason for using English.",
-      "source": "Original s1 · Let’s meet",
-      "kind": "greeting",
-      "questions": [
-        {
-          "q": "Where do you live?",
-          "support": "I live in …, but I’m from …"
-        },
-        {
-          "q": "What do you do?",
-          "support": "I work in … / I’m a student. / I’m retired."
-        },
-        {
-          "q": "When would you like to use English?",
-          "support": "I’d like to use English when I …"
+  "level": "B1 / B2",
+  "minutes": 16,
+  "reviewScope": ["cover", "s2", "s3", "free-conversation", "next-steps"],
+  "scene": {
+    "id": "s2",
+    "title": "On the road",
+    "subtitle": "Name the six things in the scene. Click to check and listen",
+    "imageAlt": "A blue car with a flat tire, a pink suitcase, a tow truck, a mechanic and a spare tire on a coastal road",
+    "imageWidth": 1280,
+    "imageHeight": 720,
+    "hotspots": [
+      {
+        "id": "tire",
+        "audioId": "V.flat-tire",
+        "label": "a flat tire",
+        "example": "We’ve got a flat tire",
+        "audioText": "a flat tire. We’ve got a flat tire",
+        "xPercent": 43.6,
+        "yPercent": 77.7,
+        "targetBounds": {
+          "xPercent": 37.4,
+          "yPercent": 65,
+          "widthPercent": 13,
+          "heightPercent": 23
         }
-      ],
-      "ask": "What would you like to know about your teacher?"
-    },
-    {
-      "id": "s2",
-      "title": "An unexpected stop",
-      "subtitle": "Choose a dot, describe that detail and decide what happens next.",
-      "minutes": 4,
-      "objective": "Describe a concrete travel problem and suggest an immediate response.",
-      "source": "Original s2 · A road trip",
-      "kind": "scene",
-      "imageAlt": "A blue car beside a coastal road, with a visibly flat front tire and a pink suitcase.",
-      "hotspots": [
-        {
-          "id": "tire",
-          "label": "The flat tire",
-          "xPercent": 41,
-          "yPercent": 72,
-          "prompt": "What went wrong? What could they do next?",
-          "support": "They had a flat tire. They could …",
-          "targetBounds": {
-            "xPercent": 32,
-            "yPercent": 57,
-            "widthPercent": 18,
-            "heightPercent": 24
-          }
-        },
-        {
-          "id": "suitcase",
-          "label": "The suitcase",
-          "xPercent": 92,
-          "yPercent": 58,
-          "prompt": "What do you always take on a trip?",
-          "support": "I always take … because …",
-          "targetBounds": {
-            "xPercent": 85,
-            "yPercent": 40,
-            "widthPercent": 13,
-            "heightPercent": 34
-          }
-        },
-        {
-          "id": "coast",
-          "label": "The coast",
-          "xPercent": 94,
-          "yPercent": 40,
-          "prompt": "Would you like to take a trip here? Why?",
-          "support": "I’d love to … / I’d prefer … because …",
-          "targetBounds": {
-            "xPercent": 86,
-            "yPercent": 35,
-            "widthPercent": 14,
-            "heightPercent": 9
-          }
+      },
+      {
+        "id": "suitcase",
+        "audioId": "V.suitcase",
+        "label": "a suitcase",
+        "example": "I packed one suitcase",
+        "audioText": "a suitcase. I packed one suitcase",
+        "xPercent": 93.0,
+        "yPercent": 69.3,
+        "targetBounds": {
+          "xPercent": 88.0,
+          "yPercent": 48,
+          "widthPercent": 10,
+          "heightPercent": 40
         }
-      ]
-    },
-    {
-      "id": "s3",
-      "title": "Ana and Kim’s favourite trips",
-      "subtitle": "Read the conversation together, then swap roles.",
-      "minutes": 5,
-      "objective": "Use a short conversational model to notice reactions, follow-up questions and a local day out.",
-      "source": "Original s3 · What was your best trip?",
-      "kind": "dialogue",
-      "lines": [
-        {
-          "who": "kim",
-          "en": "Ana, what was your best trip?",
-          "pt": "Ana, qual foi a sua melhor viagem?"
-        },
-        {
-          "who": "ana",
-          "en": "A weekend in Ilhabela with my brother, Leo. The best part was the boat trip.",
-          "pt": "Um fim de semana em Ilhabela com o meu irmão, o Leo. A melhor parte foi o passeio de barco."
-        },
-        {
-          "who": "kim",
-          "en": "Nice! Did anything go wrong?",
-          "pt": "Que legal! Deu alguma coisa errada?"
-        },
-        {
-          "who": "ana",
-          "en": "Yes! It rained all day on Sunday, so we played cards at the hotel. What about you?",
-          "pt": "Sim! Choveu o dia todo no domingo, então jogamos cartas no hotel. E você?"
-        },
-        {
-          "who": "kim",
-          "en": "My best day out was a Sunday in Bom Retiro, in São Paulo. It felt like home!",
-          "pt": "Meu melhor passeio foi um domingo no Bom Retiro, em São Paulo. Eu me senti em casa!"
-        },
-        {
-          "who": "ana",
-          "en": "I love that! Where would you like to go next?",
-          "pt": "Adorei! Aonde você gostaria de ir agora?"
-        },
-        {
-          "who": "kim",
-          "en": "I’d love to go to Salvador. The food looks amazing!",
-          "pt": "Eu adoraria ir para Salvador. A comida parece incrível!"
+      },
+      {
+        "id": "coast",
+        "audioId": "V.coast",
+        "label": "the coast",
+        "example": "We drove along the coast",
+        "audioText": "the coast. We drove along the coast",
+        "xPercent": 86,
+        "yPercent": 25,
+        "targetBounds": {
+          "xPercent": 79,
+          "yPercent": 17,
+          "widthPercent": 20,
+          "heightPercent": 20
         }
-      ],
-      "followup": "How does Ana react to Kim’s story? Find her words.",
-      "support": "I love that!"
-    },
-    {
-      "id": "s31",
-      "title": "Comprehension questions",
-      "subtitle": "Answer the questions about the conversation.",
-      "minutes": 2,
-      "objective": "Understand details and notice a natural reaction.",
-      "source": "Review34: separate comprehension from model",
-      "kind": "questions",
-      "questions": [
-        {
-          "q": "What was the best part of Ana’s trip?",
-          "answer": "The boat trip in Ilhabela."
-        },
-        {
-          "q": "Why did Ana play cards at the hotel?",
-          "answer": "It rained all day on Sunday."
-        },
-        {
-          "q": "How does Ana react to Kim’s story?",
-          "answer": "She says, “I love that!”"
+      },
+      {
+        "id": "tow-truck",
+        "audioId": "V.tow-truck",
+        "label": "a tow truck",
+        "example": "We called a tow truck",
+        "audioText": "a tow truck. We called a tow truck",
+        "xPercent": 10.3,
+        "yPercent": 27.5,
+        "targetBounds": {
+          "xPercent": 1,
+          "yPercent": 16,
+          "widthPercent": 20,
+          "heightPercent": 23
         }
-      ]
-    },
-    {
-      "id": "s41",
-      "title": "Beach or mountains?",
-      "subtitle": "Choose a place, explain why, and ask your teacher.",
-      "minutes": 1.5,
-      "objective": "Give a preference and reason; invite the other person’s view.",
-      "source": "Original s41 · The beach or the mountains?",
-      "kind": "choice",
-      "choices": ["The beach", "The mountains"],
-      "followup": "What do you like doing there?",
-      "support": ["I prefer … because …", "I like …", "What about you?"]
-    },
-    {
-      "id": "s42",
-      "title": "Big city or small town?",
-      "subtitle": "Compare the two and share a place you know.",
-      "minutes": 1.5,
-      "objective": "Extend a preference with a simple comparison and a concrete example.",
-      "source": "Original s42 · A big city or a small town?",
-      "kind": "choice",
-      "choices": ["A big city", "A small town"],
-      "followup": "Which city or town would you recommend?",
-      "support": [
-        "… is more relaxing / more exciting than …",
-        "I’d recommend … because …"
-      ]
-    },
-    {
-      "id": "s43",
-      "title": "Plane or bus?",
-      "subtitle": "Explain your choice for a trip you would like to take.",
-      "minutes": 1.5,
-      "objective": "Connect a choice of transport with a destination and a practical reason.",
-      "source": "Original s43 · By plane or by bus?",
-      "kind": "choice",
-      "choices": ["By plane", "By bus"],
-      "followup": "Where would you go, and how long would you stay?",
-      "support": ["I’d go to … by … because …", "I’d stay for …"]
-    },
-    {
-      "id": "s5",
-      "title": "Your travel story",
-      "subtitle": "Tell a story, then keep the conversation going.",
-      "minutes": 8.5,
-      "objective": "Sustain a personal narrative with less support and initiate follow-up questions.",
-      "source": "Original s5 · Let’s talk + original s3 Your turn",
-      "kind": "story",
-      "prompt": "Think of a trip or a day out you remember well.",
-      "steps": [
-        "Where did you go, and who did you go with?",
-        "What was the best part?",
-        "Did anything go wrong? What happened?"
-      ],
-      "support": [
-        "I went to … with …",
-        "The best part was …",
-        "It …, so we …",
-        "Everything went well."
-      ],
-      "extension": [
-        "What would you do differently next time?",
-        "Where would you like to go next, and why?"
-      ],
-      "ask": "Now ask your teacher about a trip. Ask a follow-up question, too.",
-      "askSupport": [
-        "Really? What happened?",
-        "Why did you choose …?",
-        "What was it like?"
-      ]
-    },
-    {
-      "id": "s6",
-      "title": "Finish the travel phrases",
-      "subtitle": "Choose two phrases and finish with your own ideas.",
-      "minutes": 3,
-      "objective": "Consolidate useful language and articulate a personally meaningful next step.",
-      "source": "Original s6 · Today you said",
-      "kind": "review",
-      "starters": [
-        "The best part was …",
-        "It …, so we …",
-        "I’d love to go to … because …",
-        "What was it like?"
-      ],
-      "reflection": "What would you like to talk about in your next class?"
-    }
-  ],
-  "teacherNotes": {
-    "principle": "30-minute trial, mainly oral interaction. Read the model live. No answer key for personal responses. Offer a local day out, imagined trip or familiar outing if travel is not available. Use support only when needed; listen before expanding. Do not correct every error.",
-    "timing": "3 + 4 + 5 + 1.5 + 1.5 + 1.5 + 10.5 + 3 = 30 minutes",
-    "story": "Allow 60–90 seconds for the first story. Respond naturally, then invite the learner to ask two questions. Optional extensions are conversation choices, not a checklist or assessment."
+      },
+      {
+        "id": "mechanic",
+        "audioId": "V.mechanic",
+        "label": "a mechanic",
+        "example": "A mechanic is checking the wheel",
+        "audioText": "a mechanic. A mechanic is checking the wheel",
+        "xPercent": 71.9,
+        "yPercent": 47.5,
+        "targetBounds": {
+          "xPercent": 65,
+          "yPercent": 17,
+          "widthPercent": 16,
+          "heightPercent": 64
+        }
+      },
+      {
+        "id": "spare-tire",
+        "audioId": "V.spare-tire",
+        "label": "a spare tire",
+        "example": "We have a spare tire in the trunk",
+        "audioText": "a spare tire. We have a spare tire in the trunk",
+        "xPercent": 80.8,
+        "yPercent": 76.0,
+        "targetBounds": {
+          "xPercent": 74.5,
+          "yPercent": 61,
+          "widthPercent": 13,
+          "heightPercent": 28
+        }
+      }
+    ]
   },
-  "audio": {
-    "mode": "recorded-labels-and-live-reading",
-    "validRecordingsFound": 3,
-    "reason": "The three picture-talk labels use approved ElevenLabs recordings. Read the model dialogue live; no recorded dialogue or speech-synthesis fallback."
-  }
+  "dialogue": {
+    "id": "s3",
+    "title": "Ana’s change of plans",
+    "subtitle": "Listen and read with your teacher, then answer the questions",
+    "lines": [
+      {
+        "id": "D.1",
+        "who": "Kim",
+        "en": "How was your weekend in Ilhabela?",
+        "pt": "Como foi seu fim de semana em Ilhabela?"
+      },
+      {
+        "id": "D.2",
+        "who": "Ana",
+        "en": "It was great in the end. Leo and I were planning to spend Sunday on the beach",
+        "pt": "No fim, foi ótimo. Leo e eu estávamos planejando passar o domingo na praia"
+      },
+      {
+        "id": "D.3",
+        "who": "Kim",
+        "en": "In the end? Did something go wrong?",
+        "pt": "No fim? Alguma coisa deu errado?"
+      },
+      {
+        "id": "D.4",
+        "who": "Ana",
+        "en": "Yes, it rained all morning, so we ended up in a little café",
+        "pt": "Sim, choveu a manhã toda, então acabamos em um pequeno café"
+      },
+      {
+        "id": "D.5",
+        "who": "Kim",
+        "en": "That sounds nice. What was the best part?",
+        "pt": "Parece legal. Qual foi a melhor parte?"
+      },
+      {
+        "id": "D.6",
+        "who": "Ana",
+        "en": "The weather got better, and we took a boat trip along the coast. The view was amazing",
+        "pt": "O tempo melhorou, e fizemos um passeio de barco pelo litoral. A vista era incrível"
+      },
+      {
+        "id": "D.7",
+        "who": "Kim",
+        "en": "So you made the most of it. What would you do differently next time?",
+        "pt": "Então vocês aproveitaram o melhor possível. O que você faria diferente na próxima vez?"
+      },
+      {
+        "id": "D.8",
+        "who": "Ana",
+        "en": "I’d check the weather before leaving! But I’d definitely go back",
+        "pt": "Eu verificaria a previsão do tempo antes de sair! Mas com certeza voltaria"
+      }
+    ],
+    "questions": [
+      {
+        "id": "plan",
+        "prompt": "What was Ana’s original plan?",
+        "answer": "She planned to spend Sunday on the beach"
+      },
+      {
+        "id": "cafe",
+        "prompt": "Why did Ana and Leo go to a café?",
+        "answer": "It rained all morning"
+      },
+      {
+        "id": "next-time",
+        "prompt": "What would Ana do differently next time?",
+        "answer": "She’d check the weather before leaving"
+      }
+    ]
+  },
+  "freeConversationInstruction": "Talk freely with your teacher in English about trips, days out and changes of plan"
 }
