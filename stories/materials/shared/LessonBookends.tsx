@@ -3,7 +3,8 @@ import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MobileFrame } from '../../../src/components/Device/MobileFrame'
 import { MessagePhoneFrame } from '../../../src/components/Device/MessagePhoneFrame'
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
-import { BrandLogo } from '../../../src/components/Brand/BrandLogo'
+import { Avatar } from '../../../src/components/Avatar/Avatar'
+import langyProfile from '../../../src/assets/brand/profile.png'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import catalog from '../Standalone/catalog.json'
 
@@ -114,12 +115,22 @@ export function TrialNextSteps({ materialKey }: { materialKey: string }) {
       closing
     >
       <MessagePhoneFrame
-        contact={<BrandLogo width={96} alt="Langy" />}
+        contact={
+          <Avatar
+            imageUrl={langyProfile}
+            initials="L"
+            name="Langy"
+            namePosition="beside"
+            textTone="inherit"
+            size="sm"
+          />
+        }
+        size="large"
         composerPlaceholder="Mensagem"
         aria-label="Exemplo de mensagem para a Langy"
         lang="pt-BR"
       >
-        <MessageBubble side="outgoing" timestamp="9:41">
+        <MessageBubble side="outgoing" appearance="messaging" timestamp="9:41">
           Oi! Quero fechar o curso de inglês com vocês 😊
         </MessageBubble>
       </MessagePhoneFrame>

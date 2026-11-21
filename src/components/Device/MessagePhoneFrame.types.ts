@@ -7,6 +7,11 @@ export interface MessagePhoneFrameProps extends Omit<
 > {
   contact: ReactNode
   children: ReactNode
+  /** Default follows the current phone recipe; large matches the spacious listening preview. */
+  size?: 'default' | 'large'
   time?: string
   composerPlaceholder?: string
+  /** Native playback viewport attributes/ref, without replacing the shared conversation owner. */
+  conversationProps?: Omit<ComponentPropsWithRef<'div'>, 'children'>
+  composerAction?: ReactNode
 }

@@ -70,12 +70,22 @@ it.each(['trial-a1-a2', 'trial-b1', 'trial-b2'])(
     const phone = screen.getByRole('region', {
       name: 'Exemplo de mensagem para a Langy',
     })
-    expect(phone).toContainElement(screen.getByRole('img', { name: 'Langy' }))
+    expect(phone).toContainElement(screen.getByText('Langy'))
+    const logo = phone.querySelector('img')!
+    expect(logo).toHaveAttribute(
+      'src',
+      expect.stringContaining('/brand/profile.png'),
+    )
+    expect(logo.parentElement).toHaveClass('lsui-sc-avatar')
     const message = screen.getByText(
       'Oi! Quero fechar o curso de inglês com vocês 😊',
     )
     expect(phone).toContainElement(message)
     expect(message.closest('article')).toHaveAttribute('data-side', 'outgoing')
+    expect(message.parentElement).toHaveStyle({
+      background: '#D9FDD3',
+      color: '#0A0A0A',
+    })
     const introduction = document.querySelector('[data-slide-introduction]')!
     expect(introduction).toContainElement(
       screen.getByRole('heading', {

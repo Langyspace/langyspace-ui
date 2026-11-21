@@ -1,5 +1,6 @@
 import { useId, useRef, useState } from 'react'
 import { Avatar } from '../Avatar/Avatar'
+import { MessagePhoneFrame } from '../Device/MessagePhoneFrame'
 import { Button } from '../Button/Button'
 import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import {
@@ -83,44 +84,9 @@ function VoiceMessageContent({
       data-listens={media.playCount}
     >
       <Styled.Layout>
-        <Styled.Phone>
-          <Styled.StatusBar aria-hidden="true">
-            <span>9:41</span>
-            <Styled.Island />
-            <Styled.StatusIcons>
-              <svg
-                width="18"
-                height="12"
-                viewBox="0 0 18 12"
-                fill="currentColor"
-              >
-                <rect x="0" y="8" width="3" height="4" rx="1" />
-                <rect x="5" y="5" width="3" height="7" rx="1" />
-                <rect x="10" y="2" width="3" height="10" rx="1" />
-              </svg>
-              <svg
-                width="22"
-                height="12"
-                viewBox="0 0 22 12"
-                fill="none"
-                stroke="currentColor"
-              >
-                <rect x="1" y="1" width="17" height="10" rx="2" />
-                <path d="M20 4v4" />
-                <rect
-                  x="3"
-                  y="3"
-                  width="13"
-                  height="6"
-                  rx="1"
-                  fill="currentColor"
-                  stroke="none"
-                />
-              </svg>
-            </Styled.StatusIcons>
-          </Styled.StatusBar>
-          <Styled.Contact>
-            <Styled.Back aria-hidden="true">‹</Styled.Back>
+        <MessagePhoneFrame
+          aria-label={undefined}
+          contact={
             <Avatar
               imageUrl={contact.avatarUrl}
               initials={contact.name.slice(0, 2)}
@@ -130,55 +96,15 @@ function VoiceMessageContent({
               description={contact.status}
               size="sm"
             />
-          </Styled.Contact>
-          <Styled.Conversation
-            ref={conversationRef}
-            tabIndex={0}
-            role="region"
-            aria-label={`${labels.conversation}: ${contact.name}`}
-          >
-            {greeting ? (
-              <Styled.Bubble>
-                {greeting.text}
-                <Styled.Time>{greeting.timestamp}</Styled.Time>
-              </Styled.Bubble>
-            ) : null}
-            {attachment ? (
-              <Styled.PhotoBubble>
-                <img src={attachment.src} alt={attachment.alt} />
-                {attachment.timestamp ? (
-                  <Styled.Time>{attachment.timestamp}</Styled.Time>
-                ) : null}
-              </Styled.PhotoBubble>
-            ) : null}
-            <VoiceMessageRecording
-              audio={audio}
-              contact={contact}
-              active={active}
-              media={media}
-              labels={trackLabels(0)}
-              transcriptReveal={transcriptReveal}
-              followUpStarted={followUpStarted}
-              showTranscript={showTranscript}
-              onToggleTranscript={() => setShowTranscript((old) => !old)}
-              id={id}
-              onPlaybackStart={pauseSiblings}
-            />
-            {additionalAudios.map((recording, index) => (
-              <AdditionalVoiceMessage
-                key={`${recording.id}:${recording.src ?? ''}`}
-                audio={recording}
-                contact={contact}
-                active={active}
-                labels={trackLabels(index + 1)}
-                transcriptReveal={transcriptReveal}
-                onPlaybackStart={pauseSiblings}
-              />
-            ))}
-          </Styled.Conversation>
-          <Styled.Composer aria-hidden={replyAction ? undefined : true}>
-            <Styled.MessagePlaceholder>Message</Styled.MessagePlaceholder>
-            {replyAction ? (
+          }
+          conversationProps={{
+            ref: conversationRef,
+            tabIndex: 0,
+            role: 'region',
+            'aria-label': `${labels.conversation}: ${contact.name}`,
+          }}
+          composerAction={
+            replyAction ? (
               <Styled.Reply
                 aria-label={replyAction.label}
                 disabled={replyAction.disabled || !active}
@@ -194,21 +120,48 @@ function VoiceMessageContent({
                   <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
                 </svg>
               </Styled.Reply>
-            ) : (
-              <Styled.Microphone aria-hidden="true">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
-                </svg>
-              </Styled.Microphone>
-            )}
-          </Styled.Composer>
-          <Styled.HomeIndicator aria-hidden="true" />
-        </Styled.Phone>
+            ) : undefined
+          }
+        >
+          {greeting ? (
+            <Styled.Bubble>
+              {greeting.text}
+              <Styled.Time>{greeting.timestamp}</Styled.Time>
+            </Styled.Bubble>
+          ) : null}
+          {attachment ? (
+            <Styled.PhotoBubble>
+              <img src={attachment.src} alt={attachment.alt} />
+              {attachment.timestamp ? (
+                <Styled.Time>{attachment.timestamp}</Styled.Time>
+              ) : null}
+            </Styled.PhotoBubble>
+          ) : null}
+          <VoiceMessageRecording
+            audio={audio}
+            contact={contact}
+            active={active}
+            media={media}
+            labels={trackLabels(0)}
+            transcriptReveal={transcriptReveal}
+            followUpStarted={followUpStarted}
+            showTranscript={showTranscript}
+            onToggleTranscript={() => setShowTranscript((old) => !old)}
+            id={id}
+            onPlaybackStart={pauseSiblings}
+          />
+          {additionalAudios.map((recording, index) => (
+            <AdditionalVoiceMessage
+              key={`${recording.id}:${recording.src ?? ''}`}
+              audio={recording}
+              contact={contact}
+              active={active}
+              labels={trackLabels(index + 1)}
+              transcriptReveal={transcriptReveal}
+              onPlaybackStart={pauseSiblings}
+            />
+          ))}
+        </MessagePhoneFrame>
         <Styled.Side role="group" aria-label={labels.questions}>
           {questionHeading}
           {questions.map((question, index) => (

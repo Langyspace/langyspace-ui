@@ -4,10 +4,15 @@ import type {
   MessageBubbleStatus,
 } from './MessageBubble.types'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
+
+const messaging = (props: Parameters<typeof resolveTheme>[0]) =>
+  resolveTheme(props).voiceMessage ?? theme.voiceMessage
 
 interface MessageBubbleStyleProps {
   $side: MessageBubbleSide
   $status?: MessageBubbleStatus
+  $appearance: 'brand' | 'messaging'
 }
 
 export const Container = styled.article.withConfig({
@@ -26,8 +31,11 @@ export const Bubble = styled.div<MessageBubbleStyleProps>`
   min-width: 0;
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
   border: 1px solid
-    ${({ $side, $status }) => {
+    ${(p) => {
+      const { $side, $status, $appearance } = p
       if ($status === 'failed') return theme.colors.feedback.danger
+      if ($side === 'outgoing' && $appearance === 'messaging')
+        return messaging(p).outgoingSurface
       if ($side === 'outgoing') return theme.semantic.foreground.brand
 
       return theme.colors.border.subtle
@@ -36,14 +44,20 @@ export const Bubble = styled.div<MessageBubbleStyleProps>`
     $side === 'outgoing'
       ? `${theme.radius.xl} ${theme.radius.xl} ${theme.spacing[1]} ${theme.radius.xl}`
       : `${theme.radius.xl} ${theme.radius.xl} ${theme.radius.xl} ${theme.spacing[1]}`};
-  color: ${({ $side, $status }) => {
+  color: ${(p) => {
+    const { $side, $status, $appearance } = p
     if ($status === 'failed') return theme.semantic.status.danger.foreground
+    if ($side === 'outgoing' && $appearance === 'messaging')
+      return messaging(p).outgoingForeground
     if ($side === 'outgoing') return theme.colors.palette.white
 
     return theme.colors.text.primary
   }};
-  background: ${({ $side, $status }) => {
+  background: ${(p) => {
+    const { $side, $status, $appearance } = p
     if ($status === 'failed') return theme.colors.feedback.dangerSubtle
+    if ($side === 'outgoing' && $appearance === 'messaging')
+      return messaging(p).outgoingSurface
     if ($side === 'outgoing') return theme.semantic.foreground.brand
 
     return theme.semantic.background.muted
@@ -66,8 +80,11 @@ export const Meta = styled.footer<MessageBubbleStyleProps>`
   justify-content: flex-end;
   gap: ${theme.spacing[2]};
   margin-top: ${theme.spacing[1]};
-  color: ${({ $side, $status }) => {
+  color: ${(p) => {
+    const { $side, $status, $appearance } = p
     if ($status === 'failed') return theme.semantic.status.danger.foreground
+    if ($side === 'outgoing' && $appearance === 'messaging')
+      return messaging(p).outgoingMuted
     if ($side === 'outgoing') return theme.colors.palette.white
 
     return theme.colors.text.muted

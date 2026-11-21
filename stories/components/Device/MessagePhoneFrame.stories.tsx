@@ -1,17 +1,27 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { MessagePhoneFrame } from '../../../src/components/Device/MessagePhoneFrame'
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
-import { BrandLogo } from '../../../src/components/Brand/BrandLogo'
+import { Avatar } from '../../../src/components/Avatar/Avatar'
+import langyProfile from '../../../src/assets/brand/profile.png'
 
 const meta = {
   component: MessagePhoneFrame,
   title: 'Device/MessagePhoneFrame',
   args: {
-    contact: <BrandLogo width={96} alt="Langy" />,
+    contact: (
+      <Avatar
+        imageUrl={langyProfile}
+        initials="L"
+        name="Langy"
+        namePosition="beside"
+        textTone="inherit"
+        size="sm"
+      />
+    ),
     'aria-label': 'Exemplo de mensagem para a Langy',
     composerPlaceholder: 'Mensagem',
     children: (
-      <MessageBubble side="outgoing" timestamp="9:41">
+      <MessageBubble side="outgoing" appearance="messaging" timestamp="9:41">
         Oi! Quero fechar o curso de inglês com vocês 😊
       </MessageBubble>
     ),
@@ -20,7 +30,9 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = { tags: ['visual-review'] }
+export const Large: Story = { args: { size: 'large' }, tags: ['visual-review'] }
 export const Narrow: Story = {
+  args: { size: 'large' },
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review', 'layout-boundary'],
 }

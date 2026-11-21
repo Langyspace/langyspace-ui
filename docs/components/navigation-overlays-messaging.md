@@ -223,6 +223,8 @@ Cuidados: aria-current indica conversa atual; unread é destaque independente. S
 
 ## MessageBubble
 
+`appearance="brand"` preserves the default portal colors. `appearance="messaging"` uses the phone recipe for outgoing messages: outgoingSurface (#D9FDD3), outgoingForeground and outgoingMuted. Failed-delivery styles retain priority. This is an explicit variation, not a global recoloring of portal messages.
+
 Mensagem com remetente visual e entrega opcional.
 
 Contrato: children, timestamp/dateTime, side e união status/statusLabel.

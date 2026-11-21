@@ -742,6 +742,8 @@ const voiceMessage = {
   questionBorder: undefined as string | undefined,
   phoneWidth: '13.28125rem',
   phoneHeight: '26.5625rem',
+  largePhoneWidth: 'clamp(12rem, calc((100dvh - 13rem) / 2), 18rem)',
+  largePhoneHeight: 'clamp(24rem, calc(100dvh - 13rem), 36rem)',
   phoneRadius: '2.125rem',
   frameWidth: '0.5625rem',
   contentWidth: '47.5rem',
@@ -768,6 +770,9 @@ const voiceMessage = {
   danger: semantic.status.danger.foreground,
   dangerSurface: semantic.status.danger.background,
   composerAccent: '#0E8A57',
+  outgoingSurface: '#D9FDD3',
+  outgoingForeground: palette.neutral[900],
+  outgoingMuted: palette.neutral[600],
 } as const
 
 // Device simulations extracted from the published UX Lab (2026-11-16).

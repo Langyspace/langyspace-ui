@@ -57,6 +57,9 @@ async function click(name: string) {
 
 it('shares one chat and greeting, pauses the previous recording and counts each completed listen independently', async () => {
   const { container, rerender } = render(<VoiceMessageExercise {...props} />)
+  expect(
+    container.querySelectorAll('[data-device-frame="message-phone"]'),
+  ).toHaveLength(1)
   expect(screen.getAllByText('One greeting')).toHaveLength(1)
   expect(screen.getAllByRole('region', { name: 'Conversa: Ana' })).toHaveLength(
     1,

@@ -1,19 +1,22 @@
-import { SimulationIcon } from '../InteractiveMaterial/SimulationIcon'
 import * as Phone from '../VoiceMessage/VoiceMessageExercise.styles'
 import * as Styled from './MessagePhoneFrame.styles'
 import type { MessagePhoneFrameProps } from './MessagePhoneFrame.types'
 
-/** Decorative messaging chrome; never sends messages or requests device access. */
+/** Shared messaging chrome; consumers supply static content, native playback or explicit actions. */
 export function MessagePhoneFrame({
   contact,
   children,
+  size = 'default',
   time = '9:41',
   composerPlaceholder = 'Message',
+  conversationProps,
+  composerAction,
   ...props
 }: MessagePhoneFrameProps) {
   return (
     <Styled.Root
       as="section"
+      $size={size}
       aria-label="Message preview"
       {...props}
       data-device-frame="message-phone"
@@ -52,14 +55,18 @@ export function MessagePhoneFrame({
         <Phone.Back aria-hidden="true">‹</Phone.Back>
         {contact}
       </Phone.Contact>
-      <Phone.Conversation>{children}</Phone.Conversation>
-      <Phone.Composer aria-hidden="true">
+      <Phone.Conversation {...conversationProps}>{children}</Phone.Conversation>
+      <Phone.Composer aria-hidden={composerAction ? undefined : true}>
         <Phone.MessagePlaceholder>
           {composerPlaceholder}
         </Phone.MessagePlaceholder>
-        <Phone.Microphone>
-          <SimulationIcon name="mic" />
-        </Phone.Microphone>
+        {composerAction ?? (
+          <Phone.Microphone>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V22h2v-3.1A7 7 0 0 0 19 12z" />
+            </svg>
+          </Phone.Microphone>
+        )}
       </Phone.Composer>
       <Phone.HomeIndicator aria-hidden="true" />
     </Styled.Root>

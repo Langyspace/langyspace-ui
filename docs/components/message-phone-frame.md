@@ -1,9 +1,9 @@
 # MessagePhoneFrame
 
-Static messaging preview using the same phone, status bar, contact strip, conversation, composer and home indicator recipe as VoiceMessageExercise. It reuses that owner’s styles without modifying listening behavior.
+Single owner of the status bar, contact strip, conversation viewport, composer and home indicator for both VoiceMessageExercise and static message previews. The listening component now composes this frame; it no longer keeps a parallel phone markup. Existing phone styles/recipe, player state, transcript counting and sibling playback behavior remain in their canonical owners.
 
-`contact` is a ReactNode slot for the consumer’s Avatar, BrandLogo or named contact. `children` contains messages such as MessageBubble. `time` defaults to9:41 and `composerPlaceholder` defaults toMessage. Native section attributes and ref are forwarded. Override `aria-label` in the consumer’s language.
+`contact` is a ReactNode slot; use the canonical circular Avatar for profile identities, including a brand profile image. `children` carries message or recording content. `size="default"` preserves the current voiceMessage theme dimensions; `size="large"` uses the shared largePhoneWidth/largePhoneHeight recipe, matching the spacious listening phone. Both stay width-bounded. `time` defaults to9:41; `composerPlaceholder` defaults toMessage. Section attributes and ref are forwarded.
 
-The frame follows the voiceMessage theme’s phoneWidth/phoneHeight and stays within available width. Composer/status chrome is decorative and inaccessible. No send button, editable field, delivery callback or device access is added. Consumers own routes, identity and copy. Use VoiceMessageExercise for playable recordings and MobileFrame for content-sized homework plans.
+`conversationProps` forwards native viewport attributes and ref to the single scroll owner. `composerAction` accepts an explicit consumer-owned action; when absent, all composer chrome remains decorative and hidden from assistive technology. No automatic send or device access is added. Existing listening reply callbacks/disabled states remain consumer-controlled.
 
-TrialNextSteps uses the canonical Langy logo and an outgoing enrolment message, keeping the approved cover split. This commercial next action is intentionally in Portuguese, rather than another English exercise. No phone number or contact link is invented.
+TrialNextSteps uses the supplied square Langy profile image inside Avatar, the large size and MessageBubble appearance="messaging". That appearance uses #D9FDD3 for sent messages with dark foreground and readable timestamps, while portal brand bubbles retain their existing default. Use MobileFrame for content-sized homework plans.

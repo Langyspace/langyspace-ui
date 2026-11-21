@@ -21,5 +21,7 @@ export type MessageBubbleProps = Omit<
   children: ReactNode
   dateTime?: string
   side?: MessageBubbleSide
+  /** Brand preserves the portal default; messaging uses the native phone sent-message recipe. */
+  appearance?: 'brand' | 'messaging'
   timestamp: string
 } & MessageBubbleDelivery
