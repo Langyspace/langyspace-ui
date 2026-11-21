@@ -203,3 +203,8 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Quando a conversa precisa de direção, mostrar uma instrução curta em inglês na fala da aluna (perguntar, responder, acrescentar ou perguntar de volta). A lâmpada oferece uma dica e o olho mostra um modelo de linguagem. Não deixar reticências soltas como única orientação.
 - Reutilizar a mesma ajuda sequencial da apresentação pessoal: uma lâmpada e um olho abaixo da conversa, com revelação na ordem das três falas da aluna. A professora recebe orientações breves para conduzir a troca, sem preferências pessoais inventadas. Manter o tema livre e seis turnos de conversa.
+
+## Pontuação em balões — feedback56
+
+- Textos de balões de conversa, instruções curtas, dicas e modelos não terminam com ponto final. Preservar pontos internos, interrogações, exclamações e reticências usadas como espaço para completar a fala.
+- Fazer a edição no texto autorado. Não adicionar normalização, regex ou condição de pontuação ao renderizador. Quando a cópia de um diálogo gravado mudar somente nessa pontuação, alinhar o texto exibido de seu registro, preservando áudio, IDs, hashes e inputs originais de síntese.

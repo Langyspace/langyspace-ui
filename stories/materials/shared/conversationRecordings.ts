@@ -94,7 +94,7 @@ export const conversationRecordings: Readonly<
       },
       {
         id: 'trial-a1.s3.dialogue.03',
-        text: 'Me too. I like music and books.',
+        text: 'Me too. I like music and books',
         speaker: 'kim',
         sha256:
           '06d51b75a1665979e0723857a6fa535219b2f128b0aeddfa514a6f4c8e544478',
@@ -124,7 +124,7 @@ export const conversationRecordings: Readonly<
       },
       {
         id: 'trial-a1.dialogue.06',
-        text: 'I play soccer here with my friends.',
+        text: 'I play soccer here with my friends',
         speaker: 'ana',
         sha256:
           'e6a975a847d662dfd902e8a70e58da2f772ca6a7924ddf4f29633734239dc16a',

@@ -82,7 +82,7 @@ export const GreetingHint: Story = {
       c.getByRole('button', { name: 'Show next tip (1/3)' }),
     )
     await expect(
-      c.getByText('Diga seu primeiro nome.', { exact: true }),
+      c.getByText('Diga seu primeiro nome', { exact: true }),
     ).toBeVisible()
   },
 }
@@ -121,7 +121,7 @@ export const RehearseWithYourTeacher: Story = {
       c.getByRole('button', { name: 'Show next tip (1/3)' }),
     )
     await expect(
-      c.getByText('Diga se gosta de música e pergunte de volta.', {
+      c.getByText('Diga se gosta de música e pergunte de volta', {
         exact: true,
       }),
     ).toBeVisible()
@@ -133,13 +133,13 @@ export const StartANewConversation: Story = {
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's3-independent')
     await expect(
-      c.getByText('Ask about something your teacher likes.', { exact: true }),
+      c.getByText('Ask about something your teacher likes', { exact: true }),
     ).toBeVisible()
     await userEvent.click(
       c.getByRole('button', { name: 'Show next tip (1/3)' }),
     )
     await expect(
-      c.getByText('Escolha um assunto e use Do you like para perguntar.', {
+      c.getByText('Escolha um assunto e use Do you like para perguntar', {
         exact: true,
       }),
     ).toBeVisible()

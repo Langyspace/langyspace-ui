@@ -22,14 +22,14 @@ export function GreetingSection() {
   const [hintedLineIds, setHintedLineIds] = useState<string[]>([])
   const [revealedLineIds, setRevealedLineIds] = useState<string[]>([])
   const cues = [
-    'Say your name.',
-    'Say your city or country.',
-    'Say how you feel. Ask back.',
+    'Say your name',
+    'Say your city or country',
+    'Say how you feel. Ask back',
   ]
   const hints = [
-    'Diga seu primeiro nome.',
-    'Diga sua cidade ou país.',
-    'Diga como está e pergunte de volta.',
+    'Diga seu primeiro nome',
+    'Diga sua cidade ou país',
+    'Diga como está e pergunte de volta',
   ]
   return (
     <LearningDialogue

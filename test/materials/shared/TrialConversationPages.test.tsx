@@ -72,14 +72,14 @@ describe('separate TrialA1 conversation stages', () => {
     ).toBeTruthy()
     fireEvent.click(bulb)
     expect(
-      visibleLayer('Diga se gosta de música e pergunte de volta.'),
+      visibleLayer('Diga se gosta de música e pergunte de volta'),
     ).toHaveAttribute('aria-hidden', 'false')
     expect(
-      visibleLayer('Use I like para dizer duas coisas de que você gosta.'),
+      visibleLayer('Use I like para dizer duas coisas de que você gosta'),
     ).toHaveAttribute('aria-hidden', 'true')
     fireEvent.click(screen.getByRole('button', { name: 'Show next tip (2/3)' }))
     expect(
-      visibleLayer('Use I like para dizer duas coisas de que você gosta.'),
+      visibleLayer('Use I like para dizer duas coisas de que você gosta'),
     ).toHaveAttribute('aria-hidden', 'false')
     fireEvent.click(
       screen.getByRole('button', { name: 'Show next model (1/3)' }),
@@ -88,7 +88,7 @@ describe('separate TrialA1 conversation stages', () => {
       'aria-hidden',
       'false',
     )
-    expect(visibleLayer('I like … and … .')).toHaveAttribute(
+    expect(visibleLayer('I like … and …')).toHaveAttribute(
       'aria-hidden',
       'true',
     )
@@ -120,15 +120,15 @@ describe('separate TrialA1 conversation stages', () => {
     )!
     expect(dialogue.children).toHaveLength(6)
     expect(dialogue.firstElementChild).toHaveTextContent('You')
-    const stem = screen.getByText('Ask about something your teacher likes.', {
+    const stem = screen.getByText('Ask about something your teacher likes', {
       exact: true,
     })
     expect(stem).toBeVisible()
     expect(
-      screen.getByText('Answer and add one thing you like.', { exact: true }),
+      screen.getByText('Answer and add one thing you like', { exact: true }),
     ).toBeVisible()
     expect(
-      screen.getByText('Give your opinion, then ask back.', { exact: true }),
+      screen.getByText('Give your opinion, then ask back', { exact: true }),
     ).toBeVisible()
     expect(visibleLayer('Do you like …?')).toHaveAttribute(
       'aria-hidden',
@@ -145,11 +145,11 @@ describe('separate TrialA1 conversation stages', () => {
     ).toBeTruthy()
     fireEvent.click(bulb)
     expect(
-      visibleLayer('Escolha um assunto e use Do you like para perguntar.'),
+      visibleLayer('Escolha um assunto e use Do you like para perguntar'),
     ).toHaveAttribute('aria-hidden', 'false')
     expect(
       visibleLayer(
-        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta.',
+        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta',
       ),
     ).toHaveAttribute('aria-hidden', 'true')
     fireEvent.click(
@@ -162,7 +162,7 @@ describe('separate TrialA1 conversation stages', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Show next tip (2/3)' }))
     expect(
       visibleLayer(
-        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta.',
+        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta',
       ),
     ).toHaveAttribute('aria-hidden', 'false')
     expect(
