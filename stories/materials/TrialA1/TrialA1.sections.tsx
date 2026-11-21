@@ -1,9 +1,6 @@
 import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { PromptExercise } from '../shared/LessonExercises'
-import { useState } from 'react'
-import { GuidedConversation } from '../shared/GuidedConversation'
-import type { GuidedConversationMode } from '../shared/GuidedConversation.types'
-import { guidedConversation } from './TrialA1.guided'
+import { Fragment, useState } from 'react'
 import { conversationRecordings } from '../shared/conversationRecordings'
 import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
@@ -118,29 +115,25 @@ export function PictureTalkSection({
 }
 export function ListenTalkSection({
   playingId,
-  onModeChange,
 }: {
   playingId?: string
-  onModeChange?: (mode: GuidedConversationMode) => void
 } = {}) {
   const [translated, setTranslated] = useState<string[]>([])
   return (
-    <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
-      <LearningDialogue
-        density="compact"
-        playingId={playingId}
-        lines={content.p3.lines.map((l, i) => ({
-          id: conversationRecordings['TrialA1:s3']?.turns[i]?.id ?? String(i),
-          speaker: l.who === 'kim' ? 'Kim' : 'Ana',
-          avatarUrl: l.who === 'kim' ? kim : ana,
-          side: l.who === 'kim' ? 'start' : 'end',
-          content: l.en,
-          translation: l.g,
-        }))}
-        translatedIds={translated}
-        onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
-      />
-    </GuidedConversation>
+    <LearningDialogue
+      density="compact"
+      playingId={playingId}
+      lines={content.p3.lines.map((l, i) => ({
+        id: conversationRecordings['TrialA1:s3']?.turns[i]?.id ?? String(i),
+        speaker: l.who === 'kim' ? 'Kim' : 'Ana',
+        avatarUrl: l.who === 'kim' ? kim : ana,
+        side: l.who === 'kim' ? 'start' : 'end',
+        content: l.en,
+        translation: l.g,
+      }))}
+      translatedIds={translated}
+      onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
+    />
   )
 }
 export function ComprehensionSection() {

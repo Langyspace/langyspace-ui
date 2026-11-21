@@ -72,14 +72,6 @@ afterEach(() => {
 
 const cases = [
   {
-    label: 'A1',
-    lesson: <TrialA1Lesson initialPageId="s3" />,
-    rehearsal: '2. Ensaio',
-    independent: '3. Sem roteiro',
-    model: '1. Modelo',
-    subtitle: 'Escutem, respondam e mantenham a conversa.',
-  },
-  {
     label: 'B1',
     lesson: <TrialB1Lesson initialPageId="s3" />,
     rehearsal: '2. Rehearse',
@@ -96,6 +88,49 @@ const cases = [
     subtitle: 'Listen, respond and develop each other’s ideas.',
   },
 ]
+
+it('splits TrialA1 into model, visible rehearsal and open conversation pages', () => {
+  const view = render(<TrialA1Lesson initialPageId="s3" />)
+  expect(
+    Array.from(view.container.querySelectorAll('[data-slide-id]')).map((page) =>
+      page.getAttribute('data-slide-id'),
+    ),
+  ).toEqual([
+    's1',
+    's2',
+    's3',
+    's3-rehearse',
+    's3-independent',
+    's41',
+    's42',
+    's43',
+    's5',
+    's6',
+  ])
+  const model = within(
+    view.container.querySelector<HTMLElement>('[data-slide-id="s3"]')!,
+  )
+  expect(model.queryByRole('group', { name: 'Conversation stages' })).toBeNull()
+  expect(model.queryByRole('complementary')).toBeNull()
+  expect(
+    model.getByRole('button', { name: /Play dialogue: Do you like the park/ }),
+  ).toBeEnabled()
+  const rehearsal = within(
+    view.container.querySelector<HTMLElement>('[data-slide-id="s3-rehearse"]')!,
+  )
+  expect(
+    rehearsal.getByText('Talk about what you like', { exact: true }),
+  ).toBeInTheDocument()
+  expect(
+    rehearsal.getByText('Do you like soccer?', { exact: true }),
+  ).toBeInTheDocument()
+  const open = within(
+    view.container.querySelector<HTMLElement>(
+      '[data-slide-id="s3-independent"]',
+    )!,
+  )
+  expect(open.getByText('Do you like …?', { exact: true })).toBeInTheDocument()
+})
 
 for (const fixture of cases) {
   it(`composes ${fixture.label} header playback, guided modes, copy and existing page IDs`, () => {

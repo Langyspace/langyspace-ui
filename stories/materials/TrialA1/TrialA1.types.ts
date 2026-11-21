@@ -8,3 +8,7 @@ export interface TrialA1PictureTalkProps {
   playingId?: string
   active?: boolean
 }
+
+export interface TrialA1LiveConversationProps {
+  independent?: boolean
+}

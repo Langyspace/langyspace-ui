@@ -108,25 +108,27 @@ describe('recorded model and canonical bubble state', () => {
     expect(first.pause).toHaveBeenCalled()
   })
 
-  it('stops model audio on entering rehearsal', () => {
-    const { container } = render(
+  it('keeps the model page focused on its recording without stage tabs or comprehension', () => {
+    render(
       <MaterialTheme>
         <TrialA1DialoguePage active />
       </MaterialTheme>,
     )
-    fireEvent.click(
+    expect(
+      screen.queryByRole('group', { name: 'Conversation stages' }),
+    ).toBeNull()
+    expect(
+      screen.queryByRole('button', { name: /Rehearse|Without the script/ }),
+    ).toBeNull()
+    expect(
+      screen.queryByText('Comprehension questions', { exact: true }),
+    ).toBeNull()
+    expect(screen.queryByRole('complementary')).toBeNull()
+    expect(
       screen.getByRole('button', {
         name: /Play dialogue: Do you like the park/,
       }),
-    )
-    const first = Media.all.find(
-      (media) =>
-        media.src === conversationRecordings['TrialA1:s3']!.turns[0]!.src,
-    )!
-    act(() => first.playing())
-    fireEvent.click(screen.getByRole('button', { name: /Rehearse/ }))
-    expect(container.querySelector('[aria-current="true"]')).toBeNull()
-    expect(first.pause).toHaveBeenCalled()
+    ).toBeEnabled()
   })
 
   it('keeps gap reveal, translation and playback independent inside the unified bubble', () => {

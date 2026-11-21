@@ -18,6 +18,7 @@ export const Dialogue = styled.div.withConfig({
 export const DialogueLine = styled.div<{
   $side: 'start' | 'end'
   $exchangeStart?: boolean
+  $fill?: boolean
 }>`
   margin-block-start: ${(p) => (p.$exchangeStart ? theme.spacing[4] : undefined)};
   display: flex;
@@ -26,6 +27,7 @@ export const DialogueLine = styled.div<{
   justify-content: flex-start;
   gap: ${theme.spacing[3]};
   min-width: 0;
+  width: ${(p) => (p.$fill ? '100%' : undefined)};
   max-width: 88%;
   align-self: ${(p) => (p.$side === 'start' ? 'flex-start' : 'flex-end')};
   @container (max-width: ${theme.breakpoints.md}) {
@@ -40,8 +42,10 @@ export const Speech = styled.div<{
   $hasAudio: boolean
   $compact?: boolean
   $inlineGuidance?: boolean
+  $fill?: boolean
 }>`
   display: grid;
+  flex: ${(p) => (p.$fill ? '1 1 0%' : undefined)};
   grid-template-columns:
     minmax(0, 1fr)
     ${(p) => (p.$hasAudio ? 'auto' : '')} ${(p) => (p.$inlineGuidance ? 'auto' : '')};

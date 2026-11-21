@@ -51,6 +51,8 @@ export interface LearningDialogueProps extends Omit<
   }
   /** Paired introduces a visual gap before each new question/answer exchange. */
   presentation?: 'dialogue' | 'paired'
+  /** Fill gives open conversation prompts generous bubble width without changing their skin. */
+  bubbleWidth?: 'content' | 'fill'
   density?: 'regular' | 'compact'
   /** Identification is independent of bubble density. Names remain visible by default. */
   speakerLabels?: 'visible' | 'hidden'

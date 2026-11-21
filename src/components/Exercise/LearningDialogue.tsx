@@ -66,6 +66,7 @@ export function LearningDialogue({
   sequentialGuidance,
   density = 'regular',
   presentation = 'dialogue',
+  bubbleWidth = 'content',
   speakerLabels = 'visible',
   translatedIds,
   playingId,
@@ -186,6 +187,7 @@ export function LearningDialogue({
           <Styled.DialogueLine
             key={line.id}
             $side={line.side}
+            $fill={bubbleWidth === 'fill'}
             $exchangeStart={
               presentation === 'paired' && index > 0 && index % 2 === 0
             }
@@ -209,6 +211,7 @@ export function LearningDialogue({
             />
             <Styled.Speech
               aria-current={playingId === line.id ? 'true' : undefined}
+              $fill={bubbleWidth === 'fill'}
               $compact={density === 'compact'}
               $inlineGuidance={inlineGuidance}
               $playing={playingId === line.id}

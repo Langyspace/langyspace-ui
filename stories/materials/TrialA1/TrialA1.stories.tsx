@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
+          'Experimental A1 · What do you like? Dez páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -108,6 +108,31 @@ export const GreetingNarrow: Story = {
 
 export const PictureTalkNarrow: Story = {
   args: { initialPageId: 's2' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}
+
+export const RehearseWithYourTeacher: Story = {
+  args: { initialPageId: 's3-rehearse' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 's3-rehearse')
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show next tip (1/3)' }),
+    )
+    await expect(
+      c.getByText('Diga se gosta de música e pergunte de volta.', {
+        exact: true,
+      }),
+    ).toBeVisible()
+  },
+}
+export const StartANewConversation: Story = {
+  args: { initialPageId: 's3-independent' },
+  tags: ['visual-review'],
+}
+export const OpenConversationNarrow: Story = {
+  args: { initialPageId: 's3-independent' },
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['layout-boundary'],
 }

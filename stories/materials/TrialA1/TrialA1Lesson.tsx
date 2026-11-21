@@ -1,3 +1,4 @@
+import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -60,6 +61,30 @@ export function TrialA1Lesson({
                 label: content.p3.title,
                 content: <TrialA1DialoguePage active={activeId === 's3'} />,
               }
+            if (id === 's3-rehearse' || id === 's3-independent') {
+              const independent = id === 's3-independent'
+              const title = independent
+                ? 'Start a new conversation'
+                : 'Talk about what you like'
+              return {
+                id,
+                label: title,
+                content: (
+                  <SlidePage
+                    width="focused"
+                    eyebrow="Conversation"
+                    title={title}
+                    instruction={
+                      independent
+                        ? 'Choose a new topic. Ask your teacher, answer their questions and keep talking.'
+                        : 'Answer your teacher about yourself. Ask back when you can.'
+                    }
+                  >
+                    <TrialA1LiveConversation independent={independent} />
+                  </SlidePage>
+                ),
+              }
+            }
             if (id === 's41' || id === 's42' || id === 's43') {
               const index = Number(id.slice(2)) - 1
               return {
