@@ -593,6 +593,8 @@ export type {
   SlideDeckProps,
 } from './components/Slide/SlideDeck.types'
 export { SlidePage } from './components/Slide/SlidePage'
+export { MobileFrame } from './components/Device/MobileFrame'
+export type { MobileFrameProps } from './components/Device/MobileFrame.types'
 export { VoiceMessageExercise } from './components/VoiceMessage/VoiceMessageExercise'
 export type {
   VoiceMessageAudio,

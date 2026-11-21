@@ -1,3 +1,4 @@
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { useEffect, useRef, useState } from 'react'
 import { ThemeProvider } from 'styled-components'
@@ -429,19 +430,20 @@ export function VoiceMessageChallenge({ active }: { active: boolean }) {
 }
 export function Homework() {
   return (
-    <Common.Stack>
-      <Common.Surface>
-        <Common.Heading>Numbers and letters</Common.Heading>
-        <p>Review the digits and the letters in your name. Say them aloud.</p>
-      </Common.Surface>
-      <Common.Surface>
-        <Common.Heading>A new contact</Common.Heading>
-        <p>
-          Practise your name, spelling and a made-up phone number. Ask someone
-          to write what they hear.
-        </p>
-      </Common.Surface>
-    </Common.Stack>
+    <LessonPracticePlan
+      tasks={[
+        {
+          title: 'Numbers and letters',
+          description:
+            'Review the digits and the letters in your name. Say them aloud.',
+        },
+        {
+          title: 'A new contact',
+          description:
+            'Practise your name, spelling and a made-up phone number. Ask someone to write what they hear.',
+        },
+      ]}
+    />
   )
 }
 export function ContactIntroduction() {

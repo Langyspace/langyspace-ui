@@ -46,10 +46,14 @@ export const Root = styled.div.withConfig({
 export const Content = styled.div<{
   $width: NonNullable<SlidePageProps['width']>
   $layout: NonNullable<SlidePageProps['layout']>
+  $cover: boolean
 }>`
   display: ${(p) => (p.$layout === 'split' ? 'grid' : 'flex')};
   flex-direction: column;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.875fr);
+  grid-template-columns: minmax(0, 1fr) minmax(
+      0,
+      ${(p) => (p.$cover ? '1fr' : '1.875fr')}
+    );
   align-items: ${(p) => (p.$layout === 'split' ? 'center' : 'stretch')};
   gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
   width: 100%;
@@ -92,6 +96,15 @@ export const Content = styled.div<{
 export const Lead = styled.div`
   min-width: 0;
   margin-bottom: clamp(${theme.spacing[2]}, 2cqh, ${theme.spacing[5]});
+`
+
+export const Cover = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: ${theme.radius.xl};
+  margin-bottom: ${theme.spacing[5]};
 `
 
 export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`

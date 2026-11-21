@@ -38,6 +38,7 @@ describe('separate TrialA1 conversation stages', () => {
       's43',
       's5',
       's6',
+      'next-steps',
     ])
   })
   it('shows all three exchanges with the real teacher and one progressive support row below', () => {

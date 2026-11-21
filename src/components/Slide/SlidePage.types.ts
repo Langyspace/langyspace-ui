@@ -16,6 +16,8 @@ export interface SlidePageProps extends Omit<
   questionsTitle?: ReactNode
   /** Optional introductory content before the exercise heading. */
   lead?: ReactNode
+  /** Approved lesson artwork above the title; split layout places review content alongside it. */
+  cover?: { src: string; alt: string }
   /** Split introductions keep the lesson title and heading beside the exercise. Stacks on narrow screens. */
   layout?: 'stacked' | 'split'
   /** The reference uses 600px for focused tasks, 760px for standard content and 1040px for wider exercises. */

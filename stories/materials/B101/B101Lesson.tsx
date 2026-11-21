@@ -1,3 +1,4 @@
+import { LessonOpening } from '../shared/LessonBookends'
 import { WarmupPage } from '../shared/WarmupPage.styles'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
@@ -77,14 +78,9 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         id,
         label: 'Review · Make plans',
         content: (
-          <S.Page
-            layout="split"
-            title={
-              <>
-                Make <em>plans</em>
-              </>
-            }
-            eyebrow="B1 · Lesson 01"
+          <LessonOpening
+            materialKey="b1-01"
+            reviewTitle="Make plans"
             instruction="Invite your teacher to do something and agree on a day"
           >
             <SourceQuestions
@@ -94,7 +90,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
                 'Now ask your teacher: Would you like to …?',
               ].map((question) => ({ question }))}
             />
-          </S.Page>
+          </LessonOpening>
         ),
       }
     if (id === 's2' || id === 's21')
@@ -341,6 +337,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
       label: 'Homework · Before next class',
       content: (
         <S.Page
+          layout="split"
           width="reading"
           eyebrow="Homework"
           title="Before next class"

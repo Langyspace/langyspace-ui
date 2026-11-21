@@ -1,3 +1,4 @@
+import { LessonOpening } from '../shared/LessonBookends'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -49,6 +50,12 @@ function A101LessonContent({
   const speech = useLessonSpeech()
   const pages = order.map((id) => {
     const number = Number(id.slice(1))
+    if (id === 'cover')
+      return {
+        id,
+        label: 'Lesson cover',
+        content: <LessonOpening materialKey="a1-01" />,
+      }
     if (id === 's1')
       return {
         id,
@@ -371,6 +378,7 @@ function A101LessonContent({
       label: 'Homework · Before next class',
       content: (
         <SlidePage
+          layout="split"
           width="standard"
           eyebrow="Homework"
           title="Before next class"

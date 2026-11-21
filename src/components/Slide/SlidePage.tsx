@@ -12,6 +12,7 @@ export function SlidePage({
   questions,
   questionsTitle = 'Questions',
   lead,
+  cover,
   layout = 'stacked',
   density = 'regular',
   width = 'wide',
@@ -21,6 +22,7 @@ export function SlidePage({
 }: SlidePageProps) {
   const introduction = (
     <>
+      {cover ? <Styled.Cover src={cover.src} alt={cover.alt} /> : null}
       {lead ? <Styled.Lead>{lead}</Styled.Lead> : null}
       <Styled.Header
         $lead={Boolean(lead)}
@@ -50,7 +52,11 @@ export function SlidePage({
   )
   return (
     <Styled.Root {...props} $tone={tone}>
-      <Styled.Content $width={questions ? 'expanded' : width} $layout={layout}>
+      <Styled.Content
+        $width={questions ? 'expanded' : width}
+        $layout={layout}
+        $cover={Boolean(cover)}
+      >
         {layout === 'split' ? (
           <div data-slide-introduction="true">{introduction}</div>
         ) : (

@@ -1,3 +1,4 @@
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { PromptExercise } from '../shared/LessonExercises'
 import { useEffect, useRef, useState } from 'react'
@@ -547,17 +548,12 @@ export function ConversationSection({
 }
 export function HomeworkSection() {
   return (
-    <Styled.HomeworkStack>
-      {lesson.HW13.map((item) => (
-        <Styled.Homework key={item.t}>
-          <img src={image(item.img)} alt="" />
-          <div>
-            <b>{item.t}</b>
-            <span>{item.d}</span>
-          </div>
-        </Styled.Homework>
-      ))}
-    </Styled.HomeworkStack>
+    <LessonPracticePlan
+      tasks={lesson.HW13.map((item) => ({
+        title: item.t,
+        description: item.d,
+      }))}
+    />
   )
 }
 

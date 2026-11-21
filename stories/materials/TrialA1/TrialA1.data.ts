@@ -20,6 +20,7 @@ export const order = [
   's43',
   's5',
   's6',
+  'next-steps',
 ] as const
 export const pictures = {
   park: parkScene.src,

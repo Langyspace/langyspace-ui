@@ -7,6 +7,29 @@ import { presentationMedia } from '../../../src/foundations/layout/presentationM
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 
+it('keeps an optional cover and heading in the introduction beside review content', () => {
+  const { container } = render(
+    <SlidePage
+      title="People in my life"
+      cover={{ src: '/cover.webp', alt: 'Family cover' }}
+      layout="split"
+    >
+      <button>Review a word</button>
+    </SlidePage>,
+  )
+  const intro = container.querySelector('[data-slide-introduction]')
+  expect(intro).toContainElement(
+    screen.getByRole('img', { name: 'Family cover' }),
+  )
+  expect(intro).toContainElement(
+    screen.getByRole('heading', { name: 'People in my life' }),
+  )
+  expect(intro).not.toContainElement(
+    screen.getByRole('button', { name: 'Review a word' }),
+  )
+  expect(container.firstChild).not.toHaveAttribute('cover')
+})
+
 it('keeps common page content semantic and passes native attributes and ref', () => {
   const ref = createRef<HTMLDivElement>()
   render(

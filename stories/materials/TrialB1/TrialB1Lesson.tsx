@@ -1,3 +1,4 @@
+import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
 import { PromptExercise } from '../shared/LessonExercises'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationProps } from '../shared/GuidedConversation.types'
@@ -214,67 +215,81 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
       <LessonShell
         initialPageId={initialPageId}
         materialKey="trial-b1-a-trip-to-remember"
-        pageIds={lessonPages.map((page) => page.id)}
+        pageIds={[...lessonPages.map((page) => page.id), 'next-steps']}
         label="B1 Trial · A trip to remember"
-        pages={(_, activeId) =>
-          lessonPages.map((page) => ({
+        pages={(_, activeId) => [
+          ...lessonPages.map((page) => ({
             id: page.id,
             label: page.title,
-            content: (
-              <SlidePage
-                width="expanded"
-                density={page.kind === 'dialogue' ? 'compact' : 'regular'}
-                questions={
-                  page.kind === 'dialogue' &&
-                  modelActive &&
-                  comprehensionPage ? (
-                    <Activity
-                      page={comprehensionPage}
-                      active={activeId === page.id}
-                    />
-                  ) : undefined
-                }
-                eyebrow={
-                  {
-                    greeting: 'Warm up',
-                    scene: 'Picture talk',
-                    dialogue: 'Guided conversation',
-                    questions: 'Guided conversation',
-                    choice: 'Preferences',
-                    story: 'Conversation',
-                    review: 'Review',
-                  }[page.kind]
-                }
-                title={
-                  page.kind === 'dialogue' ? (
-                    <DialogueTitle
-                      title={page.title}
-                      action={
-                        <RecordedDialoguePlayback
-                          conversationId="TrialB1:s3"
-                          active={activeId === page.id && modelActive}
-                        />
-                      }
-                    />
-                  ) : (
-                    page.title
-                  )
-                }
-                instruction={
-                  page.kind === 'dialogue'
-                    ? 'Listen, then read with your teacher.'
-                    : page.subtitle
-                }
-              >
-                <Activity
-                  page={page}
-                  active={activeId === page.id}
-                  onModeChange={(mode) => setModelActive(mode === 'model')}
-                />
-              </SlidePage>
-            ),
-          }))
-        }
+            content:
+              page.id === 's1' ? (
+                <LessonOpening
+                  materialKey="trial-b1"
+                  reviewTitle={page.title}
+                  instruction={page.subtitle}
+                >
+                  <Activity page={page} active={activeId === page.id} />
+                </LessonOpening>
+              ) : (
+                <SlidePage
+                  width="expanded"
+                  density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                  questions={
+                    page.kind === 'dialogue' &&
+                    modelActive &&
+                    comprehensionPage ? (
+                      <Activity
+                        page={comprehensionPage}
+                        active={activeId === page.id}
+                      />
+                    ) : undefined
+                  }
+                  eyebrow={
+                    {
+                      greeting: 'Warm up',
+                      scene: 'Picture talk',
+                      dialogue: 'Guided conversation',
+                      questions: 'Guided conversation',
+                      choice: 'Preferences',
+                      story: 'Conversation',
+                      review: 'Review',
+                    }[page.kind]
+                  }
+                  title={
+                    page.kind === 'dialogue' ? (
+                      <DialogueTitle
+                        title={page.title}
+                        action={
+                          <RecordedDialoguePlayback
+                            conversationId="TrialB1:s3"
+                            active={activeId === page.id && modelActive}
+                          />
+                        }
+                      />
+                    ) : (
+                      page.title
+                    )
+                  }
+                  instruction={
+                    page.kind === 'dialogue'
+                      ? 'Listen, then read with your teacher.'
+                      : page.subtitle
+                  }
+                >
+                  <Activity
+                    page={page}
+                    active={activeId === page.id}
+                    onModeChange={(mode) => setModelActive(mode === 'model')}
+                  />
+                </SlidePage>
+              ),
+          })),
+          {
+            id: 'next-steps',
+            label: 'Next steps',
+            content: <TrialNextSteps materialKey="trial-b1" />,
+          },
+        ]}
       />
     </MaterialTheme>
   )

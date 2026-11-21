@@ -29,7 +29,7 @@ function layout() {
     name: 'B2 Trial · Work and life',
   })
   const pages = Array.from(viewport.children) as HTMLElement[]
-  const heights = [900, 900, 1125, 900, 900, 900, 900, 900]
+  const heights = [900, 900, 1125, 900, 900, 900, 900, 900, 900]
   let top = 0
   Object.defineProperty(viewport, 'clientHeight', {
     configurable: true,
@@ -37,7 +37,7 @@ function layout() {
   })
   Object.defineProperty(viewport, 'scrollHeight', {
     configurable: true,
-    value: 7425,
+    value: 8325,
   })
   let position = 0
   Object.defineProperty(viewport, 'scrollTop', {
@@ -69,7 +69,7 @@ function layout() {
 }
 
 describe('TrialB2 navigation integration', () => {
-  it('keeps eight shared pages and exposes a tall dialogue tail before advancing from viewport or header', () => {
+  it('keeps the shared pages plus the enrolment closing and exposes a tall dialogue tail before advancing', () => {
     render(<TrialB2Lesson />)
     const { viewport, pages, scrollTo, scroll } = layout()
     expect(pages.map((p) => p.dataset.slideId)).toEqual([
@@ -81,6 +81,7 @@ describe('TrialB2 navigation integration', () => {
       's43',
       's5',
       's6',
+      'next-steps',
     ])
     for (const target of [
       viewport,

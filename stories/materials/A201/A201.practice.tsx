@@ -1,3 +1,4 @@
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { MeetingExample } from '../shared/MeetingExample'
 import { VocabularyControls } from '../shared/VocabularyControls'
 import { useState } from 'react'
@@ -362,18 +363,18 @@ export function ConversationSection({ index }: WarmupProps) {
 
 export function HomeworkSection() {
   return (
-    <Common.Stack>
-      <Common.Hint>{content.homework.description}</Common.Hint>
-      <PromptExercise
-        items={prompts(
-          content.homework.instructions.map((prompt) => ({ prompt })),
-          'homework',
-        )}
-      />
-      <Common.Surface>
-        <Common.Tag>Example</Common.Tag>
-        {content.homework.example}
-      </Common.Surface>
-    </Common.Stack>
+    <LessonPracticePlan
+      tasks={[
+        {
+          title: 'Observe',
+          description: content.homework.instructions.slice(0, 2).join(' '),
+        },
+        {
+          title: 'Record and send',
+          description: content.homework.instructions.slice(2).join(' '),
+        },
+      ]}
+      example={content.homework.example}
+    />
   )
 }

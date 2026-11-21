@@ -5,10 +5,12 @@ import type { VocabularyItem } from '../../../src/components/Exercise/Vocabulary
 import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
 
 export { content }
-export const order = Array.from(
-  { length: 20 },
-  (_, index) => `s${index + 1}`,
-).flatMap((id) => (id === 's15' ? [id, 's151'] : id === 's13' ? [] : [id]))
+export const order = [
+  'cover',
+  ...Array.from({ length: 20 }, (_, index) => `s${index + 1}`).flatMap((id) =>
+    id === 's15' ? [id, 's151'] : id === 's13' ? [] : [id],
+  ),
+]
 export const portraits: Readonly<Record<string, string>> = {
   Anna: ana,
   Emma: kim,

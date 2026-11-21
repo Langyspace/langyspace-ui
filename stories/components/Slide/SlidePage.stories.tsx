@@ -1,6 +1,7 @@
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { parkScene } from '../../materials/TrialA1/TrialA1.data'
 import { A103Lesson } from '../../materials/A103/A103Lesson'
+import lessonCover from '../../materials/A103/assets/catalog-cover40.webp'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -28,6 +29,34 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = { tags: ['visual-review'] }
+export const CoverWithReview: Story = {
+  args: {
+    layout: 'split',
+    cover: { src: lessonCover, alt: 'Ana, Kim and family' },
+    title: 'People in my life',
+    eyebrow: 'A1.03',
+    instruction: 'Introduce the people in your life',
+    children: (
+      <Panel>
+        <h3>Names and spelling</h3>
+        <p>What’s your last name?</p>
+        <p>How do you spell it?</p>
+      </Panel>
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const CoverOnly: Story = {
+  args: {
+    cover: { src: lessonCover, alt: 'Ana, Kim and family' },
+    title: 'People in my life',
+    eyebrow: 'A1.03',
+    instruction: 'Introduce the people in your life',
+    children: null,
+    width: 'reading',
+  },
+  tags: ['visual-review'],
+}
 export const Focused: Story = { args: { width: 'focused' } }
 export const Reading: Story = { args: { width: 'reading', density: 'compact' } }
 export const Expanded: Story = { args: { width: 'expanded' } }

@@ -1,3 +1,4 @@
+import { LessonOpening, LessonPracticePlan } from '../shared/LessonBookends'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -57,27 +58,19 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       lead,
       element
     if (id === 's1') {
-      title = 'Your work'
-      eyebrow = 'Review'
-      instruction = 'Answer your teacher’s questions. Then ask question 4.'
-      lead = (
-        <S.Introduction>
-          <S.Eyebrow>
-            <b>B1</b>Tech · Special lesson
-          </S.Eyebrow>
-          <S.FrontendHero>
-            Tech · <em>Frontend</em>
-          </S.FrontendHero>
-          <S.Goal>
-            <span aria-hidden="true">✦</span>
-            <p>
-              <b>Goal</b>Explain a bug, say what you’ve done, and answer
-              interview questions about your work.
-            </p>
-          </S.Goal>
-        </S.Introduction>
-      )
-      element = <Questions items={review} />
+      return {
+        id,
+        label: 'B1 Tech · Frontend',
+        content: (
+          <LessonOpening
+            materialKey="tema-frontend"
+            reviewTitle="Your work"
+            instruction="Answer your teacher’s questions. Then ask question 4."
+          >
+            <Questions items={review} />
+          </LessonOpening>
+        ),
+      }
     } else if (id === 's2') {
       title = 'Parts of a page'
       eyebrow = 'Vocabulary'
@@ -160,14 +153,12 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       eyebrow = 'Homework'
       instruction = 'Practise offline and bring an example to your next class.'
       element = (
-        <S.Stack>
-          {homework.map(([task, description]) => (
-            <S.Surface key={task}>
-              <b>{task}</b>
-              <p>{description}</p>
-            </S.Surface>
-          ))}
-        </S.Stack>
+        <LessonPracticePlan
+          tasks={homework.map(([title, description]) => ({
+            title: title!,
+            description: description!,
+          }))}
+        />
       )
     }
     return {
@@ -191,7 +182,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
           }
           tools={tools}
           lead={lead}
-          layout={id === 's1' ? 'split' : 'stacked'}
+          layout={id === 's12' ? 'split' : 'stacked'}
           density={
             ['s6', 's62', 's7', 's8', 's9', 's11'].includes(id)
               ? 'dense'

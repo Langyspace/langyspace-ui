@@ -2,6 +2,8 @@
 
 ## SlidePage
 
+`cover={{src, alt}}` adds approved artwork above the title in the same introduction column. With `layout="split"`, the cover/title sit to the left and consumer-owned review content to the right; this opt-in composition uses equal columns and the existing compact stacking breakpoint. Without a cover, prior split proportions and all presets remain unchanged. Cover-only introductions use the normal stacked layout with no review content. The cover preserves its image ratio and uses contain, not cropping.
+
 Shared page capsule for interactive materials. It owns the eyebrow, heading, instruction, tool row, content width and vertical centering. `width="focused"` uses the reference's 600px column; `standard` uses the measured 760px listening column; `wide` uses 1040px. `tone="inverse"` provides the dark introductory slide. Content expands naturally on narrow or short viewports.
 
 `expanded` reuses `slides.introductionWidth` (70rem) for wider stacked compositions such as a phone beside an activity board. `reading` uses 900px, `exercise` 880px and `conversation` 960px, matching the current reference's distinct compositions. `density="compact"` reduces the gap between heading and body. An optional `lead` slot precedes the exercise heading, supporting a semantic lesson introduction without turning it into the exercise title.

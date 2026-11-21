@@ -1,3 +1,4 @@
+import { LessonOpening, LessonPracticePlan } from '../shared/LessonBookends'
 import { WarmupPage } from '../shared/WarmupPage.styles'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
@@ -53,13 +54,13 @@ function B201LessonContent({ initialPageId }: LessonProps) {
               id,
               label: 'Review · When a journey goes wrong',
               content: (
-                <SlidePage
-                  eyebrow="Review"
-                  title="When a journey goes wrong"
+                <LessonOpening
+                  materialKey="b2-01"
+                  reviewTitle="When a journey goes wrong"
                   instruction="Talk about journeys that did not go to plan."
                 >
                   <SourceQuestions items={review} />
-                </SlidePage>
+                </LessonOpening>
               ),
             }
           if (id === 's2')
@@ -280,43 +281,30 @@ function B201LessonContent({ initialPageId }: LessonProps) {
             label: 'Homework · Before next class',
             content: (
               <SlidePage
+                layout="split"
                 eyebrow="Homework"
                 title="Before next class"
                 instruction="Rehearse a new story and bring it to your next class."
               >
-                <S.Questions>
-                  <S.Question>
-                    <S.Number>1</S.Number>
-                    <div>
-                      <b>Recall the words</b>
-                      <p>
-                        Look around you. Name five objects from today and
-                        explain when you might need them.
-                      </p>
-                    </div>
-                  </S.Question>
-                  <S.Question>
-                    <S.Number>2</S.Number>
-                    <div>
-                      <b>Rehearse a story</b>
-                      <p>
-                        Tell a one-minute story about a journey that went wrong.
-                        Explain what had happened and what you’d been doing
-                        before the problem.
-                      </p>
-                    </div>
-                  </S.Question>
-                  <S.Question>
-                    <S.Number>3</S.Number>
-                    <div>
-                      <b>Prepare to ask</b>
-                      <p>
-                        Bring two follow-up questions for your teacher. Use “How
-                        long had you been …?” in one of them.
-                      </p>
-                    </div>
-                  </S.Question>
-                </S.Questions>
+                <LessonPracticePlan
+                  tasks={[
+                    {
+                      title: 'Recall the words',
+                      description:
+                        'Look around you. Name five objects from today and explain when you might need them.',
+                    },
+                    {
+                      title: 'Rehearse a story',
+                      description:
+                        'Tell a one-minute story about a journey that went wrong. Explain what had happened and what you’d been doing before the problem.',
+                    },
+                    {
+                      title: 'Prepare to ask',
+                      description:
+                        'Bring two follow-up questions for your teacher. Use “How long had you been …?” in one of them.',
+                    },
+                  ]}
+                />
               </SlidePage>
             ),
           }

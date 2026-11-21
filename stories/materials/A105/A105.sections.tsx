@@ -1,3 +1,4 @@
+import { LessonPracticePlan } from '../shared/LessonBookends'
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
@@ -268,14 +269,5 @@ export function KimsList() {
 }
 
 export function Homework() {
-  return (
-    <Common.Stack>
-      {homework.map((task) => (
-        <Common.Surface key={task.title}>
-          <Common.Heading>{task.title}</Common.Heading>
-          <p>{task.description}</p>
-        </Common.Surface>
-      ))}
-    </Common.Stack>
-  )
+  return <LessonPracticePlan tasks={homework} />
 }

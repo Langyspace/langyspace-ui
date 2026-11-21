@@ -1,3 +1,4 @@
+import { LessonOpening } from '../shared/LessonBookends'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { useLessonPage } from '../shared/useLessonPage'
@@ -17,7 +18,6 @@ import {
   OutgoingCall,
   VoiceMessageChallenge,
   Homework,
-  ContactIntroduction,
 } from './A102.sections'
 import { dialogue, gaps, numberChecks, prompts, pageOrder } from './A102.data'
 import { useLessonSpeech } from './useLessonSpeech'
@@ -119,15 +119,13 @@ export function A102Lesson({
       id: 's1',
       label: 'Review · Say hello',
       content: (
-        <SlidePage
-          width="exercise"
-          density="compact"
-          eyebrow="A1 LESSON 02"
-          title="Say hello"
+        <LessonOpening
+          materialKey="a1-02"
+          reviewTitle="Say hello"
           instruction="Say your name, where you’re from and how you feel. Then ask your teacher"
         >
-          <ContactIntroduction />
-        </SlidePage>
+          <PromptExercise items={prompts.review} />
+        </LessonOpening>
       ),
     },
     {
@@ -257,6 +255,7 @@ export function A102Lesson({
       label: 'Homework · Before next class',
       content: (
         <SlidePage
+          layout="split"
           width="standard"
           eyebrow="Homework"
           title="Before next class"

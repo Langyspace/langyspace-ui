@@ -21,6 +21,29 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'MobileFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MobileFrame.tsx',
+    runtimeMarker: 'lsui-sc-mobile-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MobileFrame.stories.tsx',
+      title: 'Device/MobileFrame',
+    },
+    test: { ...complete, path: 'test/components/Device/MobileFrame.test.tsx' },
+    reference: {
+      propsPath: 'src/components/Device/MobileFrame.types.ts',
+      documentation: {
+        path: 'docs/components/mobile-frame.md',
+        anchor: 'mobileframe',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'RevealSequenceCard',
     interactive: true,
     visual: true,

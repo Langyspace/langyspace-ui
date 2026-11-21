@@ -1,3 +1,4 @@
+import { LessonOpening, LessonPracticePlan } from '../shared/LessonBookends'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { DialogueTitle } from '../shared/DialogueTitle'
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -166,16 +167,12 @@ function C101Content({ initialPageId }: C101LessonProps) {
     if (id === 's10') return <NaturalReview />
     if (id === 's11') return <RolePlay />
     return (
-      <S.Stack>
-        {content.homePractice.map((item, i) => (
-          <S.Surface key={item.title}>
-            <b>
-              {i + 1}. {item.title}
-            </b>
-            <p>{item.text}</p>
-          </S.Surface>
-        ))}
-      </S.Stack>
+      <LessonPracticePlan
+        tasks={content.homePractice.map((item) => ({
+          title: item.title,
+          description: item.text,
+        }))}
+      />
     )
   }
   return (
@@ -209,12 +206,27 @@ function C101Content({ initialPageId }: C101LessonProps) {
         }
         pages={c101PageIds.map((id) => {
           const [eyebrow, title, instruction] = pageInfo[id]!
+          if (id === 's1')
+            return {
+              id,
+              label: 'C1.01 · It tends to come across as …',
+              content: (
+                <LessonOpening
+                  materialKey="c1-01"
+                  reviewTitle={title}
+                  instruction={instruction}
+                >
+                  {body(id)}
+                </LessonOpening>
+              ),
+            }
           const Page = SlidePage
           return {
             id,
             label: `${eyebrow} · ${title}`,
             content: (
               <Page
+                layout={id === 's12' ? 'split' : 'stacked'}
                 density="dense"
                 eyebrow={eyebrow}
                 title={

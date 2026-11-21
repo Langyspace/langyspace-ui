@@ -1,3 +1,4 @@
+import { LessonOpening, LessonPracticePlan } from './LessonBookends'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import {
@@ -342,16 +343,7 @@ function PageContent({
         }
       />
     )
-  return (
-    <Common.Stack>
-      {page.tasks.map((task) => (
-        <Common.Surface key={task.title}>
-          <Common.Heading>{task.title}</Common.Heading>
-          <p>{task.description}</p>
-        </Common.Surface>
-      ))}
-    </Common.Stack>
-  )
+  return <LessonPracticePlan tasks={page.tasks} />
 }
 
 export function ReviewedLesson({
@@ -400,7 +392,26 @@ export function ReviewedLesson({
           speech.stop()
           setPageId(id)
         }}
-        pages={pages.map((page) => {
+        pages={pages.map((page, index) => {
+          if (index === 0)
+            return {
+              id: page.id,
+              label: `${code} · ${title}`,
+              content: (
+                <LessonOpening
+                  materialKey={code.toLowerCase().replace('.', '-')}
+                  reviewTitle={page.title}
+                  instruction={page.instruction}
+                >
+                  <PageContent
+                    page={page}
+                    speech={speech}
+                    active={pageId === page.id}
+                    recordings={recordings}
+                  />
+                </LessonOpening>
+              ),
+            }
           const lines = page.kind === 'dialogue' ? page.lines : undefined
           const playing = lines?.some((x) => x.id === speech.playingId)
           return {
@@ -408,6 +419,7 @@ export function ReviewedLesson({
             label: `${page.eyebrow} · ${page.title}`,
             content: (
               <SlidePage
+                layout={page.kind === 'homework' ? 'split' : 'stacked'}
                 title={page.title}
                 questions={
                   page.kind === 'dialogue' && page.questions ? (

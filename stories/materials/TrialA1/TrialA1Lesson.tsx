@@ -1,3 +1,4 @@
+import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
 import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
 import { MaterialTheme } from '../shared/MaterialTheme'
@@ -30,14 +31,13 @@ export function TrialA1Lesson({
                 id,
                 label: content.p1.title,
                 content: (
-                  <SlidePage
-                    width="focused"
-                    eyebrow="Warm up"
-                    title={content.p1.title}
+                  <LessonOpening
+                    materialKey="trial-a1-a2"
+                    reviewTitle={content.p1.title}
                     instruction={content.p1.ins}
                   >
                     <GreetingSection />
-                  </SlidePage>
+                  </LessonOpening>
                 ),
               }
             if (id === 's2')
@@ -117,6 +117,12 @@ export function TrialA1Lesson({
                     <ConversationSection />
                   </SlidePage>
                 ),
+              }
+            if (id === 'next-steps')
+              return {
+                id,
+                label: 'Next steps',
+                content: <TrialNextSteps materialKey="trial-a1-a2" />,
               }
             return {
               id,

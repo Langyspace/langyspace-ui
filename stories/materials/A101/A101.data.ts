@@ -17,6 +17,7 @@ export const image = (name: string) => {
 }
 export const lesson = source
 export const order = [
+  'cover',
   's1',
   's4',
   's21',

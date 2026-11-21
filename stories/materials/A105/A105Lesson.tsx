@@ -1,3 +1,4 @@
+import { LessonOpening } from '../shared/LessonBookends'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { useLessonPage } from '../shared/useLessonPage'
@@ -34,16 +35,25 @@ export function A105Lesson({
   ) => ({
     id,
     label: `${eyebrow} · ${title}`,
-    content: (
-      <SlidePage
-        width="reading"
-        eyebrow={eyebrow}
-        title={title}
-        instruction={instruction}
-      >
-        <PromptExercise items={items} />
-      </SlidePage>
-    ),
+    content:
+      id === 's1' ? (
+        <LessonOpening
+          materialKey="a1-05"
+          reviewTitle={title}
+          instruction={instruction}
+        >
+          <PromptExercise items={items} />
+        </LessonOpening>
+      ) : (
+        <SlidePage
+          width="reading"
+          eyebrow={eyebrow}
+          title={title}
+          instruction={instruction}
+        >
+          <PromptExercise items={items} />
+        </SlidePage>
+      ),
   })
   const dialoguePage = (id: string, title: string, fillGaps = false) => {
     const lines = fillGaps ? gaps : dialogue
@@ -209,6 +219,7 @@ export function A105Lesson({
       label: 'Homework · Before next class',
       content: (
         <SlidePage
+          layout="split"
           width="standard"
           eyebrow="Homework"
           title="Before next class"

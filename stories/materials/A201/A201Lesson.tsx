@@ -1,3 +1,4 @@
+import { LessonOpening } from '../shared/LessonBookends'
 import { useState } from 'react'
 import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
@@ -39,6 +40,12 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
   const onGapToggle = (id: string) => setGaps((ids) => toggleId(ids, id))
   const pages = order.map((id) => {
     const number = Number(id.slice(1))
+    if (id === 'cover')
+      return {
+        id,
+        label: 'Lesson cover',
+        content: <LessonOpening materialKey="a2-01" />,
+      }
     if (id === 's1')
       return {
         id,
@@ -230,6 +237,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
       label: 'Homework · Real-Life Observation',
       content: (
         <SlidePage
+          layout="split"
           width="standard"
           eyebrow="Homework"
           title={content.homework.title}
