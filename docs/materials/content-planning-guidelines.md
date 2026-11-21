@@ -186,7 +186,7 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Se modelo, compreensão e modos de prática competirem na mesma tela, distribuir a progressão em páginas próprias. Nesta experimental: diálogo-modelo sem questions → prática pessoal guiada → conversa com assunto novo. Não manter botões de modo, navegação de turno e explicações redundantes nas três páginas.
 - A prática pessoal mostra as três trocas completas de uma vez, com seis balões. Usar as identidades reais já fornecidas por prop/contexto, e não anunciar que a professora “é Kim”. Preferências pessoais permanecem perguntas, sem atribuir à professora gostos fictícios. Uma lâmpada e um olho abaixo liberam dicas/modelos em ordem pelo sequentialGuidance canônico.
-- Na transferência, quem aprende começa a conversa. Balões com começos abertos como “Do you like …?” indicam o assunto escolhido na hora e a troca de perguntas. Usar o mesmo balão compacto de largura natural do modelo, sem criar outro estilo, painel de suporte ou novo roteiro fechado.
+- Na transferência, quem aprende começa a conversa. Na conversa com tema aberto, as instruções nos balões orientam cada ação; começos como “Do you like …?” ficam nos modelos opcionais. Usar o mesmo balão compacto de largura natural do modelo, sem criar outro estilo, painel de suporte ou novo roteiro fechado.
 
 ## Mesmas dimensões para o mesmo balão — feedback52
 
@@ -198,3 +198,8 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - O cabeçalho e o corpo pertencem a uma mesma coluna ou grade. Props podem escolher a largura do conjunto; não usar uma largura solta para o título nem compensar desalinhamento com margens/paddings locais.
 - Numa única cena limitada por altura, a largura da coluna considera a proporção real do asset e os mesmos limites de altura da imagem: SlidePage width={{mediaAspectRatio: imageWidth / imageHeight}} com SceneExplorer imageSizing="presentation". Registrar as dimensões intrínsecas junto do asset. A imagem inteira, o título e a instrução compartilham a largura, inclusive em alturas de tela diferentes.
 - Em grades com cabeçalho acima das colunas, ele acompanha a largura total da grade, não uma imagem isolada. O layout split mantém sua coluna de introdução ao lado do exercício, conforme seu contrato explícito. A adaptação fica no componente de layout compartilhado, com presets anteriores preservados e fallback seguro para dimensões inválidas.
+
+## Instruções no balão, linguagem no apoio — feedback55
+
+- Quando a conversa precisa de direção, mostrar uma instrução curta em inglês na fala da aluna (perguntar, responder, acrescentar ou perguntar de volta). A lâmpada oferece uma dica e o olho mostra um modelo de linguagem. Não deixar reticências soltas como única orientação.
+- Reutilizar a mesma ajuda sequencial da apresentação pessoal: uma lâmpada e um olho abaixo da conversa, com revelação na ordem das três falas da aluna. A professora recebe orientações breves para conduzir a troca, sem preferências pessoais inventadas. Manter o tema livre e seis turnos de conversa.

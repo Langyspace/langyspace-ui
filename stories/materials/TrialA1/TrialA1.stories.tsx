@@ -130,6 +130,20 @@ export const RehearseWithYourTeacher: Story = {
 export const StartANewConversation: Story = {
   args: { initialPageId: 's3-independent' },
   tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 's3-independent')
+    await expect(
+      c.getByText('Ask about something your teacher likes.', { exact: true }),
+    ).toBeVisible()
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show next tip (1/3)' }),
+    )
+    await expect(
+      c.getByText('Escolha um assunto e use Do you like para perguntar.', {
+        exact: true,
+      }),
+    ).toBeVisible()
+  },
 }
 export const OpenConversationNarrow: Story = {
   args: { initialPageId: 's3-independent' },

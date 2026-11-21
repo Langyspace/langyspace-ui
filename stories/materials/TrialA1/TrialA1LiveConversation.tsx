@@ -24,29 +24,28 @@ export function TrialA1LiveConversation({
   return (
     <MaterialLearningDialogue
       density="compact"
-      sequentialGuidance={
-        independent
-          ? undefined
-          : {
-              hintedLineIds,
-              revealedLineIds,
-              onRevealHint: (id) =>
-                setHints((old) =>
-                  id ? (old.includes(id) ? old : [...old, id]) : [],
-                ),
-              onRevealModel: (id) =>
-                setModels((old) =>
-                  id ? (old.includes(id) ? old : [...old, id]) : [],
-                ),
-            }
-      }
+      sequentialGuidance={{
+        hintedLineIds,
+        revealedLineIds,
+        onRevealHint: (id) =>
+          setHints((old) =>
+            id ? (old.includes(id) ? old : [...old, id]) : [],
+          ),
+        onRevealModel: (id) =>
+          setModels((old) =>
+            id ? (old.includes(id) ? old : [...old, id]) : [],
+          ),
+      }}
       lines={
         independent
           ? openTurns.map((turn) => ({
               id: turn.id,
               ...(turn.learner ? learnerIdentity : teacherIdentity),
               side: turn.learner ? ('end' as const) : ('start' as const),
-              content: turn.text,
+              content: turn.learner ? turn.model : turn.cue,
+              cue: turn.learner ? turn.cue : undefined,
+              hint: turn.learner ? turn.hint : undefined,
+              guidanceLabel: turn.learner ? turn.cue : undefined,
             }))
           : rehearsalTurns.flatMap((turn) => [
               {

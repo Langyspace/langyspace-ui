@@ -23,12 +23,30 @@ export const rehearsalTurns = [
   },
 ] as const
 
-/** Open stems illustrate turn-taking without fixing a topic or a personal answer. */
+/** Learner cues first; optional help reveals language, never invented personal answers. */
 export const openTurns = [
-  { id: 'ask', learner: true, text: 'Do you like …?' },
-  { id: 'answer-back', learner: false, text: '… And you?' },
-  { id: 'reply', learner: true, text: '…' },
-  { id: 'follow-up', learner: false, text: 'What …?' },
-  { id: 'expand', learner: true, text: 'I like …' },
-  { id: 'react', learner: false, text: '…' },
+  {
+    id: 'ask',
+    learner: true,
+    cue: 'Ask about something your teacher likes.',
+    hint: 'Escolha um assunto e use Do you like para perguntar.',
+    model: 'Do you like …?',
+  },
+  { id: 'answer-back', learner: false, cue: 'Answer, then ask: And you?' },
+  {
+    id: 'reply',
+    learner: true,
+    cue: 'Answer and add one thing you like.',
+    hint: 'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta.',
+    model: 'Yes, I do. / No, I don’t. I like … .',
+  },
+  { id: 'follow-up', learner: false, cue: 'Ask about another topic.' },
+  {
+    id: 'expand',
+    learner: true,
+    cue: 'Give your opinion, then ask back.',
+    hint: 'Diga sua opinião com I like / I don’t like e pergunte de volta.',
+    model: 'I like … . / I don’t like … . And you?',
+  },
+  { id: 'react', learner: false, cue: 'Answer about yourself.' },
 ] as const

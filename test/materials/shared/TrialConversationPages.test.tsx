@@ -109,7 +109,7 @@ describe('separate TrialA1 conversation stages', () => {
       container.querySelectorAll('img[src="https://example.org/student.jpg"]'),
     ).toHaveLength(3)
   })
-  it('starts open conversation with the learner and content-sized topic-free bubbles, without extra controls', () => {
+  it('starts with learner instructions and reveals three ordered tips/models below the conversation', () => {
     const { container } = render(
       <MaterialTheme>
         <TrialA1LiveConversation independent />
@@ -120,12 +120,53 @@ describe('separate TrialA1 conversation stages', () => {
     )!
     expect(dialogue.children).toHaveLength(6)
     expect(dialogue.firstElementChild).toHaveTextContent('You')
-    const stem = screen.getByText('Do you like …?', { exact: true })
+    const stem = screen.getByText('Ask about something your teacher likes.', {
+      exact: true,
+    })
     expect(stem).toBeVisible()
-    expect(getComputedStyle(stem.parentElement!.parentElement!).flex).not.toBe(
-      '1 1 0%',
+    expect(
+      screen.getByText('Answer and add one thing you like.', { exact: true }),
+    ).toBeVisible()
+    expect(
+      screen.getByText('Give your opinion, then ask back.', { exact: true }),
+    ).toBeVisible()
+    expect(visibleLayer('Do you like …?')).toHaveAttribute(
+      'aria-hidden',
+      'true',
     )
+    expect(
+      getComputedStyle(dialogue.firstElementChild!.lastElementChild!).flex,
+    ).not.toBe('1 1 0%')
     expect(screen.queryByText(/music|soccer|Your teacher is Kim/)).toBeNull()
-    expect(screen.queryByRole('button')).toBeNull()
+    expect(screen.getAllByRole('button')).toHaveLength(2)
+    const bulb = screen.getByRole('button', { name: 'Show next tip (1/3)' })
+    expect(
+      dialogue.compareDocumentPosition(bulb) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
+    fireEvent.click(bulb)
+    expect(
+      visibleLayer('Escolha um assunto e use Do you like para perguntar.'),
+    ).toHaveAttribute('aria-hidden', 'false')
+    expect(
+      visibleLayer(
+        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta.',
+      ),
+    ).toHaveAttribute('aria-hidden', 'true')
+    fireEvent.click(
+      screen.getByRole('button', { name: 'Show next model (1/3)' }),
+    )
+    expect(visibleLayer('Do you like …?')).toHaveAttribute(
+      'aria-hidden',
+      'false',
+    )
+    fireEvent.click(screen.getByRole('button', { name: 'Show next tip (2/3)' }))
+    expect(
+      visibleLayer(
+        'Use Yes, I do ou No, I don’t e acrescente algo de que você gosta.',
+      ),
+    ).toHaveAttribute('aria-hidden', 'false')
+    expect(
+      visibleLayer('I like … . / I don’t like … . And you?'),
+    ).toHaveAttribute('aria-hidden', 'true')
   })
 })
