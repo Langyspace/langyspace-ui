@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { MeetingFrame } from '../../../src/components/Device/MeetingFrame'
 import { MaterialTheme } from '../../materials/shared/MaterialTheme'
+import teacherScene from '../../materials/shared/assets/free-conversation-teacher63.webp'
+import learnerScene from '../../materials/shared/assets/free-conversation-learner63.webp'
 import { ana, kim } from '../../materials/shared/characterPortraits'
 
 const meta = {
@@ -40,6 +42,20 @@ export const LongNames: Story = {
   tags: ['layout-boundary', 'visual-review'],
 }
 export const Narrow: Story = {
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary', 'visual-review'],
+}
+
+export const IllustratedConversation: Story = {
+  args: {
+    layout: 'side-by-side',
+    main: { name: 'Teacher', imageUrl: teacherScene },
+    inset: { name: 'Student', imageUrl: learnerScene },
+  },
+  tags: ['visual-review'],
+}
+export const IllustratedNarrow: Story = {
+  ...IllustratedConversation,
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['layout-boundary', 'visual-review'],
 }

@@ -1,24 +1,8 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { renderToString } from 'react-dom/server'
-import { beforeEach, expect, it, vi } from 'vitest'
+import { expect, it, vi } from 'vitest'
 import { MeetingFrame } from '../../../src/components/Device/MeetingFrame'
 import { FreeConversationPage } from '../../../stories/materials/shared/FreeConversationPage'
-
-const context = vi.hoisted(() => ({
-  learner: undefined as { firstName: string; avatarUrl: string } | undefined,
-}))
-vi.mock('../../../stories/materials/shared/MaterialTeacherContext', () => ({
-  useMaterialTeacher: () => ({
-    name: 'Adriana Nogueira',
-    avatarUrl: '/teacher.webp',
-  }),
-}))
-vi.mock('../../../stories/materials/shared/MaterialLearnerContext', () => ({
-  useMaterialLearner: () => context.learner,
-}))
-beforeEach(() => {
-  context.learner = undefined
-})
 
 it('uses the meeting frame with two named participants and no simulated actions or device media', () => {
   render(<MeetingFrame main={{ name: 'Adriana' }} inset={{ name: 'You' }} />)
@@ -47,24 +31,47 @@ it('renders supplied participant photos and falls back safely after either photo
   expect(screen.getByText('Margarida')).toBeVisible()
 })
 
-it('keeps free conversation open, binds first names and returns a failed learner photo to You', () => {
-  context.learner = {
-    firstName: 'Margarida',
-    avatarUrl: 'https://example.com/learner.webp',
-  }
+it('shows an illustrated teacher and learner enjoying a free conversation with generic role labels', () => {
   const { container } = render(<FreeConversationPage />)
   expect(
     screen.getByRole('heading', { name: 'Free conversation' }),
   ).toBeVisible()
   expect(screen.getByText(/Choose any topic/)).toBeVisible()
-  expect(screen.getByText('Adriana')).toBeVisible()
-  expect(screen.getByText('Margarida')).toBeVisible()
-  expect(screen.queryByRole('button')).not.toBeInTheDocument()
-  fireEvent.error(
-    container.querySelector('img[src="https://example.com/learner.webp"]')!,
+  expect(screen.getByText('Teacher')).toBeVisible()
+  expect(screen.getByText('Student')).toBeVisible()
+  expect(
+    screen.getByRole('img', { name: /illustrated teacher smiling/i }),
+  ).toHaveAttribute(
+    'src',
+    expect.stringContaining('free-conversation-teacher63.webp'),
   )
-  expect(screen.getByText('You')).toBeVisible()
-  expect(screen.queryByText('Margarida')).not.toBeInTheDocument()
+  expect(
+    screen.getByRole('img', { name: /illustrated student smiling/i }),
+  ).toHaveAttribute(
+    'src',
+    expect.stringContaining('free-conversation-learner63.webp'),
+  )
+  expect(container.querySelectorAll('img')).toHaveLength(2)
+  expect(screen.queryByRole('button')).not.toBeInTheDocument()
+})
+
+it('keeps the two video-tile image fallbacks independent in the side-by-side layout', () => {
+  const failed = vi.fn()
+  render(
+    <MeetingFrame
+      layout="side-by-side"
+      main={{ name: 'Teacher', imageUrl: '/teacher.webp' }}
+      inset={{ name: 'Student', imageUrl: '/student.webp' }}
+      onParticipantImageError={failed}
+    />,
+  )
+  fireEvent.error(screen.getByRole('img', { name: 'Teacher' }))
+  expect(screen.queryByRole('img', { name: 'Teacher' })).not.toBeInTheDocument()
+  expect(screen.getByRole('img', { name: 'Student' })).toBeVisible()
+  fireEvent.error(screen.getByRole('img', { name: 'Student' }))
+  expect(screen.queryByRole('img')).not.toBeInTheDocument()
+  expect(failed).toHaveBeenNthCalledWith(1, 'main', '/teacher.webp')
+  expect(failed).toHaveBeenNthCalledWith(2, 'inset', '/student.webp')
 })
 
 it('server renders the static frame without browser media APIs', () => {
@@ -73,5 +80,20 @@ it('server renders the static frame without browser media APIs', () => {
   )
   expect(html).toContain('lsui-sc-meeting-frame')
   expect(html).toContain('Teacher')
+  expect(html).not.toContain('<button')
+})
+
+it('server renders both illustrated participants in reading order without browser device APIs', () => {
+  const html = renderToString(
+    <MeetingFrame
+      layout="side-by-side"
+      main={{ name: 'Teacher', imageUrl: '/teacher.webp' }}
+      inset={{ name: 'Student', imageUrl: '/student.webp' }}
+    />,
+  )
+  expect(html.match(/<img /g)).toHaveLength(2)
+  expect(html.indexOf('/teacher.webp')).toBeLessThan(
+    html.indexOf('/student.webp'),
+  )
   expect(html).not.toContain('<button')
 })

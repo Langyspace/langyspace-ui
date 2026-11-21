@@ -60,3 +60,8 @@ Ana (à esquerda, camiseta rosa e bola) e Kim (à direita, blusa azul e fones) s
 ## Mensagens da Ana no experimental A1 (feedback62)
 
 As duas gravações aprovadas são da mesma Ana e têm uma única saudação escrita antes da primeira. Ela está feliz, no parque com Kim, gosta de jogar futebol com os amigos, está de tênis e levou a bola. Kim está num banco com fones. As duas gostam de música; Ana não gosta de livros. Na continuação, Ana gosta de filmes em casa e de cachorros; Kim gosta de gatos. Ana está com fome, quer pizza e não gosta de salada. Esses fatos estão vinculados a esta atividade; não inferir preferências adicionais ou uma biografia fixa de outros contextos. O quadrinho ficou suspenso e não integra mais a aula.
+
+
+## Representação da conversa livre (feedback63)
+
+Kim e Ana aparecem como figuras ilustrativas de professora e aluna em uma conversa leve e divertida. Os rótulos Teacher/Student descrevem os papéis da cena, sem fixar profissão ou representar a identidade de usuárias reais. Assets e prompts ficam vinculados em shared/free-conversation63-image-provenance.json.

@@ -1,8 +1,7 @@
-import { useState } from 'react'
 import { MeetingFrame } from '../../../src/components/Device/MeetingFrame'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { useMaterialTeacher } from './MaterialTeacherContext'
-import { useMaterialLearner } from './MaterialLearnerContext'
+import teacherScene from './assets/free-conversation-teacher63.webp'
+import learnerScene from './assets/free-conversation-learner63.webp'
 
 export const freeConversationPageId = 'free-conversation'
 export const freeConversationTitle = 'Free conversation'
@@ -10,14 +9,6 @@ export const freeConversationInstruction =
   'Talk freely with your teacher in English. Choose any topic you both want to talk about'
 
 export function FreeConversationPage() {
-  const teacher = useMaterialTeacher()
-  const learner = useMaterialLearner()
-  const [failedLearnerPhoto, setFailedLearnerPhoto] = useState<string>()
-  const teacherName =
-    teacher.name === 'Your teacher'
-      ? teacher.name
-      : teacher.name.trim().split(/\s+/u)[0] || 'Your teacher'
-  const hasLearnerPhoto = learner && learner.avatarUrl !== failedLearnerPhoto
   return (
     <SlidePage
       width={{ mediaAspectRatio: 16 / 9 }}
@@ -27,13 +18,18 @@ export function FreeConversationPage() {
     >
       <MeetingFrame
         aria-label="Your conversation with your teacher"
-        main={{ name: teacherName, imageUrl: teacher.avatarUrl }}
-        inset={{
-          name: hasLearnerPhoto ? learner.firstName : 'You',
-          imageUrl: hasLearnerPhoto ? learner.avatarUrl : undefined,
+        layout="side-by-side"
+        main={{
+          name: 'Teacher',
+          imageUrl: teacherScene,
+          imageAlt:
+            'An illustrated teacher smiling and speaking during a relaxed conversation',
         }}
-        onParticipantImageError={(position, url) => {
-          if (position === 'inset') setFailedLearnerPhoto(url)
+        inset={{
+          name: 'Student',
+          imageUrl: learnerScene,
+          imageAlt:
+            'An illustrated student smiling and responding during the conversation',
         }}
       />
     </SlidePage>

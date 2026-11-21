@@ -11,6 +11,8 @@ export interface MeetingFrameProps extends Omit<
 > {
   main: MeetingParticipant
   inset: MeetingParticipant
+  /** Equal video tiles for a shared conversation; spotlight preserves the original inset frame. */
+  layout?: 'spotlight' | 'side-by-side'
   onParticipantImageError?: (
     position: 'main' | 'inset',
     imageUrl: string,
