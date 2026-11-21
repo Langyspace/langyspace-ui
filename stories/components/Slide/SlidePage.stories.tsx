@@ -1,3 +1,5 @@
+import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
+import { parkScene } from '../../materials/TrialA1/TrialA1.data'
 import { A103Lesson } from '../../materials/A103/A103Lesson'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
@@ -140,4 +142,30 @@ export const DialogueWithQuestions: Story = {
     instruction: 'Listen, then read with your teacher.',
   },
   tags: ['visual-review', 'layout-boundary'],
+}
+
+export const MediaColumn: Story = {
+  args: {
+    eyebrow: 'Picture talk',
+    title: 'What can you name in the park?',
+    instruction:
+      'Try to name every item before opening the dots. Click each dot to check your answer.',
+    width: { mediaAspectRatio: parkScene.width / parkScene.height },
+    children: (
+      <SceneExplorer
+        imageUrl={parkScene.src}
+        imageAlt="A park scene"
+        imageSizing="presentation"
+        hotspots={[]}
+        visitedIds={[]}
+        onSelect={() => {}}
+        labels={{ initial: '' }}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const MediaColumnNarrow: Story = {
+  ...MediaColumn,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
 }

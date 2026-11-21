@@ -1,5 +1,6 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { presentationMedia } from '../../foundations/layout/presentationMedia'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import type { SlidePageProps } from './SlidePage.types'
 
@@ -53,7 +54,29 @@ export const Content = styled.div<{
   gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$layout === 'split' ? recipe(p).introductionWidth : p.$width === 'expanded' ? recipe(p).introductionWidth : p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
+  max-width: ${(p) => {
+    const sizes = recipe(p)
+    if (p.$layout === 'split') return sizes.introductionWidth
+    if (p.$width && typeof p.$width === 'object') {
+      const ratio = p.$width.mediaAspectRatio
+      return Number.isFinite(ratio) && ratio > 0
+        ? `min(${sizes.introductionWidth}, calc(${presentationMedia.viewportHeight} * ${ratio}), calc(${presentationMedia.maximumHeight} * ${ratio}))`
+        : sizes.wideWidth
+    }
+    return p.$width === 'expanded'
+      ? sizes.introductionWidth
+      : p.$width === 'focused'
+        ? sizes.focusedWidth
+        : p.$width === 'standard'
+          ? sizes.standardWidth
+          : p.$width === 'reading'
+            ? sizes.readingWidth
+            : p.$width === 'exercise'
+              ? sizes.exerciseWidth
+              : p.$width === 'conversation'
+                ? sizes.conversationWidth
+                : sizes.wideWidth
+  }};
   margin-inline: auto;
   > [data-slide-introduction] {
     min-width: 0;

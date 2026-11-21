@@ -1,5 +1,6 @@
 import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { presentationMedia } from '../../foundations/layout/presentationMedia'
 import { Pressable } from '../Pressable'
 import * as Common from './Material.shared.styles'
 export const Root = styled(Common.Stack).withConfig({
@@ -20,7 +21,10 @@ export const Scene = styled.div<{ $gutter: number; $bounded: boolean }>`
       p.$bounded
         ? css`
             height: auto;
-            max-height: min(54cqh, 32rem);
+            max-height: min(
+              ${presentationMedia.viewportHeight},
+              ${presentationMedia.maximumHeight}
+            );
             object-fit: contain;
           `
         : undefined}

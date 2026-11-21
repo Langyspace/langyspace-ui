@@ -192,3 +192,9 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Apresentação pessoal, prática e conversa aberta da experimental seguem a referência “Do you like the park?”: LearningDialogue density="compact", apresentação dialogue e largura content. Não forçar paired ou fill só por serem perguntas/respostas ou começos curtos.
 - Na ajuda sequencial, somente o texto visível dimensiona o balão. Dicas e modelos ocultos continuam montados/inertes para preservar o estado, mas fora do layout; não deixam largura vazia à direita nem altura extra. O próprio texto pode redimensionar naturalmente o balão quando revelado. Não alterar a reserva de geometria de outros modos sem pedido.
+
+## Largura pertence à composição — feedback54
+
+- O cabeçalho e o corpo pertencem a uma mesma coluna ou grade. Props podem escolher a largura do conjunto; não usar uma largura solta para o título nem compensar desalinhamento com margens/paddings locais.
+- Numa única cena limitada por altura, a largura da coluna considera a proporção real do asset e os mesmos limites de altura da imagem: SlidePage width={{mediaAspectRatio: imageWidth / imageHeight}} com SceneExplorer imageSizing="presentation". Registrar as dimensões intrínsecas junto do asset. A imagem inteira, o título e a instrução compartilham a largura, inclusive em alturas de tela diferentes.
+- Em grades com cabeçalho acima das colunas, ele acompanha a largura total da grade, não uma imagem isolada. O layout split mantém sua coluna de introdução ao lado do exercício, conforme seu contrato explícito. A adaptação fica no componente de layout compartilhado, com presets anteriores preservados e fallback seguro para dimensões inválidas.

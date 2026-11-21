@@ -4,7 +4,7 @@ import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell } from '../shared/LessonShell'
 import type { TrialA1LessonProps } from './TrialA1.types'
-import { content, order } from './TrialA1.data'
+import { content, order, parkScene } from './TrialA1.data'
 import {
   GreetingSection,
   PictureTalkSection,
@@ -46,7 +46,9 @@ export function TrialA1Lesson({
                 label: content.p2.title,
                 content: (
                   <SlidePage
-                    width="expanded"
+                    width={{
+                      mediaAspectRatio: parkScene.width / parkScene.height,
+                    }}
                     eyebrow="Picture talk"
                     title={content.p2.title}
                     instruction={content.p2.ins}

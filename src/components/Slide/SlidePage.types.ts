@@ -27,6 +27,8 @@ export interface SlidePageProps extends Omit<
     | 'exercise'
     | 'conversation'
     | 'expanded'
+    /** Single presentation media: header and body share its fitted width. Split/questions layouts retain their total composition width. */
+    | { mediaAspectRatio: number }
   density?: 'regular' | 'compact' | 'dense'
   tone?: 'default' | 'inverse'
 }

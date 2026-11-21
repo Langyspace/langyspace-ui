@@ -96,3 +96,9 @@ not establish it.
 ### SlidePage — dialogue comprehension (feedback37)
 
 `questions?: ReactNode` places comprehension beside the main body: dialogue left, questions right. `questionsTitle?: ReactNode` defaults to Questions. With this slot the content expands to the wide presentation width and stacks at the existing medium container breakpoint. Both columns are normal page content, without an inner scroll area. Keep the existing title/titleAudio/instruction slots, and distribute questions according to the meaningful parts of a long dialogue. Do not render a duplicate standalone question page. The A103 Storybook examples expose real content, reveal controls and narrow-container states; product-owner review remains pending.
+
+## A shared column for presentation media
+
+For a single bounded scene, `SlidePage width={{mediaAspectRatio: imageWidth / imageHeight}}` constrains the common header/body column to the media’s fitted width. Use intrinsic asset dimensions and `SceneExplorer imageSizing="presentation"`. Both components consume the same presentationMedia height bounds from foundations; heading and image therefore share a width before the image loads, without DOM measurements or local margin adjustments.
+
+The column remains centered, respects available horizontal space and the existing expanded width ceiling. Invalid/zero/non-finite ratios fall back to the standard wide column. Existing width presets remain compatible. Question grids retain their full-width heading above the composition. Split introductions retain their intentionally separate heading column beside the exercise. Media fitting does not alter either layout. The TrialA1 park page is the first adoption; no unrelated page migration is implied.
