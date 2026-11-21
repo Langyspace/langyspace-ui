@@ -201,29 +201,5 @@
         "question": "Do you like salad?"
       }
     ]
-  },
-  "p5": {
-    "ins": "Choose a topic. Ask a question and keep talking.",
-    "qs": [
-      ["🎧", "Do you like music?"],
-      ["🍿", "Do you like movies?"],
-      ["📖", "Do you like books?"],
-      ["⚽", "Do you like soccer?"],
-      ["🍕", "Do you like pizza?"],
-      ["🐶", "Do you like dogs?"]
-    ],
-    "go": [
-      ["🎧", "What music do you like?"],
-      ["🍿", "What movies do you like?"]
-    ],
-    "strip": ["Yes, I do.", "No, I don’t.", "I like …", "And you?", "Me too!"]
-  },
-  "p6": [
-    "My name is …",
-    "I’m from …",
-    "I like …",
-    "I don’t like …",
-    "Do you like …?",
-    "And you?"
-  ]
+  }
 }

@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'ComicRolePlay',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/ComicRolePlay.tsx',
+    runtimeMarker: 'lsui-sc-comic-role-play',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ComicRolePlay.stories.tsx',
+      title: 'Exercise/ComicRolePlay',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ComicRolePlay.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/ComicRolePlay.types.ts',
+      documentation: {
+        path: 'docs/components/comic-role-play.md',
+        anchor: 'comicroleplay',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'ImageSortBoard',
     interactive: true,
     visual: true,

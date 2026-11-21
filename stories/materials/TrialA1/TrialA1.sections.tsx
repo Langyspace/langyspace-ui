@@ -6,7 +6,6 @@ import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { ana, kim } from '../shared/characterPortraits'
-import { SourceQuestions } from '../shared/LessonPractice'
 import type { TrialA1PictureTalkProps } from './TrialA1.types'
 import { useTrialA1Audio } from './useTrialA1Audio'
 import { content, pictures } from './TrialA1.data'
@@ -144,28 +143,5 @@ export function ComprehensionSection() {
         answer,
       }))}
     />
-  )
-}
-export function ConversationSection() {
-  return (
-    <PromptExercise
-      items={content.p5.qs.map(([, prompt = ''], index) => ({
-        id: String(index),
-        prompt,
-        answer: 'Yes, I do. / No, I don’t. I like … And you?',
-      }))}
-    />
-  )
-}
-export function TodaySection() {
-  return (
-    <T.Summary>
-      {content.p6.map((text, i) => (
-        <S.Question as="li" key={text}>
-          <S.Number>{i + 1}</S.Number>
-          <div>{text}</div>
-        </S.Question>
-      ))}
-    </T.Summary>
   )
 }

@@ -1,4 +1,6 @@
 import { LikesBoardSection } from './TrialA1LikesBoard'
+import { TrialA1Comic } from './TrialA1Comic'
+import { comicTitle, comicInstruction } from './TrialA1Comic.data'
 import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
 import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
@@ -7,12 +9,7 @@ import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell } from '../shared/LessonShell'
 import type { TrialA1LessonProps } from './TrialA1.types'
 import { content, order, parkScene } from './TrialA1.data'
-import {
-  GreetingSection,
-  PictureTalkSection,
-  ConversationSection,
-  TodaySection,
-} from './TrialA1.sections'
+import { GreetingSection, PictureTalkSection } from './TrialA1.sections'
 export function TrialA1Lesson({
   initialPageId,
   levelLabel = 'A1',
@@ -106,14 +103,16 @@ export function TrialA1Lesson({
             if (id === 's5')
               return {
                 id,
-                label: 'Your turn to ask',
+                label: comicTitle,
                 content: (
                   <SlidePage
-                    eyebrow="Conversation"
-                    title="Your turn to ask"
-                    instruction={content.p5.ins}
+                    width={{ mediaAspectRatio: 1.4 }}
+                    density="compact"
+                    eyebrow="Role-play"
+                    title={comicTitle}
+                    instruction={comicInstruction}
                   >
-                    <ConversationSection />
+                    <TrialA1Comic />
                   </SlidePage>
                 ),
               }
@@ -123,20 +122,7 @@ export function TrialA1Lesson({
                 label: 'Next steps',
                 content: <TrialNextSteps materialKey="trial-a1-a2" />,
               }
-            return {
-              id,
-              label: 'What can you say now?',
-              content: (
-                <SlidePage
-                  width="reading"
-                  eyebrow="Review"
-                  title="What can you say now?"
-                  instruction="Complete two sentences with new ideas. Finish with a question for your teacher."
-                >
-                  <TodaySection />
-                </SlidePage>
-              ),
-            }
+            throw new Error(`Unknown TrialA1 page: ${id}`)
           })
         }
       />

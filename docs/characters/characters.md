@@ -50,3 +50,8 @@ Ao criar/revisar uma aula, ler esta ficha e atualizar apenas o fato novo confirm
 **Feedback43 — B1.01:** a pintura da sala/cozinha e a viagem de Kim continuam os fatos do diálogo existente. Os cartões Monday/Wednesday/Saturday do role-play são uma simulação temporária de atividades, duração e companhia. Não deduzir deles uma rotina fixa, novo parentesco ou preferência de Kim. As imagens de pistas são ilustrativas; não identificam a pessoa retratada como Kim.
 
 **Feedback44 — B2/C1:** a viagem de Ana a Nova York e os fatos do jantar/áudio de Raj foram preservados. Missed train / Locked out são cenários hipotéticos da aluna, não eventos biográficos de Ana. Project updates / Meeting discussions são simulações de feedback, não novos hábitos atribuídos a Raj. A frase de learning curve agora se refere a um novo papel genérico, sem estabelecer promoção de Ana. A preferência de Raj por falar sozinho e o convite de Laura para Ana são informações distintas; emoções permanecem interpretações, não diagnósticos.
+
+
+## Cena hipotética — quadrinhos do experimental A1 (feedback60)
+
+Ana (à esquerda, camiseta rosa e bola) e Kim (à direita, blusa azul e fones) se encontram no parque, se apresentam, conversam sobre interesses e se despedem. São atores visuais para uma conversa criada pela aluna e pela professora. Os exemplos opcionais não fixam preferências, nomes dos participantes reais ou novos fatos biográficos. Reutilizar as identidades documentadas; não inferir uma amizade permanente a partir do título do exercício.

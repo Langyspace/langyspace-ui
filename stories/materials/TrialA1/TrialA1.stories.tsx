@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Dez páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
+          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -42,34 +42,19 @@ export const PictureTalk: Story = {
   },
 }
 export const ListenAndTalk: Story = { args: { initialPageId: 's3' } }
-export const MoviesOrMusic: Story = {
-  args: { initialPageId: 's41' },
-  play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's41'),
-      a = c.getByRole('button', { name: 'movies' }),
-      b = c.getByRole('button', { name: 'music' })
-    await userEvent.click(a)
-    await expect(a).toHaveAttribute('aria-pressed', 'true')
-    await userEvent.click(b)
-    await expect(a).toHaveAttribute('aria-pressed', 'false')
-    await userEvent.click(b)
-    await expect(b).toHaveAttribute('aria-pressed', 'false')
-  },
-}
-export const DogsOrCats: Story = { args: { initialPageId: 's42' } }
-export const PizzaOrSalad: Story = { args: { initialPageId: 's43' } }
-export const Conversation: Story = {
+export const LikesAndDislikes: Story = { args: { initialPageId: 's4' } }
+export const ComicConversation: Story = {
   args: { initialPageId: 's5' },
+  tags: ['visual-review'],
   play: async ({ canvasElement }) => {
-    const c = await lessonCanvas(canvasElement, 's5'),
-      q = c.getByRole('button', { name: 'Do you like music?' })
-    await userEvent.click(q)
-    await expect(q).toHaveAttribute('aria-pressed', 'true')
-    await userEvent.click(q)
-    await expect(q).toHaveAttribute('aria-pressed', 'false')
+    const c = await lessonCanvas(canvasElement, 's5')
+    await expect(c.getByText('A new friend at the park')).toBeVisible()
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show next speaking tip' }),
+    )
+    await expect(c.getByText('Cumprimente')).toBeVisible()
   },
 }
-export const TodayYouSaid: Story = { args: { initialPageId: 's6' } }
 
 export const SharedA1A2: Story = { args: { levelLabel: 'A1 · A2' } }
 

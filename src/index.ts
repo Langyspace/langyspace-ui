@@ -512,6 +512,14 @@ export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton.t
 
 export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
 export { ImageSortBoard } from './components/Exercise/ImageSortBoard'
+export { ComicRolePlay } from './components/Exercise/ComicRolePlay'
+export type {
+  ComicRolePlayProps,
+  ComicPanel,
+  ComicParticipant,
+  ComicTurn,
+  ComicGuidance,
+} from './components/Exercise/ComicRolePlay.types'
 export type {
   ImageSortBoardProps,
   ImageSortItem,
