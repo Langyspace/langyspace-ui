@@ -52,13 +52,13 @@ function A101LessonContent({
     if (id === 's1')
       return {
         id,
-        label: 'Vocabulary · Guess the word',
+        label: 'Vocabulary · Feelings',
         content: (
           <Styled.VocabularyPage
             width="expanded"
             eyebrow="A1 LESSON 01"
-            title="Introduce yourself"
-            instruction="Look at the pictures. Guess the words."
+            title="Feelings"
+            instruction="Name each feeling, then click to check and listen"
           >
             <Styled.IntroVocabulary>
               <VocabularySection
@@ -94,13 +94,13 @@ function A101LessonContent({
     if (id === 's4')
       return {
         id,
-        label: 'Vocabulary · Guess the country',
+        label: 'Vocabulary · Countries',
         content: (
           <SlidePage
             width="standard"
             eyebrow="Vocabulary"
-            title="Where are you from?"
-            instruction="Name the countries. Where are you from?"
+            title="Countries"
+            instruction="Name each country, then click to check and listen"
           >
             <VocabularySection items={countries} speak={speech.speak} />
           </SlidePage>
@@ -174,13 +174,13 @@ function A101LessonContent({
     if (id === 's72')
       return {
         id,
-        label: 'Grammar · Negative and questions',
+        label: 'Grammar · Be: negatives and questions',
         content: (
           <SlidePage
             width="wide"
             eyebrow="Grammar"
-            title="Verb to be"
-            instruction="Negatives and questions"
+            title="Be: negatives and questions"
+            instruction="See how be changes in negatives and questions"
           >
             <GrammarNegative />
           </SlidePage>
@@ -219,12 +219,12 @@ function A101LessonContent({
     if (id === 's75')
       return {
         id,
-        label: 'Speaking · Now you',
+        label: 'Speaking · Introduce yourself',
         content: (
           <SlidePage
             width="standard"
             eyebrow="Speaking"
-            title="Now you!"
+            title="Introduce yourself"
             instruction="Introduce yourself in 30 seconds."
           >
             <SpeakingTimer key={pageId} active={pageId === id} />
@@ -240,7 +240,7 @@ function A101LessonContent({
             width="wide"
             eyebrow="Speaking"
             title="True for you?"
-            instruction="Is it true for you? If not, correct it."
+            instruction="Read each sentence. Change it if it is not true for you"
           >
             <TrueForYou />
           </SlidePage>
@@ -249,13 +249,13 @@ function A101LessonContent({
     if (id === 's17')
       return {
         id,
-        label: 'Practice · Match',
+        label: 'Practice · Match questions and answers',
         content: (
           <SlidePage
             width="wide"
             eyebrow="Practice"
-            title="Questions & answers"
-            instruction="Match the questions and answers. Read aloud."
+            title="Match questions and answers"
+            instruction="Find each pair, then read it aloud"
           >
             <MatchingSection />
           </SlidePage>
@@ -287,7 +287,7 @@ function A101LessonContent({
             width="standard"
             eyebrow="Listening"
             title="A message from Kim"
-            instruction="Listen to Kim’s message and answer."
+            instruction="Listen to Kim, then reply with how you feel"
           >
             <VoiceMessageDemo
               contact={{
@@ -331,13 +331,13 @@ function A101LessonContent({
     if (id === 's18')
       return {
         id,
-        label: 'Practice · Make it a question',
+        label: 'Practice · Ask questions with be',
         content: (
           <SlidePage
             width="exercise"
             eyebrow="Practice"
-            title="Questions"
-            instruction="Make a question."
+            title="Ask questions with be"
+            instruction="Turn each statement into a question"
           >
             <MakeQuestions />
           </SlidePage>
@@ -346,14 +346,14 @@ function A101LessonContent({
     if (['s15', 's151', 's152'].includes(id))
       return {
         id,
-        label: 'Conversation · Let’s talk',
+        label: `Conversation · ${id === 's15' ? 'Names and feelings' : id === 's151' ? 'People and places' : 'Pets and birthdays'}`,
         content: (
           <SlidePage
             width="conversation"
             eyebrow="Conversation"
             title={
               id === 's15'
-                ? 'Let’s talk!'
+                ? 'Names and feelings'
                 : id === 's151'
                   ? 'People and places'
                   : 'Pets and birthdays'

@@ -91,7 +91,7 @@ export function A105Lesson({
   const pages = [
     ask(
       's1',
-      'At the street market',
+      'Fruit and shopping',
       'Talk about fruit and where you buy it.',
       prompts.warmup,
       'A1 LESSON 05 · Warm up',
@@ -113,7 +113,7 @@ export function A105Lesson({
     ask(
       's3',
       'What do you like?',
-      'Choose, answer and ask your teacher.',
+      'Say which fruit you like, then ask your teacher',
       prompts.preferences,
     ),
     {
@@ -138,7 +138,7 @@ export function A105Lesson({
           width="exercise"
           eyebrow="Grammar"
           title="Like and likes"
-          instruction="Compare the forms. Make your own examples."
+          instruction="Compare like and likes in statements, negatives and questions"
         >
           <LikeGrammar />
         </SlidePage>
@@ -148,7 +148,7 @@ export function A105Lesson({
     dialoguePage('s8', 'At the market with Kim', true),
     ask(
       's82',
-      'Personal questions',
+      'Food in your family',
       'Answer about yourself. Ask your teacher too.',
       prompts.personal,
       'Guided conversation',
@@ -177,8 +177,8 @@ export function A105Lesson({
     ),
     ask(
       's10',
-      'Make it correct',
-      'Correct each sentence. Then make it true for you.',
+      'Correct the sentences',
+      'Correct the verb in each sentence',
       prompts.review,
       'Practice',
     ),
@@ -199,7 +199,7 @@ export function A105Lesson({
     },
     ask(
       's111',
-      'Let’s talk!',
+      'Food and shopping',
       'Ask and answer. Add one detail.',
       prompts.conversation,
       'Conversation',

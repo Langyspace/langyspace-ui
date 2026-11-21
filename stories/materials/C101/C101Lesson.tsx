@@ -31,7 +31,7 @@ export const c101PageIds = content.order
 const pageInfo: Record<string, [string, string, string]> = {
   s1: [
     'C1 · Lesson 01',
-    'It tends to come across as …',
+    'Giving and receiving feedback',
     'Share experiences of giving and receiving difficult feedback.',
   ],
   s2: [
@@ -86,7 +86,7 @@ const pageInfo: Record<string, [string, string, string]> = {
   ],
   s7: [
     'Grammar',
-    'Softer, please',
+    'Constructive feedback',
     'Explore two goals: describe the effect and ask for a change.',
   ],
   s8: [

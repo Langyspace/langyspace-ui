@@ -43,6 +43,8 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 
 ## Histórico
 
+- **21/11/2026 — feedback57, títulos e instruções:** o catálogo nomeia a aula; o cabeçalho situa a atividade. Uma abertura sobre nome, origem e sentimentos se chama “Introduce yourself”, mesmo numa aula chamada “What do you like?”. Usar um título específico e um único subtítulo breve que explique o que a aluna faz, com quem e com qual informação. Preservar títulos contextuais adequados de conversas e mensagens; não converter todos em comandos. Não copiar instruções entre tarefas diferentes nem prometer uma etapa ou interação ausente. A revisão do cabeçalho não altera perguntas, modelos ou falas gravadas. Manter título, rótulo de navegação e contexto acessível coerentes na copy recebida pelos componentes canônicos, sem criar layout ou formatter por título. Aplicado às 14 aulas mantidas em staging; nomes do catálogo, sequência, exercícios, mídia e produção preservados.
+
 - **20/11/2026 — feedback32 A1.05:** objetos de vocabulary transparentes; mínimo de seis falas; respostas abertas sem rolagem desnecessária; verde do tema; lacunas proporcionais; role-play visual com dólares e controles de dicas/modelo; prevenção de avanço por inércia. Consolida também os padrões já aprovados de A1.01/A2.01/A1.05/A1.02.
 
 - **20/11/2026 — feedback33 A1.05:** pistas de Kim’s list passaram a “a fruit”, sem predeterminar maçã ou manga; o modelo opcional continua sendo um exemplo.

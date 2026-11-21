@@ -85,9 +85,13 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
         'The things you talk about in a meeting. Look at the picture and say the word.'
       element = <Vocabulary media={media} />
     } else if (['s31', 's32', 's33'].includes(id)) {
-      title = 'Choose the correct answer.'
+      title = [
+        'A problem on mobile',
+        'Kim’s progress update',
+        'Kim’s JavaScript experience',
+      ][Number(id.slice(2)) - 1]!
       eyebrow = 'Warm up'
-      instruction = 'Read the question and choose. Then it’s your turn.'
+      instruction = 'Look at the information and choose the correct answer'
       element = <WarmUp index={Number(id.slice(2)) - 1} media={media} />
     } else if (id === 's4') {
       title = 'Your work with the web'
@@ -126,13 +130,14 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
     } else if (id === 's7') {
       title = 'I’ve fixed it, I fixed it yesterday'
       eyebrow = 'Grammar'
-      instruction = 'Say the words before you click the line.'
+      instruction =
+        'Compare completed work, unfinished work, duration and finished past times'
       element = <Grammar media={media} />
     } else if (id === 's8') {
       title = 'Your bug, with Ana'
       eyebrow = 'Your version'
       instruction =
-        'The same talk, with a bug from your work. No tech job yet? Talk about a course project, or invent.'
+        'Tell Ana about a bug from your work or a course project. You can invent the details'
       element = <YourVersion media={media} />
     } else if (id === 's9') {
       title = 'A message from Leo'

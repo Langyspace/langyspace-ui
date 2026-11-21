@@ -75,17 +75,17 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's1')
       return {
         id,
-        label: 'Review · Last class',
+        label: 'Review · Make plans',
         content: (
           <S.Page
             layout="split"
             title={
               <>
-                What have you <em>been doing?</em>
+                Make <em>plans</em>
               </>
             }
             eyebrow="B1 · Lesson 01"
-            instruction="Make plans with your teacher before catching up."
+            instruction="Invite your teacher to do something and agree on a day"
           >
             <SourceQuestions
               items={[
@@ -148,11 +148,11 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's4')
       return {
         id,
-        label: 'Now you · Lately',
+        label: 'Now you · Your recent activities',
         content: (
           <S.Page
             eyebrow="Now you"
-            title="Lately"
+            title="Your recent activities"
             instruction="Talk about your week and ask a follow-up question."
           >
             <SourceQuestions
@@ -227,13 +227,13 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
     if (id === 's7')
       return {
         id,
-        label: 'Grammar · Been doing or done?',
+        label: 'Grammar · Activity or finished result?',
         content: (
           <S.Page
             density="dense"
             eyebrow="Grammar"
-            title="Been doing or done?"
-            instruction="One situation. Two ways to talk about it."
+            title="Activity or finished result?"
+            instruction="Compare a recent activity with a finished result"
           >
             <GrammarSection />
           </S.Page>

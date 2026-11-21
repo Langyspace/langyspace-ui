@@ -24,6 +24,13 @@ import { useLessonSpeech } from './useLessonSpeech'
 import * as S from './A201.styles'
 import type { A201LessonProps } from './A201.types'
 
+const conversationTitles = [
+  'Right now',
+  'Today and these days',
+  'You, your family and friends',
+  'Life this week',
+] as const
+
 export function A201Lesson({ initialPageId }: A201LessonProps) {
   const [pageId, setPageId] = useLessonPage(initialPageId, 'a2-01', order)
   const notePopup = useLessonNotesPopup('langy-notes:a2-01')
@@ -35,12 +42,12 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
     if (id === 's1')
       return {
         id,
-        label: 'Vocabulary · What Are You Doing?',
+        label: 'Vocabulary · Everyday actions',
         content: (
           <S.VocabularyPage
             width="expanded"
             eyebrow="A2 LESSON 01"
-            title={content.title}
+            title="Everyday actions"
             instruction="Look at the pictures. Guess the actions."
           >
             <S.VocabularyBody>
@@ -159,13 +166,13 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
     if (id === 's14')
       return {
         id,
-        label: 'Guided conversation · Personal Questions',
+        label: 'Guided conversation · Your routine and today',
         content: (
           <SlidePage
             width="reading"
             eyebrow="Guided conversation"
-            title="Personal questions"
-            instruction="Answer the questions about yourself."
+            title="Your routine and today"
+            instruction="Compare your usual routine with what you’re doing these days"
           >
             <PromptExercise
               items={prompts(content.personal, 'emma-lucas.personal')}
@@ -206,13 +213,13 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
     if (number >= 16 && number <= 19)
       return {
         id,
-        label: `Conversation · Questions ${(number - 16) * 5 + 1}–${(number - 15) * 5}`,
+        label: `Conversation · ${conversationTitles[number - 16]}`,
         content: (
           <SlidePage
             width="conversation"
             eyebrow="Conversation"
-            title="Let's Talk!"
-            instruction={`Questions ${(number - 16) * 5 + 1}–${(number - 15) * 5}. Ask and answer. Give details.`}
+            title={conversationTitles[number - 16]}
+            instruction="Answer the questions, give details and ask your teacher too"
           >
             <ConversationSection index={number - 16} />
           </SlidePage>

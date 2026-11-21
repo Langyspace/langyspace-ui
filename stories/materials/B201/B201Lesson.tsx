@@ -51,11 +51,11 @@ function B201LessonContent({ initialPageId }: LessonProps) {
           if (id === 's1')
             return {
               id,
-              label: 'Review · Dead phone, no charger',
+              label: 'Review · When a journey goes wrong',
               content: (
                 <SlidePage
                   eyebrow="Review"
-                  title="Dead phone, no charger"
+                  title="When a journey goes wrong"
                   instruction="Talk about journeys that did not go to plan."
                 >
                   <SourceQuestions items={review} />
@@ -103,12 +103,12 @@ function B201LessonContent({ initialPageId }: LessonProps) {
           if (id === 's4')
             return {
               id,
-              label: 'Vocabulary · Expressions',
+              label: 'Vocabulary · Travel expressions',
               content: (
                 <SlidePage
                   eyebrow="Vocabulary"
                   width="expanded"
-                  title="Expressions"
+                  title="Travel expressions"
                   instruction="Say the expression, then click to reveal and listen."
                 >
                   <WordTableSection active={activeId === id} />
@@ -196,13 +196,13 @@ function B201LessonContent({ initialPageId }: LessonProps) {
           if (id === 's7')
             return {
               id,
-              label: 'Grammar · What had been happening?',
+              label: 'Grammar · Before a past event',
               content: (
                 <SlidePage
                   eyebrow="Grammar"
                   width="expanded"
-                  title="What had been happening?"
-                  instruction="Start at a past event. Look back to what happened before it."
+                  title="Before a past event"
+                  instruction="Compare earlier actions, ongoing activities and the event itself"
                 >
                   <WordTableSection grammar />
                 </SlidePage>

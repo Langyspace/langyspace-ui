@@ -117,14 +117,14 @@ export function A102Lesson({
   const pages = [
     {
       id: 's1',
-      label: 'A1.02 · Your name and number',
+      label: 'Review · Say hello',
       content: (
         <SlidePage
           width="exercise"
           density="compact"
           eyebrow="A1 LESSON 02"
-          title="Your name and number"
-          instruction="Say hello. Tell your teacher about yourself."
+          title="Say hello"
+          instruction="Say your name, where you’re from and how you feel. Then ask your teacher"
         >
           <ContactIntroduction />
         </SlidePage>
@@ -162,13 +162,13 @@ export function A102Lesson({
     audioChoice('s5', 1),
     {
       id: 's6',
-      label: 'Vocabulary · Spell a name',
+      label: 'Vocabulary · The alphabet',
       content: (
         <SlidePage
           width="wide"
           density="compact"
           eyebrow="Vocabulary"
-          title="Spell a name"
+          title="The alphabet"
           instruction="Click a letter to listen. Then spell your name."
         >
           <AlphabetReference speech={speech} />
@@ -209,13 +209,13 @@ export function A102Lesson({
     },
     {
       id: 's13',
-      label: 'Speaking · Spell your name',
+      label: 'Speaking · Register for a class',
       content: (
         <SlidePage
           width="exercise"
           density="compact"
           eyebrow="Speaking"
-          title="Spell your name"
+          title="Register for a class"
           instruction="You’re joining an English class. Spell your name and give your number."
         >
           <ContactPractice />

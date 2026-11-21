@@ -28,13 +28,13 @@ export function TrialA1Lesson({
             if (id === 's1')
               return {
                 id,
-                label: content.title,
+                label: content.p1.title,
                 content: (
                   <SlidePage
                     width="focused"
                     eyebrow="Warm up"
-                    title={content.title}
-                    instruction="Get to know each other. Answer, then ask your teacher."
+                    title={content.p1.title}
+                    instruction={content.p1.ins}
                   >
                     <GreetingSection />
                   </SlidePage>
@@ -78,7 +78,7 @@ export function TrialA1Lesson({
                     title={title}
                     instruction={
                       independent
-                        ? 'Get to know each other. Answer, then ask your teacher.'
+                        ? 'Choose a topic. Ask your teacher, answer and ask back'
                         : 'Answer your teacher about yourself. Ask back when you can.'
                     }
                   >
