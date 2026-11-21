@@ -9,7 +9,10 @@ export interface LearningDialogueGap {
 export interface LearningDialogueLine {
   id: string
   speaker: string
+  /** Marks the real learner rather than an authored fictional speaker. */
+  participant?: 'learner'
   avatarUrl?: string
+  initials?: string
   side: 'start' | 'end'
   content: ReactNode
   /** Challenge cues and optional short language supports for oral role-play. */
@@ -27,6 +30,8 @@ export interface LearningDialogueProps extends Omit<
   'onPlay'
 > {
   lines: readonly LearningDialogueLine[]
+  /** Optional product-resolved identity; a usable first name and photo are both required. */
+  learnerIdentity?: { firstName: string; avatarUrl: string }
   /** Controlled challenge: cues first, bulb for tips, eye for the model dialogue. */
   guidance?: {
     level: 'cue' | 'hint' | 'full'

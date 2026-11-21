@@ -82,6 +82,7 @@ export function GuidedConversation({
                 {
                   id: `${turn.id}-learner`,
                   speaker: labels.learner,
+                  participant: 'learner',
                   side: 'end',
                   content: <S.Cue>{turn.cue}</S.Cue>,
                 },

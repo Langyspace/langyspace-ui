@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { MaterialLearningDialogue as LearningDialogue } from '../shared/MaterialLearningDialogue'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'

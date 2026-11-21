@@ -1,3 +1,4 @@
+import { MaterialLearnerProvider } from '../shared/MaterialLearnerContext'
 import { MaterialTeacherProvider } from '../shared/MaterialTeacherContext'
 import { NotesHostProvider } from '../shared/NotesHostContext'
 import { MaterialTheme } from '../shared/MaterialTheme'
@@ -63,10 +64,15 @@ export function MaterialApp({
       <Suspense fallback={<p role="status">Carregando material…</p>}>
         <NotesHostProvider materialKey={materialKey}>
           <MaterialTeacherProvider materialKey={materialKey}>
-            <MaterialView
+            <MaterialLearnerProvider
+              key={materialKey}
               materialKey={materialKey}
-              studentPortalOrigin={studentPortalOrigin}
-            />
+            >
+              <MaterialView
+                materialKey={materialKey}
+                studentPortalOrigin={studentPortalOrigin}
+              />
+            </MaterialLearnerProvider>
           </MaterialTeacherProvider>
         </NotesHostProvider>
         <Ready materialKey={materialKey} />

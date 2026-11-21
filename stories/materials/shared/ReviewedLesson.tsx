@@ -8,7 +8,7 @@ import type { RevealGuidanceLevel } from '../../../src/components/Exercise/Revea
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { Avatar } from '../../../src/components/Avatar/Avatar'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'

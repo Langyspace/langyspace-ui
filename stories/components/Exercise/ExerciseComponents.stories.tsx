@@ -1,3 +1,4 @@
+import { ana as learnerPortrait } from '../../materials/shared/characterPortraits'
 import { letters as alphabetLetters } from '../../materials/A102/A102.data'
 import { useLessonSpeech as useAlphabetSpeech } from '../../materials/A102/useLessonSpeech'
 import { useState } from 'react'
@@ -548,4 +549,48 @@ function CompleteAlphabetPreview() {
 export const CompleteAlphabetReference: Story = {
   render: () => <CompleteAlphabetPreview />,
   tags: ['visual-review'],
+}
+
+export const LearnerWithPhoto: Story = {
+  render: () => (
+    <LearningDialogue
+      learnerIdentity={{ firstName: 'Marina', avatarUrl: learnerPortrait }}
+      lines={[
+        {
+          id: 'teacher',
+          speaker: 'Teacher',
+          side: 'start',
+          content: 'What’s your name?',
+        },
+        {
+          id: 'learner',
+          speaker: 'You',
+          participant: 'learner',
+          side: 'end',
+          content: 'My name is Marina.',
+        },
+      ]}
+    />
+  ),
+}
+export const LearnerWithoutPhoto: Story = {
+  render: () => (
+    <LearningDialogue
+      lines={[
+        {
+          id: 'teacher',
+          speaker: 'Teacher',
+          side: 'start',
+          content: 'Where are you from?',
+        },
+        {
+          id: 'learner',
+          speaker: 'You',
+          participant: 'learner',
+          side: 'end',
+          content: 'I’m from …',
+        },
+      ]}
+    />
+  ),
 }

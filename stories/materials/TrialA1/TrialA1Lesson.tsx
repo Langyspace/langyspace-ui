@@ -38,7 +38,7 @@ export function TrialA1Lesson({
                     width="reading"
                     eyebrow="Warm up"
                     title={content.title}
-                    instruction={content.p1.ins}
+                    instruction="Answer your teacher. Then ask her the same questions."
                   >
                     <GreetingSection />
                   </SlidePage>

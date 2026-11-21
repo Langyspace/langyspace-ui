@@ -103,3 +103,9 @@ B1/B2/C1 compose ExercisePanel, QuizPromptHeader, QuizQuestion and QuizOption as
 `QuizQuestion density="compact" tone="material"` provides Montserrat semibold body-size questions with the material foreground. Regular/default preserves the original practice size and quiz ink. `QuizPromptHeader` stacks its prompt and answers at narrow widths.
 
 SlidePage tools align to the trailing edge, including a wrapped tools row. GuidedScenario centers its case choices through the shared Row alignment variation; B1/B2/C1 consume the same composition. Source stories cover inline choice states, the compact prompt, B1 role swap, revealed review and narrow review. These stories were authored, not executed, in delivery45.
+
+## Controlled learner identity
+
+`LearningDialogue.learnerIdentity` accepts `{firstName, avatarUrl}` from the consumer. It applies only to lines marked `participant="learner"`; authored model speakers keep their names/portraits. Both values are required for the personalized identity. Missing/empty input or image failure yields You. Removing the prop clears the prior identity. `Avatar.onImageError` optionally informs controlled consumers while retaining Avatar’s own image fallback. `LearningDialogueLine.initials` optionally supplies the portrait fallback explicitly.
+
+The material adapter binds this prop from a scoped context and recognizes legacy You/You:role lines at the product boundary. All maintained dialogue consumers use the adapter. The iframe asks once per material; Teacher owns occurrence lookup, authentication and profile retrieval. Only firstName/avatarUrl cross the strict origin/window/version/key/source bridge. Nothing is added to URL/storage/logs. Source fixtures cover photo/no photo, prop clearing and failed-image replacement; not executed in this fast delivery.

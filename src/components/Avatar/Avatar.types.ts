@@ -9,6 +9,8 @@ export interface AvatarProps extends Omit<
   'color'
 > {
   imageUrl?: string
+  /** Notify a controlled identity when its image cannot be loaded. */
+  onImageError?: (imageUrl: string) => void
   /** Optional visible identity, styled together with the portrait instead of ad-hoc adjacent text. */
   name?: string
   namePosition?: 'below' | 'beside'

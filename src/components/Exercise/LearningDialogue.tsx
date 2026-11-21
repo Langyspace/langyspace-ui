@@ -1,6 +1,6 @@
 import { Avatar } from '../Avatar/Avatar'
 import { VocabularyControls } from './VocabularyControls'
-import { Fragment } from 'react'
+import { Fragment, useState } from 'react'
 import * as Gap from './LearningDialogueGap.styles'
 import { IconButton } from '../IconButton/IconButton'
 import * as Styled from './LearningDialogue.styles'
@@ -61,6 +61,7 @@ function DialogueAction({
 
 export function LearningDialogue({
   lines,
+  learnerIdentity,
   guidance,
   density = 'regular',
   speakerLabels = 'visible',
@@ -74,9 +75,26 @@ export function LearningDialogue({
   onComplete,
   ...props
 }: LearningDialogueProps) {
+  const [failedLearnerAvatar, setFailedLearnerAvatar] = useState<string>()
+  const learnerName = learnerIdentity?.firstName.trim().split(/\s+/u)[0]
+  const learnerPhoto = learnerIdentity?.avatarUrl.trim()
+  const hasLearner = Boolean(
+    learnerName && learnerPhoto && failedLearnerAvatar !== learnerPhoto,
+  )
   const dialogue = (
     <Styled.Dialogue {...props}>
       {lines.map((line) => {
+        const isLearner = line.participant === 'learner'
+        const speaker = isLearner
+          ? hasLearner
+            ? learnerName!
+            : 'You'
+          : line.speaker
+        const avatarUrl = isLearner
+          ? hasLearner
+            ? learnerPhoto
+            : undefined
+          : line.avatarUrl
         const content =
           guidance && (line.cue || line.hint) ? (
             <Styled.GuidedText>
@@ -124,13 +142,20 @@ export function LearningDialogue({
           <Styled.DialogueLine key={line.id} $side={line.side}>
             <Avatar
               size={density === 'compact' ? 'sm' : 'md'}
-              imageUrl={line.avatarUrl}
-              initials={line.speaker.slice(0, 2)}
-              name={speakerLabels === 'visible' ? line.speaker : undefined}
+              imageUrl={avatarUrl}
+              onImageError={isLearner ? setFailedLearnerAvatar : undefined}
+              initials={
+                isLearner
+                  ? hasLearner
+                    ? speaker.slice(0, 1)
+                    : 'Yo'
+                  : (line.initials ?? speaker.slice(0, 2))
+              }
+              name={speakerLabels === 'visible' ? speaker : undefined}
               namePosition="below"
               role={speakerLabels === 'hidden' ? 'img' : undefined}
               aria-hidden={false}
-              aria-label={speakerLabels === 'hidden' ? line.speaker : undefined}
+              aria-label={speakerLabels === 'hidden' ? speaker : undefined}
             />
             <Styled.Speech
               $compact={density === 'compact'}

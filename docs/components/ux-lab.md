@@ -184,3 +184,7 @@ results, mute, keyboard activation and disabled choices for human review.
 ### Feedback45 — compact decisions and clear role swap
 
 The maintained B1/B2/C1 statement adapter shows multiple prompts with canonical inline QuizOption choices and compact material QuizQuestion text. One explanation opens at a time while answer states remain visible. GuidedScenario choices are centered. B1 contextual MCQs use the same warm-up column and put the scenario in the heading; the no-image Leo dialogue is outside the two-image count. The role-swap controls live in SlidePage tools and update the stage heading. Source stories expose these variations; no remote Lab publication or browser/visual review was performed.
+
+### Feedback46 — learner identity
+
+The existing LearningDialogue receives optional learnerIdentity and semantic learner lines. Missing/unavailable photos retain You; authored fictional speakers remain unchanged. All maintained material adapters bind the product context, and TrialA1 greeting reuses six native bubbles with teacher identity and optional bulb/model support. Source examples include LearnerWithPhoto and LearnerWithoutPhoto. No remote Lab write or runtime visual approval is implied.

@@ -6,6 +6,7 @@ export function Avatar({
   'aria-hidden': ariaHidden,
   children,
   imageUrl,
+  onImageError,
   name,
   namePosition = 'below',
   description,
@@ -34,6 +35,7 @@ export function Avatar({
           src={imageUrl}
           onError={() => {
             setFailedImageUrl(imageUrl ?? null)
+            if (imageUrl) onImageError?.(imageUrl)
           }}
         />
       ) : null}

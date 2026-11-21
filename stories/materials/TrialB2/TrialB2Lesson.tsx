@@ -1,5 +1,5 @@
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { MaterialLearningDialogue as LearningDialogue } from '../shared/MaterialLearningDialogue'
 import { PromptExercise } from '../shared/LessonExercises'
 import { useLessonPage } from '../shared/useLessonPage'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'

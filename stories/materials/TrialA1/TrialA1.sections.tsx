@@ -1,3 +1,4 @@
+import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { PromptExercise } from '../shared/LessonExercises'
 import { Fragment, useState } from 'react'
 import { GuidedConversation } from '../shared/GuidedConversation'
@@ -14,27 +15,50 @@ import { content, preferenceImages, pictures } from './TrialA1.data'
 import * as S from '../shared/Lesson.styles'
 import * as T from './TrialA1.styles'
 export function GreetingSection() {
-  const [open, setOpen] = useState<string[]>([])
+  const teacher = useMaterialTeacher()
+  const firstName =
+    teacher.name === 'Your teacher'
+      ? teacher.name
+      : teacher.name.trim().split(/\s+/u)[0]!
+  const [translated, setTranslated] = useState<string[]>([])
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
+  const cues = [
+    'Say your name.',
+    'Say your city or country.',
+    'Say how you feel. Ask back.',
+  ]
+  const hints = [
+    'Diga seu primeiro nome.',
+    'Diga sua cidade ou país.',
+    'Diga como se sente e pergunte de volta.',
+  ]
   return (
-    <S.Stack>
-      {content.p1.cards.map((q) => (
-        <T.Support key={q.q}>
-          <T.Greeting
-            variant="lesson"
-            aria-expanded={open.includes(q.q)}
-            onClick={() => setOpen((old) => toggleId(old, q.q))}
-          >
-            <T.GreetingText>
-              <b>{q.q}</b>
-              {open.includes(q.q) ? <S.Hint>{q.pt}</S.Hint> : null}
-            </T.GreetingText>
-          </T.Greeting>
-          <T.Help context={q.q}>
-            <p>{q.a}</p>
-          </T.Help>
-        </T.Support>
-      ))}
-    </S.Stack>
+    <LearningDialogue
+      density="compact"
+      guidance={{ level, onChange: setLevel }}
+      translatedIds={translated}
+      onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
+      lines={content.p1.cards.flatMap((question, index) => [
+        {
+          id: `greeting-${index}-teacher`,
+          speaker: firstName,
+          initials: firstName.slice(0, 1),
+          avatarUrl: teacher.avatarUrl,
+          side: 'start' as const,
+          content: question.q,
+          translation: question.pt,
+        },
+        {
+          id: `greeting-${index}-learner`,
+          speaker: 'You',
+          participant: 'learner' as const,
+          side: 'end' as const,
+          cue: cues[index],
+          hint: hints[index],
+          content: question.a,
+        },
+      ])}
+    />
   )
 }
 export function PictureTalkSection({

@@ -1,6 +1,6 @@
 import { css, styled } from 'styled-components'
 import { Avatar } from '../../../src/components/Avatar/Avatar'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
 
 // Same layout crop as A201 / TrialB1; the underlying bitmap stays unchanged.
 const anaAvatarCrop = css`

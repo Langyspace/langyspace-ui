@@ -1,7 +1,7 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
-Atualizada em20/11/2026 a partir dos feedbacks de A1.01, A2.01, A1.05 e A1.02. A revisão final de uso, áudio e visual pertence à dona do curso.
+Atualizada em21/11/2026 a partir dos feedbacks de A1.01, A2.01, A1.05 e A1.02. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Planejamento pedagógico
 
@@ -156,3 +156,10 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Em múltipla escolha, o título traz a fala ou situação que dá sentido às alternativas; o subtítulo pede a decisão. Não deixar esse contexto solto entre a imagem e as opções. Usar a mesma coluna centralizada do warm-up; limitar a altura de uma ilustração de apoio quando o contexto no cabeçalho for maior.
 - O cabeçalho de uma conversa guiada explica quem pergunta, quem responde e o que acontece ao trocar papéis. Título e subtítulo acompanham a etapa atual. Controles de troca e apoio ficam à direita no slot tools, sem rótulos de papéis e instruções duplicadas no corpo.
 - Revisões curtas mostram várias sentenças de uma vez, com Right/Wrong por linha. A resposta mantém seu estado e apenas a explicação selecionada se expande. Paginação é para referência realmente densa, não para esconder todos os exemplos por padrão. Seletores de dias ou cenários ficam centralizados acima dos fatos correspondentes.
+
+## Participantes reais e modelo — feedback46
+
+- O papel da aluna usa o mesmo diálogo e Avatar da UI Library. Marcar suas falas como participant=learner e fornecer learnerIdentity por prop. O material pede o contexto uma vez; não faz consulta de aluna por balão nem duplica o componente You em cada aula.
+- Exibir foto e primeiro nome apenas quando o portal identificar uma participante única da aula da professora autenticada e houver foto utilizável. Sem foto, com erro de imagem, aula desconhecida/ambígua, grupo ou sessão/contexto alterado, manter You. Não mostrar nome sozinho nesse fallback.
+- A origem é a aula explicitamente aberta no portal ou a única ocorrência no horário atual. Contexto explícito inválido não vira outra aula por aproximação. Considerar recorrências e cancelamentos; o contexto expira na troca/fim da aula e não vai para URL, armazenamento ou logs.
+- A identidade real não substitui personagens dos diálogos-modelo. Nome/foto de quem participa são dados temporários; não acrescentam fatos ao documento de personagens. Em perguntas pessoais, o olho mostra um modelo de linguagem, não um gabarito pessoal inventado.
