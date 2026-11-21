@@ -13,6 +13,7 @@ export function SlidePage({
   questionsTitle = 'Questions',
   lead,
   cover,
+  coverPlacement = 'before-heading',
   layout = 'stacked',
   density = 'regular',
   width = 'wide',
@@ -20,9 +21,17 @@ export function SlidePage({
   children,
   ...props
 }: SlidePageProps) {
+  const coverImage = cover ? (
+    <Styled.Cover
+      src={cover.src}
+      alt={cover.alt}
+      $afterHeading={coverPlacement === 'after-heading'}
+      $split={layout === 'split'}
+    />
+  ) : null
   const introduction = (
     <>
-      {cover ? <Styled.Cover src={cover.src} alt={cover.alt} /> : null}
+      {coverPlacement === 'before-heading' ? coverImage : null}
       {lead ? <Styled.Lead>{lead}</Styled.Lead> : null}
       <Styled.Header
         $lead={Boolean(lead)}
@@ -48,6 +57,7 @@ export function SlidePage({
         </Styled.Heading>
         {tools ? <Styled.Tools>{tools}</Styled.Tools> : null}
       </Styled.Header>
+      {coverPlacement === 'after-heading' ? coverImage : null}
     </>
   )
   return (

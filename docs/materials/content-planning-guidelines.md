@@ -43,6 +43,8 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 
 ## Histórico
 
+- **21/11/2026 — feedback68, título antes da imagem:** no encerramento das experimentais, apresentar o título principal e o subtítulo acima da imagem da aula. Usar coverPlacement=after-heading do SlidePage, com a mesma ordem visual e de leitura, mantendo o celular e sua orientação na coluna ao lado. Preservar a ordem padrão das aberturas e dos demais materiais.
+
 - **21/11/2026 — feedback67, alinhamento no encerramento:** o título de ação e o celular compartilham o mesmo eixo central na coluna de encerramento, inclusive quando o título quebra linha. Aplicar a variação de alinhamento dos componentes compartilhados, preservando o alinhamento das capas, aberturas e demais conteúdos.
 
 - **21/11/2026 — feedback66, um celular canônico:** mensagens de áudio e previews estáticos compõem o mesmo MessagePhoneFrame, incluindo barra de contato, viewport e composer. Diferenciar conteúdo, ações e tamanho por props; compartilhar CSS sozinho não resolve duplicação de montagem. Fotos de perfil usam Avatar circular, inclusive a logo da escola. Mensagens enviadas no celular usam a variação messaging do MessageBubble, com fundo #D9FDD3 e texto escuro; preservar o padrão de marca fora dessa variação. O encerramento usa size=large, nas proporções do celular de listening.

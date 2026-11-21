@@ -28,7 +28,49 @@ it('keeps an optional cover and heading in the introduction beside review conten
     screen.getByRole('button', { name: 'Review a word' }),
   )
   expect(container.firstChild).not.toHaveAttribute('cover')
+  expect(
+    screen
+      .getByRole('img')
+      .compareDocumentPosition(
+        screen.getByRole('heading', { name: 'People in my life' }),
+      ) & Node.DOCUMENT_POSITION_FOLLOWING,
+  ).toBeTruthy()
 })
+
+it.each(['stacked', 'split'] as const)(
+  'places the heading before the cover in visual reading order for %s',
+  (layout) => {
+    render(
+      <SlidePage
+        data-testid="ordered-cover"
+        title="Your lesson is complete"
+        instruction="Keep learning"
+        cover={{ src: '/cover.webp', alt: 'Lesson cover' }}
+        coverPlacement="after-heading"
+        layout={layout}
+      >
+        <p>Next step</p>
+      </SlidePage>,
+    )
+    expect(
+      screen
+        .getByRole('heading', { name: 'Your lesson is complete' })
+        .compareDocumentPosition(
+          screen.getByRole('img', { name: 'Lesson cover' }),
+        ) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
+    expect(
+      screen
+        .getByText('Keep learning')
+        .compareDocumentPosition(
+          screen.getByRole('img', { name: 'Lesson cover' }),
+        ) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
+    expect(screen.getByTestId('ordered-cover')).not.toHaveAttribute(
+      'coverPlacement',
+    )
+  },
+)
 
 it('keeps common page content semantic and passes native attributes and ref', () => {
   const ref = createRef<HTMLDivElement>()

@@ -25,6 +25,13 @@ it.each(catalog)(
       expect.stringContaining('catalog-cover40.webp'),
     )
     expect(
+      screen
+        .getByRole('img')
+        .compareDocumentPosition(
+          screen.getByRole('heading', { name: entry.title }),
+        ) & Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
+    expect(
       screen.getByRole('button', { name: 'Reveal my answer' }),
     ).toBeInTheDocument()
   },
@@ -98,6 +105,12 @@ it.each(['trial-a1-a2', 'trial-b1', 'trial-b2'])(
       'src',
       expect.stringContaining('catalog-cover40.webp'),
     )
+    expect(
+      screen
+        .getByRole('heading', { name: 'Sua aula experimental chegou ao fim!' })
+        .compareDocumentPosition(introduction.querySelector('img')!) &
+        Node.DOCUMENT_POSITION_FOLLOWING,
+    ).toBeTruthy()
     expect(introduction).not.toContainElement(phone)
     expect(screen.queryByRole('link')).not.toBeInTheDocument()
     expect(screen.queryByRole('button')).not.toBeInTheDocument()

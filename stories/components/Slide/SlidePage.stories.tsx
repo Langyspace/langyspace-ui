@@ -57,6 +57,15 @@ export const CoverOnly: Story = {
   },
   tags: ['visual-review'],
 }
+export const HeadingAboveCover: Story = {
+  ...CoverWithReview,
+  args: {
+    ...CoverWithReview.args,
+    coverPlacement: 'after-heading',
+    title: 'Sua aula experimental chegou ao fim!',
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
 export const Focused: Story = { args: { width: 'focused' } }
 export const Reading: Story = { args: { width: 'reading', density: 'compact' } }
 export const Expanded: Story = { args: { width: 'expanded' } }

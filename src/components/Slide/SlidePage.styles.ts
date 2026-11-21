@@ -98,13 +98,14 @@ export const Lead = styled.div`
   margin-bottom: clamp(${theme.spacing[2]}, 2cqh, ${theme.spacing[5]});
 `
 
-export const Cover = styled.img`
+export const Cover = styled.img<{ $afterHeading: boolean; $split: boolean }>`
   display: block;
   width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: ${theme.radius.xl};
-  margin-bottom: ${theme.spacing[5]};
+  margin-top: ${(p) => (p.$afterHeading && p.$split ? theme.spacing[5] : undefined)};
+  margin-bottom: ${(p) => (p.$afterHeading ? '0' : theme.spacing[5])};
 `
 
 export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`
