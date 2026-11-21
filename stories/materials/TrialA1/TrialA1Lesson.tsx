@@ -76,7 +76,7 @@ export function TrialA1Lesson({
                     title={title}
                     instruction={
                       independent
-                        ? 'Choose a new topic. Ask your teacher, answer their questions and keep talking.'
+                        ? 'Get to know each other. Answer, then ask your teacher.'
                         : 'Answer your teacher about yourself. Ask back when you can.'
                     }
                   >
