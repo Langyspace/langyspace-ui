@@ -1,3 +1,4 @@
+export { ana, kim } from '../shared/characterPortraits'
 import source from './lesson'
 import sceneManifest from './image-scenes.json'
 import type { WarmUpData, VocabularyData } from './A101.types'
@@ -17,13 +18,13 @@ export const image = (name: string) => {
 export const lesson = source
 export const order = [
   's1',
+  's4',
   's21',
   's22',
   's23',
   's24',
   's25',
   's26',
-  's4',
   's51',
   's52',
   's53',
@@ -31,16 +32,20 @@ export const order = [
   's55',
   's56',
   's6',
-  's14',
   's71',
   's72',
+  's18',
+  's73',
   's16',
   's17',
   's8',
   's9',
   's10',
-  's18',
+  's74',
   's15',
+  's151',
+  's152',
+  's75',
   's13',
 ]
 const feelingImages = [
@@ -159,11 +164,27 @@ export const gapTexts = [
 ]
 export const gapAnswers = ['am', 'from', 'are', 'am', 'is', 'He']
 export const questions = [
-  'Where is Kim from?',
-  'Where is Ana from?',
-  'How is Kim?',
-  'Where is Lukas from?',
-  'How is Lukas?',
+  {
+    id: 'dialogue-1',
+    prompt: 'Where is Kim from?',
+    answer: 'She’s from Korea.',
+  },
+  {
+    id: 'dialogue-2',
+    prompt: 'Where is Ana from?',
+    answer: 'She’s from Brazil.',
+  },
+  {
+    id: 'dialogue-3',
+    prompt: 'How is Kim?',
+    answer: 'She’s tired, but she’s happy.',
+  },
+  {
+    id: 'dialogue-4',
+    prompt: 'Where is Lukas from?',
+    answer: 'He’s from Germany.',
+  },
+  { id: 'dialogue-5', prompt: 'How is Lukas?', answer: 'He’s cold.' },
 ]
 export const trueForYou = [
   'I’m American.',
@@ -173,12 +194,27 @@ export const trueForYou = [
   'I’m hungry.',
   'It’s cold today.',
 ]
-export const homeworkMessage =
-  'Lição de casa da aula A1.01 · Introduce yourself\n' +
-  source.HW13.map((item) => `${item.line}: ${item.url}`).join('\n')
 export function itemAt<T>(items: readonly T[], index: number): T {
   const item = items[index]
   if (item === undefined)
     throw new Error(`A1.01 fixture index out of range: ${index}`)
   return item
 }
+
+export const conversationAnswers = [
+  'My name is … What’s your name?',
+  'Nice to meet you too!',
+  'Yes, I am. / No, I’m not.',
+  'Yes, I am. / No, I’m not.',
+  'I’m …, thanks. And you?',
+  'Yes, she is. / No, she isn’t. / I don’t know.',
+  'Yes, he is. / No, he isn’t. / I don’t know.',
+  'Yes, they are. / No, they aren’t. They’re from …',
+  'Yes, I am. / No, I’m not. I’m from …',
+  'I’m from … What about you?',
+  'My mother is … and my father is …',
+  'He’s/She’s … years old.',
+  'I’m … years old. / I’m …',
+  'My pet is a … / I don’t have a pet.',
+  'Yes, he/she is. / I don’t have a pet.',
+] as const

@@ -5,6 +5,7 @@ import * as Common from './Material.shared.styles'
 import type { GrammarTableProps } from './GrammarTable.types'
 export function GrammarTable({
   title,
+  captionVisibility = 'visible',
   rows,
   columns = DEFAULT_COLUMNS,
   tone = 'affirmative',
@@ -21,7 +22,10 @@ export function GrammarTable({
     <Styled.Root as="section" {...props}>
       {explanation}
       <Styled.Wrap>
-        <Styled.Table $tone={tone} $reveal={hiddenAnswers}>
+        <Styled.Table
+          $tone={tone}
+          $captionHidden={captionVisibility === 'screen-reader'}
+        >
           <caption>{title}</caption>
           <thead>
             <tr>
@@ -33,46 +37,71 @@ export function GrammarTable({
           <tbody>
             {rows.map((row) => {
               const open = !hiddenAnswers || revealedIds.includes(row.id)
+              const answer = (
+                <>
+                  {onPlay ? (
+                    <Styled.Example
+                      $concealed={false}
+                      type="button"
+                      aria-label={row.audioLabel}
+                      onClick={() => onPlay(row.id)}
+                    >
+                      {row.example}
+                    </Styled.Example>
+                  ) : (
+                    row.example
+                  )}
+                  {row.translation ? (
+                    <Common.Hint>{row.translation}</Common.Hint>
+                  ) : null}
+                </>
+              )
               return (
                 <tr key={row.id}>
                   <th scope="row">
                     <span>{row.subject}</span>
                   </th>
-                  {columns.verb && open ? (
-                    <td data-verb="true">{row.verb}</td>
+                  {columns.verb ? (
+                    <td data-verb="true">
+                      {hiddenAnswers ? (
+                        <Styled.AnswerContent
+                          $concealed={!open}
+                          aria-hidden={!open || undefined}
+                          inert={!open || undefined}
+                        >
+                          {row.verb}
+                        </Styled.AnswerContent>
+                      ) : (
+                        row.verb
+                      )}
+                    </td>
                   ) : null}
-                  <td colSpan={!open && columns.verb ? 2 : undefined}>
-                    {!open ? (
-                      <Styled.Example
-                        $concealed
-                        type="button"
-                        aria-expanded={false}
-                        aria-label={`${revealLabel}: ${row.id}`}
-                        disabled={!onReveal}
-                        onClick={() => onReveal?.(row.id)}
-                      >
-                        ?
-                      </Styled.Example>
-                    ) : onPlay ? (
-                      <Styled.Example
-                        $concealed={false}
-                        type="button"
-                        aria-label={row.audioLabel}
-                        onPointerEnter={(event) => {
-                          if (event.pointerType === 'mouse') onPlay(row.id)
-                        }}
-                        onClick={() => {
-                          onPlay(row.id)
-                        }}
-                      >
-                        {row.example}
-                      </Styled.Example>
+                  <td>
+                    {hiddenAnswers ? (
+                      <Styled.AnswerFrame>
+                        <Styled.AnswerContent
+                          $concealed={!open}
+                          aria-hidden={!open || undefined}
+                          inert={!open || undefined}
+                        >
+                          {answer}
+                        </Styled.AnswerContent>
+                        {!open ? (
+                          <Styled.RevealControl
+                            $concealed
+                            type="button"
+                            aria-expanded={false}
+                            aria-label={`${revealLabel}: ${row.id}`}
+                            disabled={!onReveal}
+                            onClick={() => onReveal?.(row.id)}
+                          >
+                            ?
+                          </Styled.RevealControl>
+                        ) : null}
+                      </Styled.AnswerFrame>
                     ) : (
-                      row.example
+                      answer
                     )}
-                    {open && row.translation ? (
-                      <Common.Hint>{row.translation}</Common.Hint>
-                    ) : null}
                   </td>
                 </tr>
               )

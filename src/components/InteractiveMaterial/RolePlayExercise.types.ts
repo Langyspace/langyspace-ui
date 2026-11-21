@@ -6,6 +6,7 @@ export interface RolePlayStep {
 export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> {
   situation: ReactNode
   image?: { src: string; alt: string }
+  imageFit?: 'contain' | 'cover'
   roles?: readonly string[]
   support?: readonly string[]
   supportVisible?: boolean
@@ -16,10 +17,13 @@ export interface RolePlayExerciseProps extends ComponentPropsWithRef<'section'> 
   /** Consumer-owned summary or task information before the checklist. */
   tracker?: ReactNode
   density?: 'regular' | 'compact'
+  /** Plain scene with support beside the checklist and an outlined next step. */
+  presentation?: 'default' | 'tracker' | 'instructions'
   labels?: Partial<{
     show: string
     hide: string
     steps: string
     progress: string
+    joiner: string
   }>
 }

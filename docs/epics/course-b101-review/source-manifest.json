@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "batch": "COURSE-B101-REVIEW-02",
+  "owner": "curso-b101",
+  "authorState": "FROZEN",
+  "frozenAt": "2026-11-19T01:54:02.292015+00:00",
+  "uiBranch": "feat/materials-a201-exp-a1-20261117",
+  "uiBaseAndHead": "8101ec156fdb97c56f383ea821d20e011c8be962",
+  "sharedSourceChanged": false,
+  "source": [
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.content.json",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.content.json",
+      "sha256": "db0a31d6199f673ccc91ec0085f70d491afa6e517144d4cd2fd545f7fd9b920b",
+      "bytes": 11874
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.conversation.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.conversation.tsx",
+      "sha256": "78e0002981ef3fc18be1195c963fa035af023e349d8ddfa54f74176ef78f288b",
+      "bytes": 10590
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.data.ts",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.data.ts",
+      "sha256": "fe6ffebe8c73fa7c98ff97eda02fea2f5af7bacdc03f54ab5c44d59ac9de1af2",
+      "bytes": 1628
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.dialogue.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.dialogue.tsx",
+      "sha256": "9363ec5c716157da615838438830889050da7d7a2d995d9aaf8b0858d22aaa90",
+      "bytes": 5031
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.practice.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.practice.tsx",
+      "sha256": "5f78f6b5013c7d038b17ae8bc096d0978b5287d294de559eed0153e9bd380cd2",
+      "bytes": 9008
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.stories.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.stories.tsx",
+      "sha256": "94d754de3b565587d24a1c05959f6205e1b70ef4e3a96ee3b6ccd7ac9578603d",
+      "bytes": 2850
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.styles.ts",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.styles.ts",
+      "sha256": "1dd82ad62eb8c15f7a69f80b29d0c5f93db36c8643bb5b718405806437ced171",
+      "bytes": 2605
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.types.ts",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.types.ts",
+      "sha256": "330b459a4763d1230fffbcbb4259853fc872b24e10743d4a9ac230798fdc11da",
+      "bytes": 487
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101.utilities.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101.utilities.tsx",
+      "sha256": "14f773b9e0ba2151a68ff9df4725f9e086532c8003fd22fff56f7b2044d07c12",
+      "bytes": 431
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/B101Lesson.tsx",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/B101Lesson.tsx",
+      "sha256": "c88a733714fb6319d0907f8c7f6a24089a6392035f33d548626cd10ad34e7845",
+      "bytes": 10121
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.1.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.1.mp3",
+      "sha256": "7bf1bd7965308be2dbbc97df67bcdaaf24e3f6438790562f478208d17ac23096",
+      "bytes": 79037
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.10.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.10.mp3",
+      "sha256": "27c33c3be44e3dcece7fda34fa64725bb10436d1c5be64cd0823ac3cf6fb8137",
+      "bytes": 56049
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.11.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.11.mp3",
+      "sha256": "6c190dc68d736e28e68c45fbc29fca581f68bd7ee25eee5d24d8f46dc7eda91b",
+      "bytes": 47272
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.2.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.2.mp3",
+      "sha256": "b80a9f6fc00fae5c409dbcb24a3c7d723b1f6f0c25a82cc4291108bf646c1a86",
+      "bytes": 62736
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.3.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.3.mp3",
+      "sha256": "5b28c7490872ee3fbd424c57f9fb5d2d3c272e3cb710148ded292e93e0b60872",
+      "bytes": 39749
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.4.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.4.mp3",
+      "sha256": "b4203c544728a37fb2245bbc9ad9ba449473d9c0d44e06c26780150f24421559",
+      "bytes": 117071
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.5.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.5.mp3",
+      "sha256": "bc43604f90e4c7befcacaae5f595055dc5d1aab76a844bbf560601ec6f751485",
+      "bytes": 47272
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.6.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.6.mp3",
+      "sha256": "44c53c5d7978786b933398c344e80c70fb925b474844f772a2810aea71b25d60",
+      "bytes": 51034
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.7.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.7.mp3",
+      "sha256": "7aa6c9cb71e8b0507b9905234ccad4d439d80856506f7c005c98739f9d4c2279",
+      "bytes": 101189
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.8.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.8.mp3",
+      "sha256": "81d933755f3b90f4cbc489e0c095c519a71eca3776703c3c73ae3a7744ec5547",
+      "bytes": 104532
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/D.9.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/D.9.mp3",
+      "sha256": "774b821194fd02b20c59d60a7f38ea1606ddbf7f576a80740bdc87343c82b335",
+      "bytes": 117907
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/L.9.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/L.9.mp3",
+      "sha256": "f83af7b038c2c94f421f39dc57f464d46312bb8b4cefe323274853f8fe7367f4",
+      "bytes": 360741
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.0.0.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/P.0.0.mp3",
+      "sha256": "20fe475cab0e52f82625a22aa631a5828b7ceceb0e2e741ec6bfacc5fc4a2428",
+      "bytes": 15925
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.0.1.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/P.0.1.mp3",
+      "sha256": "82aa2a22d562b111096ba4048969db185a7970b608f253b34c688fa72f70ee2f",
+      "bytes": 18015
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.1.0.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/P.1.0.mp3",
+      "sha256": "f01e026fcf2b3b6006fa8abc2dda70336989311fead6dc42469409e306815a49",
+      "bytes": 17597
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/audio/P.1.1.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/audio/P.1.1.mp3",
+      "sha256": "6a306ae5fd372e4bbf641f7a54bbe706dd8d45bf16e5ac0b91b6b358ab511462",
+      "bytes": 19687
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/leo-demo.mp3",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/leo-demo.mp3",
+      "sha256": "f83af7b038c2c94f421f39dc57f464d46312bb8b4cefe323274853f8fe7367f4",
+      "bytes": 360741
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-baking.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-baking.webp",
+      "sha256": "88cf3a9ed74937e7076c0e33e6f474512f9cf0269c99a36b09aec9cbf110b585",
+      "bytes": 90012
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-bike.webp",
+      "sha256": "2bc6694c3124a538c81d4b54213bfa0c3d4f0fccdb9e24900040c74011168c61",
+      "bytes": 109658
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bus.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-bus.webp",
+      "sha256": "baada491df7d5a9ef01de5f3e13b7b42143ba29834e3f457caa4f735fa1a2338",
+      "bytes": 120544
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-gardening.webp",
+      "sha256": "22ccd2fb8c61b17db2383551e69d91af8cbf27284dabe832b43e9fb2a5a44eec",
+      "bytes": 96440
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-guitar.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-guitar.webp",
+      "sha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7",
+      "bytes": 95618
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-hot.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-hot.webp",
+      "sha256": "7f3aa606248cc82724cab59d0385e470d573f619acf814c89ca51efd0796c349",
+      "bytes": 54900
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-muddy-shoes.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-muddy-shoes.webp",
+      "sha256": "3cc3b4b7e3b26dfc050ba8bc6bc66762e334231aeec2e74a72d234321040a77d",
+      "bytes": 94448
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-shopping.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-shopping.webp",
+      "sha256": "f026549cc5cf1ed2561085247bc5275a5af1aa310660b61182f55f472eed8a15",
+      "bytes": 72950
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-soccer.webp",
+      "sha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e",
+      "bytes": 94932
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-swimming.webp",
+      "sha256": "02e0c4a229584c96779c9a733784963d0ab88383013020d7f4802735b37d31ee",
+      "bytes": 72542
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-tv.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-tv.webp",
+      "sha256": "f2d10708aced14d9b8c3c871c7f3ac75810de1ebad8e8353401dd9370d476569",
+      "bytes": 75352
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-wet-shirt.webp",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/assets/scene-wet-shirt.webp",
+      "sha256": "e36f7b9431bc7facd8f92dc59ff6096d3d6c4f06001f1d48b05b785d7eb0de5f",
+      "bytes": 63358
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/audio-provenance.json",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/audio-provenance.json",
+      "sha256": "a99997b2b0a7a7ef57fa78bdac3cc94dfb39cadf15a1332dab4f3ddd7cc0e094",
+      "bytes": 19312
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/image-scenes.json",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/image-scenes.json",
+      "sha256": "68a01662bd721599318d98c40b70abd909bacb02d82003b62e664b2c51d1137d",
+      "bytes": 14268
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/useB101Audio.ts",
+      "canonicalSnapshot": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/stories/materials/B101/useB101Audio.ts",
+      "sha256": "3fd12b16f8f9189d740a1b7183d1ea08b0489f57453d05c755da1edb3538cde3",
+      "bytes": 3589
+    }
+  ],
+  "canonical": [
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/build.py",
+      "sha256": "7dd30d9bf23efab69607bc276c49c518fb368c37a9ac2a7c5b5a1069b4b868fb",
+      "bytes": 1180
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/README.md",
+      "sha256": "3d5cba61f8fdd47bc02594bc3c1e9a94820d51fd488ccc1a253c01453b548f1b",
+      "bytes": 1125
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/main.tsx",
+      "sha256": "54312e5797a3bea0a35734f9db166b7c75fa15dd1ecb7c258b10250030604507",
+      "bytes": 1333
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/index.html",
+      "sha256": "f240a47a0a7e9d9e0c8cc07f18128bef506af927a10d4f3b897c27b7a700616e",
+      "bytes": 295
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/runtime/vite.config.mjs",
+      "sha256": "7d629a63d74f63552501e3b3cc733fe363bbb3af67e1a1b539df6406abb3bd4a",
+      "bytes": 846
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/saida/langy-b1-01.html",
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Editor de vídeo com IA/Planejamento Langy/codigo/b1-01/saida/local.html",
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    }
+  ],
+  "deliverables": [
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/page-map.json",
+      "sha256": "25b60d86052530ea3cec148f78f408463e007d73b2112d9f7ace18dc79b15a8f",
+      "bytes": 4586
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/audio-request.json",
+      "sha256": "a94a4f43181f698036aa41c18b7fb48f758321b3334f6d85d2b42e3b7895c6be",
+      "bytes": 5311
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/audio-integration.json",
+      "sha256": "c2a1781cbac6e7c84fb68dcee34b9e1075be67b878cf974544af4930a138f8aa",
+      "bytes": 526
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/image-report.json",
+      "sha256": "1c72e98a3b8ee98d90c50ba704f04c7d05fa9c793dd855cdb1886675cd293d48",
+      "bytes": 6986
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/verification.json",
+      "sha256": "58ffee21400d25f056c71aabbbf6a4b585bc611fb18592cbc1b76f0ed6b0367a",
+      "bytes": 33783
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/deep-link-verification.json",
+      "sha256": "5f5ca27cb07670fe168af68e1f4243044e58fdce6ed979eb5574da8706c4f8a3",
+      "bytes": 361
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/queue-verification.json",
+      "sha256": "2b58fcfd950751df3f0736863fe18edd61c9f6f0a231ba27d9a448a39ac2da03",
+      "bytes": 123
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/embedded-media-verification.json",
+      "sha256": "626b2fb7e20ca2d81c5e6eb501d768941d2c6651be02b38d5f1fc68c218cdeda",
+      "bytes": 261
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/publication.json",
+      "sha256": "3376bf5da61e8a2dedfe062cd5d6a70c94eb71422acc4a7459544d3042f44e5c",
+      "bytes": 318
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/readback.json",
+      "sha256": "2567813080199b1f9f28ddd34723d407d09a6f1e4b97dd93ad6d487330080886",
+      "bytes": 351
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/preview.json",
+      "sha256": "6c8cd02dfdbe8c3d72eaf05a108ddbef9ce68b4182a6328f8d0dad33b8a611eb",
+      "bytes": 540
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/published-render.json",
+      "sha256": "7365c099a839caa21543f45242a96798845fdab94b639f4a58dfe83f270c1348",
+      "bytes": 950
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/lab-patch.json",
+      "sha256": "4e7abb5afef2a88a654939fdcf313aa953550870c63382dafa64c6a9d32725f8",
+      "bytes": 1879
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/lab-CMP.patch.txt",
+      "sha256": "47e21807c1696c4faad5f78b7314007e277e8519727942fd8482507a59c2c8e2",
+      "bytes": 1180
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/typecheck.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/index.html",
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/course-b1-01.html",
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b101-20261119/portable/readback-index.html",
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    }
+  ],
+  "remote": {
+    "artifact": "18e473bc-f348-46f1-bbd7-eee1aed9d178",
+    "url": "https://claude.ai/code/artifact/18e473bc-f348-46f1-bbd7-eee1aed9d178",
+    "path": "index.html",
+    "version": "1795053070-d8b2",
+    "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+    "kindPreserved": null,
+    "contractPreserved": "0.0.0",
+    "capabilitiesPreserved": [],
+    "conditionalWriteVerified": true,
+    "exactReadbackVerified": true,
+    "supportedRenderVerified": true,
+    "renderWidths": [
+      1440,
+      390
+    ],
+    "renderConsoleErrors": [],
+    "missingRequests": []
+  },
+  "ci": "not triggered",
+  "deploy": "not triggered by author; central integration pending",
+  "lab": "portable mirror and CMP patch prepared; no author writes to Lab",
+  "visualGate": "pending human"
+}

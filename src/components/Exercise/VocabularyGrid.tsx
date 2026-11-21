@@ -1,94 +1,157 @@
+import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
 import * as Styled from './VocabularyGrid.styles'
+import { formatVocabularyHint } from './VocabularyGrid.utils'
 import type { VocabularyGridProps } from './VocabularyGrid.types'
 export function VocabularyGrid({
   items,
+  controls,
+  surface = 'card',
+  interaction = 'reveal',
+  layout = 'cards',
   revealedIds,
   onReveal,
   onPlay,
   showAll = false,
   showInitial = false,
-  revealOnHover = true,
+  revealOnHover = false,
   imageVariant = 'isolated',
+  imageFit,
   columns,
   density = 'compact',
   revealVariant = 'overlay',
   revealLabel = 'Mostrar palavra',
+  playLabel = 'Listen to',
+  activeId,
+  markRevealed = false,
   ...props
 }: VocabularyGridProps) {
   const [hovered, setHovered] = useState<string>()
   return (
-    <Styled.Vocabulary {...props} $columns={columns}>
-      {items.map((item, index) => {
-        const revealed =
-          showAll ||
-          revealedIds.includes(item.id) ||
-          (revealOnHover && hovered === item.id)
-        return (
-          <Styled.Word
-            $scene={imageVariant === 'scene'}
-            $regular={density === 'regular'}
-            key={item.id}
-            type="button"
-            aria-label={
-              revealed
-                ? `${item.word}: ${item.translation}`
-                : `${revealLabel} ${index + 1}: ${item.imageAlt}`
-            }
-            aria-expanded={revealed}
-            onPointerEnter={() => {
+    <Styled.VocabularySection>
+      <Styled.Vocabulary
+        {...props}
+        $columns={columns}
+        $reference={layout === 'reference'}
+        $regularScene={imageVariant === 'scene' && density === 'regular'}
+      >
+        {items.map((item, index) => {
+          const revealed =
+            interaction === 'static' ||
+            showAll ||
+            (interaction !== 'listen' &&
+              (revealedIds.includes(item.id) ||
+                (revealOnHover && hovered === item.id)))
+          const showLabel =
+            interaction === 'static'
+              ? true
+              : revealVariant === 'overlay'
+                ? revealed
+                : activeId !== undefined
+                  ? activeId === item.id && revealed
+                  : hovered === item.id && (revealOnHover || revealed)
+          const hint = item.initialHint ?? formatVocabularyHint(item.word)
+          const showChip =
+            showLabel ||
+            (revealVariant === 'tooltip' &&
+              (showAll ||
+                (activeId === undefined && revealedIds.includes(item.id)) ||
+                (showInitial && !revealed)))
+          const preview = () => {
+            if (
+              interaction === 'reveal' &&
+              revealOnHover &&
+              !showAll &&
+              !revealedIds.includes(item.id)
+            )
               setHovered(item.id)
-            }}
-            onPointerLeave={() => {
-              setHovered(undefined)
-            }}
-            onFocus={() => {
-              setHovered(item.id)
-            }}
-            onBlur={() => {
-              setHovered(undefined)
-            }}
-            onClick={() => {
-              onReveal(item.id)
-              onPlay?.(item.id)
-            }}
-          >
-            <Styled.WordImage
+          }
+          return (
+            <Styled.Word
+              as={interaction === 'static' ? 'figure' : 'button'}
+              $static={interaction === 'static'}
+              $symbol={item.symbol !== undefined}
+              $reference={layout === 'reference'}
+              $plain={surface === 'plain'}
+              $completed={markRevealed && revealedIds.includes(item.id)}
               $scene={imageVariant === 'scene'}
               $regular={density === 'regular'}
-              src={item.imageUrl}
-              alt=""
-            />
-            {revealVariant === 'overlay' ? (
-              <Styled.QuestionMark aria-hidden="true">
-                {showInitial && !revealed
-                  ? (item.initialHint ?? item.word[0])
-                  : '?'}
-              </Styled.QuestionMark>
-            ) : null}
-            {revealVariant === 'tooltip' &&
-            (showAll ||
-              revealedIds.includes(item.id) ||
-              (showInitial && !revealed)) ? (
-              <Styled.WordCaption>
-                {showAll || revealedIds.includes(item.id)
-                  ? item.word
-                  : (item.initialHint ?? item.word[0])}
-              </Styled.WordCaption>
-            ) : null}
-            {(
-              revealVariant === 'overlay'
-                ? revealed
-                : hovered === item.id && (revealOnHover || revealed)
-            ) ? (
-              <Styled.WordLabel $floating={revealVariant === 'tooltip'}>
-                <b>{item.word}</b>
-                <small>{item.translation}</small>
-              </Styled.WordLabel>
-            ) : null}
-          </Styled.Word>
-        )
-      })}
-    </Styled.Vocabulary>
+              key={item.id}
+              type={interaction === 'static' ? undefined : 'button'}
+              aria-label={
+                interaction === 'listen'
+                  ? `${playLabel} ${item.imageAlt}${showAll ? `: ${item.word}` : ''}`
+                  : revealed
+                    ? `${item.word}: ${item.translation}`
+                    : `${revealLabel} ${index + 1}: ${item.imageAlt}`
+              }
+              aria-expanded={
+                interaction !== 'reveal'
+                  ? undefined
+                  : activeId !== undefined && revealVariant === 'tooltip'
+                    ? showAll || (activeId === item.id && revealed)
+                    : revealed
+              }
+              onPointerEnter={interaction === 'static' ? undefined : preview}
+              onPointerLeave={() => {
+                setHovered(undefined)
+              }}
+              onFocus={interaction === 'static' ? undefined : preview}
+              onBlur={() => {
+                setHovered(undefined)
+              }}
+              onClick={
+                interaction === 'static'
+                  ? undefined
+                  : () => {
+                      if (interaction === 'reveal') onReveal?.(item.id)
+                      onPlay?.(item.id)
+                    }
+              }
+            >
+              {item.symbol !== undefined ? (
+                <Styled.WordSymbol aria-hidden="true">
+                  {item.symbol}
+                </Styled.WordSymbol>
+              ) : (
+                <Styled.WordImage
+                  $fit={imageFit}
+                  $scene={imageVariant === 'scene'}
+                  $regular={density === 'regular'}
+                  src={item.imageUrl}
+                  alt=""
+                />
+              )}
+              {item.badge ? (
+                <Styled.WordBadge>{item.badge}</Styled.WordBadge>
+              ) : null}
+              {(interaction === 'reveal' && revealVariant === 'overlay') ||
+              (markRevealed && revealedIds.includes(item.id)) ? (
+                <Styled.QuestionMark
+                  $completed={markRevealed && revealedIds.includes(item.id)}
+                  aria-hidden="true"
+                >
+                  {markRevealed && revealedIds.includes(item.id)
+                    ? '✓'
+                    : showInitial && !revealed
+                      ? (item.initialHint ?? item.word[0])
+                      : '?'}
+                </Styled.QuestionMark>
+              ) : null}
+              {showChip ? (
+                <Styled.WordLabel
+                  $revealed={revealed}
+                  $reference={layout === 'reference'}
+                >
+                  <b>{revealed ? item.word : hint}</b>
+                  <small>{item.translation}</small>
+                </Styled.WordLabel>
+              ) : null}
+            </Styled.Word>
+          )
+        })}
+      </Styled.Vocabulary>
+      {controls ? <VocabularyControls {...controls} /> : null}
+    </Styled.VocabularySection>
   )
 }

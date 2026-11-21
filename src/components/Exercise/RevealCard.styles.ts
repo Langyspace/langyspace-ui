@@ -2,6 +2,7 @@ import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+import { Button } from '../Button/Button'
 export { Marker } from './Exercise.shared.styles'
 export const Reveal = styled(Pressable).withConfig({
   componentId: 'lsui-sc-reveal-card',
@@ -42,4 +43,67 @@ export const Reveal = styled(Pressable).withConfig({
 `
 export const Answer = styled.span`
   font-weight: ${theme.typography.fontWeight.semibold};
+`
+
+export const PromptPanel = styled.div`
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  justify-items: start;
+  gap: ${theme.spacing[1]};
+`
+
+export const PromptTrigger = styled(Pressable)`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[3]};
+  min-height: ${theme.spacing[8]};
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  > span:last-child {
+    flex: 1;
+    min-width: 0;
+  }
+  &:focus-visible {
+    outline: 2px solid ${(p) => recipe(p).accent};
+    outline-offset: 3px;
+  }
+`
+
+export const PromptAnswer = styled.p<{ $revealed: boolean; $minLines: number }>`
+  margin: 0;
+  color: ${(p) => recipe(p).muted};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.4;
+  min-block-size: calc(1.4em * ${(p) => Math.max(1, p.$minLines)});
+  visibility: ${(p) => (p.$revealed ? 'visible' : 'hidden')};
+  pointer-events: ${(p) => (p.$revealed ? 'auto' : 'none')};
+`
+
+export const GuidedQuestion = styled.p`
+  margin: 0;
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.5;
+`
+export const GuidanceButton = styled(Button).attrs({
+  variant: 'secondary',
+  size: 'sm',
+})`
+  margin-block: ${theme.spacing[1]};
+`
+export const GuidanceContent = styled.div`
+  display: grid;
+  width: 100%;
+  > p {
+    grid-area: 1 / 1;
+  }
 `

@@ -2,12 +2,39 @@ import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { Button } from '../Button/Button'
+import { IconButton } from '../IconButton/IconButton'
 
 const recipe = resolveSlideTheme
+
+export const SoundButton = styled(IconButton)`
+  flex-shrink: 0;
+  color: ${(p) => recipe(p).muted};
+  background: transparent;
+  &[aria-pressed='true'] {
+    color: ${(p) => recipe(p).foreground};
+  }
+`
+
+export const FirstPageButton = styled(IconButton)`
+  position: absolute;
+  right: max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));
+  bottom: max(${theme.spacing[4]}, env(safe-area-inset-bottom, 0px));
+  z-index: 2;
+  border: 1px solid ${(p) => recipe(p).border};
+  background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
+  &:focus-visible {
+    outline: 3px solid ${(p) => recipe(p).accent};
+    outline-offset: 2px;
+  }
+`
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-deck',
 })`
+  &[tabindex='-1']:focus {
+    outline: none;
+  }
   position: relative;
   display: flex;
   flex-direction: column;
@@ -30,19 +57,55 @@ export const Navigation = styled.nav`
   align-items: center;
   justify-content: space-between;
   gap: ${theme.spacing[3]};
-  min-height: ${(p) => recipe(p).headerHeight};
-  padding: 0 ${theme.spacing[8]};
+  min-height: calc(
+    ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px)
+  );
+  padding: env(safe-area-inset-top, 0px)
+    max(${theme.spacing[8]}, env(safe-area-inset-right, 0px)) 0
+    max(${theme.spacing[8]}, env(safe-area-inset-left, 0px));
   border-bottom: 1px solid ${(p) => recipe(p).border};
   background: ${(p) => recipe(p).headerSurface};
   backdrop-filter: blur(8px);
 
-  @media (max-width: ${theme.breakpoints.sm}) {
-    padding-inline: ${theme.spacing[4]};
+  @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    padding-inline: max(${theme.spacing[4]}, env(safe-area-inset-left, 0px))
+      max(${theme.spacing[4]}, env(safe-area-inset-right, 0px));
   }
 `
 
 export const BackButton = styled(Button)`
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-family: ${theme.typography.fontFamily.sans};
+  line-height: 1.4;
+  height: 36px;
+  min-height: 36px;
+  padding: 0 14px 0 10px;
+  gap: ${theme.spacing[1]};
+  border: 1.5px solid ${(p) => recipe(p).border};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.bold};
+  &&:hover:not(:disabled),
+  &&:active:not(:disabled) {
+    transform: none;
+    background: ${(p) => recipe(p).surface};
+    border-color: ${(p) => recipe(p).foreground};
+  }
+  &:focus-visible {
+    outline: 3px solid ${(p) => recipe(p).accent};
+    outline-offset: 2px;
+    box-shadow: none;
+  }
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+  @media (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    height: 32px;
+    min-height: 32px;
+    padding: 0 ${theme.spacing[3]} 0 ${theme.spacing[2]};
+    font-size: 0.8125rem;
+  }
 `
 
 export const Actions = styled.div`
@@ -57,7 +120,9 @@ export const Actions = styled.div`
 
 export const Progress = styled.progress`
   position: absolute;
-  top: calc(${(p) => recipe(p).headerHeight} - 3px);
+  top: calc(
+    ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) - 3px
+  );
   z-index: 3;
   pointer-events: none;
   display: block;
@@ -74,22 +139,31 @@ export const Progress = styled.progress`
   }
   &::-webkit-progress-value {
     background: ${(p) => recipe(p).indicator};
+    border-radius: 0 3px 3px 0;
+    transition: width ${theme.transitions.duration.fast} linear;
   }
   &::-moz-progress-bar {
     background: ${(p) => recipe(p).indicator};
+    border-radius: 0 3px 3px 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    &::-webkit-progress-value {
+      transition: none;
+    }
   }
 `
 
-export const Viewport = styled.div`
+export const Viewport = styled.div<{ $continuous: boolean }>`
   container-type: size;
   flex: 1 1 0;
   min-width: 0;
   min-height: 0;
-  overflow-y: auto;
+  overflow-y: ${(p) => (p.$continuous ? 'auto' : 'hidden')};
   overflow-x: hidden;
   overscroll-behavior-y: contain;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
+  scroll-snap-type: none;
+  overflow-anchor: none;
+  scroll-behavior: auto;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;

@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { materialDarkTheme } from '../../../src/foundations/theme/materialDarkTheme'
 import { initial, questions } from './VoiceMessage.fixtures'
 import { VoiceMessageDemo, VoiceMessageDeck } from './VoiceMessageDemo'
 import { Stage, Caption, Narrow } from './VoiceMessage.stories.styles'
@@ -46,6 +47,17 @@ export const InSlideDeck: Story = {
 export const Standalone: Story = {
   render: (args) => <VoiceMessageDemo {...args} />,
 }
+export const LightPhoneInDarkMaterial: Story = {
+  args: { contact: { name: 'Leo', status: 'online' } },
+  decorators: [
+    (Story) => (
+      <ThemeProvider theme={materialDarkTheme}>
+        <Story />
+      </ThemeProvider>
+    ),
+  ],
+  tags: ['visual-review'],
+}
 export const NarrowContainer: Story = {
   render: (args) => (
     <Narrow>
@@ -53,6 +65,10 @@ export const NarrowContainer: Story = {
     </Narrow>
   ),
   tags: ['layout-boundary', 'visual-review'],
+}
+export const AutomaticThirdListen: Story = {
+  args: { transcriptReveal: 'third-listen' },
+  tags: ['visual-review'],
 }
 export const Inactive: Story = { args: { active: false } }
 export const MissingRecording: Story = {
@@ -131,6 +147,7 @@ export const ThemeOverride: Story = {
   tags: ['visual-review'],
 }
 export const PlaybackAndTranscript: Story = {
+  args: { transcriptReveal: 'second-listen' },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement)
     const audio = canvasElement.querySelector('audio')!
@@ -186,4 +203,26 @@ export const PlaybackAndTranscript: Story = {
     ).toHaveTextContent(initial.audio.transcript)
     await userEvent.click(canvas.getByRole('button', { name: 'Pausar áudio' }))
   },
+}
+
+export const FollowUpReplay: Story = {
+  args: {
+    transcriptReveal: 'second-listen',
+    replayActionLabel: 'Listen again and check',
+  },
+}
+
+export const ManualTranscriptAfterReplay: Story = {
+  args: {
+    transcriptReveal: 'manual-after-replay',
+    replayActionLabel: 'Listen again and check',
+  },
+  tags: ['visual-review'],
+}
+
+export const ContextBeforeVoiceNote: Story = {
+  args: {
+    greeting: { text: 'Hi! Here’s a quick update.', timestamp: '19:40' },
+  },
+  tags: ['visual-review', 'layout-boundary'],
 }

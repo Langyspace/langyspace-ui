@@ -1,0 +1,788 @@
+{
+  "task": "QUALITY-IMAGE-REFRESH-04",
+  "reservation": "INT-IMAGE-ADOPT-04",
+  "phase": "all33accepted_adopted_consumerQA_passed_ready_cleanfreeze",
+  "checkedAt": "2026-11-19T10:23:46.577590+00:00",
+  "baseline": "a60409772ca87b1f964d5c0418a053fad71435f3",
+  "rootAcceptance": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/quality-review-03-20261119/A101-partial-accepted.json",
+  "rootAcceptanceSha256": "15a094df97bd929a300e1fcd6a774f2698d9c2af21dfde0d8966448154b1337a",
+  "acceptedAssets": [
+    {
+      "id": "a101-scene-tired-tom",
+      "relativeDestination": "stories/materials/A101/assets/scene-tired-tom.webp",
+      "oldSha256": "f8a8063f1ac795b962172d26f13cdf06b35b351ac48b5a60a58ec8c27823088f",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-tired-tom.webp",
+      "newSha256": "649d57150022a9a2c1c331ed9313f2b3dfdb1ab12409120702a03824ac70715c",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "f8a8063f1ac795b962172d26f13cdf06b35b351ac48b5a60a58ec8c27823088f",
+      "copiedSha256": "649d57150022a9a2c1c331ed9313f2b3dfdb1ab12409120702a03824ac70715c",
+      "sourceBytes": 50952,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-cold-julia",
+      "relativeDestination": "stories/materials/A101/assets/scene-cold-julia.webp",
+      "oldSha256": "d958ef296546d04098163cfca9f51eac80c163b5c6ae547cde794d4dbb09d14e",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-cold-julia.webp",
+      "newSha256": "9fbca89f5fffd5f5c4fff1ad1bfa34868016cd4dfa91ca5f08ef0f5a38bb54ed",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "d958ef296546d04098163cfca9f51eac80c163b5c6ae547cde794d4dbb09d14e",
+      "copiedSha256": "9fbca89f5fffd5f5c4fff1ad1bfa34868016cd4dfa91ca5f08ef0f5a38bb54ed",
+      "sourceBytes": 56366,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-sad-josh",
+      "relativeDestination": "stories/materials/A101/assets/scene-sad-josh.webp",
+      "oldSha256": "040e05946d33c43e7d1f4523aeea71b32fe944803838fa0fb75e4223b4f5c2d6",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-sad-josh.webp",
+      "newSha256": "d72cef0d0a3609100ebd4eb3f09a3b7e7cd5023e4578f352436b3143886a6a09",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "040e05946d33c43e7d1f4523aeea71b32fe944803838fa0fb75e4223b4f5c2d6",
+      "copiedSha256": "d72cef0d0a3609100ebd4eb3f09a3b7e7cd5023e4578f352436b3143886a6a09",
+      "sourceBytes": 27694,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-hungry-ana",
+      "relativeDestination": "stories/materials/A101/assets/scene-hungry-ana.webp",
+      "oldSha256": "f06f71d3710f5d2c0e3cedcc75d34cd849a362c74519e4ffb946d1c7309d661d",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-hungry-ana.webp",
+      "newSha256": "1797201c8993db2156dd2b4ce5cad0ad61a7b8a92180b267f92e8cd14fdf7a26",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "f06f71d3710f5d2c0e3cedcc75d34cd849a362c74519e4ffb946d1c7309d661d",
+      "copiedSha256": "1797201c8993db2156dd2b4ce5cad0ad61a7b8a92180b267f92e8cd14fdf7a26",
+      "sourceBytes": 41428,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-korea-jiwoo",
+      "relativeDestination": "stories/materials/A101/assets/scene-korea-jiwoo.webp",
+      "oldSha256": "933490834b3073cae972bebdd0a88dd5081263e134ba1709f941a68b8839246b",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-korea-jiwoo.webp",
+      "newSha256": "7d11f017af1ddb3c92cb85abf501bd7dd2267e40326d96a40e66d39f217c328a",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "933490834b3073cae972bebdd0a88dd5081263e134ba1709f941a68b8839246b",
+      "copiedSha256": "7d11f017af1ddb3c92cb85abf501bd7dd2267e40326d96a40e66d39f217c328a",
+      "sourceBytes": 32906,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-japan-hiro",
+      "relativeDestination": "stories/materials/A101/assets/scene-japan-hiro.webp",
+      "oldSha256": "296f44d6bdfdd7da0c1cea92e8490c3e866b9abd2ce230abc48fcdfb2657d724",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-japan-hiro.webp",
+      "newSha256": "964112348fafb82d5de5bcbe510d070f9f220461d65f9828cf627f6222747527",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "296f44d6bdfdd7da0c1cea92e8490c3e866b9abd2ce230abc48fcdfb2657d724",
+      "copiedSha256": "964112348fafb82d5de5bcbe510d070f9f220461d65f9828cf627f6222747527",
+      "sourceBytes": 32784,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-spain-lucia",
+      "relativeDestination": "stories/materials/A101/assets/scene-spain-lucia.webp",
+      "oldSha256": "41e94e3eb3e7d8294664d9de8089e4ee5ab521f4b9e4cd8f109659fc85ade03e",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-spain-lucia.webp",
+      "newSha256": "549cb37c83308593a05db414c3cd1243df74fa39a5c557ee80d92467cb3c20c0",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "41e94e3eb3e7d8294664d9de8089e4ee5ab521f4b9e4cd8f109659fc85ade03e",
+      "copiedSha256": "549cb37c83308593a05db414c3cd1243df74fa39a5c557ee80d92467cb3c20c0",
+      "sourceBytes": 33468,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-france-chloe",
+      "relativeDestination": "stories/materials/A101/assets/scene-france-chloe.webp",
+      "oldSha256": "a6caf8b9d1bf821bcfd36458361cf28d6c758ce3df5fb98464e49bb1b38ddcba",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-france-chloe.webp",
+      "newSha256": "fbf2476321640cd54a8399ab40375061ba95a6ea998cdf31a7735b0df8591ad0",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "a6caf8b9d1bf821bcfd36458361cf28d6c758ce3df5fb98464e49bb1b38ddcba",
+      "copiedSha256": "fbf2476321640cd54a8399ab40375061ba95a6ea998cdf31a7735b0df8591ad0",
+      "sourceBytes": 39012,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-usa-jake",
+      "relativeDestination": "stories/materials/A101/assets/scene-usa-jake.webp",
+      "oldSha256": "93494cbda0ae3e4f673e5beb66f3a8010ba688351c4fcd4e46f12c4cc33f16e9",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-usa-jake.webp",
+      "newSha256": "01c8c470b547ba495e259726fbbf94c89523ace88acc06632e69a7d52117f4a8",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "93494cbda0ae3e4f673e5beb66f3a8010ba688351c4fcd4e46f12c4cc33f16e9",
+      "copiedSha256": "01c8c470b547ba495e259726fbbf94c89523ace88acc06632e69a7d52117f4a8",
+      "sourceBytes": 37518,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-cold-tom",
+      "relativeDestination": "stories/materials/A101/assets/scene-cold-tom.webp",
+      "oldSha256": "fdc3099ea0bee372a467182a03a1a117f9c2fd454687ada6e73b8d48e25065b6",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-cold-tom.webp",
+      "newSha256": "d9c7b5a0649a72cacb369770237e83f73202c2ac3c99261df3412017a5bdf20f",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "fdc3099ea0bee372a467182a03a1a117f9c2fd454687ada6e73b8d48e25065b6",
+      "copiedSha256": "d9c7b5a0649a72cacb369770237e83f73202c2ac3c99261df3412017a5bdf20f",
+      "sourceBytes": 49894,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-tired-kim",
+      "relativeDestination": "stories/materials/A101/assets/scene-tired-kim.webp",
+      "oldSha256": "5c861c3b8c6ba75a0387cdc4713c60721bb18eb31d4a754f1e1706a8e86c949d",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-tired-kim.webp",
+      "newSha256": "753798124af29006f01f0046eb133840078ad760c79f7b6e7f47d9cf956a99ee",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "5c861c3b8c6ba75a0387cdc4713c60721bb18eb31d4a754f1e1706a8e86c949d",
+      "copiedSha256": "753798124af29006f01f0046eb133840078ad760c79f7b6e7f47d9cf956a99ee",
+      "sourceBytes": 44484,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-scene-hungry-jun",
+      "relativeDestination": "stories/materials/A101/assets/scene-hungry-jun.webp",
+      "oldSha256": "c05781a056fff72831a28e6f425dd227666d83f8a516f99a459a266e8e66db8a",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-hungry-jun.webp",
+      "newSha256": "a82c4c502ba19715e142368294be39c4dfdc30e7b9511b967ab558dafb855ca4",
+      "format": "webp",
+      "width": 768,
+      "height": 512,
+      "aspectRatio": "3:2",
+      "beforeCopySha256": "c05781a056fff72831a28e6f425dd227666d83f8a516f99a459a266e8e66db8a",
+      "copiedSha256": "a82c4c502ba19715e142368294be39c4dfdc30e7b9511b967ab558dafb855ca4",
+      "sourceBytes": 30312,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-e_cards",
+      "relativeDestination": "stories/materials/A101/assets/e_cards.png",
+      "oldSha256": "675a201350aed2522baca2deab185dafa130eb96e99a19306cc59b0d592c3f6f",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/e_cards.png",
+      "newSha256": "b6bc7092813d2bb3c53a893adc072ca9548e90ebcc05ce323bea594cc4a0eabc",
+      "format": "png",
+      "width": 256,
+      "height": 256,
+      "aspectRatio": "1:1",
+      "beforeCopySha256": "675a201350aed2522baca2deab185dafa130eb96e99a19306cc59b0d592c3f6f",
+      "copiedSha256": "b6bc7092813d2bb3c53a893adc072ca9548e90ebcc05ce323bea594cc4a0eabc",
+      "sourceBytes": 46482,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-e_mic",
+      "relativeDestination": "stories/materials/A101/assets/e_mic.png",
+      "oldSha256": "0fbeeb1be51923e6f409eb8f6e851ecf98fe463cb553e1684d7fc45702c04bb5",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/e_mic.png",
+      "newSha256": "9a3f421a037f7ed8a5dd82289935c072eabfc3009ebeca0fb808936768fac6ff",
+      "format": "png",
+      "width": 256,
+      "height": 256,
+      "aspectRatio": "1:1",
+      "beforeCopySha256": "0fbeeb1be51923e6f409eb8f6e851ecf98fe463cb553e1684d7fc45702c04bb5",
+      "copiedSha256": "9a3f421a037f7ed8a5dd82289935c072eabfc3009ebeca0fb808936768fac6ff",
+      "sourceBytes": 28326,
+      "action": "exact-byte-copy"
+    },
+    {
+      "id": "a101-e_brain",
+      "relativeDestination": "stories/materials/A101/assets/e_brain.png",
+      "oldSha256": "c08d46cd6c11dbef58c0a3c3d6408bd69115f0b6cdda0c88a50ef6f8198d71b1",
+      "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/e_brain.png",
+      "newSha256": "c7322fe9c3bdf9ef0f48bff5c37f5e98d9266d5fd53efbb1eb9ed8a4bec2ed72",
+      "format": "png",
+      "width": 256,
+      "height": 256,
+      "aspectRatio": "1:1",
+      "beforeCopySha256": "c08d46cd6c11dbef58c0a3c3d6408bd69115f0b6cdda0c88a50ef6f8198d71b1",
+      "copiedSha256": "c7322fe9c3bdf9ef0f48bff5c37f5e98d9266d5fd53efbb1eb9ed8a4bec2ed72",
+      "sourceBytes": 65839,
+      "action": "exact-byte-copy"
+    }
+  ],
+  "heldUnchanged": {},
+  "commit": false,
+  "neutralBuild": false,
+  "remoteWrites": false,
+  "visualGate": "Visual gate review: pending human",
+  "profiles": {
+    "copied": [
+      {
+        "name": "ana",
+        "source": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/shared/ana-profile-soft-v2.webp",
+        "destination": "stories/materials/shared/assets/ana-profile-soft-v2.webp",
+        "sha256": "fe9d958a3d9056b8dd12ddf85d590e8397c33bd5b263a57e8b50453d00807043",
+        "width": 768,
+        "height": 768,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/shared-ana-profile.txt",
+        "promptSha256": "1d6790ea3b89255a05e4f2842945d78699906490e5bb0099b9ca076c64c80a77"
+      },
+      {
+        "name": "leo",
+        "source": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/shared/leo-profile-soft-v2.webp",
+        "destination": "stories/materials/shared/assets/leo-profile-soft-v2.webp",
+        "sha256": "e9c1d57130c9a8c0e96aab8405bb3cef4b3a4e241cf3760d545a0241866c2cc5",
+        "width": 768,
+        "height": 768,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/shared-leo-profile.txt",
+        "promptSha256": "c381d6cc19320b2b102c88877e299d90859da738f02de3258febb3747bec60c5"
+      }
+    ],
+    "manifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/shared-profiles-manifest.json",
+    "manifestSha256": "643843289ddb59e336374beb84f2cdcf7974ef01c6737d2475cfedd661da1ef3",
+    "recipe": "new square Ana untagged; legacy #ana styles and action bitmap preserved",
+    "preserved": [
+      "Kim",
+      "Raj",
+      "A201 portrait/crop",
+      "TrialB1 portrait/crop",
+      "legacy Ana action and Leo profile"
+    ]
+  },
+  "copyChange": {
+    "component": "SceneExplorer",
+    "contract": "empty labels.initial suppresses paragraph; default independent instruction retained",
+    "consumers": ["TrialA1", "TrialB1", "TrialB2"],
+    "subtitlesReviewed": true
+  },
+  "verification": {
+    "assets": {
+      "copied": 17,
+      "browserDecoded": 17,
+      "byteHashAndMIMEVerified": 17,
+      "profilePromptHashesVerified": 2,
+      "heldA101OldBytesPreserved": 3
+    },
+    "focusedUnit": {
+      "file": "test/components/Exercise/SceneExplorer.test.tsx",
+      "tests": 10,
+      "passed": 10,
+      "newContractTests": 1,
+      "totalUniqueQualityTestsWithReusedPriorEvidence": 85
+    },
+    "scopedLint": "passed for six changed TS/TSX paths",
+    "scopedFormat": "passed; final test file rechecked after selector assertion correction",
+    "diffCheck": "passed",
+    "browser": {
+      "viewports": ["1440x900", "390x844"],
+      "sceneInitialSelectedPairs": 6,
+      "avatarContexts": 28,
+      "beforeAfterScreenshots": 40,
+      "initialInstructionsAbsentWithoutEmptyParagraph": true,
+      "subtitlesRetained": true,
+      "selectionCalloutsInsideViewport": true,
+      "avatarSquareDecodedNoActionCrop": true,
+      "pageErrors": []
+    },
+    "framing32_44_64": "reuse independent30-case image and measurements; reviewed four product examples and mobile scenes visually",
+    "diagnostics": {
+      "unit": "Initial assertion used incomplete toContainHTML fragment; corrected to querySelector(p), no product correction needed",
+      "browser": "Harness initially counted border box as content box and assumed cover for ExercisePanel inherited contain. Corrected measurement to content box and validated square contain/cover; source styles unchanged."
+    },
+    "gesturesNotesAudio": "source unchanged; prior proofs reused",
+    "api": "unchanged optional label semantics; no new props or exports"
+  },
+  "secondPartialAdoption": {
+    "task": "QUALITY-IMAGE-REFRESH-04",
+    "reservation": "INT-IMAGE-ADOPT-04",
+    "phase": "A101_all18_plus_B101_9_plus_shared2_adopted_uncommitted",
+    "baseline": "a60409772ca87b1f964d5c0418a053fad71435f3",
+    "checkedAt": "2026-11-19T10:39:35.397428+00:00",
+    "rootAcceptances": [
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/quality-review-03-20261119/A101-v2-C101-cover-accepted.json",
+        "sha256": "e94a724c4e82f94e9c44ab706afd8e2f5e911ffdd25a3bee8b0335f2df96bd51"
+      },
+      {
+        "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/quality-review-03-20261119/B101-partial9-accepted.json",
+        "sha256": "4b789a51a73b58140deec1b104797b588362f4cc62015d0e51cd41a6aa7dc6b0"
+      }
+    ],
+    "copiedThisStep": [
+      {
+        "id": "a101-scene-happy-mia-v2",
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/a101-scene-happy-mia-v2.json",
+        "evidenceSha256": "44a6658414d832a8728bca98d2c2977ae73214b1b7d6c74402ed1e7f98dfa514",
+        "relativeDestination": "stories/materials/A101/assets/scene-happy-mia.webp",
+        "oldSha256": "720a3f496bfe314d0001ee746c171f624129efd4ea5d3a60dd8e5267304448c4",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-happy-mia-v2.webp",
+        "newSha256": "6ed1a2d292c13db5548bc832a4e788ba05d6c8000df2f45a2395c3be68741ff1",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/a101-scene-happy-mia-v2.txt",
+        "promptSha256": "5d441d293fb829bad892947ce36ac6760d32f28aebbcb79f464329fc5322ae70",
+        "rootBitmapReview": "pass; inspected actual full bitmap, pending final consumer crop and human visual review"
+      },
+      {
+        "id": "a101-scene-germany-lukas-v2",
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/a101-scene-germany-lukas-v2.json",
+        "evidenceSha256": "dd8c8bc89e3f7b8d4ddf0efe38081c91da3778d76607238b90bc9cee2068eec3",
+        "relativeDestination": "stories/materials/A101/assets/scene-germany-lukas.webp",
+        "oldSha256": "64ed3fc5f65f103d29c18fc1b61b9c838410869253b1415640370c93b3e24b30",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-germany-lukas-v2.webp",
+        "newSha256": "ccc5ab2e94677b5a6caee2e2c18f406de4aa54f624f37a5deb545d35939a46fc",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/a101-scene-germany-lukas-v2.txt",
+        "promptSha256": "c22a4834ae292a2049593c1d64c4cbe515e182aae99b7131bcf62e60b51a0eec",
+        "rootBitmapReview": "pass; inspected actual full bitmap, pending final consumer crop and human visual review"
+      },
+      {
+        "id": "a101-scene-angry-leo-v2",
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/a101-scene-angry-leo-v2.json",
+        "evidenceSha256": "61868ed2606434d5f3a0639c6827abc9537a379855df54611a0f45af22cf4d0c",
+        "relativeDestination": "stories/materials/A101/assets/scene-angry-leo.webp",
+        "oldSha256": "20afb59f6d9095306d86392489b6ef8498928343cd048330804e1b3626fbf09e",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/A101/scene-angry-leo-v2.webp",
+        "newSha256": "66471ef6a5f195e1060135889755d2bb6fb673a88cd3ca6af6b0d92e5d7982ca",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/a101-scene-angry-leo-v2.txt",
+        "promptSha256": "f66c005c70493a548e434a4efda06d98c4458c1c84962fe503ac3e9cc3c46286",
+        "rootBitmapReview": "pass; inspected actual full bitmap, pending final consumer crop and human visual review"
+      },
+      {
+        "id": "b101-baking",
+        "relativeDestination": "stories/materials/B101/assets/scene-baking.webp",
+        "oldSha256": "88cf3a9ed74937e7076c0e33e6f474512f9cf0269c99a36b09aec9cbf110b585",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-baking.webp",
+        "newSha256": "957603777f5c636b41b134caebac45b1fc3ce27a91288ea22ec6961e66408416",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-baking.json",
+        "evidenceSha256": "d33604dbce36c108e5e655251935fae2c47e74b63968c7dfc65f86e211d5fc77",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-baking.txt",
+        "promptSha256": "47d3dbe7e49653fc95cf9ba3d64c60598dae016ece2ee88dc14304bdab1b3766",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-swimming",
+        "relativeDestination": "stories/materials/B101/assets/scene-swimming.webp",
+        "oldSha256": "02e0c4a229584c96779c9a733784963d0ab88383013020d7f4802735b37d31ee",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-swimming.webp",
+        "newSha256": "831d5b87cb9273abf20248449d816eca4eb7e47498506943fee5ee0f9edd7ff0",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-swimming.json",
+        "evidenceSha256": "1b57fbccb46a9247519abda719c363657b0df94fd387b727006ff65a45df3892",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-swimming.txt",
+        "promptSha256": "3524c7e8d1da0a30131a13ad30897748c19afc36ae19ca750ee0925dbdc8fe8d",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-gardening",
+        "relativeDestination": "stories/materials/B101/assets/scene-gardening.webp",
+        "oldSha256": "22ccd2fb8c61b17db2383551e69d91af8cbf27284dabe832b43e9fb2a5a44eec",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-gardening.webp",
+        "newSha256": "356ad56439fc70d781590580e005c0cd46ae664f2db433e3beab5a361baa3a1d",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-gardening.json",
+        "evidenceSha256": "14f476d16a8f8f89ff78bade13e6d5234ec943bb60b68f8f1e8d07dc8cb17df9",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-gardening.txt",
+        "promptSha256": "71c0a44bf29608da1ee54719d5b8a2583d11c2e6756260a80aeda9c30389b105",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-guitar",
+        "relativeDestination": "stories/materials/B101/assets/scene-guitar.webp",
+        "oldSha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-guitar.webp",
+        "newSha256": "8d6dfa30b7c4192130ee97ff89fabba0a20a7430e1eab36c180d3ddaeb8abf60",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-guitar.json",
+        "evidenceSha256": "30826ea319176a9a2d2b5fbbecd5c1a91b62e38d65ef7ba07e560f77acad315a",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-guitar.txt",
+        "promptSha256": "d248ee1c5a3c346de11a8c18095d254527501d3b94972419a7d5bdbe90851ded",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-soccer",
+        "relativeDestination": "stories/materials/B101/assets/scene-soccer.webp",
+        "oldSha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-soccer.webp",
+        "newSha256": "e828aa5a7dfbe2f50b0db921abcbc5e5bca65b1f3ea1ab3021a2faa7031c1ac3",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-soccer.json",
+        "evidenceSha256": "7c2c9c93bb353e194fb4b345f73ece7b4ffae2192862a825d688a57c797ea8c4",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-soccer.txt",
+        "promptSha256": "1e3c3a82337f1bab7d958fae090a1b6b822eb6decd54b10dbf98a35cc5050068",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-shopping",
+        "relativeDestination": "stories/materials/B101/assets/scene-shopping.webp",
+        "oldSha256": "f026549cc5cf1ed2561085247bc5275a5af1aa310660b61182f55f472eed8a15",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-shopping.webp",
+        "newSha256": "0f3d012b74b032c621e32402cf7ebecab3ddb35f825a0c1efbe0a84ad356d6f4",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-shopping.json",
+        "evidenceSha256": "649a468dcbb9ec8a46f42816043fa7ca6bc160f4ae8e99ede6a739e46b108654",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-shopping.txt",
+        "promptSha256": "a86f308c67344f48a65a5020d58f7ff5408a8a8d5673d6386a4158c7a74a3efe",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-tv",
+        "relativeDestination": "stories/materials/B101/assets/scene-tv.webp",
+        "oldSha256": "f2d10708aced14d9b8c3c871c7f3ac75810de1ebad8e8353401dd9370d476569",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-tv.webp",
+        "newSha256": "9cf0e4547a0154e69595816e0ba727875ddc056d80119fddaad4ea0c6b75b26b",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-tv.json",
+        "evidenceSha256": "71faa6f51f723ec0cb15af22498cd5f8467aa7e04bfd89f5c50e09624b730035",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-tv.txt",
+        "promptSha256": "7554ff775829cdeb681eaf631e3a524091619f87780aad3bc4ab6271112cc2e4",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-muddy-shoes",
+        "relativeDestination": "stories/materials/B101/assets/scene-muddy-shoes.webp",
+        "oldSha256": "3cc3b4b7e3b26dfc050ba8bc6bc66762e334231aeec2e74a72d234321040a77d",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-muddy-shoes.webp",
+        "newSha256": "0a98eb69aa327bcc1d91e0c66a30c045a883551c092a895b33c9099688d3c621",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-muddy-shoes.json",
+        "evidenceSha256": "fb2ab75cb241e1afdd385ce8cc2a0eded9f7677224639acef376a68f9125b487",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-muddy-shoes.txt",
+        "promptSha256": "a472f097b18090603093682748f228ebdef87e28884bde4c5670ea639d241c46",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      },
+      {
+        "id": "b101-bike-v2",
+        "relativeDestination": "stories/materials/B101/assets/scene-bike.webp",
+        "oldSha256": "2bc6694c3124a538c81d4b54213bfa0c3d4f0fccdb9e24900040c74011168c61",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-bike-v2.webp",
+        "newSha256": "4dee48b4e39ecf7338c2df3da789f22a87b34a3636645e3dcec554b252c615a4",
+        "width": 768,
+        "height": 512,
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-bike-v2.json",
+        "evidenceSha256": "3b60d2f81dfdeb255635da573b8d9d284b7ec51ac757999e28eb3ca26ef4e2f2",
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-bike-v2.txt",
+        "promptSha256": "ac09d3fb72178491f670ec28882332f9ce3147ac2dbc640733b31551551c54d8",
+        "review": "Independent semanticreview eight unchanged images; root full bitmap bikev2 physically corrected; final product crop still pending"
+      }
+    ],
+    "evidenceObservation": [
+      {
+        "id": "a101-scene-happy-mia-v2",
+        "rootEvidenceSha256": "44a6658414d832a8728bca98d2c2977ae73214b1b7d6c74402ed1e7f98dfa514",
+        "currentEvidenceSha256": "56cef5466fe75658174ab0a378e2e0431fc260601608106eef501d9f2c8ff5f2",
+        "matchesRootEvidenceHash": false,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "a101-scene-germany-lukas-v2",
+        "rootEvidenceSha256": "dd8c8bc89e3f7b8d4ddf0efe38081c91da3778d76607238b90bc9cee2068eec3",
+        "currentEvidenceSha256": "3ede69f82115ad60528d05735b6acde6e364cd2f2eaaa701a4c8f8efe3e99cf7",
+        "matchesRootEvidenceHash": false,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "a101-scene-angry-leo-v2",
+        "rootEvidenceSha256": "61868ed2606434d5f3a0639c6827abc9537a379855df54611a0f45af22cf4d0c",
+        "currentEvidenceSha256": "a57da5f387cbfd1f40595606cab0eb920b7941282d3c065d7c07e20a42ab2117",
+        "matchesRootEvidenceHash": false,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-baking",
+        "rootEvidenceSha256": "d33604dbce36c108e5e655251935fae2c47e74b63968c7dfc65f86e211d5fc77",
+        "currentEvidenceSha256": "d33604dbce36c108e5e655251935fae2c47e74b63968c7dfc65f86e211d5fc77",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-swimming",
+        "rootEvidenceSha256": "1b57fbccb46a9247519abda719c363657b0df94fd387b727006ff65a45df3892",
+        "currentEvidenceSha256": "1b57fbccb46a9247519abda719c363657b0df94fd387b727006ff65a45df3892",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-gardening",
+        "rootEvidenceSha256": "14f476d16a8f8f89ff78bade13e6d5234ec943bb60b68f8f1e8d07dc8cb17df9",
+        "currentEvidenceSha256": "14f476d16a8f8f89ff78bade13e6d5234ec943bb60b68f8f1e8d07dc8cb17df9",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-guitar",
+        "rootEvidenceSha256": "30826ea319176a9a2d2b5fbbecd5c1a91b62e38d65ef7ba07e560f77acad315a",
+        "currentEvidenceSha256": "30826ea319176a9a2d2b5fbbecd5c1a91b62e38d65ef7ba07e560f77acad315a",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-soccer",
+        "rootEvidenceSha256": "7c2c9c93bb353e194fb4b345f73ece7b4ffae2192862a825d688a57c797ea8c4",
+        "currentEvidenceSha256": "7c2c9c93bb353e194fb4b345f73ece7b4ffae2192862a825d688a57c797ea8c4",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-shopping",
+        "rootEvidenceSha256": "649a468dcbb9ec8a46f42816043fa7ca6bc160f4ae8e99ede6a739e46b108654",
+        "currentEvidenceSha256": "649a468dcbb9ec8a46f42816043fa7ca6bc160f4ae8e99ede6a739e46b108654",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-tv",
+        "rootEvidenceSha256": "71faa6f51f723ec0cb15af22498cd5f8467aa7e04bfd89f5c50e09624b730035",
+        "currentEvidenceSha256": "71faa6f51f723ec0cb15af22498cd5f8467aa7e04bfd89f5c50e09624b730035",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-muddy-shoes",
+        "rootEvidenceSha256": "fb2ab75cb241e1afdd385ce8cc2a0eded9f7677224639acef376a68f9125b487",
+        "currentEvidenceSha256": "fb2ab75cb241e1afdd385ce8cc2a0eded9f7677224639acef376a68f9125b487",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      },
+      {
+        "id": "b101-bike-v2",
+        "rootEvidenceSha256": "3b60d2f81dfdeb255635da573b8d9d284b7ec51ac757999e28eb3ca26ef4e2f2",
+        "currentEvidenceSha256": "3b60d2f81dfdeb255635da573b8d9d284b7ec51ac757999e28eb3ca26ef4e2f2",
+        "matchesRootEvidenceHash": true,
+        "exactAcceptedBitmapAndPrompt": true,
+        "currentOriginalFileMatchesEvidence": true
+      }
+    ],
+    "previous17AssetReceipt": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-4/outputs/image-adoption-plan-20261119/partial-adoption-receipt.json",
+    "cumulativeAssets": 29,
+    "C1Cover": "v1notcopied/catalogunchanged; awaitingacceptedv2",
+    "remaining": [
+      "B101 hot",
+      "B101 wet-shirt",
+      "B101 bus",
+      "C101 cover v2 and sole catalog.coverSource field"
+    ],
+    "noContentCodeChange": true,
+    "commit": false,
+    "neutralBuild": false,
+    "remoteWrites": false,
+    "qaMetadataReconciliation": [
+      {
+        "id": "a101-scene-happy-mia-v2",
+        "oldEvidenceSha256": "44a6658414d832a8728bca98d2c2977ae73214b1b7d6c74402ed1e7f98dfa514",
+        "currentEvidenceSha256": "56cef5466fe75658174ab0a378e2e0431fc260601608106eef501d9f2c8ff5f2",
+        "oldBytesReconstructedExactly": true,
+        "fieldsChanged": ["state", "bitmapQa"],
+        "stateBefore": "generated_pending_visual_qa",
+        "stateAfter": "bitmap_qa_pass_human_review_pending",
+        "bitmapPromptOriginalUnchanged": true
+      },
+      {
+        "id": "a101-scene-germany-lukas-v2",
+        "oldEvidenceSha256": "dd8c8bc89e3f7b8d4ddf0efe38081c91da3778d76607238b90bc9cee2068eec3",
+        "currentEvidenceSha256": "3ede69f82115ad60528d05735b6acde6e364cd2f2eaaa701a4c8f8efe3e99cf7",
+        "oldBytesReconstructedExactly": true,
+        "fieldsChanged": ["state", "bitmapQa"],
+        "stateBefore": "generated_pending_visual_qa",
+        "stateAfter": "bitmap_qa_pass_human_review_pending",
+        "bitmapPromptOriginalUnchanged": true
+      },
+      {
+        "id": "a101-scene-angry-leo-v2",
+        "oldEvidenceSha256": "61868ed2606434d5f3a0639c6827abc9537a379855df54611a0f45af22cf4d0c",
+        "currentEvidenceSha256": "a57da5f387cbfd1f40595606cab0eb920b7941282d3c065d7c07e20a42ab2117",
+        "oldBytesReconstructedExactly": true,
+        "fieldsChanged": ["state", "bitmapQa"],
+        "stateBefore": "generated_pending_visual_qa",
+        "stateAfter": "bitmap_qa_pass_human_review_pending",
+        "bitmapPromptOriginalUnchanged": true
+      }
+    ],
+    "verification": {
+      "browserAssetDecode": 12,
+      "promptHashesVerified": 12,
+      "byteHashesVerified": 12,
+      "actionsBeforeAfterPairs": 28,
+      "widths": [1440, 390],
+      "pageErrors": [],
+      "statesStillHoldingOldImages": [
+        "B101 clue1/hot",
+        "B101 clue2/wet-shirt",
+        "B101 answer2/bus"
+      ],
+      "representativeImagesInspected": [
+        "A101 Mia desktop",
+        "A101 Lukas mobile",
+        "A101 angry Leo mobile",
+        "B101 vocabulary2 desktop/bike v2",
+        "B101 muddy-shoes clue mobile",
+        "B101 bike answer mobile"
+      ],
+      "C1": "v1nevercopied; catalogoldhashunchanged; v2pending",
+      "contentStylesAudioGesturesUnchanged": true
+    }
+  },
+  "finalImageAdoption": {
+    "task": "QUALITY-IMAGE-REFRESH-04",
+    "checkedAt": "2026-11-19T10:54:13.333144+00:00",
+    "sourceBaseline": "a60409772ca87b1f964d5c0418a053fad71435f3",
+    "rootManifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/quality-review-03-20261119/final-image-adoption-accepted.json",
+    "rootManifestSha256": "0fd8ae055e6131eda35233e636f357a1d77b0e1d376fea7895a4c63b9fa10d4b",
+    "copiedThisStep": [
+      {
+        "id": "b101-hot",
+        "relativeDestination": "stories/materials/B101/assets/scene-hot.webp",
+        "oldSha256": "7f3aa606248cc82724cab59d0385e470d573f619acf814c89ca51efd0796c349",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-hot.webp",
+        "newSha256": "0eb991329824ec42c066498b1fc2eee634e48aedb47e0ab7f80d6cb68c781b15",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-hot.txt",
+        "promptSha256": "c3efe58c50b47e1c65bbfc28c863a0a1d64d55f5015293a931dd869905219f32",
+        "original": {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/originals/b101-hot.png",
+          "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-4c6e6c05-ccce-4780-a31a-d8b571f06629.png",
+          "sha256": "be5a7d8d77b7b4daf8d69bfd44309087d3a3ea7e3809fd980866cd20b90afe5b",
+          "width": 1536,
+          "height": 1024
+        },
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-hot.json",
+        "rootReview": "Full bitmap inspected; B1clue2preserveambiguity, busrevealscauseonlyatanswer; C1v2actual16:10 crop shows completeface/hair/shirtcontinuous tobottom. Consumerfitcheckstillrequired."
+      },
+      {
+        "id": "b101-wet-shirt",
+        "relativeDestination": "stories/materials/B101/assets/scene-wet-shirt.webp",
+        "oldSha256": "e36f7b9431bc7facd8f92dc59ff6096d3d6c4f06001f1d48b05b785d7eb0de5f",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-wet-shirt.webp",
+        "newSha256": "069d65a9a77ede3bcbe82060ddde76fc4232efbbd68fcc1cd03791b2be51ab82",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-wet-shirt.txt",
+        "promptSha256": "c3cf50c35da4ab97b111a7ffa4947c3d84972df28cbc0f28ceb68c75a4c9b854",
+        "original": {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/originals/b101-wet-shirt.png",
+          "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-6f42c098-084d-4c15-b96c-8daf2cdc0870.png",
+          "sha256": "838df50ee0e685e61fac2f20854c585de4ec4e4ee768a6bc95742842dd2e60f6",
+          "width": 1536,
+          "height": 1024
+        },
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-wet-shirt.json",
+        "rootReview": "Full bitmap inspected; B1clue2preserveambiguity, busrevealscauseonlyatanswer; C1v2actual16:10 crop shows completeface/hair/shirtcontinuous tobottom. Consumerfitcheckstillrequired."
+      },
+      {
+        "id": "b101-bus",
+        "relativeDestination": "stories/materials/B101/assets/scene-bus.webp",
+        "oldSha256": "baada491df7d5a9ef01de5f3e13b7b42143ba29834e3f457caa4f735fa1a2338",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/B101/scene-bus.webp",
+        "newSha256": "deddfc52ede3463c05824316cd43948a31ec53fddd1f1111700152c6600993c9",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/b101-bus.txt",
+        "promptSha256": "c15efa10ea2a8d1b3f55a2341700124b69af671a9890b8be393081541712d53f",
+        "original": {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/originals/b101-bus.png",
+          "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-159a89b0-bd4e-40f5-9564-b87322512ab3.png",
+          "sha256": "58d53cdbfbd0fdb7599c68ef50847e7720b3c7021553bad1f307461c9aa72592",
+          "width": 1536,
+          "height": 1024
+        },
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/b101-bus.json",
+        "rootReview": "Full bitmap inspected; B1clue2preserveambiguity, busrevealscauseonlyatanswer; C1v2actual16:10 crop shows completeface/hair/shirtcontinuous tobottom. Consumerfitcheckstillrequired."
+      },
+      {
+        "id": "c101-ana-catalog-cover-v2",
+        "relativeDestination": "stories/materials/C101/assets/cover-ana-soft-dimension-v2.webp",
+        "oldSha256": "0",
+        "newPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/assets/C101/cover-ana-soft-dimension-v2.webp",
+        "newSha256": "5cc703371537bec73d724ded4b6057b01b179d414dc8d07ffef62a2cca16b71e",
+        "width": 768,
+        "height": 512,
+        "promptPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/prompts/c101-ana-catalog-cover-v2.txt",
+        "promptSha256": "1db9d3a20822fc6d772f08b9be37d807457e140d683d1926bf8a205e06f55017",
+        "original": {
+          "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/originals/c101-ana-catalog-cover-v2.png",
+          "sourcePath": "/Users/margaridamartins/.codex/generated_images/01a1eb29-487e-7890-8c40-017aa58c0c60/exec-38754334-4874-47e4-8df2-ad978dc1fb38.png",
+          "sha256": "4b60f9810e2764653037b02025caf1b964de03b2eb553a6a5cc0da7b6fe5c94d",
+          "width": 1536,
+          "height": 1024
+        },
+        "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-5/outputs/course-three-soft-dimension-20261119/evidence/c101-ana-catalog-cover-v2.json",
+        "rootReview": "Full bitmap inspected; B1clue2preserveambiguity, busrevealscauseonlyatanswer; C1v2actual16:10 crop shows completeface/hair/shirtcontinuous tobottom. Consumerfitcheckstillrequired."
+      }
+    ],
+    "all33AcceptedHashesVerified": true,
+    "catalogOnlyFieldChanged": {
+      "path": "stories/materials/Standalone/catalog.json",
+      "expectedCurrentFileSha256": "590e2bef2e8aa828b15dfc403c64b68fae139fda403d1e06d7645434272e224a",
+      "materialKey": "c1-01",
+      "field": "coverSource",
+      "oldValue": "stories/materials/UXLab/assets/bust_ana.png",
+      "newValue": "stories/materials/C101/assets/cover-ana-soft-dimension-v2.webp",
+      "onlyFieldChange": true
+    },
+    "legacyPNGSha256Preserved": "77c16b020d6fdbb1394a3a04a7da6ac9ed63cf984c87f1b7e20c43e71a592576",
+    "v1CoverAbsent": true,
+    "consumerQA": "passed; source picture fit, native byte decode, actual Teacher16:10 cover recipe; humanreviewpending",
+    "commit": false,
+    "remoteWrites": false
+  },
+  "finalConsumerQA": {
+    "summary": "docs/epics/materials-quality-03/evidence/image-refresh-04/consumer-qa.json",
+    "pairs": 90,
+    "coverPairs": 6,
+    "sourceFocusedUnit": 85,
+    "newFinalFourDecode": 4,
+    "newFinalFourPromptsOriginalHashesVerified": 4,
+    "A101FullMediaContexts": 30,
+    "B101Contexts": 20,
+    "sceneAvatarContexts": 40,
+    "rootProofReuse": "final33-source-progress-verification.json",
+    "sourceCodeUnchangedAfterPassingChecks": true
+  }
+}

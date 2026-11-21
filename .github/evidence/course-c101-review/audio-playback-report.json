@@ -1,0 +1,359 @@
+{
+  "assertions": [
+    {
+      "name": "c101-D6-1 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-1 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-2 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-2 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-3 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-3 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-4 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-4 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-5 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-5 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-6 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-6 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-7 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-7 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-8 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-8 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-9 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-9 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-10 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-10 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-11 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-11 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-12 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-12 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-13 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-13 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-14 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-D6-14 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-0-0 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-0-0 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-0-1 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-0-1 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-1-0 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-1-0 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-1-1 decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-pair-1-1 natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "c101-raj-message decodes and advances with approved duration",
+      "passed": true
+    },
+    {
+      "name": "c101-raj-message natural 1x playback",
+      "passed": true
+    },
+    {
+      "name": "Dialogue playlist starts",
+      "passed": true
+    },
+    {
+      "name": "Dialogue pauses",
+      "passed": true
+    },
+    {
+      "name": "Dialogue resumes",
+      "passed": true
+    },
+    {
+      "name": "Page change cancels dialogue audio",
+      "passed": true
+    },
+    {
+      "name": "Raj playback advances",
+      "passed": true
+    },
+    {
+      "name": "Raj starts 1x",
+      "passed": true
+    },
+    {
+      "name": "Raj pauses",
+      "passed": true
+    },
+    {
+      "name": "Intonation clip playback advances",
+      "passed": true
+    },
+    {
+      "name": "Portable built HTML executes all 17 pages",
+      "passed": true
+    },
+    {
+      "name": "Portable embedded Raj MP3 plays",
+      "passed": true
+    },
+    {
+      "name": "Portable audio self-contained",
+      "passed": true
+    },
+    {
+      "name": "No runtime audio errors",
+      "passed": true
+    }
+  ],
+  "clips": [
+    {
+      "id": "c101-D6-1",
+      "duration": 3.529433,
+      "time": 0.023295,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-2",
+      "duration": 5.433469,
+      "time": 0.080678,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-3",
+      "duration": 1.811156,
+      "time": 0.075202,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-4",
+      "duration": 3.622313,
+      "time": 0.077368,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-5",
+      "duration": 2.554195,
+      "time": 0.078817,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-6",
+      "duration": 1.207438,
+      "time": 0.069121,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-7",
+      "duration": 6.222948,
+      "time": 0.082941,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-8",
+      "duration": 4.551111,
+      "time": 0.07373,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-9",
+      "duration": 4.690431,
+      "time": 0.070725,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-10",
+      "duration": 5.387029,
+      "time": 0.07858,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-11",
+      "duration": 5.06195,
+      "time": 0.066642,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-12",
+      "duration": 3.575873,
+      "time": 0.076595,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-13",
+      "duration": 5.387029,
+      "time": 0.067604,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-D6-14",
+      "duration": 5.34059,
+      "time": 0.076557,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-pair-0-0",
+      "duration": 2.16,
+      "time": 0.077417,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-pair-0-1",
+      "duration": 2.08,
+      "time": 0.076703,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-pair-1-0",
+      "duration": 3.44,
+      "time": 0.077388,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-pair-1-1",
+      "duration": 2.8,
+      "time": 0.076199,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    },
+    {
+      "id": "c101-raj-message",
+      "duration": 32.275737,
+      "time": 0.07479,
+      "paused": false,
+      "ready": 4,
+      "rate": 1
+    }
+  ],
+  "errors": []
+}

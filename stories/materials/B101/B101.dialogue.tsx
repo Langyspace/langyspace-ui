@@ -1,11 +1,11 @@
+import { PromptExercise } from '../shared/LessonExercises'
 import { useState } from 'react'
-import { Button } from '../../../src/components/Button/Button'
-import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
+import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
-import { content, ana, kim, toggle } from './B101.data'
+import { content, ana, kim, toggle, paintingScene } from './B101.data'
 import type { SpeechSectionProps } from './B101.types'
-import * as S from './B101.styles'
+import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
+import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 export function DialogueSection({
   part,
   speech,
@@ -15,6 +15,7 @@ export function DialogueSection({
     part === 0 ? content.dialogue.slice(0, 6) : content.dialogue.slice(6)
   return (
     <LearningDialogue
+      density="compact"
       lines={rows.map((line) => ({
         id: line.id,
         speaker: line.who === 'kim' ? 'Kim' : 'Ana',
@@ -34,118 +35,82 @@ export function DialogueSection({
     />
   )
 }
-export function ComprehensionSection() {
-  const [ids, setIds] = useState<string[]>([])
+export function ComprehensionSection({ part }: { part?: number }) {
   return (
-    <S.Stack>
-      {content.comprehension.map((row, i) => (
-        <RevealCard
-          key={row.q}
-          marker={i + 1}
-          answer={row.a}
-          revealed={ids.includes(row.q)}
-          onClick={() => setIds((old) => toggle(old, row.q))}
-        >
-          {row.q}
-        </RevealCard>
-      ))}
-    </S.Stack>
+    <PromptExercise
+      items={content.comprehension
+        .filter(
+          (_, index) =>
+            part === undefined || (part === 0 ? index < 2 : index >= 2),
+        )
+        .map((item, index) => ({
+          id: String(index),
+          prompt: item.q,
+          answer: item.a,
+        }))}
+    />
   )
 }
-export function GrammarSection({ speech }: SpeechSectionProps) {
-  const [ids, setIds] = useState<string[]>([]),
-    [starters, setStarters] = useState(false)
-  const all = content.grammar.every((row) => ids.includes(row[4] ?? ''))
+export function GrammarSection() {
   return (
-    <S.GrammarColumns>
-      <S.Stack>
-        <S.Explanation>
-          <h3>A atividade ou o resultado?</h3>
-          <p>
-            <b>have / has been + verbo com -ing</b>: o que você vem fazendo até
-            agora, e quanto tempo (I’ve been painting all week). Muitas vezes
-            ainda se vê a marca.
-          </p>
-          <p>
-            <b>have / has + particípio</b>: o que ficou pronto, quanto ou
-            quantos (I’ve painted the kitchen. I’ve baked three cakes).
-          </p>
-        </S.Explanation>
-        {all ? (
-          <S.Explanation>
-            <h3>Há duas semanas = for two weeks</h3>
-            <p>
-              Em português: estou correndo <b>há</b> duas semanas; corro{' '}
-              <b>desde</b> segunda. Em inglês, não vem I’m running nem I run:{' '}
-              <b>
-                I’ve been running for two weeks. I’ve been running since Monday.
-              </b>
-            </p>
-          </S.Explanation>
-        ) : null}
-      </S.Stack>
-      <S.Stack>
-        <GrammarTable
-          title="Doing or done?"
-          columns={{
-            subject: 'O que você conta',
-            verb: 'Palavras',
-            example: 'Exemplo',
-          }}
-          rows={content.grammar.map(
-            ([subject, verb, example, translation, id]) => ({
-              id: id ?? '',
-              subject,
-              verb,
-              example,
-              translation,
-              audioLabel: `Listen: ${example}`,
-            }),
-          )}
-          hiddenAnswers
-          revealedIds={ids}
-          revealLabel="Show words and example"
-          onReveal={(id) => {
-            setIds((old) => [...old, id])
-            speech.speak([
+    <RolePlayExercise
+      presentation="instructions"
+      density="compact"
+      situation=""
+      steps={[]}
+      completedIds={[]}
+      onStepToggle={() => undefined}
+      image={{
+        src: paintingScene,
+        alt: 'Ana and Kim in the blue living room, with Ana holding a paint roller.',
+      }}
+      tracker={
+        <Common.Stack>
+          <GrammarTable
+            title="Activity and result"
+            captionVisibility="screen-reader"
+            columns={{
+              subject: 'What do you want to say?',
+              verb: 'Form',
+              example: 'Ana’s update',
+            }}
+            rows={[
               {
-                id,
-                text: content.grammar.find((row) => row[4] === id)?.[2] ?? '',
+                id: 'activity',
+                subject: 'What have you been doing?',
+                verb: 'have / has been + -ing',
+                example: 'I’ve been painting all week.',
               },
-            ])
-          }}
-          onPlay={(id) =>
-            speech.speak([
               {
-                id,
-                text: content.grammar.find((row) => row[4] === id)?.[2] ?? '',
+                id: 'result',
+                subject: 'How many rooms have you painted?',
+                verb: 'have / has + past participle',
+                example: 'I’ve painted two rooms.',
               },
-            ])
-          }
-        />
-        {all ? (
-          <S.Now>
-            <b>Now you</b>
-            <p>
-              One thing you’ve been doing lately, and how long. Then one thing
-              you’ve finished this week.
-            </p>
-            <Button
-              variant="secondary"
-              size="sm"
-              aria-expanded={starters}
-              onClick={() => setStarters(!starters)}
-            >
-              {starters ? 'Hide starters' : 'Show starters'}
-            </Button>
-            {starters ? (
-              <S.Hint>
-                I’ve been …ing for … · I’ve finished … · I’ve …ed …
-              </S.Hint>
-            ) : null}
-          </S.Now>
-        ) : null}
-      </S.Stack>
-    </S.GrammarColumns>
+            ]}
+            explanation={
+              <Common.Stack>
+                <Common.Hint>
+                  The continuous tells us about the activity. It can still be
+                  happening or may have just stopped.
+                </Common.Hint>
+                <Common.Hint>
+                  The simple form tells us the result: two rooms are finished.
+                </Common.Hint>
+                <Common.Hint>
+                  How long? For a period: for two weeks. Since a starting point:
+                  since Monday.
+                </Common.Hint>
+              </Common.Stack>
+            }
+          />
+        </Common.Stack>
+      }
+    >
+      <Common.Hint>
+        Ana has spent the week painting. The living room and kitchen are
+        finished; the bedroom is next.
+      </Common.Hint>
+    </RolePlayExercise>
   )
 }

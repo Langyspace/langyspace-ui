@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "taskId": "UIUX-FRONTEND-REACT-REVIEW-01",
+  "owner": "uiux",
+  "status": "done",
+  "completedAt": "2026-11-18T21:58:42.046736+00:00",
+  "scope": "Read-only review requested by Integration per orchestrator:17FrontendReactscreens plus5repaired mechanics. No React/Teacher/Claude source, PR, build or publication writes by this reviewer.",
+  "verdict": "ready_after_human_visual_decisions",
+  "unresolvedCounts": {
+    "blocker": 0,
+    "quality_issue": 0,
+    "advisory": 2
+  },
+  "resolvedCounts": {
+    "blocker": 1,
+    "quality_issue": 2
+  },
+  "runtime": {
+    "url": "http://127.0.0.1:6041/index.html?studentPortalOrigin=https://student.staging.langy.space#tema-frontend",
+    "branch": "feat/materials-a201-exp-a1-20261117",
+    "headBeforeCommit": "9186abb61a0469e86210f2f2e037a8f711ed0fa0",
+    "state": "Integration-owned uncommitted working tree; subsequent source changes invalidate affected evidence only.",
+    "sourceSnapshotSha256": "8ab03020a5c8f4673a71dee90771f21289e124f48efa1b5c966942c1732bc9d4",
+    "sourceHashes": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/source-hashes-final.json"
+  },
+  "coverage": {
+    "ids": [
+      "s1",
+      "s2",
+      "s31",
+      "s32",
+      "s33",
+      "s4",
+      "s51",
+      "s52",
+      "s6",
+      "s62",
+      "s61",
+      "s7",
+      "s8",
+      "s9",
+      "s10",
+      "s11",
+      "s12"
+    ],
+    "initialIndependentDesktop": "All17defaults at1280x800 compared to original source; no page errors, broken images or horizontal overflow.",
+    "currentFinalMatrix": {
+      "owner": "integracao",
+      "path": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/frontend-material/verification.json",
+      "sha256": "fd4caca660a59ef9119f3dd77087ada8add9ada1beb63569f9278abdd1928e88",
+      "pairedRows": 68,
+      "widths": "1280x900,1280x620,390x844,320x800",
+      "errors": [],
+      "review": "Reused final before/after desktop images for all17screens, then inspected5contact sheets; did not rerun Sofia200pairs or repeat owner matrix. Unchanged s6/s62/s61/s11 images retained from first pass; affected defaults recaptured by Integration.",
+      "referenceManifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/final-matrix-reference.json"
+    },
+    "changedStateRechecks": "Vocabulary real MP3; s8all8turns; s1inlinehero; s33compactbubbles/390reflow.",
+    "pageErrors": []
+  },
+  "fiveMechanics": [
+    {
+      "area": "Warm up reflow",
+      "result": "passed",
+      "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/mechanics.json",
+      "detail": "s31/s32/s33 at320/390: scrollWidth==clientWidth, including shown options; current compact s33 at390 hasheight844/no overflow."
+    },
+    {
+      "area": "Tall-page keyboard/progress",
+      "result": "passed",
+      "detail": "PageDown on tall s2 exposes rest and retains current page. Native End100/Home0 verified.",
+      "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/mechanics.json"
+    },
+    {
+      "area": "Notes",
+      "result": "passed",
+      "detail": "Draft survives reload; editing arrows do not navigate the lesson; Escape/X return focus to Notes.",
+      "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/mechanics.json"
+    },
+    {
+      "area": "Clipboard recovery",
+      "result": "passed_simulated_denial",
+      "detail": "Failure offers focused/visible selectable3environment-bound Student tab URLs. Provisioning of specific Frontend activities is explicitly outside this review.",
+      "evidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/mechanics.json"
+    },
+    {
+      "area": "Audio feedback/recovery",
+      "result": "passed",
+      "detail": "Global Loading recording/Cancel playback until native playing, waiting restores loading, cancel clears it, error/retry recovers. These are held-play/event simulations; unmocked V.0 click separately completed successfully.",
+      "evidence": [
+        "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/audio-feedback.json",
+        "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/targeted-recheck.json"
+      ]
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "id": "RR-01",
+      "classification": "blocker",
+      "priority": "P1",
+      "surface": "s2Vocabulary",
+      "finding": "One click invoked media.play twice through onReveal and onPlay; second call paused native V.0 at0s.",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/Frontend/Frontend.practice.tsx",
+      "beforeEvidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/vocabulary-native.json",
+      "fixOwner": "integracao",
+      "resolution": "onReveal only changes reveal state; onPlay owns playback once.",
+      "recheck": "One native play call, paused=false/time>0, clip reached ended without error.",
+      "afterEvidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/targeted-recheck.json"
+    },
+    {
+      "id": "RR-02",
+      "classification": "quality_issue",
+      "priority": "P2",
+      "surface": "s8YourVersion",
+      "finding": "Only2of8source lines shown and lesson instruction duplicated in body.",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/Frontend/Frontend.conversation.tsx",
+      "fixOwner": "integracao",
+      "resolution": "All8turns restored; duplicateinstruction removed, completion/support/role controls preserved.",
+      "recheck": "Fourlearner actions visible; full corrected screen visually inspected.",
+      "afterEvidence": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/evidence/s8-react-corrected-1280.png"
+    },
+    {
+      "id": "RR-03",
+      "classification": "quality_issue",
+      "priority": "P2",
+      "surface": "s1hero ands33profiles",
+      "finding": "Forced two-line title and oversized profile cards diverged from source hierarchy/compact dialogue.",
+      "files": [
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/Frontend/Frontend.styles.ts",
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/Frontend/Frontend.practice.tsx"
+      ],
+      "fixOwner": "integracao",
+      "resolution": "Inline Frontend title and compact Jun/Kim dialogue layout restored; shared semantic width choices adjusted by Integration.",
+      "afterEvidence": [
+        "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/evidence/s1-react-corrected-1280.png",
+        "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/evidence/s33-react-corrected-1280.png",
+        "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/uiux-react-review-01/evidence/s33-react-corrected-390.png"
+      ]
+    }
+  ],
+  "advisories": [
+    {
+      "id": "RR-A1",
+      "classification": "advisory",
+      "surface": "s51/s52Pronunciation",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/Frontend/Frontend.practice.tsx",
+      "evidence": [
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/frontend-material/before/s51-1280x900.jpg",
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/frontend-material/after/s51-1280x900.jpg"
+      ],
+      "difference": "Source Listen is a centered compact pill with speaker icon; shared MinimalPairExercise renders a full-width primary bar without that icon.",
+      "impact": "Visible emphasis/geometry differs despite preserved function and content.",
+      "decision": "Product-owner visual review should accept this shared pattern or request compact source-like control; not a keyboard/contrast failure claim."
+    },
+    {
+      "id": "RR-A2",
+      "classification": "advisory",
+      "surface": "s12Homework",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/shared/LessonHomework.tsx",
+      "evidence": [
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/frontend-material/before/s12-1280x900.jpg",
+        "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/frontend-material/after/s12-1280x900.jpg"
+      ],
+      "difference": "Source has an illustration beside each of3tasks; current shared LessonHomework renders an image only for the first task.",
+      "impact": "Two contextual visual cues are absent; text/3copy destinations remain available.",
+      "decision": "Product-owner visual review should accept shared card anatomy or request reuse of the original task illustrations. No new image generation proposed."
+    }
+  ],
+  "intentionalCurrentDifferences": [
+    "Existing shared phone frame/notch and semantic widths normalize the native reference. Do not claim pixel identity.",
+    "Homework uses supported Student tabs instead of non-provisioned activity IDs; activity provisioning remains Integration/product follow-up."
+  ],
+  "limits": [
+    "Human visual acceptance is pending; no pixel-perfect or full WCAG conformance certification.",
+    "Native source V.0 playback tested; listening voice-quality judgment/all49full-listen rerun not part of bounded review.",
+    "Physical iOS keyboard and authenticated Teacher/staging/production were not exercised.",
+    "Sofia/A1changes not re-audited."
+  ],
+  "actions": {
+    "sourceWrites": 0,
+    "remoteWrites": 0,
+    "builds": 0,
+    "ci": 0,
+    "newMedia": 0,
+    "reviewerWrites": "Own evidence folder and coordination status/report only"
+  },
+  "nextAction": "Integration may freeze its coherent source/build/Teacher adoption under existing reservations, keeping human visual gate and noting2visual advisories. No UIUX shared write requested.",
+  "visualGateReview": "pending human"
+}

@@ -1,4 +1,4 @@
-import type { ComponentPropsWithRef } from 'react'
+import type { ComponentPropsWithRef, ReactNode } from 'react'
 
 export type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -9,6 +9,14 @@ export interface AvatarProps extends Omit<
   'color'
 > {
   imageUrl?: string
+  /** Notify a controlled identity when its image cannot be loaded. */
+  onImageError?: (imageUrl: string) => void
+  /** Optional visible identity, styled together with the portrait instead of ad-hoc adjacent text. */
+  name?: string
+  namePosition?: 'below' | 'beside'
+  description?: ReactNode
+  /** Use the enclosing surface’s foreground for an identity inside a differently themed device. */
+  textTone?: 'theme' | 'inherit'
   initials: string
   size?: AvatarSize
   tone?: AvatarTone

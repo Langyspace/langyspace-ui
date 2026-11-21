@@ -1,0 +1,61 @@
+{
+  "batch": "COURSE-B201-REVIEW-02",
+  "screens": 17,
+  "sourcePages": 12,
+  "plannedMinutes": 50,
+  "browserPagesChecked": 102,
+  "functionalJourneysPassed": 6,
+  "widths": [
+    1440,
+    390,
+    320
+  ],
+  "forcedStorageTheme": "light",
+  "osTheme": "light",
+  "materialTheme": "dark",
+  "consoleErrors": 0,
+  "brokenImages": 0,
+  "browserTtsCalls": 0,
+  "audioClips": 5,
+  "audioProvider": "ElevenLabs",
+  "mediaDecodeAndHashesVerified": true,
+  "humanListening": "pending",
+  "notes": [
+    "edit",
+    "reopen",
+    "reload persistence",
+    "clear",
+    "Escape",
+    "focus restoration"
+  ],
+  "navigation": [
+    "focus handshake",
+    "continuous scroll",
+    "PageDown on tall content",
+    "Home",
+    "End",
+    "progress"
+  ],
+  "finalCaptionDelta": "Closed/revealed table states checked at 1440/390/320; captions display as a full-width block on mobile.",
+  "artifact": {
+    "id": "78b4c8a1-20f3-4724-9667-25dd900dff45",
+    "version": "1795053523-86f8",
+    "sha256": "b3af3b4a3634d4426cd9fb413d5802aef53280df351820bb2e0031c75b162252",
+    "published": true,
+    "readback": true,
+    "render": true
+  },
+  "uiCommit": "8101ec156fdb97c56f383ea821d20e011c8be962",
+  "uiBranch": "feat/materials-a201-exp-a1-20261117",
+  "checks": {
+    "focusedTypecheck": "passed",
+    "scopedEslint": "passed",
+    "gitDiffCheck": "passed",
+    "fullRepoTypecheck": "Earlier catalog test diagnostics reported to owner and since corrected by integration; focused B201 passed. No new full suite was run."
+  },
+  "baselineEvidence": "Immutable source and desktop/mobile screenshots were captured before the first edit. Initial element screenshots are retained; final judgments use real viewport/tail captures. Optional later baseline replay export was incomplete and is not used as a verification pass.",
+  "visualGateReview": "pending human",
+  "staging": "pending central integration; not published by author",
+  "ci": "not triggered",
+  "gitMutation": "none"
+}

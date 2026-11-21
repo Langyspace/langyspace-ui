@@ -1,0 +1,63 @@
+{
+  "taskId": "FEEDBACK42-A102-ROOT-CAUSE",
+  "completedAt": "2026-11-20T16:02:49.440140+00:00",
+  "demonstrated": [
+    "Current UI source, artifact, Teacher dist, and HTTP response body are byte-identical for S.1 and the four canonical sources at inspection time.",
+    "The inspected lesson data and bundle bind the S.1 ID/text to the expected S.1 file; the static invocation requests one S.1 line. No extra T clip is specified there.",
+    "The old continuous SSML request contains only L/I/M/A phoneme tags and breaks, with no requested T.",
+    "Unprimed English Scribe v2 transcribed the actual old S.1 as L-I-M say A, while the separate current sources returned L, I, M, A.",
+    "New S.1 is derived from complete current canonical waveforms with explicit digital silence and no sequence synthesis. Each source and its exact frame interval is recorded."
+  ],
+  "directedTranscripts": {
+    "S.1": "L-I-M say A",
+    "A.L": "L",
+    "A.I": "I",
+    "A.M": "M",
+    "A.A": "A"
+  },
+  "hypotheses": [
+    "An unwanted acoustic transition in the continuous generation is the leading explanation consistent with the user report and directed ASR; its precise phonetic or internal model cause has not been established."
+  ],
+  "limitations": [
+    "ASR does not establish that the unwanted sound is exactly /t/, and isolated-letter recognition is not perfect phonetic proof.",
+    "Read-only file and bundle tracing does not prove the exact browser/cache/runtime state of the user session. No browser runtime QA was performed.",
+    "Signal-envelope metrics locate energy only and do not identify phonemes.",
+    "The new assembled S.1 and afternoon were not played or transcribed; final perceptual review belongs to the user.",
+    "Deterministic composition prevents new sequence-TTS transitions; it does not guarantee the perceptual correctness of each pre-existing source."
+  ],
+  "differenceFromComposition36": {
+    "historicalS1Sha256": "a7768b55bc129f0067b0dc8e00d3e525ea3632fb41fc66174c802c0173a87db4",
+    "historicalSourceHashes": {
+      "A.L": "cdf1898ec3c37be33dbf21c37d79df2c8d00d5cdf599802d20de7be635d12c40",
+      "A.I": "df2a136d642c799a73c3d310a81a9b7d8dad93bd25acbde7b5524732dcbed8f6",
+      "A.M": "e9fd998a75f2f86ab549653e75d0691fc8c3bde8ec1dc3dd1a3d24aaadc6cd2b",
+      "A.A": "437814cbe3d99ab76fd7ffee130ddae63c140d916ada97c921e20a4de84d46f2"
+    },
+    "currentSourceHashes": {
+      "A.L": "cdf1898ec3c37be33dbf21c37d79df2c8d00d5cdf599802d20de7be635d12c40",
+      "A.I": "df2a136d642c799a73c3d310a81a9b7d8dad93bd25acbde7b5524732dcbed8f6",
+      "A.M": "3697928495046a9b64faf39d9ecf2afeb895a6c183857bef066b850f38103d34",
+      "A.A": "06a330c84874900a57c941bd615123683d4e8be9794859f5ecc55567d0e20792"
+    },
+    "explanation": "L and I are unchanged. M now uses the regeneration38 recording and A the phoneme40 recording; the earlier composition used original31 M/A which the user later reported as invalid."
+  },
+  "decisionOnIsolates": "Reuse all four current isolated recordings. The directed evidence does not justify regenerating any of them.",
+  "durableContract": "Keep S.1 binding and display stable; replace only its MP3 with the deterministic four-part asset, preserving the source recordings and lineage.",
+  "scope": {
+    "newTTSCalls": 1,
+    "newSequenceTTSCalls": 0,
+    "directedSTTCalls": 5,
+    "playback": false,
+    "browser": false,
+    "broadQA": false,
+    "tests": false,
+    "sharedSourceWrites": false,
+    "publish": false
+  },
+  "evidence": [
+    "served-asset-trace.json",
+    "bundle-binding.json",
+    "directed-asr.json",
+    "directed-signal-metrics.json"
+  ]
+}

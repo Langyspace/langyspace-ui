@@ -7,7 +7,6 @@ export interface VocabularySectionProps {
 }
 export interface WarmUpSectionProps {
   item: WarmUpData
-  index: number
   speak: (lines: readonly SpeechLine[]) => void
 }
 export interface DialogueSectionProps {
@@ -21,4 +20,8 @@ export interface TranslatedTextProps {
 }
 export interface VerbPhraseProps {
   text: string
+}
+
+export interface ConversationSectionProps {
+  part?: number
 }

@@ -1,0 +1,29 @@
+{
+  "A101Description": {
+    "path": "stories/materials/A101/A101.stories.tsx",
+    "reason": "Factual docs now identify19ElevenLabs rather than browser/demo voices; licenses retained.",
+    "sha256": "f53154c910863fe036c32dfbeb3143d63de5d32ee7ba362d6e03c530ab47348a"
+  },
+  "MinimalPairScore": {
+    "path": "src/components/InteractiveMaterial/MinimalPairExercise.tsx",
+    "reason": "Only aria-hidden when no scores; DOM Row/layout/API and supplied scores retained.",
+    "test": "minimal-pair-score-semantics.log"
+  },
+  "A101Fixture": {
+    "path": "test/fixtures/A101Speech.test.tsx",
+    "reason": "Retired obsolete browserTTS assertions; new frozen recordedAudio4groups preserve queue/pause/stop/late/error/retry coverage."
+  },
+  "B101Fixture": {
+    "path": "test/fixtures/B101Pronunciation.test.tsx",
+    "reason": "Preserved12injected-callbackattempts/warnings; now tests reset/selection/reveal instead of private score removed by author.",
+    "test": "b101-pronunciation-rerun.log"
+  },
+  "C1Transport": "C1andB2mirrors include declared height bridge; A1andB1mirror bytes equal original.",
+  "protectedSource": [
+    "stories/materials/A201",
+    "stories/materials/TrialA1",
+    "stories/materials/TrialB1",
+    "stories/materials/TrialB2",
+    "stories/materials/shared"
+  ]
+}

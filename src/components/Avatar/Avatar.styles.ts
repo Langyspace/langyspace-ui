@@ -1,3 +1,4 @@
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { css, styled } from 'styled-components'
 import type { AvatarSize, AvatarTone } from './Avatar.types'
 import { theme } from '../../foundations/theme/theme'
@@ -79,4 +80,34 @@ export const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+`
+
+/** Shared portrait/name identity for dialogue, contacts and compact participant rows. */
+export const Identity = styled.span<{ $position: 'below' | 'beside' }>`
+  display: inline-flex;
+  flex-direction: ${(p) => (p.$position === 'below' ? 'column' : 'row')};
+  align-items: center;
+  flex-shrink: 0;
+  gap: ${theme.spacing[1]};
+  font-family: ${theme.typography.fontFamily.sans};
+`
+export const IdentityText = styled.span<{ $position: 'below' | 'beside' }>`
+  display: grid;
+  min-width: 0;
+  max-width: ${theme.spacing[32]};
+  gap: ${theme.spacing[1]};
+  text-align: ${(p) => (p.$position === 'below' ? 'center' : 'left')};
+`
+export const Name = styled.span<{ $tone: AvatarTone; $inherit?: boolean }>`
+  color: ${(p) => (p.$inherit ? 'inherit' : p.$tone === 'inverse' ? theme.colors.palette.white : (resolveTheme(p).colors?.text.primary ?? theme.colors.text.primary))};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.semibold};
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+`
+export const Description = styled.span<{ $inherit?: boolean }>`
+  color: ${(p) => (p.$inherit ? 'inherit' : (resolveTheme(p).colors?.text.secondary ?? theme.colors.text.secondary))};
+  font-size: ${theme.typography.fontSize['2xs']};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.3;
 `

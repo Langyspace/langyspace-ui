@@ -1,6 +1,10 @@
-import { useState } from 'react'
-import { IconButton } from '../../../src/components/IconButton/IconButton'
-import { SlideDeck } from '../../../src/components/Slide/SlideDeck'
+import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
+import { DialogueTitle } from '../shared/DialogueTitle'
+import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
+import { useLessonPage } from '../shared/useLessonPage'
+import { MaterialTheme } from '../shared/MaterialTheme'
+
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { VoiceMessageDemo } from '../../components/VoiceMessage/VoiceMessageDemo'
 import {
@@ -10,7 +14,7 @@ import {
   order,
   itemAt,
   lesson,
-  image,
+  kim,
 } from './A101.data'
 import {
   VocabularySection,
@@ -19,6 +23,9 @@ import {
   DialogueQuestions,
   GrammarTable,
   GrammarNegative,
+  AgeSection,
+  TwoTruthsAndALie,
+  SpeakingTimer,
   TrueForYou,
   MatchingSection,
   GuessWho,
@@ -26,16 +33,19 @@ import {
   ConversationSection,
   HomeworkSection,
 } from './A101.sections'
-import { TeacherNotes } from './A101.notes'
+import { LessonNotes } from '../shared/LessonNotes'
+import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { useLessonSpeech } from './useLessonSpeech'
 import voice from './assets/kim-demo.mp3'
 import * as Styled from './A101.styles'
 import type { A101LessonProps } from './A101.types'
-export function A101Lesson({
-  initialPageId = 's1',
+function A101LessonContent({
+  initialPageId,
   learnerName = '',
 }: A101LessonProps) {
-  const [pageId, setPageId] = useState(initialPageId)
+  const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
+  const notePopup = useLessonNotesPopup('langy-notes:a1-01')
+
   const speech = useLessonSpeech()
   const pages = order.map((id) => {
     const number = Number(id.slice(1))
@@ -44,35 +54,11 @@ export function A101Lesson({
         id,
         label: 'Vocabulary · Guess the word',
         content: (
-          <SlidePage
-            width="standard"
-            lead={
-              <Styled.Introduction>
-                <Styled.LessonEyebrow>
-                  <b>A1</b>Lesson 01
-                </Styled.LessonEyebrow>
-                <Styled.Hero>
-                  Introduce <em>yourself</em>
-                </Styled.Hero>
-                <Styled.Goal>
-                  <Styled.GoalStar aria-hidden="true">
-                    <svg viewBox="0 0 24 24">
-                      <path
-                        d="M12 1.5c.5 5.6 4.9 10 10.5 10.5-5.6.5-10 4.9-10.5 10.5C11.5 16.9 7.1 12.5 1.5 12 7.1 11.5 11.5 7.1 12 1.5z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </Styled.GoalStar>
-                  <p>
-                    <b>Goal</b>Dizer o seu nome, de onde você é e como você
-                    está.
-                  </p>
-                </Styled.Goal>
-              </Styled.Introduction>
-            }
-            eyebrow="Vocabulary"
-            title="Guess the word"
-            instruction="Observe a imagem e tente adivinhar a palavra."
+          <Styled.VocabularyPage
+            width="expanded"
+            eyebrow="A1 LESSON 01"
+            title="Introduce yourself"
+            instruction="Look at the pictures. Guess the words."
           >
             <Styled.IntroVocabulary>
               <VocabularySection
@@ -81,7 +67,7 @@ export function A101Lesson({
                 speak={speech.speak}
               />
             </Styled.IntroVocabulary>
-          </SlidePage>
+          </Styled.VocabularyPage>
         ),
       }
     if ((number >= 21 && number <= 26) || (number >= 51 && number <= 56)) {
@@ -91,18 +77,17 @@ export function A101Lesson({
         id,
         label: `Warm up · ${feeling ? 'Feelings' : 'Countries'} ${slot + 1}`,
         content: (
-          <SlidePage
-            width="focused"
+          <Styled.WarmupPage
+            width="expanded"
             eyebrow="Warm up"
-            title="Choose the correct answer."
-            instruction="Escolha a resposta correta de acordo com a imagem."
+            title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
+            instruction="Choose the correct answer."
           >
             <WarmUpSection
               item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
-              index={slot}
               speak={speech.speak}
             />
-          </SlidePage>
+          </Styled.WarmupPage>
         ),
       }
     }
@@ -114,8 +99,8 @@ export function A101Lesson({
           <SlidePage
             width="standard"
             eyebrow="Vocabulary"
-            title="Guess the country"
-            instruction="Observe a bandeira e tente adivinhar o nome do país."
+            title="Where are you from?"
+            instruction="Name the countries. Where are you from?"
           >
             <VocabularySection items={countries} speak={speech.speak} />
           </SlidePage>
@@ -127,54 +112,42 @@ export function A101Lesson({
         label: 'Guided conversation · Nice to meet you',
         content: (
           <SlidePage
-            width="reading"
+            width="expanded"
             density="compact"
+            questions={<DialogueQuestions />}
             eyebrow="Guided conversation"
-            instruction="Escute o áudio e depois leia o texto com a sua professora."
+            instruction="Listen, then read with your teacher."
             title={
-              <Styled.TitleAudio>
-                Nice to meet you
-                <IconButton
-                  variant="brand"
-                  size="md"
-                  aria-label={
-                    speech.playingId?.startsWith('R.')
-                      ? speech.paused
-                        ? 'Continuar conversa'
-                        : 'Pausar conversa'
-                      : 'Ouvir conversa completa'
-                  }
-                  aria-pressed={
-                    Boolean(speech.playingId?.startsWith('R.')) &&
-                    !speech.paused
-                  }
-                  onClick={() => {
-                    if (speech.playingId?.startsWith('R.')) speech.togglePause()
-                    else
-                      speech.speak(
-                        lesson.RT.map((line) => ({
-                          id: line.id,
-                          text: line.en,
-                          speaker: line.who,
-                        })),
-                      )
-                  }}
-                >
-                  <svg
-                    aria-hidden="true"
-                    width="18"
-                    height="18"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                  >
-                    {speech.playingId?.startsWith('R.') && !speech.paused ? (
-                      <path d="M6 4h4v16H6zm8 0h4v16h-4z" />
-                    ) : (
-                      <path d="M7 4v16l13-8z" />
-                    )}
-                  </svg>
-                </IconButton>
-              </Styled.TitleAudio>
+              <DialogueTitle
+                title="Nice to meet you"
+                action={
+                  <DialoguePlaybackAction
+                    context="Nice to meet you"
+                    disabled={pageId !== id}
+                    status={
+                      speech.playingId?.startsWith('R.')
+                        ? speech.paused
+                          ? 'paused'
+                          : 'playing'
+                        : speech.error
+                          ? 'error'
+                          : 'idle'
+                    }
+                    onClick={() => {
+                      if (speech.playingId?.startsWith('R.'))
+                        speech.togglePause()
+                      else
+                        speech.speak(
+                          lesson.RT.map((line) => ({
+                            id: line.id,
+                            text: line.en,
+                            speaker: line.who,
+                          })),
+                        )
+                    }}
+                  />
+                }
+              />
             }
           >
             <DialogueSection
@@ -184,30 +157,15 @@ export function A101Lesson({
           </SlidePage>
         ),
       }
-    if (id === 's14')
-      return {
-        id,
-        label: 'Guided conversation · Questions',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Guided conversation"
-            title="Questions"
-            instruction="Responda as perguntas sobre o diálogo."
-          >
-            <DialogueQuestions />
-          </SlidePage>
-        ),
-      }
     if (id === 's71')
       return {
         id,
         label: 'Grammar · Verb to be',
         content: (
           <SlidePage
-            eyebrow="Grammar · Verb to be"
-            title="I am, you are, she is…"
-            instruction="Clique no exemplo para ver a tradução."
+            eyebrow="Grammar"
+            title="Verb to be"
+            instruction="Use be to say who someone is or how they feel."
           >
             <GrammarTable />
           </SlidePage>
@@ -220,11 +178,56 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Grammar · Verb to be"
-            title="Negative and questions"
-            instruction="Clique na frase para ver a tradução."
+            eyebrow="Grammar"
+            title="Verb to be"
+            instruction="Negatives and questions"
           >
             <GrammarNegative />
+          </SlidePage>
+        ),
+      }
+    if (id === 's73')
+      return {
+        id,
+        label: 'Language tip · Age',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Language tip"
+            title="How old are you?"
+            instruction="Use be to talk about age."
+          >
+            <AgeSection />
+          </SlidePage>
+        ),
+      }
+    if (id === 's74')
+      return {
+        id,
+        label: 'Speaking · Two truths and one lie',
+        content: (
+          <SlidePage
+            width="reading"
+            eyebrow="Speaking"
+            title="Two truths and one lie"
+            instruction="Say three facts: two true, one false. Guess the lie. Then swap roles."
+          >
+            <TwoTruthsAndALie />
+          </SlidePage>
+        ),
+      }
+    if (id === 's75')
+      return {
+        id,
+        label: 'Speaking · Now you',
+        content: (
+          <SlidePage
+            width="standard"
+            eyebrow="Speaking"
+            title="Now you!"
+            instruction="Introduce yourself in 30 seconds."
+          >
+            <SpeakingTimer key={pageId} active={pageId === id} />
           </SlidePage>
         ),
       }
@@ -235,9 +238,9 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Practice · Speaking"
-            title="True for you? If not, say it in the negative"
-            instruction="Leia a frase. Se não for verdade para você, diga na negativa."
+            eyebrow="Speaking"
+            title="True for you?"
+            instruction="Is it true for you? If not, correct it."
           >
             <TrueForYou />
           </SlidePage>
@@ -250,9 +253,9 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="wide"
-            eyebrow="Practice · Questions & answers"
-            title="Match the questions and the answers"
-            instruction="Clique numa pergunta e depois na resposta certa."
+            eyebrow="Practice"
+            title="Questions & answers"
+            instruction="Match the questions and answers. Read aloud."
           >
             <MatchingSection />
           </SlidePage>
@@ -266,8 +269,10 @@ export function A101Lesson({
           <SlidePage
             width="reading"
             eyebrow="Guided conversation"
-            title="Nice to meet you"
-            instruction="Complete os espaços e depois leia o diálogo com a sua professora."
+            title="Complete the conversation"
+            questions={<DialogueQuestions />}
+            density="compact"
+            instruction="Fill in the gaps. Read with your teacher."
           >
             <DialogueSection gaps speak={speech.speak} />
           </SlidePage>
@@ -280,14 +285,15 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="standard"
-            title="Listening Practice"
-            instruction="Ouça o áudio da Kim e responda."
+            eyebrow="Listening"
+            title="A message from Kim"
+            instruction="Listen to Kim’s message and answer."
           >
             <VoiceMessageDemo
               contact={{
                 name: 'Kim',
                 status: 'online',
-                avatarUrl: image('bust_kim'),
+                avatarUrl: kim,
               }}
               audio={{
                 id: 'a101-kim-demo',
@@ -316,7 +322,7 @@ export function A101Lesson({
             width="standard"
             eyebrow="Role play"
             title="Guess who"
-            instruction="A professora escolhe uma pessoa em segredo. Faça as perguntas e descubra quem é."
+            instruction="Your teacher chooses a person. Ask questions. Guess who."
           >
             <GuessWho />
           </SlidePage>
@@ -329,15 +335,15 @@ export function A101Lesson({
         content: (
           <SlidePage
             width="exercise"
-            eyebrow="Practice · Questions"
-            title="Make it a question"
-            instruction="Inverta a ordem: comece a pergunta com am, is ou are. Depois clique para conferir."
+            eyebrow="Practice"
+            title="Questions"
+            instruction="Make a question."
           >
             <MakeQuestions />
           </SlidePage>
         ),
       }
-    if (id === 's15')
+    if (['s15', 's151', 's152'].includes(id))
       return {
         id,
         label: 'Conversation · Let’s talk',
@@ -345,10 +351,18 @@ export function A101Lesson({
           <SlidePage
             width="conversation"
             eyebrow="Conversation"
-            title="Let’s talk"
-            instruction="Escolham as perguntas e conversem. Responda sobre você e devolva a pergunta: And you?"
+            title={
+              id === 's15'
+                ? 'Let’s talk!'
+                : id === 's151'
+                  ? 'People and places'
+                  : 'Pets and birthdays'
+            }
+            instruction="Choose two or three prompts. Speak with your teacher, then swap roles."
           >
-            <ConversationSection />
+            <ConversationSection
+              part={id === 's15' ? 0 : id === 's151' ? 1 : 2}
+            />
           </SlidePage>
         ),
       }
@@ -360,7 +374,7 @@ export function A101Lesson({
           width="standard"
           eyebrow="Homework"
           title="Before next class"
-          instruction="Continue praticando no espaço do aluno."
+          instruction="Practise before your next lesson."
         >
           <HomeworkSection />
         </SlidePage>
@@ -369,7 +383,8 @@ export function A101Lesson({
   })
   return (
     <Styled.Stage>
-      <SlideDeck
+      <MaterialSlideDeck
+        tabIndex={-1}
         previousPageLabel="Back"
         label="A1.01 · Introduce yourself"
         pages={pages}
@@ -378,11 +393,37 @@ export function A101Lesson({
           if (id !== pageId) speech.stop()
           setPageId(id)
         }}
-        actions={<TeacherNotes pageId={pageId} />}
+        overlay={
+          <LessonNotes
+            storageKey="langy-notes:a1-01"
+            open={notePopup.isOpen}
+            popupWindow={notePopup.popup}
+            preview={notePopup.preview}
+            error={notePopup.error}
+            onClose={notePopup.close}
+          />
+        }
+        actions={
+          <LessonNotesTrigger
+            ref={(element) => {
+              notePopup.trigger(element)
+            }}
+            open={notePopup.isOpen}
+            onClick={notePopup.open}
+          />
+        }
       />
       {speech.error ? (
         <Styled.AudioError role="status">{speech.error}</Styled.AudioError>
       ) : null}
     </Styled.Stage>
+  )
+}
+
+export function A101Lesson(props: A101LessonProps) {
+  return (
+    <MaterialTheme>
+      <A101LessonContent {...props} />
+    </MaterialTheme>
   )
 }

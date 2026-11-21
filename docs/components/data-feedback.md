@@ -119,6 +119,8 @@ Cuidados: Não anuncia todo conteúdo automaticamente. O consumidor atribui role
 
 ## KeyValueList
 
+`layout="stacked"` places a descriptive value below its label, wrapping long content within the available width. The default inline arrangement remains unchanged. Combine stacked layout with compact density for three-fact scenario cards; this avoids forcing narrative values into a single row. B2/C1 role-play and B2’s past-reference explanation use this variation.
+
 Lista curta de pares label/value para leitura de resultados e ranking.
 
 Contrato: items com id, label/value ReactNode e atributos/ref de div.

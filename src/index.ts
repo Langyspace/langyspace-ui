@@ -284,6 +284,11 @@ export { PracticeCardBody } from './components/Practice/PracticeCardBody'
 export type { PracticeCardBodyProps } from './components/Practice/PracticeCardBody.types'
 
 export { QuizOption } from './components/Quiz/QuizOption'
+export { useFeedbackSounds } from './components/Quiz/useFeedbackSounds'
+export type {
+  FeedbackSoundOutcome,
+  FeedbackSoundsController,
+} from './components/Quiz/useFeedbackSounds.types'
 export type {
   QuizOptionProps,
   QuizOptionState,
@@ -605,7 +610,11 @@ export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.t
 export { LearningDialogue } from './components/Exercise/LearningDialogue'
 export type { LearningDialogueProps } from './components/Exercise/LearningDialogue.types'
 export { RevealCard } from './components/Exercise/RevealCard'
-export type { RevealCardProps } from './components/Exercise/RevealCard.types'
+export type {
+  RevealCardProps,
+  RevealGuidance,
+  RevealGuidanceLevel,
+} from './components/Exercise/RevealCard.types'
 export { MatchPairs } from './components/Exercise/MatchPairs'
 export type { MatchPairsProps } from './components/Exercise/MatchPairs.types'
 export type { VocabularyItem } from './components/Exercise/VocabularyGrid.types'
@@ -657,3 +666,19 @@ export type {
   RevealSequenceCardProps,
   RevealSequenceStage,
 } from './components/InteractiveMaterial/RevealSequenceCard.types'
+
+export { materialDarkTheme } from './foundations/theme/materialDarkTheme'
+export { SlideNotes } from './components/Slide/SlideNotes'
+export type {
+  SlideNotesProps,
+  SlideNotesLabels,
+} from './components/Slide/SlideNotes.types'
+
+export { SlideNotesWindow } from './components/Slide/SlideNotesWindow'
+export type { SlideNotesWindowProps } from './components/Slide/SlideNotesWindow.types'
+
+export type { LearningDialogueGap } from './components/Exercise/LearningDialogue.types'
+export type {
+  SlideAudioActionProps,
+  SlideAudioStatus,
+} from './components/Slide/SlideAudioAction.types'

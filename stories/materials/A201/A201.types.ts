@@ -1,0 +1,43 @@
+import type { ReactNode } from 'react'
+import type { LessonProps } from '../shared/Lesson.types'
+import type { useLessonSpeech } from './useLessonSpeech'
+
+export type A201LessonProps = LessonProps
+export interface SpeechLine {
+  id: string
+  text: string
+  speaker?: string
+}
+export interface GapPart {
+  id: string
+  answer: string
+}
+export interface DialogueLine extends SpeechLine {
+  speaker: string
+  translation: string
+  parts?: readonly (string | GapPart)[]
+}
+export interface SpeechProps {
+  speech: ReturnType<typeof useLessonSpeech>
+}
+export interface DialogueProps extends SpeechProps {
+  lines: readonly DialogueLine[]
+  gaps?: readonly string[]
+  onGapToggle?: (id: string) => void
+  emphasis?: boolean
+}
+export interface DialoguePageProps extends DialogueProps {
+  questions?: ReactNode
+  active: boolean
+  title: string
+  context: string
+}
+export interface WarmupProps {
+  index: number
+}
+export interface ListeningProps {
+  active: boolean
+}
+export interface GapButtonStyleProps {
+  $revealed: boolean
+}

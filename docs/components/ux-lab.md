@@ -10,6 +10,8 @@ Frame de telefone com estados `idle`, `ringing`, `menu`, `connected` e `ended`. 
 
 A demonstração A1 usa Bella Pizza; a avançada usa Fibrenet. O consumidor controla a opção correta, os tempos de transição, a sequência de falas e o cancelamento ao desligar.
 
+`presentation="video"` utiliza o frame compacto da receita de voz, aceita `avatarUrl` e mostra câmera desligada. `signalPoor` e `onSignalToggle` controlam a perda simulada de conexão, o desfoque e o botão de recuperação. Os rótulos `cameraOff`, `signalPoor` e `signalGood` são traduzíveis. A duração, a pausa ao sair da página e o reinício pertencem ao consumidor. Os padrões da chamada de áudio permanecem iguais; não há acesso a câmera, microfone ou rede telefônica.
+
 ## InterviewSimulation
 
 Videochamada com entrevistadora, aluna, legenda, controles de mic/câmera/mão e sequência de áudios. Recebe `interviewer`, `learnerName`, `caption`, `turnIndex`, `turnCount` e callbacks de navegação. Cada toggle recebe valor e callback; `ended` bloqueia a reprodução e os controles da chamada. `loading` bloqueia o transporte.
@@ -34,9 +36,13 @@ Frases com uma lacuna ativa por `activeId`; as opções ficam junto dessa fala. 
 
 Situação com imagem e papéis opcionais, apoio revelável e checklist. `steps` identifica cada passo, `completedIds` controla a seleção e `onStepToggle(id)` comunica a ação. `supportVisible`/`onSupportToggle` controlam os apoios. `children` permite instruções adicionais. Não avalia nem persiste a participação.
 
+A apresentação opcional `tracker` de `RolePlayExercise` mantém a cena sem painel extra, coloca o controle de apoio junto aos passos e identifica o próximo item por `aria-current="step"`. Os passos continuam independentes e controlados. `labels.joiner` permite localizar a contagem (por exemplo, `de`); a apresentação padrão preserva a aparência anterior.
+
 ## SceneExplorer
 
 Imagem com hotspots em coordenadas percentuais. Cada hotspot tem `id`, posição, rótulo, pergunta e resposta opcional. `selectedId`, `visitedIds` e `answerVisible` controlam seleção, progresso e apoio. `onSelect(id)` pode também acionar o áudio do objeto no consumidor. Os hotspots são botões com nome acessível e equivalente de teclado.
+
+`presentation="labels"` mostra as palavras sobre a imagem e mantém a marca visual dos itens visitados, sem o painel de respostas do modo exploratório. O rótulo de áudio recebe `labels.play`. Posição, fala e estado continuam fornecidos pelo consumidor; a apresentação padrão permanece `explore`.
 
 ## MinimalPairExercise
 
@@ -85,8 +91,108 @@ Todos os contratos novos são exportados da raiz e aceitam props/ref nativos do 
 
 A controlled card for progressive disclosure, for example closed → clue → answer. Pass ordered `stages`, `stageId` and `onAdvance`; the callback receives the next stage id. Each stage supplies its own accessible `revealLabel`, optional image/alt text and content. The component never evaluates an answer or stores lesson progress. The last stage remains focusable with `aria-disabled`; it cannot advance. An empty sequence is disabled. Theme colors and native keyboard activation follow the shared library.
 
-`stories/materials/B101` composes this contract for the three-day role play. It also exercises `RolePlayExercise.tracker`, a slot for a consumer-owned editable summary before the checklist. Free notes and all learner-specific state remain outside package exports.
+`RevealSequenceCard` remains available for a genuine progressive-disclosure task. B1.01 now uses visible contextual media, three compact facts and a guided six-turn dialogue; its former hidden cards, editable summary and checklist were removed in feedback43. Free notes and learner-specific state stay outside package exports.
 
 `GrammarTable hiddenAnswers` presents unrevealed rows as one disclosure cell across the answer columns, with a visible question action. Revealed rows return to the normal table columns. The strong table header and plain subject labels keep the longer B1 meaning descriptions readable; standard tables retain their tagged presentation.
 
-`RolePlayExercise density="compact"` reduces step spacing and text size for short lesson viewports; its default density stays unchanged.
+`RolePlayExercise density="compact"` reduces step spacing and bounds its scene image to the presentation height. `KeyValueList density="compact"` keeps three facts with smaller gaps and a body-sized value. Both default densities remain unchanged. See B1.01 RolePlay and Details/KeyValueList CompactFacts source stories.
+
+## Reviewed lesson compositions — A1.05
+
+Reviewed library components take precedence over imported Claude versions. `RevealCard` supports
+`presentation="prompt"` for click-to-reveal hints beneath a question. `SlidePage.titleAudio` places
+the native recorded-playback action beside the final title word. `LearningDialogue` supports
+controlled `parts`, `revealedGapIds` and `onRevealGap` for stable inline answers. `VocabularyGrid`
+supports built-in `controls`, `surface="plain"` for transparent objects and `interaction="static"`
+for noninteractive role-play cards. Its regular isolated images use the available card height.
+`RolePlayExercise` supports `presentation="instructions"` for teacher-led oral tasks without
+checklist counters or required clicks. Existing lesson adapters delegate to these canonical owners.
+
+A1.05 demonstrates the combinations in Materials/A1.05, including transparent fruits, static fruit
+cards, oral role-play, native ElevenLabs playback and third-listen transcript disclosure. Those
+stories are examples for human review; no visual acceptance is implied.
+
+## Contact and symbol exercises — A1.02
+
+`VocabularyGrid` items may use native `symbol` text instead of `imageUrl`. This keeps numbers and
+letters selectable, readable and audible with the approved reveal controls, without SVG/image
+substitutes. `CallSimulation` supports `density="compact"` using the existing phone-layout theme.
+`KeyValueList` supports `tone="material"` so contact-card labels and values resolve against the
+slide theme. Existing defaults remain intact. Examples are in Materials/A1.02,
+Exercise/Components/NativeSymbols, Exercise/UX Lab/CompactContactCall and
+Details/KeyValueList/MaterialContact. Human review remains pending.
+
+## Stable reveals and guided role-play — A1.05 feedback32
+
+`RevealCard` prompt answers retain an inert, invisible footprint before reveal; short support cannot
+move the page. Compact `LearningDialogue` uses the native small control height with equal vertical
+padding. Its optional controlled `guidance` selects cue, hint or full model, using the same centered
+bulb/eye controls as vocabulary; guidance layers reserve the longest text footprint. Inline gaps
+size to their real answer rather than a64px minimum. GrammarTable resolves semantic tone colors
+from the active theme, including the reviewed dark green text token.
+
+Paginated SlideDeck disables native snap/anchoring and native wheel scrolling; the gesture controller
+owns movement, while programmatic scrolling still exposes genuinely tall content. Continuous mode
+keeps native scrolling. Content planning rules are centralized in docs/materials/content-planning-guidelines.md.
+
+### Contact-flow refinements
+
+`CallSimulation` accepts `direction="incoming"`, `active` and an optional prepared `ringtoneSrc`. Incoming idle/ringing uses the answer action; ringtone playback stops when connected, inactive, hidden or unmounted. A trusted-click retry is available if native autoplay is refused. `playback` composes the compact `AudioSequenceControls` beside the caption, with optional previous navigation. No camera, microphone or real telephone call is requested.
+
+`AudioSequenceControls density="compact"` omits the outer panel and progress dots, using replay/next icons for embedded devices. Its existing regular presentation is preserved. `ExercisePanel variant="workstation"` composes a contextual media slot and a native monitor/form surface. `FieldRoot` resolves labels and assistance colors from the active theme, matching native inputs. See the A1.02 Contact flow stories for the incoming, registration, outgoing and independent-message compositions.
+
+### Contextual scenes and named dialogue (feedback37)
+
+- `LearningDialogue.speakerLabels` controls names independently of density and defaults to visible. Compact mode retains both name and avatar. Known product identities are supplied by the material adapter, never hard-coded into the generic component.
+- `SceneExplorer.connections` joins hotspot IDs using the same measured source-image geometry as the markers. `SceneHotspot.example` renders a short usage example in its callout; consumer-owned playback can use a prepared label + pause + example recording. `imageSizing="presentation"` fits the entire scene into the lesson viewport without cropping the hotspot targets.
+- `RolePlayExercise.imageFit` defaults to contain; instructions mode omits empty role rows and empty step lists. Its existing children/tracker slots compose an interactive scene with guided oral prompts without cloning a new exercise layout.
+- `SlidePage.questions` owns the responsive conversation/comprehension split. The maintained materials and UX Lab Storybook use the same component.
+
+### Device context and listening identity (feedback38)
+
+`CallSimulation.messages` renders consumer-authored prompts inside the phone, reusing its caption bubbles. External children remain exercise support; omit the empty side slot. `ringtoneVolume` defaults to0.18 and controls only the SFX, not speech. The existing lifecycle stops the tone on answer/end/inactivity/visibility/unmount.
+
+`ExercisePanel` workstation accepts `workstationMeta.appLabel` and `.clock`. It uses a landscape monitor with window/task bars, chin and stand; native fields are arranged compactly, and the contextual image retains its proportions. Decorative OS chrome has no fake system actions.
+
+`VoiceMessageExercise` uses one contact identity for header and voice-note portrait; contextual introductory text stays in the existing greeting prop. `SceneExplorer` short label/example callouts use natural height and visible overflow rather than inner scrollbars.
+
+Feedback40 adds the optional shared-photo attachment to the same WhatsApp owner.
+The A103 listening composition demonstrates photo + voice note; A102 demonstrates
+the monitor's colored chrome/date and the focused my/your grammar practice.
+Family introductions keep the action above a three-fact record, with stable model
+space through RevealCard.answerMinLines. All are source compositions of the UI Library.
+
+Feedback42 adds source variants in Exercise/Components: reusable monitor flow/form and RevealCard guidance cycling Hint → Answer → Hide. A104 DaysAndTimes and TimesOfDay use the canonical compact calendar and existing scene vocabulary; A103 Introductions resets progressive guidance per selected person. Existing originals consume the same owners. No remote Lab publication or new visual approval is implied.
+
+Feedback44 consolidates lesson scenario composition and statement review in shared data adapters using the reviewed RolePlayExercise, KeyValueList, LearningDialogue, ExercisePanel and QuizOption owners. B1/B2/C1 share the same responsive phone preset. Source stories include reference navigation, descriptive stacked facts, revealed expression tables, role-play choices and advanced feedback decisions. No remote Lab update or browser validation is implied.
+
+The supplied A102 mobile-soft file is already attenuated to approximately−30.46LUFS, so that exercise explicitly uses volume0.7; the generic0.18 default protects unattenuated assets. Do not stack both reductions blindly. Playback/perceptual acceptance remains with the product owner.
+
+### Named speakers and fact-based introductions (feedback39)
+
+LearningDialogue and VoiceMessage contacts use Avatar.name/namePosition/description for a single portrait/name contract. Compact dialogues retain foreground semibold names with a spacing token. Native scrollbar tracks are hidden within the material surface, without changing overflow or gesture ownership. The A103 introduction exercise exposes the selected person’s actual family/job/city facts and an optional model, without a secret selection.
+
+### Answer feedback sounds (feedback41)
+
+QuizOption and graded native listening/gap/pair choices accept feedbackOutcome.
+The consumer supplies correctness; the shared sound engine plays a short cue on
+the accepted click. SlideDeck exposes the opt-in sound toggle, independent of
+recorded speech. Materials adopt it consistently; preferences and exploratory
+prosody samples stay silent. The AnswerFeedbackSounds story demonstrates both
+results, mute, keyboard activation and disabled choices for human review.
+
+### Feedback45 — compact decisions and clear role swap
+
+The maintained B1/B2/C1 statement adapter shows multiple prompts with canonical inline QuizOption choices and compact material QuizQuestion text. One explanation opens at a time while answer states remain visible. GuidedScenario choices are centered. B1 contextual MCQs use the same warm-up column and put the scenario in the heading; the no-image Leo dialogue is outside the two-image count. The role-swap controls live in SlidePage tools and update the stage heading. Source stories expose these variations; no remote Lab publication or browser/visual review was performed.
+
+### Feedback46 — learner identity
+
+The existing LearningDialogue receives optional learnerIdentity and semantic learner lines. Missing/unavailable photos retain You; authored fictional speakers remain unchanged. All maintained material adapters bind the product context, and TrialA1 greeting reuses six native bubbles with teacher identity and optional bulb/model support. Source examples include LearnerWithPhoto and LearnerWithoutPhoto. No remote Lab write or runtime visual approval is implied.
+
+### Feedback47 — paired greeting
+
+PairedDialogue, PairedDialogueHint and PairedDialogueModel source stories expose the optional paired LearningDialogue with contextual bulb/model controls. The first TrialA1 page uses the same shared variation and centered focused width. Other dialogues retain their current defaults. No remote Lab write, new media or browser/visual review was performed.
+
+### Feedback48 — one bubble skin and sequential support
+
+The newer bubble skin is canonical for LearningDialogue, including guided conversation; paired controls spacing only. Principal paired examples now use one progressive bulb/model row, retaining revealed prefixes and resetting the completed layer from the same control. Standard/inline contracts remain available for compatibility. No remote Lab update or visual/runtime validation was performed.

@@ -1,0 +1,36 @@
+{
+  "previousIndexSha256": "02810f28382c09cb97f095a0fb1e58ed8a6675a6f93e637f39615c86fbdc5030",
+  "newIndexSha256": "03fa9d7bcb4a75df5614b594414990c3f317db67bee154b410c9ffebd68915ce",
+  "oldCMPPreserved": 34,
+  "newCMP": 21,
+  "totalCMP": 55,
+  "onlyNewLinksAndRows": true,
+  "preparedFiles": {
+    "course-a1-01.html": {
+      "sha256": "a504b318e8cbf37a693298111dd123f1a181d62d0c46188ac32f8d24a1d1f757",
+      "bytes": 3876235
+    },
+    "course-b1-01.html": {
+      "sha256": "2e5f25694ed27ee6bb3db2f1a84b439904964253c8c47f80f5aec5fd07ba2984",
+      "bytes": 3806405
+    },
+    "course-b2-01.html": {
+      "sha256": "0e931eb9ff34039e22e5793ee04ade90f68e2615dd543b7d8ae9264c5d2021e7",
+      "bytes": 2660599
+    },
+    "course-c1-01.html": {
+      "sha256": "9114ab2aeb6486101df07bab343c86bd4f7fc74486e8106ee2631cf05d54e716",
+      "bytes": 2661344
+    },
+    "index.html": {
+      "sha256": "03fa9d7bcb4a75df5614b594414990c3f317db67bee154b410c9ffebd68915ce",
+      "bytes": 1158970
+    }
+  },
+  "transportDifferences": {
+    "course-b2-01.html": "height bridge only, declared author mirror",
+    "course-c1-01.html": "height bridge only, declared author mirror",
+    "course-a1-01.html": "byte-identical original",
+    "course-b1-01.html": "byte-identical original"
+  }
+}

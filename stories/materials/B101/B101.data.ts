@@ -1,20 +1,20 @@
 import content from './B101.content.json'
-import ana from '../UXLab/assets/bust_ana.png'
-import kim from '../UXLab/assets/bust_kim.png'
-export { content, ana, kim }
+import paintingScene from './assets/catalog-cover40.webp'
+import { ana, kim, leo } from '../shared/characterPortraits'
+export { content, ana, kim, leo, paintingScene }
 export const order = [
   's1',
   's2',
+  's21',
   's31',
   's32',
   's33',
   's4',
   's51',
-  's52',
   's6',
   's62',
-  's61',
   's7',
+  's52',
   's8',
   's9',
   's10',
@@ -63,8 +63,3 @@ export const dialogue = content.dialogue.map((line) => ({
   speaker: line.who,
   text: line.text,
 }))
-export const homeworkMessage =
-  'Lição de casa da aula B1.01 · What have you been doing?\n' +
-  content.homework
-    .map(([t, , url, min], i) => `${i + 1}. ${t} · ${min} · ${url}`)
-    .join('\n')

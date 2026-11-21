@@ -3,6 +3,7 @@ import { render, screen } from '@testing-library/react'
 import { renderToString } from 'react-dom/server'
 import { ServerStyleSheet, ThemeProvider } from 'styled-components'
 import { expect, it } from 'vitest'
+import { presentationMedia } from '../../../src/foundations/layout/presentationMedia'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 
@@ -50,6 +51,105 @@ it('renders standalone, inverse and custom theme variants on the server', () => 
     expect(html).toContain('lsui-sc-slide-page')
     expect(sheet.getStyleTags()).toContain('#123456')
     expect(sheet.getStyleTags()).toContain('37.5rem')
+  } finally {
+    sheet.seal()
+  }
+})
+
+it('fits one common header/body column to presentation media geometry', () => {
+  const sheet = new ServerStyleSheet()
+  try {
+    const html = renderToString(
+      sheet.collectStyles(
+        <SlidePage
+          title="Name the scene"
+          width={{ mediaAspectRatio: 2 }}
+          instruction="Try, then check."
+        >
+          <img src="/scene.png" alt="Scene" />
+        </SlidePage>,
+      ),
+    )
+    const css = sheet.getStyleTags().replace(/\s+/g, '')
+    expect(css).toContain(
+      `max-width:min(70rem,calc(${presentationMedia.viewportHeight}*2),calc(${presentationMedia.maximumHeight}*2))`,
+    )
+    expect(html).not.toContain('mediaAspectRatio=')
+    expect(html).toContain('Name the scene')
+    expect(html).toContain('Try, then check.')
+  } finally {
+    sheet.seal()
+  }
+})
+
+it.each([0, -1, Number.NaN, Number.POSITIVE_INFINITY])(
+  'falls back safely for invalid media ratio %s',
+  (ratio) => {
+    const sheet = new ServerStyleSheet()
+    try {
+      renderToString(
+        sheet.collectStyles(
+          <SlidePage title="Scene" width={{ mediaAspectRatio: ratio }}>
+            Body
+          </SlidePage>,
+        ),
+      )
+      const css = sheet.getStyleTags()
+      expect(css).toContain('max-width:65rem')
+      expect(css).not.toMatch(/NaN|Infinity/)
+    } finally {
+      sheet.seal()
+    }
+  },
+)
+
+it.each(['split', 'questions'] as const)(
+  'keeps the whole composition width for %s layouts',
+  (kind) => {
+    const sheet = new ServerStyleSheet()
+    try {
+      renderToString(
+        sheet.collectStyles(
+          <SlidePage
+            title="Two columns"
+            width={{ mediaAspectRatio: 2 }}
+            layout={kind === 'split' ? 'split' : 'stacked'}
+            questions={kind === 'questions' ? <p>Question</p> : undefined}
+          >
+            Body
+          </SlidePage>,
+        ),
+      )
+      const css = sheet.getStyleTags().replace(/\s+/g, '')
+      expect(css).toContain('max-width:70rem')
+      expect(css).not.toContain(`calc(${presentationMedia.viewportHeight}*2)`)
+    } finally {
+      sheet.seal()
+    }
+  },
+)
+
+it.each([
+  ['focused', '37.5rem'],
+  ['standard', '47.5rem'],
+  ['wide', '65rem'],
+  ['reading', '56.25rem'],
+  ['exercise', '55rem'],
+  ['conversation', '60rem'],
+  ['expanded', '70rem'],
+] as const)('preserves the existing %s width preset', (width, expected) => {
+  const sheet = new ServerStyleSheet()
+  try {
+    renderToString(
+      sheet.collectStyles(
+        <SlidePage title="Existing layout" width={width}>
+          Body
+        </SlidePage>,
+      ),
+    )
+    const css = sheet.getStyleTags().replace(/\s+/g, '')
+    expect(css).toContain(`max-width:${expected}`)
+    expect(css).not.toContain(`calc(${presentationMedia.viewportHeight}*`)
   } finally {
     sheet.seal()
   }

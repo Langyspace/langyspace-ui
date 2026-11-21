@@ -1,0 +1,185 @@
+{
+  "checks": [
+    {
+      "width": 1280,
+      "height": 900,
+      "nativeAudio": true,
+      "fullNaturalLeoPass": true,
+      "naturalPassReused": true,
+      "wrongAndCorrectAnswers": true,
+      "pronunciationPrelistenNoFalseError": true,
+      "dialogueTranslation": true,
+      "grammarFourRows": true,
+      "rolesSwappedAndCompleted": true,
+      "fourPhoneAnswersReplayManualTranscript": true,
+      "speed075": true,
+      "pauseOnDeparture": true,
+      "interviewNativeAndIndependentNotesChecklist": true,
+      "clipboardFailureSelectedFallback": true,
+      "notesFocusPersistCursor": true,
+      "nativeEnd100Home0": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "nativeAudio": true,
+      "fullNaturalLeoPass": false,
+      "naturalPassReused": true,
+      "wrongAndCorrectAnswers": true,
+      "pronunciationPrelistenNoFalseError": true,
+      "dialogueTranslation": true,
+      "grammarFourRows": true,
+      "rolesSwappedAndCompleted": true,
+      "fourPhoneAnswersReplayManualTranscript": true,
+      "speed075": true,
+      "pauseOnDeparture": true,
+      "interviewNativeAndIndependentNotesChecklist": true,
+      "clipboardFailureSelectedFallback": true,
+      "notesFocusPersistCursor": true,
+      "nativeEnd100Home0": true
+    }
+  ],
+  "rows": [
+    {
+      "name": "warmup-wrong",
+      "width": 1280,
+      "height": 900,
+      "before": "before/warmup-wrong-1280.jpg",
+      "after": "after/warmup-wrong-1280.jpg"
+    },
+    {
+      "name": "warmup-correct",
+      "width": 1280,
+      "height": 900,
+      "before": "before/warmup-correct-1280.jpg",
+      "after": "after/warmup-correct-1280.jpg"
+    },
+    {
+      "name": "warmup-options",
+      "width": 1280,
+      "height": 900,
+      "before": "before/warmup-options-1280.jpg",
+      "after": "after/warmup-options-1280.jpg"
+    },
+    {
+      "name": "pronunciation-wrong",
+      "width": 1280,
+      "height": 900,
+      "before": "before/pronunciation-wrong-1280.jpg",
+      "after": "after/pronunciation-wrong-1280.jpg"
+    },
+    {
+      "name": "dialogue-translation",
+      "width": 1280,
+      "height": 900,
+      "before": "before/dialogue-translation-1280.jpg",
+      "after": "after/dialogue-translation-1280.jpg"
+    },
+    {
+      "name": "grammar-revealed",
+      "width": 1280,
+      "height": 900,
+      "before": "before/grammar-revealed-1280.jpg",
+      "after": "after/grammar-revealed-1280.jpg"
+    },
+    {
+      "name": "roles-swapped",
+      "width": 1280,
+      "height": 900,
+      "before": "before/roles-swapped-1280.jpg",
+      "after": "after/roles-swapped-1280.jpg"
+    },
+    {
+      "name": "phone-transcript",
+      "width": 1280,
+      "height": 900,
+      "before": "before/phone-transcript-1280.jpg",
+      "after": "after/phone-transcript-1280.jpg"
+    },
+    {
+      "name": "interview-notes",
+      "width": 1280,
+      "height": 900,
+      "before": "before/interview-notes-1280.jpg",
+      "after": "after/interview-notes-1280.jpg"
+    },
+    {
+      "name": "homework-copy-failure",
+      "width": 1280,
+      "height": 900,
+      "before": "before/homework-copy-failure-1280.jpg",
+      "after": "after/homework-copy-failure-1280.jpg"
+    },
+    {
+      "name": "warmup-wrong",
+      "width": 390,
+      "height": 844,
+      "before": "before/warmup-wrong-390.jpg",
+      "after": "after/warmup-wrong-390.jpg"
+    },
+    {
+      "name": "warmup-correct",
+      "width": 390,
+      "height": 844,
+      "before": "before/warmup-correct-390.jpg",
+      "after": "after/warmup-correct-390.jpg"
+    },
+    {
+      "name": "warmup-options",
+      "width": 390,
+      "height": 844,
+      "before": "before/warmup-options-390.jpg",
+      "after": "after/warmup-options-390.jpg"
+    },
+    {
+      "name": "pronunciation-wrong",
+      "width": 390,
+      "height": 844,
+      "before": "before/pronunciation-wrong-390.jpg",
+      "after": "after/pronunciation-wrong-390.jpg"
+    },
+    {
+      "name": "dialogue-translation",
+      "width": 390,
+      "height": 844,
+      "before": "before/dialogue-translation-390.jpg",
+      "after": "after/dialogue-translation-390.jpg"
+    },
+    {
+      "name": "grammar-revealed",
+      "width": 390,
+      "height": 844,
+      "before": "before/grammar-revealed-390.jpg",
+      "after": "after/grammar-revealed-390.jpg"
+    },
+    {
+      "name": "roles-swapped",
+      "width": 390,
+      "height": 844,
+      "before": "before/roles-swapped-390.jpg",
+      "after": "after/roles-swapped-390.jpg"
+    },
+    {
+      "name": "phone-transcript",
+      "width": 390,
+      "height": 844,
+      "before": "before/phone-transcript-390.jpg",
+      "after": "after/phone-transcript-390.jpg"
+    },
+    {
+      "name": "interview-notes",
+      "width": 390,
+      "height": 844,
+      "before": "before/interview-notes-390.jpg",
+      "after": "after/interview-notes-390.jpg"
+    },
+    {
+      "name": "homework-copy-failure",
+      "width": 390,
+      "height": 844,
+      "before": "before/homework-copy-failure-390.jpg",
+      "after": "after/homework-copy-failure-390.jpg"
+    }
+  ],
+  "errors": []
+}

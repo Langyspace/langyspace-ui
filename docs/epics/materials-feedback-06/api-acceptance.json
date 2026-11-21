@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-19T18:59:23.547165+00:00",
+  "state": "accepted_exact_private_snapshot_delta",
+  "proposal": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-4/outputs/notes-popup-06-20261119/api-proposal.json",
+  "proposalSha256": "35c06effce17d115c60323ca29fc8c872105e05d1d124d6479890d69f23dbe79",
+  "baseSnapshotSha256": "1b05ab5e785810e4e537d6c46bf6ebd9a8c6bdf481186551127472a52c2f73c7",
+  "acceptedDelta": {
+    "declarations": [
+      {
+        "path": "dist/components/Slide/SlideNotesWindow.d.ts",
+        "before": null,
+        "after": "c02dcfbe6879cc00a0a405a20fcf4186bec1456f913ac8796ec93afb87b47e72"
+      },
+      {
+        "path": "dist/components/Slide/SlideNotesWindow.styles.d.ts",
+        "before": null,
+        "after": "8ae62870c38150acee4dde64e6013b689dcbebc83a7a3627b933a7d15f286977"
+      },
+      {
+        "path": "dist/components/Slide/SlideNotesWindow.types.d.ts",
+        "before": null,
+        "after": "eba93dcd011648f60e82ddaba4cc3f85143405d554560a03972ba1a4bee9bcc2"
+      },
+      {
+        "path": "dist/index.d.ts",
+        "before": "000dff4445a482edbc8ff03e31c1ad9a2c7bd242273d9e4ad8c76e946e7a9684",
+        "after": "8175354d6008aaa7a5f26f45de7bb9be558ac5424fc25ef02c4f7be879a9a22d"
+      }
+    ],
+    "entrypoint": {
+      "values": {
+        "added": [
+          "SlideNotesWindow"
+        ],
+        "removed": []
+      },
+      "types": {
+        "added": [
+          "SlideNotesWindowProps"
+        ],
+        "removed": []
+      }
+    }
+  },
+  "generatedDeclarationsVerified": [
+    {
+      "path": "dist/components/Slide/SlideNotesWindow.d.ts",
+      "normalizedSha256": "c02dcfbe6879cc00a0a405a20fcf4186bec1456f913ac8796ec93afb87b47e72"
+    },
+    {
+      "path": "dist/components/Slide/SlideNotesWindow.styles.d.ts",
+      "normalizedSha256": "8ae62870c38150acee4dde64e6013b689dcbebc83a7a3627b933a7d15f286977"
+    },
+    {
+      "path": "dist/components/Slide/SlideNotesWindow.types.d.ts",
+      "normalizedSha256": "eba93dcd011648f60e82ddaba4cc3f85143405d554560a03972ba1a4bee9bcc2"
+    },
+    {
+      "path": "dist/index.d.ts",
+      "normalizedSha256": "8175354d6008aaa7a5f26f45de7bb9be558ac5424fc25ef02c4f7be879a9a22d"
+    }
+  ],
+  "review": "Controlled pure presentational SlideNotesWindow; owner/story/reference/consumer/SSR/browser registry present; prior SlideNotes and exported props unchanged. Three previously accepted scene/scroll declarations remain exact. No package or lockfile publication.",
+  "allowedNext": "Apply this exact proposal privately to quality/public-api.json and run official check:api. Freeze final manifest before shared source adoption.",
+  "sourceAdoptionGranted": false,
+  "backendReviewClosed": true,
+  "cloudDeployGranted": false
+}

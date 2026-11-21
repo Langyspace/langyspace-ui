@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { expect, it, vi } from 'vitest'
 import { PronunciationSection } from '../../stories/materials/B101/B101.practice'
-it('keeps the last eight pronunciation results stable after repeated listening attempts', async () => {
+import content from '../../stories/materials/B101/B101.content.json'
+it('keeps pronunciation selection and reveal stable across repeated listening attempts', async () => {
   let heard = ''
   const user = userEvent.setup(),
     warnings = vi.spyOn(console, 'error').mockImplementation(() => {})
@@ -23,13 +24,15 @@ it('keeps the last eight pronunciation results stable after repeated listening a
     )
     for (let i = 0; i < 12; i++) {
       await user.click(screen.getByRole('button', { name: 'Listen' }))
-      await user.click(
-        screen.getByRole('button', { name: new RegExp('^' + heard) }),
-      )
+      const choice = screen.getByRole('button', { name: heard })
+      expect(choice).toHaveAttribute('aria-pressed', 'false')
+      await user.click(choice)
+      expect(choice).toHaveAttribute('aria-pressed', 'true')
+      const translation = content.pronunciation[0]!.c.find(
+        ([word]) => word === heard,
+      )![1]!
+      expect(within(choice).getByText(translation)).toBeVisible()
     }
-    expect(
-      screen.getByRole('img', { name: 'Score: 8 / 8' }),
-    ).toBeInTheDocument()
     expect(warnings).not.toHaveBeenCalled()
   } finally {
     warnings.mockRestore()

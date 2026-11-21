@@ -1,0 +1,346 @@
+{
+  "order": [1, 2, 21, 31, 32, 33, 4, 51, 6, 62, 7, 8, 9, 52, 10, 11, 12],
+  "expressions": [
+    {
+      "s": "Short emails can {come across as} cold.",
+      "e": "come across as",
+      "m": "seem to other people",
+      "t": "passar a impressão de, soar como",
+      "i": 0
+    },
+    {
+      "s": "Ten slides in two minutes? The end was {a bit rushed}.",
+      "e": "a bit rushed",
+      "m": "a little too fast",
+      "t": "um pouco corrido, apressado",
+      "i": 1
+    },
+    {
+      "s": "The food was cold. {To be fair}, the restaurant was very busy.",
+      "e": "To be fair",
+      "m": "let’s be honest about the other side too",
+      "t": "para ser justa, verdade seja dita",
+      "i": 2
+    },
+    {
+      "s": "Starting a new role involves {a learning curve}.",
+      "e": "a learning curve",
+      "m": "the process of learning a new skill and the difficulty involved",
+      "t": "uma fase de aprendizado",
+      "i": 3
+    },
+    {
+      "s": "Raj listened to the feedback and said: “I’ll {take it on board}.”",
+      "e": "take it on board",
+      "m": "consider feedback seriously and use it where appropriate",
+      "t": "levar em conta, considerar",
+      "i": 4
+    },
+    {
+      "s": "{It’s worth practicing} before a big meeting.",
+      "e": "It’s worth practicing",
+      "m": "it’s a good idea; it helps",
+      "t": "vale a pena praticar",
+      "i": 5
+    },
+    {
+      "s": "Good feedback is {constructive}: it says what to do next.",
+      "e": "constructive",
+      "m": "intended to improve something through useful, specific suggestions",
+      "t": "construtivo",
+      "i": 6
+    },
+    {
+      "s": "“Your slides were bad.” That sounds {harsh}.",
+      "e": "harsh",
+      "m": "overly severe or unkind in tone",
+      "t": "duro, ríspido",
+      "i": 7
+    }
+  ],
+  "dialogue": [
+    {
+      "id": "D6.1",
+      "who": "kim",
+      "g": "Então a grande conversa com o Raj é amanhã?",
+      "text": "So, the big talk with Raj is tomorrow?"
+    },
+    {
+      "id": "D6.2",
+      "who": "ana",
+      "g": "Sim. Vou começar com: “Você conhece muito bem o projeto, e eu gosto do seu estilo.”",
+      "text": "Yes. I’ll start with: “You really know the project, and I like your style.”"
+    },
+    {
+      "id": "D6.3",
+      "who": "kim",
+      "g": "Legal. E depois?",
+      "text": "Nice. And then?"
+    },
+    {
+      "id": "D6.4",
+      "who": "ana",
+      "g": "Depois: “Você falou rápido demais e só leu os slides.”",
+      "text": "Then: “You talked too fast and just read the slides.”"
+    },
+    {
+      "id": "D6.5",
+      "who": "kim",
+      "g": "Hum. Isso soa meio duro.",
+      "text": "Hmm. That sounds a bit harsh."
+    },
+    {
+      "id": "D6.6",
+      "who": "ana",
+      "g": "Mas é verdade!",
+      "text": "But it’s true!"
+    },
+    {
+      "id": "D6.7",
+      "who": "kim",
+      "g": "Claro, mas pode soar como um ataque. Tenta: “Pareceu um pouco corrido.”",
+      "text": "Sure, but it might come across as an attack. Try: “It seemed a little rushed.”"
+    },
+    {
+      "id": "D6.8",
+      "who": "ana",
+      "g": "“Pareceu um pouco corrido.” E, para os slides, talvez—",
+      "text": "“It seemed a little rushed.” And for the slides, maybe—"
+    },
+    {
+      "id": "D6.9",
+      "who": "kim",
+      "g": "Talvez “Os slides costumam—” Desculpa, continua.",
+      "text": "Maybe “The slides tend to—” Sorry, go on."
+    },
+    {
+      "id": "D6.10",
+      "who": "ana",
+      "g": "Não, é isso! “Os slides costumam ter muito texto. Talvez valha cortar alguns.”",
+      "text": "No, that’s it! “The slides tend to have a lot of text. You might want to cut some.”"
+    },
+    {
+      "id": "D6.11",
+      "who": "kim",
+      "g": "Muito melhor. E a pergunta da cliente? Essa é mais séria.",
+      "text": "Much better. And the client’s question? That one’s more serious."
+    },
+    {
+      "id": "D6.12",
+      "who": "ana",
+      "g": "“Será que a gente podia preparar as respostas juntos da próxima vez?”",
+      "text": "“I wonder if we could prepare the answers together next time.”"
+    },
+    {
+      "id": "D6.13",
+      "who": "kim",
+      "g": "Perfeito. Ah, e começa com uma pergunta: “Como você acha que foi?”",
+      "text": "Perfect. Oh, and start with a question: “How do you think it went?”"
+    },
+    {
+      "id": "D6.14",
+      "who": "ana",
+      "g": "Boa ideia. Para ser justa, era o primeiro cliente grande dele. Tem uma fase de aprendizado.",
+      "text": "Good idea. To be fair, it was his first big client. There’s a learning curve."
+    }
+  ],
+  "grammar": [
+    {
+      "d": "In recent presentations, your slides have often contained too much text.",
+      "f": "tend to + verb",
+      "ex": "Your slides tend to have a lot of text.",
+      "n": "often, not always",
+      "i": 0
+    },
+    {
+      "d": "The end was rushed.",
+      "f": "seem + (a little) + adjective",
+      "ex": "The end seemed a little rushed.",
+      "n": "this is how I saw it",
+      "i": 1
+    },
+    {
+      "d": "Your emails are cold.",
+      "f": "might come across as + adjective",
+      "ex": "Your emails might come across as a little cold.",
+      "n": "this is how others might see it",
+      "i": 2
+    },
+    {
+      "d": "Cut some slides.",
+      "f": "You might want to + verb",
+      "ex": "You might want to cut some slides.",
+      "n": "a suggestion",
+      "i": 3
+    },
+    {
+      "d": "Prepare the answers before the meeting.",
+      "f": "I wonder if you could + verb",
+      "ex": "I wonder if you could prepare the answers before the meeting.",
+      "n": "a tentative request, with room for a response",
+      "i": 4
+    },
+    {
+      "d": "Practice with me on Wednesday.",
+      "f": "Would it be worth + -ing?",
+      "ex": "Would it be worth practicing together on Wednesday?",
+      "n": "you ask his opinion",
+      "i": 5
+    }
+  ],
+  "mail": [
+    "Hi Ana,",
+    "Thank you and your team for the presentation Raj delivered on Tuesday. He really knows the project, and he has a friendly style. The slides had a lot of information. To be fair, there was a lot to say in thirty minutes.",
+    "Some of us found the second part a bit hard to understand, and we didn’t get an answer to my question about the deadline. It might be worth meeting again next week, just for the important points. Would Thursday at ten work? It would be great if you could be there too.",
+    "Best regards,\nLaura Hughes"
+  ],
+  "warmups": [
+    {
+      "id": "WU.1",
+      "context": "Ana’s note: the second half was too fast to follow.",
+      "a": 1,
+      "o": [
+        "Your delivery is always rushed, although I’m sure you mean well.",
+        "It seemed a little rushed in the second half, and I found the main point hard to follow.",
+        "I suppose it was probably absolutely fine, really."
+      ]
+    },
+    {
+      "id": "WU.2",
+      "context": "Ana wants fewer slides and more time for questions.",
+      "a": 2,
+      "o": [
+        "I wonder if you could stop relying on slides altogether.",
+        "You might want to think about maybe doing something a little different.",
+        "Would you be open to trimming the slide deck so there’s more time for questions?"
+      ]
+    },
+    {
+      "id": "WU.3",
+      "context": "Raj says: “I only received the slides on Monday.”",
+      "a": 0,
+      "o": [
+        "That helps me understand the timing. How could we make sure the deadline question is covered next time?",
+        "Fair enough. Let’s forget about the unanswered question.",
+        "If you’d prepared properly, that wouldn’t have happened."
+      ]
+    }
+  ],
+  "reading": [
+    {
+      "q": "How satisfied does Laura sound? Which phrases support your view?",
+      "a": "She praises Raj’s knowledge and friendly style, but raises concerns about the second part and the unanswered deadline question."
+    },
+    {
+      "q": "What does Laura suggest for the next meeting?",
+      "a": "She suggests focusing on the important points, meeting on Thursday at ten and having Ana there too."
+    }
+  ],
+  "comprehension": [
+    {
+      "q": "Why doesn’t Kim like Ana’s first version?",
+      "a": "It sounds a bit harsh. It might come across as an attack."
+    },
+    {
+      "q": "What does Ana want to do about the client’s question?",
+      "a": "Prepare the answers with Raj next time."
+    },
+    {
+      "q": "Why does Ana say “to be fair”?",
+      "a": "Because it was Raj’s first big client. Making mistakes is normal at the start."
+    }
+  ],
+  "listening": "Hi, Ana, it’s Raj. Thanks for today. Really. It was… constructive. I’ll take it on board. I guess I did talk a bit fast. But, to be fair, nobody told me Laura would ask about the deadline. I didn’t know how to handle it. And the slides were Sarah’s. I only saw them on Monday. Anyway. I’ll try not to rush next time. Oh, and Thursday? I wonder if I could talk to Laura directly. Just me. I think it’s worth trying. Let me know. Thanks.",
+  "listeningQuestions": [
+    {
+      "q": "Raj accepts part of the feedback but qualifies his responsibility.",
+      "o": ["Yes", "No"],
+      "a": 0,
+      "say": "He accepts that he spoke fast, but offers context for the unanswered question and the slides."
+    },
+    {
+      "q": "Raj takes full responsibility for the slides and the unanswered deadline question.",
+      "o": ["Yes", "No"],
+      "a": 1,
+      "say": "The slides were Sarah’s, and he says he had not been warned about the deadline question."
+    },
+    {
+      "q": "Raj wants more independence at the follow-up meeting.",
+      "o": ["Yes", "No"],
+      "a": 0,
+      "say": "He wants to speak to Laura directly, by himself."
+    }
+  ],
+  "corrections": [
+    {
+      "s": "Your presentation was bad.",
+      "a": "The second half seemed rushed, and the main point was hard to follow.",
+      "rt": true,
+      "why": "Grammatical, but vague and judgmental. Identify the part that caused difficulty and give an example."
+    },
+    {
+      "s": "Use fewer slides next time.",
+      "a": "You might want to use fewer slides next time.",
+      "rt": true,
+      "why": "In this peer conversation, a specific invitation is more collaborative than a bare imperative. A directive could suit different authority or urgency."
+    },
+    {
+      "s": "I wonder if we could prepare the answers together next time.",
+      "ok": true,
+      "why": "The proposal is specific and includes the speaker, while leaving room for the colleague’s response."
+    },
+    {
+      "s": "I need to give you a feedback.",
+      "a": "I’d like to give you some feedback.",
+      "why": "Feedback is uncountable: some feedback, not a feedback. “I’d like to” also makes the opening less abrupt."
+    },
+    {
+      "s": "You don’t know how to present.",
+      "a": "When the deadline question went unanswered, the next steps were unclear. Could we prepare the key answers together?",
+      "rt": true,
+      "why": "Describe the behaviour and its effect, then propose a concrete next step. General reassurance about learning does not explain the concern."
+    }
+  ],
+  "review": [
+    {
+      "question": "When have you received feedback you disagreed with?",
+      "hint": "At first, I felt… / What bothered me was…"
+    },
+    {
+      "question": "What helped you understand the other person’s concern?",
+      "hint": "A specific example helped me see…"
+    },
+    {
+      "question": "Ask your teacher how they handle a difficult feedback conversation.",
+      "hint": "How do you…? / What would you do if…?"
+    }
+  ],
+  "grammarNotes": [
+    {
+      "title": "Describe the effect",
+      "text": "tend to + verb = a recurring pattern; seem + adjective = your impression; might come across as + adjective/noun = a possible interpretation. A little / a bit can reduce the force of a criticism."
+    },
+    {
+      "title": "Make room for a response",
+      "text": "You might want to + verb = suggestion; I wonder if you could + verb = tentative request; Would it be worth + -ing? = invitation to consider an option."
+    },
+    {
+      "title": "Keep the point clear",
+      "text": "Hedging is not automatically polite. Tone, authority and context matter. Give a specific example and a workable next step; avoid softening the message until the issue disappears."
+    }
+  ],
+  "homePractice": [
+    {
+      "title": "Retrieve the language",
+      "text": "Recall six expressions without looking. Give a new, specific example for each; revisit them in two days and again in six days."
+    },
+    {
+      "title": "Change the delivery",
+      "text": "Read Ana’s dialogue lines aloud twice: first bluntly, then tactfully. Keep the words the same and notice how the message changes."
+    },
+    {
+      "title": "Prepare a real conversation",
+      "text": "Choose one piece of feedback you need to give. Prepare an observation, its effect and one request. Bring it to your next class."
+    }
+  ]
+}

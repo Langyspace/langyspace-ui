@@ -1,0 +1,78 @@
+{
+  "generationTool": "built-in image_gen",
+  "date": "2026-11-17",
+  "profile": "exercise-scene",
+  "styleReference": "A101/scene-tired-tom",
+  "styleBase": "../../shared/illustration-style.txt",
+  "promptSet": "../image-scenes.json",
+  "sourceFormat": "PNG",
+  "conversion": {
+    "tool": "sharp",
+    "version": "0.35.5",
+    "width": 768,
+    "quality": 86,
+    "removeBackground": false
+  },
+  "images": [
+    {
+      "id": "scene-getup",
+      "file": "scene-getup.webp",
+      "originalSha256": "11305fa6bfc25dd5e7477270f793c24b684a5a7640b32d0c4cbac34d4cad3c79",
+      "sha256": "7c77fda3885fbf28320b4a2b6b0fe6e4e8ea61275ca027a7af04161ef0ff4c61",
+      "bytes": 47092,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-eat",
+      "file": "scene-eat.webp",
+      "originalSha256": "a738a8f94579b760f6564f48deaaf856b10e7d9d27dfa56ce7ee14a385ddfe10",
+      "sha256": "463a04b6b3549ec636bc416151be822c8f1f8c74ec69a6d7645d783f7c91b0ca",
+      "bytes": 55014,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-work",
+      "file": "scene-work.webp",
+      "originalSha256": "41b60b71fe11ef22677f86a95faef97b6042f817e97dc43b59f55dc1eed3765e",
+      "sha256": "1c7f9b22fc1c1a625ed8bf5de962fcc5ac7053bbadc03c6a27da6b599c5ae4e6",
+      "bytes": 48646,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-study",
+      "file": "scene-study.webp",
+      "originalSha256": "4f9d190fdd16f4a67a2571837b3a2b559783b400c465240a6ba550c730ee4e74",
+      "sha256": "00c397f9a94400f015b44c0a692ec5033ed5dd69961d7e6dda10a198829fc245",
+      "bytes": 48554,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-gym",
+      "file": "scene-gym.webp",
+      "originalSha256": "36f6f803c52e199cf6c36828d7ae2b7fde5041923a01e4f0e4ed09279caeff5b",
+      "sha256": "99e2744458f0d4ad0c17ff7a592427212f6cdfbc396ad4543744d1418bab8a8c",
+      "bytes": 49994,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    },
+    {
+      "id": "scene-sleep",
+      "file": "scene-sleep.webp",
+      "originalSha256": "d23b5eee5d9a9e28c67a985e92c2fbae44fdf481714838cca483d076af52d200",
+      "sha256": "e21673f6b0a1d00d507e673d100806491fd83ea671e0332ab0d8d6ee724c6544",
+      "bytes": 35764,
+      "width": 768,
+      "height": 512,
+      "hasAlpha": false
+    }
+  ]
+}

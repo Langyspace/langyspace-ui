@@ -1,0 +1,1014 @@
+{
+  "taskId": "FEEDBACK37-PRIVATE",
+  "sourceCommit": "c77118481110a428303a38c7ea79477bb9d65b38",
+  "coverage": {
+    "A101": "stories/materials/A101/lesson.ts",
+    "A102": "stories/materials/A102/A102.data.ts",
+    "A103": "stories/materials/A103/A103.review.json",
+    "A104": "stories/materials/A104/A104.review.json",
+    "A105": "stories/materials/A105/A105.data.ts",
+    "A106": "stories/materials/A106/A106.review.json",
+    "A201": "stories/materials/A201/A201.content.json",
+    "B101": "stories/materials/B101/B101.content.json",
+    "B201": "stories/materials/B201/B201.content.json",
+    "C101": "stories/materials/C101/C101.content.json",
+    "TrialA1": "stories/materials/TrialA1/TrialA1.content.json",
+    "TrialB1": "stories/materials/TrialB1/TrialB1.content.json",
+    "TrialB2": "stories/materials/TrialB2/TrialB2.content.json",
+    "Frontend": "stories/materials/Frontend/Frontend.content.json"
+  },
+  "characters": [
+    {
+      "id": "ana",
+      "name": "Ana Souza",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "Futebol e parque; não gosta de livros no diálogo TrialA1.",
+      "origin": "Brasil",
+      "relationships": "Irmã de Leo e Bia; filha dos pais não nomeados; dona de Thor e Mia.",
+      "portrait": "stories/materials/shared/assets/ana-profile-soft-v2.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "line": 181,
+          "excerpt": "Hi, Kim! I’m Ana. I’m from Brazil."
+        },
+        {
+          "path": "stories/materials/A102/A102.data.ts",
+          "line": 91,
+          "excerpt": "My last name is Souza."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 175,
+          "excerpt": "This is my brother, Leo. He’s a student."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 246,
+          "excerpt": "This is my sister, Bia."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 206,
+          "excerpt": "Yes! This is Thor. He’s three."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 218,
+          "excerpt": "Yes, I do. Her name is Mia."
+        },
+        {
+          "path": "stories/materials/TrialA1/TrialA1.content.json",
+          "line": 152,
+          "excerpt": "I don’t like books. I like soccer!"
+        },
+        {
+          "path": "stories/materials/TrialA1/TrialA1.content.json",
+          "line": 162,
+          "excerpt": "I play soccer here with my friends."
+        },
+        {
+          "path": "stories/materials/TrialB1/TrialB1.content.json",
+          "line": 101,
+          "excerpt": "A weekend in Ilhabela with my brother, Leo."
+        }
+      ],
+      "optionalOrContextualExamples": [
+        {
+          "value": "team leader",
+          "status": "Frase explícita de contexto lexical C101; cargo unificado a definir.",
+          "evidence": {
+            "path": "stories/materials/C101/C101.content.json",
+            "line": 26,
+            "excerpt": "Ana is a team leader now."
+          }
+        }
+      ],
+      "temporaryEvents": [
+        "B101: pinta a casa, corre há duas semanas e fez três bolos; não virar profissão/hobby permanente.",
+        "B201: viagem a Nova York e jantar da equipe.",
+        "TrialB2: emprego novo; vai ao escritório três dias por semana.",
+        "A104: D.2 diz always six; G.2 diz seven. Horário canônico a definir."
+      ]
+    },
+    {
+      "id": "kim",
+      "name": "Kim",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Frontend developer (perfil Frontend).",
+      "hobbies": "Música, livros e parque; academia em A104.",
+      "origin": "Coreia",
+      "relationships": "Irmã de Jin; conversa com Ana; não tem pet em A106.",
+      "portrait": "stories/materials/shared/assets/kim-profile-approved.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "line": 175,
+          "excerpt": "Hi! I’m Kim. I’m from Korea."
+        },
+        {
+          "path": "stories/materials/Frontend/Frontend.practice.tsx",
+          "line": 72,
+          "excerpt": "<b>Frontend developer</b>"
+        },
+        {
+          "path": "stories/materials/Frontend/Frontend.practice.tsx",
+          "line": 73,
+          "excerpt": "JavaScript · three years · still uses it"
+        },
+        {
+          "path": "stories/materials/TrialA1/TrialA1.content.json",
+          "line": 147,
+          "excerpt": "I like music and books."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 372,
+          "excerpt": "This is my sister, Jin. She’s a doctor. She’s from Korea."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 411,
+          "excerpt": "I love animals, but I don’t have a pet."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "B101: regressa de uma visita à família na Coreia.",
+        "TrialB1: passeio no Bom Retiro; gostaria de visitar Salvador.",
+        "TrialB2: prefere trabalhar em casa e sair para caminhar num dia bom.",
+        "A104: rotina de academia à noite, never in the morning; plano G.5 propõe sábado de manhã, sem declarar uma nova rotina."
+      ]
+    },
+    {
+      "id": "leo",
+      "name": "Leo",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Student (A103); tech lead (Frontend). Continuidade a definir.",
+      "hobbies": "Gosta de churrascos no parque.",
+      "origin": "a definir",
+      "relationships": "Irmão de Ana; vai se casar com Carla em B101.",
+      "portrait": "stories/materials/shared/assets/leo-profile-soft-v2.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 175,
+          "excerpt": "This is my brother, Leo. He’s a student."
+        },
+        {
+          "path": "stories/materials/Frontend/FrontendLesson.tsx",
+          "line": 135,
+          "excerpt": "Leo, the tech lead, sends Kim a voice message."
+        },
+        {
+          "path": "stories/materials/B101/B101.content.json",
+          "line": 331,
+          "excerpt": "Carla and I are getting married! Next year!"
+        },
+        {
+          "path": "stories/materials/B101/B101.content.json",
+          "line": 331,
+          "excerpt": "I love barbecues in the park!"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "TrialB1 reforça a relação irmão de Ana na viagem a Ilhabela.",
+        "Estudante e tech lead não são automaticamente uma promoção cronológica; não inventar idade ou sequência profissional."
+      ]
+    },
+    {
+      "id": "bia",
+      "name": "Bia",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Cook",
+      "hobbies": "a definir",
+      "origin": "Recife",
+      "relationships": "Irmã de Ana.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 246,
+          "excerpt": "This is my sister, Bia."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 274,
+          "excerpt": "No, she isn’t. She’s a cook."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 302,
+          "excerpt": "She’s from Recife."
+        }
+      ],
+      "optionalOrContextualExamples": [
+        "Nenhum retrato individual identificado. O cook genérico do vocabulary não é identificado como Bia na fonte ativa."
+      ],
+      "temporaryEvents": []
+    },
+    {
+      "id": "ana-mother",
+      "name": "Mãe de Ana — nome a definir",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Doctor",
+      "hobbies": "a definir",
+      "origin": "Recife (pais de Ana).",
+      "relationships": "Mãe de Ana; relação com os demais filhos não detalhada.",
+      "portrait": "Cena conjunta A103/assets/scene-parents.webp; retrato individual a definir.",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 187,
+          "excerpt": "These are my parents. They’re from Recife."
+        },
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 199,
+          "excerpt": "No, she isn’t. She’s a doctor."
+        },
+        {
+          "path": "stories/materials/A105/A105.data.ts",
+          "line": 52,
+          "excerpt": "My mother loves watermelons!"
+        },
+        {
+          "path": "stories/materials/A105/A105.data.ts",
+          "line": 115,
+          "excerpt": "No, she doesn’t. She likes carrots."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "ana-father",
+      "name": "Pai de Ana — nome a definir",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Recife (pais de Ana).",
+      "relationships": "Pai de Ana.",
+      "portrait": "Cena conjunta A103/assets/scene-parents.webp; retrato individual a definir.",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 187,
+          "excerpt": "These are my parents. They’re from Recife."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "jin",
+      "name": "Jin",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Doctor",
+      "hobbies": "a definir",
+      "origin": "Coreia",
+      "relationships": "Irmã de Kim; tem um gato e um cachorro em A106.",
+      "portrait": "Cena contextual A103/assets/scene-jin-tom.webp; retrato individual a definir.",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 372,
+          "excerpt": "This is my sister, Jin. She’s a doctor. She’s from Korea."
+        },
+        {
+          "path": "stories/materials/A105/A105.data.ts",
+          "line": 125,
+          "excerpt": "My sister Jin loves mangoes."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 411,
+          "excerpt": "My sister Jin has a cat and a dog. The dog is young, and the cat is ten!"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "carla",
+      "name": "Carla",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "Gosta de festas grandes.",
+      "origin": "a definir",
+      "relationships": "Vai se casar com Leo.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/B101/B101.content.json",
+          "line": 331,
+          "excerpt": "Carla and I are getting married! Next year!"
+        },
+        {
+          "path": "stories/materials/B101/B101.content.json",
+          "line": 331,
+          "excerpt": "Carla loves big parties."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "raj",
+      "name": "Raj",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Contexto de trabalho com Ana; apresenta projeto a Laura em C101.",
+      "portrait": "stories/materials/shared/assets/raj-profile-v1.webp",
+      "facts": [
+        {
+          "path": "stories/materials/B201/B201.content.json",
+          "line": 141,
+          "excerpt": "The address was in a message from Raj!"
+        },
+        {
+          "path": "stories/materials/C101/C101.content.json",
+          "line": 193,
+          "excerpt": "the presentation Raj delivered on Tuesday"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Autor da mensagem sobre o jantar em B201.",
+        "Em C101 recebe feedback de Ana, comenta slides de Sarah e quer falar com Laura. Cargo, origem e hobbies não declarados."
+      ]
+    },
+    {
+      "id": "jun-tech",
+      "name": "Jun — Frontend",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Cargo a definir; faz a entrevista da CloudNest.",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "stories/materials/Frontend/assets/meet_jun.webp",
+      "facts": [
+        {
+          "path": "stories/materials/Frontend/Frontend.conversation.tsx",
+          "line": 280,
+          "excerpt": "interviewer={{ name: 'Jun'"
+        },
+        {
+          "path": "stories/materials/Frontend/Frontend.conversation.tsx",
+          "line": 231,
+          "excerpt": "CloudNest is looking for a frontend developer."
+        }
+      ],
+      "optionalOrContextualExamples": [
+        "A101 usa Jun em um cartão de pessoa da Coreia.",
+        "Metadata da imagem scene-engineer de A103 chama o personagem Jun, mas o item ativo diz apenas an engineer. Não atribuir cargo/origem do exemplo ao entrevistador automaticamente."
+      ],
+      "temporaryEvents": []
+    },
+    {
+      "id": "laura-hughes",
+      "name": "Laura Hughes",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Profissão a definir; cliente no contexto C101.",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Cliente que escreve para Ana sobre a apresentação de Raj.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/C101/C101.content.json",
+          "line": 195,
+          "excerpt": "Laura Hughes"
+        },
+        {
+          "path": "stories/materials/C101/C101.content.json",
+          "line": 126,
+          "excerpt": "And the client’s question? That one’s more serious."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah — B201/C101",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "B201: presente no contexto do jantar; C101: slides eram de Sarah. Identidade entre contextos a definir.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/B201/B201.content.json",
+          "line": 353,
+          "excerpt": "Sarah thinks you got lost in Times Square."
+        },
+        {
+          "path": "stories/materials/C101/C101.content.json",
+          "line": 280,
+          "excerpt": "And the slides were Sarah’s."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "tom-a103",
+      "name": "Tom — A103",
+      "classification": "explicit_character_context",
+      "age": "a definir",
+      "profession": "Cook",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Amigo de Kim.",
+      "portrait": "Cena conjunta A103/assets/scene-jin-tom.webp; retrato individual a definir.",
+      "facts": [
+        {
+          "path": "stories/materials/A103/A103.review.json",
+          "line": 372,
+          "excerpt": "this is my friend Tom. He’s a young cook."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "young é descritor explícito; idade numérica a definir. Não fundir automaticamente com Tom dos cartões A101."
+      ]
+    },
+    {
+      "id": "tom-a101",
+      "name": "Tom — A101",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Alemanha no cartão GUESTS",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-cold-tom.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Cenas tired/cold são estados do exercício; não atribuir cook ou relação com Kim."
+      ]
+    },
+    {
+      "id": "julia",
+      "name": "Julia",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-cold-julia.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Estado cold, não traço permanente."]
+    },
+    {
+      "id": "josh",
+      "name": "Josh",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-sad-josh.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Estado sad, não traço permanente."]
+    },
+    {
+      "id": "mia-person",
+      "name": "Mia — pessoa A101",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-happy-mia.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Não é a gata Mia de A106."]
+    },
+    {
+      "id": "ji-woo",
+      "name": "Ji-woo",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Coreia",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-korea-jiwoo.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Grafia visível Ji-woo; filename jiwoo."]
+    },
+    {
+      "id": "hiro",
+      "name": "Hiro",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Japão",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-japan-hiro.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Pessoa do exercício de origem."]
+    },
+    {
+      "id": "lucia",
+      "name": "Lucía",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Espanha",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-spain-lucia.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Pessoa do exercício de origem."]
+    },
+    {
+      "id": "lukas",
+      "name": "Lukas",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Alemanha",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-germany-lukas.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Amigo de Ana no R.T6; não fundir com Lucas de A201."]
+    },
+    {
+      "id": "chloe",
+      "name": "Chloé",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "França",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-france-chloe.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Pessoa do exercício de origem."]
+    },
+    {
+      "id": "jake",
+      "name": "Jake",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Estados Unidos",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-usa-jake.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": ["Pessoa do exercício de origem."]
+    },
+    {
+      "id": "emma-a101",
+      "name": "Emma — cartão A101",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Alemanha",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-hungry-ana.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Cartão reaproveita cena de Ana; não é evidência de identidade Ana=Emma."
+      ]
+    },
+    {
+      "id": "yuki",
+      "name": "Yuki",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Japão",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-cold-julia.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Cartão reaproveita cena de Julia; identidade distinta até definição."
+      ]
+    },
+    {
+      "id": "ken",
+      "name": "Ken",
+      "classification": "exercise_persona",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "Japão",
+      "relationships": "a definir",
+      "portrait": "stories/materials/A101/assets/scene-tired-tom.webp",
+      "facts": [
+        {
+          "path": "stories/materials/A101/lesson.ts",
+          "selector": "WU2/WU5/GUESTS/RT; see source manifest"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Cartão reaproveita cena de Tom; identidade distinta até definição."
+      ]
+    },
+    {
+      "id": "anna-a201",
+      "name": "Anna — A201",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "Lê antes de dormir; costuma ir à academia de manhã.",
+      "origin": "a definir",
+      "relationships": "Irmã e pais não nomeados.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "No parque lê um livro; na mensagem faz café/ouve música. Nome distinto de Ana apesar do retrato reutilizado."
+      ]
+    },
+    {
+      "id": "ben-a201",
+      "name": "Ben — A201",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Costuma pedir comida; faz macarrão no diálogo; corre no parque."
+      ]
+    },
+    {
+      "id": "emma-a201",
+      "name": "Emma — A201",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "Lê depois do jantar.",
+      "origin": "a definir",
+      "relationships": "Passeia com seu cachorro na cena do parque.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Pede comida às sextas e assiste uma série nova. Não fundir com outras Emma."
+      ]
+    },
+    {
+      "id": "lucas-a201",
+      "name": "Lucas — A201",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Cozinha diariamente; no parque anda de bicicleta. Não é automaticamente Lukas."
+      ]
+    },
+    {
+      "id": "sophie-a201",
+      "name": "Sophie",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Come um sanduíche no parque; profissão/hobby a definir."
+      ]
+    },
+    {
+      "id": "daniel-a201",
+      "name": "Daniel",
+      "classification": "exercise_story_A201",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A201/A201.content.json",
+          "selector": "dialogue/gaps/park/listening"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Tira fotos no parque; isso não declara profissão ou hobby permanente."
+      ]
+    },
+    {
+      "id": "emma-a102",
+      "name": "Emma — ligação A102",
+      "classification": "open_roleplay_contact",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "a definir",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A102/A102.sections.tsx",
+          "line": 366,
+          "excerpt": "contactName=\"Emma\""
+        }
+      ],
+      "optionalOrContextualExamples": [
+        "Sobrenome e telefone dependem da professora no roleplay. Gray não aparece na fonte ativa; Lima/Lina/Lema são alternativas de soletração, não novas pessoas."
+      ],
+      "temporaryEvents": []
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "classification": "named_pet",
+      "age": "3",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Cachorro de Ana.",
+      "portrait": "A106/assets/scene-home.webp e cenas de cachorro; identidade individual da imagem de vocabulary não deve ser inferida só do label.",
+      "facts": [
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 206,
+          "excerpt": "Yes! This is Thor. He’s three."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "mia-cat",
+      "name": "Mia — gata A106",
+      "classification": "named_pet",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Gata de Ana; distinta de Mia pessoa A101.",
+      "portrait": "A106/assets/scene-cat-on.webp, scene-cat-in.webp, scene-cat-under.webp, scene-cat-next.webp.",
+      "facts": [
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 218,
+          "excerpt": "Yes, I do. Her name is Mia."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "D.6: está sob a cama; roleplay: no sofá. Posições temporárias, não nova biografia."
+      ]
+    },
+    {
+      "id": "max-cat",
+      "name": "Max",
+      "classification": "named_pet",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Um dos dois gatos de uma irmã não nomeada de Kim.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 172,
+          "excerpt": "My sister has two cats."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 187,
+          "excerpt": "Their names are Max and Luna."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    },
+    {
+      "id": "luna-cat",
+      "name": "Luna",
+      "classification": "named_pet",
+      "age": "a definir",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Uma dos dois gatos de uma irmã não nomeada de Kim.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 187,
+          "excerpt": "Their names are Max and Luna."
+        },
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 341,
+          "excerpt": "She’s on the sofa."
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": [
+        "Não atribuir automaticamente Max/Luna a Jin. A escuta nomeia Jin com um gato e um cachorro."
+      ]
+    },
+    {
+      "id": "jin-unnamed-cat",
+      "name": "Gato de Jin — nome a definir",
+      "classification": "unnamed_pet_with_explicit_fact",
+      "age": "10",
+      "profession": "a definir",
+      "hobbies": "a definir",
+      "origin": "a definir",
+      "relationships": "Pet de Jin; nome e ligação com Max/Luna a definir.",
+      "portrait": "a definir",
+      "facts": [
+        {
+          "path": "stories/materials/A106/A106.review.json",
+          "line": 411,
+          "excerpt": "The dog is young, and the cat is ten!"
+        }
+      ],
+      "optionalOrContextualExamples": [],
+      "temporaryEvents": []
+    }
+  ],
+  "foodPreferences": {
+    "Ana": {
+      "likes": ["mangoes", "apples", "bananas"],
+      "dislikes": ["onions"],
+      "source": "stories/materials/A105/A105.data.ts"
+    },
+    "Kim": {
+      "likes": ["mangoes", "carrots", "bananas", "green apples"],
+      "dislikes": ["watermelons", "oranges"],
+      "source": "stories/materials/A105/A105.data.ts"
+    },
+    "Mãe de Ana": {
+      "likes": ["watermelons", "carrots"],
+      "dislikes": ["onions"],
+      "source": "stories/materials/A105/A105.data.ts"
+    },
+    "Jin": {
+      "loves": ["mangoes"],
+      "source": "stories/materials/A105/A105.data.ts"
+    },
+    "Irmã não nomeada de Kim": {
+      "likes": ["bananas"],
+      "source": "stories/materials/A105/A105.data.ts",
+      "identity": "a definir; não transferir automaticamente para Jin"
+    }
+  },
+  "pendingContinuityDecisions": [
+    "Nenhuma idade humana numérica foi identificada como fato de personagem. I’m32 é exemplo de grammar A101, não idade de Ana.",
+    "Leo estudante A103, noivo B101 e tech lead Frontend: preservar afirmações por contexto, sem inventar progressão temporal.",
+    "Ana is a team leader now é contexto lexical C101; designer não foi localizado como título explícito na composição ativa Frontend da base.",
+    "A104: always six versus seven; rotina de Kim never morning versus convite futuro Saturday morning. Não consolidar horários antes de decidir contexto.",
+    "Kim tem irmã Jin; irmã não nomeada com Max/Luna não está explicitamente identificada como Jin. Escuta de Jin menciona um gato e um cachorro.",
+    "Não fundir Mia pessoa/gata, Tom A101/A103, Emma A101/A102/A201, Ana/Anna ou Lukas/Lucas. Reuso de imagem não prova identidade.",
+    "Jun do cartão de origem e Jun na metadata de engineer são exemplos/aliases; não fixam origem ou emprego do entrevistador.",
+    "Falas de You/Teacher, blanks, correções erradas e frases genéricas de grammar não viram história de personagem."
+  ],
+  "approvalLimit": "Portraits are the existing canonical/reused source references; prior human approval was not independently revalidated. No render or new asset generation.",
+  "limits": [
+    "Only active reviewed JSON for A103/A104/A106; obsolete source lesson objects are not promoted.",
+    "Source claims and optional examples are separated; no invented age/profession/history promoted to canon.",
+    "No repo edit, QA, test, browser, Claude or build."
+  ]
+}

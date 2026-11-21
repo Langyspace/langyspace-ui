@@ -547,13 +547,48 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  ...(['SlideDeck', 'SlidePage'] as const).map((exportName) => ({
+  {
+    exportName: 'SlideNotesWindow',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Slide/SlideNotesWindow.tsx',
+    runtimeMarker: 'lsui-sc-slide-notes-window',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Slide/SlideNotesWindow.stories.tsx',
+      title: 'Slide/SlideNotesWindow',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Slide/SlideNotesWindow.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Slide/SlideNotesWindow.types.ts',
+      documentation: {
+        path: 'docs/components/slides.md',
+        anchor: 'slidenoteswindow',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/LessonNotesPopup/index.tsx',
+        },
+      ],
+    },
+  },
+  ...(['SlideDeck', 'SlidePage', 'SlideNotes'] as const).map((exportName) => ({
     browserSmoke: complete,
     exportName,
-    interactive: exportName === 'SlideDeck',
+    interactive: exportName !== 'SlidePage',
     ownerPath: `src/components/Slide/${exportName}.tsx`,
     runtimeMarker:
-      exportName === 'SlideDeck' ? 'lsui-sc-slide-deck' : 'lsui-sc-slide-page',
+      exportName === 'SlideDeck'
+        ? 'lsui-sc-slide-deck'
+        : exportName === 'SlideNotes'
+          ? 'lsui-sc-slide-notes'
+          : 'lsui-sc-slide-page',
     ssrSmoke: complete,
     story: {
       ...complete,

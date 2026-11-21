@@ -1,0 +1,206 @@
+{
+  "level": "A1",
+  "title": "What do you like?",
+  "titleParts": ["What do you ", "like?"],
+  "goal": "Conversar em inglês sobre o que você gosta de fazer.",
+  "p1": {
+    "ins": "Introduce yourself and talk about what you like.",
+    "cards": [
+      {
+        "e": "🪪",
+        "q": "What’s your name?",
+        "pt": "Qual é o seu nome?",
+        "a": "My name is …"
+      },
+      {
+        "e": "🏠",
+        "q": "Where are you from?",
+        "pt": "De onde você é?",
+        "a": "I’m from …"
+      },
+      {
+        "e": "🙂",
+        "q": "How are you?",
+        "pt": "Como você está?",
+        "a": "I’m good, thanks. And you?"
+      }
+    ]
+  },
+  "p2": {
+    "title": "What can you name in the park?",
+    "ins": "Try to name every item before opening the dots. Click each dot to check your answer.",
+    "bg": "park",
+    "items": [
+      {
+        "e": "🎧",
+        "en": "music",
+        "x": 42.5,
+        "y": 8.5,
+        "targetBounds": {
+          "xPercent": 39.5,
+          "yPercent": 4,
+          "widthPercent": 8.5,
+          "heightPercent": 16
+        }
+      },
+      {
+        "e": "⚽",
+        "en": "a soccer ball",
+        "x": 64,
+        "y": 88,
+        "targetBounds": {
+          "xPercent": 57,
+          "yPercent": 79,
+          "widthPercent": 14,
+          "heightPercent": 19
+        }
+      },
+      {
+        "e": "📖",
+        "en": "a book",
+        "x": 61,
+        "y": 57,
+        "targetBounds": {
+          "xPercent": 50,
+          "yPercent": 51,
+          "widthPercent": 21,
+          "heightPercent": 11
+        }
+      },
+      {
+        "e": "🐶",
+        "en": "a dog",
+        "x": 85,
+        "y": 61,
+        "targetBounds": {
+          "xPercent": 73,
+          "yPercent": 38,
+          "widthPercent": 26,
+          "heightPercent": 46
+        }
+      },
+      {
+        "e": "🎧",
+        "en": "headphones",
+        "x": 23,
+        "y": 20,
+        "targetBounds": {
+          "xPercent": 20.5,
+          "yPercent": 4.5,
+          "widthPercent": 15.5,
+          "heightPercent": 21
+        }
+      },
+      {
+        "e": "🪑",
+        "en": "a bench",
+        "x": 66,
+        "y": 38,
+        "targetBounds": {
+          "xPercent": 4,
+          "yPercent": 35,
+          "widthPercent": 70,
+          "heightPercent": 49
+        }
+      },
+      {
+        "e": "👟",
+        "en": "sneakers",
+        "x": 47.5,
+        "y": 79.5,
+        "targetBounds": {
+          "xPercent": 29,
+          "yPercent": 72,
+          "widthPercent": 25,
+          "heightPercent": 21
+        }
+      }
+    ]
+  },
+  "p3": {
+    "title": "Do you like the park?",
+    "ins": "Listen to the model. Then have your own conversation.",
+    "lines": [
+      {
+        "who": "kim",
+        "en": "Do you like the park, Ana?",
+        "g": "Você gosta do parque, Ana?"
+      },
+      {
+        "who": "ana",
+        "en": "Yes, I do! I love the park. And you?",
+        "g": "Gosto! Eu amo o parque. E você?"
+      },
+      {
+        "who": "kim",
+        "en": "Me too. I like music and books.",
+        "g": "Eu também. Eu gosto de música e de livros."
+      },
+      {
+        "who": "ana",
+        "en": "Books? I don’t like books. I like soccer!",
+        "g": "Livros? Eu não gosto de livros. Eu gosto de futebol!"
+      },
+      {
+        "who": "kim",
+        "en": "Soccer? Cool!",
+        "g": "Futebol? Legal!"
+      },
+      {
+        "who": "ana",
+        "en": "I play soccer here with my friends.",
+        "g": "Eu jogo futebol aqui com meus amigos."
+      }
+    ],
+    "your": [
+      ["Who likes books, Kim or Ana?", "Kim likes books. Ana likes soccer."],
+      ["Where does Ana play soccer?", "She plays in the park."]
+    ]
+  },
+  "p4": {
+    "title": "Choose one",
+    "ins": "Say what you like and ask: “And you?”",
+    "strip": ["I like …", "I don’t like …", "And you?"],
+    "pairs": [
+      {
+        "q": "Movies or music?",
+        "a": ["🍿", "movies"],
+        "b": ["🎧", "music"]
+      },
+      {
+        "q": "Dogs or cats?",
+        "a": ["🐶", "dogs"],
+        "b": ["🐱", "cats"]
+      },
+      {
+        "q": "Pizza or salad?",
+        "a": ["🍕", "pizza"],
+        "b": ["🥗", "salad"]
+      }
+    ]
+  },
+  "p5": {
+    "ins": "Choose a topic. Ask a question and keep talking.",
+    "qs": [
+      ["🎧", "Do you like music?"],
+      ["🍿", "Do you like movies?"],
+      ["📖", "Do you like books?"],
+      ["⚽", "Do you like soccer?"],
+      ["🍕", "Do you like pizza?"],
+      ["🐶", "Do you like dogs?"]
+    ],
+    "go": [
+      ["🎧", "What music do you like?"],
+      ["🍿", "What movies do you like?"]
+    ],
+    "strip": ["Yes, I do.", "No, I don’t.", "I like …", "And you?", "Me too!"]
+  },
+  "p6": [
+    "My name is …",
+    "I’m from …",
+    "I like …",
+    "I don’t like …",
+    "Do you like …?",
+    "And you?"
+  ]
+}

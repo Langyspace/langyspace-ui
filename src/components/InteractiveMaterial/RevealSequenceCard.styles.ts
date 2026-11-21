@@ -33,7 +33,7 @@ export const Root = styled(Pressable).withConfig({
     cursor: default;
   }
   > b {
-    font-family: ${theme.slides.displayFontFamily};
+    font-family: ${theme.typography.fontFamily.sans};
     font-weight: ${theme.typography.fontWeight.bold};
     font-size: ${theme.typography.fontSize.md};
   }

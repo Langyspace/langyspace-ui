@@ -1,9 +1,10 @@
-import { useId, useRef } from 'react'
+import { useId, useRef, useState } from 'react'
 import { Avatar } from '../Avatar/Avatar'
 import { Button } from '../Button/Button'
 import { useVoiceMessageAudio } from './useVoiceMessageAudio'
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 
 const wave = [
   { id: 'a', height: 10 },
@@ -40,15 +41,21 @@ function formatTime(seconds: number) {
 function VoiceMessageContent({
   contact,
   greeting,
+  attachment,
   audio,
   questions,
+  questionHeading,
   onAnswer,
   active = true,
   footer,
   replyAction,
+  replayActionLabel,
+  transcriptReveal = 'third-listen',
   labels: overrides,
   ...props
 }: VoiceMessageExerciseProps) {
+  const [showTranscript, setShowTranscript] = useState(false)
+  const [followUpStarted, setFollowUpStarted] = useState(false)
   const id = useId()
   const playRef = useRef<HTMLButtonElement>(null)
   const media = useVoiceMessageAudio(active)
@@ -59,7 +66,12 @@ function VoiceMessageContent({
     replay: 'Ouvir novamente',
     speed: 'Velocidade',
     transcript: 'Transcrição',
-    transcriptHidden: 'Transcrição na segunda escuta',
+    showTranscript: 'Mostrar transcrição',
+    hideTranscript: 'Esconder transcrição',
+    transcriptHidden:
+      transcriptReveal === 'third-listen'
+        ? 'Transcrição na terceira escuta'
+        : 'Transcrição na segunda escuta',
     audioUnavailable: 'Áudio ainda não disponível.',
     audioError: 'Não foi possível reproduzir o áudio.',
     retry: 'Tentar novamente',
@@ -78,7 +90,12 @@ function VoiceMessageContent({
     !active && (media.status === 'playing' || media.status === 'loading')
       ? 'paused'
       : media.status
-  const transcriptVisible = media.playCount >= 2
+  const manualTranscript = transcriptReveal === 'manual-after-replay'
+  const transcriptPass = transcriptReveal === 'third-listen' ? 3 : 2
+  const transcriptUnlocked =
+    media.playCount >= transcriptPass && (!manualTranscript || followUpStarted)
+  const transcriptVisible =
+    transcriptUnlocked && (!manualTranscript || showTranscript)
   const playLabel = playing
     ? labels.pause
     : media.status === 'ended'
@@ -133,12 +150,12 @@ function VoiceMessageContent({
             <Avatar
               imageUrl={contact.avatarUrl}
               initials={contact.name.slice(0, 2)}
+              name={contact.name}
+              namePosition="beside"
+              textTone="inherit"
+              description={contact.status}
               size="sm"
             />
-            <Styled.ContactText>
-              <strong>{contact.name}</strong>
-              {contact.status ? <small>{contact.status}</small> : null}
-            </Styled.ContactText>
           </Styled.Contact>
           <Styled.Conversation
             tabIndex={0}
@@ -151,12 +168,20 @@ function VoiceMessageContent({
                 <Styled.Time>{greeting.timestamp}</Styled.Time>
               </Styled.Bubble>
             ) : null}
+            {attachment ? (
+              <Styled.PhotoBubble>
+                <img src={attachment.src} alt={attachment.alt} />
+                {attachment.timestamp ? (
+                  <Styled.Time>{attachment.timestamp}</Styled.Time>
+                ) : null}
+              </Styled.PhotoBubble>
+            ) : null}
             <Styled.VoiceBubble>
-              {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks on the second listen as explicitly requested for this listening exercise. */}
+              {/* eslint-disable-next-line jsx-a11y/media-has-caption -- The named transcript region below unlocks after the configured listening pass for this exercise. */}
               <audio
                 ref={media.audioRef}
                 src={audio.src}
-                preload="metadata"
+                preload="auto"
                 {...media.events}
               />
               <Styled.Player>
@@ -204,6 +229,11 @@ function VoiceMessageContent({
                 >
                   {media.speed}x
                 </Styled.Speed>
+                <Avatar
+                  imageUrl={contact.avatarUrl}
+                  initials={contact.name.slice(0, 2)}
+                  size="xs"
+                />
               </Styled.Player>
               <Styled.Meta>
                 <span>
@@ -211,6 +241,21 @@ function VoiceMessageContent({
                 </span>
                 <time>{audio.timestamp}</time>
               </Styled.Meta>
+              {manualTranscript && transcriptUnlocked ? (
+                <Button
+                  size="sm"
+                  variant="secondary"
+                  aria-expanded={showTranscript}
+                  aria-controls={`${id}-transcript`}
+                  onClick={() => {
+                    setShowTranscript(!showTranscript)
+                  }}
+                >
+                  {showTranscript
+                    ? labels.hideTranscript
+                    : labels.showTranscript}
+                </Button>
+              ) : null}
               <Styled.Transcript
                 $visible={transcriptVisible}
                 id={`${id}-transcript`}
@@ -278,6 +323,7 @@ function VoiceMessageContent({
           <Styled.HomeIndicator aria-hidden="true" />
         </Styled.Phone>
         <Styled.Side role="group" aria-label={labels.questions}>
+          {questionHeading}
           {questions.map((question, index) => (
             <Styled.Question
               key={question.id}
@@ -301,6 +347,8 @@ function VoiceMessageContent({
                     }
                     onClick={() => {
                       onAnswer(question.id, choice.id)
+                      if (choice.feedbackOutcome)
+                        playFeedbackSound(choice.feedbackOutcome)
                     }}
                   >
                     {choice.label}
@@ -319,6 +367,20 @@ function VoiceMessageContent({
               ) : null}
             </Styled.Question>
           ))}
+          {replayActionLabel &&
+          transcriptReveal !== 'third-listen' &&
+          (manualTranscript ? !followUpStarted : media.playCount < 2) ? (
+            <Button
+              variant="secondary"
+              disabled={!active || media.status !== 'ended'}
+              onClick={() => {
+                setFollowUpStarted(true)
+                void media.toggle()
+              }}
+            >
+              {replayActionLabel}
+            </Button>
+          ) : null}
           {footer}
         </Styled.Side>
       </Styled.Layout>

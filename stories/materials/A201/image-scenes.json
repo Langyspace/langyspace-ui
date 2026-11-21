@@ -1,0 +1,138 @@
+{
+  "revision": "a201-what-are-you-doing-v1",
+  "files": [
+    {
+      "file": "assets/scene-cooking.webp",
+      "status": "delivered",
+      "sha256": "7319e0a6de3279cb520c786c499c8792678e8ad8b5feecef6109dc48ba76bd67",
+      "bytes": 33444
+    },
+    {
+      "file": "assets/scene-reading.webp",
+      "status": "delivered",
+      "sha256": "540669e7e33e3eb68d82ada1c54ccf3cdb64cd3721481f698634b3fd78ba0013",
+      "bytes": 27436
+    },
+    {
+      "file": "assets/scene-working.webp",
+      "status": "delivered",
+      "sha256": "167f7cc21c49d22714c72f49326ff2532d76e3dca4e9ff50a83b73ffa2b81e58",
+      "bytes": 33434
+    },
+    {
+      "file": "assets/scene-dog-playing.webp",
+      "status": "delivered",
+      "sha256": "27e307ac1b696f9b1e5139a99480617e7df0e47e0d267de27ab2f6d086675601",
+      "bytes": 38606
+    },
+    {
+      "file": "assets/scene-people-eating.webp",
+      "status": "delivered",
+      "sha256": "308dee7a6e97753f006ef87994e95bfbc9c1e3793eb73771724722b10b9768de",
+      "bytes": 76398
+    },
+    {
+      "file": "assets/scene-two-sleeping.webp",
+      "status": "delivered",
+      "sha256": "4a087c904981f7721dc60eb22dba23578e6e047b6a6be796dd7e1f4725ed0ba5",
+      "bytes": 44014
+    },
+    {
+      "file": "assets/scene-park-six-actions.webp",
+      "status": "delivered",
+      "sha256": "5d1288d7632077a31f34d1ebc72f5b93092a8f11b63ce9bab9f49a9054abaf90",
+      "bytes": 167726
+    }
+  ],
+  "park": {
+    "image": "assets/scene-park-six-actions.webp",
+    "labelVisibility": "always",
+    "coordinates": "Measured original-image percentages from park-label-map.json; scene uses object-fit contain. Names are HTML, never image pixels.",
+    "hotspots": [
+      {
+        "id": "a201.park.anna",
+        "label": "Anna",
+        "xPercent": 7.5,
+        "yPercent": 18,
+        "prompt": "What is Anna doing?",
+        "answer": "Anna is reading a book.",
+        "targetBounds": {
+          "xPercent": 8,
+          "yPercent": 7,
+          "widthPercent": 20,
+          "heightPercent": 42
+        }
+      },
+      {
+        "id": "a201.park.ben",
+        "label": "Ben",
+        "xPercent": 61,
+        "yPercent": 12,
+        "prompt": "What is Ben doing?",
+        "answer": "Ben is running.",
+        "targetBounds": {
+          "xPercent": 38.5,
+          "yPercent": 2,
+          "widthPercent": 19,
+          "heightPercent": 46
+        }
+      },
+      {
+        "id": "a201.park.emma",
+        "label": "Emma",
+        "xPercent": 86,
+        "yPercent": 15,
+        "prompt": "What is Emma doing?",
+        "answer": "Emma is walking her dog.",
+        "targetBounds": {
+          "xPercent": 68.5,
+          "yPercent": 4,
+          "widthPercent": 24,
+          "heightPercent": 44
+        }
+      },
+      {
+        "id": "a201.park.lucas",
+        "label": "Lucas",
+        "xPercent": 33,
+        "yPercent": 58,
+        "prompt": "What is Lucas doing?",
+        "answer": "Lucas is riding a bike.",
+        "targetBounds": {
+          "xPercent": 4,
+          "yPercent": 50,
+          "widthPercent": 25.5,
+          "heightPercent": 48
+        }
+      },
+      {
+        "id": "a201.park.sophie",
+        "label": "Sophie",
+        "xPercent": 64,
+        "yPercent": 61,
+        "prompt": "What is Sophie doing?",
+        "answer": "Sophie is eating a sandwich.",
+        "targetBounds": {
+          "xPercent": 43,
+          "yPercent": 52,
+          "widthPercent": 14,
+          "heightPercent": 46
+        }
+      },
+      {
+        "id": "a201.park.daniel",
+        "label": "Daniel",
+        "xPercent": 92,
+        "yPercent": 69,
+        "prompt": "What is Daniel doing?",
+        "answer": "Daniel is taking pictures.",
+        "targetBounds": {
+          "xPercent": 74,
+          "yPercent": 49,
+          "widthPercent": 11,
+          "heightPercent": 49
+        }
+      }
+    ]
+  }
+}

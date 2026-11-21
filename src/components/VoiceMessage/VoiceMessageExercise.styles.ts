@@ -70,20 +70,8 @@ export const Contact = styled.div`
   gap: ${theme.spacing[2]};
   padding: ${theme.voiceMessage.conversationInset};
   background: ${(p) => recipe(p).surface};
+  color: ${(p) => recipe(p).foreground};
   border-bottom: 1px solid ${(p) => recipe(p).border};
-`
-export const ContactText = styled.div`
-  min-width: 0;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
-  strong {
-    display: block;
-    font-size: ${theme.typography.fontSize.sm};
-  }
-  small {
-    color: ${(p) => recipe(p).muted};
-    font-size: ${theme.typography.fontSize.xs};
-  }
 `
 export const Conversation = styled.div`
   display: flex;
@@ -117,10 +105,18 @@ export const Bubble = styled.div`
 export const VoiceBubble = styled(Bubble)`
   width: 86%;
 `
+export const PhotoBubble = styled(Bubble)`
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: ${theme.radius.lg};
+  }
+`
 export const Player = styled.div`
   display: flex;
   align-items: center;
-  gap: ${theme.spacing[2]};
+  gap: ${theme.spacing[1]};
   min-width: 0;
 `
 export const Play = styled(DeviceControl)`
@@ -150,7 +146,8 @@ export const Wave = styled.div`
   justify-content: space-between;
   min-width: 0;
   height: ${theme.voiceMessage.waveformHeight};
-  gap: 2px;
+  overflow: hidden;
+  gap: 1px;
 `
 export const Bar = styled.i<{ $height: number; $played: boolean }>`
   display: block;
@@ -177,7 +174,7 @@ export const Transcript = styled.div<{ $visible: boolean }>`
   border-top: 1px dashed ${(p) => recipe(p).border};
   margin-top: ${theme.voiceMessage.conversationInset};
   padding-top: ${theme.voiceMessage.conversationInset};
-  font-size: ${theme.voiceMessage.transcriptFontSize};
+  font-size: ${(p) => recipe(p).transcriptFontSize};
   line-height: 1.4;
   white-space: pre-wrap;
   p {
@@ -212,6 +209,7 @@ export const Error = styled.div`
   font-size: ${theme.typography.fontSize.sm};
 `
 export const Side = styled.div`
+  color: ${(p) => recipe(p).questionForeground ?? recipe(p).foreground};
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -232,9 +230,9 @@ export const Question = styled.fieldset`
   min-width: 0;
   margin: 0;
   padding: ${theme.spacing[3]} ${theme.spacing[4]};
-  border: 1px solid ${(p) => recipe(p).border};
+  border: 1px solid ${(p) => recipe(p).questionBorder ?? recipe(p).border};
   border-radius: ${theme.radius.lg};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => recipe(p).questionSurface ?? recipe(p).surface};
 `
 export const QuestionText = styled.p`
   flex: 1 1 10rem;
@@ -256,9 +254,9 @@ export const Choice = styled(DeviceControl)<{
   padding: 0 ${theme.spacing[3]};
   border: 1px solid;
   font-size: ${theme.typography.fontSize.sm};
-  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).foreground)};
-  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : recipe(p).surface)};
-  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : recipe(p).border)};
+  color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionForeground ?? recipe(p).foreground))};
+  background: ${(p) => (p.$feedback === 'correct' ? recipe(p).successSurface : p.$feedback === 'incorrect' ? recipe(p).dangerSurface : (recipe(p).questionSurface ?? recipe(p).surface))};
+  border-color: ${(p) => (p.$feedback === 'correct' ? recipe(p).success : p.$feedback === 'incorrect' ? recipe(p).danger : (recipe(p).questionBorder ?? recipe(p).border))};
   text-decoration: ${({ $feedback }) => ($feedback === 'incorrect' ? 'line-through' : 'none')};
   overflow-wrap: anywhere;
   max-width: 100%;

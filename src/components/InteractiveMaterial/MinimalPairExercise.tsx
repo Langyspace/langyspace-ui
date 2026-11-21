@@ -2,6 +2,7 @@ import { EMPTY_LIST } from './Material.constants'
 import * as Common from './Material.shared.styles'
 import * as Styled from './MinimalPairExercise.styles'
 import type { MinimalPairExerciseProps } from './MinimalPairExercise.types'
+import { playFeedbackSound } from '../../internal/feedbackSounds'
 export function MinimalPairExercise({
   mode,
   onModeChange,
@@ -71,6 +72,8 @@ export function MinimalPairExercise({
             disabled={disabled}
             onClick={() => {
               onSelect(choice.id)
+              if (choice.feedbackOutcome)
+                playFeedbackSound(choice.feedbackOutcome)
             }}
           >
             {choice.imageUrl ? (
@@ -83,6 +86,7 @@ export function MinimalPairExercise({
       </Styled.Choices>
       <Common.Row
         role="img"
+        aria-hidden={score.length === 0}
         aria-label={`${text.score}: ${score.filter((s) => s.result === 'correct').length} / ${score.length}`}
       >
         {score.map((value) => (

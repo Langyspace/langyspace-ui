@@ -1,4 +1,14 @@
+import { A102Lesson } from '../../materials/A102/A102Lesson'
+import { A101Lesson } from '../../materials/A101/A101Lesson'
+import { A103Lesson } from '../../materials/A103/A103Lesson'
+import { useState } from 'react'
+import { withVoiceMessageLayout } from '../../materials/shared/deviceTheme'
 import { LabTile } from './LabTile'
+import {
+  VideoCallDemo,
+  LabeledSceneDemo,
+  GuidedRolePlayDemo,
+} from './MaterialVariants'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
@@ -83,13 +93,18 @@ export const AdvancedInterview: Story = {
 }
 export const Call: Story = { render: () => <CallDemo /> }
 export const AdvancedCall: Story = { render: () => <CallDemo level="c2" /> }
+export const VideoCall: Story = { render: () => <VideoCallDemo /> }
+export const LabeledScene: Story = { render: () => <LabeledSceneDemo /> }
+export const GuidedRolePlay: Story = { render: () => <GuidedRolePlayDemo /> }
 export const Grammar: Story = { render: () => <GrammarDemo /> }
 export const GrammarForms: Story = { render: () => <GrammarFormsDemo /> }
 export const HiddenGrammar: Story = { render: () => <GrammarDemo hidden /> }
 export const FillInTheBlanks: Story = { render: () => <GapsDemo /> }
 export const RolePlay: Story = { render: () => <RolePlayDemo /> }
 export const ExploreTheScene: Story = { render: () => <SceneDemo /> }
-export const AdvancedScene: Story = { render: () => <SceneDemo level="c2" /> }
+export const AdvancedScene: Story = {
+  render: () => <SceneDemo level="c2" practice />,
+}
 export const MinimalPairs: Story = { render: () => <PairsDemo /> }
 export const Fluency: Story = { render: () => <FluencyDemo /> }
 export const AdvancedFluency: Story = {
@@ -206,4 +221,84 @@ export const NarrowComponents: Story = {
       </Styled.Sheet>
     </Styled.Narrow>
   ),
+}
+
+function CompactCallPreview() {
+  const [connected, setConnected] = useState(false)
+  return (
+    <ThemeProvider
+      theme={withVoiceMessageLayout({
+        contentWidth: '47.5rem',
+        phoneWidth: '11.875rem',
+        phoneHeight: '23.75rem',
+      })}
+    >
+      <CallSimulation
+        density="compact"
+        contactName="Kim"
+        initials="K"
+        state={connected ? 'connected' : 'idle'}
+        elapsedLabel=""
+        caption={
+          connected
+            ? 'Your phone number is 984 221 517. Is that right?'
+            : undefined
+        }
+        onCall={() => setConnected(true)}
+        onHangUp={() => setConnected(false)}
+        labels={{
+          idle: 'Answer Kim’s call',
+          call: 'Answer',
+          hangUp: 'End call',
+        }}
+      >
+        <p>Listen and correct the contact details.</p>
+      </CallSimulation>
+    </ThemeProvider>
+  )
+}
+export const CompactContactCall: Story = {
+  render: () => <CompactCallPreview />,
+}
+
+export const ContextualFamilyScene: Story = {
+  render: () => <A103Lesson initialPageId="s4" />,
+  tags: ['visual-review'],
+}
+export const ConversationAndComprehension: Story = {
+  render: () => <A103Lesson initialPageId="s71" />,
+  tags: ['visual-review'],
+}
+
+export const ReceptionMonitor: Story = {
+  render: () => <A102Lesson initialPageId="s13" />,
+  tags: ['visual-review'],
+}
+export const AskYourTeacherOnThePhone: Story = {
+  render: () => <A102Lesson initialPageId="s15" />,
+  tags: ['visual-review'],
+}
+
+export const NamedGuidedConversation: Story = {
+  render: () => <A103Lesson initialPageId="s72" />,
+  tags: ['visual-review'],
+}
+export const FamilyFactsIntroductions: Story = {
+  render: () => <A103Lesson initialPageId="s11" />,
+  tags: ['visual-review'],
+}
+
+export const SharedPhotoAndVoiceNote: Story = {
+  render: () => <A103Lesson initialPageId="s10" />,
+  tags: ['visual-review', 'layout-boundary'],
+}
+
+export const PossessiveWords: Story = {
+  render: () => <A102Lesson initialPageId="s10" />,
+  tags: ['visual-review'],
+}
+
+export const AnswerFeedbackSounds: Story = {
+  render: () => <A101Lesson initialPageId="s21" />,
+  tags: ['visual-review', 'audio-review'],
 }

@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Aula atual de 26 telas do Claude, com cenas geradas com ambientação para os exercícios. Bandeiras exatas são sobrepostas pela interface. Áudio de vocabulário/diálogo pela voz do navegador; mensagem da Kim com voz de demonstração local. A integração nos portais depende da revisão e publicação oficial da UI library.\n\n' +
+          'A1.01 com 26 seções para conversação, cenas aprovadas reaproveitadas, 19 clipes ElevenLabs e Notes.\n\n' +
           fluentLicense +
           '\n\nBandeiras: flag-icons 7.5.0\n\n' +
           flagsLicense,
@@ -23,6 +23,10 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const WarmUp: Story = { args: { initialPageId: 's21' } }
+export const WarmUpWithAnswerSounds: Story = {
+  args: { initialPageId: 's21' },
+  tags: ['visual-review', 'audio-review'],
+}
 export const Dialogue: Story = { args: { initialPageId: 's6' } }
 export const Grammar: Story = { args: { initialPageId: 's71' } }
 export const Matching: Story = { args: { initialPageId: 's17' } }

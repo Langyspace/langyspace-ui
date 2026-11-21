@@ -1,0 +1,179 @@
+{
+  "baselineUI": "da76efa959598994848c892540bff08ab7813823",
+  "scope": "Source/content review, not runtime/render or audio QA",
+  "B201": [
+    {
+      "id": "s1",
+      "title": "Dead phone, no charger",
+      "decision": "Reframed as travel experiences; three relevant prompts."
+    },
+    {
+      "id": "s2",
+      "title": "No battery",
+      "decision": "Canonical vocabulary, bounded cutouts, original7recordings retained."
+    },
+    {
+      "id": "s31",
+      "title": "Why did it die?",
+      "decision": "One contextual choice, image counter, no footer task."
+    },
+    {
+      "id": "s32",
+      "title": "Before the battery died",
+      "decision": "Duration before a past event; no hidden-options action."
+    },
+    {
+      "id": "s33",
+      "title": "Borrow or lend?",
+      "decision": "Polite borrowing request with an explicit situation."
+    },
+    {
+      "id": "s4",
+      "title": "Expressions",
+      "decision": "Two groups, static reveals, seven recorded labels on click."
+    },
+    {
+      "id": "s51",
+      "title": "Reconstruct Ana’s afternoon",
+      "decision": "Meaningful chronology matching replaces artificial pronunciation."
+    },
+    {
+      "id": "s6",
+      "title": "How was New York? (1/2)",
+      "decision": "Original6turns and prepared playback; comprehension alongside."
+    },
+    {
+      "id": "s62",
+      "title": "How was New York? (2/2)",
+      "decision": "Original6turns and prepared playback; comprehension alongside."
+    },
+    {
+      "id": "s7",
+      "title": "What had been happening?",
+      "decision": "Past reference point and visible contrast of four time perspectives; no quiz."
+    },
+    {
+      "id": "s52",
+      "title": "Ask for the missing detail",
+      "decision": "Targeted follow-up after the grammar explanation."
+    },
+    {
+      "id": "s8",
+      "title": "Your bad day",
+      "decision": "Six meaningful turns; cues/tips/model, no roles checklist or progress slicing."
+    },
+    {
+      "id": "s9",
+      "title": "A message from Raj",
+      "decision": "Original recording and four statements; adaptive phone, no footer task."
+    },
+    {
+      "id": "s10",
+      "title": "Right or wrong?",
+      "decision": "Five contextual items, one at a time, retained attempts."
+    },
+    {
+      "id": "s11",
+      "title": "Everything went wrong",
+      "decision": "Two visible scenarios, three facts and six-turn guided exchange."
+    },
+    {
+      "id": "s12",
+      "title": "Before next class",
+      "decision": "Three independent speaking tasks retained; no invented activity links."
+    }
+  ],
+  "C101": [
+    {
+      "id": "s1",
+      "title": "It tends to come across as …",
+      "decision": "Three relevant feedback prompts instead of unrelated phone-ban review."
+    },
+    {
+      "id": "s2",
+      "title": "Giving feedback",
+      "decision": "Four expression gaps; exact existing expression audio preserved."
+    },
+    {
+      "id": "s21",
+      "title": "Feedback in context",
+      "decision": "Four expression gaps; definitions clarified without new character facts."
+    },
+    {
+      "id": "s31",
+      "title": "From blunt to tactful",
+      "decision": "Plausible C1 choices about specificity and overgeneralisation."
+    },
+    {
+      "id": "s32",
+      "title": "Ask for a change",
+      "decision": "Specific negotiable request, not a bare language-form contrast."
+    },
+    {
+      "id": "s33",
+      "title": "Take another perspective",
+      "decision": "Acknowledge constraints while keeping the client concern."
+    },
+    {
+      "id": "s4",
+      "title": "An email from Laura",
+      "decision": "Full original email and questions in canonical two-column composition; no extra personal task."
+    },
+    {
+      "id": "s51",
+      "title": "Same words, different effect",
+      "decision": "One useful ungraded prosody comparison retained; no universal tone label asserted."
+    },
+    {
+      "id": "s6",
+      "title": "Practicing with Kim",
+      "decision": "Original7turns, profiles, playback and side-by-side comprehension retained."
+    },
+    {
+      "id": "s62",
+      "title": "Making the point land",
+      "decision": "Original7turns, profiles, playback and side-by-side comprehension retained."
+    },
+    {
+      "id": "s7",
+      "title": "Softer, please",
+      "decision": "Two explanatory groups by communicative purpose; no quiz or footer task."
+    },
+    {
+      "id": "s8",
+      "title": "Talk to Raj",
+      "decision": "Six-turn guided negotiation using email evidence; no mark-complete/swap clutter."
+    },
+    {
+      "id": "s9",
+      "title": "A message from Raj",
+      "decision": "Original recording; questions target partial acceptance and responsibility; greeting precedes audio."
+    },
+    {
+      "id": "s52",
+      "title": "Respond to Raj",
+      "decision": "Decision after listening, balancing autonomy and Laura’s invitation."
+    },
+    {
+      "id": "s10",
+      "title": "Does it fit this conversation?",
+      "decision": "One sentence at a time; explicit peer-feedback context instead of universal politeness rule."
+    },
+    {
+      "id": "s11",
+      "title": "Your feedback",
+      "decision": "Two transfer scenarios, observable facts, impact and feasible request; six turns."
+    },
+    {
+      "id": "s12",
+      "title": "Keep the conversation going",
+      "decision": "Three existing independent practices retained; no portal promise."
+    }
+  ],
+  "counts": {
+    "B201": 16,
+    "C101": 17,
+    "totalReviewedSourcePages": 33
+  },
+  "pageIdentity": "Existing rendered IDs retained; s52 reordered in each lesson; historical unrendered C101 s61 removed from content order."
+}

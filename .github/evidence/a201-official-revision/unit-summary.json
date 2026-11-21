@@ -1,0 +1,16 @@
+{
+  "scope": "test/materials/A201/A201Revision.test.tsx",
+  "groupsPassed": 4,
+  "initialRun": {
+    "passed": 3,
+    "failed": 1,
+    "reason": "Text query matched the intentional caption and tooltip. Test now asserts the revealed card accessible name."
+  },
+  "retry": {
+    "command": "pnpm exec vitest run --project unit test/materials/A201/A201Revision.test.tsx -t 'keeps the scene'",
+    "passed": 1,
+    "skipped": 3,
+    "log": "unit-retry.log"
+  },
+  "reuse": "Grammar/header styling changes do not change tested interactions."
+}

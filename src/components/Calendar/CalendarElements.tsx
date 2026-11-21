@@ -12,10 +12,11 @@ import * as Styled from './CalendarElements.styles'
 
 export function CalendarMonthGrid({
   children,
+  density = 'regular',
   ...props
 }: CalendarMonthGridProps) {
   return (
-    <Styled.CalendarMonthGridRoot {...props}>
+    <Styled.CalendarMonthGridRoot {...props} $compact={density === 'compact'}>
       {children}
     </Styled.CalendarMonthGridRoot>
   )
@@ -36,6 +37,8 @@ export function CalendarDay({
   day,
   children,
   muted = false,
+  presentation = 'default',
+  selected = false,
   onOpen,
   openLabel,
   ...props
@@ -45,12 +48,15 @@ export function CalendarDay({
       {...props}
       data-muted={muted}
       data-interactive={Boolean(onOpen)}
+      data-selected={selected || undefined}
+      $vocabulary={presentation === 'vocabulary'}
     >
       {onOpen ? (
         <CalendarDayStyles.OpenButton
           aria-label={openLabel}
           onClick={onOpen}
           type="button"
+          aria-pressed={presentation === 'vocabulary' ? selected : undefined}
         >
           {day}
         </CalendarDayStyles.OpenButton>

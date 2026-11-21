@@ -1,0 +1,19 @@
+{
+  "revision": "a201-what-are-you-doing-v2-feedback",
+  "source": "A201.content.json",
+  "title": "What Are You Doing?",
+  "pageCount": 22,
+  "pageNavigation": "pages",
+  "contentPolicy": "Literal user-provided dialogues/questions; authored warmup distractors and natural gap answers. No legacy Porto/Kim/call-disruption/listening content.",
+  "audioItems": 32,
+  "imageItems": 7,
+  "notes": "Existing Notes popup/storage and page IDs preserved; new s111 and s151 registered in page order.",
+  "dialoguePages": ["s11", "s12"],
+  "comprehensionPages": ["s111", "s13"],
+  "personalPage": "s14",
+  "roleplay": "Instructions and static model only, Anna/Ben portraits; no cards or new recordings.",
+  "homework": "Instructions before the exact existing example; no mission heading or extra note.",
+  "existingAudioItemsPreserved": 31,
+  "newAudioItems": 1,
+  "listeningPage": "s151"
+}

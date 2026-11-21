@@ -19,7 +19,8 @@ export const Surface = styled(Stack)`
   font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.5;
 `
-export const Row = styled.div`
+export const Row = styled.div<{ $justify?: 'start' | 'center' | 'end' }>`
+  justify-content: ${(p) => (p.$justify === 'center' ? 'center' : p.$justify === 'end' ? 'flex-end' : undefined)};
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -41,15 +42,23 @@ export const Hint = styled.p`
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.5;
 `
-export const Heading = styled.h3`
+export const Heading = styled.h3<{ $prompt?: boolean }>`
   margin: 0;
   color: inherit;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${(p) => (p.$prompt ? theme.typography.fontFamily.sans : recipe(p).displayFontFamily)};
   font-size: ${theme.typography.fontSize.xl};
   line-height: 1.2;
 `
+export const Paragraph = styled.p`
+  margin: 0;
+  color: inherit;
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.45;
+  white-space: pre-line;
+`
 export const Tag = styled.span`
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
   letter-spacing: 0.08em;
@@ -67,7 +76,7 @@ export const Chip = styled.span`
   background: ${(p) => recipe(p).canvas};
 `
 export const Action = styled(Button)`
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
 `
 export const Number = styled.span`
   display: inline-grid;

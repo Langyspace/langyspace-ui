@@ -34,11 +34,12 @@
   "voiceMessage": {
     "file": "kim-demo.mp3",
     "text": "Hi! How are you? I’m really tired, and I’m also hungry!",
-    "voice": "macOS Samantha",
-    "rate": 110,
-    "kind": "local demonstration; final lesson recording pending"
+    "provider": "elevenlabs",
+    "utteranceId": "W.1",
+    "sha256": "7ba86bb9db20b3c9a4d35a58c46f46932f0aa45a546f6fa16f2b7757c89f32e4",
+    "provenance": "../audio-provenance.json"
   },
-  "dialogueAndVocabularyAudio": "Browser speech, as in the live prototype; final recordings pending",
+  "dialogueAndVocabularyAudio": "ElevenLabs exact final source utterances, no browser speech fallback; see ../audio-provenance.json",
   "fluentEmojiLicense": "https://github.com/microsoft/fluentui-emoji/blob/main/LICENSE",
   "previousPublishedHtmlSha256": "57440784b9218344ce68ebc31c409eb4392a81805da53b6b99520e087bb42b8e",
   "latestChange": "Country warm-up USA: changed incorrect first choice to “He’s not from the USA.” with corresponding feedback. Original binary images and SVG flag builders unchanged.",

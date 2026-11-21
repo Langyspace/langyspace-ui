@@ -1,11 +1,13 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { Pressable } from '../Pressable'
 import { theme } from '../../foundations/theme/theme'
+import { resolveTheme } from '../../foundations/theme/resolveTheme'
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { alpha } from '../../foundations/theme/alpha'
 
 export const Root = styled(Pressable).withConfig({
   componentId: 'lsui-sc-choice-card',
-})`
+})<{ $lesson?: boolean }>`
   display: flex;
   align-items: center;
   min-width: 0;
@@ -17,8 +19,8 @@ export const Root = styled(Pressable).withConfig({
   padding-left: ${theme.spacing[4]};
   border: 1px solid ${theme.colors.border.subtle};
   border-radius: ${theme.radius.lg};
-  color: ${theme.colors.text.primary};
-  background-color: ${theme.colors.palette.white};
+  color: ${(p) => resolveTheme(p).colors?.text.primary ?? theme.colors.text.primary};
+  background-color: ${(p) => resolveTheme(p).colors?.surface.canvas ?? theme.colors.palette.white};
   text-align: left;
   transition:
     color 150ms cubic-bezier(0.2, 0, 0, 1),
@@ -28,7 +30,7 @@ export const Root = styled(Pressable).withConfig({
     transform 200ms cubic-bezier(0.2, 0, 0, 1);
 
   &:hover:not(:disabled) {
-    border-color: ${theme.semantic.border.strong};
+    border-color: ${(p) => resolveTheme(p).semantic?.border.strong ?? theme.semantic.border.strong};
     box-shadow: 0 1px 2px ${alpha(theme.colors.palette.black, 0.05)};
   }
 
@@ -38,9 +40,12 @@ export const Root = styled(Pressable).withConfig({
   }
 
   &[aria-pressed='true'] {
-    border-color: ${theme.semantic.border.strong};
+    border-color: ${theme.semantic.status.success.foreground};
     color: ${theme.colors.palette.white};
-    background-color: ${theme.colors.palette.black};
+    background-color: ${theme.semantic.status.success.foreground};
+    &:hover:not(:disabled) {
+      border-color: ${theme.semantic.status.success.foreground};
+    }
   }
 
   &:disabled {
@@ -56,4 +61,22 @@ export const Root = styled(Pressable).withConfig({
     padding-right: ${theme.spacing[3]};
     padding-left: ${theme.spacing[3]};
   }
+  ${(p) =>
+    p.$lesson
+      ? css`
+          border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
+          border-color: ${(p) => resolveSlideTheme(p).border};
+          color: ${(p) => resolveSlideTheme(p).foreground};
+          background: ${(p) => resolveSlideTheme(p).surface};
+          font-family: ${theme.typography.fontFamily.sans};
+          &[aria-pressed='true'] {
+            border: 3px solid ${theme.semantic.status.success.foreground};
+            color: ${theme.colors.palette.white};
+            background: ${theme.semantic.status.success.foreground};
+          }
+          &:focus-visible {
+            outline-color: ${(p) => resolveSlideTheme(p).accent};
+          }
+        `
+      : undefined}
 `
