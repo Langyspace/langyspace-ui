@@ -4,7 +4,7 @@ import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
 import { theme } from '../../../src/foundations/theme/theme'
 import { resolveTheme } from '../../../src/foundations/theme/resolveTheme'
 import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
-import { Stack, Surface } from '../shared/Lesson.styles'
+import { Stack } from '../shared/Lesson.styles'
 export const Greeting = styled(ChoiceCard)`
   gap: ${theme.spacing[4]};
   padding: ${theme.spacing[2]};
