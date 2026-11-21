@@ -64,12 +64,14 @@ it.each(['trial-a1-a2', 'trial-b1', 'trial-b2'])(
         name: 'Sua aula experimental chegou ao fim!',
       }),
     ).toBeInTheDocument()
-    expect(
-      screen.getByRole('heading', { name: 'Mande uma mensagem para a Langy' }),
-    ).toBeInTheDocument()
+    const actionHeading = screen.getByRole('heading', {
+      name: 'Mande uma mensagem para a Langy',
+    })
+    expect(actionHeading).toHaveStyle({ textAlign: 'center' })
     const phone = screen.getByRole('region', {
       name: 'Exemplo de mensagem para a Langy',
     })
+    expect(actionHeading.parentElement).toContainElement(phone)
     expect(phone).toContainElement(screen.getByText('Langy'))
     const logo = phone.querySelector('img')!
     expect(logo).toHaveAttribute(

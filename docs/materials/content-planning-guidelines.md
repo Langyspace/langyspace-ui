@@ -43,6 +43,8 @@ A cada revisão, incorporar automaticamente as novas regras gerais aprendidas co
 
 ## Histórico
 
+- **21/11/2026 — feedback67, alinhamento no encerramento:** o título de ação e o celular compartilham o mesmo eixo central na coluna de encerramento, inclusive quando o título quebra linha. Aplicar a variação de alinhamento dos componentes compartilhados, preservando o alinhamento das capas, aberturas e demais conteúdos.
+
 - **21/11/2026 — feedback66, um celular canônico:** mensagens de áudio e previews estáticos compõem o mesmo MessagePhoneFrame, incluindo barra de contato, viewport e composer. Diferenciar conteúdo, ações e tamanho por props; compartilhar CSS sozinho não resolve duplicação de montagem. Fotos de perfil usam Avatar circular, inclusive a logo da escola. Mensagens enviadas no celular usam a variação messaging do MessageBubble, com fundo #D9FDD3 e texto escuro; preservar o padrão de marca fora dessa variação. O encerramento usa size=large, nas proporções do celular de listening.
 
 - **21/11/2026 — feedback65, encerramento das experimentais:** preservar a capa à esquerda e a próxima ação à direita. O título comunica que a aula terminou; o subtítulo orienta a continuar com a Langy. Acima do celular de mensagens, dizer o que a aluna deve fazer. Usar a logo canônica e um balão de saída com exemplo de mensagem para fechar o curso, sem ponto final. Essa orientação comercial pode ficar em português para ser compreendida em qualquer nível. Compor MessagePhoneFrame e MessageBubble da UI Library; não inventar contato, link ou envio funcional. Manter a conversa livre na penúltima posição e o homework das aulas regulares.

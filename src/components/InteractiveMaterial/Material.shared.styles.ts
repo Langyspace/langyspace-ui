@@ -42,8 +42,12 @@ export const Hint = styled.p`
   font-size: ${theme.typography.fontSize.sm};
   line-height: 1.5;
 `
-export const Heading = styled.h3<{ $prompt?: boolean }>`
+export const Heading = styled.h3<{
+  $prompt?: boolean
+  $align?: 'start' | 'center'
+}>`
   margin: 0;
+  text-align: ${(p) => p.$align};
   color: inherit;
   font-family: ${(p) => (p.$prompt ? theme.typography.fontFamily.sans : recipe(p).displayFontFamily)};
   font-size: ${theme.typography.fontSize.xl};

@@ -70,7 +70,9 @@ export function LessonOpening({
     >
       {children ? (
         <Common.Stack>
-          <Common.Heading>{reviewTitle}</Common.Heading>
+          <Common.Heading $align={closing ? 'center' : undefined}>
+            {reviewTitle}
+          </Common.Heading>
           {instruction ? <Common.Hint>{instruction}</Common.Hint> : null}
           {children}
         </Common.Stack>
