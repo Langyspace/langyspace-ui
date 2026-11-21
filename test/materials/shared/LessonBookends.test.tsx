@@ -26,10 +26,9 @@ it.each(catalog)(
     )
     expect(
       screen
-        .getByRole('img')
-        .compareDocumentPosition(
-          screen.getByRole('heading', { name: entry.title }),
-        ) & Node.DOCUMENT_POSITION_FOLLOWING,
+        .getByRole('heading', { name: entry.title })
+        .compareDocumentPosition(screen.getByRole('img')) &
+        Node.DOCUMENT_POSITION_FOLLOWING,
     ).toBeTruthy()
     expect(
       screen.getByRole('button', { name: 'Reveal my answer' }),

@@ -64,7 +64,7 @@ export function LessonOpening({
           : goals[materialKey]
       }
       cover={{ src, alt: `Illustration for ${entry.title}` }}
-      coverPlacement={closing ? 'after-heading' : undefined}
+      coverPlacement="after-heading"
       layout={children ? 'split' : 'stacked'}
       width={children ? 'expanded' : { mediaAspectRatio: 16 / 9 }}
       density="compact"
