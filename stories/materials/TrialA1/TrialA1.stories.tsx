@@ -68,3 +68,33 @@ export const Conversation: Story = {
 export const TodayYouSaid: Story = { args: { initialPageId: 's6' } }
 
 export const SharedA1A2: Story = { args: { levelLabel: 'A1 · A2' } }
+
+export const GreetingHint: Story = {
+  args: { initialPageId: 's1' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 's1')
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show tip: What’s your name?' }),
+    )
+    await expect(
+      c.getByText('Diga seu primeiro nome.', { exact: true }),
+    ).toBeVisible()
+  },
+}
+export const GreetingModel: Story = {
+  args: { initialPageId: 's1' },
+  tags: ['visual-review'],
+  play: async ({ canvasElement }) => {
+    const c = await lessonCanvas(canvasElement, 's1')
+    await userEvent.click(
+      c.getByRole('button', { name: 'Show model: Where are you from?' }),
+    )
+    await expect(c.getByText('I’m from …', { exact: true })).toBeVisible()
+  },
+}
+export const GreetingNarrow: Story = {
+  args: { initialPageId: 's1' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}

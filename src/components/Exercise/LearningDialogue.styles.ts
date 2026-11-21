@@ -5,17 +5,21 @@ import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
 export const Dialogue = styled.div.withConfig({
   componentId: 'lsui-sc-learning-dialogue',
-})`
+})<{ $paired?: boolean }>`
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: ${(p) => (p.$paired ? theme.spacing[2] : '6px')};
   min-width: 0;
   font-family: ${theme.typography.fontFamily.sans};
   @container (max-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing[2]};
   }
 `
-export const DialogueLine = styled.div<{ $side: 'start' | 'end' }>`
+export const DialogueLine = styled.div<{
+  $side: 'start' | 'end'
+  $exchangeStart?: boolean
+}>`
+  margin-block-start: ${(p) => (p.$exchangeStart ? theme.spacing[4] : undefined)};
   display: flex;
   flex-direction: ${(p) => (p.$side === 'start' ? 'row' : 'row-reverse')};
   align-items: flex-start;
@@ -35,9 +39,13 @@ export const Speech = styled.div<{
   $completed: boolean
   $hasAudio: boolean
   $compact?: boolean
+  $paired?: boolean
+  $inlineGuidance?: boolean
 }>`
   display: grid;
-  grid-template-columns: ${(p) => (p.$hasAudio ? 'minmax(0, 1fr) auto' : 'minmax(0, 1fr)')};
+  grid-template-columns:
+    minmax(0, 1fr)
+    ${(p) => (p.$hasAudio ? 'auto' : '')} ${(p) => (p.$inlineGuidance ? 'auto' : '')};
   align-items: start;
   column-gap: ${theme.spacing[2]};
   row-gap: ${theme.spacing[1]};
@@ -62,6 +70,16 @@ export const Speech = styled.div<{
       ${theme.spacing[3]};
     font-size: ${theme.typography.fontSize.md};
   }
+  ${(p) =>
+    p.$paired &&
+    css`
+      padding: ${theme.spacing[3]} ${theme.spacing[4]};
+      border: 1px solid ${recipe(p).border};
+      background: ${p.$completed ? (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background) : p.$side === 'start' ? recipe(p).surface : `color-mix(in srgb, ${recipe(p).indicator} 12%, ${recipe(p).surface})`};
+      @container (max-width: ${theme.breakpoints.md}) {
+        padding: ${theme.spacing[2]} ${theme.spacing[3]};
+      }
+    `}
   > button {
     grid-column: 2;
     grid-row: 1;
@@ -124,4 +142,11 @@ export const GuidedLayer = styled.span<{ $visible: boolean }>`
   min-width: 0;
   visibility: ${(p) => (p.$visible ? 'visible' : 'hidden')};
   pointer-events: ${(p) => (p.$visible ? 'auto' : 'none')};
+`
+
+export const LineControls = styled.div<{ $afterAudio: boolean }>`
+  grid-column: ${(p) => (p.$afterAudio ? 3 : 2)};
+  grid-row: 1;
+  align-self: center;
+  min-width: 0;
 `

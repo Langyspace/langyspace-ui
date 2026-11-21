@@ -35,10 +35,10 @@ export function TrialA1Lesson({
                 label: content.title,
                 content: (
                   <SlidePage
-                    width="reading"
+                    width="focused"
                     eyebrow="Warm up"
                     title={content.title}
-                    instruction="Answer your teacher. Then ask her the same questions."
+                    instruction="Get to know each other. Answer, then ask your teacher."
                   >
                     <GreetingSection />
                   </SlidePage>

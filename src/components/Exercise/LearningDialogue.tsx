@@ -64,6 +64,7 @@ export function LearningDialogue({
   learnerIdentity,
   guidance,
   density = 'regular',
+  presentation = 'dialogue',
   speakerLabels = 'visible',
   translatedIds,
   playingId,
@@ -82,8 +83,15 @@ export function LearningDialogue({
     learnerName && learnerPhoto && failedLearnerAvatar !== learnerPhoto,
   )
   const dialogue = (
-    <Styled.Dialogue {...props}>
-      {lines.map((line) => {
+    <Styled.Dialogue {...props} $paired={presentation === 'paired'}>
+      {lines.map((line, index) => {
+        const hasSupport = Boolean(guidance && (line.cue || line.hint))
+        const inlineGuidance = hasSupport && guidance?.placement === 'line'
+        const level =
+          inlineGuidance && guidance?.activeLineId !== line.id
+            ? 'cue'
+            : (guidance?.level ?? 'cue')
+        const supportContext = line.guidanceLabel ?? line.speaker
         const isLearner = line.participant === 'learner'
         const speaker = isLearner
           ? hasLearner
@@ -98,16 +106,16 @@ export function LearningDialogue({
         const content =
           guidance && (line.cue || line.hint) ? (
             <Styled.GuidedText>
-              {(['cue', 'hint', 'full'] as const).map((level) => (
+              {(['cue', 'hint', 'full'] as const).map((layer) => (
                 <Styled.GuidedLayer
-                  key={level}
-                  $visible={guidance.level === level}
-                  aria-hidden={guidance.level !== level}
-                  inert={guidance.level !== level}
+                  key={layer}
+                  $visible={level === layer}
+                  aria-hidden={level !== layer}
+                  inert={level !== layer}
                 >
-                  {level === 'cue'
+                  {layer === 'cue'
                     ? (line.cue ?? line.content)
-                    : level === 'hint'
+                    : layer === 'hint'
                       ? (line.hint ?? line.content)
                       : line.content}
                 </Styled.GuidedLayer>
@@ -139,7 +147,13 @@ export function LearningDialogue({
             line.content
           )
         return (
-          <Styled.DialogueLine key={line.id} $side={line.side}>
+          <Styled.DialogueLine
+            key={line.id}
+            $side={line.side}
+            $exchangeStart={
+              presentation === 'paired' && index > 0 && index % 2 === 0
+            }
+          >
             <Avatar
               size={density === 'compact' ? 'sm' : 'md'}
               imageUrl={avatarUrl}
@@ -159,6 +173,8 @@ export function LearningDialogue({
             />
             <Styled.Speech
               $compact={density === 'compact'}
+              $paired={presentation === 'paired'}
+              $inlineGuidance={inlineGuidance}
               $playing={playingId === line.id}
               $side={line.side}
               $completed={completedIds?.includes(line.id) ?? false}
@@ -185,6 +201,36 @@ export function LearningDialogue({
               </Styled.Message>
               {(translatedIds?.includes(line.id) ?? false) ? (
                 <Styled.Translation>{line.translation}</Styled.Translation>
+              ) : null}
+              {inlineGuidance && guidance ? (
+                <Styled.LineControls
+                  $afterAudio={Boolean(onPlay && line.audioLabel)}
+                  role="group"
+                  aria-label={`Support: ${supportContext}`}
+                >
+                  <VocabularyControls
+                    density="compact"
+                    showInitial={level === 'hint'}
+                    showAll={level === 'full'}
+                    onToggleInitial={() =>
+                      guidance.onChange(
+                        level === 'hint' ? 'cue' : 'hint',
+                        line.id,
+                      )
+                    }
+                    onToggleAll={() =>
+                      guidance.onChange(
+                        level === 'full' ? 'cue' : 'full',
+                        line.id,
+                      )
+                    }
+                    labels={{
+                      hint: `${level === 'hint' ? 'Hide' : 'Show'} tip: ${supportContext}`,
+                      showAll: `Show model: ${supportContext}`,
+                      hideAll: `Hide model: ${supportContext}`,
+                    }}
+                  />
+                </Styled.LineControls>
               ) : null}
               {onPlay && line.audioLabel ? (
                 <IconButton
@@ -214,7 +260,7 @@ export function LearningDialogue({
       })}
     </Styled.Dialogue>
   )
-  return guidance ? (
+  return guidance && guidance.placement !== 'line' ? (
     <Styled.DialogueSection>
       {dialogue}
       <VocabularyControls

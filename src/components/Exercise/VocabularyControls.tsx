@@ -4,6 +4,7 @@ import type { VocabularyControlsProps } from './VocabularyControls.types'
 
 export function VocabularyControls({
   labels,
+  density = 'regular',
   showInitial,
   showAll,
   onToggleInitial,
@@ -12,7 +13,7 @@ export function VocabularyControls({
   return (
     <S.Controls>
       <IconButton
-        size="md"
+        size={density === 'compact' ? 'sm' : 'md'}
         variant="neutral"
         aria-label={labels?.hint ?? 'Hint: first letter'}
         title={labels?.hint ?? 'Hint: first letter'}
@@ -33,7 +34,7 @@ export function VocabularyControls({
       </IconButton>
       {onToggleAll ? (
         <IconButton
-          size="md"
+          size={density === 'compact' ? 'sm' : 'md'}
           variant="neutral"
           aria-label={
             showAll

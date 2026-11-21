@@ -594,3 +594,71 @@ export const LearnerWithoutPhoto: Story = {
     />
   ),
 }
+
+function PairedDialoguePreview({
+  initial = 'cue',
+}: {
+  initial?: 'cue' | 'hint' | 'full'
+}) {
+  const [level, setLevel] = useState<'cue' | 'hint' | 'full'>(initial)
+  const [activeLineId, setActiveLineId] = useState<string | undefined>(
+    initial === 'cue' ? undefined : 'a2',
+  )
+  return (
+    <Styled.Preview>
+      <LearningDialogue
+        presentation="paired"
+        guidance={{
+          placement: 'line',
+          level,
+          activeLineId,
+          onChange: (next, id) => {
+            setLevel(next)
+            setActiveLineId(id)
+          },
+        }}
+        lines={[
+          {
+            id: 'q1',
+            speaker: 'Teacher',
+            side: 'start',
+            content: 'What’s your name?',
+          },
+          {
+            id: 'a1',
+            speaker: 'You',
+            participant: 'learner',
+            side: 'end',
+            guidanceLabel: 'Your name',
+            cue: 'Say your name.',
+            hint: 'Use your first name.',
+            content: 'My name is …',
+          },
+          {
+            id: 'q2',
+            speaker: 'Teacher',
+            side: 'start',
+            content: 'Where are you from?',
+          },
+          {
+            id: 'a2',
+            speaker: 'You',
+            participant: 'learner',
+            side: 'end',
+            guidanceLabel: 'Your city',
+            cue: 'Say your city or country.',
+            hint: 'Use a city or a country.',
+            content: 'I’m from …',
+          },
+        ]}
+      />
+    </Styled.Preview>
+  )
+}
+export const PairedDialogue: Story = { render: () => <PairedDialoguePreview /> }
+export const PairedDialogueHint: Story = {
+  render: () => <PairedDialoguePreview initial="hint" />,
+}
+export const PairedDialogueModel: Story = {
+  render: () => <PairedDialoguePreview initial="full" />,
+}

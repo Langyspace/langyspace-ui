@@ -163,3 +163,9 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Exibir foto e primeiro nome apenas quando o portal identificar uma participante única da aula da professora autenticada e houver foto utilizável. Sem foto, com erro de imagem, aula desconhecida/ambígua, grupo ou sessão/contexto alterado, manter You. Não mostrar nome sozinho nesse fallback.
 - A origem é a aula explicitamente aberta no portal ou a única ocorrência no horário atual. Contexto explícito inválido não vira outra aula por aproximação. Considerar recorrências e cancelamentos; o contexto expira na troca/fim da aula e não vai para URL, armazenamento ou logs.
 - A identidade real não substitui personagens dos diálogos-modelo. Nome/foto de quem participa são dados temporários; não acrescentam fatos ao documento de personagens. Em perguntas pessoais, o olho mostra um modelo de linguagem, não um gabarito pessoal inventado.
+
+## Composição de apresentações pessoais — feedback47
+
+- Conversas de apresentação ficam numa coluna centralizada, com professora e aluna em lados opostos. Separar visualmente cada pergunta/resposta por espaçamento entre as trocas; não adicionar painéis decorativos nem formulários para uma tarefa oral.
+- Lâmpada e olho junto à resposta oferecem dica e modelo de linguagem. Uma ajuda por vez, com botão contextual à pergunta, estado pressionado e texto oculto inacessível. Reservar espaço para cue/dica/modelo evita deslocamentos ao abrir a ajuda.
+- Usar presentation=paired e guidance.placement=line do LearningDialogue, mantendo os controles globais como padrão nas outras composições. A identidade é o Avatar compartilhado e continua a seguir o contexto de professora/aluna e o fallback You já definidos.

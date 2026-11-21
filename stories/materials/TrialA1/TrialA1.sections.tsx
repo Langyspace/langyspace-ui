@@ -22,6 +22,7 @@ export function GreetingSection() {
       : teacher.name.trim().split(/\s+/u)[0]!
   const [translated, setTranslated] = useState<string[]>([])
   const [level, setLevel] = useState<'cue' | 'hint' | 'full'>('cue')
+  const [activeLineId, setActiveLineId] = useState<string>()
   const cues = [
     'Say your name.',
     'Say your city or country.',
@@ -30,12 +31,21 @@ export function GreetingSection() {
   const hints = [
     'Diga seu primeiro nome.',
     'Diga sua cidade ou país.',
-    'Diga como se sente e pergunte de volta.',
+    'Diga como está e pergunte de volta.',
   ]
   return (
     <LearningDialogue
-      density="compact"
-      guidance={{ level, onChange: setLevel }}
+      density="regular"
+      presentation="paired"
+      guidance={{
+        placement: 'line',
+        level,
+        activeLineId,
+        onChange: (next, lineId) => {
+          setLevel(next)
+          setActiveLineId(lineId)
+        },
+      }}
       translatedIds={translated}
       onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
       lines={content.p1.cards.flatMap((question, index) => [
@@ -53,6 +63,7 @@ export function GreetingSection() {
           speaker: 'You',
           participant: 'learner' as const,
           side: 'end' as const,
+          guidanceLabel: question.q,
           cue: cues[index],
           hint: hints[index],
           content: question.a,

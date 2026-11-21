@@ -188,3 +188,7 @@ The maintained B1/B2/C1 statement adapter shows multiple prompts with canonical 
 ### Feedback46 — learner identity
 
 The existing LearningDialogue receives optional learnerIdentity and semantic learner lines. Missing/unavailable photos retain You; authored fictional speakers remain unchanged. All maintained material adapters bind the product context, and TrialA1 greeting reuses six native bubbles with teacher identity and optional bulb/model support. Source examples include LearnerWithPhoto and LearnerWithoutPhoto. No remote Lab write or runtime visual approval is implied.
+
+### Feedback47 — paired greeting
+
+PairedDialogue, PairedDialogueHint and PairedDialogueModel source stories expose the optional paired LearningDialogue with contextual bulb/model controls. The first TrialA1 page uses the same shared variation and centered focused width. Other dialogues retain their current defaults. No remote Lab write, new media or browser/visual review was performed.
