@@ -298,6 +298,7 @@ export function LearningDialogue({
   if (sequential && supportedLines.length)
     return (
       <Styled.DialogueSection>
+        {dialogue}
         <VocabularyControls
           interaction="progressive"
           showInitial={Boolean(visibleHints)}
@@ -309,7 +310,6 @@ export function LearningDialogue({
           onToggleAll={() => sequential.onRevealModel(nextModel?.id)}
           labels={{ hint: hintLabel, showAll: modelLabel, hideAll: modelLabel }}
         />
-        {dialogue}
       </Styled.DialogueSection>
     )
   return levelGuidance && levelGuidance.placement !== 'line' ? (

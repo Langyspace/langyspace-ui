@@ -120,7 +120,7 @@ The material adapter binds this prop from a scoped context and recognizes legacy
 
 ## Sequential support and unified bubble skin
 
-`LearningDialogue.sequentialGuidance` accepts controlled `hintedLineIds`, `revealedLineIds`, `onRevealHint(id?)` and `onRevealModel(id?)`. One shared VocabularyControls row sits above the dialogue. Each activation reports the next eligible line in source order; undefined resets that support layer after completion. Visible models take precedence and are skipped by the next-tip command. Previously shown tips can reappear when models are hidden. No supported lines means no controls.
+`LearningDialogue.sequentialGuidance` accepts controlled `hintedLineIds`, `revealedLineIds`, `onRevealHint(id?)` and `onRevealModel(id?)`. One shared VocabularyControls row sits below the dialogue, centered in normal content flow. Each activation reports the next eligible line in source order; undefined resets that support layer after completion. Visible models take precedence and are skipped by the next-tip command. Previously shown tips can reappear when models are hidden. No supported lines means no controls.
 
 Sequential support uses `VocabularyControls interaction="progressive"` with position/action labels instead of toggle pressed semantics. `hintDisabled` covers the state in which models already show every answer. Defaults retain existing toggle behavior. Standard level and inline guidance remain compatible; TrialA1 introduction and principal paired examples adopt the sequential row.
 
