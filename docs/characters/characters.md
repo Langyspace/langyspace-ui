@@ -75,3 +75,8 @@ As duas gravações aprovadas da Ana são apresentadas juntas no mesmo chat, com
 ## Experimental B1/B2 — recorte de revisão70
 
 O diálogo proposto revisa o episódio de Ana e Leo em Ilhabela: eles planejavam passar domingo na praia, choveu pela manhã, foram a um café e depois fizeram o passeio de barco. Substitui a versão anterior de chuva o dia todo/cartas no hotel apenas nessa atividade. Kim é a interlocutora, não participante da viagem. O mecânico da cena é uma figura genérica sem nome, idade ou nova biografia. Capa e retratos aprovados são reutilizados. O recorte em staging contém apenas capa, seis itens de vocabulário, diálogo, conversa livre e encerramento; as outras páginas do plano continuam pendentes.
+
+
+## Experimental C1/C2 — Work and life, recorte71
+
+Ana e Kim discutem disponibilidade fora do expediente, expectativas e limites em uma simulação contextual. Ana diz estar sobrecarregada e silenciar notificações depois das seis, exceto em emergências. Esses detalhes substituem o episódio de escritório três dias/semana apenas neste exercício; não fixam profissão, rotina permanente ou política de uma empresa real. As seis vinhetas são exemplos ilustrativos. A cena de trade-off mostra duas alternativas da mesma Ana, não duas irmãs nem duas pessoas na mesma reunião. A colega das ilustrações não recebe identidade canônica. Preservar cabelo/rosto, vozes e retratos existentes.

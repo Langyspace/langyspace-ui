@@ -663,3 +663,44 @@ export const PairedDialogueHint: Story = {
 export const PairedDialogueModel: Story = {
   render: () => <PairedDialoguePreview initial="full" />,
 }
+
+function ContextVocabularyExample() {
+  const [revealed, setRevealed] = useState<string[]>([])
+  const [showAll, setShowAll] = useState(false)
+  const [showInitial, setShowInitial] = useState(false)
+  return (
+    <Styled.Preview>
+      <VocabularyGrid
+        items={[
+          {
+            id: 'context',
+            imageUrl: learnerPortrait,
+            imageAlt: 'A person describing a demanding week',
+            word: 'be snowed under',
+            translation: 'estar sobrecarregada',
+            example: 'I’m snowed under with deadlines this week',
+          },
+        ]}
+        revealedIds={revealed}
+        activeId="context"
+        imageVariant="scene"
+        imageAspectRatio={1}
+        imageFit="contain"
+        density="regular"
+        revealVariant="tooltip"
+        showAll={showAll}
+        showInitial={showInitial}
+        controls={{
+          showAll,
+          showInitial,
+          onToggleAll: () => setShowAll(!showAll),
+          onToggleInitial: () => setShowInitial(!showInitial),
+        }}
+        onReveal={(id) => setRevealed([id])}
+      />
+    </Styled.Preview>
+  )
+}
+export const ContextualVocabulary: Story = {
+  render: () => <ContextVocabularyExample />,
+}

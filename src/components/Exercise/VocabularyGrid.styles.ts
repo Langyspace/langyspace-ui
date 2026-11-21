@@ -39,6 +39,7 @@ export const Word = styled(Pressable)<{
   $scene: boolean
   $regular: boolean
   $completed?: boolean
+  $imageAspectRatio?: number
 }>`
   ${(p) =>
     p.$symbol
@@ -66,7 +67,12 @@ export const Word = styled(Pressable)<{
   min-width: 0;
   min-height: ${(p) => (p.$scene || p.$regular ? '0' : theme.exercises.vocabularyHeight)};
   height: ${(p) => (p.$scene && p.$regular ? 'auto' : p.$regular ? theme.exercises.vocabularyRegularHeight : p.$scene ? theme.exercises.sceneHeight : 'auto')};
-  aspect-ratio: ${(p) => (p.$scene && p.$regular ? '3 / 2' : 'auto')};
+  aspect-ratio: ${(p) =>
+    p.$scene && p.$regular
+      ? Number.isFinite(p.$imageAspectRatio) && (p.$imageAspectRatio ?? 0) > 0
+        ? p.$imageAspectRatio
+        : '3 / 2'
+      : 'auto'};
   padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
   border: 1px solid
     ${(p) => (p.$plain ? 'transparent' : p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
@@ -160,8 +166,10 @@ export const WordCaption = styled.span`
 export const WordLabel = styled.span<{
   $revealed: boolean
   $reference?: boolean
+  $hasExample?: boolean
 }>`
   ${vocabularyLabel}
+  border-radius: ${(p) => (p.$hasExample ? theme.radius.lg : undefined)};
   b {
     display: block;
     font-size: ${(p) => (p.$revealed ? theme.typography.fontSize.md : '15px')};
@@ -201,6 +209,14 @@ export const WordLabel = styled.span<{
           }
         `
       : undefined}
+`
+
+export const WordExample = styled.span`
+  display: block;
+  margin-top: ${theme.spacing[1]};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.35;
 `
 
 export const VocabularySection = styled.div`

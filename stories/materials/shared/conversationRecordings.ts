@@ -4,13 +4,6 @@ import clip1 from '../TrialA1/assets/dialogue/02.mp3'
 import clip2 from '../TrialA1/assets/dialogue/03.mp3'
 import clip3 from '../TrialA1/assets/dialogue/04.mp3'
 import clip4 from '../TrialA1/assets/dialogue/05.mp3'
-import clip20 from '../TrialB2/assets/dialogue/01.mp3'
-import clip21 from '../TrialB2/assets/dialogue/02.mp3'
-import clip22 from '../TrialB2/assets/dialogue/03.mp3'
-import clip23 from '../TrialB2/assets/dialogue/04.mp3'
-import clip24 from '../TrialB2/assets/dialogue/05.mp3'
-import clip25 from '../TrialB2/assets/dialogue/06.mp3'
-import clip26 from '../TrialB2/assets/dialogue/07.mp3'
 import clip27 from '../B201/assets/dialogue/01.mp3'
 import clip28 from '../B201/assets/dialogue/02.mp3'
 import clip29 from '../B201/assets/dialogue/03.mp3'
@@ -25,7 +18,6 @@ import clip37 from '../B201/assets/dialogue/11.mp3'
 import clip38 from '../B201/assets/dialogue/12.mp3'
 import trialA1 from '../TrialA1/TrialA1.content.json'
 import b201 from '../B201/B201.content.json'
-import trialB2 from '../TrialB2/TrialB2.content.json'
 import type {
   RecordedConversationDefinition,
   RecordedConversationId,
@@ -129,83 +121,8 @@ export const conversationRecordings: Readonly<
   'A201:s6': undefined,
   // Reserved legacy ID; the reviewed B1/B2 dialogue binds its eight MP3s directly.
   'TrialB1:s3': undefined,
-  'TrialB2:s3': define(
-    'TrialB2:s3',
-    'A good day at work',
-    trialB2.p3.lines.map((line) => ({ text: line.en, speaker: line.who })),
-    [
-      {
-        id: 'trial-b2.s3.dialogue.01',
-        text: 'So, how’s the new job going? Do you go to the office every day?',
-        speaker: 'kim',
-        sha256:
-          '75126afd0af154949745d928fe99912f18ebaf7714c175cadc650ee91fc53dae',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 4.458231,
-        src: clip20,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.02',
-        text: 'Three days a week. What I like about the office is the people. I learn so much from my team.',
-        speaker: 'ana',
-        sha256:
-          'd1df28991f7013fd684716b829b458be2fad68162bcfb2f40a08e81b28ffca3c',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 6.408707,
-        src: clip21,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.03',
-        text: 'I see your point, but I’d rather stay home. No commute, no noise, and I take a break when I want.',
-        speaker: 'kim',
-        sha256:
-          '6de0af594d77fa55655f93bcb364a481e92a4d35b8255d1232be624151e01525',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 7.430385,
-        src: clip22,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.04',
-        text: 'Don’t you feel lonely sometimes?',
-        speaker: 'ana',
-        sha256:
-          '8d5c2f209876d44ff9edc6de0d923d5557bca37c5109518955b19b93617faba9',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 1.811156,
-        src: clip23,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.05',
-        text: 'It depends on the week. On a good day, I finish early and go for a walk.',
-        speaker: 'kim',
-        sha256:
-          'e7a27faf2f091f16ef6441541e662d0922046c93f55c6c7c80ebf1105779d472',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 5.619229,
-        src: clip24,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.06',
-        text: 'For me, a good day is when I get things done and still have time for my friends.',
-        speaker: 'ana',
-        sha256:
-          '08e2104ee224a3b6b3c0e2c2dbb2d023cedf1c71896e13e05d0b05e894545caf',
-        voiceId: 'cgSgspJ2msm6clMCkdW9',
-        durationSeconds: 3.993832,
-        src: clip25,
-      },
-      {
-        id: 'trial-b2.s3.dialogue.07',
-        text: 'Exactly. Work is important, but it’s not everything.',
-        speaker: 'kim',
-        sha256:
-          'ca9a5381f3a191b776bde1a418c1234a5f711887868636610bc91e8bcba7847b',
-        voiceId: 'Nhs7eitvQWFTQBsf0yiT',
-        durationSeconds: 4.318912,
-        src: clip26,
-      },
-    ],
-  ),
+  // Reserved legacy ID; the reviewed C1/C2 dialogue binds its eight MP3s directly.
+  'TrialB2:s3': undefined,
   'B201:s6': define(
     'B201:s6',
     'How was New York? (1/2)',

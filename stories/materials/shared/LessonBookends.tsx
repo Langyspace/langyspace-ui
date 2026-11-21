@@ -29,7 +29,8 @@ const goals: Readonly<Record<string, string>> = {
   'trial-a1-a2': 'Meet your teacher and talk about what you like',
   'trial-b1':
     'Talk about a trip, deal with a change of plans and keep the conversation going',
-  'trial-b2': 'Explore your opinions about work and life',
+  'trial-b2':
+    'Explore work-life boundaries, weigh trade-offs and defend a nuanced point of view',
   'tema-frontend':
     'Explain a bug, share a work update and practise an interview',
 }

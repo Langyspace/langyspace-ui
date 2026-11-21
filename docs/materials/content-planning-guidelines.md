@@ -238,3 +238,9 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Textos de balões de conversa, instruções curtas, dicas e modelos não terminam com ponto final. Preservar pontos internos, interrogações, exclamações e reticências usadas como espaço para completar a fala.
 - Fazer a edição no texto autorado. Não adicionar normalização, regex ou condição de pontuação ao renderizador. Quando a cópia de um diálogo gravado mudar somente nessa pontuação, alinhar o texto exibido de seu registro, preservando áudio, IDs, hashes e inputs originais de síntese.
+
+
+## Expressões em níveis avançados — revisão71
+
+- O mínimo de seis itens também vale para C1/C2. Selecionar expressões que sustentem argumentos e nuances, em vez de apenas renomear objetos básicos. Quando o significado não for um objeto apontável, usar situações ilustradas e um exemplo de uso; não atribuir um conceito abstrato a um ponto arbitrário de uma imagem. Tentativas com paráfrases são válidas, sem som de erro.
+- Exemplos de vocabulary pertencem ao contrato opcional do VocabularyGrid; não usar o campo de tradução como se fosse exemplo. Proporção da imagem é uma variação semântica com fallback, sem CSS exclusivo por aula.

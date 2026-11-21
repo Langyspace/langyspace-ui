@@ -8,6 +8,8 @@ export interface VocabularyItem {
   imageAlt: string
   word: string
   translation: string
+  /** Short contextual usage shown only with a revealed word. */
+  example?: string
   initialHint?: string
   /** Optional source-level or review badge, supplied by the lesson. */
   badge?: string
@@ -36,6 +38,8 @@ export interface VocabularyGridProps extends Omit<
   imageVariant?: 'isolated' | 'scene'
   /** Preserve a whole contextual scene when every part of the image is a useful cue. */
   imageFit?: 'cover' | 'contain'
+  /** Whole-scene card ratio; defaults to 3:2 for regular contextual vocabulary. */
+  imageAspectRatio?: number
   /** Omit for responsive three/two-column layout. */
   columns?: 2 | 3 | 4
   density?: 'compact' | 'regular'

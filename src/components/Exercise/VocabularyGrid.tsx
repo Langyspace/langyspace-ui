@@ -17,6 +17,7 @@ export function VocabularyGrid({
   revealOnHover = false,
   imageVariant = 'isolated',
   imageFit,
+  imageAspectRatio,
   columns,
   density = 'compact',
   revealVariant = 'overlay',
@@ -76,6 +77,7 @@ export function VocabularyGrid({
               $completed={markRevealed && revealedIds.includes(item.id)}
               $scene={imageVariant === 'scene'}
               $regular={density === 'regular'}
+              $imageAspectRatio={imageAspectRatio}
               key={item.id}
               type={interaction === 'static' ? undefined : 'button'}
               aria-label={
@@ -142,8 +144,12 @@ export function VocabularyGrid({
                 <Styled.WordLabel
                   $revealed={revealed}
                   $reference={layout === 'reference'}
+                  $hasExample={revealed && Boolean(item.example)}
                 >
                   <b>{revealed ? item.word : hint}</b>
+                  {revealed && item.example ? (
+                    <Styled.WordExample>{item.example}</Styled.WordExample>
+                  ) : null}
                   <small>{item.translation}</small>
                 </Styled.WordLabel>
               ) : null}
