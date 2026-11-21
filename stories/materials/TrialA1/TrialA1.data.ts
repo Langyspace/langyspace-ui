@@ -15,9 +15,7 @@ export const order = [
   's3',
   's3-rehearse',
   's3-independent',
-  's41',
-  's42',
-  's43',
+  's4',
   's5',
   's6',
   'next-steps',
@@ -31,8 +29,8 @@ export const pictures = {
   pizza,
   salad,
 }
-export const preferenceImages = [
-  [movies, music],
-  [dog, cat],
-  [pizza, salad],
-]
+export const likeItems = content.p4.items.map((item) => {
+  const imageUrl = pictures[item.image as keyof typeof pictures]
+  if (!imageUrl) throw new Error(`Missing likes board picture: ${item.image}`)
+  return { ...item, imageUrl }
+})

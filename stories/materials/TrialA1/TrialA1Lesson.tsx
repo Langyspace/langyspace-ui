@@ -1,3 +1,4 @@
+import { LikesBoardSection } from './TrialA1LikesBoard'
 import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
 import { TrialA1LiveConversation } from './TrialA1LiveConversation'
 import { TrialA1DialoguePage } from './TrialA1DialoguePage'
@@ -9,7 +10,6 @@ import { content, order, parkScene } from './TrialA1.data'
 import {
   GreetingSection,
   PictureTalkSection,
-  PreferenceSection,
   ConversationSection,
   TodaySection,
 } from './TrialA1.sections'
@@ -87,23 +87,22 @@ export function TrialA1Lesson({
                 ),
               }
             }
-            if (id === 's41' || id === 's42' || id === 's43') {
-              const index = Number(id.slice(2)) - 1
+            if (id === 's4')
               return {
                 id,
-                label: content.p4.pairs[index]!.q,
+                label: content.p4.title,
                 content: (
                   <SlidePage
-                    width="exercise"
-                    eyebrow="Preferences"
-                    title={content.p4.pairs[index]!.q}
+                    width="expanded"
+                    density="compact"
+                    eyebrow="Speaking"
+                    title={content.p4.title}
                     instruction={content.p4.ins}
                   >
-                    <PreferenceSection index={index} />
+                    <LikesBoardSection />
                   </SlidePage>
                 ),
               }
-            }
             if (id === 's5')
               return {
                 id,

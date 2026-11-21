@@ -511,6 +511,12 @@ export { ToggleButton } from './components/ToggleButton/ToggleButton'
 export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton.types'
 
 export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
+export { ImageSortBoard } from './components/Exercise/ImageSortBoard'
+export type {
+  ImageSortBoardProps,
+  ImageSortItem,
+  ImageSortCategory,
+} from './components/Exercise/ImageSortBoard.types'
 export type { ChoiceCardProps } from './components/ChoiceCard/ChoiceCard.types'
 
 export { Skeleton } from './components/Skeleton/Skeleton'

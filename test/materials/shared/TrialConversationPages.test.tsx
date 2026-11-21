@@ -26,16 +26,14 @@ const visibleLayer = (text: string) =>
   screen.getByText(text).closest('[aria-hidden]')
 
 describe('separate TrialA1 conversation stages', () => {
-  it('places both practice pages after the recorded model and retains every previous page', () => {
+  it('keeps both conversation stages and replaces the three pair pages with one likes board', () => {
     expect(order).toEqual([
       's1',
       's2',
       's3',
       's3-rehearse',
       's3-independent',
-      's41',
-      's42',
-      's43',
+      's4',
       's5',
       's6',
       'next-steps',

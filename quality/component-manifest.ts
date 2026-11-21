@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'ImageSortBoard',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/ImageSortBoard.tsx',
+    runtimeMarker: 'lsui-sc-image-sort-board',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ImageSortBoard.stories.tsx',
+      title: 'Exercise/ImageSortBoard',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ImageSortBoard.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/ImageSortBoard.types.ts',
+      documentation: {
+        path: 'docs/components/image-sort-board.md',
+        anchor: 'imagesortboard',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'MobileFrame',
     interactive: false,
     visual: true,

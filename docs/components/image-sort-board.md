@@ -1,0 +1,7 @@
+# ImageSortBoard
+
+Controlled, ungraded picture categorisation. Items supply stable IDs, labels and prepared image URLs. Categories supply IDs/labels. Consumers own `assignments`, `selectedId`, `onSelect` and `onAssign`; passing an undefined category returns an item to the unassigned bank. Any number of items may share a category, including every item, and unclassified items are valid.
+
+Native drag/drop and equivalent image-button → category-button placement share one callback. Keyboard activation uses native buttons, and moved-item focus is restored without scrolling. Unknown drag IDs are ignored. Headings remain readable while targets are disabled until a selection; the instruction describes that prerequisite. A consumer-owned footer hosts language support beneath the board. No answer key, grading, correctness sounds, automatic storage or profile writes.
+
+The existing ChoiceCard and Button owners supply control behavior; theme tokens supply colors, spacing and typography. Images preserve their proportions with contain. Bank/category regions accommodate all items and stack at the standard compact breakpoint; long content grows without inner scroll containers. Story fixtures include unsorted, mixed, all liked, all disliked, long labels and narrow presentation. Runtime tests cover mouse/keyboard/drop equivalence, reclassification, focus and invalid payloads; visual review remains human-owned.

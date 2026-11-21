@@ -1,6 +1,6 @@
 import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { PromptExercise } from '../shared/LessonExercises'
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { conversationRecordings } from '../shared/conversationRecordings'
 import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
@@ -9,7 +9,7 @@ import { ana, kim } from '../shared/characterPortraits'
 import { SourceQuestions } from '../shared/LessonPractice'
 import type { TrialA1PictureTalkProps } from './TrialA1.types'
 import { useTrialA1Audio } from './useTrialA1Audio'
-import { content, preferenceImages, pictures } from './TrialA1.data'
+import { content, pictures } from './TrialA1.data'
 import * as S from '../shared/Lesson.styles'
 import * as T from './TrialA1.styles'
 export function GreetingSection() {
@@ -144,45 +144,6 @@ export function ComprehensionSection() {
         answer,
       }))}
     />
-  )
-}
-export function PreferenceSection({
-  index,
-}: {
-  index: number
-  speech?: unknown
-}) {
-  const [pick, setPick] = useState<number>()
-  const pair = content.p4.pairs[index]!
-  return (
-    <S.Stack>
-      <T.Pair>
-        {[pair.a, pair.b].map((choice, i) => (
-          <Fragment key={choice[1]}>
-            {i ? <span>or</span> : null}
-            <T.Preference
-              variant="lesson"
-              aria-pressed={pick === i}
-              aria-label={choice[1]}
-              onClick={() => setPick(pick === i ? undefined : i)}
-            >
-              <img src={preferenceImages[index]?.[i]} alt="" />
-              <b>{choice[1]}</b>
-              {pick === i ? (
-                <T.Selected aria-hidden="true">✓</T.Selected>
-              ) : null}
-            </T.Preference>
-          </Fragment>
-        ))}
-      </T.Pair>
-      <T.Help context={pair.q}>
-        <T.Strip>
-          {content.p4.strip.map((text) => (
-            <span key={text}>{text}</span>
-          ))}
-        </T.Strip>
-      </T.Help>
-    </S.Stack>
   )
 }
 export function ConversationSection() {

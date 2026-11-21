@@ -159,24 +159,46 @@
     ]
   },
   "p4": {
-    "title": "Choose one",
-    "ins": "Say what you like and ask: “And you?”",
-    "strip": ["I like …", "I don’t like …", "And you?"],
-    "pairs": [
+    "title": "My likes and dislikes",
+    "ins": "Answer about each picture. Then ask your teacher about two of them",
+    "hint": "Responda se você gosta ou não. Depois use Do you like…? para perguntar à professora",
+    "model": "Yes, I do / No, I don’t. And you?",
+    "items": [
       {
-        "q": "Movies or music?",
-        "a": ["🍿", "movies"],
-        "b": ["🎧", "music"]
+        "id": "movies",
+        "label": "movies",
+        "image": "movies",
+        "question": "Do you like movies?"
       },
       {
-        "q": "Dogs or cats?",
-        "a": ["🐶", "dogs"],
-        "b": ["🐱", "cats"]
+        "id": "music",
+        "label": "music",
+        "image": "music",
+        "question": "Do you like music?"
       },
       {
-        "q": "Pizza or salad?",
-        "a": ["🍕", "pizza"],
-        "b": ["🥗", "salad"]
+        "id": "dogs",
+        "label": "dogs",
+        "image": "dog",
+        "question": "Do you like dogs?"
+      },
+      {
+        "id": "cats",
+        "label": "cats",
+        "image": "cat",
+        "question": "Do you like cats?"
+      },
+      {
+        "id": "pizza",
+        "label": "pizza",
+        "image": "pizza",
+        "question": "Do you like pizza?"
+      },
+      {
+        "id": "salad",
+        "label": "salad",
+        "image": "salad",
+        "question": "Do you like salad?"
       }
     ]
   },

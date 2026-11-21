@@ -7,7 +7,7 @@ import { CallSimulation } from '../../../src/components/InteractiveMaterial/Call
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { ChoiceCard } from '../../../src/components/ChoiceCard/ChoiceCard'
-import { PreferenceSection } from '../../../stories/materials/TrialA1/TrialA1.sections'
+import { LikesBoardSection } from '../../../stories/materials/TrialA1/TrialA1LikesBoard'
 const speech = {
   speak: vi.fn(),
   stop: vi.fn(),
@@ -261,19 +261,38 @@ describe('guided role-play contract', () => {
     )
   })
 })
-describe('A1 trial preference behavior', () => {
-  it('treats preferences as exclusive, reversible and ungraded choices', async () => {
+describe('A1 trial likes board', () => {
+  it('keeps personal likes independent and ungraded', async () => {
     const user = userEvent.setup()
-    render(<PreferenceSection index={0} speech={speech} />)
-    const a = screen.getByRole('button', { name: 'movies' }),
-      b = screen.getByRole('button', { name: 'music' })
-    await user.click(a)
-    expect(a).toHaveAttribute('aria-pressed', 'true')
-    await user.click(b)
-    expect(a).toHaveAttribute('aria-pressed', 'false')
-    expect(b).toHaveAttribute('aria-pressed', 'true')
-    await user.click(b)
-    expect(b).toHaveAttribute('aria-pressed', 'false')
+    render(<LikesBoardSection />)
+    await user.click(screen.getByRole('button', { name: 'movies' }))
+    await user.click(
+      screen.getByRole('button', { name: 'Move movies to I like' }),
+    )
+    await user.click(screen.getByRole('button', { name: 'music' }))
+    await user.click(
+      screen.getByRole('button', { name: 'Move music to I like' }),
+    )
+    expect(screen.getByRole('region', { name: 'I like' })).toHaveTextContent(
+      'movies',
+    )
+    expect(screen.getByRole('region', { name: 'I like' })).toHaveTextContent(
+      'music',
+    )
+    expect(
+      screen.getByText('Do you like music?', { exact: true }),
+    ).toBeVisible()
+    await user.click(screen.getByRole('button', { name: 'Speaking tip' }))
+    expect(screen.getByText(/Responda se você gosta ou não/)).toBeVisible()
+    await user.click(
+      screen.getByRole('button', { name: 'Show speaking model' }),
+    )
+    expect(
+      screen.getByText('Yes, I do / No, I don’t. And you?', { exact: true }),
+    ).toBeVisible()
+    expect(
+      screen.queryByText(/Responda se você gosta ou não/),
+    ).not.toBeInTheDocument()
     expect(screen.queryByText(/Correct!|Try again/)).not.toBeInTheDocument()
     expect(speech.speak).not.toHaveBeenCalled()
   })
