@@ -33,8 +33,7 @@ export function GreetingSection() {
   ]
   return (
     <LearningDialogue
-      density="regular"
-      presentation="paired"
+      density="compact"
       sequentialGuidance={{
         hintedLineIds,
         revealedLineIds,

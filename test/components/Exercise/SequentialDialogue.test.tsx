@@ -41,8 +41,11 @@ describe('shared sequential support', () => {
   it('shows only two controls, retains ordered revelations and resets the completed layer', () => {
     render(<SequentialDialogue />)
     expect(screen.getAllByRole('button')).toHaveLength(2)
+    expect(getComputedStyle(hidden('Hint one')!).display).toBe('none')
+    expect(getComputedStyle(hidden('Model one')!).display).toBe('none')
     fireEvent.click(screen.getByRole('button', { name: 'Show next tip (1/2)' }))
     expect(hidden('Hint one')).toHaveAttribute('aria-hidden', 'false')
+    expect(getComputedStyle(hidden('Hint one')!).display).not.toBe('none')
     expect(hidden('Hint two')).toHaveAttribute('aria-hidden', 'true')
     fireEvent.click(screen.getByRole('button', { name: 'Show next tip (2/2)' }))
     expect(hidden('Hint one')).toHaveAttribute('aria-hidden', 'false')

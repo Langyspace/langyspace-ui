@@ -23,9 +23,7 @@ export function TrialA1LiveConversation({
   const learnerIdentity = { speaker: 'You', participant: 'learner' as const }
   return (
     <MaterialLearningDialogue
-      density="regular"
-      presentation="paired"
-      bubbleWidth={independent ? 'fill' : 'content'}
+      density="compact"
       sequentialGuidance={
         independent
           ? undefined

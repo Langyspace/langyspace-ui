@@ -116,7 +116,7 @@ The material adapter binds this prop from a scoped context and recognizes legacy
 
 `guidance.placement="line"` moves the existing bulb/model controls beside lines with a cue/hint. The consumer controls `activeLineId` and `level`; `onChange(level, lineId?)` identifies the activated answer. Other lines stay at cue level, and the current control collapses its own support. `line.guidanceLabel` supplies question-specific accessible names. Hidden layers remain mounted/inert to reserve text geometry. Default below-dialogue controls keep their current behavior and labels.
 
-`VocabularyControls density="compact"` reuses small IconButtons for inline support. Regular density remains the default. Audio controls retain their own column if present with inline support. TrialA1 greeting adopts the paired variation in SlidePage’s focused column. Source fixtures cover cue/hint/model, cross-answer switching and narrow layout; these were authored, not executed, per the current fast-delivery policy.
+`VocabularyControls density="compact"` reuses small IconButtons for inline support. Regular density remains the default. Audio controls retain their own column if present with inline support. TrialA1 greeting uses the compact standard dialogue in SlidePage’s focused column. Source fixtures cover cue/hint/model, cross-answer switching and narrow layout; these were authored, not executed, per the current fast-delivery policy.
 
 ## Sequential support and unified bubble skin
 
@@ -127,3 +127,5 @@ Sequential support uses `VocabularyControls interaction="progressive"` with posi
 The newer bubble paint is now the common Speech rule for guided and introductory conversation. An inset stroke avoids adding height to dense compact rows. Paired spacing no longer chooses a separate surface or border. Regular/compact remain meaningful density variations. Identity, completion and playback states retain their own contracts. Sequential source tests/fixtures are authored, not executed in the fast delivery.
 
 `LearningDialogue.bubbleWidth="fill"` stretches each bubble within its existing speaker-side width, useful for open conversation stems and short placeholders. It preserves the shared skin, spacing, identities, playback, translation and gap states; the default `content` sizing is unchanged. Consumer-authored prompts must distinguish open language stems from complete recorded dialogue.
+
+Sequential support keeps inactive layers mounted, inert and hidden with display:none, so only the visible cue/tip/model determines the bubble dimensions. Standard level/inline guidance retains its reserved geometry. TrialA1 greeting, rehearsal and open conversation use the same compact, content-sized dialogue as their recorded model, without paired margins or fill-width bubbles.

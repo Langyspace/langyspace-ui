@@ -166,15 +166,15 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 ## Composição de apresentações pessoais — feedback47
 
-- Conversas de apresentação ficam numa coluna centralizada, com professora e aluna em lados opostos. Separar visualmente cada pergunta/resposta por espaçamento entre as trocas; não adicionar painéis decorativos nem formulários para uma tarefa oral.
-- Lâmpada e olho junto à resposta oferecem dica e modelo de linguagem. Uma ajuda por vez, com botão contextual à pergunta, estado pressionado e texto oculto inacessível. Reservar espaço para cue/dica/modelo evita deslocamentos ao abrir a ajuda.
-- Usar presentation=paired e guidance.placement=line do LearningDialogue, mantendo os controles globais como padrão nas outras composições. A identidade é o Avatar compartilhado e continua a seguir o contexto de professora/aluna e o fallback You já definidos.
+- Conversas de apresentação ficam numa coluna centralizada, com professora e aluna em lados opostos. Usar o espaçamento compacto padrão entre as falas, conforme a referência da conversa guiada; não adicionar painéis decorativos nem formulários para uma tarefa oral.
+- Lâmpada e olho junto à resposta oferecem dica e modelo de linguagem. Uma ajuda por vez, com botão contextual à pergunta, estado pressionado e texto oculto inacessível. Na ajuda sequencial, cue/dica/modelo ocultos não reservam dimensões no balão.
+- Usar o LearningDialogue compacto padrão; paired e guidance.placement=line ficam disponíveis para composições que os solicitem explicitamente. A identidade é o Avatar compartilhado e continua a seguir o contexto de professora/aluna e o fallback You já definidos.
 
 ## Um visual de balão e revelação sequencial — feedback48
 
 - Apresentações e conversações guiadas usam o mesmo balão canônico do LearningDialogue: superfície, borda interna, raios, contraste e tipografia compartilhados. Regular/compact ajustam densidade para a quantidade de falas; paired apenas separa as trocas, sem criar outro visual por aula.
 - Na apresentação pessoal, uma única lâmpada e um único olho ficam centralizados abaixo da conversa. Cada clique libera a próxima dica ou modelo na ordem do conteúdo e mantém as anteriores. Depois da última, o mesmo controle esconde sua camada de apoio. Modelos já abertos têm precedência; a lâmpada pula respostas já modeladas e fica indisponível se todas exibem modelo.
-- Usar sequentialGuidance, com estado no consumidor. Não duplicar os ícones por resposta nesse padrão. Rótulos acessíveis/tooltip informam próxima posição e ação; controles progressivos são comandos, sem aria-pressed de toggle. Reservar espaço para as três camadas e manter as identidades reais separadas dos modelos de linguagem.
+- Usar sequentialGuidance, com estado no consumidor. Não duplicar os ícones por resposta nesse padrão. Rótulos acessíveis/tooltip informam próxima posição e ação; controles progressivos são comandos, sem aria-pressed de toggle. Camadas ocultas não reservam largura/altura na ajuda sequencial; manter as identidades reais separadas dos modelos de linguagem.
 
 ## Explorar antes de conferir e acompanhar a escuta — feedback50
 
@@ -186,4 +186,9 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Se modelo, compreensão e modos de prática competirem na mesma tela, distribuir a progressão em páginas próprias. Nesta experimental: diálogo-modelo sem questions → prática pessoal guiada → conversa com assunto novo. Não manter botões de modo, navegação de turno e explicações redundantes nas três páginas.
 - A prática pessoal mostra as três trocas completas de uma vez, com seis balões. Usar as identidades reais já fornecidas por prop/contexto, e não anunciar que a professora “é Kim”. Preferências pessoais permanecem perguntas, sem atribuir à professora gostos fictícios. Uma lâmpada e um olho abaixo liberam dicas/modelos em ordem pelo sequentialGuidance canônico.
-- Na transferência, quem aprende começa a conversa. Balões mais amplos podem mostrar começos abertos como “Do you like …?”, com o assunto escolhido na hora e espaço para responder/perguntar de volta. Usar bubbleWidth="fill", sem criar outro estilo de balão, painel de suporte ou novo roteiro fechado.
+- Na transferência, quem aprende começa a conversa. Balões com começos abertos como “Do you like …?” indicam o assunto escolhido na hora e a troca de perguntas. Usar o mesmo balão compacto de largura natural do modelo, sem criar outro estilo, painel de suporte ou novo roteiro fechado.
+
+## Mesmas dimensões para o mesmo balão — feedback52
+
+- Apresentação pessoal, prática e conversa aberta da experimental seguem a referência “Do you like the park?”: LearningDialogue density="compact", apresentação dialogue e largura content. Não forçar paired ou fill só por serem perguntas/respostas ou começos curtos.
+- Na ajuda sequencial, somente o texto visível dimensiona o balão. Dicas e modelos ocultos continuam montados/inertes para preservar o estado, mas fora do layout; não deixam largura vazia à direita nem altura extra. O próprio texto pode redimensionar naturalmente o balão quando revelado. Não alterar a reserva de geometria de outros modos sem pedido.

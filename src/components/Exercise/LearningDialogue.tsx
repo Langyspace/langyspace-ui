@@ -147,6 +147,7 @@ export function LearningDialogue({
                 <Styled.GuidedLayer
                   key={layer}
                   $visible={level === layer}
+                  $collapseHidden={Boolean(sequential)}
                   aria-hidden={level !== layer}
                   inert={level !== layer}
                 >

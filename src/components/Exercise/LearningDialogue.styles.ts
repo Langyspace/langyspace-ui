@@ -130,7 +130,11 @@ export const GuidedText = styled.div`
   display: grid;
   min-width: 0;
 `
-export const GuidedLayer = styled.span<{ $visible: boolean }>`
+export const GuidedLayer = styled.span<{
+  $visible: boolean
+  $collapseHidden?: boolean
+}>`
+  display: ${(p) => (!p.$visible && p.$collapseHidden ? 'none' : undefined)};
   grid-area: 1 / 1;
   align-self: center;
   min-width: 0;

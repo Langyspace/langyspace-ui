@@ -109,7 +109,7 @@ describe('separate TrialA1 conversation stages', () => {
       container.querySelectorAll('img[src="https://example.org/student.jpg"]'),
     ).toHaveLength(3)
   })
-  it('starts open conversation with the learner and wide topic-free bubbles, without extra controls', () => {
+  it('starts open conversation with the learner and content-sized topic-free bubbles, without extra controls', () => {
     const { container } = render(
       <MaterialTheme>
         <TrialA1LiveConversation independent />
@@ -122,7 +122,7 @@ describe('separate TrialA1 conversation stages', () => {
     expect(dialogue.firstElementChild).toHaveTextContent('You')
     const stem = screen.getByText('Do you like …?', { exact: true })
     expect(stem).toBeVisible()
-    expect(getComputedStyle(stem.parentElement!.parentElement!).flex).toBe(
+    expect(getComputedStyle(stem.parentElement!.parentElement!).flex).not.toBe(
       '1 1 0%',
     )
     expect(screen.queryByText(/music|soccer|Your teacher is Kim/)).toBeNull()
