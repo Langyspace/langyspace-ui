@@ -13,6 +13,8 @@ export interface MeetingFrameProps extends Omit<
   inset: MeetingParticipant
   /** Equal video tiles for a shared conversation; spotlight preserves the original inset frame. */
   layout?: 'spotlight' | 'side-by-side'
+  /** Spotlight inset may show the full scene instead of the default avatar. */
+  insetPresentation?: 'avatar' | 'video'
   onParticipantImageError?: (
     position: 'main' | 'inset',
     imageUrl: string,

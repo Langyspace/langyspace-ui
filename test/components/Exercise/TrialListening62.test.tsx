@@ -32,13 +32,13 @@ it.each([0, 1] as const)(
     expect(item.speaker).toBe('Ana')
     expect(message.transcript).not.toMatch(/\bHi[!,]/u)
     const user = userEvent.setup()
-    const { container } = render(<TrialA1Listening active part={part} />)
-    expect(container.querySelector('audio')).toHaveAttribute(
+    const { container } = render(<TrialA1Listening active />)
+    expect(container.querySelectorAll('audio')[part]).toHaveAttribute(
       'src',
       expect.stringContaining(`listening-ana62-${part + 1}.mp3`),
     )
     expect(screen.queryByText('Hi! I’m at the park with Kim 😊') !== null).toBe(
-      part === 0,
+      true,
     )
     for (const question of message.questions) {
       await user.click(screen.getByRole('button', { name: question.prompt }))
@@ -55,17 +55,15 @@ it.each([0, 1] as const)(
   async (part) => {
     const transcript = listeningParts[part].transcript
     const user = userEvent.setup()
-    const { container, rerender } = render(
-      <TrialA1Listening active part={part} />,
-    )
-    const audio = container.querySelector('audio')!
+    const { container, rerender } = render(<TrialA1Listening active />)
+    const audio = container.querySelectorAll('audio')[part]!
     expect(
       screen.queryByText(transcript, { exact: true }),
     ).not.toBeInTheDocument()
     for (let n = 1; n <= 3; n++) {
       await user.click(
         screen.getByRole('button', {
-          name: n === 1 ? 'Listen to Ana' : 'Listen again',
+          name: `${n === 1 ? 'Listen to Ana' : 'Listen again'} (${part + 1}/2)`,
         }),
       )
       fireEvent.playing(audio)
@@ -81,7 +79,7 @@ it.each([0, 1] as const)(
           content.replace(/\s+/gu, ' ') === transcript.replace(/\s+/gu, ' '),
       ),
     ).toBeVisible()
-    rerender(<TrialA1Listening active={false} part={part} />)
+    rerender(<TrialA1Listening active={false} />)
     expect(HTMLMediaElement.prototype.pause).toHaveBeenCalled()
   },
 )

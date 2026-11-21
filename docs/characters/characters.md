@@ -65,3 +65,8 @@ As duas gravações aprovadas são da mesma Ana e têm uma única saudação esc
 ## Representação da conversa livre (feedback63)
 
 Kim e Ana aparecem como figuras ilustrativas de professora e aluna em uma conversa leve e divertida. Os rótulos Teacher/Student descrevem os papéis da cena, sem fixar profissão ou representar a identidade de usuárias reais. Assets e prompts ficam vinculados em shared/free-conversation63-image-provenance.json.
+
+
+## Composição das mensagens e conversa livre (feedback64)
+
+As duas gravações aprovadas da Ana são apresentadas juntas no mesmo chat, com a saudação única e seis perguntas agrupadas por áudio. Os arquivos, falas e fatos do feedback62 permanecem os mesmos. A representação ilustrada da conversa livre usa a professora em destaque e a aluna no pequeno quadro sobreposto; os papéis continuam fictícios.

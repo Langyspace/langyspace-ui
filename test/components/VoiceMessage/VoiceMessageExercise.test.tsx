@@ -88,7 +88,9 @@ describe('VoiceMessageExercise', () => {
   })
 
   it('reveals only on a second successful pass; pause/resume and buffering do not increment', async () => {
-    const { container } = render(<VoiceMessageExercise {...fixture} />)
+    const { container } = render(
+      <VoiceMessageExercise {...fixture} transcriptReveal="second-listen" />,
+    )
     const audio = media(container)
     await start()
     expect(container.querySelector('[data-listens]')).toHaveAttribute(
@@ -342,6 +344,7 @@ it('offers an optional replay after a complete first pass and removes it on the 
   const { container } = render(
     <VoiceMessageExercise
       {...fixture}
+      transcriptReveal="second-listen"
       replayActionLabel="Listen again and check"
     />,
   )

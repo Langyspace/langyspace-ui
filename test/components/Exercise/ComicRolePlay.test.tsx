@@ -137,7 +137,6 @@ it('replaces the final repeated tasks while preserving the trial opening, practi
     's3-independent',
     's4',
     's5',
-    's5-part-2',
     'next-steps',
   ])
   render(<TrialA1Comic />)

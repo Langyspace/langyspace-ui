@@ -61,3 +61,12 @@ Native playback pauses when the document becomes hidden. Returning does not auto
 ## Identity on a device surface
 
 The contact header owns its foreground through the voiceMessage recipe. Its canonical named Avatar uses `textTone="inherit"` for name and status so an external dark lesson does not turn the contact name white on a light phone header. Other Avatar consumers retain the existing theme-based default. B1.01 keeps the native phone player and automatic third-listen transcript, uses a responsive larger presentation layout, and removes the unrelated footer task.
+
+
+## Multiple recordings in one conversation
+
+Keep the existing `audio` as the first message and pass optional `additionalAudios` for following recordings with unique content IDs. One phone/header/greeting/composer surrounds every recording bubble. Each uses the canonical recording owner with independent pause/resume, speed, errors and listening/transcript history; ordinal accessible names distinguish its controls and transcript region. The primary root data attributes remain compatible; each bubble also exposes its own audio ID and state. A recording/source change resets that clip, while the other clips retain their history.
+
+Native play pauses the other recording elements inside this phone, and native pause invalidates pending playback attempts so a cancelled request cannot surface as a spurious unavailable-audio error. Leaving the slide pauses every recording. Automatic third-listen transcripts apply independently; additional recordings in manual replay mode expose the transcript toggle after their second pass. The original primary follow-up replay action remains unchanged.
+
+TrialA1 combines the approved Ana clips and six grouped questions on one standard-width (47.5rem) page. Its phone dimensions are a consumer theme variation, preserving every other lesson’s sizing. Both default single-message and multiple-message behavior require focused regression coverage. No audio is synthesized by this component.

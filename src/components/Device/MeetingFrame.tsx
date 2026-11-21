@@ -9,6 +9,7 @@ export function MeetingFrame({
   main,
   inset,
   layout = 'spotlight',
+  insetPresentation = 'avatar',
   onParticipantImageError,
   ...props
 }: MeetingFrameProps) {
@@ -60,12 +61,27 @@ export function MeetingFrame({
           )}
           <S.Name>{main.name}</S.Name>
           <S.Self>
-            <Avatar
-              size="sm"
-              imageUrl={inset.imageUrl}
-              initials={inset.name.slice(0, 1)}
-              onImageError={(url) => onParticipantImageError?.('inset', url)}
-            />
+            {insetPresentation === 'video' &&
+            inset.imageUrl &&
+            inset.imageUrl !== failedInsetImage ? (
+              <img
+                src={inset.imageUrl}
+                alt={inset.imageAlt ?? inset.name}
+                onError={() => {
+                  setFailedInsetImage(inset.imageUrl)
+                  onParticipantImageError?.('inset', inset.imageUrl!)
+                }}
+              />
+            ) : (
+              <Avatar
+                size="sm"
+                imageUrl={
+                  insetPresentation === 'video' ? undefined : inset.imageUrl
+                }
+                initials={inset.name.slice(0, 1)}
+                onImageError={(url) => onParticipantImageError?.('inset', url)}
+              />
+            )}
             <span>{inset.name}</span>
           </S.Self>
         </S.Stage>

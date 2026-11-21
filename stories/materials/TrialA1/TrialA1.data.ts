@@ -17,7 +17,6 @@ export const order = [
   's3-independent',
   's4',
   's5',
-  's5-part-2',
   'next-steps',
 ] as const
 export const pictures = {

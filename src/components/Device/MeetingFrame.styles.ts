@@ -22,6 +22,13 @@ export const Stage = styled(Meeting.Main)`
   }
 `
 export const Self = styled(Meeting.Self)`
+  > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+  }
   > [data-size] {
     position: relative;
     inset: auto;

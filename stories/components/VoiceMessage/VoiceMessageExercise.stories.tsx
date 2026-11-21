@@ -17,9 +17,7 @@ const meta = {
   decorators: [
     (Story) => (
       <Stage>
-        <Caption>
-          Voz de demonstração local; gravação final não incluída.
-        </Caption>
+        <Caption>Exercício de mensagens de áudio</Caption>
         <Story />
       </Stage>
     ),
@@ -225,4 +223,18 @@ export const ContextBeforeVoiceNote: Story = {
     greeting: { text: 'Hi! Here’s a quick update.', timestamp: '19:40' },
   },
   tags: ['visual-review', 'layout-boundary'],
+}
+
+export const TwoMessages: Story = {
+  args: {
+    additionalAudios: [
+      { ...initial.audio, id: 'second-message', timestamp: '19:42' },
+    ],
+  },
+  render: (args) => <VoiceMessageDemo {...args} />,
+  tags: ['visual-review'],
+}
+export const TwoMessagesInactive: Story = {
+  ...TwoMessages,
+  args: { ...TwoMessages.args, active: false },
 }

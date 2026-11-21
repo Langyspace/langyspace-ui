@@ -57,6 +57,8 @@ export interface VoiceMessageExerciseProps extends Omit<
   /** A real image shared in the conversation, before its voice message. */
   attachment?: { src: string; alt: string; timestamp?: string }
   audio: VoiceMessageAudio
+  /** Additional recordings in the same chat; each retains its own playback/transcript history. */
+  additionalAudios?: readonly VoiceMessageAudio[]
   /** Pause when leaving a slide, without losing its transcript/listening history. */
   active?: boolean
   questions: readonly VoiceMessageQuestion[]

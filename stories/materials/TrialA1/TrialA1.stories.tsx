@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Dez páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
+          'Experimental A1 · What do you like? Nove páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -48,16 +48,12 @@ export const Listening: Story = {
   tags: ['visual-review'],
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's5')
-    await expect(c.getByText('A message from Ana (1/2)')).toBeVisible()
+    await expect(c.getByText('A message from Ana')).toBeVisible()
     await userEvent.click(
       c.getByRole('button', { name: 'What sport does Ana like?' }),
     )
     await expect(c.getByText('Soccer', { exact: true })).toBeVisible()
   },
-}
-export const ListeningContinuation: Story = {
-  args: { initialPageId: 's5-part-2' },
-  tags: ['visual-review'],
 }
 export const FreeConversation: Story = {
   args: { initialPageId: 'free-conversation' },

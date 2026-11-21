@@ -59,3 +59,18 @@ export const IllustratedNarrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['layout-boundary', 'visual-review'],
 }
+
+export const IllustratedSpotlight: Story = {
+  args: {
+    layout: 'spotlight',
+    insetPresentation: 'video',
+    main: { name: 'Teacher', imageUrl: teacherScene },
+    inset: { name: 'Student', imageUrl: learnerScene },
+  },
+  tags: ['visual-review'],
+}
+export const SpotlightNarrow: Story = {
+  ...IllustratedSpotlight,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary', 'visual-review'],
+}

@@ -18,7 +18,8 @@ export function FreeConversationPage() {
     >
       <MeetingFrame
         aria-label="Your conversation with your teacher"
-        layout="side-by-side"
+        layout="spotlight"
+        insetPresentation="video"
         main={{
           name: 'Teacher',
           imageUrl: teacherScene,

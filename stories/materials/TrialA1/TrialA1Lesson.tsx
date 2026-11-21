@@ -1,7 +1,7 @@
 import { LikesBoardSection } from './TrialA1LikesBoard'
 import {
   TrialA1Listening,
-  listeningParts,
+  listeningTitle,
   listeningInstruction,
 } from './TrialA1Listening'
 import { LessonOpening, TrialNextSteps } from '../shared/LessonBookends'
@@ -103,21 +103,19 @@ export function TrialA1Lesson({
                   </SlidePage>
                 ),
               }
-            if (id === 's5' || id === 's5-part-2') {
-              const part = id === 's5' ? 0 : 1
-              const listeningTitle = listeningParts[part].title
+            if (id === 's5') {
               return {
                 id,
                 label: listeningTitle,
                 content: (
                   <SlidePage
-                    width="expanded"
+                    width="standard"
                     density="compact"
                     eyebrow="Listening"
                     title={listeningTitle}
                     instruction={listeningInstruction}
                   >
-                    <TrialA1Listening active={activeId === id} part={part} />
+                    <TrialA1Listening active={activeId === id} />
                   </SlidePage>
                 ),
               }

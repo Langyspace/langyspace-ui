@@ -95,6 +95,7 @@ export function useVoiceMessageAudio(active: boolean) {
       },
       onPause: () => {
         if (audioRef.current?.ended || audioRef.current?.error) return
+        attemptRef.current += 1
         intentRef.current = false
         setStatus('paused')
       },

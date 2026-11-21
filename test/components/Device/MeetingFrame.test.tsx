@@ -52,6 +52,12 @@ it('shows an illustrated teacher and learner enjoying a free conversation with g
     expect.stringContaining('free-conversation-learner63.webp'),
   )
   expect(container.querySelectorAll('img')).toHaveLength(2)
+  expect(
+    screen.getByRole('img', { name: /illustrated teacher smiling/i })
+      .parentElement,
+  ).toContainElement(
+    screen.getByRole('img', { name: /illustrated student smiling/i }),
+  )
   expect(screen.queryByRole('button')).not.toBeInTheDocument()
 })
 
@@ -96,4 +102,24 @@ it('server renders both illustrated participants in reading order without browse
     html.indexOf('/student.webp'),
   )
   expect(html).not.toContain('<button')
+})
+
+it('renders a full scene in the small video inset and keeps its failure separate from the main participant', () => {
+  const failed = vi.fn()
+  render(
+    <MeetingFrame
+      insetPresentation="video"
+      main={{ name: 'Teacher', imageUrl: '/teacher.webp' }}
+      inset={{ name: 'Student', imageUrl: '/student.webp' }}
+      onParticipantImageError={failed}
+    />,
+  )
+  const main = screen.getByRole('img', { name: 'Teacher' })
+  const inset = screen.getByRole('img', { name: 'Student' })
+  expect(main.parentElement).toContainElement(inset)
+  fireEvent.error(inset)
+  expect(failed).toHaveBeenCalledExactlyOnceWith('inset', '/student.webp')
+  expect(main).toBeVisible()
+  expect(screen.queryByRole('img', { name: 'Student' })).not.toBeInTheDocument()
+  expect(screen.getByText('Student')).toBeVisible()
 })
