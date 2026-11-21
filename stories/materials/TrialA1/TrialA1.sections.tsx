@@ -1,9 +1,10 @@
 import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { PromptExercise } from '../shared/LessonExercises'
-import { Fragment, useState } from 'react'
+import { useState } from 'react'
 import { GuidedConversation } from '../shared/GuidedConversation'
 import type { GuidedConversationMode } from '../shared/GuidedConversation.types'
 import { guidedConversation } from './TrialA1.guided'
+import { conversationRecordings } from '../shared/conversationRecordings'
 import { toggleId } from '../shared/lessonState'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { CharacterDialogue as LearningDialogue } from '../shared/CharacterPortraits.styles'
@@ -84,56 +85,42 @@ export function PictureTalkSection({
   const [selected, setSelected] = useState<string>(),
     [visited, setVisited] = useState<string[]>([])
   return (
-    <T.Columns $scene>
-      <T.SceneFit>
-        <SceneExplorer
-          imageUrl={pictures.park}
-          imageAlt="Ana ouve música no parque; um livro, uma bola de futebol e um cachorro estão inteiros e separados."
-          presentation="explore"
-          onPlayHotspot={onPlay ?? audio.play}
-          playingId={playingId ?? audio.playingId}
-          labels={{ initial: '' }}
-          hotspots={content.p2.items.map((p, i) => ({
-            id: String(i),
-            label: p.en,
-            prompt: null,
-            targetBounds: p.targetBounds,
-            xPercent: p.x,
-            yPercent: p.y,
-          }))}
-          selectedId={selected}
-          visitedIds={visited}
-          onSelect={(id) => {
-            audio.stop()
-            setSelected(selected === id ? undefined : id)
-            setVisited((old) => (old.includes(id) ? old : [...old, id]))
-          }}
-        />
-        {selected && audio.error ? (
-          <S.Hint role="status">{audio.error}</S.Hint>
-        ) : null}
-      </T.SceneFit>
-      <S.Stack>
-        {content.p2.support.map((group) => (
-          <T.Support key={group.h}>
-            <T.SupportTitle>{group.h}</T.SupportTitle>
-            {group.lines.map(([q, a]) => (
-              <Fragment key={q}>
-                <p>{q}</p>
-                <T.Help context={q}>
-                  <p>{a}</p>
-                </T.Help>
-              </Fragment>
-            ))}
-          </T.Support>
-        ))}
-      </S.Stack>
-    </T.Columns>
+    <T.SceneFit>
+      <SceneExplorer
+        imageUrl={pictures.park}
+        imageAlt="Ana ouve música no parque; um livro, uma bola de futebol e um cachorro estão inteiros e separados."
+        presentation="explore"
+        imageSizing="presentation"
+        onPlayHotspot={onPlay ?? audio.play}
+        playingId={playingId ?? audio.playingId}
+        labels={{ initial: '' }}
+        hotspots={content.p2.items.map((p, i) => ({
+          id: String(i),
+          label: p.en,
+          prompt: null,
+          targetBounds: p.targetBounds,
+          xPercent: p.x,
+          yPercent: p.y,
+        }))}
+        selectedId={selected}
+        visitedIds={visited}
+        onSelect={(id) => {
+          audio.stop()
+          setSelected(selected === id ? undefined : id)
+          setVisited((old) => (old.includes(id) ? old : [...old, id]))
+        }}
+      />
+      {selected && audio.error ? (
+        <S.Hint role="status">{audio.error}</S.Hint>
+      ) : null}
+    </T.SceneFit>
   )
 }
 export function ListenTalkSection({
+  playingId,
   onModeChange,
 }: {
+  playingId?: string
   onModeChange?: (mode: GuidedConversationMode) => void
 } = {}) {
   const [translated, setTranslated] = useState<string[]>([])
@@ -141,8 +128,9 @@ export function ListenTalkSection({
     <GuidedConversation {...guidedConversation} onModeChange={onModeChange}>
       <LearningDialogue
         density="compact"
+        playingId={playingId}
         lines={content.p3.lines.map((l, i) => ({
-          id: String(i),
+          id: conversationRecordings['TrialA1:s3']?.turns[i]?.id ?? String(i),
           speaker: l.who === 'kim' ? 'Kim' : 'Ana',
           avatarUrl: l.who === 'kim' ? kim : ana,
           side: l.who === 'kim' ? 'start' : 'end',

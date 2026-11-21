@@ -36,3 +36,13 @@ export interface RecordedDialoguePlaybackProps {
   conversationId: RecordedConversationId
   active: boolean
 }
+
+/** One transport can drive a title control and the corresponding dialogue. */
+export interface RecordedConversationPlayback extends RecordedConversationState {
+  ready: boolean
+  toggle: () => void
+  stop: () => void
+}
+export interface RecordedDialoguePlaybackControlProps extends RecordedDialoguePlaybackProps {
+  playback: RecordedConversationPlayback
+}

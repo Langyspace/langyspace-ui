@@ -208,6 +208,7 @@ export function LearningDialogue({
               aria-label={speakerLabels === 'hidden' ? speaker : undefined}
             />
             <Styled.Speech
+              aria-current={playingId === line.id ? 'true' : undefined}
               $compact={density === 'compact'}
               $inlineGuidance={inlineGuidance}
               $playing={playingId === line.id}

@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import { DialogueTitle } from '../shared/DialogueTitle'
-import { RecordedDialoguePlayback } from '../shared/RecordedDialoguePlayback'
+import { TrialA1DialoguePage } from './TrialA1DialoguePage'
 import { MaterialTheme } from '../shared/MaterialTheme'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { LessonShell } from '../shared/LessonShell'
@@ -9,8 +7,6 @@ import { content, order } from './TrialA1.data'
 import {
   GreetingSection,
   PictureTalkSection,
-  ListenTalkSection,
-  ComprehensionSection,
   PreferenceSection,
   ConversationSection,
   TodaySection,
@@ -19,7 +15,6 @@ export function TrialA1Lesson({
   initialPageId,
   levelLabel = 'A1',
 }: TrialA1LessonProps) {
-  const [modelActive, setModelActive] = useState(true)
   return (
     <MaterialTheme>
       <LessonShell
@@ -63,32 +58,7 @@ export function TrialA1Lesson({
               return {
                 id,
                 label: content.p3.title,
-                content: (
-                  <SlidePage
-                    width="expanded"
-                    eyebrow="Dialogue"
-                    density="compact"
-                    questions={
-                      modelActive ? <ComprehensionSection /> : undefined
-                    }
-                    title={
-                      <DialogueTitle
-                        title={content.p3.title}
-                        action={
-                          <RecordedDialoguePlayback
-                            conversationId="TrialA1:s3"
-                            active={activeId === 's3' && modelActive}
-                          />
-                        }
-                      />
-                    }
-                    instruction="Listen, then read with your teacher."
-                  >
-                    <ListenTalkSection
-                      onModeChange={(mode) => setModelActive(mode === 'model')}
-                    />
-                  </SlidePage>
-                ),
+                content: <TrialA1DialoguePage active={activeId === 's3'} />,
               }
             if (id === 's41' || id === 's42' || id === 's43') {
               const index = Number(id.slice(2)) - 1

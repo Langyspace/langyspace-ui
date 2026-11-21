@@ -10,7 +10,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo lido ao vivo, sem áudio artificial. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
+          'Experimental A1 · What do you like? Oito páginas, 30 minutos de conversa com apoio progressivamente menor. Cena e objetos ilustrados; diálogo com gravações ElevenLabs e destaque da fala em reprodução. Preferências pessoais sem gabarito. Notes e scroll contínuo.',
       },
     },
   },
@@ -33,6 +33,10 @@ export const PictureTalk: Story = {
   args: { initialPageId: 's2' },
   play: async ({ canvasElement }) => {
     const c = await lessonCanvas(canvasElement, 's2')
+    await expect(
+      c.getByText('What can you name in the park?', { exact: true }),
+    ).toBeVisible()
+    await expect(c.queryByText('After exploring', { exact: true })).toBeNull()
     await userEvent.click(c.getByRole('button', { name: 'music' }))
     await expect(c.getByRole('region', { name: 'music' })).toBeVisible()
   },
@@ -98,6 +102,12 @@ export const GreetingModel: Story = {
 }
 export const GreetingNarrow: Story = {
   args: { initialPageId: 's1' },
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary'],
+}
+
+export const PictureTalkNarrow: Story = {
+  args: { initialPageId: 's2' },
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['layout-boundary'],
 }

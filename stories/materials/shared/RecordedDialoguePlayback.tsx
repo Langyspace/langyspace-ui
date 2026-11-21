@@ -2,16 +2,35 @@ import { useId } from 'react'
 import { DialoguePlaybackAction } from './DialoguePlaybackAction'
 import { conversationRecordings } from './conversationRecordings'
 import { useRecordedConversationAudio } from './useRecordedConversationAudio'
-import type { RecordedDialoguePlaybackProps } from './RecordedDialoguePlayback.types'
+import type {
+  RecordedDialoguePlaybackProps,
+  RecordedDialoguePlaybackControlProps,
+} from './RecordedDialoguePlayback.types'
 import * as S from './RecordedDialoguePlayback.styles'
 
 export function RecordedDialoguePlayback({
   conversationId,
   active,
 }: RecordedDialoguePlaybackProps) {
-  const id = useId()
   const conversation = conversationRecordings[conversationId]
   const audio = useRecordedConversationAudio(active, conversation)
+  return (
+    <RecordedDialoguePlaybackControl
+      conversationId={conversationId}
+      active={active}
+      playback={audio}
+    />
+  )
+}
+
+/** Controlled presentation: never creates a second media transport. */
+export function RecordedDialoguePlaybackControl({
+  conversationId,
+  active,
+  playback: audio,
+}: RecordedDialoguePlaybackControlProps) {
+  const id = useId()
+  const conversation = conversationRecordings[conversationId]
   if (!audio.ready || !conversation) return null
   return (
     <S.Control

@@ -42,42 +42,6 @@ export const SceneFit = styled.div`
   max-width: 100%;
   margin-inline: auto;
 `
-export const Columns = styled.div<{ $scene?: boolean }>`
-  display: grid;
-  grid-template-columns: ${(p) => (p.$scene ? 'minmax(0,2fr) minmax(220px,1fr)' : 'minmax(0,1.3fr) minmax(240px,1fr)')};
-  align-items: center;
-  gap: ${theme.spacing[6]};
-  min-width: 0;
-  @container (max-width:${theme.breakpoints.lg}) {
-    grid-template-columns: minmax(0, 1fr);
-  }
-`
-export const Support = styled(Surface)`
-  padding: ${theme.spacing[3]} ${theme.spacing[4]};
-  gap: ${theme.spacing[2]};
-  > b {
-    display: block;
-    padding: ${theme.spacing[2]};
-    border-radius: ${(p) => resolveSlideTheme(p).panelRadius};
-    background: ${(p) => resolveTheme(p).colors?.palette.accent.pinkSoft ?? theme.colors.palette.accent.pinkSoft};
-    color: ${(p) => resolveSlideTheme(p).accent};
-    font-size: ${theme.typography.fontSize.xs};
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-  }
-  p {
-    margin: 0;
-    font-weight: ${theme.typography.fontWeight.bold};
-    font-size: clamp(0.875rem, 2.3cqh, 1.0625rem);
-  }
-  span {
-    display: block;
-    margin-top: ${theme.spacing[1]};
-    font-size: clamp(0.8125rem, 2.1cqh, 1rem);
-    color: ${(p) => resolveSlideTheme(p).muted};
-    font-weight: ${theme.typography.fontWeight.medium};
-  }
-`
 export const Strip = styled.div`
   display: flex;
   flex-wrap: wrap;
