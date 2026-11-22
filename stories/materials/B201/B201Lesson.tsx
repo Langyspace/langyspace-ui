@@ -61,7 +61,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 label: 'Warm up · When a journey goes wrong',
                 content: (
                   <SlidePage
-                    width="conversation"
+                    columns={1}
                     density="compact"
                     eyebrow="Warm up"
                     title={'When a journey goes wrong'}
@@ -78,7 +78,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Vocabulary"
-                    width="expanded"
+                    columns={3}
                     density="dense"
                     title="No battery"
                     instruction="Name the items and person. Click to listen and check."
@@ -94,7 +94,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <WarmupPage
                     eyebrow="Warm up"
-                    width="expanded"
+                    columns={3}
                     density="dense"
                     title={
                       [
@@ -116,7 +116,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Vocabulary"
-                    width="expanded"
+                    columns={3}
                     title="Travel expressions"
                     instruction="Say the expression, then click to reveal and listen."
                   >
@@ -163,7 +163,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Dialogue"
-                    width="conversation"
+                    columns={1}
                     density="dense"
                     questions={
                       <ComprehensionPractice
@@ -211,7 +211,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Grammar"
-                    width="expanded"
+                    columns={3}
                     title="Before a past event"
                     instruction="Compare earlier actions, ongoing activities and the event itself"
                   >
@@ -226,7 +226,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Your version"
-                    width="conversation"
+                    columns={1}
                     title="Your bad day"
                     instruction="Tell Kim about a bad day, using your own details."
                   >
@@ -241,7 +241,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Listening"
-                    width="expanded"
+                    columns={3}
                     density="dense"
                     title="A message from Raj"
                     instruction="Listen to Raj’s message; decide what he said and correct the false statements."
@@ -257,7 +257,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Review"
-                    width="expanded"
+                    columns={3}
                     title="Right or wrong?"
                     instruction="Is it right? Does it sound natural? If not, say it the right way."
                   >
@@ -277,7 +277,7 @@ function B201LessonContent({ initialPageId }: LessonProps) {
                 content: (
                   <SlidePage
                     eyebrow="Role play"
-                    width="expanded"
+                    columns={3}
                     density="dense"
                     title="Everything went wrong"
                     instruction="Choose a situation. Tell Kim what led to the problem and how you resolved it."

@@ -186,7 +186,9 @@ it.each(['split', 'questions'] as const)(
         ),
       )
       const css = sheet.getStyleTags().replace(/\s+/g, '')
-      expect(css).toContain('max-width:70rem')
+      expect(css).toContain(
+        kind === 'questions' ? 'max-width:65rem' : 'max-width:70rem',
+      )
       expect(css).not.toContain(`calc(${presentationMedia.viewportHeight}*2)`)
     } finally {
       sheet.seal()
@@ -215,6 +217,77 @@ it.each([
     const css = sheet.getStyleTags().replace(/\s+/g, '')
     expect(css).toContain(`max-width:${expected}`)
     expect(css).not.toContain(`calc(${presentationMedia.viewportHeight}*`)
+  } finally {
+    sheet.seal()
+  }
+})
+
+it.each([
+  [1, '37.5rem'],
+  [2, '65rem'],
+  [3, '70rem'],
+] as const)(
+  'gives the header and exercise the same %i-column frame',
+  (columns, width) => {
+    const sheet = new ServerStyleSheet()
+    try {
+      const html = renderToString(
+        sheet.collectStyles(
+          <SlidePage title="Shared frame" columns={columns} width="reading">
+            <button>Reveal support</button>
+          </SlidePage>,
+        ),
+      )
+      expect(html).toContain(`data-slide-columns="${columns}"`)
+      expect(html).not.toContain(' columns=')
+      const css = sheet.getStyleTags().replace(/\s+/g, '')
+      expect(css).toContain(`max-width:${width}`)
+      expect(css).not.toContain('max-width:56.25rem')
+    } finally {
+      sheet.seal()
+    }
+  },
+)
+
+it('lets comprehension require two columns even when the dialogue asks for one', () => {
+  const { container } = render(
+    <SlidePage
+      title="Who’s this?"
+      columns={1}
+      questions={<button>Who is Leo?</button>}
+    >
+      <p>This is my brother, Leo</p>
+    </SlidePage>,
+  )
+  const frame = container.querySelector('[data-slide-columns="2"]')
+  expect(frame).toContainElement(
+    screen.getByRole('heading', { name: 'Who’s this?' }),
+  )
+  expect(frame).toContainElement(screen.getByText('This is my brother, Leo'))
+  expect(frame).toContainElement(
+    screen.getByRole('button', { name: 'Who is Leo?' }),
+  )
+  expect(
+    screen.getByRole('complementary', { name: 'Questions' }),
+  ).toContainElement(screen.getByRole('button', { name: 'Who is Leo?' }))
+})
+
+it('resolves a column through the supplied theme instead of a page-specific size', () => {
+  const sheet = new ServerStyleSheet()
+  try {
+    renderToString(
+      sheet.collectStyles(
+        <ThemeProvider
+          theme={createTheme({ slides: { focusedWidth: '42rem' } })}
+        >
+          <SlidePage title="Themed conversation" columns={1}>
+            Conversation
+          </SlidePage>
+        </ThemeProvider>,
+      ),
+    )
+    expect(sheet.getStyleTags()).toContain('max-width:42rem')
+    expect(sheet.getStyleTags()).not.toContain('max-width:37.5rem')
   } finally {
     sheet.seal()
   }

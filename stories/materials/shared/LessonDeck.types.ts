@@ -7,6 +7,7 @@ export interface MaterialLessonPage {
   eyebrow?: string
   title: ReactNode
   instruction?: ReactNode
+  columns?: SlidePageProps['columns']
   width?: SlidePageProps['width']
   tone?: SlidePageProps['tone']
   lead?: ReactNode

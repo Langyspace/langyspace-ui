@@ -52,7 +52,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
         label: 'Vocabulary · Everyday actions',
         content: (
           <S.VocabularyPage
-            width="expanded"
+            columns={3}
             eyebrow="A2 LESSON 01"
             title="Everyday actions"
             instruction="Look at the pictures. Guess the actions."
@@ -84,7 +84,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
         label: `Warm up · Actions ${number - 2}`,
         content: (
           <S.WarmupPage
-            width="expanded"
+            columns={1}
             eyebrow="Warm up"
             title={content.warmups[number - 3]!.question}
             instruction="Choose the correct answer."
@@ -223,7 +223,7 @@ export function A201Lesson({ initialPageId }: A201LessonProps) {
         label: `Conversation · ${conversationTitles[number - 16]}`,
         content: (
           <SlidePage
-            width="conversation"
+            columns={1}
             eyebrow="Conversation"
             title={conversationTitles[number - 16]}
             instruction="Answer the questions, give details and ask your teacher too"

@@ -67,7 +67,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
         label: 'Warm up · Your work',
         content: (
           <SlidePage
-            width="conversation"
+            columns={1}
             density="compact"
             eyebrow="Warm up"
             title={'Your work'}
@@ -196,6 +196,7 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
               ? 'dense'
               : 'regular'
           }
+          columns={id === 's8' ? 2 : undefined}
           width={
             id === 's2' || ['s6', 's62', 's61', 's10'].includes(id)
               ? 'reading'

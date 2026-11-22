@@ -43,7 +43,6 @@ function Conversation({
   const playing = dialogue.lines.some((line) => line.id === speech.playingId)
   return (
     <SlidePage
-      width="expanded"
       density="compact"
       eyebrow="Guided conversation"
       title={dialogue.title}
@@ -114,6 +113,7 @@ export function TrialPreviewLesson({
               label: vocabulary.title,
               content: (
                 <SlidePage
+                  columns={vocabulary.columns}
                   width={vocabulary.width}
                   title={vocabulary.title}
                   instruction={vocabulary.instruction}

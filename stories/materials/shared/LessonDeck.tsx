@@ -50,6 +50,7 @@ export function LessonDeck({
         title={page.title}
         eyebrow={page.eyebrow}
         instruction={page.instruction}
+        columns={page.columns}
         width={page.width ?? 'standard'}
         tone={page.tone}
         lead={page.lead}

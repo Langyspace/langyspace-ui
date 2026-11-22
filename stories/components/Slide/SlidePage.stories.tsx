@@ -5,6 +5,11 @@ import lessonCover from '../../materials/A103/assets/catalog-cover40.webp'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
+import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { content } from '../../materials/TrialA1/TrialA1.data'
+import { ana, kim } from '../../materials/shared/characterPortraits'
+import { produce, scene } from '../../materials/A105/A105.data'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 import { Panel, Stage } from './Slide.stories.styles'
 
@@ -206,4 +211,61 @@ export const MediaColumn: Story = {
 export const MediaColumnNarrow: Story = {
   ...MediaColumn,
   globals: { viewport: { value: 'mobile1', isRotated: false } },
+}
+
+export const OneColumnConversation: Story = {
+  args: {
+    columns: 1,
+    eyebrow: 'Dialogue',
+    title: 'Do you like the park?',
+    instruction: 'Listen, then read with your teacher',
+    children: (
+      <LearningDialogue
+        density="compact"
+        lines={content.p3.lines.map((line, index) => ({
+          id: String(index),
+          speaker: line.who === 'kim' ? 'Kim' : 'Ana',
+          avatarUrl: line.who === 'kim' ? kim : ana,
+          side: line.who === 'kim' ? 'start' : 'end',
+          content: line.en,
+        }))}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
+}
+export const TwoColumnConversation: Story = {
+  ...OneColumnConversation,
+  args: {
+    ...OneColumnConversation.args,
+    questions: (
+      <Panel>
+        <h3>What does Ana like doing in the park?</h3>
+        <p>Find the answer in the conversation</p>
+      </Panel>
+    ),
+  },
+}
+export const ThreeColumnExercise: Story = {
+  args: {
+    columns: 3,
+    eyebrow: 'Vocabulary',
+    title: 'Fruit',
+    instruction: 'Name each fruit',
+    children: (
+      <VocabularyGrid
+        columns={3}
+        interaction="static"
+        surface="plain"
+        imageFit="contain"
+        revealedIds={[]}
+        items={produce.slice(0, 6).map((item) => ({
+          ...item,
+          imageUrl: scene(item.id),
+          imageAlt: item.translation,
+        }))}
+      />
+    ),
+  },
+  tags: ['visual-review', 'layout-boundary'],
 }

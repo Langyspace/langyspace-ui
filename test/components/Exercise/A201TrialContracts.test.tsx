@@ -71,7 +71,12 @@ describe('A2.01 and A1 trial shared contracts', () => {
         onSelect={select}
       />,
     )
-    expect(screen.getByText('Tap a dot to explore')).toBeVisible()
+    // Switching the presentation preserves the selected target and its contextual callout.
+    expect(screen.getByRole('region', { name: 'music' })).toBeVisible()
+    expect(screen.getByRole('button', { name: 'music' })).toHaveAttribute(
+      'aria-expanded',
+      'true',
+    )
   })
   it('plays labeled targets once after selection for pointer and keyboard activation', async () => {
     vi.spyOn(HTMLElement.prototype, 'getBoundingClientRect').mockReturnValue(
@@ -117,7 +122,7 @@ describe('A2.01 and A1 trial shared contracts', () => {
     rerender(<SceneExplorer {...props} />)
     await user.click(screen.getByRole('button', { name: 'music' }))
     expect(select).toHaveBeenCalledTimes(3)
-    expect(play).toHaveBeenCalledTimes(2)
+    expect(play).toHaveBeenCalledTimes(3)
   })
   it('delegates video signal, hang-up and restart without changing the audio default', async () => {
     const user = userEvent.setup()

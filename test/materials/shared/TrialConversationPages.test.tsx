@@ -35,7 +35,6 @@ describe('separate TrialA1 conversation stages', () => {
       's3-independent',
       's4',
       's5',
-      's6',
       'next-steps',
     ])
   })

@@ -443,6 +443,7 @@ export function ReviewedLesson({
                   eyebrow={page.eyebrow}
                   instruction={page.instruction}
                   density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                  columns={page.kind === 'dialogue' ? 1 : undefined}
                   width={
                     page.kind === 'vocabulary' ||
                     page.kind === 'roleplay' ||

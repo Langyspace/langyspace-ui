@@ -222,7 +222,7 @@ function C101Content({ initialPageId }: C101LessonProps) {
                 label: 'Warm up · Giving and receiving feedback',
                 content: (
                   <SlidePage
-                    width="conversation"
+                    columns={1}
                     density="compact"
                     eyebrow="Warm up"
                     title={title}
@@ -265,6 +265,7 @@ function C101Content({ initialPageId }: C101LessonProps) {
                       />
                     ) : undefined
                   }
+                  columns={id === 's8' ? 1 : undefined}
                   width={
                     ['s4', 's8', 's9', 's11'].includes(id) ? 'expanded' : 'wide'
                   }

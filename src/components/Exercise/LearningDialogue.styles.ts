@@ -3,6 +3,8 @@ import { theme } from '../../foundations/theme/theme'
 import { resolveTheme } from '../../foundations/theme/resolveTheme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
+import { slideColumnWidth } from '../../foundations/layout/slideColumns'
 export const Dialogue = styled.div.withConfig({
   componentId: 'lsui-sc-learning-dialogue',
 })<{ $paired?: boolean }>`
@@ -10,6 +12,9 @@ export const Dialogue = styled.div.withConfig({
   flex-direction: column;
   gap: ${(p) => (p.$paired ? theme.spacing[2] : '6px')};
   min-width: 0;
+  width: 100%;
+  max-width: ${(p) => slideColumnWidth(resolveSlideTheme(p), 1)};
+  margin-inline: auto;
   font-family: ${theme.typography.fontFamily.sans};
   @container (max-width: ${theme.breakpoints.md}) {
     gap: ${theme.spacing[2]};
@@ -125,6 +130,9 @@ export const DialogueSection = styled.div`
   display: grid;
   gap: ${theme.spacing[3]};
   min-width: 0;
+  width: 100%;
+  max-width: ${(p) => slideColumnWidth(resolveSlideTheme(p), 1)};
+  margin-inline: auto;
 `
 export const GuidedText = styled.div`
   display: grid;

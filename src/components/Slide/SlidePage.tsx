@@ -16,11 +16,13 @@ export function SlidePage({
   coverPlacement = 'before-heading',
   layout = 'stacked',
   density = 'regular',
+  columns,
   width = 'wide',
   tone = 'default',
   children,
   ...props
 }: SlidePageProps) {
+  const contentColumns = questions ? 2 : columns
   const coverImage = cover ? (
     <Styled.Cover
       src={cover.src}
@@ -35,7 +37,9 @@ export function SlidePage({
       {lead ? <Styled.Lead>{lead}</Styled.Lead> : null}
       <Styled.Header
         $lead={Boolean(lead)}
-        $compact={density !== 'regular' || width === 'focused'}
+        $compact={
+          density !== 'regular' || contentColumns === 1 || width === 'focused'
+        }
       >
         <Styled.Heading>
           {eyebrow ? (
@@ -64,15 +68,17 @@ export function SlidePage({
     <Styled.Root {...props} $tone={tone}>
       <Styled.Content
         $width={questions ? 'expanded' : width}
+        $columns={contentColumns}
         $layout={layout}
         $cover={Boolean(cover)}
+        data-slide-columns={contentColumns}
       >
         {layout === 'split' ? (
           <div data-slide-introduction="true">{introduction}</div>
         ) : (
           introduction
         )}
-        <Styled.Body>
+        <Styled.Body $columns={contentColumns}>
           {questions ? (
             <Styled.Conversation data-guided-conversation="true">
               <Styled.ConversationText>{children}</Styled.ConversationText>
@@ -92,7 +98,7 @@ export function SlidePage({
               </Styled.Questions>
             </Styled.Conversation>
           ) : (
-            children
+            <Styled.Exercise>{children}</Styled.Exercise>
           )}
         </Styled.Body>
       </Styled.Content>

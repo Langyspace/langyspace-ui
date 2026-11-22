@@ -38,7 +38,7 @@ export function TrialA1Lesson({
                   label: content.p1.title,
                   content: (
                     <SlidePage
-                      width="conversation"
+                      columns={1}
                       density="compact"
                       eyebrow="Warm up"
                       title={content.p1.title}
@@ -81,7 +81,7 @@ export function TrialA1Lesson({
                   label: title,
                   content: (
                     <SlidePage
-                      width="focused"
+                      columns={1}
                       eyebrow="Conversation"
                       title={title}
                       instruction={
@@ -101,7 +101,7 @@ export function TrialA1Lesson({
                   label: content.p4.title,
                   content: (
                     <SlidePage
-                      width="expanded"
+                      columns={3}
                       density="compact"
                       eyebrow="Speaking"
                       title={content.p4.title}

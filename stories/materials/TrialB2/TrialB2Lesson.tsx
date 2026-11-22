@@ -73,7 +73,7 @@ export function TrialB2Lesson({ initialPageId }: TrialB2LessonProps) {
       vocabulary={{
         title: content.vocabulary.title,
         instruction: content.vocabulary.subtitle,
-        width: 'focused',
+        columns: 1,
         render: (active) => <Vocabulary active={active} />,
       }}
       dialogue={content.dialogue}

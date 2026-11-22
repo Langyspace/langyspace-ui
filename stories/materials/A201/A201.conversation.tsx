@@ -85,7 +85,6 @@ export function DialoguePage({
   const inDialogue = lines.some((line) => line.id === speech.playingId)
   return (
     <SlidePage
-      width="reading"
       density="compact"
       questions={questions}
       eyebrow="Guided conversation"

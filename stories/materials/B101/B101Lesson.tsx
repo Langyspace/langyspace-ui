@@ -247,7 +247,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         content: (
           <S.Page
             density="dense"
-            width="conversation"
+            columns={1}
             eyebrow="Your version"
             title={
               conversationSwapped
@@ -313,7 +313,7 @@ function B101LessonContent({ initialPageId }: B101LessonProps) {
         content: (
           <S.Page
             density="dense"
-            width="expanded"
+            columns={3}
             eyebrow="Review"
             title="Right or wrong?"
             instruction="Check each sentence and explain your corrections."

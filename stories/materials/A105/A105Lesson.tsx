@@ -61,7 +61,6 @@ export function A105Lesson({
       label: `Guided conversation · ${title}`,
       content: (
         <SlidePage
-          width="reading"
           density="compact"
           questions={
             <PromptExercise
@@ -109,7 +108,7 @@ export function A105Lesson({
       label: 'Vocabulary · Fruit',
       content: (
         <SlidePage
-          width="expanded"
+          columns={3}
           eyebrow="Vocabulary"
           title="Fruit"
           instruction="Look at the pictures. Guess the words."
@@ -129,7 +128,7 @@ export function A105Lesson({
       label: 'Vocabulary · Vegetables',
       content: (
         <SlidePage
-          width="expanded"
+          columns={3}
           eyebrow="Vocabulary"
           title="Vegetables"
           instruction="Look at the pictures. Guess the words."

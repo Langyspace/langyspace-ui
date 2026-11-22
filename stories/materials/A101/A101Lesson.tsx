@@ -62,7 +62,7 @@ function A101LessonContent({
         label: 'Vocabulary · Feelings',
         content: (
           <Styled.VocabularyPage
-            width="expanded"
+            columns={3}
             eyebrow="A1 LESSON 01"
             title="Feelings"
             instruction="Name each feeling, then click to check and listen"
@@ -85,7 +85,7 @@ function A101LessonContent({
         label: `Warm up · ${feeling ? 'Feelings' : 'Countries'} ${slot + 1}`,
         content: (
           <Styled.WarmupPage
-            width="expanded"
+            columns={1}
             eyebrow="Warm up"
             title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
             instruction="Choose the correct answer."
@@ -119,7 +119,7 @@ function A101LessonContent({
         label: 'Guided conversation · Nice to meet you',
         content: (
           <SlidePage
-            width="expanded"
+            columns={3}
             density="compact"
             questions={<DialogueQuestions />}
             eyebrow="Guided conversation"
@@ -184,7 +184,7 @@ function A101LessonContent({
         label: 'Grammar · Be: negatives and questions',
         content: (
           <SlidePage
-            width="wide"
+            columns={2}
             eyebrow="Grammar"
             title="Be: negatives and questions"
             instruction="See how be changes in negatives and questions"
@@ -244,7 +244,7 @@ function A101LessonContent({
         label: 'Practice · True for you',
         content: (
           <SlidePage
-            width="wide"
+            columns={2}
             eyebrow="Speaking"
             title="True for you?"
             instruction="Read each sentence. Change it if it is not true for you"
@@ -259,7 +259,7 @@ function A101LessonContent({
         label: 'Practice · Match questions and answers',
         content: (
           <SlidePage
-            width="wide"
+            columns={2}
             eyebrow="Practice"
             title="Match questions and answers"
             instruction="Find each pair, then read it aloud"
@@ -356,7 +356,7 @@ function A101LessonContent({
         label: `Conversation · ${id === 's15' ? 'Names and feelings' : id === 's151' ? 'People and places' : 'Pets and birthdays'}`,
         content: (
           <SlidePage
-            width="conversation"
+            columns={1}
             eyebrow="Conversation"
             title={
               id === 's15'

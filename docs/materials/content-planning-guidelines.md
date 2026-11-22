@@ -27,6 +27,8 @@ O prompt vigente está preservado literalmente em [prompts/langy-illustration-v1
 
 ## Componentes e layout
 
+**Grade compartilhada por componente — feedback72, 22/11/2026.** Declarar a extensão do exercício em `SlidePage.columns`, sem escolher uma largura diferente em cada página: uma coluna para diálogo/conteúdo individual (token focused, 600px), duas para composição pareada (wide, 1040px) e três para exercícios expandidos (introduction, 1120px). O cabeçalho e o corpo usam o mesmo contêiner e eixo; o número de cartões ou campos internos continua sendo definido pelo componente do exercício. `questions` seleciona duas colunas automaticamente. `LearningDialogue`, suas traduções, lacunas e ajudas mantêm o limite de uma coluna mesmo dentro de uma composição maior. Em telas estreitas, a composição com perguntas empilha e respeita a largura disponível. Presets `width` permanecem somente para compatibilidade e ajustes proporcionais de mídia; não criar novos presets, max-width local ou sobrescrever o contêiner por página para corrigir um diálogo. O exemplo de referência é Do you like the park? da experimental A1/A2.
+
 9. **UI Library revisada tem prioridade sobre o Claude.** Reutilizar o componente existente. Se necessário, acrescentar uma variação semântica ao dono canônico em src/components antes de adotar no material. Um padrão realmente novo nasce na biblioteca; não criar CSS de exercício exclusivo por aula.
 10. **Cabeçalho:** um título branco, um único subtítulo cinza e o tipo da atividade em vermelho. Space Grotesk apenas nos títulos; Montserrat no texto, perguntas, vocabulário e controles. Usar tokens do tema; o verde de conteúdo no tema escuro é o success foreground aprovado, #8FE2BB, sem mistura com o verde escuro do tema claro.
 11. **Planejar o estado aberto.** A página deve acomodar respostas, dicas e traduções, com espaços equilibrados, sem criar rolagem interna pequena ao revelar. Usar medidas proporcionais à área de apresentação, incluindo alturas de620–720px. Remover reservas e margens sem função. Se o conteúdo realmente não couber, reduzir ou separar a atividade; não cortar respostas, esconder o excesso ou reduzir a fonte a um tamanho ilegível.
@@ -238,7 +240,6 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 
 - Textos de balões de conversa, instruções curtas, dicas e modelos não terminam com ponto final. Preservar pontos internos, interrogações, exclamações e reticências usadas como espaço para completar a fala.
 - Fazer a edição no texto autorado. Não adicionar normalização, regex ou condição de pontuação ao renderizador. Quando a cópia de um diálogo gravado mudar somente nessa pontuação, alinhar o texto exibido de seu registro, preservando áudio, IDs, hashes e inputs originais de síntese.
-
 
 ## Expressões em níveis avançados — revisão71
 

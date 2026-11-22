@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { theme } from '../../../src/foundations/theme/theme'
 import { resolveSlideTheme } from '../../../src/foundations/theme/resolveSlideTheme'
+import { slidePairedTracks } from '../../../src/foundations/layout/slideColumns'
 export const Stage = styled.div`
   position: relative;
   height: 100dvh;
@@ -236,8 +237,8 @@ export const Explanation = styled(Surface)`
 `
 export const ConversationColumns = styled.div`
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: ${theme.spacing[5]};
+  grid-template-columns: ${(p) => slidePairedTracks(resolveSlideTheme(p))};
+  gap: ${theme.spacing[8]};
   align-items: center;
   @container (max-width:${theme.breakpoints.md}) {
     grid-template-columns: minmax(0, 1fr);

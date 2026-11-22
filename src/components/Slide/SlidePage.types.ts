@@ -1,5 +1,6 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 import type { SlideAudioActionProps } from './SlideAudioAction.types'
+import type { SlideColumns } from '../../foundations/layout/slideColumns'
 
 export interface SlidePageProps extends Omit<
   ComponentPropsWithRef<'div'>,
@@ -22,7 +23,14 @@ export interface SlidePageProps extends Omit<
   coverPlacement?: 'before-heading' | 'after-heading'
   /** Split introductions keep the lesson title and heading beside the exercise. Stacks on narrow screens. */
   layout?: 'stacked' | 'split'
-  /** The reference uses 600px for focused tasks, 760px for standard content and 1040px for wider exercises. */
+  /** Exercise span: one focused column, two for paired content, three for expanded exercises.
+   * Header and exercise share this grid. Questions always select two columns.
+   * Card/field counts within an exercise remain owned by that component.
+   */
+  columns?: SlideColumns
+  /** Legacy width presets remain compatible; prefer columns for exercise composition.
+   * A media ratio keeps a single scene/cover and its header fitted to the same bounds.
+   */
   width?:
     | 'focused'
     | 'standard'

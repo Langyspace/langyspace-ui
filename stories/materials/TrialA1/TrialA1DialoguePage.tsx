@@ -14,7 +14,7 @@ export function TrialA1DialoguePage({ active }: { active: boolean }) {
   )
   return (
     <SlidePage
-      width="focused"
+      columns={1}
       eyebrow="Dialogue"
       density="compact"
       title={

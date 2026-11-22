@@ -21,7 +21,8 @@ export interface TrialPreviewLessonProps {
   vocabulary: {
     title: string
     instruction: string
-    width: SlidePageProps['width']
+    columns?: SlidePageProps['columns']
+    width?: SlidePageProps['width']
     render: (active: boolean) => ReactNode
   }
   dialogue: TrialPreviewDialogue

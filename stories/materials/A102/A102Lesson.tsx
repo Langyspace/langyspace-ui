@@ -58,7 +58,7 @@ export function A102Lesson({
       label: `Listening · ${line.title}`,
       content: (
         <SlidePage
-          width="focused"
+          columns={1}
           eyebrow="Listening"
           title={line.title}
           instruction="Listen, then choose the correct answer."
@@ -87,7 +87,6 @@ export function A102Lesson({
       label: `Guided conversation · ${title}`,
       content: (
         <SlidePage
-          width="reading"
           density="compact"
           questions={
             <PromptExercise
@@ -165,7 +164,7 @@ export function A102Lesson({
       label: 'Vocabulary · The alphabet',
       content: (
         <SlidePage
-          width="wide"
+          columns={2}
           density="compact"
           eyebrow="Vocabulary"
           title="The alphabet"

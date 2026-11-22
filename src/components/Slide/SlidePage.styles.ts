@@ -1,6 +1,10 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { presentationMedia } from '../../foundations/layout/presentationMedia'
+import {
+  slideColumnWidth,
+  slidePairedTracks,
+} from '../../foundations/layout/slideColumns'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import type { SlidePageProps } from './SlidePage.types'
 
@@ -47,6 +51,7 @@ export const Content = styled.div<{
   $width: NonNullable<SlidePageProps['width']>
   $layout: NonNullable<SlidePageProps['layout']>
   $cover: boolean
+  $columns?: SlidePageProps['columns']
 }>`
   display: ${(p) => (p.$layout === 'split' ? 'grid' : 'flex')};
   flex-direction: column;
@@ -60,6 +65,7 @@ export const Content = styled.div<{
   min-width: 0;
   max-width: ${(p) => {
     const sizes = recipe(p)
+    if (p.$columns) return slideColumnWidth(sizes, p.$columns)
     if (p.$layout === 'split') return sizes.introductionWidth
     if (p.$width && typeof p.$width === 'object') {
       const ratio = p.$width.mediaAspectRatio
@@ -196,15 +202,24 @@ export const Tools = styled.div`
   min-width: 0;
 `
 
-export const Body = styled.div`
+export const Body = styled.div<{ $columns?: SlidePageProps['columns'] }>`
+  display: grid;
+  grid-template-columns: repeat(${(p) => p.$columns ?? 1}, minmax(0, 1fr));
   min-width: 0;
   overflow-wrap: anywhere;
 `
 
+/** The exercise owns its internal card/field grid and occupies its declared page span. */
+export const Exercise = styled.div`
+  grid-column: 1 / -1;
+  min-width: 0;
+`
+
 /** Dialogue and its comprehension stay together; neither column has an inner scrollbar. */
 export const Conversation = styled.div`
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  grid-template-columns: ${(p) => slidePairedTracks(recipe(p))};
   gap: ${theme.spacing[8]};
   align-items: start;
   min-width: 0;
