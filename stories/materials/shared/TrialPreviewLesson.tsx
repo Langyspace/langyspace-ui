@@ -12,6 +12,7 @@ import {
   withLessonOpeningPageIds,
 } from './lessonOpeningPolicy'
 import { characterPortrait } from './characterPortraits'
+import { TrialIntroduction } from './TrialIntroduction'
 import type {
   TrialPreviewLessonProps,
   TrialPreviewConversationProps,
@@ -89,11 +90,30 @@ export function TrialPreviewLesson({
   storageKey,
   title,
   level,
+  introduction,
   vocabulary,
   dialogue,
   recordings,
   freeConversationInstruction,
 }: TrialPreviewLessonProps) {
+  const introductionPage = introduction
+    ? {
+        id: 'introduce-yourself',
+        label: introduction.title,
+        content: (
+          <SlidePage
+            columns={1}
+            density="compact"
+            eyebrow="Conversation"
+            title={introduction.title}
+            instruction={introduction.instruction}
+          >
+            <TrialIntroduction prompts={introduction.prompts} />
+          </SlidePage>
+        ),
+      }
+    : undefined
+  const introductionPages = introductionPage ? [introductionPage] : []
   return (
     <MaterialTheme>
       <LessonShell
@@ -101,6 +121,7 @@ export function TrialPreviewLesson({
         materialKey={storageKey ?? materialKey}
         label={`${level} Trial · ${title}`}
         pageIds={withLessonOpeningPageIds(materialKey, [
+          ...introductionPages.map((page) => page.id),
           's2',
           's3',
           'free-conversation',
@@ -108,6 +129,7 @@ export function TrialPreviewLesson({
         ])}
         pages={(_, activeId) =>
           withLessonOpeningPages(materialKey, [
+            ...introductionPages,
             {
               id: 's2',
               label: vocabulary.title,

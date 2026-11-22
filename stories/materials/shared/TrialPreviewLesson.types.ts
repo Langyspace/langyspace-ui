@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import type { SlidePageProps } from '../../../src/components/Slide/SlidePage.types'
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
+import type { TrialIntroductionCopy } from './TrialIntroduction.types'
 export interface TrialPreviewDialogue {
   title: string
   subtitle: string
@@ -18,6 +19,7 @@ export interface TrialPreviewLessonProps {
   storageKey?: string
   title: string
   level: string
+  introduction?: TrialIntroductionCopy
   vocabulary: {
     title: string
     instruction: string

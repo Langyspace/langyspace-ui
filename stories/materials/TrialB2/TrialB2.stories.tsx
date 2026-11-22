@@ -9,6 +9,11 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
+export const Introduction: Story = {
+  name: 'Introduce yourself · C1/C2',
+  args: { initialPageId: 'introduce-yourself' },
+  tags: ['visual-review', 'layout-boundary'],
+}
 export const PictureTalk: Story = { args: { initialPageId: 's2' } }
 export const Dialogue: Story = { args: { initialPageId: 's3' } }
 export const WorkLocation: Story = { args: { initialPageId: 's41' } }

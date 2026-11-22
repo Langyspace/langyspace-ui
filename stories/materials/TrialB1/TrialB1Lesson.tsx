@@ -54,6 +54,7 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
       storageKey="trial-b1-a-trip-to-remember"
       title={content.title}
       level={content.level}
+      introduction={content.introduction}
       vocabulary={{
         title: content.scene.title,
         instruction: content.scene.subtitle,

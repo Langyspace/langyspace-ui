@@ -1,9 +1,16 @@
 {
-  "revision": "EXP-C1-C2-PARTIAL-REVIEW71",
+  "revision": "EXP-C1-C2-INTRODUCTIONS73",
   "title": "Work and life",
   "level": "C1 / C2",
-  "minutes": 16,
-  "reviewScope": ["cover", "s2", "s3", "free-conversation", "next-steps"],
+  "minutes": 19,
+  "reviewScope": [
+    "cover",
+    "introduce-yourself",
+    "s2",
+    "s3",
+    "free-conversation",
+    "next-steps"
+  ],
   "vocabulary": {
     "id": "s2",
     "title": "Work beyond the clock",
@@ -137,5 +144,33 @@
       }
     ]
   },
-  "freeConversationInstruction": "Discuss work-life boundaries with your teacher. Explore trade-offs and challenge each other’s assumptions"
+  "freeConversationInstruction": "Discuss work-life boundaries with your teacher. Explore trade-offs and challenge each other’s assumptions",
+  "introduction": {
+    "title": "Introduce yourself",
+    "instruction": "Have a relaxed chat with your teacher. Share a little about yourself and get to know each other",
+    "prompts": [
+      {
+        "id": "your-day",
+        "introduceTeacher": true,
+        "question": "Good to meet you! How’s your day going?",
+        "cue": "Introduce yourself, share a small detail about your day and ask back",
+        "hint": "“Pretty good, thanks” / “Not bad” / “It’s been a bit of a day”. Add one real detail, then ask back",
+        "model": "Hi, I’m … Not bad, thanks — I’ve just … How’s your day been?"
+      },
+      {
+        "id": "these-days",
+        "question": "So, what keeps you busy these days?",
+        "cue": "Share a little about your life at the moment and keep the chat going",
+        "hint": "“I’m based in…” / “Lately, I’ve been…”. One or two details are enough; use “How about you?”",
+        "model": "I’m based in …, and lately I’ve been … That’s been keeping me busy. How about you?"
+      },
+      {
+        "id": "time-to-yourself",
+        "question": "And when you get a bit of time to yourself, what do you get up to?",
+        "cue": "Talk about an interest and invite your teacher to share hers",
+        "hint": "“I’ve been getting into…” / “I’m a bit of a…”. Pick what sounds like you; ask a genuine follow-up",
+        "model": "I’ve been getting into … lately. How about you — anything you’ve been enjoying?"
+      }
+    ]
+  }
 }

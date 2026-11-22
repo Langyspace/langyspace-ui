@@ -1,10 +1,12 @@
 import type { SceneHotspot } from '../../../src/components/InteractiveMaterial/SceneExplorer.types'
+import type { TrialIntroductionCopy } from '../shared/TrialIntroduction.types'
 export interface TrialB1Content {
   revision: string
   title: string
   level: string
   minutes: number
   reviewScope: readonly string[]
+  introduction: TrialIntroductionCopy
   scene: {
     id: string
     title: string

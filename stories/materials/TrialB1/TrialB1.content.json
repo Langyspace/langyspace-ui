@@ -1,9 +1,16 @@
 {
-  "revision": "EXP-B1-B2-PARTIAL-REVIEW70",
+  "revision": "EXP-B1-B2-INTRODUCTIONS73",
   "title": "A trip to remember",
   "level": "B1 / B2",
-  "minutes": 16,
-  "reviewScope": ["cover", "s2", "s3", "free-conversation", "next-steps"],
+  "minutes": 19,
+  "reviewScope": [
+    "cover",
+    "introduce-yourself",
+    "s2",
+    "s3",
+    "free-conversation",
+    "next-steps"
+  ],
   "scene": {
     "id": "s2",
     "title": "On the road",
@@ -33,10 +40,10 @@
         "label": "a suitcase",
         "example": "I packed one suitcase",
         "audioText": "a suitcase. I packed one suitcase",
-        "xPercent": 93.0,
+        "xPercent": 93,
         "yPercent": 69.3,
         "targetBounds": {
-          "xPercent": 88.0,
+          "xPercent": 88,
           "yPercent": 48,
           "widthPercent": 10,
           "heightPercent": 40
@@ -94,7 +101,7 @@
         "example": "We have a spare tire in the trunk",
         "audioText": "a spare tire. We have a spare tire in the trunk",
         "xPercent": 80.8,
-        "yPercent": 76.0,
+        "yPercent": 76,
         "targetBounds": {
           "xPercent": 74.5,
           "yPercent": 61,
@@ -176,5 +183,33 @@
       }
     ]
   },
-  "freeConversationInstruction": "Talk freely with your teacher in English about trips, days out and changes of plan"
+  "freeConversationInstruction": "Talk freely with your teacher in English about trips, days out and changes of plan",
+  "introduction": {
+    "title": "Introduce yourself",
+    "instruction": "Get to know your teacher. Share a little about yourself and ask back",
+    "prompts": [
+      {
+        "id": "about-you",
+        "introduceTeacher": true,
+        "question": "Nice to meet you! Tell me a little about yourself",
+        "cue": "Introduce yourself, share one detail and ask your teacher about herself",
+        "hint": "Try “I’m from…” or “I’m based in…”. Add one detail, then ask “How about you?”",
+        "model": "Hi, I’m … I’m from …, and I’m currently … How about you?"
+      },
+      {
+        "id": "interests",
+        "question": "What do you enjoy doing in your free time?",
+        "cue": "Talk about one interest and ask your teacher what she enjoys",
+        "hint": "Try “I enjoy…” or “I’m really into…”. React to your teacher’s answer and ask a follow-up",
+        "model": "I’m really into … at the moment. How about you — what do you enjoy doing?"
+      },
+      {
+        "id": "english-goal",
+        "question": "What would you like to feel more confident doing in English?",
+        "cue": "Share one goal and ask your teacher for her perspective",
+        "hint": "Try “I’d like to get better at…” or “I’d love to feel more comfortable…”",
+        "model": "I’d like to feel more comfortable … What would you suggest I focus on?"
+      }
+    ]
+  }
 }

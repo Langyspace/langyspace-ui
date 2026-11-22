@@ -70,13 +70,23 @@ afterEach(() => {
 const page = (container: HTMLElement, id: string) =>
   within(container.querySelector<HTMLElement>(`[data-slide-id="${id}"]`)!)
 
-it('renders exactly the five requested pages with a C1/C2 cover and unchanged trial closing', () => {
+it('places informal mutual introductions after the C1/C2 cover and preserves the remaining pages', () => {
   const view = render(<TrialB2Lesson />)
   expect(
     Array.from(view.container.querySelectorAll('[data-slide-id]'), (node) =>
       node.getAttribute('data-slide-id'),
     ),
-  ).toEqual(['cover', 's2', 's3', 'free-conversation', 'next-steps'])
+  ).toEqual([
+    'cover',
+    'introduce-yourself',
+    's2',
+    's3',
+    'free-conversation',
+    'next-steps',
+  ])
+  expect(
+    page(view.container, 'introduce-yourself').getByText('Introduce yourself'),
+  ).toBeInTheDocument()
   expect(
     page(view.container, 'cover').getByText('C1 / C2 · Trial lesson'),
   ).toBeVisible()

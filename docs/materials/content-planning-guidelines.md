@@ -1,7 +1,7 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
-Atualizada em21/11/2026 a partir dos feedbacks de A1.01, A2.01, A1.05 e A1.02. A revisão final de uso, áudio e visual pertence à dona do curso.
+Atualizada em 22/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Planejamento pedagógico
 
@@ -16,6 +16,8 @@ Atualizada em21/11/2026 a partir dos feedbacks de A1.01, A2.01, A1.05 e A1.02. A
 **Plano escrito como prévia de tela.** Para revisão da dona do curso, descrever cada página de forma curta: título literal, subtítulo literal, o que aparece e onde, controles visíveis e clique → resultado, incluindo áudio quando houver. Mostrar o estado inicial e o conteúdo revelado junto da ação correspondente. Manter as falas e transcrições exatas na própria atividade, sem repetir a descrição da composição; deixar IDs, proveniência, parâmetros técnicos e notas longas fora da leitura principal. O plano deve permitir imaginar a tela e percorrer seus cliques sem precisar interpretar código ou ler justificativas extensas.
 
 **Tabelas e explicações de gramática ficam no meio da aula.** Começar pelo vocabulário visual e pelas primeiras atividades de compreensão e prática; só depois organizar as expressões em tabela ou apresentar uma explicação gramatical. Não colocar a tabela logo depois do vocabulário ou da primeira conversa. Escolher a posição pelo percurso da aula, sem impor uma página numérica fixa a todos os materiais. No plano B1/B2, a sequência fica capa → vocabulário visual → diálogo → prática pessoal → tabela de expressões → roleplay. Páginas de gramática continuam separadas de quizzes.
+
+**Apresentação mútua nas experimentais — feedback73, 22/11/2026.** Depois da capa e antes do vocabulário, reservar uma conversa para aluna e professora se conhecerem, inclusive nos níveis avançados. A professora se apresenta e responde às perguntas devolvidas pela aluna; não usar dados biográficos fictícios como se fossem dela. Usar a identificação real da sessão e o fallback já definido. No B1/B2, oferecer variações para falar de si, interesses e objetivos. No C1/C2, começar com small talk informal e apoiar reação, detalhe pessoal e pergunta de volta, sem exigir gírias ou acumular expressões em toda fala. Mostrar intenções da aluna e liberar dicas/modelos opcionais nos ícones inferiores em ordem. A apresentação é interação real, sem gabarito, som de acerto ou gravações fictícias. Reutilizar os mesmos balões e a coluna única canônica; manter o vocabulário logo em seguida e a conversa livre na penúltima posição.
 
 ## Imagens e identidade
 

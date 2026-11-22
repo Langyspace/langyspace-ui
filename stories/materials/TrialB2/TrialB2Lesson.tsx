@@ -70,6 +70,7 @@ export function TrialB2Lesson({ initialPageId }: TrialB2LessonProps) {
       storageKey="Langy Trial B2 Work and life"
       title={content.title}
       level={content.level}
+      introduction={content.introduction}
       vocabulary={{
         title: content.vocabulary.title,
         instruction: content.vocabulary.subtitle,

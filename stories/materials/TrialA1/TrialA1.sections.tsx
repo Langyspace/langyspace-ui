@@ -1,4 +1,4 @@
-import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
+import { TrialIntroduction } from '../shared/TrialIntroduction'
 import { PromptExercise } from '../shared/LessonExercises'
 import { useState } from 'react'
 import { conversationRecordings } from '../shared/conversationRecordings'
@@ -12,14 +12,6 @@ import { content, pictures } from './TrialA1.data'
 import * as S from '../shared/Lesson.styles'
 import * as T from './TrialA1.styles'
 export function GreetingSection() {
-  const teacher = useMaterialTeacher()
-  const firstName =
-    teacher.name === 'Your teacher'
-      ? teacher.name
-      : teacher.name.trim().split(/\s+/u)[0]!
-  const [translated, setTranslated] = useState<string[]>([])
-  const [hintedLineIds, setHintedLineIds] = useState<string[]>([])
-  const [revealedLineIds, setRevealedLineIds] = useState<string[]>([])
   const cues = [
     'Say your name',
     'Say your city or country',
@@ -31,43 +23,15 @@ export function GreetingSection() {
     'Diga como está e pergunte de volta',
   ]
   return (
-    <LearningDialogue
-      density="compact"
-      sequentialGuidance={{
-        hintedLineIds,
-        revealedLineIds,
-        onRevealHint: (id) =>
-          setHintedLineIds((old) =>
-            id ? (old.includes(id) ? old : [...old, id]) : [],
-          ),
-        onRevealModel: (id) =>
-          setRevealedLineIds((old) =>
-            id ? (old.includes(id) ? old : [...old, id]) : [],
-          ),
-      }}
-      translatedIds={translated}
-      onTranslate={(id) => setTranslated((old) => toggleId(old, id))}
-      lines={content.p1.cards.flatMap((question, index) => [
-        {
-          id: `greeting-${index}-teacher`,
-          speaker: firstName,
-          initials: firstName.slice(0, 1),
-          avatarUrl: teacher.avatarUrl,
-          side: 'start' as const,
-          content: question.q,
-          translation: question.pt,
-        },
-        {
-          id: `greeting-${index}-learner`,
-          speaker: 'You',
-          participant: 'learner' as const,
-          side: 'end' as const,
-          guidanceLabel: question.q,
-          cue: cues[index],
-          hint: hints[index],
-          content: question.a,
-        },
-      ])}
+    <TrialIntroduction
+      prompts={content.p1.cards.map((question, index) => ({
+        id: `greeting-${index}`,
+        question: question.q,
+        translation: question.pt,
+        cue: cues[index]!,
+        hint: hints[index]!,
+        model: question.a,
+      }))}
     />
   )
 }
