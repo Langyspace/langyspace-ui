@@ -108,7 +108,7 @@ export function InfluencerRoutineLesson({
           eyebrow="A2 / B1 · Extra lesson"
           title={source.title}
           instruction={source.instruction}
-          cover={{ src: cover, alt: 'Ana starting her morning at home' }}
+          cover={{ src: cover, alt: 'Ana recording routine content at home' }}
           coverPlacement="after-heading"
           width={{ mediaAspectRatio: 16 / 9 }}
         />

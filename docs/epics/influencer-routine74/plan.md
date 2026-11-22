@@ -10,7 +10,7 @@ Quatro blocos: manhã → se arrumar para academia → treino → skincare/sono.
 
 Texto integral: [InfluencerRoutine.content.json](../../../stories/materials/InfluencerRoutine/InfluencerRoutine.content.json). Sequência de18 páginas: capa; morning scene/dialogue/personal; ready scene/dialogue/personal; grammar; gym scene/dialogue/personal; night scene/dialogue/personal; WhatsApp; reply; free-conversation; homework.
 
-A gramática fica no meio, sem quiz. A amiga Kim envia uma mensagem escrita e um áudio antes de dormir; a transcrição abre na terceira escuta. Penúltima página usa o MeetingFrame canônico. Última página usa o plano de prática em celular, sem links inventados. A capa reutiliza a cena da manhã: exatamente quatro cenas novas.
+A gramática fica no meio, sem quiz. A amiga Kim envia uma mensagem escrita e um áudio antes de dormir; a transcrição abre na terceira escuta. Penúltima página usa o MeetingFrame canônico. Última página usa o plano de prática em celular, sem links inventados. A capa tem ilustração própria desde o feedback75, para não se confundir com a segunda página. As quatro cenas dos exercícios continuam preservadas.
 
 ## Componentes e contratos
 
