@@ -40,6 +40,8 @@ A apresentação opcional `tracker` de `RolePlayExercise` mantém a cena sem pai
 
 ## SceneExplorer
 
+`onDismiss` optionally adds an explicit close action to the selected callout. Use it in dense scenes where a small-screen callout can cover its own hotspot. The controlled consumer clears `selectedId`; an uncontrolled scene clears its local selection. Closing returns focus to the selected marker and does not play audio. Omit the callback to preserve the existing presentation. The influencer-routine MorningScene story demonstrates this variation.
+
 Imagem com hotspots em coordenadas percentuais. Cada hotspot tem `id`, posição, rótulo, pergunta e resposta opcional. `selectedId`, `visitedIds` e `answerVisible` controlam seleção, progresso e apoio. `onSelect(id)` pode também acionar o áudio do objeto no consumidor. Os hotspots são botões com nome acessível e equivalente de teclado.
 
 `presentation="labels"` mostra as palavras sobre a imagem e mantém a marca visual dos itens visitados, sem o painel de respostas do modo exploratório. O rótulo de áudio recebe `labels.play`. Posição, fala e estado continuam fornecidos pelo consumidor; a apresentação padrão permanece `explore`.

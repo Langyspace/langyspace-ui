@@ -31,6 +31,8 @@ export interface SceneExplorerProps extends Omit<
   selectedId?: string
   visitedIds: readonly string[]
   onSelect: (id: string) => void
+  /** Optional explicit close action for dense scenes and small-screen callouts. */
+  onDismiss?: () => void
   /** Consumer owns playback and recording selection. No speech synthesis fallback. */
   onPlayHotspot?: (id: string) => void
   playingId?: string

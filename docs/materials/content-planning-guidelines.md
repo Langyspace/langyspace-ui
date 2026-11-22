@@ -3,6 +3,12 @@
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 Atualizada em 22/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
+## Rotina personalizada — feedback74
+
+- Organizar cada momento da rotina como cena contextual → conversa guiada com compreensão → conversa sobre a rotina real da aluna. Na aula extra da influencer, os quatro momentos aprovados são manhã, preparação para academia, treino e skincare/sono; essa quantidade não é uma regra para outros temas.
+- As pistas pessoais dizem o que comunicar; a lâmpada fornece começos de frase em ordem, sem inventar respostas sobre a aluna. Incluir perguntas que ela mesma formula à professora. Roupas, maquiagem, skincare e exercício são escolhas pessoais, com alternativas válidas para quem não faz aquela atividade.
+- Em uma cena única, objetos podem servir de pistas para hábitos associados. Não representar seis cópias da personagem fazendo tudo ao mesmo tempo, nem atribuir uma ação a um ponto sem relação visual. A rotina do modelo não cria biografia fixa para a personagem ou para a pessoa real.
+
 ## Planejamento pedagógico
 
 1. **Uma aula resolve uma situação de comunicação.** Definir a ação que a aluna conseguirá realizar, o nível e uma sequência de50minutos conduzida pela professora por compartilhamento de tela. Toda página tem um objetivo identificável e contribui para essa ação.

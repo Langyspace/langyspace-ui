@@ -1,5 +1,10 @@
 import { lazy } from 'react'
 import type { MaterialViewProps } from './MaterialApp.types'
+const InfluencerRoutine = lazy(() =>
+  import('../InfluencerRoutine/InfluencerRoutineLesson').then((m) => ({
+    default: m.InfluencerRoutineLesson,
+  })),
+)
 const A101 = lazy(() =>
   import('../A101/A101Lesson').then((m) => ({ default: m.A101Lesson })),
 )
@@ -54,6 +59,7 @@ export function MaterialView({
   materialKey,
   studentPortalOrigin,
 }: MaterialViewProps) {
+  if (materialKey === 'extra-influencer-routine') return <InfluencerRoutine />
   if (materialKey === 'trial-b1') return <TrialB1 />
   if (materialKey === 'trial-b2') return <TrialB2 />
   if (materialKey === 'tema-frontend')

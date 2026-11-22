@@ -11,6 +11,7 @@ import type {
 const materials: readonly MaterialCatalogEntry[] = entries
 const levels = [...new Set(materials.map((entry) => entry.level)), 'EXTRA']
 const lessonStories = import.meta.glob([
+  '../InfluencerRoutine/InfluencerRoutine.stories.tsx',
   '../A10*/A10*.stories.tsx',
   '../A201/A201.stories.tsx',
   '../B101/B101.stories.tsx',

@@ -1,4 +1,5 @@
 export type MaterialKey =
+  | 'extra-influencer-routine'
   | 'a1-01'
   | 'a1-02'
   | 'a1-03'
