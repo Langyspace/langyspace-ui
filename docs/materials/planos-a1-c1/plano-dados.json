@@ -1,0 +1,2536 @@
+{
+  "version": 77,
+  "date": "2026-11-23",
+  "status": "proposed",
+  "lessonsPerLevel": 12,
+  "lessons": [
+    {
+      "code": "A1.01",
+      "title": "Introduce yourself",
+      "objective": "Apresentar-se, dizer de onde é e como está e iniciar a mesma troca com outra pessoa",
+      "review": "Primeira aula: apenas capa, sem revisão inventada",
+      "visual": "Uma cena de chegada a um encontro, com pessoas se cumprimentando; países em bandeiras separadas e sentimentos em expressões legíveis",
+      "vocabulary": [
+        "Brazil",
+        "South Korea",
+        "the United States",
+        "happy",
+        "tired",
+        "hungry"
+      ],
+      "guided": "Ana e Kim se conhecem: nome, origem, como estão e uma reação natural; seis falas, retratos e áudio existentes quando compatíveis",
+      "grammar": "I’m / You’re + nome, origem ou estado; distinguir I’m Ana de My name is Ana sem uma tabela longa de todas as pessoas",
+      "questions": [
+        {
+          "question": "What’s your name?",
+          "cue": "Introduce yourself and ask your teacher’s name",
+          "hint": "My name is … What’s your name?"
+        },
+        {
+          "question": "Where are you from?",
+          "cue": "Say your city or country and ask back",
+          "hint": "I’m from … What about you?"
+        }
+      ],
+      "mission": "Meet someone new",
+      "missionVisual": "Dois cartões de pessoas com nome, país e sentimento; um cartão de cada vez, com todos os fatos visíveis",
+      "missionAction": "A aluna escolhe um cartão e inicia uma apresentação com a professora; depois conversa usando seus próprios dados",
+      "missionClick": "Trocar pessoa muda os três fatos do cartão, sem apagar a conversa anterior nem exigir adivinhar uma identidade",
+      "listening": "Uma mensagem de Kim apresentando uma pessoa; ouvir para descobrir o nome e a origem e depois cumprimentá-la",
+      "listenQuestion": {
+        "question": "Where is Kim’s friend from?",
+        "cue": "Use the place you hear in the message",
+        "hint": "Kim’s friend is from …"
+      },
+      "free": "Get to know each other: introduce yourself, ask about your teacher and react to her answers",
+      "homework": "Gravar uma apresentação curta com nome, origem e como está; ouvir o diálogo novamente e recuperar duas perguntas sem ler",
+      "change": "Substituir bateria de identificações e perguntas soltas por uma apresentação que a aluna inicia; países e sentimentos servem à conversa"
+    },
+    {
+      "code": "A1.02",
+      "title": "Your name and number",
+      "objective": "Ditar, soletrar, confirmar e corrigir nome e telefone em uma troca de contato",
+      "review": "Recuperar nome e origem da A1.01 em dois balões",
+      "visual": "Cartão de contato nativo com nome e telefone; dez algarismos no início e alfabeto completo em uma consulta própria",
+      "vocabulary": [
+        "zero",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine"
+      ],
+      "guided": "Ana e Kim salvam um contato e confirmam o sobrenome e os dígitos; preservar as seis falas válidas e as correções de áudio já feitas",
+      "grammar": "My name / your name e What’s your …? para pedir e dar dados; manter a soletração como recurso de comunicação, não como regra de gramática",
+      "questions": [
+        {
+          "question": "What’s your last name?",
+          "cue": "Say and spell your last name",
+          "hint": "My last name is … That’s …"
+        },
+        {
+          "question": "Is that the right number?",
+          "cue": "Confirm or correct the number you heard",
+          "hint": "Yes, that’s right / No, sorry, it’s …"
+        }
+      ],
+      "mission": "Save my contact",
+      "missionVisual": "Cena de recepção à esquerda e formulário dentro do monitor à direita, com nome, sobrenome e telefone",
+      "missionAction": "A professora digita exatamente o que ouve; a aluna confere e corrige. Antes, atende a chamada de Kim; depois, ela liga para perguntar",
+      "missionClick": "Atender inicia a fala; repetir e avançar são ícones dentro do telefone. Cada nova situação muda um dado, sem repetir três formulários iguais",
+      "listening": "Ligação com uma confirmação incorreta de nome ou número; a aluna identifica e corrige apenas o dado que mudou",
+      "listenQuestion": {
+        "question": "Is the last name right?",
+        "cue": "Confirm the spelling or say the correct letters",
+        "hint": "No, sorry, it’s …"
+      },
+      "free": "Exchange contact details, ask your own questions and check what you hear",
+      "homework": "Gravar um contato fictício com nome soletrado e telefone e recuperar as expressões de confirmação; não pedir dados pessoais reais",
+      "change": "Preservar o alfabeto de consulta e os áudios corrigidos; tirar treino repetitivo sem finalidade e tornar a conferência dos dados a tarefa principal"
+    },
+    {
+      "code": "A1.03",
+      "title": "People in my life",
+      "objective": "Apresentar uma pessoa e um grupo, explicando relação, profissão e origem quando essas informações forem conhecidas",
+      "review": "Recuperar nome e soletração da A1.02",
+      "visual": "A cena aprovada da família de Ana, com Kim identificada como amiga e um conector entre pai e mãe para parents",
+      "vocabulary": [
+        "mother",
+        "father",
+        "parents",
+        "brother",
+        "sister",
+        "friend",
+        "a student",
+        "a doctor",
+        "a cook"
+      ],
+      "guided": "Ana apresenta Leo, Bia ou os pais a Kim; seis falas com fatos visíveis, nome e retrato canônicos; profissões entram como apoio contextual",
+      "grammar": "This is / These are; He’s / She’s / They’re; exemplos completos com sujeito e verbo, sem misturar artigos na coluna do verbo",
+      "questions": [
+        {
+          "question": "Who’s this?",
+          "cue": "Introduce someone and explain your relationship",
+          "hint": "This is my … His/Her name is …"
+        },
+        {
+          "question": "What’s this person’s job?",
+          "cue": "Say the person’s job if you know it",
+          "hint": "He’s/She’s a … / I’m not sure"
+        }
+      ],
+      "mission": "Introduce Ana’s family",
+      "missionVisual": "Cena da família e uma ficha de tamanho estável com três fatos: nome ou relação, profissão e cidade; usar apenas fatos estabelecidos",
+      "missionAction": "Escolher uma pessoa e apresentá-la, depois mostrar uma foto própria ou escolher a foto de exemplo e perguntar sobre a pessoa da professora",
+      "missionClick": "Selecionar muda a ficha; a lâmpada revela um começo de frase. Dados desconhecidos aparecem como não informados, sem inventar profissão ou idade",
+      "listening": "Foto enviada por Kim e áudio sobre Jin e Tom, usando a imagem e os fatos já revisados",
+      "listenQuestion": {
+        "question": "Who is Jin?",
+        "cue": "Explain Jin’s relationship to Kim",
+        "hint": "Jin is Kim’s …"
+      },
+      "free": "Talk about people who matter to you and ask about someone in your teacher’s life",
+      "homework": "Preparar a apresentação de uma pessoa e de um grupo; pode usar personagens ou fotos de exemplo",
+      "change": "Manter a cena contextual e substituir perguntas tautológicas ou adivinhações sem fonte por apresentações baseadas em fatos acessíveis"
+    },
+    {
+      "code": "A1.04",
+      "title": "My day and our time",
+      "objective": "Descrever hábitos simples com horário e combinar um momento para uma atividade",
+      "review": "Retomar uma pessoa da A1.03 e dizer uma coisa conhecida sobre ela",
+      "visual": "Três momentos de uma rotina em cenas de manhã, tarde e noite; um calendário nativo separado para dias e disponibilidade",
+      "vocabulary": [
+        "wake up",
+        "have breakfast",
+        "work",
+        "study",
+        "go to the gym",
+        "go to bed"
+      ],
+      "guided": "Ana e Kim comparam a rotina e procuram um horário para se encontrar; seis falas com ações e horários legíveis",
+      "grammar": "I + verbo; at + horário, on + dia e in the morning/afternoon/evening, com os três períodos presentes",
+      "questions": [
+        {
+          "question": "What do you do in the morning?",
+          "cue": "Describe two real morning activities",
+          "hint": "I … and then I …"
+        },
+        {
+          "question": "When are you free?",
+          "cue": "Suggest a day and a time, then ask your teacher",
+          "hint": "I’m free on … at … Are you free then?"
+        }
+      ],
+      "mission": "Find a time",
+      "missionVisual": "Calendário de uma semana com alguns compromissos e uma atividade a combinar; mostrar apenas os horários necessários",
+      "missionAction": "A aluna propõe um horário, responde a uma indisponibilidade e chega a outro acordo com a professora",
+      "missionClick": "Ver outro compromisso revela uma indisponibilidade escrita; a aluna ajusta o plano, sem preencher uma agenda inteira",
+      "listening": "Kim manda um recado mudando dia ou horário do encontro; a aluna confirma o plano atualizado",
+      "listenQuestion": {
+        "question": "What time is the meeting now?",
+        "cue": "Say the updated time from the message",
+        "hint": "It’s at …"
+      },
+      "free": "Compare your routines, talk about your free time and make a simple plan together",
+      "homework": "Descrever manhã, tarde e noite com um horário e preparar um convite para a próxima aula",
+      "change": "Separar calendário de rotina, recuperar afternoon e substituir números avulsos por horários que têm função na combinação"
+    },
+    {
+      "code": "A1.05",
+      "title": "At the street market",
+      "objective": "Dizer do que gosta, perguntar gostos e comprar frutas considerando preços e escolhas reais",
+      "review": "Retomar um hábito e um horário da A1.04",
+      "visual": "Frutas e vegetais isolados com fundo transparente; uma banca ou lista de compras com preços em dólares na missão",
+      "vocabulary": [
+        "banana",
+        "apple",
+        "orange",
+        "mango",
+        "pineapple",
+        "watermelon"
+      ],
+      "guided": "Ana e Kim conversam sobre gostos e preços; manter o diálogo revisado de seis falas e usar os vegetais como expansão útil, sem exigir decorar doze itens de uma vez",
+      "grammar": "I like / I don’t like; Do you like …?; She likes / She doesn’t like com exemplos de preferências, sem confundir gostar com preferir",
+      "questions": [
+        {
+          "question": "Do you like mangoes?",
+          "cue": "Give your real answer and ask back",
+          "hint": "Yes, I do / No, I don’t. What about you?"
+        },
+        {
+          "question": "What fruit does your friend like?",
+          "cue": "Talk about a preference you actually know",
+          "hint": "My friend likes … / I’m not sure"
+        }
+      ],
+      "mission": "Let’s buy some fruit",
+      "missionVisual": "Quatro frutas, preços legíveis e balões que orientam a perguntar sobre uma fruta, escolher e perguntar o preço",
+      "missionAction": "A aluna escolhe livremente duas frutas e pergunta o preço; a professora responde com os dados da banca e pergunta sobre os gostos da aluna",
+      "missionClick": "A lâmpada libera os começos de frase em ordem. Trocar uma fruta muda a opção disponível, mantendo preços e exemplos coerentes",
+      "listening": "Uma amiga envia um pedido de compra com uma preferência e um item que não quer; a aluna monta o pedido a partir do que ouviu",
+      "listenQuestion": {
+        "question": "What fruit does she want?",
+        "cue": "Say the fruit requested in the message",
+        "hint": "She wants …"
+      },
+      "free": "Talk about food you enjoy, ask about your teacher’s tastes and plan a small shopping trip",
+      "homework": "Apresentar uma pequena compra e dizer o que outra pessoa gosta; recuperar as expressões de preço",
+      "change": "Preservar os recortes e os balões aprovados; remover identificações repetidas e pares de pronúncia sem dificuldade real"
+    },
+    {
+      "code": "A1.06",
+      "title": "My home and my pet",
+      "objective": "Apresentar um animal, dizer onde está e explicar cuidados simples usando fatos visíveis",
+      "review": "Retomar gostos com like da A1.05",
+      "visual": "Animais isolados no vocabulário e uma cena de casa para posições; relações espaciais aparecem na cena, não em retratos desconectados",
+      "vocabulary": [
+        "dog",
+        "cat",
+        "fish",
+        "bird",
+        "rabbit",
+        "turtle"
+      ],
+      "guided": "Kim conhece os animais de Ana e pergunta nome, características e lugar; seis falas, com have/has e gostos retomados",
+      "grammar": "I have / She has; his / her; Where’s …? com in, on, under e next to como apoio visual",
+      "questions": [
+        {
+          "question": "Do you have a pet?",
+          "cue": "Answer about a pet or choose the example animal",
+          "hint": "I have … / I don’t have a pet, but …"
+        },
+        {
+          "question": "Where does your pet sleep?",
+          "cue": "Say where it sleeps or use the example scene",
+          "hint": "It sleeps …"
+        }
+      ],
+      "mission": "Help me find Mia",
+      "missionVisual": "Uma sala com cama, sofá, mesa e os animais; cada posição precisa estar inequívoca",
+      "missionAction": "A aluna localiza um animal, descreve onde está e explica à professora onde ficam comida e cama em uma pequena tarefa de cuidado",
+      "missionClick": "Mudar a cena altera apenas a posição do animal; a aluna refaz a orientação, com dica opcional no balão",
+      "listening": "Recado com localização e uma informação de cuidado; a aluna diz o que entendeu sem virar um exercício de memorizar listas",
+      "listenQuestion": {
+        "question": "Where is the cat?",
+        "cue": "Describe the place mentioned in the message",
+        "hint": "The cat is …"
+      },
+      "free": "Talk about animals and homes, using a real pet or an example, and ask your teacher questions",
+      "homework": "Descrever um animal e onde ele fica; quem não tem animal usa a imagem da aula",
+      "change": "Manter objetos e animais transparentes, mas usar contexto para posição e uma alternativa legítima para quem não tem pet"
+    },
+    {
+      "code": "A1.07",
+      "title": "At the airport",
+      "objective": "Entender perguntas previsíveis de chegada e confirmar destino, duração e hospedagem",
+      "review": "Recuperar nome, soletração e números da A1.02 em uma situação de viagem",
+      "visual": "Cena simples de aeroporto com objetos apontáveis e um cartão de viagem fictício com destino, hotel e número de dias",
+      "vocabulary": [
+        "passport",
+        "suitcase",
+        "plane",
+        "taxi",
+        "bus",
+        "gate"
+      ],
+      "guided": "Uma viajante e um atendente confirmam dados de chegada; seis falas curtas, sem introduzir uma lista extensa de perguntas formais",
+      "grammar": "What / Where / How long em perguntas úteis; respostas curtas completas para os dados do cartão e números retomados em contexto",
+      "questions": [
+        {
+          "question": "Where are you staying?",
+          "cue": "Use the hotel shown on your travel card",
+          "hint": "I’m staying at …"
+        },
+        {
+          "question": "How long are you staying?",
+          "cue": "Say the number of days and ask the next travel question",
+          "hint": "For … days"
+        }
+      ],
+      "mission": "You’ve arrived",
+      "missionVisual": "Cartão de viagem e sinalização com dois pontos do aeroporto; todos os dados necessários estão visíveis",
+      "missionAction": "A professora atende e a aluna responde, corrige um número entendido errado e explica ao motorista para onde vai",
+      "missionClick": "Trocar cartão muda hotel e duração; a lâmpada ajuda a formular a resposta, sem transformar o cartão em teste de memória",
+      "listening": "Aviso curto com portão ou ponto de encontro, seguido de uma confirmação oral da aluna",
+      "listenQuestion": {
+        "question": "Where do you need to go?",
+        "cue": "Say the gate or meeting point you heard",
+        "hint": "I need to go to …"
+      },
+      "free": "Talk about arriving in a new place, ask travel questions and practise checking details",
+      "homework": "Gravar respostas para um cartão fictício de viagem e recuperar as perguntas sem ler",
+      "change": "Reduzir sobrecarga de números e perguntas formais; o cartão dá os fatos e a tarefa exige confirmar informação"
+    },
+    {
+      "code": "A1.08",
+      "title": "At the hotel",
+      "objective": "Fazer check-in, explicar um problema simples e pedir uma solução",
+      "review": "Retomar hospedagem e duração da A1.07",
+      "visual": "Recepção de hotel e uma imagem de quarto com problemas concretos, como luz ou chuveiro sem funcionar",
+      "vocabulary": [
+        "room",
+        "key",
+        "shower",
+        "light",
+        "towel",
+        "reception"
+      ],
+      "guided": "Check-in e primeiro pedido de ajuda em seis a oito falas, sem repetir todo o treinamento de nome e telefone da A1.02",
+      "grammar": "Can I have …? / Can you help me?; The … doesn’t work como expressão funcional ligada ao problema mostrado",
+      "questions": [
+        {
+          "question": "What’s the problem with your room?",
+          "cue": "Explain one visible problem",
+          "hint": "The … doesn’t work"
+        },
+        {
+          "question": "What do you need?",
+          "cue": "Make a simple polite request",
+          "hint": "Can I have …, please?"
+        }
+      ],
+      "mission": "Can you help me?",
+      "missionVisual": "Quarto com três focos e uma ficha curta de reserva; escolher apenas um problema por rodada",
+      "missionAction": "A aluna liga para a recepção, explica o problema e confirma uma solução ou um horário oferecido pela professora",
+      "missionClick": "Escolher outro problema muda a imagem em foco; uma atualização de atendimento acrescenta uma alternativa concreta",
+      "listening": "Recado da recepção com a solução e um horário; a aluna confirma se o combinado atende ao pedido",
+      "listenQuestion": {
+        "question": "When can someone help?",
+        "cue": "Repeat the time offered by reception",
+        "hint": "Someone can come at …"
+      },
+      "free": "Talk about what you need in a hotel and practise asking for help in different situations",
+      "homework": "Enviar uma mensagem oral fictícia à recepção com um problema e um pedido",
+      "change": "Transformar a página de problemas em atendimento real, com pedido e resposta, sem três check-ins repetidos"
+    },
+    {
+      "code": "A1.09",
+      "title": "Around the city",
+      "objective": "Perguntar por um lugar, seguir e explicar um caminho curto e confirmar a chegada",
+      "review": "Retomar um pedido de ajuda do hotel da A1.08",
+      "visual": "Um mapa nativo simples com hotel, café, mercado, farmácia, banco e parque; rota curta e ruas legíveis",
+      "vocabulary": [
+        "café",
+        "market",
+        "pharmacy",
+        "bank",
+        "park",
+        "hotel"
+      ],
+      "guided": "Uma pessoa pergunta por um lugar e recebe um caminho curto; seis falas, com confirmação do ponto final",
+      "grammar": "There’s / There are / Is there …?; go straight, turn left e turn right como expressões de orientação",
+      "questions": [
+        {
+          "question": "Is there a café near the hotel?",
+          "cue": "Use the map to answer and give one detail",
+          "hint": "Yes, there is. It’s …"
+        },
+        {
+          "question": "How do I get to the park?",
+          "cue": "Give a short route from the marked starting point",
+          "hint": "Go straight, then …"
+        }
+      ],
+      "mission": "Meet me at the café",
+      "missionVisual": "Mapa com um ponto inicial e três destinos, sem texto de rota pronto",
+      "missionAction": "A aluna orienta a professora até o destino e confirma o lugar; depois pede um caminho para outro local",
+      "missionClick": "Trocar o destino muda o marcador; conferir mostra a rota depois da explicação, sem substituir a conversa por um traçado automático",
+      "listening": "Mensagem com um caminho e uma referência visual; a aluna aponta o destino e explica como chegar",
+      "listenQuestion": {
+        "question": "Where should you meet?",
+        "cue": "Name the destination described in the message",
+        "hint": "We should meet at …"
+      },
+      "free": "Describe your area, ask about your teacher’s neighbourhood and explain how to reach a place",
+      "homework": "Descrever um caminho curto real ou fictício e recuperar três expressões de direção",
+      "change": "A imagem passa a ser informação necessária para falar, em vez de apenas decorar uma lista de lugares"
+    },
+    {
+      "code": "A1.10",
+      "title": "At the café",
+      "objective": "Pedir comida e bebida, pedir algo para outra pessoa e corrigir um item errado",
+      "review": "Usar o mapa da A1.09 para chegar ao café",
+      "visual": "Cardápio visual curto com itens e preços, seguido de uma bandeja de pedido com um item diferente",
+      "vocabulary": [
+        "coffee",
+        "tea",
+        "water",
+        "juice",
+        "sandwich",
+        "cake"
+      ],
+      "guided": "Uma cliente faz um pedido, esclarece um detalhe e pede a conta; seis a oito falas naturais",
+      "grammar": "I’d like … / Can I have …?; a, an e some apenas nos pedidos da aula",
+      "questions": [
+        {
+          "question": "What would you like?",
+          "cue": "Order a drink and something to eat",
+          "hint": "I’d like … and …, please"
+        },
+        {
+          "question": "Is your order right?",
+          "cue": "Check the tray and politely correct one item if needed",
+          "hint": "Sorry, I asked for …"
+        }
+      ],
+      "mission": "Order for two",
+      "missionVisual": "Cardápio e dois pedidos ilustrados; o pedido da amiga chega pelo áudio",
+      "missionAction": "A aluna pede para si e para a amiga, confirma o pedido e resolve um item trocado",
+      "missionClick": "Conferir pedido revela a bandeja entregue; a lâmpada oferece linguagem de correção, sem indicar o item antes de a aluna observar",
+      "listening": "A amiga diz o que quer beber e comer e faz um pequeno pedido adicional; a informação será usada no atendimento",
+      "listenQuestion": {
+        "question": "What would your friend like?",
+        "cue": "Report the food and drink you heard",
+        "hint": "She’d like …"
+      },
+      "free": "Talk about what you enjoy ordering and ask your teacher about her favourite places",
+      "homework": "Montar um pedido para duas pessoas com o cardápio e gravar uma correção educada",
+      "change": "A escuta tem consequência no pedido; evitar voltar a perguntar apenas o nome de objetos já vistos no vocabulário"
+    },
+    {
+      "code": "A1.11",
+      "title": "This one, please",
+      "objective": "Pedir um produto, esclarecer tamanho e cor, perguntar preço e escolher uma alternativa",
+      "review": "Retomar pedidos educados e preços da A1.10 e A1.05",
+      "visual": "Uma pequena vitrine com cores, tamanhos e preços visíveis; objetos isolados no vocabulário",
+      "vocabulary": [
+        "T-shirt",
+        "shoes",
+        "jacket",
+        "bag",
+        "glasses",
+        "dress"
+      ],
+      "guided": "Uma cliente procura um presente e encontra uma alternativa quando o tamanho não está disponível; seis a oito falas",
+      "grammar": "This / that / these / those em referência aos produtos; How much is …? / How much are …?",
+      "questions": [
+        {
+          "question": "Which one would you like?",
+          "cue": "Choose an item and say its colour",
+          "hint": "This … one, please"
+        },
+        {
+          "question": "What size do you need?",
+          "cue": "Say the size on your shopping card",
+          "hint": "Size …, please"
+        }
+      ],
+      "mission": "Find a gift",
+      "missionVisual": "Quatro produtos com etiquetas e um cartão de compra com cor e tamanho desejados",
+      "missionAction": "A aluna pede informações, decide o que comprar e negocia outra opção quando uma característica falta",
+      "missionClick": "Ver disponibilidade revela uma única restrição; a aluna escolhe uma alternativa válida, sem um gabarito de gosto pessoal",
+      "listening": "Recado de uma pessoa explicando o presente que procura e algo que não quer",
+      "listenQuestion": {
+        "question": "What colour does she want?",
+        "cue": "Say the colour requested in the message",
+        "hint": "She wants …"
+      },
+      "free": "Talk about clothes and gifts, ask about your teacher’s choices and explain what you would buy",
+      "homework": "Escolher um produto e preparar um pequeno atendimento com pedido, preço e alternativa",
+      "change": "A escolha vira compra com requisitos claros; não perguntar preferência e exigir uma resposta diferente como gostar"
+    },
+    {
+      "code": "A1.12",
+      "title": "A day trip",
+      "objective": "Combinar um passeio e ajustar o plano usando o conteúdo do A1",
+      "review": "Recuperar nome, horário, gostos, pedidos e direção em uma situação curta",
+      "visual": "Um mapa de passeio com praia, parque e estação, uma previsão ilustrada e uma tabela curta de horários",
+      "vocabulary": [
+        "sunny",
+        "rainy",
+        "cloudy",
+        "windy",
+        "train",
+        "ticket"
+      ],
+      "guided": "Duas amigas combinam destino, horário e encontro e ajustam um detalhe; seis a oito falas, sem criar uma história longa para memorizar",
+      "grammar": "Let’s + verbo e It’s + tempo; o restante é recuperação de estruturas do nível, sem nova bateria de regras",
+      "questions": [
+        {
+          "question": "Where would you like to go?",
+          "cue": "Suggest a place and ask your teacher",
+          "hint": "Let’s go to … What do you think?"
+        },
+        {
+          "question": "What time can we meet?",
+          "cue": "Suggest a time and a meeting place",
+          "hint": "Let’s meet at … near …"
+        }
+      ],
+      "mission": "Plan our day out",
+      "missionVisual": "Três opções de passeio com tempo, local e horários disponíveis; todas as informações necessárias ficam juntas",
+      "missionAction": "A aluna e a professora escolhem destino, compram passagens fictícias, combinam um encontro e mantêm ou alteram o plano depois de uma atualização",
+      "missionClick": "Nova previsão muda um único fator; a aluna explica um plano viável em vez de refazer todos os exercícios anteriores",
+      "listening": "Recado com mudança de horário ou local de encontro; confirmar o plano final sem ler um roteiro pronto",
+      "listenQuestion": {
+        "question": "Where are you meeting now?",
+        "cue": "Use the updated meeting point from the message",
+        "hint": "We’re meeting at …"
+      },
+      "free": "Plan a day together, talk about what you enjoy and keep the conversation going without a script",
+      "homework": "Gravar o plano de um passeio com destino, horário e ponto de encontro; recuperar perguntas úteis para a revisão oral",
+      "change": "Encerrar com uma tarefa integrada do nível, sem ensinar uma lista nova de assuntos na última aula"
+    },
+    {
+      "code": "A2.01",
+      "title": "What are you doing?",
+      "objective": "Comparar hábitos com ações de agora e fazer perguntas sobre a rotina de outra pessoa",
+      "review": "Recuperar duas ações de rotina e um horário do A1",
+      "visual": "Duas cenas da mesma pessoa: um dia habitual e um dia diferente; ações precisam estar identificáveis",
+      "vocabulary": [
+        "make coffee",
+        "cook lunch",
+        "watch TV",
+        "listen to music",
+        "work from home",
+        "go for a walk"
+      ],
+      "guided": "Uma chamada entre duas amigas compara o que fazem normalmente e o que acontece hoje; seis a oito falas com ações retomadas da cena",
+      "grammar": "I usually work / I’m working now; contraste de sentido e ordem da pergunta, com dois exemplos lado a lado",
+      "questions": [
+        {
+          "question": "What do you usually do in the morning?",
+          "cue": "Describe a habit and ask about your teacher’s routine",
+          "hint": "I usually … What do you usually do?"
+        },
+        {
+          "question": "What are you doing differently today?",
+          "cue": "Compare today with your usual routine",
+          "hint": "I usually …, but today I’m …"
+        }
+      ],
+      "mission": "Guess my activity",
+      "missionVisual": "Cena doméstica e uma demonstração de mímica dentro do frame de meeting existente",
+      "missionAction": "Uma pessoa representa uma ação, a outra descreve o que está acontecendo e faz uma pergunta sobre o hábito relacionado",
+      "missionClick": "Um novo cartão de ação dá outra opção de mímica; a dica ajuda a formular a pergunta, sem mostrar uma resposta pessoal pronta",
+      "listening": "Mensagem no celular sobre o que uma pessoa e sua família estão fazendo hoje, contrastando um hábito; preservar o áudio revisado quando compatível",
+      "listenQuestion": {
+        "question": "What is she doing today?",
+        "cue": "Describe the activity mentioned in the message",
+        "hint": "Today she’s …"
+      },
+      "free": "Compare your usual routines with today and ask follow-up questions about each other’s day",
+      "homework": "Gravar uma comparação entre rotina e hoje e responder a uma pergunta de acompanhamento",
+      "change": "Usar a aula atual como referência, sem restaurar automaticamente a narrativa antiga de Porto nem os quizzes repetidos"
+    },
+    {
+      "code": "A2.02",
+      "title": "How was your weekend?",
+      "objective": "Contar um fim de semana em sequência e fazer perguntas para entender o da outra pessoa",
+      "review": "Contrastar hoje com ontem usando uma imagem conhecida",
+      "visual": "Um pequeno álbum de fim de semana com seis atividades; cada foto mostra um acontecimento claro",
+      "vocabulary": [
+        "visited a museum",
+        "went to a market",
+        "had coffee",
+        "took photos",
+        "walked on the beach",
+        "stayed at home"
+      ],
+      "guided": "Duas pessoas contam onde foram, o que fizeram e como foi; seis a oito falas com reações e perguntas de volta",
+      "grammar": "Was/were para lugar ou avaliação e passado simples para ações; trabalhar poucos verbos úteis, sem tabela extensa de irregulares",
+      "questions": [
+        {
+          "question": "What did you do last weekend?",
+          "cue": "Describe two activities in order",
+          "hint": "First I … Then I …"
+        },
+        {
+          "question": "How was it?",
+          "cue": "Give your opinion and add one detail",
+          "hint": "It was … because …"
+        }
+      ],
+      "mission": "Build your weekend story",
+      "missionVisual": "Três espaços de álbum e cartões de atividades; permitir escolher imagens de exemplo quando a aluna não quiser usar a própria vida",
+      "missionAction": "A aluna organiza uma história curta e a professora faz perguntas para descobrir um detalhe que ainda não foi contado",
+      "missionClick": "Escolher ou reordenar uma imagem muda a sequência; nenhuma preferência pessoal é marcada como errada",
+      "listening": "Recado sobre um fim de semana com uma atividade cancelada e outra realizada; a aluna separa plano e fato",
+      "listenQuestion": {
+        "question": "What did she actually do?",
+        "cue": "Describe the activity that happened, not the cancelled plan",
+        "hint": "She didn’t … She … instead"
+      },
+      "free": "Tell each other about a recent weekend and keep the conversation going with questions and reactions",
+      "homework": "Gravar um relato de três momentos e preparar uma pergunta sobre o fim de semana da professora",
+      "change": "Trocar reconhecimento de fotos seguido de mais reconhecimento por uma história construída pela aluna"
+    },
+    {
+      "code": "A2.03",
+      "title": "Sorry I’m late!",
+      "objective": "Explicar um atraso dizendo o que estava acontecendo e o que interrompeu a ação",
+      "review": "Recuperar a sequência de fatos no passado da A2.02",
+      "visual": "Três cartões ilustrados independentes: espera do ônibus, chuva e chegada; sem texto de história pronto nas imagens",
+      "vocabulary": [
+        "wait for the bus",
+        "miss the bus",
+        "drop a phone",
+        "get stuck in traffic",
+        "start raining",
+        "arrive late"
+      ],
+      "guided": "Uma pessoa chega atrasada e explica o que ocorreu, enquanto a outra reage e esclarece um ponto; seis a oito falas",
+      "grammar": "I was waiting when …; ação em andamento e acontecimento, com linha do tempo e duas frases completas",
+      "questions": [
+        {
+          "question": "What were you doing when it started to rain?",
+          "cue": "Describe the action in progress",
+          "hint": "I was … when …"
+        },
+        {
+          "question": "Why were you late?",
+          "cue": "Explain the sequence and apologise",
+          "hint": "Sorry I’m late. I was … when …"
+        }
+      ],
+      "mission": "Tell me what happened",
+      "missionVisual": "Três acontecimentos com um horário em cada cartão e um espaço para ordenar a história",
+      "missionAction": "A aluna conta o atraso sem ler frases prontas e responde à professora, que precisa entender a ordem dos fatos",
+      "missionClick": "Outra história troca um acontecimento central; a aluna reconstrói a explicação, sem repetir o mesmo diálogo com uma palavra diferente",
+      "listening": "Áudio de alguém que ainda está no caminho e explica o atraso; identificar motivo e próximo passo",
+      "listenQuestion": {
+        "question": "Why is he running late?",
+        "cue": "Connect the activity and the interruption you hear",
+        "hint": "He was … when …"
+      },
+      "free": "Talk about unexpected moments and ask what the other person was doing when something happened",
+      "homework": "Contar um imprevisto real ou fictício usando uma ação em andamento e um fato que a interrompeu",
+      "change": "Substituir pares de pronúncia previsíveis e frases erradas por uma sequência visual que precisa ser explicada"
+    },
+    {
+      "code": "A2.04",
+      "title": "Are you doing anything on Saturday?",
+      "objective": "Convidar, recusar explicando um compromisso e encontrar outra opção de horário",
+      "review": "Recuperar dias e horários da A1.04",
+      "visual": "Agenda de fim de semana e seis cartões de atividades, com horário e local quando necessários",
+      "vocabulary": [
+        "a food festival",
+        "a concert",
+        "a barbecue",
+        "a birthday party",
+        "a yoga class",
+        "a picnic"
+      ],
+      "guided": "Uma pessoa convida, a outra já tem um compromisso e ambas encontram outra opção; seis a oito falas",
+      "grammar": "Present continuous para compromisso marcado e going to para intenção; exemplos ligados à agenda, sem três futuros de uma vez",
+      "questions": [
+        {
+          "question": "Are you doing anything on Saturday?",
+          "cue": "Describe a plan or say you are free",
+          "hint": "I’m … on Saturday / I’m free on …"
+        },
+        {
+          "question": "Would you like to go together?",
+          "cue": "Accept or suggest another day",
+          "hint": "I’d love to, but … How about …?"
+        }
+      ],
+      "mission": "Find a plan that works",
+      "missionVisual": "Uma agenda de exemplo e duas atividades com horários diferentes; a aluna pode usar sua disponibilidade real ou fictícia",
+      "missionAction": "A aluna faz o convite, explica um impedimento e negocia outra opção com a professora",
+      "missionClick": "Ver atualização revela uma mudança de horário; a conversa precisa chegar a um novo acordo, sem escolhas secretas inexplicadas",
+      "listening": "Mensagem aceitando o convite, mas propondo um horário ou ponto de encontro diferente",
+      "listenQuestion": {
+        "question": "What time does she suggest?",
+        "cue": "State the new suggestion and say whether it works",
+        "hint": "She suggests … That works / I can’t because …"
+      },
+      "free": "Talk about upcoming plans and make invitations, giving reasons and suggesting alternatives",
+      "homework": "Preparar um convite e duas respostas possíveis, uma de aceitação e outra de recusa com alternativa",
+      "change": "Usar agenda e negociação em vez de classificar formas verbais desconectadas do convite"
+    },
+    {
+      "code": "A2.05",
+      "title": "I’ll carry that!",
+      "objective": "Oferecer ajuda, tomar uma decisão na hora e distinguir isso de um plano anterior",
+      "review": "Retomar um plano já combinado da A2.04",
+      "visual": "Uma cena de mudança com caixas, móveis e obstáculos claros; cada foco apresenta um problema que pode ser resolvido",
+      "vocabulary": [
+        "carry a box",
+        "open the door",
+        "take the stairs",
+        "move a chair",
+        "paint a wall",
+        "unpack a bag"
+      ],
+      "guided": "Uma pessoa está de mudança e a amiga reage aos problemas oferecendo ajuda; seis a oito falas, sem listar todos os objetos novamente",
+      "grammar": "I’ll + verbo para oferta ou decisão agora, em contraste com I’m going to … para intenção anterior",
+      "questions": [
+        {
+          "question": "These boxes are heavy. Can you help?",
+          "cue": "Offer one concrete action",
+          "hint": "I’ll …"
+        },
+        {
+          "question": "What are you going to do after the move?",
+          "cue": "Explain a plan you already have",
+          "hint": "I’m going to …"
+        }
+      ],
+      "mission": "Help with the move",
+      "missionVisual": "Cena de mudança e três problemas ilustrados, revelados um por rodada",
+      "missionAction": "A aluna oferece ajuda, combina quem faz o quê e adapta a solução quando surge um obstáculo",
+      "missionClick": "Novo problema revela uma situação, como elevador indisponível; a aluna propõe uma ação útil e a professora reage",
+      "listening": "Uma amiga manda um pedido de ajuda e explica o que já planejou; separar o plano dela da ajuda que a aluna oferece",
+      "listenQuestion": {
+        "question": "What help does she need?",
+        "cue": "Identify the problem and offer an action",
+        "hint": "She needs … I’ll …"
+      },
+      "free": "Talk about times you helped someone and make practical plans to help each other in a new situation",
+      "homework": "Responder a três problemas ilustrados com ofertas e gravar um plano pessoal usando going to",
+      "change": "Fazer a forma verbal nascer da decisão ou da oferta, em vez de selecionar will em frases sem consequência"
+    },
+    {
+      "code": "A2.06",
+      "title": "My back hurts",
+      "objective": "Descrever sintomas simples, dizer quando começaram e pedir esclarecimentos em um atendimento",
+      "review": "Recuperar perguntas no passado da A2.02",
+      "visual": "Seis vinhetas claras de como uma pessoa se sente e uma recepção de atendimento; não reduzir tudo a setas no corpo",
+      "vocabulary": [
+        "a headache",
+        "a sore throat",
+        "a fever",
+        "a cough",
+        "a stomachache",
+        "a backache"
+      ],
+      "guided": "Uma cliente descreve o problema e responde a perguntas sobre início e necessidade de ajuda; seis a oito falas",
+      "grammar": "I have a … / My … hurts; When did it start? e Could you …? como apoio à descrição e à confirmação",
+      "questions": [
+        {
+          "question": "What’s the matter?",
+          "cue": "Describe the symptom on your situation card",
+          "hint": "I have … / My … hurts"
+        },
+        {
+          "question": "When did it start?",
+          "cue": "Say when the symptom began",
+          "hint": "It started …"
+        }
+      ],
+      "mission": "Explain how you feel",
+      "missionVisual": "Ficha fictícia com sintoma, início e disponibilidade de atendimento; sem diagnóstico ou dose a adivinhar",
+      "missionAction": "A aluna explica o problema, responde ao atendimento e confirma o próximo passo informado pela professora",
+      "missionClick": "Trocar situação altera sintoma e início. A dica fornece linguagem de descrição e pedido de repetição, sem recomendar tratamento",
+      "listening": "Recado com instruções de atendimento, local e horário; a aluna confirma os dados e pede repetição de um detalhe",
+      "listenQuestion": {
+        "question": "When and where is the appointment?",
+        "cue": "Confirm the time and place stated in the message",
+        "hint": "It’s at … in …"
+      },
+      "free": "Talk about feeling well, everyday habits and asking for help, using fictional situations if you prefer",
+      "homework": "Gravar uma descrição fictícia de como está e uma pergunta de esclarecimento",
+      "change": "Concentrar a prática na comunicação do problema; retirar contraste cough/coffee e tarefas que pareçam pedir aconselhamento clínico"
+    },
+    {
+      "code": "A2.07",
+      "title": "House rules",
+      "objective": "Perguntar sobre regras, explicar obrigações e combinar uma alternativa quando uma regra atrapalha um plano",
+      "review": "Retomar ofertas e planos das A2.04–A2.05",
+      "visual": "Uma planta simples de prédio com piscina, garagem, churrasqueira e áreas comuns; regras em placas nativas curtas",
+      "vocabulary": [
+        "building",
+        "pool",
+        "garage",
+        "grill",
+        "trash",
+        "bike"
+      ],
+      "guided": "Uma nova moradora pergunta sobre o prédio, recebe uma regra e negocia uma possibilidade; seis a oito falas",
+      "grammar": "Have to / don’t have to / mustn’t; contraste entre obrigação, ausência de obrigação e proibição com exemplos concretos",
+      "questions": [
+        {
+          "question": "Do I have to book the grill?",
+          "cue": "Explain the booking rule shown on the building card",
+          "hint": "Yes, you have to … / No, you don’t have to …"
+        },
+        {
+          "question": "Can we have a party after ten?",
+          "cue": "Explain a restriction and suggest an alternative",
+          "hint": "We can’t …, but we can …"
+        }
+      ],
+      "mission": "Plan it within the rules",
+      "missionVisual": "Três espaços do prédio com horário, capacidade e regra de reserva visíveis",
+      "missionAction": "A aluna organiza uma atividade, consulta a professora como responsável pelo prédio e encontra uma opção que respeite as regras",
+      "missionClick": "Escolher espaço mostra a respectiva placa; nova situação altera um limite, sem acrescentar uma página inteira de regulamento",
+      "listening": "Recado de um responsável com uma exceção ou alteração temporária de uso de um espaço",
+      "listenQuestion": {
+        "question": "What has changed for this weekend?",
+        "cue": "Explain the temporary rule you hear",
+        "hint": "This weekend we have to … / We can’t …"
+      },
+      "free": "Compare rules at home and in shared places and discuss which ones are useful",
+      "homework": "Explicar três regras de um lugar real ou fictício e preparar uma pergunta sobre uma delas",
+      "change": "Usar regras para resolver uma atividade, sem transformar a aula em leitura longa de regulamento e quiz de modais"
+    },
+    {
+      "code": "A2.08",
+      "title": "Have you ever been to Lisbon?",
+      "objective": "Perguntar sobre experiências, descobrir detalhes no passado e usar a conversa para recomendar uma atividade",
+      "review": "Recuperar passado simples de A2.02 antes de contrastar experiência e momento",
+      "visual": "Álbum visual de Lisboa com experiências reconhecíveis; recomendações ligadas a lugar e atividade, não somente a fotografias turísticas",
+      "vocabulary": [
+        "take a tram",
+        "visit a castle",
+        "try a pastel de nata",
+        "see the tiles",
+        "watch the sunset",
+        "visit the aquarium"
+      ],
+      "guided": "Uma pessoa pede ideias e a outra conta o que já fez e quando; seis a oito falas com pergunta de acompanhamento",
+      "grammar": "Have you ever …? / I’ve never … para experiência; When did you …? para detalhes de um episódio específico",
+      "questions": [
+        {
+          "question": "Have you ever tried something new on a trip?",
+          "cue": "Share an experience or something you would like to try",
+          "hint": "Yes, I’ve … / No, but I’d like to …"
+        },
+        {
+          "question": "When did you do it?",
+          "cue": "Give details of the experience you mentioned",
+          "hint": "I … in … It was …"
+        }
+      ],
+      "mission": "Recommend something I’ll enjoy",
+      "missionVisual": "Seis experiências com imagem e pequenos perfis de interesses; sem pressupor que a aluna já conhece Lisboa",
+      "missionAction": "A aluna pergunta sobre experiências e interesses da professora e recomenda uma opção, explicando a escolha",
+      "missionClick": "Trocar perfil muda o interesse da pessoa. Conferir experiência abre uma foto e um fato, sem um gabarito único de recomendação",
+      "listening": "Recado com duas recomendações baseadas em experiências e uma atividade que a pessoa ainda não fez",
+      "listenQuestion": {
+        "question": "What has she tried, and what hasn’t she tried yet?",
+        "cue": "Separate the experiences mentioned in the message",
+        "hint": "She’s …, but she hasn’t …"
+      },
+      "free": "Talk about experiences, ask for details and recommend something based on what your teacher tells you",
+      "homework": "Gravar uma experiência e uma recomendação e preparar uma pergunta de acompanhamento",
+      "change": "Evitar um interrogatório de Have you ever repetido; cada experiência leva a detalhes e a uma recomendação útil"
+    },
+    {
+      "code": "A2.09",
+      "title": "Long time no see!",
+      "objective": "Contar mudanças de vida e distinguir quando aconteceram de há quanto tempo continuam verdadeiras",
+      "review": "Retomar experiência e data da A2.08",
+      "visual": "Uma linha do tempo com fotos de escola, mudança, estudo, trabalho e interesses; as datas sustentam a conversa",
+      "vocabulary": [
+        "move to a new city",
+        "start a job",
+        "finish a course",
+        "get married",
+        "have a baby",
+        "take up a hobby"
+      ],
+      "guided": "Duas pessoas se reencontram e contam mudanças com datas e duração; seis a oito falas, sem atribuir uma nova biografia à Bia canônica",
+      "grammar": "For / since / in com How long have you …? e When did you …?; significado apoiado na linha do tempo",
+      "questions": [
+        {
+          "question": "How long have you lived in your city?",
+          "cue": "Say a duration or a starting year",
+          "hint": "I’ve lived here for … / since …"
+        },
+        {
+          "question": "What has changed in your life recently?",
+          "cue": "Choose a change you are comfortable sharing",
+          "hint": "I’ve … I … in …"
+        }
+      ],
+      "mission": "Catch up after a long time",
+      "missionVisual": "Linha do tempo de exemplo e três cartões de assunto; a aluna pode usar fatos pessoais ou um perfil fictício",
+      "missionAction": "A aluna escolhe assuntos, pergunta sobre mudanças da professora e comenta o que continua igual",
+      "missionClick": "Adicionar um marco revela uma data, permitindo reformular a mesma informação com duração ou ponto inicial",
+      "listening": "Mensagem de uma antiga conhecida com uma mudança recente e algo que continua desde uma data",
+      "listenQuestion": {
+        "question": "How long has she been there?",
+        "cue": "Use the starting point or duration stated in the message",
+        "hint": "She’s been there since … / for …"
+      },
+      "free": "Catch up on changes in your lives and ask about what has stayed the same",
+      "homework": "Criar uma pequena linha do tempo com três fatos e gravar a explicação usando for e since quando fizer sentido",
+      "change": "Tratar casamento e filhos como opções de uma história, não como respostas pessoais obrigatórias; evitar conflito entre Bia irmã e antiga amiga"
+    },
+    {
+      "code": "A2.10",
+      "title": "It’s too far",
+      "objective": "Comparar opções com critérios concretos e justificar uma escolha",
+      "review": "Retomar gostos e necessidades ao escolher uma atividade ou lugar",
+      "visual": "Dois apartamentos com fotos comparáveis e os mesmos quatro critérios: preço, tamanho, distância e barulho",
+      "vocabulary": [
+        "cheap",
+        "expensive",
+        "spacious",
+        "small",
+        "quiet",
+        "noisy"
+      ],
+      "guided": "Duas pessoas comparam apartamentos e discutem uma desvantagem antes de escolher; seis a oito falas",
+      "grammar": "Comparativos com than, too e enough; cada exemplo responde a uma necessidade visível",
+      "questions": [
+        {
+          "question": "Which apartment works better for you?",
+          "cue": "Choose using a criterion that matters to you",
+          "hint": "I’d choose … because it’s …"
+        },
+        {
+          "question": "What’s the problem with the other one?",
+          "cue": "Explain one limitation using the information shown",
+          "hint": "It’s too … / It isn’t … enough"
+        }
+      ],
+      "mission": "Choose our place",
+      "missionVisual": "Duas fichas de apartamento com campos iguais e três prioridades da viagem",
+      "missionAction": "A aluna pergunta o que a professora considera importante, compara as opções e negocia uma escolha conjunta",
+      "missionClick": "Ver novidade revela um dado relevante, como obras próximas; ambas podem manter ou mudar a escolha e precisam explicar por quê",
+      "listening": "Recado de um anfitrião esclarecendo um detalhe que não estava na ficha",
+      "listenQuestion": {
+        "question": "Does the new detail change your choice?",
+        "cue": "Use the message and your priorities to explain your decision",
+        "hint": "Yes, because … / No, because …"
+      },
+      "free": "Compare places, talk about what matters to you and explain choices without a fixed answer",
+      "homework": "Comparar duas opções reais ou fictícias usando três critérios e justificar a preferência",
+      "change": "Substituir um teste de cheaper/more expensive por comparação com dados, prioridades e mais de uma escolha defensável"
+    },
+    {
+      "code": "A2.11",
+      "title": "If it rains, we’ll…",
+      "objective": "Propor um plano alternativo e explicar o que fará se uma condição mudar",
+      "review": "Recuperar planos e comparações das A2.04 e A2.10",
+      "visual": "Mapa de passeio com opções cobertas e ao ar livre e cartões de tempo, transporte e horário",
+      "vocabulary": [
+        "a hike",
+        "a trail",
+        "a museum",
+        "a raincoat",
+        "a forecast",
+        "a backup plan"
+      ],
+      "guided": "Duas pessoas planejam um passeio e combinam o que fazer se chover ou perderem o transporte; seis a oito falas",
+      "grammar": "If + presente, will + verbo, ligado a uma condição real e à decisão correspondente; sem quiz abaixo da explicação",
+      "questions": [
+        {
+          "question": "What will you do if it rains?",
+          "cue": "Suggest a realistic alternative for the outing",
+          "hint": "If it rains, we’ll …"
+        },
+        {
+          "question": "What if the bus is late?",
+          "cue": "Agree on a second way to reach the destination",
+          "hint": "If the bus is late, we can …"
+        }
+      ],
+      "mission": "Make a plan B",
+      "missionVisual": "Um plano inicial com destino, transporte e horário e três cartões de imprevisto",
+      "missionAction": "A aluna explica o plano, recebe um imprevisto e negocia uma alternativa que preserve o objetivo do passeio",
+      "missionClick": "Ver imprevisto revela somente uma condição por rodada; o grupo escolhe e justifica a solução, sem uma resposta automática",
+      "listening": "Recado sobre uma nova condição e uma proposta de alternativa; a aluna aceita ou sugere outra opção",
+      "listenQuestion": {
+        "question": "What’s the new plan if it rains?",
+        "cue": "Explain the alternative proposed in the message",
+        "hint": "If it rains, they’ll …"
+      },
+      "free": "Discuss upcoming plans, possible problems and useful alternatives together",
+      "homework": "Preparar três planos alternativos para um evento real ou fictício",
+      "change": "A condição precisa alterar uma decisão; retirar a repetição mecânica de frases com will sem tarefa de planejamento"
+    },
+    {
+      "code": "A2.12",
+      "title": "How about Friday?",
+      "objective": "Combinar um encontro completo negociando preferências, horários e uma mudança de última hora",
+      "review": "Retomar experiências, planos, comparação e alternativas das aulas anteriores",
+      "visual": "Painel de jantar ou encontro com agenda, dois locais e informações curtas de preço e acesso",
+      "vocabulary": [
+        "book a table",
+        "send an invitation",
+        "bring a gift",
+        "split the bill",
+        "cancel a booking",
+        "change the date"
+      ],
+      "guided": "Uma conversa organiza um jantar e resolve uma incompatibilidade de agenda; seis a oito falas com sugestões variadas",
+      "grammar": "How about …? / Why don’t we …? / Let’s … e respostas com alternativa; nenhuma nova bateria de tempos verbais",
+      "questions": [
+        {
+          "question": "How about dinner on Friday?",
+          "cue": "Accept or give a reason and suggest another option",
+          "hint": "That sounds good / I’d love to, but …"
+        },
+        {
+          "question": "Which place should we choose?",
+          "cue": "Compare the options and ask your teacher’s opinion",
+          "hint": "I think … because … What do you think?"
+        }
+      ],
+      "mission": "Plan the whole evening",
+      "missionVisual": "Agenda, opções de lugar e uma ficha curta de preferências; escolher dados suficientes para tomar a decisão",
+      "missionAction": "A aluna conduz convite, local, horário e confirmação e reage a uma mudança sem começar a conversa de novo",
+      "missionClick": "Nova mensagem acrescenta uma mudança de disponibilidade; a aluna ajusta o combinado e resume a versão final",
+      "listening": "Uma participante responde ao convite com preferência e restrição; a aluna incorpora as duas informações ao plano",
+      "listenQuestion": {
+        "question": "What needs to change?",
+        "cue": "Identify the restriction and propose an updated plan",
+        "hint": "We need to …, so we could …"
+      },
+      "free": "Plan something together and use questions, reactions and alternatives to keep the conversation going",
+      "homework": "Gravar um convite e uma confirmação completa e preparar um relato pessoal para a revisão oral do A2",
+      "change": "Fechar o nível com uma interação completa, sem repetir um quiz de cada aula anterior nem introduzir vocabulário decorativo"
+    },
+    {
+      "code": "B1.01",
+      "title": "What have you been doing?",
+      "objective": "Retomar contato contando atividades recentes, duração e resultados e perguntando sobre a outra pessoa",
+      "review": "Recuperar experiências e acontecimentos recentes do A2",
+      "visual": "Fotos de uma atividade em andamento e de um resultado concluído, com duração ou quantidade visível quando relevante",
+      "vocabulary": [
+        "work overtime",
+        "catch up",
+        "take a break",
+        "work out",
+        "decorate a room",
+        "have time for yourself"
+      ],
+      "guided": "O reencontro de Ana e Kim e a conversa com Leo, preservando fatos e gravações válidos; conversa completa com pelo menos seis falas",
+      "grammar": "I’ve been painting para a atividade e I’ve painted the room para o resultado; duração e quantidade ajudam a interpretar sem depender só da forma",
+      "questions": [
+        {
+          "question": "What have you been doing lately?",
+          "cue": "Describe a recent activity and ask about your teacher",
+          "hint": "I’ve been … lately. How about you?"
+        },
+        {
+          "question": "Have you finished anything recently?",
+          "cue": "Explain one result and how you got there",
+          "hint": "I’ve finished … I’ve been working on it for …"
+        }
+      ],
+      "mission": "Catch up with a friend",
+      "missionVisual": "Três cartões de dias com atividade, duração e companhia; botões de dia centralizados e dados breves",
+      "missionAction": "A aluna usa um cartão para contar novidades, a professora pede detalhes e depois ambas usam fatos próprios",
+      "missionClick": "Trocar dia muda o assunto; dica libera linguagem de continuidade, sem um contador de múltipla escolha sobre o avatar",
+      "listening": "Mensagem de Leo sobre atividades recentes e o que já conseguiu concluir; perguntas em balões ao lado do celular canônico",
+      "listenQuestion": {
+        "question": "What has Leo finished, and what is he still doing?",
+        "cue": "Separate the result from the ongoing activity",
+        "hint": "He’s finished …, but he’s still …"
+      },
+      "free": "Catch up on your lives, explain what has kept you busy and ask genuine follow-up questions",
+      "homework": "Gravar uma atualização com uma atividade em andamento e um resultado; preparar duas perguntas de acompanhamento",
+      "change": "Preservar a revisão recente do B1; substituir running/been running e quizzes repetidos por pistas visuais e conversa com continuidade"
+    },
+    {
+      "code": "B1.02",
+      "title": "There used to be a cinema here",
+      "objective": "Comparar lugares e hábitos de antes com os de hoje e explicar o que mudou",
+      "review": "Recuperar novidades e duração da B1.01",
+      "visual": "Duas imagens do mesmo bairro em épocas diferentes, com pontos de referência consistentes e seis mudanças reconhecíveis",
+      "vocabulary": [
+        "a cinema",
+        "a playground",
+        "a corner shop",
+        "a square",
+        "a factory",
+        "an apartment block"
+      ],
+      "guided": "Duas pessoas passeiam por um bairro e comparam o lugar de antes e de agora; seis a oito falas com uma lembrança pessoal",
+      "grammar": "Used to / didn’t use to / Did you use to …?; distinguir mudança de hábito e existência com there used to be",
+      "questions": [
+        {
+          "question": "What did your neighbourhood use to be like?",
+          "cue": "Describe one change you remember or use the example pictures",
+          "hint": "There used to be … Now there’s …"
+        },
+        {
+          "question": "Did you use to do anything differently?",
+          "cue": "Compare one past habit with your life now",
+          "hint": "I used to …, but now I …"
+        }
+      ],
+      "mission": "Show me your old neighbourhood",
+      "missionVisual": "Mapa antes/depois com os mesmos seis pontos; a imagem ajuda a explicar, sem texto de comparação pronto",
+      "missionAction": "A aluna apresenta duas mudanças à professora, pergunta sobre o bairro dela e diz o que gostaria de preservar",
+      "missionClick": "Alternar antes/agora mantém o mesmo enquadramento. Um ponto abre uma foto de apoio depois da tentativa de explicação",
+      "listening": "Recado de alguém que voltou ao bairro e comenta uma mudança de lugar e uma de hábito",
+      "listenQuestion": {
+        "question": "What has changed since he lived there?",
+        "cue": "Compare the past and present details in the message",
+        "hint": "There used to be …, but now …"
+      },
+      "free": "Compare places you have known, share memories and ask how your teacher’s life has changed",
+      "homework": "Escolher um lugar e descrever duas mudanças e um hábito antigo, usando imagem de exemplo se necessário",
+      "change": "Usar comparação visual consistente; tirar uma página de pronúncia de now/before que não acrescenta uma dificuldade real"
+    },
+    {
+      "code": "B1.03",
+      "title": "The show had already started",
+      "objective": "Contar um imprevisto e deixar clara a ordem de acontecimentos no passado",
+      "review": "Retomar narrativas com when da A2.03",
+      "visual": "Linha do tempo de uma noite de show com bilhete, trajeto, entrada e palco; horários alinhados aos acontecimentos",
+      "vocabulary": [
+        "a ticket",
+        "a wristband",
+        "the entrance",
+        "the queue",
+        "the venue",
+        "an opening act"
+      ],
+      "guided": "Uma pessoa conta por que perdeu o começo do show e a outra esclarece a sequência; seis a oito falas",
+      "grammar": "Past perfect para o fato anterior a outro fato passado; primeiro interpretar a linha do tempo e só então observar had + particípio",
+      "questions": [
+        {
+          "question": "What had happened before they arrived?",
+          "cue": "Use the timeline to explain the earlier event",
+          "hint": "By the time they arrived, … had already …"
+        },
+        {
+          "question": "Has anything similar happened to you?",
+          "cue": "Tell a real or imagined story with a clear sequence",
+          "hint": "When I got there, … had already …"
+        }
+      ],
+      "mission": "Reconstruct the evening",
+      "missionVisual": "Quatro cartões de acontecimentos e horários; todos os fatos necessários ficam acessíveis",
+      "missionAction": "A aluna reconstrói a sequência, explica um mal-entendido sobre a ordem e pergunta sobre uma experiência da professora",
+      "missionClick": "Conferir ordem revela a linha do tempo após a explicação; nova versão altera um acontecimento, não apenas um verbo",
+      "listening": "Áudio com o relato de outra pessoa da mesma noite e um detalhe anterior à chegada",
+      "listenQuestion": {
+        "question": "Why couldn’t they get in immediately?",
+        "cue": "Connect the earlier event to the problem at the entrance",
+        "hint": "They couldn’t … because they had …"
+      },
+      "free": "Tell each other about plans that went wrong and ask questions to understand what happened first",
+      "homework": "Gravar uma história curta com três acontecimentos e explicar qual ocorreu primeiro",
+      "change": "Trocar caça à contração I’d por uma sequência que exige compreender antes/depois"
+    },
+    {
+      "code": "B1.04",
+      "title": "Whose bag is this?",
+      "objective": "Fazer hipóteses com base em evidências, mostrar graus de certeza e revisar uma conclusão",
+      "review": "Retomar descrições de objetos e explicações com because",
+      "visual": "Uma mochila aberta com objetos claros e uma ficha separada do que foi realmente confirmado",
+      "vocabulary": [
+        "a backpack",
+        "a receipt",
+        "a charger",
+        "a notebook",
+        "a boarding pass",
+        "a key ring"
+      ],
+      "guided": "Duas pessoas observam pistas de uma mochila perdida e decidem como procurar a pessoa; seis a oito falas sem deduzir origem ou identidade por estereótipos",
+      "grammar": "Must / might / can’t + verbo para graus de certeza; distinguir fato observado de hipótese, sem apresentar inferência plausível como prova",
+      "questions": [
+        {
+          "question": "What might these objects tell us?",
+          "cue": "Suggest a possibility and name the supporting clue",
+          "hint": "The owner might … because …"
+        },
+        {
+          "question": "How sure are you?",
+          "cue": "Explain what the evidence does and does not show",
+          "hint": "I’m not sure, but …"
+        }
+      ],
+      "mission": "Find the owner",
+      "missionVisual": "Objetos da mochila e três informações confirmáveis; dados de exemplo, sem documentos reais de pessoas",
+      "missionAction": "A aluna apresenta hipóteses, a professora questiona a evidência e ambas escolhem uma forma de confirmar a identidade",
+      "missionClick": "Ver nova pista revela um fato que pode fortalecer ou derrubar uma hipótese; aceitar mais de uma interpretação justificável",
+      "listening": "Chamada de alguém procurando a mochila com duas características específicas; comparar relato e objetos",
+      "listenQuestion": {
+        "question": "Could this be the caller’s bag?",
+        "cue": "Compare the caller’s details with the visible evidence",
+        "hint": "It might be, because … / It can’t be, because …"
+      },
+      "free": "Discuss how you make guesses, ask for evidence and change your mind when new information appears",
+      "homework": "Criar três hipóteses sobre uma cena de exemplo, identificando o que é fato e o que é inferência",
+      "change": "Fazer o jogo ter evidências e confirmação; eliminar gabarito único baseado em aparência ou suposições sobre a pessoa"
+    },
+    {
+      "code": "B1.05",
+      "title": "He said he’d come on Thursday",
+      "objective": "Transmitir um recado preservando pedido, horário e intenção e esclarecer uma diferença entre versões",
+      "review": "Recuperar confirmação e correção de dados da A1.02",
+      "visual": "Uma conversa de mensagens sobre um reparo doméstico e uma agenda com dia e horário; poucas mensagens por tela",
+      "vocabulary": [
+        "a leak",
+        "a tap",
+        "a repair",
+        "a spare key",
+        "an appointment",
+        "a building manager"
+      ],
+      "guided": "Uma pessoa recebeu um recado do profissional e precisa transmiti-lo a outra; seis a oito falas com confirmação de um detalhe",
+      "grammar": "Said / told / asked com exemplos do recado; concentrar a prática em transmitir informação corretamente, sem transformar a tela em tabela de todas as mudanças verbais",
+      "questions": [
+        {
+          "question": "What did he ask us to do?",
+          "cue": "Pass on the request accurately",
+          "hint": "He asked us to …"
+        },
+        {
+          "question": "Did he say Thursday or Friday?",
+          "cue": "Check the message and correct the misunderstanding",
+          "hint": "He said …, not …"
+        }
+      ],
+      "mission": "Pass the message on",
+      "missionVisual": "Três recados curtos com destinatário e horário, seguidos de uma conversa em balões",
+      "missionAction": "A aluna transmite o recado a quem precisa agir; a professora repete um detalhe diferente e a aluna esclarece",
+      "missionClick": "Mostrar alteração revela uma atualização real da informação; a aluna precisa avisar o que mudou, sem reler o recado inteiro",
+      "listening": "Áudio do profissional confirmando ou alterando horário e instrução; a aluna transmite a versão final",
+      "listenQuestion": {
+        "question": "What should you tell the other person now?",
+        "cue": "Relay the updated time and request",
+        "hint": "He said … and asked us to …"
+      },
+      "free": "Talk about messages, misunderstandings and how you check that another person understood you",
+      "homework": "Ouvir um recado curto e gravar a informação para outra pessoa sem perder os detalhes principais",
+      "change": "O objetivo é transmitir um recado útil, não apenas converter uma frase direta em indireta"
+    },
+    {
+      "code": "B1.06",
+      "title": "If I took the job",
+      "objective": "Explorar uma decisão hipotética, considerar consequências e oferecer conselho sem impor uma escolha",
+      "review": "Recuperar comparação e justificativa da A2.10",
+      "visual": "Dois cartões de proposta de trabalho com campos iguais: cidade, horário, deslocamento e oportunidade de aprendizado",
+      "vocabulary": [
+        "a job offer",
+        "a salary",
+        "a commute",
+        "working hours",
+        "relocate",
+        "a career opportunity"
+      ],
+      "guided": "Uma pessoa pensa em uma mudança e a amiga pergunta o que pesaria na decisão; seis a oito falas",
+      "grammar": "If + passado, would + verbo; If I were you … como conselho opcional, sem exigir uma decisão profissional real da aluna",
+      "questions": [
+        {
+          "question": "What would change if you took this job?",
+          "cue": "Describe a consequence using the offer card",
+          "hint": "If I took it, I’d …"
+        },
+        {
+          "question": "What would matter most to you?",
+          "cue": "Explain a priority and ask your teacher’s view",
+          "hint": "I’d care most about … because …"
+        }
+      ],
+      "mission": "Help me make a decision",
+      "missionVisual": "Duas propostas e três prioridades do perfil fictício; dados suficientes para comparar sem uma planilha longa",
+      "missionAction": "A aluna entrevista a professora como candidata e aconselha uma opção, depois reage a uma prioridade diferente",
+      "missionClick": "Ver novo detalhe acrescenta uma condição de trabalho; a escolha pode mudar com justificativa, sem nota de certo/errado",
+      "listening": "Mensagem de alguém explicando uma preferência e uma preocupação que não estavam na proposta",
+      "listenQuestion": {
+        "question": "What is the person most concerned about?",
+        "cue": "Identify the concern before giving advice",
+        "hint": "They’re worried about …, so I’d …"
+      },
+      "free": "Discuss hypothetical changes in work, study or daily life and explore the consequences together",
+      "homework": "Comparar duas escolhas pessoais ou fictícias e gravar uma recomendação com motivo",
+      "change": "Preservar a estrutura, mas deixar a decisão com a aluna e permitir temas além de carreira corporativa"
+    },
+    {
+      "code": "B1.07",
+      "title": "I should have taken the direct flight",
+      "objective": "Comentar uma decisão passada e pensar em uma alternativa sem apenas culpar quem errou",
+      "review": "Retomar ordem dos fatos da B1.03 e hipóteses da B1.06",
+      "visual": "Itinerário com voo direto e conexão, horários e os fatos do atraso; mudanças visualmente rastreáveis",
+      "vocabulary": [
+        "a direct flight",
+        "a connecting flight",
+        "a delay",
+        "a boarding gate",
+        "a refund",
+        "travel insurance"
+      ],
+      "guided": "Uma pessoa relata uma conexão perdida e a amiga reage e ajuda a considerar opções; seis a oito falas",
+      "grammar": "Should have / shouldn’t have para avaliar uma decisão; if + had …, would have … como expansão contextual, sem cobrar domínio de todos os condicionais nesta aula",
+      "questions": [
+        {
+          "question": "What could they have done differently?",
+          "cue": "Suggest an alternative using the travel information",
+          "hint": "They could have … / They should have …"
+        },
+        {
+          "question": "Would that have solved the problem?",
+          "cue": "Explain a possible consequence without claiming certainty",
+          "hint": "If they’d …, they might have …"
+        }
+      ],
+      "mission": "A better travel plan",
+      "missionVisual": "Duas opções de trajeto e uma linha do tempo do que aconteceu; orçamento e horário de chegada como critérios",
+      "missionAction": "A aluna reconstrói a decisão, recomenda uma alternativa e discute o que ainda não daria para prever",
+      "missionClick": "Ver o desfecho revela uma consequência depois da escolha; a conversa avalia critérios, não adivinha um resultado oculto",
+      "listening": "Recado da companhia ou de uma amiga com uma alternativa disponível após o atraso",
+      "listenQuestion": {
+        "question": "What option is still available?",
+        "cue": "Explain the option and whether it helps",
+        "hint": "They can still …, but …"
+      },
+      "free": "Talk about decisions you would make differently and discuss what you learned from them",
+      "homework": "Gravar uma situação real ou fictícia, uma alternativa passada e uma lição aprendida",
+      "change": "Trocar transformação de frases por análise de itinerário e manter a linguagem de arrependimento ligada ao fato"
+    },
+    {
+      "code": "B1.08",
+      "title": "I’m getting used to the cold",
+      "objective": "Explicar adaptação a uma mudança e comparar o que ainda é difícil com o que já ficou normal",
+      "review": "Retomar hábitos antigos da B1.02",
+      "visual": "Duas cenas de rotina em ambientes diferentes e seis cartões de desafios cotidianos, sem depender de um destino específico",
+      "vocabulary": [
+        "settle in",
+        "commute",
+        "dress in layers",
+        "feel homesick",
+        "make friends",
+        "adjust your routine"
+      ],
+      "guided": "Uma pessoa conta como está se adaptando a uma cidade e a outra compartilha uma experiência; seis a oito falas",
+      "grammar": "Be used to / get used to + nome ou -ing; comparar com used to para hábito antigo em dois exemplos, sem acumular toda a lista de padrões verbais",
+      "questions": [
+        {
+          "question": "What are you still getting used to?",
+          "cue": "Describe a real or imagined change",
+          "hint": "I’m still getting used to …"
+        },
+        {
+          "question": "What has become easier?",
+          "cue": "Explain something that now feels normal",
+          "hint": "I’m used to … now, but at first …"
+        }
+      ],
+      "mission": "Help someone settle in",
+      "missionVisual": "Perfil de uma pessoa recém-chegada e três desafios ilustrados, como transporte, clima e novos contatos",
+      "missionAction": "A aluna pergunta sobre dificuldades, sugere uma adaptação e acompanha como a pessoa se sente com a mudança",
+      "missionClick": "Escolher um desafio mostra um fato e uma necessidade; a aluna faz uma pergunta antes de aconselhar",
+      "listening": "Mensagem com uma dificuldade que melhorou e outra que continua; a aluna responde levando as duas em conta",
+      "listenQuestion": {
+        "question": "What is getting easier, and what is still difficult?",
+        "cue": "Compare the two parts of the update",
+        "hint": "They’re used to … now, but …"
+      },
+      "free": "Talk about changes in routine and share how you adapt to unfamiliar situations",
+      "homework": "Gravar um antes/agora sobre adaptação e preparar uma pergunta sobre a experiência da professora",
+      "change": "Dar foco à adaptação; verbos seguidos de -ing/to aparecem quando necessários, sem virar um segundo assunto extenso"
+    },
+    {
+      "code": "B1.09",
+      "title": "My bike was stolen!",
+      "objective": "Relatar uma perda ou ocorrência, descrever um objeto e acompanhar uma atualização",
+      "review": "Retomar descrição de objetos e evidências da B1.04",
+      "visual": "Foto ou ilustração de bicicleta com características visíveis e uma ficha curta de ocorrência, sem formulário longo",
+      "vocabulary": [
+        "a bicycle lock",
+        "a serial number",
+        "a helmet",
+        "a bike rack",
+        "a report",
+        "lost property"
+      ],
+      "guided": "Uma pessoa explica o que aconteceu, descreve o objeto e confirma onde e quando foi visto; seis a oito falas",
+      "grammar": "Was/were + particípio e has been + particípio em acontecimentos e atualizações; agente só aparece quando conhecido e relevante",
+      "questions": [
+        {
+          "question": "What happened to the bike?",
+          "cue": "Report the event and add time or place",
+          "hint": "It was … while …"
+        },
+        {
+          "question": "How can we identify it?",
+          "cue": "Describe two distinctive features from the picture",
+          "hint": "It has … and …"
+        }
+      ],
+      "mission": "Make a clear report",
+      "missionVisual": "Objeto com três características e uma linha de tempo curta; fatos conhecidos separados de informações ainda ausentes",
+      "missionAction": "A aluna faz um relato ao atendimento, responde a perguntas e confirma a descrição anotada pela professora",
+      "missionClick": "Ver atualização mostra um objeto encontrado ou uma nova informação; a aluna compara os dados antes de concluir",
+      "listening": "Mensagem do setor de achados com uma atualização e um pedido de identificação",
+      "listenQuestion": {
+        "question": "Has the bike been found?",
+        "cue": "Report exactly what has and has not been confirmed",
+        "hint": "It has been … / It hasn’t been … yet"
+      },
+      "free": "Discuss how to report problems clearly and talk about situations where you needed help",
+      "homework": "Preparar um relato fictício de perda com descrição, local e horário; produzir uma atualização curta",
+      "change": "Usar a passiva para organizar um relato e uma atualização, sem exigir descobrir um agente que a história não informa"
+    },
+    {
+      "code": "B1.10",
+      "title": "Could you tell me where it is?",
+      "objective": "Pedir informações de forma adequada, esclarecer uma resposta incompleta e confirmar um plano",
+      "review": "Retomar direções do A1 e perguntas de confirmação",
+      "visual": "Mapa e programação de um evento com locais e horários; o conjunto sustenta dúvidas reais de uma visitante",
+      "vocabulary": [
+        "a reception desk",
+        "a cloakroom",
+        "a timetable",
+        "an entrance fee",
+        "a guided tour",
+        "an information point"
+      ],
+      "guided": "Uma visitante pergunta onde e quando uma atividade acontece e confere o que está incluído; seis a oito falas",
+      "grammar": "Could you tell me where … is? e Do you know if …?; contrastar a ordem com a pergunta direta usando o mesmo conteúdo",
+      "questions": [
+        {
+          "question": "What would you like to find out?",
+          "cue": "Ask for one piece of information politely",
+          "hint": "Could you tell me where … is?"
+        },
+        {
+          "question": "Do you need to check anything else?",
+          "cue": "Ask a follow-up question about time, access or what is included",
+          "hint": "Do you know if …?"
+        }
+      ],
+      "mission": "Plan your visit",
+      "missionVisual": "Mapa e programação com três atividades; um detalhe relevante precisa ser esclarecido com a professora como atendente",
+      "missionAction": "A aluna faz perguntas para montar uma visita viável e resume os horários e lugares que confirmou",
+      "missionClick": "Ver alteração revela uma mudança na programação; a aluna reformula a pergunta e adapta a visita",
+      "listening": "Recado do evento mudando o local de uma atividade e esclarecendo o que está incluído",
+      "listenQuestion": {
+        "question": "What do you need to check before going?",
+        "cue": "Identify a missing detail and formulate an indirect question",
+        "hint": "Do you know if …?"
+      },
+      "free": "Talk about places you would like to visit and practise asking useful follow-up questions",
+      "homework": "Preparar três perguntas educadas para uma visita e uma confirmação do plano",
+      "change": "A pergunta indireta serve para conseguir informação; remover conversões mecânicas que não mudam o que a pessoa consegue fazer"
+    },
+    {
+      "code": "B1.11",
+      "title": "The woman who’s dancing with Leo",
+      "objective": "Identificar e apresentar pessoas usando características que ajudam a outra pessoa a reconhecê-las",
+      "review": "Retomar pessoas e relações da A1.03 sem acrescentar biografia nova",
+      "visual": "Uma foto ilustrada de comemoração com pessoas em ações distintas; as pistas precisam apontar para alguém sem ambiguidade",
+      "vocabulary": [
+        "a guest",
+        "a host",
+        "a couple",
+        "a speech",
+        "a dance floor",
+        "a celebration"
+      ],
+      "guided": "Duas pessoas comentam quem está em uma comemoração e apresentam uma convidada; seis a oito falas",
+      "grammar": "Who / that / where para identificar pessoa, coisa e lugar; cada oração deve acrescentar informação necessária",
+      "questions": [
+        {
+          "question": "Which person would you like to meet?",
+          "cue": "Identify the person using a visible action or detail",
+          "hint": "The person who’s …"
+        },
+        {
+          "question": "How would you introduce them?",
+          "cue": "Use only the facts given on the person’s card",
+          "hint": "This is …, who …"
+        }
+      ],
+      "mission": "Introduce us",
+      "missionVisual": "Cena da comemoração e fichas curtas de pessoas com nome, relação e um fato; fatos novos são de exemplos, não biografia canônica",
+      "missionAction": "A aluna ajuda a professora a encontrar alguém, apresenta a pessoa e inicia uma pequena conversa",
+      "missionClick": "Selecionar pessoa revela a ficha depois da identificação pela imagem; a dica ajuda a construir a referência, sem esconder a fonte da resposta",
+      "listening": "Mensagem explicando quem procurar em um encontro e como reconhecer a pessoa",
+      "listenQuestion": {
+        "question": "Who should you look for?",
+        "cue": "Identify the person using the message and the scene",
+        "hint": "I should look for the person who …"
+      },
+      "free": "Talk about people you know, explain who they are and ask about people in your teacher’s life",
+      "homework": "Descrever três pessoas ou lugares para que outra pessoa consiga identificá-los",
+      "change": "Trocar lacunas repetidas por referência visual útil; não fixar um casamento ou parentesco novo só para justificar a imagem"
+    },
+    {
+      "code": "B1.12",
+      "title": "Office or home?",
+      "objective": "Sustentar uma preferência com razões, reconhecer uma desvantagem e chegar a uma recomendação conjunta",
+      "review": "Recuperar comparação, hipóteses e perguntas de acompanhamento do B1",
+      "visual": "Duas cenas de trabalho ou estudo, em casa e fora, e cartões com vantagens, dificuldades e necessidades de uma pessoa",
+      "vocabulary": [
+        "a commute",
+        "a distraction",
+        "a flexible schedule",
+        "teamwork",
+        "a workspace",
+        "a work-life balance"
+      ],
+      "guided": "Duas pessoas defendem opções diferentes, reconhecem um ponto da outra e procuram uma solução; seis a oito falas",
+      "grammar": "Although / however para contraste; because / because of / so para motivo e consequência, com poucos exemplos do debate",
+      "questions": [
+        {
+          "question": "Where do you work or study best?",
+          "cue": "State a preference and explain why",
+          "hint": "I work/study better … because …"
+        },
+        {
+          "question": "What’s a disadvantage of your choice?",
+          "cue": "Recognise a limitation without changing your answer automatically",
+          "hint": "Although …, I still think …"
+        }
+      ],
+      "mission": "Recommend a working routine",
+      "missionVisual": "Perfil fictício com três necessidades e opções presencial, remota e híbrida; sem uma opção apresentada como universalmente melhor",
+      "missionAction": "A aluna e a professora propõem rotinas, fazem perguntas e negociam uma recomendação que responda ao perfil",
+      "missionClick": "Nova necessidade revela uma restrição, exigindo adaptar a recomendação; mais de uma solução pode ser bem fundamentada",
+      "listening": "Depoimento curto de alguém com preferência e ressalva; a aluna compara esse caso ao perfil da missão",
+      "listenQuestion": {
+        "question": "What works for this person, and what is the drawback?",
+        "cue": "Report both the benefit and the limitation",
+        "hint": "It works because … However, …"
+      },
+      "free": "Discuss routines, explain your opinions and respond to each other’s reasons without a script",
+      "homework": "Gravar uma opinião com motivo, contraponto e conclusão e preparar perguntas para a revisão oral do B1",
+      "change": "Encerrar com uma discussão baseada em necessidades; permitir estudo e rotina pessoal para quem não vive contexto de escritório"
+    },
+    {
+      "code": "B2.01",
+      "title": "Dead phone, no charger",
+      "objective": "Contar uma história com contexto anterior, explicar o problema e responder às perguntas de quem escuta",
+      "review": "Retomar sequência no passado e pedido de esclarecimento do B1",
+      "visual": "Seis vinhetas curtas de viagem para contextualizar as expressões, com exemplo de uso por item; os objetos transparentes já aprovados entram como apoio quando necessários",
+      "vocabulary": [
+        "run out of battery",
+        "get lost",
+        "borrow",
+        "lend",
+        "an address",
+        "by then",
+        "eventually"
+      ],
+      "guided": "Preservar a história revisada de Ana e Kim e os fatos válidos sobre a viagem; conversa completa em duas partes quando o volume exigir",
+      "grammar": "Past simple, past perfect e past perfect continuous pelo papel na história: acontecimento, fato anterior e atividade anterior em andamento",
+      "questions": [
+        {
+          "question": "What had been happening before the phone died?",
+          "cue": "Explain the background using the timeline",
+          "hint": "She’d been …, so …"
+        },
+        {
+          "question": "What helped her solve the problem?",
+          "cue": "Explain a turning point and why it mattered",
+          "hint": "Eventually, … This helped because …"
+        }
+      ],
+      "mission": "Tell the story, then solve a new problem",
+      "missionVisual": "Quatro cartões de fatos para a narrativa e uma cena nova de viagem com problema equivalente, como perder um trem",
+      "missionAction": "A aluna conta a sequência com suas palavras; depois pede ajuda e negocia uma solução na nova situação",
+      "missionClick": "Nova situação revela um problema com dados suficientes para agir; a dica apoia a formulação sem entregar uma história inteira",
+      "listening": "Mensagem da aula atual com informação que complementa a história; a aluna identifica o que não estava confirmado antes",
+      "listenQuestion": {
+        "question": "What does the message add to the story?",
+        "cue": "Explain the new information and connect it to an earlier event",
+        "hint": "We now know that … Before that, …"
+      },
+      "free": "Tell a memorable story, ask about the background and explore how events affected the outcome",
+      "homework": "Gravar uma história com contexto, problema e desfecho e responder a uma pergunta sobre o que aconteceu antes",
+      "change": "Preservar objetos e expressões revisados; substituir treino redundante de tempos verbais por reconstrução e transferência para um problema novo"
+    },
+    {
+      "code": "B2.02",
+      "title": "By Friday I’ll have finished it",
+      "objective": "Negociar prazos distinguindo o que estará em andamento do que estará concluído",
+      "review": "Retomar compromissos e disponibilidade do A2 com mais detalhes",
+      "visual": "Calendário semanal e quadro de entregas com três tarefas, dependências e horários; contexto de evento ou projeto pessoal, não só trabalho corporativo",
+      "vocabulary": [
+        "a deadline",
+        "a progress update",
+        "a draft",
+        "a final version",
+        "a delay",
+        "a handover"
+      ],
+      "guided": "Duas pessoas organizam entregas antes de um evento e esclarecem o que pode ser prometido; seis a oito falas",
+      "grammar": "I’ll be working … para andamento e I’ll have finished … by … para conclusão antes de um marco; usar a mesma tarefa nos dois exemplos",
+      "questions": [
+        {
+          "question": "What will be ready by Friday?",
+          "cue": "Commit only to what the schedule supports",
+          "hint": "By Friday, I’ll have …"
+        },
+        {
+          "question": "What will you be doing when the others arrive?",
+          "cue": "Describe an activity in progress at that future time",
+          "hint": "I’ll be … when …"
+        }
+      ],
+      "mission": "Agree on a realistic deadline",
+      "missionVisual": "Três entregas com duração estimada e uma agenda compartilhada de exemplo",
+      "missionAction": "A aluna pergunta prioridades, negocia prazos e explica a consequência de antecipar uma entrega",
+      "missionClick": "Ver atraso altera uma dependência; a aluna propõe um novo compromisso e confirma o que ficará pronto",
+      "listening": "Atualização de uma pessoa que terminou uma etapa e precisa de mais tempo para outra",
+      "listenQuestion": {
+        "question": "Which deadline needs to change?",
+        "cue": "Use the progress update to revise the plan",
+        "hint": "They’ll have …, but they’ll still be …"
+      },
+      "free": "Talk about upcoming projects or personal plans and discuss realistic expectations and trade-offs",
+      "homework": "Gravar uma atualização de progresso e escrever uma confirmação curta de dois prazos",
+      "change": "Transformar futuros complexos em promessas e planejamento com consequências visíveis, sem adivinhar a forma verbal em frases isoladas"
+    },
+    {
+      "code": "B2.03",
+      "title": "If I hadn’t gone to Toronto",
+      "objective": "Relacionar uma decisão passada às consequências atuais e discutir alternativas possíveis",
+      "review": "Retomar hipóteses e decisões passadas das B1.06–B1.07",
+      "visual": "Duas linhas do tempo: o que aconteceu e uma alternativa hipotética; fotos representam decisões, não uma biografia nova obrigatória",
+      "vocabulary": [
+        "a turning point",
+        "take a chance",
+        "miss an opportunity",
+        "a consequence",
+        "a setback",
+        "a fresh start"
+      ],
+      "guided": "Duas pessoas refletem sobre uma mudança importante e como a vida atual foi afetada; seis a oito falas com perguntas e ressalvas",
+      "grammar": "If + had …, would … para consequência atual; segundo sentido de condicional misto como extensão, sem obrigar as duas formas em cada resposta",
+      "questions": [
+        {
+          "question": "How has that decision affected your life now?",
+          "cue": "Connect a past decision to a present consequence",
+          "hint": "If I hadn’t …, I wouldn’t … now"
+        },
+        {
+          "question": "What might be different in the other scenario?",
+          "cue": "Explore an alternative without pretending to know the outcome",
+          "hint": "I might …, but it’s hard to know whether …"
+        }
+      ],
+      "mission": "Two possible paths",
+      "missionVisual": "Dois caminhos com três consequências possíveis em cada um; marcar o que é fato e o que é hipótese",
+      "missionAction": "A aluna explica uma decisão real ou fictícia e a professora questiona uma consequência, levando a uma reflexão mais precisa",
+      "missionClick": "Revelar consequência acrescenta um dado ao cenário hipotético; a aluna pode rever a explicação, sem gabarito biográfico",
+      "listening": "Depoimento sobre uma escolha e uma consequência atual que a pessoa só percebeu depois",
+      "listenQuestion": {
+        "question": "What would be different now?",
+        "cue": "Explain the present consequence of the earlier decision",
+        "hint": "If they hadn’t …, they might … now"
+      },
+      "free": "Reflect on turning points, ask about alternatives and discuss what you can and cannot know about them",
+      "homework": "Gravar uma reflexão sobre uma escolha com um fato, uma consequência atual e uma hipótese claramente separada",
+      "change": "O condicional misto passa a explicar uma relação de sentido; remover a obrigação de encaixar toda fala em duas fórmulas"
+    },
+    {
+      "code": "B2.04",
+      "title": "Someone must have been here",
+      "objective": "Avaliar pistas sobre um acontecimento passado e distinguir dedução forte de possibilidade",
+      "review": "Recuperar graus de certeza da B1.04",
+      "visual": "Uma cena de apartamento com seis pistas observáveis e uma lista curta de fatos confirmados, sem pistas baseadas em estereótipos",
+      "vocabulary": [
+        "a clue",
+        "a footprint",
+        "a receipt",
+        "a spare key",
+        "a security camera",
+        "an explanation"
+      ],
+      "guided": "Duas pessoas tentam entender o que aconteceu, propõem explicações e testam uma hipótese; seis a oito falas",
+      "grammar": "Must have / might have / can’t have + particípio para dedução passada; comparação breve com must be para o presente",
+      "questions": [
+        {
+          "question": "What might have happened here?",
+          "cue": "Offer a hypothesis and point to the evidence",
+          "hint": "Someone might have … because …"
+        },
+        {
+          "question": "What would help you confirm that?",
+          "cue": "Identify what is still unknown",
+          "hint": "We’d need to check whether …"
+        }
+      ],
+      "mission": "Find the most plausible explanation",
+      "missionVisual": "Cena, três evidências e um registro de horário; fatos e interpretações ocupam áreas distintas",
+      "missionAction": "A aluna explica uma hipótese, ouve uma objeção e decide qual informação deve ser confirmada antes de concluir",
+      "missionClick": "Ver nova evidência revela um fato que muda a força de uma hipótese; aceitar interpretações compatíveis com os dados",
+      "listening": "Mensagem de alguém que esteve no local e esclarece parte do que aconteceu, mas não tudo",
+      "listenQuestion": {
+        "question": "Which explanation does the message support?",
+        "cue": "Use the new evidence and acknowledge what remains uncertain",
+        "hint": "It supports …, but we still don’t know …"
+      },
+      "free": "Discuss surprising situations, compare explanations and show how certain you are",
+      "homework": "Apresentar duas hipóteses para uma cena e explicar que evidência faltaria para confirmar cada uma",
+      "change": "Evitar um jogo de adivinhação com resposta secreta; valorizar raciocínio explícito e grau de certeza adequado"
+    },
+    {
+      "code": "B2.05",
+      "title": "We needn’t have paid in advance",
+      "objective": "Explicar gastos ou ações desnecessárias e negociar o que fazer depois",
+      "review": "Retomar avaliação de decisões passadas da B1.07",
+      "visual": "Reserva, condições e recibos fictícios de uma viagem, com os custos relevantes no mesmo campo de comparação",
+      "vocabulary": [
+        "a deposit",
+        "an extra charge",
+        "a cancellation fee",
+        "a refund",
+        "an advance payment",
+        "an included service"
+      ],
+      "guided": "Duas pessoas percebem que pagaram por algo já incluído e discutem a solução; seis a oito falas",
+      "grammar": "Needn’t have + particípio: a ação aconteceu e era desnecessária; didn’t need to + verbo: não havia necessidade, e o contexto esclarece se a ação ocorreu",
+      "questions": [
+        {
+          "question": "Which payment was unnecessary?",
+          "cue": "Use the receipt and booking conditions to explain",
+          "hint": "We needn’t have paid for … because …"
+        },
+        {
+          "question": "What should we do about it now?",
+          "cue": "Suggest a proportionate solution",
+          "hint": "We could ask whether …"
+        }
+      ],
+      "mission": "Check what was included",
+      "missionVisual": "Dois recibos e uma confirmação de reserva; apenas os valores e condições que afetam a conversa",
+      "missionAction": "A aluna identifica a diferença, explica ao atendimento e pede esclarecimento ou reembolso com base nas condições",
+      "missionClick": "Ver condições abre uma regra curta da reserva; uma resposta do atendimento exige decidir o próximo passo",
+      "listening": "Resposta do atendimento confirmando o que estava incluído e o que pode ser devolvido no caso fictício",
+      "listenQuestion": {
+        "question": "What can they get back, and why?",
+        "cue": "Report the condition explained in the reply",
+        "hint": "They can get … back because …"
+      },
+      "free": "Talk about unexpected costs and discuss how you would check information and ask for a solution",
+      "homework": "Gravar uma explicação de cobrança fictícia com pedido de esclarecimento e uma alternativa",
+      "change": "Dar um contexto financeiro fictício e claro, sem simplificar incorretamente didn’t need to como ação que necessariamente não ocorreu"
+    },
+    {
+      "code": "B2.06",
+      "title": "I need to get the screen fixed",
+      "objective": "Explicar um serviço, confirmar prazo e responder a um atraso ou resultado incompleto",
+      "review": "Retomar problemas e atendimento da A1.08 com mais precisão",
+      "visual": "Três cartões de serviço com objeto, problema, prazo e resultado esperado; evitar uma página que misture todos os atendimentos",
+      "vocabulary": [
+        "get a screen fixed",
+        "have a jacket altered",
+        "get a haircut",
+        "a repair shop",
+        "a quote",
+        "a collection date"
+      ],
+      "guided": "Uma pessoa combina um conserto e esclarece prazo e resultado; seis a oito falas com uma confirmação explícita",
+      "grammar": "Have/get + objeto + particípio; contraste entre it’s being fixed e it’s been fixed, ligado ao status do serviço",
+      "questions": [
+        {
+          "question": "What do you need to have done?",
+          "cue": "Describe the service and the expected result",
+          "hint": "I need to get …"
+        },
+        {
+          "question": "Will it be ready in time?",
+          "cue": "Ask about progress and negotiate a deadline",
+          "hint": "Could you confirm when …?"
+        }
+      ],
+      "mission": "Get the service sorted",
+      "missionVisual": "Um orçamento fictício, o objeto e dois prazos possíveis; escolher um serviço por rodada",
+      "missionAction": "A aluna combina o serviço, recebe um atraso e negocia uma solução que respeite sua necessidade",
+      "missionClick": "Ver status revela em andamento, concluído ou pendente, acompanhado de fatos; não usar apenas uma cor como informação",
+      "listening": "Áudio do prestador com atualização e uma opção de resolução; a aluna responde ao ponto principal",
+      "listenQuestion": {
+        "question": "What has been done, and what is still pending?",
+        "cue": "Explain the service status accurately",
+        "hint": "It’s been …, but … is still being …"
+      },
+      "free": "Compare experiences with services and discuss how you clarify expectations and solve problems",
+      "homework": "Gravar um pedido de serviço e uma resposta a atraso, com resultado e prazo claros",
+      "change": "Usar causativa e passiva em um atendimento completo, sem treinar vários serviços em uma tela poluída"
+    },
+    {
+      "code": "B2.07",
+      "title": "She insisted on paying",
+      "objective": "Resumir uma conversa mostrando a intenção de quem falou e corrigir uma versão imprecisa",
+      "review": "Retomar transmissão de recados da B1.05",
+      "visual": "Uma mesa de encontro e trechos curtos de mensagens; ações e falas sustentam a intenção, sem depender de expressões faciais ambíguas",
+      "vocabulary": [
+        "insist on",
+        "refuse to",
+        "admit that",
+        "deny doing",
+        "suggest doing",
+        "promise to"
+      ],
+      "guided": "Uma pessoa conta a outra como foi um encontro e explica o que cada participante propôs ou recusou; seis a oito falas",
+      "grammar": "Padrões de reporting verbs escolhidos pela intenção; contrastar suggest doing com estruturas de pedido sem uma lista extensa de todos os verbos",
+      "questions": [
+        {
+          "question": "What did each person actually agree to?",
+          "cue": "Summarise the commitments without adding promises",
+          "hint": "They agreed to …, but … refused to …"
+        },
+        {
+          "question": "Is that the same as what the message says?",
+          "cue": "Correct a change in meaning or intention",
+          "hint": "Not exactly. They suggested …; they didn’t promise …"
+        }
+      ],
+      "mission": "Give me the accurate version",
+      "missionVisual": "Três falas de uma conversa e duas versões resumidas, com a fonte sempre consultável",
+      "missionAction": "A aluna explica o encontro com suas palavras e esclarece uma interpretação exagerada apresentada pela professora",
+      "missionClick": "Ver contexto acrescenta a fala anterior ou posterior, permitindo revisar a intenção atribuída",
+      "listening": "Mensagem de uma participante esclarecendo o que sugeriu e o que não prometeu",
+      "listenQuestion": {
+        "question": "What does she want to clarify?",
+        "cue": "Separate the suggestion from the commitment",
+        "hint": "She suggested …, but she didn’t …"
+      },
+      "free": "Talk about conversations and misunderstandings, explaining intentions and checking interpretations",
+      "homework": "Resumir uma conversa fictícia em três intenções diferentes e gravar uma correção de entendimento",
+      "change": "Treinar fidelidade ao sentido, sem atribuir emoções ou intenções que a fonte não confirma"
+    },
+    {
+      "code": "B2.08",
+      "title": "The apartment, which has a balcony",
+      "objective": "Comparar opções acrescentando detalhes relevantes sem perder a clareza da descrição",
+      "review": "Retomar critérios de comparação da A2.10",
+      "visual": "Três apartamentos com fotos na mesma escala e campos iguais: preço, localização, espaço e uma característica distintiva",
+      "vocabulary": [
+        "a balcony",
+        "a viewing",
+        "a neighbourhood",
+        "a listing",
+        "a landlord",
+        "a maintenance fee"
+      ],
+      "guided": "Duas pessoas discutem apartamentos já identificados e acrescentam detalhes para decidir; seis a oito falas",
+      "grammar": "Defining e non-defining relative clauses pelo sentido; who/which/whose quando ajudam a identificar ou acrescentar uma informação útil",
+      "questions": [
+        {
+          "question": "Which detail changes your opinion?",
+          "cue": "Explain the relevance of one feature",
+          "hint": "The first one, which …, would …"
+        },
+        {
+          "question": "What would you ask before deciding?",
+          "cue": "Identify a missing detail and formulate a question",
+          "hint": "I’d want to know whether …"
+        }
+      ],
+      "mission": "Find a place that meets the brief",
+      "missionVisual": "Três anúncios e um perfil fictício com prioridades claras; sem uma ficha maior para um imóvel que para os outros",
+      "missionAction": "A aluna pergunta sobre os imóveis, compara os dados e recomenda uma opção, reconhecendo uma limitação",
+      "missionClick": "Ver detalhe revela uma informação que faltava, como custo de manutenção; a aluna mantém ou revê a recomendação",
+      "listening": "Recado de uma corretora com uma informação adicional sobre uma das opções",
+      "listenQuestion": {
+        "question": "Does the new information affect your recommendation?",
+        "cue": "Connect the detail to the person’s priorities",
+        "hint": "It does because … / It doesn’t change …"
+      },
+      "free": "Talk about places to live, compare priorities and add details that help the other person understand your choice",
+      "homework": "Descrever duas opções e fazer uma recomendação com detalhes adicionais bem selecionados",
+      "change": "A oração relativa serve à descrição e à decisão; evitar frases longas só para caber todas as estruturas"
+    },
+    {
+      "code": "B2.09",
+      "title": "I don’t remember locking the door",
+      "objective": "Distinguir lembrança de ação e tarefa pendente e orientar uma conferência a distância",
+      "review": "Retomar recados claros e instruções de B1.05",
+      "visual": "Cena de casa com estados observáveis e uma lista visual de saída; a pessoa ao telefone conhece parte, mas não todos os fatos",
+      "vocabulary": [
+        "lock the door",
+        "turn off the stove",
+        "unplug the iron",
+        "close the window",
+        "water the plants",
+        "leave a spare key"
+      ],
+      "guided": "Uma pessoa a caminho de uma viagem pede que a amiga confira a casa e esclarece o que lembra; seis a oito falas",
+      "grammar": "Remember doing / remember to do e forget doing / forget to do por situação; try doing/try to do somente como extensão se houver tempo e sentido",
+      "questions": [
+        {
+          "question": "What do you remember doing before leaving?",
+          "cue": "Separate a memory from something you are unsure about",
+          "hint": "I remember …, but I don’t remember …"
+        },
+        {
+          "question": "What do you need the other person to check?",
+          "cue": "Give a clear request and explain what to do if needed",
+          "hint": "Could you check whether …? If …, please …"
+        }
+      ],
+      "mission": "Check the house for me",
+      "missionVisual": "Casa com quatro focos e um cartão de fatos da pessoa que saiu; o estado de cada foco fica claro quando consultado",
+      "missionAction": "A aluna pede a conferência, reage aos fatos informados pela professora e confirma as ações necessárias",
+      "missionClick": "Conferir um foco revela o estado do objeto; a dica ajuda a pedir e orientar, sem revelar um fato que ainda não foi consultado",
+      "listening": "Resposta da amiga com duas verificações concluídas e uma dúvida que precisa de decisão",
+      "listenQuestion": {
+        "question": "What still needs a decision?",
+        "cue": "Distinguish completed checks from the unresolved point",
+        "hint": "She’s already …, but she needs to know whether …"
+      },
+      "free": "Talk about routines, memory and how you give clear instructions when you cannot be there",
+      "homework": "Gravar um pedido de conferência fictício com o que lembra, o que falta verificar e o que fazer",
+      "change": "Usar estados visuais e uma necessidade de comunicação, sem um jogo de memória que dependa de fatos não mostrados"
+    },
+    {
+      "code": "B2.10",
+      "title": "What I need is a quiet room",
+      "objective": "Fazer uma reclamação específica, recusar uma solução insuficiente e negociar uma resolução",
+      "review": "Retomar atendimento no hotel e descrição de problema do A1",
+      "visual": "Quarto com uma fonte de ruído clara, reserva fictícia e três soluções oferecidas com diferenças visíveis",
+      "vocabulary": [
+        "a disturbance",
+        "a complaint",
+        "a room change",
+        "a refund",
+        "an inconvenience",
+        "a suitable alternative"
+      ],
+      "guided": "Uma hóspede explica o impacto do problema, ouve uma primeira proposta e pede uma solução adequada; seis a oito falas",
+      "grammar": "What I need is … / It was … that … para dar foco; I did ask … para insistência com contexto, sem exigir ênfase em toda frase",
+      "questions": [
+        {
+          "question": "What is the main problem?",
+          "cue": "Explain the problem and its practical effect",
+          "hint": "What concerns me is … because …"
+        },
+        {
+          "question": "Would that solution work for you?",
+          "cue": "Accept or reject the offer and explain what you need",
+          "hint": "Thanks, but what I need is …"
+        }
+      ],
+      "mission": "Reach a workable solution",
+      "missionVisual": "Problema, necessidade da hóspede e três propostas da recepção; dados suficientes para avaliar cada opção",
+      "missionAction": "A aluna reclama, faz perguntas, recusa uma oferta insuficiente e chega a uma solução que resolve a necessidade principal",
+      "missionClick": "Ver nova proposta acrescenta uma alternativa com condição explícita; a aluna decide e confirma o acordo",
+      "listening": "Recado da gerente confirmando a solução com uma condição ou horário relevante",
+      "listenQuestion": {
+        "question": "Does the offer solve the original problem?",
+        "cue": "Compare the offer with the need stated earlier",
+        "hint": "It solves …, but we still need to confirm …"
+      },
+      "free": "Discuss expectations, disappointing experiences and ways to be firm and respectful when asking for a solution",
+      "homework": "Escrever uma reclamação curta com fato, impacto e pedido e gravar uma resposta a uma oferta insuficiente",
+      "change": "Dar sentido à ênfase por meio de uma negociação; não usar um título gramatical como única explicação da atividade"
+    },
+    {
+      "code": "B2.11",
+      "title": "Having said that",
+      "objective": "Apresentar uma proposta breve, reconhecer uma objeção e responder com uma justificativa relevante",
+      "review": "Retomar opinião e contraponto da B1.12",
+      "visual": "Antes/depois de um processo cotidiano e três dados de apoio; contexto pode ser equipe, estudo ou grupo comunitário",
+      "vocabulary": [
+        "a proposal",
+        "a benefit",
+        "a drawback",
+        "a concern",
+        "an alternative",
+        "a compromise"
+      ],
+      "guided": "Uma pessoa ensaia uma proposta com a amiga, que faz uma objeção concreta; seis a oito falas com reação e ajuste",
+      "grammar": "Marcadores para abrir, acrescentar, contrastar e concluir; escolher poucos pelo efeito, não obrigar uma expressão em cada linha",
+      "questions": [
+        {
+          "question": "What change would you propose?",
+          "cue": "Explain the change and the problem it addresses",
+          "hint": "I’d suggest … because …"
+        },
+        {
+          "question": "What about this concern?",
+          "cue": "Acknowledge the objection before responding",
+          "hint": "That’s a fair point. Having said that, …"
+        }
+      ],
+      "mission": "Pitch a useful change",
+      "missionVisual": "Uma situação atual, uma mudança proposta e três critérios; apresentação curta apoiada por imagem, não por texto para ler",
+      "missionAction": "A aluna propõe, a professora pergunta e apresenta uma objeção, e ambas ajustam a proposta para torná-la viável",
+      "missionClick": "Ver objeção revela um problema relacionado ao cenário; a dica oferece uma forma de reagir, sem gerar uma resposta argumentativa pronta",
+      "listening": "Resposta de uma pessoa interessada com um apoio e uma objeção fundamentada",
+      "listenQuestion": {
+        "question": "What would you change after hearing the objection?",
+        "cue": "Adapt the proposal while keeping its purpose",
+        "hint": "I’d keep …, but I’d change …"
+      },
+      "free": "Discuss changes you would like to make and explore each other’s objections and possible compromises",
+      "homework": "Preparar uma proposta de um minuto com um benefício, uma limitação e uma resposta a objeção",
+      "change": "Substituir marcadores encaixados por obrigação por uma proposta com audiência, critério e contraponto"
+    },
+    {
+      "code": "B2.12",
+      "title": "Should phones be banned at school?",
+      "objective": "Defender uma posição, considerar pessoas afetadas e negociar uma política com exceções justificadas",
+      "review": "Retomar hipóteses, graus de certeza, proposta e contraponto do B2",
+      "visual": "Três situações de uso do celular e cartões de perspectivas de alunos, famílias e escola; fatos de exemplo identificados como fictícios",
+      "vocabulary": [
+        "a distraction",
+        "an exception",
+        "accessibility",
+        "screen time",
+        "a restriction",
+        "a shared responsibility"
+      ],
+      "guided": "Duas pessoas discordam sobre uma regra e procuram uma proposta mais equilibrada; seis a oito falas sem um lado caricatural",
+      "grammar": "Despite / although e whereas / while para concessão e contraste; o restante funciona como revisão, sem novas listas de regra",
+      "questions": [
+        {
+          "question": "What problem should the policy solve?",
+          "cue": "Define the issue before choosing a rule",
+          "hint": "The main issue is …, rather than …"
+        },
+        {
+          "question": "Who might need an exception?",
+          "cue": "Consider a different perspective and justify a condition",
+          "hint": "Although …, we should allow … when …"
+        }
+      ],
+      "mission": "Design a workable policy",
+      "missionVisual": "Três situações concretas e uma ficha de política com regra, motivo e exceção; sem exigir uma redação longa na tela",
+      "missionAction": "A aluna e a professora negociam uma política, testam um caso que não se encaixa e revisam a proposta",
+      "missionClick": "Ver novo caso revela uma necessidade que desafia a regra; a conversa pode mudar a conclusão com justificativa",
+      "listening": "Depoimento com uma experiência que apoia parte da proposta e questiona outra",
+      "listenQuestion": {
+        "question": "Which part of your policy would you reconsider?",
+        "cue": "Use the new perspective to review one condition",
+        "hint": "I’d reconsider … because …"
+      },
+      "free": "Debate a policy, explore consequences and respond to each other’s strongest arguments",
+      "homework": "Gravar uma posição com justificativa, contraponto e exceção e preparar uma síntese para a revisão oral do B2",
+      "change": "Encerrar com negociação e consideração de perspectivas, sem declarar uma opinião pessoal certa ou errada"
+    },
+    {
+      "code": "C1.01",
+      "title": "It tends to come across as…",
+      "objective": "Dar feedback específico, ajustar o tom e checar como a outra pessoa interpretou a mensagem",
+      "review": "Retomar proposta e reação a objeção da B2.11",
+      "visual": "Seis vinhetas curtas com as expressões em contexto; duas versões de uma mensagem ilustram efeitos diferentes sobre a mesma relação",
+      "vocabulary": [
+        "come across as",
+        "take it on board",
+        "constructive",
+        "harsh",
+        "a learning curve",
+        "to be fair"
+      ],
+      "guided": "Preservar a conversa revisada de preparação de feedback e os fatos sobre Raj; diálogo em partes quando necessário, com pelo menos seis falas no conjunto",
+      "grammar": "Tend to / seem / might come across as e formas de sugestão pelo efeito no interlocutor; comparar enunciados com o mesmo objetivo",
+      "questions": [
+        {
+          "question": "How might that message come across?",
+          "cue": "Describe a possible interpretation without treating it as a fact",
+          "hint": "It might come across as …, especially if …"
+        },
+        {
+          "question": "How would you raise the issue?",
+          "cue": "State an observation and a specific constructive suggestion",
+          "hint": "I’ve noticed … I wonder if we could …"
+        }
+      ],
+      "mission": "Make the feedback useful",
+      "missionVisual": "Uma situação, uma evidência concreta e dois objetivos de conversa; a imagem contextualiza sem substituir a fonte do problema",
+      "missionAction": "A aluna dá feedback, a professora reage como interlocutora e a aluna esclarece a intenção e combina um próximo passo",
+      "missionClick": "Ver reação revela uma interpretação ou dúvida; a dica ajuda a reformular, sem declarar um único tom correto fora de contexto",
+      "listening": "Resposta de Raj ou de outro interlocutor com um ponto aceito e uma ressalva; usar a gravação revisada quando os fatos forem preservados",
+      "listenQuestion": {
+        "question": "What did the person accept, and what needs clarifying?",
+        "cue": "Separate agreement from a remaining concern",
+        "hint": "They’ve taken … on board, but …"
+      },
+      "free": "Discuss how you give and receive feedback and adapt your language to the person and the situation",
+      "homework": "Escrever um feedback breve com observação, impacto e sugestão e gravar uma reformulação após uma reação",
+      "change": "Manter o que já foi revisado e avaliar efeito, especificidade e resposta; não tratar uma frase como natural ou inadequada sem contexto"
+    },
+    {
+      "code": "C1.02",
+      "title": "Had we known…",
+      "objective": "Analisar um resultado, separar causa e culpa e propor uma prevenção coerente com os fatos",
+      "review": "Retomar hipótese passada e consequência atual da B2.03",
+      "visual": "Linha do tempo de um evento fictício, três indicadores e um comentário de participante; dados pequenos e identificados como simulados",
+      "vocabulary": [
+        "an assumption",
+        "a warning sign",
+        "a contingency plan",
+        "an oversight",
+        "a root cause",
+        "a lesson learned"
+      ],
+      "guided": "Duas pessoas analisam o que saiu diferente do esperado e discutem o que poderiam ter feito; seis a oito falas com cautela sobre causa",
+      "grammar": "Had we … / Should … / Were we to … como escolhas de registro; comparar com if sem obrigar a inversão em uma conversa informal",
+      "questions": [
+        {
+          "question": "What could reasonably have been anticipated?",
+          "cue": "Distinguish an available warning from hindsight",
+          "hint": "Had we known …, we could have …"
+        },
+        {
+          "question": "What would you change next time?",
+          "cue": "Propose a prevention linked to the actual cause",
+          "hint": "If we do this again, I’d …"
+        }
+      ],
+      "mission": "Run a useful review",
+      "missionVisual": "Quatro fatos do evento e duas explicações possíveis; a fonte de cada dado fica disponível",
+      "missionAction": "A aluna conduz uma retrospectiva, questiona uma atribuição de culpa e chega a uma ação preventiva com a professora",
+      "missionClick": "Ver novo dado revela uma informação que enfraquece uma conclusão inicial; a aluna revisa a análise sem perder o objetivo",
+      "listening": "Mensagem de alguém envolvido com um fato que faltava e uma proposta de prevenção",
+      "listenQuestion": {
+        "question": "Does the new information change your explanation?",
+        "cue": "Revise the cause or state why it still holds",
+        "hint": "It changes …, because … / It doesn’t rule out …"
+      },
+      "free": "Reflect on outcomes, discuss what was foreseeable and challenge each other’s explanations respectfully",
+      "homework": "Produzir uma síntese curta com fato, hipótese causal e uma ação de prevenção; escolher o registro adequado",
+      "change": "Trocar transformação em condicionais invertidas por análise de evidência e prevenção; linguagem formal continua opcional e contextual"
+    },
+    {
+      "code": "C1.03",
+      "title": "The company is said to be…",
+      "objective": "Transmitir uma informação atribuindo a fonte e distinguindo notícia, alegação e confirmação",
+      "review": "Retomar fatos e inferências da B2.04",
+      "visual": "Três fontes simuladas sobre o mesmo acontecimento: notícia, postagem e declaração; autoria e data aparecem de forma legível",
+      "vocabulary": [
+        "reportedly",
+        "an allegation",
+        "a reliable source",
+        "an unconfirmed report",
+        "an official statement",
+        "verify a claim"
+      ],
+      "guided": "Duas pessoas discutem uma notícia recebida por mensagem e distinguem o que foi confirmado do que foi apenas relatado; seis a oito falas",
+      "grammar": "It’s reported that … / … is said to … / … is thought to have … com atribuição; uma estrutura de relato não transforma a alegação em fato",
+      "questions": [
+        {
+          "question": "What can we actually confirm?",
+          "cue": "Separate verified information from the claim",
+          "hint": "The statement confirms …, but … is still unverified"
+        },
+        {
+          "question": "How would you pass this on responsibly?",
+          "cue": "Attribute the information and preserve its uncertainty",
+          "hint": "According to …, … is reported to …"
+        }
+      ],
+      "mission": "Decide what to share",
+      "missionVisual": "Três trechos de fonte sobre uma notícia fictícia, com um pequeno quadro fato, alegação e dúvida",
+      "missionAction": "A aluna prepara uma explicação para alguém que não leu as fontes, responde a uma dúvida e corrige uma afirmação exagerada",
+      "missionClick": "Abrir fonte mostra o trecho e sua origem; uma atualização permite revisar a síntese, sem fingir que a notícia é atual ou real",
+      "listening": "Mensagem com uma correção ou ressalva de uma fonte; a aluna atualiza o que diria a outra pessoa",
+      "listenQuestion": {
+        "question": "Which part of the original claim needs revising?",
+        "cue": "Explain the correction and keep the attribution clear",
+        "hint": "The source now says …, rather than …"
+      },
+      "free": "Discuss how you evaluate information and explain uncertainty when sharing something with others",
+      "homework": "Resumir duas fontes simuladas preservando atribuição, ressalva e o que ainda precisa ser verificado",
+      "change": "Substituir frase passiva isolada por comparação de fontes e transmissão responsável de informação"
+    },
+    {
+      "code": "C1.04",
+      "title": "I’d rather you didn’t",
+      "objective": "Estabelecer um limite, ouvir a necessidade da outra pessoa e negociar um acordo respeitoso",
+      "review": "Retomar tom e feedback da C1.01",
+      "visual": "Duas situações ilustradas de convivência e uma mensagem ainda não enviada; cada situação mostra impacto e necessidade",
+      "vocabulary": [
+        "set a boundary",
+        "bring something up",
+        "a shared space",
+        "an expectation",
+        "a compromise",
+        "a recurring issue"
+      ],
+      "guided": "Duas pessoas conversam sobre um hábito que causa incômodo e procuram um acordo; seis a oito falas com espaço para a resposta da outra",
+      "grammar": "I’d rather you … / Would you mind if …? / I wish you wouldn’t … pelo efeito e pela relação; passado de distância não significa acontecimento passado",
+      "questions": [
+        {
+          "question": "How would you bring this up without making it personal?",
+          "cue": "Describe the impact and make a specific request",
+          "hint": "I’ve been finding … difficult. Would you mind …?"
+        },
+        {
+          "question": "What could you offer in return?",
+          "cue": "Acknowledge the other person’s need and suggest a compromise",
+          "hint": "I understand … Perhaps we could …"
+        }
+      ],
+      "mission": "Agree on a boundary",
+      "missionVisual": "Situação de convivência com a necessidade de cada pessoa e duas possibilidades de acordo",
+      "missionAction": "A aluna inicia a conversa, reage a uma necessidade diferente da professora e chega a uma condição que ambas entendem",
+      "missionClick": "Ver perspectiva revela a necessidade da outra pessoa antes de fechar o acordo; a dica apoia tom e clareza, não uma submissão automática",
+      "listening": "Resposta da interlocutora aceitando parte do pedido e propondo uma condição",
+      "listenQuestion": {
+        "question": "What is the person agreeing to, and on what condition?",
+        "cue": "Identify the agreement and the limit of that agreement",
+        "hint": "They’re willing to …, provided that …"
+      },
+      "free": "Talk about boundaries, expectations and ways to disagree while maintaining a good relationship",
+      "homework": "Escrever uma mensagem de limite para uma situação fictícia e gravar uma resposta a contraproposta",
+      "change": "Manter a atividade segura e concreta, sem obrigar a aluna a expor um conflito íntimo ou usar a forma mais forte sem necessidade"
+    },
+    {
+      "code": "C1.05",
+      "title": "Little did I know…",
+      "objective": "Contar uma história envolvente escolhendo o detalhe, a pausa e a ênfase que ajudam quem escuta",
+      "review": "Retomar sequência e contexto de histórias do B1 e B2",
+      "visual": "Três imagens de uma história com um objeto ou detalhe que ganha significado no final; evitar balões embutidos nas imagens",
+      "vocabulary": [
+        "at first",
+        "to my surprise",
+        "as it turned out",
+        "a turning point",
+        "looking back",
+        "the last thing I expected"
+      ],
+      "guided": "Uma pessoa conta uma surpresa e a outra reage e pede esclarecimentos; seis a oito falas com uma revelação compreensível",
+      "grammar": "Little did I know / Never had I … / No sooner … than … como opções de ênfase, em contraste com uma versão simples igualmente válida",
+      "questions": [
+        {
+          "question": "Which detail would you reveal first?",
+          "cue": "Choose what the listener needs before the surprise",
+          "hint": "At first, … What I didn’t realise was …"
+        },
+        {
+          "question": "What changed the way you saw the situation?",
+          "cue": "Explain the turning point and its significance",
+          "hint": "As it turned out, …"
+        }
+      ],
+      "mission": "Tell a story worth following",
+      "missionVisual": "Três cartões ilustrados e um cartão de desfecho; a aluna pode escolher uma história fictícia em vez de contar um fato pessoal",
+      "missionAction": "A aluna conta sem ler um roteiro e ajusta a explicação quando a professora não entende uma relação entre os fatos",
+      "missionClick": "Escolher um desfecho orienta o enredo; a lâmpada oferece uma maneira de organizar ou enfatizar, sem escrever a história inteira",
+      "listening": "Uma história curta com uma surpresa; a aluna comenta que pista preparou o desfecho e o que não estava explícito",
+      "listenQuestion": {
+        "question": "What made the ending surprising?",
+        "cue": "Connect the initial expectation to the final detail",
+        "hint": "At first I assumed …, but …"
+      },
+      "free": "Share stories, react naturally and ask questions about the details that matter",
+      "homework": "Gravar uma história de um a dois minutos com preparação e desfecho e escolher uma ênfase que tenha função",
+      "change": "Não pedir inversão em cada frase nem fazer a aluna recitar um texto; o critério é a história ficar clara e interessante"
+    },
+    {
+      "code": "C1.06",
+      "title": "The more I think about it…",
+      "objective": "Comparar opções complexas, tornar prioridades explícitas e rever uma decisão quando os dados mudam",
+      "review": "Retomar comparação e recomendação da B2.08",
+      "visual": "Duas opções de mudança, curso ou projeto com os mesmos quatro critérios e duas informações ainda incertas",
+      "vocabulary": [
+        "a trade-off",
+        "a priority",
+        "a long-term benefit",
+        "a short-term cost",
+        "a deal-breaker",
+        "reconsider a decision"
+      ],
+      "guided": "Duas pessoas comparam uma mudança importante e percebem que priorizam coisas diferentes; seis a oito falas",
+      "grammar": "The more …, the more/less …; intensificadores de comparação pelo tamanho da diferença, sem exagerar além dos dados",
+      "questions": [
+        {
+          "question": "Which trade-off matters most to you?",
+          "cue": "Explain a priority and what you would give up",
+          "hint": "The more I consider …, the more … matters to me"
+        },
+        {
+          "question": "What would make you reconsider?",
+          "cue": "Name information that could genuinely change your choice",
+          "hint": "I’d reconsider if …"
+        }
+      ],
+      "mission": "Make the case, then rethink it",
+      "missionVisual": "Duas fichas comparáveis e uma escala de prioridades escolhidas pela pessoa, não pelo sistema",
+      "missionAction": "A aluna recomenda uma opção para um perfil fictício, escuta a prioridade da professora e discute se a recomendação continua adequada",
+      "missionClick": "Ver novo dado altera um critério importante; a aluna revê ou defende a escolha com justificativa",
+      "listening": "Mensagem com uma vantagem pouco considerada e uma limitação de uma das opções",
+      "listenQuestion": {
+        "question": "Does this information change the balance?",
+        "cue": "Explain which criterion now carries more or less weight",
+        "hint": "It makes … more important, although …"
+      },
+      "free": "Explore a difficult choice, discuss your priorities and challenge each other’s assumptions",
+      "homework": "Produzir uma recomendação curta com escolha, concessão e condição que poderia mudar a decisão",
+      "change": "Não impor um vencedor fixo; avançar da comparação de adjetivos para prioridades, concessões e revisão de decisão"
+    },
+    {
+      "code": "C1.07",
+      "title": "Having talked to the team…",
+      "objective": "Sintetizar informação para uma pessoa específica, preservando o que importa e tornando o próximo passo claro",
+      "review": "Retomar propostas e sínteses das B2.11 e C1.02",
+      "visual": "Três notas curtas de uma reunião ou projeto e um perfil de audiência com a decisão que precisa tomar",
+      "vocabulary": [
+        "a key takeaway",
+        "a constraint",
+        "an outcome",
+        "an action point",
+        "a supporting detail",
+        "an executive summary"
+      ],
+      "guided": "Uma pessoa ensaia uma atualização e a outra pede menos detalhe e mais clareza sobre o próximo passo; seis a oito falas",
+      "grammar": "Having + particípio, faced with e given para organizar informação quando o sujeito e a relação de sentido ficam claros; comparar com uma versão oral simples",
+      "questions": [
+        {
+          "question": "What does this person need to know first?",
+          "cue": "Prioritise the information for the stated audience",
+          "hint": "The key point is … because they need to decide …"
+        },
+        {
+          "question": "What can you leave out without changing the meaning?",
+          "cue": "Remove a detail while preserving the decision and its reason",
+          "hint": "We can leave out …, but we need to keep …"
+        }
+      ],
+      "mission": "Brief someone who wasn’t there",
+      "missionVisual": "Três fontes curtas com decisão, motivo e pendência; a mensagem final não fica pronta na tela",
+      "missionAction": "A aluna faz uma síntese oral para a professora, que assume uma audiência e pede um esclarecimento; depois adapta a síntese a outra audiência",
+      "missionClick": "Trocar audiência muda o que é relevante; a dica apoia organização e transição, sem simplesmente encurtar todas as frases",
+      "listening": "Atualização com uma decisão nova e um detalhe secundário; a aluna integra só o que afeta a audiência",
+      "listenQuestion": {
+        "question": "What should be added to your briefing?",
+        "cue": "Select the update that changes the decision or next step",
+        "hint": "We need to add … because …"
+      },
+      "free": "Discuss how you make complicated information clear and practise summarising each other’s ideas",
+      "homework": "Produzir duas sínteses curtas da mesma informação para audiências diferentes, mantendo os fatos",
+      "change": "Concisão deixa de ser corte mecânico de palavras e passa a ser seleção de informação para uma audiência"
+    },
+    {
+      "code": "C1.08",
+      "title": "Much as I’d like to…",
+      "objective": "Responder a uma proposta indesejada com clareza, reconhecer um interesse legítimo e negociar condições",
+      "review": "Retomar limites e concessões das C1.04 e B2.12",
+      "visual": "Uma proposta de mudança, seu impacto e três condições negociáveis; simulação de vida pessoal, estudo ou trabalho",
+      "vocabulary": [
+        "a non-negotiable",
+        "a concession",
+        "a counterproposal",
+        "a feasible option",
+        "a shared interest",
+        "a sticking point"
+      ],
+      "guided": "Duas pessoas discutem uma mudança que uma delas não quer aceitar como está; seis a oito falas com contraproposta concreta",
+      "grammar": "Much as … / even so / however + adjetivo / whatever pelo efeito de concessão e limite; oferecer versões informais quando adequadas",
+      "questions": [
+        {
+          "question": "Which part could you accept?",
+          "cue": "Recognise common ground before stating a limit",
+          "hint": "I can see the value of … Even so, …"
+        },
+        {
+          "question": "What alternative would protect both interests?",
+          "cue": "Make a specific counterproposal",
+          "hint": "Much as I’d like to …, I’d suggest … instead"
+        }
+      ],
+      "mission": "Negotiate a workable change",
+      "missionVisual": "Proposta, necessidade de cada pessoa e duas variáveis ajustáveis, como prazo e frequência",
+      "missionAction": "A aluna responde, a professora apresenta um interesse legítimo e ambas negociam sem tratar a concordância como objetivo obrigatório",
+      "missionClick": "Ver condição revela uma restrição que precisa ser considerada; a aluna escolhe se aceita, contrapropõe ou recusa com motivo",
+      "listening": "Resposta à contraproposta com uma concessão e um ponto ainda não negociável",
+      "listenQuestion": {
+        "question": "What common ground is there now?",
+        "cue": "State what is agreed and what remains open",
+        "hint": "We agree on … The sticking point is …"
+      },
+      "free": "Discuss changes you would and would not accept and explore conditions that could make them workable",
+      "homework": "Gravar uma contraproposta com reconhecimento, limite e alternativa e escrever uma confirmação curta",
+      "change": "Substituir um no automático ou uma transformação formal por negociação de interesses e condições"
+    },
+    {
+      "code": "C1.09",
+      "title": "It’s bound to get worse",
+      "objective": "Fazer previsões com grau de certeza adequado e propor uma ação sem tratar hipótese como fato",
+      "review": "Retomar avaliação de fonte e incerteza da C1.03",
+      "visual": "Dois gráficos simples e três cenários urbanos fictícios, com rótulos claros de observação, previsão e hipótese",
+      "vocabulary": [
+        "a trend",
+        "a projection",
+        "a likely outcome",
+        "a worst-case scenario",
+        "an early sign",
+        "a contributing factor"
+      ],
+      "guided": "Duas pessoas interpretam uma mudança na cidade, discordam do grau de certeza e discutem uma ação; seis a oito falas",
+      "grammar": "Likely/unlikely, bound to e set to pelo grau de compromisso e pelo registro; was going to / was about to para uma expectativa passada que mudou",
+      "questions": [
+        {
+          "question": "How certain can we be from these figures?",
+          "cue": "Match your claim to the strength of the evidence",
+          "hint": "The figures suggest …, but they don’t establish …"
+        },
+        {
+          "question": "What would be a sensible next step?",
+          "cue": "Propose action while acknowledging uncertainty",
+          "hint": "Even if …, it would be worth …"
+        }
+      ],
+      "mission": "Forecast without overstating",
+      "missionVisual": "Dados de exemplo com dois cenários e uma decisão a tomar; sem estatísticas apresentadas como notícia real",
+      "missionAction": "A aluna explica uma previsão, responde a um questionamento e propõe uma ação que continua razoável em mais de um cenário",
+      "missionClick": "Ver cenário alternativo muda uma premissa; a aluna ajusta a previsão e o grau de certeza",
+      "listening": "Comentário de outra pessoa interpretando os mesmos dados e destacando uma limitação",
+      "listenQuestion": {
+        "question": "Which assumption is the speaker questioning?",
+        "cue": "Explain the limitation and revise your claim if needed",
+        "hint": "They’re questioning whether …, so I’d qualify …"
+      },
+      "free": "Discuss possible changes in your city or daily life, test assumptions and make careful predictions",
+      "homework": "Gravar uma previsão com evidência, grau de certeza e uma ressalva explícita",
+      "change": "Distinguir linguagem forte de prova; usar dados ilustrativos e não uma resposta única sobre um futuro desconhecido"
+    },
+    {
+      "code": "C1.10",
+      "title": "I’m writing to let you know…",
+      "objective": "Transmitir a mesma notícia adaptando tom, seleção de detalhe e próximo passo à pessoa e ao canal",
+      "review": "Retomar audiência e síntese da C1.07",
+      "visual": "A mesma informação em e-mail, mensagem curta e conversa; os fatos são iguais, mudam relação e finalidade",
+      "vocabulary": [
+        "an update",
+        "a recipient",
+        "a tone",
+        "an acknowledgement",
+        "a call to action",
+        "a follow-up"
+      ],
+      "guided": "Uma pessoa pede opinião sobre uma mensagem e a amiga explica por que o texto parece formal ou vago demais; seis a oito falas",
+      "grammar": "Formas de cortesia, distância e elipse informal como opções de registro; não confundir linguagem rebuscada com maior proficiência",
+      "questions": [
+        {
+          "question": "Who is this message for, and what do they need to do?",
+          "cue": "Identify audience and action before choosing the tone",
+          "hint": "It’s for … They need to …"
+        },
+        {
+          "question": "How would you say the same thing to a friend?",
+          "cue": "Keep the facts and change the register",
+          "hint": "Quick update: … Could you …?"
+        }
+      ],
+      "mission": "Same news, different audience",
+      "missionVisual": "Uma notícia fictícia com três fatos e dois cartões de destinatário, cada qual com relação e necessidade claras",
+      "missionAction": "A aluna transmite oralmente, escreve uma mensagem curta e adapta a versão para outra audiência; a professora confere se o próximo passo ficou claro",
+      "missionClick": "Trocar destinatário altera relação e canal; a lâmpada ajuda no tom e na ação, sem reescrever uma mensagem completa pela aluna",
+      "listening": "Resposta de uma pessoa que entendeu a notícia, mas não o próximo passo; a aluna precisa esclarecer",
+      "listenQuestion": {
+        "question": "What was unclear to the recipient?",
+        "cue": "Identify the missing action and clarify it",
+        "hint": "I should make it clear that …"
+      },
+      "free": "Compare communication styles and practise adapting the same idea to different people and situations",
+      "homework": "Escrever duas versões da mesma atualização e gravar uma versão oral natural",
+      "change": "Avaliar clareza, audiência e efeito; não classificar toda mensagem curta como informal demais nem exigir fórmulas prontas de e-mail"
+    },
+    {
+      "code": "C1.11",
+      "title": "To put it another way…",
+      "objective": "Reformular uma ideia, desfazer um mal-entendido e mediar uma conversa entre perspectivas diferentes",
+      "review": "Retomar síntese, registro e checagem de entendimento das C1.07 e C1.10",
+      "visual": "Dois pontos de vista e um pequeno dado ou exemplo concreto; um diagrama simples conecta a ideia original à explicação",
+      "vocabulary": [
+        "in other words",
+        "what I mean is",
+        "to put it another way",
+        "a misunderstanding",
+        "a clarification",
+        "common ground"
+      ],
+      "guided": "Duas pessoas percebem que estão usando uma palavra com sentidos diferentes e reformulam até se entender; seis a oito falas",
+      "grammar": "Marcadores de reformulação pelo efeito; nominalização como escolha de escrita densa e sua expansão em linguagem oral clara, sem premiar jargão",
+      "questions": [
+        {
+          "question": "What do you think the other person means?",
+          "cue": "Check your interpretation before responding",
+          "hint": "So, if I understand you correctly, …"
+        },
+        {
+          "question": "Can you explain it another way?",
+          "cue": "Use a concrete example rather than repeat the same words",
+          "hint": "To put it another way, imagine …"
+        }
+      ],
+      "mission": "Help them understand each other",
+      "missionVisual": "Duas mensagens curtas com um ponto em comum e uma diferença; fontes consultáveis e fatos preservados",
+      "missionAction": "A aluna explica cada posição à professora, verifica a interpretação e propõe uma formulação que as duas pessoas reconheceriam",
+      "missionClick": "Ver reação mostra qual trecho foi entendido de outro jeito; a aluna tenta outra explicação e confirma o entendimento",
+      "listening": "Uma pessoa explica o que quis dizer e corrige uma interpretação; incorporar a correção à síntese",
+      "listenQuestion": {
+        "question": "What did the listener misunderstand?",
+        "cue": "State the original interpretation and the intended meaning",
+        "hint": "They took it to mean …, whereas …"
+      },
+      "free": "Explore ideas, ask for clarification and reformulate until both of you understand the other’s point",
+      "homework": "Explicar uma ideia de duas formas, uma com exemplo concreto, e gravar uma checagem de entendimento",
+      "change": "Trocar substituição de sinônimos por mediação com interlocutor e evidência de que o sentido foi preservado"
+    },
+    {
+      "code": "C1.12",
+      "title": "A world without cash",
+      "objective": "Integrar fontes, defender uma posição com nuances e negociar uma proposta que considere pessoas afetadas",
+      "review": "Recuperar atribuição, concessão, previsão, reformulação e negociação do C1",
+      "visual": "Três situações de pagamento e duas fontes curtas simuladas com perspectivas diferentes; diagramas nativos, sem simular uma transação real",
+      "vocabulary": [
+        "financial inclusion",
+        "privacy",
+        "a transaction fee",
+        "digital access",
+        "a fallback option",
+        "an unintended consequence"
+      ],
+      "guided": "Duas pessoas discutem pagamentos sem dinheiro, esclarecem uma discordância e procuram uma proposta com condições; seis a oito falas",
+      "grammar": "Sem regra nova; selecionar linguagem já aprendida para atribuir, qualificar, conceder e reformular quando ela servir ao argumento",
+      "questions": [
+        {
+          "question": "Whose needs might this proposal overlook?",
+          "cue": "Consider a perspective not yet represented",
+          "hint": "One group we haven’t considered is …"
+        },
+        {
+          "question": "What would make your proposal more workable?",
+          "cue": "Add a condition or exception and justify it",
+          "hint": "I’d support …, provided that …"
+        }
+      ],
+      "mission": "Reach a balanced recommendation",
+      "missionVisual": "Dois textos curtos, um comentário de usuário fictício e três critérios de decisão; nenhuma fonte representa a resposta oficial da aula",
+      "missionAction": "A aluna sintetiza as perspectivas, apresenta uma recomendação, recebe uma objeção e ajusta ou sustenta sua posição com clareza",
+      "missionClick": "Ver novo caso revela uma necessidade que testa a recomendação; a dica apoia concessão e reformulação, sem fornecer a opinião a defender",
+      "listening": "Depoimento com uma experiência que não estava nas fontes e que pode mudar uma condição da proposta",
+      "listenQuestion": {
+        "question": "How does this experience affect your recommendation?",
+        "cue": "Connect the new perspective to a specific part of your proposal",
+        "hint": "It doesn’t necessarily change …, but it highlights …"
+      },
+      "free": "Explore the issue freely, challenge assumptions and work towards a nuanced view without reading a script",
+      "homework": "Preparar uma síntese oral de duas fontes com posicionamento próprio, contraponto e ressalva para a revisão final",
+      "change": "Fechar com uma discussão integrada e mediar perspectivas; não medir C1 por quantidade de estruturas raras ou concordância com uma opinião"
+    }
+  ]
+}

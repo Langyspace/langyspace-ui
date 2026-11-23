@@ -1,7 +1,18 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
-Atualizada em 22/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
+Atualizada em 23/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
+
+## Perguntas em balões — planejamento77
+
+Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercícios colocar; sempre que houver perguntas, usar o modelo de balões com o que a pessoa deve responder e o botão de dica. Os [60 planos de exercícios A1–C1](planos-a1-c1/README.md) aplicam essa orientação, sem alterar as aulas publicadas nesta entrega.
+
+- Nas conversas pessoais, compreensão de diálogo/áudio, revisão e reflexão, mostrar o balão da professora com a pergunta e o balão da aluna com uma intenção curta do que comunicar. A intenção não é uma resposta completa nem um espaço vazio sem orientação.
+- Uma lâmpada abaixo da conversa revela apoios de linguagem na ordem dos balões, mantendo as perguntas visíveis. A dica oferece um começo de frase ou uma estratégia útil; não inventa fatos ou preferências pessoais e não se limita à primeira letra de uma palavra.
+- Nas perguntas factuais, deixar clara a fonte da resposta e preservar os fatos do diálogo, imagem ou áudio. Nas pessoais, aceitar respostas variadas. Perguntar preferência não pode exigir como resposta apenas gostar; a ação pedida e o apoio precisam corresponder.
+- Reutilizar os mesmos balões, identidade, dimensões e estados de áudio/lacunas da conversação guiada. Se faltar uma variação, alterar primeiro o dono canônico na UI Library; não copiar a interface por aula. Este pedido de planejamento não cria props nem altera o comportamento dos componentes.
+- O plano dessas perguntas usa a lâmpada como controle principal, sem acrescentar olho ou Next turn por padrão. Outros formatos que precisam de revelação factual continuam com seu contrato próprio até uma revisão explícita; não remover controles globalmente com base nesta regra.
+- Manter uma finalidade comunicativa por tarefa. Pronúncia, múltipla escolha, certo/errado e lacunas são escolhas justificadas pelo objetivo, não páginas obrigatórias para preencher o mesmo molde nas 60 aulas. Preservar exercícios já revisados quando continuam úteis.
 
 ## Rotina personalizada — feedback74
 
