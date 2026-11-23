@@ -18,6 +18,7 @@ export const Wrap = styled.div`
 export const Table = styled.table<{
   $tone: 'affirmative' | 'negative' | 'question'
   $captionHidden: boolean
+  $patterns: boolean
 }>`
   --grammar-ink: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.foreground ?? theme.semantic.status.danger.foreground) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.foreground ?? theme.semantic.status.info.foreground) : (resolveTheme(p).semantic?.status.success.foreground ?? theme.semantic.status.success.foreground))};
   --grammar-surface: ${(p) => (p.$tone === 'negative' ? (resolveTheme(p).semantic?.status.danger.background ?? theme.semantic.status.danger.background) : p.$tone === 'question' ? (resolveTheme(p).semantic?.status.info.background ?? theme.semantic.status.info.background) : (resolveTheme(p).semantic?.status.success.background ?? theme.semantic.status.success.background))};
@@ -72,6 +73,19 @@ export const Table = styled.table<{
     border-bottom: 0;
   }
   ${(p) =>
+    p.$patterns &&
+    css`
+      tbody th {
+        width: 25%;
+        > span {
+          padding: 0;
+          border-radius: 0;
+          color: inherit;
+          background: transparent;
+        }
+      }
+    `}
+  ${(p) =>
     p.$captionHidden &&
     css`
       caption {
@@ -85,6 +99,10 @@ export const Table = styled.table<{
         border: 0;
       }
     `}
+`
+export const Pattern = styled.strong`
+  display: block;
+  margin-bottom: ${theme.spacing[1]};
 `
 export const Example = styled(Pressable)<{ $concealed: boolean }>`
   padding: ${theme.spacing[1]} ${(p) => (p.$concealed ? theme.spacing[4] : '0')};

@@ -5,6 +5,7 @@ import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ThemeProvider } from 'styled-components'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
+import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
@@ -597,8 +598,10 @@ export const LearnerWithoutPhoto: Story = {
 
 function PairedDialoguePreview({
   initial = 'cue',
+  modelsEnabled = true,
 }: {
   initial?: 'cue' | 'hint' | 'full'
+  modelsEnabled?: boolean
 }) {
   const [hintedLineIds, setHintedLineIds] = useState<string[]>(
     initial === 'hint' ? ['a1'] : [],
@@ -615,8 +618,9 @@ function PairedDialoguePreview({
           revealedLineIds,
           onRevealHint: (id) =>
             setHintedLineIds((old) => (id ? [...old, id] : [])),
-          onRevealModel: (id) =>
-            setRevealedLineIds((old) => (id ? [...old, id] : [])),
+          onRevealModel: modelsEnabled
+            ? (id) => setRevealedLineIds((old) => (id ? [...old, id] : []))
+            : undefined,
         }}
         lines={[
           {
@@ -655,6 +659,9 @@ function PairedDialoguePreview({
       />
     </Styled.Preview>
   )
+}
+export const SequentialHintsOnly: Story = {
+  render: () => <PairedDialoguePreview modelsEnabled={false} />,
 }
 export const PairedDialogue: Story = { render: () => <PairedDialoguePreview /> }
 export const PairedDialogueHint: Story = {
@@ -703,4 +710,30 @@ function ContextVocabularyExample() {
 }
 export const ContextualVocabulary: Story = {
   render: () => <ContextVocabularyExample />,
+}
+
+export const PatternGrammar: Story = {
+  render: () => (
+    <Styled.Preview>
+      <GrammarTable
+        title="Evidence and wording"
+        layout="patterns"
+        columns={{ subject: 'Purpose', example: 'Pattern and example' }}
+        rows={[
+          {
+            id: 'view',
+            subject: 'A view',
+            verb: 'seem + adjective',
+            example: 'The second half seemed a little rushed',
+          },
+          {
+            id: 'request',
+            subject: 'A request',
+            verb: 'I wonder if we could …',
+            example: 'I wonder if we could prepare the answers together',
+          },
+        ]}
+      />
+    </Styled.Preview>
+  ),
 }

@@ -14,6 +14,14 @@ Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercí
 - O plano dessas perguntas usa a lâmpada como controle principal, sem acrescentar olho ou Next turn por padrão. Outros formatos que precisam de revelação factual continuam com seu contrato próprio até uma revisão explícita; não remover controles globalmente com base nesta regra.
 - Manter uma finalidade comunicativa por tarefa. Pronúncia, múltipla escolha, certo/errado e lacunas são escolhas justificadas pelo objetivo, não páginas obrigatórias para preencher o mesmo molde nas 60 aulas. Preservar exercícios já revisados quando continuam úteis.
 
+### Implementação dos pilotos79
+
+- Pergunta, intenção e dica usam `LearningDialogue.sequentialGuidance`. Omitir `onRevealModel` mantém apenas a lâmpada inferior; os consumidores que fornecem modelo continuam com o olho. O adaptador `MaterialQuestions` injeta os participantes do material e dados autorais, sem criar outra aparência de balão.
+- Título e grade de vocabulário contextual podem compartilhar `SlidePage.width={{vocabularyColumns:3}}`, calculado pela mesma receita da `VocabularyGrid`. Isso alinha o contêiner; não obriga três cartões por linha no celular. O número de cartões responsivos continua sob responsabilidade da grade.
+- Em gramática por função comunicativa, `GrammarTable.layout="patterns"` organiza uso à esquerda e padrão com exemplo à direita. Usar cabeçalhos curtos. A variante padrão de três colunas continua disponível para sujeito/verbo/exemplo; explicação não recebe quiz ou perguntas no rodapé.
+- Quando a pontuação de um balão muda, preservar `audioText` explícito com o texto exato da gravação válida. Não remover pontuação automaticamente na renderização nem enfraquecer o vínculo de ID e texto para fazer um play funcionar.
+- Conferir o bloco de escuta com os apoios abertos: título, celular e perguntas precisam caber como composição. Reduzir perguntas simultâneas ou distribuir a tarefa antes de diminuir fontes. A transcrição permanece na conversa do celular; sua rolagem nativa não justifica rolagem excedente da página inteira.
+
 ## Rotina personalizada — feedback74
 
 - Organizar cada momento da rotina como cena contextual → conversa guiada com compreensão → conversa sobre a rotina real da aluna. Na aula extra da influencer, os quatro momentos aprovados são manhã, preparação para academia, treino e skincare/sono; essa quantidade não é uma regra para outros temas.

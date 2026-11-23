@@ -47,7 +47,8 @@ export interface LearningDialogueProps extends Omit<
     revealedLineIds: readonly string[]
     /** Undefined resets the respective support layer after the last item. */
     onRevealHint: (lineId?: string) => void
-    onRevealModel: (lineId?: string) => void
+    /** Omit for a single sequential hint control without a model action. */
+    onRevealModel?: (lineId?: string) => void
   }
   /** Paired introduces a visual gap before each new question/answer exchange. */
   presentation?: 'dialogue' | 'paired'

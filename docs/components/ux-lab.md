@@ -198,3 +198,8 @@ PairedDialogue, PairedDialogueHint and PairedDialogueModel source stories expose
 ### Feedback48 — one bubble skin and sequential support
 
 The newer bubble skin is canonical for LearningDialogue, including guided conversation; paired controls spacing only. Principal paired examples now use one progressive bulb/model row, retaining revealed prefixes and resetting the completed layer from the same control. Standard/inline contracts remain available for compatibility. No remote Lab update or visual/runtime validation was performed.
+
+
+### Course planning79 · single sequential hint
+
+The `SequentialHintsOnly` source story documents the additive hint-only LearningDialogue mode. A1.04/C1.01 compose the same bubbles for personal and comprehension questions; existing audio/translation/gap owners are retained. No remote UX Lab write is implied.

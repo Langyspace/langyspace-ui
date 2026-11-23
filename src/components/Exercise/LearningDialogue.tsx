@@ -312,7 +312,13 @@ export function LearningDialogue({
           )}
           hintDisabled={!nextHint && !visibleHints}
           onToggleInitial={() => sequential.onRevealHint(nextHint?.id)}
-          onToggleAll={() => sequential.onRevealModel(nextModel?.id)}
+          onToggleAll={
+            sequential.onRevealModel
+              ? () => {
+                  sequential.onRevealModel?.(nextModel?.id)
+                }
+              : undefined
+          }
           labels={{ hint: hintLabel, showAll: modelLabel, hideAll: modelLabel }}
         />
       </Styled.DialogueSection>

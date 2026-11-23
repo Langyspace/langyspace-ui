@@ -6,6 +6,7 @@ import type { GrammarTableProps } from './GrammarTable.types'
 export function GrammarTable({
   title,
   captionVisibility = 'visible',
+  layout = 'columns',
   rows,
   columns = DEFAULT_COLUMNS,
   tone = 'affirmative',
@@ -25,12 +26,15 @@ export function GrammarTable({
         <Styled.Table
           $tone={tone}
           $captionHidden={captionVisibility === 'screen-reader'}
+          $patterns={layout === 'patterns'}
         >
           <caption>{title}</caption>
           <thead>
             <tr>
               <th scope="col">{columns.subject}</th>
-              {columns.verb ? <th scope="col">{columns.verb}</th> : null}
+              {columns.verb && layout === 'columns' ? (
+                <th scope="col">{columns.verb}</th>
+              ) : null}
               <th scope="col">{columns.example}</th>
             </tr>
           </thead>
@@ -39,6 +43,9 @@ export function GrammarTable({
               const open = !hiddenAnswers || revealedIds.includes(row.id)
               const answer = (
                 <>
+                  {layout === 'patterns' && row.verb ? (
+                    <Styled.Pattern>{row.verb}</Styled.Pattern>
+                  ) : null}
                   {onPlay ? (
                     <Styled.Example
                       $concealed={false}
@@ -61,7 +68,7 @@ export function GrammarTable({
                   <th scope="row">
                     <span>{row.subject}</span>
                   </th>
-                  {columns.verb ? (
+                  {columns.verb && layout === 'columns' ? (
                     <td data-verb="true">
                       {hiddenAnswers ? (
                         <Styled.AnswerContent

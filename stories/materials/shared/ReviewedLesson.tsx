@@ -25,6 +25,11 @@ import * as Common from '../../../src/components/InteractiveMaterial/Material.sh
 import { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
 import { MaterialSlideDeck } from './MaterialSlideDeck'
 import { PromptExercise } from './LessonExercises'
+import { MaterialQuestions } from './MaterialQuestions'
+import {
+  FreeConversationPage,
+  freeConversationPageId,
+} from './FreeConversationPage'
 import { useLessonPage } from './useLessonPage'
 import { useLessonNotesPopup } from './useLessonNotesPopup'
 import { LessonNotes } from './LessonNotes'
@@ -37,6 +42,7 @@ import type {
   ReviewedLessonProps,
   ReviewedDialogueProps,
   ReviewedPageContentProps,
+  ReviewedPrompt,
 } from './ReviewedLesson.types'
 
 const portraits = { Ana: anaAvatar, Kim: kimAvatar }
@@ -46,8 +52,38 @@ const phoneTheme = withVoiceMessageLayout({
   phoneHeight: 'clamp(23.75rem, calc(100dvh - 13.75rem), 33.75rem)',
   transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
 })
+const conversationPhoneTheme = withVoiceMessageLayout({
+  contentWidth: '100%',
+  phoneWidth:
+    'clamp(11.875rem, min(calc((100dvh - 13.75rem) / 2), 62.5cqw), 16.875rem)',
+  phoneHeight:
+    'clamp(23.75rem, min(calc(100dvh - 13.75rem), 125cqw), 33.75rem)',
+  transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
+})
 const toggle = (ids: readonly string[], id: string) =>
   ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]
+const recordingLine = (line: {
+  id: string
+  text: string
+  audioText?: string
+}) => ({
+  id: line.id,
+  text: line.audioText ?? line.text,
+})
+function Questions({ items }: { items: readonly ReviewedPrompt[] }) {
+  return items.every((item) => item.cue && item.hint) ? (
+    <MaterialQuestions
+      items={items.map((item) => ({
+        id: item.id,
+        question: item.prompt,
+        cue: item.cue!,
+        hint: item.hint!,
+      }))}
+    />
+  ) : (
+    <PromptExercise items={items} />
+  )
+}
 
 function Dialogue({ lines, speech, guidance = false }: ReviewedDialogueProps) {
   const [translated, setTranslated] = useState<string[]>([])
@@ -74,14 +110,14 @@ function Dialogue({ lines, speech, guidance = false }: ReviewedDialogueProps) {
           ? undefined
           : (id) => {
               const line = lines.find((x) => x.id === id)
-              if (line) speech.speak([line])
+              if (line) speech.speak([recordingLine(line)])
             }
       }
       revealedGapIds={revealed}
       onRevealGap={(id, lineId) => {
         setRevealed((ids) => (ids.includes(id) ? ids : [...ids, id]))
         const line = lines.find((x) => x.id === lineId)
-        if (line) speech.speak([line])
+        if (line) speech.speak([recordingLine(line)])
       }}
     />
   )
@@ -93,17 +129,38 @@ function PageContent({
   speech,
   active,
   recordings,
+  activity,
 }: ReviewedPageContentProps) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [initial, setInitial] = useState(false)
   const [all, setAll] = useState(false)
   const [selected, setSelected] = useState<string>()
   const [helpLevel, setHelpLevel] = useState<RevealGuidanceLevel>('cue')
-  if (page.kind === 'prompts') return <PromptExercise items={page.items} />
+  if (page.kind === 'prompts' || page.kind === 'questions')
+    return <Questions items={page.items} />
+  if (page.kind === 'activity') return activity
+  if (page.kind === 'source')
+    return (
+      <Common.Surface as="article" aria-label={page.subject}>
+        <KeyValueList
+          tone="material"
+          layout="stacked"
+          density="compact"
+          items={[
+            { id: 'author', label: 'From', value: page.author },
+            { id: 'subject', label: 'Subject', value: page.subject },
+          ]}
+        />
+        {page.paragraphs.map((paragraph) => (
+          <Common.Paragraph key={paragraph}>{paragraph}</Common.Paragraph>
+        ))}
+      </Common.Surface>
+    )
   if (page.kind === 'vocabulary')
     return (
       <VocabularyGrid
         items={page.items}
+        revealLabel="Reveal and listen"
         imageVariant={page.isolated ? 'isolated' : 'scene'}
         imageFit="contain"
         surface={page.isolated ? 'plain' : 'card'}
@@ -124,7 +181,10 @@ function PageContent({
         }
         onPlay={(id) => {
           const item = page.items.find((x) => x.id === id)
-          if (item) speech.speak([{ id, text: item.word }])
+          if (item)
+            speech.speak([
+              { id: item.audioId ?? id, text: item.audioText ?? item.word },
+            ])
         }}
       />
     )
@@ -219,6 +279,7 @@ function PageContent({
         <GrammarTable
           title={page.title}
           captionVisibility="screen-reader"
+          layout={page.layout}
           columns={
             page.columns ?? {
               subject: 'Who / When',
@@ -235,18 +296,31 @@ function PageContent({
     return <Dialogue lines={page.lines} speech={speech} />
   if (page.kind === 'listening')
     return (
-      <ThemeProvider theme={phoneTheme}>
+      <ThemeProvider
+        theme={
+          page.items.every((item) => item.cue && item.hint)
+            ? conversationPhoneTheme
+            : phoneTheme
+        }
+      >
         <VoiceMessageExercise
-          contact={{ name: 'Kim', avatarUrl: kimAvatar, status: 'online' }}
+          contact={{
+            name: 'Kim',
+            avatarUrl: kimAvatar,
+            ...page.contact,
+            status: 'online',
+          }}
           greeting={{
             text: page.greeting ?? 'Hi! I have a message for you.',
             timestamp: '21:10',
           }}
           attachment={page.image}
           audio={{
-            id: 'L.1',
+            id: page.audioId ?? 'L.1',
             src: recordings.find(
-              (x) => x.id === 'L.1' && x.text === page.message,
+              (x) =>
+                x.id === (page.audioId ?? 'L.1') &&
+                x.text === (page.audioText ?? page.message),
             )?.src,
             transcript: page.message,
             timestamp: '21:11',
@@ -256,7 +330,7 @@ function PageContent({
           onAnswer={() => undefined}
           transcriptReveal="third-listen"
           labels={{
-            play: 'Listen to Kim',
+            play: `Listen to ${page.contact?.name ?? 'Kim'}`,
             pause: 'Pause',
             loading: 'Loading audio',
             replay: 'Listen again',
@@ -266,10 +340,10 @@ function PageContent({
             audioUnavailable: 'Audio is unavailable.',
             audioError: 'The audio could not play.',
             retry: 'Try again',
-            questions: 'Questions about Kim',
+            questions: `Questions about ${page.contact?.name ?? 'Kim'}`,
             conversation: 'Conversation',
           }}
-          footer={<PromptExercise items={page.items} />}
+          footer={<Questions items={page.items} />}
         />
       </ThemeProvider>
     )
@@ -348,7 +422,8 @@ function PageContent({
         }
       />
     )
-  return <LessonPracticePlan tasks={page.tasks} />
+  if (page.kind === 'homework') return <LessonPracticePlan tasks={page.tasks} />
+  return null
 }
 
 export function ReviewedLesson({
@@ -358,6 +433,8 @@ export function ReviewedLesson({
   recordings,
   initialPageId,
   learnerName = '',
+  activities,
+  freeConversationInstruction,
 }: ReviewedLessonProps) {
   const materialKey = code.toLowerCase().replace('.', '-')
   const mergedQuestionIds = new Set<string>()
@@ -403,84 +480,114 @@ export function ReviewedLesson({
         }}
         pages={withLessonOpeningPages(
           materialKey,
-          pages.map((page, index) => {
-            if (index === 0 && hasLessonOpeningReview(materialKey))
+          pages
+            .map((page, index) => {
+              if (index === 0 && hasLessonOpeningReview(materialKey))
+                return {
+                  id: page.id,
+                  label: `${code} · ${title}`,
+                  content: (
+                    <LessonOpening
+                      materialKey={materialKey}
+                      review={{
+                        title: page.title,
+                        instruction: page.instruction,
+                        content: (
+                          <PageContent
+                            page={page}
+                            speech={speech}
+                            active={pageId === page.id}
+                            recordings={recordings}
+                            activity={activities?.[page.id]}
+                          />
+                        ),
+                      }}
+                    />
+                  ),
+                }
+              const lines = page.kind === 'dialogue' ? page.lines : undefined
+              const playing = lines?.some((x) => x.id === speech.playingId)
               return {
                 id: page.id,
-                label: `${code} · ${title}`,
+                label: `${page.eyebrow} · ${page.title}`,
                 content: (
-                  <LessonOpening
-                    materialKey={materialKey}
-                    review={{
-                      title: page.title,
-                      instruction: page.instruction,
-                      content: (
-                        <PageContent
-                          page={page}
-                          speech={speech}
-                          active={pageId === page.id}
-                          recordings={recordings}
-                        />
-                      ),
-                    }}
-                  />
+                  <SlidePage
+                    layout={page.kind === 'homework' ? 'split' : 'stacked'}
+                    title={page.title}
+                    questions={
+                      page.kind === 'dialogue' && page.questions ? (
+                        <Questions items={page.questions} />
+                      ) : undefined
+                    }
+                    eyebrow={page.eyebrow}
+                    instruction={page.instruction}
+                    density={page.kind === 'dialogue' ? 'compact' : 'regular'}
+                    columns={
+                      page.kind === 'dialogue' || page.kind === 'questions'
+                        ? 1
+                        : undefined
+                    }
+                    width={
+                      page.kind === 'vocabulary' && page.alignHeading
+                        ? { vocabularyColumns: 3 }
+                        : page.kind === 'vocabulary' ||
+                            page.kind === 'roleplay' ||
+                            page.kind === 'activity' ||
+                            page.kind === 'listening' ||
+                            page.kind === 'scene' ||
+                            page.kind === 'introductions'
+                          ? 'wide'
+                          : 'reading'
+                    }
+                    titleAudio={
+                      lines
+                        ? {
+                            context: page.title,
+                            status: playing
+                              ? speech.paused
+                                ? 'paused'
+                                : 'playing'
+                              : 'idle',
+                            disabled:
+                              pageId !== page.id ||
+                              !lines.every((line) =>
+                                speech.has(recordingLine(line)),
+                              ),
+                            onClick: () =>
+                              playing
+                                ? speech.togglePause()
+                                : speech.speak(lines.map(recordingLine)),
+                          }
+                        : undefined
+                    }
+                  >
+                    <PageContent
+                      page={page}
+                      speech={speech}
+                      active={pageId === page.id}
+                      recordings={recordings}
+                      activity={activities?.[page.id]}
+                    />
+                  </SlidePage>
                 ),
               }
-            const lines = page.kind === 'dialogue' ? page.lines : undefined
-            const playing = lines?.some((x) => x.id === speech.playingId)
-            return {
-              id: page.id,
-              label: `${page.eyebrow} · ${page.title}`,
-              content: (
-                <SlidePage
-                  layout={page.kind === 'homework' ? 'split' : 'stacked'}
-                  title={page.title}
-                  questions={
-                    page.kind === 'dialogue' && page.questions ? (
-                      <PromptExercise items={page.questions} />
-                    ) : undefined
-                  }
-                  eyebrow={page.eyebrow}
-                  instruction={page.instruction}
-                  density={page.kind === 'dialogue' ? 'compact' : 'regular'}
-                  columns={page.kind === 'dialogue' ? 1 : undefined}
-                  width={
-                    page.kind === 'vocabulary' ||
-                    page.kind === 'roleplay' ||
-                    page.kind === 'scene' ||
-                    page.kind === 'introductions'
-                      ? 'wide'
-                      : 'reading'
-                  }
-                  titleAudio={
-                    lines
-                      ? {
-                          context: page.title,
-                          status: playing
-                            ? speech.paused
-                              ? 'paused'
-                              : 'playing'
-                            : 'idle',
-                          disabled:
-                            pageId !== page.id || !lines.every(speech.has),
-                          onClick: () =>
-                            playing
-                              ? speech.togglePause()
-                              : speech.speak(lines),
-                        }
-                      : undefined
-                  }
-                >
-                  <PageContent
-                    page={page}
-                    speech={speech}
-                    active={pageId === page.id}
-                    recordings={recordings}
-                  />
-                </SlidePage>
-              ),
-            }
-          }),
+            })
+            .flatMap((page, index, list) =>
+              freeConversationInstruction && index === list.length - 1
+                ? [
+                    {
+                      id: freeConversationPageId,
+                      label: 'Free conversation',
+                      content: (
+                        <FreeConversationPage
+                          instruction={freeConversationInstruction}
+                        />
+                      ),
+                    },
+                    page,
+                  ]
+                : [page],
+            ),
         )}
         overlay={
           <LessonNotes

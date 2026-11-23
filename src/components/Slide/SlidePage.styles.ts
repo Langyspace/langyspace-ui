@@ -1,6 +1,7 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { presentationMedia } from '../../foundations/layout/presentationMedia'
+import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
 import {
   slideColumnWidth,
   slidePairedTracks,
@@ -68,6 +69,8 @@ export const Content = styled.div<{
     if (p.$columns) return slideColumnWidth(sizes, p.$columns)
     if (p.$layout === 'split') return sizes.introductionWidth
     if (p.$width && typeof p.$width === 'object') {
+      if ('vocabularyColumns' in p.$width)
+        return regularVocabularyMaxWidth(p.$width.vocabularyColumns)
       const ratio = p.$width.mediaAspectRatio
       return Number.isFinite(ratio) && ratio > 0
         ? `min(${sizes.introductionWidth}, calc(${presentationMedia.viewportHeight} * ${ratio}), calc(${presentationMedia.maximumHeight} * ${ratio}))`

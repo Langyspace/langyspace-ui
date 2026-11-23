@@ -41,6 +41,8 @@ export interface SlidePageProps extends Omit<
     | 'expanded'
     /** Single presentation media: header and body share its fitted width. Split/questions layouts retain their total composition width. */
     | { mediaAspectRatio: number }
+    /** Regular contextual vocabulary: heading and cards use the same height-aware bound. */
+    | { vocabularyColumns: 2 | 3 | 4 }
   density?: 'regular' | 'compact' | 'dense'
   tone?: 'default' | 'inverse'
 }

@@ -2,10 +2,10 @@ import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
 
 /** Shared by the scene grid and an introduction aligned to that same grid. */
-export const regularVocabularyMaxWidth = (columns = 3) =>
-  `calc(${theme.exercises.vocabularyRegularHeight} * ${columns * 1.5} + ${theme.spacing[3]} * ${columns - 1})`
+export { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
 
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',

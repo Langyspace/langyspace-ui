@@ -3,11 +3,14 @@ import type { VocabularyItem } from '../../../src/components/Exercise/Vocabulary
 import type { GrammarTableProps } from '../../../src/components/InteractiveMaterial/GrammarTable.types'
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
 import type { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
+import type { ReactNode } from 'react'
 
 export interface ReviewedTurn {
   id: string
   speaker: 'Kim' | 'Ana'
   text: string
+  /** Exact original recording text when display punctuation differs. */
+  audioText?: string
   translation?: string
   parts?: readonly (string | { id: string; answer: string })[]
   cue?: string
@@ -17,6 +20,8 @@ export interface ReviewedPrompt {
   id: string
   prompt: string
   answer: string
+  cue?: string
+  hint?: string
 }
 interface PageBase {
   id: string
@@ -27,11 +32,15 @@ interface PageBase {
 }
 export type ReviewedPage = PageBase &
   (
-    | { kind: 'prompts'; items: readonly ReviewedPrompt[] }
+    | { kind: 'prompts' | 'questions'; items: readonly ReviewedPrompt[] }
     | {
         kind: 'vocabulary'
-        items: readonly VocabularyItem[]
+        items: readonly (VocabularyItem & {
+          audioId?: string
+          audioText?: string
+        })[]
         isolated?: boolean
+        alignHeading?: boolean
       }
     | {
         kind: 'words' | 'calendar'
@@ -54,6 +63,7 @@ export type ReviewedPage = PageBase &
       }
     | {
         kind: 'grammar'
+        layout?: GrammarTableProps['layout']
         rows: GrammarTableProps['rows']
         columns?: GrammarTableProps['columns']
         note?: string
@@ -66,9 +76,19 @@ export type ReviewedPage = PageBase &
     | {
         kind: 'listening'
         message: string
+        audioText?: string
+        audioId?: string
+        contact?: { name: string; avatarUrl?: string }
         greeting?: string
         image?: { src: string; alt: string }
         items: readonly ReviewedPrompt[]
+      }
+    | { kind: 'activity' }
+    | {
+        kind: 'source'
+        author: string
+        subject: string
+        paragraphs: readonly string[]
       }
     | {
         kind: 'introductions'
@@ -103,6 +123,9 @@ export interface ReviewedLessonProps {
   recordings: readonly PreparedRecording[]
   initialPageId?: string
   learnerName?: string
+  /** Authored activities compose library components; no additional visual skin. */
+  activities?: Readonly<Record<string, ReactNode>>
+  freeConversationInstruction?: string
 }
 export type ReviewedSpeech = ReturnType<typeof useRecordedAudio>
 export interface ReviewedDialogueProps {
@@ -115,6 +138,7 @@ export interface ReviewedPageContentProps {
   speech: ReviewedSpeech
   active: boolean
   recordings: readonly PreparedRecording[]
+  activity?: ReactNode
 }
 export interface ReviewedClipRecord {
   id: string
