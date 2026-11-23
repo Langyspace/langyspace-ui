@@ -33,9 +33,7 @@ it('offers an explicit close action without triggering selection or playback', (
   )
   fireEvent.click(screen.getByRole('button', { name: 'Close: put on makeup' }))
   expect(dismiss).toHaveBeenCalledOnce()
-  expect(
-    screen.getByRole('button', { name: 'put on makeup', exact: true }),
-  ).toHaveFocus()
+  expect(screen.getByRole('button', { name: /^put on makeup$/ })).toHaveFocus()
   expect(select).not.toHaveBeenCalled()
   expect(play).not.toHaveBeenCalled()
   view.rerender(

@@ -1,0 +1,585 @@
+{
+  "version": 81,
+  "code": "B1.02",
+  "key": "b1-02",
+  "title": "There used to be a cinema here",
+  "goal": "Compare a neighbourhood’s past and present and share a memory",
+  "freeConversationInstruction": "Compare places you have known, share memories and ask how your teacher’s life has changed",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Catch up on something that has kept you busy",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What have you been doing lately?",
+          "cue": "Give an activity and one result",
+          "hint": "I’ve been … I’ve finished …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for there used to be a cinema here",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-02-vocabulary81",
+        "alt": "Six illustrated situations for There used to be a cinema here",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B102-V81.0",
+          "label": "a cinema",
+          "prompt": "",
+          "example": "There used to be a cinema on this corner",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B102-FS81.0",
+          "audioText": "a cinema. There used to be a cinema on this corner."
+        },
+        {
+          "id": "B102-V81.1",
+          "label": "a playground",
+          "prompt": "",
+          "example": "The playground still has its old swings",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B102-FS81.1",
+          "audioText": "a playground. The playground still has its old swings."
+        },
+        {
+          "id": "B102-V81.2",
+          "label": "a corner shop",
+          "prompt": "",
+          "example": "I used to buy bread at the corner shop",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B102-FS81.2",
+          "audioText": "a corner shop. I used to buy bread at the corner shop."
+        },
+        {
+          "id": "B102-V81.3",
+          "label": "a square",
+          "prompt": "",
+          "example": "The factory was beside the square",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B102-FS81.3",
+          "audioText": "a square. The factory was beside the square."
+        },
+        {
+          "id": "B102-V81.4",
+          "label": "a factory",
+          "prompt": "",
+          "example": "My neighbour used to work at the factory",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B102-FS81.4",
+          "audioText": "a factory. My neighbour used to work at the factory."
+        },
+        {
+          "id": "B102-V81.5",
+          "label": "an apartment block",
+          "prompt": "",
+          "example": "There’s an apartment block on the old site now",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B102-FS81.5",
+          "audioText": "an apartment block. There’s an apartment block on the old site now."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "There used to be a cinema here",
+      "paragraphs": [
+        "Fictional neighbourhood record: the corner cinema is now a pharmacy. The playground and its swings remain; new trees have been added. A former factory stands beside the square. The council has not yet confirmed its current use in this record."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Walking through the old neighbourhood",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B102-D81.1",
+          "speaker": "Kim",
+          "text": "I haven’t been here for years. Wasn’t there a cinema on this corner?",
+          "audioText": "I haven’t been here for years. Wasn’t there a cinema on this corner?",
+          "translation": "Faz anos que não venho aqui. Não tinha um cinema nesta esquina?"
+        },
+        {
+          "id": "B102-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, there used to be. It’s a pharmacy now",
+          "audioText": "Yes, there used to be. It’s a pharmacy now.",
+          "translation": "Sim, tinha. Agora é uma farmácia"
+        },
+        {
+          "id": "B102-D81.3",
+          "speaker": "Kim",
+          "text": "That’s a shame. Did you use to go there?",
+          "audioText": "That’s a shame. Did you use to go there?",
+          "translation": "Que pena. Você costumava ir lá?"
+        },
+        {
+          "id": "B102-D81.4",
+          "speaker": "Ana",
+          "text": "Most Saturdays. The tickets were cheap, and I could walk home afterwards",
+          "audioText": "Most Saturdays. The tickets were cheap, and I could walk home afterwards.",
+          "translation": "Na maioria dos sábados. Os ingressos eram baratos e eu podia voltar a pé"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why did Ana use to go to the cinema?",
+          "cue": "Give a practical reason from the dialogue",
+          "hint": "Because …",
+          "answer": "The tickets were cheap and she could walk home"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What changed, and what stayed?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B102-D81.5",
+          "speaker": "Kim",
+          "text": "At least the playground is still here. It looks much greener",
+          "audioText": "At least the playground is still here. It looks much greener.",
+          "translation": "Pelo menos o parquinho continua aqui. Parece bem mais verde"
+        },
+        {
+          "id": "B102-D81.6",
+          "speaker": "Ana",
+          "text": "It is. They’ve added trees, but they haven’t removed the old swings",
+          "audioText": "It is. They’ve added trees, but they haven’t removed the old swings.",
+          "translation": "Está mesmo. Colocaram árvores, mas não tiraram os balanços antigos"
+        },
+        {
+          "id": "B102-D81.7",
+          "speaker": "Kim",
+          "text": "Do you think the neighbourhood is better now?",
+          "audioText": "Do you think the neighbourhood is better now?",
+          "translation": "Você acha que o bairro está melhor agora?"
+        },
+        {
+          "id": "B102-D81.8",
+          "speaker": "Ana",
+          "text": "In some ways. There are more places to live, but I miss the small shops",
+          "audioText": "In some ways. There are more places to live, but I miss the small shops.",
+          "translation": "Em alguns aspectos. Há mais moradias, mas sinto falta das lojinhas"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What has stayed at the playground?",
+          "cue": "Distinguish the old feature from the new one",
+          "hint": "The … is still there",
+          "answer": "The old swings are still there"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Your neighbourhood, then and now",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What did your neighbourhood use to be like?",
+          "cue": "Describe one change you remember or use the example pictures",
+          "hint": "There used to be … Now there’s …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Did you use to do anything differently?",
+          "cue": "Compare one past habit with your life now",
+          "hint": "I used to …, but now I …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A past habit or a place that has changed",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An old habit that is different now",
+          "verb": "used to + base verb",
+          "example": "I used to go to the cinema on Saturdays"
+        },
+        {
+          "id": "1",
+          "subject": "A place that no longer exists there",
+          "verb": "there used to be",
+          "example": "There used to be a cinema on this corner"
+        },
+        {
+          "id": "2",
+          "subject": "Negative and question",
+          "verb": "didn’t use to / Did … use to?",
+          "example": "Did you use to live here? It didn’t use to be this busy"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Show me your old neighbourhood",
+      "instruction": "Show me what has changed and ask about my neighbourhood",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Another change on the map",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
+      "audioText": "Hi, Ana! I checked another change on our example map. There used to be a factory beside the square. It’s an apartment block now, with a small garden in front. The playground is still in the same place. A former resident told me he used to work at the factory, so he misses it, even though he likes the cleaner street. Would you show him what has changed and ask which part he remembers best?",
+      "audioId": "B102-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What has changed since he lived there?",
+          "cue": "Compare the past and present details in the message",
+          "hint": "There used to be …, but now …",
+          "answer": "The factory has become an apartment block; the playground remains"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Explain the newly confirmed change",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Compare a neighbourhood’s past and present and share a memory"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "map",
+      "title": "Same places, two moments",
+      "options": [
+        {
+          "id": "before",
+          "title": "Before",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Corner",
+              "value": "Cinema"
+            },
+            {
+              "id": "1",
+              "label": "Playground",
+              "value": "Swings · fewer trees"
+            },
+            {
+              "id": "2",
+              "label": "Beside the square",
+              "value": "Factory"
+            }
+          ],
+          "map": {
+            "label": "Illustrated neighbourhood · schematic, not a route map",
+            "places": [
+              {
+                "id": "corner",
+                "label": "Cinema",
+                "symbol": "C",
+                "xPercent": 20,
+                "yPercent": 25
+              },
+              {
+                "id": "playground",
+                "label": "Playground · swings",
+                "symbol": "P",
+                "xPercent": 78,
+                "yPercent": 25
+              },
+              {
+                "id": "square",
+                "label": "Square",
+                "symbol": "S",
+                "xPercent": 20,
+                "yPercent": 78
+              },
+              {
+                "id": "site",
+                "label": "Factory",
+                "symbol": "F",
+                "xPercent": 60,
+                "yPercent": 78
+              }
+            ],
+            "streets": [
+              {
+                "id": "cross",
+                "from": {
+                  "x": 20,
+                  "y": 25
+                },
+                "to": {
+                  "x": 78,
+                  "y": 25
+                }
+              },
+              {
+                "id": "vertical",
+                "from": {
+                  "x": 20,
+                  "y": 25
+                },
+                "to": {
+                  "x": 20,
+                  "y": 78
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "now",
+          "title": "Now",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Corner",
+              "value": "Pharmacy"
+            },
+            {
+              "id": "1",
+              "label": "Playground",
+              "value": "Same swings · more trees"
+            },
+            {
+              "id": "2",
+              "label": "Beside the square",
+              "value": "Check the new message"
+            }
+          ],
+          "map": {
+            "label": "Illustrated neighbourhood · schematic, not a route map",
+            "places": [
+              {
+                "id": "corner",
+                "label": "Pharmacy",
+                "symbol": "P",
+                "xPercent": 20,
+                "yPercent": 25
+              },
+              {
+                "id": "playground",
+                "label": "Same swings · more trees",
+                "symbol": "P",
+                "xPercent": 78,
+                "yPercent": 25
+              },
+              {
+                "id": "square",
+                "label": "Square",
+                "symbol": "S",
+                "xPercent": 20,
+                "yPercent": 78
+              },
+              {
+                "id": "site",
+                "label": "New use? Listen later",
+                "symbol": "?",
+                "xPercent": 60,
+                "yPercent": 78
+              }
+            ],
+            "streets": [
+              {
+                "id": "cross",
+                "from": {
+                  "x": 20,
+                  "y": 25
+                },
+                "to": {
+                  "x": 78,
+                  "y": 25
+                }
+              },
+              {
+                "id": "vertical",
+                "from": {
+                  "x": 20,
+                  "y": 25
+                },
+                "to": {
+                  "x": 20,
+                  "y": 78
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "questions": [
+        {
+          "id": "changes",
+          "prompt": "What has changed here?",
+          "cue": "Compare a place and a habit, then ask about my memories",
+          "hint": "There used to be … Did you use to …?",
+          "answer": "One possible response"
+        }
+      ],
+      "map": {
+        "label": "Illustrated neighbourhood · schematic, not a route map",
+        "places": [
+          {
+            "id": "corner",
+            "label": "Cinema",
+            "symbol": "C",
+            "xPercent": 20,
+            "yPercent": 25
+          },
+          {
+            "id": "playground",
+            "label": "Playground · swings",
+            "symbol": "P",
+            "xPercent": 78,
+            "yPercent": 25
+          },
+          {
+            "id": "square",
+            "label": "Square",
+            "symbol": "S",
+            "xPercent": 20,
+            "yPercent": 78
+          },
+          {
+            "id": "site",
+            "label": "Factory",
+            "symbol": "F",
+            "xPercent": 60,
+            "yPercent": 78
+          }
+        ],
+        "streets": [
+          {
+            "id": "cross",
+            "from": {
+              "x": 20,
+              "y": 25
+            },
+            "to": {
+              "x": 78,
+              "y": 25
+            }
+          },
+          {
+            "id": "vertical",
+            "from": {
+              "x": 20,
+              "y": 25
+            },
+            "to": {
+              "x": 20,
+              "y": 78
+            }
+          }
+        ]
+      }
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The former factory site",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Before",
+          "value": "Factory beside the square"
+        },
+        {
+          "id": "1",
+          "label": "Now",
+          "value": "Apartment block · garden in front"
+        },
+        {
+          "id": "2",
+          "label": "Former resident",
+          "value": "Misses working there · likes the cleaner street"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you explain the change without dismissing his memory?",
+          "cue": "Describe the change and ask a genuine question",
+          "hint": "There used to be … Now … What do you remember about …?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

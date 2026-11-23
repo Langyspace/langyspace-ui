@@ -6,7 +6,7 @@ import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
-import { content, image, vocabulary, toggle } from './Frontend.data'
+import { content, image, vocabulary } from './Frontend.data'
 import type { AudioProps, IndexedAudioProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function Questions({ items }: { items: readonly string[][] }) {

@@ -199,7 +199,14 @@ PairedDialogue, PairedDialogueHint and PairedDialogueModel source stories expose
 
 The newer bubble skin is canonical for LearningDialogue, including guided conversation; paired controls spacing only. Principal paired examples now use one progressive bulb/model row, retaining revealed prefixes and resetting the completed layer from the same control. Standard/inline contracts remain available for compatibility. No remote Lab update or visual/runtime validation was performed.
 
-
 ### Course planning79 · single sequential hint
 
 The `SequentialHintsOnly` source story documents the additive hint-only LearningDialogue mode. A1.04/C1.01 compose the same bubbles for personal and comprehension questions; existing audio/translation/gap owners are retained. No remote UX Lab write is implied.
+
+## RouteMap
+
+A reusable native map for location and direction tasks. `places` and `streets` share percentage coordinates; `startId` identifies the origin. Selection is controlled with `selectedId` and `onSelect`. Omit `revealedIds` for a labelled reference, or supply IDs for progressive vocabulary reveal. Place buttons retain their identity and keyboard focus when a label is revealed. Maps use visible facts rather than an invented route answer.
+
+### Vocabulary scenes
+
+`SceneExplorer presentation="vocabulary"` keeps a learned word attached to its original hotspot after the callout closes. The same hit target and image geometry serve exploration and reference. Short label/example callouts use their natural height; playback remains controlled by the consumer. `labels` and `explore` retain their existing behaviour.

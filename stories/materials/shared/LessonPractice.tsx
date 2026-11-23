@@ -5,7 +5,6 @@ import { useRef, useState } from 'react'
 import { Button } from '../../../src/components/Button/Button'
 import { MinimalPairExercise } from '../../../src/components/InteractiveMaterial/MinimalPairExercise'
 import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
-import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import { QuizFeedback } from '../../../src/components/Quiz/QuizFeedback'
 import { ConnectionSignal } from '../../../src/components/InteractiveMaterial/ConnectionSignal'
 import ana from '../UXLab/assets/bust_ana.png'
@@ -199,7 +198,7 @@ export function DialoguePractice({
       playingId={speech.playingId}
       onPlay={(id) => {
         const l = lines.find((x) => x.id === id)
-        if (l) speech.speak([{ id, text: l.text, speaker: l.who }])
+        if (l) speech.speak([{ id, text: l.text }])
       }}
     />
   )

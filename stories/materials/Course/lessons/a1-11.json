@@ -1,0 +1,437 @@
+{
+  "version": 81,
+  "code": "A1.11",
+  "key": "a1-11",
+  "title": "This one, please",
+  "goal": "Ask for a gift and choose an available alternative",
+  "freeConversationInstruction": "Talk about clothes and gifts, ask about your teacher’s choices and explain what you would buy",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "You are buying a drink for someone else",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What would your friend like?",
+          "cue": "Make a polite order",
+          "hint": "She’d like …, please",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Clothes and accessories",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a1-11-vocabulary81",
+        "alt": "Six illustrated situations for This one, please",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A111-V81.0",
+          "label": "T-shirt",
+          "prompt": "",
+          "example": "This T-shirt is green",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A111-FS81.0",
+          "audioText": "T-shirt. This T-shirt is green."
+        },
+        {
+          "id": "A111-V81.1",
+          "label": "shoes",
+          "prompt": "",
+          "example": "These shoes are small",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A111-FS81.1",
+          "audioText": "shoes. These shoes are small."
+        },
+        {
+          "id": "A111-V81.2",
+          "label": "jacket",
+          "prompt": "",
+          "example": "That jacket is blue",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A111-FS81.2",
+          "audioText": "jacket. That jacket is blue."
+        },
+        {
+          "id": "A111-V81.3",
+          "label": "bag",
+          "prompt": "",
+          "example": "How much is this bag?",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A111-FS81.3",
+          "audioText": "bag. How much is this bag?"
+        },
+        {
+          "id": "A111-V81.4",
+          "label": "glasses",
+          "prompt": "",
+          "example": "I like those glasses",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A111-FS81.4",
+          "audioText": "glasses. I like those glasses."
+        },
+        {
+          "id": "A111-V81.5",
+          "label": "dress",
+          "prompt": "",
+          "example": "Can I see this dress?",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A111-FS81.5",
+          "audioText": "dress. Can I see this dress?"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Choosing a gift",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A111-D81.1",
+          "speaker": "Kim",
+          "text": "Can I help you?",
+          "audioText": "Can I help you?",
+          "translation": "Posso ajudar?"
+        },
+        {
+          "id": "A111-D81.2",
+          "speaker": "Ana",
+          "text": "Yes. I’d like this blue T-shirt in medium",
+          "audioText": "Yes. I’d like this blue T-shirt in medium.",
+          "translation": "Sim. Gostaria desta camiseta azul no tamanho médio"
+        },
+        {
+          "id": "A111-D81.3",
+          "speaker": "Kim",
+          "text": "Sorry, we have blue in large, or green in medium",
+          "audioText": "Sorry, we have blue in large, or green in medium.",
+          "translation": "Desculpe, temos azul no grande ou verde no médio"
+        },
+        {
+          "id": "A111-D81.4",
+          "speaker": "Ana",
+          "text": "Can I see the green one, please?",
+          "audioText": "Can I see the green one, please?",
+          "translation": "Posso ver a verde, por favor?"
+        },
+        {
+          "id": "A111-D81.5",
+          "speaker": "Kim",
+          "text": "Here you are. It’s twelve dollars",
+          "audioText": "Here you are. It’s twelve dollars.",
+          "translation": "Aqui está. Custa doze dólares"
+        },
+        {
+          "id": "A111-D81.6",
+          "speaker": "Ana",
+          "text": "That’s good. This one, please",
+          "audioText": "That’s good. This one, please.",
+          "translation": "Está bom. Quero esta, por favor"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why does Ana look at the green T-shirt?",
+          "cue": "Use the available sizes",
+          "hint": "There isn’t …",
+          "answer": "There isn’t a blue T-shirt in medium"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Choose your size and colour",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Which one would you like?",
+          "cue": "Choose an item and a colour",
+          "hint": "This … one, please",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What size do you need?",
+          "cue": "Say the size on your card",
+          "hint": "Size …, please",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Point to one thing or several things",
+      "instruction": "Point to something near you and something further away as you read",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "One thing near / far",
+          "verb": "this / that",
+          "example": "This T-shirt is green. That jacket is blue"
+        },
+        {
+          "id": "1",
+          "subject": "More than one",
+          "verb": "these / those",
+          "example": "These shoes are small. Those glasses are blue"
+        },
+        {
+          "id": "2",
+          "subject": "Ask the price",
+          "verb": "How much is / are …?",
+          "example": "How much is this bag? How much are these shoes?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Find a gift",
+      "instruction": "Ask for the gift you want and choose an alternative",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The green one is right",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Thank you for looking for my gift. I like the green T-shirt. Medium is right for me. I don’t need a jacket. Twelve dollars is OK. Can you bring the T-shirt on Friday? We can meet at the café. Thank you!",
+      "audioText": "Hi, Ana! Thank you for looking for my gift. I like the green T-shirt. Medium is right for me. I don’t need a jacket. Twelve dollars is OK. Can you bring the T-shirt on Friday? We can meet at the café. Thank you!",
+      "audioId": "A111-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What colour does she want?",
+          "cue": "Say the colour requested in the message",
+          "hint": "She wants …",
+          "answer": "She wants green"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Buy the gift she wants",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Ask for a gift and choose an available alternative"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "The gift you want: blue T-shirt · size M",
+      "options": [
+        {
+          "id": "blue-large",
+          "title": "Blue T-shirt",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Blue"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "L"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$12"
+            }
+          ]
+        },
+        {
+          "id": "green-medium",
+          "title": "Green T-shirt",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Green"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "M"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$12"
+            }
+          ]
+        },
+        {
+          "id": "jacket",
+          "title": "Blue jacket",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Blue"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "M"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$25"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "gift",
+          "prompt": "What size do you need?",
+          "cue": "Ask for blue in M, then choose an available alternative",
+          "hint": "Do you have … in …? Can I see …, please?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "choices",
+      "title": "Use your friend’s message",
+      "options": [
+        {
+          "id": "blue-large",
+          "title": "Blue T-shirt",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Blue"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "L"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$12"
+            }
+          ]
+        },
+        {
+          "id": "green-medium",
+          "title": "Green T-shirt",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Green"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "M"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$12"
+            }
+          ]
+        },
+        {
+          "id": "jacket",
+          "title": "Blue jacket",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Colour",
+              "value": "Blue"
+            },
+            {
+              "id": "1",
+              "label": "Size",
+              "value": "M"
+            },
+            {
+              "id": "2",
+              "label": "Price",
+              "value": "$25"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "buy",
+          "prompt": "Which one is right for your friend?",
+          "cue": "Choose the right colour and size. Check the price",
+          "hint": "This … one in …, please. How much is it?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

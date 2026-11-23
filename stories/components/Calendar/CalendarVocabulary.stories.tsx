@@ -38,14 +38,14 @@ function WeeklyWords() {
 }
 const meta = {
   title: 'Calendar/Vocabulary',
-  component: CalendarMonthGrid,
+  component: WeeklyWords,
   tags: ['visual-review'],
   render: () => (
     <StoryLayout.Preview>
       <WeeklyWords />
     </StoryLayout.Preview>
   ),
-} satisfies Meta
+} satisfies Meta<typeof WeeklyWords>
 export default meta
 type Story = StoryObj<typeof meta>
 export const Week: Story = {}

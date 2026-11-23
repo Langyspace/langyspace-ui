@@ -1,264 +1,43 @@
-import {
-  withLessonOpeningPages,
-  withLessonOpeningPageIds,
-} from '../shared/lessonOpeningPolicy'
-import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
-import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { useLessonPage } from '../shared/useLessonPage'
-import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
-import { LessonNotes } from '../shared/LessonNotes'
-import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
-import { PromptExercise } from '../shared/LessonExercises'
-import * as Shell from '../shared/Lesson.styles'
-import {
-  ProduceVocabulary,
-  MarketDialogue,
-  LikeGrammar,
-  Listening,
-  KimsList,
-  Homework,
-} from './A105.sections'
-import { dialogue, gaps, prompts, pageOrder } from './A105.data'
-import { useLessonSpeech } from './useLessonSpeech'
+import { ReviewedLesson } from '../shared/ReviewedLesson'
+import { prepareMaterialRecordings } from '../shared/prepareMaterialRecordings'
+import type { ReviewedPage } from '../shared/ReviewedLesson.types'
+import data from './A105.review.json'
+import provenance from './audio-provenance.json'
+import additions from './audio-provenance81.json'
+import { MarketCase } from './MarketCase'
+import { scene } from './A105.data'
 import type { A105LessonProps } from './A105.types'
-
-export function A105Lesson({
-  initialPageId,
-  learnerName = '',
-}: A105LessonProps) {
-  const [pageId, setPageId] = useLessonPage(
-    initialPageId,
-    'a1-05',
-    withLessonOpeningPageIds('a1-05', pageOrder),
-  )
-  const speech = useLessonSpeech()
-  const notes = useLessonNotesPopup('langy-material-notes-A1.05')
-  const ask = (
-    id: string,
-    title: string,
-    instruction: string,
-    items: typeof prompts.warmup,
-    eyebrow = 'Speaking',
-  ) => ({
-    id,
-    label: `${eyebrow} · ${title}`,
-    content: (
-      <SlidePage
-        width="reading"
-        eyebrow={eyebrow}
-        title={title}
-        instruction={instruction}
-      >
-        <PromptExercise items={items} />
-      </SlidePage>
-    ),
-  })
-  const dialoguePage = (id: string, title: string, fillGaps = false) => {
-    const lines = fillGaps ? gaps : dialogue
-    const playing = lines.some((line) => line.id === speech.playingId)
-    return {
-      id,
-      label: `Guided conversation · ${title}`,
-      content: (
-        <SlidePage
-          density="compact"
-          questions={
-            <PromptExercise
-              items={fillGaps ? prompts.gaps : prompts.comprehension}
-            />
-          }
-          eyebrow="Guided conversation"
-          title={title}
-          titleAudio={{
-            context: fillGaps
-              ? 'Kim and Ana: complete the conversation'
-              : 'Kim and Ana at the market',
-            status: playing
-              ? speech.paused
-                ? 'paused'
-                : 'playing'
-              : speech.error
-                ? 'error'
-                : 'idle',
-            disabled: pageId !== id || !lines.every(speech.has),
-            onClick: () =>
-              playing ? speech.togglePause() : speech.speak(lines),
-          }}
-          instruction={
-            fillGaps
-              ? 'Say the missing words, then read with your teacher.'
-              : 'Listen, then read with your teacher.'
-          }
-        >
-          <MarketDialogue speech={speech} fillGaps={fillGaps} />
-        </SlidePage>
-      ),
-    }
-  }
-  const pages = [
-    ask(
-      's1',
-      'Fruit and shopping',
-      'Talk about fruit and where you buy it.',
-      prompts.warmup,
-      'A1 LESSON 05 · Warm up',
-    ),
-    {
-      id: 's2',
-      label: 'Vocabulary · Fruit',
-      content: (
-        <SlidePage
-          columns={3}
-          eyebrow="Vocabulary"
-          title="Fruit"
-          instruction="Look at the pictures. Guess the words."
-        >
-          <ProduceVocabulary fruit speech={speech} />
-        </SlidePage>
-      ),
-    },
-    ask(
-      's3',
-      'What do you like?',
-      'Say which fruit you like, then ask your teacher',
-      prompts.preferences,
-    ),
-    {
-      id: 's4',
-      label: 'Vocabulary · Vegetables',
-      content: (
-        <SlidePage
-          columns={3}
-          eyebrow="Vocabulary"
-          title="Vegetables"
-          instruction="Look at the pictures. Guess the words."
-        >
-          <ProduceVocabulary fruit={false} speech={speech} />
-        </SlidePage>
-      ),
-    },
-    {
-      id: 's5',
-      label: 'Grammar · like and likes',
-      content: (
-        <SlidePage
-          width="exercise"
-          eyebrow="Grammar"
-          title="Like and likes"
-          instruction="Compare like and likes in statements, negatives and questions"
-        >
-          <LikeGrammar />
-        </SlidePage>
-      ),
-    },
-    dialoguePage('s6', 'At the street market'),
-    dialoguePage('s8', 'At the market with Kim', true),
-    ask(
-      's82',
-      'Food in your family',
-      'Answer about yourself. Ask your teacher too.',
-      prompts.personal,
-      'Guided conversation',
-    ),
-    {
-      id: 's9',
-      label: 'Listening · A message from Kim',
-      content: (
-        <SlidePage
-          width="standard"
-          density="compact"
-          eyebrow="Listening"
-          title="A message from Kim"
-          instruction="Listen to Kim and answer the questions."
-        >
-          <Listening active={pageId === 's9'} />
-        </SlidePage>
-      ),
-    },
-    ask(
-      's91',
-      'Reply to Kim',
-      'Use the prompts to make a short reply.',
-      prompts.reply,
-      'Speaking',
-    ),
-    ask(
-      's10',
-      'Correct the sentences',
-      'Correct the verb in each sentence',
-      prompts.review,
-      'Practice',
-    ),
-    {
-      id: 's11',
-      label: 'Role play · Kim’s list',
-      content: (
-        <SlidePage
-          width="exercise"
-          density="compact"
-          eyebrow="Role play"
-          title="Kim’s list"
-          instruction="Choose two fruits. Make the conversation, then swap roles."
-        >
-          <KimsList />
-        </SlidePage>
-      ),
-    },
-    ask(
-      's111',
-      'Food and shopping',
-      'Ask and answer. Add one detail.',
-      prompts.conversation,
-      'Conversation',
-    ),
-    {
-      id: 's12',
-      label: 'Homework · Before next class',
-      content: (
-        <SlidePage
-          layout="split"
-          width="standard"
-          eyebrow="Homework"
-          title="Before next class"
-          instruction="Practise these two tasks before your next lesson."
-        >
-          <Homework />
-        </SlidePage>
-      ),
-    },
-  ]
+const assets = import.meta.glob('./assets/audio/*.mp3', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+const recordings = prepareMaterialRecordings(
+  [...provenance.items, ...additions.items],
+  assets,
+)
+const pages = (data.pages as readonly ReviewedPage[]).map((page) =>
+  page.kind === 'vocabulary'
+    ? {
+        ...page,
+        items: page.items.map((item) => ({
+          ...item,
+          imageUrl: scene((item.imageUrl ?? '').replace('scene-', '')),
+        })),
+      }
+    : page,
+)
+export function A105Lesson({ initialPageId, learnerName }: A105LessonProps) {
   return (
-    <Shell.Stage>
-      <MaterialSlideDeck
-        label={`A1.05 · At the street market${learnerName ? ` · ${learnerName}` : ''}`}
-        pages={withLessonOpeningPages('a1-05', pages)}
-        pageId={pageId}
-        previousPageLabel="Back"
-        onPageChange={(id) => {
-          if (id !== pageId) speech.stop()
-          setPageId(id)
-        }}
-        overlay={
-          <LessonNotes
-            storageKey="langy-material-notes-A1.05"
-            open={notes.isOpen}
-            popupWindow={notes.popup}
-            preview={notes.preview}
-            error={notes.error}
-            onClose={notes.close}
-          />
-        }
-        actions={
-          <LessonNotesTrigger
-            ref={(element) => notes.trigger(element)}
-            open={notes.isOpen}
-            onClick={notes.open}
-          />
-        }
-      />
-      {speech.error ? (
-        <Shell.AudioError role="status">{speech.error}</Shell.AudioError>
-      ) : null}
-    </Shell.Stage>
+    <ReviewedLesson
+      code={data.code}
+      title={data.title}
+      pages={pages}
+      recordings={recordings}
+      initialPageId={initialPageId}
+      learnerName={learnerName}
+      activities={{ s11: <MarketCase />, s91: <MarketCase request /> }}
+      freeConversationInstruction="Talk about food you enjoy, ask about your teacher’s tastes and plan a small shopping trip"
+    />
   )
 }

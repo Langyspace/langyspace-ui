@@ -282,7 +282,6 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - O mínimo de seis itens também vale para C1/C2. Selecionar expressões que sustentem argumentos e nuances, em vez de apenas renomear objetos básicos. Quando o significado não for um objeto apontável, usar situações ilustradas e um exemplo de uso; não atribuir um conceito abstrato a um ponto arbitrário de uma imagem. Tentativas com paráfrases são válidas, sem som de erro.
 - Exemplos de vocabulary pertencem ao contrato opcional do VocabularyGrid; não usar o campo de tradução como se fosse exemplo. Proporção da imagem é uma variação semântica com fallback, sem CSS exclusivo por aula.
 
-
 ## Suficiência, fonte da resposta e densidade · revisão78
 
 - Validar a tarefa pelo que a aluna consegue fazer: uma primeira ação clara, informação disponível e resultado observável. Contar seis palavras ou incluir vários componentes não demonstra prática suficiente. Distinguir o vocabulário ativo da referência; alfabeto, lista de números e extensões não viram exigência de recitação.
@@ -295,3 +294,19 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Conferir o estado aberto, incluindo dica e transcrição. Até dois pares de pergunta/intenção por tela é um ponto de partida, não garantia de encaixe. O piloto78 com sete falas C1 e dois pares ficou alto no celular; dividir o diálogo em partes coerentes e a compreensão correspondente. Conversa completa mantém pelo menos seis falas, sem inflar cada metade.
 - Fontes densas ficam em leitura própria, com consulta disponível durante a discussão. Três colunas não resolvem texto demais. Não diminuir a fonte nem criar scroll dentro do balão para preservar uma quantidade arbitrária de conteúdo.
 - Só declarar mídia pronta após ligar o arquivo certo ao texto e revisar significado, continuidade, recorte e proporção. Hash prova identidade de arquivo; ASR é indício; nenhum substitui a escuta de uma correção de pronúncia. Preservar prompt, personagens e mídia válida.
+
+### Application across the 60-lesson course (81)
+
+- Keep a visible factual source for a factual speaking question; distinguish missing information from an incorrect answer. A personal preference has no invented answer key.
+- In the first vocabulary scene, retain the learned word after its example closes. For a native map, the origin and reference points must stay consistent in vocabulary and route practice.
+- Use a standalone media layout for one diagram and a paired layout for diagram plus speaking prompts. Header and content use the same bounds. A table does not gain a quiz underneath.
+- Preserve recording identity and exact audio text when editing display punctuation. Reuse valid dialogue bytes; do not regenerate a sequence just to change presentation.
+- Keep fictional role facts distinct from permanent character biographies. Use a named character’s own portrait, not an unrelated character’s picture as an undocumented alias.
+- A voice message must add useful information for the next response. Its visible timestamp must not contradict an appointment or event time stated in the message.
+- From B1 onwards, make a distinction worth discussing: result versus activity, evidence versus inference, dependency versus promise. At C1, sources and counterarguments must support an actual choice; complex grammar alone is not the task.
+- Explain benefit, cost and exceptions as facts of the fictional case, not universal claims. Any simulated figures and sources are labelled as such.
+
+- O título da prática oral indica a ação e o contexto (por exemplo, “Reconstruct the evening” ou “Adapt the message to its reader”), sem rotular toda discussão factual como experiência pessoal.
+- Uma referência com várias opções não deve repetir todos os nomes em cada linha: usar fichas consistentes selecionáveis, ou comparação visual lado a lado quando o contraste simultâneo for necessário. Manter os fatos usados pela pergunta disponíveis na mesma página.
+- Sequência de imagens usa o ImageSortBoard canônico e permite seleção mais destino pelo teclado. A ordenação não substitui a explicação oral; separar o momento de organizar do momento de contar quando ambos não couberem com clareza.
+- O mínimo de seis itens refere-se ao bloco inicial de vocabulário da aula. Grupos semânticos de introdução podem ser apresentados em páginas consecutivas antes da primeira conversação; não completar a contagem com palavras que só aparecem no final.

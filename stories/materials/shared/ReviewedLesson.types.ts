@@ -7,7 +7,7 @@ import type { ReactNode } from 'react'
 
 export interface ReviewedTurn {
   id: string
-  speaker: 'Kim' | 'Ana'
+  speaker: string
   text: string
   /** Exact original recording text when display punctuation differs. */
   audioText?: string
@@ -29,6 +29,8 @@ interface PageBase {
   eyebrow: string
   instruction: string
   minutes: number
+  /** A standalone diagram shares the scene/cover height-aware layout bound. */
+  mediaAspectRatio?: number
   /** Prepared audio alongside an authored listening prompt. */
   titleAudio?: readonly { id: string; text: string }[]
 }
@@ -54,7 +56,7 @@ export type ReviewedPage = PageBase &
         }[]
       }
     | {
-        kind: 'scene'
+        kind: 'scene' | 'scene-vocabulary'
         image: { src: string; alt: string; aspectRatio?: number }
         context?: string
         hotspots: readonly (SceneHotspot & {
@@ -82,6 +84,8 @@ export type ReviewedPage = PageBase &
         audioId?: string
         contact?: { name: string; avatarUrl?: string }
         greeting?: string
+        greetingTimestamp?: string
+        voiceTimestamp?: string
         image?: { src: string; alt: string }
         items: readonly ReviewedPrompt[]
       }

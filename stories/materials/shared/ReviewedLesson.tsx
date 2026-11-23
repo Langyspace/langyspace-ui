@@ -26,6 +26,7 @@ import { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
 import { MaterialSlideDeck } from './MaterialSlideDeck'
 import { PromptExercise } from './LessonExercises'
 import { MaterialQuestions } from './MaterialQuestions'
+import { SceneVocabulary } from './SceneVocabulary'
 import {
   FreeConversationPage,
   freeConversationPageId,
@@ -36,7 +37,7 @@ import { LessonNotes } from './LessonNotes'
 import { LessonNotesTrigger } from './LessonNotesTrigger'
 import { withVoiceMessageLayout } from './deviceTheme'
 import * as Shell from './Lesson.styles'
-import { ana as anaAvatar, kim as kimAvatar } from './characterPortraits'
+import { characterPortrait } from './characterPortraits'
 import type {
   ReviewedPage,
   ReviewedLessonProps,
@@ -45,19 +46,19 @@ import type {
   ReviewedPrompt,
 } from './ReviewedLesson.types'
 
-const portraits = { Ana: anaAvatar, Kim: kimAvatar }
 const phoneTheme = withVoiceMessageLayout({
   contentWidth: '47.5rem',
   phoneWidth: 'clamp(11.875rem, calc((100dvh - 13.75rem) / 2), 16.875rem)',
   phoneHeight: 'clamp(23.75rem, calc(100dvh - 13.75rem), 33.75rem)',
   transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
 })
+// Narrow stacked listening reserves room for both conversation bubbles; phone stays 1:2.
 const conversationPhoneTheme = withVoiceMessageLayout({
   contentWidth: '100%',
   phoneWidth:
-    'clamp(11.875rem, min(calc((100dvh - 13.75rem) / 2), 62.5cqw), 16.875rem)',
+    'clamp(11.875rem, min(calc((100dvh - 13.75rem) / 2), 57.5cqw), 16.875rem)',
   phoneHeight:
-    'clamp(23.75rem, min(calc(100dvh - 13.75rem), 125cqw), 33.75rem)',
+    'clamp(23.75rem, min(calc(100dvh - 13.75rem), 115cqw), 33.75rem)',
   transcriptFontSize: 'clamp(0.75rem, 1.8cqw, 0.8125rem)',
 })
 const toggle = (ids: readonly string[], id: string) =>
@@ -96,8 +97,15 @@ function Dialogue({ lines, speech, guidance = false }: ReviewedDialogueProps) {
       lines={lines.map((line) => ({
         ...line,
         content: line.text,
-        avatarUrl: portraits[line.speaker],
-        side: line.speaker === 'Kim' ? 'start' : 'end',
+        avatarUrl: characterPortrait(line.speaker),
+        side:
+          line.speaker === 'Kim'
+            ? 'start'
+            : line.speaker === 'Ana'
+              ? 'end'
+              : line.speaker === lines[0]?.speaker
+                ? 'start'
+                : 'end',
         audioLabel: guidance ? undefined : `Listen to ${line.speaker}`,
       }))}
       translatedIds={translated}
@@ -241,12 +249,18 @@ function PageContent({
         }}
       />
     )
+  if (page.kind === 'scene-vocabulary')
+    return <SceneVocabulary page={page} speech={speech} />
   if (page.kind === 'scene')
     return (
       <Common.Stack>
         {page.context ? (
           <Common.Row>
-            <Avatar size="sm" initials="Ana" imageUrl={anaAvatar} />
+            <Avatar
+              size="sm"
+              initials="Ana"
+              imageUrl={characterPortrait('Ana')}
+            />
             <Common.Hint>{page.context}</Common.Hint>
           </Common.Row>
         ) : null}
@@ -306,13 +320,13 @@ function PageContent({
         <VoiceMessageExercise
           contact={{
             name: 'Kim',
-            avatarUrl: kimAvatar,
+            avatarUrl: characterPortrait('Kim'),
             ...page.contact,
             status: 'online',
           }}
           greeting={{
             text: page.greeting ?? 'Hi! I have a message for you.',
-            timestamp: '21:10',
+            timestamp: page.greetingTimestamp ?? '21:10',
           }}
           attachment={page.image}
           audio={{
@@ -323,7 +337,7 @@ function PageContent({
                 x.text === (page.audioText ?? page.message),
             )?.src,
             transcript: page.message,
-            timestamp: '21:11',
+            timestamp: page.voiceTimestamp ?? '21:11',
           }}
           active={active}
           questions={[]}
@@ -538,18 +552,22 @@ export function ReviewedLesson({
                         : undefined
                     }
                     width={
-                      page.kind === 'scene' && page.image.aspectRatio
-                        ? { mediaAspectRatio: page.image.aspectRatio }
-                        : page.kind === 'vocabulary' && page.alignHeading
-                          ? { vocabularyColumns: 3 }
-                          : page.kind === 'vocabulary' ||
-                              page.kind === 'roleplay' ||
-                              page.kind === 'activity' ||
-                              page.kind === 'listening' ||
-                              page.kind === 'scene' ||
-                              page.kind === 'introductions'
-                            ? 'wide'
-                            : 'reading'
+                      page.mediaAspectRatio
+                        ? { mediaAspectRatio: page.mediaAspectRatio }
+                        : (page.kind === 'scene' ||
+                              page.kind === 'scene-vocabulary') &&
+                            page.image.aspectRatio
+                          ? { mediaAspectRatio: page.image.aspectRatio }
+                          : page.kind === 'vocabulary' && page.alignHeading
+                            ? { vocabularyColumns: 3 }
+                            : page.kind === 'vocabulary' ||
+                                page.kind === 'roleplay' ||
+                                page.kind === 'activity' ||
+                                page.kind === 'listening' ||
+                                page.kind === 'scene' ||
+                                page.kind === 'introductions'
+                              ? 'wide'
+                              : 'reading'
                     }
                     titleAudio={
                       lines

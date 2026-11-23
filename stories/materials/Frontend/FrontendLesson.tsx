@@ -1,3 +1,4 @@
+import { Button } from '../../../src/components/Button/Button'
 import {
   withLessonOpeningPages,
   withLessonOpeningPageIds,

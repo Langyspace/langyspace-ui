@@ -3,6 +3,8 @@ import { ReviewedLesson } from '../shared/ReviewedLesson'
 import type { ReviewedPage } from '../shared/ReviewedLesson.types'
 import data from './A106.review.json'
 import provenance from './audio-provenance.json'
+import additions from './audio-provenance81.json'
+import { FindMia } from './FindMia'
 import type { A106LessonProps } from './A106.types'
 
 const images = import.meta.glob('./assets/*.{webp,png}', {
@@ -17,7 +19,10 @@ const audio = import.meta.glob('./assets/audio/*.mp3', {
 }) as Record<string, string>
 const image = (id: string) =>
   images[`./assets/${id}.webp`] ?? images[`./assets/${id}.png`] ?? ''
-const recordings = prepareMaterialRecordings(provenance.items, audio)
+const recordings = prepareMaterialRecordings(
+  [...provenance.items, ...additions.items],
+  audio,
+)
 const pages = (data.pages as readonly ReviewedPage[]).map((page) => {
   if (page.kind === 'vocabulary')
     return {
@@ -41,6 +46,8 @@ export function A106Lesson({ initialPageId, learnerName }: A106LessonProps) {
       recordings={recordings}
       initialPageId={initialPageId}
       learnerName={learnerName}
+      activities={{ s12: <FindMia /> }}
+      freeConversationInstruction="Talk about pets and homes, ask about an animal your teacher knows and describe places. Real pets, imaginary pets and the example pictures all work"
     />
   )
 }

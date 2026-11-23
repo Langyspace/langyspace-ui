@@ -45,6 +45,5 @@ export const initial: VoiceMessageExerciseProps = {
   greeting: { text: 'Hi! How are you?', timestamp: '19:40' },
   audio,
   questions,
-  greeting: { text: 'Hi! 👋', timestamp: '19:40' },
   onAnswer: () => undefined,
 }

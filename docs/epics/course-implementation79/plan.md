@@ -11,13 +11,15 @@ Autorização de 23/11/2026: implementar os 60 planos revisados, doze por nível
 - [x] Verificação focada de estados, binding exato e apresentação em desktop/celular
 - [x] Primeiro lote disponível em prévia local, com [relatório e limites](first-batch.md)
 - [x] Segundo lote: A1.01, A1.02 e A1.03, com [registro da continuação](batch80.md)
-- [ ] A1: 8 códigos restantes
-- [ ] A2: 12 códigos
-- [ ] B1: 12 códigos
-- [ ] B2: 12 códigos
-- [ ] C1: 11 códigos restantes
+- [x] A1: 12 códigos implementados
+- [x] A2: 12 códigos implementados
+- [x] B1: 12 códigos implementados
+- [x] B2: 12 códigos implementados
+- [x] C1: 12 códigos implementados
+- [x] Fonte final preparada para export neutro
+- [ ] Revisão humana e reconciliação do histórico antes de promoção
 
-A revisão dos dois pilotos orientou a composição compartilhada. Com a continuação80, há cinco aulas autoradas e 55 ainda planejadas; não há trabalho agendado em segundo plano. A tarefa completa não será apresentada como concluída com esses lotes. Preservar capa, conversa livre penúltima e prática última. Um caso factual depende de fatos visíveis; ajuda não inventa dados pessoais. Cada aula tem seu próprio objetivo e dados.
+A revisão dos dois pilotos orientou a composição compartilhada. Com a continuação80, havia cinco aulas autoradas e 55 ainda planejadas; a continuação81 implementou o conjunto60, com relatório em [continuous81.md](continuous81.md). Em23/11/2026, a usuária autorizou seguir continuamente até A1–C1, sem encerrar a cada lote. Lotes continuam como checkpoints locais e commits, sem solicitar aprovação a cada um. Não há automação agendada: o trabalho ocorre nesta tarefa e retoma pelo registro persistente. A tarefa completa não será apresentada como concluída com esses lotes. Preservar capa, conversa livre penúltima e prática última. Um caso factual depende de fatos visíveis; ajuda não inventa dados pessoais. Cada aula tem seu próprio objetivo e dados.
 
 ## Contratos
 

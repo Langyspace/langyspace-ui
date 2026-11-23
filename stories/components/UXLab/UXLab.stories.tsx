@@ -1,3 +1,5 @@
+import { RouteMap } from '../../../src/components/InteractiveMaterial/RouteMap'
+import airportVocabulary81 from '../../materials/Course/assets/a1-07-vocabulary81.webp'
 import { A102Lesson } from '../../materials/A102/A102Lesson'
 import { A101Lesson } from '../../materials/A101/A101Lesson'
 import { A103Lesson } from '../../materials/A103/A103Lesson'
@@ -301,4 +303,60 @@ export const PossessiveWords: Story = {
 export const AnswerFeedbackSounds: Story = {
   render: () => <A101Lesson initialPageId="s21" />,
   tags: ['visual-review', 'audio-review'],
+}
+
+function StaticLearnedVocabulary() {
+  const [visited, visit] = useState<string[]>([])
+  const [selected, select] = useState<string>()
+  const words = ['passport', 'suitcase', 'plane', 'taxi', 'bus', 'gate']
+  return (
+    <SceneExplorer
+      presentation="vocabulary"
+      imageUrl={airportVocabulary81}
+      imageAlt="Six airport objects on a transparent background"
+      hotspots={words.map((label, i) => ({
+        id: label,
+        label,
+        prompt: '',
+        example: 'Say the word in a short travel sentence',
+        xPercent: [20, 50, 80][i % 3]!,
+        yPercent: i < 3 ? 46 : 88,
+      }))}
+      selectedId={selected}
+      visitedIds={visited}
+      onSelect={(id) => {
+        select(id)
+        visit((ids) => (ids.includes(id) ? ids : [...ids, id]))
+      }}
+      onDismiss={() => select(undefined)}
+    />
+  )
+}
+export const LearnedVocabularyLabels: Story = {
+  render: () => <StaticLearnedVocabulary />,
+}
+
+export const MapReference: Story = {
+  render: () => (
+    <RouteMap
+      label="Town reference"
+      startId="hotel"
+      places={[
+        {
+          id: 'hotel',
+          label: 'hotel',
+          symbol: '🏨',
+          xPercent: 20,
+          yPercent: 85,
+        },
+        { id: 'cafe', label: 'café', symbol: '☕', xPercent: 55, yPercent: 70 },
+        { id: 'park', label: 'park', symbol: '🌳', xPercent: 85, yPercent: 35 },
+      ]}
+      streets={[
+        { id: 'main', from: { x: 20, y: 15 }, to: { x: 20, y: 85 } },
+        { id: 'first', from: { x: 20, y: 70 }, to: { x: 85, y: 70 } },
+        { id: 'second', from: { x: 20, y: 35 }, to: { x: 85, y: 35 } },
+      ]}
+    />
+  ),
 }

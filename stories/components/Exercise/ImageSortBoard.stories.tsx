@@ -1,3 +1,4 @@
+import storyAtlas from '../../materials/Course/assets/a2-03-vocabulary81.webp'
 import { useState } from 'react'
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { ImageSortBoard } from '../../../src/components/Exercise/ImageSortBoard'
@@ -78,4 +79,56 @@ export const LongLabels: Story = {
 export const Narrow: Story = {
   globals: { viewport: { value: 'mobile1', isRotated: false } },
   tags: ['visual-review'],
+}
+
+export const StorySequence: Story = {
+  args: {
+    layout: 'sequence',
+    instructions: 'Choose a picture, then choose its place in the story',
+    items: [
+      {
+        id: 'bus',
+        label: 'At the bus stop',
+        imageUrl: storyAtlas,
+        imageRegion: {
+          columns: 3,
+          rows: 2,
+          column: 0,
+          row: 0,
+          sourceAspectRatio: 1.5,
+        },
+      },
+      {
+        id: 'rain',
+        label: 'Rain starts',
+        imageUrl: storyAtlas,
+        imageRegion: {
+          columns: 3,
+          rows: 2,
+          column: 1,
+          row: 1,
+          sourceAspectRatio: 1.5,
+        },
+      },
+      {
+        id: 'missed',
+        label: 'The bus leaves',
+        imageUrl: storyAtlas,
+        imageRegion: {
+          columns: 3,
+          rows: 2,
+          column: 1,
+          row: 0,
+          sourceAspectRatio: 1.5,
+        },
+      },
+    ],
+    categories: [
+      { id: 'first', label: 'First' },
+      { id: 'then', label: 'Then' },
+      { id: 'after', label: 'After that' },
+    ],
+    assignments: {},
+  },
+  tags: ['visual-review', 'layout-boundary'],
 }

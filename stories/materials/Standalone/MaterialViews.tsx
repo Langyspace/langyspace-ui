@@ -1,4 +1,7 @@
 import { lazy } from 'react'
+const Course = lazy(() =>
+  import('../Course/CourseLesson').then((m) => ({ default: m.CourseLesson })),
+)
 import type { MaterialViewProps } from './MaterialApp.types'
 const InfluencerRoutine = lazy(() =>
   import('../InfluencerRoutine/InfluencerRoutineLesson').then((m) => ({
@@ -84,5 +87,7 @@ export function MaterialView({
     return <B201 studentPortalOrigin={studentPortalOrigin} />
   if (materialKey === 'c1-01')
     return <C101 studentPortalOrigin={studentPortalOrigin} />
+  if (/^(a1|a2|b1|b2|c1)-(0[1-9]|1[0-2])$/.test(materialKey))
+    return <Course materialKey={materialKey} />
   return <Trial levelLabel="A1 · A2" />
 }

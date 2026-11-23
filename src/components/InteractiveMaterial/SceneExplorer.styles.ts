@@ -34,6 +34,7 @@ export const Hotspot = styled(Pressable)<{
   $x: number
   $y: number
   $visited: boolean
+  $revealed?: boolean
 }>`
   position: absolute;
   left: ${(p) => p.$x}%;
@@ -113,6 +114,27 @@ export const LabelHotspot = styled(Hotspot)`
     border-radius: ${theme.radius.circle};
     ${dotHotspot}
   }
+`
+export const VocabularyHotspot = styled(LabelHotspot)`
+  max-width: 28cqw;
+  height: auto;
+  min-height: ${theme.sizes.control.md};
+  span {
+    display: block;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    color: ${(p) => Common.recipe(p).foreground};
+    background: ${(p) => Common.recipe(p).surface};
+  }
+  ${(p) =>
+    !p.$revealed &&
+    css`
+      width: 44px;
+      height: 44px;
+      border-radius: ${theme.radius.circle};
+      ${dotHotspot}
+    `}
 `
 
 export const Instruction = styled(Common.Hint)`

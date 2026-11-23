@@ -1,5 +1,5 @@
 export {
   Title,
-  Tail,
+  Text as Tail,
   Action,
 } from '../../../src/components/Slide/SlideTitle.styles'

@@ -1,0 +1,350 @@
+{
+  "version": 81,
+  "code": "A1.10",
+  "key": "a1-10",
+  "title": "At the café",
+  "goal": "Order a drink and food, then correct a mistake politely",
+  "freeConversationInstruction": "Talk about what you enjoy ordering and ask your teacher about her favourite places",
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Imagine you are leaving the hotel to get a drink",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Is there a café near here?",
+          "cue": "Ask for a place and a short route",
+          "hint": "Is there a …? How do I get there?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Food and drinks",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a1-10-vocabulary81",
+        "alt": "Six illustrated situations for At the café",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A110-V81.0",
+          "label": "coffee",
+          "prompt": "",
+          "example": "I’d like a coffee, please",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A110-FS81.0",
+          "audioText": "coffee. I’d like a coffee, please."
+        },
+        {
+          "id": "A110-V81.1",
+          "label": "tea",
+          "prompt": "",
+          "example": "Can I have some tea?",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A110-FS81.1",
+          "audioText": "tea. Can I have some tea?"
+        },
+        {
+          "id": "A110-V81.2",
+          "label": "water",
+          "prompt": "",
+          "example": "Some water, please",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A110-FS81.2",
+          "audioText": "water. Some water, please."
+        },
+        {
+          "id": "A110-V81.3",
+          "label": "juice",
+          "prompt": "",
+          "example": "I’d like an orange juice",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A110-FS81.3",
+          "audioText": "juice. I’d like an orange juice."
+        },
+        {
+          "id": "A110-V81.4",
+          "label": "sandwich",
+          "prompt": "",
+          "example": "This sandwich is for my friend",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A110-FS81.4",
+          "audioText": "sandwich. This sandwich is for my friend."
+        },
+        {
+          "id": "A110-V81.5",
+          "label": "cake",
+          "prompt": "",
+          "example": "Can I have a piece of cake?",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A110-FS81.5",
+          "audioText": "cake. Can I have a piece of cake?"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Ordering at the café",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "A110-D81.1",
+          "speaker": "Kim",
+          "text": "Hello! What would you like?",
+          "audioText": "Hello! What would you like?",
+          "translation": "Olá! O que você gostaria de pedir?"
+        },
+        {
+          "id": "A110-D81.2",
+          "speaker": "Ana",
+          "text": "I’d like some tea and a piece of cake, please",
+          "audioText": "I’d like some tea and a piece of cake, please.",
+          "translation": "Eu gostaria de chá e uma fatia de bolo, por favor"
+        },
+        {
+          "id": "A110-D81.3",
+          "speaker": "Kim",
+          "text": "Of course. Would you like milk in your tea?",
+          "audioText": "Of course. Would you like milk in your tea?",
+          "translation": "Claro. Você quer leite no chá?"
+        },
+        {
+          "id": "A110-D81.4",
+          "speaker": "Ana",
+          "text": "No milk, thank you. How much is it?",
+          "audioText": "No milk, thank you. How much is it?",
+          "translation": "Sem leite, obrigada. Quanto fica?"
+        },
+        {
+          "id": "A110-D81.5",
+          "speaker": "Kim",
+          "text": "It’s six dollars. You can pay here",
+          "audioText": "It’s six dollars. You can pay here.",
+          "translation": "Fica seis dólares. Pode pagar aqui"
+        },
+        {
+          "id": "A110-D81.6",
+          "speaker": "Ana",
+          "text": "Here you are. Thank you!",
+          "audioText": "Here you are. Thank you!",
+          "translation": "Aqui está. Obrigada!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Does Ana want milk?",
+          "cue": "Answer and say her drink",
+          "hint": "No, she …",
+          "answer": "No, she doesn’t. She wants tea with no milk"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Place your order",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What would you like?",
+          "cue": "Choose a drink and some food",
+          "hint": "I’d like … and …, please",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Is your order right?",
+          "cue": "Check the tray. Correct the order",
+          "hint": "Sorry, this is … I’d like …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Make and check an order",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Make a polite order",
+          "verb": "I’d like + food or drink",
+          "example": "I’d like some tea, please"
+        },
+        {
+          "id": "1",
+          "subject": "Ask for one item",
+          "verb": "Can I have a / an …?",
+          "example": "Can I have a sandwich and an orange juice?"
+        },
+        {
+          "id": "2",
+          "subject": "Correct the order",
+          "verb": "Sorry, this is …",
+          "example": "Sorry, this is coffee. I’d like tea"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Check your order",
+      "instruction": "Order some food, then check what arrives",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "One more order",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Can you order something for me? I’d like some tea and a piece of cake, please. No milk in the tea. I’m outside the café, near the door. I have six dollars. Thank you! I’ll see you in a minute",
+      "audioText": "Hi, Ana! Can you order something for me? I’d like some tea and a piece of cake, please. No milk in the tea. I’m outside the café, near the door. I have six dollars. Thank you! I’ll see you in a minute.",
+      "audioId": "A110-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What would your friend like?",
+          "cue": "Report the food and drink you heard",
+          "hint": "She’d like …",
+          "answer": "She’d like tea and a piece of cake, with no milk"
+        }
+      ],
+      "greetingTimestamp": "12:10",
+      "voiceTimestamp": "12:11"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Order for your friend",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Order a drink and food, then correct a mistake politely"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "menu",
+      "title": "Choose a drink and some food",
+      "menu": [
+        {
+          "id": "tea",
+          "label": "Tea",
+          "price": 2,
+          "group": "drink"
+        },
+        {
+          "id": "coffee",
+          "label": "Coffee",
+          "price": 3,
+          "group": "drink"
+        },
+        {
+          "id": "cake",
+          "label": "Cake",
+          "price": 4,
+          "group": "food"
+        },
+        {
+          "id": "sandwich",
+          "label": "Sandwich",
+          "price": 5,
+          "group": "food"
+        }
+      ],
+      "questions": [
+        {
+          "id": "order",
+          "prompt": "What would you like?",
+          "cue": "Order a drink and some food. Then check the tray",
+          "hint": "I’d like …, please. Sorry, this is …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Your friend’s order",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Drink",
+          "value": "Tea · no milk"
+        },
+        {
+          "id": "1",
+          "label": "Food",
+          "value": "A piece of cake"
+        },
+        {
+          "id": "2",
+          "label": "Budget",
+          "value": "Six dollars"
+        }
+      ],
+      "questions": [
+        {
+          "id": "friend",
+          "prompt": "What would your friend like?",
+          "cue": "Order for Kim and check the price",
+          "hint": "She’d like … and …, please. How much is it?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

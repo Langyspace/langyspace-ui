@@ -5,7 +5,6 @@ import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
 import { produce, scene } from './A105.data'
 import { A105Lesson } from './A105Lesson'
-
 const meta = {
   title: 'Materials/A1.05',
   component: A105Lesson,
@@ -14,26 +13,63 @@ const meta = {
     docs: {
       description: {
         component:
-          'A1.05 revisada para conversação particular de 50 minutos: frutas sem fundo, gravações ElevenLabs, diálogo, lacunas, escuta e role-play. Componentes aprovados da UI Library têm prioridade sobre as versões históricas do Claude Design',
+          'Replanned 50-minute lesson. Canonical scenes, guided conversation with questions, personal speaking, grammar, visual task, prepared ElevenLabs audio, theme-specific free conversation and offline practice.',
       },
     },
   },
-  args: { initialPageId: 's1', learnerName: '' },
+  args: { initialPageId: 's1' },
 } satisfies Meta<typeof A105Lesson>
-
 export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
-export const Vocabulary: Story = { args: { initialPageId: 's2' } }
-export const Preferences: Story = { args: { initialPageId: 's3' } }
-export const Comprehension: Story = { args: { initialPageId: 's61' } }
-export const Dialogue: Story = { args: { initialPageId: 's6' } }
-export const Grammar: Story = { args: { initialPageId: 's5' } }
-export const YourVersion: Story = { args: { initialPageId: 's8' } }
-export const Listening: Story = { args: { initialPageId: 's9' } }
-export const RolePlay: Story = { args: { initialPageId: 's11' } }
-export const Homework: Story = { args: { initialPageId: 's12' } }
-
+export const Speaking1: Story = {
+  args: { initialPageId: 's1' },
+  tags: ['visual-review'],
+}
+export const Vocabulary1: Story = {
+  args: { initialPageId: 's2' },
+  tags: ['visual-review'],
+}
+export const Vocabulary2: Story = {
+  args: { initialPageId: 's4' },
+  tags: ['visual-review'],
+}
+export const Dialogue1: Story = {
+  args: { initialPageId: 's6' },
+  tags: ['visual-review'],
+}
+export const Speaking2: Story = {
+  args: { initialPageId: 's5' },
+  tags: ['visual-review'],
+}
+export const Grammar1: Story = {
+  args: { initialPageId: 's7' },
+  tags: ['visual-review'],
+}
+export const Dialogue2: Story = {
+  args: { initialPageId: 's8' },
+  tags: ['visual-review'],
+}
+export const Task1: Story = {
+  args: { initialPageId: 's11' },
+  tags: ['visual-review'],
+}
+export const Listening1: Story = {
+  args: { initialPageId: 's9' },
+  tags: ['visual-review'],
+}
+export const Task2: Story = {
+  args: { initialPageId: 's91' },
+  tags: ['visual-review'],
+}
+export const Homework1: Story = {
+  args: { initialPageId: 's12' },
+  tags: ['visual-review'],
+}
+export const FreeConversation: Story = {
+  args: { initialPageId: 'free-conversation' },
+  tags: ['visual-review'],
+}
 function CutoutPreview({ staticCards = false }: { staticCards?: boolean }) {
   const [revealed, setRevealed] = useState<string[]>([])
   const [all, setAll] = useState(false)

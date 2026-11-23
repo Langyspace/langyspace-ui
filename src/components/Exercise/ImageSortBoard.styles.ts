@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { ChoiceCard } from '../ChoiceCard/ChoiceCard'
@@ -6,7 +6,7 @@ import { Button } from '../Button/Button'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-image-sort-board',
-})`
+})<{ $sequence?: boolean }>`
   display: grid;
   gap: ${theme.spacing[3]};
   min-width: 0;
@@ -17,6 +17,44 @@ export const Root = styled.section.withConfig({
   @container (max-height: ${theme.viewportHeights.lg}) {
     --lsui-sort-image-height: clamp(2.75rem, 6.5cqh, 3.5rem);
   }
+  ${(p) =>
+    p.$sequence &&
+    css`
+      ${Board} {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: ${theme.spacing[2]};
+      }
+      ${Column} {
+        grid-column: auto;
+        min-height: calc(var(--lsui-sort-image-height) + 6rem);
+        padding: ${theme.spacing[2]};
+        gap: ${theme.spacing[2]};
+      }
+      ${Column}:first-child {
+        grid-column: 1 / -1;
+      }
+      ${Items} {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      ${Column}:first-child ${Items} {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        min-height: calc(var(--lsui-sort-image-height) + 2rem);
+      }
+      ${Picture} > div {
+        width: var(--lsui-sort-image-height);
+        align-self: center;
+      }
+      ${Picture} span {
+        font-size: ${theme.typography.fontSize.sm};
+      }
+      ${GroupButton} {
+        padding-inline: ${theme.spacing[1]};
+        font-size: ${theme.typography.fontSize.sm};
+      }
+      ${Empty} {
+        font-size: ${theme.typography.fontSize.xs};
+      }
+    `}
 `
 export const Instructions = styled.p`
   margin: 0;

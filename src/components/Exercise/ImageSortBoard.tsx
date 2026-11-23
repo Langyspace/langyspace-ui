@@ -1,6 +1,7 @@
 import { useId, useLayoutEffect, useRef, useState } from 'react'
 import * as S from './ImageSortBoard.styles'
 import type { ImageSortBoardProps } from './ImageSortBoard.types'
+import { PictureImage } from '../../internal/PictureImage'
 
 const dragType = 'application/x-ui-picture'
 
@@ -15,6 +16,7 @@ export function ImageSortBoard({
   unassignedLabel = 'Pictures',
   instructions = 'Drag a picture, or select it and choose a column',
   emptyLabel = 'No pictures here yet',
+  layout = 'categories',
   footer,
   'aria-describedby': describedBy,
   ...props
@@ -43,6 +45,7 @@ export function ImageSortBoard({
   return (
     <S.Root
       {...props}
+      $sequence={layout === 'sequence'}
       aria-describedby={[describedBy, id + '-instructions']
         .filter(Boolean)
         .join(' ')}
@@ -111,10 +114,10 @@ export function ImageSortBoard({
                     onDragEnd={() => setDragTarget(undefined)}
                     onClick={() => onSelect(item.id)}
                   >
-                    <img
+                    <PictureImage
                       src={item.imageUrl}
                       alt={item.imageAlt ?? ''}
-                      draggable={false}
+                      region={item.imageRegion}
                     />
                     <span>{item.label}</span>
                   </S.Picture>

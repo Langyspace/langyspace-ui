@@ -1,0 +1,469 @@
+{
+  "version": 81,
+  "code": "B2.01",
+  "key": "b2-01",
+  "title": "Dead phone, no charger",
+  "goal": "Tell a travel story and connect background, earlier events and turning points",
+  "freeConversationInstruction": "Tell a memorable story, ask about the background and explore how events affected the outcome",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall explaining what happened before another past event",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What had happened before the problem?",
+          "cue": "Give the earlier event and its consequence",
+          "hint": "They’d …, so …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "A problem, then a turning point",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b2-01-vocabulary81",
+        "alt": "Six illustrated situations for Dead phone, no charger",
+        "aspectRatio": 1.7777777777777777
+      },
+      "hotspots": [
+        {
+          "id": "B201-V81.0",
+          "label": "run out of battery",
+          "prompt": "",
+          "example": "My phone ran out of battery after I’d used it as a map",
+          "xPercent": 12.5,
+          "yPercent": 46,
+          "audioId": "B201-FS81.0",
+          "audioText": "run out of battery. My phone ran out of battery after I’d used it as a map."
+        },
+        {
+          "id": "B201-V81.1",
+          "label": "get lost",
+          "prompt": "",
+          "example": "I got lost on the way to the hotel",
+          "xPercent": 37.5,
+          "yPercent": 46,
+          "audioId": "B201-FS81.1",
+          "audioText": "get lost. I got lost on the way to the hotel."
+        },
+        {
+          "id": "B201-V81.2",
+          "label": "borrow",
+          "prompt": "",
+          "example": "Could I borrow your power bank?",
+          "xPercent": 62.5,
+          "yPercent": 46,
+          "audioId": "B201-FS81.2",
+          "audioText": "borrow. Could I borrow your power bank?"
+        },
+        {
+          "id": "B201-V81.3",
+          "label": "lend",
+          "prompt": "",
+          "example": "A woman lent me her power bank",
+          "xPercent": 87.5,
+          "yPercent": 46,
+          "audioId": "B201-FS81.3",
+          "audioText": "lend. A woman lent me her power bank."
+        },
+        {
+          "id": "B201-V81.4",
+          "label": "an address",
+          "prompt": "",
+          "example": "The address was in Raj’s message",
+          "xPercent": 16,
+          "yPercent": 88,
+          "audioId": "B201-FS81.4",
+          "audioText": "an address. The address was in Raj’s message."
+        },
+        {
+          "id": "B201-V81.5",
+          "label": "by then",
+          "prompt": "",
+          "example": "By then, they’d been waiting for an hour",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B201-FS81.5",
+          "audioText": "by then. By then, they’d been waiting for an hour."
+        },
+        {
+          "id": "B201-V81.6",
+          "label": "eventually",
+          "prompt": "",
+          "example": "Eventually, I arrived at the restaurant",
+          "xPercent": 84,
+          "yPercent": 88,
+          "audioId": "B201-FS81.6",
+          "audioText": "eventually. Eventually, I arrived at the restaurant."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Dead phone, no charger",
+      "paragraphs": [
+        "New York episode: phone died at 4 pm after use as a map; charger at hotel; dinner planned for 7 pm; doorman suggested café, no free outlets; waited twenty minutes; a woman lent a power bank; Ana had a cable and arrived by taxi at 8 pm. Do not infer that Kim was the stranger who helped."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "How was New York?",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "So, how was New York?",
+          "audioText": "So, how was New York?",
+          "translation": "E aí, como foi Nova York?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Pretty good, but on the second day, my phone died at four in the afternoon",
+          "audioText": "Pretty good, but on the second day, my phone died at four in the afternoon.",
+          "translation": "Bem bom, mas no segundo dia o meu celular descarregou às quatro da tarde"
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "Oh no! Why?",
+          "audioText": "Oh no! Why?",
+          "translation": "Ah, não! Por quê?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "I’d been using it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel",
+          "audioText": "I’d been using it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel.",
+          "translation": "Eu vinha usando o celular como mapa o dia todo, e não reparei na bateria. E tinha deixado o carregador no hotel"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What had Ana left at the hotel?",
+          "cue": "Name the earlier completed fact",
+          "hint": "She’d …",
+          "answer": "She’d left her charger"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Looking for help",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "Why didn’t you go back to the hotel?",
+          "audioText": "Why didn’t you go back to the hotel?",
+          "translation": "Por que você não voltou para o hotel?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+          "audioText": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+          "translation": "Eu tentei, mas me perdi. E o jantar da equipe era às sete. O endereço estava numa mensagem do Raj!"
+        },
+        {
+          "id": "D.7",
+          "speaker": "Kim",
+          "text": "So what did you do?",
+          "audioText": "So what did you do?",
+          "translation": "E aí, o que você fez?"
+        },
+        {
+          "id": "D.8",
+          "speaker": "Ana",
+          "text": "I asked a doorman for help, and he told me about a café. But there were no free outlets",
+          "audioText": "I asked a doorman for help, and he told me about a café. But there were no free outlets.",
+          "translation": "Pedi ajuda a um porteiro, e ele me falou de um café. Mas não tinha nenhuma tomada livre"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why didn’t the café solve the charging problem?",
+          "cue": "Use the stated obstacle",
+          "hint": "There were …",
+          "answer": "There were no free outlets"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "The turning point",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "D.9",
+          "speaker": "Kim",
+          "text": "Oh no. And then?",
+          "audioText": "Oh no. And then?",
+          "translation": "Ah, não. E depois?"
+        },
+        {
+          "id": "D.10",
+          "speaker": "Ana",
+          "text": "I’d been waiting there alone for twenty minutes when a woman lent me her power bank. Luckily, I had my cable",
+          "audioText": "I’d been waiting there alone for twenty minutes when a woman lent me her power bank. Luckily, I had my cable.",
+          "translation": "Eu estava esperando lá sozinha havia vinte minutos quando uma moça me emprestou a bateria portátil dela. Por sorte, eu estava com o meu cabo"
+        },
+        {
+          "id": "D.11",
+          "speaker": "Kim",
+          "text": "So did you make it to the dinner?",
+          "audioText": "So did you make it to the dinner?",
+          "translation": "E você chegou ao jantar, afinal?"
+        },
+        {
+          "id": "D.12",
+          "speaker": "Ana",
+          "text": "Eventually, yes. I caught a taxi and got there at eight. By then, they’d been waiting for an hour!",
+          "audioText": "Eventually, yes. I caught a taxi and got there at eight. By then, they’d been waiting for an hour!",
+          "translation": "No fim, sim. Peguei um táxi e cheguei às oito. Àquela altura, eles já estavam esperando havia uma hora!"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What enabled Ana to retrieve the address and travel?",
+          "cue": "Explain why the help mattered",
+          "hint": "A woman …, so …",
+          "answer": "A woman lent a power bank, so Ana could use her phone"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Reconstruct the evening",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Give each past form a job in the story",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A main event",
+          "verb": "past simple",
+          "example": "My phone died at four"
+        },
+        {
+          "id": "1",
+          "subject": "An earlier completed fact",
+          "verb": "had + past participle",
+          "example": "I’d left my charger at the hotel"
+        },
+        {
+          "id": "2",
+          "subject": "An earlier ongoing activity",
+          "verb": "had been + verb-ing",
+          "example": "I’d been using the phone as a map all day"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Explain how the trip unfolded",
+      "instruction": "Use the timeline to tell me the story and explain the turning point",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Raj’s message at seven twenty",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "audioText": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "audioId": "b201-raj-message",
+      "greeting": "Ana? Are you coming?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What does the message add to the story?",
+          "cue": "Explain the new information and connect it to an earlier event",
+          "hint": "We now know that … Before that, …",
+          "answer": "Raj adds the door wait, table and pizza before Ana’s arrival"
+        }
+      ],
+      "contact": {
+        "name": "Raj"
+      },
+      "greetingTimestamp": "18:40",
+      "voiceTimestamp": "19:20"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Add the missing viewpoint",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Tell a travel story and connect background, earlier events and turning points"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "timeline",
+      "title": "Keep the four anchors in order",
+      "facts": [
+        {
+          "id": "0",
+          "label": "4 pm",
+          "value": "Phone died · charger at hotel"
+        },
+        {
+          "id": "1",
+          "label": "Before the dinner",
+          "value": "Got lost · café had no free outlets"
+        },
+        {
+          "id": "2",
+          "label": "Turning point and result",
+          "value": "After 20 minutes, borrowed power bank · taxi · arrived 8 pm"
+        }
+      ],
+      "questions": [
+        {
+          "id": "story",
+          "prompt": "What had been happening before the phone died?",
+          "cue": "Set the background, narrate the problem and explain the turning point",
+          "hint": "She’d been … She’d left … Eventually …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "timeline",
+      "title": "Different points in the same evening",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Dinner plan",
+          "value": "7 pm"
+        },
+        {
+          "id": "1",
+          "label": "Raj’s message",
+          "value": "7:20 pm · waited at door 15 minutes · got a table"
+        },
+        {
+          "id": "2",
+          "label": "Ana arrived",
+          "value": "8 pm · an hour after dinner time"
+        }
+      ],
+      "questions": [
+        {
+          "id": "timeline",
+          "prompt": "Does Raj’s message contradict Ana’s arrival story?",
+          "cue": "Separate the 15-minute door wait from the overall delay. Do not invent the missing events",
+          "hint": "Not necessarily. The door wait was …, while Ana arrived … We don’t know exactly when …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "4 pm",
+          "value": "Phone died · charger at hotel"
+        },
+        {
+          "id": "1",
+          "label": "Before the dinner",
+          "value": "Got lost · café had no free outlets"
+        },
+        {
+          "id": "2",
+          "label": "Turning point and result",
+          "value": "After 20 minutes, borrowed power bank · taxi · arrived 8 pm"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What had been happening before the phone died?",
+          "cue": "Explain the background using the timeline",
+          "hint": "She’d been …, so …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What helped her solve the problem?",
+          "cue": "Explain a turning point and why it mattered",
+          "hint": "Eventually, … This helped because …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  },
+  "notesStorageKey": "langy-notes:b2-01"
+}

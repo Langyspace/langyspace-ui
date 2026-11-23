@@ -1,0 +1,1233 @@
+{
+  "version": 81,
+  "items": [
+    {
+      "id": "a201.dialogue.anna-ben.01",
+      "text": "Hey! What are you doing?",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "bytes": 24702,
+      "durationSeconds": 1.486077,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "OnQjUxhY2pkFr1PadZGA",
+      "wordTimings": [
+        {
+          "text": "Hey!",
+          "start": 0.0,
+          "end": 0.372
+        },
+        {
+          "text": "What",
+          "start": 0.464,
+          "end": 0.604
+        },
+        {
+          "text": "are",
+          "start": 0.627,
+          "end": 0.708
+        },
+        {
+          "text": "you",
+          "start": 0.731,
+          "end": 0.801
+        },
+        {
+          "text": "doing?",
+          "start": 0.836,
+          "end": 1.486
+        }
+      ],
+      "synthesisFingerprint": "926ac0a0947abfc2ff2339ef44d572fd36ec5e98ef3e7764bdc8e05b7351f27e",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.01.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.01.mp3",
+      "sourceId": "a201.dialogue.anna-ben.01",
+      "sha256": "25de62188d4213c2c65b6971b3f2c2dd174ebcc9d0e22db12011079b034b7170",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.02",
+      "text": "I'm cooking dinner. What about you?",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "bytes": 35987,
+      "durationSeconds": 2.182676,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "ZSoXZ9ojJm4LY6FrsKHO",
+      "wordTimings": [
+        {
+          "text": "I'm",
+          "start": 0.0,
+          "end": 0.174
+        },
+        {
+          "text": "cooking",
+          "start": 0.232,
+          "end": 0.499
+        },
+        {
+          "text": "dinner.",
+          "start": 0.546,
+          "end": 0.929
+        },
+        {
+          "text": "What",
+          "start": 1.161,
+          "end": 1.324
+        },
+        {
+          "text": "about",
+          "start": 1.358,
+          "end": 1.533
+        },
+        {
+          "text": "you?",
+          "start": 1.591,
+          "end": 2.182675736961451
+        }
+      ],
+      "synthesisFingerprint": "ead095a060309c1a9b866ec5594a4b25bf4c56515b3e229ad683c7265675cff1",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.02.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.02.mp3",
+      "sourceId": "a201.dialogue.anna-ben.02",
+      "sha256": "21a7c0c91bfc24b846d1267c72b6d2b1f7ab443148f26772e623f0e81fbe1d5d",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.03",
+      "text": "I'm watching a movie.",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "bytes": 22612,
+      "durationSeconds": 1.346757,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "GDWlbjkFr9ueX5kwHlvb",
+      "wordTimings": [
+        {
+          "text": "I'm",
+          "start": 0.0,
+          "end": 0.174
+        },
+        {
+          "text": "watching",
+          "start": 0.209,
+          "end": 0.464
+        },
+        {
+          "text": "a",
+          "start": 0.511,
+          "end": 0.534
+        },
+        {
+          "text": "movie.",
+          "start": 0.569,
+          "end": 1.3467573696145125
+        }
+      ],
+      "synthesisFingerprint": "7eb0086fdb805d5c01bbeeb7fa7e34249742bac1d852e0caab0cb1aa0660ce9f",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.03.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.03.mp3",
+      "sourceId": "a201.dialogue.anna-ben.03",
+      "sha256": "46c6a9ef1313f372695727ff1675f6c0111260f61008695c233fa39936349aea",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.04",
+      "text": "Nice! Do you usually watch movies at night?",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "bytes": 38077,
+      "durationSeconds": 2.321995,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "L9YFinHLaGT8xQtKP9gY",
+      "wordTimings": [
+        {
+          "text": "Nice!",
+          "start": 0.0,
+          "end": 0.43
+        },
+        {
+          "text": "Do",
+          "start": 0.453,
+          "end": 0.534
+        },
+        {
+          "text": "you",
+          "start": 0.569,
+          "end": 0.639
+        },
+        {
+          "text": "usually",
+          "start": 0.72,
+          "end": 0.964
+        },
+        {
+          "text": "watch",
+          "start": 0.998,
+          "end": 1.173
+        },
+        {
+          "text": "movies",
+          "start": 1.254,
+          "end": 1.544
+        },
+        {
+          "text": "at",
+          "start": 1.579,
+          "end": 1.649
+        },
+        {
+          "text": "night?",
+          "start": 1.707,
+          "end": 2.3219954648526078
+        }
+      ],
+      "synthesisFingerprint": "13cfdddc3aa614e1ee8dabfec19470e950824561ea38a6ee596509c53072af1b",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.04.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.04.mp3",
+      "sourceId": "a201.dialogue.anna-ben.04",
+      "sha256": "83fbe274e63b20456ee0c14663058db0669598ade0bd141a0163b085ae9777ba",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.05",
+      "text": "Yes, but I usually read before bed. Do you cook every day?",
+      "speaker": "Anna",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "bytes": 58975,
+      "durationSeconds": 3.622313,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "p71jt65Redn17zn3vqt2",
+      "wordTimings": [
+        {
+          "text": "Yes,",
+          "start": 0.0,
+          "end": 0.313
+        },
+        {
+          "text": "but",
+          "start": 0.348,
+          "end": 0.476
+        },
+        {
+          "text": "I",
+          "start": 0.511,
+          "end": 0.546
+        },
+        {
+          "text": "usually",
+          "start": 0.65,
+          "end": 0.952
+        },
+        {
+          "text": "read",
+          "start": 1.01,
+          "end": 1.161
+        },
+        {
+          "text": "before",
+          "start": 1.207,
+          "end": 1.463
+        },
+        {
+          "text": "bed.",
+          "start": 1.509,
+          "end": 1.904
+        },
+        {
+          "text": "Do",
+          "start": 2.38,
+          "end": 2.473
+        },
+        {
+          "text": "you",
+          "start": 2.496,
+          "end": 2.566
+        },
+        {
+          "text": "cook",
+          "start": 2.601,
+          "end": 2.74
+        },
+        {
+          "text": "every",
+          "start": 2.786,
+          "end": 2.961
+        },
+        {
+          "text": "day?",
+          "start": 3.007,
+          "end": 3.622
+        }
+      ],
+      "synthesisFingerprint": "6cc9e2742ef16c4aad6944b85989056f80b1096844f74ba9d87cd3a8fd05bc94",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.05.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.05.mp3",
+      "sourceId": "a201.dialogue.anna-ben.05",
+      "sha256": "d4ed22eb6e3ca5f82997bad0fac1994c14fd1985d29f15a0586d31c7f143ad9f",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.dialogue.anna-ben.06",
+      "text": "Not really. I usually order food, but today I'm making pasta.",
+      "speaker": "Ben",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "voiceName": "Will - Relaxed Optimist",
+      "bytes": 68588,
+      "durationSeconds": 4.226032,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "requestId": "DgkQZg0fgtckJnXbCl0s",
+      "wordTimings": [
+        {
+          "text": "Not",
+          "start": 0.0,
+          "end": 0.255
+        },
+        {
+          "text": "really.",
+          "start": 0.313,
+          "end": 0.813
+        },
+        {
+          "text": "I",
+          "start": 1.045,
+          "end": 1.103
+        },
+        {
+          "text": "usually",
+          "start": 1.231,
+          "end": 1.498
+        },
+        {
+          "text": "order",
+          "start": 1.533,
+          "end": 1.707
+        },
+        {
+          "text": "food,",
+          "start": 1.8,
+          "end": 2.148
+        },
+        {
+          "text": "but",
+          "start": 2.171,
+          "end": 2.299
+        },
+        {
+          "text": "today",
+          "start": 2.334,
+          "end": 2.705
+        },
+        {
+          "text": "I'm",
+          "start": 2.833,
+          "end": 2.984
+        },
+        {
+          "text": "making",
+          "start": 3.042,
+          "end": 3.297
+        },
+        {
+          "text": "pasta.",
+          "start": 3.355,
+          "end": 4.226
+        }
+      ],
+      "synthesisFingerprint": "d37e6c449e01bda687fdf6f8b610032f1c70a9e0fa8eeb6ae5edaf6e743074de",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.dialogue.anna-ben.06.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.dialogue.anna-ben.06.mp3",
+      "sourceId": "a201.dialogue.anna-ben.06",
+      "sha256": "aafb9073e70a6a235c311551ee7c3382907b0a6b57e8a9452f332a2a9e6a7f5d",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "a201.listening.anna.01",
+      "speaker": "Anna",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "text": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
+      "textSha256": "39b7a5aca1a18ed97be7b4478eb947e982e2fa8691b3e73edf786517671c2573",
+      "bytes": 281747,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "synthesisFingerprint": "362f1a5aad781783a7692defcdb78c25b3736b31e799f02e2640cad3167cecbc",
+      "wordTimings": [
+        {
+          "text": "Hey!",
+          "start": 0.0,
+          "end": 0.569
+        },
+        {
+          "text": "What",
+          "start": 0.871,
+          "end": 1.022
+        },
+        {
+          "text": "are",
+          "start": 1.045,
+          "end": 1.126
+        },
+        {
+          "text": "you",
+          "start": 1.149,
+          "end": 1.219
+        },
+        {
+          "text": "doing?",
+          "start": 1.265,
+          "end": 1.869
+        },
+        {
+          "text": "I'm",
+          "start": 2.531,
+          "end": 2.682
+        },
+        {
+          "text": "at",
+          "start": 2.728,
+          "end": 2.786
+        },
+        {
+          "text": "home",
+          "start": 2.833,
+          "end": 2.972
+        },
+        {
+          "text": "right",
+          "start": 3.007,
+          "end": 3.17
+        },
+        {
+          "text": "now.",
+          "start": 3.204,
+          "end": 3.657
+        },
+        {
+          "text": "I'm",
+          "start": 3.924,
+          "end": 4.063
+        },
+        {
+          "text": "making",
+          "start": 4.098,
+          "end": 4.319
+        },
+        {
+          "text": "some",
+          "start": 4.365,
+          "end": 4.505
+        },
+        {
+          "text": "coffee",
+          "start": 4.551,
+          "end": 4.911
+        },
+        {
+          "text": "and",
+          "start": 4.946,
+          "end": 5.016
+        },
+        {
+          "text": "listening",
+          "start": 5.062,
+          "end": 5.352
+        },
+        {
+          "text": "to",
+          "start": 5.399,
+          "end": 5.445
+        },
+        {
+          "text": "music.",
+          "start": 5.492,
+          "end": 6.118
+        },
+        {
+          "text": "I",
+          "start": 6.78,
+          "end": 6.838
+        },
+        {
+          "text": "usually",
+          "start": 6.966,
+          "end": 7.268
+        },
+        {
+          "text": "go",
+          "start": 7.303,
+          "end": 7.384
+        },
+        {
+          "text": "to",
+          "start": 7.43,
+          "end": 7.477
+        },
+        {
+          "text": "the",
+          "start": 7.523,
+          "end": 7.593
+        },
+        {
+          "text": "gym",
+          "start": 7.628,
+          "end": 7.79
+        },
+        {
+          "text": "in",
+          "start": 7.825,
+          "end": 7.872
+        },
+        {
+          "text": "the",
+          "start": 7.906,
+          "end": 7.976
+        },
+        {
+          "text": "morning,",
+          "start": 8.011,
+          "end": 8.371
+        },
+        {
+          "text": "but",
+          "start": 8.406,
+          "end": 8.545
+        },
+        {
+          "text": "today",
+          "start": 8.591,
+          "end": 8.882
+        },
+        {
+          "text": "I'm",
+          "start": 8.928,
+          "end": 9.033
+        },
+        {
+          "text": "just",
+          "start": 9.079,
+          "end": 9.23
+        },
+        {
+          "text": "relaxing.",
+          "start": 9.265,
+          "end": 10.089
+        },
+        {
+          "text": "My",
+          "start": 10.646,
+          "end": 10.762
+        },
+        {
+          "text": "sister",
+          "start": 10.844,
+          "end": 11.099
+        },
+        {
+          "text": "is",
+          "start": 11.157,
+          "end": 11.227
+        },
+        {
+          "text": "watching",
+          "start": 11.273,
+          "end": 11.54
+        },
+        {
+          "text": "TV,",
+          "start": 11.598,
+          "end": 12.132
+        },
+        {
+          "text": "and",
+          "start": 12.167,
+          "end": 12.249
+        },
+        {
+          "text": "my",
+          "start": 12.295,
+          "end": 12.365
+        },
+        {
+          "text": "parents",
+          "start": 12.423,
+          "end": 12.783
+        },
+        {
+          "text": "are",
+          "start": 12.806,
+          "end": 12.887
+        },
+        {
+          "text": "cooking",
+          "start": 12.922,
+          "end": 13.166
+        },
+        {
+          "text": "lunch.",
+          "start": 13.212,
+          "end": 13.781
+        },
+        {
+          "text": "What",
+          "start": 14.814,
+          "end": 14.977
+        },
+        {
+          "text": "about",
+          "start": 15.012,
+          "end": 15.197
+        },
+        {
+          "text": "you?",
+          "start": 15.244,
+          "end": 15.685
+        },
+        {
+          "text": "What",
+          "start": 16.161,
+          "end": 16.312
+        },
+        {
+          "text": "are",
+          "start": 16.335,
+          "end": 16.416
+        },
+        {
+          "text": "you",
+          "start": 16.44,
+          "end": 16.509
+        },
+        {
+          "text": "doing",
+          "start": 16.556,
+          "end": 16.788
+        },
+        {
+          "text": "today?",
+          "start": 16.834,
+          "end": 17.554
+        }
+      ],
+      "voiceSettings": {
+        "speed": 0.92
+      },
+      "durationSeconds": 17.554285714285715,
+      "providerRequestId": "JzFCl7IRlYvLtmhTRFaB",
+      "providerMapSha256": "7827a89cd206862f081e88b915ed79de0ffff82a46610125e649bf7612186ba0",
+      "source": "Single new prepared Anna clip; original 31-item provenance retained unchanged.",
+      "lesson": "A2.01",
+      "file": "assets/audio/legacy-A201-a201.listening.anna.01.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/A201/assets/audio/a201.listening.anna.01.mp3",
+      "sourceId": "a201.listening.anna.01",
+      "sha256": "c113a349221ffc6873d5c1fb1a337dbeaf8bd669a5f9fecb47522daf7794dcae",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.1",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "Hi, Ana! I’m back! Wow… your living room is blue!",
+      "textSha256": "29302069fbda597e1abcbed256713d30b16a831219ff0432ca760c3150ffe591",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "e103c8581a637cfa67d75274a65ca890a1cb5e2ff1b3cea761d0436de8b207a4",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Hi, Ana! I’m back! Wow… your living room is blue!",
+      "durationSeconds": 4.87619,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 79037,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 1.355,
+      "generatedAt": "2026-11-19T01:37:34.573550+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.1.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.1.mp3",
+      "sourceId": "D.1",
+      "sha256": "7bf1bd7965308be2dbbc97df67bcdaaf24e3f6438790562f478208d17ac23096",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.2",
+      "character": "ana",
+      "type": "dialogue",
+      "text": "Welcome back! Yeah, I’ve been painting all week.",
+      "textSha256": "600e197d96d5809f99f5419e72ddb9c7b1bbb77203360d9973728dfb78b691df",
+      "generationStatus": "ready",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "f630a31ef2055188f8c6650382218276cb15168f1aafa9e0dfe62eb014fc92ff",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Welcome back! Yeah, I’ve been painting all week.",
+      "durationSeconds": 3.854512,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 62736,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.548,
+      "generatedAt": "2026-11-19T01:37:34.514986+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.2.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.2.mp3",
+      "sourceId": "D.2",
+      "sha256": "b80a9f6fc00fae5c409dbcb24a3c7d723b1f6f0c25a82cc4291108bf646c1a86",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.3",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "It’s great! Have you finished?",
+      "textSha256": "0c51625416f99d4347922eeb870b8316ea86a1959fe1c38e2b8c45e540d51253",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "ef42b1d2e91c788a5ff5f17a23dd8bdfc1d621147dc2c56147e0d7f0657bfed5",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "It’s great! Have you finished?",
+      "durationSeconds": 2.414875,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 39749,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.568,
+      "generatedAt": "2026-11-19T01:37:35.083460+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.3.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.3.mp3",
+      "sourceId": "D.3",
+      "sha256": "5b28c7490872ee3fbd424c57f9fb5d2d3c272e3cb710148ded292e93e0b60872",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.4",
+      "character": "ana",
+      "type": "dialogue",
+      "text": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next.",
+      "textSha256": "ef34af4f79ac526c46e85b376d4092b0fafdcb80a9a1a76d376d439f1b035a75",
+      "generationStatus": "ready",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "981b4bc707191314f799b29533a8c63a0af1d19a1123685b018c8c6d086f5587",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next.",
+      "durationSeconds": 7.244626,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 117071,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.797,
+      "generatedAt": "2026-11-19T01:37:35.370949+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.4.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.4.mp3",
+      "sourceId": "D.4",
+      "sha256": "b4203c544728a37fb2245bbc9ad9ba449473d9c0d44e06c26780150f24421559",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.5",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "And your shoes! Have you been running?",
+      "textSha256": "a3df425e0276917999f825617e5540b6cc9d83f84eb2c635869824e1cca287e7",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "7c5fea6c6d997abc701c16cd065086e6b7d28a9489426004d29ee8a5f1302ae7",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "And your shoes! Have you been running?",
+      "durationSeconds": 2.879274,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 47272,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.536,
+      "generatedAt": "2026-11-19T01:37:35.620243+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.5.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.5.mp3",
+      "sourceId": "D.5",
+      "sha256": "bc43604f90e4c7befcacaae5f595055dc5d1aab76a844bbf560601ec6f751485",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.6",
+      "character": "ana",
+      "type": "dialogue",
+      "text": "Yes! I’ve been running every morning for two weeks.",
+      "textSha256": "c43b56a2676c91c9e79a1b3a565b0e3e770b3948304174c7f07629560ea5c09b",
+      "generationStatus": "ready",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "3e4c062b62a7f4a48832d190a49e8d554e6304e7d9eb1878d35a4fd3f40add83",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Yes! I’ve been running every morning for two weeks.",
+      "durationSeconds": 3.111474,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 51034,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.568,
+      "generatedAt": "2026-11-19T01:37:35.940683+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.6.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.6.mp3",
+      "sourceId": "D.6",
+      "sha256": "44c53c5d7978786b933398c344e80c70fb925b474844f772a2810aea71b25d60",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.7",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "Every morning? Wow. And there’s a cake on the table. You’ve even been baking!",
+      "textSha256": "f031a7c7d1e472b926779dbca7544f29a08dd269b0c0d3630af04ed23ddea990",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "60ea8abf18ca44a933c55c9cee02a6cb0424c4399d3c1806d0a04e1efe54cccc",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Every morning? Wow. And there’s a cake on the table. You’ve even been baking!",
+      "durationSeconds": 6.269388,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 101189,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.728,
+      "generatedAt": "2026-11-19T01:37:36.348102+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.7.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.7.mp3",
+      "sourceId": "D.7",
+      "sha256": "7aa6c9cb71e8b0507b9905234ccad4d439d80856506f7c005c98739f9d4c2279",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.8",
+      "character": "ana",
+      "type": "dialogue",
+      "text": "Ha! Yes. I’ve baked three cakes this week. Anyway, how was Korea?",
+      "textSha256": "7446972a1bb81ab6d353ea5e06cf28e0d7d9b8a42978996076f16a2f945e491f",
+      "generationStatus": "ready",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "151b8fbe1ff59dff457be668f05c294878c8e9596006a462d29294e13ffad5c9",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Ha! Yes. I’ve baked three cakes this week. Anyway, how was Korea?",
+      "durationSeconds": 6.455147,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 104532,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.728,
+      "generatedAt": "2026-11-19T01:37:36.668760+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.8.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.8.mp3",
+      "sourceId": "D.8",
+      "sha256": "81d933755f3b90f4cbc489e0c095c519a71eca3776703c3c73ae3a7744ec5547",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.9",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "Great! I visited my family and ate a lot. But I have jet lag. I’ve been sleeping all day!",
+      "textSha256": "4af004dbe679055ac67931f28a232035007930afe186fb79880907a751249532",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "462d111113c22a342da4f471e3803ba616d67fcc0dbe8e9cf33d388a01fa17c9",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Great! I visited my family and ate a lot. But I have jet lag. I’ve been sleeping all day!",
+      "durationSeconds": 7.291066,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 117907,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.781,
+      "generatedAt": "2026-11-19T01:37:37.129050+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.9.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.9.mp3",
+      "sourceId": "D.9",
+      "sha256": "774b821194fd02b20c59d60a7f38ea1606ddbf7f576a80740bdc87343c82b335",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.10",
+      "character": "ana",
+      "type": "dialogue",
+      "text": "Oh no! You seem tired. Here, have some cake.",
+      "textSha256": "1eb3ce1717a5dd3e01fd40a9c97b70c4bb33da3fbd9c8e7344c5701b213474cd",
+      "generationStatus": "ready",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "6b701ae1add964d5a9197e0cb049443cd7d3de3054433fc31cde70bc93bb98e1",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Oh no! You seem tired. Here, have some cake.",
+      "durationSeconds": 3.436553,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 56049,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.522,
+      "generatedAt": "2026-11-19T01:37:37.190900+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.10.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.10.mp3",
+      "sourceId": "D.10",
+      "sha256": "27c33c3be44e3dcece7fda34fa64725bb10436d1c5be64cd0823ac3cf6fb8137",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.11",
+      "character": "kim",
+      "type": "dialogue",
+      "text": "Of course! I always say yes to cake.",
+      "textSha256": "dd17bcdd3736e78930dc1d449acbdd8dd456df3280403d8866936cf990df3546",
+      "generationStatus": "ready",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "synthesisFingerprint": "edc51481587dc543de87e4b834eb6b1919e693fa016551b8a2c73fa884c7a6af",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Of course! I always say yes to cake.",
+      "durationSeconds": 2.879274,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 47272,
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.548,
+      "generatedAt": "2026-11-19T01:37:37.677279+00:00",
+      "lesson": "B1.01",
+      "file": "assets/audio/legacy-B101-D.11.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B101/assets/audio/D.11.mp3",
+      "sourceId": "D.11",
+      "sha256": "6c190dc68d736e28e68c45fbc29fca581f68bd7ee25eee5d24d8f46dc7eda91b",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "b201-raj-message",
+      "character": "raj",
+      "type": "listening_voice_message",
+      "text": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "textSha256": "18dbd63c88520167e29e309dce551ed71037c0d94570a45875b247cde1317dd2",
+      "generationStatus": "ready",
+      "currentProvider": "macOS speech Eddy",
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "synthesisFingerprint": "8cca8995c2f140c9840db7d126e7a0b70ebfb0efbf6341ca072fc612f77e4450",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "durationSeconds": 21.362358,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 342769,
+      "requestId": "u1CewrC9oTK1HZnPOdub",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 2.025,
+      "generatedAt": "2026-11-19T01:37:33.217793+00:00",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-b201-raj-message.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/b201-raj-message.mp3",
+      "sourceId": "b201-raj-message",
+      "sha256": "8b5fc957593029708987fac2966b98d053e3eb2300f7c8875e75cdefda260207",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.1",
+      "text": "So, how was New York?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 2.043356,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.1.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/01.mp3",
+      "sourceId": "D.1",
+      "sha256": "93a15011e0cf2561e2a3f0b8848d71a8a02811845bcfa5f7e0262ba46e5a850a",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.2",
+      "text": "Pretty good, but on the second day, my phone died at four in the afternoon.",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 4.411791,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.2.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/02.mp3",
+      "sourceId": "D.2",
+      "sha256": "737019063aae3148debd1e0a129b5a62b7cd83df100254568fed82120ec1e932",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.3",
+      "text": "Oh no! Why?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 1.625397,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.3.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/03.mp3",
+      "sourceId": "D.3",
+      "sha256": "6b678eff73cd89f0306664024e56ca783c1fbe212897bc459bb74034be0456b0",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.4",
+      "text": "I’d been using it as a map all day, and I didn’t notice how low the battery was. And I’d left my charger at the hotel.",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 7.383946,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.4.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/04.mp3",
+      "sourceId": "D.4",
+      "sha256": "f2120086fd0976cd446c389d5a9c58f3bcf38b096fcdc132773797b639830934",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.5",
+      "text": "Why didn’t you go back to the hotel?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 2.229116,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.5.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/05.mp3",
+      "sourceId": "D.5",
+      "sha256": "01f0e08b9b3061eb44cf6978187337003eb3f0febaecd92866fb4b4f286f86e8",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.6",
+      "text": "I tried, but I got lost. And the team dinner was at seven. The address was in a message from Raj!",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 6.965986,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.6.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/06.mp3",
+      "sourceId": "D.6",
+      "sha256": "0d9b783611d996c1fc4c9b33ba7313992893849a0d1e38764ae1749dc13d45a1",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.7",
+      "text": "So what did you do?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 1.346757,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.7.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/07.mp3",
+      "sourceId": "D.7",
+      "sha256": "a1357fcacb5613c2d9b389232574553c504d545516daef07c5c8327387496309",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.8",
+      "text": "I asked a doorman for help, and he told me about a café. But there were no free outlets.",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 5.24771,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.8.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/08.mp3",
+      "sourceId": "D.8",
+      "sha256": "daba49b01161ab81b4a5b0b2afa23c9de8a1e4a6618368ad225ab272c15ea124",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.9",
+      "text": "Oh no. And then?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 1.904036,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.9.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/09.mp3",
+      "sourceId": "D.9",
+      "sha256": "4ff4119b2b5acba0978defdbc1f99a1c103280c7974ba29802de637423d0b35b",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.10",
+      "text": "I’d been waiting there alone for twenty minutes when a woman lent me her power bank. Luckily, I had my cable.",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 6.315828,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.10.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/10.mp3",
+      "sourceId": "D.10",
+      "sha256": "f34748a9b643abb6ac5c96816224c02217cd037541d2c8bb0fd8e702b6d9259e",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.11",
+      "text": "So did you make it to the dinner?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "durationSeconds": 2.321995,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.11.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/11.mp3",
+      "sourceId": "D.11",
+      "sha256": "be745a049fa7d457fd4ea3379bde8eb6fefd6d1d6d35d69a34a2d538112ce0cb",
+      "disposition": "preserved_exact_bytes"
+    },
+    {
+      "id": "D.12",
+      "text": "Eventually, yes. I caught a taxi and got there at eight. By then, they’d been waiting for an hour!",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "durationSeconds": 6.873107,
+      "provider": "elevenlabs",
+      "requestId": null,
+      "sourceRecord": "stories/materials/shared/conversationRecordings.ts",
+      "lesson": "B2.01",
+      "file": "assets/audio/legacy-B201-D.12.mp3",
+      "sourceFile": "/Users/margaridamartins/Documents/Codex/langy-course-implementation79-20261123/stories/materials/B201/assets/dialogue/12.mp3",
+      "sourceId": "D.12",
+      "sha256": "2a4c125031bc138ef7c33a1bc570a15a42c79b8535a0c50f63e1b8d619833290",
+      "disposition": "preserved_exact_bytes"
+    }
+  ]
+}

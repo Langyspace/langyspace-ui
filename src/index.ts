@@ -512,6 +512,12 @@ export type { ToggleButtonProps } from './components/ToggleButton/ToggleButton.t
 
 export { ChoiceCard } from './components/ChoiceCard/ChoiceCard'
 export { ImageSortBoard } from './components/Exercise/ImageSortBoard'
+export { PictureStrip } from './components/Exercise/PictureStrip'
+export type {
+  PictureStripProps,
+  PictureStripItem,
+} from './components/Exercise/PictureStrip.types'
+export type { PictureRegion } from './internal/PictureImage.types'
 export { ComicRolePlay } from './components/Exercise/ComicRolePlay'
 export { MeetingFrame } from './components/Device/MeetingFrame'
 export type {
@@ -705,3 +711,9 @@ export type {
   SlideAudioActionProps,
   SlideAudioStatus,
 } from './components/Slide/SlideAudioAction.types'
+
+export { RouteMap } from './components/InteractiveMaterial/RouteMap'
+export type {
+  RouteMapProps,
+  MapPlace,
+} from './components/InteractiveMaterial/RouteMap.types'

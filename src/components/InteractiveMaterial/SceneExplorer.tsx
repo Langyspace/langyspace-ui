@@ -57,7 +57,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
     labelVisibility === 'responsive' &&
     frameWidth < parseFloat(theme.breakpoints.sm)
   const labelButtons = presentation === 'labels' && !compactLabels
-  const showCallout = presentation === 'explore' || compactLabels
+  const showCallout = presentation !== 'labels' || compactLabels
   const currentSelectedId = controlledSelection ? selectedId : localSelectedId
   const text = {
     initial: 'Tap a dot to explore',
@@ -176,9 +176,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
       observer.disconnect()
     }
   }, [measure, compactLabels])
-  const Marker =
-    presentation === 'labels' ? Styled.LabelHotspot : Styled.DotHotspot
-  const Frame = presentation === 'labels' ? Styled.LabelScene : Styled.Scene
+  const Frame = presentation !== 'explore' ? Styled.LabelScene : Styled.Scene
   return (
     <Styled.Root as="section" {...props}>
       {presentation === 'explore' && !selected && text.initial ? (
@@ -215,6 +213,14 @@ export function SceneExplorer(options: SceneExplorerProps) {
           </Styled.Connections>
         ) : null}
         {hotspots.map((h) => {
+          const vocabularyLabel =
+            presentation === 'vocabulary' && visitedIds.includes(h.id)
+          const Marker =
+            presentation === 'vocabulary'
+              ? Styled.VocabularyHotspot
+              : presentation === 'labels'
+                ? Styled.LabelHotspot
+                : Styled.DotHotspot
           const point = geometry
             ? scenePoint(geometry, h.xPercent, h.yPercent)
             : undefined
@@ -241,6 +247,9 @@ export function SceneExplorer(options: SceneExplorerProps) {
                   : h.yPercent
               }
               $visited={visitedIds.includes(h.id)}
+              $revealed={
+                presentation === 'vocabulary' ? vocabularyLabel : undefined
+              }
               aria-label={
                 labelButtons && onPlayHotspot
                   ? `${text.play}: ${h.label}`
@@ -262,7 +271,7 @@ export function SceneExplorer(options: SceneExplorerProps) {
                 onPlayHotspot?.(h.id)
               }}
             >
-              {labelButtons ? <span>{h.label}</span> : null}
+              {labelButtons || vocabularyLabel ? <span>{h.label}</span> : null}
             </Marker>
           )
         })}

@@ -1,10 +1,12 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
+import type { PictureRegion } from '../../internal/PictureImage.types'
 
 export interface ImageSortItem {
   id: string
   label: string
   imageUrl: string
   imageAlt?: string
+  imageRegion?: PictureRegion
 }
 export interface ImageSortCategory {
   id: string
@@ -23,6 +25,8 @@ export interface ImageSortBoardProps extends Omit<
   unassignedLabel?: string
   instructions?: string
   emptyLabel?: string
+  /** A picture bank above numbered stages; default categorisation is unchanged. */
+  layout?: 'categories' | 'sequence'
   /** Consumer-owned speaking support, placed beneath the entire board. */
   footer?: ReactNode
 }

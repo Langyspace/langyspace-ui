@@ -122,6 +122,32 @@ export const publicComponentContracts = [
     },
   },
   {
+    exportName: 'PictureStrip',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Exercise/PictureStrip.tsx',
+    runtimeMarker: 'lsui-sc-picture-strip',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/PictureStrip.stories.tsx',
+      title: 'Exercise/PictureStrip',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/PictureStrip.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/PictureStrip.types.ts',
+      documentation: {
+        path: 'docs/components/picture-strip.md',
+        anchor: 'picturestrip',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'MobileFrame',
     interactive: false,
     visual: true,
@@ -351,6 +377,32 @@ export const publicComponentContracts = [
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'sceneexplorer',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'RouteMap',
+    interactive: true,
+    ownerPath: 'src/components/InteractiveMaterial/RouteMap.tsx',
+    runtimeMarker: 'lsui-sc-route-map',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/RouteMap.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/InteractiveMaterial/RouteMap.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'routemap',
       },
       consumers: [],
     },

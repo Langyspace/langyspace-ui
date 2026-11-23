@@ -1,0 +1,387 @@
+{
+  "version": 81,
+  "code": "B1.10",
+  "key": "b1-10",
+  "title": "Could you tell me where it is?",
+  "goal": "Ask polite follow-up questions to plan a visit",
+  "freeConversationInstruction": "Talk about places you would like to visit and practise asking useful follow-up questions",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a short direction question",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "How do I get there?",
+          "cue": "Give a route or ask me to clarify",
+          "hint": "Go … Is it near …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for could you tell me where it is?",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-10-vocabulary81",
+        "alt": "Six illustrated situations for Could you tell me where it is?",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B110-V81.0",
+          "label": "a reception desk",
+          "prompt": "",
+          "example": "The tour starts at the reception desk",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B110-FS81.0",
+          "audioText": "a reception desk. The tour starts at the reception desk."
+        },
+        {
+          "id": "B110-V81.1",
+          "label": "a cloakroom",
+          "prompt": "",
+          "example": "Leave your bag in the cloakroom",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B110-FS81.1",
+          "audioText": "a cloakroom. Leave your bag in the cloakroom."
+        },
+        {
+          "id": "B110-V81.2",
+          "label": "a timetable",
+          "prompt": "",
+          "example": "Please check the timetable",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B110-FS81.2",
+          "audioText": "a timetable. Please check the timetable."
+        },
+        {
+          "id": "B110-V81.3",
+          "label": "an entrance fee",
+          "prompt": "",
+          "example": "Is the tour included in the entrance fee?",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B110-FS81.3",
+          "audioText": "an entrance fee. Is the tour included in the entrance fee?"
+        },
+        {
+          "id": "B110-V81.4",
+          "label": "a guided tour",
+          "prompt": "",
+          "example": "The guided tour starts at ten",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B110-FS81.4",
+          "audioText": "a guided tour. The guided tour starts at ten."
+        },
+        {
+          "id": "B110-V81.5",
+          "label": "an information point",
+          "prompt": "",
+          "example": "The cloakroom is beside the information point",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B110-FS81.5",
+          "audioText": "an information point. The cloakroom is beside the information point."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Could you tell me where it is?",
+      "paragraphs": [
+        "Visitor programme: tour, 10 am, reception. Talk, 11:30 am, room 2. Cloakroom, ground floor beside information point. Ask the desk whether a standard tour is included in the entrance fee; do not infer that every activity is included."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "At the information desk",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B110-D81.1",
+          "speaker": "Kim",
+          "text": "Could you tell me where the guided tour starts?",
+          "audioText": "Could you tell me where the guided tour starts?",
+          "translation": "Pode me dizer onde começa a visita guiada?"
+        },
+        {
+          "id": "B110-D81.2",
+          "speaker": "Ana",
+          "text": "At the reception desk at ten. The talk is later, at eleven thirty",
+          "audioText": "At the reception desk at ten. The talk is later, at eleven thirty.",
+          "translation": "Na recepção às dez. A palestra é depois, às onze e meia"
+        },
+        {
+          "id": "B110-D81.3",
+          "speaker": "Kim",
+          "text": "Do you know if the tour is included in the entrance fee?",
+          "audioText": "Do you know if the tour is included in the entrance fee?",
+          "translation": "Você sabe se a visita está incluída no ingresso?"
+        },
+        {
+          "id": "B110-D81.4",
+          "speaker": "Ana",
+          "text": "The standard tour is included. The special workshop costs extra",
+          "audioText": "The standard tour is included. The special workshop costs extra.",
+          "translation": "A visita normal está incluída. A oficina especial custa à parte"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Which activity costs extra?",
+          "cue": "Distinguish standard tour from workshop",
+          "hint": "The …",
+          "answer": "The special workshop"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A useful follow-up",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B110-D81.5",
+          "speaker": "Kim",
+          "text": "Thanks. Could you tell me where I can leave my bag?",
+          "audioText": "Thanks. Could you tell me where I can leave my bag?",
+          "translation": "Obrigada. Pode me dizer onde posso deixar minha bolsa?"
+        },
+        {
+          "id": "B110-D81.6",
+          "speaker": "Ana",
+          "text": "There’s a cloakroom on the ground floor, beside the information point",
+          "audioText": "There’s a cloakroom on the ground floor, beside the information point.",
+          "translation": "Tem um guarda-volumes no térreo, ao lado do ponto de informações"
+        },
+        {
+          "id": "B110-D81.7",
+          "speaker": "Kim",
+          "text": "And is the talk still in room two?",
+          "audioText": "And is the talk still in room two?",
+          "translation": "E a palestra continua na sala dois?"
+        },
+        {
+          "id": "B110-D81.8",
+          "speaker": "Ana",
+          "text": "That’s what the timetable says. Please check the board before you go",
+          "audioText": "That’s what the timetable says. Please check the board before you go.",
+          "translation": "É o que diz a programação. Confira o quadro antes de ir"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Where can the visitor leave a bag?",
+          "cue": "Name the location and reference point",
+          "hint": "At … beside …",
+          "answer": "At the ground-floor cloakroom beside the information point"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Ask for useful information",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What would you like to find out?",
+          "cue": "Ask for one piece of information politely",
+          "hint": "Could you tell me where … is?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Do you need to check anything else?",
+          "cue": "Ask a follow-up question about time, access or what is included",
+          "hint": "Do you know if …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Keep statement order inside a polite question",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Direct question",
+          "verb": "Where + is + subject?",
+          "example": "Where is the cloakroom?"
+        },
+        {
+          "id": "1",
+          "subject": "Polite question with statement order",
+          "verb": "Could you tell me where + subject + is?",
+          "example": "Could you tell me where the cloakroom is?"
+        },
+        {
+          "id": "2",
+          "subject": "Check a yes/no detail",
+          "verb": "Do you know if + statement order?",
+          "example": "Do you know if the tour is included?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Plan your visit",
+      "instruction": "Ask the information desk what you need to plan your visit",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The talk has moved",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. There’s a room change for the eleven thirty talk. It’s now in room four, not room two. The ten o’clock tour still starts at reception. The message doesn’t say whether room four has step-free access, and one person in our group needs it. Could you check that before we leave the ground floor? The entrance fee still includes the standard tour; we haven’t booked the extra workshop",
+      "audioText": "Hi, Ana. There’s a room change for the eleven thirty talk. It’s now in room four, not room two. The ten o’clock tour still starts at reception. The message doesn’t say whether room four has step-free access, and one person in our group needs it. Could you check that before we leave the ground floor? The entrance fee still includes the standard tour; we haven’t booked the extra workshop.",
+      "audioId": "B110-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What do you need to check before going?",
+          "cue": "Identify a missing detail and formulate an indirect question",
+          "hint": "Do you know if …?",
+          "answer": "Check whether room four has step-free access"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Ask about the missing access detail",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Ask polite follow-up questions to plan a visit"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Plan your visit",
+      "facts": [
+        {
+          "id": "0",
+          "label": "10 am",
+          "value": "Guided tour · reception"
+        },
+        {
+          "id": "1",
+          "label": "11:30 am",
+          "value": "Talk · room 2 · check board"
+        },
+        {
+          "id": "2",
+          "label": "Bags",
+          "value": "Cloakroom · ground floor"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What do you need to find out before the visit?",
+          "cue": "Ask one location question and one useful follow-up about price or access",
+          "hint": "Could you tell me where …? Do you know if …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Changed room, unchanged time",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Talk",
+          "value": "11:30 am · now room 4"
+        },
+        {
+          "id": "1",
+          "label": "Need",
+          "value": "One visitor requires step-free access"
+        },
+        {
+          "id": "2",
+          "label": "Unknown",
+          "value": "Access to room 4"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What will you ask the information desk?",
+          "cue": "Form an indirect question that checks the missing detail",
+          "hint": "Could you tell me whether …? Do you know if …?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

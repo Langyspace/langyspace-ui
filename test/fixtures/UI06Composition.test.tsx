@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { act, cleanup, fireEvent, render, within } from '@testing-library/react'
+import { cleanup, fireEvent, render, within } from '@testing-library/react'
 import { afterEach, beforeEach, expect, it, vi } from 'vitest'
 import type { SlideDeckProps } from '../../src/components/Slide/SlideDeck.types'
 import { TrialA1Lesson } from '../../stories/materials/TrialA1/TrialA1Lesson'

@@ -1,6 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import { A201Lesson } from './A201Lesson'
-
 const meta = {
   title: 'Materials/A2.01',
   component: A201Lesson,
@@ -9,7 +8,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A2.01 · What Are You Doing? Twenty-two pages composed from the same canonical components as A1.01. Six action scenes, time-expression reveal table, six warmups, comparison grammar, park, two dialogues, ten independent gaps, separate comprehension pages, a static mime model, Anna listening, four conversation groups and observation homework. Prepared audio and Notes use the shared controls.',
+          'Replanned 50-minute lesson. Canonical scenes, guided conversation with questions, personal speaking, grammar, visual task, prepared ElevenLabs audio, theme-specific free conversation and offline practice.',
       },
     },
   },
@@ -18,17 +17,43 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
-export const Vocabulary: Story = { args: { initialPageId: 's1' } }
-export const TimeExpressions: Story = { args: { initialPageId: 's2' } }
-export const Warmup: Story = { args: { initialPageId: 's3' } }
-export const Grammar: Story = { args: { initialPageId: 's9' } }
-export const PictureTalk: Story = { args: { initialPageId: 's10' } }
-export const Dialogue: Story = { args: { initialPageId: 's11' } }
-export const FirstComprehension: Story = { args: { initialPageId: 's111' } }
-export const Gaps: Story = { args: { initialPageId: 's12' } }
-export const Comprehension: Story = { args: { initialPageId: 's13' } }
-export const Personal: Story = { args: { initialPageId: 's14' } }
-export const Roleplay: Story = { args: { initialPageId: 's15' } }
-export const Listening: Story = { args: { initialPageId: 's151' } }
-export const Conversation: Story = { args: { initialPageId: 's16' } }
-export const Homework: Story = { args: { initialPageId: 's20' } }
+export const Speaking1: Story = {
+  args: { initialPageId: 's1' },
+  tags: ['visual-review'],
+}
+export const Vocabulary1: Story = {
+  args: { initialPageId: 's2' },
+  tags: ['visual-review'],
+}
+export const Dialogue1: Story = {
+  args: { initialPageId: 's_dialogue1' },
+  tags: ['visual-review'],
+}
+export const Speaking2: Story = {
+  args: { initialPageId: 's_personal' },
+  tags: ['visual-review'],
+}
+export const Grammar1: Story = {
+  args: { initialPageId: 's_grammar' },
+  tags: ['visual-review'],
+}
+export const Task1: Story = {
+  args: { initialPageId: 's_mission' },
+  tags: ['visual-review'],
+}
+export const Listening1: Story = {
+  args: { initialPageId: 's_listening' },
+  tags: ['visual-review'],
+}
+export const Task2: Story = {
+  args: { initialPageId: 's_reply' },
+  tags: ['visual-review'],
+}
+export const Homework1: Story = {
+  args: { initialPageId: 's_homework' },
+  tags: ['visual-review'],
+}
+export const FreeConversation: Story = {
+  args: { initialPageId: 'free-conversation' },
+  tags: ['visual-review'],
+}

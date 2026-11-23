@@ -55,32 +55,32 @@ Ao criar/revisar uma aula, ler esta ficha e atualizar apenas o fato novo confirm
 
 **Feedback44 — B2/C1:** a viagem de Ana a Nova York e os fatos do jantar/áudio de Raj foram preservados. Missed train / Locked out são cenários hipotéticos da aluna, não eventos biográficos de Ana. Project updates / Meeting discussions são simulações de feedback, não novos hábitos atribuídos a Raj. A frase de learning curve agora se refere a um novo papel genérico, sem estabelecer promoção de Ana. A preferência de Raj por falar sozinho e o convite de Laura para Ana são informações distintas; emoções permanecem interpretações, não diagnósticos.
 
-
 ## Cena hipotética — quadrinhos do experimental A1 (feedback60)
 
 Ana (à esquerda, camiseta rosa e bola) e Kim (à direita, blusa azul e fones) se encontram no parque, se apresentam, conversam sobre interesses e se despedem. São atores visuais para uma conversa criada pela aluna e pela professora. Os exemplos opcionais não fixam preferências, nomes dos participantes reais ou novos fatos biográficos. Reutilizar as identidades documentadas; não inferir uma amizade permanente a partir do título do exercício.
-
 
 ## Mensagens da Ana no experimental A1 (feedback62)
 
 As duas gravações aprovadas são da mesma Ana e têm uma única saudação escrita antes da primeira. Ela está feliz, no parque com Kim, gosta de jogar futebol com os amigos, está de tênis e levou a bola. Kim está num banco com fones. As duas gostam de música; Ana não gosta de livros. Na continuação, Ana gosta de filmes em casa e de cachorros; Kim gosta de gatos. Ana está com fome, quer pizza e não gosta de salada. Esses fatos estão vinculados a esta atividade; não inferir preferências adicionais ou uma biografia fixa de outros contextos. O quadrinho ficou suspenso e não integra mais a aula.
 
-
 ## Representação da conversa livre (feedback63)
 
 Kim e Ana aparecem como figuras ilustrativas de professora e aluna em uma conversa leve e divertida. Os rótulos Teacher/Student descrevem os papéis da cena, sem fixar profissão ou representar a identidade de usuárias reais. Assets e prompts ficam vinculados em shared/free-conversation63-image-provenance.json.
-
 
 ## Composição das mensagens e conversa livre (feedback64)
 
 As duas gravações aprovadas da Ana são apresentadas juntas no mesmo chat, com a saudação única e seis perguntas agrupadas por áudio. Os arquivos, falas e fatos do feedback62 permanecem os mesmos. A representação ilustrada da conversa livre usa a professora em destaque e a aluna no pequeno quadro sobreposto; os papéis continuam fictícios.
 
-
 ## Experimental B1/B2 — recorte de revisão70
 
 O diálogo proposto revisa o episódio de Ana e Leo em Ilhabela: eles planejavam passar domingo na praia, choveu pela manhã, foram a um café e depois fizeram o passeio de barco. Substitui a versão anterior de chuva o dia todo/cartas no hotel apenas nessa atividade. Kim é a interlocutora, não participante da viagem. O mecânico da cena é uma figura genérica sem nome, idade ou nova biografia. Capa e retratos aprovados são reutilizados. O recorte em staging contém apenas capa, seis itens de vocabulário, diálogo, conversa livre e encerramento; as outras páginas do plano continuam pendentes.
 
-
 ## Experimental C1/C2 — Work and life, recorte71
 
 Ana e Kim discutem disponibilidade fora do expediente, expectativas e limites em uma simulação contextual. Ana diz estar sobrecarregada e silenciar notificações depois das seis, exceto em emergências. Esses detalhes substituem o episódio de escritório três dias/semana apenas neste exercício; não fixam profissão, rotina permanente ou política de uma empresa real. As seis vinhetas são exemplos ilustrativos. A cena de trade-off mostra duas alternativas da mesma Ana, não duas irmãs nem duas pessoas na mesma reunião. A colega das ilustrações não recebe identidade canônica. Preservar cabelo/rosto, vozes e retratos existentes.
+
+### Course 81: role cards and A201 portraits
+
+Anna and Ben now have their own canonical profile assets, matching the existing A201 cover: Anna has shoulder-length wavy brown hair and an olive top; Ben has short wavy brown hair and a blue T-shirt. They remain separate from Ana and Leo. These visual descriptions do not add an age, occupation or relationship.
+
+Alex and Nina in B1.11 are fictional celebration roles: Alex is the host in green near the drinks table; Nina helped organise the music and is near the dance floor. They have no asserted permanent occupation or family relationship. The relocation, course, job and shared-house examples elsewhere are explicitly role scenarios, not updates to the permanent biographies of the portraits used to model the conversations. Leo and Carla retain their existing wedding context; the new B1.01 update adds completed invitations while the venue decision remains open.

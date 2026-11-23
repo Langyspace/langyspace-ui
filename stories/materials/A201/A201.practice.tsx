@@ -19,7 +19,6 @@ import {
   mimeImage,
   parkHotspots,
   toggleId,
-  prompts,
   portraits,
 } from './A201.data'
 import * as S from './A201.styles'
@@ -327,11 +326,11 @@ export function MimeSection() {
         <MeetingExample
           actor={{
             name: 'Ben',
-            imageUrl: mimeImage,
+            imageUrl: mimeImage ?? '',
             imageAlt:
               'Ben mimes brushing his teeth with an empty hand near his mouth.',
           }}
-          observer={{ name: 'Anna', avatarUrl: portraits.Anna }}
+          observer={{ name: 'Anna', avatarUrl: portraits.Anna ?? '' }}
         />
         <CharacterDialogue
           density="compact"

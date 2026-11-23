@@ -1,3 +1,4 @@
+import courseGoals from '../Course/course-goals81.json'
 import type { ReactNode } from 'react'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { MobileFrame } from '../../../src/components/Device/MobileFrame'
@@ -10,12 +11,13 @@ import catalog from '../Standalone/catalog.json'
 import type { LessonOpeningProps } from './LessonBookends.types'
 import { hasLessonOpeningReview } from './lessonOpeningPolicy.data'
 
-const covers = import.meta.glob('../*/assets/catalog-cover40.webp', {
+const covers = import.meta.glob('../*/assets/*cover*.webp', {
   eager: true,
   query: '?url',
   import: 'default',
 }) as Record<string, string>
 const goals: Readonly<Record<string, string>> = {
+  ...Object.fromEntries(Object.values(courseGoals).map((x) => [x.key, x.goal])),
   'a1-01': 'Say who you are, where you’re from and how you feel',
   'a1-02': 'Share, spell and check names and phone numbers',
   'a1-03': 'Introduce the people in your life',

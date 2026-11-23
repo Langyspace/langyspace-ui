@@ -1,30 +1,23 @@
 {
-  "version": 34,
+  "version": 81,
   "code": "A1.06",
   "title": "My home and my pet",
+  "freeConversationMinutes": 10,
   "pages": [
     {
       "id": "s1",
-      "kind": "prompts",
-      "title": "Pets and home",
-      "instruction": "Answer, then ask your teacher.",
+      "kind": "questions",
+      "title": "Likes and dislikes",
+      "instruction": "Say what you like, then ask about me",
       "minutes": 2,
-      "eyebrow": "A1 LESSON 06 · Warm up",
+      "eyebrow": "Review",
       "items": [
         {
-          "id": "1",
-          "prompt": "Are you at home now?",
-          "answer": "Yes, I am. / No, I’m not."
-        },
-        {
-          "id": "2",
-          "prompt": "Do you like dogs or cats?",
-          "answer": "I like … What about you?"
-        },
-        {
-          "id": "3",
-          "prompt": "Who is at home with you?",
-          "answer": "My … is at home. / I’m alone."
+          "id": "review",
+          "prompt": "What food do you like?",
+          "cue": "Say one thing and ask me",
+          "hint": "I like … What about you?",
+          "answer": "One possible response"
         }
       ]
     },
@@ -32,7 +25,7 @@
       "id": "s2",
       "kind": "vocabulary",
       "title": "Pets",
-      "instruction": "Look at the pictures. Guess the words.",
+      "instruction": "Name the animals, then click to check and listen",
       "minutes": 5,
       "eyebrow": "Vocabulary",
       "items": [
@@ -41,52 +34,71 @@
           "word": "a dog",
           "translation": "cachorro",
           "imageUrl": "scene-dog",
-          "imageAlt": "An entire golden dog wearing a blue collar."
+          "imageAlt": "An entire golden dog wearing a blue collar.",
+          "audioId": "FS81.0",
+          "audioText": "a dog. This is Thor, Ana’s dog.",
+          "example": "This is Thor, Ana’s dog"
         },
         {
           "id": "V.1",
           "word": "a cat",
           "translation": "gato",
           "imageUrl": "scene-cat",
-          "imageAlt": "An entire orange cat."
+          "imageAlt": "An entire orange cat.",
+          "audioId": "FS81.1",
+          "audioText": "a cat. This is Mia, Ana’s cat.",
+          "example": "This is Mia, Ana’s cat"
         },
         {
           "id": "V.2",
           "word": "a fish",
           "translation": "peixe",
           "imageUrl": "scene-fish",
-          "imageAlt": "A fish."
+          "imageAlt": "A fish.",
+          "audioId": "FS81.2",
+          "audioText": "a fish. The fish is in the water.",
+          "example": "The fish is in the water"
         },
         {
           "id": "V.3",
           "word": "a bird",
           "translation": "passarinho",
           "imageUrl": "scene-bird",
-          "imageAlt": "A bird."
+          "imageAlt": "A bird.",
+          "audioId": "FS81.3",
+          "audioText": "a bird. The bird is next to the window.",
+          "example": "The bird is next to the window"
         },
         {
           "id": "V.4",
           "word": "a rabbit",
           "translation": "coelho",
           "imageUrl": "scene-rabbit",
-          "imageAlt": "A rabbit."
+          "imageAlt": "A rabbit.",
+          "audioId": "FS81.4",
+          "audioText": "a rabbit. Do you have a rabbit?",
+          "example": "Do you have a rabbit"
         },
         {
           "id": "V.5",
           "word": "a turtle",
           "translation": "tartaruga",
           "imageUrl": "scene-turtle",
-          "imageAlt": "A turtle."
+          "imageAlt": "A turtle.",
+          "audioId": "FS81.5",
+          "audioText": "a turtle. I like turtles.",
+          "example": "I like turtles"
         }
       ],
-      "isolated": true
+      "isolated": true,
+      "alignHeading": true
     },
     {
       "id": "s41",
       "kind": "vocabulary",
       "title": "Furniture",
-      "instruction": "Look at the pictures. Guess the words.",
-      "minutes": 3,
+      "instruction": "Use these words to describe where the animals are",
+      "minutes": 2,
       "eyebrow": "Vocabulary",
       "items": [
         {
@@ -111,14 +123,15 @@
           "imageAlt": "A table."
         }
       ],
-      "isolated": true
+      "isolated": true,
+      "alignHeading": true
     },
     {
       "id": "s4",
       "kind": "vocabulary",
       "title": "Where is Mia?",
-      "instruction": "Look at Mia and the furniture. Guess the words.",
-      "minutes": 4,
+      "instruction": "Describe each position, then click to check",
+      "minutes": 3,
       "eyebrow": "Vocabulary",
       "items": [
         {
@@ -149,388 +162,169 @@
           "imageUrl": "scene-cat-next",
           "imageAlt": "Mia next to a table."
         }
-      ]
-    },
-    {
-      "id": "s81",
-      "kind": "grammar",
-      "title": "Have / Has",
-      "instruction": "Use have with I and you. Use has with he and she.",
-      "minutes": 3,
-      "eyebrow": "Grammar",
-      "rows": [
-        {
-          "id": "0",
-          "subject": "I / You",
-          "verb": "have",
-          "example": "I have a dog."
-        },
-        {
-          "id": "1",
-          "subject": "He / She",
-          "verb": "has",
-          "example": "My sister has two cats."
-        },
-        {
-          "id": "2",
-          "subject": "Question",
-          "verb": "Do you have …?",
-          "example": "Do you have a pet?"
-        },
-        {
-          "id": "3",
-          "subject": "Negative",
-          "verb": "don’t / doesn’t have",
-          "example": "I don’t have a pet. Kim doesn’t have a cat."
-        }
       ],
-      "note": "His name is Thor. Her name is Mia. Their names are Max and Luna."
+      "alignHeading": true
     },
     {
       "id": "s7",
       "kind": "dialogue",
       "title": "Meet Thor and Mia",
-      "instruction": "Listen, then read with your teacher.",
-      "minutes": 4,
+      "instruction": "Listen for the pets’ names and where Mia is",
+      "minutes": 6,
       "eyebrow": "Guided conversation",
       "lines": [
         {
           "id": "D.1",
           "speaker": "Kim",
           "text": "Is this your dog?",
-          "translation": "Esse é seu cachorro?"
+          "audioText": "Is this your dog?"
         },
         {
           "id": "D.2",
           "speaker": "Ana",
-          "text": "Yes! This is Thor. He’s three.",
-          "translation": "Sim! Esse é o Thor. Ele tem três anos."
+          "text": "Yes! This is Thor. He’s three",
+          "audioText": "Yes! This is Thor. He’s three."
         },
         {
           "id": "D.3",
           "speaker": "Kim",
           "text": "Hi, Thor! Do you have a cat too?",
-          "translation": "Oi, Thor! Você também tem gato?"
+          "audioText": "Hi, Thor! Do you have a cat too?"
         },
         {
           "id": "D.4",
           "speaker": "Ana",
           "text": "Yes, I do. Her name is Mia. Mia! Where’s Mia?",
-          "translation": "Tenho. O nome dela é Mia. Mia! Cadê a Mia?"
+          "audioText": "Yes, I do. Her name is Mia. Mia! Where’s Mia?"
         },
         {
           "id": "D.5",
           "speaker": "Kim",
           "text": "Is she on the sofa?",
-          "translation": "Ela está no sofá?"
+          "audioText": "Is she on the sofa?"
         },
         {
           "id": "D.6",
           "speaker": "Ana",
-          "text": "No, she isn’t. Look! She’s under the bed.",
-          "translation": "Não. Olha! Ela está embaixo da cama."
+          "text": "No, she isn’t. Look! She’s under the bed",
+          "audioText": "No, she isn’t. Look! She’s under the bed."
         }
-      ]
-    },
-    {
-      "id": "s72",
-      "kind": "prompts",
-      "title": "Comprehension questions",
-      "instruction": "Answer the questions about the conversation.",
-      "minutes": 3,
-      "eyebrow": "Guided conversation",
-      "items": [
+      ],
+      "questions": [
         {
-          "id": "1",
-          "prompt": "Who is Thor?",
-          "answer": "He’s Ana’s dog."
-        },
-        {
-          "id": "2",
-          "prompt": "How old is Thor?",
-          "answer": "He’s three."
-        },
-        {
-          "id": "3",
+          "id": "mia",
           "prompt": "Where is Mia?",
-          "answer": "She’s under the bed."
-        }
-      ]
-    },
-    {
-      "id": "s71",
-      "kind": "dialogue",
-      "title": "Kim’s sister’s pets",
-      "instruction": "Say the missing words, then read with your teacher.",
-      "minutes": 4,
-      "eyebrow": "Guided conversation",
-      "lines": [
-        {
-          "id": "G.1",
-          "speaker": "Ana",
-          "text": "Do you have a pet, Kim?",
-          "translation": "Você tem animal de estimação, Kim?",
-          "parts": [
-            "Do you ",
-            {
-              "id": "A106.gap.0",
-              "answer": "have"
-            },
-            " a pet, Kim?"
-          ]
-        },
-        {
-          "id": "G.2",
-          "speaker": "Kim",
-          "text": "No, I don’t. My sister has two cats.",
-          "translation": "Não. Minha irmã tem dois gatos.",
-          "parts": [
-            "No, I don’t. My sister ",
-            {
-              "id": "A106.gap.1",
-              "answer": "has"
-            },
-            " two cats."
-          ]
-        },
-        {
-          "id": "G.3",
-          "speaker": "Ana",
-          "text": "What are their names?",
-          "translation": "Quais são os nomes deles?",
-          "parts": [
-            "What are ",
-            {
-              "id": "A106.gap.2",
-              "answer": "their"
-            },
-            " names?"
-          ]
-        },
-        {
-          "id": "G.4",
-          "speaker": "Kim",
-          "text": "Their names are Max and Luna.",
-          "translation": "Eles se chamam Max e Luna.",
-          "parts": [
-            "Their ",
-            {
-              "id": "A106.gap.3",
-              "answer": "names"
-            },
-            " are Max and Luna."
-          ]
-        },
-        {
-          "id": "G.5",
-          "speaker": "Ana",
-          "text": "Where is Luna now?",
-          "translation": "Onde está a Luna agora?",
-          "parts": [
-            "",
-            {
-              "id": "A106.gap.4",
-              "answer": "Where"
-            },
-            " is Luna now?"
-          ]
-        },
-        {
-          "id": "G.6",
-          "speaker": "Kim",
-          "text": "She’s on the sofa.",
-          "translation": "Ela está no sofá.",
-          "parts": [
-            "She’s ",
-            {
-              "id": "A106.gap.5",
-              "answer": "on"
-            },
-            " the sofa."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "s73",
-      "kind": "prompts",
-      "title": "About the pets",
-      "instruction": "Answer the questions about the conversation.",
-      "minutes": 2,
-      "eyebrow": "Guided conversation",
-      "items": [
-        {
-          "id": "1",
-          "prompt": "Does Kim have a pet?",
-          "answer": "No, she doesn’t."
-        },
-        {
-          "id": "2",
-          "prompt": "How many cats does Kim’s sister have?",
-          "answer": "She has two cats."
-        },
-        {
-          "id": "3",
-          "prompt": "Where is Luna?",
-          "answer": "She’s on the sofa."
+          "cue": "Use the place named in the conversation",
+          "hint": "She’s under the …",
+          "answer": "She’s under the bed"
         }
       ]
     },
     {
       "id": "s91",
-      "kind": "prompts",
-      "title": "A pet you know",
-      "instruction": "Talk about your pet or someone else’s pet.",
-      "minutes": 4,
-      "eyebrow": "Speaking",
+      "kind": "questions",
+      "title": "An animal you know",
+      "instruction": "Use your own pet, someone else’s pet or the picture",
+      "minutes": 3,
+      "eyebrow": "Your turn",
       "items": [
         {
-          "id": "1",
+          "id": "pet",
           "prompt": "Do you have a pet?",
-          "answer": "Yes, I do. I have a … / No, I don’t. My friend has a …"
+          "cue": "Answer about you or an animal you know",
+          "hint": "I have … / I don’t have a pet. My friend has …",
+          "answer": "One possible response"
         },
         {
-          "id": "2",
-          "prompt": "What’s your pet’s name?",
-          "answer": "His/Her name is …"
-        },
-        {
-          "id": "3",
-          "prompt": "Where is your pet now?",
-          "answer": "He’s/She’s … / I don’t know."
+          "id": "name",
+          "prompt": "What’s the pet’s name?",
+          "cue": "Give a name or use the example",
+          "hint": "His/Her name is …",
+          "answer": "One possible response"
         }
       ]
     },
     {
-      "id": "s10",
-      "kind": "listening",
-      "title": "A message from Kim",
-      "instruction": "Listen and answer the questions.",
-      "minutes": 5,
-      "eyebrow": "Listening",
-      "message": "Hi! I like Thor and Mia! I love animals, but I don’t have a pet. My sister Jin has a cat and a dog. The dog is young, and the cat is ten!",
-      "items": [
+      "id": "s81",
+      "kind": "grammar",
+      "title": "Have and has",
+      "instruction": "Talk about your pet or someone else’s pet",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Who",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
         {
-          "id": "1",
-          "prompt": "Does Kim have a pet?",
-          "answer": "No, she doesn’t."
+          "id": "have",
+          "subject": "I / you",
+          "verb": "have / don’t have",
+          "example": "I have a dog. I don’t have a cat."
         },
         {
-          "id": "2",
-          "prompt": "What pets does Jin have?",
-          "answer": "She has a cat and a dog."
+          "id": "has",
+          "subject": "He / she",
+          "verb": "has / doesn’t have",
+          "example": "My sister has two cats."
         },
         {
-          "id": "3",
-          "prompt": "How old is Jin’s cat?",
-          "answer": "The cat is ten."
-        }
-      ],
-      "greeting": "Hi! Let’s talk about pets."
-    },
-    {
-      "id": "s101",
-      "kind": "prompts",
-      "title": "Introduce a pet",
-      "instruction": "Tell Kim about a pet you know.",
-      "minutes": 2,
-      "eyebrow": "Speaking",
-      "items": [
-        {
-          "id": "1",
-          "prompt": "Who would you like to talk about?",
-          "answer": "My … has a … His/Her name is …"
-        },
-        {
-          "id": "2",
-          "prompt": "What can you say about the pet?",
-          "answer": "He’s/She’s … years old. He’s/She’s …"
+          "id": "ask",
+          "subject": "Ask",
+          "verb": "Do you have …?",
+          "example": "Do you have a pet?"
         }
       ]
     },
     {
       "id": "s12",
-      "kind": "roleplay",
-      "title": "A pet conversation",
-      "instruction": "Ask about a pet. Listen and ask a follow-up question.",
+      "kind": "activity",
+      "title": "Help me find Mia",
+      "instruction": "Find the cat in the picture and explain where she is",
       "minutes": 6,
-      "eyebrow": "Role play",
-      "image": {
-        "src": "scene-home",
-        "alt": "Ana’s room with furniture, Thor and Mia."
-      },
-      "steps": [
-        "Ask about the pet and its name.",
-        "Ask where the pet is now.",
-        "Swap roles. Use your own pet or an imaginary pet."
-      ],
-      "lines": [
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s10",
+      "kind": "listening",
+      "title": "Mia has moved",
+      "instruction": "Listen to Kim and find Mia’s new place",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I can see Mia now. She isn’t under the bed. She’s on the sofa, next to a cushion. Thor is still next to the sofa. Come and look at them! Do you have a photo of your pets?",
+      "audioId": "L81.1",
+      "greeting": "I can see Mia now!",
+      "items": [
         {
-          "id": "role.0",
-          "speaker": "Kim",
-          "text": "Do you have a pet?",
-          "cue": "Ask about a pet.",
-          "hint": "Do you have …?"
-        },
-        {
-          "id": "role.1",
-          "speaker": "Ana",
-          "text": "Yes, I do. I have a cat.",
-          "cue": "Say yes or no. Add a detail.",
-          "hint": "I have a … / My friend has a …"
-        },
-        {
-          "id": "role.2",
-          "speaker": "Kim",
-          "text": "What’s her name?",
-          "cue": "Ask the name.",
-          "hint": "What’s … name?"
-        },
-        {
-          "id": "role.3",
-          "speaker": "Ana",
-          "text": "Her name is Mia.",
-          "cue": "Give the name.",
-          "hint": "His/Her name is …"
-        },
-        {
-          "id": "role.4",
-          "speaker": "Kim",
-          "text": "Where is she now?",
-          "cue": "Ask where the pet is.",
-          "hint": "Where … now?"
-        },
-        {
-          "id": "role.5",
-          "speaker": "Ana",
-          "text": "She’s on the sofa.",
-          "cue": "Say where the pet is.",
-          "hint": "He’s/She’s …"
+          "id": "new",
+          "prompt": "Where is Mia now?",
+          "cue": "Describe the place in the message",
+          "hint": "She’s on the …",
+          "answer": "She’s on the sofa"
         }
       ]
     },
     {
-      "id": "s111",
-      "kind": "prompts",
-      "title": "Talk about pets",
-      "instruction": "Answer in full sentences. Ask your teacher too.",
-      "minutes": 2,
-      "eyebrow": "Speaking",
+      "id": "s101",
+      "kind": "roleplay",
+      "title": "Tell Kim where Mia is",
+      "instruction": "Explain Mia’s new place and ask about Thor",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "image": {
+        "src": "scene-cat-on",
+        "alt": "Mia on the sofa"
+      },
+      "steps": [],
       "items": [
         {
-          "id": "1",
-          "prompt": "Does your friend have a pet?",
-          "answer": "Yes, he/she does. / No, he/she doesn’t."
-        },
-        {
-          "id": "2",
-          "prompt": "Is your pet on the bed now?",
-          "answer": "Yes, he/she is. / No, he/she isn’t. He’s/She’s …"
-        },
-        {
-          "id": "3",
-          "prompt": "Do you like your friend’s pet?",
-          "answer": "Yes, I do. / No, I don’t."
+          "id": "reply",
+          "prompt": "Can you tell me where Mia is?",
+          "cue": "Say where she is and ask about Thor",
+          "hint": "She’s … Where is Thor?",
+          "answer": "She’s on the sofa. Where is Thor?"
         }
       ]
     },
@@ -538,31 +332,19 @@
       "id": "s13",
       "kind": "homework",
       "title": "Before next class",
-      "instruction": "Practise these two tasks.",
-      "minutes": 1,
-      "eyebrow": "Homework",
+      "instruction": "Prepare a pet introduction and a location clue",
+      "minutes": 2,
+      "eyebrow": "Practice",
       "tasks": [
         {
-          "title": "Vocabulary",
-          "description": "Say six pets, three pieces of furniture and four position words."
+          "title": "An animal",
+          "description": "Introduce a real or imaginary pet: its name and one detail"
         },
         {
-          "title": "Speaking",
-          "description": "Introduce a pet. Say its name, age and where it is. Use an imaginary pet if you want."
+          "title": "A place",
+          "description": "Use a picture to describe two positions. Prepare a question about an animal or your home"
         }
       ]
     }
-  ],
-  "planningNotes": {
-    "durationMinutes": 50,
-    "removed": [
-      "Repeated animal identification immediately after vocabulary.",
-      "Unverified numbered hotspots and unnecessary exploration counter.",
-      "Two/four-line continuation and teacher/student progress buttons.",
-      "Double-click guessing game, redundant location controls and notes checklist.",
-      "Unprovisioned Student homework links."
-    ],
-    "provider": "ElevenLabs; prepared recordings only",
-    "homework": "Offline practice; no unprovisioned portal links"
-  }
+  ]
 }

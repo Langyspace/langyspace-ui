@@ -37,7 +37,8 @@ export interface SceneExplorerProps extends Omit<
   onPlayHotspot?: (id: string) => void
   playingId?: string
   /** Labeled audio targets over a scene, without the exploration answer panel. */
-  presentation?: 'explore' | 'labels'
+  /** Vocabulary keeps each revealed label visible while its example remains in the selected callout. */
+  presentation?: 'explore' | 'labels' | 'vocabulary'
   /** Keep named scene targets visible on compact frames when the activity depends on their names. */
   labelVisibility?: 'responsive' | 'always'
   answerVisible?: boolean

@@ -1,0 +1,408 @@
+{
+  "version": 81,
+  "code": "B1.05",
+  "key": "b1-05",
+  "title": "He said he’d come on Thursday",
+  "goal": "Pass on a request accurately and repair a misunderstanding",
+  "freeConversationInstruction": "Talk about messages, misunderstandings and how you check that another person understood you",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Practise checking a detail rather than guessing",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Did you say Thursday or Friday?",
+          "cue": "Ask for clarification and repeat the answer",
+          "hint": "Did you say …? So that’s …, right?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for he said he’d come on thursday",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-05-vocabulary81",
+        "alt": "Six illustrated situations for He said he’d come on Thursday",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B105-V81.0",
+          "label": "a leak",
+          "prompt": "",
+          "example": "There’s a leak under the sink",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B105-FS81.0",
+          "audioText": "a leak. There’s a leak under the sink."
+        },
+        {
+          "id": "B105-V81.1",
+          "label": "a tap",
+          "prompt": "",
+          "example": "He needs to check the tap",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B105-FS81.1",
+          "audioText": "a tap. He needs to check the tap."
+        },
+        {
+          "id": "B105-V81.2",
+          "label": "a repair",
+          "prompt": "",
+          "example": "The repair may take an hour",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B105-FS81.2",
+          "audioText": "a repair. The repair may take an hour."
+        },
+        {
+          "id": "B105-V81.3",
+          "label": "a spare key",
+          "prompt": "",
+          "example": "Leave a spare key at reception",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B105-FS81.3",
+          "audioText": "a spare key. Leave a spare key at reception."
+        },
+        {
+          "id": "B105-V81.4",
+          "label": "an appointment",
+          "prompt": "",
+          "example": "The appointment has changed to Friday",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B105-FS81.4",
+          "audioText": "an appointment. The appointment has changed to Friday."
+        },
+        {
+          "id": "B105-V81.5",
+          "label": "a building manager",
+          "prompt": "",
+          "example": "Please pass the message to the building manager",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B105-FS81.5",
+          "audioText": "a building manager. Please pass the message to the building manager."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "He said he’d come on Thursday",
+      "paragraphs": [
+        "Original repair message: “I’ll come on Thursday at ten. Please leave a spare key at reception. The repair should take about an hour, but I need to see the tap first.” Pass on the details; do not assume the repair is guaranteed to finish within an hour."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A message about the repair",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B105-D81.1",
+          "speaker": "Kim",
+          "text": "Did the repair person call about the leak?",
+          "audioText": "Did the repair person call about the leak?",
+          "translation": "O profissional ligou sobre o vazamento?"
+        },
+        {
+          "id": "B105-D81.2",
+          "speaker": "Ana",
+          "text": "Yes. He said he’d come on Thursday at ten",
+          "audioText": "Yes. He said he’d come on Thursday at ten.",
+          "translation": "Sim. Disse que viria na quinta às dez"
+        },
+        {
+          "id": "B105-D81.3",
+          "speaker": "Kim",
+          "text": "Friday at ten? I’ll tell the building manager",
+          "audioText": "Friday at ten? I’ll tell the building manager.",
+          "translation": "Sexta às dez? Vou avisar a administração do prédio"
+        },
+        {
+          "id": "B105-D81.4",
+          "speaker": "Ana",
+          "text": "Thursday, not Friday. He asked us to leave a spare key at reception",
+          "audioText": "Thursday, not Friday. He asked us to leave a spare key at reception.",
+          "translation": "Quinta, não sexta. Pediu para deixarmos uma chave reserva na portaria"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Which detail does Kim first misunderstand?",
+          "cue": "Identify and correct it",
+          "hint": "He said …, not …",
+          "answer": "He said Thursday, not Friday"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Repeat it back",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B105-D81.5",
+          "speaker": "Kim",
+          "text": "Thanks for checking. Did he say how long the repair would take?",
+          "audioText": "Thanks for checking. Did he say how long the repair would take?",
+          "translation": "Obrigada por conferir. Ele disse quanto tempo o reparo levaria?"
+        },
+        {
+          "id": "B105-D81.6",
+          "speaker": "Ana",
+          "text": "He said about an hour, but he’d need to see the tap first",
+          "audioText": "He said about an hour, but he’d need to see the tap first.",
+          "translation": "Disse que cerca de uma hora, mas precisaria ver a torneira primeiro"
+        },
+        {
+          "id": "B105-D81.7",
+          "speaker": "Kim",
+          "text": "All right. I’ll repeat that back: Thursday, ten, and a key at reception",
+          "audioText": "All right. I’ll repeat that back: Thursday, ten, and a key at reception.",
+          "translation": "Tudo bem. Vou repetir: quinta, dez, e chave na portaria"
+        },
+        {
+          "id": "B105-D81.8",
+          "speaker": "Ana",
+          "text": "Exactly. Please ask the manager to confirm that someone can let him in",
+          "audioText": "Exactly. Please ask the manager to confirm that someone can let him in.",
+          "translation": "Isso. Peça à administração para confirmar que alguém poderá deixá-lo entrar"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Is one hour a guarantee?",
+          "cue": "Report the condition attached to the estimate",
+          "hint": "No. He said …",
+          "answer": "No. He needs to see the tap first"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Pass on a message",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Who said what, and what did they ask?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Report information",
+          "verb": "said + clause",
+          "example": "He said he’d come on Thursday"
+        },
+        {
+          "id": "1",
+          "subject": "Say who received the information",
+          "verb": "told + person + clause",
+          "example": "He told me he’d need to see the tap"
+        },
+        {
+          "id": "2",
+          "subject": "Pass on a request",
+          "verb": "asked + person + to + verb",
+          "example": "He asked us to leave a spare key"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Pass the message on",
+      "instruction": "Pass the message to me and check that I understood it",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The repair has been rescheduled",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’ve had another call about the repair. He said he couldn’t come on Thursday after all and would come on Friday at eleven instead. He still asked us to leave the spare key at reception. He also said the visit might take longer than an hour if the tap needs replacing. Could you pass that on to the building manager and check that the new time has been understood? The earlier Thursday booking should be removed from the diary",
+      "audioText": "Hi, Ana. I’ve had another call about the repair. He said he couldn’t come on Thursday after all and would come on Friday at eleven instead. He still asked us to leave the spare key at reception. He also said the visit might take longer than an hour if the tap needs replacing. Could you pass that on to the building manager and check that the new time has been understood? The earlier Thursday booking should be removed from the diary.",
+      "audioId": "B105-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What should you tell the other person now?",
+          "cue": "Relay the updated time and request",
+          "hint": "He said … and asked us to …",
+          "answer": "He said Friday at eleven and asked for the spare key at reception"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Relay the updated message",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Pass on a request accurately and repair a misunderstanding"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Original message",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Appointment",
+          "value": "Thursday · 10 am"
+        },
+        {
+          "id": "1",
+          "label": "Request",
+          "value": "Spare key at reception"
+        },
+        {
+          "id": "2",
+          "label": "Estimate",
+          "value": "About an hour · depends on the tap"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What did he ask us to do?",
+          "cue": "Relay the request and correct one detail if I repeat it wrongly",
+          "hint": "He said … He asked us to … It was …, not …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Replace the earlier booking",
+      "facts": [
+        {
+          "id": "0",
+          "label": "New visit",
+          "value": "Friday · 11 am"
+        },
+        {
+          "id": "1",
+          "label": "Still needed",
+          "value": "Spare key at reception"
+        },
+        {
+          "id": "2",
+          "label": "Duration",
+          "value": "May be longer if tap needs replacing"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What should the manager know now?",
+          "cue": "Pass on the updated time, request and uncertainty; ask me to repeat the key detail",
+          "hint": "He said … and asked us to … Could you confirm …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Appointment",
+          "value": "Thursday · 10 am"
+        },
+        {
+          "id": "1",
+          "label": "Request",
+          "value": "Spare key at reception"
+        },
+        {
+          "id": "2",
+          "label": "Estimate",
+          "value": "About an hour · depends on the tap"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What did he ask us to do?",
+          "cue": "Pass on the request accurately",
+          "hint": "He asked us to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Did he say Thursday or Friday?",
+          "cue": "Check the message and correct the misunderstanding",
+          "hint": "He said …, not …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

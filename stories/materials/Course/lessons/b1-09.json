@@ -1,0 +1,408 @@
+{
+  "version": 81,
+  "code": "B1.09",
+  "key": "b1-09",
+  "title": "My bike was stolen!",
+  "goal": "Report a missing bike precisely without claiming it has been found",
+  "freeConversationInstruction": "Discuss how to report problems clearly and talk about situations where you needed help",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Distinguish an observation from a conclusion",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What makes an object identifiable?",
+          "cue": "Give one common and one distinctive feature",
+          "hint": "It has …, but we’d need to check …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for my bike was stolen!",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-09-vocabulary81",
+        "alt": "Six illustrated situations for My bike was stolen!",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B109-V81.0",
+          "label": "a bicycle lock",
+          "prompt": "",
+          "example": "The bicycle lock was beside the rack",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B109-FS81.0",
+          "audioText": "a bicycle lock. The bicycle lock was beside the rack."
+        },
+        {
+          "id": "B109-V81.1",
+          "label": "a serial number",
+          "prompt": "",
+          "example": "The serial number hasn’t been checked",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B109-FS81.1",
+          "audioText": "a serial number. The serial number hasn’t been checked."
+        },
+        {
+          "id": "B109-V81.2",
+          "label": "a helmet",
+          "prompt": "",
+          "example": "The helmet is still at home",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B109-FS81.2",
+          "audioText": "a helmet. The helmet is still at home."
+        },
+        {
+          "id": "B109-V81.3",
+          "label": "a bike rack",
+          "prompt": "",
+          "example": "The bike was taken from the bike rack",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B109-FS81.3",
+          "audioText": "a bike rack. The bike was taken from the bike rack."
+        },
+        {
+          "id": "B109-V81.4",
+          "label": "a report",
+          "prompt": "",
+          "example": "An update has been added to the report",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B109-FS81.4",
+          "audioText": "a report. An update has been added to the report."
+        },
+        {
+          "id": "B109-V81.5",
+          "label": "lost property",
+          "prompt": "",
+          "example": "Ask at lost property before assuming it was stolen",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B109-FS81.5",
+          "audioText": "lost property. Ask at lost property before assuming it was stolen."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "My bike was stolen!",
+      "paragraphs": [
+        "Fictional bike report: blue frame, black basket, yellow sticker. Last seen at the station rack at 6 pm. Report made; serial number can be provided privately to the relevant desk. The lesson does not require a real theft or real identifying information."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Reporting the bike",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B109-D81.1",
+          "speaker": "Kim",
+          "text": "What happened? You look worried",
+          "audioText": "What happened? You look worried.",
+          "translation": "O que aconteceu? Você parece preocupada"
+        },
+        {
+          "id": "B109-D81.2",
+          "speaker": "Ana",
+          "text": "My bike was taken from the rack near the station. I last saw it at six",
+          "audioText": "My bike was taken from the rack near the station. I last saw it at six.",
+          "translation": "Minha bicicleta foi levada do bicicletário perto da estação. Eu a vi pela última vez às seis"
+        },
+        {
+          "id": "B109-D81.3",
+          "speaker": "Kim",
+          "text": "Have you reported it?",
+          "audioText": "Have you reported it?",
+          "translation": "Você já registrou a ocorrência?"
+        },
+        {
+          "id": "B109-D81.4",
+          "speaker": "Ana",
+          "text": "Yes. They asked for a description and the serial number",
+          "audioText": "Yes. They asked for a description and the serial number.",
+          "translation": "Sim. Pediram uma descrição e o número de série"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Where and when was the bike last seen?",
+          "cue": "Give the place and time",
+          "hint": "At … at …",
+          "answer": "At the station rack at six"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Description and confirmation",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B109-D81.5",
+          "speaker": "Kim",
+          "text": "How can they identify it?",
+          "audioText": "How can they identify it?",
+          "translation": "Como podem identificá-la?"
+        },
+        {
+          "id": "B109-D81.6",
+          "speaker": "Ana",
+          "text": "It’s blue, with a black basket and a yellow sticker on the frame",
+          "audioText": "It’s blue, with a black basket and a yellow sticker on the frame.",
+          "translation": "É azul, com cesta preta e adesivo amarelo no quadro"
+        },
+        {
+          "id": "B109-D81.7",
+          "speaker": "Kim",
+          "text": "Has anything been found yet?",
+          "audioText": "Has anything been found yet?",
+          "translation": "Já encontraram alguma coisa?"
+        },
+        {
+          "id": "B109-D81.8",
+          "speaker": "Ana",
+          "text": "Not yet. A similar bike was seen nearby, but nobody has checked the number",
+          "audioText": "Not yet. A similar bike was seen nearby, but nobody has checked the number.",
+          "translation": "Ainda não. Viram uma bicicleta parecida por perto, mas ninguém conferiu o número"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why is the nearby sighting not confirmation?",
+          "cue": "Name the missing check",
+          "hint": "Nobody has …",
+          "answer": "Nobody has checked the serial number"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Report the missing bike",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Focus on the event and the confirmed update",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A past event, focus on the object",
+          "verb": "was / were + past participle",
+          "example": "The bike was taken from the rack"
+        },
+        {
+          "id": "1",
+          "subject": "A recent update with relevance now",
+          "verb": "has / have been + past participle",
+          "example": "A similar bike has been found"
+        },
+        {
+          "id": "2",
+          "subject": "An action not confirmed yet",
+          "verb": "hasn’t been + past participle + yet",
+          "example": "The serial number hasn’t been checked yet"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Make a clear report",
+      "instruction": "Describe the bike and explain what happened",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A similar bike has been found",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. There’s an update about the bicycle report. A blue bike with a black basket has been found near the station. The yellow sticker hasn’t been confirmed, and the serial number hasn’t been checked yet. It may be the missing bike, but it hasn’t been identified as yours. Reception will contact you when the identifying details have been compared. Could you tell the other person what has actually been confirmed, and what you still need to ask?",
+      "audioText": "Hi, Ana. There’s an update about the bicycle report. A blue bike with a black basket has been found near the station. The yellow sticker hasn’t been confirmed, and the serial number hasn’t been checked yet. It may be the missing bike, but it hasn’t been identified as yours. Reception will contact you when the identifying details have been compared. Could you tell the other person what has actually been confirmed, and what you still need to ask?",
+      "audioId": "B109-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Has the bike been found?",
+          "cue": "Report exactly what has and has not been confirmed",
+          "hint": "It has been … / It hasn’t been … yet",
+          "answer": "A similar bike has been found, but the missing bike has not been positively identified"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Give an accurate update",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Report a missing bike precisely without claiming it has been found"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Report reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Description",
+          "value": "Blue · black basket · yellow sticker"
+        },
+        {
+          "id": "1",
+          "label": "Last seen",
+          "value": "Station rack · 6 pm"
+        },
+        {
+          "id": "2",
+          "label": "Identification",
+          "value": "Compare serial number before confirming"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you report what happened?",
+          "cue": "Give the event, place, time and distinguishing features",
+          "hint": "It was … near … at … It has …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Confirmed versus pending",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Found",
+          "value": "Blue bike · black basket"
+        },
+        {
+          "id": "1",
+          "label": "Not confirmed",
+          "value": "Yellow sticker"
+        },
+        {
+          "id": "2",
+          "label": "Not checked",
+          "value": "Serial number"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Has the missing bike definitely been found?",
+          "cue": "Report what is confirmed and ask about the outstanding identification",
+          "hint": "A bike has been …, but … hasn’t been … yet",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Description",
+          "value": "Blue · black basket · yellow sticker"
+        },
+        {
+          "id": "1",
+          "label": "Last seen",
+          "value": "Station rack · 6 pm"
+        },
+        {
+          "id": "2",
+          "label": "Identification",
+          "value": "Compare serial number before confirming"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What happened to the bike?",
+          "cue": "Report the event and add time or place",
+          "hint": "It was … while …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How can we identify it?",
+          "cue": "Describe two distinctive features from the picture",
+          "hint": "It has … and …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}
