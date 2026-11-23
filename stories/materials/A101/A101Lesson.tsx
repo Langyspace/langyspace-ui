@@ -1,437 +1,53 @@
-import { LessonOpening } from '../shared/LessonBookends'
-import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
-import { DialogueTitle } from '../shared/DialogueTitle'
-import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
-import { useLessonPage } from '../shared/useLessonPage'
-import { MaterialTheme } from '../shared/MaterialTheme'
-
-import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
-import { SlidePage } from '../../../src/components/Slide/SlidePage'
-import { VoiceMessageDemo } from '../../components/VoiceMessage/VoiceMessageDemo'
-import {
-  feelings,
-  countries,
-  warmUps,
-  order,
-  itemAt,
-  lesson,
-  kim,
-} from './A101.data'
-import {
-  VocabularySection,
-  WarmUpSection,
-  DialogueSection,
-  DialogueQuestions,
-  GrammarTable,
-  GrammarNegative,
-  AgeSection,
-  TwoTruthsAndALie,
-  SpeakingTimer,
-  TrueForYou,
-  MatchingSection,
-  GuessWho,
-  MakeQuestions,
-  ConversationSection,
-  HomeworkSection,
-} from './A101.sections'
-import { LessonNotes } from '../shared/LessonNotes'
-import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
-import { useLessonSpeech } from './useLessonSpeech'
-import voice from './assets/kim-demo.mp3'
-import * as Styled from './A101.styles'
+import { ReviewedLesson } from '../shared/ReviewedLesson'
+import type { ReviewedPage } from '../shared/ReviewedLesson.types'
+import { MeetSomeoneActivity } from './MeetSomeoneActivity'
 import type { A101LessonProps } from './A101.types'
-function A101LessonContent({
-  initialPageId,
-  learnerName = '',
-}: A101LessonProps) {
-  const [pageId, setPageId] = useLessonPage(initialPageId, 'a1-01', order)
-  const notePopup = useLessonNotesPopup('langy-notes:a1-01')
+import data from './A101.review.json'
+import provenance from './audio-provenance.json'
+import additions from './audio-provenance80.json'
 
-  const speech = useLessonSpeech()
-  const pages = order.map((id) => {
-    const number = Number(id.slice(1))
-    if (id === 'cover')
-      return {
-        id,
-        label: 'Lesson cover',
-        content: <LessonOpening materialKey="a1-01" />,
+const images = import.meta.glob('./assets/*.{webp,png,svg}', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+const audio = import.meta.glob('./assets/**/*.mp3', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+}) as Record<string, string>
+const recordings = [...provenance.items, ...additions.items].map((clip) => {
+  const src = audio['./' + clip.file]
+  if (!src) throw new Error(`Missing prepared A1.01 audio: ${clip.id}`)
+  return { id: clip.id, text: clip.text, src }
+})
+const pages = (data.pages as readonly ReviewedPage[]).map((page) =>
+  page.kind === 'vocabulary'
+    ? {
+        ...page,
+        items: page.items.map((item) => {
+          const id = item.imageUrl ?? ''
+          const imageUrl =
+            images[`./assets/${id}.webp`] ?? images[`./assets/${id}.svg`]
+          if (!imageUrl)
+            throw new Error(`Missing prepared A1.01 picture: ${id}`)
+          return { ...item, imageUrl }
+        }),
       }
-    if (id === 's1')
-      return {
-        id,
-        label: 'Vocabulary · Feelings',
-        content: (
-          <Styled.VocabularyPage
-            columns={3}
-            eyebrow="A1 LESSON 01"
-            title="Feelings"
-            instruction="Name each feeling, then click to check and listen"
-          >
-            <Styled.IntroVocabulary>
-              <VocabularySection
-                items={feelings}
-                imageVariant="scene"
-                speak={speech.speak}
-              />
-            </Styled.IntroVocabulary>
-          </Styled.VocabularyPage>
-        ),
-      }
-    if ((number >= 21 && number <= 26) || (number >= 51 && number <= 56)) {
-      const feeling = number < 30
-      const slot = feeling ? number - 21 : number - 51
-      return {
-        id,
-        label: `Warm up · ${feeling ? 'Feelings' : 'Countries'} ${slot + 1}`,
-        content: (
-          <Styled.WarmupPage
-            columns={1}
-            eyebrow="Warm up"
-            title={itemAt(warmUps, (feeling ? 0 : 6) + slot).t}
-            instruction="Choose the correct answer."
-          >
-            <WarmUpSection
-              item={itemAt(warmUps, (feeling ? 0 : 6) + slot)}
-              speak={speech.speak}
-            />
-          </Styled.WarmupPage>
-        ),
-      }
-    }
-    if (id === 's4')
-      return {
-        id,
-        label: 'Vocabulary · Countries',
-        content: (
-          <SlidePage
-            width="standard"
-            eyebrow="Vocabulary"
-            title="Countries"
-            instruction="Name each country, then click to check and listen"
-          >
-            <VocabularySection items={countries} speak={speech.speak} />
-          </SlidePage>
-        ),
-      }
-    if (id === 's6')
-      return {
-        id,
-        label: 'Guided conversation · Nice to meet you',
-        content: (
-          <SlidePage
-            columns={3}
-            density="compact"
-            questions={<DialogueQuestions />}
-            eyebrow="Guided conversation"
-            instruction="Listen, then read with your teacher."
-            title={
-              <DialogueTitle
-                title="Nice to meet you"
-                action={
-                  <DialoguePlaybackAction
-                    context="Nice to meet you"
-                    disabled={pageId !== id}
-                    status={
-                      speech.playingId?.startsWith('R.')
-                        ? speech.paused
-                          ? 'paused'
-                          : 'playing'
-                        : speech.error
-                          ? 'error'
-                          : 'idle'
-                    }
-                    onClick={() => {
-                      if (speech.playingId?.startsWith('R.'))
-                        speech.togglePause()
-                      else
-                        speech.speak(
-                          lesson.RT.map((line) => ({
-                            id: line.id,
-                            text: line.en,
-                            speaker: line.who,
-                          })),
-                        )
-                    }}
-                  />
-                }
-              />
-            }
-          >
-            <DialogueSection
-              playingId={speech.playingId}
-              speak={speech.speak}
-            />
-          </SlidePage>
-        ),
-      }
-    if (id === 's71')
-      return {
-        id,
-        label: 'Grammar · Verb to be',
-        content: (
-          <SlidePage
-            eyebrow="Grammar"
-            title="Verb to be"
-            instruction="Use be to say who someone is or how they feel."
-          >
-            <GrammarTable />
-          </SlidePage>
-        ),
-      }
-    if (id === 's72')
-      return {
-        id,
-        label: 'Grammar · Be: negatives and questions',
-        content: (
-          <SlidePage
-            columns={2}
-            eyebrow="Grammar"
-            title="Be: negatives and questions"
-            instruction="See how be changes in negatives and questions"
-          >
-            <GrammarNegative />
-          </SlidePage>
-        ),
-      }
-    if (id === 's73')
-      return {
-        id,
-        label: 'Language tip · Age',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Language tip"
-            title="How old are you?"
-            instruction="Use be to talk about age."
-          >
-            <AgeSection />
-          </SlidePage>
-        ),
-      }
-    if (id === 's74')
-      return {
-        id,
-        label: 'Speaking · Two truths and one lie',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Speaking"
-            title="Two truths and one lie"
-            instruction="Say three facts: two true, one false. Guess the lie. Then swap roles."
-          >
-            <TwoTruthsAndALie />
-          </SlidePage>
-        ),
-      }
-    if (id === 's75')
-      return {
-        id,
-        label: 'Speaking · Introduce yourself',
-        content: (
-          <SlidePage
-            width="standard"
-            eyebrow="Speaking"
-            title="Introduce yourself"
-            instruction="Introduce yourself in 30 seconds."
-          >
-            <SpeakingTimer key={pageId} active={pageId === id} />
-          </SlidePage>
-        ),
-      }
-    if (id === 's16')
-      return {
-        id,
-        label: 'Practice · True for you',
-        content: (
-          <SlidePage
-            columns={2}
-            eyebrow="Speaking"
-            title="True for you?"
-            instruction="Read each sentence. Change it if it is not true for you"
-          >
-            <TrueForYou />
-          </SlidePage>
-        ),
-      }
-    if (id === 's17')
-      return {
-        id,
-        label: 'Practice · Match questions and answers',
-        content: (
-          <SlidePage
-            columns={2}
-            eyebrow="Practice"
-            title="Match questions and answers"
-            instruction="Find each pair, then read it aloud"
-          >
-            <MatchingSection />
-          </SlidePage>
-        ),
-      }
-    if (id === 's8')
-      return {
-        id,
-        label: 'Guided conversation · Complete',
-        content: (
-          <SlidePage
-            width="reading"
-            eyebrow="Guided conversation"
-            title="Complete the conversation"
-            questions={<DialogueQuestions />}
-            density="compact"
-            instruction="Fill in the gaps. Read with your teacher."
-          >
-            <DialogueSection gaps speak={speech.speak} />
-          </SlidePage>
-        ),
-      }
-    if (id === 's9')
-      return {
-        id,
-        label: 'Listening Practice',
-        content: (
-          <SlidePage
-            width="standard"
-            eyebrow="Listening"
-            title="A message from Kim"
-            instruction="Listen to Kim, then reply with how you feel"
-          >
-            <VoiceMessageDemo
-              contact={{
-                name: 'Kim',
-                status: 'online',
-                avatarUrl: kim,
-              }}
-              audio={{
-                id: 'a101-kim-demo',
-                src: voice,
-                transcript:
-                  'Hi! How are you? I’m really tired, and I’m also hungry!',
-                timestamp: '19:41',
-              }}
-              greeting={{
-                text: learnerName.trim()
-                  ? `Hi ${learnerName.trim().split(/\s+/)[0]}! 👋`
-                  : 'Hi! 👋',
-                timestamp: '19:40',
-              }}
-              active={pageId === 's9'}
-            />
-          </SlidePage>
-        ),
-      }
-    if (id === 's10')
-      return {
-        id,
-        label: 'Role play · Guess who',
-        content: (
-          <SlidePage
-            width="standard"
-            eyebrow="Role play"
-            title="Guess who"
-            instruction="Your teacher chooses a person. Ask questions. Guess who."
-          >
-            <GuessWho />
-          </SlidePage>
-        ),
-      }
-    if (id === 's18')
-      return {
-        id,
-        label: 'Practice · Ask questions with be',
-        content: (
-          <SlidePage
-            width="exercise"
-            eyebrow="Practice"
-            title="Ask questions with be"
-            instruction="Turn each statement into a question"
-          >
-            <MakeQuestions />
-          </SlidePage>
-        ),
-      }
-    if (['s15', 's151', 's152'].includes(id))
-      return {
-        id,
-        label: `Conversation · ${id === 's15' ? 'Names and feelings' : id === 's151' ? 'People and places' : 'Pets and birthdays'}`,
-        content: (
-          <SlidePage
-            columns={1}
-            eyebrow="Conversation"
-            title={
-              id === 's15'
-                ? 'Names and feelings'
-                : id === 's151'
-                  ? 'People and places'
-                  : 'Pets and birthdays'
-            }
-            instruction="Choose two or three prompts. Speak with your teacher, then swap roles."
-          >
-            <ConversationSection
-              part={id === 's15' ? 0 : id === 's151' ? 1 : 2}
-            />
-          </SlidePage>
-        ),
-      }
-    return {
-      id,
-      label: 'Homework · Before next class',
-      content: (
-        <SlidePage
-          layout="split"
-          width="standard"
-          eyebrow="Homework"
-          title="Before next class"
-          instruction="Practise before your next lesson."
-        >
-          <HomeworkSection />
-        </SlidePage>
-      ),
-    }
-  })
+    : page,
+)
+export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
   return (
-    <Styled.Stage>
-      <MaterialSlideDeck
-        tabIndex={-1}
-        previousPageLabel="Back"
-        label="A1.01 · Introduce yourself"
-        pages={pages}
-        pageId={pageId}
-        onPageChange={(id) => {
-          if (id !== pageId) speech.stop()
-          setPageId(id)
-        }}
-        overlay={
-          <LessonNotes
-            storageKey="langy-notes:a1-01"
-            open={notePopup.isOpen}
-            popupWindow={notePopup.popup}
-            preview={notePopup.preview}
-            error={notePopup.error}
-            onClose={notePopup.close}
-          />
-        }
-        actions={
-          <LessonNotesTrigger
-            ref={(element) => {
-              notePopup.trigger(element)
-            }}
-            open={notePopup.isOpen}
-            onClick={notePopup.open}
-          />
-        }
-      />
-      {speech.error ? (
-        <Styled.AudioError role="status">{speech.error}</Styled.AudioError>
-      ) : null}
-    </Styled.Stage>
-  )
-}
-
-export function A101Lesson(props: A101LessonProps) {
-  return (
-    <MaterialTheme>
-      <A101LessonContent {...props} />
-    </MaterialTheme>
+    <ReviewedLesson
+      code={data.code}
+      title={data.title}
+      pages={pages}
+      recordings={recordings}
+      initialPageId={initialPageId}
+      learnerName={learnerName}
+      notesStorageKey="langy-notes:a1-01"
+      activities={{ s10: <MeetSomeoneActivity /> }}
+      freeConversationInstruction="Get to know each other: introduce yourself, ask about your teacher and react to her answers"
+    />
   )
 }

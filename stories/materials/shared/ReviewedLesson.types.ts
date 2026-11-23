@@ -29,6 +29,8 @@ interface PageBase {
   eyebrow: string
   instruction: string
   minutes: number
+  /** Prepared audio alongside an authored listening prompt. */
+  titleAudio?: readonly { id: string; text: string }[]
 }
 export type ReviewedPage = PageBase &
   (
@@ -53,7 +55,7 @@ export type ReviewedPage = PageBase &
       }
     | {
         kind: 'scene'
-        image: { src: string; alt: string }
+        image: { src: string; alt: string; aspectRatio?: number }
         context?: string
         hotspots: readonly (SceneHotspot & {
           audioId: string
@@ -123,11 +125,22 @@ export interface ReviewedLessonProps {
   recordings: readonly PreparedRecording[]
   initialPageId?: string
   learnerName?: string
+  /** Retain an existing material's local Notes namespace during migration. */
+  notesStorageKey?: string
   /** Authored activities compose library components; no additional visual skin. */
-  activities?: Readonly<Record<string, ReactNode>>
+  activities?: Readonly<
+    Record<
+      string,
+      ReactNode | ((context: ReviewedActivityContext) => ReactNode)
+    >
+  >
   freeConversationInstruction?: string
 }
 export type ReviewedSpeech = ReturnType<typeof useRecordedAudio>
+export interface ReviewedActivityContext {
+  active: boolean
+  speech: ReviewedSpeech
+}
 export interface ReviewedDialogueProps {
   lines: readonly ReviewedTurn[]
   speech: ReviewedSpeech

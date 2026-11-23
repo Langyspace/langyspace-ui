@@ -87,6 +87,37 @@ export function NumberVocabulary({
     />
   )
 }
+export function NumberReference({ speech }: { speech: A102Speech }) {
+  const [all, setAll] = useState(false)
+  return (
+    <VocabularyGrid
+      layout="reference"
+      interaction="listen"
+      revealOnHover={false}
+      revealLabel="Reveal and listen"
+      items={numbers.map((item) => ({
+        id: item.id,
+        symbol: item.symbol,
+        word: item.word,
+        translation: '',
+        imageAlt: item.symbol,
+      }))}
+      revealedIds={[]}
+      showAll={all}
+      onPlay={(id) => {
+        const line = numbers.find((item) => item.id === id)
+        if (line) speech.speak([line])
+      }}
+      controls={{
+        showInitial: all,
+        onToggleInitial: () => setAll(!all),
+        labels: {
+          hint: all ? 'Hide English number words' : 'Show English number words',
+        },
+      }}
+    />
+  )
+}
 export function AlphabetReference({ speech }: { speech: A102Speech }) {
   const [pronunciation, setPronunciation] = useState(false)
   return (
@@ -257,15 +288,19 @@ export function ContactPractice() {
 }
 const callTheme = withVoiceMessageLayout({
   contentWidth: '47.5rem',
-  phoneWidth: 'clamp(11.875rem, calc((100dvh - 15.625rem) / 2), 16.875rem)',
-  phoneHeight: 'clamp(23.75rem, calc(100dvh - 15.625rem), 33.75rem)',
+  phoneWidth:
+    'clamp(11.875rem, min(calc((100dvh - 15.625rem) / 2), 50cqw), 16.875rem)',
+  phoneHeight:
+    'clamp(23.75rem, min(calc(100dvh - 15.625rem), 100cqw), 33.75rem)',
 })
 export function CallPractice({
   active,
   speech,
+  lines = call,
 }: {
   active: boolean
   speech: A102Speech
+  lines?: readonly { id: string; text: string; caption?: string }[]
 }) {
   const [state, setState] = useState<'idle' | 'connected' | 'ended'>('idle')
   const [index, setIndex] = useState(0)
@@ -275,7 +310,7 @@ export function CallPractice({
       setIndex(0)
     }
   }, [active])
-  const line = call[index]!
+  const line = lines[index]!
   return (
     <ThemeProvider theme={callTheme}>
       <CallSimulation
@@ -289,12 +324,14 @@ export function CallPractice({
         avatarUrl={portraits.Kim}
         state={state}
         elapsedLabel=""
-        caption={state === 'connected' ? line.text : undefined}
+        caption={
+          state === 'connected' ? (line.caption ?? line.text) : undefined
+        }
         captionLabel="Kim"
         onCall={() => {
           setState('connected')
           setIndex(0)
-          speech.speak([call[0]])
+          speech.speak([lines[0]!])
         }}
         onHangUp={() => {
           speech.stop()
@@ -303,11 +340,11 @@ export function CallPractice({
         disabled={!active}
         playback={{
           index,
-          count: call.length,
+          count: lines.length,
           disabled: !active,
           onReplay: () => speech.speak([line]),
           onNext: () => {
-            const next = call[index + 1]
+            const next = lines[index + 1]
             if (next) {
               setIndex(index + 1)
               speech.speak([next])
@@ -330,10 +367,10 @@ export function CallPractice({
       >
         <Common.Surface>
           <Common.Heading>Ana’s contact</Common.Heading>
-          <KeyValueList tone="material" items={anaContact} />
+          <KeyValueList tone="material" density="compact" items={anaContact} />
         </Common.Surface>
         <Common.Row>
-          <Common.Chip>Yes, that’s right.</Common.Chip>
+          <Common.Chip>Yes, that’s right</Common.Chip>
           <Common.Chip>No, sorry. It’s …</Common.Chip>
         </Common.Row>
       </CallSimulation>

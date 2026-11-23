@@ -1,4 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
+import {
+  OutgoingCall as OptionalOutgoingCall,
+  VoiceMessageChallenge,
+} from './A102.sections'
+import { MaterialTheme } from '../shared/MaterialTheme'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { A102Lesson } from './A102Lesson'
 
 const meta = {
@@ -23,16 +29,46 @@ export const ReceptionWorkstation: Story = {
   tags: ['visual-review'],
 }
 export const OutgoingCall: Story = {
-  args: { initialPageId: 's15' },
+  render: () => (
+    <MaterialTheme>
+      <SlidePage
+        eyebrow="Optional reference"
+        title="Your turn to ask"
+        instruction="Ask your teacher for a name and number"
+      >
+        <OptionalOutgoingCall active />
+      </SlidePage>
+    </MaterialTheme>
+  ),
   tags: ['visual-review'],
 }
 export const VoiceMessage: Story = {
-  args: { initialPageId: 's16' },
+  render: () => (
+    <MaterialTheme>
+      <SlidePage
+        eyebrow="Optional reference"
+        title="Leave a message"
+        instruction="Introduce yourself and give a made-up number"
+      >
+        <VoiceMessageChallenge active />
+      </SlidePage>
+    </MaterialTheme>
+  ),
   tags: ['visual-review'],
 }
 
 export const OutgoingTeacherFallback: Story = {
-  args: { initialPageId: 's15' },
+  render: () => (
+    <MaterialTheme>
+      <SlidePage
+        eyebrow="Optional reference"
+        title="Your turn to ask"
+        instruction="Ask your teacher for a name and number"
+      >
+        <OptionalOutgoingCall active />
+      </SlidePage>
+    </MaterialTheme>
+  ),
   tags: ['visual-review', 'layout-boundary'],
 }
 

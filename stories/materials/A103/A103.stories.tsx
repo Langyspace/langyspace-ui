@@ -32,7 +32,7 @@ export const Listening: Story = {
   tags: ['visual-review'],
 }
 export const RolePlay: Story = {
-  args: { initialPageId: 's12' },
+  args: { initialPageId: 's101' },
   tags: ['visual-review'],
 }
 

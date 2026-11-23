@@ -22,6 +22,15 @@ Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercí
 - Quando a pontuação de um balão muda, preservar `audioText` explícito com o texto exato da gravação válida. Não remover pontuação automaticamente na renderização nem enfraquecer o vínculo de ID e texto para fazer um play funcionar.
 - Conferir o bloco de escuta com os apoios abertos: título, celular e perguntas precisam caber como composição. Reduzir perguntas simultâneas ou distribuir a tarefa antes de diminuir fontes. A transcrição permanece na conversa do celular; sua rolagem nativa não justifica rolagem excedente da página inteira.
 
+### Continuação80 — apresentações e contato
+
+- Um dígito conhecido visualmente pode funcionar como consulta: `VocabularyGrid` em `reference`/`listen` toca a gravação no clique, e uma lâmpada mostra os nomes em inglês. Não acrescentar marcadores de pergunta ou controles de avaliação a esse formato. As letras mantêm suas pronúncias de apoio em português.
+- Fichas de simulação têm três fatos consultáveis e campos estáveis. Um modelo pessoal não define dados da participante; aceitar um nome/telefone fictício ou uma foto de exemplo. Na conferência de contato, mudar apenas um dado por rodada, sem somar vários erros de soletração à mesma troca.
+- Pergunta com áudio no título continua sendo uma composição de perguntas em uma coluna. Uma cena única declara a proporção do asset e usa a mesma receita de limite no cabeçalho e na imagem; não transformar a cena em uma página ampla apenas porque contém hotspots. Nas composições pareadas, preservar a largura total das duas colunas.
+- Ao juntar frases em um único balão ou resposta, manter os pontos entre as frases. Editar apenas o ponto terminal da mensagem completa nos dados de autoria, sem normalização automática no componente e sem alterar o texto literal do vínculo de áudio.
+- Ao migrar uma aula para o adaptador compartilhado, preservar sua chave de Notes local. Os slots de atividade recebem o estado ativo e o mesmo dono de áudio da página, para evitar players concorrentes e interromper a fala ao navegar. O contrato de Notes autenticado do Teacher continua separado da prévia local.
+- O conteúdo da leitura/escuta delimita o que pode ser cobrado como fato. A origem de Tom não foi informada na A1.03; a transferência pessoal não deve inventá-la para preencher uma pergunta. Dicas pessoais oferecem linguagem e admitem “I’m not sure” quando cabível.
+
 ## Rotina personalizada — feedback74
 
 - Organizar cada momento da rotina como cena contextual → conversa guiada com compreensão → conversa sobre a rotina real da aluna. Na aula extra da influencer, os quatro momentos aprovados são manhã, preparação para academia, treino e skincare/sono; essa quantidade não é uma regra para outros temas.

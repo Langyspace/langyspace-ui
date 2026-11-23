@@ -41,6 +41,7 @@ export function A103Lesson({ initialPageId, learnerName }: A103LessonProps) {
       recordings={recordings}
       initialPageId={initialPageId}
       learnerName={learnerName}
+      freeConversationInstruction="Talk about people who matter to you and ask about someone in your teacher’s life. You can show a photo or use the example family"
     />
   )
 }

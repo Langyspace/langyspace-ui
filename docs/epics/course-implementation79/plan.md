@@ -10,13 +10,14 @@ Autorização de 23/11/2026: implementar os 60 planos revisados, doze por nível
 - [x] C1.01 completa: seis expressões com cenas, fontes/diálogo em partes, negociação com evidência, reação, conversa livre e prática
 - [x] Verificação focada de estados, binding exato e apresentação em desktop/celular
 - [x] Primeiro lote disponível em prévia local, com [relatório e limites](first-batch.md)
-- [ ] A1: 11 códigos restantes
+- [x] Segundo lote: A1.01, A1.02 e A1.03, com [registro da continuação](batch80.md)
+- [ ] A1: 8 códigos restantes
 - [ ] A2: 12 códigos
 - [ ] B1: 12 códigos
 - [ ] B2: 12 códigos
 - [ ] C1: 11 códigos restantes
 
-A revisão dos dois pilotos é o ponto de avaliação da composição compartilhada, antes da adoção ampla. As outras 58 aulas continuam planejadas, sem autoria executável neste lote; não há trabalho agendado em segundo plano. A tarefa completa não será apresentada como concluída com apenas esse lote. Preservar capa, conversa livre penúltima e prática última. Um caso factual depende de fatos visíveis; ajuda não inventa dados pessoais. Cada aula tem seu próprio objetivo e dados.
+A revisão dos dois pilotos orientou a composição compartilhada. Com a continuação80, há cinco aulas autoradas e 55 ainda planejadas; não há trabalho agendado em segundo plano. A tarefa completa não será apresentada como concluída com esses lotes. Preservar capa, conversa livre penúltima e prática última. Um caso factual depende de fatos visíveis; ajuda não inventa dados pessoais. Cada aula tem seu próprio objetivo e dados.
 
 ## Contratos
 

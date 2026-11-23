@@ -7,7 +7,7 @@ export interface VocabularySectionProps {
 }
 export interface WarmUpSectionProps {
   item: WarmUpData
-  speak: (lines: readonly SpeechLine[]) => void
+  speak?: (lines: readonly SpeechLine[]) => void
 }
 export interface DialogueSectionProps {
   gaps?: boolean

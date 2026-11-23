@@ -417,7 +417,7 @@ function PageContent({
           page.lines ? (
             <Dialogue lines={page.lines} speech={speech} guidance />
           ) : page.items ? (
-            <PromptExercise items={page.items} />
+            <Questions items={page.items} />
           ) : undefined
         }
       />
@@ -433,6 +433,7 @@ export function ReviewedLesson({
   recordings,
   initialPageId,
   learnerName = '',
+  notesStorageKey = 'langy-material-notes-' + code,
   activities,
   freeConversationInstruction,
 }: ReviewedLessonProps) {
@@ -468,7 +469,13 @@ export function ReviewedLesson({
     ),
   )
   const speech = useRecordedAudio(recordings)
-  const notes = useLessonNotesPopup('langy-material-notes-' + code)
+  const notes = useLessonNotesPopup(notesStorageKey)
+  const activityFor = (id: string) => {
+    const activity = activities?.[id]
+    return typeof activity === 'function'
+      ? activity({ active: pageId === id, speech })
+      : activity
+  }
   return (
     <Shell.Stage>
       <MaterialSlideDeck
@@ -498,14 +505,17 @@ export function ReviewedLesson({
                             speech={speech}
                             active={pageId === page.id}
                             recordings={recordings}
-                            activity={activities?.[page.id]}
+                            activity={activityFor(page.id)}
                           />
                         ),
                       }}
                     />
                   ),
                 }
-              const lines = page.kind === 'dialogue' ? page.lines : undefined
+              const lines =
+                page.kind === 'dialogue'
+                  ? page.lines.map(recordingLine)
+                  : page.titleAudio
               const playing = lines?.some((x) => x.id === speech.playingId)
               return {
                 id: page.id,
@@ -528,16 +538,18 @@ export function ReviewedLesson({
                         : undefined
                     }
                     width={
-                      page.kind === 'vocabulary' && page.alignHeading
-                        ? { vocabularyColumns: 3 }
-                        : page.kind === 'vocabulary' ||
-                            page.kind === 'roleplay' ||
-                            page.kind === 'activity' ||
-                            page.kind === 'listening' ||
-                            page.kind === 'scene' ||
-                            page.kind === 'introductions'
-                          ? 'wide'
-                          : 'reading'
+                      page.kind === 'scene' && page.image.aspectRatio
+                        ? { mediaAspectRatio: page.image.aspectRatio }
+                        : page.kind === 'vocabulary' && page.alignHeading
+                          ? { vocabularyColumns: 3 }
+                          : page.kind === 'vocabulary' ||
+                              page.kind === 'roleplay' ||
+                              page.kind === 'activity' ||
+                              page.kind === 'listening' ||
+                              page.kind === 'scene' ||
+                              page.kind === 'introductions'
+                            ? 'wide'
+                            : 'reading'
                     }
                     titleAudio={
                       lines
@@ -549,14 +561,11 @@ export function ReviewedLesson({
                                 : 'playing'
                               : 'idle',
                             disabled:
-                              pageId !== page.id ||
-                              !lines.every((line) =>
-                                speech.has(recordingLine(line)),
-                              ),
+                              pageId !== page.id || !lines.every(speech.has),
                             onClick: () =>
                               playing
                                 ? speech.togglePause()
-                                : speech.speak(lines.map(recordingLine)),
+                                : speech.speak(lines),
                           }
                         : undefined
                     }
@@ -566,7 +575,7 @@ export function ReviewedLesson({
                       speech={speech}
                       active={pageId === page.id}
                       recordings={recordings}
-                      activity={activities?.[page.id]}
+                      activity={activityFor(page.id)}
                     />
                   </SlidePage>
                 ),
@@ -591,7 +600,7 @@ export function ReviewedLesson({
         )}
         overlay={
           <LessonNotes
-            storageKey={'langy-material-notes-' + code}
+            storageKey={notesStorageKey}
             open={notes.isOpen}
             popupWindow={notes.popup}
             preview={notes.preview}

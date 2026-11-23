@@ -9,7 +9,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'Your name and number: 17 pages for a 50-minute teacher-led conversation lesson. Prepared ElevenLabs recordings, native digit/letter tiles, alphabet lookup, contextual dialogues and a correction call. UI Library patterns reviewed in A1.01/A2.01/A1.05 take precedence over historical Claude markup.',
+          'Your name and number: 11 pages for a 50-minute teacher-led contact exchange. Prepared ElevenLabs recordings, native digit/letter tiles, alphabet lookup, contextual dialogues and a correction call. UI Library patterns reviewed in A1.01/A2.01/A1.05 take precedence over historical Claude markup.',
       },
     },
   },
@@ -19,12 +19,12 @@ export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
 export const Numbers: Story = { args: { initialPageId: 's2' } }
-export const AudioChoices: Story = { args: { initialPageId: 's4' } }
+export const SpellingRecognition: Story = { args: { initialPageId: 's7' } }
 export const AlphabetReference: Story = { args: { initialPageId: 's6' } }
 export const Dialogue: Story = { args: { initialPageId: 's8' } }
 export const Grammar: Story = { args: { initialPageId: 's10' } }
-export const FillInTheBlanks: Story = { args: { initialPageId: 's11' } }
+export const PersonalConversation: Story = { args: { initialPageId: 's12' } }
 export const ContactPractice: Story = { args: { initialPageId: 's13' } }
 export const Call: Story = { args: { initialPageId: 's14' } }
-export const RolePlay: Story = { args: { initialPageId: 's15' } }
+export const YourQuestions: Story = { args: { initialPageId: 's12' } }
 export const Homework: Story = { args: { initialPageId: 's17' } }
