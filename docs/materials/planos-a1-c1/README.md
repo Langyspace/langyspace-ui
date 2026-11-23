@@ -1,6 +1,6 @@
 # A1 a C1 · Novo plano de exercícios
 
-**60 aulas, mantendo 12 por nível.** Proposta de 23/11/2026 baseada nos planos existentes e nos feedbacks das aulas interativas. O foco é escolher exercícios que façam sentido, dar variedade visual e deixar claro o que a aluna faz. Não é uma nova publicação dos materiais.
+**60 aulas, mantendo 12 por nível.** Plano revisado em 23/11/2026, com [validação de conteúdo e apresentação](VALIDACAO.md), baseado nos planos existentes e nos feedbacks das aulas interativas. O foco é escolher exercícios que façam sentido, dar variedade visual e deixar claro o que a aluna faz. Não é uma nova publicação dos materiais.
 
 | Nível | Abrir as 12 aulas | Prática que passa a ter mais espaço |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ O percurso abaixo organiza a experiência; não determina o mesmo número de pá
 | --- | --- | --- | --- |
 | 1 | Capa ou capa + revisão | Título e subtítulo acima de uma capa própria; revisão apenas de conteúdo já trabalhado | Retomar brevemente uma troca anterior, sem antecipar a atividade seguinte |
 | 2 | Vocabulário visual | Pelo menos seis itens úteis, em cena, vinhetas ou objetos isolados conforme o significado | Tentar falar primeiro; clicar para conferir e ouvir palavra/expressão e exemplo |
-| 3 | Conversa guiada | Retratos e nomes canônicos, seis a oito falas que avançam a troca; compreensão na coluna ao lado | Ouvir, acompanhar a fala destacada e responder em balões; todas as respostas factuais vêm da conversa |
+| 3 | Conversa guiada | Retratos e nomes canônicos, pelo menos seis falas que avançam a troca, com profundidade adequada ao nível; partes curtas e compreensão na coluna ao lado | Ouvir, acompanhar a fala destacada e responder em balões; todas as respostas factuais vêm da conversa |
 | 4 | Sua vez de conversar | Balões da professora e intenções de resposta da aluna; vida pessoal ou situação de exemplo, sem texto completo para recitar | Formular a própria fala, acrescentar um detalhe e devolver uma pergunta; dicas opcionais em ordem |
 | 5 | Gramática no meio | Sentido, forma e exemplos do que a aluna já acabou de usar | Comparar o efeito de exemplos; não colocar quiz ou nova tarefa no rodapé |
 | 6 | Missão visual | Mapa, agenda, fotos, cardápio, anúncio, recibo, fontes ou situação específica daquela aula | Fazer algo com a informação: combinar, escolher, orientar, explicar, negociar ou reformular |
@@ -38,7 +38,7 @@ Aplicar a conversa pessoal, compreensão de diálogo, compreensão de áudio, re
 
 > **Professora:** What do you usually do in the morning?
 >
-> **You:** Describe two real morning activities and ask your teacher about hers
+> **You:** Say two things you do
 >
 > **💡 Ao clicar:** I usually … Then I … What about you?
 
@@ -94,6 +94,10 @@ Foram lidos os 60 arquivos principais de planejamento A1–C1, extraídos objeti
 
 As diferenças mais importantes são repetição de molde sem finalidade nova, perguntas sem uma ação de resposta clara, carga excessiva numa página e instruções antigas que contradizem correções recentes. Os novos roteiros mantêm as 12 aulas e seus temas, dando à atividade visual e à conversa uma função específica.
 
-Esta entrega é de planejamento: não houve alteração de React, props, CSS, áudio, imagem ou publicação. A copy final de cada diálogo/áudio e os critérios de resposta factual são preparados ao implementar a respectiva aula, com esta proposta como roteiro. Não se declara inspeção visual de sessenta aulas interativas nem domínio de nível obtido apenas por completar doze aulas.
+Esta entrega é de planejamento, com pilotos privados dos componentes existentes: não houve alteração de React, props, CSS, áudio, imagem ou publicação. A copy final de cada diálogo/áudio e os critérios de resposta factual são preparados ao implementar a respectiva aula, com esta proposta como roteiro. Não se declara inspeção visual de sessenta aulas interativas nem domínio de nível obtido apenas por completar doze aulas.
 
 Referências locais e registro da revisão: [epic de planejamento77](../../epics/course-planning77/plan.md). Os JSONs de dados são uma versão estruturada do mesmo plano, para manter texto e futura implementação coerentes.
+
+## Validação antes da implementação
+
+A [revisão78](VALIDACAO.md) registra os ajustes nos 60 planos, os dados mínimos de cada missão, a adequação por nível e os limites observados nos pilotos de interface. Cada arquivo individual e o JSON já incorporam essas decisões; as faixas de texto são propostas de autoria, não obrigação de alongar material válido.
