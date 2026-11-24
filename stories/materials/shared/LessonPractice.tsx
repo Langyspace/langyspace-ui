@@ -77,7 +77,9 @@ function PreparedView({
         aria-label="Ouvir o enunciado"
         variant="brand"
         size="sm"
-        aria-pressed={speech.playingId === id && !speech.paused}
+        data-audio-playing={
+          (speech.playingId === id && !speech.paused) || undefined
+        }
         onClick={() => {
           clearCorrection()
           speech.speak([recording])
