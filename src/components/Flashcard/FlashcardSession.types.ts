@@ -1,4 +1,5 @@
 import type { ComponentPropsWithRef, ReactNode, Ref } from 'react'
+import type { PictureRegion } from '../../internal/PictureImage.types'
 import type { FlashcardProgressProps } from './FlashcardProgress.types'
 import type { FlashcardGrade } from './FlashcardRatingButton.types'
 import type { FlashcardSwiperExit } from './FlashcardSwiper.types'
@@ -11,7 +12,7 @@ export interface FlashcardSessionCard {
   translation: ReactNode
   example?: ReactNode
   backExample?: ReactNode
-  image?: { src: string; alt?: string }
+  image?: { src: string; alt?: string; region?: PictureRegion }
   emoji?: ReactNode
 }
 

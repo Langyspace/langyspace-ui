@@ -311,16 +311,22 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Sequência de imagens usa o ImageSortBoard canônico e permite seleção mais destino pelo teclado. A ordenação não substitui a explicação oral; separar o momento de organizar do momento de contar quando ambos não couberem com clareza.
 - O mínimo de seis itens refere-se ao bloco inicial de vocabulário da aula. Grupos semânticos de introdução podem ser apresentados em páginas consecutivas antes da primeira conversação; não completar a contagem com palavras que só aparecem no final.
 
-
 ### 24/11/2026 — Homework screens and centred listening
 
 - When homework is shown inside a phone, render the actual Student exercise components on their light application canvas. A list of assignments is not a substitute for the exercise screen. Reuse approved lesson content/media and do not invent published destinations or saved progress.
 - A closing with Flashcards, Shadowing and a voice note has one title/instruction above three canonical phone frames; the message assignment uses the current teacher identity. Narrow screens select one device without shrinking all three to illegible sizes.
 - Listening with a phone and comprehension uses balanced centred tracks when requested; default legacy layouts remain unchanged.
 
-
 ### Enquadramento de reunião e pontos de vocabulário — feedback de 24/11
 
 - Em vídeos ilustrados, preencher a área do tile com o fundo da cena sem cortar rostos; usar a variação de fundo do MeetingFrame e o mesmo badge de nome nos dois participantes
 - O nome é uma sobreposição do tile, não uma faixa de espaço vazio abaixo da foto
 - Hotspots de roupa devem apontar para a peça ou o cabide, evitando regiões íntimas do corpo do personagem
+
+### 24/11/2026 — Consistent homework across the course
+
+- Every regular or extra lesson closes with a clear class-complete title, one short instruction and the same three-device gallery: two topic-specific Student practices and a WhatsApp voice-note assignment for the teacher. Trial lessons keep the approved enrollment closing.
+- Flashcards, shadowing and quiz previews compose the canonical Student session renderers from the UI Library. Student, Teacher simulation and homework supply data/actions; they must not maintain parallel exercise-screen markup. Preserve lesson images, real speaker portraits, accents, translations and recorded audio. Use the same phone/application viewport and a selector on narrow screens.
+- Activate a portal destination only after the exact activity payload and media have real readback receipts in that environment. Preview interactions never claim to save learner progress or send a message. Keep environment availability explicit; a staging receipt cannot enable a production link.
+- A six-question grammar quiz varies its mechanics: two contextual gaps, two grammatical judgments and two form choices. Each item references grammar actually taught in that lesson. Narrate the instruction and relevant English sentence, preserve a recording of the correct English form, and explain the reason in clear conversational Portuguese. A grammatical judgment can display a whole sentence because the task is to judge its form, not copy an answer from a reading prompt.
+- Preserve the regular-course shadowing allocation of 42 American-accent activities and 18 other accents (70/30 by activity). Reusing valid recordings in extra lessons does not require regenerating voices to force a fractional percentage across a different denominator.

@@ -1,0 +1,248 @@
+{
+  "key": "b1-05",
+  "code": "B1.05",
+  "title": "He said he’d come on Thursday",
+  "first": {
+    "id": "course-practice-b1-05-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-05-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "told"
+          },
+          {
+            "id": "a",
+            "text": "told to"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Com tell, a pessoa que recebeu a informação vem diretamente depois: told me. Não colocamos to entre told e me. Por isso: “He told me the time”"
+          },
+          "wrong": {
+            "title": "Com tell, a pessoa que recebeu a informação vem diretamente depois: told me.",
+            "message": "Não colocamos to entre told e me. Por isso: “He told me the time”"
+          }
+        },
+        "context": "He ___ me the time"
+      },
+      {
+        "id": "course-b1-05-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Podemos usar said e já começar o que foi dito. Se quisermos mencionar o ouvinte, seria said to me, não said me. Por isso: “She said she was busy”"
+          },
+          "wrong": {
+            "title": "Podemos usar said e já começar o que foi dito.",
+            "message": "Se quisermos mencionar o ouvinte, seria said to me, não said me. Por isso: “She said she was busy”"
+          }
+        },
+        "context": "She said she was busy"
+      },
+      {
+        "id": "course-b1-05-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "He asked us leave a key"
+          },
+          {
+            "id": "a",
+            "text": "He asked us to leave a key"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para transmitir um pedido, usamos asked, a pessoa e to mais o verbo. Esse to precisa aparecer antes de leave. Por isso: “He asked us to leave a key”"
+          },
+          "wrong": {
+            "title": "Para transmitir um pedido, usamos asked, a pessoa e to mais o verbo.",
+            "message": "Esse to precisa aparecer antes de leave. Por isso: “He asked us to leave a key”"
+          }
+        }
+      },
+      {
+        "id": "course-b1-05-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "not to call"
+          },
+          {
+            "id": "a",
+            "text": "to not calling"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para transmitir um pedido negativo, a construção ensinada é asked me not to mais o verbo básico. Aqui, não usamos calling. Por isso: “She asked me not to call early”"
+          },
+          "wrong": {
+            "title": "Para transmitir um pedido negativo, a construção ensinada é asked me not to mais o verbo básico.",
+            "message": "Aqui, não usamos calling. Por isso: “She asked me not to call early”"
+          }
+        },
+        "context": "She asked me ___ early"
+      },
+      {
+        "id": "course-b1-05-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de would, o verbo fica na forma básica. Então usamos come, mesmo que o relato comece com said. Por isso: “He said he would come on Thursday”"
+          },
+          "wrong": {
+            "title": "Depois de would, o verbo fica na forma básica.",
+            "message": "Então usamos come, mesmo que o relato comece com said. Por isso: “He said he would come on Thursday”"
+          }
+        },
+        "context": "He said he would came on Thursday"
+      },
+      {
+        "id": "course-b1-05-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Kim told Ana that she needed a key"
+          },
+          {
+            "id": "a",
+            "text": "Kim told that she needed a key"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Quando usamos told para transmitir informação, precisamos dizer a quem: told Ana. Sem essa pessoa, a construção fica incompleta. Por isso: “Kim told Ana that she needed a key”"
+          },
+          "wrong": {
+            "title": "Quando usamos told para transmitir informação, precisamos dizer a quem: told Ana.",
+            "message": "Sem essa pessoa, a construção fica incompleta. Por isso: “Kim told Ana that she needed a key”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-05-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-05.shadowing.01",
+        "displayText": "I spoke to the building manager about the leak",
+        "translation": "Conversei com o gerente do prédio sobre o vazamento",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b1-05.shadowing.02",
+        "displayText": "Good. What did he say?",
+        "translation": "Ótimo. O que ele disse?",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b1-05.shadowing.03",
+        "displayText": "He said the plumber would come on Thursday morning",
+        "translation": "Ele disse que o encanador viria na manhã de quinta-feira",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b1-05.shadowing.04",
+        "displayText": "Did he say what time?",
+        "translation": "Ele disse a que horas?",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b1-05.shadowing.05",
+        "displayText": "Yes. He told me the appointment was between nine and eleven",
+        "translation": "Sim. Ele me disse que a consulta seria entre nove e onze horas",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b1-05.shadowing.06",
+        "displayText": "I’ll be at work. Did he ask us to leave a spare key?",
+        "translation": "Estarei no trabalho. Ele pediu para deixarmos uma chave reserva?",
+        "speakerId": "arjun-mehta"
+      },
+      {
+        "id": "b1-05.shadowing.07",
+        "displayText": "He did. He asked us to leave it at reception",
+        "translation": "Sim, ele fez isso. Pediu que deixássemos na recepção",
+        "speakerId": "priya-nair"
+      },
+      {
+        "id": "b1-05.shadowing.08",
+        "displayText": "Okay. I’ll do that before I leave",
+        "translation": "Certo. Farei isso antes de ir embora",
+        "speakerId": "arjun-mehta"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "priya-nair",
+        "name": "Priya",
+        "avatarUrl": "/flashcards/course-characters/priya-nair/image.webp",
+        "accentCode": "en-IN",
+        "accentLabel": "English · India"
+      },
+      {
+        "id": "arjun-mehta",
+        "name": "Arjun",
+        "avatarUrl": "/flashcards/course-characters/arjun-mehta/image.webp",
+        "accentCode": "en-IN",
+        "accentLabel": "English · India"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: pass on a request accurately and repair a misunderstanding",
+    "duration": "60–90 seconds",
+    "starters": [
+      "He said that…",
+      "He told me that…",
+      "He asked us to…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "key": "b2-04",
+  "code": "B2.04",
+  "title": "Someone must have been here",
+  "first": {
+    "id": "course-practice-b2-04-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-04-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "moved"
+          },
+          {
+            "id": "b",
+            "text": "move"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Uma dedução sobre o passado usa must have mais o particípio. Aqui precisamos de moved, não move. Por isso: “Someone must have moved it”"
+          },
+          "wrong": {
+            "title": "Uma dedução sobre o passado usa must have mais o particípio.",
+            "message": "Aqui precisamos de moved, não move. Por isso: “Someone must have moved it”"
+          }
+        },
+        "context": "Someone must have ___ it"
+      },
+      {
+        "id": "course-b2-04-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para indicar que algo pode ter sido deixado antes, usamos might have been left. Been completa essa estrutura; being não entra no lugar dele. Por isso: “The receipt might have been left earlier”"
+          },
+          "wrong": {
+            "title": "Para indicar que algo pode ter sido deixado antes, usamos might have been left.",
+            "message": "Been completa essa estrutura; being não entra no lugar dele. Por isso: “The receipt might have been left earlier”"
+          }
+        },
+        "context": "The receipt might have been left earlier"
+      },
+      {
+        "id": "course-b2-04-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "She can’t has used that key"
+          },
+          {
+            "id": "a",
+            "text": "She can’t have used that key"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Can’t é seguido de have, sem concordar com she. Não trocamos esse have por has depois de um modal. Por isso: “She can’t have used that key”"
+          },
+          "wrong": {
+            "title": "Can’t é seguido de have, sem concordar com she.",
+            "message": "Não trocamos esse have por has depois de um modal. Por isso: “She can’t have used that key”"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "taken"
+          },
+          {
+            "id": "a",
+            "text": "took"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Took é o passado simples, mas depois de have precisamos do particípio taken. É ele que completa a hipótese sobre o passado. Por isso: “They might have taken the spare key”"
+          },
+          "wrong": {
+            "title": "Took é o passado simples, mas depois de have precisamos do particípio taken.",
+            "message": "É ele que completa a hipótese sobre o passado. Por isso: “They might have taken the spare key”"
+          }
+        },
+        "context": "They might have ___ the spare key"
+      },
+      {
+        "id": "course-b2-04-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta sobre uma possibilidade passada, usamos could, sujeito, have e particípio. Had não entra depois de could. Por isso: “Could someone have opened the window?”"
+          },
+          "wrong": {
+            "title": "Na pergunta sobre uma possibilidade passada, usamos could, sujeito, have e particípio.",
+            "message": "Had não entra depois de could. Por isso: “Could someone have opened the window?”"
+          }
+        },
+        "context": "Could someone had opened the window?"
+      },
+      {
+        "id": "course-b2-04-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The door must have been open"
+          },
+          {
+            "id": "b",
+            "text": "The door must have be open"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para falar de como a porta deve ter estado, usamos must have been. Depois de have, be precisa virar been. Por isso: “The door must have been open”"
+          },
+          "wrong": {
+            "title": "Para falar de como a porta deve ter estado, usamos must have been.",
+            "message": "Depois de have, be precisa virar been. Por isso: “The door must have been open”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-04-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-04.shadowing.01",
+        "displayText": "Someone must have been here. The plant has been moved",
+        "translation": "Alguém deve ter estado aqui. Mudaram a planta de lugar",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.02",
+        "displayText": "Maybe, but let’s check the record before deciding who it was",
+        "translation": "Talvez, mas vamos conferir o registro antes de decidir quem foi",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.03",
+        "displayText": "A spare key was used at five. There’s also a receipt from five twenty",
+        "translation": "Usaram uma chave reserva às cinco. Também tem um recibo das cinco e vinte",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.04",
+        "displayText": "That suggests a visit, but the receipt might have been left by someone else earlier",
+        "translation": "Isso sugere uma visita, mas o recibo pode ter sido deixado antes por outra pessoa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.05",
+        "displayText": "Could someone have come through the window?",
+        "translation": "Alguém poderia ter entrado pela janela?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.06",
+        "displayText": "It’s closed now. That doesn’t prove it was closed the whole afternoon",
+        "translation": "Ela está fechada agora. Isso não prova que ficou fechada a tarde inteira",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.07",
+        "displayText": "Good point. We shouldn’t treat a current state as a complete history",
+        "translation": "Bem lembrado. Não devemos tratar o estado atual como toda a história",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.08",
+        "displayText": "Who had permission to use the key?",
+        "translation": "Quem tinha autorização para usar a chave?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.09",
+        "displayText": "The neighbour was going to water the plants, but I don’t know whether she came",
+        "translation": "A vizinha ia regar as plantas, mas não sei se veio",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.10",
+        "displayText": "Then I’d ask her first. The camera record could be another check if needed",
+        "translation": "Então eu perguntaria primeiro a ela. O registro da câmera seria outra verificação, se necessário",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.11",
+        "displayText": "So our strongest explanation is a permitted visit, not a confirmed identity yet",
+        "translation": "Então a explicação mais forte é uma visita autorizada, mas sem identidade confirmada",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.12",
+        "displayText": "Exactly. We can update that conclusion when we have more than a clue",
+        "translation": "Exatamente. Podemos atualizar a conclusão quando tivermos mais do que uma pista",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: test explanations about a past event using evidence and uncertainty",
+    "duration": "90–120 seconds",
+    "starters": [
+      "Someone must have…",
+      "It might have been…",
+      "It can’t have…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

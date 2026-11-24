@@ -1,0 +1,272 @@
+{
+  "key": "b2-08",
+  "code": "B2.08",
+  "title": "The apartment, which has a balcony",
+  "first": {
+    "id": "course-practice-b2-08-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-08-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "who"
+          },
+          {
+            "id": "a",
+            "text": "which"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A oração está identificando uma pessoa. Nesse caso usamos who; which é usado para coisas nessa construção. Por isso: “The person who lives here works from home”"
+          },
+          "wrong": {
+            "title": "A oração está identificando uma pessoa.",
+            "message": "Nesse caso usamos who; which é usado para coisas nessa construção. Por isso: “The person who lives here works from home”"
+          }
+        },
+        "context": "The person ___ lives here works from home"
+      },
+      {
+        "id": "course-b2-08-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O that já ocupa o lugar do sujeito dentro da oração. Acrescentar it faria esse sujeito aparecer duas vezes. Por isso: “The flat that has a balcony is available”"
+          },
+          "wrong": {
+            "title": "O that já ocupa o lugar do sujeito dentro da oração.",
+            "message": "Acrescentar it faria esse sujeito aparecer duas vezes. Por isso: “The flat that has a balcony is available”"
+          }
+        },
+        "context": "The flat that has a balcony is available"
+      },
+      {
+        "id": "course-b2-08-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Flat C, that has a balcony, is available"
+          },
+          {
+            "id": "b",
+            "text": "Flat C, which has a balcony, is available"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "As vírgulas mostram que estamos acrescentando uma informação sobre o apartamento. Nessa oração usamos which, não that. Por isso: “Flat C, which has a balcony, is available”"
+          },
+          "wrong": {
+            "title": "As vírgulas mostram que estamos acrescentando uma informação sobre o apartamento.",
+            "message": "Nessa oração usamos which, não that. Por isso: “Flat C, which has a balcony, is available”"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "have"
+          },
+          {
+            "id": "b",
+            "text": "has"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O verbo da oração se refere a flats, no plural. Por isso usamos have, não has. Por isso: “The flats that have a study cost more”"
+          },
+          "wrong": {
+            "title": "O verbo da oração se refere a flats, no plural.",
+            "message": "Por isso usamos have, não has. Por isso: “The flats that have a study cost more”"
+          }
+        },
+        "context": "The flats that ___ a study cost more"
+      },
+      {
+        "id": "course-b2-08-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui comentamos a ideia anterior inteira: ter um escritório facilita o trabalho. Para fazer essa ligação, usamos which, não what. Por isso: “The flat has a study, which makes working easier”"
+          },
+          "wrong": {
+            "title": "Aqui comentamos a ideia anterior inteira: ter um escritório facilita o trabalho.",
+            "message": "Para fazer essa ligação, usamos which, não what. Por isso: “The flat has a study, which makes working easier”"
+          }
+        },
+        "context": "The flat has a study, what makes working easier"
+      },
+      {
+        "id": "course-b2-08-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Ana, who works from home, needs a study"
+          },
+          {
+            "id": "a",
+            "text": "Ana, which works from home, needs a study"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A informação extra é sobre Ana, uma pessoa. Por isso usamos who nessa oração, mesmo com as vírgulas. Por isso: “Ana, who works from home, needs a study”"
+          },
+          "wrong": {
+            "title": "A informação extra é sobre Ana, uma pessoa.",
+            "message": "Por isso usamos who nessa oração, mesmo com as vírgulas. Por isso: “Ana, who works from home, needs a study”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-08.shadowing.01",
+        "displayText": "Which apartment would you recommend for this brief?",
+        "translation": "Qual apartamento você recomendaria para este perfil?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.02",
+        "displayText": "The person who works from home needs a usable work area, but location matters too",
+        "translation": "A pessoa que trabalha de casa precisa de espaço para trabalhar, mas a localização também importa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.03",
+        "displayText": "A is near the metro. B has more space, although it’s further away",
+        "translation": "O A é perto do metrô. O B tem mais espaço, embora fique mais longe",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.04",
+        "displayText": "And C, which has a balcony, is between them in terms of distance",
+        "translation": "E o C, que tem varanda, fica entre os dois em termos de distância",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.05",
+        "displayText": "Is the balcony essential or just attractive?",
+        "translation": "A varanda é essencial ou só atraente?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.06",
+        "displayText": "Attractive. The fixed requirements are a work area and a total budget under a thousand",
+        "translation": "Atraente. Os requisitos fixos são espaço para trabalhar e orçamento total abaixo de mil",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.07",
+        "displayText": "Do all the listings include the maintenance fee?",
+        "translation": "Todos os anúncios incluem a taxa de manutenção?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.08",
+        "displayText": "A and B state a total. C’s listing doesn’t confirm the fee",
+        "translation": "O A e o B informam um total. O anúncio do C não confirma a taxa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.09",
+        "displayText": "Then we shouldn’t compare the advertised rents as if they were the full costs",
+        "translation": "Então não devemos comparar os aluguéis anunciados como se fossem os custos totais",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.10",
+        "displayText": "Agreed. I’d arrange a viewing of A and ask C’s landlord about the missing fee",
+        "translation": "Concordo. Eu marcaria uma visita ao A e perguntaria ao proprietário do C sobre a taxa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.11",
+        "displayText": "Would B still be an alternative if the commute were manageable?",
+        "translation": "O B continuaria sendo uma alternativa se o trajeto fosse viável?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.12",
+        "displayText": "Yes. It offers more space, which could matter more than being right by the metro",
+        "translation": "Sim. Oferece mais espaço, o que pode importar mais do que ficar ao lado do metrô",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: add relevant details to a recommendation and check the full cost",
+    "duration": "90–120 seconds",
+    "starters": [
+      "The person who…",
+      "The…, which…",
+      "The place where…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

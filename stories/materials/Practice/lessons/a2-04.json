@@ -1,0 +1,248 @@
+{
+  "key": "a2-04",
+  "code": "A2.04",
+  "title": "Are you doing anything on Saturday?",
+  "first": {
+    "id": "course-practice-a2-04-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-04-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "meeting"
+          },
+          {
+            "id": "b",
+            "text": "meet"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui você está falando de um encontro marcado. Use am com meeting; am meet deixa a construção incompleta. Por isso: “I’m meeting Kim on Saturday”"
+          },
+          "wrong": {
+            "title": "Aqui você está falando de um encontro marcado.",
+            "message": "Use am com meeting; am meet deixa a construção incompleta. Por isso: “I’m meeting Kim on Saturday”"
+          }
+        },
+        "context": "I’m ___ Kim on Saturday"
+      },
+      {
+        "id": "course-a2-04-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Going to apresenta a intenção, e o verbo seguinte fica na forma básica. Por isso dizemos try, não trying. Por isso: “I’m going to try yoga”"
+          },
+          "wrong": {
+            "title": "Going to apresenta a intenção, e o verbo seguinte fica na forma básica.",
+            "message": "Por isso dizemos try, não trying. Por isso: “I’m going to try yoga”"
+          }
+        },
+        "context": "I’m going to try yoga"
+      },
+      {
+        "id": "course-a2-04-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do you going to the concert?"
+          },
+          {
+            "id": "b",
+            "text": "Are you going to the concert?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Essa pergunta usa o presente contínuo para um compromisso. Comece com are you going, não do you going. Por isso: “Are you going to the concert?”"
+          },
+          "wrong": {
+            "title": "Essa pergunta usa o presente contínuo para um compromisso.",
+            "message": "Comece com are you going, não do you going. Por isso: “Are you going to the concert?”"
+          }
+        }
+      },
+      {
+        "id": "course-a2-04-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "isn’t"
+          },
+          {
+            "id": "b",
+            "text": "doesn’t"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para negar essa intenção, colocamos not no verbo be: isn’t going to. Não usamos doesn’t antes de going. Por isso: “She isn’t going to join us”"
+          },
+          "wrong": {
+            "title": "Para negar essa intenção, colocamos not no verbo be: isn’t going to.",
+            "message": "Não usamos doesn’t antes de going. Por isso: “She isn’t going to join us”"
+          }
+        },
+        "context": "She ___ going to join us"
+      },
+      {
+        "id": "course-a2-04-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A pergunta é sobre uma intenção para domingo. Coloque are antes de you e mantenha going to do depois. Por isso: “What are you going to do on Sunday?”"
+          },
+          "wrong": {
+            "title": "A pergunta é sobre uma intenção para domingo.",
+            "message": "Coloque are antes de you e mantenha going to do depois. Por isso: “What are you going to do on Sunday?”"
+          }
+        },
+        "context": "What you are going to do on Sunday?"
+      },
+      {
+        "id": "course-a2-04-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "I’d love to come, but I’m busy"
+          },
+          {
+            "id": "a",
+            "text": "I’d love to coming, but I’m busy"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de I’d love to, usamos o verbo básico. Come funciona aqui; coming não completa essa estrutura. Por isso: “I’d love to come, but I’m busy”"
+          },
+          "wrong": {
+            "title": "Depois de I’d love to, usamos o verbo básico.",
+            "message": "Come funciona aqui; coming não completa essa estrutura. Por isso: “I’d love to come, but I’m busy”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-04-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-04.shadowing.01",
+        "displayText": "Are you doing anything on Saturday?",
+        "translation": "Você tem algum plano para sábado?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.02",
+        "displayText": "I’m meeting a friend in the morning",
+        "translation": "Vou encontrar um amigo amanhã de manhã",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.03",
+        "displayText": "I’m going to visit the food festival. Want to come?",
+        "translation": "Vou visitar o festival gastronômico. Quer vir?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.04",
+        "displayText": "That sounds good. What time are you going?",
+        "translation": "Parece ótimo. A que horas você vai?",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.05",
+        "displayText": "Around two. We can meet by the entrance",
+        "translation": "Por volta das duas. Podemos nos encontrar na entrada",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.06",
+        "displayText": "Great. I’m going to get lunch there",
+        "translation": "Ótimo. Vou almoçar lá",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.07",
+        "displayText": "Me too. Shall we meet at half past one?",
+        "translation": "Eu também. Podemos nos encontrar à uma e meia?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.08",
+        "displayText": "Yes. Half past one is perfect",
+        "translation": "Sim. Uma e meia é perfeito",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: invite someone, explain a conflict and find another time",
+    "duration": "45–60 seconds",
+    "starters": [
+      "I’m… on Saturday",
+      "I’m going to…",
+      "I’d love to, but…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

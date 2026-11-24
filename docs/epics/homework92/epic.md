@@ -1,0 +1,7 @@
+# Complete all lesson homework at the InfluencerRoutine quality level
+
+User asks to generate/finish all final homework pages and links with the quality of the approved InfluencerRoutine. Current published baseline UI2d5f47f5,Teacher51045288,Studentdc2e25f8. Impact direct. Reuse the exact Student session presentation owners; no new phone clones. Default scope:60 regular lessons plus the two non-trial extras, retaining the three trial enrollment closings. Three phones: two actual lesson practices and a topic-specific voice-note assignment with current teacher identity. Existing approved influencer layout remains the reference.
+
+Prepared legacy homework85/86/87 contains120 unpublished activities (29 flashcards,31 quizzes,60 shadowings),193+190 original TTS calls and accent split42US/18other. Do not regenerate valid assets or change the immutable illustration prompt. Preserve dirty older worktrees; copied explicit data/media and saved binary diffs privately. New content must keep grammar taught in its own lesson and vary quiz mechanics; explanations in PT-BR, narration retained/generated for exact changed prompts.
+
+Staging only; no production, IAM grants, payment/enrollment changes or external messages. Real per-environment activity/media readback is required before enabling deep links. Backend/Student adapters may need the prepared C1/speaker/context contract; preserve scope and qualify through the canonical release coordinator, never raw publisher or fabricated workflow.

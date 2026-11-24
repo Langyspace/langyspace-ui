@@ -3992,6 +3992,39 @@ export const publicComponentContracts = [
 
   {
     browserSmoke: complete,
+    exportName: 'QuizSession',
+    interactive: true,
+    ownerPath: 'src/components/Quiz/QuizSession.tsx',
+    runtimeMarker: 'lsui-sc-quiz-session',
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Quiz/QuizSession.stories.tsx',
+      title: 'Quiz/QuizSession',
+    },
+    test: { ...complete, path: 'test/components/Quiz/QuizSession.test.tsx' },
+    reference: {
+      propsPath: 'src/components/Quiz/QuizSession.types.ts',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'quizsession',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/QuizPlayer.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/QuizPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+
+  {
+    browserSmoke: complete,
     exportName: 'QuizSessionHeader',
     interactive: true,
     ownerPath: 'src/components/Quiz/QuizSessionHeader.tsx',

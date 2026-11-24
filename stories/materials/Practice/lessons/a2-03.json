@@ -1,0 +1,248 @@
+{
+  "key": "a2-03",
+  "code": "A2.03",
+  "title": "Sorry I’m late!",
+  "first": {
+    "id": "course-practice-a2-03-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-03-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "was"
+          },
+          {
+            "id": "b",
+            "text": "were"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Com I, a forma passada de be aqui é was. Depois dela, waiting mostra que a ação já estava acontecendo. Por isso: “I was waiting for the bus”"
+          },
+          "wrong": {
+            "title": "Com I, a forma passada de be aqui é was.",
+            "message": "Depois dela, waiting mostra que a ação já estava acontecendo. Por isso: “I was waiting for the bus”"
+          }
+        },
+        "context": "I ___ waiting for the bus"
+      },
+      {
+        "id": "course-a2-03-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "They pede were, não was. A estrutura para essa ação em andamento é were mais o verbo com ing. Por isso: “They were waiting outside”"
+          },
+          "wrong": {
+            "title": "They pede were, não was.",
+            "message": "A estrutura para essa ação em andamento é were mais o verbo com ing. Por isso: “They were waiting outside”"
+          }
+        },
+        "context": "They was waiting outside"
+      },
+      {
+        "id": "course-a2-03-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "b",
+            "text": "What did you doing?"
+          },
+          {
+            "id": "a",
+            "text": "What were you doing?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Você está perguntando o que a pessoa estava fazendo. Por isso usamos were you doing, sem misturar did com doing. Por isso: “What were you doing?”"
+          },
+          "wrong": {
+            "title": "Você está perguntando o que a pessoa estava fazendo.",
+            "message": "Por isso usamos were you doing, sem misturar did com doing. Por isso: “What were you doing?”"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "waiting"
+          },
+          {
+            "id": "a",
+            "text": "wait"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A espera já estava acontecendo quando a chuva começou. Waiting vai com was; o acontecimento que interrompe vem no passado simples. Por isso: “I was waiting when it started raining”"
+          },
+          "wrong": {
+            "title": "A espera já estava acontecendo quando a chuva começou.",
+            "message": "Waiting vai com was; o acontecimento que interrompe vem no passado simples. Por isso: “I was waiting when it started raining”"
+          }
+        },
+        "context": "I was ___ when it started raining"
+      },
+      {
+        "id": "course-a2-03-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para negar essa ação em andamento, usamos wasn’t driving. Didn’t seria seguido de um verbo básico, não de driving. Por isso: “She wasn’t driving when I called”"
+          },
+          "wrong": {
+            "title": "Para negar essa ação em andamento, usamos wasn’t driving.",
+            "message": "Didn’t seria seguido de um verbo básico, não de driving. Por isso: “She wasn’t driving when I called”"
+          }
+        },
+        "context": "She wasn’t driving when I called"
+      },
+      {
+        "id": "course-a2-03-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "We were walking when the rain started"
+          },
+          {
+            "id": "a",
+            "text": "We were walking when the rain start"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A caminhada estava em andamento, e a chuva começou durante ela. Esse acontecimento pontual fica no passado simples: started. Por isso: “We were walking when the rain started”"
+          },
+          "wrong": {
+            "title": "A caminhada estava em andamento, e a chuva começou durante ela.",
+            "message": "Esse acontecimento pontual fica no passado simples: started. Por isso: “We were walking when the rain started”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-03-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-03.shadowing.01",
+        "displayText": "You’re here! Are you all right?",
+        "translation": "Você chegou! Está tudo bem?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.02",
+        "displayText": "Yes, sorry I’m late. I was waiting for the bus when it started raining",
+        "translation": "Sim, desculpe o atraso. Eu estava esperando o ônibus quando começou a chover",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.03",
+        "displayText": "Oh no! Did you have an umbrella?",
+        "translation": "Ah, não! Você estava com guarda-chuva?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.04",
+        "displayText": "No. I went into a shop, and then I missed the bus",
+        "translation": "Não. Entrei em uma loja e depois perdi o ônibus",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.05",
+        "displayText": "What did you do after that?",
+        "translation": "O que você fez depois?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.06",
+        "displayText": "I took the next bus, but it was very slow",
+        "translation": "Peguei o ônibus seguinte, mas ele estava muito lento",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.07",
+        "displayText": "Don’t worry. We can still have lunch",
+        "translation": "Não se preocupe. Ainda podemos almoçar",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.08",
+        "displayText": "Thanks for waiting. Next time I’ll leave earlier!",
+        "translation": "Obrigada por esperar. Da próxima vez vou sair mais cedo!",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: explain an interruption and apologise for a delay",
+    "duration": "45–60 seconds",
+    "starters": [
+      "I was… when…",
+      "Sorry I’m late…",
+      "I missed…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

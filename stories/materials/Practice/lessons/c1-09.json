@@ -1,0 +1,272 @@
+{
+  "key": "c1-09",
+  "code": "C1.09",
+  "title": "It’s bound to get worse",
+  "first": {
+    "id": "course-practice-c1-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-09-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "rise"
+          },
+          {
+            "id": "b",
+            "text": "rising"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Bound to indica uma previsão bem forte e é seguido do verbo básico. Por isso usamos rise, não rising. Por isso: “Demand is bound to rise”"
+          },
+          "wrong": {
+            "title": "Bound to indica uma previsão bem forte e é seguido do verbo básico.",
+            "message": "Por isso usamos rise, não rising. Por isso: “Demand is bound to rise”"
+          }
+        },
+        "context": "Demand is bound to ___"
+      },
+      {
+        "id": "course-c1-09-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A construção para essa previsão é likely to mais o verbo. O to precisa aparecer antes de increase. Por isso: “Demand is likely to increase”"
+          },
+          "wrong": {
+            "title": "A construção para essa previsão é likely to mais o verbo.",
+            "message": "O to precisa aparecer antes de increase. Por isso: “Demand is likely to increase”"
+          }
+        },
+        "context": "Demand is likely increase"
+      },
+      {
+        "id": "course-c1-09-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "These figures unlikely to improve"
+          },
+          {
+            "id": "b",
+            "text": "These figures are unlikely to improve"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Unlikely é um adjetivo nessa frase, então precisamos de are antes dele. Figures é plural, por isso o auxiliar é are. Por isso: “These figures are unlikely to improve”"
+          },
+          "wrong": {
+            "title": "Unlikely é um adjetivo nessa frase, então precisamos de are antes dele.",
+            "message": "Figures é plural, por isso o auxiliar é are. Por isso: “These figures are unlikely to improve”"
+          }
+        }
+      },
+      {
+        "id": "course-c1-09-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "start"
+          },
+          {
+            "id": "b",
+            "text": "starting"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para um desenvolvimento previsto, usamos set to mais o verbo básico. Aqui fica start, não starting. Por isso: “The service is set to start next month”"
+          },
+          "wrong": {
+            "title": "Para um desenvolvimento previsto, usamos set to mais o verbo básico.",
+            "message": "Aqui fica start, não starting. Por isso: “The service is set to start next month”"
+          }
+        },
+        "context": "The service is set to ___ next month"
+      },
+      {
+        "id": "course-c1-09-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Mesmo quando a intenção está no passado, going to recebe o verbo básico. Were muda o tempo da expectativa; recommend não vira recommended. Por isso: “We were going to recommend no action”"
+          },
+          "wrong": {
+            "title": "Mesmo quando a intenção está no passado, going to recebe o verbo básico.",
+            "message": "Were muda o tempo da expectativa; recommend não vira recommended. Por isso: “We were going to recommend no action”"
+          }
+        },
+        "context": "We were going to recommend no action"
+      },
+      {
+        "id": "course-c1-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "It is likely that demand will rise"
+          },
+          {
+            "id": "a",
+            "text": "It is likely that demand to rise"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de that, precisamos de uma oração com verbo conjugado ou auxiliar. Demand will rise funciona; demand to rise não completa essa oração. Por isso: “It is likely that demand will rise”"
+          },
+          "wrong": {
+            "title": "Depois de that, precisamos de uma oração com verbo conjugado ou auxiliar.",
+            "message": "Demand will rise funciona; demand to rise não completa essa oração. Por isso: “It is likely that demand will rise”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-09.shadowing.01",
+        "displayText": "Demand has risen for three months. It’s bound to get worse, isn’t it?",
+        "translation": "A demanda subiu por três meses. Com certeza vai piorar, não vai?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.02",
+        "displayText": "The figures suggest growth, but “bound to” is stronger than these three observations justify",
+        "translation": "Os números sugerem crescimento, mas “com certeza” é mais forte do que essas três observações justificam",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.03",
+        "displayText": "What would be a more defensible claim?",
+        "translation": "Qual afirmação seria mais defensável?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.04",
+        "displayText": "Demand is likely to rise if the same conditions continue. We should state that condition",
+        "translation": "É provável que a demanda suba se as mesmas condições continuarem. Devemos explicitar essa condição",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.05",
+        "displayText": "The proposal says extra transport is set to start next month",
+        "translation": "A proposta diz que o transporte extra deve começar no próximo mês",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.06",
+        "displayText": "Is that a confirmed service plan, or just an assumption in the projection?",
+        "translation": "É um plano de serviço confirmado ou só uma premissa da projeção?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.07",
+        "displayText": "The plan is confirmed, but the capacity estimate assumes it covers the period of highest demand",
+        "translation": "O plano está confirmado, mas a estimativa de capacidade presume que cobre o período de maior demanda",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.08",
+        "displayText": "Then timing matters as much as the headline number",
+        "translation": "Então o horário importa tanto quanto o número principal",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.09",
+        "displayText": "We were going to recommend no further action because the extra service looked sufficient",
+        "translation": "Íamos recomendar não fazer mais nada porque o serviço extra parecia suficiente",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.10",
+        "displayText": "I’d qualify that until we check the coverage. More total capacity may still leave a local gap",
+        "translation": "Eu colocaria uma ressalva até conferirmos a cobertura. Mais capacidade total ainda pode deixar uma lacuna específica",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.11",
+        "displayText": "Would monitoring the next month be too passive?",
+        "translation": "Monitorar o próximo mês seria passivo demais?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.12",
+        "displayText": "Not if we also check the affected time slot and define when we’ll change the plan",
+        "translation": "Não se também conferirmos o horário afetado e definirmos quando mudaremos o plano",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: match a prediction’s certainty to limited data and test its assumptions",
+    "duration": "90–120 seconds",
+    "starters": [
+      "… is likely to…",
+      "It’s bound to…",
+      "… is set to…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

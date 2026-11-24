@@ -1,0 +1,182 @@
+{
+  "key": "tema-frontend",
+  "code": "B1 Tech",
+  "title": "Tech · Frontend",
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "first": {
+    "id": "course-practice-tema-frontend-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-tema-frontend-v1",
+        "word": "a button",
+        "translation": "botão",
+        "example": "I click the button",
+        "exampleTranslation": "Clico no botão",
+        "imageSrc": "/course-practice/frontend/v_bt.webp",
+        "visualLabel": "a button",
+        "audioId": "course-tema-frontend-v1.front",
+        "backAudioId": "course-tema-frontend-v1.back"
+      },
+      {
+        "id": "course-tema-frontend-v2",
+        "word": "a form",
+        "translation": "formulário",
+        "example": "I’ve filled in the form",
+        "exampleTranslation": "Preenchi o formulário",
+        "imageSrc": "/course-practice/frontend/v_fm.svg",
+        "visualLabel": "a form",
+        "audioId": "course-tema-frontend-v2.front",
+        "backAudioId": "course-tema-frontend-v2.back"
+      },
+      {
+        "id": "course-tema-frontend-v3",
+        "word": "a menu",
+        "translation": "menu (o ≡)",
+        "example": "The menu doesn’t open on mobile",
+        "exampleTranslation": "O menu não abre no celular",
+        "imageSrc": "/course-practice/frontend/v_mn.svg",
+        "visualLabel": "a menu",
+        "audioId": "course-tema-frontend-v3.front",
+        "backAudioId": "course-tema-frontend-v3.back"
+      },
+      {
+        "id": "course-tema-frontend-v4",
+        "word": "a search bar",
+        "translation": "barra de busca",
+        "example": "I can’t see the search bar",
+        "exampleTranslation": "Não consigo ver a barra de busca",
+        "imageSrc": "/course-practice/frontend/v_sb.svg",
+        "visualLabel": "a search bar",
+        "audioId": "course-tema-frontend-v4.front",
+        "backAudioId": "course-tema-frontend-v4.back"
+      },
+      {
+        "id": "course-tema-frontend-v5",
+        "word": "a pop-up",
+        "translation": "janela que abre por cima",
+        "example": "The pop-up covers the button",
+        "exampleTranslation": "A janela cobre o botão",
+        "imageSrc": "/course-practice/frontend/v_pp.svg",
+        "visualLabel": "a pop-up",
+        "audioId": "course-tema-frontend-v5.front",
+        "backAudioId": "course-tema-frontend-v5.back"
+      },
+      {
+        "id": "course-tema-frontend-v6",
+        "word": "a checkbox",
+        "translation": "caixa de marcar",
+        "example": "Tick the checkbox before continuing",
+        "exampleTranslation": "Marque a caixa antes de continuar",
+        "imageSrc": "/course-practice/frontend/v_cb.svg",
+        "visualLabel": "a checkbox",
+        "audioId": "course-tema-frontend-v6.front",
+        "backAudioId": "course-tema-frontend-v6.back"
+      },
+      {
+        "id": "course-tema-frontend-v7",
+        "word": "a dropdown",
+        "translation": "lista que abre",
+        "example": "Choose an option from the dropdown",
+        "exampleTranslation": "Escolha uma opção na lista",
+        "imageSrc": "/course-practice/frontend/v_dd.svg",
+        "visualLabel": "a dropdown",
+        "audioId": "course-tema-frontend-v7.front",
+        "backAudioId": "course-tema-frontend-v7.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-tema-frontend-shadowing",
+    "phrases": [
+      {
+        "id": "tema-frontend.shadowing.01",
+        "speakerId": "kim",
+        "displayText": "Ana, do you have a minute? There’s a bug before the launch. The “Buy now” button doesn’t show on mobile",
+        "translation": "Ana, você tem um minuto? Tem um bug antes do lançamento. O botão “Buy now” não aparece no celular."
+      },
+      {
+        "id": "tema-frontend.shadowing.02",
+        "speakerId": "ana",
+        "displayText": "Oh no! On which phones?",
+        "translation": "Ah, não! Em quais celulares?"
+      },
+      {
+        "id": "tema-frontend.shadowing.03",
+        "speakerId": "kim",
+        "displayText": "On small screens. When the pop-up opens, it covers the button. I’ve tested it on three phones, and it breaks on all of them",
+        "translation": "Nas telas pequenas. Quando o pop-up abre, ele cobre o botão. Eu testei em três celulares, e quebra em todos."
+      },
+      {
+        "id": "tema-frontend.shadowing.04",
+        "speakerId": "ana",
+        "displayText": "Hmm. What if we move the button above the pictures?",
+        "translation": "Hum. E se a gente mudar o botão para cima das fotos?"
+      },
+      {
+        "id": "tema-frontend.shadowing.05",
+        "speakerId": "kim",
+        "displayText": "Good idea, but the design will change. Could you check it today? The launch is on Friday",
+        "translation": "Boa ideia, mas o design vai mudar. Você pode conferir hoje? O lançamento é na sexta."
+      },
+      {
+        "id": "tema-frontend.shadowing.06",
+        "speakerId": "ana",
+        "displayText": "Sure. I’ll send you a new version this afternoon. Have you talked to Leo?",
+        "translation": "Claro. Eu te mando uma versão nova hoje à tarde. Você já falou com o Leo?"
+      },
+      {
+        "id": "tema-frontend.shadowing.07",
+        "speakerId": "kim",
+        "displayText": "Not yet. I’ve written to him, but he hasn’t answered yet. He’s in a meeting",
+        "translation": "Ainda não. Eu escrevi para ele, mas ele ainda não respondeu. Ele está numa reunião."
+      },
+      {
+        "id": "tema-frontend.shadowing.08",
+        "speakerId": "ana",
+        "displayText": "OK. And what about the screen reader? Last week, it didn’t read the button",
+        "translation": "Tá. E o leitor de tela? Semana passada, ele não lia o botão."
+      },
+      {
+        "id": "tema-frontend.shadowing.09",
+        "speakerId": "kim",
+        "displayText": "I’ve already fixed that. Now it reads “Buy now”. I tested it yesterday with my eyes closed!",
+        "translation": "Isso eu já consertei. Agora ele lê “Buy now”. Eu testei ontem de olhos fechados!"
+      },
+      {
+        "id": "tema-frontend.shadowing.10",
+        "speakerId": "ana",
+        "displayText": "Ha! Perfect. Let’s fix the mobile version, and then we can deploy",
+        "translation": "Ha! Perfeito. Vamos consertar a versão do celular, e aí a gente pode publicar."
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ana",
+        "name": "Ana",
+        "accentCode": "en-US",
+        "accentLabel": "English · US",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp"
+      },
+      {
+        "id": "kim",
+        "name": "Kim",
+        "accentCode": "en-US",
+        "accentLabel": "English · US",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp"
+      }
+    ]
+  },
+  "voice": {
+    "prompt": "Tell me about a website or app you have worked on. Explain one problem, what you have fixed and what you still need to do",
+    "duration": "60–90 seconds",
+    "starters": [
+      "The problem is…",
+      "I’ve already…",
+      "I haven’t… yet"
+    ],
+    "closing": "Finish by asking your teacher to check one thing"
+  }
+}

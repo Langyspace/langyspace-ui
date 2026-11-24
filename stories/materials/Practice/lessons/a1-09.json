@@ -1,0 +1,236 @@
+{
+  "key": "a1-09",
+  "code": "A1.09",
+  "title": "Around the city",
+  "first": {
+    "id": "course-practice-a1-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a1-09-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "is"
+          },
+          {
+            "id": "b",
+            "text": "are"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Estamos falando de um café só, então usamos there is. Para dois ou mais lugares, usamos there are. Por isso: “There is a café”"
+          },
+          "wrong": {
+            "title": "Estamos falando de um café só, então usamos there is.",
+            "message": "Para dois ou mais lugares, usamos there are. Por isso: “There is a café”"
+          }
+        },
+        "context": "There ___ a café"
+      },
+      {
+        "id": "course-a1-09-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Two banks são dois bancos, então a frase está no plural. Nesse caso, precisamos de there are, não there is. Por isso: “There are two banks”"
+          },
+          "wrong": {
+            "title": "Two banks são dois bancos, então a frase está no plural.",
+            "message": "Nesse caso, precisamos de there are, não there is. Por isso: “There are two banks”"
+          }
+        },
+        "context": "There is two banks"
+      },
+      {
+        "id": "course-a1-09-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "Does there be a pharmacy near here?"
+          },
+          {
+            "id": "b",
+            "text": "Is there a pharmacy near here?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para perguntar se existe uma farmácia por perto, começamos com Is there. Não precisamos acrescentar does nessa pergunta. Por isso: “Is there a pharmacy near here?”"
+          },
+          "wrong": {
+            "title": "Para perguntar se existe uma farmácia por perto, começamos com Is there.",
+            "message": "Não precisamos acrescentar does nessa pergunta. Por isso: “Is there a pharmacy near here?”"
+          }
+        }
+      },
+      {
+        "id": "course-a1-09-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Are"
+          },
+          {
+            "id": "b",
+            "text": "Is"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Como a pergunta fala de dois cafés, usamos Are there. Is there fica para um lugar só. Por isso: “Are there two cafés on this street?”"
+          },
+          "wrong": {
+            "title": "Como a pergunta fala de dois cafés, usamos Are there.",
+            "message": "Is there fica para um lugar só. Por isso: “Are there two cafés on this street?”"
+          }
+        },
+        "context": "___ there two cafés on this street?"
+      },
+      {
+        "id": "course-a1-09-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Você está dando uma orientação direta. Comece com o verbo turn, sem colocar to antes dele. Por isso: “Turn right at the bank”"
+          },
+          "wrong": {
+            "title": "Você está dando uma orientação direta.",
+            "message": "Comece com o verbo turn, sem colocar to antes dele. Por isso: “Turn right at the bank”"
+          }
+        },
+        "context": "Turn right at the bank"
+      },
+      {
+        "id": "course-a1-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "There’s a park near the hotel"
+          },
+          {
+            "id": "a",
+            "text": "There a park near the hotel"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "There’s é a forma curta de there is. Esse is precisa aparecer: ele completa a ideia de que existe um parque ali. Por isso: “There’s a park near the hotel”"
+          },
+          "wrong": {
+            "title": "There’s é a forma curta de there is.",
+            "message": "Esse is precisa aparecer: ele completa a ideia de que existe um parque ali. Por isso: “There’s a park near the hotel”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-09.shadowing.01",
+        "displayText": "Excuse me. Is there a café near the hotel?",
+        "translation": "Com licença. Tem um café perto do hotel?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.02",
+        "displayText": "Yes, there is. Go straight and turn right at the first street",
+        "translation": "Sim. Siga em frente e vire à direita na primeira rua",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-09.shadowing.03",
+        "displayText": "Is it next to the pharmacy?",
+        "translation": "Fica ao lado da farmácia?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.04",
+        "displayText": "Yes. The pharmacy is on the same street",
+        "translation": "Sim. A farmácia fica na mesma rua",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-09.shadowing.05",
+        "displayText": "Great. And is there a park here?",
+        "translation": "Ótimo. E tem um parque aqui?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.06",
+        "displayText": "Yes. Go straight and take the second right. The park is at the end",
+        "translation": "Sim. Siga em frente e pegue a segunda à direita. O parque fica no final",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: ask about places and give a short route",
+    "duration": "20–30 seconds",
+    "starters": [
+      "There’s a…",
+      "There are…",
+      "Go straight and…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

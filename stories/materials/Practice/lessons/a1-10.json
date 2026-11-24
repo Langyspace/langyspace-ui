@@ -1,0 +1,190 @@
+{
+  "key": "a1-10",
+  "code": "A1.10",
+  "title": "At the café",
+  "first": {
+    "id": "course-practice-a1-10-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-10-coffee",
+        "word": "coffee",
+        "translation": "café",
+        "example": "I’d like a coffee, please",
+        "exampleTranslation": "Eu gostaria de um café, por favor",
+        "visualLabel": "coffee",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-coffee.front",
+        "backAudioId": "course-a1-10-coffee.back"
+      },
+      {
+        "id": "course-a1-10-tea",
+        "word": "tea",
+        "translation": "chá",
+        "example": "Can I have some tea?",
+        "exampleTranslation": "Posso tomar um chá?",
+        "visualLabel": "tea",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-tea.front",
+        "backAudioId": "course-a1-10-tea.back"
+      },
+      {
+        "id": "course-a1-10-water",
+        "word": "water",
+        "translation": "água",
+        "example": "Some water, please",
+        "exampleTranslation": "Um pouco de água, por favor",
+        "visualLabel": "water",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-water.front",
+        "backAudioId": "course-a1-10-water.back"
+      },
+      {
+        "id": "course-a1-10-juice",
+        "word": "juice",
+        "translation": "suco",
+        "example": "I’d like an orange juice",
+        "exampleTranslation": "Eu gostaria de um suco de laranja",
+        "visualLabel": "juice",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-juice.front",
+        "backAudioId": "course-a1-10-juice.back"
+      },
+      {
+        "id": "course-a1-10-sandwich",
+        "word": "sandwich",
+        "translation": "sanduíche",
+        "example": "This sandwich is for my friend",
+        "exampleTranslation": "Este sanduíche é para o meu amigo",
+        "visualLabel": "sandwich",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-sandwich.front",
+        "backAudioId": "course-a1-10-sandwich.back"
+      },
+      {
+        "id": "course-a1-10-cake",
+        "word": "cake",
+        "translation": "bolo",
+        "example": "Can I have a piece of cake?",
+        "exampleTranslation": "Posso comer um pedaço de bolo?",
+        "visualLabel": "cake",
+        "imageSrc": "/flashcards-transparent/course-images/6743ae700ffe0ccd739e19e24d7a081c1586ebbed8bed441a7c7cf7cbefc15f4/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-10-cake.front",
+        "backAudioId": "course-a1-10-cake.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-10.shadowing.01",
+        "displayText": "Hello! What would you like?",
+        "translation": "Olá! O que você gostaria de pedir?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.02",
+        "displayText": "I’d like some tea and a piece of cake, please",
+        "translation": "Eu gostaria de chá e uma fatia de bolo, por favor",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-10.shadowing.03",
+        "displayText": "Of course. Would you like milk in your tea?",
+        "translation": "Claro. Você quer leite no chá?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.04",
+        "displayText": "No milk, thank you. How much is it?",
+        "translation": "Sem leite, obrigada. Quanto fica?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-10.shadowing.05",
+        "displayText": "It’s six dollars. You can pay here",
+        "translation": "Fica seis dólares. Pode pagar aqui",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-10.shadowing.06",
+        "displayText": "Here you are. Thank you!",
+        "translation": "Aqui está. Obrigada!",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: order a drink and food, then correct a mistake politely",
+    "duration": "20–30 seconds",
+    "starters": [
+      "I’d like some…",
+      "Can I have…?",
+      "Sorry, I asked for…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

@@ -3,6 +3,8 @@ import {
   withLessonOpeningPageIds,
   hasLessonOpeningReview,
 } from './lessonOpeningPolicy'
+import { LessonHomeworkClosing } from './LessonHomeworkClosing'
+import { hasLessonHomework } from './LessonHomeworkGallery'
 import { LessonOpening, LessonPracticePlan } from './LessonBookends'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
@@ -523,6 +525,17 @@ export function ReviewedLesson({
                           />
                         ),
                       }}
+                    />
+                  ),
+                }
+              if (page.kind === 'homework' && hasLessonHomework(materialKey))
+                return {
+                  id: page.id,
+                  label: 'Class complete — your homework',
+                  content: (
+                    <LessonHomeworkClosing
+                      materialKey={materialKey}
+                      active={pageId === page.id}
                     />
                   ),
                 }

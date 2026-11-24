@@ -1,0 +1,272 @@
+{
+  "key": "c1-12",
+  "code": "C1.12",
+  "title": "A world without cash",
+  "first": {
+    "id": "course-practice-c1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-12-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "According to"
+          },
+          {
+            "id": "b",
+            "text": "According"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para atribuir a informação a uma fonte, usamos according to. O to precisa aparecer antes de the report. Por isso: “According to the report, access is limited”"
+          },
+          "wrong": {
+            "title": "Para atribuir a informação a uma fonte, usamos according to.",
+            "message": "O to precisa aparecer antes de the report. Por isso: “According to the report, access is limited”"
+          }
+        },
+        "context": "___ the report, access is limited"
+      },
+      {
+        "id": "course-c1-12-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de suggests that, vem uma oração com um verbo completo. May rise funciona aqui; to rise não forma essa oração sozinho. Por isso: “The account suggests that fees may rise”"
+          },
+          "wrong": {
+            "title": "Depois de suggests that, vem uma oração com um verbo completo.",
+            "message": "May rise funciona aqui; to rise não forma essa oração sozinho. Por isso: “The account suggests that fees may rise”"
+          }
+        },
+        "context": "The account suggests that fees to rise"
+      },
+      {
+        "id": "course-c1-12-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Although of payment is digital, a fallback is needed"
+          },
+          {
+            "id": "a",
+            "text": "Although payment is digital, a fallback is needed"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Although introduz diretamente uma oração de concessão. Não colocamos of antes de payment is digital. Por isso: “Although payment is digital, a fallback is needed”"
+          },
+          "wrong": {
+            "title": "Although introduz diretamente uma oração de concessão.",
+            "message": "Não colocamos of antes de payment is digital. Por isso: “Although payment is digital, a fallback is needed”"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "remains"
+          },
+          {
+            "id": "a",
+            "text": "to remain"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Provided that apresenta uma condição com sujeito e verbo. Por isso usamos cash remains, não cash to remain. Por isso: “We can support it provided that cash remains an option”"
+          },
+          "wrong": {
+            "title": "Provided that apresenta uma condição com sujeito e verbo.",
+            "message": "Por isso usamos cash remains, não cash to remain. Por isso: “We can support it provided that cash remains an option”"
+          }
+        },
+        "context": "We can support it provided that cash ___ an option"
+      },
+      {
+        "id": "course-c1-12-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois do modal needn’t, mean fica na forma básica. Não acrescentamos o s, mesmo com digital-first no singular. Por isso: “Digital-first needn’t mean removing every alternative”"
+          },
+          "wrong": {
+            "title": "Depois do modal needn’t, mean fica na forma básica.",
+            "message": "Não acrescentamos o s, mesmo com digital-first no singular. Por isso: “Digital-first needn’t mean removing every alternative”"
+          }
+        },
+        "context": "Digital-first needn’t mean removing every alternative"
+      },
+      {
+        "id": "course-c1-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "I’d revise this if the fees excluded more people"
+          },
+          {
+            "id": "a",
+            "text": "I’d revise this if the fees would excluded more people"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para dizer em que hipótese você revisaria a posição, usamos o passado excluded na parte com if. Would fica no resultado: I’d revise. Por isso: “I’d revise this if the fees excluded more people”"
+          },
+          "wrong": {
+            "title": "Para dizer em que hipótese você revisaria a posição, usamos o passado excluded na parte com if.",
+            "message": "Would fica no resultado: I’d revise. Por isso: “I’d revise this if the fees excluded more people”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-12.shadowing.01",
+        "displayText": "A cashless system would be convenient, but I’m not convinced convenience should settle the debate",
+        "translation": "Um sistema sem dinheiro em espécie seria conveniente, mas não estou convencido de que a conveniência deva resolver o debate",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.02",
+        "displayText": "What concerns you most?",
+        "translation": "O que mais lhe preocupa?",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.03",
+        "displayText": "Access, mainly. A system can be efficient and still exclude people",
+        "translation": "Acesso, principalmente. Um sistema pode ser eficiente e ainda assim excluir pessoas",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.04",
+        "displayText": "You mean people without reliable internet or a bank account?",
+        "translation": "Você se refere a pessoas sem internet confiável ou conta bancária?",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.05",
+        "displayText": "Exactly. And privacy matters even for people who do have access",
+        "translation": "Exatamente. E a privacidade importa mesmo para quem tem acesso",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.06",
+        "displayText": "To be fair, cash has costs too. Handling and protecting it isn’t free",
+        "translation": "Para ser justo, o dinheiro em espécie também tem custos. Manuseá-lo e protegê-lo não é gratuito",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.07",
+        "displayText": "That’s true. I’m not arguing that cash is a perfect solution",
+        "translation": "É verdade. Não estou dizendo que dinheiro em espécie seja a solução perfeita",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.08",
+        "displayText": "Then perhaps the question is how much choice people should retain",
+        "translation": "Então talvez a questão seja quanta escolha as pessoas devem manter",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.09",
+        "displayText": "That’s closer to what I mean. A fallback option could reduce the risk of exclusion",
+        "translation": "Isso se aproxima mais do que eu quero dizer. Uma opção alternativa poderia reduzir o risco de exclusão",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.10",
+        "displayText": "Although it might make the system more expensive to maintain",
+        "translation": "Embora isso possa encarecer a manutenção do sistema",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.11",
+        "displayText": "Possibly. We’d need evidence about those costs before deciding they outweigh the benefits",
+        "translation": "Possivelmente. Precisaríamos de evidências sobre esses custos antes de concluir que eles superam os benefícios",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.12",
+        "displayText": "So we agree on the aim, even if we haven’t agreed on the balance",
+        "translation": "Portanto, concordamos com o objetivo, mesmo que não tenhamos concordado com o equilíbrio",
+        "speakerId": "theo-jacobs"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "zanele-dlamini",
+        "name": "Zanele",
+        "avatarUrl": "/flashcards/course-characters/zanele-dlamini/image.webp",
+        "accentCode": "en-ZA",
+        "accentLabel": "English · South Africa"
+      },
+      {
+        "id": "theo-jacobs",
+        "name": "Theo",
+        "avatarUrl": "/flashcards/course-characters/theo-jacobs/image.webp",
+        "accentCode": "en-ZA",
+        "accentLabel": "English · South Africa"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: synthesize two perspectives and recommend a workable policy with conditions",
+    "duration": "90–120 seconds",
+    "starters": [
+      "The manager expects…",
+      "Although…",
+      "In other words,…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

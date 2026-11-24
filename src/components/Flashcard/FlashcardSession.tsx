@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { PictureImage } from '../../internal/PictureImage'
 import { BackIcon, FlipHintIcon } from '../../internal/PracticeSession/BackIcon'
 import { FlashcardProgress } from './FlashcardProgress'
 import { FlashcardStage } from './FlashcardStage'
@@ -86,14 +87,23 @@ export function FlashcardSession({
                       <FlashcardImagePanel
                         emoji={!showImage ? (card.emoji ?? '💬') : undefined}
                       >
-                        {showImage && (
-                          <S.Picture
-                            src={card.image!.src}
-                            alt={card.image!.alt ?? ''}
-                            aria-hidden={!card.image!.alt || undefined}
-                            onError={() => setFailedImage(imageKey)}
-                          />
-                        )}
+                        {showImage &&
+                          (card.image!.region ? (
+                            <S.RegionPicture>
+                              <PictureImage
+                                src={card.image!.src}
+                                alt={card.image!.alt ?? ''}
+                                region={card.image!.region}
+                              />
+                            </S.RegionPicture>
+                          ) : (
+                            <S.Picture
+                              src={card.image!.src}
+                              alt={card.image!.alt ?? ''}
+                              aria-hidden={!card.image!.alt || undefined}
+                              onError={() => setFailedImage(imageKey)}
+                            />
+                          ))}
                         {audio && (
                           <FlashcardAudioButton
                             label={audio.label}

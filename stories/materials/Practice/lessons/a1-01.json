@@ -1,0 +1,148 @@
+{
+  "key": "a1-01",
+  "code": "A1.01",
+  "title": "Introduce yourself",
+  "first": {
+    "id": "course-practice-a1-01-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-01-brazil",
+        "word": "Brazil",
+        "translation": "Brasil",
+        "example": "I’m from Brazil",
+        "exampleTranslation": "Sou do Brasil",
+        "visualLabel": "Brazil",
+        "imageSrc": "/course-practice/flags/flag-br.svg",
+        "audioId": "course-a1-01-brazil.front",
+        "backAudioId": "course-a1-01-brazil.back"
+      },
+      {
+        "id": "course-a1-01-south-korea",
+        "word": "South Korea",
+        "translation": "Coreia do Sul",
+        "example": "I’m from South Korea",
+        "exampleTranslation": "Sou da Coreia do Sul",
+        "visualLabel": "South Korea",
+        "imageSrc": "/course-practice/flags/flag-kr.svg",
+        "audioId": "course-a1-01-south-korea.front",
+        "backAudioId": "course-a1-01-south-korea.back"
+      },
+      {
+        "id": "course-a1-01-united-states",
+        "word": "the United States",
+        "translation": "Estados Unidos",
+        "example": "I’m from the United States",
+        "exampleTranslation": "Sou dos Estados Unidos",
+        "visualLabel": "the United States",
+        "imageSrc": "/course-practice/flags/flag-us.svg",
+        "audioId": "course-a1-01-united-states.front",
+        "backAudioId": "course-a1-01-united-states.back"
+      },
+      {
+        "id": "course-a1-01-happy",
+        "word": "happy",
+        "translation": "feliz",
+        "example": "I’m happy",
+        "exampleTranslation": "Estou feliz",
+        "visualLabel": "happy",
+        "imageSrc": "/flashcards-transparent/course-images/7ef12ef7b54dc40fa68f0b3d567e1b441f244a7186d1dd15d376791c184c12b9/image.webp",
+        "audioId": "course-a1-01-happy.front",
+        "backAudioId": "course-a1-01-happy.back"
+      },
+      {
+        "id": "course-a1-01-tired",
+        "word": "tired",
+        "translation": "cansado(a)",
+        "example": "I’m tired",
+        "exampleTranslation": "Estou cansado",
+        "visualLabel": "tired",
+        "imageSrc": "/flashcards-transparent/course-images/65abc2f356592b9593cca24e0ffbd1ea7613e76bde300b9916b45143bd6126e6/image.webp",
+        "audioId": "course-a1-01-tired.front",
+        "backAudioId": "course-a1-01-tired.back"
+      },
+      {
+        "id": "course-a1-01-hungry",
+        "word": "hungry",
+        "translation": "com fome",
+        "example": "I’m hungry",
+        "exampleTranslation": "Estou com fome",
+        "visualLabel": "hungry",
+        "imageSrc": "/flashcards-transparent/course-images/3fac180160396ac067cf36e4adaa70bd5e5c2d674f0ff19a3def4f946d62bab9/image.webp",
+        "audioId": "course-a1-01-hungry.front",
+        "backAudioId": "course-a1-01-hungry.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-01-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-01.shadowing.01",
+        "displayText": "Hi! I’m Kim. I’m from Korea",
+        "translation": "Oi! Eu sou a Kim. Eu sou da Coreia",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-01.shadowing.02",
+        "displayText": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you",
+        "translation": "Oi, Kim! Eu sou a Ana. Eu sou do Brasil. Prazer em te conhecer",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-01.shadowing.03",
+        "displayText": "Nice to meet you too. How are you?",
+        "translation": "O prazer é meu. Como você está?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-01.shadowing.04",
+        "displayText": "I’m good, thanks. I’m hungry! And you?",
+        "translation": "Estou bem, obrigada. Estou com fome! E você?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-01.shadowing.05",
+        "displayText": "I’m tired, but I’m happy. Welcome, Ana!",
+        "translation": "Estou cansada, mas estou feliz. Bem-vinda, Ana!",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-01.shadowing.06",
+        "displayText": "Thank you! It’s nice to be here",
+        "translation": "Obrigada! É bom estar aqui",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note with your name, where you’re from and how you feel",
+    "duration": "20–30 seconds",
+    "starters": [
+      "I’m…",
+      "I’m from…",
+      "My name is…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

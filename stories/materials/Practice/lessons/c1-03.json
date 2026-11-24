@@ -1,0 +1,272 @@
+{
+  "key": "c1-03",
+  "code": "C1.03",
+  "title": "The company is said to be…",
+  "first": {
+    "id": "course-practice-c1-03-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-03-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "be"
+          },
+          {
+            "id": "a",
+            "text": "being"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de is said to, usamos o verbo básico be. A expressão relata o que dizem sobre o café, sem transformar isso em um fato confirmado. Por isso: “The café is said to be closing”"
+          },
+          "wrong": {
+            "title": "Depois de is said to, usamos o verbo básico be.",
+            "message": "A expressão relata o que dizem sobre o café, sem transformar isso em um fato confirmado. Por isso: “The café is said to be closing”"
+          }
+        },
+        "context": "The café is said to ___ closing"
+      },
+      {
+        "id": "course-c1-03-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para relatar um acontecimento anterior, usamos to have mais o particípio. Aqui precisamos de closed, não close. Por isso: “The café is thought to have closed”"
+          },
+          "wrong": {
+            "title": "Para relatar um acontecimento anterior, usamos to have mais o particípio.",
+            "message": "Aqui precisamos de closed, não close. Por isso: “The café is thought to have closed”"
+          }
+        },
+        "context": "The café is thought to have close"
+      },
+      {
+        "id": "course-c1-03-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It reported that the dining area will close"
+          },
+          {
+            "id": "b",
+            "text": "It is reported that the dining area will close"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Essa forma de relato é passiva: it is reported that. Sem o is, falta o auxiliar da construção. Por isso: “It is reported that the dining area will close”"
+          },
+          "wrong": {
+            "title": "Essa forma de relato é passiva: it is reported that.",
+            "message": "Sem o is, falta o auxiliar da construção. Por isso: “It is reported that the dining area will close”"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "According to"
+          },
+          {
+            "id": "b",
+            "text": "According"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para indicar a fonte, a expressão é according to. Esse to faz parte dela e precisa aparecer antes de the notice. Por isso: “According to the notice, the café is being renovated”"
+          },
+          "wrong": {
+            "title": "Para indicar a fonte, a expressão é according to.",
+            "message": "Esse to faz parte dela e precisa aparecer antes de the notice. Por isso: “According to the notice, the café is being renovated”"
+          }
+        },
+        "context": "___ the notice, the café is being renovated"
+      },
+      {
+        "id": "course-c1-03-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O relato fala de uma venda anterior em que o prédio recebeu a ação. Por isso usamos to have been sold, com been, não being. Por isso: “The building is reported to have been sold”"
+          },
+          "wrong": {
+            "title": "O relato fala de uma venda anterior em que o prédio recebeu a ação.",
+            "message": "Por isso usamos to have been sold, com been, não being. Por isso: “The building is reported to have been sold”"
+          }
+        },
+        "context": "The building is reported to have been sold"
+      },
+      {
+        "id": "course-c1-03-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The figures are thought to be incomplete"
+          },
+          {
+            "id": "b",
+            "text": "The figures is thought to be incomplete"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O sujeito é figures, no plural. O auxiliar precisa acompanhar esse sujeito: are thought, não is thought. Por isso: “The figures are thought to be incomplete”"
+          },
+          "wrong": {
+            "title": "O sujeito é figures, no plural.",
+            "message": "O auxiliar precisa acompanhar esse sujeito: are thought, não is thought. Por isso: “The figures are thought to be incomplete”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-03-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-03.shadowing.01",
+        "displayText": "This post says the café is closing permanently. Would you share it?",
+        "translation": "Esta postagem diz que o café vai fechar definitivamente. Você compartilharia?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.02",
+        "displayText": "Not as it stands. It doesn’t identify the source of that claim",
+        "translation": "Não desse jeito. Não identifica a fonte dessa afirmação",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.03",
+        "displayText": "The café is said to be closing, then? That sounds more cautious",
+        "translation": "Então dizem que o café vai fechar? Parece mais cauteloso",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.04",
+        "displayText": "Grammatically, yes, but it still passes on the claim without telling us who said it",
+        "translation": "Gramaticalmente, sim, mas ainda repassa a alegação sem dizer quem falou",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.05",
+        "displayText": "The official notice says the dining area will close for renovation while delivery continues",
+        "translation": "O aviso oficial diz que o salão fechará para reforma enquanto as entregas continuam",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.06",
+        "displayText": "That confirms a temporary change in service, not the permanent end of the business",
+        "translation": "Isso confirma uma mudança temporária no serviço, não o fim definitivo do negócio",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.07",
+        "displayText": "Does it give a reopening date?",
+        "translation": "Informa uma data de reabertura?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.08",
+        "displayText": "Not in this excerpt. We should check rather than turn an expectation into a date",
+        "translation": "Não neste trecho. Devemos conferir em vez de transformar expectativa em data",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.09",
+        "displayText": "So I could say, according to the café’s notice, the dining area is closing for renovation",
+        "translation": "Então posso dizer: segundo o aviso do café, o salão vai fechar para reforma",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.10",
+        "displayText": "Yes, and keep the delivery detail because it changes what readers need to do",
+        "translation": "Sim, e mantenha o detalhe das entregas porque muda o que o público precisa fazer",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.11",
+        "displayText": "I’d also correct the permanent-closure claim if I’d already shared it",
+        "translation": "Eu também corrigiria a alegação de fechamento definitivo se já a tivesse compartilhado",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.12",
+        "displayText": "Exactly. Cautious wording doesn’t remove the responsibility to check and correct",
+        "translation": "Exatamente. Uma formulação cautelosa não elimina a responsabilidade de verificar e corrigir",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: attribute a claim responsibly and revise it when the source changes",
+    "duration": "90–120 seconds",
+    "starters": [
+      "According to…",
+      "It is said to…",
+      "It was reported to have…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

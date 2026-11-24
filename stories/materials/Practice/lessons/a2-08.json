@@ -1,0 +1,202 @@
+{
+  "key": "a2-08",
+  "code": "A2.08",
+  "title": "Have you ever been to Lisbon?",
+  "first": {
+    "id": "course-practice-a2-08-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a2-08-take-a-tram",
+        "word": "take a tram",
+        "translation": "pegar um bonde",
+        "example": "Have you ever taken a tram?",
+        "exampleTranslation": "Você já andou de bonde?",
+        "visualLabel": "take a tram",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-take-a-tram.front",
+        "backAudioId": "course-a2-08-take-a-tram.back"
+      },
+      {
+        "id": "course-a2-08-visit-a-castle",
+        "word": "visit a castle",
+        "translation": "visitar um castelo",
+        "example": "I visited a castle last year",
+        "exampleTranslation": "Visitei um castelo no ano passado",
+        "visualLabel": "visit a castle",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-visit-a-castle.front",
+        "backAudioId": "course-a2-08-visit-a-castle.back"
+      },
+      {
+        "id": "course-a2-08-try-a-pastel-de-nata",
+        "word": "try a pastel de nata",
+        "translation": "experimentar um pastel de nata",
+        "example": "You should try a pastel de nata",
+        "exampleTranslation": "Você deveria experimentar um pastel de nata",
+        "visualLabel": "try a pastel de nata",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-try-a-pastel-de-nata.front",
+        "backAudioId": "course-a2-08-try-a-pastel-de-nata.back"
+      },
+      {
+        "id": "course-a2-08-see-the-tiles",
+        "word": "see the tiles",
+        "translation": "ver os azulejos",
+        "example": "We saw beautiful tiles in the city",
+        "exampleTranslation": "Vimos azulejos lindos na cidade",
+        "visualLabel": "see the tiles",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-see-the-tiles.front",
+        "backAudioId": "course-a2-08-see-the-tiles.back"
+      },
+      {
+        "id": "course-a2-08-watch-the-sunset",
+        "word": "watch the sunset",
+        "translation": "assistir ao pôr do sol",
+        "example": "I’d like to watch the sunset",
+        "exampleTranslation": "Eu gostaria de ver o pôr do sol",
+        "visualLabel": "watch the sunset",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-watch-the-sunset.front",
+        "backAudioId": "course-a2-08-watch-the-sunset.back"
+      },
+      {
+        "id": "course-a2-08-visit-the-aquarium",
+        "word": "visit the aquarium",
+        "translation": "visitar o aquário",
+        "example": "I haven’t visited the aquarium yet",
+        "exampleTranslation": "Ainda não visitei o aquário",
+        "visualLabel": "visit the aquarium",
+        "imageSrc": "/flashcards-transparent/course-images/1f9f6d41f00437f3b9bf4bca61dd688704ab9a048af11539cf25631db4814af5/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a2-08-visit-the-aquarium.front",
+        "backAudioId": "course-a2-08-visit-the-aquarium.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-08.shadowing.01",
+        "displayText": "Have you ever been to Lisbon?",
+        "translation": "Você já esteve em Lisboa?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.02",
+        "displayText": "Yes, I’ve been twice. Have you?",
+        "translation": "Sim, já fui duas vezes. E você?",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.03",
+        "displayText": "No, never. What did you do there?",
+        "translation": "Não, nunca. O que você fez lá?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.04",
+        "displayText": "I took a tram and visited the castle",
+        "translation": "Peguei um bonde e visitei o castelo",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.05",
+        "displayText": "Did you try a pastel de nata?",
+        "translation": "Você já experimentou um pastel de nata?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.06",
+        "displayText": "Of course. I had one every morning",
+        "translation": "Claro. Eu tomava um todas as manhãs",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "a2-08.shadowing.07",
+        "displayText": "That sounds lovely. I’m going there next month",
+        "translation": "Parece ótimo. Vou para lá no mês que vem",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "a2-08.shadowing.08",
+        "displayText": "You’ll love it. Try to watch the sunset by the river",
+        "translation": "Você vai adorar. Tente assistir ao pôr do sol à beira do rio",
+        "speakerId": "noah-ellis"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ruby-bennett",
+        "name": "Ruby",
+        "avatarUrl": "/flashcards/course-characters/ruby-bennett/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      },
+      {
+        "id": "noah-ellis",
+        "name": "Noah",
+        "avatarUrl": "/flashcards/course-characters/noah-ellis/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: ask about an experience and choose a follow-up that fits the answer",
+    "duration": "45–60 seconds",
+    "starters": [
+      "Have you ever…?",
+      "I’ve never…",
+      "When did you…?"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

@@ -306,6 +306,11 @@ export type {
 export { PracticePlaybackControls } from './components/Practice/PracticePlaybackControls'
 export type { PracticePlaybackControlsProps } from './components/Practice/PracticePlaybackControls.types'
 
+export { QuizSession } from './components/Quiz/QuizSession'
+export type {
+  QuizSessionProps,
+  QuizSessionQuestion,
+} from './components/Quiz/QuizSession.types'
 export { QuizSessionHeader } from './components/Quiz/QuizSessionHeader'
 export type { QuizSessionHeaderProps } from './components/Quiz/QuizSessionHeader.types'
 

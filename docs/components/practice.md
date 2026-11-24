@@ -535,3 +535,12 @@ Controlled Student reader, header/progress, context stack, optional speaker, tra
 ### Adoption and updates
 
 All three consumers import these same renderer owners. Product updates take effect after adopting a new immutable UI package; there is no runtime fetch of latest library code. Student and Teacher adoption changes accompany a source/hash-bound candidate package, while material previews import the same source owners at export time. Keep data/API/auth concerns in products and use stories for visual variants rather than creating another session stylesheet.
+
+## QuizSession
+
+Controlled Student quiz presentation shared by the portal, teacher simulation and lesson homework.
+Supply header, question metadata/prompt/context, options with explicit states, feedback, replay slots
+and next action. The consumer retains grading, keyboard routing, narration, persistence and service
+calls. Omit question and use children for result/loading states; no synthetic progress is saved.
+The question card and header recipes come from the Student portal. FlashcardSession also accepts
+an optional image.region using the existing PictureRegion atlas contract; no bitmap is edited.

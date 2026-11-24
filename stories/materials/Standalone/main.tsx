@@ -1,3 +1,4 @@
+import { MaterialPracticeOrigin } from '../shared/MaterialPracticeContext'
 import { MaterialNotesEditor } from './MaterialNotesEditor'
 import { readStudentPortalOrigin } from './destinations'
 import { createRoot } from 'react-dom/client'
@@ -17,10 +18,12 @@ if (root)
       {new URLSearchParams(window.location.search).get('view') === 'notes' ? (
         <MaterialNotesEditor materialKey="notes" />
       ) : studentPortalOrigin && catalog.some((m) => m.key === key) ? (
-        <MaterialApp
-          materialKey={key as MaterialKey}
-          studentPortalOrigin={studentPortalOrigin}
-        />
+        <MaterialPracticeOrigin.Provider value={studentPortalOrigin}>
+          <MaterialApp
+            materialKey={key as MaterialKey}
+            studentPortalOrigin={studentPortalOrigin}
+          />
+        </MaterialPracticeOrigin.Provider>
       ) : (
         <p role="alert">Material não encontrado. Volte à biblioteca.</p>
       )}

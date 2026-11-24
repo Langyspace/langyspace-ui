@@ -51,6 +51,18 @@ export const Picture = styled.img`
   pointer-events: none;
   user-select: none;
 `
+export const RegionPicture = styled.div`
+  position: relative;
+  z-index: 1;
+  width: var(--fc-card-image-size);
+  height: var(--fc-card-image-size);
+  pointer-events: none;
+  user-select: none;
+  > * {
+    width: 100%;
+    height: 100%;
+  }
+`
 export const Footer = styled.footer`
   display: flex;
   min-height: var(--fc-footer-min-height);

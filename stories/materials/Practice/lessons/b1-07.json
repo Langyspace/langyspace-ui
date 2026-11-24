@@ -1,0 +1,248 @@
+{
+  "key": "b1-07",
+  "code": "B1.07",
+  "title": "I should have taken the direct flight",
+  "first": {
+    "id": "course-practice-b1-07-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-07-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "booked"
+          },
+          {
+            "id": "b",
+            "text": "book"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para avaliar uma decisão passada, usamos should have mais o particípio. Por isso a forma é booked, não book. Por isso: “I should have booked earlier”"
+          },
+          "wrong": {
+            "title": "Para avaliar uma decisão passada, usamos should have mais o particípio.",
+            "message": "Por isso a forma é booked, não book. Por isso: “I should have booked earlier”"
+          }
+        },
+        "context": "I should have ___ earlier"
+      },
+      {
+        "id": "course-b1-07-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O modal shouldn’t é seguido de have, não had. O tempo passado aparece no conjunto have chosen. Por isso: “We shouldn’t have chosen that connection”"
+          },
+          "wrong": {
+            "title": "O modal shouldn’t é seguido de have, não had.",
+            "message": "O tempo passado aparece no conjunto have chosen. Por isso: “We shouldn’t have chosen that connection”"
+          }
+        },
+        "context": "We shouldn’t have chosen that connection"
+      },
+      {
+        "id": "course-b1-07-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She should have took the direct flight"
+          },
+          {
+            "id": "b",
+            "text": "She should have taken the direct flight"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Took é passado simples; taken é o particípio. Depois de should have, precisamos de taken. Por isso: “She should have taken the direct flight”"
+          },
+          "wrong": {
+            "title": "Took é passado simples; taken é o particípio.",
+            "message": "Depois de should have, precisamos de taken. Por isso: “She should have taken the direct flight”"
+          }
+        }
+      },
+      {
+        "id": "course-b1-07-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "allowed"
+          },
+          {
+            "id": "b",
+            "text": "allowing"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Uma alternativa possível no passado usa could have mais o particípio. Aqui a forma é allowed, não allowing. Por isso: “We could have allowed more time”"
+          },
+          "wrong": {
+            "title": "Uma alternativa possível no passado usa could have mais o particípio.",
+            "message": "Aqui a forma é allowed, não allowing. Por isso: “We could have allowed more time”"
+          }
+        },
+        "context": "We could have ___ more time"
+      },
+      {
+        "id": "course-b1-07-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta, a ordem é could, sujeito, have e particípio. Had não entra depois de could. Por isso: “What could we have done differently?”"
+          },
+          "wrong": {
+            "title": "Na pergunta, a ordem é could, sujeito, have e particípio.",
+            "message": "Had não entra depois de could. Por isso: “What could we have done differently?”"
+          }
+        },
+        "context": "What could we had done differently?"
+      },
+      {
+        "id": "course-b1-07-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Next time, I’d compare arrival times"
+          },
+          {
+            "id": "b",
+            "text": "Next time, I’d compared arrival times"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui I’d significa I would e aponta para uma escolha da próxima vez. Por isso compare fica na forma básica, não compared. Por isso: “Next time, I’d compare arrival times”"
+          },
+          "wrong": {
+            "title": "Aqui I’d significa I would e aponta para uma escolha da próxima vez.",
+            "message": "Por isso compare fica na forma básica, não compared. Por isso: “Next time, I’d compare arrival times”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-07-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-07.shadowing.01",
+        "displayText": "Did you make the connection? You only had thirty-five minutes",
+        "translation": "Você conseguiu pegar a conexão? Só tinha trinta e cinco minutos",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.02",
+        "displayText": "No. The first flight was fifty minutes late, so I missed it",
+        "translation": "Não. O primeiro voo atrasou cinquenta minutos, então perdi a conexão",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.03",
+        "displayText": "That’s frustrating. Was there a direct flight when you booked?",
+        "translation": "Que frustrante. Havia voo direto quando você reservou?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.04",
+        "displayText": "Yes, but it cost more. I should have allowed more time between flights",
+        "translation": "Sim, mas custava mais. Eu deveria ter deixado mais tempo entre os voos",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.05",
+        "displayText": "You couldn’t have known about the delay, though. What can you do now?",
+        "translation": "Mas você não tinha como saber do atraso. O que pode fazer agora?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.06",
+        "displayText": "I’m waiting for the desk to confirm another flight",
+        "translation": "Estou esperando o atendimento confirmar outro voo",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.07",
+        "displayText": "I’d also check what your travel insurance covers, without assuming it pays for everything",
+        "translation": "Eu também conferiria o que o seguro cobre, sem presumir que paga tudo",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.08",
+        "displayText": "I will. Next time I’d compare the arrival time as well as the price",
+        "translation": "Vou conferir. Da próxima vez compararia o horário de chegada e também o preço",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: evaluate a past travel decision and choose a practical next step",
+    "duration": "60–90 seconds",
+    "starters": [
+      "I should have…",
+      "I could have…",
+      "Next time, I’d…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

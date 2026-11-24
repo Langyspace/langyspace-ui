@@ -3,7 +3,7 @@ import {
   withLessonOpeningPages,
   withLessonOpeningPageIds,
 } from '../shared/lessonOpeningPolicy'
-import { LessonPracticePlan } from '../shared/LessonBookends'
+import { LessonHomeworkClosing } from '../shared/LessonHomeworkClosing'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 
 import { DialoguePlaybackAction } from '../shared/DialoguePlaybackAction'
@@ -23,7 +23,7 @@ import {
 import { Dialogue, Comprehension, Grammar } from './Frontend.dialogue'
 import { YourVersion, Listening, Interview } from './Frontend.conversation'
 import { useFrontendAudio } from './useFrontendAudio'
-import { order, content, review, yourWork, homework } from './Frontend.data'
+import { order, content, review, yourWork } from './Frontend.data'
 import type { FrontendLessonProps } from './Frontend.types'
 import * as S from './Frontend.styles'
 export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
@@ -158,17 +158,16 @@ export function FrontendLesson({ initialPageId }: FrontendLessonProps) {
       instruction = 'Press play. Answer Jun’s question. Then press play again.'
       element = <Interview media={media} />
     } else {
-      title = 'Practice at home'
-      eyebrow = 'Homework'
-      instruction = 'Practise offline and bring an example to your next class.'
-      element = (
-        <LessonPracticePlan
-          tasks={homework.map(([title, description]) => ({
-            title: title!,
-            description: description!,
-          }))}
-        />
-      )
+      return {
+        id,
+        label: 'After class · Your homework',
+        content: (
+          <LessonHomeworkClosing
+            materialKey="tema-frontend"
+            active={pageId === id}
+          />
+        ),
+      }
     }
     return {
       id,

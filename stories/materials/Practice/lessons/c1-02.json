@@ -1,0 +1,272 @@
+{
+  "key": "c1-02",
+  "code": "C1.02",
+  "title": "Had we known…",
+  "first": {
+    "id": "course-practice-c1-02-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-02-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "known,"
+          },
+          {
+            "id": "b",
+            "text": "knew,"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Nessa condicional invertida, had vem antes do sujeito e pede um particípio depois. Known funciona aqui; knew é o passado simples. Por isso: “Had we known, we could have waited”"
+          },
+          "wrong": {
+            "title": "Nessa condicional invertida, had vem antes do sujeito e pede um particípio depois.",
+            "message": "Known funciona aqui; knew é o passado simples. Por isso: “Had we known, we could have waited”"
+          }
+        },
+        "context": "Had we ___ we could have waited"
+      },
+      {
+        "id": "course-c1-02-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Você pode começar com had we checked ou com if we had checked. A inversão já substitui o if; não usamos as duas formas juntas. Por isso: “Had we checked the test, we could have delayed opening”"
+          },
+          "wrong": {
+            "title": "Você pode começar com had we checked ou com if we had checked.",
+            "message": "A inversão já substitui o if; não usamos as duas formas juntas. Por isso: “Had we checked the test, we could have delayed opening”"
+          }
+        },
+        "context": "Had we checked the test, we could have delayed opening"
+      },
+      {
+        "id": "course-c1-02-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "If we had knew, we could have waited"
+          },
+          {
+            "id": "b",
+            "text": "If we had known, we could have waited"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A versão com if é tão válida quanto a invertida. Nela mantemos we had known, com known no particípio, não knew. Por isso: “If we had known, we could have waited”"
+          },
+          "wrong": {
+            "title": "A versão com if é tão válida quanto a invertida.",
+            "message": "Nela mantemos we had known, com known no particípio, não knew. Por isso: “If we had known, we could have waited”"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "ignored"
+          },
+          {
+            "id": "a",
+            "text": "ignore"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Mesmo com not, o verbo depois de had precisa estar no particípio. Por isso usamos ignored, não ignore. Por isso: “Had we not ignored the warning, we could have acted”"
+          },
+          "wrong": {
+            "title": "Mesmo com not, o verbo depois de had precisa estar no particípio.",
+            "message": "Por isso usamos ignored, não ignore. Por isso: “Had we not ignored the warning, we could have acted”"
+          }
+        },
+        "context": "Had we not ___ the warning, we could have acted"
+      },
+      {
+        "id": "course-c1-02-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "No resultado dessa condição passada, could é seguido de have. Não colocamos had depois do modal. Por isso: “Had we known, we could have delayed the launch”"
+          },
+          "wrong": {
+            "title": "No resultado dessa condição passada, could é seguido de have.",
+            "message": "Não colocamos had depois do modal. Por isso: “Had we known, we could have delayed the launch”"
+          }
+        },
+        "context": "Had we known, we could had delayed the launch"
+      },
+      {
+        "id": "course-c1-02-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "b",
+            "text": "Had the test been completed, we could have opened"
+          },
+          {
+            "id": "a",
+            "text": "Had the test being completed, we could have opened"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A condição fala de um teste que teria sido concluído. Essa forma passiva precisa de had, sujeito, been e o particípio completed. Por isso: “Had the test been completed, we could have opened”"
+          },
+          "wrong": {
+            "title": "A condição fala de um teste que teria sido concluído.",
+            "message": "Essa forma passiva precisa de had, sujeito, been e o particípio completed. Por isso: “Had the test been completed, we could have opened”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-02-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-02.shadowing.01",
+        "displayText": "Looking back, what was the first warning sign?",
+        "translation": "Olhando para trás, qual foi o primeiro sinal de alerta?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.02",
+        "displayText": "The delivery dates kept moving, but we assumed the supplier would catch up",
+        "translation": "As datas de entrega continuavam sendo alteradas, mas presumimos que o fornecedor conseguiria cumprir o prazo",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.03",
+        "displayText": "Had we checked their capacity earlier, we might have chosen a different partner",
+        "translation": "Se tivéssemos verificado a capacidade deles antes, talvez tivéssemos escolhido um parceiro diferente",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.04",
+        "displayText": "Perhaps, though I’m not sure that would have prevented every delay",
+        "translation": "Talvez, embora eu não tenha certeza se isso teria evitado todos os atrasos",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.05",
+        "displayText": "No. We also had no realistic contingency plan",
+        "translation": "Não. Nós também não tínhamos um plano de contingência realista",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.06",
+        "displayText": "That was the more serious oversight, in my view",
+        "translation": "Na minha opinião, essa foi a falha mais grave",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.07",
+        "displayText": "Would you call it the root cause?",
+        "translation": "Você diria que é a causa raiz?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.08",
+        "displayText": "One of them. The other was that no one owned the final decision",
+        "translation": "Uma delas. A outra era que ninguém detinha a responsabilidade pela decisão final",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.09",
+        "displayText": "So the lesson isn’t simply to choose a better supplier",
+        "translation": "Portanto, a lição não é simplesmente escolher um fornecedor melhor",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.10",
+        "displayText": "Exactly. We need clearer responsibility and an alternative we can actually use",
+        "translation": "Exatamente. Precisamos de responsabilidades mais claras e de uma alternativa que possamos realmente usar",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.11",
+        "displayText": "Had I realised how much depended on that one delivery, I would have raised it sooner",
+        "translation": "Se eu tivesse percebido o quanto dependia daquela única entrega, teria levantado a questão mais cedo",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.12",
+        "displayText": "Then let’s make that dependency visible next time",
+        "translation": "Então, vamos tornar essa dependência visível na próxima vez",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: review an outcome without confusing hindsight, warnings and established causes",
+    "duration": "90–120 seconds",
+    "starters": [
+      "Had we known…",
+      "If we’d known, we could have…",
+      "Next time, we’ll…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}

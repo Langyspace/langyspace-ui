@@ -1,0 +1,272 @@
+{
+  "key": "b2-12",
+  "code": "B2.12",
+  "title": "Should phones be banned at school?",
+  "first": {
+    "id": "course-practice-b2-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-12-q01",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Despite"
+          },
+          {
+            "id": "b",
+            "text": "Despite of"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Despite já introduz a ideia de apesar de. Ele recebe the noise diretamente, sem um of no meio. Por isso: “Despite the noise, I could concentrate”"
+          },
+          "wrong": {
+            "title": "Despite já introduz a ideia de apesar de.",
+            "message": "Ele recebe the noise diretamente, sem um of no meio. Por isso: “Despite the noise, I could concentrate”"
+          }
+        },
+        "context": "___ the noise, I could concentrate"
+      },
+      {
+        "id": "course-b2-12-q02",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          },
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Although pode introduzir uma oração completa, como phones distract. Não colocamos of entre although e essa oração. Por isso: “Although phones distract, they can help”"
+          },
+          "wrong": {
+            "title": "Although pode introduzir uma oração completa, como phones distract.",
+            "message": "Não colocamos of entre although e essa oração. Por isso: “Although phones distract, they can help”"
+          }
+        },
+        "context": "Although phones distract, they can help"
+      },
+      {
+        "id": "course-b2-12-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Despite use headphones, she heard the alerts"
+          },
+          {
+            "id": "b",
+            "text": "Despite using headphones, she heard the alerts"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Quando colocamos uma ação depois de despite, usamos a forma com ing. Por isso fica despite using, não despite use. Por isso: “Despite using headphones, she heard the alerts”"
+          },
+          "wrong": {
+            "title": "Quando colocamos uma ação depois de despite, usamos a forma com ing.",
+            "message": "Por isso fica despite using, não despite use. Por isso: “Despite using headphones, she heard the alerts”"
+          }
+        }
+      },
+      {
+        "id": "course-b2-12-q04",
+        "prompt": "Complete the sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "whereas"
+          },
+          {
+            "id": "b",
+            "text": "whereas of"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Whereas liga duas orações para contrastar as situações. Ele não recebe of antes da segunda oração. Por isso: “Messages distract, whereas a reading tool can help”"
+          },
+          "wrong": {
+            "title": "Whereas liga duas orações para contrastar as situações.",
+            "message": "Ele não recebe of antes da segunda oração. Por isso: “Messages distract, whereas a reading tool can help”"
+          }
+        },
+        "context": "Messages distract, ___ a reading tool can help"
+      },
+      {
+        "id": "course-b2-12-q05",
+        "prompt": "Is this sentence correct?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, it’s correct"
+          },
+          {
+            "id": "b",
+            "text": "No, it needs a change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui while reconhece um ponto antes de apresentar uma ressalva. A oração vem diretamente depois, sem of. Por isso: “While I support the rule, I’d allow an exception”"
+          },
+          "wrong": {
+            "title": "Aqui while reconhece um ponto antes de apresentar uma ressalva.",
+            "message": "A oração vem diretamente depois, sem of. Por isso: “While I support the rule, I’d allow an exception”"
+          }
+        },
+        "context": "While of I support the rule, I’d allow an exception"
+      },
+      {
+        "id": "course-b2-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Despite the need for consistency, exceptions matter"
+          },
+          {
+            "id": "b",
+            "text": "Despite consistency is necessary, exceptions matter"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Despite recebe uma expressão nominal, como the need for consistency. Uma oração completa pediria although ou despite the fact that. Por isso: “Despite the need for consistency, exceptions matter”"
+          },
+          "wrong": {
+            "title": "Despite recebe uma expressão nominal, como the need for consistency.",
+            "message": "Uma oração completa pediria although ou despite the fact that. Por isso: “Despite the need for consistency, exceptions matter”"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-12.shadowing.01",
+        "displayText": "Would you support a complete phone ban at school?",
+        "translation": "Você apoiaria a proibição total de celulares na escola?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.02",
+        "displayText": "I’d support restrictions, although I’m not sure a total ban would be fair",
+        "translation": "Eu apoiaria restrições, embora não tenha certeza se uma proibição total seria justa",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "b2-12.shadowing.03",
+        "displayText": "What kind of exceptions would you make?",
+        "translation": "Que tipo de exceções você faria?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.04",
+        "displayText": "Some students use their phones for accessibility or medical reasons",
+        "translation": "Alguns alunos usam seus celulares por motivos de acessibilidade ou médicos",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "b2-12.shadowing.05",
+        "displayText": "That makes sense. The main problem is distraction during lessons",
+        "translation": "Faz sentido. O principal problema é a distração durante as aulas",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.06",
+        "displayText": "Exactly. Whereas adults can choose when to check messages, younger students may need clearer boundaries",
+        "translation": "Exatamente. Enquanto os adultos podem escolher quando verificar as mensagens, os alunos mais jovens podem precisar de limites mais claros",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "b2-12.shadowing.07",
+        "displayText": "Even adults find that difficult sometimes",
+        "translation": "Até mesmo os adultos acham isso difícil às vezes",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.08",
+        "displayText": "True. That’s why responsibility shouldn’t fall entirely on the students",
+        "translation": "Verdade. É por isso que a responsabilidade não deve recair inteiramente sobre os alunos",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "b2-12.shadowing.09",
+        "displayText": "So schools and families would need to agree on the rules",
+        "translation": "Assim, escolas e famílias precisariam concordar com as regras",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.10",
+        "displayText": "Yes. Despite the practical challenges, a shared approach could work better",
+        "translation": "Sim. Apesar dos desafios práticos, uma abordagem compartilhada poderia funcionar melhor",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "b2-12.shadowing.11",
+        "displayText": "I’d be more comfortable with that than with a rule that ignores individual needs",
+        "translation": "Eu me sentiria mais confortável com isso do que com uma regra que ignora as necessidades individuais",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "b2-12.shadowing.12",
+        "displayText": "Me too. The aim should be better learning, not simply fewer devices",
+        "translation": "Eu também. O objetivo deveria ser um aprendizado melhor, não simplesmente menos dispositivos",
+        "speakerId": "noah-ellis"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ruby-bennett",
+        "name": "Ruby",
+        "avatarUrl": "/flashcards/course-characters/ruby-bennett/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      },
+      {
+        "id": "noah-ellis",
+        "name": "Noah",
+        "avatarUrl": "/flashcards/course-characters/noah-ellis/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      }
+    ]
+  },
+  "publishedEnvironments": [
+    "staging"
+  ],
+  "voice": {
+    "prompt": "Send me a voice note: agree on a proportionate phone policy and test it against an omitted case",
+    "duration": "90–120 seconds",
+    "starters": [
+      "Although…, …",
+      "Despite…, …",
+      "… whereas…"
+    ],
+    "closing": "Finish with one question for your teacher"
+  }
+}
