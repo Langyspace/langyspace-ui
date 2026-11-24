@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
+  playPreparedAudio,
   resetPreparedAudio,
   usePreparedAudio,
 } from '../shared/usePreparedAudio'
@@ -46,18 +47,17 @@ export function useB201Speech(): LessonSpeech {
           setPaused(false)
         }
       }
-      audio.onerror = () => {
+      const failed = () => {
         if (token === generation.current && current.current === audio) {
           setPlayingId(undefined)
           setError('Audio unavailable. Try again.')
         }
       }
       setPlayingId(line.id)
-      void audio.play().catch(() => {
-        if (token === generation.current && current.current === audio) {
-          setPlayingId(undefined)
-          setError('Audio unavailable. Try again.')
-        }
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          token === generation.current && current.current === audio,
+        onFailure: failed,
       })
     },
     [stop, preparedAudio],
@@ -80,10 +80,13 @@ export function useB201Speech(): LessonSpeech {
     const audio = current.current
     if (!audio) return
     if (audio.paused) {
-      void audio
-        .play()
-        .then(() => setPaused(false))
-        .catch(() => setError('Audio unavailable. Try again.'))
+      const token = generation.current
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          token === generation.current && current.current === audio,
+        onStarted: () => setPaused(false),
+        onFailure: () => setError('Audio unavailable. Try again.'),
+      })
     } else {
       audio.pause()
       setPaused(true)

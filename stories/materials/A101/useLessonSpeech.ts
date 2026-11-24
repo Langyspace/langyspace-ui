@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import provenance from './audio-provenance.json'
 import {
+  playPreparedAudio,
   resetPreparedAudio,
   usePreparedAudio,
 } from '../shared/usePreparedAudio'
@@ -71,9 +72,12 @@ export function useLessonSpeech() {
             setPaused(false)
           }
         }
-        audio.onerror = fail
         audio.onended = () => run(index + 1)
-        void audio.play().catch(fail)
+        playPreparedAudio(audio, {
+          isCurrent: () =>
+            request === version.current && current.current === audio,
+          onFailure: fail,
+        })
       }
       run(0)
     },
@@ -93,11 +97,13 @@ export function useLessonSpeech() {
     const audio = current.current
     if (!audio) return
     if (audio.paused) {
-      void audio
-        .play()
-        .catch(() =>
+      const request = version.current
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          request === version.current && current.current === audio,
+        onFailure: () =>
           setError('Não foi possível tocar o áudio. Tente novamente.'),
-        )
+      })
       setPaused(false)
     } else {
       audio.pause()

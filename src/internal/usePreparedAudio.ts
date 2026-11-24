@@ -27,9 +27,15 @@ export function usePreparedAudio(sources: readonly string[]) {
     return audio
   }, [])
   useEffect(() => {
-    for (const src of new Set(sources)) {
-      if (src) prepare(src)
+    const owned = new Set(sources.filter(Boolean))
+    for (const [src, audio] of pool.current) {
+      if (owned.has(src)) continue
+      resetPreparedAudio(audio)
+      audio.removeAttribute('src')
+      audio.load()
+      pool.current.delete(src)
     }
+    for (const src of owned) prepare(src)
   }, [sources, prepare])
   useEffect(() => {
     const recordings = pool.current

@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { playPreparedAudio } from './playPreparedAudio'
 import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
 import type {
   PreparedRecording,
@@ -57,28 +58,29 @@ export function useRecordedAudio(clips: readonly PreparedRecording[]) {
           setPlayingId(line.id)
           setPaused(false)
         }
-        audio.onerror = fail
         audio.onended = () => run(index + 1)
-        void audio.play().catch(fail)
+        playPreparedAudio(audio, {
+          isCurrent: () =>
+            request === version.current && current.current === audio,
+          onFailure: fail,
+        })
       }
       run(0)
     },
     [stop, preparedAudio, clips],
   )
-  useEffect(
-    () => () => {
-      version.current++
-      if (current.current) resetPreparedAudio(current.current)
-    },
-    [],
-  )
+  const scope = JSON.stringify(clips)
+  useEffect(() => stop, [scope, stop])
   const togglePause = () => {
     const audio = current.current
     if (!audio) return
     if (audio.paused) {
-      void audio
-        .play()
-        .catch(() => setError('Audio could not play. Please try again.'))
+      const request = version.current
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          request === version.current && current.current === audio,
+        onFailure: () => setError('Audio could not play. Please try again.'),
+      })
       setPaused(false)
     } else {
       audio.pause()

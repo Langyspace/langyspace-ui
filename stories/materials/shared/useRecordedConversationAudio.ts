@@ -10,7 +10,11 @@ import type {
   RecordedConversationState,
 } from './RecordedDialoguePlayback.types'
 
-import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
+import {
+  playPreparedAudio,
+  resetPreparedAudio,
+  usePreparedAudio,
+} from './usePreparedAudio'
 
 const idle = (): RecordedConversationState => ({ status: 'idle', error: '' })
 const dispose = resetPreparedAudio
@@ -21,7 +25,7 @@ export function useRecordedConversationAudio(
   conversation: RecordedConversationDefinition | undefined,
 ) {
   const preparedAudio = usePreparedAudio(
-    conversation?.turns.map((turn) => turn.src) ?? [],
+    active ? (conversation?.turns.map((turn) => turn.src) ?? []) : [],
   )
   const [state, setState] = useState<RecordedConversationState>(idle)
   const stateRef = useRef(state)
@@ -106,13 +110,11 @@ export function useRecordedConversationAudio(
     }
     const play = (token: number, audio: HTMLAudioElement) => {
       const transport = ++attempt.current
-      try {
-        void audio.play().catch(() => {
-          if (transport === attempt.current) fail(token, audio)
-        })
-      } catch {
-        if (transport === attempt.current) fail(token, audio)
-      }
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          transport === attempt.current && owns(token, audio) && intent.current,
+        onFailure: () => fail(token, audio),
+      })
     }
     const audio = player.current
     if (stateRef.current.status === 'loading') {
@@ -183,7 +185,6 @@ export function useRecordedConversationAudio(
       }
       advance.current = end
       next.onended = end
-      next.onerror = () => fail(token, next)
       play(token, next)
     }
     run(0)

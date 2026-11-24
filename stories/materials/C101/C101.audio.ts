@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
+  playPreparedAudio,
   resetPreparedAudio,
   usePreparedAudio,
 } from '../shared/usePreparedAudio'
@@ -49,10 +50,13 @@ export function useC101Audio() {
           setPaused(false)
           setError('The recording could not play. Try again.')
         }
-        audio.onerror = failed
         setPlayingId(id)
         setPaused(false)
-        void audio.play().catch(failed)
+        playPreparedAudio(audio, {
+          isCurrent: () =>
+            current === revision.current && element.current === audio,
+          onFailure: failed,
+        })
       }
       run(0)
     },
@@ -61,10 +65,14 @@ export function useC101Audio() {
   const togglePause = () => {
     if (!element.current) return
     if (element.current.paused) {
-      void element.current
-        .play()
-        .then(() => setPaused(false))
-        .catch(() => setError('The recording could not play. Try again.'))
+      const audio = element.current
+      const current = revision.current
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          current === revision.current && element.current === audio,
+        onStarted: () => setPaused(false),
+        onFailure: () => setError('The recording could not play. Try again.'),
+      })
     } else {
       element.current.pause()
       setPaused(true)

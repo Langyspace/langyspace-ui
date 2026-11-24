@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
+import { playPreparedAudio } from '../../../src/internal/playPreparedAudio'
 import { routineRecordings } from './InfluencerRoutine.recordings'
 
 /** One native player across both previews: leaving/changing activity always cancels the previous clip. */
@@ -49,8 +50,10 @@ export function useRoutinePracticeAudio(active: boolean) {
       setPlaying(undefined)
       setError('Audio could not play. Try again')
     }
-    audio.onerror = fail
-    void audio.play().catch(fail)
+    playPreparedAudio(audio, {
+      isCurrent: () => token === version.current && current.current === audio,
+      onFailure: fail,
+    })
   }
   return { play, stop, playingId, error }
 }

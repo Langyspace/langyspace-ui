@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {
+  playPreparedAudio,
   resetPreparedAudio,
   usePreparedAudio,
 } from '../shared/usePreparedAudio'
@@ -75,8 +76,11 @@ export function useB101Audio() {
           }
         }
         audio.onended = () => run(index + 1)
-        audio.onerror = fail
-        void audio.play().catch(fail)
+        playPreparedAudio(audio, {
+          isCurrent: () =>
+            token === request.current && player.current === audio,
+          onFailure: fail,
+        })
       }
       run(0)
     },
@@ -88,11 +92,9 @@ export function useB101Audio() {
     if (audio.paused) {
       const token = request.current
       setPaused(false)
-      void audio.play().catch(() => {
-        if (token === request.current) {
-          setPlayingId(undefined)
-          setError('Could not resume the audio. Try again.')
-        }
+      playPreparedAudio(audio, {
+        isCurrent: () => token === request.current && player.current === audio,
+        onFailure: () => setError('Could not resume the audio. Try again.'),
       })
     } else {
       audio.pause()

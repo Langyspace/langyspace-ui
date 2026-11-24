@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { resetPreparedAudio, usePreparedAudio } from './usePreparedAudio'
+import {
+  resetPreparedAudio,
+  usePreparedAudio,
+  playPreparedAudio,
+} from './usePreparedAudio'
 /** Same single-player/request-guard pattern as the recorded B1/A1 dialogue controllers. */
 export function useSceneAudio(
   active: boolean,
   clips: Readonly<Record<string, string>>,
 ) {
-  const preparedAudio = usePreparedAudio(Object.values(clips))
+  const preparedAudio = usePreparedAudio(active ? Object.values(clips) : [])
   const playerRef = useRef<HTMLAudioElement | null>(null)
   const requestRef = useRef(0)
   const [playingId, setPlayingId] = useState<string>()
@@ -37,16 +41,22 @@ export function useSceneAudio(
         setPlayingId(undefined)
         setError('Não foi possível tocar o áudio. Tente novamente.')
       }
-      audio.onerror = fail
       audio.onended = () => {
         if (token === requestRef.current) stop()
       }
-      void audio.play().catch(fail)
+      playPreparedAudio(audio, {
+        isCurrent: () =>
+          token === requestRef.current && playerRef.current === audio,
+        onFailure: fail,
+      })
     },
     [active, clips, release, stop, preparedAudio],
   )
+  const scope = JSON.stringify(
+    Object.entries(clips).sort(([a], [b]) => a.localeCompare(b)),
+  )
   // Changing pages releases the previous page's external playerRef and its UI state.
-  useEffect(() => stop, [active, stop])
+  useEffect(() => stop, [active, scope, stop])
   useEffect(() => {
     const hide = () => {
       if (document.hidden) stop()
