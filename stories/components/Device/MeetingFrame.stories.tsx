@@ -64,6 +64,7 @@ export const IllustratedSpotlight: Story = {
   args: {
     layout: 'spotlight',
     insetPresentation: 'video',
+    stageTone: 'sky',
     main: { name: 'Teacher', imageUrl: teacherScene },
     inset: { name: 'Student', imageUrl: learnerScene },
   },

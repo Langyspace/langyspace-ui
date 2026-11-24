@@ -1,0 +1,5 @@
+# Technical plan
+
+The current square teacher image is contained in a 16:9 dark stage. Meeting.Self adds padding-bottom10 and a different generic span recipe. Add an optional backward-compatible stageTone to MeetingFrame, sampled sky foundation and independent inset box with the same Name component; keep the default dark and full-image contain behavior. Video inset uses the square source ratio, zero padding and enough width for a readable 12px badge.
+
+Wheel rearm currently compares every new push with the original maximum (50% peak/35% rise), so a large early push can permanently veto weaker ones while momentum keeps event gaps under160ms. It also requires three strict rises, rejecting a new rise followed by plateau. Use a local valley, two sustained nondecreasing recovery packets, at least12px recovery and2x valley. Small rebounds and monotone tails remain spent. No timeout navigation or queues added. Actual hardware phase inference remains heuristic, to be reviewed by user on trackpad.

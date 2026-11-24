@@ -10,7 +10,11 @@ export const Root = styled(Meeting.Meet).withConfig({
   min-width: 0;
   box-sizing: border-box;
 `
-export const Stage = styled(Meeting.Main)`
+const stageBackground = (tone: 'dark' | 'sky') =>
+  tone === 'sky' ? theme.simulations.illustratedStage : theme.simulations.stage
+
+export const Stage = styled(Meeting.Main)<{ $tone: 'dark' | 'sky' }>`
+  background: ${(p) => stageBackground(p.$tone)};
   > img {
     display: block;
     width: 100%;
@@ -21,11 +25,27 @@ export const Stage = styled(Meeting.Main)`
     align-self: center;
   }
 `
-export const Self = styled(Meeting.Self)`
+export const Self = styled.div<{ $video: boolean }>`
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 24%;
+  min-width: ${(p) => (p.$video ? theme.spacing[24] : '0')};
+  min-height: 0;
+  aspect-ratio: ${(p) => (p.$video ? '1' : '4 / 3')};
+  background: ${theme.simulations.controls};
+  border: 2px solid ${theme.simulations.canvas};
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
   > img {
     display: block;
     width: 100%;
     height: 100%;
+    min-width: 0;
+    min-height: 0;
     object-fit: contain;
     border-radius: inherit;
   }
@@ -43,14 +63,14 @@ export const SplitStage = styled.div`
   min-width: 0;
   min-height: 0;
 `
-export const Tile = styled.div`
+export const Tile = styled.div<{ $tone: 'dark' | 'sky' }>`
   position: relative;
   display: grid;
   place-items: center;
   min-width: 0;
   min-height: 0;
   border-radius: ${theme.radius.lg};
-  background: ${theme.simulations.stage};
+  background: ${(p) => stageBackground(p.$tone)};
   > img {
     display: block;
     width: 100%;
@@ -61,8 +81,14 @@ export const Tile = styled.div`
     border-radius: inherit;
   }
 `
+export const Name = styled(Meeting.Name)`
+  max-width: calc(100% - 20px);
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`
 export {
-  Name,
   Bar as Controls,
   Control,
 } from '../InteractiveMaterial/InterviewSimulation.styles'

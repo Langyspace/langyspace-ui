@@ -22,6 +22,7 @@ export function FreeConversationPage({
       <MeetingFrame
         aria-label="Your conversation with your teacher"
         layout="spotlight"
+        stageTone="sky"
         insetPresentation="video"
         main={{
           name: 'Teacher',

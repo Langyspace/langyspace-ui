@@ -317,3 +317,10 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - When homework is shown inside a phone, render the actual Student exercise components on their light application canvas. A list of assignments is not a substitute for the exercise screen. Reuse approved lesson content/media and do not invent published destinations or saved progress.
 - A closing with Flashcards, Shadowing and a voice note has one title/instruction above three canonical phone frames; the message assignment uses the current teacher identity. Narrow screens select one device without shrinking all three to illegible sizes.
 - Listening with a phone and comprehension uses balanced centred tracks when requested; default legacy layouts remain unchanged.
+
+
+### Enquadramento de reunião e pontos de vocabulário — feedback de 24/11
+
+- Em vídeos ilustrados, preencher a área do tile com o fundo da cena sem cortar rostos; usar a variação de fundo do MeetingFrame e o mesmo badge de nome nos dois participantes
+- O nome é uma sobreposição do tile, não uma faixa de espaço vazio abaixo da foto
+- Hotspots de roupa devem apontar para a peça ou o cabide, evitando regiões íntimas do corpo do personagem

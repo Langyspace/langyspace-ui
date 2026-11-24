@@ -9,6 +9,7 @@ export function MeetingFrame({
   main,
   inset,
   layout = 'spotlight',
+  stageTone = 'dark',
   insetPresentation = 'avatar',
   onParticipantImageError,
   ...props
@@ -25,7 +26,7 @@ export function MeetingFrame({
               ['inset', inset],
             ] as const
           ).map(([position, person]) => (
-            <S.Tile key={position}>
+            <S.Tile key={position} $tone={stageTone}>
               {person.imageUrl &&
               person.imageUrl !==
                 (position === 'main' ? failedMainImage : failedInsetImage) ? (
@@ -46,7 +47,7 @@ export function MeetingFrame({
           ))}
         </S.SplitStage>
       ) : (
-        <S.Stage>
+        <S.Stage $tone={stageTone}>
           {main.imageUrl && main.imageUrl !== failedMainImage ? (
             <img
               src={main.imageUrl}
@@ -60,7 +61,7 @@ export function MeetingFrame({
             <Avatar size="xl" initials={main.name.slice(0, 1)} />
           )}
           <S.Name>{main.name}</S.Name>
-          <S.Self>
+          <S.Self $video={insetPresentation === 'video'}>
             {insetPresentation === 'video' &&
             inset.imageUrl &&
             inset.imageUrl !== failedInsetImage ? (
@@ -82,7 +83,7 @@ export function MeetingFrame({
                 onImageError={(url) => onParticipantImageError?.('inset', url)}
               />
             )}
-            <span>{inset.name}</span>
+            <S.Name title={inset.name}>{inset.name}</S.Name>
           </S.Self>
         </S.Stage>
       )}

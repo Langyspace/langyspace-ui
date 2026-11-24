@@ -21,8 +21,8 @@ const POINTER_NATIVE_SELECTOR =
 const WHEEL_GESTURE_IDLE_MS = 160
 // Repeated pushes may share a wheel transaction. Require a sustained recovery
 // relative to the preceding push; small rebounds in its momentum tail stay spent.
-const WHEEL_REARM_RISE_PACKETS = 3
-const WHEEL_REARM_MIN_PEAK_PX = 24
+const WHEEL_REARM_RISE_PACKETS = 2
+const WHEEL_REARM_MIN_PEAK_PX = 12
 const WHEEL_REARM_MIN_RISE_PX = 12
 // Preserve 2–4px tap jitter. Real scroll starts delivered their last cancelable
 // move as early as 4.63px; waiting for 5/16px handed control to native snap.
@@ -144,15 +144,18 @@ export function useSlideGestures({
         }
       } else {
         wheelTrough = Math.min(wheelTrough, magnitude)
+        // A real renewed push may rise then briefly plateau. Compare its recovery
+        // with the local valley, not the largest packet of an earlier strong push.
         wheelRisePackets =
-          magnitude > wheelPrevious + 0.5 ? wheelRisePackets + 1 : 0
+          magnitude > wheelTrough + 0.5 && magnitude >= wheelPrevious - 0.5
+            ? wheelRisePackets + 1
+            : 0
         // This is intent inference, not a browser-provided momentum phase.
         // Cancelability is not a gesture boundary; observe every owned packet.
         if (
           wheelRisePackets >= WHEEL_REARM_RISE_PACKETS &&
-          magnitude >= Math.max(WHEEL_REARM_MIN_PEAK_PX, wheelPeak * 0.5) &&
-          magnitude - wheelTrough >=
-            Math.max(WHEEL_REARM_MIN_RISE_PX, wheelPeak * 0.35) &&
+          magnitude >= WHEEL_REARM_MIN_PEAK_PX &&
+          magnitude - wheelTrough >= WHEEL_REARM_MIN_RISE_PX &&
           magnitude >= wheelTrough * 2
         )
           resetWheelImpulse(magnitude)

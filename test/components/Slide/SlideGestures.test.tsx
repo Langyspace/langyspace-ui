@@ -173,6 +173,51 @@ describe('SlideDeck local page gestures', () => {
     })
   })
 
+  it('accepts a weaker renewed push without waiting for the previous tail to become idle', () => {
+    const { wheel, scrollTo } = fixture()
+    for (const delta of [240, 160, 80, 24, 6]) wheel(delta)
+    expect(scrollTo).toHaveBeenCalledOnce()
+    for (const delta of [10, 22, 22]) wheel(delta)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'instant',
+    })
+  })
+
+  it('recognizes a renewed rise followed by a plateau, including noncancelable packets', () => {
+    const { wheel, scrollTo } = fixture()
+    for (const delta of [80, 50, 20, 5]) wheel(delta)
+    wheel(20, { cancelable: false })
+    expect(scrollTo).toHaveBeenCalledOnce()
+    wheel(20, { cancelable: false })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({
+      top: 1000,
+      behavior: 'instant',
+    })
+  })
+
+  it('does not confuse small momentum rebounds or a long decaying tail with another push', () => {
+    const { wheel, scrollTo } = fixture()
+    for (const delta of [160, 100, 60, 25, 8, 11, 15, 14, 9, 7, 10, 16, 13, 6])
+      wheel(delta)
+    for (let delta = 5; delta > 0.2; delta *= 0.92) wheel(delta)
+    expect(scrollTo).toHaveBeenCalledOnce()
+  })
+
+  it('lets a live renewed push supersede a smooth destination without a deferred page turn', () => {
+    const { wheel, scrollTo, scroll } = fixture({ reduced: false })
+    scrollTo.mockImplementation(() => {})
+    for (const delta of [120, 70, 30, 5]) wheel(delta)
+    expect(scrollTo).toHaveBeenCalledOnce()
+    for (const delta of [10, 24, 24]) wheel(delta)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+    scroll(1000)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+  })
+
   it('responds to a quick reversal without advancing another page from the same forward burst', () => {
     const { wheel, scrollTo } = fixture()
     wheel(120)
@@ -183,55 +228,48 @@ describe('SlideDeck local page gestures', () => {
     expect(scrollTo).toHaveBeenCalledTimes(2)
   })
 
-  it('lets a fresh burst continue after an earlier smooth transition settles', () => {
+  it('starts a separated fresh burst immediately during smooth navigation', () => {
     const { wheel, scrollTo, scroll } = fixture({ reduced: false })
     scrollTo.mockImplementation(() => {})
     wheel(120)
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenCalledOnce()
-    scroll(500)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+    scroll(1000)
     wheel(60)
-    expect(scrollTo).toHaveBeenLastCalledWith({
-      top: 1000,
-      behavior: 'smooth',
-    })
     wheel(30)
     expect(scrollTo).toHaveBeenCalledTimes(2)
   })
 
-  it('retains one isolated fresh detent during a previous smooth transition', async () => {
+  it('does not defer an isolated new detent until scroll-end', () => {
     const { wheel, scrollTo, scroll } = fixture({ reduced: false })
     scrollTo.mockImplementation(() => {})
     wheel(120)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 500, behavior: 'smooth' })
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenCalledOnce()
-    scroll(500)
-    await vi.waitFor(() => {
-      expect(scrollTo).toHaveBeenLastCalledWith({
-        top: 1000,
-        behavior: 'smooth',
-      })
-    })
-    wheel(60)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+    scroll(1000)
     expect(scrollTo).toHaveBeenCalledTimes(2)
   })
 
   it.each(['Home', 'Back'])(
-    'does not replay a queued wheel after a later %s navigation request',
+    'does not replay a prior wheel after a later %s navigation request',
     async (navigation) => {
       const { wheel, scrollTo, scroll, viewport } = fixture({ reduced: false })
       scrollTo.mockImplementation(() => {})
       wheel(120)
       scroll(350)
       wheel(120, { gap: 200 })
-      expect(scrollTo).toHaveBeenCalledOnce()
+      expect(scrollTo).toHaveBeenCalledTimes(2)
       if (navigation === 'Home') fireEvent.keyDown(viewport, { key: 'Home' })
       else fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
-      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
-      scroll(0)
+      const top = 0 // Header Back follows the currently observed page, unlike live wheel stepping
+      expect(scrollTo).toHaveBeenLastCalledWith({ top, behavior: 'smooth' })
+      scroll(top)
       await new Promise((resolve) => setTimeout(resolve, 10))
-      expect(scrollTo).toHaveBeenCalledTimes(2)
-      expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
+      expect(scrollTo).toHaveBeenCalledTimes(3)
+      expect(scrollTo).toHaveBeenLastCalledWith({ top, behavior: 'smooth' })
     },
   )
 
@@ -299,9 +337,11 @@ describe('SlideDeck local page gestures', () => {
         .defaultPrevented,
     ).toBe(false)
     expect(wheel(30, { deltaX: 120, gap: 200 }).defaultPrevented).toBe(false)
-    expect(wheel(120).defaultPrevented).toBe(false)
     expect(wheel(120, { ctrlKey: true, gap: 200 }).defaultPrevented).toBe(false)
     expect(scrollTo).not.toHaveBeenCalled()
+    // A later vertical packet can establish intent after the lateral lead-in.
+    expect(wheel(120).defaultPrevented).toBe(true)
+    expect(scrollTo).toHaveBeenCalledOnce()
   })
 
   it('keeps continuous mode native and hides page controls', () => {
@@ -388,19 +428,18 @@ describe('SlideDeck local page gestures', () => {
     },
   )
 
-  it('does not start another wheel page before a previous page settles', () => {
+  it('ignores the same impulse during animation but accepts a new one immediately', () => {
     const { wheel, scrollTo, scroll } = fixture({ reduced: false })
     scrollTo.mockImplementation(() => {})
     wheel(120)
-    expect(scrollTo).toHaveBeenCalledTimes(1)
+    wheel(120)
+    expect(scrollTo).toHaveBeenCalledOnce()
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenCalledTimes(1)
-    scroll(500)
+    expect(scrollTo).toHaveBeenCalledTimes(2)
+    expect(scrollTo).toHaveBeenLastCalledWith({ top: 1000, behavior: 'smooth' })
+    scroll(1000)
     wheel(120, { gap: 200 })
-    expect(scrollTo).toHaveBeenLastCalledWith({
-      top: 1000,
-      behavior: 'smooth',
-    })
+    expect(scrollTo).toHaveBeenCalledTimes(2)
   })
 
   it('unlocks navigation at the live page anchor after earlier content grows', () => {

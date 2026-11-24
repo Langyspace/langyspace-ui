@@ -780,6 +780,8 @@ const simulations = {
   stackWidth: '560px',
   canvas: '#1F1F1F',
   stage: '#2B2B2E',
+  // Sampled from the approved illustrated meeting portrait, without cropping its face.
+  illustratedStage: '#AAD5F4',
   foreground: '#FFFFFF',
   muted: '#C9C9C9',
   controls: '#3C4043',
