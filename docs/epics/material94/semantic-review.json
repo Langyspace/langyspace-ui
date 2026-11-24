@@ -1,0 +1,91 @@
+{
+  "scope": "All 50 course triples reviewed in context; five third turns revised to add a distinct communicative function, plus the A103 job question kept in the taught be form",
+  "changes": [
+    {
+      "key": "a1-09",
+      "id": "s_personal",
+      "before": {
+        "id": "personal.follow-up94",
+        "prompt": "How can I get there from here?",
+        "cue": "Give a short route, then ask me to check",
+        "hint": "Go … Then … Is that clear?",
+        "answer": "One possible response"
+      },
+      "after": {
+        "prompt": "Can you ask me to repeat one direction?",
+        "cue": "Ask me to repeat the part you didn’t hear",
+        "hint": "Sorry, can you say that again?"
+      }
+    },
+    {
+      "key": "b1-07",
+      "id": "s_personal",
+      "before": {
+        "id": "personal.follow-up94",
+        "prompt": "What would you do differently next time?",
+        "cue": "Connect a past lesson with a future action",
+        "hint": "If I had …, I would have … Next time, I’ll …",
+        "answer": "One possible response"
+      },
+      "after": {
+        "prompt": "What would you say to a friend who made the same mistake?",
+        "cue": "Offer support without blame and mention one alternative",
+        "hint": "You could have …, but … We can … now"
+      }
+    },
+    {
+      "key": "b1-11",
+      "id": "s_personal",
+      "before": {
+        "id": "personal.follow-up94",
+        "prompt": "How would you introduce that person to me?",
+        "cue": "Connect a name with a useful identifying detail",
+        "hint": "This is …, who … What would you like to ask?",
+        "answer": "One possible response"
+      },
+      "after": {
+        "prompt": "What would you ask them when you meet?",
+        "cue": "Identify the person, then form a genuine question",
+        "hint": "I’d ask the person who …, “...?” What would you ask?"
+      }
+    },
+    {
+      "key": "b2-03",
+      "id": "s_personal",
+      "before": {
+        "id": "personal.follow-up94",
+        "prompt": "What other outcome might have been possible?",
+        "cue": "Explore an alternative without claiming it was inevitable",
+        "hint": "If … had …, … might have … How do you see it?",
+        "answer": "One possible response"
+      },
+      "after": {
+        "prompt": "How would you explain your decision to someone who would have chosen differently?",
+        "cue": "Acknowledge their alternative and defend your choice without claiming certainty",
+        "hint": "I can see why you’d … If I hadn’t …, I might … now, but I can’t know …"
+      }
+    },
+    {
+      "key": "b2-09",
+      "id": "s_personal",
+      "before": {
+        "id": "personal.follow-up94",
+        "prompt": "How would you check the remaining uncertainty?",
+        "cue": "Distinguish a memory from something that still needs checking",
+        "hint": "I remember …, but I’m not certain about … Could you check …?",
+        "answer": "One possible response"
+      },
+      "after": {
+        "prompt": "What do you need to remember before you leave next time?",
+        "cue": "Set one future check and ask me to help you remember",
+        "hint": "I need to remember to … Can you remind me to …?"
+      }
+    },
+    {
+      "key": "a1-03",
+      "id": "s101",
+      "before": "What does this person do?",
+      "after": "What’s this person’s job?"
+    }
+  ]
+}
