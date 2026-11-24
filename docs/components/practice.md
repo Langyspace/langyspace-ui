@@ -524,13 +524,13 @@ O progresso é exposto como progressbar com limites finitos; loading é indeterm
 
 ## FlashcardSession
 
-Controlled Student practice renderer: one header, deck, front/back, audio actions, feedback slot and rating footer. Used by Student FlashcardsV2, Teacher StudentFlashcardSession and the InfluencerRoutine homework phone. Products map their card data and own all audio, SRS intervals, progress writes, timers, focus refs and exit actions. `card.example` and `card.backExample` are separate display slots. Image failure falls back to `emoji` per card/image identity. `disabled` prevents actions during exit/feedback; `ratingDisabled` additionally locks review submission. `feedback` uses the existing FlashcardFeedback owner outside the animated swiper. With no card, children supply loading/completion content. Labels are supplied by the product's localization.
+Controlled Student practice renderer: one header, deck, front/back, audio actions, feedback slot and rating footer. Used by Student FlashcardsV2, Teacher StudentFlashcardSession and the InfluencerRoutine homework phone. Products map their card data and own all audio, SRS intervals, progress writes, timers, focus refs and exit actions. `card.example` and `card.backExample` are separate display slots. Image failure falls back to `emoji` per card/image identity. `disabled` prevents actions during exit/feedback; `ratingDisabled` additionally locks review submission. `feedback` uses the existing FlashcardFeedback owner outside the animated swiper. Children supply an inline status or, with no card, loading/completion content. Labels are supplied by the product's localization.
 
 FlashcardFrame `layout="session"` opts into the responsive recipe previously owned by Student; its default `content` remains unchanged for existing embeds. Do not override `--fc-*` or copy this tree in a consumer. The header, spacing and controls are shared, not a screenshot replica.
 
 ## ShadowingSession
 
-Controlled Student reader, header/progress, context stack, optional speaker, translation, repetitions and playback dock. Used by Student ShadowingPlayer, Teacher ShadowingPreviewSession and InfluencerRoutine. `progress` is a fraction from 0 to 1. Products supply timed ShadowingWord nodes as `phrase` and their existing playback/speed/translation callbacks as `controls`. Omit `phrase` for consumer-owned loading/completion children. Speaker data is optional and is never inferred. The UI library does not fetch activity data, start media or save practice progress.
+Controlled Student reader, header/progress, context stack, optional speaker, translation, repetitions and playback dock. Used by Student ShadowingPlayer, Teacher ShadowingPreviewSession and InfluencerRoutine. `progress` is a fraction from 0 to 1. Products supply timed ShadowingWord nodes as `phrase` and their existing playback/speed/translation callbacks as `controls`. Children supply an inline status or, with no `phrase`, consumer-owned loading/completion content. Speaker data is optional and is never inferred. The UI library does not fetch activity data, start media or save practice progress.
 
 ### Adoption and updates
 

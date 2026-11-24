@@ -103,3 +103,14 @@ it('falls back only for a failed card image, not the next image', () => {
     '/sleep.webp',
   )
 })
+
+it('keeps an active media error inside the shared frame', () => {
+  const view = render(
+    <FlashcardSession {...base}>
+      <p role="alert">Audio could not play</p>
+    </FlashcardSession>,
+  )
+  expect(
+    view.container.querySelector('[data-ui-flashcard-session]'),
+  ).toContainElement(screen.getByRole('alert'))
+})

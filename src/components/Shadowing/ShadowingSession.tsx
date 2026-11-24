@@ -43,7 +43,7 @@ export function ShadowingSession<Speed extends string = string>({
           </S.BackButton>
           <SessionProgress name={name} counter={counter} value={progress} />
         </S.Header>
-        {phrase != null ? (
+        {phrase != null && (
           <>
             <ShadowingReader>
               <ShadowingPhraseStack key={phraseKey} rising={rising}>
@@ -70,9 +70,8 @@ export function ShadowingSession<Speed extends string = string>({
               {controls && <PracticePlaybackControls {...controls} />}
             </ShadowingControlDock>
           </>
-        ) : (
-          children
         )}
+        {children}
       </ShadowingPanel>
     </S.Frame>
   )

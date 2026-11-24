@@ -137,8 +137,9 @@ export function RoutineHomework({ active }: { active: boolean }) {
                   }),
                 )}
                 onRate={nextCard}
-              />
-              {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
+              >
+                {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
+              </FlashcardSession>
             </MobileFrame>
           ),
         },
@@ -194,8 +195,9 @@ export function RoutineHomework({ active }: { active: boolean }) {
                   translationVisible: translation,
                   onTranslationToggle: () => translate(!translation),
                 }}
-              />
-              {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
+              >
+                {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
+              </ShadowingSession>
             </MobileFrame>
           ),
         },

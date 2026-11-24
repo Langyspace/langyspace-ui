@@ -55,7 +55,7 @@ export function FlashcardSession({
         </S.BackButton>
         <FlashcardProgress {...progress} />
       </S.Header>
-      {card ? (
+      {card && (
         <>
           <FlashcardStage>
             <FlashcardDeck>
@@ -166,9 +166,8 @@ export function FlashcardSession({
             </S.Footer>
           )}
         </>
-      ) : (
-        children
       )}
+      {children}
     </S.Root>
   )
 }
