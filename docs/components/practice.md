@@ -521,3 +521,17 @@ FlashcardFrame segue a mesma distribuição compacta com `header`, `FlashcardSta
 Progresso segmentado e contador são uma unidade com label obrigatório. Current/total vêm do produto; revealed/complete definem a apresentação do passo atual/conclusão. loading usa quatro segmentos skeleton e um contador oculto.
 
 O progresso é exposto como progressbar com limites finitos; loading é indeterminado e busy. Zero/valores não finitos são limitados sem inventar dados da sessão. A UI limita a apresentação a 20 segmentos e não agenda revisões nem persiste progresso.
+
+## FlashcardSession
+
+Controlled Student practice renderer: one header, deck, front/back, audio actions, feedback slot and rating footer. Used by Student FlashcardsV2, Teacher StudentFlashcardSession and the InfluencerRoutine homework phone. Products map their card data and own all audio, SRS intervals, progress writes, timers, focus refs and exit actions. `card.example` and `card.backExample` are separate display slots. Image failure falls back to `emoji` per card/image identity. `disabled` prevents actions during exit/feedback; `ratingDisabled` additionally locks review submission. `feedback` uses the existing FlashcardFeedback owner outside the animated swiper. With no card, children supply loading/completion content. Labels are supplied by the product's localization.
+
+FlashcardFrame `layout="session"` opts into the responsive recipe previously owned by Student; its default `content` remains unchanged for existing embeds. Do not override `--fc-*` or copy this tree in a consumer. The header, spacing and controls are shared, not a screenshot replica.
+
+## ShadowingSession
+
+Controlled Student reader, header/progress, context stack, optional speaker, translation, repetitions and playback dock. Used by Student ShadowingPlayer, Teacher ShadowingPreviewSession and InfluencerRoutine. `progress` is a fraction from 0 to 1. Products supply timed ShadowingWord nodes as `phrase` and their existing playback/speed/translation callbacks as `controls`. Omit `phrase` for consumer-owned loading/completion children. Speaker data is optional and is never inferred. The UI library does not fetch activity data, start media or save practice progress.
+
+### Adoption and updates
+
+All three consumers import these same renderer owners. Product updates take effect after adopting a new immutable UI package; there is no runtime fetch of latest library code. Student and Teacher adoption changes accompany a source/hash-bound candidate package, while material previews import the same source owners at export time. Keep data/API/auth concerns in products and use stories for visual variants rather than creating another session stylesheet.

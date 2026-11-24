@@ -2677,6 +2677,76 @@ export const publicComponentContracts = [
   },
   {
     browserSmoke: complete,
+    exportName: 'FlashcardSession',
+    interactive: true,
+    ownerPath: 'src/components/Flashcard/FlashcardSession.tsx',
+    runtimeMarker: 'lsui-sc-flashcard-session',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/Flashcard/FlashcardSession.stories.tsx',
+      title: 'Flashcard/FlashcardSession',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Flashcard/FlashcardSession.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Flashcard/FlashcardSession.types.ts',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'flashcardsession',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/FlashcardsV2.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/StudentFlashcardSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'ShadowingSession',
+    interactive: true,
+    ownerPath: 'src/components/Shadowing/ShadowingSession.tsx',
+    runtimeMarker: 'lsui-sc-shadowing-session',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/Shadowing/ShadowingSession.stories.tsx',
+      title: 'Shadowing/ShadowingSession',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Shadowing/ShadowingSession.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Shadowing/ShadowingSession.types.ts',
+      documentation: {
+        path: 'docs/components/practice.md',
+        anchor: 'shadowingsession',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-student',
+          path: 'src/components/features/portal/ShadowingPlayer.tsx',
+        },
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/StudentLearningPreview/components/ShadowingPreviewSession/index.tsx',
+        },
+      ],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
     exportName: 'FlashcardFrame',
     interactive: false,
     ownerPath: 'src/components/Flashcard/FlashcardFrame.tsx',

@@ -5,32 +5,9 @@ import { MobileFrame } from '../../../src/components/Device/MobileFrame'
 import { MessagePhoneFrame } from '../../../src/components/Device/MessagePhoneFrame'
 import { DeviceGallery } from '../../../src/components/Device/DeviceGallery'
 import { MessageBubble } from '../../../src/components/Message/MessageBubble'
-import { IconButton } from '../../../src/components/IconButton/IconButton'
-import { FlashcardProgress } from '../../../src/components/Flashcard/FlashcardProgress'
-import { FlashcardStage } from '../../../src/components/Flashcard/FlashcardStage'
-import { FlashcardDeck } from '../../../src/components/Flashcard/FlashcardDeck'
-import { FlashcardGhost } from '../../../src/components/Flashcard/FlashcardGhost'
-import { FlashcardFlip } from '../../../src/components/Flashcard/FlashcardFlip'
-import { FlashcardSwiper } from '../../../src/components/Flashcard/FlashcardSwiper'
-import { FlashcardFace } from '../../../src/components/Flashcard/FlashcardFace'
-import { FlashcardFront } from '../../../src/components/Flashcard/FlashcardFront'
-import { FlashcardBack } from '../../../src/components/Flashcard/FlashcardBack'
-import { FlashcardWord } from '../../../src/components/Flashcard/FlashcardWord'
-import { FlashcardImagePanel } from '../../../src/components/Flashcard/FlashcardImagePanel'
-import { FlashcardAudioButton } from '../../../src/components/Flashcard/FlashcardAudioButton'
-import { FlashcardFlipButton } from '../../../src/components/Flashcard/FlashcardFlipButton'
-import { FlashcardFlipHint } from '../../../src/components/Flashcard/FlashcardFlipHint'
-import { FlashcardRatingButton } from '../../../src/components/Flashcard/FlashcardRatingButton'
-import { SessionProgress } from '../../../src/components/SessionProgress/SessionProgress'
-import { ShadowingReader } from '../../../src/components/Shadowing/ShadowingReader'
-import { ShadowingPhraseStack } from '../../../src/components/Shadowing/ShadowingPhraseStack'
-import { ShadowingContextPhrase } from '../../../src/components/Shadowing/ShadowingContextPhrase'
-import { ShadowingActivePhrase } from '../../../src/components/Shadowing/ShadowingActivePhrase'
+import { FlashcardSession } from '../../../src/components/Flashcard/FlashcardSession'
+import { ShadowingSession } from '../../../src/components/Shadowing/ShadowingSession'
 import { ShadowingWord } from '../../../src/components/Shadowing/ShadowingWord'
-import { ShadowingTranslation } from '../../../src/components/Shadowing/ShadowingTranslation'
-import { ShadowingControlDock } from '../../../src/components/Shadowing/ShadowingControlDock'
-import { ShadowingRepetitions } from '../../../src/components/Shadowing/ShadowingRepetitions'
-import { PracticePlaybackControls } from '../../../src/components/Practice/PracticePlaybackControls'
 import { useMaterialTeacher } from '../shared/MaterialTeacherContext'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { characterPortrait } from '../shared/characterPortraits'
@@ -102,13 +79,6 @@ export function RoutineHomework({ active }: { active: boolean }) {
         setPhrase((phraseIndex + 1) % phrases.length)
       } else repeat(repetitions + 1)
     })
-  const cardAudio = (
-    <FlashcardAudioButton
-      label="Ouvir"
-      playing={audio.playingId === card.id}
-      onClick={() => audio.play(card.id, card.audioText)}
-    />
-  )
   return (
     <DeviceGallery
       onActiveIdChange={audio.stop}
@@ -122,104 +92,53 @@ export function RoutineHomework({ active }: { active: boolean }) {
               screenMode="application"
               aria-label="Flashcards — your daily routine"
             >
-              <S.Cards aria-label="Flashcards: Your daily routine">
-                <S.Header>
-                  <IconButton
-                    aria-label="Recomeçar os flashcards"
-                    size="sm"
-                    onClick={() => {
-                      audio.stop()
-                      setCard(0)
-                      flip(false)
-                    }}
-                  >
-                    ↶
-                  </IconButton>
-                  <FlashcardProgress
-                    label={`${cardIndex + 1} de ${cards.length}`}
-                    current={cardIndex + 1}
-                    total={cards.length}
-                    revealed={flipped}
-                  />
-                </S.Header>
-                <FlashcardStage>
-                  <FlashcardDeck>
-                    <FlashcardGhost
-                      layer={2}
-                      obscured={flipped}
-                      aria-hidden="true"
-                    />
-                    <FlashcardGhost
-                      layer={1}
-                      obscured={flipped}
-                      aria-hidden="true"
-                    />
-                    <FlashcardSwiper>
-                      <FlashcardFlip flipped={flipped}>
-                        <FlashcardFace side="front">
-                          <FlashcardFront>
-                            <FlashcardFlipButton
-                              label="Virar cartão"
-                              onClick={() => flip(!flipped)}
-                            />
-                            <FlashcardImagePanel>
-                              <S.Picture
-                                src={card.image}
-                                alt="A moment from Ana’s routine"
-                              />
-                              {cardAudio}
-                            </FlashcardImagePanel>
-                            <FlashcardWord example={card.example}>
-                              {card.label}
-                            </FlashcardWord>
-                            <FlashcardFlipHint>
-                              Toque para virar
-                            </FlashcardFlipHint>
-                          </FlashcardFront>
-                        </FlashcardFace>
-                        <FlashcardFace side="back">
-                          {flipped && (
-                            <FlashcardBack
-                              term={
-                                <>
-                                  {cardAudio}
-                                  {card.label}
-                                </>
-                              }
-                              translation={translations[cardIndex]}
-                              example={card.example}
-                            />
-                          )}
-                        </FlashcardFace>
-                      </FlashcardFlip>
-                    </FlashcardSwiper>
-                  </FlashcardDeck>
-                </FlashcardStage>
-                <S.Rating>
-                  {flipped ? (
-                    <>
-                      <span>Lembrou?</span>
-                      <S.RatingRow>
-                        {(['again', 'hard', 'good', 'easy'] as const).map(
-                          (grade, i) => (
-                            <FlashcardRatingButton
-                              key={grade}
-                              grade={grade}
-                              interval=""
-                              onClick={nextCard}
-                            >
-                              {['De novo', 'Difícil', 'Bom', 'Fácil'][i]}
-                            </FlashcardRatingButton>
-                          ),
-                        )}
-                      </S.RatingRow>
-                    </>
-                  ) : (
-                    <span>Pense no significado e vire o cartão</span>
-                  )}
-                </S.Rating>
-                {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
-              </S.Cards>
+              <FlashcardSession
+                aria-label="Flashcards: Your daily routine"
+                backAction={{
+                  label: 'Recomeçar os flashcards',
+                  onClick: () => {
+                    audio.stop()
+                    setCard(0)
+                    flip(false)
+                  },
+                }}
+                progress={{
+                  label: `Progresso ${cardIndex + 1} de ${cards.length}`,
+                  current: cardIndex + 1,
+                  total: cards.length,
+                  revealed: flipped,
+                }}
+                card={{
+                  id: card.id,
+                  word: card.label,
+                  translation: translations[cardIndex],
+                  example: card.example,
+                  backExample: card.example,
+                  image: { src: card.image },
+                }}
+                flipped={flipped}
+                onFlip={() => flip(!flipped)}
+                audio={{
+                  label: 'Ouvir pronúncia',
+                  playing: audio.playingId === card.id,
+                  onFrontPlay: () => audio.play(card.id, card.audioText),
+                  onBackPlay: () => audio.play(card.id, card.audioText),
+                }}
+                labels={{
+                  flip: 'Virar card',
+                  flipHint: 'toque pra virar',
+                  rateQuestion: 'Você lembrava?',
+                }}
+                ratings={(['again', 'hard', 'good', 'easy'] as const).map(
+                  (grade, i) => ({
+                    grade,
+                    label: ['Errei', 'Difícil', 'Bom', 'Fácil'][i]!,
+                    interval: '',
+                  }),
+                )}
+                onRate={nextCard}
+              />
+              {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
             </MobileFrame>
           ),
         },
@@ -231,74 +150,52 @@ export function RoutineHomework({ active }: { active: boolean }) {
               screenMode="application"
               aria-label="Shadowing — a day in my life"
             >
-              <S.Shadow>
-                <S.Header>
-                  <IconButton
-                    aria-label="Recomeçar o shadowing"
-                    size="sm"
-                    onClick={() => {
-                      audio.stop()
-                      setPhrase(0)
-                      repeat(0)
-                    }}
-                  >
-                    ↶
-                  </IconButton>
-                  <SessionProgress
-                    name="A day in my life"
-                    counter={`${phraseIndex + 1} / ${phrases.length}`}
-                    value={(phraseIndex / phrases.length) * 100}
-                  />
-                </S.Header>
-                <ShadowingReader>
-                  <ShadowingPhraseStack>
-                    <ShadowingContextPhrase>
-                      {phrases[phraseIndex - 1]?.text ?? ''}
-                    </ShadowingContextPhrase>
-                    <ShadowingActivePhrase
-                      speaker={{
-                        name: phrase.speaker,
-                        imageUrl: characterPortrait(phrase.speaker),
-                      }}
-                    >
-                      {phrase.text.split(' ').map((word, i) => (
-                        <span key={i}>
-                          <ShadowingWord>{word}</ShadowingWord>{' '}
-                        </span>
-                      ))}
-                    </ShadowingActivePhrase>
-                    <ShadowingContextPhrase>
-                      {phrases[phraseIndex + 1]?.text ?? ''}
-                    </ShadowingContextPhrase>
-                  </ShadowingPhraseStack>
-                  <ShadowingTranslation>
-                    {translation ? phrase.translation : null}
-                  </ShadowingTranslation>
-                </ShadowingReader>
-                <ShadowingControlDock>
-                  <ShadowingRepetitions
-                    total={3}
-                    value={repetitions}
-                    playing={shadowPlaying}
-                  >
-                    Ouça e repita · {repetitions} / 3
-                  </ShadowingRepetitions>
-                  <PracticePlaybackControls
-                    playing={shadowPlaying}
-                    playLabel={shadowPlaying ? 'Pausar' : 'Ouvir e repetir'}
-                    onPlay={playShadow}
-                    speed={speed}
-                    speedOptions={['0.75x', '1x']}
-                    onSpeedChange={(value) => {
-                      audio.stop()
-                      setSpeed(value)
-                    }}
-                    translationVisible={translation}
-                    onTranslationToggle={() => translate(!translation)}
-                  />
-                </ShadowingControlDock>
-                {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
-              </S.Shadow>
+              <ShadowingSession
+                aria-label="Shadowing: A day in my life"
+                backAction={{
+                  label: 'Recomeçar o shadowing',
+                  onClick: () => {
+                    audio.stop()
+                    setPhrase(0)
+                    repeat(0)
+                  },
+                }}
+                name="A day in my life"
+                counter={`Frase ${phraseIndex + 1}/${phrases.length}`}
+                progress={(phraseIndex + repetitions / 3) / phrases.length}
+                phraseKey={phrase.id}
+                previous={phrases[phraseIndex - 1]?.text}
+                next={phrases[phraseIndex + 1]?.text}
+                speaker={{
+                  name: phrase.speaker,
+                  imageUrl: characterPortrait(phrase.speaker),
+                }}
+                phrase={phrase.text.split(' ').map((word, i) => (
+                  <span key={i}>
+                    <ShadowingWord>{word}</ShadowingWord>{' '}
+                  </span>
+                ))}
+                translation={translation ? phrase.translation : undefined}
+                repetitions={{
+                  total: 3,
+                  value: repetitions,
+                  label: `${repetitions}/3 escutas`,
+                }}
+                controls={{
+                  playing: shadowPlaying,
+                  playLabel: shadowPlaying ? 'Pausar frase' : 'Tocar frase',
+                  onPlay: playShadow,
+                  speed,
+                  speedOptions: ['0.75x', '1x'],
+                  onSpeedChange: (value) => {
+                    audio.stop()
+                    setSpeed(value)
+                  },
+                  translationVisible: translation,
+                  onTranslationToggle: () => translate(!translation),
+                }}
+              />
+              {audio.error && <S.Error role="alert">{audio.error}</S.Error>}
             </MobileFrame>
           ),
         },

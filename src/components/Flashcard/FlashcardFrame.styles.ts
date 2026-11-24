@@ -1,10 +1,10 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { compactPracticeLayout } from '../../internal/compactPracticeLayout'
 import { theme } from '../../foundations/theme/theme'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-flashcard-frame',
-})`
+})<{ $layout: 'content' | 'session' }>`
   --fc-ink: ${theme.colors.text.primary};
   --fc-ink-2: ${theme.colors.text.secondary};
   --fc-muted: ${theme.colors.text.muted};
@@ -88,4 +88,62 @@ export const Root = styled.section.withConfig({
       }
     }
   }
+
+  ${({ $layout }) =>
+    $layout === 'session' &&
+    css`
+      @media (max-width: ${theme.breakpoints.mobileShell}) {
+        height: 100%;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      @media (max-width: ${theme.breakpoints.xs}) {
+        --fc-card-min-height: 20.5rem;
+        --fc-card-fluid-height: 50svh;
+        --fc-card-max-height: 26rem;
+      }
+
+      @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.xl}) {
+        --fc-stage-padding-block: 0.125rem 0.25rem;
+        --fc-footer-min-height: 0;
+        --fc-footer-padding-block: 0.625rem
+          calc(
+            var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)) +
+              0.875rem
+          );
+        --fc-rate-row-gap: 0.5rem;
+        --fc-rate-question-margin: 0.5rem;
+        --fc-image-panel-size: clamp(10rem, 25svh, 12.75rem);
+        --fc-image-panel-width: 100%;
+        --fc-card-image-size: min(100%, 11.25rem);
+        --fc-word-zone-gap: 0.4375rem;
+        --fc-word-zone-justify: center;
+        --fc-word-zone-margin-top: 0.75rem;
+        --fc-word-zone-offset-y: -0.375rem;
+      }
+
+      @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.lg}) {
+        --fc-footer-padding-block: ${`${theme.spacing.responsive.compactBlock.sm} calc(var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)) + ${theme.spacing.responsive.compactBlock.sm})`};
+        --fc-image-panel-size: clamp(8.75rem, 22svh, 10.25rem);
+        --fc-front-padding: 1rem 1rem 0.875rem;
+        --fc-back-padding: 1rem;
+      }
+
+      @media (max-width: ${theme.breakpoints.mobileShell}) and (max-height: ${theme.viewportHeights.md}) {
+        --fc-footer-padding-block: 0.375rem
+          calc(
+            var(--safe-area-inset-bottom, env(safe-area-inset-bottom, 0px)) +
+              0.5rem
+          );
+        --fc-front-padding: 0.875rem;
+        --fc-back-padding: 0.875rem;
+        --fc-image-panel-size: clamp(7.5rem, 19svh, 8.75rem);
+        --fc-word-zone-gap: 0.375rem;
+        --fc-word-zone-margin-top: 0.5rem;
+        --fc-word-zone-offset-y: -0.25rem;
+        --fc-word-font-size: 1.875rem;
+        --fc-back-translation-size: 1.375rem;
+      }
+    `}
 `

@@ -722,3 +722,11 @@ export type {
   RouteMapProps,
   MapPlace,
 } from './components/InteractiveMaterial/RouteMap.types'
+
+export { FlashcardSession } from './components/Flashcard/FlashcardSession'
+export type {
+  FlashcardSessionProps,
+  FlashcardSessionCard,
+} from './components/Flashcard/FlashcardSession.types'
+export { ShadowingSession } from './components/Shadowing/ShadowingSession'
+export type { ShadowingSessionProps } from './components/Shadowing/ShadowingSession.types'
