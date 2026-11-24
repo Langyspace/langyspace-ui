@@ -1,11 +1,11 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
-Atualizada em 23/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
+Atualizada em 24/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
 ## Perguntas conforme a finalidade — revisão94
 
-Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercícios colocar; sempre que houver perguntas, usar o modelo de balões com o que a pessoa deve responder e o botão de dica. Os [60 planos de exercícios A1–C1](planos-a1-c1/README.md) aplicam essa orientação, sem alterar as aulas publicadas nesta entrega.
+O pedido de 23/11/2026 manteve as 12 aulas por nível e definiu os balões com intenção de resposta e dica como apoio às perguntas. A revisão de24/11 abaixo distingue conversas pessoais de compreensão factual e tem prioridade sobre a apresentação de perguntas nos [60 planos de exercícios A1–C1](planos-a1-c1/README.md).
 
 - Nas conversas pessoais e nos role-plays de troca real, mostrar o balão da professora com a pergunta e o balão da aluna com uma intenção curta do que comunicar. A intenção não é uma resposta completa nem um espaço vazio sem orientação.
 - Uma lâmpada abaixo da conversa revela apoios de linguagem na ordem dos balões, mantendo as perguntas visíveis. A dica oferece um começo de frase ou uma estratégia útil; não inventa fatos ou preferências pessoais e não se limita à primeira letra de uma palavra.
@@ -17,6 +17,7 @@ Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercí
 ### 24/11/2026 — Compreensão não é uma segunda conversa
 
 - Ao lado de um diálogo, mostrar uma lista numerada de perguntas, sem duplicar a dupla de participantes, avatares ou balões. Usar o `RevealCard` canônico em apresentação `prompt`; clicar na pergunta confere a resposta abaixo. Quando houver ajuda de linguagem, uma única lâmpada inferior libera os apoios em ordem. O adaptador `PromptExercise` compõe os donos canônicos, sem uma pele por aula.
+- Tarefas abertas de aplicação exibem a intenção do que comunicar e uma dica opcional, sem um falso gabarito “One possible response”. Não transformar uma instrução de missão em diálogo artificial só para atingir seis turnos.
 - Perguntas sobre áudio, texto, mapa ou ficha também podem ser verificações factuais. Declarar a finalidade nos dados (`comprehension`, `review` ou `response`) e usar a apresentação apropriada. Uma resposta a mensagem não se transforma artificialmente num diálogo de seis turnos. Balões ficam para interação real com a professora.
 - Uma prática pessoal completa tem pelo menos três pares de fala (pergunta da professora + intenção de resposta da aluna), com pergunta de volta ou continuação pertinente. Não contar dois pares como seis por haver três frases dentro de um balão. Não acrescentar perguntas genéricas para completar a quantidade.
 - A regra de seis itens vale para cada bloco introdutório independente. Países e sentimentos não se somam para justificar só três em cada atividade. Restaurar conteúdo válido antes de criar substitutos. Um conjunto extenso do mesmo tema pode continuar em páginas contíguas claramente identificadas; não esconder redução de conteúdo atrás da divisão.

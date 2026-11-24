@@ -25,6 +25,7 @@ export interface PromptExerciseProps {
   items: readonly {
     id: string
     prompt: string
+    cue?: string
     answer?: string
     hint?: string
   }[]

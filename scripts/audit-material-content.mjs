@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { readFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
 import ts from 'typescript'
 
 const root = 'stories/materials'
@@ -24,6 +25,7 @@ const report = {
   references: [],
   conversations: [],
   comprehension: [],
+  responses: [],
   nativeAdapters: [],
 }
 const minimum = (items, count, label) => {
@@ -56,6 +58,15 @@ function vocabulary(key, id, items, page = {}) {
     })
   } else {
     minimum(items, 6, `${key}.${id} vocabulary`)
+    const labels = items
+      .map((item) => item.word ?? item.label ?? item.en ?? item.text)
+      .filter((x) => typeof x === 'string')
+      .map((x) => x.trim().toLocaleLowerCase('en'))
+    assert.equal(
+      new Set(labels).size,
+      labels.length,
+      `${key}.${id}: repeated vocabulary label`,
+    )
     report.vocabulary.push({ key, id, count: items.length })
   }
 }
@@ -123,7 +134,11 @@ for (const entry of catalog) {
       if (activity.questionPurpose === 'conversation')
         conversation(key, id, activity.questions)
       else
-        report.comprehension.push({ key, id, count: activity.questions.length })
+        report[
+          activity.questionPurpose === 'response'
+            ? 'responses'
+            : 'comprehension'
+        ].push({ key, id, count: activity.questions.length })
     }
   } else if (
     ['a1-01', 'a1-02', 'a1-03', 'a1-04', 'a1-05', 'a1-06', 'c1-01'].includes(
@@ -209,6 +224,53 @@ for (const file of [
   visit(source)
   assert.equal(found, 1, `${file}: expected the active tracker`)
 }
+// Check the active native symbol references and live role-play turn arrays at their source.
+function authoredArray(file, name) {
+  const source = ts.createSourceFile(
+    file,
+    readFileSync(path.join(root, file), 'utf8'),
+    ts.ScriptTarget.Latest,
+    true,
+    ts.ScriptKind.TSX,
+  )
+  let result
+  function visit(node) {
+    if (ts.isVariableDeclaration(node) && node.name.getText(source) === name) {
+      let value = node.initializer
+      if (
+        ts.isCallExpression(value) &&
+        ts.isPropertyAccessExpression(value.expression) &&
+        value.expression.name.text === 'map'
+      )
+        value = value.expression.expression
+      assert(
+        ts.isArrayLiteralExpression(value),
+        `${file}.${name}: expected authored array`,
+      )
+      result = value.elements.flatMap((item) =>
+        ts.isSpreadElement(item) && ts.isStringLiteral(item.expression)
+          ? [...item.expression.text]
+          : [item],
+      )
+    }
+    ts.forEachChild(node, visit)
+  }
+  visit(source)
+  assert(result, `${file}.${name}: missing native content`)
+  return result
+}
+for (const [file, name, count] of [
+  ['A102/A102.data.ts', 'numbers', 10],
+  ['A102/A102.data.ts', 'letters', 26],
+  ['B101/B101.conversation.tsx', 'firstTurns', 6],
+  ['B101/B101.conversation.tsx', 'swappedTurns', 6],
+  ['Frontend/Frontend.data.ts', 'firstTurns', 6],
+  ['Frontend/Frontend.data.ts', 'swappedTurns', 6],
+]) {
+  const items = authoredArray(file, name)
+  assert(items.length >= count, `${file}.${name}: incomplete native set`)
+  report.nativeAdapters.push({ file, id: name, count: items.length })
+}
 // Exact ID/text/file/hash checks prevent restored words from losing their prepared audio.
 const a101 = read('A101/A101.review.json')
 const restored = read('A101/audio-provenance94.json').items
@@ -227,6 +289,13 @@ for (const page of a101.pages.filter((x) => x.kind === 'vocabulary'))
       assert(
         existsSync(path.join(root, 'A101', clip.file)),
         `Missing file ${clip.file}`,
+      )
+      assert.equal(
+        createHash('sha256')
+          .update(readFileSync(path.join(root, 'A101', clip.file)))
+          .digest('hex'),
+        clip.sha256,
+        `Changed audio ${clip.id}`,
       )
     }
   }

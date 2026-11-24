@@ -131,8 +131,16 @@ export function CourseActivity({
           : undefined
       }
       tracker={
-        activity.questionPurpose === 'comprehension' ? (
-          <PromptExercise items={activity.questions} />
+        activity.questionPurpose !== 'conversation' ? (
+          <PromptExercise
+            items={activity.questions.map((item) => ({
+              ...item,
+              answer:
+                item.answer === 'One possible response'
+                  ? undefined
+                  : item.answer,
+            }))}
+          />
         ) : (
           <MaterialQuestions
             items={activity.questions.map((q) => ({

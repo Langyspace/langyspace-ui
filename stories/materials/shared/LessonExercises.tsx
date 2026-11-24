@@ -151,9 +151,10 @@ export function PromptExercise({
           const hinted = hints.findIndex((x) => x.id === item.id)
           return (
             <Styled.Prompt key={item.id}>
-              {item.hint ? (
+              {item.hint || item.cue ? (
                 <Common.Stack>
                   {question}
+                  {item.cue ? <Common.Hint>{item.cue}</Common.Hint> : null}
                   {hinted >= 0 && hinted < hintCount ? (
                     <Common.Hint role="status">{item.hint}</Common.Hint>
                   ) : null}

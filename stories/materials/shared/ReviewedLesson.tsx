@@ -91,7 +91,14 @@ function Questions({
       }))}
     />
   ) : (
-    <PromptExercise items={items} />
+    <PromptExercise
+      items={items.map((item) => ({
+        ...item,
+        cue: purpose === 'comprehension' ? undefined : item.cue,
+        answer:
+          item.answer === 'One possible response' ? undefined : item.answer,
+      }))}
+    />
   )
 }
 

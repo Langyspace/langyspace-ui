@@ -2,6 +2,7 @@ import { fireEvent, render, screen, within } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { ReviewedLesson } from '../../../stories/materials/shared/ReviewedLesson'
 import type { ReviewedPage } from '../../../stories/materials/shared/ReviewedLesson.types'
+import { CourseActivity } from '../../../stories/materials/Course/CourseActivity'
 import { PromptExercise } from '../../../stories/materials/shared/LessonExercises'
 import { MaterialTheme } from '../../../stories/materials/shared/MaterialTheme'
 import source from '../../../stories/materials/A101/A101.review.json'
@@ -112,5 +113,37 @@ describe('authored material question purpose', () => {
     fireEvent.click(screen.getByRole('button', { name: 'Hide hints' }))
     expect(screen.queryByText('Listen to the greeting')).not.toBeInTheDocument()
     expect(first).toHaveAttribute('aria-expanded', 'true')
+  })
+  it('keeps an open mission actionable without presenting its placeholder as an answer', () => {
+    render(
+      <MaterialTheme>
+        <CourseActivity
+          activity={{
+            type: 'facts',
+            title: 'Arrival card',
+            facts: [{ id: 'stay', label: 'Stay', value: 'Five days' }],
+            questionPurpose: 'response',
+            questions: [
+              {
+                id: 'arrival',
+                prompt: 'Where are you staying, and for how long?',
+                cue: 'Answer using your travel card',
+                hint: 'I’m staying at … for … days',
+                answer: 'One possible response',
+              },
+            ],
+          }}
+        />
+      </MaterialTheme>,
+    )
+    expect(screen.getByText('Answer using your travel card')).toBeVisible()
+    expect(
+      screen.queryByRole('button', {
+        name: 'Where are you staying, and for how long?',
+      }),
+    ).not.toBeInTheDocument()
+    expect(screen.queryByText('One possible response')).not.toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Show next hint' }))
+    expect(screen.getByText('I’m staying at … for … days')).toBeVisible()
   })
 })
