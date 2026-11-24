@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/8468233f8fad27f7bfba5bb60e57341842cb9d005c40c6e7a25d044f2607baec.mp3'
+import quizNarration2 from '../assets/quiz-audio/f274021c12d8c1ce015b908c24f6d3819638017570b7ddb65404051e2ce61f77.mp3'
+import quizNarration3 from '../assets/quiz-audio/a95e43c0d3056d55d6ffcc39e87ef00ec04353ba3401ff8d67375bca5b408b78.mp3'
+import quizNarration4 from '../assets/quiz-audio/ced54048931bb89ece8d62959b9df41520e9304a92dec18374f66ae50751675a.mp3'
+import quizNarration5 from '../assets/quiz-audio/abc13e57dc1be0465a42d077afe1ca598772ae44df864f1567679ecae52346f1.mp3'
+import quizNarration6 from '../assets/quiz-audio/e87b084481821af2d7a90fe3419814919632364c387b9f4021ddd3428d5ad123.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a2-12.json'
 import asset0 from '../assets/audio/23b6302120e5a3a9883a776d4e59952e138d6d7cee874a8a22ac83d94f638f71.mp3'
@@ -13,6 +20,66 @@ import asset9 from '../assets/characters/cian-walsh.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-a2-12-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q01.completion',
+      text: 'How about meeting on Friday?',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-a2-12-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q02.completion',
+      text: 'Why don’t we book a table?',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-a2-12-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q03.completion',
+      text: 'Let’s check the time first',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-a2-12-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q04.completion',
+      text: 'That sounds good',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-a2-12-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q05.completion',
+      text: 'I’d love to join you',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-a2-12-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a2-12-q06.completion',
+      text: 'How about dinner on Saturday?',
+      src: quizNarration6,
+    },
     {
       id: 'a2-12.shadowing.01',
       text: 'Would you like to have dinner on Friday?',

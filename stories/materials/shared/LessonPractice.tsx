@@ -1,4 +1,5 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react'
+import { IconButton } from '../../../src/components/IconButton/IconButton'
 import { PracticePair } from '../../../src/components/Practice/PracticePair'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
 import { PictureStrip } from '../../../src/components/Exercise/PictureStrip'
@@ -22,7 +23,20 @@ function PreparedView({
 }) {
   const { data, recordings, images } = prepared
   const speech = useRecordedAudio(recordings)
-  const { stop } = speech
+  const { stop: stopRecording } = speech
+  const correctionTimer = useRef<ReturnType<typeof setTimeout> | undefined>(
+    undefined,
+  )
+  const clearCorrection = useCallback(() => {
+    if (correctionTimer.current !== undefined)
+      clearTimeout(correctionTimer.current)
+    correctionTimer.current = undefined
+  }, [])
+  const stop = useCallback(() => {
+    clearCorrection()
+    stopRecording()
+  }, [clearCorrection, stopRecording])
+  useEffect(() => clearCorrection, [clearCorrection])
   const origin = useMaterialPracticeOrigin()
   const [firstIndex, setFirstIndex] = useState(0)
   const [phraseIndex, setPhraseIndex] = useState(0)
@@ -48,10 +62,37 @@ function PreparedView({
                 : 'playing'
               : 'idle'
         }
-        onClick={() =>
+        onClick={() => {
+          clearCorrection()
           current ? speech.togglePause() : speech.speak([recording])
-        }
+        }}
       />
+    )
+  }
+  const quizNarration = (id: string) => {
+    const recording = recordings.find((clip) => clip.id === id)
+    if (!recording) return undefined
+    return (
+      <IconButton
+        aria-label="Ouvir o enunciado"
+        variant="brand"
+        size="sm"
+        aria-pressed={speech.playingId === id && !speech.paused}
+        onClick={() => {
+          clearCorrection()
+          speech.speak([recording])
+        }}
+      >
+        <svg
+          aria-hidden="true"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path d="M4 9v6h4l5 4V5L8 9H4zm12-2v10a7 7 0 0 0 0-10z" />
+        </svg>
+      </IconButton>
     )
   }
   const destination = (
@@ -170,6 +211,7 @@ function PreparedView({
                     <>
                       <QuizQuestion
                         context={question.context}
+                        action={quizNarration(question.id + '.prompt')}
                         density="compact"
                         tone="material"
                       >
@@ -196,12 +238,22 @@ function PreparedView({
                                 : 'wrong'
                             }
                             disabled={Boolean(selected)}
-                            onClick={() =>
+                            onClick={() => {
+                              stop()
                               answer((old) => ({
                                 ...old,
                                 [question.id]: option.id,
                               }))
-                            }
+                              const correction = recordings.find(
+                                (clip) =>
+                                  clip.id === question.id + '.completion',
+                              )
+                              if (correction)
+                                correctionTimer.current = setTimeout(
+                                  () => speech.speak([correction]),
+                                  650,
+                                )
+                            }}
                           >
                             {option.text}
                           </QuizOption>

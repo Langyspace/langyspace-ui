@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use needn’t have + past participle for an unnecessary action that happened. Correct: We needn’t have paid twice"
+            "title": "Isso mesmo!",
+            "message": "Quando a ação aconteceu e foi desnecessária, usamos needn’t have mais o particípio. Por isso a forma aqui é paid. Por isso: “We needn’t have paid twice”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use needn’t have + past participle for an unnecessary action that happened. Correct: We needn’t have paid twice"
+            "title": "Vamos por partes:",
+            "message": "Quando a ação aconteceu e foi desnecessária, usamos needn’t have mais o particípio. Por isso a forma aqui é paid. Por isso: “We needn’t have paid twice”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q01/completion.mp3"
       },
       {
         "id": "course-b2-05-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the base verb after didn’t need to. Correct: We didn’t need to book in advance"
+            "title": "Isso mesmo!",
+            "message": "Depois de didn’t need to, usamos o verbo básico book. Não colocamos booked depois desse to. Por isso: “We didn’t need to book in advance”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the base verb after didn’t need to. Correct: We didn’t need to book in advance"
+            "title": "Vamos por partes:",
+            "message": "Depois de didn’t need to, usamos o verbo básico book. Não colocamos booked depois desse to. Por isso: “We didn’t need to book in advance”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q02/completion.mp3"
       },
       {
         "id": "course-b2-05-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After did, use need rather than needed. Correct: Did you need to pay a deposit?"
+            "title": "Isso mesmo!",
+            "message": "O did já marca o passado da pergunta. Por isso o verbo seguinte fica need, não needed. Por isso: “Did you need to pay a deposit?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After did, use need rather than needed. Correct: Did you need to pay a deposit?"
+            "title": "Vamos por partes:",
+            "message": "O did já marca o passado da pergunta. Por isso o verbo seguinte fica need, não needed. Por isso: “Did you need to pay a deposit?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q03/completion.mp3"
       },
       {
         "id": "course-b2-05-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the past participle bought after have. Correct: I needn’t have bought breakfast"
+            "title": "Isso mesmo!",
+            "message": "Buy tem bought como particípio. Como a construção é needn’t have, precisamos usar bought depois de have. Por isso: “I needn’t have bought breakfast”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the past participle bought after have. Correct: I needn’t have bought breakfast"
+            "title": "Vamos por partes:",
+            "message": "Buy tem bought como particípio. Como a construção é needn’t have, precisamos usar bought depois de have. Por isso: “I needn’t have bought breakfast”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q04/completion.mp3"
       },
       {
         "id": "course-b2-05-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Didn’t need to states no obligation; it can still be followed by an action that happened. Correct: We didn’t need to pay in advance, but we chose to"
+            "title": "Isso mesmo!",
+            "message": "Didn’t need to diz que não havia obrigação; não diz, sozinho, se a ação aconteceu. Aqui ela aconteceu por escolha, e need fica sem ed depois de didn’t. Por isso: “We didn’t need to pay in advance, but we chose to”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Didn’t need to states no obligation; it can still be followed by an action that happened. Correct: We didn’t need to pay in advance, but we chose to"
+            "title": "Vamos por partes:",
+            "message": "Didn’t need to diz que não havia obrigação; não diz, sozinho, se a ação aconteceu. Aqui ela aconteceu por escolha, e need fica sem ed depois de didn’t. Por isso: “We didn’t need to pay in advance, but we chose to”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q05/completion.mp3"
       },
       {
         "id": "course-b2-05-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the base form need after didn’t, followed by to + verb. Correct: She didn’t need to pay twice"
+            "title": "Isso mesmo!",
+            "message": "Na negativa com didn’t, o passado já está marcado no auxiliar. Por isso usamos need to pay, não needed to pay. Por isso: “She didn’t need to pay twice”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the base form need after didn’t, followed by to + verb. Correct: She didn’t need to pay twice"
+            "title": "Vamos por partes:",
+            "message": "Na negativa com didn’t, o passado já está marcado no auxiliar. Por isso usamos need to pay, não needed to pay. Por isso: “She didn’t need to pay twice”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-05-quiz/course-b2-05-q06/completion.mp3"
       }
     ]
   },

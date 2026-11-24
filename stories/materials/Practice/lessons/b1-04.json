@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the base verb without to after must. Correct: It must be Kim’s bag"
+            "title": "Isso mesmo!",
+            "message": "Depois de must, usamos o verbo básico. No caso de be, ele entra sem to e sem virar is. Por isso: “It must be Kim’s bag”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the base verb without to after must. Correct: It must be Kim’s bag"
+            "title": "Vamos por partes:",
+            "message": "Depois de must, usamos o verbo básico. No caso de be, ele entra sem to e sem virar is. Por isso: “It must be Kim’s bag”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q01/completion.mp3"
       },
       {
         "id": "course-b1-04-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Do not add third-person -s after a modal. Correct: The pass might belong to Leo"
+            "title": "Isso mesmo!",
+            "message": "O might já funciona como auxiliar. Por isso belong fica sem s, mesmo com um sujeito singular. Por isso: “The pass might belong to Leo”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Do not add third-person -s after a modal. Correct: The pass might belong to Leo"
+            "title": "Vamos por partes:",
+            "message": "O might já funciona como auxiliar. Por isso belong fica sem s, mesmo com um sujeito singular. Por isso: “The pass might belong to Leo”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q02/completion.mp3"
       },
       {
         "id": "course-b1-04-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use be after can’t, not is. Correct: It can’t be the bag she described"
+            "title": "Isso mesmo!",
+            "message": "Depois de can’t, precisamos da forma básica be. Is não entra depois desse modal. Por isso: “It can’t be the bag she described”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use be after can’t, not is. Correct: It can’t be the bag she described"
+            "title": "Vamos por partes:",
+            "message": "Depois de can’t, precisamos da forma básica be. Is não entra depois desse modal. Por isso: “It can’t be the bag she described”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q03/completion.mp3"
       },
       {
         "id": "course-b1-04-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Put the subject after could and use the base verb be. Correct: Could this be your charger?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta, could vem antes do sujeito, mas o verbo seguinte continua be. Não trocamos be por is. Por isso: “Could this be your charger?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Put the subject after could and use the base verb be. Correct: Could this be your charger?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta, could vem antes do sujeito, mas o verbo seguinte continua be. Não trocamos be por is. Por isso: “Could this be your charger?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q04/completion.mp3"
       },
       {
         "id": "course-b1-04-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The verb after must stays in its base form. Correct: The phone must need charging"
+            "title": "Isso mesmo!",
+            "message": "O sujeito phone é singular, mas o must já vem antes do verbo. Por isso usamos need, sem acrescentar s. Por isso: “The phone must need charging”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The verb after must stays in its base form. Correct: The phone must need charging"
+            "title": "Vamos por partes:",
+            "message": "O sujeito phone é singular, mas o must já vem antes do verbo. Por isso usamos need, sem acrescentar s. Por isso: “The phone must need charging”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q05/completion.mp3"
       },
       {
         "id": "course-b1-04-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep be before verb-ing after a modal. Correct: The owner might be travelling"
+            "title": "Isso mesmo!",
+            "message": "Para falar de uma possível ação em andamento, precisamos de might be mais o verbo com ing. Sem be, falta uma parte. Por isso: “The owner might be travelling”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep be before verb-ing after a modal. Correct: The owner might be travelling"
+            "title": "Vamos por partes:",
+            "message": "Para falar de uma possível ação em andamento, precisamos de might be mais o verbo com ing. Sem be, falta uma parte. Por isso: “The owner might be travelling”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-04-quiz/course-b1-04-q06/completion.mp3"
       }
     ]
   },

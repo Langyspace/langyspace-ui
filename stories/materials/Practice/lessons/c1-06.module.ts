@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/ad4df1c8e4711b3fda0bf2f83bbb2bd675fdd922a4032f42a2cf619e31f29486.mp3'
+import quizNarration2 from '../assets/quiz-audio/05114f07ad0814932d949994b0ea0c84ca920683d065d499b0bf6ba53c85f918.mp3'
+import quizNarration3 from '../assets/quiz-audio/404c17b09fd5ff3c25050f394ca611dad562f6efefc2f11983267e5d175af55e.mp3'
+import quizNarration4 from '../assets/quiz-audio/2079a84f86596cbc9d6ab8116f1ef569068c101d70a78722b6a66b72b0c43e53.mp3'
+import quizNarration5 from '../assets/quiz-audio/11163b3c77be4d6847ad1ac9e7056b534004c080dc290f26398da1e66596ef2b.mp3'
+import quizNarration6 from '../assets/quiz-audio/93f6135f6fe64346d74eeb061fe623e0bc81277b73e5229d8c3c3b4d2f2dee07.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-06.json'
 import asset0 from '../../Course/assets/audio/C106-D81.1.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-06-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q01.completion',
+      text: 'The more I read, the less certain I feel',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-06-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q02.completion',
+      text: 'The cheaper it is, the more attractive it seems',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-06-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q03.completion',
+      text: 'This course is considerably more expensive',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-06-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q04.completion',
+      text: 'The timetable is much more flexible',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-06-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q05.completion',
+      text: 'The more flexible it is, the easier planning becomes',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-06-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-06-q06.completion',
+      text: 'I’d reconsider if the session conflicted with work',
+      src: quizNarration6,
+    },
     {
       id: 'c1-06.shadowing.01',
       text: 'Which course seems a better fit for the person in this brief?',

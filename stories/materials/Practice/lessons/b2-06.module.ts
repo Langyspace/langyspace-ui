@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/a065df792a38b7bb65b093111159379f9bf7f7b2ac3d6ca9eee9fe367fe620a6.mp3'
+import quizNarration2 from '../assets/quiz-audio/3269d4f4d0e21d0a2a56aeb6a1c94f07428d9e974bb83547292e2d2ff0a987d8.mp3'
+import quizNarration3 from '../assets/quiz-audio/3e0b47e4ad76959fdc97f1dd19cf6bdce275e9804caae3ab8203c83fe99ab5b7.mp3'
+import quizNarration4 from '../assets/quiz-audio/3ce917728c9a967b2bd30be1fba475fb539478d577cdf844283e6018953f6873.mp3'
+import quizNarration5 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration6 from '../assets/quiz-audio/8bb8b0fc28d856c102a923063e1a8e236a50cd115bc7ac2c030a9b03e28c8f42.mp3'
+import quizNarration7 from '../assets/quiz-audio/313c9ec9dc1463e1553a40fdfd9e422f98f73fcf5dbce2b92bd43e26cf37cff6.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-06.json'
 import asset0 from '../assets/audio/3d65c0d127824abef0c42f3d982997f7b86b06e1b615e82efa443feb861f104a.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/cian-walsh.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-06-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-06-q01.completion',
+      text: 'I need to get my screen fixed',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-06-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-06-q02.completion',
+      text: 'I had my phone repaired',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-06-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-06-q03.completion',
+      text: 'The phone is being tested',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-06-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-06-q04.completion',
+      text: 'The new screen has been fitted',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-06-q05.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-06-q05.completion',
+      text: 'Did you get the battery replaced?',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b2-06-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-06-q06.completion',
+      text: 'I’m getting my phone repaired',
+      src: quizNarration7,
+    },
     {
       id: 'b2-06.shadowing.01',
       text: 'My phone screen cracked yesterday. Do you know a reliable repair shop?',

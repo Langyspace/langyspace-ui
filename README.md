@@ -197,4 +197,4 @@ the official package release.
 
 ### Paired practice previews
 
-`PracticePair` composes two existing `MobileFrame` devices and switches between them in narrow containers. Content, media and authenticated practice destinations stay consumer-owned. `ShadowingActivePhrase` can display the current speaker through `Avatar`; `QuizQuestion` accepts a distinct `context` slot. Existing component defaults stay unchanged. See [PracticePair](docs/components/practice-pair.md).
+`PracticePair` composes two existing `MobileFrame` devices and switches between them in narrow containers. Content, media and authenticated practice destinations stay consumer-owned. `ShadowingActivePhrase` can display the current speaker through `Avatar`; `QuizQuestion` accepts a distinct `context` slot and an optional `action` slot for consumer-owned narration/replay. Without an action, its existing markup is preserved. Existing component defaults stay unchanged. See [PracticePair](docs/components/practice-pair.md).

@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep to in the source phrase according to. Correct: According to the report, access is limited"
+            "title": "Isso mesmo!",
+            "message": "Para atribuir a informação a uma fonte, usamos according to. O to precisa aparecer antes de the report. Por isso: “According to the report, access is limited”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep to in the source phrase according to. Correct: According to the report, access is limited"
+            "title": "Vamos por partes:",
+            "message": "Para atribuir a informação a uma fonte, usamos according to. O to precisa aparecer antes de the report. Por isso: “According to the report, access is limited”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q01/completion.mp3"
       },
       {
         "id": "course-c1-12-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A that-clause needs a finite verb phrase such as may rise. Correct: The account suggests that fees may rise"
+            "title": "Isso mesmo!",
+            "message": "Depois de suggests that, vem uma oração com um verbo completo. May rise funciona aqui; to rise não forma essa oração sozinho. Por isso: “The account suggests that fees may rise”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A that-clause needs a finite verb phrase such as may rise. Correct: The account suggests that fees may rise"
+            "title": "Vamos por partes:",
+            "message": "Depois de suggests that, vem uma oração com um verbo completo. May rise funciona aqui; to rise não forma essa oração sozinho. Por isso: “The account suggests that fees may rise”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q02/completion.mp3"
       },
       {
         "id": "course-c1-12-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Although directly introduces a concessive clause. Correct: Although payment is digital, a fallback is needed"
+            "title": "Isso mesmo!",
+            "message": "Although introduz diretamente uma oração de concessão. Não colocamos of antes de payment is digital. Por isso: “Although payment is digital, a fallback is needed”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Although directly introduces a concessive clause. Correct: Although payment is digital, a fallback is needed"
+            "title": "Vamos por partes:",
+            "message": "Although introduz diretamente uma oração de concessão. Não colocamos of antes de payment is digital. Por isso: “Although payment is digital, a fallback is needed”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q03/completion.mp3"
       },
       {
         "id": "course-c1-12-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A condition after provided that needs a finite clause. Correct: We can support it provided that cash remains an option"
+            "title": "Isso mesmo!",
+            "message": "Provided that apresenta uma condição com sujeito e verbo. Por isso usamos cash remains, não cash to remain. Por isso: “We can support it provided that cash remains an option”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A condition after provided that needs a finite clause. Correct: We can support it provided that cash remains an option"
+            "title": "Vamos por partes:",
+            "message": "Provided that apresenta uma condição com sujeito e verbo. Por isso usamos cash remains, não cash to remain. Por isso: “We can support it provided that cash remains an option”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q04/completion.mp3"
       },
       {
         "id": "course-c1-12-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After needn’t, use the base verb mean. Correct: Digital-first needn’t mean removing every alternative"
+            "title": "Isso mesmo!",
+            "message": "Depois do modal needn’t, mean fica na forma básica. Não acrescentamos o s, mesmo com digital-first no singular. Por isso: “Digital-first needn’t mean removing every alternative”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After needn’t, use the base verb mean. Correct: Digital-first needn’t mean removing every alternative"
+            "title": "Vamos por partes:",
+            "message": "Depois do modal needn’t, mean fica na forma básica. Não acrescentamos o s, mesmo com digital-first no singular. Por isso: “Digital-first needn’t mean removing every alternative”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q05/completion.mp3"
       },
       {
         "id": "course-c1-12-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use past simple in this hypothetical if-clause and would in the result. Correct: I’d revise this if the fees excluded more people"
+            "title": "Isso mesmo!",
+            "message": "Para dizer em que hipótese você revisaria a posição, usamos o passado excluded na parte com if. Would fica no resultado: I’d revise. Por isso: “I’d revise this if the fees excluded more people”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use past simple in this hypothetical if-clause and would in the result. Correct: I’d revise this if the fees excluded more people"
+            "title": "Vamos por partes:",
+            "message": "Para dizer em que hipótese você revisaria a posição, usamos o passado excluded na parte com if. Would fica no resultado: I’d revise. Por isso: “I’d revise this if the fees excluded more people”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-12-quiz/course-c1-12-q06/completion.mp3"
       }
     ]
   },

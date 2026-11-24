@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Despite takes a noun phrase directly, without of. Correct: Despite the noise, I could concentrate"
+            "title": "Isso mesmo!",
+            "message": "Despite já introduz a ideia de apesar de. Ele recebe the noise diretamente, sem um of no meio. Por isso: “Despite the noise, I could concentrate”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Despite takes a noun phrase directly, without of. Correct: Despite the noise, I could concentrate"
+            "title": "Vamos por partes:",
+            "message": "Despite já introduz a ideia de apesar de. Ele recebe the noise diretamente, sem um of no meio. Por isso: “Despite the noise, I could concentrate”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q01/completion.mp3"
       },
       {
         "id": "course-b2-12-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Although introduces a subject-and-verb clause without of. Correct: Although phones distract, they can help"
+            "title": "Isso mesmo!",
+            "message": "Although pode introduzir uma oração completa, como phones distract. Não colocamos of entre although e essa oração. Por isso: “Although phones distract, they can help”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Although introduces a subject-and-verb clause without of. Correct: Although phones distract, they can help"
+            "title": "Vamos por partes:",
+            "message": "Although pode introduzir uma oração completa, como phones distract. Não colocamos of entre although e essa oração. Por isso: “Although phones distract, they can help”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q02/completion.mp3"
       },
       {
         "id": "course-b2-12-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use an -ing form after despite when describing an action. Correct: Despite using headphones, she heard the alerts"
+            "title": "Isso mesmo!",
+            "message": "Quando colocamos uma ação depois de despite, usamos a forma com ing. Por isso fica despite using, não despite use. Por isso: “Despite using headphones, she heard the alerts”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use an -ing form after despite when describing an action. Correct: Despite using headphones, she heard the alerts"
+            "title": "Vamos por partes:",
+            "message": "Quando colocamos uma ação depois de despite, usamos a forma com ing. Por isso fica despite using, não despite use. Por isso: “Despite using headphones, she heard the alerts”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q03/completion.mp3"
       },
       {
         "id": "course-b2-12-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Whereas links two clauses; it does not take of. Correct: Messages distract, whereas a reading tool can help"
+            "title": "Isso mesmo!",
+            "message": "Whereas liga duas orações para contrastar as situações. Ele não recebe of antes da segunda oração. Por isso: “Messages distract, whereas a reading tool can help”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Whereas links two clauses; it does not take of. Correct: Messages distract, whereas a reading tool can help"
+            "title": "Vamos por partes:",
+            "message": "Whereas liga duas orações para contrastar as situações. Ele não recebe of antes da segunda oração. Por isso: “Messages distract, whereas a reading tool can help”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q04/completion.mp3"
       },
       {
         "id": "course-b2-12-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Concessive while introduces a clause directly. Correct: While I support the rule, I’d allow an exception"
+            "title": "Isso mesmo!",
+            "message": "Aqui while reconhece um ponto antes de apresentar uma ressalva. A oração vem diretamente depois, sem of. Por isso: “While I support the rule, I’d allow an exception”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Concessive while introduces a clause directly. Correct: While I support the rule, I’d allow an exception"
+            "title": "Vamos por partes:",
+            "message": "Aqui while reconhece um ponto antes de apresentar uma ressalva. A oração vem diretamente depois, sem of. Por isso: “While I support the rule, I’d allow an exception”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q05/completion.mp3"
       },
       {
         "id": "course-b2-12-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use a noun phrase after despite; a full clause would need although or despite the fact that. Correct: Despite the need for consistency, exceptions matter"
+            "title": "Isso mesmo!",
+            "message": "Despite recebe uma expressão nominal, como the need for consistency. Uma oração completa pediria although ou despite the fact that. Por isso: “Despite the need for consistency, exceptions matter”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use a noun phrase after despite; a full clause would need although or despite the fact that. Correct: Despite the need for consistency, exceptions matter"
+            "title": "Vamos por partes:",
+            "message": "Despite recebe uma expressão nominal, como the need for consistency. Uma oração completa pediria although ou despite the fact that. Por isso: “Despite the need for consistency, exceptions matter”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-12-quiz/course-b2-12-q06/completion.mp3"
       }
     ]
   },

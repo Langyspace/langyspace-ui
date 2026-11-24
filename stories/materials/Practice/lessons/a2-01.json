@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "An action happening now needs am, is or are before verb-ing. Correct: She’s making coffee"
+            "title": "Isso mesmo!",
+            "message": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing. Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "An action happening now needs am, is or are before verb-ing. Correct: She’s making coffee"
+            "title": "Vamos por partes:",
+            "message": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing. Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q01/completion.mp3"
       },
       {
         "id": "course-a2-01-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Add -s to a present-simple verb after she. Correct: She usually works from home"
+            "title": "Isso mesmo!",
+            "message": "Estamos falando de um hábito de she. No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Add -s to a present-simple verb after she. Correct: She usually works from home"
+            "title": "Vamos por partes:",
+            "message": "Estamos falando de um hábito de she. No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q02/completion.mp3"
       },
       {
         "id": "course-a2-01-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use do + subject + base verb for this routine question. Correct: What do you usually cook?"
+            "title": "Isso mesmo!",
+            "message": "Essa pergunta é sobre rotina. Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use do + subject + base verb for this routine question. Correct: What do you usually cook?"
+            "title": "Vamos por partes:",
+            "message": "Essa pergunta é sobre rotina. Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q03/completion.mp3"
       },
       {
         "id": "course-a2-01-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Put are before you in a direct present-continuous question. Correct: What are you cooking?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta sobre o que está acontecendo, are vem antes de you. Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Put are before you in a direct present-continuous question. Correct: What are you cooking?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta sobre o que está acontecendo, are vem antes de you. Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q04/completion.mp3"
       },
       {
         "id": "course-a2-01-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After doesn’t, use the base verb without -s. Correct: He doesn’t watch TV in the morning"
+            "title": "Isso mesmo!",
+            "message": "O doesn’t já marca a terceira pessoa na negativa. Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After doesn’t, use the base verb without -s. Correct: He doesn’t watch TV in the morning"
+            "title": "Vamos por partes:",
+            "message": "O doesn’t já marca a terceira pessoa na negativa. Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q05/completion.mp3"
       },
       {
         "id": "course-a2-01-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Negate a continuous verb with be + not + verb-ing. Correct: They aren’t working today"
+            "title": "Isso mesmo!",
+            "message": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing. Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Negate a continuous verb with be + not + verb-ing. Correct: They aren’t working today"
+            "title": "Vamos por partes:",
+            "message": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing. Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q06/completion.mp3"
       }
     ]
   },

@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/16f5479e815f669ac33224f38c027dd25c21303687da1d3421fad6077ac9735c.mp3'
+import quizNarration2 from '../assets/quiz-audio/2774b93069c3c2a669e718efe513dfb23775e25092af938b9543ad6b96d6cf3b.mp3'
+import quizNarration3 from '../assets/quiz-audio/896315bef32e5e5ea78fcf9bd8f0729cc3d65d9e3321622c4a53e90883458eba.mp3'
+import quizNarration4 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration5 from '../assets/quiz-audio/5928f01c6836a6deb901dc16cf8e4890acef05bf361a321a5bff0ac39c041f8c.mp3'
+import quizNarration6 from '../assets/quiz-audio/5c030ff71ec0d3e1531a95acb9020756a868da4667cc13ba319c2434708738bc.mp3'
+import quizNarration7 from '../assets/quiz-audio/aaec274c2c848fcabbf62f339504e152acde17fbde68a89e9a91f6f16b4df616.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-02.json'
 import asset0 from '../../Course/assets/audio/B202-D81.1.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-02-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-02-q01.completion',
+      text: 'I’ll have finished by Friday',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-02-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-02-q02.completion',
+      text: 'At ten, I’ll be handing over the packs',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-02-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-02-q03.completion',
+      text: 'We won’t have completed it by noon',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-02-q04.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-02-q04.completion',
+      text: 'Will you have checked everything by then?',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-02-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-02-q05.completion',
+      text: 'We’ll finish provided the brief stays the same',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b2-02-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-02-q06.completion',
+      text: 'We’ll be ready as long as the client approves it',
+      src: quizNarration7,
+    },
     {
       id: 'b2-02.shadowing.01',
       text: 'Can we promise the event pack will be ready by Friday morning?',

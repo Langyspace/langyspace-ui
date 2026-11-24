@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/edf3f430ef015d2e612aef34917eb767503621739f7c5f8c853f741e261f8663.mp3'
+import quizNarration2 from '../assets/quiz-audio/347f9cef43ed01fcf3aba88f935cec15965e0ade5e3a67cdf5d539fd07b52267.mp3'
+import quizNarration3 from '../assets/quiz-audio/f932294acf81f18188e9a0f820d598e7009c79520140fba8b807054a32371822.mp3'
+import quizNarration4 from '../assets/quiz-audio/61a8946e94bae2b339f8af24b859988984458f770944390a7cac6ee9d77f7743.mp3'
+import quizNarration5 from '../assets/quiz-audio/d51e9b5e80aca8bdc199b6ece5bc0971da665da15e924148614728e183ebe4b8.mp3'
+import quizNarration6 from '../assets/quiz-audio/7cc29767e9f0a36924a69a31735896272a5c0fbf1e1ee318438eb11bb5dff92c.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-12.json'
 import asset0 from '../assets/audio/37d681e38127601727ac9cd8e2a8baf08401c931e4ffb44c475054502163511e.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/noah-ellis.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-12-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q01.completion',
+      text: 'Despite the noise, I could concentrate',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-12-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q02.completion',
+      text: 'Although phones distract, they can help',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-12-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q03.completion',
+      text: 'Despite using headphones, she heard the alerts',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-12-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q04.completion',
+      text: 'Messages distract, whereas a reading tool can help',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-12-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q05.completion',
+      text: 'While I support the rule, I’d allow an exception',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-12-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-12-q06.completion',
+      text: 'Despite the need for consistency, exceptions matter',
+      src: quizNarration6,
+    },
     {
       id: 'b2-12.shadowing.01',
       text: 'Would you support a complete phone ban at school?',

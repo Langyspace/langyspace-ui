@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/08c4cfbaa72e0467bde2ae566920145e364597c6ab2ad01c24d993fd1aff88eb.mp3'
+import quizNarration2 from '../assets/quiz-audio/891661ac59c3c105bdd8b005aac38014cc15c75746c500943be7f6972083e358.mp3'
+import quizNarration3 from '../assets/quiz-audio/4719dd7d96d984d6989385fa1e2b542ed34f4181635cf52694155946b66bb61d.mp3'
+import quizNarration4 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration5 from '../assets/quiz-audio/3cd08f7f3cc79c593139a4dab6d5b48ccdd138bf2ac274ca3fc4cc42cc666523.mp3'
+import quizNarration6 from '../assets/quiz-audio/2303745d2dc8fba8ea6101b3c85994c60cba110ada80d8c087ae4e1865cc92f9.mp3'
+import quizNarration7 from '../assets/quiz-audio/45d2d4cd15d285611b265f1df493b03eafa6709d68ab2b234b4f40f87ce5f24f.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-03.json'
 import asset0 from '../../Course/assets/audio/B103-D81.1.mp3'
@@ -13,6 +21,66 @@ import asset9 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b1-03-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-03-q01.completion',
+      text: 'The show had started',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b1-03-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-03-q02.completion',
+      text: 'She had forgotten her wristband',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b1-03-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-03-q03.completion',
+      text: 'They hadn’t checked the time',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b1-03-q04.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b1-03-q04.completion',
+      text: 'Had they left before you arrived?',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b1-03-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-03-q05.completion',
+      text: 'By the time we arrived, the show had begun',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b1-03-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-03-q06.completion',
+      text: 'I had written down the wrong date',
+      src: quizNarration7,
+    },
     {
       id: 'b1-03.shadowing.01',
       text: 'Did you enjoy the show, or was the whole evening difficult?',

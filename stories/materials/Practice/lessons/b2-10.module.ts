@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/a6d97d826a6de98211a130aa5614e689baa5f5c4c6c1b945dbc145e38a8b2bbc.mp3'
+import quizNarration2 from '../assets/quiz-audio/da4fd3a32371ab74e600ece00331ee2049ef005ffa24fe6ec553124301043b26.mp3'
+import quizNarration3 from '../assets/quiz-audio/1737bef5f44222d6afcf29fba89ff6ad90e26e2c83682f4479d11100cc9d1258.mp3'
+import quizNarration4 from '../assets/quiz-audio/6def1d9743fb5f40e9cf25ad16acc1e7603a5519f45d3312aee83dc3d8581488.mp3'
+import quizNarration5 from '../assets/quiz-audio/a3ec49c4d17f9ba78662c81a77d477d31411a8628e212829a39975480b9f0b7f.mp3'
+import quizNarration6 from '../assets/quiz-audio/0b7683c1e5584154c49366ce76875b0d8c0c629cc4a7cafda197365cfb714ac1.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-10.json'
 import asset0 from '../../Course/assets/audio/B210-D81.1.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-10-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q01.completion',
+      text: 'What I need is a quiet room',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-10-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q02.completion',
+      text: 'It was the lift that woke me',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-10-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q03.completion',
+      text: 'I did ask for a change',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-10-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q04.completion',
+      text: 'What disturbed me was the noise',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-10-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q05.completion',
+      text: 'She did explain the problem at reception',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-10-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-10-q06.completion',
+      text: 'It was the noise that kept me awake',
+      src: quizNarration6,
+    },
     {
       id: 'b2-10.shadowing.01',
       text: 'I’m sorry, but the room next to the lift is too noisy for me to sleep.',

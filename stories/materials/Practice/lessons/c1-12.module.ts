@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/1fa7c54398c124ee12c6b013134a8c85f7414625496518f807c1ae588a424456.mp3'
+import quizNarration2 from '../assets/quiz-audio/b8367d57ff13b01d5700b0a612f3aa8d8a53108a8611030da6bba171bf1803ec.mp3'
+import quizNarration3 from '../assets/quiz-audio/211dc7bf1ce99c77c74a9830b0368d6b775563aa6ab165414faf639db3d64173.mp3'
+import quizNarration4 from '../assets/quiz-audio/fa4d3d43039dcfed78aa580974acff003f24bf54d5f004782d1f228e179dcbb5.mp3'
+import quizNarration5 from '../assets/quiz-audio/aa1a5cbcff528ca0d4c4a5cd19b53606109964483b3bc45005135bca192348f8.mp3'
+import quizNarration6 from '../assets/quiz-audio/8f92e1e0952f4a34b52bd0254c7cdce91cec01a20f32dd42fb6614c324750e29.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-12.json'
 import asset0 from '../assets/audio/ef0a89ef60c361cb3349b468e8ad38b04224ff15099ca33cc4b17a77e4b139cf.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/theo-jacobs.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-12-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q01.completion',
+      text: 'According to the report, access is limited',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-12-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q02.completion',
+      text: 'The account suggests that fees may rise',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-12-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q03.completion',
+      text: 'Although payment is digital, a fallback is needed',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-12-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q04.completion',
+      text: 'We can support it provided that cash remains an option',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-12-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q05.completion',
+      text: 'Digital-first needn’t mean removing every alternative',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-12-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-12-q06.completion',
+      text: 'I’d revise this if the fees excluded more people',
+      src: quizNarration6,
+    },
     {
       id: 'c1-12.shadowing.01',
       text: 'A cashless system would be convenient, but I’m not convinced convenience should settle the debate',

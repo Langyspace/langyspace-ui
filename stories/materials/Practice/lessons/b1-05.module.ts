@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/15ddfdabf713da4d17e47ea60ff130dc566590d02f568b8042c2c84e0270d1df.mp3'
+import quizNarration2 from '../assets/quiz-audio/8601b49066a4c0f77890209a3f48e77497fa3b970f1f35b8d764768367ceaec7.mp3'
+import quizNarration3 from '../assets/quiz-audio/2503be56a0a207fd3d63544ad8d200f062a4690c65d50cf06877a0aaf0ae04df.mp3'
+import quizNarration4 from '../assets/quiz-audio/d3fc625cec9a7dac85040b1c22f0b13e72400b9dc1d1e243ed544da1dbad07b0.mp3'
+import quizNarration5 from '../assets/quiz-audio/1f9ae8148f31231c2d593a839f81e58d64709087e21e62fdf7b7da11dbf21db7.mp3'
+import quizNarration6 from '../assets/quiz-audio/3d03cb0d45e73776101cbbefb79621088ce1a9a36f992dde8acd006dc4fb8801.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b1-05.json'
 import asset0 from '../assets/audio/35cd8918a1ea6d67f1a9feb6be38b621b23c21754852f038b3ed7859c956326a.mp3'
@@ -13,6 +20,66 @@ import asset9 from '../assets/characters/arjun-mehta.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b1-05-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q01.completion',
+      text: 'He told me the time',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b1-05-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q02.completion',
+      text: 'She said she was busy',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b1-05-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q03.completion',
+      text: 'He asked us to leave a key',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b1-05-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q04.completion',
+      text: 'She asked me not to call early',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b1-05-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q05.completion',
+      text: 'He said he would come on Thursday',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b1-05-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b1-05-q06.completion',
+      text: 'Kim told Ana that she needed a key',
+      src: quizNarration6,
+    },
     {
       id: 'b1-05.shadowing.01',
       text: 'I spoke to the building manager about the leak',

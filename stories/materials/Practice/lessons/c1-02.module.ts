@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/dd304e51978c00dd9655666a1c246ab020fe26062be04e98ab6996a70c3ba6a2.mp3'
+import quizNarration2 from '../assets/quiz-audio/6a5cccbbb629b3d7f79346c7a2e259a8a3a7130c22c7b8b7d25cfe2f0ac03cc3.mp3'
+import quizNarration3 from '../assets/quiz-audio/4e0b2a7b209d27a8183dbfd7d83dd9fd7888f95015016b37ebec4e88898840e2.mp3'
+import quizNarration4 from '../assets/quiz-audio/9abea386b0193c89343f035a6b4eb193ba850287298fe7cd4d35d2d17dd876a8.mp3'
+import quizNarration5 from '../assets/quiz-audio/2f9655e0f68734a5bdbe327836e464b05e35fb79cc5cb6caf81c7d1e91675e3e.mp3'
+import quizNarration6 from '../assets/quiz-audio/cc3f182096c6c35cd8d66b393aa7527b0848ffe9d77384ac3332dec19b757718.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-02.json'
 import asset0 from '../assets/audio/a4c9176d856adf49bb44885ac5a3de324e5078ccb7749e8f4f2b3c30d877f880.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/owen-harris.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-02-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q01.completion',
+      text: 'Had we known, we could have waited',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-02-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q02.completion',
+      text: 'Had we checked the test, we could have delayed opening',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-02-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q03.completion',
+      text: 'If we had known, we could have waited',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-02-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q04.completion',
+      text: 'Had we not ignored the warning, we could have acted',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-02-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q05.completion',
+      text: 'Had we known, we could have delayed the launch',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-02-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-02-q06.completion',
+      text: 'Had the test been completed, we could have opened',
+      src: quizNarration6,
+    },
     {
       id: 'c1-02.shadowing.01',
       text: 'Looking back, what was the first warning sign?',

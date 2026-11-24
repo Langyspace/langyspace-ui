@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Tell takes the listener directly: told me. Correct: He told me the time"
+            "title": "Isso mesmo!",
+            "message": "Com tell, a pessoa que recebeu a informação vem diretamente depois: told me. Não colocamos to entre told e me. Por isso: “He told me the time”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Tell takes the listener directly: told me. Correct: He told me the time"
+            "title": "Vamos por partes:",
+            "message": "Com tell, a pessoa que recebeu a informação vem diretamente depois: told me. Não colocamos to entre told e me. Por isso: “He told me the time”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q01/completion.mp3"
       },
       {
         "id": "course-b1-05-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use said + clause, or said to me + clause; not said me. Correct: She said she was busy"
+            "title": "Isso mesmo!",
+            "message": "Podemos usar said e já começar o que foi dito. Se quisermos mencionar o ouvinte, seria said to me, não said me. Por isso: “She said she was busy”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use said + clause, or said to me + clause; not said me. Correct: She said she was busy"
+            "title": "Vamos por partes:",
+            "message": "Podemos usar said e já começar o que foi dito. Se quisermos mencionar o ouvinte, seria said to me, não said me. Por isso: “She said she was busy”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q02/completion.mp3"
       },
       {
         "id": "course-b1-05-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A reported request uses ask + person + to + base verb. Correct: He asked us to leave a key"
+            "title": "Isso mesmo!",
+            "message": "Para transmitir um pedido, usamos asked, a pessoa e to mais o verbo. Esse to precisa aparecer antes de leave. Por isso: “He asked us to leave a key”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A reported request uses ask + person + to + base verb. Correct: He asked us to leave a key"
+            "title": "Vamos por partes:",
+            "message": "Para transmitir um pedido, usamos asked, a pessoa e to mais o verbo. Esse to precisa aparecer antes de leave. Por isso: “He asked us to leave a key”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q03/completion.mp3"
       },
       {
         "id": "course-b1-05-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use ask + person + not to + base verb for this negative request. Correct: She asked me not to call early"
+            "title": "Isso mesmo!",
+            "message": "Para transmitir um pedido negativo, a construção ensinada é asked me not to mais o verbo básico. Aqui, não usamos calling. Por isso: “She asked me not to call early”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use ask + person + not to + base verb for this negative request. Correct: She asked me not to call early"
+            "title": "Vamos por partes:",
+            "message": "Para transmitir um pedido negativo, a construção ensinada é asked me not to mais o verbo básico. Aqui, não usamos calling. Por isso: “She asked me not to call early”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q04/completion.mp3"
       },
       {
         "id": "course-b1-05-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the base verb come after would. Correct: He said he would come on Thursday"
+            "title": "Isso mesmo!",
+            "message": "Depois de would, o verbo fica na forma básica. Então usamos come, mesmo que o relato comece com said. Por isso: “He said he would come on Thursday”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the base verb come after would. Correct: He said he would come on Thursday"
+            "title": "Vamos por partes:",
+            "message": "Depois de would, o verbo fica na forma básica. Então usamos come, mesmo que o relato comece com said. Por isso: “He said he would come on Thursday”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q05/completion.mp3"
       },
       {
         "id": "course-b1-05-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Tell needs a listener here; say can introduce the clause without one. Correct: Kim told Ana that she needed a key"
+            "title": "Isso mesmo!",
+            "message": "Quando usamos told para transmitir informação, precisamos dizer a quem: told Ana. Sem essa pessoa, a construção fica incompleta. Por isso: “Kim told Ana that she needed a key”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Tell needs a listener here; say can introduce the clause without one. Correct: Kim told Ana that she needed a key"
+            "title": "Vamos por partes:",
+            "message": "Quando usamos told para transmitir informação, precisamos dizer a quem: told Ana. Sem essa pessoa, a construção fica incompleta. Por isso: “Kim told Ana that she needed a key”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-05-quiz/course-b1-05-q06/completion.mp3"
       }
     ]
   },

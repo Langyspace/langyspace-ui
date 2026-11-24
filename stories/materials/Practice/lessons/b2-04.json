@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A past deduction uses modal + have + past participle. Correct: Someone must have moved it"
+            "title": "Isso mesmo!",
+            "message": "Uma dedução sobre o passado usa must have mais o particípio. Aqui precisamos de moved, não move. Por isso: “Someone must have moved it”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A past deduction uses modal + have + past participle. Correct: Someone must have moved it"
+            "title": "Vamos por partes:",
+            "message": "Uma dedução sobre o passado usa must have mais o particípio. Aqui precisamos de moved, não move. Por isso: “Someone must have moved it”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q01/completion.mp3"
       },
       {
         "id": "course-b2-04-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have been + past participle for a possible past passive event. Correct: The receipt might have been left earlier"
+            "title": "Isso mesmo!",
+            "message": "Para indicar que algo pode ter sido deixado antes, usamos might have been left. Been completa essa estrutura; being não entra no lugar dele. Por isso: “The receipt might have been left earlier”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have been + past participle for a possible past passive event. Correct: The receipt might have been left earlier"
+            "title": "Vamos por partes:",
+            "message": "Para indicar que algo pode ter sido deixado antes, usamos might have been left. Been completa essa estrutura; being não entra no lugar dele. Por isso: “The receipt might have been left earlier”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q02/completion.mp3"
       },
       {
         "id": "course-b2-04-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have, not has, after can’t. Correct: She can’t have used that key"
+            "title": "Isso mesmo!",
+            "message": "Can’t é seguido de have, sem concordar com she. Não trocamos esse have por has depois de um modal. Por isso: “She can’t have used that key”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have, not has, after can’t. Correct: She can’t have used that key"
+            "title": "Vamos por partes:",
+            "message": "Can’t é seguido de have, sem concordar com she. Não trocamos esse have por has depois de um modal. Por isso: “She can’t have used that key”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q03/completion.mp3"
       },
       {
         "id": "course-b2-04-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use taken after have; took is past simple. Correct: They might have taken the spare key"
+            "title": "Isso mesmo!",
+            "message": "Took é o passado simples, mas depois de have precisamos do particípio taken. É ele que completa a hipótese sobre o passado. Por isso: “They might have taken the spare key”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use taken after have; took is past simple. Correct: They might have taken the spare key"
+            "title": "Vamos por partes:",
+            "message": "Took é o passado simples, mas depois de have precisamos do particípio taken. É ele que completa a hipótese sobre o passado. Por isso: “They might have taken the spare key”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q04/completion.mp3"
       },
       {
         "id": "course-b2-04-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use could + subject + have + past participle. Correct: Could someone have opened the window?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta sobre uma possibilidade passada, usamos could, sujeito, have e particípio. Had não entra depois de could. Por isso: “Could someone have opened the window?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use could + subject + have + past participle. Correct: Could someone have opened the window?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta sobre uma possibilidade passada, usamos could, sujeito, have e particípio. Had não entra depois de could. Por isso: “Could someone have opened the window?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q05/completion.mp3"
       },
       {
         "id": "course-b2-04-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use been, the past participle of be, after have. Correct: The door must have been open"
+            "title": "Isso mesmo!",
+            "message": "Para falar de como a porta deve ter estado, usamos must have been. Depois de have, be precisa virar been. Por isso: “The door must have been open”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use been, the past participle of be, after have. Correct: The door must have been open"
+            "title": "Vamos por partes:",
+            "message": "Para falar de como a porta deve ter estado, usamos must have been. Depois de have, be precisa virar been. Por isso: “The door must have been open”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-04-quiz/course-b2-04-q06/completion.mp3"
       }
     ]
   },

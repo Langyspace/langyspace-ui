@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/72aff75c0192b2377c212c674d4f86e7497a755452f650aaa5fbed7d923bd7b8.mp3'
+import quizNarration2 from '../assets/quiz-audio/75149d627d955328bf34d2c8b1fc9b36bbbc784355a76e1bdbf5de05f5f81ed7.mp3'
+import quizNarration3 from '../assets/quiz-audio/e0ff11d0077f6f7503b88136db69fb3d3e509e67a90f66edbd93abca4165df6f.mp3'
+import quizNarration4 from '../assets/quiz-audio/f8cf51f70522c11ff75c327317e6cfe8ea4b42580a21985dd67cde952d590d63.mp3'
+import quizNarration5 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration6 from '../assets/quiz-audio/5d9234c9695edeb31f535744d63edf3060e0ce2072261edd07429f7a41aa0a73.mp3'
+import quizNarration7 from '../assets/quiz-audio/d686f7c5bcb56b6a18599d97a6e6762695ed3ddd80478c72637f0071b8d76a0d.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-04.json'
 import asset0 from '../../Course/assets/audio/B204-D81.1.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-04-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-04-q01.completion',
+      text: 'Someone must have moved it',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-04-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-04-q02.completion',
+      text: 'The receipt might have been left earlier',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-04-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-04-q03.completion',
+      text: 'She can’t have used that key',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-04-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-04-q04.completion',
+      text: 'They might have taken the spare key',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-04-q05.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-04-q05.completion',
+      text: 'Could someone have opened the window?',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b2-04-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-04-q06.completion',
+      text: 'The door must have been open',
+      src: quizNarration7,
+    },
     {
       id: 'b2-04.shadowing.01',
       text: 'Someone must have been here. The plant has been moved.',

@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A memory of a completed action uses remember + verb-ing. Correct: I remember locking the door"
+            "title": "Isso mesmo!",
+            "message": "Você está dizendo que tem a lembrança da ação. Para essa memória, usamos remember com o verbo em ing: locking. Por isso: “I remember locking the door”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A memory of a completed action uses remember + verb-ing. Correct: I remember locking the door"
+            "title": "Vamos por partes:",
+            "message": "Você está dizendo que tem a lembrança da ação. Para essa memória, usamos remember com o verbo em ing: locking. Por isso: “I remember locking the door”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q01/completion.mp3"
       },
       {
         "id": "course-b2-09-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A reminder about a task uses remember to + base verb. Correct: Remember to unplug the iron"
+            "title": "Isso mesmo!",
+            "message": "Aqui é um lembrete de uma tarefa que precisa ser feita. Usamos remember to e depois o verbo básico unplug. Por isso: “Remember to unplug the iron”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A reminder about a task uses remember to + base verb. Correct: Remember to unplug the iron"
+            "title": "Vamos por partes:",
+            "message": "Aqui é um lembrete de uma tarefa que precisa ser feita. Usamos remember to e depois o verbo básico unplug. Por isso: “Remember to unplug the iron”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q02/completion.mp3"
       },
       {
         "id": "course-b2-09-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use forgot to + base verb for a task that was not done. Correct: I forgot to close the window"
+            "title": "Isso mesmo!",
+            "message": "Para contar uma tarefa que você esqueceu de fazer, usamos forgot to mais o verbo básico. Então fica close, não closing. Por isso: “I forgot to close the window”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use forgot to + base verb for a task that was not done. Correct: I forgot to close the window"
+            "title": "Vamos por partes:",
+            "message": "Para contar uma tarefa que você esqueceu de fazer, usamos forgot to mais o verbo básico. Então fica close, não closing. Por isso: “I forgot to close the window”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q03/completion.mp3"
       },
       {
         "id": "course-b2-09-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use remember + verb-ing to report a memory of an action. Correct: They remember shutting the windows"
+            "title": "Isso mesmo!",
+            "message": "Eles têm a lembrança de fechar as janelas. Para lembrar uma ação, usamos remember com o verbo em ing, não o verbo básico. Por isso: “They remember shutting the windows”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use remember + verb-ing to report a memory of an action. Correct: They remember shutting the windows"
+            "title": "Vamos por partes:",
+            "message": "Eles têm a lembrança de fechar as janelas. Para lembrar uma ação, usamos remember com o verbo em ing, não o verbo básico. Por isso: “They remember shutting the windows”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q04/completion.mp3"
       },
       {
         "id": "course-b2-09-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use remember, not remembered, after did. Correct: Did you remember to lock the door?"
+            "title": "Isso mesmo!",
+            "message": "Depois de did, o verbo principal volta para remember. O restante continua to lock, porque a pergunta é sobre não esquecer uma tarefa. Por isso: “Did you remember to lock the door?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use remember, not remembered, after did. Correct: Did you remember to lock the door?"
+            "title": "Vamos por partes:",
+            "message": "Depois de did, o verbo principal volta para remember. O restante continua to lock, porque a pergunta é sobre não esquecer uma tarefa. Por isso: “Did you remember to lock the door?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q05/completion.mp3"
       },
       {
         "id": "course-b2-09-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "For a task still to do, use forget to + base verb. Correct: Don’t forget to take your keys"
+            "title": "Isso mesmo!",
+            "message": "O lembrete é para pegar as chaves. Depois de don’t forget to, usamos take na forma básica, sem ing. Por isso: “Don’t forget to take your keys”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "For a task still to do, use forget to + base verb. Correct: Don’t forget to take your keys"
+            "title": "Vamos por partes:",
+            "message": "O lembrete é para pegar as chaves. Depois de don’t forget to, usamos take na forma básica, sem ing. Por isso: “Don’t forget to take your keys”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-09-quiz/course-b2-09-q06/completion.mp3"
       }
     ]
   },

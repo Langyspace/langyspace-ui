@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use there is with one place. Correct: There is a café"
+            "title": "Isso mesmo!",
+            "message": "Estamos falando de um café só, então usamos there is. Para dois ou mais lugares, usamos there are. Por isso: “There is a café”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use there is with one place. Correct: There is a café"
+            "title": "Vamos por partes:",
+            "message": "Estamos falando de um café só, então usamos there is. Para dois ou mais lugares, usamos there are. Por isso: “There is a café”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q01/completion.mp3"
       },
       {
         "id": "course-a1-09-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use there are with more than one place. Correct: There are two banks"
+            "title": "Isso mesmo!",
+            "message": "Two banks são dois bancos, então a frase está no plural. Nesse caso, precisamos de there are, não there is. Por isso: “There are two banks”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use there are with more than one place. Correct: There are two banks"
+            "title": "Vamos por partes:",
+            "message": "Two banks são dois bancos, então a frase está no plural. Nesse caso, precisamos de there are, não there is. Por isso: “There are two banks”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q02/completion.mp3"
       },
       {
         "id": "course-a1-09-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use Is there, not does there be, to ask if one place exists. Correct: Is there a pharmacy near here?"
+            "title": "Isso mesmo!",
+            "message": "Para perguntar se existe uma farmácia por perto, começamos com Is there. Não precisamos acrescentar does nessa pergunta. Por isso: “Is there a pharmacy near here?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use Is there, not does there be, to ask if one place exists. Correct: Is there a pharmacy near here?"
+            "title": "Vamos por partes:",
+            "message": "Para perguntar se existe uma farmácia por perto, começamos com Is there. Não precisamos acrescentar does nessa pergunta. Por isso: “Is there a pharmacy near here?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q03/completion.mp3"
       },
       {
         "id": "course-a1-09-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use Are there with the plural two cafés. Correct: Are there two cafés on this street?"
+            "title": "Isso mesmo!",
+            "message": "Como a pergunta fala de dois cafés, usamos Are there. Is there fica para um lugar só. Por isso: “Are there two cafés on this street?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use Are there with the plural two cafés. Correct: Are there two cafés on this street?"
+            "title": "Vamos por partes:",
+            "message": "Como a pergunta fala de dois cafés, usamos Are there. Is there fica para um lugar só. Por isso: “Are there two cafés on this street?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q04/completion.mp3"
       },
       {
         "id": "course-a1-09-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A direct instruction starts with the base verb, without to. Correct: Turn right at the bank"
+            "title": "Isso mesmo!",
+            "message": "Você está dando uma orientação direta. Comece com o verbo turn, sem colocar to antes dele. Por isso: “Turn right at the bank”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A direct instruction starts with the base verb, without to. Correct: Turn right at the bank"
+            "title": "Vamos por partes:",
+            "message": "Você está dando uma orientação direta. Comece com o verbo turn, sem colocar to antes dele. Por isso: “Turn right at the bank”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q05/completion.mp3"
       },
       {
         "id": "course-a1-09-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A statement about what exists needs there is or its contraction there’s. Correct: There’s a park near the hotel"
+            "title": "Isso mesmo!",
+            "message": "There’s é a forma curta de there is. Esse is precisa aparecer: ele completa a ideia de que existe um parque ali. Por isso: “There’s a park near the hotel”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A statement about what exists needs there is or its contraction there’s. Correct: There’s a park near the hotel"
+            "title": "Vamos por partes:",
+            "message": "There’s é a forma curta de there is. Esse is precisa aparecer: ele completa a ideia de que existe um parque ali. Por isso: “There’s a park near the hotel”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-09-quiz/course-a1-09-q06/completion.mp3"
       }
     ]
   },

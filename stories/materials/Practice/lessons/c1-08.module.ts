@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/7d13c22f867d3925667fb1dcc77307c5c440822706319c64e93cdd52b2567696.mp3'
+import quizNarration2 from '../assets/quiz-audio/b81bad7d826a65c357824cf02daf13d7b8c45bc20ba85ea577821f6d1957bd49.mp3'
+import quizNarration3 from '../assets/quiz-audio/b5ae773d4ab8af2653954a01443dd41805602e55a63e3ac96205eb1cd1d1e555.mp3'
+import quizNarration4 from '../assets/quiz-audio/63aef05879ba59e9914d12b7c2cb8c013f23a7e4aea21d78d9ee0a59d98715eb.mp3'
+import quizNarration5 from '../assets/quiz-audio/7dddfbe5a4e219a32be984bc358b87cbc9b1a28d3fc182652db724fc987fe06c.mp3'
+import quizNarration6 from '../assets/quiz-audio/fdf3b9ab2bb98e2ae299781b9a9d780c6b59fb72d1d5889b40b31acf524cc3a6.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-08.json'
 import asset0 from '../assets/audio/00b99a6db9e2d7aced1291988f23900ce7146c667f2070f68531412665e56251.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/noah-ellis.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-08-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q01.completion',
+      text: 'Much as I’d like to, I can’t agree',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-08-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q02.completion',
+      text: 'However useful it is, I need more notice',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-08-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q03.completion',
+      text: 'Whatever plan we choose, I need notice',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-08-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q04.completion',
+      text: 'Much as I would like to agree, the dates don’t work',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-08-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q05.completion',
+      text: 'However much we offer, the limit remains',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-08-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-08-q06.completion',
+      text: 'The change helps. Even so, I need more notice',
+      src: quizNarration6,
+    },
     {
       id: 'c1-08.shadowing.01',
       text: 'I understand why you’d prefer a twelve-month contract',

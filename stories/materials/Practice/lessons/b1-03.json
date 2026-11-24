@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use had + past participle for the earlier past event. Correct: The show had started"
+            "title": "Isso mesmo!",
+            "message": "Para mostrar que um fato aconteceu antes de outro momento passado, usamos had mais o particípio. Aqui, esse particípio é started. Por isso: “The show had started”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use had + past participle for the earlier past event. Correct: The show had started"
+            "title": "Vamos por partes:",
+            "message": "Para mostrar que um fato aconteceu antes de outro momento passado, usamos had mais o particípio. Aqui, esse particípio é started. Por isso: “The show had started”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q01/completion.mp3"
       },
       {
         "id": "course-b1-03-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use forgotten, not the past-simple form forgot, after had. Correct: She had forgotten her wristband"
+            "title": "Isso mesmo!",
+            "message": "Forgot é o passado simples; forgotten é o particípio. Como temos had antes, precisamos de forgotten. Por isso: “She had forgotten her wristband”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use forgotten, not the past-simple form forgot, after had. Correct: She had forgotten her wristband"
+            "title": "Vamos por partes:",
+            "message": "Forgot é o passado simples; forgotten é o particípio. Como temos had antes, precisamos de forgotten. Por isso: “She had forgotten her wristband”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q02/completion.mp3"
       },
       {
         "id": "course-b1-03-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Negate had directly with not; do not add did. Correct: They hadn’t checked the time"
+            "title": "Isso mesmo!",
+            "message": "O had recebe o not diretamente: hadn’t. Não precisamos acrescentar didn’t para negar o past perfect. Por isso: “They hadn’t checked the time”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Negate had directly with not; do not add did. Correct: They hadn’t checked the time"
+            "title": "Vamos por partes:",
+            "message": "O had recebe o not diretamente: hadn’t. Não precisamos acrescentar didn’t para negar o past perfect. Por isso: “They hadn’t checked the time”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q03/completion.mp3"
       },
       {
         "id": "course-b1-03-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Form a past-perfect question with had + subject + participle. Correct: Had they left before you arrived?"
+            "title": "Isso mesmo!",
+            "message": "Para fazer essa pergunta, colocamos had antes do sujeito. Não juntamos did e had na mesma estrutura. Por isso: “Had they left before you arrived?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Form a past-perfect question with had + subject + participle. Correct: Had they left before you arrived?"
+            "title": "Vamos por partes:",
+            "message": "Para fazer essa pergunta, colocamos had antes do sujeito. Não juntamos did e had na mesma estrutura. Por isso: “Had they left before you arrived?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q04/completion.mp3"
       },
       {
         "id": "course-b1-03-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use had begun for an event earlier than a past arrival. Correct: By the time we arrived, the show had begun"
+            "title": "Isso mesmo!",
+            "message": "A chegada já está no passado, e o início do show aconteceu antes dela. Por isso usamos had begun, não has begun. Por isso: “By the time we arrived, the show had begun”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use had begun for an event earlier than a past arrival. Correct: By the time we arrived, the show had begun"
+            "title": "Vamos por partes:",
+            "message": "A chegada já está no passado, e o início do show aconteceu antes dela. Por isso usamos had begun, não has begun. Por isso: “By the time we arrived, the show had begun”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q05/completion.mp3"
       },
       {
         "id": "course-b1-03-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use written after had; wrote is the past-simple form. Correct: I had written down the wrong date"
+            "title": "Isso mesmo!",
+            "message": "Depois de had, usamos o particípio written. Wrote fica para o passado simples, sem esse auxiliar. Por isso: “I had written down the wrong date”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use written after had; wrote is the past-simple form. Correct: I had written down the wrong date"
+            "title": "Vamos por partes:",
+            "message": "Depois de had, usamos o particípio written. Wrote fica para o passado simples, sem esse auxiliar. Por isso: “I had written down the wrong date”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-03-quiz/course-b1-03-q06/completion.mp3"
       }
     ]
   },

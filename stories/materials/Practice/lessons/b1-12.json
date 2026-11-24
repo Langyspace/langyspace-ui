@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use because before a clause with a subject and verb. Correct: I stay home because it’s quiet"
+            "title": "Isso mesmo!",
+            "message": "Depois de because, podemos colocar uma oração completa, como it’s quiet. Because of pede uma expressão nominal, não essa oração. Por isso: “I stay home because it’s quiet”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use because before a clause with a subject and verb. Correct: I stay home because it’s quiet"
+            "title": "Vamos por partes:",
+            "message": "Depois de because, podemos colocar uma oração completa, como it’s quiet. Because of pede uma expressão nominal, não essa oração. Por isso: “I stay home because it’s quiet”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q01/completion.mp3"
       },
       {
         "id": "course-b1-12-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use because of before the noun phrase the traffic. Correct: I arrived late because of the traffic"
+            "title": "Isso mesmo!",
+            "message": "The traffic é uma expressão nominal. Para apresentar esse motivo, usamos because of; because sozinho precisaria de uma oração. Por isso: “I arrived late because of the traffic”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use because of before the noun phrase the traffic. Correct: I arrived late because of the traffic"
+            "title": "Vamos por partes:",
+            "message": "The traffic é uma expressão nominal. Para apresentar esse motivo, usamos because of; because sozinho precisaria de uma oração. Por isso: “I arrived late because of the traffic”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q02/completion.mp3"
       },
       {
         "id": "course-b1-12-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Although introduces a clause directly, without of. Correct: Although I prefer home, I value team contact"
+            "title": "Isso mesmo!",
+            "message": "Although já liga o contraste à oração I prefer home. Não colocamos of depois dele. Por isso: “Although I prefer home, I value team contact”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Although introduces a clause directly, without of. Correct: Although I prefer home, I value team contact"
+            "title": "Vamos por partes:",
+            "message": "Although já liga o contraste à oração I prefer home. Não colocamos of depois dele. Por isso: “Although I prefer home, I value team contact”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q03/completion.mp3"
       },
       {
         "id": "course-b1-12-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use so alone to introduce this result; do not stack so and because. Correct: The train was late, so I missed the meeting"
+            "title": "Isso mesmo!",
+            "message": "So apresenta o resultado de o trem ter atrasado. Não precisamos colocar because depois dele também. Por isso: “The train was late, so I missed the meeting”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use so alone to introduce this result; do not stack so and because. Correct: The train was late, so I missed the meeting"
+            "title": "Vamos por partes:",
+            "message": "So apresenta o resultado de o trem ter atrasado. Não precisamos colocar because depois dele também. Por isso: “The train was late, so I missed the meeting”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q04/completion.mp3"
       },
       {
         "id": "course-b1-12-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "However links the contrast; it does not take of + this. Correct: The office is busy. However, I work well there"
+            "title": "Isso mesmo!",
+            "message": "However conecta a nova frase ao contraste com a anterior. Ele não funciona como uma preposição com of this. Por isso: “The office is busy. However, I work well there”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "However links the contrast; it does not take of + this. Correct: The office is busy. However, I work well there"
+            "title": "Vamos por partes:",
+            "message": "However conecta a nova frase ao contraste com a anterior. Ele não funciona como uma preposição com of this. Por isso: “The office is busy. However, I work well there”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q05/completion.mp3"
       },
       {
         "id": "course-b1-12-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After because of, use a noun phrase; before it was noisy, use because. Correct: I stayed home because of the noise"
+            "title": "Isso mesmo!",
+            "message": "Because of pode ser seguido de the noise. Se você quiser dizer it was noisy, que tem sujeito e verbo, use because sem of. Por isso: “I stayed home because of the noise”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After because of, use a noun phrase; before it was noisy, use because. Correct: I stayed home because of the noise"
+            "title": "Vamos por partes:",
+            "message": "Because of pode ser seguido de the noise. Se você quiser dizer it was noisy, que tem sujeito e verbo, use because sem of. Por isso: “I stayed home because of the noise”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-12-quiz/course-b1-12-q06/completion.mp3"
       }
     ]
   },

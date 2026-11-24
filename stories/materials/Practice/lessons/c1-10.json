@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A purpose infinitive uses to + base verb. Correct: I’m writing to let you know"
+            "title": "Isso mesmo!",
+            "message": "Aqui o to apresenta a finalidade de escrever. Depois dele, usamos o verbo básico let, não letting. Por isso: “I’m writing to let you know”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A purpose infinitive uses to + base verb. Correct: I’m writing to let you know"
+            "title": "Vamos por partes:",
+            "message": "Aqui o to apresenta a finalidade de escrever. Depois dele, usamos o verbo básico let, não letting. Por isso: “I’m writing to let you know”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q01/completion.mp3"
       },
       {
         "id": "course-c1-10-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use let + person + base verb: let you know. Correct: Just to let you know, the date has changed"
+            "title": "Isso mesmo!",
+            "message": "Na construção let you know, know vem na forma básica. Não colocamos knowing depois da pessoa que recebe a informação. Por isso: “Just to let you know, the date has changed”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use let + person + base verb: let you know. Correct: Just to let you know, the date has changed"
+            "title": "Vamos por partes:",
+            "message": "Na construção let you know, know vem na forma básica. Não colocamos knowing depois da pessoa que recebe a informação. Por isso: “Just to let you know, the date has changed”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q02/completion.mp3"
       },
       {
         "id": "course-c1-10-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A request containing whether keeps subject + modal order. Correct: Please confirm whether you can attend"
+            "title": "Isso mesmo!",
+            "message": "A pergunta está dentro de um pedido com please confirm. Depois de whether, mantemos you can attend, sem inverter para can you attend. Por isso: “Please confirm whether you can attend”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A request containing whether keeps subject + modal order. Correct: Please confirm whether you can attend"
+            "title": "Vamos por partes:",
+            "message": "A pergunta está dentro de um pedido com please confirm. Depois de whether, mantemos you can attend, sem inverter para can you attend. Por isso: “Please confirm whether you can attend”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q03/completion.mp3"
       },
       {
         "id": "course-c1-10-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The first to marks purpose; after let you, use know without another to. Correct: I’m writing to let you know about the change"
+            "title": "Isso mesmo!",
+            "message": "O primeiro to indica a finalidade: to let. Mas depois de let you, usamos know sem outro to. Por isso: “I’m writing to let you know about the change”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The first to marks purpose; after let you, use know without another to. Correct: I’m writing to let you know about the change"
+            "title": "Vamos por partes:",
+            "message": "O primeiro to indica a finalidade: to let. Mas depois de let you, usamos know sem outro to. Por isso: “I’m writing to let you know about the change”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q04/completion.mp3"
       },
       {
         "id": "course-c1-10-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Have agrees with the plural dates, even with a relative clause in between. Correct: Quick update: the dates we agreed on have changed"
+            "title": "Isso mesmo!",
+            "message": "Olhe para o núcleo do sujeito: quem mudou foram as datas. Mesmo com we agreed on no meio, dates continua plural e pede have changed. Por isso: “Quick update: the dates we agreed on have changed”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Have agrees with the plural dates, even with a relative clause in between. Correct: Quick update: the dates we agreed on have changed"
+            "title": "Vamos por partes:",
+            "message": "Olhe para o núcleo do sujeito: quem mudou foram as datas. Mesmo com we agreed on no meio, dates continua plural e pede have changed. Por isso: “Quick update: the dates we agreed on have changed”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q05/completion.mp3"
       },
       {
         "id": "course-c1-10-q06",
@@ -147,15 +157,17 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "By introduces the latest time for one reply; until describes continuation. Correct: Please confirm by Friday"
+            "title": "Isso mesmo!",
+            "message": "Você precisa de uma confirmação até o prazo de sexta. By marca esse limite; until indicaria algo que continua acontecendo até lá. Por isso: “Please confirm by Friday”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "By introduces the latest time for one reply; until describes continuation. Correct: Please confirm by Friday"
+            "title": "Vamos por partes:",
+            "message": "Você precisa de uma confirmação até o prazo de sexta. By marca esse limite; until indicaria algo que continua acontecendo até lá. Por isso: “Please confirm by Friday”"
           }
         },
-        "context": "You need one confirmation no later than Friday"
+        "context": "You need one confirmation no later than Friday",
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q06/completion.mp3"
       }
     ]
   },

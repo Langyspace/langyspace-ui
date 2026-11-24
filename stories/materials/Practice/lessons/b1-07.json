@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use should have + past participle to evaluate a past choice. Correct: I should have booked earlier"
+            "title": "Isso mesmo!",
+            "message": "Para avaliar uma decisão passada, usamos should have mais o particípio. Por isso a forma é booked, não book. Por isso: “I should have booked earlier”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use should have + past participle to evaluate a past choice. Correct: I should have booked earlier"
+            "title": "Vamos por partes:",
+            "message": "Para avaliar uma decisão passada, usamos should have mais o particípio. Por isso a forma é booked, não book. Por isso: “I should have booked earlier”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q01/completion.mp3"
       },
       {
         "id": "course-b1-07-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have, not had, after shouldn’t. Correct: We shouldn’t have chosen that connection"
+            "title": "Isso mesmo!",
+            "message": "O modal shouldn’t é seguido de have, não had. O tempo passado aparece no conjunto have chosen. Por isso: “We shouldn’t have chosen that connection”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have, not had, after shouldn’t. Correct: We shouldn’t have chosen that connection"
+            "title": "Vamos por partes:",
+            "message": "O modal shouldn’t é seguido de have, não had. O tempo passado aparece no conjunto have chosen. Por isso: “We shouldn’t have chosen that connection”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q02/completion.mp3"
       },
       {
         "id": "course-b1-07-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use taken after have; took is past simple. Correct: She should have taken the direct flight"
+            "title": "Isso mesmo!",
+            "message": "Took é passado simples; taken é o particípio. Depois de should have, precisamos de taken. Por isso: “She should have taken the direct flight”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use taken after have; took is past simple. Correct: She should have taken the direct flight"
+            "title": "Vamos por partes:",
+            "message": "Took é passado simples; taken é o particípio. Depois de should have, precisamos de taken. Por isso: “She should have taken the direct flight”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q03/completion.mp3"
       },
       {
         "id": "course-b1-07-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use could have + past participle for an alternative past action. Correct: We could have allowed more time"
+            "title": "Isso mesmo!",
+            "message": "Uma alternativa possível no passado usa could have mais o particípio. Aqui a forma é allowed, não allowing. Por isso: “We could have allowed more time”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use could have + past participle for an alternative past action. Correct: We could have allowed more time"
+            "title": "Vamos por partes:",
+            "message": "Uma alternativa possível no passado usa could have mais o particípio. Aqui a forma é allowed, não allowing. Por isso: “We could have allowed more time”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q04/completion.mp3"
       },
       {
         "id": "course-b1-07-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use could + subject + have + past participle. Correct: What could we have done differently?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta, a ordem é could, sujeito, have e particípio. Had não entra depois de could. Por isso: “What could we have done differently?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use could + subject + have + past participle. Correct: What could we have done differently?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta, a ordem é could, sujeito, have e particípio. Had não entra depois de could. Por isso: “What could we have done differently?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q05/completion.mp3"
       },
       {
         "id": "course-b1-07-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "In this future choice, I’d means I would and takes the base verb. Correct: Next time, I’d compare arrival times"
+            "title": "Isso mesmo!",
+            "message": "Aqui I’d significa I would e aponta para uma escolha da próxima vez. Por isso compare fica na forma básica, não compared. Por isso: “Next time, I’d compare arrival times”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "In this future choice, I’d means I would and takes the base verb. Correct: Next time, I’d compare arrival times"
+            "title": "Vamos por partes:",
+            "message": "Aqui I’d significa I would e aponta para uma escolha da próxima vez. Por isso compare fica na forma básica, não compared. Por isso: “Next time, I’d compare arrival times”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-07-quiz/course-b1-07-q06/completion.mp3"
       }
     ]
   },

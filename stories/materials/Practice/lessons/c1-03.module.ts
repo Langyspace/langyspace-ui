@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/f55763e4c1f5645dfa80b9e437ddcd6cd35f6f3fd3b3bdda4f437a6b099017a0.mp3'
+import quizNarration2 from '../assets/quiz-audio/329d285f24d5c13cf3a7ab35411086e7209807df354dd56b11779c8b618a56b4.mp3'
+import quizNarration3 from '../assets/quiz-audio/2c35af5d04d94bb7a60795d79aef2c16551f8542f11d407237dfc6ef68ec2b98.mp3'
+import quizNarration4 from '../assets/quiz-audio/a914e7dca25c54a953ffebcee3ae16517e9b285a676577e4cc1e9d8c9312c8c2.mp3'
+import quizNarration5 from '../assets/quiz-audio/23b7e03671abff2b0c19a7cc559eb43a619f168b6733143f7665ff66155cc2b4.mp3'
+import quizNarration6 from '../assets/quiz-audio/16b054cfd7005ae219e4d17696fbca6f51a52e6433755fa6ed45fe3a1ace3f2f.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-03.json'
 import asset0 from '../../Course/assets/audio/C103-D81.1.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-03-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q01.completion',
+      text: 'The café is said to be closing',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-03-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q02.completion',
+      text: 'The café is thought to have closed',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-03-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q03.completion',
+      text: 'It is reported that the dining area will close',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-03-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q04.completion',
+      text: 'According to the notice, the café is being renovated',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-03-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q05.completion',
+      text: 'The building is reported to have been sold',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-03-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-03-q06.completion',
+      text: 'The figures are thought to be incomplete',
+      src: quizNarration6,
+    },
     {
       id: 'c1-03.shadowing.01',
       text: 'This post says the café is closing permanently. Would you share it?',

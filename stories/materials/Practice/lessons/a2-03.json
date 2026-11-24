@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use was with I, he, she and it. Correct: I was waiting for the bus"
+            "title": "Isso mesmo!",
+            "message": "Com I, a forma passada de be aqui é was. Depois dela, waiting mostra que a ação já estava acontecendo. Por isso: “I was waiting for the bus”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use was with I, he, she and it. Correct: I was waiting for the bus"
+            "title": "Vamos por partes:",
+            "message": "Com I, a forma passada de be aqui é was. Depois dela, waiting mostra que a ação já estava acontecendo. Por isso: “I was waiting for the bus”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q01/completion.mp3"
       },
       {
         "id": "course-a2-03-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use were with you, we and they. Correct: They were waiting outside"
+            "title": "Isso mesmo!",
+            "message": "They pede were, não was. A estrutura para essa ação em andamento é were mais o verbo com ing. Por isso: “They were waiting outside”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use were with you, we and they. Correct: They were waiting outside"
+            "title": "Vamos por partes:",
+            "message": "They pede were, não was. A estrutura para essa ação em andamento é were mais o verbo com ing. Por isso: “They were waiting outside”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q02/completion.mp3"
       },
       {
         "id": "course-a2-03-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use were + subject + verb-ing for an action already in progress. Correct: What were you doing?"
+            "title": "Isso mesmo!",
+            "message": "Você está perguntando o que a pessoa estava fazendo. Por isso usamos were you doing, sem misturar did com doing. Por isso: “What were you doing?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use were + subject + verb-ing for an action already in progress. Correct: What were you doing?"
+            "title": "Vamos por partes:",
+            "message": "Você está perguntando o que a pessoa estava fazendo. Por isso usamos were you doing, sem misturar did com doing. Por isso: “What were you doing?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q03/completion.mp3"
       },
       {
         "id": "course-a2-03-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use was + verb-ing for the ongoing action and past simple for the interruption. Correct: I was waiting when it started raining"
+            "title": "Isso mesmo!",
+            "message": "A espera já estava acontecendo quando a chuva começou. Waiting vai com was; o acontecimento que interrompe vem no passado simples. Por isso: “I was waiting when it started raining”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use was + verb-ing for the ongoing action and past simple for the interruption. Correct: I was waiting when it started raining"
+            "title": "Vamos por partes:",
+            "message": "A espera já estava acontecendo quando a chuva começou. Waiting vai com was; o acontecimento que interrompe vem no passado simples. Por isso: “I was waiting when it started raining”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q04/completion.mp3"
       },
       {
         "id": "course-a2-03-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use wasn’t + verb-ing, not didn’t + verb-ing. Correct: She wasn’t driving when I called"
+            "title": "Isso mesmo!",
+            "message": "Para negar essa ação em andamento, usamos wasn’t driving. Didn’t seria seguido de um verbo básico, não de driving. Por isso: “She wasn’t driving when I called”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use wasn’t + verb-ing, not didn’t + verb-ing. Correct: She wasn’t driving when I called"
+            "title": "Vamos por partes:",
+            "message": "Para negar essa ação em andamento, usamos wasn’t driving. Didn’t seria seguido de um verbo básico, não de driving. Por isso: “She wasn’t driving when I called”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q05/completion.mp3"
       },
       {
         "id": "course-a2-03-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use past simple for the event that interrupted the past activity. Correct: We were walking when the rain started"
+            "title": "Isso mesmo!",
+            "message": "A caminhada estava em andamento, e a chuva começou durante ela. Esse acontecimento pontual fica no passado simples: started. Por isso: “We were walking when the rain started”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use past simple for the event that interrupted the past activity. Correct: We were walking when the rain started"
+            "title": "Vamos por partes:",
+            "message": "A caminhada estava em andamento, e a chuva começou durante ela. Esse acontecimento pontual fica no passado simples: started. Por isso: “We were walking when the rain started”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-03-quiz/course-a2-03-q06/completion.mp3"
       }
     ]
   },

@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use who for the person in this defining relative clause. Correct: The person who lives here works from home"
+            "title": "Isso mesmo!",
+            "message": "A oração está identificando uma pessoa. Nesse caso usamos who; which é usado para coisas nessa construção. Por isso: “The person who lives here works from home”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use who for the person in this defining relative clause. Correct: The person who lives here works from home"
+            "title": "Vamos por partes:",
+            "message": "A oração está identificando uma pessoa. Nesse caso usamos who; which é usado para coisas nessa construção. Por isso: “The person who lives here works from home”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q01/completion.mp3"
       },
       {
         "id": "course-b2-08-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "That already acts as the relative-clause subject; do not add it. Correct: The flat that has a balcony is available"
+            "title": "Isso mesmo!",
+            "message": "O that já ocupa o lugar do sujeito dentro da oração. Acrescentar it faria esse sujeito aparecer duas vezes. Por isso: “The flat that has a balcony is available”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "That already acts as the relative-clause subject; do not add it. Correct: The flat that has a balcony is available"
+            "title": "Vamos por partes:",
+            "message": "O that já ocupa o lugar do sujeito dentro da oração. Acrescentar it faria esse sujeito aparecer duas vezes. Por isso: “The flat that has a balcony is available”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q02/completion.mp3"
       },
       {
         "id": "course-b2-08-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use which, not that, in this extra-information clause between commas. Correct: Flat C, which has a balcony, is available"
+            "title": "Isso mesmo!",
+            "message": "As vírgulas mostram que estamos acrescentando uma informação sobre o apartamento. Nessa oração usamos which, não that. Por isso: “Flat C, which has a balcony, is available”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use which, not that, in this extra-information clause between commas. Correct: Flat C, which has a balcony, is available"
+            "title": "Vamos por partes:",
+            "message": "As vírgulas mostram que estamos acrescentando uma informação sobre o apartamento. Nessa oração usamos which, não that. Por isso: “Flat C, which has a balcony, is available”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q03/completion.mp3"
       },
       {
         "id": "course-b2-08-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The relative-clause verb agrees with the plural flats. Correct: The flats that have a study cost more"
+            "title": "Isso mesmo!",
+            "message": "O verbo da oração se refere a flats, no plural. Por isso usamos have, não has. Por isso: “The flats that have a study cost more”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The relative-clause verb agrees with the plural flats. Correct: The flats that have a study cost more"
+            "title": "Vamos por partes:",
+            "message": "O verbo da oração se refere a flats, no plural. Por isso usamos have, não has. Por isso: “The flats that have a study cost more”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q04/completion.mp3"
       },
       {
         "id": "course-b2-08-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use which to comment on the whole preceding idea. Correct: The flat has a study, which makes working easier"
+            "title": "Isso mesmo!",
+            "message": "Aqui comentamos a ideia anterior inteira: ter um escritório facilita o trabalho. Para fazer essa ligação, usamos which, não what. Por isso: “The flat has a study, which makes working easier”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use which to comment on the whole preceding idea. Correct: The flat has a study, which makes working easier"
+            "title": "Vamos por partes:",
+            "message": "Aqui comentamos a ideia anterior inteira: ter um escritório facilita o trabalho. Para fazer essa ligação, usamos which, não what. Por isso: “The flat has a study, which makes working easier”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q05/completion.mp3"
       },
       {
         "id": "course-b2-08-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use who, not which, for a person in this extra-information clause. Correct: Ana, who works from home, needs a study"
+            "title": "Isso mesmo!",
+            "message": "A informação extra é sobre Ana, uma pessoa. Por isso usamos who nessa oração, mesmo com as vírgulas. Por isso: “Ana, who works from home, needs a study”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use who, not which, for a person in this extra-information clause. Correct: Ana, who works from home, needs a study"
+            "title": "Vamos por partes:",
+            "message": "A informação extra é sobre Ana, uma pessoa. Por isso usamos who nessa oração, mesmo com as vírgulas. Por isso: “Ana, who works from home, needs a study”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-08-quiz/course-b2-08-q06/completion.mp3"
       }
     ]
   },

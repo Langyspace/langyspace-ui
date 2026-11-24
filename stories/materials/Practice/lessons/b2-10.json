@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A what-cleft uses statement order inside the what-clause. Correct: What I need is a quiet room"
+            "title": "Isso mesmo!",
+            "message": "Essa construção começa com what I need, na ordem de uma afirmação. Não usamos a inversão do I need, porque essa parte não é uma pergunta direta. Por isso: “What I need is a quiet room”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A what-cleft uses statement order inside the what-clause. Correct: What I need is a quiet room"
+            "title": "Vamos por partes:",
+            "message": "Essa construção começa com what I need, na ordem de uma afirmação. Não usamos a inversão do I need, porque essa parte não é uma pergunta direta. Por isso: “What I need is a quiet room”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q01/completion.mp3"
       },
       {
         "id": "course-b2-10-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use that to connect this it-cleft to the rest of the clause. Correct: It was the lift that woke me"
+            "title": "Isso mesmo!",
+            "message": "Para destacar o que causou o problema, usamos it was e depois ligamos o restante com that. What não faz essa ligação aqui. Por isso: “It was the lift that woke me”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use that to connect this it-cleft to the rest of the clause. Correct: It was the lift that woke me"
+            "title": "Vamos por partes:",
+            "message": "Para destacar o que causou o problema, usamos it was e depois ligamos o restante com that. What não faz essa ligação aqui. Por isso: “It was the lift that woke me”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q02/completion.mp3"
       },
       {
         "id": "course-b2-10-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After emphatic did, use the base verb. Correct: I did ask for a change"
+            "title": "Isso mesmo!",
+            "message": "O did dá ênfase ao pedido e já carrega o passado. Por isso ask fica na forma básica, sem ed. Por isso: “I did ask for a change”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After emphatic did, use the base verb. Correct: I did ask for a change"
+            "title": "Vamos por partes:",
+            "message": "O did dá ênfase ao pedido e já carrega o passado. Por isso ask fica na forma básica, sem ed. Por isso: “I did ask for a change”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q03/completion.mp3"
       },
       {
         "id": "course-b2-10-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The thing identified by this what-clause is singular: use was. Correct: What disturbed me was the noise"
+            "title": "Isso mesmo!",
+            "message": "A frase está identificando uma coisa: o barulho. Por isso usamos was nessa construção, não were. Por isso: “What disturbed me was the noise”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The thing identified by this what-clause is singular: use was. Correct: What disturbed me was the noise"
+            "title": "Vamos por partes:",
+            "message": "A frase está identificando uma coisa: o barulho. Por isso usamos was nessa construção, não were. Por isso: “What disturbed me was the noise”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q04/completion.mp3"
       },
       {
         "id": "course-b2-10-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The past tense is already carried by did; explain stays in the base form. Correct: She did explain the problem at reception"
+            "title": "Isso mesmo!",
+            "message": "O did já marca o passado e destaca que ela realmente explicou. Depois dele, usamos explain, sem ed. Por isso: “She did explain the problem at reception”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The past tense is already carried by did; explain stays in the base form. Correct: She did explain the problem at reception"
+            "title": "Vamos por partes:",
+            "message": "O did já marca o passado e destaca que ela realmente explicou. Depois dele, usamos explain, sem ed. Por isso: “She did explain the problem at reception”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q05/completion.mp3"
       },
       {
         "id": "course-b2-10-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "That already acts as the subject of kept; do not add it. Correct: It was the noise that kept me awake"
+            "title": "Isso mesmo!",
+            "message": "O that já funciona como sujeito de kept. Se colocarmos it também, repetimos esse sujeito dentro da oração. Por isso: “It was the noise that kept me awake”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "That already acts as the subject of kept; do not add it. Correct: It was the noise that kept me awake"
+            "title": "Vamos por partes:",
+            "message": "O that já funciona como sujeito de kept. Se colocarmos it também, repetimos esse sujeito dentro da oração. Por isso: “It was the noise that kept me awake”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b2-10-quiz/course-b2-10-q06/completion.mp3"
       }
     ]
   },

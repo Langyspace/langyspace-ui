@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have been + verb-ing for the recent activity. Correct: I’ve been painting"
+            "title": "Isso mesmo!",
+            "message": "Para destacar uma atividade que vem acontecendo, usamos have been mais o verbo com ing. Aqui precisamos de painting, não paint. Por isso: “I’ve been painting”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have been + verb-ing for the recent activity. Correct: I’ve been painting"
+            "title": "Vamos por partes:",
+            "message": "Para destacar uma atividade que vem acontecendo, usamos have been mais o verbo com ing. Aqui precisamos de painting, não paint. Por isso: “I’ve been painting”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q01/completion.mp3"
       },
       {
         "id": "course-b1-01-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use has with she, he and it. Correct: She has been cycling to work"
+            "title": "Isso mesmo!",
+            "message": "O sujeito é she, então o auxiliar é has. O restante da construção continua been cycling. Por isso: “She has been cycling to work”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use has with she, he and it. Correct: She has been cycling to work"
+            "title": "Vamos por partes:",
+            "message": "O sujeito é she, então o auxiliar é has. O restante da construção continua been cycling. Por isso: “She has been cycling to work”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q02/completion.mp3"
       },
       {
         "id": "course-b1-01-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the past participle sent after have for a completed result. Correct: I’ve sent all three emails"
+            "title": "Isso mesmo!",
+            "message": "O present perfect precisa do particípio depois de have. Para send, esse particípio é sent; assim você destaca os e-mails concluídos. Por isso: “I’ve sent all three emails”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the past participle sent after have for a completed result. Correct: I’ve sent all three emails"
+            "title": "Vamos por partes:",
+            "message": "O present perfect precisa do particípio depois de have. Para send, esse particípio é sent; assim você destaca os e-mails concluídos. Por isso: “I’ve sent all three emails”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q03/completion.mp3"
       },
       {
         "id": "course-b1-01-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Put have before the subject in a direct question. Correct: How long have you been baking?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta, have vem antes de you. Been baking continua junto depois do sujeito. Por isso: “How long have you been baking?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Put have before the subject in a direct question. Correct: How long have you been baking?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta, have vem antes de you. Been baking continua junto depois do sujeito. Por isso: “How long have you been baking?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q04/completion.mp3"
       },
       {
         "id": "course-b1-01-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use for with a length of time; since introduces a starting point. Correct: He’s been working here for a month"
+            "title": "Isso mesmo!",
+            "message": "A month é uma duração. Por isso usamos for; since precisaria de um ponto de início, como last month. Por isso: “He’s been working here for a month”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use for with a length of time; since introduces a starting point. Correct: He’s been working here for a month"
+            "title": "Vamos por partes:",
+            "message": "A month é uma duração. Por isso usamos for; since precisaria de um ponto de início, como last month. Por isso: “He’s been working here for a month”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q05/completion.mp3"
       },
       {
         "id": "course-b1-01-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have finished for the completed result and am painting for the ongoing activity. Correct: I’ve finished the room, but I’m still painting the hall"
+            "title": "Isso mesmo!",
+            "message": "O quarto já foi terminado, então usamos have finished para esse resultado. A pintura do corredor continua em andamento e aparece com am painting. Por isso: “I’ve finished the room, but I’m still painting the hall”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have finished for the completed result and am painting for the ongoing activity. Correct: I’ve finished the room, but I’m still painting the hall"
+            "title": "Vamos por partes:",
+            "message": "O quarto já foi terminado, então usamos have finished para esse resultado. A pintura do corredor continua em andamento e aparece com am painting. Por isso: “I’ve finished the room, but I’m still painting the hall”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q06/completion.mp3"
       }
     ]
   },

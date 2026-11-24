@@ -327,3 +327,7 @@ Preservar o prompt de ilustração v1.8 literalmente. Separar fatos dos personag
 - Se o contraste for de sentido entre duas formas válidas, o contexto precisa excluir uma leitura sem ambiguidade; não chamar uma forma válida de errada apenas por preferência estilística. Não tratar linguagem informal ou uma variedade aceita como erro universal
 - Seis questões por conjunto com variação dentro dos objetivos realmente trabalhados, sem completar quantidade com regras inéditas. Reutilizar léxico e situação da aula; adaptar extensão e complexidade ao nível
 - Após responder, mostrar regra curta e construção corrigida. A explicação não entrega a resposta antes da tentativa. Equilibrar a posição da resposta certa e manter a prévia alinhada ao mesmo item do Student, sem uma abreviação que remova o contraste avaliado
+
+## Narração e explicação do Quiz — revisão87
+
+O enunciado, incluindo o contexto quando necessário, tem gravação em inglês e controle para ouvir novamente. A opção correta só é narrada depois da tentativa. O feedback escrito é em português, com explicação curta e natural: situar o que a pessoa quer dizer, explicar a escolha e mostrar a frase corrigida. Evitar tradução literal de metalinguagem ou apenas rótulos de acerto/erro. Aplicar também ao acerto, para reforçar o motivo. Usar áudio ElevenLabs real e reuso exato; limpar reprodução/timers ao avançar/sair e oferecer replay se o navegador bloquear o início automático.

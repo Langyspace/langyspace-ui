@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/5ec201d208b0846d211d9bc5115abd475983945dbbca61f5978a191d76873a14.mp3'
+import quizNarration2 from '../assets/quiz-audio/4124ba54a4747c9fc2b41bcbecd15d3398345da73151714046f287e812190db8.mp3'
+import quizNarration3 from '../assets/quiz-audio/5876ef674d975197a35ea3efad28063e77370add15288c8c6787900f29e6137d.mp3'
+import quizNarration4 from '../assets/quiz-audio/0999f63961ed0afbaf1839bd1f50eff46e94178c8f3341cdb152e25d16e1f5f5.mp3'
+import quizNarration5 from '../assets/quiz-audio/126a5982027de4ac82225aa89c5e0840d69367bbe0f22564da1764e121ca7edd.mp3'
+import quizNarration6 from '../assets/quiz-audio/b416259d2e119c5f50e3b8c886423f2def2cf4e466053199919e52d661c622b9.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-08.json'
 import asset0 from '../../Course/assets/audio/B208-D81.1.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-08-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q01.completion',
+      text: 'The person who lives here works from home',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-08-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q02.completion',
+      text: 'The flat that has a balcony is available',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-08-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q03.completion',
+      text: 'Flat C, which has a balcony, is available',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-08-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q04.completion',
+      text: 'The flats that have a study cost more',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-08-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q05.completion',
+      text: 'The flat has a study, which makes working easier',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-08-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-08-q06.completion',
+      text: 'Ana, who works from home, needs a study',
+      src: quizNarration6,
+    },
     {
       id: 'b2-08.shadowing.01',
       text: 'Which apartment would you recommend for this brief?',

@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/bcad9ca2352548e9c4b4e0fa4c42404b4abfc16dd1ec1873dd80698e5a09e20b.mp3'
+import quizNarration2 from '../assets/quiz-audio/b6ab0d208bb97144b94b71fcac3485b7ed383423530ad49c428c753d18b8989f.mp3'
+import quizNarration3 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration4 from '../assets/quiz-audio/324a516efd2d34c7c03d5e71e46eac4032850aa389a8be115c71b7b815e58634.mp3'
+import quizNarration5 from '../assets/quiz-audio/6fc1f545721cd4b2224543104a5dbb11d2b355733c1ec018cacd458aea402704.mp3'
+import quizNarration6 from '../assets/quiz-audio/2e99a254ae70e1cd95fbadb320c6939c2afa385af2a536f05e1c763c46a2631a.mp3'
+import quizNarration7 from '../assets/quiz-audio/bf52685822ed07b13358b5c20db56c1c923477bb26e53a3748e84fc07faa51e9.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-05.json'
 import asset0 from '../../Course/assets/audio/B205-D81.1.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-05-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-05-q01.completion',
+      text: 'We needn’t have paid twice',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-05-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-05-q02.completion',
+      text: 'We didn’t need to book in advance',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-05-q03.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-05-q03.completion',
+      text: 'Did you need to pay a deposit?',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-05-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-05-q04.completion',
+      text: 'I needn’t have bought breakfast',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-05-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-05-q05.completion',
+      text: 'We didn’t need to pay in advance, but we chose to',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b2-05-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-05-q06.completion',
+      text: 'She didn’t need to pay twice',
+      src: quizNarration7,
+    },
     {
       id: 'b2-05.shadowing.01',
       text: 'Why is the total higher than the booking confirmation?',

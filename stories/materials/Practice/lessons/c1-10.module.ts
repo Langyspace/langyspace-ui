@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/2a71bbbf100d2999aa66af3ab1c78a0befa5e112b67c5ad1e0bd8473d9d77821.mp3'
+import quizNarration2 from '../assets/quiz-audio/10970b9ef3d160d743caab3366735ff59ad8f0f51b7bff32302fabbb0f0c41ad.mp3'
+import quizNarration3 from '../assets/quiz-audio/5a9b5ffdd8975d416a4ea50ec61e2b7a00bddcd7560d85f00e34a646b8ad92ca.mp3'
+import quizNarration4 from '../assets/quiz-audio/743cf5c549ccb2daa130ac3f911de3ecadafd2d04849511c18f7edb017b94836.mp3'
+import quizNarration5 from '../assets/quiz-audio/a40dd35cd40e8a293c662052a389dcc04477c5ec4dd128c259d878b45bcb7c58.mp3'
+import quizNarration6 from '../assets/quiz-audio/a38be33bb53939af1e4b2bf8f024859044b9495f276f3906ccc448650ae6acbc.mp3'
+import quizNarration7 from '../assets/quiz-audio/7bf44384b7d5b13dc37ab3c72f0ee8723321f67f6d02dd3bd0ccc45463db2d73.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-10.json'
 import asset0 from '../../Course/assets/audio/C110-D81.1.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-10-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-10-q01.completion',
+      text: 'I’m writing to let you know',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-10-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-10-q02.completion',
+      text: 'Just to let you know, the date has changed',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-10-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-10-q03.completion',
+      text: 'Please confirm whether you can attend',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-10-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-10-q04.completion',
+      text: 'I’m writing to let you know about the change',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-10-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-10-q05.completion',
+      text: 'Quick update: the dates we agreed on have changed',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-10-q06.prompt',
+      text: 'You need one confirmation no later than Friday. Choose the form for a reply deadline',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-c1-10-q06.completion',
+      text: 'Please confirm by Friday',
+      src: quizNarration7,
+    },
     {
       id: 'c1-10.shadowing.01',
       text: 'Who is this update for, and what do they need to do?',

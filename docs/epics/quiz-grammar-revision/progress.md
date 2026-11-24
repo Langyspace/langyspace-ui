@@ -6,4 +6,6 @@ Validação:31 fontes de gramática e186 itens conferidos, com paridade UI/Stude
 
 Próxima tarefa: reconstruir/adotar o artefato neutral e atualizar os PRs em rascunho. Não há novo pacote público ou nova geração de mídia nesta revisão. Fontes: content/course-practice/quiz-grammar86.json no Student e plan86.md. Publicação85 segue bloqueada por Storage403; nenhuma atividade foi escrita remotamente.
 
+Revisão87 acrescenta áudio dos enunciados e das formas corretas e substitui os186 feedbacks por explicações didáticas em português. Alternativas, gabaritos e vínculos à gramática da aula permanecem. Fonte atual em ../quiz-narration-feedback/progress.md
+
 Visual gate review: pending human

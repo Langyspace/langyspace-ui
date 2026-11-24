@@ -31,4 +31,6 @@ A matriz ampliada aferiu 298 estados de encerramento em duas larguras. O único 
 
 Revisão86 substitui os31 quizzes de interpretação por186 itens de gramática. Cada alvo aponta para uma linha da tabela realmente renderizada na aula. A regra, correção e justificativa aparecem após a tentativa. Ver ../quiz-grammar-revision/plan86.md. Os89 outros objetos de atividade e todas as mídias permanecem iguais. A revisão exige nova avaliação humana dos quizzes; não é aprovação da revisão85
 
+Revisão87:190 gravações de narração para372 vínculos de Quiz e186 explicações em português. Total de chamadas TTS novas do homework passa de193 para383, sem regenerar as mídias anteriores. A distribuição70/30 continua sendo a dos60 conjuntos de Shadowing. Origem e retomada: ../quiz-narration-feedback/progress.md
+
 Visual gate review: pending human

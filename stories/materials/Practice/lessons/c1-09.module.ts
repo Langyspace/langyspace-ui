@@ -1,3 +1,10 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/8565916b4aec93b9f5a71d94576c1ea47f8bed4c1b64fb838f0f89cf3dbcf559.mp3'
+import quizNarration2 from '../assets/quiz-audio/ad8d8260abeed7a297e715ee5053150caa8be25a3128419d8630183a70b0db19.mp3'
+import quizNarration3 from '../assets/quiz-audio/25f0fb95ffbec03305fbf107305bc2b985ba4f0c42cb65fe302d15a7101581a6.mp3'
+import quizNarration4 from '../assets/quiz-audio/c783c9afc3430d2904ae14272847f12c25b8f8f9f309afed4b0560c909f3c15e.mp3'
+import quizNarration5 from '../assets/quiz-audio/65e216a20e7d4087cfe0f2f449b42cdd3f1111c1c82ee2070d812654b6cd2b26.mp3'
+import quizNarration6 from '../assets/quiz-audio/3ad6e4fde31012a458863c04b700cec9210c930eb294d1da584a7b07b58953fe.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './c1-09.json'
 import asset0 from '../../Course/assets/audio/C109-D81.1.mp3'
@@ -17,6 +24,66 @@ import asset13 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-c1-09-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q01.completion',
+      text: 'Demand is bound to rise',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-c1-09-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q02.completion',
+      text: 'Demand is likely to increase',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-c1-09-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q03.completion',
+      text: 'These figures are unlikely to improve',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-c1-09-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q04.completion',
+      text: 'The service is set to start next month',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-c1-09-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q05.completion',
+      text: 'We were going to recommend no action',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-c1-09-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-c1-09-q06.completion',
+      text: 'It is likely that demand will rise',
+      src: quizNarration6,
+    },
     {
       id: 'c1-09.shadowing.01',
       text: 'Demand has risen for three months. It’s bound to get worse, isn’t it?',

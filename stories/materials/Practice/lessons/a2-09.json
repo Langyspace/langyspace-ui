@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use since before the year when a continuing situation began. Correct: I’ve lived here since 2022"
+            "title": "Isso mesmo!",
+            "message": "2022 é o ponto em que a situação começou. Quando ela continua até agora, usamos since antes desse ponto de partida. Por isso: “I’ve lived here since 2022”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use since before the year when a continuing situation began. Correct: I’ve lived here since 2022"
+            "title": "Vamos por partes:",
+            "message": "2022 é o ponto em que a situação começou. Quando ela continua até agora, usamos since antes desse ponto de partida. Por isso: “I’ve lived here since 2022”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q01/completion.mp3"
       },
       {
         "id": "course-a2-09-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use for before a length of time. Correct: She’s worked here for three years"
+            "title": "Isso mesmo!",
+            "message": "Three years é uma duração, não uma data de início. Para esse período de tempo, usamos for. Por isso: “She’s worked here for three years”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use for before a length of time. Correct: She’s worked here for three years"
+            "title": "Vamos por partes:",
+            "message": "Three years é uma duração, não uma data de início. Para esse período de tempo, usamos for. Por isso: “She’s worked here for three years”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q02/completion.mp3"
       },
       {
         "id": "course-a2-09-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Put have before the subject in a direct present-perfect question. Correct: How long have you lived here?"
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta com present perfect, have vem antes de you. Depois, lived continua no particípio. Por isso: “How long have you lived here?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Put have before the subject in a direct present-perfect question. Correct: How long have you lived here?"
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta com present perfect, have vem antes de you. Depois, lived continua no particípio. Por isso: “How long have you lived here?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q03/completion.mp3"
       },
       {
         "id": "course-a2-09-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After did, use the base verb move. Correct: When did you move here?"
+            "title": "Isso mesmo!",
+            "message": "O did já mostra que a pergunta está no passado. O verbo seguinte fica move, sem o d do passado. Por isso: “When did you move here?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After did, use the base verb move. Correct: When did you move here?"
+            "title": "Vamos por partes:",
+            "message": "O did já mostra que a pergunta está no passado. O verbo seguinte fica move, sem o d do passado. Por isso: “When did you move here?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q04/completion.mp3"
       },
       {
         "id": "course-a2-09-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A finished past date such as in 2022 takes past simple. Correct: I moved here in 2022"
+            "title": "Isso mesmo!",
+            "message": "A frase situa a mudança em um ano passado já terminado. Com essa data definida, usamos moved no passado simples. Por isso: “I moved here in 2022”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A finished past date such as in 2022 takes past simple. Correct: I moved here in 2022"
+            "title": "Vamos por partes:",
+            "message": "A frase situa a mudança em um ano passado já terminado. Com essa data definida, usamos moved no passado simples. Por isso: “I moved here in 2022”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q05/completion.mp3"
       },
       {
         "id": "course-a2-09-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the past participle been after have. Correct: We have been neighbours since May"
+            "title": "Isso mesmo!",
+            "message": "Depois de have, precisamos do particípio de be: been. A forma básica be não completa o present perfect. Por isso: “We have been neighbours since May”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the past participle been after have. Correct: We have been neighbours since May"
+            "title": "Vamos por partes:",
+            "message": "Depois de have, precisamos do particípio de be: been. A forma básica be não completa o present perfect. Por isso: “We have been neighbours since May”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q06/completion.mp3"
       }
     ]
   },

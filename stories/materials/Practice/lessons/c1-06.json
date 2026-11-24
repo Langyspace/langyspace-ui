@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the before both linked comparatives. Correct: The more I read, the less certain I feel"
+            "title": "Isso mesmo!",
+            "message": "Quando ligamos duas comparações desse jeito, usamos the nas duas partes. Não é só a primeira que recebe essa marca. Por isso: “The more I read, the less certain I feel”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the before both linked comparatives. Correct: The more I read, the less certain I feel"
+            "title": "Vamos por partes:",
+            "message": "Quando ligamos duas comparações desse jeito, usamos the nas duas partes. Não é só a primeira que recebe essa marca. Por isso: “The more I read, the less certain I feel”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q01/completion.mp3"
       },
       {
         "id": "course-c1-06-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use cheaper or more attractive; do not put more before cheaper. Correct: The cheaper it is, the more attractive it seems"
+            "title": "Isso mesmo!",
+            "message": "Cheaper já é o comparativo. Acrescentar more antes dele repetiria a comparação, enquanto more attractive está bem formado. Por isso: “The cheaper it is, the more attractive it seems”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use cheaper or more attractive; do not put more before cheaper. Correct: The cheaper it is, the more attractive it seems"
+            "title": "Vamos por partes:",
+            "message": "Cheaper já é o comparativo. Acrescentar more antes dele repetiria a comparação, enquanto more attractive está bem formado. Por isso: “The cheaper it is, the more attractive it seems”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q02/completion.mp3"
       },
       {
         "id": "course-c1-06-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Considerably can modify more expensive; expensive still needs its comparative marker. Correct: This course is considerably more expensive"
+            "title": "Isso mesmo!",
+            "message": "Considerably indica o tamanho da diferença, mas não substitui o comparativo. Ainda precisamos de more antes de expensive. Por isso: “This course is considerably more expensive”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Considerably can modify more expensive; expensive still needs its comparative marker. Correct: This course is considerably more expensive"
+            "title": "Vamos por partes:",
+            "message": "Considerably indica o tamanho da diferença, mas não substitui o comparativo. Ainda precisamos de more antes de expensive. Por isso: “This course is considerably more expensive”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q03/completion.mp3"
       },
       {
         "id": "course-c1-06-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use much, not very, to intensify this comparative. Correct: The timetable is much more flexible"
+            "title": "Isso mesmo!",
+            "message": "Para intensificar esse comparativo, usamos much more. Very acompanha um adjetivo comum, mas não entra diretamente antes de more flexible. Por isso: “The timetable is much more flexible”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use much, not very, to intensify this comparative. Correct: The timetable is much more flexible"
+            "title": "Vamos por partes:",
+            "message": "Para intensificar esse comparativo, usamos much more. Very acompanha um adjetivo comum, mas não entra diretamente antes de more flexible. Por isso: “The timetable is much more flexible”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q04/completion.mp3"
       },
       {
         "id": "course-c1-06-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use the easier, without more, in the second comparative clause. Correct: The more flexible it is, the easier planning becomes"
+            "title": "Isso mesmo!",
+            "message": "Easier já mostra a comparação na segunda parte. Por isso usamos the easier, sem acrescentar more. Por isso: “The more flexible it is, the easier planning becomes”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use the easier, without more, in the second comparative clause. Correct: The more flexible it is, the easier planning becomes"
+            "title": "Vamos por partes:",
+            "message": "Easier já mostra a comparação na segunda parte. Por isso usamos the easier, sem acrescentar more. Por isso: “The more flexible it is, the easier planning becomes”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q05/completion.mp3"
       },
       {
         "id": "course-c1-06-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "For this hypothetical condition, use past simple after if and would in the result. Correct: I’d reconsider if the session conflicted with work"
+            "title": "Isso mesmo!",
+            "message": "Você apresenta uma situação hipotética. Nessa condição, usamos conflicted depois de if e deixamos would no resultado: I’d reconsider. Por isso: “I’d reconsider if the session conflicted with work”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "For this hypothetical condition, use past simple after if and would in the result. Correct: I’d reconsider if the session conflicted with work"
+            "title": "Vamos por partes:",
+            "message": "Você apresenta uma situação hipotética. Nessa condição, usamos conflicted depois de if e deixamos would no resultado: I’d reconsider. Por isso: “I’d reconsider if the session conflicted with work”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-06-quiz/course-c1-06-q06/completion.mp3"
       }
     ]
   },

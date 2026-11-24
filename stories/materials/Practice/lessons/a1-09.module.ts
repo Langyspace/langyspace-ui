@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/cb0b7d2a546a2ecb9bdd12292043e62c7b6a7531a0ecc22498fdfe681f0b3af5.mp3'
+import quizNarration2 from '../assets/quiz-audio/4fcd952be42c3d51cbb8925584217b5e80f6d5eba27d2d1bb90072196a19d6ef.mp3'
+import quizNarration3 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration4 from '../assets/quiz-audio/53a4bec62821cf7b6a1f2ffe5935055278302452ddc93440aa4a640c7353bec6.mp3'
+import quizNarration5 from '../assets/quiz-audio/e08479da6481517ee7747290b69626631f9ca4655693776f210bafba0ff7b412.mp3'
+import quizNarration6 from '../assets/quiz-audio/4cdd45e3b75ba56fbcdb8705c5d91760647bef84ee54a4d5ddfd2c2a47f7f42a.mp3'
+import quizNarration7 from '../assets/quiz-audio/f0482b56cde9b7544d6642fd23c10f4a5598765152dd7dc7c0e6966d49a8fec1.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './a1-09.json'
 import asset0 from '../../Course/assets/audio/A109-D81.1.mp3'
@@ -11,6 +19,66 @@ import asset7 from '../assets/characters/ana.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-a1-09-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a1-09-q01.completion',
+      text: 'There is a café',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-a1-09-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a1-09-q02.completion',
+      text: 'There are two banks',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-a1-09-q03.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-a1-09-q03.completion',
+      text: 'Is there a pharmacy near here?',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-a1-09-q04.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-a1-09-q04.completion',
+      text: 'Are there two cafés on this street?',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-a1-09-q05.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a1-09-q05.completion',
+      text: 'Turn right at the bank',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-a1-09-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-a1-09-q06.completion',
+      text: 'There’s a park near the hotel',
+      src: quizNarration7,
+    },
     {
       id: 'a1-09.shadowing.01',
       text: 'Excuse me. Is there a café near the hotel?',

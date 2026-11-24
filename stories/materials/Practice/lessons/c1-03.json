@@ -22,14 +22,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use subject + is said to + base verb; the report is not proof. Correct: The café is said to be closing"
+            "title": "Isso mesmo!",
+            "message": "Depois de is said to, usamos o verbo básico be. A expressão relata o que dizem sobre o café, sem transformar isso em um fato confirmado. Por isso: “The café is said to be closing”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use subject + is said to + base verb; the report is not proof. Correct: The café is said to be closing"
+            "title": "Vamos por partes:",
+            "message": "Depois de is said to, usamos o verbo básico be. A expressão relata o que dizem sobre o café, sem transformar isso em um fato confirmado. Por isso: “The café is said to be closing”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q01/completion.mp3"
       },
       {
         "id": "course-c1-03-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use to have + past participle for an alleged earlier event. Correct: The café is thought to have closed"
+            "title": "Isso mesmo!",
+            "message": "Para relatar um acontecimento anterior, usamos to have mais o particípio. Aqui precisamos de closed, não close. Por isso: “The café is thought to have closed”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use to have + past participle for an alleged earlier event. Correct: The café is thought to have closed"
+            "title": "Vamos por partes:",
+            "message": "Para relatar um acontecimento anterior, usamos to have mais o particípio. Aqui precisamos de closed, não close. Por isso: “The café is thought to have closed”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q02/completion.mp3"
       },
       {
         "id": "course-c1-03-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The impersonal passive needs is before reported. Correct: It is reported that the dining area will close"
+            "title": "Isso mesmo!",
+            "message": "Essa forma de relato é passiva: it is reported that. Sem o is, falta o auxiliar da construção. Por isso: “It is reported that the dining area will close”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The impersonal passive needs is before reported. Correct: It is reported that the dining area will close"
+            "title": "Vamos por partes:",
+            "message": "Essa forma de relato é passiva: it is reported that. Sem o is, falta o auxiliar da construção. Por isso: “It is reported that the dining area will close”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q03/completion.mp3"
       },
       {
         "id": "course-c1-03-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "The source phrase is according to, including to. Correct: According to the notice, the café is being renovated"
+            "title": "Isso mesmo!",
+            "message": "Para indicar a fonte, a expressão é according to. Esse to faz parte dela e precisa aparecer antes de the notice. Por isso: “According to the notice, the café is being renovated”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "The source phrase is according to, including to. Correct: According to the notice, the café is being renovated"
+            "title": "Vamos por partes:",
+            "message": "Para indicar a fonte, a expressão é according to. Esse to faz parte dela e precisa aparecer antes de the notice. Por isso: “According to the notice, the café is being renovated”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q04/completion.mp3"
       },
       {
         "id": "course-c1-03-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "An earlier passive event uses to have been + past participle. Correct: The building is reported to have been sold"
+            "title": "Isso mesmo!",
+            "message": "O relato fala de uma venda anterior em que o prédio recebeu a ação. Por isso usamos to have been sold, com been, não being. Por isso: “The building is reported to have been sold”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "An earlier passive event uses to have been + past participle. Correct: The building is reported to have been sold"
+            "title": "Vamos por partes:",
+            "message": "O relato fala de uma venda anterior em que o prédio recebeu a ação. Por isso usamos to have been sold, com been, não being. Por isso: “The building is reported to have been sold”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q05/completion.mp3"
       },
       {
         "id": "course-c1-03-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use are with the plural subject figures. Correct: The figures are thought to be incomplete"
+            "title": "Isso mesmo!",
+            "message": "O sujeito é figures, no plural. O auxiliar precisa acompanhar esse sujeito: are thought, não is thought. Por isso: “The figures are thought to be incomplete”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use are with the plural subject figures. Correct: The figures are thought to be incomplete"
+            "title": "Vamos por partes:",
+            "message": "O sujeito é figures, no plural. O auxiliar precisa acompanhar esse sujeito: are thought, não is thought. Por isso: “The figures are thought to be incomplete”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-03-quiz/course-c1-03-q06/completion.mp3"
       }
     ]
   },

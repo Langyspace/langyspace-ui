@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Inverted past conditionals use had + subject + past participle. Correct: Had we known, we could have waited"
+            "title": "Isso mesmo!",
+            "message": "Nessa condicional invertida, had vem antes do sujeito e pede um particípio depois. Known funciona aqui; knew é o passado simples. Por isso: “Had we known, we could have waited”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Inverted past conditionals use had + subject + past participle. Correct: Had we known, we could have waited"
+            "title": "Vamos por partes:",
+            "message": "Nessa condicional invertida, had vem antes do sujeito e pede um particípio depois. Known funciona aqui; knew é o passado simples. Por isso: “Had we known, we could have waited”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q01/completion.mp3"
       },
       {
         "id": "course-c1-02-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Choose either Had we checked or If we had checked; do not combine if with inversion. Correct: Had we checked the test, we could have delayed opening"
+            "title": "Isso mesmo!",
+            "message": "Você pode começar com had we checked ou com if we had checked. A inversão já substitui o if; não usamos as duas formas juntas. Por isso: “Had we checked the test, we could have delayed opening”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Choose either Had we checked or If we had checked; do not combine if with inversion. Correct: Had we checked the test, we could have delayed opening"
+            "title": "Vamos por partes:",
+            "message": "Você pode começar com had we checked ou com if we had checked. A inversão já substitui o if; não usamos as duas formas juntas. Por isso: “Had we checked the test, we could have delayed opening”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q02/completion.mp3"
       },
       {
         "id": "course-c1-02-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "An if-clause keeps subject + had + past participle; it is as valid as inversion. Correct: If we had known, we could have waited"
+            "title": "Isso mesmo!",
+            "message": "A versão com if é tão válida quanto a invertida. Nela mantemos we had known, com known no particípio, não knew. Por isso: “If we had known, we could have waited”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "An if-clause keeps subject + had + past participle; it is as valid as inversion. Correct: If we had known, we could have waited"
+            "title": "Vamos por partes:",
+            "message": "A versão com if é tão válida quanto a invertida. Nela mantemos we had known, com known no particípio, não knew. Por isso: “If we had known, we could have waited”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q03/completion.mp3"
       },
       {
         "id": "course-c1-02-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep the past participle after had, including in a negative condition. Correct: Had we not ignored the warning, we could have acted"
+            "title": "Isso mesmo!",
+            "message": "Mesmo com not, o verbo depois de had precisa estar no particípio. Por isso usamos ignored, não ignore. Por isso: “Had we not ignored the warning, we could have acted”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep the past participle after had, including in a negative condition. Correct: Had we not ignored the warning, we could have acted"
+            "title": "Vamos por partes:",
+            "message": "Mesmo com not, o verbo depois de had precisa estar no particípio. Por isso usamos ignored, não ignore. Por isso: “Had we not ignored the warning, we could have acted”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q04/completion.mp3"
       },
       {
         "id": "course-c1-02-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use have, not had, after the modal in the result clause. Correct: Had we known, we could have delayed the launch"
+            "title": "Isso mesmo!",
+            "message": "No resultado dessa condição passada, could é seguido de have. Não colocamos had depois do modal. Por isso: “Had we known, we could have delayed the launch”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use have, not had, after the modal in the result clause. Correct: Had we known, we could have delayed the launch"
+            "title": "Vamos por partes:",
+            "message": "No resultado dessa condição passada, could é seguido de have. Não colocamos had depois do modal. Por isso: “Had we known, we could have delayed the launch”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q05/completion.mp3"
       },
       {
         "id": "course-c1-02-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A passive past-perfect condition uses had + subject + been + past participle. Correct: Had the test been completed, we could have opened"
+            "title": "Isso mesmo!",
+            "message": "A condição fala de um teste que teria sido concluído. Essa forma passiva precisa de had, sujeito, been e o particípio completed. Por isso: “Had the test been completed, we could have opened”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A passive past-perfect condition uses had + subject + been + past participle. Correct: Had the test been completed, we could have opened"
+            "title": "Vamos por partes:",
+            "message": "A condição fala de um teste que teria sido concluído. Essa forma passiva precisa de had, sujeito, been e o particípio completed. Por isso: “Had the test been completed, we could have opened”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-02-quiz/course-c1-02-q06/completion.mp3"
       }
     ]
   },

@@ -1,3 +1,11 @@
+import quizNarration0 from '../assets/quiz-audio/3e3ed981c802330ac617bcbbcef7bec970758577c2be17cf5da06bdbbaa7c1bd.mp3'
+import quizNarration1 from '../assets/quiz-audio/d746c9e6e841670c5e9404807b20032d64d78974ce248e3c94fe7c44eae30fa3.mp3'
+import quizNarration2 from '../assets/quiz-audio/e2c0b0a6bce52699b78f157affea91a7c9f80afeaa352cc5c45c98494cd402e8.mp3'
+import quizNarration3 from '../assets/quiz-audio/8fb41ea0e5637ec9be8bf4f2253a7de47cf03f7dc9ea27f294c5e9d0cdafb415.mp3'
+import quizNarration4 from '../assets/quiz-audio/e103ceeedbdc1b5e8d49e9fb3f595d1879c054da6b396ebfba24e01345921619.mp3'
+import quizNarration5 from '../assets/quiz-audio/2aa0e2b73dca4c6bca62131e7263dfdb4b8565f268b01ad00e2e0e20037efe5a.mp3'
+import quizNarration6 from '../assets/quiz-audio/5c4bf9451c07bd56aa36152c43fc701efd6f97ec50270a245e1503b6784cdc62.mp3'
+import quizNarration7 from '../assets/quiz-audio/68aa79a00d7758108cbb75aaac4fc840099ec6a59193963de3352af13bb25230.mp3'
 import type { PreparedPractice } from '../Practice.types'
 import data from './b2-09.json'
 import asset0 from '../assets/audio/2ffbf43cbdbd6ddf9c2bb2f44f6fd5a3a945401d3ed0ce83fb3061c5e92945c7.mp3'
@@ -17,6 +25,66 @@ import asset13 from '../assets/characters/arjun-mehta.webp'
 const prepared: PreparedPractice = {
   data: data as PreparedPractice['data'],
   recordings: [
+    {
+      id: 'course-b2-09-q01.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-09-q01.completion',
+      text: 'I remember locking the door',
+      src: quizNarration1,
+    },
+    {
+      id: 'course-b2-09-q02.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-09-q02.completion',
+      text: 'Remember to unplug the iron',
+      src: quizNarration2,
+    },
+    {
+      id: 'course-b2-09-q03.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-09-q03.completion',
+      text: 'I forgot to close the window',
+      src: quizNarration3,
+    },
+    {
+      id: 'course-b2-09-q04.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-09-q04.completion',
+      text: 'They remember shutting the windows',
+      src: quizNarration4,
+    },
+    {
+      id: 'course-b2-09-q05.prompt',
+      text: 'Choose the correct question',
+      src: quizNarration5,
+    },
+    {
+      id: 'course-b2-09-q05.completion',
+      text: 'Did you remember to lock the door?',
+      src: quizNarration6,
+    },
+    {
+      id: 'course-b2-09-q06.prompt',
+      text: 'Choose the correct sentence',
+      src: quizNarration0,
+    },
+    {
+      id: 'course-b2-09-q06.completion',
+      text: 'Don’t forget to take your keys',
+      src: quizNarration7,
+    },
     {
       id: 'b2-09.shadowing.01',
       text: 'I can’t remember locking the front door',

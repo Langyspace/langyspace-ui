@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep subject + verb inside the embedded question. Correct: Could you tell me where the exit is?"
+            "title": "Isso mesmo!",
+            "message": "A pergunta já começa com could you tell me. Dentro dela, usamos a ordem de uma afirmação: the exit is, não is the exit. Por isso: “Could you tell me where the exit is?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep subject + verb inside the embedded question. Correct: Could you tell me where the exit is?"
+            "title": "Vamos por partes:",
+            "message": "A pergunta já começa com could you tell me. Dentro dela, usamos a ordem de uma afirmação: the exit is, não is the exit. Por isso: “Could you tell me where the exit is?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q01/completion.mp3"
       },
       {
         "id": "course-b1-10-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After if, use statement order: the tour is. Correct: Do you know if the tour is included?"
+            "title": "Isso mesmo!",
+            "message": "Depois de if, a parte interna mantém a ordem the tour is included. A inversão da pergunta fica só no começo: do you know. Por isso: “Do you know if the tour is included?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After if, use statement order: the tour is. Correct: Do you know if the tour is included?"
+            "title": "Vamos por partes:",
+            "message": "Depois de if, a parte interna mantém a ordem the tour is included. A inversão da pergunta fica só no começo: do you know. Por isso: “Do you know if the tour is included?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q02/completion.mp3"
       },
       {
         "id": "course-b1-10-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use when + subject + verb inside the question; do not add does. Correct: Do you know when the museum closes?"
+            "title": "Isso mesmo!",
+            "message": "Dentro da pergunta indireta, usamos when the museum closes. Não acrescentamos does nessa parte interna. Por isso: “Do you know when the museum closes?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use when + subject + verb inside the question; do not add does. Correct: Do you know when the museum closes?"
+            "title": "Vamos por partes:",
+            "message": "Dentro da pergunta indireta, usamos when the museum closes. Não acrescentamos does nessa parte interna. Por isso: “Do you know when the museum closes?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q03/completion.mp3"
       },
       {
         "id": "course-b1-10-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "A direct question puts is before the subject. Correct: Where is the cloakroom?"
+            "title": "Isso mesmo!",
+            "message": "Aqui a pergunta é direta, sem uma expressão antes. Por isso is vem antes de the cloakroom. Por isso: “Where is the cloakroom?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "A direct question puts is before the subject. Correct: Where is the cloakroom?"
+            "title": "Vamos por partes:",
+            "message": "Aqui a pergunta é direta, sem uma expressão antes. Por isso is vem antes de the cloakroom. Por isso: “Where is the cloakroom?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q04/completion.mp3"
       },
       {
         "id": "course-b1-10-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Inside the embedded question, put I before can. Correct: Could you tell me where I can leave my bag?"
+            "title": "Isso mesmo!",
+            "message": "Na parte interna da pergunta, o sujeito I vem antes de can. A ordem can I ficaria em uma pergunta direta. Por isso: “Could you tell me where I can leave my bag?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Inside the embedded question, put I before can. Correct: Could you tell me where I can leave my bag?"
+            "title": "Vamos por partes:",
+            "message": "Na parte interna da pergunta, o sujeito I vem antes de can. A ordem can I ficaria em uma pergunta direta. Por isso: “Could you tell me where I can leave my bag?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q05/completion.mp3"
       },
       {
         "id": "course-b1-10-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep tickets are after if. Correct: Do you know if tickets are available?"
+            "title": "Isso mesmo!",
+            "message": "Depois de if, usamos a ordem de afirmação: tickets are available. A inversão já está em do you know. Por isso: “Do you know if tickets are available?”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep tickets are after if. Correct: Do you know if tickets are available?"
+            "title": "Vamos por partes:",
+            "message": "Depois de if, usamos a ordem de afirmação: tickets are available. A inversão já está em do you know. Por isso: “Do you know if tickets are available?”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-10-quiz/course-b1-10-q06/completion.mp3"
       }
     ]
   },

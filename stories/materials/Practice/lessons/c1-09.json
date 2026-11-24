@@ -22,14 +22,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Bound to is followed by the base verb and expresses strong certainty. Correct: Demand is bound to rise"
+            "title": "Isso mesmo!",
+            "message": "Bound to indica uma previsão bem forte e é seguido do verbo básico. Por isso usamos rise, não rising. Por isso: “Demand is bound to rise”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Bound to is followed by the base verb and expresses strong certainty. Correct: Demand is bound to rise"
+            "title": "Vamos por partes:",
+            "message": "Bound to indica uma previsão bem forte e é seguido do verbo básico. Por isso usamos rise, não rising. Por isso: “Demand is bound to rise”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q01/completion.mp3"
       },
       {
         "id": "course-c1-09-q02",
@@ -47,14 +49,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Keep to between likely and the base verb. Correct: Demand is likely to increase"
+            "title": "Isso mesmo!",
+            "message": "A construção para essa previsão é likely to mais o verbo. O to precisa aparecer antes de increase. Por isso: “Demand is likely to increase”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Keep to between likely and the base verb. Correct: Demand is likely to increase"
+            "title": "Vamos por partes:",
+            "message": "A construção para essa previsão é likely to mais o verbo. O to precisa aparecer antes de increase. Por isso: “Demand is likely to increase”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q02/completion.mp3"
       },
       {
         "id": "course-c1-09-q03",
@@ -72,14 +76,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "This prediction needs are before the adjective unlikely. Correct: These figures are unlikely to improve"
+            "title": "Isso mesmo!",
+            "message": "Unlikely é um adjetivo nessa frase, então precisamos de are antes dele. Figures é plural, por isso o auxiliar é are. Por isso: “These figures are unlikely to improve”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "This prediction needs are before the adjective unlikely. Correct: These figures are unlikely to improve"
+            "title": "Vamos por partes:",
+            "message": "Unlikely é um adjetivo nessa frase, então precisamos de are antes dele. Figures é plural, por isso o auxiliar é are. Por isso: “These figures are unlikely to improve”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q03/completion.mp3"
       },
       {
         "id": "course-c1-09-q04",
@@ -97,14 +103,16 @@
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Use set to + base verb for a scheduled or expected development. Correct: The service is set to start next month"
+            "title": "Isso mesmo!",
+            "message": "Para um desenvolvimento previsto, usamos set to mais o verbo básico. Aqui fica start, não starting. Por isso: “The service is set to start next month”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Use set to + base verb for a scheduled or expected development. Correct: The service is set to start next month"
+            "title": "Vamos por partes:",
+            "message": "Para um desenvolvimento previsto, usamos set to mais o verbo básico. Aqui fica start, não starting. Por isso: “The service is set to start next month”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q04/completion.mp3"
       },
       {
         "id": "course-c1-09-q05",
@@ -122,14 +130,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "Going to takes the base verb, even when the expectation is in the past. Correct: We were going to recommend no action"
+            "title": "Isso mesmo!",
+            "message": "Mesmo quando a intenção está no passado, going to recebe o verbo básico. Were muda o tempo da expectativa; recommend não vira recommended. Por isso: “We were going to recommend no action”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "Going to takes the base verb, even when the expectation is in the past. Correct: We were going to recommend no action"
+            "title": "Vamos por partes:",
+            "message": "Mesmo quando a intenção está no passado, going to recebe o verbo básico. Were muda o tempo da expectativa; recommend não vira recommended. Por isso: “We were going to recommend no action”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q05/completion.mp3"
       },
       {
         "id": "course-c1-09-q06",
@@ -147,14 +157,16 @@
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "That’s right",
-            "message": "After that, use a finite clause; an infinitive belongs in demand is likely to rise. Correct: It is likely that demand will rise"
+            "title": "Isso mesmo!",
+            "message": "Depois de that, precisamos de uma oração com verbo conjugado ou auxiliar. Demand will rise funciona; demand to rise não completa essa oração. Por isso: “It is likely that demand will rise”"
           },
           "wrong": {
-            "title": "Check the grammar",
-            "message": "After that, use a finite clause; an infinitive belongs in demand is likely to rise. Correct: It is likely that demand will rise"
+            "title": "Vamos por partes:",
+            "message": "Depois de that, precisamos de uma oração com verbo conjugado ou auxiliar. Demand will rise funciona; demand to rise não completa essa oração. Por isso: “It is likely that demand will rise”"
           }
-        }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-09-quiz/course-c1-09-q06/completion.mp3"
       }
     ]
   },
