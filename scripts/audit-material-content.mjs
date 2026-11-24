@@ -43,8 +43,18 @@ const minimum = (items, count, label) => {
     `${label}: duplicate authored items`,
   )
 }
+const approvedReferences = new Map([
+  ['a1-04/s31', 3],
+  ['a1-06/s41', 3],
+  ['a1-06/s4', 4],
+])
 function vocabulary(key, id, items, page = {}) {
   if (page.vocabularyRole === 'reference') {
+    assert.equal(
+      items.length,
+      approvedReferences.get(`${key}/${id}`),
+      `${key}.${id}: reference requires an explicit reviewed policy entry`,
+    )
     assert(
       page.referenceReason?.trim(),
       `${key}.${id}: a reference needs its pedagogical reason`,
@@ -126,6 +136,29 @@ for (const entry of catalog) {
   if (/^(a1|a2|b1|b2|c1)-\d\d$/.test(key) && !dedicated.has(key)) {
     const data = read(`Course/lessons/${key}.json`)
     reviewed(key, data)
+    const introduction = data.pages.find((page) => page.id === 's2')
+    if (introduction?.kind === 'activity') {
+      const words = data.activities.s2?.vocabulary
+      assert(
+        words,
+        `${key}.s2: declare vocabulary in the introductory activity`,
+      )
+      vocabulary(
+        key,
+        's2',
+        Object.entries(words).map(([id, value]) => ({ ...value, word: id })),
+      )
+    }
+    const personalPage = data.pages.find((page) => page.id === 's_personal')
+    const personalPurpose =
+      personalPage?.kind === 'activity'
+        ? data.activities.s_personal?.questionPurpose
+        : personalPage?.questionPurpose
+    assert.equal(
+      personalPurpose,
+      'conversation',
+      `${key}: personal practice cannot waive the conversation minimum`,
+    )
     for (const [id, activity] of Object.entries(data.activities)) {
       assert(
         activity.questionPurpose,
@@ -146,7 +179,23 @@ for (const entry of catalog) {
     )
   ) {
     const folder = key.replace('-', '').toUpperCase()
-    reviewed(key, read(`${folder}/${folder}.review.json`))
+    const data = read(`${folder}/${folder}.review.json`)
+    reviewed(key, data)
+    const ids = {
+      'a1-01': ['s15'],
+      'a1-02': ['s12'],
+      'a1-03': ['s5', 's101'],
+      'a1-04': ['s82'],
+      'a1-05': ['s5'],
+      'a1-06': ['s91'],
+      'c1-01': ['s8'],
+    }[key]
+    for (const id of ids)
+      assert.equal(
+        data.pages.find((page) => page.id === id)?.questionPurpose,
+        'conversation',
+        `${key}.${id}: personal practice cannot waive the conversation minimum`,
+      )
   }
 }
 // Native renderers use their own reviewed data, not the unused Course copies.

@@ -15,3 +15,12 @@ A inspeção dos casos abertos encontrou uma distinção adicional: as missões 
 O primeiro neutral 09b5ce66 e a primeira adoção Teacher d3c51503 foram compilados e publicados com recibo real em staging. Esta publicação intermediária é preservada como histórica: a entrega final ainda precisa do pequeno refinamento de respostas abertas, dos checks invalidados por essa mudança e de novo export/admissão source-bound. Não reutilizar o recibo intermediário como prova da revisão final.
 
 Leitura semântica final das50 práticas Course: cinco terceiras trocas foram refinadas para acrescentar uma função nova, em vez de repetir a segunda pergunta; emB1.07 o apoio usa could have, alinhado à gramática real, e emB2.09 contrasta memória passada com remember to de uma tarefa futura. A103 mantém a pergunta de profissão na forma be já ensinada. Ledger em semantic-review.json. Nenhum novo áudio, interface ou contrato mudou nesta leitura final; checks de interação/tipos continuam válidos, e o audit de conteúdo foi reexecutado para os novos textos. A fonte final desta leitura substitui os neutral09b5ce66 e38176139 anteriores; não confundir seus recibos com a publicação final.
+
+
+Entrega final: fonte UI36c1abb202a7768383aec13c8dcca907cf4cc14d e Teacherfefb13d1dd3ce60e81b01b9b17edc6e4904e0a72 publicadas e verificadas em staging. Recibo em staging-receipt.json; domínio customizado conferido e lease removida. As65 aulas/capas foram preservadas; quatro grupos voltaram a seis itens e63 práticas completas têm pelo menos três pares. O audit cobre70 grupos introdutórios, referências explícitas e fontes nativas. Quatro testes de interação e typecheck passaram;12 áudios restaurados tocaram no primeiro clique. As63 práticas também couberam em1280×720 com dicas abertas, sem texto cortado.
+
+A validação visual foi excessiva para este pedido:1828 estados pareados foram registrados, embora um inventário e amostras do componente fossem suficientes. A dona pediu proporcionalidade; os comparativos completos ficam no arquivo local, e a revisão GitHub usa as três telas centrais em desktop/mobile. Nenhum novo teste, build ou deploy será feito nesta entrega. A regra de validação foi atualizada em AGENTS.md.
+
+Aplicação Student, backend, produção, pacote público, capas e componentes src permanecem inalterados; Student recebeu só a cópia canônica das ferramentas de release. Todas as tarefas autorizadas estão concluídas. Próxima ação: revisão humana em staging, sem merge automático.
+
+Visual gate review: pending human

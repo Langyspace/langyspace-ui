@@ -1,0 +1,33 @@
+{
+  "status": "staging_verified",
+  "project": "langyspace-staging",
+  "sourceTeacher": "fefb13d1dd3ce60e81b01b9b17edc6e4904e0a72",
+  "sourceUI": "36c1abb202a7768383aec13c8dcca907cf4cc14d",
+  "neutralManifestSha256": "d6657fc9b566dec1c8a83428e1ff3c7fa15a1125e13f26157476ae7803b6bafa",
+  "catalog": 65,
+  "coversPreserved": 65,
+  "materialFiles": 2637,
+  "release": "a11122486b66401d89420928a9cdcca9d9c84814f79559ee81e8c4f99951f2cd",
+  "digest": "398e57ce70a1e79e4966e05447390389461df79c632a90201f5ef6ff7ce9c508",
+  "site": "langyspace-teacher-staging",
+  "providerVersion": "sites/langyspace-teacher-staging/versions/3e052a9ce88493d6",
+  "providerRelease": "sites/langyspace-teacher-staging/channels/live/releases/1795557618094000",
+  "assets": 3139,
+  "verifiedAt": 1795557698289,
+  "leaseAbsent": true,
+  "customDomainManifestVerified": true,
+  "attempts": {
+    "neutralExports": 3,
+    "teacherBuilds": 3,
+    "stagingHosting": 3,
+    "reason": "Open-task semantics and five repetitive follow-ups corrected before final handoff"
+  },
+  "scope": {
+    "studentRuntimeChanged": false,
+    "studentHosting": false,
+    "functions": false,
+    "production": false,
+    "publicPackageRelease": false
+  },
+  "visualGateReview": "pending human"
+}

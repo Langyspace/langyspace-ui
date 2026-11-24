@@ -160,3 +160,7 @@ load it for simple read-only answers or isolated documentation.
 - API/package: `pnpm run check:api`, `pnpm run test:bundle`, `pnpm run test:package`
 - CI-owned direct/indirect UI gate: `pnpm run validate:ui`
 - Storybook: `pnpm run storybook`, `pnpm run build:storybook`
+
+## Validation proportionality — owner feedback 24 November 2026
+
+For content counts, copy and small lesson adjustments, use one authorship check and a focused representative interaction/layout check. Reuse passing evidence when relevant inputs are unchanged. Do not recapture every material, repeat full catalog visual matrices or rebuild/redeploy intermediate refinements by default. A general content review does not itself justify a general UI audit. Expand validation only for a concrete unresolved risk; keep future fixes prompt-sized.
