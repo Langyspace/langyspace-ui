@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { SlidePage } from '../../../src/components/Slide/SlidePage'
 import { useRecordedAudio } from '../../../src/internal/useRecordedAudio'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
@@ -9,7 +9,17 @@ import { routineRecordings } from './InfluencerRoutine.recordings'
 import type { RoutineDialogueProps } from './InfluencerRoutine.types'
 
 export function RoutineDialogue({ block, active }: RoutineDialogueProps) {
-  const speech = useRecordedAudio(routineRecordings)
+  // A hidden dialogue must not open decoders for the entire lesson (including the bedtime clip).
+  const recordings = useMemo(
+    () =>
+      routineRecordings.filter((clip) =>
+        block.dialogue.some(
+          (line) => line.id === clip.id && line.text === clip.text,
+        ),
+      ),
+    [block],
+  )
+  const speech = useRecordedAudio(active ? recordings : [])
   const [translated, translate] = useState<string[]>([])
   useEffect(() => {
     if (!active) speech.stop()

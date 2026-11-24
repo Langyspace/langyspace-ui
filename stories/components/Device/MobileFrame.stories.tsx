@@ -60,3 +60,17 @@ export const Dark: Story = {
   ],
   tags: ['visual-review'],
 }
+
+export const Application: Story = {
+  args: {
+    screenMode: 'application',
+    title: 'Student exercise',
+    children: (
+      <Common.Stack>
+        <h3>Listen and repeat</h3>
+        <p>I usually wake up around seven</p>
+      </Common.Stack>
+    ),
+  },
+  tags: ['visual-review'],
+}

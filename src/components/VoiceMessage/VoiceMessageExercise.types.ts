@@ -61,6 +61,8 @@ export interface VoiceMessageExerciseProps extends Omit<
   additionalAudios?: readonly VoiceMessageAudio[]
   /** Pause when leaving a slide, without losing its transcript/listening history. */
   active?: boolean
+  /** Equal tracks centre a phone beside comprehension; fluid preserves legacy layouts. */
+  layout?: 'fluid' | 'balanced'
   questions: readonly VoiceMessageQuestion[]
   /** Optional visible heading above the questions; the accessible group name remains in labels. */
   questionHeading?: ReactNode

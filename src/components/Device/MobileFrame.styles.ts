@@ -5,11 +5,12 @@ import { presentationMedia } from '../../foundations/layout/presentationMedia'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-mobile-frame',
-})`
+})<{ $application?: boolean }>`
   display: flex;
   flex-direction: column;
-  width: min(100%, 22rem, calc(74cqh * 0.7));
-  min-height: min(${presentationMedia.maximumHeight}, 74cqh);
+  width: ${(p) => (p.$application ? 'min(100%, 18rem)' : 'min(100%, 22rem, calc(74cqh * 0.7))')};
+  height: ${(p) => (p.$application ? 'clamp(24rem, calc(100cqh - 15.625rem), 33.75rem)' : undefined)};
+  min-height: ${(p) => (p.$application ? '0' : `min(${presentationMedia.maximumHeight}, 74cqh)`)};
   min-width: 0;
   box-sizing: border-box;
   margin-inline: auto;
@@ -18,8 +19,8 @@ export const Root = styled.section.withConfig({
   box-shadow: 0 0 0 2px ${theme.voiceMessage.frameEdge};
   padding: ${theme.spacing[3]};
   gap: ${theme.spacing[3]};
-  color: ${(p) => resolveSlideTheme(p).foreground};
-  background: ${(p) => resolveSlideTheme(p).canvas};
+  color: ${(p) => (p.$application ? theme.colors.text.primary : resolveSlideTheme(p).foreground)};
+  background: ${(p) => (p.$application ? theme.colors.surface.canvas : resolveSlideTheme(p).canvas)};
   font-family: ${theme.typography.fontFamily.sans};
   overflow-wrap: anywhere;
 `
@@ -36,12 +37,15 @@ export const Title = styled.h3`
     1.3 ${theme.typography.fontFamily.sans};
   color: inherit;
 `
-export const Content = styled.div`
+export const Content = styled.div<{ $application?: boolean }>`
   display: grid;
-  align-content: start;
+  align-content: ${(p) => (p.$application ? 'stretch' : 'start')};
+  grid-template-rows: ${(p) => (p.$application ? 'minmax(0, 1fr)' : undefined)};
   min-width: 0;
   gap: ${theme.spacing[3]};
   flex: 1;
+  min-height: 0;
+  overflow: ${(p) => (p.$application ? 'hidden' : undefined)};
 `
 export const HomeIndicator = styled.div`
   align-self: center;

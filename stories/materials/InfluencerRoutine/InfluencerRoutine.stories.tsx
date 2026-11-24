@@ -23,3 +23,7 @@ export const Listening: StoryObj<typeof meta> = {
 export const FreeConversation: StoryObj<typeof meta> = {
   args: { initialPageId: 'free-conversation' },
 }
+
+export const Homework: StoryObj<typeof meta> = {
+  args: { initialPageId: 'homework' },
+}

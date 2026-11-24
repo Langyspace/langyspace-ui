@@ -29,13 +29,10 @@ export const Root = styled.section.withConfig({
   color: ${(p) => recipe(p).foreground};
 `
 
-export const Layout = styled.div`
+export const Layout = styled.div<{ $balanced?: boolean }>`
   display: grid;
-  grid-template-columns: minmax(0, ${(p) => recipe(p).phoneWidth}) minmax(
-      0,
-      1fr
-    );
-  align-items: start;
+  grid-template-columns: ${(p) => (p.$balanced ? 'repeat(2, minmax(0, 1fr))' : `minmax(0, ${recipe(p).phoneWidth}) minmax(0, 1fr)`)};
+  align-items: ${(p) => (p.$balanced ? 'center' : 'start')};
   gap: ${theme.spacing[8]};
   width: min(100%, ${(p) => recipe(p).contentWidth});
   margin-inline: auto;

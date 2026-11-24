@@ -21,6 +21,7 @@ function VoiceMessageContent({
   questionHeading,
   onAnswer,
   active = true,
+  layout = 'fluid',
   footer,
   replyAction,
   replayActionLabel,
@@ -83,7 +84,7 @@ function VoiceMessageContent({
       data-playback={status}
       data-listens={media.playCount}
     >
-      <Styled.Layout>
+      <Styled.Layout $balanced={layout === 'balanced'}>
         <MessagePhoneFrame
           aria-label={undefined}
           contact={

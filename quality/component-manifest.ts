@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'DeviceGallery',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Device/DeviceGallery.tsx',
+    runtimeMarker: 'lsui-sc-device-gallery',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/DeviceGallery.stories.tsx',
+      title: 'Device/DeviceGallery',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Device/DeviceGallery.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Device/DeviceGallery.types.ts',
+      documentation: {
+        path: 'docs/components/device-gallery.md',
+        anchor: 'devicegallery',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'MessagePhoneFrame',
     interactive: false,
     visual: true,

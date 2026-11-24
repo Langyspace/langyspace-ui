@@ -100,7 +100,7 @@ export function VoiceMessageRecording({
       <audio
         ref={media.audioRef}
         src={audio.src}
-        preload="auto"
+        preload={active ? 'auto' : 'none'}
         {...media.events}
         onPlay={(event) => onPlaybackStart?.(event.currentTarget)}
       />

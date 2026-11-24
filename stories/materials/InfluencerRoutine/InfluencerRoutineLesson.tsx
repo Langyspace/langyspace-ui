@@ -10,7 +10,7 @@ import { LessonNotesTrigger } from '../shared/LessonNotesTrigger'
 import { useLessonNotesPopup } from '../shared/useLessonNotesPopup'
 import { useLessonPage } from '../shared/useLessonPage'
 import { PromptExercise } from '../shared/LessonExercises'
-import { LessonPracticePlan } from '../shared/LessonBookends'
+import { RoutineHomework } from './RoutineHomework'
 import { FreeConversationPage } from '../shared/FreeConversationPage'
 import { characterPortrait } from '../shared/characterPortraits'
 import { lessonVoiceMessageTheme } from '../shared/deviceTheme'
@@ -154,6 +154,7 @@ export function InfluencerRoutineLesson({
         >
           <ThemeProvider theme={lessonVoiceMessageTheme}>
             <VoiceMessageExercise
+              layout="balanced"
               contact={{
                 name: 'Kim',
                 avatarUrl: characterPortrait('Kim'),
@@ -219,12 +220,13 @@ export function InfluencerRoutineLesson({
       label: source.homework.title,
       content: (
         <SlidePage
-          columns={1}
+          columns={3}
+          density="compact"
           eyebrow="After class"
           title={source.homework.title}
           instruction={source.homework.instruction}
         >
-          <LessonPracticePlan tasks={source.homework.tasks} />
+          <RoutineHomework active={pageId === 'homework'} />
         </SlidePage>
       ),
     },

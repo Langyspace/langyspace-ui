@@ -310,3 +310,10 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Uma referência com várias opções não deve repetir todos os nomes em cada linha: usar fichas consistentes selecionáveis, ou comparação visual lado a lado quando o contraste simultâneo for necessário. Manter os fatos usados pela pergunta disponíveis na mesma página.
 - Sequência de imagens usa o ImageSortBoard canônico e permite seleção mais destino pelo teclado. A ordenação não substitui a explicação oral; separar o momento de organizar do momento de contar quando ambos não couberem com clareza.
 - O mínimo de seis itens refere-se ao bloco inicial de vocabulário da aula. Grupos semânticos de introdução podem ser apresentados em páginas consecutivas antes da primeira conversação; não completar a contagem com palavras que só aparecem no final.
+
+
+### 24/11/2026 — Homework screens and centred listening
+
+- When homework is shown inside a phone, render the actual Student exercise components on their light application canvas. A list of assignments is not a substitute for the exercise screen. Reuse approved lesson content/media and do not invent published destinations or saved progress.
+- A closing with Flashcards, Shadowing and a voice note has one title/instruction above three canonical phone frames; the message assignment uses the current teacher identity. Narrow screens select one device without shrinking all three to illegible sizes.
+- Listening with a phone and comprehension uses balanced centred tracks when requested; default legacy layouts remain unchanged.

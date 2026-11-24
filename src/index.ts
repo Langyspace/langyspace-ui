@@ -619,6 +619,11 @@ export type {
 } from './components/Slide/SlideDeck.types'
 export { SlidePage } from './components/Slide/SlidePage'
 export { MobileFrame } from './components/Device/MobileFrame'
+export { DeviceGallery } from './components/Device/DeviceGallery'
+export type {
+  DeviceGalleryItem,
+  DeviceGalleryProps,
+} from './components/Device/DeviceGallery.types'
 export type { MobileFrameProps } from './components/Device/MobileFrame.types'
 export { MessagePhoneFrame } from './components/Device/MessagePhoneFrame'
 export type { MessagePhoneFrameProps } from './components/Device/MessagePhoneFrame.types'

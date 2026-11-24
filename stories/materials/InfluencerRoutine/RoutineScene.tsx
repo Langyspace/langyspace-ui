@@ -63,7 +63,7 @@ export function RoutineScene({ block, active }: RoutineSceneProps) {
       ),
     [block],
   )
-  const audio = useSceneAudio(active, clips)
+  const audio = useSceneAudio(active, active ? clips : {})
   return (
     <>
       <SceneExplorer

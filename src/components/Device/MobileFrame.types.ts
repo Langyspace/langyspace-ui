@@ -6,4 +6,6 @@ export interface MobileFrameProps extends Omit<
 > {
   /** App/screen heading supplied by the consumer; the frame does not invent app actions. */
   title?: ReactNode
+  /** Isolated light mobile viewport for the same components used in the Student app. */
+  screenMode?: 'content' | 'application'
 }

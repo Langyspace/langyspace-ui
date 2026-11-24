@@ -70,3 +70,6 @@ Keep the existing `audio` as the first message and pass optional `additionalAudi
 Native play pauses the other recording elements inside this phone, and native pause invalidates pending playback attempts so a cancelled request cannot surface as a spurious unavailable-audio error. Leaving the slide pauses every recording. Automatic third-listen transcripts apply independently; additional recordings in manual replay mode expose the transcript toggle after their second pass. The original primary follow-up replay action remains unchanged.
 
 TrialA1 combines the approved Ana clips and six grouped questions on one standard-width (47.5rem) page. Its phone dimensions are a consumer theme variation, preserving every other lesson’s sizing. Both default single-message and multiple-message behavior require focused regression coverage. No audio is synthesized by this component.
+
+
+`layout="balanced"` opts into two equal centred tracks for the phone and comprehension. The default `fluid` layout retains its existing phone-sized first track. Hidden exercises use `preload="none"`; active exercises preload their native recording without resetting its source or listening history.
