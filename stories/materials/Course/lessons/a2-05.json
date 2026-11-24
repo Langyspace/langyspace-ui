@@ -22,7 +22,8 @@
           "hint": "I’m … on … / I’m going to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -144,7 +145,8 @@
           "hint": "She’ll …",
           "answer": "She’ll open the door"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-05.model"
     },
     {
       "id": "s_dialogue2",
@@ -191,7 +193,8 @@
           "hint": "She’s going to …",
           "answer": "She’s going to paint tomorrow"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-05.model"
     },
     {
       "id": "s_personal",
@@ -214,8 +217,16 @@
           "cue": "Explain a plan you already have",
           "hint": "I’m going to …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would make the move easier?",
+          "cue": "Offer one practical action and check whether it helps",
+          "hint": "I can … Would that help?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -366,7 +377,8 @@
           "hint": "I’ll … Then we can …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -396,7 +408,8 @@
           "hint": "I’ll … I can come at …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

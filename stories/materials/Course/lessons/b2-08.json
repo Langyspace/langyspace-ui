@@ -22,7 +22,8 @@
           "hint": "We need …, whereas … would be nice",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "A … and …",
           "answer": "A usable work area and total budget under $1,000"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-08.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "The …",
           "answer": "The maintenance fee is not confirmed"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-08.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "It has …",
           "answer": "It has more space, if the longer commute is acceptable"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-08.model"
     },
     {
       "id": "s_personal",
@@ -430,7 +434,8 @@
           "hint": "The first one, which …, would … I’d want to know whether …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "choices",
@@ -487,7 +492,8 @@
           "hint": "C, which …, is above the limit. I’d consider …, provided …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -505,6 +511,13 @@
           "prompt": "What would you ask before deciding?",
           "cue": "Identify a missing detail and formulate a question",
           "hint": "I’d want to know whether …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain your recommendation to that person?",
+          "cue": "Link your choice to their priority, then invite a concern",
+          "hint": "Given that you need …, I’d recommend … What might I be overlooking?",
           "answer": "One possible response"
         }
       ],
@@ -572,7 +585,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

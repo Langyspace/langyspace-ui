@@ -22,7 +22,8 @@
           "hint": "I can … if …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "They need …",
           "answer": "They need the review comments"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-02.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "She’ll be …",
           "answer": "She’ll be handing over packs"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-02.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "A … or …",
           "answer": "A late review or a new section"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-02.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "By …, we’ll have …, provided …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "We’ll have … by …, but we’ll still be … Could we …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Describe an activity in progress at that future time",
           "hint": "I’ll be … when …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you make the commitment clear to the other person?",
+          "cue": "State the promise and its condition, then check the interpretation",
+          "hint": "We can commit to … provided that … Does that match your understanding?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

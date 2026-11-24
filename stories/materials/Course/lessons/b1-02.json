@@ -22,7 +22,8 @@
           "hint": "I’ve been … I’ve finished …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "Because …",
           "answer": "The tickets were cheap and she could walk home"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-02.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "The … is still there",
           "answer": "The old swings are still there"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-02.model"
     },
     {
       "id": "s_personal",
@@ -227,8 +230,16 @@
           "cue": "Compare one past habit with your life now",
           "hint": "I used to …, but now I …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Is there anything you miss about it?",
+          "cue": "Compare a past detail with now and ask about my experience",
+          "hint": "I miss …, but now … What about your neighbourhood?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -549,7 +560,8 @@
             }
           }
         ]
-      }
+      },
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -579,7 +591,8 @@
           "hint": "There used to be … Now … What do you remember about …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

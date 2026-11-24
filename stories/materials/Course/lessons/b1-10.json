@@ -22,7 +22,8 @@
           "hint": "Go … Is it near …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "The …",
           "answer": "The special workshop"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-10.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "At … beside …",
           "answer": "At the ground-floor cloakroom beside the information point"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-10.model"
     },
     {
       "id": "s_personal",
@@ -227,8 +230,16 @@
           "cue": "Ask a follow-up question about time, access or what is included",
           "hint": "Do you know if …?",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check that you understood the answer?",
+          "cue": "Restate the useful detail and confirm it politely",
+          "hint": "So, … Have I understood that correctly?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -351,7 +362,8 @@
           "hint": "Could you tell me where …? Do you know if …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -381,7 +393,8 @@
           "hint": "Could you tell me whether …? Do you know if …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

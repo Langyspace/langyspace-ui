@@ -5,6 +5,7 @@ import type { A101LessonProps } from './A101.types'
 import data from './A101.review.json'
 import provenance from './audio-provenance.json'
 import additions from './audio-provenance80.json'
+import restored from './audio-provenance94.json'
 
 const images = import.meta.glob('./assets/*.{webp,png,svg}', {
   eager: true,
@@ -16,7 +17,11 @@ const audio = import.meta.glob('./assets/**/*.mp3', {
   query: '?url',
   import: 'default',
 }) as Record<string, string>
-const recordings = [...provenance.items, ...additions.items].map((clip) => {
+const recordings = [
+  ...provenance.items,
+  ...additions.items,
+  ...restored.items,
+].map((clip) => {
   const src = audio['./' + clip.file]
   if (!src) throw new Error(`Missing prepared A1.01 audio: ${clip.id}`)
   return { id: clip.id, text: clip.text, src }

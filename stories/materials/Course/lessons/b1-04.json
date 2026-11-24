@@ -22,7 +22,8 @@
           "hint": "I can see … It might mean …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "We don’t know …",
           "answer": "We don’t know its date; it could be old"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-04.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "The … and …",
           "answer": "The silver star on the black notebook and the red fish key ring"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-04.model"
     },
     {
       "id": "s_personal",
@@ -335,7 +338,8 @@
           "hint": "The owner might … because … However, we don’t know …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -365,7 +369,8 @@
           "hint": "It might be theirs because … We still need to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -401,8 +406,16 @@
           "cue": "Explain what the evidence does and does not show",
           "hint": "I’m not sure, but …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would help you check your guess?",
+          "cue": "Ask for evidence instead of treating a guess as a fact",
+          "hint": "It might be …, but I’d check … What do you think?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

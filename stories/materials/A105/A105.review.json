@@ -19,7 +19,8 @@
           "hint": "I’m free on … at … Are you free then?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -115,6 +116,27 @@
           "translation": "tomate",
           "imageUrl": "scene-tomato",
           "imageAlt": "A tomato"
+        },
+        {
+          "id": "vocab.potato",
+          "word": "a potato",
+          "translation": "batata",
+          "imageUrl": "scene-potato",
+          "imageAlt": "A potato"
+        },
+        {
+          "id": "vocab.lettuce",
+          "word": "lettuce",
+          "translation": "alface",
+          "imageUrl": "scene-lettuce",
+          "imageAlt": "A head of lettuce"
+        },
+        {
+          "id": "vocab.corn",
+          "word": "corn",
+          "translation": "milho",
+          "imageUrl": "scene-corn",
+          "imageAlt": "An ear of corn"
         }
       ],
       "isolated": true,
@@ -196,8 +218,16 @@
           "cue": "Say one thing, if you know",
           "hint": "My … likes … / I’m not sure",
           "answer": "One possible response"
+        },
+        {
+          "id": "dislikes",
+          "prompt": "What food don’t you like?",
+          "cue": "Say what you don’t like and ask me",
+          "hint": "I don’t like … What about you?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s7",

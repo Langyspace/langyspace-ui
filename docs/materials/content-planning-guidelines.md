@@ -3,16 +3,26 @@
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
 Atualizada em 23/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
 
-## Perguntas em balões — planejamento77
+## Perguntas conforme a finalidade — revisão94
 
 Pedido de 23/11/2026: manter as 12 aulas por nível e deixar claro quais exercícios colocar; sempre que houver perguntas, usar o modelo de balões com o que a pessoa deve responder e o botão de dica. Os [60 planos de exercícios A1–C1](planos-a1-c1/README.md) aplicam essa orientação, sem alterar as aulas publicadas nesta entrega.
 
-- Nas conversas pessoais, compreensão de diálogo/áudio, revisão e reflexão, mostrar o balão da professora com a pergunta e o balão da aluna com uma intenção curta do que comunicar. A intenção não é uma resposta completa nem um espaço vazio sem orientação.
+- Nas conversas pessoais e nos role-plays de troca real, mostrar o balão da professora com a pergunta e o balão da aluna com uma intenção curta do que comunicar. A intenção não é uma resposta completa nem um espaço vazio sem orientação.
 - Uma lâmpada abaixo da conversa revela apoios de linguagem na ordem dos balões, mantendo as perguntas visíveis. A dica oferece um começo de frase ou uma estratégia útil; não inventa fatos ou preferências pessoais e não se limita à primeira letra de uma palavra.
 - Nas perguntas factuais, deixar clara a fonte da resposta e preservar os fatos do diálogo, imagem ou áudio. Nas pessoais, aceitar respostas variadas. Perguntar preferência não pode exigir como resposta apenas gostar; a ação pedida e o apoio precisam corresponder.
-- Reutilizar os mesmos balões, identidade, dimensões e estados de áudio/lacunas da conversação guiada. Se faltar uma variação, alterar primeiro o dono canônico na UI Library; não copiar a interface por aula. Este pedido de planejamento não cria props nem altera o comportamento dos componentes.
+- Nas conversas reais, reutilizar os mesmos balões, identidade, dimensões e estados de áudio/lacunas da conversação guiada. Se faltar uma variação, alterar primeiro o dono canônico na UI Library; não copiar a interface por aula. Este pedido de planejamento não cria props nem altera o comportamento dos componentes.
 - O plano dessas perguntas usa a lâmpada como controle principal, sem acrescentar olho ou Next turn por padrão. Outros formatos que precisam de revelação factual continuam com seu contrato próprio até uma revisão explícita; não remover controles globalmente com base nesta regra.
 - Manter uma finalidade comunicativa por tarefa. Pronúncia, múltipla escolha, certo/errado e lacunas são escolhas justificadas pelo objetivo, não páginas obrigatórias para preencher o mesmo molde nas 60 aulas. Preservar exercícios já revisados quando continuam úteis.
+
+### 24/11/2026 — Compreensão não é uma segunda conversa
+
+- Ao lado de um diálogo, mostrar uma lista numerada de perguntas, sem duplicar a dupla de participantes, avatares ou balões. Usar o `RevealCard` canônico em apresentação `prompt`; clicar na pergunta confere a resposta abaixo. Quando houver ajuda de linguagem, uma única lâmpada inferior libera os apoios em ordem. O adaptador `PromptExercise` compõe os donos canônicos, sem uma pele por aula.
+- Perguntas sobre áudio, texto, mapa ou ficha também podem ser verificações factuais. Declarar a finalidade nos dados (`comprehension`, `review` ou `response`) e usar a apresentação apropriada. Uma resposta a mensagem não se transforma artificialmente num diálogo de seis turnos. Balões ficam para interação real com a professora.
+- Uma prática pessoal completa tem pelo menos três pares de fala (pergunta da professora + intenção de resposta da aluna), com pergunta de volta ou continuação pertinente. Não contar dois pares como seis por haver três frases dentro de um balão. Não acrescentar perguntas genéricas para completar a quantidade.
+- A regra de seis itens vale para cada bloco introdutório independente. Países e sentimentos não se somam para justificar só três em cada atividade. Restaurar conteúdo válido antes de criar substitutos. Um conjunto extenso do mesmo tema pode continuar em páginas contíguas claramente identificadas; não esconder redução de conteúdo atrás da divisão.
+- Referências suplementares têm uma função e justificativa explícitas, por exemplo os três períodos do dia ou as quatro posições efetivamente usadas numa cena, depois de uma introdução completa. Não renomear um vocabulário introdutório incompleto como referência para evitar o mínimo.
+- Partes de uma mesma conversa podem ter menos de seis falas visíveis. Identificar o vínculo e a ordem e conferir o modelo completo, incluindo continuidade de IDs, interlocutores e sentido. Uma conversa nova ou independente não pode aproveitar a contagem de outra atividade.
+- O inventário e o check de autoria percorrem as fontes efetivamente montadas pelo catálogo, não cópias históricas substituídas por um renderizador dedicado. Preservar gravações válidas e os textos exatos de áudio ao restaurar itens.
 
 ### Implementação dos pilotos79
 
@@ -291,7 +301,7 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Imagens e dados nativos têm funções distintas. Letras, números, calendário, mapa, gráfico, recibo e fontes devem permanecer legíveis e editáveis. Exemplos simulados não se apresentam como notícias ou estatísticas verificadas. Capa e retrato não contam automaticamente como seis apoios de vocabulário.
 - Uma estrutura nova central por objetivo produtivo. Contrastes e extensões recebem prioridade explícita e podem ser receptivos. Nível avançado exige relações entre ideias, fontes, contrapontos e reformulação; não apenas vocabulário raro nem mais texto simultâneo. Usar os [orçamentos de autoria e as decisões por aula](planos-a1-c1/VALIDACAO.md) sem transformar as faixas em metas artificiais.
 - A escuta pode fornecer a atualização da missão. Não duplicar sua função com botão de imprevisto e outra tarefa completa. Preservar o tempo da conversa livre; uma nova informação deve mudar ou aprofundar a conversa, não reiniciá-la.
-- Conferir o estado aberto, incluindo dica e transcrição. Até dois pares de pergunta/intenção por tela é um ponto de partida, não garantia de encaixe. O piloto78 com sete falas C1 e dois pares ficou alto no celular; dividir o diálogo em partes coerentes e a compreensão correspondente. Conversa completa mantém pelo menos seis falas, sem inflar cada metade.
+- Conferir o estado aberto, incluindo dica e transcrição. Uma conversa pessoal completa tem pelo menos três pares pertinentes; o layout precisa acomodar as intenções e apoios sem poluição. O piloto78 com sete falas C1 e dois pares ficou alto no celular; dividir o diálogo em partes coerentes e a compreensão correspondente. Conversa completa mantém pelo menos seis falas, sem inflar cada metade.
 - Fontes densas ficam em leitura própria, com consulta disponível durante a discussão. Três colunas não resolvem texto demais. Não diminuir a fonte nem criar scroll dentro do balão para preservar uma quantidade arbitrária de conteúdo.
 - Só declarar mídia pronta após ligar o arquivo certo ao texto e revisar significado, continuidade, recorte e proporção. Hash prova identidade de arquivo; ASR é indício; nenhum substitui a escuta de uma correção de pronúncia. Preservar prompt, personagens e mídia válida.
 

@@ -22,7 +22,8 @@
           "hint": "We know … Had …, it might …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "It doesn’t show …",
           "answer": "Who knew the sound test was incomplete before guests arrived"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-02.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "It’s an outcome; …",
           "answer": "An outcome still needs an explanation supported by evidence"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-02.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "Someone …",
           "answer": "Someone owns the decision and can delay opening"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-02.model"
     },
     {
       "id": "s_personal",
@@ -397,7 +401,8 @@
           "hint": "Had … known …, … could have … The record doesn’t establish …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -427,7 +432,8 @@
           "hint": "It supports …, but doesn’t establish … Next time I’d …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -463,8 +469,16 @@
           "cue": "Propose a prevention linked to the actual cause",
           "hint": "If we do this again, I’d …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you communicate that change without overstating the lesson?",
+          "cue": "Separate reasonable prevention from hindsight and invite a challenge",
+          "hint": "With what we knew then, … In future, … Would you draw the same conclusion?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

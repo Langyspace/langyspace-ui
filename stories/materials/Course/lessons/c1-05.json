@@ -22,7 +22,8 @@
           "hint": "Before …, … had … Then …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "On …",
           "answer": "On the train"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-05.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "The story doesn’t …",
           "answer": "The story does not establish a theft"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-05.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "It shows …",
           "answer": "It shows the scarf was at the café before the train journey"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-05.model"
     },
     {
       "id": "s_personal",
@@ -397,7 +401,8 @@
           "hint": "At first … What I didn’t realise was …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -427,7 +432,8 @@
           "hint": "At first I assumed … As it turned out, …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -463,8 +469,16 @@
           "cue": "Explain the turning point and its significance",
           "hint": "As it turned out, …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you tell the ending without explaining away its ambiguity?",
+          "cue": "Retain a meaningful uncertainty and invite an interpretation",
+          "hint": "What makes it striking is …, though we never find out … How do you read it?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

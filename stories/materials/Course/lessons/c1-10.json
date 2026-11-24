@@ -22,7 +22,8 @@
           "hint": "Both need …, but … needs … first",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "The date …; … stay …",
           "answer": "Date moves to Monday 7; 10 am and room 2 stay unchanged"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-10.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "It depends on …",
           "answer": "It depends on the day of sending and reading"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-10.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "No, …",
           "answer": "No. It still contains action and deadline"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-10.model"
     },
     {
       "id": "s_personal",
@@ -424,7 +428,8 @@
           "hint": "I’m writing to … / Quick update: … Could you confirm … by …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -454,7 +459,8 @@
           "hint": "Please confirm whether you can … by …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -472,6 +478,13 @@
           "prompt": "How would you say the same thing to a friend?",
           "cue": "Keep the facts and change the register",
           "hint": "Quick update: … Could you …?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check that your wording cannot be misread?",
+          "cue": "Test the intended action and clarify one ambiguous phrase",
+          "hint": "To be clear, I’m asking for … rather than … How might that come across?",
           "answer": "One possible response"
         }
       ],
@@ -518,7 +531,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

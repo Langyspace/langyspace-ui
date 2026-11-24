@@ -22,7 +22,8 @@
           "hint": "I …, but I could have …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "They now …",
           "answer": "They now lead small projects with more confidence"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-03.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No, …",
           "answer": "No. It was an unexpected consequence"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-03.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "They could …",
           "answer": "They could have developed skills or contacts through another route"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-03.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "If they hadn’t …, they might … now. We can’t know whether …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "They might not … now. Having said that, they could …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Explore an alternative without pretending to know the outcome",
           "hint": "I might …, but it’s hard to know whether …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What other outcome might have been possible?",
+          "cue": "Explore an alternative without claiming it was inevitable",
+          "hint": "If … had …, … might have … How do you see it?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

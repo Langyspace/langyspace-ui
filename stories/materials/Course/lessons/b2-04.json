@@ -22,7 +22,8 @@
           "hint": "It might … because …, but …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "A key …",
           "answer": "A spare key was used at five"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-04.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No, …",
           "answer": "No. We only know its current state"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-04.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "Ask …",
           "answer": "Ask the neighbour who had permission"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-04.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "Someone might have … We’d need to check …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "It supports …, but we still don’t know …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Identify what is still unknown",
           "hint": "We’d need to check whether …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would change your mind?",
+          "cue": "Name evidence that would strengthen or weaken the explanation",
+          "hint": "I’d be more convinced if … What evidence would you look for?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

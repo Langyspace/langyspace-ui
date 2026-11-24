@@ -22,7 +22,8 @@
           "hint": "I used to …, but now …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "She … because …",
           "answer": "She missed the last bus because she didn’t check the timetable"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-08.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No. …",
           "answer": "No. The cold is still difficult"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-08.model"
     },
     {
       "id": "s_personal",
@@ -227,8 +230,16 @@
           "cue": "Explain something that now feels normal",
           "hint": "I’m used to … now, but at first …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What advice would you give me if I tried it?",
+          "cue": "Explain one useful habit and invite a follow-up",
+          "hint": "At first, … Now I’m used to … You could …",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -351,7 +362,8 @@
           "hint": "They used to … They’re used to …, but still getting used to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -381,7 +393,8 @@
           "hint": "It sounds like … What helps when …? You could …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

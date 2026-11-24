@@ -22,7 +22,8 @@
           "hint": "It confirms …; it suggests …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "Three …",
           "answer": "Three monthly observations"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-09.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "That extra service …",
           "answer": "That extra service covers the highest-demand period"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-09.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "It may not …",
           "answer": "It may not cover the relevant time slot"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-09.model"
     },
     {
       "id": "s_personal",
@@ -378,19 +382,25 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [100]
+            "values": [
+              100
+            ]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [120]
+            "values": [
+              120
+            ]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [140]
+            "values": [
+              140
+            ]
           }
         ]
       },
@@ -402,7 +412,8 @@
           "hint": "The figures suggest …, but they don’t establish …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -432,7 +443,8 @@
           "hint": "Even if …, it would be worth … If we observe …, we should …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "chart",
@@ -443,19 +455,25 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [100]
+            "values": [
+              100
+            ]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [120]
+            "values": [
+              120
+            ]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [140]
+            "values": [
+              140
+            ]
           }
         ]
       },
@@ -473,8 +491,16 @@
           "cue": "Propose action while acknowledging uncertainty",
           "hint": "Even if …, it would be worth …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What further evidence would most affect your recommendation?",
+          "cue": "Name a decision-relevant gap without asking for certainty",
+          "hint": "The most useful thing to establish would be … If it showed …, I’d reconsider …",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

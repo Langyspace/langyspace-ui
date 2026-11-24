@@ -123,11 +123,13 @@ export function PromptExercise({
   numbered = true,
   answerMinLines,
 }: PromptExerciseProps) {
+  const [hintCount, setHintCount] = useState(0)
+  const hints = items.filter((item) => item.hint)
   return (
-    <Styled.PromptList>
-      {items.map((item, index) => (
-        <Styled.Prompt key={item.id}>
-          {item.answer ? (
+    <Common.Stack>
+      <Styled.PromptList>
+        {items.map((item, index) => {
+          const question = item.answer ? (
             <AnswerDisclosure
               question={item.prompt}
               answer={item.answer}
@@ -145,10 +147,38 @@ export function PromptExercise({
               ) : null}
               <p>{item.prompt}</p>
             </Styled.PromptQuestion>
-          )}
-        </Styled.Prompt>
-      ))}
-    </Styled.PromptList>
+          )
+          const hinted = hints.findIndex((x) => x.id === item.id)
+          return (
+            <Styled.Prompt key={item.id}>
+              {item.hint ? (
+                <Common.Stack>
+                  {question}
+                  {hinted >= 0 && hinted < hintCount ? (
+                    <Common.Hint role="status">{item.hint}</Common.Hint>
+                  ) : null}
+                </Common.Stack>
+              ) : (
+                question
+              )}
+            </Styled.Prompt>
+          )
+        })}
+      </Styled.PromptList>
+      {hints.length ? (
+        <VocabularyControls
+          density="compact"
+          interaction="progressive"
+          showInitial={hintCount > 0}
+          labels={{
+            hint: hintCount === hints.length ? 'Hide hints' : 'Show next hint',
+          }}
+          onToggleInitial={() =>
+            setHintCount((count) => (count === hints.length ? 0 : count + 1))
+          }
+        />
+      ) : null}
+    </Common.Stack>
   )
 }
 

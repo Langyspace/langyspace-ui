@@ -22,7 +22,8 @@
           "hint": "The … doesn’t work. Can you help me?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -91,7 +92,8 @@
           "hint": "The … street on the right",
           "answer": "The first street on the right"
         }
-      ]
+      ],
+      "dialogueGroup": "a1-09.model"
     },
     {
       "id": "s_personal",
@@ -288,7 +290,8 @@
           "hint": "Go straight. Turn … at the … street",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "map",
@@ -384,7 +387,8 @@
           "hint": "Go straight, then … The park is …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s2": {
       "type": "map",
@@ -499,7 +503,8 @@
           "id": "A109-FS81.5",
           "text": "hotel. Start at the hotel."
         }
-      }
+      },
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "map",
@@ -601,8 +606,16 @@
           "cue": "Start at the hotel",
           "hint": "Go straight, then …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How can I get there from here?",
+          "cue": "Give a short route, then ask me to check",
+          "hint": "Go … Then … Is that clear?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

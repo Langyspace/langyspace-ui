@@ -22,7 +22,8 @@
           "hint": "I was … when … Then …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "Yes, … had …",
           "answer": "Yes, it had already started"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-03.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "She’d …",
           "answer": "She’d forgotten her wristband"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-03.model"
     },
     {
       "id": "s_personal",
@@ -335,7 +338,8 @@
           "hint": "They had … By the time …, … had already …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -365,7 +369,8 @@
           "hint": "Not exactly. They couldn’t … because they had …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -401,8 +406,16 @@
           "cue": "Tell a real or imagined story with a clear sequence",
           "hint": "When I got there, … had already …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain the delay to your friend?",
+          "cue": "Tell the events in order and check the explanation",
+          "hint": "By the time …, … had already … What would you say?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

@@ -23,9 +23,21 @@ export function MarketCase({ request = false }: { request?: boolean }) {
                 ? 'What would you like for Kim?'
                 : 'Hello! What would you like?',
               cue: request
-                ? 'Use Kim’s message and ask the price'
-                : 'Choose two fruits and ask the price',
-              hint: 'Can I have … and …, please? How much is that?',
+                ? 'Use Kim’s message to choose the fruit'
+                : 'Choose two fruits from the pictures',
+              hint: 'Can I have … and …, please?',
+            },
+            {
+              id: 'quantity',
+              question: 'How many would you like?',
+              cue: 'Say how many of each fruit you want',
+              hint: '… bananas and … apples, please',
+            },
+            {
+              id: 'price',
+              question: 'Anything else?',
+              cue: 'Finish your order and ask the price',
+              hint: 'That’s all, thank you. How much is that?',
             },
           ]}
         />

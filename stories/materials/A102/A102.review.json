@@ -26,7 +26,8 @@
           "hint": "I’m from … What about you?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -65,7 +66,8 @@
           "hint": "The last name is …",
           "answer": "Lima"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     {
       "id": "s8",
@@ -143,8 +145,16 @@
           "cue": "Ask my name and number",
           "hint": "What’s your name? What’s your phone number?",
           "answer": "One possible response"
+        },
+        {
+          "id": "confirm-number",
+          "prompt": "What’s my phone number?",
+          "cue": "Repeat the number you heard and check it with me",
+          "hint": "Your number is … Is that right?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s10",

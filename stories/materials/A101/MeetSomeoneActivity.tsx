@@ -46,8 +46,14 @@ export function MeetSomeoneActivity() {
               {
                 id: 'name',
                 question: 'What’s your name?',
-                cue: 'Use the card: name and country. Then ask me',
-                hint: 'My name is … I’m from … What’s your name?',
+                cue: 'Use the name on the card and ask me',
+                hint: 'My name is … What’s your name?',
+              },
+              {
+                id: 'country',
+                question: 'Where are you from?',
+                cue: 'Use the country on the card and ask me',
+                hint: 'I’m from … Where are you from?',
               },
               {
                 id: 'feeling',

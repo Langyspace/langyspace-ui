@@ -22,7 +22,8 @@
           "hint": "They had … before …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "The delay was …",
           "answer": "The fifty-minute delay exceeded the thirty-five-minute connection"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-07.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "The … as well as …",
           "answer": "The arrival time as well as the price"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-07.model"
     },
     {
       "id": "s_personal",
@@ -335,7 +338,8 @@
           "hint": "They could have … They shouldn’t assume … Next time …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "choices",
@@ -392,7 +396,8 @@
           "hint": "The evening flight could …, but we still need to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -428,8 +433,16 @@
           "cue": "Suggest a future choice using what you learned",
           "hint": "Next time, I’d … because …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would you do differently next time?",
+          "cue": "Connect a past lesson with a future action",
+          "hint": "If I had …, I would have … Next time, I’ll …",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

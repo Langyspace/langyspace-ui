@@ -1,0 +1,463 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "items": [
+    {
+      "material": "A101",
+      "id": "FE94.0",
+      "speaker": "Ana",
+      "text": "I’m from Japan.",
+      "file": "assets/audio/FE94.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "hj9cC7BBCqTQv3WTfiPV",
+      "synthesisInput": "I'm from Japan.",
+      "requestBody": {
+        "text": "I'm from Japan.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "hj9cC7BBCqTQv3WTfiPV",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20523,
+      "sha256": "fe90aeda3224f918b45204037c39e425d68d92adab46d7ebbae1ac295a59bc26",
+      "durationSeconds": 1.207438
+    },
+    {
+      "material": "A101",
+      "id": "FE94.1",
+      "speaker": "Ana",
+      "text": "I’m from Germany.",
+      "file": "assets/audio/FE94.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "PQXuSsGXr1imvcFpd11N",
+      "synthesisInput": "I'm from Germany.",
+      "requestBody": {
+        "text": "I'm from Germany.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "PQXuSsGXr1imvcFpd11N",
+        "character-cost": "7",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20941,
+      "sha256": "7a74140c60dbb5afdcf30c83eac09a1b08b405c824eea55dca844254a314b9e0",
+      "durationSeconds": 1.253878
+    },
+    {
+      "material": "A101",
+      "id": "FE94.2",
+      "speaker": "Ana",
+      "text": "I’m from France.",
+      "file": "assets/audio/FE94.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "fX86DPQVImzIL0fKwgfZ",
+      "synthesisInput": "I'm from France.",
+      "requestBody": {
+        "text": "I'm from France.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "fX86DPQVImzIL0fKwgfZ",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 16761,
+      "sha256": "231bb62994775b24a4208a3534003900b870734012a9c8f2b068d76d62da4ad9",
+      "durationSeconds": 0.975238
+    },
+    {
+      "material": "A101",
+      "id": "FE94.3",
+      "speaker": "Ana",
+      "text": "I’m sad.",
+      "file": "assets/audio/FE94.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "zdXFptJRDajMRW1VuIWo",
+      "synthesisInput": "I'm sad.",
+      "requestBody": {
+        "text": "I'm sad.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "zdXFptJRDajMRW1VuIWo",
+        "character-cost": "3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 16761,
+      "sha256": "8202f4ec7dc79f0e99969f1b6a6129b189e345b8d3036a0005cc864017379eb0",
+      "durationSeconds": 0.975238
+    },
+    {
+      "material": "A101",
+      "id": "FE94.4",
+      "speaker": "Ana",
+      "text": "I’m cold.",
+      "file": "assets/audio/FE94.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "yy45V4no89bfcN29RqXF",
+      "synthesisInput": "I'm cold.",
+      "requestBody": {
+        "text": "I'm cold.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "yy45V4no89bfcN29RqXF",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15089,
+      "sha256": "12fe30571ba959c7a47b71716558ed0179265b4dd3ca9c904dee2b18545ae046",
+      "durationSeconds": 0.882358
+    },
+    {
+      "material": "A101",
+      "id": "FE94.5",
+      "speaker": "Ana",
+      "text": "I’m angry.",
+      "file": "assets/audio/FE94.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "oWIzfnet5LDTNuNA60jU",
+      "synthesisInput": "I'm angry.",
+      "requestBody": {
+        "text": "I'm angry.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "oWIzfnet5LDTNuNA60jU",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 16761,
+      "sha256": "b2334b97554cba8dabd6783630a47672125f662c9f310cd3ba913a50f71cb938",
+      "durationSeconds": 0.975238
+    },
+    {
+      "material": "A101",
+      "id": "FS94.0",
+      "text": "Japan. I’m from Japan.",
+      "file": "assets/audio/FS94.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "KQKmlbec8ZPGT7Jv6FCc",
+        "hj9cC7BBCqTQv3WTfiPV"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 1980,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5178,
+          "sourceSha256": "42dd85d11481c19cbc349b8241a1ddc0a31c133e073eaebc74948a14507a16f1"
+        },
+        {
+          "leadingQuietFrames": 2640,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11222,
+          "sourceSha256": "fe90aeda3224f918b45204037c39e425d68d92adab46d7ebbae1ac295a59bc26"
+        }
+      ],
+      "insertedSilenceFrames": 10149,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 31390,
+      "sha256": "95039b1fd1351e97b98e4b43d02c5795958a98fec1b61eff34f02791b229ff1e",
+      "durationSeconds": 1.90161
+    },
+    {
+      "material": "A101",
+      "id": "FS94.1",
+      "text": "Germany. I’m from Germany.",
+      "file": "assets/audio/FS94.1.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "HypjyaVaimZQ4XfbbBVY",
+        "PQXuSsGXr1imvcFpd11N"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 1760,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10086,
+          "sourceSha256": "e9dbfeea2d8d33f849094b331ecc5fb89d7e591bb1c8bf377e40b8f5319aeeb3"
+        },
+        {
+          "leadingQuietFrames": 2640,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10410,
+          "sourceSha256": "7a74140c60dbb5afdcf30c83eac09a1b08b405c824eea55dca844254a314b9e0"
+        }
+      ],
+      "insertedSilenceFrames": 10149,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 31390,
+      "sha256": "bc0f7eb96ea6c2d219d4beae03bcf10fb523a257342f9f2a0993a1ffe25e01d9",
+      "durationSeconds": 1.90161
+    },
+    {
+      "material": "A101",
+      "id": "FS94.2",
+      "text": "France. I’m from France.",
+      "file": "assets/audio/FS94.2.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "eVSsdq0E8hMC9FdNwPMk",
+        "fX86DPQVImzIL0fKwgfZ"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 1320,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5110,
+          "sourceSha256": "c90fe12f2a3e1fd3a48b937acba83accd2a65214239cd3d477a4fae6b5ba8f19"
+        },
+        {
+          "leadingQuietFrames": 880,
+          "trailingQuietFrames": 1428,
+          "trimStartFrames": 0,
+          "trimEndFrames": 0,
+          "sourceSha256": "231bb62994775b24a4208a3534003900b870734012a9c8f2b068d76d62da4ad9"
+        }
+      ],
+      "insertedSilenceFrames": 11909,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 31807,
+      "sha256": "87b2539dc0110d88c1b25c722cf93a3f48b306af42e5ea314774bd3fab225c18",
+      "durationSeconds": 1.918889
+    },
+    {
+      "material": "A101",
+      "id": "FS94.3",
+      "text": "sad. I’m sad.",
+      "file": "assets/audio/FS94.3.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "gbtOKgSoSIsdNHhQNieB",
+        "zdXFptJRDajMRW1VuIWo"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 5720,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 18886,
+          "sourceSha256": "e3017b8583bdc0df5b2784e2d0b283c8e8f10216bc048e1dd8c38cf43446dfcd"
+        },
+        {
+          "leadingQuietFrames": 880,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11762,
+          "sourceSha256": "8202f4ec7dc79f0e99969f1b6a6129b189e345b8d3036a0005cc864017379eb0"
+        }
+      ],
+      "insertedSilenceFrames": 11909,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 23866,
+      "sha256": "58473e013e312cd588320cf042fd197bc1c0a46c7de2fd249a69e1ecd68751f7",
+      "durationSeconds": 1.432676
+    },
+    {
+      "material": "A101",
+      "id": "FS94.4",
+      "text": "cold. I’m cold.",
+      "file": "assets/audio/FS94.4.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "vnOMkDDp7PKruN3Ya6B2",
+        "yy45V4no89bfcN29RqXF"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 2860,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10898,
+          "sourceSha256": "30f3c412d634959d31ea0ce4341fee1f00c616bb239726dee82c88bc10f04fb8"
+        },
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11186,
+          "sourceSha256": "12fe30571ba959c7a47b71716558ed0179265b4dd3ca9c904dee2b18545ae046"
+        }
+      ],
+      "insertedSilenceFrames": 11689,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 24702,
+      "sha256": "23134bb1f8665c540b22997e8c13ba15d4d48b43a30cb24c19a124c08424fd46",
+      "durationSeconds": 1.482562
+    },
+    {
+      "material": "A101",
+      "id": "FS94.5",
+      "text": "angry. I’m angry.",
+      "file": "assets/audio/FS94.5.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [
+        "swNpgrto90R90AiKJAS2",
+        "oWIzfnet5LDTNuNA60jU"
+      ],
+      "sources": [
+        {
+          "leadingQuietFrames": 440,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7378,
+          "sourceSha256": "fcccde01486bf6e485c554da56fa9b1c8f75ae527361e175604a804aeb60e344"
+        },
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11762,
+          "sourceSha256": "b2334b97554cba8dabd6783630a47672125f662c9f310cd3ba913a50f71cb938"
+        }
+      ],
+      "insertedSilenceFrames": 9709,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 26792,
+      "sha256": "4f22f61294377f5e3664889d2d77e30c3323e2564250a589154fb0bdc702047b",
+      "durationSeconds": 1.597302
+    }
+  ],
+  "review": "Receipts and PCM metadata; no perceptual approval claimed"
+}

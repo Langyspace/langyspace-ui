@@ -22,7 +22,8 @@
           "hint": "When …, I find … Could we …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "Because …",
           "answer": "Because the family is in another time zone"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-04.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "They need …",
           "answer": "Predictable concentration time"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-04.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "The …",
           "answer": "The precise arrangement and its exceptions"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-04.model"
     },
     {
       "id": "s_personal",
@@ -397,7 +401,8 @@
           "hint": "I’ve been finding … difficult. Would you mind …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -427,7 +432,8 @@
           "hint": "I understand … I can agree to …, provided …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -463,8 +469,16 @@
           "cue": "Acknowledge the other person’s need and suggest a compromise",
           "hint": "I understand … Perhaps we could …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check whether your offer meets their concern?",
+          "cue": "Invite their perspective and negotiate one concrete adjustment",
+          "hint": "Would that address your concern about …, or is there something I’ve missed?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

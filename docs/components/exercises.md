@@ -130,13 +130,14 @@ The newer bubble paint is now the common Speech rule for guided and introductory
 
 Sequential support keeps inactive layers mounted, inert and hidden with display:none, so only the visible cue/tip/model determines the bubble dimensions. Standard level/inline guidance retains its reserved geometry. TrialA1 greeting, rehearsal and open conversation use the same compact, content-sized dialogue as their recorded model, without paired margins or fill-width bubbles.
 
-
 ### Hints without a model action
 
 Omit `sequentialGuidance.onRevealModel` to render just one ordered hint button below the dialogue. The controlled cue/hint layers retain the normal bubble dimensions, identities and keyboard behavior. Existing consumers that supply the callback keep both controls. See `SequentialHintsOnly`; material question adapters supply each teacher question and learner intention as ordinary dialogue lines.
 
-
 The page containing regular scene vocabulary can select `SlidePage width={{ vocabularyColumns: 3 }}`. Its heading and grid then share the same height-aware width recipe. The card grid keeps its default responsive three/two-column behavior; the page span is not a command to force three tiny columns on mobile. Existing page-width and vocabulary defaults are unchanged.
 
-
 `GrammarTable layout="patterns"` uses two columns: a plain purpose label, followed by the pattern and its example together. Supply a matching `columns.example` heading such as Pattern and example. This is useful for functional explanations and narrow screens; the default columns layout and pronoun chips remain unchanged. Concealed answers still hide both the pattern and example together.
+
+### Compreensão ao lado de diálogo
+
+Compor `RevealCard presentation="prompt"` numa lista numerada para perguntas factuais. A pergunta clicável revela a resposta abaixo; `VocabularyControls` oferece a lâmpada inferior quando há apoios graduais. Essa composição não reutiliza os participantes e balões do diálogo. A interação pessoal continua usando `LearningDialogue` com pistas e, normalmente, pelo menos três pares de fala. Os adaptadores dos materiais escolhem a finalidade; o componente não infere pedagogia a partir do título.

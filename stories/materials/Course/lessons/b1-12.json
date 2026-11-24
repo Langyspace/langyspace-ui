@@ -22,7 +22,8 @@
           "hint": "If I …, I’d …, but …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "Because …",
           "answer": "Because she can concentrate without interruptions"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-12.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "They need to …",
           "answer": "They need to agree on shared office days"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-12.model"
     },
     {
       "id": "s_personal",
@@ -227,8 +230,16 @@
           "cue": "Recognise a limitation without changing your answer automatically",
           "hint": "Although …, I still think …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would make the other option work better for you?",
+          "cue": "Suggest a condition and ask about my preference",
+          "hint": "I could … if … What would make it work for you?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -399,7 +410,8 @@
           "hint": "I’d suggest … because … Although …, we could …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -429,7 +441,8 @@
           "hint": "Although …, … However, we could … so that …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

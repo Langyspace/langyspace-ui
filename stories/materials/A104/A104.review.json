@@ -18,7 +18,8 @@
           "hint": "This is my … His/Her name is …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -97,7 +98,7 @@
       "title": "Morning, afternoon or evening?",
       "instruction": "Describe each time of day, then click to listen",
       "minutes": 2,
-      "eyebrow": "Vocabulary",
+      "eyebrow": "Reference",
       "items": [
         {
           "id": "T.morning",
@@ -121,7 +122,9 @@
           "imageAlt": "Ana relaxing at home as the sky becomes violet"
         }
       ],
-      "alignHeading": true
+      "alignHeading": true,
+      "vocabularyRole": "reference",
+      "referenceReason": "The complete three-part day reference supports the six routine actions already introduced"
     },
     {
       "id": "s6",
@@ -205,8 +208,16 @@
           "cue": "Choose a day and a time",
           "hint": "I’m free on … at … Are you free then?",
           "answer": "One possible response"
+        },
+        {
+          "id": "evening",
+          "prompt": "What do you do in the evening?",
+          "cue": "Describe an evening habit and ask about mine",
+          "hint": "I … in the evening. What do you do?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s7",
@@ -314,7 +325,8 @@
           "hint": "Yes, I am. See you … / No, I’m not. What about …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     {
       "id": "s12",

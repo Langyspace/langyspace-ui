@@ -22,7 +22,8 @@
           "hint": "Can I have …, please? How much is it?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -158,7 +159,8 @@
           "hint": "Near … at …",
           "answer": "Near the station at ten"
         }
-      ]
+      ],
+      "dialogueGroup": "a1-12.model"
     },
     {
       "id": "s_personal",
@@ -181,8 +183,16 @@
           "cue": "Choose a time and meeting place",
           "hint": "Let’s meet at … near …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What can we do there?",
+          "cue": "Suggest an activity, then ask me",
+          "hint": "We can … What would you like to do?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -332,7 +342,8 @@
           "hint": "Let’s go to … Let’s meet at …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -362,7 +373,8 @@
           "hint": "It’s …, so let’s … Let’s meet at …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

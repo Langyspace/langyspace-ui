@@ -16,8 +16,20 @@ export function FeedbackActivity() {
             {
               id: 'observe',
               question: 'How would you open the conversation?',
-              cue: 'Describe one concern and propose a next step',
-              hint: 'When …, it seemed … Could we …?',
+              cue: 'Describe one specific observation without assigning blame',
+              hint: 'When …, I found … difficult to follow',
+            },
+            {
+              id: 'clarify',
+              question: 'How would you invite Raj’s perspective?',
+              cue: 'Ask what shaped the presentation and listen to the reply',
+              hint: 'How did you see …? Was there anything that made … difficult?',
+            },
+            {
+              id: 'agree',
+              question: 'What next step would you agree together?',
+              cue: 'Respond to Raj’s explanation and propose a practical action',
+              hint: 'Given what you’ve said, could we …? Would that help?',
             },
           ]}
         />

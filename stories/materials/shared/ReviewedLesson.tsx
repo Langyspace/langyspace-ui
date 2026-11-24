@@ -73,8 +73,15 @@ const recordingLine = (line: {
   id: line.id,
   text: line.audioText ?? line.text,
 })
-function Questions({ items }: { items: readonly ReviewedPrompt[] }) {
-  return items.every((item) => item.cue && item.hint) ? (
+function Questions({
+  items,
+  purpose = 'conversation',
+}: {
+  items: readonly ReviewedPrompt[]
+  purpose?: 'conversation' | 'comprehension' | 'review' | 'response'
+}) {
+  return purpose === 'conversation' &&
+    items.every((item) => item.cue && item.hint) ? (
     <MaterialQuestions
       items={items.map((item) => ({
         id: item.id,
@@ -147,7 +154,7 @@ function PageContent({
   const [selected, setSelected] = useState<string>()
   const [helpLevel, setHelpLevel] = useState<RevealGuidanceLevel>('cue')
   if (page.kind === 'prompts' || page.kind === 'questions')
-    return <Questions items={page.items} />
+    return <Questions items={page.items} purpose={page.questionPurpose} />
   if (page.kind === 'activity') return activity
   if (page.kind === 'source')
     return (
@@ -359,7 +366,7 @@ function PageContent({
             questions: `Questions about ${page.contact?.name ?? 'Kim'}`,
             conversation: 'Conversation',
           }}
-          footer={<Questions items={page.items} />}
+          footer={<Questions items={page.items} purpose="comprehension" />}
         />
       </ThemeProvider>
     )
@@ -433,7 +440,7 @@ function PageContent({
           page.lines ? (
             <Dialogue lines={page.lines} speech={speech} guidance />
           ) : page.items ? (
-            <Questions items={page.items} />
+            <Questions items={page.items} purpose={page.questionPurpose} />
           ) : undefined
         }
       />
@@ -553,7 +560,10 @@ export function ReviewedLesson({
                     title={page.title}
                     questions={
                       page.kind === 'dialogue' && page.questions ? (
-                        <Questions items={page.questions} />
+                        <Questions
+                          items={page.questions}
+                          purpose="comprehension"
+                        />
                       ) : undefined
                     }
                     eyebrow={page.eyebrow}

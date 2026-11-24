@@ -33,6 +33,12 @@ export function AvailabilityActivity() {
               cue: 'Suggest a time and ask me',
               hint: 'Are you free on … at …?',
             },
+            {
+              id: 'confirm',
+              question: 'Can you confirm the plan?',
+              cue: 'Repeat the agreed day and time, then check',
+              hint: 'So, … at … Is that right?',
+            },
           ]}
         />
       }

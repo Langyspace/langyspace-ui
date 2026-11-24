@@ -22,7 +22,8 @@
           "hint": "The key issue for you is …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "One needs …; the other …",
           "answer": "One needs the budget effect; the other needs the date"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-07.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "The …",
           "answer": "The colour discussion"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-07.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "No, …",
           "answer": "No. Team availability and spending approval remain separate"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-07.model"
     },
     {
       "id": "s_personal",
@@ -424,7 +428,8 @@
           "hint": "The key point is … because you need to decide …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "choices",
@@ -481,7 +486,8 @@
           "hint": "Having confirmed …, we can now … We still need …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -499,6 +505,13 @@
           "prompt": "What can you leave out without changing the meaning?",
           "cue": "Remove a detail while preserving the decision and its reason",
           "hint": "We can leave out …, but we need to keep …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check that the recipient knows what to do next?",
+          "cue": "State the action and check whether the briefing is sufficient",
+          "hint": "The immediate decision is … Is there anything you’d need clarified before proceeding?",
           "answer": "One possible response"
         }
       ],
@@ -545,7 +558,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

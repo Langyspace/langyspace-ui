@@ -22,7 +22,8 @@
           "hint": "I’d keep …, but change …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "Repeated …",
           "answer": "Repeated social-message checking"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-12.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "They could …",
           "answer": "They could expose private information and delay participation"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-12.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "To check whether …",
           "answer": "To check whether the rule and exception route actually work for different needs"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-12.model"
     },
     {
       "id": "s_personal",
@@ -430,7 +434,8 @@
           "hint": "The main issue is … Although …, we should … when …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -460,7 +465,8 @@
           "hint": "I’d reconsider … because … We could allow … while …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -478,6 +484,13 @@
           "prompt": "Who might need an exception?",
           "cue": "Consider a different perspective and justify a condition",
           "hint": "Although …, we should allow … when …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain the final policy to someone affected by it?",
+          "cue": "State the aim, boundary and exception in plain language",
+          "hint": "The aim is to … In practice, … We’d make an exception when …",
           "answer": "One possible response"
         }
       ],
@@ -545,7 +558,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

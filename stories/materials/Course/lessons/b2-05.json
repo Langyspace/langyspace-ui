@@ -22,7 +22,8 @@
           "hint": "They could have checked …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "The …",
           "answer": "The breakfast"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-05.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No, …",
           "answer": "No. It is conditional on a room check"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-05.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "No, …",
           "answer": "No. The payment timing was optional, not the room price"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-05.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "We needn’t have paid … because … The deposit is different because …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "Could you confirm the … refund? I understand the deposit …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Suggest a proportionate solution",
           "hint": "We could ask whether …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check whether the decision is still fair?",
+          "cue": "Compare the reason with a possible exception",
+          "hint": "That seems reasonable unless … Would you make an exception for …?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

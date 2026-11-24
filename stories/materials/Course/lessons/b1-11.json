@@ -22,7 +22,8 @@
           "hint": "This is … They’re … / They …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "It was …",
           "answer": "Nina organised the music"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-11.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "The person who …",
           "answer": "The person in green by the drinks table"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-11.model"
     },
     {
       "id": "s_personal",
@@ -362,7 +365,8 @@
           "hint": "The person who’s … This is …, who …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -392,7 +396,8 @@
           "hint": "Alex, this is Kim. Kim, this is Alex, who …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -410,6 +415,13 @@
           "prompt": "How would you introduce them?",
           "cue": "Use only the facts given on the person’s card",
           "hint": "This is …, who …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you introduce that person to me?",
+          "cue": "Connect a name with a useful identifying detail",
+          "hint": "This is …, who … What would you like to ask?",
           "answer": "One possible response"
         }
       ],
@@ -456,7 +468,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

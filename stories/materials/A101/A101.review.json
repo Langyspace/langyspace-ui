@@ -42,6 +42,36 @@
           "example": "I’m from the United States",
           "audioId": "FS80.2",
           "audioText": "the United States. I’m from the United States."
+        },
+        {
+          "id": "vocab94.0",
+          "word": "Japan",
+          "translation": "Japão",
+          "imageUrl": "flag-jp",
+          "imageAlt": "Flag of Japan",
+          "example": "I’m from Japan",
+          "audioId": "FS94.0",
+          "audioText": "Japan. I’m from Japan."
+        },
+        {
+          "id": "vocab94.1",
+          "word": "Germany",
+          "translation": "Alemanha",
+          "imageUrl": "flag-de",
+          "imageAlt": "Flag of Germany",
+          "example": "I’m from Germany",
+          "audioId": "FS94.1",
+          "audioText": "Germany. I’m from Germany."
+        },
+        {
+          "id": "vocab94.2",
+          "word": "France",
+          "translation": "França",
+          "imageUrl": "flag-fr",
+          "imageAlt": "Flag of France",
+          "example": "I’m from France",
+          "audioId": "FS94.2",
+          "audioText": "France. I’m from France."
         }
       ],
       "isolated": true,
@@ -84,6 +114,36 @@
           "example": "I’m hungry",
           "audioId": "FS80.5",
           "audioText": "hungry. I’m hungry."
+        },
+        {
+          "id": "vocab94.3",
+          "word": "sad",
+          "translation": "triste",
+          "imageUrl": "scene-sad-josh",
+          "imageAlt": "Josh looking sad",
+          "example": "I’m sad",
+          "audioId": "FS94.3",
+          "audioText": "sad. I’m sad."
+        },
+        {
+          "id": "vocab94.4",
+          "word": "cold",
+          "translation": "com frio",
+          "imageUrl": "scene-cold-julia",
+          "imageAlt": "Julia wearing warm clothes because she is cold",
+          "example": "I’m cold",
+          "audioId": "FS94.4",
+          "audioText": "cold. I’m cold."
+        },
+        {
+          "id": "vocab94.5",
+          "word": "angry",
+          "translation": "com raiva",
+          "imageUrl": "scene-angry-leo",
+          "imageAlt": "Leo looking angry",
+          "example": "I’m angry",
+          "audioId": "FS94.5",
+          "audioText": "angry. I’m angry."
         }
       ],
       "alignHeading": true
@@ -170,8 +230,16 @@
           "cue": "Say where you’re from",
           "hint": "I’m from … What about you?",
           "answer": "One possible response"
+        },
+        {
+          "id": "feelings",
+          "prompt": "How are you today?",
+          "cue": "Say how you feel and ask me",
+          "hint": "I’m …, thanks. How are you?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s71",
@@ -251,7 +319,8 @@
           "hint": "Hi, Mia! I’m … I’m … Nice to meet you!",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     {
       "id": "s13",

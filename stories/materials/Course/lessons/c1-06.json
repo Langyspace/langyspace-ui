@@ -22,7 +22,8 @@
           "hint": "I’d want to know whether …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -172,7 +173,8 @@
           "hint": "They haven’t …",
           "answer": "They haven’t confirmed how feedback works"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-06.model"
     },
     {
       "id": "s_dialogue2",
@@ -219,7 +221,8 @@
           "hint": "The …",
           "answer": "Timetable flexibility"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-06.model"
     },
     {
       "id": "s_dialogue3",
@@ -266,7 +269,8 @@
           "hint": "By saying …",
           "answer": "By naming details that could reverse the recommendation"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-06.model"
     },
     {
       "id": "s_personal",
@@ -424,7 +428,8 @@
           "hint": "The more I consider …, the more … matters. I’d reconsider if …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -454,7 +459,8 @@
           "hint": "It makes … more important, although … I’d now …, subject to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -472,6 +478,13 @@
           "prompt": "What would make you reconsider?",
           "cue": "Name information that could genuinely change your choice",
           "hint": "I’d reconsider if …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you explain your decision to someone who values the other option?",
+          "cue": "Recognise their priority while defending your own",
+          "hint": "I can see the case for … For me, the deciding factor is … What would shift your view?",
           "answer": "One possible response"
         }
       ],
@@ -518,7 +531,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

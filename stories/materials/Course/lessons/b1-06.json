@@ -22,7 +22,8 @@
           "hint": "I’d need … I’d ask whether …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "On …",
           "answer": "On three office days"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-06.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "Because …",
           "answer": "Because they want to attend an afternoon course"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-06.model"
     },
     {
       "id": "s_personal",
@@ -227,8 +230,16 @@
           "cue": "Explain a priority and ask your teacher’s view",
           "hint": "I’d care most about … because …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What advice would you give someone in that position?",
+          "cue": "Offer a conditional suggestion and invite another view",
+          "hint": "If I were …, I’d … What would you suggest?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -378,7 +389,8 @@
           "hint": "If you took …, you’d … Would … matter more than …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -408,7 +420,8 @@
           "hint": "Would I be able to …? If not, I’d …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

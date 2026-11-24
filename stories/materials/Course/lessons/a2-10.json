@@ -22,7 +22,8 @@
           "hint": "I need … I’d like …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -144,7 +145,8 @@
           "hint": "It has … and it’s …",
           "answer": "It has two beds and it’s closer to the centre"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-10.model"
     },
     {
       "id": "s_dialogue2",
@@ -191,7 +193,8 @@
           "hint": "Whether …",
           "answer": "Whether A is quiet at night"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-10.model"
     },
     {
       "id": "s_personal",
@@ -364,7 +367,8 @@
           "answer": "One possible response"
         }
       ],
-      "image": "a2-10-vocabulary81"
+      "image": "a2-10-vocabulary81",
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "comparison",
@@ -436,7 +440,8 @@
           "answer": "One possible response"
         }
       ],
-      "image": "a2-10-vocabulary81"
+      "image": "a2-10-vocabulary81",
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "choices",
@@ -454,6 +459,13 @@
           "prompt": "What’s the problem with the other one?",
           "cue": "Explain one limitation using the information shown",
           "hint": "It’s too … / It isn’t … enough",
+          "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "Which difference matters most to you?",
+          "cue": "Choose a priority and ask about mine",
+          "hint": "… is more important to me because … What matters to you?",
           "answer": "One possible response"
         }
       ],
@@ -514,7 +526,8 @@
             }
           ]
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

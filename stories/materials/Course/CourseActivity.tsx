@@ -7,6 +7,7 @@ import { VocabularyControls } from '../../../src/components/Exercise/VocabularyC
 import { PictureStrip } from '../../../src/components/Exercise/PictureStrip'
 import { ImageSortBoard } from '../../../src/components/Exercise/ImageSortBoard'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
+import { PromptExercise } from '../shared/LessonExercises'
 import { MaterialQuestions } from '../shared/MaterialQuestions'
 import type { CourseActivity as ActivitySpec } from './Course.types'
 
@@ -130,14 +131,18 @@ export function CourseActivity({
           : undefined
       }
       tracker={
-        <MaterialQuestions
-          items={activity.questions.map((q) => ({
-            id: q.id,
-            question: q.prompt,
-            cue: q.cue!,
-            hint: q.hint!,
-          }))}
-        />
+        activity.questionPurpose === 'comprehension' ? (
+          <PromptExercise items={activity.questions} />
+        ) : (
+          <MaterialQuestions
+            items={activity.questions.map((q) => ({
+              id: q.id,
+              question: q.prompt,
+              cue: q.cue!,
+              hint: q.hint!,
+            }))}
+          />
+        )
       }
     >
       <Common.Stack>

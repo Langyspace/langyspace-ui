@@ -29,6 +29,12 @@ interface PageBase {
   eyebrow: string
   instruction: string
   minutes: number
+  /** A continued model is counted across its explicitly linked parts. */
+  dialogueGroup?: string
+  /** Factual checks and short replies are not fictional two-person conversations. */
+  vocabularyRole?: 'introduction' | 'reference'
+  referenceReason?: string
+  questionPurpose?: 'conversation' | 'comprehension' | 'review' | 'response'
   /** A standalone diagram shares the scene/cover height-aware layout bound. */
   mediaAspectRatio?: number
   /** Prepared audio alongside an authored listening prompt. */

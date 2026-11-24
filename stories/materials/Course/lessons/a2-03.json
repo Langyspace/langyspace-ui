@@ -22,7 +22,8 @@
           "hint": "First I … Then …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -144,7 +145,8 @@
           "hint": "She was …",
           "answer": "She was waiting for the bus"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-03.model"
     },
     {
       "id": "s_dialogue2",
@@ -191,7 +193,8 @@
           "hint": "She went …",
           "answer": "She went into a shop"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-03.model"
     },
     {
       "id": "s_personal",
@@ -214,8 +217,16 @@
           "cue": "Explain the sequence and apologise",
           "hint": "Sorry I’m late. I was … when …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What happened next?",
+          "cue": "Finish the story, then ask about a similar experience",
+          "hint": "After that, I … Did you have a similar experience?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -353,7 +364,8 @@
           "id": "after",
           "label": "After that"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -383,7 +395,8 @@
           "hint": "No problem. We’ll … See you at …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_mission_story": {
       "type": "timeline",
@@ -413,7 +426,8 @@
           "hint": "Sorry I’m late. I was … when … Then …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

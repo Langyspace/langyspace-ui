@@ -22,7 +22,8 @@
           "hint": "The … doesn’t … I need …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "It still needs to be …",
           "answer": "It still needs fitting and testing"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-06.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No, …",
           "answer": "No. It is an estimate pending confirmation"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-06.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "No, …",
           "answer": "No. Availability still had to be checked"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-06.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "I need to get … Could you confirm when …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "I understand it’s been … Could I check whether the loan phone …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Ask about progress and negotiate a deadline",
           "hint": "Could you confirm when …?",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "What would make your proposal workable for both sides?",
+          "cue": "Offer a condition and invite a counterproposal",
+          "hint": "I could agree to … as long as … What would you need?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

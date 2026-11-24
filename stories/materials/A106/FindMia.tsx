@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { SceneExplorer } from '../../../src/components/InteractiveMaterial/SceneExplorer'
 import { RolePlayExercise } from '../../../src/components/InteractiveMaterial/RolePlayExercise'
-import { MaterialQuestions } from '../shared/MaterialQuestions'
+import { PromptExercise } from '../shared/LessonExercises'
 import room from './assets/scene-find-mia81.webp'
 const pets = [
   { id: 'Mia', label: 'Mia', xPercent: 17, yPercent: 78, prompt: null },
@@ -17,14 +17,15 @@ export function FindMia() {
       completedIds={[]}
       onStepToggle={() => undefined}
       tracker={
-        <MaterialQuestions
+        <PromptExercise
           key={pet}
           items={[
             {
               id: 'place',
-              question: `Where is ${pet}?`,
-              cue: 'Describe the place you can see',
-              hint: pet === 'Mia' ? 'She’s … the bed' : 'He’s … the sofa',
+              prompt: `Where is ${pet}?`,
+              hint: 'Look at the pet and the furniture around it',
+              answer:
+                pet === 'Mia' ? 'She’s under the bed' : 'He’s next to the sofa',
             },
           ]}
         />

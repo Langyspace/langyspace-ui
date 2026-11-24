@@ -11,6 +11,7 @@ export interface CourseOption {
   facts: readonly { id: string; label: string; value: string }[]
 }
 export interface CourseActivity {
+  questionPurpose?: 'conversation' | 'comprehension'
   type:
     | 'facts'
     | 'choices'

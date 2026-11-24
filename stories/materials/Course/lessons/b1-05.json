@@ -22,7 +22,8 @@
           "hint": "Did you say …? So that’s …, right?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "He said …, not …",
           "answer": "He said Thursday, not Friday"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-05.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No. He said …",
           "answer": "No. He needs to see the tap first"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-05.model"
     },
     {
       "id": "s_personal",
@@ -335,7 +338,8 @@
           "hint": "He said … He asked us to … It was …, not …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -365,7 +369,8 @@
           "hint": "He said … and asked us to … Could you confirm …?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -401,8 +406,16 @@
           "cue": "Check the message and correct the misunderstanding",
           "hint": "He said …, not …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check that I understood?",
+          "cue": "Report the key request and ask for confirmation",
+          "hint": "You said … Did I understand correctly?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

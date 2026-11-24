@@ -19,7 +19,8 @@
           "hint": "I like … What about you?",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -99,7 +100,7 @@
       "title": "Furniture",
       "instruction": "Use these words to describe where the animals are",
       "minutes": 2,
-      "eyebrow": "Vocabulary",
+      "eyebrow": "Reference",
       "items": [
         {
           "id": "V.6",
@@ -124,7 +125,9 @@
         }
       ],
       "isolated": true,
-      "alignHeading": true
+      "alignHeading": true,
+      "vocabularyRole": "reference",
+      "referenceReason": "These three furniture names are the visible reference objects for the following pet-location scenes, after the six-pet introduction"
     },
     {
       "id": "s4",
@@ -132,7 +135,7 @@
       "title": "Where is Mia?",
       "instruction": "Describe each position, then click to check",
       "minutes": 3,
-      "eyebrow": "Vocabulary",
+      "eyebrow": "Reference",
       "items": [
         {
           "id": "P.0",
@@ -163,7 +166,9 @@
           "imageAlt": "Mia next to a table."
         }
       ],
-      "alignHeading": true
+      "alignHeading": true,
+      "vocabularyRole": "reference",
+      "referenceReason": "This is the four-position reference used by the location task, after the six-pet introduction"
     },
     {
       "id": "s7",
@@ -241,8 +246,16 @@
           "cue": "Give a name or use the example",
           "hint": "His/Her name is …",
           "answer": "One possible response"
+        },
+        {
+          "id": "pet-location",
+          "prompt": "Where is the pet now?",
+          "cue": "Describe a real or imaginary pet’s location and ask about another animal",
+          "hint": "He’s/She’s on … / in … / under … Where’s …?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s81",
@@ -326,7 +339,8 @@
           "hint": "She’s … Where is Thor?",
           "answer": "She’s on the sofa. Where is Thor?"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     {
       "id": "s13",

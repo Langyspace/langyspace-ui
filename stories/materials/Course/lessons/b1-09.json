@@ -22,7 +22,8 @@
           "hint": "It has …, but we’d need to check …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "At … at …",
           "answer": "At the station rack at six"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-09.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "Nobody has …",
           "answer": "Nobody has checked the serial number"
         }
-      ]
+      ],
+      "dialogueGroup": "b1-09.model"
     },
     {
       "id": "s_personal",
@@ -335,7 +338,8 @@
           "hint": "It was … near … at … It has …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -365,7 +369,8 @@
           "hint": "A bike has been …, but … hasn’t been … yet",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -401,8 +406,16 @@
           "cue": "Describe two distinctive features from the picture",
           "hint": "It has … and …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you check the description before leaving?",
+          "cue": "Confirm a detail without adding a new fact",
+          "hint": "You mean the one that …, right? Is there anything else?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }

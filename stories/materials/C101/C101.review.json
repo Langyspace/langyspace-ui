@@ -18,7 +18,8 @@
           "hint": "They might worry about … I’d suggest …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -141,7 +142,8 @@
           "hint": "She suggests … and would like …",
           "answer": "Another meeting on Thursday at ten, with Ana there too"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     {
       "id": "s6",
@@ -149,7 +151,7 @@
       "title": "Ana’s first attempt",
       "instruction": "Listen for the criticism and Kim’s reaction",
       "minutes": 2,
-      "eyebrow": "Guided conversation",
+      "eyebrow": "Guided conversation · 1/3",
       "lines": [
         {
           "id": "D6.1",
@@ -195,7 +197,8 @@
           "hint": "She plans to mention …",
           "answer": "Raj spoke too fast and read the slides"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-01.model"
     },
     {
       "id": "s62",
@@ -203,7 +206,7 @@
       "title": "Make the concern specific",
       "instruction": "Follow the change from an accusation to an observation",
       "minutes": 2,
-      "eyebrow": "Guided conversation",
+      "eyebrow": "Guided conversation · 2/3",
       "lines": [
         {
           "id": "D6.6",
@@ -249,7 +252,8 @@
           "hint": "Instead of …, she suggests …",
           "answer": "Describe the effect and make the suggested change specific"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-01.model"
     },
     {
       "id": "s63",
@@ -257,7 +261,7 @@
       "title": "Agree on a useful next step",
       "instruction": "Listen for the proposal and the reason to be fair",
       "minutes": 2,
-      "eyebrow": "Guided conversation",
+      "eyebrow": "Guided conversation · 3/3",
       "lines": [
         {
           "id": "D6.11",
@@ -296,7 +300,8 @@
           "hint": "She proposes … together",
           "answer": "Preparing the answers together next time"
         }
-      ]
+      ],
+      "dialogueGroup": "c1-01.model"
     },
     {
       "id": "s8",
@@ -319,8 +324,16 @@
           "cue": "Offer an observation and a constructive suggestion",
           "hint": "I’ve noticed … I wonder if we could …",
           "answer": "One possible response"
+        },
+        {
+          "id": "perspective",
+          "prompt": "What would you ask to understand their perspective?",
+          "cue": "Invite their view before proposing a next step",
+          "hint": "How do you see …? What would help us …?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s7",
@@ -433,7 +446,8 @@
           "hint": "I can see why … Laura has asked … Could we agree …?",
           "answer": "Acknowledge his preference, explain that Laura asked Ana to attend, then agree how to share the questions"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     {
       "id": "s12",

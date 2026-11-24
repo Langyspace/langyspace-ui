@@ -22,7 +22,8 @@
           "hint": "It’s … than … / It’s … enough",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -144,7 +145,8 @@
           "hint": "They’ll …",
           "answer": "They’ll go to the museum"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-11.model"
     },
     {
       "id": "s_dialogue2",
@@ -191,7 +193,8 @@
           "hint": "They can …",
           "answer": "They can take the nine thirty bus"
         }
-      ]
+      ],
+      "dialogueGroup": "a2-11.model"
     },
     {
       "id": "s_personal",
@@ -214,8 +217,16 @@
           "cue": "Agree on a second way to reach the destination",
           "hint": "If the bus is late, we can …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How will we keep each other updated?",
+          "cue": "Agree on how to confirm or change the plan",
+          "hint": "I’ll … if … Can you …?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -365,7 +376,8 @@
           "hint": "If …, we’ll … If the bus …, we can …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -395,7 +407,8 @@
           "hint": "If …, we’ll … Then …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     }
   }
 }

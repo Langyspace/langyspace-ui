@@ -22,7 +22,8 @@
           "hint": "They asked me to … They didn’t say …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -157,7 +158,8 @@
           "hint": "After …",
           "answer": "After checking everyone’s availability"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-07.model"
     },
     {
       "id": "s_dialogue2",
@@ -204,7 +206,8 @@
           "hint": "No, …",
           "answer": "No. They refused advance payment before reading the conditions"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-07.model"
     },
     {
       "id": "s_dialogue3",
@@ -251,7 +254,8 @@
           "hint": "It said …",
           "answer": "It said everyone agreed to pay in advance"
         }
-      ]
+      ],
+      "dialogueGroup": "b2-07.model"
     },
     {
       "id": "s_personal",
@@ -382,7 +386,8 @@
           "hint": "They suggested … The host promised to … A guest refused to …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_reply": {
       "type": "facts",
@@ -412,7 +417,8 @@
           "hint": "Not exactly. She suggested …; she didn’t promise …",
           "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "comprehension"
     },
     "s_personal": {
       "type": "facts",
@@ -448,8 +454,16 @@
           "cue": "Correct a change in meaning or intention",
           "hint": "Not exactly. They suggested …; they didn’t promise …",
           "answer": "One possible response"
+        },
+        {
+          "id": "personal.follow-up94",
+          "prompt": "How would you prevent the same misunderstanding?",
+          "cue": "Clarify the commitment and ask the other person to confirm",
+          "hint": "When you say …, do you mean …? Could we agree on …?",
+          "answer": "One possible response"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   }
 }
