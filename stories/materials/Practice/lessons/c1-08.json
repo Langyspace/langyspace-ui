@@ -1,0 +1,272 @@
+{
+  "key": "c1-08",
+  "code": "C1.08",
+  "title": "Much as I’d like to…",
+  "first": {
+    "id": "course-practice-c1-08-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "context": "Noah says, “I need to know the place won’t be empty halfway through the year.”",
+        "prompt": "What concern is he expressing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The uncertainty of having an unoccupied property partway through the year"
+          },
+          {
+            "id": "b",
+            "text": "The prospect of having to change the rent halfway through an agreed term"
+          }
+        ],
+        "correctOptionId": "a",
+        "id": "course-c1-08-q01",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The concern in this line is an occupancy gap, rather than changing the price of a term already agreed."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The concern in this line is an occupancy gap, rather than changing the price of a term already agreed."
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "An occupancy gap"
+          },
+          {
+            "id": "b",
+            "text": "A mid-term rent change"
+          }
+        ]
+      },
+      {
+        "context": "Ruby says, “Much as I like the apartment, I can only commit to six months.”",
+        "prompt": "What does her concession achieve?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It presents six months as an opening offer that she is willing to exceed"
+          },
+          {
+            "id": "b",
+            "text": "It acknowledges the apartment’s appeal without relaxing her stated limit"
+          }
+        ],
+        "correctOptionId": "b",
+        "id": "course-c1-08-q02",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "She can appreciate the apartment and still limit her commitment to six months."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "She can appreciate the apartment and still limit her commitment to six months."
+          }
+        }
+      },
+      {
+        "context": "They discuss six months with an option to extend. Noah says, “Possibly, provided you let me know well in advance.”",
+        "prompt": "Which interpretation keeps the condition intact?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Advance notice is a condition of Noah considering an extension, not a guarantee of agreement"
+          },
+          {
+            "id": "b",
+            "text": "Adequate notice is enough to make the extension automatic on the original terms"
+          }
+        ],
+        "correctOptionId": "a",
+        "id": "course-c1-08-q03",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Provided introduces a condition. Possibly is not a guarantee of extension."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Provided introduces a condition. Possibly is not a guarantee of extension."
+          }
+        }
+      },
+      {
+        "context": "Noah agrees to keep the rent the same during the initial term, but cannot promise the same price for an extension.",
+        "prompt": "What has actually been agreed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The initial rent carries into the extension unless Ruby asks for a review"
+          },
+          {
+            "id": "b",
+            "text": "The initial term has a fixed rent; no price commitment has been made for the extension"
+          }
+        ],
+        "correctOptionId": "b",
+        "id": "course-c1-08-q04",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Do not extend a commitment beyond the time period the speaker actually accepted."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Do not extend a commitment beyond the time period the speaker actually accepted."
+          }
+        }
+      },
+      {
+        "context": "Ruby says, “My main concern is having a clear review date.” Noah replies, “Then let’s put that in writing.”",
+        "prompt": "Which revision would directly address Ruby’s concern?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Add an explicit review date to the written terms"
+          },
+          {
+            "id": "b",
+            "text": "Restate that notice must be given well in advance, leaving the date flexible"
+          }
+        ],
+        "correctOptionId": "a",
+        "id": "course-c1-08-q05",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A written review date makes the timing explicit; a vague notice phrase does not supply a calendar date."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A written review date makes the timing explicit; a vague notice phrase does not supply a calendar date."
+          }
+        }
+      },
+      {
+        "context": "Ruby wants flexibility. Noah needs continuity. They consider a six-month initial term, possible extension, notice and a written review date.",
+        "prompt": "Which summary avoids overstating the compromise?",
+        "options": [
+          {
+            "id": "a",
+            "text": "They have settled both the initial term and extension, with only the paperwork outstanding"
+          },
+          {
+            "id": "b",
+            "text": "They have a workable basis for the initial term; the review arrangements and extension conditions still need precision"
+          }
+        ],
+        "correctOptionId": "b",
+        "id": "course-c1-08-q06",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A compromise can protect both interests without implying unconditional agreement or a guaranteed extension."
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A compromise can protect both interests without implying unconditional agreement or a guaranteed extension."
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-08.shadowing.01",
+        "displayText": "I understand why you’d prefer a twelve-month contract",
+        "translation": "Entendo por que você prefere um contrato de doze meses",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.02",
+        "displayText": "It gives me some certainty, especially with the maintenance costs",
+        "translation": "Isso me dá alguma segurança, especialmente em relação aos custos de manutenção",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.03",
+        "displayText": "Much as I like the apartment, I can only commit to six months",
+        "translation": "Por mais que eu goste do apartamento, só posso me comprometer por seis meses",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.04",
+        "displayText": "That’s difficult. I need to know the place won’t be empty halfway through the year",
+        "translation": "Isso é difícil. Preciso ter certeza de que o local não ficará vazio no meio do ano",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.05",
+        "displayText": "Would you consider six months with an option to extend?",
+        "translation": "Você consideraria um contrato de seis meses com opção de prorrogação?",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.06",
+        "displayText": "Possibly, provided you let me know well in advance",
+        "translation": "Possivelmente, desde que me avise com bastante antecedência",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.07",
+        "displayText": "That seems reasonable. The rent would also need to stay the same during the initial term",
+        "translation": "Isso parece razoável. O aluguel também precisaria permanecer o mesmo durante o prazo inicial",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.08",
+        "displayText": "I can agree to that, but I can’t promise the same price for the extension",
+        "translation": "Concordo com isso, mas não posso prometer o mesmo preço para a extensão",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.09",
+        "displayText": "Fair enough. My main concern is having a clear review date",
+        "translation": "Entendo. Minha principal preocupação é ter uma data de revisão clara",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.10",
+        "displayText": "Then let’s put that in writing",
+        "translation": "Então vamos colocar isso por escrito",
+        "speakerId": "noah-ellis"
+      },
+      {
+        "id": "c1-08.shadowing.11",
+        "displayText": "Good. We’ve both had to compromise, but the arrangement feels workable",
+        "translation": "Ótimo. Ambos tivemos que ceder, mas o acordo parece viável",
+        "speakerId": "ruby-bennett"
+      },
+      {
+        "id": "c1-08.shadowing.12",
+        "displayText": "Agreed. I’ll send you the revised terms this afternoon",
+        "translation": "Concordo. Enviarei os termos revisados esta tarde",
+        "speakerId": "noah-ellis"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "ruby-bennett",
+        "name": "Ruby",
+        "avatarUrl": "/flashcards/course-characters/ruby-bennett/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      },
+      {
+        "id": "noah-ellis",
+        "name": "Noah",
+        "avatarUrl": "/flashcards/course-characters/noah-ellis/image.webp",
+        "accentCode": "en-AU",
+        "accentLabel": "English · Australia"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

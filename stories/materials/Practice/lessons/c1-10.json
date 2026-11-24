@@ -1,0 +1,272 @@
+{
+  "key": "c1-10",
+  "code": "C1.10",
+  "title": "I’m writing to let you know…",
+  "first": {
+    "id": "course-practice-c1-10-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-10-q01",
+        "context": "An internal notice tells staff about a planned system outage on Tuesday, 18:00–19:00",
+        "prompt": "Which opening is clearest?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The booking system will be unavailable on Tuesday from 18:00 to 19:00"
+          },
+          {
+            "id": "b",
+            "text": "There may be some developments relating to availability soon"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Put the specific service, date and time before background detail"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Put the specific service, date and time before background detail"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Name the system, date and time"
+          },
+          {
+            "id": "b",
+            "text": "Refer vaguely to changes soon"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-10-q02",
+        "context": "Staff must save their work before the outage begins",
+        "prompt": "Which instruction makes the action explicit?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Please consider any relevant preparations at a suitable point"
+          },
+          {
+            "id": "b",
+            "text": "Please save your work before 18:00 on Tuesday"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A concrete action and deadline reduce ambiguity"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A concrete action and deadline reduce ambiguity"
+          }
+        }
+      },
+      {
+        "id": "course-c1-10-q03",
+        "context": "The outage affects bookings but not live lessons",
+        "prompt": "Which sentence prevents unnecessary concern?",
+        "options": [
+          {
+            "id": "a",
+            "text": "All teaching operations may be affected in unspecified ways"
+          },
+          {
+            "id": "b",
+            "text": "Live lessons will continue; only new bookings will be unavailable during that hour"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "State the actual scope rather than implying wider disruption"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "State the actual scope rather than implying wider disruption"
+          }
+        }
+      },
+      {
+        "id": "course-c1-10-q04",
+        "context": "You’re writing to colleagues, not marketing to customers",
+        "prompt": "Which tone fits a routine service notice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "We’re updating the system. Here’s what you need to do"
+          },
+          {
+            "id": "b",
+            "text": "Discover a revolutionary disruption to your booking journey"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A service notice benefits from direct, practical language"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A service notice benefits from direct, practical language"
+          }
+        }
+      },
+      {
+        "id": "course-c1-10-q05",
+        "context": "The reopening time is an estimate, not a guarantee",
+        "prompt": "Which wording preserves that distinction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Service is guaranteed at 19:00 regardless of the work"
+          },
+          {
+            "id": "b",
+            "text": "We expect service to resume at 19:00 and will post an update if that changes"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Label the estimate and explain how changes will be communicated"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Label the estimate and explain how changes will be communicated"
+          }
+        }
+      },
+      {
+        "id": "course-c1-10-q06",
+        "context": "The draft contains three paragraphs of background before the required action",
+        "prompt": "Which revision improves usability?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Move the action and deadline to the start, then add concise background"
+          },
+          {
+            "id": "b",
+            "text": "Add another introductory paragraph to delay the instruction"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Readers should be able to find what they need to do quickly"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Readers should be able to find what they need to do quickly"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-10.shadowing.01",
+        "displayText": "Who is this update for, and what do they need to do?",
+        "translation": "Para quem é esta atualização e o que essa pessoa precisa fazer?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.02",
+        "displayText": "One version is for a client, another for a friend. Both need to confirm attendance",
+        "translation": "Uma versão é para um cliente, outra para uma amiga. Ambos precisam confirmar presença",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.03",
+        "displayText": "What are the facts that must stay the same?",
+        "translation": "Quais fatos precisam permanecer iguais?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.04",
+        "displayText": "The event moves from Friday the fourth to Monday the seventh of December. Time and room stay the same",
+        "translation": "O evento passa de sexta, quatro, para segunda, sete de dezembro. Horário e sala continuam iguais",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.05",
+        "displayText": "And the response deadline? “Tomorrow” could become unclear if the message is read late",
+        "translation": "E o prazo de resposta? “Amanhã” pode ficar confuso se a mensagem for lida depois",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.06",
+        "displayText": "Then I’d write Friday the fourth at five, rather than rely on the sending date",
+        "translation": "Então escreveria sexta, quatro, às cinco, em vez de depender da data do envio",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.07",
+        "displayText": "Would a more formal opening make the client version more proficient?",
+        "translation": "Uma abertura mais formal tornaria a versão para o cliente mais proficiente?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.08",
+        "displayText": "Not automatically. “I’m writing to let you know” is useful if the purpose is still easy to find",
+        "translation": "Não automaticamente. “Escrevo para informar” é útil se o propósito continuar fácil de encontrar",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.09",
+        "displayText": "And for the friend?",
+        "translation": "E para a amiga?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.10",
+        "displayText": "“Quick update: it’s Monday now. Same time and room. Can you confirm by Friday at five?”",
+        "translation": "“Atualização rápida: agora é segunda. Mesmo horário e sala. Pode confirmar até sexta às cinco?”",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.11",
+        "displayText": "That’s shorter, but it still keeps the action and deadline",
+        "translation": "É mais curto, mas mantém a ação e o prazo",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.12",
+        "displayText": "Exactly. Changing the register shouldn’t change the commitment we ask for",
+        "translation": "Exatamente. Mudar o registro não deve mudar o compromisso que pedimos",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

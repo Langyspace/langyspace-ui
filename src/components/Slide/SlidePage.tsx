@@ -15,6 +15,8 @@ export function SlidePage({
   cover,
   coverPlacement = 'before-heading',
   layout = 'stacked',
+  splitRatio,
+  coverSize = 'regular',
   density = 'regular',
   columns,
   width = 'wide',
@@ -29,6 +31,7 @@ export function SlidePage({
       alt={cover.alt}
       $afterHeading={coverPlacement === 'after-heading'}
       $split={layout === 'split'}
+      $compact={coverSize === 'compact'}
     />
   ) : null
   const introduction = (
@@ -71,6 +74,7 @@ export function SlidePage({
         $columns={contentColumns}
         $layout={layout}
         $cover={Boolean(cover)}
+        $splitRatio={splitRatio}
         data-slide-columns={contentColumns}
       >
         {layout === 'split' ? (

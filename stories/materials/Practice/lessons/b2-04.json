@@ -1,0 +1,272 @@
+{
+  "key": "b2-04",
+  "code": "B2.04",
+  "title": "Someone must have been here",
+  "first": {
+    "id": "course-practice-b2-04-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-04-q01",
+        "context": "Ana’s phone was flat, but nobody knows when it ran out",
+        "prompt": "Which conclusion is appropriately cautious?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It must have run out before she left"
+          },
+          {
+            "id": "b",
+            "text": "It might have run out during the journey"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The known flat battery doesn’t establish the time"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The known flat battery doesn’t establish the time"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "It must have happened before she left"
+          },
+          {
+            "id": "b",
+            "text": "It might have happened on the journey"
+          }
+        ]
+      },
+      {
+        "id": "course-b2-04-q02",
+        "context": "The tracking record confirms the parcel arrived yesterday",
+        "prompt": "Which deduction conflicts with that evidence?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It can’t have arrived yet"
+          },
+          {
+            "id": "b",
+            "text": "It must have arrived by now"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The confirmed delivery rules out saying it cannot have arrived"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The confirmed delivery rules out saying it cannot have arrived"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q03",
+        "context": "Kim can’t find her keys. She remembers using them to enter the flat",
+        "prompt": "Which possibility remains open?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She may have left them somewhere inside"
+          },
+          {
+            "id": "b",
+            "text": "She can’t have brought them into the flat"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "She used them to enter, so they were brought inside"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "She used them to enter, so they were brought inside"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q04",
+        "context": "Leo says, “They must have taken the earlier train”",
+        "prompt": "What is he presenting?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A confirmed instruction for the future"
+          },
+          {
+            "id": "b",
+            "text": "A confident deduction about the past"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Must have signals a strong past deduction, not proof by itself"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Must have signals a strong past deduction, not proof by itself"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q05",
+        "context": "The witness says she saw the car, but the photo is too unclear to identify it",
+        "prompt": "Which report preserves the uncertainty?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It could have been Ana’s car, but we can’t confirm that"
+          },
+          {
+            "id": "b",
+            "text": "It must have been Ana’s car because a car is visible"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An unclear image cannot establish which car it was"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An unclear image cannot establish which car it was"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q06",
+        "context": "You have direct confirmation that Kim was abroad all week",
+        "prompt": "Which deduction fits an alleged local meeting on Tuesday?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She must have attended it in person"
+          },
+          {
+            "id": "b",
+            "text": "She can’t have attended it in person"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Being abroad rules out physical attendance at that local meeting"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Being abroad rules out physical attendance at that local meeting"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-04-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-04.shadowing.01",
+        "displayText": "Someone must have been here. The plant has been moved",
+        "translation": "Alguém deve ter estado aqui. Mudaram a planta de lugar",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.02",
+        "displayText": "Maybe, but let’s check the record before deciding who it was",
+        "translation": "Talvez, mas vamos conferir o registro antes de decidir quem foi",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.03",
+        "displayText": "A spare key was used at five. There’s also a receipt from five twenty",
+        "translation": "Usaram uma chave reserva às cinco. Também tem um recibo das cinco e vinte",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.04",
+        "displayText": "That suggests a visit, but the receipt might have been left by someone else earlier",
+        "translation": "Isso sugere uma visita, mas o recibo pode ter sido deixado antes por outra pessoa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.05",
+        "displayText": "Could someone have come through the window?",
+        "translation": "Alguém poderia ter entrado pela janela?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.06",
+        "displayText": "It’s closed now. That doesn’t prove it was closed the whole afternoon",
+        "translation": "Ela está fechada agora. Isso não prova que ficou fechada a tarde inteira",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.07",
+        "displayText": "Good point. We shouldn’t treat a current state as a complete history",
+        "translation": "Bem lembrado. Não devemos tratar o estado atual como toda a história",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.08",
+        "displayText": "Who had permission to use the key?",
+        "translation": "Quem tinha autorização para usar a chave?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.09",
+        "displayText": "The neighbour was going to water the plants, but I don’t know whether she came",
+        "translation": "A vizinha ia regar as plantas, mas não sei se veio",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.10",
+        "displayText": "Then I’d ask her first. The camera record could be another check if needed",
+        "translation": "Então eu perguntaria primeiro a ela. O registro da câmera seria outra verificação, se necessário",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-04.shadowing.11",
+        "displayText": "So our strongest explanation is a permitted visit, not a confirmed identity yet",
+        "translation": "Então a explicação mais forte é uma visita autorizada, mas sem identidade confirmada",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-04.shadowing.12",
+        "displayText": "Exactly. We can update that conclusion when we have more than a clue",
+        "translation": "Exatamente. Podemos atualizar a conclusão quando tivermos mais do que uma pista",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

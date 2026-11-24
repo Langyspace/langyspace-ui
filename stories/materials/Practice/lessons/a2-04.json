@@ -1,0 +1,248 @@
+{
+  "key": "a2-04",
+  "code": "A2.04",
+  "title": "Are you doing anything on Saturday?",
+  "first": {
+    "id": "course-practice-a2-04-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-04-q01",
+        "context": "Evelyn has arranged to meet Owen at the entrance at half past one",
+        "prompt": "Which sentence describes the arrangement?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She’s meeting Owen at half past one"
+          },
+          {
+            "id": "b",
+            "text": "She meets Owen there every day"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The agreed time describes a future arrangement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The agreed time describes a future arrangement"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "An agreed meeting at 1:30"
+          },
+          {
+            "id": "b",
+            "text": "Their daily meeting"
+          }
+        ]
+      },
+      {
+        "id": "course-a2-04-q02",
+        "context": "Owen has decided to get lunch at the festival, but hasn’t chosen a café",
+        "prompt": "Which sentence describes his plan?",
+        "options": [
+          {
+            "id": "a",
+            "text": "He’s having a booked lunch at Café Blue"
+          },
+          {
+            "id": "b",
+            "text": "He’s going to get lunch there"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "He has a plan, but no café booking is stated"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "He has a plan, but no café booking is stated"
+          }
+        }
+      },
+      {
+        "id": "course-a2-04-q03",
+        "context": "Evelyn asks, “Are you doing anything on Saturday?”",
+        "prompt": "What does she want to know?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What Owen is doing at this moment"
+          },
+          {
+            "id": "b",
+            "text": "Whether Owen has plans"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Saturday makes this a question about future plans"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Saturday makes this a question about future plans"
+          }
+        }
+      },
+      {
+        "id": "course-a2-04-q04",
+        "context": "Owen is meeting a friend in the morning and Evelyn in the afternoon",
+        "prompt": "When is he free to join Evelyn?",
+        "options": [
+          {
+            "id": "a",
+            "text": "In the afternoon"
+          },
+          {
+            "id": "b",
+            "text": "During his morning meeting"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The two arrangements happen at different times"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The two arrangements happen at different times"
+          }
+        }
+      },
+      {
+        "id": "course-a2-04-q05",
+        "context": "You agree to meet at 1:30, but your friend writes 2:00",
+        "prompt": "What should you say?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, we always meet at two"
+          },
+          {
+            "id": "b",
+            "text": "Just to check, are we meeting at half past one?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Check the agreed time instead of accepting a different one"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Check the agreed time instead of accepting a different one"
+          }
+        }
+      },
+      {
+        "id": "course-a2-04-q06",
+        "context": "You have a general intention to visit the festival",
+        "prompt": "Which question helps make it an arrangement?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What time shall we meet?"
+          },
+          {
+            "id": "b",
+            "text": "Do you like festivals in general?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A time helps turn the plan into an arrangement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A time helps turn the plan into an arrangement"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-04-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-04.shadowing.01",
+        "displayText": "Are you doing anything on Saturday?",
+        "translation": "Você tem algum plano para sábado?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.02",
+        "displayText": "I’m meeting a friend in the morning",
+        "translation": "Vou encontrar um amigo amanhã de manhã",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.03",
+        "displayText": "I’m going to visit the food festival. Want to come?",
+        "translation": "Vou visitar o festival gastronômico. Quer vir?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.04",
+        "displayText": "That sounds good. What time are you going?",
+        "translation": "Parece ótimo. A que horas você vai?",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.05",
+        "displayText": "Around two. We can meet by the entrance",
+        "translation": "Por volta das duas. Podemos nos encontrar na entrada",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.06",
+        "displayText": "Great. I’m going to get lunch there",
+        "translation": "Ótimo. Vou almoçar lá",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "a2-04.shadowing.07",
+        "displayText": "Me too. Shall we meet at half past one?",
+        "translation": "Eu também. Podemos nos encontrar à uma e meia?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "a2-04.shadowing.08",
+        "displayText": "Yes. Half past one is perfect",
+        "translation": "Sim. Uma e meia é perfeito",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

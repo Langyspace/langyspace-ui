@@ -1,0 +1,272 @@
+{
+  "key": "c1-02",
+  "code": "C1.02",
+  "title": "Had we known…",
+  "first": {
+    "id": "course-practice-c1-02-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-02-q01",
+        "context": "A supplier delivered late, but the team had kept a backup. Ana says, “Had we relied on that delivery alone, we would have missed the launch”",
+        "prompt": "What does her counterfactual establish?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The launch was actually missed because the delivery was late"
+          },
+          {
+            "id": "b",
+            "text": "A missed launch is presented as the consequence of an unreal past condition"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Had we relied describes an alternative past, not what happened"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Had we relied describes an alternative past, not what happened"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "A launch that was actually missed"
+          },
+          {
+            "id": "b",
+            "text": "An unreal condition and its result"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-02-q02",
+        "context": "The backup was available. Kim says, “Without it, we might have had to postpone”",
+        "prompt": "How does might affect the claim?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It leaves postponement possible rather than certain in that alternative situation"
+          },
+          {
+            "id": "b",
+            "text": "It confirms that postponement definitely occurred"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Might have keeps the counterfactual result tentative"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Might have keeps the counterfactual result tentative"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q03",
+        "context": "Ana says, “Were the supplier to withdraw now, we’d need another partner”",
+        "prompt": "What time frame is being considered?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A hypothetical future withdrawal"
+          },
+          {
+            "id": "b",
+            "text": "A confirmed withdrawal in the past"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Were to introduces a hypothetical possibility"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Were to introduces a hypothetical possibility"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q04",
+        "context": "“Should the delivery be delayed again, contact me directly”",
+        "prompt": "Which paraphrase preserves the instruction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Because it has definitely been delayed again, contact me directly"
+          },
+          {
+            "id": "b",
+            "text": "If it is delayed again, contact me directly"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Should introduces a possible condition, not confirmation that it holds"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Should introduces a possible condition, not confirmation that it holds"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q05",
+        "context": "The team had no backup. The shipment was late, but they still launched on time",
+        "prompt": "Which conclusion is supported?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The delay alone did not prevent this launch"
+          },
+          {
+            "id": "b",
+            "text": "Having no backup always makes delays harmless"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A single outcome cannot establish a universal rule"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A single outcome cannot establish a universal rule"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q06",
+        "context": "You want to acknowledge a vulnerability without pretending the outcome was inevitable",
+        "prompt": "Which wording is more precise?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Had the delay lasted longer, disaster was guaranteed in every case"
+          },
+          {
+            "id": "b",
+            "text": "Had the delay lasted longer, we could have faced a serious problem"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Could have expresses a risk without overstating certainty"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Could have expresses a risk without overstating certainty"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-02-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-02.shadowing.01",
+        "displayText": "Looking back, what was the first warning sign?",
+        "translation": "Olhando para trás, qual foi o primeiro sinal de alerta?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.02",
+        "displayText": "The delivery dates kept moving, but we assumed the supplier would catch up",
+        "translation": "As datas de entrega continuavam sendo alteradas, mas presumimos que o fornecedor conseguiria cumprir o prazo",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.03",
+        "displayText": "Had we checked their capacity earlier, we might have chosen a different partner",
+        "translation": "Se tivéssemos verificado a capacidade deles antes, talvez tivéssemos escolhido um parceiro diferente",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.04",
+        "displayText": "Perhaps, though I’m not sure that would have prevented every delay",
+        "translation": "Talvez, embora eu não tenha certeza se isso teria evitado todos os atrasos",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.05",
+        "displayText": "No. We also had no realistic contingency plan",
+        "translation": "Não. Nós também não tínhamos um plano de contingência realista",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.06",
+        "displayText": "That was the more serious oversight, in my view",
+        "translation": "Na minha opinião, essa foi a falha mais grave",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.07",
+        "displayText": "Would you call it the root cause?",
+        "translation": "Você diria que é a causa raiz?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.08",
+        "displayText": "One of them. The other was that no one owned the final decision",
+        "translation": "Uma delas. A outra era que ninguém detinha a responsabilidade pela decisão final",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.09",
+        "displayText": "So the lesson isn’t simply to choose a better supplier",
+        "translation": "Portanto, a lição não é simplesmente escolher um fornecedor melhor",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.10",
+        "displayText": "Exactly. We need clearer responsibility and an alternative we can actually use",
+        "translation": "Exatamente. Precisamos de responsabilidades mais claras e de uma alternativa que possamos realmente usar",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "c1-02.shadowing.11",
+        "displayText": "Had I realised how much depended on that one delivery, I would have raised it sooner",
+        "translation": "Se eu tivesse percebido o quanto dependia daquela única entrega, teria levantado a questão mais cedo",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "c1-02.shadowing.12",
+        "displayText": "Then let’s make that dependency visible next time",
+        "translation": "Então, vamos tornar essa dependência visível na próxima vez",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

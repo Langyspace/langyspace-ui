@@ -53,3 +53,9 @@ export const Emoji = styled.div.withConfig({
   filter: drop-shadow(0 6px 10px ${alpha(theme.colors.palette.black, 0.08)});
   line-height: 1;
 `
+
+export const Picture = styled.div`
+  width: 100%;
+  min-width: 0;
+  align-self: center;
+`

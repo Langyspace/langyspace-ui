@@ -1,0 +1,272 @@
+{
+  "key": "c1-09",
+  "code": "C1.09",
+  "title": "It’s bound to get worse",
+  "first": {
+    "id": "course-practice-c1-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-09-q01",
+        "context": "The team has completed every required check, but the release still awaits external approval",
+        "prompt": "Which update calibrates confidence?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Approval is guaranteed because our internal checks passed"
+          },
+          {
+            "id": "b",
+            "text": "We expect approval, but it hasn’t been granted yet"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Internal readiness does not guarantee an external decision"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Internal readiness does not guarantee an external decision"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Approval guaranteed"
+          },
+          {
+            "id": "b",
+            "text": "Approval expected, not yet granted"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-09-q02",
+        "context": "Ana says, “There’s a fair chance the deadline will move”",
+        "prompt": "How strong is the prediction?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A meaningful possibility, short of certainty"
+          },
+          {
+            "id": "b",
+            "text": "An assertion that the change is inevitable"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A fair chance signals possibility rather than inevitability"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A fair chance signals possibility rather than inevitability"
+          }
+        }
+      },
+      {
+        "id": "course-c1-09-q03",
+        "context": "The only confirmed fact is that one interview was cancelled",
+        "prompt": "Which conclusion avoids overreach?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The schedule may need adjusting"
+          },
+          {
+            "id": "b",
+            "text": "The whole recruitment process is bound to fail"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "One cancellation does not establish failure of the whole process"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "One cancellation does not establish failure of the whole process"
+          }
+        }
+      },
+      {
+        "id": "course-c1-09-q04",
+        "context": "Kim says, “They’re bound to ask about the cost”",
+        "prompt": "What does bound to communicate?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She is describing an event already confirmed to have happened"
+          },
+          {
+            "id": "b",
+            "text": "She is expressing strong confidence in that expectation"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Bound to is a strong prediction, not a record of a past event"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Bound to is a strong prediction, not a record of a past event"
+          }
+        }
+      },
+      {
+        "id": "course-c1-09-q05",
+        "context": "New evidence makes a delay less likely, but does not rule it out",
+        "prompt": "Which revision reflects that?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A delay now seems less likely, although it remains possible"
+          },
+          {
+            "id": "b",
+            "text": "A delay has become impossible"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Less likely does not mean impossible"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Less likely does not mean impossible"
+          }
+        }
+      },
+      {
+        "id": "course-c1-09-q06",
+        "context": "A manager wants an update that distinguishes forecast from commitment",
+        "prompt": "Which wording does that?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Friday is both an estimate and an unconditional guarantee"
+          },
+          {
+            "id": "b",
+            "text": "Our current estimate is Friday; we’ll confirm once the review is complete"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A conditional estimate makes the remaining uncertainty explicit"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A conditional estimate makes the remaining uncertainty explicit"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-09.shadowing.01",
+        "displayText": "Demand has risen for three months. It’s bound to get worse, isn’t it?",
+        "translation": "A demanda subiu por três meses. Com certeza vai piorar, não vai?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.02",
+        "displayText": "The figures suggest growth, but “bound to” is stronger than these three observations justify",
+        "translation": "Os números sugerem crescimento, mas “com certeza” é mais forte do que essas três observações justificam",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.03",
+        "displayText": "What would be a more defensible claim?",
+        "translation": "Qual afirmação seria mais defensável?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.04",
+        "displayText": "Demand is likely to rise if the same conditions continue. We should state that condition",
+        "translation": "É provável que a demanda suba se as mesmas condições continuarem. Devemos explicitar essa condição",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.05",
+        "displayText": "The proposal says extra transport is set to start next month",
+        "translation": "A proposta diz que o transporte extra deve começar no próximo mês",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.06",
+        "displayText": "Is that a confirmed service plan, or just an assumption in the projection?",
+        "translation": "É um plano de serviço confirmado ou só uma premissa da projeção?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.07",
+        "displayText": "The plan is confirmed, but the capacity estimate assumes it covers the period of highest demand",
+        "translation": "O plano está confirmado, mas a estimativa de capacidade presume que cobre o período de maior demanda",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.08",
+        "displayText": "Then timing matters as much as the headline number",
+        "translation": "Então o horário importa tanto quanto o número principal",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.09",
+        "displayText": "We were going to recommend no further action because the extra service looked sufficient",
+        "translation": "Íamos recomendar não fazer mais nada porque o serviço extra parecia suficiente",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.10",
+        "displayText": "I’d qualify that until we check the coverage. More total capacity may still leave a local gap",
+        "translation": "Eu colocaria uma ressalva até conferirmos a cobertura. Mais capacidade total ainda pode deixar uma lacuna específica",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-09.shadowing.11",
+        "displayText": "Would monitoring the next month be too passive?",
+        "translation": "Monitorar o próximo mês seria passivo demais?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-09.shadowing.12",
+        "displayText": "Not if we also check the affected time slot and define when we’ll change the plan",
+        "translation": "Não se também conferirmos o horário afetado e definirmos quando mudaremos o plano",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

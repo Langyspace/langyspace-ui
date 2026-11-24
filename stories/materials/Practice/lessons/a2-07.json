@@ -1,0 +1,248 @@
+{
+  "key": "a2-07",
+  "code": "A2.07",
+  "title": "House rules",
+  "first": {
+    "id": "course-practice-a2-07-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-07-q01",
+        "context": "The house rules say, “No smoking indoors”",
+        "prompt": "Which sentence has the same meaning?",
+        "options": [
+          {
+            "id": "a",
+            "text": "You don’t have to smoke indoors"
+          },
+          {
+            "id": "b",
+            "text": "You mustn’t smoke indoors"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Mustn’t expresses a prohibition"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Mustn’t expresses a prohibition"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Smoking indoors is optional"
+          },
+          {
+            "id": "b",
+            "text": "Smoking indoors is forbidden"
+          }
+        ]
+      },
+      {
+        "id": "course-a2-07-q02",
+        "context": "Breakfast is optional and included in the price",
+        "prompt": "Which sentence matches?",
+        "options": [
+          {
+            "id": "a",
+            "text": "You don’t have to have breakfast here"
+          },
+          {
+            "id": "b",
+            "text": "You mustn’t have breakfast here"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Don’t have to means it isn’t necessary"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Don’t have to means it isn’t necessary"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q03",
+        "context": "Guests must return the key before leaving",
+        "prompt": "What is required?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Giving the key back"
+          },
+          {
+            "id": "b",
+            "text": "Keeping the key as a souvenir"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Must expresses an obligation"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Must expresses an obligation"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q04",
+        "context": "You can use the kitchen, but you must clean it afterwards",
+        "prompt": "What should you check?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether cleaning is optional"
+          },
+          {
+            "id": "b",
+            "text": "Where the cleaning things are"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Using the kitchen includes a cleaning requirement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Using the kitchen includes a cleaning requirement"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q05",
+        "context": "The sign says, “Quiet after ten”",
+        "prompt": "Which response follows the rule?",
+        "options": [
+          {
+            "id": "a",
+            "text": "We’ll turn the music down at ten"
+          },
+          {
+            "id": "b",
+            "text": "We don’t have to stop being loud"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The rule asks guests to keep the noise down"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The rule asks guests to keep the noise down"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q06",
+        "context": "You don’t know if you can invite a friend",
+        "prompt": "What do you ask?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What time does my friend work?"
+          },
+          {
+            "id": "b",
+            "text": "Are guests allowed to bring a friend?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Ask about the house rule directly"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Ask about the house rule directly"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-07-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-07.shadowing.01",
+        "displayText": "I’m new here. Do I have to book the grill?",
+        "translation": "Sou nova aqui. Preciso reservar a churrasqueira?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.02",
+        "displayText": "Yes, you have to book it at reception. It’s free",
+        "translation": "Sim, você precisa reservar na recepção. É grátis",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.03",
+        "displayText": "Can we use the pool after dinner?",
+        "translation": "Podemos usar a piscina depois do jantar?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.04",
+        "displayText": "Until eight. You mustn’t use it after that",
+        "translation": "Até as oito. Não se pode usar depois disso",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.05",
+        "displayText": "All right. Do I have to bring my own chairs?",
+        "translation": "Tudo bem. Preciso levar minhas próprias cadeiras?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.06",
+        "displayText": "No, you don’t have to. There are six chairs by the grill",
+        "translation": "Não precisa. Tem seis cadeiras perto da churrasqueira",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-07.shadowing.07",
+        "displayText": "Great. One more thing: can I take my bike in the lift?",
+        "translation": "Ótimo. Mais uma coisa: posso levar a bicicleta no elevador?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-07.shadowing.08",
+        "displayText": "Sorry, you can’t. Please leave it in the garage",
+        "translation": "Desculpe, não pode. Por favor, deixe-a na garagem",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

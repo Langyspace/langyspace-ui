@@ -1,0 +1,170 @@
+{
+  "key": "a1-02",
+  "code": "A1.02",
+  "title": "Your name and number",
+  "first": {
+    "id": "course-practice-a1-02-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-02-zero",
+        "word": "zero",
+        "translation": "zero",
+        "example": "There’s a zero in this phone number",
+        "exampleTranslation": "Há um zero neste número de telefone",
+        "visualLabel": "0",
+        "audioId": "course-a1-02-zero.front",
+        "backAudioId": "course-a1-02-zero.back"
+      },
+      {
+        "id": "course-a1-02-one",
+        "word": "one",
+        "translation": "um",
+        "example": "I have one phone",
+        "exampleTranslation": "Eu tenho um telefone",
+        "visualLabel": "1",
+        "audioId": "course-a1-02-one.front",
+        "backAudioId": "course-a1-02-one.back"
+      },
+      {
+        "id": "course-a1-02-two",
+        "word": "two",
+        "translation": "dois",
+        "example": "Please repeat the last two numbers",
+        "exampleTranslation": "Por favor, repita os dois últimos números",
+        "visualLabel": "2",
+        "audioId": "course-a1-02-two.front",
+        "backAudioId": "course-a1-02-two.back"
+      },
+      {
+        "id": "course-a1-02-three",
+        "word": "three",
+        "translation": "três",
+        "example": "Can you repeat the first three numbers?",
+        "exampleTranslation": "Você pode repetir os três primeiros números?",
+        "visualLabel": "3",
+        "audioId": "course-a1-02-three.front",
+        "backAudioId": "course-a1-02-three.back"
+      },
+      {
+        "id": "course-a1-02-four",
+        "word": "four",
+        "translation": "quatro",
+        "example": "The last number is four",
+        "exampleTranslation": "O último número é quatro",
+        "visualLabel": "4",
+        "audioId": "course-a1-02-four.front",
+        "backAudioId": "course-a1-02-four.back"
+      },
+      {
+        "id": "course-a1-02-five",
+        "word": "five",
+        "translation": "cinco",
+        "example": "The code has five numbers",
+        "exampleTranslation": "O código tem cinco números",
+        "visualLabel": "5",
+        "audioId": "course-a1-02-five.front",
+        "backAudioId": "course-a1-02-five.back"
+      },
+      {
+        "id": "course-a1-02-six",
+        "word": "six",
+        "translation": "seis",
+        "example": "Is the next number six?",
+        "exampleTranslation": "O próximo número é o seis?",
+        "visualLabel": "6",
+        "audioId": "course-a1-02-six.front",
+        "backAudioId": "course-a1-02-six.back"
+      },
+      {
+        "id": "course-a1-02-seven",
+        "word": "seven",
+        "translation": "sete",
+        "example": "Please say seven again",
+        "exampleTranslation": "Por favor, repita sete",
+        "visualLabel": "7",
+        "audioId": "course-a1-02-seven.front",
+        "backAudioId": "course-a1-02-seven.back"
+      },
+      {
+        "id": "course-a1-02-eight",
+        "word": "eight",
+        "translation": "oito",
+        "example": "Did you say eight or nine?",
+        "exampleTranslation": "Você disse oito ou nove?",
+        "visualLabel": "8",
+        "audioId": "course-a1-02-eight.front",
+        "backAudioId": "course-a1-02-eight.back"
+      },
+      {
+        "id": "course-a1-02-nine",
+        "word": "nine",
+        "translation": "nove",
+        "example": "The number after eight is nine",
+        "exampleTranslation": "O número depois do oito é o nove",
+        "visualLabel": "9",
+        "audioId": "course-a1-02-nine.front",
+        "backAudioId": "course-a1-02-nine.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-02-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-02.shadowing.01",
+        "displayText": "Hi, Ana! What’s your last name?",
+        "translation": "Olá, Ana! Qual é o seu sobrenome?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-02.shadowing.02",
+        "displayText": "My last name is Souza",
+        "translation": "Meu sobrenome é Souza",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-02.shadowing.03",
+        "displayText": "How do you spell it?",
+        "translation": "Como se soletra isso?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-02.shadowing.04",
+        "displayText": "S-O-U-Z-A",
+        "translation": "S-O-U-Z-A",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-02.shadowing.05",
+        "displayText": "What’s your phone number?",
+        "translation": "Qual é o seu número de telefone?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-02.shadowing.06",
+        "displayText": "It’s 984 221 507",
+        "translation": "É 984 221 507",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

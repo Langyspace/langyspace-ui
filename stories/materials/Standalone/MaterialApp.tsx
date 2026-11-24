@@ -2,6 +2,7 @@ import { MaterialLearnerProvider } from '../shared/MaterialLearnerContext'
 import { MaterialTeacherProvider } from '../shared/MaterialTeacherContext'
 import { NotesHostProvider } from '../shared/NotesHostContext'
 import { MaterialTheme } from '../shared/MaterialTheme'
+import { MaterialPracticeOrigin } from '../shared/MaterialPracticeContext'
 import { Suspense, useEffect } from 'react'
 import { MaterialView } from './MaterialViews'
 import type { MaterialViewProps, MaterialReadyProps } from './MaterialApp.types'
@@ -68,10 +69,12 @@ export function MaterialApp({
               key={materialKey}
               materialKey={materialKey}
             >
-              <MaterialView
-                materialKey={materialKey}
-                studentPortalOrigin={studentPortalOrigin}
-              />
+              <MaterialPracticeOrigin value={studentPortalOrigin}>
+                <MaterialView
+                  materialKey={materialKey}
+                  studentPortalOrigin={studentPortalOrigin}
+                />
+              </MaterialPracticeOrigin>
             </MaterialLearnerProvider>
           </MaterialTeacherProvider>
         </NotesHostProvider>

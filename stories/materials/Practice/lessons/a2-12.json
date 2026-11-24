@@ -1,0 +1,248 @@
+{
+  "key": "a2-12",
+  "code": "A2.12",
+  "title": "How about Friday?",
+  "first": {
+    "id": "course-practice-a2-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-12-q01",
+        "context": "Niamh suggests Friday dinner. Cian is working until eight",
+        "prompt": "What’s a useful reply?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Yes, Friday is fine at seven"
+          },
+          {
+            "id": "b",
+            "text": "I’d love to, but I’m working late. How about Saturday?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Explain the conflict and suggest another day"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Explain the conflict and suggest another day"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Accept Friday at seven"
+          },
+          {
+            "id": "b",
+            "text": "Suggest Saturday instead"
+          }
+        ]
+      },
+      {
+        "id": "course-a2-12-q02",
+        "context": "They agree on Saturday, but seven is too early for Cian",
+        "prompt": "What can he suggest?",
+        "options": [
+          {
+            "id": "a",
+            "text": "How about half past seven?"
+          },
+          {
+            "id": "b",
+            "text": "Let’s meet on Friday at seven"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Change the time without losing the agreed day"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Change the time without losing the agreed day"
+          }
+        }
+      },
+      {
+        "id": "course-a2-12-q03",
+        "context": "You can’t make the suggested time",
+        "prompt": "Which reply keeps the conversation going?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sorry, I can’t do six. Would seven work?"
+          },
+          {
+            "id": "b",
+            "text": "No"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Offer a possible alternative"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Offer a possible alternative"
+          }
+        }
+      },
+      {
+        "id": "course-a2-12-q04",
+        "context": "Your friend says, “Why don’t we try the new Italian place?”",
+        "prompt": "What are they doing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Giving a house rule"
+          },
+          {
+            "id": "b",
+            "text": "Making a suggestion"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Why don’t we introduces a suggestion"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Why don’t we introduces a suggestion"
+          }
+        }
+      },
+      {
+        "id": "course-a2-12-q05",
+        "context": "Niamh offers to book the table. Cian will send the address",
+        "prompt": "Who is booking?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Niamh"
+          },
+          {
+            "id": "b",
+            "text": "Cian"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "They have different jobs in the plan"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "They have different jobs in the plan"
+          }
+        }
+      },
+      {
+        "id": "course-a2-12-q06",
+        "context": "You have agreed on Saturday at 7:30",
+        "prompt": "What should you confirm?",
+        "options": [
+          {
+            "id": "a",
+            "text": "So, sometime this week, right?"
+          },
+          {
+            "id": "b",
+            "text": "So, Saturday at half past seven, right?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Confirm the exact day and time"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Confirm the exact day and time"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-12.shadowing.01",
+        "displayText": "Would you like to have dinner on Friday?",
+        "translation": "Você gostaria de jantar comigo na sexta-feira?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.02",
+        "displayText": "I’d love to, but I’m working until eight",
+        "translation": "Adoraria, mas estou trabalhando até às oito",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.03",
+        "displayText": "How about Saturday, then?",
+        "translation": "Que tal sábado, então?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.04",
+        "displayText": "Saturday works. Why don’t we try the new Italian place?",
+        "translation": "Sábado é uma boa opção. Que tal experimentarmos aquele restaurante italiano novo?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.05",
+        "displayText": "Good idea. Shall we book a table for seven?",
+        "translation": "Boa ideia. Vamos reservar uma mesa para sete?",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.06",
+        "displayText": "Seven is a bit early. How about half past seven?",
+        "translation": "Sete horas é um pouco cedo. Que tal sete e meia?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a2-12.shadowing.07",
+        "displayText": "Perfect. I can book it this afternoon",
+        "translation": "Perfeito. Posso reservar esta tarde",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a2-12.shadowing.08",
+        "displayText": "Thanks. I’ll send you the address",
+        "translation": "Obrigado. Vou te enviar o endereço",
+        "speakerId": "cian-walsh"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "niamh-murphy",
+        "name": "Niamh",
+        "avatarUrl": "/flashcards/course-characters/niamh-murphy/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      },
+      {
+        "id": "cian-walsh",
+        "name": "Cian",
+        "avatarUrl": "/flashcards/course-characters/cian-walsh/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

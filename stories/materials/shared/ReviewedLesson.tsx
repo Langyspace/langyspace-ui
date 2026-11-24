@@ -3,7 +3,12 @@ import {
   withLessonOpeningPageIds,
   hasLessonOpeningReview,
 } from './lessonOpeningPolicy'
-import { LessonOpening, LessonPracticePlan } from './LessonBookends'
+import {
+  LessonOpening,
+  LessonPracticePlan,
+  LessonPracticeClosing,
+} from './LessonBookends'
+import { hasLessonPractice } from './LessonPractice'
 import { KeyValueList } from '../../../src/components/Details/KeyValueList'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
 import {
@@ -531,6 +536,18 @@ export function ReviewedLesson({
                   ? page.lines.map(recordingLine)
                   : page.titleAudio
               const playing = lines?.some((x) => x.id === speech.playingId)
+              if (page.kind === 'homework' && hasLessonPractice(materialKey)) {
+                return {
+                  id: page.id,
+                  label: 'Your practice before the next class',
+                  content: (
+                    <LessonPracticeClosing
+                      materialKey={materialKey}
+                      active={pageId === page.id}
+                    />
+                  ),
+                }
+              }
               return {
                 id: page.id,
                 label: `${page.eyebrow} · ${page.title}`,

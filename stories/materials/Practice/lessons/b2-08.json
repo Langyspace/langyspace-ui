@@ -1,0 +1,272 @@
+{
+  "key": "b2-08",
+  "code": "B2.08",
+  "title": "The apartment, which has a balcony",
+  "first": {
+    "id": "course-practice-b2-08-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b2-08-q01",
+        "context": "The team has two designers. The one who joined in May handles this client",
+        "prompt": "What does who joined in May do?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It identifies which designer is meant"
+          },
+          {
+            "id": "b",
+            "text": "It gives optional information about the only designer"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The clause distinguishes one designer from another"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The clause distinguishes one designer from another"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "It identifies which designer"
+          },
+          {
+            "id": "b",
+            "text": "It adds optional background"
+          }
+        ]
+      },
+      {
+        "id": "course-b2-08-q02",
+        "context": "There is one project manager: Ana. The update says, “Ana, who leads the project, will call”",
+        "prompt": "What is the relative clause doing?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Choosing Ana from several people called Ana"
+          },
+          {
+            "id": "b",
+            "text": "Adding information about an already identified person"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Ana is already identified in this context"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Ana is already identified in this context"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q03",
+        "context": "You need the file Kim sent yesterday, not the older version",
+        "prompt": "Which request identifies the right file?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Please open any file; Kim sent something yesterday"
+          },
+          {
+            "id": "b",
+            "text": "Please open the file that Kim sent yesterday"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The defining clause selects the required file"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The defining clause selects the required file"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q04",
+        "context": "The only café in the building closes at six",
+        "prompt": "Which sentence adds that extra fact naturally?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The café, which closes at six, is downstairs"
+          },
+          {
+            "id": "b",
+            "text": "The café who closes at six is downstairs"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Which refers to a thing; the commas mark added information"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Which refers to a thing; the commas mark added information"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q05",
+        "context": "Two colleagues share the surname Lee. Only one works in sales",
+        "prompt": "Which question avoids ambiguity?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do you mean Lee, who everyone already knows?"
+          },
+          {
+            "id": "b",
+            "text": "Do you mean the Lee who works in sales?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The work detail distinguishes the two people"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The work detail distinguishes the two people"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q06",
+        "context": "You write, “My laptop, which I bought last year, has stopped working”",
+        "prompt": "What is treated as extra information?",
+        "options": [
+          {
+            "id": "a",
+            "text": "When you bought the laptop"
+          },
+          {
+            "id": "b",
+            "text": "Which of several laptops must be selected"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The comma clause adds background to the identified laptop"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The comma clause adds background to the identified laptop"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b2-08-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b2-08.shadowing.01",
+        "displayText": "Which apartment would you recommend for this brief?",
+        "translation": "Qual apartamento você recomendaria para este perfil?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.02",
+        "displayText": "The person who works from home needs a usable work area, but location matters too",
+        "translation": "A pessoa que trabalha de casa precisa de espaço para trabalhar, mas a localização também importa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.03",
+        "displayText": "A is near the metro. B has more space, although it’s further away",
+        "translation": "O A é perto do metrô. O B tem mais espaço, embora fique mais longe",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.04",
+        "displayText": "And C, which has a balcony, is between them in terms of distance",
+        "translation": "E o C, que tem varanda, fica entre os dois em termos de distância",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.05",
+        "displayText": "Is the balcony essential or just attractive?",
+        "translation": "A varanda é essencial ou só atraente?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.06",
+        "displayText": "Attractive. The fixed requirements are a work area and a total budget under a thousand",
+        "translation": "Atraente. Os requisitos fixos são espaço para trabalhar e orçamento total abaixo de mil",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.07",
+        "displayText": "Do all the listings include the maintenance fee?",
+        "translation": "Todos os anúncios incluem a taxa de manutenção?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.08",
+        "displayText": "A and B state a total. C’s listing doesn’t confirm the fee",
+        "translation": "O A e o B informam um total. O anúncio do C não confirma a taxa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.09",
+        "displayText": "Then we shouldn’t compare the advertised rents as if they were the full costs",
+        "translation": "Então não devemos comparar os aluguéis anunciados como se fossem os custos totais",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.10",
+        "displayText": "Agreed. I’d arrange a viewing of A and ask C’s landlord about the missing fee",
+        "translation": "Concordo. Eu marcaria uma visita ao A e perguntaria ao proprietário do C sobre a taxa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b2-08.shadowing.11",
+        "displayText": "Would B still be an alternative if the commute were manageable?",
+        "translation": "O B continuaria sendo uma alternativa se o trajeto fosse viável?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b2-08.shadowing.12",
+        "displayText": "Yes. It offers more space, which could matter more than being right by the metro",
+        "translation": "Sim. Oferece mais espaço, o que pode importar mais do que ficar ao lado do metrô",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

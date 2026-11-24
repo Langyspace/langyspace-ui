@@ -1,0 +1,272 @@
+{
+  "key": "c1-03",
+  "code": "C1.03",
+  "title": "The company is said to be…",
+  "first": {
+    "id": "course-practice-c1-03-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-03-q01",
+        "context": "A spokesperson says the company expects to reopen on Monday; an inspection is still pending",
+        "prompt": "Which report preserves the status of the claim?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The company is expected to reopen on Monday, subject to inspection"
+          },
+          {
+            "id": "b",
+            "text": "The company has been cleared to reopen on Monday"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An expectation is not completed clearance"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An expectation is not completed clearance"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Expected, subject to inspection"
+          },
+          {
+            "id": "b",
+            "text": "Officially cleared to reopen"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-03-q02",
+        "context": "A newspaper reports that a new manager has been appointed; the organisation has not confirmed it",
+        "prompt": "Which wording keeps the source visible?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A new manager has definitely taken over, as officially confirmed"
+          },
+          {
+            "id": "b",
+            "text": "The newspaper reports that a new manager has been appointed"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Attribute an unconfirmed report instead of upgrading it to fact"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Attribute an unconfirmed report instead of upgrading it to fact"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q03",
+        "context": "“Three employees are believed to have witnessed the incident”",
+        "prompt": "What remains uncertain?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the writer is referring to a future incident"
+          },
+          {
+            "id": "b",
+            "text": "Whether those employees actually witnessed it"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Are believed to marks the report as a belief"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Are believed to marks the report as a belief"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q04",
+        "context": "The committee has publicly confirmed its decision",
+        "prompt": "Which formulation reports that without unnecessary hedging?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The committee has confirmed that the proposal was approved"
+          },
+          {
+            "id": "b",
+            "text": "It is vaguely rumoured that the committee may have met"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Confirmed evidence supports a clear attributed statement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Confirmed evidence supports a clear attributed statement"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q05",
+        "context": "An audit is being carried out, but no findings have been published",
+        "prompt": "Which update avoids inventing a result?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The review has proved that the figures are wrong"
+          },
+          {
+            "id": "b",
+            "text": "The figures are being reviewed; no conclusion has been released"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An investigation in progress does not establish its outcome"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An investigation in progress does not establish its outcome"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q06",
+        "context": "You’re writing a neutral summary of a disputed claim",
+        "prompt": "Which approach protects accuracy?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Identify who made the claim and distinguish it from verified findings"
+          },
+          {
+            "id": "b",
+            "text": "Use a passive reporting phrase to make every allegation sound settled"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Reporting structures must not erase the difference between a claim and a finding"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Reporting structures must not erase the difference between a claim and a finding"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-03-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-03.shadowing.01",
+        "displayText": "This post says the café is closing permanently. Would you share it?",
+        "translation": "Esta postagem diz que o café vai fechar definitivamente. Você compartilharia?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.02",
+        "displayText": "Not as it stands. It doesn’t identify the source of that claim",
+        "translation": "Não desse jeito. Não identifica a fonte dessa afirmação",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.03",
+        "displayText": "The café is said to be closing, then? That sounds more cautious",
+        "translation": "Então dizem que o café vai fechar? Parece mais cauteloso",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.04",
+        "displayText": "Grammatically, yes, but it still passes on the claim without telling us who said it",
+        "translation": "Gramaticalmente, sim, mas ainda repassa a alegação sem dizer quem falou",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.05",
+        "displayText": "The official notice says the dining area will close for renovation while delivery continues",
+        "translation": "O aviso oficial diz que o salão fechará para reforma enquanto as entregas continuam",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.06",
+        "displayText": "That confirms a temporary change in service, not the permanent end of the business",
+        "translation": "Isso confirma uma mudança temporária no serviço, não o fim definitivo do negócio",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.07",
+        "displayText": "Does it give a reopening date?",
+        "translation": "Informa uma data de reabertura?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.08",
+        "displayText": "Not in this excerpt. We should check rather than turn an expectation into a date",
+        "translation": "Não neste trecho. Devemos conferir em vez de transformar expectativa em data",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.09",
+        "displayText": "So I could say, according to the café’s notice, the dining area is closing for renovation",
+        "translation": "Então posso dizer: segundo o aviso do café, o salão vai fechar para reforma",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.10",
+        "displayText": "Yes, and keep the delivery detail because it changes what readers need to do",
+        "translation": "Sim, e mantenha o detalhe das entregas porque muda o que o público precisa fazer",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-03.shadowing.11",
+        "displayText": "I’d also correct the permanent-closure claim if I’d already shared it",
+        "translation": "Eu também corrigiria a alegação de fechamento definitivo se já a tivesse compartilhado",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-03.shadowing.12",
+        "displayText": "Exactly. Cautious wording doesn’t remove the responsibility to check and correct",
+        "translation": "Exatamente. Uma formulação cautelosa não elimina a responsabilidade de verificar e corrigir",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

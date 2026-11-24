@@ -9,5 +9,6 @@ export interface PictureStripItem {
   region?: PictureRegion
 }
 export interface PictureStripProps extends ComponentPropsWithRef<'section'> {
+  density?: 'regular' | 'compact'
   items: readonly PictureStripItem[]
 }

@@ -1,0 +1,248 @@
+{
+  "key": "b1-12",
+  "code": "B1.12",
+  "title": "Office or home?",
+  "first": {
+    "id": "course-practice-b1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-12-q01",
+        "context": "Kim works from home, so she misses casual conversations with colleagues",
+        "prompt": "Which reply responds to that drawback?",
+        "options": [
+          {
+            "id": "a",
+            "text": "I know what you mean. Do you ever work from a café?"
+          },
+          {
+            "id": "b",
+            "text": "You work from home, so you must prefer being alone"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A relevant follow-up explores the problem without inventing her preference"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A relevant follow-up explores the problem without inventing her preference"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Do you ever work from a café?"
+          },
+          {
+            "id": "b",
+            "text": "You must prefer being alone"
+          }
+        ]
+      },
+      {
+        "id": "course-b1-12-q02",
+        "context": "Ana likes the flexibility, although she finds it hard to switch off",
+        "prompt": "What does although signal?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A reason why flexibility is impossible"
+          },
+          {
+            "id": "b",
+            "text": "A contrast between a benefit and a difficulty"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Both the benefit and the difficulty can be true"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Both the benefit and the difficulty can be true"
+          }
+        }
+      },
+      {
+        "id": "course-b1-12-q03",
+        "context": "Leo says, “I’m still answering messages at ten at night”",
+        "prompt": "Which follow-up invites a useful explanation?",
+        "options": [
+          {
+            "id": "a",
+            "text": "So you never do any work during the day?"
+          },
+          {
+            "id": "b",
+            "text": "What makes it hard to stop checking them?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The first question explores his actual experience"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The first question explores his actual experience"
+          }
+        }
+      },
+      {
+        "id": "course-b1-12-q04",
+        "context": "Ana is trying a fixed finishing time to protect her evenings",
+        "prompt": "Which reply checks the effect?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Has that helped you switch off?"
+          },
+          {
+            "id": "b",
+            "text": "Why have you stopped working altogether?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A finishing time does not mean she has stopped working"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A finishing time does not mean she has stopped working"
+          }
+        }
+      },
+      {
+        "id": "course-b1-12-q05",
+        "context": "Kim enjoys working at home but misses seeing people",
+        "prompt": "Which summary keeps both sides?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She dislikes working at home and wants to quit"
+          },
+          {
+            "id": "b",
+            "text": "She likes the arrangement but would welcome more social contact"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Do not turn one drawback into rejection of the whole arrangement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Do not turn one drawback into rejection of the whole arrangement"
+          }
+        }
+      },
+      {
+        "id": "course-b1-12-q06",
+        "context": "Your friend has described a problem. You want to offer an idea gently",
+        "prompt": "Which opener leaves room for their choice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Have you thought about setting a time to log off?"
+          },
+          {
+            "id": "b",
+            "text": "You obviously need to work longer"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An open suggestion invites a response rather than imposing a conclusion"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An open suggestion invites a response rather than imposing a conclusion"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-12.shadowing.01",
+        "displayText": "Do you work better at home or in an office?",
+        "translation": "Você trabalha melhor em casa ou no escritório?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.02",
+        "displayText": "At home, usually, because I can concentrate without interruptions",
+        "translation": "Em casa, geralmente, porque consigo me concentrar sem interrupções",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.03",
+        "displayText": "I understand that. However, I miss the quick conversations with the team",
+        "translation": "Entendo. Porém, sinto falta das conversas rápidas com a equipe",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.04",
+        "displayText": "Me too. Although I prefer home, I wouldn’t want to work alone all week",
+        "translation": "Eu também. Embora prefira casa, não gostaria de trabalhar sozinha a semana toda",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.05",
+        "displayText": "Would a hybrid routine solve that?",
+        "translation": "Uma rotina híbrida resolveria isso?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.06",
+        "displayText": "It could, if we agree on the office days. Otherwise we might all come in separately",
+        "translation": "Poderia, se combinarmos os dias presenciais. Caso contrário, podemos ir em dias diferentes",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-12.shadowing.07",
+        "displayText": "Good point. We could have two shared team days and keep the rest flexible",
+        "translation": "Bem lembrado. Poderíamos ter dois dias de equipe e manter o restante flexível",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-12.shadowing.08",
+        "displayText": "That’s worth trying. Let’s check whether it gives us enough quiet time too",
+        "translation": "Vale tentar. Vamos conferir se também dá tempo suficiente de concentração",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

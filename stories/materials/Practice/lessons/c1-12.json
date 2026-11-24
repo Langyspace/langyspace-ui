@@ -1,0 +1,272 @@
+{
+  "key": "c1-12",
+  "code": "C1.12",
+  "title": "A world without cash",
+  "first": {
+    "id": "course-practice-c1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-12-q01",
+        "context": "In a fictional town survey, 62% of respondents prefer card payments; cash users were harder to reach",
+        "prompt": "Which interpretation is appropriately qualified?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Exactly 62% of all residents oppose cash in every situation"
+          },
+          {
+            "id": "b",
+            "text": "Card preference was common among respondents, but the sample may underrepresent cash users"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The sampling limitation restricts the population-level claim"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The sampling limitation restricts the population-level claim"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "A universal rejection of cash"
+          },
+          {
+            "id": "b",
+            "text": "A preference within a limited sample"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-12-q02",
+        "context": "A shop cites faster queues as a reason to go cashless",
+        "prompt": "Which question tests the argument?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What evidence links the payment change to shorter queues in this setting?"
+          },
+          {
+            "id": "b",
+            "text": "Can faster queues prove that every customer owns a bank card?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Assess the claimed benefit rather than treating it as proof of unrelated access"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Assess the claimed benefit rather than treating it as proof of unrelated access"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q03",
+        "context": "Zanele accepts the efficiency benefit but raises exclusion concerns",
+        "prompt": "Which reply engages with both?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The time saving matters; how would people without suitable accounts still pay?"
+          },
+          {
+            "id": "b",
+            "text": "Since it saves time, nobody can be excluded"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A benefit does not eliminate the need to address access"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A benefit does not eliminate the need to address access"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q04",
+        "context": "The proposal includes a cash option during network outages only",
+        "prompt": "Which concern remains unanswered?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Whether the shop has considered any contingency at all"
+          },
+          {
+            "id": "b",
+            "text": "How customers who routinely rely on cash would pay on normal days"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An outage contingency does not address everyday access for cash-dependent customers"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An outage contingency does not address everyday access for cash-dependent customers"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q05",
+        "context": "“Provided an accessible alternative is available, I’d support a trial”",
+        "prompt": "What is the speaker’s position?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Conditional support tied to an accessibility safeguard"
+          },
+          {
+            "id": "b",
+            "text": "Unconditional support for removing every alternative"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Provided makes the safeguard a condition of support"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Provided makes the safeguard a condition of support"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q06",
+        "context": "The pilot cuts transaction time but increases support requests",
+        "prompt": "Which conclusion reflects the mixed result?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Declare success using only the favourable measure"
+          },
+          {
+            "id": "b",
+            "text": "Assess whether the time saving outweighs the added support burden and who bears it"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A balanced evaluation considers costs, benefits and their distribution"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A balanced evaluation considers costs, benefits and their distribution"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-12.shadowing.01",
+        "displayText": "A cashless system would be convenient, but I’m not convinced convenience should settle the debate",
+        "translation": "Um sistema sem dinheiro em espécie seria conveniente, mas não estou convencido de que a conveniência deva resolver o debate",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.02",
+        "displayText": "What concerns you most?",
+        "translation": "O que mais lhe preocupa?",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.03",
+        "displayText": "Access, mainly. A system can be efficient and still exclude people",
+        "translation": "Acesso, principalmente. Um sistema pode ser eficiente e ainda assim excluir pessoas",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.04",
+        "displayText": "You mean people without reliable internet or a bank account?",
+        "translation": "Você se refere a pessoas sem internet confiável ou conta bancária?",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.05",
+        "displayText": "Exactly. And privacy matters even for people who do have access",
+        "translation": "Exatamente. E a privacidade importa mesmo para quem tem acesso",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.06",
+        "displayText": "To be fair, cash has costs too. Handling and protecting it isn’t free",
+        "translation": "Para ser justo, o dinheiro em espécie também tem custos. Manuseá-lo e protegê-lo não é gratuito",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.07",
+        "displayText": "That’s true. I’m not arguing that cash is a perfect solution",
+        "translation": "É verdade. Não estou dizendo que dinheiro em espécie seja a solução perfeita",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.08",
+        "displayText": "Then perhaps the question is how much choice people should retain",
+        "translation": "Então talvez a questão seja quanta escolha as pessoas devem manter",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.09",
+        "displayText": "That’s closer to what I mean. A fallback option could reduce the risk of exclusion",
+        "translation": "Isso se aproxima mais do que eu quero dizer. Uma opção alternativa poderia reduzir o risco de exclusão",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.10",
+        "displayText": "Although it might make the system more expensive to maintain",
+        "translation": "Embora isso possa encarecer a manutenção do sistema",
+        "speakerId": "theo-jacobs"
+      },
+      {
+        "id": "c1-12.shadowing.11",
+        "displayText": "Possibly. We’d need evidence about those costs before deciding they outweigh the benefits",
+        "translation": "Possivelmente. Precisaríamos de evidências sobre esses custos antes de concluir que eles superam os benefícios",
+        "speakerId": "zanele-dlamini"
+      },
+      {
+        "id": "c1-12.shadowing.12",
+        "displayText": "So we agree on the aim, even if we haven’t agreed on the balance",
+        "translation": "Portanto, concordamos com o objetivo, mesmo que não tenhamos concordado com o equilíbrio",
+        "speakerId": "theo-jacobs"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "zanele-dlamini",
+        "name": "Zanele",
+        "avatarUrl": "/flashcards/course-characters/zanele-dlamini/image.webp",
+        "accentCode": "en-ZA",
+        "accentLabel": "English · South Africa"
+      },
+      {
+        "id": "theo-jacobs",
+        "name": "Theo",
+        "avatarUrl": "/flashcards/course-characters/theo-jacobs/image.webp",
+        "accentCode": "en-ZA",
+        "accentLabel": "English · South Africa"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

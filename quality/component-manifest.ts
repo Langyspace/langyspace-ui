@@ -21,6 +21,37 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'PracticePair',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Practice/PracticePair.tsx',
+    runtimeMarker: 'lsui-sc-practice-pair',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Practice/PracticePair.stories.tsx',
+      title: 'Practice/PracticePair',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Practice/PracticePair.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Practice/PracticePair.types.ts',
+      documentation: {
+        path: 'docs/components/practice-pair.md',
+        anchor: 'practicepair',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-ui',
+          path: 'stories/materials/shared/LessonPractice.tsx',
+        },
+      ],
+    },
+  },
+  {
     exportName: 'MessagePhoneFrame',
     interactive: false,
     visual: true,

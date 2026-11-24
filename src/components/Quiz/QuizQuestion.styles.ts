@@ -2,6 +2,14 @@ import { css, styled } from 'styled-components'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import { theme } from '../../foundations/theme/theme'
 
+export const Context = styled.div`
+  margin-bottom: ${theme.spacing[3]};
+  font-size: ${theme.typography.fontSize.md};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.5;
+  color: inherit;
+`
+
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-quiz-question',
 })<{ $compact: boolean; $material: boolean }>`

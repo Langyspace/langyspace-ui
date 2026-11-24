@@ -194,3 +194,7 @@ dialogue, matching and reveal contracts. Lesson content stays in catalog fixture
 the official package release.
 
 `Materials/B1.01` adds the 17-screen “What have you been doing?” catalog composition, contextual scenes and progressive clue cards. Its content, speech and controlled exercise state remain outside the package. See [the B1.01 review handoff](docs/epics/b101-material/release.md). This feature requires a new approved library release before consumer adoption.
+
+### Paired practice previews
+
+`PracticePair` composes two existing `MobileFrame` devices and switches between them in narrow containers. Content, media and authenticated practice destinations stay consumer-owned. `ShadowingActivePhrase` can display the current speaker through `Avatar`; `QuizQuestion` accepts a distinct `context` slot. Existing component defaults stay unchanged. See [PracticePair](docs/components/practice-pair.md).

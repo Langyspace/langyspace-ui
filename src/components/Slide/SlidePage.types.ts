@@ -23,6 +23,10 @@ export interface SlidePageProps extends Omit<
   coverPlacement?: 'before-heading' | 'after-heading'
   /** Split introductions keep the lesson title and heading beside the exercise. Stacks on narrow screens. */
   layout?: 'stacked' | 'split'
+  /** Explicitly reserve two tracks for paired content beside an introduction. Legacy layouts keep their current ratio. */
+  splitRatio?: 'equal' | 'one-two'
+  /** A small cover keeps paired practice visible on narrow presentation screens. */
+  coverSize?: 'regular' | 'compact'
   /** Exercise span: one focused column, two for paired content, three for expanded exercises.
    * Header and exercise share this grid. Questions always select two columns.
    * Card/field counts within an exercise remain owned by that component.

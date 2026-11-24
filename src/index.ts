@@ -619,6 +619,8 @@ export type {
 } from './components/Slide/SlideDeck.types'
 export { SlidePage } from './components/Slide/SlidePage'
 export { MobileFrame } from './components/Device/MobileFrame'
+export { PracticePair } from './components/Practice/PracticePair'
+export type { PracticePairProps, PracticePairItem } from './components/Practice/PracticePair.types'
 export type { MobileFrameProps } from './components/Device/MobileFrame.types'
 export { MessagePhoneFrame } from './components/Device/MessagePhoneFrame'
 export type { MessagePhoneFrameProps } from './components/Device/MessagePhoneFrame.types'

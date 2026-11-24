@@ -1,0 +1,248 @@
+{
+  "key": "a2-03",
+  "code": "A2.03",
+  "title": "Sorry I’m late!",
+  "first": {
+    "id": "course-practice-a2-03-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-03-q01",
+        "context": "Ana was walking to the station when it started raining",
+        "prompt": "What was already happening?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She was walking"
+          },
+          {
+            "id": "b",
+            "text": "It was raining before she left"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Walking was in progress when the rain started"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Walking was in progress when the rain started"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "She was walking"
+          },
+          {
+            "id": "b",
+            "text": "It was raining before she left"
+          }
+        ]
+      },
+      {
+        "id": "course-a2-03-q02",
+        "context": "Kim dropped her keys while she was getting on the bus",
+        "prompt": "What happened during the other action?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She finished a bus journey"
+          },
+          {
+            "id": "b",
+            "text": "She dropped her keys"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Dropping the keys happened while she was getting on"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Dropping the keys happened while she was getting on"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q03",
+        "context": "You missed the call because you were driving",
+        "prompt": "Which explanation fits?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sorry, I drive every time you call"
+          },
+          {
+            "id": "b",
+            "text": "Sorry, I was driving when you called"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Was driving explains the action in progress at that time"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Was driving explains the action in progress at that time"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q04",
+        "context": "The train stopped. Ana was reading at that moment",
+        "prompt": "Which sentence joins the events?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ana was reading when the train stopped"
+          },
+          {
+            "id": "b",
+            "text": "Ana read only after the train stopped"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Her reading was already in progress"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Her reading was already in progress"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q05",
+        "context": "Ana says, “I was waiting outside when I saw Kim”",
+        "prompt": "Which question continues the story?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What time do you usually wake up?"
+          },
+          {
+            "id": "b",
+            "text": "What did Kim do next?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Ask about the next event in this story"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Ask about the next event in this story"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q06",
+        "context": "Kim was crossing the street. Her phone rang",
+        "prompt": "Which picture description matches?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Her phone rang while she was crossing"
+          },
+          {
+            "id": "b",
+            "text": "She crossed after the phone stopped ringing"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The phone rang during the crossing"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The phone rang during the crossing"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-03-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-03.shadowing.01",
+        "displayText": "You’re here! Are you all right?",
+        "translation": "Você chegou! Está tudo bem?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.02",
+        "displayText": "Yes, sorry I’m late. I was waiting for the bus when it started raining",
+        "translation": "Sim, desculpe o atraso. Eu estava esperando o ônibus quando começou a chover",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.03",
+        "displayText": "Oh no! Did you have an umbrella?",
+        "translation": "Ah, não! Você estava com guarda-chuva?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.04",
+        "displayText": "No. I went into a shop, and then I missed the bus",
+        "translation": "Não. Entrei em uma loja e depois perdi o ônibus",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.05",
+        "displayText": "What did you do after that?",
+        "translation": "O que você fez depois?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.06",
+        "displayText": "I took the next bus, but it was very slow",
+        "translation": "Peguei o ônibus seguinte, mas ele estava muito lento",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-03.shadowing.07",
+        "displayText": "Don’t worry. We can still have lunch",
+        "translation": "Não se preocupe. Ainda podemos almoçar",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-03.shadowing.08",
+        "displayText": "Thanks for waiting. Next time I’ll leave earlier!",
+        "translation": "Obrigada por esperar. Da próxima vez vou sair mais cedo!",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

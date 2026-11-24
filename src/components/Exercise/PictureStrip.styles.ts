@@ -4,11 +4,13 @@ import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-picture-strip',
-})<{ $count: number }>`
+})<{ $count: number; $compact: boolean }>`
   display: grid;
   grid-template-columns: repeat(${(p) => p.$count}, minmax(0, 1fr));
   gap: ${theme.spacing[3]};
   min-width: 0;
+  max-width: ${(p) => (p.$compact ? 'min(100%, 18cqh)' : undefined)};
+  margin-inline: ${(p) => (p.$compact ? 'auto' : undefined)};
   color: ${(p) => resolveSlideTheme(p).foreground};
   font-family: ${theme.typography.fontFamily.sans};
 `

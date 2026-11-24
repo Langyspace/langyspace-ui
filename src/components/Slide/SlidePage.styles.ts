@@ -53,12 +53,13 @@ export const Content = styled.div<{
   $layout: NonNullable<SlidePageProps['layout']>
   $cover: boolean
   $columns?: SlidePageProps['columns']
+  $splitRatio?: SlidePageProps['splitRatio']
 }>`
   display: ${(p) => (p.$layout === 'split' ? 'grid' : 'flex')};
   flex-direction: column;
   grid-template-columns: minmax(0, 1fr) minmax(
       0,
-      ${(p) => (p.$cover ? '1fr' : '1.875fr')}
+      ${(p) => (p.$splitRatio === 'one-two' ? '2fr' : p.$splitRatio === 'equal' || p.$cover ? '1fr' : '1.875fr')}
     );
   align-items: ${(p) => (p.$layout === 'split' ? 'center' : 'stretch')};
   gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
@@ -107,7 +108,11 @@ export const Lead = styled.div`
   margin-bottom: clamp(${theme.spacing[2]}, 2cqh, ${theme.spacing[5]});
 `
 
-export const Cover = styled.img<{ $afterHeading: boolean; $split: boolean }>`
+export const Cover = styled.img<{
+  $afterHeading: boolean
+  $split: boolean
+  $compact: boolean
+}>`
   display: block;
   width: 100%;
   height: auto;
@@ -115,6 +120,9 @@ export const Cover = styled.img<{ $afterHeading: boolean; $split: boolean }>`
   border-radius: ${theme.radius.xl};
   margin-top: ${(p) => (p.$afterHeading && p.$split ? theme.spacing[5] : undefined)};
   margin-bottom: ${(p) => (p.$afterHeading ? '0' : theme.spacing[5])};
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    max-height: ${(p) => (p.$compact ? '8cqh' : undefined)};
+  }
 `
 
 export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`

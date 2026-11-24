@@ -1,0 +1,236 @@
+{
+  "key": "a1-12",
+  "code": "A1.12",
+  "title": "A day trip",
+  "first": {
+    "id": "course-practice-a1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a1-12-q01",
+        "context": "It’s sunny. Niamh wants to go to the park",
+        "prompt": "Where does she want to go?",
+        "options": [
+          {
+            "id": "a",
+            "text": "To the park"
+          },
+          {
+            "id": "b",
+            "text": "To the hotel"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Niamh says let’s go to the park"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Niamh says let’s go to the park"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "To the park"
+          },
+          {
+            "id": "b",
+            "text": "To the hotel"
+          }
+        ]
+      },
+      {
+        "id": "course-a1-12-q02",
+        "context": "Niamh and Cian want to travel by train",
+        "prompt": "Which transport do they choose?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A taxi"
+          },
+          {
+            "id": "b",
+            "text": "The train"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "They choose the train"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "They choose the train"
+          }
+        }
+      },
+      {
+        "id": "course-a1-12-q03",
+        "context": "Two train tickets are six euros",
+        "prompt": "How much are two tickets?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Two euros"
+          },
+          {
+            "id": "b",
+            "text": "Six euros"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Six euros is the price for both tickets"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Six euros is the price for both tickets"
+          }
+        }
+      },
+      {
+        "id": "course-a1-12-q04",
+        "context": "Niamh has water and two sandwiches",
+        "prompt": "What can they eat?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Sandwiches"
+          },
+          {
+            "id": "b",
+            "text": "Tickets"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Sandwiches are food; tickets are for travel"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Sandwiches are food; tickets are for travel"
+          }
+        }
+      },
+      {
+        "id": "course-a1-12-q05",
+        "context": "It’s raining. The museum is indoors",
+        "prompt": "Which place keeps you out of the rain?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The open park"
+          },
+          {
+            "id": "b",
+            "text": "The museum"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Indoors means inside a building"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Indoors means inside a building"
+          }
+        }
+      },
+      {
+        "id": "course-a1-12-q06",
+        "context": "You like Cian’s idea to take the train",
+        "prompt": "What can you say?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Good idea!"
+          },
+          {
+            "id": "b",
+            "text": "What’s your last name?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Good idea accepts the suggestion"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Good idea accepts the suggestion"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-12.shadowing.01",
+        "displayText": "It’s sunny today. Let’s go to the park",
+        "translation": "Hoje está um dia ensolarado. Vamos ao parque",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.02",
+        "displayText": "Good idea. Can we take the train?",
+        "translation": "Boa ideia. Podemos ir de trem?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a1-12.shadowing.03",
+        "displayText": "Yes. Two tickets are six euros",
+        "translation": "Sim. Dois bilhetes custam seis euros",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.04",
+        "displayText": "Great. Do you have water?",
+        "translation": "Ótimo. Você tem água?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a1-12.shadowing.05",
+        "displayText": "Yes. I have water and two sandwiches",
+        "translation": "Sim. Tenho água e dois sanduíches",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.06",
+        "displayText": "Perfect. Let’s go",
+        "translation": "Perfeito. Vamos lá",
+        "speakerId": "cian-walsh"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "niamh-murphy",
+        "name": "Niamh",
+        "avatarUrl": "/flashcards/course-characters/niamh-murphy/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      },
+      {
+        "id": "cian-walsh",
+        "name": "Cian",
+        "avatarUrl": "/flashcards/course-characters/cian-walsh/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

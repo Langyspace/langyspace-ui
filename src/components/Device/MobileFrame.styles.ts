@@ -5,11 +5,11 @@ import { presentationMedia } from '../../foundations/layout/presentationMedia'
 
 export const Root = styled.section.withConfig({
   componentId: 'lsui-sc-mobile-frame',
-})`
+})<{ $compact: boolean }>`
   display: flex;
   flex-direction: column;
-  width: min(100%, 22rem, calc(74cqh * 0.7));
-  min-height: min(${presentationMedia.maximumHeight}, 74cqh);
+  width: ${(p) => (p.$compact ? 'min(100%, 18rem, calc(58cqh * 0.6))' : 'min(100%, 22rem, calc(74cqh * 0.7))')};
+  min-height: ${(p) => (p.$compact ? 'min(28rem, 58cqh)' : `min(${presentationMedia.maximumHeight}, 74cqh)`)};
   min-width: 0;
   box-sizing: border-box;
   margin-inline: auto;
@@ -40,6 +40,7 @@ export const Content = styled.div`
   display: grid;
   align-content: start;
   min-width: 0;
+  min-height: 0;
   gap: ${theme.spacing[3]};
   flex: 1;
 `

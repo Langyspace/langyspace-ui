@@ -1,0 +1,236 @@
+{
+  "key": "a2-01",
+  "code": "A2.01",
+  "title": "What are you doing?",
+  "first": {
+    "id": "course-practice-a2-01-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-01-q01",
+        "context": "Ben usually orders food, but tonight he’s making pasta",
+        "prompt": "Which sentence describes tonight?",
+        "options": [
+          {
+            "id": "a",
+            "text": "He’s cooking dinner"
+          },
+          {
+            "id": "b",
+            "text": "He usually orders food"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "He’s cooking describes the action happening tonight"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "He’s cooking describes the action happening tonight"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "He’s cooking dinner"
+          },
+          {
+            "id": "b",
+            "text": "He usually orders food"
+          }
+        ]
+      },
+      {
+        "id": "course-a2-01-q02",
+        "context": "Anna is watching a film now. She usually reads before bed",
+        "prompt": "What does she usually do before bed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She watches this film"
+          },
+          {
+            "id": "b",
+            "text": "She reads"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Usually describes her habit"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Usually describes her habit"
+          }
+        }
+      },
+      {
+        "id": "course-a2-01-q03",
+        "context": "Ben starts work at nine every weekday",
+        "prompt": "Which question asks about his routine?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What are you doing right now?"
+          },
+          {
+            "id": "b",
+            "text": "What time do you usually start work?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Usually asks about a regular habit"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Usually asks about a regular habit"
+          }
+        }
+      },
+      {
+        "id": "course-a2-01-q04",
+        "context": "Anna says, “I’m working now”",
+        "prompt": "Which question did she answer?",
+        "options": [
+          {
+            "id": "a",
+            "text": "What are you doing?"
+          },
+          {
+            "id": "b",
+            "text": "What do you do every Sunday?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "I’m working describes an action happening now"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "I’m working describes an action happening now"
+          }
+        }
+      },
+      {
+        "id": "course-a2-01-q05",
+        "context": "Kim generally eats at home. Today she’s at a restaurant",
+        "prompt": "Which sentence keeps the contrast?",
+        "options": [
+          {
+            "id": "a",
+            "text": "She eats at this restaurant every day"
+          },
+          {
+            "id": "b",
+            "text": "She usually eats at home, but today she’s eating out"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Today is different from her usual routine"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Today is different from her usual routine"
+          }
+        }
+      },
+      {
+        "id": "course-a2-01-q06",
+        "context": "Your friend is cooking now. You want to know if this is a habit",
+        "prompt": "What do you ask next?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do you cook every day?"
+          },
+          {
+            "id": "b",
+            "text": "Are you cooking right now?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Every day asks about the habit, not the current action"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Every day asks about the habit, not the current action"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-01-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-01.shadowing.01",
+        "displayText": "Hey! What are you doing?",
+        "translation": "Oi! O que você está fazendo?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.02",
+        "displayText": "I'm cooking dinner. What about you?",
+        "translation": "Estou preparando o jantar. E você?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.03",
+        "displayText": "I'm watching a movie",
+        "translation": "Estou assistindo a um filme.",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.04",
+        "displayText": "Nice! Do you usually watch movies at night?",
+        "translation": "Legal! Você costuma assistir a filmes à noite?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.05",
+        "displayText": "Yes, but I usually read before bed. Do you cook every day?",
+        "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.06",
+        "displayText": "Not really. I usually order food, but today I'm making pasta",
+        "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão.",
+        "speakerId": "ben"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna",
+        "avatarUrl": "/flashcards/course-characters/anna/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ben",
+        "name": "Ben",
+        "avatarUrl": "/flashcards/course-characters/ben/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

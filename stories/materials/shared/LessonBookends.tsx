@@ -10,6 +10,7 @@ import * as Common from '../../../src/components/InteractiveMaterial/Material.sh
 import catalog from '../Standalone/catalog.json'
 import type { LessonOpeningProps } from './LessonBookends.types'
 import { hasLessonOpeningReview } from './lessonOpeningPolicy.data'
+import { LessonPractice } from './LessonPractice'
 
 const covers = import.meta.glob('../*/assets/*cover*.webp', {
   eager: true,
@@ -121,6 +122,37 @@ export function LessonPracticePlan({
         </Common.Surface>
       ) : null}
     </MobileFrame>
+  )
+}
+
+/** Regular-course practice uses the same cover, grid and mobile frame as the rest of the library. */
+export function LessonPracticeClosing({
+  materialKey,
+  active,
+}: {
+  materialKey: string
+  active: boolean
+}) {
+  const entry = catalog.find((item) => item.key === materialKey)
+  if (!entry) throw new Error(`Missing lesson cover: ${materialKey}`)
+  const src =
+    covers['../' + entry.coverSource.replace('stories/materials/', '')]
+  if (!src) throw new Error(`Missing approved cover asset: ${materialKey}`)
+  return (
+    <SlidePage
+      title="You’ve finished today’s lesson"
+      instruction="Keep practising with these two activities before our next class"
+      eyebrow={entry.code + ' · Practice'}
+      cover={{ src, alt: `Illustration for ${entry.title}` }}
+      coverPlacement="after-heading"
+      coverSize="compact"
+      layout="split"
+      splitRatio="one-two"
+      width="expanded"
+      density="compact"
+    >
+      <LessonPractice materialKey={materialKey} active={active} />
+    </SlidePage>
   )
 }
 

@@ -1,0 +1,272 @@
+{
+  "key": "c1-06",
+  "code": "C1.06",
+  "title": "The more I think about it…",
+  "first": {
+    "id": "course-practice-c1-06-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-06-q01",
+        "context": "A fictional pilot finds shorter meetings and higher satisfaction in the same team",
+        "prompt": "Which conclusion is justified by that observation alone?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The changes coincide; causation has not been established"
+          },
+          {
+            "id": "b",
+            "text": "Shorter meetings necessarily caused the increase in satisfaction"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "An association alone cannot establish the cause"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "An association alone cannot establish the cause"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Association, without proven causation"
+          },
+          {
+            "id": "b",
+            "text": "A necessary causal relationship"
+          }
+        ]
+      },
+      {
+        "id": "course-c1-06-q02",
+        "context": "The new timetable saves commuting time but reduces overlap between teams",
+        "prompt": "What is the trade-off?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Every team benefits in exactly the same way"
+          },
+          {
+            "id": "b",
+            "text": "A benefit is gained alongside a coordination cost"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "A trade-off involves competing benefits and costs"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "A trade-off involves competing benefits and costs"
+          }
+        }
+      },
+      {
+        "id": "course-c1-06-q03",
+        "context": "“Not only did the change save time, but it also reduced travel costs”",
+        "prompt": "What does the structure emphasise?",
+        "options": [
+          {
+            "id": "a",
+            "text": "A benefit that cancels out the other"
+          },
+          {
+            "id": "b",
+            "text": "Two cumulative benefits"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Not only… but also adds emphasis to connected points"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Not only… but also adds emphasis to connected points"
+          }
+        }
+      },
+      {
+        "id": "course-c1-06-q04",
+        "context": "“The more flexible the schedule, the harder it may be to find a shared slot”",
+        "prompt": "What relationship is being proposed?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Increased flexibility may come with a coordination difficulty"
+          },
+          {
+            "id": "b",
+            "text": "Any flexibility makes shared meetings impossible"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "May leaves room for variation; it is not an absolute claim"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "May leaves room for variation; it is not an absolute claim"
+          }
+        }
+      },
+      {
+        "id": "course-c1-06-q05",
+        "context": "The pilot involved volunteers from one department",
+        "prompt": "Which caveat matters when discussing a company-wide rollout?",
+        "options": [
+          {
+            "id": "a",
+            "text": "The result must be false because volunteers took part"
+          },
+          {
+            "id": "b",
+            "text": "The participants may not represent every department"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Limited representation restricts generalisation without automatically invalidating findings"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Limited representation restricts generalisation without automatically invalidating findings"
+          }
+        }
+      },
+      {
+        "id": "course-c1-06-q06",
+        "context": "Two options have different strengths. You want to compare them fairly",
+        "prompt": "Which question helps?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Which criteria matter most, and what would we give up with each option?"
+          },
+          {
+            "id": "b",
+            "text": "Which option can we describe as perfect before choosing criteria?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Explicit criteria make the trade-offs assessable"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Explicit criteria make the trade-offs assessable"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-06-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-06.shadowing.01",
+        "displayText": "Which course seems a better fit for the person in this brief?",
+        "translation": "Qual curso parece mais adequado para a pessoa deste perfil?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.02",
+        "displayText": "A costs less and finishes sooner, but the more I consider the timetable, the more important flexibility seems",
+        "translation": "O A custa menos e termina antes, mas quanto mais considero o horário, mais importante a flexibilidade parece",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-06.shadowing.03",
+        "displayText": "Are we treating flexibility as a preference or a fixed requirement?",
+        "translation": "Estamos tratando flexibilidade como preferência ou requisito fixo?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.04",
+        "displayText": "A preference at the moment. The person can usually attend Wednesday evenings",
+        "translation": "Como preferência por enquanto. A pessoa geralmente pode ir às quartas à noite",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-06.shadowing.05",
+        "displayText": "Then B’s higher price needs a reason beyond being described as flexible",
+        "translation": "Então o preço maior do B precisa de uma razão além de ser chamado de flexível",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.06",
+        "displayText": "True. It has independent work and a Friday check-in, but we haven’t confirmed the feedback format",
+        "translation": "Verdade. Tem trabalho independente e encontro na sexta, mas não confirmamos o formato do retorno",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-06.shadowing.07",
+        "displayText": "What would make you reconsider A?",
+        "translation": "O que faria você reconsiderar o A?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.08",
+        "displayText": "A timetable change, or evidence that feedback can’t address the person’s project",
+        "translation": "Uma mudança de horário ou evidência de que o retorno não atende ao projeto da pessoa",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-06.shadowing.09",
+        "displayText": "So the lower price matters, but it isn’t the whole decision",
+        "translation": "Então o preço menor importa, mas não é toda a decisão",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.10",
+        "displayText": "Exactly. The more directly the work applies to the project, the more useful the course becomes",
+        "translation": "Exatamente. Quanto mais diretamente as tarefas se aplicam ao projeto, mais útil fica o curso",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-06.shadowing.11",
+        "displayText": "I’d recommend A provisionally, then verify the two uncertain details",
+        "translation": "Eu recomendaria o A provisoriamente e verificaria os dois detalhes incertos",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-06.shadowing.12",
+        "displayText": "And I’d say what could reverse that recommendation, so it doesn’t sound unconditional",
+        "translation": "E eu diria o que poderia mudar a recomendação para não soar incondicional",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

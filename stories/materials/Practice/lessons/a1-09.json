@@ -1,0 +1,236 @@
+{
+  "key": "a1-09",
+  "code": "A1.09",
+  "title": "Around the city",
+  "first": {
+    "id": "course-practice-a1-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "message": "Next to means beside",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "Next to means beside",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q01",
+        "options": [
+          {
+            "id": "a",
+            "text": "Next to the café"
+          },
+          {
+            "id": "b",
+            "text": "Behind the hotel"
+          }
+        ],
+        "context": "The pharmacy is next to the café",
+        "prompt": "Where is the pharmacy?",
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "Next to the café"
+          },
+          {
+            "id": "b",
+            "text": "Behind the hotel"
+          }
+        ]
+      },
+      {
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "message": "Facing the bank, the market is on your right",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "Facing the bank, the market is on your right",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q02",
+        "options": [
+          {
+            "id": "a",
+            "text": "Left"
+          },
+          {
+            "id": "b",
+            "text": "Right"
+          }
+        ],
+        "context": "Start at the hotel facing the bank. The market is on your right",
+        "prompt": "Which way is the market?"
+      },
+      {
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "message": "There is describes one place",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "There is describes one place",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q03",
+        "options": [
+          {
+            "id": "a",
+            "text": "There are two banks"
+          },
+          {
+            "id": "b",
+            "text": "There is a bank"
+          }
+        ],
+        "context": "There is one bank on Main Street",
+        "prompt": "Which sentence matches?"
+      },
+      {
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "message": "Beside and next to describe the same relationship",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "Beside and next to describe the same relationship",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q04",
+        "options": [
+          {
+            "id": "a",
+            "text": "Beside the market"
+          },
+          {
+            "id": "b",
+            "text": "Inside the hotel"
+          }
+        ],
+        "context": "The park is next to the market on the same street",
+        "prompt": "Where is the park?"
+      },
+      {
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "message": "First go straight; turn right after that",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "First go straight; turn right after that",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q05",
+        "options": [
+          {
+            "id": "a",
+            "text": "Turn right"
+          },
+          {
+            "id": "b",
+            "text": "Go straight"
+          }
+        ],
+        "context": "Go straight, then turn right at the first street",
+        "prompt": "What do you do first?"
+      },
+      {
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "message": "Ask where to find a place",
+            "title": "Exactly"
+          },
+          "wrong": {
+            "message": "Ask where to find a place",
+            "title": "Check the context"
+          }
+        },
+        "id": "course-a1-09-q06",
+        "options": [
+          {
+            "id": "a",
+            "text": "Where is the market?"
+          },
+          {
+            "id": "b",
+            "text": "What’s your name?"
+          }
+        ],
+        "context": "You need to find the market",
+        "prompt": "What can you ask?"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-09.shadowing.01",
+        "displayText": "Excuse me. Is there a café near the hotel?",
+        "translation": "Com licença. Tem um café perto do hotel?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.02",
+        "displayText": "Yes, there is. Go straight and turn right at the first street",
+        "translation": "Sim. Siga em frente e vire à direita na primeira rua",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-09.shadowing.03",
+        "displayText": "Is it next to the pharmacy?",
+        "translation": "Fica ao lado da farmácia?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.04",
+        "displayText": "Yes. The pharmacy is on the same street",
+        "translation": "Sim. A farmácia fica na mesma rua",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-09.shadowing.05",
+        "displayText": "Great. And is there a park here?",
+        "translation": "Ótimo. E tem um parque aqui?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-09.shadowing.06",
+        "displayText": "Yes. Go straight and take the second right. The park is at the end",
+        "translation": "Sim. Siga em frente e pegue a segunda à direita. O parque fica no final",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

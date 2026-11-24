@@ -1,0 +1,248 @@
+{
+  "key": "b1-07",
+  "code": "B1.07",
+  "title": "I should have taken the direct flight",
+  "first": {
+    "id": "course-practice-b1-07-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-07-q01",
+        "context": "Ana forgot her charger and her phone went flat",
+        "prompt": "Which comment looks back at a better choice?",
+        "options": [
+          {
+            "id": "a",
+            "text": "I should have brought my charger"
+          },
+          {
+            "id": "b",
+            "text": "I should bring it yesterday"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Should have refers to a better choice in the past"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Should have refers to a better choice in the past"
+          }
+        },
+        "previewOptions": [
+          {
+            "id": "a",
+            "text": "I should have brought it"
+          },
+          {
+            "id": "b",
+            "text": "I should bring it yesterday"
+          }
+        ]
+      },
+      {
+        "id": "course-b1-07-q02",
+        "context": "Kim booked the wrong date without checking the message",
+        "prompt": "Which regret fits?",
+        "options": [
+          {
+            "id": "a",
+            "text": "I should have ignored the message"
+          },
+          {
+            "id": "b",
+            "text": "I should have checked the message first"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Checking first would have helped avoid the mistake"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Checking first would have helped avoid the mistake"
+          }
+        }
+      },
+      {
+        "id": "course-b1-07-q03",
+        "context": "Leo sent an angry reply and now regrets it",
+        "prompt": "What can he say?",
+        "options": [
+          {
+            "id": "a",
+            "text": "I mustn’t have sent any reply"
+          },
+          {
+            "id": "b",
+            "text": "I shouldn’t have sent it so quickly"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Shouldn’t have criticises the action he actually took"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Shouldn’t have criticises the action he actually took"
+          }
+        }
+      },
+      {
+        "id": "course-b1-07-q04",
+        "context": "Ana arrived early and had time to find the room",
+        "prompt": "Which comment recognises a good past decision?",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was a good idea to leave early"
+          },
+          {
+            "id": "b",
+            "text": "I should have left later and missed it"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "The extra time was useful, so the early departure helped"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "The extra time was useful, so the early departure helped"
+          }
+        }
+      },
+      {
+        "id": "course-b1-07-q05",
+        "context": "Kim didn’t save the address and got lost",
+        "prompt": "Which advice concerns next time rather than past regret?",
+        "options": [
+          {
+            "id": "a",
+            "text": "You should have saved the address"
+          },
+          {
+            "id": "b",
+            "text": "You should save the address before you leave"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Should save looks forward; should have saved looks back"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Should save looks forward; should have saved looks back"
+          }
+        }
+      },
+      {
+        "id": "course-b1-07-q06",
+        "context": "Your friend is upset about a small mistake",
+        "prompt": "Which reply supports them while suggesting a change?",
+        "options": [
+          {
+            "id": "a",
+            "text": "Next time, you could double-check the date"
+          },
+          {
+            "id": "b",
+            "text": "You always make careless mistakes"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Exactly",
+            "message": "Specific advice helps without turning one mistake into a general judgement"
+          },
+          "wrong": {
+            "title": "Check the context",
+            "message": "Specific advice helps without turning one mistake into a general judgement"
+          }
+        }
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-07-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-07.shadowing.01",
+        "displayText": "Did you make the connection? You only had thirty-five minutes",
+        "translation": "Você conseguiu pegar a conexão? Só tinha trinta e cinco minutos",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.02",
+        "displayText": "No. The first flight was fifty minutes late, so I missed it",
+        "translation": "Não. O primeiro voo atrasou cinquenta minutos, então perdi a conexão",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.03",
+        "displayText": "That’s frustrating. Was there a direct flight when you booked?",
+        "translation": "Que frustrante. Havia voo direto quando você reservou?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.04",
+        "displayText": "Yes, but it cost more. I should have allowed more time between flights",
+        "translation": "Sim, mas custava mais. Eu deveria ter deixado mais tempo entre os voos",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.05",
+        "displayText": "You couldn’t have known about the delay, though. What can you do now?",
+        "translation": "Mas você não tinha como saber do atraso. O que pode fazer agora?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.06",
+        "displayText": "I’m waiting for the desk to confirm another flight",
+        "translation": "Estou esperando o atendimento confirmar outro voo",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-07.shadowing.07",
+        "displayText": "I’d also check what your travel insurance covers, without assuming it pays for everything",
+        "translation": "Eu também conferiria o que o seguro cobre, sem presumir que paga tudo",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-07.shadowing.08",
+        "displayText": "I will. Next time I’d compare the arrival time as well as the price",
+        "translation": "Vou conferir. Da próxima vez compararia o horário de chegada e também o preço",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}
