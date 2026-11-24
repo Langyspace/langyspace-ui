@@ -39,3 +39,16 @@ export const Root = styled.div.withConfig({
       }
     `}
 `
+
+export const PromptLine = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: ${theme.spacing[2]};
+`
+export const PromptText = styled.div`
+  flex: 1;
+  min-width: 0;
+`
+export const Action = styled.div`
+  flex: 0 0 auto;
+`
