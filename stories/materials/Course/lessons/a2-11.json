@@ -1,0 +1,401 @@
+{
+  "version": 81,
+  "code": "A2.11",
+  "key": "a2-11",
+  "title": "If it rains, we’ll…",
+  "goal": "Agree on a realistic backup plan for a day out",
+  "freeConversationInstruction": "Discuss upcoming plans, possible problems and useful alternatives together",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a choice between two places",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Why would you choose one over the other?",
+          "cue": "Compare a practical criterion",
+          "hint": "It’s … than … / It’s … enough",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Plan A and Plan B",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-11-vocabulary81",
+        "alt": "Six illustrated situations for If it rains, we’ll…",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A211-V81.0",
+          "label": "a hike",
+          "prompt": "",
+          "example": "We’re planning a hike on Sunday",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A211-FS81.0",
+          "audioText": "a hike. We’re planning a hike on Sunday."
+        },
+        {
+          "id": "A211-V81.1",
+          "label": "a trail",
+          "prompt": "",
+          "example": "This trail goes through the trees",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A211-FS81.1",
+          "audioText": "a trail. This trail goes through the trees."
+        },
+        {
+          "id": "A211-V81.2",
+          "label": "a museum",
+          "prompt": "",
+          "example": "We’ll go to a museum if it rains",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A211-FS81.2",
+          "audioText": "a museum. We’ll go to a museum if it rains."
+        },
+        {
+          "id": "A211-V81.3",
+          "label": "a raincoat",
+          "prompt": "",
+          "example": "I’ll bring a raincoat",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A211-FS81.3",
+          "audioText": "a raincoat. I’ll bring a raincoat."
+        },
+        {
+          "id": "A211-V81.4",
+          "label": "a forecast",
+          "prompt": "",
+          "example": "Let’s check the forecast",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A211-FS81.4",
+          "audioText": "a forecast. Let’s check the forecast."
+        },
+        {
+          "id": "A211-V81.5",
+          "label": "a backup plan",
+          "prompt": "",
+          "example": "The museum is our backup plan",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A211-FS81.5",
+          "audioText": "a backup plan. The museum is our backup plan."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Planning the outing",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A211-D81.1",
+          "speaker": "Kim",
+          "text": "Shall we go on a hike on Sunday?",
+          "audioText": "Shall we go on a hike on Sunday?",
+          "translation": "Vamos fazer uma caminhada no domingo?"
+        },
+        {
+          "id": "A211-D81.2",
+          "speaker": "Ana",
+          "text": "I’d like that. What does the forecast say?",
+          "audioText": "I’d like that. What does the forecast say?",
+          "translation": "Eu gostaria. O que diz a previsão?"
+        },
+        {
+          "id": "A211-D81.3",
+          "speaker": "Kim",
+          "text": "It might rain. If it rains, we’ll go to the museum instead",
+          "audioText": "It might rain. If it rains, we’ll go to the museum instead.",
+          "translation": "Pode chover. Se chover, vamos ao museu"
+        },
+        {
+          "id": "A211-D81.4",
+          "speaker": "Ana",
+          "text": "Good plan. What time is the bus?",
+          "audioText": "Good plan. What time is the bus?",
+          "translation": "Bom plano. Que horas é o ônibus?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What will they do if it rains?",
+          "cue": "Give the agreed alternative",
+          "hint": "They’ll …",
+          "answer": "They’ll go to the museum"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Transport and lunch",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A211-D81.5",
+          "speaker": "Kim",
+          "text": "At nine. If we miss it, we can take the next one at nine thirty",
+          "audioText": "At nine. If we miss it, we can take the next one at nine thirty.",
+          "translation": "Às nove. Se perdermos, podemos pegar o próximo às nove e meia"
+        },
+        {
+          "id": "A211-D81.6",
+          "speaker": "Ana",
+          "text": "All right. I’ll bring a raincoat. What about lunch?",
+          "audioText": "All right. I’ll bring a raincoat. What about lunch?",
+          "translation": "Tudo bem. Vou levar uma capa de chuva. E o almoço?"
+        },
+        {
+          "id": "A211-D81.7",
+          "speaker": "Kim",
+          "text": "If we go to the museum, we’ll eat at the café inside",
+          "audioText": "If we go to the museum, we’ll eat at the café inside.",
+          "translation": "Se formos ao museu, vamos comer no café lá dentro"
+        },
+        {
+          "id": "A211-D81.8",
+          "speaker": "Ana",
+          "text": "Great. Let’s check the weather again before we leave",
+          "audioText": "Great. Let’s check the weather again before we leave.",
+          "translation": "Ótimo. Vamos conferir o tempo de novo antes de sair"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What is their backup if they miss the nine o’clock bus?",
+          "cue": "Give the next departure",
+          "hint": "They can …",
+          "answer": "They can take the nine thirty bus"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Make a backup plan",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What will you do if it rains?",
+          "cue": "Suggest a realistic alternative for the outing",
+          "hint": "If it rains, we’ll …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What if the bus is late?",
+          "cue": "Agree on a second way to reach the destination",
+          "hint": "If the bus is late, we can …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "If this happens, what will we do?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A real possible condition",
+          "verb": "If + present simple",
+          "example": "If it rains, …"
+        },
+        {
+          "id": "1",
+          "subject": "The result or decision",
+          "verb": "will + base verb",
+          "example": "… we’ll go to the museum"
+        },
+        {
+          "id": "2",
+          "subject": "Another possible response",
+          "verb": "can + base verb",
+          "example": "If the bus is late, we can take the next one"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Make a plan B",
+      "instruction": "Make a plan and agree what to do if it changes",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Use the backup plan",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside. We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
+      "audioText": "Hi, Ana! The forecast says it will rain on Sunday morning. Let’s use our backup plan. If it rains, we’ll go straight to the museum, and we’ll have lunch inside. We can still take the nine o’clock bus. If that bus is late, let’s wait for the nine thirty one rather than walk in the rain. Does that work for you?",
+      "audioId": "A211-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What’s the new plan if it rains?",
+          "cue": "Explain the alternative proposed in the message",
+          "hint": "If it rains, they’ll …",
+          "answer": "If it rains, they’ll go straight to the museum"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm the weather and transport plan",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Agree on a realistic backup plan for a day out"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Agree on Plan A and Plan B",
+      "options": [
+        {
+          "id": "hike",
+          "title": "Plan A · hike",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Start",
+              "value": "9 am · bus"
+            },
+            {
+              "id": "1",
+              "label": "Place",
+              "value": "Outdoor trail"
+            },
+            {
+              "id": "2",
+              "label": "Bring",
+              "value": "Water and a raincoat"
+            }
+          ]
+        },
+        {
+          "id": "museum",
+          "title": "Plan B · museum",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Start",
+              "value": "9 am · same bus"
+            },
+            {
+              "id": "1",
+              "label": "Place",
+              "value": "Indoors · café inside"
+            },
+            {
+              "id": "2",
+              "label": "Backup bus",
+              "value": "9:30 am"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "backup",
+          "prompt": "What will we do if it rains?",
+          "cue": "Agree on a weather alternative and one transport backup",
+          "hint": "If …, we’ll … If the bus …, we can …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Sunday’s updated plan",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Forecast",
+          "value": "Rain in the morning"
+        },
+        {
+          "id": "1",
+          "label": "Destination",
+          "value": "Museum · lunch inside"
+        },
+        {
+          "id": "2",
+          "label": "Transport",
+          "value": "9 am bus · 9:30 if late"
+        }
+      ],
+      "questions": [
+        {
+          "id": "confirm",
+          "prompt": "Does that work for you?",
+          "cue": "Confirm the plan and explain what happens if the first bus is late",
+          "hint": "If …, we’ll … Then …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

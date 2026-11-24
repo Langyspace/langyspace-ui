@@ -1,0 +1,190 @@
+{
+  "key": "b1-02",
+  "code": "B1.02",
+  "title": "There used to be a cinema here",
+  "first": {
+    "id": "course-practice-b1-02-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-b1-02-cinema",
+        "word": "a cinema",
+        "translation": "um cinema",
+        "example": "There used to be a cinema on this corner",
+        "exampleTranslation": "Antigamente havia um cinema nesta esquina",
+        "visualLabel": "a cinema",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-cinema.front",
+        "backAudioId": "course-b1-02-cinema.back"
+      },
+      {
+        "id": "course-b1-02-playground",
+        "word": "a playground",
+        "translation": "um parque infantil",
+        "example": "The playground still has its old swings",
+        "exampleTranslation": "O parque infantil ainda tem seus balanços antigos",
+        "visualLabel": "a playground",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-playground.front",
+        "backAudioId": "course-b1-02-playground.back"
+      },
+      {
+        "id": "course-b1-02-corner-shop",
+        "word": "a corner shop",
+        "translation": "uma loja de bairro",
+        "example": "I used to buy bread at the corner shop",
+        "exampleTranslation": "Eu costumava comprar pão na loja da esquina",
+        "visualLabel": "a corner shop",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-corner-shop.front",
+        "backAudioId": "course-b1-02-corner-shop.back"
+      },
+      {
+        "id": "course-b1-02-square",
+        "word": "a square",
+        "translation": "uma praça",
+        "example": "The factory was beside the square",
+        "exampleTranslation": "A fábrica ficava ao lado da praça",
+        "visualLabel": "a square",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-square.front",
+        "backAudioId": "course-b1-02-square.back"
+      },
+      {
+        "id": "course-b1-02-factory",
+        "word": "a factory",
+        "translation": "uma fábrica",
+        "example": "My neighbour used to work at the factory",
+        "exampleTranslation": "Meu vizinho trabalhava na fábrica",
+        "visualLabel": "a factory",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-factory.front",
+        "backAudioId": "course-b1-02-factory.back"
+      },
+      {
+        "id": "course-b1-02-apartment-block",
+        "word": "an apartment block",
+        "translation": "um bloco de apartamentos",
+        "example": "There’s an apartment block on the old site now",
+        "exampleTranslation": "Agora existe um prédio de apartamentos no antigo local",
+        "visualLabel": "an apartment block",
+        "imageSrc": "/flashcards-transparent/course-images/984053a6feeeb1832944531386155d2b722956036536905e837f14487b67d8f6/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-b1-02-apartment-block.front",
+        "backAudioId": "course-b1-02-apartment-block.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-02-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-02.shadowing.01",
+        "displayText": "This street looks completely different",
+        "translation": "Esta rua parece completamente diferente",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "b1-02.shadowing.02",
+        "displayText": "I know. There used to be a cinema on that corner",
+        "translation": "Eu sei. Costumava haver um cinema naquela esquina",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "b1-02.shadowing.03",
+        "displayText": "Did you use to go there after school?",
+        "translation": "Você costumava ir lá depois da escola?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "b1-02.shadowing.04",
+        "displayText": "Yes. We used to meet outside the ticket office every Friday",
+        "translation": "Sim. Costumávamos nos encontrar em frente à bilheteria todas as sextas-feiras",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "b1-02.shadowing.05",
+        "displayText": "Now there’s an apartment block. What happened to the playground?",
+        "translation": "Agora existe um prédio de apartamentos. O que aconteceu com o parquinho?",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "b1-02.shadowing.06",
+        "displayText": "It moved to the park. Children didn’t use to have much space there",
+        "translation": "Mudou-se para o parque. As crianças não costumavam ter muito espaço lá",
+        "speakerId": "owen-harris"
+      },
+      {
+        "id": "b1-02.shadowing.07",
+        "displayText": "The new square is lovely, but I miss the little shops",
+        "translation": "A nova praça é linda, mas sinto falta das lojinhas",
+        "speakerId": "evelyn-carter"
+      },
+      {
+        "id": "b1-02.shadowing.08",
+        "displayText": "Me too. There used to be a corner shop next to the cinema",
+        "translation": "Eu também. Costumava haver uma mercearia perto do cinema",
+        "speakerId": "owen-harris"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "evelyn-carter",
+        "name": "Evelyn",
+        "avatarUrl": "/flashcards/course-characters/evelyn-carter/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      },
+      {
+        "id": "owen-harris",
+        "name": "Owen",
+        "avatarUrl": "/flashcards/course-characters/owen-harris/image.webp",
+        "accentCode": "en-GB",
+        "accentLabel": "English · UK"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

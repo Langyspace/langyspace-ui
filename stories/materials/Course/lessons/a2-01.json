@@ -1,0 +1,392 @@
+{
+  "version": 81,
+  "code": "A2.01",
+  "key": "a2-01",
+  "title": "What are you doing?",
+  "goal": "Compare your usual routine with what is happening today",
+  "freeConversationInstruction": "Compare your usual routines with today and ask follow-up questions about each other’s day",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a routine action and a time",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What do you usually do in the morning?",
+          "cue": "Give one habit and its time",
+          "hint": "I usually … at …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Everyday actions",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-01-vocabulary81",
+        "alt": "Six illustrated situations for What are you doing?",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A201-V81.0",
+          "label": "make coffee",
+          "prompt": "",
+          "example": "I’m making coffee right now",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A201-FS81.0",
+          "audioText": "make coffee. I’m making coffee right now."
+        },
+        {
+          "id": "A201-V81.1",
+          "label": "cook lunch",
+          "prompt": "",
+          "example": "They’re cooking lunch in the kitchen",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A201-FS81.1",
+          "audioText": "cook lunch. They’re cooking lunch in the kitchen."
+        },
+        {
+          "id": "A201-V81.2",
+          "label": "watch TV",
+          "prompt": "",
+          "example": "My sister is watching TV",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A201-FS81.2",
+          "audioText": "watch TV. My sister is watching TV."
+        },
+        {
+          "id": "A201-V81.3",
+          "label": "listen to music",
+          "prompt": "",
+          "example": "I’m listening to music at home",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A201-FS81.3",
+          "audioText": "listen to music. I’m listening to music at home."
+        },
+        {
+          "id": "A201-V81.4",
+          "label": "work from home",
+          "prompt": "",
+          "example": "She usually works from home on Fridays",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A201-FS81.4",
+          "audioText": "work from home. She usually works from home on Fridays."
+        },
+        {
+          "id": "A201-V81.5",
+          "label": "go for a walk",
+          "prompt": "",
+          "example": "We’re going for a walk this afternoon",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A201-FS81.5",
+          "audioText": "go for a walk. We’re going for a walk this afternoon."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Dinner today, habits usually",
+      "instruction": "Listen for the activity, the result and the follow-up question",
+      "minutes": 7,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "a201.dialogue.anna-ben.01",
+          "speaker": "Anna",
+          "text": "Hey! What are you doing?",
+          "audioText": "Hey! What are you doing?",
+          "translation": "Oi! O que você está fazendo?"
+        },
+        {
+          "id": "a201.dialogue.anna-ben.02",
+          "speaker": "Ben",
+          "text": "I'm cooking dinner. What about you?",
+          "audioText": "I'm cooking dinner. What about you?",
+          "translation": "Estou preparando o jantar. E você?"
+        },
+        {
+          "id": "a201.dialogue.anna-ben.03",
+          "speaker": "Anna",
+          "text": "I'm watching a movie",
+          "audioText": "I'm watching a movie.",
+          "translation": "Estou assistindo a um filme"
+        },
+        {
+          "id": "a201.dialogue.anna-ben.04",
+          "speaker": "Ben",
+          "text": "Nice! Do you usually watch movies at night?",
+          "audioText": "Nice! Do you usually watch movies at night?",
+          "translation": "Legal! Você costuma assistir a filmes à noite?"
+        },
+        {
+          "id": "a201.dialogue.anna-ben.05",
+          "speaker": "Anna",
+          "text": "Yes, but I usually read before bed. Do you cook every day?",
+          "audioText": "Yes, but I usually read before bed. Do you cook every day?",
+          "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?"
+        },
+        {
+          "id": "a201.dialogue.anna-ben.06",
+          "speaker": "Ben",
+          "text": "Not really. I usually order food, but today I'm making pasta",
+          "audioText": "Not really. I usually order food, but today I'm making pasta.",
+          "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What does Ben usually do for dinner?",
+          "cue": "Compare his habit with today",
+          "hint": "He usually …, but today …",
+          "answer": "He usually orders food; today he is making pasta"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Your routine and today",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What do you usually do in the morning?",
+          "cue": "Describe a habit and ask about your teacher’s routine",
+          "hint": "I usually … What do you usually do?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What are you doing differently today?",
+          "cue": "Compare today with your usual routine",
+          "hint": "I usually …, but today I’m …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Usually, or right now?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A habit",
+          "verb": "usually + present simple",
+          "example": "I usually go to the gym in the morning"
+        },
+        {
+          "id": "1",
+          "subject": "Happening now",
+          "verb": "am / is / are + verb-ing",
+          "example": "Today I’m making coffee at home"
+        },
+        {
+          "id": "2",
+          "subject": "Ask about the difference",
+          "verb": "What do you usually do? / What are you doing?",
+          "example": "I usually order food, but today I’m cooking"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Usually or today?",
+      "instruction": "Compare a usual day with what is happening today",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A message from Anna",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
+      "audioText": "Hey! What are you doing? I'm at home right now. I'm making some coffee and listening to music. I usually go to the gym in the morning, but today I'm just relaxing. My sister is watching TV, and my parents are cooking lunch. What about you? What are you doing today?",
+      "audioId": "a201.listening.anna.01",
+      "greeting": "What are you up to today?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What is she doing today?",
+          "cue": "Describe the activity mentioned in the message",
+          "hint": "Today she’s …",
+          "answer": "She is making coffee and listening to music at home"
+        }
+      ],
+      "contact": {
+        "name": "Anna"
+      },
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Ask about Anna’s family",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Compare your usual routine with what is happening today"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "comparison",
+      "title": "Usually and today",
+      "options": [
+        {
+          "id": "usual",
+          "title": "Usually",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Place",
+              "value": "Gym"
+            },
+            {
+              "id": "1",
+              "label": "Time",
+              "value": "Morning"
+            },
+            {
+              "id": "2",
+              "label": "Activity",
+              "value": "Work out"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "usual",
+              "label": "Usually",
+              "index": 0
+            }
+          ]
+        },
+        {
+          "id": "today",
+          "title": "Today",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Place",
+              "value": "Home"
+            },
+            {
+              "id": "1",
+              "label": "Time",
+              "value": "Now"
+            },
+            {
+              "id": "2",
+              "label": "Activity",
+              "value": "Make coffee · listen to music"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "today",
+              "label": "Today",
+              "index": 1
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "compare",
+          "prompt": "What is different today?",
+          "cue": "Compare a habit with the current activity and ask me about my day",
+          "hint": "I usually …, but today I’m … What about you?",
+          "answer": "One possible response"
+        }
+      ],
+      "image": "a2-01-usually-today81",
+      "pictureGrid": {
+        "columns": 2,
+        "rows": 1,
+        "sourceAspectRatio": 1.7777777777777777
+      }
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Anna’s update",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Anna now",
+          "value": "Making coffee · listening to music"
+        },
+        {
+          "id": "1",
+          "label": "Her sister",
+          "value": "Watching TV"
+        },
+        {
+          "id": "2",
+          "label": "Her parents",
+          "value": "Cooking lunch"
+        }
+      ],
+      "questions": [
+        {
+          "id": "reply",
+          "prompt": "What would you ask Anna about her day?",
+          "cue": "Respond about your day and ask a genuine follow-up",
+          "hint": "I’m … today. Are you …? What are … doing?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  },
+  "notesStorageKey": "langy-notes:a2-01"
+}

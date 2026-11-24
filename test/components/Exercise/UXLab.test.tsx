@@ -175,7 +175,8 @@ describe('UX Lab contracts', () => {
     )
     fireEvent.click(screen.getByRole('button', { name: 'Keys' }))
     expect(onSelect).toHaveBeenCalledWith('keys')
-    expect(screen.getByText('0 / 1 explorados')).toBeVisible()
+    expect(screen.getByRole('region', { name: 'Keys' })).toBeVisible()
+    expect(screen.queryByText(/explorados/)).not.toBeInTheDocument()
   })
   it('delegates pair choice and does not manufacture correctness', () => {
     const onSelect = vi.fn()
@@ -577,7 +578,7 @@ describe('material exercise states and accessibility', () => {
     expect(support).toHaveBeenCalledOnce()
     expect(screen.getByRole('status')).toHaveTextContent('1 / 1 concluídos')
   })
-  it('shows selected scene help, counts only known visited objects and can hide the answer', () => {
+  it('anchors selected scene help without a counter and can hide the answer', () => {
     const help = vi.fn()
     const props = {
       imageUrl: '/room.webp',
@@ -599,7 +600,8 @@ describe('material exercise states and accessibility', () => {
     }
     const { rerender } = render(<SceneExplorer {...props} answerVisible />)
     expect(screen.getByText(/On the chair\./)).toBeVisible()
-    expect(screen.getByText('1 / 1 explorados')).toBeVisible()
+    expect(screen.getByRole('region', { name: 'Bag' })).toBeVisible()
+    expect(screen.queryByText(/explorados/)).not.toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Bag' })).toHaveAttribute(
       'aria-expanded',
       'true',

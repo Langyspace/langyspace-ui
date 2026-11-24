@@ -1,5 +1,11 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { presentationMedia } from '../../foundations/layout/presentationMedia'
+import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
+import {
+  slideColumnWidth,
+  slidePairedTracks,
+} from '../../foundations/layout/slideColumns'
 import { resolveSlideTheme } from '../../foundations/theme/resolveSlideTheme'
 import type { SlidePageProps } from './SlidePage.types'
 
@@ -7,40 +13,84 @@ const recipe = resolveSlideTheme
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-slide-page',
-})<{ $tone: 'default' | 'inverse'; $dense: boolean }>`
+})<{ $tone: 'default' | 'inverse' }>`
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[2]})
-    ${theme.spacing[8]} ${theme.spacing[8]};
+  padding: calc(
+      ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+        ${theme.spacing[2]}
+    )
+    max(${theme.spacing[8]}, env(safe-area-inset-right, 0px))
+    calc(${theme.spacing[8]} + env(safe-area-inset-bottom, 0px))
+    max(${theme.spacing[8]}, env(safe-area-inset-left, 0px));
   color: ${(p) => (p.$tone === 'inverse' ? recipe(p).inverseForeground : recipe(p).foreground)};
   background: ${(p) => (p.$tone === 'inverse' ? recipe(p).inverseCanvas : recipe(p).canvas)};
   font-family: ${theme.typography.fontFamily.sans};
   line-height: ${(p) => recipe(p).pageLineHeight};
-  @container (max-height: ${theme.viewportHeights.lg}) and (min-width: ${theme.breakpoints.md}) {
-    padding-block: ${(p) => (p.$dense ? `calc(${recipe(p).headerHeight} + ${theme.spacing[1]}) ${theme.spacing[2]}` : `calc(${recipe(p).headerHeight} + ${theme.spacing[2]}) ${theme.spacing[8]}`)};
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    padding: calc(
+        ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+          ${theme.spacing[2]}
+      )
+      max(${theme.spacing[4]}, env(safe-area-inset-right, 0px))
+      calc(${theme.spacing[4]} + env(safe-area-inset-bottom, 0px))
+      max(${theme.spacing[4]}, env(safe-area-inset-left, 0px));
   }
-
-  @container (max-width: ${theme.breakpoints.sm}) {
-    padding: calc(${(p) => recipe(p).headerHeight} + ${theme.spacing[2]})
-      ${theme.spacing[4]} ${theme.spacing[4]};
+  @container (max-height:${theme.viewportHeights.lg}) {
+    padding-block: calc(
+        ${(p) => recipe(p).headerHeight} + env(safe-area-inset-top, 0px) +
+          ${theme.spacing[1]}
+      )
+      calc(${theme.spacing[3]} + env(safe-area-inset-bottom, 0px));
   }
 `
 
 export const Content = styled.div<{
   $width: NonNullable<SlidePageProps['width']>
   $layout: NonNullable<SlidePageProps['layout']>
+  $cover: boolean
+  $columns?: SlidePageProps['columns']
+  $splitRatio?: SlidePageProps['splitRatio']
 }>`
   display: ${(p) => (p.$layout === 'split' ? 'grid' : 'flex')};
   flex-direction: column;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.875fr);
+  grid-template-columns: minmax(0, 1fr) minmax(
+      0,
+      ${(p) => (p.$splitRatio === 'one-two' ? '2fr' : p.$splitRatio === 'equal' || p.$cover ? '1fr' : '1.875fr')}
+    );
   align-items: ${(p) => (p.$layout === 'split' ? 'center' : 'stretch')};
   gap: ${(p) => (p.$layout === 'split' ? `clamp(${theme.spacing[6]}, 4cqw, ${theme.spacing[12]})` : '0')};
   width: 100%;
   min-width: 0;
-  max-width: ${(p) => (p.$layout === 'split' ? recipe(p).introductionWidth : p.$width === 'focused' ? recipe(p).focusedWidth : p.$width === 'standard' ? recipe(p).standardWidth : p.$width === 'reading' ? recipe(p).readingWidth : p.$width === 'exercise' ? recipe(p).exerciseWidth : p.$width === 'conversation' ? recipe(p).conversationWidth : recipe(p).wideWidth)};
+  max-width: ${(p) => {
+    const sizes = recipe(p)
+    if (p.$columns) return slideColumnWidth(sizes, p.$columns)
+    if (p.$layout === 'split') return sizes.introductionWidth
+    if (p.$width && typeof p.$width === 'object') {
+      if ('vocabularyColumns' in p.$width)
+        return regularVocabularyMaxWidth(p.$width.vocabularyColumns)
+      const ratio = p.$width.mediaAspectRatio
+      return Number.isFinite(ratio) && ratio > 0
+        ? `min(${sizes.introductionWidth}, calc(${presentationMedia.viewportHeight} * ${ratio}), calc(${presentationMedia.maximumHeight} * ${ratio}))`
+        : sizes.wideWidth
+    }
+    return p.$width === 'expanded'
+      ? sizes.introductionWidth
+      : p.$width === 'focused'
+        ? sizes.focusedWidth
+        : p.$width === 'standard'
+          ? sizes.standardWidth
+          : p.$width === 'reading'
+            ? sizes.readingWidth
+            : p.$width === 'exercise'
+              ? sizes.exerciseWidth
+              : p.$width === 'conversation'
+                ? sizes.conversationWidth
+                : sizes.wideWidth
+  }};
   margin-inline: auto;
   > [data-slide-introduction] {
     min-width: 0;
@@ -48,7 +98,7 @@ export const Content = styled.div<{
       margin-bottom: 0;
     }
   }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     grid-template-columns: minmax(0, 1fr);
   }
 `
@@ -56,6 +106,23 @@ export const Content = styled.div<{
 export const Lead = styled.div`
   min-width: 0;
   margin-bottom: clamp(${theme.spacing[2]}, 2cqh, ${theme.spacing[5]});
+`
+
+export const Cover = styled.img<{
+  $afterHeading: boolean
+  $split: boolean
+  $compact: boolean
+}>`
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: ${theme.radius.xl};
+  margin-top: ${(p) => (p.$afterHeading && p.$split ? theme.spacing[5] : undefined)};
+  margin-bottom: ${(p) => (p.$afterHeading ? '0' : theme.spacing[5])};
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
+    max-height: ${(p) => (p.$compact ? '8cqh' : undefined)};
+  }
 `
 
 export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`
@@ -66,8 +133,11 @@ export const Header = styled.header<{ $lead: boolean; $compact: boolean }>`
   gap: ${theme.spacing[3]} ${theme.spacing[4]};
   min-width: 0;
   margin-bottom: ${(p) => (p.$lead ? `clamp(${theme.spacing[2]}, 2.2cqh, ${theme.spacing[6]})` : p.$compact ? theme.spacing[6] : `calc(${theme.spacing[6]} + ${theme.spacing[1]})`)};
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-bottom: ${(p) => (p.$lead ? `clamp(${theme.spacing[2]}, 2.2cqh, ${theme.spacing[6]})` : theme.spacing[5])};
+  }
+  @container (max-height: ${theme.viewportHeights.lg}) {
+    margin-bottom: ${theme.spacing[4]};
   }
 `
 
@@ -81,7 +151,7 @@ export const Eyebrow = styled.div<{ $tone: 'default' | 'inverse' }>`
   display: flex;
   align-items: center;
   gap: ${theme.spacing[2]};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-family: ${theme.typography.fontFamily.sans};
   line-height: 1.4;
   color: ${(p) => (p.$tone === 'inverse' ? recipe(p).indicator : recipe(p).accent)};
   font-size: ${theme.typography.fontSize.xs};
@@ -94,7 +164,7 @@ export const Eyebrow = styled.div<{ $tone: 'default' | 'inverse' }>`
     font-size: 1em;
     letter-spacing: 0;
   }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-bottom: 0;
   }
 `
@@ -113,11 +183,11 @@ export const Title = styled.h2`
   letter-spacing: -0.02em;
   overflow-wrap: anywhere;
   text-wrap: balance;
-  @container (max-height: ${theme.viewportHeights.lg}) and (min-width: ${theme.breakpoints.md}) {
-    font-size: 1.875rem;
-  }
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     font-size: 1.375rem;
+  }
+  @container (max-height:${theme.viewportHeights.lg}) {
+    font-size: 1.625rem;
   }
 `
 
@@ -128,13 +198,14 @@ export const Instruction = styled.div<{ $tone: 'default' | 'inverse' }>`
   font-weight: ${theme.typography.fontWeight.medium};
   line-height: 1.4;
   overflow-wrap: anywhere;
-  @container (max-width: ${theme.breakpoints.md}) {
+  @container (max-width: ${(p) => recipe(p).compactBreakpoint}) {
     margin-top: ${theme.spacing[1]};
     font-size: ${theme.typography.fontSize.sm};
   }
 `
 
 export const Tools = styled.div`
+  margin-inline-start: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -142,7 +213,47 @@ export const Tools = styled.div`
   min-width: 0;
 `
 
-export const Body = styled.div`
+export const Body = styled.div<{ $columns?: SlidePageProps['columns'] }>`
+  display: grid;
+  grid-template-columns: repeat(${(p) => p.$columns ?? 1}, minmax(0, 1fr));
   min-width: 0;
   overflow-wrap: anywhere;
+`
+
+/** The exercise owns its internal card/field grid and occupies its declared page span. */
+export const Exercise = styled.div`
+  grid-column: 1 / -1;
+  min-width: 0;
+`
+
+/** Dialogue and its comprehension stay together; neither column has an inner scrollbar. */
+export const Conversation = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: ${(p) => slidePairedTracks(recipe(p))};
+  gap: ${theme.spacing[8]};
+  align-items: start;
+  min-width: 0;
+  @container (max-width: ${theme.breakpoints.md}) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: ${theme.spacing[5]};
+  }
+`
+export const ConversationText = styled.div`
+  min-width: 0;
+`
+export const Questions = styled.aside`
+  min-width: 0;
+  display: grid;
+  gap: ${theme.spacing[3]};
+  align-content: start;
+  font-family: ${theme.typography.fontFamily.sans};
+`
+export const QuestionsTitle = styled.h3`
+  margin: 0;
+  font-family: ${(p) => recipe(p).displayFontFamily};
+  font-size: ${theme.typography.fontSize.lg};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1.3;
+  color: inherit;
 `

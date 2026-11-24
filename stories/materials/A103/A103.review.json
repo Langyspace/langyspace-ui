@@ -1,0 +1,504 @@
+{
+  "version": 80,
+  "code": "A1.03",
+  "title": "People in my life",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Names and spelling",
+      "instruction": "Say a last name, spell it and ask me",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What’s your last name?",
+          "cue": "Say and spell the name",
+          "hint": "My last name is … That’s …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "kind": "scene",
+      "title": "Family words",
+      "instruction": "Ana’s family and her friend Kim: name each person, then click to check and listen",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "scene-ana-family",
+        "alt": "Ana’s photo: her mother and father together, her brother Leo, her sister Bia and her friend Kim.",
+        "aspectRatio": 1.7777777777777777
+      },
+      "hotspots": [
+        {
+          "id": "family.0",
+          "label": "mother",
+          "prompt": "",
+          "example": "My mother is a doctor",
+          "xPercent": 33,
+          "yPercent": 47,
+          "audioId": "FS.0",
+          "audioText": "mother. My mother is a doctor."
+        },
+        {
+          "id": "family.1",
+          "label": "father",
+          "prompt": "",
+          "example": "This is my father. He’s from Recife",
+          "xPercent": 50,
+          "yPercent": 47,
+          "audioId": "FS.1",
+          "audioText": "father. This is my father. He’s from Recife."
+        },
+        {
+          "id": "family.2",
+          "label": "parents",
+          "prompt": "",
+          "example": "My parents are from Recife",
+          "xPercent": 41.5,
+          "yPercent": 38,
+          "audioId": "FS.2",
+          "audioText": "parents. My parents are from Recife."
+        },
+        {
+          "id": "family.3",
+          "label": "brother",
+          "prompt": "",
+          "example": "My brother, Leo, is a student",
+          "xPercent": 15,
+          "yPercent": 72,
+          "audioId": "FS.3",
+          "audioText": "brother. My brother, Leo, is a student."
+        },
+        {
+          "id": "family.4",
+          "label": "sister",
+          "prompt": "",
+          "example": "This is Bia, my sister. She’s a cook",
+          "xPercent": 68.6,
+          "yPercent": 77,
+          "audioId": "FS.4",
+          "audioText": "sister. This is Bia, my sister. She’s a cook."
+        },
+        {
+          "id": "family.5",
+          "label": "friend",
+          "prompt": "",
+          "example": "Kim is my friend",
+          "xPercent": 88,
+          "yPercent": 61,
+          "audioId": "FS.5",
+          "audioText": "friend. Kim is my friend."
+        }
+      ],
+      "connections": [
+        {
+          "from": "family.0",
+          "to": "family.2"
+        },
+        {
+          "from": "family.1",
+          "to": "family.2"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "vocabulary",
+      "title": "Three useful jobs",
+      "instruction": "Use these words when you introduce someone. Click to listen",
+      "minutes": 2,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "V.0",
+          "word": "a student",
+          "translation": "estudante",
+          "imageUrl": "scene-student",
+          "imageAlt": "A student holding a notebook."
+        },
+        {
+          "id": "V.2",
+          "word": "a doctor",
+          "translation": "médico(a)",
+          "imageUrl": "scene-doctor",
+          "imageAlt": "A doctor with a stethoscope."
+        },
+        {
+          "id": "V.3",
+          "word": "a cook",
+          "translation": "cozinheiro(a)",
+          "imageUrl": "scene-cook",
+          "imageAlt": "A cook preparing food."
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s71",
+      "kind": "dialogue",
+      "title": "Who’s this?",
+      "instruction": "Listen as Ana introduces Leo and her parents",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "Who’s this?",
+          "translation": "Quem é esse?",
+          "audioText": "Who’s this?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "This is my brother, Leo. He’s a student",
+          "translation": "Esse é meu irmão, Leo. Ele é estudante",
+          "audioText": "This is my brother, Leo. He’s a student."
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "And who are they?",
+          "translation": "E quem são eles?",
+          "audioText": "And who are they?"
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "These are my parents. They’re from Recife",
+          "translation": "Esses são meus pais. Eles são de Recife",
+          "audioText": "These are my parents. They’re from Recife."
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "Is your mother a teacher?",
+          "translation": "Sua mãe é professora?",
+          "audioText": "Is your mother a teacher?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "No, she isn’t. She’s a doctor",
+          "translation": "Não. Ela é médica",
+          "audioText": "No, she isn’t. She’s a doctor."
+        }
+      ],
+      "questions": [
+        {
+          "id": "leo",
+          "prompt": "Who is Leo?",
+          "cue": "Explain the relationship",
+          "hint": "He’s Ana’s …",
+          "answer": "He’s Ana’s brother"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "kind": "questions",
+      "title": "Someone in your life",
+      "instruction": "Choose a real person or use Ana’s family. Ask me about someone too",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "who",
+          "prompt": "Who’s this?",
+          "cue": "Introduce one person",
+          "hint": "This is my … His/Her name is …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "job",
+          "prompt": "What’s this person’s job?",
+          "cue": "Say the job if you know it",
+          "hint": "He’s/She’s a … / I’m not sure",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "kind": "grammar",
+      "title": "One person or more?",
+      "instruction": "Use this is for one person and these are for two or more",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "one",
+          "subject": "One",
+          "verb": "This is … He’s / She’s …",
+          "example": "This is my brother, Leo. He’s a student."
+        },
+        {
+          "id": "more",
+          "subject": "Two or more",
+          "verb": "These are … They’re …",
+          "example": "These are my parents. They’re from Recife."
+        }
+      ]
+    },
+    {
+      "id": "s72",
+      "kind": "dialogue",
+      "title": "Meet Bia",
+      "instruction": "Say the missing words, then introduce Bia",
+      "minutes": 3,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "G.1",
+          "speaker": "Kim",
+          "text": "Who’s this?",
+          "translation": "Quem é essa?",
+          "audioText": "Who’s this?"
+        },
+        {
+          "id": "G.2",
+          "speaker": "Ana",
+          "text": "This is my sister, Bia",
+          "translation": "Essa é minha irmã, Bia",
+          "parts": [
+            "This is ",
+            {
+              "id": "A103.gap.1",
+              "answer": "my sister"
+            },
+            ", Bia"
+          ],
+          "audioText": "This is my sister, Bia."
+        },
+        {
+          "id": "G.3",
+          "speaker": "Kim",
+          "text": "Is she a teacher?",
+          "translation": "Ela é professora?",
+          "parts": [
+            "",
+            {
+              "id": "A103.gap.2",
+              "answer": "Is"
+            },
+            " she a teacher?"
+          ],
+          "audioText": "Is she a teacher?"
+        },
+        {
+          "id": "G.4",
+          "speaker": "Ana",
+          "text": "No, she isn’t. She’s a cook",
+          "translation": "Não. Ela é cozinheira",
+          "parts": [
+            "No, she ",
+            {
+              "id": "A103.gap.3",
+              "answer": "isn’t"
+            },
+            ". She’s a cook"
+          ],
+          "audioText": "No, she isn’t. She’s a cook."
+        },
+        {
+          "id": "G.5",
+          "speaker": "Kim",
+          "text": "Where is she from?",
+          "translation": "De onde ela é?",
+          "parts": [
+            "",
+            {
+              "id": "A103.gap.4",
+              "answer": "Where"
+            },
+            " is she from?"
+          ],
+          "audioText": "Where is she from?"
+        },
+        {
+          "id": "G.6",
+          "speaker": "Ana",
+          "text": "She’s from Recife",
+          "translation": "Ela é de Recife",
+          "parts": [
+            "She’s ",
+            {
+              "id": "A103.gap.5",
+              "answer": "from"
+            },
+            " Recife"
+          ],
+          "audioText": "She’s from Recife."
+        }
+      ],
+      "questions": [
+        {
+          "id": "bia",
+          "prompt": "What’s Bia’s job?",
+          "cue": "Say the job",
+          "hint": "She’s a …",
+          "answer": "She’s a cook"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "kind": "introductions",
+      "title": "Introduce Ana’s family",
+      "instruction": "Choose someone and introduce them using the card",
+      "minutes": 6,
+      "eyebrow": "Practice",
+      "image": {
+        "src": "scene-ana-family",
+        "alt": "Ana’s family and Kim at a small gathering."
+      },
+      "choices": [
+        {
+          "id": "leo",
+          "label": "Leo",
+          "xPercent": 15,
+          "yPercent": 72,
+          "introduction": "This is my brother, Leo.",
+          "detail": "He’s a student",
+          "facts": [
+            {
+              "label": "Name",
+              "value": "Leo"
+            },
+            {
+              "label": "Family",
+              "value": "Ana’s brother"
+            },
+            {
+              "label": "Job",
+              "value": "student"
+            }
+          ],
+          "hint": "Start with “This is my brother…”. Add his job"
+        },
+        {
+          "id": "bia",
+          "label": "Bia",
+          "xPercent": 68.6,
+          "yPercent": 77,
+          "introduction": "This is my sister, Bia.",
+          "detail": "She’s a cook. She’s from Recife",
+          "facts": [
+            {
+              "label": "Family",
+              "value": "Ana’s sister"
+            },
+            {
+              "label": "Job",
+              "value": "cook"
+            },
+            {
+              "label": "From",
+              "value": "Recife"
+            }
+          ],
+          "hint": "Start with “This is my sister…”. Add her job or city"
+        },
+        {
+          "id": "parents",
+          "label": "Ana’s parents",
+          "xPercent": 41.5,
+          "yPercent": 38,
+          "introduction": "These are my parents.",
+          "detail": "They’re from Recife",
+          "facts": [
+            {
+              "label": "Family",
+              "value": "Ana’s parents"
+            },
+            {
+              "label": "Mother’s job",
+              "value": "doctor"
+            },
+            {
+              "label": "From",
+              "value": "Recife"
+            }
+          ],
+          "hint": "Use “These are…” for two people. Add their city"
+        }
+      ],
+      "teacherNotes": "The learner speaks as Ana. Choose Leo, Bia and the parents in any order; the facts are always visible. Ask for an introduction and one detail. The optional model combines the same facts, without a secret goal or guessing. No new personal information is required."
+    },
+    {
+      "id": "s10",
+      "kind": "listening",
+      "title": "A photo from Kim",
+      "instruction": "Look at Kim’s photo, listen and find out who Jin is",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "This is my sister, Jin. She’s a doctor. She’s from Korea. And this is my friend Tom. He’s a young cook",
+      "items": [
+        {
+          "id": "jin",
+          "prompt": "Who is Jin?",
+          "cue": "Explain Jin’s relationship to Kim",
+          "hint": "Jin is Kim’s …",
+          "answer": "Jin is Kim’s sister"
+        }
+      ],
+      "greeting": "Meet Jin and Tom!",
+      "image": {
+        "src": "scene-jin-tom-family42",
+        "alt": "Jin with long straight black hair and a fringe, next to Tom in a café photo shared by Kim."
+      },
+      "audioText": "This is my sister, Jin. She’s a doctor. She’s from Korea. And this is my friend Tom. He’s a young cook."
+    },
+    {
+      "id": "s101",
+      "kind": "roleplay",
+      "title": "Introduce someone you know",
+      "instruction": "Show a photo or use Ana’s family. Introduce the person and add one fact",
+      "minutes": 2,
+      "eyebrow": "Your turn",
+      "image": {
+        "src": "scene-showing-phone-photo",
+        "alt": "Ana shows a photo on her phone to explain who the person is"
+      },
+      "steps": [],
+      "items": [
+        {
+          "id": "photo",
+          "prompt": "Who is this person?",
+          "cue": "Introduce the person and add one fact you know",
+          "hint": "This is my … He’s/She’s a … / from …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Prepare one introduction and one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "One person and a group",
+          "description": "Introduce one person and two people. Use a job or city only if you know it. Real photos and example characters both work"
+        },
+        {
+          "title": "Keep it going",
+          "description": "Prepare a question to ask about someone in your teacher’s life. Review the six family words with the scene"
+        }
+      ]
+    }
+  ]
+}

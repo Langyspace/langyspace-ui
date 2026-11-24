@@ -1,0 +1,455 @@
+{
+  "version": 81,
+  "code": "B2.10",
+  "key": "b2-10",
+  "title": "What I need is a quiet room",
+  "goal": "Explain the impact of a problem and negotiate a solution that meets the actual need",
+  "freeConversationInstruction": "Discuss expectations, disappointing experiences and ways to be firm and respectful when asking for a solution",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how to distinguish a problem from its solution",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What outcome would actually help?",
+          "cue": "State the need rather than just repeating the complaint",
+          "hint": "The problem is … What would help is …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "A complaint with a clear purpose",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b2-10-vocabulary81",
+        "alt": "Six illustrated situations for What I need is a quiet room",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B210-V81.0",
+          "label": "a disturbance",
+          "prompt": "",
+          "example": "The lift caused a disturbance at night",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B210-FS81.0",
+          "audioText": "a disturbance. The lift caused a disturbance at night."
+        },
+        {
+          "id": "B210-V81.1",
+          "label": "a complaint",
+          "prompt": "",
+          "example": "The complaint explains the impact clearly",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B210-FS81.1",
+          "audioText": "a complaint. The complaint explains the impact clearly."
+        },
+        {
+          "id": "B210-V81.2",
+          "label": "a room change",
+          "prompt": "",
+          "example": "A room change might solve the noise problem",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B210-FS81.2",
+          "audioText": "a room change. A room change might solve the noise problem."
+        },
+        {
+          "id": "B210-V81.3",
+          "label": "a refund",
+          "prompt": "",
+          "example": "A refund alone may not meet the immediate need",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B210-FS81.3",
+          "audioText": "a refund. A refund alone may not meet the immediate need."
+        },
+        {
+          "id": "B210-V81.4",
+          "label": "an inconvenience",
+          "prompt": "",
+          "example": "Moving rooms is an inconvenience too",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B210-FS81.4",
+          "audioText": "an inconvenience. Moving rooms is an inconvenience too."
+        },
+        {
+          "id": "B210-V81.5",
+          "label": "a suitable alternative",
+          "prompt": "",
+          "example": "We need a suitable alternative",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B210-FS81.5",
+          "audioText": "a suitable alternative. We need a suitable alternative."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "What I need is a quiet room",
+      "paragraphs": [
+        "Fictional hotel complaint: lift noise repeatedly interrupted sleep; early presentation tomorrow. Earplugs are not suitable for this guest’s stated need. The first requested outcome is a quieter room, not an unspecified discount. No replacement room has yet been confirmed."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "State the problem and impact",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B210-D81.1",
+          "speaker": "Kim",
+          "text": "I’m sorry, but the room next to the lift is too noisy for me to sleep",
+          "audioText": "I’m sorry, but the room next to the lift is too noisy for me to sleep.",
+          "translation": "Desculpe, mas o quarto perto do elevador está barulhento demais para eu dormir"
+        },
+        {
+          "id": "B210-D81.2",
+          "speaker": "Ana",
+          "text": "I’m sorry for the disturbance. We can offer earplugs",
+          "audioText": "I’m sorry for the disturbance. We can offer earplugs.",
+          "translation": "Sinto muito pelo incômodo. Podemos oferecer protetores auriculares"
+        },
+        {
+          "id": "B210-D81.3",
+          "speaker": "Kim",
+          "text": "Thank you, but what I need is a quiet room. I have an early presentation",
+          "audioText": "Thank you, but what I need is a quiet room. I have an early presentation.",
+          "translation": "Obrigada, mas preciso de um quarto silencioso. Tenho uma apresentação cedo"
+        },
+        {
+          "id": "B210-D81.4",
+          "speaker": "Ana",
+          "text": "I understand. Is the problem mainly the lift or the street outside?",
+          "audioText": "I understand. Is the problem mainly the lift or the street outside?",
+          "translation": "Entendo. O problema é principalmente o elevador ou a rua?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why is the room location important?",
+          "cue": "Use the actual noise source",
+          "hint": "Because …",
+          "answer": "Because repeated lift noise woke the guest"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Focus on the cause",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B210-D81.5",
+          "speaker": "Kim",
+          "text": "It was the lift that woke me repeatedly. The street isn’t the main issue",
+          "audioText": "It was the lift that woke me repeatedly. The street isn’t the main issue.",
+          "translation": "Foi o elevador que me acordou repetidamente. A rua não é a questão principal"
+        },
+        {
+          "id": "B210-D81.6",
+          "speaker": "Ana",
+          "text": "That helps us find a suitable alternative. Have you already asked for a change?",
+          "audioText": "That helps us find a suitable alternative. Have you already asked for a change?",
+          "translation": "Isso ajuda a encontrar uma alternativa adequada. Você já pediu uma troca?"
+        },
+        {
+          "id": "B210-D81.7",
+          "speaker": "Kim",
+          "text": "I did ask this afternoon, but I haven’t had a confirmed option yet",
+          "audioText": "I did ask this afternoon, but I haven’t had a confirmed option yet.",
+          "translation": "Pedi esta tarde, mas ainda não recebi uma opção confirmada"
+        },
+        {
+          "id": "B210-D81.8",
+          "speaker": "Ana",
+          "text": "I can check another room, though it may not be available immediately",
+          "audioText": "I can check another room, though it may not be available immediately.",
+          "translation": "Posso conferir outro quarto, embora talvez não esteja disponível imediatamente"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What earlier action does the guest emphasise?",
+          "cue": "Use did plus base verb",
+          "hint": "She did …",
+          "answer": "She did ask for a room change that afternoon"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Ask for a specific offer",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B210-D81.9",
+          "speaker": "Kim",
+          "text": "Could you tell me when it would be ready and whether it’s away from the lift?",
+          "audioText": "Could you tell me when it would be ready and whether it’s away from the lift?",
+          "translation": "Pode dizer quando estaria pronto e se fica longe do elevador?"
+        },
+        {
+          "id": "B210-D81.10",
+          "speaker": "Ana",
+          "text": "Yes. I’ll confirm those details before asking you to move",
+          "audioText": "Yes. I’ll confirm those details before asking you to move.",
+          "translation": "Sim. Confirmarei esses detalhes antes de pedir que você se mude"
+        },
+        {
+          "id": "B210-D81.11",
+          "speaker": "Kim",
+          "text": "I appreciate that. A different room only helps if it solves the noise problem",
+          "audioText": "I appreciate that. A different room only helps if it solves the noise problem.",
+          "translation": "Agradeço. Outro quarto só ajuda se resolver o problema do barulho"
+        },
+        {
+          "id": "B210-D81.12",
+          "speaker": "Ana",
+          "text": "Agreed. I’ll come back with a specific offer rather than another general apology",
+          "audioText": "Agreed. I’ll come back with a specific offer rather than another general apology.",
+          "translation": "Concordo. Voltarei com uma oferta específica em vez de outro pedido genérico de desculpas"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What must reception confirm before the guest moves?",
+          "cue": "Give the two practical details",
+          "hint": "When … and whether …",
+          "answer": "When the room is ready and whether it is away from the lift"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Ask for a quieter room",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Put the most relevant information in focus",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Focus on the required solution",
+          "verb": "What + clause + is …",
+          "example": "What I need is a quiet room"
+        },
+        {
+          "id": "1",
+          "subject": "Focus on the cause",
+          "verb": "It was + focus + that …",
+          "example": "It was the lift that woke me"
+        },
+        {
+          "id": "2",
+          "subject": "Emphasise a previous request",
+          "verb": "did + base verb",
+          "example": "I did ask for a change this afternoon"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Reach a workable solution",
+      "instruction": "Explain the problem and negotiate a solution that helps",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A specific room-change offer",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Reception has offered a room on the quiet side of the building, away from the lift. It will be ready at nine this evening. They can help move the bags, and there is no extra room charge. That addresses the location of the noise, but we still need to confirm whether any maintenance work is planned nearby tonight. You have an early presentation, so the timing matters too. Would you accept the offer, subject to that check, or ask for another arrangement? Could you make clear which part meets the need and which detail is still unresolved?",
+      "audioText": "Hi, Ana. Reception has offered a room on the quiet side of the building, away from the lift. It will be ready at nine this evening. They can help move the bags, and there is no extra room charge. That addresses the location of the noise, but we still need to confirm whether any maintenance work is planned nearby tonight. You have an early presentation, so the timing matters too. Would you accept the offer, subject to that check, or ask for another arrangement? Could you make clear which part meets the need and which detail is still unresolved?",
+      "audioId": "B210-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Does the offer solve the original problem?",
+          "cue": "Compare the offer with the need stated earlier",
+          "hint": "It solves …, but we still need to confirm …",
+          "answer": "It addresses lift location, but maintenance noise and the timing still need checking"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Accept with a check, or propose an alternative",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain the impact of a problem and negotiate a solution that meets the actual need"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Fact, impact, request",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Problem",
+          "value": "Lift noise · repeated waking"
+        },
+        {
+          "id": "1",
+          "label": "Impact",
+          "value": "Needs sleep before early presentation"
+        },
+        {
+          "id": "2",
+          "label": "Request",
+          "value": "Quiet room away from lift"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Would earplugs solve this guest’s problem?",
+          "cue": "Acknowledge the offer and explain the actual need respectfully",
+          "hint": "Thanks, but what I need is … It was … that …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The new offer",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Room",
+          "value": "Quiet side · away from lift · no extra charge"
+        },
+        {
+          "id": "1",
+          "label": "Ready",
+          "value": "9 pm · help moving bags"
+        },
+        {
+          "id": "2",
+          "label": "Unknown",
+          "value": "Nearby maintenance tonight"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Does the offer solve the original problem?",
+          "cue": "Evaluate it against the need and ask the outstanding question",
+          "hint": "It would solve … Could you confirm whether … before …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Problem",
+          "value": "Lift noise · repeated waking"
+        },
+        {
+          "id": "1",
+          "label": "Impact",
+          "value": "Needs sleep before early presentation"
+        },
+        {
+          "id": "2",
+          "label": "Request",
+          "value": "Quiet room away from lift"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What is the main problem?",
+          "cue": "Explain the problem and its practical effect",
+          "hint": "What concerns me is … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Would that solution work for you?",
+          "cue": "Accept or reject the offer and explain what you need",
+          "hint": "Thanks, but what I need is …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

@@ -34,9 +34,7 @@ export function GapFillExercise({
               <Styled.Gap
                 $active={activeId === item.id}
                 aria-label={`${text.gap} ${index + 1}`}
-              >
-                ___
-              </Styled.Gap>
+              />
             )}
             {item.after}
           </p>
@@ -61,6 +59,7 @@ export function GapFillExercise({
                       letter={String.fromCharCode(65 + i)}
                       density="compact"
                       state={choice.state}
+                      feedbackOutcome={choice.feedbackOutcome}
                       disabled={disabled || choice.disabled}
                       onClick={() => {
                         onSelect(item.id, choice.id)

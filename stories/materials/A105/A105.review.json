@@ -1,0 +1,393 @@
+{
+  "version": 81,
+  "code": "A1.05",
+  "title": "At the street market",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Find a time to shop",
+      "instruction": "Use a day and a time, then ask me",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "time",
+          "prompt": "When are you free?",
+          "cue": "Suggest a day and a time",
+          "hint": "I’m free on … at … Are you free then?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "vocabulary",
+      "title": "Fruit at the market",
+      "instruction": "Name the fruit, then click to check and listen",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "FS81.0",
+          "word": "a banana",
+          "translation": "banana",
+          "imageUrl": "scene-banana",
+          "imageAlt": "A whole banana",
+          "example": "I like bananas",
+          "audioText": "a banana. I like bananas."
+        },
+        {
+          "id": "FS81.1",
+          "word": "an apple",
+          "translation": "maçã",
+          "imageUrl": "scene-apple",
+          "imageAlt": "A whole apple",
+          "example": "Do you like apples?",
+          "audioText": "an apple. Do you like apples?"
+        },
+        {
+          "id": "FS81.2",
+          "word": "an orange",
+          "translation": "laranja",
+          "imageUrl": "scene-orange",
+          "imageAlt": "A whole orange",
+          "example": "I don’t like oranges",
+          "audioText": "an orange. I don’t like oranges."
+        },
+        {
+          "id": "FS81.3",
+          "word": "a mango",
+          "translation": "manga",
+          "imageUrl": "scene-mango",
+          "imageAlt": "A whole mango",
+          "example": "My sister likes mangoes",
+          "audioText": "a mango. My sister likes mangoes."
+        },
+        {
+          "id": "FS81.4",
+          "word": "a pineapple",
+          "translation": "abacaxi",
+          "imageUrl": "scene-pineapple",
+          "imageAlt": "A whole pineapple",
+          "example": "A pineapple is six dollars",
+          "audioText": "a pineapple. A pineapple is six dollars."
+        },
+        {
+          "id": "FS81.5",
+          "word": "a watermelon",
+          "translation": "melancia",
+          "imageUrl": "scene-watermelon",
+          "imageAlt": "A whole watermelon",
+          "example": "I’d like a watermelon, please",
+          "audioText": "a watermelon. I’d like a watermelon, please."
+        }
+      ],
+      "isolated": true,
+      "alignHeading": true
+    },
+    {
+      "id": "s4",
+      "kind": "vocabulary",
+      "title": "Vegetables you’ll hear",
+      "instruction": "Use these words as help for the conversation",
+      "minutes": 2,
+      "eyebrow": "Reference",
+      "items": [
+        {
+          "id": "vocab.carrot",
+          "word": "a carrot",
+          "translation": "cenoura",
+          "imageUrl": "scene-carrot",
+          "imageAlt": "A carrot"
+        },
+        {
+          "id": "vocab.onion",
+          "word": "an onion",
+          "translation": "cebola",
+          "imageUrl": "scene-onion",
+          "imageAlt": "An onion"
+        },
+        {
+          "id": "vocab.tomato",
+          "word": "a tomato",
+          "translation": "tomate",
+          "imageUrl": "scene-tomato",
+          "imageAlt": "A tomato"
+        }
+      ],
+      "isolated": true,
+      "alignHeading": true
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "At the street market",
+      "instruction": "Listen for what they like and what they ask to buy",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "D.1",
+          "speaker": "Kim",
+          "text": "This market is great! Do you like mangoes?",
+          "audioText": "This market is great! Do you like mangoes?"
+        },
+        {
+          "id": "D.2",
+          "speaker": "Ana",
+          "text": "Yes, I do. I love mangoes. What about you?",
+          "audioText": "Yes, I do. I love mangoes. What about you?"
+        },
+        {
+          "id": "D.3",
+          "speaker": "Kim",
+          "text": "I like mangoes, but I don’t like watermelons",
+          "audioText": "I like mangoes, but I don’t like watermelons."
+        },
+        {
+          "id": "D.4",
+          "speaker": "Ana",
+          "text": "My mother loves watermelons! Do you like carrots?",
+          "audioText": "My mother loves watermelons! Do you like carrots?"
+        },
+        {
+          "id": "D.5",
+          "speaker": "Kim",
+          "text": "Yes, I do. How much are they?",
+          "audioText": "Yes, I do. How much are they?"
+        },
+        {
+          "id": "D.6",
+          "speaker": "Ana",
+          "text": "They’re two dollars",
+          "audioText": "They’re two dollars."
+        }
+      ],
+      "questions": [
+        {
+          "id": "price",
+          "prompt": "How much are the carrots?",
+          "cue": "Say the price in the conversation",
+          "hint": "They’re … dollars",
+          "answer": "They’re two dollars"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "kind": "questions",
+      "title": "Food you enjoy",
+      "instruction": "Talk about your tastes, then ask your teacher",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "like",
+          "prompt": "What fruit do you like?",
+          "cue": "Say what you like and ask me",
+          "hint": "I like … Do you like …?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "someone",
+          "prompt": "What does someone in your family like?",
+          "cue": "Say one thing, if you know",
+          "hint": "My … likes … / I’m not sure",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "kind": "grammar",
+      "title": "Like and likes",
+      "instruction": "Use the verb for who is speaking",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Who",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "i",
+          "subject": "I / you",
+          "verb": "like / don’t like",
+          "example": "I like mangoes. I don’t like oranges."
+        },
+        {
+          "id": "she",
+          "subject": "She / he",
+          "verb": "likes / doesn’t like",
+          "example": "She likes bananas. She doesn’t like onions."
+        },
+        {
+          "id": "q",
+          "subject": "Ask",
+          "verb": "Do you like …?",
+          "example": "Do you like apples? Yes, I do. / No, I don’t."
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "kind": "dialogue",
+      "title": "At the market with Kim",
+      "instruction": "Say the missing words and ask about someone else’s tastes",
+      "minutes": 3,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "G.1",
+          "speaker": "Kim",
+          "text": "Do you like apples?",
+          "audioText": "Do you like apples?",
+          "parts": [
+            "Do you ",
+            {
+              "id": "A105.g1",
+              "answer": "like"
+            },
+            " apples?"
+          ]
+        },
+        {
+          "id": "G.2",
+          "speaker": "Ana",
+          "text": "Yes, I do. I love apples",
+          "audioText": "Yes, I do. I love apples.",
+          "parts": [
+            "Yes, I ",
+            {
+              "id": "A105.g2",
+              "answer": "do"
+            },
+            ". I love apples"
+          ]
+        },
+        {
+          "id": "G.3",
+          "speaker": "Kim",
+          "text": "My sister likes bananas. What about you?",
+          "audioText": "My sister likes bananas. What about you?",
+          "parts": [
+            "My sister ",
+            {
+              "id": "A105.g3",
+              "answer": "likes"
+            },
+            " bananas. What about you?"
+          ]
+        },
+        {
+          "id": "G.4",
+          "speaker": "Ana",
+          "text": "I like bananas, but I don’t like onions",
+          "audioText": "I like bananas, but I don’t like onions.",
+          "parts": [
+            "I like bananas, but I ",
+            {
+              "id": "A105.g4",
+              "answer": "don’t like"
+            },
+            " onions"
+          ]
+        },
+        {
+          "id": "G.5",
+          "speaker": "Kim",
+          "text": "Does your mother like onions?",
+          "audioText": "Does your mother like onions?",
+          "parts": [
+            {
+              "id": "A105.g5",
+              "answer": "Does"
+            },
+            " your mother like onions?"
+          ]
+        },
+        {
+          "id": "G.6",
+          "speaker": "Ana",
+          "text": "No, she doesn’t. She likes carrots",
+          "audioText": "No, she doesn’t. She likes carrots.",
+          "parts": [
+            "No, she ",
+            {
+              "id": "A105.g6",
+              "answer": "doesn’t"
+            },
+            ". She likes carrots"
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "g",
+          "prompt": "Does the mother like onions?",
+          "cue": "Use what Ana says",
+          "hint": "No. She likes …",
+          "answer": "No, she doesn’t. She likes carrots"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "kind": "activity",
+      "title": "Let’s buy some fruit",
+      "instruction": "Choose two fruits and ask me the price",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "Kim’s shopping request",
+      "instruction": "Listen for what Kim wants and what she doesn’t want",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Can you buy a banana and a mango for me? I don’t want oranges today. The banana is for Jin. She loves fruit. I’ll meet you at the market on Saturday. Thank you!",
+      "audioId": "L81.1",
+      "greeting": "Can you get some fruit for me?",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What fruit does Kim want?",
+          "cue": "Name the two fruits",
+          "hint": "She wants … and …",
+          "answer": "A banana and a mango"
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "activity",
+      "title": "Place Kim’s order",
+      "instruction": "Use the voice note to ask for Kim’s fruit and check the price",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s12",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Prepare a small shopping conversation",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "A small order",
+          "description": "Choose two fruits, ask the price and say what you would buy"
+        },
+        {
+          "title": "Someone else’s tastes",
+          "description": "Say one food someone likes and one they don’t like, or use the example characters"
+        }
+      ]
+    }
+  ]
+}

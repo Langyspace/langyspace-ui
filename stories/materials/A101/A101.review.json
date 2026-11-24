@@ -1,0 +1,275 @@
+{
+  "version": 80,
+  "code": "A1.01",
+  "title": "Introduce yourself",
+  "openingMinutes": 2,
+  "freeConversationMinutes": 12,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "vocabulary",
+      "title": "Where are you from?",
+      "instruction": "Name the countries, then click to check and listen",
+      "minutes": 2,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "vocab80.0",
+          "word": "Brazil",
+          "translation": "Brasil",
+          "imageUrl": "flag-br",
+          "imageAlt": "Flag of Brazil",
+          "example": "I’m from Brazil",
+          "audioId": "FS80.0",
+          "audioText": "Brazil. I’m from Brazil."
+        },
+        {
+          "id": "vocab80.1",
+          "word": "South Korea",
+          "translation": "Coreia do Sul",
+          "imageUrl": "flag-kr",
+          "imageAlt": "Flag of South Korea",
+          "example": "I’m from South Korea",
+          "audioId": "FS80.1",
+          "audioText": "South Korea. I’m from South Korea."
+        },
+        {
+          "id": "vocab80.2",
+          "word": "the United States",
+          "translation": "Estados Unidos",
+          "imageUrl": "flag-us",
+          "imageAlt": "Flag of the United States",
+          "example": "I’m from the United States",
+          "audioId": "FS80.2",
+          "audioText": "the United States. I’m from the United States."
+        }
+      ],
+      "isolated": true,
+      "alignHeading": true
+    },
+    {
+      "id": "s4",
+      "kind": "vocabulary",
+      "title": "How do you feel?",
+      "instruction": "Name the feelings, then click to check and listen",
+      "minutes": 3,
+      "eyebrow": "Vocabulary",
+      "items": [
+        {
+          "id": "vocab80.3",
+          "word": "happy",
+          "translation": "feliz",
+          "imageUrl": "scene-happy-mia",
+          "imageAlt": "A smiling person celebrating",
+          "example": "I’m happy",
+          "audioId": "FS80.3",
+          "audioText": "happy. I’m happy."
+        },
+        {
+          "id": "vocab80.4",
+          "word": "tired",
+          "translation": "cansado(a)",
+          "imageUrl": "scene-tired-tom",
+          "imageAlt": "A tired person yawning",
+          "example": "I’m tired",
+          "audioId": "FS80.4",
+          "audioText": "tired. I’m tired."
+        },
+        {
+          "id": "vocab80.5",
+          "word": "hungry",
+          "translation": "com fome",
+          "imageUrl": "scene-hungry-ana",
+          "imageAlt": "Ana looking at food because she is hungry",
+          "example": "I’m hungry",
+          "audioId": "FS80.5",
+          "audioText": "hungry. I’m hungry."
+        }
+      ],
+      "alignHeading": true
+    },
+    {
+      "id": "s6",
+      "kind": "dialogue",
+      "title": "Nice to meet you",
+      "instruction": "Listen as Ana and Kim meet, then read together",
+      "minutes": 6,
+      "eyebrow": "Guided conversation",
+      "lines": [
+        {
+          "id": "R.T1",
+          "speaker": "Kim",
+          "text": "Hi! I’m Kim. I’m from Korea",
+          "audioText": "Hi! I’m Kim. I’m from Korea.",
+          "translation": "Oi! Eu sou a Kim. Eu sou da Coreia"
+        },
+        {
+          "id": "R.T2",
+          "speaker": "Ana",
+          "text": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you",
+          "audioText": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you.",
+          "translation": "Oi, Kim! Eu sou a Ana. Eu sou do Brasil. Prazer em te conhecer"
+        },
+        {
+          "id": "R.T3",
+          "speaker": "Kim",
+          "text": "Nice to meet you too. How are you?",
+          "audioText": "Nice to meet you too. How are you?",
+          "translation": "O prazer é meu. Como você está?"
+        },
+        {
+          "id": "R.T4",
+          "speaker": "Ana",
+          "text": "I’m good, thanks. I’m hungry! And you?",
+          "audioText": "I’m good, thanks. I’m hungry! And you?",
+          "translation": "Estou bem, obrigada. Estou com fome! E você?"
+        },
+        {
+          "id": "R80.5",
+          "speaker": "Kim",
+          "text": "I’m tired, but I’m happy. Welcome, Ana!",
+          "audioText": "I’m tired, but I’m happy. Welcome, Ana!",
+          "translation": "Estou cansada, mas estou feliz. Bem-vinda, Ana!"
+        },
+        {
+          "id": "R80.6",
+          "speaker": "Ana",
+          "text": "Thank you! It’s nice to be here",
+          "audioText": "Thank you! It’s nice to be here.",
+          "translation": "Obrigada! É bom estar aqui"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Where is Kim from?",
+          "cue": "Say the country",
+          "hint": "From …",
+          "answer": "From Korea"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "kind": "questions",
+      "title": "Introduce yourself",
+      "instruction": "Answer about yourself, then ask your teacher",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "name",
+          "prompt": "What’s your name?",
+          "cue": "Say your name and ask me",
+          "hint": "My name is … What’s your name?",
+          "answer": "One possible response"
+        },
+        {
+          "id": "country",
+          "prompt": "Where are you from?",
+          "cue": "Say where you’re from",
+          "hint": "I’m from … What about you?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s71",
+      "kind": "grammar",
+      "title": "I’m and you’re",
+      "instruction": "Use be for a name, a country or a feeling",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "me",
+          "subject": "About me",
+          "verb": "I am → I’m",
+          "example": "I’m Ana. I’m from Brazil. I’m happy."
+        },
+        {
+          "id": "you",
+          "subject": "About you",
+          "verb": "You are → You’re",
+          "example": "You’re Kim. You’re from South Korea."
+        },
+        {
+          "id": "name",
+          "subject": "A name",
+          "verb": "My name is + name",
+          "example": "My name is Ana."
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "kind": "activity",
+      "title": "Meet someone new",
+      "instruction": "Be the person on the card. Introduce yourself and ask two questions",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s9",
+      "kind": "listening",
+      "title": "A new friend at the café",
+      "instruction": "Listen to Kim, then get ready to say hello",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry",
+      "audioText": "Hi! It’s Kim. This is my friend Mia. Mia is from the United States. We’re at the café. Come and say hello! I’m happy you’re here. How are you today? Are you hungry?",
+      "audioId": "L80.1",
+      "greeting": "Come and meet my friend!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Where is Kim’s friend Mia from?",
+          "cue": "Say the country",
+          "hint": "From …",
+          "answer": "From the United States"
+        }
+      ]
+    },
+    {
+      "id": "s91",
+      "kind": "questions",
+      "title": "Say hello to Mia",
+      "instruction": "Greet your new friend and say how you feel",
+      "minutes": 3,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "greet",
+          "prompt": "Hi! How are you?",
+          "cue": "Greet Mia, say your name and how you feel",
+          "hint": "Hi, Mia! I’m … I’m … Nice to meet you!",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a short introduction and two questions",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Your introduction",
+          "description": "Record your name, where you’re from and how you feel"
+        },
+        {
+          "title": "Your questions",
+          "description": "Listen to the dialogue again. Practise asking a name and how someone feels without reading"
+        }
+      ]
+    }
+  ]
+}

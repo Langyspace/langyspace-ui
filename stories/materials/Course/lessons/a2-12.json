@@ -1,0 +1,401 @@
+{
+  "version": 81,
+  "code": "A2.12",
+  "key": "a2-12",
+  "title": "How about Friday?",
+  "goal": "Agree on a social plan and update it when someone cannot attend",
+  "freeConversationInstruction": "Plan something together and use questions, reactions and alternatives to keep the conversation going",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how to suggest a backup",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What will you do if the first plan doesn’t work?",
+          "cue": "Offer a realistic alternative",
+          "hint": "If …, we’ll …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Organising a get-together",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-12-vocabulary81",
+        "alt": "Six illustrated situations for How about Friday?",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A212-V81.0",
+          "label": "book a table",
+          "prompt": "",
+          "example": "I’ll book a table for four",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A212-FS81.0",
+          "audioText": "book a table. I’ll book a table for four."
+        },
+        {
+          "id": "A212-V81.1",
+          "label": "send an invitation",
+          "prompt": "",
+          "example": "Can you send the invitation?",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A212-FS81.1",
+          "audioText": "send an invitation. Can you send the invitation?"
+        },
+        {
+          "id": "A212-V81.2",
+          "label": "bring a gift",
+          "prompt": "",
+          "example": "Would you like to bring a gift?",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A212-FS81.2",
+          "audioText": "bring a gift. Would you like to bring a gift?"
+        },
+        {
+          "id": "A212-V81.3",
+          "label": "split the bill",
+          "prompt": "",
+          "example": "Let’s split the bill",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A212-FS81.3",
+          "audioText": "split the bill. Let’s split the bill."
+        },
+        {
+          "id": "A212-V81.4",
+          "label": "cancel a booking",
+          "prompt": "",
+          "example": "We need to cancel the booking",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A212-FS81.4",
+          "audioText": "cancel a booking. We need to cancel the booking."
+        },
+        {
+          "id": "A212-V81.5",
+          "label": "change the date",
+          "prompt": "",
+          "example": "Could we change the date to Saturday?",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A212-FS81.5",
+          "audioText": "change the date. Could we change the date to Saturday?"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Choosing a place",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A212-D81.1",
+          "speaker": "Kim",
+          "text": "How about dinner on Friday? We could invite two friends",
+          "audioText": "How about dinner on Friday? We could invite two friends.",
+          "translation": "Que tal jantar na sexta? Poderíamos convidar duas amigas"
+        },
+        {
+          "id": "A212-D81.2",
+          "speaker": "Ana",
+          "text": "That sounds good. Why don’t we try the River Café?",
+          "audioText": "That sounds good. Why don’t we try the River Café?",
+          "translation": "Parece bom. Por que não experimentamos o River Café?"
+        },
+        {
+          "id": "A212-D81.3",
+          "speaker": "Kim",
+          "text": "It’s cheaper, but there are steps at the entrance. Is that a problem?",
+          "audioText": "It’s cheaper, but there are steps at the entrance. Is that a problem?",
+          "translation": "É mais barato, mas tem degraus na entrada. Isso é um problema?"
+        },
+        {
+          "id": "A212-D81.4",
+          "speaker": "Ana",
+          "text": "One friend needs step-free access. The Garden Table would be easier",
+          "audioText": "One friend needs step-free access. The Garden Table would be easier.",
+          "translation": "Uma amiga precisa de acesso sem degraus. O Garden Table seria mais fácil"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why is the Garden Table a better fit for this group?",
+          "cue": "Use the guest’s need",
+          "hint": "Because …",
+          "answer": "Because it has step-free access"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Checking before booking",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A212-D81.5",
+          "speaker": "Kim",
+          "text": "Good point. Shall we book for seven?",
+          "audioText": "Good point. Shall we book for seven?",
+          "translation": "Bem lembrado. Vamos reservar para as sete?"
+        },
+        {
+          "id": "A212-D81.6",
+          "speaker": "Ana",
+          "text": "Yes. I’ll check everyone’s availability first",
+          "audioText": "Yes. I’ll check everyone’s availability first.",
+          "translation": "Sim. Vou conferir a disponibilidade de todos primeiro"
+        },
+        {
+          "id": "A212-D81.7",
+          "speaker": "Kim",
+          "text": "Thanks. I can book the table when they reply",
+          "audioText": "Thanks. I can book the table when they reply.",
+          "translation": "Obrigada. Posso reservar a mesa quando responderem"
+        },
+        {
+          "id": "A212-D81.8",
+          "speaker": "Ana",
+          "text": "Great. Let’s split the bill so it’s simple for everyone",
+          "audioText": "Great. Let’s split the bill so it’s simple for everyone.",
+          "translation": "Ótimo. Vamos dividir a conta para ficar simples para todos"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why do they wait before booking?",
+          "cue": "Give the practical reason",
+          "hint": "They need to …",
+          "answer": "They need to check everyone’s availability"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Suggest another time",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "How about dinner on Friday?",
+          "cue": "Accept or give a reason and suggest another option",
+          "hint": "That sounds good / I’d love to, but …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Which place should we choose?",
+          "cue": "Compare the options and ask your teacher’s opinion",
+          "hint": "I think … because … What do you think?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Suggest, respond and agree",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Suggest a possibility",
+          "verb": "How about + noun / verb-ing?",
+          "example": "How about dinner on Friday?"
+        },
+        {
+          "id": "1",
+          "subject": "Propose a shared action",
+          "verb": "Why don’t we + verb? / Let’s + verb",
+          "example": "Why don’t we book a table? Let’s check first"
+        },
+        {
+          "id": "2",
+          "subject": "Respond and offer an alternative",
+          "verb": "That sounds … / I’d love to, but …",
+          "example": "I’d love to, but I can’t on Friday. How about Saturday?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Plan the whole evening",
+      "instruction": "Invite me, agree on a place and confirm the plan",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A friend can only come on Saturday",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I heard from our friends. One of them can’t come on Friday, but everyone is free on Saturday at eight. We still need step-free access, and twenty dollars each is OK. Could you change the date before you book? The Garden Table has a table on Saturday. Let me know what you decide, and I’ll send the invitation",
+      "audioText": "Hi, Ana! I heard from our friends. One of them can’t come on Friday, but everyone is free on Saturday at eight. We still need step-free access, and twenty dollars each is OK. Could you change the date before you book? The Garden Table has a table on Saturday. Let me know what you decide, and I’ll send the invitation.",
+      "audioId": "A212-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What needs to change?",
+          "cue": "Identify the restriction and propose an updated plan",
+          "hint": "We need to …, so we could …",
+          "answer": "We need to change Friday to Saturday at eight and keep step-free access"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Confirm the complete plan",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Agree on a social plan and update it when someone cannot attend"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Dinner for four · one guest needs step-free access",
+      "options": [
+        {
+          "id": "river",
+          "title": "River Café",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": "About $15 each"
+            },
+            {
+              "id": "1",
+              "label": "Access",
+              "value": "Near the station · steps at entrance"
+            },
+            {
+              "id": "2",
+              "label": "Booking",
+              "value": "Friday 7 pm or Saturday 8 pm"
+            }
+          ]
+        },
+        {
+          "id": "garden",
+          "title": "Garden Table",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": "About $20 each"
+            },
+            {
+              "id": "1",
+              "label": "Access",
+              "value": "Bus stop outside · step-free"
+            },
+            {
+              "id": "2",
+              "label": "Booking",
+              "value": "Friday 7 pm or Saturday 8 pm"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "dinner",
+          "prompt": "Which place should we choose?",
+          "cue": "Invite me, compare the places and confirm a possible time",
+          "hint": "How about …? I think … because … Shall we …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Ready to confirm",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Day and time",
+          "value": "Saturday · 8 pm"
+        },
+        {
+          "id": "1",
+          "label": "Place",
+          "value": "Garden Table · step-free"
+        },
+        {
+          "id": "2",
+          "label": "Budget",
+          "value": "About $20 each"
+        }
+      ],
+      "questions": [
+        {
+          "id": "confirm",
+          "prompt": "What will you tell the group?",
+          "cue": "Confirm who, where and when. Say who will book or invite",
+          "hint": "Let’s meet … at … I’ll … Can you …?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "originalPages": 12,
+  "renderedScreens": 17,
+  "plannedMinutes": 50.0,
+  "pages": [
+    {
+      "id": "s1",
+      "originalPage": 1,
+      "title": "Dead phone, no charger",
+      "learningObjective": "Retrieve and justify prior opinions, then initiate follow-up questions.",
+      "layout": "Numbered prompts + large paired review images",
+      "realComponentReuse": "SourceQuestions / existing Lab review",
+      "minutes": 3,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s1.png",
+      "after": "evidence/after/original-1440-s1-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s2",
+      "originalPage": 2,
+      "title": "No battery",
+      "learningObjective": "Retrieve seven travel words from whole contextual images; explain an object’s use.",
+      "layout": "Four/two-column image grid; word/translation below image after reveal",
+      "realComponentReuse": "VocabularyGrid / Lab vocab",
+      "minutes": 4,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s2.png",
+      "after": "evidence/after/original-1440-s2-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s31",
+      "originalPage": 3,
+      "title": "Choose the correct answer.",
+      "learningObjective": "Connect a prior ongoing activity to the phone dying.",
+      "layout": "Question + large scene + choices + personal follow-up",
+      "realComponentReuse": "ExercisePanel + QuizOption / Lab multipla",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s31.png",
+      "after": "evidence/after/original-1440-s31-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s32",
+      "originalPage": 3,
+      "title": "Choose the correct answer.",
+      "learningObjective": "Distinguish duration before a past event from elapsed time since it.",
+      "layout": "Try orally, reveal choices, recover after an error",
+      "realComponentReuse": "ExercisePanel + QuizOption / Lab multipla",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s32.png",
+      "after": "evidence/after/original-1440-s32-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s33",
+      "originalPage": 3,
+      "title": "Choose the correct answer.",
+      "learningObjective": "Distinguish borrowing from lending, then ask a personal question.",
+      "layout": "Question + power bank + choice + follow-up",
+      "realComponentReuse": "ExercisePanel + QuizOption / Lab multipla",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s33.png",
+      "after": "evidence/after/original-1440-s33-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s4",
+      "originalPage": 4,
+      "title": "Expressions",
+      "learningObjective": "Retrieve expressions and use them in an account of getting lost.",
+      "layout": "Answer-reveal table, short support after all rows",
+      "realComponentReuse": "GrammarTable / Lab traducao",
+      "minutes": 3,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s4.png",
+      "after": "evidence/after/original-1440-s4-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s51",
+      "originalPage": 5,
+      "title": "I’d walked or I’d been walking?",
+      "learningObjective": "Hear the contracted form and distinguish completed action from activity.",
+      "layout": "Recorded minimal pair, immediate feedback and retry",
+      "realComponentReuse": "MinimalPairExercise / Lab minimal pairs",
+      "minutes": 1.5,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s51.png",
+      "after": "evidence/after/original-1440-s51-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s52",
+      "originalPage": 5,
+      "title": "I’ve been or I’d been?",
+      "learningObjective": "Hear present-perfect vs past-perfect contractions.",
+      "layout": "Same voice, two verified ElevenLabs clips, no browser fallback",
+      "realComponentReuse": "MinimalPairExercise / Lab minimal pairs",
+      "minutes": 1.5,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s52.png",
+      "after": "evidence/after/original-1440-s52-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s6",
+      "originalPage": 6,
+      "title": "How was New York? (1/2)",
+      "learningObjective": "Read naturally with the teacher and explain the background to a problem.",
+      "layout": "Six dialogue turns; optional per-line translation",
+      "realComponentReuse": "LearningDialogue / Lab guided",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s6.png",
+      "after": "evidence/after/original-1440-s6-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s62",
+      "originalPage": 6,
+      "title": "How was New York? (2/2)",
+      "learningObjective": "Continue the story and explain the eventual result.",
+      "layout": "Six dialogue turns; optional per-line translation",
+      "realComponentReuse": "LearningDialogue / Lab guided",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s62.png",
+      "after": "evidence/after/original-1440-s62-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s63",
+      "originalPage": 6,
+      "title": "Questions",
+      "learningObjective": "Recall and support answers about the story.",
+      "layout": "Three reveal questions after an oral attempt",
+      "realComponentReuse": "RevealCard / Lab comp",
+      "minutes": 2,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s63.png",
+      "after": "evidence/after/original-1440-s63-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s7",
+      "originalPage": 7,
+      "title": "What had been happening?",
+      "learningObjective": "Contrast four past narrative forms; ask and negate past-perfect continuous.",
+      "layout": "Concise meaning, optional form/meaning details, revealed examples",
+      "realComponentReuse": "GrammarTable / Lab tentar",
+      "minutes": 5,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s7.png",
+      "after": "evidence/after/original-1440-s7-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s8",
+      "originalPage": 8,
+      "title": "Your bad day",
+      "learningObjective": "Produce a new version and initiate the questions when roles swap.",
+      "layout": "Progressive learner turns; optional starters; role swap",
+      "realComponentReuse": "LearningDialogue / Lab chatplay",
+      "minutes": 5,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s8.png",
+      "after": "evidence/after/original-1440-s8-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s9",
+      "originalPage": 9,
+      "title": "A message from Raj",
+      "learningObjective": "Listen for facts, correct false statements and report the message with inference.",
+      "layout": "Voice message + yes/no; transcript only on second listen; natural 1x duration",
+      "realComponentReuse": "VoiceMessageExercise / Lab simnao",
+      "minutes": 5,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s9.png",
+      "after": "evidence/after/original-1440-s9-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s10",
+      "originalPage": 10,
+      "title": "Right or wrong?",
+      "learningObjective": "Notice and repair grammar, lexical transfer and unnatural collocations.",
+      "layout": "Classify orally, reveal/check, repair one sentence from the lesson",
+      "realComponentReuse": "RevealCard / Lab certo",
+      "minutes": 3,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s10.png",
+      "after": "evidence/after/original-1440-s10-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s11",
+      "originalPage": 11,
+      "title": "Everything went wrong",
+      "learningObjective": "Sustain and retell a narrative, respond to a contradiction and ask follow-ups.",
+      "layout": "Whole scene board, optional starters, planning fields and teacher tracker",
+      "realComponentReuse": "RolePlayExercise / Lab roleplay",
+      "minutes": 6,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s11.png",
+      "after": "evidence/after/original-1440-s11-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    },
+    {
+      "id": "s12",
+      "originalPage": 12,
+      "title": "Before next class",
+      "learningObjective": "Prepare autonomous recall, a one-minute story and follow-up questions.",
+      "layout": "Three concrete oral practice tasks; no invented platform actions",
+      "realComponentReuse": "Static numbered prompts / Lab challenge",
+      "minutes": 1,
+      "reviewDecision": "Preserve objective/content; simplify instructions, dark-only, continuous scroll and record-only audio.",
+      "baseline": "evidence/before/original-1440-s12.png",
+      "after": "evidence/after/original-1440-s12-viewport.png",
+      "widths": [
+        1440,
+        390,
+        320
+      ]
+    }
+  ]
+}

@@ -21,6 +21,187 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'PracticePair',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Practice/PracticePair.tsx',
+    runtimeMarker: 'lsui-sc-practice-pair',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Practice/PracticePair.stories.tsx',
+      title: 'Practice/PracticePair',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Practice/PracticePair.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Practice/PracticePair.types.ts',
+      documentation: {
+        path: 'docs/components/practice-pair.md',
+        anchor: 'practicepair',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-ui',
+          path: 'stories/materials/shared/LessonPractice.tsx',
+        },
+      ],
+    },
+  },
+  {
+    exportName: 'MessagePhoneFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MessagePhoneFrame.tsx',
+    runtimeMarker: 'lsui-sc-message-phone-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MessagePhoneFrame.stories.tsx',
+      title: 'Device/MessagePhoneFrame',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Device/MessagePhoneFrame.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Device/MessagePhoneFrame.types.ts',
+      documentation: {
+        path: 'docs/components/message-phone-frame.md',
+        anchor: 'messagephoneframe',
+      },
+      consumers: [],
+    },
+  },
+  {
+    exportName: 'MeetingFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MeetingFrame.tsx',
+    runtimeMarker: 'lsui-sc-meeting-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MeetingFrame.stories.tsx',
+      title: 'Device/MeetingFrame',
+    },
+    test: { ...complete, path: 'test/components/Device/MeetingFrame.test.tsx' },
+    reference: {
+      propsPath: 'src/components/Device/MeetingFrame.types.ts',
+      documentation: {
+        path: 'docs/components/meeting-frame.md',
+        anchor: 'meetingframe',
+      },
+      consumers: [],
+    },
+  },
+  {
+    exportName: 'ComicRolePlay',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/ComicRolePlay.tsx',
+    runtimeMarker: 'lsui-sc-comic-role-play',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ComicRolePlay.stories.tsx',
+      title: 'Exercise/ComicRolePlay',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ComicRolePlay.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/ComicRolePlay.types.ts',
+      documentation: {
+        path: 'docs/components/comic-role-play.md',
+        anchor: 'comicroleplay',
+      },
+      consumers: [],
+    },
+  },
+  {
+    exportName: 'ImageSortBoard',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/ImageSortBoard.tsx',
+    runtimeMarker: 'lsui-sc-image-sort-board',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/ImageSortBoard.stories.tsx',
+      title: 'Exercise/ImageSortBoard',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/ImageSortBoard.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/ImageSortBoard.types.ts',
+      documentation: {
+        path: 'docs/components/image-sort-board.md',
+        anchor: 'imagesortboard',
+      },
+      consumers: [],
+    },
+  },
+  {
+    exportName: 'PictureStrip',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Exercise/PictureStrip.tsx',
+    runtimeMarker: 'lsui-sc-picture-strip',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/PictureStrip.stories.tsx',
+      title: 'Exercise/PictureStrip',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/PictureStrip.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/PictureStrip.types.ts',
+      documentation: {
+        path: 'docs/components/picture-strip.md',
+        anchor: 'picturestrip',
+      },
+      consumers: [],
+    },
+  },
+  {
+    exportName: 'MobileFrame',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/Device/MobileFrame.tsx',
+    runtimeMarker: 'lsui-sc-mobile-frame',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Device/MobileFrame.stories.tsx',
+      title: 'Device/MobileFrame',
+    },
+    test: { ...complete, path: 'test/components/Device/MobileFrame.test.tsx' },
+    reference: {
+      propsPath: 'src/components/Device/MobileFrame.types.ts',
+      documentation: {
+        path: 'docs/components/mobile-frame.md',
+        anchor: 'mobileframe',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'RevealSequenceCard',
     interactive: true,
     visual: true,
@@ -227,6 +408,32 @@ export const publicComponentContracts = [
       documentation: {
         path: 'docs/components/ux-lab.md',
         anchor: 'sceneexplorer',
+      },
+      consumers: [],
+    },
+    visual: true,
+  },
+  {
+    browserSmoke: complete,
+    exportName: 'RouteMap',
+    interactive: true,
+    ownerPath: 'src/components/InteractiveMaterial/RouteMap.tsx',
+    runtimeMarker: 'lsui-sc-route-map',
+    ssrSmoke: complete,
+    story: {
+      status: 'complete',
+      path: 'stories/components/UXLab/UXLab.stories.tsx',
+      title: 'Exercise/UX Lab',
+    },
+    test: {
+      status: 'complete',
+      path: 'test/components/Exercise/RouteMap.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/InteractiveMaterial/RouteMap.types.ts',
+      documentation: {
+        path: 'docs/components/ux-lab.md',
+        anchor: 'routemap',
       },
       consumers: [],
     },
@@ -547,13 +754,48 @@ export const publicComponentContracts = [
     },
     visual: true,
   },
-  ...(['SlideDeck', 'SlidePage'] as const).map((exportName) => ({
+  {
+    exportName: 'SlideNotesWindow',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Slide/SlideNotesWindow.tsx',
+    runtimeMarker: 'lsui-sc-slide-notes-window',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Slide/SlideNotesWindow.stories.tsx',
+      title: 'Slide/SlideNotesWindow',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Slide/SlideNotesWindow.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Slide/SlideNotesWindow.types.ts',
+      documentation: {
+        path: 'docs/components/slides.md',
+        anchor: 'slidenoteswindow',
+      },
+      consumers: [
+        {
+          repository: 'langyspace-teacher',
+          path: 'src/pages/LessonNotesPopup/index.tsx',
+        },
+      ],
+    },
+  },
+  ...(['SlideDeck', 'SlidePage', 'SlideNotes'] as const).map((exportName) => ({
     browserSmoke: complete,
     exportName,
-    interactive: exportName === 'SlideDeck',
+    interactive: exportName !== 'SlidePage',
     ownerPath: `src/components/Slide/${exportName}.tsx`,
     runtimeMarker:
-      exportName === 'SlideDeck' ? 'lsui-sc-slide-deck' : 'lsui-sc-slide-page',
+      exportName === 'SlideDeck'
+        ? 'lsui-sc-slide-deck'
+        : exportName === 'SlideNotes'
+          ? 'lsui-sc-slide-notes'
+          : 'lsui-sc-slide-page',
     ssrSmoke: complete,
     story: {
       ...complete,

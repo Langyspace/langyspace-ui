@@ -1,0 +1,1642 @@
+[
+  {
+    "dpr": 1,
+    "width": 1280,
+    "height": 800,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 1,
+    "width": 1280,
+    "height": 620,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 1,
+    "width": 700,
+    "height": 800,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 580.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 324,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 337,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 337,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 566.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 700,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 580.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 324,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 337,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 337,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 566.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 700,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 1,
+    "width": 390,
+    "height": 844,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 270.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 16,
+            "y": 64,
+            "width": 358,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 29,
+            "y": 81.796875,
+            "width": 219.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 29,
+            "y": 117,
+            "width": 332,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 256.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 390,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 270.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 16,
+            "y": 64,
+            "width": 358,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 29,
+            "y": 81.796875,
+            "width": 219.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 29,
+            "y": 117,
+            "width": 332,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 256.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 390,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 2,
+    "width": 1280,
+    "height": 800,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 2,
+    "width": 1280,
+    "height": 620,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 1144.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 904,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 917,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 917,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 1146.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 1280,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 2,
+    "width": 700,
+    "height": 800,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 580.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 324,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 337,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 337,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 566.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 700,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 580.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 324,
+            "y": 64,
+            "width": 360,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 337,
+            "y": 81.796875,
+            "width": 221.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 337,
+            "y": 117,
+            "width": 334,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 566.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 700,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  },
+  {
+    "dpr": 2,
+    "width": 390,
+    "height": 844,
+    "states": [
+      {
+        "source": "source",
+        "trigger": {
+          "rect": {
+            "x": 270.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 16,
+            "y": 64,
+            "width": 358,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 29,
+            "y": 81.796875,
+            "width": 219.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 29,
+            "y": 117,
+            "width": 332,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 256.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 390,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        }
+      },
+      {
+        "source": "current",
+        "trigger": {
+          "rect": {
+            "x": 270.34375,
+            "y": 7.5,
+            "width": 103.65625,
+            "height": 40
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "15px",
+          "line": "20px",
+          "padding": "8px 16px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(138, 133, 136)",
+          "radius": "999px"
+        },
+        "panel": {
+          "rect": {
+            "x": 16,
+            "y": 64,
+            "width": 358,
+            "height": 440
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(228, 228, 228)",
+          "radius": "8px"
+        },
+        "title": {
+          "rect": {
+            "x": 29,
+            "y": 81.796875,
+            "width": 219.109375,
+            "height": 22.390625
+          },
+          "font": "\"Space Grotesk\", system-ui, sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "0px none rgb(247, 247, 247)",
+          "radius": "0px"
+        },
+        "editor": {
+          "rect": {
+            "x": 29,
+            "y": 117,
+            "width": 332,
+            "height": 374
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "24px",
+          "padding": "12px",
+          "bg": "rgb(17, 17, 19)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "8px"
+        },
+        "clear": {
+          "rect": {
+            "x": 256.109375,
+            "y": 77,
+            "width": 60.96875,
+            "height": 32
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "13px",
+          "line": "20px",
+          "padding": "4px 12px",
+          "bg": "rgb(26, 26, 28)",
+          "fg": "rgb(247, 247, 247)",
+          "border": "1px solid rgb(46, 46, 49)",
+          "radius": "999px"
+        },
+        "progress": {
+          "rect": {
+            "x": 0,
+            "y": 53,
+            "width": 390,
+            "height": 3
+          },
+          "font": "Montserrat, system-ui, -apple-system, \"system-ui\", \"Segoe UI\", sans-serif",
+          "size": "16px",
+          "line": "22.4px",
+          "padding": "0px",
+          "bg": "rgba(0, 0, 0, 0)",
+          "fg": "rgb(255, 31, 92)",
+          "border": "0px none rgb(255, 31, 92)",
+          "radius": "0px"
+        }
+      }
+    ]
+  }
+]

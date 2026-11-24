@@ -2,6 +2,16 @@
 
 ## VoiceMessageExercise
 
+`attachment={{ src, alt, timestamp? }}` adds a real shared photo between the
+greeting and voice note. The image keeps its natural ratio and has native alt text;
+it does not reveal the transcript or change listen counting. A listening task
+about a photo must supply that photo rather than referring to absent content.
+
+An evaluated choice can provide `feedbackOutcome: 'correct' | 'wrong'` for the
+shared short answer sound on its click. The existing `feedback` field still owns
+the displayed result after evaluation. Omit the outcome for ungraded choices;
+recorded speech and listening counts are independent of the answer-sound toggle.
+
 A reusable phone listening exercise with device frame, notch/status bar, contact, incoming text and voice note, native playback controls, transcript and question choices. The source is the [current Claude A1.01 listening page](https://claude.ai/artifact/KX94fLxvBjhqmz8VmHpjgr), inspected in the browser on 2026-11-16; measurements and source limitations are recorded in the epic plan.
 
 ```tsx
@@ -40,3 +50,23 @@ Current consumer status: new shared-library API; teacher/student adoption follow
 Each question can receive optional `feedback` content, supplied by the consumer after an answer. It is announced as a status and appears below its choices. This allows a correction or inference explanation without putting answer evaluation into the phone component. B1.01 supplies four Yes/No statements and retains the second-listen transcript rule.
 
 `voiceMessage.phoneWidth`, `phoneHeight` and `contentWidth` honor the theme recipe. Use `createTheme` to supply overrides while retaining the remaining device tokens.
+
+An optional `replayActionLabel` adds a follow-up replay control beside the questions. It stays
+disabled until the first native pass ends and disappears on the second native playing pass, when
+the existing transcript unlocks. Pausing or buffering does not enable it. The consumer decides when
+the prompt is appropriate, such as after all four listening statements have been answered.
+
+Native playback pauses when the document becomes hidden. Returning does not autoplay or count a new listening pass.
+
+## Identity on a device surface
+
+The contact header owns its foreground through the voiceMessage recipe. Its canonical named Avatar uses `textTone="inherit"` for name and status so an external dark lesson does not turn the contact name white on a light phone header. Other Avatar consumers retain the existing theme-based default. B1.01 keeps the native phone player and automatic third-listen transcript, uses a responsive larger presentation layout, and removes the unrelated footer task.
+
+
+## Multiple recordings in one conversation
+
+Keep the existing `audio` as the first message and pass optional `additionalAudios` for following recordings with unique content IDs. One phone/header/greeting/composer surrounds every recording bubble. Each uses the canonical recording owner with independent pause/resume, speed, errors and listening/transcript history; ordinal accessible names distinguish its controls and transcript region. The primary root data attributes remain compatible; each bubble also exposes its own audio ID and state. Changing the primary audio identity/source starts a fresh exercise, preserving the existing reset contract. Changing an additional recording resets only that bubble; the primary and other additional clips retain their history.
+
+Native play pauses the other recording elements inside this phone, and native pause invalidates pending playback attempts so a cancelled request cannot surface as a spurious unavailable-audio error. Leaving the slide pauses every recording. Automatic third-listen transcripts apply independently; additional recordings in manual replay mode expose the transcript toggle after their second pass. The original primary follow-up replay action remains unchanged.
+
+TrialA1 combines the approved Ana clips and six grouped questions on one standard-width (47.5rem) page. Its phone dimensions are a consumer theme variation, preserving every other lesson’s sizing. Both default single-message and multiple-message behavior require focused regression coverage. No audio is synthesized by this component.

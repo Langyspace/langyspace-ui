@@ -1,0 +1,244 @@
+{
+  "key": "a2-09",
+  "code": "A2.09",
+  "title": "Long time no see!",
+  "first": {
+    "id": "course-practice-a2-09-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-09-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’ve lived here since 2022"
+          },
+          {
+            "id": "b",
+            "text": "I’ve lived here for 2022"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "2022 é o ponto em que a situação começou. Quando ela continua até agora, usamos since antes desse ponto de partida. Por isso: “I’ve lived here since 2022”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "2022 é o ponto em que a situação começou. Quando ela continua até agora, usamos since antes desse ponto de partida. Por isso: “I’ve lived here since 2022”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q01/completion.mp3"
+      },
+      {
+        "id": "course-a2-09-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She’s worked here for three years"
+          },
+          {
+            "id": "b",
+            "text": "She’s worked here since three years"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Three years é uma duração, não uma data de início. Para esse período de tempo, usamos for. Por isso: “She’s worked here for three years”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Three years é uma duração, não uma data de início. Para esse período de tempo, usamos for. Por isso: “She’s worked here for three years”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q02/completion.mp3"
+      },
+      {
+        "id": "course-a2-09-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "How long you have lived here?"
+          },
+          {
+            "id": "b",
+            "text": "How long have you lived here?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta com present perfect, have vem antes de you. Depois, lived continua no particípio. Por isso: “How long have you lived here?”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta com present perfect, have vem antes de you. Depois, lived continua no particípio. Por isso: “How long have you lived here?”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q03/completion.mp3"
+      },
+      {
+        "id": "course-a2-09-q04",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "When did you moved here?"
+          },
+          {
+            "id": "b",
+            "text": "When did you move here?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O did já mostra que a pergunta está no passado. O verbo seguinte fica move, sem o d do passado. Por isso: “When did you move here?”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O did já mostra que a pergunta está no passado. O verbo seguinte fica move, sem o d do passado. Por isso: “When did you move here?”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q04/completion.mp3"
+      },
+      {
+        "id": "course-a2-09-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I moved here in 2022"
+          },
+          {
+            "id": "b",
+            "text": "I’ve moved here in 2022"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A frase situa a mudança em um ano passado já terminado. Com essa data definida, usamos moved no passado simples. Por isso: “I moved here in 2022”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "A frase situa a mudança em um ano passado já terminado. Com essa data definida, usamos moved no passado simples. Por isso: “I moved here in 2022”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q05/completion.mp3"
+      },
+      {
+        "id": "course-a2-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "We have be neighbours since May"
+          },
+          {
+            "id": "b",
+            "text": "We have been neighbours since May"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de have, precisamos do particípio de be: been. A forma básica be não completa o present perfect. Por isso: “We have been neighbours since May”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Depois de have, precisamos do particípio de be: been. A forma básica be não completa o present perfect. Por isso: “We have been neighbours since May”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-09-quiz/course-a2-09-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-09-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-09.shadowing.01",
+        "displayText": "Long time no see! Are you still living in the same city?",
+        "translation": "Quanto tempo! Você ainda mora na mesma cidade?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-09.shadowing.02",
+        "displayText": "No, I moved to Porto in 2023",
+        "translation": "Não, eu me mudei para o Porto em 2023",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-09.shadowing.03",
+        "displayText": "How long have you lived there?",
+        "translation": "Há quanto tempo você mora lá?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-09.shadowing.04",
+        "displayText": "Since 2023. I really like it, and I’ve made some good friends",
+        "translation": "Desde 2023. Gosto muito de lá e fiz bons amigos",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-09.shadowing.05",
+        "displayText": "That’s great. Have you taken up any new hobbies?",
+        "translation": "Que bom. Você começou algum hobby novo?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-09.shadowing.06",
+        "displayText": "Yes, I started a photography group in 2025",
+        "translation": "Sim, comecei um grupo de fotografia em 2025",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-09.shadowing.07",
+        "displayText": "Do you still go every week?",
+        "translation": "Você ainda vai toda semana?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-09.shadowing.08",
+        "displayText": "I do. We meet on Sundays. What’s changed in your life?",
+        "translation": "Sim. Nos encontramos aos domingos. O que mudou na sua vida?",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

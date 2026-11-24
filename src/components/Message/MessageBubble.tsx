@@ -5,6 +5,7 @@ export function MessageBubble({
   children,
   dateTime,
   side = 'incoming',
+  appearance = 'brand',
   status,
   statusLabel,
   timestamp,
@@ -16,14 +17,15 @@ export function MessageBubble({
       {...props}
       ref={ref}
       $side={side}
+      $appearance={appearance}
       $status={status}
       data-side={side}
       data-status={status}
       data-ui-message-bubble="true"
     >
-      <Styled.Bubble $side={side} $status={status}>
+      <Styled.Bubble $side={side} $status={status} $appearance={appearance}>
         <Styled.Content>{children}</Styled.Content>
-        <Styled.Meta $side={side} $status={status}>
+        <Styled.Meta $side={side} $status={status} $appearance={appearance}>
           <Styled.Timestamp dateTime={dateTime}>{timestamp}</Styled.Timestamp>
           {statusLabel ? <Styled.Status>{statusLabel}</Styled.Status> : null}
         </Styled.Meta>

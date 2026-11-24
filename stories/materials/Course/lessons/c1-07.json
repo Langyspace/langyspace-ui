@@ -1,0 +1,551 @@
+{
+  "version": 81,
+  "code": "C1.07",
+  "key": "c1-07",
+  "title": "Having talked to the team…",
+  "goal": "Brief two audiences with the same facts but different priorities",
+  "freeConversationInstruction": "Discuss how you make complicated information clear and practise summarising each other’s ideas",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall purpose-led proposals",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What is the listener expected to decide?",
+          "cue": "Start with their decision, not your whole history",
+          "hint": "The key issue for you is …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "A briefing with a purpose",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "c1-07-vocabulary81",
+        "alt": "Six illustrated situations for Having talked to the team…",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "C107-V81.0",
+          "label": "a key takeaway",
+          "prompt": "",
+          "example": "The key takeaway is the postponement",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "C107-FS81.0",
+          "audioText": "a key takeaway. The key takeaway is the postponement."
+        },
+        {
+          "id": "C107-V81.1",
+          "label": "a constraint",
+          "prompt": "",
+          "example": "The budget is a constraint",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "C107-FS81.1",
+          "audioText": "a constraint. The budget is a constraint."
+        },
+        {
+          "id": "C107-V81.2",
+          "label": "an outcome",
+          "prompt": "",
+          "example": "Separate an intended outcome from a confirmed decision",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "C107-FS81.2",
+          "audioText": "an outcome. Separate an intended outcome from a confirmed decision."
+        },
+        {
+          "id": "C107-V81.3",
+          "label": "an action point",
+          "prompt": "",
+          "example": "Each action point needs a recipient",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "C107-FS81.3",
+          "audioText": "an action point. Each action point needs a recipient."
+        },
+        {
+          "id": "C107-V81.4",
+          "label": "a supporting detail",
+          "prompt": "",
+          "example": "Keep the supporting detail that explains the decision",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "C107-FS81.4",
+          "audioText": "a supporting detail. Keep the supporting detail that explains the decision."
+        },
+        {
+          "id": "C107-V81.5",
+          "label": "an executive summary",
+          "prompt": "",
+          "example": "An executive summary should preserve the uncertainty",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "C107-FS81.5",
+          "audioText": "an executive summary. An executive summary should preserve the uncertainty."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Decision, reason and pending item",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Meeting notes · simulated source",
+      "subject": "The event cannot use the original quote",
+      "paragraphs": [
+        "The team has decided not to proceed with the event on the original basis. The quoted cost is $5,400 against a budget limit of $5,000. A later supplier option is estimated at $4,800, but its available date has not yet been confirmed. The decision is to postpone while checking that option, not to treat the lower figure as an approved booking.",
+        "The meeting also covered colours and several discarded formats. Those details remain in the full notes but do not alter the current decision. The immediate dependency is the supplier’s date. Once it is known, funding can be reviewed and the rota organiser can ask for availability. These are simulated notes, not an actual spending request."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "What the recipients need",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Audience cards · simulated source",
+      "subject": "Funding and rota planning",
+      "paragraphs": [
+        "The funding decision-maker needs to know whether the proposed spend fits the limit and what decision is being requested. An update that starts with the whole meeting chronology may hide the relevant comparison. The rota organiser needs an accurate date and the status of its confirmation before asking people to change their plans.",
+        "Both recipients must receive the same underlying facts. Adapting the briefing means changing emphasis, not removing an inconvenient uncertainty or implying that a provisional date is final. A useful next-step sentence names who should do what and when the dependency will be checked. The complete meeting notes remain available if either person needs the supporting detail."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Find the key takeaway",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C107-D81.1",
+          "speaker": "Kim",
+          "text": "Having talked to the team, what would you tell someone who missed the meeting?",
+          "audioText": "Having talked to the team, what would you tell someone who missed the meeting?",
+          "translation": "Depois de conversar com a equipe, o que diria a alguém que perdeu a reunião?"
+        },
+        {
+          "id": "C107-D81.2",
+          "speaker": "Ana",
+          "text": "The key point is that the event is being postponed, because the current quote exceeds the budget",
+          "audioText": "The key point is that the event is being postponed, because the current quote exceeds the budget.",
+          "translation": "O principal é que o evento será adiado porque o orçamento atual excede o limite"
+        },
+        {
+          "id": "C107-D81.3",
+          "speaker": "Kim",
+          "text": "Would you start with every number from the discussion?",
+          "audioText": "Would you start with every number from the discussion?",
+          "translation": "Você começaria com todos os números da discussão?"
+        },
+        {
+          "id": "C107-D81.4",
+          "speaker": "Ana",
+          "text": "Not for everyone. The funding decision-maker needs the cost comparison; the rota organiser needs the date",
+          "audioText": "Not for everyone. The funding decision-maker needs the cost comparison; the rota organiser needs the date.",
+          "translation": "Não para todos. Quem decide a verba precisa da comparação de custos; quem organiza a escala precisa da data"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why don’t both recipients need the same first sentence?",
+          "cue": "Link priority to their decision",
+          "hint": "One needs …; the other …",
+          "answer": "One needs the budget effect; the other needs the date"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Choose what to leave out",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C107-D81.5",
+          "speaker": "Kim",
+          "text": "But the new date hasn’t been confirmed yet",
+          "audioText": "But the new date hasn’t been confirmed yet.",
+          "translation": "Mas a nova data ainda não foi confirmada"
+        },
+        {
+          "id": "C107-D81.6",
+          "speaker": "Ana",
+          "text": "Exactly. Given that constraint, I’d mark it as pending rather than ask people to rearrange everything",
+          "audioText": "Exactly. Given that constraint, I’d mark it as pending rather than ask people to rearrange everything.",
+          "translation": "Exatamente. Dada essa restrição, eu a marcaria como pendente em vez de pedir que reorganizem tudo"
+        },
+        {
+          "id": "C107-D81.7",
+          "speaker": "Kim",
+          "text": "What can you leave out without changing the meaning?",
+          "audioText": "What can you leave out without changing the meaning?",
+          "translation": "O que pode deixar de fora sem mudar o sentido?"
+        },
+        {
+          "id": "C107-D81.8",
+          "speaker": "Ana",
+          "text": "The colour discussion and the sequence of suggestions. Neither changes the decision now",
+          "audioText": "The colour discussion and the sequence of suggestions. Neither changes the decision now.",
+          "translation": "A discussão de cores e a sequência de sugestões. Nenhuma muda a decisão agora"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Which detail can be omitted?",
+          "cue": "Name a detail that doesn’t change the decision",
+          "hint": "The …",
+          "answer": "The colour discussion"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Same facts, two recipients",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C107-D81.9",
+          "speaker": "Kim",
+          "text": "What action does the funding person need to take?",
+          "audioText": "What action does the funding person need to take?",
+          "translation": "Que ação a pessoa responsável pela verba precisa tomar?"
+        },
+        {
+          "id": "C107-D81.10",
+          "speaker": "Ana",
+          "text": "Review the lower quote once the supplier’s date is confirmed",
+          "audioText": "Review the lower quote once the supplier’s date is confirmed.",
+          "translation": "Analisar o orçamento menor depois que a data do fornecedor for confirmada"
+        },
+        {
+          "id": "C107-D81.11",
+          "speaker": "Kim",
+          "text": "And the rota organiser?",
+          "audioText": "And the rota organiser?",
+          "translation": "E quem organiza a escala?"
+        },
+        {
+          "id": "C107-D81.12",
+          "speaker": "Ana",
+          "text": "Wait for that confirmation, then check availability. Same facts, a different first question",
+          "audioText": "Wait for that confirmation, then check availability. Same facts, a different first question.",
+          "translation": "Esperar a confirmação e depois conferir a disponibilidade. Mesmos fatos, outra pergunta inicial"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "Does a supplier date equal final event approval?",
+          "cue": "Separate two confirmations",
+          "hint": "No, …",
+          "answer": "No. Team availability and spending approval remain separate"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Brief the next person",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Compress information without losing its relationship",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An earlier completed action, same subject",
+          "verb": "Having + past participle, subject + clause",
+          "example": "Having checked the quote, we can ask for approval"
+        },
+        {
+          "id": "1",
+          "subject": "A constraint or basis",
+          "verb": "Given + noun phrase / clause",
+          "example": "Given the budget limit, we need a lower quote"
+        },
+        {
+          "id": "2",
+          "subject": "A clear oral alternative",
+          "verb": "After / Because + complete clause",
+          "example": "After we checked the quote, we asked for approval"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Brief someone who wasn’t there",
+      "instruction": "Brief someone who missed the meeting and confirm the next step",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The supplier date is confirmed",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings? The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient",
+      "audioText": "Hi, Ana. The supplier has confirmed that the lower quote of four thousand eight hundred is available on the thirteenth of December. The budget limit remains five thousand. That resolves the pending supplier date, but it doesn’t automatically confirm the team’s availability or authorise the spending. Could you update both briefings? The funding person now has a costed option to review; the rota organiser can ask who is available for that date. Please preserve the distinction between a supplier confirmation and our own final event confirmation. We don’t need to repeat the colour discussion or every abandoned suggestion. A useful summary gives the decision, its reason and the next action for this particular recipient.",
+      "audioId": "C107-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What should be added to your briefing?",
+          "cue": "Select the update that changes the decision or next step",
+          "hint": "We need to add … because …",
+          "answer": "Add 13 December and $4,800; approval and team availability are still separate next steps"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Update each audience differently",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Brief two audiences with the same facts but different priorities"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Choose the recipient’s decision",
+      "options": [
+        {
+          "id": "funding",
+          "title": "Funding decision-maker",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Needs first",
+              "value": "Budget effect"
+            },
+            {
+              "id": "1",
+              "label": "Known",
+              "value": "Limit $5,000 · initial quote $5,400"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Review lower quote after date confirmation"
+            }
+          ]
+        },
+        {
+          "id": "rota",
+          "title": "Rota organiser",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Needs first",
+              "value": "Date and availability"
+            },
+            {
+              "id": "1",
+              "label": "Known",
+              "value": "Supplier date pending"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Wait, then ask who is available"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "brief",
+          "prompt": "What does this person need to know first?",
+          "cue": "Prioritise decision, reason and recipient’s next action",
+          "hint": "The key point is … because you need to decide …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "choices",
+      "title": "New fact: 13 December · $4,800",
+      "options": [
+        {
+          "id": "funding",
+          "title": "Funding decision-maker",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Now confirmed",
+              "value": "Supplier · 13 December · $4,800"
+            },
+            {
+              "id": "1",
+              "label": "Budget",
+              "value": "Limit $5,000"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Review and authorise or query"
+            }
+          ]
+        },
+        {
+          "id": "rota",
+          "title": "Rota organiser",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Now confirmed",
+              "value": "Supplier date · 13 December"
+            },
+            {
+              "id": "1",
+              "label": "Still unknown",
+              "value": "Team availability"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Ask availability · don’t call event final yet"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "update",
+          "prompt": "What should be added to each briefing?",
+          "cue": "Keep the facts identical but make the recipient’s action explicit",
+          "hint": "Having confirmed …, we can now … We still need …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What does this person need to know first?",
+          "cue": "Prioritise the information for the stated audience",
+          "hint": "The key point is … because they need to decide …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What can you leave out without changing the meaning?",
+          "cue": "Remove a detail while preserving the decision and its reason",
+          "hint": "We can leave out …, but we need to keep …",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "funding",
+          "title": "Funding decision-maker",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Needs first",
+              "value": "Budget effect"
+            },
+            {
+              "id": "1",
+              "label": "Known",
+              "value": "Limit $5,000 · initial quote $5,400"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Review lower quote after date confirmation"
+            }
+          ]
+        },
+        {
+          "id": "rota",
+          "title": "Rota organiser",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Needs first",
+              "value": "Date and availability"
+            },
+            {
+              "id": "1",
+              "label": "Known",
+              "value": "Supplier date pending"
+            },
+            {
+              "id": "2",
+              "label": "Next action",
+              "value": "Wait, then ask who is available"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

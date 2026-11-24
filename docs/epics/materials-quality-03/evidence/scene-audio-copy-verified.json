@@ -1,0 +1,67 @@
+{
+  "source": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/quality-scene-audio-20261119",
+  "frozen": "FINAL_FROZEN",
+  "slots": [
+    {
+      "slot": "trial-b1.s2.hotspot.tire.label",
+      "text": "The flat tire",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb1-tire.mp3",
+      "target": "stories/materials/TrialB1/assets/flat-tire-label.mp3",
+      "bytes": 24702,
+      "sha256": "55c75ffd8f9bd9bea4f71030acefd2e41c3f08908a8c778f7467cfa0829986c8",
+      "durationSeconds": 1.486077
+    },
+    {
+      "slot": "trial-b1.s2.hotspot.suitcase.label",
+      "text": "The suitcase",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb1-suitcase.mp3",
+      "target": "stories/materials/TrialB1/assets/suitcase-label.mp3",
+      "bytes": 23448,
+      "sha256": "12209c317255863c8ab332198411f67dff9b4771cb1f9e01efde3dc5cb800dfe",
+      "durationSeconds": 1.393197
+    },
+    {
+      "slot": "trial-b1.s2.hotspot.coast.label",
+      "text": "The coast",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb1-coast.mp3",
+      "target": "stories/materials/TrialB1/assets/coast-label.mp3",
+      "bytes": 19687,
+      "sha256": "c3c441914c29cf06b4973cfb32c77150216c6be65bd8071b4f395c759215c042",
+      "durationSeconds": 1.160998
+    },
+    {
+      "slot": "trial-b2.s2.hotspot.setup.label",
+      "text": "The laptop",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb2-setup.mp3",
+      "target": "stories/materials/TrialB2/assets/laptop-label.mp3",
+      "bytes": 22612,
+      "sha256": "76968b7563686ea09e366e53b90fd99c2d4f2ed89ccfd6f08c78b013b577d594",
+      "durationSeconds": 1.346757
+    },
+    {
+      "slot": "trial-b2.s2.hotspot.focus.label",
+      "text": "Ana at work",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb2-focus.mp3",
+      "target": "stories/materials/TrialB2/assets/ana-at-work-label.mp3",
+      "bytes": 28464,
+      "sha256": "740eb9b4cfc37e857b21dd4006a796cc370b82e56f8d9ac52661ab4324a83c05",
+      "durationSeconds": 1.718277
+    },
+    {
+      "slot": "trial-b2.s2.hotspot.boundaries.label",
+      "text": "The desk",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "source": "assets/trialb2-boundaries.mp3",
+      "target": "stories/materials/TrialB2/assets/desk-label.mp3",
+      "bytes": 20523,
+      "sha256": "37aa2d38407a04c25c7733be7cdd0cf3eb903defae235353e6e5c40adcf2f06b",
+      "durationSeconds": 1.207438
+    }
+  ],
+  "copy": "exact bytes, no re-encoding; six material slots only"
+}

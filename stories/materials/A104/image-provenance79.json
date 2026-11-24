@@ -1,0 +1,73 @@
+{
+  "prefixFile": "docs/materials/prompts/langy-illustration-v1.8.txt",
+  "prefixSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "calls": 6,
+  "items": [
+    {
+      "id": "wake-up",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-394631fd-945a-43c2-af9c-f0983c1d207d.png",
+      "destination": "stories/materials/A104/assets/scene-wake-up79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/wake-up.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "53a934819e2f31d96e726eca9408dfae4984898f63649ad3bb28f349d9df5caf",
+      "originalSha256": "6bbbec44372c27e55d4de7c6714ffb1843fce36092aafb23c8e61559bb0b5711",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "breakfast",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-cde5c8b2-41f1-4b14-8c40-0938c62b744e.png",
+      "destination": "stories/materials/A104/assets/scene-breakfast79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/breakfast.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "5f3c82fba8e1cc75fd760c2b3d37605373e23a50c6c9e614ee8a05ff175c0f8a",
+      "originalSha256": "526fb5dad6bcb4933733f288d88590b313bd2288293d81867b57f24a95e4f892",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "work",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-1828d874-cf18-45cb-a638-05ab6c0905d9.png",
+      "destination": "stories/materials/A104/assets/scene-work79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/work.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "890681291331fcb6bbf0f2480a08e862f6efacd457fcaead73de797811dca83b",
+      "originalSha256": "b5f26c5fc8e302b233524ee5b0c7d808df38bbcffd94e40f8eee54973f65998c",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "study",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-dd0d1b13-4c6d-4ba3-836b-fa1d9e8c78ba.png",
+      "destination": "stories/materials/A104/assets/scene-study79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/study.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "b5e62ae8cf526048b7bd6ce97e3ebc504ac89a7bbeed6ba197dc751f7eea7693",
+      "originalSha256": "8bee65f2e6cb9cd0ebf75b458626bce72867e9c15f140efb7408c157f860bf6e",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "gym",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-814c8c32-bb98-426b-bf24-b3c4aade463d.png",
+      "destination": "stories/materials/A104/assets/scene-gym79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/gym.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "cc3ca75f987aba4062f432bf46f301cbcc7369eadd83a5bd6a37be8df12ebb19",
+      "originalSha256": "5287bdf5d97593dcdd65b0ae4ac6a31414a6298e1c31fdf040da51aa77e85000",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    },
+    {
+      "id": "bedtime",
+      "original": "/Users/margaridamartins/.codex/generated_images/01a1ef87-bfee-7121-a7fa-e409b2bd9a7b/exec-7d72a500-41c1-4b25-9692-fbc445c8f533.png",
+      "destination": "stories/materials/A104/assets/scene-bedtime79.webp",
+      "promptFile": "docs/materials/prompts/course-pilots79/a1-04/bedtime.txt",
+      "method": "built-in image_gen, text-only",
+      "referencedImages": 0,
+      "sha256": "aac230d344df85079b910ce83143ddb3d0d79cec30d1d2facc6bbe1d4e6d94f7",
+      "originalSha256": "f7a4c869cf4e5c73e3685944fae2be7e0e1d528f3a782207b42a318047f5af81",
+      "processing": "Whole-image proportional resize to 960px and WebP; no cropping or semantic edits"
+    }
+  ]
+}

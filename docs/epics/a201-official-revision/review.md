@@ -1,0 +1,17 @@
+# A2.01 React handoff
+
+The existing `a2-01` React material now presents the official thirteen-section oral lesson, with the revised opening, continuous vertical scroll, approved Ana scenes/new Kim portrait and exact existing Kim recording. It uses the real shared controls listed in the plan. No shared component API, catalog, routing, build or release file was changed by this author.
+
+The official Claude artifact remains `https://claude.ai/code/artifact/1e9bba01-d234-4ac8-ad04-113e051f2e9f`, version `1795045837-60e6`, SHA256 `3afd630eea41e4c8b0b17ae9d3eefd8e823385b8eef55e8feda0b7c68a7dc0c9`. Its prior byte-for-byte publication/readback evidence is reused. The native copy is historical. React is an adaptation to the existing component system, rather than a pixel-identical legacy HTML embedding: typography, question cards, gap layout and player presentation follow those components. The same content, section sequence, media and interactions are preserved.
+
+Four meaningful unit groups passed across the initial and scoped retry runs: keyboard vocabulary reveal without unrecorded audio, six progressive gaps with retry, factual reveal/open personal answers and role-play state preservation. The first vocabulary assertion was corrected to use the revealed card's accessible name because the caption and tooltip intentionally share text. See `.github/evidence/a201-official-revision/unit-summary.json` and `unit-retry.log`.
+
+The actual React source preview passed fifteen browser groups. All 13 sections were captured at 1280×900, 390×844 and 1280×650, with no runtime error, missing image/request or horizontal overflow. Grammar and opening captures were refreshed after their targeted styling changes. Additional states cover help, reveal, retry/completion, role swap/signal/support/cues, Notes and transcript. Before images reconstruct the exact baseline commit `cfc558ed36d4ffaacb4d43854961a15cc10b3581` with import-path adjustments only; the branch was never checked out or reset.
+
+Native Kim playback completed a real 15.18585-second pass. Pause/resume, 0.75×/1×, replay, manual transcript, departure pause and real retry playback passed. The error event was injected solely to exercise the error handler. The subsequent isolated navigation fixture similarly used an ended event only to expose the transcript presentation; it reuses the already completed real audio evidence. No speaker capture or new provider generation is claimed.
+
+Notes retained text, ignored textarea navigation keys and returned focus on Escape. The final tall-page check measured a 1049px section in an 844px viewport, verified native PageDown exposed the remaining content, and verified Home/End reached the actual beginning/end with 0/100 progress. An earlier harness assertion had incorrectly assumed the 844px C6 section was oversized; this was a test-fixture correction, with no shared navigation change.
+
+The author did not run a bundle build, broad repository gates, commit, CI, adoption or deploy. Integration owns those after the four-material source freeze, including reconciliation of `A201TrialContracts.test.tsx`: replace the old `YourVersionSection` contract with `PersonalSection`; `VocabularySection` takes `group`; `RolePlaySection` no longer has a timer/active prop/summary form. The private test file is ready for the coherent gate. CI and deploy were not triggered by this author. UX Lab mirror and real staging publication remain pending Integration receipts.
+
+Visual gate review: pending human

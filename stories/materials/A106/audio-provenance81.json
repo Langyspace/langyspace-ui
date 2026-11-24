@@ -1,0 +1,485 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "items": [
+    {
+      "material": "A106",
+      "id": "FE81.0",
+      "text": "This is Thor, Ana’s dog.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "vBRGAIhn36vov4fUhViQ",
+      "synthesisInput": "This is Thor, Ana's dog.",
+      "requestBody": {
+        "text": "This is Thor, Ana's dog.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "vBRGAIhn36vov4fUhViQ",
+        "character-cost": "10",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 33061,
+      "sha256": "eb1edf4e73f4e419ce0ff9884b9a82077075cdc6c02ff6ba0fc8dffb747d7dc1",
+      "durationSeconds": 1.996916
+    },
+    {
+      "material": "A106",
+      "id": "FE81.1",
+      "text": "This is Mia, Ana’s cat.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "NPmQrHETqYyXiEWjVhQC",
+      "synthesisInput": "This is Mia, Ana's cat.",
+      "requestBody": {
+        "text": "This is Mia, Ana's cat.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "NPmQrHETqYyXiEWjVhQC",
+        "character-cost": "9",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 30972,
+      "sha256": "cf24779106bc1b8e40d9d16aaa398ac43f802ea1f51731e4f4c8fa1b2a46d87f",
+      "durationSeconds": 1.857596
+    },
+    {
+      "material": "A106",
+      "id": "FE81.2",
+      "text": "The fish is in the water.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "SS4rSmPrQyp6GHuFKRa5",
+      "synthesisInput": "The fish is in the water.",
+      "requestBody": {
+        "text": "The fish is in the water.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "SS4rSmPrQyp6GHuFKRa5",
+        "character-cost": "10",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 24702,
+      "sha256": "2aaa1a7d947eb6458d126bf18635c9db7e62c0297fab141a883a29a7cb6b8ed7",
+      "durationSeconds": 1.486077
+    },
+    {
+      "material": "A106",
+      "id": "FE81.3",
+      "text": "The bird is next to the window.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "cqUjIeWdUexqiNMo96I8",
+      "synthesisInput": "The bird is next to the window.",
+      "requestBody": {
+        "text": "The bird is next to the window.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "cqUjIeWdUexqiNMo96I8",
+        "character-cost": "12",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 27210,
+      "sha256": "29dedf7ac8d104afcb51a7323b263e57683c1109561603e4534b2834e4f2eab6",
+      "durationSeconds": 1.625397
+    },
+    {
+      "material": "A106",
+      "id": "FE81.4",
+      "text": "Do you have a rabbit?",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "804TRonFdAhDlTH13kpH",
+      "synthesisInput": "Do you have a rabbit?",
+      "requestBody": {
+        "text": "Do you have a rabbit?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "804TRonFdAhDlTH13kpH",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20523,
+      "sha256": "5e37792bc0e9622be30dc90cd0380b11d4e1c6dba3f16862a2deb09746b47b78",
+      "durationSeconds": 1.207438
+    },
+    {
+      "material": "A106",
+      "id": "FE81.5",
+      "text": "I like turtles.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "HVxu7ABaXU6FCm3oq7A1",
+      "synthesisInput": "I like turtles.",
+      "requestBody": {
+        "text": "I like turtles.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "HVxu7ABaXU6FCm3oq7A1",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20941,
+      "sha256": "8aabe4146ef9d6203ea516284b89649bad2c66c65a67886ecf237ae5e48b661c",
+      "durationSeconds": 1.253878
+    },
+    {
+      "material": "A106",
+      "id": "L81.1",
+      "text": "Hi, Ana! I can see Mia now. She isn’t under the bed. She’s on the sofa, next to a cushion. Thor is still next to the sofa. Come and look at them! Do you have a photo of your pets?",
+      "speaker": "Kim",
+      "file": "assets/audio/L81.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "6v8jh9EVLQAGqQwN5WkR",
+      "synthesisInput": "Hi, Ana! I can see Mia now. She isn't under the bed. She's on the sofa, next to a cushion. Thor is still next to the sofa. Come and look at them! Do you have a photo of your pets?",
+      "requestBody": {
+        "text": "Hi, Ana! I can see Mia now. She isn't under the bed. She's on the sofa, next to a cushion. Thor is still next to the sofa. Come and look at them! Do you have a photo of your pets?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "6v8jh9EVLQAGqQwN5WkR",
+        "character-cost": "72",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 240369,
+      "sha256": "4492771ab1378626e1dedfa9a04a00f5079989dfc6e63a4b1ecaeb98f0328520",
+      "durationSeconds": 14.953651
+    },
+    {
+      "material": "A106",
+      "id": "FS81.0",
+      "text": "a dog. This is Thor, Ana’s dog.",
+      "file": "assets/audio/FS81.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["nwmICALv1NSZYJFJYKQy", "vBRGAIhn36vov4fUhViQ"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1760,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8038,
+          "sourceSha256": "cbfa2e95ce1576ce8004663e3b8a76d6f9e5a93dc50b082a67111334fd74f47f"
+        },
+        {
+          "leadingQuietFrames": 1980,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5338,
+          "sourceSha256": "eb1edf4e73f4e419ce0ff9884b9a82077075cdc6c02ff6ba0fc8dffb747d7dc1"
+        }
+      ],
+      "insertedSilenceFrames": 10809,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 45600,
+      "sha256": "8548de1013354eee341aa91435cedee2d1cb8633c889dbc7556dfbbd9c963422",
+      "durationSeconds": 2.774626
+    },
+    {
+      "material": "A106",
+      "id": "FS81.1",
+      "text": "a cat. This is Mia, Ana’s cat.",
+      "file": "assets/audio/FS81.1.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["e1F3R335SUU7vJDwSj7v", "NPmQrHETqYyXiEWjVhQC"],
+      "sources": [
+        {
+          "leadingQuietFrames": 660,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8478,
+          "sourceSha256": "6b5296467e1d5c86c5fd4f927beb95bccac30bf74e7beb69e63f26deb9b4239d"
+        },
+        {
+          "leadingQuietFrames": 3520,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8654,
+          "sourceSha256": "cf24779106bc1b8e40d9d16aaa398ac43f802ea1f51731e4f4c8fa1b2a46d87f"
+        }
+      ],
+      "insertedSilenceFrames": 9269,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 41421,
+      "sha256": "1c7463005f411e18474f5e1eac50425c6f8f21f5dc843c65a00b22e53a389626",
+      "durationSeconds": 2.515215
+    },
+    {
+      "material": "A106",
+      "id": "FS81.2",
+      "text": "a fish. The fish is in the water.",
+      "file": "assets/audio/FS81.2.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["aTr3U8czNhcunKPM1OSL", "SS4rSmPrQyp6GHuFKRa5"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5246,
+          "sourceSha256": "f779960363ad1c35261ab45ba23bb4cf5f1f62c47403ae559ff3f3c7cdc7b4d1"
+        },
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 12070,
+          "sourceSha256": "2aaa1a7d947eb6458d126bf18635c9db7e62c0297fab141a883a29a7cb6b8ed7"
+        }
+      ],
+      "insertedSilenceFrames": 11249,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 36823,
+      "sha256": "2e0c58604a766d402c739d62b8a6d352159689132a78a869c471301c6cc7049d",
+      "durationSeconds": 2.230862
+    },
+    {
+      "material": "A106",
+      "id": "FS81.3",
+      "text": "a bird. The bird is next to the window.",
+      "file": "assets/audio/FS81.3.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["Cn1Y2kYuZQWRYIbqvyqb", "cqUjIeWdUexqiNMo96I8"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9578,
+          "sourceSha256": "5ad0deeeaaac1c1e4632e1190dd99514460d76efd089516217120c6094390ee2"
+        },
+        {
+          "leadingQuietFrames": 4180,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10294,
+          "sourceSha256": "29dedf7ac8d104afcb51a7323b263e57683c1109561603e4534b2834e4f2eab6"
+        }
+      ],
+      "insertedSilenceFrames": 8609,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 36405,
+      "sha256": "35d809513d2497b9873a2b84e7b5996168470d7a90894a4dce2e391e48bf7cea",
+      "durationSeconds": 2.205918
+    },
+    {
+      "material": "A106",
+      "id": "FS81.4",
+      "text": "a rabbit. Do you have a rabbit?",
+      "file": "assets/audio/FS81.4.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["BsTuT38LeSuZr1DsDZ3u", "804TRonFdAhDlTH13kpH"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11102,
+          "sourceSha256": "89e268e4ed91bb8680c311cd31d596f08badbe7c089f8d8b7af40c19f4726a23"
+        },
+        {
+          "leadingQuietFrames": 3520,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11662,
+          "sourceSha256": "5e37792bc0e9622be30dc90cd0380b11d4e1c6dba3f16862a2deb09746b47b78"
+        }
+      ],
+      "insertedSilenceFrames": 9269,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 30972,
+      "sha256": "8eaa23635cbe6397c668c6313c73f480a3739ed78630a005e530995e0485ab64",
+      "durationSeconds": 1.876667
+    },
+    {
+      "material": "A106",
+      "id": "FS81.5",
+      "text": "a turtle. I like turtles.",
+      "file": "assets/audio/FS81.5.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["8OkOoy9U2uaU8wuDplVO", "HVxu7ABaXU6FCm3oq7A1"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10746,
+          "sourceSha256": "ca144c47f9d99426ae5828efb7644bf719ebf7cc68a31d81c70346661c615eb5"
+        },
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10630,
+          "sourceSha256": "8aabe4146ef9d6203ea516284b89649bad2c66c65a67886ecf237ae5e48b661c"
+        }
+      ],
+      "insertedSilenceFrames": 11689,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 31807,
+      "sha256": "593f878ccd4162ca6a0f0665676137100e6e43a6e94ad5b5f8b5a808165dd4ab",
+      "durationSeconds": 1.916576
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "taskId": "FINAL34-TrialA1",
+  "revision": 34,
+  "authorityThread": "01a1ef87-bfee-7121-a7fa-e409b2bd9a7b",
+  "createdAt": "2026-11-20T11:33:36.907553+00:00",
+  "sources": [
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/round34/frozen-audio-legacy34.json",
+      "sha256": "5a0c3d1b65caccec36eea4f4eaf89a2131b191ee4038b3130051b37ac17f97dc",
+      "actualIds": 82
+    },
+    {
+      "path": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-6/outputs/content34-private-20261120/utterance-delta.frozen.json",
+      "sha256": "f3f75dfbd3f62cef091633c02f2a00de473ff6e4bdcf74a0617d9484f80fc829",
+      "actualIds": 1
+    }
+  ],
+  "voices": {
+    "ana": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica - Playful, Bright, Warm"
+    },
+    "kim": {
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "name": "Sarah Explains"
+    }
+  },
+  "config": {
+    "modelId": "eleven_multilingual_v2",
+    "voiceSettings": {
+      "stability": 0.5,
+      "similarity_boost": 0.75,
+      "style": 0.1,
+      "use_speaker_boost": true,
+      "speed": 0.92
+    },
+    "languageCode": "en",
+    "outputFormat": "mp3_44100_128"
+  },
+  "scope": "Only82literalrootLEGACYIDs plus1explicitlyauthorizedTrialA1append. Historical isolatedpronunciation/grammarexamples/liveroleplayinactive,noaudio. No tests/playbackQA/browser/repo/cloud/publication. Finaluserreview.",
+  "material": "TrialA1",
+  "items": [
+    {
+      "material": "TrialA1",
+      "id": "trial-a1.dialogue.06",
+      "qualifiedId": "TrialA1:trial-a1.dialogue.06",
+      "speaker": "ana",
+      "speakerKey": "ana",
+      "text": "I play soccer here with my friends.",
+      "textSha256": "46f78733c335207151244970965002d5880432c2f24958146655a2fcc0b879d7",
+      "synthesisInput": "I play soccer here with my friends.",
+      "textNormalization": "NFC and curly apostrophe to ASCII only; words unchanged. Character label is not spoken.",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceName": "Jessica - Playful, Bright, Warm",
+      "synthesisRequest": {
+        "provider": "elevenlabs",
+        "voiceId": "cgSgspJ2msm6clMCkdW9",
+        "text": "I play soccer here with my friends.",
+        "modelId": "eleven_multilingual_v2",
+        "voiceSettings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        },
+        "languageCode": "en",
+        "outputFormat": "mp3_44100_128"
+      },
+      "synthesisFingerprint": "97a6ecc460b68f4cd5a73a1f12680e5881f3c6acb66e8be3271930f0d959a1c7",
+      "file": "assets/audio/trial-a1.dialogue.06.mp3",
+      "assetPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/tenta-gerar-o-a-dio-do/outputs/entrega34-audio-20261120/TrialA1/assets/audio/trial-a1.dialogue.06.mp3",
+      "plannedDisposition": "generate_missing",
+      "plannedReuseSource": null,
+      "group": "dialogue-append",
+      "generationStatus": "ready",
+      "generationAttempts": 1,
+      "reusedSource": null,
+      "durationSeconds": 1.996916,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 33061,
+      "sha256": "e6a975a847d662dfd902e8a70e58da2f772ca6a7924ddf4f29633734239dc16a",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "providerHeaders": {
+        "request-id": "QZY21PG4JC7qWY1IW3tM",
+        "character-cost": "14",
+        "history-item-id": "MNSjFMkUsHOrrQTwVTQV"
+      },
+      "requestId": "QZY21PG4JC7qWY1IW3tM",
+      "httpStatus": 200,
+      "cacheDisposition": "generated_missing",
+      "generationElapsedSeconds": 0.515,
+      "generatedAt": "2026-11-20T11:33:37.424200+00:00",
+      "durationMethod": "ffprobe format duration obtained during generation metadata flow"
+    }
+  ],
+  "requestSha256": "00847604d2c1006d8f52c826d491b0e41497d66237aadbf6e978c9a68670412f",
+  "frozen": true,
+  "frozenAt": "2026-11-20T11:33:37.429602+00:00",
+  "summary": {
+    "ids": 1,
+    "uniqueRecordings": 1,
+    "generated": 1,
+    "existingReused": 0,
+    "sharedCurrentBatch": 0,
+    "generationCalls": 1,
+    "retries": 0,
+    "failed": 0,
+    "providerCharacterCostHeaderSumUniqueCalls": 14,
+    "characterCostNote": "Raw provider header total; not currency. Shared IDs do not add provider cost."
+  },
+  "review": {
+    "playbackQA": false,
+    "testsRun": false,
+    "browserUsed": false,
+    "sourceOrRepoWrites": false,
+    "cloudOrPublicationWrites": false,
+    "durationBasis": "ffprobe metadata obtained during generation flow",
+    "finalReviewer": "user"
+  }
+}

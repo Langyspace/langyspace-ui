@@ -1,0 +1,408 @@
+{
+  "version": 81,
+  "code": "B1.03",
+  "key": "b1-03",
+  "title": "The show had already started",
+  "goal": "Explain the earlier event that caused a later problem",
+  "freeConversationInstruction": "Tell each other about plans that went wrong and ask questions to understand what happened first",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Remember a situation interrupted by an unexpected event",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What were you doing when it happened?",
+          "cue": "Give a clear sequence",
+          "hint": "I was … when … Then …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for the show had already started",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-03-vocabulary81",
+        "alt": "Six illustrated situations for The show had already started",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B103-V81.0",
+          "label": "a ticket",
+          "prompt": "",
+          "example": "Keep the digital ticket on your phone",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B103-FS81.0",
+          "audioText": "a ticket. Keep the digital ticket on your phone."
+        },
+        {
+          "id": "B103-V81.1",
+          "label": "a wristband",
+          "prompt": "",
+          "example": "She had left her wristband at home",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B103-FS81.1",
+          "audioText": "a wristband. She had left her wristband at home."
+        },
+        {
+          "id": "B103-V81.2",
+          "label": "the entrance",
+          "prompt": "",
+          "example": "The entrance was still open",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B103-FS81.2",
+          "audioText": "the entrance. The entrance was still open."
+        },
+        {
+          "id": "B103-V81.3",
+          "label": "the queue",
+          "prompt": "",
+          "example": "We joined the queue outside",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B103-FS81.3",
+          "audioText": "the queue. We joined the queue outside."
+        },
+        {
+          "id": "B103-V81.4",
+          "label": "the venue",
+          "prompt": "",
+          "example": "The venue was easy to find",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B103-FS81.4",
+          "audioText": "the venue. The venue was easy to find."
+        },
+        {
+          "id": "B103-V81.5",
+          "label": "an opening act",
+          "prompt": "",
+          "example": "We missed the opening act",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B103-FS81.5",
+          "audioText": "an opening act. We missed the opening act."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "The show had already started",
+      "paragraphs": [
+        "Concert record: 7:15 pm, left home without the wristband collected earlier. 8:00 pm, show started. 8:20 pm, arrived at the venue. The digital ticket was still on the phone. The entrance’s closing time has not been stated."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Late for the show",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B103-D81.1",
+          "speaker": "Kim",
+          "text": "Did you enjoy the show, or was the whole evening difficult?",
+          "audioText": "Did you enjoy the show, or was the whole evening difficult?",
+          "translation": "Você gostou do show ou a noite toda foi difícil?"
+        },
+        {
+          "id": "B103-D81.2",
+          "speaker": "Ana",
+          "text": "The show was great, but it had already started when we arrived",
+          "audioText": "The show was great, but it had already started when we arrived.",
+          "translation": "O show foi ótimo, mas já tinha começado quando chegamos"
+        },
+        {
+          "id": "B103-D81.3",
+          "speaker": "Kim",
+          "text": "What time did you get there?",
+          "audioText": "What time did you get there?",
+          "translation": "Que horas vocês chegaram?"
+        },
+        {
+          "id": "B103-D81.4",
+          "speaker": "Ana",
+          "text": "At eight twenty. We’d left late, and I’d forgotten my wristband at home",
+          "audioText": "At eight twenty. We’d left late, and I’d forgotten my wristband at home.",
+          "translation": "Às oito e vinte. Saímos tarde e eu tinha esquecido minha pulseira em casa"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Had the show started before they arrived?",
+          "cue": "Compare eight and eight twenty",
+          "hint": "Yes, … had …",
+          "answer": "Yes, it had already started"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "The problem at the entrance",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B103-D81.5",
+          "speaker": "Kim",
+          "text": "Oh no. Couldn’t you just show your ticket?",
+          "audioText": "Oh no. Couldn’t you just show your ticket?",
+          "translation": "Ah, não. Você não podia só mostrar o ingresso?"
+        },
+        {
+          "id": "B103-D81.6",
+          "speaker": "Ana",
+          "text": "The person at the entrance sent us to the help desk. We missed the opening act",
+          "audioText": "The person at the entrance sent us to the help desk. We missed the opening act.",
+          "translation": "A pessoa na entrada nos mandou ao atendimento. Perdemos a banda de abertura"
+        },
+        {
+          "id": "B103-D81.7",
+          "speaker": "Kim",
+          "text": "At least you got in eventually. What would you check next time?",
+          "audioText": "At least you got in eventually. What would you check next time?",
+          "translation": "Pelo menos vocês acabaram entrando. O que conferiria da próxima vez?"
+        },
+        {
+          "id": "B103-D81.8",
+          "speaker": "Ana",
+          "text": "I’d check the ticket and wristband before leaving, and allow more time",
+          "audioText": "I’d check the ticket and wristband before leaving, and allow more time.",
+          "translation": "Conferiria ingresso e pulseira antes de sair e reservaria mais tempo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What had Ana forgotten before leaving?",
+          "cue": "Name the missing item",
+          "hint": "She’d …",
+          "answer": "She’d forgotten her wristband"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Explain what happened first",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Which past event happened first?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "The earlier past event",
+          "verb": "had + past participle",
+          "example": "She had forgotten her wristband before she left"
+        },
+        {
+          "id": "1",
+          "subject": "The later past event",
+          "verb": "past simple",
+          "example": "They arrived at eight twenty"
+        },
+        {
+          "id": "2",
+          "subject": "Show the relationship",
+          "verb": "by the time / when + past event",
+          "example": "By the time they arrived, the show had already started"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Reconstruct the evening",
+      "instruction": "Explain what happened first and why it mattered",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Check the real reason",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem. The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
+      "audioText": "Hi, Ana. I’ve checked what happened at the entrance in our concert story. They couldn’t get in immediately because one person had left their wristband at home. The entrance was still open at eight twenty, so closing time wasn’t the problem. The help desk could issue a replacement if they showed the digital ticket. They eventually got in, but the opening act had already finished. Could you explain the sequence to someone who thinks they were turned away because they arrived late?",
+      "audioId": "B103-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Why couldn’t they get in immediately?",
+          "cue": "Connect the earlier event to the problem at the entrance",
+          "hint": "They couldn’t … because they had …",
+          "answer": "They had left a wristband at home; the entrance was still open"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Correct the misunderstanding",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain the earlier event that caused a later problem"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Reconstruct the evening",
+      "facts": [
+        {
+          "id": "0",
+          "label": "7:15 pm",
+          "value": "Left home · wristband stayed there"
+        },
+        {
+          "id": "1",
+          "label": "8:00 pm",
+          "value": "Show started"
+        },
+        {
+          "id": "2",
+          "label": "8:20 pm",
+          "value": "Arrived · sent to help desk"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Why did they miss the opening act?",
+          "cue": "Explain what had happened before arrival and what happened at the door",
+          "hint": "They had … By the time …, … had already …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Confirmed at the help desk",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Not the cause",
+          "value": "Entrance had not closed"
+        },
+        {
+          "id": "1",
+          "label": "Actual problem",
+          "value": "Forgotten wristband"
+        },
+        {
+          "id": "2",
+          "label": "Solution",
+          "value": "Replacement with the digital ticket"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Was arriving late the reason they couldn’t enter immediately?",
+          "cue": "Correct the explanation and keep the events in order",
+          "hint": "Not exactly. They couldn’t … because they had …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "7:15 pm",
+          "value": "Left home · wristband stayed there"
+        },
+        {
+          "id": "1",
+          "label": "8:00 pm",
+          "value": "Show started"
+        },
+        {
+          "id": "2",
+          "label": "8:20 pm",
+          "value": "Arrived · sent to help desk"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What had happened before they arrived?",
+          "cue": "Use the timeline to explain the earlier event",
+          "hint": "By the time they arrived, … had already …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Has anything similar happened to you?",
+          "cue": "Tell a real or imagined story with a clear sequence",
+          "hint": "When I got there, … had already …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

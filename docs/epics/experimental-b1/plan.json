@@ -1,0 +1,32 @@
+{
+  "renderedImpact": "direct",
+  "reservation": "EXP-B1-REVIEW-01",
+  "sourceHead": "cfc558ed36d4ffaacb4d43854961a15cc10b3581",
+  "scope": "B1 trial only, original artifact and material-private implementation",
+  "requirements": [
+    "8 sections / 30 minutes; conversation dominates",
+    "One title and one functional subtitle each",
+    "Continuous scroll, existing Notes and progress",
+    "No false audio; live model reading",
+    "Reused real UX Lab components and canonical avatars"
+  ],
+  "implementation": [
+    "Content and page map complete",
+    "One scene generated; avatars reused",
+    "Private React TrialB1 complete",
+    "Original checkpoint 2 published; native assets verified",
+    "Lab patch and B1 override prepared"
+  ],
+  "validation": [
+    "Exact runtime checks in evidence/*.json",
+    "All 8 sections captured in 1280x900,1280x650,390x844,320x844",
+    "Whole-repo typecheck currently reports changes outside B1; no B1 diagnostics after correction",
+    "Focused ESLint B1 passed"
+  ],
+  "remaining": [
+    "Central Lab/index/catalog integration",
+    "Coordinated staging publication and real-route qualification",
+    "Product-owner visual approval"
+  ],
+  "visualVerdict": "Visual gate review: pending human"
+}

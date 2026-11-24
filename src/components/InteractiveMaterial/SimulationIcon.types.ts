@@ -9,4 +9,5 @@ export interface SimulationIconProps {
     | 'play'
     | 'previous'
     | 'replay'
+    | 'next'
 }

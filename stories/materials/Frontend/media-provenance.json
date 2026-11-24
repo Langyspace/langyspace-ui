@@ -1,0 +1,481 @@
+{
+  "provider": "elevenlabs",
+  "model": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "sourceAuthoringSha256": "7e4b455f10bc133244ccb020e6bb8e800a6b0520e65d2f234c9bbb574ec2be04",
+  "sourceArtifact": "2662b64f-844f-4e4f-bd76-8b95b897e654",
+  "images": {
+    "v_bt": {
+      "file": "assets/v_bt.webp",
+      "sha256": "22d4ad9635452551662e6c97932980e492fa8f7a3b73a42aa0952118aa369e20",
+      "sourceKey": "v_bt"
+    },
+    "v_fm": {
+      "file": "assets/v_fm.svg",
+      "sha256": "715fe82af950f60415fb3fcab14fa6f5dc8c08f65a37243244e8bfdd7cb22aa3",
+      "sourceKey": "v_fm"
+    },
+    "v_mn": {
+      "file": "assets/v_mn.svg",
+      "sha256": "20b193c1990dc6d959ad0d56cc9b5ae0a883d6507ac8aea06a29dffb6ac7a452",
+      "sourceKey": "v_mn"
+    },
+    "v_sb": {
+      "file": "assets/v_sb.svg",
+      "sha256": "04217e71707cc9c26a5603ef2fd62b85608d1d38159606d1298a0de41a499962",
+      "sourceKey": "v_sb"
+    },
+    "v_pp": {
+      "file": "assets/v_pp.svg",
+      "sha256": "79e38bc572f28877bcb067012795e39f560ab11b835c059f61b676bb2daa8dad",
+      "sourceKey": "v_pp"
+    },
+    "v_cb": {
+      "file": "assets/v_cb.svg",
+      "sha256": "7bad10480db8eae6a5a980cbbcb434c80344ba67b4cab1f8d1e2adfb3d8b918a",
+      "sourceKey": "v_cb"
+    },
+    "v_dd": {
+      "file": "assets/v_dd.svg",
+      "sha256": "62718616ac08b3043310e3c5a937ad44bea6ce3060bf7ef6f61546141ff6b6c1",
+      "sourceKey": "v_dd"
+    },
+    "wu_test": {
+      "file": "assets/wu_test.svg",
+      "sha256": "2a9a0bd9fe57bdb529a464fd3cc57bca20511473e9090fe8310007b5a075ebb1",
+      "sourceKey": "wu_test"
+    },
+    "bust_ana": {
+      "file": "assets/bust_ana.webp",
+      "sha256": "79a8eacef4735a304933366d46e3c9021059a7be4504884d8fc55e9e58a15634"
+    },
+    "bust_kim": {
+      "file": "assets/bust_kim.webp",
+      "sha256": "b8af7c8e3fc792788901826b1fc74e5d4c398e29917cc04a2690f8a7b97cec9a"
+    },
+    "meet_jun": {
+      "file": "assets/meet_jun.webp",
+      "sha256": "35a017ac403d9b0a02e348864fcc824552c9245fcfbe4ad78a0ed53fadbe46c9"
+    },
+    "av_leo": {
+      "file": "assets/av_leo.webp",
+      "sha256": "bb930a2e6d3d69c8ff5d98d28d2c612904cfce944a50cb05df7c4dfb96cc03ee"
+    },
+    "x_bulb": {
+      "file": "assets/x_bulb.webp",
+      "sha256": "f80d164896fbce151f2e2b6cd9f762bc17d6bae0c9241212b0ac60b549ed06d5",
+      "sourceKey": "x_bulb",
+      "sourceHtmlSha256": "8ab03020a5c8f4673a71dee90771f21289e124f48efa1b5c966942c1732bc9d4"
+    },
+    "x_speech": {
+      "file": "assets/x_speech.webp",
+      "sha256": "deeb41954eb752acf3d8dcaa7019581c0ca219de2770a750bf81a4c417a656f3",
+      "sourceKey": "x_speech",
+      "sourceHtmlSha256": "8ab03020a5c8f4673a71dee90771f21289e124f48efa1b5c966942c1732bc9d4"
+    }
+  },
+  "audio": {
+    "V.0": {
+      "file": "assets/audio/V.0.mp3",
+      "text": "a button",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "a43dc3ae2e7409f1a60772dde08779c29b90867627e3157667d21779ba1835bd",
+      "duration": 0.975238
+    },
+    "V.1": {
+      "file": "assets/audio/V.1.mp3",
+      "text": "a form",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "0749fa545d86520931c225ded9764043e1d34bca39318781e4d5ff6effe7a545",
+      "duration": 1.021678
+    },
+    "V.2": {
+      "file": "assets/audio/V.2.mp3",
+      "text": "a menu",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "29eeb572a31991b751f79476b512afff800ad8ce8cf83b15c95d6a6ae0ec7172",
+      "duration": 1.021678
+    },
+    "V.3": {
+      "file": "assets/audio/V.3.mp3",
+      "text": "a search bar",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "251a46cf479d632e39c52a2e2bb98f72a588fd529a7564cfd3ec9b9750defc36",
+      "duration": 1.300317
+    },
+    "V.4": {
+      "file": "assets/audio/V.4.mp3",
+      "text": "a pop-up",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "217a01edf84c84eee93e921c9127c2200cec9da2a296bf326e12235f7328218f",
+      "duration": 1.160998
+    },
+    "V.5": {
+      "file": "assets/audio/V.5.mp3",
+      "text": "a checkbox",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "73c6af20eded7539c3536627e5221e9500f0472d3f88d8aefc97c0de0ecc89d4",
+      "duration": 1.253878
+    },
+    "V.6": {
+      "file": "assets/audio/V.6.mp3",
+      "text": "a dropdown",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "c07a38656e682176dc2705a69554b093e6e828ef2af6993e78f6323b83dfeb69",
+      "duration": 1.346757
+    },
+    "W.1": {
+      "file": "assets/audio/W.1.mp3",
+      "text": "The button doesn’t show on mobile.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "f20a84911a0562c059314cd1fd74e8b8dc200600216a0b94defd98c13f484592",
+      "duration": 2.693515
+    },
+    "W.2": {
+      "file": "assets/audio/W.2.mp3",
+      "text": "I’ve fixed the menu, but I haven’t deployed it yet.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "2db4e36d754ff70230a3f03ce31c1bba201bba213d11657ed22b5e8654f7ab16",
+      "duration": 3.808073
+    },
+    "W.3": {
+      "file": "assets/audio/W.3.mp3",
+      "text": "For three years.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "db52de475102a02e29e2012bc14b9f72a24e1c874e90f02b52a433078247b003",
+      "duration": 1.904036
+    },
+    "P5.00a": {
+      "file": "assets/audio/P5.00a.mp3",
+      "text": "I fixed it.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "532e4c21cd839a8690194987069d8a282d2f5d6906fa36322f77509bf3ce19b9",
+      "duration": 1.021678
+    },
+    "P5.00k": {
+      "file": "assets/audio/P5.00k.mp3",
+      "text": "I fixed it.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "7efc04cdc81ed9fa8f4737010b0786e8054c2eddd2efd75094346e2f4b6c1e87",
+      "duration": 1.300317
+    },
+    "P5.01a": {
+      "file": "assets/audio/P5.01a.mp3",
+      "text": "I’ll fix it.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "2f2807cd3ae5edceab52d83f37456a72e130dbaa0ffcbf23cd551755ad2ec808",
+      "duration": 1.021678
+    },
+    "P5.01k": {
+      "file": "assets/audio/P5.01k.mp3",
+      "text": "I’ll fix it.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "3f57017c6ff383bf7e08ec7c227b2dd134e6dad00bafd8e8e8ed39d4581fbc5f",
+      "duration": 1.300317
+    },
+    "P5.10a": {
+      "file": "assets/audio/P5.10a.mp3",
+      "text": "thirteen pixels.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "ae0ebd7d9b9a560287b43590955e501ab44b61046cccfbe63410890cd4bcf991",
+      "duration": 1.439637
+    },
+    "P5.10k": {
+      "file": "assets/audio/P5.10k.mp3",
+      "text": "thirteen pixels.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "b51b7ea1ffd5d90ae708f08326c25e82d12d699caf76ef22fe27a069cc7d7c8f",
+      "duration": 1.857596
+    },
+    "P5.11a": {
+      "file": "assets/audio/P5.11a.mp3",
+      "text": "thirty pixels.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "9248518575a4a800b3622e903b9dc7880fada421cebd702f1c886c5ffad4f735",
+      "duration": 1.300317
+    },
+    "P5.11k": {
+      "file": "assets/audio/P5.11k.mp3",
+      "text": "thirty pixels.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "2bd15122b3bc7363b652dc18b765af2dd5564d1494723cd6b038a82886f3fcaa",
+      "duration": 1.718277
+    },
+    "D.1": {
+      "file": "assets/audio/D.1.mp3",
+      "text": "Ana, do you have a minute? There’s a bug before the launch. The “Buy now” button doesn’t show on mobile.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "ff92de68cbd913cfda5a53bb1006a6a0ca60a490450099b1a5222a612245b126",
+      "duration": 7.523265
+    },
+    "D.2": {
+      "file": "assets/audio/D.2.mp3",
+      "text": "Oh no! On which phones?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "493915b0f05ef24c7275ec59fff1d2eb071775a1f611b564b75719644af0a355",
+      "duration": 1.904036
+    },
+    "D.3": {
+      "file": "assets/audio/D.3.mp3",
+      "text": "On small screens. When the pop-up opens, it covers the button. I’ve tested it on three phones, and it breaks on all of them.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "725595e15fa249ea5863887a5c7d362f2237921204e62b922e38e5e6c5227987",
+      "duration": 9.287982
+    },
+    "D.4": {
+      "file": "assets/audio/D.4.mp3",
+      "text": "Hmm. What if we move the button above the pictures?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "d0417262768595bcbdf1f3f1d6a35bece3227d72f665568d7297c8aaec989e1f",
+      "duration": 3.390113
+    },
+    "D.5": {
+      "file": "assets/audio/D.5.mp3",
+      "text": "Good idea, but the design will change. Could you check it today? The launch is on Friday.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "f3888da41d1045a25c35cd597eae2b7732295bacaf407e1f85fa78f5914bb90b",
+      "duration": 6.687347
+    },
+    "D.6": {
+      "file": "assets/audio/D.6.mp3",
+      "text": "Sure. I’ll send you a new version this afternoon. Have you talked to Leo?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "d89df18a9e6d39e0bd3cad5473ef46f12eabd81dff64c11223ab417923ef8818",
+      "duration": 4.504671
+    },
+    "D.7": {
+      "file": "assets/audio/D.7.mp3",
+      "text": "Not yet. I’ve written to him, but he hasn’t answered yet. He’s in a meeting.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "1814fb4b5f2394d94ce6365ed644b13a2fe7d41b989437ace1e7a72a105c77a9",
+      "duration": 5.433469
+    },
+    "D.8": {
+      "file": "assets/audio/D.8.mp3",
+      "text": "OK. And what about the screen reader? Last week, it didn’t read the button.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "02e65b0c367c75b445a7877aa1b730f1bab7dbb423473457621878205433e96e",
+      "duration": 5.712109
+    },
+    "D.9": {
+      "file": "assets/audio/D.9.mp3",
+      "text": "I’ve already fixed that. Now it reads “Buy now”. I tested it yesterday with my eyes closed!",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "4adbb6bb5f5f28ab78cda8d0d535e62e8b0d70d69b5cb82034ef1415fa8f7dde",
+      "duration": 8.266304
+    },
+    "D.10": {
+      "file": "assets/audio/D.10.mp3",
+      "text": "Ha! Perfect. Let’s fix the mobile version, and then we can deploy.",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "165920b9aa0d0695e0131ab0b5ef69b0eba8d4ec8dcada8682c1a6cf86ebb266",
+      "duration": 4.551111
+    },
+    "G.0": {
+      "file": "assets/audio/G.0.mp3",
+      "text": "I’ve fixed the menu. I’ve tested it on three phones.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "e77697cfdea0db89583e7bb318bf8b1baceb2d5e28ee7e6b3357d0aa8d891e2f",
+      "duration": 4.365351
+    },
+    "G.1": {
+      "file": "assets/audio/G.1.mp3",
+      "text": "I haven’t deployed it yet.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "ca78988712fe6d6762174119f2028f8c55c711dc90341b1492ea540cc5661404",
+      "duration": 1.811156
+    },
+    "G.2": {
+      "file": "assets/audio/G.2.mp3",
+      "text": "I’ve worked with React for two years. I’ve worked here since 2024.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "cb197d2e3d45a948faad2f460616b5a87988f2a1b6ae28e511fdbd58eaccef57",
+      "duration": 5.804989
+    },
+    "G.3": {
+      "file": "assets/audio/G.3.mp3",
+      "text": "I built a shop page last year. I fixed it yesterday.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "1295b30399c50aa41798d12a5645afadcf4c825d89f97f7b0eb0c0fed3aeceeb",
+      "duration": 3.947392
+    },
+    "Y8.1": {
+      "file": "assets/audio/Y8.1.mp3",
+      "text": "Hi! What are you working on today?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "9f5e7eae1b75097a77157d2479b490132c1a54d9a8c9b95fe769ed6c7c05fa8c",
+      "duration": 2.089796
+    },
+    "Y8.3": {
+      "file": "assets/audio/Y8.3.mp3",
+      "text": "Nice. Any problems?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "e0a611c1202a0bf5cd0c2941110e23657de029e98d7a5434aa3d6c6e5a34f8f3",
+      "duration": 1.578957
+    },
+    "Y8.5": {
+      "file": "assets/audio/Y8.5.mp3",
+      "text": "Oh no! What have you done?",
+      "speaker": "ana",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "sha256": "b1c59853f169213d3d04b326791f9c6327a3ce2a6484d01466d32f00bb24b8e0",
+      "duration": 1.671837
+    },
+    "L.9": {
+      "file": "assets/audio/L.9.mp3",
+      "text": "Hi, Kim! It’s Leo. Thanks for your message. I’ve looked at the new version on my phone, and it looks great. Just one thing before we deploy: the “Buy now” button is too small on mobile. Could you make it bigger? Forty-four pixels, at least. And please don’t deploy today. The tests haven’t finished yet. Let’s deploy tomorrow morning, at ten. Thanks!",
+      "speaker": "leo",
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "sha256": "f007db91c3ad1d30e893094d0bbedc061c8ec2524f5b6fc1ecdd0d0848b3f028",
+      "duration": 24.938231
+    },
+    "X.1": {
+      "file": "assets/audio/X.1.mp3",
+      "text": "I’ve worked with React since 2023.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "d34694faa5f9683a66b2e7363f5c1f52de4cddd29d03f6f070cfe8e95d3cb7de",
+      "duration": 3.390113
+    },
+    "X.2": {
+      "file": "assets/audio/X.2.mp3",
+      "text": "I fixed the bug yesterday.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "f356e1a197889f03a596b1be88b4e56159fc6f3f457e7ea51d44ff7a01d270ff",
+      "duration": 2.043356
+    },
+    "X.3": {
+      "file": "assets/audio/X.3.mp3",
+      "text": "I haven’t deployed it yet.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "ca78988712fe6d6762174119f2028f8c55c711dc90341b1492ea540cc5661404",
+      "duration": 1.811156
+    },
+    "X.4": {
+      "file": "assets/audio/X.4.mp3",
+      "text": "Could you check the form?",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "77341ec2584e70b5287dcce0f6a297a2666eb26e68d5815f41fd35ef8e385ea8",
+      "duration": 1.671837
+    },
+    "X.5": {
+      "file": "assets/audio/X.5.mp3",
+      "text": "Tomorrow, we’ll run the tests.",
+      "speaker": "kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "sha256": "2a0dcd98e943a32a5666f5f2ddc2d2fbbeb5d5ca833748673a6496b9e75e3f5a",
+      "duration": 2.089796
+    },
+    "J.1": {
+      "file": "assets/audio/J.1.mp3",
+      "text": "Hi, thanks for joining! Can you hear me OK? Great. So, tell me a little about yourself.",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "77a67a70f22cb183ed8707433b0c60c43eb5b55309d5bbf19266a27a0be1da0a",
+      "duration": 5.897868
+    },
+    "J.2": {
+      "file": "assets/audio/J.2.mp3",
+      "text": "What have you built? Tell me about a project you’re proud of.",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "4453a183769b50e17875b95f2cc71473bc829d484b1637079d69ab3f8976a3bf",
+      "duration": 3.622313
+    },
+    "J.3": {
+      "file": "assets/audio/J.3.mp3",
+      "text": "Interesting! What was the hardest part?",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "aac8e0fc373bfaadb142ea5a6c4769622fb92c8dd7cfeaf282aa9ace0d1a0713",
+      "duration": 2.693515
+    },
+    "J.4": {
+      "file": "assets/audio/J.4.mp3",
+      "text": "A lot of our users are on their phones. How do you make a page work on mobile?",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "5d112e6a45e87b6d74a08e997cfd9211d968ce828cef93e97e4008f1f451d1df",
+      "duration": 4.690431
+    },
+    "J.5": {
+      "file": "assets/audio/J.5.mp3",
+      "text": "And how do you make a page accessible? For example, for people who use a screen reader.",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "809bd2f356c84f09eb1cdcfd07b9e729bfd4dc2f5eb0d9ad35b3c9760238349a",
+      "duration": 5.10839
+    },
+    "J.6": {
+      "file": "assets/audio/J.6.mp3",
+      "text": "Tell me about a bug you fixed. What happened, and how did you fix it?",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "9cf07ba735b34b918f9c048f67ef3078d3f81dd14711e4f9c973ffd04061ddbb",
+      "duration": 4.551111
+    },
+    "J.7": {
+      "file": "assets/audio/J.7.mp3",
+      "text": "In our team, we review each other’s code. How do you deal with feedback in a code review?",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "3af05bd0a85763d50d3b4bdc8ce8c446d282144e27a6a3d9342abc446e6a85eb",
+      "duration": 5.34059
+    },
+    "J.8": {
+      "file": "assets/audio/J.8.mp3",
+      "text": "Great. That’s all from me. Do you have any questions for us?",
+      "speaker": "jun",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "sha256": "7717927428d8f16932783ba19db730886d829f0ec863cfb5e9cbe072e54729d1",
+      "duration": 3.993832
+    }
+  },
+  "generatedNow": false,
+  "sourceVersion": "1795037606-0c26",
+  "sourceHtmlSha256": "8ab03020a5c8f4673a71dee90771f21289e124f48efa1b5c966942c1732bc9d4",
+  "sourceMediaReuse": "49 text/speaker/byte identities matched final UIUX payloads; no regeneration"
+}

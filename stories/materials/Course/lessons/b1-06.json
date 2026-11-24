@@ -1,0 +1,414 @@
+{
+  "version": 81,
+  "code": "B1.06",
+  "key": "b1-06",
+  "title": "If I took the job",
+  "goal": "Explore a hypothetical choice before giving advice",
+  "freeConversationInstruction": "Discuss hypothetical changes in work, study or daily life and explore the consequences together",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Compare two options without choosing too early",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What would you need to know first?",
+          "cue": "Name a priority and a missing detail",
+          "hint": "I’d need … I’d ask whether …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for if i took the job",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-06-vocabulary81",
+        "alt": "Six illustrated situations for If I took the job",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B106-V81.0",
+          "label": "a job offer",
+          "prompt": "",
+          "example": "I’d compare both job offers first",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B106-FS81.0",
+          "audioText": "a job offer. I’d compare both job offers first."
+        },
+        {
+          "id": "B106-V81.1",
+          "label": "a salary",
+          "prompt": "",
+          "example": "The salary is the same in both offers",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B106-FS81.1",
+          "audioText": "a salary. The salary is the same in both offers."
+        },
+        {
+          "id": "B106-V81.2",
+          "label": "a commute",
+          "prompt": "",
+          "example": "A longer commute would affect my routine",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B106-FS81.2",
+          "audioText": "a commute. A longer commute would affect my routine."
+        },
+        {
+          "id": "B106-V81.3",
+          "label": "working hours",
+          "prompt": "",
+          "example": "I’d ask about flexible working hours",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B106-FS81.3",
+          "audioText": "working hours. I’d ask about flexible working hours."
+        },
+        {
+          "id": "B106-V81.4",
+          "label": "relocate",
+          "prompt": "",
+          "example": "Would you relocate for the job?",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B106-FS81.4",
+          "audioText": "relocate. Would you relocate for the job?"
+        },
+        {
+          "id": "B106-V81.5",
+          "label": "a career opportunity",
+          "prompt": "",
+          "example": "It could be a useful career opportunity",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B106-FS81.5",
+          "audioText": "a career opportunity. It could be a useful career opportunity."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "If I took the job",
+      "paragraphs": [
+        "Two fictional offers, same salary and training: A has a ten-minute commute and fixed 9–5 hours. B has a one-hour commute on three office days, two remote days and advertised flexible hours. The exact afternoon arrangement is not confirmed."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Exploring the offer",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B106-D81.1",
+          "speaker": "Kim",
+          "text": "If you took the new job, what would change most?",
+          "audioText": "If you took the new job, what would change most?",
+          "translation": "Se aceitasse o novo emprego, o que mudaria mais?"
+        },
+        {
+          "id": "B106-D81.2",
+          "speaker": "Ana",
+          "text": "I’d have more flexibility, but a longer commute",
+          "audioText": "I’d have more flexibility, but a longer commute.",
+          "translation": "Eu teria mais flexibilidade, mas um trajeto maior"
+        },
+        {
+          "id": "B106-D81.3",
+          "speaker": "Kim",
+          "text": "Would the longer journey be a problem every day?",
+          "audioText": "Would the longer journey be a problem every day?",
+          "translation": "O trajeto maior seria um problema todos os dias?"
+        },
+        {
+          "id": "B106-D81.4",
+          "speaker": "Ana",
+          "text": "Only on three days. I could work from home twice a week",
+          "audioText": "Only on three days. I could work from home twice a week.",
+          "translation": "Só em três dias. Eu poderia trabalhar de casa duas vezes por semana"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "How often would the person commute under B?",
+          "cue": "Use the arrangement, not just the journey length",
+          "hint": "On …",
+          "answer": "On three office days"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Advice after understanding the priority",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B106-D81.5",
+          "speaker": "Kim",
+          "text": "What would matter more to you: the journey or choosing your hours?",
+          "audioText": "What would matter more to you: the journey or choosing your hours?",
+          "translation": "O que importaria mais: o trajeto ou escolher seus horários?"
+        },
+        {
+          "id": "B106-D81.6",
+          "speaker": "Ana",
+          "text": "I’m not sure yet. I’d like time for a course in the afternoon",
+          "audioText": "I’m not sure yet. I’d like time for a course in the afternoon.",
+          "translation": "Ainda não sei. Gostaria de ter tempo para um curso à tarde"
+        },
+        {
+          "id": "B106-D81.7",
+          "speaker": "Kim",
+          "text": "Then I’d ask whether the flexible hours really include afternoons",
+          "audioText": "Then I’d ask whether the flexible hours really include afternoons.",
+          "translation": "Então eu perguntaria se o horário flexível realmente inclui as tardes"
+        },
+        {
+          "id": "B106-D81.8",
+          "speaker": "Ana",
+          "text": "Good idea. If they didn’t, the offer would be much less useful",
+          "audioText": "Good idea. If they didn’t, the offer would be much less useful.",
+          "translation": "Boa ideia. Se não incluísse, a proposta seria bem menos útil"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why is the afternoon arrangement important?",
+          "cue": "Link it to a concrete need",
+          "hint": "Because …",
+          "answer": "Because they want to attend an afternoon course"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Consider a different job",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What would change if you took this job?",
+          "cue": "Describe a consequence using the offer card",
+          "hint": "If I took it, I’d …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would matter most to you?",
+          "cue": "Explain a priority and ask your teacher’s view",
+          "hint": "I’d care most about … because …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Imagine the consequence before advising",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An imagined condition",
+          "verb": "If + past simple",
+          "example": "If I took offer B, …"
+        },
+        {
+          "id": "1",
+          "subject": "The imagined result",
+          "verb": "would + base verb",
+          "example": "… I’d have a longer commute"
+        },
+        {
+          "id": "2",
+          "subject": "Tentative advice",
+          "verb": "If I were you, I’d …",
+          "example": "If I were you, I’d check the afternoon arrangement first"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Help me make a decision",
+      "instruction": "Ask about my priorities before recommending an option",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "The priority behind the choice",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’m most concerned about having time for an afternoon course. A higher salary would be welcome, but it isn’t the main reason I’m thinking of changing jobs. I’d accept a longer commute on some days if the flexible hours were real. Before I choose offer B, could you help me decide what to ask the employer? They haven’t confirmed whether I can keep my afternoons free. I’d like to check that before accepting",
+      "audioText": "Hi, Ana. I’m most concerned about having time for an afternoon course. A higher salary would be welcome, but it isn’t the main reason I’m thinking of changing jobs. I’d accept a longer commute on some days if the flexible hours were real. Before I choose offer B, could you help me decide what to ask the employer? They haven’t confirmed whether I can keep my afternoons free. I’d like to check that before accepting.",
+      "audioId": "B106-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What is the person most concerned about?",
+          "cue": "Identify the concern before giving advice",
+          "hint": "They’re worried about …, so I’d …",
+          "answer": "They’re concerned about having time for an afternoon course"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Ask before recommending",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explore a hypothetical choice before giving advice"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Same salary · different routines",
+      "options": [
+        {
+          "id": "near",
+          "title": "Offer A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Commute",
+              "value": "Ten minutes"
+            },
+            {
+              "id": "1",
+              "label": "Hours",
+              "value": "Fixed · 9–5"
+            },
+            {
+              "id": "2",
+              "label": "Learning",
+              "value": "Training included"
+            }
+          ]
+        },
+        {
+          "id": "flex",
+          "title": "Offer B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Commute",
+              "value": "One hour on office days"
+            },
+            {
+              "id": "1",
+              "label": "Hours",
+              "value": "Flexible · two remote days"
+            },
+            {
+              "id": "2",
+              "label": "Learning",
+              "value": "Training included"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "jobs",
+          "prompt": "What would matter most if you took one of these jobs?",
+          "cue": "Ask about my priorities before recommending an offer",
+          "hint": "If you took …, you’d … Would … matter more than …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "A condition to verify",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Priority",
+          "value": "Time for an afternoon course"
+        },
+        {
+          "id": "1",
+          "label": "Acceptable trade-off",
+          "value": "Long commute on some days"
+        },
+        {
+          "id": "2",
+          "label": "Unknown",
+          "value": "Can afternoons really be kept free?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What would you ask the employer before deciding?",
+          "cue": "Formulate a question that checks the person’s main priority",
+          "hint": "Would I be able to …? If not, I’d …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

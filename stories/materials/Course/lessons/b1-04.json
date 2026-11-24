@@ -1,0 +1,408 @@
+{
+  "version": 81,
+  "code": "B1.04",
+  "key": "b1-04",
+  "title": "Whose bag is this?",
+  "goal": "Separate clues from proof and ask a useful checking question",
+  "freeConversationInstruction": "Discuss how you make guesses, ask for evidence and change your mind when new information appears",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Distinguish describing from explaining",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What can you actually see?",
+          "cue": "Name an observation and a possible explanation",
+          "hint": "I can see … It might mean …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for whose bag is this?",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-04-vocabulary81",
+        "alt": "Six illustrated situations for Whose bag is this?",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B104-V81.0",
+          "label": "a backpack",
+          "prompt": "",
+          "example": "Someone left a backpack by the table",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B104-FS81.0",
+          "audioText": "a backpack. Someone left a backpack by the table."
+        },
+        {
+          "id": "B104-V81.1",
+          "label": "a receipt",
+          "prompt": "",
+          "example": "The receipt may be from another day",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B104-FS81.1",
+          "audioText": "a receipt. The receipt may be from another day."
+        },
+        {
+          "id": "B104-V81.2",
+          "label": "a charger",
+          "prompt": "",
+          "example": "A charger alone doesn’t identify the owner",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B104-FS81.2",
+          "audioText": "a charger. A charger alone doesn’t identify the owner."
+        },
+        {
+          "id": "B104-V81.3",
+          "label": "a notebook",
+          "prompt": "",
+          "example": "The notebook has a silver star",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B104-FS81.3",
+          "audioText": "a notebook. The notebook has a silver star."
+        },
+        {
+          "id": "B104-V81.4",
+          "label": "a boarding pass",
+          "prompt": "",
+          "example": "We can see a boarding pass in the pocket",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B104-FS81.4",
+          "audioText": "a boarding pass. We can see a boarding pass in the pocket."
+        },
+        {
+          "id": "B104-V81.5",
+          "label": "a key ring",
+          "prompt": "",
+          "example": "The key ring looks like a red fish",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B104-FS81.5",
+          "audioText": "a key ring. The key ring looks like a red fish."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Whose bag is this?",
+      "paragraphs": [
+        "Lost-property example: open backpack, charger, boarding pass with no readable date, black notebook with a silver star, red fish key ring. Do not read personal document details or infer the owner’s nationality or job. Reception handles collection."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Whose backpack could it be?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B104-D81.1",
+          "speaker": "Kim",
+          "text": "Someone has left a backpack by our table. Should we take it to reception?",
+          "audioText": "Someone has left a backpack by our table. Should we take it to reception?",
+          "translation": "Alguém deixou uma mochila perto da mesa. Devemos levá-la à recepção?"
+        },
+        {
+          "id": "B104-D81.2",
+          "speaker": "Ana",
+          "text": "Yes. There’s a boarding pass visible in the open pocket. The owner might be travelling",
+          "audioText": "Yes. There’s a boarding pass visible in the open pocket. The owner might be travelling.",
+          "translation": "Sim. Tem um cartão de embarque visível no bolso aberto. A pessoa pode estar viajando"
+        },
+        {
+          "id": "B104-D81.3",
+          "speaker": "Kim",
+          "text": "Maybe, but it could be an old pass. We don’t know the date",
+          "audioText": "Maybe, but it could be an old pass. We don’t know the date.",
+          "translation": "Talvez, mas pode ser antigo. Não sabemos a data"
+        },
+        {
+          "id": "B104-D81.4",
+          "speaker": "Ana",
+          "text": "True. There’s also a charger and a black notebook",
+          "audioText": "True. There’s also a charger and a black notebook.",
+          "translation": "Verdade. Também tem um carregador e um caderno preto"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why doesn’t the boarding pass prove the owner is travelling now?",
+          "cue": "Identify what is unknown",
+          "hint": "We don’t know …",
+          "answer": "We don’t know its date; it could be old"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What would count as evidence?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B104-D81.5",
+          "speaker": "Kim",
+          "text": "Those are common things. What detail could help reception identify it?",
+          "audioText": "Those are common things. What detail could help reception identify it?",
+          "translation": "São coisas comuns. Que detalhe ajudaria a recepção a identificar?"
+        },
+        {
+          "id": "B104-D81.6",
+          "speaker": "Ana",
+          "text": "The notebook has a silver star, and the key ring is a red fish",
+          "audioText": "The notebook has a silver star, and the key ring is a red fish.",
+          "translation": "O caderno tem uma estrela prateada e o chaveiro é um peixe vermelho"
+        },
+        {
+          "id": "B104-D81.7",
+          "speaker": "Kim",
+          "text": "That’s more useful. Let’s let the caller describe those before we suggest them",
+          "audioText": "That’s more useful. Let’s let the caller describe those before we suggest them.",
+          "translation": "Isso ajuda mais. Vamos deixar quem ligar descrever antes de sugerirmos"
+        },
+        {
+          "id": "B104-D81.8",
+          "speaker": "Ana",
+          "text": "Agreed. We can make a guess, but we shouldn’t hand it over without checking",
+          "audioText": "Agreed. We can make a guess, but we shouldn’t hand it over without checking.",
+          "translation": "Concordo. Podemos levantar uma hipótese, mas não entregar sem conferir"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Which details are more distinctive than a charger?",
+          "cue": "Give the two checking details",
+          "hint": "The … and …",
+          "answer": "The silver star on the black notebook and the red fish key ring"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Interpret the objects",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "An observation is not always a conclusion",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A strong inference from evidence",
+          "verb": "must + base verb",
+          "example": "The battery indicator is empty; it must need charging"
+        },
+        {
+          "id": "1",
+          "subject": "A possibility, not proof",
+          "verb": "might / could + base verb",
+          "example": "The owner might be travelling, but the pass could be old"
+        },
+        {
+          "id": "2",
+          "subject": "An incompatible claim",
+          "verb": "can’t + base verb",
+          "example": "If this is the only bag, it can’t be the all-white bag described"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Find the owner",
+      "instruction": "Use the clues to suggest an explanation and tell me what to check",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A caller gives matching details",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Reception has spoken to a caller about the backpack. The caller described a black notebook with a silver star and a red fish key ring, without being told those details first. Both descriptions match the objects in our example. That makes the claim more plausible, but reception still needs to follow its collection procedure. Could you explain why the matching details are stronger evidence than simply having a charger, and say what still needs to be checked?",
+      "audioText": "Hi, Ana. Reception has spoken to a caller about the backpack. The caller described a black notebook with a silver star and a red fish key ring, without being told those details first. Both descriptions match the objects in our example. That makes the claim more plausible, but reception still needs to follow its collection procedure. Could you explain why the matching details are stronger evidence than simply having a charger, and say what still needs to be checked?",
+      "audioId": "B104-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Could this be the caller’s bag?",
+          "cue": "Compare the caller’s details with the visible evidence",
+          "hint": "It might be, because … / It can’t be, because …",
+          "answer": "It could be the caller’s bag: distinctive details match, but collection is not yet confirmed"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Recommend the next check",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Separate clues from proof and ask a useful checking question"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Observed clues",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Visible objects",
+          "value": "Charger · boarding pass · notebook"
+        },
+        {
+          "id": "1",
+          "label": "Distinctive detail",
+          "value": "Silver star on black notebook"
+        },
+        {
+          "id": "2",
+          "label": "Distinctive detail",
+          "value": "Red fish key ring"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What might the objects tell us?",
+          "cue": "Offer a possibility, name a clue and say what it cannot prove",
+          "hint": "The owner might … because … However, we don’t know …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Compare the caller’s claim",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Notebook described",
+          "value": "Black · silver star · matches"
+        },
+        {
+          "id": "1",
+          "label": "Key ring described",
+          "value": "Red fish · matches"
+        },
+        {
+          "id": "2",
+          "label": "Still required",
+          "value": "Reception’s collection procedure"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Is this enough to hand over the bag?",
+          "cue": "Weigh the matching evidence and recommend the next step",
+          "hint": "It might be theirs because … We still need to …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Visible objects",
+          "value": "Charger · boarding pass · notebook"
+        },
+        {
+          "id": "1",
+          "label": "Distinctive detail",
+          "value": "Silver star on black notebook"
+        },
+        {
+          "id": "2",
+          "label": "Distinctive detail",
+          "value": "Red fish key ring"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What might these objects tell us?",
+          "cue": "Suggest a possibility and name the supporting clue",
+          "hint": "The owner might … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "How sure are you?",
+          "cue": "Explain what the evidence does and does not show",
+          "hint": "I’m not sure, but …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

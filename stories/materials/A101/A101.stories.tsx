@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react-vite'
 import fluentLicense from './assets/FLUENT-EMOJI-LICENSE.txt?raw'
 import flagsLicense from './assets/FLAG-ICONS-LICENSE.txt?raw'
+import { MaterialSlideDeck } from '../shared/MaterialSlideDeck'
+import { SlidePage } from '../../../src/components/Slide/SlidePage'
+import { WarmUpSection } from './A101.sections'
+import { warmUps } from './A101.data'
 import { A101Lesson } from './A101Lesson'
 const meta = {
   title: 'Materials/A1.01',
@@ -10,22 +14,48 @@ const meta = {
     docs: {
       description: {
         component:
-          'Aula atual de 26 telas do Claude, com cenas geradas com ambientação para os exercícios. Bandeiras exatas são sobrepostas pela interface. Áudio de vocabulário/diálogo pela voz do navegador; mensagem da Kim com voz de demonstração local. A integração nos portais depende da revisão e publicação oficial da UI library.\n\n' +
+          'A1.01 replanejada: seis alvos em dois grupos, conversa, apresentação pessoal, fichas de encontro, escuta e reação. Os exemplos isolados antigos não fazem parte da sequência nova.\n\n' +
           fluentLicense +
           '\n\nBandeiras: flag-icons 7.5.0\n\n' +
           flagsLicense,
       },
     },
   },
-  args: { initialPageId: 's1', learnerName: '' },
+  args: { initialPageId: 'cover', learnerName: '' },
 } satisfies Meta<typeof A101Lesson>
 export default meta
 type Story = StoryObj<typeof meta>
 export const CompleteLesson: Story = { tags: ['visual-review'] }
-export const WarmUp: Story = { args: { initialPageId: 's21' } }
+export const Countries: Story = { args: { initialPageId: 's1' } }
+export const Feelings: Story = { args: { initialPageId: 's4' } }
+export const WarmUpWithAnswerSounds: Story = {
+  render: () => (
+    <MaterialSlideDeck
+      label="Optional warm-up reference"
+      pageId="warm-up"
+      pages={[
+        {
+          id: 'warm-up',
+          label: 'Optional warm-up',
+          content: (
+            <SlidePage
+              columns={1}
+              eyebrow="Optional reference"
+              title={warmUps[0]!.t}
+              instruction="Choose the correct answer"
+            >
+              <WarmUpSection item={warmUps[0]!} />
+            </SlidePage>
+          ),
+        },
+      ]}
+    />
+  ),
+  tags: ['visual-review', 'audio-review'],
+}
 export const Dialogue: Story = { args: { initialPageId: 's6' } }
 export const Grammar: Story = { args: { initialPageId: 's71' } }
-export const Matching: Story = { args: { initialPageId: 's17' } }
+export const MeetSomeone: Story = { args: { initialPageId: 's10' } }
 export const Listening: Story = {
   args: { initialPageId: 's9', learnerName: 'Carla' },
 }

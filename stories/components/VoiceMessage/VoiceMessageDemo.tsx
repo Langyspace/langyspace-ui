@@ -19,6 +19,8 @@ export function VoiceMessageDemo(props: Partial<VoiceMessageExerciseProps>) {
       disabled: (attempts[question.id] ?? []).includes(correct),
       choices: question.choices.map((choice) => ({
         ...choice,
+        feedbackOutcome:
+          choice.id === correct ? ('correct' as const) : ('wrong' as const),
         feedback: (attempts[question.id] ?? []).includes(choice.id)
           ? choice.id === correct
             ? ('correct' as const)
@@ -71,7 +73,7 @@ export function VoiceMessageDeck() {
             <SlidePage
               width="standard"
               title="Listening Practice"
-              instruction="Ouça o áudio da Kim e responda."
+              instruction="Listen to Kim and answer the questions."
             >
               <VoiceMessageDemo active={pageId === 'listening'} />
             </SlidePage>
@@ -83,7 +85,7 @@ export function VoiceMessageDeck() {
           content: (
             <SlidePage
               title="Let’s talk"
-              instruction="Responda sobre você e devolva a pergunta: And you?"
+              instruction="Answer, then ask: And you?"
             />
           ),
         },

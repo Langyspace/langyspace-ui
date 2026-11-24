@@ -1,0 +1,262 @@
+{
+  "key": "b1-01",
+  "code": "B1.01",
+  "title": "What have you been doing?",
+  "first": {
+    "id": "course-practice-b1-01-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-b1-01-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’ve been paint"
+          },
+          {
+            "id": "b",
+            "text": "I’ve been painting"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para destacar uma atividade que vem acontecendo, usamos have been mais o verbo com ing. Aqui precisamos de painting, não paint. Por isso: “I’ve been painting”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Para destacar uma atividade que vem acontecendo, usamos have been mais o verbo com ing. Aqui precisamos de painting, não paint. Por isso: “I’ve been painting”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q01/completion.mp3"
+      },
+      {
+        "id": "course-b1-01-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She has been cycling to work"
+          },
+          {
+            "id": "b",
+            "text": "She have been cycling to work"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O sujeito é she, então o auxiliar é has. O restante da construção continua been cycling. Por isso: “She has been cycling to work”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O sujeito é she, então o auxiliar é has. O restante da construção continua been cycling. Por isso: “She has been cycling to work”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q02/completion.mp3"
+      },
+      {
+        "id": "course-b1-01-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’ve sent all three emails"
+          },
+          {
+            "id": "b",
+            "text": "I’ve send all three emails"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O present perfect precisa do particípio depois de have. Para send, esse particípio é sent; assim você destaca os e-mails concluídos. Por isso: “I’ve sent all three emails”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O present perfect precisa do particípio depois de have. Para send, esse particípio é sent; assim você destaca os e-mails concluídos. Por isso: “I’ve sent all three emails”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q03/completion.mp3"
+      },
+      {
+        "id": "course-b1-01-q04",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "How long have you been baking?"
+          },
+          {
+            "id": "b",
+            "text": "How long you have been baking?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta, have vem antes de you. Been baking continua junto depois do sujeito. Por isso: “How long have you been baking?”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta, have vem antes de you. Been baking continua junto depois do sujeito. Por isso: “How long have you been baking?”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q04/completion.mp3"
+      },
+      {
+        "id": "course-b1-01-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "He’s been working here since a month"
+          },
+          {
+            "id": "b",
+            "text": "He’s been working here for a month"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A month é uma duração. Por isso usamos for; since precisaria de um ponto de início, como last month. Por isso: “He’s been working here for a month”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "A month é uma duração. Por isso usamos for; since precisaria de um ponto de início, como last month. Por isso: “He’s been working here for a month”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q05/completion.mp3"
+      },
+      {
+        "id": "course-b1-01-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’ve been finished the room, but I’m still painting the hall"
+          },
+          {
+            "id": "b",
+            "text": "I’ve finished the room, but I’m still painting the hall"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O quarto já foi terminado, então usamos have finished para esse resultado. A pintura do corredor continua em andamento e aparece com am painting. Por isso: “I’ve finished the room, but I’m still painting the hall”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O quarto já foi terminado, então usamos have finished para esse resultado. A pintura do corredor continua em andamento e aparece com am painting. Por isso: “I’ve finished the room, but I’m still painting the hall”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-b1-01-quiz/course-b1-01-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-b1-01-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "b1-01.shadowing.01",
+        "displayText": "Hi, Ana! I’m back! Wow… your living room is blue!",
+        "translation": "Oi, Ana! Voltei! Nossa… a sua sala está azul!",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-01.shadowing.02",
+        "displayText": "Welcome back! Yeah, I’ve been painting all week",
+        "translation": "Bem-vinda de volta! É, passei a semana toda pintando",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-01.shadowing.03",
+        "displayText": "It’s great! Have you finished?",
+        "translation": "Ficou ótimo! Você terminou?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-01.shadowing.04",
+        "displayText": "Almost. I’ve painted both rooms, the living room and the kitchen. The bedroom is next",
+        "translation": "Quase. Pintei os dois cômodos, a sala e a cozinha. O quarto é o próximo",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-01.shadowing.05",
+        "displayText": "And your shoes! Have you been running?",
+        "translation": "E esse tênis! Você anda correndo?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-01.shadowing.06",
+        "displayText": "Yes! I’ve been running every morning for two weeks",
+        "translation": "Sim! Estou correndo toda manhã há duas semanas",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-01.shadowing.07",
+        "displayText": "Every morning? Wow. And there’s a cake on the table. You’ve even been baking!",
+        "translation": "Toda manhã? Nossa. E tem um bolo na mesa. Você até anda fazendo bolo!",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-01.shadowing.08",
+        "displayText": "Ha! Yes. I’ve baked three cakes this week. Anyway, how was Korea?",
+        "translation": "Ha! Sim. Fiz três bolos esta semana. Enfim, como foi a Coreia?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-01.shadowing.09",
+        "displayText": "Great! I visited my family and ate a lot. But I have jet lag. I’ve been sleeping all day!",
+        "translation": "Ótima! Visitei a minha família e comi muito. Mas estou com jet lag. Passei o dia todo dormindo!",
+        "speakerId": "kim"
+      },
+      {
+        "id": "b1-01.shadowing.10",
+        "displayText": "Oh no! You seem tired. Here, have some cake",
+        "translation": "Ah, não! Você parece cansada. Toma, come um pedaço de bolo",
+        "speakerId": "ana"
+      },
+      {
+        "id": "b1-01.shadowing.11",
+        "displayText": "Of course! I always say yes to cake",
+        "translation": "Claro! Eu sempre digo sim para bolo",
+        "speakerId": "kim"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

@@ -1,0 +1,71 @@
+{
+  "lessons": [
+    {
+      "code": "A103",
+      "width": 1280,
+      "screens": 17,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A104",
+      "width": 1280,
+      "screens": 16,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A105",
+      "width": 1280,
+      "screens": 16,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A106",
+      "width": 1280,
+      "screens": 20,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A103",
+      "width": 390,
+      "screens": 17,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A104",
+      "width": 390,
+      "screens": 16,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A105",
+      "width": 390,
+      "screens": 16,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "code": "A106",
+      "width": 390,
+      "screens": 20,
+      "imagesLoaded": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "interactionChecks": [
+    "catalog search/empty/clear 1280px",
+    "notes persist/clear/Escape 1280px",
+    "Mia four positions/hide 1280px",
+    "catalog search/empty/clear 390px",
+    "notes persist/clear/Escape 390px",
+    "Mia four positions/hide 390px"
+  ],
+  "warnings": [],
+  "browserErrors": [],
+  "result": "passed"
+}

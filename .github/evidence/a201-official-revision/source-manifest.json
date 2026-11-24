@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "material": "a2-01",
+  "reservationId": "UIUX-A201-OFFICIAL-02",
+  "frozenAt": "2026-11-19T00:28:59.664259+00:00",
+  "branch": "feat/materials-a201-exp-a1-20261117",
+  "baseHead": "cfc558ed36d4ffaacb4d43854961a15cc10b3581",
+  "official": {
+    "artifactId": "1e9bba01-d234-4ac8-ad04-113e051f2e9f",
+    "version": "1795045837-60e6",
+    "sha256": "3afd630eea41e4c8b0b17ae9d3eefd8e823385b8eef55e8feda0b7c68a7dc0c9"
+  },
+  "editorialProjectionVerified": true,
+  "allSixAssetsByteIdenticalToCanonical": true,
+  "unitGroupsPassed": 4,
+  "browserGroupsPassed": 15,
+  "browserReport": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/.github/evidence/a201-official-revision/browser-report.json",
+  "capturePairs": 39,
+  "legacyBaselineCaptures": 51,
+  "errors": 0,
+  "missingImages": 0,
+  "horizontalOverflow": 0,
+  "files": [
+    {
+      "path": "docs/epics/a201-official-revision/plan.md",
+      "sha256": "e9408338074e4488c88eae04e5b5f3f8b03b525e343f71a3cc5cacd9cba6a9ac",
+      "bytes": 2969
+    },
+    {
+      "path": "docs/epics/a201-official-revision/prepare-baseline.mjs",
+      "sha256": "bb825dd917fc414b609e94d4b0a9712671da019d66057dabcfdefc335c8e093b",
+      "bytes": 1690
+    },
+    {
+      "path": "docs/epics/a201-official-revision/review.md",
+      "sha256": "c26508cb606c54b3f680594f3290f5aa120742429f2296fdea3cfab088ca9a4d",
+      "bytes": 3510
+    },
+    {
+      "path": "docs/epics/a201-official-revision/sync-official.mjs",
+      "sha256": "74759b05a7878bfa19bc23fb2b05aff9286217d092deeb89ad1ee38de69b48e4",
+      "bytes": 1381
+    },
+    {
+      "path": "stories/materials/A201/A201.content.json",
+      "sha256": "fa8adbfd621872e9f2d716cf950795392fa2b418e6ba809157660f7dffe71964",
+      "bytes": 10501
+    },
+    {
+      "path": "stories/materials/A201/A201.conversation.tsx",
+      "sha256": "e2e15556522de8fae27e24e738efae9fcfbcd5a6e60d283ad3009cfdf661e3bf",
+      "bytes": 8810
+    },
+    {
+      "path": "stories/materials/A201/A201.data.ts",
+      "sha256": "a71c2a6968cd7fdcf624475e780698e56e5348af8fc4e2752d4143f21a8c9598",
+      "bytes": 969
+    },
+    {
+      "path": "stories/materials/A201/A201.official.json",
+      "sha256": "3739fd776aa685d68884bb854fa258712c05581fa99933b403587c67eb343b40",
+      "bytes": 24850
+    },
+    {
+      "path": "stories/materials/A201/A201.practice.tsx",
+      "sha256": "504e6ea4afce6e592d6c8fb5f015df3815d610c708d47c4d30f563d910d69f8c",
+      "bytes": 7469
+    },
+    {
+      "path": "stories/materials/A201/A201.stories.tsx",
+      "sha256": "9be86840e3b31ff93b9f89a5bf892e3bc938fed24ba689d750e9f3c1cd447d17",
+      "bytes": 2164
+    },
+    {
+      "path": "stories/materials/A201/A201.styles.ts",
+      "sha256": "dd5d9e566d107a82f0aae95649cbd9bf7ef261846b00ebf388f7e846cb4c7c03",
+      "bytes": 4321
+    },
+    {
+      "path": "stories/materials/A201/A201.turns.ts",
+      "sha256": "3a13d003e92df17a4461c5abc65903dc141fc79674ece62acac79df0603f35d9",
+      "bytes": 1642
+    },
+    {
+      "path": "stories/materials/A201/A201.types.ts",
+      "sha256": "2fc51b5a06831d2e6365204a9fd77fa74ba2a806e7bfea69fd503be690f642a3",
+      "bytes": 248
+    },
+    {
+      "path": "stories/materials/A201/A201Lesson.tsx",
+      "sha256": "55836e76a4ad83ca9088547ed1eff4e1de017740e5e3e33c22319b170ed0015d",
+      "bytes": 4302
+    },
+    {
+      "path": "stories/materials/A201/assets/L.9.mp3",
+      "sha256": "1bb0cf895fb5c62b31726f5f9e6bffe2975f25d3a96ee33d674b036522eb92b5",
+      "bytes": 244131
+    },
+    {
+      "path": "stories/materials/A201/assets/a201-copy-drinking-coffee.webp",
+      "sha256": "b6f3bb308d30b68b38bf945a65380620788fdd9e368bc46003f8fc66c951cf9f",
+      "bytes": 107508
+    },
+    {
+      "path": "stories/materials/A201/assets/a201-copy-studying.webp",
+      "sha256": "e224bd10c890c3c742184be04bced9801e8d9622dd27ca9705d6d11f4477a3a8",
+      "bytes": 99250
+    },
+    {
+      "path": "stories/materials/A201/assets/a201-copy-walking.webp",
+      "sha256": "9d04f8450953d319f3b61a306ea736915d16595243e60beb13fe3182ac6a0070",
+      "bytes": 90514
+    },
+    {
+      "path": "stories/materials/A201/assets/a201-copy-working.webp",
+      "sha256": "174e68947a8f81c77944b2cbaeb1c24ee284a749ecb10f5f065a2813a39cfd11",
+      "bytes": 80744
+    },
+    {
+      "path": "stories/materials/A201/assets/kim-demo.mp3",
+      "sha256": "1bb0cf895fb5c62b31726f5f9e6bffe2975f25d3a96ee33d674b036522eb92b5",
+      "bytes": 244131
+    },
+    {
+      "path": "stories/materials/A201/assets/kim-profile-refined.webp",
+      "sha256": "1637ecd219e5f3df56127eacdbea10ca510c59f16381e5e8f5c7f1a55d386fbf",
+      "bytes": 44302
+    },
+    {
+      "path": "stories/materials/A201/audio-provenance.json",
+      "sha256": "3ff887d3f2f3cfb095d24092823474a117f0eeb6ad492244cfce5e7b676d3aa7",
+      "bytes": 834
+    },
+    {
+      "path": "stories/materials/A201/image-scenes.json",
+      "sha256": "069dc69deb9cc7d574d751496433cbbed5938f0066d45ddc3ef496dc178ab0fc",
+      "bytes": 17416
+    },
+    {
+      "path": "test/materials/A201/A201Revision.test.tsx",
+      "sha256": "32001911c5849b1d68672021388a123e1aaa9f343c87161e1509abb7897c7cf9",
+      "bytes": 4120
+    }
+  ],
+  "authorCommit": null,
+  "authorBuild": false,
+  "authorDeploy": false,
+  "staging": "pending Integration",
+  "uxLab": "pending central writer receipt",
+  "visualGateReview": "pending human"
+}

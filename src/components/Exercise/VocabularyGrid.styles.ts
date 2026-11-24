@@ -1,48 +1,105 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { recipe } from './Exercise.shared.styles'
 import { Pressable } from '../Pressable'
+import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
+
+/** Shared by the scene grid and an introduction aligned to that same grid. */
+export { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
+
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
-})<{ $columns?: 2 | 3 | 4 }>`
+})<{ $columns?: 2 | 3 | 4; $regularScene?: boolean; $reference?: boolean }>`
   display: grid;
-  grid-template-columns: repeat(${(p) => p.$columns ?? 3}, minmax(0, 1fr));
-  gap: ${theme.spacing[3]};
+  grid-template-columns: repeat(
+    ${(p) => (p.$reference ? 7 : (p.$columns ?? 3))},
+    minmax(0, 1fr)
+  );
+  gap: ${(p) => (p.$reference ? theme.spacing[2] : theme.spacing[3])};
+  ${(p) =>
+    p.$regularScene
+      ? css`
+          width: 100%;
+          max-width: ${regularVocabularyMaxWidth(p.$columns)};
+          margin-inline: auto;
+        `
+      : undefined}
   @container (max-width: ${theme.breakpoints.sm}) {
     grid-template-columns: repeat(
-      ${(p) => (p.$columns === 4 ? 2 : (p.$columns ?? 2))},
+      ${(p) => (p.$reference ? 4 : p.$columns === 4 ? 2 : (p.$columns ?? 2))},
       minmax(0, 1fr)
     );
   }
 `
-export const Word = styled(Pressable)<{ $scene: boolean; $regular: boolean }>`
+export const Word = styled(Pressable)<{
+  $plain?: boolean
+  $static?: boolean
+  $symbol?: boolean
+  $reference?: boolean
+  $scene: boolean
+  $regular: boolean
+  $completed?: boolean
+  $imageAspectRatio?: number
+}>`
+  ${(p) =>
+    p.$symbol
+      ? css`
+          && {
+            height: clamp(5.5rem, 14cqh, 6rem);
+            min-height: 0;
+            padding-bottom: ${theme.spacing[6]};
+          }
+        `
+      : undefined}
+  ${(p) =>
+    p.$reference
+      ? css`
+          && {
+            height: clamp(${theme.spacing[16]}, 10cqh, ${theme.spacing[20]});
+            min-height: 0;
+            padding: ${theme.spacing[1]} ${theme.spacing[1]} ${theme.spacing[3]};
+          }
+        `
+      : undefined}
   position: relative;
   display: grid;
   place-items: center;
   min-width: 0;
   min-height: ${(p) => (p.$scene || p.$regular ? '0' : theme.exercises.vocabularyHeight)};
-  height: ${(p) => (p.$scene ? theme.exercises.sceneHeight : p.$regular ? theme.exercises.vocabularyRegularHeight : 'auto')};
+  height: ${(p) => (p.$scene && p.$regular ? 'auto' : p.$regular ? theme.exercises.vocabularyRegularHeight : p.$scene ? theme.exercises.sceneHeight : 'auto')};
+  aspect-ratio: ${(p) =>
+    p.$scene && p.$regular
+      ? Number.isFinite(p.$imageAspectRatio) && (p.$imageAspectRatio ?? 0) > 0
+        ? p.$imageAspectRatio
+        : '3 / 2'
+      : 'auto'};
   padding: ${(p) => (p.$scene ? '0' : theme.spacing[2])};
-  border: 1px solid ${(p) => recipe(p).border};
+  border: 1px solid
+    ${(p) => (p.$plain ? 'transparent' : p.$completed ? theme.semantic.status.success.foreground : recipe(p).border)};
   border-radius: ${theme.radius.lg};
-  background: ${(p) => recipe(p).surface};
+  background: ${(p) => (p.$plain ? 'transparent' : recipe(p).surface)};
   color: ${(p) => recipe(p).foreground};
-  cursor: pointer;
+  margin: 0;
+  cursor: ${(p) => (p.$static ? 'default' : 'pointer')};
   &:focus-visible {
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 2px;
   }
 `
-export const WordImage = styled.img<{ $scene: boolean; $regular: boolean }>`
+export const WordImage = styled.img<{
+  $scene: boolean
+  $regular: boolean
+  $fit?: 'cover' | 'contain'
+}>`
   position: ${(p) => (p.$scene ? 'absolute' : 'static')};
   inset: 0;
   width: 100%;
-  height: ${(p) => (p.$scene ? '100%' : p.$regular ? theme.exercises.vocabularyRegularImageHeight : theme.exercises.vocabularyImageHeight)};
-  object-fit: ${(p) => (p.$scene ? 'cover' : 'contain')};
-  object-position: ${(p) => (p.$scene ? 'center 25%' : 'center')};
+  height: ${(p) => (p.$scene ? '100%' : p.$regular ? `calc(${theme.exercises.vocabularyRegularHeight} - ${theme.spacing[4]})` : theme.exercises.vocabularyImageHeight)};
+  object-fit: ${(p) => p.$fit ?? (p.$scene ? 'cover' : 'contain')};
+  object-position: ${(p) => (p.$scene && !p.$regular ? 'center 25%' : 'center')};
   border-radius: inherit;
 `
-export const QuestionMark = styled.span`
+export const QuestionMark = styled.span<{ $completed?: boolean }>`
   position: absolute;
   top: ${theme.spacing[2]};
   right: ${theme.spacing[2]};
@@ -51,41 +108,127 @@ export const QuestionMark = styled.span`
   width: ${theme.spacing[6]};
   height: ${theme.spacing[6]};
   border-radius: ${theme.radius.circle};
-  background: ${(p) => recipe(p).accent};
-  color: ${theme.colors.palette.white};
+  background: ${(p) => (p.$completed ? theme.semantic.status.success.foreground : recipe(p).accent)};
+  color: ${(p) => (p.$completed ? theme.colors.palette.white : recipe(p).canvas)};
   font-size: ${theme.typography.fontSize.sm};
 `
-export const WordCaption = styled.span`
+export const WordBadge = styled.span`
   position: absolute;
-  bottom: ${theme.spacing[1]};
-  left: ${theme.spacing[1]};
-  right: ${theme.spacing[1]};
-  border-radius: ${theme.radius.md};
-  padding: ${theme.spacing[1]};
+  top: ${theme.spacing[2]};
+  left: ${theme.spacing[2]};
+  padding: ${theme.spacing[1]} ${theme.spacing[2]};
+  border-radius: ${theme.radius.pill};
   background: ${(p) => recipe(p).surface};
-  color: ${(p) => recipe(p).foreground};
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  color: ${(p) => recipe(p).muted};
+  font-size: ${theme.typography.fontSize.xs};
   font-weight: ${theme.typography.fontWeight.bold};
-  font-size: ${theme.typography.fontSize.md};
-  line-height: 1.1;
 `
-export const WordLabel = styled.span<{ $floating: boolean }>`
+// Exact label treatment recovered from Margarida's 19/11 Vocabulary edit.
+const vocabularyLabel = css`
   position: absolute;
-  bottom: ${(p) => (p.$floating ? `calc(100% - ${theme.spacing[2]})` : theme.spacing[1])};
-  left: ${theme.spacing[1]};
-  right: ${theme.spacing[1]};
-  padding: ${theme.spacing[1]};
-  border-radius: ${theme.radius.md};
-  background: ${(p) => (p.$floating ? recipe(p).inverseCanvas : recipe(p).surface)};
-  color: ${(p) => (p.$floating ? recipe(p).inverseForeground : recipe(p).foreground)};
-  z-index: 1;
-  font-family: ${(p) => recipe(p).displayFontFamily};
+  top: auto;
+  bottom: 10px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: calc(100% - 20px);
+  padding: 6px 14px;
+  border-radius: ${theme.radius.pill};
+  background: color-mix(
+    in srgb,
+    ${theme.colors.palette.white} 82%,
+    transparent
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: ${theme.colors.palette.extended.ink};
+  border: 1px solid
+    color-mix(in srgb, ${theme.colors.palette.white} 70%, transparent);
+  box-shadow: 0 6px 18px
+    color-mix(in srgb, ${theme.colors.palette.black} 14%, transparent);
   text-align: center;
-  b,
-  small {
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: 15px;
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  z-index: 1;
+  @media (max-width: 600px) {
+    bottom: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+  }
+`
+export const WordCaption = styled.span`
+  ${vocabularyLabel}
+`
+export const WordLabel = styled.span<{
+  $revealed: boolean
+  $reference?: boolean
+  $hasExample?: boolean
+}>`
+  ${vocabularyLabel}
+  border-radius: ${(p) => (p.$hasExample ? theme.radius.lg : undefined)};
+  b {
     display: block;
+    font-size: ${(p) => (p.$revealed ? theme.typography.fontSize.md : '15px')};
+    font-weight: ${theme.typography.fontWeight.bold};
+    color: ${theme.colors.palette.extended.ink};
   }
   small {
-    color: ${(p) => (p.$floating ? recipe(p).inverseMuted : recipe(p).muted)};
+    display: none;
   }
+  @media (max-width: 600px) {
+    b {
+      font-size: ${(p) => (p.$revealed ? '13.5px' : '13px')};
+    }
+  }
+  ${(p) =>
+    p.$reference
+      ? css`
+          && {
+            bottom: ${theme.spacing[1]};
+            max-width: none;
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            background: transparent;
+            box-shadow: none;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            color: ${recipe(p).muted};
+            font-size: ${theme.typography.fontSize.xs};
+            line-height: 1.2;
+            white-space: nowrap;
+          }
+          && b {
+            font-size: inherit;
+            font-weight: ${theme.typography.fontWeight.medium};
+            color: inherit;
+          }
+        `
+      : undefined}
+`
+
+export const WordExample = styled.span`
+  display: block;
+  margin-top: ${theme.spacing[1]};
+  font-size: ${theme.typography.fontSize.sm};
+  font-weight: ${theme.typography.fontWeight.medium};
+  line-height: 1.35;
+`
+
+export const VocabularySection = styled.div`
+  display: grid;
+  min-width: 0;
+  gap: ${theme.spacing[3]};
+`
+
+export const WordSymbol = styled.span`
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize['3xl']};
+  font-weight: ${theme.typography.fontWeight.bold};
+  line-height: 1;
+  color: inherit;
 `

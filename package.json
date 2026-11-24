@@ -1,6 +1,6 @@
 {
   "name": "@langyspace/ui",
-  "version": "4.4.0",
+  "version": "4.5.0",
   "description": "Semantic React components and interaction contracts shared by Langy.space products.",
   "type": "module",
   "license": "UNLICENSED",
@@ -63,7 +63,8 @@
     "write:api": "node scripts/check-public-api.mjs --write",
     "test:styling-policy": "node --test test/audit/styling.node-test.mjs",
     "test:styling-system": "node audit/styling-cli.mjs scripts/styling-system.audit.config.mjs",
-    "test:build-transforms": "node --test scripts/compact-jsx-annotations.node-test.mjs scripts/fold-style-tokens.node-test.mjs"
+    "test:build-transforms": "node --test scripts/compact-jsx-annotations.node-test.mjs scripts/fold-style-tokens.node-test.mjs",
+    "build:materials": "node scripts/build-materials.mjs"
   },
   "peerDependencies": {
     "react": ">=19 <20",

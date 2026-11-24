@@ -1,0 +1,146 @@
+[
+  {
+    "originalId": "s1",
+    "pageId": "s1",
+    "title": "What have you been doing?",
+    "decision": "Reuse invitation review as oral bridge; one lesson title, remove Goal panel/second heading.",
+    "components": "SlidePage split + questions",
+    "minutes": 2
+  },
+  {
+    "originalId": "s2",
+    "pageId": "s2",
+    "title": "Busy weeks",
+    "decision": "Keep first four evidence scenes at safe 3:2 framing; remove duplicate question and browser audio.",
+    "components": "VocabularyGrid regular scene contain, 2 columns",
+    "minutes": 2
+  },
+  {
+    "originalId": "s2",
+    "pageId": "s21",
+    "title": "Time for yourself",
+    "decision": "Second group of four enlarged scenes. No activity lost.",
+    "components": "VocabularyGrid regular scene contain, 2 columns",
+    "minutes": 2
+  },
+  {
+    "originalId": "s31",
+    "pageId": "s31",
+    "title": "What has she been doing?",
+    "decision": "Keep recent-evidence contrast; remove duplicate question, translation pre-answer and tiny reference strip.",
+    "components": "ExercisePanel + QuizOption + QuizFeedback",
+    "minutes": 2
+  },
+  {
+    "originalId": "s32",
+    "pageId": "s32",
+    "title": "What has he been doing?",
+    "decision": "Keep oral prediction before options and evidence inference.",
+    "components": "ExercisePanel + QuizOption reveal",
+    "minutes": 2
+  },
+  {
+    "originalId": "s33",
+    "pageId": "s33",
+    "title": "Catch up with Leo",
+    "decision": "Keep natural lately exchange; one context line and oral follow-up.",
+    "components": "LearningDialogue + QuizOption",
+    "minutes": 2
+  },
+  {
+    "originalId": "s4",
+    "pageId": "s4",
+    "title": "Lately",
+    "decision": "Personalized extended answers/follow-up; natural week question.",
+    "components": "Numbered oral questions",
+    "minutes": 3
+  },
+  {
+    "originalId": "s51",
+    "pageId": "s51",
+    "title": "Running or been running?",
+    "decision": "Recordings discriminate present/continuous perfect. Support revealed only after attempt; no score.",
+    "components": "MinimalPairExercise",
+    "minutes": 2
+  },
+  {
+    "originalId": "s52",
+    "pageId": "s52",
+    "title": "Painted or been painting?",
+    "decision": "Recordings discriminate completed/result and ongoing activity.",
+    "components": "MinimalPairExercise",
+    "minutes": 2
+  },
+  {
+    "originalId": "s6",
+    "pageId": "s6",
+    "title": "Welcome back! (1/2)",
+    "decision": "Preserve exact dialogue, recorded characters, optional translation.",
+    "components": "LearningDialogue",
+    "minutes": 4
+  },
+  {
+    "originalId": "s62",
+    "pageId": "s62",
+    "title": "Welcome back! (2/2)",
+    "decision": "Preserve exact dialogue, recorded characters, optional translation.",
+    "components": "LearningDialogue",
+    "minutes": 3
+  },
+  {
+    "originalId": "s61",
+    "pageId": "s61",
+    "title": "What did you find out?",
+    "decision": "Reveal comprehension after oral answer; add personal link.",
+    "components": "RevealCard",
+    "minutes": 3
+  },
+  {
+    "originalId": "s7",
+    "pageId": "s7",
+    "title": "Been doing or done?",
+    "decision": "Concise use, full form, negative/question, for/since and stative caveat in details. Remove auto-speech.",
+    "components": "GrammarTable + details",
+    "minutes": 5
+  },
+  {
+    "originalId": "s8",
+    "pageId": "s8",
+    "title": "Kim is back",
+    "decision": "Role swap and progressively optional support, remove redundant score and tiny vocabulary.",
+    "components": "LearningDialogue",
+    "minutes": 4
+  },
+  {
+    "originalId": "s9",
+    "pageId": "s9",
+    "title": "A message from Leo",
+    "decision": "Replace macOS demo; exact final transcript. Native audio pause/replay/speed/transcript and oral reply.",
+    "components": "VoiceMessageExercise",
+    "minutes": 4
+  },
+  {
+    "originalId": "s10",
+    "pageId": "s10",
+    "title": "Right or wrong?",
+    "decision": "Explain corrections; completed-cakes context avoids false universal grammar rule.",
+    "components": "QuizFeedback + correction list",
+    "minutes": 3
+  },
+  {
+    "originalId": "s11",
+    "pageId": "s11",
+    "title": "What has Kim been doing?",
+    "decision": "Whole clues, possible answers rather than unique inference, oral follow-ups and result.",
+    "components": "RolePlayExercise + RevealSequenceCard",
+    "minutes": 4
+  },
+  {
+    "originalId": "s12",
+    "pageId": "s12",
+    "title": "Before next class",
+    "decision": "Replace unverified linked decks/tasks with three real oral practices.",
+    "components": "Homework surfaces, no fake action",
+    "minutes": 1
+  }
+]

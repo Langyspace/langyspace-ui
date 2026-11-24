@@ -1,0 +1,232 @@
+{
+  "key": "a1-12",
+  "code": "A1.12",
+  "title": "A day trip",
+  "first": {
+    "id": "course-practice-a1-12-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a1-12-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Let’s go to the park"
+          },
+          {
+            "id": "b",
+            "text": "Let’s going to the park"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para sugerir algo com let’s, coloque o verbo na forma básica logo depois. Por isso usamos go, não going. Por isso: “Let’s go to the park”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Para sugerir algo com let’s, coloque o verbo na forma básica logo depois. Por isso usamos go, não going. Por isso: “Let’s go to the park”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q01/completion.mp3"
+      },
+      {
+        "id": "course-a1-12-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Is sunny today"
+          },
+          {
+            "id": "b",
+            "text": "It’s sunny today"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Em inglês, a frase sobre o tempo precisa de it. Mesmo sem uma pessoa fazendo a ação, dizemos it’s sunny. Por isso: “It’s sunny today”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Em inglês, a frase sobre o tempo precisa de it. Mesmo sem uma pessoa fazendo a ação, dizemos it’s sunny. Por isso: “It’s sunny today”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q02/completion.mp3"
+      },
+      {
+        "id": "course-a1-12-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Let’s meet at ten"
+          },
+          {
+            "id": "b",
+            "text": "Let’s to meet at ten"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Depois de let’s, usamos meet diretamente. O to não entra nessa construção. Por isso: “Let’s meet at ten”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Depois de let’s, usamos meet diretamente. O to não entra nessa construção. Por isso: “Let’s meet at ten”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q03/completion.mp3"
+      },
+      {
+        "id": "course-a1-12-q04",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Let’s meet on nine"
+          },
+          {
+            "id": "b",
+            "text": "Let’s meet at nine"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Quando falamos de uma hora marcada, usamos at. Para dizer às nove, a combinação é at nine. Por isso: “Let’s meet at nine”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Quando falamos de uma hora marcada, usamos at. Para dizer às nove, a combinação é at nine. Por isso: “Let’s meet at nine”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q04/completion.mp3"
+      },
+      {
+        "id": "course-a1-12-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Let’s meet at the station"
+          },
+          {
+            "id": "b",
+            "text": "Let’s meet to the station"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui você está dizendo onde será o encontro. Usamos meet at para o ponto de encontro; go to seria ir até esse lugar. Por isso: “Let’s meet at the station”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Aqui você está dizendo onde será o encontro. Usamos meet at para o ponto de encontro; go to seria ir até esse lugar. Por isso: “Let’s meet at the station”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q05/completion.mp3"
+      },
+      {
+        "id": "course-a1-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It’s rain today"
+          },
+          {
+            "id": "b",
+            "text": "It’s rainy today"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para descrever como o dia está, usamos o adjetivo rainy. Rain é chuva ou chover; rainy é chuvoso. Por isso: “It’s rainy today”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Para descrever como o dia está, usamos o adjetivo rainy. Rain é chuva ou chover; rainy é chuvoso. Por isso: “It’s rainy today”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a1-12-quiz/course-a1-12-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-12-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-12.shadowing.01",
+        "displayText": "It’s sunny today. Let’s go to the park",
+        "translation": "Hoje está um dia ensolarado. Vamos ao parque",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.02",
+        "displayText": "Good idea. Can we take the train?",
+        "translation": "Boa ideia. Podemos ir de trem?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a1-12.shadowing.03",
+        "displayText": "Yes. Two tickets are six euros",
+        "translation": "Sim. Dois bilhetes custam seis euros",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.04",
+        "displayText": "Great. Do you have water?",
+        "translation": "Ótimo. Você tem água?",
+        "speakerId": "cian-walsh"
+      },
+      {
+        "id": "a1-12.shadowing.05",
+        "displayText": "Yes. I have water and two sandwiches",
+        "translation": "Sim. Tenho água e dois sanduíches",
+        "speakerId": "niamh-murphy"
+      },
+      {
+        "id": "a1-12.shadowing.06",
+        "displayText": "Perfect. Let’s go",
+        "translation": "Perfeito. Vamos lá",
+        "speakerId": "cian-walsh"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "niamh-murphy",
+        "name": "Niamh",
+        "avatarUrl": "/flashcards/course-characters/niamh-murphy/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      },
+      {
+        "id": "cian-walsh",
+        "name": "Cian",
+        "avatarUrl": "/flashcards/course-characters/cian-walsh/image.webp",
+        "accentCode": "en-IE",
+        "accentLabel": "English · Ireland"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

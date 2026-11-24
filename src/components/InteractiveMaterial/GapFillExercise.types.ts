@@ -1,5 +1,6 @@
 import type { ComponentPropsWithRef, ReactNode } from 'react'
 import type { QuizOptionState } from '../Quiz/QuizOption.types'
+import type { FeedbackSoundOutcome } from '../Quiz/useFeedbackSounds.types'
 export interface GapFillItem {
   id: string
   before: ReactNode
@@ -11,6 +12,7 @@ export interface GapFillChoice {
   id: string
   label: ReactNode
   state?: QuizOptionState
+  feedbackOutcome?: FeedbackSoundOutcome
   disabled?: boolean
 }
 export interface GapFillExerciseProps extends Omit<

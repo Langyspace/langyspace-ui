@@ -1,0 +1,470 @@
+{
+  "version": 81,
+  "code": "C1.02",
+  "key": "c1-02",
+  "title": "Had we known…",
+  "goal": "Review an outcome without confusing hindsight, warnings and established causes",
+  "freeConversationInstruction": "Reflect on outcomes, discuss what was foreseeable and challenge each other’s explanations respectfully",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a past decision with a present consequence",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "How would you separate a fact from a counterfactual?",
+          "cue": "State what happened, then qualify the alternative",
+          "hint": "We know … Had …, it might …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Learning from an outcome",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "c1-02-vocabulary81",
+        "alt": "Six illustrated situations for Had we known…",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "C102-V81.0",
+          "label": "an assumption",
+          "prompt": "",
+          "example": "We should make the assumption explicit",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "C102-FS81.0",
+          "audioText": "an assumption. We should make the assumption explicit."
+        },
+        {
+          "id": "C102-V81.1",
+          "label": "a warning sign",
+          "prompt": "",
+          "example": "A warning sign is useful only if someone can act",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "C102-FS81.1",
+          "audioText": "a warning sign. A warning sign is useful only if someone can act."
+        },
+        {
+          "id": "C102-V81.2",
+          "label": "a contingency plan",
+          "prompt": "",
+          "example": "The contingency plan needs a decision owner",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "C102-FS81.2",
+          "audioText": "a contingency plan. The contingency plan needs a decision owner."
+        },
+        {
+          "id": "C102-V81.3",
+          "label": "an oversight",
+          "prompt": "",
+          "example": "The missing check may have been an oversight",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "C102-FS81.3",
+          "audioText": "an oversight. The missing check may have been an oversight."
+        },
+        {
+          "id": "C102-V81.4",
+          "label": "a root cause",
+          "prompt": "",
+          "example": "One symptom does not establish the root cause",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "C102-FS81.4",
+          "audioText": "a root cause. One symptom does not establish the root cause."
+        },
+        {
+          "id": "C102-V81.5",
+          "label": "a lesson learned",
+          "prompt": "",
+          "example": "A lesson learned should lead to a testable action",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "C102-FS81.5",
+          "audioText": "a lesson learned. A lesson learned should lead to a testable action."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The event record",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Operations timeline · simulated source",
+      "subject": "Opening and sound check",
+      "paragraphs": [
+        "The event began twelve minutes after its scheduled start. Some guests had arrived before the doors were due to open. The sound test had not been completed before admission. These three observations appear in the event log, but the log does not identify who knew about the incomplete test or when that information became available.",
+        "One proposed explanation is that the schedule left too little time for preparation. Another is that a warning was not routed to someone who could change the opening decision. The review team has not yet checked the message record. Neither explanation should be described as the established root cause at this stage."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "A participant’s account",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Participant interview · simulated source",
+      "subject": "What the delay felt like",
+      "paragraphs": [
+        "A participant remembers waiting near the entrance and hearing different explanations from different volunteers. One person said the programme would begin soon; another said there was a technical check. The participant cannot identify who made the opening decision and does not know whether the volunteers had received the same information.",
+        "From the participant’s perspective, an accurate short update would have helped more than several confident but inconsistent estimates. This account is evidence about the participant’s experience, not proof that anyone deliberately concealed a warning. The review needs to connect the experience with the operational record before assigning responsibility or choosing a prevention."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "What was foreseeable?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C102-D81.1",
+          "speaker": "Kim",
+          "text": "Had we known the sound test hadn’t happened, we could have held the doors for a few minutes",
+          "audioText": "Had we known the sound test hadn’t happened, we could have held the doors for a few minutes.",
+          "translation": "Se soubéssemos que o teste de som não tinha acontecido, poderíamos ter atrasado a abertura por alguns minutos"
+        },
+        {
+          "id": "C102-D81.2",
+          "speaker": "Ana",
+          "text": "Possibly, but did anyone have that information before the guests arrived?",
+          "audioText": "Possibly, but did anyone have that information before the guests arrived?",
+          "translation": "Talvez, mas alguém tinha essa informação antes de os convidados chegarem?"
+        },
+        {
+          "id": "C102-D81.3",
+          "speaker": "Kim",
+          "text": "The timeline only says the test wasn’t completed. It doesn’t say who knew",
+          "audioText": "The timeline only says the test wasn’t completed. It doesn’t say who knew.",
+          "translation": "A linha do tempo só diz que o teste não foi concluído. Não informa quem sabia"
+        },
+        {
+          "id": "C102-D81.4",
+          "speaker": "Ana",
+          "text": "Then I’d avoid calling it an ignored warning until we check the message record",
+          "audioText": "Then I’d avoid calling it an ignored warning until we check the message record.",
+          "translation": "Então eu evitaria chamar de aviso ignorado antes de conferir o registro das mensagens"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What does the original timeline fail to establish?",
+          "cue": "Identify the missing knowledge record",
+          "hint": "It doesn’t show …",
+          "answer": "Who knew the sound test was incomplete before guests arrived"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Test the explanation",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C102-D81.5",
+          "speaker": "Kim",
+          "text": "Fair. We do know the event started twelve minutes late and some guests arrived before opening",
+          "audioText": "Fair. We do know the event started twelve minutes late and some guests arrived before opening.",
+          "translation": "É justo. Sabemos que o evento começou com doze minutos de atraso e alguns convidados chegaram antes da abertura"
+        },
+        {
+          "id": "C102-D81.6",
+          "speaker": "Ana",
+          "text": "Those are outcomes, not necessarily the root cause of each other",
+          "audioText": "Those are outcomes, not necessarily the root cause of each other.",
+          "translation": "Esses são resultados, não necessariamente a causa um do outro"
+        },
+        {
+          "id": "C102-D81.7",
+          "speaker": "Kim",
+          "text": "What would distinguish a planning problem from a communication problem?",
+          "audioText": "What would distinguish a planning problem from a communication problem?",
+          "translation": "O que distinguiria um problema de planejamento de um de comunicação?"
+        },
+        {
+          "id": "C102-D81.8",
+          "speaker": "Ana",
+          "text": "Whether there was time for the test, and whether an actionable warning reached a responsible person",
+          "audioText": "Whether there was time for the test, and whether an actionable warning reached a responsible person.",
+          "translation": "Se havia tempo para o teste e se um aviso útil chegou a alguém responsável"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why isn’t the late start itself a root cause?",
+          "cue": "Separate result from explanation",
+          "hint": "It’s an outcome; …",
+          "answer": "An outcome still needs an explanation supported by evidence"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "A prevention with an owner",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C102-D81.9",
+          "speaker": "Kim",
+          "text": "So we need to check both instead of choosing the most convenient explanation",
+          "audioText": "So we need to check both instead of choosing the most convenient explanation.",
+          "translation": "Então precisamos conferir ambos em vez de escolher a explicação mais conveniente"
+        },
+        {
+          "id": "C102-D81.10",
+          "speaker": "Ana",
+          "text": "Exactly. An earlier checkpoint might help, but only if someone owns the decision it triggers",
+          "audioText": "Exactly. An earlier checkpoint might help, but only if someone owns the decision it triggers.",
+          "translation": "Exatamente. Uma conferência anterior pode ajudar, mas só se alguém for responsável pela decisão resultante"
+        },
+        {
+          "id": "C102-D81.11",
+          "speaker": "Kim",
+          "text": "If we do this again, I’d name that person and define when they can delay opening",
+          "audioText": "If we do this again, I’d name that person and define when they can delay opening.",
+          "translation": "Se fizermos de novo, eu definiria essa pessoa e quando ela pode atrasar a abertura"
+        },
+        {
+          "id": "C102-D81.12",
+          "speaker": "Ana",
+          "text": "That’s a specific prevention we can test, while keeping the causal claim provisional",
+          "audioText": "That’s a specific prevention we can test, while keeping the causal claim provisional.",
+          "translation": "É uma prevenção específica que podemos testar, mantendo a afirmação causal provisória"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What makes the suggested checkpoint actionable?",
+          "cue": "Name its required ownership",
+          "hint": "Someone …",
+          "answer": "Someone owns the decision and can delay opening"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Judge what was foreseeable",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A counterfactual is a choice of register, not proof of cause",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A formal past counterfactual",
+          "verb": "Had + subject + participle …",
+          "example": "Had we known the test was incomplete, we could have delayed opening"
+        },
+        {
+          "id": "1",
+          "subject": "The same meaning, less formal",
+          "verb": "If + subject + had + participle …",
+          "example": "If we’d known, we could have delayed opening"
+        },
+        {
+          "id": "2",
+          "subject": "A prevention tied to evidence",
+          "verb": "Next time, … / If we do this again, …",
+          "example": "Next time, name an owner for warning acknowledgements"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Run a useful review",
+      "instruction": "Review what happened and agree on one change for next time",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A warning existed, but who owned it?",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean",
+      "audioText": "Hi, Ana. I found the missing message record. A warning that the sound test was incomplete was sent before the planned opening time, but it went to a shared group without a named person responsible for responding. There’s no acknowledgement in the record. That makes a communication failure more plausible than simply saying nobody noticed a problem. It still doesn’t establish whether enough testing time had been scheduled, or whether a recipient read the warning and chose not to act. Could you revise the review to reflect that distinction? I’d like one preventive action linked to what we can actually establish, rather than a general instruction to be more careful. If you use “Had we known”, please make clear whose knowledge you mean.",
+      "audioId": "C102-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Does the new information change your explanation?",
+          "cue": "Revise the cause or state why it still holds",
+          "hint": "It changes …, because … / It doesn’t rule out …",
+          "answer": "A warning was sent without a named responder or acknowledgement; intent and testing capacity remain unproven"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Revise the causal claim",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Review an outcome without confusing hindsight, warnings and established causes"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Review, not hindsight",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Known outcomes",
+          "value": "No sound test · 12-minute late start"
+        },
+        {
+          "id": "1",
+          "label": "Open causal question",
+          "value": "Scheduling, communication or both?"
+        },
+        {
+          "id": "2",
+          "label": "Prevention to discuss",
+          "value": "A checkpoint with a decision owner"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What could reasonably have been anticipated?",
+          "cue": "Distinguish an available warning from knowledge that only came afterwards",
+          "hint": "Had … known …, … could have … The record doesn’t establish …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "New evidence, bounded conclusion",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Message record",
+          "value": "Warning sent before opening"
+        },
+        {
+          "id": "1",
+          "label": "Missing process",
+          "value": "Named responder · acknowledgement"
+        },
+        {
+          "id": "2",
+          "label": "Still uncertain",
+          "value": "Who read it · whether testing time was sufficient"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What changes in the explanation and prevention?",
+          "cue": "Qualify the cause and propose one action that addresses the demonstrated process gap",
+          "hint": "It supports …, but doesn’t establish … Next time I’d …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Known outcomes",
+          "value": "No sound test · 12-minute late start"
+        },
+        {
+          "id": "1",
+          "label": "Open causal question",
+          "value": "Scheduling, communication or both?"
+        },
+        {
+          "id": "2",
+          "label": "Prevention to discuss",
+          "value": "A checkpoint with a decision owner"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What could reasonably have been anticipated?",
+          "cue": "Distinguish an available warning from hindsight",
+          "hint": "Had we known …, we could have …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would you change next time?",
+          "cue": "Propose a prevention linked to the actual cause",
+          "hint": "If we do this again, I’d …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

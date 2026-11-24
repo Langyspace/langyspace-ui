@@ -1,0 +1,470 @@
+{
+  "version": 81,
+  "code": "C1.12",
+  "key": "c1-12",
+  "title": "A world without cash",
+  "goal": "Synthesize two perspectives and recommend a workable policy with conditions",
+  "freeConversationInstruction": "Explore the issue freely, challenge assumptions and work towards a nuanced view without reading a script",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Bring together source, concession and clarification",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "How would you state a view without overstating it?",
+          "cue": "Attribute a point, qualify it and name a condition",
+          "hint": "According to … However …, provided that …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Payments, access and unintended effects",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "c1-12-vocabulary81",
+        "alt": "Six illustrated situations for A world without cash",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "C112-V81.0",
+          "label": "financial inclusion",
+          "prompt": "",
+          "example": "Financial inclusion concerns who can actually participate",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "C112-FS81.0",
+          "audioText": "financial inclusion. Financial inclusion concerns who can actually participate."
+        },
+        {
+          "id": "C112-V81.1",
+          "label": "privacy",
+          "prompt": "",
+          "example": "The process should make privacy implications clear",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "C112-FS81.1",
+          "audioText": "privacy. The process should make privacy implications clear."
+        },
+        {
+          "id": "C112-V81.2",
+          "label": "a transaction fee",
+          "prompt": "",
+          "example": "Check whether a transaction fee changes",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "C112-FS81.2",
+          "audioText": "a transaction fee. Check whether a transaction fee changes."
+        },
+        {
+          "id": "C112-V81.3",
+          "label": "digital access",
+          "prompt": "",
+          "example": "Digital access can be temporarily lost",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "C112-FS81.3",
+          "audioText": "digital access. Digital access can be temporarily lost."
+        },
+        {
+          "id": "C112-V81.4",
+          "label": "a fallback option",
+          "prompt": "",
+          "example": "A fallback option must be usable in practice",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "C112-FS81.4",
+          "audioText": "a fallback option. A fallback option must be usable in practice."
+        },
+        {
+          "id": "C112-V81.5",
+          "label": "an unintended consequence",
+          "prompt": "",
+          "example": "A convenient policy can have an unintended consequence",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "C112-FS81.5",
+          "audioText": "an unintended consequence. A convenient policy can have an unintended consequence."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "The operational case",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Venue manager · simulated source",
+      "subject": "A digital-first proposal",
+      "paragraphs": [
+        "The venue manager proposes moving towards digital payment to simplify checkout and reduce cash handling. Staff currently reconcile different payment types at the end of each day. The manager expects a more consistent process, but has not supplied trial results showing faster service or lower total costs. Any transaction fees and equipment requirements would still need checking.",
+        "The proposal does not yet define a fallback for connection failure or a customer without a usable device. The manager is open to a trial and wants a recommendation that explains what the normal process should be, what happens when it fails and how staff would communicate an exception. This is a simulated operational perspective, not evidence that digital-only systems always work better."
+      ]
+    },
+    {
+      "id": "s_source1",
+      "kind": "source",
+      "title": "The access perspective",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 2,
+      "eyebrow": "Reading",
+      "author": "Community account · simulated source",
+      "subject": "Participation and temporary failure",
+      "paragraphs": [
+        "A community representative asks the venue to consider people who cannot reliably use its proposed digital process. That includes limited access to a suitable account or device, but also temporary problems such as a dead battery or an unavailable payment connection. A person who normally pays digitally may still need another route on a particular day.",
+        "The representative does not claim that cash resolves every access issue. They ask for a practical fallback, clear information about fees and privacy, and a process that does not require a customer to explain private circumstances publicly. Their concern is whether people can complete an ordinary purchase. The recommendation should address that need while recognising the venue’s operational aims, and specify what would make the proposed trial worth revising."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "What do the sources establish?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "C112-D81.1",
+          "speaker": "Kim",
+          "text": "What would make the digital-only proposal attractive to this venue?",
+          "audioText": "What would make the digital-only proposal attractive to this venue?",
+          "translation": "O que tornaria a proposta de pagamento apenas digital atraente para este local?"
+        },
+        {
+          "id": "C112-D81.2",
+          "speaker": "Ana",
+          "text": "The manager wants a simpler checkout and less cash handling, but those are aims, not guaranteed outcomes",
+          "audioText": "The manager wants a simpler checkout and less cash handling, but those are aims, not guaranteed outcomes.",
+          "translation": "A gerência quer simplificar o caixa e lidar menos com dinheiro, mas são objetivos, não resultados garantidos"
+        },
+        {
+          "id": "C112-D81.3",
+          "speaker": "Kim",
+          "text": "Whose needs might that overlook?",
+          "audioText": "Whose needs might that overlook?",
+          "translation": "De quem isso pode deixar as necessidades de fora?"
+        },
+        {
+          "id": "C112-D81.4",
+          "speaker": "Ana",
+          "text": "People without reliable digital access, and anyone affected by a temporary failure",
+          "audioText": "People without reliable digital access, and anyone affected by a temporary failure.",
+          "translation": "De quem não tem acesso digital confiável e de qualquer pessoa afetada por uma falha temporária"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Which benefits are aims rather than measured results?",
+          "cue": "Use the manager’s perspective",
+          "hint": "Simpler … and …",
+          "answer": "Simpler checkout and less cash handling"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Consider the omitted perspective",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "C112-D81.5",
+          "speaker": "Kim",
+          "text": "Would accepting cash solve every inclusion problem?",
+          "audioText": "Would accepting cash solve every inclusion problem?",
+          "translation": "Aceitar dinheiro resolveria todo problema de inclusão?"
+        },
+        {
+          "id": "C112-D81.6",
+          "speaker": "Ana",
+          "text": "No. It would provide one fallback, but accessibility, privacy and fees still need attention",
+          "audioText": "No. It would provide one fallback, but accessibility, privacy and fees still need attention.",
+          "translation": "Não. Ofereceria uma alternativa, mas acessibilidade, privacidade e taxas ainda precisam de atenção"
+        },
+        {
+          "id": "C112-D81.7",
+          "speaker": "Kim",
+          "text": "How would you avoid treating the two sources as equally strong on every point?",
+          "audioText": "How would you avoid treating the two sources as equally strong on every point?",
+          "translation": "Como evitaria tratar as duas fontes como igualmente fortes em todos os pontos?"
+        },
+        {
+          "id": "C112-D81.8",
+          "speaker": "Ana",
+          "text": "I’d attribute the operational aims to the manager and the access concerns to the community account",
+          "audioText": "I’d attribute the operational aims to the manager and the access concerns to the community account.",
+          "translation": "Eu atribuiria os objetivos operacionais à gerência e as preocupações de acesso ao relato da comunidade"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Why does the access source consider temporary failure?",
+          "cue": "Avoid equating access only with permanent exclusion",
+          "hint": "Because …",
+          "answer": "Because even regular digital users can temporarily lose access"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "A recommendation with conditions",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "C112-D81.9",
+          "speaker": "Kim",
+          "text": "Then what recommendation could acknowledge both?",
+          "audioText": "Then what recommendation could acknowledge both?",
+          "translation": "Então que recomendação poderia reconhecer ambos?"
+        },
+        {
+          "id": "C112-D81.10",
+          "speaker": "Ana",
+          "text": "I’d support a digital-first trial, provided there’s a clear fallback and a review of who is excluded",
+          "audioText": "I’d support a digital-first trial, provided there’s a clear fallback and a review of who is excluded.",
+          "translation": "Apoiaria um teste priorizando o digital, desde que exista uma alternativa clara e uma revisão de quem fica excluído"
+        },
+        {
+          "id": "C112-D81.11",
+          "speaker": "Kim",
+          "text": "What evidence would make you change that recommendation?",
+          "audioText": "What evidence would make you change that recommendation?",
+          "translation": "Que evidência faria você mudar a recomendação?"
+        },
+        {
+          "id": "C112-D81.12",
+          "speaker": "Ana",
+          "text": "If the fallback is unusable in practice, or the costs fall unfairly on users, I’d revise it rather than defend the label",
+          "audioText": "If the fallback is unusable in practice, or the costs fall unfairly on users, I’d revise it rather than defend the label.",
+          "translation": "Se a alternativa for inviável na prática ou os custos recaírem injustamente sobre usuários, eu revisaria em vez de defender o rótulo"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What could reverse the suggested trial recommendation?",
+          "cue": "Give a practical trigger",
+          "hint": "If …",
+          "answer": "If the fallback is unusable or costs fall unfairly on users"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Consider who may be excluded",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Choose the language the argument actually needs",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Language review",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Attribute and qualify",
+          "verb": "According to … / The account suggests …",
+          "example": "The manager expects simpler handling; the source does not prove it"
+        },
+        {
+          "id": "1",
+          "subject": "Concede and condition",
+          "verb": "Although … / provided that …",
+          "example": "Although digital payment is convenient, a fallback is needed"
+        },
+        {
+          "id": "2",
+          "subject": "Reformulate and test",
+          "verb": "In other words … / I’d revise this if …",
+          "example": "In other words, digital-first needn’t mean no alternative"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Reach a balanced recommendation",
+      "instruction": "Compare the views and agree on a recommendation with conditions",
+      "minutes": 5,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "An ordinary user loses digital access",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails",
+      "audioText": "Hi, Ana. I wanted to add an experience to the payment-policy discussion. I normally pay by card, but last week my phone battery died while I was out. At the next place, the payment connection also stopped working for a while. I had some cash with me, but their digital-only process didn’t allow it, so I couldn’t complete the purchase then. I’m not saying that one incident proves digital payment is always unreliable. It does show that temporary loss of access can affect people who usually use it comfortably. Could your recommendation say what happens in that situation, including how staff explain the fallback without embarrassing the customer? I’d also want to know whether a transaction fee changes between the normal process and the fallback. A policy can aim for convenience while still making a specific plan for the moment the convenient route fails.",
+      "audioId": "C112-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "How does this experience affect your recommendation?",
+          "cue": "Connect the new perspective to a specific part of your proposal",
+          "hint": "It doesn’t necessarily change …, but it highlights …",
+          "answer": "The experience highlights temporary loss of access and the need for a usable fallback"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Strengthen one condition in the recommendation",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 2,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Synthesize two perspectives and recommend a workable policy with conditions"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Three criteria for the recommendation",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Access",
+          "value": "Who can complete the purchase?"
+        },
+        {
+          "id": "1",
+          "label": "Reliability",
+          "value": "What happens during an outage?"
+        },
+        {
+          "id": "2",
+          "label": "Cost and privacy",
+          "value": "Who pays · what information is required?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "Whose needs might the proposal overlook?",
+          "cue": "Compare the sources, acknowledge a trade-off and propose a conditional policy",
+          "hint": "According to … Although …, I’d support … provided that …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Test the fallback in practice",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Situation",
+          "value": "Dead phone · payment connection unavailable"
+        },
+        {
+          "id": "1",
+          "label": "Need",
+          "value": "A usable alternative without public embarrassment"
+        },
+        {
+          "id": "2",
+          "label": "Check",
+          "value": "Different fee? Clear staff explanation?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How does this experience affect your recommendation?",
+          "cue": "Revise a specific condition without generalising from one incident",
+          "hint": "It doesn’t necessarily change …, but it highlights … I’d require …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Access",
+          "value": "Who can complete the purchase?"
+        },
+        {
+          "id": "1",
+          "label": "Reliability",
+          "value": "What happens during an outage?"
+        },
+        {
+          "id": "2",
+          "label": "Cost and privacy",
+          "value": "Who pays · what information is required?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Whose needs might this proposal overlook?",
+          "cue": "Consider a perspective not yet represented",
+          "hint": "One group we haven’t considered is …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What would make your proposal more workable?",
+          "cue": "Add a condition or exception and justify it",
+          "hint": "I’d support …, provided that …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

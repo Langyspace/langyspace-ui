@@ -1,0 +1,491 @@
+{
+  "version": 81,
+  "code": "A2.07",
+  "key": "a2-07",
+  "title": "House rules",
+  "goal": "Explain shared-space rules and negotiate a workable plan",
+  "freeConversationInstruction": "Compare rules at home and in shared places and discuss which ones are useful",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Offer some help with a shared activity",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What will you do to help?",
+          "cue": "Offer a concrete action",
+          "hint": "I’ll …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Shared spaces",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-07-vocabulary81",
+        "alt": "Six illustrated situations for House rules",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A207-V81.0",
+          "label": "building",
+          "prompt": "",
+          "example": "I’m new to this building",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A207-FS81.0",
+          "audioText": "building. I’m new to this building."
+        },
+        {
+          "id": "A207-V81.1",
+          "label": "pool",
+          "prompt": "",
+          "example": "The pool closes at eight",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A207-FS81.1",
+          "audioText": "pool. The pool closes at eight."
+        },
+        {
+          "id": "A207-V81.2",
+          "label": "garage",
+          "prompt": "",
+          "example": "Leave your bike in the garage",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A207-FS81.2",
+          "audioText": "garage. Leave your bike in the garage."
+        },
+        {
+          "id": "A207-V81.3",
+          "label": "grill",
+          "prompt": "",
+          "example": "Do I have to book the grill?",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A207-FS81.3",
+          "audioText": "grill. Do I have to book the grill?"
+        },
+        {
+          "id": "A207-V81.4",
+          "label": "trash",
+          "prompt": "",
+          "example": "Please take the trash downstairs",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A207-FS81.4",
+          "audioText": "trash. Please take the trash downstairs."
+        },
+        {
+          "id": "A207-V81.5",
+          "label": "bike",
+          "prompt": "",
+          "example": "You can’t take a bike in the lift",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A207-FS81.5",
+          "audioText": "bike. You can’t take a bike in the lift."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "New to the building",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A207-D81.1",
+          "speaker": "Kim",
+          "text": "I’m new here. Do I have to book the grill?",
+          "audioText": "I’m new here. Do I have to book the grill?",
+          "translation": "Sou nova aqui. Preciso reservar a churrasqueira?"
+        },
+        {
+          "id": "A207-D81.2",
+          "speaker": "Ana",
+          "text": "Yes, you have to book it at reception. It’s free",
+          "audioText": "Yes, you have to book it at reception. It’s free.",
+          "translation": "Sim, você precisa reservar na recepção. É grátis"
+        },
+        {
+          "id": "A207-D81.3",
+          "speaker": "Kim",
+          "text": "Can we use the pool after dinner?",
+          "audioText": "Can we use the pool after dinner?",
+          "translation": "Podemos usar a piscina depois do jantar?"
+        },
+        {
+          "id": "A207-D81.4",
+          "speaker": "Ana",
+          "text": "Until eight. You mustn’t use it after that",
+          "audioText": "Until eight. You mustn’t use it after that.",
+          "translation": "Até as oito. Não se pode usar depois disso"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Does Ana need to pay to book the grill?",
+          "cue": "Use the booking rule",
+          "hint": "No, …",
+          "answer": "No, it’s free, but she has to book"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "What you need to bring",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A207-D81.5",
+          "speaker": "Kim",
+          "text": "All right. Do I have to bring my own chairs?",
+          "audioText": "All right. Do I have to bring my own chairs?",
+          "translation": "Tudo bem. Preciso levar minhas próprias cadeiras?"
+        },
+        {
+          "id": "A207-D81.6",
+          "speaker": "Ana",
+          "text": "No, you don’t have to. There are six chairs by the grill",
+          "audioText": "No, you don’t have to. There are six chairs by the grill.",
+          "translation": "Não precisa. Tem seis cadeiras perto da churrasqueira"
+        },
+        {
+          "id": "A207-D81.7",
+          "speaker": "Kim",
+          "text": "Great. One more thing: can I take my bike in the lift?",
+          "audioText": "Great. One more thing: can I take my bike in the lift?",
+          "translation": "Ótimo. Mais uma coisa: posso levar a bicicleta no elevador?"
+        },
+        {
+          "id": "A207-D81.8",
+          "speaker": "Ana",
+          "text": "Sorry, you can’t. Please leave it in the garage",
+          "audioText": "Sorry, you can’t. Please leave it in the garage.",
+          "translation": "Desculpe, não pode. Por favor, deixe-a na garagem"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Does she have to bring chairs?",
+          "cue": "Distinguish unnecessary from prohibited",
+          "hint": "No, she …",
+          "answer": "No, she doesn’t have to. Chairs are provided"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Check the house rules",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Necessary, optional or prohibited?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "An obligation",
+          "verb": "have to + verb",
+          "example": "You have to book the grill"
+        },
+        {
+          "id": "1",
+          "subject": "It is not necessary",
+          "verb": "don’t have to + verb",
+          "example": "You don’t have to bring chairs"
+        },
+        {
+          "id": "2",
+          "subject": "It is prohibited",
+          "verb": "mustn’t + verb",
+          "example": "You mustn’t use the pool after closing"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Plan it within the rules",
+      "instruction": "Ask about the rules and plan an activity",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "An earlier closing time",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! There’s a temporary change this weekend. The pool closes at six, not eight, because of cleaning. The grill booking is still fine, and you can use the chairs. If your friends want to swim, they should come before six. Could you tell them about the earlier closing time? Everything goes back to normal on Monday",
+      "audioText": "Hi, Ana! There’s a temporary change this weekend. The pool closes at six, not eight, because of cleaning. The grill booking is still fine, and you can use the chairs. If your friends want to swim, they should come before six. Could you tell them about the earlier closing time? Everything goes back to normal on Monday.",
+      "audioId": "A207-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What has changed for this weekend?",
+          "cue": "Explain the temporary rule you hear",
+          "hint": "This weekend we have to … / We can’t …",
+          "answer": "This weekend the pool closes at six"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Tell your guests what changed",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Explain shared-space rules and negotiate a workable plan"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Building reference",
+      "options": [
+        {
+          "id": "grill",
+          "title": "Grill",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Booking",
+              "value": "Required · reception"
+            },
+            {
+              "id": "1",
+              "label": "Chairs",
+              "value": "Six provided"
+            },
+            {
+              "id": "2",
+              "label": "Cost",
+              "value": "Free"
+            }
+          ]
+        },
+        {
+          "id": "pool",
+          "title": "Pool",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Hours",
+              "value": "10 am–8 pm"
+            },
+            {
+              "id": "1",
+              "label": "After closing",
+              "value": "No entry"
+            },
+            {
+              "id": "2",
+              "label": "Booking",
+              "value": "Not required"
+            }
+          ]
+        },
+        {
+          "id": "garage",
+          "title": "Garage",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Bikes",
+              "value": "Keep them here"
+            },
+            {
+              "id": "1",
+              "label": "Lift",
+              "value": "No bikes"
+            },
+            {
+              "id": "2",
+              "label": "Access",
+              "value": "Residents and guests"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "rules",
+          "prompt": "Can we invite friends for a swim and a barbecue?",
+          "cue": "Ask about a rule and explain a restriction before agreeing on a plan",
+          "hint": "Do we have to …? We can’t …, but we can …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "This weekend only",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Pool",
+          "value": "Closes at 6 pm"
+        },
+        {
+          "id": "1",
+          "label": "Grill",
+          "value": "Booking and chairs unchanged"
+        },
+        {
+          "id": "2",
+          "label": "Normal hours return",
+          "value": "Monday"
+        }
+      ],
+      "questions": [
+        {
+          "id": "guests",
+          "prompt": "What should your guests know?",
+          "cue": "Explain the temporary restriction and suggest a useful time",
+          "hint": "This weekend we can’t … We could … before …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Do I have to book the grill?",
+          "cue": "Explain the booking rule shown on the building card",
+          "hint": "Yes, you have to … / No, you don’t have to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Can we have a party after ten?",
+          "cue": "Explain a restriction and suggest an alternative",
+          "hint": "We can’t …, but we can …",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "grill",
+          "title": "Grill",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Booking",
+              "value": "Required · reception"
+            },
+            {
+              "id": "1",
+              "label": "Chairs",
+              "value": "Six provided"
+            },
+            {
+              "id": "2",
+              "label": "Cost",
+              "value": "Free"
+            }
+          ]
+        },
+        {
+          "id": "pool",
+          "title": "Pool",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Hours",
+              "value": "10 am–8 pm"
+            },
+            {
+              "id": "1",
+              "label": "After closing",
+              "value": "No entry"
+            },
+            {
+              "id": "2",
+              "label": "Booking",
+              "value": "Not required"
+            }
+          ]
+        },
+        {
+          "id": "garage",
+          "title": "Garage",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Bikes",
+              "value": "Keep them here"
+            },
+            {
+              "id": "1",
+              "label": "Lift",
+              "value": "No bikes"
+            },
+            {
+              "id": "2",
+              "label": "Access",
+              "value": "Residents and guests"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

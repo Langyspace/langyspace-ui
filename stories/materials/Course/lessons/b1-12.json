@@ -1,0 +1,435 @@
+{
+  "version": 81,
+  "code": "B1.12",
+  "key": "b1-12",
+  "title": "Office or home?",
+  "goal": "Defend a preference, acknowledge a drawback and negotiate a routine",
+  "freeConversationInstruction": "Discuss routines, explain your opinions and respond to each other’s reasons without a script",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Bring back a hypothetical consequence",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What would change if your routine changed?",
+          "cue": "Give one benefit and one possible difficulty",
+          "hint": "If I …, I’d …, but …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Words for office or home?",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b1-12-vocabulary81",
+        "alt": "Six illustrated situations for Office or home?",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B112-V81.0",
+          "label": "a commute",
+          "prompt": "",
+          "example": "A long commute changes the working day",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B112-FS81.0",
+          "audioText": "a commute. A long commute changes the working day."
+        },
+        {
+          "id": "B112-V81.1",
+          "label": "a distraction",
+          "prompt": "",
+          "example": "Noise can be a distraction",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B112-FS81.1",
+          "audioText": "a distraction. Noise can be a distraction."
+        },
+        {
+          "id": "B112-V81.2",
+          "label": "a flexible schedule",
+          "prompt": "",
+          "example": "A flexible schedule needs clear expectations",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B112-FS81.2",
+          "audioText": "a flexible schedule. A flexible schedule needs clear expectations."
+        },
+        {
+          "id": "B112-V81.3",
+          "label": "teamwork",
+          "prompt": "",
+          "example": "Regular contact can support teamwork",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B112-FS81.3",
+          "audioText": "teamwork. Regular contact can support teamwork."
+        },
+        {
+          "id": "B112-V81.4",
+          "label": "a workspace",
+          "prompt": "",
+          "example": "I need a quiet workspace for this task",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B112-FS81.4",
+          "audioText": "a workspace. I need a quiet workspace for this task."
+        },
+        {
+          "id": "B112-V81.5",
+          "label": "a work-life balance",
+          "prompt": "",
+          "example": "A predictable routine helps my work-life balance",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B112-FS81.5",
+          "audioText": "a work-life balance. A predictable routine helps my work-life balance."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 1,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "Office or home?",
+      "paragraphs": [
+        "Fictional worker’s needs: quiet concentration, regular team contact, flexible hours. Home, office and hybrid each offer benefits and drawbacks. No one option is universally best. Recommend a routine only after checking how the needs fit together."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Different preferences",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "B112-D81.1",
+          "speaker": "Kim",
+          "text": "Do you work better at home or in an office?",
+          "audioText": "Do you work better at home or in an office?",
+          "translation": "Você trabalha melhor em casa ou no escritório?"
+        },
+        {
+          "id": "B112-D81.2",
+          "speaker": "Ana",
+          "text": "At home, usually, because I can concentrate without interruptions",
+          "audioText": "At home, usually, because I can concentrate without interruptions.",
+          "translation": "Em casa, geralmente, porque consigo me concentrar sem interrupções"
+        },
+        {
+          "id": "B112-D81.3",
+          "speaker": "Kim",
+          "text": "I understand that. However, I miss the quick conversations with the team",
+          "audioText": "I understand that. However, I miss the quick conversations with the team.",
+          "translation": "Entendo. Porém, sinto falta das conversas rápidas com a equipe"
+        },
+        {
+          "id": "B112-D81.4",
+          "speaker": "Ana",
+          "text": "Me too. Although I prefer home, I wouldn’t want to work alone all week",
+          "audioText": "Me too. Although I prefer home, I wouldn’t want to work alone all week.",
+          "translation": "Eu também. Embora prefira casa, não gostaria de trabalhar sozinha a semana toda"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why does Ana prefer home for some tasks?",
+          "cue": "Give her reason",
+          "hint": "Because …",
+          "answer": "Because she can concentrate without interruptions"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A possible compromise",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "B112-D81.5",
+          "speaker": "Kim",
+          "text": "Would a hybrid routine solve that?",
+          "audioText": "Would a hybrid routine solve that?",
+          "translation": "Uma rotina híbrida resolveria isso?"
+        },
+        {
+          "id": "B112-D81.6",
+          "speaker": "Ana",
+          "text": "It could, if we agree on the office days. Otherwise we might all come in separately",
+          "audioText": "It could, if we agree on the office days. Otherwise we might all come in separately.",
+          "translation": "Poderia, se combinarmos os dias presenciais. Caso contrário, podemos ir em dias diferentes"
+        },
+        {
+          "id": "B112-D81.7",
+          "speaker": "Kim",
+          "text": "Good point. We could have two shared team days and keep the rest flexible",
+          "audioText": "Good point. We could have two shared team days and keep the rest flexible.",
+          "translation": "Bem lembrado. Poderíamos ter dois dias de equipe e manter o restante flexível"
+        },
+        {
+          "id": "B112-D81.8",
+          "speaker": "Ana",
+          "text": "That’s worth trying. Let’s check whether it gives us enough quiet time too",
+          "audioText": "That’s worth trying. Let’s check whether it gives us enough quiet time too.",
+          "translation": "Vale tentar. Vamos conferir se também dá tempo suficiente de concentração"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What condition makes hybrid more useful?",
+          "cue": "Identify what must be coordinated",
+          "hint": "They need to …",
+          "answer": "They need to agree on shared office days"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Compare where you work best",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "Where do you work or study best?",
+          "cue": "State a preference and explain why",
+          "hint": "I work/study better … because …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What’s a disadvantage of your choice?",
+          "cue": "Recognise a limitation without changing your answer automatically",
+          "hint": "Although …, I still think …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Give a reason and recognise a counterpoint",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A reason and its result",
+          "verb": "because + clause / so + clause",
+          "example": "I need quiet because I write reports, so I work at home"
+        },
+        {
+          "id": "1",
+          "subject": "A reason as a noun phrase",
+          "verb": "because of + noun phrase",
+          "example": "The journey is tiring because of the traffic"
+        },
+        {
+          "id": "2",
+          "subject": "A contrast without dismissing a point",
+          "verb": "although + clause / however",
+          "example": "Although I prefer home, I value team contact. However, the days need planning"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Recommend a working routine",
+      "instruction": "Recommend a routine and respond to my concern",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Hybrid works, but the schedule doesn’t",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. Working at home helps me concentrate, and two office days make it easier to speak to the team. However, the office days have been changing at short notice, so planning childcare and travel has become difficult. I don’t want to stop seeing colleagues. I’d like to keep the benefit but make the schedule more predictable. What would you suggest I ask the team to agree on? I don’t think one routine has to be best for everyone",
+      "audioText": "Hi, Ana. Working at home helps me concentrate, and two office days make it easier to speak to the team. However, the office days have been changing at short notice, so planning childcare and travel has become difficult. I don’t want to stop seeing colleagues. I’d like to keep the benefit but make the schedule more predictable. What would you suggest I ask the team to agree on? I don’t think one routine has to be best for everyone.",
+      "audioId": "B112-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What works for this person, and what is the drawback?",
+          "cue": "Report both the benefit and the limitation",
+          "hint": "It works because … However, …",
+          "answer": "It helps concentration and team contact; changing office days makes planning difficult"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Keep the benefit, fix the drawback",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Defend a preference, acknowledge a drawback and negotiate a routine"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Three routines · same three needs",
+      "options": [
+        {
+          "id": "home",
+          "title": "Home",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Quiet",
+              "value": "Can control interruptions"
+            },
+            {
+              "id": "1",
+              "label": "Team contact",
+              "value": "Needs deliberate check-ins"
+            },
+            {
+              "id": "2",
+              "label": "Schedule",
+              "value": "Flexible"
+            }
+          ]
+        },
+        {
+          "id": "office",
+          "title": "Office",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Quiet",
+              "value": "Shared space · can be busy"
+            },
+            {
+              "id": "1",
+              "label": "Team contact",
+              "value": "Easy informal contact"
+            },
+            {
+              "id": "2",
+              "label": "Schedule",
+              "value": "Fixed start time"
+            }
+          ]
+        },
+        {
+          "id": "hybrid",
+          "title": "Hybrid",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Quiet",
+              "value": "Home days available"
+            },
+            {
+              "id": "1",
+              "label": "Team contact",
+              "value": "Office days together"
+            },
+            {
+              "id": "2",
+              "label": "Schedule",
+              "value": "Team days must be agreed"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "routine",
+          "prompt": "Which routine would you recommend?",
+          "cue": "Ask what matters, explain a benefit and acknowledge one drawback",
+          "hint": "I’d suggest … because … Although …, we could …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Adjust the routine, not the person",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Benefits to keep",
+          "value": "Quiet home work · contact on team days"
+        },
+        {
+          "id": "1",
+          "label": "Problem",
+          "value": "Office days change at short notice"
+        },
+        {
+          "id": "2",
+          "label": "Need",
+          "value": "Predictable travel and childcare planning"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What change would you recommend, and why?",
+          "cue": "Acknowledge both sides and propose something specific to try",
+          "hint": "Although …, … However, we could … so that …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

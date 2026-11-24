@@ -1,0 +1,49 @@
+{
+  "provider": "builtin image_gen",
+  "canonicalPromptSha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+  "images": [
+    {
+      "key": "morning",
+      "originalSha256": "b6fb876e3c8482480262ae9a55a35461c43f59f5c064c195bc7b73607005e97a",
+      "file": "assets/scene-morning.webp",
+      "sha256": "df5b73ccaf7d53cdb46512c3c8ea1f10380a3b4f84b4691d7d99323e0ab1ebb6",
+      "width": 1280,
+      "height": 720,
+      "promptSha256": "584c358463b345e83f96f2dbed41df41b90952d824342b3e6f8517263583b950",
+      "promptFile": "assets/morning-prompt.txt"
+    },
+    {
+      "key": "ready",
+      "originalSha256": "b8e458ea53a59bfa36b25a3d53247e7d564b447232aba4bc7c07f5994172800b",
+      "file": "assets/scene-ready.webp",
+      "sha256": "a5550baa035bdc106086102513e46f5f1cef456fc345ddb9fa4ca30d473bdd21",
+      "width": 1280,
+      "height": 720,
+      "promptSha256": "8b0ae1641d1babeabdc63ebb48ba8bc5c59a60527f85915746d05a5ceb0f108f",
+      "promptFile": "assets/ready-prompt.txt"
+    },
+    {
+      "key": "gym",
+      "originalSha256": "190111b899d9fd568f59dc1dd74ffd138d566798e871f04f6ac4240c52ae880e",
+      "file": "assets/scene-gym.webp",
+      "sha256": "7a0f006aed43a41b68abd3bd1e97eec104624afb5e6a4f38a3c643b5ecc9ab56",
+      "width": 1280,
+      "height": 720,
+      "promptSha256": "9c1a51d32782fa035dab4e7f9722ae6cf0377f909e76a8672e093ffbf943b154",
+      "promptFile": "assets/gym-prompt.txt"
+    },
+    {
+      "key": "night",
+      "originalSha256": "4648ef77c9bbaf23322dbeb79b09d513ffa626c9559ebf4b9314d75701285b4e",
+      "file": "assets/scene-night.webp",
+      "sha256": "a1d9ebf8efbf001c094909967e2b8cef24c9a827293468f7da1e92f6e6e15bb0",
+      "width": 1280,
+      "height": 720,
+      "promptSha256": "b2ad48bccda2235ebe260e4f7c58178151212d5b122bba68b926f9886ef11ed0",
+      "promptFile": "assets/night-prompt.txt"
+    }
+  ],
+  "generationCalls": 4,
+  "references": 0,
+  "processing": "Whole-image proportional resize1280x720 +WebP; no crop or semantic editing"
+}

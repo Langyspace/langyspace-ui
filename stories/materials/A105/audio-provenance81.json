@@ -1,0 +1,485 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "items": [
+    {
+      "material": "A105",
+      "id": "FE81.0",
+      "text": "I like bananas.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "nGoBhlPwebCFmlYGfuhe",
+      "synthesisInput": "I like bananas.",
+      "requestBody": {
+        "text": "I like bananas.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "nGoBhlPwebCFmlYGfuhe",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 22612,
+      "sha256": "88038e8946ec93f48a3c9ae0c87597d9a53a1703cc34b3d10235bf63ac3651a9",
+      "durationSeconds": 1.346757
+    },
+    {
+      "material": "A105",
+      "id": "FE81.1",
+      "text": "Do you like apples?",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "KoxhXVF4K01aCmATb6QT",
+      "synthesisInput": "Do you like apples?",
+      "requestBody": {
+        "text": "Do you like apples?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "KoxhXVF4K01aCmATb6QT",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20941,
+      "sha256": "7eee9ddf2a7de1fae39db275712000b158606d26c98a2199241eb33f36d0a589",
+      "durationSeconds": 1.253878
+    },
+    {
+      "material": "A105",
+      "id": "FE81.2",
+      "text": "I don’t like oranges.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "HFHdhKsdbanXEnx8Ihnw",
+      "synthesisInput": "I don't like oranges.",
+      "requestBody": {
+        "text": "I don't like oranges.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "HFHdhKsdbanXEnx8Ihnw",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 23448,
+      "sha256": "b476d6b6080104a5308fcf8151d34dd3929208c563f7391226f1e5b30fdcbb5c",
+      "durationSeconds": 1.393197
+    },
+    {
+      "material": "A105",
+      "id": "FE81.3",
+      "text": "My sister likes mangoes.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "bcZcbGULHK4ZYfn06sy2",
+      "synthesisInput": "My sister likes mangoes.",
+      "requestBody": {
+        "text": "My sister likes mangoes.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "bcZcbGULHK4ZYfn06sy2",
+        "character-cost": "10",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 26374,
+      "sha256": "aa12dd9f07cf754c75c90d96d6b91c94c22eef5263929ca2332b59f50be44af4",
+      "durationSeconds": 1.578957
+    },
+    {
+      "material": "A105",
+      "id": "FE81.4",
+      "text": "A pineapple is six dollars.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "KqvrZxtuYHpnRq5QqwvN",
+      "synthesisInput": "A pineapple is six dollars.",
+      "requestBody": {
+        "text": "A pineapple is six dollars.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "KqvrZxtuYHpnRq5QqwvN",
+        "character-cost": "11",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 29300,
+      "sha256": "ba6dbc99391c02a4f2c2c0fb9fd09773faf21d66e5a6e76fd3b5b5044565a79a",
+      "durationSeconds": 1.764717
+    },
+    {
+      "material": "A105",
+      "id": "FE81.5",
+      "text": "I’d like a watermelon, please.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE81.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "BNeR2jimieBWAiCqWBqK",
+      "synthesisInput": "I'd like a watermelon, please.",
+      "requestBody": {
+        "text": "I'd like a watermelon, please.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "BNeR2jimieBWAiCqWBqK",
+        "character-cost": "12",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 27628,
+      "sha256": "83e611d472735759c61e1f80af9309d2096a0faa078cd6abfbf318ecb215f4d6",
+      "durationSeconds": 1.671837
+    },
+    {
+      "material": "A105",
+      "id": "L81.1",
+      "text": "Hi, Ana! Can you buy a banana and a mango for me? I don’t want oranges today. The banana is for Jin. She loves fruit. I’ll meet you at the market on Saturday. Thank you!",
+      "speaker": "Kim",
+      "file": "assets/audio/L81.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "HAH6R6AoCx0RqPDsgTjz",
+      "synthesisInput": "Hi, Ana! Can you buy a banana and a mango for me? I don't want oranges today. The banana is for Jin. She loves fruit. I'll meet you at the market on Saturday. Thank you!",
+      "requestBody": {
+        "text": "Hi, Ana! Can you buy a banana and a mango for me? I don't want oranges today. The banana is for Jin. She loves fruit. I'll meet you at the market on Saturday. Thank you!",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "HAH6R6AoCx0RqPDsgTjz",
+        "character-cost": "68",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 207768,
+      "sha256": "4bde7bcb61065cf0a01fca327c50aa0842c5b683e5dd730b62bfd18c86e7b233",
+      "durationSeconds": 12.910295
+    },
+    {
+      "material": "A105",
+      "id": "FS81.0",
+      "text": "a banana. I like bananas.",
+      "file": "assets/audio/FS81.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "nGoBhlPwebCFmlYGfuhe"],
+      "sources": [
+        {
+          "leadingQuietFrames": 880,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8818,
+          "sourceSha256": "3a5c2333670c7fb7fe30818fcfa2b934d72e11f188c6fafc54eb854a7dcc7bcd"
+        },
+        {
+          "leadingQuietFrames": 1320,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10986,
+          "sourceSha256": "88038e8946ec93f48a3c9ae0c87597d9a53a1703cc34b3d10235bf63ac3651a9"
+        }
+      ],
+      "insertedSilenceFrames": 11469,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 36823,
+      "sha256": "4c29678935bf44f472a1d8ffd5e17bb51b39717fd1a02a447afeba5c692dc8d1",
+      "durationSeconds": 2.225873
+    },
+    {
+      "material": "A105",
+      "id": "FS81.1",
+      "text": "an apple. Do you like apples?",
+      "file": "assets/audio/FS81.1.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "KoxhXVF4K01aCmATb6QT"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9206,
+          "sourceSha256": "1ffd85a63a3bb774b8ca16910baa6922bed4f14cb7fe34779a0b6c032173b936"
+        },
+        {
+          "leadingQuietFrames": 3520,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11730,
+          "sourceSha256": "7eee9ddf2a7de1fae39db275712000b158606d26c98a2199241eb33f36d0a589"
+        }
+      ],
+      "insertedSilenceFrames": 9269,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 30972,
+      "sha256": "53f93e43317ec36a4e1aca0d87d8d346aac89b0bc314d8cc63d95f82e889c98d",
+      "durationSeconds": 1.871678
+    },
+    {
+      "material": "A105",
+      "id": "FS81.2",
+      "text": "an orange. I don’t like oranges.",
+      "file": "assets/audio/FS81.2.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "HFHdhKsdbanXEnx8Ihnw"],
+      "sources": [
+        {
+          "leadingQuietFrames": 440,
+          "trailingQuietFrames": 1156,
+          "trimStartFrames": 0,
+          "trimEndFrames": 0,
+          "sourceSha256": "57de9809e43bb0cafcabb3f1e75dacd6ca423dc2b61a622c8706ba3dc5d250f9"
+        },
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9294,
+          "sourceSha256": "b476d6b6080104a5308fcf8151d34dd3929208c563f7391226f1e5b30fdcbb5c"
+        }
+      ],
+      "insertedSilenceFrames": 13179,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 37241,
+      "sha256": "f3634c88e22462fb905cf64c28c8eaa3b40210cc9154eb0b82efa7daf01531ef",
+      "durationSeconds": 2.270771
+    },
+    {
+      "material": "A105",
+      "id": "FS81.3",
+      "text": "a mango. My sister likes mangoes.",
+      "file": "assets/audio/FS81.3.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "bcZcbGULHK4ZYfn06sy2"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5686,
+          "sourceSha256": "9aaca3d7e532f1a0af4eac84f2bc0791eb2488627197d64fe15d8f1f7d079626"
+        },
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11106,
+          "sourceSha256": "aa12dd9f07cf754c75c90d96d6b91c94c22eef5263929ca2332b59f50be44af4"
+        }
+      ],
+      "insertedSilenceFrames": 11249,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 38495,
+      "sha256": "085d0b2acf2bd1a989784d3f1dcfe2cbc564a244369db3cc1a996a7fedeee219",
+      "durationSeconds": 2.335624
+    },
+    {
+      "material": "A105",
+      "id": "FS81.4",
+      "text": "a pineapple. A pineapple is six dollars.",
+      "file": "assets/audio/FS81.4.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "KqvrZxtuYHpnRq5QqwvN"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1320,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8446,
+          "sourceSha256": "13a04cd4d2c700bf00aac6160487dcff13557991df7e02d296d6ddb87e00b77c"
+        },
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8078,
+          "sourceSha256": "ba6dbc99391c02a4f2c2c0fb9fd09773faf21d66e5a6e76fd3b5b5044565a79a"
+        }
+      ],
+      "insertedSilenceFrames": 11689,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 45600,
+      "sha256": "6917fadc8808e0840a7a3b38d39db379064d460111ba14196d95cdcbc76d5e83",
+      "durationSeconds": 2.770045
+    },
+    {
+      "material": "A105",
+      "id": "FS81.5",
+      "text": "a watermelon. I’d like a watermelon, please.",
+      "file": "assets/audio/FS81.5.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": [null, "BNeR2jimieBWAiCqWBqK"],
+      "sources": [
+        {
+          "leadingQuietFrames": 440,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8734,
+          "sourceSha256": "24af780aba13a8f1cbc95f904d05dfaf36310c71f593204a6835442ca64e82be"
+        },
+        {
+          "leadingQuietFrames": 4180,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9922,
+          "sourceSha256": "83e611d472735759c61e1f80af9309d2096a0faa078cd6abfbf318ecb215f4d6"
+        }
+      ],
+      "insertedSilenceFrames": 8609,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 42674,
+      "sha256": "1ab2792a6352661cfba4ad96849defa44a35933d4f8bf1297eab88940006d7de",
+      "durationSeconds": 2.605011
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "key": "a1-07",
+  "code": "A1.07",
+  "title": "At the airport",
+  "first": {
+    "id": "course-practice-a1-07-flashcards",
+    "kind": "flashcards",
+    "cards": [
+      {
+        "id": "course-a1-07-passport",
+        "word": "passport",
+        "translation": "passaporte",
+        "example": "Keep your passport with you",
+        "exampleTranslation": "Mantenha seu passaporte consigo",
+        "visualLabel": "passport",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-passport.front",
+        "backAudioId": "course-a1-07-passport.back"
+      },
+      {
+        "id": "course-a1-07-suitcase",
+        "word": "suitcase",
+        "translation": "mala",
+        "example": "This is my suitcase",
+        "exampleTranslation": "Está aqui a minha mala",
+        "visualLabel": "suitcase",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-suitcase.front",
+        "backAudioId": "course-a1-07-suitcase.back"
+      },
+      {
+        "id": "course-a1-07-plane",
+        "word": "plane",
+        "translation": "avião",
+        "example": "The plane is over there",
+        "exampleTranslation": "O avião está ali",
+        "visualLabel": "plane",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 0,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-plane.front",
+        "backAudioId": "course-a1-07-plane.back"
+      },
+      {
+        "id": "course-a1-07-taxi",
+        "word": "taxi",
+        "translation": "Táxi",
+        "example": "I need a taxi to the hotel",
+        "exampleTranslation": "Preciso de um táxi para o hotel",
+        "visualLabel": "taxi",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 0,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-taxi.front",
+        "backAudioId": "course-a1-07-taxi.back"
+      },
+      {
+        "id": "course-a1-07-bus",
+        "word": "bus",
+        "translation": "ônibus",
+        "example": "The bus is outside",
+        "exampleTranslation": "O ônibus está lá fora",
+        "visualLabel": "bus",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 1,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-bus.front",
+        "backAudioId": "course-a1-07-bus.back"
+      },
+      {
+        "id": "course-a1-07-gate",
+        "word": "gate",
+        "translation": "portão",
+        "example": "Our gate is next to the café",
+        "exampleTranslation": "Nosso portão fica ao lado do café",
+        "visualLabel": "gate",
+        "imageSrc": "/flashcards-transparent/course-images/ba4b102f2462e545c3a5e2d70bb9e3e8ca43107afd31e87eb4264ebce0a560d8/image.webp",
+        "imageRegion": {
+          "columns": 3,
+          "rows": 2,
+          "column": 2,
+          "row": 1,
+          "sourceAspectRatio": 1.5
+        },
+        "audioId": "course-a1-07-gate.front",
+        "backAudioId": "course-a1-07-gate.back"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a1-07-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a1-07.shadowing.01",
+        "displayText": "Welcome! Where are you staying?",
+        "translation": "Bem-vinda! Onde você vai ficar?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-07.shadowing.02",
+        "displayText": "I’m staying at the Park Hotel",
+        "translation": "Vou ficar no Park Hotel",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-07.shadowing.03",
+        "displayText": "And how long are you staying?",
+        "translation": "E por quanto tempo?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-07.shadowing.04",
+        "displayText": "For three days. Where is gate six?",
+        "translation": "Por três dias. Onde fica o portão seis?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a1-07.shadowing.05",
+        "displayText": "It’s on the left, next to the café",
+        "translation": "Fica à esquerda, ao lado do café",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a1-07.shadowing.06",
+        "displayText": "Thank you. Can you say that again, please?",
+        "translation": "Obrigada. Pode repetir, por favor?",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

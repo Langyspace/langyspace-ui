@@ -175,6 +175,13 @@ provides the common heading, instructions, tools and content column. Both retain
 when navigating and leave lesson loading and persistence to the teacher/student applications.
 See [the slide contracts and example](docs/components/slides.md).
 
+`SlidePage` accepts `columns={1}`, `columns={2}` or `columns={3}` for the exercise span, with a common width and axis for
+the heading and body. One column is the focused conversation width; paired content uses two;
+expanded exercises use three. `questions` selects two automatically and stacks on narrow screens.
+`LearningDialogue` stays within one focused column, including its support controls, even inside
+a larger composition. An exercise still owns its internal card/field grid. Legacy `width` presets
+remain compatible; use media-aspect fitting for single illustrations and covers.
+
 `VoiceMessageExercise` composes into `SlidePage`: realistic phone frame, native voice-note
 playback, second-listen transcript and controlled listening questions. See
 [the voice-message contract](docs/components/voice-message.md). Media URLs, answer evaluation and
@@ -187,3 +194,7 @@ dialogue, matching and reveal contracts. Lesson content stays in catalog fixture
 the official package release.
 
 `Materials/B1.01` adds the 17-screen “What have you been doing?” catalog composition, contextual scenes and progressive clue cards. Its content, speech and controlled exercise state remain outside the package. See [the B1.01 review handoff](docs/epics/b101-material/release.md). This feature requires a new approved library release before consumer adoption.
+
+### Paired practice previews
+
+`PracticePair` composes two existing `MobileFrame` devices and switches between them in narrow containers. Content, media and authenticated practice destinations stay consumer-owned. `ShadowingActivePhrase` can display the current speaker through `Avatar`; `QuizQuestion` accepts a distinct `context` slot and an optional `action` slot for consumer-owned narration/replay. Without an action, its existing markup is preserved. Existing component defaults stay unchanged. See [PracticePair](docs/components/practice-pair.md).

@@ -1,0 +1,269 @@
+{
+  "key": "c1-10",
+  "code": "C1.10",
+  "title": "I’m writing to let you know…",
+  "first": {
+    "id": "course-practice-c1-10-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-c1-10-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’m writing to let you know"
+          },
+          {
+            "id": "b",
+            "text": "I’m writing to letting you know"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Aqui o to apresenta a finalidade de escrever. Depois dele, usamos o verbo básico let, não letting. Por isso: “I’m writing to let you know”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Aqui o to apresenta a finalidade de escrever. Depois dele, usamos o verbo básico let, não letting. Por isso: “I’m writing to let you know”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q01/completion.mp3"
+      },
+      {
+        "id": "course-c1-10-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Just to let you know, the date has changed"
+          },
+          {
+            "id": "b",
+            "text": "Just to let you knowing, the date has changed"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na construção let you know, know vem na forma básica. Não colocamos knowing depois da pessoa que recebe a informação. Por isso: “Just to let you know, the date has changed”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Na construção let you know, know vem na forma básica. Não colocamos knowing depois da pessoa que recebe a informação. Por isso: “Just to let you know, the date has changed”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q02/completion.mp3"
+      },
+      {
+        "id": "course-c1-10-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Please confirm whether can you attend"
+          },
+          {
+            "id": "b",
+            "text": "Please confirm whether you can attend"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A pergunta está dentro de um pedido com please confirm. Depois de whether, mantemos you can attend, sem inverter para can you attend. Por isso: “Please confirm whether you can attend”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "A pergunta está dentro de um pedido com please confirm. Depois de whether, mantemos you can attend, sem inverter para can you attend. Por isso: “Please confirm whether you can attend”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q03/completion.mp3"
+      },
+      {
+        "id": "course-c1-10-q04",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’m writing to let you to know about the change"
+          },
+          {
+            "id": "b",
+            "text": "I’m writing to let you know about the change"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O primeiro to indica a finalidade: to let. Mas depois de let you, usamos know sem outro to. Por isso: “I’m writing to let you know about the change”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O primeiro to indica a finalidade: to let. Mas depois de let you, usamos know sem outro to. Por isso: “I’m writing to let you know about the change”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q04/completion.mp3"
+      },
+      {
+        "id": "course-c1-10-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Quick update: the dates we agreed on has changed"
+          },
+          {
+            "id": "b",
+            "text": "Quick update: the dates we agreed on have changed"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Olhe para o núcleo do sujeito: quem mudou foram as datas. Mesmo com we agreed on no meio, dates continua plural e pede have changed. Por isso: “Quick update: the dates we agreed on have changed”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Olhe para o núcleo do sujeito: quem mudou foram as datas. Mesmo com we agreed on no meio, dates continua plural e pede have changed. Por isso: “Quick update: the dates we agreed on have changed”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q05/completion.mp3"
+      },
+      {
+        "id": "course-c1-10-q06",
+        "prompt": "Choose the form for a reply deadline",
+        "options": [
+          {
+            "id": "a",
+            "text": "Please confirm by Friday"
+          },
+          {
+            "id": "b",
+            "text": "Please confirm until Friday"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Você precisa de uma confirmação até o prazo de sexta. By marca esse limite; until indicaria algo que continua acontecendo até lá. Por isso: “Please confirm by Friday”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Você precisa de uma confirmação até o prazo de sexta. By marca esse limite; until indicaria algo que continua acontecendo até lá. Por isso: “Please confirm by Friday”"
+          }
+        },
+        "context": "You need one confirmation no later than Friday",
+        "promptAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-c1-10-quiz/course-c1-10-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-c1-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "c1-10.shadowing.01",
+        "displayText": "Who is this update for, and what do they need to do?",
+        "translation": "Para quem é esta atualização e o que essa pessoa precisa fazer?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.02",
+        "displayText": "One version is for a client, another for a friend. Both need to confirm attendance",
+        "translation": "Uma versão é para um cliente, outra para uma amiga. Ambos precisam confirmar presença",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.03",
+        "displayText": "What are the facts that must stay the same?",
+        "translation": "Quais fatos precisam permanecer iguais?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.04",
+        "displayText": "The event moves from Friday the fourth to Monday the seventh of December. Time and room stay the same",
+        "translation": "O evento passa de sexta, quatro, para segunda, sete de dezembro. Horário e sala continuam iguais",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.05",
+        "displayText": "And the response deadline? “Tomorrow” could become unclear if the message is read late",
+        "translation": "E o prazo de resposta? “Amanhã” pode ficar confuso se a mensagem for lida depois",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.06",
+        "displayText": "Then I’d write Friday the fourth at five, rather than rely on the sending date",
+        "translation": "Então escreveria sexta, quatro, às cinco, em vez de depender da data do envio",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.07",
+        "displayText": "Would a more formal opening make the client version more proficient?",
+        "translation": "Uma abertura mais formal tornaria a versão para o cliente mais proficiente?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.08",
+        "displayText": "Not automatically. “I’m writing to let you know” is useful if the purpose is still easy to find",
+        "translation": "Não automaticamente. “Escrevo para informar” é útil se o propósito continuar fácil de encontrar",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.09",
+        "displayText": "And for the friend?",
+        "translation": "E para a amiga?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.10",
+        "displayText": "“Quick update: it’s Monday now. Same time and room. Can you confirm by Friday at five?”",
+        "translation": "“Atualização rápida: agora é segunda. Mesmo horário e sala. Pode confirmar até sexta às cinco?”",
+        "speakerId": "ana"
+      },
+      {
+        "id": "c1-10.shadowing.11",
+        "displayText": "That’s shorter, but it still keeps the action and deadline",
+        "translation": "É mais curto, mas mantém a ação e o prazo",
+        "speakerId": "kim"
+      },
+      {
+        "id": "c1-10.shadowing.12",
+        "displayText": "Exactly. Changing the register shouldn’t change the commitment we ask for",
+        "translation": "Exatamente. Mudar o registro não deve mudar o compromisso que pedimos",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

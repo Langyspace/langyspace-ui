@@ -23,6 +23,14 @@ export default meta
 type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
+export const MessagingOutgoing: Story = {
+  args: {
+    side: 'outgoing',
+    appearance: 'messaging',
+    children: 'Oi! Quero fechar o curso de inglês com vocês 😊',
+  },
+  tags: ['visual-review'],
+}
 
 export const DeliveryStates: Story = {
   tags: ['visual-review'],

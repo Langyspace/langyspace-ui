@@ -1,0 +1,181 @@
+{
+  "sourceBase": "7de062c2343c11784abb369b021c72e08323f559",
+  "owners": [
+    "TrialA1 actual ListenTalkSection/PictureTalkSection",
+    "Shared Explanation used by B101/B201",
+    "TrialB1 existing Heading inside Question",
+    "TrialB2 existing Hero/Title inside Root"
+  ],
+  "widths": [390, 1440],
+  "themes": ["dark", "light"],
+  "afterRatios": {
+    "TrialA1AccentDark": 4.636,
+    "TrialA1AccentLight": 5.085,
+    "ExplanationsDark": 16.221,
+    "ExplanationsLight": 17.73,
+    "TrialB1Dark": 16.221,
+    "TrialB1Light": 17.73,
+    "TrialB2Dark": 18.364,
+    "TrialB2Light": 19.674
+  },
+  "scopeLimit": "Owner fixture verification; no export or native-original after render yet. The owner baseline loads MaterialRoot rules in fixture order and does not reproduce the native original black heading; actual before failure remains the UIUX native evidence. These fixtures are not a claim of full lesson pixel parity.",
+  "allAfterTextContrastAtLeast4_5": true,
+  "runtimeErrors": [],
+  "sharedSourceWrites": false,
+  "visualGate": "Visual gate review: pending human",
+  "sourceFiles": [
+    {
+      "path": "stories/materials/TrialA1/TrialA1.sections.tsx",
+      "beforeSha256": "a4482c9f1b367cdc7f96aefc2d9b9d0abcca53163e8e2b2599f28d6de39c422b",
+      "afterSha256": "12ea78d5f2b65aea13496b81424a9ce26305736718efc115771383a3c52f0fdd"
+    },
+    {
+      "path": "stories/materials/shared/Lesson.styles.ts",
+      "beforeSha256": "67320f733d08d58dc80d63809c44b772176f54c857ff8ffe8b291f4ae5f9ef9a",
+      "afterSha256": "1a98bd791f73330c1628a591a3ce36e5496607d2a54bcbdae8c072662cbfbcda"
+    },
+    {
+      "path": "stories/materials/TrialB1/TrialB1.styles.ts",
+      "beforeSha256": "8c6cb61441cf04c26b7804a126b0ed22799c6ff1da8cda11db74100c6b24ff52",
+      "afterSha256": "ce66a9992ebcdd77fc468e5078b8fe473ec2d8eabc19a96f837b933b83e2986a"
+    },
+    {
+      "path": "stories/materials/TrialB2/TrialB2.styles.ts",
+      "beforeSha256": "71d2e2ece1f2754c5d2fed42032d7cccb127350f2fccce5609303ca151d7c892",
+      "afterSha256": "70bc137f6ccb4c9555174a21291da1cbac07af6cb2ddbf82c7817462d7aa9ff4"
+    }
+  ],
+  "images": [
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-a1-dialogue-dark-390.png",
+      "sha256": "975eb8bfb8fea14fd97e6103d7b98644d224f8433cdc52aacb19c0574f4c0d0e",
+      "phase": "before",
+      "surface": "trial-a1-dialogue",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-a1-dialogue-dark-390.png",
+      "sha256": "10e3b373d4c9a67290fa01de9e7d8f3784cf19b4f0c13c5556c4c7e2375d8a97",
+      "phase": "after",
+      "surface": "trial-a1-dialogue",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-a1-dialogue-light-1440.png",
+      "sha256": "f68e33c604bdc044706ff8a2297d5e437c999da9ca7bd629765eea30e8bca97b",
+      "phase": "before",
+      "surface": "trial-a1-dialogue",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-a1-dialogue-light-1440.png",
+      "sha256": "5ffe0d83971e27ec6df741f33f671008381383c41a84ca1ac04349259217c4c8",
+      "phase": "after",
+      "surface": "trial-a1-dialogue",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-explanations-dark-390.png",
+      "sha256": "aa64cbec5545f26d648b1a9e13aac2b2cf13187ff73306e067d3bb3744e59450",
+      "phase": "before",
+      "surface": "explanations",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-explanations-dark-390.png",
+      "sha256": "aa64cbec5545f26d648b1a9e13aac2b2cf13187ff73306e067d3bb3744e59450",
+      "phase": "after",
+      "surface": "explanations",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-explanations-light-1440.png",
+      "sha256": "0a24de5d59ce2e2f15332159e28095569969a3a5acc56ae8f2dfc901588a1a74",
+      "phase": "before",
+      "surface": "explanations",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-explanations-light-1440.png",
+      "sha256": "0a24de5d59ce2e2f15332159e28095569969a3a5acc56ae8f2dfc901588a1a74",
+      "phase": "after",
+      "surface": "explanations",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-b1-dark-390.png",
+      "sha256": "39a41f1bf831d38938c5618561f16bfe19560157afb390efcc3f2bed23b40be4",
+      "phase": "before",
+      "surface": "trial-b1",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-b1-dark-390.png",
+      "sha256": "39a41f1bf831d38938c5618561f16bfe19560157afb390efcc3f2bed23b40be4",
+      "phase": "after",
+      "surface": "trial-b1",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-b1-light-1440.png",
+      "sha256": "280350b707f10e4ff9a216abbb9624c41cf4bd2da600447ad80b642b28180d34",
+      "phase": "before",
+      "surface": "trial-b1",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-b1-light-1440.png",
+      "sha256": "280350b707f10e4ff9a216abbb9624c41cf4bd2da600447ad80b642b28180d34",
+      "phase": "after",
+      "surface": "trial-b1",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-b2-dark-390.png",
+      "sha256": "1a74ab6d85c450673a75e40749a64982151be6e067b54040aaf151426ffeea55",
+      "phase": "before",
+      "surface": "trial-b2",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-b2-dark-390.png",
+      "sha256": "1a74ab6d85c450673a75e40749a64982151be6e067b54040aaf151426ffeea55",
+      "phase": "after",
+      "surface": "trial-b2",
+      "theme": "dark",
+      "width": 390
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/before-trial-b2-light-1440.png",
+      "sha256": "5d2b9f596f1ddd10d92837b4d929b63d72ab55a0942d7d9c0770d315c164a122",
+      "phase": "before",
+      "surface": "trial-b2",
+      "theme": "light",
+      "width": 1440
+    },
+    {
+      "path": "docs/epics/materials-feedback-06/evidence/heading-contrast/after-trial-b2-light-1440.png",
+      "sha256": "5d2b9f596f1ddd10d92837b4d929b63d72ab55a0942d7d9c0770d315c164a122",
+      "phase": "after",
+      "surface": "trial-b2",
+      "theme": "light",
+      "width": 1440
+    }
+  ],
+  "ownerReportSha256": "d521af520691d6e412e800208fbb8a18d72335dd9eb3c48af88434473d56924d",
+  "proposalSha256": "3e8047cf31044b3e409c39812899e327092eac45b8f1bff9dfc27058816200ca",
+  "actualNativeBefore": "UX Lab retained-S1 before390dark: No diálogo rgb(10,10,10) on rgb(26,26,28), contrast1.1393:1. The owner fixture is a different stylesheet insertion order."
+}

@@ -1,0 +1,1580 @@
+{
+  "fixture": "Same current React composition/fonts/viewport for image delta. Before overrides only18A101 image responses with byte-verified git a604 blobs; no bitmap edits. Existing matching after views reused.",
+  "baselineAssets": "a60409772ca87b1f964d5c0418a053fad71435f3",
+  "legacyAssets": [
+    {
+      "name": "scene-tired-tom.webp",
+      "sha256": "f8a8063f1ac795b962172d26f13cdf06b35b351ac48b5a60a58ec8c27823088f"
+    },
+    {
+      "name": "scene-cold-julia.webp",
+      "sha256": "d958ef296546d04098163cfca9f51eac80c163b5c6ae547cde794d4dbb09d14e"
+    },
+    {
+      "name": "scene-sad-josh.webp",
+      "sha256": "040e05946d33c43e7d1f4523aeea71b32fe944803838fa0fb75e4223b4f5c2d6"
+    },
+    {
+      "name": "scene-hungry-ana.webp",
+      "sha256": "f06f71d3710f5d2c0e3cedcc75d34cd849a362c74519e4ffb946d1c7309d661d"
+    },
+    {
+      "name": "scene-korea-jiwoo.webp",
+      "sha256": "933490834b3073cae972bebdd0a88dd5081263e134ba1709f941a68b8839246b"
+    },
+    {
+      "name": "scene-japan-hiro.webp",
+      "sha256": "296f44d6bdfdd7da0c1cea92e8490c3e866b9abd2ce230abc48fcdfb2657d724"
+    },
+    {
+      "name": "scene-spain-lucia.webp",
+      "sha256": "41e94e3eb3e7d8294664d9de8089e4ee5ab521f4b9e4cd8f109659fc85ade03e"
+    },
+    {
+      "name": "scene-france-chloe.webp",
+      "sha256": "a6caf8b9d1bf821bcfd36458361cf28d6c758ce3df5fb98464e49bb1b38ddcba"
+    },
+    {
+      "name": "scene-usa-jake.webp",
+      "sha256": "93494cbda0ae3e4f673e5beb66f3a8010ba688351c4fcd4e46f12c4cc33f16e9"
+    },
+    {
+      "name": "scene-cold-tom.webp",
+      "sha256": "fdc3099ea0bee372a467182a03a1a117f9c2fd454687ada6e73b8d48e25065b6"
+    },
+    {
+      "name": "scene-tired-kim.webp",
+      "sha256": "5c861c3b8c6ba75a0387cdc4713c60721bb18eb31d4a754f1e1706a8e86c949d"
+    },
+    {
+      "name": "scene-hungry-jun.webp",
+      "sha256": "c05781a056fff72831a28e6f425dd227666d83f8a516f99a459a266e8e66db8a"
+    },
+    {
+      "name": "e_cards.png",
+      "sha256": "675a201350aed2522baca2deab185dafa130eb96e99a19306cc59b0d592c3f6f"
+    },
+    {
+      "name": "e_mic.png",
+      "sha256": "0fbeeb1be51923e6f409eb8f6e851ecf98fe463cb553e1684d7fc45702c04bb5"
+    },
+    {
+      "name": "e_brain.png",
+      "sha256": "c08d46cd6c11dbef58c0a3c3d6408bd69115f0b6cdda0c88a50ef6f8198d71b1"
+    },
+    {
+      "name": "scene-happy-mia.webp",
+      "sha256": "720a3f496bfe314d0001ee746c171f624129efd4ea5d3a60dd8e5267304448c4"
+    },
+    {
+      "name": "scene-germany-lukas.webp",
+      "sha256": "64ed3fc5f65f103d29c18fc1b61b9c838410869253b1415640370c93b3e24b30"
+    },
+    {
+      "name": "scene-angry-leo.webp",
+      "sha256": "20afb59f6d9095306d86392489b6ef8498928343cd048330804e1b3626fbf09e"
+    }
+  ],
+  "rows": [
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s1",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 308.5,
+          "height": 205,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s21",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Tom bocejando no sofá da sala, com a cabeça apoiada na mão.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s22",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Julia encolhida num banco ao ar livre, abraçando o casaco e tremendo de frio.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s23",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "Josh sentado sozinho num banco do parque, com uma lágrima e expressão triste.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s24",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "alt": "Mia sorrindo alegremente num jardim iluminado pelo sol.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s25",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Ana à mesa de uma cozinha, com a mão no estômago e um prato vazio.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s26",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "alt": "Leo com as sobrancelhas franzidas e os braços cruzados na sala de casa.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s51",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-korea-jiwoo.webp",
+          "alt": "Ji-woo num pátio urbano com jardim. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s52",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-japan-hiro.webp",
+          "alt": "Hiro sentado numa varanda com jardim. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s53",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-spain-lucia.webp",
+          "alt": "Lucía numa praça com uma cafeteria ao fundo. Bandeira: Espanha.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-es.svg",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s54",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-germany-lukas.webp",
+          "alt": "Lukas junto a um jardim urbano. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s55",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-france-chloe.webp",
+          "alt": "Chloé numa rua arborizada com uma cafeteria ao fundo. Bandeira: França.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-fr'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fff'%20d='M0%200h640v480H0z'/%3e%3cpath%20fill='%23000091'%20d='M0%200h213.3v480H0z'/%3e%3cpath%20fill='%23e1000f'%20d='M426.7%200H640v480H426.7z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s56",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-usa-jake.webp",
+          "alt": "Jake sentado num parque urbano. Bandeira: Estados Unidos.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-us'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23bd3d44'%20d='M0%200h640v480H0'/%3e%3cpath%20stroke='%23fff'%20stroke-width='37'%20d='M0%2055.3h640M0%20129h640M0%20203h640M0%20277h640M0%20351h640M0%20425h640'/%3e%3cpath%20fill='%23192f5d'%20d='M0%200h364.8v258.5H0'/%3e%3cmarker%20id='us-a'%20markerHeight='30'%20markerWidth='30'%3e%3cpath%20fill='%23fff'%20d='m14%200%209%2027L0%2010h28L5%2027z'/%3e%3c/marker%3e%3cpath%20fill='none'%20marker-mid='url(%23us-a)'%20d='m0%200%2016%2011h61%2061%2061%2061%2060L47%2037h61%2061%2060%2061L16%2063h61%2061%2061%2061%2060L47%2089h61%2061%2060%2061L16%20115h61%2061%2061%2061%2060L47%20141h61%2061%2060%2061L16%20166h61%2061%2061%2061%2060L47%20192h61%2061%2060%2061L16%20218h61%2061%2061%2061%2060z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s10",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-tom.webp",
+          "alt": "Tom: com frio. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Emma: com fome. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Yuki: com frio. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Ken: cansado, cansada. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-kim.webp",
+          "alt": "Kim: cansado, cansada. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-jun.webp",
+          "alt": "Jun: com fome. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 1440,
+      "id": "s13",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_cards.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_mic.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_brain.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s1",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "alt": "",
+          "natural": [768, 512],
+          "width": 171,
+          "height": 113.328125,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s21",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Tom bocejando no sofá da sala, com a cabeça apoiada na mão.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s22",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Julia encolhida num banco ao ar livre, abraçando o casaco e tremendo de frio.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s23",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "Josh sentado sozinho num banco do parque, com uma lágrima e expressão triste.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s24",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-happy-mia.webp",
+          "alt": "Mia sorrindo alegremente num jardim iluminado pelo sol.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s25",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Ana à mesa de uma cozinha, com a mão no estômago e um prato vazio.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s26",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-angry-leo.webp",
+          "alt": "Leo com as sobrancelhas franzidas e os braços cruzados na sala de casa.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s51",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-korea-jiwoo.webp",
+          "alt": "Ji-woo num pátio urbano com jardim. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s52",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-japan-hiro.webp",
+          "alt": "Hiro sentado numa varanda com jardim. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s53",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-spain-lucia.webp",
+          "alt": "Lucía numa praça com uma cafeteria ao fundo. Bandeira: Espanha.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-es.svg",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s54",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-germany-lukas.webp",
+          "alt": "Lukas junto a um jardim urbano. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s55",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-france-chloe.webp",
+          "alt": "Chloé numa rua arborizada com uma cafeteria ao fundo. Bandeira: França.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-fr'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fff'%20d='M0%200h640v480H0z'/%3e%3cpath%20fill='%23000091'%20d='M0%200h213.3v480H0z'/%3e%3cpath%20fill='%23e1000f'%20d='M426.7%200H640v480H426.7z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s56",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-usa-jake.webp",
+          "alt": "Jake sentado num parque urbano. Bandeira: Estados Unidos.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-us'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23bd3d44'%20d='M0%200h640v480H0'/%3e%3cpath%20stroke='%23fff'%20stroke-width='37'%20d='M0%2055.3h640M0%20129h640M0%20203h640M0%20277h640M0%20351h640M0%20425h640'/%3e%3cpath%20fill='%23192f5d'%20d='M0%200h364.8v258.5H0'/%3e%3cmarker%20id='us-a'%20markerHeight='30'%20markerWidth='30'%3e%3cpath%20fill='%23fff'%20d='m14%200%209%2027L0%2010h28L5%2027z'/%3e%3c/marker%3e%3cpath%20fill='none'%20marker-mid='url(%23us-a)'%20d='m0%200%2016%2011h61%2061%2061%2061%2060L47%2037h61%2061%2060%2061L16%2063h61%2061%2061%2061%2060L47%2089h61%2061%2060%2061L16%20115h61%2061%2061%2061%2060L47%20141h61%2061%2060%2061L16%20166h61%2061%2061%2061%2060L47%20192h61%2061%2060%2061L16%20218h61%2061%2061%2061%2060z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s10",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-tom.webp",
+          "alt": "Tom: com frio. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Emma: com fome. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Yuki: com frio. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Ken: cansado, cansada. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-kim.webp",
+          "alt": "Kim: cansado, cansada. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-jun.webp",
+          "alt": "Jun: com fome. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "before",
+      "width": 390,
+      "id": "s13",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_cards.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_mic.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_brain.png",
+          "alt": "",
+          "natural": [96, 96],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s1",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s21",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Tom bocejando no sofá da sala, com a cabeça apoiada na mão.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s22",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Julia encolhida num banco ao ar livre, abraçando o casaco e tremendo de frio.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s23",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "Josh sentado sozinho num banco do parque, com uma lágrima e expressão triste.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s24",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s25",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Ana à mesa de uma cozinha, com a mão no estômago e um prato vazio.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s26",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s51",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-korea-jiwoo.webp",
+          "alt": "Ji-woo num pátio urbano com jardim. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s52",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-japan-hiro.webp",
+          "alt": "Hiro sentado numa varanda com jardim. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s53",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-spain-lucia.webp",
+          "alt": "Lucía numa praça com uma cafeteria ao fundo. Bandeira: Espanha.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-es.svg",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s54",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s55",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-france-chloe.webp",
+          "alt": "Chloé numa rua arborizada com uma cafeteria ao fundo. Bandeira: França.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-fr'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fff'%20d='M0%200h640v480H0z'/%3e%3cpath%20fill='%23000091'%20d='M0%200h213.3v480H0z'/%3e%3cpath%20fill='%23e1000f'%20d='M426.7%200H640v480H426.7z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s56",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-usa-jake.webp",
+          "alt": "Jake sentado num parque urbano. Bandeira: Estados Unidos.",
+          "natural": [768, 512],
+          "width": 619.484375,
+          "height": 412.984375,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-us'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23bd3d44'%20d='M0%200h640v480H0'/%3e%3cpath%20stroke='%23fff'%20stroke-width='37'%20d='M0%2055.3h640M0%20129h640M0%20203h640M0%20277h640M0%20351h640M0%20425h640'/%3e%3cpath%20fill='%23192f5d'%20d='M0%200h364.8v258.5H0'/%3e%3cmarker%20id='us-a'%20markerHeight='30'%20markerWidth='30'%3e%3cpath%20fill='%23fff'%20d='m14%200%209%2027L0%2010h28L5%2027z'/%3e%3c/marker%3e%3cpath%20fill='none'%20marker-mid='url(%23us-a)'%20d='m0%200%2016%2011h61%2061%2061%2061%2060L47%2037h61%2061%2060%2061L16%2063h61%2061%2061%2061%2060L47%2089h61%2061%2060%2061L16%20115h61%2061%2061%2061%2060L47%20141h61%2061%2060%2061L16%20166h61%2061%2061%2061%2060L47%20192h61%2061%2060%2061L16%20218h61%2061%2061%2061%2060z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s10",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-tom.webp",
+          "alt": "Tom: com frio. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Emma: com fome. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Yuki: com frio. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Ken: cansado, cansada. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-kim.webp",
+          "alt": "Kim: cansado, cansada. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-jun.webp",
+          "alt": "Jun: com fome. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 227.328125,
+          "height": 151.546875,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 1440,
+      "id": "s13",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_cards.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_mic.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_brain.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s1",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s21",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Tom bocejando no sofá da sala, com a cabeça apoiada na mão.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s22",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Julia encolhida num banco ao ar livre, abraçando o casaco e tremendo de frio.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s23",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-sad-josh.webp",
+          "alt": "Josh sentado sozinho num banco do parque, com uma lágrima e expressão triste.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s24",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s25",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Ana à mesa de uma cozinha, com a mão no estômago e um prato vazio.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s26",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s51",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-korea-jiwoo.webp",
+          "alt": "Ji-woo num pátio urbano com jardim. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s52",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-japan-hiro.webp",
+          "alt": "Hiro sentado numa varanda com jardim. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s53",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-spain-lucia.webp",
+          "alt": "Lucía numa praça com uma cafeteria ao fundo. Bandeira: Espanha.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/flag-es.svg",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s54",
+      "reusedMatchingAfter": true
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s55",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-france-chloe.webp",
+          "alt": "Chloé numa rua arborizada com uma cafeteria ao fundo. Bandeira: França.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-fr'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fff'%20d='M0%200h640v480H0z'/%3e%3cpath%20fill='%23000091'%20d='M0%200h213.3v480H0z'/%3e%3cpath%20fill='%23e1000f'%20d='M426.7%200H640v480H426.7z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s56",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-usa-jake.webp",
+          "alt": "Jake sentado num parque urbano. Bandeira: Estados Unidos.",
+          "natural": [768, 512],
+          "width": 324,
+          "height": 216,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-us'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23bd3d44'%20d='M0%200h640v480H0'/%3e%3cpath%20stroke='%23fff'%20stroke-width='37'%20d='M0%2055.3h640M0%20129h640M0%20203h640M0%20277h640M0%20351h640M0%20425h640'/%3e%3cpath%20fill='%23192f5d'%20d='M0%200h364.8v258.5H0'/%3e%3cmarker%20id='us-a'%20markerHeight='30'%20markerWidth='30'%3e%3cpath%20fill='%23fff'%20d='m14%200%209%2027L0%2010h28L5%2027z'/%3e%3c/marker%3e%3cpath%20fill='none'%20marker-mid='url(%23us-a)'%20d='m0%200%2016%2011h61%2061%2061%2061%2060L47%2037h61%2061%2060%2061L16%2063h61%2061%2061%2061%2060L47%2089h61%2061%2060%2061L16%20115h61%2061%2061%2061%2060L47%20141h61%2061%2060%2061L16%20166h61%2061%2061%2061%2060L47%20192h61%2061%2060%2061L16%20218h61%2061%2061%2061%2060z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s10",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-tom.webp",
+          "alt": "Tom: com frio. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-ana.webp",
+          "alt": "Emma: com fome. Bandeira: Alemanha.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-de'%20viewBox='0%200%20640%20480'%3e%3cpath%20fill='%23fc0'%20d='M0%20320h640v160H0z'/%3e%3cpath%20fill='%23000001'%20d='M0%200h640v160H0z'/%3e%3cpath%20fill='red'%20d='M0%20160h640v160H0z'/%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-cold-julia.webp",
+          "alt": "Yuki: com frio. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-tom.webp",
+          "alt": "Ken: cansado, cansada. Bandeira: Japão.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20id='flag-icons-jp'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='jp-a'%3e%3cpath%20fill-opacity='.7'%20d='M-88%2032h640v480H-88z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20stroke-width='1pt'%20clip-path='url(%23jp-a)'%20transform='translate(88%20-32)'%3e%3cpath%20fill='%23fff'%20d='M-128%2032h720v480h-720z'/%3e%3ccircle%20cx='523.1'%20cy='344.1'%20r='194.9'%20fill='%23bc002d'%20transform='translate(-168.4%208.6)scale(.76554)'/%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-tired-kim.webp",
+          "alt": "Kim: cansado, cansada. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/scene-hungry-jun.webp",
+          "alt": "Jun: com fome. Bandeira: Coreia do Sul.",
+          "natural": [768, 512],
+          "width": 155,
+          "height": 103.328125,
+          "fit": "contain"
+        },
+        {
+          "src": "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20id='flag-icons-kr'%20viewBox='0%200%20640%20480'%3e%3cdefs%3e%3cclipPath%20id='kr-a'%3e%3cpath%20fill-opacity='.7'%20d='M-95.8-.4h682.7v512H-95.8z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20fill-rule='evenodd'%20clip-path='url(%23kr-a)'%20transform='translate(89.8%20.4)scale(.9375)'%3e%3cpath%20fill='%23fff'%20d='M-95.8-.4H587v512H-95.8Z'/%3e%3cg%20transform='rotate(-56.3%20361.6%20-101.3)scale(10.66667)'%3e%3cg%20id='kr-c'%3e%3cpath%20id='kr-b'%20fill='%23000001'%20d='M-6-26H6v2H-6Zm0%203H6v2H-6Zm0%203H6v2H-6Z'/%3e%3cuse%20xlink:href='%23kr-b'%20width='100%25'%20height='100%25'%20y='44'/%3e%3c/g%3e%3cpath%20stroke='%23fff'%20d='M0%2017v10'/%3e%3cpath%20fill='%23cd2e3a'%20d='M0-12a12%2012%200%200%201%200%2024Z'/%3e%3cpath%20fill='%230047a0'%20d='M0-12a12%2012%200%200%200%200%2024A6%206%200%200%200%200%200Z'/%3e%3ccircle%20cy='-6'%20r='6'%20fill='%23cd2e3a'/%3e%3c/g%3e%3cg%20transform='rotate(-123.7%20191.2%2062.2)scale(10.66667)'%3e%3cuse%20xlink:href='%23kr-c'%20width='100%25'%20height='100%25'/%3e%3cpath%20stroke='%23fff'%20d='M0-23.5v3M0%2017v3.5m0%203v3'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e",
+          "alt": "",
+          "natural": [200, 150],
+          "width": 48,
+          "height": 32,
+          "fit": "contain"
+        }
+      ]
+    },
+    {
+      "phase": "after",
+      "width": 390,
+      "id": "s13",
+      "images": [
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_cards.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_mic.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        },
+        {
+          "src": "http://127.0.0.1:6083/@fs/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/A101/assets/e_brain.png",
+          "alt": "",
+          "natural": [256, 256],
+          "width": 40,
+          "height": 40,
+          "fit": "contain"
+        }
+      ]
+    }
+  ]
+}

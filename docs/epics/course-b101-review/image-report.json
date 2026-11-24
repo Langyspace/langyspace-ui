@@ -1,0 +1,128 @@
+{
+  "generatedCount": 0,
+  "reusedCount": 12,
+  "reason": "All source scenes convey their action/evidence clearly. Increase displayed area and safe framing instead of regenerating valid media.",
+  "labelRule": "Vocabulary captions/translation below image; role-play day/possible-answer text adjacent to image. Full card remains touch target. Verified at1440/390/320.",
+  "items": [
+    {
+      "id": "baking",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-baking.webp",
+      "sha256": "88cf3a9ed74937e7076c0e33e6f474512f9cf0269c99a36b09aec9cbf110b585",
+      "decision": "REUSE exact existing bytes",
+      "target": "flour, bowl and finished loaf",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "swimming",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-swimming.webp",
+      "sha256": "02e0c4a229584c96779c9a733784963d0ab88383013020d7f4802735b37d31ee",
+      "decision": "REUSE exact existing bytes",
+      "target": "damp hair, towel and goggles",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "gardening",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-gardening.webp",
+      "sha256": "22ccd2fb8c61b17db2383551e69d91af8cbf27284dabe832b43e9fb2a5a44eec",
+      "decision": "REUSE exact existing bytes",
+      "target": "earthy hands and planted pot",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "guitar",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-guitar.webp",
+      "sha256": "248468956b9e5290386b1997a009dcafbed61628004e2b3d7b58491843c9b4f7",
+      "decision": "REUSE exact existing bytes",
+      "target": "hands on strings/frets and whole guitar",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "soccer",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-soccer.webp",
+      "sha256": "4f2b41785b4a9aee99dac7a16bda64741cd2623003f95b81cce086458bd1742e",
+      "decision": "REUSE exact existing bytes",
+      "target": "soccer ball, cleats and pitch",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "shopping",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-shopping.webp",
+      "sha256": "f026549cc5cf1ed2561085247bc5275a5af1aa310660b61182f55f472eed8a15",
+      "decision": "REUSE exact existing bytes",
+      "target": "paper shopping bags and shop setting",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "tv",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-tv.webp",
+      "sha256": "f2d10708aced14d9b8c3c871c7f3ac75810de1ebad8e8353401dd9370d476569",
+      "decision": "REUSE exact existing bytes",
+      "target": "remote, popcorn and TV",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "bike",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bike.webp",
+      "sha256": "2bc6694c3124a538c81d4b54213bfa0c3d4f0fccdb9e24900040c74011168c61",
+      "decision": "REUSE exact existing bytes",
+      "target": "helmet, pedals and bicycle wheels",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "muddy-shoes",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-muddy-shoes.webp",
+      "sha256": "3cc3b4b7e3b26dfc050ba8bc6bc66762e334231aeec2e74a72d234321040a77d",
+      "decision": "REUSE exact existing bytes",
+      "target": "mud on shoes; intentionally ambiguous clue",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "hot",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-hot.webp",
+      "sha256": "7f3aa606248cc82724cab59d0385e470d573f619acf814c89ca51efd0796c349",
+      "decision": "REUSE exact existing bytes",
+      "target": "flushed face and fanning hand; ambiguous clue",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "wet-shirt",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-wet-shirt.webp",
+      "sha256": "e36f7b9431bc7facd8f92dc59ff6096d3d6c4f06001f1d48b05b785d7eb0de5f",
+      "decision": "REUSE exact existing bytes",
+      "target": "opaque damp shirt; ambiguous clue",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    },
+    {
+      "id": "bus",
+      "file": "/Users/margaridamartins/Documents/Codex/langy-ui-a201-exp-a1-20261117/stories/materials/B101/assets/scene-bus.webp",
+      "sha256": "baada491df7d5a9ef01de5f3e13b7b42143ba29834e3f457caa4f735fa1a2338",
+      "decision": "REUSE exact existing bytes",
+      "target": "bus shelter, rain and approaching bus",
+      "framing": "whole 3:2 source, contain; no image crop or overlay",
+      "promptProvenance": "B101/image-scenes.json, original image_gen prompt retained",
+      "changedImagePixels": false
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "feedback": 60,
+  "canonicalPrefix": {
+    "file": "docs/materials/prompts/langy-illustration-v1.8.txt",
+    "bytes": 1909,
+    "sha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+    "unchanged": true
+  },
+  "generationCalls": 4,
+  "referenceImages": 0,
+  "assets": [
+    {
+      "id": "01-meeting",
+      "file": "stories/materials/TrialA1/assets/comic-01-meeting.webp",
+      "original": "/Users/margaridamartins/.codex/outputs/comic-roleplay60-20261121/originals/01-meeting.png",
+      "generation": "builtin image_gen; text only; one call; no references",
+      "prompt": "docs/materials/prompts/comic-roleplay60/01-meeting.txt",
+      "promptSha256": "722d6b2e900c746edf0aa39adcd47220a41f2e05c01f48f5e7179e7accd0ad93",
+      "sha256": "0724e3897f2ead05efa3adcc77f1f845d903d44d497ebefab28acb7bdbc76718",
+      "originalSha256": "b002790c04a7829ad32d12711edde444f8bb3ddc63ab67eb11ae22374e0f714e",
+      "originalDimensions": [1536, 1024],
+      "dimensions": [960, 640],
+      "processing": "cwebp q90 resize 960x640, complete frame, no crop or semantic edits"
+    },
+    {
+      "id": "02-introductions",
+      "file": "stories/materials/TrialA1/assets/comic-02-introductions.webp",
+      "original": "/Users/margaridamartins/.codex/outputs/comic-roleplay60-20261121/originals/02-introductions.png",
+      "generation": "builtin image_gen; text only; one call; no references",
+      "prompt": "docs/materials/prompts/comic-roleplay60/02-introductions.txt",
+      "promptSha256": "f167bd962868b13a32bbb10ce29c7d6c9a4abb2e1d2f2acc64d088e02b457fbd",
+      "sha256": "9a432ea8a0b58ef8352e48a1b64c7fb353a70cfaa19b674b4c9c19694905b104",
+      "originalSha256": "3a6e3a4321e56cef33236f78773d4ec2b1e37ded29f2d54f3d4a088d70ff6d3a",
+      "originalDimensions": [1536, 1024],
+      "dimensions": [960, 640],
+      "processing": "cwebp q90 resize 960x640, complete frame, no crop or semantic edits"
+    },
+    {
+      "id": "03-interests",
+      "file": "stories/materials/TrialA1/assets/comic-03-interests.webp",
+      "original": "/Users/margaridamartins/.codex/outputs/comic-roleplay60-20261121/originals/03-interests.png",
+      "generation": "builtin image_gen; text only; one call; no references",
+      "prompt": "docs/materials/prompts/comic-roleplay60/03-interests.txt",
+      "promptSha256": "db23ff360886aaaab14a8791f9b38fffaeef6f26ac8eda9d3121b5ea5f37d8de",
+      "sha256": "6d58f6b0b8b750439fc61ea0aeeb2b7ae3938725119de90432d5b83defabc8ad",
+      "originalSha256": "1bd4c405330baae2588cdf665e6b55feed3fdb80611113ef33d659945a23b4d6",
+      "originalDimensions": [1536, 1024],
+      "dimensions": [960, 640],
+      "processing": "cwebp q90 resize 960x640, complete frame, no crop or semantic edits"
+    },
+    {
+      "id": "04-goodbye",
+      "file": "stories/materials/TrialA1/assets/comic-04-goodbye.webp",
+      "original": "/Users/margaridamartins/.codex/outputs/comic-roleplay60-20261121/originals/04-goodbye.png",
+      "generation": "builtin image_gen; text only; one call; no references",
+      "prompt": "docs/materials/prompts/comic-roleplay60/04-goodbye.txt",
+      "promptSha256": "501c2c2b133222051c31496bff59a3a4fe168a787553d640303c81a08f943c66",
+      "sha256": "df9a7e113930ea494c51f59cb35c0b2d95cb39869d8bfe7deed64568505f3260",
+      "originalSha256": "b80b688fa92c404b17c6d3b181917dbe0383a9c739c8d561f2c2450c1fa3b754",
+      "originalDimensions": [1536, 1024],
+      "dimensions": [960, 640],
+      "processing": "cwebp q90 resize 960x640, complete frame, no crop or semantic edits"
+    }
+  ],
+  "compositionNotes": "Native previews show the same actors/left-right arrangement; Kim has longer sleeves in the interests panel. No claim of perfect visual identity or rendered fit; human review pending. No baked text, speech bubbles or UI.",
+  "production": false
+}

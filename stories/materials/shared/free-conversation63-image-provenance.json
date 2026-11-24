@@ -1,0 +1,40 @@
+{
+  "feedback": 63,
+  "generationCalls": 2,
+  "referenceImages": 0,
+  "mode": "built-in imagegen, text only",
+  "canonicalPrefix": {
+    "file": "docs/materials/prompts/langy-illustration-v1.8.txt",
+    "bytes": 1909,
+    "sha256": "fb257d5a454e97e9e811d1b9f714b8e6f1c1a462058fe3962af01ec0d3d72489",
+    "unchanged": true
+  },
+  "assets": [
+    {
+      "id": "teacher",
+      "file": "stories/materials/shared/assets/free-conversation-teacher63.webp",
+      "sha256": "a8d14988cdf1ceb3842010cc40e37eae3350aca58d962298fa677ae7a8f44a2d",
+      "original": "/Users/margaridamartins/.codex/outputs/free-conversation-illustration63-20261121/originals/teacher.png",
+      "originalSha256": "f409bfa1900af38b581e9361947495e3b8bbcb19ed3d8eb0a54d28eda65698c9",
+      "originalDimensions": [1254, 1254],
+      "dimensions": [768, 768],
+      "prompt": "docs/materials/prompts/free-conversation63/teacher.txt",
+      "promptSha256": "09709ca7c41903d2af13da213ddfd962e2da9edbf522373d57d60fc699bab3ff",
+      "processing": "Native cwebp full-frame resize 768x768 q90; no crop or semantic editing"
+    },
+    {
+      "id": "learner",
+      "file": "stories/materials/shared/assets/free-conversation-learner63.webp",
+      "sha256": "14277a03327b8e122786dfaf41fa7c9306ab7265f1d5d14fd8fd46b07fa66339",
+      "original": "/Users/margaridamartins/.codex/outputs/free-conversation-illustration63-20261121/originals/learner.png",
+      "originalSha256": "c78781fde736ea223f749c5f63cf321046ec9c00949f85318e667cf78f7b43e1",
+      "originalDimensions": [1254, 1254],
+      "dimensions": [768, 768],
+      "prompt": "docs/materials/prompts/free-conversation63/learner.txt",
+      "promptSha256": "e8aad11b8cedd61dc3368a6170e6475d3467d2775d7c84fb55254fd79b128a9c",
+      "processing": "Native cwebp full-frame resize 768x768 q90; no crop or semantic editing"
+    }
+  ],
+  "nativePreviewObservation": "Both adult participants smile, face toward the center and show two arms/hands each; no duplicate limb observed. Human review of final composition remains pending.",
+  "production": false
+}

@@ -1,0 +1,455 @@
+{
+  "version": 81,
+  "code": "B2.07",
+  "key": "b2-07",
+  "title": "She insisted on paying",
+  "goal": "Report intentions and commitments without strengthening what was said",
+  "freeConversationInstruction": "Talk about conversations and misunderstandings, explaining intentions and checking interpretations",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall passing on a request accurately",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What did they ask you to do?",
+          "cue": "Preserve the request rather than making it a promise",
+          "hint": "They asked me to … They didn’t say …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "How people express intentions",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b2-07-vocabulary81",
+        "alt": "Six illustrated situations for She insisted on paying",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B207-V81.0",
+          "label": "insist on",
+          "prompt": "",
+          "example": "She didn’t insist on that date",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B207-FS81.0",
+          "audioText": "insist on. She didn’t insist on that date."
+        },
+        {
+          "id": "B207-V81.1",
+          "label": "refuse to",
+          "prompt": "",
+          "example": "One guest refused to pay yet",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B207-FS81.1",
+          "audioText": "refuse to. One guest refused to pay yet."
+        },
+        {
+          "id": "B207-V81.2",
+          "label": "admit that",
+          "prompt": "",
+          "example": "The host admitted that the summary was wrong",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B207-FS81.2",
+          "audioText": "admit that. The host admitted that the summary was wrong."
+        },
+        {
+          "id": "B207-V81.3",
+          "label": "deny doing",
+          "prompt": "",
+          "example": "She denied promising advance payment",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B207-FS81.3",
+          "audioText": "deny doing. She denied promising advance payment."
+        },
+        {
+          "id": "B207-V81.4",
+          "label": "suggest doing",
+          "prompt": "",
+          "example": "They suggested meeting on Saturday",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B207-FS81.4",
+          "audioText": "suggest doing. They suggested meeting on Saturday."
+        },
+        {
+          "id": "B207-V81.5",
+          "label": "promise to",
+          "prompt": "",
+          "example": "The host promised to check availability",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B207-FS81.5",
+          "audioText": "promise to. The host promised to check availability."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "She insisted on paying",
+      "paragraphs": [
+        "Original fictional messages: Guest: “How about dinner on Saturday? Another evening could work too.” Host: “I’ll book after everyone confirms.” Another guest: “I won’t pay a deposit until I’ve read the cancellation conditions.” A later summary wrongly says everyone agreed to pay in advance."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "What was actually said?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B207-D81.1",
+          "speaker": "Kim",
+          "text": "How did the dinner planning go? Did everyone agree?",
+          "audioText": "How did the dinner planning go? Did everyone agree?",
+          "translation": "Como foi o planejamento do jantar? Todos concordaram?"
+        },
+        {
+          "id": "B207-D81.2",
+          "speaker": "Ana",
+          "text": "Not on everything. One person suggested having dinner on Saturday",
+          "audioText": "Not on everything. One person suggested having dinner on Saturday.",
+          "translation": "Não em tudo. Uma pessoa sugeriu jantar no sábado"
+        },
+        {
+          "id": "B207-D81.3",
+          "speaker": "Kim",
+          "text": "And someone promised to book the table?",
+          "audioText": "And someone promised to book the table?",
+          "translation": "E alguém prometeu reservar a mesa?"
+        },
+        {
+          "id": "B207-D81.4",
+          "speaker": "Ana",
+          "text": "Yes, the host promised to book after checking the group’s availability",
+          "audioText": "Yes, the host promised to book after checking the group’s availability.",
+          "translation": "Sim, quem vai receber prometeu reservar depois de conferir a disponibilidade"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "What condition comes before booking?",
+          "cue": "Report the actual promise",
+          "hint": "After …",
+          "answer": "After checking everyone’s availability"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Correct the stronger claim",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B207-D81.5",
+          "speaker": "Kim",
+          "text": "I heard that everyone agreed to pay in advance",
+          "audioText": "I heard that everyone agreed to pay in advance.",
+          "translation": "Ouvi dizer que todos concordaram em pagar adiantado"
+        },
+        {
+          "id": "B207-D81.6",
+          "speaker": "Ana",
+          "text": "That’s not accurate. One guest refused to pay before seeing the cancellation conditions",
+          "audioText": "That’s not accurate. One guest refused to pay before seeing the cancellation conditions.",
+          "translation": "Isso não está correto. Uma pessoa se recusou a pagar antes de ver as condições de cancelamento"
+        },
+        {
+          "id": "B207-D81.7",
+          "speaker": "Kim",
+          "text": "So suggesting dinner wasn’t the same as committing to the deposit",
+          "audioText": "So suggesting dinner wasn’t the same as committing to the deposit.",
+          "translation": "Então sugerir o jantar não foi o mesmo que se comprometer com o depósito"
+        },
+        {
+          "id": "B207-D81.8",
+          "speaker": "Ana",
+          "text": "Exactly. The person who suggested it also said the date was open to discussion",
+          "audioText": "Exactly. The person who suggested it also said the date was open to discussion.",
+          "translation": "Exatamente. Quem sugeriu também disse que a data estava aberta a discussão"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Did the reluctant guest reject dinner itself?",
+          "cue": "Distinguish the activity from payment",
+          "hint": "No, …",
+          "answer": "No. They refused advance payment before reading the conditions"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Preserve the intention",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B207-D81.9",
+          "speaker": "Kim",
+          "text": "Did anybody admit that the first summary was wrong?",
+          "audioText": "Did anybody admit that the first summary was wrong?",
+          "translation": "Alguém reconheceu que o primeiro resumo estava errado?"
+        },
+        {
+          "id": "B207-D81.10",
+          "speaker": "Ana",
+          "text": "The host did. They offered to send a corrected summary to the group",
+          "audioText": "The host did. They offered to send a corrected summary to the group.",
+          "translation": "Sim, quem vai receber. Ofereceu-se para enviar um resumo corrigido ao grupo"
+        },
+        {
+          "id": "B207-D81.11",
+          "speaker": "Kim",
+          "text": "That should help. We need to preserve what people actually intended",
+          "audioText": "That should help. We need to preserve what people actually intended.",
+          "translation": "Isso deve ajudar. Precisamos preservar o que as pessoas realmente quiseram dizer"
+        },
+        {
+          "id": "B207-D81.12",
+          "speaker": "Ana",
+          "text": "Yes: a suggestion, a conditional promise and a refusal are three different things",
+          "audioText": "Yes: a suggestion, a conditional promise and a refusal are three different things.",
+          "translation": "Sim: uma sugestão, uma promessa condicional e uma recusa são três coisas diferentes"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "What made the first summary inaccurate?",
+          "cue": "Identify the added commitment",
+          "hint": "It said …",
+          "answer": "It said everyone agreed to pay in advance"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Clarify what was agreed",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "The verb pattern also carries an intention",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A suggested activity",
+          "verb": "suggest + -ing",
+          "example": "She suggested having dinner on Saturday"
+        },
+        {
+          "id": "1",
+          "subject": "A commitment or refusal",
+          "verb": "promise / refuse + to + verb",
+          "example": "They promised to check. A guest refused to pay yet"
+        },
+        {
+          "id": "2",
+          "subject": "Insistence or acknowledgement",
+          "verb": "insist on + -ing / admit that + clause",
+          "example": "She didn’t insist on meeting then. The host admitted that the summary was inaccurate"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Give me the accurate version",
+      "instruction": "Tell me what they said without changing what they meant",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A suggestion, not an insistence",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I want to clarify the dinner message. I suggested Saturday because it seemed convenient; I didn’t insist on that date or promise that everyone would pay in advance. I’m happy to consider another evening. The host said they would book only after checking availability, and one guest still wants to see the cancellation conditions before paying anything. Could you pass that on without making me sound more definite than I was? A useful summary would say what was suggested, what was actually promised and what is still unresolved",
+      "audioText": "Hi, Ana. I want to clarify the dinner message. I suggested Saturday because it seemed convenient; I didn’t insist on that date or promise that everyone would pay in advance. I’m happy to consider another evening. The host said they would book only after checking availability, and one guest still wants to see the cancellation conditions before paying anything. Could you pass that on without making me sound more definite than I was? A useful summary would say what was suggested, what was actually promised and what is still unresolved.",
+      "audioId": "B207-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What does she want to clarify?",
+          "cue": "Separate the suggestion from the commitment",
+          "hint": "She suggested …, but she didn’t …",
+          "answer": "She suggested Saturday but did not insist or promise advance payment"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Send a faithful summary",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Report intentions and commitments without strengthening what was said"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Consult the original messages",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Guest",
+          "value": "“How about Saturday? Another evening could work too”"
+        },
+        {
+          "id": "1",
+          "label": "Host",
+          "value": "“I’ll book after everyone confirms”"
+        },
+        {
+          "id": "2",
+          "label": "Another guest",
+          "value": "“I won’t pay until I’ve read the conditions”"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What did each person actually agree to?",
+          "cue": "Relay the three different intentions without adding commitments",
+          "hint": "They suggested … The host promised to … A guest refused to …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Correct the group’s understanding",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Flexible suggestion",
+          "value": "Saturday · another evening possible"
+        },
+        {
+          "id": "1",
+          "label": "Conditional commitment",
+          "value": "Book after availability check"
+        },
+        {
+          "id": "2",
+          "label": "Still unresolved",
+          "value": "Cancellation conditions and deposit"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "How would you correct the misleading summary?",
+          "cue": "State what the person meant and what remains open",
+          "hint": "Not exactly. She suggested …; she didn’t promise …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Guest",
+          "value": "“How about Saturday? Another evening could work too”"
+        },
+        {
+          "id": "1",
+          "label": "Host",
+          "value": "“I’ll book after everyone confirms”"
+        },
+        {
+          "id": "2",
+          "label": "Another guest",
+          "value": "“I won’t pay until I’ve read the conditions”"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What did each person actually agree to?",
+          "cue": "Summarise the commitments without adding promises",
+          "hint": "They agreed to …, but … refused to …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "Is that the same as what the message says?",
+          "cue": "Correct a change in meaning or intention",
+          "hint": "Not exactly. They suggested …; they didn’t promise …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

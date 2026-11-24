@@ -15,7 +15,7 @@ export const Clock = styled.div`
   height: 160px;
   border: 6px solid ${(p) => Common.recipe(p).accent};
   border-radius: ${theme.radius.circle};
-  font: 700 40px ${theme.slides.displayFontFamily};
+  font: 700 40px ${theme.typography.fontFamily.sans};
   font-variant-numeric: tabular-nums;
 `
 export const Progress = styled.progress`

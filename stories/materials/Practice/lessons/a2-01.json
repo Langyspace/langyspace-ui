@@ -1,0 +1,232 @@
+{
+  "key": "a2-01",
+  "code": "A2.01",
+  "title": "What are you doing?",
+  "first": {
+    "id": "course-practice-a2-01-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-01-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She’s making coffee"
+          },
+          {
+            "id": "b",
+            "text": "She making coffee"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing. Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "A ação está acontecendo agora, então precisamos de duas partes: is e o verbo com ing. Só making, sem o is, deixa a frase incompleta. Por isso: “She’s making coffee”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q01/completion.mp3"
+      },
+      {
+        "id": "course-a2-01-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She usually work from home"
+          },
+          {
+            "id": "b",
+            "text": "She usually works from home"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Estamos falando de um hábito de she. No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Estamos falando de um hábito de she. No presente simples, o verbo recebe s: she works. Por isso: “She usually works from home”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q02/completion.mp3"
+      },
+      {
+        "id": "course-a2-01-q03",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "What are you usually cook?"
+          },
+          {
+            "id": "b",
+            "text": "What do you usually cook?"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Essa pergunta é sobre rotina. Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Essa pergunta é sobre rotina. Usamos do com o verbo básico cook; are cook mistura duas estruturas diferentes. Por isso: “What do you usually cook?”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q03/completion.mp3"
+      },
+      {
+        "id": "course-a2-01-q04",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "What are you cooking?"
+          },
+          {
+            "id": "b",
+            "text": "What you are cooking?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Na pergunta direta sobre o que está acontecendo, are vem antes de you. Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Na pergunta direta sobre o que está acontecendo, are vem antes de you. Na resposta, a ordem volta a ser you are. Por isso: “What are you cooking?”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q04/completion.mp3"
+      },
+      {
+        "id": "course-a2-01-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "He doesn’t watches TV in the morning"
+          },
+          {
+            "id": "b",
+            "text": "He doesn’t watch TV in the morning"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "O doesn’t já marca a terceira pessoa na negativa. Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "O doesn’t já marca a terceira pessoa na negativa. Por isso o verbo seguinte fica watch, sem outro s. Por isso: “He doesn’t watch TV in the morning”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q05/completion.mp3"
+      },
+      {
+        "id": "course-a2-01-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "They aren’t working today"
+          },
+          {
+            "id": "b",
+            "text": "They don’t working today"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing. Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Para negar uma ação em andamento, usamos aren’t antes do verbo com ing. Don’t não acompanha working desse jeito. Por isso: “They aren’t working today”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-01-quiz/course-a2-01-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-01-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-01.shadowing.01",
+        "displayText": "Hey! What are you doing?",
+        "translation": "Oi! O que você está fazendo?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.02",
+        "displayText": "I'm cooking dinner. What about you?",
+        "translation": "Estou preparando o jantar. E você?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.03",
+        "displayText": "I'm watching a movie",
+        "translation": "Estou assistindo a um filme.",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.04",
+        "displayText": "Nice! Do you usually watch movies at night?",
+        "translation": "Legal! Você costuma assistir a filmes à noite?",
+        "speakerId": "ben"
+      },
+      {
+        "id": "a2-01.shadowing.05",
+        "displayText": "Yes, but I usually read before bed. Do you cook every day?",
+        "translation": "Sim, mas geralmente leio antes de dormir. Você cozinha todos os dias?",
+        "speakerId": "anna"
+      },
+      {
+        "id": "a2-01.shadowing.06",
+        "displayText": "Not really. I usually order food, but today I'm making pasta",
+        "translation": "Na verdade, não. Geralmente peço comida, mas hoje estou fazendo macarrão.",
+        "speakerId": "ben"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "anna",
+        "name": "Anna",
+        "avatarUrl": "/flashcards/course-characters/anna/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ben",
+        "name": "Ben",
+        "avatarUrl": "/flashcards/course-characters/ben/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

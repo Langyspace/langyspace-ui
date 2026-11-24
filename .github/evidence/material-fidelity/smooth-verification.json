@@ -1,0 +1,292 @@
+{
+  "baseline": "7ce020bf8e4e92d150adf3cc243cbb45d864b532",
+  "hookSha256": "78dc134d2388a4a4e515095c6a971a8ac8ce3a21a73bc11a9929fbe8228ba5cf",
+  "motion": "native animation, CPU4x",
+  "rows": [
+    {
+      "key": "a1-01",
+      "width": 1280,
+      "height": 800,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 24,
+        "currentPage": "s26",
+        "image": "before/smooth-end-a1-01-1280x800.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s13",
+        "image": "after/smooth-end-a1-01-1280x800.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "a2-01",
+      "width": 1280,
+      "height": 800,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 43.75,
+        "currentPage": "s52",
+        "image": "before/smooth-end-a2-01-1280x800.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-a2-01-1280x800.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b1-01",
+      "width": 1280,
+      "height": 800,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 25,
+        "currentPage": "s33",
+        "image": "before/smooth-end-b1-01-1280x800.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b1-01-1280x800.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b2-01",
+      "width": 1280,
+      "height": 800,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 43.6817472698908,
+        "currentPage": "s52",
+        "image": "before/smooth-end-b2-01-1280x800.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b2-01-1280x800.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "trial-a1-a2",
+      "width": 1280,
+      "height": 800,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s6",
+        "image": "before/smooth-end-trial-a1-a2-1280x800.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s6",
+        "image": "after/smooth-end-trial-a1-a2-1280x800.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "a1-01",
+      "width": 1280,
+      "height": 620,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 27.886654244040354,
+        "currentPage": "s4",
+        "image": "before/smooth-end-a1-01-1280x620.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s13",
+        "image": "after/smooth-end-a1-01-1280x620.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "a2-01",
+      "width": 1280,
+      "height": 620,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 25,
+        "currentPage": "s33",
+        "image": "before/smooth-end-a2-01-1280x620.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-a2-01-1280x620.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b1-01",
+      "width": 1280,
+      "height": 620,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 24.984888172476325,
+        "currentPage": "s33",
+        "image": "before/smooth-end-b1-01-1280x620.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b1-01-1280x620.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b2-01",
+      "width": 1280,
+      "height": 620,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 43.18361693707954,
+        "currentPage": "s52",
+        "image": "before/smooth-end-b2-01-1280x620.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b2-01-1280x620.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "trial-a1-a2",
+      "width": 1280,
+      "height": 620,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 57.14285714285714,
+        "currentPage": "s42",
+        "image": "before/smooth-end-trial-a1-a2-1280x620.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s6",
+        "image": "after/smooth-end-trial-a1-a2-1280x620.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "a1-01",
+      "width": 390,
+      "height": 844,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 7.656717771931416,
+        "currentPage": "s22",
+        "image": "before/smooth-end-a1-01-390x844.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s13",
+        "image": "after/smooth-end-a1-01-390x844.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "a2-01",
+      "width": 390,
+      "height": 844,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 23.82919145957298,
+        "currentPage": "s33",
+        "image": "before/smooth-end-a2-01-390x844.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-a2-01-390x844.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b1-01",
+      "width": 390,
+      "height": 844,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 46.50375685371962,
+        "currentPage": "s6",
+        "image": "before/smooth-end-b1-01-390x844.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b1-01-390x844.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "b2-01",
+      "width": 390,
+      "height": 844,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": false,
+        "progress": 24.10912765240822,
+        "currentPage": "s33",
+        "image": "before/smooth-end-b2-01-390x844.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s12",
+        "image": "after/smooth-end-b2-01-390x844.jpg",
+        "reachesHome": true
+      }
+    },
+    {
+      "key": "trial-a1-a2",
+      "width": 390,
+      "height": 844,
+      "cpuRate": 4,
+      "before": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s6",
+        "image": "before/smooth-end-trial-a1-a2-390x844.jpg"
+      },
+      "after": {
+        "reachesEnd": true,
+        "progress": 100,
+        "currentPage": "s6",
+        "image": "after/smooth-end-trial-a1-a2-390x844.jpg",
+        "reachesHome": true
+      }
+    }
+  ]
+}

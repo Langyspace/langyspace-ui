@@ -1,0 +1,467 @@
+{
+  "task": "QUALITY-IMAGE-REFRESH-04",
+  "acceptedDestinations": 33,
+  "rootAcceptedManifest": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/quality-review-03-20261119/final-image-adoption-accepted.json",
+  "sourceBaseline": "a60409772ca87b1f964d5c0418a053fad71435f3",
+  "sourceFocusedUnit": 85,
+  "APIExportsUnchanged": true,
+  "sourceChecksReuse": "Root independently confirmed all33asset hashes, sole C1 catalog field and unchanged6TS/TSX from passing85test source. No interaction/type suite repeated for bitmap changes.",
+  "pairedScreens": [
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/a1-01-s6-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s6-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/a1-01-s6-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s6-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/a1-01-s8-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s8-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/a1-01-s8-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/a1-01-s8-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s33-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s33-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s33-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s33-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s6-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s6-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s6-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s6-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s62-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s62-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s62-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s62-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s9-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s9-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b1-01-s9-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b1-01-s9-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s6-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s6-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s6-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s6-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s62-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s62-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s62-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s62-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s8-swapped-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s8-swapped-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/b2-01-s8-swapped-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/b2-01-s8-swapped-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s6-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s6-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s6-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s6-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s62-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s62-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s62-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s62-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s8-swapped-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s8-swapped-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/c1-01-s8-swapped-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/c1-01-s8-swapped-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-1440-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-1440-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-1440-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-1440-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-390-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-390-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-390-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-390-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-s3-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-s3-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-a1-s3-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-a1-s3-390-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b1-1440-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b1-1440-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b1-1440-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b1-1440-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b1-390-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b1-390-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b1-390-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b1-390-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-1440-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-1440-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-1440-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-1440-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-390-initial.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-390-initial.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-390-selected.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-390-selected.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-s3-1440-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-s3-1440-avatar.png"
+    },
+    {
+      "group": "scene-avatar",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/before/trial-b2-s3-390-avatar.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/scene-avatar/after/trial-b2-s3-390-avatar.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s1-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s1-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s1-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s1-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s10-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s10-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s10-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s10-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s13-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s13-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s13-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s13-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s21-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s21-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s21-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s21-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s22-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s22-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s22-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s22-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s23-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s23-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s23-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s23-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s24-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s24-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s24-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s24-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s25-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s25-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s25-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s25-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s26-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s26-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s26-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s26-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s51-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s51-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s51-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s51-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s52-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s52-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s52-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s52-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s53-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s53-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s53-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s53-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s54-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s54-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s54-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s54-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s55-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s55-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s55-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s55-390.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s56-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s56-1440.png"
+    },
+    {
+      "group": "a101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/before/s56-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/a101-fit/after/s56-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer0-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer0-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer0-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer0-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer1-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer1-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer1-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer1-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer2-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer2-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-answer2-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-answer2-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue0-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue0-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue0-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue0-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue1-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue1-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue1-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue1-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue2-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue2-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s11-clue2-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s11-clue2-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s2-scene-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s2-scene-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s2-scene-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s2-scene-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s21-scene-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s21-scene-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s21-scene-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s21-scene-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s31-scene-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s31-scene-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s31-scene-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s31-scene-390.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s32-scene-1440.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s32-scene-1440.png"
+    },
+    {
+      "group": "b101-fit",
+      "before": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/before/b1-01-s32-scene-390.png",
+      "after": "docs/epics/materials-quality-03/evidence/image-refresh-04/b101-fit/after/b1-01-s32-scene-390.png"
+    }
+  ],
+  "coverPairs": 6,
+  "coverFixture": "Actual Teacher Thumb/PreviewImage styled-components, isolated fixture. Both Before/After in each image. Product staging adoption pending.",
+  "thumbnailObservation": "A1/B1 keep existing central16:10 cover behavior, trimming a few pixels of hair crown from3:2 images; faces/actions intact, full source visible in3:2 lesson contexts. C1dedicatedv2 preserves completeface/hair and shirt tobottom. Humanreviewpending.",
+  "A101BeforeFixture": "Same current React composition; only18image responses replaced with byte-verified git a604 blobs. Not an unmodified complete old build. Matching after views reused.",
+  "actualStagingClaim": false,
+  "visualGate": "Visual gate review: pending human"
+}

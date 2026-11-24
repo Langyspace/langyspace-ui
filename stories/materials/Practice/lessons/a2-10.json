@@ -1,0 +1,244 @@
+{
+  "key": "a2-10",
+  "code": "A2.10",
+  "title": "It’s too far",
+  "first": {
+    "id": "course-practice-a2-10-quiz",
+    "kind": "quiz",
+    "questions": [
+      {
+        "id": "course-a2-10-q01",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "This hotel is cheaper than that one"
+          },
+          {
+            "id": "b",
+            "text": "This hotel is cheaper that that one"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Cheaper já está comparando dois hotéis. Para apresentar o segundo, usamos than, não that. Por isso: “This hotel is cheaper than that one”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Cheaper já está comparando dois hotéis. Para apresentar o segundo, usamos than, não that. Por isso: “This hotel is cheaper than that one”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q01/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q01/completion.mp3"
+      },
+      {
+        "id": "course-a2-10-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "This room is comfortabler"
+          },
+          {
+            "id": "b",
+            "text": "This room is more comfortable"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Para comparar com comfortable, usamos more comfortable. Não acrescentamos er a esse adjetivo. Por isso: “This room is more comfortable”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Para comparar com comfortable, usamos more comfortable. Não acrescentamos er a esse adjetivo. Por isso: “This room is more comfortable”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q02/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q02/completion.mp3"
+      },
+      {
+        "id": "course-a2-10-q03",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The hotel is too much far away"
+          },
+          {
+            "id": "b",
+            "text": "The hotel is too far away"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Quando too vem antes de um adjetivo como far, ele entra diretamente. Não precisamos colocar much no meio. Por isso: “The hotel is too far away”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Quando too vem antes de um adjetivo como far, ele entra diretamente. Não precisamos colocar much no meio. Por isso: “The hotel is too far away”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q03/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q03/completion.mp3"
+      },
+      {
+        "id": "course-a2-10-q04",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "This room is quiet enough"
+          },
+          {
+            "id": "b",
+            "text": "This room is enough quiet"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Com um adjetivo, enough vem depois: quiet enough. A ideia é dizer que o quarto é silencioso o suficiente. Por isso: “This room is quiet enough”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Com um adjetivo, enough vem depois: quiet enough. A ideia é dizer que o quarto é silencioso o suficiente. Por isso: “This room is quiet enough”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q04/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q04/completion.mp3"
+      },
+      {
+        "id": "course-a2-10-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "There is enough space"
+          },
+          {
+            "id": "b",
+            "text": "There are enough space"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Space está sendo usado como espaço disponível, sem contagem de unidades. Por isso usamos there is, mesmo com enough na frase. Por isso: “There is enough space”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Space está sendo usado como espaço disponível, sem contagem de unidades. Por isso usamos there is, mesmo com enough na frase. Por isso: “There is enough space”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q05/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q05/completion.mp3"
+      },
+      {
+        "id": "course-a2-10-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "This room is more smaller than ours"
+          },
+          {
+            "id": "b",
+            "text": "This room is smaller than ours"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "Isso mesmo!",
+            "message": "Smaller já é o comparativo de small. Acrescentar more marcaria essa comparação duas vezes. Por isso: “This room is smaller than ours”"
+          },
+          "wrong": {
+            "title": "Vamos por partes:",
+            "message": "Smaller já é o comparativo de small. Acrescentar more marcaria essa comparação duas vezes. Por isso: “This room is smaller than ours”"
+          }
+        },
+        "promptAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q06/prompt.mp3",
+        "completionAudioSrc": "/quiz-audio/course-practice-a2-10-quiz/course-a2-10-q06/completion.mp3"
+      }
+    ]
+  },
+  "shadowing": {
+    "id": "course-practice-a2-10-shadowing",
+    "kind": "shadowing",
+    "phrases": [
+      {
+        "id": "a2-10.shadowing.01",
+        "displayText": "Which apartment do you think is better for our trip?",
+        "translation": "Qual apartamento você acha melhor para a nossa viagem?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-10.shadowing.02",
+        "displayText": "A is more expensive, but it has two beds",
+        "translation": "O A é mais caro, mas tem duas camas",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-10.shadowing.03",
+        "displayText": "B is cheaper. Is one bed enough for two friends?",
+        "translation": "O B é mais barato. Uma cama é suficiente para duas amigas?",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-10.shadowing.04",
+        "displayText": "Not for me. I’d like my own bed, and A is closer to the centre",
+        "translation": "Para mim, não. Quero minha própria cama, e o A é mais perto do centro",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-10.shadowing.05",
+        "displayText": "That’s true. B is a twenty-minute walk away",
+        "translation": "É verdade. O B fica a vinte minutos a pé",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-10.shadowing.06",
+        "displayText": "For this short trip, that’s too far for me. What matters most to you?",
+        "translation": "Para esta viagem curta, é longe demais para mim. O que mais importa para você?",
+        "speakerId": "ana"
+      },
+      {
+        "id": "a2-10.shadowing.07",
+        "displayText": "The price, but I can pay more if we both have a bed",
+        "translation": "O preço, mas posso pagar mais se cada uma tiver uma cama",
+        "speakerId": "kim"
+      },
+      {
+        "id": "a2-10.shadowing.08",
+        "displayText": "Then let’s choose A and check whether it’s quiet at night",
+        "translation": "Então vamos escolher o A e conferir se é silencioso à noite",
+        "speakerId": "ana"
+      }
+    ],
+    "speakers": [
+      {
+        "id": "kim",
+        "name": "Kim",
+        "avatarUrl": "/flashcards/course-characters/kim/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      },
+      {
+        "id": "ana",
+        "name": "Ana",
+        "avatarUrl": "/flashcards/course-characters/ana/image.webp",
+        "accentCode": "en-US",
+        "accentLabel": "English · US"
+      }
+    ]
+  },
+  "publishedEnvironments": []
+}

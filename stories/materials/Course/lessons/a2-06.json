@@ -1,0 +1,401 @@
+{
+  "version": 81,
+  "code": "A2.06",
+  "key": "a2-06",
+  "title": "My back hurts",
+  "goal": "Describe a fictional symptom and confirm appointment details",
+  "freeConversationInstruction": "Talk about feeling well, everyday habits and asking for help, using fictional situations if you prefer",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Use a past question to find out when something happened",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "When did it start?",
+          "cue": "Give a past time expression",
+          "hint": "It started …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "How do you feel?",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-06-vocabulary81",
+        "alt": "Six illustrated situations for My back hurts",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A206-V81.0",
+          "label": "a headache",
+          "prompt": "",
+          "example": "I have a headache",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A206-FS81.0",
+          "audioText": "a headache. I have a headache."
+        },
+        {
+          "id": "A206-V81.1",
+          "label": "a sore throat",
+          "prompt": "",
+          "example": "My friend has a sore throat",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A206-FS81.1",
+          "audioText": "a sore throat. My friend has a sore throat."
+        },
+        {
+          "id": "A206-V81.2",
+          "label": "a fever",
+          "prompt": "",
+          "example": "I have a fever today",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A206-FS81.2",
+          "audioText": "a fever. I have a fever today."
+        },
+        {
+          "id": "A206-V81.3",
+          "label": "a cough",
+          "prompt": "",
+          "example": "I’ve had a cough since yesterday",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A206-FS81.3",
+          "audioText": "a cough. I’ve had a cough since yesterday."
+        },
+        {
+          "id": "A206-V81.4",
+          "label": "a stomachache",
+          "prompt": "",
+          "example": "She has a stomachache",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A206-FS81.4",
+          "audioText": "a stomachache. She has a stomachache."
+        },
+        {
+          "id": "A206-V81.5",
+          "label": "a backache",
+          "prompt": "",
+          "example": "I’d like an appointment for my backache",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A206-FS81.5",
+          "audioText": "a backache. I’d like an appointment for my backache."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Asking for an appointment",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A206-D81.1",
+          "speaker": "Kim",
+          "text": "Good afternoon. How can I help you?",
+          "audioText": "Good afternoon. How can I help you?",
+          "translation": "Boa tarde. Como posso ajudar?"
+        },
+        {
+          "id": "A206-D81.2",
+          "speaker": "Ana",
+          "text": "My back hurts. I’d like to make an appointment",
+          "audioText": "My back hurts. I’d like to make an appointment.",
+          "translation": "Minhas costas doem. Gostaria de marcar uma consulta"
+        },
+        {
+          "id": "A206-D81.3",
+          "speaker": "Kim",
+          "text": "When did it start?",
+          "audioText": "When did it start?",
+          "translation": "Quando começou?"
+        },
+        {
+          "id": "A206-D81.4",
+          "speaker": "Ana",
+          "text": "Yesterday afternoon. Is there an appointment today?",
+          "audioText": "Yesterday afternoon. Is there an appointment today?",
+          "translation": "Ontem à tarde. Tem uma consulta hoje?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "When did Ana’s back start hurting?",
+          "cue": "Give the stated time",
+          "hint": "Yesterday …",
+          "answer": "Yesterday afternoon"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Checking the details",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A206-D81.5",
+          "speaker": "Kim",
+          "text": "There’s one at three at the Green Clinic",
+          "audioText": "There’s one at three at the Green Clinic.",
+          "translation": "Tem uma às três na Green Clinic"
+        },
+        {
+          "id": "A206-D81.6",
+          "speaker": "Ana",
+          "text": "Could you repeat the time, please?",
+          "audioText": "Could you repeat the time, please?",
+          "translation": "Pode repetir o horário, por favor?"
+        },
+        {
+          "id": "A206-D81.7",
+          "speaker": "Kim",
+          "text": "Three o’clock. We’ll send you the address",
+          "audioText": "Three o’clock. We’ll send you the address.",
+          "translation": "Às três. Vamos enviar o endereço"
+        },
+        {
+          "id": "A206-D81.8",
+          "speaker": "Ana",
+          "text": "Thank you. I’ll check the message",
+          "audioText": "Thank you. I’ll check the message.",
+          "translation": "Obrigada. Vou conferir a mensagem"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Where is the appointment?",
+          "cue": "Name the clinic",
+          "hint": "At …",
+          "answer": "At the Green Clinic"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Describe how you feel",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "What’s the matter?",
+          "cue": "Describe the symptom on your situation card",
+          "hint": "I have … / My … hurts",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "When did it start?",
+          "cue": "Say when the symptom began",
+          "hint": "It started …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Describe the problem and clarify the details",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Describe how you feel",
+          "verb": "I have a … / My … hurts",
+          "example": "I have a headache. My back hurts"
+        },
+        {
+          "id": "1",
+          "subject": "Ask about the start",
+          "verb": "When did it start?",
+          "example": "It started yesterday afternoon"
+        },
+        {
+          "id": "2",
+          "subject": "Clarify information",
+          "verb": "Could you repeat / confirm …?",
+          "example": "Could you confirm the time and the clinic?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Explain how you feel",
+      "instruction": "Explain the problem and check the appointment details",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Your appointment time",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hello, Ana. This is a message about your appointment at the Green Clinic. The time is now four o’clock this afternoon, not three. The address is the same. Please come to reception ten minutes before your appointment. You don’t need to reply if four is OK. If you need another time, please call reception. Thank you",
+      "audioText": "Hello, Ana. This is a message about your appointment at the Green Clinic. The time is now four o’clock this afternoon, not three. The address is the same. Please come to reception ten minutes before your appointment. You don’t need to reply if four is OK. If you need another time, please call reception. Thank you.",
+      "audioId": "A206-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "When and where is the appointment?",
+          "cue": "Confirm the time and place stated in the message",
+          "hint": "It’s at … in …",
+          "answer": "Four o’clock at the Green Clinic"
+        }
+      ],
+      "greetingTimestamp": "12:20",
+      "voiceTimestamp": "12:21"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Check the updated appointment",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Describe a fictional symptom and confirm appointment details"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "choices",
+      "title": "Fictional appointment cards",
+      "options": [
+        {
+          "id": "back",
+          "title": "Back hurts",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Symptom",
+              "value": "Backache"
+            },
+            {
+              "id": "1",
+              "label": "Started",
+              "value": "Yesterday afternoon"
+            },
+            {
+              "id": "2",
+              "label": "Available",
+              "value": "This afternoon"
+            }
+          ]
+        },
+        {
+          "id": "throat",
+          "title": "Throat hurts",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Symptom",
+              "value": "Sore throat"
+            },
+            {
+              "id": "1",
+              "label": "Started",
+              "value": "This morning"
+            },
+            {
+              "id": "2",
+              "label": "Available",
+              "value": "Today after 2 pm"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "appointment",
+          "prompt": "How can reception help?",
+          "cue": "Describe the fictional problem and ask for a time",
+          "hint": "My … hurts. It started … Is there an appointment …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Appointment confirmation",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Clinic",
+          "value": "Green Clinic · same address"
+        },
+        {
+          "id": "1",
+          "label": "New time",
+          "value": "4 pm today"
+        },
+        {
+          "id": "2",
+          "label": "Reception",
+          "value": "Arrive at 3:50 pm"
+        }
+      ],
+      "questions": [
+        {
+          "id": "check",
+          "prompt": "What will you confirm with reception?",
+          "cue": "Confirm the place and time, or ask for another appointment",
+          "hint": "My appointment is at … in …, right? Could I …?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

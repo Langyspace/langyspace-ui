@@ -1,0 +1,520 @@
+{
+  "version": 81,
+  "code": "A2.10",
+  "key": "a2-10",
+  "title": "It’s too far",
+  "goal": "Compare places using your needs and explain a trade-off",
+  "freeConversationInstruction": "Compare places, talk about what matters to you and explain choices without a fixed answer",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Think about a place you would enjoy staying",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What matters to you when you choose a place?",
+          "cue": "Name one need and one preference",
+          "hint": "I need … I’d like …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Describing a place",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-10-vocabulary81",
+        "alt": "Six illustrated situations for It’s too far",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A210-V81.0",
+          "label": "cheap",
+          "prompt": "",
+          "example": "This room is cheap for the area",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A210-FS81.0",
+          "audioText": "cheap. This room is cheap for the area."
+        },
+        {
+          "id": "A210-V81.1",
+          "label": "expensive",
+          "prompt": "",
+          "example": "That apartment is more expensive",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A210-FS81.1",
+          "audioText": "expensive. That apartment is more expensive."
+        },
+        {
+          "id": "A210-V81.2",
+          "label": "spacious",
+          "prompt": "",
+          "example": "The living room is spacious",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A210-FS81.2",
+          "audioText": "spacious. The living room is spacious."
+        },
+        {
+          "id": "A210-V81.3",
+          "label": "small",
+          "prompt": "",
+          "example": "This bedroom is too small for two beds",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A210-FS81.3",
+          "audioText": "small. This bedroom is too small for two beds."
+        },
+        {
+          "id": "A210-V81.4",
+          "label": "quiet",
+          "prompt": "",
+          "example": "We’d like a quiet room",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A210-FS81.4",
+          "audioText": "quiet. We’d like a quiet room."
+        },
+        {
+          "id": "A210-V81.5",
+          "label": "noisy",
+          "prompt": "",
+          "example": "The street is noisy at night",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A210-FS81.5",
+          "audioText": "noisy. The street is noisy at night."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "Comparing the options",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A210-D81.1",
+          "speaker": "Kim",
+          "text": "Which apartment do you think is better for our trip?",
+          "audioText": "Which apartment do you think is better for our trip?",
+          "translation": "Qual apartamento você acha melhor para a nossa viagem?"
+        },
+        {
+          "id": "A210-D81.2",
+          "speaker": "Ana",
+          "text": "A is more expensive, but it has two beds",
+          "audioText": "A is more expensive, but it has two beds.",
+          "translation": "O A é mais caro, mas tem duas camas"
+        },
+        {
+          "id": "A210-D81.3",
+          "speaker": "Kim",
+          "text": "B is cheaper. Is one bed enough for two friends?",
+          "audioText": "B is cheaper. Is one bed enough for two friends?",
+          "translation": "O B é mais barato. Uma cama é suficiente para duas amigas?"
+        },
+        {
+          "id": "A210-D81.4",
+          "speaker": "Ana",
+          "text": "Not for me. I’d like my own bed, and A is closer to the centre",
+          "audioText": "Not for me. I’d like my own bed, and A is closer to the centre.",
+          "translation": "Para mim, não. Quero minha própria cama, e o A é mais perto do centro"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Why does Ana first prefer A?",
+          "cue": "Give two reasons",
+          "hint": "It has … and it’s …",
+          "answer": "It has two beds and it’s closer to the centre"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Agreeing a priority",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A210-D81.5",
+          "speaker": "Kim",
+          "text": "That’s true. B is a twenty-minute walk away",
+          "audioText": "That’s true. B is a twenty-minute walk away.",
+          "translation": "É verdade. O B fica a vinte minutos a pé"
+        },
+        {
+          "id": "A210-D81.6",
+          "speaker": "Ana",
+          "text": "For this short trip, that’s too far for me. What matters most to you?",
+          "audioText": "For this short trip, that’s too far for me. What matters most to you?",
+          "translation": "Para esta viagem curta, é longe demais para mim. O que mais importa para você?"
+        },
+        {
+          "id": "A210-D81.7",
+          "speaker": "Kim",
+          "text": "The price, but I can pay more if we both have a bed",
+          "audioText": "The price, but I can pay more if we both have a bed.",
+          "translation": "O preço, mas posso pagar mais se cada uma tiver uma cama"
+        },
+        {
+          "id": "A210-D81.8",
+          "speaker": "Ana",
+          "text": "Then let’s choose A and check whether it’s quiet at night",
+          "audioText": "Then let’s choose A and check whether it’s quiet at night.",
+          "translation": "Então vamos escolher o A e conferir se é silencioso à noite"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What do they still need to check?",
+          "cue": "Name the unanswered question",
+          "hint": "Whether …",
+          "answer": "Whether A is quiet at night"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Compare two places to stay",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Compare the option with the need",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Compare two options",
+          "verb": "adjective-er / more + adjective + than",
+          "example": "B is cheaper than A. A is more expensive"
+        },
+        {
+          "id": "1",
+          "subject": "More than you want",
+          "verb": "too + adjective",
+          "example": "Twenty minutes is too far for this trip"
+        },
+        {
+          "id": "2",
+          "subject": "Enough for the need",
+          "verb": "adjective + enough / enough + noun",
+          "example": "Is it quiet enough? Are there enough beds?"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Choose our place",
+      "instruction": "Compare the two places and tell me which works better",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "A detail about the noise",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! I asked about apartment A. There’s a busy road outside, and it can be noisy at night. The price, two beds and distance are the same. Apartment B is on a quiet street. I still want my own bed, but I also need to sleep well. Does this change your choice? We could ask A about a quieter room before we book",
+      "audioText": "Hi, Ana! I asked about apartment A. There’s a busy road outside, and it can be noisy at night. The price, two beds and distance are the same. Apartment B is on a quiet street. I still want my own bed, but I also need to sleep well. Does this change your choice? We could ask A about a quieter room before we book.",
+      "audioId": "A210-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "Does the new detail change your choice?",
+          "cue": "Use the message and your priorities to explain your decision",
+          "hint": "Yes, because … / No, because …",
+          "answer": "There is no fixed answer: weigh the new noise information against beds, distance and budget"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Reconsider before booking",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Compare places using your needs and explain a trade-off"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "comparison",
+      "title": "Two friends · separate beds preferred · budget is flexible",
+      "options": [
+        {
+          "id": "A",
+          "title": "Apartment A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": " $80 per night"
+            },
+            {
+              "id": "1",
+              "label": "Beds",
+              "value": "Two"
+            },
+            {
+              "id": "2",
+              "label": "Walk to the centre",
+              "value": "Five minutes"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "A",
+              "label": "Apartment A",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Apartment B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": "$65 per night"
+            },
+            {
+              "id": "1",
+              "label": "Beds",
+              "value": "One"
+            },
+            {
+              "id": "2",
+              "label": "Walk to the centre",
+              "value": "Twenty minutes"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "B",
+              "label": "Apartment B",
+              "index": 3
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "stay",
+          "prompt": "Which apartment works better?",
+          "cue": "Compare two criteria and ask what matters to me",
+          "hint": "A is … than B. Is … enough for you?",
+          "answer": "One possible response"
+        }
+      ],
+      "image": "a2-10-vocabulary81"
+    },
+    "s_reply": {
+      "type": "comparison",
+      "title": "Same prices and beds · new noise information",
+      "options": [
+        {
+          "id": "A",
+          "title": "Apartment A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price and beds",
+              "value": "$80 · two beds"
+            },
+            {
+              "id": "1",
+              "label": "Distance",
+              "value": "Five minutes"
+            },
+            {
+              "id": "2",
+              "label": "New detail",
+              "value": "Busy road · can be noisy at night"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "A",
+              "label": "Apartment A",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Apartment B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price and beds",
+              "value": "$65 · one bed"
+            },
+            {
+              "id": "1",
+              "label": "Distance",
+              "value": "Twenty minutes"
+            },
+            {
+              "id": "2",
+              "label": "New detail",
+              "value": "Quiet street"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "B",
+              "label": "Apartment B",
+              "index": 3
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": "revise",
+          "prompt": "Does this change your choice?",
+          "cue": "Explain the trade-off or ask what you still need to know",
+          "hint": "I’d still choose … because … / Is there a quieter …?",
+          "answer": "One possible response"
+        }
+      ],
+      "image": "a2-10-vocabulary81"
+    },
+    "s_personal": {
+      "type": "choices",
+      "title": "Situation reference",
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "Which apartment works better for you?",
+          "cue": "Choose using a criterion that matters to you",
+          "hint": "I’d choose … because it’s …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What’s the problem with the other one?",
+          "cue": "Explain one limitation using the information shown",
+          "hint": "It’s too … / It isn’t … enough",
+          "answer": "One possible response"
+        }
+      ],
+      "options": [
+        {
+          "id": "A",
+          "title": "Apartment A",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": " $80 per night"
+            },
+            {
+              "id": "1",
+              "label": "Beds",
+              "value": "Two"
+            },
+            {
+              "id": "2",
+              "label": "Walk to the centre",
+              "value": "Five minutes"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "A",
+              "label": "Apartment A",
+              "index": 2
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Apartment B",
+          "facts": [
+            {
+              "id": "0",
+              "label": "Price",
+              "value": "$65 per night"
+            },
+            {
+              "id": "1",
+              "label": "Beds",
+              "value": "One"
+            },
+            {
+              "id": "2",
+              "label": "Walk to the centre",
+              "value": "Twenty minutes"
+            }
+          ],
+          "pictures": [
+            {
+              "id": "B",
+              "label": "Apartment B",
+              "index": 3
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

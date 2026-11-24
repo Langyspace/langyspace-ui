@@ -1,0 +1,455 @@
+{
+  "version": 81,
+  "code": "B2.09",
+  "key": "b2-09",
+  "title": "I don’t remember locking the door",
+  "goal": "Distinguish a remembered action from an uncompleted task and give clear instructions",
+  "freeConversationInstruction": "Talk about routines, memory and how you give clear instructions when you cannot be there",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall a clear request passed to another person",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "What information helps them act correctly?",
+          "cue": "Give the action and its condition",
+          "hint": "Could you …? If …, please …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Before leaving home",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "b2-09-vocabulary81",
+        "alt": "Six illustrated situations for I don’t remember locking the door",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "B209-V81.0",
+          "label": "lock the door",
+          "prompt": "",
+          "example": "I don’t remember locking the door",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "B209-FS81.0",
+          "audioText": "lock the door. I don’t remember locking the door."
+        },
+        {
+          "id": "B209-V81.1",
+          "label": "turn off the stove",
+          "prompt": "",
+          "example": "I remember turning off the stove",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "B209-FS81.1",
+          "audioText": "turn off the stove. I remember turning off the stove."
+        },
+        {
+          "id": "B209-V81.2",
+          "label": "unplug the iron",
+          "prompt": "",
+          "example": "Did you remember to unplug the iron?",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "B209-FS81.2",
+          "audioText": "unplug the iron. Did you remember to unplug the iron?"
+        },
+        {
+          "id": "B209-V81.3",
+          "label": "close the window",
+          "prompt": "",
+          "example": "Please close the window if it’s open",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "B209-FS81.3",
+          "audioText": "close the window. Please close the window if it’s open."
+        },
+        {
+          "id": "B209-V81.4",
+          "label": "water the plants",
+          "prompt": "",
+          "example": "Wait before you water the plants",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "B209-FS81.4",
+          "audioText": "water the plants. Wait before you water the plants."
+        },
+        {
+          "id": "B209-V81.5",
+          "label": "leave a spare key",
+          "prompt": "",
+          "example": "I left a spare key with a trusted friend",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "B209-FS81.5",
+          "audioText": "leave a spare key. I left a spare key with a trusted friend."
+        }
+      ]
+    },
+    {
+      "id": "s_source0",
+      "kind": "source",
+      "title": "Read the situation",
+      "instruction": "Read for the facts and the different priorities",
+      "minutes": 3,
+      "eyebrow": "Reading",
+      "author": "Scenario briefing · fictional",
+      "subject": "I don’t remember locking the door",
+      "paragraphs": [
+        "Fictional leaving-home card: person remembers switching off stove and unplugging iron; does not remember locking door or closing window. Friend has authorised spare key access. Learner asks the friend to check states and act only on a clear instruction. Plant-watering timing is undecided."
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "What do you actually remember?",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 1/3",
+      "lines": [
+        {
+          "id": "B209-D81.1",
+          "speaker": "Kim",
+          "text": "I’m on my way, but I don’t remember locking the door",
+          "audioText": "I’m on my way, but I don’t remember locking the door.",
+          "translation": "Estou a caminho, mas não me lembro de trancar a porta"
+        },
+        {
+          "id": "B209-D81.2",
+          "speaker": "Ana",
+          "text": "You left a spare key with me. Would you like me to check?",
+          "audioText": "You left a spare key with me. Would you like me to check?",
+          "translation": "Você deixou uma chave reserva comigo. Quer que eu confira?"
+        },
+        {
+          "id": "B209-D81.3",
+          "speaker": "Kim",
+          "text": "Yes, please. I remember turning off the stove, but I was distracted at the door",
+          "audioText": "Yes, please. I remember turning off the stove, but I was distracted at the door.",
+          "translation": "Sim, por favor. Lembro de desligar o fogão, mas me distraí na porta"
+        },
+        {
+          "id": "B209-D81.4",
+          "speaker": "Ana",
+          "text": "Did you remember to unplug the iron as well?",
+          "audioText": "Did you remember to unplug the iron as well?",
+          "translation": "Você lembrou de tirar o ferro da tomada também?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Which actions does Ana remember?",
+          "cue": "Use the memories she actually states",
+          "hint": "She remembers …",
+          "answer": "Switching off the stove and unplugging the iron"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "A specific checking request",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/3",
+      "lines": [
+        {
+          "id": "B209-D81.5",
+          "speaker": "Kim",
+          "text": "I did. I can picture putting it away. The window is less clear in my memory",
+          "audioText": "I did. I can picture putting it away. The window is less clear in my memory.",
+          "translation": "Sim. Consigo me lembrar de guardá-lo. A janela está menos clara na minha memória"
+        },
+        {
+          "id": "B209-D81.6",
+          "speaker": "Ana",
+          "text": "All right. I’ll check the door and window, rather than assuming they’re open",
+          "audioText": "All right. I’ll check the door and window, rather than assuming they’re open.",
+          "translation": "Tudo bem. Vou conferir porta e janela em vez de presumir que estão abertas"
+        },
+        {
+          "id": "B209-D81.7",
+          "speaker": "Kim",
+          "text": "If the window is open, please close it. The plants can stay where they are",
+          "audioText": "If the window is open, please close it. The plants can stay where they are.",
+          "translation": "Se a janela estiver aberta, feche, por favor. As plantas podem ficar onde estão"
+        },
+        {
+          "id": "B209-D81.8",
+          "speaker": "Ana",
+          "text": "Do you want me to water them while I’m there?",
+          "audioText": "Do you want me to water them while I’m there?",
+          "translation": "Quer que eu as regue quando estiver lá?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "What should happen if the window is open?",
+          "cue": "Repeat the conditional instruction",
+          "hint": "Please …",
+          "answer": "Close it"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue3",
+      "kind": "dialogue",
+      "title": "Don’t assume the remaining instruction",
+      "instruction": "Listen for the problem, the response and the next step",
+      "minutes": 2,
+      "eyebrow": "Guided conversation · 3/3",
+      "lines": [
+        {
+          "id": "B209-D81.9",
+          "speaker": "Kim",
+          "text": "Let me think about the day first. I don’t want you to do it twice unnecessarily",
+          "audioText": "Let me think about the day first. I don’t want you to do it twice unnecessarily.",
+          "translation": "Deixe-me pensar no dia primeiro. Não quero que você faça duas vezes sem necessidade"
+        },
+        {
+          "id": "B209-D81.10",
+          "speaker": "Ana",
+          "text": "I’ll send you a clear update after checking, and wait for that instruction",
+          "audioText": "I’ll send you a clear update after checking, and wait for that instruction.",
+          "translation": "Vou enviar uma atualização clara depois de conferir e esperar essa instrução"
+        },
+        {
+          "id": "B209-D81.11",
+          "speaker": "Kim",
+          "text": "Thanks. Please say what you’ve checked, not just that everything looks fine",
+          "audioText": "Thanks. Please say what you’ve checked, not just that everything looks fine.",
+          "translation": "Obrigada. Diga o que conferiu, não só que tudo parece bem"
+        },
+        {
+          "id": "B209-D81.12",
+          "speaker": "Ana",
+          "text": "Of course. Then we’ll know what’s done and what still needs a decision",
+          "audioText": "Of course. Then we’ll know what’s done and what still needs a decision.",
+          "translation": "Claro. Assim saberemos o que foi feito e o que ainda precisa de decisão"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d2",
+          "prompt": "Why doesn’t Kim water immediately?",
+          "cue": "Identify the unresolved choice",
+          "hint": "Because …",
+          "answer": "Because the timing has not been decided"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "activity",
+      "title": "Reconstruct your last steps",
+      "instruction": "Use the case to explain your view and ask a follow-up question",
+      "minutes": 3,
+      "eyebrow": "Discuss the situation"
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "Remember the action, or remember the task?",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "A memory of an action",
+          "verb": "remember + -ing",
+          "example": "I remember turning off the stove"
+        },
+        {
+          "id": "1",
+          "subject": "Not forget a task",
+          "verb": "remember + to + verb",
+          "example": "Did you remember to unplug the iron?"
+        },
+        {
+          "id": "2",
+          "subject": "A task that wasn’t completed",
+          "verb": "forget + to + verb",
+          "example": "I forgot to close the window; please check it"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Check the house for me",
+      "instruction": "Ask me to check the house and tell me what to do",
+      "minutes": 6,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "Checked, done and still undecided",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana. I’ve checked the flat. The door is locked, the stove is off, and the iron is unplugged. The window was open, so I’ve closed it as you asked. I haven’t watered the plants yet because you wanted to decide the timing first. Would you like me to water them today or come back on Saturday? I can do either. Please send that one instruction when you have a moment. Everything else on the list has been checked, so there’s no need to ask me to repeat the whole routine",
+      "audioText": "Hi, Ana. I’ve checked the flat. The door is locked, the stove is off, and the iron is unplugged. The window was open, so I’ve closed it as you asked. I haven’t watered the plants yet because you wanted to decide the timing first. Would you like me to water them today or come back on Saturday? I can do either. Please send that one instruction when you have a moment. Everything else on the list has been checked, so there’s no need to ask me to repeat the whole routine.",
+      "audioId": "B209-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "What still needs a decision?",
+          "cue": "Distinguish completed checks from the unresolved point",
+          "hint": "She’s already …, but she needs to know whether …",
+          "answer": "The plant-watering day still needs a decision; the other checks are complete"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Give only the remaining instruction",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 3,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 2,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Distinguish a remembered action from an uncompleted task and give clear instructions"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "facts",
+      "title": "Memory is not a completed check",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Remembered",
+          "value": "Stove off · iron put away"
+        },
+        {
+          "id": "1",
+          "label": "Uncertain",
+          "value": "Door lock · window"
+        },
+        {
+          "id": "2",
+          "label": "Authorised request",
+          "value": "Check; close window if open"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What do you need your friend to check?",
+          "cue": "Separate a memory from uncertainty and give an if-needed instruction",
+          "hint": "I remember …, but not … Could you check whether …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "The friend’s completed checks",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Confirmed",
+          "value": "Door locked · stove off · iron unplugged"
+        },
+        {
+          "id": "1",
+          "label": "Action completed",
+          "value": "Window closed"
+        },
+        {
+          "id": "2",
+          "label": "Awaiting instruction",
+          "value": "Plants · today or Saturday?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "task",
+          "prompt": "What still needs your decision?",
+          "cue": "Acknowledge the completed checks and choose the watering day without repeating the list",
+          "hint": "Thanks for … Please … on … There’s no need to …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_personal": {
+      "type": "facts",
+      "title": "Situation reference",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Remembered",
+          "value": "Stove off · iron put away"
+        },
+        {
+          "id": "1",
+          "label": "Uncertain",
+          "value": "Door lock · window"
+        },
+        {
+          "id": "2",
+          "label": "Authorised request",
+          "value": "Check; close window if open"
+        }
+      ],
+      "questions": [
+        {
+          "id": "0",
+          "prompt": "What do you remember doing before leaving?",
+          "cue": "Separate a memory from something you are unsure about",
+          "hint": "I remember …, but I don’t remember …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What do you need the other person to check?",
+          "cue": "Give a clear request and explain what to do if needed",
+          "hint": "Could you check whether …? If …, please …",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

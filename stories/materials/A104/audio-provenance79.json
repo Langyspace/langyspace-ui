@@ -1,0 +1,609 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "items": [
+    {
+      "material": "A104",
+      "id": "FE79.0",
+      "text": "I wake up at seven.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "RbXPae8FBWw7Ixs0ZCl5",
+      "synthesisInput": "I wake up at seven.",
+      "requestBody": {
+        "text": "I wake up at seven.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "RbXPae8FBWw7Ixs0ZCl5",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 21776,
+      "sha256": "2d5c27359f07ddcde8b90580b960878b1bac13c50de9e96189b5bfc4b396ccd8",
+      "durationSeconds": 1.300317
+    },
+    {
+      "material": "A104",
+      "id": "V79.0",
+      "text": "wake up",
+      "speaker": "Ana",
+      "file": "assets/audio/V79.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Yciu9psh4QbxZjbabmpm",
+      "synthesisInput": "wake up",
+      "requestBody": {
+        "text": "wake up",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Yciu9psh4QbxZjbabmpm",
+        "character-cost": "3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 14253,
+      "sha256": "6e5a4252170ad0b325f33ea82df4032cba2db114553a9ae24bd2e08a5498742b",
+      "durationSeconds": 0.835918
+    },
+    {
+      "material": "A104",
+      "id": "FE79.1",
+      "text": "I have breakfast in the morning.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "p4NZ8zwBRwvWrZ6TejmE",
+      "synthesisInput": "I have breakfast in the morning.",
+      "requestBody": {
+        "text": "I have breakfast in the morning.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "p4NZ8zwBRwvWrZ6TejmE",
+        "character-cost": "13",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 28464,
+      "sha256": "a3ffac4a7b78950bd35789cb0ade820c05edb8c0033b77e0eba0f01ea7ed80c9",
+      "durationSeconds": 1.718277
+    },
+    {
+      "material": "A104",
+      "id": "V79.1",
+      "text": "have breakfast",
+      "speaker": "Ana",
+      "file": "assets/audio/V79.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "pc77nzih5zyMNB8614qo",
+      "synthesisInput": "have breakfast",
+      "requestBody": {
+        "text": "have breakfast",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "pc77nzih5zyMNB8614qo",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 19687,
+      "sha256": "d4939874b045db15d634fba48e126a7ddd23547c35472016dd3675ae31294934",
+      "durationSeconds": 1.160998
+    },
+    {
+      "material": "A104",
+      "id": "FE79.2",
+      "text": "I work in the afternoon.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "o8WdpjxavzuqW5EwEk8H",
+      "synthesisInput": "I work in the afternoon.",
+      "requestBody": {
+        "text": "I work in the afternoon.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "o8WdpjxavzuqW5EwEk8H",
+        "character-cost": "10",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 25538,
+      "sha256": "41fb77baf5915cfd26edf9d1f43050d53ebe5d8b9f6e9b7b6cede1e69a814826",
+      "durationSeconds": 1.532517
+    },
+    {
+      "material": "A104",
+      "id": "FE79.3",
+      "text": "I study after work.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "9gYX7nlJN5IPgbZLkQ8s",
+      "synthesisInput": "I study after work.",
+      "requestBody": {
+        "text": "I study after work.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "9gYX7nlJN5IPgbZLkQ8s",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 19687,
+      "sha256": "2f902fe43ffb49e839e1ca47178c82f01949cedbf729fa26380af8ad3f37fe65",
+      "durationSeconds": 1.160998
+    },
+    {
+      "material": "A104",
+      "id": "FE79.4",
+      "text": "I go to the gym on Tuesday.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Ki07P9P6FLfhMxoR4Gkf",
+      "synthesisInput": "I go to the gym on Tuesday.",
+      "requestBody": {
+        "text": "I go to the gym on Tuesday.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Ki07P9P6FLfhMxoR4Gkf",
+        "character-cost": "11",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 28464,
+      "sha256": "25dff1ddf3034da20f961d6327d2788ab3e6bbb9b745b5efdea21f488a3a2536",
+      "durationSeconds": 1.718277
+    },
+    {
+      "material": "A104",
+      "id": "FE79.5",
+      "text": "I go to bed at ten.",
+      "speaker": "Ana",
+      "file": "assets/audio/FE79.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "2vWdIg3jiwe2jR1uMNbf",
+      "synthesisInput": "I go to bed at ten.",
+      "requestBody": {
+        "text": "I go to bed at ten.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "2vWdIg3jiwe2jR1uMNbf",
+        "character-cost": "8",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 22612,
+      "sha256": "c02941d0a61fe414548f83b92f52195c9d2fc5e92daa87b3b639100f1fcd79cf",
+      "durationSeconds": 1.346757
+    },
+    {
+      "material": "A104",
+      "id": "V79.5",
+      "text": "go to bed",
+      "speaker": "Ana",
+      "file": "assets/audio/V79.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "97dKt1S8XN3JSyIC0kwP",
+      "synthesisInput": "go to bed",
+      "requestBody": {
+        "text": "go to bed",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "97dKt1S8XN3JSyIC0kwP",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15089,
+      "sha256": "ee2e80b5d161bcccc672ab0f4ce032aecbae8d9d012d6976107abce26474ab89",
+      "durationSeconds": 0.882358
+    },
+    {
+      "material": "A104",
+      "id": "L79.1",
+      "text": "I’m not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let’s go to the gym then. We can meet there. Please tell me if Friday is good for you",
+      "speaker": "Kim",
+      "file": "assets/audio/L79.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "ezzdN8TnQRoFaCF0No7e",
+      "synthesisInput": "I'm not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let's go to the gym then. We can meet there. Please tell me if Friday is good for you",
+      "requestBody": {
+        "text": "I'm not free on Thursday evening. I work until eight. Are you free on Friday at seven? Let's go to the gym then. We can meet there. Please tell me if Friday is good for you",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "ezzdN8TnQRoFaCF0No7e",
+        "character-cost": "69",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 190632,
+      "sha256": "9599e6479f857d177613b13016e92912650180076dbafbacd3e39f3817a9b908",
+      "durationSeconds": 11.842177
+    },
+    {
+      "material": "A104",
+      "id": "FS79.0",
+      "text": "wake up. I wake up at seven.",
+      "file": "assets/audio/FS79.0.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["Yciu9psh4QbxZjbabmpm", "RbXPae8FBWw7Ixs0ZCl5"],
+      "sources": [
+        {
+          "leadingQuietFrames": 2420,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8918,
+          "sourceSha256": "6e5a4252170ad0b325f33ea82df4032cba2db114553a9ae24bd2e08a5498742b"
+        },
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8058,
+          "sourceSha256": "2d5c27359f07ddcde8b90580b960878b1bac13c50de9e96189b5bfc4b396ccd8"
+        }
+      ],
+      "insertedSilenceFrames": 11249,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 33061,
+      "sha256": "cdb6edd66c7fe823a4096c9f6c8c6b056f2d5333200d0413095cadb8c3047ce8",
+      "durationSeconds": 2.006372
+    },
+    {
+      "material": "A104",
+      "id": "FS79.1",
+      "text": "have breakfast. I have breakfast in the morning.",
+      "file": "assets/audio/FS79.1.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["pc77nzih5zyMNB8614qo", "p4NZ8zwBRwvWrZ6TejmE"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7854,
+          "sourceSha256": "d4939874b045db15d634fba48e126a7ddd23547c35472016dd3675ae31294934"
+        },
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11310,
+          "sourceSha256": "a3ffac4a7b78950bd35789cb0ade820c05edb8c0033b77e0eba0f01ea7ed80c9"
+        }
+      ],
+      "insertedSilenceFrames": 11249,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 44346,
+      "sha256": "a1221475ae6d5dec7a866d9d8e7b2184955017fdde83f4ad9e26bc162885e478",
+      "durationSeconds": 2.699796
+    },
+    {
+      "material": "A104",
+      "id": "FS79.2",
+      "text": "work. I work in the afternoon.",
+      "file": "assets/audio/FS79.2.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["gYJssWqg1JjMeaLwijkB", "o8WdpjxavzuqW5EwEk8H"],
+      "sources": [
+        {
+          "leadingQuietFrames": 1320,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7902,
+          "sourceSha256": "1521546e152fd9d027fbfbe760cc197a17e164eac499b56e0efc4bb8bfa76652"
+        },
+        {
+          "leadingQuietFrames": 1100,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 9498,
+          "sourceSha256": "41fb77baf5915cfd26edf9d1f43050d53ebe5d8b9f6e9b7b6cede1e69a814826"
+        }
+      ],
+      "insertedSilenceFrames": 11689,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 35569,
+      "sha256": "51a5427715de42424d321ed39dd7fe395a97351e7fc6dba4901bfba1c44fbbb2",
+      "durationSeconds": 2.146054
+    },
+    {
+      "material": "A104",
+      "id": "FS79.3",
+      "text": "study. I study after work.",
+      "file": "assets/audio/FS79.3.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["AQTGhkFzHYIIBTr0FOj2", "9gYX7nlJN5IPgbZLkQ8s"],
+      "sources": [
+        {
+          "leadingQuietFrames": 0,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 5246,
+          "sourceSha256": "7e54da46f1ca2f9cdcebf49fbb748ba47b6d808a34496e926ad82ff940466d5c"
+        },
+        {
+          "leadingQuietFrames": 1540,
+          "trailingQuietFrames": 3020,
+          "trimStartFrames": 0,
+          "trimEndFrames": 0,
+          "sourceSha256": "2f902fe43ffb49e839e1ca47178c82f01949cedbf729fa26380af8ad3f37fe65"
+        }
+      ],
+      "insertedSilenceFrames": 11249,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 35987,
+      "sha256": "8fa5d5744d08a46d3cb88877a7fb9204190a0455911c79c60a17c203fdef87bd",
+      "durationSeconds": 2.179478
+    },
+    {
+      "material": "A104",
+      "id": "FS79.4",
+      "text": "go to the gym. I go to the gym on Tuesday.",
+      "file": "assets/audio/FS79.4.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["Hx0GesxmwdaepvtfDW2j", "Ki07P9P6FLfhMxoR4Gkf"],
+      "sources": [
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 7870,
+          "sourceSha256": "f3406588c240e0b4d7f64af2d65fa385f26ad8582d5a8c82087300b46d7befe4"
+        },
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 11090,
+          "sourceSha256": "25dff1ddf3034da20f961d6327d2788ab3e6bbb9b745b5efdea21f488a3a2536"
+        }
+      ],
+      "insertedSilenceFrames": 9709,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 41421,
+      "sha256": "b20ecf70f7e1cb8968b6d3f1b24361aded64b9f4a80f99ab220ec150ba423416",
+      "durationSeconds": 2.530181
+    },
+    {
+      "material": "A104",
+      "id": "FS79.5",
+      "text": "go to bed. I go to bed at ten.",
+      "file": "assets/audio/FS79.5.mp3",
+      "provider": "elevenlabs",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "requestId": null,
+      "sourceRequestIds": ["97dKt1S8XN3JSyIC0kwP", "2vWdIg3jiwe2jR1uMNbf"],
+      "sources": [
+        {
+          "leadingQuietFrames": 3080,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 8326,
+          "sourceSha256": "ee2e80b5d161bcccc672ab0f4ce032aecbae8d9d012d6976107abce26474ab89"
+        },
+        {
+          "leadingQuietFrames": 1980,
+          "trailingQuietFrames": 2646,
+          "trimStartFrames": 0,
+          "trimEndFrames": 10546,
+          "sourceSha256": "c02941d0a61fe414548f83b92f52195c9d2fc5e92daa87b3b639100f1fcd79cf"
+        }
+      ],
+      "insertedSilenceFrames": 10809,
+      "boundaryQuietMilliseconds": 350.0,
+      "phonemeInteriorsModified": false,
+      "bytes": 33897,
+      "sha256": "a031fe76e181913e3a60c79e11313c6bcb804c0ae40f00397c94b4fb2ffaa384",
+      "durationSeconds": 2.046281
+    }
+  ],
+  "review": "Provider receipts and PCM composition metadata; no perceptual approval claimed"
+}

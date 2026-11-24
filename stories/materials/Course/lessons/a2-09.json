@@ -1,0 +1,374 @@
+{
+  "version": 81,
+  "code": "A2.09",
+  "key": "a2-09",
+  "title": "Long time no see!",
+  "goal": "Talk about changes using a starting point or duration",
+  "freeConversationInstruction": "Catch up on changes in your lives and ask about what has stayed the same",
+  "freeConversationMinutes": 10,
+  "pages": [
+    {
+      "id": "s1",
+      "kind": "questions",
+      "title": "Bring one idea back",
+      "instruction": "Recall how experience and a finished date differ",
+      "minutes": 2,
+      "eyebrow": "Review",
+      "items": [
+        {
+          "id": "review",
+          "prompt": "Have you ever tried a new hobby?",
+          "cue": "Give an experience and say when it started",
+          "hint": "I’ve … I started in …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "kind": "scene-vocabulary",
+      "title": "Changes in life",
+      "instruction": "Describe each picture, then click to check and hear an example",
+      "minutes": 5,
+      "eyebrow": "Vocabulary",
+      "image": {
+        "src": "a2-09-vocabulary81",
+        "alt": "Six illustrated situations for Long time no see!",
+        "aspectRatio": 1.5
+      },
+      "hotspots": [
+        {
+          "id": "A209-V81.0",
+          "label": "move to a new city",
+          "prompt": "",
+          "example": "She moved to a new city in 2023",
+          "xPercent": 20,
+          "yPercent": 46,
+          "audioId": "A209-FS81.0",
+          "audioText": "move to a new city. She moved to a new city in 2023."
+        },
+        {
+          "id": "A209-V81.1",
+          "label": "start a job",
+          "prompt": "",
+          "example": "He started a job last month",
+          "xPercent": 50,
+          "yPercent": 46,
+          "audioId": "A209-FS81.1",
+          "audioText": "start a job. He started a job last month."
+        },
+        {
+          "id": "A209-V81.2",
+          "label": "finish a course",
+          "prompt": "",
+          "example": "I’ve finished an online course",
+          "xPercent": 80,
+          "yPercent": 46,
+          "audioId": "A209-FS81.2",
+          "audioText": "finish a course. I’ve finished an online course."
+        },
+        {
+          "id": "A209-V81.3",
+          "label": "get married",
+          "prompt": "",
+          "example": "They got married in June",
+          "xPercent": 20,
+          "yPercent": 88,
+          "audioId": "A209-FS81.3",
+          "audioText": "get married. They got married in June."
+        },
+        {
+          "id": "A209-V81.4",
+          "label": "have a baby",
+          "prompt": "",
+          "example": "My friend had a baby last year",
+          "xPercent": 50,
+          "yPercent": 88,
+          "audioId": "A209-FS81.4",
+          "audioText": "have a baby. My friend had a baby last year."
+        },
+        {
+          "id": "A209-V81.5",
+          "label": "take up a hobby",
+          "prompt": "",
+          "example": "I’ve taken up a new hobby",
+          "xPercent": 80,
+          "yPercent": 88,
+          "audioId": "A209-FS81.5",
+          "audioText": "take up a hobby. I’ve taken up a new hobby."
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue1",
+      "kind": "dialogue",
+      "title": "A fictional catch-up",
+      "instruction": "These are role cards, not new facts about Ana’s life",
+      "minutes": 4,
+      "eyebrow": "Guided conversation · 1/2",
+      "lines": [
+        {
+          "id": "A209-D81.1",
+          "speaker": "Kim",
+          "text": "Long time no see! Are you still living in the same city?",
+          "audioText": "Long time no see! Are you still living in the same city?",
+          "translation": "Quanto tempo! Você ainda mora na mesma cidade?"
+        },
+        {
+          "id": "A209-D81.2",
+          "speaker": "Ana",
+          "text": "No, I moved to Porto in 2023",
+          "audioText": "No, I moved to Porto in 2023.",
+          "translation": "Não, eu me mudei para o Porto em 2023"
+        },
+        {
+          "id": "A209-D81.3",
+          "speaker": "Kim",
+          "text": "How long have you lived there?",
+          "audioText": "How long have you lived there?",
+          "translation": "Há quanto tempo você mora lá?"
+        },
+        {
+          "id": "A209-D81.4",
+          "speaker": "Ana",
+          "text": "Since 2023. I really like it, and I’ve made some good friends",
+          "audioText": "Since 2023. I really like it, and I’ve made some good friends.",
+          "translation": "Desde 2023. Gosto muito de lá e fiz bons amigos"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d0",
+          "prompt": "Does the person still live in Porto?",
+          "cue": "Connect the past starting point with now",
+          "hint": "Yes, … since …",
+          "answer": "Yes, they’ve lived there since 2023"
+        }
+      ]
+    },
+    {
+      "id": "s_dialogue2",
+      "kind": "dialogue",
+      "title": "Changes and things that continue",
+      "instruction": "These are role cards, not new facts about Ana’s life",
+      "minutes": 3,
+      "eyebrow": "Guided conversation · 2/2",
+      "lines": [
+        {
+          "id": "A209-D81.5",
+          "speaker": "Kim",
+          "text": "That’s great. Have you taken up any new hobbies?",
+          "audioText": "That’s great. Have you taken up any new hobbies?",
+          "translation": "Que bom. Você começou algum hobby novo?"
+        },
+        {
+          "id": "A209-D81.6",
+          "speaker": "Ana",
+          "text": "Yes, I started a photography group in 2025",
+          "audioText": "Yes, I started a photography group in 2025.",
+          "translation": "Sim, comecei um grupo de fotografia em 2025"
+        },
+        {
+          "id": "A209-D81.7",
+          "speaker": "Kim",
+          "text": "Do you still go every week?",
+          "audioText": "Do you still go every week?",
+          "translation": "Você ainda vai toda semana?"
+        },
+        {
+          "id": "A209-D81.8",
+          "speaker": "Ana",
+          "text": "I do. We meet on Sundays. What’s changed in your life?",
+          "audioText": "I do. We meet on Sundays. What’s changed in your life?",
+          "translation": "Sim. Nos encontramos aos domingos. O que mudou na sua vida?"
+        }
+      ],
+      "questions": [
+        {
+          "id": "d1",
+          "prompt": "Is photography a new or continuing activity now?",
+          "cue": "Use the starting year and current routine",
+          "hint": "They started … and still …",
+          "answer": "They started in 2025 and still go on Sundays"
+        }
+      ]
+    },
+    {
+      "id": "s_personal",
+      "kind": "questions",
+      "title": "Catch up after a long time",
+      "instruction": "Answer in your own way and ask your teacher a follow-up question",
+      "minutes": 4,
+      "eyebrow": "Your turn",
+      "items": [
+        {
+          "id": "0",
+          "prompt": "How long have you lived in your city?",
+          "cue": "Say a duration or a starting year",
+          "hint": "I’ve lived here for … / since …",
+          "answer": "One possible response"
+        },
+        {
+          "id": "1",
+          "prompt": "What has changed in your life recently?",
+          "cue": "Choose a change you are comfortable sharing",
+          "hint": "I’ve … I … in …",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    {
+      "id": "s_grammar",
+      "kind": "grammar",
+      "title": "A duration, a starting point or a finished date",
+      "instruction": "Connect the meaning, the form and the example",
+      "minutes": 3,
+      "eyebrow": "Grammar",
+      "layout": "patterns",
+      "columns": {
+        "subject": "Use",
+        "verb": "Form",
+        "example": "Pattern and example"
+      },
+      "rows": [
+        {
+          "id": "0",
+          "subject": "Duration up to now",
+          "verb": "for + length of time",
+          "example": "I’ve lived here for three years"
+        },
+        {
+          "id": "1",
+          "subject": "Starting point up to now",
+          "verb": "since + starting point",
+          "example": "I’ve lived here since 2023"
+        },
+        {
+          "id": "2",
+          "subject": "A finished change and date",
+          "verb": "past simple + in",
+          "example": "I moved here in 2023"
+        }
+      ]
+    },
+    {
+      "id": "s_mission",
+      "kind": "activity",
+      "title": "Catch up after a long time",
+      "instruction": "Choose a change and tell me what is different now",
+      "minutes": 7,
+      "eyebrow": "Speaking task"
+    },
+    {
+      "id": "s_listening",
+      "kind": "listening",
+      "title": "An update to the profile",
+      "instruction": "Listen for the new information and decide how to respond",
+      "minutes": 5,
+      "eyebrow": "Listening",
+      "message": "Hi, Ana! Here’s the update for our fictional profile. I moved to Porto in 2023, and I’ve lived here since then. I started the photography group in 2025, and I still go on Sundays. I haven’t changed jobs, but I’ve finished an online course. I’m really enjoying the city now. What would you like to ask about my new routine?",
+      "audioText": "Hi, Ana! Here’s the update for our fictional profile. I moved to Porto in 2023, and I’ve lived here since then. I started the photography group in 2025, and I still go on Sundays. I haven’t changed jobs, but I’ve finished an online course. I’m really enjoying the city now. What would you like to ask about my new routine?",
+      "audioId": "A209-L81.1",
+      "greeting": "I have an update for you!",
+      "items": [
+        {
+          "id": "listen",
+          "prompt": "How long has she been there?",
+          "cue": "Use the starting point or duration stated in the message",
+          "hint": "She’s been there since … / for …",
+          "answer": "She’s been there since 2023"
+        }
+      ],
+      "greetingTimestamp": "10:00",
+      "voiceTimestamp": "10:01"
+    },
+    {
+      "id": "s_reply",
+      "kind": "activity",
+      "title": "Continue the catch-up",
+      "instruction": "Use the message to update your response and agree on the next step",
+      "minutes": 4,
+      "eyebrow": "Your turn"
+    },
+    {
+      "id": "s_homework",
+      "kind": "homework",
+      "title": "Before next class",
+      "instruction": "Practise a useful exchange and bring one question",
+      "minutes": 3,
+      "eyebrow": "Practice",
+      "tasks": [
+        {
+          "title": "Use it again",
+          "description": "Talk about changes using a starting point or duration"
+        },
+        {
+          "title": "Ask and respond",
+          "description": "Record a short exchange using your own details or the example case. Prepare one follow-up question for your teacher"
+        }
+      ]
+    }
+  ],
+  "activities": {
+    "s_mission": {
+      "type": "timeline",
+      "title": "Fictional profile · starting points",
+      "facts": [
+        {
+          "id": "0",
+          "label": "2023",
+          "value": "Moved to Porto · still lives there"
+        },
+        {
+          "id": "1",
+          "label": "2025",
+          "value": "Joined a photography group · still attends"
+        },
+        {
+          "id": "2",
+          "label": "Now",
+          "value": "Same job · finished an online course"
+        }
+      ],
+      "questions": [
+        {
+          "id": "change",
+          "prompt": "What has changed for this person?",
+          "cue": "Use since with the visible starting dates. Ask one follow-up",
+          "hint": "They’ve … since … When did they …?",
+          "answer": "One possible response"
+        }
+      ]
+    },
+    "s_reply": {
+      "type": "facts",
+      "title": "Changed and unchanged",
+      "facts": [
+        {
+          "id": "0",
+          "label": "Home",
+          "value": "Porto · since 2023"
+        },
+        {
+          "id": "1",
+          "label": "New achievement",
+          "value": "Finished an online course"
+        },
+        {
+          "id": "2",
+          "label": "Still the same",
+          "value": "Job · Sunday photography group"
+        }
+      ],
+      "questions": [
+        {
+          "id": "follow",
+          "prompt": "What would you ask next?",
+          "cue": "Choose the change you want to hear more about",
+          "hint": "How long have you …? When did you …? What was … like?",
+          "answer": "One possible response"
+        }
+      ]
+    }
+  }
+}

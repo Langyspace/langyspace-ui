@@ -2,7 +2,7 @@ import type {
   VoiceMessageExerciseProps,
   VoiceMessageQuestion,
 } from '../../../src/components/VoiceMessage/VoiceMessageExercise.types'
-import kim from './assets/kim.png'
+import { kim } from '../../materials/shared/characterPortraits'
 import source from './assets/kim-demo.mp3'
 
 export const contact = { name: 'Kim', avatarUrl: kim, status: 'online' }
@@ -42,8 +42,8 @@ export const questions: readonly VoiceMessageQuestion[] = [
 ]
 export const initial: VoiceMessageExerciseProps = {
   contact,
+  greeting: { text: 'Hi! How are you?', timestamp: '19:40' },
   audio,
   questions,
-  greeting: { text: 'Hi! 👋', timestamp: '19:40' },
   onAnswer: () => undefined,
 }

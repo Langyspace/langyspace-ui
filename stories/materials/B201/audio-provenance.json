@@ -1,0 +1,218 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "languageCode": "en",
+  "outputFormat": "mp3_44100_128",
+  "voices": {
+    "ana": {
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "name": "Jessica - Playful, Bright, Warm"
+    },
+    "kim": {
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "name": "Sarah Explains"
+    },
+    "leo": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "name": "Chris - Charming, Down-to-Earth"
+    },
+    "jun": {
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "name": "Matilda - Knowledgable, Professional"
+    },
+    "raj": {
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "name": "Chris - Charming, Down-to-Earth",
+      "basis": "No prior Raj ElevenLabs configuration found; uses established warm male Chris actor, as allowed by final voiceDirection."
+    }
+  },
+  "lesson": "B201",
+  "artifactUrl": "78b4c8a1-20f3-4724-9667-25dd900dff45",
+  "requestPath": "/Users/margaridamartins/Documents/Codex/2026-11-18/new-chat-3/outputs/course-b201-20261119/audio-request.json",
+  "requestSha256": "943e944f756fab309db6abed6ba0106374e12b206758689c10ea4c9cf05e1b6e",
+  "textStatus": "FINAL_FROZEN_FOR_AUDIO",
+  "items": [
+    {
+      "id": "b201-raj-message",
+      "character": "raj",
+      "type": "listening_voice_message",
+      "text": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "textSha256": "18dbd63c88520167e29e309dce551ed71037c0d94570a45875b247cde1317dd2",
+      "file": "assets/b201-raj-message.mp3",
+      "generationStatus": "ready",
+      "currentProvider": "macOS speech Eddy",
+      "voiceId": "iP95p4xoKVk53GoZ742B",
+      "synthesisFingerprint": "8cca8995c2f140c9840db7d126e7a0b70ebfb0efbf6341ca072fc612f77e4450",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "Hi Ana, it’s Raj. It’s seven twenty. We’d been waiting for you at the door for fifteen minutes, so we got a table. I’ve called you three times, but no answer! Sarah thinks you got lost in Times Square. The food here is pretty good, so we ordered a pizza for you. You need a power bank, Ana! Call me when you get this, or just come straight to the restaurant, OK?",
+      "durationSeconds": 21.362358,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 342769,
+      "sha256": "8b5fc957593029708987fac2966b98d053e3eb2300f7c8875e75cdefda260207",
+      "requestId": "u1CewrC9oTK1HZnPOdub",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 2.025,
+      "generatedAt": "2026-11-19T01:37:33.217793+00:00"
+    },
+    {
+      "id": "b201-pair-0-0",
+      "character": "ana",
+      "type": "minimal_pair",
+      "text": "I’d walked",
+      "textSha256": "19a87b828dd3ae691ab7bfbc4277969140397bc2f9a4a9c335a5923c32c7a6e1",
+      "file": "assets/b201-pair-0-0.mp3",
+      "generationStatus": "ready",
+      "currentProvider": "browserTTS",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "3d8600c3b73ba128227ac210dca003b791f5b1c5986bc1f2c1badff233a96297",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "I’d walked",
+      "durationSeconds": 0.975238,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 16761,
+      "sha256": "93ce3c6820e20d1f037be5af6457d39586b01ae10be0698983cf890d67651e0e",
+      "requestId": "m9A9wBwBjIyUMXqEn2Vm",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 1.091,
+      "generatedAt": "2026-11-19T01:37:32.285578+00:00"
+    },
+    {
+      "id": "b201-pair-0-1",
+      "character": "ana",
+      "type": "minimal_pair",
+      "text": "I’d been walking",
+      "textSha256": "2f9e1240abb7d42dbd9094ed3278143439d2ba1df15838b8186e01d59fbbe67e",
+      "file": "assets/b201-pair-0-1.mp3",
+      "generationStatus": "ready",
+      "currentProvider": "browserTTS",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "113b955d24f753771a889473c686eae7b8b750fdccd531f16f71c2f326999319",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "I’d been walking",
+      "durationSeconds": 1.253878,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 20941,
+      "sha256": "57580cafc2a0a1d51cba324ca5430e33e38b992c0f60abdce18cff0aca9b1ad0",
+      "requestId": "R3kgCIc4e78DTkI9iJ6M",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.455,
+      "generatedAt": "2026-11-19T01:37:32.740793+00:00"
+    },
+    {
+      "id": "b201-pair-1-0",
+      "character": "ana",
+      "type": "minimal_pair",
+      "text": "I’ve been waiting",
+      "textSha256": "63452ba716c6d46e807551b162d8f83b77819d281230ad118ea99cf105ae91a4",
+      "file": "assets/b201-pair-1-0.mp3",
+      "generationStatus": "ready",
+      "currentProvider": "browserTTS",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "533601d3a36308ecc7f8b7f3a185c7e1548169130cc1d528963374a252e65bbc",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "I’ve been waiting",
+      "durationSeconds": 1.021678,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 17597,
+      "sha256": "c58814e22306ee33ce394dfdae22da1fbd0c439c9fea3dc8084ac84d72d49679",
+      "requestId": "SVQCbfQcNXOHu2X5ndKE",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.458,
+      "generatedAt": "2026-11-19T01:37:33.198994+00:00"
+    },
+    {
+      "id": "b201-pair-1-1",
+      "character": "ana",
+      "type": "minimal_pair",
+      "text": "I’d been waiting",
+      "textSha256": "beb90eeb4896ce227ea120ba443c960ee13defface88707ed86f2494e54c5c9b",
+      "file": "assets/b201-pair-1-1.mp3",
+      "generationStatus": "ready",
+      "currentProvider": "browserTTS",
+      "voiceId": "cgSgspJ2msm6clMCkdW9",
+      "synthesisFingerprint": "fa34c5ff146b12e6f03b0bc771b29c3599bc14b9b69f9cfb2e878725d081b486",
+      "cacheHit": null,
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "synthesisInput": "I’d been waiting",
+      "durationSeconds": 1.114558,
+      "sampleRate": 44100,
+      "channels": 1,
+      "bytes": 18851,
+      "sha256": "d200e06fb67d28676d3f1be965f5cfef38289db64870d97dcb4a850f9686d91d",
+      "requestId": "PTuvDtE4sZIlW6AnNB9u",
+      "cacheDisposition": "generated",
+      "generationElapsedSeconds": 0.767,
+      "generatedAt": "2026-11-19T01:37:33.966826+00:00"
+    }
+  ],
+  "verification": {
+    "expected": 5,
+    "complete": 5,
+    "pending": [],
+    "checkedAt": "2026-11-19T01:37:33.966852+00:00"
+  },
+  "supersededDemo": {
+    "file": "assets/raj-demo.mp3",
+    "sha256": "58861fa62f16f1f8ee23a21c341924c0368c2399361d1baecb75d14b409cf37e",
+    "durationSeconds": 25.975147,
+    "source": "exact new twelve-page B2.01 Markdown P9 listening transcript; snapshotted plan hash in B201.content.json",
+    "method": "Local macOS speech synthesis, Eddy (English (US)),180 words/minute; ffmpeg pitch-preserving duration adjustment to26 seconds and MP3 96k. Demonstration synthetic speech, not a human recording; no recorded restaurant ambience.",
+    "reusableTransport": "Native HTMLAudioElement via VoiceMessageExercise; replace src from the content producer for publication."
+  },
+  "durationSeconds": 21.362358
+}

@@ -1,0 +1,176 @@
+{
+  "revision": "EXP-C1-C2-INTRODUCTIONS73",
+  "title": "Work and life",
+  "level": "C1 / C2",
+  "minutes": 19,
+  "reviewScope": [
+    "cover",
+    "introduce-yourself",
+    "s2",
+    "s3",
+    "free-conversation",
+    "next-steps"
+  ],
+  "vocabulary": {
+    "id": "s2",
+    "title": "Work beyond the clock",
+    "subtitle": "Explore each situation. Click to reveal an expression and listen",
+    "items": [
+      {
+        "id": "V.0",
+        "sceneId": "snowed-under",
+        "word": "be snowed under",
+        "example": "I’m snowed under with deadlines this week",
+        "translation": "estar sobrecarregada",
+        "imageAlt": "Ana facing piles of unfinished work at her desk",
+        "audioText": "be snowed under. I’m snowed under with deadlines this week"
+      },
+      {
+        "id": "V.1",
+        "sceneId": "spill-over",
+        "word": "spill over into",
+        "example": "Work has started to spill over into my evenings",
+        "translation": "invadir ou se estender para outro espaço ou momento",
+        "imageAlt": "Ana still working at the dining table in the evening",
+        "audioText": "spill over into. Work has started to spill over into my evenings"
+      },
+      {
+        "id": "V.2",
+        "sceneId": "push-back",
+        "word": "push back",
+        "example": "She pushed back against the expectation of being available all weekend",
+        "translation": "contestar ou resistir a uma exigência",
+        "imageAlt": "Kim calmly challenging a request during a meeting",
+        "audioText": "push back. She pushed back against the expectation of being available all weekend"
+      },
+      {
+        "id": "V.3",
+        "sceneId": "take-a-toll",
+        "word": "take a toll",
+        "example": "Constant interruptions can take a toll on your concentration",
+        "translation": "causar desgaste ou consequências negativas",
+        "imageAlt": "Kim looking tired after a demanding workday",
+        "audioText": "take a toll. Constant interruptions can take a toll on your concentration"
+      },
+      {
+        "id": "V.4",
+        "sceneId": "switch-off",
+        "word": "switch off",
+        "example": "It takes me a while to switch off after work",
+        "translation": "desligar-se mentalmente do trabalho",
+        "imageAlt": "Ana relaxing with a book while her work laptop stays closed",
+        "audioText": "switch off. It takes me a while to switch off after work"
+      },
+      {
+        "id": "V.5",
+        "sceneId": "trade-off",
+        "word": "a trade-off",
+        "example": "There’s a trade-off between flexibility and predictability",
+        "translation": "uma escolha que envolve abrir mão de um benefício por outro",
+        "imageAlt": "Two work settings contrasting quiet focus and social collaboration",
+        "audioText": "a trade-off. There’s a trade-off between flexibility and predictability"
+      }
+    ]
+  },
+  "dialogue": {
+    "id": "s3",
+    "title": "Always available?",
+    "subtitle": "Listen and read with your teacher, then examine the views in the conversation",
+    "lines": [
+      {
+        "id": "D.1",
+        "who": "Kim",
+        "en": "Has working from home actually given you more freedom?",
+        "pt": "Trabalhar de casa realmente te deu mais liberdade?"
+      },
+      {
+        "id": "D.2",
+        "who": "Ana",
+        "en": "In theory, yes. In practice, I’m snowed under, and work spills over into the evening",
+        "pt": "Na teoria, sim. Na prática, estou sobrecarregada, e o trabalho invade a noite"
+      },
+      {
+        "id": "D.3",
+        "who": "Kim",
+        "en": "So flexibility comes at a price. Could clearer boundaries help?",
+        "pt": "Então a flexibilidade tem um custo. Limites mais claros poderiam ajudar?"
+      },
+      {
+        "id": "D.4",
+        "who": "Ana",
+        "en": "They would, but constant availability has become the norm. It’s hard to push back",
+        "pt": "Ajudariam, mas estar sempre disponível virou o padrão. É difícil contestar isso"
+      },
+      {
+        "id": "D.5",
+        "who": "Kim",
+        "en": "I can see why. Still, blurred boundaries can take a toll, even if you enjoy the work",
+        "pt": "Entendo o motivo. Ainda assim, limites pouco claros podem causar desgaste, mesmo que você goste do trabalho"
+      },
+      {
+        "id": "D.6",
+        "who": "Ana",
+        "en": "I struggle to switch off, so I mute notifications after six, except for genuine emergencies",
+        "pt": "Tenho dificuldade para me desligar, então silencio as notificações depois das seis, exceto em emergências reais"
+      },
+      {
+        "id": "D.7",
+        "who": "Kim",
+        "en": "That’s a trade-off. But does being available really mean you’re doing good work?",
+        "pt": "Essa escolha tem seus custos. Mas estar disponível realmente significa que você está fazendo um bom trabalho?"
+      },
+      {
+        "id": "D.8",
+        "who": "Ana",
+        "en": "Not necessarily. I’d rather agree on expectations than treat quick replies as commitment",
+        "pt": "Não necessariamente. Prefiro combinar as expectativas em vez de tratar respostas rápidas como comprometimento"
+      }
+    ],
+    "questions": [
+      {
+        "id": "freedom",
+        "prompt": "Why hasn’t flexibility translated into more free time for Ana?",
+        "answer": "Work spills into the evening, and constant availability has become expected"
+      },
+      {
+        "id": "boundary",
+        "prompt": "What boundary has Ana introduced, and what exception does she allow?",
+        "answer": "She mutes notifications after six, except for genuine emergencies"
+      },
+      {
+        "id": "assumption",
+        "prompt": "What assumption about commitment do they challenge?",
+        "answer": "That quick replies or constant availability prove someone is doing good work"
+      }
+    ]
+  },
+  "freeConversationInstruction": "Discuss work-life boundaries with your teacher. Explore trade-offs and challenge each other’s assumptions",
+  "introduction": {
+    "title": "Introduce yourself",
+    "instruction": "Have a relaxed chat with your teacher. Share a little about yourself and get to know each other",
+    "prompts": [
+      {
+        "id": "your-day",
+        "introduceTeacher": true,
+        "question": "Good to meet you! How’s your day going?",
+        "cue": "Introduce yourself, share a small detail about your day and ask back",
+        "hint": "“Pretty good, thanks” / “Not bad” / “It’s been a bit of a day”. Add one real detail, then ask back",
+        "model": "Hi, I’m … Not bad, thanks — I’ve just … How’s your day been?"
+      },
+      {
+        "id": "these-days",
+        "question": "So, what keeps you busy these days?",
+        "cue": "Share a little about your life at the moment and keep the chat going",
+        "hint": "“I’m based in…” / “Lately, I’ve been…”. One or two details are enough; use “How about you?”",
+        "model": "I’m based in …, and lately I’ve been … That’s been keeping me busy. How about you?"
+      },
+      {
+        "id": "time-to-yourself",
+        "question": "And when you get a bit of time to yourself, what do you get up to?",
+        "cue": "Talk about an interest and invite your teacher to share hers",
+        "hint": "“I’ve been getting into…” / “I’m a bit of a…”. Pick what sounds like you; ask a genuine follow-up",
+        "model": "I’ve been getting into … lately. How about you — anything you’ve been enjoying?"
+      }
+    ]
+  }
+}

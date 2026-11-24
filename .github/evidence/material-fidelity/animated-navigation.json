@@ -1,0 +1,440 @@
+{
+  "baselineHookSha256": "2b457acdf3194c74844fc22051f526ce6cfb2bee2d8d8be10452f61cc91b5e06",
+  "correctedHookSha256": "78dc134d2388a4a4e515095c6a971a8ac8ce3a21a73bc11a9929fbe8228ba5cf",
+  "motion": "no-preference/native smooth",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "steps": [
+    "ArrowRight",
+    "notes/edit/Escape",
+    "reload/resume",
+    "notes/persist/Clear/Escape",
+    "End"
+  ],
+  "beforeFailed": 5,
+  "afterPassed": 10,
+  "cases": [
+    {
+      "material": "a2-01",
+      "cpuRate": 1,
+      "before": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2061.399999976158,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2454.099999964237,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "a1-01",
+      "cpuRate": 1,
+      "before": {
+        "reachedEnd": false,
+        "scrollRequests": [
+          {
+            "top": 18000,
+            "behavior": "smooth"
+          },
+          {
+            "top": 5760,
+            "behavior": "smooth"
+          },
+          {
+            "top": 6480,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 1546.9000000357628,
+          "top": 6480,
+          "height": 720,
+          "total": 18720,
+          "active": "s52"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 18000,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2089.800000011921,
+          "top": 18000,
+          "height": 720,
+          "total": 18720,
+          "active": "s13"
+        }
+      }
+    },
+    {
+      "material": "b1-01",
+      "cpuRate": 1,
+      "before": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2446.699999988079,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2462.699999988079,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "b2-01",
+      "cpuRate": 1,
+      "before": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11583,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2029.4000000357628,
+          "top": 11583,
+          "height": 720,
+          "total": 12303,
+          "active": "s12"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11583,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2460,
+          "top": 11583,
+          "height": 720,
+          "total": 12303,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "trial-a1-a2",
+      "cpuRate": 1,
+      "before": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 5040,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2061.5,
+          "top": 5040,
+          "height": 720,
+          "total": 5760,
+          "active": "s6"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 5040,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2065.5,
+          "top": 5040,
+          "height": 720,
+          "total": 5760,
+          "active": "s6"
+        }
+      }
+    },
+    {
+      "material": "a2-01",
+      "cpuRate": 4,
+      "before": {
+        "reachedEnd": false,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          },
+          {
+            "top": 2880,
+            "behavior": "smooth"
+          },
+          {
+            "top": 3600,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2388.199999988079,
+          "top": 3600,
+          "height": 720,
+          "total": 12240,
+          "active": "s4"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2708.800000011921,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "a1-01",
+      "cpuRate": 4,
+      "before": {
+        "reachedEnd": false,
+        "scrollRequests": [
+          {
+            "top": 18000,
+            "behavior": "smooth"
+          },
+          {
+            "top": 6480,
+            "behavior": "smooth"
+          },
+          {
+            "top": 7920,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 3213.2999999523163,
+          "top": 7920,
+          "height": 720,
+          "total": 18720,
+          "active": "s54"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 18000,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2875.800000011921,
+          "top": 18000,
+          "height": 720,
+          "total": 18720,
+          "active": "s13"
+        }
+      }
+    },
+    {
+      "material": "b1-01",
+      "cpuRate": 4,
+      "before": {
+        "reachedEnd": false,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          },
+          {
+            "top": 3600,
+            "behavior": "smooth"
+          },
+          {
+            "top": 4320,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2996.7999999523163,
+          "top": 4320,
+          "height": 720,
+          "total": 12240,
+          "active": "s51"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11520,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2942.600000023842,
+          "top": 11520,
+          "height": 720,
+          "total": 12240,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "b2-01",
+      "cpuRate": 4,
+      "before": {
+        "reachedEnd": false,
+        "scrollRequests": [
+          {
+            "top": 11583,
+            "behavior": "smooth"
+          },
+          {
+            "top": 3600,
+            "behavior": "smooth"
+          },
+          {
+            "top": 4320,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2680.900000035763,
+          "top": 4320,
+          "height": 720,
+          "total": 12303,
+          "active": "s51"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 11583,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 3204.7000000476837,
+          "top": 11583,
+          "height": 720,
+          "total": 12303,
+          "active": "s12"
+        }
+      }
+    },
+    {
+      "material": "trial-a1-a2",
+      "cpuRate": 4,
+      "before": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 5040,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 1804.300000011921,
+          "top": 5040,
+          "height": 720,
+          "total": 5760,
+          "active": "s6"
+        }
+      },
+      "after": {
+        "reachedEnd": true,
+        "scrollRequests": [
+          {
+            "top": 5040,
+            "behavior": "smooth"
+          }
+        ],
+        "finalGeometry": {
+          "type": "scrollend",
+          "at": 2739.400000035763,
+          "top": 5040,
+          "height": 720,
+          "total": 5760,
+          "active": "s6"
+        }
+      }
+    }
+  ]
+}

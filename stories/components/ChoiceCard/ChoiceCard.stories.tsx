@@ -17,3 +17,17 @@ export const Default: Story = {}
 export const Unselected: Story = { args: { 'aria-pressed': false } }
 
 export const Disabled: Story = { args: { disabled: true } }
+export const Lesson: Story = {
+  args: { variant: 'lesson', children: 'I like music.', 'aria-pressed': false },
+}
+export const LessonSelected: Story = {
+  args: { variant: 'lesson', children: 'I like music.' },
+}
+export const LessonDisabled: Story = {
+  args: {
+    variant: 'lesson',
+    disabled: true,
+    'aria-pressed': false,
+    children: 'I like music.',
+  },
+}
