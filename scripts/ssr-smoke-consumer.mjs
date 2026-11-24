@@ -23,6 +23,15 @@ for (const [name, props] of [
     },
   ],
   ['ExercisePanel', { title: 'Example' }],
+  [
+    'PracticePair',
+    {
+      items: [
+        { id: 'words', label: 'Flashcards', content: 'banana' },
+        { id: 'speech', label: 'Shadowing', content: 'Do you like mangoes?' },
+      ],
+    },
+  ],
   ['VocabularyGrid', { items: [], revealedIds: [], onReveal() {} }],
   ['LearningDialogue', { lines: [] }],
   ['RevealCard', { children: 'Prompt', answer: 'Answer', revealed: false }],
