@@ -318,3 +318,12 @@ Aulas regulares encerram com a capa e uma orientação curta à esquerda, e duas
 Shadowing usa personagens recorrentes com nome, retrato circular e variedade de inglês. A distribuição curricular é 42 conjuntos US e18 de outras variedades (GB5,IE4,AU4,IN3,ZA2). O alvo70/30 conta atividades; registrar separadamente a duração falada real. Não inferir nacionalidade, capacidade ou personalidade pelo sotaque. Reutilizar gravações válidas com sua voz; nunca deixar o backend substituir um áudio de curso pela voz padrão. Timestamps são alinhamento técnico, não avaliação humana de pronúncia.
 
 Preservar o prompt de ilustração v1.8 literalmente. Separar fatos dos personagens de papéis temporários em simulações. Exemplos e glosas precisam de revisão contextual: borrow não é lend, glasses pode ser óculos, square pode ser praça e eventually não significa eventualmente. Não duplicar histórico de atividades antigas para uma nova atividade contextual.
+
+## Quiz de dever: gramática ensinada na aula — revisão86
+
+- O Quiz de dever avalia a forma e o uso gramatical ensinados naquela aula. Conferir a tabela/construções realmente renderizadas, além do plano; nível ou tema do título não bastam. Cada questão registra a origem do alvo. Não acrescentar estruturas novas só porque pertencem ao mesmo nível
+- Preferir duas realizações da mesma mensagem: uma construção correta e um erro plausível de auxiliar, concordância, ordem, tempo/aspecto, complemento ou conector. A tarefa é escolher como escrever/falar, não localizar uma frase copiada do enunciado
+- Não usar opções de assuntos diferentes, definição de palavra ou paráfrase do texto como substituto de gramática. Compreensão continua sendo uma atividade própria na aula
+- Se o contraste for de sentido entre duas formas válidas, o contexto precisa excluir uma leitura sem ambiguidade; não chamar uma forma válida de errada apenas por preferência estilística. Não tratar linguagem informal ou uma variedade aceita como erro universal
+- Seis questões por conjunto com variação dentro dos objetivos realmente trabalhados, sem completar quantidade com regras inéditas. Reutilizar léxico e situação da aula; adaptar extensão e complexidade ao nível
+- Após responder, mostrar regra curta e construção corrigida. A explicação não entrega a resposta antes da tentativa. Equilibrar a posição da resposta certa e manter a prévia alinhada ao mesmo item do Student, sem uma abreviação que remova o contraste avaliado

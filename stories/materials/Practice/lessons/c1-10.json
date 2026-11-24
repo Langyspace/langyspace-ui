@@ -8,169 +8,154 @@
     "questions": [
       {
         "id": "course-c1-10-q01",
-        "context": "An internal notice tells staff about a planned system outage on Tuesday, 18:00–19:00",
-        "prompt": "Which opening is clearest?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The booking system will be unavailable on Tuesday from 18:00 to 19:00"
+            "text": "I’m writing to let you know"
           },
           {
             "id": "b",
-            "text": "There may be some developments relating to availability soon"
+            "text": "I’m writing to letting you know"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Put the specific service, date and time before background detail"
+            "title": "That’s right",
+            "message": "A purpose infinitive uses to + base verb. Correct: I’m writing to let you know"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Put the specific service, date and time before background detail"
+            "title": "Check the grammar",
+            "message": "A purpose infinitive uses to + base verb. Correct: I’m writing to let you know"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Name the system, date and time"
-          },
-          {
-            "id": "b",
-            "text": "Refer vaguely to changes soon"
-          }
-        ]
+        }
       },
       {
         "id": "course-c1-10-q02",
-        "context": "Staff must save their work before the outage begins",
-        "prompt": "Which instruction makes the action explicit?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Please consider any relevant preparations at a suitable point"
+            "text": "Just to let you know, the date has changed"
           },
           {
             "id": "b",
-            "text": "Please save your work before 18:00 on Tuesday"
+            "text": "Just to let you knowing, the date has changed"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A concrete action and deadline reduce ambiguity"
+            "title": "That’s right",
+            "message": "Use let + person + base verb: let you know. Correct: Just to let you know, the date has changed"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A concrete action and deadline reduce ambiguity"
+            "title": "Check the grammar",
+            "message": "Use let + person + base verb: let you know. Correct: Just to let you know, the date has changed"
           }
         }
       },
       {
         "id": "course-c1-10-q03",
-        "context": "The outage affects bookings but not live lessons",
-        "prompt": "Which sentence prevents unnecessary concern?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "All teaching operations may be affected in unspecified ways"
+            "text": "Please confirm whether can you attend"
           },
           {
             "id": "b",
-            "text": "Live lessons will continue; only new bookings will be unavailable during that hour"
+            "text": "Please confirm whether you can attend"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "State the actual scope rather than implying wider disruption"
+            "title": "That’s right",
+            "message": "A request containing whether keeps subject + modal order. Correct: Please confirm whether you can attend"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "State the actual scope rather than implying wider disruption"
+            "title": "Check the grammar",
+            "message": "A request containing whether keeps subject + modal order. Correct: Please confirm whether you can attend"
           }
         }
       },
       {
         "id": "course-c1-10-q04",
-        "context": "You’re writing to colleagues, not marketing to customers",
-        "prompt": "Which tone fits a routine service notice?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "We’re updating the system. Here’s what you need to do"
+            "text": "I’m writing to let you to know about the change"
           },
           {
             "id": "b",
-            "text": "Discover a revolutionary disruption to your booking journey"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "A service notice benefits from direct, practical language"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "A service notice benefits from direct, practical language"
-          }
-        }
-      },
-      {
-        "id": "course-c1-10-q05",
-        "context": "The reopening time is an estimate, not a guarantee",
-        "prompt": "Which wording preserves that distinction?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Service is guaranteed at 19:00 regardless of the work"
-          },
-          {
-            "id": "b",
-            "text": "We expect service to resume at 19:00 and will post an update if that changes"
+            "text": "I’m writing to let you know about the change"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Label the estimate and explain how changes will be communicated"
+            "title": "That’s right",
+            "message": "The first to marks purpose; after let you, use know without another to. Correct: I’m writing to let you know about the change"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Label the estimate and explain how changes will be communicated"
+            "title": "Check the grammar",
+            "message": "The first to marks purpose; after let you, use know without another to. Correct: I’m writing to let you know about the change"
+          }
+        }
+      },
+      {
+        "id": "course-c1-10-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Quick update: the dates we agreed on has changed"
+          },
+          {
+            "id": "b",
+            "text": "Quick update: the dates we agreed on have changed"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Have agrees with the plural dates, even with a relative clause in between. Correct: Quick update: the dates we agreed on have changed"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Have agrees with the plural dates, even with a relative clause in between. Correct: Quick update: the dates we agreed on have changed"
           }
         }
       },
       {
         "id": "course-c1-10-q06",
-        "context": "The draft contains three paragraphs of background before the required action",
-        "prompt": "Which revision improves usability?",
+        "prompt": "Choose the form for a reply deadline",
         "options": [
           {
             "id": "a",
-            "text": "Move the action and deadline to the start, then add concise background"
+            "text": "Please confirm by Friday"
           },
           {
             "id": "b",
-            "text": "Add another introductory paragraph to delay the instruction"
+            "text": "Please confirm until Friday"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Readers should be able to find what they need to do quickly"
+            "title": "That’s right",
+            "message": "By introduces the latest time for one reply; until describes continuation. Correct: Please confirm by Friday"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Readers should be able to find what they need to do quickly"
+            "title": "Check the grammar",
+            "message": "By introduces the latest time for one reply; until describes continuation. Correct: Please confirm by Friday"
           }
-        }
+        },
+        "context": "You need one confirmation no later than Friday"
       }
     ]
   },

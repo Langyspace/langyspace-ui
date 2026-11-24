@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-c1-12-q01",
-        "context": "In a fictional town survey, 62% of respondents prefer card payments; cash users were harder to reach",
-        "prompt": "Which interpretation is appropriately qualified?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Exactly 62% of all residents oppose cash in every situation"
+            "text": "According to the report, access is limited"
           },
           {
             "id": "b",
-            "text": "Card preference was common among respondents, but the sample may underrepresent cash users"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The sampling limitation restricts the population-level claim"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The sampling limitation restricts the population-level claim"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "A universal rejection of cash"
-          },
-          {
-            "id": "b",
-            "text": "A preference within a limited sample"
-          }
-        ]
-      },
-      {
-        "id": "course-c1-12-q02",
-        "context": "A shop cites faster queues as a reason to go cashless",
-        "prompt": "Which question tests the argument?",
-        "options": [
-          {
-            "id": "a",
-            "text": "What evidence links the payment change to shorter queues in this setting?"
-          },
-          {
-            "id": "b",
-            "text": "Can faster queues prove that every customer owns a bank card?"
+            "text": "According the report, access is limited"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Assess the claimed benefit rather than treating it as proof of unrelated access"
+            "title": "That’s right",
+            "message": "Keep to in the source phrase according to. Correct: According to the report, access is limited"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Assess the claimed benefit rather than treating it as proof of unrelated access"
+            "title": "Check the grammar",
+            "message": "Keep to in the source phrase according to. Correct: According to the report, access is limited"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The account suggests that fees may rise"
+          },
+          {
+            "id": "b",
+            "text": "The account suggests that fees to rise"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "A that-clause needs a finite verb phrase such as may rise. Correct: The account suggests that fees may rise"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "A that-clause needs a finite verb phrase such as may rise. Correct: The account suggests that fees may rise"
           }
         }
       },
       {
         "id": "course-c1-12-q03",
-        "context": "Zanele accepts the efficiency benefit but raises exclusion concerns",
-        "prompt": "Which reply engages with both?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The time saving matters; how would people without suitable accounts still pay?"
+            "text": "Although payment is digital, a fallback is needed"
           },
           {
             "id": "b",
-            "text": "Since it saves time, nobody can be excluded"
+            "text": "Although of payment is digital, a fallback is needed"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A benefit does not eliminate the need to address access"
+            "title": "That’s right",
+            "message": "Although directly introduces a concessive clause. Correct: Although payment is digital, a fallback is needed"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A benefit does not eliminate the need to address access"
+            "title": "Check the grammar",
+            "message": "Although directly introduces a concessive clause. Correct: Although payment is digital, a fallback is needed"
           }
         }
       },
       {
         "id": "course-c1-12-q04",
-        "context": "The proposal includes a cash option during network outages only",
-        "prompt": "Which concern remains unanswered?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Whether the shop has considered any contingency at all"
+            "text": "We can support it provided that cash to remain an option"
           },
           {
             "id": "b",
-            "text": "How customers who routinely rely on cash would pay on normal days"
+            "text": "We can support it provided that cash remains an option"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "An outage contingency does not address everyday access for cash-dependent customers"
+            "title": "That’s right",
+            "message": "A condition after provided that needs a finite clause. Correct: We can support it provided that cash remains an option"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "An outage contingency does not address everyday access for cash-dependent customers"
+            "title": "Check the grammar",
+            "message": "A condition after provided that needs a finite clause. Correct: We can support it provided that cash remains an option"
           }
         }
       },
       {
         "id": "course-c1-12-q05",
-        "context": "“Provided an accessible alternative is available, I’d support a trial”",
-        "prompt": "What is the speaker’s position?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Conditional support tied to an accessibility safeguard"
+            "text": "Digital-first needn’t means removing every alternative"
           },
           {
             "id": "b",
-            "text": "Unconditional support for removing every alternative"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Provided makes the safeguard a condition of support"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Provided makes the safeguard a condition of support"
-          }
-        }
-      },
-      {
-        "id": "course-c1-12-q06",
-        "context": "The pilot cuts transaction time but increases support requests",
-        "prompt": "Which conclusion reflects the mixed result?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Declare success using only the favourable measure"
-          },
-          {
-            "id": "b",
-            "text": "Assess whether the time saving outweighs the added support burden and who bears it"
+            "text": "Digital-first needn’t mean removing every alternative"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A balanced evaluation considers costs, benefits and their distribution"
+            "title": "That’s right",
+            "message": "After needn’t, use the base verb mean. Correct: Digital-first needn’t mean removing every alternative"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A balanced evaluation considers costs, benefits and their distribution"
+            "title": "Check the grammar",
+            "message": "After needn’t, use the base verb mean. Correct: Digital-first needn’t mean removing every alternative"
+          }
+        }
+      },
+      {
+        "id": "course-c1-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’d revise this if the fees would excluded more people"
+          },
+          {
+            "id": "b",
+            "text": "I’d revise this if the fees excluded more people"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use past simple in this hypothetical if-clause and would in the result. Correct: I’d revise this if the fees excluded more people"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use past simple in this hypothetical if-clause and would in the result. Correct: I’d revise this if the fees excluded more people"
           }
         }
       }

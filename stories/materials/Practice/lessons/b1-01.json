@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b1-01-q01",
-        "context": "Ana has been painting the room all morning. One wall is still unfinished",
-        "prompt": "Which sentence focuses on the activity so far?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She’s been painting all morning"
+            "text": "I’ve been paint"
           },
           {
             "id": "b",
-            "text": "She’s painted the whole room"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The activity is in progress; the room is not finished"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The activity is in progress; the room is not finished"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "She’s been painting all morning"
-          },
-          {
-            "id": "b",
-            "text": "She’s painted the whole room"
-          }
-        ]
-      },
-      {
-        "id": "course-b1-01-q02",
-        "context": "All four walls are now blue",
-        "prompt": "Which sentence clearly reports the finished result?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She’s been painting for a while"
-          },
-          {
-            "id": "b",
-            "text": "She’s painted all four walls"
+            "text": "I’ve been painting"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The number of completed walls makes the result explicit"
+            "title": "That’s right",
+            "message": "Use have been + verb-ing for the recent activity. Correct: I’ve been painting"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The number of completed walls makes the result explicit"
+            "title": "Check the grammar",
+            "message": "Use have been + verb-ing for the recent activity. Correct: I’ve been painting"
+          }
+        }
+      },
+      {
+        "id": "course-b1-01-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She has been cycling to work"
+          },
+          {
+            "id": "b",
+            "text": "She have been cycling to work"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use has with she, he and it. Correct: She has been cycling to work"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use has with she, he and it. Correct: She has been cycling to work"
           }
         }
       },
       {
         "id": "course-b1-01-q03",
-        "context": "Leo is tired after cycling to work all week",
-        "prompt": "Which question follows up on the experience?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "How many offices have you built?"
+            "text": "I’ve sent all three emails"
           },
           {
             "id": "b",
-            "text": "How has the journey been?"
+            "text": "I’ve send all three emails"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask about the repeated journey that explains his tiredness"
+            "title": "That’s right",
+            "message": "Use the past participle sent after have for a completed result. Correct: I’ve sent all three emails"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask about the repeated journey that explains his tiredness"
+            "title": "Check the grammar",
+            "message": "Use the past participle sent after have for a completed result. Correct: I’ve sent all three emails"
           }
         }
       },
       {
         "id": "course-b1-01-q04",
-        "context": "Kim says, “I’ve been learning to cook”",
-        "prompt": "Which reply naturally keeps the topic going?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "What have you tried making so far?"
+            "text": "How long have you been baking?"
           },
           {
             "id": "b",
-            "text": "When have you finished every recipe?"
+            "text": "How long you have been baking?"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask about real progress without assuming the learning is complete"
+            "title": "That’s right",
+            "message": "Put have before the subject in a direct question. Correct: How long have you been baking?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask about real progress without assuming the learning is complete"
+            "title": "Check the grammar",
+            "message": "Put have before the subject in a direct question. Correct: How long have you been baking?"
           }
         }
       },
       {
         "id": "course-b1-01-q05",
-        "context": "Ana has sent the three emails she needed to send",
-        "prompt": "Which update makes completion clear?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "I’ve been sending emails"
+            "text": "He’s been working here since a month"
           },
           {
             "id": "b",
-            "text": "I’ve sent all three emails"
+            "text": "He’s been working here for a month"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "All three reports a completed set of tasks"
+            "title": "That’s right",
+            "message": "Use for with a length of time; since introduces a starting point. Correct: He’s been working here for a month"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "All three reports a completed set of tasks"
+            "title": "Check the grammar",
+            "message": "Use for with a length of time; since introduces a starting point. Correct: He’s been working here for a month"
           }
         }
       },
       {
         "id": "course-b1-01-q06",
-        "context": "Leo says, “I’ve been cycling to work for a month”",
-        "prompt": "What does for a month describe?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The duration of the new routine"
+            "text": "I’ve been finished the room, but I’m still painting the hall"
           },
           {
             "id": "b",
-            "text": "The number of completed journeys"
+            "text": "I’ve finished the room, but I’m still painting the hall"
           }
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "For introduces the length of time, not a count"
+            "title": "That’s right",
+            "message": "Use have finished for the completed result and am painting for the ongoing activity. Correct: I’ve finished the room, but I’m still painting the hall"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "For introduces the length of time, not a count"
+            "title": "Check the grammar",
+            "message": "Use have finished for the completed result and am painting for the ongoing activity. Correct: I’ve finished the room, but I’m still painting the hall"
           }
         }
       }

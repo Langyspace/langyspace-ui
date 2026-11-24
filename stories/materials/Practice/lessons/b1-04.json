@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b1-04-q01",
-        "context": "The office lights are on, but nobody has checked who is inside",
-        "prompt": "Which conclusion stays within the evidence?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Someone might still be working"
+            "text": "It must to be Kim’s bag"
           },
           {
             "id": "b",
-            "text": "The manager must be working alone"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The lights suggest a possibility, not the identity of a person"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The lights suggest a possibility, not the identity of a person"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Someone might be working"
-          },
-          {
-            "id": "b",
-            "text": "The manager must be alone"
-          }
-        ]
-      },
-      {
-        "id": "course-b1-04-q02",
-        "context": "Kim says she saw Leo in the café five minutes ago",
-        "prompt": "Which response expresses strong confidence based on that report?",
-        "options": [
-          {
-            "id": "a",
-            "text": "He can’t be anywhere nearby"
-          },
-          {
-            "id": "b",
-            "text": "He must be nearby"
+            "text": "It must be Kim’s bag"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A recent sighting supports the deduction that he is nearby"
+            "title": "That’s right",
+            "message": "Use the base verb without to after must. Correct: It must be Kim’s bag"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A recent sighting supports the deduction that he is nearby"
+            "title": "Check the grammar",
+            "message": "Use the base verb without to after must. Correct: It must be Kim’s bag"
+          }
+        }
+      },
+      {
+        "id": "course-b1-04-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The pass might belongs to Leo"
+          },
+          {
+            "id": "b",
+            "text": "The pass might belong to Leo"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Do not add third-person -s after a modal. Correct: The pass might belong to Leo"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Do not add third-person -s after a modal. Correct: The pass might belong to Leo"
           }
         }
       },
       {
         "id": "course-b1-04-q03",
-        "context": "The café is closed and the owner confirms nobody is inside",
-        "prompt": "Which deduction fits?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Leo must be inside the café now"
+            "text": "It can’t is the bag she described"
           },
           {
             "id": "b",
-            "text": "Leo can’t be inside the café now"
+            "text": "It can’t be the bag she described"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The confirmed empty café rules out that location"
+            "title": "That’s right",
+            "message": "Use be after can’t, not is. Correct: It can’t be the bag she described"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The confirmed empty café rules out that location"
+            "title": "Check the grammar",
+            "message": "Use be after can’t, not is. Correct: It can’t be the bag she described"
           }
         }
       },
       {
         "id": "course-b1-04-q04",
-        "context": "Ana’s phone is off. You don’t know why",
-        "prompt": "Which reply avoids claiming too much?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Her battery might be flat"
+            "text": "Could this be your charger?"
           },
           {
             "id": "b",
-            "text": "Her battery must be flat"
+            "text": "Could this is your charger?"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Several explanations are possible"
+            "title": "That’s right",
+            "message": "Put the subject after could and use the base verb be. Correct: Could this be your charger?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Several explanations are possible"
+            "title": "Check the grammar",
+            "message": "Put the subject after could and use the base verb be. Correct: Could this be your charger?"
           }
         }
       },
       {
         "id": "course-b1-04-q05",
-        "context": "You hear footsteps upstairs in an otherwise quiet house",
-        "prompt": "Which question checks your idea?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Why is Kim definitely upstairs?"
+            "text": "The phone must need charging"
           },
           {
             "id": "b",
-            "text": "Could that be Kim upstairs?"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "A question can check an uncertain explanation"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "A question can check an uncertain explanation"
-          }
-        }
-      },
-      {
-        "id": "course-b1-04-q06",
-        "context": "Kim says, “That must be their new car”",
-        "prompt": "How certain does she sound?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She is drawing a strong conclusion"
-          },
-          {
-            "id": "b",
-            "text": "She is saying it is impossible"
+            "text": "The phone must needs charging"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Must expresses strong confidence in a deduction"
+            "title": "That’s right",
+            "message": "The verb after must stays in its base form. Correct: The phone must need charging"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Must expresses strong confidence in a deduction"
+            "title": "Check the grammar",
+            "message": "The verb after must stays in its base form. Correct: The phone must need charging"
+          }
+        }
+      },
+      {
+        "id": "course-b1-04-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The owner might be travelling"
+          },
+          {
+            "id": "b",
+            "text": "The owner might travelling"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Keep be before verb-ing after a modal. Correct: The owner might be travelling"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Keep be before verb-ing after a modal. Correct: The owner might be travelling"
           }
         }
       }

@@ -210,8 +210,8 @@ function PreparedView({
                       {selected ? (
                         <C.Hint role="status">
                           {selected === question.correctOptionId
-                            ? 'Exactly'
-                            : 'Check the context and try again in your practice'}
+                            ? question.feedback.correct.message
+                            : question.feedback.wrong.message}
                         </C.Hint>
                       ) : null}
                     </>

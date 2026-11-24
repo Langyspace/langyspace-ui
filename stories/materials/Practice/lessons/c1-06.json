@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-c1-06-q01",
-        "context": "A fictional pilot finds shorter meetings and higher satisfaction in the same team",
-        "prompt": "Which conclusion is justified by that observation alone?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The changes coincide; causation has not been established"
+            "text": "The more I read, the less certain I feel"
           },
           {
             "id": "b",
-            "text": "Shorter meetings necessarily caused the increase in satisfaction"
+            "text": "The more I read, less certain I feel"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "An association alone cannot establish the cause"
+            "title": "That’s right",
+            "message": "Use the before both linked comparatives. Correct: The more I read, the less certain I feel"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "An association alone cannot establish the cause"
+            "title": "Check the grammar",
+            "message": "Use the before both linked comparatives. Correct: The more I read, the less certain I feel"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Association, without proven causation"
-          },
-          {
-            "id": "b",
-            "text": "A necessary causal relationship"
-          }
-        ]
+        }
       },
       {
         "id": "course-c1-06-q02",
-        "context": "The new timetable saves commuting time but reduces overlap between teams",
-        "prompt": "What is the trade-off?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Every team benefits in exactly the same way"
+            "text": "The more cheaper it is, the more attractive it seems"
           },
           {
             "id": "b",
-            "text": "A benefit is gained alongside a coordination cost"
+            "text": "The cheaper it is, the more attractive it seems"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A trade-off involves competing benefits and costs"
+            "title": "That’s right",
+            "message": "Use cheaper or more attractive; do not put more before cheaper. Correct: The cheaper it is, the more attractive it seems"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A trade-off involves competing benefits and costs"
+            "title": "Check the grammar",
+            "message": "Use cheaper or more attractive; do not put more before cheaper. Correct: The cheaper it is, the more attractive it seems"
           }
         }
       },
       {
         "id": "course-c1-06-q03",
-        "context": "“Not only did the change save time, but it also reduced travel costs”",
-        "prompt": "What does the structure emphasise?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "A benefit that cancels out the other"
+            "text": "This course is considerably more expensive"
           },
           {
             "id": "b",
-            "text": "Two cumulative benefits"
+            "text": "This course is considerably much expensive"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Not only… but also adds emphasis to connected points"
+            "title": "That’s right",
+            "message": "Considerably can modify more expensive; expensive still needs its comparative marker. Correct: This course is considerably more expensive"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Not only… but also adds emphasis to connected points"
+            "title": "Check the grammar",
+            "message": "Considerably can modify more expensive; expensive still needs its comparative marker. Correct: This course is considerably more expensive"
           }
         }
       },
       {
         "id": "course-c1-06-q04",
-        "context": "“The more flexible the schedule, the harder it may be to find a shared slot”",
-        "prompt": "What relationship is being proposed?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Increased flexibility may come with a coordination difficulty"
+            "text": "The timetable is very more flexible"
           },
           {
             "id": "b",
-            "text": "Any flexibility makes shared meetings impossible"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "May leaves room for variation; it is not an absolute claim"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "May leaves room for variation; it is not an absolute claim"
-          }
-        }
-      },
-      {
-        "id": "course-c1-06-q05",
-        "context": "The pilot involved volunteers from one department",
-        "prompt": "Which caveat matters when discussing a company-wide rollout?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The result must be false because volunteers took part"
-          },
-          {
-            "id": "b",
-            "text": "The participants may not represent every department"
+            "text": "The timetable is much more flexible"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Limited representation restricts generalisation without automatically invalidating findings"
+            "title": "That’s right",
+            "message": "Use much, not very, to intensify this comparative. Correct: The timetable is much more flexible"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Limited representation restricts generalisation without automatically invalidating findings"
+            "title": "Check the grammar",
+            "message": "Use much, not very, to intensify this comparative. Correct: The timetable is much more flexible"
+          }
+        }
+      },
+      {
+        "id": "course-c1-06-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The more flexible it is, the more easier planning becomes"
+          },
+          {
+            "id": "b",
+            "text": "The more flexible it is, the easier planning becomes"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use the easier, without more, in the second comparative clause. Correct: The more flexible it is, the easier planning becomes"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use the easier, without more, in the second comparative clause. Correct: The more flexible it is, the easier planning becomes"
           }
         }
       },
       {
         "id": "course-c1-06-q06",
-        "context": "Two options have different strengths. You want to compare them fairly",
-        "prompt": "Which question helps?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Which criteria matter most, and what would we give up with each option?"
+            "text": "I’d reconsider if the session conflicted with work"
           },
           {
             "id": "b",
-            "text": "Which option can we describe as perfect before choosing criteria?"
+            "text": "I’d reconsider if the session would conflicted with work"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Explicit criteria make the trade-offs assessable"
+            "title": "That’s right",
+            "message": "For this hypothetical condition, use past simple after if and would in the result. Correct: I’d reconsider if the session conflicted with work"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Explicit criteria make the trade-offs assessable"
+            "title": "Check the grammar",
+            "message": "For this hypothetical condition, use past simple after if and would in the result. Correct: I’d reconsider if the session conflicted with work"
           }
         }
       }

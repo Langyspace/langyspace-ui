@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a2-04-q01",
-        "context": "Evelyn has arranged to meet Owen at the entrance at half past one",
-        "prompt": "Which sentence describes the arrangement?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She’s meeting Owen at half past one"
+            "text": "I’m meeting Kim on Saturday"
           },
           {
             "id": "b",
-            "text": "She meets Owen there every day"
+            "text": "I’m meet Kim on Saturday"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The agreed time describes a future arrangement"
+            "title": "That’s right",
+            "message": "A present-continuous arrangement uses be + verb-ing. Correct: I’m meeting Kim on Saturday"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The agreed time describes a future arrangement"
+            "title": "Check the grammar",
+            "message": "A present-continuous arrangement uses be + verb-ing. Correct: I’m meeting Kim on Saturday"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "An agreed meeting at 1:30"
-          },
-          {
-            "id": "b",
-            "text": "Their daily meeting"
-          }
-        ]
+        }
       },
       {
         "id": "course-a2-04-q02",
-        "context": "Owen has decided to get lunch at the festival, but hasn’t chosen a café",
-        "prompt": "Which sentence describes his plan?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "He’s having a booked lunch at Café Blue"
+            "text": "I’m going to try yoga"
           },
           {
             "id": "b",
-            "text": "He’s going to get lunch there"
+            "text": "I’m going to trying yoga"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "He has a plan, but no café booking is stated"
+            "title": "That’s right",
+            "message": "Going to is followed by the base verb. Correct: I’m going to try yoga"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "He has a plan, but no café booking is stated"
+            "title": "Check the grammar",
+            "message": "Going to is followed by the base verb. Correct: I’m going to try yoga"
           }
         }
       },
       {
         "id": "course-a2-04-q03",
-        "context": "Evelyn asks, “Are you doing anything on Saturday?”",
-        "prompt": "What does she want to know?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "What Owen is doing at this moment"
+            "text": "Do you going to the concert?"
           },
           {
             "id": "b",
-            "text": "Whether Owen has plans"
+            "text": "Are you going to the concert?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Saturday makes this a question about future plans"
+            "title": "That’s right",
+            "message": "Use are + subject + going for this arranged outing. Correct: Are you going to the concert?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Saturday makes this a question about future plans"
+            "title": "Check the grammar",
+            "message": "Use are + subject + going for this arranged outing. Correct: Are you going to the concert?"
           }
         }
       },
       {
         "id": "course-a2-04-q04",
-        "context": "Owen is meeting a friend in the morning and Evelyn in the afternoon",
-        "prompt": "When is he free to join Evelyn?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "In the afternoon"
+            "text": "She isn’t going to join us"
           },
           {
             "id": "b",
-            "text": "During his morning meeting"
+            "text": "She doesn’t going to join us"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The two arrangements happen at different times"
+            "title": "That’s right",
+            "message": "Use be + not + going to + base verb. Correct: She isn’t going to join us"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The two arrangements happen at different times"
+            "title": "Check the grammar",
+            "message": "Use be + not + going to + base verb. Correct: She isn’t going to join us"
           }
         }
       },
       {
         "id": "course-a2-04-q05",
-        "context": "You agree to meet at 1:30, but your friend writes 2:00",
-        "prompt": "What should you say?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Yes, we always meet at two"
+            "text": "What you are going to do on Sunday?"
           },
           {
             "id": "b",
-            "text": "Just to check, are we meeting at half past one?"
+            "text": "What are you going to do on Sunday?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Check the agreed time instead of accepting a different one"
+            "title": "That’s right",
+            "message": "Put are before you when asking about a going to intention. Correct: What are you going to do on Sunday?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Check the agreed time instead of accepting a different one"
+            "title": "Check the grammar",
+            "message": "Put are before you when asking about a going to intention. Correct: What are you going to do on Sunday?"
           }
         }
       },
       {
         "id": "course-a2-04-q06",
-        "context": "You have a general intention to visit the festival",
-        "prompt": "Which question helps make it an arrangement?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "What time shall we meet?"
+            "text": "I’d love to coming, but I’m busy"
           },
           {
             "id": "b",
-            "text": "Do you like festivals in general?"
+            "text": "I’d love to come, but I’m busy"
           }
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A time helps turn the plan into an arrangement"
+            "title": "That’s right",
+            "message": "Use would love to + base verb when responding to an invitation. Correct: I’d love to come, but I’m busy"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A time helps turn the plan into an arrangement"
+            "title": "Check the grammar",
+            "message": "Use would love to + base verb when responding to an invitation. Correct: I’d love to come, but I’m busy"
           }
         }
       }

@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a2-03-q01",
-        "context": "Ana was walking to the station when it started raining",
-        "prompt": "What was already happening?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She was walking"
+            "text": "I was waiting for the bus"
           },
           {
             "id": "b",
-            "text": "It was raining before she left"
+            "text": "I were waiting for the bus"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Walking was in progress when the rain started"
+            "title": "That’s right",
+            "message": "Use was with I, he, she and it. Correct: I was waiting for the bus"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Walking was in progress when the rain started"
+            "title": "Check the grammar",
+            "message": "Use was with I, he, she and it. Correct: I was waiting for the bus"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "She was walking"
-          },
-          {
-            "id": "b",
-            "text": "It was raining before she left"
-          }
-        ]
+        }
       },
       {
         "id": "course-a2-03-q02",
-        "context": "Kim dropped her keys while she was getting on the bus",
-        "prompt": "What happened during the other action?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She finished a bus journey"
+            "text": "They was waiting outside"
           },
           {
             "id": "b",
-            "text": "She dropped her keys"
+            "text": "They were waiting outside"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Dropping the keys happened while she was getting on"
+            "title": "That’s right",
+            "message": "Use were with you, we and they. Correct: They were waiting outside"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Dropping the keys happened while she was getting on"
+            "title": "Check the grammar",
+            "message": "Use were with you, we and they. Correct: They were waiting outside"
           }
         }
       },
       {
         "id": "course-a2-03-q03",
-        "context": "You missed the call because you were driving",
-        "prompt": "Which explanation fits?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Sorry, I drive every time you call"
+            "text": "What were you doing?"
           },
           {
             "id": "b",
-            "text": "Sorry, I was driving when you called"
+            "text": "What did you doing?"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Was driving explains the action in progress at that time"
+            "title": "That’s right",
+            "message": "Use were + subject + verb-ing for an action already in progress. Correct: What were you doing?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Was driving explains the action in progress at that time"
+            "title": "Check the grammar",
+            "message": "Use were + subject + verb-ing for an action already in progress. Correct: What were you doing?"
           }
         }
       },
       {
         "id": "course-a2-03-q04",
-        "context": "The train stopped. Ana was reading at that moment",
-        "prompt": "Which sentence joins the events?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Ana was reading when the train stopped"
+            "text": "I was wait when it started raining"
           },
           {
             "id": "b",
-            "text": "Ana read only after the train stopped"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Her reading was already in progress"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Her reading was already in progress"
-          }
-        }
-      },
-      {
-        "id": "course-a2-03-q05",
-        "context": "Ana says, “I was waiting outside when I saw Kim”",
-        "prompt": "Which question continues the story?",
-        "options": [
-          {
-            "id": "a",
-            "text": "What time do you usually wake up?"
-          },
-          {
-            "id": "b",
-            "text": "What did Kim do next?"
+            "text": "I was waiting when it started raining"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask about the next event in this story"
+            "title": "That’s right",
+            "message": "Use was + verb-ing for the ongoing action and past simple for the interruption. Correct: I was waiting when it started raining"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask about the next event in this story"
+            "title": "Check the grammar",
+            "message": "Use was + verb-ing for the ongoing action and past simple for the interruption. Correct: I was waiting when it started raining"
           }
         }
       },
       {
-        "id": "course-a2-03-q06",
-        "context": "Kim was crossing the street. Her phone rang",
-        "prompt": "Which picture description matches?",
+        "id": "course-a2-03-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Her phone rang while she was crossing"
+            "text": "She wasn’t driving when I called"
           },
           {
             "id": "b",
-            "text": "She crossed after the phone stopped ringing"
+            "text": "She didn’t driving when I called"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The phone rang during the crossing"
+            "title": "That’s right",
+            "message": "Use wasn’t + verb-ing, not didn’t + verb-ing. Correct: She wasn’t driving when I called"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The phone rang during the crossing"
+            "title": "Check the grammar",
+            "message": "Use wasn’t + verb-ing, not didn’t + verb-ing. Correct: She wasn’t driving when I called"
+          }
+        }
+      },
+      {
+        "id": "course-a2-03-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "We were walking when the rain start"
+          },
+          {
+            "id": "b",
+            "text": "We were walking when the rain started"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use past simple for the event that interrupted the past activity. Correct: We were walking when the rain started"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use past simple for the event that interrupted the past activity. Correct: We were walking when the rain started"
           }
         }
       }

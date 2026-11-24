@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a1-12-q01",
-        "context": "It’s sunny. Niamh wants to go to the park",
-        "prompt": "Where does she want to go?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "To the park"
+            "text": "Let’s go to the park"
           },
           {
             "id": "b",
-            "text": "To the hotel"
+            "text": "Let’s going to the park"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Niamh says let’s go to the park"
+            "title": "That’s right",
+            "message": "Use the base verb after Let’s. Correct: Let’s go to the park"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Niamh says let’s go to the park"
+            "title": "Check the grammar",
+            "message": "Use the base verb after Let’s. Correct: Let’s go to the park"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "To the park"
-          },
-          {
-            "id": "b",
-            "text": "To the hotel"
-          }
-        ]
+        }
       },
       {
         "id": "course-a1-12-q02",
-        "context": "Niamh and Cian want to travel by train",
-        "prompt": "Which transport do they choose?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "A taxi"
+            "text": "Is sunny today"
           },
           {
             "id": "b",
-            "text": "The train"
+            "text": "It’s sunny today"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "They choose the train"
+            "title": "That’s right",
+            "message": "A weather sentence needs the subject it. Correct: It’s sunny today"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "They choose the train"
+            "title": "Check the grammar",
+            "message": "A weather sentence needs the subject it. Correct: It’s sunny today"
           }
         }
       },
       {
         "id": "course-a1-12-q03",
-        "context": "Two train tickets are six euros",
-        "prompt": "How much are two tickets?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Two euros"
+            "text": "Let’s meet at ten"
           },
           {
             "id": "b",
-            "text": "Six euros"
+            "text": "Let’s to meet at ten"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Six euros is the price for both tickets"
+            "title": "That’s right",
+            "message": "Use Let’s meet, without to. Correct: Let’s meet at ten"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Six euros is the price for both tickets"
+            "title": "Check the grammar",
+            "message": "Use Let’s meet, without to. Correct: Let’s meet at ten"
           }
         }
       },
       {
         "id": "course-a1-12-q04",
-        "context": "Niamh has water and two sandwiches",
-        "prompt": "What can they eat?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Sandwiches"
+            "text": "Let’s meet on nine"
           },
           {
             "id": "b",
-            "text": "Tickets"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Sandwiches are food; tickets are for travel"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Sandwiches are food; tickets are for travel"
-          }
-        }
-      },
-      {
-        "id": "course-a1-12-q05",
-        "context": "It’s raining. The museum is indoors",
-        "prompt": "Which place keeps you out of the rain?",
-        "options": [
-          {
-            "id": "a",
-            "text": "The open park"
-          },
-          {
-            "id": "b",
-            "text": "The museum"
+            "text": "Let’s meet at nine"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Indoors means inside a building"
+            "title": "That’s right",
+            "message": "Use at before a clock time. Correct: Let’s meet at nine"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Indoors means inside a building"
+            "title": "Check the grammar",
+            "message": "Use at before a clock time. Correct: Let’s meet at nine"
           }
         }
       },
       {
-        "id": "course-a1-12-q06",
-        "context": "You like Cian’s idea to take the train",
-        "prompt": "What can you say?",
+        "id": "course-a1-12-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Good idea!"
+            "text": "Let’s meet at the station"
           },
           {
             "id": "b",
-            "text": "What’s your last name?"
+            "text": "Let’s meet to the station"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Good idea accepts the suggestion"
+            "title": "That’s right",
+            "message": "Meet at names the meeting point; go to describes movement. Correct: Let’s meet at the station"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Good idea accepts the suggestion"
+            "title": "Check the grammar",
+            "message": "Meet at names the meeting point; go to describes movement. Correct: Let’s meet at the station"
+          }
+        }
+      },
+      {
+        "id": "course-a1-12-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It’s rain today"
+          },
+          {
+            "id": "b",
+            "text": "It’s rainy today"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Rainy is an adjective; rain is a noun or a verb. Correct: It’s rainy today"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Rainy is an adjective; rain is a noun or a verb. Correct: It’s rainy today"
           }
         }
       }

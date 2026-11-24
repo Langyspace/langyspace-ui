@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-08-q01",
-        "context": "The team has two designers. The one who joined in May handles this client",
-        "prompt": "What does who joined in May do?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "It identifies which designer is meant"
+            "text": "The person which lives here works from home"
           },
           {
             "id": "b",
-            "text": "It gives optional information about the only designer"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The clause distinguishes one designer from another"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The clause distinguishes one designer from another"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "It identifies which designer"
-          },
-          {
-            "id": "b",
-            "text": "It adds optional background"
-          }
-        ]
-      },
-      {
-        "id": "course-b2-08-q02",
-        "context": "There is one project manager: Ana. The update says, “Ana, who leads the project, will call”",
-        "prompt": "What is the relative clause doing?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Choosing Ana from several people called Ana"
-          },
-          {
-            "id": "b",
-            "text": "Adding information about an already identified person"
+            "text": "The person who lives here works from home"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ana is already identified in this context"
+            "title": "That’s right",
+            "message": "Use who for the person in this defining relative clause. Correct: The person who lives here works from home"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ana is already identified in this context"
+            "title": "Check the grammar",
+            "message": "Use who for the person in this defining relative clause. Correct: The person who lives here works from home"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The flat that has a balcony is available"
+          },
+          {
+            "id": "b",
+            "text": "The flat that it has a balcony is available"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "That already acts as the relative-clause subject; do not add it. Correct: The flat that has a balcony is available"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "That already acts as the relative-clause subject; do not add it. Correct: The flat that has a balcony is available"
           }
         }
       },
       {
         "id": "course-b2-08-q03",
-        "context": "You need the file Kim sent yesterday, not the older version",
-        "prompt": "Which request identifies the right file?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Please open any file; Kim sent something yesterday"
+            "text": "Flat C, that has a balcony, is available"
           },
           {
             "id": "b",
-            "text": "Please open the file that Kim sent yesterday"
+            "text": "Flat C, which has a balcony, is available"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The defining clause selects the required file"
+            "title": "That’s right",
+            "message": "Use which, not that, in this extra-information clause between commas. Correct: Flat C, which has a balcony, is available"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The defining clause selects the required file"
+            "title": "Check the grammar",
+            "message": "Use which, not that, in this extra-information clause between commas. Correct: Flat C, which has a balcony, is available"
           }
         }
       },
       {
         "id": "course-b2-08-q04",
-        "context": "The only café in the building closes at six",
-        "prompt": "Which sentence adds that extra fact naturally?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The café, which closes at six, is downstairs"
+            "text": "The flats that have a study cost more"
           },
           {
             "id": "b",
-            "text": "The café who closes at six is downstairs"
+            "text": "The flats that has a study cost more"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Which refers to a thing; the commas mark added information"
+            "title": "That’s right",
+            "message": "The relative-clause verb agrees with the plural flats. Correct: The flats that have a study cost more"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Which refers to a thing; the commas mark added information"
+            "title": "Check the grammar",
+            "message": "The relative-clause verb agrees with the plural flats. Correct: The flats that have a study cost more"
           }
         }
       },
       {
         "id": "course-b2-08-q05",
-        "context": "Two colleagues share the surname Lee. Only one works in sales",
-        "prompt": "Which question avoids ambiguity?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Do you mean Lee, who everyone already knows?"
+            "text": "The flat has a study, which makes working easier"
           },
           {
             "id": "b",
-            "text": "Do you mean the Lee who works in sales?"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The work detail distinguishes the two people"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The work detail distinguishes the two people"
-          }
-        }
-      },
-      {
-        "id": "course-b2-08-q06",
-        "context": "You write, “My laptop, which I bought last year, has stopped working”",
-        "prompt": "What is treated as extra information?",
-        "options": [
-          {
-            "id": "a",
-            "text": "When you bought the laptop"
-          },
-          {
-            "id": "b",
-            "text": "Which of several laptops must be selected"
+            "text": "The flat has a study, what makes working easier"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The comma clause adds background to the identified laptop"
+            "title": "That’s right",
+            "message": "Use which to comment on the whole preceding idea. Correct: The flat has a study, which makes working easier"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The comma clause adds background to the identified laptop"
+            "title": "Check the grammar",
+            "message": "Use which to comment on the whole preceding idea. Correct: The flat has a study, which makes working easier"
+          }
+        }
+      },
+      {
+        "id": "course-b2-08-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Ana, which works from home, needs a study"
+          },
+          {
+            "id": "b",
+            "text": "Ana, who works from home, needs a study"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use who, not which, for a person in this extra-information clause. Correct: Ana, who works from home, needs a study"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use who, not which, for a person in this extra-information clause. Correct: Ana, who works from home, needs a study"
           }
         }
       }

@@ -29,4 +29,6 @@ Após acesso e backend qualificado: publicar oito tarefas dos pilotos com script
 
 A matriz ampliada aferiu 298 estados de encerramento em duas larguras. O único excesso foi 12px na tradução de C1.12 em 390×844. Padding/gap da variação compacta de MobileFrame foram reduzidos com os mesmos tokens; a repetição desse caso resultou em 844px de conteúdo, sem excesso. As propriedades padrão do frame regular foram preservadas. Metadados de todos os atlas usados nos cards conferem com as proporções declaradas
 
+Revisão86 substitui os31 quizzes de interpretação por186 itens de gramática. Cada alvo aponta para uma linha da tabela realmente renderizada na aula. A regra, correção e justificativa aparecem após a tentativa. Ver ../quiz-grammar-revision/plan86.md. Os89 outros objetos de atividade e todas as mídias permanecem iguais. A revisão exige nova avaliação humana dos quizzes; não é aprovação da revisão85
+
 Visual gate review: pending human

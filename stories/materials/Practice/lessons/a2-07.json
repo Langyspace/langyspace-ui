@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a2-07-q01",
-        "context": "The house rules say, “No smoking indoors”",
-        "prompt": "Which sentence has the same meaning?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "You don’t have to smoke indoors"
+            "text": "She has to book the grill"
           },
           {
             "id": "b",
-            "text": "You mustn’t smoke indoors"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Mustn’t expresses a prohibition"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Mustn’t expresses a prohibition"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Smoking indoors is optional"
-          },
-          {
-            "id": "b",
-            "text": "Smoking indoors is forbidden"
-          }
-        ]
-      },
-      {
-        "id": "course-a2-07-q02",
-        "context": "Breakfast is optional and included in the price",
-        "prompt": "Which sentence matches?",
-        "options": [
-          {
-            "id": "a",
-            "text": "You don’t have to have breakfast here"
-          },
-          {
-            "id": "b",
-            "text": "You mustn’t have breakfast here"
+            "text": "She have to book the grill"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Don’t have to means it isn’t necessary"
+            "title": "That’s right",
+            "message": "Use has to with she, he and it. Correct: She has to book the grill"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Don’t have to means it isn’t necessary"
+            "title": "Check the grammar",
+            "message": "Use has to with she, he and it. Correct: She has to book the grill"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "We don’t have to bring chairs"
+          },
+          {
+            "id": "b",
+            "text": "We don’t have bring chairs"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Keep to after have in don’t have to. Correct: We don’t have to bring chairs"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Keep to after have in don’t have to. Correct: We don’t have to bring chairs"
           }
         }
       },
       {
         "id": "course-a2-07-q03",
-        "context": "Guests must return the key before leaving",
-        "prompt": "What is required?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Giving the key back"
+            "text": "You mustn’t use the pool at night"
           },
           {
             "id": "b",
-            "text": "Keeping the key as a souvenir"
+            "text": "You mustn’t to use the pool at night"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Must expresses an obligation"
+            "title": "That’s right",
+            "message": "A modal such as mustn’t takes the base verb without to. Correct: You mustn’t use the pool at night"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Must expresses an obligation"
+            "title": "Check the grammar",
+            "message": "A modal such as mustn’t takes the base verb without to. Correct: You mustn’t use the pool at night"
           }
         }
       },
       {
         "id": "course-a2-07-q04",
-        "context": "You can use the kitchen, but you must clean it afterwards",
-        "prompt": "What should you check?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Whether cleaning is optional"
+            "text": "Does she has to book it?"
           },
           {
             "id": "b",
-            "text": "Where the cleaning things are"
+            "text": "Does she have to book it?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Using the kitchen includes a cleaning requirement"
+            "title": "That’s right",
+            "message": "After does, use have rather than has. Correct: Does she have to book it?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Using the kitchen includes a cleaning requirement"
+            "title": "Check the grammar",
+            "message": "After does, use have rather than has. Correct: Does she have to book it?"
           }
         }
       },
       {
         "id": "course-a2-07-q05",
-        "context": "The sign says, “Quiet after ten”",
-        "prompt": "Which response follows the rule?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "We’ll turn the music down at ten"
+            "text": "They have leave by ten"
           },
           {
             "id": "b",
-            "text": "We don’t have to stop being loud"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The rule asks guests to keep the noise down"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The rule asks guests to keep the noise down"
-          }
-        }
-      },
-      {
-        "id": "course-a2-07-q06",
-        "context": "You don’t know if you can invite a friend",
-        "prompt": "What do you ask?",
-        "options": [
-          {
-            "id": "a",
-            "text": "What time does my friend work?"
-          },
-          {
-            "id": "b",
-            "text": "Are guests allowed to bring a friend?"
+            "text": "They have to leave by ten"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask about the house rule directly"
+            "title": "That’s right",
+            "message": "Keep to between have and the required action. Correct: They have to leave by ten"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask about the house rule directly"
+            "title": "Check the grammar",
+            "message": "Keep to between have and the required action. Correct: They have to leave by ten"
+          }
+        }
+      },
+      {
+        "id": "course-a2-07-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "He doesn’t has to clean the pool"
+          },
+          {
+            "id": "b",
+            "text": "He doesn’t have to clean the pool"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "After doesn’t, use have to rather than has to. Correct: He doesn’t have to clean the pool"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "After doesn’t, use have to rather than has to. Correct: He doesn’t have to clean the pool"
           }
         }
       }

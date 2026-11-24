@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-c1-02-q01",
-        "context": "A supplier delivered late, but the team had kept a backup. Ana says, “Had we relied on that delivery alone, we would have missed the launch”",
-        "prompt": "What does her counterfactual establish?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The launch was actually missed because the delivery was late"
+            "text": "Had we known, we could have waited"
           },
           {
             "id": "b",
-            "text": "A missed launch is presented as the consequence of an unreal past condition"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Had we relied describes an alternative past, not what happened"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Had we relied describes an alternative past, not what happened"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "A launch that was actually missed"
-          },
-          {
-            "id": "b",
-            "text": "An unreal condition and its result"
-          }
-        ]
-      },
-      {
-        "id": "course-c1-02-q02",
-        "context": "The backup was available. Kim says, “Without it, we might have had to postpone”",
-        "prompt": "How does might affect the claim?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It leaves postponement possible rather than certain in that alternative situation"
-          },
-          {
-            "id": "b",
-            "text": "It confirms that postponement definitely occurred"
+            "text": "Had we knew, we could have waited"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Might have keeps the counterfactual result tentative"
+            "title": "That’s right",
+            "message": "Inverted past conditionals use had + subject + past participle. Correct: Had we known, we could have waited"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Might have keeps the counterfactual result tentative"
+            "title": "Check the grammar",
+            "message": "Inverted past conditionals use had + subject + past participle. Correct: Had we known, we could have waited"
+          }
+        }
+      },
+      {
+        "id": "course-c1-02-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Had we checked the test, we could have delayed opening"
+          },
+          {
+            "id": "b",
+            "text": "If had we checked the test, we could have delayed opening"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Choose either Had we checked or If we had checked; do not combine if with inversion. Correct: Had we checked the test, we could have delayed opening"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Choose either Had we checked or If we had checked; do not combine if with inversion. Correct: Had we checked the test, we could have delayed opening"
           }
         }
       },
       {
         "id": "course-c1-02-q03",
-        "context": "Ana says, “Were the supplier to withdraw now, we’d need another partner”",
-        "prompt": "What time frame is being considered?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "A hypothetical future withdrawal"
+            "text": "If we had knew, we could have waited"
           },
           {
             "id": "b",
-            "text": "A confirmed withdrawal in the past"
+            "text": "If we had known, we could have waited"
           }
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Were to introduces a hypothetical possibility"
+            "title": "That’s right",
+            "message": "An if-clause keeps subject + had + past participle; it is as valid as inversion. Correct: If we had known, we could have waited"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Were to introduces a hypothetical possibility"
+            "title": "Check the grammar",
+            "message": "An if-clause keeps subject + had + past participle; it is as valid as inversion. Correct: If we had known, we could have waited"
           }
         }
       },
       {
         "id": "course-c1-02-q04",
-        "context": "“Should the delivery be delayed again, contact me directly”",
-        "prompt": "Which paraphrase preserves the instruction?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Because it has definitely been delayed again, contact me directly"
+            "text": "Had we not ignore the warning, we could have acted"
           },
           {
             "id": "b",
-            "text": "If it is delayed again, contact me directly"
+            "text": "Had we not ignored the warning, we could have acted"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Should introduces a possible condition, not confirmation that it holds"
+            "title": "That’s right",
+            "message": "Keep the past participle after had, including in a negative condition. Correct: Had we not ignored the warning, we could have acted"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Should introduces a possible condition, not confirmation that it holds"
+            "title": "Check the grammar",
+            "message": "Keep the past participle after had, including in a negative condition. Correct: Had we not ignored the warning, we could have acted"
           }
         }
       },
       {
         "id": "course-c1-02-q05",
-        "context": "The team had no backup. The shipment was late, but they still launched on time",
-        "prompt": "Which conclusion is supported?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The delay alone did not prevent this launch"
+            "text": "Had we known, we could have delayed the launch"
           },
           {
             "id": "b",
-            "text": "Having no backup always makes delays harmless"
+            "text": "Had we known, we could had delayed the launch"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A single outcome cannot establish a universal rule"
+            "title": "That’s right",
+            "message": "Use have, not had, after the modal in the result clause. Correct: Had we known, we could have delayed the launch"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A single outcome cannot establish a universal rule"
+            "title": "Check the grammar",
+            "message": "Use have, not had, after the modal in the result clause. Correct: Had we known, we could have delayed the launch"
           }
         }
       },
       {
         "id": "course-c1-02-q06",
-        "context": "You want to acknowledge a vulnerability without pretending the outcome was inevitable",
-        "prompt": "Which wording is more precise?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Had the delay lasted longer, disaster was guaranteed in every case"
+            "text": "Had the test being completed, we could have opened"
           },
           {
             "id": "b",
-            "text": "Had the delay lasted longer, we could have faced a serious problem"
+            "text": "Had the test been completed, we could have opened"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Could have expresses a risk without overstating certainty"
+            "title": "That’s right",
+            "message": "A passive past-perfect condition uses had + subject + been + past participle. Correct: Had the test been completed, we could have opened"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Could have expresses a risk without overstating certainty"
+            "title": "Check the grammar",
+            "message": "A passive past-perfect condition uses had + subject + been + past participle. Correct: Had the test been completed, we could have opened"
           }
         }
       }

@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a2-10-q01",
-        "context": "The hotel is cheap, but it’s too far from the station for a short walk",
-        "prompt": "Why doesn’t it meet the need?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The walk is longer than the person wants"
+            "text": "This hotel is cheaper than that one"
           },
           {
             "id": "b",
-            "text": "It is more expensive than every hotel"
+            "text": "This hotel is cheaper that that one"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Too far means the distance is a problem for this plan"
+            "title": "That’s right",
+            "message": "Use than after a comparative. Correct: This hotel is cheaper than that one"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Too far means the distance is a problem for this plan"
+            "title": "Check the grammar",
+            "message": "Use than after a comparative. Correct: This hotel is cheaper than that one"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "The walk is too long"
-          },
-          {
-            "id": "b",
-            "text": "It costs too much"
-          }
-        ]
+        }
       },
       {
         "id": "course-a2-10-q02",
-        "context": "The blue bag costs less than the black bag",
-        "prompt": "Which sentence matches?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The blue bag is more expensive"
+            "text": "This room is comfortabler"
           },
           {
             "id": "b",
-            "text": "The blue bag is cheaper"
+            "text": "This room is more comfortable"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Cheaper means it costs less"
+            "title": "That’s right",
+            "message": "Use more comfortable to compare this longer adjective. Correct: This room is more comfortable"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Cheaper means it costs less"
+            "title": "Check the grammar",
+            "message": "Use more comfortable to compare this longer adjective. Correct: This room is more comfortable"
           }
         }
       },
       {
         "id": "course-a2-10-q03",
-        "context": "The room has two chairs and three people need a seat",
-        "prompt": "What’s the problem?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "There are too many chairs"
+            "text": "The hotel is too much far away"
           },
           {
             "id": "b",
-            "text": "There aren’t enough chairs"
+            "text": "The hotel is too far away"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "There are fewer chairs than needed"
+            "title": "That’s right",
+            "message": "Put too directly before an adjective such as far. Correct: The hotel is too far away"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "There are fewer chairs than needed"
+            "title": "Check the grammar",
+            "message": "Put too directly before an adjective such as far. Correct: The hotel is too far away"
           }
         }
       },
       {
         "id": "course-a2-10-q04",
-        "context": "The train takes twenty minutes. The bus takes forty",
-        "prompt": "Which is faster?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The train"
+            "text": "This room is quiet enough"
           },
           {
             "id": "b",
-            "text": "The bus"
+            "text": "This room is enough quiet"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The train takes less time"
+            "title": "That’s right",
+            "message": "Put enough after the adjective. Correct: This room is quiet enough"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The train takes less time"
+            "title": "Check the grammar",
+            "message": "Put enough after the adjective. Correct: This room is quiet enough"
           }
         }
       },
       {
         "id": "course-a2-10-q05",
-        "context": "You need a quiet room. This one is next to a loud building site",
-        "prompt": "Which reply explains the problem?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "It’s quiet enough for me to work"
+            "text": "There is enough space"
           },
           {
             "id": "b",
-            "text": "It’s too noisy for me to work"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The noise stops it meeting your need"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The noise stops it meeting your need"
-          }
-        }
-      },
-      {
-        "id": "course-a2-10-q06",
-        "context": "Both cafés are nearby. Only one has a table for six",
-        "prompt": "Which question helps choose?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Is the table big enough for six people?"
-          },
-          {
-            "id": "b",
-            "text": "Which café has the longest name?"
+            "text": "There are enough space"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Choose using the need that matters for the group"
+            "title": "That’s right",
+            "message": "Space is uncountable here, so use there is with enough space. Correct: There is enough space"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Choose using the need that matters for the group"
+            "title": "Check the grammar",
+            "message": "Space is uncountable here, so use there is with enough space. Correct: There is enough space"
+          }
+        }
+      },
+      {
+        "id": "course-a2-10-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "This room is more smaller than ours"
+          },
+          {
+            "id": "b",
+            "text": "This room is smaller than ours"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use smaller, without adding more. Correct: This room is smaller than ours"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use smaller, without adding more. Correct: This room is smaller than ours"
           }
         }
       }

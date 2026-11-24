@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-02-q01",
-        "context": "The report deadline is Friday. Ana plans to finish on Thursday",
-        "prompt": "Which update expresses expected completion before the deadline?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "I’ll have finished it by Friday"
+            "text": "I’ll have finished by Friday"
           },
           {
             "id": "b",
-            "text": "I’ll be finishing it throughout Friday"
+            "text": "I’ll have finish by Friday"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Future perfect focuses on completion by a reference point"
+            "title": "That’s right",
+            "message": "Use will have + past participle for completion before a future point. Correct: I’ll have finished by Friday"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Future perfect focuses on completion by a reference point"
+            "title": "Check the grammar",
+            "message": "Use will have + past participle for completion before a future point. Correct: I’ll have finished by Friday"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "I’ll have finished it by Friday"
-          },
-          {
-            "id": "b",
-            "text": "I’ll be finishing it all Friday"
-          }
-        ]
+        }
       },
       {
         "id": "course-b2-02-q02",
-        "context": "At ten tomorrow, Kim will be in the middle of interviewing a candidate",
-        "prompt": "Which sentence fits?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She’ll have interviewed every candidate by ten"
+            "text": "At ten, I’ll be handing over the packs"
           },
           {
             "id": "b",
-            "text": "She’ll be interviewing a candidate at ten"
+            "text": "At ten, I’ll be hand over the packs"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Future continuous places an activity in progress at a future time"
+            "title": "That’s right",
+            "message": "Use will be + verb-ing for an activity in progress at a future time. Correct: At ten, I’ll be handing over the packs"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Future continuous places an activity in progress at a future time"
+            "title": "Check the grammar",
+            "message": "Use will be + verb-ing for an activity in progress at a future time. Correct: At ten, I’ll be handing over the packs"
           }
         }
       },
       {
         "id": "course-b2-02-q03",
-        "context": "The team expects to have sent all invitations by noon",
-        "prompt": "What does that commitment concern?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Sending invitations only after noon"
+            "text": "We won’t have completed it by noon"
           },
           {
             "id": "b",
-            "text": "A completed set of invitations by noon"
+            "text": "We won’t had completed it by noon"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "By noon sets the latest expected completion point"
+            "title": "That’s right",
+            "message": "Keep have after won’t in the future perfect. Correct: We won’t have completed it by noon"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "By noon sets the latest expected completion point"
+            "title": "Check the grammar",
+            "message": "Keep have after won’t in the future perfect. Correct: We won’t have completed it by noon"
           }
         }
       },
       {
         "id": "course-b2-02-q04",
-        "context": "Ana will work on the presentation from two until four",
-        "prompt": "Which time is clearly within the activity?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "At three, she’ll be working on it"
+            "text": "Will have you checked everything by then?"
           },
           {
             "id": "b",
-            "text": "At three, she’ll have finished every part"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Three falls inside the stated working period"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Three falls inside the stated working period"
-          }
-        }
-      },
-      {
-        "id": "course-b2-02-q05",
-        "context": "You need the final figures before a meeting at five",
-        "prompt": "Which question checks completion?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Will you be checking them at some point?"
-          },
-          {
-            "id": "b",
-            "text": "Will you have confirmed them by four?"
+            "text": "Will you have checked everything by then?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A completion deadline answers the need for final figures"
+            "title": "That’s right",
+            "message": "Put the subject between will and have. Correct: Will you have checked everything by then?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A completion deadline answers the need for final figures"
+            "title": "Check the grammar",
+            "message": "Put the subject between will and have. Correct: Will you have checked everything by then?"
+          }
+        }
+      },
+      {
+        "id": "course-b2-02-q05",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "We’ll finish provided the brief to stay the same"
+          },
+          {
+            "id": "b",
+            "text": "We’ll finish provided the brief stays the same"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Provided introduces a clause with its own subject and verb. Correct: We’ll finish provided the brief stays the same"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Provided introduces a clause with its own subject and verb. Correct: We’ll finish provided the brief stays the same"
           }
         }
       },
       {
         "id": "course-b2-02-q06",
-        "context": "Kim says, “I’ll be travelling all morning”",
-        "prompt": "Which reply respects that availability?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Shall we talk in the afternoon instead?"
+            "text": "We’ll be ready as long as the client approve it"
           },
           {
             "id": "b",
-            "text": "Great, I’ll book a long call for the morning"
+            "text": "We’ll be ready as long as the client approves it"
           }
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The morning is already occupied by travel"
+            "title": "That’s right",
+            "message": "Use approves with the singular subject the client in this condition. Correct: We’ll be ready as long as the client approves it"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The morning is already occupied by travel"
+            "title": "Check the grammar",
+            "message": "Use approves with the singular subject the client in this condition. Correct: We’ll be ready as long as the client approves it"
           }
         }
       }

@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-05-q01",
-        "context": "Ana printed the form, then discovered a digital copy was accepted",
-        "prompt": "Which sentence says the action happened unnecessarily?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She needn’t have printed it"
+            "text": "We needn’t have paid twice"
           },
           {
             "id": "b",
-            "text": "She didn’t print it because it wasn’t required"
+            "text": "We needn’t have pay twice"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Needn’t have says she did it, but it wasn’t necessary"
+            "title": "That’s right",
+            "message": "Use needn’t have + past participle for an unnecessary action that happened. Correct: We needn’t have paid twice"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Needn’t have says she did it, but it wasn’t necessary"
+            "title": "Check the grammar",
+            "message": "Use needn’t have + past participle for an unnecessary action that happened. Correct: We needn’t have paid twice"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "She needn’t have printed it"
-          },
-          {
-            "id": "b",
-            "text": "She never printed it"
-          }
-        ]
+        }
       },
       {
         "id": "course-b2-05-q02",
-        "context": "Kim wasn’t required to attend. We don’t know whether she went",
-        "prompt": "Which statement preserves that uncertainty?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She needn’t have attended"
+            "text": "We didn’t need to booked in advance"
           },
           {
             "id": "b",
-            "text": "She didn’t have to attend"
+            "text": "We didn’t need to book in advance"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Didn’t have to states the lack of obligation without establishing the action"
+            "title": "That’s right",
+            "message": "Use the base verb after didn’t need to. Correct: We didn’t need to book in advance"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Didn’t have to states the lack of obligation without establishing the action"
+            "title": "Check the grammar",
+            "message": "Use the base verb after didn’t need to. Correct: We didn’t need to book in advance"
           }
         }
       },
       {
         "id": "course-b2-05-q03",
-        "context": "Leo bought bottled water, but free water was available there",
-        "prompt": "Which comment fits?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "You couldn’t have bought water"
+            "text": "Did you needed to pay a deposit?"
           },
           {
             "id": "b",
-            "text": "You needn’t have bought water"
+            "text": "Did you need to pay a deposit?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "He bought it, although there was no need"
+            "title": "That’s right",
+            "message": "After did, use need rather than needed. Correct: Did you need to pay a deposit?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "He bought it, although there was no need"
+            "title": "Check the grammar",
+            "message": "After did, use need rather than needed. Correct: Did you need to pay a deposit?"
           }
         }
       },
       {
         "id": "course-b2-05-q04",
-        "context": "The organiser says, “You don’t need to bring a laptop” before the event",
-        "prompt": "What does this tell you?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Bringing one is not required"
+            "text": "I needn’t have buy breakfast"
           },
           {
             "id": "b",
-            "text": "Bringing one is prohibited"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Not necessary is different from not allowed"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Not necessary is different from not allowed"
-          }
-        }
-      },
-      {
-        "id": "course-b2-05-q05",
-        "context": "Ana says, “I needn’t have rushed”",
-        "prompt": "What does she imply?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She took her time because she knew there was no hurry"
-          },
-          {
-            "id": "b",
-            "text": "She rushed, and it turned out not to be necessary"
+            "text": "I needn’t have bought breakfast"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Needn’t have looks back at an unnecessary action that occurred"
+            "title": "That’s right",
+            "message": "Use the past participle bought after have. Correct: I needn’t have bought breakfast"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Needn’t have looks back at an unnecessary action that occurred"
+            "title": "Check the grammar",
+            "message": "Use the past participle bought after have. Correct: I needn’t have bought breakfast"
           }
         }
       },
       {
-        "id": "course-b2-05-q06",
-        "context": "Your colleague hasn’t booked a taxi yet. A free shuttle is available",
-        "prompt": "Which advice avoids treating the booking as already made?",
+        "id": "course-b2-05-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "You don’t need to book a taxi"
+            "text": "We didn’t need to pay in advance, but we chose to"
           },
           {
             "id": "b",
-            "text": "You needn’t have booked a taxi"
+            "text": "We didn’t needed to pay in advance, but we chose to"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Don’t need to is suitable before the action happens"
+            "title": "That’s right",
+            "message": "Didn’t need to states no obligation; it can still be followed by an action that happened. Correct: We didn’t need to pay in advance, but we chose to"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Don’t need to is suitable before the action happens"
+            "title": "Check the grammar",
+            "message": "Didn’t need to states no obligation; it can still be followed by an action that happened. Correct: We didn’t need to pay in advance, but we chose to"
+          }
+        }
+      },
+      {
+        "id": "course-b2-05-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She didn’t need to pay twice"
+          },
+          {
+            "id": "b",
+            "text": "She didn’t needed to pay twice"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use the base form need after didn’t, followed by to + verb. Correct: She didn’t need to pay twice"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use the base form need after didn’t, followed by to + verb. Correct: She didn’t need to pay twice"
           }
         }
       }

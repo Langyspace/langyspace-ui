@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-c1-03-q01",
-        "context": "A spokesperson says the company expects to reopen on Monday; an inspection is still pending",
-        "prompt": "Which report preserves the status of the claim?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The company is expected to reopen on Monday, subject to inspection"
+            "text": "The café is said to being closing"
           },
           {
             "id": "b",
-            "text": "The company has been cleared to reopen on Monday"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "An expectation is not completed clearance"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "An expectation is not completed clearance"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Expected, subject to inspection"
-          },
-          {
-            "id": "b",
-            "text": "Officially cleared to reopen"
-          }
-        ]
-      },
-      {
-        "id": "course-c1-03-q02",
-        "context": "A newspaper reports that a new manager has been appointed; the organisation has not confirmed it",
-        "prompt": "Which wording keeps the source visible?",
-        "options": [
-          {
-            "id": "a",
-            "text": "A new manager has definitely taken over, as officially confirmed"
-          },
-          {
-            "id": "b",
-            "text": "The newspaper reports that a new manager has been appointed"
+            "text": "The café is said to be closing"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Attribute an unconfirmed report instead of upgrading it to fact"
+            "title": "That’s right",
+            "message": "Use subject + is said to + base verb; the report is not proof. Correct: The café is said to be closing"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Attribute an unconfirmed report instead of upgrading it to fact"
+            "title": "Check the grammar",
+            "message": "Use subject + is said to + base verb; the report is not proof. Correct: The café is said to be closing"
+          }
+        }
+      },
+      {
+        "id": "course-c1-03-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The café is thought to have closed"
+          },
+          {
+            "id": "b",
+            "text": "The café is thought to have close"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use to have + past participle for an alleged earlier event. Correct: The café is thought to have closed"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use to have + past participle for an alleged earlier event. Correct: The café is thought to have closed"
           }
         }
       },
       {
         "id": "course-c1-03-q03",
-        "context": "“Three employees are believed to have witnessed the incident”",
-        "prompt": "What remains uncertain?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Whether the writer is referring to a future incident"
+            "text": "It reported that the dining area will close"
           },
           {
             "id": "b",
-            "text": "Whether those employees actually witnessed it"
+            "text": "It is reported that the dining area will close"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Are believed to marks the report as a belief"
+            "title": "That’s right",
+            "message": "The impersonal passive needs is before reported. Correct: It is reported that the dining area will close"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Are believed to marks the report as a belief"
+            "title": "Check the grammar",
+            "message": "The impersonal passive needs is before reported. Correct: It is reported that the dining area will close"
           }
         }
       },
       {
         "id": "course-c1-03-q04",
-        "context": "The committee has publicly confirmed its decision",
-        "prompt": "Which formulation reports that without unnecessary hedging?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The committee has confirmed that the proposal was approved"
+            "text": "According to the notice, the café is being renovated"
           },
           {
             "id": "b",
-            "text": "It is vaguely rumoured that the committee may have met"
+            "text": "According the notice, the café is being renovated"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Confirmed evidence supports a clear attributed statement"
+            "title": "That’s right",
+            "message": "The source phrase is according to, including to. Correct: According to the notice, the café is being renovated"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Confirmed evidence supports a clear attributed statement"
+            "title": "Check the grammar",
+            "message": "The source phrase is according to, including to. Correct: According to the notice, the café is being renovated"
           }
         }
       },
       {
         "id": "course-c1-03-q05",
-        "context": "An audit is being carried out, but no findings have been published",
-        "prompt": "Which update avoids inventing a result?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The review has proved that the figures are wrong"
+            "text": "The building is reported to have being sold"
           },
           {
             "id": "b",
-            "text": "The figures are being reviewed; no conclusion has been released"
+            "text": "The building is reported to have been sold"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "An investigation in progress does not establish its outcome"
+            "title": "That’s right",
+            "message": "An earlier passive event uses to have been + past participle. Correct: The building is reported to have been sold"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "An investigation in progress does not establish its outcome"
+            "title": "Check the grammar",
+            "message": "An earlier passive event uses to have been + past participle. Correct: The building is reported to have been sold"
           }
         }
       },
       {
         "id": "course-c1-03-q06",
-        "context": "You’re writing a neutral summary of a disputed claim",
-        "prompt": "Which approach protects accuracy?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Identify who made the claim and distinguish it from verified findings"
+            "text": "The figures are thought to be incomplete"
           },
           {
             "id": "b",
-            "text": "Use a passive reporting phrase to make every allegation sound settled"
+            "text": "The figures is thought to be incomplete"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Reporting structures must not erase the difference between a claim and a finding"
+            "title": "That’s right",
+            "message": "Use are with the plural subject figures. Correct: The figures are thought to be incomplete"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Reporting structures must not erase the difference between a claim and a finding"
+            "title": "Check the grammar",
+            "message": "Use are with the plural subject figures. Correct: The figures are thought to be incomplete"
           }
         }
       }

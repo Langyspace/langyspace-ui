@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b1-03-q01",
-        "context": "The train left at 8:00. Ana arrived at 8:10",
-        "prompt": "Which sentence preserves the order?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The train left after Ana arrived"
+            "text": "The show had started"
           },
           {
             "id": "b",
-            "text": "The train had left when Ana arrived"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Had left places the departure before her arrival"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Had left places the departure before her arrival"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "The train left afterwards"
-          },
-          {
-            "id": "b",
-            "text": "The train had already left"
-          }
-        ]
-      },
-      {
-        "id": "course-b1-03-q02",
-        "context": "Kim got home and then realised her keys were at work",
-        "prompt": "Which question asks about the earlier event?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Where had you left your keys?"
-          },
-          {
-            "id": "b",
-            "text": "Where will you leave your keys?"
+            "text": "The show had start"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The keys had been left somewhere before she got home"
+            "title": "That’s right",
+            "message": "Use had + past participle for the earlier past event. Correct: The show had started"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The keys had been left somewhere before she got home"
+            "title": "Check the grammar",
+            "message": "Use had + past participle for the earlier past event. Correct: The show had started"
+          }
+        }
+      },
+      {
+        "id": "course-b1-03-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She had forgot her wristband"
+          },
+          {
+            "id": "b",
+            "text": "She had forgotten her wristband"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use forgotten, not the past-simple form forgot, after had. Correct: She had forgotten her wristband"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use forgotten, not the past-simple form forgot, after had. Correct: She had forgotten her wristband"
           }
         }
       },
       {
         "id": "course-b1-03-q03",
-        "context": "By the time Leo called, Ana had already booked a taxi",
-        "prompt": "What was already complete?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "The taxi booking"
+            "text": "They hadn’t checked the time"
           },
           {
             "id": "b",
-            "text": "The phone call from Leo"
+            "text": "They didn’t had checked the time"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Already booked places the booking before the call"
+            "title": "That’s right",
+            "message": "Negate had directly with not; do not add did. Correct: They hadn’t checked the time"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Already booked places the booking before the call"
+            "title": "Check the grammar",
+            "message": "Negate had directly with not; do not add did. Correct: They hadn’t checked the time"
           }
         }
       },
       {
         "id": "course-b1-03-q04",
-        "context": "Ana couldn’t show the ticket because she had lost her phone",
-        "prompt": "What explains the problem?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "She lost the phone after showing the ticket"
+            "text": "Did they had left before you arrived?"
           },
           {
             "id": "b",
-            "text": "Losing her phone happened before she needed the ticket"
+            "text": "Had they left before you arrived?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The earlier loss explains the later difficulty"
+            "title": "That’s right",
+            "message": "Form a past-perfect question with had + subject + participle. Correct: Had they left before you arrived?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The earlier loss explains the later difficulty"
+            "title": "Check the grammar",
+            "message": "Form a past-perfect question with had + subject + participle. Correct: Had they left before you arrived?"
           }
         }
       },
       {
         "id": "course-b1-03-q05",
-        "context": "Kim reached the café at ten. Ana arrived at eleven",
-        "prompt": "Which sentence matches?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Kim had been there for an hour when Ana arrived"
+            "text": "By the time we arrived, the show had begun"
           },
           {
             "id": "b",
-            "text": "Kim arrived an hour after Ana"
+            "text": "By the time we arrived, the show has begun"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Kim’s arrival was first"
+            "title": "That’s right",
+            "message": "Use had begun for an event earlier than a past arrival. Correct: By the time we arrived, the show had begun"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Kim’s arrival was first"
+            "title": "Check the grammar",
+            "message": "Use had begun for an event earlier than a past arrival. Correct: By the time we arrived, the show had begun"
           }
         }
       },
       {
         "id": "course-b1-03-q06",
-        "context": "You’re telling a story. The reason for the problem happened earlier",
-        "prompt": "Which link makes that order clear?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "I missed the bus because I leave tomorrow"
+            "text": "I had wrote down the wrong date"
           },
           {
             "id": "b",
-            "text": "I missed the bus because I’d left home too late"
+            "text": "I had written down the wrong date"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The earlier departure explains the past result"
+            "title": "That’s right",
+            "message": "Use written after had; wrote is the past-simple form. Correct: I had written down the wrong date"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The earlier departure explains the past result"
+            "title": "Check the grammar",
+            "message": "Use written after had; wrote is the past-simple form. Correct: I had written down the wrong date"
           }
         }
       }

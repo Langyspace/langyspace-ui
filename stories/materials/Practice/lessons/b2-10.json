@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-10-q01",
-        "context": "The team keeps proposing new features. Ana needs time to finish the current ones",
-        "prompt": "Which sentence puts her real need in focus?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "What we need is time to finish what we’ve started"
+            "text": "What do I need is a quiet room"
           },
           {
             "id": "b",
-            "text": "What we need are as many extra features as possible"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The what-clause foregrounds the need that the context describes"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The what-clause foregrounds the need that the context describes"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "We need time to finish"
-          },
-          {
-            "id": "b",
-            "text": "We need extra features"
-          }
-        ]
-      },
-      {
-        "id": "course-b2-10-q02",
-        "context": "Kim didn’t object to the idea; she objected to the cost",
-        "prompt": "Which correction focuses on that contrast?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It was the idea that I rejected because it was new"
-          },
-          {
-            "id": "b",
-            "text": "It was the cost that concerned me, not the idea"
+            "text": "What I need is a quiet room"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The cleft construction emphasises the specific concern"
+            "title": "That’s right",
+            "message": "A what-cleft uses statement order inside the what-clause. Correct: What I need is a quiet room"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The cleft construction emphasises the specific concern"
+            "title": "Check the grammar",
+            "message": "A what-cleft uses statement order inside the what-clause. Correct: What I need is a quiet room"
+          }
+        }
+      },
+      {
+        "id": "course-b2-10-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was the lift that woke me"
+          },
+          {
+            "id": "b",
+            "text": "It was the lift what woke me"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use that to connect this it-cleft to the rest of the clause. Correct: It was the lift that woke me"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use that to connect this it-cleft to the rest of the clause. Correct: It was the lift that woke me"
           }
         }
       },
       {
         "id": "course-b2-10-q03",
-        "context": "Leo fixed the booking, not the receptionist",
-        "prompt": "Which sentence stresses who did it?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "What Leo did was ask the receptionist to fix it"
+            "text": "I did asked for a change"
           },
           {
             "id": "b",
-            "text": "It was Leo who sorted out the booking"
+            "text": "I did ask for a change"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "It was Leo who highlights the person responsible"
+            "title": "That’s right",
+            "message": "After emphatic did, use the base verb. Correct: I did ask for a change"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "It was Leo who highlights the person responsible"
+            "title": "Check the grammar",
+            "message": "After emphatic did, use the base verb. Correct: I did ask for a change"
           }
         }
       },
       {
         "id": "course-b2-10-q04",
-        "context": "The delay matters more to Ana than the extra work",
-        "prompt": "Which sentence preserves that priority?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "What worries me most is the delay"
+            "text": "What disturbed me was the noise"
           },
           {
             "id": "b",
-            "text": "What worries me most is having any work to do"
+            "text": "What disturbed me were the noise"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Most places the emphasis on the main concern"
+            "title": "That’s right",
+            "message": "The thing identified by this what-clause is singular: use was. Correct: What disturbed me was the noise"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Most places the emphasis on the main concern"
+            "title": "Check the grammar",
+            "message": "The thing identified by this what-clause is singular: use was. Correct: What disturbed me was the noise"
           }
         }
       },
       {
         "id": "course-b2-10-q05",
-        "context": "You need a firm date rather than another general update",
-        "prompt": "Which request communicates that clearly?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "What I need is another update whenever possible"
+            "text": "She did explain the problem at reception"
           },
           {
             "id": "b",
-            "text": "What I need is a confirmed date"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The focused request makes the missing commitment explicit"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The focused request makes the missing commitment explicit"
-          }
-        }
-      },
-      {
-        "id": "course-b2-10-q06",
-        "context": "A colleague thinks you want to cancel the launch. You only want to reduce its scope",
-        "prompt": "Which reply clarifies the distinction?",
-        "options": [
-          {
-            "id": "a",
-            "text": "What I’m suggesting is a smaller launch, not cancelling it"
-          },
-          {
-            "id": "b",
-            "text": "It’s cancellation that I’m recommending"
+            "text": "She did explained the problem at reception"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "A focused correction can distinguish a limited change from a different proposal"
+            "title": "That’s right",
+            "message": "The past tense is already carried by did; explain stays in the base form. Correct: She did explain the problem at reception"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "A focused correction can distinguish a limited change from a different proposal"
+            "title": "Check the grammar",
+            "message": "The past tense is already carried by did; explain stays in the base form. Correct: She did explain the problem at reception"
+          }
+        }
+      },
+      {
+        "id": "course-b2-10-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "It was the noise that it kept me awake"
+          },
+          {
+            "id": "b",
+            "text": "It was the noise that kept me awake"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "That already acts as the subject of kept; do not add it. Correct: It was the noise that kept me awake"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "That already acts as the subject of kept; do not add it. Correct: It was the noise that kept me awake"
           }
         }
       }

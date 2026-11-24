@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b1-10-q01",
-        "context": "You’re asking a stranger about the last train",
-        "prompt": "Which question has natural indirect word order?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Could you tell me when does the last train leave?"
+            "text": "Could you tell me where the exit is?"
           },
           {
             "id": "b",
-            "text": "Could you tell me when the last train leaves?"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "After could you tell me, use statement word order"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "After could you tell me, use statement word order"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "…when does the last train leave"
-          },
-          {
-            "id": "b",
-            "text": "…when the last train leaves"
-          }
-        ]
-      },
-      {
-        "id": "course-b1-10-q02",
-        "context": "You want to know whether the museum is open",
-        "prompt": "Which question fits?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Do you know if the museum is open?"
-          },
-          {
-            "id": "b",
-            "text": "Do you know is the museum open?"
+            "text": "Could you tell me where is the exit?"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "If introduces an indirect yes-or-no question"
+            "title": "That’s right",
+            "message": "Keep subject + verb inside the embedded question. Correct: Could you tell me where the exit is?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "If introduces an indirect yes-or-no question"
+            "title": "Check the grammar",
+            "message": "Keep subject + verb inside the embedded question. Correct: Could you tell me where the exit is?"
+          }
+        }
+      },
+      {
+        "id": "course-b1-10-q02",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "Do you know if the tour is included?"
+          },
+          {
+            "id": "b",
+            "text": "Do you know if is the tour included?"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "After if, use statement order: the tour is. Correct: Do you know if the tour is included?"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "After if, use statement order: the tour is. Correct: Do you know if the tour is included?"
           }
         }
       },
       {
         "id": "course-b1-10-q03",
-        "context": "The receptionist has already explained the route, but you missed one detail",
-        "prompt": "Which request is clear and polite?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Could you repeat where I need to change?"
+            "text": "Do you know when does the museum close?"
           },
           {
             "id": "b",
-            "text": "Tell me again everything you said before"
+            "text": "Do you know when the museum closes?"
           }
         ],
-        "correctOptionId": "a",
+        "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask for the specific missing detail"
+            "title": "That’s right",
+            "message": "Use when + subject + verb inside the question; do not add does. Correct: Do you know when the museum closes?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask for the specific missing detail"
+            "title": "Check the grammar",
+            "message": "Use when + subject + verb inside the question; do not add does. Correct: Do you know when the museum closes?"
           }
         }
       },
       {
         "id": "course-b1-10-q04",
-        "context": "You need help with a heavy bag",
-        "prompt": "Which request asks without assuming agreement?",
+        "prompt": "Choose the correct direct question",
         "options": [
           {
             "id": "a",
-            "text": "You don’t mind helping me, do it now"
+            "text": "Where the cloakroom is?"
           },
           {
             "id": "b",
-            "text": "Would you mind helping me with this bag?"
+            "text": "Where is the cloakroom?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Would you mind asks politely about doing something"
+            "title": "That’s right",
+            "message": "A direct question puts is before the subject. Correct: Where is the cloakroom?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Would you mind asks politely about doing something"
+            "title": "Check the grammar",
+            "message": "A direct question puts is before the subject. Correct: Where is the cloakroom?"
           }
         }
       },
       {
         "id": "course-b1-10-q05",
-        "context": "Someone says, “Would you mind waiting here?” You agree",
-        "prompt": "Which reply clearly accepts?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Not at all. I’ll wait here"
+            "text": "Could you tell me where I can leave my bag?"
           },
           {
             "id": "b",
-            "text": "Yes, I mind. I’ll wait here"
+            "text": "Could you tell me where can I leave my bag?"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Not at all makes it clear you don’t object"
+            "title": "That’s right",
+            "message": "Inside the embedded question, put I before can. Correct: Could you tell me where I can leave my bag?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Not at all makes it clear you don’t object"
+            "title": "Check the grammar",
+            "message": "Inside the embedded question, put I before can. Correct: Could you tell me where I can leave my bag?"
           }
         }
       },
       {
         "id": "course-b1-10-q06",
-        "context": "You want to check the cost before agreeing",
-        "prompt": "Which question works?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Could you let me know how much does it cost?"
+            "text": "Do you know if are tickets available?"
           },
           {
             "id": "b",
-            "text": "Could you let me know how much it costs?"
+            "text": "Do you know if tickets are available?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Keep statement word order inside the indirect question"
+            "title": "That’s right",
+            "message": "Keep tickets are after if. Correct: Do you know if tickets are available?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Keep statement word order inside the indirect question"
+            "title": "Check the grammar",
+            "message": "Keep tickets are after if. Correct: Do you know if tickets are available?"
           }
         }
       }

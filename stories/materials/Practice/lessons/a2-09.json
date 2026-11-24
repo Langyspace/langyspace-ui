@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-a2-09-q01",
-        "context": "Ana started this job in 2022 and still works there",
-        "prompt": "Which sentence matches?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She’s worked there since 2022"
+            "text": "I’ve lived here since 2022"
           },
           {
             "id": "b",
-            "text": "She’s worked there for 2022"
+            "text": "I’ve lived here for 2022"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Since introduces the starting point"
+            "title": "That’s right",
+            "message": "Use since before the year when a continuing situation began. Correct: I’ve lived here since 2022"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Since introduces the starting point"
+            "title": "Check the grammar",
+            "message": "Use since before the year when a continuing situation began. Correct: I’ve lived here since 2022"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Since 2022"
-          },
-          {
-            "id": "b",
-            "text": "For 2022"
-          }
-        ]
+        }
       },
       {
         "id": "course-a2-09-q02",
-        "context": "Kim moved here three years ago and still lives here",
-        "prompt": "How long has she lived here?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Since three years"
+            "text": "She’s worked here for three years"
           },
           {
             "id": "b",
-            "text": "For three years"
+            "text": "She’s worked here since three years"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "For introduces a length of time"
+            "title": "That’s right",
+            "message": "Use for before a length of time. Correct: She’s worked here for three years"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "For introduces a length of time"
+            "title": "Check the grammar",
+            "message": "Use for before a length of time. Correct: She’s worked here for three years"
           }
         }
       },
       {
         "id": "course-a2-09-q03",
-        "context": "Your friend says, “I’ve been here since Monday”",
-        "prompt": "What does Monday tell you?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "How many days every stay lasts"
+            "text": "How long you have lived here?"
           },
           {
             "id": "b",
-            "text": "When the stay started"
+            "text": "How long have you lived here?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Monday is the starting point"
+            "title": "That’s right",
+            "message": "Put have before the subject in a direct present-perfect question. Correct: How long have you lived here?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Monday is the starting point"
+            "title": "Check the grammar",
+            "message": "Put have before the subject in a direct present-perfect question. Correct: How long have you lived here?"
           }
         }
       },
       {
         "id": "course-a2-09-q04",
-        "context": "You want to know how long your friend has had this job",
-        "prompt": "What do you ask?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "How long have you worked here?"
+            "text": "When did you moved here?"
           },
           {
             "id": "b",
-            "text": "When do you work every morning?"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "How long asks about duration"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "How long asks about duration"
-          }
-        }
-      },
-      {
-        "id": "course-a2-09-q05",
-        "context": "Ana has known Kim for five years",
-        "prompt": "Which question asks about the beginning?",
-        "options": [
-          {
-            "id": "a",
-            "text": "How often do you meet Kim?"
-          },
-          {
-            "id": "b",
-            "text": "When did you meet Kim?"
+            "text": "When did you move here?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "When did you meet asks for the first meeting"
+            "title": "That’s right",
+            "message": "After did, use the base verb move. Correct: When did you move here?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "When did you meet asks for the first meeting"
+            "title": "Check the grammar",
+            "message": "After did, use the base verb move. Correct: When did you move here?"
           }
         }
       },
       {
-        "id": "course-a2-09-q06",
-        "context": "Kim says, “I’ve had this phone for two years”",
-        "prompt": "Which follow-up fits?",
+        "id": "course-a2-09-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Are you happy with it?"
+            "text": "I moved here in 2022"
           },
           {
             "id": "b",
-            "text": "Why did you buy it tomorrow?"
+            "text": "I’ve moved here in 2022"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask about the phone she still has"
+            "title": "That’s right",
+            "message": "A finished past date such as in 2022 takes past simple. Correct: I moved here in 2022"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask about the phone she still has"
+            "title": "Check the grammar",
+            "message": "A finished past date such as in 2022 takes past simple. Correct: I moved here in 2022"
+          }
+        }
+      },
+      {
+        "id": "course-a2-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "We have be neighbours since May"
+          },
+          {
+            "id": "b",
+            "text": "We have been neighbours since May"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use the past participle been after have. Correct: We have been neighbours since May"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use the past participle been after have. Correct: We have been neighbours since May"
           }
         }
       }

@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-06-q01",
-        "context": "Niamh took her phone to a repair shop; a technician replaced the screen",
-        "prompt": "Which sentence keeps the roles clear?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She had her phone screen replaced"
+            "text": "I need to get my screen fixed"
           },
           {
             "id": "b",
-            "text": "She replaced the screen herself"
+            "text": "I need to get my screen fix"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Have something done means another person provides the service"
+            "title": "That’s right",
+            "message": "A causative service pattern uses get + object + past participle. Correct: I need to get my screen fixed"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Have something done means another person provides the service"
+            "title": "Check the grammar",
+            "message": "A causative service pattern uses get + object + past participle. Correct: I need to get my screen fixed"
           }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "A technician replaced it"
-          },
-          {
-            "id": "b",
-            "text": "She replaced it herself"
-          }
-        ]
+        }
       },
       {
         "id": "course-b2-06-q02",
-        "context": "The shop has inspected the phone, but the repair is not complete",
-        "prompt": "Which update is accurate?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "I’ve had it fixed and collected it"
+            "text": "I had repaired my phone by the technician"
           },
           {
             "id": "b",
-            "text": "They’ve checked it, but they haven’t fixed it yet"
+            "text": "I had my phone repaired"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Inspection alone is not a completed repair"
+            "title": "That’s right",
+            "message": "For a service someone else performs, use have + object + participle. Correct: I had my phone repaired"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Inspection alone is not a completed repair"
+            "title": "Check the grammar",
+            "message": "For a service someone else performs, use have + object + participle. Correct: I had my phone repaired"
           }
         }
       },
       {
         "id": "course-b2-06-q03",
-        "context": "Cian says, “I’m getting my jacket altered tomorrow”",
-        "prompt": "What is arranged?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "He will teach himself to sew tomorrow"
+            "text": "The phone is been tested"
           },
           {
             "id": "b",
-            "text": "Someone will alter his jacket"
+            "text": "The phone is being tested"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Get something done usually describes an arranged service"
+            "title": "That’s right",
+            "message": "Use is being + participle for a passive action in progress. Correct: The phone is being tested"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Get something done usually describes an arranged service"
+            "title": "Check the grammar",
+            "message": "Use is being + participle for a passive action in progress. Correct: The phone is being tested"
           }
         }
       },
       {
         "id": "course-b2-06-q04",
-        "context": "The technician says the screen should be ready by four",
-        "prompt": "Which reply checks the estimate?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Could you let me know if that changes?"
+            "text": "The new screen has being fitted"
           },
           {
             "id": "b",
-            "text": "So you guarantee it will be ready before noon?"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Should be ready gives an expectation, not that different guarantee"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Should be ready gives an expectation, not that different guarantee"
-          }
-        }
-      },
-      {
-        "id": "course-b2-06-q05",
-        "context": "You want to know the full price before authorising the repair",
-        "prompt": "Which question is most direct?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Do you like repairing this model?"
-          },
-          {
-            "id": "b",
-            "text": "Does that include parts and labour?"
+            "text": "The new screen has been fitted"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Parts and labour are the relevant elements of the cost"
+            "title": "That’s right",
+            "message": "Use has been + participle for a completed step. Correct: The new screen has been fitted"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Parts and labour are the relevant elements of the cost"
+            "title": "Check the grammar",
+            "message": "Use has been + participle for a completed step. Correct: The new screen has been fitted"
           }
         }
       },
       {
-        "id": "course-b2-06-q06",
-        "context": "Niamh has collected her phone and the new screen works",
-        "prompt": "Which sentence reports the completed service?",
+        "id": "course-b2-06-q05",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "She’s had the screen replaced"
+            "text": "Did you get the battery replaced?"
           },
           {
             "id": "b",
-            "text": "She’s having the screen replaced tomorrow"
+            "text": "Did you got the battery replaced?"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Has had reports the service as complete"
+            "title": "That’s right",
+            "message": "After did, use get; the serviced object is followed by replaced. Correct: Did you get the battery replaced?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Has had reports the service as complete"
+            "title": "Check the grammar",
+            "message": "After did, use get; the serviced object is followed by replaced. Correct: Did you get the battery replaced?"
+          }
+        }
+      },
+      {
+        "id": "course-b2-06-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "I’m getting my phone repaired"
+          },
+          {
+            "id": "b",
+            "text": "I’m getting repaired my phone"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Keep the serviced object between getting and the past participle. Correct: I’m getting my phone repaired"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Keep the serviced object between getting and the past participle. Correct: I’m getting my phone repaired"
           }
         }
       }

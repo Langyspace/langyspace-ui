@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-04-q01",
-        "context": "Ana’s phone was flat, but nobody knows when it ran out",
-        "prompt": "Which conclusion is appropriately cautious?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "It must have run out before she left"
+            "text": "Someone must have moved it"
           },
           {
             "id": "b",
-            "text": "It might have run out during the journey"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "The known flat battery doesn’t establish the time"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "The known flat battery doesn’t establish the time"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "It must have happened before she left"
-          },
-          {
-            "id": "b",
-            "text": "It might have happened on the journey"
-          }
-        ]
-      },
-      {
-        "id": "course-b2-04-q02",
-        "context": "The tracking record confirms the parcel arrived yesterday",
-        "prompt": "Which deduction conflicts with that evidence?",
-        "options": [
-          {
-            "id": "a",
-            "text": "It can’t have arrived yet"
-          },
-          {
-            "id": "b",
-            "text": "It must have arrived by now"
+            "text": "Someone must have move it"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "The confirmed delivery rules out saying it cannot have arrived"
+            "title": "That’s right",
+            "message": "A past deduction uses modal + have + past participle. Correct: Someone must have moved it"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "The confirmed delivery rules out saying it cannot have arrived"
+            "title": "Check the grammar",
+            "message": "A past deduction uses modal + have + past participle. Correct: Someone must have moved it"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The receipt might have being left earlier"
+          },
+          {
+            "id": "b",
+            "text": "The receipt might have been left earlier"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use have been + past participle for a possible past passive event. Correct: The receipt might have been left earlier"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use have been + past participle for a possible past passive event. Correct: The receipt might have been left earlier"
           }
         }
       },
       {
         "id": "course-b2-04-q03",
-        "context": "Kim can’t find her keys. She remembers using them to enter the flat",
-        "prompt": "Which possibility remains open?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She may have left them somewhere inside"
+            "text": "She can’t have used that key"
           },
           {
             "id": "b",
-            "text": "She can’t have brought them into the flat"
+            "text": "She can’t has used that key"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "She used them to enter, so they were brought inside"
+            "title": "That’s right",
+            "message": "Use have, not has, after can’t. Correct: She can’t have used that key"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "She used them to enter, so they were brought inside"
+            "title": "Check the grammar",
+            "message": "Use have, not has, after can’t. Correct: She can’t have used that key"
           }
         }
       },
       {
         "id": "course-b2-04-q04",
-        "context": "Leo says, “They must have taken the earlier train”",
-        "prompt": "What is he presenting?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "A confirmed instruction for the future"
+            "text": "They might have took the spare key"
           },
           {
             "id": "b",
-            "text": "A confident deduction about the past"
+            "text": "They might have taken the spare key"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Must have signals a strong past deduction, not proof by itself"
+            "title": "That’s right",
+            "message": "Use taken after have; took is past simple. Correct: They might have taken the spare key"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Must have signals a strong past deduction, not proof by itself"
+            "title": "Check the grammar",
+            "message": "Use taken after have; took is past simple. Correct: They might have taken the spare key"
           }
         }
       },
       {
         "id": "course-b2-04-q05",
-        "context": "The witness says she saw the car, but the photo is too unclear to identify it",
-        "prompt": "Which report preserves the uncertainty?",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "It could have been Ana’s car, but we can’t confirm that"
+            "text": "Could someone had opened the window?"
           },
           {
             "id": "b",
-            "text": "It must have been Ana’s car because a car is visible"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "An unclear image cannot establish which car it was"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "An unclear image cannot establish which car it was"
-          }
-        }
-      },
-      {
-        "id": "course-b2-04-q06",
-        "context": "You have direct confirmation that Kim was abroad all week",
-        "prompt": "Which deduction fits an alleged local meeting on Tuesday?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She must have attended it in person"
-          },
-          {
-            "id": "b",
-            "text": "She can’t have attended it in person"
+            "text": "Could someone have opened the window?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Being abroad rules out physical attendance at that local meeting"
+            "title": "That’s right",
+            "message": "Use could + subject + have + past participle. Correct: Could someone have opened the window?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Being abroad rules out physical attendance at that local meeting"
+            "title": "Check the grammar",
+            "message": "Use could + subject + have + past participle. Correct: Could someone have opened the window?"
+          }
+        }
+      },
+      {
+        "id": "course-b2-04-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "The door must have been open"
+          },
+          {
+            "id": "b",
+            "text": "The door must have be open"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use been, the past participle of be, after have. Correct: The door must have been open"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use been, the past participle of be, after have. Correct: The door must have been open"
           }
         }
       }

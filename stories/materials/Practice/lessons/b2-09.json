@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b2-09-q01",
-        "context": "Ana remembers sending the email yesterday",
-        "prompt": "What does remember sending mean?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She still needs to send it and is trying not to forget"
+            "text": "I remember locking the door"
           },
           {
             "id": "b",
-            "text": "She has a memory of the completed action"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Remember doing looks back at an action"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Remember doing looks back at an action"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "She still needs to send it"
-          },
-          {
-            "id": "b",
-            "text": "She recalls sending it"
-          }
-        ]
-      },
-      {
-        "id": "course-b2-09-q02",
-        "context": "Kim remembers to lock the door before she leaves",
-        "prompt": "What does she do?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She doesn’t forget to lock it"
-          },
-          {
-            "id": "b",
-            "text": "She only recalls locking it on a previous day"
+            "text": "I remember to locking the door"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Remember to do concerns remembering a task"
+            "title": "That’s right",
+            "message": "A memory of a completed action uses remember + verb-ing. Correct: I remember locking the door"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Remember to do concerns remembering a task"
+            "title": "Check the grammar",
+            "message": "A memory of a completed action uses remember + verb-ing. Correct: I remember locking the door"
+          }
+        }
+      },
+      {
+        "id": "course-b2-09-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Remember unplug the iron"
+          },
+          {
+            "id": "b",
+            "text": "Remember to unplug the iron"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "A reminder about a task uses remember to + base verb. Correct: Remember to unplug the iron"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "A reminder about a task uses remember to + base verb. Correct: Remember to unplug the iron"
           }
         }
       },
       {
         "id": "course-b2-09-q03",
-        "context": "Leo stopped checking his phone during dinner",
-        "prompt": "What changed?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "He no longer checked it during dinner"
+            "text": "I forgot to close the window"
           },
           {
             "id": "b",
-            "text": "He paused dinner in order to check it"
+            "text": "I forgot to closing the window"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Stop doing means end the activity"
+            "title": "That’s right",
+            "message": "Use forgot to + base verb for a task that was not done. Correct: I forgot to close the window"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Stop doing means end the activity"
+            "title": "Check the grammar",
+            "message": "Use forgot to + base verb for a task that was not done. Correct: I forgot to close the window"
           }
         }
       },
       {
         "id": "course-b2-09-q04",
-        "context": "Ana stopped to check the address on her phone",
-        "prompt": "Why did she stop?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Because she decided never to check addresses again"
+            "text": "They remember shutting the windows"
           },
           {
             "id": "b",
-            "text": "In order to check the address"
-          }
-        ],
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Stop to do introduces the purpose of pausing"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Stop to do introduces the purpose of pausing"
-          }
-        }
-      },
-      {
-        "id": "course-b2-09-q05",
-        "context": "The app won’t open. Kim suggests, “Try restarting your phone”",
-        "prompt": "What is she suggesting?",
-        "options": [
-          {
-            "id": "a",
-            "text": "Test restarting as a possible solution"
-          },
-          {
-            "id": "b",
-            "text": "Make an effort to restart even if physically unable"
+            "text": "They remember shut the windows"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Try doing suggests experimenting with a solution"
+            "title": "That’s right",
+            "message": "Use remember + verb-ing to report a memory of an action. Correct: They remember shutting the windows"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Try doing suggests experimenting with a solution"
+            "title": "Check the grammar",
+            "message": "Use remember + verb-ing to report a memory of an action. Correct: They remember shutting the windows"
           }
         }
       },
       {
-        "id": "course-b2-09-q06",
-        "context": "Ana tried to lift the box, but it was too heavy",
-        "prompt": "What does tried to lift indicate?",
+        "id": "course-b2-09-q05",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "An experiment she completed successfully"
+            "text": "Did you remembered to lock the door?"
           },
           {
             "id": "b",
-            "text": "An attempt that did not succeed"
+            "text": "Did you remember to lock the door?"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Try to do focuses on making an effort"
+            "title": "That’s right",
+            "message": "Use remember, not remembered, after did. Correct: Did you remember to lock the door?"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Try to do focuses on making an effort"
+            "title": "Check the grammar",
+            "message": "Use remember, not remembered, after did. Correct: Did you remember to lock the door?"
+          }
+        }
+      },
+      {
+        "id": "course-b2-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Don’t forget to taking your keys"
+          },
+          {
+            "id": "b",
+            "text": "Don’t forget to take your keys"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "For a task still to do, use forget to + base verb. Correct: Don’t forget to take your keys"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "For a task still to do, use forget to + base verb. Correct: Don’t forget to take your keys"
           }
         }
       }

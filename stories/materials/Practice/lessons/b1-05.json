@@ -8,167 +8,151 @@
     "questions": [
       {
         "id": "course-b1-05-q01",
-        "context": "On Monday the manager says, “The plumber will come on Thursday”",
-        "prompt": "How do you report this on Tuesday?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "She said the plumber would come on Thursday"
+            "text": "He told to me the time"
           },
           {
             "id": "b",
-            "text": "She said the plumber had come on Monday"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "Would reports the planned visit without making it a completed event"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "Would reports the planned visit without making it a completed event"
-          }
-        },
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "She said he would come on Thursday"
-          },
-          {
-            "id": "b",
-            "text": "She said he had come on Monday"
-          }
-        ]
-      },
-      {
-        "id": "course-b1-05-q02",
-        "context": "The manager tells Ana, “Leave the key at reception”",
-        "prompt": "What did she ask Ana to do?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She asked reception to keep Ana inside"
-          },
-          {
-            "id": "b",
-            "text": "She asked Ana to leave the key at reception"
+            "text": "He told me the time"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Ask someone to do something reports an instruction"
+            "title": "That’s right",
+            "message": "Tell takes the listener directly: told me. Correct: He told me the time"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Ask someone to do something reports an instruction"
+            "title": "Check the grammar",
+            "message": "Tell takes the listener directly: told me. Correct: He told me the time"
+          }
+        }
+      },
+      {
+        "id": "course-b1-05-q02",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "She said she was busy"
+          },
+          {
+            "id": "b",
+            "text": "She said me she was busy"
+          }
+        ],
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use said + clause, or said to me + clause; not said me. Correct: She said she was busy"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use said + clause, or said to me + clause; not said me. Correct: She said she was busy"
           }
         }
       },
       {
         "id": "course-b1-05-q03",
-        "context": "Kim says, “I can wait until eleven”",
-        "prompt": "Which report keeps the meaning?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Kim said she had waited until eleven"
+            "text": "He asked us to leave a key"
           },
           {
             "id": "b",
-            "text": "Kim said she could wait until eleven"
+            "text": "He asked us leave a key"
           }
         ],
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Could reports her availability, not a completed wait"
+            "title": "That’s right",
+            "message": "A reported request uses ask + person + to + base verb. Correct: He asked us to leave a key"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Could reports her availability, not a completed wait"
+            "title": "Check the grammar",
+            "message": "A reported request uses ask + person + to + base verb. Correct: He asked us to leave a key"
           }
         }
       },
       {
         "id": "course-b1-05-q04",
-        "context": "Ana says, “I’m working from home today” on Monday",
-        "prompt": "How can Kim report it on Tuesday?",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Ana said she was working from home that day"
+            "text": "She asked me to not calling early"
           },
           {
             "id": "b",
-            "text": "Ana said she was working from home tomorrow"
-          }
-        ],
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "title": "Exactly",
-            "message": "That day refers to the day Ana originally spoke"
-          },
-          "wrong": {
-            "title": "Check the context",
-            "message": "That day refers to the day Ana originally spoke"
-          }
-        }
-      },
-      {
-        "id": "course-b1-05-q05",
-        "context": "The manager says the plumber is expected between nine and eleven",
-        "prompt": "Which report avoids changing the commitment?",
-        "options": [
-          {
-            "id": "a",
-            "text": "She promised he would arrive exactly at nine"
-          },
-          {
-            "id": "b",
-            "text": "She said he was expected between nine and eleven"
+            "text": "She asked me not to call early"
           }
         ],
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "An expected time window is not a promise of an exact arrival"
+            "title": "That’s right",
+            "message": "Use ask + person + not to + base verb for this negative request. Correct: She asked me not to call early"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "An expected time window is not a promise of an exact arrival"
+            "title": "Check the grammar",
+            "message": "Use ask + person + not to + base verb for this negative request. Correct: She asked me not to call early"
           }
         }
       },
       {
-        "id": "course-b1-05-q06",
-        "context": "You’re not sure whether the visit is Thursday or Friday",
-        "prompt": "What should you ask?",
+        "id": "course-b1-05-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Did she say Thursday or Friday?"
+            "text": "He said he would come on Thursday"
           },
           {
             "id": "b",
-            "text": "Why did she cancel Thursday?"
+            "text": "He said he would came on Thursday"
           }
         ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "title": "Exactly",
-            "message": "Check the detail instead of assuming a cancellation"
+            "title": "That’s right",
+            "message": "Use the base verb come after would. Correct: He said he would come on Thursday"
           },
           "wrong": {
-            "title": "Check the context",
-            "message": "Check the detail instead of assuming a cancellation"
+            "title": "Check the grammar",
+            "message": "Use the base verb come after would. Correct: He said he would come on Thursday"
+          }
+        }
+      },
+      {
+        "id": "course-b1-05-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "Kim told that she needed a key"
+          },
+          {
+            "id": "b",
+            "text": "Kim told Ana that she needed a key"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Tell needs a listener here; say can introduce the clause without one. Correct: Kim told Ana that she needed a key"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Tell needs a listener here; say can introduce the clause without one. Correct: Kim told Ana that she needed a key"
           }
         }
       }

@@ -7,170 +7,154 @@
     "kind": "quiz",
     "questions": [
       {
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "message": "Next to means beside",
-            "title": "Exactly"
-          },
-          "wrong": {
-            "message": "Next to means beside",
-            "title": "Check the context"
-          }
-        },
         "id": "course-a1-09-q01",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Next to the café"
+            "text": "There is a café"
           },
           {
             "id": "b",
-            "text": "Behind the hotel"
+            "text": "There are a café"
           }
         ],
-        "context": "The pharmacy is next to the café",
-        "prompt": "Where is the pharmacy?",
-        "previewOptions": [
-          {
-            "id": "a",
-            "text": "Next to the café"
-          },
-          {
-            "id": "b",
-            "text": "Behind the hotel"
-          }
-        ]
-      },
-      {
-        "correctOptionId": "b",
+        "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "message": "Facing the bank, the market is on your right",
-            "title": "Exactly"
+            "title": "That’s right",
+            "message": "Use there is with one place. Correct: There is a café"
           },
           "wrong": {
-            "message": "Facing the bank, the market is on your right",
-            "title": "Check the context"
+            "title": "Check the grammar",
+            "message": "Use there is with one place. Correct: There is a café"
           }
-        },
+        }
+      },
+      {
         "id": "course-a1-09-q02",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Left"
+            "text": "There is two banks"
           },
           {
             "id": "b",
-            "text": "Right"
-          }
-        ],
-        "context": "Start at the hotel facing the bank. The market is on your right",
-        "prompt": "Which way is the market?"
-      },
-      {
-        "correctOptionId": "b",
-        "feedback": {
-          "correct": {
-            "message": "There is describes one place",
-            "title": "Exactly"
-          },
-          "wrong": {
-            "message": "There is describes one place",
-            "title": "Check the context"
-          }
-        },
-        "id": "course-a1-09-q03",
-        "options": [
-          {
-            "id": "a",
             "text": "There are two banks"
-          },
-          {
-            "id": "b",
-            "text": "There is a bank"
           }
         ],
-        "context": "There is one bank on Main Street",
-        "prompt": "Which sentence matches?"
-      },
-      {
-        "correctOptionId": "a",
-        "feedback": {
-          "correct": {
-            "message": "Beside and next to describe the same relationship",
-            "title": "Exactly"
-          },
-          "wrong": {
-            "message": "Beside and next to describe the same relationship",
-            "title": "Check the context"
-          }
-        },
-        "id": "course-a1-09-q04",
-        "options": [
-          {
-            "id": "a",
-            "text": "Beside the market"
-          },
-          {
-            "id": "b",
-            "text": "Inside the hotel"
-          }
-        ],
-        "context": "The park is next to the market on the same street",
-        "prompt": "Where is the park?"
-      },
-      {
         "correctOptionId": "b",
         "feedback": {
           "correct": {
-            "message": "First go straight; turn right after that",
-            "title": "Exactly"
+            "title": "That’s right",
+            "message": "Use there are with more than one place. Correct: There are two banks"
           },
           "wrong": {
-            "message": "First go straight; turn right after that",
-            "title": "Check the context"
+            "title": "Check the grammar",
+            "message": "Use there are with more than one place. Correct: There are two banks"
           }
-        },
-        "id": "course-a1-09-q05",
+        }
+      },
+      {
+        "id": "course-a1-09-q03",
+        "prompt": "Choose the correct question",
         "options": [
           {
             "id": "a",
-            "text": "Turn right"
+            "text": "Does there be a pharmacy near here?"
           },
           {
             "id": "b",
-            "text": "Go straight"
+            "text": "Is there a pharmacy near here?"
           }
         ],
-        "context": "Go straight, then turn right at the first street",
-        "prompt": "What do you do first?"
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "Use Is there, not does there be, to ask if one place exists. Correct: Is there a pharmacy near here?"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "Use Is there, not does there be, to ask if one place exists. Correct: Is there a pharmacy near here?"
+          }
+        }
       },
       {
+        "id": "course-a1-09-q04",
+        "prompt": "Choose the correct question",
+        "options": [
+          {
+            "id": "a",
+            "text": "Are there two cafés on this street?"
+          },
+          {
+            "id": "b",
+            "text": "Is there two cafés on this street?"
+          }
+        ],
         "correctOptionId": "a",
         "feedback": {
           "correct": {
-            "message": "Ask where to find a place",
-            "title": "Exactly"
+            "title": "That’s right",
+            "message": "Use Are there with the plural two cafés. Correct: Are there two cafés on this street?"
           },
           "wrong": {
-            "message": "Ask where to find a place",
-            "title": "Check the context"
+            "title": "Check the grammar",
+            "message": "Use Are there with the plural two cafés. Correct: Are there two cafés on this street?"
           }
-        },
-        "id": "course-a1-09-q06",
+        }
+      },
+      {
+        "id": "course-a1-09-q05",
+        "prompt": "Choose the correct sentence",
         "options": [
           {
             "id": "a",
-            "text": "Where is the market?"
+            "text": "Turn right at the bank"
           },
           {
             "id": "b",
-            "text": "What’s your name?"
+            "text": "To turn right at the bank"
           }
         ],
-        "context": "You need to find the market",
-        "prompt": "What can you ask?"
+        "correctOptionId": "a",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "A direct instruction starts with the base verb, without to. Correct: Turn right at the bank"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "A direct instruction starts with the base verb, without to. Correct: Turn right at the bank"
+          }
+        }
+      },
+      {
+        "id": "course-a1-09-q06",
+        "prompt": "Choose the correct sentence",
+        "options": [
+          {
+            "id": "a",
+            "text": "There a park near the hotel"
+          },
+          {
+            "id": "b",
+            "text": "There’s a park near the hotel"
+          }
+        ],
+        "correctOptionId": "b",
+        "feedback": {
+          "correct": {
+            "title": "That’s right",
+            "message": "A statement about what exists needs there is or its contraction there’s. Correct: There’s a park near the hotel"
+          },
+          "wrong": {
+            "title": "Check the grammar",
+            "message": "A statement about what exists needs there is or its contraction there’s. Correct: There’s a park near the hotel"
+          }
+        }
       }
     ]
   },
