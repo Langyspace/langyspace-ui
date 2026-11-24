@@ -1,5 +1,11 @@
 # Homework production activation
 
-Explicit 24 November production request. Preserve the existing 62-material production catalog. Enable homework destinations only after 122 exact production activity readbacks (60 regular lessons and Influencer). Frontend remains staging-only, and trial A1/A2 keeps its sales ending. Shared UI package, layout and media remain byte-identical to homework92; only material activation data changes. Reuse the qualified visual evidence. Rebuild the neutral material artifact once and bind the catalog in the Teacher production consumer. No official package registry release.
+The user requested the complete staging catalog in production: 65 materials, including Frontend,
+Influencer and all three experimentals. Exactly 62 lessons receive the approved three-phone homework
+ending and 124 verified native activities; the three experimentals retain the sales ending.
 
-User clarified: publish all 65 staging materials, including Frontend and both additional experimentals. Enable all 62 homework endings from 124 verified native activities; the three trial sales endings are preserved. This supersedes the initial catalog-preservation assumption.
+Production destinations activate only from exact command/readback receipts. The shared package,
+layout and media remain byte-identical to homework92. Only material activation data changes. The
+neutral artifact is adopted by Teacher with a checked production catalog/index binding. No official
+registry package release or merge is included. Visual evidence is reused while presentation inputs
+stay unchanged; current production checks are recorded in progress.md and the product epics.
