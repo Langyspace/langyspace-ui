@@ -16,8 +16,8 @@ export const Root = styled.section.withConfig({
   border: ${theme.voiceMessage.frameWidth} solid ${theme.voiceMessage.frame};
   border-radius: ${theme.voiceMessage.phoneRadius};
   box-shadow: 0 0 0 2px ${theme.voiceMessage.frameEdge};
-  padding: ${theme.spacing[3]};
-  gap: ${theme.spacing[3]};
+  padding: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])};
+  gap: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])};
   color: ${(p) => resolveSlideTheme(p).foreground};
   background: ${(p) => resolveSlideTheme(p).canvas};
   font-family: ${theme.typography.fontFamily.sans};

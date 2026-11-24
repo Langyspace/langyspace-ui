@@ -12,3 +12,5 @@ progress. It never reports simulated completion. MobileFrame's default size is u
 ShadowingActivePhrase accepts optional `speaker: { name, imageUrl?, accentLabel? }`, rendered
 through the existing circular Avatar with the same name/description recipe. Omit the speaker on
 legacy phrases. The consumer resolves the phrase speaker and public media URL.
+
+The compact phone reuses the same border/camera/home-indicator chrome with smaller spacing tokens; the regular frame keeps its original spacing. Use a real published-destination receipt to enable a material link for one environment, independently of any other environment
