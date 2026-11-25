@@ -34,7 +34,7 @@ it('renders its semantic list and native controls on the server without a browse
   expect(html).toContain('aria-hidden="true"')
 })
 
-it('keeps all prompts visible in one list and the hint control outside it at the column footer', () => {
+it('keeps all prompts visible in individual list items with one hint control directly after the list', () => {
   const { container } = render(
     <SlidePage title="Meet Ana" questions={<QuestionList items={items} />}>
       <p>Dialogue</p>
@@ -97,8 +97,8 @@ it('keeps at least three grounded questions and full-sentence answers in the A10
   for (const page of groups)
     expect(page.questions!.length).toBeGreaterThanOrEqual(3)
   expect(groups[0]!.questions!.map((item) => item.answer)).toEqual([
-    'Kim is from Korea',
+    'They meet in the morning',
     'Ana is from Brazil',
-    'Kim is tired, but she’s happy',
+    'Kim is very happy today',
   ])
 })

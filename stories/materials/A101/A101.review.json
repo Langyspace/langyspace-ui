@@ -155,11 +155,7 @@
         "src": "scene-tired-tom",
         "alt": "A tired person yawning"
       },
-      "options": [
-        "He’s tired.",
-        "He’s cold.",
-        "He’s happy."
-      ],
+      "options": ["He’s tired.", "He’s cold.", "He’s happy."],
       "correctIndex": 0
     },
     {
@@ -174,11 +170,7 @@
         "src": "scene-cold-julia",
         "alt": "Julia wearing warm clothes because she is cold"
       },
-      "options": [
-        "She’s hungry.",
-        "She’s cold.",
-        "She’s happy."
-      ],
+      "options": ["She’s hungry.", "She’s cold.", "She’s happy."],
       "correctIndex": 1
     },
     {
@@ -193,11 +185,7 @@
         "src": "scene-sad-josh",
         "alt": "Josh looking sad"
       },
-      "options": [
-        "He’s happy.",
-        "He’s tired.",
-        "He’s sad."
-      ],
+      "options": ["He’s happy.", "He’s tired.", "He’s sad."],
       "correctIndex": 2
     },
     {
@@ -212,11 +200,7 @@
         "src": "scene-happy-mia",
         "alt": "A smiling person celebrating"
       },
-      "options": [
-        "She’s happy.",
-        "She’s cold.",
-        "She’s tired."
-      ],
+      "options": ["She’s happy.", "She’s cold.", "She’s tired."],
       "correctIndex": 0
     },
     {
@@ -231,11 +215,7 @@
         "src": "scene-hungry-ana",
         "alt": "Ana looking at food because she is hungry"
       },
-      "options": [
-        "She’s cold.",
-        "She’s hungry.",
-        "She’s angry."
-      ],
+      "options": ["She’s cold.", "She’s hungry.", "She’s angry."],
       "correctIndex": 1
     },
     {
@@ -250,11 +230,7 @@
         "src": "scene-angry-leo",
         "alt": "Leo looking angry"
       },
-      "options": [
-        "He’s hungry.",
-        "He’s sad.",
-        "He’s angry."
-      ],
+      "options": ["He’s hungry.", "He’s sad.", "He’s angry."],
       "correctIndex": 2
     },
     {
@@ -469,177 +445,190 @@
     {
       "id": "s6",
       "kind": "dialogue",
-      "title": "Nice to meet you",
+      "title": "Nice to meet you!",
       "instruction": "Listen as Ana and Kim meet, then read together",
       "minutes": 3,
       "eyebrow": "Guided conversation",
       "lines": [
         {
-          "id": "R.T1",
-          "speaker": "Kim",
-          "text": "Hi! I’m Kim. I’m from Korea",
-          "audioText": "Hi! I’m Kim. I’m from Korea.",
-          "translation": "Oi! Eu sou a Kim. Eu sou da Coreia"
-        },
-        {
-          "id": "R.T2",
+          "id": "D110.1",
           "speaker": "Ana",
-          "text": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you",
-          "audioText": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you.",
-          "translation": "Oi, Kim! Eu sou a Ana. Eu sou do Brasil. Prazer em te conhecer"
+          "text": "Good morning! What's your name?",
+          "audioText": "Good morning! What's your name?",
+          "translation": "Bom dia! Qual é seu nome?"
         },
         {
-          "id": "R.T3",
+          "id": "D110.2",
           "speaker": "Kim",
-          "text": "Nice to meet you too. How are you?",
-          "audioText": "Nice to meet you too. How are you?",
-          "translation": "O prazer é meu. Como você está?"
+          "text": "Good morning! My name is Kim. And you?",
+          "audioText": "Good morning! My name is Kim. And you?",
+          "translation": "Bom dia! Meu nome é Kim. E você?"
         },
         {
-          "id": "R.T4",
+          "id": "D110.3",
           "speaker": "Ana",
-          "text": "I’m good, thanks. I’m hungry! And you?",
-          "audioText": "I’m good, thanks. I’m hungry! And you?",
-          "translation": "Estou bem, obrigada. Estou com fome! E você?"
+          "text": "I'm Ana. Nice to meet you!",
+          "audioText": "I'm Ana. Nice to meet you!",
+          "translation": "Eu sou a Ana. Prazer em te conhecer!"
         },
         {
-          "id": "R80.5",
+          "id": "D110.4",
           "speaker": "Kim",
-          "text": "I’m tired, but I’m happy. Welcome, Ana!",
-          "audioText": "I’m tired, but I’m happy. Welcome, Ana!",
-          "translation": "Estou cansada, mas estou feliz. Bem-vinda, Ana!"
+          "text": "Nice to meet you, too! Where are you from?",
+          "audioText": "Nice to meet you, too! Where are you from?",
+          "translation": "Prazer em te conhecer também! De onde você é?"
         },
         {
-          "id": "R80.6",
+          "id": "D110.5",
           "speaker": "Ana",
-          "text": "Thank you! It’s nice to be here",
-          "audioText": "Thank you! It’s nice to be here.",
-          "translation": "Obrigada! É bom estar aqui"
+          "text": "I'm from Brazil. How are you?",
+          "audioText": "I'm from Brazil. How are you?",
+          "translation": "Eu sou do Brasil. Como você está?"
+        },
+        {
+          "id": "D110.6",
+          "speaker": "Kim",
+          "text": "I'm good, thanks! I'm very happy today!",
+          "audioText": "I'm good, thanks! I'm very happy today!",
+          "translation": "Estou bem, obrigada! Estou muito feliz hoje!"
         }
       ],
       "questions": [
         {
           "id": "d1",
-          "prompt": "Where is Kim from?",
-          "cue": "Say the country",
-          "hint": "Kim is from …",
-          "answer": "Kim is from Korea"
+          "prompt": "Do they meet in the morning or at night?",
+          "hint": "They meet in …",
+          "answer": "They meet in the morning"
         },
         {
           "id": "d2",
           "prompt": "Where is Ana from?",
-          "cue": "Say the country",
           "hint": "Ana is from …",
           "answer": "Ana is from Brazil"
         },
         {
           "id": "d3",
-          "prompt": "How is Kim?",
-          "cue": "Say how she feels",
-          "hint": "She’s …, but she’s …",
-          "answer": "Kim is tired, but she’s happy"
+          "prompt": "How is Kim today?",
+          "hint": "Kim is very … today",
+          "answer": "Kim is very happy today"
         }
       ]
     },
     {
       "id": "s8",
       "kind": "dialogue",
-      "title": "Complete the introduction",
-      "instruction": "Read the conversation aloud. Say each missing word, then click to check",
+      "title": "Nice to meet you!",
+      "instruction": "Read aloud. Complete each gap, then click to check",
       "minutes": 2,
-      "eyebrow": "Complete the conversation",
+      "eyebrow": "Guided conversation · Fill in the blanks",
       "lines": [
         {
-          "id": "R.T1",
-          "speaker": "Kim",
-          "text": "Hi! I’m Kim. I’m from Korea",
-          "audioText": "Hi! I’m Kim. I’m from Korea.",
-          "translation": "Oi! Eu sou a Kim. Eu sou da Coreia",
-          "parts": [
-            "Hi! ",
-            {
-              "id": "introduction.gap.1",
-              "answer": "I’m"
-            },
-            " Kim. I’m from Korea"
-          ]
-        },
-        {
-          "id": "R.T2",
+          "id": "D110.1",
           "speaker": "Ana",
-          "text": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you",
-          "audioText": "Hi, Kim! I’m Ana. I’m from Brazil. Nice to meet you.",
-          "translation": "Oi, Kim! Eu sou a Ana. Eu sou do Brasil. Prazer em te conhecer",
-          "parts": [
-            "Hi, Kim! I’m Ana. I’m ",
-            {
-              "id": "introduction.gap.2",
-              "answer": "from"
-            },
-            " Brazil. Nice to meet you"
-          ]
-        },
-        {
-          "id": "R.T3",
-          "speaker": "Kim",
-          "text": "Nice to meet you too. How are you?",
-          "audioText": "Nice to meet you too. How are you?",
-          "translation": "O prazer é meu. Como você está?",
-          "parts": [
-            "Nice to meet you too. How ",
-            {
-              "id": "introduction.gap.3",
-              "answer": "are"
-            },
-            " you?"
-          ]
-        },
-        {
-          "id": "R.T4",
-          "speaker": "Ana",
-          "text": "I’m good, thanks. I’m hungry! And you?",
-          "audioText": "I’m good, thanks. I’m hungry! And you?",
-          "translation": "Estou bem, obrigada. Estou com fome! E você?",
-          "parts": [
-            "I’m ",
-            {
-              "id": "introduction.gap.4",
-              "answer": "good"
-            },
-            ", thanks. I’m hungry! And you?"
-          ]
-        },
-        {
-          "id": "R80.5",
-          "speaker": "Kim",
-          "text": "I’m tired, but I’m happy. Welcome, Ana!",
-          "audioText": "I’m tired, but I’m happy. Welcome, Ana!",
-          "translation": "Estou cansada, mas estou feliz. Bem-vinda, Ana!",
-          "parts": [
-            "I’m ",
-            {
-              "id": "introduction.gap.5",
-              "answer": "tired"
-            },
-            ", but I’m happy. Welcome, Ana!"
-          ]
-        },
-        {
-          "id": "R80.6",
-          "speaker": "Ana",
-          "text": "Thank you! It’s nice to be here",
-          "audioText": "Thank you! It’s nice to be here.",
-          "translation": "Obrigada! É bom estar aqui",
+          "text": "Good morning! What's your name?",
+          "audioText": "Good morning! What's your name?",
+          "translation": "Bom dia! Qual é seu nome?",
           "parts": [
             "",
             {
-              "id": "introduction.gap.6",
-              "answer": "Thank you"
+              "id": "introduction110.gap.1",
+              "answer": "Good morning"
             },
-            "! It’s nice to be here"
+            "! What's your name?"
+          ]
+        },
+        {
+          "id": "D110.2",
+          "speaker": "Kim",
+          "text": "Good morning! My name is Kim. And you?",
+          "audioText": "Good morning! My name is Kim. And you?",
+          "translation": "Bom dia! Meu nome é Kim. E você?",
+          "parts": [
+            "Good morning! My ",
+            {
+              "id": "introduction110.gap.2",
+              "answer": "name"
+            },
+            " is Kim. And you?"
+          ]
+        },
+        {
+          "id": "D110.3",
+          "speaker": "Ana",
+          "text": "I'm Ana. Nice to meet you!",
+          "audioText": "I'm Ana. Nice to meet you!",
+          "translation": "Eu sou a Ana. Prazer em te conhecer!",
+          "parts": [
+            "I'm Ana. Nice to ",
+            {
+              "id": "introduction110.gap.3",
+              "answer": "meet you"
+            },
+            "!"
+          ]
+        },
+        {
+          "id": "D110.4",
+          "speaker": "Kim",
+          "text": "Nice to meet you, too! Where are you from?",
+          "audioText": "Nice to meet you, too! Where are you from?",
+          "translation": "Prazer em te conhecer também! De onde você é?",
+          "parts": [
+            "Nice to meet you, too! Where are you ",
+            {
+              "id": "introduction110.gap.4",
+              "answer": "from"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D110.5",
+          "speaker": "Ana",
+          "text": "I'm from Brazil. How are you?",
+          "audioText": "I'm from Brazil. How are you?",
+          "translation": "Eu sou do Brasil. Como você está?",
+          "parts": [
+            "I'm from Brazil. ",
+            {
+              "id": "introduction110.gap.5",
+              "answer": "How are you"
+            },
+            "?"
+          ]
+        },
+        {
+          "id": "D110.6",
+          "speaker": "Kim",
+          "text": "I'm good, thanks! I'm very happy today!",
+          "audioText": "I'm good, thanks! I'm very happy today!",
+          "translation": "Estou bem, obrigada! Estou muito feliz hoje!",
+          "parts": [
+            "I'm good, thanks! I'm very ",
+            {
+              "id": "introduction110.gap.6",
+              "answer": "happy"
+            },
+            " today!"
           ]
         }
       ]
+    },
+    {
+      "id": "s10",
+      "kind": "activity",
+      "title": "Who are you today?",
+      "eyebrow": "Roleplay",
+      "instruction": "Choose a person in your mind. Teacher asks and guesses. Then swap roles",
+      "minutes": 4
+    },
+    {
+      "id": "s_roleplay_challenge110",
+      "kind": "activity",
+      "title": "Meet my friends",
+      "eyebrow": "Challenge",
+      "instruction": "Introduce all six people as your friends. Say their names, where they’re from and how they feel",
+      "minutes": 3
     },
     {
       "id": "s9",

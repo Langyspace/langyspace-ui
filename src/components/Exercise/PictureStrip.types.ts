@@ -7,6 +7,8 @@ export interface PictureStripItem {
   alt: string
   caption: string
   region?: PictureRegion
+  /** Contextual image evidence, such as an official flag, over the picture. */
+  imageBadge?: { src: string; alt: string }
 }
 export interface PictureStripProps extends ComponentPropsWithRef<'section'> {
   items: readonly PictureStripItem[]

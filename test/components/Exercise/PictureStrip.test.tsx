@@ -26,6 +26,7 @@ it('keeps distinct visual prompts and their captions accessible from an unchange
           src: '/coffee.webp',
           alt: 'Coffee with a friend',
           caption: 'Saturday afternoon',
+          imageBadge: { src: '/flag-br.svg', alt: 'Brazil' },
         },
       ]}
     />,
@@ -40,6 +41,10 @@ it('keeps distinct visual prompts and their captions accessible from an unchange
     screen.getByRole('img', { name: 'Coffee with a friend' }),
   ).toHaveAttribute('src', '/coffee.webp')
   expect(screen.getAllByRole('figure')).toHaveLength(2)
+  expect(screen.getByRole('img', { name: 'Brazil' })).toHaveAttribute(
+    'src',
+    '/flag-br.svg',
+  )
   expect(screen.getByText('Saturday morning')).toBeVisible()
 })
 it('renders the visual prompts without a browser', () => {

@@ -102,8 +102,9 @@
   Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
   Guided dialogue and comprehension share SlidePage’s two-column questions slot. Comprehension uses
   the canonical QuestionList with at least three meaningful questions per block, full-sentence factual
-  answers and hints that replace answers in the same reserved slot. Reuse the starred Questions eyebrow
-  and one progressive bulb centered outside the list at the column end. Do not invent answers for open
+  answers and hints that replace answers in the same content-sized slot. Use individual equal-width
+  cards with natural height, small pink numbers and medium-weight prompts. Reuse the starred Questions
+  eyebrow and one progressive bulb immediately below the last card, aligned right. Do not invent answers for open
   practice or add repetitive questions just to meet the minimum. Live personal practice
   keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.
   Open review and oral reply pages also use live participant bubbles with first-click response support;

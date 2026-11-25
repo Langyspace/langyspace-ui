@@ -8,7 +8,12 @@ export function PictureStrip({ items, ...props }: PictureStripProps) {
     <S.Root {...props} $count={Math.max(1, Math.min(3, items.length))}>
       {items.map((item) => (
         <S.Figure key={item.id}>
-          <PictureImage src={item.src} alt={item.alt} region={item.region} />
+          <S.Media>
+            <PictureImage src={item.src} alt={item.alt} region={item.region} />
+            {item.imageBadge ? (
+              <S.Badge src={item.imageBadge.src} alt={item.imageBadge.alt} />
+            ) : null}
+          </S.Media>
           <S.Caption>{item.caption}</S.Caption>
         </S.Figure>
       ))}

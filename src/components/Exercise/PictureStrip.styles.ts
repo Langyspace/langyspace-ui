@@ -23,6 +23,18 @@ export const Figure = styled.figure`
   border: 1px solid ${(p) => resolveSlideTheme(p).border};
   background: ${(p) => resolveSlideTheme(p).surface};
 `
+export const Media = styled.div`
+  position: relative;
+  min-width: 0;
+`
+export const Badge = styled.img`
+  position: absolute;
+  inset-block-start: ${theme.spacing[2]};
+  inset-inline-start: ${theme.spacing[2]};
+  width: ${theme.spacing[8]};
+  height: ${theme.spacing[6]};
+  object-fit: contain;
+`
 export const Caption = styled.figcaption`
   white-space: pre-line;
   text-align: center;

@@ -1,11 +1,13 @@
 import { ReviewedLesson } from '../shared/ReviewedLesson'
 import type { ReviewedPage } from '../shared/ReviewedLesson.types'
+import { CountryFeelingRoleplay } from './CountryFeelingRoleplay'
 import type { A101LessonProps } from './A101.types'
 import data from './A101.review.json'
 import provenance from './audio-provenance.json'
 import additions from './audio-provenance80.json'
 import restored from './audio-provenance94.json'
 import greetings from './audio-provenance107.json'
+import conversation from './audio-provenance110.json'
 
 const images = import.meta.glob('./assets/*.{webp,png,svg}', {
   eager: true,
@@ -22,6 +24,7 @@ const recordings = [
   ...additions.items,
   ...restored.items,
   ...greetings.items,
+  ...conversation.items,
 ].map((clip) => {
   const src = audio['./' + clip.file]
   if (!src) throw new Error(`Missing prepared A1.01 audio: ${clip.id}`)
@@ -64,6 +67,10 @@ export function A101Lesson({ initialPageId, learnerName }: A101LessonProps) {
       initialPageId={initialPageId}
       learnerName={learnerName}
       notesStorageKey="langy-notes:a1-01"
+      activities={{
+        s10: <CountryFeelingRoleplay />,
+        s_roleplay_challenge110: <CountryFeelingRoleplay challenge />,
+      }}
       freeConversationInstruction="Get to know each other: introduce yourself, ask about your teacher and react to her answers"
     />
   )

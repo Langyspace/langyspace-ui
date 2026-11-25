@@ -33,6 +33,26 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 export const Default: Story = {}
+export const LongQuestion: Story = {
+  args: {
+    items: [
+      meta.args.items[0]!,
+      {
+        id: 'detail',
+        prompt:
+          'What does Ana say when she meets Kim for the first time at the café?',
+        hint: 'She starts with a greeting, then introduces herself',
+        answer:
+          'Ana says hello, introduces herself and says it is nice to meet Kim',
+      },
+      meta.args.items[2]!,
+    ],
+  },
+}
+export const Narrow: Story = {
+  ...LongQuestion,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+}
 export const BesideDialogue: Story = {
   render: (args) => (
     <MaterialTheme>

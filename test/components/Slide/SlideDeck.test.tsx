@@ -173,7 +173,7 @@ describe('SlideDeck', () => {
     scroll(0)
     expect(screen.getByRole('textbox')).toHaveValue('Minha resposta')
     expect(
-      screen.queryByRole('button', { name: 'Voltar', exact: true }),
+      screen.queryByRole('button', { name: 'Voltar' }),
     ).not.toBeInTheDocument()
   })
 
@@ -246,7 +246,7 @@ describe('SlideDeck', () => {
     render(<SlideDeck label="Aula" pages={pages} />)
     const { scroll, scrollTo, viewport } = geometry()
     scroll(500)
-    fireEvent.click(screen.getByRole('button', { name: 'Voltar', exact: true }))
+    fireEvent.click(screen.getByRole('button', { name: 'Voltar' }))
     expect(scrollTo).toHaveBeenLastCalledWith({ top: 0, behavior: 'smooth' })
     expect(viewport).toHaveFocus()
   })

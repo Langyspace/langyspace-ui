@@ -1,16 +1,22 @@
 import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
+import { alpha } from '../../foundations/theme/alpha'
 import { recipe } from './Exercise.shared.styles'
-import { PromptTrigger, PromptAnswer } from './RevealCard.styles'
+import {
+  PromptTrigger,
+  PromptAnswer,
+  GuidanceContent,
+} from './RevealCard.styles'
 
 export const Root = styled.div.withConfig({
   componentId: 'lsui-sc-question-list',
 })<{ $compact: boolean }>`
   display: flex;
-  flex: 1;
+  flex: 0 0 auto;
   flex-direction: column;
   min-width: 0;
-  gap: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[4])};
+  gap: ${theme.spacing[2]};
+  width: 100%;
   font-family: ${theme.typography.fontFamily.sans};
   color: ${(p) => recipe(p).foreground};
 `
@@ -21,29 +27,38 @@ export const PromptList = styled.ol`
   margin: 0;
   display: grid;
   min-width: 0;
-  border: 1px solid ${(p) => recipe(p).border};
-  border-radius: ${theme.radius.xl};
-  background: ${(p) => recipe(p).surface};
+  width: 100%;
+  gap: ${theme.spacing[2]};
 `
 
 export const Prompt = styled.li<{ $numbered?: boolean; $compact: boolean }>`
   display: grid;
+  box-sizing: border-box;
   min-width: 0;
+  width: 100%;
   gap: ${theme.spacing[2]};
   padding: ${(p) => (p.$compact ? theme.spacing[2] : theme.spacing[3])}
     ${theme.spacing[4]};
-  &:not(:first-child) {
-    border-top: 1px solid ${(p) => recipe(p).border};
-  }
+  border: 1px solid ${(p) => recipe(p).border};
+  border-radius: ${theme.radius.lg};
+  background: ${(p) => recipe(p).surface};
   p {
     margin: 0;
   }
   ${PromptTrigger} {
     font-size: ${theme.typography.fontSize.lg};
+    font-weight: ${theme.typography.fontWeight.medium};
   }
   ${PromptAnswer} {
-    margin-inline-start: ${(p) => (p.$numbered ? `calc(${theme.spacing[8]} + ${theme.spacing[3]})` : '0')};
+    margin-inline-start: ${(p) => (p.$numbered ? `calc(${theme.spacing[6]} + ${theme.spacing[3]})` : '0')};
     font-size: ${theme.typography.fontSize.md};
+    min-block-size: 0;
+    &[aria-hidden='true'] {
+      display: none;
+    }
+  }
+  ${GuidanceContent}:not(:has([aria-hidden='false'])) {
+    display: none;
   }
 `
 
@@ -51,26 +66,25 @@ export const Number = styled.span`
   display: inline-grid;
   place-items: center;
   flex-shrink: 0;
-  width: ${theme.spacing[8]};
-  height: ${theme.spacing[8]};
+  width: ${theme.spacing[6]};
+  height: ${theme.spacing[6]};
   border-radius: ${theme.radius.circle};
-  background: ${theme.colors.palette.accent.pinkHover};
-  color: ${theme.colors.palette.white};
-  font-size: ${theme.typography.fontSize.sm};
-  font-weight: ${theme.typography.fontWeight.bold};
+  background: ${alpha(theme.colors.palette.accent.pink, 0.12)};
+  color: ${theme.colors.palette.accent.pink};
+  font-size: ${theme.typography.fontSize.xs};
+  font-weight: ${theme.typography.fontWeight.medium};
 `
 
 export const Guidance = styled.p<{ $numbered: boolean }>`
-  padding-inline-start: ${(p) => (p.$numbered ? `calc(${theme.spacing[8]} + ${theme.spacing[3]})` : '0')};
+  padding-inline-start: ${(p) => (p.$numbered ? `calc(${theme.spacing[6]} + ${theme.spacing[3]})` : '0')};
   color: ${(p) => recipe(p).muted};
   font-size: ${theme.typography.fontSize.sm};
   line-height: ${theme.typography.lineHeight.normal};
 `
 
 export const Footer = styled.div`
-  margin-block-start: auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-shrink: 0;
 `
 
@@ -84,7 +98,7 @@ export const PromptQuestion = styled.div`
   p {
     flex: 1;
     min-width: 0;
-    font-weight: ${theme.typography.fontWeight.semibold};
+    font-weight: ${theme.typography.fontWeight.medium};
     font-size: ${theme.typography.fontSize.lg};
   }
 `
