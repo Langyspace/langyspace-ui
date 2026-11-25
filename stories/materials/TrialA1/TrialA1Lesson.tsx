@@ -17,6 +17,8 @@ import { LessonShell } from '../shared/LessonShell'
 import type { TrialA1LessonProps } from './TrialA1.types'
 import { content, order, parkScene } from './TrialA1.data'
 import { GreetingSection, PictureTalkSection } from './TrialA1.sections'
+import { MaterialVideoPage } from '../shared/MaterialVideoPage'
+import video from './TrialA1.video.json'
 export function TrialA1Lesson({
   initialPageId,
   levelLabel = 'A1',
@@ -128,6 +130,17 @@ export function TrialA1Lesson({
                   ),
                 }
               }
+              if (id === 's_video_comedy')
+                return {
+                  id,
+                  label: video.title,
+                  content: (
+                    <MaterialVideoPage
+                      content={video}
+                      active={activeId === id}
+                    />
+                  ),
+                }
               if (id === 'next-steps')
                 return {
                   id,

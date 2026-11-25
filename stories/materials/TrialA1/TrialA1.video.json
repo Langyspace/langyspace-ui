@@ -1,0 +1,37 @@
+{
+  "title": "Just a coffee?",
+  "instruction": "Watch his coffee order. Answer, then say how you like your coffee",
+  "video": {
+    "videoId": "piLiE7FNHcs",
+    "startSeconds": 0,
+    "endSeconds": 33,
+    "title": "Ordering Coffee these days be like…",
+    "credit": "That’s a Bad Idea"
+  },
+  "items": [
+    {
+      "id": "coffee-drink",
+      "prompt": "What drink does he want?",
+      "hint": "Listen to his first order",
+      "answer": "He wants a coffee"
+    },
+    {
+      "id": "coffee-size",
+      "prompt": "Does he want a small or a large coffee?",
+      "hint": "Listen after the question about milk",
+      "answer": "He wants a small coffee"
+    },
+    {
+      "id": "coffee-sugar",
+      "prompt": "How many sugars does he choose?",
+      "hint": "Listen at the end of the clip",
+      "answer": "He chooses two sugars"
+    },
+    {
+      "id": "coffee-you",
+      "prompt": "Do you like coffee? How do you like it?",
+      "hint": "Say yes or no, then add milk, sugar or another drink",
+      "answer": "Example: Yes, I do. I like coffee with milk and no sugar"
+    }
+  ]
+}

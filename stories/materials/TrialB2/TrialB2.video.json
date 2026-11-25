@@ -1,0 +1,37 @@
+{
+  "title": "Too busy to stop talking?",
+  "instruction": "Watch the waiter explain his workload. Discuss the pressure, the irony and a more useful response",
+  "video": {
+    "videoId": "Pm0M4s5hPl4",
+    "startSeconds": 33,
+    "endSeconds": 67,
+    "title": "He didn’t expect it to get this busy",
+    "credit": "That’s a Bad Idea"
+  },
+  "items": [
+    {
+      "id": "work-pressure",
+      "prompt": "Why is the restaurant suddenly so busy?",
+      "hint": "Think about the event across the street",
+      "answer": "A local play has just finished, and the audience has come to the restaurant at once"
+    },
+    {
+      "id": "work-irony",
+      "prompt": "What is ironic about his complaint about the long shift?",
+      "hint": "Compare what he asked his boss for with how he feels now",
+      "answer": "He had been asking his boss for longer shifts, but now he is overwhelmed by the extra work"
+    },
+    {
+      "id": "work-boundary",
+      "prompt": "How does the customer’s response change as the waiter keeps talking?",
+      "hint": "Compare the early reassurance with the final instruction",
+      "answer": "The customer first reassures him, then directly tells him to go because continuing the conversation is not helping"
+    },
+    {
+      "id": "work-response",
+      "prompt": "How could the waiter acknowledge the delay and set a clear expectation?",
+      "hint": "Keep the apology brief, give a next step and avoid making the customer manage his stress",
+      "answer": "Example: I’m sorry for the delay. We’re short-staffed tonight. I’ll check my other tables and come back to take your order"
+    }
+  ]
+}

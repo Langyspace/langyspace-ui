@@ -6,6 +6,7 @@ import type { TrialB1Content, TrialB1LessonProps } from './TrialB1.types'
 import source from './TrialB1.content.json'
 import sceneUrl from './assets/scene-roadside70.webp'
 import recordings from './TrialB1.recordings'
+import video from './TrialB1.video.json'
 
 const content = source as TrialB1Content
 const sceneClips = Object.fromEntries(
@@ -66,6 +67,7 @@ export function TrialB1Lesson({ initialPageId }: TrialB1LessonProps) {
       }}
       dialogue={content.dialogue}
       recordings={recordings}
+      video={video}
       freeConversationInstruction={content.freeConversationInstruction}
     />
   )

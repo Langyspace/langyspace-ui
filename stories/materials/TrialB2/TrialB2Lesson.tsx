@@ -5,6 +5,7 @@ import { TrialPreviewLesson } from '../shared/TrialPreviewLesson'
 import type { TrialB2LessonProps } from './TrialB2.types'
 import content from './TrialB2.content.json'
 import recordings from './TrialB2.recordings'
+import video from './TrialB2.video.json'
 
 const images = import.meta.glob('./assets/scene-*71.webp', {
   eager: true,
@@ -79,6 +80,7 @@ export function TrialB2Lesson({ initialPageId }: TrialB2LessonProps) {
       }}
       dialogue={content.dialogue}
       recordings={recordings}
+      video={video}
       freeConversationInstruction={content.freeConversationInstruction}
     />
   )

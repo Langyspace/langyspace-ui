@@ -2,6 +2,7 @@ import type { ReactNode } from 'react'
 import type { SlidePageProps } from '../../../src/components/Slide/SlidePage.types'
 import type { PreparedRecording } from '../../../src/internal/useRecordedAudio.types'
 import type { TrialIntroductionCopy } from './TrialIntroduction.types'
+import type { MaterialVideoPageContent } from './MaterialVideoPage.types'
 export interface TrialPreviewDialogue {
   title: string
   subtitle: string
@@ -30,4 +31,5 @@ export interface TrialPreviewLessonProps {
   dialogue: TrialPreviewDialogue
   recordings: readonly PreparedRecording[]
   freeConversationInstruction: string
+  video?: MaterialVideoPageContent
 }

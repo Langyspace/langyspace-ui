@@ -1,0 +1,37 @@
+{
+  "title": "Small talk before take-off",
+  "instruction": "Watch the awkward travel small talk. Notice the offers, then suggest a more natural approach",
+  "video": {
+    "videoId": "jJtl4E72kB4",
+    "startSeconds": 19,
+    "endSeconds": 44,
+    "title": "POV you’re the cute girl at the airport",
+    "credit": "That’s a Bad Idea"
+  },
+  "items": [
+    {
+      "id": "trip-context",
+      "prompt": "Which details tell you they are travelling by plane?",
+      "hint": "Listen for the take-off and the boarding door",
+      "answer": "They mention a smooth take-off and closing the boarding door"
+    },
+    {
+      "id": "trip-offer",
+      "prompt": "What does one passenger offer to help with?",
+      "hint": "Watch the bag and listen to the first question",
+      "answer": "He offers to help put her bag away"
+    },
+    {
+      "id": "trip-request",
+      "prompt": "What does a passenger ask her to do if he falls asleep?",
+      "hint": "He gives her permission to interrupt his sleep",
+      "answer": "He asks her to wake him up or nudge him"
+    },
+    {
+      "id": "trip-you",
+      "prompt": "How would you start a friendly conversation without making a stranger uncomfortable?",
+      "hint": "Keep it brief, use the travel situation and leave room for them not to chat",
+      "answer": "Example: Is this your first time visiting Dublin? No worries if you’d rather relax"
+    }
+  ]
+}

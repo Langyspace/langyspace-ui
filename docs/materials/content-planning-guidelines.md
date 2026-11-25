@@ -38,6 +38,13 @@ Decisões atuais para lembrar:
 - Notícias e palestras com dados históricos mantêm o recorte temporal explícito. Uma afirmação do entrevistado não se transforma em fato atual ou previsão garantida; perguntas de análise podem justamente examinar essa distinção
 - A autoria fica no JSON ativo da lição; o inventário em `docs/epics/material-video102/curation.json` registra fonte, intervalo, objetivo e evidência. Os cinco planos por nível facilitam a revisão. O player e Questions continuam sendo os componentes canônicos, sem estilos ou controles por aula
 
+### Sketches nas experimentais — revisão103
+
+- Escolher uma situação ligada ao tema da experimental. No A1/A2, apoiar compreensão de escolhas concretas; no B1/B2, contexto e pequenas interações; no C1/C2, ironia, expectativas e reformulação. A rapidez da comédia não vira uma exigência de entender todas as palavras
+- Conferir a incorporação na própria aula: abrir no YouTube ou obter metadados não prova que o vídeo toca no iframe. Preferir o canal oficial e substituir uma fonte bloqueada, sem baixar ou republicar o vídeo
+- Manter quatro perguntas, ajuda progressiva, intervalo fixo e uma aplicação oral. O recorte precisa conter a evidência da resposta; uma interpretação possível fica distinta de um fato ou de um modelo aberto. Evitar depender de palavrões, nomes mal transcritos ou referências culturais sem apoio para resolver a atividade
+- A atividade de vídeo vem antes da conversa livre; preservar a conversa livre penúltima e o fechamento de matrícula último nas experimentais
+
 ## Flashcards — mínimo de 20 itens por conjunto
 
 **Atribuir o conjunto existente completo — revisão97.** Antes de criar um conjunto por aula, procurar uma atividade temática já publicada e compatível. Se houver, a prévia e o link devem usar o mesmo ID, título, todos os cartões e mídias dessa atividade; nunca montar uma amostra de seis como se fosse o dever completo. Conferir a disponibilidade para o nível e o ambiente por leitura. Na A1.01, o conjunto correto é `deck-a2-countries` (Countries, 48 cartões), já disponível para A1; o identificador histórico não determina sozinho a trava de nível. Preservar IDs e progressos dos conjuntos antigos e não regenerar mídias válidas para fazer esse vínculo. A prévia embutida registra a fonte verificada e deve ser atualizada no export quando a atividade mudar.

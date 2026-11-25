@@ -13,6 +13,7 @@ import {
 } from './lessonOpeningPolicy'
 import { characterPortrait } from './characterPortraits'
 import { TrialIntroduction } from './TrialIntroduction'
+import { MaterialVideoPage } from './MaterialVideoPage'
 import type {
   TrialPreviewLessonProps,
   TrialPreviewConversationProps,
@@ -95,6 +96,7 @@ export function TrialPreviewLesson({
   dialogue,
   recordings,
   freeConversationInstruction,
+  video,
 }: TrialPreviewLessonProps) {
   const introductionPage = introduction
     ? {
@@ -124,6 +126,7 @@ export function TrialPreviewLesson({
           ...introductionPages.map((page) => page.id),
           's2',
           's3',
+          ...(video ? ['s_video_comedy'] : []),
           'free-conversation',
           'next-steps',
         ])}
@@ -156,6 +159,20 @@ export function TrialPreviewLesson({
                 />
               ),
             },
+            ...(video
+              ? [
+                  {
+                    id: 's_video_comedy',
+                    label: video.title,
+                    content: (
+                      <MaterialVideoPage
+                        content={video}
+                        active={activeId === 's_video_comedy'}
+                      />
+                    ),
+                  },
+                ]
+              : []),
             {
               id: 'free-conversation',
               label: 'Free conversation',
