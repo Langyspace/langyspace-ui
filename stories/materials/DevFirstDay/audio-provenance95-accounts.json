@@ -1,0 +1,563 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "items": [
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.EX.0",
+      "speaker": "Kim",
+      "text": "My first task is to build the login screen",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.EX.0.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "1tz5XKJcU6IUZ49jgStu",
+      "synthesisInput": "My first task is to build the login screen",
+      "requestBody": {
+        "text": "My first task is to build the login screen",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "1tz5XKJcU6IUZ49jgStu",
+        "character-cost": "17",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 56885,
+      "sha256": "bd918ab2248bc1fb2864571c2249e29b194d8f37b920e4e8163bbd93ab3e050d",
+      "durationSeconds": 3.482993
+    },
+    {
+      "material": "DevFirstDay",
+      "speaker": "Kim",
+      "id": "ACCOUNT.CALL.4",
+      "text": "Today, your task is to build the login screen for our new customer portal. You’re working on the frontend. Could you repeat that back to me?",
+      "cue": "Confirm which screen you will build and which part of the project you will work on",
+      "hint": "So, I’ll build… / I’ll work on…",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.CALL.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "y1gO380epadI29HgDt44",
+      "synthesisInput": "Today, your task is to build the login screen for our new customer portal. You're working on the frontend. Could you repeat that back to me?",
+      "requestBody": {
+        "text": "Today, your task is to build the login screen for our new customer portal. You're working on the frontend. Could you repeat that back to me?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "y1gO380epadI29HgDt44",
+        "character-cost": "56",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 164718,
+      "sha256": "28fa728ad3b526397aa1519ea2c364d263c07993749b79b2d730f5db05eda18d",
+      "durationSeconds": 10.21678
+    },
+    {
+      "material": "DevFirstDay",
+      "speaker": "Kim",
+      "id": "ACCOUNT.FEEDBACK",
+      "text": "Thanks for showing the login screen. The form is clear, and the error message helps. Could you make the Forgot password link easier to find on mobile? Let’s add that to our next tasks.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.FEEDBACK.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "42HKLNoCZcqA4T5iumcq",
+      "synthesisInput": "Thanks for showing the login screen. The form is clear, and the error message helps. Could you make the Forgot password link easier to find on mobile? Let's add that to our next tasks.",
+      "requestBody": {
+        "text": "Thanks for showing the login screen. The form is clear, and the error message helps. Could you make the Forgot password link easier to find on mobile? Let's add that to our next tasks.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "42HKLNoCZcqA4T5iumcq",
+        "character-cost": "74",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 209022,
+      "sha256": "0004055b3bbea78bf404b2345bc725458093bdb85547acd60791e6dd0580b5db",
+      "durationSeconds": 13.003175
+    },
+    {
+      "material": "DevFirstDay",
+      "speaker": "Kim",
+      "id": "ACCOUNT.SH.3",
+      "text": "What should happen when the user clicks Sign in?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.SH.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "pMhdMxcatenIiGuVemTW",
+      "synthesisInput": "What should happen when the user clicks Sign in?",
+      "requestBody": {
+        "text": "What should happen when the user clicks Sign in?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "pMhdMxcatenIiGuVemTW",
+        "character-cost": "19",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 57721,
+      "sha256": "2a3406dc4ad37644b8023536e019e0a08d55e72d4c117d16451b76a570e335b2",
+      "durationSeconds": 3.529433
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.PLAN.1",
+      "text": "We’re building the customer portal. You own the login screen. What should a customer be able to do in the first version?",
+      "speaker": "Kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.PLAN.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "W9JRADl7nWDFZH52GYaa",
+      "synthesisInput": "We're building the customer portal. You own the login screen. What should a customer be able to do in the first version?",
+      "requestBody": {
+        "text": "We're building the customer portal. You own the login screen. What should a customer be able to do in the first version?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "W9JRADl7nWDFZH52GYaa",
+        "character-cost": "48",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 137969,
+      "sha256": "dccfc836e3c60ef239d3209fccd328b089d1f85e0f29ec705b5647f129f58a57",
+      "durationSeconds": 8.544943
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.PLAN.2",
+      "text": "I’d add Google login first. Most people don’t want another password. Why start with email and password?",
+      "speaker": "Owen",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "accent": "British English",
+      "file": "assets/audio/ACCOUNT.PLAN.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "hcAGtsXWrsKB7U6o12hm",
+      "synthesisInput": "I'd add Google login first. Most people don't want another password. Why start with email and password?",
+      "requestBody": {
+        "text": "I'd add Google login first. Most people don't want another password. Why start with email and password?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "hcAGtsXWrsKB7U6o12hm",
+        "character-cost": "41",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 114563,
+      "sha256": "09697db1f1bf5fe4cc71362c90801cdda39305cf7faa725d35fa987e1251d34e",
+      "durationSeconds": 7.105306
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.PLAN.3",
+      "text": "The email and password API is ready. Google login would need more backend work. What information do you need from me?",
+      "speaker": "Priya",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "accent": "Indian English",
+      "file": "assets/audio/ACCOUNT.PLAN.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "F2BjujnFQbDLBMvvJiu1",
+      "synthesisInput": "The email and password API is ready. Google login would need more backend work. What information do you need from me?",
+      "requestBody": {
+        "text": "The email and password API is ready. Google login would need more backend work. What information do you need from me?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "F2BjujnFQbDLBMvvJiu1",
+        "character-cost": "47",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 125848,
+      "sha256": "2e650579d19664ff0923fef7f2ade36503e31414c830bf21577387524989a2df",
+      "durationSeconds": 7.801905
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.PLAN.4",
+      "text": "I’ve finished the password reset screen. Your login screen only needs a Forgot password link to open it. Where will you put that link?",
+      "speaker": "Ruby",
+      "voiceId": "56bWURjYFHyYyVf490Dp",
+      "accent": "Australian English",
+      "file": "assets/audio/ACCOUNT.PLAN.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "DqDlsSUkkgTngUNSPCey",
+      "synthesisInput": "I've finished the password reset screen. Your login screen only needs a Forgot password link to open it. Where will you put that link?",
+      "requestBody": {
+        "text": "I've finished the password reset screen. Your login screen only needs a Forgot password link to open it. Where will you put that link?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "DqDlsSUkkgTngUNSPCey",
+        "character-cost": "54",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 117071,
+      "sha256": "e7f5f7b56b30b5210bf5fe7a031a4fc2459601d43cfb34d8b7f6f987403cbffc",
+      "durationSeconds": 7.244626
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.PLAN.5",
+      "text": "What should the screen show if the email or password is wrong? We need to make that clear without losing what the customer typed.",
+      "speaker": "Niamh",
+      "voiceId": "t6WJWTYTryhcQnrBHdCr",
+      "accent": "Irish English",
+      "file": "assets/audio/ACCOUNT.PLAN.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "m04f2fwu6mngGc1QrSvp",
+      "synthesisInput": "What should the screen show if the email or password is wrong? We need to make that clear without losing what the customer typed.",
+      "requestBody": {
+        "text": "What should the screen show if the email or password is wrong? We need to make that clear without losing what the customer typed.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "m04f2fwu6mngGc1QrSvp",
+        "character-cost": "52",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 132536,
+      "sha256": "c3d24005f9d4dca7b6acdce2bbd959a999a4e9e308aef6e101fd42973a6a857a",
+      "durationSeconds": 8.219864
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.REVIEW.1",
+      "text": "I’ve finished the registration screen. A new customer can enter their name, email and password, then create an account. If an email is already in use, the page shows a clear message.",
+      "speaker": "Owen",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "accent": "British English",
+      "file": "assets/audio/ACCOUNT.REVIEW.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "QvEjAakDggZVBx3g9TQQ",
+      "synthesisInput": "I've finished the registration screen. A new customer can enter their name, email and password, then create an account. If an email is already in use, the page shows a clear message.",
+      "requestBody": {
+        "text": "I've finished the registration screen. A new customer can enter their name, email and password, then create an account. If an email is already in use, the page shows a clear message.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "QvEjAakDggZVBx3g9TQQ",
+        "character-cost": "73",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 180183,
+      "sha256": "959304d6ad5a8f4386967b8c4f8e26e18fd0156e0504dca80d9c944dafa91618",
+      "durationSeconds": 11.192018
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.REVIEW.2",
+      "text": "I’ve built the password reset screen. The customer enters their email and asks for a reset link. After they send it, the page tells them to check their inbox. They don’t need to remember their old password.",
+      "speaker": "Ruby",
+      "voiceId": "56bWURjYFHyYyVf490Dp",
+      "accent": "Australian English",
+      "file": "assets/audio/ACCOUNT.REVIEW.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "E12hZ5DhdSV77xa12Yma",
+      "synthesisInput": "I've built the password reset screen. The customer enters their email and asks for a reset link. After they send it, the page tells them to check their inbox. They don't need to remember their old password.",
+      "requestBody": {
+        "text": "I've built the password reset screen. The customer enters their email and asks for a reset link. After they send it, the page tells them to check their inbox. They don't need to remember their old password.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "E12hZ5DhdSV77xa12Yma",
+        "character-cost": "82",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 174750,
+      "sha256": "ee6902a81d8b246353c33b7bf90431ae409f80cdeb6e7f543decdf6476261db8",
+      "durationSeconds": 10.866939
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.REVIEW.3",
+      "text": "The backend now supports registration, login and password reset. The login API checks the email and password. If they are correct, it returns a session. If not, it returns an error for the screen to show.",
+      "speaker": "Priya",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "accent": "Indian English",
+      "file": "assets/audio/ACCOUNT.REVIEW.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "WXCKyMi8PpJ1P0edankw",
+      "synthesisInput": "The backend now supports registration, login and password reset. The login API checks the email and password. If they are correct, it returns a session. If not, it returns an error for the screen to show.",
+      "requestBody": {
+        "text": "The backend now supports registration, login and password reset. The login API checks the email and password. If they are correct, it returns a session. If not, it returns an error for the screen to show.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "WXCKyMi8PpJ1P0edankw",
+        "character-cost": "82",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 275896,
+      "sha256": "0831b8678ada093e2edce5d2bb5a4db6051347be3522b40452e61c38902d141b",
+      "durationSeconds": 17.182766
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "ACCOUNT.REVIEW.4",
+      "text": "Now show us your login screen. Explain how a customer signs in, what happens when the password is wrong, and how they can reset it.",
+      "speaker": "Kim",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/ACCOUNT.REVIEW.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "KGu5355ZywDwD0fJUhqh",
+      "synthesisInput": "Now show us your login screen. Explain how a customer signs in, what happens when the password is wrong, and how they can reset it.",
+      "requestBody": {
+        "text": "Now show us your login screen. Explain how a customer signs in, what happens when the password is wrong, and how they can reset it.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "KGu5355ZywDwD0fJUhqh",
+        "character-cost": "52",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 162211,
+      "sha256": "e9c4e25935cd2b50c2defc2ed32db93669cc81e1e0945053de9e0617cac21762",
+      "durationSeconds": 10.07746
+    }
+  ],
+  "requestSha256": "182cc03870c1a366fd6e34308862b190139fc626c2cf585a1edbeef260adf454",
+  "status": "ready"
+}

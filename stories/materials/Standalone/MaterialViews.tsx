@@ -1,4 +1,9 @@
 import { lazy } from 'react'
+const DevFirstDay = lazy(() =>
+  import('../DevFirstDay/DevFirstDayLesson').then((m) => ({
+    default: m.DevFirstDayLesson,
+  })),
+)
 const Course = lazy(() =>
   import('../Course/CourseLesson').then((m) => ({ default: m.CourseLesson })),
 )
@@ -62,6 +67,7 @@ export function MaterialView({
   materialKey,
   studentPortalOrigin,
 }: MaterialViewProps) {
+  if (materialKey === 'extra-dev-first-day') return <DevFirstDay />
   if (materialKey === 'extra-influencer-routine') return <InfluencerRoutine />
   if (materialKey === 'trial-b1') return <TrialB1 />
   if (materialKey === 'trial-b2') return <TrialB2 />

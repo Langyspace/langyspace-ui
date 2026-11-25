@@ -14,6 +14,11 @@ Use the existing Card (or an exercise's own panel) inside the content slot when 
 
 The consumer supplies content and actions. Do not use this component for fetching a lesson or selecting an exercise type.
 
+`columnAlignment="center"` vertically centers the content and its `questions` slot
+within their shared row. The default remains `start` for existing lessons. Use the
+centered pairing for a device/board beside a shorter live conversation; this does
+not move the slide heading or change its width.
+
 ## SlideDeck
 
 Scrollable sequence of `{ id, label, content }` pages. Give its parent an explicit available height; the deck fills that height and keeps the portal's surrounding shell stationary. Every page occupies at least its viewport and can grow to fit long content. Native scroll snapping supports mouse, touch and keyboard, while mounted pages preserve exercise state.

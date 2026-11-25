@@ -61,6 +61,7 @@ function DialogueAction({
 
 export function LearningDialogue({
   lines,
+  footerAction,
   learnerIdentity,
   guidance,
   sequentialGuidance,
@@ -248,28 +249,30 @@ export function LearningDialogue({
                   role="group"
                   aria-label={`Support: ${supportContext}`}
                 >
-                  <VocabularyControls
-                    density="compact"
-                    showInitial={level === 'hint'}
-                    showAll={level === 'full'}
-                    onToggleInitial={() =>
-                      levelGuidance.onChange(
-                        level === 'hint' ? 'cue' : 'hint',
-                        line.id,
-                      )
-                    }
-                    onToggleAll={() =>
-                      levelGuidance.onChange(
-                        level === 'full' ? 'cue' : 'full',
-                        line.id,
-                      )
-                    }
-                    labels={{
-                      hint: `${level === 'hint' ? 'Hide' : 'Show'} tip: ${supportContext}`,
-                      showAll: `Show model: ${supportContext}`,
-                      hideAll: `Hide model: ${supportContext}`,
-                    }}
-                  />
+                  {inlineGuidance && levelGuidance ? (
+                    <VocabularyControls
+                      density="compact"
+                      showInitial={level === 'hint'}
+                      showAll={level === 'full'}
+                      onToggleInitial={() =>
+                        levelGuidance.onChange(
+                          level === 'hint' ? 'cue' : 'hint',
+                          line.id,
+                        )
+                      }
+                      onToggleAll={() =>
+                        levelGuidance.onChange(
+                          level === 'full' ? 'cue' : 'full',
+                          line.id,
+                        )
+                      }
+                      labels={{
+                        hint: `${level === 'hint' ? 'Hide' : 'Show'} tip: ${supportContext}`,
+                        showAll: `Show model: ${supportContext}`,
+                        hideAll: `Hide model: ${supportContext}`,
+                      }}
+                    />
+                  ) : null}
                 </Styled.LineControls>
               ) : null}
               {onPlay && line.audioLabel ? (
@@ -298,6 +301,11 @@ export function LearningDialogue({
           </Styled.DialogueLine>
         )
       })}
+      {footerAction ? (
+        <Styled.FooterAction role="group" aria-label="Conversation support">
+          {footerAction}
+        </Styled.FooterAction>
+      ) : null}
     </Styled.Dialogue>
   )
   if (sequential && supportedLines.length)

@@ -191,8 +191,10 @@ export const MonitorPanel = styled.section`
   min-width: 0;
   color: ${(p) => recipe(p).foreground};
 `
-export const Screen = styled.div`
+export const Screen = styled.div<{ $aspectRatio?: number }>`
   width: 100%;
+  aspect-ratio: ${(p) => p.$aspectRatio};
+  box-sizing: ${(p) => (p.$aspectRatio ? 'border-box' : undefined)};
   min-width: 0;
   min-height: min-content;
   display: flex;
@@ -239,12 +241,16 @@ export const ScreenHeader = styled.h3`
   line-height: 1.3;
   color: inherit;
 `
-export const ScreenBody = styled.div<{ $form: boolean }>`
+export const ScreenBody = styled.div<{
+  $form: boolean
+  $textAlign?: 'start' | 'center'
+}>`
   display: ${(p) => (p.$form ? 'grid' : 'block')};
   grid-template-columns: ${(p) => (p.$form ? 'repeat(2, minmax(0, 1fr))' : undefined)};
   align-content: center;
   flex: 1 0 auto;
   min-width: 0;
+  text-align: ${(p) => p.$textAlign};
   padding: ${theme.spacing[4]};
   gap: ${theme.spacing[3]};
   > :last-child:nth-child(odd) {
@@ -268,6 +274,22 @@ export const Taskbar = styled.div`
   > span {
     min-width: 0;
     overflow-wrap: anywhere;
+  }
+`
+export const ScreenMedia = styled.div`
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  margin-bottom: ${theme.spacing[3]};
+  > img {
+    display: block;
+    width: 100%;
+    height: clamp(
+      ${theme.spacing[24]},
+      18cqh,
+      calc(${theme.spacing[32]} + ${theme.spacing[4]})
+    );
+    object-fit: contain;
   }
 `
 export const DesktopClock = styled.div`

@@ -45,6 +45,11 @@ export const InSlideDeck: Story = {
 export const Standalone: Story = {
   render: (args) => <VoiceMessageDemo {...args} />,
 }
+export const BalancedTopAligned: Story = {
+  ...Default,
+  args: { layout: 'balanced', columnAlignment: 'start' },
+  tags: ['layout-boundary', 'visual-review'],
+}
 export const LightPhoneInDarkMaterial: Story = {
   args: { contact: { name: 'Leo', status: 'online' } },
   decorators: [

@@ -9,7 +9,12 @@ export { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGr
 
 export const Vocabulary = styled.div.withConfig({
   componentId: 'lsui-sc-vocabulary-grid',
-})<{ $columns?: 2 | 3 | 4; $regularScene?: boolean; $reference?: boolean }>`
+})<{
+  $columns?: 2 | 3 | 4
+  $native?: boolean
+  $regularScene?: boolean
+  $reference?: boolean
+}>`
   display: grid;
   grid-template-columns: repeat(
     ${(p) => (p.$reference ? 7 : (p.$columns ?? 3))},
@@ -26,12 +31,13 @@ export const Vocabulary = styled.div.withConfig({
       : undefined}
   @container (max-width: ${theme.breakpoints.sm}) {
     grid-template-columns: repeat(
-      ${(p) => (p.$reference ? 4 : p.$columns === 4 ? 2 : (p.$columns ?? 2))},
+      ${(p) => (p.$reference ? 4 : p.$native || p.$columns === 4 ? 2 : (p.$columns ?? 2))},
       minmax(0, 1fr)
     );
   }
 `
 export const Word = styled(Pressable)<{
+  $native?: boolean
   $plain?: boolean
   $static?: boolean
   $symbol?: boolean
@@ -85,6 +91,21 @@ export const Word = styled(Pressable)<{
     outline: 2px solid ${(p) => recipe(p).accent};
     outline-offset: 2px;
   }
+  ${(p) =>
+    p.$native
+      ? css`
+          && {
+            display: flex;
+            flex-direction: column;
+            gap: ${theme.spacing[2]};
+            align-items: stretch;
+            height: 100%;
+            min-height: 0;
+            aspect-ratio: auto;
+            padding: ${theme.spacing[2]};
+          }
+        `
+      : undefined}
 `
 export const WordImage = styled.img<{
   $scene: boolean
@@ -164,6 +185,7 @@ export const WordCaption = styled.span`
   ${vocabularyLabel}
 `
 export const WordLabel = styled.span<{
+  $native?: boolean
   $revealed: boolean
   $reference?: boolean
   $hasExample?: boolean
@@ -209,6 +231,21 @@ export const WordLabel = styled.span<{
           }
         `
       : undefined}
+  ${(p) =>
+    p.$native
+      ? css`
+          && {
+            position: static;
+            transform: none;
+            width: auto;
+            max-width: none;
+            margin-top: auto;
+            border-radius: ${theme.radius.lg};
+            padding: ${theme.spacing[2]};
+            min-height: 4.5em;
+          }
+        `
+      : undefined}
 `
 
 export const WordExample = styled.span`
@@ -231,4 +268,26 @@ export const WordSymbol = styled.span`
   font-weight: ${theme.typography.fontWeight.bold};
   line-height: 1;
   color: inherit;
+`
+
+/** Native diagram slot, above the same vocabulary label used by image cards. */
+export const WordVisual = styled.span`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: ${theme.spacing[2]};
+  width: 100%;
+  height: auto;
+  padding: ${theme.spacing[2]};
+  box-sizing: border-box;
+  font-family: ${theme.typography.fontFamily.sans};
+  font-size: ${theme.typography.fontSize.sm};
+  line-height: 1.3;
+  color: inherit;
+  > svg {
+    width: ${theme.spacing[8]};
+    height: ${theme.spacing[8]};
+    flex-shrink: 0;
+  }
 `

@@ -96,14 +96,16 @@
 
 ## Interactive lesson defaults
 
-- Before planning or revising lesson content, read [content planning guidelines](docs/materials/content-planning-guidelines.md).
+- Before planning or revising lesson content, read [content planning guidelines](docs/materials/content-planning-guidelines.md). For a new material, follow the
+  [consolidated authoring and launch workflow](docs/materials/material-authoring-playbook.md) before generating media.
   Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
   Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
   Guided dialogue and comprehension share SlidePage’s two-column questions slot. Comprehension uses
   numbered RevealCard prompts, not another participant/bubble conversation. Live personal practice
   keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.
   Independent introductory vocabulary groups each contain at least six items; do not combine unrelated
-  groups to meet the count. Continued dialogues and supplementary references need an explicit purpose.
+  groups to meet the count. Portal flashcard sets contain at least twenty distinct, useful words or
+  expressions tied to their lesson and level; keep the six-item introduction rule separate. Continued dialogues and supplementary references need an explicit purpose.
   New or replanned full guided dialogues and role-play models have at least six meaningful turns; isolated vocabulary objects
   use transparent assets. Do not expand unrelated lessons or start extra QA/automation from this rule.
   Grammar explanation pages contain meaning, form and examples only; put quizzes and evaluated practice on separate pages.

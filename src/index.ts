@@ -644,6 +644,13 @@ export type { SlidePageProps } from './components/Slide/SlidePage.types'
 
 export { ExercisePanel } from './components/Exercise/ExercisePanel'
 export type { ExercisePanelProps } from './components/Exercise/ExercisePanel.types'
+export { TaskBoard } from './components/TaskBoard/TaskBoard'
+export type {
+  TaskBoardProps,
+  TaskBoardColumn,
+  TaskBoardCard,
+  TaskBoardAssignee,
+} from './components/TaskBoard/TaskBoard.types'
 export { VocabularyGrid } from './components/Exercise/VocabularyGrid'
 export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.types'
 export { LearningDialogue } from './components/Exercise/LearningDialogue'

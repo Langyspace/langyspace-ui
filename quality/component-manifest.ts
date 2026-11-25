@@ -21,6 +21,29 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'TaskBoard',
+    interactive: false,
+    visual: true,
+    ownerPath: 'src/components/TaskBoard/TaskBoard.tsx',
+    runtimeMarker: 'lsui-sc-task-board',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/TaskBoard/TaskBoard.stories.tsx',
+      title: 'TaskBoard/TaskBoard',
+    },
+    test: { ...complete, path: 'test/components/TaskBoard/TaskBoard.test.tsx' },
+    reference: {
+      propsPath: 'src/components/TaskBoard/TaskBoard.types.ts',
+      documentation: {
+        path: 'docs/components/task-board.md',
+        anchor: 'taskboard',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'DeviceGallery',
     interactive: true,
     visual: true,

@@ -269,3 +269,9 @@ export const ThreeColumnExercise: Story = {
   },
   tags: ['visual-review', 'layout-boundary'],
 }
+
+export const CenteredConversationColumns: Story = {
+  ...TwoColumnConversation,
+  args: { ...TwoColumnConversation.args, columnAlignment: 'center' },
+  tags: ['layout-boundary', 'visual-review'],
+}

@@ -18,6 +18,10 @@ export interface ExercisePanelProps extends Omit<
   layout?: 'stacked' | 'split'
   /** Flow content by default in monitor mode; workstation keeps its compact form grid. */
   monitorLayout?: 'flow' | 'form'
+  /** Optional screen proportion; tall content can grow instead of being clipped. */
+  screenAspectRatio?: number
+  /** Text alignment inside the screen only; the window bar keeps its native layout. */
+  screenTextAlign?: 'start' | 'center'
   /** Bound a warm-up illustration to the presentation media scale; natural preserves its full-width framing. */
   warmupMediaSizing?: 'natural' | 'presentation'
   /** Warm-up keeps media above choices in one centered column, regardless of layout. */
@@ -26,5 +30,10 @@ export interface ExercisePanelProps extends Omit<
 
 export type ExerciseMonitorProps = Pick<
   ExercisePanelProps,
-  'title' | 'workstationMeta' | 'children'
+  | 'title'
+  | 'workstationMeta'
+  | 'children'
+  | 'screenAspectRatio'
+  | 'screenTextAlign'
+  | 'media'
 > & { form: boolean }

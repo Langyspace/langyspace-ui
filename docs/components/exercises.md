@@ -26,12 +26,25 @@ product choices, not clinically optimized frequencies or a retention guarantee.
 
 ## ExercisePanel
 
+`LearningDialogue.footerAction` centers a consumer-owned action at the bottom of
+a stretched conversation column, outside the bubbles. Compose it with
+`SlidePage columnAlignment="stretch"` or the equivalent voice-message layout.
+Omitting the slot preserves existing message layouts.
+
 `variant="workstation"` owns the monitor frame, colored window bar, fixed taskbar,
 chin and stand. `workstationMeta` accepts `appLabel`, `clock` and `date` supplied
 by the exercise; these are illustrative metadata, not an operating-system clock.
 The body grows with the native form fields; chrome never flex-shrinks over them.
 Its silver frame and blue title bar use the workstation tokens in `theme.exercises`.
 The contextual image remains a separate media slot at a comparable scale.
+
+`variant="monitor"` can show its existing `media` slot inside the screen, above the
+native content, as a bounded contained illustration. `screenAspectRatio` optionally
+sets a familiar screen proportion; content can still grow instead of clipping.
+The workstation variant keeps its contextual media outside the monitor.
+`screenTextAlign="center"` centers the screen's message without moving the native
+window title, controls or any surrounding lesson content. Omit it to inherit the
+existing text alignment.
 
 `RevealCard presentation="prompt" answerMinLines={3}` can reserve a short model's
 minimum space when switching between content records. Longer text still grows;

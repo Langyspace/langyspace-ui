@@ -3,6 +3,8 @@ import type { VocabularyControlsProps } from './VocabularyControls.types'
 export interface VocabularyItem {
   id: string
   imageUrl?: string
+  /** Noninteractive native visual for concepts represented by an app or diagram. */
+  visual?: ReactNode
   /** Native letters/numerals, with the same reveal and playback contract as images. */
   symbol?: ReactNode
   imageAlt: string

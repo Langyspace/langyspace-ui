@@ -22,6 +22,7 @@ function VoiceMessageContent({
   onAnswer,
   active = true,
   layout = 'fluid',
+  columnAlignment,
   footer,
   replyAction,
   replayActionLabel,
@@ -84,7 +85,10 @@ function VoiceMessageContent({
       data-playback={status}
       data-listens={media.playCount}
     >
-      <Styled.Layout $balanced={layout === 'balanced'}>
+      <Styled.Layout
+        $balanced={layout === 'balanced'}
+        $alignment={columnAlignment}
+      >
         <MessagePhoneFrame
           aria-label={undefined}
           contact={
@@ -163,7 +167,11 @@ function VoiceMessageContent({
             />
           ))}
         </MessagePhoneFrame>
-        <Styled.Side role="group" aria-label={labels.questions}>
+        <Styled.Side
+          $stretch={columnAlignment === 'stretch'}
+          role="group"
+          aria-label={labels.questions}
+        >
           {questionHeading}
           {questions.map((question, index) => (
             <Styled.Question

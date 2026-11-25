@@ -63,6 +63,12 @@ export const Self = styled.div`
   border: 2px solid ${theme.simulations.canvas};
   padding-bottom: 10px;
   box-sizing: border-box;
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
   b {
     width: 45%;
     max-width: 40px;

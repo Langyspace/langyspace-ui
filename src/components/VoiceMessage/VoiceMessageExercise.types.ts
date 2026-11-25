@@ -63,6 +63,8 @@ export interface VoiceMessageExerciseProps extends Omit<
   active?: boolean
   /** Equal tracks centre a phone beside comprehension; fluid preserves legacy layouts. */
   layout?: 'fluid' | 'balanced'
+  /** Override vertical alignment without changing the layout's track widths. */
+  columnAlignment?: 'start' | 'center' | 'stretch'
   questions: readonly VoiceMessageQuestion[]
   /** Optional visible heading above the questions; the accessible group name remains in labels. */
   questionHeading?: ReactNode

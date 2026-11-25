@@ -1,7 +1,26 @@
 # Planejamento dos materiais Langy
 
 Fonte central de regras de conteúdo e apresentação. Ler antes de criar ou replanejar uma aula.
-Atualizada em 24/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
+Atualizada em 25/11/2026 a partir dos feedbacks dos materiais mantidos. A revisão final de uso, áudio e visual pertence à dona do curso.
+
+## Comece aqui para criar o próximo material
+
+Usar o [roteiro consolidado de criação e lançamento](material-authoring-playbook.md): situação → plano com texto/interação por página → componentes existentes → mídia → deveres → revisão local → cadastro/publicação. Ele reúne as decisões finais da revisão 95 e tem prioridade para novos materiais sobre descrições antigas de tentativas ou controles neste histórico.
+
+Decisões atuais para lembrar:
+
+- Contexto e ação precisam ficar claros pelo título, subtítulo e evidência visual. A aluna participa oralmente pela tela compartilhada; a professora tem sua pergunta pronta.
+- Balões no topo; em colunas pareadas, uma lâmpada fora deles, centralizada no rodapé da coluna. Na reunião, ajuda junto à navegação. Dica → exemplo completo → orientação, substituindo o texto em cada etapa.
+- Cena contextual e hotspots quando ajudarem a entender o vocabulário; molduras e controles da UI Library. Telas claras, retratos inteiros e sem rótulos duplicados.
+- Pelo menos 6 itens no bloco introdutório e 20 no conjunto de flashcards, com exemplos e áudio correspondentes. São mínimos de atividades diferentes.
+- Deveres preparados junto com a aula; link só depois de cadastro e mídia confirmados no ambiente correto. Revisão local, exercício no Student e material publicado são estados distintos.
+- Reutilizar evidências válidas e fazer verificações focadas. Não reconstruir nem publicar todo o catálogo a cada feedback.
+
+## Flashcards — mínimo de 20 itens por conjunto
+
+Regra de 25/11/2026: cada conjunto de flashcards precisa ter pelo menos 20 palavras ou expressões úteis, distintas e adequadas à aula e ao nível. Preservar itens válidos, completar o vocabulário realmente trabalhado e usar extensões pertinentes; não inflar a contagem com plurais, flexões ou frases quase iguais. Reaproveitar conjuntos temáticos de TI e outros já existentes quando fizerem sentido, mantendo exemplos, imagens e áudio correspondentes. A quantidade não substitui a curadoria.
+
+Esse mínimo é do conjunto de prática no portal. O mínimo de 6 itens por bloco introdutório na aula é uma regra separada. Conjuntos menores já publicados entram no plano de ampliação; não declarar que foram atualizados antes do cadastro e da leitura de confirmação. Ver [inventário e propostas por aula](../epics/dev-first-day95/homework/expansion-plan20.md).
 
 ## Perguntas conforme a finalidade — revisão94
 
@@ -341,3 +360,28 @@ Regra atual de compreensão substitui expressamente os trechos anteriores de pá
 - Activate a portal destination only after the exact activity payload and media have real readback receipts in that environment. Preview interactions never claim to save learner progress or send a message. Keep environment availability explicit; a staging receipt cannot enable a production link.
 - A six-question grammar quiz varies its mechanics: two contextual gaps, two grammatical judgments and two form choices. Each item references grammar actually taught in that lesson. Narrate the instruction and relevant English sentence, preserve a recording of the correct English form, and explain the reason in clear conversational Portuguese. A grammatical judgment can display a whole sentence because the task is to judge its form, not copy an answer from a reading prompt.
 - Preserve the regular-course shadowing allocation of 42 American-accent activities and 18 other accents (70/30 by activity). Reusing valid recordings in extra lessons does not require regenerating voices to force a fractional percentage across a different denominator.
+
+## Reuniões de trabalho — revisão 95
+
+- Em simulações sequenciais, cada fala dirigida à aluna explicita também a intenção da resposta dela e uma dica opcional. A resposta é ao vivo; não sintetizar a voz da aluna nem impor um texto pessoal como gabarito.
+- O mesmo ícone de apoio pode revelar em etapas: primeiro uma dica curta, no segundo clique uma frase completa de exemplo, no terceiro voltar à orientação. Cada etapa substitui a anterior no balão; não acumular instrução, dica e modelo. Ao mudar ou repetir a fala, recomeçar sem apoio revelado.
+- Com várias respostas apoiadas por um único ícone, revelar dica e modelo completo de cada resposta antes de passar à seguinte. Conservar as falas iniciais da professora para que os dois lados da prática fiquem claros; usar Teacher ou o primeiro nome/foto vindos do contexto real.
+- Reuniões com vários participantes mantêm o elenco visível e identificam quem está falando. Reutilizar o MeetingFrame e sua moldura/ícones; não duplicar rótulos internos que repetem o título.
+- No compartilhamento simulado, identificar quem apresenta na barra da janela, destacar a aplicação e manter os participantes numa coluna lateral. Reservar uma área livre na parte inferior da tela compartilhada para os balões, sem cobrir campos/ações nem dividir o formulário com a conversa. O conteúdo determina a altura; fotos não podem esticar a janela nem empurrar os controles para fora dela.
+- Miniaturas laterais mantêm o retrato inteiro centralizado, com o nome no badge inferior já aprovado. Corrigir o ajuste da imagem sem trocar a geometria do quadro nem mover o nome; uma janela maior não pode transformar o recorte em uma faixa mostrando só os olhos.
+- Planning pode praticar discordância respeitosa, dependências e negociação de escopo. O áudio não deve fingir conhecer a resposta livre que a aluna acabou de dar.
+- Review distingue apresentação de compreensão ou diálogo: mostrar evidência do trabalho de colegas antes de passar a apresentação à aluna. Não inflar apresentações para cumprir mecanicamente o mínimo de turnos de um diálogo.
+- Para interpretar um feedback recebido por áudio e responder, a mensagem pode ser o único insumo. Não repetir o protótipo na mesma página quando ele só aumenta a poluição ou antecipa a interpretação; manter uma intenção de resposta oral e ajuda opcional.
+- Sotaques variados usam identidades de voz consistentes e evidência do provider. Não alterar origem ou biografia de uma personagem por causa do sotaque da gravação.
+
+### Tela compartilhada e narrativa técnica concreta
+
+- Nas aulas apresentadas por compartilhamento de tela, a participação da aluna é oral. Não depender de ela clicar, digitar ou operar o computador da professora. Controles de protótipos servem à demonstração pela professora; a aluna explica, pede ações, negocia e apresenta. Atividades independentes de homework mantêm sua interação própria.
+- Antes de pedir que a aluna explique uma funcionalidade, identificar o produto, a tela dela, os campos/ações visíveis e a colaboração dos colegas. Evitar um nome técnico abstrato como único contexto. Na trilha dev, cadastro, login, recuperação de senha e respostas do backend oferecem evidência concreta para apresentar e discutir.
+- Monitores de apoio usam proporções reconhecíveis e contraste próprio em relação à página. Sobre o fundo escuro da aula, preferir a aplicação clara com texto escuro; não deixar o conteúdo do monitor se confundir com o fundo. A proporção é uma variação do frame canônico, sem fixar altura que corte conteúdo ou criar CSS por página.
+- Simplificar o conteúdo do computador sem remover a moldura que dá contexto. Em uma tarefa oral de suporte, preservar os fatos necessários, uma pergunta inicial quando útil e ajuda opcional com dica/modelo. Retirar duplicação e metadados não significa deixar a aluna sem saber como começar.
+- Em composições com um dispositivo ou board ao lado de uma conversa curta, alinhar os dois blocos pelo topo. A mensagem de erro dentro da tela pode ser centralizada independentemente do título da janela e do cabeçalho da aula; usar as props dos componentes, sem ajustes por CSS local. A ajuda progressiva fica fora dos balões, centralizada no rodapé da coluna da conversa e alinhada ao final da coluna. A conversa começa no topo; usar a composição canônica com a coluna esticada, sem prender o ícone à última fala. Nos meetings, preservar a ajuda junto aos controles de navegação já aprovados.
+- Boards visuais mostram colunas de status, títulos curtos de tarefas e o avatar circular de quem é responsável. Evitar descrições, listas de campos e várias etiquetas no mesmo card quando o título e o status já explicam a situação.
+- Quando o vocabulário pertencer a um mesmo ambiente de trabalho, preferir uma cena contextual com pontos clicáveis a uma grade de ícones abstratos. Termos como task, access e feedback precisam de evidência da situação e de um exemplo de uso; não apresentar nomes de equipamentos como se fossem sinônimos desses conceitos. Reutilizar a cena interativa canônica, com rótulos e áudio nativos separados da imagem.
+- Pedidos de acesso praticam descrever um erro e fazer uma solicitação oral útil; um campo de mensagem preenchido pela professora não substitui essa prática.
+- Diferenciar claramente as personagens de uma equipe em rosto, cabelo, silhueta ou roupa. Se retratos distintos ainda parecem a mesma pessoa, trocar por uma identidade aprovada realmente distinta, mantendo nome, rosto e voz coerentes.

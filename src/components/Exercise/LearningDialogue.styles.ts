@@ -151,8 +151,20 @@ export const GuidedLayer = styled.span<{
 `
 
 export const LineControls = styled.div<{ $afterAudio: boolean }>`
+  display: flex;
+  align-items: center;
+  gap: ${theme.spacing[2]};
   grid-column: ${(p) => (p.$afterAudio ? 3 : 2)};
   grid-row: 1;
   align-self: center;
+  min-width: 0;
+`
+
+/** Kept outside the message flow; fills the remaining paired-column space. */
+export const FooterAction = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-block-start: auto;
+  padding-block-start: ${theme.spacing[3]};
   min-width: 0;
 `

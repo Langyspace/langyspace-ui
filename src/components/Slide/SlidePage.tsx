@@ -11,6 +11,7 @@ export function SlidePage({
   tools,
   questions,
   questionsTitle = 'Questions',
+  columnAlignment = 'start',
   lead,
   cover,
   coverPlacement = 'before-heading',
@@ -80,9 +81,13 @@ export function SlidePage({
         )}
         <Styled.Body $columns={contentColumns}>
           {questions ? (
-            <Styled.Conversation data-guided-conversation="true">
+            <Styled.Conversation
+              $alignment={columnAlignment}
+              data-guided-conversation="true"
+            >
               <Styled.ConversationText>{children}</Styled.ConversationText>
               <Styled.Questions
+                $stretch={columnAlignment === 'stretch'}
                 aria-label={
                   typeof questionsTitle === 'string'
                     ? questionsTitle

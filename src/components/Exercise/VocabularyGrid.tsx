@@ -32,6 +32,7 @@ export function VocabularyGrid({
     <Styled.VocabularySection>
       <Styled.Vocabulary
         {...props}
+        $native={items.some((item) => item.visual !== undefined)}
         $columns={columns}
         $reference={layout === 'reference'}
         $regularScene={imageVariant === 'scene' && density === 'regular'}
@@ -70,6 +71,7 @@ export function VocabularyGrid({
           return (
             <Styled.Word
               as={interaction === 'static' ? 'figure' : 'button'}
+              $native={item.visual !== undefined}
               $static={interaction === 'static'}
               $symbol={item.symbol !== undefined}
               $reference={layout === 'reference'}
@@ -111,7 +113,9 @@ export function VocabularyGrid({
                     }
               }
             >
-              {item.symbol !== undefined ? (
+              {item.visual ? (
+                <Styled.WordVisual>{item.visual}</Styled.WordVisual>
+              ) : item.symbol !== undefined ? (
                 <Styled.WordSymbol aria-hidden="true">
                   {item.symbol}
                 </Styled.WordSymbol>
@@ -142,6 +146,7 @@ export function VocabularyGrid({
               ) : null}
               {showChip ? (
                 <Styled.WordLabel
+                  $native={item.visual !== undefined}
                   $revealed={revealed}
                   $reference={layout === 'reference'}
                   $hasExample={revealed && Boolean(item.example)}

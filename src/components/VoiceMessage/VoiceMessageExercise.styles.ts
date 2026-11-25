@@ -29,10 +29,13 @@ export const Root = styled.section.withConfig({
   color: ${(p) => recipe(p).foreground};
 `
 
-export const Layout = styled.div<{ $balanced?: boolean }>`
+export const Layout = styled.div<{
+  $balanced?: boolean
+  $alignment?: 'start' | 'center' | 'stretch'
+}>`
   display: grid;
   grid-template-columns: ${(p) => (p.$balanced ? 'repeat(2, minmax(0, 1fr))' : `minmax(0, ${recipe(p).phoneWidth}) minmax(0, 1fr)`)};
-  align-items: ${(p) => (p.$balanced ? 'center' : 'start')};
+  align-items: ${(p) => p.$alignment ?? (p.$balanced ? 'center' : 'start')};
   gap: ${theme.spacing[8]};
   width: min(100%, ${(p) => recipe(p).contentWidth});
   margin-inline: auto;
@@ -205,8 +208,17 @@ export const Error = styled.div`
   color: ${(p) => recipe(p).danger};
   font-size: ${theme.typography.fontSize.sm};
 `
-export const Side = styled.div`
+export const Side = styled.div<{ $stretch?: boolean }>`
   color: ${(p) => recipe(p).questionForeground ?? recipe(p).foreground};
+  ${(p) =>
+    p.$stretch
+      ? css`
+          align-self: stretch;
+          > :last-child {
+            flex: 1;
+          }
+        `
+      : undefined}
   display: flex;
   flex-direction: column;
   min-width: 0;

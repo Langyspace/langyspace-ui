@@ -15,6 +15,8 @@ export interface SlidePageProps extends Omit<
   /** Comprehension beside the dialogue; stacks below it in narrow containers. */
   questions?: ReactNode
   questionsTitle?: ReactNode
+  /** Vertical alignment of paired content; existing pages remain top-aligned. */
+  columnAlignment?: 'start' | 'center' | 'stretch'
   /** Optional introductory content before the exercise heading. */
   lead?: ReactNode
   /** Approved lesson artwork; split layout places review content alongside it. */

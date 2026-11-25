@@ -10,10 +10,21 @@ function MonitorFrame({
   workstationMeta,
   children,
   form,
+  screenAspectRatio,
+  screenTextAlign,
+  media,
 }: ExerciseMonitorProps) {
   return (
     <Styled.Desktop>
-      <Styled.Screen>
+      <Styled.Screen
+        $aspectRatio={
+          screenAspectRatio !== undefined &&
+          Number.isFinite(screenAspectRatio) &&
+          screenAspectRatio > 0
+            ? screenAspectRatio
+            : undefined
+        }
+      >
         <Styled.WindowBar>
           <Styled.WindowControls aria-hidden="true">
             <i />
@@ -32,7 +43,10 @@ function MonitorFrame({
             </Styled.DesktopClock>
           ) : null}
         </Styled.WindowBar>
-        <Styled.ScreenBody $form={form}>{children}</Styled.ScreenBody>
+        <Styled.ScreenBody $form={form} $textAlign={screenTextAlign}>
+          {media ? <Styled.ScreenMedia>{media}</Styled.ScreenMedia> : null}
+          {children}
+        </Styled.ScreenBody>
         {workstationMeta?.appLabel ? (
           <Styled.Taskbar>
             <Styled.DesktopMenu aria-hidden="true">
@@ -60,6 +74,8 @@ export function ExercisePanel({
   media,
   layout = 'stacked',
   monitorLayout = 'flow',
+  screenAspectRatio,
+  screenTextAlign,
   warmupMediaSizing = 'natural',
   variant = 'default',
   children,
@@ -105,6 +121,9 @@ export function ExercisePanel({
           title={title}
           workstationMeta={workstationMeta}
           form={monitorLayout === 'form'}
+          screenAspectRatio={screenAspectRatio}
+          screenTextAlign={screenTextAlign}
+          media={media}
         >
           {children}
         </MonitorFrame>
@@ -119,7 +138,13 @@ export function ExercisePanel({
             {media}
           </Styled.ContextMedia>
         ) : null}
-        <MonitorFrame title={title} workstationMeta={workstationMeta} form>
+        <MonitorFrame
+          title={title}
+          workstationMeta={workstationMeta}
+          screenAspectRatio={screenAspectRatio}
+          screenTextAlign={screenTextAlign}
+          form
+        >
           {children}
         </MonitorFrame>
         {controls}

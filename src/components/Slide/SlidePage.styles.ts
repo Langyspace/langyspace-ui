@@ -1,4 +1,4 @@
-import { styled } from 'styled-components'
+import { css, styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { presentationMedia } from '../../foundations/layout/presentationMedia'
 import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
@@ -219,12 +219,14 @@ export const Exercise = styled.div`
 `
 
 /** Dialogue and its comprehension stay together; neither column has an inner scrollbar. */
-export const Conversation = styled.div`
+export const Conversation = styled.div<{
+  $alignment: 'start' | 'center' | 'stretch'
+}>`
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: ${(p) => slidePairedTracks(recipe(p))};
   gap: ${theme.spacing[8]};
-  align-items: start;
+  align-items: ${(p) => p.$alignment};
   min-width: 0;
   @container (max-width: ${theme.breakpoints.md}) {
     grid-template-columns: minmax(0, 1fr);
@@ -234,11 +236,22 @@ export const Conversation = styled.div`
 export const ConversationText = styled.div`
   min-width: 0;
 `
-export const Questions = styled.aside`
+export const Questions = styled.aside<{ $stretch?: boolean }>`
   min-width: 0;
   display: grid;
   gap: ${theme.spacing[3]};
   align-content: start;
+  ${(p) =>
+    p.$stretch
+      ? css`
+          align-self: stretch;
+          display: flex;
+          flex-direction: column;
+          > :last-child {
+            flex: 1;
+          }
+        `
+      : undefined}
   font-family: ${theme.typography.fontFamily.sans};
 `
 export const QuestionsTitle = styled.h3`

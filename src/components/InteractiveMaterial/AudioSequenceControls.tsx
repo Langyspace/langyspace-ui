@@ -11,25 +11,34 @@ export function AudioSequenceControls({
   disabled = false,
   loading = false,
   status,
+  supportAction,
   density = 'regular',
   labels,
+  playback,
   children,
   ...props
 }: AudioSequenceControlsProps) {
   const text = {
+    play: 'Play current part',
+    pause: 'Pause current part',
+    resume: 'Resume current part',
     previous: 'Áudio anterior',
     next: 'Tocar o próximo áudio',
     replay: 'Tocar de novo',
     progress: 'Áudios',
     ...labels,
   }
+  const toggleLabel = playback
+    ? playback.state === 'playing'
+      ? text.pause
+      : playback.state === 'paused'
+        ? text.resume
+        : text.play
+    : text.replay
+  const compact = density === 'compact'
   const total = Math.max(0, Math.floor(count))
   return (
-    <Styled.Root
-      {...props}
-      $compact={density === 'compact'}
-      aria-busy={loading}
-    >
+    <Styled.Root {...props} $compact={compact} aria-busy={loading}>
       {density === 'compact' ? (
         <Styled.Transport $compact>
           {onPrevious ? (
@@ -37,7 +46,9 @@ export function AudioSequenceControls({
               $compact
               type="button"
               aria-label={text.previous}
-              disabled={disabled || loading || !onPrevious || index <= 0}
+              disabled={
+                disabled || (loading && !playback) || !onPrevious || index <= 0
+              }
               onClick={onPrevious}
             >
               <SimulationIcon name="previous" />
@@ -45,25 +56,49 @@ export function AudioSequenceControls({
           ) : null}
           <Styled.Playback
             $compact
+            $primary={Boolean(playback)}
             type="button"
-            aria-label={text.replay}
-            title={text.replay}
+            aria-label={toggleLabel}
+            title={toggleLabel}
             disabled={disabled || loading || index < 0 || !total}
-            onClick={onReplay}
+            onClick={playback?.onToggle ?? onReplay}
           >
-            <SimulationIcon name="replay" />
+            <SimulationIcon
+              name={
+                playback
+                  ? playback.state === 'playing'
+                    ? 'pause'
+                    : 'play'
+                  : 'replay'
+              }
+            />
           </Styled.Playback>
           <Styled.Playback
             $compact
-            $primary
+            $primary={!playback}
             type="button"
             aria-label={text.next}
             title={text.next}
-            disabled={disabled || loading || !total || index >= total - 1}
+            disabled={
+              disabled || (loading && !playback) || !total || index >= total - 1
+            }
             onClick={onNext}
           >
             <SimulationIcon name="next" />
           </Styled.Playback>
+          {supportAction ? (
+            <Styled.Playback
+              $compact={compact}
+              type="button"
+              aria-label={supportAction.label}
+              title={supportAction.label}
+              aria-pressed={supportAction.pressed}
+              disabled={disabled || supportAction.disabled}
+              onClick={supportAction.onClick}
+            >
+              {supportAction.icon}
+            </Styled.Playback>
+          ) : null}
         </Styled.Transport>
       ) : (
         <>
@@ -93,6 +128,19 @@ export function AudioSequenceControls({
             >
               <SimulationIcon name="replay" />
             </Styled.Playback>
+            {supportAction ? (
+              <Styled.Playback
+                $compact={compact}
+                type="button"
+                aria-label={supportAction.label}
+                title={supportAction.label}
+                aria-pressed={supportAction.pressed}
+                disabled={disabled || supportAction.disabled}
+                onClick={supportAction.onClick}
+              >
+                {supportAction.icon}
+              </Styled.Playback>
+            ) : null}
           </Styled.Transport>
           <Styled.Dots
             role="img"

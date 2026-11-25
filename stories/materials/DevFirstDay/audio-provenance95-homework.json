@@ -1,0 +1,1129 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "items": [
+    {
+      "material": "DevFirstDay",
+      "id": "HW.6.front",
+      "speaker": "Kim",
+      "text": "a repository",
+      "file": "assets/audio/HW.6.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Jdtk5hdEu1i9wPQ9H9PQ",
+      "synthesisInput": "a repository",
+      "requestBody": {
+        "text": "a repository",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Jdtk5hdEu1i9wPQ9H9PQ",
+        "character-cost": "5",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 25538,
+      "sha256": "89cf3567358adeb9d687af8acd60f05af40c314f8ad6ea1c66f9b009516dd18e",
+      "durationSeconds": 1.532517
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.6.back",
+      "speaker": "Kim",
+      "text": "The project files are in the repository",
+      "file": "assets/audio/HW.6.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "XNFdjKOyA8eukYgxWZM2",
+      "synthesisInput": "The project files are in the repository",
+      "requestBody": {
+        "text": "The project files are in the repository",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "XNFdjKOyA8eukYgxWZM2",
+        "character-cost": "16",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 49362,
+      "sha256": "ac00fb49d10b1099cbdc140e2a6fc17d8dd656713e817066578ed77e4262ae4b",
+      "durationSeconds": 3.018594
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.7.front",
+      "speaker": "Kim",
+      "text": "frontend",
+      "file": "assets/audio/HW.7.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "DKgduAnnnrsSDkaFI7Hp",
+      "synthesisInput": "frontend",
+      "requestBody": {
+        "text": "frontend",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "DKgduAnnnrsSDkaFI7Hp",
+        "character-cost": "3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20523,
+      "sha256": "927ccde671e894d112ac655dfb26da279830265925144ae946cab6dd20832b26",
+      "durationSeconds": 1.207438
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.7.back",
+      "speaker": "Kim",
+      "text": "I’m working on the frontend of the customer portal",
+      "file": "assets/audio/HW.7.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "eCIFya1eUS5zQrS8wEsS",
+      "synthesisInput": "I'm working on the frontend of the customer portal",
+      "requestBody": {
+        "text": "I'm working on the frontend of the customer portal",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "eCIFya1eUS5zQrS8wEsS",
+        "character-cost": "20",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 56885,
+      "sha256": "f2b8f3934163e643422e98df397d9eb99a95424efefb64ef56e987d7158f31e0",
+      "durationSeconds": 3.482993
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.8.front",
+      "speaker": "Kim",
+      "text": "backend",
+      "file": "assets/audio/HW.8.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "v5gaE37uyHEyp4k73Fz9",
+      "synthesisInput": "backend",
+      "requestBody": {
+        "text": "backend",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "v5gaE37uyHEyp4k73Fz9",
+        "character-cost": "3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 18851,
+      "sha256": "da46d7fa8df7a9be1bc2dc6bc50d5df50776156c0267af5223bd6ef78445cea8",
+      "durationSeconds": 1.114558
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.8.back",
+      "speaker": "Kim",
+      "text": "Priya is connecting the login screen to the backend",
+      "file": "assets/audio/HW.8.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "SrvWJiTLHvLF1R4Ies68",
+      "synthesisInput": "Priya is connecting the login screen to the backend",
+      "requestBody": {
+        "text": "Priya is connecting the login screen to the backend",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "SrvWJiTLHvLF1R4Ies68",
+        "character-cost": "20",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 61065,
+      "sha256": "83eda7d513bae335d293f8f1af6082f41ff2a801c7689e98fb2ce78dcf5a7e9a",
+      "durationSeconds": 3.761633
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.9.front",
+      "speaker": "Kim",
+      "text": "a login screen",
+      "file": "assets/audio/HW.9.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "9zdgOxSjirVNJFZTGtuD",
+      "synthesisInput": "a login screen",
+      "requestBody": {
+        "text": "a login screen",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "9zdgOxSjirVNJFZTGtuD",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 28464,
+      "sha256": "9104e19656b87f8b3ca720375f7580e464d9905b0030a8b14e3ad9e8799633f6",
+      "durationSeconds": 1.718277
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.9.back",
+      "speaker": "Kim",
+      "text": "The login screen has email and password fields",
+      "file": "assets/audio/HW.9.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "KH8cpUs7B2PcRmwI1o0s",
+      "synthesisInput": "The login screen has email and password fields",
+      "requestBody": {
+        "text": "The login screen has email and password fields",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "KH8cpUs7B2PcRmwI1o0s",
+        "character-cost": "18",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 61065,
+      "sha256": "bdf072623ea3484c1f393384400e01d8ad872c6c8e26e3dd3f98d19d053d3258",
+      "durationSeconds": 3.761633
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.10.front",
+      "speaker": "Kim",
+      "text": "a form",
+      "file": "assets/audio/HW.10.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": null,
+      "disposition": "reused_exact",
+      "sourceManifest": "/Users/margaridamartins/.codex/worktrees/homework92-ui/stories/materials/Frontend/media-provenance.json",
+      "bytes": 17597,
+      "sha256": "0749fa545d86520931c225ded9764043e1d34bca39318781e4d5ff6effe7a545",
+      "durationSeconds": 1.021678
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.10.back",
+      "speaker": "Kim",
+      "text": "The form shows an error when a field is empty",
+      "file": "assets/audio/HW.10.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "RrR1NOgEZ0xdOUNC5V7k",
+      "synthesisInput": "The form shows an error when a field is empty",
+      "requestBody": {
+        "text": "The form shows an error when a field is empty",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "RrR1NOgEZ0xdOUNC5V7k",
+        "character-cost": "18",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 56885,
+      "sha256": "c9bf7b8d4a823317ac0599f6ba432465e3de381ab264bbb68129c4f900358798",
+      "durationSeconds": 3.482993
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.11.front",
+      "speaker": "Kim",
+      "text": "a password",
+      "file": "assets/audio/HW.11.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "0JdP4CKdizSu825gO3PB",
+      "synthesisInput": "a password",
+      "requestBody": {
+        "text": "a password",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "0JdP4CKdizSu825gO3PB",
+        "character-cost": "4",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 23448,
+      "sha256": "14daaa2ab5fa486f6716356ee58d622558ea9aa16a020ecb510575ff228f7b76",
+      "durationSeconds": 1.393197
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.11.back",
+      "speaker": "Kim",
+      "text": "The password is incorrect — please try again",
+      "file": "assets/audio/HW.11.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "i6HkdJlWi0dCZkIotgIl",
+      "synthesisInput": "The password is incorrect — please try again",
+      "requestBody": {
+        "text": "The password is incorrect — please try again",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "i6HkdJlWi0dCZkIotgIl",
+        "character-cost": "18",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 63572,
+      "sha256": "79d34fce76786fcc7fb0fcbdb55a31583398fca6d6f7e004810c934b27f9fc00",
+      "durationSeconds": 3.900952
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.12.front",
+      "speaker": "Kim",
+      "text": "an email address",
+      "file": "assets/audio/HW.12.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "HNb3Ry7QytkvQKmuq4aO",
+      "synthesisInput": "an email address",
+      "requestBody": {
+        "text": "an email address",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "HNb3Ry7QytkvQKmuq4aO",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 25538,
+      "sha256": "b54ab8511f519a6dfce4d6fbc17a3e2a5172247339f28e3c6a4bfa650fd8592e",
+      "durationSeconds": 1.532517
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.12.back",
+      "speaker": "Kim",
+      "text": "Use your work email address to request access",
+      "file": "assets/audio/HW.12.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Tpjp3N5JsAi3SmS8ElK5",
+      "synthesisInput": "Use your work email address to request access",
+      "requestBody": {
+        "text": "Use your work email address to request access",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Tpjp3N5JsAi3SmS8ElK5",
+        "character-cost": "18",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 56885,
+      "sha256": "4564a0c8a616aede750c81eab038069a101102094bfc36d339608e826c79508b",
+      "durationSeconds": 3.482993
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.13.front",
+      "speaker": "Kim",
+      "text": "a button",
+      "file": "assets/audio/HW.13.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": null,
+      "disposition": "reused_exact",
+      "sourceManifest": "/Users/margaridamartins/.codex/worktrees/homework92-ui/stories/materials/Frontend/media-provenance.json",
+      "bytes": 16761,
+      "sha256": "a43dc3ae2e7409f1a60772dde08779c29b90867627e3157667d21779ba1835bd",
+      "durationSeconds": 0.975238
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.13.back",
+      "speaker": "Kim",
+      "text": "Click the button to sign in",
+      "file": "assets/audio/HW.13.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "8RZdECqatvKIya8SCYKq",
+      "synthesisInput": "Click the button to sign in",
+      "requestBody": {
+        "text": "Click the button to sign in",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "8RZdECqatvKIya8SCYKq",
+        "character-cost": "11",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 31390,
+      "sha256": "bd4b7d1bcc78faab872be6be316edf143fdc80ad0569542854ac177bdfdd5839",
+      "durationSeconds": 1.904036
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.14.front",
+      "speaker": "Kim",
+      "text": "an error message",
+      "file": "assets/audio/HW.14.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "4mauwHuKeKRj1hdBHnIf",
+      "synthesisInput": "an error message",
+      "requestBody": {
+        "text": "an error message",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "4mauwHuKeKRj1hdBHnIf",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 26374,
+      "sha256": "f6efb6732cc6f2fdf8d201a55d7616ef49986cbebb17740ad12ff945cb859412",
+      "durationSeconds": 1.578957
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.14.back",
+      "speaker": "Kim",
+      "text": "The error message explains what went wrong",
+      "file": "assets/audio/HW.14.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "SX8boRvEFkeI4zI3bhoP",
+      "synthesisInput": "The error message explains what went wrong",
+      "requestBody": {
+        "text": "The error message explains what went wrong",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "SX8boRvEFkeI4zI3bhoP",
+        "character-cost": "17",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 47272,
+      "sha256": "e8ae008ab42708a325e10078d1ba3486a6e23ff17c9305d0f040bb0313f2a763",
+      "durationSeconds": 2.879274
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.15.front",
+      "speaker": "Kim",
+      "text": "a password reset",
+      "file": "assets/audio/HW.15.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "1PIORj6NTHxWmlDnpvRz",
+      "synthesisInput": "a password reset",
+      "requestBody": {
+        "text": "a password reset",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "1PIORj6NTHxWmlDnpvRz",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 29300,
+      "sha256": "c4465e2c9e50caddcd33a32fa9895600b6a0e55130ada0cd9ed824f00ab0d77b",
+      "durationSeconds": 1.764717
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.15.back",
+      "speaker": "Kim",
+      "text": "The password reset helps users get back into their accounts",
+      "file": "assets/audio/HW.15.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "hjDKbAnTZhtsD3MYILpK",
+      "synthesisInput": "The password reset helps users get back into their accounts",
+      "requestBody": {
+        "text": "The password reset helps users get back into their accounts",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "hjDKbAnTZhtsD3MYILpK",
+        "character-cost": "24",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 69424,
+      "sha256": "db396ba43f9dc808445432793ddbfffc39ab89c4b23ed63cc4b4cbcbd194829d",
+      "durationSeconds": 4.272472
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.16.front",
+      "speaker": "Kim",
+      "text": "a test account",
+      "file": "assets/audio/HW.16.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "YO6L0t7JOz5zf988oOtG",
+      "synthesisInput": "a test account",
+      "requestBody": {
+        "text": "a test account",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "YO6L0t7JOz5zf988oOtG",
+        "character-cost": "6",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 24702,
+      "sha256": "dda2ebbbbbfc470d5791dac8d92dffc6fbd9d459a5b0cdbe4f48746e87cf7434",
+      "durationSeconds": 1.486077
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.16.back",
+      "speaker": "Kim",
+      "text": "I need an active test account for the demo",
+      "file": "assets/audio/HW.16.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "A72oRmmQfn8u96y8i4ki",
+      "synthesisInput": "I need an active test account for the demo",
+      "requestBody": {
+        "text": "I need an active test account for the demo",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "A72oRmmQfn8u96y8i4ki",
+        "character-cost": "17",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 51452,
+      "sha256": "78c3e34a956183efd4e654a657f4cf5707bf95faa86960cbe970f5648db6f934",
+      "durationSeconds": 3.157914
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.17.front",
+      "speaker": "Kim",
+      "text": "a layout",
+      "file": "assets/audio/HW.17.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "0nkLcyPxnQv2HfBGx1vh",
+      "synthesisInput": "a layout",
+      "requestBody": {
+        "text": "a layout",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "0nkLcyPxnQv2HfBGx1vh",
+        "character-cost": "3",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 20523,
+      "sha256": "eab4230224af18a36ae664a1758bc45d97562688d45041910ec9042e49ab33ba",
+      "durationSeconds": 1.207438
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.17.back",
+      "speaker": "Kim",
+      "text": "The layout is ready, but the API connection is still missing",
+      "file": "assets/audio/HW.17.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "rdpHZr3jPOAoTMeQEHa4",
+      "synthesisInput": "The layout is ready, but the API connection is still missing",
+      "requestBody": {
+        "text": "The layout is ready, but the API connection is still missing",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "rdpHZr3jPOAoTMeQEHa4",
+        "character-cost": "24",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 67334,
+      "sha256": "c2fe3700f7fd24059d3b9af05609961b7c5ffbb0026926c3569b18491e590215",
+      "durationSeconds": 4.133152
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.18.front",
+      "speaker": "Kim",
+      "text": "an API",
+      "file": "assets/audio/HW.18.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "4vJZxQzYnBxyOKkwxJqg",
+      "synthesisInput": "an API",
+      "requestBody": {
+        "text": "an API",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "4vJZxQzYnBxyOKkwxJqg",
+        "character-cost": "2",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15925,
+      "sha256": "49b1700f83456064e0a63eaf6bfb5f778b41d4a46a4c89b391510a1177f7f82d",
+      "durationSeconds": 0.928798
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.18.back",
+      "speaker": "Kim",
+      "text": "The API checks the email address and password",
+      "file": "assets/audio/HW.18.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "1ywEPeSnsCTQoOb8PtMw",
+      "synthesisInput": "The API checks the email address and password",
+      "requestBody": {
+        "text": "The API checks the email address and password",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "1ywEPeSnsCTQoOb8PtMw",
+        "character-cost": "18",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 58139,
+      "sha256": "2107285b2511be582ec279694665b25281d014cbf4f3dd40f4612de61f8ec5fb",
+      "durationSeconds": 3.575873
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.19.front",
+      "speaker": "Kim",
+      "text": "a demo",
+      "file": "assets/audio/HW.19.front.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "PtPjVeue7Gj8vb2kL5lm",
+      "synthesisInput": "a demo",
+      "requestBody": {
+        "text": "a demo",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "PtPjVeue7Gj8vb2kL5lm",
+        "character-cost": "2",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 15925,
+      "sha256": "affbf06bfc086094ae23946bc26715667ae80eb99818832ec8ace7343da1101a",
+      "durationSeconds": 0.928798
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "HW.19.back",
+      "speaker": "Kim",
+      "text": "I’ll show the login screen during Friday’s demo",
+      "file": "assets/audio/HW.19.back.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "nnYWThc8Lc0nOMNgMbsR",
+      "synthesisInput": "I'll show the login screen during Friday's demo",
+      "requestBody": {
+        "text": "I'll show the login screen during Friday's demo",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "nnYWThc8Lc0nOMNgMbsR",
+        "character-cost": "19",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 54377,
+      "sha256": "438c85f852f6ec615420f0d890b9c6612ed4bab9dc4ac4e695de23d8a0563ddf",
+      "durationSeconds": 3.343673
+    }
+  ],
+  "requestSha256": "861bb44666ad216132aa3eaa2922178ac426bb480b765745e60649ff82e83c11",
+  "status": "ready"
+}

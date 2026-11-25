@@ -1,4 +1,5 @@
 export type MaterialKey =
+  | 'extra-dev-first-day'
   | 'extra-influencer-routine'
   | 'a1-01'
   | 'a1-02'

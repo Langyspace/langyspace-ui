@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components'
 import { createTheme } from '../../../src/foundations/theme/createTheme'
 import { GrammarTable } from '../../../src/components/InteractiveMaterial/GrammarTable'
 import { ExercisePanel } from '../../../src/components/Exercise/ExercisePanel'
+import { VocabularyControls } from '../../../src/components/Exercise/VocabularyControls'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
 import { LearningDialogue } from '../../../src/components/Exercise/LearningDialogue'
 import { RevealCard } from '../../../src/components/Exercise/RevealCard'
@@ -24,6 +25,47 @@ const isolatedFeelings = feelings.slice(0, 3).map((item, index) => ({
     ]!,
   ),
 }))
+function FooterSupportPreview() {
+  const [shown, setShown] = useState(false)
+  return (
+    <LearningDialogue
+      density="compact"
+      footerAction={
+        <VocabularyControls
+          density="compact"
+          showInitial={shown}
+          onToggleInitial={() => setShown(!shown)}
+          labels={{ hint: shown ? 'Hide hint' : 'Show hint' }}
+        />
+      }
+      lines={[
+        {
+          id: 'teacher',
+          speaker: 'Teacher',
+          side: 'start',
+          content: 'Can you open the project?',
+        },
+        {
+          id: 'you',
+          speaker: 'You',
+          participant: 'learner',
+          side: 'end',
+          content: shown
+            ? 'I can’t open it — could you give me access?'
+            : 'Explain the error and ask for help',
+        },
+      ]}
+    />
+  )
+}
+export const FooterReplySupport: Story = {
+  render: () => (
+    <Styled.Preview>
+      <FooterSupportPreview />
+    </Styled.Preview>
+  ),
+  tags: ['layout-boundary', 'visual-review'],
+}
 function ComponentsPreview() {
   const [revealed, setRevealed] = useState<string[]>([])
   const [answer, setAnswer] = useState(false)
@@ -190,6 +232,30 @@ export const MonitorForm: Story = {
       </ExercisePanel>
     </Styled.Preview>
   ),
+}
+export const StandardLightMonitor: Story = {
+  render: () => (
+    <ThemeProvider theme={createTheme()}>
+      <Styled.Preview>
+        <ExercisePanel
+          variant="monitor"
+          screenAspectRatio={4 / 3}
+          title="customer-portal"
+          workstationMeta={{ clock: '09:20', date: 'Mon' }}
+        >
+          <h3>You need access to this project</h3>
+          <p>The repository is private</p>
+          <p>Your work email: dev@example.com</p>
+        </ExercisePanel>
+      </Styled.Preview>
+    </ThemeProvider>
+  ),
+  tags: ['visual-review'],
+}
+export const StandardLightMonitorNarrow: Story = {
+  ...StandardLightMonitor,
+  globals: { viewport: { value: 'mobile1', isRotated: false } },
+  tags: ['layout-boundary', 'visual-review'],
 }
 export const NarrowLongContent: Story = {
   render: () => (

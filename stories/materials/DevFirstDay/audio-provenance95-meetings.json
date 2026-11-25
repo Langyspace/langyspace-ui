@@ -1,0 +1,393 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_multilingual_v2",
+  "voiceSettings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.1,
+    "use_speaker_boost": true,
+    "speed": 0.92
+  },
+  "items": [
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.1",
+      "speaker": "Kim",
+      "text": "We need a first version of Save draft by Friday. You’re taking the save button. How would you start?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/PLAN.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Hkd0N7xOTmoSrdwolV7x",
+      "synthesisInput": "We need a first version of Save draft by Friday. You're taking the save button. How would you start?",
+      "requestBody": {
+        "text": "We need a first version of Save draft by Friday. You're taking the save button. How would you start?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Hkd0N7xOTmoSrdwolV7x",
+        "character-cost": "40",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 114563,
+      "sha256": "7490c07a0165f5e0985b578e3cc8520fd1ca546eadb40ff2077068f276112891",
+      "durationSeconds": 7.105306
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.2",
+      "speaker": "Owen",
+      "text": "I’m not convinced we need a button. I’d save changes automatically. Why start with manual saving?",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "accent": "British English",
+      "file": "assets/audio/PLAN.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "FWI7S6bklDGMlZJJbOJe",
+      "synthesisInput": "I'm not convinced we need a button. I'd save changes automatically. Why start with manual saving?",
+      "requestBody": {
+        "text": "I'm not convinced we need a button. I'd save changes automatically. Why start with manual saving?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "FWI7S6bklDGMlZJJbOJe",
+        "character-cost": "39",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 104950,
+      "sha256": "0be58c2992eabe38dabbe11ea9471e899b9d12b02a68eaec7272788f672c36ba",
+      "durationSeconds": 6.501587
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.3",
+      "speaker": "Priya",
+      "text": "We already have an API to save the text. Automatic saving would need more work. What would you need from me for the first version?",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "accent": "Indian English",
+      "file": "assets/audio/PLAN.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "EK04yNPteWekFYEap4xT",
+      "synthesisInput": "We already have an API to save the text. Automatic saving would need more work. What would you need from me for the first version?",
+      "requestBody": {
+        "text": "We already have an API to save the text. Automatic saving would need more work. What would you need from me for the first version?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "EK04yNPteWekFYEap4xT",
+        "character-cost": "52",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 143821,
+      "sha256": "393454e91a88638cf461a02c14814e833d90a8ca6df716d4cc6b6edba3d82dc8",
+      "durationSeconds": 8.916463
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.4",
+      "speaker": "Noah",
+      "text": "The mobile design is ready. I put Save draft above the form so people can find it. Is there anything you’d like to check?",
+      "voiceId": "IKne3meq5aSn9XLyUdCD",
+      "accent": "Australian English",
+      "file": "assets/audio/PLAN.4.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Z42SPf0BmgxL6GDBPtEE",
+      "synthesisInput": "The mobile design is ready. I put Save draft above the form so people can find it. Is there anything you'd like to check?",
+      "requestBody": {
+        "text": "The mobile design is ready. I put Save draft above the form so people can find it. Is there anything you'd like to check?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Z42SPf0BmgxL6GDBPtEE",
+        "character-cost": "48",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 116235,
+      "sha256": "a1964bfbb7abcb6f244bfcdf76af0f143bd5f65ad49b42ec0f85c1bc5b360737",
+      "durationSeconds": 7.198186
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.5",
+      "speaker": "Niamh",
+      "text": "What should happen if someone closes the form before saving? I don’t want them to lose their text without a warning.",
+      "voiceId": "t6WJWTYTryhcQnrBHdCr",
+      "accent": "Irish English",
+      "file": "assets/audio/PLAN.5.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "mtOeiKdiXibkkUSMeejp",
+      "synthesisInput": "What should happen if someone closes the form before saving? I don't want them to lose their text without a warning.",
+      "requestBody": {
+        "text": "What should happen if someone closes the form before saving? I don't want them to lose their text without a warning.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "mtOeiKdiXibkkUSMeejp",
+        "character-cost": "46",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 110384,
+      "sha256": "8b221bea11a867ae3f4cefda0734f10cde943c7faa2e5550e48edb05713c6816",
+      "durationSeconds": 6.826667
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "PLAN.6",
+      "speaker": "Kim",
+      "text": "Let’s agree on this version before we finish. What will you deliver by Friday, and what will you leave for later?",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/PLAN.6.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "PbybqpqC5TeCc5YW3tjr",
+      "synthesisInput": "Let's agree on this version before we finish. What will you deliver by Friday, and what will you leave for later?",
+      "requestBody": {
+        "text": "Let's agree on this version before we finish. What will you deliver by Friday, and what will you leave for later?",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "PbybqpqC5TeCc5YW3tjr",
+        "character-cost": "45",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 114563,
+      "sha256": "f42c33d516cb904696f9223ed479fabaf9f278243ef0b3319a419ba0ef2a6394",
+      "durationSeconds": 7.105306
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "REVIEW.1",
+      "speaker": "Owen",
+      "text": "I’ve finished the access message. Before, people only saw Access denied. Now, they can see who to contact and which work email to use. This should help new teammates get access faster.",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "accent": "British English",
+      "file": "assets/audio/REVIEW.1.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "xThcIbFW99Z6ZXbBqmZz",
+      "synthesisInput": "I've finished the access message. Before, people only saw Access denied. Now, they can see who to contact and which work email to use. This should help new teammates get access faster.",
+      "requestBody": {
+        "text": "I've finished the access message. Before, people only saw Access denied. Now, they can see who to contact and which work email to use. This should help new teammates get access faster.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "xThcIbFW99Z6ZXbBqmZz",
+        "character-cost": "74",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 194394,
+      "sha256": "bd0bbe033779ce509ba37dfd6553f9a59aaee6c78a18244547a3e00e7fdebaf1",
+      "durationSeconds": 12.074376
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "REVIEW.2",
+      "speaker": "Priya",
+      "text": "I’ve added the draft API. It saves the request text and returns a confirmation. Here, the text is saved, and this response tells the form to show Draft saved. We haven’t added file uploads in this version.",
+      "voiceId": "2zRM7PkgwBPiau2jvVXc",
+      "accent": "Indian English",
+      "file": "assets/audio/REVIEW.2.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "Q2SyTARCR1FtyVLa1Go6",
+      "synthesisInput": "I've added the draft API. It saves the request text and returns a confirmation. Here, the text is saved, and this response tells the form to show Draft saved. We haven't added file uploads in this version.",
+      "requestBody": {
+        "text": "I've added the draft API. It saves the request text and returns a confirmation. Here, the text is saved, and this response tells the form to show Draft saved. We haven't added file uploads in this version.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "Q2SyTARCR1FtyVLa1Go6",
+        "character-cost": "82",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 252072,
+      "sha256": "d1c3d87d5a52ff8319cae1ebf3b316d30f97e6a5b0ed8374ba84abf271dc36bc",
+      "durationSeconds": 15.696689
+    },
+    {
+      "material": "DevFirstDay",
+      "id": "REVIEW.3",
+      "speaker": "Kim",
+      "text": "Thanks, both. Now it’s your turn. Show us Save draft, explain what changed and how it helps the user.",
+      "voiceId": "Nhs7eitvQWFTQBsf0yiT",
+      "accent": "American English",
+      "file": "assets/audio/REVIEW.3.mp3",
+      "provider": "elevenlabs",
+      "modelId": "eleven_multilingual_v2",
+      "voiceSettings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.1,
+        "use_speaker_boost": true,
+        "speed": 0.92
+      },
+      "status": "ready",
+      "requestId": "k6za7iNBCh20ornXNpX6",
+      "synthesisInput": "Thanks, both. Now it's your turn. Show us Save draft, explain what changed and how it helps the user.",
+      "requestBody": {
+        "text": "Thanks, both. Now it's your turn. Show us Save draft, explain what changed and how it helps the user.",
+        "model_id": "eleven_multilingual_v2",
+        "voice_settings": {
+          "stability": 0.5,
+          "similarity_boost": 0.75,
+          "style": 0.1,
+          "use_speaker_boost": true,
+          "speed": 0.92
+        }
+      },
+      "disposition": "generated_missing",
+      "providerHeaders": {
+        "request-id": "k6za7iNBCh20ornXNpX6",
+        "character-cost": "40",
+        "content-type": "audio/mpeg"
+      },
+      "httpStatus": 200,
+      "bytes": 135461,
+      "sha256": "f5fb06f8c098fc1d1237d73c7312418bcefc0f7777a16257a7b49d821fca14b0",
+      "durationSeconds": 8.405624
+    }
+  ],
+  "requestSha256": "810367de3f2534a62442f2546dde854114f13bc885a7c10f4db0748e930b8ae7",
+  "status": "ready"
+}

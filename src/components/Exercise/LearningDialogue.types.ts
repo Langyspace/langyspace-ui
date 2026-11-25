@@ -32,6 +32,8 @@ export interface LearningDialogueProps extends Omit<
   'onPlay'
 > {
   lines: readonly LearningDialogueLine[]
+  /** Centered action at the end of a stretched conversation column, outside its bubbles. */
+  footerAction?: ReactNode
   /** Optional product-resolved identity; a usable first name and photo are both required. */
   learnerIdentity?: { firstName: string; avatarUrl: string }
   /** Controlled challenge: cues first, bulb for tips, eye for the model dialogue. */
