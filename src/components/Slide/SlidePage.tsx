@@ -87,7 +87,6 @@ export function SlidePage({
             >
               <Styled.ConversationText>{children}</Styled.ConversationText>
               <Styled.Questions
-                $stretch={columnAlignment === 'stretch'}
                 aria-label={
                   typeof questionsTitle === 'string'
                     ? questionsTitle

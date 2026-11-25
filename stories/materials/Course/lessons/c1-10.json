@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What must remain unchanged across versions?",
-          "cue": "Name the facts and the recipient-specific emphasis",
-          "hint": "Both need …, but … needs … first",
-          "answer": "One possible response"
+          "prompt": "What must remain unchanged when you change register?",
+          "hint": "The …, … and … must remain clear"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you make the requested action explicit?",
+          "hint": "Please confirm whether … by …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you change for a more informal recipient?",
+          "hint": "I’d shorten … while preserving …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which three event details must be preserved?",
-          "cue": "State change and constants",
-          "hint": "The date …; … stay …",
-          "answer": "Date moves to Monday 7; 10 am and room 2 stay unchanged"
+          "prompt": "Who will receive the two versions?",
+          "hint": "One is for … and one …",
+          "answer": "One version is for a client and the other is for a friend"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does each recipient need to confirm?",
+          "hint": "They need to confirm …",
+          "answer": "Each recipient needs to confirm attendance"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What changes, and what stays the same?",
+          "hint": "The date moves …; … stay …",
+          "answer": "The date moves from Friday the fourth to Monday the seventh of December; time and room stay the same"
         }
       ],
       "dialogueGroup": "c1-10.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why avoid an unexplained tomorrow?",
-          "cue": "Consider late reading",
-          "hint": "It depends on …",
-          "answer": "It depends on the day of sending and reading"
+          "prompt": "Why can ‘tomorrow’ cause confusion?",
+          "hint": "The message may …",
+          "answer": "The message may be read after the sending day"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What explicit deadline does Ana propose?",
+          "hint": "She proposes …",
+          "answer": "Ana proposes Friday the fourth at five"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Does a formal opening automatically improve the message?",
+          "hint": "No, … still needs …",
+          "answer": "No, the purpose still needs to be easy to find"
         }
       ],
       "dialogueGroup": "c1-10.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Does informal mean incomplete?",
-          "cue": "Use the friend version",
-          "hint": "No, …",
-          "answer": "No. It still contains action and deadline"
+          "prompt": "How does the friend’s version open?",
+          "hint": "It opens with …",
+          "answer": "The friend’s version opens with a quick update that the event is now on Monday"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What must the shorter version preserve?",
+          "hint": "It must preserve … and …",
+          "answer": "The shorter version must preserve the requested action and deadline"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What should changing register never change?",
+          "hint": "It shouldn’t change …",
+          "answer": "Changing register shouldn’t change the commitment requested"
         }
       ],
       "dialogueGroup": "c1-10.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What was unclear to the recipient?",
-          "cue": "Identify the missing action and clarify it",
-          "hint": "I should make it clear that …",
-          "answer": "The recipient does not know whether to acknowledge receipt or confirm attendance"
+          "prompt": "What requested action is unclear?",
+          "hint": "The reader can’t tell whether … or …",
+          "answer": "The reader can’t tell whether to acknowledge receipt or confirm attendance"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which factual details are already clear?",
+          "hint": "The reader understands …",
+          "answer": "The reader understands the new date, ten o’clock start and room two"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What deadline format would help?",
+          "hint": "A … rather than …",
+          "answer": "A specific day and time would help more than ‘tomorrow’"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -423,10 +475,18 @@
       "questions": [
         {
           "id": "update",
-          "prompt": "How would you give the update to this recipient?",
-          "cue": "Keep all facts and make the required action explicit",
-          "hint": "I’m writing to … / Quick update: … Could you confirm … by …?",
-          "answer": "One possible response"
+          "prompt": "How would you announce the change to your chosen recipient?",
+          "hint": "I’m writing to … / Quick update: …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you state what remains unchanged?",
+          "hint": "The … and … remain …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you request attendance confirmation precisely?",
+          "hint": "Please confirm whether … by Friday …"
         }
       ],
       "questionPurpose": "response"
@@ -454,10 +514,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What one sentence would remove the ambiguity?",
-          "cue": "Ask for the intended commitment and give an absolute deadline",
-          "hint": "Please confirm whether you can … by …",
-          "answer": "One possible response"
+          "prompt": "How would you distinguish attendance from receipt?",
+          "hint": "I need to know whether …, rather than only …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What explicit response deadline would you give?",
+          "hint": "Please reply by … on …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you preserve clarity without rewriting everything?",
+          "hint": "The date, time and room …; the action I need is …"
         }
       ],
       "questionPurpose": "response"

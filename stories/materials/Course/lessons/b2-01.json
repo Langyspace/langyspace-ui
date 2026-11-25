@@ -17,12 +17,21 @@
       "items": [
         {
           "id": "review",
+          "prompt": "What problem have you had while travelling?",
+          "hint": "I … while I was …"
+        },
+        {
+          "id": "s1.q98.2",
           "prompt": "What had happened before the problem?",
-          "cue": "Give the earlier event and its consequence",
-          "hint": "They’d …, so …",
-          "answer": "One possible response"
+          "hint": "I’d …, so …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What eventually helped you resolve it?",
+          "hint": "I’d been … when …; eventually …"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -162,12 +171,24 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What had Ana left at the hotel?",
-          "cue": "Name the earlier completed fact",
-          "hint": "She’d …",
-          "answer": "She’d left her charger"
+          "prompt": "When did Ana’s phone die?",
+          "hint": "It died … at …",
+          "answer": "Ana’s phone died on her second day in New York at four in the afternoon"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What had she been using it for?",
+          "hint": "She’d been using it as …",
+          "answer": "Ana had been using her phone as a map all day"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why couldn’t she use her charger?",
+          "hint": "She’d left it …",
+          "answer": "Ana had left her charger at the hotel"
         }
-      ]
+      ],
+      "dialogueGroup": "new-york-story"
     },
     {
       "id": "s_dialogue2",
@@ -209,12 +230,24 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why didn’t the café solve the charging problem?",
-          "cue": "Use the stated obstacle",
-          "hint": "There were …",
-          "answer": "There were no free outlets"
+          "prompt": "What happened when Ana tried to return to the hotel?",
+          "hint": "She …",
+          "answer": "Ana got lost while trying to return to the hotel"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why was losing phone access a problem for dinner?",
+          "hint": "The address was …",
+          "answer": "The dinner address was in a message from Raj"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why couldn’t she charge at the café?",
+          "hint": "There were no …",
+          "answer": "There were no free outlets at the café"
         }
-      ]
+      ],
+      "dialogueGroup": "new-york-story"
     },
     {
       "id": "s_dialogue3",
@@ -256,12 +289,24 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What enabled Ana to retrieve the address and travel?",
-          "cue": "Explain why the help mattered",
-          "hint": "A woman …, so …",
-          "answer": "A woman lent a power bank, so Ana could use her phone"
+          "prompt": "How long had Ana been waiting when someone helped?",
+          "hint": "She’d been waiting for …",
+          "answer": "Ana had been waiting for twenty minutes"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "How did the woman help?",
+          "hint": "She lent …",
+          "answer": "The woman lent Ana a power bank, and Ana had her cable"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "How did Ana finally reach dinner?",
+          "hint": "She … and arrived …",
+          "answer": "Ana took a taxi and arrived at eight, an hour after dinner time"
         }
-      ]
+      ],
+      "dialogueGroup": "new-york-story"
     },
     {
       "id": "s_personal",
@@ -327,10 +372,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What does the message add to the story?",
-          "cue": "Explain the new information and connect it to an earlier event",
-          "hint": "We now know that … Before that, …",
-          "answer": "Raj adds the door wait, table and pizza before Ana’s arrival"
+          "prompt": "What time does Raj send the message?",
+          "hint": "It’s …",
+          "answer": "Raj sends the message at seven twenty"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What had the group done after waiting at the door?",
+          "hint": "They had …",
+          "answer": "The group had got a table after waiting at the door for fifteen minutes"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does Raj ask Ana to do?",
+          "hint": "He asks her to … or …",
+          "answer": "Raj asks Ana to call him or come straight to the restaurant"
         }
       ],
       "contact": {
@@ -390,12 +446,21 @@
       "questions": [
         {
           "id": "story",
-          "prompt": "What had been happening before the phone died?",
-          "cue": "Set the background, narrate the problem and explain the turning point",
-          "hint": "She’d been … She’d left … Eventually …",
-          "answer": "One possible response"
+          "prompt": "How would you establish the background to the phone problem?",
+          "hint": "She’d been … and had left …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What happened before the turning point?",
+          "hint": "She tried …, but …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you link the help to the final result?",
+          "hint": "She’d been … when …; eventually …"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     "s_reply": {
       "type": "timeline",
@@ -420,12 +485,21 @@
       "questions": [
         {
           "id": "timeline",
-          "prompt": "Does Raj’s message contradict Ana’s arrival story?",
-          "cue": "Separate the 15-minute door wait from the overall delay. Do not invent the missing events",
-          "hint": "Not necessarily. The door wait was …, while Ana arrived … We don’t know exactly when …",
-          "answer": "One possible response"
+          "prompt": "How would you explain what was happening when Raj called?",
+          "hint": "At that point, I’d been …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you acknowledge the group’s wait?",
+          "hint": "I’m sorry you’d been …; I couldn’t … because …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you tell Raj to do next?",
+          "hint": "I’m … now, so please …"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     "s_personal": {
       "type": "facts",
@@ -452,17 +526,22 @@
           "id": "0",
           "prompt": "What had been happening before the phone died?",
           "cue": "Explain the background using the timeline",
-          "hint": "She’d been …, so …",
-          "answer": "One possible response"
+          "hint": "She’d been …, so …"
         },
         {
           "id": "1",
           "prompt": "What helped her solve the problem?",
           "cue": "Explain a turning point and why it mattered",
-          "hint": "Eventually, … This helped because …",
-          "answer": "One possible response"
+          "hint": "Eventually, … This helped because …"
+        },
+        {
+          "id": "story.questions.3",
+          "prompt": "How did the problem affect her evening?",
+          "cue": "Connect the earlier delay with the dinner and ask a follow-up question",
+          "hint": "By the time she …, they’d been … What would you have done?"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     }
   },
   "notesStorageKey": "langy-notes:b2-01"

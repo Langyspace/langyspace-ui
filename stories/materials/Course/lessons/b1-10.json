@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "How do I get there?",
-          "cue": "Give a route or ask me to clarify",
-          "hint": "Go … Is it near …?",
-          "answer": "One possible response"
+          "prompt": "How would you ask for a route?",
+          "hint": "How do I get to …?"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you check a nearby landmark?",
+          "hint": "Is it near …?"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could you politely ask someone to repeat the directions?",
+          "hint": "Could you repeat …, please?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
+          "prompt": "Where and when does the guided tour start?",
+          "hint": "It starts at … at …",
+          "answer": "The guided tour starts at reception at ten"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Is the standard tour included in the entrance fee?",
+          "hint": "Yes, it …",
+          "answer": "Yes, the standard tour is included in the entrance fee"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
           "prompt": "Which activity costs extra?",
-          "cue": "Distinguish standard tour from workshop",
-          "hint": "The …",
-          "answer": "The special workshop"
+          "hint": "The … costs extra",
+          "answer": "The special workshop costs extra"
         }
       ],
       "dialogueGroup": "b1-10.model"
@@ -202,9 +221,20 @@
         {
           "id": "d1",
           "prompt": "Where can the visitor leave a bag?",
-          "cue": "Name the location and reference point",
-          "hint": "At … beside …",
-          "answer": "At the ground-floor cloakroom beside the information point"
+          "hint": "There’s a cloakroom …",
+          "answer": "The visitor can leave a bag in the ground-floor cloakroom beside the information point"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Which room does the timetable list for the talk?",
+          "hint": "It lists …",
+          "answer": "The timetable lists room two for the talk"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What should the visitor check before going to the talk?",
+          "hint": "They should check …",
+          "answer": "The visitor should check the board before going to the talk"
         }
       ],
       "dialogueGroup": "b1-10.model"
@@ -297,10 +327,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What do you need to check before going?",
-          "cue": "Identify a missing detail and formulate an indirect question",
-          "hint": "Do you know if …?",
-          "answer": "Check whether room four has step-free access"
+          "prompt": "What is the new room for the talk?",
+          "hint": "It’s now in …",
+          "answer": "The talk is now in room four"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Has the ten o’clock tour changed?",
+          "hint": "No, it still …",
+          "answer": "No, the ten o’clock tour still starts at reception"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What access detail remains unknown?",
+          "hint": "They don’t know whether …",
+          "answer": "They don’t know whether room four has step-free access"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -357,10 +398,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What do you need to find out before the visit?",
-          "cue": "Ask one location question and one useful follow-up about price or access",
-          "hint": "Could you tell me where …? Do you know if …?",
-          "answer": "One possible response"
+          "prompt": "How could you check where the guided tour starts?",
+          "hint": "Could you tell me where …?"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you ask whether the talk room has changed?",
+          "hint": "Do you know if …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What could you ask about leaving your bag?",
+          "hint": "Could you tell me where I can …?"
         }
       ],
       "questionPurpose": "response"
@@ -388,10 +437,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What will you ask the information desk?",
-          "cue": "Form an indirect question that checks the missing detail",
-          "hint": "Could you tell me whether …? Do you know if …?",
-          "answer": "One possible response"
+          "prompt": "How would you confirm the new room and unchanged time?",
+          "hint": "Could you confirm that …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you ask about step-free access?",
+          "hint": "Do you know whether …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What will you check before leaving the ground floor?",
+          "hint": "We need to find out … before …"
         }
       ],
       "questionPurpose": "response"

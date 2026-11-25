@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "How would you state a view without overstating it?",
-          "cue": "Attribute a point, qualify it and name a condition",
-          "hint": "According to … However …, provided that …",
-          "answer": "One possible response"
+          "prompt": "How would you state a policy preference without overstating it?",
+          "hint": "I’d support …, provided …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Whose experience might your preference overlook?",
+          "hint": "It could overlook people who …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What evidence would make you change your view?",
+          "hint": "I’d revise my view if …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which benefits are aims rather than measured results?",
-          "cue": "Use the manager’s perspective",
-          "hint": "Simpler … and …",
-          "answer": "Simpler checkout and less cash handling"
+          "prompt": "What operational aims attract the manager to digital-only payment?",
+          "hint": "The manager wants … and …",
+          "answer": "The manager wants simpler checkout and less cash handling"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Are those outcomes guaranteed?",
+          "hint": "No, they are …",
+          "answer": "No, they are aims rather than guaranteed outcomes"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Whose access may be overlooked?",
+          "hint": "People without … and those affected by …",
+          "answer": "People without reliable digital access and those affected by temporary failure may be overlooked"
         }
       ],
       "dialogueGroup": "c1-12.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why does the access source consider temporary failure?",
-          "cue": "Avoid equating access only with permanent exclusion",
-          "hint": "Because …",
-          "answer": "Because even regular digital users can temporarily lose access"
+          "prompt": "Would cash alone resolve every inclusion problem?",
+          "hint": "No, … still matter",
+          "answer": "No, accessibility, privacy and fees would still matter"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How should the manager’s position be attributed?",
+          "hint": "The manager describes …",
+          "answer": "The manager describes operational aims"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Which source raises the access concerns?",
+          "hint": "The … raises …",
+          "answer": "The community account raises the access concerns"
         }
       ],
       "dialogueGroup": "c1-12.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What could reverse the suggested trial recommendation?",
-          "cue": "Give a practical trigger",
-          "hint": "If …",
-          "answer": "If the fallback is unusable or costs fall unfairly on users"
+          "prompt": "What policy does Ana provisionally support?",
+          "hint": "A … trial with …",
+          "answer": "Ana supports a digital-first trial with a clear fallback and an exclusion review"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What would make her revise it?",
+          "hint": "An unusable … or unfair …",
+          "answer": "An unusable fallback or unfair user costs would make Ana revise the recommendation"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why shouldn’t she defend the policy label regardless of results?",
+          "hint": "The recommendation depends on …",
+          "answer": "The recommendation depends on whether the arrangement works in practice"
         }
       ],
       "dialogueGroup": "c1-12.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "How does this experience affect your recommendation?",
-          "cue": "Connect the new perspective to a specific part of your proposal",
-          "hint": "It doesn’t necessarily change …, but it highlights …",
-          "answer": "The experience highlights temporary loss of access and the need for a usable fallback"
+          "prompt": "What two temporary failures affected the speaker?",
+          "hint": "Their … and the …",
+          "answer": "The speaker’s phone battery died and the venue’s payment connection stopped working"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why couldn’t cash solve the problem at that venue?",
+          "hint": "The venue’s …",
+          "answer": "The venue’s digital-only process didn’t accept cash"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should a practical fallback address beyond payment completion?",
+          "hint": "It should address … and …",
+          "answer": "The fallback should address staff explanation without embarrassment and any different transaction fee"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Whose needs might the proposal overlook?",
-          "cue": "Compare the sources, acknowledge a trade-off and propose a conditional policy",
-          "hint": "According to … Although …, I’d support … provided that …",
-          "answer": "One possible response"
+          "prompt": "How would you balance the two sources in a recommendation?",
+          "hint": "The manager aims to …, while the community account highlights …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What would your fallback need to make possible?",
+          "hint": "Someone without … must still be able to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What review would test access, cost and privacy?",
+          "hint": "I’d examine who …, what … and whether …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How does this experience affect your recommendation?",
-          "cue": "Revise a specific condition without generalising from one incident",
-          "hint": "It doesn’t necessarily change …, but it highlights … I’d require …",
-          "answer": "One possible response"
+          "prompt": "What should happen when the usual digital route fails?",
+          "hint": "Staff should offer … without requiring …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you check that the fallback doesn’t create another barrier?",
+          "hint": "I’d check the … and how staff …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you keep the recommendation proportionate to this account?",
+          "hint": "This case shows …; it doesn’t prove …, so I’d …"
         }
       ],
       "questionPurpose": "response"

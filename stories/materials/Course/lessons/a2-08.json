@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "When did you go?",
-          "cue": "Give the time and an activity",
-          "hint": "I went … I …",
-          "answer": "One possible response"
+          "prompt": "What rule do you have to follow at home or work?",
+          "hint": "I have to …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is not allowed there?",
+          "hint": "You mustn’t …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What don’t you have to do?",
+          "hint": "You don’t have to …"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "When did Ana go to Lisbon?",
-          "cue": "Use the finished time expression",
-          "hint": "She went …",
-          "answer": "She went last year"
+          "prompt": "When did Ana visit Lisbon?",
+          "hint": "She visited …",
+          "answer": "Ana visited Lisbon last year"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What did she do there?",
+          "hint": "She took … and visited …",
+          "answer": "Ana took a tram and visited a castle"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which activity did she prefer?",
+          "hint": "She preferred … because …",
+          "answer": "Ana preferred the castle because the view was beautiful"
         }
       ],
       "dialogueGroup": "a2-08.model"
@@ -189,9 +208,20 @@
         {
           "id": "d1",
           "prompt": "Has Ana visited the aquarium?",
-          "cue": "Answer about experience, then intention",
-          "hint": "No, …",
-          "answer": "No, she hasn’t. She’d like to go"
+          "hint": "No, she …",
+          "answer": "No, Ana hasn’t visited the aquarium"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What would Ana like to do next time?",
+          "hint": "She’d like to …",
+          "answer": "Ana would like to visit the aquarium next time"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What food does Ana recommend?",
+          "hint": "She recommends …",
+          "answer": "Ana recommends trying a pastel de nata"
         }
       ],
       "dialogueGroup": "a2-08.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What has she tried, and what hasn’t she tried yet?",
-          "cue": "Separate the experiences mentioned in the message",
-          "hint": "She’s …, but she hasn’t …",
-          "answer": "She’s tried a pastel de nata, but she hasn’t visited the aquarium yet"
+          "prompt": "What has Kim tried now?",
+          "hint": "She’s tried …",
+          "answer": "Kim has tried a pastel de nata"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Has Kim booked an aquarium ticket?",
+          "hint": "No, she …",
+          "answer": "No, Kim hasn’t booked an aquarium ticket"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What would Kim like to know before deciding?",
+          "hint": "She’d like to hear …",
+          "answer": "Kim would like to hear about Ana’s experience of the aquarium"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -393,10 +434,18 @@
       "questions": [
         {
           "id": "experience",
-          "prompt": "Have you ever tried this?",
-          "cue": "If yes, ask when or how it was. If no, ask whether I’d like to",
-          "hint": "Have you ever …? When did you …? / Would you like to …?",
-          "answer": "One possible response"
+          "prompt": "Have you ever tried this experience?",
+          "hint": "Yes, I have. / No, I haven’t"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "When did you do it, or would you like to try it?",
+          "hint": "I did it … / I’d like to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What detail would you like to ask me about it?",
+          "hint": "Was it …? What was … like?"
         }
       ],
       "questionPurpose": "response"
@@ -424,10 +473,18 @@
       "questions": [
         {
           "id": "recommend",
-          "prompt": "What can you tell Kim about the aquarium?",
-          "cue": "Give your experience, or say you haven’t been and ask another question",
-          "hint": "I’ve been … It was … / I haven’t been, but …",
-          "answer": "One possible response"
+          "prompt": "Have you ever been to the aquarium?",
+          "hint": "I’ve been … / I haven’t been"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What can you honestly tell Kim about it?",
+          "hint": "I thought … / I’m not sure, but …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What could Kim check before booking?",
+          "hint": "She could check … / Have you checked …?"
         }
       ],
       "questionPurpose": "response"

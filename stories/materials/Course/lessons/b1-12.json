@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would change if your routine changed?",
-          "cue": "Give one benefit and one possible difficulty",
-          "hint": "If I …, I’d …, but …",
-          "answer": "One possible response"
+          "prompt": "What would change if your work routine changed?",
+          "hint": "If I …, I’d …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What benefit would you want to keep?",
+          "hint": "I’d still want …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What concern would you need to discuss?",
+          "hint": "I’d be concerned about …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why does Ana prefer home for some tasks?",
-          "cue": "Give her reason",
-          "hint": "Because …",
-          "answer": "Because she can concentrate without interruptions"
+          "prompt": "Why does Ana usually work better at home?",
+          "hint": "She can … without …",
+          "answer": "Ana can concentrate at home without interruptions"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does Kim miss about the office?",
+          "hint": "She misses …",
+          "answer": "Kim misses quick conversations with the team"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Does Ana want to work alone all week?",
+          "hint": "No, although …",
+          "answer": "No, although Ana prefers home, she doesn’t want to work alone all week"
         }
       ],
       "dialogueGroup": "b1-12.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What condition makes hybrid more useful?",
-          "cue": "Identify what must be coordinated",
-          "hint": "They need to …",
+          "prompt": "What needs to be agreed for hybrid work to help?",
+          "hint": "They need to agree on …",
           "answer": "They need to agree on shared office days"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How many shared team days does Kim suggest?",
+          "hint": "She suggests …",
+          "answer": "Kim suggests two shared team days"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What should they check as well as team contact?",
+          "hint": "They should check whether …",
+          "answer": "They should check whether the routine gives them enough quiet time"
         }
       ],
       "dialogueGroup": "b1-12.model"
@@ -297,10 +327,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What works for this person, and what is the drawback?",
-          "cue": "Report both the benefit and the limitation",
-          "hint": "It works because … However, …",
-          "answer": "It helps concentration and team contact; changing office days makes planning difficult"
+          "prompt": "What benefits does the speaker want to keep?",
+          "hint": "They want to keep … and …",
+          "answer": "The speaker wants quiet home work and contact with colleagues"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is making planning difficult?",
+          "hint": "Office days …",
+          "answer": "Office days change at short notice"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Why does a predictable schedule matter?",
+          "hint": "It helps with …",
+          "answer": "A predictable schedule helps with childcare and travel planning"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -406,9 +447,17 @@
         {
           "id": "routine",
           "prompt": "Which routine would you recommend?",
-          "cue": "Ask what matters, explain a benefit and acknowledge one drawback",
-          "hint": "I’d suggest … because … Although …, we could …",
-          "answer": "One possible response"
+          "hint": "I’d recommend … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What disadvantage should be acknowledged?",
+          "hint": "Although …, … / However, …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would the team need to agree on?",
+          "hint": "They’d need to agree … so that …"
         }
       ],
       "questionPurpose": "response"
@@ -436,10 +485,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What change would you recommend, and why?",
-          "cue": "Acknowledge both sides and propose something specific to try",
-          "hint": "Although …, … However, we could … so that …",
-          "answer": "One possible response"
+          "prompt": "What part of the current routine should stay?",
+          "hint": "I’d keep … because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What specific scheduling change would you propose?",
+          "hint": "I’d suggest agreeing … in advance"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you explain the change without claiming it suits everyone?",
+          "hint": "It would help …, while … might need …"
         }
       ],
       "questionPurpose": "response"

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What is the listener expected to decide?",
-          "cue": "Start with their decision, not your whole history",
-          "hint": "The key issue for you is …",
-          "answer": "One possible response"
+          "prompt": "What decision does your listener need to make?",
+          "hint": "This listener needs to decide …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which facts should come first for that recipient?",
+          "hint": "I’d lead with … because …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What can be omitted without changing the decision?",
+          "hint": "I’d leave out … while preserving …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why don’t both recipients need the same first sentence?",
-          "cue": "Link priority to their decision",
-          "hint": "One needs …; the other …",
-          "answer": "One needs the budget effect; the other needs the date"
+          "prompt": "Why is the event being postponed?",
+          "hint": "The current quote …",
+          "answer": "The current quote exceeds the budget"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does the funding decision-maker need first?",
+          "hint": "They need …",
+          "answer": "The funding decision-maker needs the cost comparison"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does the rota organiser need first?",
+          "hint": "They need …",
+          "answer": "The rota organiser needs the event date"
         }
       ],
       "dialogueGroup": "c1-07.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Which detail can be omitted?",
-          "cue": "Name a detail that doesn’t change the decision",
-          "hint": "The …",
-          "answer": "The colour discussion"
+          "prompt": "What is not confirmed yet?",
+          "hint": "The … is pending",
+          "answer": "The new event date is not confirmed yet"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why shouldn’t people be asked to rearrange everything now?",
+          "hint": "The date …",
+          "answer": "The date is still pending"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Which discussion details can be omitted?",
+          "hint": "The … and …",
+          "answer": "The colour discussion and sequence of suggestions can be omitted"
         }
       ],
       "dialogueGroup": "c1-07.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Does a supplier date equal final event approval?",
-          "cue": "Separate two confirmations",
-          "hint": "No, …",
-          "answer": "No. Team availability and spending approval remain separate"
+          "prompt": "What should the funding person do next?",
+          "hint": "They should review … once …",
+          "answer": "The funding person should review the lower quote once the supplier’s date is confirmed"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What should the rota organiser do?",
+          "hint": "They should wait, then …",
+          "answer": "The rota organiser should wait for confirmation, then check availability"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why do the briefings begin differently?",
+          "hint": "The recipients face …",
+          "answer": "The recipients face different decisions even though the facts are the same"
         }
       ],
       "dialogueGroup": "c1-07.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What should be added to your briefing?",
-          "cue": "Select the update that changes the decision or next step",
-          "hint": "We need to add … because …",
-          "answer": "Add 13 December and $4,800; approval and team availability are still separate next steps"
+          "prompt": "What supplier option is now confirmed?",
+          "hint": "The supplier offers … on …",
+          "answer": "The supplier offers four thousand eight hundred dollars on the thirteenth of December"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Does that confirmation authorise spending or confirm team availability?",
+          "hint": "No, … still …",
+          "answer": "No, spending authorisation and team availability still need confirmation"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How should the two recipients act now?",
+          "hint": "One should …; the other should …",
+          "answer": "The funding person should review the costed option; the rota organiser should check availability"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -423,10 +475,18 @@
       "questions": [
         {
           "id": "brief",
-          "prompt": "What does this person need to know first?",
-          "cue": "Prioritise decision, reason and recipient’s next action",
-          "hint": "The key point is … because you need to decide …",
-          "answer": "One possible response"
+          "prompt": "Which fact should your chosen recipient hear first?",
+          "hint": "For …, I’d begin with …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What decision is still blocked?",
+          "hint": "They can’t yet … because …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What next action would you request?",
+          "hint": "Once … is confirmed, please …"
         }
       ],
       "questionPurpose": "response"
@@ -481,10 +541,18 @@
       "questions": [
         {
           "id": "update",
-          "prompt": "What should be added to each briefing?",
-          "cue": "Keep the facts identical but make the recipient’s action explicit",
-          "hint": "Having confirmed …, we can now … We still need …",
-          "answer": "One possible response"
+          "prompt": "How would you update the funding briefing?",
+          "hint": "The supplier has confirmed …; could you review …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you update the availability briefing?",
+          "hint": "We can now ask …, but … isn’t final"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What distinction must both summaries preserve?",
+          "hint": "Supplier confirmation means …; it doesn’t mean …"
         }
       ],
       "questionPurpose": "response"

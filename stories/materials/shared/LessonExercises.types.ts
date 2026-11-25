@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react'
+import type { QuestionListProps } from '../../../src/components/Exercise/QuestionList.types'
 import type { VocabularyItem } from '../../../src/components/Exercise/VocabularyGrid.types'
 
 export interface VocabularyExerciseProps {
@@ -21,17 +22,11 @@ export interface DialogueExerciseProps {
     avatarUrl?: string
   }[]
 }
-export interface PromptExerciseProps {
-  items: readonly {
-    id: string
-    prompt: string
-    cue?: string
-    answer?: string
-    hint?: string
-  }[]
-  numbered?: boolean
-  answerMinLines?: number
-}
+export type PromptExerciseProps = Pick<
+  QuestionListProps,
+  'items' | 'numbered' | 'answerMinLines' | 'density'
+>
+
 export interface GapExerciseProps {
   items: readonly {
     id: string

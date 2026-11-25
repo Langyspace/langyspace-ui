@@ -26,10 +26,8 @@ it('explores all six work situations and plays each existing word-plus-example r
   ] as const
   expect(screen.getAllByRole('img')).toHaveLength(1)
   for (const [word, recordingId, example] of targets) {
-    fireEvent.click(screen.getByRole('button', { name: word, exact: true }))
-    expect(
-      screen.getByRole('region', { name: word, exact: true }),
-    ).toBeVisible()
+    fireEvent.click(screen.getByRole('button', { name: word }))
+    expect(screen.getByRole('region', { name: word })).toBeVisible()
     expect(screen.getByText(example)).toBeVisible()
     const clip = devRecordings.find((item) => item.id === recordingId)!
     expect(media.play).toHaveBeenLastCalledWith(clip.id, clip.text)
@@ -40,10 +38,8 @@ it('explores all six work situations and plays each existing word-plus-example r
   )
   expect(media.play).toHaveBeenCalledTimes(7)
   fireEvent.click(screen.getByRole('button', { name: 'Close: feedback' }))
-  expect(
-    screen.queryByRole('region', { name: 'feedback', exact: true }),
-  ).toBeNull()
-  expect(
-    screen.getByRole('button', { name: 'feedback', exact: true }),
-  ).toHaveTextContent('feedback')
+  expect(screen.queryByRole('region', { name: 'feedback' })).toBeNull()
+  expect(screen.getByRole('button', { name: 'feedback' })).toHaveTextContent(
+    'feedback',
+  )
 })

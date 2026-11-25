@@ -14,9 +14,6 @@ const dedicated = new Set([
   'a1-04',
   'a1-05',
   'a1-06',
-  'a2-01',
-  'b1-01',
-  'b2-01',
   'c1-01',
 ])
 const report = {
@@ -94,6 +91,27 @@ function conversation(key, id, items) {
     turns: 2 * items.length,
   })
 }
+function questionBlock(key, id, items, purpose = 'comprehension') {
+  minimum(items, 3, `${key}.${id} questions`)
+  assert.equal(
+    new Set(items.map((item) => (item.prompt ?? item.q).trim())).size,
+    items.length,
+    `${key}.${id}: repeated question`,
+  )
+  for (const item of items) {
+    assert(item.hint?.trim(), `${key}.${id}: missing optional language hint`)
+    assert.notEqual(
+      item.answer,
+      'One possible response',
+      `${key}.${id}: fabricated answer`,
+    )
+  }
+  report[purpose === 'response' ? 'responses' : 'comprehension'].push({
+    key,
+    id,
+    count: items.length,
+  })
+}
 function reviewed(key, data) {
   const groups = new Map()
   for (const page of data.pages) {
@@ -103,22 +121,19 @@ function reviewed(key, data) {
     if (page.kind === 'dialogue') {
       const group = page.dialogueGroup ?? page.id
       groups.set(group, [...(groups.get(group) ?? []), ...page.lines])
-      if (page.questions?.length)
-        report.comprehension.push({
-          key,
-          id: page.id,
-          count: page.questions.length,
-        })
+      if (page.questions?.length) questionBlock(key, page.id, page.questions)
     }
     if (page.questionPurpose === 'conversation')
       conversation(key, page.id, page.items)
-    if (['questions', 'prompts'].includes(page.kind))
+    if (['questions', 'prompts'].includes(page.kind)) {
       assert(
         page.questionPurpose,
         `${key}.${page.id}: classify question purpose`,
       )
-    if (page.kind === 'listening')
-      report.comprehension.push({ key, id: page.id, count: page.items.length })
+      if (page.questionPurpose !== 'conversation')
+        questionBlock(key, page.id, page.items, page.questionPurpose)
+    }
+    if (page.kind === 'listening') questionBlock(key, page.id, page.items)
   }
   for (const [id, lines] of groups) {
     minimum(lines, 6, `${key}.${id} complete recorded model`)
@@ -166,12 +181,8 @@ for (const entry of catalog) {
       )
       if (activity.questionPurpose === 'conversation')
         conversation(key, id, activity.questions)
-      else
-        report[
-          activity.questionPurpose === 'response'
-            ? 'responses'
-            : 'comprehension'
-        ].push({ key, id, count: activity.questions.length })
+      else if (activity.questions.length)
+        questionBlock(key, id, activity.questions, activity.questionPurpose)
     }
   } else if (
     ['a1-01', 'a1-02', 'a1-03', 'a1-04', 'a1-05', 'a1-06', 'c1-01'].includes(
@@ -198,13 +209,9 @@ for (const entry of catalog) {
       )
   }
 }
-// Native renderers use their own reviewed data, not the unused Course copies.
-for (const [key, folder] of [
-  ['a2-01', 'A201'],
-  ['b1-01', 'B101'],
-  ['b2-01', 'B201'],
-  ['tema-frontend', 'Frontend'],
-]) {
+// A201/B101/B201 now delegate to CourseLesson; audit the active Course JSON above.
+// Frontend still owns a native renderer.
+for (const [key, folder] of [['tema-frontend', 'Frontend']]) {
   const data = read(`${folder}/${folder}.content.json`)
   vocabulary(key, 'vocabulary', data.vocabulary)
   minimum(data.dialogue, 6, `${key}.dialogue`)
@@ -213,6 +220,12 @@ for (const [key, folder] of [
     id: 'dialogue',
     recordedTurns: data.dialogue.length,
   })
+  for (const part of [0, 1])
+    questionBlock(
+      key,
+      `dialogue.${part}`,
+      data.dialogueQuestions.filter((q) => q.part === part),
+    )
 }
 const trial = read('TrialA1/TrialA1.content.json')
 vocabulary('trial-a1-a2', 'park', trial.p2.items)
@@ -225,14 +238,21 @@ for (const [key, folder] of [
   const data = read(`${folder}/${folder}.content.json`)
   vocabulary(key, 'vocabulary', data.scene?.hotspots ?? data.vocabulary.items)
   minimum(data.dialogue.lines, 6, `${key} model`)
+  questionBlock(key, 'dialogue', data.dialogue.questions)
   conversation(key, 'introduction', data.introduction.prompts)
 }
 const influencer = read('InfluencerRoutine/InfluencerRoutine.content.json')
 for (const block of influencer.blocks) {
   vocabulary('extra-influencer-routine', block.key, block.vocab)
   minimum(block.dialogue, 6, `influencer.${block.key} model`)
+  questionBlock('extra-influencer-routine', block.key, block.questions)
   conversation('extra-influencer-routine', block.key, block.personal.prompts)
 }
+questionBlock(
+  'extra-influencer-routine',
+  'listening',
+  influencer.listening.questions,
+)
 // Literal custom trackers must also supply a full three-pair conversation.
 for (const file of [
   'A101/MeetSomeoneActivity.tsx',
@@ -286,6 +306,7 @@ function authoredArray(file, name) {
   function visit(node) {
     if (ts.isVariableDeclaration(node) && node.name.getText(source) === name) {
       let value = node.initializer
+      if (ts.isAsExpression(value)) value = value.expression
       if (
         ts.isCallExpression(value) &&
         ts.isPropertyAccessExpression(value.expression) &&
@@ -320,6 +341,25 @@ for (const [file, name, count] of [
   assert(items.length >= count, `${file}.${name}: incomplete native set`)
   report.nativeAdapters.push({ file, id: name, count: items.length })
 }
+// Two recordings share one visible QuestionList and one progressive footer.
+for (const part of authoredArray(
+  'TrialA1/TrialA1Listening.data.ts',
+  'listeningParts',
+)) {
+  const questions = part.properties.find(
+    (property) => property.name?.getText() === 'questions',
+  )?.initializer
+  assert(questions && ts.isArrayLiteralExpression(questions))
+  assert(
+    questions.elements.length >= 3,
+    'trial-a1-a2: each audio needs three authored questions',
+  )
+  report.comprehension.push({
+    key: 'trial-a1-a2',
+    id: 'listening-part',
+    count: questions.elements.length,
+  })
+}
 // Exact ID/text/file/hash checks prevent restored words from losing their prepared audio.
 const a101 = read('A101/A101.review.json')
 const restored = read('A101/audio-provenance94.json').items
@@ -348,5 +388,5 @@ for (const page of a101.pages.filter((x) => x.kind === 'vocabulary'))
       )
     }
   }
-assert.equal(report.materials.length, 65)
+assert.equal(report.materials.length, 66)
 console.log(JSON.stringify(report, null, 2))

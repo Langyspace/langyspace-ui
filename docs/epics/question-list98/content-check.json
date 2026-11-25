@@ -1,0 +1,19 @@
+{
+  "catalogMaterials": 66,
+  "questionBlocks": 374,
+  "authoredQuestions": 1122,
+  "minimumPerBlock": 3,
+  "minimumMeaningfulExchanges": 3,
+  "questionDataChangedFiles": 64,
+  "mediaFilesChanged": 0,
+  "sourceScope": "53 Course lessons, 7 Reviewed lessons, 6 extras/experimental/native catalog entries",
+  "checks": {
+    "catalog": "passed",
+    "focusedTests": "29 passed; six adapter tests passed after type repairs",
+    "typecheck": "passed",
+    "libraryBuild": "passed",
+    "publicApi": "184 values, 307 types, 640 declarations"
+  },
+  "visualReview": "directed local A1/C1/experimental only; full catalog pending human",
+  "hostingDeployment": false
+}

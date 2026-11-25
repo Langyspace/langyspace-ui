@@ -235,7 +235,7 @@ export const MonitorForm: Story = {
 }
 export const StandardLightMonitor: Story = {
   render: () => (
-    <ThemeProvider theme={createTheme()}>
+    <ThemeProvider theme={createTheme({})}>
       <Styled.Preview>
         <ExercisePanel
           variant="monitor"

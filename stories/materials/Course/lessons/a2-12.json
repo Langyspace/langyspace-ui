@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What will you do if the first plan doesn’t work?",
-          "cue": "Offer a realistic alternative",
-          "hint": "If …, we’ll …",
-          "answer": "One possible response"
+          "prompt": "What is your first plan for a day out?",
+          "hint": "We’ll …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What will you do if the weather changes?",
+          "hint": "If …, we’ll … instead"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How will you confirm the new plan with a friend?",
+          "hint": "Does … work for you?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why is the Garden Table a better fit for this group?",
-          "cue": "Use the guest’s need",
-          "hint": "Because …",
-          "answer": "Because it has step-free access"
+          "prompt": "Why do they consider the River Café?",
+          "hint": "It’s …",
+          "answer": "They consider the River Café because it’s cheaper"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What access problem does it have?",
+          "hint": "There are …",
+          "answer": "There are steps at the River Café’s entrance"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why would the Garden Table be easier?",
+          "hint": "It has …",
+          "answer": "The Garden Table would be easier because one guest needs step-free access"
         }
       ],
       "dialogueGroup": "a2-12.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why do they wait before booking?",
-          "cue": "Give the practical reason",
-          "hint": "They need to …",
-          "answer": "They need to check everyone’s availability"
+          "prompt": "What time do they initially suggest booking?",
+          "hint": "They suggest …",
+          "answer": "They initially suggest booking for seven"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What will Ana check before the booking?",
+          "hint": "She’ll check …",
+          "answer": "Ana will check everyone’s availability"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How do they plan to pay?",
+          "hint": "They’ll …",
+          "answer": "They plan to split the bill"
         }
       ],
       "dialogueGroup": "a2-12.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What needs to change?",
-          "cue": "Identify the restriction and propose an updated plan",
-          "hint": "We need to …, so we could …",
-          "answer": "We need to change Friday to Saturday at eight and keep step-free access"
+          "prompt": "When is everyone available now?",
+          "hint": "Everyone is free on … at …",
+          "answer": "Everyone is free on Saturday at eight"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which venue has a table for that time?",
+          "hint": "The … has a table",
+          "answer": "The Garden Table has a table for Saturday at eight"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What access requirement still matters?",
+          "hint": "They still need …",
+          "answer": "They still need step-free access"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -371,10 +412,18 @@
       "questions": [
         {
           "id": "dinner",
-          "prompt": "Which place should we choose?",
-          "cue": "Invite me, compare the places and confirm a possible time",
-          "hint": "How about …? I think … because … Shall we …?",
-          "answer": "One possible response"
+          "prompt": "Which place works for all four guests?",
+          "hint": "How about … because …?"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What time shall we suggest?",
+          "hint": "Shall we meet at …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What must we confirm before booking?",
+          "hint": "We need to check … first"
         }
       ],
       "questionPurpose": "response"
@@ -402,10 +451,18 @@
       "questions": [
         {
           "id": "confirm",
-          "prompt": "What will you tell the group?",
-          "cue": "Confirm who, where and when. Say who will book or invite",
-          "hint": "Let’s meet … at … I’ll … Can you …?",
-          "answer": "One possible response"
+          "prompt": "What new day and time will you tell the group?",
+          "hint": "Let’s meet on … at …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How will you explain the choice of venue?",
+          "hint": "We chose … because …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What will you ask the group to confirm?",
+          "hint": "Could you confirm … before I book?"
         }
       ],
       "questionPurpose": "response"

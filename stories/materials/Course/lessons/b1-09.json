@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What makes an object identifiable?",
-          "cue": "Give one common and one distinctive feature",
-          "hint": "It has …, but we’d need to check …",
-          "answer": "One possible response"
+          "prompt": "How would you describe an object you own?",
+          "hint": "It’s … and has …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What detail makes it distinctive?",
+          "hint": "You can recognise it by …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What should be checked before confirming it is yours?",
+          "hint": "We’d need to compare …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Where and when was the bike last seen?",
-          "cue": "Give the place and time",
-          "hint": "At … at …",
-          "answer": "At the station rack at six"
+          "prompt": "Where was Ana’s bike taken from?",
+          "hint": "It was taken from …",
+          "answer": "Ana’s bike was taken from the rack near the station"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did she last see it?",
+          "hint": "She last saw it at …",
+          "answer": "Ana last saw her bike at six"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What information was requested for the report?",
+          "hint": "They asked for …",
+          "answer": "They asked for a description and the serial number"
         }
       ],
       "dialogueGroup": "b1-09.model"
@@ -201,9 +220,20 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why is the nearby sighting not confirmation?",
-          "cue": "Name the missing check",
-          "hint": "Nobody has …",
+          "prompt": "How does Ana describe the bike?",
+          "hint": "It’s … with …",
+          "answer": "The bike is blue with a black basket and a yellow sticker"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Has her bike definitely been found?",
+          "hint": "No, …",
+          "answer": "No, only a similar bike has been seen nearby"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What identifying detail has not been checked?",
+          "hint": "Nobody has checked …",
           "answer": "Nobody has checked the serial number"
         }
       ],
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Has the bike been found?",
-          "cue": "Report exactly what has and has not been confirmed",
-          "hint": "It has been … / It hasn’t been … yet",
-          "answer": "A similar bike has been found, but the missing bike has not been positively identified"
+          "prompt": "What details of the found bike are confirmed?",
+          "hint": "It’s … with …",
+          "answer": "The found bike is blue and has a black basket"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Has the yellow sticker been confirmed?",
+          "hint": "No, it …",
+          "answer": "No, the yellow sticker has not been confirmed"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What must be compared before identification?",
+          "hint": "They need to compare …",
+          "answer": "The identifying details, including the serial number, still need to be compared"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -333,10 +374,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you report what happened?",
-          "cue": "Give the event, place, time and distinguishing features",
-          "hint": "It was … near … at … It has …",
-          "answer": "One possible response"
+          "prompt": "What happened, and where was the bike last seen?",
+          "hint": "It was taken … I last saw it …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you describe its distinctive features?",
+          "hint": "It’s … with …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What information would help confirm its identity?",
+          "hint": "The serial number should be …"
         }
       ],
       "questionPurpose": "response"
@@ -364,10 +413,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Has the missing bike definitely been found?",
-          "cue": "Report what is confirmed and ask about the outstanding identification",
-          "hint": "A bike has been …, but … hasn’t been … yet",
-          "answer": "One possible response"
+          "prompt": "What can you report as confirmed?",
+          "hint": "A bike has been found with …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What is still uncertain?",
+          "hint": "The … hasn’t been confirmed, and …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you ask before saying it is your bike?",
+          "hint": "Has the … been checked yet?"
         }
       ],
       "questionPurpose": "response"

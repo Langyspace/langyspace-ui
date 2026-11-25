@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What’s your last name?",
-          "cue": "Say and spell a made-up last name",
-          "hint": "My last name is … That’s …",
-          "answer": "One possible response"
+          "hint": "My last name is …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How do you spell it?",
+          "hint": "That’s …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What’s your phone number?",
+          "hint": "My phone number is …"
         }
       ],
       "questionPurpose": "review"
@@ -155,9 +163,20 @@
         {
           "id": "d0",
           "prompt": "Where is Ana staying?",
-          "cue": "Use the hotel in the conversation",
           "hint": "She’s staying at …",
-          "answer": "She’s staying at the Park Hotel"
+          "answer": "Ana is staying at the Park Hotel"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How long is Ana staying?",
+          "hint": "She’s staying for …",
+          "answer": "Ana is staying for three days"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Where is gate six?",
+          "hint": "It’s on …, next to …",
+          "answer": "Gate six is on the left, next to the café"
         }
       ],
       "dialogueGroup": "a1-07.model"
@@ -250,10 +269,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Where do you need to go?",
-          "cue": "Say the gate or meeting point you heard",
-          "hint": "I need to go to …",
-          "answer": "I need to go to gate eight"
+          "prompt": "What’s Ana’s new gate?",
+          "hint": "Her new gate is …",
+          "answer": "Ana’s new gate is gate eight"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is the new gate next to?",
+          "hint": "It’s next to …",
+          "answer": "The new gate is next to the café"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should Ana keep with her?",
+          "hint": "She should keep …",
+          "answer": "Ana should keep her passport with her"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -311,10 +341,18 @@
       "questions": [
         {
           "id": "arrival",
-          "prompt": "Where are you staying, and for how long?",
-          "cue": "Answer using your travel card",
-          "hint": "I’m staying at … for … days",
-          "answer": "One possible response"
+          "prompt": "Where are you staying?",
+          "hint": "I’m staying at …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How long are you staying?",
+          "hint": "For … days"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What do you want to ask about your gate?",
+          "hint": "Where is gate …, please?"
         }
       ],
       "questionPurpose": "response"
@@ -342,10 +380,18 @@
       "questions": [
         {
           "id": "gate",
-          "prompt": "What do you need to check?",
-          "cue": "Confirm the new gate and ask me to repeat it",
-          "hint": "Gate …, right? Can you say that again?",
-          "answer": "One possible response"
+          "prompt": "What’s the new gate?",
+          "hint": "It’s gate …, right?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where is it?",
+          "hint": "It’s next to …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Can you ask me to repeat the gate number?",
+          "hint": "Can you say that again, please?"
         }
       ],
       "questionPurpose": "response"

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What does this source actually establish?",
-          "cue": "Separate an observation from an inference",
-          "hint": "It confirms …; it suggests …",
-          "answer": "One possible response"
+          "prompt": "What does a short trend actually establish?",
+          "hint": "The observations show …, but not necessarily …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What condition would you attach to a forecast?",
+          "hint": "It is likely to … if …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What observation would make you revise a recommendation?",
+          "hint": "If we observed …, I’d reconsider …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "How many observations support the pattern?",
-          "cue": "State the sample’s scope",
-          "hint": "Three …",
-          "answer": "Three monthly observations"
+          "prompt": "How much historical evidence is being discussed?",
+          "hint": "They have …",
+          "answer": "They have three months of rising demand"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why is ‘bound to get worse’ too strong?",
+          "hint": "Three observations don’t justify …",
+          "answer": "Three observations don’t justify a certain prediction"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What condition belongs in the more defensible forecast?",
+          "hint": "Demand is likely to rise if …",
+          "answer": "Demand is likely to rise if the same conditions continue"
         }
       ],
       "dialogueGroup": "c1-09.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
+          "prompt": "Is the extra transport plan confirmed?",
+          "hint": "Yes, …",
+          "answer": "Yes, the extra transport plan is confirmed"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
           "prompt": "What does the capacity estimate assume?",
-          "cue": "Name the timing assumption",
-          "hint": "That extra service …",
-          "answer": "That extra service covers the highest-demand period"
+          "hint": "It assumes …",
+          "answer": "The capacity estimate assumes the service covers the highest-demand period"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why does timing matter?",
+          "hint": "Total capacity doesn’t show …",
+          "answer": "Total capacity doesn’t show whether the service runs when people need it"
         }
       ],
       "dialogueGroup": "c1-09.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why is a total number insufficient?",
-          "cue": "Connect capacity with coverage",
-          "hint": "It may not …",
-          "answer": "It may not cover the relevant time slot"
+          "prompt": "What was the original recommendation?",
+          "hint": "They were going to recommend …",
+          "answer": "They were going to recommend no further action"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why does Ana qualify that recommendation?",
+          "hint": "More total capacity may …",
+          "answer": "More total capacity may still leave a local gap"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What makes monitoring an active response?",
+          "hint": "They also need … and …",
+          "answer": "They also need to check the affected time slot and define a trigger for changing the plan"
         }
       ],
       "dialogueGroup": "c1-09.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Which assumption is the speaker questioning?",
-          "cue": "Explain the limitation and revise your claim if needed",
-          "hint": "They’re questioning whether …, so I’d qualify …",
-          "answer": "The assumption that morning-only extra service covers afternoon demand needs qualifying"
+          "prompt": "What limitation has been found in the extra service?",
+          "hint": "It only runs …",
+          "answer": "The extra service only runs during the morning peak"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What demand is not automatically covered?",
+          "hint": "The projection also includes …",
+          "answer": "The projection also includes afternoon trips"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does that limitation not prove?",
+          "hint": "It doesn’t prove … or …",
+          "answer": "It doesn’t prove demand will keep rising at the same rate or that the whole plan will fail"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -382,35 +434,37 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [
-              100
-            ]
+            "values": [100]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [
-              120
-            ]
+            "values": [120]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [
-              140
-            ]
+            "values": [140]
           }
         ]
       },
       "questions": [
         {
           "id": "trend",
-          "prompt": "How certain can we be from these figures?",
-          "cue": "Describe the observed pattern and qualify a projection",
-          "hint": "The figures suggest …, but they don’t establish …",
-          "answer": "One possible response"
+          "prompt": "How would you describe the observed trend without overstating it?",
+          "hint": "The figures suggest … over …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What assumption limits the capacity projection?",
+          "hint": "The projection assumes …, which needs …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would trigger a further decision?",
+          "hint": "If … in the affected time slot, we would …"
         }
       ],
       "questionPurpose": "response"
@@ -438,10 +492,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What is a sensible next step despite uncertainty?",
-          "cue": "Name the missing data and a decision trigger without claiming inevitable failure",
-          "hint": "Even if …, it would be worth … If we observe …, we should …",
-          "answer": "One possible response"
+          "prompt": "How would you revise the ‘problem solved’ claim?",
+          "hint": "The extra service covers …, but … remains unverified"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What afternoon information would you request?",
+          "hint": "We need to compare … with …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What conditional recommendation would you make?",
+          "hint": "I’d recommend … pending …, with a review if …"
         }
       ],
       "questionPurpose": "response"
@@ -455,25 +517,19 @@
             "id": "jan",
             "label": "January",
             "description": "Observed trips per day · fictional",
-            "values": [
-              100
-            ]
+            "values": [100]
           },
           {
             "id": "feb",
             "label": "February",
             "description": "Observed trips per day · fictional",
-            "values": [
-              120
-            ]
+            "values": [120]
           },
           {
             "id": "mar",
             "label": "March",
             "description": "Observed trips per day · fictional",
-            "values": [
-              140
-            ]
+            "values": [140]
           }
         ]
       },

@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What did you do yesterday?",
-          "cue": "Say one action, then ask me",
-          "hint": "Yesterday I … What about you?",
-          "answer": "One possible response"
+          "hint": "Yesterday I …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Where did you go?",
+          "hint": "I went to …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How was it?",
+          "hint": "It was … What about your day?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What did Ana do after the market?",
-          "cue": "Give the next activity",
-          "hint": "She …",
-          "answer": "She had coffee and took photos"
+          "prompt": "Where did Ana go on Saturday?",
+          "hint": "She went to …",
+          "answer": "Ana went to a market"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Who did Ana have coffee with?",
+          "hint": "She had coffee with …",
+          "answer": "Ana had coffee with a friend"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What did Ana buy?",
+          "hint": "She bought …",
+          "answer": "Ana bought some fruit"
         }
       ],
       "dialogueGroup": "a2-02.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why did Ana stay home on Sunday?",
-          "cue": "Use the reason she gave",
-          "hint": "Because …",
-          "answer": "Because she was tired"
+          "prompt": "What did Ana do on Sunday?",
+          "hint": "She stayed … and watched …",
+          "answer": "Ana stayed at home and watched a film"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why did she stay at home?",
+          "hint": "She was …",
+          "answer": "Ana stayed at home because she was tired"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What did she think of the film?",
+          "hint": "She thought it was …",
+          "answer": "Ana thought the film was really funny"
         }
       ],
       "dialogueGroup": "a2-02.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What did she actually do?",
-          "cue": "Describe the activity that happened, not the cancelled plan",
-          "hint": "She didn’t … She … instead",
-          "answer": "She didn’t visit the museum. She went to the beach instead"
+          "prompt": "Where did Kim go instead of the museum?",
+          "hint": "She went to …",
+          "answer": "Kim went to the beach"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why did she change her plan?",
+          "hint": "The weather was …",
+          "answer": "Kim changed her plan because the weather was beautiful"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What did she do after her walk?",
+          "hint": "She took … and had …",
+          "answer": "Kim took photos and had lunch with a friend"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -406,10 +447,18 @@
       "questions": [
         {
           "id": "story",
-          "prompt": "How was your weekend?",
-          "cue": "Use one example or your own weekend. Add a reaction and a question",
-          "hint": "First I … Then I … It was … What about you?",
-          "answer": "One possible response"
+          "prompt": "What did you do on Saturday morning?",
+          "hint": "First I …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What did you do after that?",
+          "hint": "Then I …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How was your Sunday?",
+          "hint": "On Sunday I … It was …"
         }
       ],
       "questionPurpose": "response"
@@ -437,10 +486,18 @@
       "questions": [
         {
           "id": "followup",
-          "prompt": "What would you like to know about Kim’s Sunday?",
-          "cue": "Ask a follow-up about the place, people or experience",
-          "hint": "Where did you …? Who did you … with? Was it …?",
-          "answer": "One possible response"
+          "prompt": "What would you like to ask about Kim’s beach walk?",
+          "hint": "Where did you …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How could you ask about her company?",
+          "hint": "Who did you have lunch with?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What part of your own weekend could you share?",
+          "hint": "I … too. / My weekend was different: I …"
         }
       ],
       "questionPurpose": "response"

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What does the evidence actually support?",
-          "cue": "State the claim and its limit",
-          "hint": "It supports …, but not …",
-          "answer": "One possible response"
+          "prompt": "What does cautious wording leave unverified?",
+          "hint": "Saying … doesn’t establish …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you attribute a claim clearly?",
+          "hint": "According to …, …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would a useful correction include?",
+          "hint": "I’d correct …, confirm … and leave … open"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why doesn’t “is said to” solve the source problem?",
-          "cue": "Explain the missing attribution",
-          "hint": "It still …",
-          "answer": "It still does not identify who made the claim"
+          "prompt": "What claim does the post make?",
+          "hint": "It claims …",
+          "answer": "The post claims the café is closing permanently"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why won’t Ana share it as it stands?",
+          "hint": "It doesn’t identify …",
+          "answer": "The post doesn’t identify the source of its claim"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why doesn’t ‘is said to be’ resolve the problem?",
+          "hint": "It still … without …",
+          "answer": "It still circulates the claim without identifying who made it"
         }
       ],
       "dialogueGroup": "c1-03.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What service remains available?",
-          "cue": "Use the official notice",
-          "hint": "The …",
-          "answer": "Delivery continues"
+          "prompt": "What change does the official notice confirm?",
+          "hint": "The dining area … while …",
+          "answer": "The dining area will close for renovation while delivery continues"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Does the notice establish permanent closure?",
+          "hint": "No, it confirms …",
+          "answer": "No, it confirms a temporary service change"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What information is absent from the excerpt?",
+          "hint": "It doesn’t give …",
+          "answer": "The excerpt doesn’t give a reopening date"
         }
       ],
       "dialogueGroup": "c1-03.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What should be corrected if the post was shared?",
-          "cue": "Name the unsupported scope",
-          "hint": "The claim of …",
-          "answer": "The claim of permanent closure"
+          "prompt": "How should Kim attribute the update?",
+          "hint": "According to …",
+          "answer": "Kim should attribute the update to the café’s own notice"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why should the delivery detail be retained?",
+          "hint": "It changes …",
+          "answer": "The delivery detail changes what readers need to do"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What should Kim do if the original claim was already shared?",
+          "hint": "Kim should …",
+          "answer": "Kim should correct the unsupported permanent-closure claim"
         }
       ],
       "dialogueGroup": "c1-03.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Which part of the original claim needs revising?",
-          "cue": "Explain the correction and keep the attribution clear",
-          "hint": "The source now says …, rather than …",
-          "answer": "Permanent closure is unsupported; reopening date remains unset"
+          "prompt": "Which source should anchor the revised update?",
+          "hint": "It should be attributed to …",
+          "answer": "The revised update should be attributed to the café’s official notice"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What remains unknown?",
+          "hint": "A … has not …",
+          "answer": "A reopening date has not been set"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What is the useful next step for someone planning a visit?",
+          "hint": "They should … rather than …",
+          "answer": "They should check the café’s own updates rather than repeat the unverified post"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What can we actually confirm?",
-          "cue": "Attribute the information and state what remains unverified",
-          "hint": "The notice confirms …, but … is still unverified",
-          "answer": "One possible response"
+          "prompt": "How would you distinguish confirmed and unsupported information?",
+          "hint": "The notice confirms …; it doesn’t support …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you handle the missing reopening date?",
+          "hint": "No date has …, so …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would you advise a prospective visitor to do?",
+          "hint": "Before travelling, check …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you pass this on responsibly?",
-          "cue": "Correct the original claim and preserve source, scope and uncertainty",
-          "hint": "According to …, … The earlier claim … A date has not …",
-          "answer": "One possible response"
+          "prompt": "How would you correct the permanent-closure claim?",
+          "hint": "My earlier update overstated …; according to …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Which practical service information would you retain?",
+          "hint": "Delivery …, while the dining area …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What limit would you state without inventing certainty?",
+          "hint": "We know …, but a … is not yet …"
         }
       ],
       "questionPurpose": "response"

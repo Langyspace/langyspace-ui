@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What can you safely say about this person?",
-          "cue": "Use the supplied relationship or known action",
-          "hint": "This is … They’re … / They …",
-          "answer": "One possible response"
+          "prompt": "How would you introduce someone you know?",
+          "hint": "This is … They’re …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What action can help another person recognise them?",
+          "hint": "They’re the person who …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What shouldn’t you guess about them?",
+          "hint": "I know …, but I don’t know …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Who organised the music?",
-          "cue": "Name the person, not the host",
-          "hint": "It was …",
+          "prompt": "Who is dancing with Leo?",
+          "hint": "The woman is …",
+          "answer": "The woman dancing with Leo is Nina"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What did Nina organise?",
+          "hint": "She organised …",
           "answer": "Nina organised the music"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How can Kim recognise Alex?",
+          "hint": "Alex is the person …",
+          "answer": "Alex is the host in the green shirt by the table"
         }
       ],
       "dialogueGroup": "b1-11.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "How can Kim find Alex?",
-          "cue": "Use a visible detail and location",
-          "hint": "The person who …",
-          "answer": "The person in green by the drinks table"
+          "prompt": "Which table does Ana mean?",
+          "hint": "She means the table where …",
+          "answer": "Ana means the drinks table next to the dance floor"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why don’t they approach Alex immediately?",
+          "hint": "They don’t want to …",
+          "answer": "They don’t want to interrupt the speech"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will they do after the speech?",
+          "hint": "Ana will …",
+          "answer": "Ana will take Kim over and introduce her to Alex"
         }
       ],
       "dialogueGroup": "b1-11.model"
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Who should you look for?",
-          "cue": "Identify the person using the message and the scene",
-          "hint": "I should look for the person who …",
-          "answer": "Alex, the host in a green shirt by the drinks table"
+          "prompt": "Who does Kim want help finding?",
+          "hint": "She wants to find …",
+          "answer": "Kim wants help finding Alex"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Where is Alex standing?",
+          "hint": "Alex is standing …",
+          "answer": "Alex is standing by the drinks table"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should the introduction avoid guessing?",
+          "hint": "It shouldn’t guess …",
+          "answer": "The introduction should not guess Alex’s job or family relationship"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -361,9 +402,17 @@
         {
           "id": "person",
           "prompt": "Which person would you like to meet?",
-          "cue": "Identify the person so I can find them, then introduce us",
-          "hint": "The person who’s … This is …, who …",
-          "answer": "One possible response"
+          "hint": "I’d like to meet the person who …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How can you point them out using known details?",
+          "hint": "They’re the one wearing … / standing …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "When would be a good moment for an introduction?",
+          "hint": "Let’s wait until …, then …"
         }
       ],
       "questionPurpose": "response"
@@ -391,10 +440,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you introduce Kim and Alex?",
-          "cue": "Use one identifying clause and one known fact; wait until the speech ends",
-          "hint": "Alex, this is Kim. Kim, this is Alex, who …",
-          "answer": "One possible response"
+          "prompt": "How would you introduce Kim to Alex?",
+          "hint": "Alex, this is … Kim, Alex is …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What known action could you mention?",
+          "hint": "Alex is the person who …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What could you ask to start their conversation?",
+          "hint": "How did you …? What do you enjoy about …?"
         }
       ],
       "questionPurpose": "response"

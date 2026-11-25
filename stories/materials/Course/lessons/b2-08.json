@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "Which criteria are non-negotiable?",
-          "cue": "Separate a firm requirement from an attractive extra",
-          "hint": "We need …, whereas … would be nice",
-          "answer": "One possible response"
+          "prompt": "Which housing criteria are non-negotiable for you?",
+          "hint": "A place would have to …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which attractive feature could you compromise on?",
+          "hint": "I’d like …, but I could …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What missing cost would you check?",
+          "hint": "Before comparing, I’d ask whether …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which requirements are fixed?",
-          "cue": "Name two criteria from the brief",
-          "hint": "A … and …",
-          "answer": "A usable work area and total budget under $1,000"
+          "prompt": "Why does the person need a usable work area?",
+          "hint": "The person …",
+          "answer": "The person works from home"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How does A’s location differ from B’s?",
+          "hint": "A is …, whereas B …",
+          "answer": "A is near the metro, whereas B is further away"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which apartment has a balcony?",
+          "hint": "Apartment … has …",
+          "answer": "Apartment C has a balcony and is between A and B in distance"
         }
       ],
       "dialogueGroup": "b2-08.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why is C not fully comparable yet?",
-          "cue": "Identify the missing cost",
-          "hint": "The …",
-          "answer": "The maintenance fee is not confirmed"
+          "prompt": "Is a balcony a fixed requirement?",
+          "hint": "No, it is …",
+          "answer": "No, the balcony is attractive but not essential"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What are the fixed requirements?",
+          "hint": "They need … and …",
+          "answer": "They need a work area and a total budget under a thousand dollars"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Which listing leaves a fee unconfirmed?",
+          "hint": "Apartment … doesn’t …",
+          "answer": "Apartment C doesn’t confirm the maintenance fee"
         }
       ],
       "dialogueGroup": "b2-08.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why might B still work?",
-          "cue": "Explain a possible trade-off",
-          "hint": "It has …",
-          "answer": "It has more space, if the longer commute is acceptable"
+          "prompt": "Why shouldn’t they compare advertised rents alone?",
+          "hint": "They may not include …",
+          "answer": "The advertised rents may not include the full costs"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What two checks does Ana propose?",
+          "hint": "She proposes … and …",
+          "answer": "Ana proposes viewing A and asking C’s landlord about the fee"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why might B still be suitable?",
+          "hint": "It offers … if …",
+          "answer": "B offers more space if the commute is manageable"
         }
       ],
       "dialogueGroup": "b2-08.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Does the new information affect your recommendation?",
-          "cue": "Connect the detail to the person’s priorities",
-          "hint": "It does because … / It doesn’t change …",
-          "answer": "C is $1,100 including the fee, above the firm budget"
+          "prompt": "What is C’s total monthly cost now?",
+          "hint": "It totals … because …",
+          "answer": "C totals eleven hundred dollars: nine hundred and fifty rent plus a hundred and fifty maintenance fee"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why does that change the recommendation?",
+          "hint": "The total exceeds …",
+          "answer": "C’s total exceeds the firm thousand-dollar limit"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What still needs checking in A?",
+          "hint": "They need to see whether …",
+          "answer": "They need to see whether A’s work corner is comfortable for two home-working days a week"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -429,10 +481,18 @@
       "questions": [
         {
           "id": "home",
-          "prompt": "Which detail matters most for this person?",
-          "cue": "Compare two options and identify what you would check before recommending one",
-          "hint": "The first one, which …, would … I’d want to know whether …",
-          "answer": "One possible response"
+          "prompt": "Which apartment would you investigate first?",
+          "hint": "I’d investigate …, which …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What compromise would that choice involve?",
+          "hint": "Although …, it …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What must be checked before a final recommendation?",
+          "hint": "Before deciding, I’d confirm …"
         }
       ],
       "questionPurpose": "response"
@@ -487,10 +547,18 @@
       "questions": [
         {
           "id": "revised",
-          "prompt": "Which remaining option would you recommend?",
-          "cue": "Acknowledge the budget exclusion, compare the remaining trade-off and ask one question",
-          "hint": "C, which …, is above the limit. I’d consider …, provided …",
-          "answer": "One possible response"
+          "prompt": "How would you explain removing C from consideration?",
+          "hint": "C, which …, now exceeds …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Which remaining trade-off matters most?",
+          "hint": "The key trade-off is … versus …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you check at the viewing?",
+          "hint": "I’d check whether … would be suitable for …"
         }
       ],
       "questionPurpose": "response"

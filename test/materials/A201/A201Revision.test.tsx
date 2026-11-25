@@ -11,8 +11,11 @@ it('retains the complete Anna/Ben exchange and exact original recording identiti
     expect(
       legacy.items.some((c) => c.id === turn.id && c.text === turn.audioText),
     ).toBe(true)
-  expect(lesson.activities.s_mission.questions[0]?.cue).toContain(
-    'Compare a habit',
-  )
+  expect(lesson.activities.s_mission.questions).toHaveLength(3)
+  expect(lesson.activities.s_mission.questions.map((q) => q.prompt)).toEqual([
+    'What does Anna usually do in the morning?',
+    'What is she doing today instead?',
+    'How is your morning similar or different?',
+  ])
   expect(lesson.freeConversationInstruction).toContain('routines')
 })

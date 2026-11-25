@@ -1,9 +1,9 @@
 import { ThemeProvider } from 'styled-components'
 import { VoiceMessageExercise } from '../../../src/components/VoiceMessage/VoiceMessageExercise'
 import { PromptExercise } from '../shared/LessonExercises'
+import type { QuestionListItem } from '../../../src/components/Exercise/QuestionList.types'
 import { withVoiceMessageLayout } from '../shared/deviceTheme'
 import { theme } from '../../../src/foundations/theme/theme'
-import * as S from './TrialA1Listening.styles'
 import { ana } from '../shared/characterPortraits'
 import { listeningParts } from './TrialA1Listening.data'
 export { listeningParts } from './TrialA1Listening.data'
@@ -52,17 +52,13 @@ export function TrialA1Listening({ active }: { active: boolean }) {
           conversation: 'Conversation',
         }}
         footer={
-          <S.Questions>
-            {listeningParts.map((message, index) => (
-              <S.QuestionGroup
-                key={message.id}
-                aria-label={`Questions for audio ${index + 1}`}
-              >
-                <S.GroupTitle>Audio {index + 1}</S.GroupTitle>
-                <PromptExercise items={message.questions} answerMinLines={1} />
-              </S.QuestionGroup>
-            ))}
-          </S.Questions>
+          <PromptExercise
+            density="compact"
+            items={listeningParts.flatMap<QuestionListItem>(
+              (message) => message.questions,
+            )}
+            answerMinLines={1}
+          />
         }
       />
     </ThemeProvider>

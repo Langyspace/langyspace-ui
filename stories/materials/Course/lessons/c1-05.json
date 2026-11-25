@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What does the listener need to know first?",
-          "cue": "Give enough context to understand the consequence",
-          "hint": "Before …, … had … Then …",
-          "answer": "One possible response"
+          "prompt": "What does a listener need to understand before a story’s surprise?",
+          "hint": "They first need to know …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you distinguish noticing a loss from its cause?",
+          "hint": "I noticed … at …, but that doesn’t show …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Where would emphasis help rather than exaggerate?",
+          "hint": "I’d emphasise … because …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Where was the scarf first noticed missing?",
-          "cue": "Distinguish noticing from losing",
-          "hint": "On …",
-          "answer": "On the train"
+          "prompt": "Where did Ana initially think the scarf had gone?",
+          "hint": "She thought it …",
+          "answer": "Ana initially thought the scarf had gone on the train"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did she notice it was missing?",
+          "hint": "She noticed …",
+          "answer": "Ana noticed the scarf was missing during the journey"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What had she done just before going to the station?",
+          "hint": "She had … and …",
+          "answer": "Ana had put on her coat and hurried from the café"
         }
       ],
       "dialogueGroup": "c1-05.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why would “stolen” be misleading?",
-          "cue": "Separate assumption from evidence",
-          "hint": "The story doesn’t …",
-          "answer": "The story does not establish a theft"
+          "prompt": "What alternative explanation does Kim suggest?",
+          "hint": "It could have …",
+          "answer": "The scarf could have stayed on the café chair when Ana picked up her coat"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How confident is Ana about wearing it when leaving?",
+          "hint": "She is …",
+          "answer": "Ana is less sure about that memory now"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What evidence are the staff checking?",
+          "hint": "They are checking … and …",
+          "answer": "The staff are checking the chair and a photograph taken before departure"
         }
       ],
       "dialogueGroup": "c1-05.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What is the function of the photograph?",
-          "cue": "Explain the changed sequence",
-          "hint": "It shows …",
-          "answer": "It shows the scarf was at the café before the train journey"
+          "prompt": "What would the scarf appearing in the earlier photo establish?",
+          "hint": "It would establish …",
+          "answer": "It would establish that the scarf did not disappear during the train journey"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What unsupported narrative should be avoided?",
+          "hint": "They should avoid …",
+          "answer": "They should avoid turning the story into an unsupported theft claim"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What initial confusion does Ana identify?",
+          "hint": "She confused … with …",
+          "answer": "Ana confused where she noticed the loss with where she left the scarf"
         }
       ],
       "dialogueGroup": "c1-05.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What made the ending surprising?",
-          "cue": "Connect the initial expectation to the final detail",
-          "hint": "At first I assumed …, but …",
-          "answer": "The photograph shows the scarf was already at the café before the train journey"
+          "prompt": "Where did staff find the scarf?",
+          "hint": "They found it …",
+          "answer": "The staff found the scarf on the café chair"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How did the photograph change the explanation?",
+          "hint": "It showed … before …",
+          "answer": "The photograph showed the scarf on the chair before the train journey"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How did the story end?",
+          "hint": "The staff … and the traveller …",
+          "answer": "The staff kept the scarf behind the counter and the traveller collected it later"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Which detail would you reveal first?",
-          "cue": "Choose the context the listener needs and reserve the significant clue",
-          "hint": "At first … What I didn’t realise was …",
-          "answer": "One possible response"
+          "prompt": "How would you establish the traveller’s initial expectation?",
+          "hint": "At first, they were convinced …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you introduce the photograph without claiming theft?",
+          "hint": "A photograph taken … suggested …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What question about the timeline still needs answering?",
+          "hint": "We still need to know whether …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Why is this ending surprising rather than just convenient?",
-          "cue": "Link the initial assumption to the earlier clue and invite a reaction",
-          "hint": "At first I assumed … As it turned out, …",
-          "answer": "One possible response"
+          "prompt": "How would you reveal what the photograph establishes?",
+          "hint": "What the photograph showed was …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you explain the surprise accurately?",
+          "hint": "The surprise was …, rather than …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you close the story without adding drama?",
+          "hint": "The staff …, and later …"
         }
       ],
       "questionPurpose": "response"

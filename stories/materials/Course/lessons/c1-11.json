@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What response does the person actually need?",
-          "cue": "Distinguish receipt from a commitment",
-          "hint": "Do you need me to … or …?",
-          "answer": "One possible response"
+          "hint": "They need …, rather than …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How could one ambiguous word create disagreement?",
+          "hint": "They may interpret … as …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you check your reformulation?",
+          "hint": "Have I understood correctly that …?"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What did the listener initially infer?",
-          "cue": "Name the stronger demand",
-          "hint": "That they needed …",
-          "answer": "A full answer before checking the figures"
+          "prompt": "Does ‘quick reply’ mean checked figures today?",
+          "hint": "No, it means …",
+          "answer": "No, it means acknowledgement and a time for the checked answer"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What interpretation did Kim initially make?",
+          "hint": "Kim thought …",
+          "answer": "Kim thought a quick reply meant answering before checking the figures"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What risk does Ana identify?",
+          "hint": "An immediate answer might …",
+          "answer": "An immediate answer might present unchecked figures as certain"
         }
       ],
       "dialogueGroup": "c1-11.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What does the concrete example add?",
-          "cue": "Identify observable action and time",
-          "hint": "It names …",
-          "answer": "Who will check and when the answer will follow"
+          "prompt": "Can verification take until tomorrow?",
+          "hint": "Yes, provided …",
+          "answer": "Yes, provided the sender gives a realistic time and updates it if needed"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How can a fast message remain accurate?",
+          "hint": "It can acknowledge … without …",
+          "answer": "It can acknowledge receipt without pretending the answer is complete"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What concrete promise does Ana’s example make?",
+          "hint": "It promises to … by …",
+          "answer": "The example promises to check the figures and reply by four tomorrow"
         }
       ],
       "dialogueGroup": "c1-11.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why check the final summary?",
-          "cue": "Avoid speaking for others without agreement",
-          "hint": "To ensure …",
-          "answer": "To ensure both recognise their own position in it"
+          "prompt": "Why might the noun phrase obscure the next step?",
+          "hint": "It can hide …",
+          "answer": "The noun phrase can hide who is doing what and when"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What common ground do they identify?",
+          "hint": "They both need … with …",
+          "answer": "They both need an accurate answer with a visible response time"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why should they check that interpretation?",
+          "hint": "They shouldn’t assume …",
+          "answer": "They shouldn’t assume the other person accepts their summary"
         }
       ],
       "dialogueGroup": "c1-11.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What did the listener misunderstand?",
-          "cue": "State the original interpretation and the intended meaning",
-          "hint": "They took it to mean …, whereas …",
-          "answer": "The listener confused a prompt acknowledgement with a complete verified answer today"
+          "prompt": "What was the speaker asking for?",
+          "hint": "They wanted … and …",
+          "answer": "The speaker wanted prompt acknowledgement and a realistic time for the complete answer"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What response pattern is causing difficulty?",
+          "hint": "Silence followed by …",
+          "answer": "Silence followed by a rushed, unchecked answer is causing difficulty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What two needs should the reformulation make visible?",
+          "hint": "One person needs …; the other …",
+          "answer": "One person needs accuracy; the other needs a response time for planning"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What do you think each person means by quick?",
-          "cue": "Check the interpretation and reformulate with a concrete example",
-          "hint": "So, if I understand … To put it another way, …",
-          "answer": "One possible response"
+          "prompt": "How would you explain the first person’s need?",
+          "hint": "They need a prompt … so that …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you preserve the other person’s accuracy concern?",
+          "hint": "That doesn’t require … before …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What example could bridge the two needs?",
+          "hint": "Received; I’ll … and reply by …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you explain the misunderstanding to both people?",
-          "cue": "State the old interpretation, the intended meaning and an example; invite correction",
-          "hint": "They took it to mean …, whereas … Is that a fair summary?",
-          "answer": "One possible response"
+          "prompt": "What would you ask the sender to do now?",
+          "hint": "Please acknowledge … and give …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What should happen if the timing changes?",
+          "hint": "If …, send … rather than …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you check that both people accept your summary?",
+          "hint": "Does that reflect …, or have I missed …?"
         }
       ],
       "questionPurpose": "response"

@@ -204,8 +204,22 @@
           "id": "d1",
           "prompt": "Where is Kim from?",
           "cue": "Say the country",
-          "hint": "From …",
-          "answer": "From Korea"
+          "hint": "Kim is from …",
+          "answer": "Kim is from Korea"
+        },
+        {
+          "id": "d2",
+          "prompt": "Where is Ana from?",
+          "cue": "Say the country",
+          "hint": "Ana is from …",
+          "answer": "Ana is from Brazil"
+        },
+        {
+          "id": "d3",
+          "prompt": "How is Kim?",
+          "cue": "Say how she feels",
+          "hint": "She’s …, but she’s …",
+          "answer": "Kim is tired, but she’s happy"
         }
       ]
     },
@@ -298,9 +312,20 @@
         {
           "id": "listen",
           "prompt": "Where is Kim’s friend Mia from?",
-          "cue": "Say the country",
-          "hint": "From …",
-          "answer": "From the United States"
+          "hint": "Mia is from …",
+          "answer": "Mia is from the United States"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Where are Kim and Mia?",
+          "hint": "They’re at …",
+          "answer": "Kim and Mia are at the café"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "How does Kim feel?",
+          "hint": "She’s …",
+          "answer": "Kim is happy that Ana is there"
         }
       ]
     },
@@ -315,9 +340,17 @@
         {
           "id": "greet",
           "prompt": "Hi! How are you?",
-          "cue": "Greet Mia, say your name and how you feel",
-          "hint": "Hi, Mia! I’m … I’m … Nice to meet you!",
-          "answer": "One possible response"
+          "hint": "Hi, Mia! I’m …"
+        },
+        {
+          "id": "s91.q98.2",
+          "prompt": "What’s your name?",
+          "hint": "My name is … Nice to meet you!"
+        },
+        {
+          "id": "s91.q98.3",
+          "prompt": "Where are you from?",
+          "hint": "I’m from … What about you?"
         }
       ],
       "questionPurpose": "response"

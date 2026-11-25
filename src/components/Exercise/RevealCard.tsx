@@ -10,11 +10,12 @@ export function RevealCard({
   presentation = 'card',
   answerMinLines = 1,
   guidance,
+  guidanceControl = 'inline',
   onClick,
   ...props
 }: RevealCardProps) {
   const answerId = useId()
-  if (guidance) {
+  if (guidance && guidanceControl === 'inline') {
     const next =
       guidance.level === 'cue'
         ? 'hint'
@@ -72,9 +73,13 @@ export function RevealCard({
       <Styled.PromptPanel>
         <Styled.PromptTrigger
           {...props}
-          onClick={onClick}
+          onClick={(event) => {
+            onClick?.(event)
+            if (guidance && !event.defaultPrevented)
+              guidance.onChange(guidance.level === 'full' ? 'cue' : 'full')
+          }}
           type={type}
-          aria-expanded={revealed}
+          aria-expanded={guidance ? guidance.level !== 'cue' : revealed}
           aria-controls={answerId}
         >
           {typeof marker === 'string' || typeof marker === 'number' ? (
@@ -84,15 +89,36 @@ export function RevealCard({
           )}
           <span>{children}</span>
         </Styled.PromptTrigger>
-        <Styled.PromptAnswer
-          id={answerId}
-          $revealed={revealed}
-          $minLines={answerMinLines}
-          aria-hidden={!revealed}
-          inert={!revealed}
-        >
-          {answer}
-        </Styled.PromptAnswer>
+        {guidance ? (
+          <Styled.GuidanceContent id={answerId} aria-live="polite">
+            <Styled.PromptAnswer
+              $revealed={guidance.level === 'hint'}
+              $minLines={answerMinLines}
+              aria-hidden={guidance.level !== 'hint'}
+              inert={guidance.level !== 'hint'}
+            >
+              {guidance.hint}
+            </Styled.PromptAnswer>
+            <Styled.PromptAnswer
+              $revealed={guidance.level === 'full'}
+              $minLines={answerMinLines}
+              aria-hidden={guidance.level !== 'full'}
+              inert={guidance.level !== 'full'}
+            >
+              {answer}
+            </Styled.PromptAnswer>
+          </Styled.GuidanceContent>
+        ) : (
+          <Styled.PromptAnswer
+            id={answerId}
+            $revealed={revealed}
+            $minLines={answerMinLines}
+            aria-hidden={!revealed}
+            inert={!revealed}
+          >
+            {answer}
+          </Styled.PromptAnswer>
+        )}
       </Styled.PromptPanel>
     )
   return (

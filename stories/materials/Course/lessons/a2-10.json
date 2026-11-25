@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What matters to you when you choose a place?",
-          "cue": "Name one need and one preference",
-          "hint": "I need … I’d like …",
-          "answer": "One possible response"
+          "prompt": "What matters to you when choosing a place?",
+          "hint": "I need … I’d like …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What experience of a place could you share?",
+          "hint": "I’ve stayed in … It was …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What detail would you ask before booking?",
+          "hint": "Is there …? Is it … enough?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why does Ana first prefer A?",
-          "cue": "Give two reasons",
-          "hint": "It has … and it’s …",
-          "answer": "It has two beds and it’s closer to the centre"
+          "prompt": "Which apartment has two beds?",
+          "hint": "Apartment … has …",
+          "answer": "Apartment A has two beds"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why doesn’t Ana prefer the cheaper apartment?",
+          "hint": "She’d like …",
+          "answer": "Ana would like her own bed"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which apartment is closer to the centre?",
+          "hint": "Apartment … is closer",
+          "answer": "Apartment A is closer to the centre"
         }
       ],
       "dialogueGroup": "a2-10.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What do they still need to check?",
-          "cue": "Name the unanswered question",
-          "hint": "Whether …",
-          "answer": "Whether A is quiet at night"
+          "prompt": "How far is apartment B from the centre?",
+          "hint": "It’s a … walk",
+          "answer": "Apartment B is a twenty-minute walk from the centre"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "When is Kim willing to pay more?",
+          "hint": "If they both …",
+          "answer": "Kim is willing to pay more if they both have a bed"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What do they still want to check about A?",
+          "hint": "They want to check whether …",
+          "answer": "They want to check whether apartment A is quiet at night"
         }
       ],
       "dialogueGroup": "a2-10.model"
@@ -260,10 +290,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Does the new detail change your choice?",
-          "cue": "Use the message and your priorities to explain your decision",
-          "hint": "Yes, because … / No, because …",
-          "answer": "There is no fixed answer: weigh the new noise information against beds, distance and budget"
+          "prompt": "What new problem does Kim report about A?",
+          "hint": "There’s a … outside",
+          "answer": "There is a busy road outside A, so it can be noisy at night"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which apartment is on a quiet street?",
+          "hint": "Apartment … is …",
+          "answer": "Apartment B is on a quiet street"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does Kim suggest asking before booking A?",
+          "hint": "They could ask about …",
+          "answer": "Kim suggests asking whether A has a quieter room"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -361,10 +402,18 @@
       "questions": [
         {
           "id": "stay",
-          "prompt": "Which apartment works better?",
-          "cue": "Compare two criteria and ask what matters to me",
-          "hint": "A is … than B. Is … enough for you?",
-          "answer": "One possible response"
+          "prompt": "Which apartment would you choose?",
+          "hint": "I’d choose … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Is its number of beds enough for both friends?",
+          "hint": "It has …, so …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How does the walk compare with the other option?",
+          "hint": "It’s closer/further than … Is that too far?"
         }
       ],
       "image": "a2-10-vocabulary81",
@@ -434,10 +483,18 @@
       "questions": [
         {
           "id": "revise",
-          "prompt": "Does this change your choice?",
-          "cue": "Explain the trade-off or ask what you still need to know",
-          "hint": "I’d still choose … because … / Is there a quieter …?",
-          "answer": "One possible response"
+          "prompt": "Does the new noise information change your choice?",
+          "hint": "I’d still choose … / I’d change to …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How do you balance separate beds and quiet?",
+          "hint": "… matters more to me because …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What question could you ask A before deciding?",
+          "hint": "Is there a quieter …?"
         }
       ],
       "image": "a2-10-vocabulary81",

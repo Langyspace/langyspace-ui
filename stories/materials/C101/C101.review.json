@@ -14,9 +14,17 @@
         {
           "id": "review",
           "prompt": "What concern might someone have about changing a routine?",
-          "cue": "Name a concern and offer one response",
-          "hint": "They might worry about … I’d suggest …",
-          "answer": "One possible response"
+          "hint": "They might worry about …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How could you acknowledge that concern?",
+          "hint": "I can see why …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What practical response could you offer?",
+          "hint": "We could …, provided that …"
         }
       ],
       "questionPurpose": "review"
@@ -131,16 +139,20 @@
         {
           "id": "mail1",
           "prompt": "What does Laura value, and what concerns her?",
-          "cue": "Support both parts with evidence",
-          "hint": "She values …, but she points out …",
-          "answer": "She values Raj’s knowledge and style but found the second part hard to follow"
+          "hint": "She values …, but …",
+          "answer": "Laura values Raj’s knowledge and style, but found the second part hard to follow"
         },
         {
           "id": "mail2",
-          "prompt": "What does she want to happen next?",
-          "cue": "Recover the meeting request",
-          "hint": "She suggests … and would like …",
-          "answer": "Another meeting on Thursday at ten, with Ana there too"
+          "prompt": "When would Laura like to meet again?",
+          "hint": "She suggests … at …",
+          "answer": "Laura suggests meeting on Thursday at ten"
+        },
+        {
+          "id": "s43.q98.3",
+          "prompt": "Who does Laura want to attend as well?",
+          "hint": "She would like … to attend",
+          "answer": "Laura would like Ana to attend too"
         }
       ],
       "questionPurpose": "comprehension"
@@ -193,9 +205,20 @@
         {
           "id": "d1",
           "prompt": "What does Ana plan to criticise?",
-          "cue": "Name the observable concerns",
           "hint": "She plans to mention …",
-          "answer": "Raj spoke too fast and read the slides"
+          "answer": "Ana plans to say that Raj spoke too fast and read the slides"
+        },
+        {
+          "id": "s6.q98.2",
+          "prompt": "What compliment will Ana give Raj first?",
+          "hint": "She’ll praise his … and …",
+          "answer": "Ana will praise Raj’s knowledge of the project and his style"
+        },
+        {
+          "id": "s6.q98.3",
+          "prompt": "What concern does Kim raise?",
+          "hint": "She thinks the wording …",
+          "answer": "Kim thinks Ana’s criticism sounds a bit harsh"
         }
       ],
       "dialogueGroup": "c1-01.model"
@@ -247,10 +270,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What does Kim suggest changing?",
-          "cue": "Explain the change in wording",
-          "hint": "Instead of …, she suggests …",
-          "answer": "Describe the effect and make the suggested change specific"
+          "prompt": "How does Kim suggest softening the criticism?",
+          "hint": "Describe the effect rather than …",
+          "answer": "Kim suggests describing the effect rather than making an accusation"
+        },
+        {
+          "id": "s62.q98.2",
+          "prompt": "What phrase does Ana choose about the pace?",
+          "hint": "It seemed …",
+          "answer": "Ana chooses the phrase “It seemed a little rushed”"
+        },
+        {
+          "id": "s62.q98.3",
+          "prompt": "What specific change does Ana suggest for the slides?",
+          "hint": "Raj might want to …",
+          "answer": "Ana suggests that Raj cut some text from the slides"
         }
       ],
       "dialogueGroup": "c1-01.model"
@@ -296,9 +330,20 @@
         {
           "id": "d3",
           "prompt": "What next step does Ana propose?",
-          "cue": "Recover the practical suggestion",
           "hint": "She proposes … together",
-          "answer": "Preparing the answers together next time"
+          "answer": "Ana proposes preparing the answers together next time"
+        },
+        {
+          "id": "s63.q98.2",
+          "prompt": "What opening question does Kim suggest?",
+          "hint": "How do you think …?",
+          "answer": "Kim suggests asking Raj how he thinks the presentation went"
+        },
+        {
+          "id": "s63.q98.3",
+          "prompt": "Why does Ana say they should be fair to Raj?",
+          "hint": "It was his first …",
+          "answer": "It was Raj’s first big client, so Ana recognises that there is a learning curve"
         }
       ],
       "dialogueGroup": "c1-01.model"
@@ -424,10 +469,21 @@
       "items": [
         {
           "id": "l1",
-          "prompt": "What has Raj accepted, and what does he dispute?",
-          "cue": "Separate agreement from the remaining concern",
-          "hint": "He accepts …, but he points out …",
-          "answer": "He accepts that he rushed; he says he was not told about the deadline question and had only seen Sarah’s slides on Monday"
+          "prompt": "What does Raj accept about his delivery?",
+          "hint": "He accepts that …",
+          "answer": "Raj accepts that he rushed and says he will try not to rush next time"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Who made the slides, and when did Raj see them?",
+          "hint": "Sarah …; Raj only …",
+          "answer": "Sarah made the slides; Raj only saw them on Monday"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "How does Raj want to meet Laura on Thursday?",
+          "hint": "He wants to …",
+          "answer": "Raj wants to speak to Laura alone"
         }
       ]
     },
@@ -441,10 +497,18 @@
       "items": [
         {
           "id": "reply",
-          "prompt": "Laura asked Ana to attend. Raj wants to meet her alone. How would you respond?",
-          "cue": "Recognise his preference and negotiate Ana’s attendance",
-          "hint": "I can see why … Laura has asked … Could we agree …?",
-          "answer": "Acknowledge his preference, explain that Laura asked Ana to attend, then agree how to share the questions"
+          "prompt": "How would you acknowledge Raj’s preference?",
+          "hint": "I can see why you’d like to …"
+        },
+        {
+          "id": "s91.q98.2",
+          "prompt": "How would you explain Ana’s attendance?",
+          "hint": "Laura has asked Ana to …"
+        },
+        {
+          "id": "s91.q98.3",
+          "prompt": "What arrangement could you propose?",
+          "hint": "Could we agree …? Would that work for both of you?"
         }
       ],
       "questionPurpose": "response"

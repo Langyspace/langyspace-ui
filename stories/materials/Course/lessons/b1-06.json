@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would you need to know first?",
-          "cue": "Name a priority and a missing detail",
-          "hint": "I’d need … I’d ask whether …",
-          "answer": "One possible response"
+          "prompt": "What would matter to you in a new job?",
+          "hint": "I’d want …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What would you need to know before accepting?",
+          "hint": "I’d need to know whether …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could you ask the employer for that detail?",
+          "hint": "Could you confirm whether …?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "How often would the person commute under B?",
-          "cue": "Use the arrangement, not just the journey length",
-          "hint": "On …",
-          "answer": "On three office days"
+          "prompt": "What is the trade-off in the new job?",
+          "hint": "It offers …, but …",
+          "answer": "The new job offers more flexibility but a longer commute"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How many days would Ana need to commute?",
+          "hint": "She’d commute on …",
+          "answer": "Ana would need to commute on three days"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How often could she work from home?",
+          "hint": "She could work from home …",
+          "answer": "Ana could work from home twice a week"
         }
       ],
       "dialogueGroup": "b1-06.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why is the afternoon arrangement important?",
-          "cue": "Link it to a concrete need",
-          "hint": "Because …",
-          "answer": "Because they want to attend an afternoon course"
+          "prompt": "Why does Ana want flexible hours?",
+          "hint": "She’d like time for …",
+          "answer": "Ana would like time for an afternoon course"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What should she check about the flexibility?",
+          "hint": "She should ask whether …",
+          "answer": "Ana should check whether flexible hours include afternoons"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How would the offer change without free afternoons?",
+          "hint": "It would be …",
+          "answer": "The offer would be much less useful without free afternoons"
         }
       ],
       "dialogueGroup": "b1-06.model"
@@ -297,10 +327,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What is the person most concerned about?",
-          "cue": "Identify the concern before giving advice",
-          "hint": "They’re worried about …, so I’d …",
-          "answer": "They’re concerned about having time for an afternoon course"
+          "prompt": "What is the speaker’s main priority?",
+          "hint": "The main priority is …",
+          "answer": "The speaker’s main priority is having time for an afternoon course"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Is a higher salary the main reason for changing jobs?",
+          "hint": "No, it …",
+          "answer": "No, a higher salary would be welcome but it isn’t the main reason"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What remains unconfirmed about offer B?",
+          "hint": "The employer hasn’t confirmed whether …",
+          "answer": "The employer hasn’t confirmed whether afternoons can be kept free"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -384,10 +425,18 @@
       "questions": [
         {
           "id": "jobs",
-          "prompt": "What would matter most if you took one of these jobs?",
-          "cue": "Ask about my priorities before recommending an offer",
-          "hint": "If you took …, you’d … Would … matter more than …?",
-          "answer": "One possible response"
+          "prompt": "Which routine would fit your priorities better?",
+          "hint": "If I took …, I’d …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What trade-off would you accept?",
+          "hint": "I could accept … if …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would you ask before recommending the offer?",
+          "hint": "I’d ask whether …"
         }
       ],
       "questionPurpose": "response"
@@ -415,10 +464,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What would you ask the employer before deciding?",
-          "cue": "Formulate a question that checks the person’s main priority",
-          "hint": "Would I be able to …? If not, I’d …",
-          "answer": "One possible response"
+          "prompt": "What would you ask the employer about afternoons?",
+          "hint": "Could you confirm whether …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Would two remote days alone solve the course problem?",
+          "hint": "They would/wouldn’t be enough if …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What condition would you need before accepting?",
+          "hint": "I’d accept if … Otherwise …"
         }
       ],
       "questionPurpose": "response"

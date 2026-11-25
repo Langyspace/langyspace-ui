@@ -169,17 +169,20 @@
       {
         "id": "plan",
         "prompt": "What was Ana’s original plan?",
-        "answer": "She planned to spend Sunday on the beach"
+        "answer": "She planned to spend Sunday on the beach",
+        "hint": "She planned to …"
       },
       {
         "id": "cafe",
         "prompt": "Why did Ana and Leo go to a café?",
-        "answer": "It rained all morning"
+        "answer": "Ana and Leo went to a café because it rained all morning",
+        "hint": "They went because …"
       },
       {
         "id": "next-time",
         "prompt": "What would Ana do differently next time?",
-        "answer": "She’d check the weather before leaving"
+        "answer": "She’d check the weather before leaving",
+        "hint": "Next time, she’d …"
       }
     ]
   },

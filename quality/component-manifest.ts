@@ -21,6 +21,32 @@ export interface ComponentContract {
 const complete = { status: 'complete' } as const
 export const publicComponentContracts = [
   {
+    exportName: 'QuestionList',
+    interactive: true,
+    visual: true,
+    ownerPath: 'src/components/Exercise/QuestionList.tsx',
+    runtimeMarker: 'lsui-sc-question-list',
+    browserSmoke: complete,
+    ssrSmoke: complete,
+    story: {
+      ...complete,
+      path: 'stories/components/Exercise/QuestionList.stories.tsx',
+      title: 'Exercise/QuestionList',
+    },
+    test: {
+      ...complete,
+      path: 'test/components/Exercise/QuestionList.test.tsx',
+    },
+    reference: {
+      propsPath: 'src/components/Exercise/QuestionList.types.ts',
+      documentation: {
+        path: 'docs/components/question-list.md',
+        anchor: 'questionlist',
+      },
+      consumers: [],
+    },
+  },
+  {
     exportName: 'TaskBoard',
     interactive: false,
     visual: true,

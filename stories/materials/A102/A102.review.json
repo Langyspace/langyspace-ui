@@ -15,16 +15,17 @@
         {
           "id": "r1",
           "prompt": "What’s your name?",
-          "cue": "Say your name and ask me",
-          "hint": "My name is … What’s your name?",
-          "answer": "One possible response"
+          "hint": "My name is … What’s your name?"
         },
         {
           "id": "r2",
           "prompt": "Where are you from?",
-          "cue": "Say where you’re from",
-          "hint": "I’m from … What about you?",
-          "answer": "One possible response"
+          "hint": "I’m from … What about you?"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How are you today?",
+          "hint": "I’m … How are you?"
         }
       ],
       "questionPurpose": "review"
@@ -62,9 +63,20 @@
         {
           "id": "listen",
           "prompt": "What’s the last name?",
-          "cue": "Say the last name you hear",
           "hint": "The last name is …",
-          "answer": "Lima"
+          "answer": "The last name is Lima"
+        },
+        {
+          "id": "s7.q98.2",
+          "prompt": "How do you spell it?",
+          "hint": "It’s spelled …",
+          "answer": "It’s spelled L-I-M-A"
+        },
+        {
+          "id": "s7.q98.3",
+          "prompt": "What’s the last letter?",
+          "hint": "The last letter is …",
+          "answer": "The last letter is A"
         }
       ],
       "questionPurpose": "comprehension"
@@ -118,9 +130,20 @@
         {
           "id": "surname",
           "prompt": "What’s Ana’s last name?",
-          "cue": "Say and spell the last name",
-          "hint": "It’s … That’s …",
-          "answer": "Souza · S-O-U-Z-A"
+          "hint": "Her last name is …",
+          "answer": "Ana’s last name is Souza"
+        },
+        {
+          "id": "s8.q98.2",
+          "prompt": "How does she spell her last name?",
+          "hint": "It’s spelled …",
+          "answer": "She spells it S-O-U-Z-A"
+        },
+        {
+          "id": "s8.q98.3",
+          "prompt": "What’s her phone number?",
+          "hint": "Her number is …",
+          "answer": "Her phone number is 984 221 507"
         }
       ]
     },

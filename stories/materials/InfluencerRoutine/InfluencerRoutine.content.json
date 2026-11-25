@@ -91,17 +91,20 @@
         {
           "id": "Q.1.1",
           "prompt": "What time does Ana usually wake up?",
-          "answer": "Around seven"
+          "answer": "Ana usually wakes up around seven",
+          "hint": "She usually wakes up …"
         },
         {
           "id": "Q.1.2",
           "prompt": "Does she check her phone straight away?",
-          "answer": "No, she has breakfast first"
+          "answer": "No, Ana has breakfast before checking her phone",
+          "hint": "No, she … first"
         },
         {
           "id": "Q.1.3",
           "prompt": "What does she do after breakfast?",
-          "answer": "She plans her content"
+          "answer": "Ana plans her content after breakfast",
+          "hint": "After breakfast, she …"
         }
       ],
       "personal": {
@@ -216,17 +219,20 @@
         {
           "id": "Q.2.1",
           "prompt": "What does Ana usually wear to the gym?",
-          "answer": "Leggings, a comfortable top and sneakers"
+          "answer": "Ana usually wears leggings, a comfortable top and sneakers",
+          "hint": "She usually wears …"
         },
         {
           "id": "Q.2.2",
           "prompt": "Does she always put on makeup?",
-          "answer": "No, only sometimes"
+          "answer": "No, Ana only puts on makeup sometimes",
+          "hint": "No, she only …"
         },
         {
           "id": "Q.2.3",
           "prompt": "What does she take in her bag?",
-          "answer": "A towel and a water bottle"
+          "answer": "Ana takes a towel and a water bottle in her gym bag",
+          "hint": "She takes … and …"
         }
       ],
       "personal": {
@@ -341,17 +347,20 @@
         {
           "id": "Q.3.1",
           "prompt": "How often does Ana go to the gym?",
-          "answer": "Three times a week"
+          "answer": "Ana goes to the gym three times a week",
+          "hint": "She goes … times …"
         },
         {
           "id": "Q.3.2",
           "prompt": "What does she do before lifting weights?",
-          "answer": "She warms up"
+          "answer": "Ana warms up before lifting weights",
+          "hint": "Before lifting weights, she …"
         },
         {
           "id": "Q.3.3",
           "prompt": "Does she film her whole workout?",
-          "answer": "No, just a few clips"
+          "answer": "No, Ana only films a few clips of her workout",
+          "hint": "No, she only films …"
         }
       ],
       "personal": {
@@ -466,17 +475,20 @@
         {
           "id": "Q.4.1",
           "prompt": "What does Ana prepare for the next day?",
-          "answer": "Her clothes and her gym bag"
+          "answer": "Ana prepares her clothes and gym bag for the next day",
+          "hint": "She prepares … and …"
         },
         {
           "id": "Q.4.2",
           "prompt": "What does she do after washing her face?",
-          "answer": "She puts on moisturizer"
+          "answer": "Ana puts on moisturizer after washing her face",
+          "hint": "After washing her face, she …"
         },
         {
           "id": "Q.4.3",
           "prompt": "Does she take her phone to bed?",
-          "answer": "No, she reads for a few minutes"
+          "answer": "No, Ana reads for a few minutes instead of taking her phone to bed",
+          "hint": "No, she … instead"
         }
       ],
       "personal": {
@@ -540,17 +552,20 @@
       {
         "id": "LQ.1",
         "prompt": "What does Kim put in her gym bag?",
-        "answer": "A towel and a water bottle"
+        "answer": "Kim puts a towel and a water bottle in her gym bag",
+        "hint": "She puts … and … in her bag"
       },
       {
         "id": "LQ.2",
         "prompt": "Does she post every clip she films?",
-        "answer": "No, she saves some for another day"
+        "answer": "No, Kim saves some clips for another day",
+        "hint": "No, she saves …"
       },
       {
         "id": "LQ.3",
         "prompt": "Where does she leave her phone before bed?",
-        "answer": "On her desk"
+        "answer": "Kim leaves her phone on her desk before bed",
+        "hint": "She leaves it …"
       }
     ]
   },

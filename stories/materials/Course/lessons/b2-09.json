@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What information helps them act correctly?",
-          "cue": "Give the action and its condition",
-          "hint": "Could you …? If …, please …",
-          "answer": "One possible response"
+          "prompt": "What information makes a practical request clear?",
+          "hint": "I’d include … so the person can …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you distinguish a memory from a confirmed check?",
+          "hint": "I remember …, but I haven’t confirmed …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you ask someone to report back?",
+          "hint": "Please tell me whether … and what …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which actions does Ana remember?",
-          "cue": "Use the memories she actually states",
+          "prompt": "What is Ana unsure about?",
+          "hint": "She doesn’t remember …",
+          "answer": "Ana doesn’t remember locking the door"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why can Kim check the flat?",
+          "hint": "Ana left …",
+          "answer": "Ana left a spare key with Kim"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Ana remember doing?",
           "hint": "She remembers …",
-          "answer": "Switching off the stove and unplugging the iron"
+          "answer": "Ana remembers turning off the stove"
         }
       ],
       "dialogueGroup": "b2-09.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What should happen if the window is open?",
-          "cue": "Repeat the conditional instruction",
-          "hint": "Please …",
-          "answer": "Close it"
+          "prompt": "What makes Ana confident about the iron?",
+          "hint": "She can picture …",
+          "answer": "Ana can picture putting the iron away"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What is Kim going to check?",
+          "hint": "She’ll check … and …",
+          "answer": "Kim will check the door and window without assuming they are open"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What action is authorised if the window is open?",
+          "hint": "Kim should …",
+          "answer": "Kim should close the window if it is open"
         }
       ],
       "dialogueGroup": "b2-09.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why doesn’t Kim water immediately?",
-          "cue": "Identify the unresolved choice",
-          "hint": "Because …",
-          "answer": "Because the timing has not been decided"
+          "prompt": "Why doesn’t Ana immediately ask Kim to water the plants?",
+          "hint": "She wants to avoid …",
+          "answer": "Ana wants to avoid having the plants watered twice unnecessarily"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What will Kim do while waiting for that decision?",
+          "hint": "She’ll … and wait …",
+          "answer": "Kim will send an update after checking and wait for the watering instruction"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What kind of update does Ana want?",
+          "hint": "She wants to know …",
+          "answer": "Ana wants to know exactly what Kim checked, not just that everything looks fine"
         }
       ],
       "dialogueGroup": "b2-09.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What still needs a decision?",
-          "cue": "Distinguish completed checks from the unresolved point",
-          "hint": "She’s already …, but she needs to know whether …",
-          "answer": "The plant-watering day still needs a decision; the other checks are complete"
+          "prompt": "What has Kim confirmed about the door and appliances?",
+          "hint": "The door …, the stove … and the iron …",
+          "answer": "The door is locked, the stove is off and the iron is unplugged"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What action has Kim completed at the window?",
+          "hint": "She has …",
+          "answer": "Kim has closed the window, which was open"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What decision is still needed?",
+          "hint": "Ana needs to choose …",
+          "answer": "Ana needs to choose whether Kim should water the plants today or on Saturday"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What do you need your friend to check?",
-          "cue": "Separate a memory from uncertainty and give an if-needed instruction",
-          "hint": "I remember …, but not … Could you check whether …?",
-          "answer": "One possible response"
+          "prompt": "What do you remember doing?",
+          "hint": "I remember …, but …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What would you ask your friend to check?",
+          "hint": "Could you check whether …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What action would you authorise if needed?",
+          "hint": "If …, please …; otherwise …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What still needs your decision?",
-          "cue": "Acknowledge the completed checks and choose the watering day without repeating the list",
-          "hint": "Thanks for … Please … on … There’s no need to …",
-          "answer": "One possible response"
+          "prompt": "How would you acknowledge the completed checks?",
+          "hint": "Thanks for checking … and …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What watering instruction would you give?",
+          "hint": "Please … today / on Saturday because …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you make clear that the other checks needn’t be repeated?",
+          "hint": "You’ve already confirmed …, so …"
         }
       ],
       "questionPurpose": "response"

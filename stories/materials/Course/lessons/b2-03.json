@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would you do differently?",
-          "cue": "Distinguish the actual choice from an imagined alternative",
-          "hint": "I …, but I could have …",
-          "answer": "One possible response"
+          "prompt": "What past decision would you make differently?",
+          "hint": "If I hadn’t …, I might … now"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which consequence do you know actually happened?",
+          "hint": "What I know is that …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What alternative is possible but uncertain?",
+          "hint": "It’s possible that …, although …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What present skill is linked to the course?",
-          "cue": "Use the profile",
-          "hint": "They now …",
-          "answer": "They now lead small projects with more confidence"
+          "prompt": "What did the person gain from the Toronto course?",
+          "hint": "They now feel …",
+          "answer": "They now feel confident leading small projects"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What past decision led to that experience?",
+          "hint": "They took …",
+          "answer": "They took a chance on a practical course in Toronto"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why can’t Kim say the person would never have learned another way?",
+          "hint": "Because … is unknown",
+          "answer": "The outcome of another learning route is unknown"
         }
       ],
       "dialogueGroup": "b2-03.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Was meeting the collaborator guaranteed?",
-          "cue": "Distinguish outcome from expectation",
-          "hint": "No, …",
-          "answer": "No. It was an unexpected consequence"
+          "prompt": "Where did the person use the new skills?",
+          "hint": "They used them on …",
+          "answer": "They used the new skills on a community project"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Who did they meet after the course?",
+          "hint": "They met …",
+          "answer": "They met a future collaborator"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Was that meeting a planned outcome?",
+          "hint": "No, it was …",
+          "answer": "No, the meeting was an unexpected consequence"
         }
       ],
       "dialogueGroup": "b2-03.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why is “no opportunities at all” too strong?",
-          "cue": "Explain the uncertainty",
-          "hint": "They could …",
-          "answer": "They could have developed skills or contacts through another route"
+          "prompt": "What might not exist without the meeting?",
+          "hint": "The … might not exist",
+          "answer": "The collaboration might not exist without the meeting"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Could the person still have developed skills another way?",
+          "hint": "Yes, they could …",
+          "answer": "Yes, they could still have developed the skills another way"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What distinction does Ana want to preserve?",
+          "hint": "She separates … from …",
+          "answer": "Ana separates facts from imagined alternatives"
         }
       ],
       "dialogueGroup": "b2-03.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What would be different now?",
-          "cue": "Explain the present consequence of the earlier decision",
-          "hint": "If they hadn’t …, they might … now",
-          "answer": "The ongoing collaboration might not exist without the earlier meeting"
+          "prompt": "Was the unexpected benefit a job offer?",
+          "hint": "No, the person …",
+          "answer": "No, the person met someone who later invited them onto a community project"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How does that collaboration still help today?",
+          "hint": "It helps them …",
+          "answer": "The collaboration helps them explain their skills to others"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Why is ‘no opportunities at all’ too strong?",
+          "hint": "Because another route …",
+          "answer": "Another route might have created opportunities, although its outcome is unknown"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How does the past choice affect the present?",
-          "cue": "Link a known decision to a present consequence, then qualify an alternative",
-          "hint": "If they hadn’t …, they might … now. We can’t know whether …",
-          "answer": "One possible response"
+          "prompt": "How did the past choice affect the present?",
+          "hint": "If they hadn’t …, they might not … now"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Which part of that explanation is confirmed?",
+          "hint": "The confirmed facts are …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What other learning route could have been possible?",
+          "hint": "They could have …, but we can’t know …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What might be different now in the other scenario?",
-          "cue": "Explain one consequence and acknowledge a possible alternative route",
-          "hint": "They might not … now. Having said that, they could …",
-          "answer": "One possible response"
+          "prompt": "How would you describe the ongoing result accurately?",
+          "hint": "They met … and still …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What might be different without the meeting?",
+          "hint": "If they hadn’t met, … might …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you avoid turning a possibility into a certainty?",
+          "hint": "We can say …, but not assume …"
         }
       ],
       "questionPurpose": "response"

@@ -10,9 +10,3 @@ export const Scene = styled.img`
   margin-inline: auto;
   border-radius: ${theme.radius.xl};
 `
-
-export {
-  PromptList,
-  Prompt,
-  PromptQuestion,
-} from '../../../src/components/Exercise/PromptList.styles'

@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What can you commit to this week?",
-          "cue": "Give a commitment and a dependency",
-          "hint": "I can … if …",
-          "answer": "One possible response"
+          "hint": "I can … by …, provided …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What does that commitment depend on?",
+          "hint": "Before I can …, I need …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you communicate a delay?",
+          "hint": "The … has changed, so …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What must happen before final changes?",
-          "cue": "Identify the dependency",
-          "hint": "They need …",
-          "answer": "They need the review comments"
+          "prompt": "Why isn’t the draft enough to promise Friday delivery?",
+          "hint": "They still need …",
+          "answer": "They still need a review before promising delivery"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When is the review originally booked?",
+          "hint": "It’s booked for …",
+          "answer": "The review is booked for Wednesday"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What condition applies to the final changes?",
+          "hint": "They need …, provided …",
+          "answer": "The changes need about one working day after comments arrive, provided the brief doesn’t change"
         }
       ],
       "dialogueGroup": "b2-02.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What will Ana be doing at ten in the original plan?",
-          "cue": "Describe the activity in progress",
+          "prompt": "When should the main version be finished?",
+          "hint": "It should be finished by …",
+          "answer": "The main version should be finished by Thursday evening"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What will Ana be doing on Friday morning?",
           "hint": "She’ll be …",
-          "answer": "She’ll be handing over packs"
+          "answer": "Ana will be checking the printed copies"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Who will welcome the guests?",
+          "hint": "Kim offers to …",
+          "answer": "Kim offers to welcome the guests while Ana hands over the packs"
         }
       ],
       "dialogueGroup": "b2-02.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What risks must be communicated?",
-          "cue": "Name two stated risks",
-          "hint": "A … or …",
-          "answer": "A late review or a new section"
+          "prompt": "What could put the handover at risk?",
+          "hint": "Either … or …",
+          "answer": "A late review or a new section could put the handover at risk"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What should they do before communicating the deadline?",
+          "hint": "They should confirm …",
+          "answer": "They should confirm the review and communicate the deadline with that condition"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why do they need progress updates?",
+          "hint": "So nobody assumes …",
+          "answer": "They need updates so nobody assumes the draft is the final version"
         }
       ],
       "dialogueGroup": "b2-02.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Which deadline needs to change?",
-          "cue": "Use the progress update to revise the plan",
-          "hint": "They’ll have …, but they’ll still be …",
-          "answer": "The final-pack deadline needs to change; a welcome sheet can be ready by ten"
+          "prompt": "Why shouldn’t they promise the full pack for Friday morning?",
+          "hint": "The review moved to …, and …",
+          "answer": "The review moved to Thursday afternoon, and changes still need roughly one working day"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What can be ready by ten?",
+          "hint": "They can prepare …",
+          "answer": "They can prepare a short welcome sheet by ten"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should Ana check before agreeing a staged handover?",
+          "hint": "She should ask whether …",
+          "answer": "Ana should ask whether the welcome sheet covers the volunteers’ immediate needs"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What can we responsibly promise?",
-          "cue": "Ask about dependencies and agree a deadline with a clear condition",
-          "hint": "By …, we’ll have …, provided …",
-          "answer": "One possible response"
+          "prompt": "Which deadline can you responsibly communicate?",
+          "hint": "We expect … by …, provided …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What dependency needs confirmation first?",
+          "hint": "We need confirmation of … before …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How will you distinguish the draft from the final pack?",
+          "hint": "The draft …; the final pack …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Would a staged handover meet the real need?",
-          "cue": "Clarify what volunteers need first, agree a realistic final time and state the condition",
-          "hint": "We’ll have … by …, but we’ll still be … Could we …?",
-          "answer": "One possible response"
+          "prompt": "Would the welcome sheet meet the immediate need?",
+          "hint": "It would cover …, but we should check …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "When could you promise the complete pack?",
+          "hint": "We’ll need … after … before …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What change would require a new estimate?",
+          "hint": "If …, we’ll need to estimate … again"
         }
       ],
       "questionPurpose": "response"

@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What have you been doing lately?",
-          "cue": "Give an activity and one result",
-          "hint": "I’ve been … I’ve finished …",
-          "answer": "One possible response"
+          "hint": "I’ve been …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What have you finished?",
+          "hint": "I’ve finished …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What are you still working on?",
+          "hint": "I haven’t finished … yet"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why did Ana use to go to the cinema?",
-          "cue": "Give a practical reason from the dialogue",
-          "hint": "Because …",
-          "answer": "The tickets were cheap and she could walk home"
+          "prompt": "What is on the old cinema site now?",
+          "hint": "There’s a … there now",
+          "answer": "There is a pharmacy on the old cinema site"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How often did Ana use to go to the cinema?",
+          "hint": "She used to go …",
+          "answer": "Ana used to go most Saturdays"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why was going there convenient?",
+          "hint": "She could … afterwards",
+          "answer": "Ana could walk home afterwards, and the tickets were cheap"
         }
       ],
       "dialogueGroup": "b1-02.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What has stayed at the playground?",
-          "cue": "Distinguish the old feature from the new one",
-          "hint": "The … is still there",
+          "prompt": "What has been added to the playground?",
+          "hint": "They’ve added …",
+          "answer": "More trees have been added to the playground"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What has stayed the same?",
+          "hint": "The old … are still there",
           "answer": "The old swings are still there"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What does Ana miss about the neighbourhood?",
+          "hint": "She misses …",
+          "answer": "Ana misses the small shops"
         }
       ],
       "dialogueGroup": "b1-02.model"
@@ -297,10 +327,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What has changed since he lived there?",
-          "cue": "Compare the past and present details in the message",
-          "hint": "There used to be …, but now …",
-          "answer": "The factory has become an apartment block; the playground remains"
+          "prompt": "What has replaced the factory?",
+          "hint": "There’s now …",
+          "answer": "An apartment block has replaced the factory"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What does the former resident miss?",
+          "hint": "He misses …",
+          "answer": "The former resident misses working at the factory"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What improvement does he appreciate?",
+          "hint": "He likes …",
+          "answer": "He likes the cleaner street"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -498,10 +539,18 @@
       "questions": [
         {
           "id": "changes",
-          "prompt": "What has changed here?",
-          "cue": "Compare a place and a habit, then ask about my memories",
-          "hint": "There used to be … Did you use to …?",
-          "answer": "One possible response"
+          "prompt": "What used to be on the corner?",
+          "hint": "There used to be …, but now …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What has changed or stayed the same at the playground?",
+          "hint": "They’ve added …, but … is still there"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What could you ask a former resident about the area?",
+          "hint": "Did you use to …? What do you miss about …?"
         }
       ],
       "map": {
@@ -586,10 +635,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you explain the change without dismissing his memory?",
-          "cue": "Describe the change and ask a genuine question",
-          "hint": "There used to be … Now … What do you remember about …?",
-          "answer": "One possible response"
+          "prompt": "How would you describe the former factory site now?",
+          "hint": "There used to be … Now there’s …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How could you acknowledge the resident’s memory?",
+          "hint": "I can understand why you miss …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What could you ask about his experience there?",
+          "hint": "What did you use to …? What do you remember about …?"
         }
       ],
       "questionPurpose": "response"

@@ -14,19 +14,21 @@ A aluna acompanha a tela compartilhada da professora. Durante a aula, ela fala, 
 
 Planejar página por página, com o texto exato e a interação, antes de gerar mídia. Usar este formato curto:
 
-| Campo | Exemplo de uma tarefa oral |
-|---|---|
-| Título | Get access to the project |
-| Subtítulo | You’ve joined the team, but the repository is private. Ask your teammate (your teacher) for access |
-| Visual | Monitor claro com cadeado, Access denied, customer-portal e e-mail de trabalho |
-| Professora | Can you open the customer-portal repository? |
-| Aluna | Explain the error and ask for access using your work email |
-| Dica | I can’t open… / Could you give…? |
-| Segundo clique | I can’t open the customer-portal repository — could you give dev@example.com access? |
-| Ação | Uma lâmpada no rodapé da coluna: dica → exemplo completo → orientação inicial |
-| Composição | Monitor à esquerda; conversa no topo da coluna direita; ajuda fora dos balões, centralizada no final da coluna |
+| Campo          | Exemplo de uma tarefa oral                                                                                     |
+| -------------- | -------------------------------------------------------------------------------------------------------------- |
+| Título         | Get access to the project                                                                                      |
+| Subtítulo      | You’ve joined the team, but the repository is private. Ask your teammate (your teacher) for access             |
+| Visual         | Monitor claro com cadeado, Access denied, customer-portal e e-mail de trabalho                                 |
+| Professora     | Can you open the customer-portal repository?                                                                   |
+| Aluna          | Explain the error and ask for access using your work email                                                     |
+| Dica           | I can’t open… / Could you give…?                                                                               |
+| Segundo clique | I can’t open the customer-portal repository — could you give dev@example.com access?                           |
+| Ação           | Uma lâmpada no rodapé da coluna: dica → exemplo completo → orientação inicial                                  |
+| Composição     | Monitor à esquerda; conversa no topo da coluna direita; ajuda fora dos balões, centralizada no final da coluna |
 
 Para cada página, declarar também o componente/variação, os arquivos de imagem/áudio necessários e o tempo previsto. Em pergunta factual, indicar de onde vem a resposta. Em conversa pessoal, registrar a intenção esperada, sem inventar uma resposta correta para a aluna.
+
+Cada bloco de perguntas tem no mínimo três perguntas pertinentes. Na compreensão, usar `QuestionList`: rótulo Questions com estrela, lista numerada com borda e respostas em frases completas. Uma lâmpada fora da lista, centralizada no fim da coluna, libera dicas em ordem; dica e resposta ocupam a mesma área, alternando sem deslocar o layout. Não usar balões de participantes para perguntas factuais. Conversas pessoais mantêm seus balões e pelo menos três trocas, com apoio opcional. Um comando isolado não vira um bloco de perguntas por conveniência.
 
 A sequência acompanha a progressão da prática: capa ou revisão anterior → vocabulário contextual → modelo/guiada → prática apoiada → aplicação mais livre → conversa livre sobre o tema → dever de casa. Não impor a mesma quantidade de páginas ou cada tipo de exercício a todas as aulas. Gramática e prática avaliada ficam em páginas diferentes; tabelas entram depois de haver contexto.
 
@@ -34,19 +36,19 @@ A sequência acompanha a progressão da prática: capa ou revisão anterior → 
 
 A UI Library revisada tem prioridade sobre cópias antigas e protótipos do Claude. Procurar o dono canônico antes de desenhar outra interface. Variações semânticas entram como props; a aula fornece conteúdo, estado e ações. Não criar CSS, moldura, player ou balão exclusivo por material.
 
-| Necessidade | Dono e composição atuais |
-|---|---|
-| Título, instrução e conteúdo com a mesma largura | `SlidePage`; uma coluna para um conteúdo, composição pareada para visual + conversa, grade maior apenas quando o conteúdo exigir |
-| Uma cena | `SlidePage.width={{ mediaAspectRatio: largura / altura }}` + `SceneExplorer imageSizing="presentation"`; imagem inteira e cabeçalho com os mesmos limites |
-| Vocabulário de um mesmo ambiente | `SceneExplorer presentation="vocabulary"`; pontos sobre evidências relevantes, palavra retida após o clique, exemplo e áudio no callout |
-| Balões | `LearningDialogue` / adaptador `MaterialLearningDialogue`; manter densidade, largura natural e estados de áudio, tradução e lacunas |
-| Conversa ao lado de imagem, monitor ou board | `SlidePage columnAlignment="stretch"` + `LearningDialogue.footerAction`; balões no topo, lâmpada fora deles e centralizada no rodapé da coluna |
-| Áudio recebido + resposta oral | `VoiceMessageExercise layout="balanced"`; usar `columnAlignment="stretch"` quando a resposta tiver o mesmo rodapé de ajuda |
-| Computador | `ExercisePanel variant="monitor"`; aplicação clara no fundo escuro, proporção legível e conteúdo sem cortes. `screenTextAlign` alinha o conteúdo interno sem mover a barra da janela |
-| Board | `TaskBoard` dentro do monitor; apenas colunas de status, títulos de tarefas e avatar circular do responsável |
-| Chamada guiada | `InterviewSimulation` / `MeetingFrame` + `AudioSequenceControls`; legenda do participante e intenção silenciosa da aluna dentro do frame |
-| Apresentação de uma tela | `MeetingFrame.sharedContent` e `sharedContentLabel`; apresentador identificado, aplicação legível e retratos na coluna lateral |
-| Encerramento com dever | `LessonHomeworkGallery`; sessões canônicas do Student, duas práticas reais e orientação de áudio para a professora |
+| Necessidade                                      | Dono e composição atuais                                                                                                                                                             |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Título, instrução e conteúdo com a mesma largura | `SlidePage`; uma coluna para um conteúdo, composição pareada para visual + conversa, grade maior apenas quando o conteúdo exigir                                                     |
+| Uma cena                                         | `SlidePage.width={{ mediaAspectRatio: largura / altura }}` + `SceneExplorer imageSizing="presentation"`; imagem inteira e cabeçalho com os mesmos limites                            |
+| Vocabulário de um mesmo ambiente                 | `SceneExplorer presentation="vocabulary"`; pontos sobre evidências relevantes, palavra retida após o clique, exemplo e áudio no callout                                              |
+| Balões                                           | `LearningDialogue` / adaptador `MaterialLearningDialogue`; manter densidade, largura natural e estados de áudio, tradução e lacunas                                                  |
+| Conversa ao lado de imagem, monitor ou board     | `SlidePage columnAlignment="stretch"` + `LearningDialogue.footerAction`; balões no topo, lâmpada fora deles e centralizada no rodapé da coluna                                       |
+| Áudio recebido + resposta oral                   | `VoiceMessageExercise layout="balanced"`; usar `columnAlignment="stretch"` quando a resposta tiver o mesmo rodapé de ajuda                                                           |
+| Computador                                       | `ExercisePanel variant="monitor"`; aplicação clara no fundo escuro, proporção legível e conteúdo sem cortes. `screenTextAlign` alinha o conteúdo interno sem mover a barra da janela |
+| Board                                            | `TaskBoard` dentro do monitor; apenas colunas de status, títulos de tarefas e avatar circular do responsável                                                                         |
+| Chamada guiada                                   | `InterviewSimulation` / `MeetingFrame` + `AudioSequenceControls`; legenda do participante e intenção silenciosa da aluna dentro do frame                                             |
+| Apresentação de uma tela                         | `MeetingFrame.sharedContent` e `sharedContentLabel`; apresentador identificado, aplicação legível e retratos na coluna lateral                                                       |
+| Encerramento com dever                           | `LessonHomeworkGallery`; sessões canônicas do Student, duas práticas reais e orientação de áudio para a professora                                                                   |
 
 As props acima foram conferidas na fonte atual. Antes da adoção em outro produto, confirmar que a versão consumida contém o contrato e seguir o fluxo do repositório. A existência de uma prop nesta branch não comprova publicação de pacote ou Hosting.
 
@@ -100,12 +102,12 @@ Para cadastrar exercícios, usar a API oficial, preservar IDs e progressos e con
 
 Para o material, seguir o export/adoção e o coordenador de publicação do repositório, preservando o catálogo e as capas existentes. Uma entrega consolidada evita publicar versões intermediárias. Separar os estados:
 
-| Estado | Evidência necessária |
-|---|---|
-| Planejado | Páginas, textos, interação, componentes e mídia especificados |
-| Prévia local | Fonte renderizada e revisão do escopo alterado |
-| Exercício no Student | ID, payload e mídia confirmados no ambiente correto |
-| Material em staging | Export/adoção e recibo real da publicação |
-| Produção | Autorização e evidência próprias; não inferir de staging |
+| Estado               | Evidência necessária                                          |
+| -------------------- | ------------------------------------------------------------- |
+| Planejado            | Páginas, textos, interação, componentes e mídia especificados |
+| Prévia local         | Fonte renderizada e revisão do escopo alterado                |
+| Exercício no Student | ID, payload e mídia confirmados no ambiente correto           |
+| Material em staging  | Export/adoção e recibo real da publicação                     |
+| Produção             | Autorização e evidência próprias; não inferir de staging      |
 
 Entregar um resumo curto com o que mudou, o link correto, verificações relevantes e pendências reais. Nunca confundir proposta, mídia pronta, preview, cadastro de atividade e material publicado.

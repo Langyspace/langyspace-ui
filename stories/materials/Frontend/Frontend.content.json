@@ -175,20 +175,46 @@
   ],
   "dialogueQuestions": [
     {
-      "q": "What’s the problem with the button?",
-      "a": "It doesn’t show on small screens. When the pop-up opens, it covers the button."
+      "id": "mobile-problem",
+      "part": 0,
+      "q": "Why can’t people see Buy now on small screens?",
+      "a": "The open pop-up covers the Buy now button",
+      "hint": "When the pop-up opens, …"
     },
     {
-      "q": "What does Ana suggest?",
-      "a": "To move the button above the pictures: “What if we move the button above the pictures?”"
+      "id": "suggestion",
+      "part": 0,
+      "q": "What change does Ana suggest?",
+      "a": "Ana suggests moving the button above the pictures",
+      "hint": "Ana suggests moving …"
     },
     {
-      "q": "Has Kim talked to Leo?",
-      "a": "Not yet. She’s written to him, but he hasn’t answered yet."
+      "id": "deadline",
+      "part": 0,
+      "q": "When is the launch?",
+      "a": "The launch is on Friday",
+      "hint": "The launch is on …"
     },
     {
+      "id": "new-version",
+      "part": 1,
+      "q": "When will Ana send a new version?",
+      "a": "Ana will send a new version that afternoon",
+      "hint": "She’ll send it …"
+    },
+    {
+      "id": "leo",
+      "part": 1,
+      "q": "Has Kim talked to Leo yet?",
+      "a": "Kim has written to Leo, but he hasn’t answered because he’s in a meeting",
+      "hint": "She’s written …, but …"
+    },
+    {
+      "id": "reader",
+      "part": 1,
       "q": "What has Kim already fixed?",
-      "a": "The screen reader. Now it reads “Buy now”."
+      "a": "Kim has fixed the screen reader, which now reads Buy now",
+      "hint": "She’s fixed …; now it …"
     }
   ],
   "grammar": [

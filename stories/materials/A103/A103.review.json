@@ -15,9 +15,17 @@
         {
           "id": "review",
           "prompt": "What’s your last name?",
-          "cue": "Say and spell the name",
-          "hint": "My last name is … That’s …",
-          "answer": "One possible response"
+          "hint": "My last name is …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How do you spell it?",
+          "hint": "That’s …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What’s your phone number?",
+          "hint": "My phone number is … You can use a made-up number"
         }
       ],
       "questionPurpose": "review"
@@ -215,9 +223,20 @@
         {
           "id": "leo",
           "prompt": "Who is Leo?",
-          "cue": "Explain the relationship",
           "hint": "He’s Ana’s …",
-          "answer": "He’s Ana’s brother"
+          "answer": "Leo is Ana’s brother"
+        },
+        {
+          "id": "s71.q98.2",
+          "prompt": "What does Leo do?",
+          "hint": "He’s a …",
+          "answer": "Leo is a student"
+        },
+        {
+          "id": "s71.q98.3",
+          "prompt": "Where are Ana’s parents from?",
+          "hint": "They’re from …",
+          "answer": "Ana’s parents are from Recife"
         }
       ]
     },
@@ -376,9 +395,20 @@
         {
           "id": "bia",
           "prompt": "What’s Bia’s job?",
-          "cue": "Say the job",
           "hint": "She’s a …",
-          "answer": "She’s a cook"
+          "answer": "Bia is a cook"
+        },
+        {
+          "id": "s72.q98.2",
+          "prompt": "Who is Bia?",
+          "hint": "She’s Ana’s …",
+          "answer": "Bia is Ana’s sister"
+        },
+        {
+          "id": "s72.q98.3",
+          "prompt": "Where is Bia from?",
+          "hint": "She’s from …",
+          "answer": "Bia is from Recife"
         }
       ]
     },
@@ -478,9 +508,20 @@
         {
           "id": "jin",
           "prompt": "Who is Jin?",
-          "cue": "Explain Jin’s relationship to Kim",
           "hint": "Jin is Kim’s …",
           "answer": "Jin is Kim’s sister"
+        },
+        {
+          "id": "s10.q98.2",
+          "prompt": "What does Jin do?",
+          "hint": "She’s a …",
+          "answer": "Jin is a doctor"
+        },
+        {
+          "id": "s10.q98.3",
+          "prompt": "Who is Tom?",
+          "hint": "Tom is Kim’s …",
+          "answer": "Tom is Kim’s friend and he’s a young cook"
         }
       ],
       "greeting": "Meet Jin and Tom!",

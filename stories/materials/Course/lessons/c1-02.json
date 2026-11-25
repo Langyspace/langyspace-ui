@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "How would you separate a fact from a counterfactual?",
-          "cue": "State what happened, then qualify the alternative",
-          "hint": "We know … Had …, it might …",
-          "answer": "One possible response"
+          "hint": "The record confirms …; had …, we might have …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Whose knowledge would matter in that counterfactual?",
+          "hint": "The relevant person would be … because …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What evidence would you need before assigning responsibility?",
+          "hint": "I’d need to establish whether …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What does the original timeline fail to establish?",
-          "cue": "Identify the missing knowledge record",
-          "hint": "It doesn’t show …",
-          "answer": "Who knew the sound test was incomplete before guests arrived"
+          "prompt": "What does the timeline establish about the sound test?",
+          "hint": "It establishes …, not …",
+          "answer": "The timeline establishes that the test was incomplete, not who knew"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why is ‘an ignored warning’ premature?",
+          "hint": "They haven’t checked …",
+          "answer": "They haven’t checked whether anyone received an actionable warning"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Ana propose checking?",
+          "hint": "She proposes checking …",
+          "answer": "Ana proposes checking the message record"
         }
       ],
       "dialogueGroup": "c1-02.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why isn’t the late start itself a root cause?",
-          "cue": "Separate result from explanation",
-          "hint": "It’s an outcome; …",
-          "answer": "An outcome still needs an explanation supported by evidence"
+          "prompt": "Which outcomes are confirmed?",
+          "hint": "They know … and …",
+          "answer": "The event started twelve minutes late and some guests arrived before opening"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why don’t those outcomes establish the root cause?",
+          "hint": "They don’t show …",
+          "answer": "The outcomes don’t show whether scheduling or communication failed"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What evidence would distinguish the two problems?",
+          "hint": "They need to establish … and …",
+          "answer": "They need to establish whether testing time was sufficient and a responsible person received a warning"
         }
       ],
       "dialogueGroup": "c1-02.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What makes the suggested checkpoint actionable?",
-          "cue": "Name its required ownership",
-          "hint": "Someone …",
-          "answer": "Someone owns the decision and can delay opening"
+          "prompt": "Why might a checkpoint alone be insufficient?",
+          "hint": "Someone must …",
+          "answer": "Someone must own the decision triggered by the checkpoint"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What prevention does Kim propose?",
+          "hint": "Kim proposes … with …",
+          "answer": "Kim proposes naming a decision-maker with authority to delay opening"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "How certain is their causal conclusion?",
+          "hint": "It remains … until …",
+          "answer": "Their causal conclusion remains provisional until the evidence is checked"
         }
       ],
       "dialogueGroup": "c1-02.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Does the new information change your explanation?",
-          "cue": "Revise the cause or state why it still holds",
-          "hint": "It changes …, because … / It doesn’t rule out …",
-          "answer": "A warning was sent without a named responder or acknowledgement; intent and testing capacity remain unproven"
+          "prompt": "What does the newly found record confirm?",
+          "hint": "A warning was … before …",
+          "answer": "A warning about the incomplete test was sent before planned opening"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What process was missing?",
+          "hint": "There was no … or …",
+          "answer": "There was no named responder or recorded acknowledgement"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What still cannot be concluded?",
+          "hint": "They cannot conclude whether …",
+          "answer": "They cannot conclude who read the warning or whether enough testing time was scheduled"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What could reasonably have been anticipated?",
-          "cue": "Distinguish an available warning from knowledge that only came afterwards",
-          "hint": "Had … known …, … could have … The record doesn’t establish …",
-          "answer": "One possible response"
+          "prompt": "What can your review state as fact?",
+          "hint": "The confirmed outcomes were …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Which causal explanations remain open?",
+          "hint": "This may reflect …, … or both"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What prevention would you link to a specific failure?",
+          "hint": "If … was missing, I’d introduce …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What changes in the explanation and prevention?",
-          "cue": "Qualify the cause and propose one action that addresses the demonstrated process gap",
-          "hint": "It supports …, but doesn’t establish … Next time I’d …",
-          "answer": "One possible response"
+          "prompt": "How does the message record change your assessment?",
+          "hint": "It makes … more plausible because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What claim about an individual would still be unsupported?",
+          "hint": "It would be premature to say …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What accountable prevention would you recommend?",
+          "hint": "I’d assign … to …, with authority to …"
         }
       ],
       "questionPurpose": "response"

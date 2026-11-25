@@ -16,4 +16,6 @@ export interface RevealCardProps extends ComponentPropsWithRef<'button'> {
   answerMinLines?: number
   /** Optional explicit Hint → Answer → Hide control beneath the prompt. */
   guidance?: RevealGuidance
+  /** External guidance uses the question for answer checks and a parent control for hints. */
+  guidanceControl?: 'inline' | 'external'
 }

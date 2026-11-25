@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "Why would you choose one over the other?",
-          "cue": "Compare a practical criterion",
-          "hint": "It’s … than … / It’s … enough",
-          "answer": "One possible response"
+          "prompt": "Which place would you prefer for a short trip?",
+          "hint": "I’d choose …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What makes it a better option for you?",
+          "hint": "It’s … than …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would be too far or not comfortable enough?",
+          "hint": "… would be too … / not … enough"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
+          "prompt": "What is their first plan for Sunday?",
+          "hint": "They’d like to …",
+          "answer": "Their first plan is to go on a hike"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What might change that plan?",
+          "hint": "It might …",
+          "answer": "Rain might change their plan"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
           "prompt": "What will they do if it rains?",
-          "cue": "Give the agreed alternative",
-          "hint": "They’ll …",
-          "answer": "They’ll go to the museum"
+          "hint": "If it rains, they’ll …",
+          "answer": "If it rains, they’ll go to the museum instead"
         }
       ],
       "dialogueGroup": "a2-11.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What is their backup if they miss the nine o’clock bus?",
-          "cue": "Give the next departure",
-          "hint": "They can …",
-          "answer": "They can take the nine thirty bus"
+          "prompt": "What will they do if they miss the nine o’clock bus?",
+          "hint": "They can take …",
+          "answer": "They can take the next bus at nine thirty"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What will Ana bring?",
+          "hint": "She’ll bring …",
+          "answer": "Ana will bring a raincoat"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Where will they eat if they go to the museum?",
+          "hint": "They’ll eat at …",
+          "answer": "They’ll eat at the café inside the museum"
         }
       ],
       "dialogueGroup": "a2-11.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What’s the new plan if it rains?",
-          "cue": "Explain the alternative proposed in the message",
-          "hint": "If it rains, they’ll …",
-          "answer": "If it rains, they’ll go straight to the museum"
+          "prompt": "Which plan does Kim suggest using?",
+          "hint": "She suggests …",
+          "answer": "Kim suggests using the museum backup plan"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What bus can they still take?",
+          "hint": "They can take …",
+          "answer": "They can still take the nine o’clock bus"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should they do if that bus is late?",
+          "hint": "They should … rather than …",
+          "answer": "They should wait for the nine thirty bus rather than walk in the rain"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -371,10 +412,18 @@
       "questions": [
         {
           "id": "backup",
+          "prompt": "What will we do if it stays dry?",
+          "hint": "If it stays dry, we’ll …"
+        },
+        {
+          "id": "@s_mission.q98.2",
           "prompt": "What will we do if it rains?",
-          "cue": "Agree on a weather alternative and one transport backup",
-          "hint": "If …, we’ll … If the bus …, we can …",
-          "answer": "One possible response"
+          "hint": "If it rains, we’ll …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What can we do if we miss the first bus?",
+          "hint": "If we miss it, we can …"
         }
       ],
       "questionPurpose": "response"
@@ -402,10 +451,18 @@
       "questions": [
         {
           "id": "confirm",
-          "prompt": "Does that work for you?",
-          "cue": "Confirm the plan and explain what happens if the first bus is late",
-          "hint": "If …, we’ll … Then …",
-          "answer": "One possible response"
+          "prompt": "Does the museum plan work for you?",
+          "hint": "That works because … / Could we …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where will we have lunch?",
+          "hint": "If we go to …, we’ll eat …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What will we do if the nine o’clock bus is late?",
+          "hint": "If it’s late, we’ll …"
         }
       ],
       "questionPurpose": "response"

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What were you doing when it happened?",
-          "cue": "Give a clear sequence",
-          "hint": "I was … when … Then …",
-          "answer": "One possible response"
+          "prompt": "What were you doing when something interrupted you?",
+          "hint": "I was … when …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What happened next?",
+          "hint": "After that, I …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How did the situation end?",
+          "hint": "Eventually, …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Had the show started before they arrived?",
-          "cue": "Compare eight and eight twenty",
-          "hint": "Yes, … had …",
-          "answer": "Yes, it had already started"
+          "prompt": "Had the show started when Ana arrived?",
+          "hint": "Yes, it had …",
+          "answer": "Yes, the show had already started when Ana arrived"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What time did she arrive?",
+          "hint": "She arrived at …",
+          "answer": "Ana arrived at eight twenty"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What had she forgotten at home?",
+          "hint": "She’d left her …",
+          "answer": "Ana had left her wristband at home"
         }
       ],
       "dialogueGroup": "b1-03.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What had Ana forgotten before leaving?",
-          "cue": "Name the missing item",
-          "hint": "She’d …",
-          "answer": "She’d forgotten her wristband"
+          "prompt": "Where was Ana sent at the entrance?",
+          "hint": "She was sent to …",
+          "answer": "Ana was sent to the help desk"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What part of the show did she miss?",
+          "hint": "She missed …",
+          "answer": "Ana missed the opening act"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What would she check before leaving next time?",
+          "hint": "She’d check …",
+          "answer": "Ana would check her ticket and wristband before leaving"
         }
       ],
       "dialogueGroup": "b1-03.model"
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Why couldn’t they get in immediately?",
-          "cue": "Connect the earlier event to the problem at the entrance",
-          "hint": "They couldn’t … because they had …",
-          "answer": "They had left a wristband at home; the entrance was still open"
+          "prompt": "Why couldn’t they enter immediately?",
+          "hint": "One person had …",
+          "answer": "One person had left their wristband at home"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Had the entrance already closed?",
+          "hint": "No, it …",
+          "answer": "No, the entrance was still open at eight twenty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How could they get a replacement wristband?",
+          "hint": "They could show …",
+          "answer": "They could show the digital ticket at the help desk"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -333,10 +374,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Why did they miss the opening act?",
-          "cue": "Explain what had happened before arrival and what happened at the door",
-          "hint": "They had … By the time …, … had already …",
-          "answer": "One possible response"
+          "prompt": "What had happened by the time they arrived?",
+          "hint": "The show had already …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What had been left at home?",
+          "hint": "They’d forgotten … before …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What could they do differently next time?",
+          "hint": "They could check … and allow …"
         }
       ],
       "questionPurpose": "response"
@@ -364,10 +413,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Was arriving late the reason they couldn’t enter immediately?",
-          "cue": "Correct the explanation and keep the events in order",
-          "hint": "Not exactly. They couldn’t … because they had …",
-          "answer": "One possible response"
+          "prompt": "Was the entrance closed when they arrived?",
+          "hint": "No, it was still …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What actually prevented immediate entry?",
+          "hint": "The problem was …, not …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you explain the solution and outcome?",
+          "hint": "They could … After that …, but … had already …"
         }
       ],
       "questionPurpose": "response"

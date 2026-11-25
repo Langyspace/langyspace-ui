@@ -36,9 +36,18 @@ export const review = [
     'What do you do? Do you work with frontend, or do you want to?',
     'No tech job yet? Say: I’m learning frontend. I want to work with it.',
   ],
-  ['What’s a website or an app you love? Why? And one you don’t like?'],
-  ['What have you been working on, or studying, lately?'],
-  ['Now ask your teacher: Which app do you use every day? Is it easy to use?'],
+  [
+    'What’s a website or an app you love? Why? And one you don’t like?',
+    'I like … because …, but I don’t like …',
+  ],
+  [
+    'What have you been working on, or studying, lately?',
+    'I’ve been working on … / studying … lately',
+  ],
+  [
+    'Now ask your teacher: Which app do you use every day? Is it easy to use?',
+    'Which app do you use every day? What makes it easy or difficult?',
+  ],
 ]
 export const yourWork = [
   [
@@ -59,6 +68,7 @@ export const yourWork = [
   ],
   [
     'Now ask your teacher: Which app do you use every day? Is there anything you don’t like in it?',
+    'Which app do you use every day? What would you change about it?',
   ],
 ]
 export const firstTurns = [

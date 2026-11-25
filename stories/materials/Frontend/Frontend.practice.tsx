@@ -12,10 +12,10 @@ import * as S from './Frontend.styles'
 export function Questions({ items }: { items: readonly string[][] }) {
   return (
     <PromptExercise
-      items={items.map(([prompt = '', answer = ''], index) => ({
+      items={items.map(([prompt = '', hint], index) => ({
         id: String(index),
         prompt,
-        answer,
+        hint,
       }))}
     />
   )
@@ -133,10 +133,6 @@ export function WarmUp({ index, media }: IndexedAudioProps) {
             {option}
           </QuizOption>
         ))}
-        <PromptExercise
-          numbered={false}
-          items={[{ id: 'followup', prompt: 'Now you', answer: item.now }]}
-        />
       </S.Stack>
     </ExercisePanel>
   )

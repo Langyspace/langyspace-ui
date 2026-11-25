@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "Have you ever tried a new hobby?",
-          "cue": "Give an experience and say when it started",
-          "hint": "I’ve … I started in …",
-          "answer": "One possible response"
+          "hint": "I’ve tried …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "When did you try it?",
+          "hint": "I tried it …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Would you like to do it again?",
+          "hint": "I’d like to … because …"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Does the person still live in Porto?",
-          "cue": "Connect the past starting point with now",
-          "hint": "Yes, … since …",
-          "answer": "Yes, they’ve lived there since 2023"
+          "prompt": "Where does Ana live now?",
+          "hint": "She lives in …",
+          "answer": "Ana lives in Porto now"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did she move there?",
+          "hint": "She moved there in …",
+          "answer": "Ana moved to Porto in 2023"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What positive change does she mention?",
+          "hint": "She’s made …",
+          "answer": "Ana has made some good friends"
         }
       ],
       "dialogueGroup": "a2-09.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Is photography a new or continuing activity now?",
-          "cue": "Use the starting year and current routine",
-          "hint": "They started … and still …",
-          "answer": "They started in 2025 and still go on Sundays"
+          "prompt": "What new hobby has Ana taken up?",
+          "hint": "She’s joined …",
+          "answer": "Ana has joined a photography group"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "When did she start?",
+          "hint": "She started in …",
+          "answer": "Ana started in 2025"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How often does the group meet?",
+          "hint": "They meet …",
+          "answer": "The photography group meets on Sundays"
         }
       ],
       "dialogueGroup": "a2-09.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "How long has she been there?",
-          "cue": "Use the starting point or duration stated in the message",
-          "hint": "She’s been there since … / for …",
-          "answer": "She’s been there since 2023"
+          "prompt": "How long has the speaker lived in Porto?",
+          "hint": "They’ve lived there since …",
+          "answer": "The speaker has lived in Porto since 2023"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Has the speaker changed jobs?",
+          "hint": "No, they …",
+          "answer": "No, the speaker hasn’t changed jobs"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What has the speaker finished?",
+          "hint": "They’ve finished …",
+          "answer": "The speaker has finished an online course"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -344,10 +385,18 @@
       "questions": [
         {
           "id": "change",
-          "prompt": "What has changed for this person?",
-          "cue": "Use since with the visible starting dates. Ask one follow-up",
-          "hint": "They’ve … since … When did they …?",
-          "answer": "One possible response"
+          "prompt": "Where does this person live, and since when?",
+          "hint": "They’ve lived in … since …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What new hobby did they start?",
+          "hint": "They started … in …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What achievement can you mention without changing their job?",
+          "hint": "They haven’t …, but they’ve …"
         }
       ],
       "questionPurpose": "response"
@@ -375,10 +424,18 @@
       "questions": [
         {
           "id": "follow",
-          "prompt": "What would you ask next?",
-          "cue": "Choose the change you want to hear more about",
-          "hint": "How long have you …? When did you …? What was … like?",
-          "answer": "One possible response"
+          "prompt": "What would you ask about life in Porto?",
+          "hint": "How long have you …? What’s … like?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What could you ask about the finished course?",
+          "hint": "When did you …? What did you study?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How could you follow up about the photography group?",
+          "hint": "How often do you …? What do you enjoy about …?"
         }
       ],
       "questionPurpose": "response"

@@ -10,6 +10,7 @@ import {
 import * as Styled from './VoiceMessageExercise.styles'
 import type { VoiceMessageExerciseProps } from './VoiceMessageExercise.types'
 import { playFeedbackSound } from '../../internal/feedbackSounds'
+import { QuestionsTitle } from '../Slide/SlidePage.styles'
 
 function VoiceMessageContent({
   contact,
@@ -172,7 +173,9 @@ function VoiceMessageContent({
           role="group"
           aria-label={labels.questions}
         >
-          {questionHeading}
+          {questionHeading ?? (
+            <QuestionsTitle>{labels.questions}</QuestionsTitle>
+          )}
           {questions.map((question, index) => (
             <Styled.Question
               key={question.id}

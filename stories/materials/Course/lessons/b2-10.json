@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What outcome would actually help?",
-          "cue": "State the need rather than just repeating the complaint",
-          "hint": "The problem is … What would help is …",
-          "answer": "One possible response"
+          "prompt": "What outcome would help with a noisy room?",
+          "hint": "What I need is …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you explain the practical impact?",
+          "hint": "It’s … that prevents me from …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you check before accepting another room?",
+          "hint": "Could you confirm whether …?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why is the room location important?",
-          "cue": "Use the actual noise source",
-          "hint": "Because …",
-          "answer": "Because repeated lift noise woke the guest"
+          "prompt": "What is disturbing Ana’s sleep?",
+          "hint": "The room is next to …",
+          "answer": "Ana’s room is next to the noisy lift"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does reception first offer?",
+          "hint": "They offer …",
+          "answer": "Reception first offers earplugs"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why does Ana need a quiet room?",
+          "hint": "She has …",
+          "answer": "Ana has an early presentation"
         }
       ],
       "dialogueGroup": "b2-10.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What earlier action does the guest emphasise?",
-          "cue": "Use did plus base verb",
-          "hint": "She did …",
-          "answer": "She did ask for a room change that afternoon"
+          "prompt": "Is street noise the main problem?",
+          "hint": "No, it was …",
+          "answer": "No, it was the lift that repeatedly woke Ana"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Had Ana already requested a change?",
+          "hint": "Yes, she …",
+          "answer": "Yes, Ana asked that afternoon but has no confirmed alternative"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Can reception guarantee an immediate move?",
+          "hint": "No, another room …",
+          "answer": "No, another room may not be available immediately"
         }
       ],
       "dialogueGroup": "b2-10.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What must reception confirm before the guest moves?",
-          "cue": "Give the two practical details",
-          "hint": "When … and whether …",
-          "answer": "When the room is ready and whether it is away from the lift"
+          "prompt": "What two room details does Ana request?",
+          "hint": "She asks … and …",
+          "answer": "Ana asks when the room will be ready and whether it is away from the lift"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "When will reception confirm those details?",
+          "hint": "Before …",
+          "answer": "Reception will confirm those details before asking Ana to move"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why isn’t any different room enough?",
+          "hint": "It must …",
+          "answer": "The new room must solve the noise problem"
         }
       ],
       "dialogueGroup": "b2-10.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Does the offer solve the original problem?",
-          "cue": "Compare the offer with the need stated earlier",
-          "hint": "It solves …, but we still need to confirm …",
-          "answer": "It addresses lift location, but maintenance noise and the timing still need checking"
+          "prompt": "How does the offered room address the noise?",
+          "hint": "It is … and …",
+          "answer": "The offered room is on the quiet side, away from the lift"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What are the timing and cost of the move?",
+          "hint": "It is ready … with …",
+          "answer": "The room is ready at nine, with help moving bags and no extra room charge"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What uncertainty remains?",
+          "hint": "They must check whether …",
+          "answer": "They must check whether maintenance is planned nearby tonight"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Would earplugs solve this guest’s problem?",
-          "cue": "Acknowledge the offer and explain the actual need respectfully",
-          "hint": "Thanks, but what I need is … It was … that …",
-          "answer": "One possible response"
+          "prompt": "How would you describe the problem specifically?",
+          "hint": "It’s … that keeps …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What is the impact on your plans?",
+          "hint": "I need … because …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What outcome would you request?",
+          "hint": "What I need is …, rather than …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Does the offer solve the original problem?",
-          "cue": "Evaluate it against the need and ask the outstanding question",
-          "hint": "It would solve … Could you confirm whether … before …?",
-          "answer": "One possible response"
+          "prompt": "Which part of the offer meets your need?",
+          "hint": "The … addresses …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What condition would you attach to accepting?",
+          "hint": "I’d accept provided …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you ask for confirmation of the move?",
+          "hint": "Could you confirm … before …?"
         }
       ],
       "questionPurpose": "response"

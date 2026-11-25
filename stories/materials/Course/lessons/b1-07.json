@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What had happened before they arrived?",
-          "cue": "Connect two past events",
-          "hint": "They had … before …",
-          "answer": "One possible response"
+          "prompt": "What had happened before someone arrived late?",
+          "hint": "They had … before …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How did that affect the next event?",
+          "hint": "By the time …, … had already …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What could they check before a future trip?",
+          "hint": "They could check …"
         }
       ],
       "questionPurpose": "review"
@@ -154,9 +162,20 @@
         {
           "id": "d0",
           "prompt": "Why was the connection missed?",
-          "cue": "Compare the two durations",
-          "hint": "The delay was …",
-          "answer": "The fifty-minute delay exceeded the thirty-five-minute connection"
+          "hint": "The delay was …, but the connection was …",
+          "answer": "The first flight was fifty minutes late, but the connection allowed only thirty-five minutes"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Was a direct flight available when booking?",
+          "hint": "Yes, but …",
+          "answer": "Yes, a direct flight was available but it cost more"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Ana think she should have allowed?",
+          "hint": "She should have allowed …",
+          "answer": "Ana thinks she should have allowed more time between flights"
         }
       ],
       "dialogueGroup": "b1-07.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What does Ana plan to compare next time?",
-          "cue": "Give two factors",
-          "hint": "The … as well as …",
-          "answer": "The arrival time as well as the price"
+          "prompt": "What is Ana waiting for now?",
+          "hint": "She’s waiting for …",
+          "answer": "Ana is waiting for the desk to confirm another flight"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does Kim suggest checking about insurance?",
+          "hint": "She should check …",
+          "answer": "Kim suggests checking what the insurance covers without assuming it covers everything"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will Ana compare next time besides price?",
+          "hint": "She’ll compare …",
+          "answer": "Ana will compare the arrival time as well as the price"
         }
       ],
       "dialogueGroup": "b1-07.model"
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What option is still available?",
-          "cue": "Explain the option and whether it helps",
-          "hint": "They can still …, but …",
-          "answer": "An evening flight could meet the deadline if a seat is confirmed"
+          "prompt": "When would the evening flight arrive?",
+          "hint": "It would arrive at …",
+          "answer": "The evening flight would arrive at eight thirty that night"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why would tomorrow’s direct flight not meet the deadline?",
+          "hint": "It arrives at …, after …",
+          "answer": "It arrives at ten, after the traveller’s nine o’clock deadline"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What must be confirmed before choosing the evening option?",
+          "hint": "The desk must confirm …",
+          "answer": "The desk must confirm a seat on the evening flight"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -333,10 +374,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What could the traveller have done differently?",
-          "cue": "Evaluate a choice, acknowledge uncertainty and suggest a future lesson",
-          "hint": "They could have … They shouldn’t assume … Next time …",
-          "answer": "One possible response"
+          "prompt": "How did the connection time compare with the delay?",
+          "hint": "They had …, but …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What might the traveller have chosen differently?",
+          "hint": "They could have … / should have allowed …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What part of the disruption was uncertain when booking?",
+          "hint": "They couldn’t have known …"
         }
       ],
       "questionPurpose": "response"
@@ -391,10 +440,18 @@
       "questions": [
         {
           "id": "next",
-          "prompt": "Which option would help, and what is still uncertain?",
-          "cue": "Compare arrival with the deadline and identify the check",
-          "hint": "The evening flight could …, but we still need to …",
-          "answer": "One possible response"
+          "prompt": "Which flight could meet the arrival deadline?",
+          "hint": "The … option could work because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What must you ask the desk to confirm?",
+          "hint": "Could you confirm …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What should you avoid promising about refunds or insurance?",
+          "hint": "We don’t know whether … yet"
         }
       ],
       "questionPurpose": "response"

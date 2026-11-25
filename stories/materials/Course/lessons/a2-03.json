@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
+          "prompt": "What did you do last weekend?",
+          "hint": "I … last weekend"
+        },
+        {
+          "id": "s1.q98.2",
           "prompt": "What happened first?",
-          "cue": "Describe two events in order",
-          "hint": "First I … Then …",
-          "answer": "One possible response"
+          "hint": "First I …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What happened after that?",
+          "hint": "Then I … Finally, I …"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What was Ana doing when the rain started?",
-          "cue": "Name the action in progress",
+          "prompt": "What was Ana doing when it started raining?",
           "hint": "She was …",
-          "answer": "She was waiting for the bus"
+          "answer": "Ana was waiting for the bus"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Did Ana have an umbrella?",
+          "hint": "No, she …",
+          "answer": "No, Ana didn’t have an umbrella"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why did Ana miss the bus?",
+          "hint": "She went into …",
+          "answer": "Ana missed the bus after going into a shop to get out of the rain"
         }
       ],
       "dialogueGroup": "a2-03.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why did she miss the bus?",
-          "cue": "Explain what she did when it rained",
-          "hint": "She went …",
-          "answer": "She went into a shop"
+          "prompt": "How did Ana travel after missing the bus?",
+          "hint": "She took …",
+          "answer": "Ana took the next bus"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What was the next bus like?",
+          "hint": "It was …",
+          "answer": "The next bus was very slow"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will Ana do differently next time?",
+          "hint": "She’ll …",
+          "answer": "Ana will leave earlier next time"
         }
       ],
       "dialogueGroup": "a2-03.model"
@@ -292,10 +322,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Why is he running late?",
-          "cue": "Connect the activity and the interruption you hear",
-          "hint": "He was … when …",
-          "answer": "He was driving when he got stuck in traffic"
+          "prompt": "Why is Leo late?",
+          "hint": "He got stuck in …",
+          "answer": "Leo got stuck in traffic near the station"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What time does Leo expect to arrive?",
+          "hint": "He expects to arrive at …",
+          "answer": "Leo expects to arrive at one thirty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What does Leo suggest they do while waiting?",
+          "hint": "He suggests they …",
+          "answer": "Leo suggests that they order their food now"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -390,10 +431,18 @@
       "questions": [
         {
           "id": "leo",
-          "prompt": "What should we tell Leo?",
-          "cue": "Acknowledge his problem and agree what to do",
-          "hint": "No problem. We’ll … See you at …",
-          "answer": "One possible response"
+          "prompt": "What could you say to reassure Leo?",
+          "hint": "No problem. Thanks for …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What will you do while you wait?",
+          "hint": "We’ll … while you …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you confirm the arrival time?",
+          "hint": "See you at … Is that right?"
         }
       ],
       "questionPurpose": "response"
@@ -421,10 +470,18 @@
       "questions": [
         {
           "id": "delay",
-          "prompt": "Why were you late?",
-          "cue": "Connect the action in progress with the interruption. Apologise",
-          "hint": "Sorry I’m late. I was … when … Then …",
-          "answer": "One possible response"
+          "prompt": "What were you doing at twelve?",
+          "hint": "I was waiting for …"
+        },
+        {
+          "id": "@s_mission_story.q98.2",
+          "prompt": "What happened when the rain started?",
+          "hint": "I went into … and missed …"
+        },
+        {
+          "id": "@s_mission_story.q98.3",
+          "prompt": "How would you apologise when you arrived?",
+          "hint": "Sorry I’m late. I was … when …"
         }
       ],
       "questionPurpose": "response"

@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "Is there a café near here?",
-          "cue": "Ask for a place and a short route",
-          "hint": "Is there a …? How do I get there?",
-          "answer": "One possible response"
+          "hint": "Yes, there is. / No, there isn’t"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How do I get there?",
+          "hint": "Go straight and turn …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What is next to it?",
+          "hint": "It’s next to …"
         }
       ],
       "questionPurpose": "review"
@@ -154,10 +162,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Does Ana want milk?",
-          "cue": "Answer and say her drink",
+          "prompt": "Does Ana want milk in her tea?",
           "hint": "No, she …",
-          "answer": "No, she doesn’t. She wants tea with no milk"
+          "answer": "No, Ana wants tea with no milk"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What food does Ana order?",
+          "hint": "She orders …",
+          "answer": "Ana orders a piece of cake"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How much is her order?",
+          "hint": "It’s … dollars",
+          "answer": "Ana’s order is six dollars"
         }
       ],
       "dialogueGroup": "a1-10.model"
@@ -250,10 +269,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What would your friend like?",
-          "cue": "Report the food and drink you heard",
+          "prompt": "What would Kim like to drink?",
           "hint": "She’d like …",
-          "answer": "She’d like tea and a piece of cake, with no milk"
+          "answer": "Kim would like tea with no milk"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What would Kim like to eat?",
+          "hint": "She’d like …",
+          "answer": "Kim would like a piece of cake"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Where is Kim waiting?",
+          "hint": "She’s outside …",
+          "answer": "Kim is waiting outside the café, near the door"
         }
       ],
       "greetingTimestamp": "12:10",
@@ -319,10 +349,18 @@
       "questions": [
         {
           "id": "order",
-          "prompt": "What would you like?",
-          "cue": "Order a drink and some food. Then check the tray",
-          "hint": "I’d like …, please. Sorry, this is …",
-          "answer": "One possible response"
+          "prompt": "What would you like to drink?",
+          "hint": "I’d like …, please"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What would you like to eat?",
+          "hint": "I’d like …, please"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Is everything on your tray correct?",
+          "hint": "Yes, thank you. / Sorry, I’d like …"
         }
       ],
       "questionPurpose": "response"
@@ -350,10 +388,18 @@
       "questions": [
         {
           "id": "friend",
-          "prompt": "What would your friend like?",
-          "cue": "Order for Kim and check the price",
-          "hint": "She’d like … and …, please. How much is it?",
-          "answer": "One possible response"
+          "prompt": "What would your friend like to drink?",
+          "hint": "She’d like … with no …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What food would she like?",
+          "hint": "She’d like a …, please"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Can you ask the price and check her budget?",
+          "hint": "How much is it? She has … dollars"
         }
       ],
       "questionPurpose": "response"

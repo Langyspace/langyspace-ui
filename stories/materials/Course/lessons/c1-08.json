@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What is the shared purpose?",
-          "cue": "Name the interest before discussing the mechanism",
-          "hint": "We both want … The difficulty is …",
-          "answer": "One possible response"
+          "prompt": "What shared purpose could help a negotiation?",
+          "hint": "We both want …, although …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which condition is a genuine limit rather than a preference?",
+          "hint": "I can compromise on …, but I need …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you offer a concession without implying full acceptance?",
+          "hint": "Much as I’d like to …, I could agree to … provided …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What are the two separate difficulties?",
-          "cue": "Distinguish frequency from notice",
-          "hint": "The … and …",
-          "answer": "The number of sessions and short notice"
+          "prompt": "What benefit does Ana acknowledge?",
+          "hint": "She sees value in …",
+          "answer": "Ana sees value in more regular contact"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What frequency can she commit to?",
+          "hint": "She can commit to …",
+          "answer": "Ana can commit to two evenings a month"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How much notice does she need?",
+          "hint": "She needs …",
+          "answer": "Ana needs seven days’ notice"
         }
       ],
       "dialogueGroup": "c1-08.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What alternative protects regular contact?",
-          "cue": "Give the specific counterproposal",
-          "hint": "Two … with …",
-          "answer": "Two planned live sessions with short updates"
+          "prompt": "Why can’t Ana accept the original notice period?",
+          "hint": "Forty-eight hours …",
+          "answer": "Forty-eight hours doesn’t give Ana enough time to arrange attendance"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What frequency does she propose instead?",
+          "hint": "She proposes …",
+          "answer": "Ana proposes two planned live sessions"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What would maintain contact between sessions?",
+          "hint": "They could use …",
+          "answer": "They could use short updates between live sessions"
         }
       ],
       "dialogueGroup": "c1-08.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why must the trial’s condition be explicit?",
-          "cue": "Preserve the stated limit",
-          "hint": "It doesn’t mean …",
-          "answer": "A trial does not imply acceptance of short notice"
+          "prompt": "What condition applies to the four-week trial?",
+          "hint": "Dates must be …",
+          "answer": "Dates must be agreed a week ahead"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What shared interest do they identify?",
+          "hint": "Their shared interest is …",
+          "answer": "Their shared interest is regular contact"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why doesn’t accepting a trial erase the limit?",
+          "hint": "A concession doesn’t mean …",
+          "answer": "A concession doesn’t mean every condition is negotiable"
         }
       ],
       "dialogueGroup": "c1-08.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What common ground is there now?",
-          "cue": "State what is agreed and what remains open",
-          "hint": "We agree on … The sticking point is …",
-          "answer": "Two sessions and a four-week trial are acceptable; seven days’ notice remains necessary"
+          "prompt": "Which parts of the proposal are accepted?",
+          "hint": "Two … plus …",
+          "answer": "Two live sessions a month plus short written updates are accepted"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What condition remains unchanged?",
+          "hint": "Dates still need …",
+          "answer": "Dates still need confirmation at least seven days ahead"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What needs explicit confirmation before informing the group?",
+          "hint": "They must confirm …",
+          "answer": "They must confirm the notice condition before announcing full acceptance"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Which part could you accept?",
-          "cue": "Acknowledge the purpose, state a specific limit and offer an alternative",
-          "hint": "I can see the value of … Even so, … I’d suggest …",
-          "answer": "One possible response"
+          "prompt": "How would you acknowledge the shared purpose?",
+          "hint": "I can see the value of …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What concession would you offer?",
+          "hint": "I could commit to … rather than …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What condition would you retain?",
+          "hint": "Even with that change, I would still need …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What common ground is there now?",
-          "cue": "Name what is agreed and avoid calling a partial agreement unconditional",
-          "hint": "We agree on … The condition is still … Shall we confirm …?",
-          "answer": "One possible response"
+          "prompt": "How would you summarise the partial agreement?",
+          "hint": "We’ve agreed … and …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you explicitly confirm before announcing it?",
+          "hint": "Could you confirm that … remains part of the agreement?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you evaluate the trial against its purpose?",
+          "hint": "After four weeks, we’d check whether …"
         }
       ],
       "questionPurpose": "response"

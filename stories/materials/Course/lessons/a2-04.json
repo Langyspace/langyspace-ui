@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
+          "prompt": "What are you doing this weekend?",
+          "hint": "I’m … on …"
+        },
+        {
+          "id": "s1.q98.2",
           "prompt": "When are you free?",
-          "cue": "Offer a possible meeting time",
-          "hint": "I’m free on … at …",
-          "answer": "One possible response"
+          "hint": "I’m free on … at …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could you invite me to join you?",
+          "hint": "Would you like to …?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why can’t Ana meet at two on Saturday?",
-          "cue": "Explain her arrangement",
-          "hint": "She’s …",
-          "answer": "She’s going to a yoga class"
+          "prompt": "What is Ana doing on Saturday at two?",
+          "hint": "She’s going to …",
+          "answer": "Ana is going to a yoga class"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When is the festival open?",
+          "hint": "It’s open … and …",
+          "answer": "The festival is open on Saturday afternoon and Sunday morning"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "When is Ana free on Sunday?",
+          "hint": "She’s free at …",
+          "answer": "Ana is free at ten on Sunday"
         }
       ],
       "dialogueGroup": "a2-04.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What does Ana intend to do at the festival?",
-          "cue": "Use going to",
+          "prompt": "Where do they agree to meet?",
+          "hint": "They’ll meet at …",
+          "answer": "They agree to meet at the entrance"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does Ana plan to do at the festival?",
           "hint": "She’s going to …",
-          "answer": "She’s going to try something new"
+          "answer": "Ana is going to try something new"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What will Kim check that evening?",
+          "hint": "She’ll check …",
+          "answer": "Kim will check the opening time and message Ana"
         }
       ],
       "dialogueGroup": "a2-04.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What time does she suggest?",
-          "cue": "State the new suggestion and say whether it works",
-          "hint": "She suggests … That works / I can’t because …",
-          "answer": "She suggests eleven thirty on Sunday"
+          "prompt": "What time does the festival open on Sunday?",
+          "hint": "It opens at …",
+          "answer": "The festival opens at eleven on Sunday"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "When and where does Kim suggest meeting?",
+          "hint": "She suggests … at …",
+          "answer": "Kim suggests meeting at eleven thirty at the main entrance"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What alternative does Kim offer?",
+          "hint": "They could go on …",
+          "answer": "They could go on Saturday, when the festival is open until six"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -371,10 +412,18 @@
       "questions": [
         {
           "id": "invite",
-          "prompt": "Would you like to go together?",
-          "cue": "Invite me, check my availability and find a time",
-          "hint": "Are you doing anything …? How about …?",
-          "answer": "One possible response"
+          "prompt": "Would you like to go to the festival together?",
+          "hint": "Yes, I’d love to. / I’d like to, but …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What time fits your diary?",
+          "hint": "I’m … at … How about …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What information should we check first?",
+          "hint": "What time does …? Shall we check …?"
         }
       ],
       "questionPurpose": "response"
@@ -403,9 +452,17 @@
         {
           "id": "time",
           "prompt": "Does eleven thirty work for you?",
-          "cue": "Accept and confirm, or explain a conflict and suggest another time",
-          "hint": "That works. Let’s … / I can’t because … How about …?",
-          "answer": "One possible response"
+          "hint": "That works. / I can’t because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Where shall we meet?",
+          "hint": "Let’s meet at …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What alternative could you suggest if Sunday is difficult?",
+          "hint": "How about Saturday …?"
         }
       ],
       "questionPurpose": "response"

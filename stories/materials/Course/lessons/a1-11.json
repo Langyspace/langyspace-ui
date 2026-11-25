@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would your friend like?",
-          "cue": "Make a polite order",
-          "hint": "She’d like …, please",
-          "answer": "One possible response"
+          "prompt": "What would your friend like to drink?",
+          "hint": "She’d like …, please"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Would she like any food?",
+          "hint": "She’d like … / No, thank you"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you ask the total price?",
+          "hint": "How much is it?"
         }
       ],
       "questionPurpose": "review"
@@ -155,9 +163,20 @@
         {
           "id": "d0",
           "prompt": "Why does Ana look at the green T-shirt?",
-          "cue": "Use the available sizes",
-          "hint": "There isn’t …",
+          "hint": "There isn’t a … in …",
           "answer": "There isn’t a blue T-shirt in medium"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What size is the blue T-shirt available in?",
+          "hint": "The blue one is in …",
+          "answer": "The blue T-shirt is available in large"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How much is the green T-shirt?",
+          "hint": "It’s … dollars",
+          "answer": "The green T-shirt is twelve dollars"
         }
       ],
       "dialogueGroup": "a1-11.model"
@@ -250,10 +269,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What colour does she want?",
-          "cue": "Say the colour requested in the message",
+          "prompt": "What colour T-shirt does Kim want?",
           "hint": "She wants …",
-          "answer": "She wants green"
+          "answer": "Kim wants a green T-shirt"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What size is right for Kim?",
+          "hint": "Size … is right",
+          "answer": "Medium is the right size for Kim"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "When does Kim ask Ana to bring it?",
+          "hint": "She asks for it on …",
+          "answer": "Kim asks Ana to bring it on Friday"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -358,10 +388,18 @@
       "questions": [
         {
           "id": "gift",
+          "prompt": "What item and colour would you like?",
+          "hint": "I’d like this … in …"
+        },
+        {
+          "id": "@s_mission.q98.2",
           "prompt": "What size do you need?",
-          "cue": "Ask for blue in M, then choose an available alternative",
-          "hint": "Do you have … in …? Can I see …, please?",
-          "answer": "One possible response"
+          "hint": "Do you have it in …?"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Which available alternative will you choose?",
+          "hint": "Can I see the … one, please?"
         }
       ],
       "questionPurpose": "response"
@@ -437,10 +475,18 @@
       "questions": [
         {
           "id": "buy",
-          "prompt": "Which one is right for your friend?",
-          "cue": "Choose the right colour and size. Check the price",
-          "hint": "This … one in …, please. How much is it?",
-          "answer": "One possible response"
+          "prompt": "Which T-shirt is right for your friend?",
+          "hint": "The … one is right"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What size does she need?",
+          "hint": "She needs size …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you check the price before buying it?",
+          "hint": "How much is this …, please?"
         }
       ],
       "questionPurpose": "response"

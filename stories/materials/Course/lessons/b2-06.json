@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What result do you need?",
-          "cue": "State the problem and the expected outcome",
-          "hint": "The … doesn’t … I need …",
-          "answer": "One possible response"
+          "prompt": "What repair or service might you need?",
+          "hint": "I need to get …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you check whether a deadline is confirmed?",
+          "hint": "Is … confirmed, or …?"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What temporary solution could you ask about?",
+          "hint": "Would it be possible to … while …?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why isn’t arrival of the part enough?",
-          "cue": "Identify the remaining steps",
-          "hint": "It still needs to be …",
-          "answer": "It still needs fitting and testing"
+          "prompt": "Why does Ana need the screen fixed soon?",
+          "hint": "She is travelling …",
+          "answer": "Ana is travelling on Friday"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How much is the repair quote?",
+          "hint": "The quote is …",
+          "answer": "The repair quote is eighty dollars"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Is Friday at five a confirmed collection time?",
+          "hint": "No, it depends on …",
+          "answer": "No, it is an estimate until the replacement part is checked"
         }
       ],
       "dialogueGroup": "b2-06.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Is the original collection time guaranteed?",
-          "cue": "Use the provider’s actual wording",
-          "hint": "No, …",
-          "answer": "No. It is an estimate pending confirmation"
+          "prompt": "Why doesn’t the part arriving mean the phone is ready?",
+          "hint": "The screen still needs …",
+          "answer": "The screen still needs to be fitted and the phone tested"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What contact does Ana request if there is a delay?",
+          "hint": "She asks them to … before …",
+          "answer": "Ana asks them to contact her before five"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What should the update distinguish?",
+          "hint": "It should say … and …",
+          "answer": "The update should say what has been done and what is still pending"
         }
       ],
       "dialogueGroup": "b2-06.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Was a temporary phone promised in the first conversation?",
-          "cue": "Distinguish request from commitment",
-          "hint": "No, …",
-          "answer": "No. Availability still had to be checked"
+          "prompt": "What temporary solution does Ana ask about?",
+          "hint": "She asks about …",
+          "answer": "Ana asks about a temporary phone for the trip"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Can the shop promise that solution today?",
+          "hint": "No, it needs to check …",
+          "answer": "No, the shop needs to check availability"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What should be confirmed separately?",
+          "hint": "They should confirm … and …",
+          "answer": "They should confirm the repair deadline and the temporary phone separately"
         }
       ],
       "dialogueGroup": "b2-06.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What has been done, and what is still pending?",
-          "cue": "Explain the service status accurately",
-          "hint": "It’s been …, but … is still being …",
-          "answer": "The screen has been fitted; testing is pending; collection is Saturday at five"
+          "prompt": "What stage has the repair reached?",
+          "hint": "The screen …, but …",
+          "answer": "The screen has been fitted, but the phone is still being tested"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is the revised collection time?",
+          "hint": "Collection is now expected …",
+          "answer": "Collection is now expected on Saturday at five"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What are the temporary phone’s loan conditions?",
+          "hint": "It is available … and must …",
+          "answer": "The temporary phone is free from Friday at four and must be returned when Ana collects hers"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Will it be ready in time?",
-          "cue": "Clarify the status and ask what happens if the deadline slips",
-          "hint": "I need to get … Could you confirm when …?",
-          "answer": "One possible response"
+          "prompt": "What result do you need the shop to confirm?",
+          "hint": "I need to have … before …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "Which part of the original agreement is only an estimate?",
+          "hint": "The … is estimated, subject to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What backup would you ask them to check?",
+          "hint": "If … isn’t ready, could you …?"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Would the temporary solution meet the need?",
-          "cue": "Confirm both dates and ask about one practical requirement",
-          "hint": "I understand it’s been … Could I check whether the loan phone …?",
-          "answer": "One possible response"
+          "prompt": "Would you accept the revised collection time?",
+          "hint": "I can …, provided …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What must you check about the temporary phone?",
+          "hint": "Does it support …, and can I …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you confirm the two arrangements clearly?",
+          "hint": "Please confirm … separately from …"
         }
       ],
       "questionPurpose": "response"

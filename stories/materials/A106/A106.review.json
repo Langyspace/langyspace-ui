@@ -15,9 +15,17 @@
         {
           "id": "review",
           "prompt": "What food do you like?",
-          "cue": "Say one thing and ask me",
-          "hint": "I like … What about you?",
-          "answer": "One possible response"
+          "hint": "I like … What about you?"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What food don’t you like?",
+          "hint": "I don’t like …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What fruit does someone in your family like?",
+          "hint": "My … likes …"
         }
       ],
       "questionPurpose": "review"
@@ -219,9 +227,20 @@
         {
           "id": "mia",
           "prompt": "Where is Mia?",
-          "cue": "Use the place named in the conversation",
           "hint": "She’s under the …",
-          "answer": "She’s under the bed"
+          "answer": "Mia is under the bed"
+        },
+        {
+          "id": "s7.q98.2",
+          "prompt": "What’s Ana’s dog’s name?",
+          "hint": "His name is …",
+          "answer": "Ana’s dog’s name is Thor"
+        },
+        {
+          "id": "s7.q98.3",
+          "prompt": "How old is Thor?",
+          "hint": "He’s …",
+          "answer": "Thor is three"
         }
       ]
     },
@@ -313,9 +332,20 @@
         {
           "id": "new",
           "prompt": "Where is Mia now?",
-          "cue": "Describe the place in the message",
           "hint": "She’s on the …",
-          "answer": "She’s on the sofa"
+          "answer": "Mia is on the sofa"
+        },
+        {
+          "id": "s10.q98.2",
+          "prompt": "What is Mia next to?",
+          "hint": "She’s next to a …",
+          "answer": "Mia is next to a cushion"
+        },
+        {
+          "id": "s10.q98.3",
+          "prompt": "Where is Thor?",
+          "hint": "He’s next to the …",
+          "answer": "Thor is next to the sofa"
         }
       ]
     },

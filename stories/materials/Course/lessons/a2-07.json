@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What will you do to help?",
-          "cue": "Offer a concrete action",
-          "hint": "I’ll …",
-          "answer": "One possible response"
+          "prompt": "What can you do to help at home?",
+          "hint": "I can …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What will you offer to do today?",
+          "hint": "I’ll …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you politely ask someone for help?",
+          "hint": "Could you help me with …?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Does Ana need to pay to book the grill?",
-          "cue": "Use the booking rule",
-          "hint": "No, …",
-          "answer": "No, it’s free, but she has to book"
+          "prompt": "How do residents book the grill?",
+          "hint": "They have to book it …",
+          "answer": "Residents have to book the grill at reception"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Does using the grill cost anything?",
+          "hint": "No, it’s …",
+          "answer": "No, using the grill is free"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "When must residents stop using the pool?",
+          "hint": "They must stop at …",
+          "answer": "Residents must stop using the pool at eight"
         }
       ],
       "dialogueGroup": "a2-07.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Does she have to bring chairs?",
-          "cue": "Distinguish unnecessary from prohibited",
-          "hint": "No, she …",
-          "answer": "No, she doesn’t have to. Chairs are provided"
+          "prompt": "Do residents have to bring chairs?",
+          "hint": "No, they …",
+          "answer": "No, residents don’t have to bring chairs"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How many chairs are provided?",
+          "hint": "There are …",
+          "answer": "There are six chairs by the grill"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Where should residents leave their bikes?",
+          "hint": "They should leave them in …",
+          "answer": "Residents should leave their bikes in the garage"
         }
       ],
       "dialogueGroup": "a2-07.model"
@@ -260,10 +290,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What has changed for this weekend?",
-          "cue": "Explain the temporary rule you hear",
-          "hint": "This weekend we have to … / We can’t …",
-          "answer": "This weekend the pool closes at six"
+          "prompt": "What time does the pool close this weekend?",
+          "hint": "It closes at …",
+          "answer": "The pool closes at six this weekend"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why is it closing earlier?",
+          "hint": "It’s because of …",
+          "answer": "The pool is closing earlier because of cleaning"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "When do the normal hours return?",
+          "hint": "They return on …",
+          "answer": "Normal pool hours return on Monday"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -368,10 +409,18 @@
       "questions": [
         {
           "id": "rules",
-          "prompt": "Can we invite friends for a swim and a barbecue?",
-          "cue": "Ask about a rule and explain a restriction before agreeing on a plan",
-          "hint": "Do we have to …? We can’t …, but we can …",
-          "answer": "One possible response"
+          "prompt": "What do we have to book for our guests?",
+          "hint": "We have to book … at …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What do we need to bring for the barbecue?",
+          "hint": "We don’t have to bring … because …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What must our guests know about the pool or bikes?",
+          "hint": "They mustn’t … They have to …"
         }
       ],
       "questionPurpose": "response"
@@ -399,10 +448,18 @@
       "questions": [
         {
           "id": "guests",
-          "prompt": "What should your guests know?",
-          "cue": "Explain the temporary restriction and suggest a useful time",
-          "hint": "This weekend we can’t … We could … before …",
-          "answer": "One possible response"
+          "prompt": "What time should our guests stop swimming this weekend?",
+          "hint": "They have to stop before …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Does the pool change affect our grill booking?",
+          "hint": "The booking is … We can still …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "When can we use the usual hours again?",
+          "hint": "The usual hours return on …"
         }
       ],
       "questionPurpose": "response"

@@ -18,11 +18,20 @@
         {
           "id": "review",
           "prompt": "What have you done recently?",
-          "cue": "Give a result and add a time or duration when useful",
-          "hint": "I’ve … I … last …",
-          "answer": "One possible response"
+          "hint": "I’ve … recently"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "When did you do it?",
+          "hint": "I … last …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What experience would you like to ask me about?",
+          "hint": "Have you ever …? What was it like?"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -153,11 +162,23 @@
         {
           "id": "d0",
           "prompt": "What has Ana been doing all week?",
-          "cue": "Name the activity",
           "hint": "She’s been …",
-          "answer": "She’s been painting"
+          "answer": "Ana has been painting all week"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Which rooms has she finished?",
+          "hint": "She’s finished …",
+          "answer": "Ana has finished the living room and kitchen"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Which room will she paint next?",
+          "hint": "The … is next",
+          "answer": "Ana will paint the bedroom next"
         }
-      ]
+      ],
+      "dialogueGroup": "welcome-back"
     },
     {
       "id": "s_dialogue2",
@@ -199,12 +220,24 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What result does Ana report about baking?",
-          "cue": "Give the completed number",
-          "hint": "She’s …",
-          "answer": "She’s baked three cakes this week"
+          "prompt": "How long has Ana been running?",
+          "hint": "She’s been running for …",
+          "answer": "Ana has been running for two weeks"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How often does she run?",
+          "hint": "She runs …",
+          "answer": "Ana runs every morning"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How many cakes has she baked this week?",
+          "hint": "She’s baked …",
+          "answer": "Ana has baked three cakes this week"
         }
-      ]
+      ],
+      "dialogueGroup": "welcome-back"
     },
     {
       "id": "s_dialogue3",
@@ -239,12 +272,24 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What does Ana offer when Kim seems tired?",
-          "cue": "Use the reaction in the dialogue",
-          "hint": "She offers …",
-          "answer": "She offers a piece of cake"
+          "prompt": "Who did Kim visit in Korea?",
+          "hint": "She visited …",
+          "answer": "Kim visited her family in Korea"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why has she been sleeping all day?",
+          "hint": "She has …",
+          "answer": "Kim has been sleeping all day because she has jet lag"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What does Ana offer Kim?",
+          "hint": "Ana offers …",
+          "answer": "Ana offers Kim some cake"
         }
-      ]
+      ],
+      "dialogueGroup": "welcome-back"
     },
     {
       "id": "s_personal",
@@ -258,17 +303,22 @@
           "id": "0",
           "prompt": "What have you been doing lately?",
           "cue": "Describe a recent activity and ask about your teacher",
-          "hint": "I’ve been … lately. How about you?",
-          "answer": "One possible response"
+          "hint": "I’ve been … lately. How about you?"
         },
         {
           "id": "1",
           "prompt": "Have you finished anything recently?",
           "cue": "Explain one result and how you got there",
-          "hint": "I’ve finished … I’ve been working on it for …",
-          "answer": "One possible response"
+          "hint": "I’ve finished … I’ve been working on it for …"
+        },
+        {
+          "id": "recent.questions.3",
+          "prompt": "How long have you been working on a goal?",
+          "cue": "Describe your progress and ask about a goal of mine",
+          "hint": "I’ve been … for … I’ve already … What about you?"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -326,10 +376,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What has Leo finished, and what is he still doing?",
-          "cue": "Separate the result from the ongoing activity",
-          "hint": "He’s finished …, but he’s still …",
-          "answer": "He has finished the invitations, but is still visiting and choosing venues"
+          "prompt": "What have Leo and Carla finished?",
+          "hint": "They’ve finished …",
+          "answer": "Leo and Carla have finished the party invitations"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How long have they been visiting venues?",
+          "hint": "They’ve been visiting … for …",
+          "answer": "They’ve been visiting venues every weekend for three weeks"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How do their venue preferences differ?",
+          "hint": "Carla wants …, while Leo …",
+          "answer": "Carla wants space for dancing, while Leo would be happy with a park barbecue"
         }
       ],
       "contact": {
@@ -437,12 +498,21 @@
       "questions": [
         {
           "id": "catch",
-          "prompt": "What have you been doing lately?",
-          "cue": "Give an activity and a result, then ask me a follow-up",
-          "hint": "I’ve been … I’ve … How about you?",
-          "answer": "One possible response"
+          "prompt": "What has the person in your chosen topic been doing?",
+          "hint": "They’ve been …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What duration or result can you add?",
+          "hint": "They’ve … for … / They’ve finished …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What follow-up question would keep the conversation going?",
+          "hint": "How long …? / Have you … yet? / Who …?"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     },
     "s_reply": {
       "type": "facts",
@@ -467,12 +537,21 @@
       "questions": [
         {
           "id": "leo",
-          "prompt": "What would you ask before suggesting another visit?",
-          "cue": "Acknowledge the result and explore the unresolved priorities",
-          "hint": "You’ve finished …, but … What matters most about …?",
-          "answer": "One possible response"
+          "prompt": "How would you acknowledge their completed work?",
+          "hint": "You’ve already …, so …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you ask before recommending another visit?",
+          "hint": "Have you agreed …? / What matters most …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How could you help compare their preferences?",
+          "hint": "Carla needs …, while Leo prefers …; perhaps …"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     }
   },
   "notesStorageKey": "langy-notes:b1-01"

@@ -31,15 +31,14 @@ export function Dialogue({ index, media }: IndexedAudioProps) {
 export function Comprehension({ part }: { part?: number }) {
   return (
     <PromptExercise
+      density={part === undefined ? 'compact' : 'regular'}
       items={content.dialogueQuestions
-        .filter(
-          (_, index) =>
-            part === undefined || (part === 0 ? index < 2 : index >= 2),
-        )
-        .map((item, index) => ({
-          id: String(index),
+        .filter((item) => part === undefined || item.part === part)
+        .map((item) => ({
+          id: item.id,
           prompt: item.q,
           answer: item.a,
+          hint: item.hint,
         }))}
     />
   )

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "How do you ask for help?",
-          "cue": "Explain a problem and ask politely",
-          "hint": "The … doesn’t work. Can you help me?",
-          "answer": "One possible response"
+          "prompt": "What’s the problem with your room?",
+          "hint": "The … doesn’t work"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What do you need?",
+          "hint": "Can I have …, please?"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What time is good for someone to help?",
+          "hint": "… is good for me. Thank you"
         }
       ],
       "questionPurpose": "review"
@@ -87,10 +95,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which street takes you to the café?",
-          "cue": "Say first or second",
-          "hint": "The … street on the right",
-          "answer": "The first street on the right"
+          "prompt": "Which street takes Kim to the café?",
+          "hint": "She should take the … street",
+          "answer": "Kim should turn right at the first street"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Is the café next to the pharmacy?",
+          "hint": "Yes, it …",
+          "answer": "Yes, the café is next to the pharmacy"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How can Kim get to the park?",
+          "hint": "She should go … and take …",
+          "answer": "Kim should go straight and take the second right; the park is at the end"
         }
       ],
       "dialogueGroup": "a1-09.model"
@@ -159,10 +178,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Where should you meet?",
-          "cue": "Name the destination described in the message",
-          "hint": "We should meet at …",
-          "answer": "We should meet at the park"
+          "prompt": "Where should Ana meet Kim?",
+          "hint": "They should meet at …",
+          "answer": "Ana should meet Kim at the park"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Which street should Ana turn right at?",
+          "hint": "She should turn at the … street",
+          "answer": "Ana should turn right at the second street"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Where is Kim waiting?",
+          "hint": "She’s near …",
+          "answer": "Kim is waiting near the trees"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -285,10 +315,18 @@
       "questions": [
         {
           "id": "route",
+          "prompt": "Where do we start?",
+          "hint": "We start at the hotel, facing …"
+        },
+        {
+          "id": "@s_mission.q98.2",
           "prompt": "How do I get to the café?",
-          "cue": "Start at the hotel, facing the bank. Give two directions",
-          "hint": "Go straight. Turn … at the … street",
-          "answer": "One possible response"
+          "hint": "Go straight and turn … at the … street"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Where is the pharmacy?",
+          "hint": "It’s on the same street, next to …"
         }
       ],
       "questionPurpose": "response"
@@ -382,10 +420,18 @@
       "questions": [
         {
           "id": "park",
-          "prompt": "How do I get to our new meeting place?",
-          "cue": "Use Kim’s message. Start at the hotel",
-          "hint": "Go straight, then … The park is …",
-          "answer": "One possible response"
+          "prompt": "Where are we meeting now?",
+          "hint": "We’re meeting at …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How do I get there from the hotel?",
+          "hint": "Go straight, then turn … at the … street"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Where is the park on this route?",
+          "hint": "It’s at the end, after …"
         }
       ],
       "questionPurpose": "response"

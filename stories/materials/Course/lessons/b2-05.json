@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What should they have checked?",
-          "cue": "Name a useful check rather than blaming the person",
-          "hint": "They could have checked …",
-          "answer": "One possible response"
+          "prompt": "What could a traveller check before paying?",
+          "hint": "They could check whether …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How would you explain an unnecessary payment?",
+          "hint": "We needn’t have … because …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you request clarification politely?",
+          "hint": "Could you confirm whether …?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which service was charged twice?",
-          "cue": "Use the confirmation",
-          "hint": "The …",
-          "answer": "The breakfast"
+          "prompt": "Why was the breakfast payment unnecessary?",
+          "hint": "Breakfast was already …",
+          "answer": "Breakfast was already included in the room price"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How much was charged for breakfast?",
+          "hint": "They were charged …",
+          "answer": "They were charged twenty dollars for breakfast"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What separate amount appears on the receipt?",
+          "hint": "There is also …",
+          "answer": "There is also a fifty-dollar deposit"
         }
       ],
       "dialogueGroup": "b2-05.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Is the deposit automatically a duplicate charge?",
-          "cue": "Explain its separate purpose",
-          "hint": "No, …",
-          "answer": "No. It is conditional on a room check"
+          "prompt": "Is the deposit automatically a mistake?",
+          "hint": "No, the conditions say …",
+          "answer": "No, the conditions say the deposit is returned after the room check if there is no damage"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Which document supports the breakfast refund request?",
+          "hint": "They can show …",
+          "answer": "They can show the booking confirmation"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why should they discuss the amounts separately?",
+          "hint": "One is …, while the other …",
+          "answer": "One is a duplicate charge, while the other is a conditional deposit"
         }
       ],
       "dialogueGroup": "b2-05.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Does optional advance payment mean the room was free?",
-          "cue": "Distinguish timing from price",
+          "prompt": "Did the booking require advance payment of the room?",
+          "hint": "No, it allowed …",
+          "answer": "No, the booking allowed payment at arrival"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Does that mean the room was free?",
           "hint": "No, …",
-          "answer": "No. The payment timing was optional, not the room price"
+          "answer": "No, the room still had to be paid for"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What is the actual payment dispute?",
+          "hint": "The dispute concerns …",
+          "answer": "The dispute concerns one duplicate breakfast charge"
         }
       ],
       "dialogueGroup": "b2-05.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What can they get back, and why?",
-          "cue": "Report the condition explained in the reply",
-          "hint": "They can get … back because …",
-          "answer": "The $20 duplicate breakfast charge can be returned; the deposit is still conditional"
+          "prompt": "What is needed to request the twenty-dollar refund?",
+          "hint": "They need to provide …",
+          "answer": "They need to provide the receipt reference"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How long might the refund take?",
+          "hint": "It may take …",
+          "answer": "The refund may take three business days"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "Why isn’t the deposit return approved yet?",
+          "hint": "The room check …",
+          "answer": "The room check at departure is still pending"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Which payment was unnecessary?",
-          "cue": "Explain the duplicate charge using the receipt and confirmation",
-          "hint": "We needn’t have paid … because … The deposit is different because …",
-          "answer": "One possible response"
+          "prompt": "Which payment would you challenge?",
+          "hint": "We needn’t have paid … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you support your request?",
+          "hint": "The confirmation shows …, whereas the receipt …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Which condition still applies to the deposit?",
+          "hint": "The deposit is separate: …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What would you ask reception to confirm?",
-          "cue": "Request the correct amount and clarify the remaining condition",
-          "hint": "Could you confirm the … refund? I understand the deposit …",
-          "answer": "One possible response"
+          "prompt": "What would you request now?",
+          "hint": "Could you return … using …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What processing detail would you confirm?",
+          "hint": "Could you confirm how long …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you distinguish the pending deposit?",
+          "hint": "The … can be requested now; the … still depends on …"
         }
       ],
       "questionPurpose": "response"

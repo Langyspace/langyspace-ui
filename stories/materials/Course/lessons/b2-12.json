@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would you keep and what would you change?",
-          "cue": "Name the purpose, an objection and an adjustment",
-          "hint": "I’d keep …, but change …",
-          "answer": "One possible response"
+          "prompt": "What specific problem should a rule address?",
+          "hint": "The concern is …, rather than …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What useful behaviour might a broad ban prevent?",
+          "hint": "A ban could also prevent …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How could an exception work fairly?",
+          "hint": "A workable exception would …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What is the stated distraction problem?",
-          "cue": "Be specific",
-          "hint": "Repeated …",
-          "answer": "Repeated social-message checking"
+          "prompt": "What classroom problem is the policy meant to solve?",
+          "hint": "Repeated … interrupts …",
+          "answer": "Repeated social-message checking interrupts lessons"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why does Kim consider a total ban?",
+          "hint": "It might be …",
+          "answer": "A total ban might be simpler than many exceptions"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What legitimate phone use does Ana identify?",
+          "hint": "Some learners use …",
+          "answer": "Some learners use phones as accessibility tools"
         }
       ],
       "dialogueGroup": "b2-12.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why might public exception requests be a problem?",
-          "cue": "Consider participation and privacy",
-          "hint": "They could …",
-          "answer": "They could expose private information and delay participation"
+          "prompt": "What more targeted rule do they consider?",
+          "hint": "Allow … while restricting …",
+          "answer": "They consider allowing approved tools while restricting social notifications"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why should exception requests avoid public explanations?",
+          "hint": "To protect …",
+          "answer": "Public explanations could expose private information"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What assumption about emergency contact should they avoid?",
+          "hint": "They shouldn’t assume …",
+          "answer": "They shouldn’t assume the current office contact system is always fast enough"
         }
       ],
       "dialogueGroup": "b2-12.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "Why test concrete cases before finalising?",
-          "cue": "Explain the purpose of the test",
-          "hint": "To check whether …",
-          "answer": "To check whether the rule and exception route actually work for different needs"
+          "prompt": "What three parts does the policy need?",
+          "hint": "It needs …, … and …",
+          "answer": "The policy needs a rule, a reason and a workable exception process"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why can identical treatment be inappropriate?",
+          "hint": "Some phone use …",
+          "answer": "Some phone use supports participation rather than distracting from it"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "How should they assess the draft?",
+          "hint": "They should test it against …",
+          "answer": "They should test the draft against concrete cases"
         }
       ],
       "dialogueGroup": "b2-12.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Which part of your policy would you reconsider?",
-          "cue": "Use the new perspective to review one condition",
-          "hint": "I’d reconsider … because …",
-          "answer": "Reconsider public permission every lesson; discuss a private, workable exception route"
+          "prompt": "How does the learner use the phone?",
+          "hint": "They use it to … and …",
+          "answer": "The learner uses the phone to read material aloud and communicate"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why is public permission every lesson problematic?",
+          "hint": "It could … and …",
+          "answer": "It could expose private information and delay participation"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What classroom concern still needs a rule?",
+          "hint": "The rule must address …",
+          "answer": "The rule must still address repeated social-message checking"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -429,10 +481,18 @@
       "questions": [
         {
           "id": "policy",
-          "prompt": "What problem should the policy solve?",
-          "cue": "Agree a rule and test it against one different use",
-          "hint": "The main issue is … Although …, we should … when …",
-          "answer": "One possible response"
+          "prompt": "What restriction addresses social interruptions?",
+          "hint": "I’d restrict … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you protect accessibility use?",
+          "hint": "Approved … should … without …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What urgent-contact arrangement would you test?",
+          "hint": "For emergencies, we’d need … that …"
         }
       ],
       "questionPurpose": "response"
@@ -460,10 +520,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Which part of the policy would you reconsider?",
-          "cue": "Address the omitted case while keeping a proportionate distraction rule",
-          "hint": "I’d reconsider … because … We could allow … while …",
-          "answer": "One possible response"
+          "prompt": "How would you revise the exception process?",
+          "hint": "Instead of …, we could agree … privately"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What permitted use would you make explicit?",
+          "hint": "The agreement would allow … but not …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you review problems without excluding the learner?",
+          "hint": "If … happens, we would … while preserving …"
         }
       ],
       "questionPurpose": "response"

@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "When did it start?",
-          "cue": "Give a past time expression",
-          "hint": "It started …",
-          "answer": "One possible response"
+          "prompt": "What help can you offer someone who is busy?",
+          "hint": "I’ll …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What are you going to do later?",
+          "hint": "I’m going to …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you check a time you didn’t hear?",
+          "hint": "Could you repeat …, please?"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "When did Ana’s back start hurting?",
-          "cue": "Give the stated time",
-          "hint": "Yesterday …",
-          "answer": "Yesterday afternoon"
+          "prompt": "What problem does Ana describe?",
+          "hint": "Her … hurts",
+          "answer": "Ana says that her back hurts"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did it start?",
+          "hint": "It started …",
+          "answer": "Ana’s back started hurting yesterday afternoon"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Ana ask reception for?",
+          "hint": "She’d like …",
+          "answer": "Ana would like an appointment today"
         }
       ],
       "dialogueGroup": "a2-06.model"
@@ -188,10 +207,21 @@
       "questions": [
         {
           "id": "d1",
+          "prompt": "What appointment time is offered?",
+          "hint": "The appointment is at …",
+          "answer": "Ana is offered an appointment at three"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
           "prompt": "Where is the appointment?",
-          "cue": "Name the clinic",
-          "hint": "At …",
-          "answer": "At the Green Clinic"
+          "hint": "It’s at …",
+          "answer": "The appointment is at the Green Clinic"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How will Ana receive the address?",
+          "hint": "They’ll send …",
+          "answer": "The clinic will send Ana the address in a message"
         }
       ],
       "dialogueGroup": "a2-06.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "When and where is the appointment?",
-          "cue": "Confirm the time and place stated in the message",
-          "hint": "It’s at … in …",
-          "answer": "Four o’clock at the Green Clinic"
+          "prompt": "What is the new appointment time?",
+          "hint": "The new time is …",
+          "answer": "The appointment is now at four this afternoon"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "When should Ana arrive at reception?",
+          "hint": "She should arrive … minutes early",
+          "answer": "Ana should arrive ten minutes early, at three fifty"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should Ana do if she needs another time?",
+          "hint": "She should …",
+          "answer": "Ana should call reception if she needs another time"
         }
       ],
       "greetingTimestamp": "12:20",
@@ -372,9 +413,17 @@
         {
           "id": "appointment",
           "prompt": "How can reception help?",
-          "cue": "Describe the fictional problem and ask for a time",
-          "hint": "My … hurts. It started … Is there an appointment …?",
-          "answer": "One possible response"
+          "hint": "I’d like to make …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "When did the problem start?",
+          "hint": "It started …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "When are you available?",
+          "hint": "I’m free … Is there an appointment then?"
         }
       ],
       "questionPurpose": "response"
@@ -402,10 +451,18 @@
       "questions": [
         {
           "id": "check",
-          "prompt": "What will you confirm with reception?",
-          "cue": "Confirm the place and time, or ask for another appointment",
-          "hint": "My appointment is at … in …, right? Could I …?",
-          "answer": "One possible response"
+          "prompt": "What time is your appointment now?",
+          "hint": "My appointment is at …, right?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What time do you need to be at reception?",
+          "hint": "I need to arrive at …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What will you say if the new time doesn’t work?",
+          "hint": "Could I have another time, please?"
         }
       ],
       "questionPurpose": "response"

@@ -2,9 +2,9 @@ import { characterPortrait } from './characterPortraits'
 import { VocabularyControls } from './VocabularyControls'
 import { useState } from 'react'
 import { VocabularyGrid } from '../../../src/components/Exercise/VocabularyGrid'
+import { QuestionList } from '../../../src/components/Exercise/QuestionList'
 import { MaterialLearningDialogue as LearningDialogue } from './MaterialLearningDialogue'
 import { GapFillExercise } from '../../../src/components/InteractiveMaterial/GapFillExercise'
-import { AnswerDisclosure } from './AnswerDisclosure'
 import { QuizOption } from '../../../src/components/Quiz/QuizOption'
 import * as Common from '../../../src/components/InteractiveMaterial/Material.shared.styles'
 import * as Styled from './LessonExercises.styles'
@@ -118,69 +118,9 @@ export function DialogueExercise({ lines }: DialogueExerciseProps) {
   )
 }
 
-export function PromptExercise({
-  items,
-  numbered = true,
-  answerMinLines,
-}: PromptExerciseProps) {
-  const [hintCount, setHintCount] = useState(0)
-  const hints = items.filter((item) => item.hint)
-  return (
-    <Common.Stack>
-      <Styled.PromptList>
-        {items.map((item, index) => {
-          const question = item.answer ? (
-            <AnswerDisclosure
-              question={item.prompt}
-              answer={item.answer}
-              answerMinLines={answerMinLines}
-              marker={
-                numbered ? (
-                  <Common.Number aria-hidden="true">{index + 1}</Common.Number>
-                ) : undefined
-              }
-            />
-          ) : (
-            <Styled.PromptQuestion>
-              {numbered ? (
-                <Common.Number aria-hidden="true">{index + 1}</Common.Number>
-              ) : null}
-              <p>{item.prompt}</p>
-            </Styled.PromptQuestion>
-          )
-          const hinted = hints.findIndex((x) => x.id === item.id)
-          return (
-            <Styled.Prompt key={item.id}>
-              {item.hint || item.cue ? (
-                <Common.Stack>
-                  {question}
-                  {item.cue ? <Common.Hint>{item.cue}</Common.Hint> : null}
-                  {hinted >= 0 && hinted < hintCount ? (
-                    <Common.Hint role="status">{item.hint}</Common.Hint>
-                  ) : null}
-                </Common.Stack>
-              ) : (
-                question
-              )}
-            </Styled.Prompt>
-          )
-        })}
-      </Styled.PromptList>
-      {hints.length ? (
-        <VocabularyControls
-          density="compact"
-          interaction="progressive"
-          showInitial={hintCount > 0}
-          labels={{
-            hint: hintCount === hints.length ? 'Hide hints' : 'Show next hint',
-          }}
-          onToggleInitial={() =>
-            setHintCount((count) => (count === hints.length ? 0 : count + 1))
-          }
-        />
-      ) : null}
-    </Common.Stack>
-  )
+/** Authoring adapter; the library owns list styling, answer checks and the hint footer. */
+export function PromptExercise(props: PromptExerciseProps) {
+  return <QuestionList {...props} />
 }
 
 export function GapExercise({ items, choices }: GapExerciseProps) {

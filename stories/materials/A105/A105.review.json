@@ -15,9 +15,17 @@
         {
           "id": "time",
           "prompt": "When are you free?",
-          "cue": "Suggest a day and a time",
-          "hint": "I’m free on … at … Are you free then?",
-          "answer": "One possible response"
+          "hint": "I’m free on … at …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What do you do in the morning?",
+          "hint": "I … in the morning"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What days do you study?",
+          "hint": "I study on … What about you?"
         }
       ],
       "questionPurpose": "review"
@@ -191,9 +199,20 @@
         {
           "id": "price",
           "prompt": "How much are the carrots?",
-          "cue": "Say the price in the conversation",
           "hint": "They’re … dollars",
-          "answer": "They’re two dollars"
+          "answer": "The carrots are two dollars"
+        },
+        {
+          "id": "s6.q98.2",
+          "prompt": "Does Kim like mangoes?",
+          "hint": "Yes, she …",
+          "answer": "Yes, Kim likes mangoes"
+        },
+        {
+          "id": "s6.q98.3",
+          "prompt": "Does Kim like watermelons?",
+          "hint": "No, she …",
+          "answer": "No, Kim doesn’t like watermelons"
         }
       ]
     },
@@ -358,10 +377,21 @@
       "questions": [
         {
           "id": "g",
-          "prompt": "Does the mother like onions?",
-          "cue": "Use what Ana says",
-          "hint": "No. She likes …",
-          "answer": "No, she doesn’t. She likes carrots"
+          "prompt": "Does Ana’s mother like onions?",
+          "hint": "No, she …",
+          "answer": "No, Ana’s mother doesn’t like onions"
+        },
+        {
+          "id": "s8.q98.2",
+          "prompt": "What fruit does Ana love?",
+          "hint": "She loves …",
+          "answer": "Ana loves apples"
+        },
+        {
+          "id": "s8.q98.3",
+          "prompt": "What does Ana’s mother like?",
+          "hint": "She likes …",
+          "answer": "Ana’s mother likes carrots"
         }
       ]
     },
@@ -387,9 +417,20 @@
         {
           "id": "listen",
           "prompt": "What fruit does Kim want?",
-          "cue": "Name the two fruits",
           "hint": "She wants … and …",
-          "answer": "A banana and a mango"
+          "answer": "Kim wants a banana and a mango"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "What fruit doesn’t Kim want today?",
+          "hint": "She doesn’t want …",
+          "answer": "Kim doesn’t want oranges today"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "Who is the banana for?",
+          "hint": "The banana is for …",
+          "answer": "The banana is for Jin"
         }
       ]
     },

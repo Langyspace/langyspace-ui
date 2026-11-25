@@ -656,6 +656,11 @@ export type { VocabularyGridProps } from './components/Exercise/VocabularyGrid.t
 export { LearningDialogue } from './components/Exercise/LearningDialogue'
 export type { LearningDialogueProps } from './components/Exercise/LearningDialogue.types'
 export { RevealCard } from './components/Exercise/RevealCard'
+export { QuestionList } from './components/Exercise/QuestionList'
+export type {
+  QuestionListProps,
+  QuestionListItem,
+} from './components/Exercise/QuestionList.types'
 export type {
   RevealCardProps,
   RevealGuidance,

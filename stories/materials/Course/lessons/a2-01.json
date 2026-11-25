@@ -18,11 +18,20 @@
         {
           "id": "review",
           "prompt": "What do you usually do in the morning?",
-          "cue": "Give one habit and its time",
-          "hint": "I usually … at …",
-          "answer": "One possible response"
+          "hint": "I usually … in the morning"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What time do you do that?",
+          "hint": "I usually … at …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Is your routine different at the weekend?",
+          "hint": "At the weekend, I … instead"
         }
-      ]
+      ],
+      "questionPurpose": "review"
     },
     {
       "id": "s2",
@@ -153,10 +162,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What does Ben usually do for dinner?",
-          "cue": "Compare his habit with today",
-          "hint": "He usually …, but today …",
-          "answer": "He usually orders food; today he is making pasta"
+          "prompt": "What is Ben doing now?",
+          "hint": "He’s …",
+          "answer": "Ben is cooking dinner and making pasta"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What does Ben usually do instead?",
+          "hint": "He usually …",
+          "answer": "Ben usually orders food"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What does Anna usually do before bed?",
+          "hint": "She usually …",
+          "answer": "Anna usually reads before bed"
         }
       ]
     },
@@ -172,17 +192,22 @@
           "id": "0",
           "prompt": "What do you usually do in the morning?",
           "cue": "Describe a habit and ask about your teacher’s routine",
-          "hint": "I usually … What do you usually do?",
-          "answer": "One possible response"
+          "hint": "I usually … What do you usually do?"
         },
         {
           "id": "1",
           "prompt": "What are you doing differently today?",
           "cue": "Compare today with your usual routine",
-          "hint": "I usually …, but today I’m …",
-          "answer": "One possible response"
+          "hint": "I usually …, but today I’m …"
+        },
+        {
+          "id": "routine.questions.3",
+          "prompt": "What is someone in your family doing now?",
+          "cue": "Describe what they are doing and ask about my family",
+          "hint": "My … is … right now. What about your family?"
         }
-      ]
+      ],
+      "questionPurpose": "conversation"
     },
     {
       "id": "s_grammar",
@@ -240,10 +265,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What is she doing today?",
-          "cue": "Describe the activity mentioned in the message",
-          "hint": "Today she’s …",
-          "answer": "She is making coffee and listening to music at home"
+          "prompt": "What is Anna doing at home now?",
+          "hint": "She’s … and …",
+          "answer": "Anna is making coffee and listening to music"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What does Anna usually do in the morning?",
+          "hint": "She usually …",
+          "answer": "Anna usually goes to the gym in the morning"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What are her sister and parents doing?",
+          "hint": "Her sister is …; her parents are …",
+          "answer": "Her sister is watching TV and her parents are cooking lunch"
         }
       ],
       "contact": {
@@ -344,10 +380,18 @@
       "questions": [
         {
           "id": "compare",
-          "prompt": "What is different today?",
-          "cue": "Compare a habit with the current activity and ask me about my day",
-          "hint": "I usually …, but today I’m … What about you?",
-          "answer": "One possible response"
+          "prompt": "What does Anna usually do in the morning?",
+          "hint": "She usually …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What is she doing today instead?",
+          "hint": "Today she’s …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How is your morning similar or different?",
+          "hint": "I usually …, but today I’m …"
         }
       ],
       "image": "a2-01-usually-today81",
@@ -355,7 +399,8 @@
         "columns": 2,
         "rows": 1,
         "sourceAspectRatio": 1.7777777777777777
-      }
+      },
+      "questionPurpose": "response"
     },
     "s_reply": {
       "type": "facts",
@@ -380,12 +425,21 @@
       "questions": [
         {
           "id": "reply",
+          "prompt": "What are you doing today?",
+          "hint": "Today I’m …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What do you usually do at this time?",
+          "hint": "I usually …, but today …"
+        },
+        {
+          "id": "@s_reply.q98.3",
           "prompt": "What would you ask Anna about her day?",
-          "cue": "Respond about your day and ask a genuine follow-up",
-          "hint": "I’m … today. Are you …? What are … doing?",
-          "answer": "One possible response"
+          "hint": "Are you …? / What are you …?"
         }
-      ]
+      ],
+      "questionPurpose": "response"
     }
   },
   "notesStorageKey": "langy-notes:a2-01"

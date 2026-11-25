@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What is the strongest concern about your preference?",
-          "cue": "Acknowledge a limitation before defending the idea",
-          "hint": "Although …, I think … because …",
-          "answer": "One possible response"
+          "prompt": "What change would you support in a group routine?",
+          "hint": "I’d support … because …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is the strongest concern about it?",
+          "hint": "A reasonable concern is …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you address that concern without losing the benefit?",
+          "hint": "Having said that, we could …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What is the proposal meant to improve?",
-          "cue": "Name the underlying purpose",
-          "hint": "More …",
-          "answer": "More useful live time for questions"
+          "prompt": "What part of the meeting would Ana replace?",
+          "hint": "She would replace …",
+          "answer": "Ana would replace the sixty-minute spoken status round"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What would replace it?",
+          "hint": "There would be …",
+          "answer": "There would be a short written update"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What should live meeting time be used for?",
+          "hint": "It should be used for …",
+          "answer": "Live meeting time should be used for questions"
         }
       ],
       "dialogueGroup": "b2-11.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Why isn’t a longer meeting an automatic solution?",
-          "cue": "Avoid a guarantee",
-          "hint": "It doesn’t …",
-          "answer": "It doesn’t guarantee attention or that questions are answered"
+          "prompt": "What concern does Kim raise?",
+          "hint": "Some people might …",
+          "answer": "Kim worries that some people won’t read the update"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why doesn’t a longer meeting guarantee a solution?",
+          "hint": "It doesn’t guarantee …",
+          "answer": "A longer meeting doesn’t guarantee people’s attention"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What format do they propose?",
+          "hint": "They propose … followed by …",
+          "answer": "They propose an update with three headings followed by a ten-minute discussion"
         }
       ],
       "dialogueGroup": "b2-11.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What condition is attached to the trial?",
-          "cue": "Explain what needs reviewing",
-          "hint": "Check whether …",
-          "answer": "Check whether questions actually get answered"
+          "prompt": "What support is needed after the live discussion?",
+          "hint": "They need … and …",
+          "answer": "They need an asynchronous question space and someone responsible for replies"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What condition does Kim attach to supporting the trial?",
+          "hint": "They must check whether …",
+          "answer": "They must check whether questions actually get answered"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "What is the overall purpose of the change?",
+          "hint": "Less …, but …",
+          "answer": "The purpose is less reporting aloud but a clearer way to get help"
         }
       ],
       "dialogueGroup": "b2-11.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What would you change after hearing the objection?",
-          "cue": "Adapt the proposal while keeping its purpose",
-          "hint": "I’d keep …, but I’d change …",
-          "answer": "Keep the shorter format but add a separate question channel with a responsible responder"
+          "prompt": "Why can’t the member rely only on the live discussion?",
+          "hint": "They can’t always …",
+          "answer": "The member can’t always join at the same time"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What problem do they anticipate with later questions?",
+          "hint": "Questions could …",
+          "answer": "Later questions could disappear in a long message thread"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What concrete support do they suggest?",
+          "hint": "They suggest … with …",
+          "answer": "They suggest a separate question channel with a named person checking it each study day"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What would you propose, and why?",
-          "cue": "Explain the problem, hear one objection and adapt the proposal",
-          "hint": "I’d suggest … because … That’s a fair point. We could …",
-          "answer": "One possible response"
+          "prompt": "How would you explain the proposed change?",
+          "hint": "Instead of …, we’d …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "How would you acknowledge the concern about reading?",
+          "hint": "I take the point that …; having said that, …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you judge whether the trial works?",
+          "hint": "We’d check whether … before …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What would you change after hearing the concern?",
-          "cue": "Keep one part, change another and say how you would review the trial",
-          "hint": "I’d keep …, but change … We’d check whether …",
-          "answer": "One possible response"
+          "prompt": "What would you keep from the original proposal?",
+          "hint": "I’d keep … because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you protect questions asked later?",
+          "hint": "We could … with … responsible for …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you agree before declaring success?",
+          "hint": "We should agree how to review … and …"
         }
       ],
       "questionPurpose": "response"

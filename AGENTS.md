@@ -101,7 +101,10 @@
   Maintain that central guide in the same delivery when user feedback establishes a reusable rule.
   Read/update [character continuity](docs/characters/characters.md) before introducing new facts about named characters.
   Guided dialogue and comprehension share SlidePage’s two-column questions slot. Comprehension uses
-  numbered RevealCard prompts, not another participant/bubble conversation. Live personal practice
+  the canonical QuestionList with at least three meaningful questions per block, full-sentence factual
+  answers and hints that replace answers in the same reserved slot. Reuse the starred Questions eyebrow
+  and one progressive bulb centered outside the list at the column end. Do not invent answers for open
+  practice or add repetitive questions just to meet the minimum. Live personal practice
   keeps canonical bubbles with at least three meaningful pairs. Names remain visible in compact dialogue.
   Independent introductory vocabulary groups each contain at least six items; do not combine unrelated
   groups to meet the count. Portal flashcard sets contain at least twenty distinct, useful words or

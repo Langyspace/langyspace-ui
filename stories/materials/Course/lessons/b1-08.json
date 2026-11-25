@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What did you use to do differently?",
-          "cue": "Compare before with now",
-          "hint": "I used to …, but now …",
-          "answer": "One possible response"
+          "hint": "I used to …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What is your routine now?",
+          "hint": "Now I …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What helped you make the change?",
+          "hint": "… helped me …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What mistake happened during the first bus journeys?",
-          "cue": "Explain the early difficulty",
-          "hint": "She … because …",
-          "answer": "She missed the last bus because she didn’t check the timetable"
+          "prompt": "What is Ana used to doing now?",
+          "hint": "She’s used to …",
+          "answer": "Ana is used to taking the bus now"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "How did she usually travel before moving?",
+          "hint": "She used to …",
+          "answer": "Ana used to drive everywhere"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Why did she miss the last bus at first?",
+          "hint": "She didn’t …",
+          "answer": "Ana missed the last bus because she didn’t check the timetable"
         }
       ],
       "dialogueGroup": "b1-08.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Does being used to the bus mean all adaptation is finished?",
-          "cue": "Use the contrasting example",
-          "hint": "No. …",
-          "answer": "No. The cold is still difficult"
+          "prompt": "What helped Ana adapt to bus journeys?",
+          "hint": "… helped her",
+          "answer": "Planning the journey before leaving helped Ana adapt"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What is she still getting used to?",
+          "hint": "She’s still getting used to …",
+          "answer": "Ana is still getting used to dressing in layers"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How is she making the place feel more familiar?",
+          "hint": "She’s joined …",
+          "answer": "Ana has joined a weekly group"
         }
       ],
       "dialogueGroup": "b1-08.model"
@@ -297,10 +327,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What is getting easier, and what is still difficult?",
-          "cue": "Compare the two parts of the update",
-          "hint": "They’re used to … now, but …",
-          "answer": "They’re used to the bus routine, but the cold and homesickness remain difficult"
+          "prompt": "What is easier about the bus routine now?",
+          "hint": "The speaker is used to …",
+          "answer": "The speaker is used to checking the timetable and no longer misses the last bus"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What is still difficult during the day?",
+          "hint": "Deciding … is still difficult",
+          "answer": "Deciding what to wear in changing weather is still difficult"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How does the speaker sometimes feel in the evening?",
+          "hint": "They sometimes feel …",
+          "answer": "The speaker sometimes feels homesick in the evening"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -357,10 +398,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What has become easier, and what is still difficult?",
-          "cue": "Contrast an old habit, a new normal and an ongoing adjustment",
-          "hint": "They used to … They’re used to …, but still getting used to …",
-          "answer": "One possible response"
+          "prompt": "What did this person use to do before moving?",
+          "hint": "They used to …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What are they used to now?",
+          "hint": "They’re used to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What are they still getting used to?",
+          "hint": "They’re still getting used to …"
         }
       ],
       "questionPurpose": "response"
@@ -388,10 +437,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What would you ask before suggesting anything?",
-          "cue": "Acknowledge progress, ask about one difficulty, then offer one practical idea",
-          "hint": "It sounds like … What helps when …? You could …",
-          "answer": "One possible response"
+          "prompt": "How would you acknowledge both progress and difficulty?",
+          "hint": "You’re used to … now, but …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What would you ask about the difficult evenings?",
+          "hint": "What do you miss about …? When do you …?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What suggestion could you offer after listening?",
+          "hint": "When I was getting used to …, … helped. Would …?"
         }
       ],
       "questionPurpose": "response"

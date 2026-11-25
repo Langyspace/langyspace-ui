@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What would you need to verify before deciding?",
-          "cue": "Name a decision-changing detail",
-          "hint": "I’d want to know whether …",
-          "answer": "One possible response"
+          "prompt": "What would you verify before recommending a course?",
+          "hint": "I’d verify … rather than assume …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "Which requirement could reverse your initial preference?",
+          "hint": "If …, I’d reconsider …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you communicate a provisional recommendation?",
+          "hint": "On current information …, subject to …"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why isn’t the word flexible enough to justify B?",
-          "cue": "Explain what still needs checking",
-          "hint": "They haven’t …",
-          "answer": "They haven’t confirmed how feedback works"
+          "prompt": "What initially makes A attractive?",
+          "hint": "It … and …",
+          "answer": "Course A costs less and finishes sooner"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Is flexibility initially a fixed requirement?",
+          "hint": "No, it is …",
+          "answer": "Flexibility is initially a preference"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "When can the person usually attend?",
+          "hint": "They can usually …",
+          "answer": "The person can usually attend on Wednesday evenings"
         }
       ],
       "dialogueGroup": "c1-06.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What was only a preference at first?",
-          "cue": "Use the original brief",
-          "hint": "The …",
-          "answer": "Timetable flexibility"
+          "prompt": "What needs confirming about B?",
+          "hint": "They haven’t confirmed …",
+          "answer": "They haven’t confirmed B’s feedback format"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How is B’s study time organised?",
+          "hint": "It has … and …",
+          "answer": "B has independent work and a Friday check-in"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What could make Ana reconsider A?",
+          "hint": "Either … or …",
+          "answer": "A timetable change or unsuitable project feedback could make Ana reconsider A"
         }
       ],
       "dialogueGroup": "c1-06.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "How is the recommendation kept provisional?",
-          "cue": "State the possible reversal",
-          "hint": "By saying …",
-          "answer": "By naming details that could reverse the recommendation"
+          "prompt": "What makes the course more useful beyond price?",
+          "hint": "How directly …",
+          "answer": "How directly the work applies to the person’s project makes it more useful"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "How firm is Kim’s recommendation of A?",
+          "hint": "It is … pending …",
+          "answer": "Kim’s recommendation of A is provisional pending two checks"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why should the recommendation state what could reverse it?",
+          "hint": "So it doesn’t sound …",
+          "answer": "It should state possible reversals so it doesn’t sound unconditional"
         }
       ],
       "dialogueGroup": "c1-06.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Does this information change the balance?",
-          "cue": "Explain which criterion now carries more or less weight",
-          "hint": "It makes … more important, although …",
-          "answer": "A’s Tuesday session conflicts, and live-only feedback makes attendance more important"
+          "prompt": "What turns A’s timetable into a serious constraint?",
+          "hint": "The session moved …, when …",
+          "answer": "A’s session moved to Tuesday, when the person has a fixed commitment"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why doesn’t a recording solve the problem?",
+          "hint": "Practical feedback is …",
+          "answer": "Practical feedback is only available during the live class"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What should be checked before paying more for B?",
+          "hint": "They should confirm whether …",
+          "answer": "They should confirm whether B’s feedback covers the person’s project"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -423,10 +475,18 @@
       "questions": [
         {
           "id": "course",
-          "prompt": "Which trade-off matters most?",
-          "cue": "Rank a priority, acknowledge what you give up and state what could reverse the choice",
-          "hint": "The more I consider …, the more … matters. I’d reconsider if …",
-          "answer": "One possible response"
+          "prompt": "Which course would you provisionally recommend?",
+          "hint": "The more I consider …, the more …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What uncertainty limits that recommendation?",
+          "hint": "This depends on whether …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What new information could reverse it?",
+          "hint": "Were … to change, I’d reconsider …"
         }
       ],
       "questionPurpose": "response"
@@ -454,10 +514,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Does the new information change the balance?",
-          "cue": "Distinguish a deal-breaker from a preference and propose the next check",
-          "hint": "It makes … more important, although … I’d now …, subject to …",
-          "answer": "One possible response"
+          "prompt": "How has A’s suitability changed?",
+          "hint": "What was a preference has become … because …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What must B justify beyond having a suitable time?",
+          "hint": "Its higher price would be justified if …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What alternative would you investigate before deciding?",
+          "hint": "I’d also ask whether … before …"
         }
       ],
       "questionPurpose": "response"

@@ -1,4 +1,4 @@
-import { css, styled } from 'styled-components'
+import { styled } from 'styled-components'
 import { theme } from '../../foundations/theme/theme'
 import { presentationMedia } from '../../foundations/layout/presentationMedia'
 import { regularVocabularyMaxWidth } from '../../foundations/layout/vocabularyGrid'
@@ -236,29 +236,20 @@ export const Conversation = styled.div<{
 export const ConversationText = styled.div`
   min-width: 0;
 `
-export const Questions = styled.aside<{ $stretch?: boolean }>`
+export const Questions = styled.aside`
   min-width: 0;
-  display: grid;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
   gap: ${theme.spacing[3]};
-  align-content: start;
-  ${(p) =>
-    p.$stretch
-      ? css`
-          align-self: stretch;
-          display: flex;
-          flex-direction: column;
-          > :last-child {
-            flex: 1;
-          }
-        `
-      : undefined}
+  > :last-child {
+    flex: 1;
+  }
   font-family: ${theme.typography.fontFamily.sans};
 `
-export const QuestionsTitle = styled.h3`
+export const QuestionsTitle = styled(Eyebrow).attrs({
+  as: 'h3',
+  $tone: 'default' as const,
+})`
   margin: 0;
-  font-family: ${(p) => recipe(p).displayFontFamily};
-  font-size: ${theme.typography.fontSize.lg};
-  font-weight: ${theme.typography.fontWeight.bold};
-  line-height: 1.3;
-  color: inherit;
 `

@@ -56,8 +56,11 @@ describe('authored material question purpose', () => {
     expect(slide.queryByText('You')).not.toBeInTheDocument()
     fireEvent.click(question)
     expect(question).toHaveAttribute('aria-expanded', 'true')
-    if (page.kind === 'dialogue')
-      expect(slide.getByText(page.questions![0]!.answer)).toBeVisible()
+    if (page.kind === 'dialogue') {
+      const answer = page.questions![0]!.answer
+      expect(answer).toBeDefined()
+      expect(slide.getByText(answer!)).toBeVisible()
+    }
     fireEvent.click(question)
     expect(question).toHaveAttribute('aria-expanded', 'false')
   })
@@ -104,14 +107,18 @@ describe('authored material question purpose', () => {
     const first = screen.getByRole('button', { name: 'Who is speaking?' })
     fireEvent.click(screen.getByRole('button', { name: 'Show next hint' }))
     expect(screen.getByText('Listen to the greeting')).toBeVisible()
-    expect(screen.queryByText('Listen for a place')).not.toBeInTheDocument()
-    expect(first).toHaveAttribute('aria-expanded', 'false')
+    expect(
+      screen.getByText('Listen for a place').closest('[aria-hidden]'),
+    ).toHaveAttribute('aria-hidden', 'true')
+    expect(first).toHaveAttribute('aria-expanded', 'true')
     fireEvent.click(screen.getByRole('button', { name: 'Show next hint' }))
     expect(screen.getByText('Listen for a place')).toBeVisible()
     fireEvent.click(first)
     expect(first).toHaveAttribute('aria-expanded', 'true')
     fireEvent.click(screen.getByRole('button', { name: 'Hide hints' }))
-    expect(screen.queryByText('Listen to the greeting')).not.toBeInTheDocument()
+    expect(
+      screen.getByText('Listen to the greeting').closest('[aria-hidden]'),
+    ).toHaveAttribute('aria-hidden', 'true')
     expect(first).toHaveAttribute('aria-expanded', 'true')
   })
   it('keeps an open mission actionable without presenting its placeholder as an answer', () => {

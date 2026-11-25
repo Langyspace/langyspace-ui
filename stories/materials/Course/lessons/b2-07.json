@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What did they ask you to do?",
-          "cue": "Preserve the request rather than making it a promise",
-          "hint": "They asked me to … They didn’t say …",
-          "answer": "One possible response"
+          "prompt": "What have you recently been asked to do?",
+          "hint": "They asked me to …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What did you agree to, and under what condition?",
+          "hint": "I agreed to …, provided …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How would you correct an inaccurate report of that agreement?",
+          "hint": "I said …; I didn’t promise …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What condition comes before booking?",
-          "cue": "Report the actual promise",
+          "prompt": "What dinner date did one person suggest?",
+          "hint": "They suggested …",
+          "answer": "One person suggested having dinner on Saturday"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "When did the host promise to book?",
           "hint": "After …",
-          "answer": "After checking everyone’s availability"
+          "answer": "The host promised to book after checking the group’s availability"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Had everyone agreed on every detail?",
+          "hint": "No, …",
+          "answer": "No, the group had not agreed on every detail"
         }
       ],
       "dialogueGroup": "b2-07.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Did the reluctant guest reject dinner itself?",
-          "cue": "Distinguish the activity from payment",
-          "hint": "No, …",
-          "answer": "No. They refused advance payment before reading the conditions"
+          "prompt": "What inaccurate agreement did Kim hear about?",
+          "hint": "Kim heard that everyone …",
+          "answer": "Kim heard that everyone had agreed to pay in advance"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "Why did one guest refuse to pay?",
+          "hint": "They wanted to see … first",
+          "answer": "One guest wanted to see the cancellation conditions first"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Was the suggested date fixed?",
+          "hint": "No, it was …",
+          "answer": "No, the suggested date was open to discussion"
         }
       ],
       "dialogueGroup": "b2-07.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What made the first summary inaccurate?",
-          "cue": "Identify the added commitment",
-          "hint": "It said …",
-          "answer": "It said everyone agreed to pay in advance"
+          "prompt": "Who admitted that the first summary was wrong?",
+          "hint": "The … did",
+          "answer": "The host admitted that the first summary was wrong"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What did the host offer to do?",
+          "hint": "They offered to …",
+          "answer": "The host offered to send a corrected summary"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Which three intentions must the summary distinguish?",
+          "hint": "It must distinguish …, … and …",
+          "answer": "It must distinguish a suggestion, a conditional promise and a refusal"
         }
       ],
       "dialogueGroup": "b2-07.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What does she want to clarify?",
-          "cue": "Separate the suggestion from the commitment",
-          "hint": "She suggested …, but she didn’t …",
-          "answer": "She suggested Saturday but did not insist or promise advance payment"
+          "prompt": "How firmly does the speaker commit to Saturday?",
+          "hint": "They suggest it but …",
+          "answer": "The speaker suggests Saturday but is happy to consider another evening"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What must happen before the host books?",
+          "hint": "The host must …",
+          "answer": "The host must check the group’s availability"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What still needs to be resolved before one guest pays?",
+          "hint": "They need to see …",
+          "answer": "The guest still needs to see the cancellation conditions"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What did each person actually agree to?",
-          "cue": "Relay the three different intentions without adding commitments",
-          "hint": "They suggested … The host promised to … A guest refused to …",
-          "answer": "One possible response"
+          "prompt": "How would you report the guest’s suggestion?",
+          "hint": "They suggested … but said …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What exactly did the host promise?",
+          "hint": "The host promised to … after …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you explain the other guest’s refusal?",
+          "hint": "They refused to … until …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you correct the misleading summary?",
-          "cue": "State what the person meant and what remains open",
-          "hint": "Not exactly. She suggested …; she didn’t promise …",
-          "answer": "One possible response"
+          "prompt": "What inaccurate claim would you correct first?",
+          "hint": "It isn’t accurate to say …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you preserve the speaker’s flexibility?",
+          "hint": "They suggested … rather than insisting …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What still needs agreement before booking and payment?",
+          "hint": "We still need to confirm … and …"
         }
       ],
       "questionPurpose": "response"

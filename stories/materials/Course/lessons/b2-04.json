@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "How sure are you?",
-          "cue": "Name the evidence and a limitation",
-          "hint": "It might … because …, but …",
-          "answer": "One possible response"
+          "prompt": "What clue could suggest someone visited?",
+          "hint": "The … suggests …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What would be another possible explanation?",
+          "hint": "It might also mean …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you check before drawing a conclusion?",
+          "hint": "I’d check … before saying …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
+          "prompt": "What first makes Kim think someone visited?",
+          "hint": "The … has been …",
+          "answer": "The plant has been moved"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
           "prompt": "What does the key record show?",
-          "cue": "State only the recorded event",
-          "hint": "A key …",
-          "answer": "A spare key was used at five"
+          "hint": "It shows … at …",
+          "answer": "The record shows the spare key was used at five"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Does the receipt prove who visited?",
+          "hint": "No, it might …",
+          "answer": "No, the receipt might have been left earlier by someone else"
         }
       ],
       "dialogueGroup": "b2-04.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Does the closed window establish its state all afternoon?",
-          "cue": "Explain the limitation",
-          "hint": "No, …",
-          "answer": "No. We only know its current state"
+          "prompt": "What possible entry route does Kim suggest?",
+          "hint": "Someone could have …",
+          "answer": "Kim suggests someone could have come through the window"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What do they actually know about the window?",
+          "hint": "They know … now",
+          "answer": "They know the window is closed now"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "Why doesn’t that settle the question?",
+          "hint": "Its current state doesn’t prove …",
+          "answer": "Its current state doesn’t prove it was closed all afternoon"
         }
       ],
       "dialogueGroup": "b2-04.model"
@@ -249,10 +279,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What is the first suggested check?",
-          "cue": "Name the relevant person",
-          "hint": "Ask …",
-          "answer": "Ask the neighbour who had permission"
+          "prompt": "Who had a reason to use the spare key?",
+          "hint": "The neighbour was going to …",
+          "answer": "The neighbour was going to water the plants"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "What would Ana check first?",
+          "hint": "She would ask …",
+          "answer": "Ana would ask the neighbour first"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Is the visitor’s identity confirmed yet?",
+          "hint": "No, a permitted visit is …",
+          "answer": "No, a permitted visit is the strongest explanation, but the identity is not confirmed yet"
         }
       ],
       "dialogueGroup": "b2-04.model"
@@ -321,10 +362,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Which explanation does the message support?",
-          "cue": "Use the new evidence and acknowledge what remains uncertain",
-          "hint": "It supports …, but we still don’t know …",
-          "answer": "An authorised visit explains the key and plant, not the receipt"
+          "prompt": "Which visit has now been confirmed?",
+          "hint": "The neighbour … at …",
+          "answer": "The neighbour used the spare key at five to water the plants"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why was the plant moved?",
+          "hint": "The neighbour moved it …",
+          "answer": "The neighbour moved the plant away from the closed window"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What remains unexplained?",
+          "hint": "They still don’t know …",
+          "answer": "They still don’t know who left the receipt or when it entered the flat"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -381,10 +433,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What might have happened here?",
-          "cue": "Propose two explanations and name what would confirm each",
-          "hint": "Someone might have … We’d need to check …",
-          "answer": "One possible response"
+          "prompt": "What is your strongest explanation?",
+          "hint": "Someone may have … because …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What alternative explanation should stay open?",
+          "hint": "The … could also …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What evidence would help you distinguish the explanations?",
+          "hint": "I’d check … to find out whether …"
         }
       ],
       "questionPurpose": "response"
@@ -412,10 +472,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Which part of the explanation is stronger now?",
-          "cue": "State what is confirmed and keep the unresolved clue separate",
-          "hint": "It supports …, but we still don’t know …",
-          "answer": "One possible response"
+          "prompt": "Which conclusion can you state more confidently now?",
+          "hint": "The neighbour has confirmed …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What uncertainty should you still acknowledge?",
+          "hint": "We still don’t know …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How would you explain the receipt without inventing another visit?",
+          "hint": "The receipt remains …; it doesn’t establish …"
         }
       ],
       "questionPurpose": "response"

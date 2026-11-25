@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "Where are you staying?",
-          "cue": "Give the hotel and duration",
-          "hint": "At … for … days",
-          "answer": "One possible response"
+          "hint": "I’m staying at …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How long are you staying?",
+          "hint": "For … days"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you ask someone to repeat a direction?",
+          "hint": "Can you say that again, please?"
         }
       ],
       "questionPurpose": "review"
@@ -155,9 +163,20 @@
         {
           "id": "d0",
           "prompt": "What is the problem in Ana’s room?",
-          "cue": "Say what doesn’t work",
           "hint": "The … doesn’t work",
-          "answer": "The shower doesn’t work"
+          "answer": "The shower in Ana’s room doesn’t work"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "What’s Ana’s room number?",
+          "hint": "Her room number is …",
+          "answer": "Ana’s room number is 204"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "How many towels does Ana ask for?",
+          "hint": "She asks for …",
+          "answer": "Ana asks for two towels"
         }
       ],
       "dialogueGroup": "a1-08.model"
@@ -250,10 +269,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "When can someone help?",
-          "cue": "Repeat the time offered by reception",
+          "prompt": "When can someone come to Ana’s room?",
           "hint": "Someone can come at …",
           "answer": "Someone can come at seven this evening"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "How many towels does reception have for her?",
+          "hint": "They have …",
+          "answer": "Reception has two towels for Ana"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "How can Ana get the towels?",
+          "hint": "She can … or …",
+          "answer": "Ana can collect them now or have them delivered at seven"
         }
       ],
       "greetingTimestamp": "17:10",
@@ -337,10 +367,18 @@
       "questions": [
         {
           "id": "help",
-          "prompt": "How can reception help?",
-          "cue": "Explain one problem and make one request",
-          "hint": "I’m in room … The … doesn’t work. Can I have …?",
-          "answer": "One possible response"
+          "prompt": "What room are you in?",
+          "hint": "I’m in room …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What’s the problem?",
+          "hint": "The … doesn’t work"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What do you need?",
+          "hint": "Can I have …, please?"
         }
       ],
       "questionPurpose": "response"
@@ -369,9 +407,17 @@
         {
           "id": "confirm",
           "prompt": "Is seven OK for you?",
-          "cue": "Accept or choose another time. Say what to do with the towels",
-          "hint": "Seven is fine / Can someone come at …? Can you bring …?",
-          "answer": "One possible response"
+          "hint": "Seven is fine. / Can someone come at …?"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Will you collect the towels or ask for delivery?",
+          "hint": "I can collect them. / Can you bring them, please?"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "Can you confirm your room number?",
+          "hint": "I’m in room … Thank you"
         }
       ],
       "questionPurpose": "response"

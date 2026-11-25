@@ -14,9 +14,17 @@
         {
           "id": "review",
           "prompt": "Who’s in your family?",
-          "cue": "Introduce one person",
-          "hint": "This is my … His/Her name is …",
-          "answer": "One possible response"
+          "hint": "This is my … His/Her name is …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What does that person do?",
+          "hint": "He’s/She’s a …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Where is that person from?",
+          "hint": "He’s/She’s from … What about your family?"
         }
       ],
       "questionPurpose": "review"
@@ -181,9 +189,20 @@
         {
           "id": "d1",
           "prompt": "When will they go to the gym?",
-          "cue": "Say the day and time",
-          "hint": "On … at …",
-          "answer": "On Tuesday at seven in the evening"
+          "hint": "They’ll go on … at …",
+          "answer": "They’ll go on Tuesday at seven in the evening"
+        },
+        {
+          "id": "s6.q98.2",
+          "prompt": "What time does Ana get up?",
+          "hint": "She gets up at …",
+          "answer": "Ana gets up at six"
+        },
+        {
+          "id": "s6.q98.3",
+          "prompt": "When does Ana study?",
+          "hint": "She studies on …",
+          "answer": "Ana studies on Monday and Wednesday, after work"
         }
       ]
     },
@@ -304,9 +323,20 @@
         {
           "id": "l2",
           "prompt": "When does Kim want to meet?",
-          "cue": "Say the new day and time",
-          "hint": "On … at …",
-          "answer": "On Friday at seven"
+          "hint": "She wants to meet on … at …",
+          "answer": "Kim wants to meet on Friday at seven"
+        },
+        {
+          "id": "s9.q98.2",
+          "prompt": "Why isn’t Thursday evening good for Kim?",
+          "hint": "She works until …",
+          "answer": "Thursday isn’t good because Kim works until eight"
+        },
+        {
+          "id": "s9.q98.3",
+          "prompt": "Where does Kim suggest meeting?",
+          "hint": "She suggests meeting at …",
+          "answer": "Kim suggests meeting at the gym"
         }
       ]
     },
@@ -321,9 +351,17 @@
         {
           "id": "reply",
           "prompt": "Are you free on Friday at seven?",
-          "cue": "Confirm or offer another time",
-          "hint": "Yes, I am. See you … / No, I’m not. What about …?",
-          "answer": "One possible response"
+          "hint": "Yes, I am. / No, I’m not"
+        },
+        {
+          "id": "s91.q98.2",
+          "prompt": "Where can we meet?",
+          "hint": "Let’s meet at …"
+        },
+        {
+          "id": "s91.q98.3",
+          "prompt": "What other time can you suggest?",
+          "hint": "What about … at …? Is that good for you?"
         }
       ],
       "questionPurpose": "response"

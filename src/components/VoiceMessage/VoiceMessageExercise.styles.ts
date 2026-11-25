@@ -210,10 +210,10 @@ export const Error = styled.div`
 `
 export const Side = styled.div<{ $stretch?: boolean }>`
   color: ${(p) => recipe(p).questionForeground ?? recipe(p).foreground};
+  align-self: stretch;
   ${(p) =>
     p.$stretch
       ? css`
-          align-self: stretch;
           > :last-child {
             flex: 1;
           }

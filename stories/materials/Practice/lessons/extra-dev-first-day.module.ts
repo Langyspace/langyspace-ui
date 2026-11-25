@@ -32,7 +32,10 @@ const prepared: PreparedPractice = {
           audioId: item.id,
           backAudioId: index === 0 ? 'ACCOUNT.EX.0' : 'EX.' + index,
         })),
-        ...homeworkVocabulary,
+        ...homeworkVocabulary.map((item) => ({
+          ...item,
+          visualLabel: item.word,
+        })),
       ],
     },
     shadowing: {

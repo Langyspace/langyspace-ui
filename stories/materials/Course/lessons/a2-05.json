@@ -18,9 +18,17 @@
         {
           "id": "review",
           "prompt": "What are you doing this weekend?",
-          "cue": "Give one plan with its time",
-          "hint": "I’m … on … / I’m going to …",
-          "answer": "One possible response"
+          "hint": "I’m … on …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What are you planning to do at home?",
+          "hint": "I’m going to …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "Would you like any help?",
+          "hint": "Could you help me …? / No, thank you"
         }
       ],
       "questionPurpose": "review"
@@ -140,10 +148,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "What does Kim offer first?",
-          "cue": "Say the practical action",
+          "prompt": "What does Kim offer to do first?",
           "hint": "She’ll …",
-          "answer": "She’ll open the door"
+          "answer": "Kim offers to open the door"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why does Ana need help?",
+          "hint": "She can’t … and …",
+          "answer": "Ana can’t carry the box and open the door at the same time"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Where is Ana going to put everything?",
+          "hint": "She’s going to put it in …",
+          "answer": "Ana is going to put everything in the living room"
         }
       ],
       "dialogueGroup": "a2-05.model"
@@ -189,9 +208,20 @@
         {
           "id": "d1",
           "prompt": "When is Ana going to paint?",
-          "cue": "Give the planned day",
-          "hint": "She’s going to …",
-          "answer": "She’s going to paint tomorrow"
+          "hint": "She’s going to paint …",
+          "answer": "Ana is going to paint tomorrow"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does Ana want to do today?",
+          "hint": "She wants to …",
+          "answer": "Ana wants to unpack today"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How does Kim offer to make more space?",
+          "hint": "She’ll move …",
+          "answer": "Kim offers to move the chair"
         }
       ],
       "dialogueGroup": "a2-05.model"
@@ -284,10 +314,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What help does she need?",
-          "cue": "Identify the problem and offer an action",
-          "hint": "She needs … I’ll …",
-          "answer": "She needs help carrying the small bags upstairs"
+          "prompt": "Why do they have to use the stairs?",
+          "hint": "The … isn’t working",
+          "answer": "They have to use the stairs because the lift isn’t working"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What needs carrying now?",
+          "hint": "Kim needs help with …",
+          "answer": "Kim needs help carrying the small bags"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What time does Kim ask Ana to come?",
+          "hint": "She asks her to come at …",
+          "answer": "Kim asks Ana to come at three"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -373,9 +414,17 @@
         {
           "id": "help",
           "prompt": "Can you give me a hand?",
-          "cue": "Notice the problem and offer one concrete action",
-          "hint": "I’ll … Then we can …",
-          "answer": "One possible response"
+          "hint": "I’ll …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What will you do after that?",
+          "hint": "Then I’ll … so we can …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Are we painting today?",
+          "hint": "No, we’re going to … tomorrow. Today …"
         }
       ],
       "questionPurpose": "response"
@@ -403,10 +452,18 @@
       "questions": [
         {
           "id": "offer",
-          "prompt": "What can you offer to do?",
-          "cue": "Say what you can carry and confirm the time",
-          "hint": "I’ll … I can come at …",
-          "answer": "One possible response"
+          "prompt": "What can you help carry?",
+          "hint": "I’ll carry …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "What can stay downstairs for now?",
+          "hint": "We can leave … downstairs"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "When can you come?",
+          "hint": "I can come at … Shall I bring anything?"
         }
       ],
       "questionPurpose": "response"

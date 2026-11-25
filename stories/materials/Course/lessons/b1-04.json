@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What can you actually see?",
-          "cue": "Name an observation and a possible explanation",
-          "hint": "I can see … It might mean …",
-          "answer": "One possible response"
+          "prompt": "What can you actually see in a familiar object?",
+          "hint": "I can see …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What might a visible detail suggest?",
+          "hint": "It might mean …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What would you need to check before being certain?",
+          "hint": "We’d need to check …"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why doesn’t the boarding pass prove the owner is travelling now?",
-          "cue": "Identify what is unknown",
-          "hint": "We don’t know …",
-          "answer": "We don’t know its date; it could be old"
+          "prompt": "Where was the backpack left?",
+          "hint": "It was left …",
+          "answer": "The backpack was left by their table"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why might the owner be travelling?",
+          "hint": "There’s a …",
+          "answer": "There is a boarding pass visible in the open pocket"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "Does the boarding pass prove the owner is travelling today?",
+          "hint": "No, it could be …",
+          "answer": "No, the pass could be old and they don’t know its date"
         }
       ],
       "dialogueGroup": "b1-04.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Which details are more distinctive than a charger?",
-          "cue": "Give the two checking details",
-          "hint": "The … and …",
-          "answer": "The silver star on the black notebook and the red fish key ring"
+          "prompt": "What makes the notebook distinctive?",
+          "hint": "It has …",
+          "answer": "The black notebook has a silver star"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What does the key ring look like?",
+          "hint": "It’s a …",
+          "answer": "The key ring is a red fish"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "How should reception check those details?",
+          "hint": "The caller should describe … before …",
+          "answer": "The caller should describe the details before reception suggests them"
         }
       ],
       "dialogueGroup": "b1-04.model"
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "Could this be the caller’s bag?",
-          "cue": "Compare the caller’s details with the visible evidence",
-          "hint": "It might be, because … / It can’t be, because …",
-          "answer": "It could be the caller’s bag: distinctive details match, but collection is not yet confirmed"
+          "prompt": "What did the caller correctly describe?",
+          "hint": "The caller described … and …",
+          "answer": "The caller described the black notebook with a silver star and the red fish key ring"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "Why are those details stronger evidence than a charger?",
+          "hint": "They are more …",
+          "answer": "The notebook design and key ring are more distinctive than a common charger"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What still needs to happen before collection?",
+          "hint": "Reception still needs to …",
+          "answer": "Reception still needs to follow its collection procedure"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -333,10 +374,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What might the objects tell us?",
-          "cue": "Offer a possibility, name a clue and say what it cannot prove",
-          "hint": "The owner might … because … However, we don’t know …",
-          "answer": "One possible response"
+          "prompt": "What can you observe without guessing?",
+          "hint": "I can see …"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What might the boarding pass suggest?",
+          "hint": "The owner might …, but …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "Which details would help reception check a claim?",
+          "hint": "I’d ask the caller to describe …"
         }
       ],
       "questionPurpose": "response"
@@ -364,10 +413,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Is this enough to hand over the bag?",
-          "cue": "Weigh the matching evidence and recommend the next step",
-          "hint": "It might be theirs because … We still need to …",
-          "answer": "One possible response"
+          "prompt": "Which parts of the caller’s description match?",
+          "hint": "The … and … both match"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How strong is this evidence?",
+          "hint": "It makes the claim more plausible because …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What would you check before handing over the bag?",
+          "hint": "Reception still needs to …"
         }
       ],
       "questionPurpose": "response"

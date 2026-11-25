@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "Did you say Thursday or Friday?",
-          "cue": "Ask for clarification and repeat the answer",
-          "hint": "Did you say …? So that’s …, right?",
-          "answer": "One possible response"
+          "prompt": "How can you check a day you may have misheard?",
+          "hint": "Did you say … or …?"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "How can you confirm the time?",
+          "hint": "So that’s … at …, right?"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "How can you ask someone to repeat a request?",
+          "hint": "Could you repeat what you need us to …?"
         }
       ],
       "questionPurpose": "review"
@@ -153,10 +161,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Which detail does Kim first misunderstand?",
-          "cue": "Identify and correct it",
-          "hint": "He said …, not …",
-          "answer": "He said Thursday, not Friday"
+          "prompt": "When did the repair person say he would come?",
+          "hint": "He said he’d come on … at …",
+          "answer": "He said he would come on Thursday at ten"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Which day did Kim initially misunderstand?",
+          "hint": "She heard … instead of …",
+          "answer": "Kim heard Friday instead of Thursday"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What did the repair person ask them to leave at reception?",
+          "hint": "He asked them to leave …",
+          "answer": "He asked them to leave a spare key at reception"
         }
       ],
       "dialogueGroup": "b1-05.model"
@@ -201,10 +220,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "Is one hour a guarantee?",
-          "cue": "Report the condition attached to the estimate",
-          "hint": "No. He said …",
-          "answer": "No. He needs to see the tap first"
+          "prompt": "Was the one-hour repair time guaranteed?",
+          "hint": "No, it depended on …",
+          "answer": "No, the estimate depended on seeing the tap first"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "What details does Kim repeat back?",
+          "hint": "She repeats …",
+          "answer": "Kim repeats Thursday, ten and a key at reception"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What should the manager confirm?",
+          "hint": "The manager should confirm that …",
+          "answer": "The manager should confirm that someone can let the repair person in"
         }
       ],
       "dialogueGroup": "b1-05.model"
@@ -273,10 +303,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What should you tell the other person now?",
-          "cue": "Relay the updated time and request",
-          "hint": "He said … and asked us to …",
-          "answer": "He said Friday at eleven and asked for the spare key at reception"
+          "prompt": "What is the new appointment?",
+          "hint": "He said he’d come on … at …",
+          "answer": "The repair person will now come on Friday at eleven"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What request has not changed?",
+          "hint": "They still need to …",
+          "answer": "They still need to leave the spare key at reception"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What could make the visit longer?",
+          "hint": "It might take longer if …",
+          "answer": "The visit might take longer if the tap needs replacing"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -333,10 +374,18 @@
       "questions": [
         {
           "id": "task",
+          "prompt": "When did he say he would come?",
+          "hint": "He said he’d …"
+        },
+        {
+          "id": "@s_mission.q98.2",
           "prompt": "What did he ask us to do?",
-          "cue": "Relay the request and correct one detail if I repeat it wrongly",
-          "hint": "He said … He asked us to … It was …, not …",
-          "answer": "One possible response"
+          "hint": "He asked us to …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "How would you explain the uncertain repair time?",
+          "hint": "He said about …, but …"
         }
       ],
       "questionPurpose": "response"
@@ -364,10 +413,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "What should the manager know now?",
-          "cue": "Pass on the updated time, request and uncertainty; ask me to repeat the key detail",
-          "hint": "He said … and asked us to … Could you confirm …?",
-          "answer": "One possible response"
+          "prompt": "What new date and time will you pass on?",
+          "hint": "He said he couldn’t … and would … instead"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "Which instruction should the manager keep?",
+          "hint": "He still asked us to …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "How will you check that the new booking is understood?",
+          "hint": "Could you repeat …? We should remove …"
         }
       ],
       "questionPurpose": "response"

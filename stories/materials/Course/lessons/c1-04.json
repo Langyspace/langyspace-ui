@@ -17,10 +17,18 @@
       "items": [
         {
           "id": "review",
-          "prompt": "What is the impact you can describe?",
-          "cue": "State an observation and one request",
-          "hint": "When …, I find … Could we …?",
-          "answer": "One possible response"
+          "prompt": "How would you describe the impact of a shared-space problem?",
+          "hint": "When …, I find it difficult to …"
+        },
+        {
+          "id": "s1.q98.2",
+          "prompt": "What competing need should be acknowledged?",
+          "hint": "I understand that you need …"
+        },
+        {
+          "id": "s1.q98.3",
+          "prompt": "What specific boundary could protect both needs?",
+          "hint": "Would you mind …, with … if …?"
         }
       ],
       "questionPurpose": "review"
@@ -168,10 +176,21 @@
       "questions": [
         {
           "id": "d0",
-          "prompt": "Why can’t the calls simply move much earlier?",
-          "cue": "Use the stated constraint",
-          "hint": "Because …",
-          "answer": "Because the family is in another time zone"
+          "prompt": "What impact do the calls have?",
+          "hint": "They make it difficult to …",
+          "answer": "The calls carry through the shared room and make concentration difficult"
+        },
+        {
+          "id": "s_dialogue1.q98.2",
+          "prompt": "Why is an earlier call difficult?",
+          "hint": "The family is …",
+          "answer": "The family is in another time zone"
+        },
+        {
+          "id": "s_dialogue1.q98.3",
+          "prompt": "What adjustment is proposed after nine?",
+          "hint": "Use … and …",
+          "answer": "The proposal is to use the smaller room and headphones after nine"
         }
       ],
       "dialogueGroup": "c1-04.model"
@@ -216,10 +235,21 @@
       "questions": [
         {
           "id": "d1",
-          "prompt": "What is the quiet worker’s underlying need?",
-          "cue": "Distinguish purpose from control",
-          "hint": "They need …",
-          "answer": "Predictable concentration time"
+          "prompt": "What absolute promise does the caller avoid?",
+          "hint": "They won’t promise …",
+          "answer": "The caller won’t promise there will never be an urgent call"
+        },
+        {
+          "id": "s_dialogue2.q98.2",
+          "prompt": "How could exceptions be communicated?",
+          "hint": "With … when …",
+          "answer": "Exceptions could be communicated with a brief message"
+        },
+        {
+          "id": "s_dialogue2.q98.3",
+          "prompt": "What is the underlying need?",
+          "hint": "It is …, not …",
+          "answer": "The underlying need is predictable concentration time, not control over family contact"
         }
       ],
       "dialogueGroup": "c1-04.model"
@@ -264,10 +294,21 @@
       "questions": [
         {
           "id": "d2",
-          "prompt": "What should be checked before assuming agreement?",
-          "cue": "Name what must be explicit",
-          "hint": "The …",
-          "answer": "The precise arrangement and its exceptions"
+          "prompt": "What two needs are they trying to protect?",
+          "hint": "They want both … and …",
+          "answer": "They want both concentration time and family calls to remain possible"
+        },
+        {
+          "id": "s_dialogue3.q98.2",
+          "prompt": "Why isn’t a precise end time promised yet?",
+          "hint": "Family availability …",
+          "answer": "Family availability still needs checking"
+        },
+        {
+          "id": "s_dialogue3.q98.3",
+          "prompt": "Why do they want explicit confirmation?",
+          "hint": "A polite response may not mean …",
+          "answer": "A polite response may not mean full agreement"
         }
       ],
       "dialogueGroup": "c1-04.model"
@@ -336,10 +377,21 @@
       "items": [
         {
           "id": "listen",
-          "prompt": "What is the person agreeing to, and on what condition?",
-          "cue": "Identify the agreement and the limit of that agreement",
-          "hint": "They’re willing to …, provided that …",
-          "answer": "Quiet shared room after nine, provided urgent calls can be exceptions with a message"
+          "prompt": "What regular calling arrangement is offered?",
+          "hint": "Calls would be … using …",
+          "answer": "Regular calls would be before ten thirty, using the smaller room and headphones"
+        },
+        {
+          "id": "s_listening.q98.2",
+          "prompt": "What condition accompanies quiet after nine?",
+          "hint": "There must be … with …",
+          "answer": "There must be brief urgent-call exceptions with a message"
+        },
+        {
+          "id": "s_listening.q98.3",
+          "prompt": "What could be reviewed if sound still carries?",
+          "hint": "They could review …",
+          "answer": "They could review the room arrangement rather than judge each other’s consideration"
         }
       ],
       "greetingTimestamp": "10:00",
@@ -396,10 +448,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "How would you bring this up without making it personal?",
-          "cue": "State the practical impact, make a specific request and invite a response",
-          "hint": "I’ve been finding … difficult. Would you mind …?",
-          "answer": "One possible response"
+          "prompt": "How would you open the discussion without assigning motives?",
+          "hint": "I’ve noticed …, which makes … difficult"
+        },
+        {
+          "id": "@s_mission.q98.2",
+          "prompt": "What accommodation would you request?",
+          "hint": "I’d rather we … while still allowing …"
+        },
+        {
+          "id": "@s_mission.q98.3",
+          "prompt": "What would count as an agreed exception?",
+          "hint": "If …, please … so that …"
         }
       ],
       "questionPurpose": "response"
@@ -427,10 +487,18 @@
       "questions": [
         {
           "id": "task",
-          "prompt": "Does this protect both needs?",
-          "cue": "Confirm the boundary and its exception; propose a review if necessary",
-          "hint": "I understand … I can agree to …, provided …",
-          "answer": "One possible response"
+          "prompt": "Does the offer protect the concentration time you need?",
+          "hint": "It addresses …, provided …"
+        },
+        {
+          "id": "@s_reply.q98.2",
+          "prompt": "How would you confirm the urgent-call exception?",
+          "hint": "For an urgent call, we’d agree to …"
+        },
+        {
+          "id": "@s_reply.q98.3",
+          "prompt": "What review would you suggest if the arrangement doesn’t work?",
+          "hint": "If sound still …, let’s review … rather than …"
         }
       ],
       "questionPurpose": "response"

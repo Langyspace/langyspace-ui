@@ -19,7 +19,8 @@ export interface ReviewedTurn {
 export interface ReviewedPrompt {
   id: string
   prompt: string
-  answer: string
+  /** Factual checks have an answer; open practice intentionally has no fixed answer. */
+  answer?: string
   cue?: string
   hint?: string
 }
